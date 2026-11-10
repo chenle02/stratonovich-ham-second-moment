@@ -1,0 +1,539 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "medium",
+  "source_coverage": [
+    "PROVENANCE.json: 1-688.",
+    "candidate/statement-ledger.md: 1-464; truncated portions were reread.",
+    "lean/claims.yaml: 1-642; truncated portions were reread.",
+    "lean/coverage.yaml: 1-316.",
+    "lean/StratonovichHAMAudit/ActualEvent.lean: 1-35.",
+    "lean/StratonovichHAMAudit/AllAlphaMoment.lean: 1-29.",
+    "lean/StratonovichHAMAudit/ClockFilter.lean: 1-64.",
+    "lean/StratonovichHAMAudit/DampedLower.lean: 1-34.",
+    "lean/StratonovichHAMAudit/DimensionalMatrix.lean: 1-23.",
+    "lean/StratonovichHAMAudit/DirectEvent.lean: 1-93.",
+    "lean/StratonovichHAMAudit/FiniteYoung.lean: 1-34.",
+    "lean/StratonovichHAMAudit/GaussianTail.lean: 1-29.",
+    "lean/StratonovichHAMAudit/GlobalOmega.lean: 1-144.",
+    "lean/StratonovichHAMAudit/HermiteWord.lean: 1-61.",
+    "lean/StratonovichHAMAudit/HermiteWordConsumer.lean: 1-70.",
+    "lean/StratonovichHAMAudit/InteractionDriver.lean: 1-100.",
+    "lean/StratonovichHAMAudit/JointTilt.lean: 1-28.",
+    "lean/StratonovichHAMAudit/LocalFlow.lean: 1-51.",
+    "lean/StratonovichHAMAudit/MiddleCross.lean: 1-192.",
+    "lean/StratonovichHAMAudit/MovingCone.lean: 1-30.",
+    "lean/StratonovichHAMAudit/OccupationForm.lean: 1-23.",
+    "lean/StratonovichHAMAudit/PhaseResponse.lean: 1-67.",
+    "lean/StratonovichHAMAudit/PositiveGram.lean: 1-87.",
+    "lean/StratonovichHAMAudit/ProjectionResidual.lean: 1-28.",
+    "lean/StratonovichHAMAudit/RawValueCeiling.lean: 1-27.",
+    "lean/StratonovichHAMAudit/RawVariational.lean: 1-73.",
+    "lean/StratonovichHAMAudit/TerminalCross.lean: 1-113.",
+    "lean/StratonovichHAMAudit/WhiteCDF.lean: 1-20.",
+    "manuscript/notes/integrated_actual_operator_driver.tex: 1-655.",
+    "manuscript/notes/integrated_cameron_mean.tex: partial; search-hit lines 182,190,195,230,306,402-403; remaining contextual coverage incomplete.",
+    "manuscript/notes/integrated_compact_gaussian.tex: 1-617.",
+    "manuscript/notes/integrated_compact_mean_family.tex: partial; search-hit lines 35-36,48,68,74,89,156,172,186-188,212,222-223,229,245,253,275-278,296,298,306,311,315,327,435; remaining contextual coverage incomplete.",
+    "manuscript/notes/integrated_constant_phase_young.tex: partial; search-hit lines 50,74-76,110,160,365,393,477,530; remaining contextual coverage incomplete.",
+    "manuscript/notes/integrated_covariance_foundation.tex: 1-428.",
+    "manuscript/notes/integrated_exact_scaling.tex: 1-56.",
+    "manuscript/notes/integrated_gaussian_tubes.tex: 1-503.",
+    "manuscript/notes/integrated_intrinsic_constant.tex: partial; search-hit lines 59,63,81,142,214,332,335,386; remaining contextual coverage incomplete.",
+    "manuscript/notes/integrated_masked_moments.tex: partial; no contextual lines read; searched throughout 1-212.",
+    "manuscript/notes/integrated_occupation_ceiling.tex: 1-308.",
+    "manuscript/notes/integrated_point_transfer.tex: partial; 1-12 and search-hit lines 95,141-142,155,176,181,224; remaining contextual coverage incomplete.",
+    "manuscript/notes/integrated_positive_gram.tex: 1-216; truncated portions were reread.",
+    "manuscript/notes/integrated_radius_anchor.tex: 1-339.",
+    "manuscript/notes/integrated_raw_block_lower.tex: 1-675.",
+    "manuscript/notes/integrated_signed_moment_upper.tex: partial; no contextual lines read; searched throughout 1-236.",
+    "manuscript/notes/integrated_signed_static.tex: 1-250.",
+    "manuscript/notes/integrated_source_convergence.tex: partial; search-hit lines 68,112,155,339,358; remaining contextual coverage incomplete.",
+    "manuscript/notes/integrated_spatial_occupation.tex: partial; search-hit lines 5,120,127,151,261,367; remaining contextual coverage incomplete.",
+    "manuscript/notes/integrated_symplectic_phase.tex: partial; 1-96 and search-hit lines 157,181,201-202,209,278,382; remaining contextual coverage incomplete.",
+    "manuscript/notes/integrated_temporal_equilibrium.tex: partial; search-hit lines 8,33,43; remaining contextual coverage incomplete.",
+    "manuscript/notes/integrated_uniform_mean.tex: partial; search-hit lines 48,50,111,260,265,277,289-290,334; remaining contextual coverage incomplete.",
+    "manuscript/notes/integrated_uniform_products.tex: partial; search-hit lines 76,94,105,111,138,147,154-156,173,299-300,441,488-489; remaining contextual coverage incomplete.",
+    "manuscript/notes/integrated_unmasked_variational.tex: 1-343.",
+    "manuscript/notes/integrated_wave_variance.tex: 1-531.",
+    "manuscript/notes/integrated_white_evaluation.tex: 1-164.",
+    "manuscript/notes/integrated_young_upper_foundation.tex: partial; search-hit lines 34,37,44,71; remaining contextual coverage incomplete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: partial; contextual ranges 105-151,5010-5056,5250-5296,7380-7556, plus isolated keyword-search hits throughout 1-7706; intervening contextual coverage incomplete.",
+    "manuscript/notes/figures/common-noise.tex: 1-26.",
+    "manuscript/notes/figures/dyadic-cover.tex: 1-32.",
+    "manuscript/notes/figures/gaussian-enlargement.tex: 1-33.",
+    "manuscript/notes/figures/global-control-blocks.tex: 1-37.",
+    "manuscript/notes/figures/hermite-cutoff.tex: 1-29.",
+    "manuscript/notes/figures/light-cone.tex: 1-34.",
+    "manuscript/notes/figures/nonseparable-controls.tex: 1-27.",
+    "manuscript/notes/figures/order-of-limits.tex: 1-23.",
+    "manuscript/notes/figures/positive-gram.tex: 1-30.",
+    "manuscript/notes/figures/proof-map.tex: 1-36.",
+    "manuscript/notes/figures/styles.tex: 1-14.",
+    "manuscript/notes/figures/two-chain-pairings.tex: 1-51.",
+    "manuscript/notes/figures/white-strip.tex: 1-33."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMAudit.ActualEvent.finite_error_accumulation: L:raw-block-restart",
+      "verdict": "PASS",
+      "reason": "OK: ActualEvent.lean:9-12 matches the ledger and claims.yaml. integrated_raw_block_lower.tex:396-409 supplies exactly the recurrence, signs, identity extension and finite-product application. Ledger counts are internally consistent: 88 rows, 82 theorems, six definitions, 36 labelled and 52 unlabelled; every cited manuscript label was located."
+    },
+    {
+      "claim": "StratonovichHAMAudit.ActualEvent.moderate_penalty: P:raw-block-original-lower",
+      "verdict": "PASS",
+      "reason": "OK: ActualEvent.lean:25-26 has precisely delta>0 and the stated identity. integrated_raw_block_lower.tex:639-659 uses the same normalized delta^(1/4) penalty; Gaussian law, event and limiting arguments remain outside Lean."
+    },
+    {
+      "claim": "StratonovichHAMAudit.AllAlphaMoment.moment_lower: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: AllAlphaMoment.lean:8-10 matches both paraphrases, including supplied mean and quadratic hypotheses. Manuscript searches for 'D+4a', 'D + 4', 'x+y=a' and 'x^2' with D found no matching computation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.AllAlphaMoment.rational_gap: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: AllAlphaMoment.lean:17-20 gives the stated rational identity and strict positivity. Searches for 'D+4', 'D+2', '4a' and the rational denominators found no manuscript occurrence."
+    },
+    {
+      "claim": "StratonovichHAMAudit.ClockFilter.resolvent_partial_fraction: P:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "OK: ClockFilter.lean:14-16 and claims.yaml agree, with theta,ell>0 and arbitrary real r. notes_stratonovich_ham_second_moment.tex:7435-7440,7456-7469 uses this exact partial fraction, including 2 theta ell."
+    },
+    {
+      "claim": "StratonovichHAMAudit.ClockFilter.clock_filter_bounds: P:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "OK: ClockFilter.lean:22-23 states both strict bounds at positive parameters. notes_stratonovich_ham_second_moment.tex:7414-7419,7521-7523 uses the same filter factor under compatible positive parameters."
+    },
+    {
+      "claim": "StratonovichHAMAudit.ClockFilter.strict_filter_integral: P:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "OK: ClockFilter.lean:29-35 includes nonzero measure, positive support, integrability and a.e. strictly positive weight. notes_stratonovich_ham_second_moment.tex:7404-7419,7468-7476,7521-7523 proves those analytic inputs and uses the resulting strict comparison."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DampedLower.exact_margin: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: DampedLower.lean:9 matches the natural-number inequality. Searches for '157', '2^28' and braced exponent variants found no manuscript computation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DampedLower.pi_cube_certificate: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: DampedLower.lean:12 has exactly 9*2^25/5^10<pi^3. Searches for '2^25', '5^10', '157' and braced variants found no matching manuscript certificate."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DampedLower.rational_pi_gain: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: DampedLower.lean:23-24 matches the rational constants and strict comparison. Searches for '157', '2^28', '2^25' and '5^10' found no matching manuscript computation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DimensionalMatrix.backward: P:actual-wave-form",
+      "verdict": "PASS",
+      "reason": "OK: DimensionalMatrix.lean:9-10 defines the stated unbalanced matrix. integrated_wave_variance.tex:178-185,218-220,309-311 uses S(-t) with these entries at nonzero frequency. The ledger explicitly excludes the continuous zero-frequency extension."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DimensionalMatrix.coupling: P:actual-wave-form",
+      "verdict": "PASS",
+      "reason": "OK: DimensionalMatrix.lean:11 is exactly [[0,0],[H,0]]. integrated_wave_variance.tex:185,218-220 uses B(b)(u,v)=(0,bu). The scalar matrix identity does not formalize multiplication operators."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DimensionalMatrix.forward: P:actual-wave-form",
+      "verdict": "PASS",
+      "reason": "OK: DimensionalMatrix.lean:12-13 agrees with the unbalanced S(t) matrix in integrated_wave_variance.tex:178-185. Arbitrary scalar parameters and field division are correctly separated from the trigonometric and zero-frequency interpretation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DimensionalMatrix.full_interaction: P:actual-wave-form",
+      "verdict": "FAIL",
+      "reason": "OK: The scalar identity itself matches DimensionalMatrix.lean:15-17, but its identification with the unweighted E:variance-normalized-kernel is incorrect. integrated_covariance_foundation.tex:379-382 defines b_r=<r> sin(rt)/r, whereas ledger:142 substitutes b_r=sp/p. integrated_wave_variance.tex:229-237,317-326 requires additional Bessel-coordinate factors, not merely the omitted common weight. See K1."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DirectEvent.kappa_gt_one: L:exact-canonical-scaling",
+      "verdict": "PASS",
+      "reason": "OK: DirectEvent.lean:12,16-17 matches the stated weaker parameter assumptions. integrated_exact_scaling.tex:5-9 and notes_stratonovich_ham_second_moment.tex:122-143 use this kappa with compatible assumptions. The unchecked upper bound kappa<2 is explicitly excluded."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DirectEvent.physical_scale: L:exact-canonical-scaling",
+      "verdict": "PASS",
+      "reason": "OK: DirectEvent.lean:12-14,22-23 proves precisely the positive-T power identity in integrated_exact_scaling.tex:5-9. No stochastic scaling assertion is included."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DirectEvent.noise_scale: L:exact-canonical-scaling",
+      "verdict": "PASS",
+      "reason": "OK: DirectEvent.lean:36-37 agrees exactly with integrated_exact_scaling.tex:39-43. Covariance scaling and equality in law are correctly listed outside Lean."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DirectEvent.vertex_scale: L:exact-canonical-scaling",
+      "verdict": "PASS",
+      "reason": "OK: DirectEvent.lean:48-50 matches integrated_exact_scaling.tex:38-47, including delta^(-1/2). Green-measure scaling and passage to the series remain analytic."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DirectEvent.gauge_inverse: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: DirectEvent.lean:60,63 matches the matrix identity. Searches for 'gauge', 'pulse', 'Floquet' and the triangular-matrix calibration found no matching manuscript computation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DirectEvent.gauge_drift: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: DirectEvent.lean:60-61,68-69 matches the stated conjugation. Searches for 'gauge', '1-w^2', 'pulse' and 'Floquet' found no corresponding manuscript computation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DirectEvent.monodromy: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: DirectEvent.lean:75-81 contains the described product, determinant and trace. Searches for 'monodromy', 'Floquet', 'pulse' and 'a^2-2b^2' found no matching manuscript calibration."
+    },
+    {
+      "claim": "StratonovichHAMAudit.FiniteYoung.weighted_natural_powers: L:gaussian-scalar-powers",
+      "verdict": "PASS",
+      "reason": "OK: FiniteYoung.lean:9-11 matches the natural exponents, real weights and endpoints. integrated_compact_gaussian.tex:18-23,33-35 states exactly this inequality, including the ordinary zeroth-power convention."
+    },
+    {
+      "claim": "StratonovichHAMAudit.GaussianTail.cutoff_density_split: L:tube-rayleigh-tail",
+      "verdict": "PASS",
+      "reason": "OK: GaussianTail.lean:9-12 matches all signs, parameter ranges and eighths. integrated_gaussian_tubes.tex:455-479 explicitly uses this exact finite scalar inequality and separately integrates the Rayleigh density."
+    },
+    {
+      "claim": "StratonovichHAMAudit.GlobalOmega.envelopePolynomial: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: GlobalOmega.lean:8-9 is an integer-coefficient degree-15 polynomial, as summarized. Searches for '237888', '2567920', '516600' and '9900' found no manuscript occurrence."
+    },
+    {
+      "claim": "StratonovichHAMAudit.GlobalOmega.envelopeDenom: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: GlobalOmega.lean:11-12 agrees with every stated factor. Searches for '750', '3-4', '5-3' and the distinctive polynomial coefficients found no matching manuscript denominator."
+    },
+    {
+      "claim": "StratonovichHAMAudit.GlobalOmega.envelopeRational: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: GlobalOmega.lean:14-18 supplies the referenced rational function; claims.yaml correctly describes its bracket. Searches for '177/100', 'envelopeRational', '237888' and '9900' found no manuscript occurrence."
+    },
+    {
+      "claim": "StratonovichHAMAudit.GlobalOmega.left_certificate: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: GlobalOmega.lean:20-21 matches the closed unit interval and 4^15 factor. Searches for '4^15', 'Bernstein' and the polynomial coefficients found no corresponding manuscript certificate."
+    },
+    {
+      "claim": "StratonovichHAMAudit.GlobalOmega.right_certificate: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: GlobalOmega.lean:61-62 matches the shifted argument (1+t)/4. Searches for '4^15', 'Bernstein', '2567920' and '9900' found no corresponding manuscript certificate."
+    },
+    {
+      "claim": "StratonovichHAMAudit.GlobalOmega.polynomial_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: GlobalOmega.lean:102-103 includes both endpoints 0 and 1/2, as stated. Searches for '237888', '2567920', 'envelopePolynomial' and 'Bernstein' found no matching manuscript computation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.GlobalOmega.rational_lt_one: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: GlobalOmega.lean:114-115 has exactly 0<x<=1/2 and the strict upper bound. Searches for '177/100', 'envelopeRational', '3-4' and the polynomial coefficients found no matching manuscript envelope."
+    },
+    {
+      "claim": "StratonovichHAMAudit.HermiteWord.raw_support: L:finite-word-cutoff",
+      "verdict": "PASS",
+      "reason": "OK: HermiteWord.lean:23-29 includes the zero-count initial condition and both map hypotheses. notes_stratonovich_ham_second_moment.tex:5279-5287 uses exactly this induction. Hermite realization remains an outside input."
+    },
+    {
+      "claim": "StratonovichHAMAudit.HermiteWord.cut_eq_raw: L:finite-word-cutoff",
+      "verdict": "PASS",
+      "reason": "OK: HermiteWord.lean:35-44 includes all initial, raising, preserving, fixing and count hypotheses. notes_stratonovich_ham_second_moment.tex:5263-5276,5285-5293 uses this finite-word cutoff argument; vector integrals remain outside Lean."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.temporal_range: E:driver-parameters",
+      "verdict": "PASS",
+      "reason": "OK: InteractionDriver.lean:10,16-17 agrees with both summaries. integrated_actual_operator_driver.tex:18-23 uses this endpoint under 0<a<1. The other endpoint and parameter restrictions are explicitly not claimed."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.variance_norm: L:driver-interval-limit",
+      "verdict": "PASS",
+      "reason": "OK: InteractionDriver.lean:21-22 has the stated nonnegative factors and positive h. integrated_actual_operator_driver.tex:239-243,427-435 extracts precisely the h^(1-a/2) square-root factor from the supplied variance budget."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.holder_parameters: L:driver-holder-limit",
+      "verdict": "PASS",
+      "reason": "OK: InteractionDriver.lean:57-61 matches the midpoint choice and margins; its explicit p>0 follows already from the ledger's positive lower threshold. integrated_actual_operator_driver.tex:537-539 permits this midpoint instance, subject to its additional analytic/index choices."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.dyadic_ratio: L:driver-holder-limit",
+      "verdict": "PASS",
+      "reason": "OK: InteractionDriver.lean:13-14,79-80 agrees with the stated positive margin and strict ratio bounds. integrated_actual_operator_driver.tex:554-568 uses the same ratio with H=beta, m=eta and p=q0; the ledger correctly restricts its certificate to the midpoint instance."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.gaussian_prefactor: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: InteractionDriver.lean:12,30-32 matches the positive-parameter square-root identity. Searches for 'u*v*(u+v)', 'uv', 'u+v', 'mixC' and Gaussian prefactors found no exact manuscript computation of this product."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.gaussian_exponent: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: InteractionDriver.lean:51-52 matches the harmonic-variance identity. Searches for '4uv', '4u', '4v', 'u+v' and 'z^2/(4' found no matching manuscript exponent split."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.box_margin: no direct label",
+      "verdict": "FAIL",
+      "reason": "LABEL-FOUND P:radius-mean-anchor: InteractionDriver.lean:86-87 matches the paraphrase, but integrated_radius_anchor.tex:17-20,297-302,323-325 proves exactly this margin at d=2, with Lean p instantiated as Q. Searches used '(1-a)/2', '2/p', 'd/Q', 'radius-mean-anchor' and '2d/(1-a)'. The separate averaging exponent does not prevent this instantiation. See K2."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.box_scale: no direct label",
+      "verdict": "FAIL",
+      "reason": "LABEL-FOUND P:radius-mean-anchor: InteractionDriver.lean:94-95 matches the scalar identity, but integrated_radius_anchor.tex:293-302,323-327 uses its d=2, Lean p=Q exponent combination when substituting R_delta<=3/delta. Searches used 'delta', '(1-a)/2', 'd/Q', 'radius-mean-anchor' and 'R_delta'. See K2."
+    },
+    {
+      "claim": "StratonovichHAMAudit.JointTilt.tilt_exponent: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: JointTilt.lean:9-10 matches the unrestricted polynomial identity. Searches for 'r s c', Gaussian generating exponents and 'raw-block-gaussian-law' led to integrated_raw_block_lower.tex:124-151, which instead changes the finite Gaussian vector directly; the displayed MGF cancellation is absent."
+    },
+    {
+      "claim": "StratonovichHAMAudit.JointTilt.wrong_sign_error: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: JointTilt.lean:13-14 gives exactly the residual 2*r*s*c. Searches for '2 r s c', 'wrong sign' and Gaussian cross-term diagnostics found no manuscript use; integrated_raw_block_lower.tex:124-132 uses the correct direct Gaussian substitution."
+    },
+    {
+      "claim": "StratonovichHAMAudit.JointTilt.wrong_cost_error: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: JointTilt.lean:17-18 gives exactly -s^2*v/2. Searches for 'wrong cost', 'doubled cost' and the generating-exponent residual found no use of this diagnostic; integrated_raw_block_lower.tex:125-132 retains the correct half-cost."
+    },
+    {
+      "claim": "StratonovichHAMAudit.JointTilt.shifted_amplitude: L:raw-block-inputs",
+      "verdict": "PASS",
+      "reason": "OK: JointTilt.lean:21-22 matches both summaries. integrated_raw_block_lower.tex:93-110 uses g_delta*delta^(a/2)=sqrt(delta), with g_delta defined at line 32. Covariance identification and operator extension remain outside Lean."
+    },
+    {
+      "claim": "StratonovichHAMAudit.LocalFlow.noise_order: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: LocalFlow.lean:9,12-14 matches the parameter interval and exponent relation. Searches for '(1-alpha)/2', 'alpha-1', 'noise order' and Sobolev indices found only unrelated Riesz normalizations, including notes_stratonovich_ham_second_moment.tex:2140, not this computation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.LocalFlow.schur_row: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: LocalFlow.lean:20-21 matches the positive-base identity. Searches for 'q^(-b)', 'k^b', 'Schur' and weighted row factors found no exact manuscript computation; integrated_compact_gaussian.tex:249-277 uses different Schur kernels."
+    },
+    {
+      "claim": "StratonovichHAMAudit.LocalFlow.schur_column: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: LocalFlow.lean:26-27 correctly requires only q>0. Searches for 'q^(-b)', 'q^(-2b)', 'k^b' and 'Schur' found no matching manuscript computation; integrated_compact_gaussian.tex:249-277 uses different kernels."
+    },
+    {
+      "claim": "StratonovichHAMAudit.LocalFlow.schur_rescale: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: LocalFlow.lean:32-34 matches the stated positive k,R identity. Searches for '(k/R)', '2b', 'Schur' and rescaled weight factors found no exact manuscript occurrence."
+    },
+    {
+      "claim": "StratonovichHAMAudit.LocalFlow.source_overlap: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: LocalFlow.lean:10,37-38 matches sigma=-(1+alpha)/4 and both margins. Searches for '(1+alpha)/4', 'sourceSigma', 'sigma', 'source Sobolev' and the -1/2 threshold found no matching manuscript choice."
+    },
+    {
+      "claim": "StratonovichHAMAudit.LocalFlow.source_white_obstruction: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: LocalFlow.lean:42-43 matches both strict hypotheses and the negated conclusion. Searches for 'sigma', '-s', 's-1', '-1/2' and source-index obstructions found no matching manuscript implication."
+    },
+    {
+      "claim": "StratonovichHAMAudit.LocalFlow.source_tail_obstruction: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: LocalFlow.lean:47-48 matches the three strict hypotheses and alpha<1 conclusion. Searches for 'sigma', 's-1', '2 sigma', 'alpha<1' and source-index obstructions found no matching manuscript computation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MiddleCross.certificate_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: MiddleCross.lean:38-61 agrees with the polynomial description and x>=0,y>0 range. Searches for 'certificate', '32768', '14247936000' and rational parametrization found no matching manuscript certificate."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MiddleCross.parameter_identity: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: MiddleCross.lean:33-37,66-68 matches the parametrization and multiplier 32768*t^7*z^9. Searches for '32768', 'z^9', 'parametriz' and 'certificate' found no matching manuscript identity."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MiddleCross.parameter_numerator_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: MiddleCross.lean:73-74 matches z>=2,t>1 and strict positivity. Searches for '32768', 'parametriz', 'certificate' and the defining rational square-root parameters found no matching manuscript computation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MiddleCross.difference_identity: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: MiddleCross.lean:10-32,85-87 matches the stated ranges and exact difference. Searches for '2b^2+4bc', 'b+c-1', '2b+2c-1' and '32768' found no matching manuscript rational comparison."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MiddleCross.resolvent_difference: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: MiddleCross.lean:105-108 matches the supplied ranges and divided difference. Searches for 'divided-difference', 'b+c+r', 'b+r+1', 'b+c-1' and the parametrization found no matching manuscript resolvent computation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MiddleCross.root_numerator_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: MiddleCross.lean:120-121 matches both square roots and strict c>1. Searches for 'b^2+c^2-1', 'b^2+1', '32768' and braced/spaced variants found no matching manuscript computation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MiddleCross.middle_bound: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: MiddleCross.lean:173-174 matches the strict comparison at b>=1,c>1. Searches for 'b^2+c^2-1', 'b^2+1', the rational denominators and '32768' found no matching manuscript comparison."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MovingCone.residual_budget: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "OK: MovingCone.lean:8-10 matches every inequality, without an unlisted q>=0 assumption. integrated_raw_block_lower.tex:263-275,304-311 uses precisely q<=1/8, d<=vartheta and e<=vartheta/4."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MovingCone.cone_conversion: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "OK: MovingCone.lean:14-17 matches the positive amplitude, rho<1/2 and two bounds. integrated_raw_block_lower.tex:295-311 uses exactly this conversion after normalizing the block."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MovingCone.terminal_margin: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "OK: MovingCone.lean:25-27 matches j>0, 16*K*theta<=j, e<=j/8 and the lower bound. integrated_raw_block_lower.tex:315-327 uses these constants with K=H_obs*C_gap."
+    },
+    {
+      "claim": "StratonovichHAMAudit.OccupationForm.potential_budget: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: OccupationForm.lean:8-9 matches the unrestricted real variables and eps>0. Searches for 'A^2/(4', '4 epsilon', '4 varepsilon', 'coerciv' and potential budgets found no exact manuscript formula; integrated_signed_static.tex:60-71 instead uses K*b*z with different bookkeeping."
+    },
+    {
+      "claim": "StratonovichHAMAudit.OccupationForm.shifted_coercivity: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: OccupationForm.lean:18-20 matches the supplied form bound and conclusion. Searches for 'D^2-P', 'C+1', 'coerciv' and shifted form bounds found no exact manuscript computation; integrated_signed_static.tex:60-71 uses a different shifted H^1 estimate."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PhaseResponse.rough_phase_choice: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: PhaseResponse.lean:10,12-15 matches the index and all three margins. Searches for '(alpha+a)/4', 'phase index', 'alpha+a-3' and '2s+alpha+a' found no matching manuscript choice; integrated_wave_variance.tex:169-170 instead fixes s=1/2."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PhaseResponse.balanced_phase: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: PhaseResponse.lean:25-26 matches the two strict inequalities. Searches for '2s+alpha+a', 'alpha+a-3', 'balanced phase' and the response margins found no exact manuscript computation; integrated_wave_variance.tex:143-164 uses different time-exponent margins."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PhaseResponse.energy_boundary: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: PhaseResponse.lean:29-30 matches the unrestricted equivalence. Searches for '2+alpha+a', 'alpha+a<1', 'energy boundary' and spaced variants found no matching manuscript computation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PhaseResponse.four_component_gram: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: PhaseResponse.lean:33-38 matches the four-term trigonometric identity. Searches for 'r_1-r_2', 'k_1-k_2', 'cos', 'sin' and four-component Gram products found no matching manuscript computation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PhaseResponse.two_frequency_average: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "LABEL-FOUND L:masked-trig-products: PhaseResponse.lean:42-43 faithfully states cos(x)cos(y)=(cos(x-y)+cos(x+y))/2. Searches for 'cos', 'sin', 'r-rho' and 'r+rho' locate integrated_covariance_foundation.tex:347-375, whose proof expands the cosine-cosine case into the equivalent four exponential modes. Whether this constitutes use of this exact real identity, rather than a separate equivalent expansion, remains unresolved."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PhaseResponse.frequency_window: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: PhaseResponse.lean:47-50 matches all signs, cutoff and supplied absolute-error hypothesis. Searches for 'frequency window', 'A t r', 'B r', 'a-2' and '3At' found no matching manuscript two-sided response estimate."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PositiveGram.scalar_sqrt_dual: L:gram-scalar-algebra",
+      "verdict": "PASS",
+      "reason": "OK: PositiveGram.lean:12-13 permits arbitrary real ell, w>0 and t>=0, exactly as integrated_positive_gram.tex:26-30,39-45. Both summaries preserve this scope."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PositiveGram.gram_norm_square: L:gram-scalar-algebra",
+      "verdict": "PASS",
+      "reason": "OK: PositiveGram.lean:21-24 includes a finite index type and real inner product space. integrated_positive_gram.tex:36,46-47 states the exact finite Gram expansion. Completeness is unnecessary for the Lean identity."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PositiveGram.active_upper_bound: P:gram-positive-optimizer",
+      "verdict": "PASS",
+      "reason": "OK: PositiveGram.lean:38-43 matches claims.yaml and the shortened ledger description. integrated_positive_gram.tex:113-125 uses this exact conditional upper bound on the active subset. Optimization, existence and attainment are explicitly left outside Lean."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PositiveGram.half_weighted_entrywise_mono: P:gram-entrywise-comparison",
+      "verdict": "PASS",
+      "reason": "OK: PositiveGram.lean:72-76 matches nonnegative weights, entrywise order and the factor 1/2. integrated_positive_gram.tex:183-195 uses the same half-quadratic comparison before taking infima and maxima."
+    },
+    {
+      "claim": "StratonovichHAMAudit.ProjectionResidual.projection_gap: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: ProjectionResidual.lean:9-12 matches both coefficients and 1/96. Searches for '1932951', '20000', '3200' and the rank-one projection calibration found no manuscript occurrence."
+    },
+    {
+      "claim": "StratonovichHAMAudit.ProjectionResidual.tilted_gap: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: ProjectionResidual.lean:23-24 correctly allows arbitrary q and assumes only the stated lower bound on p. Searches for '1932951', '3200', '20000' and the affine projection-gap computation found no manuscript occurrence."
+    },
+    {
+      "claim": "StratonovichHAMAudit.RawValueCeiling.exact_gap: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: RawValueCeiling.lean:9 matches the natural-number inequality. Searches for '30^60', '39^39', '21^21' and braced variants found no manuscript occurrence. The different numerical logarithmic example at integrated_occupation_ceiling.tex:291-298 is not this certificate."
+    },
+    {
+      "claim": "StratonovichHAMAudit.RawValueCeiling.strict_log_gap: C:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "OK: RawValueCeiling.lean:12-14 matches a>0, q-2a>0 and the exact logarithmic gap. integrated_occupation_ceiling.tex:275-288 explicitly uses this fact, without assuming q>=3."
+    },
+    {
+      "claim": "StratonovichHAMAudit.RawVariational.dilation_factors: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "OK: RawVariational.lean:9-11 agrees with the dimension-one exponent arithmetic. integrated_unmasked_variational.tex:228,243-254 uses the dimension-d factors, whose d=1 specialization is exactly the Lean pair. The ledger explicitly limits its exponents to dimension one."
+    },
+    {
+      "claim": "StratonovichHAMAudit.RawVariational.label_score: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "OK: RawVariational.lean:22-24 agrees with the stated positive c and alpha<3 identity. integrated_unmasked_variational.tex:287,298-307 uses precisely this scalar factorization; the class bijection and supremum arguments remain outside Lean."
+    },
+    {
+      "claim": "StratonovichHAMAudit.RawVariational.positive_score: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "OK: RawVariational.lean:40-42 matches I,v>0 and the exact dilation choice. integrated_unmasked_variational.tex:287-296 uses r0=(I0/v0)^(1/k), without requiring r0<1, and obtains r0*I0/2>0."
+    },
+    {
+      "claim": "StratonovichHAMAudit.RawVariational.strict_label_factor: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "OK: RawVariational.lean:64-65 matches alpha<3 and 2<2^((4-alpha)/(3-alpha)). integrated_unmasked_variational.tex:287,333-335 uses exactly this strict factor, while explicitly refusing a first-moment identification."
+    },
+    {
+      "claim": "StratonovichHAMAudit.TerminalCross.polynomial_identity: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: TerminalCross.lean:12-32 matches the shifted polynomial identity. Searches for 'c^2+c+1', 'c^3+c+1', 'certificate', 'b+c-1' and spaced variants found no matching manuscript polynomial."
+    },
+    {
+      "claim": "StratonovichHAMAudit.TerminalCross.polynomial_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: TerminalCross.lean:36-37 matches b>=1,c>1 and strict positivity. Searches for 'c^2+c+1', 'c^3+c+1', 'certificate' and 'b+c-1' found no matching manuscript certificate."
+    },
+    {
+      "claim": "StratonovichHAMAudit.TerminalCross.rate_le: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: TerminalCross.lean:44-45 matches A>0,s>=1/2 and both denominators. Searches for 'A/(2', 'A+2s', 'frac{A}', 'A+1' and spaced variants found no matching manuscript rate comparison."
+    },
+    {
+      "claim": "StratonovichHAMAudit.TerminalCross.exponential_difference: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: TerminalCross.lean:51-54 matches 0<=D<C and the supplied mixing identity, without extra sign assumptions on r,R,k,w. Searches for 'C-D', 'C - D', mixed exponential differences and 'C r-D R' found no corresponding manuscript computation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.TerminalCross.terminal_bound: no direct label",
+      "verdict": "PASS",
+      "reason": "ABSENT-CONFIRMED: TerminalCross.lean:71-73 and its definitions match claims.yaml and the shortened ledger description. Searches for 'c^2+c+1', 'c^3+c+1', 'b^2', 'c^2-1' and 'b+c-1' found no matching manuscript rational/square-root comparison."
+    },
+    {
+      "claim": "StratonovichHAMAudit.WhiteCDF.cdf_square_bound: P:white-spatial-energy",
+      "verdict": "PASS",
+      "reason": "OK: WhiteCDF.lean:8-10 has exactly the universal quadratic hypothesis and 3*A^2<=b conclusion. integrated_white_evaluation.tex:14-16,61-66 uses the substitution z=3A and explicitly distinguishes the analytic CDF identity."
+    },
+    {
+      "claim": "StratonovichHAMAudit.WhiteCDF.energy_upper: P:white-spatial-energy",
+      "verdict": "PASS",
+      "reason": "OK: WhiteCDF.lean:15-16 matches the supplied premise and constant c^2/6, without unnecessary sign hypotheses. integrated_white_evaluation.tex:79-91 uses this exact completing-square deduction and separately proves attainment."
+    }
+  ],
+  "findings": {
+    "fatal": [
+      "K1 StratonovichHAMAudit.DimensionalMatrix.full_interaction: the ledger conflates the unbalanced interaction product with the normalized kernel. Lean says '!![-(sp/p)*H*cq,-(sp/p)*H*(sq/q);cp*H*cq,cp*H*(sq/q)]' (lean/StratonovichHAMAudit/DimensionalMatrix.lean:15-17). TeX defines 'b_r(t) = <r> sin(rt)/r' (manuscript/notes/integrated_covariance_foundation.tex:379-382), and E:variance-normalized-kernel contains these b_r,b_rho inside the common inverse-square-root weight (manuscript/notes/integrated_wave_variance.tex:229-237). The weighted-coordinate derivation is explicit at lines 317-326. Consequently ledger:141-145,155 is wrong when it identifies b_r=sp/p and describes only the common weight as omitted. Exact fix: describe full_interaction as the unbalanced Fourier product supporting E:variance-physical-adjoint; remove the claim that it already gives the normalized kernel after dropping one common weight. Explain that deriving the normalized kernel additionally requires conjugation by diag(<xi>^(1/2),<xi>^(-1/2)) and the corresponding input inverse, producing the individual <r>,<rho> sine factors. State that this coordinate conversion is outside the listed Lean theorem.",
+      "K2 StratonovichHAMAudit.InteractionDriver.box_margin and StratonovichHAMAudit.InteractionDriver.box_scale: their 'no direct label' classification and ledger:240-245's assertion that these are 'a different fact, not an instance' are false for dimension two. Lean states '4/(1-a) < p : 0 < (1-a)/2-2/p' and 'delta^((1-a)/2)*(delta^(-2))^(1/p) = delta^((1-a)/2-2/p)' (lean/StratonovichHAMAudit/InteractionDriver.lean:86-95). TeX assumes 'Q>2d/(1-a)' and concludes 'e_anchor=(1-a)/2-d/Q>0' (manuscript/notes/integrated_radius_anchor.tex:17-20,297-302); its proof explicitly divides Q(1-a)>2d by 2Q and combines the radius power with g_delta (lines 323-327). At d=2 and Lean p=Q these are precisely the margin and power bookkeeping certified by Lean. The manuscript's separate averaging exponent does not forbid instantiating the theorem's scalar parameter as Q. Exact fix: map both rows to P:radius-mean-anchor as dimension-two scalar specializations, explicitly distinguish Lean p=Q from the manuscript's averaging p, replace the contrary module prose, add the index entry and update the labelled/unlabelled totals to 38/50."
+    ],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [
+    "Correct DimensionalMatrix.full_interaction and its surrounding prose as specified in K1: distinguish the unbalanced product from the Bessel-normalized kernel and identify the additional coordinate conversion as outside this Lean theorem.",
+    "Reclassify InteractionDriver.box_margin and box_scale under P:radius-mean-anchor with d=2 and Lean p=Q; correct the contrary prose, index and resulting 38-labelled/50-unlabelled totals."
+  ],
+  "limitations": [
+    "Required-source reading was incomplete. Every Lean source, the complete ledger, claims.yaml and coverage.yaml were read, but the manuscript files marked partial in source_coverage were not read completely. Full-file keyword searches do not replace contextual reading of their remaining ranges.",
+    "All 88 Lean statements and summaries were compared, and manuscript searches were performed for every row. Negative no-label results are based on those searches; unrecognized equivalent computations in unread contextual ranges remain possible.",
+    "PhaseResponse.two_frequency_average remains specifically INCONCLUSIVE: L:masked-trig-products uses an equivalent complex-exponential expansion, but the exact correspondence with the real product-to-sum certificate was not resolved. Its absence classification has not been accepted.",
+    "The two documented correspondence errors suffice for FAIL independently of the incomplete coverage and unresolved trigonometric row. This report is not an exhaustive list of possible ledger defects.",
+    "Claims about the earlier manuscript revision, external Audit output, withheld modules and provenance/manuscript-anchor.json are outside this packet review and were not treated as findings.",
+    "Proof compilation and axiom correctness were accepted as stipulated; no build or proof-correctness audit was performed. Provenance byte bindings were accepted without recomputing hashes.",
+    "This AI review is neither human verification nor a novelty audit."
+  ]
+}

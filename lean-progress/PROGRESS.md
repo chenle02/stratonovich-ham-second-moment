@@ -61,8 +61,16 @@
   displayed step). All accepted; repaired at companion c9e28af (36 labelled,
   52 unlabelled; coverage 20+4). Record:
   reviews/2026-11-10-lean-ledger-codex-gpt61sol/.
-- **Next:** successor Codex review of the repaired ledger at c9e28af for an
-  accepted receipt; then a human read (A1) remains valuable;
+- **Successor Codex review (2026-11-10):** at c9e28af, valid, FAIL/medium:
+  2 fatal, both accepted and repaired at companion 1a8c419: full_interaction
+  is the UNWEIGHTED product (b_r = <r>sin(rt)/r in the manuscript; the
+  previous repair dropped <r>), and box_margin/box_scale are the d=2, p=Q
+  case of the margin step of P:radius-mean-anchor (overrides the 11-09
+  triage). Now 38 labelled / 50 unlabelled; coverage 21+4. Record:
+  reviews/2026-11-10-lean-ledger-codex-gpt61sol-v2/.
+- **Next:** successor review of 1a8c419 with complete reading of cited
+  files, AND a human statement read (A1): each AI pass has found a new
+  real defect;
   wave L1 (G0 pair-partition counts) when opened.
 
 - **Standalone local checks (current, 2026-11-09):** 87 accepted finite
