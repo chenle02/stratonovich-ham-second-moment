@@ -18365,3 +18365,23 @@ independently rechecked against the finished validation and match. Nothing was
 lost; no pushed history is rewritten. The private delivery audit preserves the
 incident and exact source binding. Future shared-index commits use explicit
 commit pathspecs as well as explicit staging.
+
+
+### 2026-11-10 — correct manuscript-owner companion target triage
+
+The queued Agent22 message about c9e28af was superseded by later correspondence
+repairs. Updated private/audit/2026-11-09-companion-target-triage.md with a
+prominent correction, retaining the original assessment as historical evidence.
+My earlier absence classification missed equivalent computations: DimensionalMatrix
+is the unweighted product supporting P:actual-wave-form; the two box rows check
+the d=2, Lean p=Q scalar step of P:radius-mean-anchor. Neither result verifies
+the full analytic proposition. In particular, the weighted normalized kernel
+and the zero-frequency extension remain outside the matrix calculation.
+JointTilt retains no direct label. Recorded the later HermiteWord hypothesis
+and cosine/noise-order/kappa mapping corrections without editing frozen reports.
+
+The latest committed companion ledger inspected is435fdb0:40 labelled and48
+unlabelled rows;28 coverage rows (24 inputs-supplied,4 outside). These are not
+whole-proof counts. Agent22 owns the successor review and current ledger state;
+its split-review files remain untracked and were not staged here. Gate remains
+open. No manuscript, Lean theorem, PDF, or scientific acceptance changed.
