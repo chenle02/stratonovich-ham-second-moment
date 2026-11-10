@@ -1,11 +1,11 @@
 # Reading edition with the current technical companion
 
 Read [the 28-page reader](notes_stratonovich_ham_second_moment_reader.pdf)
-with [the 302-page technical companion](notes_stratonovich_ham_second_moment.pdf).
+with [the 303-page technical companion](notes_stratonovich_ham_second_moment.pdf).
 The reader introduces the model, proposed result and variational constant,
 explains how the main steps fit together, and links to the detailed proofs.
 It is a guided route through the work, not a standalone short proof.
-The combined record is 330 pages; no total-proof-length reduction is claimed.
+The combined record is 331 pages; no total-proof-length reduction is claimed.
 
 This November 9 revision matches the current **unadopted mathematical candidate**.
 It updates the literature and contribution discussion, mentions the three

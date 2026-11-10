@@ -18525,3 +18525,14 @@ These are proposed extensions, not new proved claims or a new research goal.
 The reader links to the discussion. Report 302 pages, reader 28; all 215 proof
 bodies preserved, 82 mapped labels and 250 external links valid. Both builds
 are clean; the two rendered future-work pages were inspected.
+
+## 2026-11-10: conjecture and method table in future work
+
+At Le's request, the higher-even-moment prediction is Conjecture 1.6.1.
+Table 1.1 separates established Sobolev ranges, first targets and remaining
+proof steps in dimensions one through three. The existing second-moment
+theorem remains the established case of the written argument. Both rendered
+pages containing the conjecture/table were inspected; builds are clean,
+215 existing proof bodies preserved, 82 mapped labels and 250 links valid.
+Report 303 pages; reader 28. This is presentation of an open question, not
+a new proof or research-goal activation.
