@@ -18892,3 +18892,13 @@ human-verified". The coverage files are re-pinned to companion 3a7d57f (a
 README-only commit recording Le's acceptance); coverage.yaml and the
 receipt numbers are unchanged. Clean build, 332 pages, book pages 303-304
 inspected.
+
+Follow-up (Le, same day): the lean-pkg logo (secretary bird, copied
+unchanged from the lean-pkg repository, docs/assets/logo-256.png at add8df8;
+Apache-2.0) now sits in a small wrapfigure beside the lean-pkg paragraph of
+Appendix F, as media/lean-pkg/lean-pkg-logo-256.png with README.md and
+PROVENANCE.json. The illustrative-media exception is extended to it in
+REDACTIONS.md, the release-design addendum and export-allowlist.json (exact
+hash). The real release filter leaves the three media files and
+notes/lean-coverage.tex byte-identical; front-door check PASS. Clean build,
+332 pages; book page 303 inspected.
