@@ -414,6 +414,43 @@
   approved statement change gets the usual correspondence check. Lean
   consequence: whole results whose statements need Gamma != 0 must carry
   it as an explicit hypothesis (as P:clock-copy-obstruction does).
+- **975feb3 re-anchor and H:homog re-check (2026-11-11; done, Le's
+  acceptance pending):** at Le's request #3 committed the zero-covariance
+  remark after H:homog (main TeX 209-214) and the Gamma != 0 qualification
+  of T:first's strict comparison (426-432) at Article 975feb3.
+  - Re-anchor (companion c308c82 docs, d9e5ce9 comment/summary line
+    shifts): all 150 cited labels exist once, same file; 145 identical up to
+    whitespace and braces; exceptions T:full-upper (cross-reference only,
+    cited as outside) and four S: sections (prose). 754 line citations
+    mapped, 362 moved. d40f394 fixes two pre-existing off-by-ones
+    (SpectralHomog 7646->7647 incl. ChallengeDefs copy; WaveKernel
+    817->810). Build, CheckFidelity 611/611 and claims check pass.
+  - Receipts at d40f394 (companion 1254720): comparator pass (611
+    theorems); lower tier 0 sorry, 724 claim axioms, standard axioms only
+    (peak 7.2 GiB). A first lower-tier run was refused by lean-pkg because I
+    edited coverage.yaml in the working tree during the run (nothing
+    written; re-run clean). Re-gated verified-private 2f5ee14 -> d40f394
+    with comparator evidence; claims synced; `claims ledger`: READY, ok,
+    513 required, 709 verified, 0 open, 15 out-of-scope (internal helper
+    definitions).
+  - Codex GPT-6.1-Sol narrow re-check (6 checks: anchor paragraph,
+    HomogHypothesis section, every H:homog consumer row, line citations,
+    T:full-upper, no new error) at d40f394 over 975feb3: attempt v1
+    INCONCLUSIVE/medium only because the packet lacked DampedNorms.lean
+    (row checked by hand: no Gamma != 0 needed); attempt v2 with all 27
+    modules PASS/high, no findings, no repairs. Evidence and ADJUDICATION.md:
+    reviews/2026-11-11-lean-reanchor-975feb3 (Article 8df16e1).
+  - Docs after the receipts (bound by docs-only descendants): 6633243
+    docs/coverage-scope-tex.yaml (LaTeX forms of the three narrower-scope
+    sentences for #24's Appendix F; coverage/1 rejects an extra row key);
+    31441aa README verification record at d40f394 and the re-anchor note.
+    Easley replays not repeated: the Lean sources differ from 2f5ee14 only
+    in doc comments. Article commits after 975feb3 (to f4cd8d4) touch only
+    preface/Appendix E files, none cited.
+  - Open: Le's acceptance of the re-check; lean-pkg `coverage check NAME`
+    reports 487 comparator theorems named by no coverage row (rule R10/R11
+    for a rendered scope page; pre-existing since the comparator tier, the
+    offline check skips it; gate and ledger unaffected), sent to lean-ops.
 - **Next:** Easley external kernel
   replay (leanchecker --fresh per module) of 837778a (Lean sources
   identical to 79afdde) in progress; human statement read (A1) still
