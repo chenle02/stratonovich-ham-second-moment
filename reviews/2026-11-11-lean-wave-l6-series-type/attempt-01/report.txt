@@ -1,0 +1,318 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-1176 — complete.",
+    "candidate/statement-ledger.md:1-452,592-609,2901-2951,3714-3849,4807-4932 — partial file; complete required Scope, Index, SeriesType and TypeContinuity sections, plus cross-reference contexts. Relevant names and labels searched throughout the file.",
+    "lean/StratonovichHAMSecondMoment/SeriesType.lean:1-338 — complete.",
+    "lean/StratonovichHAMSecondMoment/TypeContinuity.lean:1-1183 — complete, read consecutively as 1-300,301-600,601-900,901-1183.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 — complete.",
+    "lean/claims.yaml:9597-9963 — partial file; complete entries for both required modules.",
+    "lean/coverage.yaml:1-982 — complete, read consecutively as 1-260,261-520,521-780,781-982.",
+    "docs/coverage-scope-tex.yaml:1-27 — complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:180-235,1917-1935,2500-2620,2670-2702,3488-3505,3680-3705,4596-4614,5038-5052,5074-5090,5537-5550,5973-5990,6658-6676,6980-7020,7140-7210,7338-7380,7430-7540 — partial file; all mandatory manuscript ranges completely read. Additional label-only reads:1864,3329,4532,4947,5369,5820,6349. Exact relevant label definitions searched across all supplied manuscript .tex files; all matches were in this file."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.SeriesType.sum_rpow_le_rpow_sum: no direct label",
+      "verdict": "PASS",
+      "reason": "SeriesType.lean:61-62 assumes '1 ≤ ν' and '∀ k, 0 ≤ a k' and proves the stated finite-sum inequality. TeX notes_stratonovich_ham_second_moment.tex:7185-7186 uses 'sum a_k^ν ≤ (sum a_k)^ν' for the nonnegative exponential-series terms; 2603 gives another explicit use. Ledger:2941 and claims.yaml:9598-9604 accurately describe this elementary foundation, without claiming the containing propositions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SeriesType.term_eq_rpow: no direct label",
+      "verdict": "PASS",
+      "reason": "SeriesType.lean:72-73 assumes 'ν ≠ 0', '0 ≤ x' and states exactly the advertised term identity. TeX:4606-4608 writes the corresponding identity inside a series with 'q ≥ 1' and 'z ≥ 0' at 4604. Ledger:2942 and claims.yaml:9605-9611 correctly present the more general algebraic identity as a Lean-route auxiliary, not a separately formalized TeX step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SeriesType.seriesNu_summable_le: no direct label",
+      "verdict": "PASS",
+      "reason": "SeriesType.lean:88-90 assumes '1 ≤ ν', '0 ≤ x' and concludes both Summable and the bound exp(ν x^(1/ν)). TeX:4604-4609 assumes 'z ≥ 0 and q ≥ 1' and gives that same bound; the other ledger citations also contain it. Ledger:2943 and claims.yaml:9612-9618 match. Explicit summability faithfully prevents Lean's nonsummable-tsum default from changing the object."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SeriesType.seriesNu_holder_le: P:static-phase-all-orders",
+      "verdict": "PASS",
+      "reason": "SeriesType.lean:112-115 assumes '1 / 2 ≤ β', 'β < 1', '0 ≤ x' and proves summability and 2^(1-β) exp(2β x^(1/β)). TeX:2596-2606 has β in (1/2,3/2), and for β<1 applies Hölder to the identical factorization with geometric sum at most two. Ledger:2944 and claims.yaml:9619-9625 faithfully expose the intermediate bound; it is genuinely this TeX proof step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SeriesType.seriesNu_le_two_exp_three: P:static-phase-all-orders",
+      "verdict": "PASS",
+      "reason": "SeriesType.lean:191-194 assumes '1 / 2 ≤ β', 'β ≤ 3', '0 ≤ x' and proves summability and '≤ 2 * exp (3 * x^(1/β))'. TeX:2596-2606 uses the identical bound only for β=(3-α)/2 in (1/2,3/2). The larger Lean range contains the entire manuscript range and is expressly disclosed in ledger:2945 and claims.yaml:9626-9632."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SeriesType.factorial_sq_le_mul_factorial: no direct label",
+      "verdict": "PASS",
+      "reason": "SeriesType.lean:218-219 assumes natural r,s,k with 'r + s = 2 * k' and proves '(k!)^2 ≤ r! * s!'. TeX:2680-2681 and 5046 state exactly 'r!s! ≥ (k!)^2' when r+s=2k. Ledger:2946 and claims.yaml:9633-9639 match; the central-binomial proof route is disclosed at ledger:2930-2931."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SeriesType.factorial_ge_exp: no direct label",
+      "verdict": "PASS",
+      "reason": "SeriesType.lean:238-239 assumes '1 ≤ k' and proves k^k exp(1-k)≤k!. TeX:7171-7174, in the same k≥1 context introduced at 7166, states the equivalent logarithmic lower bound. Ledger:2947 and claims.yaml:9640-9646 are faithful and correctly classify this exponential-form induction lemma as a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SeriesType.factorial_le_exp: no direct label",
+      "verdict": "PASS",
+      "reason": "SeriesType.lean:267-268 assumes '1 ≤ k' and proves k!≤k^(k+1) exp(1-k). TeX:7174 states the equivalent upper bound 'log(k!) ≤ k log k-k+1+log k' for k≥1. Ledger:2948 and claims.yaml:9647-9653 match, including the auxiliary rather than TeX-proof-step classification."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SeriesType.log_factorial_bounds: L:positive-series-type",
+      "verdict": "PASS",
+      "reason": "SeriesType.lean:305-307 assumes '1 ≤ k' and proves both bounds with constants +1 and +log k unchanged. TeX:7171-7174 states those exact inequalities in the k≥1 context. Ledger:2949 and claims.yaml:9654-9660 match. The induction route, unlike the manuscript's integration of log, is explicitly disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SeriesType.gamma_mid_sq_le: no direct label",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "SeriesType.lean:324-325 assumes '0 < x', '0 < y' and proves the stated midpoint Gamma inequality. Ledger:2950 and claims.yaml:9661-9667 faithfully describe it and explicitly claim no manuscript line or application. No TeX hypothesis is attributed to this standalone tool. W1 concerns only the broader foundation-category wording, not its mathematical statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.limsup_le_of_eventually_le_add: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:80-82 assumes '∀ ε > 0, ∀ᶠ x in l, f x ≤ B + ε' and concludes the EReal limsup≤B, without additional filter or boundedness hypotheses. Ledger:3807 and claims.yaml:9669-9675 match. TeX:7187 says 'Therefore, τ ≤ ν A^(1/ν)', but does not state this abstract filter lemma; no-direct-label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.eventually_lt_of_limsup_lt_coe: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:95-98 assumes the EReal limsup '< (L : EReal)' and concludes '∀ᶠ x in l, f x < L'. Ledger:3808 and claims.yaml:9676-9682 match. TeX:7164-7166 chooses 'L > τ' and instead obtains a global bound with C_L; the ledger correctly treats this eventual-bound helper as auxiliary to the disclosed Lean route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.seriesSum: L:positive-series-type",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:105 defines '∑' k, c k * z^k'. TeX:7150-7151 defines 'F(z)=sum c_k z^k<∞ for every z≥0'. Ledger:3809 and claims.yaml:9683-9689 correctly distinguish the unrestricted Lean definition from its intended, summable use. The paper wrapper supplies exactly that summability hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.seriesType: L:positive-series-type",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:111-112 defines the limsup atTop of '(z^(-(1/ν)) * log(seriesSum c z) : EReal)'. TeX:7153 defines 'τ=limsup z^(-1/ν) log F(z)'. Ledger:3810 and claims.yaml:9690-9696 match. EReal preserves infinite values and introduces neither truncation nor a boundedness hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.coeffType: L:positive-series-type",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:120-121 defines the ENNReal limsup of ofReal(((k!)^ν c_k)^(1/k)). TeX:7150 assumes 'c_k≥0' and 7157 defines the same K. Thus ofReal does not truncate relevant terms; k=0 is immaterial to atTop. Ledger:3811 and claims.yaml:9697-9703 faithfully disclose both conventions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.one_le_seriesSum: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:125-126 assumes '∀ k, 0 ≤ c k', 'c 0 = 1', '0 ≤ z' and Summable, and proves 1≤F(z). TeX:7150-7151 supplies precisely these conditions and 7164 uses 'Since c_0=1, τ≥0'. Ledger:3812 and claims.yaml:9704-9710 match. This explicitly recorded route helper has no separate labelled assertion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.term_le_seriesSum: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:131-133 assumes nonnegative coefficients, z≥0 and summability, and proves c_k z^k≤F(z), without c_0=1. TeX:7166-7167 uses 'the inequality c_k z^k≤F(z)' under the lemma's nonnegative, finite-series hypotheses. Ledger:3813 and claims.yaml:9711-9717 accurately identify the general route helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.seriesType_nonneg: L:positive-series-type",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "TypeContinuity.lean:137-138 assumes nonnegative c, 'c 0 = 1' and summability for z≥0, and proves 0≤τ for any real ν. TeX:7150-7151 has these assumptions with ν≥1; 7164 explicitly says 'Since c_0 = 1, τ ≥ 0'. Ledger:3814 and claims.yaml:9718-9724 faithfully state the valid generalization. W2: the ledger's pinpoint 7166 should be 7164."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.tendsto_log_add_one_div_nat: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:147-148 has no hypotheses and proves '(log k + 1)/k → 0' along naturals. Ledger:3815 and claims.yaml:9725-9731 match. TeX:7174-7176 passes from the logarithmic factorial bound to K≤(L/ν)^ν; it does not separately state this limit. The auxiliary mapping does not overclaim."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.coeffType_le_of_seriesType_lt: L:positive-series-type",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:164-168 assumes '0 < ν', nonnegative c, c_0=1, summability and 'seriesType ν c < L', concluding K≤ofReal((L/ν)^ν). TeX:7150-7151 assumes ν≥1 and the same coefficient conditions; 7164 chooses L>τ and 7176 concludes K≤(L/ν)^ν. Ledger:3816 and claims.yaml:9732-9738 accurately state the weaker ν restriction and disclosed eventual-bound route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.tendsto_rpow_neg_mul_affine_log: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:259-260 assumes '0 < κ' with arbitrary real A,B and proves z^(-κ)(A+B log z)→0. Ledger:3817 and claims.yaml:9739-9745 match. TeX:7186-7187 says 'The polynomial contributes zero to the normalized logarithmic growth'; this abstract limit is correctly listed as a route auxiliary, not an independently labelled TeX result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.seriesType_le_of_coeffType_lt: L:positive-series-type",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:277-281 assumes ν≥1, nonnegative c, c_0=1, summability, A>0 and K<ofReal A, and proves τ≤ν A^(1/ν). TeX:7179 chooses 'A > K'; K≥0 makes A>0 automatic, and 7187 gives the same conclusion. Ledger:3818 and claims.yaml:9746-9752 match without a stronger supplied assumption."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.positive_series_type_paper: L:positive-series-type",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:383-389 assumes '1 ≤ ν', c_k≥0, c_0=1 and summability for every z≥0. It proves both finite-τ⇒finite-K and finite-K⇒finite-τ, with τ=ν(K.toReal)^(1/ν). TeX:7149-7161 states exactly these hypotheses and both directions. Ledger:3819 and claims.yaml:9753-9759 are faithful; finiteness accompanies every use of K.toReal, including K=0."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.coeffType_exp_family: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:454-455 assumes only '0 ≤ A', allows arbitrary real ν and proves coeffType(A^k/(k!)^ν)=ofReal A. Ledger:3820 and claims.yaml:9760-9766 match. TeX:7149-7161 contains the general type lemma, not this model-family assertion; the ledger expressly calls it a non-vacuity check rather than a TeX result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.seriesType_exp_family: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:470-473 assumes '1 ≤ ν', '0 ≤ A' and proves nonnegativity, c_0=1, summability and τ=ν A^(1/ν). Ledger:3821 and claims.yaml:9767-9773 match. TeX:7150-7160 supplies the general hypotheses and type identity but no labelled model-family example; the non-vacuity classification is accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.growthUpper: E:moment-growth-types",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:491-492 defines 'limsup (T^(-κ) * log(m T) : EReal) atTop', with arbitrary κ,m. TeX:7432-7436 defines the same expression for p=1,2, κ=κ(a), m(T)=E[u^(a)(T,x)^p]. Ledger:3822 and claims.yaml:9774-9780 correctly disclose the abstract-function definition; no absolute moment is substituted."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.growthLower: E:moment-growth-types",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:497-498 defines the corresponding EReal liminf. TeX:7437-7438 defines 'underline Λ_p(a)=liminf T^(-κ(a)) log E[u^(a)(T,x)^p]'. Ledger:3823 and claims.yaml:9781-9787 match, with the same fixed-point abstraction and normalization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.map_rpow_inv_atTop: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:502-503 assumes '0 < β' and proves 'map (fun z => z^(1/β)) atTop = atTop', not merely convergence of the substitution. Ledger:3824 and claims.yaml:9788-9794 match. TeX:7469 uses 'z=T^β(a)' with β(a)>0 from 6992-6994; this filter-level justification is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.growthUpper_eq_seriesType: P:moment-growth-logconvex",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:521-523 assumes β,ν>0 and '∀ t, 0<t → m t = seriesSum c (t^β)', proving growthUpper(β/ν)m=seriesType ν c. TeX:7466-7470 uses the positive-series representation and 'z=T^β(a)', 'z^(1/ν)=T^κ(a)' to assert exactly this identification. Ledger:3825 and claims.yaml:9795-9801 match. The substitution is proved, not an input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.coeffType_interp: P:moment-growth-logconvex",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:547-552 assumes 0<θ<1, nonnegative c,c1,c2, pointwise coefficient interpolation and finite endpoint K1,K2, concluding K≤ofReal(K1.toReal^(1-θ)K2.toReal^θ). TeX:7463-7475 establishes finite endpoint types, and 7477-7484 states this same limsup interpolation, explicitly allowing zero or oscillating subsequences. Ledger:3826 and claims.yaml:9802-9808 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.nu_rpow_interp: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:614-616 assumes '0 < ν', '0 ≤ x', '0 ≤ y', with arbitrary θ, and states the advertised power identity. Ledger:3827 and claims.yaml:9809-9815 match. TeX:7485-7486 says 'Taking the 1/ν power and multiplying by ν'; no standalone algebraic lemma is claimed. Its use at 0<θ<1 is valid."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.ereal_pos_fin: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:630-631 assumes '0 < x', 'x < ⊤' and proves '0 < x.toReal' and its coercion equals x. Ledger:3828 and claims.yaml:9816-9822 match, including the harmless reversal of equality orientation in the ledger. TeX:7445-7446 requires rates 'positive and finite'; it contains no separate EReal-conversion claim."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.summable_of_rpow: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:641-643 assumes β>0 and summability at t^β for every t>0, concluding summability at every z≥0. Ledger:3829 and claims.yaml:9823-9829 match. TeX:7466-7467 says F is finite for every z≥0 from the moment-series lemma. The proof handles z=0 by finite support, so no endpoint hypothesis is silently added."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.growthUpper_eq_coeffType: P:moment-growth-logconvex",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:658-664 assumes ν≥1, β>0, c_k≥0, c_0=1, summable m(t)=sum c_k(t^β)^k for t>0 and finite upper growth, and proves finite K and growth=ν K^(1/ν). TeX:7466-7475 uses precisely this representation, finiteness and L:positive-series-type, displaying the equivalent K=(growth/ν)^ν. Ledger:3830 and claims.yaml:9830-9836 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.growth_logconvex_core: P:moment-growth-logconvex",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:684-698 assumes ν≥1, β>0 on [0,amax), the positive summable series with c_0=1, coefficient interpolation and '0 < growthUpper < ⊤'. TeX:7362-7371 supplies the series/interpolation; 7458-7464 first establishes positivity and finiteness. The core proves the exact interpolation, log-convexity and interior continuity argument of 7477-7498. Ledger:3831 and claims.yaml:9837-9843 explicitly identify this general conditional core; the paper wrapper derives its rate hypotheses."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.ereal_toReal_between: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:779-781 assumes '(l : EReal) ≤ x' and 'x ≤ (u : EReal)' for real l,u, proving the same real bounds and coercion identity. Ledger:3832 and claims.yaml:9844-9850 match. TeX:7506-7507 brackets the rates between finite real quantities but states no EReal conversion lemma; no-direct-label is accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.le_liminf_of_forall_lt: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:792-794 assumes '∀ y < C, ∀ᶠ x in l, y ≤ f x' and proves C≤the EReal liminf, without boundedness assumptions. Ledger:3833 and claims.yaml:9851-9857 match. TeX:7200-7201 states the lower liminf bound directly; this abstract helper legitimately implements its equivalent eventual formulation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.rpow_interp_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:805-806 assumes C>0 and x≥0, with arbitrary θ, and proves C^(1-θ)x^θ=C(x/C)^θ. Ledger:3834 and claims.yaml:9858-9864 match. TeX:7524-7527 uses endpoints 0,b and C_p>0 to obtain the envelope, but contains no separately labelled algebraic identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.static_constant_core: C:static-moment-constant-continuity",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:821-839 assumes the disclosed general core hypotheses, amax>0, C>0, upper rate at zero=C and lower rate≥C on (0,amax). TeX:7523-7528 uses the same lower estimate, endpoint value and interpolation. Lean concludes the exact envelope for every 0<a<b<amax and both right limits, in EReal and toReal. Ledger:3835 and claims.yaml:9865-9871 are faithful; the additional real-limit conclusions are harmless strengthening."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.nuOf: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:903 defines 'nuOf alpha := 3-alpha', without domain restrictions. TeX:6992 defines 'ν=3-α>1' under the standing covariance assumption. Ledger:3836 and claims.yaml:9872-9878 correctly identify the unlabelled parameter definition; its needed range is separately derived rather than embedded in the definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.amaxOf: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:906 defines 'min 1 (2-alpha)'. TeX:6992 defines 'a_max=min(1,2-α)'. Ledger:3837 and claims.yaml:9879-9885 match exactly. The unrestricted definition does not purport to assert positivity outside the standing assumptions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.betaOf: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:909 defines '4-alpha-a'. TeX:6993 defines 'β(a)=4-α-a'. Ledger:3838 and claims.yaml:9886-9892 match exactly, with no altered constant or dependence."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.kappaOf: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:912 defines 'betaOf alpha a / nuOf alpha'. TeX:6994 defines 'κ(a)=β(a)/ν'. Ledger:3839 and claims.yaml:9893-9899 match. The denominator's positivity is established when this quantity is used for the paper statements."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.kappaSt: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:915 defines '(4-alpha)/nuOf alpha'. TeX:6995 defines 'κ_st=(4-α)/ν'. Ledger:3840 and claims.yaml:9900-9906 match exactly."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.kappaOf_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:918 states 'kappaOf alpha 0 = kappaSt alpha' for every alpha, without hypotheses. TeX:6993-6995 gives the definitions from which this identity follows. Ledger:3841 and claims.yaml:9907-9913 match; there is no separately labelled manuscript assertion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.params_of_lt_two: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:923-924 assumes only 'alpha < 2' and proves ν≥1, amax>0 and β(a)>0 for 0≤a<amax. TeX:6989-6996 works under H:homog and records ν>1 with the same parameters. Ledger:3842 and claims.yaml:9914-9920 faithfully describe this sufficient, weaker-hypothesis helper; no paper conclusion depends on losing strictness."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.TypeContinuityInputs: P:moment-growth-logconvex",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:957-976 matches ledger:3843 and claims.yaml:9921-9927 field by field. 'L0_pos: 0<L0' and static_law for p=1,2 are TeX:7009-7014; real L0 already enforces finiteness. series has exactly p=1,2, 0≤a<amax, c_k≥0, c_0=1 and the t>0 summable identity of TeX:7351-7366. holder uses exactly 0≤a1<a<a2<amax and θ=(a-a1)/(a2-a1), as TeX:7367-7371. minorant's every-y<C eventual bound is equivalent to TeX:7199-7202. full_upper is '∀ a∈(0,amax), ∃ C, ∀ T≥1' with e(T+2)^d exp(C T^κ(a)); TeX:3692-3698 applied separately at exponent a supplies this, with its finite covariance factor absorbed. cauchy_schwarz for a>0,T>0 is the inequality invoked at TeX:7462. None is stronger than its source."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.one_le_mom: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:980-982 assumes TypeContinuityInputs, p=1 or 2, a∈[0,amax) and T>0, proving 1≤mom p a T. TeX:7351 and 7362-7365 give c_0=1 and nonnegative moment series; 7462-7463 explicitly notes the mean is 'at least one by its positive series'. Ledger:3844 and claims.yaml:9928-9934 faithfully state the auxiliary deduction."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.upper_rate_pos_fin: P:moment-growth-logconvex",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:994-1001 assumes alpha<2, TypeContinuityInputs and p∈{1,2}, proving positive finite upper rates on [0,amax), upper rate(0)=p^κ_st L0 and the interior lower-rate bound. TeX:7458-7464 uses 'C_p=p^κ_st L0>0', the static law, minorant, full upper bound and Cauchy–Schwarz to establish exactly these facts. Ledger:3845 and claims.yaml:9935-9941 match; positivity and finiteness are derived, not supplied as conclusions in disguise."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.alpha_lt_two: no direct label",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:1085-1088 assumes HomogCovariance and proves alpha<2 from 'h.threshold' and 'h.alpha0_pos'. HomogHypothesis.lean:67,79 has alpha0>0 and alpha0+alpha<2, exactly TeX:191 and 202-205. Ledger:3846 and claims.yaml:9942-9948 match; this parameter extraction is appropriately auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.moment_growth_logconvex_paper: P:moment-growth-logconvex",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:1106-1122 assumes HomogCovariance, 'Γ ≠ 0', the named inputs and p=1 or 2. TeX:6989 and 7350 retain the same nonzero covariance; 7445-7454 states positivity/finiteness, the interpolation for the endpoints of 7367, convexity and interior continuity. Lean proves all these with identical ranges and θ, plus continuity of log. Ledger:3847 and claims.yaml:9949-9955 are faithful. Only alpha<2 is extracted from H:homog; Γ≠0 is correctly disclosed as unused."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TypeContinuity.static_moment_constant_continuity_paper: C:static-moment-constant-continuity",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:1141-1160 assumes the same covariance and named inputs, and concludes for p=1,2 the envelope for every 0<a<b<amax, both EReal right limits to p^κ_st L0, and the toReal ratio limit 2^κ_st. TeX:7503-7518 gives exactly these constants, ranges and limits. Ledger:3848 and claims.yaml:9956-9962 match. Finiteness/positivity near zero follows from the envelope, so toReal does not change the ratio's mathematical object."
+    },
+    {
+      "claim": "PARA-SeriesType",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:2901-2937 correctly records the scalar scope, Hölder range enlargement, summability, factorial constants, induction-versus-integration route and central-binomial route. These agree with SeriesType.lean:61-336 and the cited TeX contexts, especially 2596-2606 and 7171-7186. Nothing stochastic is claimed as formalized. W1 is a minor umbrella-description inconsistency concerning the explicitly unclaimed Gamma tool."
+    },
+    {
+      "claim": "PARA-TypeContinuity",
+      "verdict": "PASS",
+      "reason": "Ledger:3714-3803 accurately distinguishes the complete input-free positive-series lemma from the two input-supplied whole results. It discloses abstract fixed-point moments, the static endpoint, EReal/ENNReal conventions, safe toReal use, all seven input fields, unused covariance hypotheses, the eventual-bound route and convexity-based continuity route. TypeContinuity.lean:383-448,521-537,684-898,957-1181 supports those statements. TeX:6989-7014,7350-7371,7443-7533 supports the mappings. The missing stochastic constructions and absence of a joint-satisfiability proof are explicitly acknowledged."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The complete Index at ledger:239-452 lists each of the 10 SeriesType and 42 TypeContinuity declarations exactly once, at 428-438, with the same label or no-direct-label classification as its section row. Route auxiliaries have no-direct-label rows. Exact label-definition searches across all supplied manuscript .tex files found every label cited by the two sections, without duplicate definitions. W1 concerns only the wording of the Gamma-containing foundation category."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:343-361 correctly marks L:positive-series-type same-assumptions/full, with both finite directions and accurate EReal/ENNReal notes. Rows 40-60 and 754-784 correctly mark the corollary and proposition inputs-supplied/full and identify precisely the TypeContinuityInputs fields. Row 838-853 is expressly a weaker proof-step row, not the static-phase proposition; its beta range and constants match SeriesType.lean:112-194. All referenced claim IDs have matching entries in claims.yaml:9597-9962. coverage-scope-tex.yaml:1-27 contains no conflicting override for these rows."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "Ledger Scope:149-177 correctly distinguishes the input-free lemma, input-supplied proposition/corollary and scalar static-phase step. The Not in Lean qualifications at 4815-4818 and 4913-4921 accurately preserve the stochastic inputs as outside Lean. The HermiteWord reference at 594-599 is supported by the explicit finite-word-cutoff application in TeX:2552-2557 and does not claim the static-phase proposition itself. Searches found no other conflicting references to the reviewed sections or result labels."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "W1 — SeriesType Gamma category wording. candidate/statement-ledger.md:2903-2906 describes the collection as facts the manuscript 'uses inline', and Index:428 categorizes gamma_mid_sq_le likewise, while ledger:2950 expressly says 'no manuscript line is claimed for it'. Lean lean/StratonovichHAMSecondMoment/SeriesType.lean:324-325 states the standalone inequality under '0 < x', '0 < y'; the relevant TeX notes_stratonovich_ham_second_moment.tex:7171-7186 contains factorial and series arguments, not this Gamma assertion. The explicit row disclaimer prevents a substantive correspondence overclaim. Optional clarification: describe the collection as manuscript-used scalar facts plus a standalone Gamma tool, and give that tool its own no-direct-label category.",
+      "W2 — seriesType_nonneg pinpoint citation. candidate/statement-ledger.md:3814 attributes 'since c_0 = 1, τ >= 0' to TeX line 7166; the quotation is actually at manuscript/notes/notes_stratonovich_ham_second_moment.tex:7164. Lean lean/StratonovichHAMSecondMoment/TypeContinuity.lean:137-138 correctly assumes nonnegative coefficients, 'c 0 = 1' and summability and proves nonnegativity. Optional fix: replace the ledger pinpoint 7166 with 7164."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Requirement A was completed. Files marked partial were read completely for their required sections, entries and ranges; unrelated ledger rows, claims and manuscript content were not reviewed.",
+    "Compilation, absence of sorry, standard-axiom status and supervisor-checked byte binding were accepted as supplied; no build or independent cryptographic verification was performed.",
+    "Acceptance concerns the disclosed correspondence and conditional deductions, not construction of the SPDE moments, verification of the supplied stochastic inputs, or their joint satisfiability.",
+    "This AI correspondence review is not human verification or a novelty audit."
+  ]
+}

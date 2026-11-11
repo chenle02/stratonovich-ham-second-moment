@@ -1,0 +1,133 @@
+Independent correspondence review: newly formalized whole labelled result(s) (Lean ledger rows) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  250cf39732f0). Review ONLY its sections "SeriesType (whole result)", "TypeContinuity (whole result)", the index rows for
+  them, and the items named in the global checks below. All other rows were
+  reviewed earlier.
+- the Lean modules (ground truth for what each declaration states):
+  lean/StratonovichHAMSecondMoment/*.lean (every library module; these
+  sections' own modules: SeriesType, TypeContinuity)
+  and lean/claims.yaml, lean/coverage.yaml, docs/coverage-scope-tex.yaml.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  975feb31ea65. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that L:positive-series-type, P:moment-growth-logconvex and C:static-moment-constant-continuity, and the Hoelder step of P:static-phase-all-orders are formalized as stated in their
+rows: every conclusion proved, with hypotheses that match the manuscript,
+apart from side conditions the TeX leaves implicit and inputs explicitly
+declared as supplied. Test that claim hard: any Lean hypothesis that the
+manuscript does not have, any manuscript hypothesis the Lean drops, any
+weaker Lean conclusion, any changed constant, range, quantifier order or
+strictness, any modelling choice that changes the mathematical object, any
+supplied hypothesis stronger than the manuscript result it stands for, any
+row labelled as a step of a TeX proof that is really an auxiliary of a
+different Lean proof route, and any declaration missing from or duplicated
+in the Index, is a finding, unless the ledger states it AND it is genuinely
+harmless. Decide that yourself from the TeX; do not accept the ledger's word.
+Pay attention to: the type tau and K = limsup definitions (extended real / ENNReal) and tau = nu K^(1/nu); each field of TypeContinuityInputs against its TeX display (no stronger); the identification of type with growth rate through z = T^beta(a) (proved, not supplied); continuity via convexity; the envelope and the limits as a -> 0; the Hoelder variant and its beta range.
+
+CHECKS (exactly these 57, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.SeriesType.sum_rpow_le_rpow_sum: no direct label"
+  2. claim "StratonovichHAMSecondMoment.SeriesType.term_eq_rpow: no direct label"
+  3. claim "StratonovichHAMSecondMoment.SeriesType.seriesNu_summable_le: no direct label"
+  4. claim "StratonovichHAMSecondMoment.SeriesType.seriesNu_holder_le: P:static-phase-all-orders"
+  5. claim "StratonovichHAMSecondMoment.SeriesType.seriesNu_le_two_exp_three: P:static-phase-all-orders"
+  6. claim "StratonovichHAMSecondMoment.SeriesType.factorial_sq_le_mul_factorial: no direct label"
+  7. claim "StratonovichHAMSecondMoment.SeriesType.factorial_ge_exp: no direct label"
+  8. claim "StratonovichHAMSecondMoment.SeriesType.factorial_le_exp: no direct label"
+  9. claim "StratonovichHAMSecondMoment.SeriesType.log_factorial_bounds: L:positive-series-type"
+  10. claim "StratonovichHAMSecondMoment.SeriesType.gamma_mid_sq_le: no direct label"
+  11. claim "StratonovichHAMSecondMoment.TypeContinuity.limsup_le_of_eventually_le_add: no direct label"
+  12. claim "StratonovichHAMSecondMoment.TypeContinuity.eventually_lt_of_limsup_lt_coe: no direct label"
+  13. claim "StratonovichHAMSecondMoment.TypeContinuity.seriesSum: L:positive-series-type"
+  14. claim "StratonovichHAMSecondMoment.TypeContinuity.seriesType: L:positive-series-type"
+  15. claim "StratonovichHAMSecondMoment.TypeContinuity.coeffType: L:positive-series-type"
+  16. claim "StratonovichHAMSecondMoment.TypeContinuity.one_le_seriesSum: no direct label"
+  17. claim "StratonovichHAMSecondMoment.TypeContinuity.term_le_seriesSum: no direct label"
+  18. claim "StratonovichHAMSecondMoment.TypeContinuity.seriesType_nonneg: L:positive-series-type"
+  19. claim "StratonovichHAMSecondMoment.TypeContinuity.tendsto_log_add_one_div_nat: no direct label"
+  20. claim "StratonovichHAMSecondMoment.TypeContinuity.coeffType_le_of_seriesType_lt: L:positive-series-type"
+  21. claim "StratonovichHAMSecondMoment.TypeContinuity.tendsto_rpow_neg_mul_affine_log: no direct label"
+  22. claim "StratonovichHAMSecondMoment.TypeContinuity.seriesType_le_of_coeffType_lt: L:positive-series-type"
+  23. claim "StratonovichHAMSecondMoment.TypeContinuity.positive_series_type_paper: L:positive-series-type"
+  24. claim "StratonovichHAMSecondMoment.TypeContinuity.coeffType_exp_family: no direct label"
+  25. claim "StratonovichHAMSecondMoment.TypeContinuity.seriesType_exp_family: no direct label"
+  26. claim "StratonovichHAMSecondMoment.TypeContinuity.growthUpper: E:moment-growth-types"
+  27. claim "StratonovichHAMSecondMoment.TypeContinuity.growthLower: E:moment-growth-types"
+  28. claim "StratonovichHAMSecondMoment.TypeContinuity.map_rpow_inv_atTop: no direct label"
+  29. claim "StratonovichHAMSecondMoment.TypeContinuity.growthUpper_eq_seriesType: P:moment-growth-logconvex"
+  30. claim "StratonovichHAMSecondMoment.TypeContinuity.coeffType_interp: P:moment-growth-logconvex"
+  31. claim "StratonovichHAMSecondMoment.TypeContinuity.nu_rpow_interp: no direct label"
+  32. claim "StratonovichHAMSecondMoment.TypeContinuity.ereal_pos_fin: no direct label"
+  33. claim "StratonovichHAMSecondMoment.TypeContinuity.summable_of_rpow: no direct label"
+  34. claim "StratonovichHAMSecondMoment.TypeContinuity.growthUpper_eq_coeffType: P:moment-growth-logconvex"
+  35. claim "StratonovichHAMSecondMoment.TypeContinuity.growth_logconvex_core: P:moment-growth-logconvex"
+  36. claim "StratonovichHAMSecondMoment.TypeContinuity.ereal_toReal_between: no direct label"
+  37. claim "StratonovichHAMSecondMoment.TypeContinuity.le_liminf_of_forall_lt: no direct label"
+  38. claim "StratonovichHAMSecondMoment.TypeContinuity.rpow_interp_eq: no direct label"
+  39. claim "StratonovichHAMSecondMoment.TypeContinuity.static_constant_core: C:static-moment-constant-continuity"
+  40. claim "StratonovichHAMSecondMoment.TypeContinuity.nuOf: no direct label"
+  41. claim "StratonovichHAMSecondMoment.TypeContinuity.amaxOf: no direct label"
+  42. claim "StratonovichHAMSecondMoment.TypeContinuity.betaOf: no direct label"
+  43. claim "StratonovichHAMSecondMoment.TypeContinuity.kappaOf: no direct label"
+  44. claim "StratonovichHAMSecondMoment.TypeContinuity.kappaSt: no direct label"
+  45. claim "StratonovichHAMSecondMoment.TypeContinuity.kappaOf_zero: no direct label"
+  46. claim "StratonovichHAMSecondMoment.TypeContinuity.params_of_lt_two: no direct label"
+  47. claim "StratonovichHAMSecondMoment.TypeContinuity.TypeContinuityInputs: P:moment-growth-logconvex"
+  48. claim "StratonovichHAMSecondMoment.TypeContinuity.one_le_mom: no direct label"
+  49. claim "StratonovichHAMSecondMoment.TypeContinuity.upper_rate_pos_fin: P:moment-growth-logconvex"
+  50. claim "StratonovichHAMSecondMoment.TypeContinuity.alpha_lt_two: no direct label"
+  51. claim "StratonovichHAMSecondMoment.TypeContinuity.moment_growth_logconvex_paper: P:moment-growth-logconvex"
+  52. claim "StratonovichHAMSecondMoment.TypeContinuity.static_moment_constant_continuity_paper: C:static-moment-constant-continuity"
+  53. claim "PARA-SeriesType": the "SeriesType (whole result)" section paragraph is accurate, cites the right files and lines at 975feb3, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input, proof-route difference and what is not formalized, and does not overclaim
+  54. claim "PARA-TypeContinuity": the "TypeContinuity (whole result)" section paragraph is accurate, cites the right files and lines at 975feb3, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input, proof-route difference and what is not formalized, and does not overclaim
+  55. claim "LEDGER-INDEX": every one of these 52 declarations appears EXACTLY ONCE in the "Index by label" table, under the same label as its section row (an additional listing only as an explicitly marked cross-reference), route auxiliaries in a "no direct label" row, and every label cited in the sections exists in the manuscript (search \label across all files)
+  56. claim "COVERAGE-ROWS": the coverage.yaml rows L:positive-series-type (new, same-assumptions, full), P:moment-growth-logconvex and C:static-moment-constant-continuity (new, inputs-supplied, full; inputs the fields of TypeContinuityInputs) and P:static-phase-all-orders (new step row): classes, conclusions, notes, inputs and claims are right
+  57. claim "CROSS-REFERENCES": every other place in the ledger that points to these sections or their labels (other sections, the "Not in Lean" section, Scope) is accurate
+For each row check (1-52): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: these sections' own
+   Lean modules (lean/StratonovichHAMSecondMoment/SeriesType.lean, lean/StratonovichHAMSecondMoment/TypeContinuity.lean), and,
+   for every other declaration a row names, that declaration in its module;
+   the sections "SeriesType (whole result)", "TypeContinuity (whole result)" and the "Scope" and "Index by label" sections of
+   candidate/statement-ledger.md; the entries of lean/claims.yaml for these
+   modules; lean/coverage.yaml; docs/coverage-scope-tex.yaml;
+   lines 2580-2620, 6980-7020, 7140-7210, 7350-7380 and 7430-7540 of manuscript/notes/notes_stratonovich_ham_second_moment.tex (P:static-phase-all-orders Hoelder step; S:near-static-lower; L:positive-series-type; L:full-moment-coefficient-holder; P:moment-growth-logconvex; C:static-moment-constant-continuity), and lines 3680-3705 (T:full-upper),
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 57 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-52.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.

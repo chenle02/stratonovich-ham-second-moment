@@ -1,0 +1,523 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json: 1-1176, complete.",
+    "candidate/statement-ledger.md: 1-452, 1542-1597, 2338-2361, 2631-2791, 3625-3642, 4855-4932; partial file, complete required sections and relevant cross-reference contexts.",
+    "lean/StratonovichHAMSecondMoment/QuotientObstruction.lean: 1-1005, complete, read consecutively.",
+    "lean/StratonovichHAMSecondMoment/GaussianComparison.lean: 1-227, complete, read consecutively.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean: 1-105, complete.",
+    "lean/StratonovichHAMSecondMoment/TimeSchur.lean: 1-80, 310-332; partial file, complete named time_schur_paper declaration and proof.",
+    "lean/claims.yaml: 7070-7720; partial file, complete entries for both reviewed modules, 7075-7720.",
+    "lean/coverage.yaml: 1-982, complete, read consecutively.",
+    "docs/coverage-scope-tex.yaml: 1-27, complete.",
+    "manuscript/notes/integrated_covariance_foundation.tex: 1-428, complete, read consecutively.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: 170-235; partial file, complete required 170-200 excerpt and H:homog context.",
+    "All packet manuscript/notes/*.tex inputs and descendants: searched for exact definitions of the six labels cited in the reviewed sections; matches were confined to integrated_covariance_foundation.tex:2,188,190,258 and notes_stratonovich_ham_second_moment.tex:184,190, whose contexts were read above."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.plane_apply_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "QuotientObstruction.lean:82 states '(p : \u211d \u00d7 \u211d) : plane p 0 = p.1', matching statement-ledger.md:2709 and claims.yaml:7079. TeX integrated_covariance_foundation.tex:259 fixes 'd = 2' but contains no coordinate-representation lemma; auxiliary/no-direct-label mapping is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.plane_apply_one: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:85 states '(p : \u211d \u00d7 \u211d) : plane p 1 = p.2'; ledger:2710 and claims.yaml:7086 agree. TeX integrated_covariance_foundation.tex:259-260 uses two spatial coordinates without stating this Lean representation identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.measurePreserving_plane: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:88-89 states 'MeasurePreserving plane ... volume ... volume' without additional hypotheses; ledger:2711 and claims.yaml:7093 match. TeX integrated_covariance_foundation.tex:271-274 uses ordinary Euclidean integration, not a separate coordinate-isomorphism theorem."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.measurableEmbedding_plane: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:97 states 'MeasurableEmbedding plane'; ledger:2712 and claims.yaml:7100 agree. TeX integrated_covariance_foundation.tex:259-274 works directly on \u211d\u00b2 and has no measurable-embedding assertion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.integral_plane: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:106-108 assumes a real normed target and states '\u222b x, f x = \u222b p ... f (plane p)', without integrability. Ledger:2713 and claims.yaml:7107 correctly cover Banach targets and identify the unconditional Lean-integral convention. TeX integrated_covariance_foundation.tex:271 says 'by ordinary Fubini'; this representation transfer is auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.integrable_plane_iff: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:111-113 states 'Integrable ... f (plane p) \u2194 Integrable f' for a normed additive target; ledger:2714 and claims.yaml:7114 agree. TeX integrated_covariance_foundation.tex:271-274 contains no separate coordinate-integrability equivalence."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.plane_add: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:116 states '(p q : \u211d \u00d7 \u211d) : plane (p + q) = plane p + plane q'; ledger:2715 and claims.yaml:7121 match. TeX integrated_covariance_foundation.tex:259 uses \u211d\u00b2 without this representation lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.plane_smul: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:120 states '(c : \u211d) (p : \u211d \u00d7 \u211d)' and preservation of scalar multiplication; ledger:2716 and claims.yaml:7128 match. TeX integrated_covariance_foundation.tex:269 states measure scaling, not this coordinate-map identity; no direct label is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.plane_neg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:124 states 'plane (-p) = -plane p'; ledger:2717 and claims.yaml:7135 agree. TeX integrated_covariance_foundation.tex:268 calls \u0393 'even', but does not state this auxiliary identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.abs_fst_le_norm_plane: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:128 states '(p : \u211d \u00d7 \u211d) : |p.1| \u2264 \u2016plane p\u2016'; ledger:2718 and claims.yaml:7142 match. TeX integrated_covariance_foundation.tex:259-292 contains no coordinate-norm estimate; this is a decay-proof auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.abs_snd_le_norm_plane: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:133 states '|p.2| \u2264 \u2016plane p\u2016'; ledger:2719 and claims.yaml:7149 agree. TeX integrated_covariance_foundation.tex:259-292 has no such estimate, so the no-direct-label assignment is faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.smul_e1: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:138,144 defines e1 and proves '(t : \u211d) : t \u2022 e1 = plane (t, 0)'; ledger:2720 and claims.yaml:7156 match. TeX integrated_covariance_foundation.tex:267 uses the \u03be\u2081 axis but does not introduce this coordinate-map lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.smul_e2: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:141,148 defines e2 and proves 't \u2022 e2 = plane (0, t)'; ledger:2721 and claims.yaml:7163 agree. TeX integrated_covariance_foundation.tex:260 specifies '\u03b4\u2080(dx\u2081)dx\u2082', not this representation identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.inner_smul_e1: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:152 states '(s : \u211d) (x : Rd 2)' and 'inner \u211d (s \u2022 e1) x = s * x 0'; ledger:2722 and claims.yaml:7170 match. TeX integrated_covariance_foundation.tex:266-267 invokes Fourier inversion without this auxiliary coordinate computation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.norm_e1: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:157 states '\u2016e1\u2016 = 1' with no hypotheses; ledger:2723 and claims.yaml:7177 agree. TeX integrated_covariance_foundation.tex:267 uses the first coordinate axis without stating its basis-vector norm."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.norm_e2: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:161 states '\u2016e2\u2016 = 1'; ledger:2724 and claims.yaml:7184 match. TeX integrated_covariance_foundation.tex:260 specifies the second coordinate line, not a basis-vector norm lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.plane_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:165 states 'plane p = p.1 \u2022 e1 + p.2 \u2022 e2'; ledger:2725 and claims.yaml:7191 agree. TeX integrated_covariance_foundation.tex:259-274 uses coordinates directly; this is a Lean-only representation auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.continuous_plane: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:169 states 'Continuous plane'; ledger:2726 and claims.yaml:7198 agree. TeX integrated_covariance_foundation.tex:259-292 does not formulate a coordinate-map continuity claim."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.lineMeasure: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:177-178 defines 'Measure.map (fun t : \u211d => t \u2022 v) volume' for arbitrary v. Ledger:2727 and claims.yaml:7205 explicitly specialize to v=e2. This specialization is exactly TeX integrated_covariance_foundation.tex:259-260, '\u0393 = \u03b4\u2080(dx\u2081)dx\u2082', with no missing normalization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.isometry_smul_unit: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:181-182 assumes 'hv : \u2016v\u2016 = 1' and concludes 'Isometry (fun t : \u211d => t \u2022 v)'; ledger:2728 and claims.yaml:7212 preserve that hypothesis. TeX integrated_covariance_foundation.tex:260 fixes a coordinate line rather than asserting this general auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.measurableEmbedding_line: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:187-189 assumes '\u2016v\u2016 = 1' and proves the line parametrization is a measurable embedding; ledger:2729 and claims.yaml:7219 agree. TeX integrated_covariance_foundation.tex:260 has only the coordinate-line measure, so auxiliary mapping is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.integral_lineMeasure: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:192-195 assumes 'hv : \u2016v\u2016 = 1' and a real normed target, with no integrability assumption. Ledger:2730 and claims.yaml:7226 correctly state the integral-map identity. TeX integrated_covariance_foundation.tex:271 uses ordinary Fubini, not this general pushforward lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.integrable_lineMeasure_iff: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:198-201 assumes '\u2016v\u2016 = 1' and states 'Integrable f (lineMeasure v) \u2194 Integrable (fun t => f (t \u2022 v))'; ledger:2731 and claims.yaml:7233 match. TeX integrated_covariance_foundation.tex:260-274 does not state this general equivalence."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.lintegral_lineMeasure: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:204-206 assumes '\u2016v\u2016 = 1', with arbitrary 'f : Rd d \u2192 \u211d\u22650\u221e'; ledger:2732 and claims.yaml:7240 agree. TeX integrated_covariance_foundation.tex:260-274 contains no extended-integral pushforward lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.lineMeasure_apply: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:209-211 assumes '\u2016v\u2016 = 1' and allows every 'A : Set (Rd d)', without measurability. Ledger:2733 and claims.yaml:7247 preserve this. TeX integrated_covariance_foundation.tex:260 defines the specific line measure rather than the general outer-measure formula."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.isLocallyFiniteMeasure_lineMeasure: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:214-219 assumes '\u2016v\u2016 = 1' and proves 'IsLocallyFiniteMeasure (lineMeasure v)'; ledger:2734 and claims.yaml:7254 match. TeX notes_stratonovich_ham_second_moment.tex:192 requires a 'Radon measure'; the general unit-line lemma is an appropriately unlabelled foundation for the specific example."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.isEven_lineMeasure: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:222 states '(v : Rd d) : IsEven (lineMeasure v)', with no unit-vector hypothesis; ledger:2735 and claims.yaml:7261 agree. TeX integrated_covariance_foundation.tex:268 asserts evenness only for the counterexample. The stronger general route lemma is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.isTempered_lineMeasure: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:232-238 assumes '\u2016v\u2016 = 1' and proves 'IsTempered', explicitly choosing exponent 2. Ledger:2736 and claims.yaml:7268 agree. TeX integrated_covariance_foundation.tex:268 calls the specific \u0393 'tempered'; the general unit-line result is a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.lineMeasure_smul_set: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:242-243 assumes '\u2016v\u2016 = 1' and '0 < c', for every set A, and concludes \u039b(cA)=c\u039b(A). Ledger:2737 and claims.yaml:7275 match. TeX integrated_covariance_foundation.tex:269 states this scaling for \u0393 specifically; the general line-measure lemma is properly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.wt_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:253,256 defines 'wt r := ((1 + |r|)^2)\u207b\u00b9' and proves '0 < wt r' for every real r; ledger:2738 and claims.yaml:7282 match. TeX integrated_covariance_foundation.tex:265-292 introduces no such weight."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.wt_le_one: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:262 states '(r : \u211d) : wt r \u2264 1'; ledger:2739 and claims.yaml:7289 agree. TeX integrated_covariance_foundation.tex:265-292 has no weight-bound statement; auxiliary mapping is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.continuous_wt: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:267 states 'Continuous wt' without hypotheses; ledger:2740 and claims.yaml:7296 agree. TeX integrated_covariance_foundation.tex:265-292 does not define wt."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.integrable_wt: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:273 states 'Integrable wt' for the weight defined at :253; ledger:2741 and claims.yaml:7303 agree. TeX integrated_covariance_foundation.tex:265-292 contains no corresponding weight integral; this is a decay-proof auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.PlaneDecay: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:281-282 assumes an RCLike target and defines '\u2203 C : \u211d, 0 \u2264 C \u2227 \u2200 p, \u2016f (plane p)\u2016 \u2264 C * (wt p.1 * wt p.2)'. Ledger:2742 and claims.yaml:7310 faithfully give its real/complex interpretation. TeX integrated_covariance_foundation.tex:266,271 uses Schwartz inversion/Fubini, without this decay predicate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.PlaneDecay.integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:285-286 assumes 'hc : Continuous f' and 'hf : PlaneDecay f', concluding 'Integrable f'; ledger:2743 and claims.yaml:7317 match. TeX integrated_covariance_foundation.tex:271 invokes Fubini for compact smooth g, not this general decay lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.marg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:294 defines 'marg f u := \u222b v, f (plane (u, v))' without regularity hypotheses; ledger:2744 and claims.yaml:7324 agree. TeX integrated_covariance_foundation.tex:273 contains the real marginal inside V(g), but does not name this general RCLike-valued proof object."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.autoInt: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:297-298 defines the conjugated product 'f (plane (q.2.1, q.2.2 + q.1)) * ... (f (plane q.2))'; ledger:2745 and claims.yaml:7331 match. TeX integrated_covariance_foundation.tex:271 says 'by ordinary Fubini', without this named integrand."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.integrable_autoInt: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:302-303 assumes 'Continuous f' and 'PlaneDecay f', concluding 'Integrable (autoInt f)'; ledger:2746 and claims.yaml:7338 agree. TeX integrated_covariance_foundation.tex:271-274 treats real compact smooth g; the more general decay argument is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.integral_shift_e2: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:348-349 takes arbitrary RCLike-valued f and real t, without integrability, and equates the shifted autocorrelation with the coordinate integral. Ledger:2747 and claims.yaml:7345 match. TeX integrated_covariance_foundation.tex:271 does not formulate this coordinate transfer."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.autocorr_e2: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:361-366 assumes 'Continuous f' and 'PlaneDecay f', concluding every inner integrability, outer integrability, and the marginal-square identity. Ledger:2748 and claims.yaml:7352 match, including the real-to-RCLike coercion. TeX integrated_covariance_foundation.tex:268,271-274 gives the specific positive-definiteness/Fubini claims; this generalized route lemma is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.Gamma0: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:416 defines 'Gamma0 := lineMeasure e2'; ledger:2749 and claims.yaml:7359 agree. TeX integrated_covariance_foundation.tex:259-260 specifies 'd = 2 ... \u0393 = \u03b4\u2080(dx\u2081)dx\u2082', exactly the unit-speed second-axis pushforward."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.mu0: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:420 defines 'ENNReal.ofReal (2 * \u03c0)\u207b\u00b9 \u2022 lineMeasure e1'; ledger:2750 and claims.yaml:7366 match. TeX integrated_covariance_foundation.tex:266-267 states '(2\u03c0)\u207b\u00b9d\u03be\u2081\u03b4\u2080(d\u03be\u2082)'. The coefficient is correct for the nonunitary spectral convention, despite the section's separate unitary Fourier transform."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.Gamma0_ne_zero: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:424 states 'Gamma0 \u2260 0' with no supplied hypotheses; ledger:2751 and claims.yaml:7373 agree. TeX integrated_covariance_foundation.tex:5-6 assumes '\u0393 \u2260 0', and :259-260 fixes this example. Lean discharges that standing assumption rather than importing it."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.schwartz_planeDecay: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:432 assumes '\u03c6 : SchwartzMap (Rd 2) \u2102' and concludes 'PlaneDecay (\u21d1\u03c6)'; ledger:2752 and claims.yaml:7380 match. TeX integrated_covariance_foundation.tex:266 says 'Fourier inversion on Schwartz tests', without this product-decay intermediate result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.posDef_Gamma0: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:454 proves 'IsPosDefDistr Gamma0' without supplied input; HomogHypothesis.lean:44-47 expands it to a real nonnegative Schwartz autocorrelation pairing. Ledger:2753 and claims.yaml:7387 match. TeX integrated_covariance_foundation.tex:268 says \u0393 is 'positive definite'. The direct marginal-square proof is faithfully disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.integrable_schwartz_e1: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:469-470 assumes a complex Schwartz \u03c8 and concludes 'Integrable (fun w : \u211d => \u03c8 (w \u2022 e1))'; ledger:2754 and claims.yaml:7394 agree. TeX integrated_covariance_foundation.tex:266 invokes Fourier inversion without this restriction-integrability lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.spectral_Gamma0: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:484 proves 'IsSpectralMeasure Gamma0 mu0'; HomogHypothesis.lean:52-55 uses '\u222b \u03c6 d\u0393 = \u222b (\u222b \u03c6(x) exp(i\u27e8\u03be,x\u27e9) dx) d\u03bc'. Ledger:2755 and claims.yaml:7401 match TeX integrated_covariance_foundation.tex:15-18,266-267. Sign and 2\u03c0 normalization are consistent."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.homogCovariance_Gamma0: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:557-582 assumes only 'ha0 : 0 < a' and 'ha1 : a < 1', proving 'HomogCovariance 2 1 a Gamma0 mu0' field by field. Ledger:2756 and claims.yaml:7408 match TeX integrated_covariance_foundation.tex:259,266-270 and main TeX:190-206, including Radon, evenness, temperedness, spectral identity, scaling, a+1<2 and 0<1<2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.covW: E:cov",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:593-594 defines the iterated real integral with kernel '|t-s|^(-a)' and spatial pairing '\u222b \u0393(dz) \u222b F(t,x)F(s,x-z)dx'. Ledger:2757 and claims.yaml:7415 explicitly identify a definitional covariance-functional reading. Main TeX:184-200 states 'Cov(W(s,x),W(t,y))=|s-t|^(-\u03b1\u2080)\u03b3(x-y)', with \u03b3 distributional when necessary. The test pairing has no missing Fourier constant."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.spatialCov: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:598-599 defines '\u222b z, (\u222b x, f x * g (x - z)) \u2202\u0393' without analytic hypotheses; ledger:2758 and claims.yaml:7422 match. TeX integrated_covariance_foundation.tex:270-274 calls this g=g pairing the spatial covariance and identifies it with V(g)."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.timeQ: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:602-603 defines '\u222b t, \u222b s, \u03c4 t * \u03c4 s * |t-s|^(-a)'; ledger:2759 and claims.yaml:7429 match. TeX integrated_covariance_foundation.tex:145-146,287-289 uses '\u2016\u03c4\u2016_a\u00b2' with \u03c4 supported in (0,T), making integration over \u211d equivalent to the section's time square."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.margV: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:606 defines '\u222b u, (\u222b v, g (plane (u,v)))^2'; ledger:2760 and claims.yaml:7436 match TeX integrated_covariance_foundation.tex:273, 'V(g)=\u222b(\u222bg(x\u2081,x\u2082)dx\u2082)\u00b2dx\u2081'. Both are real-valued spatial marginal variances."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.covW_tensor: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:611-612 takes arbitrary d,a,\u0393,\u03c4,g and states 'covW ... (\u03c4\u2297g) = timeQ a \u03c4 * spatialCov \u0393 g g', without integrability. Ledger:2761 and claims.yaml:7443 explicitly disclose this generality and convention. TeX integrated_covariance_foundation.tex:286-290 applies the factorization to compact smooth tensors; their genuine integrability is separately established."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.planeDecay_of_hasCompactSupport: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:634-635 assumes 'Continuous g' and 'HasCompactSupport g', concluding 'PlaneDecay g'; ledger:2762 and claims.yaml:7450 agree. TeX integrated_covariance_foundation.tex:271 assumes 'real compact smooth g', without this intermediate decay predicate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.spatialCov_Gamma0: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:670-673 assumes 'Continuous g' and 'HasCompactSupport g', proves inner integrability for every z, \u03930-integrability, and 'spatialCov Gamma0 g g = margV g'. Ledger:2763 and claims.yaml:7457 agree. TeX integrated_covariance_foundation.tex:271-274 assumes 'real compact smooth g'; continuity is a harmless generalization, explicitly recorded."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.margV_tensor: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:696-697 takes arbitrary real p,q and proves 'margV (p\u2297q) = (\u222bq)^2 * \u222bp\u00b2'; ledger:2764 and claims.yaml:7464 explicitly call this an identity of Lean integrals. TeX integrated_covariance_foundation.tex:283-286 computes only the particular bump tensors; the general identity is properly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.contDiff_tensor: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:704-705 assumes 'ContDiff \u211d \u221e p' and 'ContDiff \u211d \u221e q' and proves tensor smoothness; ledger:2765 and claims.yaml:7471 match. TeX integrated_covariance_foundation.tex:275,283 constructs smooth bump tensors without stating this general composition lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.norm_le_abs_add_abs: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:709 states '(x : Rd 2) : \u2016x\u2016 \u2264 |x 0| + |x 1|'; ledger:2766 and claims.yaml:7478 agree. TeX integrated_covariance_foundation.tex:275-286 contains no coordinate-norm estimate; this supports the Lean compact-support argument."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.hasCompactSupport_tensor: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:718-719 assumes compact support of p and q, with no smoothness needed, and proves tensor compact support. Ledger:2767 and claims.yaml:7485 match. TeX integrated_covariance_foundation.tex:275,283 uses compact smooth \u03c7 and its products without stating this general support lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.chi: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:738,742 defines \u03c7 using 'ContDiffBump ... \u27e81,2,...\u27e9'; ledger:2768 and claims.yaml:7492 match. TeX integrated_covariance_foundation.tex:275-279 chooses an even compact smooth plateau with these radii and introduces its displayed formula only 'For example'. Choosing Mathlib's bump does not change the result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.chi2: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:745 defines 'chi2 x := deriv (deriv chi) x'; ledger:2769 and claims.yaml:7499 match. TeX integrated_covariance_foundation.tex:283 uses '\u03c7\u2033(x\u2082)' for the same twice-differentiated chosen bump."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.contDiff_chi: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:748 states 'ContDiff \u211d \u221e chi'; ledger:2770 and claims.yaml:7506 agree. TeX integrated_covariance_foundation.tex:275 assumes '\u03c7 \u2208 C_c^\u221e(\u211d)'; proving regularity of the particular Mathlib implementation is appropriately treated as a construction auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.hasCompactSupport_chi: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:751 states 'HasCompactSupport chi'; ledger:2771 and claims.yaml:7513 agree. TeX integrated_covariance_foundation.tex:275 requires '\u03c7 \u2208 C_c^\u221e(\u211d)'; this establishes the implementation's support property, rather than claiming a separate manuscript step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.chi_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:754 states 'chi 0 = 1'; ledger:2772 and claims.yaml:7520 match. TeX integrated_covariance_foundation.tex:275 chooses \u03c7 'equal to one on [-1,1]'; this particular evaluation is an unlabelled construction auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.chi_three: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:757-758 states 'chi 3 = 0'; ledger:2773 and claims.yaml:7527 match. TeX integrated_covariance_foundation.tex:275-276 requires \u03c7 zero outside [-2,2]; evaluation at 3 is a Lean witness for nonconstancy, not a separately stated manuscript result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.contDiff_deriv_chi: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:761-762 states 'ContDiff \u211d \u221e (deriv chi)'; ledger:2774 and claims.yaml:7534 agree. TeX integrated_covariance_foundation.tex:275 assumes \u03c7 smooth and :281 uses \u03c7\u2032, without a separate derivative-regularity lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.contDiff_chi2: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:765-766 states 'ContDiff \u211d \u221e chi2'; ledger:2775 and claims.yaml:7541 match. TeX integrated_covariance_foundation.tex:275,283 uses the second derivative of smooth \u03c7; this implementation regularity fact is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.hasCompactSupport_chi2: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:769-770 states 'HasCompactSupport chi2'; ledger:2776 and claims.yaml:7548 agree. TeX integrated_covariance_foundation.tex:275,283 constructs g from a compactly supported \u03c7\u2033, without a separate support theorem."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.integral_chi2: P:masked-quotient-obstruction",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean QuotientObstruction.lean:773 states '\u222b x, chi2 x = 0', matching TeX integrated_covariance_foundation.tex:284, '\u222b\u03c7\u2033 = 0'. Ledger:2777 and claims.yaml:7555 additionally mention integrability; this is genuinely proved locally at Lean:776 from public smoothness/support lemmas, but is not a conjunct of the exported type. W1 is an optional attribution clarification."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.tendsto_zero_of_hasCompactSupport: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:781-782 assumes only 'HasCompactSupport f' and concludes limits 0 at both infinities; ledger:2778 and claims.yaml:7562 agree. TeX integrated_covariance_foundation.tex:284-285 invokes integration by parts without this general boundary-limit lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.Ichi: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:798 defines 'Ichi := \u222b x, deriv chi x ^ 2'; ledger:2779 and claims.yaml:7569 match TeX integrated_covariance_foundation.tex:281, 'I\u03c7 = \u222b(\u03c7\u2032)\u00b2'. The chosen \u03c7 is the admissible bump disclosed in the paragraph."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.Jchi: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:801 defines 'Jchi := \u222b x, chi x ^ 4'; ledger:2780 and claims.yaml:7576 match TeX integrated_covariance_foundation.tex:281, 'J\u03c7 = \u222b\u03c7\u2074'. No normalization changes occur."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.integral_chi_mul_chi2: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:804 states '\u222b x, chi x * chi2 x = -Ichi' without supplied inputs; ledger:2781 and claims.yaml:7583 agree. TeX integrated_covariance_foundation.tex:284-285 gives the masked marginal '-I\u03c7 \u03c7(x\u2081)\u00b2' by integration by parts. The sign is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.Ichi_pos: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:821 proves '0 < Ichi', using \u03c7(0)=1 and \u03c7(3)=0 to establish nonconstancy. Ledger:2782 and claims.yaml:7590 match TeX integrated_covariance_foundation.tex:281-282, 'I\u03c7 ... > 0' because \u03c7 is not constant."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.Jchi_pos: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:834 proves '0 < Jchi'; ledger:2783 and claims.yaml:7597 match TeX integrated_covariance_foundation.tex:281, 'J\u03c7 ... > 0'. The additional proof observation 'J\u03c7 \u2265 2' at TeX:282-283 is not needed for the result and is explicitly identified as unused in the ledger."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.timeQ_pos: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:847-850 assumes '0<a', 'a<1', '0<T', continuity, \u03c4\u22650, support in [0,T], and '\u03c4 t0 \u2260 0'; it concludes product integrability and '0 < timeQ a \u03c4'. Ledger:2784 and claims.yaml:7604 match. TeX integrated_covariance_foundation.tex:286-289 assumes nonzero nonnegative \u03c4\u2208C_c^\u221e(0,T); the stated continuous generalization is harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.IsTest: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:892-895 defines joint C\u221e regularity, compact support, and 'F t x \u2260 0 \u2192 t \u2208 Ioo 0 T'; ledger:2785 and claims.yaml:7611 match. TeX integrated_covariance_foundation.tex:262 says 'compact smooth test F', with witnesses supported in (0,T) at :286-287. The disclosed restriction strengthens the nonexistence conclusion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.isTest_tensor: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:898-900 assumes smooth compact \u03c4,g and '\u03c4 t \u2260 0 \u2192 t \u2208 Ioo 0 T', concluding 'IsTest T (\u03c4\u2297g)'; ledger:2786 and claims.yaml:7618 agree. TeX integrated_covariance_foundation.tex:286-287 constructs this particular F, without stating the general test-construction lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.zeta: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:910 defines 'zeta x := chi (x 0) * chi (x 1)'; ledger:2787 and claims.yaml:7625 match TeX integrated_covariance_foundation.tex:283, '\u03b6(x)=\u03c7(x\u2081)\u03c7(x\u2082)'. Lean's zero-based coordinate names cause no mathematical change."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.gtest: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:913 defines 'gtest x := chi (x 0) * chi2 (x 1)'; ledger:2788 and claims.yaml:7632 match TeX integrated_covariance_foundation.tex:283, 'g(x)=\u03c7(x\u2081)\u03c7\u2033(x\u2082)'."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.masked_quotient_obstruction: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:924-934 assumes '0<a<1' and '0<T', and concludes existence of \u03c4, an IsTest tensor, temporal/spatial integrability, V(g)=0, V(\u03b6g)=J\u03c7I\u03c7\u00b2, zero unmasked covariance and strictly positive masked covariance. Ledger:2789 and claims.yaml:7639 match TeX integrated_covariance_foundation.tex:283-291, including the temporal factor and constants."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.QuotientObstruction.masked_quotient_obstruction_paper: P:masked-quotient-obstruction",
+      "verdict": "PASS",
+      "reason": "Lean QuotientObstruction.lean:991-996 assumes only '0<a<1' and '0<T' and concludes H:homog membership, \u03930\u22600, then '\u2203 \u03b6 ... \u00ac \u2203 C : \u211d, \u2200 F ... IsTest T F \u2192 ...'. Ledger:2790 and claims.yaml:7646 match TeX integrated_covariance_foundation.tex:259-262, 'there is ... \u03b6 ... no finite C ... every ... F'. Quantifier order is correct; no C-dependent mask is substituted."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianComparison.multivariateGaussian_conv: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean GaussianComparison.lean:61,66-69 assumes finite indices, 'A.PosSemidef' and '(B-A).PosSemidef', concluding N(0,B)=N(0,A)*N(0,B-A). Ledger:1587 and claims.yaml:7654 agree. TeX integrated_covariance_foundation.tex:242-244 constructs an independent Gaussian coupling instead of stating convolution of laws; the auxiliary mapping correctly distinguishes the routes."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianComparison.seminorm_le_mul_norm: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean GaussianComparison.lean:61,82-84 assumes a finite index type and 'N : Seminorm \u211d (EuclideanSpace \u211d \u03b9)', concluding 'N x \u2264 (\u2211 i, N(e_i)) * \u2016x\u2016'; ledger:1588 and claims.yaml:7661 match. TeX integrated_covariance_foundation.tex:245-246 invokes finite Gaussian moments without stating this seminorm domination lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianComparison.seminorm_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean GaussianComparison.lean:61,98 assumes finite indices and any seminorm N, concluding 'Continuous N'; ledger:1589 and claims.yaml:7668 agree. TeX integrated_covariance_foundation.tex:244-246 considers 'every norm' without a seminorm-continuity lemma. This is correctly a finite-dimensional route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianComparison.integrable_seminorm_rpow: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean GaussianComparison.lean:107-109 assumes '[IsGaussian \u03bc]', a seminorm N and 'hp : 0 \u2264 p', concluding integrability of N(x)^p; ledger:1590 and claims.yaml:7675 match. TeX integrated_covariance_foundation.tex:245-246 says 'Finite Gaussian moments ensure finiteness'; the generalized p\u22650 seminorm lemma is appropriately auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianComparison.convexOn_seminorm_rpow: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean GaussianComparison.lean:126-130 takes a seminorm, fixed x and 'hp : 1 \u2264 p', concluding convexity of y\u21a6N(x+y)^p; finite-index instances are explicitly omitted. Ledger:1591 and claims.yaml:7682 are valid finite-dimensional paraphrases. TeX integrated_covariance_foundation.tex:244-245 applies conditional Jensen to norm powers, not this standalone convexity lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianComparison.gaussian_seminorm_moment_le: P:masked-noise-completion",
+      "verdict": "PASS",
+      "reason": "Lean GaussianComparison.lean:149-155 assumes 'A.PosSemidef', '(B-A).PosSemidef', arbitrary seminorm N and '1 \u2264 p'; both integrabilities and the moment inequality are conclusions. Ledger:1592 and claims.yaml:7689 match TeX integrated_covariance_foundation.tex:239-246, 'b\u1d40Ab \u2264 b\u1d40Bb' and 'E\u2016X\u2016^p \u2264 E\u2016X+Z\u2016^p'. Matrix identification with the noise is expressly excluded."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianComparison.gaussian_seminorm_moment_le_paper: P:masked-noise-completion",
+      "verdict": "PASS",
+      "reason": "Lean GaussianComparison.lean:193-200 assumes the same two PSD hypotheses, arbitrary seminorm N, explicit real p and '1 \u2264 p'; it concludes both finite moments and their comparison. Ledger:1593 and claims.yaml:7696 match TeX integrated_covariance_foundation.tex:201-205,239-246. Any norm of a finite linear image pulls back to a seminorm, so the generalization covers that comparison without claiming the missing stochastic identification."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianComparison.coordSeminorm: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean GaussianComparison.lean:204-205 defines the seminorm by composing the real norm with coordinate projection; ledger:1594 and claims.yaml:7703 correctly describe x\u21a6|x_i|. TeX integrated_covariance_foundation.tex:239-246 states only the general Gaussian comparison, without a coordinate calibration definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianComparison.coordSeminorm_apply: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean GaussianComparison.lean:207-210 states '(i : \u03b9) (x : EuclideanSpace \u211d \u03b9) : coordSeminorm i x = |x i|', omitting unnecessary finite-index instances. Ledger:1595 and claims.yaml:7710 match. TeX integrated_covariance_foundation.tex:239-246 has no coordinate-seminorm evaluation statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianComparison.integral_coord_sq: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean GaussianComparison.lean:214-216 assumes 'hS : S.PosSemidef' and a coordinate i, concluding '\u222b coordSeminorm i x ^ (2 : \u211d) dN(0,S) = S i i'; ledger:1596 and claims.yaml:7717 agree. TeX integrated_covariance_foundation.tex:239-246 uses covariance matrices but does not state this calibration identity."
+    },
+    {
+      "claim": "PARA-QuotientObstruction",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:2633-2705 cites the correct TeX ranges and accurately discloses the E:cov definitional boundary, time-support restriction, real constants, bump choice, direct positive-definiteness argument, Fourier-inversion route, and unformalized white-noise distinction. Lean:557-582 proves H:homog rather than assuming it; :991-996 has the correct quantifiers. W2 optionally distinguishes the proof's nonnegative bump witness (:935-946) from properties exposed by the existential theorem type (:926-934)."
+    },
+    {
+      "claim": "PARA-GaussianComparison",
+      "verdict": "PASS",
+      "reason": "Ledger:1544-1583 faithfully states the finite PSD-order comparison and its seminorm/p\u22651 range, with integrability conclusions. Lean GaussianComparison.lean:66-78,149-200 confirms the convolution/characteristic-function and Jensen route. TeX integrated_covariance_foundation.tex:188-247 has the cited statement and argument. The paragraph explicitly excludes matrix identification, E:masked-actual-noise-norm, completion membership, contraction extension and joint Gaussianity; it does not formalize the full labelled proposition."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "The complete index, ledger:239-452, lists the reviewed declarations exactly once: 55 QuotientObstruction auxiliaries at :381, 26 proposition-associated declarations at :382, covW under E:cov at :383, five Gaussian route auxiliaries at :384, two comparison theorems at :385, and three calibrations at :386. These total 92 and match the section assignments. Exact-label searches across all packet TeX found each of the six cited labels once, at the covered locations."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "Coverage.yaml:699-735 correctly classifies the quotient obstruction as same-assumptions/full within its expressly stated E:cov functional boundary, with H:homog and nonzeroness proved. Coverage.yaml:676-697 correctly classifies completion as inputs-supplied/weaker, specifies only the finite comparison, and explicitly says no Lean hypothesis implements its stochastic links. Its listed inputs are manuscript facts at TeX:199-205,230-246, not stronger substitutes. Claim IDs resolve to the reviewed claims.yaml entries. Coverage-scope-tex.yaml:1-27 adds no conflicting target-row text."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "Relevant Scope references at ledger:128-132,174-191 correctly distinguish the covariance-functional obstruction from the unconstructed noise and the standalone finite Gaussian comparison. References at :2346-2351,3632-3635,4881-4887,4922-4927 preserve those boundaries. In particular, 'Not in Lean' does not incorrectly exclude the finite comparison or claim that it supplies the masked/auxiliary matrix identification."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "W1 \u2014 integral_chi2, exported statement versus proof fact. Ledger:2777 and claims.yaml:7555 say 'chi2 integrable', while QuotientObstruction.lean:773 exports only '\u222b x, chi2 x = 0'. TeX integrated_covariance_foundation.tex:284 states '\u222b\u03c7\u2033 = 0'. Integrability is genuinely established at Lean:776 from the public smoothness/support facts, so there is no analytic gap or acceptance blocker. Optional wording fix: write 'integrability is established in the proof from contDiff_chi2 and hasCompactSupport_chi2' rather than leaving its export status implicit.",
+      "W2 \u2014 QuotientObstruction paragraph, witness attribution. Ledger:2647-2650 describes 'a nonnegative nonzero bump tau'; TeX integrated_covariance_foundation.tex:286-287 similarly chooses 'nonzero nonnegative \u03c4 \u2208 C_c^\u221e(0,T)'. QuotientObstruction.lean:935-946 constructs precisely such a bump, but the exported existential type at :926-934 records IsTest(\u03c4\u2297g), temporal integrability and positive timeQ, not separate nonnegativity/smoothness conjuncts for \u03c4. This is harmless as a description of the actual proof. Optional wording fix: say 'the proof chooses a nonnegative nonzero bump tau' to distinguish construction facts from exported conclusions."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "All complete-reading requirements A were satisfied. Partial-file entries above identify deliberately scoped excerpts, not gaps in the required sections or declarations.",
+    "This is a correspondence review of the specified 97 claims, not a renewed review of earlier ledger rows or of the full manuscript.",
+    "Lean compilation, absence of sorry, and the standard-axiom restriction were accepted as stipulated; no build or independent kernel audit was performed.",
+    "The packet's byte binding was accepted as supervisor-checked. Historical manuscript revisions and external audit/refutation artifacts were not independently examined.",
+    "The E:cov-to-covW boundary is accepted only as the explicitly disclosed test-covariance definition; this report does not certify construction of W or the original noise completion.",
+    "Citations use unique source basenames, with exact packet paths recorded in source_coverage. This AI review is neither human verification nor a novelty audit."
+  ]
+}

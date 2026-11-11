@@ -1,0 +1,111 @@
+Independent correspondence review: newly formalized whole labelled result(s) (Lean ledger rows) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  250cf39732f0). Review ONLY its sections "WaveGreen (whole result)", the index rows for
+  them, and the items named in the global checks below. All other rows were
+  reviewed earlier.
+- the Lean modules (ground truth for what each declaration states):
+  lean/StratonovichHAMSecondMoment/*.lean (every library module; these
+  sections' own modules: WaveGreen, DampedNormsHomog)
+  and lean/claims.yaml, lean/coverage.yaml, docs/coverage-scope-tex.yaml.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  975feb31ea65. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that L:damped-homogeneous-norms (now with nothing supplied) and the wave Green measure facts quoted in L:higher-riesz are formalized as stated in their
+rows: every conclusion proved, with hypotheses that match the manuscript,
+apart from side conditions the TeX leaves implicit and inputs explicitly
+declared as supplied. Test that claim hard: any Lean hypothesis that the
+manuscript does not have, any manuscript hypothesis the Lean drops, any
+weaker Lean conclusion, any changed constant, range, quantifier order or
+strictness, any modelling choice that changes the mathematical object, any
+supplied hypothesis stronger than the manuscript result it stands for, any
+row labelled as a step of a TeX proof that is really an auxiliary of a
+different Lean proof route, and any declaration missing from or duplicated
+in the Index, is a finding, unless the ledger states it AND it is genuinely
+harmless. Decide that yourself from the TeX; do not accept the ledger's word.
+Pay attention to: whether the three measures are the TeX/Chen ones (densities and normalizations in d = 1, 2, 3; the d = 3 surface measure through Measure.toSphere is a declared definitional choice — is it described honestly?); mass s, support, scaling G_s(sA) = s G_1(A) (measurable A); the d = 1 Fourier identity against WaveKernel.waveHat; that L:damped-homogeneous-norms really has nothing supplied now.
+
+CHECKS (exactly these 35, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.WaveGreen.waveGreen: L:higher-riesz"
+  2. claim "StratonovichHAMSecondMoment.WaveGreen.waveGreen_other: no direct label"
+  3. claim "StratonovichHAMSecondMoment.WaveGreen.waveGreen_of_nonpos: no direct label"
+  4. claim "StratonovichHAMSecondMoment.WaveGreen.gamma_three_halves: no direct label"
+  5. claim "StratonovichHAMSecondMoment.WaveGreen.mass_one: L:damped-homogeneous-norms"
+  6. claim "StratonovichHAMSecondMoment.WaveGreen.radial2_nonneg: no direct label"
+  7. claim "StratonovichHAMSecondMoment.WaveGreen.radial2_eq_zero: no direct label"
+  8. claim "StratonovichHAMSecondMoment.WaveGreen.hasDerivAt_radial2: no direct label"
+  9. claim "StratonovichHAMSecondMoment.WaveGreen.integral_radial2: no direct label"
+  10. claim "StratonovichHAMSecondMoment.WaveGreen.mass_two: L:higher-riesz"
+  11. claim "StratonovichHAMSecondMoment.WaveGreen.mass_three: L:higher-riesz"
+  12. claim "StratonovichHAMSecondMoment.WaveGreen.waveGreen_mass: L:damped-homogeneous-norms"
+  13. claim "StratonovichHAMSecondMoment.WaveGreen.isFiniteMeasure_waveGreen: no direct label"
+  14. claim "StratonovichHAMSecondMoment.WaveGreen.instIsFiniteMeasureWaveGreen: no direct label"
+  15. claim "StratonovichHAMSecondMoment.WaveGreen.waveGreen_greenMass: L:damped-homogeneous-norms"
+  16. claim "StratonovichHAMSecondMoment.WaveGreen.waveGreen_compl_closedBall: no direct label"
+  17. claim "StratonovichHAMSecondMoment.WaveGreen.scaling_one: no direct label"
+  18. claim "StratonovichHAMSecondMoment.WaveGreen.scaling_two: L:higher-riesz"
+  19. claim "StratonovichHAMSecondMoment.WaveGreen.scaling_three: L:higher-riesz"
+  20. claim "StratonovichHAMSecondMoment.WaveGreen.waveGreen_scaling: L:higher-riesz"
+  21. claim "StratonovichHAMSecondMoment.WaveGreen.waveGreen_paper: L:higher-riesz"
+  22. claim "StratonovichHAMSecondMoment.WaveGreen.N0_waveGreen: L:damped-homogeneous-norms"
+  23. claim "StratonovichHAMSecondMoment.WaveGreen.damped_homogeneous_norms_wave: L:damped-homogeneous-norms"
+  24. claim "StratonovichHAMSecondMoment.WaveGreen.coordOne_apply: no direct label"
+  25. claim "StratonovichHAMSecondMoment.WaveGreen.coordOne_mp: no direct label"
+  26. claim "StratonovichHAMSecondMoment.WaveGreen.norm_coord_one: no direct label"
+  27. claim "StratonovichHAMSecondMoment.WaveGreen.inner_coord_one: no direct label"
+  28. claim "StratonovichHAMSecondMoment.WaveGreen.ball_eq_preimage_coordOne: no direct label"
+  29. claim "StratonovichHAMSecondMoment.WaveGreen.integral_exp_Ioo: no direct label"
+  30. claim "StratonovichHAMSecondMoment.WaveGreen.single_coord_one: no direct label"
+  31. claim "StratonovichHAMSecondMoment.WaveGreen.waveGreen_fourier_one: no direct label"
+  32. claim "PARA-WaveGreen": the "WaveGreen (whole result)" section paragraph is accurate, cites the right files and lines at 975feb3, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input, proof-route difference and what is not formalized, and does not overclaim
+  33. claim "LEDGER-INDEX": every one of these 31 declarations appears EXACTLY ONCE in the "Index by label" table, under the same label as its section row (an additional listing only as an explicitly marked cross-reference), route auxiliaries in a "no direct label" row, and every label cited in the sections exists in the manuscript (search \label across all files)
+  34. claim "COVERAGE-ROWS": the coverage.yaml rows L:damped-homogeneous-norms (now same-assumptions, full; the d = 3 toSphere definitional choice in its note) and L:higher-riesz (new step row, inputs-supplied, weaker): classes, conclusions, notes and claims are right
+  35. claim "CROSS-REFERENCES": every other place in the ledger that points to these sections or their labels (other sections, the "Not in Lean" section, Scope) is accurate
+For each row check (1-31): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: these sections' own
+   Lean modules (lean/StratonovichHAMSecondMoment/WaveGreen.lean, lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean), and,
+   for every other declaration a row names, that declaration in its module;
+   the sections "WaveGreen (whole result)" and the "Scope" and "Index by label" sections of
+   candidate/statement-ledger.md; the entries of lean/claims.yaml for these
+   modules; lean/coverage.yaml; docs/coverage-scope-tex.yaml;
+   lines 690-850 and 4040-4070 and 5090-5120 of manuscript/notes/notes_stratonovich_ham_second_moment.tex (wave Green measures; L:damped-homogeneous-norms; L:higher-riesz), and line 102 of manuscript/notes/index/list-of-notation.tex if present,
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 35 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-31.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.

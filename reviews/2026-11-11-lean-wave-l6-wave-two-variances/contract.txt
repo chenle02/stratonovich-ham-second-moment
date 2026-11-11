@@ -1,0 +1,130 @@
+Independent correspondence review: newly formalized whole labelled result(s) (Lean ledger rows) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  250cf39732f0). Review ONLY its sections "WaveTwoVariances (whole result)", the index rows for
+  them, and the items named in the global checks below. All other rows were
+  reviewed earlier.
+- the Lean modules (ground truth for what each declaration states):
+  lean/StratonovichHAMSecondMoment/*.lean (every library module; these
+  sections' own modules: WaveTwoVariances, PhaseBessel, FrequencyRow, MaskedContinuousWaveCompleted)
+  and lean/claims.yaml, lean/coverage.yaml, docs/coverage-scope-tex.yaml.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  975feb31ea65. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that P:wave-two-variances (spectral core with no input; the proposition through three named inputs) are formalized as stated in their
+rows: every conclusion proved, with hypotheses that match the manuscript,
+apart from side conditions the TeX leaves implicit and inputs explicitly
+declared as supplied. Test that claim hard: any Lean hypothesis that the
+manuscript does not have, any manuscript hypothesis the Lean drops, any
+weaker Lean conclusion, any changed constant, range, quantifier order or
+strictness, any modelling choice that changes the mathematical object, any
+supplied hypothesis stronger than the manuscript result it stands for, any
+row labelled as a step of a TeX proof that is really an auxiliary of a
+different Lean proof route, and any declaration missing from or duplicated
+in the Index, is a finding, unless the ledger states it AND it is genuinely
+harmless. Decide that yourself from the TeX; do not accept the ledger's word.
+Pay attention to: the kernel K_ij and the 1/sqrt(<xi><eta>) normalization; the constants 4 A_T K C and the powers h^(2-a) B_alpha(h) and h^(2 beta); the parameter ranges for gamma and beta; the evenness requirement for the output direction only; whether each named input is no stronger than its source (hlink is E:variance-normalized-covariance; J isometric is weaker than unitary); that the core is stated for general nu with the growth bound and specialized to nu_R.
+
+CHECKS (exactly these 54, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.WaveTwoVariances.bFn_eq_sinc: no direct label"
+  2. claim "StratonovichHAMSecondMoment.WaveTwoVariances.continuous_bFn: no direct label"
+  3. claim "StratonovichHAMSecondMoment.WaveTwoVariances.rowWave: E:variance-normalized-kernel"
+  4. claim "StratonovichHAMSecondMoment.WaveTwoVariances.rowSign: E:variance-normalized-kernel"
+  5. claim "StratonovichHAMSecondMoment.WaveTwoVariances.colWave: E:variance-normalized-kernel"
+  6. claim "StratonovichHAMSecondMoment.WaveTwoVariances.kernelEntry: E:variance-normalized-kernel"
+  7. claim "StratonovichHAMSecondMoment.WaveTwoVariances.maskedKernel: E:variance-kernel-time-bound"
+  8. claim "StratonovichHAMSecondMoment.WaveTwoVariances.continuous_eval: no direct label"
+  9. claim "StratonovichHAMSecondMoment.WaveTwoVariances.sqrt_bracket_pos: no direct label"
+  10. claim "StratonovichHAMSecondMoment.WaveTwoVariances.continuous_kernelEntry: no direct label"
+  11. claim "StratonovichHAMSecondMoment.WaveTwoVariances.memLp_maskedKernel: P:wave-two-variances"
+  12. claim "StratonovichHAMSecondMoment.WaveTwoVariances.kernelLp: no direct label"
+  13. claim "StratonovichHAMSecondMoment.WaveTwoVariances.continuous_toLp_indicator: no direct label"
+  14. claim "StratonovichHAMSecondMoment.WaveTwoVariances.kerH: E:variance-kernel-time-bound"
+  15. claim "StratonovichHAMSecondMoment.WaveTwoVariances.continuous_kernelLp: no direct label"
+  16. claim "StratonovichHAMSecondMoment.WaveTwoVariances.continuous_kerH: P:wave-two-variances"
+  17. claim "StratonovichHAMSecondMoment.WaveTwoVariances.maskedKernel_eq: no direct label"
+  18. claim "StratonovichHAMSecondMoment.WaveTwoVariances.rowSign_sq: no direct label"
+  19. claim "StratonovichHAMSecondMoment.WaveTwoVariances.kerH_eq_smul_emb: no direct label"
+  20. claim "StratonovichHAMSecondMoment.WaveTwoVariances.norm_kerH_sq_le: E:variance-kernel-time-bound"
+  21. claim "StratonovichHAMSecondMoment.WaveTwoVariances.kernelEntry_matrix: E:variance-normalized-kernel"
+  22. claim "StratonovichHAMSecondMoment.WaveTwoVariances.norm_sq_two_le: no direct label"
+  23. claim "StratonovichHAMSecondMoment.WaveTwoVariances.sum_norm_sq_le: P:wave-two-variances"
+  24. claim "StratonovichHAMSecondMoment.WaveTwoVariances.rowKernel_le_two: no direct label"
+  25. claim "StratonovichHAMSecondMoment.WaveTwoVariances.rowKernel_symm: P:wave-two-variances"
+  26. claim "StratonovichHAMSecondMoment.WaveTwoVariances.AT: E:variance-kernel-time-bound"
+  27. claim "StratonovichHAMSecondMoment.WaveTwoVariances.AT_nonneg: no direct label"
+  28. claim "StratonovichHAMSecondMoment.WaveTwoVariances.coef: E:variance-normalized-covariance"
+  29. claim "StratonovichHAMSecondMoment.WaveTwoVariances.memLp_top_kerH: no direct label"
+  30. claim "StratonovichHAMSecondMoment.WaveTwoVariances.input_fixed: P:wave-two-variances"
+  31. claim "StratonovichHAMSecondMoment.WaveTwoVariances.output_fixed: P:wave-two-variances"
+  32. claim "StratonovichHAMSecondMoment.WaveTwoVariances.sum_lintegral_le: no direct label"
+  33. claim "StratonovichHAMSecondMoment.WaveTwoVariances.total_of_fixed: no direct label"
+  34. claim "StratonovichHAMSecondMoment.WaveTwoVariances.isLocallyFinite_of_growth: no direct label"
+  35. claim "StratonovichHAMSecondMoment.WaveTwoVariances.continuous_rowKernel₂: no direct label"
+  36. claim "StratonovichHAMSecondMoment.WaveTwoVariances.integrable_weight: P:wave-two-variances"
+  37. claim "StratonovichHAMSecondMoment.WaveTwoVariances.InputBound: E:wave-input-variance"
+  38. claim "StratonovichHAMSecondMoment.WaveTwoVariances.OutputBound: E:wave-output-variance"
+  39. claim "StratonovichHAMSecondMoment.WaveTwoVariances.wave_two_variances: P:wave-two-variances"
+  40. claim "StratonovichHAMSecondMoment.WaveTwoVariances.InputBound.mono: no direct label"
+  41. claim "StratonovichHAMSecondMoment.WaveTwoVariances.OutputBound.mono: no direct label"
+  42. claim "StratonovichHAMSecondMoment.WaveTwoVariances.wave_two_variances_beta: P:wave-two-variances"
+  43. claim "StratonovichHAMSecondMoment.WaveTwoVariances.Cnu: E:variance-actual-growth-constant"
+  44. claim "StratonovichHAMSecondMoment.WaveTwoVariances.Cnu_nonneg: no direct label"
+  45. claim "StratonovichHAMSecondMoment.WaveTwoVariances.nu_growth: E:variance-actual-growth-constant"
+  46. claim "StratonovichHAMSecondMoment.WaveTwoVariances.wave_two_variances_core_paper: P:wave-two-variances"
+  47. claim "StratonovichHAMSecondMoment.WaveTwoVariances.wave_two_variances_core_beta_paper: P:wave-two-variances"
+  48. claim "StratonovichHAMSecondMoment.WaveTwoVariances.sum_le_of_ofReal: no direct label"
+  49. claim "StratonovichHAMSecondMoment.WaveTwoVariances.orthonormal_J: no direct label"
+  50. claim "StratonovichHAMSecondMoment.WaveTwoVariances.wave_two_variances_paper: P:wave-two-variances"
+  51. claim "PARA-WaveTwoVariances": the "WaveTwoVariances (whole result)" section paragraph is accurate, cites the right files and lines at 975feb3, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input, proof-route difference and what is not formalized, and does not overclaim
+  52. claim "LEDGER-INDEX": every one of these 50 declarations appears EXACTLY ONCE in the "Index by label" table, under the same label as its section row (an additional listing only as an explicitly marked cross-reference), route auxiliaries in a "no direct label" row, and every label cited in the sections exists in the manuscript (search \label across all files)
+  53. claim "COVERAGE-ROWS": the coverage.yaml row P:wave-two-variances (new, inputs-supplied, weaker; inputs hlink, hJL2/hJ, hnormSG): class, conclusion, scope, note, inputs and claims are right
+  54. claim "CROSS-REFERENCES": every other place in the ledger that points to these sections or their labels (other sections, the "Not in Lean" section, Scope) is accurate
+For each row check (1-50): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: these sections' own
+   Lean modules (lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean, lean/StratonovichHAMSecondMoment/PhaseBessel.lean, lean/StratonovichHAMSecondMoment/FrequencyRow.lean, lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean), and,
+   for every other declaration a row names, that declaration in its module;
+   the sections "WaveTwoVariances (whole result)" and the "Scope" and "Index by label" sections of
+   candidate/statement-ledger.md; the entries of lean/claims.yaml for these
+   modules; lean/coverage.yaml; docs/coverage-scope-tex.yaml;
+   manuscript/notes/integrated_wave_variance.tex,
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 54 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-50.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.

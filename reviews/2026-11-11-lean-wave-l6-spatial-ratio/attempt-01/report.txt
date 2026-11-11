@@ -1,0 +1,387 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md:1-452,2952-3254,3328-3348,3430-3438,4023-4129,4275-4305,4807-4932; complete for required sections; selective contextual reading elsewhere",
+    "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean:1-580; complete",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:1-762; complete",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean:1-178; complete",
+    "lean/claims.yaml:8599-9041,9547-9596; complete entries for the three required modules",
+    "lean/coverage.yaml:1-982; complete",
+    "docs/coverage-scope-tex.yaml:1-27; complete",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-379; complete",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105; complete",
+    "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean:205-327; selective contextual reading",
+    "lean/StratonovichHAMSecondMoment/WeakSobolev.lean:60-79,124-136,218-243; selective contextual reading",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:90-105,184-254; selective contextual reading",
+    "lean/StratonovichHAMSecondMoment/VariationalFloor.lean:75-175,536-572; selective contextual reading",
+    "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean:474-486,593-622; selective contextual reading",
+    "lean/StratonovichHAMSecondMoment/VariationalRate.lean:504-517,602-619; selective contextual reading",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:825-904,960-1018,1100-1157; selective contextual reading",
+    "lean/StratonovichHAMSecondMoment/SpectralHomog.lean:25-69,106-194,222-241; selective contextual reading",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:180-255,7638-7655; selective contextual reading; label-search match also read at line 3685",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-18,97-130,270-325; selective contextual reading",
+    "manuscript/notes/integrated_temporal_equilibrium.tex:25-60; selective contextual reading",
+    "manuscript/notes/integrated_compact_mean_family.tex:398-425; selective contextual reading",
+    "manuscript/notes/**/*.tex: exhaustive search for labels cited by the two reviewed sections; matching lines read in the files and ranges listed above"
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.autocorr: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:94 defines '∫ x, Q x * Q (x - y)' without hypotheses; TeX integrated_spatial_occupation.tex:15-17 defines the encompassing pairing, not this named function. Ledger:3034 and claims.yaml:8603 accurately describe the route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.spatialPair: E:spatial-physical-pair",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean SpatialFourierBound.lean:101-102 uses unrestricted real iterated Bochner integrals; TeX integrated_spatial_occupation.tex:14-19 initially uses an extended nonnegative product integral. Ledger:3035 and claims.yaml:8610 disclose the real form. Agreement on the profiles used is proved in SpatialStaticControls.lean:833-891; W1 concerns localization of the disclaimer."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.spatialEnergy: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:105-106 defines 'spatialPair Γ (fun x => g x ^ 2) (fun x => g x ^ 2)', without hypotheses; TeX integrated_spatial_occupation.tex:35 says 'A_sp(g) = B_Γ(g²,g²)' in unlabelled prose. Ledger:3036 and claims.yaml:8617 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.gradEnergy: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:110 defines '∫ x, ‖fderiv ℝ g x‖ ^ 2'; TeX integrated_spatial_occupation.tex:35 defines 'b(g) = ‖∇g‖₂²'. Ledger:3037 explains the operator-norm identification and differentiable domain; claims.yaml:8624 matches. The smooth-profile use is faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.fourierQ: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:115-116 defines the positive-sign ordinary transform without hypotheses; TeX integrated_spatial_occupation.tex:175-180 explicitly uses '∫ e^{iξ·x}Q(x) dx'. Ledger:3038 and claims.yaml:8631 correctly identify the convention without claiming a labelled proof step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.IsUnitTest: P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:119-120 requires 'ContDiff ℝ ∞ g ∧ HasCompactSupport g ∧ ∫ x, g x ^ 2 = 1'; TeX integrated_spatial_occupation.tex:100 requires 'real unit g ∈ C_c^∞'. Ledger:3039 and claims.yaml:8638 match exactly on this class."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.autocorr_eq_convolution: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:126-129 assumes only a real Q and identifies autocorr with Q convolved with Q(-·). TeX integrated_spatial_occupation.tex:111-147 contains no such convolution assertion. Ledger:3040 and claims.yaml:8645 correctly classify the identity as a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.autocorr_contDiff: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:132-137 assumes 'ContDiff ℝ ∞ Q' and 'HasCompactSupport Q'. TeX integrated_spatial_occupation.tex:88-89 mentions a smooth compact autocorrelation, but this general helper belongs to the disclosed Fourier route. Ledger:3041 and claims.yaml:8652 accurately state its hypotheses and conclusion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.autocorr_hasCompactSupport: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:140-143 requires only 'HasCompactSupport Q'. TeX integrated_spatial_occupation.tex:88-89 discusses the smooth compact autocorrelation for test profiles, not this general theorem. Ledger:3042 and claims.yaml:8659 faithfully describe the route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.autocorr_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:146-150 assumes 'Continuous Q' and 'HasCompactSupport Q'. TeX integrated_spatial_occupation.tex:88-91 uses smooth compact profiles. Ledger:3043 is a shortened description, with the precise assumptions supplied by claims.yaml:8666; no false labelled-step claim is made."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.autocorr_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:153-154 assumes '∀ x, 0 ≤ Q x' and concludes nonnegative autocorr at every y. TeX integrated_spatial_occupation.tex:114-116 uses a nonnegative square and its autocorrelation. Ledger:3044 and claims.yaml:8673 accurately describe the general auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.integrable_autocorr: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:158-160 requires continuous compactly supported Q and locally finite Γ. TeX integrated_spatial_occupation.tex:114-116 asserts finite spatial energy for smooth compact squares. Ledger:3045 and claims.yaml:8680 faithfully state the more general integrability helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.ex: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:165 defines 'Complex.exp (Complex.I * inner ℝ ξ x)' without hypotheses. TeX integrated_spatial_occupation.tex:175-180 uses this character inside its Fourier convention, without a separate named assertion. Ledger:3046 and claims.yaml:8687 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.ex_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:168-169 quantifies over every ξ and proves 'Continuous (ex ξ)'; there is no additional hypothesis. TeX integrated_spatial_occupation.tex:111-147 contains no corresponding standalone assertion. Ledger:3047 and claims.yaml:8694 correctly describe an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.norm_ex: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:172-174 proves '‖ex ξ x‖ = 1' for all ξ,x, without hypotheses. TeX integrated_spatial_occupation.tex:111-147 has no matching statement. Ledger:3048 and claims.yaml:8701 faithfully state the auxiliary identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.ex_sub: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:177-182 proves 'ex ξ (z - w) = ex ξ z * conj (ex ξ w)' without hypotheses. TeX integrated_spatial_occupation.tex:111-147 does not assert it. Ledger:3049 and claims.yaml:8708 correctly identify a Fourier-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.prod_hasCompactSupport: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:186-200 assumes 'HasCompactSupport Q' and proves compact support of the two-variable Fourier integrand. TeX integrated_spatial_occupation.tex:111-147 has no such Fubini-integrand claim. Ledger:3050 and claims.yaml:8715 accurately summarize the helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.fourier_autocorr: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:205-241 assumes continuous compactly supported real Q and proves the transform equals '‖fourierQ Q ξ‖ ^ 2'. TeX integrated_spatial_occupation.tex:111-147 does not use this identity in its ratio proof. Ledger:3051 and claims.yaml:8722 correctly disclose the alternative-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.integral_autocorr_eq_spectral: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:247-259 assumes 'IsSpectralMeasure Γ μ', smoothness and compact support of Q; it asserts an equality of totalized integrals. TeX integrated_spatial_occupation.tex:179-183 gives the genuine spectral identity for smooth Q later in another proof. Ledger:3052 and claims.yaml:8729 explicitly retain the integrability boundary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.norm_fourierQ_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:264-268 assumes no integrability and proves '‖fourierQ Q ξ‖ ≤ ∫ x, |Q x|'. TeX integrated_spatial_occupation.tex:111-147 contains no corresponding bound. Ledger:3053 explicitly explains totalization; claims.yaml:8736 matches the type."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.fderiv_ex: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:272-279 proves the directional derivative formula for every ξ,x,v without hypotheses. TeX integrated_spatial_occupation.tex:111-147 has no such assertion. Ledger:3054 and claims.yaml:8743 correctly describe the auxiliary derivative calculation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.fderiv_ofReal: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:283-288 assumes 'DifferentiableAt ℝ Q x' and identifies the complexified derivative. TeX integrated_spatial_occupation.tex:111-147 has no matching assertion. Ledger:3055 is a shortened description; claims.yaml:8750 preserves the differentiability hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.inner_mul_norm_fourierQ_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:292-330 assumes 'ContDiff ℝ 1 Q' and compact support, concluding '|inner ℝ ξ v| * ‖fourierQ Q ξ‖ ≤ ∫ |D_v Q|'. TeX integrated_spatial_occupation.tex:111-147 does not use this bound. Ledger:3056 and claims.yaml:8757 accurately identify the Fourier-route helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.fderiv_sq_apply: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:333-336 assumes 'DifferentiableAt ℝ g x' and concludes 'D_v(g²) = 2 g D_v g'. TeX integrated_spatial_occupation.tex:111-147 contains no separate derivative identity. Ledger:3057 and claims.yaml:8764 faithfully describe the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.integrable_sq_and_grad: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:340-349 assumes smoothness and compact support of g and proves integrability of g² and ‖Dg‖². TeX integrated_spatial_occupation.tex:100 restricts g to smooth compact unit profiles. Ledger:3058 and claims.yaml:8771 accurately describe the implicit analytic helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.gradEnergy_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:352-353 proves '0 ≤ gradEnergy g' for unrestricted g. TeX integrated_spatial_occupation.tex:35 defines gradient energy on H¹ and later proves strict positivity for unit tests. Ledger:3059 and claims.yaml:8778 correctly describe the totalized nonnegativity auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.norm_mul_norm_fourierQ_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:358-410 assumes 'IsUnitTest g' and '0 < gradEnergy g', concluding '‖ξ‖ ‖fourierQ(g²) ξ‖ ≤ 2 sqrt(b)'. TeX integrated_spatial_occupation.tex:111-147 contains no such estimate. Ledger:3060 and claims.yaml:8785 correctly retain it as an alternative-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.norm_fourierQ_sq_mul_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:414-431 assumes a unit test and b>0, concluding '|Q̂|²(4b+|ξ|²) ≤ 8b'. TeX integrated_spatial_occupation.tex:111-147 contains no corresponding estimate. Ledger:3061 and claims.yaml:8792 preserve the constants and correctly use no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.fourierQ_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:435-443 assumes 'Integrable Q volume' and proves continuity of fourierQ. TeX integrated_spatial_occupation.tex:111-147 has no matching statement. Ledger:3062 is shortened; claims.yaml:8799 supplies the necessary integrability hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.scalar_identity: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:447-460 assumes '0 < b' and arbitrary real alpha, proving '8b(2 sqrt b)^(alpha-2) = 2^(1+alpha)b^(alpha/2)'. TeX integrated_spatial_occupation.tex:111-147 contains no such identity. Ledger:3063 and claims.yaml:8806 match, including the factor 2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.spatial_fourier_bound: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:472-482 assumes locally finite Γ,μ, spectral correspondence, spectral homogeneity, alpha<2, a unit test and b>0. Its six conclusions include 'A_sp ≤ 2^(1+alpha) resolvent μ 1 b^(alpha/2)'. TeX integrated_spatial_occupation.tex:141-145 instead uses finite S₁. Ledger:3064 and claims.yaml:8813 correctly disclose the different route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.gradEnergy_pos: P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:526-549 assumes '0 < d' and 'IsUnitTest g', proving b>0. TeX integrated_spatial_occupation.tex:100,112-114 uses a real smooth compact unit g and asserts positive gradient energy. Ledger:3065 and claims.yaml:8820 match; the different constancy proof and necessary dimension condition are disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourierBound.spatial_fourier_bound_paper: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialFourierBound.lean:562-578 assumes 'HomogCovariance d alpha alpha0 Γ μ' and a unit test, not Γ≠0. TeX H:homog at notes_stratonovich_ham_second_moment.tex:190-214 allows zero covariance; the ratio section separately excludes it. Ledger:3066 and claims.yaml:8827 accurately state the stronger-domain auxiliary bound and carried fields."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.sq_ne_zero_of_unit: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:129-134 assumes 'IsUnitTest g' and proves g²≠0. TeX integrated_spatial_occupation.tex:114 describes the square as nonnegative and nonzero. Ledger:3224 and claims.yaml:8835 accurately classify the elementary helper rather than presenting it as a separate labelled result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.spatialEnergy_pos: P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:138-143 assumes locally finite Γ, 'SetScaling alpha Γ', Γ≠0 and a unit test. TeX integrated_spatial_occupation.tex:4-7,114-116 retains nonzero H:homog covariance and asserts '0 < A_sp(g) < ∞'. Ledger:3225 and claims.yaml:8842 correctly map the strict-positivity component."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.isUnitTest_dilL2: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:148-156 assumes '0 < ℓ' and 'IsUnitTest g', proving the dilated profile is a unit test. TeX integrated_spatial_occupation.tex:116-125 uses the positive dilation of a smooth unit profile. Ledger:3226 and claims.yaml:8849 faithfully identify the class-preservation auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.gradEnergy_dilL2: E:spatial-dilation",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:160-180 assumes '0 < ℓ' and 'Differentiable ℝ g', proving 'b(U_ℓ g)=ℓ²b(g)'. TeX integrated_spatial_occupation.tex:100,116-125 uses smooth unit g and positive ℓ. Ledger:3227 and claims.yaml:8856 accurately state a generalization valid on the manuscript class."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.spatialEnergy_dilL2: E:spatial-dilation",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:186-213 assumes scaling, ℓ>0, continuity and compact support of g; it concludes 'A_sp(U_ℓg)=ℓ^alpha A_sp(g)'. TeX integrated_spatial_occupation.tex:119-123 has exactly that exponent for smooth profiles under H:homog. Ledger:3228 and claims.yaml:8863 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.conv_eq_convolution: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:219-222 assumes only Γ,G and identifies conv with convolution of 1 and G against Γ. TeX integrated_spatial_occupation.tex:37-38 names 'U_z = Γ*z' without this implementation identity. Ledger:3229 and claims.yaml:8870 correctly describe a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.conv_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:227-231 requires locally finite Γ and continuous compactly supported G. TeX integrated_spatial_occupation.tex:37-41 uses smooth compact z under H:homog. Ledger:3230 and claims.yaml:8877 accurately describe the continuity helper with no extra manuscript assumption."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.integral_conv_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:238-265 assumes locally finite Γ and continuous compactly supported F,G; it proves integrability and '∫ (Γ*G)F = spatialPair Γ F G'. TeX integrated_spatial_occupation.tex:125-127 implicitly uses this identity for smooth squares. Ledger:3231 and claims.yaml:8884 correctly classify the helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.spatialPair_const_mul_right: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:268-274 quantifies over arbitrary Γ,F,G,c and proves right scalar homogeneity of the totalized pairing. TeX integrated_spatial_occupation.tex:125-127 uses the corresponding scaling only for convergent smooth pairings. Ledger:3232 and claims.yaml:8891 faithfully describe the auxiliary identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.spatialPair_const_mul_left: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:277-283 quantifies over arbitrary Γ,F,G,c and proves left scalar homogeneity. TeX integrated_spatial_occupation.tex:125-127 uses the resulting quadratic θ² scaling on smooth profiles. Ledger:3233 and claims.yaml:8898 accurately describe the auxiliary, without claiming unrestricted additivity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.ratio: P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:290-291 defines 'spatialEnergy Γ g / gradEnergy g ^ (alpha / 2)' without restricting g. TeX integrated_spatial_occupation.tex:100-101 defines this ratio on real smooth compact unit profiles. Ledger:3234 and claims.yaml:8905 disclose the totalized extension; b>0 is proved on the intended class."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.ratioSet: P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:294-295 defines '{r | ∃ g, IsUnitTest g ∧ ratio Γ alpha g = r}'. TeX integrated_spatial_occupation.tex:100-102 takes the supremum over precisely real smooth compact unit profiles. Ledger:3235 and claims.yaml:8912 match the domain and quantifiers."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.R0: P:spatial-smooth-ratio",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean SpatialSmoothRatio.lean:300 defines 'sSup (ratioSet Γ alpha)'; TeX integrated_spatial_occupation.tex:101-102 defines the same supremum and asserts it positive finite. Ledger:3236 and claims.yaml:8919 identify it correctly. W2 concerns only 'every statement ... asserts nonemptiness': some corollaries establish that fact internally instead."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.exists_unitTest: P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:304-322 proves '∀ d, ∃ g, IsUnitTest g' by a normalized smooth bump, without covariance assumptions. TeX integrated_spatial_occupation.tex:143-144 says 'A normalized compact bump supplies a positive ratio'. Ledger:3237 and claims.yaml:8926 correctly map the existence component, not positivity by itself."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.R0_pos_finite: P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:333-341 assumes locally finite Γ,μ, spectral correspondence, both scalings, Γ≠0, d>0 and alpha<2; it proves positive bounded ratios, nonempty bounded ratioSet and positive bounded R0. TeX integrated_spatial_occupation.tex:4-10,100-102 has stronger standing assumptions. Ledger:3238 and claims.yaml:8933 explicitly disclose the different Fourier finiteness route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.isRayleighTrial_of_unitTest: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:368-387 assumes 'Continuous V' and 'IsUnitTest f', proving a weak-gradient Rayleigh trial and its exact value. TeX integrated_spatial_occupation.tex:125-127 uses the trial U_ℓg. Ledger:3239 and claims.yaml:8940 correctly identify the implementation bridge as a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.StaticControls: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:403-408 requires, for every nonnegative nonzero test z, bounded rayleighSet and existential approximation below λ_z(1)−M_a B(z,z)/2. TeX integrated_spatial_occupation.tex:40-53 asserts positive finite λ² and the supremum inequality, with finite S₁ at lines 8-10. Ledger:3240 and claims.yaml:8947 correctly describe a no-stronger supplied input, discharged at SpatialOccupationCompleted.lean:109-124."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.smoothScoreBound: E:spatial-smooth-score",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:412-414 defines '(3-alpha) * (R * alpha^(alpha/2)/(8 * mass a * (4-alpha)^((4-alpha)/2)))^(1/(3-alpha))'. TeX integrated_spatial_occupation.tex:5,104-107 has precisely this expression with k=3−alpha and q=4−alpha. Ledger:3241 and claims.yaml:8954 match all constants and exponents."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.score_algebra: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:421-428 assumes '0 < alpha', 'alpha < 2', M>0 and R>0 and proves the stated identity, including the factor 2. TeX integrated_spatial_occupation.tex:136-140 instead maximizes L−CL^q. Ledger:3242 and claims.yaml:8961 accurately identify substitution of the maximizer as a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.spatial_smooth_score: E:spatial-smooth-score",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:471-476 assumes locally finite nonzero scaling Γ, 0<alpha<2, mass a>0, StaticControls, a unit test and b>0; it proves '∀ y < bound, ∃ Ψ ∈ CPos d, y < I−v/2'. TeX integrated_spatial_occupation.tex:4-10,100-108 supplies these conditions and a finite-supremum inequality. Ledger:3243 and claims.yaml:8968 correctly disclose the existential form and input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.spatial_smooth_score_sSup: E:spatial-smooth-score",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:584-591 adds 'S1Bdd a Γ' to the general score hypotheses and concludes 'smoothScoreBound ... ≤ S1pos a Γ'. TeX integrated_spatial_occupation.tex:8-10,104-107 uses the already finite S₁. Ledger:3244 and claims.yaml:8975 explicitly identify boundedness as supplied; no stronger boundedness input is hidden."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.ratio_le_of_S1Bdd: P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:598-603 assumes the score hypotheses, StaticControls and S1Bdd, and concludes 'R(g) ≤ 8 M_a q^(q/2)(S1pos/k)^k / alpha^(alpha/2)'. TeX integrated_spatial_occupation.tex:141-143 states precisely that bound using finite S₁. Ledger:3245 and claims.yaml:8982 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.R0_finite_of_S1Bdd: P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:626-639 assumes scaling nonzero locally finite Γ, d>0, 0<alpha<2, positive mass, StaticControls and S1Bdd; it proves BddAbove ratioSet and the advertised bound on R0. TeX integrated_spatial_occupation.tex:141-145 takes the supremum of the same ratio bound. Ledger:3246 and claims.yaml:8989 accurately disclose the general assumptions and inputs."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.homog_consequences: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:645-653 assumes 'HomogCovariance d alpha alpha0 Γ μ' and proves d>0, 0<alpha<2 and mass alpha0>0. TeX integrated_spatial_occupation.tex:4-7 retains H:homog and notes alpha<2; the mass is positive in integrated_temporal_equilibrium.tex:46-49. Ledger:3247 and claims.yaml:8996 accurately identify a wrapper auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.spatial_dilation_paper: E:spatial-dilation",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:660-666 assumes H:homog, carried Γ≠0, a unit test and ℓ>0; it proves class preservation and both dilation identities. TeX integrated_spatial_occupation.tex:4-7,116-125 has the same standing setting and identities. Ledger:3248 and claims.yaml:9003 correctly disclose that only the scaling field is used."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.spatial_smooth_ratio_R0_paper: P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:681-696 assumes only H:homog and Γ≠0 and proves genuine positive spatial energies, positive bounded ratios, nonempty bounded ratioSet and positive finite R0. TeX integrated_spatial_occupation.tex:4-10,100-102,112-116 has matching profile and covariance assumptions. Ledger:3249 and claims.yaml:9010 correctly disclose the stronger explicit Fourier ceiling and alternative proof."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.spatial_smooth_score_paper: E:spatial-smooth-score",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:708-715 assumes H:homog, Γ≠0, 'StaticControls alpha0 Γ' and a unit test; it proves the existential score statement with a=alpha0. TeX integrated_spatial_occupation.tex:4-10,100-108 provides that setting and the finite-supremum bound. Ledger:3250 and claims.yaml:9017 correctly disclose the supplied lemma and existential formulation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.spatial_smooth_score_sSup_paper: E:spatial-smooth-score",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:722-729 assumes H:homog, Γ≠0, StaticControls, S1Bdd and a unit test, concluding the exact supremum inequality. TeX integrated_spatial_occupation.tex:8-10,104-107 already treats S₁ as finite. Ledger:3251 and claims.yaml:9024 explicitly disclose both named inputs and preserve the constant."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.R0_finite_of_S1Bdd_paper: P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:735-743 assumes H:homog, Γ≠0, StaticControls and S1Bdd and proves bounded ratioSet and the manuscript's S₁-based ceiling on R0. TeX integrated_spatial_occupation.tex:141-145 supplies the same finiteness argument. Ledger:3252 and claims.yaml:9031 correctly identify its conditional, manuscript-route status."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialSmoothRatio.spatial_smooth_ratio_paper: P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "Lean SpatialSmoothRatio.lean:751-760 assumes H:homog, Γ≠0 and StaticControls; it combines positive finite R0 with '∀ g ... ∀ y < bound, ∃ Ψ ...'. TeX integrated_spatial_occupation.tex:100-108 asserts finite R0 and the supremum score bound. Ledger:3253 and claims.yaml:9038 correctly disclose the existential conclusion and score-only supplied input."
+    },
+    {
+      "claim": "PARA-SpatialFourierBound",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:2952-3030 accurately gives the deterministic bound, resolvent convention, lack of Γ≠0, integrability conclusions, unused fields and different proof route. SpatialFourierBound.lean:472-578 supports these claims; TeX integrated_spatial_occupation.tex:141-145 instead uses finite S₁. W1 recommends localizing the pairing-bridge disclaimer, since the bridge exists elsewhere in the packet."
+    },
+    {
+      "claim": "PARA-SpatialSmoothRatio",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:3119-3220 correctly records the profile class, hypotheses, constants, existential quantifier order, StaticControls discharge, S1Bdd boundary and alternative finiteness proof, consistent with SpatialSmoothRatio.lean:333-760 and TeX integrated_spatial_occupation.tex:98-147. W1 and W2 concern only the wording of the external pairing bridge and nonemptiness bookkeeping."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "The complete Index at ledger:239-452 lists each of the 63 declarations exactly once, in rows 401-420, under the same label as its section row. Route auxiliaries occupy no-direct-label rows. Searching labels across all manuscript TeX inputs located every label cited by the reviewed sections; none was missing or duplicated."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:811-837 correctly uses class same-assumptions and conclusion weaker, led by SpatialOccupationCompleted.spatial_smooth_ratio_completed_paper. That theorem at SpatialOccupationCompleted.lean:168-176 has only H:homog and Γ≠0. Its existential score, separate conditional sSup corollaries and unconditional Fourier finiteness are accurately disclosed. docs/coverage-scope-tex.yaml:22-24 matches the ASCII scope and its mathematics."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "Relevant references in ledger Scope:138-148, SpatialOccupationCompleted:3068-3117, SpatialStaticControls:3335-3344, VariationalFloor:4023-4086, VariationalRate:4275-4305 and Not in Lean:4848-4861,4902-4912 correctly distinguish completed wrappers, the shared score set, conditional supremum forms and the input-free Fourier proof of R0 finiteness. No conflicting claim of a formalized H¹ extension was found."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "W1 — Localize the pairing-bridge disclaimer. candidate/statement-ledger.md:2985-2987,3035,3210-3212 says the identification is 'not proved' or 'Not formalized'. Lean SpatialStaticControls.lean:833-841,891 actually proves 'pairing ... = ENNReal.ofReal (spatialPair ...)' and equality of real values for continuous, compactly supported, nonnegative F,G and locally finite Γ. TeX integrated_spatial_occupation.tex:14-19 defines the extended pairing; its smooth-square uses satisfy these conditions. Optional wording fix: say 'not proved in this module; the bridge on the profiles used here is SpatialStaticControls.pairing_eq_spatialPair'. This is a localization issue, not a missing mathematical bridge.",
+      "W2 — Distinguish asserting from establishing nonemptiness. candidate/statement-ledger.md:3188-3190,3236 and lean/claims.yaml:8919 say every R0 statement 'asserts nonemptiness and boundedness'. Lean SpatialSmoothRatio.lean:626-632 instead concludes only 'BddAbove (ratioSet Γ alpha) ∧ R0 ... ≤ ...'; its proof establishes nonemptiness using exists_unitTest at lines 638-639. TeX integrated_spatial_occupation.tex:143-145 likewise uses a normalized bump. Optional wording fix: replace 'every statement ... asserts' with 'nonemptiness and boundedness are established whenever R0 is used as a genuine supremum'. No junk-value dependence results."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a correspondence review, not human verification, a novelty audit, or an independent verification of Lean's proofs.",
+    "Compilation and standard-axiom status were accepted as supplied; no build was run.",
+    "The supervisor-checked provenance binding and historical revision identities were accepted as supplied, not independently recomputed.",
+    "Reading outside the explicitly required sources was selective, as documented in source_coverage; unrelated previously reviewed ledger rows were not re-audited.",
+    "The accepted correspondence retains the disclosed boundaries: Rayleigh-defined rates and integral-form costs, existential score conclusions without S1Bdd, and no formalized full H¹ spatial extension."
+  ]
+}

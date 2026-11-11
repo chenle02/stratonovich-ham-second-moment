@@ -1,0 +1,457 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-1176 complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalFloor.lean:1-670 complete, consecutive ranges.",
+    "lean/StratonovichHAMSecondMoment/VariationalRate.lean:1-828 complete, consecutive ranges.",
+    "lean/StratonovichHAMSecondMoment/VariationalMean.lean:1-733 complete, consecutive ranges.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:1-465 complete, consecutive ranges.",
+    "lean/StratonovichHAMSecondMoment/WeakSobolev.lean:1-329 complete, consecutive ranges.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean:1-178 complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean:85-162,550-580 partial; complete relevant autocorrelation declarations and deterministic-bound wrapper.",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:326-374,675-700 partial; complete relevant R0_pos_finite and spatial_smooth_ratio_R0_paper declarations.",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:379-423,1140-1157 partial; complete relevant convZ_props, RayleighFloor and spatial_static_score_sSup_paper declarations.",
+    "lean/claims.yaml:1585-2000,6490-6792,8072-8599 partial file; complete entries for all five required modules. All declaration identifiers and kinds additionally processed for the global count.",
+    "lean/coverage.yaml:1-982 complete, consecutive ranges.",
+    "docs/coverage-scope-tex.yaml:1-27 complete.",
+    "candidate/statement-ledger.md:1-452,798-815,2952-2989,3068-3108,3130-3196,3255-3348,3850-3955,4023-4129,4275-4387,4807-4932; additionally cross-reference search matches at 3111-3117,3244-3246,3251-3252,3376,3401-3402,3423-3424,3435,3437-3438,3443-3445,3979,4001-4002,4015-4016,4018,4020-4021. Partial file; required Scope, Index and both target sections complete. Every per-module table structurally processed for declaration counts.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-343 complete, consecutive ranges.",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-160 partial file; required lines 100-120 complete.",
+    "manuscript/notes/integrated_compact_mean_family.tex:390-520 partial; relevant mean, variance, lower-envelope and common-trial statements and proofs complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:172-232,3680-3710 partial; standing covariance hypothesis and full-upper statement read.",
+    "manuscript/notes/integrated_occupation_ceiling.tex:195-255 partial; occupation-ceiling statement and proof read.",
+    "All manuscript LaTeX inputs searched for label existence and multiplicity; all labels cited by the two target sections located uniquely in the contextual ranges listed above."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.hasWeakGradient_of_test: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:85-86 assumes 'IsTestFunction f' and proves the classical gradient is weak. TeX integrated_spatial_occupation.tex:100,112-114 uses smooth compact profiles and weak gradients but states no separate gradient-identification lemma. Ledger:4090 and claims.yaml:8073-8079 faithfully describe this foundation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.grad: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:104-105 defines '(toDual ...).symm (fderiv ...)' without hypotheses. TeX integrated_spatial_occupation.tex:35 uses 'b(g)=||∇g||²' without defining this implementation. Ledger:4091 and claims.yaml:8080-8086 accurately identify a classical-gradient definition, not a separately labelled result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.continuous_grad: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:109-111 assumes 'IsTestFunction f' and concludes 'Continuous (grad f)'. TeX integrated_spatial_occupation.tex:100 assumes smooth compact g; no separate continuity assertion is claimed. Ledger:4092 and claims.yaml:8087-8093 correctly mark a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.hasCompactSupport_grad: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:115-117 assumes 'IsTestFunction f' and proves 'HasCompactSupport (grad f)'. TeX integrated_spatial_occupation.tex:100 supplies smooth compact profiles, not this separate lemma. Ledger:4093 and claims.yaml:8094-8100 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.memLp_test: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:120-121 states 'IsTestFunction f → MemLp f 2 volume'. TeX integrated_spatial_occupation.tex:100 uses 'real unit g ∈ C_c^∞'; this integrability is implicit. Ledger:4094 and claims.yaml:8101-8107 faithfully state an unlabelled auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.memLp_grad: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:125-126 assumes 'IsTestFunction f' and concludes 'MemLp (grad f) 2 volume'. TeX integrated_spatial_occupation.tex:100-101 uses smooth compact g and its gradient energy. Ledger:4095 and claims.yaml:8108-8114 match the auxiliary type."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.hasWeakGradient_const_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:130-137 assumes 'HasWeakGradient f g' and allows every real c. TeX integrated_unmasked_variational.tex:259-263 uses linear weak-derivative calculus but gives no separate scalar-multiplication lemma. Ledger:4096 and claims.yaml:8115-8121 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.measure_ball_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:143-167 assumes 'SetScaling alpha Γ', 'Γ ≠ 0', '0 < r'. TeX integrated_spatial_occupation.tex:88-91 explicitly uses homogeneity and exhaustion to obtain positive origin-ball mass under its nonzero covariance assumption. Ledger:4097 and claims.yaml:8122-8128 accurately present the general foundation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.measure_closedBall_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:170-172 has the same scaling, nonzero-measure and positive-radius hypotheses, with closed balls. TeX integrated_spatial_occupation.tex:89-91 discusses origin-centered balls; the closed-ball consequence is harmless and not presented as a separate TeX statement. Ledger:4098 and claims.yaml:8129-8135 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.floorBump: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:178 defines a bump with radii '2, 3' for every d. TeX integrated_unmasked_variational.tex:150-155 instead invokes a compact common trial and contains no such bump choice. Ledger:4099 and claims.yaml:8136-8142 correctly identify a Lean-route construction."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.prof: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:181 defines 'prof d x := floorBump d x'. TeX integrated_unmasked_variational.tex:150-155 has no matching profile definition. Ledger:4100 and claims.yaml:8143-8149 correctly describe an auxiliary, without a false proof-step mapping."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.prof_test: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:184-185 proves 'IsTestFunction (prof d)' without extra hypotheses. TeX integrated_unmasked_variational.tex:150-155 uses a different supplied compact trial. Ledger:4101 and claims.yaml:8150-8156 accurately describe the Lean-only profile."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.prof_eq_one: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:188-189 assumes '||x|| ≤ 2' and proves 'prof d x = 1'. TeX integrated_unmasked_variational.tex:150-155 does not specify this plateau. Ledger:4102 and claims.yaml:8157-8163 match the route auxiliary, including the non-strict boundary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.profMass: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:193 defines '∫ x, prof d x ^ 2'. TeX integrated_unmasked_variational.tex:150-155 has no corresponding named mass. Ledger:4103 and claims.yaml:8164-8170 accurately describe the normalization quantity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.profMass_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:196-201 proves '0 < profMass d' for every d. TeX integrated_unmasked_variational.tex:150-155 does not use this particular mass. Ledger:4104 and claims.yaml:8171-8177 correctly state an unconditional auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.fl: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:204 defines '(sqrt (profMass d))⁻¹ * dilL2 ℓ (prof d) x'. TeX integrated_unmasked_variational.tex:150-155 invokes another trial route. Ledger:4105 and claims.yaml:8178-8184 reproduce the normalization correctly."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.gl: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:208-209 defines 'N^(-1/2) • (ℓ • dilL2 ℓ (grad ...))'. TeX integrated_unmasked_variational.tex:150-155 does not define this field. Ledger:4106 and claims.yaml:8185-8191 preserve the essential extra factor ℓ."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.sq_dilL2_real: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:212-215 assumes '0 < ℓ' and proves '(U_ℓ f)² = ℓ^d f(ℓx)²'. TeX integrated_unmasked_variational.tex:259 defines 'U_r f=r^(d/2)f(rx)'; the isolated square identity is a route auxiliary. Ledger:4107 and claims.yaml:8192-8198 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.fl_sq: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:218-221 assumes '0 < ℓ' and gives 'profMass⁻¹ * (ℓ^d * prof(ℓx)²)'. TeX integrated_unmasked_variational.tex:150-155 has no such normalized profile formula. Ledger:4108 and claims.yaml:8199-8205 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.fl_test: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:224-235 assumes '0 < ℓ' and proves 'IsTestFunction (fl ℓ)'. TeX integrated_unmasked_variational.tex:150-155 supplies a compact trial by another route. Ledger:4109 and claims.yaml:8206-8212 accurately state the auxiliary hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.fl_unit: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:238-246 assumes '0 < ℓ' and concludes '∫ fl ℓ x ^ 2 = 1'. TeX integrated_unmasked_variational.tex:151 requires 'one unit compactly supported w', but not this construction. Ledger:4110 and claims.yaml:8213-8219 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.gl_memLp: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:249-253 assumes '0 < ℓ' and concludes 'MemLp (gl ℓ) 2 volume'. TeX integrated_unmasked_variational.tex:106 uses H¹ trials; no separate gl integrability statement appears. Ledger:4111 and claims.yaml:8220-8226 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.gl_norm: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:257-266 assumes '0 < ℓ' and gives '∫||gl||² = N⁻¹ ℓ² ∫||grad prof||²'. TeX integrated_unmasked_variational.tex:260-262 uses '||∇U_rf||²=r²||∇f||²'; the specialized normalized-profile lemma is correctly auxiliary. Ledger:4112 and claims.yaml:8227-8233 preserve the constants."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.gl_weak: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:270-272 assumes '0 < ℓ' and proves 'HasWeakGradient (fl ℓ) (gl ℓ)'. TeX integrated_unmasked_variational.tex:260-262 mentions weak derivatives without this profile-specific assertion. Ledger:4113 and claims.yaml:8234-8240 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.pot_lower: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:277-284 explicitly requires local finiteness, SetScaling, continuous compact z≥0, convolution integrability, '0<ℓ', 'ℓ*Rz≤1', V≥Γ*z and integrable V fl². Its constant uses 'Γ(closedBall 0 1)'. Ledger:4114, its explanatory paragraph:4045-4047, and claims.yaml:8241-8247 match. TeX integrated_unmasked_variational.tex:150-155 uses a different common-trial route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.exists_radius_fn: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:381-388 assumes 'HasCompactSupport z' and produces 'R≥0' with vanishing for 'R<||y||'. TeX integrated_spatial_occupation.tex:41 assumes z smooth compact but states no separate radius lemma. Ledger:4115 and claims.yaml:8248-8254 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.integral_pos_of_nonzero: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:392-396 assumes continuous, compactly supported, nonnegative, nonzero z and proves '0<∫z'. TeX integrated_compact_mean_family.tex:438 says 'Nonnegative nonzero smooth Ψ has positive integral'; the general spatial lemma is appropriately recorded as a foundation auxiliary. Ledger:4116 and claims.yaml:8255-8261 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.dilation_floor: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:411-418 assumes locally finite Γ, SetScaling, 'alpha<2', 'Γ≠0', continuous compact nonzero z≥0 and genuine convolutions. It proves '∃ f g ε ... ∀ V', so the trial and ε precede V. TeX integrated_unmasked_variational.tex:150-155 obtains one uniform trial through P:compact-original-common-trial. Ledger:4117 and claims.yaml:8262-8268 accurately disclose the generalized alternative route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.rayleighSet_floor: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:466-478 adds 'V≥conv Γ z' and integrability of V f² for every L² f, concluding a positive set element and positive supremum conditional on 'BddAbove'. TeX integrated_unmasked_variational.tex:154-155 uses the corresponding positive floor for its bounded potential. Ledger:4118 and claims.yaml:8269-8275 preserve the conditional supremum."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.integral_pos_of_pos_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:485-492 assumes SetScaling, 'Γ≠0', continuous F≥0, 'F 0>0' and 'Integrable F Γ'. TeX integrated_spatial_occupation.tex:88-91 uses precisely the positive-near-zero/positive-ball-mass principle, without a separate general lemma. Ledger:4119 and claims.yaml:8276-8282 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.conv_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:496-500 assumes scaling, Γ≠0, continuous z≥0, 'z x>0' and genuine convolution integrability. TeX integrated_unmasked_variational.tex:289-290 instead cites the variance lemma; this pointwise convolution argument is a disclosed alternative auxiliary. Ledger:4120 and claims.yaml:8283-8289 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.autocorr_eq_shift: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:507-511 has arbitrary real Q,x and states 'autocorr Q x = ∫ Q(x+y)Q(y)'. TeX integrated_spatial_occupation.tex:15-17 uses the equivalent two-point pairing, not this standalone translation identity. Ledger:4121 and claims.yaml:8290-8296 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.autocorr_nonneg_of_posDef: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:522-524 assumes 'IsPosDefDistr Γ' and 'IsTestFunction Q'. TeX notes_stratonovich_ham_second_moment.tex:192 assumes 'positive-definite tempered Radon measure Γ'. HomogHypothesis.lean:44-47 supplies exactly the autocorrelation positivity definition. Ledger:4122 and claims.yaml:8297-8303 correctly describe the general foundation; genuine integrability under local finiteness is separately disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.autocorr_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:546-549 assumes locally finite Γ, scaling, Γ≠0 and continuous compact Q≥0, Q≠0; positive definiteness is absent. TeX integrated_spatial_occupation.tex:88-91,114-116 proves strict positivity by the same local autocorrelation argument under stronger smoothness assumptions. Ledger:4123 and claims.yaml:8304-8310 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.bumpN: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:570-572 defines radii '1/(n+2)' and '2/(n+2)' with no analytic hypotheses. TeX integrated_spatial_occupation.tex:112-114 uses Fourier support, not mollifiers. Ledger:4124 and claims.yaml:8311-8317 correctly identify the alternative-route construction."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.moll: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:575-576 defines convolution of the normalized bump with f against volume. TeX integrated_spatial_occupation.tex:112-114 contains no mollification definition. Ledger:4125 and claims.yaml:8318-8324 accurately mark this implementation auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.moll_tendsto: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:581-590 assumes 'LocallyIntegrable f volume' and proves almost-everywhere convergence as n→∞. TeX integrated_spatial_occupation.tex:112-114 uses a different Fourier argument. Ledger:4126 and claims.yaml:8325-8331 preserve the local-integrability hypothesis and a.e. quantifier."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.moll_const: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:596-597 assumes 'LocallyIntegrable f volume' and 'HasWeakGradient f 0', proving equality for every n,x,y. TeX integrated_spatial_occupation.tex:112-114 does not assert this mollification lemma. Ledger:4127 and claims.yaml:8332-8338 faithfully state the alternative-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalFloor.ae_eq_zero_of_hasWeakGradient_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalFloor.lean:649-650 assumes '0<d', 'MemLp f 2 volume', 'HasWeakGradient f 0' and proves 'f =ᵐ 0'. TeX integrated_spatial_occupation.tex:112-114 says a nonzero L² function with zero weak gradient 'would vanish'; its standing d∈{1,2,3} supplies positive dimension. Ledger:4128 and claims.yaml:8339-8345 match and explicitly distinguish mollification from Fourier support."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.psiBar: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:120 defines '∫ u in Ioo 0 1, Ψ(u,y)' for arbitrary Ψ. TeX integrated_compact_mean_family.tex:405 similarly writes 'overline q(x)=∫_0^1 Ψ(u,x)du' under smooth-control hypotheses. Ledger:4351 and claims.yaml:8347-8353 faithfully describe the shared time-average object while making no claim that its use is a step of the unmasked-rate proof."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.psiBar_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:123-127 assumes only 'Continuous Ψ'. TeX integrated_unmasked_variational.tex:8 assumes smooth compact Ψ and does not state this separate continuity lemma. Ledger:4352 and claims.yaml:8354-8360 correctly record a generalized route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.psiBar_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:130-131 assumes '∀p,0≤Ψ p' and concludes ψBar≥0 without integrability hypotheses. TeX integrated_unmasked_variational.tex:9 assumes 'Ψ≥0'; no separately labelled average-positivity result is asserted. Ledger:4353 and claims.yaml:8361-8367 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.psiBar_vanish: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:134-136 assumes '∀u z, R<||z|| → Ψ(u,z)=0'. TeX integrated_unmasked_variational.tex:8 assumes compact spacetime support, not this separate radius-parametrized lemma. Ledger:4354 and claims.yaml:8368-8374 preserve its strict outside-radius condition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.psiBar_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:139-145 assumes '|Ψ p|≤B' everywhere and concludes '|psiBar Ψ y|≤B'; the time interval has length one. TeX integrated_unmasked_variational.tex:8 supplies compact smooth controls but states no separate average-bound lemma. Ledger:4355 and claims.yaml:8375-8381 match, with no missing factor."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.psiBar_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:149-150 assumes continuous Ψ≥0, 'σ₀∈Ioo 0 1', and 'Ψ(σ₀,x₀)>0'. TeX integrated_compact_mean_family.tex:438-443 establishes nonzero time average under the stronger smooth nonzero-control assumptions. Ledger:4356 and claims.yaml:8382-8388 accurately state this pointwise auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.exists_pos_point: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:165-170 assumes 'Ψ∈CPos d' and produces a positive point with time strictly inside (0,1). TeX integrated_unmasked_variational.tex:8-9 assumes exactly smooth compact, nonnegative, nonzero controls. Ledger:4357 and claims.yaml:8389-8395 correctly describe the elementary unpacking auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.psiBar_data: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:175-177 assumes 'Ψ∈CPos d' and combines continuity, nonnegativity, compact support and a positive average point. TeX integrated_compact_mean_family.tex:405,438-443 supplies the corresponding time-average setting but not this bundled theorem. Ledger:4358 and claims.yaml:8396-8402 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.psiBar_conv_integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:188-198 assumes 'IsTempered Γ', 'IsTempered μ', 'IsSpectralMeasure Γ μ' and Ψ∈CPos. TeX integrated_unmasked_variational.tex:4 invokes H:homog, which includes those properties. Ledger:4359 and claims.yaml:8403-8409 accurately expose the generalized integrability auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.timeAvg_conv: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:188-215 additionally requires '[SFinite Γ]' for the Fubini identity. TeX H:homog, notes_stratonovich_ham_second_moment.tex:192, supplies a Radon measure; on R^d it is sigma-finite. Ledger:4360 and claims.yaml:8410-8416 explicitly retain SFinite and correctly avoid claiming this as the manuscript's rate-proof route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.convT_integrableOn: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:188-190,219-224 assumes the tempered spectral pair and Ψ∈CPos and proves integrability on '(0,1)' without the time kernel. TeX integrated_unmasked_variational.tex:4,8 supplies stronger standing hypotheses. Ledger:4361 and claims.yaml:8417-8423 match the auxiliary type."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.conv_psiBar_le_mean: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:230-247 explicitly assumes SFinite Γ, the tempered spectral pair, Ψ∈CPos, '0≤a<1' and 's∈[0,1]'. TeX integrated_compact_mean_family.tex:417-445 proves 'hσ≥Γ*overline q' with a=α₀>0. Ledger:4362 and claims.yaml:8424-8430 match; its use instead of the compact trial is disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.rayleighValue_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:254-255 assumes '∀x,V x≤M' and 'q∈rayleighSet V', concluding q≤M. TeX integrated_unmasked_variational.tex:70,154-155 uses bounded h and the corresponding ceiling. Ledger:4363 and claims.yaml:8431-8437 accurately give the generic set-element lemma, not a separate labelled result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.sSup_rayleighSet_le_add: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:267-270 assumes 'V-W≤D', integrability of W f² for all L² f, nonempty R_V and bounded R_W. TeX integrated_unmasked_variational.tex:156 says 'Comparing identical unit form tests'; its bounded potentials ensure the explicit integrability condition. Ledger:4364 and claims.yaml:8438-8444 faithfully describe the one-sided auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.abs_sSup_rayleighSet_sub_le: P:variational-unmasked-rate",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:295-300 assumes '|V-W|≤D', both L² potential-integrability conditions, and both sets nonempty and bounded. TeX integrated_unmasked_variational.tex:154-156 has bounded potentials and '|E_s-E_t|≤||h_s-h_t||∞'. Ledger:4365 and claims.yaml:8445-8451 accurately formalize the Rayleigh comparison only; operator identification is expressly excluded."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.abs_sqrt_sub_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:308-309 assumes '0<ε', 'ε≤a', 'ε≤b' and concludes '|√a-√b|≤|a-b|/(2√ε)'. TeX integrated_unmasked_variational.tex:155-159 uses the same positive floor and denominator. Ledger:4366 and claims.yaml:8452-8458 faithfully identify the scalar auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.unmasked_rate: P:variational-unmasked-rate",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:337-356 assumes the tempered spectral pair, locally finite nonzero scaling Γ, 'alpha<2', '0≤a<1' and Ψ∈CPos. TeX integrated_unmasked_variational.tex:4,98-110 assumes nonzero H:homog and a=α₀, implying these conditions. Uniform ε precedes all s,t,x; the exact C/(2√ε) bound and genuine positive finite integral are proved. Ledger:4367 and claims.yaml:8459-8465 match the disclosed Rayleigh-only generalization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.costIntegrand: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:429-430 defines 'Ψ p * mean a Γ Ψ p.1 p.2' without hypotheses. TeX integrated_compact_mean_family.tex:409-410 contains the same integrand in the cost, but no separately named product-space function. Ledger:4368 and claims.yaml:8466-8472 match the auxiliary definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.costIntegrand_data: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:436-450 assumes the tempered spectral pair, 'a<1' and Ψ∈CPos and proves continuous compact support of the product. TeX integrated_unmasked_variational.tex:4,8 supplies stronger hypotheses; its score proof instead cites the variance lemma. Ledger:4369 and claims.yaml:8473-8479 accurately identify the route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.rawCost_genuine: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:458-463 assumes the tempered spectral pair, 'a<1', Ψ∈CPos and proves every spatial integral integrable, the time integral integrable, and equality with the product-space integral. TeX integrated_compact_mean_family.tex:409-410 asserts the genuine finite cost under H:homog. Ledger:4370 and claims.yaml:8480-8486 faithfully document the alternative integrability route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.rawCost_pos: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:487-490 assumes the tempered spectral pair, locally finite nonzero scaling Γ, '0≤a<1' and Ψ∈CPos; it does not require alpha<2. TeX integrated_unmasked_variational.tex:288-290 assumes H:homog and says 'v₀>0', citing L:compact-raw-profile. Ledger:4371 and claims.yaml:8487-8493 correctly state the integral-form generalization and disclose the different positivity proof and omitted Gaussian identification."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.scoreSet: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:506-507 defines the image of CPos under 'c*integratedRate-rawCost/2'. TeX integrated_unmasked_variational.tex:272-273 defines '{cIΨ-vΨ/2:Ψ∈C_pos}' for c>0. Ledger:4372 and claims.yaml:8494-8500 match; defining the image also for other c does not strengthen a claimed theorem."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.score1Set: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:512-513 defines '{integratedRate-rawCost/2}' over CPos. TeX integrated_unmasked_variational.tex:272-277 specializes the same set to c=1. Ledger:4373 and claims.yaml:8501-8507 preserve the coefficient and one-half cost."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.scoreSet_one: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:516-517 proves 'scoreSet a Γ 1 = score1Set a Γ' without hypotheses. TeX integrated_unmasked_variational.tex:272-277 uses coefficient one but does not introduce two competing set definitions. Ledger:4374 and claims.yaml:8508-8514 correctly mark the implementation bridge auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.score_set_scaling: E:variational-score-set-scaling",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:524-529 assumes SetScaling, '0<3-alpha', 'c>0', continuous Ψ and arbitrary a. TeX integrated_unmasked_variational.tex:287,298-304 has k=3-α>0, q=4-α, r_c=c^(1/k), and exactly 'K_c(IΨ-vΨ/2)'. Ledger:4375 and claims.yaml:8515-8521 preserve q/k=(4-α)/(3-α); the broader algebraic domain is harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.scoreSet_eq: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:543-545 assumes SetScaling, '0<3-alpha' and 'c>0' and proves equality of whole sets, not merely one inclusion. TeX integrated_unmasked_variational.tex:305-307 invokes the dilation bijection for exactly this equality. Ledger:4376 and claims.yaml:8522-8528 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.positive_test: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:564-576 assumes scaling, k>0, Ψ₀∈CPos, 'I₀>0', 'v₀>0', and proves r₀>0, class membership and score '=r₀I₀/2>0'. TeX integrated_unmasked_variational.tex:287-295 has the same hypotheses and radius '(I₀/v₀)^(1/k)', without r₀<1. Ledger:4377 and claims.yaml:8529-8535 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.testRadius: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:592-593 defines '(integratedRate/rawCost)^((3-alpha)⁻¹)'. TeX integrated_unmasked_variational.tex:290 defines 'r₀=(I₀/v₀)^(1/k)' with k=3-α. Ledger:4378 and claims.yaml:8536-8542 match exactly on the stated positive-data domain."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.S1Bdd: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:610-611 defines 'BddAbove (score1Set a Γ)'. TeX integrated_unmasked_variational.tex:272-274 says the coefficient-c value set 'is nonempty and bounded above'; at c=1 this is precisely its boundedness component. Ledger:4379 and claims.yaml:8543-8549 correctly identify it as supplied, not proved. Its stochastic provenance matches TeX:309-325."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.S1pos: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:616-617 defines 'sSup (score1Set a Γ)'. TeX integrated_unmasked_variational.tex:274 names the 'finite real supremum S_c^pos'. CPos and hence score1Set are nonempty; S1Bdd supplies exactly the remaining genuine-supremum condition. Ledger:4380 and claims.yaml:8550-8556 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.positive_scores: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:628-649 assumes the covariance hypotheses of unmasked_rate, without S1Bdd; it proves nonemptiness, genuine positive I,v, positive tests, scaling and 'BddAbove(scoreSet c) ↔ S1Bdd' for c>0. TeX integrated_unmasked_variational.tex:287-307 contains these ingredients, while boundedness itself is proved later at 309-325. Ledger:4381 and claims.yaml:8557-8563 accurately avoid claiming that later boundedness proof."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.positive_scores_sSup: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:683-691 adds '(hB : S1Bdd a Γ)' and proves positive S1pos and, for every c>0, nonempty bounded scoreSet with positive supremum '=c^((4-alpha)/(3-alpha))*S1pos'. TeX integrated_unmasked_variational.tex:272-277,327-332 has exactly that deterministic supremum conclusion after boundedness. Ledger:4382 and claims.yaml:8564-8570 expressly disclose the supplied input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.alpha_lt_two: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:709-711 assumes 'HomogCovariance d alpha alpha0 Γ μ', using 'threshold' and 'alpha0_pos'. TeX integrated_spatial_occupation.tex:6-8 explicitly says the positive temporal exponent and threshold imply 'α<2'. Ledger:4383 and claims.yaml:8571-8577 faithfully identify a parameter-extraction auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.variational_unmasked_rate_paper: P:variational-unmasked-rate",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:739-759 assumes 'HomogCovariance', 'Γ≠0', 'Ψ∈CPos' and uses alpha0 directly. TeX integrated_unmasked_variational.tex:4-9 has nonzero H:homog, a=α₀ and the identical control class. Its uniform floor, C/(2√ε) Lipschitz bound and positive finite I match TeX:154-161. Ledger:4384 and claims.yaml:8578-8584 correctly exclude self-adjointness, E_s and λ=√(-E_s)."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.variational_positive_scores_paper: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:781-802 assumes only 'HomogCovariance' and 'Γ≠0', with a=alpha0, and universally quantifies controls. TeX integrated_unmasked_variational.tex:4,270-307 supplies the same standing assumptions and deterministic score ingredients. Ledger:4385 and claims.yaml:8585-8591 correctly state the input-free part and explicitly omit boundedness itself and Q₂≥S₂^pos."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalRate.variational_positive_scores_sSup_paper: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "Lean VariationalRate.lean:817-823 assumes 'HomogCovariance', 'Γ≠0', '(hB : S1Bdd alpha0 Γ)' and proves the positive finite supremum scaling for all c>0. TeX integrated_unmasked_variational.tex:272-277,327-332 has the same conclusion after its boundedness proof. Ledger:4386 and claims.yaml:8592-8598 accurately disclose S1Bdd and the missing stochastic Q₂ comparison."
+    },
+    {
+      "claim": "PARA-VariationalFloor",
+      "verdict": "PASS",
+      "reason": "Ledger:4023-4086 accurately describes all five foundations, explicit hypotheses, absence of supplied inputs, shared autocorrelation and the alternative floor and mollification routes. The decisive types are VariationalFloor.lean:411-418,466-472,522-524,546-549,649-650. Its TeX references match integrated_unmasked_variational.tex:150-155 and integrated_spatial_occupation.tex:88-91,112-116. The stronger common-trial/operator conclusions are not claimed."
+    },
+    {
+      "claim": "PARA-VariationalRate",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:4275-4347 matches VariationalRate.lean:337-356,628-649,683-691,739-823 and the cited TeX statements and proofs. It correctly separates supplied S1Bdd, integral-form cost, Rayleigh-defined rate and omitted operator/stochastic conclusions; used versus carried H:homog fields are accurate. Minor W1: the kernel comparison should be described as off-diagonal, as the Lean proof explicitly does."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "Structural comparison found each of the 75 target declarations exactly once in Index:395-400, under the same label or no-direct-label category as its section row. Route auxiliaries are unlabelled. Searching all manuscript LaTeX inputs located every label cited by the target sections exactly once; the corresponding statements and contextual proofs were read."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:854-902 correctly classifies positive-scores as inputs-supplied/weaker and unmasked-rate as same-assumptions/weaker. The scopes, claims, S1Bdd provenance and alternative floor route match the Lean types and TeX integrated_unmasked_variational.tex:98-164,270-337. docs/coverage-scope-tex.yaml:25-27 agrees with the unmasked-rate scope. Neither operator identification nor Q₂≥S₂^pos is claimed."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "The target-related references in Scope, the spatial sections, VariationalDilation and Not in Lean consistently distinguish proved integral/Rayleigh facts from missing operator and Gaussian identifications. In particular ledger:3920-3924,3938-3947,4840-4864 correctly locates the new genuine-integral and positivity results in VariationalRate and retains S1Bdd as supplied. SpatialOccupationCompleted.lean:73-81,145-161 confirms the discharged floor and retained supremum input."
+    },
+    {
+      "claim": "LEDGER-TOTALS",
+      "verdict": "PASS",
+      "reason": "Counting every per-module declaration row gives 1463 unique rows: 737 labelled and 726 unlabelled. Every one of the 1463 claims.yaml declaration identifiers has exactly one such row; its kinds total 1210 theorems and 253 definitions. These agree with ledger:450-451 and coverage.yaml:2. The target modules contribute 39 VariationalFloor and 36 VariationalRate rows."
+    },
+    {
+      "claim": "SCOPE-PROSE",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The 47 whole-result modules, 34 same-assumptions coverage rows and four full supplied-input results agree structurally. S1Bdd and its stochastic provenance are correctly distinguished; SpatialFourierBound.lean:562-578 and SpatialSmoothRatio.lean:681-696 substantiate the independent deterministic R₀ bound. Minor W2-W3 concern the umbrella phrase 'in full' and the terminology connecting helper status with route auxiliaries, not the mathematical coverage."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "W1 PARA-VariationalRate, diagonal convention: candidate/statement-ledger.md:4341-4343 says '|s-u|^(-alpha0) >= 1 on [0,1]^2'. Lean VariationalRate.lean:237-245 instead excludes 'u = s' almost everywhere before applying the inequality; Lean's negative rpow at zero is not the singular extended-real kernel. TeX integrated_compact_mean_family.tex:444-445 uses the same integral comparison informally on the unit square. Optional clarification: append 'off the diagonal, which is Lebesgue-null'. The proved envelope and uniform floor are unaffected.",
+      "W2 SCOPE-PROSE, umbrella wording: candidate/statement-ledger.md:48-50 says the conclusions of thirty-eight labelled results are formalized 'in full', although its subsequent qualifications and coverage.yaml explicitly identify narrower conclusions. For example Lean VariationalRate.lean:739-759 proves the Rayleigh-form conclusions, whereas TeX integrated_unmasked_variational.tex:100-103 additionally states self-adjointness and the spectral definition. Those exclusions are already clear at ledger:132-137 and coverage.yaml:887-902. Optional clarification: replace 'in full' with 'to the scopes specified below', retaining the correct 34-plus-four counts.",
+      "W3 SCOPE-PROSE, status terminology: candidate/statement-ledger.md:223-237 can be read as equating all proof-route helpers with status 'internal'. Some explicitly auxiliary declarations are reusable: VariationalFloor.lean:379-382 calls exists_radius_fn 'Auxiliary to the Lean proof route', while claims.yaml:8248-8254 assigns it 'reusable'; VariationalRate.rawCost_genuine is likewise unlabelled but reusable at claims.yaml:8480-8486. TeX integrated_spatial_occupation.tex:41 assumes compact z without a separately named radius lemma. Optional clarification: state that status is assigned per claims.yaml entry and need not coincide with the ledger's route-auxiliary category. This metadata terminology does not alter any theorem or supplied input."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI correspondence review, not human verification, proof-kernel verification, or a novelty audit. Compilation and standard-axiom status were accepted as stipulated.",
+    "Requirement A was completed. Partial-file coverage outside its required ranges is explicitly marked; unread portions of the supporting spatial modules, main manuscript and other previously reviewed ledger sections were not independently re-reviewed.",
+    "Global declaration totals were checked by structural parsing of all per-module tables and claims identifiers, not by re-reviewing the mathematics of previously reviewed rows.",
+    "Repository-wide searches were used for label existence and shared-name checks; they do not constitute complete scientific reading of every manuscript input or library module.",
+    "Historical equivalence with earlier manuscript revisions and the supervisor's byte-binding verification were not independently reconstructed."
+  ]
+}

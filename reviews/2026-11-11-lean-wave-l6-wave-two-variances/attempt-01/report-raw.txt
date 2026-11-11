@@ -1,0 +1,314 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-1176 complete.",
+    "candidate/statement-ledger.md:1-452,507-532,1480-1505,2600-2630,4503-4660,4870-4932 partial file; required Scope, Index by label, and WaveTwoVariances sections complete.",
+    "lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean:1-973 complete.",
+    "lean/StratonovichHAMSecondMoment/PhaseBessel.lean:1-271 complete.",
+    "lean/StratonovichHAMSecondMoment/FrequencyRow.lean:1-803 complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean:1-113 complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedContinuousWave.lean:95-124 partial; required wave-factor definitions complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean:95-118,320-328 partial; required bracket, frequencyPair, and C₀ definitions complete.",
+    "lean/StratonovichHAMSecondMoment/TimeCompletion.lean:340-363,486-550,552-577,648-712 partial; required temporal-space and inclusion definitions complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:110-138,250-275,350-405,455-530,588-617 partial; required Fourier normalization, measure definitions, growth and evenness declarations complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean:315-327 partial; required MGamma and CGamma definitions complete.",
+    "lean/claims.yaml:4616-4918,5130-5136,5347-5353,6772-6857,7721-8072 partial file; entries for all four required modules complete.",
+    "lean/coverage.yaml:1-982 complete.",
+    "docs/coverage-scope-tex.yaml:1-27 complete.",
+    "manuscript/notes/integrated_wave_variance.tex:1-531 complete.",
+    "manuscript/notes/integrated_covariance_foundation.tex:1-18,79-123,141-180,345-423 partial; relevant definitions and labelled temporal statements read in context.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:175-236 partial; H:homog and zero-covariance convention complete.",
+    "All manuscript/notes files searched for the exact labels cited by the reviewed section; matching label lines were read in the contextual ranges above."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.bFn_eq_sinc: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveTwoVariances.lean:113 states 'bFn r t = bracket r * (t * Real.sinc (r * t))' for arbitrary real r,t; statement-ledger.md:4610 and claims.yaml:7725 agree. TeX integrated_covariance_foundation.tex:381-382 defines 'b_r=⟨r⟩sin(rt)/r', 'b_0=t', but contains no sinc identity. The auxiliary mapping is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.continuous_bFn: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:123 asserts joint 'Continuous' on ℝ×ℝ without hypotheses; ledger:4611 and claims:7732 match. TeX integrated_wave_variance.tex:250-251 discusses the 'continuous sine quotient', not this joint-continuity theorem. No-direct-label classification is accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.rowWave: E:variance-normalized-kernel",
+      "verdict": "PASS",
+      "reason": "Lean:131 defines '![.b, .c]'; ledger:4612 and claims:7739 agree. TeX integrated_wave_variance.tex:229-237 uses row factors b_r,c_r with r=|ξ|. The disclosed 0/1 versus 1/2 indexing preserves the object."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.rowSign: E:variance-normalized-kernel",
+      "verdict": "PASS",
+      "reason": "Lean:133 defines '![-1, 1]'; ledger:4613 and claims:7746 match. TeX:235-236 has two negative first-row entries and positive second-row entries. Neither definition requires additional hypotheses."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.colWave: E:variance-normalized-kernel",
+      "verdict": "PASS",
+      "reason": "Lean:136 defines '![.c, .b]'; ledger:4614 and claims:7753 match. TeX:229-237 uses c_ρ,b_ρ in the two columns, with ρ=|η|."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.kernelEntry: E:variance-normalized-kernel",
+      "verdict": "PASS",
+      "reason": "Lean:143-145 divides the signed product by 'Real.sqrt (bracket ‖ξ‖ * bracket ‖η‖)'; ledger:4615 and claims:7760 match. TeX:229-237 has exactly '1/√(⟨ξ⟩⟨η⟩)' and the same frequency assignments. No normalization or sign discrepancy."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.maskedKernel: E:variance-kernel-time-bound",
+      "verdict": "PASS",
+      "reason": "Lean:149-150 uses '(Icc s (s+h)).indicator' of the complexified kernel; ledger:4616 and claims:7767 match. TeX:187-188 takes 'I=[t₀,t₀+h]⊂[0,T]' and TeX:391 uses '1_I K_ij'. Defining the function for unrestricted s,h is harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.continuous_eval: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:153 states joint continuity for 'W : Wave'; ledger:4617 and claims:7774 match. TeX integrated_covariance_foundation.tex:379-384 defines 'F_r∈{c_r,b_r}' but does not state this general joint-continuity lemma. Auxiliary classification is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.sqrt_bracket_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:159 states '0 < Real.sqrt (bracket ‖ξ‖ * bracket ‖η‖)' for arbitrary ξ,η; ledger:4618 and claims:7781 agree. TeX:10-11 defines '⟨ξ⟩=√(1+|ξ|²)', making positivity implicit, not a labelled result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.continuous_kernelEntry: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:164-165 asserts joint continuity in ((ξ,η),t), without interval assumptions; ledger:4619 and claims:7788 agree. TeX:407-408 states continuity into temporal L² and H_a, not this scalar joint-continuity assertion. Its auxiliary placement is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.memLp_maskedKernel: P:wave-two-variances",
+      "verdict": "PASS",
+      "reason": "Lean:178-179 gives 'MemLp ... 2 (volume.restrict (Icc 0 T))' for all real T,s,h; ledger:4620 and claims:7795 match. TeX:404-408 uses temporal L² membership and continuity under 'I⊂[0,T], 0<h≤1' from TeX:187-188. The explicitly disclosed extension to unrestricted intervals introduces no extra assumption."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.kernelLp: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:193-195 defines the 'toLp' class using proved membership; ledger:4621 and claims:7802 match. TeX:407 mentions 'L²(0,T)' but does not name this class constructor. It is correctly marked as an encoding auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.continuous_toLp_indicator: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:200-203 assumes 'hf : Continuous' and '∀x, MemLp (S.indicator (f x)) 2 ...'; ledger:4622 and claims:7809 state both. TeX:407 says the particular kernels are 'continuous into L²(0,T)', not this arbitrary-S theorem. No-direct-label mapping is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.kerH: E:variance-kernel-time-bound",
+      "verdict": "PASS",
+      "reason": "Lean:238-239 defines 'extL2 p (kernelLp p.T ...)' in Ha p; ledger:4623 and claims:7816 agree. TimeCompletion.lean:490-497 supplies '0<a<1, T>0'; TeX:6 and 169 supplies those parameters, and TeX:391 uses the corresponding H_a kernel. The concrete completion preserves the temporal object."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.continuous_kernelLp: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:242-243 states continuity for all T,s,h,i,j; ledger:4624 and claims:7823 match. TeX:407 states particular frequency-variable L² continuity under admissible intervals. The general class-valued implementation is accurately treated as an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.continuous_kerH: P:wave-two-variances",
+      "verdict": "PASS",
+      "reason": "Lean:256-258 asserts 'Continuous ... kerH' for every TimeParams and real s,h; ledger:4625 and claims:7830 match. TeX:407-408 says 'continuous into L²(0,T) ... hence into H_a'. The stronger interval generality and implementation of strong measurability are disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.maskedKernel_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:262-265 factors the masked kernel as '(rowSign i / sqrt(...)) • waveFn'; ledger:4626 and claims:7837 match. TeX:386-388 describes a product with the same inverse-square-root factor and possible sign, but has no corresponding representation theorem. Auxiliary mapping is accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.rowSign_sq: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:274 states 'rowSign i ^ 2 = 1' for i∈Fin 2; ledger:4627 and claims:7844 agree. TeX:387-388 mentions a 'possible minus sign', without a labelled sign-square lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.kerH_eq_smul_emb: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:279-282 requires 'hw : waveFn ... ∈ L2fun p.T' and identifies the corresponding scaled emb element; ledger:4628 and claims:7851 retain that hypothesis. TeX:386-389 uses the normalized product but does not state this completion-representation identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.norm_kerH_sq_le: E:variance-kernel-time-bound",
+      "verdict": "PASS",
+      "reason": "Lean:296-299 assumes '0<h', 'h≤1', '0≤s', 's+h≤p.T' and proves C₁(a)(1+T)^4 h^(2-a) rowKernel. Ledger:4629 and claims:7858 agree. TeX:187-188 has the same interval conditions and TeX:390-393 exactly the same bound. Division by ⟨ξ⟩⟨η⟩ is correctly implemented."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.kernelEntry_matrix: E:variance-normalized-kernel",
+      "verdict": "PASS",
+      "reason": "Lean:323-327 gives all four entries '-bc/D,-bb/D,cc/D,cb/D'; ledger:4630 and claims:7865 match. TeX:233-237 gives precisely this matrix with D=√(⟨ξ⟩⟨η⟩). The bFn zero-frequency convention agrees with TeX:326-329."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.norm_sq_two_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:332-334 assumes a complex inner product space and proves '‖∑c_i x_i‖²≤2∑‖c_i‖²‖x_i‖²'; ledger:4631 and claims:7872 agree. TeX:420-425 applies 'Cauchy–Schwarz over the two output components'; the standalone abstract lemma is appropriately auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.sum_norm_sq_le: P:wave-two-variances",
+      "verdict": "PASS",
+      "reason": "Lean:345-347 assumes '∀i j, ‖k i j‖²≤M' and proves the bound with constant 4; ledger:4632 and claims:7879 match. TeX:423-427 applies the identical two-component calculation with M=A_T h^(2-a)Φ_h. The abstract specialization is faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.rowKernel_le_two: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:362-363 requires 'a<1' and allows arbitrary h,ξ,η; ledger:4633 and claims:7886 match. TeX:84-85 says both oscillatory bracket powers are 'at most one, since a−1<0'; together with TeX:10-11 this implies the auxiliary bound, not a separately labelled statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.rowKernel_symm: P:wave-two-variances",
+      "verdict": "PASS",
+      "reason": "Lean:372 states symmetry for arbitrary a,h,ξ,η; ledger:4634 and claims:7893 match. TeX:448 explicitly invokes 'symmetry of Φ_h'. Its definition at TeX:34-37 and the even bracket give the same identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.AT: E:variance-kernel-time-bound",
+      "verdict": "PASS",
+      "reason": "Lean:379 defines 'C₁ p.a * (1+p.T)^4'; ledger:4635 and claims:7900 agree. TeX:393 defines 'A_T=C₁(a)(1+T)^4'. TimeParams supplies the standing temporal restrictions rather than an additional model assumption."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.AT_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:382 states '0≤AT p' for TimeParams; ledger:4636 and claims:7907 match. TeX:393 defines A_T, while integrated_covariance_foundation.tex:388 gives C₁(a)=4·3^(1-a)C₀(a). Positivity under 0<a<1 is an implicit constant property, correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.coef: E:variance-normalized-covariance",
+      "verdict": "PASS",
+      "reason": "Lean:392-393 defines the H_a Bochner integral with 'U j η * conj (V i (η+l))' and kerH at '(η+l),η'; ledger:4637 and claims:7914 agree. TeX:242-245 contains exactly that inner integral. No covariance inequality is falsely claimed for this definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.memLp_top_kerH: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:397-399 assumes the admissible interval and 'hf : Continuous f', concluding MemLp ∞ along f; ledger:4638 and claims:7921 agree. TeX:404-410 uses bounded wave factors and strong measurability, but does not state this arbitrary-continuous-path theorem. Auxiliary mapping is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.input_fixed: P:wave-two-variances",
+      "verdict": "PASS",
+      "reason": "Lean:417-425 assumes the interval conditions, 'IsOrthonormalL2 volume U', and '∀i, MemLp (V i) 2 volume'; ledger:4639 and claims:7928 match. TeX:413 fixes 'V=Jz', 'U_k=Je_k'; TeX:420-430 gives the same Bessel estimate and ξ=η+λ change. The L² generalization and lower-integral encoding are disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.output_fixed: P:wave-two-variances",
+      "verdict": "PASS",
+      "reason": "Lean:476-484 assumes componentwise L² for U and orthonormality for V, with the same interval restrictions; ledger:4640 and claims:7935 agree. TeX:434-446 fixes 'U=Jz', 'V_k=Je_k' and derives the same 4A_T h^(2-a) integral. Returning to η coordinates is equivalent and documented."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.sum_lintegral_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:533-534 quantifies over arbitrary ENNReal-valued functions without measurability; ledger:4641 and claims:7942 match. TeX:410-411 calls later λ integrals 'nonnegative', and TeX:430 invokes Tonelli, but does not state this lower-integral superadditivity lemma. Auxiliary classification is accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.total_of_fixed: no direct label",
+      "verdict": "FAIL",
+      "reason": "W1: Lean:548-555 explicitly requires '(c : ℝ) (hc : 0 ≤ c)'. Both statement-ledger.md:4642 and claims.yaml:7949 omit c≥0 while retaining the other abstract hypotheses. TeX:426 and 429-432 uses the nonnegative multiplier '4A_T h^(2-a)', not an arbitrary signed c. The no-direct-label mapping is correct, but fidelity fails because the abstract summary drops a necessary hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.isLocallyFinite_of_growth: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:586-588 assumes '∀y r, 0<r → ν(ball y r)≤ofReal(C*r^α)' and concludes local finiteness; ledger:4643 and claims:7956 match. TeX:24 assumes ν Radon and TeX:25-28 gives growth; deriving local finiteness instead is accurately identified as a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.continuous_rowKernel₂: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:594-595 asserts joint rowKernel continuity for every a,h; ledger:4644 and claims:7963 match. TeX:34-37 defines Φ_h from continuous brackets but has no separately labelled joint-continuity assertion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.integrable_weight: P:wave-two-variances",
+      "verdict": "PASS",
+      "reason": "Lean:609-611 assumes '0≤γ' and componentwise MemLp 2, concluding integrability of 'bracket ‖ξ‖ ^ (-(2*γ)) * ∑‖V_i ξ‖²'; ledger:4645 and claims:7970 match. TeX:7-8 has γ>0 and TeX:431 identifies the corresponding weighted L² norm. The weaker nonnegative-γ hypothesis is harmless and disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.InputBound: E:wave-input-variance",
+      "verdict": "PASS",
+      "reason": "Lean:628-635 quantifies over every finite L²-orthonormal U and L² V, including spatial and weighted integrability and the spectral lower-integral bound; ledger:4646 and claims:7977 agree. TeX:374-376 bounds actual variances, using TeX:240-246 and 413-432. The ledger explicitly limits this definition to the spectral-side form, avoiding an identification with actual noise."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.OutputBound: E:wave-output-variance",
+      "verdict": "PASS",
+      "reason": "Lean:641-648 fixes L² U and quantifies over finite L²-orthonormal V; ledger:4647 and claims:7984 match all three conjuncts. TeX:377-379 and 434-451 give this direction after the normalized-covariance inequality. The spectral-side qualification correctly distinguishes the definition from the stochastic conclusion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.wave_two_variances: P:wave-two-variances",
+      "verdict": "PASS",
+      "reason": "Lean:658-665 assumes 'a<1, α+a<2, 0≤γ, 2γ≤1, α+2γ<2' and puts ∃K before p,d,ν,C,s,h; ledger:4648 and claims:7991 agree. TeX:7-8 uses '0<γ<min(1/2,(2−α)/2)', TeX:395-400 supplies ν_R growth, and TeX:432 gives '4A_TKC_ν'. General ν, relaxed numerical conditions, and evenness only for OutputBound are accurately disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.InputBound.mono: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:742-743 assumes 'M≤M′' and InputBound at M, concluding it at M′; ledger:4649 and claims:7998 match. TeX:381-382 permits replacement by a larger time-exponent bound but contains no standalone monotonicity theorem."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.OutputBound.mono: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:753-754 has exactly the analogous OutputBound monotonicity hypotheses; ledger:4650 and claims:8005 agree. TeX:381-382 supplies the application context, not a direct labelled abstract lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.wave_two_variances_beta: P:wave-two-variances",
+      "verdict": "PASS",
+      "reason": "Lean:769-775 adds '2β<2−a' and '2β<3−a−α' with ∃Kβ before the remaining parameters; ledger:4651 and claims:8012 match. TeX:143-146 additionally imposes β>1/2, and TeX:381-382,453-455 gives h^(2β). The general theorem’s broader range is explicit; strict upper bounds and constant 4 are preserved."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.Cnu: E:variance-actual-growth-constant",
+      "verdict": "PASS",
+      "reason": "Lean:793-794 defines 'cd d ^ 2 * Lz ζ ^ 2 * CGamma Γ'; ledger:4652 and claims:8019 agree. TeX:205-208 defines 'L_ζ=‖ζ̂‖₁, C_ν=c_d²L_ζ²C_Γ'. The imported transform uses the same unitary c_d normalization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.Cnu_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:797 proves nonnegativity for every Γ and real Schwartz ζ; ledger:4653 and claims:8026 match. TeX:205-210 uses a nonnegative growth constant under the model assumptions, but does not state this unrestricted auxiliary theorem."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.nu_growth: E:variance-actual-growth-constant",
+      "verdict": "PASS",
+      "reason": "Lean:805-808 assumes HomogCovariance, real Schwartz ζ, '0<R', '0<r', and proves the open-ball Cnu growth bound; ledger:4654 and claims:8033 agree. TeX:205-210 gives this constant and growth uniformly in R. Dropping Γ≠0 and ζ≠0 is a disclosed harmless extension; the specialized manuscript mask satisfies the assumptions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.wave_two_variances_core_paper: P:wave-two-variances",
+      "verdict": "PASS",
+      "reason": "Lean:822-831 carries HomogCovariance, '0<γ<min(1/2,(2−α)/2)', p.a=alpha0, and all four mask properties; ledger:4655 and claims:8040 match. TeX:6-8,169,185-188 supplies these assumptions, and TeX:432,451 gives the common constant '4A_TKC_ν'. Uniformity in R,I,family is preserved; evenness of ν_R is derived."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.wave_two_variances_core_beta_paper: P:wave-two-variances",
+      "verdict": "PASS",
+      "reason": "Lean:843-853 adds '1/2<β' and 'β<min(1−alpha0/2,(3−alpha0−alpha)/2)'; ledger:4656 and claims:8047 agree. TeX:143-146 has exactly this strict range and TeX:381-382,453-455 gives both h^(2β) directions. Unused lower-β and mask hypotheses are accurately disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.sum_le_of_ofReal: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:864-865 requires '0≤A' and '∑ofReal(x_k)≤ofReal A', concluding the real sum bound; ledger:4657 and claims:8054 retain both hypotheses. TeX:374-379 uses ordinary nonnegative variances; no ENNReal transfer lemma appears there. Auxiliary classification is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.orthonormal_J: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:875-879 assumes componentwise L², '∫∑Jz·conj(Jw)=inner ℂ w z', and an orthonormal e; ledger:4658 and claims:8061 agree. TeX:171-176 uses first-slot-linear products and a unitary J; TeX:413 takes U_k=Je_k. The argument reversal matches conventions, and isometry is weaker than unitarity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveTwoVariances.wave_two_variances_paper: P:wave-two-variances",
+      "verdict": "PASS",
+      "reason": "Lean:903-927 has the manuscript-wrapper assumptions and inputs hJL2,hJ,hnormSG,hlink; ledger:4659 and claims:8068 match both uniform conclusions and β range. TeX:240-246 gives 'E|ℓ_R|²≤∫‖coef‖²dν_R', exactly hlink after specialization; TeX:171-176 and 431 imply the J and norm inputs. The abstract P,var boundary is explicitly disclosed, and no supplied input is stronger than its source."
+    },
+    {
+      "claim": "PARA-WaveTwoVariances",
+      "verdict": "PASS",
+      "reason": "statement-ledger.md:4505-4606 cites the correct manuscript files, labels and ranges. Its concrete H_a, generalized ν, abstract P,var, three grouped inputs, unused mask/β hypotheses, lower-integral route, and exclusions match Lean:658-665,769-775,822-927 and TeX:368-458. The paragraph does not turn the supplied covariance link or unconstructed Sobolev/noise objects into proved constructions."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "statement-ledger.md:387-394 lists all 50 target declarations exactly once, under the same labels as rows 4610-4659; the 24 no-direct-label declarations occupy the auxiliary row. Exact-label searches across the manuscript found every label cited by the reviewed section, with the relevant definitions and statements in integrated_wave_variance.tex, integrated_covariance_foundation.tex and H:homog in the main manuscript."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "lean/coverage.yaml:903-933 correctly uses 'class: inputs-supplied' and 'conclusion: weaker', distinguishes the input-free spectral core from abstract var, identifies hlink,hJL2/hJ,hnormSG, and lists existing matching claims. The note preserves 4A_TKC_ν, both directions, uniformity, and proved kernel continuity. The row does not depend on the incorrectly summarized auxiliary total_of_fixed."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "The relevant Scope text at ledger:167-174, FrequencyRow reference at 1488-1494, PhaseBessel reference at 2610-2614, and exclusions at 4888-4901 consistently distinguish the spectral estimates, supplied stochastic link, and unconstructed columns/Sobolev realization. DimensionalMatrix:507-531 correctly leaves its coordinate-to-Fourier interpretation outside that finite calculation. No contradictory target cross-reference was found."
+    }
+  ],
+  "findings": {
+    "fatal": [
+      "W1 — total_of_fixed is misstated in candidate/statement-ledger.md:4642 and lean/claims.yaml:7949: both omit the hypothesis c≥0. Lean explicitly requires '(c : ℝ) (hc : 0 ≤ c)' at lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean:551. The manuscript application uses the nonnegative factor '4A_T h^{2-a}' at manuscript/notes/integrated_wave_variance.tex:426-432; it does not justify arbitrary signed c. This omission is substantive because Ψ is not assumed nonnegative: with c=-1, Ψ=-1, R=0 and positive integrable S, the clipped row bound can hold while the claimed conclusion fails for nonzero x. Exact fix: add 'c ≥ 0' to both summaries. The Lean theorem and its use in the main variance bounds need no change."
+    ],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [
+    "Add the explicit hypothesis c ≥ 0 to the total_of_fixed row in candidate/statement-ledger.md:4642 and its summary in lean/claims.yaml:7949."
+  ],
+  "limitations": [
+    "Requirement A was completed. Partial-file coverage concerns portions outside the required sections, entries, and declarations; unrelated ledger rows and manuscript results were not re-reviewed.",
+    "The compilation and standard-axiom assertions were accepted as stipulated; no build or independent proof-correctness audit was performed.",
+    "The main variance statements, constants, ranges, normalization, supplied inputs and index correspondence passed this review. The overall failure is confined to the necessary-hypothesis omission in the auxiliary summary.",
+    "This AI correspondence review is not human verification or a novelty audit."
+  ]
+}

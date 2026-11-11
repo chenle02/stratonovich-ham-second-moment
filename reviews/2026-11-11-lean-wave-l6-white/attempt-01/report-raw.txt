@@ -1,0 +1,305 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json: lines 1-1177, complete.",
+    "lean/StratonovichHAMSecondMoment/WhiteRelativeWidth.lean: lines 1-221, complete.",
+    "lean/StratonovichHAMSecondMoment/WhiteClockLaplace.lean: lines 1-454, complete.",
+    "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean: lines 1-647, complete.",
+    "candidate/statement-ledger.md: lines 1-452, 478-494, 3447-3488, 4661-4932; complete required Scope, Index, target sections and relevant cross-reference contexts; partial file outside that scope. Full-file heading/reference searches also read matching lines.",
+    "lean/claims.yaml: lines 846-1150 and 9963-10307; complete entries for the three required modules; partial file outside those entries.",
+    "lean/coverage.yaml: lines 1-982, complete.",
+    "docs/coverage-scope-tex.yaml: lines 1-27, complete.",
+    "manuscript/notes/integrated_white_evaluation.tex: lines 1-170, complete.",
+    "manuscript/notes/integrated_temporal_equilibrium.tex: lines 1-95, complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: lines 180-224 and 7548-7630; complete required lines 7560-7630 and supplemental standing-assumption contexts; partial file outside these ranges.",
+    "Label searches across all manuscript/**/*.tex files: matching definitions of all twelve labels cited by the target sections were read; no complete-file coverage is claimed for search-only inputs."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.boundK0: E:white-moment-bounds",
+      "verdict": "PASS",
+      "reason": "WhiteRelativeWidth.lean:64 defines, without hypotheses, '2 ^ a / (1 - a)'; integrated_white_evaluation.tex:4-5,106 gives '0 < a < 1' and 'K_0(a)=2^a/(1-a)'. The total real-expression definition agrees on that range. Ledger:4787 and claims.yaml:9967 accurately describe it."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.boundMass: E:white-moment-bounds",
+      "verdict": "PASS",
+      "reason": "WhiteRelativeWidth.lean:68 defines the Gamma quotient without hypotheses; integrated_white_evaluation.tex:5,107-108 uses '0 < a < 1' and the identical quotient. Ledger:4788 and claims.yaml:9974 faithfully identify the displayed expression, not a stochastic conclusion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.lowerFormula: E:white-moment-bounds",
+      "verdict": "PASS",
+      "reason": "WhiteRelativeWidth.lean:71 defines '2 / 3 * sqrt (c / boundMass a)' without hypotheses; integrated_white_evaluation.tex:4-5,104 uses 'c >= 0', '0 < a < 1' and the same lower formula. Ledger:4789 and claims.yaml:9981 explicitly exclude the unproved inequality involving C_2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.upperFormula: E:white-moment-bounds",
+      "verdict": "PASS",
+      "reason": "WhiteRelativeWidth.lean:74 defines '2 / 3 * sqrt (c * boundK0 a)' without hypotheses; integrated_white_evaluation.tex:4-5,105 uses 'c >= 0', '0 < a < 1' and that expression. Ledger:4790 and claims.yaml:9988 correctly restrict the claim to the formula."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.widthConst: C:white-relative-width",
+      "verdict": "PASS",
+      "reason": "WhiteRelativeWidth.lean:78 defines 'sqrt pi / (2 * Gamma (5 / 4) ^ 2)' without hypotheses. Under TeX's 'c > 0', '0 < a < 1' (integrated_white_evaluation.tex:5,132), line 135 places precisely this constant under an outer square root. Ledger:4791 and claims.yaml:9995 preserve that distinction."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.boundK0_pos: C:white-relative-width",
+      "verdict": "PASS",
+      "reason": "Lean's hypothesis is 'ha1 : a < 1' (WhiteRelativeWidth.lean:81); TeX assumes '0 < a < 1' (integrated_white_evaluation.tex:5), with K_0 defined at 106 and positivity used in the corollary proof at 156-157. The harmless broader domain is explicit in ledger:4792 and claims.yaml:10002."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.boundMass_pos: C:white-relative-width",
+      "verdict": "PASS",
+      "reason": "Lean assumes '0 < a' and 'a < 1' (WhiteRelativeWidth.lean:86), matching TeX's '0 < a < 1' (integrated_white_evaluation.tex:5). TeX:124-125 states positivity of the Gamma factors, also used at 156-157. Ledger:4793 and claims.yaml:10009 faithfully state the resulting mass positivity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.boundMass_eq_mass: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean assumes '0 < a', 'a < 1' (WhiteRelativeWidth.lean:95-97); TeX assumes '0 < a < 1' and defines M_a as the density integral with the same quotient (integrated_temporal_equilibrium.tex:38,46-49). TemporalEquilibrium.lean:480-484,593-595 supplies the identification. Ledger:4794 and claims.yaml:10016 correctly present this as a bridge, not a separate corollary statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.gamma_one_add_dup: C:white-relative-width",
+      "verdict": "PASS",
+      "reason": "Lean quantifies over '(a : R)' without a sign hypothesis (WhiteRelativeWidth.lean:102-103); TeX carries '0 < a < 1' (integrated_white_evaluation.tex:5) and displays the identical duplication formula at 143-144. Ledger:4795 and claims.yaml:10023 explicitly disclose the broader Lean domain; the required positive-argument specialization matches."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.gamma_three_sub_rec: C:white-relative-width",
+      "verdict": "PASS",
+      "reason": "Lean assumes 'a < 1' (WhiteRelativeWidth.lean:111-112); TeX carries '0 < a < 1' and displays '(1-a)Gamma((1-a)/2)=2Gamma((3-a)/2)' (integrated_white_evaluation.tex:5,146). Ledger:4796 and claims.yaml:10030 accurately state the harmless generalization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.boundK0_mul_boundMass: C:white-relative-width",
+      "verdict": "PASS",
+      "reason": "Lean's '0 < a', 'a < 1' (WhiteRelativeWidth.lean:119-120) matches TeX's '0 < a < 1' (integrated_white_evaluation.tex:5). The denominator '2 Gamma(1+a/2) Gamma((3-a)/2)' agrees exactly with TeX:150-151. Ledger:4797 and claims.yaml:10037 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.gamma_mid_sq_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean assumes '0 < x', '0 < y' and proves midpoint Gamma log-convexity (WhiteRelativeWidth.lean:139-151). TeX instead takes 'x,y > 0', 'x+y=5/2' and applies Cauchy-Schwarz (integrated_white_evaluation.tex:153-157). Ledger:4798 and claims.yaml:10044 correctly identify the general lemma as a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.gamma_five_quarters_sq_le: C:white-relative-width",
+      "verdict": "PASS",
+      "reason": "Lean assumes '0 < a', 'a < 1' (WhiteRelativeWidth.lean:157-160); TeX carries '0 < a < 1' and chooses 'x=1+a/2', 'y=(3-a)/2' (integrated_white_evaluation.tex:5,153-157). Both give Gamma(5/4)^2 <= Gamma(x)Gamma(y). Ledger:4799 and claims.yaml:10051 match; the different proof route is disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.boundK0_mul_boundMass_le: C:white-relative-width",
+      "verdict": "PASS",
+      "reason": "Lean assumes '0 < a', 'a < 1' (WhiteRelativeWidth.lean:164-165), as does TeX (integrated_white_evaluation.tex:5). Its unsquared-root bound is exactly the positive inversion preceding TeX's increasing-square-root step at 156-157 and display at 134-135. Ledger:4800 and claims.yaml:10058 preserve the constant."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.relative_width_le: C:white-relative-width",
+      "verdict": "PASS",
+      "reason": "Lean's hypotheses '0 < a', 'a < 1' and conclusion 'sqrt (boundK0 a * boundMass a) <= sqrt widthConst' (WhiteRelativeWidth.lean:174-176) match integrated_white_evaluation.tex:5,134-135. The c > 0 assumption is needed only to interpret this as a quotient. Ledger:4801 and claims.yaml:10065 are accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.relative_width_eq_half: C:white-relative-width",
+      "verdict": "PASS",
+      "reason": "WhiteRelativeWidth.lean:180-185 has no free-parameter hypothesis: it evaluates at 'a = 1/2'. TeX explicitly claims 'with equality at a = 1/2' (integrated_white_evaluation.tex:137,157-158), inside its standing range. Ledger:4802 and claims.yaml:10072 state exactly that equality, not uniqueness of the equality case."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.boundK0_mul_boundMass_symm: C:white-relative-width",
+      "verdict": "PASS",
+      "reason": "Lean assumes '0 < a', 'a < 1' and exchanges a with 1-a in the product (WhiteRelativeWidth.lean:189-193). TeX carries the same range and says replacing a by 1-a exchanges the Gamma arguments (integrated_white_evaluation.tex:5,158-159). Ledger:4803 and claims.yaml:10079 correctly concern only the bound-formula ratio."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.ratio_eq: C:white-relative-width",
+      "verdict": "PASS",
+      "reason": "Lean assumes '0 < c', '0 < a', 'a < 1' (WhiteRelativeWidth.lean:197-198); TeX assumes 'c > 0' with standing '0 < a < 1' (integrated_white_evaluation.tex:5,132-134). Both identify upper/lower with sqrt(K_0 M_a). Ledger:4804 and claims.yaml:10086 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteRelativeWidth.white_relative_width_paper: C:white-relative-width",
+      "verdict": "PASS",
+      "reason": "Lean's '0 < c', '0 < a', 'a < 1' (WhiteRelativeWidth.lean:215-219) matches TeX:5,132. Its conjunction proves the ratio identity, exact bound and equality when 'a = 1/2', precisely TeX:132-137. Ledger:4805 and claims.yaml:10093 do not claim the separate C_2 bracket or use P:white-spatial-energy."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.laplace_id: L:white-clock-laplace",
+      "verdict": "PASS",
+      "reason": "Lean assumes 'hc : 0 < c' and proves integrability and integral '(c ^ 2)^(-1)' (WhiteClockLaplace.lean:74-76). TeX takes c=theta_1+theta_2 with 'theta_1,theta_2>0' and displays this integral (notes_stratonovich_ham_second_moment.tex:7584,7610-7611). Ledger:4711 and claims.yaml:10101 correctly map it to a TeX proof step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.laplace_rpow: L:white-clock-laplace",
+      "verdict": "PASS",
+      "reason": "Lean assumes 'a < 1', '0 < theta' (WhiteClockLaplace.lean:91-93); TeX carries '0<a<1', 'theta_i>0' and displays integral=Gamma(1-a)theta_i^(a-1) (notes_stratonovich_ham_second_moment.tex:7568,7584,7613-7615). Ledger:4712 and claims.yaml:10108 accurately state the broader elementary integral, genuinely a TeX proof step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.volume_restrict_quadrant: no direct label",
+      "verdict": "PASS",
+      "reason": "WhiteClockLaplace.lean:106-109 has no hypotheses and identifies restricted product Lebesgue measure. TeX's '0<a<1', positive damping and Tonelli separation appear at notes_stratonovich_ham_second_moment.tex:7568,7584,7615, but not this general measure identity. Ledger:4713 and claims.yaml:10115 faithfully describe a no-direct-label implementation auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.quadrant_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean assumes 'IntegrableOn f (Ioi 0)' and 'IntegrableOn g (Ioi 0)' (WhiteClockLaplace.lean:114-117), not positivity. TeX separates its particular nonnegative integrands by Tonelli (notes_stratonovich_ham_second_moment.tex:7607-7615). Ledger:4714 and claims.yaml:10122 accurately state the general product-integral auxiliary without claiming a labelled TeX theorem."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.quadrant_iterated: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean assumes 'hF : IntegrableOn F (Ioi 0 × Ioi 0)' and puts the first variable in the inner integral (WhiteClockLaplace.lean:128-133). TeX uses the orders 'ds dt' and 'dr_1 dr_2' (notes_stratonovich_ham_second_moment.tex:7580,7594). Ledger:4715 and claims.yaml:10129 correctly classify the general Fubini bridge as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.crossIntegrand: E:white-cross-clock-transform",
+      "verdict": "PASS",
+      "reason": "Lean defines a total real expression without hypotheses (WhiteClockLaplace.lean:139-140); TeX uses '0<a<1', 'theta_1,theta_2>0' and the identical integrand (notes_stratonovich_ham_second_moment.tex:7568,7579-7584). Ledger:4716 and claims.yaml:10136 agree. The harmless null-diagonal convention is explicitly disclosed at ledger:4683-4685."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.crossValue: E:white-cross-clock-transform",
+      "verdict": "PASS",
+      "reason": "WhiteClockLaplace.lean:144-145 defines the RHS without hypotheses; TeX specifies '0<a<1', 'theta_1,theta_2>0' (notes_stratonovich_ham_second_moment.tex:7568,7584). Its RHS at 7581-7583 is identical, including '2(theta_1+theta_2)^2'. Ledger:4717 and claims.yaml:10143 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.upperHalf: no direct label",
+      "verdict": "PASS",
+      "reason": "WhiteClockLaplace.lean:149 defines '{p | 0 < p.2 and p.2 < p.1}' without parameter hypotheses. TeX's split is 's=t+v', 'v>0' (notes_stratonovich_ham_second_moment.tex:7607). Ledger:4718 and claims.yaml:10150 correctly name the implementation region without attributing a separate labelled definition to TeX."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.lowerHalf: no direct label",
+      "verdict": "PASS",
+      "reason": "WhiteClockLaplace.lean:153 defines '{p | 0 < p.1 and p.1 < p.2}' without parameter hypotheses. TeX's other region is 't=s+v', 'v>0' (notes_stratonovich_ham_second_moment.tex:7607). Ledger:4719 and claims.yaml:10157 accurately describe this no-direct-label implementation definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.measurableSet_upperHalf: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean has no hypotheses and concludes 'MeasurableSet upperHalf' (WhiteClockLaplace.lean:156-158). TeX splits at 's=t+v', 'v>0' (notes_stratonovich_ham_second_moment.tex:7607), without separately stating measurability. Ledger:4720 and claims.yaml:10164 accurately identify the auxiliary fact."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.measurableSet_lowerHalf: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean has no hypotheses and concludes 'MeasurableSet lowerHalf' (WhiteClockLaplace.lean:161-163). TeX uses 't=s+v', 'v>0' (notes_stratonovich_ham_second_moment.tex:7607), without this separate assertion. Ledger:4721 and claims.yaml:10171 faithfully classify it as a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.crossIntegrand_swap: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean quantifies over all real 'a theta_1 theta_2' and all p, without inequalities (WhiteClockLaplace.lean:166-171). TeX carries '0<a<1', positive damping and uses the two symmetric regions (notes_stratonovich_ham_second_moment.tex:7568,7584,7607). Ledger:4722 and claims.yaml:10178 accurately describe this general identity as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.shear_measurePreserving: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean has no hypotheses and proves 'MeasurePreserving (v,t -> (v+t,t)) volume volume' (WhiteClockLaplace.lean:175-178). TeX substitutes 's=t+v', 'v>0' (notes_stratonovich_ham_second_moment.tex:7607), not a general measure theorem. Ledger:4723 and claims.yaml:10185 state the implementation fact accurately."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.shear_measurableEmbedding: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean has no hypotheses and proves the shear is a 'MeasurableEmbedding' (WhiteClockLaplace.lean:182-188). TeX's 's=t+v', 'v>0' is the corresponding substitution (notes_stratonovich_ham_second_moment.tex:7607), without this auxiliary statement. Ledger:4724 and claims.yaml:10192 match the Lean type."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.swap_measurableEmbedding: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean has no hypotheses and proves 'MeasurableEmbedding Prod.swap' on R² (WhiteClockLaplace.lean:191-194). TeX carries its standing range and treats both 's=t+v' and 't=s+v' (notes_stratonovich_ham_second_moment.tex:7568,7607), without this general embedding theorem. Ledger:4725 and claims.yaml:10199 correctly give no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.shear_preimage_upperHalf: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean has no hypotheses and identifies the shear preimage with 'Ioi 0 × Ioi 0' (WhiteClockLaplace.lean:198-205). TeX's relevant conditions are 's=t+v', 'v>0', with positive integration variables (notes_stratonovich_ham_second_moment.tex:7578,7607). Ledger:4726 and claims.yaml:10206 faithfully describe the auxiliary set identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.crossIntegrand_shear: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean assumes only 'z ∈ Ioi 0 × Ioi 0', allowing arbitrary real parameters (WhiteClockLaplace.lean:209-217). TeX uses positive t,v, '0<a<1' and positive damping in the split/product computation (notes_stratonovich_ham_second_moment.tex:7568,7584,7607-7614). Ledger:4727 and claims.yaml:10213 accurately state the general algebraic auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.cross_upperHalf: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean assumes 'a < 1', '0 < theta_1', '0 < theta_2' (WhiteClockLaplace.lean:222-243); TeX carries '0<a<1', positive damping and computes one half as half a product (notes_stratonovich_ham_second_moment.tex:7568,7584,7607-7614). Ledger:4728 and claims.yaml:10220 faithfully state the broader half-region result as an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.cross_lowerHalf: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean assumes 'a < 1', '0 < theta_1', '0 < theta_2' (WhiteClockLaplace.lean:247-263); TeX assumes '0<a<1', positive damping and the other half of the split (notes_stratonovich_ham_second_moment.tex:7568,7584,7607-7614). Ledger:4729 and claims.yaml:10227 correctly give the theta_2 contribution and auxiliary classification."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.crossIntegrand_split: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean assumes '0 < a' and positive quadrant coordinates, but no damping signs (WhiteClockLaplace.lean:268-285). TeX carries '0<a<1', positive damping and splits off the diagonal (notes_stratonovich_ham_second_moment.tex:7568,7584,7607). Ledger:4730 and claims.yaml:10234 disclose the pointwise zero-diagonal convention; the auxiliary makes no false TeX pointwise claim."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.cross_transform: E:white-cross-clock-transform",
+      "verdict": "PASS",
+      "reason": "Lean assumes '0 < a', 'a < 1', '0 < theta_1', '0 < theta_2' (WhiteClockLaplace.lean:290-293), matching TeX's '0<a<1', 'theta_1,theta_2>0' (notes_stratonovich_ham_second_moment.tex:7568,7584). Ledger:4731 and claims.yaml:10241 correctly state integrability and the quadrant version of TeX:7578-7583."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.cross_transform_iterated: E:white-cross-clock-transform",
+      "verdict": "PASS",
+      "reason": "Lean's '0 < a', 'a < 1', positive theta_1,theta_2 (WhiteClockLaplace.lean:314-320) matches TeX:7568,7584. Its inner s integral and outer t integral reproduce 'ds dt' at notes_stratonovich_ham_second_moment.tex:7578-7583. Ledger:4732 and claims.yaml:10248 retain integrability and the exact value."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.crossValue_diag: L:white-clock-laplace",
+      "verdict": "PASS",
+      "reason": "Lean assumes only '0 < theta', with arbitrary real a (WhiteClockLaplace.lean:324-331); TeX carries '0<a<1' and positive damping (notes_stratonovich_ham_second_moment.tex:7568,7584,7587-7588). Ledger:4733 and claims.yaml:10255 explicitly describe an algebraic crossValue identity, not convergence outside the manuscript range. The factor 4 and exponent 3-a match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.selfIntegrand: E:white-self-clock-transform",
+      "verdict": "PASS",
+      "reason": "Lean defines the total real expression without hypotheses (WhiteClockLaplace.lean:337-338). TeX carries '0<a<1' and uses 'independent gap damping' with integrand exp(-eta_1 r_1-eta_2 r_2)r_2^(-a)r_1/2 (notes_stratonovich_ham_second_moment.tex:7568,7589-7594). Ledger:4734 and claims.yaml:10262 reproduce it exactly."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.selfValue: E:white-self-clock-transform",
+      "verdict": "PASS",
+      "reason": "Lean defines 'Gamma (1-a) / (2 * eta_1^2 * eta_2^(1-a))' without hypotheses (WhiteClockLaplace.lean:342). TeX carries '0<a<1' and implicit positive gap damping, with the same RHS (notes_stratonovich_ham_second_moment.tex:7568,7589,7595-7596). Ledger:4735 and claims.yaml:10269 preserve both eta exponents."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.self_transform: E:white-self-clock-transform",
+      "verdict": "PASS",
+      "reason": "Lean assumes 'a < 1', '0 < eta_1', '0 < eta_2' (WhiteClockLaplace.lean:348-352); TeX carries '0<a<1' and says 'independent gap damping' without printing eta signs (notes_stratonovich_ham_second_moment.tex:7568,7589-7596). Ledger:4674-4677,4736 and claims.yaml:10276 accurately disclose the necessary positivity and broader a range. Both integral forms match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.green: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean defines 'if |y| < s then 1/2 else 0' without hypotheses (WhiteClockLaplace.lean:379). TeX's standing case is 'd=alpha=1', 'Gamma=delta_0', with 'G_s(y)=(1/2)1_{|y|<s}' (notes_stratonovich_ham_second_moment.tex:7568-7569). Ledger:4737 and claims.yaml:10283 correctly map this unlabelled setup definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.green_cross_factor: L:white-clock-laplace",
+      "verdict": "PASS",
+      "reason": "Lean assumes '0 <= s', '0 <= t' (WhiteClockLaplace.lean:384-386); TeX integrates positive times and computes the delta_0 pairing as min(s,t)/2 (notes_stratonovich_ham_second_moment.tex:7578,7601-7605). Ledger:4738 and claims.yaml:10290 accurately state the diagonal integral, with the delta-pairing interpretation explicitly disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.green_self_factor: L:white-clock-laplace",
+      "verdict": "PASS",
+      "reason": "Lean assumes '0 <= r_1', '0 < r_2' and proves G_(r_2)(0)=1/2 plus integrability and mass r_1 (WhiteClockLaplace.lean:405-406). TeX uses positive gaps and exactly these Green factors (notes_stratonovich_ham_second_moment.tex:7592-7594,7618-7620). Ledger:4739 and claims.yaml:10297 agree, including the harmless zero endpoint for r_1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WhiteClockLaplace.white_clock_laplace_paper: L:white-clock-laplace",
+      "verdict": "PASS",
+      "reason": "Lean assumes '0 < a', 'a < 1' and all four damping parameters positive (WhiteClockLaplace.lean:433-447). TeX prints '0<a<1', 'theta_1,theta_2>0' and leaves positive eta implicit (notes_stratonovich_ham_second_moment.tex:7568,7584,7589-7596). Ledger:4740 and claims.yaml:10304 faithfully cover both transforms and every positive diagonal theta, with integrability and exact constants."
+    },
+    {
+      "claim": "PARA-WhiteRelativeWidth",
+      "verdict": "PASS",
+      "reason": "Ledger:4744-4783 cites the correct statement/proof ranges and accurately describes the exact wrapper hypotheses, formula-only scope, mass identification and log-convexity proof substitution. WhiteRelativeWidth.lean:62-219 matches integrated_white_evaluation.tex:101-161. Neither the C_2 bracket nor the reserved spatial-energy result is supplied or used."
+    },
+    {
+      "claim": "PARA-WhiteClockLaplace",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:4663-4707 correctly covers the hypotheses, implicit eta positivity, null diagonal, integral orders, Green-factor interpretation and proof route against WhiteClockLaplace.lean:69-452 and notes_stratonovich_ham_second_moment.tex:7567-7623. Its comment-description sentence at 4703-4704 is stale: the current individual doc comments already call laplace_id/laplace_rpow TeX proof steps. See W1; mathematical correspondence is unaffected."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "The complete Index at ledger:239-452 contains each of the 19 WhiteRelativeWidth and 30 WhiteClockLaplace declarations exactly once, at 439-447, under the same labels as rows 4787-4805 and 4711-4740. Route auxiliaries have no direct label. Searches across all manuscript TeX files found each cited label exactly once in the expected source."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:61-74 and 537-552 correctly classify both results as same-assumptions/full, with valid claim identifiers. The first excludes the C_2 bracket and spatial-energy package; the second explicitly records eta positivity, integrability and the delta-pairing interpretation. The wrappers prove every labelled conclusion. No narrower conclusion_scope entry is required in docs/coverage-scope-tex.yaml."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "Ledger:150-155 accurately announces both wrappers and explicit eta signs; 234-235 is consistent with the modules' internal helpers. ClockFilter:485-487 correctly points to WhiteClockLaplace. TemporalEquilibrium:3479-3480 says the white-evaluation application is outside that module, not outside Lean. Not in Lean:4825-4829 correctly distinguishes T:white-moment-bounds from the formalized formulas and relative width."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "W1 — PARA-WhiteClockLaplace, stale description of comments: candidate/statement-ledger.md:4703-4704 says 'Their Lean doc comments call them auxiliary to the route'. However, lean/StratonovichHAMSecondMoment/WhiteClockLaplace.lean:71-73 and 88-90 explicitly say 'Step of the TeX proof', corresponding to the elementary integral displays in manuscript/notes/notes_stratonovich_ham_second_moment.tex:7610-7614. The ledger's actual label assignments are correct. Optional wording fix: replace that sentence with 'Although grouped under the Auxiliary heading, their doc comments and statements identify these as the two TeX proof steps.' No Lean or coverage change is needed."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "All complete-reading requirement A sources and ranges were read. Partial-file coverage above concerns only material outside the required review scope; other previously reviewed ledger rows were not re-reviewed.",
+    "Basenames in check reasons refer to the exact packet paths listed in source_coverage; 'Ledger' denotes candidate/statement-ledger.md.",
+    "Compilation and standard-axiom correctness were accepted as stipulated, not independently rebuilt. The supervisor-checked provenance binding was not independently recomputed.",
+    "This is an AI correspondence review, not human verification, a novelty audit or verification of the manuscript's unformalized stochastic results."
+  ]
+}

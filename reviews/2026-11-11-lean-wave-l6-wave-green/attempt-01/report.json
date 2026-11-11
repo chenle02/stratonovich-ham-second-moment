@@ -1,0 +1,217 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-1177 \u2014 complete.",
+    "candidate/statement-ledger.md:1-452,845-939,947-950,984-988,990,995-996,1015-1018,1052-1209,2247-2320,2378-2380,2392-2393,4380-4502,4855-4932 \u2014 partial file; required Scope, Index by label and WaveGreen sections complete.",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean:1-540 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean:1-692 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/WaveKernel.lean:1-180 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean:1-88 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/DampedNorms.lean:1-140,285-372 \u2014 partial; supporting definitions and relevant finiteness declarations read.",
+    "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean:225-322,435-519 \u2014 partial; relevant spectral-homogeneity declarations read completely.",
+    "lean/StratonovichHAMSecondMoment/TimeFractional.lean:1-113 \u2014 partial; underlying measure and kernel definitions inspected.",
+    "lean/StratonovichHAMSecondMoment/SpectralHomog.lean:36-68,165-183 \u2014 partial; homogeneity and resolvent definitions inspected.",
+    "lean/StratonovichHAMSecondMoment/ClockCopy.lean:761-778 \u2014 partial; damped_N2_nonneg_paper read completely.",
+    "lean/claims.yaml:6196-6491,6857-7075 \u2014 partial file; all entries for DampedNormsHomog and WaveGreen complete.",
+    "lean/coverage.yaml:1-982 \u2014 complete.",
+    "docs/coverage-scope-tex.yaml:1-27 \u2014 complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:168-233,330-365,690-850,1060-1085,1585-1605,4040-4070,5090-5120,7558-7575 \u2014 partial file; every range required by A complete.",
+    "manuscript/notes/index/list-of-notation.tex:92-108 \u2014 partial file; complete G_t entry read."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.waveGreen: L:higher-riesz",
+      "verdict": "PASS",
+      "reason": "WaveGreen.lean:106-112 defines the three measures without hypotheses. Compare TeX notes_stratonovich_ham_second_moment.tex:709,5109-5113: '1/2' interval density, '1/(2\u03c0\u221a(h\u00b2-|y|\u00b2))' disk density and '\u03c3_h/(4\u03c0h)'. Ledger:4471 and claims.yaml:6861 accurately describe them. The d=3 cone-measure definition and unproved surface-measure identification are expressly disclosed; its normalization is consistent with Euclidean surface measure."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.waveGreen_other: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:116-117 assumes 'd \u2260 1', 'd \u2260 2', 'd \u2260 3', with arbitrary s, and concludes zero. TeX:191 instead assumes 'd \u2208 {1,2,3}', so there is no manuscript assertion outside these dimensions. Ledger:4472 and claims.yaml:6868 correctly identify a convention, not a labelled result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.waveGreen_of_nonpos: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:122 assumes 's \u2264 0' and concludes zero for every d. TeX:181 works on nonnegative time; its displayed positive-radius measures occur at :5109-5113. Ledger:4420,4473 and claims.yaml:6875 disclose the extension, including the harmless zero-time convention."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.gamma_three_halves: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:136 has no hypotheses and states 'Real.Gamma (1/2 + 1) = \u221a\u03c0/2', exactly ledger:4474 and claims.yaml:6882. TeX:5106-5114 quotes the measures and masses without this Gamma computation; no TeX hypothesis or labelled counterpart is asserted."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.mass_one: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:140 assumes '0 < s' and proves mass s in d=1. TeX:825 uses 'G_s(R^d) = s', with the d=1 density at :709. Ledger:4475 and claims.yaml:6889 match. No covariance assumption is needed for this deterministic mass calculation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.radial2_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:153-156 states nonnegativity for all real s,r, without hypotheses. Ledger:4476 and claims.yaml:6896 match. TeX:5109-5110 supplies the disk density but no radial-extension lemma or corresponding hypotheses; the auxiliary mapping is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.radial2_eq_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:159 explicitly assumes '0 \u2264 s' and 's \u2264 r'. Ledger:4477 and claims.yaml:6903 retain both conditions. TeX:5109-5110 uses an indicator restricting the density to '|y| < h', not a statement about a totalized radial extension. Correctly unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.hasDerivAt_radial2: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:165-166 assumes 'y \u2208 Ioo 0 s' and gives derivative 'y * radial2 s y'. Ledger:4478 and claims.yaml:6910 preserve the interval and constant. TeX:5106-5114 quotes mass rather than proving it by this antiderivative; no direct label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.integral_radial2: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:178-180 assumes '0 < s' and concludes integrability on '(0,s]' and integral 's/(2\u03c0)'. Ledger:4479 and claims.yaml:6917 match exactly. TeX:5113-5114 asserts mass h but contains no such one-dimensional integration step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.mass_two: L:higher-riesz",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:194 assumes '0 < s' and proves 'waveGreen 2 s univ = ENNReal.ofReal s'. TeX:5109-5114 gives the same density and says 'Both have mass h'; positive radius is implicit. Ledger:4480 and claims.yaml:6924 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.mass_three: L:higher-riesz",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:238 assumes '0 < s' and proves mass s, using total sphere mass 4\u03c0 at :240-246. TeX:5111-5114 states '\u03c3_h/(4\u03c0h)' and 'mass h'. Ledger:4481 and claims.yaml:6931 match, subject to the explicitly disclosed toSphere definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.waveGreen_mass: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:250-251 assumes 'd = 1 \u2228 d = 2 \u2228 d = 3' and '0 \u2264 s'. TeX:191 has these dimensions and :825 uses 'G_s(R^d) = s'. Ledger:4482 and claims.yaml:6938 correctly include s=0; that endpoint follows from the disclosed zero-measure convention."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.isFiniteMeasure_waveGreen: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:260 has arbitrary d,s and concludes finiteness. TeX index/list-of-notation.tex:102-104 describes 'mass t', implying finiteness in the manuscript range; it has no separately labelled finiteness statement. Ledger:4483 and claims.yaml:6945 accurately include the harmless zero-measure extensions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.instIsFiniteMeasureWaveGreen: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:269-270 is the instance with arbitrary d,s and no additional hypothesis. Ledger:4484 and claims.yaml:6952 correctly paraphrase it. TeX index/list-of-notation.tex:102-104 supplies finite mass in its own range, not a typeclass instance or corresponding hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.waveGreen_greenMass: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:274-276 assumes only the three permitted dimensions and proves GreenMass; DampedNormsHomog.lean:126-127 defines this as mass s for every '0 < s'. TeX:825 uses precisely 'G_s(R^d) = s'. Ledger:4485 and claims.yaml:6959 correctly identify discharge of the former input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.waveGreen_compl_closedBall: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:282-283 has arbitrary d,s and proves zero mass outside the closed ball. TeX index/list-of-notation.tex:102-104 says 'support in the closed radius-t ball'. Ledger:4486 and claims.yaml:6966 match this assertion; extensions outside the manuscript range are explicitly zero."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.scaling_one: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:313-314 assumes '0 < s' and allows every set A, without measurability. Ledger:4487 and claims.yaml:6973 match. TeX:5113-5114 says 'G_h(hA) = hG_1(A)' for the two preceding d=2,3 measures, not d=1; the unlabelled extension is honestly distinguished."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.scaling_two: L:higher-riesz",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:323-324 assumes '0 < s' and 'MeasurableSet A'. TeX:5113-5114 states 'G_h(hA) = hG_1(A)' for the d=2 measure, leaving the measurable-set condition implicit. Ledger:4488 and claims.yaml:6980 preserve the condition and normalization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.scaling_three: L:higher-riesz",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:374-375 assumes '0 < s' and 'MeasurableSet A'. TeX:5111-5114 gives '\u03c3_h/(4\u03c0h)' and the same scaling. Ledger:4489 and claims.yaml:6987 match. The toSphere choice and measurable-set reading are expressly disclosed and do not change the stated scaling factor."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.waveGreen_scaling: L:higher-riesz",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:388-390 assumes the three dimensions, '0 < s' and 'MeasurableSet A'. TeX:5113-5114 states the same identity for d=2,3. Ledger:4490 and claims.yaml:6994 accurately state the additional d=1 case; ledger:4429-4431 explicitly distinguishes that extension."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.waveGreen_paper: L:higher-riesz",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:400-405 assumes the three dimensions and bundles mass for '0 \u2264 s', finiteness, closed-ball support and scaling for '0 < s' and measurable A. Compare TeX:5113-5114, 'mass h' and 'G_h(hA)=hG_1(A)', and notation.tex:102-104, 'support in the closed radius-t ball'. Ledger:4491 and claims.yaml:7001 preserve all quantifiers and the disclosed extensions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.N0_waveGreen: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:413-416 assumes the three dimensions and '0 < \u03b8', concluding integrability and 'N0 = \u03b8^(-2)'. TeX:768-772 assumes H:homog and '\u03b8 > 0' and states the same formula; :825 explains that only mass is needed. Ledger:4492 and claims.yaml:7008 correctly describe this harmless covariance-independent specialization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.damped_homogeneous_norms_wave: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:426-452 has only 'h : HomogCovariance d alpha alpha0 \u0393 \u03bc'; compare TeX:768, 'Under Hypothesis H:homog', whose clauses at :190-207 match HomogHypothesis.lean:64-80. All finiteness, powers, nonnegativity, tail limits and multiplier/Laplace-domain comparisons match TeX:769-791,838-844. GreenMass is proved internally using h.dim; no \u0393\u22600 or supplied input remains. Ledger:4493 and claims.yaml:7015 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.coordOne_apply: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:458-462 takes arbitrary 'x : Rd 1' and states 'coordOne x = x 0'. Ledger:4494 and claims.yaml:7022 match. TeX:709,740-741 uses ordinary one-dimensional coordinates, without this measurable-equivalence declaration or additional hypotheses."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.coordOne_mp: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:466-468 has no hypotheses and states 'MeasurePreserving coordOne volume volume'. Ledger:4495 and claims.yaml:7029 match. TeX:709,740-741 contains no coordinate-transport lemma; this is correctly a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.norm_coord_one: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:471 assumes only 'x : Rd 1' and concludes '\u2016x\u2016 = |x 0|'. Ledger:4496 and claims.yaml:7036 match. TeX:709 uses '|y|' in dimension one but does not state a coordinate-model identification or corresponding hypotheses."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.inner_coord_one: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:475 assumes arbitrary \u03be,x in Rd 1 and states 'inner \u211d \u03be x = \u03be 0 * x 0'. Ledger:4497 and claims.yaml:7043 match. TeX:740-741 contains the scalar Fourier multiplier, not this Euclidean-coordinate auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.ball_eq_preimage_coordOne: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:479 has arbitrary real s and states the preimage equality with 'Ioo (-s) s'. Ledger:4498 and claims.yaml:7050 match, including nonpositive radii. TeX:709 uses the interval indicator '|y|<s' but gives no transport lemma or additional hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.integral_exp_Ioo: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:484-486 assumes only '0 < s', with arbitrary real a, and concludes the integral equals '2 * waveHat s (single 0 a)'. Ledger:4499 and claims.yaml:7057 match; no integrability conjunct is falsely attributed. TeX:740-741 gives the multiplier and its zero-frequency value, not this integral computation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.single_coord_one: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:514 takes arbitrary '\u03be : Rd 1' and states '\u03be = EuclideanSpace.single 0 (\u03be 0)'. Ledger:4500 and claims.yaml:7064 match. TeX:740-741 uses \u03be directly and contains no corresponding coordinate reconstruction statement or hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreen.waveGreen_fourier_one: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean WaveGreen.lean:522-526 assumes '0 < s' and arbitrary '\u03be : Rd 1', concluding integrability and '\u222b exp(i\u3008\u03be,x\u3009) dG_s = waveHat s \u03be'. TeX:709 specifies the same d=1 density and :740-741 states 'sin(s|\u03be|)/|\u03be|, with value s at \u03be=0'. Ledger:4501 and claims.yaml:7071 accurately describe the identity and dimension restriction; no higher-dimensional Fourier result is claimed."
+    },
+    {
+      "claim": "PARA-WaveGreen",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:4390-4467 correctly identifies the sources, densities, normalization, measurable-set restriction, cone-measure definition, proof-route differences, discharged GreenMass input and missing d=2,3 Fourier identities. The wrapper has precisely the documented type. Two nonblocking wording points remain: the exponential quotient needs a\u22600, and the used-field description should explicitly add dim to the DampedNormsHomog list."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "All 31 declarations occur exactly once in the Lean-declarations column at ledger:377-380, with labels matching :4471-4501. The twelve route auxiliaries are unlabelled. The parenthetical 'built on WaveGreen.waveGreen' is a dependency reference, not a second declaration listing. Searching labels across the manuscript inputs found the cited labels uniquely at main TeX:190,697,745,767,785,5094."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:108-140 correctly records L:damped-homogeneous-norms as same-assumptions/full, with the toSphere and smoothing qualifications. WaveGreen.lean:426-452 discharges the former mass input. coverage.yaml:233-250 correctly limits L:higher-riesz to quoted Green-measure facts, not its Riesz maxima or constants; the inputs-supplied/weaker classification does not claim those estimates were proved. Claim identifiers resolve to the inspected claims.yaml entries."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "The relevant Scope statements at ledger:79-94,175-190, the older-wrapper qualifications at :869-879,926-930, the discharge references at :1078-1087,1160,1168,1189,1209 and the exclusions at :4874-4880 are mutually consistent. They distinguish a supplied input to the arbitrary-G wrapper from its discharge for waveGreen, and do not claim higher-dimensional Fourier identities or the Riesz convolution estimates."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "W1 \u2014 PARA-WaveGreen, exponential-integral explanation. Ledger:4454-4455 writes '\u222b e^(iat) dt = (e^(ias)-e^(-ias))/(ia)' without excluding a=0. Lean WaveGreen.lean:484-486 allows arbitrary a and :489-491 handles 'a = 0' separately; TeX notes_stratonovich_ham_second_moment.tex:740-741 explicitly says 'with value s at \u03be = 0'. Optional wording fix: qualify the quotient by a\u22600 and state that the integral is 2s when a=0. The actual theorem and its row are correct.",
+      "W2 \u2014 PARA-WaveGreen, used-field bookkeeping. Ledger:4439-4441 says the used and carried hypotheses are those listed for DampedNormsHomog, where :1134-1135 lists dim as unused. Lean WaveGreen.lean:452 explicitly uses 'waveGreen_greenMass d h.dim'; TeX notes_stratonovich_ham_second_moment.tex:191 assumes 'd \u2208 {1,2,3}'. The preceding ledger sentence already acknowledges h.dim, so this is not a hidden assumption. Optional wording fix: say the used fields are the DampedNormsHomog list plus dim.",
+      "W3 \u2014 Stale supporting metadata. claims.yaml:6200 says 'the package defines no wave Green measure', and DampedNormsHomog.lean:48-52 says the WaveGreen discharge 'was not attempted'. These are obsolete: WaveGreen.lean:106-112 defines the measures and :274-276 proves GreenMass, matching TeX notes_stratonovich_ham_second_moment.tex:825, 'G_s(R^d) = s'. Optional documentation fix: replace package-wide absence claims with 'this module does not define it' and point to WaveGreen. The candidate ledger already makes this distinction correctly."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Requirement A was completed. Partial-file coverage above concerns material outside the required sections or supporting contexts; unrelated ledger rows were not re-reviewed.",
+    "Compilation and absence of nonstandard axioms were accepted as stipulated; no build or independent proof audit was performed.",
+    "The external Chen source and Mathlib implementation were not independently inspected. The d=3 surface-measure identification is accepted only as the explicitly disclosed Euclidean cone-measure definitional choice, not as a formally proved Hausdorff-measure identification.",
+    "This AI correspondence review is not human verification or a novelty audit."
+  ]
+}

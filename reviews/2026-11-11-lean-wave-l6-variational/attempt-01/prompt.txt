@@ -1,0 +1,189 @@
+Review the frozen packet rooted at <HOME>/.local/state/Le-AI-Lab/stratonovich-lean-wave-l6-review-d-Variational/attempt-01/workspace. Primary target: candidate/statement-ledger.md. Source revision: 250cf39732f0522049a93afd5c852f87a7bf9850.
+
+You are an independent artifact reviewer. Read only the frozen packet
+and the supplied review contract. Report correctness, missing assumptions,
+incorrect constants, failed implications, and uncertainty. Do not edit files,
+use the network, send messages, publish, install, or delegate. Do not launch a
+research or coding workflow. Return a scientific report rather than a plan.
+Use exactly one JSON object with schema "subscription-review-report/1", verdict (PASS, PASS_WITH_NOTES, FAIL, or
+INCONCLUSIVE), confidence (high, medium, low), source_coverage (list of strings),
+checks (list of objects with claim, verdict, reason), findings (an object with
+fatal, major, minor lists), required_repairs (list), and limitations (list).
+required_repairs contains ONLY mandatory changes that block acceptance. Optional
+clarifications belong in findings.minor, never in required_repairs. PASS and
+PASS_WITH_NOTES require empty fatal, major and required_repairs lists and no
+failed/unchecked claim. If a repair is mandatory, return FAIL or INCONCLUSIVE;
+never weaken a finding to obtain PASS.
+Read every required source completely. Never use Grep head_limit or any other
+truncating or limiting option on a required source. After any pagination or
+truncation marker (for example a partial Read, an offset/limit notice, or
+"output truncated"), keep reading the next range until the whole file is read.
+In source_coverage, list each exact file and the line ranges you actually read.
+If coverage of any required source is incomplete, say "partial" for that source
+in source_coverage and state the gap in limitations.
+An AI review is not human verification or a novelty audit. Do not silently
+repair a candidate and PASS the original. A terminal error is not a verdict.
+
+Frozen packet file index (relative to workspace; a listed file is not proof of reading):
+["PROVENANCE.json", "candidate/statement-ledger.md", "docs/coverage-scope-tex.yaml", "lean/StratonovichHAMSecondMoment/Axioms.lean", "lean/StratonovichHAMSecondMoment/ClockCopy.lean", "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean", "lean/StratonovichHAMSecondMoment/DampedNorms.lean", "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean", "lean/StratonovichHAMSecondMoment/DriverParameters.lean", "lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean", "lean/StratonovichHAMSecondMoment/FrequencyRow.lean", "lean/StratonovichHAMSecondMoment/GaussianComparison.lean", "lean/StratonovichHAMSecondMoment/GaussianIBP.lean", "lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean", "lean/StratonovichHAMSecondMoment/GaussianTest.lean", "lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean", "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean", "lean/StratonovichHAMSecondMoment/IndexedCone.lean", "lean/StratonovichHAMSecondMoment/KappaRange.lean", "lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean", "lean/StratonovichHAMSecondMoment/MaskedContinuousWave.lean", "lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean", "lean/StratonovichHAMSecondMoment/MaskedModulation.lean", "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean", "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean", "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean", "lean/StratonovichHAMSecondMoment/PhaseBessel.lean", "lean/StratonovichHAMSecondMoment/QuotientObstruction.lean", "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean", "lean/StratonovichHAMSecondMoment/RayleighTail.lean", "lean/StratonovichHAMSecondMoment/SeriesType.lean", "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean", "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean", "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean", "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean", "lean/StratonovichHAMSecondMoment/SpectralHomog.lean", "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean", "lean/StratonovichHAMSecondMoment/TimeCompletion.lean", "lean/StratonovichHAMSecondMoment/TimeFractional.lean", "lean/StratonovichHAMSecondMoment/TimeSchur.lean", "lean/StratonovichHAMSecondMoment/TypeContinuity.lean", "lean/StratonovichHAMSecondMoment/VariationalDilation.lean", "lean/StratonovichHAMSecondMoment/VariationalFloor.lean", "lean/StratonovichHAMSecondMoment/VariationalMean.lean", "lean/StratonovichHAMSecondMoment/VariationalRate.lean", "lean/StratonovichHAMSecondMoment/WaveGreen.lean", "lean/StratonovichHAMSecondMoment/WaveKernel.lean", "lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean", "lean/StratonovichHAMSecondMoment/WeakSobolev.lean", "lean/StratonovichHAMSecondMoment/WhiteClockLaplace.lean", "lean/StratonovichHAMSecondMoment/WhiteRelativeWidth.lean", "lean/claims.yaml", "lean/coverage.yaml", "manuscript/notes/ai-statistics-data.tex", "manuscript/notes/ai-statistics.tex", "manuscript/notes/book-layout.tex", "manuscript/notes/chapter-guides/01-setting.tex", "manuscript/notes/chapter-guides/02-G0.tex", "manuscript/notes/chapter-guides/03-independent-upper.tex", "manuscript/notes/chapter-guides/04-gaussian-foundations.tex", "manuscript/notes/chapter-guides/05-operator-paths.tex", "manuscript/notes/chapter-guides/06-wave-evolution.tex", "manuscript/notes/chapter-guides/07-lower.tex", "manuscript/notes/chapter-guides/08-means.tex", "manuscript/notes/chapter-guides/09-growing-radius.tex", "manuscript/notes/chapter-guides/10-point-upper.tex", "manuscript/notes/chapter-guides/11-constant.tex", "manuscript/notes/chapter-guides/12-finite-order.tex", "manuscript/notes/chapter-guides/13-direct.tex", "manuscript/notes/chapter-guides/14-covariance.tex", "manuscript/notes/chapter-guides/15-static-clock.tex", "manuscript/notes/figures/active-subset-optimization.tex", "manuscript/notes/figures/chapter-roadmap.tex", "manuscript/notes/figures/common-noise.tex", "manuscript/notes/figures/cross-colour-cube.tex", "manuscript/notes/figures/dyadic-cover.tex", "manuscript/notes/figures/endpoint-elimination.tex", "manuscript/notes/figures/gaussian-enlargement.tex", "manuscript/notes/figures/global-control-blocks.tex", "manuscript/notes/figures/hermite-cutoff.tex", "manuscript/notes/figures/interval-allocations.tex", "manuscript/notes/figures/interval-end-metrics.tex", "manuscript/notes/figures/light-cone.tex", "manuscript/notes/figures/literature-interpretations.tex", "manuscript/notes/figures/literature-results-drawing.tex", "manuscript/notes/figures/literature-results-map.tex", "manuscript/notes/figures/nonseparable-controls.tex", "manuscript/notes/figures/order-of-limits.tex", "manuscript/notes/figures/positive-gram.tex", "manuscript/notes/figures/proof-map.tex", "manuscript/notes/figures/styles.tex", "manuscript/notes/figures/two-chain-pairings.tex", "manuscript/notes/figures/walsh-guitar.tex", "manuscript/notes/figures/white-strip.tex", "manuscript/notes/future_optimizers.tex", "manuscript/notes/future_universality.tex", "manuscript/notes/future_work.tex", "manuscript/notes/history_wave_equations.tex", "manuscript/notes/index/anchors.tex", "manuscript/notes/index/list-of-notation.tex", "manuscript/notes/index/setup.tex", "manuscript/notes/integrated_actual_operator_driver.tex", "manuscript/notes/integrated_cameron_mean.tex", "manuscript/notes/integrated_compact_gaussian.tex", "manuscript/notes/integrated_compact_mean_family.tex", "manuscript/notes/integrated_constant_phase_young.tex", "manuscript/notes/integrated_covariance_foundation.tex", "manuscript/notes/integrated_exact_scaling.tex", "manuscript/notes/integrated_gaussian_tubes.tex", "manuscript/notes/integrated_intrinsic_constant.tex", "manuscript/notes/integrated_masked_moments.tex", "manuscript/notes/integrated_occupation_ceiling.tex", "manuscript/notes/integrated_point_transfer.tex", "manuscript/notes/integrated_positive_gram.tex", "manuscript/notes/integrated_radius_anchor.tex", "manuscript/notes/integrated_raw_block_lower.tex", "manuscript/notes/integrated_signed_moment_upper.tex", "manuscript/notes/integrated_signed_static.tex", "manuscript/notes/integrated_source_convergence.tex", "manuscript/notes/integrated_spatial_occupation.tex", "manuscript/notes/integrated_symplectic_phase.tex", "manuscript/notes/integrated_temporal_equilibrium.tex", "manuscript/notes/integrated_uniform_mean.tex", "manuscript/notes/integrated_uniform_products.tex", "manuscript/notes/integrated_unmasked_variational.tex", "manuscript/notes/integrated_wave_variance.tex", "manuscript/notes/integrated_white_evaluation.tex", "manuscript/notes/integrated_young_upper_foundation.tex", "manuscript/notes/literature_review.tex", "manuscript/notes/notes_stratonovich_ham_second_moment.tex", "manuscript/notes/preface.tex"]
+
+Independent correspondence review: newly formalized whole labelled result(s) (Lean ledger rows) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  250cf39732f0). Review ONLY its sections "VariationalFloor (whole result)", "VariationalRate (whole result)", the index rows for
+  them, and the items named in the global checks below. All other rows were
+  reviewed earlier.
+- the Lean modules (ground truth for what each declaration states):
+  lean/StratonovichHAMSecondMoment/*.lean (every library module; these
+  sections' own modules: VariationalFloor, VariationalRate, VariationalMean, VariationalDilation, WeakSobolev)
+  and lean/claims.yaml, lean/coverage.yaml, docs/coverage-scope-tex.yaml.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  975feb31ea65. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that P:variational-unmasked-rate (Rayleigh-form part), P:variational-positive-scores (with S1Bdd), and the wave-L6 foundations are formalized as stated in their
+rows: every conclusion proved, with hypotheses that match the manuscript,
+apart from side conditions the TeX leaves implicit and inputs explicitly
+declared as supplied. Test that claim hard: any Lean hypothesis that the
+manuscript does not have, any manuscript hypothesis the Lean drops, any
+weaker Lean conclusion, any changed constant, range, quantifier order or
+strictness, any modelling choice that changes the mathematical object, any
+supplied hypothesis stronger than the manuscript result it stands for, any
+row labelled as a step of a TeX proof that is really an auxiliary of a
+different Lean proof route, and any declaration missing from or duplicated
+in the Index, is a finding, unless the ledger states it AND it is genuinely
+harmless. Decide that yourself from the TeX; do not accept the ledger's word.
+Pay attention to: the uniform floor and its route (h_s >= Gamma*Psibar; dilation floor using alpha < 2) stated as differing from P:compact-original-common-trial; the Lipschitz constant C/(2 sqrt eps); that the operator half and lambda = sqrt(-E_s) are NOT claimed; S1Bdd word for word TeX 272-274 and its provenance; v_Psi > 0 route; the score-set scaling exponent q/k = (4-alpha)/(3-alpha); F5 (zero weak gradient implies zero) and its mollification route.
+
+CHECKS (exactly these 82, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.VariationalFloor.hasWeakGradient_of_test: no direct label"
+  2. claim "StratonovichHAMSecondMoment.VariationalFloor.grad: no direct label"
+  3. claim "StratonovichHAMSecondMoment.VariationalFloor.continuous_grad: no direct label"
+  4. claim "StratonovichHAMSecondMoment.VariationalFloor.hasCompactSupport_grad: no direct label"
+  5. claim "StratonovichHAMSecondMoment.VariationalFloor.memLp_test: no direct label"
+  6. claim "StratonovichHAMSecondMoment.VariationalFloor.memLp_grad: no direct label"
+  7. claim "StratonovichHAMSecondMoment.VariationalFloor.hasWeakGradient_const_mul: no direct label"
+  8. claim "StratonovichHAMSecondMoment.VariationalFloor.measure_ball_pos: no direct label"
+  9. claim "StratonovichHAMSecondMoment.VariationalFloor.measure_closedBall_pos: no direct label"
+  10. claim "StratonovichHAMSecondMoment.VariationalFloor.floorBump: no direct label"
+  11. claim "StratonovichHAMSecondMoment.VariationalFloor.prof: no direct label"
+  12. claim "StratonovichHAMSecondMoment.VariationalFloor.prof_test: no direct label"
+  13. claim "StratonovichHAMSecondMoment.VariationalFloor.prof_eq_one: no direct label"
+  14. claim "StratonovichHAMSecondMoment.VariationalFloor.profMass: no direct label"
+  15. claim "StratonovichHAMSecondMoment.VariationalFloor.profMass_pos: no direct label"
+  16. claim "StratonovichHAMSecondMoment.VariationalFloor.fl: no direct label"
+  17. claim "StratonovichHAMSecondMoment.VariationalFloor.gl: no direct label"
+  18. claim "StratonovichHAMSecondMoment.VariationalFloor.sq_dilL2_real: no direct label"
+  19. claim "StratonovichHAMSecondMoment.VariationalFloor.fl_sq: no direct label"
+  20. claim "StratonovichHAMSecondMoment.VariationalFloor.fl_test: no direct label"
+  21. claim "StratonovichHAMSecondMoment.VariationalFloor.fl_unit: no direct label"
+  22. claim "StratonovichHAMSecondMoment.VariationalFloor.gl_memLp: no direct label"
+  23. claim "StratonovichHAMSecondMoment.VariationalFloor.gl_norm: no direct label"
+  24. claim "StratonovichHAMSecondMoment.VariationalFloor.gl_weak: no direct label"
+  25. claim "StratonovichHAMSecondMoment.VariationalFloor.pot_lower: no direct label"
+  26. claim "StratonovichHAMSecondMoment.VariationalFloor.exists_radius_fn: no direct label"
+  27. claim "StratonovichHAMSecondMoment.VariationalFloor.integral_pos_of_nonzero: no direct label"
+  28. claim "StratonovichHAMSecondMoment.VariationalFloor.dilation_floor: no direct label"
+  29. claim "StratonovichHAMSecondMoment.VariationalFloor.rayleighSet_floor: no direct label"
+  30. claim "StratonovichHAMSecondMoment.VariationalFloor.integral_pos_of_pos_zero: no direct label"
+  31. claim "StratonovichHAMSecondMoment.VariationalFloor.conv_pos: no direct label"
+  32. claim "StratonovichHAMSecondMoment.VariationalFloor.autocorr_eq_shift: no direct label"
+  33. claim "StratonovichHAMSecondMoment.VariationalFloor.autocorr_nonneg_of_posDef: no direct label"
+  34. claim "StratonovichHAMSecondMoment.VariationalFloor.autocorr_pos: no direct label"
+  35. claim "StratonovichHAMSecondMoment.VariationalFloor.bumpN: no direct label"
+  36. claim "StratonovichHAMSecondMoment.VariationalFloor.moll: no direct label"
+  37. claim "StratonovichHAMSecondMoment.VariationalFloor.moll_tendsto: no direct label"
+  38. claim "StratonovichHAMSecondMoment.VariationalFloor.moll_const: no direct label"
+  39. claim "StratonovichHAMSecondMoment.VariationalFloor.ae_eq_zero_of_hasWeakGradient_zero: no direct label"
+  40. claim "StratonovichHAMSecondMoment.VariationalRate.psiBar: no direct label"
+  41. claim "StratonovichHAMSecondMoment.VariationalRate.psiBar_continuous: no direct label"
+  42. claim "StratonovichHAMSecondMoment.VariationalRate.psiBar_nonneg: no direct label"
+  43. claim "StratonovichHAMSecondMoment.VariationalRate.psiBar_vanish: no direct label"
+  44. claim "StratonovichHAMSecondMoment.VariationalRate.psiBar_le: no direct label"
+  45. claim "StratonovichHAMSecondMoment.VariationalRate.psiBar_pos: no direct label"
+  46. claim "StratonovichHAMSecondMoment.VariationalRate.exists_pos_point: no direct label"
+  47. claim "StratonovichHAMSecondMoment.VariationalRate.psiBar_data: no direct label"
+  48. claim "StratonovichHAMSecondMoment.VariationalRate.psiBar_conv_integrable: no direct label"
+  49. claim "StratonovichHAMSecondMoment.VariationalRate.timeAvg_conv: no direct label"
+  50. claim "StratonovichHAMSecondMoment.VariationalRate.convT_integrableOn: no direct label"
+  51. claim "StratonovichHAMSecondMoment.VariationalRate.conv_psiBar_le_mean: no direct label"
+  52. claim "StratonovichHAMSecondMoment.VariationalRate.rayleighValue_le: no direct label"
+  53. claim "StratonovichHAMSecondMoment.VariationalRate.sSup_rayleighSet_le_add: no direct label"
+  54. claim "StratonovichHAMSecondMoment.VariationalRate.abs_sSup_rayleighSet_sub_le: P:variational-unmasked-rate"
+  55. claim "StratonovichHAMSecondMoment.VariationalRate.abs_sqrt_sub_le: no direct label"
+  56. claim "StratonovichHAMSecondMoment.VariationalRate.unmasked_rate: P:variational-unmasked-rate"
+  57. claim "StratonovichHAMSecondMoment.VariationalRate.costIntegrand: no direct label"
+  58. claim "StratonovichHAMSecondMoment.VariationalRate.costIntegrand_data: no direct label"
+  59. claim "StratonovichHAMSecondMoment.VariationalRate.rawCost_genuine: no direct label"
+  60. claim "StratonovichHAMSecondMoment.VariationalRate.rawCost_pos: P:variational-positive-scores"
+  61. claim "StratonovichHAMSecondMoment.VariationalRate.scoreSet: P:variational-positive-scores"
+  62. claim "StratonovichHAMSecondMoment.VariationalRate.score1Set: P:variational-positive-scores"
+  63. claim "StratonovichHAMSecondMoment.VariationalRate.scoreSet_one: no direct label"
+  64. claim "StratonovichHAMSecondMoment.VariationalRate.score_set_scaling: E:variational-score-set-scaling"
+  65. claim "StratonovichHAMSecondMoment.VariationalRate.scoreSet_eq: P:variational-positive-scores"
+  66. claim "StratonovichHAMSecondMoment.VariationalRate.positive_test: P:variational-positive-scores"
+  67. claim "StratonovichHAMSecondMoment.VariationalRate.testRadius: P:variational-positive-scores"
+  68. claim "StratonovichHAMSecondMoment.VariationalRate.S1Bdd: P:variational-positive-scores"
+  69. claim "StratonovichHAMSecondMoment.VariationalRate.S1pos: P:variational-positive-scores"
+  70. claim "StratonovichHAMSecondMoment.VariationalRate.positive_scores: P:variational-positive-scores"
+  71. claim "StratonovichHAMSecondMoment.VariationalRate.positive_scores_sSup: P:variational-positive-scores"
+  72. claim "StratonovichHAMSecondMoment.VariationalRate.alpha_lt_two: no direct label"
+  73. claim "StratonovichHAMSecondMoment.VariationalRate.variational_unmasked_rate_paper: P:variational-unmasked-rate"
+  74. claim "StratonovichHAMSecondMoment.VariationalRate.variational_positive_scores_paper: P:variational-positive-scores"
+  75. claim "StratonovichHAMSecondMoment.VariationalRate.variational_positive_scores_sSup_paper: P:variational-positive-scores"
+  76. claim "PARA-VariationalFloor": the "VariationalFloor (whole result)" section paragraph is accurate, cites the right files and lines at 975feb3, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input, proof-route difference and what is not formalized, and does not overclaim
+  77. claim "PARA-VariationalRate": the "VariationalRate (whole result)" section paragraph is accurate, cites the right files and lines at 975feb3, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input, proof-route difference and what is not formalized, and does not overclaim
+  78. claim "LEDGER-INDEX": every one of these 75 declarations appears EXACTLY ONCE in the "Index by label" table, under the same label as its section row (an additional listing only as an explicitly marked cross-reference), route auxiliaries in a "no direct label" row, and every label cited in the sections exists in the manuscript (search \label across all files)
+  79. claim "COVERAGE-ROWS": the coverage.yaml rows P:variational-unmasked-rate (new, same-assumptions, weaker; operator half out) and P:variational-positive-scores (now inputs-supplied, weaker, input S1Bdd): classes, conclusions, scopes, notes, inputs and claims are right
+  80. claim "CROSS-REFERENCES": every other place in the ledger that points to these sections or their labels (other sections, the "Not in Lean" section, Scope) is accurate
+  81. claim "LEDGER-TOTALS": the totals line (1463 declarations; 737 labelled, 726 unlabelled) agrees with a count of all per-module tables, every claims.yaml decl has exactly one ledger row, and the coverage.yaml header count (726) agrees
+  82. claim "SCOPE-PROSE": the Scope bullets about the whole-result modules (counts; which results need no supplied input, which have supplied inputs; S1Bdd and its provenance; the deterministic R_0 bound) and the internal-status sentence are accurate
+For each row check (1-75): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: these sections' own
+   Lean modules (lean/StratonovichHAMSecondMoment/VariationalFloor.lean, lean/StratonovichHAMSecondMoment/VariationalRate.lean, lean/StratonovichHAMSecondMoment/VariationalMean.lean, lean/StratonovichHAMSecondMoment/VariationalDilation.lean, lean/StratonovichHAMSecondMoment/WeakSobolev.lean), and,
+   for every other declaration a row names, that declaration in its module;
+   the sections "VariationalFloor (whole result)", "VariationalRate (whole result)" and the "Scope" and "Index by label" sections of
+   candidate/statement-ledger.md; the entries of lean/claims.yaml for these
+   modules; lean/coverage.yaml; docs/coverage-scope-tex.yaml;
+   manuscript/notes/integrated_unmasked_variational.tex,
+   lines 100-120 of manuscript/notes/integrated_spatial_occupation.tex,
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 82 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-75.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.
+

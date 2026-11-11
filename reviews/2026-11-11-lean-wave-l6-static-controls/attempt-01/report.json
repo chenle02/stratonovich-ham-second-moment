@@ -1,0 +1,471 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-1176 \u2014 complete.",
+    "candidate/statement-ledger.md:1-452,2952-2982,3039,3064-3220,3234-3238,3240-3241,3243-3246,3249-3253,3255-3446,4023-4085,4284-4328,4379-4382,4385-4386,4807-4932 \u2014 partial file; complete required Scope, Index, SpatialStaticControls and SpatialOccupationCompleted sections. Other sections read only for relevant cross-references.",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:1-1157 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean:1-178 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalFloor.lean:1-670 \u2014 complete.",
+    "lean/claims.yaml:8072-8345,8940,9042-9597 \u2014 partial file; complete entries for the three required modules.",
+    "lean/coverage.yaml:1-982 \u2014 complete.",
+    "docs/coverage-scope-tex.yaml:1-27 \u2014 complete.",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-379 \u2014 complete.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-170,260-340 \u2014 partial file; complete required range 260-340.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:175-245,3680-3710 \u2014 partial; standing covariance assumptions and full-upper statement inspected.",
+    "manuscript/notes/integrated_compact_mean_family.tex:390-500 \u2014 partial; original mean/cost and common-trial statements inspected.",
+    "manuscript/notes/integrated_temporal_equilibrium.tex:1-95 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/WeakSobolev.lean:25-170,215-260 \u2014 partial; relevant Sobolev, trial and rate definitions inspected.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:30-155,225-253 \u2014 partial; relevant control, mean, cost and rate definitions inspected.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean:88-124 \u2014 partial; pairing, energy and unit-test definitions inspected.",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:285-302,393-417,630-762 \u2014 partial; relevant definitions and original wrappers inspected.",
+    "lean/StratonovichHAMSecondMoment/VariationalRate.lean:503-517,602-619,704-716 \u2014 partial; score-set, S1Bdd and exponent declarations inspected.",
+    "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean:80-125,474-623 \u2014 partial; density, mass and potential declarations inspected.",
+    "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean:260-290,357-376 \u2014 partial; physical pairing definitions inspected.",
+    "lean/StratonovichHAMSecondMoment/VariationalMean.lean:365-405,491-510 \u2014 partial; convolution bounds and bounded-potential integrability inspected."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.IsUnitH1: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:135-136 requires 'MemLp f 2', 'MemLp g 2', 'HasWeakGradient f g' and '\u222b f\u00b2 = 1'. TeX integrated_spatial_occupation.tex:44-45 requires 'g\u2208H\u00b9' and '||g||\u2082=1'. The pair representation faithfully expresses that class; ledger:3374 and claims.yaml:9046 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.isUnitH1_of_test: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:140-148 assumes 'IsTestFunction f' and '\u222b f\u00b2=1', concluding a unit pair with classical gradient. TeX integrated_spatial_occupation.tex:44-45 uses unit H\u00b9 profiles but states no separate bridge theorem. Ledger:3375 and claims.yaml:9053 correctly describe a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.isUnitH1_of_unitTest: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:154-156 assumes 'SpatialFourierBound.IsUnitTest g' and concludes 'IsUnitH1 g (VariationalFloor.grad g)'. TeX integrated_spatial_occupation.tex:100 uses real unit smooth compact profiles; no predicate-conversion lemma is stated. Ledger:3376 and claims.yaml:9060 accurately identify the bridge."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.exists_isUnitH1: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:160-177 has no dimension restriction and concludes existence of a unit H\u00b9 pair. TeX integrated_spatial_occupation.tex:44-45 presupposes the unit class, under d\u2208{1,2,3}; it contains no separately labelled existence statement. The broader auxiliary is correctly described in ledger:3377 and claims.yaml:9067."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.isRayleighTrial_iff_of_bounded: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:180-191 assumes 'Continuous V' and '\u2200 x, |V x|\u2264M', proving trial equivalence with IsUnitH1. TeX integrated_spatial_occupation.tex:60-61 supplies boundedness before using the H\u00b9 Rayleigh formula. This automatic-integrability bridge is correctly unlabelled in ledger:3378 and claims.yaml:9074."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.rayleighSet_nonempty_of_bounded: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:180-197 assumes continuous bounded V and concludes '(rayleighSet V).Nonempty'. TeX integrated_spatial_occupation.tex:44-47 uses a genuine finite supremum but gives no separate general-potential existence lemma. Ledger:3379 and claims.yaml:9081 faithfully describe the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.integral_pot_le: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:202-207 assumes '\u2200 x, V x\u2264M' and 'IsRayleighTrial V f g', concluding '\u222b V f\u00b2\u2264M'. TeX integrated_spatial_occupation.tex:60-63 works with bounded U_z and unit trials, without separately stating this general inequality. Ledger:3380 and claims.yaml:9088 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.rayleighValue_le: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:211-215 assumes 'V\u2264M' and a Rayleigh trial, concluding 'rayleighValue V f g\u2264M'. TeX integrated_spatial_occupation.tex:47,60-63 asserts finiteness for bounded U_z, not this standalone general lemma. Ledger:3381 and claims.yaml:9095 correctly describe the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.rayleighSet_bddAbove: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:218-222 assumes only '\u2200 x, V x\u2264M' and concludes boundedness above. TeX integrated_spatial_occupation.tex:47 asserts a finite supremum for its particular U_z. Ledger:3382 and claims.yaml:9102 correctly retain the more general lemma as unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.lamSq: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:229 defines 'sSup (rayleighSet (fun x => c*U x))'. TeX integrated_spatial_occupation.tex:43-45 defines the corresponding unit-H\u00b9 supremum for U_z and c>0. Ledger:3267-3274,3383 explicitly handles the trial integrability condition and genuine-supremum restrictions; claims.yaml:9109 names the same set."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.lam: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:232 defines 'rayleighRate (c U)', whose definition is sqrt of the Rayleigh supremum. TeX integrated_spatial_occupation.tex:43-48 uses the positive square root for nonzero nonnegative z and c>0. Ledger:3384 and claims.yaml:9116 accurately disclose the general-potential definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.lam_eq_sqrt: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:234 states unconditionally 'lam U c = Real.sqrt (lamSq U c)'. TeX integrated_spatial_occupation.tex:43-48 defines the squared quantity and asserts positivity on c>0. Ledger:3385 and claims.yaml:9123 correctly identify the definitional square-root identity without asserting positivity outside that range."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.bound_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:237-242 assumes '0\u2264U' and 'U\u2264M', omitting continuity, and concludes '0\u2264M'. TeX integrated_spatial_occupation.tex:60-64 uses a bounded nonnegative potential but states no separate bound-sign lemma. Ledger:3386 and claims.yaml:9130 match the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.abs_cU_le: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:244-248 assumes '0\u2264U\u2264M' and proves '|c U(x)|\u2264|c|M' for real c. TeX integrated_spatial_occupation.tex:45,60-63 uses positive c and bounded U_z; this broader elementary bound is not separately stated. Ledger:3387 and claims.yaml:9137 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.trial_cU_iff: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:237-255 assumes continuous '0\u2264U\u2264M' and allows every real c, proving trial equivalence with unit H\u00b9 pairs. TeX integrated_spatial_occupation.tex:44-45 uses unit H\u00b9 profiles for c>0. Ledger:3388 and claims.yaml:9144 correctly mark this representation bridge as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.value_cU: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:257-264 omits the potential hypotheses and proves 'rayleighValue(c U)=c\u222bU f\u00b2\u2212\u222b||g||\u00b2'. TeX integrated_spatial_occupation.tex:45 contains that expression for admissible unit profiles and c>0. Ledger:3389 and claims.yaml:9151 explicitly describe the unconditional Bochner identity as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.integral_U_mem: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:237-238,267-272 assumes continuous '0\u2264U\u2264M' and 'IsUnitH1 f g', concluding '0\u2264\u222bU f\u00b2\u2264M'. TeX integrated_spatial_occupation.tex:60-64 uses the same bounded-potential comparison without a separate statement. Ledger:3390 and claims.yaml:9158 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.cU_nonempty: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:237-238,275-277 assumes continuous '0\u2264U\u2264M' and concludes nonemptiness for every real c. TeX integrated_spatial_occupation.tex:43-47 requires a finite Rayleigh supremum for c>0. Ledger:3391 and claims.yaml:9165 correctly present the stronger-range component of finiteness."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.cU_bddAbove: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:279-282 omits continuity, assumes '0\u2264U\u2264M', and proves boundedness above for every real c using |c|M. TeX integrated_spatial_occupation.tex:47 asserts finiteness for U_z and c>0. Ledger:3392 and claims.yaml:9172 accurately describe this generalized component."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.lamSq_le: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:237-238,285-288 assumes continuous '0\u2264U\u2264M' and proves 'lamSq U c\u2264|c|M'. TeX integrated_spatial_occupation.tex:47,60-63 has bounded U_z and c>0. Ledger:3393 and claims.yaml:9179 correctly identify the finiteness bound, with a harmless broader c range."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.lamSq_le_add: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:292-305 assumes continuous '0\u2264U\u2264M' and proves the one-sided comparison for real c,c'. TeX integrated_spatial_occupation.tex:62-63 states the resulting Lipschitz estimate, not this separately named inequality. Ledger:3394 and claims.yaml:9186 correctly classify the proof auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.lamSq_lip: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:237-238,310-315 assumes continuous '0\u2264U\u2264M' and proves '|lamSq U c\u2212lamSq U c\u2032|\u2264M|c\u2212c\u2032|'. TeX integrated_spatial_occupation.tex:62-63 says 'Lipschitz with constant ||U_z||\u221e'. Ledger:3395 and claims.yaml:9193 match; arbitrary valid M generalizes that constant."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.lamSq_mono: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:318-326 assumes continuous '0\u2264U\u2264M' and 'c\u2264c\u2032', concluding 'lamSq U c\u2264lamSq U c\u2032'. TeX integrated_spatial_occupation.tex:63-64 invokes a positive floor 'by monotonicity'. Ledger:3396 and claims.yaml:9200 accurately map the squared-rate monotonicity used there."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.lam_mono: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:329-330 assumes continuous '0\u2264U\u2264M' and 'c\u2264c\u2032', proving rate monotonicity by sqrt monotonicity. TeX integrated_spatial_occupation.tex:63-64 uses monotonicity of the rate on positive c intervals. Ledger:3397 and claims.yaml:9207 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.lam_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:333-339 assumes continuous '0\u2264U\u2264M' and proves 'Continuous (lam U)' on all R. TeX integrated_spatial_occupation.tex:78-81 instead uses the positive k_n floor and local Lipschitz continuity. Ledger:3398 and claims.yaml:9214 correctly disclose this alternative-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.lam_lipschitzOn: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:344-369 assumes continuous '0\u2264U\u2264M' and '0<lamSq U c\u2081', concluding existence of a Lipschitz constant on [c\u2081,c\u2082]. TeX integrated_spatial_occupation.tex:63-64 uses exactly a positive floor on a positive compact interval. Ledger:3399 and claims.yaml:9221 accurately expose the floor hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.conv_const_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:377-379 has no integrability hypothesis and proves 'conv \u0393 (c z)=c conv \u0393 z'. TeX integrated_spatial_occupation.tex:58-59 uses genuine smooth-control means and positive c. Ledger:3400 and claims.yaml:9228 correctly describe this unconditional integral-linearity auxiliary rather than a TeX-labelled result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.convZ_props: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:387-391 assumes tempered \u0393,\u03bc, the spectral convention, 'IsTestFunction z' and 'z\u22650'; it concludes integrability, continuity, nonnegativity and a uniform bound. TeX integrated_spatial_occupation.tex:4-10,41,60-61 has H:homog and such z. Ledger:3401 and claims.yaml:9235 accurately disclose the Gaussian-envelope route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.RayleighFloor: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:418-420 defines '\u2200 z, IsTestFunction z \u2192 z\u22650 \u2192 z\u22600 \u2192 \u2203 q\u2208rayleighSet(conv \u0393 z), 0<q'. TeX integrated_spatial_occupation.tex:41-47 asserts positive supremum under H:homog and \u0393\u22600. Ledger:3402 and claims.yaml:9242 properly disclose the equivalent positivity input and its later discharge."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.lamZ: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:423 defines 'lamZ \u0393 z c := lam (conv \u0393 z) c'. TeX integrated_spatial_occupation.tex:37-45 defines U_z=\u0393*z and \u03bb_z through its Rayleigh supremum. Ledger:3403 and claims.yaml:9249 faithfully identify the same object on the stated admissible potentials."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.static_rate: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:433-443 assumes tempered \u0393,\u03bc, spectral convention, 'RayleighFloor \u0393', and nonnegative nonzero test z. TeX integrated_spatial_occupation.tex:4-10,41-48 assumes H:homog, \u0393\u22600 and such z. Ledger:3404 and claims.yaml:9256 explicitly disclose the supplied floor, all positive-c conclusions and the generalized bounds; the completed wrapper removes it."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.cut: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:469-471 defines the product of smoothTransition at '(n+4)t\u22121' and '(n+4)(1\u2212t)\u22121'. TeX integrated_spatial_occupation.tex:66-72 instead uses '\u03c7(1/(nt))\u03c7(1/(n(1\u2212t)))', n\u22654. Ledger:3405 and claims.yaml:9263 explicitly disclose the replacement; it is correctly unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.fn: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:475 defines 'density a t * cut n t'. TeX integrated_spatial_occupation.tex:70-74 defines f_a times its endpoint cutoff. Ledger:3406 and claims.yaml:9270 explicitly say the cutoff differs. This is a faithful substitute construction, not an undisclosed assertion of literal equality with the TeX sequence."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.cut_contDiff: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:478-481 proves 'ContDiff R \u221e (cut n)' without parameter hypotheses. TeX integrated_spatial_occupation.tex:66-73 uses a different smooth cutoff. Ledger:3407 and claims.yaml:9277 correctly describe a property of the Lean-only replacement, not a separate TeX step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.cut_mem: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:484-490 proves '0\u2264cut n t \u2227 cut n t\u22641' for every n,t. TeX integrated_spatial_occupation.tex:66-74 uses its own cutoff in a nonnegative approximation. Ledger:3408 and claims.yaml:9284 accurately classify the replacement-cutoff bound as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.cut_eq_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:494-508 assumes 't\u2209(1/(n+4),1\u22121/(n+4))' and concludes cut n t=0. TeX integrated_spatial_occupation.tex:66-73 has different cutoff arguments and asserts endpoint vanishing. Ledger:3409 and claims.yaml:9291 correctly retain the precise Lean support bound without a direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.cut_eventually_one: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:512-529 assumes 't\u2208(0,1)' and concludes eventual equality cut n t=1. TeX integrated_spatial_occupation.tex:66-76 uses its different cutoff sequence to approximate f_a. Ledger:3410 and claims.yaml:9298 accurately state this Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.cut_half: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:532-537 proves 'cut n (1/2)=1' for every natural n. TeX integrated_spatial_occupation.tex:73-74 requires nonzero approximants but states no such identity for this replacement cutoff. Ledger:3411 and claims.yaml:9305 match the correctly unlabelled auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.fn_contDiff: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:543-566 omits ha0,ha1 and proves smoothness for every real a. TeX integrated_spatial_occupation.tex:73 says the zero-extended f_n is 'smooth compact' under 0<a<1. Ledger:3412 and claims.yaml:9312 correctly identify the smoothness component, with the disclosed replacement cutoff."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.fn_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:568-570 proves continuity for every real a and natural n. TeX integrated_spatial_occupation.tex:73 asserts smoothness of its approximants and contains no separate continuity lemma. Ledger:3413 and claims.yaml:9319 accurately classify the auxiliary consequence."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.fn_nonneg: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:540-541,573-580 assumes '0<a<1' and proves '0\u2264fn a n t' for every n,t. TeX integrated_spatial_occupation.tex:4-7,74 uses the same exponent range and positive smooth controls. Ledger:3414 and claims.yaml:9326 match the nonnegativity component."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.fn_le_density: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:583-585 assumes '0<a<1' and 't\u2208(0,1)', concluding 'fn a n t\u2264density a t'. TeX integrated_spatial_occupation.tex:70-76 uses approximants increasing to f_a. Ledger:3415 and claims.yaml:9333 correctly state the domination actually proved, without claiming monotonicity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.fn_tendsto: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:587-593 assumes only 't\u2208(0,1)' and proves fn a n t\u2192density a t. TeX integrated_spatial_occupation.tex:74 says 'increases to f_a'. Ledger:3416 and claims.yaml:9340 accurately state convergence; ledger:3358-3359 explicitly discloses that monotonicity is not proved or used."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.fn_eq_zero: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:595-599 assumes t lies outside '(1/(n+4),1\u22121/(n+4))' and proves fn=0, for arbitrary a. TeX integrated_spatial_occupation.tex:73 says 'vanishes near both endpoints'. Ledger:3417 and claims.yaml:9347 faithfully express that property for the disclosed replacement sequence."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.fn_half_pos: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:602-604 assumes '0<a<1' and proves '0<fn a n (1/2)' for every n. TeX integrated_spatial_occupation.tex:73-74 requires f_n nonzero. Ledger:3418 and claims.yaml:9354 correctly map this stronger explicit witness to the nonzero claim."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.ctrl: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:611 defines 'fn a n p.1 * z p.2'. TeX integrated_spatial_occupation.tex:74 defines '\u03a8_n=f_n\u2297z'. Ledger:3419 and claims.yaml:9361 identify that product construction correctly; the changed temporal cutoff is explicitly disclosed in the section."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.ctrl_mem: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:614-645 assumes '0<a<1', test z, z\u22650 and z\u22600, concluding ctrl\u2208CPos. TeX integrated_spatial_occupation.tex:41,73-75 uses precisely a nonnegative nonzero smooth compact z and positive smooth controls. Ledger:3420 and claims.yaml:9368 preserve those hypotheses."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.kn: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:650 defines '\u222b t in (0,1), |s\u2212t|^(\u2212a)*fn a n t'. TeX integrated_spatial_occupation.tex:71 defines the same temporal potential of its approximant. Ledger:3421 and claims.yaml:9375 match; the diagonal convention changes no Lebesgue integral."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.mean_ctrl: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:654-663 has arbitrary a,\u0393,n,z,s and proves 'mean ... = kn ... * conv \u0393 z'. TeX integrated_spatial_occupation.tex:78-79 states 'the mean is k_n(s)U_z' for admissible smooth controls. Ledger:3422 and claims.yaml:9382 explicitly disclose the unconditional Bochner identity; genuineness is proved separately."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.rate_ctrl: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:666-668 proves unconditionally 'rate ... = lamZ \u0393 z (kn a n s)'. TeX integrated_spatial_occupation.tex:79 states the rate is \u03bb_z(k_n(s)) under the section assumptions. Ledger:3423 and claims.yaml:9389 match and disclose that operator identification is outside Lean."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.rawCost_ctrl: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:672-681 proves unconditionally 'rawCost=(\u222bfn kn)*\u222bz conv \u0393 z'. TeX integrated_spatial_occupation.tex:83-86 gives 'v=B\u0393(z,z)\u222bfn kn' for admissible controls. Ledger:3424 and claims.yaml:9396 correctly name the integral-form cost and pairing bridge; no constant or factor is changed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.kn_integrableOn: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:686-693 assumes '0<a<1' and 's\u2208[0,1]', concluding integrability of the k_n integrand on (0,1). TeX integrated_spatial_occupation.tex:71,75-78 uses the potential without a separate integrability statement. Ledger:3425 and claims.yaml:9403 correctly expose this auxiliary side condition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.kn_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:704-706 assumes '0<a<1' and proves '0\u2264kn a n s' for all real s. TeX integrated_spatial_occupation.tex:78 proves the stronger positive floor on [0,1]. Ledger:3426 and claims.yaml:9410 correctly describe this weaker auxiliary, rather than falsely mapping it to the positive-floor claim."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.kn_le_one: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:710-714 assumes '0<a<1' and 's\u2208[0,1]', proving 'kn a n s\u22641'. TeX integrated_spatial_occupation.tex:76-78 gives k_n(s)\u21911 and k_n(s)\u22641 on the same interval. Ledger:3427 and claims.yaml:9417 accurately map the upper-bound component."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.kn_tendsto: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:719-731 assumes '0<a<1' and 's\u2208[0,1]', proving k_n(s)\u21921. TeX integrated_spatial_occupation.tex:75-77 gives the same limit including endpoints, using monotone convergence. Ledger:3428 and claims.yaml:9424 correctly disclose dominated convergence instead."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.kn_measurable: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:733-741 omits ha0,ha1 and proves 'StronglyMeasurable (kn a n)' for all a,n. TeX integrated_spatial_occupation.tex:79-81 integrates the resulting rates but states no separate measurability lemma. Ledger:3429 and claims.yaml:9431 correctly classify this technical auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.fnkn_integrableOn: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:745-754 assumes '0<a<1' and proves integrability of fn*kn on (0,1). TeX integrated_spatial_occupation.tex:85-88 uses that time integrand in the finite cost and convergence argument. Ledger:3430 and claims.yaml:9438 faithfully identify the explicit integrability auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.fnkn_tendsto: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:758-773 assumes '0<a<1' and proves '\u222bfn kn\u2192TemporalEquilibrium.mass a'. TeX integrated_spatial_occupation.tex:87-88 says the integrand increases to f_a and the cost tends to M_a B\u0393(z,z). Ledger:3431 and claims.yaml:9445 accurately describe the time-factor limit and changed convergence method."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.zE: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:781 defines 'zE z x=ENNReal.ofReal(z x)' without hypotheses. TeX integrated_spatial_occupation.tex:14-19 uses nonnegative representatives for the extended pairing, not an ofReal conversion declaration. Ledger:3432 and claims.yaml:9452 correctly describe the representation auxiliary; z\u22650 is imposed when it represents z."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.pairing_bridge: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:790-797 assumes tempered locally finite \u0393, tempered \u03bc, spectral convention and nonnegative test z; it proves integrability, finite pairing and equality with \u222bzU_z. TeX integrated_spatial_occupation.tex:4-10,41,83-90 has H:homog and such z and asserts the finite spatial factor. Ledger:3433 and claims.yaml:9459 accurately omit strict positivity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.pairing_eq_spatialPair: E:spatial-physical-pair",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:833-841 assumes locally finite \u0393 and continuous compactly supported nonnegative F,G, proving outer integrability and equality of extended and real pairings. TeX integrated_spatial_occupation.tex:13-19 defines the nonnegative physical integral; lines 31-32 reserve signed integrals until absolute convergence. Ledger:3434 and claims.yaml:9466 correctly identify this finite continuous-profile bridge."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.integratedRate_tendsto: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:896-906 assumes tempered \u0393,\u03bc, spectral convention, '0<a<1' and nonnegative test z, concluding I(\u03a8_n)\u2192\u03bb_z(1). TeX integrated_spatial_occupation.tex:79-81 gives that same limit under stronger standing assumptions. Ledger:3435 and claims.yaml:9473 accurately disclose the global-continuity route without a positive k_n floor."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.ctrl_genuine: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:896-899,930-935 assumes tempered spectral data, '0<a<1' and nonnegative test z; it concludes all Rayleigh sets nonempty/bounded and rate and cost integrands integrable. TeX integrated_spatial_occupation.tex:74-88 uses those genuine quantities implicitly. Ledger:3436 and claims.yaml:9480 correctly classify the explicit bookkeeping as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.score_tendsto: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:896-899,968-980 adds locally finite \u0393 and proves 'I(\u03a8_n)\u2212v(\u03a8_n)/2\u2192\u03bb_z(1)\u2212mass(a)B/2'. TeX integrated_spatial_occupation.tex:81,87-93 takes exactly these limits, explicitly not requiring score monotonicity. Ledger:3437 and claims.yaml:9487 match the factors and physical-pairing interpretation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.static_score: E:spatial-static-score",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:988-999 adds 'z\u22600' and locally finite \u0393 to the score-section assumptions, proving finite B and '\u2200 y<bound, \u2203 \u03a8\u2208CPos, y<score' with integrable rate/time cost. TeX integrated_spatial_occupation.tex:41,50-53 states S1pos\u2265the same bound. Ledger:3438 and claims.yaml:9494 explicitly disclose the existential form and absent floor/nonzero-covariance assumptions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.isUnitH1_dil: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:1008-1018 assumes 'IsUnitH1 f g' and '0<r', proving preservation of the unit pair and gradient-energy scaling r\u00b2. TeX integrated_unmasked_variational.tex:260-263 states analogous H\u00b9 dilation facts, but this declaration serves the constant-potential Lean route. Ledger:3439 and claims.yaml:9501 correctly leave it unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.rayleighSet_const: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:1022-1055 assumes only real K and proves nonemptiness, boundedness and supremum K for the constant potential. TeX integrated_spatial_occupation.tex:41-45 concerns U_z under H:homog and does not state this constant-potential theorem. Ledger:3440 and claims.yaml:9508 accurately describe the auxiliary calibration."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.lamSq_const: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:1058-1059 proves 'lamSq (fun _=>m) c=c*m' for arbitrary real m,c. TeX integrated_spatial_occupation.tex:41-48 only concerns admissible U_z and c>0, and contains no constant-potential identity. Ledger:3441 and claims.yaml:9515 correctly map this as unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.rayleighFloor_volume: no direct label",
+      "verdict": "FAIL",
+      "reason": "The theorem SpatialStaticControls.lean:1064-1075 correctly states 'RayleighFloor (volume : Measure (Rd d))' without H:homog. But ledger:3442 adds 'white noise; in d=1 this satisfies H:homog with \u03b1=1', and claims.yaml:9522 also calls volume white noise. TeX notes_stratonovich_ham_second_moment.tex:201-206 requires \u0393(cA)=c^(d\u2212\u03b1)\u0393(A) and identifies white noise as \u0393=\u03b40. Volume has \u03b1=0, not \u03b1=1. See W1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.spatial_static_controls_rate_paper: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:1094-1101 assumes 'HomogCovariance', '\u0393\u22600', 'RayleighFloor \u0393' and nonnegative nonzero test z. TeX integrated_spatial_occupation.tex:4-10,41-48 has the same manuscript assumptions but no separate floor input. Ledger:3443 and claims.yaml:9529 explicitly disclose that supplied input and its completed discharge; the conclusions match part (i)."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.spatial_static_score_paper: E:spatial-static-score",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:1123-1133 assumes 'HomogCovariance', '\u0393\u22600', test z, z\u22650 and z\u22600; it concludes finite B, genuine Rayleigh supremum and the existential score bound. TeX integrated_spatial_occupation.tex:4-10,41,50-53 has those same hypotheses. Ledger:3444 and claims.yaml:9536 accurately disclose the existential form and unused \u0393\u22600."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialStaticControls.spatial_static_score_sSup_paper: E:spatial-static-score",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:1147-1155 adds 'S1Bdd alpha0 \u0393' and concludes the exact inequality \u03bb_z(1)\u2212M_a B/2\u2264S1pos. TeX integrated_spatial_occupation.tex:8-10,50-53 uses the finite supremum supplied by integrated_unmasked_variational.tex:272-274. Ledger:3445 and claims.yaml:9543 correctly identify this boundedness input rather than claiming its proof."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationCompleted.rayleighFloor_of_homog: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationCompleted.lean:73-81 assumes only 'HomogCovariance d alpha alpha0 \u0393 \u03bc' and '\u0393\u22600', concluding RayleighFloor \u0393. TeX integrated_spatial_occupation.tex:4-10,41-47 asserts the corresponding positivity for every admissible z. Ledger:3111 and claims.yaml:9551 faithfully state the discharge; the dilation-floor route, unlike TeX:57-62, is explicitly disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationCompleted.spatial_static_controls_completed_paper: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationCompleted.lean:93-102 assumes 'HomogCovariance', '\u0393\u22600', test z, z\u22650 and z\u22600, with no floor hypothesis. TeX integrated_spatial_occupation.tex:4-10,41-48 has precisely those hypotheses. All positive-c finiteness, positivity, square-root equality and compact-positive-interval Lipschitz conclusions appear. Ledger:3112 and claims.yaml:9558 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationCompleted.staticControls_of_homog: L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationCompleted.lean:109-124 assumes only 'HomogCovariance' and '\u0393\u22600', proving StaticControls alpha0 \u0393. TeX integrated_spatial_occupation.tex:4-10,41-53 supplies finite Rayleigh values and the static score inequality for every nonnegative nonzero test. The existential weakening and real-pairing conversion are explicit in ledger:3113 and claims.yaml:9565; no stronger supplied input remains."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationCompleted.spatial_smooth_score_completed_paper: P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationCompleted.lean:133-138 assumes 'HomogCovariance', '\u0393\u22600' and 'IsUnitTest g', proving every y below smoothScoreBound is exceeded by a control score. TeX integrated_spatial_occupation.tex:4-10,100-108 uses the same covariance and real unit-test class. The bound k[R\u03b1^(\u03b1/2)/(8M_aq^(q/2))]^(1/k) and existential qualification match ledger:3114 and claims.yaml:9572."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationCompleted.spatial_smooth_score_sSup_completed_paper: P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationCompleted.lean:145-149 assumes 'HomogCovariance', '\u0393\u22600', 'S1Bdd alpha0 \u0393' and 'IsUnitTest g', concluding smoothScoreBound\u2264S1pos. TeX integrated_spatial_occupation.tex:8-10,100-108 uses the finite S1pos from integrated_unmasked_variational.tex:272-274. Ledger:3115 and claims.yaml:9579 accurately identify that sole supplied boundedness input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationCompleted.R0_finite_of_S1Bdd_completed_paper: P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationCompleted.lean:156-161 assumes 'HomogCovariance', '\u0393\u22600' and 'S1Bdd alpha0 \u0393', concluding BddAbove ratioSet and R0\u22648M_a q^(q/2)(S1pos/k)^k/\u03b1^(\u03b1/2). TeX integrated_spatial_occupation.tex:141-145 obtains exactly this bound from the already finite S1pos. Ledger:3116 and claims.yaml:9586 preserve all factors and hypotheses."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationCompleted.spatial_smooth_ratio_completed_paper: P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationCompleted.lean:168-176 assumes only 'HomogCovariance' and '\u0393\u22600', proving a nonempty bounded ratio set, R0>0 and the existential score bound for every unit test. TeX integrated_spatial_occupation.tex:4-10,98-108 has the same hypotheses and conclusions in supremum form. Ledger:3117 and claims.yaml:9593 accurately disclose the existential form and additional deterministic resolvent bound."
+    },
+    {
+      "claim": "PARA-SpatialStaticControls",
+      "verdict": "FAIL",
+      "reason": "The main correspondence disclosures in ledger:3257-3370 are sound: equivalent RayleighFloor input, its discharge, alternative cutoff, dominated convergence, absent k_n floor, integral-form cost and S1Bdd restriction. However ledger:3306-3307 calls Lebesgue covariance 'white noise', repeated with a false H:homog example in row 3442. TeX notes_stratonovich_ham_second_moment.tex:201-206 and HomogHypothesis.lean:77-80 contradict this identification. See W1."
+    },
+    {
+      "claim": "PARA-SpatialOccupationCompleted",
+      "verdict": "PASS",
+      "reason": "Ledger:3070-3107 correctly describes SpatialOccupationCompleted.lean:73-176. RayleighFloor is derived from the dilation floor under H:homog and \u0393\u22600; StaticControls is derived using the two explicit conversions; the four wrappers remove StaticControls; only the two supremum corollaries retain S1Bdd. TeX integrated_spatial_occupation.tex:4-10,40-108 confirms the standing assumptions, and the differing positivity route and object boundaries are disclosed."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "Ledger:421-427 lists each of the 79 reviewed declarations exactly once, with the same label as its section row. The unlabelled auxiliaries are under no direct label. Searching label definitions across the supplied manuscript found every label cited by these sections, including the static, smooth-ratio, physical-pairing, temporal-equilibrium, original-cost and variational labels. No relevant missing or duplicate declaration was found."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:438-461 and 811-837 correctly classify the input-free completed main wrappers as same-assumptions with weaker scoped conclusions. Their scopes explicitly retain the Rayleigh/integral-form boundary, existential scores and S1Bdd-dependent supremum corollaries. The deterministic R0 route is disclosed. docs/coverage-scope-tex.yaml:7-9,22-24 agrees with those scope sentences; the listed claim identifiers resolve to the described declarations."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "FAIL",
+      "reason": "Most cross-references, including Scope:138-148 and Not in Lean:4902-4912, correctly describe the completed wrappers and S1Bdd boundary. But ledger:3210-3212 still says the identification of spatialPair with OccupationKernelRow.pairing is 'Not formalized'. SpatialStaticControls.lean:833-841 proves that exact bridge, and SpatialOccupationCompleted.lean:115-118 uses it. This stale boundary statement contradicts ledger:3335-3339. See W2."
+    }
+  ],
+  "findings": {
+    "fatal": [
+      "W1 \u2014 rayleighFloor_volume / PARA-SpatialStaticControls: candidate/statement-ledger.md:3442 says '\u0393 = Lebesgue measure (white noise; in d = 1 this satisfies H:homog with \u03b1 = 1)', and :3306-3307 repeats the white-noise identification; lean/claims.yaml:9522 repeats it. The Lean theorem actually states only 'RayleighFloor (volume : Measure (Rd d))' at lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:1064. TeX manuscript/notes/notes_stratonovich_ham_second_moment.tex:201-206 requires '\u0393(cA)=c^(d\u2212\u03b1)\u0393(A)' and identifies spatial white noise as '\u0393=\u03b40'. Lebesgue covariance scales as c^d, hence corresponds to \u03b1=0 and is excluded by H:homog's positive-\u03b1 range; it is spatially constant covariance, not spatial white noise. Fix the ledger row, paragraph, claims summary/keyword and matching Lean comments (:66-67,1061-1063) to describe an unrestricted Lebesgue-covariance satisfiability example outside H:homog. The theorem itself needs no change."
+    ],
+    "major": [
+      "W2 \u2014 CROSS-REFERENCES: candidate/statement-ledger.md:3210-3212 says 'Not formalized: the identification of spatialPair with OccupationKernelRow.pairing'. In contrast, lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:833-841 assumes locally finite \u0393 and continuous, compactly supported, nonnegative F,G and proves 'pairing \u0393 (ofReal \u2218 F) (ofReal \u2218 G) = ofReal (spatialPair \u0393 F G)' and equality of toReal values. This is the finite-profile identification of TeX manuscript/notes/integrated_spatial_occupation.tex:15-19, 'B\u0393(f,h)=\u222bf(x)h(x\u2212y)d\u03bd', and is used by SpatialOccupationCompleted.lean:115-118. Replace the stale exclusion with: the bridge is not proved inside SpatialSmoothRatio, but is proved by SpatialStaticControls.pairing_eq_spatialPair and used in SpatialOccupationCompleted."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Correct the Lebesgue/white-noise/H:homog identification in the reviewed ledger paragraph and rayleighFloor_volume row, claims.yaml summary/keyword, and matching explanatory Lean comments. Preserve the valid RayleighFloor(volume) theorem, but explicitly state that this example lies outside H:homog.",
+    "Update the SpatialSmoothRatio cross-reference at candidate/statement-ledger.md:3210-3212 to acknowledge the pairing bridge proved in SpatialStaticControls and used by SpatialOccupationCompleted."
+  ],
+  "limitations": [
+    "Requirement A was completed. Partial-file entries above concern material outside the required sections/ranges; unrelated ledger rows and library results were not re-reviewed.",
+    "Lean compilation, absence of sorry and standard-axiom status were accepted as stipulated; no build or proof re-verification was performed.",
+    "Refutation files mentioned by the ledger are not included in the frozen packet; their existence and compilation were not independently checked.",
+    "The mathematical content of the completed main wrappers was found faithful within the explicitly disclosed Rayleigh-form, integral-cost and existential-score boundaries. The FAIL verdict concerns the false covariance example and contradictory coverage cross-reference, not a discovered failure of those proofs.",
+    "This is an AI correspondence review, not human verification or a novelty audit."
+  ]
+}

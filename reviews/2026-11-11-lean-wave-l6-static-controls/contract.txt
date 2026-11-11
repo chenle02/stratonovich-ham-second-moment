@@ -1,0 +1,161 @@
+Independent correspondence review: newly formalized whole labelled result(s) (Lean ledger rows) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  250cf39732f0). Review ONLY its sections "SpatialStaticControls (whole result)", "SpatialOccupationCompleted (whole result)", the index rows for
+  them, and the items named in the global checks below. All other rows were
+  reviewed earlier.
+- the Lean modules (ground truth for what each declaration states):
+  lean/StratonovichHAMSecondMoment/*.lean (every library module; these
+  sections' own modules: SpatialStaticControls, SpatialOccupationCompleted, VariationalFloor)
+  and lean/claims.yaml, lean/coverage.yaml, docs/coverage-scope-tex.yaml.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  975feb31ea65. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that L:spatial-static-controls (with the Rayleigh floor discharged) and the completed wrappers of L:spatial-static-controls and P:spatial-smooth-ratio are formalized as stated in their
+rows: every conclusion proved, with hypotheses that match the manuscript,
+apart from side conditions the TeX leaves implicit and inputs explicitly
+declared as supplied. Test that claim hard: any Lean hypothesis that the
+manuscript does not have, any manuscript hypothesis the Lean drops, any
+weaker Lean conclusion, any changed constant, range, quantifier order or
+strictness, any modelling choice that changes the mathematical object, any
+supplied hypothesis stronger than the manuscript result it stands for, any
+row labelled as a step of a TeX proof that is really an auxiliary of a
+different Lean proof route, and any declaration missing from or duplicated
+in the Index, is a finding, unless the ledger states it AND it is genuinely
+harmless. Decide that yourself from the TeX; do not accept the ledger's word.
+Pay attention to: lambda_z positive, finite, Lipschitz on compact positive c-intervals; that RayleighFloor is equivalent to the positivity claim and is discharged from H:homog and Gamma != 0 in SpatialOccupationCompleted (the TeX route differs: say so); E:spatial-static-score in existential form, sSup only under S1Bdd; the cutoff f_n route; pairing_eq_spatialPair and isUnitH1_of_unitTest bridges; that the completed wrappers have exactly the manuscript hypotheses.
+
+CHECKS (exactly these 84, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.SpatialStaticControls.IsUnitH1: L:spatial-static-controls"
+  2. claim "StratonovichHAMSecondMoment.SpatialStaticControls.isUnitH1_of_test: no direct label"
+  3. claim "StratonovichHAMSecondMoment.SpatialStaticControls.isUnitH1_of_unitTest: no direct label"
+  4. claim "StratonovichHAMSecondMoment.SpatialStaticControls.exists_isUnitH1: no direct label"
+  5. claim "StratonovichHAMSecondMoment.SpatialStaticControls.isRayleighTrial_iff_of_bounded: no direct label"
+  6. claim "StratonovichHAMSecondMoment.SpatialStaticControls.rayleighSet_nonempty_of_bounded: no direct label"
+  7. claim "StratonovichHAMSecondMoment.SpatialStaticControls.integral_pot_le: no direct label"
+  8. claim "StratonovichHAMSecondMoment.SpatialStaticControls.rayleighValue_le: no direct label"
+  9. claim "StratonovichHAMSecondMoment.SpatialStaticControls.rayleighSet_bddAbove: no direct label"
+  10. claim "StratonovichHAMSecondMoment.SpatialStaticControls.lamSq: L:spatial-static-controls"
+  11. claim "StratonovichHAMSecondMoment.SpatialStaticControls.lam: L:spatial-static-controls"
+  12. claim "StratonovichHAMSecondMoment.SpatialStaticControls.lam_eq_sqrt: L:spatial-static-controls"
+  13. claim "StratonovichHAMSecondMoment.SpatialStaticControls.bound_nonneg: no direct label"
+  14. claim "StratonovichHAMSecondMoment.SpatialStaticControls.abs_cU_le: no direct label"
+  15. claim "StratonovichHAMSecondMoment.SpatialStaticControls.trial_cU_iff: no direct label"
+  16. claim "StratonovichHAMSecondMoment.SpatialStaticControls.value_cU: no direct label"
+  17. claim "StratonovichHAMSecondMoment.SpatialStaticControls.integral_U_mem: no direct label"
+  18. claim "StratonovichHAMSecondMoment.SpatialStaticControls.cU_nonempty: L:spatial-static-controls"
+  19. claim "StratonovichHAMSecondMoment.SpatialStaticControls.cU_bddAbove: L:spatial-static-controls"
+  20. claim "StratonovichHAMSecondMoment.SpatialStaticControls.lamSq_le: L:spatial-static-controls"
+  21. claim "StratonovichHAMSecondMoment.SpatialStaticControls.lamSq_le_add: no direct label"
+  22. claim "StratonovichHAMSecondMoment.SpatialStaticControls.lamSq_lip: L:spatial-static-controls"
+  23. claim "StratonovichHAMSecondMoment.SpatialStaticControls.lamSq_mono: L:spatial-static-controls"
+  24. claim "StratonovichHAMSecondMoment.SpatialStaticControls.lam_mono: L:spatial-static-controls"
+  25. claim "StratonovichHAMSecondMoment.SpatialStaticControls.lam_continuous: no direct label"
+  26. claim "StratonovichHAMSecondMoment.SpatialStaticControls.lam_lipschitzOn: L:spatial-static-controls"
+  27. claim "StratonovichHAMSecondMoment.SpatialStaticControls.conv_const_mul: no direct label"
+  28. claim "StratonovichHAMSecondMoment.SpatialStaticControls.convZ_props: L:spatial-static-controls"
+  29. claim "StratonovichHAMSecondMoment.SpatialStaticControls.RayleighFloor: no direct label"
+  30. claim "StratonovichHAMSecondMoment.SpatialStaticControls.lamZ: L:spatial-static-controls"
+  31. claim "StratonovichHAMSecondMoment.SpatialStaticControls.static_rate: L:spatial-static-controls"
+  32. claim "StratonovichHAMSecondMoment.SpatialStaticControls.cut: no direct label"
+  33. claim "StratonovichHAMSecondMoment.SpatialStaticControls.fn: L:spatial-static-controls"
+  34. claim "StratonovichHAMSecondMoment.SpatialStaticControls.cut_contDiff: no direct label"
+  35. claim "StratonovichHAMSecondMoment.SpatialStaticControls.cut_mem: no direct label"
+  36. claim "StratonovichHAMSecondMoment.SpatialStaticControls.cut_eq_zero: no direct label"
+  37. claim "StratonovichHAMSecondMoment.SpatialStaticControls.cut_eventually_one: no direct label"
+  38. claim "StratonovichHAMSecondMoment.SpatialStaticControls.cut_half: no direct label"
+  39. claim "StratonovichHAMSecondMoment.SpatialStaticControls.fn_contDiff: L:spatial-static-controls"
+  40. claim "StratonovichHAMSecondMoment.SpatialStaticControls.fn_continuous: no direct label"
+  41. claim "StratonovichHAMSecondMoment.SpatialStaticControls.fn_nonneg: L:spatial-static-controls"
+  42. claim "StratonovichHAMSecondMoment.SpatialStaticControls.fn_le_density: L:spatial-static-controls"
+  43. claim "StratonovichHAMSecondMoment.SpatialStaticControls.fn_tendsto: L:spatial-static-controls"
+  44. claim "StratonovichHAMSecondMoment.SpatialStaticControls.fn_eq_zero: L:spatial-static-controls"
+  45. claim "StratonovichHAMSecondMoment.SpatialStaticControls.fn_half_pos: L:spatial-static-controls"
+  46. claim "StratonovichHAMSecondMoment.SpatialStaticControls.ctrl: L:spatial-static-controls"
+  47. claim "StratonovichHAMSecondMoment.SpatialStaticControls.ctrl_mem: L:spatial-static-controls"
+  48. claim "StratonovichHAMSecondMoment.SpatialStaticControls.kn: L:spatial-static-controls"
+  49. claim "StratonovichHAMSecondMoment.SpatialStaticControls.mean_ctrl: L:spatial-static-controls"
+  50. claim "StratonovichHAMSecondMoment.SpatialStaticControls.rate_ctrl: L:spatial-static-controls"
+  51. claim "StratonovichHAMSecondMoment.SpatialStaticControls.rawCost_ctrl: L:spatial-static-controls"
+  52. claim "StratonovichHAMSecondMoment.SpatialStaticControls.kn_integrableOn: no direct label"
+  53. claim "StratonovichHAMSecondMoment.SpatialStaticControls.kn_nonneg: no direct label"
+  54. claim "StratonovichHAMSecondMoment.SpatialStaticControls.kn_le_one: L:spatial-static-controls"
+  55. claim "StratonovichHAMSecondMoment.SpatialStaticControls.kn_tendsto: L:spatial-static-controls"
+  56. claim "StratonovichHAMSecondMoment.SpatialStaticControls.kn_measurable: no direct label"
+  57. claim "StratonovichHAMSecondMoment.SpatialStaticControls.fnkn_integrableOn: no direct label"
+  58. claim "StratonovichHAMSecondMoment.SpatialStaticControls.fnkn_tendsto: L:spatial-static-controls"
+  59. claim "StratonovichHAMSecondMoment.SpatialStaticControls.zE: no direct label"
+  60. claim "StratonovichHAMSecondMoment.SpatialStaticControls.pairing_bridge: L:spatial-static-controls"
+  61. claim "StratonovichHAMSecondMoment.SpatialStaticControls.pairing_eq_spatialPair: E:spatial-physical-pair"
+  62. claim "StratonovichHAMSecondMoment.SpatialStaticControls.integratedRate_tendsto: L:spatial-static-controls"
+  63. claim "StratonovichHAMSecondMoment.SpatialStaticControls.ctrl_genuine: no direct label"
+  64. claim "StratonovichHAMSecondMoment.SpatialStaticControls.score_tendsto: L:spatial-static-controls"
+  65. claim "StratonovichHAMSecondMoment.SpatialStaticControls.static_score: E:spatial-static-score"
+  66. claim "StratonovichHAMSecondMoment.SpatialStaticControls.isUnitH1_dil: no direct label"
+  67. claim "StratonovichHAMSecondMoment.SpatialStaticControls.rayleighSet_const: no direct label"
+  68. claim "StratonovichHAMSecondMoment.SpatialStaticControls.lamSq_const: no direct label"
+  69. claim "StratonovichHAMSecondMoment.SpatialStaticControls.rayleighFloor_volume: no direct label"
+  70. claim "StratonovichHAMSecondMoment.SpatialStaticControls.spatial_static_controls_rate_paper: L:spatial-static-controls"
+  71. claim "StratonovichHAMSecondMoment.SpatialStaticControls.spatial_static_score_paper: E:spatial-static-score"
+  72. claim "StratonovichHAMSecondMoment.SpatialStaticControls.spatial_static_score_sSup_paper: E:spatial-static-score"
+  73. claim "StratonovichHAMSecondMoment.SpatialOccupationCompleted.rayleighFloor_of_homog: L:spatial-static-controls"
+  74. claim "StratonovichHAMSecondMoment.SpatialOccupationCompleted.spatial_static_controls_completed_paper: L:spatial-static-controls"
+  75. claim "StratonovichHAMSecondMoment.SpatialOccupationCompleted.staticControls_of_homog: L:spatial-static-controls"
+  76. claim "StratonovichHAMSecondMoment.SpatialOccupationCompleted.spatial_smooth_score_completed_paper: P:spatial-smooth-ratio"
+  77. claim "StratonovichHAMSecondMoment.SpatialOccupationCompleted.spatial_smooth_score_sSup_completed_paper: P:spatial-smooth-ratio"
+  78. claim "StratonovichHAMSecondMoment.SpatialOccupationCompleted.R0_finite_of_S1Bdd_completed_paper: P:spatial-smooth-ratio"
+  79. claim "StratonovichHAMSecondMoment.SpatialOccupationCompleted.spatial_smooth_ratio_completed_paper: P:spatial-smooth-ratio"
+  80. claim "PARA-SpatialStaticControls": the "SpatialStaticControls (whole result)" section paragraph is accurate, cites the right files and lines at 975feb3, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input, proof-route difference and what is not formalized, and does not overclaim
+  81. claim "PARA-SpatialOccupationCompleted": the "SpatialOccupationCompleted (whole result)" section paragraph is accurate, cites the right files and lines at 975feb3, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input, proof-route difference and what is not formalized, and does not overclaim
+  82. claim "LEDGER-INDEX": every one of these 79 declarations appears EXACTLY ONCE in the "Index by label" table, under the same label as its section row (an additional listing only as an explicitly marked cross-reference), route auxiliaries in a "no direct label" row, and every label cited in the sections exists in the manuscript (search \label across all files)
+  83. claim "COVERAGE-ROWS": the coverage.yaml rows L:spatial-static-controls (new, same-assumptions, weaker) and P:spatial-smooth-ratio (carried by the completed wrapper) and their docs/coverage-scope-tex.yaml entries: classes, conclusions, scopes, notes and claims are right
+  84. claim "CROSS-REFERENCES": every other place in the ledger that points to these sections or their labels (other sections, the "Not in Lean" section, Scope) is accurate
+For each row check (1-79): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: these sections' own
+   Lean modules (lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean, lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean, lean/StratonovichHAMSecondMoment/VariationalFloor.lean), and,
+   for every other declaration a row names, that declaration in its module;
+   the sections "SpatialStaticControls (whole result)", "SpatialOccupationCompleted (whole result)" and the "Scope" and "Index by label" sections of
+   candidate/statement-ledger.md; the entries of lean/claims.yaml for these
+   modules; lean/coverage.yaml; docs/coverage-scope-tex.yaml;
+   manuscript/notes/integrated_spatial_occupation.tex,
+   lines 260-340 of manuscript/notes/integrated_unmasked_variational.tex,
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 84 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-79.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.
