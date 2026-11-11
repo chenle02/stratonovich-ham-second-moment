@@ -380,9 +380,11 @@
 - **WAVE L5: APPROVED by Le (2026-11-11) as proposed, with the default
   answers to the three decisions; OPENED** (six items launched in parallel
   worktrees, branches wave-l5/a..f off companion main 3a7d57f).
-  **Status (2026-11-11): integrated, reviewed, confirmation PASS; gate is
-  Le's; Easley replay of the seven new modules pending (needs the Easley
-  login).**
+  **WAVE L5 CORRESPONDENCE GATE: CLOSED (Le, 2026-11-11)** at companion
+  712c307 over manuscript 975feb3: Le accepted the six Codex reviews plus the
+  confirmation review. Recorded in the companion README (a7f90b0) and the
+  board (docs/community 6064dec); #16, #3 and #24 told. Easley replay of the
+  new modules: job 5690458 running (record follows).
   - Items (each verified independently by the integrator: build, refutations
     and audit exit 0 with no warnings, no sorryAx, forbidden-token grep
     empty), all with nothing supplied unless stated, no manuscript defect
@@ -433,8 +435,8 @@
     unlabelled; coverage 46 rows (26 same-assumptions incl. 4 narrower,
     3 more with every conclusion proved and inputs supplied, 13 steps,
     4 outside); 33 whole-result modules, 56 library modules.
-  - Open: Easley leanchecker --fresh of the seven new modules (needs
-    `! ssh -fN Easley`); board update on docs/community; Le's gate. From the board
+  - Open: the Easley leanchecker --fresh replay (job 5690458, nine targets:
+    the seven new modules, the umbrella and Axioms; default mode for all 59). From the board
   (companion branch docs/community), excluding the reserved B3, B4, B9.
   Three read-only feasibility reconnaissances against the TeX at 975feb3,
   every Mathlib name probed by compiling scratch files against the
@@ -619,7 +621,7 @@
 | L2 | CLOSED (Le) | 2026-11-10 | Three whole results (C26, B23, B24); verified-private at 79afdde; reviews/2026-11-10-lean-wave-l2-* |
 | L3 | CLOSED (Le) | 2026-11-10 | Four items (B6, B16, B14 with a D4 slice, C22 finite slice); gate at companion dfc2fe8 over 3920258; reviews/2026-11-10-lean-wave-l3-* |
 | L4 | CLOSED (Le) | 2026-11-11 | Four items (masked spectral growth and B14 input discharge, time-Schur and masked modulation, frequency row, occupation kernel row); gate at companion ac6f767 over 3920258; reviews/2026-11-11-lean-wave-l4-* |
-| L5 | REVIEWED, gate pending (Le) | 2026-11-11 | Six items (H_a completion with B24 at same assumptions, masked continuous wave, masked auxiliary norm, rest of the damped-norm lemma, heat envelope and global mean, phase Bessel); defaults for the three decisions |
+| L5 | CLOSED (Le) | 2026-11-11 | Six items (H_a completion with B24 at same assumptions, masked continuous wave, masked auxiliary norm, rest of the damped-norm lemma, heat envelope and global mean, phase Bessel); gate at companion 712c307 over 975feb3; reviews/2026-11-11-lean-wave-l5-* |
 
 ## New proof seams retained for later statement fences
 
