@@ -379,7 +379,62 @@
   C3, C20, E3 (need D5, D8 or D1). B3, B4, B9 stay reserved.
 - **WAVE L5: APPROVED by Le (2026-11-11) as proposed, with the default
   answers to the three decisions; OPENED** (six items launched in parallel
-  worktrees, branches wave-l5/a..f off companion main 3a7d57f). From the board
+  worktrees, branches wave-l5/a..f off companion main 3a7d57f).
+  **Status (2026-11-11): integrated, reviewed, confirmation PASS; gate is
+  Le's; Easley replay of the seven new modules pending (needs the Easley
+  login).**
+  - Items (each verified independently by the integrator: build, refutations
+    and audit exit 0 with no warnings, no sorryAx, forbidden-token grep
+    empty), all with nothing supplied unless stated, no manuscript defect
+    found:
+    - L5-a TimeCompletion: H_a built as the completion of L^2(0,T) under the
+      time form; positivity PROVED (subordination); separability, Schur
+      extension, complexified norm, interval amplitudes; density of the real
+      compact smooth tests, so H_a is the TeX's completion (decision 3 stretch
+      done, not narrower). B24 L:masked-trig-products re-issued with nothing
+      supplied (masked_trig_products_completed_paper).
+    - L5-b MaskedContinuousWave (exact constant C_1 = 4 3^(1-a) C_0, route via
+      B24 at shifted frequencies) and MaskedContinuousWaveCompleted
+      (instantiated with H_a): L:masked-continuous-wave nothing supplied.
+    - L5-c MaskedAuxiliaryNorm: P:masked-auxiliary-norm, same assumptions,
+      narrower only by the real-H clause after complexification.
+    - L5-d DampedNormsHomog: rest of L:damped-homogeneous-norms (scalings,
+      both tails, smoothing/truncation in Le's reading); N_0 with the Green
+      mass identity G_s(R^d) = s supplied as GreenMass. Coverage row by Le's
+      decision: inputs-supplied, conclusion full; its scope-tex entry deleted.
+    - L5-e VariationalMean: L:variational-heat-envelope (full) and the display
+      of L:variational-global-mean (mixed-derivative sentence not
+      formalized); the IsRayleighTrial side condition is automatic for h_s.
+    - L5-f PhaseBessel: L:phase-bessel, full, more general.
+  - Companion: branches wave-l5/a..f, integration 3039df3; umbrella/Axioms
+    d476330 (1115 axiom-report entries, standard three only); docs
+    225c589..75a34db (claims, coverage, ledger, README/FORMALIZATION);
+    comparator 210cc3f (810 of 810 theorem claims; CheckFidelity 975 copied
+    constants and 810/810 types equal, 0 problems; planted mutation caught;
+    21 absolute paths removed from scaffold.json); check-controls PASS
+    (68 controls, 92 refutations, 57 audits).
+  - Reviews (Codex GPT-6.1-Sol, high) at 210cc3f over 975feb3: DampedNormsHomog
+    PASS_WITH_NOTES (2 minor); TimeCompletion, MaskedContinuousWave,
+    MaskedAuxiliaryNorm, VariationalMean, PhaseBessel FAIL on documentation
+    only (6 major: index completeness, two route helpers labelled as TeX
+    steps, one summary's parameter domains). All 8 accepted, repaired at
+    43837e9..712c307 (incl. a comment-only module-doc fix). Evidence Article
+    ac92bf5 (reviews/2026-11-11-lean-wave-l5-*). Confirmation at 712c307:
+    PASS/high, 16/16, no findings (Article b0cdf9e,
+    reviews/2026-11-11-lean-wave-l5-confirm).
+  - Receipts at 712c307 (committed 5df6b9e): comparator pass (810 theorems);
+    lower tier 0 sorry, 972 claim axioms standard, peak 7.4 GiB. (Receipts at
+    210cc3f also passed; superseded by the repair commit, kept in session
+    scratch.) Re-gated verified-private d40f394 -> 712c307 with comparator
+    evidence; claims synced; `claims ledger`: READY, ok, 655 required, 945
+    verified, 0 open, 27 out-of-scope (internal helper definitions).
+    README verification record 78819e8.
+  - Totals: 972 claims (810 theorems, 162 definitions); 535 labelled, 437
+    unlabelled; coverage 46 rows (26 same-assumptions incl. 4 narrower,
+    3 more with every conclusion proved and inputs supplied, 13 steps,
+    4 outside); 33 whole-result modules, 56 library modules.
+  - Open: Easley leanchecker --fresh of the seven new modules (needs
+    `! ssh -fN Easley`); board update on docs/community; Le's gate. From the board
   (companion branch docs/community), excluding the reserved B3, B4, B9.
   Three read-only feasibility reconnaissances against the TeX at 975feb3,
   every Mathlib name probed by compiling scratch files against the
@@ -564,7 +619,7 @@
 | L2 | CLOSED (Le) | 2026-11-10 | Three whole results (C26, B23, B24); verified-private at 79afdde; reviews/2026-11-10-lean-wave-l2-* |
 | L3 | CLOSED (Le) | 2026-11-10 | Four items (B6, B16, B14 with a D4 slice, C22 finite slice); gate at companion dfc2fe8 over 3920258; reviews/2026-11-10-lean-wave-l3-* |
 | L4 | CLOSED (Le) | 2026-11-11 | Four items (masked spectral growth and B14 input discharge, time-Schur and masked modulation, frequency row, occupation kernel row); gate at companion ac6f767 over 3920258; reviews/2026-11-11-lean-wave-l4-* |
-| L5 | OPEN (approved by Le) | 2026-11-11 | Six items (H_a completion with B24 at same assumptions, masked continuous wave, masked auxiliary norm, rest of the damped-norm lemma, heat envelope and global mean, phase Bessel); defaults for the three decisions |
+| L5 | REVIEWED, gate pending (Le) | 2026-11-11 | Six items (H_a completion with B24 at same assumptions, masked continuous wave, masked auxiliary norm, rest of the damped-norm lemma, heat envelope and global mean, phase Bessel); defaults for the three decisions |
 
 ## New proof seams retained for later statement fences
 
