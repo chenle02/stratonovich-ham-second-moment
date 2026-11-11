@@ -1,0 +1,15 @@
+# LaTeX versions of coverage.yaml conclusion_scope sentences, for typesetting (e.g. the book appendix).
+# Same content as the ASCII sentence in coverage.yaml; math in $...$ with the manuscript macros;
+# manuscript labels are bare (a generator turns them into references). coverage/1 has no field for this,
+# so it lives here. Keyed by manuscript label; ascii repeats the coverage.yaml text so drift is detectable.
+schema: coverage-scope-tex/1
+rows:
+- label: L:damped-homogeneous-norms
+  ascii: "Lean proves, under H:homog, that the N_1 and N_2 integrals of E:damped-norm-definitions are finite for every theta > 0 and that N_2(theta)^2 >= 0, and derives the spectral homogeneity mu(cA) = c^alpha mu(A) of the first sentence of the proof; N_0, the scaling identities, the tails E:damped-tail-norms and the smoothing and truncation assertions are not formalized."
+  tex: "Lean proves, under H:homog, that the $N_1$ and $N_2$ integrals of E:damped-norm-definitions are finite for every $\\theta>0$ and that $N_2(\\theta)^2\\ge0$, and derives the spectral homogeneity $\\mu(cA)=c^\\alpha\\mu(A)$ of the first sentence of the proof; $N_0$, the scaling identities, the tails E:damped-tail-norms and the smoothing and truncation assertions are not formalized."
+- label: L:tube-rayleigh-tail
+  ascii: "Lean proves the bound with integrability and the finite head integral; the \"In particular\" application to the coarse-envelope bound of another proposition is not formalized."
+  tex: "Lean proves the bound with integrability and the finite head integral; the ``In particular'' application to the coarse-envelope bound of another proposition is not formalized."
+- label: L:variational-control-dilation
+  ascii: "Lean proves the bijection and the four identities with the section's hypotheses (H:homog, Gamma != 0, a = alpha0) and nothing supplied, for the variance in its integral form and the rate defined by the real Rayleigh supremum E:variational-real-rayleigh; their identification with E W(Psi)^2 (L:compact-raw-profile) and sqrt(-E_s) (P:variational-unmasked-rate) is not formalized."
+  tex: "Lean proves the bijection and the four identities with the section's hypotheses (H:homog, $\\Gamma\\neq0$, $a=\\alpha_0$) and nothing supplied, for the variance in its integral form and the rate defined by the real Rayleigh supremum E:variational-real-rayleigh; their identification with $\\E W(\\Psi)^2$ (L:compact-raw-profile) and $\\sqrt{-E_s}$ (P:variational-unmasked-rate) is not formalized."

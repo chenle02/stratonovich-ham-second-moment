@@ -27,6 +27,7 @@
 \usepackage{amsmath, amsfonts, amssymb, amsthm}
 \usepackage{enumerate}
 \usepackage{graphicx}
+\usepackage{array}
 \usepackage{wrapfig}
 \usepackage{needspace}
 \usepackage{mathrsfs}
@@ -39,6 +40,15 @@
 \input{notes/figures/styles}
 \input{notes/ai-statistics-data}
 \newcommand{\aiBookRef}[1]{\ref{#1}}
+\input{notes/lean-coverage-data}
+% Appendix F helpers: \lcRef{kind}{label}{number} is a linked reference.
+\makeatletter
+\def\lc@equation{Equation}
+\newcommand{\lcRef}[3]{\def\lc@kind{#1}%
+\ifx\lc@kind\lc@equation Equation~\eqref{#2}\else #1~\ref{#2}\fi}
+\makeatother
+\newcommand{\lcCategory}[2]{\par\Needspace{6\baselineskip}\medskip\noindent\textbf{#1}~(#2)\par\nopagebreak\smallskip}
+\newenvironment{lcTable}{\noindent\small\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.27\textwidth}>{\raggedright\arraybackslash}p{0.70\textwidth}@{}}}{\end{tabular}\par}
 \usepackage{url}
 \setlength{\emergencystretch}{3em}
 
@@ -152,6 +162,7 @@ needed.
   \midrule
   \ref{S:appendix-finite-order}--\ref{S:appendix-static-clock} & Other estimates, consistency checks and alternative approaches. \\
   \ref{S:appendix-ai-statistics} & The AI work in numbers: who did the work, the reviews, and the approaches that did not work. \\
+  \ref{S:appendix-lean-checks} & What the Lean companion checks, result by result. \\
   \bottomrule
 \end{tabular}
 \end{center}
@@ -7877,6 +7888,10 @@ analytic covariance, not its absolute-value bound, is being copied.
 \chapter{The AI work in numbers}\label{S:appendix-ai-statistics}
 
 \input{notes/ai-statistics}
+
+\chapter{What Lean checks}\label{S:appendix-lean-checks}
+
+\input{notes/lean-coverage}
 
 \backmatter
 \bibliography{All,extra}
