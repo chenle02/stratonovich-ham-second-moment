@@ -18817,3 +18817,18 @@ a release commit; 156 review folders without a run record were sampled (5),
 not checked one by one; DeepSeek hours in Appendix E are an undercount; the
 new preface and Appendix E text, written by Claude, has had no independent
 review (Le may request a DeepSeek read).
+
+## 2026-11-11: milestones on the Appendix E timeline
+
+At Le's request, Figure E.1 now marks 14 project milestones (numbered circles
+on the UTC day of each milestone's commit, with a one-line key giving the
+recorded date). The list is data, scripts/ai-statistics/milestones.json (tag,
+recorded date, UTC time, original commit, label, source line in Progress.md,
+HOW-THIS-WAS-BUILT or lean-progress), each commit checked to exist on master
+and to survive the release filter (matched in the 2026-11-11 dry run). Agent
+#16 agreed: no tags in the working repository (the export's refs gate stays);
+at release #16 will create matching annotated tags in the public repository
+through the commit map, and will run milestones.json through the real filter.
+Records, not recollection, set the dates: the intrinsic variational constant
+was integrated on November 1 (a880288), not November 3. No mathematical change;
+clean build (0 errors, 0 undefined references, 0 overfull boxes), 329 pages.

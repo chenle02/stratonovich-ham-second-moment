@@ -124,7 +124,27 @@ Total & 498 & 466 & 32 & 272 & 18 & 118 & \\
   \draw (12.000,0) -- (12.000,4.200);
   \node[rotate=90,font=\scriptsize,anchor=south] at (-0.75,2.100) {review runs};
   \node[rotate=-90,font=\scriptsize,anchor=south,aiCommits] at (12.850,2.100) {commits};
-  \draw[dashed,gray] (3.750,0) -- (3.750,4.350) node[above,font=\scriptsize,gray] {reviewers changed};
+  \draw[densely dotted,aiMilestone] (0.375,0) -- (0.375,4.480);
+  \draw[densely dotted,aiMilestone] (1.125,0) -- (1.125,4.480);
+  \draw[densely dotted,aiMilestone] (4.125,0) -- (4.125,4.480);
+  \draw[densely dotted,aiMilestone] (7.125,0) -- (7.125,4.480);
+  \draw[densely dotted,aiMilestone] (10.125,0) -- (10.125,4.480);
+  \draw[densely dotted,aiMilestone] (10.875,0) -- (10.875,4.480);
+  \draw[densely dotted,aiMilestone] (11.625,0) -- (11.625,4.480);
+  \node[circle,fill=aiMilestone,text=white,inner sep=0pt,minimum size=0.34cm,font=\tiny\bfseries] at (0.375,4.650) {1};
+  \node[circle,fill=aiMilestone,text=white,inner sep=0pt,minimum size=0.34cm,font=\tiny\bfseries] at (0.375,5.070) {2};
+  \node[circle,fill=aiMilestone,text=white,inner sep=0pt,minimum size=0.34cm,font=\tiny\bfseries] at (0.375,5.490) {3};
+  \node[circle,fill=aiMilestone,text=white,inner sep=0pt,minimum size=0.34cm,font=\tiny\bfseries] at (1.125,4.650) {4};
+  \node[circle,fill=aiMilestone,text=white,inner sep=0pt,minimum size=0.34cm,font=\tiny\bfseries] at (4.125,4.650) {5};
+  \node[circle,fill=aiMilestone,text=white,inner sep=0pt,minimum size=0.34cm,font=\tiny\bfseries] at (4.125,5.070) {6};
+  \node[circle,fill=aiMilestone,text=white,inner sep=0pt,minimum size=0.34cm,font=\tiny\bfseries] at (4.125,5.490) {7};
+  \node[circle,fill=aiMilestone,text=white,inner sep=0pt,minimum size=0.34cm,font=\tiny\bfseries] at (7.125,4.650) {8};
+  \node[circle,fill=aiMilestone,text=white,inner sep=0pt,minimum size=0.34cm,font=\tiny\bfseries] at (10.125,4.650) {9};
+  \node[circle,fill=aiMilestone,text=white,inner sep=0pt,minimum size=0.34cm,font=\tiny\bfseries] at (10.875,4.650) {10};
+  \node[circle,fill=aiMilestone,text=white,inner sep=0pt,minimum size=0.34cm,font=\tiny\bfseries] at (10.875,5.070) {11};
+  \node[circle,fill=aiMilestone,text=white,inner sep=0pt,minimum size=0.34cm,font=\tiny\bfseries] at (10.875,5.490) {12};
+  \node[circle,fill=aiMilestone,text=white,inner sep=0pt,minimum size=0.34cm,font=\tiny\bfseries] at (11.625,4.650) {13};
+  \node[circle,fill=aiMilestone,text=white,inner sep=0pt,minimum size=0.34cm,font=\tiny\bfseries] at (11.625,5.070) {14};
   \fill[aiClaude] (0.00,-0.95) rectangle (0.25,-0.75);
   \node[right,font=\scriptsize] at (0.25,-0.85) {Claude (Opus 5.5)};
   \fill[aiDeepSeek] (3.05,-0.95) rectangle (3.30,-0.75);
@@ -134,3 +154,20 @@ Total & 498 & 466 & 32 & 272 & 18 & 118 & \\
   \fill[aiGPT] (9.15,-0.95) rectangle (9.40,-0.75);
   \node[right,font=\scriptsize] at (9.40,-0.85) {GPT (Codex)};
 \end{tikzpicture}}
+\newcommand{\aiMilestoneKey}{%
+\textbf{1}~Oct~26: Project set up: notes scaffold and source manifest \\
+\textbf{2}~Oct~27: Gate G0: one bound for every pairing cannot reach the target scale \\
+\textbf{3}~Oct~27: Gate G1: all fifteen order-four white-noise terms computed \\
+\textbf{4}~Oct~28: Upper bound at the correct time scale established after review \\
+\textbf{5}~Oct~31: Goal revised: derive the actual constant, not match a predicted value \\
+\textbf{6}~Nov~1: Variational formula for the second-moment constant integrated \\
+\textbf{7}~Nov~1: DeepSeek and Kimi become the reviewers \\
+\textbf{8}~Nov~5: Reading edition of about twenty pages written \\
+\textbf{9}~Nov~9: Lean checks reach the actual Gaussian objects \\
+\textbf{10}~Nov~9: Fifth whole review: PASS WITH NOTES at MEDIUM, not accepted \\
+\textbf{11}~Nov~9: Lean companion recorded \\
+\textbf{12}~Nov~10: Technical text organized as a book \\
+\textbf{13}~Nov~11: Appendix E added: the AI work in numbers \\
+\textbf{14}~Nov~11: Lean correspondence gates closed through wave L4 \\
+}
+\newcommand{\aiMilestones}{14}

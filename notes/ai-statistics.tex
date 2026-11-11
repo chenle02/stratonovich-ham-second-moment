@@ -6,6 +6,7 @@
 \definecolor{aiKimi}{HTML}{CCBB44}
 \definecolor{aiGPT}{HTML}{228833}
 \definecolor{aiCommits}{HTML}{555555}
+\definecolor{aiMilestone}{HTML}{AA3377}
 
 This appendix records how much of the work was done, by which kind of model,
 and how often the checks failed. It counts what the project's own records
@@ -78,24 +79,34 @@ sessions.
 \end{minipage}
 \end{center}
 
-\emph{Met the bar} means a completed run graded PASS or PASS WITH NOTES at
-HIGH confidence, which is what the project required before a result could be
-accepted. Meeting the bar is not the same as acceptance: the final decision
-was recorded separately, and only the Claude and GPT reports record it in a
-form that can be counted. Of the \aiRunsFail{} FAIL grades, \aiFailGPT{} came
-from the GPT reviews of the Lean companion; they reported defects in the Lean
-statements or in their match with this book, which then had to be repaired.
-Runs that did not complete stopped on usage limits, timeouts or reports in
-the wrong format.
+\emph{Met the bar} means a completed run graded PASS or PASS WITH NOTES at HIGH
+confidence, which is what the project required before a result could be
+accepted. Meeting the bar is not the same as acceptance: the final decision was
+recorded separately, and only the Claude and GPT reports record it in a form
+that can be counted. Of the \aiRunsFail{} FAIL grades, \aiFailGPT{} came from
+the GPT reviews of the Lean companion; they reported defects in the Lean
+statements or in their match with this book, which then had to be repaired. Runs
+that did not complete stopped on usage limits, timeouts or reports in the wrong
+format. Figure~\ref{Fig:ai-timeline} shows the work day by day and marks
+\aiMilestones{} milestones, from setting up the project to closing the Lean
+correspondence gates; their commits are listed in
+\path{scripts/ai-statistics/milestones.json}.
 
 \begin{figure}[ht]
   \centering
   \aiTimelineFigure
-  \caption[Review runs and commits per day]{Review runs per day by reviewer
-    (bars, left scale) and commits per day (line, right scale); days are in
-    UTC. The dashed line marks November~1, when DeepSeek and Kimi replaced
-    Claude as the main reviewers; Claude returned later for checks of
-    rendered pages.}
+
+  \medskip
+  {\scriptsize
+  \begin{tabular}{@{}l@{}}
+    \aiMilestoneKey
+  \end{tabular}\par}
+  \caption[The work day by day, with milestones]{Review runs per day by
+    reviewer (bars, left scale) and commits per day (line, right scale), with
+    the project's \aiMilestones{} milestones (numbered circles). Days are in
+    UTC, and each circle sits on the UTC day of the milestone's commit; the
+    key gives the date as recorded. Claude returned after November~1 for
+    checks of rendered pages.}
   \label{Fig:ai-timeline}
 \end{figure}
 

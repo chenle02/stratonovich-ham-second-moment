@@ -7,6 +7,7 @@ Inputs (all committed beside this script, or the repository's git history):
   reviews/runs.tsv           one row per review run (count_reviews.py)
   reviews/review-stats.json  run aggregates and follow-ups (count_reviews.py)
   tokens/token-totals.json  token and cost totals (token_totals.py)
+  milestones.json            project milestones (tag, dates, commit, label, source)
   no-go/nogo-counts.json     kind and status of each no-go record (the full
                              ledger is held back; see no-go/README.md)
   git log                    commits per day, first and last date; recorded in
@@ -38,7 +39,8 @@ def load():
     stats = json.load(open(os.path.join(HERE, "reviews", "review-stats.json")))
     usage = json.load(open(os.path.join(HERE, "tokens", "token-totals.json")))
     nogo = json.load(open(os.path.join(HERE, "no-go", "nogo-counts.json")))
-    return runs, stats, usage, nogo
+    milestones = json.load(open(os.path.join(HERE, "milestones.json")))["milestones"]
+    return runs, stats, usage, nogo, milestones
 
 
 COMMITS_FILE = os.path.join(HERE, "commits-per-day.json")
@@ -91,7 +93,7 @@ def macro(name, value):
 
 
 def main():
-    runs, stats, usage, nogo = load()
+    runs, stats, usage, nogo, milestones = load()
     counted_commit = stats["generated_from_commit"]
     commits = git_commits(counted_commit)
     out = []
@@ -235,9 +237,21 @@ def main():
     fig.append(f"  \\draw (0,0) -- (0,{H:.3f});\n  \\draw ({W:.3f},0) -- ({W:.3f},{H:.3f});\n")
     fig.append(f"  \\node[rotate=90,font=\\scriptsize,anchor=south] at (-0.75,{H / 2:.3f}) {{review runs}};\n")
     fig.append(f"  \\node[rotate=-90,font=\\scriptsize,anchor=south,aiCommits] at ({W + 0.85:.3f},{H / 2:.3f}) {{commits}};\n")
-    switch = (dt.date(2026, 11, 1) - d0).days
-    fig.append(f"  \\draw[dashed,gray] ({switch * bw:.3f},0) -- ({switch * bw:.3f},{H + 0.15:.3f}) "
-               f"node[above,font=\\scriptsize,gray] {{reviewers changed}};\n")
+    # Milestones: numbered markers in a band above the plot, on the UTC day of
+    # the milestone's commit; markers on the same day stack upwards.
+    stack = collections.Counter()
+    marks = []
+    for k, m in enumerate(milestones, 1):
+        day = dt.date.fromisoformat(m["utc"][:10])
+        i = (day - d0).days
+        marks.append((k, (i + 0.5) * bw, H + 0.45 + 0.42 * stack[i], stack[i] == 0))
+        stack[i] += 1
+    for k, x, y, first in marks:  # one dotted line per day, drawn below the circles
+        if first:
+            fig.append(f"  \\draw[densely dotted,aiMilestone] ({x:.3f},0) -- ({x:.3f},{y - 0.17:.3f});\n")
+    for k, x, y, first in marks:
+        fig.append(f"  \\node[circle,fill=aiMilestone,text=white,inner sep=0pt,minimum size=0.34cm,"
+                   f"font=\\tiny\\bfseries] at ({x:.3f},{y:.3f}) {{{k}}};\n")
     lx = 0.0
     for f in FAMILIES:
         fig.append(f"  \\fill[{FAM_COLOR[f]}] ({lx:.2f},-0.95) rectangle ({lx + 0.25:.2f},-0.75);\n")
@@ -245,6 +259,16 @@ def main():
         lx += 3.05
     fig.append("\\end{tikzpicture}}\n")
     out.append("".join(fig))
+
+    # Key to the milestone markers: one line each, recorded (local) dates.
+    def month_day(s):
+        d = dt.date.fromisoformat(s)
+        return f"{d.strftime('%b')}~{d.day}"
+    cells = [f"\\textbf{{{k}}}~{month_day(m['date'])}: {m['label']}"
+             for k, m in enumerate(milestones, 1)]
+    rows = [f"{c} \\\\\n" for c in cells]  # one line each
+    out.append("\\newcommand{\\aiMilestoneKey}{%\n" + "".join(rows) + "}\n")
+    out.append(macro("aiMilestones", str(len(milestones))))
 
     root = os.path.abspath(os.path.join(HERE, "..", ".."))
     with open(os.path.join(root, "notes", "ai-statistics-data.tex"), "w") as fh:
