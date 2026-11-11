@@ -177,7 +177,7 @@
   0 sorry, 223 claim axioms); claims synced at f3e8275. Field reviews of
   lean-pkg proposal 0014 (declared controls) sent to lean-ops: final
   verdict ACCEPT with two fixes; acceptance is Le's.
-- **WAVE L3: PROPOSED (2026-11-10), awaiting Le's approval.** Chosen from
+- **WAVE L3: APPROVED by Le (2026-11-10) as proposed; OPENED** (four items launched in parallel worktrees). Chosen from
   the board excluding the reserved B3, B4, B9, after three read-only
   feasibility reconnaissances against the TeX at 3920258 with Mathlib names
   probed by compiling scratch files (reports:
