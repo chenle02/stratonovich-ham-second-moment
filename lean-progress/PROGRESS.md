@@ -517,7 +517,9 @@
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
-- **WAVE L6: PROPOSED (2026-11-11), for Le's approval.** From the board
+- **WAVE L6: APPROVED by Le (2026-11-11) as proposed, with the default
+  answers to the four decisions; OPENED** (eight items launched in parallel
+  worktrees, branches wave-l6/a..h off companion main). From the board
   (excluding the reserved B3, B4, B9), after three read-only feasibility
   reconnaissances against the TeX at 975feb3 with every Mathlib name probed
   by compiling scratch files against companion main (session scratch
@@ -717,7 +719,7 @@
 | L3 | CLOSED (Le) | 2026-11-10 | Four items (B6, B16, B14 with a D4 slice, C22 finite slice); gate at companion dfc2fe8 over 3920258; reviews/2026-11-10-lean-wave-l3-* |
 | L4 | CLOSED (Le) | 2026-11-11 | Four items (masked spectral growth and B14 input discharge, time-Schur and masked modulation, frequency row, occupation kernel row); gate at companion ac6f767 over 3920258; reviews/2026-11-11-lean-wave-l4-* |
 | L5 | CLOSED (Le) | 2026-11-11 | Six items (H_a completion with B24 at same assumptions, masked continuous wave, masked auxiliary norm, rest of the damped-norm lemma, heat envelope and global mean, phase Bessel); gate at companion 712c307 over 975feb3; reviews/2026-11-11-lean-wave-l5-* |
-| L6 | PROPOSED | 2026-11-11 | Eight items (wave Green measure, quotient obstruction and finite Gaussian comparison, wave two-variances core, variational foundations and two C18 results, deterministic R_0 and the smooth ratio, static controls, series-type cluster, white relative width and clock Laplace); awaiting Le's approval |
+| L6 | OPEN (approved by Le) | 2026-11-11 | Eight items (wave Green measure, quotient obstruction and finite Gaussian comparison, wave two-variances core, variational foundations and two C18 results, deterministic R_0 and the smooth ratio, static controls, series-type cluster, white relative width and clock Laplace); defaults for the four decisions |
 
 ## New proof seams retained for later statement fences
 
