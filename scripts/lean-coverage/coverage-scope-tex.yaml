@@ -4,12 +4,15 @@
 # so it lives here. Keyed by manuscript label; ascii repeats the coverage.yaml text so drift is detectable.
 schema: coverage-scope-tex/1
 rows:
-- label: L:damped-homogeneous-norms
-  ascii: "Lean proves, under H:homog, that the N_1 and N_2 integrals of E:damped-norm-definitions are finite for every theta > 0 and that N_2(theta)^2 >= 0, and derives the spectral homogeneity mu(cA) = c^alpha mu(A) of the first sentence of the proof; N_0, the scaling identities, the tails E:damped-tail-norms and the smoothing and truncation assertions are not formalized."
-  tex: "Lean proves, under H:homog, that the $N_1$ and $N_2$ integrals of E:damped-norm-definitions are finite for every $\\theta>0$ and that $N_2(\\theta)^2\\ge0$, and derives the spectral homogeneity $\\mu(cA)=c^\\alpha\\mu(A)$ of the first sentence of the proof; $N_0$, the scaling identities, the tails E:damped-tail-norms and the smoothing and truncation assertions are not formalized."
 - label: L:tube-rayleigh-tail
   ascii: "Lean proves the bound with integrability and the finite head integral; the \"In particular\" application to the coarse-envelope bound of another proposition is not formalized."
   tex: "Lean proves the bound with integrability and the finite head integral; the ``In particular'' application to the coarse-envelope bound of another proposition is not formalized."
 - label: L:variational-control-dilation
   ascii: "Lean proves the bijection and the four identities with the section's hypotheses (H:homog, Gamma != 0, a = alpha0) and nothing supplied, for the variance in its integral form and the rate defined by the real Rayleigh supremum E:variational-real-rayleigh; their identification with E W(Psi)^2 (L:compact-raw-profile) and sqrt(-E_s) (P:variational-unmasked-rate) is not formalized."
   tex: "Lean proves the bijection and the four identities with the section's hypotheses (H:homog, $\\Gamma\\neq0$, $a=\\alpha_0$) and nothing supplied, for the variance in its integral form and the rate defined by the real Rayleigh supremum E:variational-real-rayleigh; their identification with $\\E W(\\Psi)^2$ (L:compact-raw-profile) and $\\sqrt{-E_s}$ (P:variational-unmasked-rate) is not formalized."
+- label: L:variational-global-mean
+  ascii: "Lean proves the display E:variational-global-mean on I = [0,1] (0 <= h_s <= M and ||h_s - h_t||_inf <= C_Psi |s-t|, with integrability, continuity in x and a joint Lipschitz bound); the first sentence, that every mixed time and space derivative of h_s is globally bounded, is not formalized."
+  tex: "Lean proves the display E:variational-global-mean on $I=[0,1]$ ($0\\le h_s\\le M$ and $\\|h_s-h_t\\|_\\infty\\le C_\\Psi|s-t|$, with integrability, continuity in $x$ and a joint Lipschitz bound); the first sentence, that every mixed time and space derivative of $h_s$ is globally bounded, is not formalized."
+- label: P:masked-auxiliary-norm
+  ascii: "Lean proves, under H:homog and Gamma != 0, that nu_R is even, tempered and Radon, the ball bound E:masked-auxiliary-growth uniformly in R > 0, and E:masked-hilbert-fourier for a separable complex Hilbert space H (indeed any complex Banach space) with integrability and a finite right side; the clause for a real H after complexification is not formalized."
+  tex: "Lean proves, under H:homog and $\\Gamma\\neq0$, that $\\nu_R$ is even, tempered and Radon, the ball bound E:masked-auxiliary-growth uniformly in $R>0$, and E:masked-hilbert-fourier for a separable complex Hilbert space $H$ (indeed any complex Banach space) with integrability and a finite right side; the clause for a real $H$ after complexification is not formalized."

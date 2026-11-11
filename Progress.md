@@ -18988,3 +18988,19 @@ private/audit/2026-11-11-auburn-cover/. Clean335-page build;215proof bodies,
 The requested session retrospective is separately committed in Le-AI-Lab at
 fb8c79e4: three existing skills plus theory-retro updated;3/3skill gates, runtime
 sync/search and strict Codex budget passed. Lab and <HUB> synchronized.
+
+Follow-up (Le, same day, after closing the wave-L5 gate): Appendix F is
+re-pinned to companion 712c307 (verified commit: receipts and claims ledger,
+lean-pkg 0.29.0; made November 11, 2026, 11:34 a.m., UTC-5), with the
+coverage files read from 73ed477 (docs-only: README and CITATION.cff after
+the receipts). Numbers: 46 rows (22 same hypotheses in full, 4 narrower, 3
+every conclusion with inputs supplied, 13 steps only, 4 not formalized); 972
+claims with the three standard axioms; comparator 810 theorems PASS; ledger
+945 verified, 0 open, 27 out of scope; 437 unlabelled computations. The
+last-review paragraph now says the most recent results passed six
+independent reviews with repairs and a confirmation review, accepted by the
+author, still AI-reviewed, not human-verified. The companion README at
+73ed477 still says acceptance pending and that the L5 modules are not yet
+replayed on Easley (#22's job 5690458 running). Clean build, 335 pages,
+Appendix F on book pages 305-307 inspected; real release filter leaves all
+seven public files byte-identical.
