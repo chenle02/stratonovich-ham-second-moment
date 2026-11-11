@@ -108,27 +108,49 @@ pdfauthor={Le Chen}, pdfsubject={Stratonovich moment asymptotics}}
 
 \begin{abstract}
   We study the Stratonovich hyperbolic Anderson model with temporal covariance
-  $|s-t|^{-\alpha_0}$ and homogeneous spatial covariance of order $\alpha$, for
-  $0 < \alpha_0 < 1$, $\alpha+\alpha_0 < 2$ and every admissible model in
-  dimensions one, two and three. For initial data $(1,0)$, the second-moment
-  logarithm has scale $t^\kappa$, where $\kappa =
-  (4-\alpha-\alpha_0)/(3-\alpha)$. We identify its limit by an explicit
-  variational formula over all nonnegative smooth compact spacetime controls,
-  including nonseparable controls. The formula retains the covariance amplitude,
-  kinetic coefficient one and a cost equal to one half of the variance. Its
-  value is positive and finite for nonzero covariance and zero for zero
-  covariance. An independent full upper bound supplies the earlier finiteness
-  inputs. The sharp comparison uses Gaussian phase operators, passage to the
-  limiting source before the point-moment comparison, uniform spatial-radius
-  estimates and finite optimization with nonnegative Gram entries. We also
-  derive an upper bound using occupation measures and bounds in terms of a
-  common spatial energy. For spatial covariance $c\delta_0$ in one dimension,
-  that energy is $c^2/6$, yielding explicit bounds for the same moment constant.
-  Earlier pairing estimates and finite-order calculations are retained as
-  calibrations and records of their limitations. Chen's author-version
-  first-moment results \cite{chen:author2026:time-dependency} provide comparison
-  context; their printed variational normalization is not corrected here or used
-  to prescribe the constant.
+  $|s-t|^{-\alpha_0}$ and an even, nonnegative, positive-definite tempered
+  Radon spatial covariance $\Gamma$ homogeneous of order $-\alpha$. We assume
+  $d\in\{1,2,3\}$, $0<\alpha_0<1$, $0<\alpha<d$ or $\alpha=d=1$, and
+  $\alpha+\alpha_0<2$. For initial displacement one and velocity zero, our
+  main result, Theorem~\ref{T:intro-second-moment}, is the exact limit
+  \[
+    \lim_{T\to\infty}T^{-\kappa}\log\E u^2(T,x)
+    =C_2(\Gamma,\alpha_0),
+    \qquad \kappa=\frac{4-\alpha-\alpha_0}{3-\alpha},
+  \]
+  for every fixed $x\in\R^d$, with
+  \[
+    C_2(\Gamma,\alpha_0)
+    =\sup_{\substack{\Psi\in C_c^\infty((0,1)\times\R^d;\R)\\
+    \Psi\ge0,\ \Psi\ne0}}
+    \left\{2\int_0^1\sqrt{\mathcal{R}_\Psi(s)}\ud s
+    -\frac{v_\Psi}{2}\right\}.
+  \]
+  Here the covariance mean, variance and Rayleigh value are
+  \[
+    \begin{aligned}
+      h_{\Psi,s}(x)
+      &=\int_0^1|s-r|^{-\alpha_0}(\Gamma*\Psi_r)(x)\ud r,\\
+      v_\Psi&=\int_0^1\int_{\R^d}\Psi(s,x)h_{\Psi,s}(x)\ud x\ud s,\\
+      \mathcal{R}_\Psi(s)
+      &=\sup_{\substack{f\in H^1(\R^d;\R)\\\|f\|_2=1}}
+      \left\{\int_{\R^d}h_{\Psi,s}(x)f(x)^2\ud x
+      -\|\nabla f\|_2^2\right\}.
+    \end{aligned}
+  \]
+  The spatial norms are $L^2$ norms, and $\Psi_r=\Psi(r,\cdot)$. The
+  variational class includes controls that do not separate in time and space.
+  The formula retains the original covariance amplitude, kinetic coefficient
+  one and Gaussian cost $v_\Psi/2$. Its value is positive and finite when
+  $\Gamma\ne0$; for $\Gamma=0$, the solution is one and the constant is zero.
+
+  An independent upper bound establishes finiteness at the scale $T^\kappa$.
+  The identification of the constant combines Gaussian phase operators,
+  convergence from the regularized noise, estimates uniform in the spatial
+  localization radius, and finite optimization with nonnegative Gram entries.
+  We also obtain bounds for the same constant through spatial energies and
+  occupation measures, including explicit bounds for spatial white noise in
+  one dimension.
 \end{abstract}
 
 \tableofcontents

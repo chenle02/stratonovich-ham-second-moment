@@ -18932,3 +18932,18 @@ Both PDFs build with0errors,0undefined references/citations and0overfull boxes;
 Book335pages, reader29. Preface changes, post list and Section1.7(pp.22--24)
 visually inspected. Exploratory and editorial scope only; no scientific gate
 or Lean correspondence receipt is transferred. Unrelated release/Lean WIP kept.
+
+## 2026-11-11: state the main result explicitly in the Abstract
+
+At Le's request, the Abstract now identifies Theorem1.5.2 as the central result
+and displays the second-moment limit, exponent and full variational formula.
+It defines the control class, covariance mean, variance and Rayleigh value,
+retaining the full nonseparable class, covariance amplitude, half-variance cost,
+parameter ranges, data and zero case. The independent upper bound follows as
+the finiteness input. The entire main TeX outside the Abstract is byte-identical
+to c2ba10e. No theorem, proof or scientific review status changed.
+
+The one-page Abstract (printed p.vi) was visually inspected. Clean paired builds,
+215preserved proof bodies,95mapped labels,264valid reader links and371checked
+index entries. Pages335+29 unchanged. Evidence:
+private/audit/2026-11-11-abstract-main-result/.
