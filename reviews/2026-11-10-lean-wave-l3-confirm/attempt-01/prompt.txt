@@ -1,0 +1,137 @@
+Review the frozen packet rooted at <HOME>/.local/state/Le-AI-Lab/stratonovich-lean-wave-l3-confirm/attempt-01/workspace. Primary target: candidate/statement-ledger.md. Source revision: 25c5995138632ba3fff6e5fd6dae7e3163ba596d.
+
+You are an independent artifact reviewer. Read only the frozen packet
+and the supplied review contract. Report correctness, missing assumptions,
+incorrect constants, failed implications, and uncertainty. Do not edit files,
+use the network, send messages, publish, install, or delegate. Do not launch a
+research or coding workflow. Return a scientific report rather than a plan.
+Use exactly one JSON object with schema "subscription-review-report/1", verdict (PASS, PASS_WITH_NOTES, FAIL, or
+INCONCLUSIVE), confidence (high, medium, low), source_coverage (list of strings),
+checks (list of objects with claim, verdict, reason), findings (an object with
+fatal, major, minor lists), required_repairs (list), and limitations (list).
+required_repairs contains ONLY mandatory changes that block acceptance. Optional
+clarifications belong in findings.minor, never in required_repairs. PASS and
+PASS_WITH_NOTES require empty fatal, major and required_repairs lists and no
+failed/unchecked claim. If a repair is mandatory, return FAIL or INCONCLUSIVE;
+never weaken a finding to obtain PASS.
+Read every required source completely. Never use Grep head_limit or any other
+truncating or limiting option on a required source. After any pagination or
+truncation marker (for example a partial Read, an offset/limit notice, or
+"output truncated"), keep reading the next range until the whole file is read.
+In source_coverage, list each exact file and the line ranges you actually read.
+If coverage of any required source is incomplete, say "partial" for that source
+in source_coverage and state the gap in limitations.
+An AI review is not human verification or a novelty audit. Do not silently
+repair a candidate and PASS the original. A terminal error is not a verdict.
+
+Frozen packet file index (relative to workspace; a listed file is not proof of reading):
+["PROVENANCE.json", "candidate/statement-ledger.md", "lean/StratonovichHAMAudit/ClockFilter.lean", "lean/StratonovichHAMSecondMoment/ClockCopy.lean", "lean/StratonovichHAMSecondMoment/DampedNorms.lean", "lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean", "lean/StratonovichHAMSecondMoment/GaussianIBP.lean", "lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean", "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean", "lean/StratonovichHAMSecondMoment/IndexedCone.lean", "lean/StratonovichHAMSecondMoment/SpectralHomog.lean", "lean/StratonovichHAMSecondMoment/TimeFractional.lean", "lean/StratonovichHAMSecondMoment/VariationalDilation.lean", "lean/StratonovichHAMSecondMoment/WaveKernel.lean", "lean/StratonovichHAMSecondMoment/WeakSobolev.lean", "lean/claims.yaml", "lean/coverage.yaml", "manuscript/notes/book-layout.tex", "manuscript/notes/figures/active-subset-optimization.tex", "manuscript/notes/figures/common-noise.tex", "manuscript/notes/figures/cross-colour-cube.tex", "manuscript/notes/figures/dyadic-cover.tex", "manuscript/notes/figures/endpoint-elimination.tex", "manuscript/notes/figures/gaussian-enlargement.tex", "manuscript/notes/figures/global-control-blocks.tex", "manuscript/notes/figures/hermite-cutoff.tex", "manuscript/notes/figures/interval-allocations.tex", "manuscript/notes/figures/interval-end-metrics.tex", "manuscript/notes/figures/light-cone.tex", "manuscript/notes/figures/literature-interpretations.tex", "manuscript/notes/figures/literature-results-map.tex", "manuscript/notes/figures/nonseparable-controls.tex", "manuscript/notes/figures/order-of-limits.tex", "manuscript/notes/figures/positive-gram.tex", "manuscript/notes/figures/proof-map.tex", "manuscript/notes/figures/styles.tex", "manuscript/notes/figures/two-chain-pairings.tex", "manuscript/notes/figures/white-strip.tex", "manuscript/notes/integrated_actual_operator_driver.tex", "manuscript/notes/integrated_cameron_mean.tex", "manuscript/notes/integrated_compact_gaussian.tex", "manuscript/notes/integrated_compact_mean_family.tex", "manuscript/notes/integrated_constant_phase_young.tex", "manuscript/notes/integrated_covariance_foundation.tex", "manuscript/notes/integrated_exact_scaling.tex", "manuscript/notes/integrated_gaussian_tubes.tex", "manuscript/notes/integrated_intrinsic_constant.tex", "manuscript/notes/integrated_masked_moments.tex", "manuscript/notes/integrated_occupation_ceiling.tex", "manuscript/notes/integrated_point_transfer.tex", "manuscript/notes/integrated_positive_gram.tex", "manuscript/notes/integrated_radius_anchor.tex", "manuscript/notes/integrated_raw_block_lower.tex", "manuscript/notes/integrated_signed_moment_upper.tex", "manuscript/notes/integrated_signed_static.tex", "manuscript/notes/integrated_source_convergence.tex", "manuscript/notes/integrated_spatial_occupation.tex", "manuscript/notes/integrated_symplectic_phase.tex", "manuscript/notes/integrated_temporal_equilibrium.tex", "manuscript/notes/integrated_uniform_mean.tex", "manuscript/notes/integrated_uniform_products.tex", "manuscript/notes/integrated_unmasked_variational.tex", "manuscript/notes/integrated_wave_variance.tex", "manuscript/notes/integrated_white_evaluation.tex", "manuscript/notes/integrated_young_upper_foundation.tex", "manuscript/notes/literature_review.tex", "manuscript/notes/notes_stratonovich_ham_second_moment.tex", "prior/ClockCopy-report.json", "prior/FiniteGaussianMatrix-report.json", "prior/IndexedCone-report.json", "prior/VariationalDilation-report.json"]
+
+Narrow confirmation review: repairs to the wave-L3 whole-result ledger sections (Lean companion) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger at Lean companion commit
+  25c599513863, after repairs made in response to four earlier reviews of its
+  sections "VariationalDilation (whole result)", "IndexedCone (whole
+  result)", "ClockCopy (whole result)" and "FiniteGaussianMatrix (whole
+  result)".
+- prior/VariationalDilation-report.json, prior/IndexedCone-report.json, prior/ClockCopy-report.json, prior/FiniteGaussianMatrix-report.json : the four earlier review reports (at commit 4721cf9dd6c3).
+  All four FAILED; their findings (W1, W2, ...) are what the repairs
+  address.
+- the Lean modules (ground truth):
+  lean/StratonovichHAMSecondMoment/HomogHypothesis.lean
+  lean/StratonovichHAMSecondMoment/WeakSobolev.lean
+  lean/StratonovichHAMSecondMoment/VariationalDilation.lean
+  lean/StratonovichHAMSecondMoment/IndexedCone.lean
+  lean/StratonovichHAMSecondMoment/WaveKernel.lean
+  lean/StratonovichHAMSecondMoment/TimeFractional.lean
+  lean/StratonovichHAMSecondMoment/SpectralHomog.lean
+  lean/StratonovichHAMSecondMoment/DampedNorms.lean
+  lean/StratonovichHAMSecondMoment/ClockCopy.lean
+  lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean
+  lean/StratonovichHAMSecondMoment/GaussianIBP.lean
+  lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean
+  lean/StratonovichHAMAudit/ClockFilter.lean
+  and lean/claims.yaml, lean/coverage.yaml.
+- manuscript/notes/... : all LaTeX inputs at revision 3920258be333.
+- PROVENANCE.json : byte binding of every packet file.
+
+Proof correctness is NOT in question; correspondence is. Decide from the
+Lean and the TeX whether each prior finding is genuinely resolved, whether
+the repairs are correct, and whether anything else in these sections
+still overclaims. Do not accept the ledger's word.
+
+CHECKS (exactly these 31, in this order, with these claim strings):
+  1. claim "VariationalDilation-W1": finding W1 (fatal) of prior/VariationalDilation-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  2. claim "VariationalDilation-W2": finding W2 (major) of prior/VariationalDilation-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  3. claim "VariationalDilation-W3": finding W3 (minor) of prior/VariationalDilation-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  4. claim "VariationalDilation-W4": finding W4 (minor) of prior/VariationalDilation-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  5. claim "VariationalDilation-W5": finding W5 (minor) of prior/VariationalDilation-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  6. claim "IndexedCone-W1": finding W1 (fatal) of prior/IndexedCone-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  7. claim "IndexedCone-W2": finding W2 (major) of prior/IndexedCone-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  8. claim "IndexedCone-W3": finding W3 (major) of prior/IndexedCone-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  9. claim "IndexedCone-W4": finding W4 (major) of prior/IndexedCone-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  10. claim "IndexedCone-W5": finding W5 (minor) of prior/IndexedCone-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  11. claim "IndexedCone-W6": finding W6 (minor) of prior/IndexedCone-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  12. claim "IndexedCone-W7": finding W7 (minor) of prior/IndexedCone-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  13. claim "ClockCopy-W1": finding W1 (major) of prior/ClockCopy-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  14. claim "ClockCopy-W2": finding W2 (major) of prior/ClockCopy-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  15. claim "ClockCopy-W3": finding W3 (major) of prior/ClockCopy-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  16. claim "ClockCopy-W4": finding W4 (major) of prior/ClockCopy-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  17. claim "ClockCopy-W5": finding W5 (major) of prior/ClockCopy-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  18. claim "ClockCopy-W6": finding W6 (major) of prior/ClockCopy-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  19. claim "ClockCopy-W7": finding W7 (major) of prior/ClockCopy-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  20. claim "ClockCopy-W8": finding W8 (minor) of prior/ClockCopy-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  21. claim "ClockCopy-W9": finding W9 (minor) of prior/ClockCopy-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  22. claim "FiniteGaussianMatrix-W1": finding W1 (major) of prior/FiniteGaussianMatrix-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  23. claim "FiniteGaussianMatrix-W2": finding W2 (minor) of prior/FiniteGaussianMatrix-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  24. claim "FiniteGaussianMatrix-W3": finding W3 (minor) of prior/FiniteGaussianMatrix-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  25. claim "FiniteGaussianMatrix-W4": finding W4 (minor) of prior/FiniteGaussianMatrix-report.json is genuinely resolved at this commit: the ledger rows, index, claims.yaml summaries, coverage.yaml row(s) and (where the finding required it) Lean comments now say what the Lean declarations and the TeX at the cited lines support
+  26. claim "RESCAN-VariationalDilation": no OTHER row of the "VariationalDilation (whole result)" section (a) is labelled as a statement or step of the cited TeX while being an auxiliary of a different Lean proof route, or (b) states more than its Lean declaration (constants, quantifiers, hypotheses, integrability or finiteness); check every labelled row against the Lean file and the TeX
+  27. claim "RESCAN-IndexedCone": no OTHER row of the "IndexedCone (whole result)" section (a) is labelled as a statement or step of the cited TeX while being an auxiliary of a different Lean proof route, or (b) states more than its Lean declaration (constants, quantifiers, hypotheses, integrability or finiteness); check every labelled row against the Lean file and the TeX
+  28. claim "RESCAN-ClockCopy": no OTHER row of the "ClockCopy (whole result)" section (a) is labelled as a statement or step of the cited TeX while being an auxiliary of a different Lean proof route, or (b) states more than its Lean declaration (constants, quantifiers, hypotheses, integrability or finiteness); check every labelled row against the Lean file and the TeX
+  29. claim "RESCAN-FiniteGaussianMatrix": no OTHER row of the "FiniteGaussianMatrix (whole result)" section (a) is labelled as a statement or step of the cited TeX while being an auxiliary of a different Lean proof route, or (b) states more than its Lean declaration (constants, quantifiers, hypotheses, integrability or finiteness); check every labelled row against the Lean file and the TeX
+  30. claim "LEDGER-TOTALS": the totals line (557 = 470 theorems + 87 definitions; 347 labelled, 210 unlabelled) agrees with a count of all per-module tables; every claims.yaml decl has exactly one ledger row; every declaration row has exactly four table cells (pipes inside cells are escaped as \|)
+  31. claim "NO-REGRESSION": the repairs introduced no new error in the four sections, their index rows, coverage.yaml, the ClockFilter and FiniteYoung cross-reference rows, or the Scope bullets
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: the four prior
+   reports; the four "(whole result)" sections and the "Scope" and "Index
+   by label" sections of candidate/statement-ledger.md; for each finding,
+   the Lean declarations and the TeX lines it cites (read each cited Lean
+   file completely for the RESCAN checks of its section). For the TeX, read
+   completely the ranges the sections cite:
+   manuscript/notes/integrated_unmasked_variational.tex,
+   manuscript/notes/integrated_raw_block_lower.tex,
+   manuscript/notes/integrated_compact_gaussian.tex lines 1-200,
+   lines 380-420 of manuscript/notes/integrated_compact_mean_family.tex,
+   and lines 640-760 and 7480-7710 of
+   manuscript/notes/notes_stratonovich_ham_second_moment.tex.
+B. Other files: search as needed and read matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 31 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong;
+  INCONCLUSIVE: not checkable). reason: evidence with file:line.
+- "findings": fatal = misstatement a citing reader would be misled by;
+  major = material imprecision; minor = wording. Each string starts with an
+  ID (C1, C2, ...), names the item, quotes Lean and TeX with file:line,
+  and gives the exact fix.
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.
+

@@ -1,0 +1,205 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-626 \u2014 complete.",
+    "prior/VariationalDilation-report.json:1-180,181-354 \u2014 complete.",
+    "prior/IndexedCone-report.json:1-160,161-297 \u2014 complete.",
+    "prior/ClockCopy-report.json:1-120,121-300,301-480,481-633 \u2014 complete.",
+    "prior/FiniteGaussianMatrix-report.json:1-200,201-400,401-590,591-659 \u2014 complete.",
+    "candidate/statement-ledger.md:1-195,221-235,297-305,449-461,539-556,586-787,804-1010,1070-1186,1472-1681 \u2014 partial file; Scope, Index and all four required sections complete. Lines 1-1681 additionally machine-read for declaration counts, uniqueness and table-cell checks.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/WeakSobolev.lean:1-175,176-329 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:1-240,241-465 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/IndexedCone.lean:1-270,271-535,536-795,796-1056 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/WaveKernel.lean:1-180 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/TimeFractional.lean:1-220,221-443 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/SpectralHomog.lean:1-175,176-318 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/DampedNorms.lean:1-195,196-372 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/ClockCopy.lean:1-200,201-400,401-600,601-779 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean:1-132 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/GaussianIBP.lean:1-170,171-327 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean:1-205,206-435,436-665,666-895,896-1125,1126-1358 \u2014 complete.",
+    "lean/StratonovichHAMAudit/ClockFilter.lean:1-64 \u2014 complete.",
+    "lean/claims.yaml:1-20,34-56,157-164,640-675,785-845,1591-1998,1999-2321,2322-2713,2714-3111,3112-3529,3530-3938 \u2014 partial file; all reviewed-module entries complete. Lines 1-3938 additionally machine-read for declaration and kind enumeration.",
+    "lean/coverage.yaml:1-220,221-438 \u2014 complete.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-175,176-343 \u2014 complete.",
+    "manuscript/notes/integrated_raw_block_lower.tex:1-225,226-450,451-675 \u2014 complete.",
+    "manuscript/notes/integrated_compact_gaussian.tex:1-200 \u2014 partial file; required range complete.",
+    "manuscript/notes/integrated_compact_mean_family.tex:1-180,181-379,380-420 \u2014 partial file; required range and ground-family correspondence context complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:150-216,640-760,4505-4535,7420-7445,7480-7710 \u2014 partial file; all required ranges complete."
+  ],
+  "checks": [
+    {
+      "claim": "VariationalDilation-W1",
+      "verdict": "PASS",
+      "reason": "The unconditional validity assurance is removed. candidate/statement-ledger.md:1524-1543,1633 and lean/claims.yaml:1995 describe conditional transfers only; lean/coverage.yaml:266 agrees. VariationalDilation.lean:47-62,428-458 now explicitly disclaims proving integrability or valid suprema, unlike the genuine finiteness assertions in integrated_compact_mean_family.tex:408-410 and integrated_unmasked_variational.tex:109-110."
+    },
+    {
+      "claim": "VariationalDilation-W2",
+      "verdict": "PASS",
+      "reason": "All seven affected rows explicitly identify additional Lean-route auxiliaries at candidate/statement-ledger.md:1609,1618,1620,1622,1625,1629,1633. Index:155 separates them from direct correspondence, and lean/coverage.yaml:266 preserves that distinction. Their equivalence conclusions match VariationalDilation.lean:216-218,278-281,296-301,319-322,347-351,382-385,438-458; the TeX instead uses Tonelli and substitutions at integrated_unmasked_variational.tex:243-264."
+    },
+    {
+      "claim": "VariationalDilation-W3",
+      "verdict": "PASS",
+      "reason": "The affected ledger anchors now locate U_r at integrated_unmasked_variational.tex:259, the pushforward at :248-249, convolution scaling at :243-250 and variance scaling at :250-254; see candidate/statement-ledger.md:1580,1607,1617,1624. The formulas agree with WeakSobolev.lean:132-134 and VariationalDilation.lean:193-210,269-271,339-341."
+    },
+    {
+      "claim": "VariationalDilation-W4",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:1577 now distinguishes the unguarded integral-identity predicate from its conventional locally integrable interpretation. This matches WeakSobolev.lean:70-77,222-227 and the Sobolev trial class in integrated_unmasked_variational.tex:106-107. lean/claims.yaml:1602 states only the defining integral identity."
+    },
+    {
+      "claim": "VariationalDilation-W5",
+      "verdict": "PASS",
+      "reason": "The RawVariational cross-references explicitly restrict the whole dilation statement to integral/Rayleigh form at candidate/statement-ledger.md:545-548,552. That matches VariationalDilation.lean:412-420 without asserting the probabilistic and spectral identifications in integrated_compact_mean_family.tex:409-410 and integrated_unmasked_variational.tex:100-107."
+    },
+    {
+      "claim": "IndexedCone-W1",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:1172,1174 now uses K.a/2 and K.j/2 and explains their canonical specialization. IndexedCone.lean:433-436,563-566 proves precisely those bounds; :792-793 supplies K.a=aStar and K.j=jStar. The resulting starred constants match integrated_raw_block_lower.tex:286,325-327; lean/claims.yaml:2227,2241 remains accurate."
+    },
+    {
+      "claim": "IndexedCone-W2",
+      "verdict": "PASS",
+      "reason": "The relaxed sufficient interface is explicitly described in candidate/statement-ledger.md:1116-1126,1164, lean/claims.yaml:2171 and IndexedCone.lean:231-237. Its arbitrary positive margins and nonnegative bounds/signs match IndexedCone.lean:238-286, rather than being equated with the specific choices in integrated_raw_block_lower.tex:249-275."
+    },
+    {
+      "claim": "IndexedCone-W3",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:165-172 reproduces the declaration-row mappings at :1140-1185, including GroundFamily under all three proposition labels. Additional associations at :173-174 are expressly cross-references, not row labels. GroundFamily and the derived projection clause correspond to IndexedCone.lean:83-126,749-750 and integrated_compact_mean_family.tex:33-54,255-286,337-355."
+    },
+    {
+      "claim": "IndexedCone-W4",
+      "verdict": "PASS",
+      "reason": "lean/coverage.yaml:183-199 explicitly accounts for all 17 GroundFamily fields in IndexedCone.lean:85-126, including e0 and bounded-linear obs, while identifying Pi and Q as derived definitions. The inputs match integrated_raw_block_lower.tex:16-17 and integrated_compact_mean_family.tex:48-52,270-286,344-348."
+    },
+    {
+      "claim": "IndexedCone-W5",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:1088-1090 now cites integrated_raw_block_lower.tex:16-17 for the data and bounded observable. Those objects match IndexedCone.lean:93-95."
+    },
+    {
+      "claim": "IndexedCone-W6",
+      "verdict": "PASS",
+      "reason": "Scope now expressly includes Lean-only auxiliaries and examples under 'no direct label' at candidate/statement-ledger.md:90-95. This covers scalarFamily at :1183-1185 and IndexedCone.lean:1016-1054 without attributing that example to the physical-family setup in integrated_compact_mean_family.tex:4-19."
+    },
+    {
+      "claim": "IndexedCone-W7",
+      "verdict": "PASS",
+      "reason": "lean/claims.yaml:2276 replaces attainment wording with boundedness below and the lower-bound conclusion. This matches IndexedCone.lean:734-739 and the infimum defined in integrated_raw_block_lower.tex:254; candidate/statement-ledger.md:1179 makes no attainment claim."
+    },
+    {
+      "claim": "ClockCopy-W1",
+      "verdict": "PASS",
+      "reason": "Both two-time integral rows are now 'no direct label' at candidate/statement-ledger.md:709,712 and are indexed as route auxiliaries at :184. Their types are TimeFractional.lean:302-306,360-361. They are no longer represented as the manuscript's sine-integral or q-integration steps at notes_stratonovich_ham_second_moment.tex:7583-7602,7646-7648."
+    },
+    {
+      "claim": "ClockCopy-W2",
+      "verdict": "PASS",
+      "reason": "resolvent_sub_le and xi_integral_J are relabelled as route auxiliaries at candidate/statement-ledger.md:765,771 and Index:184. Their summaries match ClockCopy.lean:186-189,298-305 and lean/claims.yaml:2960,3002; they are distinguished from the homogeneous density estimate and heat-resolvent route in notes_stratonovich_ham_second_moment.tex:7623-7625,7646-7668."
+    },
+    {
+      "claim": "ClockCopy-W3",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:715 and lean/claims.yaml:2607 now specify both s-finite measures and joint measurability of each of f,c,A. These are exactly the hypotheses in TimeFractional.lean:409-416, rather than an unrestricted interpretation of the concrete Tonelli argument at notes_stratonovich_ham_second_moment.tex:7646."
+    },
+    {
+      "claim": "ClockCopy-W4",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:621-629 now separates proved finite paper-domain integrals from totalized auxiliary identities. SpectralHomog.lean:74-76 and ClockCopy.lean:649-651 indeed carry no integrability conclusion, while ClockCopy.lean:641-642 supplies the restricted integrability used for the finite Beta-domain calculation in notes_stratonovich_ham_second_moment.tex:7693-7700."
+    },
+    {
+      "claim": "ClockCopy-W5",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:632-641 lists unused fields separately for all three wrappers. The lists agree with the dependencies visible in ClockCopy.lean:735-760,769-777 and DampedNorms.lean:365-370, including the additional unused Radon/spectral fields and alpha_range where appropriate. These are carried clauses of the TeX hypothesis at notes_stratonovich_ham_second_moment.tex:169-185."
+    },
+    {
+      "claim": "ClockCopy-W6",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:642-650 and lean/coverage.yaml:304-306 correctly identify direct subordinated Fubini as a different route. ClockCopy.lean:37-45 also distinguishes it from the TeX's 'Alternatively', which specifically gives homogeneous density bounds at notes_stratonovich_ham_second_moment.tex:7623-7625. The actual Lean route is visible at ClockCopy.lean:434-466."
+    },
+    {
+      "claim": "ClockCopy-W7",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:232 now prints the weighted product and separately gives the bare-product denominator. This matches ClockFilter.lean:14-16, ClockCopy.lean:167-169 and the weighted spectral expression and denominator difference in notes_stratonovich_ham_second_moment.tex:7611-7620."
+    },
+    {
+      "claim": "ClockCopy-W8",
+      "verdict": "PASS",
+      "reason": "The affected ledger anchors are refreshed at candidate/statement-ledger.md:694-699,723-731: Fubini is at notes_stratonovich_ham_second_moment.tex:7510-7511, kernel properties at :7512, and heat/resolvent facts at :7517-7523. Their summaries agree with TimeFractional.lean:149-199 and SpectralHomog.lean:173-284."
+    },
+    {
+      "claim": "ClockCopy-W9",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:778 and lean/claims.yaml:3051 now print the nested integral and explicitly say 'l inner, xi outer'. This exactly matches ClockCopy.lean:526-527 and makes no direct correspondence claim to the different calculation in notes_stratonovich_ham_second_moment.tex:7646-7668."
+    },
+    {
+      "claim": "FiniteGaussianMatrix-W1",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:988 and lean/claims.yaml:3788 state the universally quantified Gram identity, qualifying singular-value discussion as informal and requiring x\u22600 for a nonzero value. FiniteGaussianMatrix.lean:1048-1054 makes the same distinction. This correctly relates the declaration to integrated_compact_gaussian.tex:175-176 without asserting a nonzero singular value at x=0."
+    },
+    {
+      "claim": "FiniteGaussianMatrix-W2",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:304 now says no inputs remain outside Lean for this scalar step and points to its formalized matrix applications. GaussianScalarPowers.lean:37-39 supplies the bound used in FiniteGaussianMatrix.lean:219-220, matching integrated_compact_gaussian.tex:69-73; the finite Gaussian estimates are proved at FiniteGaussianMatrix.lean:740-782,950-983."
+    },
+    {
+      "claim": "FiniteGaussianMatrix-W3",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "candidate/statement-ledger.md:846-850 now correctly names gaussian_trace_bounds_paper as carrying explicit imaginary-part conclusions and distinguishes the other wrappers. This matches FiniteGaussianMatrix.lean:379-390,1269-1277,1297-1319 and the real-trace usage in integrated_compact_gaussian.tex:129,139. Optional note C1 concerns the unchanged Lean header, not the repaired ledger."
+    },
+    {
+      "claim": "FiniteGaussianMatrix-W4",
+      "verdict": "PASS",
+      "reason": "Scope now restricts the exclusion to infinite-dimensional spectral analysis and operator theory, expressly excepting finite matrices, at candidate/statement-ledger.md:74-78. This accommodates FiniteGaussianMatrix.lean:90-115,244-289,348-400,901-905 and their counterparts in integrated_compact_gaussian.tex:63-88,165-167."
+    },
+    {
+      "claim": "RESCAN-VariationalDilation",
+      "verdict": "PASS",
+      "reason": "All 58 rows at candidate/statement-ledger.md:1576-1633 were compared with the complete WeakSobolev and VariationalDilation files. The direct mappings implement integrated_unmasked_variational.tex:225-264 or the explicitly restricted definitions at :104-109 and integrated_compact_mean_family.tex:402-410. Scaling factors r\u00b2, r^(4\u2212alpha), r and r, the trial integrability condition, totalized identities and missing spectral/probabilistic bridges are accurately distinguished."
+    },
+    {
+      "claim": "RESCAN-IndexedCone",
+      "verdict": "PASS",
+      "reason": "All 46 rows at candidate/statement-ledger.md:1140-1185 were checked against the complete IndexedCone.lean. The supplied interface matches integrated_compact_mean_family.tex:48-52,270-286,344-348; the cone steps and product match integrated_raw_block_lower.tex:249-327. No additional incorrect constant, hypothesis, quantifier order or proof-route mapping was found."
+    },
+    {
+      "claim": "RESCAN-ClockCopy",
+      "verdict": "PASS",
+      "reason": "All 112 rows at candidate/statement-ledger.md:675-786 were checked against the five complete Lean modules. Direct mappings agree with notes_stratonovich_ham_second_moment.tex:649-738,7502-7703; alternative-route helpers are distinguished. The factors 1/4, 2theta/(2theta+l), the density normalization and 2\u22122^a agree with ClockCopy.lean:90-108,669-672,722-734."
+    },
+    {
+      "claim": "RESCAN-FiniteGaussianMatrix",
+      "verdict": "PASS",
+      "reason": "All 118 rows at candidate/statement-ledger.md:892-1009 were checked against the complete GaussianIBP.lean and FiniteGaussianMatrix.lean. Their mappings agree with integrated_compact_gaussian.tex:47-187, including generalized intermediate statements, arbitrary-space law transfer, both variance directions, the divisor two and constants 288,144,1224,2304. No further row overclaim was found."
+    },
+    {
+      "claim": "LEDGER-TOTALS",
+      "verdict": "PASS",
+      "reason": "Read-only enumeration of all per-module tables found 557 distinct declaration rows: 347 labelled and 210 unlabelled, agreeing with candidate/statement-ledger.md:193-194. lean/claims.yaml:1-3938 contains exactly the same 557 declarations, with 470 theorem and 87 definition entries. Every declaration occurs once, and every declaration row has exactly four cells after accounting for escaped pipes."
+    },
+    {
+      "claim": "NO-REGRESSION",
+      "verdict": "PASS",
+      "reason": "The repaired sections, corresponding index rows at candidate/statement-ledger.md:154-190, Scope:14-106, ClockFilter:221-234, FiniteYoung:297-304 and lean/coverage.yaml agree on the reviewed scope and conclusions. The weighted partial fraction matches ClockFilter.lean:14-16; the finite applications match integrated_compact_gaussian.tex:47-171. No new acceptance-blocking error was identified."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "C1 \u2014 Residual FiniteGaussianMatrix header wording. lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean:35-37 still says 'the wrappers record that the relevant imaginary parts vanish'. Explicit such conjuncts occur in :379-390, whereas the probability-space wrappers at :1269-1277,1297-1319 state real-part bounds without them. The TeX says 'these traces are real' at manuscript/notes/integrated_compact_gaussian.tex:129 and uses the even-power trace identity at :139; the proved matrix lemmas justify that interpretation. candidate/statement-ledger.md:846-850 now describes this correctly. Optional fix: align the Lean header with that paragraph, naming gaussian_trace_bounds_paper for explicit imaginary-part conclusions and describing the other reality facts as consequences of the proved lemmas."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Complete-reading requirement A was satisfied. Unread prose in the partially covered ledger and claims.yaml, integrated_compact_gaussian.tex:201-617, integrated_compact_mean_family.tex:421-512, and main-manuscript intervals outside those listed were not substantively reviewed.",
+    "This is a correspondence review, not a Lean build, kernel audit or independent validation of the manuscript's analytic proofs.",
+    "Provenance metadata was read; hashes and repository history were not independently verified.",
+    "Referenced audit/refutation examples absent from the frozen packet were not verified.",
+    "This AI review is neither human verification nor a novelty audit."
+  ]
+}
