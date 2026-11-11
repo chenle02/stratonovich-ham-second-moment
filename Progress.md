@@ -18695,3 +18695,32 @@ universality wiki update is propagated with clean lint. Exact receipts were
 read on <HUB>. Adopted canonical Wu/Sung bibliography keys after a clean
 fast-forward of the local refdb mirror; temporary source entries were removed.
 No mathematical or whole-paper scientific gate is changed.
+
+## 2026-11-10: systematic attribution audit and classical-tool credits
+
+At Le's request, a delegated audit read all73substantive report TeX files
+(20,243lines in the frozen book-components edition), with separate early
+and late module partitions and selected source-edition/application checks.
+Retained report, inventories, source evidence and bounded Preface delta
+checks: private/audit/2026-11-10-attribution/. Adopted eight credit improvements:
+Gaussian noncommutative Khintchine, Cameron--Martin, Gaussian isoperimetry,
+Gaussian creation/annihilation algebra, Young integration, the Sz.-Nagy
+sharp one-dimensional inequality, interval Riesz equilibrium and shifted
+dyadic grids. Exact inspected editions are identified. The local proofs
+remain; no priority claim is made for modern expository sources.
+
+The concurrently revised Preface received bounded attribution checks.
+Corrected Huygens1659 to the publication date, added Van Helden's historical
+source, and narrowed Lerario's paraphrase to formally checked arguments.
+Author/release-owner assertions about personal history and public-record
+completeness are not certified by this mathematical audit.
+
+The paired builds have0errors,0undefined references/citations and0overfull
+boxes. All215proof bodies are preserved ignoring whitespace,95reader labels
+match and264external PDF links resolve. The index now has291mappings,
+370records at232anchors and177headings; all records match compiled pages.
+Book326pages, reader29. Inspected the eight new credit paragraphs, historical
+correction and an index page in the rendered PDF. No whole-book visual or
+scientific acceptance is claimed. The existing zero-covariance qualification
+of the imported first-moment comparison remains open for Le's decision;
+no hypothesis or theorem statement was changed.
