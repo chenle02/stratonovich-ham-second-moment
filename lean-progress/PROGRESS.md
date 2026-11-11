@@ -158,6 +158,28 @@
   not human verification; the supplied inputs of P:radius-mean-anchor and
   L:masked-trig-products stay outside Lean; any later change to these rows
   or cited labels needs a successor review.
+- **Post-L2 hardening (2026-11-10, companion 3c2cade..130bba4):**
+  (1) all 30 refutations rewritten to import their package module and
+  refute the package's own declarations (no local copies), each a named
+  theorem whose type is a negation, with `_contrast` theorems applying the
+  package theorem at the counterexample (76 theorems, standard axioms
+  only); 9 controls that stated bare numerals now state the wrong variant
+  in the package theorem's shape (all 68 controls already imported their
+  seam; WrongZeroShift header aligned with FALSE-CONTROL-MAP.md);
+  (2) Audit printouts and consumer examples for the 9 whole-result modules
+  (audits 26 -> 35); (3) re-anchored to manuscript revision 3920258
+  (presentation-only: only the uncited literature figure changed; all 78
+  cited labels and their statements and proofs unchanged; gates stay
+  recorded against ba01d98); (4) check-controls.sh catches Lean 4.35
+  setup errors case-insensitively (self-test refuses a broken control).
+  check-controls: 68 controls, 30 refutations, 35 audits PASS; lean-pkg
+  verified-private re-gated 79afdde -> 64070a7 -> e2903a6 (fresh receipts,
+  0 sorry, 223 claim axioms); claims synced at f3e8275. Field reviews of
+  lean-pkg proposal 0014 (declared controls) sent to lean-ops: final
+  verdict ACCEPT with two fixes; acceptance is Le's.
+- **Observation for Le:** the Lean model of `H:homog` admits the zero
+  measures (Gamma = mu = 0), as the TeX clause list does; if non-degenerate
+  noise is intended, `H:homog` may need Gamma != 0 (manuscript decision).
 - **Next:** Easley external kernel
   replay (leanchecker --fresh per module) of 837778a (Lean sources
   identical to 79afdde) in progress; human statement read (A1) still
