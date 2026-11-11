@@ -177,6 +177,35 @@
   0 sorry, 223 claim axioms); claims synced at f3e8275. Field reviews of
   lean-pkg proposal 0014 (declared controls) sent to lean-ops: final
   verdict ACCEPT with two fixes; acceptance is Le's.
+- **OVERNIGHT TODO LIST (Le, 2026-11-10 evening: "include all todos and
+  systematically complete all of them autonomously overnight").** Read as
+  approval to RUN wave L4 as proposed below; every gate (L4 correspondence)
+  stays Le's to close. Order and status (updated as items complete):
+  1. [ ] Comparator tier at one commit with the lower tier: refresh branch
+     comparator-tier onto main, merge into main, `lean-pkg receipt
+     comparator` and `receipt systemd --memory-max 12G` at the same commit,
+     `gate --receipt R --comparator C --regate`, `claims sync`, `claims
+     ledger` (target: 0 open theorem claims); record; report any rejected
+     claim as a statement-fidelity finding.
+  2. [ ] Easley `leanchecker --fresh` replay of the wave-L3 modules (job
+     5688396 running): review, redact, commit evidence, record here.
+  3. [ ] Wave L4 (four items L4-a..d below) in parallel worktrees:
+     formalize, verify independently, integrate (claims, ledger, coverage,
+     README/FORMALIZATION), check-controls; one Codex review per item,
+     adjudicate every finding, repair, confirmation review; then STOP for
+     Le's gate.
+  4. [ ] After L4: lean-pkg receipts of both tiers at one commit again
+     (comparator regenerated for the new claims), regate, claims ledger.
+  5. [ ] Easley `leanchecker --fresh` replay of the wave-L4 modules.
+  6. [ ] Community board (docs/community) updated for L4; #16 and #3
+     informed; lean-pkg friction to lean-ops (incl. 3 new comparator points:
+     open-scoped namespaces in the round-trip check, definitional-only
+     round trips without a hint, bridges for copied structures).
+  7. [ ] Retro of the night's lessons into Le-AI-Lab skills.
+  NOT for the night (Le's decisions): release of gaussian-chaos-lean (opens
+  D1, A2, B21); investing in a D8 Sobolev/self-adjoint foundation; #3's
+  recommended zero-covariance remark after H:homog and the nonzero
+  qualification of T:first's strict comparison; closing the L4 gate.
 - **WAVE L3 CORRESPONDENCE GATE: CLOSED (Le, 2026-11-10)** at companion
   dfc2fe8 over manuscript 3920258: Le accepted the four Codex GPT-6.1-Sol
   reviews (at 4721cf9: all FAIL with 2 fatal, 12 major and 11 minor
@@ -233,7 +262,7 @@
   Courant-Fischer, torus Sobolev spaces); everything needing D1, D5 or a
   full D8. Zero covariance: statements needing Gamma != 0 carry it
   explicitly, as the TeX does (see #3's answer below).
-- **WAVE L4: PROPOSED (2026-11-10), awaiting Le's approval.** Builds on
+- **WAVE L4: PROPOSED (2026-11-10); run overnight under Le's "complete all todos" instruction (gate stays Le's).** Builds on
   the wave-L3 D4 slice. From a read-only feasibility study against the TeX
   at 3920258, every Mathlib name probed by compiling scratch files (session
   scratch l4-feas.md; Probe1-5.lean). Mathlib gaps: no Gaussian
