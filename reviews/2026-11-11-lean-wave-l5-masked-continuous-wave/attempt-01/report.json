@@ -1,0 +1,180 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json: lines 1-1158, complete.",
+    "candidate/statement-ledger.md: lines 1-308, 361-386, 587-608, 1756-1998, 2120-2150, 2160, 2178-2330, 2612-2765, 3100-3177; partial file, complete required Scope, Index by label, and MaskedContinuousWave sections.",
+    "lean/StratonovichHAMSecondMoment/MaskedContinuousWave.lean: lines 1-462, complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedModulation.lean: lines 1-1135, complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean: lines 1-358, complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean: lines 1-113, complete.",
+    "lean/StratonovichHAMSecondMoment/TimeCompletion.lean: lines 348-356, 490-566, 700-800, 949-1075; partial file, complete targeted declarations.",
+    "lean/StratonovichHAMSecondMoment/TimeSchur.lean: lines 53-65, 291-305; partial file, complete kernel and timeForm definitions.",
+    "lean/claims.yaml: lines 1380-1592, 4335-4616, 5115-5138, 5592-5762; partial file, complete entries for all three required modules.",
+    "lean/coverage.yaml: lines 1-668, complete.",
+    "manuscript/notes/integrated_covariance_foundation.tex: lines 1-428, complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: lines 180-230, partial.",
+    "manuscript/notes/integrated_wave_variance.tex: lines 1-135, 174-255, partial.",
+    "All manuscript/notes/**/*.tex files: untruncated searches for the section's cited label definitions; matching definitions read in integrated_covariance_foundation.tex."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.masked_continuous_wave_paper: L:masked-continuous-wave",
+      "verdict": "PASS",
+      "reason": "Fidelity: candidate/statement-ledger.md:1846 and lean/claims.yaml:5593-5599 match lean/StratonovichHAMSecondMoment/MaskedContinuousWave.lean:395-408. Lean assumes '0 < a', 'a < 1', '0 < T', '0 < h', 'h \u2264 1', '0 \u2264 s', 's + h \u2264 T', and nonnegative frequencies; TeX specifies 'I = [s,s+h] \u2282 [0,T]', '0 < h \u2264 1' at manuscript/notes/integrated_covariance_foundation.tex:296-298, with the temporal parameter range inherited through a = alpha0 and H:homog. The conclusion reproduces TeX:385-388, including C1, (1+T)^4 and h^(2-a). Lean's 'hmem : \u2200 A, ContDiffOn ... \u2192 \u2200 \u03c9, modeFn ... \u2208 V' is covered by TeX:154-155's 'bounded measurable amplitudes'; 'hnorm ... MemLp ... \u2192 \u2016emb f\u2016\u00b2 = ...re' matches TeX:153-154,177-179. Neither input is stronger than its cited source. Both are discharged by MaskedContinuousWaveCompleted.lean:62-75."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.bracket_add_le: L:masked-continuous-wave",
+      "verdict": "PASS",
+      "reason": "Ledger:1847 and claims.yaml:5600-5606 faithfully describe MaskedContinuousWave.lean:127: '(x e : \u211d) : bracket (x + e) \u2264 (1 + |e|) * bracket x', without hypotheses. TeX integrated_covariance_foundation.tex:411-415 likewise says 'For real x,e' and gives precisely this upper inequality."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.bracket_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1848 and claims.yaml:5607-5613 match MaskedContinuousWave.lean:140: '(x : \u211d) : 0 < bracket x', without hypotheses. TeX integrated_covariance_foundation.tex:296 defines '<x> = sqrt(1+x\u00b2)' but does not state a separately identified positivity step. The no-direct-label classification is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.bracket_rpow_shift_le: L:masked-continuous-wave",
+      "verdict": "PASS",
+      "reason": "Ledger:1849 and claims.yaml:5614-5620 match MaskedContinuousWave.lean:145-146: '(ha1 : a < 1)' and '(hxx : |x - x\u2032| \u2264 2)' imply the factor '3^(1-a)'. TeX integrated_covariance_foundation.tex:417-419 states that changes have magnitude at most two and, 'Because a-1 < 0', each altered power costs at most '3^(1-a)'. The explicitly recorded weaker parameter hypothesis is harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.frequencyPair_shift_le: L:masked-continuous-wave",
+      "verdict": "PASS",
+      "reason": "Ledger:1850 and claims.yaml:5621-5627 match MaskedContinuousWave.lean:165-167: 'a < 1', '0 \u2264 h', 'h \u2264 1', and both frequency displacements at most one. TeX integrated_covariance_foundation.tex:400-401,417-419 has '|r\u2032-r|, |rho\u2032-rho| \u2264 1', 'h \u2264 1' and the same factor 3^(1-a). Lean's extension to h=0 and arbitrary real frequencies adds no restriction. frequencyPair's definition at MaskedTrigProducts.lean:106-107 matches TeX:355-358."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.bFn_contDiff: L:masked-continuous-wave",
+      "verdict": "FAIL",
+      "reason": "Fidelity passes: ledger:1851 and claims.yaml:5628-5634 match MaskedContinuousWave.lean:223: '(r : \u211d) : ContDiff \u211d 1 (bFn r)'. Mapping fails. TeX integrated_covariance_foundation.tex:381-382 defines b_r for 'r > 0' and b_0=t; its proof:393-411 uses cosine averaging and amplitudes 'A(t)=t^j', not a C1-amplitude treatment of b_r. This theorem is an auxiliary of the alternative Lean route, explicitly called 'Auxiliary' at Lean:222, rather than a statement or proof step present in the cited result. Relabel as no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.bFn_bounds: L:masked-continuous-wave",
+      "verdict": "FAIL",
+      "reason": "Fidelity passes: ledger:1852 and claims.yaml:5635-5641 match MaskedContinuousWave.lean:242-243: '(hr : 0 \u2264 r)' implies '|bFn r t| \u2264 bracket r * |t|' and '|deriv (bFn r) t| \u2264 bracket r'. Mapping fails. TeX integrated_covariance_foundation.tex:394-396 uses '0 \u2264 r \u2264 1' to obtain the averaging identity, then TeX:409-411 bounds the amplitudes 'A(t)=t^j'. It does not state or use this pair of b_r derivative/envelope bounds. These are correct Lean-route auxiliaries, not the cited TeX steps. Relabel as no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.bracket_div_le_sqrt_two: L:masked-continuous-wave",
+      "verdict": "PASS",
+      "reason": "Ledger:1853 and claims.yaml:5642-5648 match MaskedContinuousWave.lean:274: '(hr1 : 1 \u2264 r) : bracket r / r \u2264 sqrt 2'. TeX integrated_covariance_foundation.tex:393 says 'For r \u2265 1, b_r is a sine times a coefficient at most sqrt 2'. Its coefficient, by TeX:381, is exactly <r>/r."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.bracket_le_sqrt_two: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1854 and claims.yaml:5649-5655 match MaskedContinuousWave.lean:269: '(hr : 0 \u2264 r) (hr1 : r \u2264 1) : bracket r \u2264 sqrt 2'. TeX integrated_covariance_foundation.tex:394-400 uses the low-frequency range '0 \u2264 r \u2264 1' and a product coefficient at most two, but does not separately state this lemma. No direct label avoids claiming an exact TeX step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.eval_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1855 and claims.yaml:5656-5662 match MaskedContinuousWave.lean:199-200: '(W : Wave) (r t : \u211d)' gives the complex-valued amplitude/trig/frequency identity without sign hypotheses. TeX integrated_covariance_foundation.tex:393-407 instead decomposes low frequencies using 'int_0^1 cos(vrt) dv'. The distinct Lean decomposition is correctly classified as no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.fr_spec: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1856 and claims.yaml:5663-5669 match MaskedContinuousWave.lean:213: '(hr : 0 \u2264 r)' implies '0 \u2264 fr W r \u2227 |r - fr W r| \u2264 1'. TeX integrated_covariance_foundation.tex:400-401 has frequencies within one, but obtained through averaging, not this particular fr definition. The no-direct-label classification accurately distinguishes the routes."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.amp_contDiff: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1857 and claims.yaml:5670-5676 match MaskedContinuousWave.lean:231: '(W : Wave) (r : \u211d) : ContDiff \u211d 1 (amp W r)', with no hypotheses. TeX integrated_covariance_foundation.tex:409 applies the trig estimate to 'A(t)=t^j', not to amp W r. This is correctly identified as a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.amp_bound: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1858 and claims.yaml:5677-5683 faithfully reproduce MaskedContinuousWave.lean:284-286: '0 \u2264 r', '0 \u2264 T', 'h \u2264 1', followed by existential nonnegative Mi,Di and the uniform envelope on Icc 0 T. No h>0 hypothesis is omitted. TeX integrated_covariance_foundation.tex:410-411 instead bounds M+hD for 'j=0,1,2'. The per-factor envelope is correctly classified as a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.amp_prod_sup: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1859 and claims.yaml:5684-5690 match MaskedContinuousWave.lean:318-325: '0 < h', global 'ContDiff \u211d 1 f' and g, and the two envelope hypotheses on Icc s (s+h), imply C1 regularity and both stated sSup bounds, including derivWithin. TeX integrated_covariance_foundation.tex:409-411 uses the specific amplitudes 't^j', not a general product-amplitude lemma. No direct label is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.waveFn_eq_prodFn: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1860 and claims.yaml:5691-5697 match MaskedContinuousWave.lean:356-358: '(I : Set \u211d) (F G : Wave) (r rho : \u211d)' gives equality of the masked functions, without interval or positivity hypotheses. TeX integrated_covariance_foundation.tex:398-407 instead represents the product by normalized integrals. The alternative exact decomposition is correctly marked no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.cFn: L:masked-continuous-wave",
+      "verdict": "PASS",
+      "reason": "Ledger:1861 and claims.yaml:5698-5704 match MaskedContinuousWave.lean:101: 'def cFn (r t : \u211d) : \u211d := Real.cos (r * t)'. TeX integrated_covariance_foundation.tex:379 defines 'c_r(t)=cos(rt)'. No extra hypothesis is imposed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.bFn: L:masked-continuous-wave",
+      "verdict": "PASS",
+      "reason": "Ledger:1862 and claims.yaml:5705-5711 match MaskedContinuousWave.lean:105: 'if r = 0 then t else bracket r * Real.sin (r * t) / r'. TeX integrated_covariance_foundation.tex:381-382 specifies the quotient for 'r > 0' and 'b_0(t)=t'. The extension to negative r is explicitly disclosed and unused in the nonnegative-frequency wrapper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.Wave: L:masked-continuous-wave",
+      "verdict": "PASS",
+      "reason": "Ledger:1863 and claims.yaml:5712-5718 match MaskedContinuousWave.lean:108-110: 'inductive Wave | c | b'. TeX integrated_covariance_foundation.tex:384 allows 'F_r in {c_r,b_r}' and 'G_rho in {c_rho,b_rho}'. The two-constructor modelling preserves exactly these choices."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.Wave.eval: L:masked-continuous-wave",
+      "verdict": "PASS",
+      "reason": "Ledger:1864 and claims.yaml:5719-5725 match MaskedContinuousWave.lean:113-115: '.c, r, t => cFn r t' and '.b, r, t => bFn r t'. TeX integrated_covariance_foundation.tex:379-384 defines those same factors and choices. The real-valued evaluation introduces no additional assumption."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.waveFn: L:masked-continuous-wave",
+      "verdict": "PASS",
+      "reason": "Ledger:1865 and claims.yaml:5726-5732 match MaskedContinuousWave.lean:118-119: '(I : Set \u211d) ... : \u211d \u2192 \u2102 := I.indicator ... (F.eval r t * G.eval rho t)'. TeX integrated_covariance_foundation.tex:385-387 bounds '1_I F_r G_rho' in the complexified completion specified at TeX:297-298. The real-to-complex coercion preserves that object."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.C\u2081: L:masked-continuous-wave",
+      "verdict": "PASS",
+      "reason": "Ledger:1866 and claims.yaml:5733-5739 match MaskedContinuousWave.lean:122: 'C\u2081 (a : \u211d) := 4 * 3 ^ (1 - a) * C\u2080 a'. MaskedTrigProducts.lean:325 defines 'C\u2080 a := 16/(1-a)'. These are exactly TeX integrated_covariance_foundation.tex:388 and :306. The wrapper's a<1 excludes the zero denominator."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.amp: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1867 and claims.yaml:5740-5746 match MaskedContinuousWave.lean:182-184: amplitude 1 for c, and 'if r < 1 then bFn r t else bracket r / r' for b, without hypotheses. TeX integrated_covariance_foundation.tex:393-407 treats 'r \u2265 1' by a scalar coefficient and '0 \u2264 r \u2264 1' by averaging. This particular amplitude definition belongs only to the disclosed Lean route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.trig: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1868 and claims.yaml:5747-5753 match MaskedContinuousWave.lean:188-190: cos for c; 'if r < 1 then .cos else .sin' for b. TeX integrated_covariance_foundation.tex:393-407 uses sine at high frequencies and a family of averaged cosines at low frequencies, not this single zero-frequency factor. No direct label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWave.fr: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1869 and claims.yaml:5754-5760 match MaskedContinuousWave.lean:194-196: frequency r for c; 'if r < 1 then 0 else r' for b. TeX integrated_covariance_foundation.tex:396,400-401 uses averaged frequencies vr within one of r. The specific replacement by zero is a Lean-route auxiliary, correctly classified."
+    },
+    {
+      "claim": "PARA-MaskedContinuousWave",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:1758-1842 accurately describes the abstract E,V,emb formulation, uniform-amplitude hmem, L2-restricted hnorm, unused T>0 assumption, negative-frequency extension, exact constant and alternative proof. Lean MaskedContinuousWave.lean:409-460 implements the described envelope and bracket route. MaskedContinuousWaveCompleted.lean:62-75 discharges both inputs. TeX integrated_covariance_foundation.tex:393-421 instead uses Bochner averaging and Jensen, which the paragraph explicitly does not claim to formalize. The separate row-mapping errors are recorded in checks 6 and 7."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "FAIL",
+      "reason": "candidate/statement-ledger.md:176-308 contains only one index row listing MaskedContinuousWave declarations, at :288. It contains 13 of this section's 24 declarations, plus the completed wrapper. The 11 declarations assigned no direct label at :1848,1854-1860,1867-1869 are absent from the index. The existing index also repeats the incorrect direct mappings of bFn_contDiff and bFn_bounds. Label existence passes: manuscript-wide searches locate L:masked-time-completion, L:masked-trig-products, L:masked-continuous-wave and E:masked-continuous-wave at integrated_covariance_foundation.tex:141,347,378,385."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "lean/coverage.yaml:195-208 includes both 'masked-continuous-wave-completed-masked-continuous-wave-completed-paper' and 'masked-continuous-wave-masked-continuous-wave-paper'. Its same-assumptions/full classification is justified by MaskedContinuousWaveCompleted.lean:62-75, whose hypotheses match TeX integrated_covariance_foundation.tex:296-298,378-388 and whose conclusion uses the concrete completion without supplied inputs. The route qualification and constant are accurate."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "Scope at candidate/statement-ledger.md:88-102 correctly attributes the no-input result to the completed wrapper. TimeCompletion cross-references at :2614-2644,2684-2692,2730 accurately explain its instantiation and complex completion. The DimensionalMatrix discussion at :363-385 distinguishes the normalized continuous factors from the unweighted matrix calculation; its excluded zero-frequency matrix interpretation does not deny the separately defined b_0=t. This distinction matches manuscript/notes/integrated_wave_variance.tex:178-185,229-238. The exclusions at ledger:3136-3138,3161-3177 do not retract or overextend the temporal-factor result."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "W1 \u2014 Incorrect manuscript mapping for bFn_contDiff and bFn_bounds. candidate/statement-ledger.md:1851-1852 assigns both directly to L:masked-continuous-wave. Lean MaskedContinuousWave.lean:223 states 'ContDiff \u211d 1 (bFn r)' for every real r, and :242-243 states, under '0 \u2264 r', '|bFn r t| \u2264 bracket r * |t|' and '|deriv (bFn r) t| \u2264 bracket r'. TeX manuscript/notes/integrated_covariance_foundation.tex:394-396 instead uses 'b_r(t)=t<r> int_0^1 cos(vrt) dv', and :409 applies the estimate with 'A(t)=t^j'. Neither auxiliary is stated or used in that proof. Their mathematical statements and claims.yaml summaries are correct, but their direct-label attribution is not. Fix the two ledger rows to 'no direct label (auxiliary to the Lean proof route)', move their index entries accordingly, and update any affected label totals.",
+      "W2 \u2014 Incomplete MaskedContinuousWave index. candidate/statement-ledger.md:288 indexes only 13 of the section's 24 declarations; the index at :176-308 omits bracket_pos, bracket_le_sqrt_two, eval_eq, fr_spec, amp_contDiff, amp_bound, amp_prod_sup, waveFn_eq_prodFn, amp, trig and fr. These are explicitly classified as 'no direct label' in ledger:1848,1854-1860,1867-1869. For example, Lean MaskedContinuousWave.lean:199-200 gives the amp/trig/fr identity, whereas TeX manuscript/notes/integrated_covariance_foundation.tex:405-407 uses 'Bochner integrals' and 'Hilbert Jensen'; the auxiliary classification must remain visible rather than disappear from the index. Add a no-direct-label MaskedContinuousWave index row containing all 11 omitted declarations, together with the two reclassified declarations from W1, so all 24 section declarations occur exactly once under their correct classifications."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Relabel bFn_contDiff and bFn_bounds as no-direct-label Lean-route auxiliaries in the ledger and its index; reconcile affected label totals.",
+    "Complete the MaskedContinuousWave index with every omitted auxiliary, ensuring all 24 section declarations are indexed exactly once under their corrected row classifications."
+  ],
+  "limitations": [
+    "Requirement A is complete. Additional files marked partial were read only in the listed ranges; their remaining contents, unrelated ledger sections and unrelated claims.yaml entries were not audited.",
+    "Compilation and proof correctness were accepted as stipulated; no build, axiom audit, network access or file modification was performed. Provenance byte binding was accepted as supervisor-checked.",
+    "This is an AI correspondence review, not human verification or a novelty audit."
+  ]
+}

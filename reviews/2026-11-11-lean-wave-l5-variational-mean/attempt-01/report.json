@@ -1,0 +1,276 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-1167 complete.",
+    "candidate/statement-ledger.md:1-308,2797-2921,2966-3177 read in context; complete required Scope, Index by label and VariationalMean sections. Partial remainder: declaration, label and cross-reference metadata scanned across 1-3177 for the specified global checks.",
+    "lean/StratonovichHAMSecondMoment/VariationalMean.lean:1-733 complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:1-465 complete.",
+    "lean/StratonovichHAMSecondMoment/WeakSobolev.lean:1-329 complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean:65-160,320-340 partial; complete declarations of integrable_gauss_of_tempered, spectral_translated_gauss and integrable_gauss_zero.",
+    "lean/StratonovichHAMSecondMoment/TimeFractional.lean:56-75 partial; complete integral_pos_of_ae_pos declaration.",
+    "lean/StratonovichHAMSecondMoment/TimeCompletion.lean:1040-1075 partial; complete masked_trig_products_completed_paper declaration.",
+    "lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean:45-100 partial; complete masked_continuous_wave_completed_paper declaration.",
+    "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean:119-142,641-692 partial; complete GreenMass and damped_homogeneous_norms_paper declarations.",
+    "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:432-510 partial; complete radius_mean_anchor_paper type.",
+    "lean/StratonovichHAMSecondMoment/IndexedCone.lean:976-1029 partial; complete indexed_cone_paper declaration.",
+    "lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean:1285-1340 partial; complete finite_gaussian_matrix_paper declaration.",
+    "lean/claims.yaml:1585-1998,6489-6772 read completely in consecutive ranges, including all required WeakSobolev, VariationalDilation and VariationalMean entries; partial remainder, with declaration/kind/status metadata scanned across 1-6856.",
+    "lean/coverage.yaml:1-668 complete.",
+    "docs/coverage-scope-tex.yaml:1-18 complete.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-343 complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:175-241 partial.",
+    "manuscript/notes/integrated_compact_mean_family.tex:380-420 partial. All supplied manuscript LaTeX files were searched for the section's cited label definitions; contextual reading was limited to the ranges listed."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.heatK: L:variational-heat-envelope",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:117-118 defines '(2 * Real.pi * \u03b5) ^ (-((d : \u211d) / 2))' times the Gaussian, matching integrated_unmasked_variational.tex:25-26, '(2\u03c0 \u03b5)^(-d/2)e^{-|x|\u00b2/(2\u03b5)}'. The extension to every real \u03b5 is explicitly disclosed in ledger:3072; claims.yaml:6493-6495 agrees. Positivity of \u03b5 is appropriately required by subsequent results."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.heatK_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:121 requires 'h\u03b5 : 0 < \u03b5' and concludes '0 < heatK \u03b5 x'. TeX integrated_unmasked_variational.tex:60 uses 'p_\u03b5 > 0'. Ledger:3073 and claims.yaml:6500-6502 accurately describe the elementary auxiliary without asserting a separate labelled result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.heatSpec: E:variational-heat-envelope",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:126-127 defines 'Complex.exp (Complex.I * inner \u03be x)' times 'exp (-(\u03b5 * \u2016\u03be\u2016\u00b2 / 2))'. TeX integrated_unmasked_variational.tex:27-29 has exactly 'e^{i\u03be\u00b7x}e^{-\u03b5|\u03be|\u00b2/2}'. Ledger:3074 and claims.yaml:6507-6509 preserve the sign and constants."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.heatK_integrable: L:variational-heat-envelope",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:133-134 assumes 'IsTempered \u0393' and '0 < \u03b5', concluding integrability of 'y \u21a6 heatK \u03b5 (x-y)' for every x. TeX integrated_unmasked_variational.tex:38-45 derives this finiteness from positive tempered Radon measures. The explicitly weaker general hypotheses in ledger:3075 and claims.yaml:6514-6516 are sufficient, not additional manuscript assumptions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.heatSpec_integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:145-146 assumes 'IsTempered \u03bc' and '0 < \u03b5', concluding 'Integrable (heatSpec \u03b5 x) \u03bc'. TeX integrated_unmasked_variational.tex:43 and 55 states Gaussian integrability and absolute finiteness. Ledger:3076 and claims.yaml:6521-6523 correctly present this as an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.heat_identity: E:variational-heat-envelope",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:158-160 assumes 'IsSpectralMeasure \u0393 \u03bc' and '0 < \u03b5', and equates the complexified convolution with the spectral integral. TeX integrated_unmasked_variational.tex:28-29 gives the same identity, expressly 'without an extra normalization factor' at 57. Ledger:3077 and claims.yaml:6528-6530 disclose that this declaration alone is an identity of Lean integrals, not an integrability assertion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.heat_envelope: L:variational-heat-envelope",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:183-188 assumes tempered \u0393, \u03bc, the spectral convention and '0 < \u03b5'; it proves both integrabilities, the identity and '0 \u2264 conv ... x \u2264 conv ... 0'. TeX integrated_unmasked_variational.tex:28-34 includes these conclusions plus strict positivity. Ledger:3078 and claims.yaml:6535-6537 accurately separate strict positivity into heat_conv_pos and explicitly disclose the weaker hypotheses."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.heat_conv_pos: L:variational-heat-envelope",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:206-208 explicitly requires 'h\u0393 : \u0393 \u2260 0', temperedness and '0 < \u03b5', concluding strict positivity at zero. TeX integrated_unmasked_variational.tex:4 assumes nonzero covariance and 60 invokes '\u0393 \u2260 0 and p_\u03b5 > 0'. Ledger:3079 and claims.yaml:6542-6544 retain this essential condition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.abs_rpow_integrableOn: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:214-215 requires 'ha : a < 1' and proves integrability of '|r| ^ (-a)' on 'Ioo (-1) 1'. TeX integrated_unmasked_variational.tex:89-91 uses integrability on a bounded interval 'since a < 1'. Ledger:3080 and claims.yaml:6549-6551 correctly identify a Lean-route auxiliary; the endpoint a = 1 is not included."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.abs_rpow_integral: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:238-239 assumes 'a < 1' and gives '2 / (1-a)'. TeX integrated_unmasked_variational.tex:89-91 requires only the corresponding integrability and does not prescribe this constant. The two-sided integral indeed equals 2/(1-a); ledger:3081 and claims.yaml:6556-6558 correctly present the exact value as an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.exists_radius: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:265-266 assumes 'HasCompactSupport \u03a8' and obtains '\u2203 R, 0 \u2264 R' with vanishing whenever 'R < \u2016z\u2016'. TeX integrated_unmasked_variational.tex:78-80 invokes compactness of the common spatial support. Ledger:3082 and claims.yaml:6563-6565 faithfully state the auxiliary consequence."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.eq_zero_of_time: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:279-280 assumes 'tsupport \u03a8 \u2286 Ioo 0 1 \u00d7\u02e2 univ' and 'u \u2209 Ioo 0 1', concluding \u03a8(u,z)=0. TeX integrated_unmasked_variational.tex:8 and 77 uses compact support inside (0,1) and zero extension. Ledger:3083 and claims.yaml:6570-6572 accurately record the support auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.one_le_gauss: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:286-287 assumes '\u2016z\u2016 \u2264 R' and proves '1 \u2264 exp(R\u00b2/2) * exp(-\u2016z\u2016\u00b2/2)'. TeX integrated_unmasked_variational.tex:79-80 uses a positive heat-kernel minimum on the support. Ledger:3084 and claims.yaml:6577-6579 state a correct elementary auxiliary, not a separately attributed TeX step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.gMass: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:295 defines '\u222b y, exp (-(\u2016y\u2016\u00b2 / 2)) \u2202\u0393' for an arbitrary measure \u0393. TeX integrated_unmasked_variational.tex:43 and 59 uses finite total Gaussian mass under the standing temperedness assumptions. Ledger:3085 and claims.yaml:6584-6586 explicitly distinguish this unconditional Bochner definition from its later integrability proof."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.gauss_conv: L:variational-heat-envelope",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:301-304 assumes tempered \u0393, \u03bc and 'IsSpectralMeasure \u0393 \u03bc', proving integrability and the Gaussian convolution bound by gMass \u0393. TeX integrated_unmasked_variational.tex:31-32 supplies the heat envelope, applied in 78-82. Ledger:3086 and claims.yaml:6591-6593 correctly describe its \u03b5=1 rescaling."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.gMass_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:325-326 states '0 \u2264 gMass \u0393' for every measure \u0393. TeX integrated_unmasked_variational.tex:38 and 58 uses positive measures and nonnegative convolution. Ledger:3087 and claims.yaml:6598-6600 accurately state the unconditional auxiliary, which does not assert finiteness of an improper integral."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.pt_bound: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:331-333 assumes '\u2200 p, |\u03a8 p| \u2264 B' and spatial vanishing outside radius R, yielding the stated B exp(R\u00b2/2) Gaussian envelope. TeX integrated_unmasked_variational.tex:78-80 derives '|D\u03a8| \u2264 C_D p_\u03b5' from compact support. Ledger:3088 and claims.yaml:6605-6607 correctly expose the concrete underived auxiliary and its constants."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.pt_diff: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:348-351 assumes '|\u03a8 p-\u03a8 q| \u2264 L dist p q' and spatial support, obtaining the sum of two Gaussian envelopes. TeX integrated_unmasked_variational.tex:82-94 instead uses derivatives. Ledger:3089 and claims.yaml:6612-6614 accurately mark this different Lean proof route as auxiliary rather than a TeX derivative step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.conv_integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:372-381 requires tempered \u0393, \u03bc, the spectral convention, 'Continuous \u03a8', a bound B and spatial radius R. TeX integrated_unmasked_variational.tex:77-83 has smooth compactly supported \u03a8 and establishes convolution bounds and differentiation. Ledger:3090 and claims.yaml:6619-6621 correctly state the auxiliary integrability conclusion; the control assumptions imply its hypotheses."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.conv_le: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:390-392 retains the tempered/spectral assumptions and bound/support hypotheses but requires no continuity, proving '|conv ...| \u2264 B exp(R\u00b2/2) gMass \u0393'. TeX integrated_unmasked_variational.tex:79-82 supplies the corresponding uniform envelope bound. Ledger:3091 and claims.yaml:6626-6628 faithfully describe the generalized auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.conv_lip: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:405-409 assumes continuity, bound/support data and '|\u03a8 p-\u03a8 q| \u2264 L dist p q', with constant '2 * L * exp(R\u00b2/2) * gMass \u0393'. TeX integrated_unmasked_variational.tex:82-94 uses bounded derivatives instead. Ledger:3092 and claims.yaml:6633-6635 accurately describe this alternative auxiliary; Lipschitz regularity also implies the displayed continuity hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.ctrl_data: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:440-442 assumes '\u03a8 \u2208 CPos d' and derives B,L \u2265 0, global boundedness, Lipschitz regularity and a spatial radius. TeX integrated_unmasked_variational.tex:6-9 assumes smooth compact support, the same control class. Ledger:3093 and claims.yaml:6640-6642 accurately record derived data, not supplied analytic assumptions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.mean_nonneg: L:variational-global-mean",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:455-458 assumes '\u03a8 \u2208 CPos d' and concludes '0 \u2264 mean a \u0393 \u03a8 s x' for arbitrary \u0393,a,s,x. TeX integrated_unmasked_variational.tex:70 and 93 states nonnegativity from positive kernels. Ledger:3094 and claims.yaml:6647-6649 correctly disclose the stronger generality and absence of an integrability requirement for this inequality alone."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.conv_eq_zero_of_time: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:462-465 assumes time support in '(0,1)' and 'u \u2209 Ioo 0 1', concluding zero convolution. TeX integrated_unmasked_variational.tex:77 extends \u03a8 by zero in time. Ledger:3095 and claims.yaml:6654-6656 accurately describe the auxiliary support consequence without extra measure assumptions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.shift_mem: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:469-470 assumes 's \u2208 Icc 0 1' and 'r \u2209 Ioo (-1) 1', concluding 's-r \u2209 Ioo 0 1'. TeX integrated_unmasked_variational.tex:84-90 changes variables and restricts relevant r to a bounded interval. Ledger:3096 and claims.yaml:6661-6663 correctly state this interval auxiliary, including endpoints."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.mean_eq_shift: L:variational-global-mean",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:478-481 assumes the time-support inclusion and 's \u2208 [0,1]', with arbitrary a, and gives the shifted integral over (-1,1). TeX integrated_unmasked_variational.tex:84-87 gives the same substitution over \u211d. Ledger:3097 and claims.yaml:6668-6670 explicitly explain the harmless support restriction and unconditional Bochner-integral interpretation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.integrable_pot_of_bounded: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:497-499 assumes 'Continuous V', '|V x| \u2264 M' and 'MemLp f 2 volume', concluding integrability of V f\u00b2. TeX integrated_unmasked_variational.tex:66-72 provides bounded continuous h_s and 101-107 integrates h_s f\u00b2 for H\u00b9 trials. Ledger:3098 and claims.yaml:6675-6677 correctly describe the auxiliary that justifies this side condition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.convT_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:510-513 uses the conv_lip hypotheses, including 'Continuous \u03a8' and its global Lipschitz/support bounds, and proves joint convolution continuity. TeX integrated_unmasked_variational.tex:77-83 has smooth compactly supported \u03a8 and corresponding convolution derivatives. Ledger:3099 and claims.yaml:6682-6684 faithfully describe the alternative auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.shift_integrableOn: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:527-530 requires the conv_lip data and 'a < 1', proving shifted-integrand integrability on (-1,1) for every s,x. TeX integrated_unmasked_variational.tex:89-91 dominates the shifted integrand by an integrable '|r|^{-a}'. Ledger:3100 and claims.yaml:6689-6691 accurately state the auxiliary and its strict exponent range."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.mean_integrableOn: L:variational-global-mean",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:539-543 assumes '\u03a8 \u2208 CPos d', bound/Lipschitz/radius data, 'a < 1' and 's \u2208 [0,1]', under the tempered/spectral hypotheses. TeX integrated_unmasked_variational.tex:4-9 and 77-92 supplies these properties through the standing assumptions and smooth compact support. The additional data are proved by ctrl_data, not supplied inputs; ledger:3101 and claims.yaml:6696-6698 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.mean_le: E:variational-global-mean",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:558-562 has the preceding hypotheses and proves 'mean ... \u2264 B exp(R\u00b2/2) gMass \u0393 (2/(1-a))'. TeX integrated_unmasked_variational.tex:68-72 asks for a finite uniform M, not a prescribed sharp constant. This valid choice is uniform in s,x; ledger:3102 and claims.yaml:6703-6705 accurately state it."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.mean_lip: E:variational-global-mean",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:577-582 assumes the control data, 'a < 1' and s,t \u2208 [0,1], proving the joint bound with constant '2 L exp(R\u00b2/2) gMass \u0393 2/(1-a)'. TeX integrated_unmasked_variational.tex:71-72 asks for the time sup-norm bound. Setting x'=x gives it exactly. Ledger:3103 and claims.yaml:6710-6712 preserve the constant and disclose the additional spatial conclusion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.variational_heat_envelope_paper: L:variational-heat-envelope",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:612-621 requires 'HomogCovariance d alpha alpha0 \u0393 \u03bc', '\u0393 \u2260 0' and '0 < \u03b5'. TeX integrated_unmasked_variational.tex:4-5 assumes nonzero H:homog covariance, with positive heat time implicit at 25-26. Every conclusion at 28-34 is proved, including genuine integrability and strict positivity, without a (2\u03c0)^(-d) factor. Ledger:3104 and claims.yaml:6717-6719 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.global_mean: L:variational-global-mean",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:630-638 assumes tempered \u0393,\u03bc, their spectral relation, '\u03a8 \u2208 CPos d' and 'a < 1'; M,C are chosen before all times and positions. TeX integrated_unmasked_variational.tex:68-72 likewise chooses finite uniform constants. Ledger:3105 and claims.yaml:6724-6726 correctly identify a general form of the display, with integrability and an additional joint Lipschitz conclusion, not the mixed-derivative assertion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.dist_same_space: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:650 states, without hypotheses, 'dist (s,x) (t,x) = |s-t|'. TeX integrated_unmasked_variational.tex:71 compares h_s and h_t at the same spatial point through the sup norm. Ledger:3106 and claims.yaml:6731-6733 correctly present the product-metric conversion as a Lean-only auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.dist_same_time: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:655 states, without hypotheses, 'dist (s,x) (s,x\u2032) = dist x x\u2032'. TeX integrated_unmasked_variational.tex:66 concerns spatial regularity but states no product-metric identity. Ledger:3107 and claims.yaml:6738-6740 accurately mark this elementary Lean-route auxiliary as having no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.mean_continuous_of_lip: no direct label",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:661-663 assumes '0 \u2264 C' and the spatial Lipschitz inequality, concluding 'Continuous (mean ... s)'. TeX integrated_unmasked_variational.tex:66 asserts the stronger mixed differentiability, while 91-92 explains the derivative route. Ledger:3108 and claims.yaml:6745-6747 correctly describe a distinct continuity auxiliary without attributing the derivative proof to Lean."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.variational_global_mean_paper: L:variational-global-mean",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:679-691 assumes H:homog, '\u0393 \u2260 0' and '\u03a8 \u2208 CPos d', and uses exponent alpha0. TeX integrated_unmasked_variational.tex:4-9 states these hypotheses and 'a = \u03b1\u2080'. The existential constants precede s,t,x, and the pointwise-in-x time bound is equivalent to 69-72. Ledger:3109 and claims.yaml:6752-6754 are faithful; ledger explicitly excludes the mixed-derivative sentence at 66-67."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.variational_global_mean_lipschitz_paper: L:variational-global-mean",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:707-711 assumes the same H:homog, nonzero covariance and CPos control and proves a joint Lipschitz bound on [0,1]\u00d7\u211d^d. TeX integrated_unmasked_variational.tex:66-67 asserts bounded first derivatives among all mixed derivatives, which implies such a bound, but its display does not state it. Ledger:3110 expressly says 'not a TeX statement'; claims.yaml:6759-6761 accurately records the extra conclusion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalMean.isRayleighTrial_mean_iff_paper: E:variational-real-rayleigh",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:720-725 assumes H:homog, \u0393\u22600, \u03a8\u2208CPos and s\u2208[0,1], and gives exactly 'MemLp f 2 \u2227 MemLp g 2 \u2227 HasWeakGradient f g \u2227 \u222b f\u00b2 = 1'. TeX integrated_unmasked_variational.tex:104-107 ranges over real unit H\u00b9 functions. WeakSobolev.lean:70-77,222-227 supplies the faithful weak-gradient model; the extra potential-integrability condition is proved automatic, not assumed. Ledger:3111 and claims.yaml:6766-6768 agree."
+    },
+    {
+      "claim": "PARA-VariationalMean",
+      "verdict": "PASS",
+      "reason": "Ledger:2968-3068 accurately identifies the files, original convolution/control/mean objects, standing assumptions, integral interpretation of temperedness, genuine-integrability conclusions and alternative Gaussian-test/Lipschitz proof routes. Its unused-H:homog-field account matches HomogHypothesis.lean:64-80 and the wrappers' proofs. It clearly excludes mixed derivatives and convolution smoothness and identifies joint Lipschitz regularity as extra. The listed mathematical wrong variants are indeed false."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "FAIL",
+      "reason": "Ledger:299-301 lists only 17 distinct VariationalMean declarations, whereas the section's table at 3072-3111 contains 40. All 23 'no direct label' entries are missing from the index. The index also changes row labels: heatSpec and heat_identity are placed under L rather than E:variational-heat-envelope; mean_le and mean_lip under L rather than E:variational-global-mean; gauss_conv under L:variational-global-mean rather than its row's L:variational-heat-envelope. All eight labels cited by the section exist uniquely in the manuscript. See W1."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:403-437 correctly classifies the heat envelope as same-assumptions/full and the global mean as same-assumptions/weaker, explicitly restricting formalization to the display and supplementary integrability/continuity/Lipschitz conclusions. The claim identifiers resolve to the inspected declarations. docs/coverage-scope-tex.yaml:13-15 reproduces the global-mean scope accurately. No undeclared supplied analytic input or normalization change was found."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "Outside the separately failed index, ledger:113-118,2841-2848,2862-2874,2883-2894,2921 and 2966 correctly refer boundedness, mean integrability and automatic Rayleigh potential integrability to VariationalMean while retaining the unformalized spectral and variance identifications. The Not in Lean section at 3113-3177 does not retract the newly formalized mean display. The derivative exclusion remains explicit."
+    },
+    {
+      "claim": "LEDGER-TOTALS",
+      "verdict": "PASS",
+      "reason": "A declaration-name census of all per-module tables gives exactly 972 rows: 537 labelled and 435 unlabelled. Matching them against every claims.yaml declaration gives exactly one ledger row per declaration, with no missing, duplicate or extra names. claims.yaml kinds total 810 theorems and 162 definitions, agreeing with ledger:306-307."
+    },
+    {
+      "claim": "SCOPE-PROSE",
+      "verdict": "PASS",
+      "reason": "Ledger:43-145 has the correct 33 whole-result modules and 26 same-assumptions results plus three whole-conclusion results with supplied inputs; its narrower-conclusion qualifications are explicit. coverage.yaml has 26 same-assumptions rows and 16 inputs-supplied rows, the latter comprising three whole results and 13 step-only results. TimeCompletion.lean:1056-1073 and MaskedContinuousWaveCompleted.lean:62-75 have no supplied analytic interfaces; DampedNormsHomog.lean:652-675 has precisely GreenMass beyond H:homog. The finite-Gaussian and remaining supplied-input descriptions are consistent with the inspected interfaces. The internal-status module list at ledger:164-174 matches claims.yaml status metadata."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "W1 \u2014 LEDGER-INDEX is incomplete and does not preserve the table's label assignments. candidate/statement-ledger.md:299-301 indexes 17 declarations, omitting all 23 unlabelled declarations at 3073,3076,3080-3085,3087-3093,3095-3096,3098-3100,3106-3108. It also groups heatSpec/heat_identity under L:variational-heat-envelope instead of their E label, mean_le/mean_lip under L:variational-global-mean instead of their E label, and gauss_conv under the global-mean label instead of its heat-envelope row label. For example, Lean VariationalMean.lean:126-127 defines 'heatSpec' as 'exp(i\u27e8\u03be,x\u27e9) exp(-\u03b5\u2016\u03be\u2016\u00b2/2)', exactly the integrand in manuscript/notes/integrated_unmasked_variational.tex:27-29, labelled E:variational-heat-envelope; the table correctly uses that label at ledger:3074, but the index does not. Likewise Lean VariationalMean.lean:562 states 'mean ... \u2264 B * exp(R\u00b2/2) * gMass \u0393 * (2/(1-a))', corresponding to TeX:69-72, '0 \u2264 h_s(x) \u2264 M' under E:variational-global-mean. Exact fix: regenerate the VariationalMean index from rows 3072-3111, including all 40 declarations, a no-direct-label group containing all 23 auxiliaries, the two E-label groups, gauss_conv under its table label, and the existing qualification that joint Lipschitz regularity is an additional complement."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Repair candidate/statement-ledger.md's VariationalMean index so it contains exactly the 40 declarations in rows 3072-3111 under their stated labels, including the 23 no-direct-label declarations and the label corrections specified in W1. No Lean-statement or coverage-row change is required by the mathematical correspondence checks."
+  ],
+  "limitations": [
+    "Requirement A was completed; no required section, module or claims entry remains unread. Partial files listed in source_coverage were consulted only for the scoped global checks, dependencies, standing assumptions and definitions; their remaining contents were not substantively reviewed.",
+    "Other previously reviewed ledger rows were counted and searched, not independently re-reviewed for mathematical correspondence.",
+    "Compilation, proof correctness and supervisor-checked byte binding were accepted as supplied. No build or independent hash verification was performed.",
+    "The referenced refutation files are not included in this packet; their mathematical counterexample descriptions were assessed, not their Lean implementations.",
+    "This is an AI correspondence review, not human verification or a novelty audit."
+  ]
+}

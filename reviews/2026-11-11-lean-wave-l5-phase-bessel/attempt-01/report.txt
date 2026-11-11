@@ -1,0 +1,115 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-1157 — complete.",
+    "candidate/statement-ledger.md:1-308,361-387,1285-1348,2362-2420,3113-3177 — partial file; Scope, Index by label, PhaseBessel section and relevant cross-references completely read.",
+    "lean/StratonovichHAMSecondMoment/PhaseBessel.lean:1-271 — complete.",
+    "lean/claims.yaml:6772-6856 — partial file; all PhaseBessel entries completely read.",
+    "lean/coverage.yaml:1-668 — complete.",
+    "manuscript/notes/integrated_wave_variance.tex:1-30,167-181,330-380; search matches at 214-215,482,516 — partial file; both required ranges completely read.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:180-233,907-913,2748-2754; search matches at 1733,2419,2682,2763,3024,3033,3273,3403 — partial.",
+    "manuscript/notes/integrated_actual_operator_driver.tex:27,60,285,366,631 — partial, search matches only.",
+    "lean/StratonovichHAMSecondMoment/Axioms.lean:1108-1123 — partial.",
+    "All packet manuscript .tex files were searched for the five labels cited in the PhaseBessel section; their unique definition matches occur in the manuscript ranges listed above."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseBessel.IsOrthonormalL2: L:phase-bessel",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/PhaseBessel.lean:72-74 requires '∀ k j, MemLp (u k j) 2 μ' and '∫ η, ∑ j, u k j η * conj (u l j η) ∂μ = if k = l then 1 else 0'; TeX manuscript/notes/integrated_wave_variance.tex:347-348 requires a 'finite orthonormal family in L^2(R^d;C^2)'. Componentwise L² membership and this integral identity encode precisely that hypothesis after specialization. The first-slot-linear convention is supported by TeX:169-176. Ledger:2408 and lean/claims.yaml:6773-6779 faithfully summarize it."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseBessel.coeff: E:phase-bessel",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/PhaseBessel.lean:78-79 defines '∫ η, ∑ j, u k j η • g j η ∂μ', without integrability hypotheses on the definition. TeX manuscript/notes/integrated_wave_variance.tex:348-351 assumes L² data and uses exactly '∫∑ u_{k,j}(η)g_j(η)dη'. Ledger:2409 and lean/claims.yaml:6780-6786 match; existence for the manuscript data is separately proved, not assumed by this definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseBessel.memLp_conj: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/PhaseBessel.lean:83-85 states '(hf : MemLp f 2 μ) : MemLp (fun η => conj (f η)) 2 μ'. TeX manuscript/notes/integrated_wave_variance.tex:348-359 assumes L² orthonormal data and invokes the conjugated family, but does not separately state this arbitrary-measure lemma. Ledger:2410 correctly calls it a Lean-route auxiliary; lean/claims.yaml:6787-6793 matches its type."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseBessel.integrable_mul_of_memLp: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/PhaseBessel.lean:89-91 assumes 'MemLp f 2 μ' and 'MemLp h 2 μ' and concludes 'Integrable (fun η => f η * h η) μ'. TeX manuscript/notes/integrated_wave_variance.tex:348-349 assumes L² data and :363 invokes 'L² Cauchy–Schwarz', without separately stating this scalar-product lemma. Ledger:2411 and lean/claims.yaml:6794-6800 are faithful; no direct label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseBessel.integrable_smul_of_memLp: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/PhaseBessel.lean:93-99 assumes '(hf : MemLp f 2 μ) (hh : MemLp h 2 μ)' and concludes integrability of 'f η • h η', explicitly omitting completeness. TeX manuscript/notes/integrated_wave_variance.tex:347-349 uses Hilbert-valued L² data and :363 says 'The Bochner integrals exist by L² Cauchy–Schwarz'. This more general helper is accurately described as a Lean-route auxiliary in ledger:2412 and lean/claims.yaml:6801-6807."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseBessel.integrable_coeff_integrand: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/PhaseBessel.lean:101-107 assumes '∀ k j, MemLp (u k j) 2 μ' and '∀ j, MemLp (g j) 2 μ', with finite J but no finite-family or completeness requirement, and proves coefficient-integrand integrability. TeX manuscript/notes/integrated_wave_variance.tex:348-349 has orthonormal L² data and :363 asserts that the Bochner integrals exist. Ledger:2413 and lean/claims.yaml:6808-6814 correctly describe the weaker-hypothesis helper rather than claiming it is a separate labelled manuscript result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseBessel.integrable_sum_norm_sq: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/PhaseBessel.lean:109-114 assumes '∀ j, MemLp (g j) 2 μ' and concludes 'Integrable (fun η => ∑ j, ‖g j η‖ ^ 2) μ', without an inner-product or completeness assumption. TeX manuscript/notes/integrated_wave_variance.tex:349 assumes 'g ∈ L²(R^d;H²)' and :352 uses the corresponding squared-norm integral. Ledger:2414 and lean/claims.yaml:6815-6821 faithfully state this unlabelled integrability auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseBessel.residual_expand: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/PhaseBessel.lean:116-125 takes arbitrary finite arrays 'a', 'y', 'x', without orthonormality or completeness, and proves the residual identity with '- 2 * re' and the stated double sum. TeX manuscript/notes/integrated_wave_variance.tex:360-362 describes 'subtracting an orthogonal finite projection and expanding its nonnegative squared norm', but does not state this Hilbert-valued array identity. Ledger:2415 explicitly identifies Mathlib's conjugate-linear-first inner product, and lean/claims.yaml:6822-6828 matches the formula. The different proof route is disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseBessel.phase_bessel: L:phase-bessel",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/PhaseBessel.lean:65-67,169-173 assumes a complete complex inner-product space, finite indices, '(hu : IsOrthonormalL2 μ u)' and '(hg : ∀ j, MemLp (g j) 2 μ)'. TeX manuscript/notes/integrated_wave_variance.tex:347-349 assumes a separable complex Hilbert space, a finite orthonormal L²(R^d;C²) family and g in L²(R^d;H²). Lean proves the identical inequality with constant 1, plus integrability, under explicitly disclosed generalizations. Ledger:2416 and lean/claims.yaml:6829-6835 match. Neither σ-finiteness nor a supplied analytic input is required."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseBessel.isOrthonormalL2_conj: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/PhaseBessel.lean:222-233 assumes 'hu : IsOrthonormalL2 μ u' and concludes orthonormality of 'fun k j η => conj (u k j η)', without requiring finite ι. TeX manuscript/notes/integrated_wave_variance.tex:348 assumes an orthonormal family, and :359 uses 'the orthonormal family {overline(u_k)}'. Ledger:2417 and lean/claims.yaml:6836-6842 faithfully describe the general helper; 'no direct label' avoids assigning it a separate manuscript result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseBessel.phase_bessel_conj: L:phase-bessel",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/PhaseBessel.lean:240-246 assumes '(hu : IsOrthonormalL2 μ u) (hg : ∀ j, MemLp (g j) 2 μ)' and proves the conjugated coefficient bound and integrability. TeX manuscript/notes/integrated_wave_variance.tex:347-349 supplies the corresponding specialized hypotheses and :354 states 'The same bound holds with overline(u_{k,j}) in place of u_{k,j}'. Conjugation, constant 1 and inequality direction agree. Ledger:2418 and lean/claims.yaml:6843-6849 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseBessel.phase_bessel_paper: L:phase-bessel",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/PhaseBessel.lean:256-266 assumes '_hsep : TopologicalSpace.SeparableSpace H', completeness, 'u : Fin K → Fin 2 → EuclideanSpace ℝ (Fin d) → ℂ', 'IsOrthonormalL2 volume u', and componentwise 'MemLp ... 2 volume'. TeX manuscript/notes/integrated_wave_variance.tex:347-349 assumes 'H ... separable complex Hilbert', a finite orthonormal L²(R^d;C²) family and g in L²(R^d;H²). These are equivalent encodings; representative choices do not change the integrals. All five Lean conjuncts cover :351-354 and the integrability assertion at :363. Ledger:2419 and lean/claims.yaml:6850-6856 correctly disclose unused separability."
+    },
+    {
+      "claim": "PARA-PhaseBessel",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:2364-2404 accurately identifies the manuscript statement and proof ranges, componentwise L² encoding, inner-product convention, arbitrary-measure and finite-component generality, unused separability, absence of supplied analytic inputs, and different projection proof. Removing the model assumptions in manuscript/notes/integrated_wave_variance.tex:5-8 is harmless: the lemma at :346-366 concerns arbitrary Hilbert-valued L² data and uses none of the covariance parameters. Lean:169-220 proves the disclosed route. The paragraph does not claim the later variance applications."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "FAIL",
+      "reason": "candidate/statement-ledger.md:302-304 lists only five distinct PhaseBessel declarations, omitting all seven auxiliaries whose rows are at :2410-2415,2417. It additionally lists phase_bessel under E:phase-bessel, although its declaration row is labelled L:phase-bessel, without marking that entry as a cross-reference. Thus the required exact twelve-declaration correspondence fails. The separate label-existence requirement passes: all five labels cited by the section have unique manuscript definitions."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "lean/coverage.yaml:274-286 correctly gives L:phase-bessel class 'same-assumptions', conclusion 'full', and the three valid theorem claims. The wrapper at lean/StratonovichHAMSecondMoment/PhaseBessel.lean:256-269 proves both manuscript inequalities and integrability with the manuscript's local hypotheses; the note accurately distinguishes the more general theorem and unused separability. No stronger supplied hypothesis or altered constant was found."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "The PhaseBessel references in candidate/statement-ledger.md:118-120,164-174,1339-1343,3161-3167 correctly describe its generality, helper status and exclusion of variance applications. Searching all packet library modules found PhaseBessel references only in its own module and the axiom-print declarations. The step-module Bessel-weight wording at :372-385 concerns Sobolev coordinate weights, not an asserted formalization or application of this lemma. The index defect is isolated in check LEDGER-INDEX."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "W1 — LEDGER-INDEX is incomplete and does not exactly reproduce the section's label assignments. candidate/statement-ledger.md:302-304 indexes only five distinct PhaseBessel declarations, whereas :2408-2419 contains twelve. Missing are memLp_conj, integrable_mul_of_memLp, integrable_smul_of_memLp, integrable_coeff_integrand, integrable_sum_norm_sq, residual_expand and isOrthonormalL2_conj. For example, Lean lean/StratonovichHAMSecondMoment/PhaseBessel.lean:104-106 states '(hu : ∀ k j, MemLp ... 2 μ) (hg : ∀ j, MemLp ... 2 μ) ... Integrable ...'; TeX manuscript/notes/integrated_wave_variance.tex:363 says 'The Bochner integrals exist by L² Cauchy–Schwarz'. The ledger correctly classifies the generalized helper as 'no direct label', but the index omits it and the six other auxiliaries. Also, :303 places phase_bessel under E:phase-bessel without identifying this as an additional cross-reference, unlike its L:phase-bessel row at :2416. Fix the index by adding the seven declarations under 'no direct label (auxiliary to the Lean proof route; PhaseBessel)' and removing or explicitly distinguishing the additional E:phase-bessel cross-reference. No mathematical Lean or coverage-row change is needed."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Repair candidate/statement-ledger.md's Index by label so all twelve PhaseBessel declarations are indexed under their section-row labels, with any additional display cross-reference explicitly distinguished."
+  ],
+  "limitations": [
+    "All complete-reading requirement A ranges were fully read; the initially truncated combined output was followed by untruncated reads.",
+    "Partial-file coverage outside the required sections is intentional. Unread ledger ranges are 309-360,388-1284,1349-2361,2421-3112; claims.yaml:1-6771 was not reviewed. Other manuscript and library content was searched only as needed, not independently reviewed in full.",
+    "Compilation, absence of sorry and restriction to standard axioms were accepted as supplied premises; no build was run. Provenance byte binding was accepted as supervisor-checked.",
+    "This is an AI correspondence review, not human verification or a novelty audit. The failure concerns the mandatory index check, not the mathematical correspondence of the twelve declaration rows."
+  ]
+}

@@ -1,0 +1,151 @@
+Review the frozen packet rooted at <HOME>/.local/state/Le-AI-Lab/stratonovich-lean-wave-l5-review-VariationalMean/attempt-01/workspace. Primary target: candidate/statement-ledger.md. Source revision: 210cc3f57925671f97366ae95fd1e9b56a8af3e8.
+
+You are an independent artifact reviewer. Read only the frozen packet
+and the supplied review contract. Report correctness, missing assumptions,
+incorrect constants, failed implications, and uncertainty. Do not edit files,
+use the network, send messages, publish, install, or delegate. Do not launch a
+research or coding workflow. Return a scientific report rather than a plan.
+Use exactly one JSON object with schema "subscription-review-report/1", verdict (PASS, PASS_WITH_NOTES, FAIL, or
+INCONCLUSIVE), confidence (high, medium, low), source_coverage (list of strings),
+checks (list of objects with claim, verdict, reason), findings (an object with
+fatal, major, minor lists), required_repairs (list), and limitations (list).
+required_repairs contains ONLY mandatory changes that block acceptance. Optional
+clarifications belong in findings.minor, never in required_repairs. PASS and
+PASS_WITH_NOTES require empty fatal, major and required_repairs lists and no
+failed/unchecked claim. If a repair is mandatory, return FAIL or INCONCLUSIVE;
+never weaken a finding to obtain PASS.
+Read every required source completely. Never use Grep head_limit or any other
+truncating or limiting option on a required source. After any pagination or
+truncation marker (for example a partial Read, an offset/limit notice, or
+"output truncated"), keep reading the next range until the whole file is read.
+In source_coverage, list each exact file and the line ranges you actually read.
+If coverage of any required source is incomplete, say "partial" for that source
+in source_coverage and state the gap in limitations.
+An AI review is not human verification or a novelty audit. Do not silently
+repair a candidate and PASS the original. A terminal error is not a verdict.
+
+Frozen packet file index (relative to workspace; a listed file is not proof of reading):
+["PROVENANCE.json", "candidate/statement-ledger.md", "docs/coverage-scope-tex.yaml", "lean/StratonovichHAMSecondMoment/Axioms.lean", "lean/StratonovichHAMSecondMoment/ClockCopy.lean", "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean", "lean/StratonovichHAMSecondMoment/DampedNorms.lean", "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean", "lean/StratonovichHAMSecondMoment/DriverParameters.lean", "lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean", "lean/StratonovichHAMSecondMoment/FrequencyRow.lean", "lean/StratonovichHAMSecondMoment/GaussianIBP.lean", "lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean", "lean/StratonovichHAMSecondMoment/GaussianTest.lean", "lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean", "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean", "lean/StratonovichHAMSecondMoment/IndexedCone.lean", "lean/StratonovichHAMSecondMoment/KappaRange.lean", "lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean", "lean/StratonovichHAMSecondMoment/MaskedContinuousWave.lean", "lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean", "lean/StratonovichHAMSecondMoment/MaskedModulation.lean", "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean", "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean", "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean", "lean/StratonovichHAMSecondMoment/PhaseBessel.lean", "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean", "lean/StratonovichHAMSecondMoment/RayleighTail.lean", "lean/StratonovichHAMSecondMoment/SpectralHomog.lean", "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean", "lean/StratonovichHAMSecondMoment/TimeCompletion.lean", "lean/StratonovichHAMSecondMoment/TimeFractional.lean", "lean/StratonovichHAMSecondMoment/TimeSchur.lean", "lean/StratonovichHAMSecondMoment/VariationalDilation.lean", "lean/StratonovichHAMSecondMoment/VariationalMean.lean", "lean/StratonovichHAMSecondMoment/WaveKernel.lean", "lean/StratonovichHAMSecondMoment/WeakSobolev.lean", "lean/claims.yaml", "lean/coverage.yaml", "manuscript/notes/ai-statistics-data.tex", "manuscript/notes/ai-statistics.tex", "manuscript/notes/book-layout.tex", "manuscript/notes/chapter-guides/01-setting.tex", "manuscript/notes/chapter-guides/02-G0.tex", "manuscript/notes/chapter-guides/03-independent-upper.tex", "manuscript/notes/chapter-guides/04-gaussian-foundations.tex", "manuscript/notes/chapter-guides/05-operator-paths.tex", "manuscript/notes/chapter-guides/06-wave-evolution.tex", "manuscript/notes/chapter-guides/07-lower.tex", "manuscript/notes/chapter-guides/08-means.tex", "manuscript/notes/chapter-guides/09-growing-radius.tex", "manuscript/notes/chapter-guides/10-point-upper.tex", "manuscript/notes/chapter-guides/11-constant.tex", "manuscript/notes/chapter-guides/12-finite-order.tex", "manuscript/notes/chapter-guides/13-direct.tex", "manuscript/notes/chapter-guides/14-covariance.tex", "manuscript/notes/chapter-guides/15-static-clock.tex", "manuscript/notes/figures/active-subset-optimization.tex", "manuscript/notes/figures/chapter-roadmap.tex", "manuscript/notes/figures/common-noise.tex", "manuscript/notes/figures/cross-colour-cube.tex", "manuscript/notes/figures/dyadic-cover.tex", "manuscript/notes/figures/endpoint-elimination.tex", "manuscript/notes/figures/gaussian-enlargement.tex", "manuscript/notes/figures/global-control-blocks.tex", "manuscript/notes/figures/hermite-cutoff.tex", "manuscript/notes/figures/interval-allocations.tex", "manuscript/notes/figures/interval-end-metrics.tex", "manuscript/notes/figures/light-cone.tex", "manuscript/notes/figures/literature-interpretations.tex", "manuscript/notes/figures/literature-results-drawing.tex", "manuscript/notes/figures/literature-results-map.tex", "manuscript/notes/figures/nonseparable-controls.tex", "manuscript/notes/figures/order-of-limits.tex", "manuscript/notes/figures/positive-gram.tex", "manuscript/notes/figures/proof-map.tex", "manuscript/notes/figures/styles.tex", "manuscript/notes/figures/two-chain-pairings.tex", "manuscript/notes/figures/walsh-guitar.tex", "manuscript/notes/figures/white-strip.tex", "manuscript/notes/future_optimizers.tex", "manuscript/notes/future_universality.tex", "manuscript/notes/future_work.tex", "manuscript/notes/history_wave_equations.tex", "manuscript/notes/index/anchors.tex", "manuscript/notes/index/list-of-notation.tex", "manuscript/notes/index/setup.tex", "manuscript/notes/integrated_actual_operator_driver.tex", "manuscript/notes/integrated_cameron_mean.tex", "manuscript/notes/integrated_compact_gaussian.tex", "manuscript/notes/integrated_compact_mean_family.tex", "manuscript/notes/integrated_constant_phase_young.tex", "manuscript/notes/integrated_covariance_foundation.tex", "manuscript/notes/integrated_exact_scaling.tex", "manuscript/notes/integrated_gaussian_tubes.tex", "manuscript/notes/integrated_intrinsic_constant.tex", "manuscript/notes/integrated_masked_moments.tex", "manuscript/notes/integrated_occupation_ceiling.tex", "manuscript/notes/integrated_point_transfer.tex", "manuscript/notes/integrated_positive_gram.tex", "manuscript/notes/integrated_radius_anchor.tex", "manuscript/notes/integrated_raw_block_lower.tex", "manuscript/notes/integrated_signed_moment_upper.tex", "manuscript/notes/integrated_signed_static.tex", "manuscript/notes/integrated_source_convergence.tex", "manuscript/notes/integrated_spatial_occupation.tex", "manuscript/notes/integrated_symplectic_phase.tex", "manuscript/notes/integrated_temporal_equilibrium.tex", "manuscript/notes/integrated_uniform_mean.tex", "manuscript/notes/integrated_uniform_products.tex", "manuscript/notes/integrated_unmasked_variational.tex", "manuscript/notes/integrated_wave_variance.tex", "manuscript/notes/integrated_white_evaluation.tex", "manuscript/notes/integrated_young_upper_foundation.tex", "manuscript/notes/literature_review.tex", "manuscript/notes/notes_stratonovich_ham_second_moment.tex", "manuscript/notes/preface.tex"]
+
+Independent correspondence review: newly formalized whole labelled result(s) (Lean ledger rows) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  210cc3f57925). Review ONLY its section "## VariationalMean (whole result)", the index
+  rows for it, and the items named in the global checks below. All other
+  rows were reviewed earlier.
+- the Lean modules (ground truth for what each declaration states):
+  lean/StratonovichHAMSecondMoment/*.lean (every library module; this section's own modules: VariationalMean, VariationalDilation, WeakSobolev)
+  and lean/claims.yaml, lean/coverage.yaml.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  975feb31ea65. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that L:variational-heat-envelope and L:variational-global-mean (the display only) are formalized as stated in their
+rows: every conclusion proved, with hypotheses that match the manuscript,
+apart from side conditions the TeX leaves implicit and inputs explicitly
+declared as supplied. Test that claim hard: any Lean hypothesis that the
+manuscript does not have, any manuscript hypothesis the Lean drops, any
+weaker Lean conclusion, any changed constant, range, quantifier order or
+strictness, any modelling choice that changes the mathematical object, any
+supplied hypothesis stronger than the manuscript result it stands for, and
+any row labelled as a step of a TeX proof that is really an auxiliary of a
+different Lean proof route, is a finding, unless the ledger states it AND it
+is genuinely harmless. Decide that yourself from the TeX; do not accept the
+ledger's word.
+Pay attention to: p_eps and the spectral identity (constants, no (2 pi)^(-d) factor) against 23-35; strict positivity needing Gamma != 0; the global-mean display: 0 <= h_s <= M and the time-Lipschitz bound on [0,1], stated pointwise in x; a = alpha0; that the mixed-derivative sentence is plainly marked not formalized; the joint-Lipschitz extra marked as beyond the TeX; and the IsRayleighTrial side-condition theorem.
+
+CHECKS (exactly these 46, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.VariationalMean.heatK: L:variational-heat-envelope"
+  2. claim "StratonovichHAMSecondMoment.VariationalMean.heatK_pos: no direct label"
+  3. claim "StratonovichHAMSecondMoment.VariationalMean.heatSpec: E:variational-heat-envelope"
+  4. claim "StratonovichHAMSecondMoment.VariationalMean.heatK_integrable: L:variational-heat-envelope"
+  5. claim "StratonovichHAMSecondMoment.VariationalMean.heatSpec_integrable: no direct label"
+  6. claim "StratonovichHAMSecondMoment.VariationalMean.heat_identity: E:variational-heat-envelope"
+  7. claim "StratonovichHAMSecondMoment.VariationalMean.heat_envelope: L:variational-heat-envelope"
+  8. claim "StratonovichHAMSecondMoment.VariationalMean.heat_conv_pos: L:variational-heat-envelope"
+  9. claim "StratonovichHAMSecondMoment.VariationalMean.abs_rpow_integrableOn: no direct label"
+  10. claim "StratonovichHAMSecondMoment.VariationalMean.abs_rpow_integral: no direct label"
+  11. claim "StratonovichHAMSecondMoment.VariationalMean.exists_radius: no direct label"
+  12. claim "StratonovichHAMSecondMoment.VariationalMean.eq_zero_of_time: no direct label"
+  13. claim "StratonovichHAMSecondMoment.VariationalMean.one_le_gauss: no direct label"
+  14. claim "StratonovichHAMSecondMoment.VariationalMean.gMass: no direct label"
+  15. claim "StratonovichHAMSecondMoment.VariationalMean.gauss_conv: L:variational-heat-envelope"
+  16. claim "StratonovichHAMSecondMoment.VariationalMean.gMass_nonneg: no direct label"
+  17. claim "StratonovichHAMSecondMoment.VariationalMean.pt_bound: no direct label"
+  18. claim "StratonovichHAMSecondMoment.VariationalMean.pt_diff: no direct label"
+  19. claim "StratonovichHAMSecondMoment.VariationalMean.conv_integrable: no direct label"
+  20. claim "StratonovichHAMSecondMoment.VariationalMean.conv_le: no direct label"
+  21. claim "StratonovichHAMSecondMoment.VariationalMean.conv_lip: no direct label"
+  22. claim "StratonovichHAMSecondMoment.VariationalMean.ctrl_data: no direct label"
+  23. claim "StratonovichHAMSecondMoment.VariationalMean.mean_nonneg: L:variational-global-mean"
+  24. claim "StratonovichHAMSecondMoment.VariationalMean.conv_eq_zero_of_time: no direct label"
+  25. claim "StratonovichHAMSecondMoment.VariationalMean.shift_mem: no direct label"
+  26. claim "StratonovichHAMSecondMoment.VariationalMean.mean_eq_shift: L:variational-global-mean"
+  27. claim "StratonovichHAMSecondMoment.VariationalMean.integrable_pot_of_bounded: no direct label"
+  28. claim "StratonovichHAMSecondMoment.VariationalMean.convT_continuous: no direct label"
+  29. claim "StratonovichHAMSecondMoment.VariationalMean.shift_integrableOn: no direct label"
+  30. claim "StratonovichHAMSecondMoment.VariationalMean.mean_integrableOn: L:variational-global-mean"
+  31. claim "StratonovichHAMSecondMoment.VariationalMean.mean_le: E:variational-global-mean"
+  32. claim "StratonovichHAMSecondMoment.VariationalMean.mean_lip: E:variational-global-mean"
+  33. claim "StratonovichHAMSecondMoment.VariationalMean.variational_heat_envelope_paper: L:variational-heat-envelope"
+  34. claim "StratonovichHAMSecondMoment.VariationalMean.global_mean: L:variational-global-mean"
+  35. claim "StratonovichHAMSecondMoment.VariationalMean.dist_same_space: no direct label"
+  36. claim "StratonovichHAMSecondMoment.VariationalMean.dist_same_time: no direct label"
+  37. claim "StratonovichHAMSecondMoment.VariationalMean.mean_continuous_of_lip: no direct label"
+  38. claim "StratonovichHAMSecondMoment.VariationalMean.variational_global_mean_paper: L:variational-global-mean"
+  39. claim "StratonovichHAMSecondMoment.VariationalMean.variational_global_mean_lipschitz_paper: L:variational-global-mean"
+  40. claim "StratonovichHAMSecondMoment.VariationalMean.isRayleighTrial_mean_iff_paper: E:variational-real-rayleigh"
+  41. claim "PARA-VariationalMean": the "VariationalMean (whole result)" section paragraph is accurate, cites the right files, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input and what is not formalized, and does not overclaim
+  42. claim "LEDGER-INDEX": the "Index by label" rows for the VariationalMean section list exactly these 40 declarations under the labels their rows give, and every label cited in the section exists in the manuscript (search \label across all files)
+  43. claim "COVERAGE-ROWS": the coverage.yaml rows L:variational-heat-envelope (new, same-assumptions, full) and L:variational-global-mean (new, same-assumptions, weaker: the mixed-derivative sentence not formalized) and its docs/coverage-scope-tex.yaml entry: classes, conclusions, scopes, notes and claims are right
+  44. claim "CROSS-REFERENCES": every other place in the ledger that points to the VariationalMean section (step-module intros and rows, the "Not in Lean" section, Scope) is accurate
+  45. claim "LEDGER-TOTALS": the totals line (972 = 810 theorems + 162 definitions; 537 labelled, 435 unlabelled) agrees with a count of all per-module tables, and every claims.yaml decl has exactly one ledger row
+  46. claim "SCOPE-PROSE": the Scope bullets about the whole-result modules (counts, which results need no supplied input, which have supplied inputs, Gaussian measures beyond finitely many standard Gaussians, which need supplied inputs now that L:masked-trig-products and L:masked-continuous-wave have none and L:damped-homogeneous-norms has the one input GreenMass) and the internal-status sentence are accurate
+For each row check (1-40): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: this section's own
+   Lean modules (lean/StratonovichHAMSecondMoment/VariationalMean.lean, lean/StratonovichHAMSecondMoment/VariationalDilation.lean, lean/StratonovichHAMSecondMoment/WeakSobolev.lean), and,
+   for every other declaration a row of the section names, that
+   declaration in its module; the "VariationalMean (whole result)" section and the "Scope" and
+   "Index by label" sections of candidate/statement-ledger.md; the entries
+   of lean/claims.yaml for this section's modules; lean/coverage.yaml;
+   manuscript/notes/integrated_unmasked_variational.tex,
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 46 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-40.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.
+

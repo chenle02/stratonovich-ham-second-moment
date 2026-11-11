@@ -1,0 +1,91 @@
+Independent correspondence review: newly formalized whole labelled result(s) (Lean ledger rows) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  210cc3f57925). Review ONLY its section "## PhaseBessel (whole result)", the index
+  rows for it, and the items named in the global checks below. All other
+  rows were reviewed earlier.
+- the Lean modules (ground truth for what each declaration states):
+  lean/StratonovichHAMSecondMoment/*.lean (every library module; this section's own modules: PhaseBessel)
+  and lean/claims.yaml, lean/coverage.yaml.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  975feb31ea65. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that L:phase-bessel are formalized as stated in their
+rows: every conclusion proved, with hypotheses that match the manuscript,
+apart from side conditions the TeX leaves implicit and inputs explicitly
+declared as supplied. Test that claim hard: any Lean hypothesis that the
+manuscript does not have, any manuscript hypothesis the Lean drops, any
+weaker Lean conclusion, any changed constant, range, quantifier order or
+strictness, any modelling choice that changes the mathematical object, any
+supplied hypothesis stronger than the manuscript result it stands for, and
+any row labelled as a step of a TeX proof that is really an auxiliary of a
+different Lean proof route, is a finding, unless the ledger states it AND it
+is genuinely harmless. Decide that yourself from the TeX; do not accept the
+ledger's word.
+Pay attention to: orthonormality stated as the explicit integral (linear in the first slot, as in the TeX) against Mathlib's conjugate-linear inner product; the encoding of L^2(R^d;C^2) and L^2(R^d;H^2) componentwise; the conjugated version; the generality (any measure space, separability unused) stated as such.
+
+CHECKS (exactly these 16, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.PhaseBessel.IsOrthonormalL2: L:phase-bessel"
+  2. claim "StratonovichHAMSecondMoment.PhaseBessel.coeff: E:phase-bessel"
+  3. claim "StratonovichHAMSecondMoment.PhaseBessel.memLp_conj: no direct label"
+  4. claim "StratonovichHAMSecondMoment.PhaseBessel.integrable_mul_of_memLp: no direct label"
+  5. claim "StratonovichHAMSecondMoment.PhaseBessel.integrable_smul_of_memLp: no direct label"
+  6. claim "StratonovichHAMSecondMoment.PhaseBessel.integrable_coeff_integrand: no direct label"
+  7. claim "StratonovichHAMSecondMoment.PhaseBessel.integrable_sum_norm_sq: no direct label"
+  8. claim "StratonovichHAMSecondMoment.PhaseBessel.residual_expand: no direct label"
+  9. claim "StratonovichHAMSecondMoment.PhaseBessel.phase_bessel: L:phase-bessel"
+  10. claim "StratonovichHAMSecondMoment.PhaseBessel.isOrthonormalL2_conj: no direct label"
+  11. claim "StratonovichHAMSecondMoment.PhaseBessel.phase_bessel_conj: L:phase-bessel"
+  12. claim "StratonovichHAMSecondMoment.PhaseBessel.phase_bessel_paper: L:phase-bessel"
+  13. claim "PARA-PhaseBessel": the "PhaseBessel (whole result)" section paragraph is accurate, cites the right files, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input and what is not formalized, and does not overclaim
+  14. claim "LEDGER-INDEX": the "Index by label" rows for the PhaseBessel section list exactly these 12 declarations under the labels their rows give, and every label cited in the section exists in the manuscript (search \label across all files)
+  15. claim "COVERAGE-ROWS": the coverage.yaml row L:phase-bessel (new, same-assumptions, full): class, conclusion, note and claims are right
+  16. claim "CROSS-REFERENCES": every other place in the ledger that points to the PhaseBessel section (step-module intros and rows, the "Not in Lean" section, Scope) is accurate
+For each row check (1-12): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: this section's own
+   Lean modules (lean/StratonovichHAMSecondMoment/PhaseBessel.lean), and,
+   for every other declaration a row of the section names, that
+   declaration in its module; the "PhaseBessel (whole result)" section and the "Scope" and
+   "Index by label" sections of candidate/statement-ledger.md; the entries
+   of lean/claims.yaml for this section's modules; lean/coverage.yaml;
+   lines 1-30 and 330-380 of manuscript/notes/integrated_wave_variance.tex (S:wave-variance standing assumptions; L:phase-bessel),
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 16 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-12.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.

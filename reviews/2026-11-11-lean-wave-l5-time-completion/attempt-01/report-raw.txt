@@ -1,0 +1,400 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json: 1-1157, complete.",
+    "candidate/statement-ledger.md: 1-308, 1756-1847, 1871-1925, 1943-1983, 1998-2002, 2134-2149, 2186-2246, 2610-2796, 3113-3177, partial file; required Scope, Index by label, and TimeCompletion sections complete.",
+    "lean/StratonovichHAMSecondMoment/TimeCompletion.lean: 1-1075, complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean: 1-113, complete.",
+    "lean/StratonovichHAMSecondMoment/TimeSchur.lean: 1-332, complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedModulation.lean: 1-1135, complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean: 1-358, complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedContinuousWave.lean: 95-125, 379-462, partial; relevant wave definitions and complete supplied-input wrapper read.",
+    "lean/StratonovichHAMSecondMoment/TimeFractional.lean: 100-130, partial; complete subordination declaration and proof read.",
+    "lean/claims.yaml: 1380-1592, 4215-4617, 5115-5595, partial file; all entries for the five required modules and MaskedContinuousWaveCompleted complete.",
+    "lean/coverage.yaml: 1-668, complete.",
+    "manuscript/notes/integrated_covariance_foundation.tex: 1-428, complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: 175-245, partial; standing exponent range and H:homog read.",
+    "All manuscript/notes files were searched for the section's cited label declarations; matches occurred in integrated_covariance_foundation.tex and notes_stratonovich_ham_second_moment.tex at the ranges listed above."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.masked_time_completion_paper: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:1005-1031 assumes '0 < a', 'a < 1', '0 < T'; TeX integrated_covariance_foundation.tex:5,142 assumes 'a = alpha_0', 'T > 0', with 0<alpha_0<1 in notes_stratonovich_ham_second_moment.tex:191. Its eight conclusions match ledger:2728 and claims.yaml:5119. Density and real norm clauses justify the disclosed complex model; no spatial hypothesis or supplied input remains."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.masked_trig_products_completed_paper: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:1056-1068 has '0 < h', 'h ≤ 1', '0 ≤ s', 's+h ≤ T', 'ContDiffOn ℝ 1 A', supremum definitions and nonnegative frequencies. TeX integrated_covariance_foundation.tex:296-306,347-358 has '0<h≤1', I⊂[0,T], 'A∈C^1', the same suprema and r,rho≥0. Ledger:2729 and claims.yaml:5126 preserve the conclusion and constant. Lines 1069-1073 discharge hmem and hnorm."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWaveCompleted.masked_continuous_wave_completed_paper: L:masked-continuous-wave",
+      "verdict": "PASS",
+      "reason": "Lean MaskedContinuousWaveCompleted.lean:62-75 assumes '0<a<1', '0<T', '0<h≤1', I⊂[0,T], r,rho≥0 and 'F G : Wave'; TeX integrated_covariance_foundation.tex:296-298,378-389 has the same temporal setting and '{c,b}' choices. Ledger:2730 and claims.yaml:5133 match membership and the C1(a)(1+T)^4 bound. hmem is discharged for every C^1 amplitude, not merely selected amplitudes."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.Ha: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:490-538 uses 'p : TimeParams' and 'UniformSpace.Completion (Pre p)'; TeX integrated_covariance_foundation.tex:142-154 uses T>0 and the real tests' 'null-quotient completion', followed by complexification. Ledger:2731 and claims.yaml:5140 disclose the complex L2 construction. Lines 739-781 and 949-963 give the real norm and dense complex span needed for the identification."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.emb: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:540-542 defines 'L2fun p.T →ₗ[ℂ] Ha p' for TimeParams; TeX integrated_covariance_foundation.tex:148-149 says the inclusion of tests 'extends continuously from L^2(0,T)'. Ledger:2732 and claims.yaml:5147 correctly describe the canonical map. Continuity in the L2 norm is separately supplied by extL2 and its agreement theorem."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.L2fun: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:348-352 defines functions satisfying 'MemLp f 2 (volume.restrict (Icc 0 T))'; TeX integrated_covariance_foundation.tex:149 uses 'L^2(0,T)'. Ledger:2733 and claims.yaml:5154 explicitly disclose functions rather than a.e.-classes. Null endpoints and subsequent null-distance identification make this representation harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.TimeParams: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:490-497 bundles 'a : ℝ', 'T : ℝ', '0<a', 'a<1', '0<T'; TeX integrated_covariance_foundation.tex:5,142 has 'a=alpha_0', 'T>0', with 0<alpha_0<1 at notes_stratonovich_ham_second_moment.tex:191. Ledger:2734 and claims.yaml:5161 match this packaging without adding Gamma≠0."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.schurConst: E:masked-time-schur",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:567 defines '2 * p.T ^ (1-p.a) / (1-p.a)' under TimeParams; TeX integrated_covariance_foundation.tex:150-152 gives '2T^{1-a}/(1-a)' under T>0 and 0<a<1. Ledger:2735 and claims.yaml:5168 reproduce the constant exactly."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.extL2: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:698-701 defines 'Lp ℂ 2 (...) →L[ℂ] Ha p' with continuity bound sqrt(schurConst p); TeX integrated_covariance_foundation.tex:148-149,177-179 extends the inclusion from L2 continuously. Ledger:2736 and claims.yaml:5175 correctly describe the representative-based map, which is well-defined after completion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.testSet: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:893-895 requires 'ContDiff ℝ ⊤', 'HasCompactSupport' and 'tsupport ... ⊆ Ioo 0 T'; TeX integrated_covariance_foundation.tex:147,173-179 uses compact smooth tests and smooth L2 density, with C_c^∞(0,T) explicit at line 184. Ledger:2737 and claims.yaml:5182 accurately identify these as complexified tests."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.realTestSet: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:899-901 requires a real smooth compactly supported g, support inside (0,T), and 'f = fun t => (g t : ℂ)'; TeX integrated_covariance_foundation.tex:147 refers to 'real compact smooth tests', with temporal support convention explicit at line 184. Ledger:2738 and claims.yaml:5189 match the real test representation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.timeForm_re_nonneg: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:438-440 assumes '0<a', 'a<1', '0≤T', complex 'MemLp f 2'; TeX integrated_covariance_foundation.tex:142-147 assumes T>0 and real compact smooth tests. Ledger:2739 and claims.yaml:5196 explicitly state the stronger all-complex-L2 result. It implies the manuscript positivity and does not narrow it."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.conj_timeForm: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:416-418 assumes 'a<1', '0≤T', 'MemLp f 2' and 'MemLp g 2', concluding conjugate symmetry. TeX integrated_covariance_foundation.tex:143-145,153-154 defines the symmetric real form and its complexification. Ledger:2740 and claims.yaml:5203 faithfully state the natural, more general L2 identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.timeForm_add_right: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:389-392 requires 'a<1', '0≤T' and L2 membership for f,g,h; TeX integrated_covariance_foundation.tex:143-145,153-154 defines the bilinear form and complexification, whose additivity is implicit. Ledger:2741 and claims.yaml:5210 match the actual second-slot identity and do not assume an unproved norm property."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.timeForm_smul_right: L:masked-time-completion",
+      "verdict": "FAIL",
+      "reason": "Lean TimeCompletion.lean:402 explicitly has '(a T : ℝ) (c : ℂ)'; ledger:2742 and claims.yaml:5217 instead say 'For all a, T, c in C'. TeX integrated_covariance_foundation.tex:5,142 uses the real exponent a=alpha_0 and real horizon T>0, not complex parameters. The conjugate-homogeneity formula and label mapping are otherwise correct, but both summaries misstate the quantified domains. See W1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.timeForm_ofReal: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:452-454 has '(a T : ℝ) (g h : ℝ → ℝ)' and identifies the complex form with the cast real iterated integral. TeX integrated_covariance_foundation.tex:143-145 gives the real form and 153-154 its complexification. Ledger:2743 and claims.yaml:5224 match this identity; its unconditional total-integral formulation is harmless on the manuscript's integrable domain."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.kern_eq_mixture: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:175-177 assumes '0<a' and 't≠s'; TeX integrated_covariance_foundation.tex:159-169 says 'Away from the null diagonal' and combines Gamma subordination with the exponential-kernel identity. Ledger:2744 and claims.yaml:5231 correctly describe the combined nonnegative integral, including weight Gamma(a)^(-1)2|lambda|^a. The absolute value agrees with lambda>0 on mixMeasure."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.exp_abs_eq: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:109-111 assumes '(hl : 0<l)' and arbitrary real t,s; TeX integrated_covariance_foundation.tex:165-170 gives the same identity for 'lambda>0'. Ledger:2745 and claims.yaml:5238 preserve the factor 2lambda and upper endpoint min(t,s)."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.separableSpace_Ha: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:658 states 'SeparableSpace (Ha p)' for TimeParams; TeX integrated_covariance_foundation.tex:147-148 states that H_a 'is separable' under T>0 and 0<a<1. Ledger:2746 and claims.yaml:5245 match. The different separability proof route is disclosed at ledger:2675-2676."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.emb_norm_sq: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:561-562 assumes 'f : L2fun p.T' and gives '‖emb p f‖^2 = (timeForm ... f f).re'; TeX integrated_covariance_foundation.tex:153-154,177-179 gives the complex double-integral norm on L2. Ledger:2747 and claims.yaml:5252 accurately state its real-part formulation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.emb_norm_sq_le: E:masked-time-schur",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:718-719 assumes 'f : L2fun p.T' and bounds the squared completion norm by schurConst times ∫‖f‖²; TeX integrated_covariance_foundation.tex:150-152 gives precisely this bound, with complexification at 175-177. Ledger:2748 and claims.yaml:5259 preserve the constant and quantification."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.extL2_toLp: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:706-708 assumes 'MemLp f 2' and concludes 'extL2 p (hf.toLp f) = emb p ⟨f,hf⟩'; TeX integrated_covariance_foundation.tex:148-149,177-179 extends the inclusion from L2. Ledger:2749 and claims.yaml:5266 correctly express agreement on representatives."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.extL2_norm_sq_le: E:masked-time-schur",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:712-714 quantifies over every 'w : Lp ℂ 2' and proves the schurConst squared-norm bound; TeX integrated_covariance_foundation.tex:150-152,177-179 gives the same L2 extension inequality. Ledger:2750 and claims.yaml:5273 match the class-level statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.emb_norm_sq_eq_timeForm: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:732-735 assumes 'f : L2fun p.T' and states '(‖emb p f‖² : ℂ) = timeForm ... f f'; TeX integrated_covariance_foundation.tex:153-154 says the complexified norm is the double integral with 'f(t) overline{f(s)}'. Ledger:2751 and claims.yaml:5280 match, with L2 extension justified by TeX:177-179."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.timeForm_self_im: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:726-728 assumes 'f : L2fun p.T' and proves '(timeForm ... f f).im = 0'; TeX integrated_covariance_foundation.tex:175-176 says 'symmetry cancels the imaginary cross term'. Ledger:2752 and claims.yaml:5287 accurately capture this consequence."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.emb_norm_sq_re_im: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:767-768 assumes 'f : L2fun p.T' and splits its squared norm into reL2 and imL2 squared norms; TeX integrated_covariance_foundation.tex:175-177 says the complex quadratic form is 'the sum of those of the real and imaginary parts'. Ledger:2753 and claims.yaml:5294 preserve this exact conclusion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.emb_norm_sq_real: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:739-741 assumes real g with 'MemLp g 2' and gives the real double-integral norm; TeX integrated_covariance_foundation.tex:143-145 defines that real form and 177-179 extends the identity to L2. Ledger:2754 and claims.yaml:5301 match both domain and conclusion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.indicator_mem_L2fun: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:787-790 assumes 'AEStronglyMeasurable A' on [c,d] and '∀t∈Icc c d, ‖A t‖≤M'; TeX integrated_covariance_foundation.tex:154-155 says 'bounded measurable amplitudes on a subinterval, extended by zero'. Ledger:2755 and claims.yaml:5308 correctly disclose the a.e.-measurable generalization and prove L2 membership, hence completion membership."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.exists_test_approx: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:825-828 assumes '0<T', 'MemLp f 2', '0<ε' and produces smooth compact g supported in (0,T) with eLpNorm error≤ofReal ε; TeX integrated_covariance_foundation.tex:177 invokes 'Smooth density in L^2'. Ledger:2756 and claims.yaml:5315 faithfully state the quantitative density formulation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.dense_emb_testSet: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:904 states 'Dense (emb p '' testSet p.T)' under TimeParams; TeX integrated_covariance_foundation.tex:147-148,173-179 completes tests and uses smooth L2 density. Ledger:2757 and claims.yaml:5322 correctly identify the complex test image as dense. This closes the potential mismatch from constructing the completion over L2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.dense_span_realTestSet: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:949-950 states 'Dense (Submodule.span ℂ (emb p '' realTestSet p.T))'; TeX integrated_covariance_foundation.tex:147-148 completes real tests and 153-177 complexifies. Ledger:2758 and claims.yaml:5329 correctly specify complex span, not density of real-valued tests alone. Together with the real form identity this supports the claimed identification."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.coe_eq_of_ae: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:617-620 assumes 'f.toFun =ᵐ[...] g.toFun' and identifies their completion images; TeX integrated_covariance_foundation.tex:147-149 uses a 'null-quotient completion' and L2 inclusion. Ledger:2759 and claims.yaml:5336 faithfully state this sufficient null-identification property, without claiming that a.e. equality characterizes every null pair."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.timeForm_one: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:460-462 assumes 'a<1', '0≤T' and gives 2T^(2-a)/((1-a)(2-a)). TeX integrated_covariance_foundation.tex:143-145 defines the form under T>0 and 0<a<1 but contains no constant-function calibration statement. Ledger:2760 and claims.yaml:5343 match Lean and correctly classify this as an unlabelled calibration."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedContinuousWaveCompleted.norm_sq_waveFn_cc_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedContinuousWaveCompleted.lean:79-82 assumes TimeParams, '0≤h', 'h≤p.T' and a membership witness hp; TeX integrated_covariance_foundation.tex:379 defines c_0=1 but states no calibration identity. Ledger:2761 and claims.yaml:5350 match the value 2h^(2-a)/((1-a)(2-a)); hp is a typing witness derivable from the interval-membership theorem, not an extra analytic input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.re_form_nonneg_of_mixture: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:260-269 requires s-finite μ,ν, measurable nonnegative weight and profiles, an a.e. kernel mixture, measurable f and integrability. TeX integrated_covariance_foundation.tex:170-172 says 'its quadratic form is an integral of a square' and justifies exchanges by absolute integrability. Ledger:2762 and claims.yaml:5357 accurately present the abstract criterion; ledger:2668-2674 explicitly discloses the combined Fubini route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.cross_integrable: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:357-360 assumes 'a<1', '0≤T' and L2 membership of f,g; TeX integrated_covariance_foundation.tex:171-173 justifies absolute integrability for compact smooth tests using the row bound. Ledger:2763 and claims.yaml:5364 correctly state the broader cross-L2 integrability consequence used by this proof."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.timeForm_eq_prod: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:382-386 assumes 'a<1', '0≤T', f,g∈L2 and equates iterated and product integrals. TeX integrated_covariance_foundation.tex:171-172 justifies exchanges but contains no separately stated general complex-L2 Fubini theorem. Ledger:2764 and claims.yaml:5371 accurately classify and summarize this Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.integrableOn_exp_pair: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:126-127 assumes '0<l' and arbitrary real t,s,c, proving integrability on Iic c. TeX integrated_covariance_foundation.tex:165-169 uses the exponential pair up to min(t,s), without stating the arbitrary-half-line integrability lemma. Ledger:2765 and claims.yaml:5378 correctly give no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.mixWeight: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:137 defines '(Real.Gamma a)⁻¹ * (2 * |w.1|^a)' for real a and parameter pair w. TeX integrated_covariance_foundation.tex:161-168 has lambda>0 and separate subordination and exponential factors, not this globally defined weight. Ledger:2766 and claims.yaml:5385 match the auxiliary definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.mixProfile: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:141-142 defines 'if w.2≤t then exp(-(w.1*(t-w.2))) else 0' without hypotheses. TeX integrated_covariance_foundation.tex:167-168 has the corresponding half-line exponential factors but no named joint profile. Ledger:2767 and claims.yaml:5392 accurately describe a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.measurable_mixWeight: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:149 assumes only 'a : ℝ' and proves 'Measurable (mixWeight a)'. TeX integrated_covariance_foundation.tex:159-172 uses the mixture under 0<a<1 but states no all-real-a measurability result. Ledger:2768 and claims.yaml:5399 match the auxiliary theorem and its no-direct-label mapping."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.measurable_mixProfile: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:153 states 'Measurable (Function.uncurry mixProfile)' with no extra hypotheses. TeX integrated_covariance_foundation.tex:165-172 uses the profiles in an integral but contains no jointly measurable-profile statement. Ledger:2769 and claims.yaml:5406 accurately preserve the auxiliary claim."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.mixWeight_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:160 assumes '0<a' and arbitrary w, concluding nonnegative mixWeight. TeX integrated_covariance_foundation.tex:161-170 integrates positive lambda under 0<a<1, without stating this everywhere-defined weight property. Ledger:2770 and claims.yaml:5413 correctly summarize and classify it."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.mixProfile_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:165 assumes only real parameter pair w and t, proving '0≤mixProfile w t'. TeX integrated_covariance_foundation.tex:165-170 uses positive exponential factors for lambda>0 but has no separately stated profile lemma. Ledger:2771 and claims.yaml:5420 match the unconditional auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.ae_ne_diag: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:236-238 quantifies over every real T and asserts q.1≠q.2 a.e. for the restricted product measure. TeX integrated_covariance_foundation.tex:159 refers to the 'null diagonal' under T>0 but does not separately formulate this all-T measure theorem. Ledger:2772 and claims.yaml:5427 accurately describe the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.Pre: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:504 defines 'Pre : Type := L2fun p.T', with its temporal pre-inner product supplied at 521-532. TeX integrated_covariance_foundation.tex:147-149 completes real tests rather than introducing this complex-L2 type synonym. Ledger:2773 and claims.yaml:5434 explicitly disclose the different construction and correctly assign no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.core: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:521-526 defines 'PreInnerProductSpace.Core ℂ (Pre p)' with 'inner f g := timeForm ... g.toFun f.toFun'. TeX integrated_covariance_foundation.tex:143-154 defines the real form and complexification without a Mathlib core object. Ledger:2774 and claims.yaml:5441 correctly describe the swapped-slot implementation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.Pre.memLp: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:515-516 assumes 'f : Pre p' and extracts 'MemLp f.toFun 2'. TeX integrated_covariance_foundation.tex:149 uses L2 but has no Pre type or membership-projection theorem. Ledger:2775 and claims.yaml:5448 accurately classify the definitional auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.emb_apply: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:550 assumes 'f : L2fun p.T' and states 'emb p f = ((toPre f : Pre p) : Ha p)' by rfl. TeX integrated_covariance_foundation.tex:148-149 describes an inclusion, not these implementation coercions. Ledger:2776 and claims.yaml:5455 match the no-direct-label identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.inner_pre: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:553 assumes 'f g : Pre p' and gives 'inner ℂ f g = timeForm ... g.toFun f.toFun'. TeX integrated_covariance_foundation.tex:143-154 supplies the temporal form but no Pre object or Mathlib slot convention. Ledger:2777 and claims.yaml:5462 correctly describe this implementation identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.norm_pre_sq: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:556 assumes 'f : Pre p' and proves '‖f‖² = Re timeForm ... f.toFun f.toFun'. TeX integrated_covariance_foundation.tex:147-154 concerns the quotient completion, not this intermediate seminormed type. Ledger:2778 and claims.yaml:5469 faithfully state a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.norm_pre_sq_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:570-571 assumes 'f : Pre p' and bounds its seminorm squared by schurConst times the L2 integral. TeX integrated_covariance_foundation.tex:150-152 states the bound for the completion norm, with no Pre object. Ledger:2779 and claims.yaml:5476 accurately identify the intermediate implementation theorem."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.integral_norm_sq_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:578-579 assumes an arbitrary measure μ and 'MemLp g 2 μ', concluding ∫‖g‖²=(eLpNorm g 2 μ).toReal². TeX integrated_covariance_foundation.tex:151 uses the usual L2 norm on (0,T), not an arbitrary-measure eLpNorm identity. Ledger:2780 and claims.yaml:5483 correctly summarize and classify it."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.norm_pre_sq_le_Lp: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:591-593 assumes 'f : Pre p', 'w : Lp ℂ 2' and 'f.toFun =ᵐ[...] w'. TeX integrated_covariance_foundation.tex:148-152 has the L2 extension and Schur bound but no representative-to-Pre comparison. Ledger:2781 and claims.yaml:5490 match the auxiliary hypothesis and conclusion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.dist_pre_eq_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:601-602 assumes a.e. equality of the functions underlying 'f g : Pre p' and concludes 'dist f g=0'. TeX integrated_covariance_foundation.tex:147 uses a null quotient but no intermediate pseudometric-distance lemma. Ledger:2782 and claims.yaml:5497 correctly classify this sufficient null-distance result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.ofLp: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:624-625 takes 'w : Lp ℂ 2' and selects its representative as an element of Pre p. TeX integrated_covariance_foundation.tex:148-149 extends from L2 without introducing a representative map into Pre. Ledger:2783 and claims.yaml:5504 accurately describe this auxiliary definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.lipschitz_ofLp: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:628-629 states 'LipschitzWith (Real.toNNReal (Real.sqrt (schurConst p))) (ofLp p)' under TimeParams. TeX integrated_covariance_foundation.tex:173-179 uses Schur continuity and a countable dense test family, not this representative map. Ledger:2784 and claims.yaml:5511 accurately disclose the alternative separability auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.dist_ofLp_toLp: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:645-646 assumes 'f : Pre p' and concludes 'dist f (ofLp p (f.memLp.toLp f.toFun))=0'. TeX integrated_covariance_foundation.tex:147-149 has no such representative-roundtrip statement. Ledger:2785 and claims.yaml:5518 faithfully state this Lean-only auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.separableSpace_pre: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:649-655 establishes 'SeparableSpace (Pre p)' using the Lipschitz representative map. TeX integrated_covariance_foundation.tex:173-174 instead proves separability of H_a using countably many tests. Ledger:2786 and claims.yaml:5525 correctly classify the intermediate Pre separability instance as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.extL2Lin: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:663-674 defines 'Lp ℂ 2 (...) →ₗ[ℂ] Ha p' by the completion image of ofLp. TeX integrated_covariance_foundation.tex:148-149,177-179 states the continuous extension, not its separate algebraic implementation stage. Ledger:2787 and claims.yaml:5532 correctly give no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.extL2Lin_apply: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:679-680 assumes 'w : Lp ℂ 2' and gives 'extL2Lin p w = ((ofLp p w : Pre p) : Ha p)' by rfl. TeX integrated_covariance_foundation.tex:148-149 contains no implementation-coercion identity. Ledger:2788 and claims.yaml:5539 match this auxiliary exactly."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.extL2Lin_norm_sq_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:683-684 assumes 'w : Lp ℂ 2' and gives the schurConst squared-norm bound for extL2Lin. TeX integrated_covariance_foundation.tex:150-152,177-179 gives the corresponding continuous-extension bound but no extL2Lin stage. Ledger:2789 and claims.yaml:5546 accurately classify the implementation auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.extL2Lin_norm_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:689-690 assumes 'w : Lp ℂ 2' and proves '‖extL2Lin p w‖ ≤ sqrt(schurConst p)*‖w‖'. TeX integrated_covariance_foundation.tex:150-152 supplies the squared bound under the same temporal parameters, not this implementation-level unsquared lemma. Ledger:2790 and claims.yaml:5553 match it."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.reL2: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:748-749 takes 'f : L2fun p.T' and returns the complex-valued embedding of its real part. TeX integrated_covariance_foundation.tex:175 refers to 'real and imaginary parts' but introduces no L2fun packaging. Ledger:2791 and claims.yaml:5560 accurately describe the auxiliary definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.imL2: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:753-754 takes 'f : L2fun p.T' and returns the complex-valued embedding of its imaginary part. TeX integrated_covariance_foundation.tex:175 refers to 'real and imaginary parts' without this packaged object. Ledger:2792 and claims.yaml:5567 faithfully summarize the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.eq_reL2_add_imL2: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:757 assumes 'f : L2fun p.T' and states 'f = reL2 f + Complex.I • imL2 f'. TeX integrated_covariance_foundation.tex:175-176 discusses the resulting quadratic-form split, not this packaged function-space equality. Ledger:2793 and claims.yaml:5574 correctly give no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.measure_compl_Icc_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:802-803 assumes '(T η : ℝ)' and '0≤η', concluding the restricted boundary-layer measure is≤ofReal(2η). TeX integrated_covariance_foundation.tex:177 invokes smooth density but contains no boundary-layer estimate. Ledger:2794 and claims.yaml:5581 accurately state this auxiliary of the different density proof route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeCompletion.memLp_of_test: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeCompletion.lean:968-970 assumes real smooth f with 'HasCompactSupport f' and arbitrary real T, concluding 'MemLp f 2' on [0,T]. TeX integrated_covariance_foundation.tex:147,173-179 uses compact smooth tests in L2 without a separate membership theorem. Ledger:2795 and claims.yaml:5588 correctly classify this elementary auxiliary."
+    },
+    {
+      "claim": "PARA-TimeCompletion",
+      "verdict": "PASS",
+      "reason": "Ledger:2612-2724 accurately identifies the files, temporal assumptions, complex-L2 completion, real-test identification, eight wrapper clauses, alternative separability/density routes, and outstanding real-space/noise constructions. TimeCompletion.lean:1005-1031 supports the completion wrapper; its lines 1069-1073 and MaskedContinuousWaveCompleted.lean:70-75 discharge both inputs. TeX:5-8 expressly permits Gamma-independent temporal estimates. No additional analytic assumption or weakened main conclusion was found."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "Ledger:217,284-288 includes exactly the section's 68 declarations under their row labels: 29 under L:masked-time-completion, three under E:masked-time-schur, two calibrations, 32 other auxiliaries, and the two completed product/wave wrappers. Searches across all manuscript files found the cited labels at integrated_covariance_foundation.tex:141,150,188,347,354,378,385 and notes_stratonovich_ham_second_moment.tex:190; no missing cited label was found."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:55-72,195-208,227-262 correctly classifies the four targeted rows and lists the new wrapper and extension claims. The completed wrappers have no supplied analytic inputs, and their constants match TeX integrated_covariance_foundation.tex:151,353,387-388. Keeping earlier abstract wrappers among supporting claims does not change the completed wrappers' same-assumptions/full status. The complex construction and changed continuous-wave proof route are disclosed."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "Ledger Scope:88-102, the continuous-wave discussion:1770-1789,1834-1846, modulation references:1879-1887,1943-1955,1976-1982,1999-2001, trig references:2198-2218,2235-2243, and Not in Lean:3136-3138 consistently distinguish the earlier abstract results from the completed wrappers. TimeCompletion.lean:949-963 and MaskedContinuousWaveCompleted.lean:70-75 support those references. The separate real Hilbert-space construction remains explicitly excluded rather than silently claimed."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "W1 — timeForm_smul_right, incorrect quantified parameter domains. candidate/statement-ledger.md:2742 and lean/claims.yaml:5217 say 'For all a, T, c in C'. The actual declaration is '(a T : ℝ) (c : ℂ)' at lean/StratonovichHAMSecondMoment/TimeCompletion.lean:402. The manuscript likewise has 'a = alpha_0' and 'T > 0' at manuscript/notes/integrated_covariance_foundation.tex:5,142, with 0<alpha_0<1 at manuscript/notes/notes_stratonovich_ham_second_moment.tex:191. The summaries therefore advertise parameter domains the declaration does not support. Exact fix: replace the opening in both summaries with 'For all real a, T, complex c, and f, g : R -> C'. No Lean theorem or coverage classification needs changing."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Correct the domains of a and T from complex to real in candidate/statement-ledger.md:2742 and lean/claims.yaml:5217, preserving c as complex."
+  ],
+  "limitations": [
+    "Requirement A was completed; all initially truncated required excerpts were recovered by subsequent reads.",
+    "Files marked partial were read only in the requested sections or relevant declaration contexts. Other ledger sections, unrelated claims, and unrelated library/manuscript developments were not reviewed.",
+    "Compilation and standard-axiom proof correctness were accepted as supplied; no build or independent byte-binding verification was performed.",
+    "The three main completed wrappers passed correspondence review. The blocking finding concerns a supporting declaration's ledger and claims summaries, not those wrappers' mathematical conclusions.",
+    "This AI correspondence review is neither human verification nor a novelty audit."
+  ]
+}

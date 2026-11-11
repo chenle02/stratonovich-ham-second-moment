@@ -1,0 +1,177 @@
+Review the frozen packet rooted at <HOME>/.local/state/Le-AI-Lab/stratonovich-lean-wave-l5-review-TimeCompletion/attempt-01/workspace. Primary target: candidate/statement-ledger.md. Source revision: 210cc3f57925671f97366ae95fd1e9b56a8af3e8.
+
+You are an independent artifact reviewer. Read only the frozen packet
+and the supplied review contract. Report correctness, missing assumptions,
+incorrect constants, failed implications, and uncertainty. Do not edit files,
+use the network, send messages, publish, install, or delegate. Do not launch a
+research or coding workflow. Return a scientific report rather than a plan.
+Use exactly one JSON object with schema "subscription-review-report/1", verdict (PASS, PASS_WITH_NOTES, FAIL, or
+INCONCLUSIVE), confidence (high, medium, low), source_coverage (list of strings),
+checks (list of objects with claim, verdict, reason), findings (an object with
+fatal, major, minor lists), required_repairs (list), and limitations (list).
+required_repairs contains ONLY mandatory changes that block acceptance. Optional
+clarifications belong in findings.minor, never in required_repairs. PASS and
+PASS_WITH_NOTES require empty fatal, major and required_repairs lists and no
+failed/unchecked claim. If a repair is mandatory, return FAIL or INCONCLUSIVE;
+never weaken a finding to obtain PASS.
+Read every required source completely. Never use Grep head_limit or any other
+truncating or limiting option on a required source. After any pagination or
+truncation marker (for example a partial Read, an offset/limit notice, or
+"output truncated"), keep reading the next range until the whole file is read.
+In source_coverage, list each exact file and the line ranges you actually read.
+If coverage of any required source is incomplete, say "partial" for that source
+in source_coverage and state the gap in limitations.
+An AI review is not human verification or a novelty audit. Do not silently
+repair a candidate and PASS the original. A terminal error is not a verdict.
+
+Frozen packet file index (relative to workspace; a listed file is not proof of reading):
+["PROVENANCE.json", "candidate/statement-ledger.md", "lean/StratonovichHAMSecondMoment/Axioms.lean", "lean/StratonovichHAMSecondMoment/ClockCopy.lean", "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean", "lean/StratonovichHAMSecondMoment/DampedNorms.lean", "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean", "lean/StratonovichHAMSecondMoment/DriverParameters.lean", "lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean", "lean/StratonovichHAMSecondMoment/FrequencyRow.lean", "lean/StratonovichHAMSecondMoment/GaussianIBP.lean", "lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean", "lean/StratonovichHAMSecondMoment/GaussianTest.lean", "lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean", "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean", "lean/StratonovichHAMSecondMoment/IndexedCone.lean", "lean/StratonovichHAMSecondMoment/KappaRange.lean", "lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean", "lean/StratonovichHAMSecondMoment/MaskedContinuousWave.lean", "lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean", "lean/StratonovichHAMSecondMoment/MaskedModulation.lean", "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean", "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean", "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean", "lean/StratonovichHAMSecondMoment/PhaseBessel.lean", "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean", "lean/StratonovichHAMSecondMoment/RayleighTail.lean", "lean/StratonovichHAMSecondMoment/SpectralHomog.lean", "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean", "lean/StratonovichHAMSecondMoment/TimeCompletion.lean", "lean/StratonovichHAMSecondMoment/TimeFractional.lean", "lean/StratonovichHAMSecondMoment/TimeSchur.lean", "lean/StratonovichHAMSecondMoment/VariationalDilation.lean", "lean/StratonovichHAMSecondMoment/VariationalMean.lean", "lean/StratonovichHAMSecondMoment/WaveKernel.lean", "lean/StratonovichHAMSecondMoment/WeakSobolev.lean", "lean/claims.yaml", "lean/coverage.yaml", "manuscript/notes/ai-statistics-data.tex", "manuscript/notes/ai-statistics.tex", "manuscript/notes/book-layout.tex", "manuscript/notes/chapter-guides/01-setting.tex", "manuscript/notes/chapter-guides/02-G0.tex", "manuscript/notes/chapter-guides/03-independent-upper.tex", "manuscript/notes/chapter-guides/04-gaussian-foundations.tex", "manuscript/notes/chapter-guides/05-operator-paths.tex", "manuscript/notes/chapter-guides/06-wave-evolution.tex", "manuscript/notes/chapter-guides/07-lower.tex", "manuscript/notes/chapter-guides/08-means.tex", "manuscript/notes/chapter-guides/09-growing-radius.tex", "manuscript/notes/chapter-guides/10-point-upper.tex", "manuscript/notes/chapter-guides/11-constant.tex", "manuscript/notes/chapter-guides/12-finite-order.tex", "manuscript/notes/chapter-guides/13-direct.tex", "manuscript/notes/chapter-guides/14-covariance.tex", "manuscript/notes/chapter-guides/15-static-clock.tex", "manuscript/notes/figures/active-subset-optimization.tex", "manuscript/notes/figures/chapter-roadmap.tex", "manuscript/notes/figures/common-noise.tex", "manuscript/notes/figures/cross-colour-cube.tex", "manuscript/notes/figures/dyadic-cover.tex", "manuscript/notes/figures/endpoint-elimination.tex", "manuscript/notes/figures/gaussian-enlargement.tex", "manuscript/notes/figures/global-control-blocks.tex", "manuscript/notes/figures/hermite-cutoff.tex", "manuscript/notes/figures/interval-allocations.tex", "manuscript/notes/figures/interval-end-metrics.tex", "manuscript/notes/figures/light-cone.tex", "manuscript/notes/figures/literature-interpretations.tex", "manuscript/notes/figures/literature-results-drawing.tex", "manuscript/notes/figures/literature-results-map.tex", "manuscript/notes/figures/nonseparable-controls.tex", "manuscript/notes/figures/order-of-limits.tex", "manuscript/notes/figures/positive-gram.tex", "manuscript/notes/figures/proof-map.tex", "manuscript/notes/figures/styles.tex", "manuscript/notes/figures/two-chain-pairings.tex", "manuscript/notes/figures/walsh-guitar.tex", "manuscript/notes/figures/white-strip.tex", "manuscript/notes/future_optimizers.tex", "manuscript/notes/future_universality.tex", "manuscript/notes/future_work.tex", "manuscript/notes/history_wave_equations.tex", "manuscript/notes/index/anchors.tex", "manuscript/notes/index/list-of-notation.tex", "manuscript/notes/index/setup.tex", "manuscript/notes/integrated_actual_operator_driver.tex", "manuscript/notes/integrated_cameron_mean.tex", "manuscript/notes/integrated_compact_gaussian.tex", "manuscript/notes/integrated_compact_mean_family.tex", "manuscript/notes/integrated_constant_phase_young.tex", "manuscript/notes/integrated_covariance_foundation.tex", "manuscript/notes/integrated_exact_scaling.tex", "manuscript/notes/integrated_gaussian_tubes.tex", "manuscript/notes/integrated_intrinsic_constant.tex", "manuscript/notes/integrated_masked_moments.tex", "manuscript/notes/integrated_occupation_ceiling.tex", "manuscript/notes/integrated_point_transfer.tex", "manuscript/notes/integrated_positive_gram.tex", "manuscript/notes/integrated_radius_anchor.tex", "manuscript/notes/integrated_raw_block_lower.tex", "manuscript/notes/integrated_signed_moment_upper.tex", "manuscript/notes/integrated_signed_static.tex", "manuscript/notes/integrated_source_convergence.tex", "manuscript/notes/integrated_spatial_occupation.tex", "manuscript/notes/integrated_symplectic_phase.tex", "manuscript/notes/integrated_temporal_equilibrium.tex", "manuscript/notes/integrated_uniform_mean.tex", "manuscript/notes/integrated_uniform_products.tex", "manuscript/notes/integrated_unmasked_variational.tex", "manuscript/notes/integrated_wave_variance.tex", "manuscript/notes/integrated_white_evaluation.tex", "manuscript/notes/integrated_young_upper_foundation.tex", "manuscript/notes/literature_review.tex", "manuscript/notes/notes_stratonovich_ham_second_moment.tex", "manuscript/notes/preface.tex"]
+
+Independent correspondence review: newly formalized whole labelled result(s) (Lean ledger rows) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  210cc3f57925). Review ONLY its section "## TimeCompletion (whole result)", the index
+  rows for it, and the items named in the global checks below. All other
+  rows were reviewed earlier.
+- the Lean modules (ground truth for what each declaration states):
+  lean/StratonovichHAMSecondMoment/*.lean (every library module; this section's own modules: TimeCompletion, MaskedContinuousWaveCompleted, TimeSchur, MaskedModulation, MaskedTrigProducts)
+  and lean/claims.yaml, lean/coverage.yaml.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  975feb31ea65. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that L:masked-time-completion, and L:masked-trig-products and L:masked-continuous-wave now with nothing supplied (TimeCompletion and MaskedContinuousWaveCompleted) are formalized as stated in their
+rows: every conclusion proved, with hypotheses that match the manuscript,
+apart from side conditions the TeX leaves implicit and inputs explicitly
+declared as supplied. Test that claim hard: any Lean hypothesis that the
+manuscript does not have, any manuscript hypothesis the Lean drops, any
+weaker Lean conclusion, any changed constant, range, quantifier order or
+strictness, any modelling choice that changes the mathematical object, any
+supplied hypothesis stronger than the manuscript result it stands for, and
+any row labelled as a step of a TeX proof that is really an auxiliary of a
+different Lean proof route, is a finding, unless the ledger states it AND it
+is genuinely harmless. Decide that yourself from the TeX; do not accept the
+ledger's word.
+Pay attention to: whether H_a (the completion of L^2(0,T) under the time form, built over C) is the TeX object: the density result (span of the real compact smooth tests dense) and the real-function clauses must justify identifying it with the complexified null-quotient completion of the real tests; positivity proved on all of L^2 vs on tests; the Schur constant 2T^(1-a)/(1-a); interval amplitudes (bounded measurable, extended by zero); that B24 and the continuous-wave lemma now really take no supplied input (hmem for every C^1 amplitude, hnorm from emb_norm_sq); hypotheses carried but unused; and that no Gamma != 0 is added (the TeX says the temporal estimates hold for any Gamma).
+
+CHECKS (exactly these 72, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.TimeCompletion.masked_time_completion_paper: L:masked-time-completion"
+  2. claim "StratonovichHAMSecondMoment.TimeCompletion.masked_trig_products_completed_paper: L:masked-trig-products"
+  3. claim "StratonovichHAMSecondMoment.MaskedContinuousWaveCompleted.masked_continuous_wave_completed_paper: L:masked-continuous-wave"
+  4. claim "StratonovichHAMSecondMoment.TimeCompletion.Ha: L:masked-time-completion"
+  5. claim "StratonovichHAMSecondMoment.TimeCompletion.emb: L:masked-time-completion"
+  6. claim "StratonovichHAMSecondMoment.TimeCompletion.L2fun: L:masked-time-completion"
+  7. claim "StratonovichHAMSecondMoment.TimeCompletion.TimeParams: L:masked-time-completion"
+  8. claim "StratonovichHAMSecondMoment.TimeCompletion.schurConst: E:masked-time-schur"
+  9. claim "StratonovichHAMSecondMoment.TimeCompletion.extL2: L:masked-time-completion"
+  10. claim "StratonovichHAMSecondMoment.TimeCompletion.testSet: L:masked-time-completion"
+  11. claim "StratonovichHAMSecondMoment.TimeCompletion.realTestSet: L:masked-time-completion"
+  12. claim "StratonovichHAMSecondMoment.TimeCompletion.timeForm_re_nonneg: L:masked-time-completion"
+  13. claim "StratonovichHAMSecondMoment.TimeCompletion.conj_timeForm: L:masked-time-completion"
+  14. claim "StratonovichHAMSecondMoment.TimeCompletion.timeForm_add_right: L:masked-time-completion"
+  15. claim "StratonovichHAMSecondMoment.TimeCompletion.timeForm_smul_right: L:masked-time-completion"
+  16. claim "StratonovichHAMSecondMoment.TimeCompletion.timeForm_ofReal: L:masked-time-completion"
+  17. claim "StratonovichHAMSecondMoment.TimeCompletion.kern_eq_mixture: L:masked-time-completion"
+  18. claim "StratonovichHAMSecondMoment.TimeCompletion.exp_abs_eq: L:masked-time-completion"
+  19. claim "StratonovichHAMSecondMoment.TimeCompletion.separableSpace_Ha: L:masked-time-completion"
+  20. claim "StratonovichHAMSecondMoment.TimeCompletion.emb_norm_sq: L:masked-time-completion"
+  21. claim "StratonovichHAMSecondMoment.TimeCompletion.emb_norm_sq_le: E:masked-time-schur"
+  22. claim "StratonovichHAMSecondMoment.TimeCompletion.extL2_toLp: L:masked-time-completion"
+  23. claim "StratonovichHAMSecondMoment.TimeCompletion.extL2_norm_sq_le: E:masked-time-schur"
+  24. claim "StratonovichHAMSecondMoment.TimeCompletion.emb_norm_sq_eq_timeForm: L:masked-time-completion"
+  25. claim "StratonovichHAMSecondMoment.TimeCompletion.timeForm_self_im: L:masked-time-completion"
+  26. claim "StratonovichHAMSecondMoment.TimeCompletion.emb_norm_sq_re_im: L:masked-time-completion"
+  27. claim "StratonovichHAMSecondMoment.TimeCompletion.emb_norm_sq_real: L:masked-time-completion"
+  28. claim "StratonovichHAMSecondMoment.TimeCompletion.indicator_mem_L2fun: L:masked-time-completion"
+  29. claim "StratonovichHAMSecondMoment.TimeCompletion.exists_test_approx: L:masked-time-completion"
+  30. claim "StratonovichHAMSecondMoment.TimeCompletion.dense_emb_testSet: L:masked-time-completion"
+  31. claim "StratonovichHAMSecondMoment.TimeCompletion.dense_span_realTestSet: L:masked-time-completion"
+  32. claim "StratonovichHAMSecondMoment.TimeCompletion.coe_eq_of_ae: L:masked-time-completion"
+  33. claim "StratonovichHAMSecondMoment.TimeCompletion.timeForm_one: no direct label"
+  34. claim "StratonovichHAMSecondMoment.MaskedContinuousWaveCompleted.norm_sq_waveFn_cc_zero: no direct label"
+  35. claim "StratonovichHAMSecondMoment.TimeCompletion.re_form_nonneg_of_mixture: L:masked-time-completion"
+  36. claim "StratonovichHAMSecondMoment.TimeCompletion.cross_integrable: L:masked-time-completion"
+  37. claim "StratonovichHAMSecondMoment.TimeCompletion.timeForm_eq_prod: no direct label"
+  38. claim "StratonovichHAMSecondMoment.TimeCompletion.integrableOn_exp_pair: no direct label"
+  39. claim "StratonovichHAMSecondMoment.TimeCompletion.mixWeight: no direct label"
+  40. claim "StratonovichHAMSecondMoment.TimeCompletion.mixProfile: no direct label"
+  41. claim "StratonovichHAMSecondMoment.TimeCompletion.measurable_mixWeight: no direct label"
+  42. claim "StratonovichHAMSecondMoment.TimeCompletion.measurable_mixProfile: no direct label"
+  43. claim "StratonovichHAMSecondMoment.TimeCompletion.mixWeight_nonneg: no direct label"
+  44. claim "StratonovichHAMSecondMoment.TimeCompletion.mixProfile_nonneg: no direct label"
+  45. claim "StratonovichHAMSecondMoment.TimeCompletion.ae_ne_diag: no direct label"
+  46. claim "StratonovichHAMSecondMoment.TimeCompletion.Pre: no direct label"
+  47. claim "StratonovichHAMSecondMoment.TimeCompletion.core: no direct label"
+  48. claim "StratonovichHAMSecondMoment.TimeCompletion.Pre.memLp: no direct label"
+  49. claim "StratonovichHAMSecondMoment.TimeCompletion.emb_apply: no direct label"
+  50. claim "StratonovichHAMSecondMoment.TimeCompletion.inner_pre: no direct label"
+  51. claim "StratonovichHAMSecondMoment.TimeCompletion.norm_pre_sq: no direct label"
+  52. claim "StratonovichHAMSecondMoment.TimeCompletion.norm_pre_sq_le: no direct label"
+  53. claim "StratonovichHAMSecondMoment.TimeCompletion.integral_norm_sq_eq: no direct label"
+  54. claim "StratonovichHAMSecondMoment.TimeCompletion.norm_pre_sq_le_Lp: no direct label"
+  55. claim "StratonovichHAMSecondMoment.TimeCompletion.dist_pre_eq_zero: no direct label"
+  56. claim "StratonovichHAMSecondMoment.TimeCompletion.ofLp: no direct label"
+  57. claim "StratonovichHAMSecondMoment.TimeCompletion.lipschitz_ofLp: no direct label"
+  58. claim "StratonovichHAMSecondMoment.TimeCompletion.dist_ofLp_toLp: no direct label"
+  59. claim "StratonovichHAMSecondMoment.TimeCompletion.separableSpace_pre: no direct label"
+  60. claim "StratonovichHAMSecondMoment.TimeCompletion.extL2Lin: no direct label"
+  61. claim "StratonovichHAMSecondMoment.TimeCompletion.extL2Lin_apply: no direct label"
+  62. claim "StratonovichHAMSecondMoment.TimeCompletion.extL2Lin_norm_sq_le: no direct label"
+  63. claim "StratonovichHAMSecondMoment.TimeCompletion.extL2Lin_norm_le: no direct label"
+  64. claim "StratonovichHAMSecondMoment.TimeCompletion.reL2: no direct label"
+  65. claim "StratonovichHAMSecondMoment.TimeCompletion.imL2: no direct label"
+  66. claim "StratonovichHAMSecondMoment.TimeCompletion.eq_reL2_add_imL2: no direct label"
+  67. claim "StratonovichHAMSecondMoment.TimeCompletion.measure_compl_Icc_le: no direct label"
+  68. claim "StratonovichHAMSecondMoment.TimeCompletion.memLp_of_test: no direct label"
+  69. claim "PARA-TimeCompletion": the "TimeCompletion (whole result)" section paragraph is accurate, cites the right files, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input and what is not formalized, and does not overclaim
+  70. claim "LEDGER-INDEX": the "Index by label" rows for the TimeCompletion section list exactly these 68 declarations under the labels their rows give, and every label cited in the section exists in the manuscript (search \label across all files)
+  71. claim "COVERAGE-ROWS": the coverage.yaml rows L:masked-time-completion (new, same-assumptions, full), L:masked-trig-products (now same-assumptions, full, no inputs), L:masked-continuous-wave (new, same-assumptions, full) and E:masked-time-schur (note and two added claims): classes, conclusions, notes and claims are right
+  72. claim "CROSS-REFERENCES": every other place in the ledger that points to the TimeCompletion section (step-module intros and rows, the "Not in Lean" section, Scope) is accurate
+For each row check (1-68): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: this section's own
+   Lean modules (lean/StratonovichHAMSecondMoment/TimeCompletion.lean, lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean, lean/StratonovichHAMSecondMoment/TimeSchur.lean, lean/StratonovichHAMSecondMoment/MaskedModulation.lean, lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean), and,
+   for every other declaration a row of the section names, that
+   declaration in its module; the "TimeCompletion (whole result)" section and the "Scope" and
+   "Index by label" sections of candidate/statement-ledger.md; the entries
+   of lean/claims.yaml for this section's modules; lean/coverage.yaml;
+   manuscript/notes/integrated_covariance_foundation.tex,
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 72 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-68.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.
+

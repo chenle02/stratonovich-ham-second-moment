@@ -1,0 +1,369 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-1167 complete.",
+    "candidate/statement-ledger.md:1-308,1581-1755,2127-2148,3113-3177; partial file, complete required Scope, Index by label, MaskedAuxiliaryNorm section, and relevant cross-reference contexts.",
+    "lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:1-954 complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean:1-519 complete.",
+    "lean/StratonovichHAMSecondMoment/GaussianTest.lean:1-207 complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 complete.",
+    "lean/StratonovichHAMSecondMoment/SpectralHomog.lean:1-115 partial; complete SpectralHomogeneous definition and integral_comp_smul declaration.",
+    "lean/claims.yaml:790-845,3939-4193,5761-6195 partial file; complete entries for all four required modules.",
+    "lean/coverage.yaml:1-668 complete.",
+    "docs/coverage-scope-tex.yaml:1-18 complete.",
+    "manuscript/notes/integrated_covariance_foundation.tex:1-428 complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:173-245 partial; complete standing hypothesis H:homog and surrounding context.",
+    "All manuscript .tex files were searched without output limits for the section's cited label definitions; matching lines were read in the manuscript ranges listed above."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.cd: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:119-120 defines '(2 * π) ^ (-(d : ℝ) / 2)' with d natural; TeX manuscript/notes/integrated_covariance_foundation.tex:8-12 gives 'c_d = (2π)^{-d/2}'. Ledger:1693 and claims.yaml:5762-5768 match. This is an unlabelled convention."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.cd_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:123 states '(d : ℕ) : 0 < cd d'; TeX manuscript/notes/integrated_covariance_foundation.tex:11 defines the positive constant '(2π)^{-d/2}' but has no labelled positivity assertion. Ledger:1694 and claims.yaml:5769-5775 accurately identify an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.cd_sq_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:126 states 'cd d ^ 2 * (2 * π) ^ d = 1' for natural d; TeX manuscript/notes/integrated_covariance_foundation.tex:11 gives 'c_d = (2π)^{-d/2}', implying precisely this normalization. Ledger:1695 and claims.yaml:5776-5782 match; no direct label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.paperHat: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:135-137 assumes '[NormedAddCommGroup E] [NormedSpace ℂ E]' and defines 'cd • ∫ exp(-(I * inner ξ x)) • f x'. TeX manuscript/notes/integrated_covariance_foundation.tex:8-12 gives 'f̂(ξ)=c_d∫e^{-iξ·x}f(x)dx'. Ledger:1696 and claims.yaml:5783-5789 match the sign, coefficient and unlabelled convention."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.paperHat_eq_fourier: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:141-147 states, for complex normed E and arbitrary f, 'paperHat f ξ = cd • 𝓕 f ((2 * π)⁻¹ • ξ)'. TeX manuscript/notes/integrated_covariance_foundation.tex:10 uses 'e^{-iξ·x}', not Mathlib's 2π kernel. Ledger:1697 and claims.yaml:5790-5796 accurately describe this Lean-only conversion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.integrable_paperHat_integrand: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:141,161-162 assumes 'f : SchwartzMap (Rd d) E' with complex normed E and concludes integrability of 'exp(-(I * inner ξ x)) • f x'. TeX manuscript/notes/integrated_covariance_foundation.tex:10 defines that integral and :94 uses Schwartz F. Ledger:1698 and claims.yaml:5797-5803 correctly make convergence explicit without assigning a direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.dil_apply: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:169-173 assumes '(hc : c ≠ 0)' and states 'dil c hc x = c • x'. TeX manuscript/notes/integrated_covariance_foundation.tex:79-81 uses dilation with 'R > 0' but does not introduce this continuous linear equivalence. Ledger:1699 and claims.yaml:5804-5810 correctly mark the implementation auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.hatS_apply: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:141,177-182 assumes a complex-normed-space-valued Schwartz f and states 'hatS f ξ = paperHat f ξ'. TeX manuscript/notes/integrated_covariance_foundation.tex:10 supplies only the transform convention, not a bundled Schwartz implementation. Ledger:1700 and claims.yaml:5811-5817 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.continuous_paperHat: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:141,189 states 'f : SchwartzMap ... E → Continuous (paperHat ...)' for complex normed E. TeX manuscript/notes/integrated_covariance_foundation.tex:94,121-126 works with Schwartz F and Fourier integrals without a separate labelled continuity claim. Ledger:1701 and claims.yaml:5818-5824 faithfully describe an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.integrable_paperHat: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:141,195 states 'f : SchwartzMap ... E → Integrable (paperHat ...)' for complex normed E. TeX manuscript/notes/integrated_covariance_foundation.tex:121 invokes 'Fourier inversion and absolute integrability' for scalar Schwartz functions. Ledger:1702 and claims.yaml:5825-5831 correctly present the more general integrability auxiliary without a direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.paper_inversion: P:masked-auxiliary-norm",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:141,204-205 assumes '[CompleteSpace E]' and Schwartz f, concluding 'f x = cd • ∫ exp(I * inner η x) • paperHat f η'. TeX manuscript/notes/integrated_covariance_foundation.tex:121 says 'For scalar Schwartz functions this follows by Fourier inversion'. Ledger:1703 and claims.yaml:5832-5838 match the type; ledger:1658-1661 explicitly discloses the harmless direct Banach-valued extension of this proof step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.integrable_one_add_pow_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:234-236 assumes '[NormedSpace ℝ E]', Schwartz f and natural N, concluding 'Integrable ((1+‖u‖)^N * ‖f u‖)'. TeX manuscript/notes/integrated_covariance_foundation.tex:103 invokes 'Schwartz decay of k_R', without this standalone statement. Ledger:1704 and claims.yaml:5839-5845 correctly identify a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.zc_apply: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:253-257 assumes real Schwartz ζ and states 'zc ζ x = (ζ x : ℂ)'. TeX manuscript/notes/integrated_covariance_foundation.tex:79 chooses a 'real nonzero Schwartz function ζ' whose Fourier transform is complex. Ledger:1705 and claims.yaml:5846-5852 correctly describe the scalar embedding auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.zetaR: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:260 defines 'zetaR ζ R x := ζ (R⁻¹ • x)' for real Schwartz ζ and arbitrary real R; TeX manuscript/notes/integrated_covariance_foundation.tex:79-80 says 'For R > 0 put ζ_R(x)=ζ(x/R)'. Ledger:1706 and claims.yaml:5853-5859 accurately disclose the totalized definition; its restriction to R>0 is the manuscript object."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.kR: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:263-264 defines 'kR ζ R := paperHat (fun x => (zetaR ζ R x : ℂ))'; TeX manuscript/notes/integrated_covariance_foundation.tex:79-80 assumes real Schwartz ζ, R>0 and defines 'k_R=ζ̂_R'. Ledger:1707 and claims.yaml:5860-5866 match, with no direct label for this setup definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.Lz: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:267 defines, for real Schwartz ζ, 'Lz ζ := ∫ η, ‖paperHat ... η‖'; TeX manuscript/notes/integrated_covariance_foundation.tex:80-82 defines 'L=‖ζ̂‖_1'. Ledger:1708 and claims.yaml:5867-5873 match; transform integrability is separately proved, so this is the actual L1 norm."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.zetaS_apply: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:271-276 assumes real Schwartz ζ and '(hR : R ≠ 0)', stating 'zetaS ζ R hR x = (zetaR ζ R x : ℂ)'. TeX manuscript/notes/integrated_covariance_foundation.tex:79-80 assumes R>0 and defines ζ_R, but no bundled Schwartz map. Ledger:1709 and claims.yaml:5874-5880 correctly identify the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.kR_eq_hatS: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:280-281 assumes real Schwartz ζ and 'R ≠ 0', concluding 'kR ζ R = hatS (zetaS ζ R hR)'. TeX manuscript/notes/integrated_covariance_foundation.tex:80 defines 'k_R=ζ̂_R' for R>0. Ledger:1710 and claims.yaml:5881-5887 correctly describe the implementation identity, not a separate labelled result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.continuous_kR: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:287 assumes real Schwartz ζ and 'R ≠ 0', concluding 'Continuous (kR ζ R)'. TeX manuscript/notes/integrated_covariance_foundation.tex:79-81 fixes Schwartz ζ and R>0; :103 uses Schwartz decay of k_R. Ledger:1711 and claims.yaml:5888-5894 accurately mark this standalone continuity fact as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.integrable_kR: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:291 assumes real Schwartz ζ and 'R ≠ 0', concluding 'Integrable (kR ζ R)'. TeX manuscript/notes/integrated_covariance_foundation.tex:79-82 assumes R>0 and states '‖k_R‖_1=L'. Ledger:1712 and claims.yaml:5895-5901 faithfully record the stronger nonzero-R integrability statement and correctly cite unlabelled setup."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.kR_scale: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:295-296 assumes real Schwartz ζ and '(hR : 0 < R)', concluding 'kR ζ R u = (R^d : ℂ) * paperHat ζ (R • u)'. TeX manuscript/notes/integrated_covariance_foundation.tex:79-81 has the same R>0 and 'k_R(u)=R^d ζ̂(Ru)'. Ledger:1713 and claims.yaml:5902-5908 match exactly."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.integral_norm_kR: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:313-314 assumes real Schwartz ζ and '0 < R', concluding '∫ u, ‖kR ζ R u‖ = Lz ζ'. TeX manuscript/notes/integrated_covariance_foundation.tex:79-82 assumes R>0 and states '‖k_R‖_1=L'. Ledger:1714 and claims.yaml:5909-5915 preserve the R-independent norm without an erroneous R^d factor."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.eq_zero_of_paperHat_eq_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:323-324 assumes real Schwartz ζ and '(h : ∀ η, paperHat ... η = 0)', concluding 'ζ = 0'. TeX manuscript/notes/integrated_covariance_foundation.tex:79-82 chooses ζ nonzero and states L>0 without a proof. Ledger:1715 and claims.yaml:5916-5922 accurately identify Fourier injectivity as an auxiliary supporting that positivity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.Lz_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:332-333 assumes real Schwartz ζ and '(hζ : ζ ≠ 0)', concluding transform integrability and '0 < Lz ζ'. TeX manuscript/notes/integrated_covariance_foundation.tex:79-82 assumes 'real nonzero Schwartz' ζ and states 'L>0'. Ledger:1716 and claims.yaml:5923-5929 match the necessary nonzero hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.kR_neg: P:masked-auxiliary-norm",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:347-348 assumes real Schwartz ζ and arbitrary real R, stating 'kR ζ R (-u) = conj (kR ζ R u)'. TeX manuscript/notes/integrated_covariance_foundation.tex:106-107 says 'Since ζ is real, k_R(-u)=overline{k_R(u)}', under R>0. Ledger:1717 and claims.yaml:5930-5936 accurately disclose the harmless extension in R and map to the actual proof identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.norm_kR_neg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:359-360 assumes real Schwartz ζ and arbitrary R, concluding '‖kR ... (-u)‖ = ‖kR ... u‖'. TeX manuscript/notes/integrated_covariance_foundation.tex:106-107 supplies the conjugation identity for real ζ. Ledger:1718 and claims.yaml:5937-5943 correctly describe its norm consequence as an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.rho: E:masked-auxiliary-measure",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:369-370 defines 'ofReal (cd d ^ 2 * Lz ζ) * ∫⁻ ξ, ‖kR ... (ξ-η)‖ₑ ∂μ' for a measure μ and real Schwartz ζ. TeX manuscript/notes/integrated_covariance_foundation.tex:79-85 assumes R>0 and defines 'ρ_R(η)=c_d²L∫|k_R(ξ-η)|μ(dξ)'. Ledger:1719 and claims.yaml:5944-5950 match; the extended-valued representation and omitted proof of everywhere finiteness are explicitly disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.nu: E:masked-auxiliary-measure",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:373-374 defines 'nu μ ζ R := volume.withDensity (rho μ ζ R)'; TeX manuscript/notes/integrated_covariance_foundation.tex:79-85 defines 'ν_R(dη)=ρ_R(η)dη' for real Schwartz ζ and R>0. Ledger:1720 and claims.yaml:5951-5957 describe exactly the same measure."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.measurable_kR_sub: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:378,381-382 assumes real Schwartz ζ and '(hR : R ≠ 0)', concluding measurability of '(ξ,η) ↦ ‖kR ... (ξ-η)‖ₑ'. TeX manuscript/notes/integrated_covariance_foundation.tex:79-85 assumes R>0 and uses this kernel in ρ_R. Ledger:1721 and claims.yaml:5958-5964 correctly identify a measurability auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.measurable_rho: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:387 assumes '[SFinite μ]' and 'R ≠ 0', concluding 'Measurable (rho μ ζ R)'. TeX manuscript/notes/integrated_covariance_foundation.tex:5,79,103-106 has Radon μ, R>0 and proves continuity of ρ_R. Ledger:1722 and claims.yaml:5965-5971 match; s-finiteness follows from the standing Radon setting."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.lintegral_nu: P:masked-auxiliary-norm",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:393-395 assumes '[SFinite μ]', 'R ≠ 0' and '(hw : Measurable w)', with w extended-nonnegative, and proves the density/Tonelli identity with coefficient c_d²L. TeX manuscript/notes/integrated_covariance_foundation.tex:108-111,133-134 invokes 'Tonelli' under Radon μ and R>0. Ledger:1723 and claims.yaml:5972-5978 accurately state the general nonnegative identity used in those steps."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.nu_apply: P:masked-auxiliary-norm",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:413-415 assumes '[SFinite μ]', 'R ≠ 0' and 'MeasurableSet A', concluding 'ν_R(A)=c_d²L∫⁻|k_R(u)| μ((ξ↦ξ-u)⁻¹ A)du'. TeX manuscript/notes/integrated_covariance_foundation.tex:108-111 gives 'ν_R(B(y,r))=c_d²L∫|k_R(u)|μ(B(y+u,r))du'. Ledger:1724 and claims.yaml:5979-5985 match; the preimage has the correct plus-u translation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.preimage_sub_closedBall: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:441-442 assumes arbitrary u,y and real r, stating '(ξ↦ξ-u)⁻¹ closedBall y r = closedBall (y+u) r'. TeX manuscript/notes/integrated_covariance_foundation.tex:110 uses 'B(y+u,r)' and :51 permits closed balls. Ledger:1725 and claims.yaml:5986-5992 accurately identify the set-theoretic auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.preimage_sub_ball: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:446-447 assumes arbitrary u,y and real r, stating '(ξ↦ξ-u)⁻¹ ball y r = ball (y+u) r'. TeX manuscript/notes/integrated_covariance_foundation.tex:110 contains the same translated-ball geometry. Ledger:1726 and claims.yaml:5993-5999 match; no direct label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.lintegral_enorm_kR: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:378,452 assumes real Schwartz ζ and '0 < R', concluding '∫⁻u, ‖kR ζ R u‖ₑ = ofReal (Lz ζ)'. TeX manuscript/notes/integrated_covariance_foundation.tex:79-82 states '‖k_R‖_1=L' for R>0. Ledger:1727 and claims.yaml:6000-6006 correctly record the extended-integral auxiliary representation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.Lz_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:378,456 states '0 ≤ Lz ζ' for real Schwartz ζ, without ζ≠0. TeX manuscript/notes/integrated_covariance_foundation.tex:80-82 defines L as an L1 norm and obtains strict positivity with ζ nonzero. Ledger:1728 and claims.yaml:6007-6013 correctly state the unconditional nonnegativity auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.nu_le_of_translate_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:460-462 assumes '[SFinite μ]', R>0, measurable A and '∀u, μ((ξ↦ξ-u)⁻¹ A) ≤ ofReal M', concluding 'ν_R(A) ≤ ofReal(c_d²L²M)'. TeX manuscript/notes/integrated_covariance_foundation.tex:110-113 substitutes 'μ(B(y+u,r)) ≤ C_Γ r^α' into Tonelli. Ledger:1729 and claims.yaml:6014-6020 correctly mark the general transfer lemma as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.mu_closedBall_le: E:masked-translated-ball",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:476-478 assumes 'IsTempered μ', 'IsSpectralMeasure Γ μ', 'SpectralHomogeneous Γ (d-alpha)' and r>0, concluding 'μ(closedBall y r) ≤ ofReal(CGamma Γ * r^alpha)'. TeX manuscript/notes/integrated_covariance_foundation.tex:5,37-51 assumes H:homog and Γ≠0 and gives 'μ(B(y,r)) ≤ C_Γr^α', open or closed. Ledger:1730 and claims.yaml:6021-6027 disclose the weaker hypotheses; CGamma matches the manuscript under H:homog."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.nu_closedBall_le: E:masked-auxiliary-growth",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:495-498 assumes '[SFinite μ]', μ tempered, the spectral convention, Γ scaling, R>0 and r>0, concluding 'ν_R(closedBall y r) ≤ ofReal(cd d ^ 2 * Lz ζ ^ 2 * CGamma Γ * r ^ alpha)'. TeX manuscript/notes/integrated_covariance_foundation.tex:5,79,89-93 gives 'ν_R(B(y,r)) ≤ c_d²L²C_Γr^α' uniformly in R>0 under H:homog. Ledger:1731 and claims.yaml:6028-6034 preserve all factors, centers and strict radius conditions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.nu_ball_le: E:masked-auxiliary-growth",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:505-508 assumes '[SFinite μ]', μ tempered, the spectral convention, Γ scaling, R>0 and r>0, with bound 'ofReal(c_d² L² CGamma Γ * r^alpha)' for 'ball y r'. TeX manuscript/notes/integrated_covariance_foundation.tex:89-93 states the same ball bound 'for all y ... and r>0, uniformly in R>0'. Ledger:1732 and claims.yaml:6035-6041 match; the right side has no R dependence."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.isLocallyFiniteMeasure_nu: P:masked-auxiliary-norm",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:515-519 assumes '[SFinite μ]', μ tempered, the spectral convention, Γ scaling and R>0, concluding 'IsLocallyFiniteMeasure (nu μ ζ R)'. TeX manuscript/notes/integrated_covariance_foundation.tex:89 says 'Radon' under H:homog and R>0. Ledger:1607-1609,1648-1649,1733 and claims.yaml:6042-6048 accurately explain the equivalent locally finite Borel-measure formulation on R^d and the changed proof route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.peetre: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:523-524 assumes ξ,η in R^d and natural N, concluding '(1+‖η‖)^(-N) ≤ (1+‖ξ‖)^(-N)(1+‖ξ-η‖)^N'. TeX manuscript/notes/integrated_covariance_foundation.tex:113-114 instead proves temperedness by a 'dyadic argument'. Ledger:1650-1655,1734 and claims.yaml:6049-6055 correctly identify Peetre as an alternative-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.lintegral_weight_nu_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:539-543 assumes '[SFinite μ]', R≠0 and natural N and bounds the weighted ν_R integral by 'ofReal(c_d²L)' times the μ weight integral times '∫⁻(1+‖u‖)^N|k_R(u)|du'. TeX manuscript/notes/integrated_covariance_foundation.tex:113-114 uses polynomial ball growth and dyadic summation instead. Ledger:1735 and claims.yaml:6056-6062 match the type and correctly assign no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.lintegral_weight_kR_lt_top: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:568-569 assumes real Schwartz ζ, 'R ≠ 0' and natural N, concluding '∫⁻u, ofReal((1+‖u‖)^N * ‖kR ... u‖) < ⊤'. TeX manuscript/notes/integrated_covariance_foundation.tex:103 invokes 'Schwartz decay of k_R' for R>0, but not this separate weighted integral. Ledger:1736 and claims.yaml:6063-6069 accurately describe the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.isTempered_nu: P:masked-auxiliary-norm",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:577-581 assumes '[SFinite μ]', '(hμt : IsTempered μ)' and 'R ≠ 0', concluding 'IsTempered (nu μ ζ R)' with μ's witness exponent. TeX manuscript/notes/integrated_covariance_foundation.tex:89,113-114 asserts ν_R 'tempered' under H:homog and R>0. Ledger:1737 and claims.yaml:6070-6076 match; ledger:1650-1655 explicitly distinguishes the Peetre proof from the TeX proof."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.rho_neg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:585 assumes real Schwartz ζ, 'R ≠ 0' and '(hμe : IsEven μ)', concluding 'rho ... (-η) = rho ... η'. TeX manuscript/notes/integrated_covariance_foundation.tex:106-107 says 'Evenness of μ gives evenness of ρ_R', with real ζ and R>0. Ledger:1738 and claims.yaml:6077-6083 faithfully state the helper; no direct label does not overclaim its correspondence."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.isEven_nu: P:masked-auxiliary-norm",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:598 assumes real Schwartz ζ, 'R ≠ 0' and 'IsEven μ', concluding 'IsEven (nu μ ζ R)'. TeX manuscript/notes/integrated_covariance_foundation.tex:79,89,106-107 assumes real ζ, R>0 and even μ and states ν_R 'even'. Ledger:1739 and claims.yaml:6084-6090 match, with the harmless weaker nonzero-R condition explicitly recorded."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.sq_integral_mul_le: P:masked-auxiliary-norm",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:618-620 assumes '∀x, 0≤a x' and integrability of a, ag and ag², concluding '(∫ag)² ≤ (∫a)(∫ag²)'. TeX manuscript/notes/integrated_covariance_foundation.tex:127-132 explicitly invokes 'weighted Cauchy–Schwarz' with weight |k_R(ξ-η)|. Ledger:1740 and claims.yaml:6091-6097 match; the required integrability is proved by integrable_weighted, not supplied as an extra manuscript assumption."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.exists_weight_bound: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:642-644 assumes real normed E, Schwartz f and natural N, concluding '∃ C, 0≤C ∧ ∀x, (1+‖x‖)^N * ‖f x‖ ≤ C'. TeX manuscript/notes/integrated_covariance_foundation.tex:125,134-135 invokes 'Schwartz bounds' and 'Schwartz decay'. Ledger:1741 and claims.yaml:6098-6104 correctly describe the standalone auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.ofReal_norm_sq: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:653-654 assumes only '[NormedAddCommGroup E]' and v:E, stating 'ofReal (‖v‖ ^ 2) = ‖v‖ₑ ^ 2'. TeX manuscript/notes/integrated_covariance_foundation.tex:96-97 uses ordinary nonnegative squared norms without an extended-real coercion. Ledger:1742 and claims.yaml:6105-6111 correctly identify a representation auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.continuous_zetaR: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:660,663 assumes real Schwartz ζ and arbitrary real R, concluding 'Continuous (zetaR ζ R)'. TeX manuscript/notes/integrated_covariance_foundation.tex:79-80 defines ζ_R from Schwartz ζ for R>0. Ledger:1743 and claims.yaml:6112-6118 faithfully disclose the totalized-R continuity auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.norm_exp_I_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:666 assumes '(r : ℝ)' and states '‖Complex.exp (I * (r : ℂ))‖ = 1'. TeX manuscript/notes/integrated_covariance_foundation.tex:10,116-126 uses real Fourier phases without this separate assertion. Ledger:1744 and claims.yaml:6119-6125 accurately describe an elementary auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.norm_exp_neg_I_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:670 assumes '(r : ℝ)' and states '‖Complex.exp (-(I * (r : ℂ)))‖ = 1'. TeX manuscript/notes/integrated_covariance_foundation.tex:10 uses the negative real Fourier phase. Ledger:1745 and claims.yaml:6126-6132 match; no direct label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.paperHat_mask: P:masked-auxiliary-norm",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:659-660,680-682 assumes complex Banach E, real Schwartz ζ, R≠0 and Schwartz F, concluding 'paperHat (ζ_R • F) ξ = cd • ∫ k_R(ξ-η) • paperHat F η'. TeX manuscript/notes/integrated_covariance_foundation.tex:93-94,116-120 assumes separable complex Hilbert H and R>0 and displays exactly that identity. Ledger:1746 and claims.yaml:6133-6139 faithfully disclose the Banach generalization; ledger:1658-1661 correctly explains the different proof route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.integrable_weighted: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:725-731 explicitly omits completeness and assumes complex normed E, R≠0 and Schwartz F, proving integrability of |k_R|, |k_R||F̂| and |k_R||F̂|². TeX manuscript/notes/integrated_covariance_foundation.tex:127-132 invokes weighted Cauchy–Schwarz for Schwartz data. Ledger:1747 and claims.yaml:6140-6146 match this auxiliary rather than inventing a manuscript step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.norm_sq_paperHat_mask_le: P:masked-auxiliary-norm",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:659-660,749-751 assumes complex Banach E, real Schwartz ζ, R>0 and Schwartz F, concluding '‖(ζ_RF)^hat(ξ)‖² ≤ cd d ^ 2 * Lz ζ * ∫|k_R(ξ-η)|‖F̂(η)‖²dη'. TeX manuscript/notes/integrated_covariance_foundation.tex:127-132 displays precisely this coefficient and inequality for Hilbert-valued F. Ledger:1748 and claims.yaml:6147-6153 accurately record the disclosed Banach generalization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.masked_hilbert_fourier_lintegral: E:masked-hilbert-fourier",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:659-660,774-776 assumes complex Banach E, '[SFinite μ]', R>0 and Schwartz F and proves '∫⁻‖(ζ_RF)^hat‖ₑ²dμ ≤ ∫⁻‖F̂‖ₑ²dν_R'. TeX manuscript/notes/integrated_covariance_foundation.tex:93-98 assumes separable complex Hilbert H and gives the same inequality under standing H:homog. Ledger:1749 and claims.yaml:6154-6160 correctly distinguish this lower-integral form; finiteness is separately established."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.lintegral_paperHat_nu_lt_top: E:masked-hilbert-fourier",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:798-804 omits completeness and assumes complex normed E, '[SFinite μ]', 'IsTempered μ', R≠0 and Schwartz F, concluding '∫⁻‖paperHat F‖ₑ²dν_R < ⊤'. TeX manuscript/notes/integrated_covariance_foundation.tex:134-135 says 'Its right side is finite by Schwartz decay and temperedness of ν_R'. Ledger:1750 and claims.yaml:6161-6167 faithfully state the stronger general form and correctly map the finiteness conclusion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.continuous_paperHat_mask: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:829-833 omits completeness and assumes complex normed E, R≠0 and Schwartz F, concluding 'Continuous (paperHat (ζ_R • F))'. TeX manuscript/notes/integrated_covariance_foundation.tex:94,116-126 uses Schwartz F and its masked Fourier integral but does not state this as a separate labelled assertion. Ledger:1751 and claims.yaml:6168-6174 correctly identify the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.masked_hilbert_fourier: E:masked-hilbert-fourier",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:659-660,847-855 assumes complex Banach E, '[SFinite μ]', 'IsTempered μ', R>0 and Schwartz F; it concludes both integrabilities, both integral inequalities and a finite right side. TeX manuscript/notes/integrated_covariance_foundation.tex:93-98,134-135 assumes separable complex Hilbert H and Schwartz F and states the inequality with finite right side. Ledger:1752 and claims.yaml:6175-6181 accurately disclose the genuine Banach generalization and preserve integrability."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.masked_auxiliary_norm: P:masked-auxiliary-norm",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:896-915 assumes s-finite, tempered, even μ, the spectral convention, Γ scaling, real Schwartz ζ≠0, complex Banach E and Schwartz F. TeX manuscript/notes/integrated_covariance_foundation.tex:5-6,79-99 assumes H:homog, Γ≠0 and separable complex Hilbert H. Ledger:1610-1634,1666-1674,1753 and claims.yaml:6182-6188 correctly describe the generalization, the Bochner meaning of CGamma outside Γ-tempered hypotheses, and the omitted real-H clause. All complex-case conclusions and the uniform constant are present."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedAuxiliaryNorm.masked_auxiliary_norm_paper: P:masked-auxiliary-norm",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:932-950 assumes 'HomogCovariance d alpha alpha0 Γ μ', 'Γ ≠ 0', real Schwartz ζ≠0, complete separable complex inner-product H and Schwartz F. TeX manuscript/notes/integrated_covariance_foundation.tex:5-6,79,93-94 gives the same standing and complex-H assumptions. HomogHypothesis.lean:64-80 matches manuscript/notes/notes_stratonovich_ham_second_moment.tex:190-207. Ledger:1754 and claims.yaml:6189-6195 match. Every complex-case conclusion, integrability and R-uniform constant is proved; the real-H sentence at TeX:99 is explicitly excluded, not silently claimed."
+    },
+    {
+      "claim": "PARA-MaskedAuxiliaryNorm",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:1583-1689 accurately describes the definitions, assumptions, carried unused fields, absence of supplied inputs, Banach generalization and changed proof routes. Compare MaskedAuxiliaryNorm.lean:369-374,495-519,539-598,680-682,847-855,932-952 with manuscript/notes/integrated_covariance_foundation.tex:79-137. Its exclusions of real-H complexification and proof-internal density finiteness/continuity are accurate. MaskedSpectralGrowth.lean:321-342 identifies the manuscript CGamma under H:homog."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "FAIL",
+      "reason": "The section contains 62 declaration rows at candidate/statement-ledger.md:1693-1754, but its index entries at :289-293 contain only 20 declarations. The other 42 rows are marked 'no direct label' and have no MaskedAuxiliaryNorm index entry anywhere in the complete Index by label section (:176-308). All cited manuscript labels exist uniquely in the searched TeX inputs. W1 concerns index completeness, not mathematical correspondence."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "lean/coverage.yaml:534-560 correctly uses 'class: same-assumptions', 'conclusion: weaker', an explicit complex-case scope and the omitted real-H clause. Its claim IDs resolve to the corresponding claims.yaml entries. docs/coverage-scope-tex.yaml:16-18 agrees with that scope in both ASCII and TeX. Compare MaskedAuxiliaryNorm.lean:932-952 with manuscript/notes/integrated_covariance_foundation.tex:88-99,134-135; no hidden supplied hypothesis or incorrect constant was found."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "Relevant occurrences at candidate/statement-ledger.md:109-113,135-145,165-174,2136-2142,3139-3142,3173-3177 correctly distinguish the formalized complex-case mask norm from the omitted real-H clause, density regularity, noise completion and subsequent operator constructions. The assertion that MaskedAuxiliaryNorm applies closedBall_le at every center is confirmed by MaskedAuxiliaryNorm.lean:476-501 and manuscript/notes/integrated_covariance_foundation.tex:108-113. No additional step-module reference to this section was found."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "W1 — LEDGER-INDEX is incomplete. candidate/statement-ledger.md:1693-1754 supplies 62 MaskedAuxiliaryNorm declaration rows, whereas :289-293 indexes only the 20 labelled declarations; all 42 'no direct label' declarations are absent from the index. For example, Lean lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:120 defines 'cd d := (2 * π)^(-(d : ℝ)/2)', corresponding to the unlabelled TeX convention 'c_d=(2π)^{-d/2}' at manuscript/notes/integrated_covariance_foundation.tex:10-11; ledger:1693 correctly marks it 'no direct label', but the index omits it. Exact fix: add an index row or rows containing all 42 declarations whose section rows say 'no direct label', preserving that classification and retaining the existing 20 labelled entries. Do not add the four implementation definitions explicitly excluded at ledger:1687-1689."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Repair candidate/statement-ledger.md's Index by label so that all 62 MaskedAuxiliaryNorm section declarations are indexed exactly under their section-row classifications: retain the 20 labelled declarations and add the missing 42 'no direct label' declarations."
+  ],
+  "limitations": [
+    "Requirement A was completed. Partial-file coverage above concerns material outside the required sections, entries or declaration contexts; no required reading gap remains.",
+    "The failure is an index-completeness defect. No mathematical hypothesis mismatch, changed constant, failed complex-case implication or additional narrowing was found in the 62 reviewed declarations.",
+    "Compilation and standard-axiom status were accepted as stipulated; no build or proof-kernel audit was performed. Provenance byte binding was accepted as supervisor-checked.",
+    "The referenced refutation artifacts and the external Mathlib installation were not supplied as review sources. Their files and library-availability assertions were not independently audited.",
+    "This AI correspondence review is not human verification or a novelty audit."
+  ]
+}

@@ -1,0 +1,103 @@
+Independent correspondence review: newly formalized whole labelled result(s) (Lean ledger rows) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  210cc3f57925). Review ONLY its section "## MaskedContinuousWave (whole result)", the index
+  rows for it, and the items named in the global checks below. All other
+  rows were reviewed earlier.
+- the Lean modules (ground truth for what each declaration states):
+  lean/StratonovichHAMSecondMoment/*.lean (every library module; this section's own modules: MaskedContinuousWave, MaskedModulation, MaskedTrigProducts)
+  and lean/claims.yaml, lean/coverage.yaml.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  975feb31ea65. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that L:masked-continuous-wave (stated over the hmem/hnorm inputs; instantiated in the TimeCompletion section) are formalized as stated in their
+rows: every conclusion proved, with hypotheses that match the manuscript,
+apart from side conditions the TeX leaves implicit and inputs explicitly
+declared as supplied. Test that claim hard: any Lean hypothesis that the
+manuscript does not have, any manuscript hypothesis the Lean drops, any
+weaker Lean conclusion, any changed constant, range, quantifier order or
+strictness, any modelling choice that changes the mathematical object, any
+supplied hypothesis stronger than the manuscript result it stands for, and
+any row labelled as a step of a TeX proof that is really an auxiliary of a
+different Lean proof route, is a finding, unless the ledger states it AND it
+is genuinely harmless. Decide that yourself from the TeX; do not accept the
+ledger's word.
+Pay attention to: the definitions c_r, b_r (b_0 = t), <r>, Q_h against TeX 378-390; the constant C_1 = 4 3^(1-a) C_0 and its powers (1+T)^4, h^(2-a); the standing assumptions 296-298 (I in [0,T], 0 < h <= 1); the different proof route (B24 at shifted frequencies instead of H_a-valued averaging) stated as such; which rows are TeX steps (the bracket comparison 411-419) and which are route auxiliaries.
+
+CHECKS (exactly these 28, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.masked_continuous_wave_paper: L:masked-continuous-wave"
+  2. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.bracket_add_le: L:masked-continuous-wave"
+  3. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.bracket_pos: no direct label"
+  4. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.bracket_rpow_shift_le: L:masked-continuous-wave"
+  5. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.frequencyPair_shift_le: L:masked-continuous-wave"
+  6. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.bFn_contDiff: L:masked-continuous-wave"
+  7. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.bFn_bounds: L:masked-continuous-wave"
+  8. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.bracket_div_le_sqrt_two: L:masked-continuous-wave"
+  9. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.bracket_le_sqrt_two: no direct label"
+  10. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.eval_eq: no direct label"
+  11. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.fr_spec: no direct label"
+  12. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.amp_contDiff: no direct label"
+  13. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.amp_bound: no direct label"
+  14. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.amp_prod_sup: no direct label"
+  15. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.waveFn_eq_prodFn: no direct label"
+  16. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.cFn: L:masked-continuous-wave"
+  17. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.bFn: L:masked-continuous-wave"
+  18. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.Wave: L:masked-continuous-wave"
+  19. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.Wave.eval: L:masked-continuous-wave"
+  20. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.waveFn: L:masked-continuous-wave"
+  21. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.C₁: L:masked-continuous-wave"
+  22. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.amp: no direct label"
+  23. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.trig: no direct label"
+  24. claim "StratonovichHAMSecondMoment.MaskedContinuousWave.fr: no direct label"
+  25. claim "PARA-MaskedContinuousWave": the "MaskedContinuousWave (whole result)" section paragraph is accurate, cites the right files, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input and what is not formalized, and does not overclaim
+  26. claim "LEDGER-INDEX": the "Index by label" rows for the MaskedContinuousWave section list exactly these 24 declarations under the labels their rows give, and every label cited in the section exists in the manuscript (search \label across all files)
+  27. claim "COVERAGE-ROWS": the coverage.yaml row L:masked-continuous-wave: its claims list includes the wrapper of this section alongside the completed one, and the class is right given the completed wrapper
+  28. claim "CROSS-REFERENCES": every other place in the ledger that points to the MaskedContinuousWave section (step-module intros and rows, the "Not in Lean" section, Scope) is accurate
+For each row check (1-24): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: this section's own
+   Lean modules (lean/StratonovichHAMSecondMoment/MaskedContinuousWave.lean, lean/StratonovichHAMSecondMoment/MaskedModulation.lean, lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean), and,
+   for every other declaration a row of the section names, that
+   declaration in its module; the "MaskedContinuousWave (whole result)" section and the "Scope" and
+   "Index by label" sections of candidate/statement-ledger.md; the entries
+   of lean/claims.yaml for this section's modules; lean/coverage.yaml;
+   manuscript/notes/integrated_covariance_foundation.tex,
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 28 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-24.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.
