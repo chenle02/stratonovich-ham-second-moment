@@ -177,6 +177,24 @@
   0 sorry, 223 claim axioms); claims synced at f3e8275. Field reviews of
   lean-pkg proposal 0014 (declared controls) sent to lean-ops: final
   verdict ACCEPT with two fixes; acceptance is Le's.
+- **WAVE L4 CORRESPONDENCE GATE: CLOSED (Le, 2026-11-11)** at companion
+  ac6f767 over manuscript 3920258: Le accepted the four Codex GPT-6.1-Sol
+  reviews (at efec88b: FrequencyRow PASS_WITH_NOTES, three FAIL; 0 fatal,
+  4 major, 4 minor, all documentation, all accepted, repaired at 7afcd23)
+  plus the confirmation review (PASS_WITH_NOTES/high; C1 fixed at ac6f767).
+  Results: P:masked-spectral-growth; P:clock-copy-obstruction now
+  same-assumptions (spectral homogeneity derived from H:homog) and the
+  finiteness part of L:damped-homogeneous-norms same-assumptions (weaker);
+  E:masked-time-schur and L:masked-temporal-modulation (same-assumptions,
+  on the defining double integral); L:masked-trig-products input narrowed
+  to the completion (hmem, hnorm); P:frequency-row and C:frequency-time;
+  L:occupation-kernel-row and L:spatial-physical-pair. 724 claims; ledger
+  419 labelled / 305 unlabelled; coverage 20 same-assumptions, 16
+  inputs-supplied, 4 outside; both lean-pkg tiers at 2f5ee14, claims
+  ledger READY (0 open). Scope: AI statement-to-manuscript correspondence,
+  not human verification; supplied inputs stay outside Lean; later changes
+  to these rows or cited labels need a successor review. Records:
+  reviews/2026-11-11-lean-wave-l4-*.
 - **OVERNIGHT TODO LIST (Le, 2026-11-10 evening: "include all todos and
   systematically complete all of them autonomously overnight").** Read as
   approval to RUN wave L4 as proposed below; every gate (L4 correspondence)
@@ -199,7 +217,7 @@
      claim as a statement-fidelity finding.
   2. [ ] Easley `leanchecker --fresh` replay of the wave-L3 modules (job
      5688396 running): review, redact, commit evidence, record here.
-  3. [x] DONE except Le's gate (2026-11-11 small hours): all four items formalized at
+  3. [x] DONE; gate closed by Le (2026-11-11): all four items formalized at
      FULL scope, no fallback used, nothing supplied except B24's narrowed
      input: L4-a P:masked-spectral-growth and the DISCHARGE of B14's input
      (spectralHomogeneous_of_homog; ClockCopyHomog re-issues
@@ -218,8 +236,9 @@
      accepted, repaired at 7afcd23; evidence Article d3e3620
      (reviews/2026-11-11-lean-wave-l4-*). Confirmation review at 7afcd23:
      PASS_WITH_NOTES/high, accepted; C1 (duplicate index row) fixed at
-     ac6f767. **The wave L4 correspondence gate awaits Le** (proposed:
-     close at companion ac6f767 over manuscript 3920258).
+     ac6f767. **WAVE L4 CORRESPONDENCE GATE: CLOSED (Le, 2026-11-11)**
+     at companion ac6f767 over manuscript 3920258 (four reviews plus the
+     confirmation review accepted).
      (Original item:) Wave L4 (four items L4-a..d below) in parallel worktrees:
      formalize, verify independently, integrate (claims, ledger, coverage,
      README/FORMALIZATION), check-controls; one Codex review per item,
@@ -415,6 +434,7 @@
 | L0 | CLOSED | 2026-11-09 | Companion created and registered (verified-private at 38d1616); 23 seams packaged, 3 GaussianChaos seams withheld; manuscript anchor cf979d6 |
 | L2 | CLOSED (Le) | 2026-11-10 | Three whole results (C26, B23, B24); verified-private at 79afdde; reviews/2026-11-10-lean-wave-l2-* |
 | L3 | CLOSED (Le) | 2026-11-10 | Four items (B6, B16, B14 with a D4 slice, C22 finite slice); gate at companion dfc2fe8 over 3920258; reviews/2026-11-10-lean-wave-l3-* |
+| L4 | CLOSED (Le) | 2026-11-11 | Four items (masked spectral growth and B14 input discharge, time-Schur and masked modulation, frequency row, occupation kernel row); gate at companion ac6f767 over 3920258; reviews/2026-11-11-lean-wave-l4-* |
 
 ## New proof seams retained for later statement fences
 
