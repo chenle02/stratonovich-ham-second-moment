@@ -248,7 +248,13 @@
      informed; lean-pkg friction to lean-ops (incl. 3 new comparator points:
      open-scoped namespaces in the round-trip check, definitional-only
      round trips without a hint, bridges for copied structures).
-  7. [ ] Retro of the night's lessons into Le-AI-Lab skills.
+  7. [x] DONE (2026-11-11): retro, Le-AI-Lab 28dee02d: new skill
+     lean-pkg-comparator-tier-paper-companion; updated
+     lean-companion-junk-values-cold-audit-agent-waves (correspondence
+     finding classes; agent-wave practice), lean-pkg-receipt-binding-pitfalls
+     (end every gate with `claims ledger`), worker-output-multiple-replies
+     (reusing a command from the transcript: first match). An earlier retro
+     the same day: 909f748a.
   NOT for the night (Le's decisions): release of gaussian-chaos-lean (opens
   D1, A2, B21); investing in a D8 Sobolev/self-adjoint foundation; #3's
   recommended zero-covariance remark after H:homog and the nonzero
