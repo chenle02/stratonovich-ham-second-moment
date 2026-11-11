@@ -177,6 +177,42 @@
   0 sorry, 223 claim axioms); claims synced at f3e8275. Field reviews of
   lean-pkg proposal 0014 (declared controls) sent to lean-ops: final
   verdict ACCEPT with two fixes; acceptance is Le's.
+- **WAVE L3: PROPOSED (2026-11-10), awaiting Le's approval.** Chosen from
+  the board excluding the reserved B3, B4, B9, after three read-only
+  feasibility reconnaissances against the TeX at 3920258 with Mathlib names
+  probed by compiling scratch files (reports:
+  session scratch l3-feas-{b6-b16,d4-b14-c21,c22}.md; summarized here).
+  Four independent work items, one agent and one module each, run in
+  parallel in separate worktrees; integration, claims/ledger/coverage and
+  gates by the integrator as in wave L2.
+
+  | Item | Target (label, TeX) | Foundations built in this wave | Class (fallback) | Size |
+  |---|---|---|---|---|
+  | L3-a | B6 `L:variational-control-dilation` (integrated_unmasked_variational.tex 225-273): dilation bijection of the control class, scaling of mean, variance, rate and its integral | hand-rolled weak gradient / `H^1(R^d)` (about 40 lines; Mathlib has no Sobolev spaces), Gamma pushforward under dilation from `HomogCovariance.scaling` (already compiles in a probe) | dilation, mean, variance same-assumptions; rate and its integral defined by the manuscript's proven Rayleigh form `E:variational-real-rayleigh`, with the identifications rate = sqrt(-E_s) (`P:variational-unmasked-rate`, needs D8) and variance = E W(Psi)^2 (`L:compact-raw-profile`, needs D1) recorded as unformalized (fallback: H^1 as a named hypothesis; rate items inputs-supplied) | 12-15 theorems, 400-550 lines |
+  | L3-b | B16 `L:raw-block-indexed-cone` (integrated_raw_block_lower.tex 227-330): product lower bound along chains of nearby parameters, c_* = a_* j_*/4 | none (Banach-space algebra; compactness and operator-norm lemmas exist) | inputs-supplied: the C16 ground-family outputs (flows, eigen-relation E:compact-F-eigen, normalized complement, continuity, margins E:compact-positive-margins) as one `GroundFamily` hypothesis structure (fallback: product bound for given B, omega, eps; their existence as a separate lemma) | about 10 theorems, 450-650 lines |
+  | L3-c | B14 `P:clock-copy-obstruction` (main TeX 7553-7704, under H:homog with Gamma != 0 and a = alpha0) and the finiteness part of `L:damped-homogeneous-norms` (676-760) | first slice of D4: WaveKernel (s sinc(s|xi|), bounds, scaling, Laplace transform), TimeFractional (Gamma-integral representation of |r|^(-a), the two-time Laplace lemma, Psi_a bounds), SpectralHomog (mu{0}=0, mu(B_r)=V r^alpha, radial integration), DampedNorms (absolute integrability of N_2, which justifies Fubini directly) | inputs-supplied with ONE named input: homogeneity of the spectral measure mu(cA) = c^alpha mu(A) (stretch: derive it from Gamma's scaling via Riesz-Markov uniqueness, making B14 same-assumptions; fallback: K-side Fubini interchange supplied as a named input) | about 35 theorems, 1200-1500 lines |
+  | L3-d | C22 finite slice: `L:gaussian-trace-bounds` (integrated_compact_gaussian.tex 47-90), `P:finite-gaussian-matrix` (92-171, even p = 2m, S_p as Tr((A*A)^m)), `R:gaussian-one-variance-test` (173-187) | reusable finite Gaussian integration by parts on polynomial-growth functions (1-d from Mathlib's integration by parts and the density derivative, N-d by Fubini on Measure.pi); Mathlib has no Gaussian IBP and the registry has nothing reusable (lean-pkg search) | same-assumptions (fallback: the IBP identity for F supplied as a named input; then P:finite-gaussian-matrix inputs-supplied) | 20-30 theorems, 1000-1600 lines |
+
+  Gates per item, as in wave L2: compile and `#print axioms` (standard
+  three only), no sorry; exact-hypothesis `_paper` wrapper; refutations
+  that import the package and name negation theorems; Audit printout;
+  claims, ledger section, index, coverage rows; check-controls; fresh
+  lean-pkg receipt and re-gate; one Codex GPT-6.1-Sol correspondence
+  review per module plus a confirmation review of the repairs; Le closes
+  the gate. Stopping condition: all four items integrated and reviewed, or
+  an item at its fallback scope with the remainder recorded as a named
+  input; at most two repair rounds per item. Reusable foundations to
+  consider for extraction after review: finite Gaussian IBP (L3-d), the
+  time-fractional Laplace representation (L3-c), the weak-gradient H^1
+  (L3-a).
+  Not in L3: the deterministic C21 pieces (`P:masked-spectral-growth`,
+  E:masked-time-schur, `L:masked-temporal-modulation`, which would
+  discharge B24's supplied input; `P:frequency-row`), proposed for wave L4
+  on top of the L3-c D4 slice; the seven infinite-dimensional C22 results
+  (need Schatten classes, singular values of compact operators,
+  Courant-Fischer, torus Sobolev spaces); everything needing D1, D5 or a
+  full D8. Zero covariance: statements needing Gamma != 0 carry it
+  explicitly, as the TeX does (see #3's answer below).
 - **H:homog and zero covariance (asked #3 at Le's request; #3 answered
   2026-11-10 at Article 66117c2):** the Lean model admits Gamma = mu = 0,
   and so does the TeX, INTENTIONALLY. (a) Do not add Gamma != 0 to H:homog:
