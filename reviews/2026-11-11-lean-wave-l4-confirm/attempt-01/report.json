@@ -1,0 +1,119 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-626 \u2014 complete.",
+    "prior/MaskedSpectralGrowth-report.json:1-257 \u2014 complete.",
+    "prior/MaskedModulation-report.json:1-343 \u2014 complete.",
+    "prior/FrequencyRow-report.json:1-270 \u2014 complete.",
+    "prior/OccupationKernelRow-report.json:1-255 \u2014 complete.",
+    "candidate/statement-ledger.md:1-246,636-744,802-845,1069-1174,1364-1843,2198-2259 \u2014 complete required sections; partial remaining prose. Structural declaration/table scan covered 1-2259.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean:1-358 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/TimeFractional.lean:1-443 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/SpectralHomog.lean:1-318 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/DampedNorms.lean:1-372 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/ClockCopy.lean:1-779 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/GaussianTest.lean:1-207 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean:1-519 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean:1-88 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/TimeSchur.lean:1-332 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedModulation.lean:1-1135 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/FrequencyRow.lean:1-803 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean:1-448 \u2014 complete.",
+    "lean/claims.yaml:3939-5114 \u2014 complete relevant summaries; partial remaining summaries. Structural declaration/kind scan covered 1-5114.",
+    "lean/coverage.yaml:1-546 \u2014 complete.",
+    "manuscript/notes/integrated_covariance_foundation.tex:1-428 \u2014 complete.",
+    "manuscript/notes/integrated_wave_variance.tex:1-170 \u2014 partial file; complete required range.",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-320 \u2014 partial file; complete required range.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:145-216,640-760,4505-4535,7480-7710 \u2014 partial file; complete required ranges."
+  ],
+  "checks": [
+    {
+      "claim": "MaskedSpectralGrowth-W1",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:1640 now states the existential conclusion and separately identifies the proof witnesses. This matches GaussianTest.lean:142-150 and lean/claims.yaml:4003-4009. integrated_covariance_foundation.tex:65-66 only invokes the Schwartz test; the auxiliary classification remains appropriate."
+    },
+    {
+      "claim": "MaskedSpectralGrowth-W2",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:219 now includes all three homogeneity declarations, matching their rows at :1654-1656. MaskedSpectralGrowth.lean:230-233,301-317 supports these statements; main TeX:4522-4525 gives both pushforward and set-scaling forms. lean/claims.yaml:4102-4122 and lean/coverage.yaml:70-88 remain consistent."
+    },
+    {
+      "claim": "MaskedModulation-W1",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:239 enumerates all 40 previously omitted auxiliaries; the section has 57 distinct declaration rows. Its :175 explicitly marks the two L-labelled bounds as secondary cross-references. TimeSchur.lean:236-237 and MaskedModulation.lean:332-338 support representative auxiliary entries; integrated_covariance_foundation.tex:331-342 uses integration by parts rather than the shift route."
+    },
+    {
+      "claim": "MaskedModulation-W2",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:1748 now explicitly limits the supplied hmod statement to MaskedTrigProducts and identifies the proved integral bound and bridged transfer. This matches MaskedTrigProducts.lean:339-356, MaskedModulation.lean:1081-1094,1111-1133 and integrated_covariance_foundation.tex:303-308."
+    },
+    {
+      "claim": "FrequencyRow-W1",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:1140-1141 removes the stale doc-comment descriptions and cites the actual proof steps. FrequencyRow.lean:114-117,139-143 agrees with integrated_wave_variance.tex:84-87,107. The summaries at lean/claims.yaml:4690,4697 remain accurate."
+    },
+    {
+      "claim": "FrequencyRow-W2",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:1138 explicitly retains ofReal in both growth bounds and explains negative-value truncation; :1157 retains it in the shell estimate. These agree with FrequencyRow.lean:181-207 and lean/claims.yaml:4676,4809. The manuscript instead assumes C >= 0 at integrated_wave_variance.tex:25-31, so its specialization is unchanged."
+    },
+    {
+      "claim": "OccupationKernelRow-W1",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:233,235,237-238 now assigns row and Rstar to E:occupation-kernel-row and pairing to E:spatial-physical-pair, matching rows :1817-1818,1839. OccupationKernelRow.lean:98-101,370-371 agrees with integrated_spatial_occupation.tex:15-17,295-298. All 28 distinct declarations remain indexed."
+    },
+    {
+      "claim": "OccupationKernelRow-W2",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:1809-1811 expressly distinguishes integrable real-valued kernel conclusions from the possibly infinite physical pairing; Scope :89-93 also excludes extended nonnegative integrals from the finiteness claim. This agrees with OccupationKernelRow.lean:306-315,370-371,409-418 and integrated_spatial_occupation.tex:18-21."
+    },
+    {
+      "claim": "RESCAN-MaskedSpectralGrowth",
+      "verdict": "PASS",
+      "reason": "All 39 rows at candidate/statement-ledger.md:1631-1669 were checked against the three complete modules. Gaussian constants and modulation signs match integrated_covariance_foundation.tex:37-75. Standalone totalized identities, integrability premises, arbitrary exponents and alternative uniqueness auxiliaries are disclosed. ClockCopyHomog.lean:53-86 supports the no-supplied-input wrappers; main TeX:677-679,7555-7575 supports their qualified conclusions."
+    },
+    {
+      "claim": "RESCAN-MaskedModulation",
+      "verdict": "PASS",
+      "reason": "All 57 rows at candidate/statement-ledger.md:1471-1527 were checked against TimeSchur and MaskedModulation. The constants 2T^(1-a)/(1-a) and 16/(1-a), amplitude hypotheses and supplied completion interface agree with Lean :306-330 and :1081-1133 respectively, and integrated_covariance_foundation.tex:141-179,300-375. Shift-route helpers are not attributed to the manuscript's integration-by-parts proof."
+    },
+    {
+      "claim": "RESCAN-FrequencyRow",
+      "verdict": "PASS",
+      "reason": "All 43 rows at candidate/statement-ledger.md:1130-1172 were checked against FrequencyRow.lean:1-803. The extended-integral definitions, dimension-independent constant order, strict paper parameter ranges, integrability and time estimate match integrated_wave_variance.tex:5-53,118-163. Changed near/far shell bookkeeping is explicitly identified as a Lean-route construction."
+    },
+    {
+      "claim": "RESCAN-OccupationKernelRow",
+      "verdict": "PASS",
+      "reason": "All 28 rows at candidate/statement-ledger.md:1815-1842 were checked against OccupationKernelRow.lean:1-448. Gamma normalization, D dependence, zero convention, nine kernel conjuncts and attained row maximum match integrated_spatial_occupation.tex:282-309. The pairing results correctly retain extended values and describe the N-indexed real convergence conjunct without asserting finite integrability."
+    },
+    {
+      "claim": "LEDGER-TOTALS",
+      "verdict": "PASS",
+      "reason": "A structural scan of every per-module table and all lean/claims.yaml declaration/kind fields found 724 distinct matching declarations, each with exactly one ledger row: 611 theorems and 113 definitions, with 419 labelled and 305 unlabelled. Every declaration row has exactly four cells when escaped pipes are respected. These counts agree with candidate/statement-ledger.md:20-25,243-244."
+    },
+    {
+      "claim": "NO-REGRESSION",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Scope, coverage classifications, ClockCopy cross-references, MaskedTrigProducts transfer and Not-in-Lean exclusions remain consistent with the reviewed declarations and TeX: candidate/statement-ledger.md:61-93,660-699,1692-1725,2221-2259; lean/coverage.yaml:70-88,180-226,292-302,359-382,399-456. Only harmless redundant indexing remains at ledger :236,240; see C1."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "C1 \u2014 Redundant OccupationKernelRow auxiliary index group. candidate/statement-ledger.md:240 repeats the six internal helpers already enumerated at :236, without changing their correct 'no direct label' classification. For example, OccupationKernelRow.lean:150-151 states 'Psi a r' (r'/D) < Psi a r (r/D)', whereas integrated_spatial_occupation.tex:303 says monotonicity follows 'directly from the integrand'; the auxiliary mapping is appropriate in both entries. Optional exact cleanup: delete index row :240 and retain :236, which also includes Kstar_intervalIntegrable. Declaration-table totals are unaffected."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "All complete-reading requirement A sections and ranges were read; no required-range gap remains.",
+    "Outside the reported full-text ledger and claims ranges, review was structural only. Unrelated prose and summaries were not substantively reviewed.",
+    "Unreviewed manuscript portions include integrated_wave_variance.tex:171-531, integrated_spatial_occupation.tex:321-379 and main-file material outside the listed ranges.",
+    "Proof correctness and compilation were outside scope. Historical revision equivalence and provenance hashes were not independently verified.",
+    "This AI correspondence review is neither human verification nor a novelty audit."
+  ]
+}
