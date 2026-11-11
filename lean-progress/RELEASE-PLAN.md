@@ -6,6 +6,15 @@ addendum. Nothing on GitHub or Zenodo happens before Le's explicit go
 (planned Nov 29-30); the release candidate needs Le's approval after the
 independent audit (Nov 26).
 
+## HOLD (Le, 2026-11-11, relayed verbatim by #16): "do not turn public yet"
+
+No public step for the companion until Le explicitly says otherwise: no
+GitHub repository rename or creation, no visibility change, no push to a new
+public repository, no Zenodo action. Private preparation of the release
+candidate (scrub, receipts, audit) is unaffected. #16 confirmed on
+2026-11-11 that the companion is PRIVATE and the main repository does not
+exist on GitHub.
+
 ## Le's decisions (2026-11-11, relayed verbatim by #16)
 
 > "Approve #22's companion plan: rename to a private -dev repo and publish a
