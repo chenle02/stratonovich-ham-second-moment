@@ -414,8 +414,10 @@
   approved statement change gets the usual correspondence check. Lean
   consequence: whole results whose statements need Gamma != 0 must carry
   it as an explicit hypothesis (as P:clock-copy-obstruction does).
-- **975feb3 re-anchor and H:homog re-check (2026-11-11; done, Le's
-  acceptance pending):** at Le's request #3 committed the zero-covariance
+- **975feb3 RE-ANCHOR: CLOSED (Le, 2026-11-11)** at companion d40f394
+  over manuscript 975feb3: Le accepted the narrow Codex re-check of the
+  H:homog rows (attempt v2, PASS/high) as closing it; recorded in the
+  companion README at 3a7d57f; #3 and #24 told. Record: at Le's request #3 committed the zero-covariance
   remark after H:homog (main TeX 209-214) and the Gamma != 0 qualification
   of T:first's strict comparison (426-432) at Article 975feb3.
   - Re-anchor (companion c308c82 docs, d9e5ce9 comment/summary line
@@ -447,7 +449,7 @@
     Easley replays not repeated: the Lean sources differ from 2f5ee14 only
     in doc comments. Article commits after 975feb3 (to f4cd8d4) touch only
     preface/Appendix E files, none cited.
-  - Open: Le's acceptance of the re-check; lean-pkg `coverage check NAME`
+  - Open: lean-pkg `coverage check NAME`
     reports 487 comparator theorems named by no coverage row (rule R10/R11
     for a rendered scope page; pre-existing since the comparator tier, the
     offline check skips it; gate and ledger unaffected), sent to lean-ops.
