@@ -18647,3 +18647,18 @@ tk-20261110-185222-codex-stratonovich-rytov is now done/gold, with canonical
 key sung.choi.ea:09:optical, verify-digest PASS, lint clean and wiki commit
 90bc0ae7. Its receipt does not complete the newly requested four-page update.
 Details are in private/audit/2026-11-10-universality-outlook/QUEUE-RECORD.json.
+
+## 2026-11-10: zero-covariance hypothesis audit for Agent22
+
+H:homog intentionally permits Gamma=mu=0; the main theorems treat the free
+canonical solution u=1 and zero logarithmic moment rates. E:kappa and
+E:driver-parameters are parameter statements and require no covariance
+nontriviality. Strict positive-rate, variance, spectral-binding and spatial
+energy conclusions have explicit or section-level nonzero hypotheses. The
+source-quotation T:first needs its strict energy-gap wording scoped to nonzero
+covariance; this is not a reason to strengthen H:homog globally. No TeX/Lean
+statement changed. Recommendations and label audit are in
+private/audit/2026-11-10-zero-covariance/AUDIT.md; reply delivered to Agent22
+as b2e2cb4d40b4. Adding a front zero-case remark is left to Le's manuscript
+decision. Nontrivial covariance is distinct from strictly positive-definite
+Gram matrices; existing null-space conventions remain.
