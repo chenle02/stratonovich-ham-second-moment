@@ -213,6 +213,18 @@
   Courant-Fischer, torus Sobolev spaces); everything needing D1, D5 or a
   full D8. Zero covariance: statements needing Gamma != 0 carry it
   explicitly, as the TeX does (see #3's answer below).
+- **Easley external kernel replay (2026-11-10): PASS 35/35** at companion
+  837778a (the wave-L2 library; sources byte-identical through 64070a7):
+  every module and the umbrella replayed by its own `lake env leanchecker
+  --fresh` run (exit 0, empty output), which re-checks every imported
+  Mathlib declaration too. Jobs 5685763 (pilot), 5685781 (all targets, 6
+  in parallel), 5688166 and 5688359 (reruns); six runs first died after
+  about 7 s with "Too many open files in system" (about 65-72k open files
+  per --fresh run; six in parallel reached the node limit), an environment
+  failure, and passed when run one at a time. About 10.9 h single-thread;
+  peak 7.7 GB. Evidence: companion 687e631,
+  verification/leanchecker-easley-2026-11-10/ (HPC username redacted).
+  Not covered: the wave-L3 modules (need a new replay).
 - **H:homog and zero covariance (asked #3 at Le's request; #3 answered
   2026-11-10 at Article 66117c2):** the Lean model admits Gamma = mu = 0,
   and so does the TeX, INTENTIONALLY. (a) Do not add Gamma != 0 to H:homog:
