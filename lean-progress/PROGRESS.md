@@ -181,7 +181,17 @@
   systematically complete all of them autonomously overnight").** Read as
   approval to RUN wave L4 as proposed below; every gate (L4 correspondence)
   stays Le's to close. Order and status (updated as items complete):
-  1. [ ] Comparator tier at one commit with the lower tier: refresh branch
+  1. [x] DONE (2026-11-10 23:58): comparator tier merged (companion
+     4073c64: comparator.json with 470 theorem_names, Challenge/Solution,
+     ChallengeDefs, scripts/comparator/; CheckFidelity: 470/470 Challenge
+     types and 717 copied constants Expr-equal, 0 problems). Comparator
+     receipt (toolchain, pass, all 470 judged, about 7 min) and lower-tier
+     receipt (fresh build, 0 sorry, 557 claim axioms, peak 7.0 GiB) both at
+     4073c64, committed at 646e164; gated verified-private
+     e2903a6 -> 4073c64 WITH comparator evidence; claims synced at 646e164;
+     `lean-pkg claims ledger`: READY, 430 required, 550 verified, 0 open,
+     7 out-of-scope. No claim rejected.
+     (Original item:) Comparator tier at one commit with the lower tier: refresh branch
      comparator-tier onto main, merge into main, `lean-pkg receipt
      comparator` and `receipt systemd --memory-max 12G` at the same commit,
      `gate --receipt R --comparator C --regate`, `claims sync`, `claims
