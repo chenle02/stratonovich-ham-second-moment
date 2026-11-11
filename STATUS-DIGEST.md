@@ -1,15 +1,23 @@
 # STATUS DIGEST — read this first, then the tail of Progress.md
 
 Current editorial edition (November 11): **329-page book and 29-page reader**.
-All eleven chapters and four appendices have motivation, linked prerequisites
-and an outline. Section 1.5 states the two existing results as Theorems 1.5.1
-and 1.5.2, with links to their unchanged proofs. All 215 proof bodies are
+All eleven chapters and the four mathematical appendices have motivation,
+linked prerequisites and an outline. Section 1.5 states the two existing
+results as Theorems 1.5.1 and 1.5.2, with links to their unchanged proofs. All 215 proof bodies are
 preserved; 95 technical labels and 264 reader links pass. This presentation
 update does not clear the independent review gates below. Older page counts
 in dated entries describe their historical editions. Exact current pins:
 notes/figures/VALIDATION.json.
 
 Section 1.6 now discusses higher even moments as future work.
+
+November 10/11 (editorial, no mathematical change): the preface now explains
+how the book was made with Amy, Le's AI research system, and cites Proofs and
+Prompts posts as [P1]-[P11] outside the bibliography. New Appendix E, "The AI
+work in numbers" (pp. 300-302): 498 review runs by model family, token totals,
+the timeline, and 42 recorded no-gos; every number is rebuilt by
+scripts/ai-statistics/. Details and open items: the 2026-11-10/11 entry at the
+end of Progress.md.
 
 State as of the November 9 literature revision (baseline `3a94ff9` plus
 Agent #16's Lean-header correction `037caa6`); Lean row updated from Agent
