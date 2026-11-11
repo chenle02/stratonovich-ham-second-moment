@@ -18832,3 +18832,14 @@ through the commit map, and will run milestones.json through the real filter.
 Records, not recollection, set the dates: the intrinsic variational constant
 was integrated on November 1 (a880288), not November 3. No mathematical change;
 clean build (0 errors, 0 undefined references, 0 overfull boxes), 329 pages.
+
+## 2026-11-11: funding acknowledgement
+
+At Le's request, added Acknowledgements to the Preface: NSF Grant DMS-2246850,
+NSF CAREER Grant DMS-2443823, and OpenAI's provision of AI-tool access through
+the ChatGPT for Academic Researchers program. Grant numbers and program wording
+follow Le_Chen_Publications/45 and /46; the CAREER designation appears in /45.
+No additional funder was inferred. The other session's Appendix E update was
+committed first (efe7fe5); its unfinished files were not included in this edit.
+Both PDFs build cleanly;215proof bodies preserved and264reader links valid.
+Acknowledgement inspected on printed p.iv. The pair remains329+29pages.
