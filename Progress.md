@@ -18974,3 +18974,17 @@ back-matter order is Bibliography, List of notation (printed311--316), Subject
 index (starts317). Contents entry and definition links retained. Updated the
 book guide and integration instructions. Clean335-page build;215proofs preserved,
 371index records and264reader targets checked. Opening pages visually inspected.
+
+## 2026-11-11: Auburn affiliation and title-page design
+
+At Le's request, redesigned the cover with a left-aligned blue title, separate
+noise/regime subtitle, clear author block and restrained rules. Added Department
+of Mathematics and Statistics, Auburn University, matching Le's current author
+block in Le_Chen_Publications/45. The cover remains one page; page label Cover
+and manuscript-status/date are retained. Render inspected and retained in
+private/audit/2026-11-11-auburn-cover/. Clean335-page build;215proof bodies,
+371index entries and264reader links checked. No mathematical change.
+
+The requested session retrospective is separately committed in Le-AI-Lab at
+fb8c79e4: three existing skills plus theory-retro updated;3/3skill gates, runtime
+sync/search and strict Codex budget passed. Lab and <HUB> synchronized.
