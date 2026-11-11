@@ -9,4 +9,7 @@ Galileo and Huygens:
 - `huygens-1659-systema-saturnium.jpg`: Huygens, *Systema Saturnium* (1659),
   page 55. Scan: Smithsonian Institution Libraries.
 
+`galileo-1610-medicean-stars.jpg` is a JPEG copy of the PNG (same pixels,
+quality 90) used in the PDF to keep it small; the PNG is the reference copy.
+
 Sources, licence tags and SHA-256 hashes are in `PROVENANCE.json`.
