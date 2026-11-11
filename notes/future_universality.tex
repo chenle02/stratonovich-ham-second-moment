@@ -1,0 +1,64 @@
+\subsection{Logarithmic wavefields and possible scaling limits}
+\label{S:future-universality}
+
+A logarithmic change of variables provides another way to view random wave
+propagation. This idea has classical precedents in the Rytov transformation,
+which represents a complex wavefield through its logarithmic amplitude and
+phase. For example, Sung et al.~\cite{sung:source2009:optical}*{Section~2}
+substitute $U=e^\psi$ into a Helmholtz equation before applying a
+weak-scattering approximation. The substitution and the subsequent
+approximation are distinct steps. That frequency-domain setting does not
+supply a scaling limit for the time-dependent model considered here.
+
+For the smooth equation $u_{tt}=\Delta u+Vu$, set $h=\log|u|$ on a region where
+$u$ is nonzero. The ordinary chain rule gives
+\begin{equation}\label{E:future-log-wave}
+  h_{tt}+(h_t)^2=\Delta h+|\nabla h|^2+V.
+\end{equation}
+Thus, the logarithmic wave equation retains both a second time derivative and
+a quadratic temporal derivative. In the stochastic model, this calculation
+applies first to smooth noise approximations. Passing through zeros or to the
+singular-noise limit requires a separate argument; we do not assert a global
+logarithmic equation for the canonical solution.
+
+A possible mechanism for an effective first-order time evolution can be seen
+formally by writing $h=b(t)+\varphi$, where $b$ is a smooth deterministic
+centering. Then
+\begin{equation}\label{E:future-centered-log-wave}
+  \varphi_{tt}+2b'(t)\varphi_t+(\varphi_t)^2
+  =\Delta\varphi+|\nabla\varphi|^2+V-b''(t)-(b'(t))^2.
+\end{equation}
+If $b'$ approached a positive constant and the other temporal terms on the
+left became negligible on a fluctuation scale, the term $2b'\varphi_t$ could
+produce an effective parabolic evolution. Neither condition follows from
+moment growth. In particular, logarithmic moments need not give the typical
+centering, and the long temporal memory of the noise must still be accounted
+for. This is a heuristic mechanism to investigate.
+
+The ordinary one-dimensional KPZ comparison concerns the centered logarithm
+of the positive stochastic heat solution. Its height, space and time scaling
+exponents have ratio $1:2:3$; convergence to the KPZ fixed point is a statement about
+random fields and their evolution~\cite{wu:source2026:kpz}*{Theorems~1.6 and~1.8}. The moment normalization
+in the present wave problem controls rare amplification. It does not identify
+the typical fluctuation size or spatial correlation length. The cubic
+upper-tail prediction in the spatial-white case also gives no evidence by
+itself for KPZ behavior: the usual KPZ upper-tail power is $3/2$, while a
+cubic power appears in a lower-tail regime~\cite{corwin.ghosal:20:kpz}.
+Different rare-event scales do not, by themselves, exclude a common limit in
+another centered fluctuation regime.
+
+The open question is whether a specified logarithmic amplitude observable
+$H$ admits deterministic functions $b$, $S$ and $L$ for which
+\[
+  \frac{H(Tt,L(T)x)-b(Tt)}{S(T)}
+\]
+converges to a nondegenerate random field as $T\to\infty$. A logarithm of a
+local spatial $L^2$ amplitude is one possible observable that reduces
+sensitivity to isolated pointwise zeros. It can itself vanish, so its domain
+must also be specified; it differs from $\log|u|$. The scales and topology must
+be specified, and a claim of universality would require stability under
+changes of regularization and microscopic covariance details. Temporal
+correlations and sensitivity to the initial velocity would help determine
+whether a scalar amplitude describes the limiting evolution or whether
+additional variables remain necessary. We leave this as an exploratory
+question, without prescribing exponents or a new universality class.

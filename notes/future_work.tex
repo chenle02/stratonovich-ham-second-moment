@@ -1,12 +1,13 @@
 \section{Future work}\label{S:future-work}
 
-The second-moment argument suggests several questions about higher moments.
-We discuss them here as possible extensions. The results of this manuscript
-concern the second moment; the proposed limits below require further proof.
+The second-moment argument suggests questions about higher moments, optimizing
+controls and scaling limits. The following subsections separate precise
+conjectures, conditional consequences and exploratory questions. The proposed
+extensions require further proof.
 We retain Hypothesis~\ref{H:homog}, the initial data $(1,0)$ and the exponent
 $\kappa$ from~\eqref{E:kappa}.
 
-\paragraph{Higher even moments.}
+\subsection{Higher moments and pointwise estimates}\label{S:future-higher-moments}
 \begin{conjecture}[Higher even-moment asymptotics]
   \label{Conj:intrinsic-even-moments}
   Under Hypothesis~\ref{H:homog}, let $u$ be the canonical Stratonovich
@@ -46,7 +47,65 @@ extensions with coefficient $p$. Higher-moment convergence, uniform
 integrability and the comparison with the original point observable must
 still be justified.
 
-\paragraph{Real orders and sharp upper tails.}
+\paragraph{Point moments and spatial regularity.}
+The main obstacle in the present upper-bound method occurs in
+Proposition~\ref{P:original-point-transfer}. Stationarity and finite
+propagation identify the pointwise second moment with an expected spatial
+$L^2$ norm. The displacement component of the wave phase controls this norm.
+For a $p$th moment, the corresponding argument would require a spatial $L^p$
+bound. Taking a higher power of an $L^2$ bound does not supply it.
+
+The existing displacement space is $H^{1/2}(\R^d)$. Its embeddings into
+$L^p$ on a fixed ball give the ranges in Table~\ref{Tab:future-moments};
+see~\cite{di-nezza.palatucci.ea:12:hitchhikers}*{Section~6}.
+The table describes the present proof method. The conjecture covers every
+admissible dimension, including orders beyond these embedding ranges.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Higher moments through the current wave phase. The Sobolev ranges
+    are known; the proposed moment extensions still require proof.}
+  \label{Tab:future-moments}
+  \begin{tabular}{@{}p{0.07\textwidth}p{0.15\textwidth}p{0.20\textwidth}p{0.45\textwidth}@{}}
+    \toprule
+    $d$ & Available $L^p$ range & First target & Remaining step \\
+    \midrule
+    $1$ & $2 \le p < \infty$ & $p = 4$, then fixed even $p$ &
+    Higher-moment source limits and point comparison; matching Gaussian upper
+    and shifted lower bounds. \\[6pt]
+    $2$ & $2 \le p \le 4$ & $p = 4$ &
+    The same probabilistic steps at the critical embedding exponent. Larger
+    even orders need additional spatial control. \\[6pt]
+    $3$ & $2 \le p \le 3$ & A point estimate for $p = 4$ &
+    A new comparison or stronger spatial estimates before applying the
+    higher-moment Gaussian argument. \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The failure of this embedding route at a higher order is not a nonexistence
+statement for the moment. Any stronger spatial estimate must be proved under
+the original covariance assumptions. Even within the displayed ranges,
+the embedding alone does not establish the conjectured limit.
+
+\paragraph{A first test and further questions.}
+The fourth moment in one spatial dimension is a useful first test. One would
+first establish the fourth-moment point comparison and the required source
+limits. The Gaussian upper argument would then need to control the fourth
+power of the evolution norm, with bounds uniform in the growing spatial
+radius. Matching this bound with the shifted lower estimate would test the
+prediction $C_4 = 2^{(4-\alpha)/(3-\alpha)}C_2$. The validity of the Sobolev
+embedding alone does not complete these steps.
+
+Even a proof for every fixed even $p$ would leave two separate questions:
+absolute moments of other orders, and estimates uniform as $p\to\infty$.
+Interpolation between adjacent even moments need not identify the exact
+constant at an intermediate order. Uniform large-$p$ estimates also require
+tracking the dependence on $p$ throughout the construction, source limits and
+Gaussian tail bounds. These questions may clarify which parts of the present
+method apply to moment growth beyond the second moment.
+
+\subsection{Real orders and upper-tail deviations}\label{S:future-real-orders}
 A stronger question is whether~\eqref{E:future-even-moments} holds for every
 fixed real $p \ge 1$. The variational homogeneity allows real coefficients,
 and the Gaussian change of measure applies to absolute powers. However, the
@@ -107,62 +166,6 @@ $\mathcal{I}(z)=32z^3/(27C_2^2)$; with real orders only above one, its stated
 range is $z\ge3C_2/(4\sqrt2)$. The time speed and $C_2$ still depend on the
 temporal covariance.
 
-\paragraph{Point moments and spatial regularity.}
-The main obstacle in the present upper-bound method occurs in
-Proposition~\ref{P:original-point-transfer}. Stationarity and finite
-propagation identify the pointwise second moment with an expected spatial
-$L^2$ norm. The displacement component of the wave phase controls this norm.
-For a $p$th moment, the corresponding argument would require a spatial $L^p$
-bound. Taking a higher power of an $L^2$ bound does not supply it.
-
-The existing displacement space is $H^{1/2}(\R^d)$. Its embeddings into
-$L^p$ on a fixed ball give the ranges in Table~\ref{Tab:future-moments};
-see~\cite{di-nezza.palatucci.ea:12:hitchhikers}*{Section~6}.
-The table describes the present proof method. The conjecture covers every
-admissible dimension, including orders beyond these embedding ranges.
-
-\begin{table}[htbp]
-  \centering
-  \caption{Higher moments through the current wave phase. The Sobolev ranges
-    are known; the proposed moment extensions still require proof.}
-  \label{Tab:future-moments}
-  \begin{tabular}{@{}p{0.07\textwidth}p{0.15\textwidth}p{0.20\textwidth}p{0.45\textwidth}@{}}
-    \toprule
-    $d$ & Available $L^p$ range & First target & Remaining step \\
-    \midrule
-    $1$ & $2 \le p < \infty$ & $p = 4$, then fixed even $p$ &
-    Higher-moment source limits and point comparison; matching Gaussian upper
-    and shifted lower bounds. \\[6pt]
-    $2$ & $2 \le p \le 4$ & $p = 4$ &
-    The same probabilistic steps at the critical embedding exponent. Larger
-    even orders need additional spatial control. \\[6pt]
-    $3$ & $2 \le p \le 3$ & A point estimate for $p = 4$ &
-    A new comparison or stronger spatial estimates before applying the
-    higher-moment Gaussian argument. \\
-    \bottomrule
-  \end{tabular}
-\end{table}
-
-The failure of this embedding route at a higher order is not a nonexistence
-statement for the moment. Any stronger spatial estimate must be proved under
-the original covariance assumptions. Even within the displayed ranges,
-the embedding alone does not establish the conjectured limit.
-
-\paragraph{A first test and further questions.}
-The fourth moment in one spatial dimension is a useful first test. One would
-first establish the fourth-moment point comparison and the required source
-limits. The Gaussian upper argument would then need to control the fourth
-power of the evolution norm, with bounds uniform in the growing spatial
-radius. Matching this bound with the shifted lower estimate would test the
-prediction $C_4 = 2^{(4-\alpha)/(3-\alpha)}C_2$. The validity of the Sobolev
-embedding alone does not complete these steps.
-
-Even a proof for every fixed even $p$ would leave two separate questions:
-absolute moments of other orders, and estimates uniform as $p\to\infty$.
-Interpolation between adjacent even moments need not identify the exact
-constant at an intermediate order. Uniform large-$p$ estimates also require
-tracking the dependence on $p$ throughout the construction, source limits and
-Gaussian tail bounds. These questions may clarify which parts of the present
-method apply to moment growth beyond the second moment.
-
 \input{notes/future_optimizers}
+
+\input{notes/future_universality}

@@ -18611,3 +18611,29 @@ private/audit/2026-11-10-rytov-prior-art/ASSESSMENT.md. Missing Sung2009 and
 Jordan2010 references were queued as tk-20261110-185222-codex-stratonovich-rytov
 and tk-20261110-185223-codex-stratonovich-rytov; full Jordan source remains
 unread. No manuscript or scientific acceptance change.
+
+## 2026-11-10: sourced universality outlook and published Wu edition
+
+At Le's request, organized Section1.6 into five subsections and added the
+Rytov/logarithmic-wave discussion as an exploratory outlook. No fixed-point
+claim or fluctuation exponent is conjectured. The smooth nonzero-region
+identity and centered formal damping mechanism retain their limitations.
+Reader/report references and navigation were rebuilt; report307pages, reader28.
+All215 existing proof bodies are preserved;82label mappings and250external
+links pass. The new subsection's rendered pages were inspected.
+
+Le supplied Wu's published AOP paper:2026,54(3),1212–1257, DOI25-AOP1788,
+MR5061894. Published PDF identity/rendered statements were checked and the
+report now cites that edition. The six-repository record's preprint metadata
+and PDF require repair, so the supplied source is queued under
+tk-20261110-190918-codex-stratonovich-wu-publication with --repair. Local
+source bibliography keys keep accurate published metadata without editing
+All.bib or guessing the queue's final canonical key. Digestion is pending.
+
+Le also authorized feeding the discussion back to SPDEs-wiki. A read-only
+canonical inspection and subagent scope review identify four content pages
+(project, stochastic-wave-equation, cole-hopf-transform, kpz-universality).
+The large-deviations page already covers the restricted-order boundary and
+will not be duplicated. The queue packet is under
+private/audit/2026-11-10-universality-outlook/; publication requires the
+canonical writer's receipt. No direct wiki-content edit was performed.
