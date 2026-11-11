@@ -5,7 +5,7 @@ remains an article and the entry point. Both retain their existing filenames.
 The book has **335 pages, 11 chapters and six appendices** (four
 mathematical appendices; Appendix E, the AI work in numbers; and Appendix F,
 what Lean checks); the reader
-has **29 pages**. The full pair therefore contains 364 pages.
+has **28 pages**. The full pair therefore contains 363 pages.
 
 The main proof runs continuously through the numbered chapters. The appendices
 retain finite-order calculations, direct bounds with additional hypotheses,

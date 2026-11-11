@@ -1,11 +1,11 @@
 # Reading edition with the current technical companion
 
-Read [the 29-page reader](notes_stratonovich_ham_second_moment_reader.pdf)
+Read [the 28-page reader](notes_stratonovich_ham_second_moment_reader.pdf)
 with [the 335-page technical companion](notes_stratonovich_ham_second_moment.pdf).
 The reader introduces the model, proposed result and variational constant,
 explains how the main steps fit together, and links to the detailed proofs.
 It is a guided route through the work, not a standalone short proof.
-The combined record is 364 pages; no total-proof-length reduction is claimed.
+The combined record is 363 pages; no total-proof-length reduction is claimed.
 
 This November 9 revision matches the current **unadopted mathematical candidate**.
 It updates the literature and contribution discussion, mentions the three
@@ -39,7 +39,7 @@ figure sources. It uses fixed reader placement so a diagram follows the full
 statement or definition it explains. Both the figure sources/captions and all
 rendered diagram pages were reviewed. The complete figure set appears in the
 technical companion. See [the figure guide](figures/README.md). The earlier
-20-page reading editions remain historical; the current reader has 29 pages.
+20-page reading editions remain historical; the current reader has 28 pages.
 
 The technical companion is now a book with 11 chapters and 6 appendices (the
 last two give the AI work in numbers and what Lean checks). The
@@ -55,7 +55,7 @@ editions begin with a short history from Walsh's lectures to moment asymptotics.
 The reader now uses the report's Latin Modern fonts and blue/teal palette.
 Its literature comparison shares the report's vector drawing, including the
 covariance sketches and separate contribution band. All ten figures were
-inspected at their final page positions; the reading edition is 29 pages.
+inspected at their final page positions; the reading edition is 28 pages.
 
 The proof-map nodes now link directly to chapters and key results in the
 technical companion. Rebuild its external map with

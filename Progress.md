@@ -18947,3 +18947,14 @@ The one-page Abstract (printed p.vi) was visually inspected. Clean paired builds
 215preserved proof bodies,95mapped labels,264valid reader links and371checked
 index entries. Pages335+29 unchanged. Evidence:
 private/audit/2026-11-11-abstract-main-result/.
+
+## 2026-11-11: fit the guitar illustration on the opening page
+
+Le asked to remove the large blank area between printed pages1and2. Reduced
+the shared wrapped guitar from42%to36%of text width and shortened its caption,
+retaining AI-art attribution, SPDE-Visuals and CC0/public-domain links. Reduced
+the report's page-space reservation from68%to44%of text height. Figure1.1 now
+fits completely on page1 with its caption and opening prose. The rounded fade
+is unchanged. Inspected the report spread and reader page3. Both builds clean,
+215proofs preserved,95reader labels and264links valid,371index records checked.
+Book335pages; reader28. Evidence: private/audit/2026-11-11-guitar-first-page/.
