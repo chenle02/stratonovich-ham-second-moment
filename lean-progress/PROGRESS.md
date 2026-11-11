@@ -377,7 +377,9 @@
   D8 H^(1/2) x H^(-1/2) duality, H_a-valued Bochner integrals; only its
   continuous-sine-quotient item exists, `WaveKernel.waveHat_zero`); B5,
   C3, C20, E3 (need D5, D8 or D1). B3, B4, B9 stay reserved.
-- **WAVE L5: PROPOSED (2026-11-11), for Le's approval.** From the board
+- **WAVE L5: APPROVED by Le (2026-11-11) as proposed, with the default
+  answers to the three decisions; OPENED** (six items launched in parallel
+  worktrees, branches wave-l5/a..f off companion main 3a7d57f). From the board
   (companion branch docs/community), excluding the reserved B3, B4, B9.
   Three read-only feasibility reconnaissances against the TeX at 975feb3,
   every Mathlib name probed by compiling scratch files against the
@@ -562,7 +564,7 @@
 | L2 | CLOSED (Le) | 2026-11-10 | Three whole results (C26, B23, B24); verified-private at 79afdde; reviews/2026-11-10-lean-wave-l2-* |
 | L3 | CLOSED (Le) | 2026-11-10 | Four items (B6, B16, B14 with a D4 slice, C22 finite slice); gate at companion dfc2fe8 over 3920258; reviews/2026-11-10-lean-wave-l3-* |
 | L4 | CLOSED (Le) | 2026-11-11 | Four items (masked spectral growth and B14 input discharge, time-Schur and masked modulation, frequency row, occupation kernel row); gate at companion ac6f767 over 3920258; reviews/2026-11-11-lean-wave-l4-* |
-| L5 | PROPOSED | 2026-11-11 | Six items (H_a completion with B24 at same assumptions, masked continuous wave, masked auxiliary norm, rest of the damped-norm lemma, heat envelope and global mean, phase Bessel); awaiting Le's approval |
+| L5 | OPEN (approved by Le) | 2026-11-11 | Six items (H_a completion with B24 at same assumptions, masked continuous wave, masked auxiliary norm, rest of the damped-norm lemma, heat envelope and global mean, phase Bessel); defaults for the three decisions |
 
 ## New proof seams retained for later statement fences
 
