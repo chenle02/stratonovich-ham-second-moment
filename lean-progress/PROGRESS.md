@@ -237,7 +237,14 @@
      (Original item:) After L4: lean-pkg receipts of both tiers at one commit again
      (comparator regenerated for the new claims), regate, claims ledger.
   5. [ ] Easley `leanchecker --fresh` replay of the wave-L4 modules.
-  6. [ ] Community board (docs/community) updated for L4; #16 and #3
+  6. [x] DONE (2026-11-11): board docs/community 25e63c5 (B14 now nothing
+     supplied, B24 input narrowed, C19 and C21 partial, D4 slice) and
+     81bfb25/6ed4ae4 (wave-L3 rows and paragraph record the closed L3
+     gate); companion README 4a66a69 (L4 reviewed, acceptance pending);
+     #3 informed, #16 queued; lean-ops: comparator frictions 8-10 and 11-13
+     sent and triaged (folded into the copied-definitions/fidelity
+     proposal; pp.explicit retry proposed to Le).
+     (Original item:) Community board (docs/community) updated for L4; #16 and #3
      informed; lean-pkg friction to lean-ops (incl. 3 new comparator points:
      open-scoped namespaces in the round-trip check, definitional-only
      round trips without a hint, bridges for copied structures).
