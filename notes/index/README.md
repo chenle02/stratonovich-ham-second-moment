@@ -31,10 +31,9 @@ Standard MakeIndex may compress genuinely consecutive selected page numbers.
 ## Integration
 
 Load `notes/index/setup` in the technical main preamble **before hyperref**.
-Insert `notes/index/list-of-notation` after the contents and illustrations;
-the proof guide may follow it before `\mainmatter`. It appears as a
-front-matter chapter in the contents.
-Print `\printindex` after the bibliography. The reader does not load the setup
+Insert `notes/index/list-of-notation` in the back matter after the
+bibliography, immediately before `\printindex`. It retains its own Contents
+entry and definition links. The proof guide remains in the front matter. The reader does not load the setup
 or indexing hook. The integration patch also ignores standard `.idx`, `.ind`
 and `.ilg` build artifacts; generated index files need not be committed.
 

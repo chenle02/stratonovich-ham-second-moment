@@ -32,9 +32,9 @@ mathematical record was deleted to make the structure appear shorter.
 | E | The AI work in numbers | 302–304 |
 | F | What Lean checks | 305–307 |
 
-The front matter has a Preface, Abstract, multilevel contents, illustrations,
-a six-page notation list and a guide to the argument. A five-page subject
-index follows the bibliography. The cover has its own PDF page label;
+The front matter has a Preface, Abstract, multilevel contents, illustrations
+and a guide to the argument. After the bibliography, the six-page List of
+notation immediately precedes the five-page Subject index. The cover has its own PDF page label;
 front matter uses Roman pages and the text uses Arabic pages. Chapter headings,
 running headers, restrained colors and Latin Modern fonts provide a consistent
 layout. Body size and text width remain 12pt and 6.2in. Chapters may start on any

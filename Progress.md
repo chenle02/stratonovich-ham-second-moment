@@ -18966,3 +18966,11 @@ determine the exact second-moment asymptotics through an intrinsic variational
 formula. Cited the public author version at(1.22). No equality with his specific
 energy formula is asserted. Mathematical body unchanged; clean335-page build,
 reader labels unchanged and371index records verified. Abstract visually checked.
+
+## 2026-11-11: move notation beside the subject index
+
+At Le's request, moved the List of notation out of the front matter. The final
+back-matter order is Bibliography, List of notation (printed311--316), Subject
+index (starts317). Contents entry and definition links retained. Updated the
+book guide and integration instructions. Clean335-page build;215proofs preserved,
+371index records and264reader targets checked. Opening pages visually inspected.
