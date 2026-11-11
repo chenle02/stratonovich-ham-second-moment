@@ -213,6 +213,36 @@
   Courant-Fischer, torus Sobolev spaces); everything needing D1, D5 or a
   full D8. Zero covariance: statements needing Gamma != 0 carry it
   explicitly, as the TeX does (see #3's answer below).
+- **WAVE L4: PROPOSED (2026-11-10), awaiting Le's approval.** Builds on
+  the wave-L3 D4 slice. From a read-only feasibility study against the TeX
+  at 3920258, every Mathlib name probed by compiling scratch files (session
+  scratch l4-feas.md; Probe1-5.lean). Mathlib gaps: no Gaussian
+  `SchwartzMap` (built by hand) and no C^1 extension from a closed
+  interval. Four items, one agent and worktree each, as in wave L3:
+
+  | Item | Target (label, TeX) | Builds on / new foundation | Class (fallback) | Size |
+  |---|---|---|---|---|
+  | L4-a | `P:masked-spectral-growth` (integrated_covariance_foundation.tex 34-77), and DISCHARGE of the one supplied input of B14: derive the spectral homogeneity mu(cA) = c^alpha mu(A) from Gamma's scaling (translated Gaussian test gives the characteristic function of e^(-|xi|^2/r^2) mu; with `Measure.ext_of_charFun`), then reissue `clock_copy_obstruction_paper` and `damped_norms_finite_paper` with no supplied input | Gaussian Schwartz test function (about 250 lines); `HomogCovariance.scaling` is `SpectralHomogeneous Gamma (d-alpha)`, so `SpectralHomog.integral_comp_smul` applies; `IsTempered` gives integrability | same-assumptions; B14 becomes same-assumptions (fallback: Schwartz membership of the Gaussian as a named input) | about 700 lines |
+  | L4-b | `E:masked-time-schur` (150-152, inside `L:masked-time-completion`) and `L:masked-temporal-modulation` (300-345) | MaskedTrigProducts (`bracket`, `modeFn`, `C0`); a bridged `masked_trig_products_paper` taking the norm identity `hnorm` instead of `hmod` | time-Schur same-assumptions (double-integral form; the completion H_a is not built); modulation inputs-supplied: its right side matches `hmod` exactly, but its left side is the double integral, so B24's input narrows to `hnorm` (the complexification clause of `L:masked-time-completion`) rather than disappearing; constants are tight (8 sqrt 2 <= 16) (fallback: supply the oscillatory integration-by-parts bound) | about 800 lines |
+  | L4-c | `P:frequency-row` (integrated_wave_variance.tex 23-139) and `C:frequency-time` (141-165): dyadic-shell measure estimate, three alpha cases, constant independent of d (quantifier order `exists K, forall d nu`) | MaskedTrigProducts (`bracket`, `frequencyPair`); with L4-a the instance for mu is a corollary | same-assumptions (fallback: the alpha != 1 cases first) | 700-900 lines |
+  | L4-d | C19 slice: `L:occupation-kernel-row` (integrated_spatial_occupation.tex 283-308); optional `L:spatial-physical-pair` | its kernel is exactly `TimeFractional.Psi a abs(u) (abs(u)/D)`; positivity and K <= abs(u)^(-a) already proved | same-assumptions | about 300 lines |
+
+  Gates as in wave L3 (exact-hypothesis wrappers, refutations importing
+  the package, Audit, claims/ledger/coverage, check-controls, lean-pkg
+  receipts of both tiers at one commit (the comparator tier now covers
+  every theorem claim), one Codex review per item plus a confirmation
+  review, Easley `leanchecker --fresh` of the new modules, Le's gate).
+  Stopping condition: all four items integrated and reviewed, or an item at
+  its fallback scope with the remainder recorded as a named input; at most
+  two repair rounds per item.
+  Stretch (not proposed for L4): the time form is positive semidefinite
+  (subordination), then build H_a^C concretely as a completion so that
+  `hmem` and `hnorm` hold by construction and B24 becomes same-assumptions;
+  `L:masked-continuous-wave` after that.
+  Not reachable yet: B22 `P:actual-wave-form` (needs D1 noise completion,
+  D8 H^(1/2) x H^(-1/2) duality, H_a-valued Bochner integrals; only its
+  continuous-sine-quotient item exists, `WaveKernel.waveHat_zero`); B5,
+  C3, C20, E3 (need D5, D8 or D1). B3, B4, B9 stay reserved.
 - **Easley external kernel replay (2026-11-10): PASS 35/35** at companion
   837778a (the wave-L2 library; sources byte-identical through 64070a7):
   every module and the umbrella replayed by its own `lake env leanchecker
