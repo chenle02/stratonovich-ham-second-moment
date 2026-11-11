@@ -177,6 +177,26 @@
   0 sorry, 223 claim axioms); claims synced at f3e8275. Field reviews of
   lean-pkg proposal 0014 (declared controls) sent to lean-ops: final
   verdict ACCEPT with two fixes; acceptance is Le's.
+- **WAVE L3 CORRESPONDENCE GATE: CLOSED (Le, 2026-11-10)** at companion
+  dfc2fe8 over manuscript 3920258: Le accepted the four Codex GPT-6.1-Sol
+  reviews (at 4721cf9: all FAIL with 2 fatal, 12 major and 11 minor
+  findings, all documentation: overclaims, route auxiliaries labelled as
+  TeX steps, incomplete hypotheses or inventories; every finding verified
+  and accepted, repairs merged at 25c5995) plus the confirmation review
+  (PASS_WITH_NOTES/high, accepted; C1 fixed at dfc2fe8). Results:
+  L:variational-control-dilation (same-assumptions, conclusion weaker),
+  L:raw-block-indexed-cone (inputs-supplied, full), P:clock-copy-obstruction
+  (inputs-supplied, full, one input) with the finiteness part of
+  L:damped-homogeneous-norms, and the finite slice of S:compact-gaussian
+  (L:gaussian-trace-bounds, P:finite-gaussian-matrix,
+  R:gaussian-one-variance-test, same-assumptions); 557 claims, ledger 347
+  labelled / 210 unlabelled. Scope: AI statement-to-manuscript
+  correspondence, not human verification; supplied inputs stay outside
+  Lean; later changes to these rows or cited labels need a successor
+  review. Records: reviews/2026-11-10-lean-wave-l3-*. Still open for the
+  wave's evidence: lean-pkg receipts of both tiers at one commit (the
+  comparator tier now covers all 470 theorem claims) and the Easley
+  leanchecker --fresh replay of the wave-L3 modules (running).
 - **WAVE L3: APPROVED by Le (2026-11-10) as proposed; OPENED** (four items launched in parallel worktrees). Chosen from
   the board excluding the reserved B3, B4, B9, after three read-only
   feasibility reconnaissances against the TeX at 3920258 with Mathlib names
@@ -312,6 +332,7 @@
 | L0 | PROPOSED | 2026-10-28 | Readiness/strategy refresh after source and plane-endpoint reviews; creation approval still pending, no package or Lean verification |
 | L0 | CLOSED | 2026-11-09 | Companion created and registered (verified-private at 38d1616); 23 seams packaged, 3 GaussianChaos seams withheld; manuscript anchor cf979d6 |
 | L2 | CLOSED (Le) | 2026-11-10 | Three whole results (C26, B23, B24); verified-private at 79afdde; reviews/2026-11-10-lean-wave-l2-* |
+| L3 | CLOSED (Le) | 2026-11-10 | Four items (B6, B16, B14 with a D4 slice, C22 finite slice); gate at companion dfc2fe8 over 3920258; reviews/2026-11-10-lean-wave-l3-* |
 
 ## New proof seams retained for later statement fences
 
