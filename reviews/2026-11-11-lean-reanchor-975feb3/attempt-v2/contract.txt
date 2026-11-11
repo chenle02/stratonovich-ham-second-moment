@@ -1,0 +1,100 @@
+Narrow correspondence re-check: the H:homog rows of the Lean companion ledger after the manuscript added a zero-covariance remark (revision 975feb3)
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+CONTEXT
+The manuscript revision 975feb3 added, after Hypothesis H:homog, a paragraph
+"Zero covariance" saying H:homog allows Gamma = 0 by design (then W = 0 and
+u = 1), and qualified the strict comparison E_* < E in T:first as asserted
+only for Gamma != 0. The Lean companion's ledger was then re-anchored from
+revision 3920258 to 975feb3 (TeX line numbers shifted by a line map). The
+earlier ledger was reviewed at 3920258. Your task is narrow: the rows that
+depend on H:homog, and the re-anchor statement about them.
+
+PACKET
+- candidate/statement-ledger.md : the ledger at Lean companion commit d40f3941bb04.
+- lean/claims.yaml, lean/coverage.yaml, lean/provenance/manuscript-anchor.json.
+- the Lean modules (ground truth for what is proved):
+  lean/StratonovichHAMSecondMoment/Axioms.lean
+  lean/StratonovichHAMSecondMoment/ClockCopy.lean
+  lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean
+  lean/StratonovichHAMSecondMoment/DampedNorms.lean
+  lean/StratonovichHAMSecondMoment/DriverParameters.lean
+  lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean
+  lean/StratonovichHAMSecondMoment/FrequencyRow.lean
+  lean/StratonovichHAMSecondMoment/GaussianIBP.lean
+  lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean
+  lean/StratonovichHAMSecondMoment/GaussianTest.lean
+  lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean
+  lean/StratonovichHAMSecondMoment/HomogHypothesis.lean
+  lean/StratonovichHAMSecondMoment/IndexedCone.lean
+  lean/StratonovichHAMSecondMoment/KappaRange.lean
+  lean/StratonovichHAMSecondMoment/MaskedModulation.lean
+  lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean
+  lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean
+  lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean
+  lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean
+  lean/StratonovichHAMSecondMoment/RayleighTail.lean
+  lean/StratonovichHAMSecondMoment/SpectralHomog.lean
+  lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean
+  lean/StratonovichHAMSecondMoment/TimeFractional.lean
+  lean/StratonovichHAMSecondMoment/TimeSchur.lean
+  lean/StratonovichHAMSecondMoment/VariationalDilation.lean
+  lean/StratonovichHAMSecondMoment/WaveKernel.lean
+  lean/StratonovichHAMSecondMoment/WeakSobolev.lean
+- manuscript/notes/... : all LaTeX inputs at revision 975feb31ea65.
+- manuscript-3920258/notes/notes_stratonovich_ham_second_moment.tex : the
+  main file at the previous revision 3920258be333, for comparison.
+- PROVENANCE.json : byte binding of every packet file.
+
+Proof correctness is NOT in question; correspondence is. Decide from the
+Lean and the TeX. Do not accept the ledger's word.
+
+CHECKS (exactly these 6, in this order, with these claim strings):
+  1. claim "ANCHOR-PARAGRAPH": the opening paragraph of candidate/statement-ledger.md (lines 1-24) and the manuscript.change_from_previous text of lean/provenance/manuscript-anchor.json are accurate at 975feb3: the zero-covariance remark and the T:first qualification are described correctly; T:first is in fact not cited anywhere in the ledger, claims.yaml or coverage.yaml; the H:homog hypothesis environment itself is unchanged between manuscript-3920258/ and manuscript/ main files (compare the two)
+  2. claim "HOMOG-SECTION": every row of the "HomogHypothesis (whole result)" section states what its Lean declaration in lean/StratonovichHAMSecondMoment/HomogHypothesis.lean states and what H:homog at 975feb3 says (main TeX, Section S:model); in particular, HomogCovariance admits Gamma = mu = 0 exactly as the manuscript now says H:homog does by design, and no row or section prose claims non-degeneracy that neither Lean nor H:homog has
+  3. claim "HOMOG-CONSUMERS": every other ledger row and every coverage.yaml note or conclusion_scope that cites H:homog (grep H:homog) is consistent with the zero-covariance remark: where the row asserts a strict positivity or nondegeneracy of a covariance-dependent quantity, its Lean declaration carries Gamma != 0 (or an equivalent hypothesis) and the row says so; where the Lean statement holds also at Gamma = 0, the row does not add a nondegeneracy condition it lacks
+  4. claim "HOMOG-LINES": every TeX line citation in the ledger, claims.yaml summaries, coverage.yaml and Lean doc comments of the Lean modules in the packet that points into the main TeX file between lines 150 and 450 (the model section, H:homog, E:threshold, E:kappa, E:driver-parameters and T:first area), or into notes/integrated_covariance_foundation.tex, points at the text it describes at 975feb3
+  5. claim "FULL-UPPER": the ledger and coverage.yaml rows citing T:full-upper describe it as outside Lean and remain accurate at 975feb3 (the statement now ends with a cross-reference to T:intro-upper)
+  6. claim "NO-NEW-ERROR": the re-anchor introduced no other error in the sections touched by these checks (Scope bullets citing H:homog, the Index-by-label rows for H:homog, E:kappa, E:driver-parameters, and the Not-in-Lean section)
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: lines 1-260 and the
+   "HomogHypothesis (whole result)" and "Not in Lean" sections of
+   candidate/statement-ledger.md; every other ledger row containing H:homog
+   (search, then read each row and its section heading); every coverage.yaml
+   row containing H:homog; lean/StratonovichHAMSecondMoment/HomogHypothesis.lean
+   and SpectralHomog.lean completely; for each H:homog consumer row, the Lean
+   declaration it names; lines 150-450 of both main TeX files (975feb3 and
+   3920258); manuscript/notes/integrated_covariance_foundation.tex.
+B. Other files: search as needed and read matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 6 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong;
+  INCONCLUSIVE: not checkable). reason: evidence with file:line.
+- "findings": fatal = misstatement a citing reader would be misled by;
+  major = material imprecision; minor = wording. Each string starts with an
+  ID (H1, H2, ...), names the item, quotes Lean and TeX with file:line,
+  and gives the exact fix.
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.
+
+NOTE ON THIS ATTEMPT
+An earlier attempt of this review returned INCONCLUSIVE only because the
+packet lacked lean/StratonovichHAMSecondMoment/DampedNorms.lean. This packet
+contains every module of lean/StratonovichHAMSecondMoment/. Review afresh;
+do not assume the earlier result.

@@ -1,0 +1,86 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md \u2014 partial file; complete required excerpts: 1-260, 1223-1243, 2209-2270. Additional context and consumer readings: 647-690, 819, 854-872, 1080-1147, 1300-1318, 1361-1807, 1847-1907, 2046-2060, 2110-2127, 2178-2183, 2191-2192, 2194, 2196, 2198-2200, 2203-2208. Whole-file searches for H:homog, T:first, T:full-upper and relevant citations.",
+    "lean/coverage.yaml \u2014 complete, 1-546.",
+    "lean/claims.yaml \u2014 partial; 785-845; search-match readings at 716, 723, 857, 1376, 1981, 1988, 2003, 2854, 3100, 3107, 4119, 4189, 4197, 4204, 4211, 4620, 4641. Whole-file searches for H:homog, T:first, T:full-upper and numerical TeX references.",
+    "lean/provenance/manuscript-anchor.json \u2014 partial; 1-95, 395-410, 754-775; change_from_previous at 406 read completely.",
+    "PROVENANCE.json \u2014 partial; 1-40.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean \u2014 complete, 1-105.",
+    "lean/StratonovichHAMSecondMoment/SpectralHomog.lean \u2014 complete, consecutive ranges 1-160 and 161-318.",
+    "lean/StratonovichHAMSecondMoment/DriverParameters.lean \u2014 complete, 1-51.",
+    "lean/StratonovichHAMSecondMoment/KappaRange.lean \u2014 complete, 1-42.",
+    "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean \u2014 complete, 1-88.",
+    "lean/StratonovichHAMSecondMoment/ClockCopy.lean \u2014 partial; 5-10, 711-779.",
+    "lean/StratonovichHAMSecondMoment/DampedNorms.lean \u2014 partial; 6-11, 335-372.",
+    "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean \u2014 partial; 1-82, 88-100, 122-130, 295-365, 380-388, 418-428, 440-519.",
+    "lean/StratonovichHAMSecondMoment/FrequencyRow.lean \u2014 partial; 1-63, 760-803; additional citation-search matches.",
+    "lean/StratonovichHAMSecondMoment/IndexedCone.lean \u2014 partial; 1-58, 959-1015; additional citation-search matches.",
+    "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean \u2014 partial; 1-65, 301-360, 403-448; additional citation-search matches.",
+    "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean \u2014 partial; 1-25, 435-546; additional citation-search matches.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean \u2014 partial; 1-70, 180-192, 395-465; additional citation-search matches.",
+    "lean/StratonovichHAMSecondMoment/GaussianTest.lean \u2014 partial; 1-30, 165-178.",
+    "lean/StratonovichHAMSecondMoment/TimeSchur.lean \u2014 partial; 1-28, 130-142, 290-332.",
+    "lean/StratonovichHAMSecondMoment/MaskedModulation.lean \u2014 partial; 1-76, 416-425, 467-489, 677-691, 872-885, 1065-1135.",
+    "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean \u2014 partial; 1-61, 99-111, 146-161, 272-281, 324-342.",
+    "lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean \u2014 partial; 1-18; citation-search matches at 818, 823, 847, 856, 863, 870, 876, 936, 1038, 1072, 1140, 1145, 1181, 1192, 1208.",
+    "lean/StratonovichHAMSecondMoment/GaussianIBP.lean \u2014 partial; 1-18; citation-search matches at 260, 264.",
+    "lean/StratonovichHAMSecondMoment/WeakSobolev.lean \u2014 partial; 1-40; citation-search matches at 131, 186, 291.",
+    "lean/StratonovichHAMSecondMoment/TimeFractional.lean \u2014 partial; citation context 4-10.",
+    "lean/StratonovichHAMSecondMoment/WaveKernel.lean \u2014 partial; citation context 4-10.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex \u2014 partial file; complete required consecutive range 150-450; additionally 3680-3710.",
+    "manuscript-3920258/notes/notes_stratonovich_ham_second_moment.tex \u2014 partial file; complete required consecutive range 150-450; additionally 3576-3606.",
+    "manuscript/notes/integrated_covariance_foundation.tex \u2014 complete, consecutive ranges 1-220 and 221-428.",
+    "manuscript/notes/integrated_actual_operator_driver.tex \u2014 partial; 1-28.",
+    "manuscript/notes/integrated_raw_block_lower.tex \u2014 partial; 1-12.",
+    "manuscript/notes/integrated_unmasked_variational.tex \u2014 partial; 1-12.",
+    "manuscript/notes/integrated_spatial_occupation.tex \u2014 partial; 1-33.",
+    "manuscript/notes/integrated_wave_variance.tex \u2014 partial; 1-55."
+  ],
+  "checks": [
+    {
+      "claim": "ANCHOR-PARAGRAPH",
+      "verdict": "PASS",
+      "reason": "The descriptions in candidate/statement-ledger.md:9-24 and lean/provenance/manuscript-anchor.json:406 agree with the added zero-covariance paragraph at manuscript/notes/notes_stratonovich_ham_second_moment.tex:209-214 and the qualified strict comparison at 426-432. The H:homog environment at current lines 190-207 is unchanged from manuscript-3920258/notes/notes_stratonovich_ham_second_moment.tex:169-186. Searches found no mapped T:first citation in the ledger or either YAML file; ledger line 11 is a metatextual mention explaining its exclusion."
+    },
+    {
+      "claim": "HOMOG-SECTION",
+      "verdict": "PASS",
+      "reason": "All eight rows at candidate/statement-ledger.md:1235-1242 match HomogHypothesis.lean:33-103. The measure predicates, Fourier convention, scaling and numerical restrictions agree with current H:homog at manuscript/notes/notes_stratonovich_ham_second_moment.tex:190-207. HomogCovariance has no nonzero field: Gamma = mu = 0 satisfies its covariance clauses whenever the numerical conditions hold, consistently with the remark at 209-214. Neither the section nor its rows asserts non-degeneracy."
+    },
+    {
+      "claim": "HOMOG-CONSUMERS",
+      "verdict": "PASS",
+      "reason": "Strict covariance-dependent positivity is correctly restricted: ledger rows 854 and 1678 match ClockCopy.lean:722-734 and ClockCopyHomog.lean:53-65, both requiring Gamma != 0; row 1677 and coverage.yaml:453-456 match MaskedSpectralGrowth.lean:501-517 with the same requirement. Homogeneity, finiteness and nonnegativity retain zero covariance, as shown by MaskedSpectralGrowth.lean:315-317, DampedNorms.lean:358-364 and ClockCopyHomog.lean:71-85. The variational, indexed-cone and occupation wrappers explicitly carry their documented nonzero assumptions, including where unused; the frequency and numerical wrappers do not acquire an unsupported nonzero condition."
+    },
+    {
+      "claim": "HOMOG-LINES",
+      "verdict": "PASS",
+      "reason": "The relevant citations resolve to their described text. In integrated_covariance_foundation.tex these include the spectral convention at 15-19, tempered-measure discussion at 23-30, spectral proposition and constants at 34-77, completion and Schur bound at 141-179, modulation statement and proof at 296-345, and trigonometric products at 347-375. These agree with the ledger sections at 1375-1770 and the corresponding GaussianTest, TimeSchur, MaskedModulation, MaskedSpectralGrowth and MaskedTrigProducts comments. Searches found no stale numerical citation into main-file lines 150-450; the hypothesis and kappa references there are label-based."
+    },
+    {
+      "claim": "FULL-UPPER",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:2217-2219 and lean/coverage.yaml:523-528 correctly classify T:full-upper as outside Lean. Its current statement at manuscript/notes/notes_stratonovich_ham_second_moment.tex:3685-3701 retains the mathematical bound of manuscript-3920258/notes/notes_stratonovich_ham_second_moment.tex:3581-3597. The final sentence now references T:intro-upper instead of G:upper, exactly as the ledger opening reports."
+    },
+    {
+      "claim": "NO-NEW-ERROR",
+      "verdict": "PASS",
+      "reason": "The touched scope statements at candidate/statement-ledger.md:54-90 and index entries at 172-180 and 198 preserve the distinction between numerical hypotheses, full HomogCovariance and explicit local nonzero assumptions. DriverParameters.lean:19-46 and HomogHypothesis.lean:84-103 support the parameter entries without covariance non-degeneracy. The Not-in-Lean section at ledger lines 2209-2270 continues to distinguish formalized deductions from excluded stochastic, spectral and asymptotic results. No additional correspondence error was identified in these sections."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Requirement A was completed. Partial-file coverage concerns material outside the required excerpts or declarations, not a gap in those mandatory readings.",
+    "This is the requested narrow correspondence review, not a packet-wide audit of all label counts, historical review assertions, hashes or line-map statistics.",
+    "Lean compilation and proof correctness were not independently tested; stochastic-model construction and analytic conclusions outside Lean were not verified.",
+    "An AI review is not human verification or a novelty audit."
+  ]
+}

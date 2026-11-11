@@ -1,0 +1,79 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "INCONCLUSIVE",
+  "confidence": "medium",
+  "source_coverage": [
+    "candidate/statement-ledger.md: partial; contiguous reads 1-260, 647-683, 857-872, 1080-1145, 1223-1315, 1361-1808, 1848-1943, 2046-2065, 2114-2125, 2180-2270; additionally rows 819, 854-855 and whole-file search matches for H:homog, headings, T:first, T:full-upper and line citations. Required ledger portions complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean: complete, 1-105.",
+    "lean/StratonovichHAMSecondMoment/SpectralHomog.lean: complete, consecutive ranges 1-165 and 166-318.",
+    "lean/StratonovichHAMSecondMoment/DriverParameters.lean: complete, 1-51.",
+    "lean/StratonovichHAMSecondMoment/KappaRange.lean: complete, 1-42.",
+    "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean: complete, 1-88.",
+    "lean/StratonovichHAMSecondMoment/ClockCopy.lean: partial; 1-66, 710-779; additionally whole-file line-citation search matches.",
+    "lean/StratonovichHAMSecondMoment/FrequencyRow.lean: partial; 1-72, 760-803; additionally whole-file line-citation search matches.",
+    "lean/StratonovichHAMSecondMoment/IndexedCone.lean: partial; 1-65, 985-1020; additionally whole-file line-citation search matches.",
+    "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean: partial; 1-100, 118-138, 290-430, 448-519; additionally whole-file line-citation search matches.",
+    "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean: partial; 1-80, 338-363, 430-448; additionally whole-file line-citation search matches.",
+    "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean: partial; 1-42, 427-546; additionally whole-file line-citation search matches.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean: partial; 1-80, 187-192, 400-465; additionally whole-file line-citation search matches.",
+    "lean/StratonovichHAMSecondMoment/DampedNorms.lean: partial; no lines read because this required consumer source is absent from the frozen packet.",
+    "lean/coverage.yaml: complete, consecutive ranges 1-180, 181-342, 343-546.",
+    "lean/claims.yaml: partial; 695-845, 2849-2858; additionally whole-file H:homog and line-citation search matches, including summaries at 1376, 1981, 1988, 2003, 3100, 3107, 4119, 4189, 4197, 4204, 4211, 4620 and 4641. Whole-file T:first search returned no match.",
+    "lean/provenance/manuscript-anchor.json: partial; 1-110, 395-422, and search match 769.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: partial; required consecutive ranges 150-300 and 301-450 complete; additionally 766-846, 3680-3720, 7620-7710.",
+    "manuscript-3920258/notes/notes_stratonovich_ham_second_moment.tex: partial; required consecutive ranges 150-300 and 301-450 complete; additionally 3576-3616.",
+    "manuscript/notes/integrated_covariance_foundation.tex: complete, consecutive ranges 1-150, 151-300, 301-428.",
+    "manuscript/notes/integrated_actual_operator_driver.tex: partial; 1-40.",
+    "manuscript/notes/integrated_wave_variance.tex: partial; 1-12.",
+    "manuscript/notes/integrated_spatial_occupation.tex: partial; 1-12.",
+    "manuscript/notes/integrated_unmasked_variational.tex: partial; 1-12.",
+    "manuscript/notes/integrated_raw_block_lower.tex: partial; 1-12.",
+    "PROVENANCE.json: partial; 1-55."
+  ],
+  "checks": [
+    {
+      "claim": "ANCHOR-PARAGRAPH",
+      "verdict": "PASS",
+      "reason": "The described changes agree with manuscript/notes/notes_stratonovich_ham_second_moment.tex:209-214 and 426-432 and with lean/provenance/manuscript-anchor.json:406. H:homog at current lines 190-207 is identical to previous lines 169-186. Whole-file searches found no T:first result citation in the ledger or YAML files; candidate/statement-ledger.md:11 mentions it only to describe the revision."
+    },
+    {
+      "claim": "HOMOG-SECTION",
+      "verdict": "PASS",
+      "reason": "Candidate rows 1235-1242 faithfully describe HomogHypothesis.lean:33-103. Neither HomogCovariance nor its component predicates require a nonzero measure: Gamma = mu = 0 satisfies the covariance clauses for admissible numerical parameters. This agrees with current main TeX:190-214. The numerical wrappers consequently require no covariance nondegeneracy."
+    },
+    {
+      "claim": "HOMOG-CONSUMERS",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The supplied declarations match the reviewed rows: strict covariance-dependent positivity carries Gamma != 0 in ClockCopy.lean:722-734, ClockCopyHomog.lean:53-65 and MaskedSpectralGrowth.lean:501-517. Nonnegativity, spectral homogeneity and frequency wrappers do not acquire an unwarranted nonzero condition. However, candidate/statement-ledger.md:819 names DampedNorms.damped_norms_finite_paper, whose source is absent. ClockCopyHomog.lean:80-86 corroborates the advertised conclusion but does not satisfy the contract's requirement to read every named consumer declaration."
+    },
+    {
+      "claim": "HOMOG-LINES",
+      "verdict": "PASS",
+      "reason": "The targeted citations into integrated_covariance_foundation.tex point to the described material: standing assumptions 5-6, spectral convention 15-19, temperedness discussion 23-30, proposition 34-77, temporal completion 141-181, modulation 300-345 and trigonometric products 347-376. Relevant ledger citations occur at 1375-1538 and 1542-1677; MaskedSpectralGrowth.lean references agree. Searches found no numerical main-file citation in the specified 150-450 interval requiring correction."
+    },
+    {
+      "claim": "FULL-UPPER",
+      "verdict": "PASS",
+      "reason": "Candidate/statement-ledger.md:2217-2219 and lean/coverage.yaml:523-528 explicitly place T:full-upper outside Lean. Its current statement at main TeX:3685-3701 retains the previous mathematical bound at previous main TeX:3581-3597, replacing the concluding Goal G:upper reference with Theorem T:intro-upper."
+    },
+    {
+      "claim": "NO-NEW-ERROR",
+      "verdict": "PASS",
+      "reason": "No additional correspondence error was found in the specified Scope bullets, Index-by-label entries or Not-in-Lean section. Candidate/statement-ledger.md:54-58 and 172-180 correctly distinguish numerical hypotheses from HomogCovariance; lines 67-90 preserve local nonzero assumptions. Lines 2209-2270 retain the stated analytic exclusions and supplied-input qualifications."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [
+    "Supply the frozen source lean/StratonovichHAMSecondMoment/DampedNorms.lean at commit d40f3941bb049c31f8ad0412e15a07635ea02b2e so the declaration named at candidate/statement-ledger.md:819 can receive the mandatory direct reading. No candidate correction is established by the available evidence."
+  ],
+  "limitations": [
+    "Complete-reading requirement A is incomplete only for the absent DampedNorms consumer declaration; HOMOG-CONSUMERS therefore cannot receive an acceptance verdict.",
+    "Files marked partial were not read in their entirety. Except for the identified missing declaration, the portions required by the narrow contract were read; unrelated declarations and manuscript sections were not comprehensively reviewed.",
+    "The global historical label counts and all-package citation-map statistics in manuscript-anchor.json were not independently reproduced.",
+    "Proof correctness was not audited or rebuilt. This AI correspondence review is neither human verification nor a novelty audit."
+  ]
+}
