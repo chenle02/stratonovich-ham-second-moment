@@ -1,0 +1,137 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-65, partial.",
+    "candidate/statement-ledger.md:1-321,712-800,923-1074,1298-1362,1594-2017,2053-2165,2199-2260,2375-2433,2625-2935,2977-3193, partial file; required Scope, Index and six whole-result sections complete. All declaration tables additionally received a structural census.",
+    "prior/TimeCompletion-report.json:1-400, complete.",
+    "prior/MaskedContinuousWave-report.json:1-180, complete.",
+    "prior/MaskedAuxiliaryNorm-report.json:1-369, complete.",
+    "prior/DampedNormsHomog-report.json:1-271, complete.",
+    "prior/VariationalMean-report.json:1-276, complete.",
+    "prior/PhaseBessel-report.json:1-115, complete.",
+    "lean/StratonovichHAMSecondMoment/TimeCompletion.lean:1-1075, complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean:1-113, complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedContinuousWave.lean:1-462, complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:1-954, complete.",
+    "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean:1-692, complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalMean.lean:1-733, complete.",
+    "lean/StratonovichHAMSecondMoment/PhaseBessel.lean:1-271, complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105, complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean:294-342, partial.",
+    "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean:1-88, complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:80-145,223-243, partial.",
+    "lean/StratonovichHAMSecondMoment/WeakSobolev.lean:40-100,215-235, partial.",
+    "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean:55-110,320-330, partial.",
+    "lean/StratonovichHAMSecondMoment/TimeSchur.lean:53-65,291-305, partial.",
+    "lean/StratonovichHAMSecondMoment/MaskedModulation.lean:1018-1135, partial.",
+    "lean/StratonovichHAMSecondMoment/WaveKernel.lean:30-64, partial.",
+    "lean/StratonovichHAMSecondMoment/SpectralHomog.lean:40-68, partial.",
+    "lean/StratonovichHAMSecondMoment/TimeFractional.lean:40-59,100-126, partial.",
+    "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:405-436, partial.",
+    "lean/claims.yaml:1-25,5115-6856, partial file; all six sections' claim entries complete. Declaration and kind metadata additionally counted across 1-6856.",
+    "lean/coverage.yaml:1-668, complete.",
+    "docs/coverage-scope-tex.yaml:1-18, complete.",
+    "manuscript/notes/integrated_covariance_foundation.tex:1-428, complete.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-343, complete.",
+    "manuscript/notes/integrated_wave_variance.tex:1-30,167-181,330-380, partial.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:175-245,730-900,1060-1090,1580-1610,7626-7755, partial.",
+    "manuscript/notes/integrated_compact_mean_family.tex:380-420, partial."
+  ],
+  "checks": [
+    {
+      "claim": "TimeCompletion-W1",
+      "verdict": "PASS",
+      "reason": "The ledger now says 'real a, T, complex c' at candidate/statement-ledger.md:2755, as does lean/claims.yaml:5217. This matches TimeCompletion.lean:402-403 and the real temporal parameters of integrated_covariance_foundation.tex:5,142-145. The index retains the correct completion label at ledger:288."
+    },
+    {
+      "claim": "MaskedContinuousWave-W1",
+      "verdict": "PASS",
+      "reason": "Both bFn_contDiff and bFn_bounds are now explicitly no-direct-label Lean-route auxiliaries at ledger:1864-1865 and index:293. Their summaries match MaskedContinuousWave.lean:223,242-243. The distinction from the averaging proof at integrated_covariance_foundation.tex:393-411 is preserved; coverage.yaml:195-208 does not attribute these helpers to that proof."
+    },
+    {
+      "claim": "MaskedContinuousWave-W2",
+      "verdict": "PASS",
+      "reason": "Ledger:292-293 now indexes all 24 module declarations exactly once under their table classifications: 11 labelled and 13 unlabelled. In particular, eval_eq remains auxiliary, consistently with MaskedContinuousWave.lean:199-200 and the different averaging construction in integrated_covariance_foundation.tex:398-407."
+    },
+    {
+      "claim": "MaskedAuxiliaryNorm-W1",
+      "verdict": "PASS",
+      "reason": "Ledger:294-301 indexes all 62 section declarations: the existing 20 labelled declarations and all 42 unlabelled declarations. The setup and auxiliary distinctions agree with MaskedAuxiliaryNorm.lean:119-205,249-343 and integrated_covariance_foundation.tex:8-12,79-82,121. No excluded implementation definition was added."
+    },
+    {
+      "claim": "DampedNormsHomog-W1",
+      "verdict": "PASS",
+      "reason": "Ledger:995-999 and DampedNormsHomog.lean:68-71 now classify Gamma_tempered as carried unused. MaskedSpectralGrowth.lean:315-317 uses only mu_tempered, spectral and scaling for the derived homogeneity. This correctly distinguishes the proof dependency from the standing temperedness assumptions at notes_stratonovich_ham_second_moment.tex:192-193."
+    },
+    {
+      "claim": "DampedNormsHomog-W2",
+      "verdict": "PASS",
+      "reason": "The exclusions at ledger:140-146,3186-3193 now concern equation/solution limits and expressly except formalized scalar and norm-tail limits. DampedNormsHomog.lean:613-632 proves the limits corresponding to notes_stratonovich_ham_second_moment.tex:785-787, so the former blanket exclusion is resolved."
+    },
+    {
+      "claim": "VariationalMean-W1",
+      "verdict": "PASS",
+      "reason": "Ledger:307-312 now indexes all 40 declarations, including all 23 unlabelled auxiliaries. heatSpec and heat_identity have their E label, mean_le and mean_lip their E label, and gauss_conv its heat-envelope label. These agree with VariationalMean.lean:126-127,158-160,301-304,558-582 and integrated_unmasked_variational.tex:27-34,69-72."
+    },
+    {
+      "claim": "PhaseBessel-W1",
+      "verdict": "PASS",
+      "reason": "Ledger:313-316 includes all 12 declarations under their table labels, including seven auxiliaries. The additional inequality entry is expressly a cross-reference. This agrees with PhaseBessel.lean:72-79,104-125,169-173,225-246 and integrated_wave_variance.tex:346-366."
+    },
+    {
+      "claim": "RESCAN-TimeCompletion",
+      "verdict": "PASS",
+      "reason": "All 68 rows at ledger:2741-2808 were checked against both complete modules and the cited TeX. TimeCompletion.lean:1005-1031 supports the eight-clause completion wrapper; :1056-1073 and MaskedContinuousWaveCompleted.lean:62-75 discharge the abstract inputs. Constants, real/complex domains, density, integrability and the disclosed completion representation agree with integrated_covariance_foundation.tex:141-181,296-423."
+    },
+    {
+      "claim": "RESCAN-MaskedContinuousWave",
+      "verdict": "PASS",
+      "reason": "Every labelled row at ledger:1859-1882 is supported by MaskedContinuousWave.lean:100-176,272-279,395-408 and integrated_covariance_foundation.tex:378-419. The exact constant 4*3^(1-a)*16/(1-a), interval and frequency hypotheses, supplied abstract inputs and alternative proof route are accurately distinguished. No further overclaim was found."
+    },
+    {
+      "claim": "RESCAN-MaskedAuxiliaryNorm",
+      "verdict": "PASS",
+      "reason": "All 62 rows at ledger:1706-1767 match the complete module. The Fourier normalization, R-uniform ball constant, genuine integrability and complex-Banach generalization are supported by MaskedAuxiliaryNorm.lean:120-205,495-519,847-950 and integrated_covariance_foundation.tex:79-137. The real-H clause and density regularity remain explicitly excluded."
+    },
+    {
+      "claim": "RESCAN-DampedNormsHomog",
+      "verdict": "PASS",
+      "reason": "All 42 rows at ledger:1032-1073 match DampedNormsHomog.lean:126-675 and notes_stratonovich_ham_second_moment.tex:745-846. Scaling exponents, positive Laplace domain, off-diagonal kernel assertions, tail limits and integrability conclusions are correct. The sole supplied GreenMass premise and multiplier interpretation are disclosed rather than silently identified with constructed Green kernels."
+    },
+    {
+      "claim": "RESCAN-VariationalMean",
+      "verdict": "PASS",
+      "reason": "All 40 rows at ledger:3085-3124 agree with VariationalMean.lean:117-725 and integrated_unmasked_variational.tex:23-108. Constants 2/(1-a), Gaussian normalization, uniform quantifier order and potential integrability are correct. The mixed-derivative assertion is not claimed, and joint Lipschitz regularity is expressly identified as an additional complement."
+    },
+    {
+      "claim": "RESCAN-PhaseBessel",
+      "verdict": "PASS",
+      "reason": "All 12 rows at ledger:2421-2432 agree with PhaseBessel.lean:65-266 and integrated_wave_variance.tex:346-366. The coefficient convention, conjugated version, constant one, completeness requirements and integrability conclusions match. Arbitrary-measure and finite-component generalizations and the different projection proof are disclosed."
+    },
+    {
+      "claim": "LEDGER-TOTALS",
+      "verdict": "PASS",
+      "reason": "An escape-aware census of every per-module declaration table gives 972 rows, comprising 535 labelled and 437 unlabelled rows; every row has exactly four cells. Matching every claims.yaml decl gives no missing, extra or duplicate declaration. Kind counts are 810 theorems and 162 definitions, agreeing with ledger:319-320 and coverage.yaml:2."
+    },
+    {
+      "claim": "NO-REGRESSION",
+      "verdict": "PASS",
+      "reason": "The specified cross-references preserve the abstract/concrete completion distinction, supplied GreenMass premise and remaining exclusions: ledger:793-797,1352-1356,1889-1907,1954-1991,2110-2119,2149-2155,2248-2256,2854-2905,3126-3193. They agree with the inspected declarations and TeX. All four docs/coverage-scope-tex.yaml ascii fields exactly equal their coverage.yaml conclusion_scope strings; the six repaired indices also match their tables."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Complete-reading requirement A was fulfilled; truncated required excerpts were recovered by subsequent reads.",
+    "Files marked partial were consulted only in the listed ranges or through structural metadata scans. Their remaining contents were not substantively reviewed; PROVENANCE.json:66-1087 was not audited.",
+    "Proof correctness and compilation were outside this correspondence review. No build, independent hash verification or historical source comparison beyond the supplied prior reports was performed.",
+    "Acceptance retains the ledger's explicit representation qualifications, supplied GreenMass premise and multiplier interpretation; it does not verify constructions expressly excluded from Lean.",
+    "This is an AI correspondence review, not human verification or a novelty audit."
+  ]
+}
