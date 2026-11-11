@@ -18724,3 +18724,9 @@ correction and an index page in the rendered PDF. No whole-book visual or
 scientific acceptance is claimed. The existing zero-covariance qualification
 of the imported first-moment comparison remains open for Le's decision;
 no hypothesis or theorem statement was changed.
+
+The four newly retained mathematical sources were submitted to the canonical
+six-repository queue after the source packet reached <HUB>. Exact tickets
+and supplied editions are recorded in
+private/audit/2026-11-10-attribution/queue-submissions.json. Status is queued,
+not ingested: Tropp2018, Sz.-Nagy1941, Calef--Hardin2009 and Lerner2013.
