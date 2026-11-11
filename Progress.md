@@ -18637,3 +18637,13 @@ The large-deviations page already covers the restricted-order boundary and
 will not be duplicated. The queue packet is under
 private/audit/2026-11-10-universality-outlook/; publication requires the
 canonical writer's receipt. No direct wiki-content edit was performed.
+
+Queue dispatch recorded: the wiki update is
+tk-20261110-191528-codex-stratonovich-universality, dependent on Wu's
+source-attached repair/digest tk-20261110-190918-codex-stratonovich-wu-publication.
+Exact IDs, the attached published PDF and dependency were reread on <HUB>.
+Both requests remain pending. The separate Sung Rytov paper ticket
+tk-20261110-185222-codex-stratonovich-rytov is now done/gold, with canonical
+key sung.choi.ea:09:optical, verify-digest PASS, lint clean and wiki commit
+90bc0ae7. Its receipt does not complete the newly requested four-page update.
+Details are in private/audit/2026-11-10-universality-outlook/QUEUE-RECORD.json.
