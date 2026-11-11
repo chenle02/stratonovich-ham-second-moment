@@ -18741,3 +18741,22 @@ A page-space guard keeps the figure and caption inside the page; inspected
 the report's printed p.2 and reader p.3. Both builds are clean;215proofs
 unchanged,95mapped labels,264valid reader links and370index records checked.
 Current pair329+29pages. Evidence: private/audit/2026-11-11-guitar-wrap/.
+
+## 2026-11-11: adopt the approved zero-covariance qualification
+
+Le's instruction relayed by Agent22 authorizes the two recommendations from
+the zero-covariance audit. Added an unnumbered paragraph immediately after
+H:homog (main TeX lines209--214): zero covariance is allowed, the noise is
+zero, u=1 for data(1,0), all positive absolute moments equal1 and normalized
+log-moment rates vanish; strict-positivity assumptions are local. Qualified
+T:first's strict source comparison by Gamma!=0 (modified lines426--429;
+explicit qualification427--429). No other mathematical change.
+
+H:homog is byte-identical, every existing main-source label is unchanged in
+order, and all other result/proof blocks are byte-identical to42d7ee0.
+Both builds pass with0errors,0undefined references/citations,0overfull boxes;
+215proofs preserved,95reader labels and264links valid,370index entries checked.
+Inspected printed pages4and15. Current PDFs329+29pages. Evidence:
+private/audit/2026-11-11-zero-covariance-adoption/. Agent22 will re-anchor the
+Lean companion and run its narrow successor correspondence check; this edit
+does not claim that check has passed.

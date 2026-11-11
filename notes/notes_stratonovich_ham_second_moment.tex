@@ -206,6 +206,13 @@ where $\gamma \ge 0$ is nonnegative definite with spectral measure $\mu$.
   includes spatial white noise $\Gamma = \delta_0$.
 \end{hypothesis}
 
+\paragraph{Zero covariance.}
+Hypothesis~\ref{H:homog} allows $\Gamma = 0$ by design. In this case the
+centered Gaussian noise is $\W = 0$, and the solution with initial data
+$(1,0)$ is $u(t,x) = 1$. Thus $\E|u(t,x)|^p = 1$ for every $p > 0$, and
+all normalized logarithmic moment rates are zero. Results asserting strict
+positivity of covariance-dependent quantities impose $\Gamma \ne 0$ locally.
+
 Throughout we write
 \begin{equation}\label{E:kappa}
   \kappa:=\frac{4-\alpha-\alpha_0}{3-\alpha}\in(1,2).
@@ -416,8 +423,10 @@ proofs below do not use the first-moment upper constant.
     \bigg)^{\frac1{3-\alpha}},
     \qquad L_*=L(\cE_*),\quad L^*=L(\cE),
   \]
-  and $\cE_* < \cE$ are the variational quantities
-  \cite{chen:author2026:time-dependency}*{(1.11)--(1.13)}. These printed
+  and $\cE_*,\cE$ are the variational quantities
+  \cite{chen:author2026:time-dependency}*{(1.11)--(1.13)}. The strict source
+  comparison $\cE_* < \cE$ is asserted only for $\Gamma \ne 0$; it is not
+  asserted at $\Gamma = 0$, where both quantities vanish. These printed
   normalizations are quoted, not adopted as established inputs. Numerical
   calibrations using $L_*$ below explicitly assume the intended first-moment
   lower bound.
