@@ -517,6 +517,95 @@
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
+- **WAVE L6: PROPOSED (2026-11-11), for Le's approval.** From the board
+  (excluding the reserved B3, B4, B9), after three read-only feasibility
+  reconnaissances against the TeX at 975feb3 with every Mathlib name probed
+  by compiling scratch files against companion main (session scratch
+  l6-feas/R1-R3). Several probes already contain working proofs: the wave
+  Green masses in d = 2, 3, the finite Gaussian convolution identity, the
+  rotation lemma, the weak gradient of a test function, sum a^nu <= (sum
+  a)^nu and Gamma((x+y)/2)^2 <= Gamma(x)Gamma(y). Eight items, one agent and
+  worktree each, as in wave L5; dependencies noted.
+
+  | Item | Target (label, TeX at 975feb3) | Builds on / new foundation | Class (fallback) | Size |
+  |---|---|---|---|---|
+  | L6-a | `L:damped-homogeneous-norms` with NOTHING supplied: define the wave Green measures `waveGreen d s` (d = 1: (1/2)1_{|x|<s}dx; d = 2: 1_{|x|<s}dx/(2 pi sqrt(s^2-|x|^2)); d = 3: sigma_s/(4 pi s) via `Measure.toSphere`; main TeX 709, 5106-5112, Chen (2.5)), prove mass s, finiteness, support in the closed s-ball and the scaling G_s(sA) = s G_1(A); discharge `GreenMass` | DampedNormsHomog; mass in d = 2, 3 already proved in probes | same-assumptions, full (the d = 3 measure is a definitional choice, "toSphere is the surface measure", recorded as such; optional: the d = 1 Fourier identity int e^{i xi x} dG_s = waveHat; d = 2 stretch; d = 3 Fourier deferred) | 250-350 (+100-150) |
+  | L6-b | C21 `P:masked-quotient-obstruction` (integrated_covariance_foundation.tex 257-292), and the finite Gaussian comparison of `P:masked-noise-completion` (188-249: A <= B in PSD order => E N(X)^p <= E N(Y)^p for X ~ N(0,A), Y ~ N(0,B), p >= 1, any seminorm N) | TimeCompletion/TimeSchur for the time form; Mathlib multivariateGaussian, charFun_conv (convolution identity compiles), Fernique moments | obstruction: same-assumptions with E W(F)^2 read as the E:cov covariance functional (a definitional D1 boundary, stated), including that Gamma = delta_0(dx1)dx2 satisfies H:homog (fallback: that membership as one named input); comparison: the finite statement in full, its identification with the masked/auxiliary covariances stays outside (D1) | 850-1300 |
+  | L6-c | C21 `P:wave-two-variances` (integrated_wave_variance.tex 368-460): the purely spectral core with no input (finite orthonormal families, measures nu with ball growth C r^alpha, both directions, the h^(2 beta) form), plus a `_paper` wrapper whose link to E|l_R|^2 (E:variance-normalized-covariance, from B22, D1) and the unitary J (D8) are named inputs | PhaseBessel with H = H_a, MaskedContinuousWaveCompleted, FrequencyRow, MaskedAuxiliaryNorm (all done) | core same-assumptions; wrapper inputs-supplied, conclusion narrower (fallback: strong measurability of the H_a-valued kernel as a named input) | 800-1100 |
+  | L6-d | C18 foundations and two results: the dilation floor lemma (positive Rayleigh value for potentials >= Gamma*z, using alpha < 2), Gamma(B_r) > 0, autocorrelation positivity from `Gamma_posdef`, the weak gradient of smooth tests, D8-lite half (b) "zero weak gradient implies zero"; `P:variational-unmasked-rate` (integrated_unmasked_variational.tex 98-111), Rayleigh-form part; `P:variational-positive-scores` (270-337) minus Q_2 | VariationalMean (mean_le, mean_lip, isRayleighTrial_mean_iff_paper), VariationalDilation, WeakSobolev | rate: same-assumptions, narrower (the operator half and lambda = sqrt(-E_s) stay out, D8; positivity floor by a different route than P:compact-original-common-trial, stated); positive scores: nonempty, v > 0, homogeneity, positive test input-free; boundedness of the score set is `S1Bdd` (see decision 1) | 1000-1300 |
+  | L6-e | C19 `P:spatial-smooth-ratio` (integrated_spatial_occupation.tex 98-147) on a deterministic bound R_0 <= 2^(1+alpha) R_alpha (Fourier: |Q^|^2 <= min(1, 4b/|xi|^2), then `resolvent_homog`), with the manuscript's own "S1Bdd => R_0 finite" as a corollary; the S_1^pos display in the form "for every y below the bound some control exceeds y" | SpectralHomog.resolvent_homog, IsSpectralMeasure, toSchwartzMap; L6-d's autocorrelation positivity (stated over a hypothesis, instantiated at integration, as L5-b was) | same-assumptions; R_0 < infinity by a different route than the TeX (which derives it from S1Bdd), stated (fallback: R0Fin as one named input, weaker than S1Bdd) | 1000-1200 |
+  | L6-f | C19 `L:spatial-static-controls` (40-96): (i) lambda_z positive, finite, Lipschitz; (ii) E:spatial-static-score in the existential form, plus its sSup form on S1Bdd | L6-d's floor lemma (over a hypothesis, instantiated at integration); TemporalEquilibrium (density, potential_eq_one); a smooth endpoint cutoff f_n | same-assumptions (positivity floor by the L6-d route, stated) | 700-900 |
+  | L6-g | Series-type foundation (S_nu(x) = sum x^k/(k!)^nu <= e^{nu x^(1/nu)}, the beta < 1 Hoelder variant, r!s! >= (k!)^2, log k! bounds) and the S:temporal-type-continuity cluster: `L:positive-series-type` (main 7149-7190) in full; `P:moment-growth-logconvex` (7443-7499) and `C:static-moment-constant-continuity` (7501-7533) with every conclusion proved | Mathlib Gamma, convexity (`ConvexOn.continuousOn_interior`), NNReal.add_rpow_le_rpow_add (probed) | positive-series-type same-assumptions; the other two inputs-supplied (E:full-moment-coefficient-holder and the type/growth identification; P:static-minorant-lower and Lambda_p(0) = C_p) | 1000-1300 |
+  | L6-h | `C:white-relative-width` (integrated_white_evaluation.tex 130-160) and `L:white-clock-laplace` (main 7572-7623) | TemporalEquilibrium.gamma_beta_duplication; Real.Gamma_eq_integral; Tonelli | same-assumptions, full (white-relative-width: Lean proves the inequality between the displayed formulas K_0(a) and M_a; that C_2 lies between them is T:white-moment-bounds, outside Lean) | 350-550 |
+
+  Dependencies: L6-e and L6-f use L6-d's lemmas; they are stated over those
+  lemmas as hypotheses and instantiated by the integrator (the L5-b pattern),
+  so all eight run in parallel. Total about 5500-7700 lines.
+
+  **Recommendation on stating C19 on `S1Bdd` (decision 1).** `S1Bdd`
+  (BddAbove of {I_Psi - v_Psi/2 : Psi in C_pos}) is word for word the first
+  claim of `P:variational-positive-scores` (unmasked TeX 272-274), so as a
+  named input it is no stronger than the manuscript fact, once the Lean
+  values are shown genuine (rate and cost integrable and finite, L6-d). But
+  its manuscript proof (309-325) is stochastic twice over: `T:full-upper`
+  (D1) and the raw-block point lower bound of `P:variational-remove-mask`,
+  and Lean cannot show it is jointly satisfiable with H:homog. And it is
+  avoidable for almost all of C19: L6-e proves R_0 < infinity
+  deterministically, and the S_1^pos lower bounds hold input-free in the
+  existential form (equivalent to the TeX whenever S_1^pos is finite).
+  RECOMMENDED: do NOT make `S1Bdd` the foundation of C19. Prove R_0 < infinity
+  deterministically (L6-e) and state the C19 bounds input-free; use `S1Bdd`
+  only where the manuscript's object is the real number S_1^pos (the
+  boundedness and homogeneity in `P:variational-positive-scores`, the
+  sSup-form corollaries, and the manuscript-faithful "S1Bdd => R_0 finite"),
+  record it in BOUNDARIES.md with its TeX provenance, and name
+  `T:intrinsic-occupation-ceiling` as its later deterministic discharge
+  (1500-2500 lines plus D8-lite, an L7+ item). Mathematical note for Le: the
+  L6-e route makes R_0 < infinity independent of `T:full-upper`, for every
+  Gamma in H:homog including singular ones.
+
+  **B9 check (decision 3).** `C:white-relative-width` can be taken: its
+  statement is about the two displayed formulas K_0(a) = 2^a/(1-a) and M_a
+  of `T:white-moment-bounds` only (c and the spatial energy cancel); its
+  proof uses only the duplication and recurrence of `L:equilibrium-gamma-beta`
+  (formalized) and Cauchy-Schwarz in Euler's integral; it neither uses nor
+  proves any part of B9's `P:white-spatial-energy` (the CDF square
+  identity, H^1 profiles, the spatial energy constant).
+
+  Decisions for Le inside this approval (defaults in brackets):
+  1. `S1Bdd` scope: [as recommended above].
+  2. The existential form of the S_1^pos lower bounds: [classified
+     same-assumptions with a note; the sSup form appears as an `S1Bdd`
+     corollary].
+  3. `C:white-relative-width`: [taken, as checked above].
+  4. L6-a's d = 3 Green measure through `Measure.toSphere`: [a definitional
+     row; Fourier identity in d = 1 only, d = 2 as stretch, d = 3 deferred].
+
+  Gates as in wave L5 (exact-hypothesis wrappers, refutations importing
+  the package, Audit, claims/ledger/coverage, check-controls, comparator
+  regeneration for every new theorem claim, lean-pkg receipts of both tiers
+  at one commit with no edits in the checkout during the run, regate,
+  `claims ledger` READY with 0 open; one Codex GPT-6.1-Sol correspondence
+  review per item with a packet built from the declarations its rows name,
+  plus a confirmation review; Easley `leanchecker --fresh` of the new and
+  changed modules; Le closes the gate). Stopping condition: all eight items
+  integrated and reviewed, or an item at its fallback scope with the
+  remainder recorded as a named input; at most two repair rounds per item.
+
+  Not in L6, with reasons: the C22 infinite-dimensional results (Mathlib has
+  no Schatten classes, trace class, singular values of compact operators or
+  min-max: a separate W3 foundation package, approximation numbers,
+  2000-3500 lines, high risk); the first `T:full-upper` steps
+  (`L:inventory-product` in full, the deterministic parts of
+  `C:static-interaction` and `P:interval-coefficients`,
+  `L:uniform-series-tail`; they reuse L6-g, proposed for L7); D8-lite half
+  (a) (density of smooth compact functions in the weak-gradient H^1,
+  600-900 lines) and with it the H^1 versions of `P:spatial-four-linear`,
+  `P:spatial-energy-map`, `P:occupation-physical-class` (L7);
+  `P:variational-remove-mask` (only consumer stochastic); the
+  E:masked-actual-noise-norm identity (low value); everything needing D1,
+  D5, D7 or full D8 (B22, `P:wave-square-columns`, the noise parts of
+  `P:masked-noise-completion`, C2, C9). B3, B4, B9 stay reserved.
 - **Easley external kernel replay (2026-11-10): PASS 35/35** at companion
   837778a (the wave-L2 library; sources byte-identical through 64070a7):
   every module and the umbrella replayed by its own `lake env leanchecker
@@ -628,6 +717,7 @@
 | L3 | CLOSED (Le) | 2026-11-10 | Four items (B6, B16, B14 with a D4 slice, C22 finite slice); gate at companion dfc2fe8 over 3920258; reviews/2026-11-10-lean-wave-l3-* |
 | L4 | CLOSED (Le) | 2026-11-11 | Four items (masked spectral growth and B14 input discharge, time-Schur and masked modulation, frequency row, occupation kernel row); gate at companion ac6f767 over 3920258; reviews/2026-11-11-lean-wave-l4-* |
 | L5 | CLOSED (Le) | 2026-11-11 | Six items (H_a completion with B24 at same assumptions, masked continuous wave, masked auxiliary norm, rest of the damped-norm lemma, heat envelope and global mean, phase Bessel); gate at companion 712c307 over 975feb3; reviews/2026-11-11-lean-wave-l5-* |
+| L6 | PROPOSED | 2026-11-11 | Eight items (wave Green measure, quotient obstruction and finite Gaussian comparison, wave two-variances core, variational foundations and two C18 results, deterministic R_0 and the smooth ratio, static controls, series-type cluster, white relative width and clock Laplace); awaiting Le's approval |
 
 ## New proof seams retained for later statement fences
 
