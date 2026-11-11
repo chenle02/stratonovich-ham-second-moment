@@ -377,6 +377,81 @@
   D8 H^(1/2) x H^(-1/2) duality, H_a-valued Bochner integrals; only its
   continuous-sine-quotient item exists, `WaveKernel.waveHat_zero`); B5,
   C3, C20, E3 (need D5, D8 or D1). B3, B4, B9 stay reserved.
+- **WAVE L5: PROPOSED (2026-11-11), for Le's approval.** From the board
+  (companion branch docs/community), excluding the reserved B3, B4, B9.
+  Three read-only feasibility reconnaissances against the TeX at 975feb3,
+  every Mathlib name probed by compiling scratch files against the
+  companion at 3a7d57f (session scratch l5-feas/R1-R3, Probe*.lean;
+  several probes already contain working proofs: the scaling identities
+  and the N_1 tail of the damped norms, the heat-envelope identity, the
+  exponential-kernel square identity, a compiling H_a completion with B24
+  at same assumptions modulo four form facts). Six items, one agent and
+  one worktree each, as in waves L3 and L4:
+
+  | Item | Target (label, TeX at 975feb3) | Builds on / new foundation | Class (fallback) | Size |
+  |---|---|---|---|---|
+  | L5-a | C21 `L:masked-time-completion` (integrated_covariance_foundation.tex 141-181), and B24 `L:masked-trig-products` with NOTHING supplied | Build H_a: the time form on L^2(0,T) as a pre-inner product (`timeForm`), Mathlib `UniformSpace.Completion`; positive semidefiniteness by the TeX's route (exponential-kernel square identity, triple Fubini, Gamma subordination via `TimeFractional`, integrability from the Schur bound); separability; then `hmem` and `hnorm` hold by construction and `masked_trig_products_bridged_paper` instantiates | same-assumptions (0 < a < 1, T > 0; no Gamma != 0, as the TeX says); conclusion narrower unless test density inside (0,T) is added (100-200 lines, stretch): H_a is the completion of L^2(0,T), shown equal to the TeX's completion of compact smooth tests only with that density. B24 becomes same-assumptions (fallback: PSD as one named hypothesis; B24 then has one supplied input instead of two) | 900-1100 lines |
+  | L5-b | C21 `L:masked-continuous-wave` (378-423) | A different proof from the TeX's H_a-valued averaging: move the b-factors (r <= 1) and the coefficient <r>/r (r >= 1) into the C^1 amplitude, apply B24 at frequency 0 and compare brackets; the constant C_1 = 4 3^(1-a) C_0 is reproduced exactly (checked case by case). Stated first with B24's `hmem`/`hnorm` inputs, so it runs in parallel with L5-a; the integrator instantiates it with L5-a's H_a | same-assumptions once L5-a lands (fallback: keep the two inputs) | 450-650 lines |
+  | L5-c | C21 `P:masked-auxiliary-norm` (77-137) | Paper-convention Fourier transform (`GaussianTest` already converts once); Tonelli with `MaskedSpectralGrowth.closedBall_le` for the uniform ball bound; local finiteness from it; temperedness by Peetre plus Schwartz decay; scalar Fourier inversion and an H-valued Bochner Fubini for the convolution identity | same-assumptions for the even/tempered/Radon, ball-bound and complex-Hilbert parts (H:homog, Gamma != 0, real nonzero Schwartz zeta); the real-H clause narrower (stated via complexification or omitted) (fallback: ball bound and measure properties, about 300 lines, with the convolution identity supplied) | 700-1000 lines |
+  | L5-d | The rest of `L:damped-homogeneous-norms` (main TeX 745-846): N_1 and N_2^2 scaling, both tails `E:damped-tail-norms`, smoothing and truncation monotonicity, `N_0 = theta^-2`; bundled into one `_paper` theorem with the finiteness part already in `ClockCopyHomog` | Probes already prove N2sq_scaling, N1_scaling, N0's Laplace value and the N_1 tail; the N_2 tail via `K_eq_integral_weight` restricted to l > M; monotonicity by per-lambda weight comparison and `setIntegral_mono_set` | same-assumptions (H:homog only; no Gamma != 0), with two points for Le below: the reading of the smoothing/truncation sentence, and `N_0` (fallback: N_0's Green mass `G_s(R^d) = s`, imported in the TeX from Chen (2.5), as one named input; stretch: a `WaveGreen` module, d = 1, 2 easy, d = 3 via `Measure.toSphere`) | 450-650 lines (+250-350 stretch) |
+  | L5-e | C18 `L:variational-heat-envelope` (integrated_unmasked_variational.tex 23-62) and `L:variational-global-mean` (64-96) | `MaskedSpectralGrowth.spectral_translated_gauss` (the identity is already proved in a probe), `VariationalDilation.conv`/`mean`; Lipschitz in time from `ContDiff.lipschitzWith_of_hasCompactSupport`; also discharges the `integrable_pot` side condition of `IsRayleighTrial` for the paper's potential | heat envelope same-assumptions (Gamma != 0 carried); global mean same-assumptions with a narrower conclusion: the displayed bounds 0 <= h_s <= M and the time-Lipschitz bound; "every mixed derivative is bounded" not formalized (stretch, about 400 lines) | 500-650 lines |
+  | L5-f | C21 `L:phase-bessel` (integrated_wave_variance.tex 346-366) | none beyond Mathlib (Bochner integrals, inner products): 0 <= int sum ||g_j - phi_j||^2 with phi_j the projection, the TeX's own argument, no basis or Parseval | same-assumptions, more general (any measure space, any complete complex inner product space; separability not needed) (fallback: scalar H = C first) | 250-350 lines |
+
+  Decisions for Le inside this approval (defaults in brackets):
+  1. L5-d smoothing/truncation sentence (main TeX 789-791, used at
+     1072-1082 and 1591-1600): read "Gaussian smoothing" as a multiplier g
+     on mu with 0 <= g <= 1 and "restriction of a temporal Laplace domain"
+     as restricting lambda to a measurable subset of (0,inf) [adopt this
+     reading and state it in the ledger row].
+  2. L5-d `N_0`: [named input `G_s(R^d) = s` now; `WaveGreen` as stretch].
+  3. L5-a test density inside (0,T): [stretch; otherwise the row says
+     narrower conclusion].
+
+  Optional, only if an agent finishes early: `P:masked-quotient-obstruction`
+  (253-292; the d = 2, alpha = 1 counterexample; E W(F)^2 read as the E:cov
+  covariance functional, a definitional D1 boundary; core 250-400 lines,
+  plus 300-450 to show this Gamma satisfies H:homog, or that part supplied);
+  the finite Gaussian comparison of `P:masked-noise-completion` (d') (A <= B
+  in PSD order gives E||N(0,A)||^p <= E||N(0,B)||^p; the convolution
+  identity already compiles; 200-300 lines); the Rayleigh-form part of
+  `P:variational-unmasked-rate` (rate Lipschitz with a uniform positive
+  floor and I_Psi in (0,inf), no inputs, narrower: no operator; 400-550).
+
+  Gates as in wave L4: compile and `#print axioms` (standard three only),
+  no sorry; exact-hypothesis `_paper` wrappers; refutations importing the
+  package and naming negation theorems; Audit printouts;
+  claims/ledger/index/coverage rows; check-controls; comparator
+  regeneration (Challenge, ChallengeDefs, Solution, CheckFidelity) for
+  every new theorem claim; lean-pkg receipts of both tiers at one commit
+  (no edits in the checkout while a receipt runs), regate, `claims ledger`
+  READY with 0 open; one Codex GPT-6.1-Sol correspondence review per item
+  with a packet built from the declarations its rows name, plus a
+  confirmation review; Easley `leanchecker --fresh` of the new and changed
+  modules; Le closes the gate. Stopping condition: all six items
+  integrated and reviewed, or an item at its fallback scope with the
+  remainder recorded as a named input; at most two repair rounds per item.
+  Board effect if all land: C21 gains four results and B24 needs nothing
+  supplied; `L:damped-homogeneous-norms` becomes complete; C18 gains two
+  lemmas.
+
+  Not in L5, with reasons: the rest of C19 (`L:spatial-static-controls`,
+  `P:spatial-smooth-ratio`, `P:spatial-four-linear`,
+  `P:spatial-energy-map`, `P:occupation-physical-class`): every finiteness
+  claim about S_1^pos, R_0 and R_sp comes from T:full-upper (D1), so in
+  Lean they would take one stochastic input (`S1Bdd`, boundedness of the
+  score set), and their H^1 versions need "D8-lite" (density of smooth
+  compact functions in the hand-rolled weak-gradient H^1); class O cannot
+  be stated verbatim. Proposed for a later wave once Le decides whether
+  results resting on `S1Bdd` are worth stating now. Also out:
+  `P:masked-noise-completion` except (d') (needs the noise, D1);
+  `P:wave-two-variances` (D1, D8; only an inputs-supplied deterministic
+  core with four inputs would be possible), `P:wave-square-columns` and B22
+  `P:actual-wave-form` (D1, D8); the operator half of
+  `P:variational-unmasked-rate` (D8); the seven infinite-dimensional C22
+  results. Mathlib news for the roadmap: the pinned Mathlib has
+  `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
+  `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
+  would give D8-lite (estimated 800-1500 lines).
 - **Easley external kernel replay (2026-11-10): PASS 35/35** at companion
   837778a (the wave-L2 library; sources byte-identical through 64070a7):
   every module and the umbrella replayed by its own `lake env leanchecker
@@ -487,6 +562,7 @@
 | L2 | CLOSED (Le) | 2026-11-10 | Three whole results (C26, B23, B24); verified-private at 79afdde; reviews/2026-11-10-lean-wave-l2-* |
 | L3 | CLOSED (Le) | 2026-11-10 | Four items (B6, B16, B14 with a D4 slice, C22 finite slice); gate at companion dfc2fe8 over 3920258; reviews/2026-11-10-lean-wave-l3-* |
 | L4 | CLOSED (Le) | 2026-11-11 | Four items (masked spectral growth and B14 input discharge, time-Schur and masked modulation, frequency row, occupation kernel row); gate at companion ac6f767 over 3920258; reviews/2026-11-11-lean-wave-l4-* |
+| L5 | PROPOSED | 2026-11-11 | Six items (H_a completion with B24 at same assumptions, masked continuous wave, masked auxiliary norm, rest of the damped-norm lemma, heat envelope and global mean, phase Bessel); awaiting Le's approval |
 
 ## New proof seams retained for later statement fences
 
