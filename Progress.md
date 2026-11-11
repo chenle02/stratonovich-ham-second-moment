@@ -19004,3 +19004,11 @@ author, still AI-reviewed, not human-verified. The companion README at
 replayed on Easley (#22's job 5690458 running). Clean build, 335 pages,
 Appendix F on book pages 305-307 inspected; real release filter leaves all
 seven public files byte-identical.
+
+Coverage re-pin (same day): #22 reports the L5 gate closed and the companion
+README at a7f90b0 (docs-only, README only after 73ed477) now records the
+author's acceptance. Appendix F's coverage files are read from a7f90b0; the
+verified commit stays 712c307. coverage.yaml, the receipt summary and
+notes/lean-coverage-data.tex are byte-identical, so the PDF is unchanged.
+One more README-only companion commit will follow when the Easley replay
+(job 5690458) finishes; only the coverage SHA would move.
