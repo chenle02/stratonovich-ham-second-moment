@@ -9,7 +9,9 @@ Inputs (all committed beside this script, or the repository's git history):
   tokens/token-totals.json  token and cost totals (token_totals.py)
   no-go/nogo-counts.json     kind and status of each no-go record (the full
                              ledger is held back; see no-go/README.md)
-  git log                    commits per day, first and last date
+  git log                    commits per day, first and last date; recorded in
+                             commits-per-day.json for use where the counted
+                             commit id does not exist (the filtered public repo)
 
 Usage (from the repository root):
   python3 scripts/ai-statistics/make_appendix.py
@@ -39,11 +41,35 @@ def load():
     return runs, stats, usage, nogo
 
 
+COMMITS_FILE = os.path.join(HERE, "commits-per-day.json")
+
+
 def git_commits(until):
+    """Commits per UTC day up to the counted commit.
+
+    In the working repository the counted commit exists: count from git and
+    record the result in commits-per-day.json. In the public repository the
+    history filter has rewritten every commit id (and dropped commits that
+    touched only private files), so the recorded counts are used instead.
+    """
     env = dict(os.environ, TZ="UTC")  # same day boundary as the review runs
-    out = subprocess.run(["git", "log", "--format=%ad", "--date=format-local:%Y-%m-%d", until],
-                         capture_output=True, text=True, check=True, env=env).stdout.split()
-    return collections.Counter(out)
+    known = subprocess.run(["git", "cat-file", "-e", until + "^{commit}"],
+                           capture_output=True).returncode == 0
+    if known:
+        out = subprocess.run(["git", "log", "--format=%ad", "--date=format-local:%Y-%m-%d", until],
+                             capture_output=True, text=True, check=True, env=env).stdout.split()
+        counts = collections.Counter(out)
+        with open(COMMITS_FILE, "w") as fh:
+            json.dump({"counted_commit": until, "time_zone": "UTC",
+                       "total": sum(counts.values()), "per_day": dict(sorted(counts.items()))},
+                      fh, indent=2)
+            fh.write("\n")
+        return counts
+    rec = json.load(open(COMMITS_FILE))
+    if rec["counted_commit"] != until:
+        raise SystemExit(f"commits-per-day.json records {rec['counted_commit'][:7]}, "
+                         f"but the review counts were made at {until[:7]}")
+    return collections.Counter(rec["per_day"])
 
 
 def fmt_int(n):

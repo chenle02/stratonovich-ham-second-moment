@@ -6,6 +6,7 @@ from the files in this folder and the repository's git history.
 | Path | What it is |
 |---|---|
 | `make_appendix.py` | Writes `notes/ai-statistics-data.tex` (macros, table rows, figure). |
+| `commits-per-day.json` | Commits per UTC day in the working repository up to the counted commit (written by `make_appendix.py`). |
 | `reviews/` | `count_reviews.py` counts review runs from `reviews/`; outputs `runs.tsv`, `review-stats.json`, `unclassified.txt`. |
 | `tokens/` | `token_totals.py` reads local model logs; `token-totals.json` is the recorded snapshot. |
 | `no-go/` | `nogo-counts.json`: kind and status of each recorded no-go (see its README). |
@@ -25,7 +26,7 @@ places); everyone else uses the committed `token-totals.json`.
 
 | Number in Appendix E | Source |
 |---|---|
-| days, first and last day, commits (UTC days) | `git log` up to the commit named in `reviews/review-stats.json`, `TZ=UTC` |
+| days, first and last day, commits (UTC days) | `git log` up to the commit named in `reviews/review-stats.json`, `TZ=UTC`, recorded in `commits-per-day.json`. The public repository's history is filtered (commit ids rewritten, private-only commits dropped), so there the script reads this file. |
 | review folders, folders with a run, runs, follow-ups, runs dated by folder name | `reviews/review-stats.json`, `reviews/runs.tsv` |
 | review table: runs, completed, not completed, met the bar, FAIL, MEDIUM, hours and their coverage | `reviews/runs.tsv` (rules in `make_appendix.py`) |
 | GPT FAIL count | `reviews/runs.tsv`, family GPT/Codex |
