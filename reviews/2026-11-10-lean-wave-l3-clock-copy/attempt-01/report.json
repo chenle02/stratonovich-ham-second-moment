@@ -1,0 +1,633 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-597 complete.",
+    "candidate/statement-ledger.md:1-189,215-229,579-766,1590-1636 partial file; required Scope, Index by label, ClockCopy section and relevant cross-reference contexts complete. Relevant references were also searched throughout the file.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 complete.",
+    "lean/StratonovichHAMSecondMoment/WaveKernel.lean:1-180 complete.",
+    "lean/StratonovichHAMSecondMoment/TimeFractional.lean:1-440 complete.",
+    "lean/StratonovichHAMSecondMoment/SpectralHomog.lean:1-318 complete.",
+    "lean/StratonovichHAMSecondMoment/DampedNorms.lean:1-372 complete.",
+    "lean/StratonovichHAMSecondMoment/ClockCopy.lean:1-774 complete.",
+    "lean/claims.yaml:2318-3112 partial file; all entries for the five ClockCopy-section modules complete.",
+    "lean/coverage.yaml:1-430 complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:150-216,640-760,4505-4535,7420-7445,7480-7710 partial file; all required ranges complete. Relevant label definitions were searched across all supplied manuscript files."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveKernel.waveHat: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:653 and claims.yaml:2326 match WaveKernel.lean:43-44, 's * Real.sinc (s * \u2016\u03be\u2016)', without restrictions. TeX:649-650 defines 'sin(s|\u03be|)/|\u03be|' with value s at zero in unlabelled prose. The real-valued representation agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveKernel.waveHat_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:654 and claims.yaml:2333 match WaveKernel.lean:47, 'Continuous fun z : \u211d \u00d7 Rd d => ...', with no hypotheses. TeX:649-650 supplies the wave function but no joint-continuity lemma. Auxiliary classification is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveKernel.waveHat_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:655 and claims.yaml:2340 match WaveKernel.lean:53, 'waveHat s (0 : Rd d) = s', for arbitrary real s. TeX:650 explicitly says 'with value s at \u03be = 0' in unlabelled prose."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveKernel.waveHat_of_ne_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:656 and claims.yaml:2347 match WaveKernel.lean:57-58, hypothesis '\u03be \u2260 0' and the sine quotient. TeX:649-650 gives that quotient away from zero, without a direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveKernel.abs_waveHat_le: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:657 and claims.yaml:2354 match WaveKernel.lean:66, '|waveHat s \u03be| \u2264 |s|', for all real s. TeX:719 uses '|\u011c_s(\u03be)| \u2264 min(s,|\u03be|\u207b\u00b9)' on positive time. The explicitly stated real-time extension is harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveKernel.abs_waveHat_le_inv: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:658 and claims.yaml:2361 match WaveKernel.lean:71-72, hypothesis '\u03be \u2260 0' and bound '1 / \u2016\u03be\u2016'. TeX:719 uses precisely this component of the minimum bound; the zero-frequency restriction avoids division by zero."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveKernel.abs_waveHat_le_min: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:659 and claims.yaml:2368 match WaveKernel.lean:77-78, '0 \u2264 s', '\u03be \u2260 0' and 'min s (1 / \u2016\u03be\u2016)'. TeX:719 states the same bound for the positive-time integrals."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveKernel.waveHat_scaling: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:660 and claims.yaml:2375 match WaveKernel.lean:82-83, hypothesis '0 < \u03b8' and factor '\u03b8\u207b\u00b9'. TeX:735-738 uses '\u011c_{u/\u03b8}(\u03b8\u03b7) = \u03b8\u207b\u00b9\u011c_u(\u03b7)' under \u03b8 > 0. Constants and dilation direction agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveKernel.abs_waveHat_mul_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:661 and claims.yaml:2382 match WaveKernel.lean:91-92, the unrestricted product bound with constant 2. TeX:719-729 instead splits low and high frequencies; it does not state this combined majorant. Auxiliary classification is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveKernel.waveHat_laplace: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:662 and claims.yaml:2389 match WaveKernel.lean:128-130, '0 < a', integrability on L0 and integral '1/(a\u00b2+\u2016\u03be\u2016\u00b2)'. TeX:666-667 states the same transform in unlabelled prose. Zero frequency is included."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.integral_pos_of_ae_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:663 and claims.yaml:2397 match TimeFractional.lean:59-61, 'Integrable f \u03bc', '\u03bc \u2260 0' and '0 < f' almost everywhere. TeX:7625-7629 invokes positivity in the application but contains no general measure-space lemma. No direct label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.integrable_of_rpow_bounds: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:664 and claims.yaml:2404 match TimeFractional.lean:71-75: '-1 < p', 'q < -1', a.e. strong measurability and the two power bounds. TeX:7623-7625 gives application-specific asymptotics, not this general helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.subKernel_integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:665 and claims.yaml:2411 match TimeFractional.lean:94-98, '0 < a', '0 < r' and integrability of \u03bb^(a-1)e^(-r\u03bb). TeX:7510-7511 uses this integrability in unlabelled prose. Auxiliary classification is reasonable."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.subKernel_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:666 and claims.yaml:2418 match TimeFractional.lean:106-107, hypothesis '0 \u2264 l', without restrictions on a or r. TeX:7504-7505 has the corresponding positive-domain integrand but no separate labelled nonnegativity statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.rpow_neg_eq_subordination: P:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "Ledger:667 and claims.yaml:2425 match TimeFractional.lean:112-113, '0 < a', '0 < r' and Gamma(a)^(-1). TeX:7604-7606 explicitly invokes the 'Laplace formula for the power covariance'; the manuscript's 0 < a < 1 lies within the Lean range."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.Psi: E:averaged-clock-kernel",
+      "verdict": "PASS",
+      "reason": "Ledger:668 and claims.yaml:2432 match TimeFractional.lean:123-127, including '-v*l\u00b2/2' and Gamma(a)^(-1). TeX:7502-7506 defines the same integral for 'r>0,v\u22650'. Lean's totalized extension outside that domain does not change the manuscript object."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.psiKernel_measurable: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:669 and claims.yaml:2439 match TimeFractional.lean:130, 'Measurable (psiKernel a r v)', for arbitrary parameters. TeX:7504-7505 displays this integrand but has no separate measurability lemma. Auxiliary mapping is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.psiKernel_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:670 and claims.yaml:2446 match TimeFractional.lean:134-135, '0 \u2264 v', '0 \u2264 l' and domination by subKernel. TeX:7510-7512 gives the resulting integral bound, not this separately stated pointwise helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.psiKernel_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:671 and claims.yaml:2453 match TimeFractional.lean:142-143, requiring only '0 < l'. TeX:7504-7505 contains the positive integrand on \u03bb > 0 but no direct labelled positivity lemma for it."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.psiKernel_integrable: E:averaged-clock-kernel",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:672 and claims.yaml:2460 match TimeFractional.lean:146-147, '0 < a', '0 < r', '0 \u2264 v'. TeX:7510-7511 justifies Fubini by the integrable exponential majorant. The cited ledger line numbers are shifted; see W8."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.Psi_zero: E:averaged-clock-kernel",
+      "verdict": "PASS",
+      "reason": "Ledger:673 and claims.yaml:2467 match TimeFractional.lean:155, '0 < a', '0 < r' and 'Psi a r 0 = r^(-a)'. TeX:7504-7509 gives the same specialization, including the variance-zero Gaussian interpretation. It is more precise than merely citing the upper bound."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.Psi_pos: E:averaged-clock-kernel",
+      "verdict": "PASS",
+      "reason": "Ledger:674 and claims.yaml:2474 match TimeFractional.lean:162, '0 < a', '0 < r', '0 \u2264 v' and strict positivity. TeX:7512 states nonnegativity; strict positivity follows directly from its positive integrand at 7504-7505. This harmless strengthening is visible in the row."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.Psi_antitone: E:averaged-clock-kernel",
+      "verdict": "PASS",
+      "reason": "Ledger:675 and claims.yaml:2481 match TimeFractional.lean:170-171: '0 < a', '0 < r', '0 \u2264 v', 'v \u2264 v\u2032'. TeX:7502 and 7512 specify the same domain and that Psi 'decreases with v'. Inequality direction agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.Psi_le_rpow: E:averaged-clock-kernel",
+      "verdict": "PASS",
+      "reason": "Ledger:676 and claims.yaml:2488 match TimeFractional.lean:184-185, '0 < a', '0 < r', '0 \u2264 v' and 'Psi a r v \u2264 r^(-a)'. TeX:7512 states this exact bound."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.Psi_properties_paper: E:averaged-clock-kernel",
+      "verdict": "PASS",
+      "reason": "Ledger:677 and claims.yaml:2495 match TimeFractional.lean:191-196, including integrability, nonnegativity, antitonicity and the power bound under '0 < a', '0 < r', '0 \u2264 v \u2264 v\u2032'. TeX:7502-7512 contains these properties on that domain."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.twoTimeC_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:678 and claims.yaml:2502 match TimeFractional.lean:201-205, joint continuity for arbitrary complex a,b and real \u03bb. TeX:7583-7602 integrates wave products rather than stating this general exponential-kernel continuity fact."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.integrable_exp_neg: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:679 and claims.yaml:2509 match TimeFractional.lean:209-211, hypothesis '0 < c' and exponential integrability on L0. TeX:7583-7602 uses exponential damping but has no direct label for this general helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.twoTimeC_integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:680 and claims.yaml:2516 match TimeFractional.lean:214-215, '0 < a.re', '0 < b.re', '0 \u2264 lam'. TeX:7583-7602 treats a different, wave-product integrand. Auxiliary classification is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.twoTimeC_cone: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:681 and claims.yaml:2523 match TimeFractional.lean:227-228, requiring '0 < b.re', '0 \u2264 lam', with arbitrary real s. TeX:7593-7598 instead evaluates a sine-containing cone integral. No direct label is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.twoTimeC_half_lt: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:682 and claims.yaml:2530 match TimeFractional.lean:250-255, '0 < b.re', '0 \u2264 lam', '0 < s', and indicator t > s. TeX:7585 mentions the time cones but does not state this complex exponential half-cone identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.twoTimeC_half_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:683 and claims.yaml:2537 match TimeFractional.lean:258-264, '0 < b.re', '0 \u2264 lam', '0 < s', and indicator t \u2265 s. TeX:7585 has no separate closed-half-cone exponential identity. The null boundary causes no discrepancy."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.integral_cexp_neg_Ioi: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:684 and claims.yaml:2544 match TimeFractional.lean:267-268, hypothesis '0 < z.re' and integral '1/z'. TeX:7583-7602 contains elementary damped integrations, but not this general complex statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.twoTimeC_integral_lt: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:685 and claims.yaml:2551 match TimeFractional.lean:274-277, positive real parts, \u03bb \u2265 0 and cone s < t, with value '1/(a+b)/(b+\u03bb)'. TeX:7585-7601 computes wave-product cones, not this auxiliary formula."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.twoTimeC_swap: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:686 and claims.yaml:2558 match TimeFractional.lean:291-295, unrestricted swapping of rates and coordinates. TeX:7601 adds the second cone but does not state this general kernel symmetry lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.twoTimeC_integral: P:clock-copy-obstruction",
+      "verdict": "FAIL",
+      "reason": "Fidelity holds: Ledger:687 and claims.yaml:2565 match TimeFractional.lean:299-303, '0 < a.re', '0 < b.re', '0 \u2264 lam'. Mapping fails: TeX:7583-7602 evaluates 'e^{-\u03b8(s+t)-\u03bb|s-t|} \u011c_s conjugate(\u011c_t)' using sine integrals, not the general complex exponential identity. Relabel as a Lean-route auxiliary; W1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.twoTimeR_ofReal: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:688 and claims.yaml:2572 match TimeFractional.lean:346-347, unrestricted casting of twoTimeR to twoTimeC with a=b=c. TeX:7646-7653 uses q,w coordinates and a resolvent identity, not this cast lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.twoTimeR_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:689 and claims.yaml:2579 match TimeFractional.lean:354, positivity for all real c,\u03bb and coordinates. TeX:7646 invokes nonnegative Tonelli, but has no general real two-time exponential positivity lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.twoTimeR_integral: P:clock-copy-obstruction",
+      "verdict": "FAIL",
+      "reason": "Ledger:690 and claims.yaml:2586 faithfully summarize TimeFractional.lean:357-358, '0 < c', '0 \u2264 lam', integral '1/(c(c+lam))'. TeX:7646-7648 instead integrates q to '2(1-e^{-Aw})/A'. The manuscript does not use this two-time lemma; W1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.twoTimeR_lintegral: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:691 and claims.yaml:2593 match TimeFractional.lean:375-379, '0 < c', '0 \u2264 lam' and the ENNReal lower-integral identity. TeX:7646 invokes Tonelli without this lower-integral formulation. Auxiliary classification is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.iterated_integral_swap: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:692 and claims.yaml:2600 match TimeFractional.lean:386-391, '[SFinite \u03bcX]', '[SFinite \u03bcY]', '[SFinite \u03bcZ]' and 'Integrable F'. TeX:7583 and 7646 invoke Fubini/Tonelli in specific applications, not this arbitrary-space rearrangement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeFractional.lintegral_triple_twoTime: no direct label",
+      "verdict": "PARTIAL",
+      "reason": "TimeFractional.lean:406-413 assumes '[SFinite \u03bd]', '[SFinite \u03bc]' and measurability of each of f,c,A, besides their signs. Ledger:693 and claims.yaml:2607 omit the measure hypotheses and do not clearly distribute measurability across all three functions. TeX:7646's 'nonnegative Tonelli' does not justify an arbitrary-measure version. Auxiliary mapping itself is right; W3."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralHomog.SpectralHomogeneous: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:694 and claims.yaml:2615 match SpectralHomog.lean:59-61: every measurable A and '0 < c' satisfy '\u03bc(c \u2022 A)=ofReal(c^alpha)*\u03bc A'. TeX:704-705 derives exactly '\u03bc(cA)=c^\u03b1\u03bc(A)'; TeX:4522-4525 confirms the quantifiers. The supplied input is not stronger."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralHomog.map_smul_eq: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:695 and claims.yaml:2622 match SpectralHomog.lean:66-67, 'SpectralHomogeneous \u03bc alpha', '0 < c', and pushforward factor c^(-alpha). TeX:704-705's set scaling and TeX:4522-4525's explicit pushforward description give this same equivalent identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralHomog.integral_comp_smul: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:696 and claims.yaml:2629 match SpectralHomog.lean:74-76, 'SpectralHomogeneous', '0 < c', 'Measurable f' and factor c^(-alpha). TeX:734-738 uses this change of spectral variables for finite integrals. Lean additionally permits totalized nonintegrable cases; this does not alter the paper-domain identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralHomog.measure_ball: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:697 and claims.yaml:2636 match SpectralHomog.lean:82-83, spectral homogeneity and '0 < r'. TeX:706 states '\u03bc(B_r)=r^\u03b1 V' with V=\u03bc(B_1). Ball scaling and exponent agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralHomog.measure_zero: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:698 and claims.yaml:2643 match SpectralHomog.lean:89-90, 'SpectralHomogeneous', '[IsLocallyFiniteMeasure \u03bc]', '0 < alpha'. TeX:705-706 explicitly uses 'Radon finiteness and \u03b1 > 0' to conclude '\u03bc({0})=0'."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralHomog.integrable_of_le_inv: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:699 and claims.yaml:2650 match SpectralHomog.lean:105-108, integrable resolvent majorant, a.e. strong measurability and the pointwise K-bound. TeX:719-729 uses different concrete bounds and has no general domination lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralHomog.integrable_inv_one_add_sq: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:700 and claims.yaml:2657 match SpectralHomog.lean:112-114, spectral homogeneity, local finiteness and 'alpha < 2'. TeX:709-713 proves the resolvent integral finite under '0 < \u03b1 < 2'. The explicitly stated Lean generalization does not require the unused lower bound."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralHomog.resolvent: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:701 and claims.yaml:2664 match SpectralHomog.lean:173, '\u222b \u03be, 1/(q\u00b2+\u2016\u03be\u2016\u00b2) \u2202\u03bc'. TeX:7519 defines the same R_Gamma in unlabelled setup, used for q > 0. No Fourier normalization factor is missing."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralHomog.heat: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:702 and claims.yaml:2671 match SpectralHomog.lean:176, exponential '-w*\u2016\u03be\u2016\u00b2/2'. TeX:7517-7518 defines h_Gamma by exactly that spectral integral for w > 0. The physical heat-average identification is separately excluded from formalization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralHomog.resolvent_integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:703 and claims.yaml:2678 match SpectralHomog.lean:179-180, integrable (1+\u2016\u03be\u2016\u00b2)^(-1) and 'q \u2260 0'. TeX:7521 says the resolvent is finite for 'q>0'. The broader q-range is explicit and harmless because the denominator depends on q\u00b2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralHomog.heat_integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:704 and claims.yaml:2685 match SpectralHomog.lean:195-197, integrable resolvent majorant and '0 < w'. TeX:7521 states heat-mass finiteness for 'w,q>0'. These are unlabelled setup facts."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralHomog.resolvent_homog: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:705 and claims.yaml:2692 match SpectralHomog.lean:225-226, spectral homogeneity and '0 < q', yielding q^(alpha-2)R(1). TeX:7521-7523 states that same formula in unlabelled prose."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralHomog.heat_homog: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:706 and claims.yaml:2699 match SpectralHomog.lean:244-245, spectral homogeneity and '0 < w', yielding w^(-alpha/2)h(1). TeX:7521-7522 states the identical homogeneity in unlabelled prose."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralHomog.resolvent_sub_pos: P:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "Ledger:707 and claims.yaml:2706 match SpectralHomog.lean:260-262, integrable resolvent majorant, '\u03bc \u2260 0', '0 < q', 'q < q\u2032'. TeX:7625-7627 explicitly states 'R(\u03b8)-R(\u03b8+\u03bb)>0, since \u03bc\u22600'. The general q,q\u2032 formulation faithfully covers this step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralHomog.resolvent_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:708 and claims.yaml:2713 match SpectralHomog.lean:274-278, integrable majorant, '\u03bc \u2260 0', 'q \u2260 0'. TeX:7514-7521 assumes nonzero covariance and states positivity for q > 0 in unlabelled setup. The extension to negative q is harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralHomog.heat_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:709 and claims.yaml:2720 match SpectralHomog.lean:281-284, integrable majorant, '\u03bc \u2260 0', '0 < w'. TeX:7514-7521 assumes nonzero covariance and states heat-mass positivity for w > 0."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralHomog.spectral_ne_zero: P:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "Ledger:710 and claims.yaml:2727 match SpectralHomog.lean:289-290, locally finite \u0393, 'IsSpectralMeasure \u0393 \u03bc', '\u0393 \u2260 0'. TeX:7514 assumes nonzero covariance and TeX:7627 uses '\u03bc\u22600'. The Lean spectral convention at HomogHypothesis.lean:52-55 agrees with TeX:173-176."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedNorms.N2integrand: E:damped-norm-definitions",
+      "verdict": "PASS",
+      "reason": "Ledger:711 and claims.yaml:2735 match DampedNorms.lean:69-71, unrestricted definition with e^(-\u03b8(s+t))|s-t|^(-a) and the wave product. TeX:660-663 has a=alpha0 and a conjugate on the second real wave factor. Dropping that conjugate changes nothing."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedNorms.N2sq: E:damped-norm-definitions",
+      "verdict": "PASS",
+      "reason": "Ledger:712 and claims.yaml:2742 match DampedNorms.lean:74-76: the spectral integral is inside the P2 integral. TeX:660-663 has the same nesting with a=alpha0. Under the proved absolute integrability, product-measure and iterated-time formulations agree; diagonal conventions are harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedNorms.N1: E:damped-norm-definitions",
+      "verdict": "PASS",
+      "reason": "Ledger:713 and claims.yaml:2749 match DampedNorms.lean:79-80, Gamma(a)^(-1) times the \u03bb-integral of \u03bb^(a-1)R(\u03b8+\u03bb). TeX:657-659 gives exactly this expression with a=alpha0. No constants or spectral conventions differ."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedNorms.ae_L0_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:714 and claims.yaml:2756 match DampedNorms.lean:91, '\u2200\u1d50 l \u2202L0, 0 < l', with no hypotheses. TeX:657-663 integrates positive variables but does not state this restricted-measure helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedNorms.ae_P2: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:715 and claims.yaml:2763 match DampedNorms.lean:94-107: positive coordinates and unequal times P2-a.e. TeX:7546 says 'Values on u=v do not affect the integral'; there is no separate labelled product-measure lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedNorms.ae_triple: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:716 and claims.yaml:2770 match DampedNorms.lean:110-112, '[SFinite \u03bc]' and a.e. positivity/off-diagonal conditions on L0\u00d7(\u03bc\u00d7P2). TeX:7604-7623 does not introduce this triple-product auxiliary. Its stated measure hypothesis is explicit."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedNorms.one_add_le_exp: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:717 and claims.yaml:2777 match DampedNorms.lean:124-125, '0 < \u03b8', '0 \u2264 s' and factor '(1+2/\u03b8)e^(\u03b8s/2)'. TeX:719-729 uses a different absolute-integrability argument and does not state this bound."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedNorms.integrable_rpow_div: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:718 and claims.yaml:2784 match DampedNorms.lean:133-135, '0 < a', 'a < 1', '0 < c', '0 \u2264 K'. TeX:719-729 has finite time integrals but not this rational-power majorant helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedNorms.waveHat_measurable: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:719 and claims.yaml:2791 match DampedNorms.lean:164-165, unrestricted joint measurability. TeX:649-650 defines the wave transform but does not state a labelled measurability result. Auxiliary mapping is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedNorms.FK_measurable: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:720 and claims.yaml:2798 match DampedNorms.lean:168-174, 'Measurable (FK a \u03b8)' without parameter restrictions. TeX:719-729 does not define FK or use this subordinated-integrand measurability lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedNorms.FK_le_MK: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:721 and claims.yaml:2805 match DampedNorms.lean:182-183, '0 < a', '0 < \u03b8', positive s,t, and norm domination by MK. TeX:719-729 uses frequency splitting rather than this majorant. No direct label is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedNorms.MK_integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:722 and claims.yaml:2812 match DampedNorms.lean:225-228, '[SFinite \u03bc]', resolvent integrability, '0 < a < 1', '0 < \u03b8'. The omitted SFinite qualification follows mathematically from the everywhere-positive integrable resolvent majorant. TeX:719-729 contains no MK statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedNorms.FK_integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:723 and claims.yaml:2819 match DampedNorms.lean:266-269, resolvent integrability, '[SFinite \u03bc]', '0 < a < 1', '0 < \u03b8'. S-finiteness is entailed by that positive integrable majorant. TeX:719-729 does not state integrability of this subordinated FK object."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedNorms.integral_FK_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:724 and claims.yaml:2826 match DampedNorms.lean:278-279, '0 < a', 'p.1 \u2260 p.2', without positive-time hypotheses. TeX:7605 invokes power-kernel subordination but does not state this FK marginal identity. Auxiliary classification is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedNorms.N2integrand_integrable: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:725 and claims.yaml:2833 match DampedNorms.lean:296-299, integrable resolvent majorant and '0 < a < 1', '0 < \u03b8'. Its SFinite typeclass follows from that majorant. TeX:719-729 explicitly proves 'absolute integrability of the displayed spectral formula' under H:homog."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedNorms.N2_outer_integrable: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:726 and claims.yaml:2840 match DampedNorms.lean:309-313, the preceding integrability hypotheses and the actual nested N2 outer integrand. TeX:677-679 and 729 assert finiteness/absolute integrability. The resolvent hypothesis is derived under the wrapper's supplied homogeneity input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedNorms.N1_integrable: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:727 and claims.yaml:2847 match DampedNorms.lean:320-322, spectral homogeneity, '0 < a', '0 < \u03b8', 'a+alpha<2'. TeX:714-717 states the same zero/infinity conditions after substituting the homogeneous resolvent. The wrapper separately ensures genuine spectral integrability."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedNorms.damped_norms_finite_paper: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:728 and claims.yaml:2854 match DampedNorms.lean:358-364, 'HomogCovariance', 'SpectralHomogeneous', '0 < \u03b8' and all three integrability conclusions with a=alpha0. TeX:677-679 and 714-729 establish these N1/N2 conclusions. N0 and the remaining lemma conclusions are expressly excluded."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.weight: E:cross-clock-lambda-weight",
+      "verdict": "PASS",
+      "reason": "Ledger:729 and claims.yaml:2862 match ClockCopy.lean:85-86, \u03bb^(a-2)/(2\u03b8Gamma(a)) times R(\u03b8)-R(\u03b8+\u03bb). TeX:7555-7561 defines exactly that weight for \u03bb > 0. Lean's unrestricted definition agrees on the manuscript domain."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.filteredWeight: E:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "Ledger:730 and claims.yaml:2869 match ClockCopy.lean:89-90, '2*\u03b8/(2*\u03b8+l) * weight'. TeX:7568-7569 has this exact filtered density for positive \u03b8,\u03bb. The normalization agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.vRho: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:731 and claims.yaml:2876 match ClockCopy.lean:93, 'u+v-2*\u03c1*min u v'. TeX:7531-7536 gives the same formula in unlabelled setup with '-1\u2264\u03c1\u22641' and nonnegative clock times. The probabilistic interpretation is not claimed as a Lean theorem."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.Jintegrand: E:naive-clock-candidate",
+      "verdict": "PASS",
+      "reason": "Ledger:732 and claims.yaml:2883 match ClockCopy.lean:97-99, including \u03b8\u00b2/2 damping, h(u+v), and Psi(a,\u03b8|u-v|,vRho). TeX:7540-7546 has precisely this integrand on positive times and explicitly disregards the diagonal."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.J: E:naive-clock-candidate",
+      "verdict": "PASS",
+      "reason": "Ledger:733 and claims.yaml:2890 match ClockCopy.lean:102-103, '1/4 * \u222b ... \u2202P2'. TeX:7541-7545 defines J with the same factor 1/4 and two positive-time Lebesgue integrals. No square-root or damping convention changes."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.vRho_one: P:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "Ledger:734 and claims.yaml:2897 match ClockCopy.lean:114, 'vRho 1 u v = |u-v|' for arbitrary real u,v. TeX:7643 states '|u-v|=v_1(u,v)' for positive times. The broader elementary identity is explicit and harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.abs_le_vRho: P:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "Ledger:735 and claims.yaml:2904 match ClockCopy.lean:121-122, '\u03c1 \u2264 1', '0 \u2264 u', '0 \u2264 v'. TeX:7533 and 7643 use '-1\u2264\u03c1\u22641' and 'v_\u03c1\u2265|u-v|'. The unused lower correlation bound is explicitly disclosed at Ledger:619."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.resolvent_measurable: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:736 and claims.yaml:2911 match ClockCopy.lean:129-130, '[SFinite \u03bc]' and measurability in q. TeX:7519 defines R but states no parameter-measurability lemma. Auxiliary classification and hypothesis disclosure are correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.heat_measurable: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:737 and claims.yaml:2918 match ClockCopy.lean:137-138, '[SFinite \u03bc]' and measurability in w. TeX:7517 defines h but has no corresponding labelled measurability statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.Psi_measurable: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:738 and claims.yaml:2925 match ClockCopy.lean:145-149, unrestricted joint measurability in r,v for fixed a. TeX:7502-7512 defines Psi on 'r>0,v\u22650' but does not state this parameter-measurability helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.heat_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:739 and claims.yaml:2932 match ClockCopy.lean:152-153, '0 \u2264 heat \u03bc w' without integrability assumptions, using totalized real integration. TeX:7521 states stronger positivity on w > 0 under the covariance assumptions, not this unrestricted auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.resolvent_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:740 and claims.yaml:2939 match ClockCopy.lean:156-157, '0 \u2264 R \u03bc q' for arbitrary q and \u03bc. TeX:7521 states positivity for q > 0 in the nonzero covariance setup. The unrestricted nonnegativity helper has no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.inv_mul_partial: P:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "Ledger:741 and claims.yaml:2946 match ClockCopy.lean:162-164, '0 < \u03b8', '0 < l', denominator 'l*(2*\u03b8+l)'. TeX:7619-7620 explicitly uses '(\u03b8+\u03bb)\u00b2-\u03b8\u00b2=\u03bb(2\u03b8+\u03bb)' for partial fractions. The constant is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.resolvent_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:742 and claims.yaml:2953 match ClockCopy.lean:172-174, resolvent integrability and '0 < q \u2264 q\u2032'. TeX:7625-7627 states strict decrease in its nonzero application, not this separate weak-monotonicity helper. No direct label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.resolvent_sub_le: P:clock-copy-obstruction",
+      "verdict": "FAIL",
+      "reason": "Ledger:743 and claims.yaml:2960 faithfully match ClockCopy.lean:181-184, resolvent integrability, \u03b8,\u03bb > 0 and the explicit bound \u03bb(2\u03b8+\u03bb)R(\u03b8)/\u03b8\u00b2. TeX:7623-7625 instead says 'homogeneity directly bounds the density ... by a constant times \u03bb^{a-1}'. It does not state or use this general resolvent estimate. Relabel as a Lean-route auxiliary; W2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.weight_nonneg: P:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "Ledger:744 and claims.yaml:2967 match ClockCopy.lean:205-207, resolvent integrability and a,\u03b8,\u03bb > 0. TeX:7562 states that w is a 'positive integrable density'. Lean's explicitly weaker nonnegative conclusion also permits \u03bc=0; it does not replace the strict-positivity result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.weight_pos: P:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "Ledger:745 and claims.yaml:2974 match ClockCopy.lean:215-217, resolvent integrability, '\u03bc \u2260 0' and a,\u03b8,\u03bb > 0. TeX:7562 and 7625-7627 assert strict positivity under nonzero covariance. The wrapper derives \u03bc\u22600 rather than supplying a stronger nondegeneracy input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.weight_measurable: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:746 and claims.yaml:2981 match ClockCopy.lean:225-226, '[SFinite \u03bc]' and arbitrary a,\u03b8. TeX:7555-7562 defines the density but does not give a separate measurability lemma. Auxiliary classification is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.weight_integrable: P:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "Ledger:747 and claims.yaml:2988 match ClockCopy.lean:233-235, '[SFinite \u03bc]', resolvent integrability, '0 < a < 1', '0 < \u03b8'. TeX:7562 asserts integrability and TeX:7623-7625 explains endpoint bounds under its stronger homogeneous setup."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.filteredWeight_integrable: P:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "Ledger:748 and claims.yaml:2995 match ClockCopy.lean:278-280, s-finite \u03bc, resolvent integrability, '0 < a < 1', '0 < \u03b8'. TeX:7568-7570 and 7672-7674 use the positive filter '2\u03b8/(2\u03b8+\u03bb)<1' against the integrable density. This directly supports filtered-density integrability."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.xi_integral_J: P:clock-copy-obstruction",
+      "verdict": "FAIL",
+      "reason": "Ledger:749 and claims.yaml:3002 match ClockCopy.lean:293-300, resolvent integrability, \u03b8,\u03bb > 0 and the fixed-\u03bb spectral-product identity. TeX:7646-7668 instead integrates q and w and uses 'R(q)=1/2\u222be^{-q\u00b2w/2}h(w)dw'; it never introduces this J-side spectral product. This is an auxiliary of the alternative Lean route; W2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.xi_integral_K: P:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "Ledger:750 and claims.yaml:3009 match ClockCopy.lean:322-327, resolvent integrability and \u03b8,\u03bb > 0, with numerator '2\u03b8+\u03bb' and denominator '2\u03b8'. TeX:7609-7620 displays this exact spectral integral and converts it to w by partial fractions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.cross_transform: P:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "Ledger:751 and claims.yaml:3016 match ClockCopy.lean:349-352, '0 < \u03b8', '0 \u2264 l', '\u03be \u2260 0', integrability and the stated rational expression. TeX:7587-7602 gives the same identity and adds the r=0 continuous limit. The explicit Lean exclusion is harmless here because \u03bc{0}=0 is proved and used."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.K_eq_integral_weight: E:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "Ledger:752 and claims.yaml:3023 match ClockCopy.lean:429-432, s-finite \u03bc, integrable resolvent majorant, '\u03bc {0}=0', '0<a<1', \u03b8 > 0. TeX:7565 states K=\u222bw under H:homog. The extra-looking measure conditions are derived at TeX:704-713 and in the Lean wrapper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.FJ_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:753 and claims.yaml:3030 match ClockCopy.lean:466-472, requiring only '0 < a'. TeX:7646 uses nonnegative Tonelli but does not define FJ or state this all-coordinate positivity helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.FJ_integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:754 and claims.yaml:3037 match ClockCopy.lean:475-478, s-finite \u03bc, resolvent integrability, '0<a<1', \u03b8 > 0. TeX:7629-7640 proves candidate integrability through a different majorant and never states an FJ triple-product result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.P2_ne_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:755 and claims.yaml:3044 match ClockCopy.lean:513, 'P2 \u2260 0', with no hypotheses. TeX:7542 integrates over the positive quadrant but contains no separate labelled nonzero-measure lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.integral_FJ_eq: no direct label",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:756 and claims.yaml:3051 match ClockCopy.lean:521-522 as a displayed-order description: '\u222b \u03be, \u222b l, FJ ... \u2202L0 \u2202\u03bc', with no hypotheses on p,a,\u03b8. TeX:7646-7668 does not state this auxiliary identity. The English integration-order wording is ambiguous; W9."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.J_one_eq: E:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "Ledger:757 and claims.yaml:3058 match ClockCopy.lean:551-555, s-finite \u03bc, resolvent integrability, '0<a<1', \u03b8 > 0, candidate integrability and J_1=\u222bfilteredWeight. TeX:7568-7569 gives precisely this equality under its stronger standing covariance assumptions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.Jintegrand_measurable: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:758 and claims.yaml:3065 match ClockCopy.lean:584-585, '[SFinite \u03bc]' and measurability for arbitrary a,\u03b8,\u03c1. TeX:7540-7546 defines the candidate but contains no separately labelled parameter-measurability helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.J_rho_props: E:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "Ledger:759 and claims.yaml:3072 match ClockCopy.lean:598-602, s-finite \u03bc, resolvent integrability, \u03bc\u22600, '0<a<1', \u03b8 > 0 and '\u03c1\u22641'. TeX:7566-7567 states '0<J_\u03c1\u2264J_1' for '-1\u2264\u03c1\u22641'. The broader analytic correlation range is explicit; the paper wrapper retains the lower bound."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.integrable_rpow_div_add: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:760 and claims.yaml:3079 match ClockCopy.lean:636-637, '0<a<1', '0<c' and integrability of \u03bb^(a-1)/(c+\u03bb). TeX:7693-7700 includes this finiteness in a Beta evaluation, whereas Lean uses it as an auxiliary without formalizing that evaluation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.integral_rpow_div_add_scaling: P:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "Ledger:761 and claims.yaml:3086 match ClockCopy.lean:644-646, assuming only '0<c' for the totalized integral identity. TeX:7695-7700 states the Beta formula for c>0 and '0<a<1' and explicitly says it follows by scaling. On that finite-integral domain this is exactly the scaling step, not the unformalized Beta value."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.degree_one: E:degree-one-clock-loss",
+      "verdict": "PASS",
+      "reason": "Ledger:762 and claims.yaml:3093 match ClockCopy.lean:664-667, s-finite \u03bc, resolvent integrability, \u03bc{0}=0, 'SpectralHomogeneous \u03bc 1', '0<a<1', \u03b8 > 0. TeX:7573-7575 asserts 'J_1=(2-2^a)K' when \u03b1=1. Every additional measure condition follows from the stated supplied input and H:homog."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.clock_copy_obstruction_paper: P:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "Ledger:763 and claims.yaml:3100 match ClockCopy.lean:717-729: HomogCovariance with a=alpha0, SpectralHomogeneous, \u0393\u22600, \u03b8>0 and '-1\u2264\u03c1\u22641', with all density, integrability, equality, strict-inequality and degree-one conclusions. TeX:7514-7579 has the same hypotheses and conclusions. The sole supplied input is exactly TeX:704-705's derived spectral homogeneity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopy.damped_N2_nonneg_paper: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:764 and claims.yaml:3107 match ClockCopy.lean:761-763, HomogCovariance, SpectralHomogeneous and \u03b8>0, without \u0393\u22600, yielding '0\u2264N2sq alpha0 \u03b8 \u03bc'. TeX:677-679 asserts this nonnegativity under H:homog, including zero covariance. The changed proof route does not weaken the conclusion."
+    },
+    {
+      "claim": "PARA-ClockCopy",
+      "verdict": "FAIL",
+      "reason": "The core theorem correspondence and exclusions at Ledger:581-649 are substantially accurate, but the paragraph falsely says every integral conclusion carries integrability, incompletely lists unused wrapper fields, and identifies Lean's direct-Fubini argument as the alternative route named by the TeX. See W4-W6. The examples cited outside the packet cannot independently establish their Lean-instantiation claims."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "Ledger:169-178 lists the 112 declarations exactly once under the labels given by rows 653-764. All manuscript labels cited in the section exist, including H:homog, L:low-alpha-convolution, E:damped-tail-norms and R:clock-copy-scope. This checks index consistency, not the erroneous proof-step mappings identified in W1-W2; repairs to those rows must propagate to the index."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PARTIAL",
+      "reason": "coverage.yaml:42-58 correctly classifies the damped-norm contribution as inputs-supplied/weaker, excluding N0, scaling, tails and smoothing. Lines 276-298 correctly claim the full obstruction conclusions with one SpectralHomogeneous input. However, line 298 repeats the inaccurate claim that direct Fubini is 'the alternative route the TeX names'; W6. No stronger supplied hypothesis or incorrect numerical constant was found."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PARTIAL",
+      "reason": "Scope:67-80, the ClockFilter introduction:217-222 and Not in Lean:1628-1636 correctly distinguish the supplied input and unformalized parts. However, Ledger:226 describes a 'resolvent product' divided difference over 2\u03b8\u03bb without specifying the necessary numerator (2\u03b8+\u03bb)/(2\u03b8). The bare-product denominator is \u03bb(2\u03b8+\u03bb), as ClockCopy.lean:162-164 and TeX:7619-7620 show; W7."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "W1 \u2014 Incorrect D4 proof-step mappings: Ledger:687,690 maps TimeFractional.twoTimeC_integral and twoTimeR_integral to P:clock-copy-obstruction. Lean TimeFractional.lean:299-303 assumes '0 < a.re', '0 < b.re', '0 \u2264 lam' and integrates a complex exponential; :357-358 assumes '0 < c', '0 \u2264 lam' and obtains '1/(c*(c+lam))'. TeX:7583-7602 instead integrates wave products using sine integrals, and :7646-7648 integrates q to '2(1-e^{-Aw})/A'. These are different proof routes. Fix both ledger rows to 'no direct label (auxiliary to the Lean proof route)' and update Index:169,178.",
+      "W2 \u2014 Additional incorrect proof-step mappings: Ledger:743,749 maps ClockCopy.resolvent_sub_le and xi_integral_J to the TeX proof. Lean ClockCopy.lean:181-184 states the explicit general resolvent bound '\u03bb(2\u03b8+\u03bb)/\u03b8\u00b2 * R(\u03b8)'; TeX:7623-7625 only invokes homogeneity to bound the density by a constant times \u03bb^(a-1). Lean :293-300 evaluates a fixed-\u03bb J-side spectral product, whereas TeX:7646-7668 integrates q,w and uses the heat-resolvent identity. Fix both rows to 'no direct label (auxiliary to the Lean proof route)' and update Index:169,178. Their mathematical summaries otherwise match Lean.",
+      "W3 \u2014 Incomplete hypotheses for lintegral_triple_twoTime: Ledger:693 and claims.yaml:2607 say 'For measurable f >= 0, c > 0, A >= 0 on X x Y' without stating the measures' s-finiteness. Lean TimeFractional.lean:406-410 explicitly requires '[SFinite \u03bd] [SFinite \u03bc]' and 'Measurable' for each of f,c,A. TeX:7646 invokes 'nonnegative Tonelli' only in the concrete Lebesgue/spectral setting, not on arbitrary measures. Fix both summaries to state two s-finite measures and joint measurability of all three functions.",
+      "W4 \u2014 False blanket integrability assertion: Ledger:614-615 says 'every integral conclusion carries its integrability'. Lean ClockCopy.lean:644-646 assumes only '0 < c' in integral_rpow_div_add_scaling, with no restriction on a and no integrability conclusion; SpectralHomog.lean:74-76 similarly assumes only measurable f. TeX:7695-7700 explicitly restricts the finite Beta integrals to '0<a<1'. Fix the paragraph to distinguish genuine-integral paper conclusions, whose finiteness is proved, from totalized auxiliary/scaling identities that also hold when Lean assigns a nonintegrable integral zero.",
+      "W5 \u2014 Incomplete unused-hypothesis disclosure: Ledger:619-623 lists unused fields for the main proposition and says the two damped-norm wrappers carry 'the same fields'. In addition, DampedNorms.lean:358-370 never uses HomogCovariance.\u0393_radon, spectral or alpha_range; ClockCopy.lean:761-772 never uses \u0393_radon or spectral. These correspond to TeX:171-176's Radon/spectral assumptions and :184's spatial range, still carried by the wrapper types. Fix the paragraph to list these additional unused fields separately for each wrapper, as required by the review contract.",
+      "W6 \u2014 Incorrect attribution of the alternative proof route: Ledger:624-628 and coverage.yaml:297-298 call direct subordinated Fubini with the wave-product majorant the 'Alternatively' route named by the TeX. Lean DampedNorms.lean:264-305 and ClockCopy.lean:429-461 do use that direct-Fubini route. TeX:7623-7625's 'Alternatively' specifically describes homogeneous endpoint bounds on w, not this absolute-majorant/Fubini construction. Fix the ledger paragraph and coverage note to describe Lean's route as a different proof, while accurately identifying the density-bound alternative actually stated in TeX.",
+      "W7 \u2014 Ambiguous or incorrect cross-reference constant: Ledger:226 says the 'resolvent product' equals the divided difference over '2 theta ell'. For A=\u03b8\u00b2+r\u00b2 and B=(\u03b8+\u03bb)\u00b2+r\u00b2, Lean ClockCopy.lean:162-164 states '1/(A*B)=1/(\u03bb*(2\u03b8+\u03bb))*(1/A-1/B)', matching TeX:7619-7620's 'B-A=\u03bb(2\u03b8+\u03bb)'. A denominator 2\u03b8\u03bb is correct only for the weighted product (2\u03b8+\u03bb)/(2\u03b8AB), as displayed in TeX:7611-7614. Fix Ledger:226 by writing that full weighted identity, or by giving the correct bare-product denominator."
+    ],
+    "minor": [
+      "W8 \u2014 Shifted manuscript anchors: Ledger:672 cites Fubini justification at lines 7508-7509, but the actual justification is TeX:7510-7511; Ledger:673-677's property anchors similarly precede the actual statement at :7512. Some resolvent/heat anchors at Ledger:701-709 are also shifted. The mathematical correspondence is unaffected. Optional fix: refresh those line references against the frozen revision.",
+      "W9 \u2014 Integration-order wording: Ledger:756 and claims.yaml:3051 say 'iterated integral over xi then l'. Lean ClockCopy.lean:521-522 actually displays '\u222b \u03be, \u222b l, FJ ... \u2202L0 \u2202\u03bc', so \u03bb is the inner integration variable. TeX:7646-7668 has no direct counterpart. Optional fix: print the nested integral or say '\u03bb inner, \u03be outer' to remove the English ambiguity."
+    ]
+  },
+  "required_repairs": [
+    "Relabel the four declarations in W1-W2 as 'no direct label (auxiliary to the Lean proof route)' and update their index memberships consistently.",
+    "State the s-finite measure hypotheses and joint measurability of f,c,A in both summaries of lintegral_triple_twoTime.",
+    "Replace the blanket integrability assertion with a distinction between finite paper-domain conclusions and totalized auxiliary identities.",
+    "Complete the wrapper-specific unused-hypothesis disclosure identified in W5.",
+    "Correct the alternative-route attribution in the ClockCopy paragraph and coverage.yaml note.",
+    "Make the weighted versus bare resolvent-product identity explicit in Ledger:226, with the corresponding correct denominator."
+  ],
+  "limitations": [
+    "All complete-reading requirement A material was read; unread portions of the ledger, claims file and manuscript are outside the required ranges and review scope.",
+    "Basename citations in checks and findings refer to the exact paths listed in source_coverage; 'TeX' denotes manuscript/notes/notes_stratonovich_ham_second_moment.tex and 'Ledger' denotes candidate/statement-ledger.md.",
+    "All supplied LaTeX files were searched for the relevant label definitions; unrelated manuscript inputs were not reviewed in full.",
+    "The packet omits the cited audit/refutation examples and the StratonovichHAMAudit.ClockFilter source. Their compilation and claimed instantiations were not independently verified. W7 is established by comparing the ledger wording with the supplied ClockCopy identity and manuscript.",
+    "Compilation, absence of sorry, standard-axiom use and byte binding were accepted as supplied contract facts; no build or independent hash audit was performed.",
+    "The full obstruction wrapper and the stated N1/N2 finiteness contribution match the manuscript mathematically after the explicitly supplied spectral-homogeneity input. The rejection concerns correspondence metadata and disclosures, not an identified failure of those Lean theorem conclusions.",
+    "This AI correspondence review is not human verification or a novelty audit."
+  ]
+}

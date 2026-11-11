@@ -1,0 +1,139 @@
+Independent correspondence review: newly formalized whole labelled result(s) (Lean ledger rows) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  4721cf9dd6c3). Review ONLY its section "## VariationalDilation (whole result)", the index
+  rows for it, and the items named in the global checks below. All other
+  rows were reviewed earlier.
+- the Lean modules (ground truth for what each declaration states):
+  lean/StratonovichHAMSecondMoment/HomogHypothesis.lean
+  lean/StratonovichHAMSecondMoment/WeakSobolev.lean
+  lean/StratonovichHAMSecondMoment/VariationalDilation.lean
+  and lean/claims.yaml, lean/coverage.yaml.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  3920258be333. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that L:variational-control-dilation are formalized as stated in their
+rows: every conclusion proved, with hypotheses that match the manuscript,
+apart from side conditions the TeX leaves implicit and inputs explicitly
+declared as supplied. Test that claim hard: any Lean hypothesis that the
+manuscript does not have, any manuscript hypothesis the Lean drops, any
+weaker Lean conclusion, any changed constant, range, quantifier order or
+strictness, any modelling choice that changes the mathematical object, any
+supplied hypothesis stronger than the manuscript result it stands for, and
+any row labelled as a step of a TeX proof that is really an auxiliary of a
+different Lean proof route, is a finding, unless the ledger states it AND it
+is genuinely harmless. Decide that yourself from the TeX; do not accept the
+ledger's word.
+Pay attention to: whether the Lean control class CPos, the dilation, the mean h, the integral-form cost and the Rayleigh set/rate (over the hand-rolled weak-gradient H^1 of WeakSobolev) are faithful to the manuscript objects; whether IsRayleighTrial (with its extra integrability condition) gives the same supremum as the manuscript for the bounded potentials h_s; and whether calling the row same-assumptions/weaker is honest.
+
+CHECKS (exactly these 62, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.WeakSobolev.IsTestFunction: no direct label"
+  2. claim "StratonovichHAMSecondMoment.WeakSobolev.HasWeakGradient: no direct label"
+  3. claim "StratonovichHAMSecondMoment.WeakSobolev.MemH1: no direct label"
+  4. claim "StratonovichHAMSecondMoment.WeakSobolev.weakGradient_ae_unique: no direct label"
+  5. claim "StratonovichHAMSecondMoment.WeakSobolev.dilL2: L:variational-control-dilation"
+  6. claim "StratonovichHAMSecondMoment.WeakSobolev.rpow_half_sq: no direct label"
+  7. claim "StratonovichHAMSecondMoment.WeakSobolev.integral_jacobian: no direct label"
+  8. claim "StratonovichHAMSecondMoment.WeakSobolev.integrable_jacobian_iff: no direct label"
+  9. claim "StratonovichHAMSecondMoment.WeakSobolev.memLp_dilL2: L:variational-control-dilation"
+  10. claim "StratonovichHAMSecondMoment.WeakSobolev.norm_dilL2_sq: no direct label"
+  11. claim "StratonovichHAMSecondMoment.WeakSobolev.integral_norm_dilL2_sq: L:variational-control-dilation"
+  12. claim "StratonovichHAMSecondMoment.WeakSobolev.hasWeakGradient_dilL2: L:variational-control-dilation"
+  13. claim "StratonovichHAMSecondMoment.WeakSobolev.IsRayleighTrial: E:variational-real-rayleigh"
+  14. claim "StratonovichHAMSecondMoment.WeakSobolev.rayleighValue: E:variational-real-rayleigh"
+  15. claim "StratonovichHAMSecondMoment.WeakSobolev.rayleighSet: E:variational-real-rayleigh"
+  16. claim "StratonovichHAMSecondMoment.WeakSobolev.rayleighRate: E:variational-real-rayleigh"
+  17. claim "StratonovichHAMSecondMoment.WeakSobolev.IsRayleighTrial.memH1: E:variational-real-rayleigh"
+  18. claim "StratonovichHAMSecondMoment.WeakSobolev.rayleighValue_indep: E:variational-real-rayleigh"
+  19. claim "StratonovichHAMSecondMoment.WeakSobolev.IsRayleighTrial.dil: no direct label"
+  20. claim "StratonovichHAMSecondMoment.WeakSobolev.rayleighSet_dil: L:variational-control-dilation"
+  21. claim "StratonovichHAMSecondMoment.WeakSobolev.sqrt_sSup_scale: no direct label"
+  22. claim "StratonovichHAMSecondMoment.WeakSobolev.sSup_rayleighSet_dil: L:variational-control-dilation"
+  23. claim "StratonovichHAMSecondMoment.WeakSobolev.rayleighRate_dil: L:variational-control-dilation"
+  24. claim "StratonovichHAMSecondMoment.VariationalDilation.CPos: E:variational-positive-class"
+  25. claim "StratonovichHAMSecondMoment.VariationalDilation.dil: E:variational-control-dilation"
+  26. claim "StratonovichHAMSecondMoment.VariationalDilation.CPos_nonempty: E:variational-positive-class"
+  27. claim "StratonovichHAMSecondMoment.VariationalDilation.dil_mapsTo: L:variational-control-dilation"
+  28. claim "StratonovichHAMSecondMoment.VariationalDilation.dil_inv_dil: L:variational-control-dilation"
+  29. claim "StratonovichHAMSecondMoment.VariationalDilation.dil_dil_inv: L:variational-control-dilation"
+  30. claim "StratonovichHAMSecondMoment.VariationalDilation.dil_bijOn: L:variational-control-dilation"
+  31. claim "StratonovichHAMSecondMoment.VariationalDilation.SetScaling: H:homog"
+  32. claim "StratonovichHAMSecondMoment.VariationalDilation.map_dilation: L:variational-control-dilation"
+  33. claim "StratonovichHAMSecondMoment.VariationalDilation.integral_dilation: L:variational-control-dilation"
+  34. claim "StratonovichHAMSecondMoment.VariationalDilation.integrable_dilation_iff: L:variational-control-dilation"
+  35. claim "StratonovichHAMSecondMoment.VariationalDilation.conv: E:compact-raw-mean"
+  36. claim "StratonovichHAMSecondMoment.VariationalDilation.mean: E:compact-raw-mean"
+  37. claim "StratonovichHAMSecondMoment.VariationalDilation.rawCost: E:compact-raw-cost"
+  38. claim "StratonovichHAMSecondMoment.VariationalDilation.rate: E:variational-real-rayleigh"
+  39. claim "StratonovichHAMSecondMoment.VariationalDilation.integratedRate: P:variational-unmasked-rate"
+  40. claim "StratonovichHAMSecondMoment.VariationalDilation.amp_mul_push: no direct label"
+  41. claim "StratonovichHAMSecondMoment.VariationalDilation.amp_variance: no direct label"
+  42. claim "StratonovichHAMSecondMoment.VariationalDilation.conv_dil: L:variational-control-dilation"
+  43. claim "StratonovichHAMSecondMoment.VariationalDilation.conv_dil_integrable_iff: L:variational-control-dilation"
+  44. claim "StratonovichHAMSecondMoment.VariationalDilation.mean_dil: L:variational-control-dilation"
+  45. claim "StratonovichHAMSecondMoment.VariationalDilation.mean_dil_integrable_iff: L:variational-control-dilation"
+  46. claim "StratonovichHAMSecondMoment.VariationalDilation.cost_integrand_dil: no direct label"
+  47. claim "StratonovichHAMSecondMoment.VariationalDilation.cost_inner_integrable_iff: L:variational-control-dilation"
+  48. claim "StratonovichHAMSecondMoment.VariationalDilation.cost_inner_dil: no direct label"
+  49. claim "StratonovichHAMSecondMoment.VariationalDilation.rawCost_dil: L:variational-control-dilation"
+  50. claim "StratonovichHAMSecondMoment.VariationalDilation.rawCost_integrable_iff: L:variational-control-dilation"
+  51. claim "StratonovichHAMSecondMoment.VariationalDilation.rayleighSet_mean_dil: L:variational-control-dilation"
+  52. claim "StratonovichHAMSecondMoment.VariationalDilation.sSup_rayleighSet_mean_dil: L:variational-control-dilation"
+  53. claim "StratonovichHAMSecondMoment.VariationalDilation.rate_dil: L:variational-control-dilation"
+  54. claim "StratonovichHAMSecondMoment.VariationalDilation.rate_integrable_iff: L:variational-control-dilation"
+  55. claim "StratonovichHAMSecondMoment.VariationalDilation.integratedRate_dil: L:variational-control-dilation"
+  56. claim "StratonovichHAMSecondMoment.VariationalDilation.setScaling_of_homog: H:homog"
+  57. claim "StratonovichHAMSecondMoment.VariationalDilation.variational_control_dilation_paper: L:variational-control-dilation"
+  58. claim "StratonovichHAMSecondMoment.VariationalDilation.variational_control_dilation_integrable_paper: L:variational-control-dilation"
+  59. claim "PARA-VariationalDilation": the "VariationalDilation (whole result)" section paragraph is accurate, cites the right files, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input and what is not formalized, and does not overclaim
+  60. claim "LEDGER-INDEX": the "Index by label" rows for the VariationalDilation section list exactly these 58 declarations under the labels their rows give, and every label cited in the section exists in the manuscript (search \label across all files)
+  61. claim "COVERAGE-ROWS": the coverage.yaml row for L:variational-control-dilation: class same-assumptions with conclusion weaker is justified (the wrapper has the section hypotheses, nothing supplied; the rate is defined by the real Rayleigh form E:variational-real-rayleigh and the cost in integral form, and their identification with sqrt(-E_s) and E W(Psi)^2 is not formalized, as conclusion_scope says), and its claims are right
+  62. claim "CROSS-REFERENCES": every other place in the ledger that points to the VariationalDilation section (step-module intros and rows, the "Not in Lean" section, Scope) is accurate
+For each row check (1-58): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: every Lean file
+   listed above; the "VariationalDilation (whole result)" section and the "Scope" and
+   "Index by label" sections of candidate/statement-ledger.md; the entries
+   of lean/claims.yaml for this section's modules; lean/coverage.yaml;
+   manuscript/notes/integrated_unmasked_variational.tex,
+   lines 380-420 of manuscript/notes/integrated_compact_mean_family.tex (L:compact-raw-profile, E:compact-raw-mean, E:compact-raw-cost),
+   and lines 150-216 of manuscript/notes/notes_stratonovich_ham_second_moment.tex (H:homog);
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 62 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-58.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.

@@ -1,0 +1,297 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json: lines 1-190, 191-380, 381-557; complete.",
+    "candidate/statement-ledger.md: lines 1-189, 443-455, 1046-1155, 1590-1636; partial file, but Scope, Index by label, IndexedCone section and relevant cross-references complete. Additional heading-only search matches read at lines 190, 203, 215, 230, 242, 268, 291, 300, 309, 327, 345, 377, 400, 425, 456, 468, 491, 508, 520, 533, 550, 566, 579, 766, 782, 987, 1004, 1025, 1156, 1170, 1250, 1339, 1359, 1441.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean: lines 1-105; complete.",
+    "lean/StratonovichHAMSecondMoment/IndexedCone.lean: lines 1-230, 231-410, 411-620, 621-835, 836-1052; complete.",
+    "lean/claims.yaml: lines 789-845, 1925-1998, 1999-2321; partial file, with all IndexedCone entries and HomogHypothesis entries complete.",
+    "lean/coverage.yaml: lines 1-215, 216-430; complete.",
+    "manuscript/notes/integrated_raw_block_lower.tex: lines 1-226, 227-450, 451-675; complete.",
+    "manuscript/notes/integrated_compact_mean_family.tex: lines 1-260, 261-512; complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: lines 150-216; partial file, with the required H:homog interval complete.",
+    "Label search across manuscript/notes/**/*.tex: all labels cited in the IndexedCone section located; matching lines were within the manuscript ranges listed above."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.indexed_cone_paper: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:992-1008 assumes 'HomogCovariance', '\u0393 \u2260 0', supplied 'GroundFamily F' and '0 < \u03f1', '\u03f1 < 1 / 2'; TeX integrated_raw_block_lower.tex:4-10 supplies the physical ground family under nonzero H:homog, and :229 assumes '0 < varrho < 1/2'. The documented abstraction is legitimate: every GroundFamily property follows from C16. The existential order, integer B, product order, positivity and cStar=aStar*jStar/4 match :229-245,326-327. Ledger:1109 and claims.yaml:2003 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.indexed_cone: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:963-975 assumes 'G : GroundFamily F', '0 < \u03f1', '\u03f1 < 1 / 2'; TeX integrated_raw_block_lower.tex:229-242 assumes the C16 family and the same strict rho range. Both choose B, omega, epsilon and c before every N, chain and D. Pointwise closeness is equivalent to the displayed max/sup bound here. Ledger:1110 and claims.yaml:2010 match, including the exact constant established at :326-327."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.paramI: no direct label",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:74 defines 'paramI := Icc 0 1', without hypotheses; TeX integrated_compact_mean_family.tex:4 says 'Let I = [0,1]' in unlabelled setup. Ledger:1111 and claims.yaml:2017 match; no separate labelled theorem is claimed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.isCompact_paramI: no direct label",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:77 proves 'IsCompact paramI', without additional hypotheses; TeX integrated_compact_mean_family.tex:4 fixes '[0,1]'. This is a valid Lean auxiliary rather than a separately labelled manuscript assertion. Ledger:1112 and claims.yaml:2024 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily: P:compact-F-projection",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:83-126 supplies bounded linear P and ell, data e0 and bounded obs, positive rates/gap, eigenrelations for '\u03c3 \u2208 paramI', '0 \u2264 t', continuity and positive infima. TeX integrated_compact_mean_family.tex:48-52,270-286,339-348 provides those properties under its compact-family/common-trial hypotheses at :4-10; raw-block setup :16-17 supplies e0 and bounded O_phi. No field is stronger than these outputs. Ledger:1061-1085,1113 and claims.yaml:2031 accurately describe the supplied interface."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.Pi: E:compact-F-projection",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:133 defines 'Pi \u03c3 := (G.ell \u03c3).smulRight (G.e \u03c3)'; TeX integrated_compact_mean_family.tex:270-273 defines 'Pi_sigma=e_sigma ell_sigma'. Ledger:1114 and claims.yaml:2038 agree. Projection properties concern \u03c3 in I; arbitrary extensions outside I do not enter the result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.Q: E:compact-F-projection",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:136 defines 'Q \u03c3 := id - G.Pi \u03c3'; TeX integrated_compact_mean_family.tex:272-273 defines 'Q_sigma=I-Pi_sigma'. Ledger:1115 and claims.yaml:2045 faithfully state this definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.aStar: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:139 defines 'aStar := iInf \u03c3 : paramI, G.ell \u03c3 G.e0'; TeX integrated_raw_block_lower.tex:254 defines 'a_*=inf_I ell_s(e_0)'. Ledger:1116 and claims.yaml:2052 match. Compact continuity ensures the real infimum has its intended bounded-set meaning."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.jStar: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:142 defines 'jStar := iInf \u03c3 : paramI, G.obs (G.e \u03c3)'; TeX integrated_raw_block_lower.tex:254 defines 'j_*=inf_I O_phi(e_s)'. Ledger:1117 and claims.yaml:2059 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.Pi_apply: no direct label",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:145 states, for arbitrary \u03c3 and x, 'G.Pi \u03c3 x = G.ell \u03c3 x \u2022 G.e \u03c3'; TeX integrated_compact_mean_family.tex:272 gives 'Pi_sigma=e_sigma ell_sigma' on I. Ledger:1118 and claims.yaml:2066 correctly present the defining application identity as a Lean auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.Q_apply: no direct label",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:148 states 'G.Q \u03c3 x = x - G.ell \u03c3 x \u2022 G.e \u03c3', without membership assumptions; TeX integrated_compact_mean_family.tex:272 defines 'Q_sigma=I-Pi_sigma'. Ledger:1119 and claims.yaml:2073 faithfully describe the auxiliary unfolding."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.ell_P: E:compact-F-eigen",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:151-154 assumes '\u03c3 \u2208 paramI', '0 \u2264 t' and concludes 'ell \u03c3 (P \u03c3 t x)=exp(lam \u03c3*t)*ell \u03c3 x'. TeX integrated_compact_mean_family.tex:277-280 has 'Pi_sigma P_sigma(t)=exp(lambda_sigma t)Pi_sigma', with ell(e)=1, and :325 states the dual identity explicitly. Ledger:1120 and claims.yaml:2080 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.P_e: E:compact-F-eigen",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:157-160 assumes '\u03c3 \u2208 paramI', '0 \u2264 t' and proves 'P \u03c3 t (e \u03c3)=exp(lam \u03c3*t) \u2022 e \u03c3'. TeX integrated_compact_mean_family.tex:277-280 gives the growing projection identity, and :326 explicitly gives the vector identity. Ledger:1121 and claims.yaml:2087 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.ell_Q: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:163 assumes '\u03c3 \u2208 paramI' and proves 'ell \u03c3 (Q \u03c3 x)=0'. TeX integrated_raw_block_lower.tex:280-281 uses 'ell_s(r)=0' and 'r=Q_s z', with normalization supplied by compact-family TeX:278. Ledger:1122 and claims.yaml:2094 match this algebraic cone identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.Q_Q: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:167 assumes '\u03c3 \u2208 paramI' and proves 'Q \u03c3 (Q \u03c3 x)=Q \u03c3 x'. TeX integrated_raw_block_lower.tex:280-281 identifies the kernel residual with Q_s z; compact-family TeX:272,278 supplies the complementary projection and normalization. Idempotence is the same implicit projection algebra, not a different proof route. Ledger:1123 and claims.yaml:2101 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.decomp: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:171 proves 'x=ell \u03c3 x \u2022 e \u03c3+Q \u03c3 x' for arbitrary \u03c3,x; TeX integrated_raw_block_lower.tex:280-281 writes 'z=Ae_s+r', 'A=ell_s(z)', 'r=Q_s z'. The identity itself needs no cone positivity. Ledger:1124 and claims.yaml:2108 faithfully state that algebraic component."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.P_Q: E:compact-F-eigen",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:175-178 assumes '\u03c3 \u2208 paramI', '0 \u2264 t' and concludes 'P \u03c3 t (Q \u03c3 x)=Q \u03c3 (P \u03c3 t x)'. TeX integrated_compact_mean_family.tex:279 says 'P_sigma(t)Pi_sigma=Pi_sigma P_sigma(t)'; with Q=I-Pi at :272 this is precisely the stated consequence. Ledger:1125 and claims.yaml:2115 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.norm_Q_le: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:181 states '\u2016G.Q \u03c3\u2016 \u2264 1 + \u2016G.Pi \u03c3\u2016', without membership assumptions; TeX integrated_raw_block_lower.tex:258 introduces 'M_Q=1+M_P' after bounding Pi. This is its underlying triangle bound. Ledger:1126 and claims.yaml:2122 are accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.norm_Pi: no direct label",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:185 states '\u2016Pi \u03c3\u2016=\u2016ell \u03c3\u2016*\u2016e \u03c3\u2016' for arbitrary \u03c3; TeX integrated_compact_mean_family.tex:272 defines the rank-one operator, but does not separately assert this exact norm formula. Ledger:1127 and claims.yaml:2129 correctly identify an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.norm_Pi_sub_le: no direct label",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:190-191 gives the displayed two-term bound for arbitrary b,c. TeX integrated_compact_mean_family.tex:328-329 invokes 'bounded bilinear multiplication' to obtain continuity, without this explicit inequality. Ledger:1128 and claims.yaml:2136 accurately state the Lean-only estimate and its role."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.exp_ge_one: no direct label",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:209-211 assumes '\u03c3 \u2208 paramI', '0 \u2264 t' and concludes '1 \u2264 exp(lam \u03c3*t)'. TeX integrated_raw_block_lower.tex:297 uses 'Since lambda_c > 0' for exactly this normalization estimate. Ledger:1129 and claims.yaml:2143 agree; the conservative auxiliary designation makes no separate labelled-result claim."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.chainState: E:raw-block-positive-product",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:219-221 defines the recurrence '0 => e0', 'm+1 => D m B (chainState ... m)', without flow assumptions. TeX integrated_raw_block_lower.tex:239 has 'D_N(u)D_(N-1)(B)...D_0(B)e_0'. Ledger:1130 and claims.yaml:2150 correctly identify the state before the terminal factor."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.chainState_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:224-225 states 'chainState D B e0 0=e0', without extra hypotheses. TeX integrated_raw_block_lower.tex:239 supplies the ordered product convention, not a separately labelled recurrence. Ledger:1131 and claims.yaml:2157 match the auxiliary unfolding."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.chainState_succ: no direct label",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:228-229 states 'chainState ... (m+1)=D m B (chainState ... m)' for arbitrary m. TeX integrated_raw_block_lower.tex:239 uses the same left multiplication order. Ledger:1132 and claims.yaml:2164 correctly describe an unfolding auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.ConeConstants: L:raw-block-indexed-cone",
+      "verdict": "PARTIAL",
+      "reason": "W2: IndexedCone.lean:251-284 permits arbitrary positive lower margins 'a_le', 'j_le', 'Cg_nonneg : 0 \u2264 Cg', '\u03b7g_nonneg : 0 \u2264 \u03b7g' and '\u03bd_nonneg : 0 \u2264 \u03bd'. TeX integrated_raw_block_lower.tex:249-266 fixes the actual infima, 'C_gap \u2265 1', 'eta_gap > 0', 'nu > 0' and specific max bounds. Ledger:1133 and :1092 say 'exactly the TeX inequalities'; that is not the type. claims.yaml:2171 also needs to distinguish sufficient relaxed conditions from the exact choices."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.norm_Q_le: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:291 assumes 'K : ConeConstants G \u03f1', '\u03c3 \u2208 paramI' and proves '\u2016Q \u03c3\u2016 \u2264 1+K.MP'. TeX integrated_raw_block_lower.tex:258 sets 'M_Q=1+M_P' with M_P bounding Pi. Ledger:1134 and claims.yaml:2178 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.norm_PQ_le: no direct label",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:296-298 assumes K, '\u03c3 \u2208 paramI', '0 \u2264 t' and bounds '\u2016P \u03c3 t (Q \u03c3 y)\u2016' by exp(lam*t)*Cg*exp(-\u03b7g*t)*\u2016y\u2016. TeX integrated_compact_mean_family.tex:344-348 supplies the normalized operator estimate. Ledger:1135 and claims.yaml:2185 accurately describe its vector application as an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.step_ell: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:315-317 assumes K, 'c \u2208 paramI', '0 \u2264 t', '\u2016D-P c t\u2016 \u2264 K.\u03b5', and arbitrary z; TeX integrated_raw_block_lower.tex:283,295-300 uses the same operator perturbation and dual-norm bound for entrance/full blocks. Ledger:1136 and claims.yaml:2192 faithfully give the pointwise amplitude estimate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.step_Q: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:333-336 assumes K, 'c \u2208 paramI', '0 \u2264 t', '\u2016D-P c t\u2016 \u2264 K.\u03b5' and gives the residual bound with q=Cg*exp(-\u03b7g*t). TeX integrated_raw_block_lower.tex:284,304-306 uses this bound with q_B. Ledger:1137 and claims.yaml:2199 match; the q factor is the time-dependent complementary decay."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.step_obs: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:352-356 assumes K, 'c \u2208 paramI', '0 \u2264 t', operator closeness and arbitrary z, and bounds O(Dz) by its growing contribution minus complementary and perturbation errors. TeX integrated_raw_block_lower.tex:315-323 uses the same decomposition and errors. Ledger:1138 is a shortened accurate description; claims.yaml:2206 gives the matching formula."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.rebase: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:390-394 assumes adjacent 'b,c \u2208 paramI', '0 \u2264 ell_b(z)' and the cone residual bound; TeX integrated_raw_block_lower.tex:280-293 assumes an old-cone state and the same adjacency, giving norm, amplitude and residual estimates. The additional zero-amplitude boundary is trivial because it forces z=0. Ledger:1139 is accurate as a shortened cone statement; claims.yaml:2213 states the exact non-strict hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.qB_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:424-425 derives '0 \u2264 K.Cg*exp(-(K.\u03b7g*K.B))' from K.Cg_nonneg. TeX integrated_raw_block_lower.tex:249-264 has 'C_gap \u2265 1' and defines q_B by this exponential. Ledger:1140 and claims.yaml:2220 correctly state a nonnegativity auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.entrance: L:raw-block-indexed-cone",
+      "verdict": "FAIL",
+      "reason": "W1: IndexedCone.lean:430-433 assumes arbitrary K and closeness and concludes 'exp(lam_b*B)*(K.a/2) \u2264 ell_b(D e0)'; it does not assume 'K.a=G.aStar'. TeX integrated_raw_block_lower.tex:286 gives 'exp(lambda_b B)a_*/2'. Ledger:1141 substitutes a_* for K.a and therefore overstates this declaration. claims.yaml:2227 correctly uses a."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.block: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:478-482 assumes K, '\u03f1 < 1/2', adjacent indices, positive old amplitude, cone residual and full-block closeness. TeX integrated_raw_block_lower.tex:288-313 has the same cone/adjoining-block conditions and multiplier 'exp(lambda_c B)(1-varrho)'. Ledger:1142 and claims.yaml:2234 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.terminal: L:raw-block-indexed-cone",
+      "verdict": "FAIL",
+      "reason": "W1: IndexedCone.lean:559-562 assumes arbitrary K, adjacency, a closed-cone state, '0 \u2264 u' and closeness, and concludes 'exp(lam_c*u)*(K.j/2*ell_b(z)) \u2264 obs(Dz)'. TeX integrated_raw_block_lower.tex:315-325 obtains the j_*/2 terminal factor. Ledger:1143 writes j_* although K.j need not equal G.jStar. claims.yaml:2241 correctly uses j. The canonical equality is supplied only by exists_coneConstants."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.chain_cone: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:617-626 assumes K, '\u03f1 < 1/2', chain membership/adjacency and closeness through N; for 'm+1 \u2264 N' it proves the amplitude lower bound, strict positivity and cone residual bound. TeX integrated_raw_block_lower.tex:282-313,325-327 performs precisely entrance plus the intermediate-block induction. Ledger:1144 and claims.yaml:2248 match, using the abstract margin a."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.positive_product_of_constants: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:679-688 assumes K, '\u03f1 < 1/2', '1 \u2264 N', chain conditions, closeness and 'u \u2208 [0,B]', and proves the product bound and positive lower expression with 'K.a*K.j/4'. TeX integrated_raw_block_lower.tex:229-242,325-327 gives the canonical specialization. Ledger:1145 explicitly uses a*j/4, and claims.yaml:2255 matches. W2 concerns the description of K, not this deduction."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.ell_e0_continuousOn: no direct label",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:723-724 derives 'ContinuousOn (fun \u03c3 => G.ell \u03c3 G.e0) paramI' from G.ell_cont. TeX integrated_compact_mean_family.tex:275-276 gives norm continuity of the duals, and :329-332 uses continuity of their evaluation on e0. Ledger:1146 and claims.yaml:2262 correctly present the auxiliary continuity result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.obs_e_continuousOn: no direct label",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:727-728 derives 'ContinuousOn (fun \u03c3 => G.obs (G.e \u03c3)) paramI' from G.e_cont and bounded obs. TeX integrated_compact_mean_family.tex:275-276,330-332 asserts the corresponding continuity used for positive margins. Ledger:1147 and claims.yaml:2269 match the auxiliary statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.aStar_le: L:raw-block-indexed-cone",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "IndexedCone.lean:732-735 assumes '\u03c3 \u2208 paramI' and concludes 'G.aStar \u2264 G.ell \u03c3 G.e0'; TeX integrated_raw_block_lower.tex:254 defines a_* as the infimum. Ledger:1148 is faithful. claims.yaml:2276 additionally says the infimum is 'attained'; this is mathematically true from compact continuity but is not this declaration's conclusion. See W7."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.jStar_le: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:738-741 assumes '\u03c3 \u2208 paramI' and concludes 'G.jStar \u2264 G.obs (G.e \u03c3)'. TeX integrated_raw_block_lower.tex:254 defines j_* as the corresponding infimum. Ledger:1149 and claims.yaml:2283 match; boundedness below is derived from compact continuity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.Pi_bounded_continuous: P:compact-F-projection",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:745-779 assumes G and proves '(\u2203 M, \u2200 \u03c3 \u2208 paramI, \u2016Pi \u03c3\u2016 \u2264 M) \u2227 ContinuousOn Pi paramI' from e_cont and ell_cont. TeX integrated_compact_mean_family.tex:275-276 states norm continuity and uniform boundedness of the rank-one projections. Ledger:1150 and claims.yaml:2290 match this projection clause, without claiming the entire proposition is proved."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.exists_coneConstants: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:788-789 assumes G and '0 < \u03f1', concluding existence of K with 'K.a=G.aStar' and 'K.j=G.jStar'. Its proof :795-953 chooses gap bounds, aperture, integer B, nu, omega and epsilon in the TeX order. TeX integrated_raw_block_lower.tex:249-277 makes those choices under positive rho; the extra rho upper bound is not needed for existence. Ledger:1151 and claims.yaml:2297 are accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.scalarFamily: no direct label",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:1016-1040 constructs 'GroundFamily \u211d' with P=exp(t)id, e=1, ell=id, lam=1, e0=1, obs=id and d0=1, without supplied hypotheses. TeX integrated_compact_mean_family.tex:4-19 concerns physical potential families and contains no such scalar example. Ledger:1152 and claims.yaml:2304 correctly label it a Lean non-vacuity auxiliary, not a manuscript result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.scalarFamily_aStar: no direct label",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:1043-1045 states 'scalarFamily.aStar=1', without extra hypotheses. TeX integrated_raw_block_lower.tex:254 defines the general margin but contains no scalar specialization. Ledger:1153 and claims.yaml:2311 faithfully describe this Lean-only auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IndexedCone.scalarFamily_jStar: no direct label",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:1048-1050 states 'scalarFamily.jStar=1', without extra hypotheses. TeX integrated_raw_block_lower.tex:254 defines the general observable margin but contains no scalar example. Ledger:1154 and claims.yaml:2318 match the auxiliary."
+    },
+    {
+      "claim": "PARA-IndexedCone",
+      "verdict": "PARTIAL",
+      "reason": "The headline result, supplied C16 interface, arbitrary real normed space, generalized e0 norm, carried-unused covariance assumptions, undocumented formal link to Gamma and exact final constant are accurately disclosed at statement-ledger.md:1048-1105. GroundFamily adds no stronger C16 property. However, :1092 calls ConeConstants 'exactly the TeX's inequalities' without disclosing its arbitrary lower margins and relaxed sign/bound requirements; see W2. The data/observable source line citation is also slightly wrong; see W5."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PARTIAL",
+      "reason": "statement-ledger.md:161-168 contains all 46 distinct declarations, and every section label was located in the manuscript. But its label assignments do not reproduce the rows: GroundFamily is absent under the three proposition labels given at :1113, and :161 aggregates declarations such as Pi, Q and Pi_bounded_continuous under L:raw-block-indexed-cone despite their different row labels. See W3."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PARTIAL",
+      "reason": "coverage.yaml:165-195 correctly supports class inputs-supplied and the full product conclusion, including positivity and a_*j_*/4; its claim identifiers correspond to the relevant declarations/steps. However, :182-192 does not name exactly the GroundFamily fields: it supplies no explicit field-key correspondence, and e0 and the bounded-linear obs are only mentioned inside margin formulas. In particular, the bounded observable input is not stated there. See W4."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Scope :59-80, MovingCone :443-454 and Not in Lean :1619-1621 correctly distinguish the whole supplied-input result from scalar steps and the unformalized ground-family construction. The MovingCone margins correspond to TeX raw-block :308-325. Minor wording: Scope :89-92 defines 'no direct label' too narrowly for explicitly Lean-only auxiliaries such as scalarFamily at :1152; see W6."
+    }
+  ],
+  "findings": {
+    "fatal": [
+      "W1 \u2014 Entrance and terminal declaration paraphrases overstate their constants. IndexedCone.lean:430-433 concludes 'exp(lam_b*B)*(K.a/2) \u2264 ell_b(D e0)', and :559-562 concludes 'exp(lam_c*u)*(K.j/2*ell_b(z)) \u2264 obs(Dz)', for arbitrary K. Their hypotheses do not include K.a=G.aStar or K.j=G.jStar. TeX integrated_raw_block_lower.tex:286 and :325 uses a_*/2 and j_*/2. statement-ledger.md:1141,1143 incorrectly reports those starred constants as the declarations' conclusions; claims.yaml:2227,2241 correctly uses a and j. Fix the two ledger rows to use K.a and K.j and explicitly identify the canonical specialization furnished by exists_coneConstants, IndexedCone.lean:788-789. The headline indexed_cone theorem itself does prove the exact starred constant."
+    ],
+    "major": [
+      "W2 \u2014 ConeConstants is a sufficient relaxed interface, not exactly the manuscript's constant choices. IndexedCone.lean:251-284 has arbitrary positive lower margins a,j, nonnegative Cg, eta_g and nu, and general norm bounds. TeX integrated_raw_block_lower.tex:249-266 instead fixes a_*,j_*, C_gap\u22651, eta_gap>0, nu>0 and particular max bounds. statement-ledger.md:1092,1133 says 'exactly the TeX inequalities', omitting these differences. They are harmless generalizations for the final proof, but their exactness description is materially inaccurate. Fix the introduction, ConeConstants row and claims.yaml:2171 to state the relaxed sufficient conditions and explain that the existence proof selects canonical margins and suitably positive bounds.",
+      "W3 \u2014 The label index does not reproduce the section's declaration-to-label mapping. statement-ledger.md:1113 maps GroundFamily to P:compact-F-projection, P:compact-F-complement and P:compact-ground-family, whose statements occur at integrated_compact_mean_family.tex:255-286,337-355 and :33-54. The index at statement-ledger.md:161-168 omits GroundFamily under those proposition labels and mixes other row labels into its L:raw-block-indexed-cone aggregate. Fix the index to reproduce the actual row mappings; any additional module-level dependency aggregation must be explicitly distinguished from a label correspondence.",
+      "W4 \u2014 The coverage input inventory is not field-exact. GroundFamily includes 'e0 : F' and 'obs : F \u2192L[\u211d] \u211d' at IndexedCone.lean:93-95, alongside its other named data and property fields at :85-126. TeX integrated_raw_block_lower.tex:16-17 explicitly fixes a 'bounded observable O_phi' and the data e0; compact-family TeX:13-14 retains those objects. coverage.yaml:182-192 only uses e0 and O_phi within the margins and does not state the bounded-linear observable input or enumerate the field names. Fix that inventory with an explicit correspondence for all 17 GroundFamily fields, keeping Pi and Q identified as derived definitions rather than additional fields."
+    ],
+    "minor": [
+      "W5 \u2014 Data/observable line citation. statement-ledger.md:1065-1066 cites integrated_raw_block_lower.tex:14-15, but the 'bounded observable O_phi' and 'data e0' are actually at :16-17. IndexedCone.lean:93-95 models those objects correctly. Optional fix: update the ledger's line citation.",
+      "W6 \u2014 Scope terminology for Lean-only auxiliaries. statement-ledger.md:89-92 describes 'no direct label' as a computation from the manuscript development, while :1152 and IndexedCone.lean:1012-1016 explicitly introduce a scalar non-vacuity example absent from the TeX physical-family setup at integrated_compact_mean_family.tex:4-19. Optional fix: say the designation also covers Lean-only auxiliaries and examples.",
+      "W7 \u2014 Extra attainment wording in the aStar_le summary. claims.yaml:2276 says the infimum is 'attained'; IndexedCone.lean:732-735 concludes only 'G.aStar \u2264 G.ell \u03c3 G.e0' under \u03c3\u2208I. TeX integrated_raw_block_lower.tex:254 defines the infimum, and compact-family TeX:275-276 provides continuity, so attainment is mathematically justified but not this theorem's stated conclusion. Optional fix: replace the parenthetical with 'the range is bounded below by compactness'."
+    ]
+  },
+  "required_repairs": [
+    "Correct statement-ledger.md:1141 and :1143 to report K.a/2 and K.j/2, respectively, and explicitly explain their starred-margin specialization through exists_coneConstants.",
+    "Replace the exactness claims about ConeConstants with an accurate description of its relaxed sufficient hypotheses, including arbitrary lower margins and relaxed constant bounds/signs; align the corresponding claims.yaml summary.",
+    "Reconcile the IndexedCone label-index entries with the section's row mappings, including GroundFamily under its three proposition labels, and distinguish dependency aggregation from direct correspondence.",
+    "Make the coverage.yaml GroundFamily input inventory field-exact, explicitly including e0 and bounded-linear obs and mapping all 17 fields."
+  ],
+  "limitations": [
+    "All complete-reading requirement A sources and assigned sections were read completely; unread portions of partially covered files concern material outside the assigned review.",
+    "The headline theorem's full conclusion and C16-input sufficiency passed correspondence review. The FAIL concerns inaccurate declaration paraphrases and materially incomplete ledger/index/coverage descriptions, not a detected failure of that theorem.",
+    "Compilation, absence of sorry and standard-axiom status were accepted as supplied; no build or proof-kernel audit was performed.",
+    "Provenance bindings were read and accepted as supervisor-checked, not independently recomputed.",
+    "This AI correspondence review is neither human verification nor a novelty audit, and does not validate the manuscript's imported analytic results."
+  ]
+}

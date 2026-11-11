@@ -1,0 +1,199 @@
+Independent correspondence review: newly formalized whole labelled result(s) (Lean ledger rows) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  4721cf9dd6c3). Review ONLY its section "## FiniteGaussianMatrix (whole result)", the index
+  rows for it, and the items named in the global checks below. All other
+  rows were reviewed earlier.
+- the Lean modules (ground truth for what each declaration states):
+  lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean
+  lean/StratonovichHAMSecondMoment/GaussianIBP.lean
+  lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean
+  and lean/claims.yaml, lean/coverage.yaml.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  3920258be333. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that L:gaussian-trace-bounds, P:finite-gaussian-matrix and R:gaussian-one-variance-test are formalized as stated in their
+rows: every conclusion proved, with hypotheses that match the manuscript,
+apart from side conditions the TeX leaves implicit and inputs explicitly
+declared as supplied. Test that claim hard: any Lean hypothesis that the
+manuscript does not have, any manuscript hypothesis the Lean drops, any
+weaker Lean conclusion, any changed constant, range, quantifier order or
+strictness, any modelling choice that changes the mathematical object, any
+supplied hypothesis stronger than the manuscript result it stands for, and
+any row labelled as a step of a TeX proof that is really an auxiliary of a
+different Lean proof route, is a finding, unless the ledger states it AND it
+is genuinely harmless. Decide that yourself from the TeX; do not accept the
+ledger's word.
+Pay attention to: the S_p power schattenPow and norm schattenNorm vs the TeX definition; CFC.abs and CFC.sqrt for |Y| and V^{1/2}; independence (iIndepFun plus HasLaw gaussianReal 0 1) on an arbitrary probability space; the four numbers of the remark; whether the GaussianIBP foundation rows are honestly labelled.
+
+CHECKS (exactly these 124, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.GaussianIBP.hasDerivAt_stdPDF: no direct label"
+  2. claim "StratonovichHAMSecondMoment.GaussianIBP.integrable_gaussian_iff: no direct label"
+  3. claim "StratonovichHAMSecondMoment.GaussianIBP.integral_gaussian_eq: no direct label"
+  4. claim "StratonovichHAMSecondMoment.GaussianIBP.integral_mul_eq_integral_deriv: P:finite-gaussian-matrix"
+  5. claim "StratonovichHAMSecondMoment.GaussianIBP.stdPi: P:finite-gaussian-matrix"
+  6. claim "StratonovichHAMSecondMoment.GaussianIBP.isProbabilityMeasure_stdPi: no direct label"
+  7. claim "StratonovichHAMSecondMoment.GaussianIBP.integral_coord_mul_eq_integral_partial: P:finite-gaussian-matrix"
+  8. claim "StratonovichHAMSecondMoment.GaussianIBP.integrable_one_add_abs_pow: no direct label"
+  9. claim "StratonovichHAMSecondMoment.GaussianIBP.one_add_norm_le_prod: no direct label"
+  10. claim "StratonovichHAMSecondMoment.GaussianIBP.integrable_one_add_norm_pow: P:finite-gaussian-matrix"
+  11. claim "StratonovichHAMSecondMoment.GaussianIBP.integrable_of_growth: P:finite-gaussian-matrix"
+  12. claim "StratonovichHAMSecondMoment.GaussianIBP.integrable_coord_mul_of_growth: P:finite-gaussian-matrix"
+  13. claim "StratonovichHAMSecondMoment.GaussianIBP.integral_coord_mul_eq_of_growth: P:finite-gaussian-matrix"
+  14. claim "StratonovichHAMSecondMoment.GaussianIBP.integrable_pow_gaussian: R:gaussian-one-variance-test"
+  15. claim "StratonovichHAMSecondMoment.GaussianIBP.moment_recursion: R:gaussian-one-variance-test"
+  16. claim "StratonovichHAMSecondMoment.GaussianIBP.moment_two: R:gaussian-one-variance-test"
+  17. claim "StratonovichHAMSecondMoment.GaussianIBP.moment_four: R:gaussian-one-variance-test"
+  18. claim "StratonovichHAMSecondMoment.GaussianIBP.map_eq_stdPi: P:finite-gaussian-matrix"
+  19. claim "StratonovichHAMSecondMoment.GaussianIBP.integral_comp_eq_stdPi: no direct label"
+  20. claim "StratonovichHAMSecondMoment.GaussianIBP.integrable_comp_iff_stdPi: no direct label"
+  21. claim "StratonovichHAMSecondMoment.GaussianIBP.integral_coord_mul_eq_of_growth_paper: P:finite-gaussian-matrix"
+  22. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.conj_trace: no direct label"
+  23. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.pow_eq_conj: no direct label"
+  24. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_pow_eq: no direct label"
+  25. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.eigConj: no direct label"
+  26. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.eq_conj_eigConj: no direct label"
+  27. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.eigConj_isHermitian: no direct label"
+  28. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.eigConj_posSemidef: no direct label"
+  29. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_mul_diag_mul_diag: no direct label"
+  30. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.eigWeight: L:gaussian-trace-bounds"
+  31. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.eigWeight_symm: L:gaussian-trace-bounds"
+  32. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_word_eq: L:gaussian-trace-bounds"
+  33. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_mul_pow_eq: L:gaussian-trace-bounds"
+  34. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_word_le: L:gaussian-trace-bounds"
+  35. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.sum_diag_pow_le: L:gaussian-trace-bounds"
+  36. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_holder_le: L:gaussian-trace-bounds"
+  37. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.abs_pow_even: P:finite-gaussian-matrix"
+  38. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_psd: no direct label"
+  39. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_mul_pow_im: no direct label"
+  40. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.gaussian_trace_bounds_paper: L:gaussian-trace-bounds"
+  41. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.hasDerivAt_pow_affine: P:finite-gaussian-matrix"
+  42. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.NMat: no direct label"
+  43. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.instNormedRingNMat: no direct label"
+  44. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.instNormedAlgebraNMat: no direct label"
+  45. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.instFiniteDimensionalNMat: no direct label"
+  46. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.hasDerivAt_re_trace_pow: P:finite-gaussian-matrix"
+  47. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.gaussLin: P:finite-gaussian-matrix"
+  48. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.continuous_word: no direct label"
+  49. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.norm_entry_le_linfty: no direct label"
+  50. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.word_growth: P:finite-gaussian-matrix"
+  51. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.gaussLin_update: no direct label"
+  52. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integrable_word: P:finite-gaussian-matrix"
+  53. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.word_one: no direct label"
+  54. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integrable_word_one: P:finite-gaussian-matrix"
+  55. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integrable_coord_word_one: P:finite-gaussian-matrix"
+  56. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.ibp_word: P:finite-gaussian-matrix"
+  57. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.re_trace_pow_succ: P:finite-gaussian-matrix"
+  58. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integral_trace_pow_succ: P:finite-gaussian-matrix"
+  59. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.gaussLin_isHermitian: no direct label"
+  60. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.bootstrap_scalar: P:finite-gaussian-matrix"
+  61. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.variance_posSemidef: P:finite-gaussian-matrix"
+  62. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_pow_even_psd: P:finite-gaussian-matrix"
+  63. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integrable_trace_pow: P:finite-gaussian-matrix"
+  64. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integral_trace_pow_le: P:finite-gaussian-matrix"
+  65. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integral_trace_sq_eq: E:finite-hermitian-gaussian"
+  66. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.finite_hermitian_gaussian: E:finite-hermitian-gaussian"
+  67. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.schattenPow: P:finite-gaussian-matrix"
+  68. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.schattenNorm: P:finite-gaussian-matrix"
+  69. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.schattenPow_trace: P:finite-gaussian-matrix"
+  70. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.vOut: P:finite-gaussian-matrix"
+  71. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.vIn: P:finite-gaussian-matrix"
+  72. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.dil: P:finite-gaussian-matrix"
+  73. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.dil_isHermitian: P:finite-gaussian-matrix"
+  74. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.gaussLin_dil: P:finite-gaussian-matrix"
+  75. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.dil_sq: no direct label"
+  76. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.fromBlocks_diag_pow: no direct label"
+  77. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_fromBlocks: no direct label"
+  78. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.mul_conj_pow_mul: P:finite-gaussian-matrix"
+  79. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_mul_conj_pow: P:finite-gaussian-matrix"
+  80. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_dil_pow: P:finite-gaussian-matrix"
+  81. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.sum_dil_sq: P:finite-gaussian-matrix"
+  82. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_variance_pow: P:finite-gaussian-matrix"
+  83. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.vOut_posSemidef: P:finite-gaussian-matrix"
+  84. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.vIn_posSemidef: P:finite-gaussian-matrix"
+  85. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_vOut_eq_trace_vIn: P:finite-gaussian-matrix"
+  86. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.schattenNorm_sqrt: P:finite-gaussian-matrix"
+  87. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integrable_schattenPow: P:finite-gaussian-matrix"
+  88. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integral_schattenPow_le: P:finite-gaussian-matrix"
+  89. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integral_schattenPow_one: P:finite-gaussian-matrix"
+  90. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.finite_gaussian_matrix: P:finite-gaussian-matrix"
+  91. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.finite_gaussian_matrix_two: P:finite-gaussian-matrix"
+  92. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.finite_gaussian_matrix_zero: P:finite-gaussian-matrix"
+  93. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.rowFamily: R:gaussian-one-variance-test"
+  94. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.colFamily: R:gaussian-one-variance-test"
+  95. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.gaussLin_rowFamily: R:gaussian-one-variance-test"
+  96. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.gaussLin_colFamily: R:gaussian-one-variance-test"
+  97. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.rowFamily_mul_conj: R:gaussian-one-variance-test"
+  98. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.colFamily_conj_mul: R:gaussian-one-variance-test"
+  99. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.one_by_one_sq: no direct label"
+  100. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.schattenPow_rowFamily: R:gaussian-one-variance-test"
+  101. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.schattenPow_colFamily: R:gaussian-one-variance-test"
+  102. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integral_sq_mul_sq: R:gaussian-one-variance-test"
+  103. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integral_sum_sq_sq: R:gaussian-one-variance-test"
+  104. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.vOut_rowFamily: R:gaussian-one-variance-test"
+  105. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.vIn_rowFamily: R:gaussian-one-variance-test"
+  106. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.vOut_colFamily: R:gaussian-one-variance-test"
+  107. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.vIn_colFamily: R:gaussian-one-variance-test"
+  108. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.rpow_quarter_pow: no direct label"
+  109. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.sqrt_three_mul_pow: no direct label"
+  110. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_vIn_rowFamily_sq: R:gaussian-one-variance-test"
+  111. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_vOut_rowFamily_sq: R:gaussian-one-variance-test"
+  112. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integral_schattenPow_rowFamily: R:gaussian-one-variance-test"
+  113. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integral_schattenPow_colFamily: R:gaussian-one-variance-test"
+  114. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.gaussian_one_variance_test: R:gaussian-one-variance-test"
+  115. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.continuous_schattenPow_gaussLin: no direct label"
+  116. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.finite_hermitian_gaussian_paper: E:finite-hermitian-gaussian"
+  117. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.finite_gaussian_matrix_paper: P:finite-gaussian-matrix"
+  118. claim "StratonovichHAMSecondMoment.FiniteGaussianMatrix.gaussian_one_variance_test_paper: R:gaussian-one-variance-test"
+  119. claim "PARA-FiniteGaussianMatrix": the "FiniteGaussianMatrix (whole result)" section paragraph is accurate, cites the right files, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input and what is not formalized, and does not overclaim
+  120. claim "LEDGER-INDEX": the "Index by label" rows for the FiniteGaussianMatrix section list exactly these 118 declarations under the labels their rows give, and every label cited in the section exists in the manuscript (search \label across all files)
+  121. claim "COVERAGE-ROWS": the three coverage.yaml rows L:gaussian-trace-bounds, P:finite-gaussian-matrix and R:gaussian-one-variance-test: class same-assumptions with full conclusion is justified (nothing supplied, the manuscript hypotheses: independent standard Gaussians, even p = 2m, S_p as Tr((A*A)^m)), and their claims are right
+  122. claim "CROSS-REFERENCES": every other place in the ledger that points to the FiniteGaussianMatrix section (step-module intros and rows, the "Not in Lean" section, Scope) is accurate
+  123. claim "LEDGER-TOTALS": the totals line (557 = 470 theorems + 87 definitions; 351 labelled, 206 unlabelled) agrees with a count of all per-module tables, and every claims.yaml decl has exactly one ledger row
+  124. claim "SCOPE-PROSE": the Scope bullets about the whole-result modules (counts, which results need no supplied input, which have supplied inputs, Gaussian measures beyond finitely many standard Gaussians) and the internal-status sentence are accurate
+For each row check (1-118): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: every Lean file
+   listed above; the "FiniteGaussianMatrix (whole result)" section and the "Scope" and
+   "Index by label" sections of candidate/statement-ledger.md; the entries
+   of lean/claims.yaml for this section's modules; lean/coverage.yaml;
+   manuscript/notes/integrated_compact_gaussian.tex,
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 124 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-118.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.

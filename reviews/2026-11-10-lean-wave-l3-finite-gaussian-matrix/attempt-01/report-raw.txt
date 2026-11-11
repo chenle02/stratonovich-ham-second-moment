@@ -1,0 +1,659 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-567 complete.",
+    "candidate/statement-ledger.md:1-189, 291-308, 782-985, 1590-1636 read completely; complete coverage of the required Scope, Index, FiniteGaussianMatrix section, and identified cross-references. Lines 1-1636 additionally machine-scanned for declaration counts and cross-references; unrelated prose only partially reviewed, as prescribed.",
+    "lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean:1-132 complete.",
+    "lean/StratonovichHAMSecondMoment/GaussianIBP.lean:1-327 complete.",
+    "lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean:1-1356 complete.",
+    "lean/claims.yaml:643-670 and 3111-3938 complete required module entries; lines 1-3938 additionally machine-scanned for declaration, kind, and uniqueness checks. Unrelated claim summaries not substantively reviewed.",
+    "lean/coverage.yaml:1-430 complete.",
+    "manuscript/notes/integrated_compact_gaussian.tex:1-617 complete. Label searches covered all frozen manuscript LaTeX files; every matching label needed for this section was found in this completely read file."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.hasDerivAt_stdPDF: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:60-61 has only 'x : ℝ' and proves 'HasDerivAt ... (-x * gaussianPDFReal 0 1 x) x', matching ledger:868 and claims.yaml:3115. TeX integrated_compact_gaussian.tex:117-120 invokes Gaussian-density integration by parts but does not state this density derivative separately; the foundation/no-direct-label designation is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.integrable_gaussian_iff: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:72-74 assumes only 'h : ℝ → ℝ' and states the Gaussian/Lebesgue integrability equivalence, matching ledger:869 and claims.yaml:3122. TeX integrated_compact_gaussian.tex:117-120 discusses 'product Gaussian density' and absolute integrability, not this separate measure-conversion lemma; auxiliary mapping is honest."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.integral_gaussian_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:81-83 assumes 'h : ℝ → ℝ' and equates the Gaussian integral with the density-weighted Lebesgue integral, exactly as ledger:870 and claims.yaml:3129 say. TeX integrated_compact_gaussian.tex:117-120 uses integration against the density without stating this separate conversion identity. No integrability assumption is incorrectly attributed to the Lean type."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.integral_mul_eq_integral_deriv: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:88-92 requires '∀ x, HasDerivAt f (f′ x) x' and integrability of f, xf, f′. TeX integrated_compact_gaussian.tex:116-120 uses polynomials, for which those conditions hold, and states 'E[g_k P(g)] = E[∂_k P(g)]'. Ledger:871 and claims.yaml:3136 explicitly describe the harmless generalized differentiable-function version."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.stdPi: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:115 defines 'Measure.pi fun _ => gaussianReal 0 1' for natural N. TeX integrated_compact_gaussian.tex:93-94 assumes 'independent real standard Gaussians', and :117-118 uses their product density. Ledger:872 and claims.yaml:3143 correctly identify the canonical joint-law model; arbitrary-space correspondence is proved separately."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.isProbabilityMeasure_stdPi: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:118-119 proves 'IsProbabilityMeasure (stdPi N)' without additional hypotheses, matching ledger:873 and claims.yaml:3150. TeX integrated_compact_gaussian.tex:94 implicitly uses a probability distribution but contains no separate labelled probability-instance assertion; auxiliary classification is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.integral_coord_mul_eq_integral_partial: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:126-131 requires every coordinate-slice derivative and 'Integrable f', 'Integrable (fun x => x k * f x)', and 'Integrable f′'. TeX integrated_compact_gaussian.tex:116-120 supplies these through polynomiality and Gaussian decay. Ledger:874 and claims.yaml:3157 accurately expose the generalized identity and its conditions, rather than supplying the manuscript's polynomial integrability."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.integrable_one_add_abs_pow: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:163-164 states, for 'd : ℕ', integrability of '(1 + |x|)^d' against N(0,1), matching ledger:875 and claims.yaml:3164. TeX integrated_compact_gaussian.tex:116-117 says Gaussian decay dominates every fixed power, but does not contain this particular envelope lemma. Its auxiliary designation is justified."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.one_add_norm_le_prod: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:175-176 assumes 'x : Fin N → ℝ' and proves '1 + ‖x‖ ≤ ∏ i, (1 + |x i|)', using the sup norm. Ledger:876 and claims.yaml:3171 say precisely this. TeX integrated_compact_gaussian.tex:116-120 does not use this explicit product-envelope inequality; the different-route auxiliary designation is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.integrable_one_add_norm_pow: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:191-192 quantifies over natural 'N d' and proves integrability of '(1 + ‖x‖)^d' under stdPi. TeX integrated_compact_gaussian.tex:116-117 asserts 'All polynomial moments are finite because Gaussian decay dominates every fixed power'. Ledger:877 and claims.yaml:3178 accurately state the finite-dimensional polynomial-growth envelope implementing that assertion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.integrable_of_growth: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:201-205 assumes 'AEStronglyMeasurable f' and '|f x| ≤ C * (1 + ‖x‖)^d', then proves integrability. TeX integrated_compact_gaussian.tex:116-120 uses polynomial functions, which satisfy those conditions. Ledger:878 and claims.yaml:3185 explicitly state the broader measurable-growth version; no stronger input is imposed on the final matrix result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.integrable_coord_mul_of_growth: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:208-211 assumes the same measurability and growth bound for f and concludes integrability of 'x k * f x'. TeX integrated_compact_gaussian.tex:116-120 needs precisely this integrability for polynomial P. Ledger:879 and claims.yaml:3192 accurately disclose the generalized sufficient hypotheses."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.integral_coord_mul_eq_of_growth: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:227-233 assumes slice differentiability, a.e. strong measurability, and polynomial-growth bounds for both f and f′; it concludes both integrabilities and the IBP identity. TeX integrated_compact_gaussian.tex:116-120 takes f=P polynomial, automatically meeting these conditions. Ledger:880 and claims.yaml:3199 describe this faithful generalized foundation, not an unproved supplied input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.integrable_pow_gaussian: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:241-245 takes 'j : ℕ' and proves 'Integrable (fun x : ℝ => x ^ j) (gaussianReal 0 1)'. TeX integrated_compact_gaussian.tex:177 uses the finite second and fourth moments, with general polynomial finiteness established at :116-117. Ledger:881 and claims.yaml:3206 accurately state the harmless all-powers extension."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.moment_recursion: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:248-258 proves, for 'j : ℕ', 'E x^(j+2) = (j+1) E x^j' by IBP. TeX integrated_compact_gaussian.tex:177 says 'Gaussian integration by parts gives E g² = 1, E g⁴ = 3'. Ledger:882 and claims.yaml:3213 explicitly state the general recursion whose j=0,2 instances implement that calculation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.moment_two: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:261-262 has no supplied hypotheses and concludes '∫ x, x ^ 2 ∂gaussianReal 0 1 = 1'. TeX integrated_compact_gaussian.tex:177 states 'E g² = 1' for the standard Gaussian context. Ledger:883 and claims.yaml:3220 match both law and constant."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.moment_four: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:265-266 has no supplied hypotheses and concludes '∫ x, x ^ 4 ∂gaussianReal 0 1 = 3'. TeX integrated_compact_gaussian.tex:177 states 'E g⁴ = 3'. Ledger:884 and claims.yaml:3227 correctly identify the law, exponent, and constant."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.map_eq_stdPi: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:272-280 assumes a probability space, 'iIndepFun g P', and '∀ k, HasLaw (g k) (gaussianReal 0 1) P', proving the joint law is stdPi. TeX integrated_compact_gaussian.tex:94 assumes independent real standard Gaussians and :117 uses the product density. Ledger:885 and claims.yaml:3234 faithfully express that implication on arbitrary probability spaces."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.integral_comp_eq_stdPi: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:284-291 assumes independence, standard marginal laws, and 'AEStronglyMeasurable h (stdPi N)', concluding equality of expectations under the original and canonical laws. Ledger:886 and claims.yaml:3241 match. TeX integrated_compact_gaussian.tex:94,117-120 works directly with the product density rather than stating a separate transfer theorem; auxiliary classification is honest."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.integrable_comp_iff_stdPi: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:294-301 assumes 'iIndepFun', standard 'HasLaw', and a.e. strong measurability of h, and proves the integrability equivalence. Ledger:887 and claims.yaml:3248 reproduce those conditions. TeX integrated_compact_gaussian.tex:94,116-120 uses the same Gaussian law implicitly but has no separate integrability-transfer assertion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianIBP.integral_coord_mul_eq_of_growth_paper: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "GaussianIBP.lean:306-315 assumes independent standard Gaussian laws, continuous f,f′, their growth bounds, and the slice derivative identity. TeX integrated_compact_gaussian.tex:116-120 uses polynomials, satisfying all these conditions, and gives the same IBP identity. Ledger:888 and claims.yaml:3255 accurately state this generalized wrapper; it introduces no extra final-result hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.conj_trace: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:84-86 assumes 'U : unitaryGroup n ℂ' and arbitrary square X, proving 'trace (U * X * star U) = trace X'. Ledger:889 and claims.yaml:3263 agree. TeX integrated_compact_gaussian.tex:63-88 changes eigenbases but does not state this separate trace-bookkeeping lemma; auxiliary mapping is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.pow_eq_conj: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:90-93 assumes 'hA : A.IsHermitian' and 'k : ℕ', expressing A^k through its eigenvector unitary and eigenvalues. Ledger:890 and claims.yaml:3270 match. TeX integrated_compact_gaussian.tex:63 says 'Diagonalize Y, with real eigenvalues'; the specific Mathlib eigenbasis/power interface is correctly treated as auxiliary bookkeeping."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_pow_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:112-115 requires Hermitian A and natural k and proves 'trace (A ^ k) = ((∑ i, eigenvalues i ^ k : ℝ) : ℂ)'. Ledger:891 and claims.yaml:3277 faithfully paraphrase this. TeX integrated_compact_gaussian.tex:63-88 uses spectral trace calculations without stating this separate all-powers interface lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.eigConj: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:118-119 defines 'star U * D * U' using the eigenvector unitary of Hermitian Y. Ledger:892 and claims.yaml:3284 match the definition and its Hermitian-Y parameter. TeX integrated_compact_gaussian.tex:63,76 says 'in the same basis', without naming this Lean-specific object; auxiliary classification is faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.eq_conj_eigConj: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:122-124 assumes Hermitian Y and arbitrary D and proves 'D = U * eigConj hY D * star U'. Ledger:893 and claims.yaml:3291 agree. TeX integrated_compact_gaussian.tex:63,76 uses an eigenbasis rather than explicitly stating this inverse coordinate-change identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.eigConj_isHermitian: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:130-133 requires 'hY : Y.IsHermitian' and 'hD : D.IsHermitian', concluding Hermitian eigConj. Ledger:894 and claims.yaml:3298 state both hypotheses. TeX integrated_compact_gaussian.tex:48,54,76 retains Hermitian matrices after changing basis but gives no separate conjugation-invariance lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.eigConj_posSemidef: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:136-139 requires Hermitian Y and 'hD : D.PosSemidef', concluding positive semidefinite eigConj. Ledger:895 and claims.yaml:3305 match. TeX integrated_compact_gaussian.tex:54,76 assumes 'D ≥ 0' and works in Y's basis; this separate Mathlib coordinate-invariance lemma is appropriately auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_mul_diag_mul_diag: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:142-143 assumes arbitrary square B and complex diagonal entries a,b, proving the double-sum trace formula. Ledger:896 and claims.yaml:3312 match without adding Hermitian assumptions. TeX integrated_compact_gaussian.tex:63-68 specializes entrywise summation to Hermitian B,Y; the unrestricted bookkeeping identity is honestly marked auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.eigWeight: L:gaussian-trace-bounds",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:152-153 defines 'Complex.normSq (eigConj hY B i j)' for Hermitian Y. TeX integrated_compact_gaussian.tex:63-67 writes B's entries in Y's eigenbasis and weights '|b_ij|²'. Ledger:897 and claims.yaml:3319 accurately identify exactly those weights; B need not be Hermitian merely to define them."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.eigWeight_symm: L:gaussian-trace-bounds",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:157-158 assumes Hermitian Y,B and concludes 'eigWeight hY B i j = eigWeight hY B j i'. TeX integrated_compact_gaussian.tex:64-65,71 uses 'b_ji = conjugate b_ij' and '|b_ij| = |b_ji|'. Ledger:898 and claims.yaml:3326 correctly express the squared-weight consequence with the same matrix hypotheses."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_word_eq: L:gaussian-trace-bounds",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:166-168 requires Hermitian B,Y and natural q,r and gives the real double sum cast to ℂ. TeX integrated_compact_gaussian.tex:63-68 has the same formula at 'r = L-q'. Ledger:899 and claims.yaml:3333 explicitly disclose the harmless independent-exponent generalization and the reality assertion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_mul_pow_eq: L:gaussian-trace-bounds",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:188-189 requires Hermitian Y, arbitrary D, and natural r, giving 'Tr(D Y^r) = ∑ D′_ii λ_i^r'. TeX integrated_compact_gaussian.tex:76-88 uses this with 'D ≥ 0' and even r. Ledger:900 and claims.yaml:3340 correctly state the stronger algebraic identity; dropping positivity here is harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_word_le: L:gaussian-trace-bounds",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:201-203 assumes Hermitian B,Y, 'Even L', and 'q ≤ L'. TeX integrated_compact_gaussian.tex:48-52 has 'm ≥ 2', 'L=2m-2', and '0 ≤ q ≤ L'. Ledger:901 and claims.yaml:3347 explicitly use the stronger all-even-L core form; :348-352 identifies Y^L with |Y|^L. No constant changes."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.sum_diag_pow_le: L:gaussian-trace-bounds",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:244-245 assumes 'D.PosSemidef' and natural m and proves '∑ (Re D_ii)^m ≤ Re Tr D^m'. TeX integrated_compact_gaussian.tex:76-86 has 'D ≥ 0', 'm ≥ 2', and the identical diagonal-power inequality. Ledger:902 and claims.yaml:3354 disclose the harmless broader natural-m range; Jensen implements the same convexity step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_holder_le: L:gaussian-trace-bounds",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:292-295 requires PSD D, Hermitian Y, and '2 ≤ m', with exponents '1/m' and '(m-1)/m'. TeX integrated_compact_gaussian.tex:48,54-58 gives exactly these assumptions and exponents using |Y|. Ledger:903 and claims.yaml:3361 correctly disclose the even-power core representation; :348-352 supplies the absolute-value identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.abs_pow_even: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:348-352 assumes Hermitian Y and natural j, proving 'CFC.abs Y ^ (2*j) = Y ^ (2*j)'. TeX integrated_compact_gaussian.tex:139 states 'Tr |Y|^(2m) = Tr Y^(2m)'. Ledger:904 and claims.yaml:3368 faithfully state the stronger matrix identity that justifies that trace equality."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_psd: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:356-359 assumes 'M.PosSemidef' and proves 'Im Tr M = 0 ∧ 0 ≤ Re Tr M'. Ledger:905 and claims.yaml:3375 agree. TeX integrated_compact_gaussian.tex:54-58,139 treats the corresponding positive traces as real and nonnegative but contains no separate general trace-PSD lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_mul_pow_im: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:362-363 requires Hermitian D,Y and natural r and proves 'Im Tr(D Y^r) = 0'. Ledger:906 and claims.yaml:3382 match. TeX integrated_compact_gaussian.tex:54-58 uses particular real traces, rather than stating this unrestricted exponent bookkeeping lemma; auxiliary mapping is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.gaussian_trace_bounds_paper: L:gaussian-trace-bounds",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:379-390 assumes 'B.IsHermitian', 'Y.IsHermitian', and '2 ≤ m', then quantifies over q≤2m−2 and PSD D. TeX integrated_compact_gaussian.tex:48-58 has exactly those hypotheses and both inequalities. Ledger:907 and claims.yaml:3389 preserve constants, exponents, and quantifier dependencies; CFC.abs and explicit imaginary-part equalities faithfully represent |Y| and real traces."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.hasDerivAt_pow_affine: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:409-412 assumes a real normed algebra and natural k and gives the ordered sum of k differentiated factors. TeX integrated_compact_gaussian.tex:123-127 says 'differentiate the 2m-1 factors in their order'. Ledger:908 and claims.yaml:3396 explicitly disclose the harmless normed-algebra and arbitrary-k generalization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.NMat: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:434-437 defines 'NMat n := Matrix n n ℂ'; its norm structures follow at :443-449. Ledger:909 and claims.yaml:3403 accurately describe this type synonym and its role. TeX integrated_compact_gaussian.tex:123-124 differentiates matrices directly and has no such synonym, so the different-route auxiliary designation is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.instNormedRingNMat: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:441-444 assumes finite, decidable n and defines the instance using 'Matrix.linftyOpNormedRing'. Ledger:910 and claims.yaml:3410 match. TeX integrated_compact_gaussian.tex:123-124 has finite matrices but does not choose a formal normed-ring instance; this is correctly marked auxiliary to the Lean differentiation route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.instNormedAlgebraNMat: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:441-446 equips finite square complex matrices with 'NormedAlgebra ℝ' through 'Matrix.linftyOpNormedAlgebra'. Ledger:911 and claims.yaml:3417 accurately state that structure. TeX integrated_compact_gaussian.tex:123-124 uses real Gaussian coordinates but no explicit normed-algebra instance; no manuscript theorem is falsely attributed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.instFiniteDimensionalNMat: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:441-449 proves 'FiniteDimensional ℝ (NMat n)' for finite n. Ledger:912 and claims.yaml:3424 match. TeX integrated_compact_gaussian.tex:48,93 assumes finite matrices, but does not separately state this type-synonym instance. Its auxiliary classification and theorem kind are appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.hasDerivAt_re_trace_pow: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:453-456 assumes arbitrary square B,Y,C, natural k, and real s, giving the derivative of 'Re Tr(B(Y+tC)^k)' as the ordered trace-word sum. TeX integrated_compact_gaussian.tex:119-124 explicitly permits real parts and differentiates the factors. Ledger:913 and claims.yaml:3431 faithfully state the generalized derivative used there."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.gaussLin: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:480-481 defines '∑ k, g k • A k' for any finite index type and real g. TeX integrated_compact_gaussian.tex:96,115 defines 'X=∑g_k A_k' and 'Y=∑g_k B_k'. Ledger:914 and claims.yaml:3438 correctly identify both objects; the finite-index-type abstraction changes neither sum nor coefficients."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.continuous_word: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:484-486 assumes arbitrary finite matrix family Bs, matrices B,C, and natural j,l, concluding continuity of the indicated real trace word. Ledger:915 and claims.yaml:3445 match. TeX integrated_compact_gaussian.tex:116-120 uses polynomial trace functions without separately stating this continuity lemma; auxiliary mapping is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.norm_entry_le_linfty: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:492-493 assumes a finite square matrix M and indices i,j, and bounds its entry norm by the specified L-infinity operator norm. Ledger:916 and claims.yaml:3452 agree. TeX integrated_compact_gaussian.tex:116-117 argues by Gaussian decay and does not use this explicit matrix-norm inequality; its different-route auxiliary classification is accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.word_growth: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:504-506 assumes finite Bs,B,C and natural j,l and proves existence of K bounding the trace word by 'K*(1+‖g‖)^(j+l)'. TeX integrated_compact_gaussian.tex:116-120 invokes polynomial growth and absolute polynomial integrability. Ledger:917 and claims.yaml:3459 correctly describe the quantitative envelope implementing that polynomiality step; ledger:848-851 discloses the norm route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.gaussLin_update: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:563,567-568 assumes a finite Bs, real coordinate vector x, coordinate k, and replacement s, and gives the stated affine update formula. Ledger:918 and claims.yaml:3466 match. TeX integrated_compact_gaussian.tex:117-124 differentiates coordinatewise without introducing Function.update; the formal coordinate-update auxiliary is honestly classified."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integrable_word: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:578-582 takes arbitrary B,C and natural j,l and proves integrability of the real trace word under stdPi, with no supplied analytic assumption. TeX integrated_compact_gaussian.tex:116-120 states that all polynomial moments are finite and absolute integrability justifies Fubini. Ledger:919 and claims.yaml:3473 faithfully instantiate that assertion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.word_one: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:585-586 takes arbitrary B,Y and natural j and proves 'B*(Y^j*1*Y^0)=B*Y^j'. Ledger:920 and claims.yaml:3480 agree. TeX integrated_compact_gaussian.tex:123 uses the simplified word directly and does not state this identity-factor normalization; auxiliary mapping is accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integrable_word_one: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:589-591 assumes only the finite matrix family, B, and natural j and concludes integrability of 'Re Tr(B Y^j)' under stdPi. TeX integrated_compact_gaussian.tex:116-120 asserts polynomial integrability before applying IBP to this word at :123. Ledger:921 and claims.yaml:3487 correctly state this specialization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integrable_coord_word_one: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:594-600 assumes coordinate k, matrix B, and natural j, and proves integrability of 'x_k Re Tr(BY^j)'. TeX integrated_compact_gaussian.tex:116-120 requires absolute polynomial integrability for IBP, and :123 uses these coordinate-weighted terms. Ledger:922 and claims.yaml:3494 accurately describe the corresponding proved input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.ibp_word: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:604-607 assumes finite Bs, arbitrary B, coordinate k, and natural j; it proves the IBP identity with q in 'range j'. TeX integrated_compact_gaussian.tex:117-127 applies this with B=B_k and j=2m−1. Ledger:923 and claims.yaml:3501 explicitly describe the harmless generalization; factor order and the j−1−q exponent agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.re_trace_pow_succ: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:619-623 assumes real x and natural j and proves 'Re Tr Y^(j+1)=∑x_k Re Tr(B_kY^j)'. TeX integrated_compact_gaussian.tex:123 states the corresponding identity at j=2m−1. Ledger:924 and claims.yaml:3508 correctly expose the arbitrary-j version; no Hermitian assumption is needed for this algebraic equality."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integral_trace_pow_succ: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:627-633 assumes finite Bs and natural j, proving the double-sum expectation identity under stdPi. TeX integrated_compact_gaussian.tex:122-128 has Hermitian Bs, j=2m−1, and q=0,…,2m−2. Ledger:925 and claims.yaml:3515 disclose the stronger general-j, real-part formulation; substituting j preserves the exact range and ordering."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.gaussLin_isHermitian: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:637-638 assumes '∀ k, (Bs k).IsHermitian' and real x and concludes Hermitian gaussLin. Ledger:926 and claims.yaml:3522 match. TeX integrated_compact_gaussian.tex:115 introduces Hermitian B_k and their real Gaussian sum Y without separately stating this closure lemma; auxiliary classification is reasonable."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.bootstrap_scalar: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:650-652 requires '2 ≤ m', F,a,c≥0, and 'F ≤ c*a^(1/m)*F^((m−1)/m)', concluding 'F ≤ c^m*a'. TeX integrated_compact_gaussian.tex:137-144 uses c=2m−1 and a=Tr D^m, splitting F=0 before division. Ledger:927 and claims.yaml:3529 accurately describe this exact scalar step, including zero cases."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.variance_posSemidef: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:676-681 assumes '∀ k, (Bs k).IsHermitian' and proves PSD '∑ Bs k ^ 2'. TeX integrated_compact_gaussian.tex:115 defines D=∑B_k² for Hermitian B_k, and :132-137 applies the PSD trace bound. Ledger:928 and claims.yaml:3536 correctly make that implicit positivity consequence explicit."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_pow_even_psd: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:685-689 requires Hermitian Bs and proves '(gaussLin Bs x ^ (2*m)).PosSemidef' for all real x and natural m. TeX integrated_compact_gaussian.tex:115,139 uses Hermitian Y and its nonnegative even-power trace. Ledger:929 and claims.yaml:3543 correctly state the stronger matrix-positivity justification."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integrable_trace_pow: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:692-694 assumes arbitrary finite Bs and natural j and proves integrability of 'Re Tr(gaussLin Bs x ^ j)' under stdPi. TeX integrated_compact_gaussian.tex:116-117 asserts all polynomial moments are finite. Ledger:930 and claims.yaml:3550 accurately describe this direct trace-polynomial instance, without requiring an unnecessary Hermitian hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integral_trace_pow_le: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:698-701 requires Hermitian Bs and '1 ≤ m', concluding 'E Re Tr Y^(2m) ≤ (2m−1) E Re Tr(DY^(2m−2))'. TeX integrated_compact_gaussian.tex:122,134 gives this for m≥2. Ledger:931 and claims.yaml:3557 explicitly disclose the harmless extension to m=1; the even absolute-value replacement and coefficient are correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integral_trace_sq_eq: E:finite-hermitian-gaussian",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:730-735 assumes arbitrary finite Bs and proves 'E Re Tr Y² = Re Tr ∑B_k²'. TeX integrated_compact_gaussian.tex:146-148 proves this for Hermitian Bs using independence. Ledger:932 and claims.yaml:3564 explicitly say no Hermitian hypothesis is needed; ledger:854-856 discloses the alternative IBP proof route. Both differences are harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.finite_hermitian_gaussian: E:finite-hermitian-gaussian",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:740-743 requires Hermitian Bs and '1 ≤ m', and proves integrability plus 'E Re Tr Y^(2m) ≤ (2m−1)^m Re Tr D^m'. TeX integrated_compact_gaussian.tex:115,143-148 has exactly the Hermitian core and m=1 extension. Ledger:933 and claims.yaml:3571 faithfully state the canonical-law version; equality is covered separately."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.schattenPow: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:794 defines 'schattenPow M m := (trace ((Mᴴ*M)^m)).re'. TeX integrated_compact_gaussian.tex:99 defines '‖A‖_{S_p}^p = Tr((A* A)^m)' for p=2m≥2. Ledger:934 and claims.yaml:3578 match that definition; :801-804 proves reality and nonnegativity, so .re does not weaken the intended positive trace."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.schattenNorm: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:797 defines 'schattenPow M m ^ (1/(2*(m:ℝ)))'. TeX integrated_compact_gaussian.tex:99 uses the unnormalized Schatten norm with p=2m≥2. Ledger:935 and claims.yaml:3585 correctly identify the positive p-th root. The required m≥1 range is stated in ledger:833 and all moment bounds; the definition's totalized m=0 extension is not used as a Schatten norm."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.schattenPow_trace: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:801-804 takes arbitrary rectangular M and natural m and proves 'trace ((Mᴴ*M)^m) = (schattenPow M m : ℂ) ∧ 0 ≤ schattenPow M m'. TeX integrated_compact_gaussian.tex:99 defines that positive trace as the norm power. Ledger:936 and claims.yaml:3592 faithfully record the representation bridge, including reality."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.vOut: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:807 defines 'vOut A := ∑ k, A k * (A k)ᴴ' for a finite rectangular family. TeX integrated_compact_gaussian.tex:96 defines 'V_out=∑ A_k A_k*'. Ledger:937 and claims.yaml:3599 preserve both adjoint order and output index space."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.vIn: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:810 defines 'vIn A := ∑ k, (A k)ᴴ * A k'. TeX integrated_compact_gaussian.tex:97 defines 'V_in=∑ A_k* A_k'. Ledger:938 and claims.yaml:3606 preserve the adjoint order and input index space exactly."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.dil: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:813 defines 'fromBlocks 0 M Mᴴ 0' on 'o ⊕ n'. TeX integrated_compact_gaussian.tex:150-154 uses precisely the block matrix '[0,A_k; A_k*,0]'. Ledger:939 and claims.yaml:3613 correctly describe its size as o+n; the disjoint-sum indexing is a faithful finite-dimensional representation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.dil_isHermitian: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:817-818 assumes arbitrary rectangular M and proves '(dil M).IsHermitian'. TeX integrated_compact_gaussian.tex:150-152 calls this construction the 'Hermitian dilation'. Ledger:940 and claims.yaml:3620 accurately state the same unconditional matrix fact."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.gaussLin_dil: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:822-825 takes a finite rectangular family and real x and proves 'gaussLin (fun k => dil (A k)) x = dil (gaussLin A x)'. TeX integrated_compact_gaussian.tex:151-153 identifies Y as the dilation of X. Ledger:941 and claims.yaml:3627 correctly preserve the essential real-coefficient condition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.dil_sq: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:828-829 takes arbitrary rectangular M and proves 'dil M ^ 2 = fromBlocks (M*Mᴴ) 0 0 (Mᴴ*M)'. Ledger:942 and claims.yaml:3634 match. TeX integrated_compact_gaussian.tex:150-162 uses the resulting even powers without separately displaying this square identity; its bookkeeping-auxiliary designation is reasonable."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.fromBlocks_diag_pow: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:832-836 assumes arbitrary square blocks P,Q and natural k and proves the block-diagonal power identity. Ledger:943 and claims.yaml:3641 faithfully state it. TeX integrated_compact_gaussian.tex:154,160-162 uses block-diagonal powers but does not separately state this unrestricted block-matrix lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_fromBlocks: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:841-843 assumes compatible finite blocks P,Q,R,S and proves 'trace (fromBlocks P Q R S) = trace P + trace S'. Ledger:944 and claims.yaml:3648 match. TeX integrated_compact_gaussian.tex:160-162 uses trace addition for particular block-diagonal matrices; the general formal bookkeeping lemma is appropriately auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.mul_conj_pow_mul: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:846-847 assumes arbitrary rectangular M and natural k and proves 'M*(Mᴴ*M)^k=(M*Mᴴ)^k*M'. TeX integrated_compact_gaussian.tex:157-158 uses '(XX*)^m=X(X*X)^(m−1)X*'. Ledger:945 and claims.yaml:3655 accurately state the algebraic identity giving that formula after multiplication by M*; no invertibility is introduced."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_mul_conj_pow: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:855-859 assumes '1 ≤ m' and arbitrary rectangular M and proves equality of the two Gram-power traces. TeX integrated_compact_gaussian.tex:156-160 derives that same equality using rectangular cyclicity and m≥1. Ledger:946 and claims.yaml:3662 correctly retain the essential positive exponent, avoiding the generally false m=0 equality."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_dil_pow: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:862-866 assumes '1 ≤ m' and proves 'Re Tr(dil M)^(2m)=2*schattenPow M m'. TeX integrated_compact_gaussian.tex:160 gives 'Tr Y^(2m)=2 Tr((X*X)^m)'. Ledger:947 and claims.yaml:3669 preserve the factor two and exponent; the real-part representation is justified by PSD traces."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.sum_dil_sq: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:869-872 assumes an arbitrary finite rectangular family and proves '∑ dil(A_k)^2 = fromBlocks (vOut A) 0 0 (vIn A)'. TeX integrated_compact_gaussian.tex:115,152-154 defines D=∑B_k² and identifies it with diag(V_out,V_in). Ledger:948 and claims.yaml:3676 match both block order and variance definitions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_variance_pow: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:875-878 takes a finite family and natural m and equates 'Re Tr(∑dil(A_k)^2)^m' with the sum of the two variance-power traces. TeX integrated_compact_gaussian.tex:161-162 states the same block-trace identity. Ledger:949 and claims.yaml:3683 correctly describe the harmless all-natural-m algebraic version."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.vOut_posSemidef: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:882-884 assumes only a finite rectangular family and proves '(vOut A).PosSemidef'. TeX integrated_compact_gaussian.tex:96 defines V_out as ∑A_kA_k* and :165-167 uses positive variance matrices. Ledger:950 and claims.yaml:3690 correctly expose positivity implicit in that use."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.vIn_posSemidef: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:888-890 assumes only a finite rectangular family and proves '(vIn A).PosSemidef'. TeX integrated_compact_gaussian.tex:97 defines V_in as ∑A_k*A_k and :165-167 uses its positive square root. Ledger:951 and claims.yaml:3697 faithfully state that implicit positivity consequence."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_vOut_eq_trace_vIn: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:894-897 assumes an arbitrary finite rectangular family and proves 'trace (vOut A) = trace (vIn A)'. TeX integrated_compact_gaussian.tex:156-157 establishes rectangular trace cyclicity, and :168-169 states 'Tr V_in = Tr V_out'. Ledger:952 and claims.yaml:3704 faithfully record the equality."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.schattenNorm_sqrt: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:901-905 assumes 'V.PosSemidef' and proves 'schattenNorm (CFC.sqrt V) m = (Re Tr V^m)^(1/(2m))'. TeX integrated_compact_gaussian.tex:165-167 uses the equivalent norm-power identity for positive V and p=2m≥2. Ledger:953 and claims.yaml:3711 correctly state the root formulation; CFC.sqrt is the positive matrix square root."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integrable_schattenPow: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:917-921 assumes '1 ≤ m' and proves integrability of 'schattenPow (gaussLin A x) m' under stdPi. TeX integrated_compact_gaussian.tex:99,116-120 uses this finite Gaussian polynomial moment. Ledger:954 and claims.yaml:3718 accurately state the integrability conclusion, with no analytic input supplied."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integral_schattenPow_le: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:925-927 assumes '1 ≤ m' and bounds the expected norm power by '(2m−1)^m*((Tr V_out^m+Tr V_in^m)/2)'. TeX integrated_compact_gaussian.tex:143-145,160-165 derives exactly that inequality before taking the p-th root. Ledger:955 and claims.yaml:3725 preserve the divisor two and coefficient."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integral_schattenPow_one: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:935-944 assumes a finite rectangular family and proves 'E schattenPow X 1=(Re Tr V_out+Re Tr V_in)/2'. TeX integrated_compact_gaussian.tex:168-169 gives 'E Tr X*X=Tr V_in=Tr V_out'. Ledger:956 and claims.yaml:3732 faithfully give the equivalent averaged form, with trace equality proved separately."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.finite_gaussian_matrix: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:950-958 requires '1 ≤ m' and states integrability and both inequalities on stdPi, with '√(2m−1)', the variance average divided by two, and the maximum of CFC.sqrt Schatten norms. TeX integrated_compact_gaussian.tex:93-109 has independent standard Gaussians and p=2m≥2. Ledger:957 and claims.yaml:3739 faithfully state the canonical-law version; transfer and equality/zero cases are separate declarations."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.finite_gaussian_matrix_two: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:987-996 proves the second-moment identity, equal variance traces, and equality in the first rooted inequality at m=1. TeX integrated_compact_gaussian.tex:110-111,167-169 states exactly that p=2 equality. Ledger:958 and claims.yaml:3746 accurately enumerate the conclusions; no extra matrix assumptions are required."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.finite_gaussian_matrix_zero: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1001-1004 assumes '∀ k, A k = 0' and '1 ≤ m', and proves zero expectation, zero variance average, and both zero square-root norms. TeX integrated_compact_gaussian.tex:111 says 'Empty or zero families give the zero identity'. Ledger:959 and claims.yaml:3753 correctly include N=0, where the zero-family hypothesis is vacuous."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.rowFamily: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1029-1030 defines the 'Fin 1 × Fin n' row with entry 'if j=k then 1 else 0'. TeX integrated_compact_gaussian.tex:175 takes n=16 and 'A_k=e_k^T'. Ledger:960 and claims.yaml:3760 accurately state the arbitrary-n definition whose n=16 instance is the manuscript family."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.colFamily: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1033-1034 defines the 'Fin n × Fin 1' coordinate columns. TeX integrated_compact_gaussian.tex:183-184 says 'Transposing the family refutes the corresponding output-only bound'. Ledger:961 and claims.yaml:3767 correctly identify the transposed family; real coordinate entries make transpose and adjoint coincide here."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.gaussLin_rowFamily: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1037-1040 assumes real 'x : Fin n → ℝ' and proves the Gaussian linear combination is the row with complex entries x_j. TeX integrated_compact_gaussian.tex:175-176 uses X=∑g_ke_k^T. Ledger:962 and claims.yaml:3774 faithfully state this elementary coordinate identification for arbitrary n."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.gaussLin_colFamily: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1043-1046 assumes real x and proves gaussLin of the column family has entries x_i. TeX integrated_compact_gaussian.tex:183-184 invokes the transposed row example. Ledger:963 and claims.yaml:3781 accurately state that same coordinate construction, generalized harmlessly to natural n."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.rowFamily_mul_conj: R:gaussian-one-variance-test",
+      "verdict": "PARTIAL",
+      "reason": "FiniteGaussianMatrix.lean:1050-1052 assumes arbitrary natural n and real x and concludes only 'X Xᴴ = [∑ x_j²]'. Ledger:964 and claims.yaml:3788 additionally say 'the only nonzero singular value ... is (sum_j x_j²)^(1/2)'. TeX integrated_compact_gaussian.tex:175-176 makes that statement for n=16 Gaussian X. The universal ledger wording fails at x=0 and attributes a singular-value conclusion not present in the Lean type; see W1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.colFamily_conj_mul: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1057-1061 assumes real x and proves 'Xᴴ X=[∑x_j²]' for the coordinate columns. TeX integrated_compact_gaussian.tex:183-184 invokes the transposed example. Ledger:965 and claims.yaml:3795 accurately restrict their assertion to this Gram identity, with no extra singular-value conclusion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.one_by_one_sq: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1064-1066 assumes 's : ℝ' and proves 'Re Tr([s]^2)=s²' for a Fin 1 matrix. Ledger:966 and claims.yaml:3802 match. TeX integrated_compact_gaussian.tex:175-179 uses the corresponding scalar calculation without separately stating this one-by-one matrix normalization; auxiliary mapping is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.schattenPow_rowFamily: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1069-1071 assumes real x and proves 'schattenPow (gaussLin (rowFamily n) x) 2=(∑x_j²)^2'. TeX integrated_compact_gaussian.tex:176-179 uses exactly this S4 fourth-power identity at n=16. Ledger:967 and claims.yaml:3809 faithfully state the arbitrary-n algebraic version; the proof uses Gram traces rather than requiring a singular-value premise."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.schattenPow_colFamily: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1074-1076 assumes real x and proves the identical S4 fourth-power formula for the column family. TeX integrated_compact_gaussian.tex:183-184 transposes the example. Ledger:968 and claims.yaml:3816 correctly state the trace-defined norm-power consequence needed for the transposed counterexample."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integral_sq_mul_sq: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1080-1082 takes 'j l : Fin n', proves integrability, and gives the expectation 'if j=l then 3 else 1' under stdPi. TeX integrated_compact_gaussian.tex:177-179 uses E g⁴=3 and independence to obtain '3n+n(n−1)'. Ledger:969 and claims.yaml:3823 accurately expose that diagonal/off-diagonal calculation and its constants."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integral_sum_sq_sq: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1115-1117 assumes 'n : ℕ' and proves integrability and 'E(∑x_j²)^2=n*(n+2)'. TeX integrated_compact_gaussian.tex:179 states '3n+n(n−1)=n(n+2)=288' at n=16. Ledger:970 and claims.yaml:3830 accurately give the general-n calculation, including the zero-dimensional case."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.vOut_rowFamily: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1137-1139 proves 'vOut (rowFamily n)=[n]' for natural n. TeX integrated_compact_gaussian.tex:175,181 takes n=16 and states 'V_out=n'. Ledger:971 and claims.yaml:3837 correctly express the one-by-one matrix interpretation and harmless general-n extension."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.vIn_rowFamily: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1142-1144 proves 'vIn (rowFamily n)=1', the n-dimensional identity matrix. TeX integrated_compact_gaussian.tex:181 states 'V_in=I_n'. Ledger:972 and claims.yaml:3844 match both orientation and dimension; natural n is an explicitly described generalization of n=16."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.vOut_colFamily: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1147-1149 proves 'vOut (colFamily n)=1'. TeX integrated_compact_gaussian.tex:181,183-184 transposes the row family, interchanging input and output variances. Ledger:973 and claims.yaml:3851 correctly identify the resulting n-dimensional output identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.vIn_colFamily: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1152-1154 proves 'vIn (colFamily n)=[n]'. TeX integrated_compact_gaussian.tex:181,183-184 transposes the family and therefore exchanges the two variance directions. Ledger:974 and claims.yaml:3858 accurately state the scalar input variance for the column example."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.rpow_quarter_pow: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1163-1165 assumes 'x : ℝ' and '0 ≤ x' and proves '(x^(1/(2*2)))^4=x'. Ledger:975 and claims.yaml:3865 match. TeX integrated_compact_gaussian.tex:182-185 compares fourth powers, but does not separately state this real-power normalization; auxiliary classification and the nonnegative-base condition are correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.sqrt_three_mul_pow: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1168-1175 assumes arbitrary real y and proves '(√(2*2−1)*y)^4=9*y^4'. Ledger:976 and claims.yaml:3872 match. TeX integrated_compact_gaussian.tex:182-185 uses the factor 9 when taking fourth powers of √3 bounds, without a separate labelled arithmetic lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_vIn_rowFamily_sq: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1178-1179 proves 'Re Tr(vIn(rowFamily 16)^2)=16' without supplied hypotheses. TeX integrated_compact_gaussian.tex:181-183 has V_in=I_16 and '9 Tr I_n²=144'. Ledger:977 and claims.yaml:3879 correctly state the trace calculation underlying 144."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.trace_vOut_rowFamily_sq: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1182-1186 proves 'Re Tr(vOut(rowFamily 16)^2)=256'. TeX integrated_compact_gaussian.tex:181 has V_out=n=16 and :185 gives the associated average/maximum fourth powers. Ledger:978 and claims.yaml:3886 correctly expose the implicit 16² trace calculation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integral_schattenPow_rowFamily: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1189-1194 has the fixed rowFamily 16, proves integrability, and gives '∫ schattenPow ... 2 = 288'. TeX integrated_compact_gaussian.tex:175-179 fixes n=16 and gives 'E‖X‖_{S4}⁴=288'. Ledger:979 and claims.yaml:3893 preserve the family, law, exponent, and constant exactly."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.integral_schattenPow_colFamily: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1197-1202 proves integrability and expected S4 fourth power 288 for colFamily 16. TeX integrated_compact_gaussian.tex:183-184 transposes the n=16 example to refute the output-only bound. Ledger:980 and claims.yaml:3900 correctly state the invariant moment for that transposition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.gaussian_one_variance_test: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1211-1226 states the row Gram identity, integrability, moment 288, variances 16 and I, input-only fourth power 144 and its failed inequality, average fourth power 1224, maximum fourth power 2304, and the transposed failed bound. TeX integrated_compact_gaussian.tex:175-185 gives exactly these quantities. Ledger:981 and claims.yaml:3907 match; 9*(256+16)/2=1224 and 9*256=2304."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.continuous_schattenPow_gaussLin: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1257-1261 assumes a finite rectangular family and natural m and proves continuity of 'x ↦ schattenPow (gaussLin A x) m'. Ledger:982 and claims.yaml:3914 match. TeX integrated_compact_gaussian.tex:99,116-120 treats this as a polynomial norm power without a separate continuity assertion; the transfer-route auxiliary designation is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.finite_hermitian_gaussian_paper: E:finite-hermitian-gaussian",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1254,1267-1275 assumes a probability space, Hermitian Bs, 'iIndepFun g P', standard 'HasLaw', and '1 ≤ m'; it proves integrability, the (2m−1)^m bound, and equality when m=1. TeX integrated_compact_gaussian.tex:94,115,143-148 has those same mathematical hypotheses and conclusions. Ledger:983 and claims.yaml:3921 accurately state the arbitrary-space wrapper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.finite_gaussian_matrix_paper: P:finite-gaussian-matrix",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1295-1317 assumes finite nonempty o,n, '1 ≤ N', independent standard Gaussian laws, and '1 ≤ m'; it proves integrability, both bounds, p=2 equality, and zero-family identities. TeX integrated_compact_gaussian.tex:93-111 has o,n,N≥1, independent standard Gaussians, and even p=2m≥2. Ledger:984 and claims.yaml:3928 match. Empty families are separately handled by :1001-1020, as disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteGaussianMatrix.gaussian_one_variance_test_paper: R:gaussian-one-variance-test",
+      "verdict": "PASS",
+      "reason": "FiniteGaussianMatrix.lean:1332-1342 assumes 16 independent standard Gaussian laws on the probability space and proves marginal moments 1,3, row/column fourth moments 288, and both failed one-variance inequalities. TeX integrated_compact_gaussian.tex:175-184 has the same Gaussian example and failures. Ledger:985 and claims.yaml:3935 accurately enumerate this wrapper's conclusions; the deterministic 144,1224,2304 identities are proved in the canonical theorem."
+    },
+    {
+      "claim": "PARA-FiniteGaussianMatrix",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:784-823 correctly identifies the files, Gaussian-law transfer, trace-defined Schatten quantities, CFC objects, no supplied analytic inputs, and p=2m≥2. Ledger:838-856 accurately discloses unused dimension hypotheses and proof-route differences; :858-864 correctly excludes the infinite-dimensional results. The blanket assertion at :824-826 that 'the wrappers record' imaginary-part vanishing should distinguish gaussian_trace_bounds_paper from wrappers that only compare real parts; see W3."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "A declaration-set comparison finds exactly 118 distinct entries in ledger:868-985 and exactly the same 118 entries in index rows :179-184, under their corresponding labels or no-direct-label categories. All labels cited in the section were found by searching every frozen LaTeX file; their definitions occur in integrated_compact_gaussian.tex:2,13,47,92,143,174,199,298,379,430,459,502,561."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:132-142,299-314,396-406 names existing claims and correctly assigns same-assumptions to the three whole results. FiniteGaussianMatrix.lean:379-390 matches TeX:47-60; :1295-1317 plus :1001-1020 matches TeX:92-112; :1211-1226 and :1332-1342 cover TeX:173-187. Independence and standard laws are not supplied conclusions, and no Gaussian IBP or integrability result is assumed. The trace definitions and all four numerical values agree. W1 concerns an auxiliary row's overextended paraphrase, not these numerical bounds."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PARTIAL",
+      "reason": "Scope ledger:48-53 and Not in Lean :1622-1627 correctly distinguish the newly proved finite Gaussian results from unformalized infinite-dimensional results. However, FiniteYoung's row :298 still places 'The trace and Gaussian-moment estimates in which it is applied' under 'Inputs left outside Lean'. Those estimates are now proved in FiniteGaussianMatrix.lean:379-400,740-782,950-983, corresponding to TeX integrated_compact_gaussian.tex:47-171. This stale scope/input description needs correction; see W2."
+    },
+    {
+      "claim": "LEDGER-TOTALS",
+      "verdict": "PASS",
+      "reason": "Read-only enumeration of all per-module table declaration cells finds 557 rows, 557 distinct declarations, 351 labelled and 206 no-direct-label entries, agreeing with ledger:187-188. claims.yaml contains exactly the same 557 distinct declarations, classified as 470 theorems and 87 definitions. There are no missing, extra, or duplicate declaration rows."
+    },
+    {
+      "claim": "SCOPE-PROSE",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:30-69 consistently lists nineteen whole-result modules and eleven no-supplied-input plus four supplied-input results, including the three new Gaussian results. The finite-Gaussian exception at :74-75 agrees with GaussianIBP.lean:115,275-280. Internal/reusable classifications for the reviewed modules match claims.yaml:3111-3938. The neighboring blanket exclusion of 'spectral analysis, operator theory' should be qualified as infinite-dimensional, since finite spectral and matrix-order arguments are now proved; see W4."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "W1 — rowFamily_mul_conj paraphrase overstates the Lean conclusion. candidate/statement-ledger.md:964 and lean/claims.yaml:3788 append 'the only nonzero singular value of X is (sum_j x_j^2)^(1/2)'. The Lean declaration, lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean:1050-1052, quantifies over arbitrary n and x and concludes only 'gaussLin ... * (...)ᴴ = [∑ x_j²]'. The manuscript, manuscript/notes/integrated_compact_gaussian.tex:175-176, discusses the n=16 Gaussian example. At x=0 the universal paraphrase has no nonzero singular value, and the declaration does not itself state a singular-value theorem. Fix the ledger and claims.yaml summaries by ending at the Gram identity. If retaining explanatory singular-value prose, explicitly identify it as an informal consequence: there is at most one nonzero singular value, equal to the displayed square root when x≠0."
+    ],
+    "minor": [
+      "W2 — stale FiniteYoung scope/input wording. candidate/statement-ledger.md:296-298 places 'The trace and Gaussian-moment estimates in which it is applied' under 'Inputs left outside Lean', although lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean:379-400,740-782,950-983 now proves the estimates in manuscript/notes/integrated_compact_gaussian.tex:47-171. The scalar theorem itself is not weakened by this wording, but the global scope description is materially stale. Replace that cell with 'None; applications to the finite trace and Gaussian-moment estimates are formalized in FiniteGaussianMatrix.' This correction is required by the explicit cross-reference acceptance check.",
+      "W3 — wrapper reality wording. candidate/statement-ledger.md:824-826 says 'the wrappers record that the imaginary parts vanish'. Explicit imaginary-part conclusions occur in lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean:379-390, whereas :1267-1275 and :1295-1317 state real-part bounds without those additional conjuncts. manuscript/notes/integrated_compact_gaussian.tex:129,139 treats the relevant Hermitian traces as real; the reviewed PSD and spectral lemmas justify this mathematically. Optional clarification: name gaussian_trace_bounds_paper specifically and describe the remaining reality facts as consequences of the proved matrix lemmas.",
+      "W4 — finite-dimensional exception in Scope. candidate/statement-ledger.md:74-77 broadly puts 'spectral analysis, operator theory' outside Lean, while lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean:90-115,244-289,348-400,901-905 uses and proves finite spectral, order, and functional-calculus facts corresponding to manuscript/notes/integrated_compact_gaussian.tex:63-88,165-167. The surrounding whole-result discussion makes the intended infinite-dimensional restriction understandable. Optional clarification: say 'infinite-dimensional spectral analysis and operator theory, beyond the finite-matrix results below'."
+    ]
+  },
+  "required_repairs": [
+    "W1: Correct candidate/statement-ledger.md:964 and lean/claims.yaml:3788 so the rowFamily_mul_conj summary states its actual universally quantified Gram identity, without claiming an unconditional nonzero singular value or an additional formal singular-value conclusion.",
+    "W2: Update candidate/statement-ledger.md:298 to stop classifying the now-formalized finite trace and Gaussian-moment estimates as inputs left outside Lean, and point to the FiniteGaussianMatrix section."
+  ],
+  "limitations": [
+    "Requirement A was completed, including every line of the three required Lean modules, all required ledger sections and module claim entries, coverage.yaml, and integrated_compact_gaussian.tex.",
+    "Other manuscript files were searched for labels, not substantively reviewed; every relevant label match was in the completely read integrated_compact_gaussian.tex. Unrelated previously reviewed ledger rows were used only for global enumeration and cross-reference searches.",
+    "Compilation and standard-axiom status were accepted as stipulated; no Lean build, proof reconstruction, installation, network access, or file modification was performed.",
+    "The supervisor-checked provenance binding was accepted; Git history and byte hashes were not independently reverified.",
+    "This AI correspondence review is not human verification or a novelty audit. The principal matrix inequalities, Gaussian assumptions, Schatten representation, and numerical counterexample pass; the acceptance-blocking defects are in the ledger's descriptive correspondence."
+  ]
+}

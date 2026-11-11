@@ -1,0 +1,126 @@
+Independent correspondence review: newly formalized whole labelled result(s) (Lean ledger rows) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  4721cf9dd6c3). Review ONLY its section "## IndexedCone (whole result)", the index
+  rows for it, and the items named in the global checks below. All other
+  rows were reviewed earlier.
+- the Lean modules (ground truth for what each declaration states):
+  lean/StratonovichHAMSecondMoment/HomogHypothesis.lean
+  lean/StratonovichHAMSecondMoment/IndexedCone.lean
+  and lean/claims.yaml, lean/coverage.yaml.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  3920258be333. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that L:raw-block-indexed-cone are formalized as stated in their
+rows: every conclusion proved, with hypotheses that match the manuscript,
+apart from side conditions the TeX leaves implicit and inputs explicitly
+declared as supplied. Test that claim hard: any Lean hypothesis that the
+manuscript does not have, any manuscript hypothesis the Lean drops, any
+weaker Lean conclusion, any changed constant, range, quantifier order or
+strictness, any modelling choice that changes the mathematical object, any
+supplied hypothesis stronger than the manuscript result it stands for, and
+any row labelled as a step of a TeX proof that is really an auxiliary of a
+different Lean proof route, is a finding, unless the ledger states it AND it
+is genuinely harmless. Decide that yourself from the TeX; do not accept the
+ledger's word.
+Pay attention to: each field of the GroundFamily structure must be a conclusion (or a weakening) of S:compact-mean-family results as the TeX states them, never stronger (check E:compact-F-eigen, E:compact-normalized-complement, E:compact-positive-margins, E:compact-rate-gap, P:compact-F-projection, P:compact-ground-family); the existence statement and constant c_* = a_* j_*/4 and the quantifier order must match E:raw-block-positive-product.
+
+CHECKS (exactly these 50, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.IndexedCone.indexed_cone_paper: L:raw-block-indexed-cone"
+  2. claim "StratonovichHAMSecondMoment.IndexedCone.indexed_cone: L:raw-block-indexed-cone"
+  3. claim "StratonovichHAMSecondMoment.IndexedCone.paramI: no direct label"
+  4. claim "StratonovichHAMSecondMoment.IndexedCone.isCompact_paramI: no direct label"
+  5. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily: P:compact-F-projection"
+  6. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.Pi: E:compact-F-projection"
+  7. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.Q: E:compact-F-projection"
+  8. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.aStar: L:raw-block-indexed-cone"
+  9. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.jStar: L:raw-block-indexed-cone"
+  10. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.Pi_apply: no direct label"
+  11. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.Q_apply: no direct label"
+  12. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.ell_P: E:compact-F-eigen"
+  13. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.P_e: E:compact-F-eigen"
+  14. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.ell_Q: L:raw-block-indexed-cone"
+  15. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.Q_Q: L:raw-block-indexed-cone"
+  16. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.decomp: L:raw-block-indexed-cone"
+  17. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.P_Q: E:compact-F-eigen"
+  18. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.norm_Q_le: L:raw-block-indexed-cone"
+  19. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.norm_Pi: no direct label"
+  20. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.norm_Pi_sub_le: no direct label"
+  21. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.exp_ge_one: no direct label"
+  22. claim "StratonovichHAMSecondMoment.IndexedCone.chainState: E:raw-block-positive-product"
+  23. claim "StratonovichHAMSecondMoment.IndexedCone.chainState_zero: no direct label"
+  24. claim "StratonovichHAMSecondMoment.IndexedCone.chainState_succ: no direct label"
+  25. claim "StratonovichHAMSecondMoment.IndexedCone.ConeConstants: L:raw-block-indexed-cone"
+  26. claim "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.norm_Q_le: L:raw-block-indexed-cone"
+  27. claim "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.norm_PQ_le: no direct label"
+  28. claim "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.step_ell: L:raw-block-indexed-cone"
+  29. claim "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.step_Q: L:raw-block-indexed-cone"
+  30. claim "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.step_obs: L:raw-block-indexed-cone"
+  31. claim "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.rebase: L:raw-block-indexed-cone"
+  32. claim "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.qB_nonneg: no direct label"
+  33. claim "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.entrance: L:raw-block-indexed-cone"
+  34. claim "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.block: L:raw-block-indexed-cone"
+  35. claim "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.terminal: L:raw-block-indexed-cone"
+  36. claim "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.chain_cone: L:raw-block-indexed-cone"
+  37. claim "StratonovichHAMSecondMoment.IndexedCone.ConeConstants.positive_product_of_constants: L:raw-block-indexed-cone"
+  38. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.ell_e0_continuousOn: no direct label"
+  39. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.obs_e_continuousOn: no direct label"
+  40. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.aStar_le: L:raw-block-indexed-cone"
+  41. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.jStar_le: L:raw-block-indexed-cone"
+  42. claim "StratonovichHAMSecondMoment.IndexedCone.GroundFamily.Pi_bounded_continuous: P:compact-F-projection"
+  43. claim "StratonovichHAMSecondMoment.IndexedCone.exists_coneConstants: L:raw-block-indexed-cone"
+  44. claim "StratonovichHAMSecondMoment.IndexedCone.scalarFamily: no direct label"
+  45. claim "StratonovichHAMSecondMoment.IndexedCone.scalarFamily_aStar: no direct label"
+  46. claim "StratonovichHAMSecondMoment.IndexedCone.scalarFamily_jStar: no direct label"
+  47. claim "PARA-IndexedCone": the "IndexedCone (whole result)" section paragraph is accurate, cites the right files, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input and what is not formalized, and does not overclaim
+  48. claim "LEDGER-INDEX": the "Index by label" rows for the IndexedCone section list exactly these 46 declarations under the labels their rows give, and every label cited in the section exists in the manuscript (search \label across all files)
+  49. claim "COVERAGE-ROWS": the coverage.yaml row for L:raw-block-indexed-cone: class inputs-supplied with full conclusion is justified, its claims are right, and its inputs list names exactly the GroundFamily fields
+  50. claim "CROSS-REFERENCES": every other place in the ledger that points to the IndexedCone section (step-module intros and rows, the "Not in Lean" section, Scope) is accurate
+For each row check (1-46): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: every Lean file
+   listed above; the "IndexedCone (whole result)" section and the "Scope" and
+   "Index by label" sections of candidate/statement-ledger.md; the entries
+   of lean/claims.yaml for this section's modules; lean/coverage.yaml;
+   manuscript/notes/integrated_raw_block_lower.tex,
+   manuscript/notes/integrated_compact_mean_family.tex,
+   and lines 150-216 of manuscript/notes/notes_stratonovich_ham_second_moment.tex (H:homog);
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 50 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-46.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.

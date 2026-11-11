@@ -1,0 +1,354 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-190,191-380,381-567 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/WeakSobolev.lean:1-329 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:1-454 \u2014 complete.",
+    "candidate/statement-ledger.md:1-189,533-549,1441-1529,1530-1589,1590-1636 \u2014 partial file; complete required Scope, Index, VariationalDilation section and identified cross-references.",
+    "lean/claims.yaml:745-845,1591-1795,1796-1999 \u2014 partial file; complete entries for HomogHypothesis, WeakSobolev and VariationalDilation.",
+    "lean/coverage.yaml:1-215,216-430 \u2014 complete.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-175,176-343 \u2014 complete.",
+    "manuscript/notes/integrated_compact_mean_family.tex:380-420 \u2014 partial file; complete required range.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:150-216 \u2014 partial file; complete required range.",
+    "All manuscript files were searched for the section's cited label definitions; every match was in the manuscript ranges listed above."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.IsTestFunction: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1531 and claims.yaml:1592-1598 match WeakSobolev.lean:65-66, 'ContDiff \u211d \u221e \u03c6 \u2227 HasCompactSupport \u03c6'. TeX integrated_unmasked_variational.tex:106 uses 'H^1' without separately defining its test functions. The foundational no-direct-label mapping is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.HasWeakGradient: no direct label",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:1532 and claims.yaml:1599-1605 reproduce WeakSobolev.lean:70-72, '\u2200 \u03c6 ... IsTestFunction \u03c6 \u2192 \u2200 v ... \u222b f \u2202v\u03c6 = -\u222b \u27e8g,v\u27e9\u03c6'. TeX integrated_unmasked_variational.tex:106,260 uses conventional H^1 and weak derivatives. This is faithful within MemH1, where both functions are L\u00b2; the standalone predicate lacks local-integrability guards. See W4."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.MemH1: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1533 and claims.yaml:1606-1612 match WeakSobolev.lean:76-77, 'MemLp f 2 ... \u2203 g ... MemLp g 2 ... HasWeakGradient f g'. TeX integrated_unmasked_variational.tex:106 specifies 'f\u2208H^1(\u211d^d;\u211d)'. L\u00b2 membership makes the distributional pairings genuine integrals, giving the conventional real H\u00b9 class."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.weakGradient_ae_unique: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1534 and claims.yaml:1613-1619 match WeakSobolev.lean:80-83: 'HasWeakGradient f g\u2081', 'HasWeakGradient f g\u2082', both gradients 'MemLp ... 2', imply 'g\u2081 =\u1d50[volume] g\u2082'. TeX integrated_unmasked_variational.tex:106-107 uses a uniquely defined gradient energy. This foundation is not a separately labelled manuscript assertion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.dilL2: L:variational-control-dilation",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:1535 and claims.yaml:1620-1626 match WeakSobolev.lean:132-134, 'r ^ ((d : \u211d) / 2) \u2022 f (r \u2022 x)'. TeX integrated_unmasked_variational.tex:259 states 'U_rf(x)=r^{d/2}f(rx)' under r>0. The vector-valued extension is harmless; the ledger's TeX line pointer is displaced. See W3."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.rpow_half_sq: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1536 and claims.yaml:1627-1633 match WeakSobolev.lean:137: '(hr : 0 < r)' implies '(r^(d/2))\u00b2=r^d'. TeX integrated_unmasked_variational.tex:259-261 uses the same amplitude in the norm calculation. The ledger explicitly identifies this separately packaged identity as a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.integral_jacobian: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1537 and claims.yaml:1634-1640 match WeakSobolev.lean:144-146: 'hr : 0 < r', arbitrary normed-space-valued G, and '\u222b r^d \u2022 G(r \u2022 x)=\u222b G'. TeX integrated_unmasked_variational.tex:251 invokes 'Lebesgue substitution z=rx'. The unconditional Bochner formulation is explicitly presented as an auxiliary, not as the full manuscript claim."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.integrable_jacobian_iff: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1538 and claims.yaml:1641-1647 match WeakSobolev.lean:152-154: with 'hr : 0 < r', 'Integrable (r^d \u2022 G(r \u2022 \u00b7)) \u2194 Integrable G'. TeX integrated_unmasked_variational.tex:251 contains the substitution but no separately stated integrability equivalence. Its explicit auxiliary/no-direct-label classification is accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.memLp_dilL2: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "Ledger:1539 and claims.yaml:1648-1654 match WeakSobolev.lean:160-162: 'hr : 0 < r', 'hf : MemLp f 2 volume' imply 'MemLp (dilL2 r f) 2 volume'. TeX integrated_unmasked_variational.tex:259 calls U_r a 'unitary bijection on real L\u00b2'. The vector-valued generalization does not weaken the real instance."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.norm_dilL2_sq: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1540 and claims.yaml:1655-1661 match WeakSobolev.lean:172-174: 'hr : 0 < r' gives '\u2016dilL2 r f x\u2016\u00b2=r^d \u2022 \u2016f(r \u2022 x)\u2016\u00b2'. TeX integrated_unmasked_variational.tex:259 specifies U_r. This elementary pointwise calculation is honestly marked as a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.integral_norm_dilL2_sq: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "Ledger:1541 and claims.yaml:1662-1668 match WeakSobolev.lean:179-181: 'hr : 0 < r' implies '\u222b \u2016dilL2 r f\u2016\u00b2=\u222b \u2016f\u2016\u00b2'. TeX integrated_unmasked_variational.tex:259 asserts unitarity on L\u00b2. The ledger accurately calls the Lean result an identity of integrals rather than a standalone proof that arbitrary f is L\u00b2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.hasWeakGradient_dilL2: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "Ledger:1542 and claims.yaml:1669-1675 match WeakSobolev.lean:188-190: 'hr : 0 < r', 'h : HasWeakGradient f g' imply the gradient 'fun x => r \u2022 dilL2 r g x'. TeX integrated_unmasked_variational.tex:260-261 says 'Weak derivatives give \u2016\u2207U_rf\u2016\u00b2=r\u00b2\u2016\u2207f\u2016\u00b2'. With the separately established L\u00b2 transport, this is the requisite derivative calculation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.IsRayleighTrial: E:variational-real-rayleigh",
+      "verdict": "PASS",
+      "reason": "Ledger:1543 and claims.yaml:1676-1682 match WeakSobolev.lean:222-227: L\u00b2 f,g, weak gradient, '\u222b f\u00b2=1', and 'Integrable (V*f\u00b2)'. TeX integrated_unmasked_variational.tex:106-107 requires real unit H\u00b9 f; :66-92 establishes smooth bounded h_s. Thus |h_s f\u00b2|\u2264M f\u00b2 and the extra integrability condition excludes no manuscript trial. This automaticity is not proved in Lean and is disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.rayleighValue: E:variational-real-rayleigh",
+      "verdict": "PASS",
+      "reason": "Ledger:1544 and claims.yaml:1683-1689 match WeakSobolev.lean:230-231, '(\u222b V*f\u00b2)-\u222b \u2016g\u2016\u00b2'. TeX integrated_unmasked_variational.tex:106-107 uses '\u222b h_s f\u00b2-\u2016\u2207f\u2016\u00b2' for unit real H\u00b9 tests. On IsRayleighTrial, g is the L\u00b2 weak gradient and both terms have the intended meaning."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.rayleighSet: E:variational-real-rayleigh",
+      "verdict": "PASS",
+      "reason": "Ledger:1545 and claims.yaml:1690-1696 match WeakSobolev.lean:235-236, '{q | \u2203 f g, IsRayleighTrial V f g \u2227 rayleighValue V f g=q}'. TeX integrated_unmasked_variational.tex:106 takes the supremum over unit real H\u00b9 f. Existence of an L\u00b2 weak gradient and its a.e. uniqueness identify the pair-based set with that set for the smooth bounded manuscript potential."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.rayleighRate: E:variational-real-rayleigh",
+      "verdict": "PASS",
+      "reason": "Ledger:1546 and claims.yaml:1697-1703 match WeakSobolev.lean:241-242, 'Real.sqrt (sSup (rayleighSet V))'. TeX integrated_unmasked_variational.tex:103-107 defines positive '\u03bb=\u221a(-E_s)' and identifies \u03bb\u00b2 with the real Rayleigh supremum. The ledger explicitly excludes formalization of that spectral identification and records totalized sSup behavior."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.IsRayleighTrial.memH1: E:variational-real-rayleigh",
+      "verdict": "PASS",
+      "reason": "Ledger:1547 and claims.yaml:1704-1710 match WeakSobolev.lean:245-247, '(h : IsRayleighTrial V f g) : MemH1 f'. TeX integrated_unmasked_variational.tex:106 requires 'f\u2208H\u00b9'. This is exactly the H\u00b9 membership packaged in the Lean trial definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.rayleighValue_indep: E:variational-real-rayleigh",
+      "verdict": "PASS",
+      "reason": "Ledger:1548 and claims.yaml:1711-1717 match WeakSobolev.lean:251-253: two 'IsRayleighTrial V f g\u1d62' hypotheses imply equal rayleighValue. TeX integrated_unmasked_variational.tex:106-107 indexes values by f alone. The equality justifies that representation; equivalence of admissible trials additionally uses the definitions and the disclosed boundedness argument."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.IsRayleighTrial.dil: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1549 and claims.yaml:1718-1724 match WeakSobolev.lean:261-265: 'hr : 0 < r' and a trial for V yield a trial for 'r\u00b2 V(r \u2022 \u00b7)' and r\u00b2 times its value. TeX integrated_unmasked_variational.tex:259-262 describes the Rayleigh bijection for h_s. The more general packaged trial theorem is explicitly classified as an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.rayleighSet_dil: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "Ledger:1550 and claims.yaml:1725-1731 match WeakSobolev.lean:294-295: arbitrary real V and 'hr : 0 < r' give 'rayleighSet (r\u00b2 V(r \u2022 \u00b7))=(r\u00b2) \u2022 rayleighSet V'. TeX integrated_unmasked_variational.tex:259-262 invokes the 'real Rayleigh bijection'. Generality beyond bounded h_s is explicitly stated and harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.sqrt_sSup_scale: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1551 and claims.yaml:1732-1738 match WeakSobolev.lean:314-315: arbitrary 'S : Set \u211d', 'hr : 0 < r', and '\u221asSup(r\u00b2S)=r\u221asSup(S)'. TeX integrated_unmasked_variational.tex:263 uses positive rates to take square roots. The ledger accurately identifies the unrestricted totalized-supremum theorem as a different auxiliary formulation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.sSup_rayleighSet_dil: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "Ledger:1552 and claims.yaml:1739-1745 match WeakSobolev.lean:320-321: arbitrary V, 'hr : 0 < r', and the r\u00b2 scaling of sSup. TeX integrated_unmasked_variational.tex:262 calls this the 'squared rate identity'. The general statement is about suprema; for the manuscript's positive rate it is the squared-rate identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WeakSobolev.rayleighRate_dil: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "Ledger:1553 and claims.yaml:1746-1752 match WeakSobolev.lean:325-326: arbitrary V and 'hr : 0 < r' imply 'rayleighRate(r\u00b2V(r \u2022 \u00b7))=r*rayleighRate V'. TeX integrated_unmasked_variational.tex:262-264 takes positive square roots. The disclosed Rayleigh-form definition makes the stronger generality legitimate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.CPos: E:variational-positive-class",
+      "verdict": "PASS",
+      "reason": "Ledger:1554 and claims.yaml:1754-1760 match VariationalDilation.lean:87-89: smooth compactly supported \u03a8, 'tsupport \u03a8 \u2286 Ioo 0 1 \u00d7\u02e2 univ', nonnegative and nonzero. TeX integrated_unmasked_variational.tex:8-9 requires '\u03a8\u2208C_c^\u221e((0,1)\u00d7\u211d^d;\u211d), \u03a8\u22650, \u03a8\u22600'. Extension by zero gives precisely the same class, without separability restrictions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.dil: E:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "Ledger:1555 and claims.yaml:1761-1767 match VariationalDilation.lean:92-93, 'r^((d:\u211d)+2-alpha)*\u03a8(s,r \u2022 x)'. TeX integrated_unmasked_variational.tex:226-228 states r>0 and '(D_r\u03a8)(s,x)=r^{d+2-\u03b1}\u03a8(s,rx)'. The unrestricted definition is used with the required positivity in all dilation theorems."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.CPos_nonempty: E:variational-positive-class",
+      "verdict": "PASS",
+      "reason": "Ledger:1556 and claims.yaml:1768-1774 match VariationalDilation.lean:98-117, '(CPos d).Nonempty', proved with a bump centered at (1/2,0). TeX integrated_unmasked_variational.tex:13-15 says 'It is nonempty' and supplies a product bump. The different witness is explicitly disclosed and proves the same assertion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.dil_mapsTo: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "Ledger:1557 and claims.yaml:1775-1781 match VariationalDilation.lean:125-126: arbitrary \u03b1 and 'hr : 0 < r' imply 'MapsTo ... (CPos d) (CPos d)'. TeX integrated_unmasked_variational.tex:241 says 'Positive dilation preserves the full smooth positive nonzero class'. Removing unused covariance restrictions is harmless and disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.dil_inv_dil: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "Ledger:1558 and claims.yaml:1782-1788 match VariationalDilation.lean:155-156: 'hr : 0 < r', arbitrary \u03a8, and 'dil \u03b1 (1/r) (dil \u03b1 r \u03a8)=\u03a8'. TeX integrated_unmasked_variational.tex:230,241-242 states inverse D_{1/r} and explains amplitude multiplication. The all-functions extension is valid."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.dil_dil_inv: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "Ledger:1559 and claims.yaml:1789-1795 match VariationalDilation.lean:163-164: 'hr : 0 < r', arbitrary \u03a8, and 'dil \u03b1 r (dil \u03b1 (1/r) \u03a8)=\u03a8'. TeX integrated_unmasked_variational.tex:230,241-242 supplies the same inverse assertion. No constant or inverse direction is changed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.dil_bijOn: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "Ledger:1560 and claims.yaml:1796-1802 match VariationalDilation.lean:170-172: 'hr : 0 < r' gives both 'Set.InvOn' and 'Set.BijOn' on CPos. TeX integrated_unmasked_variational.tex:226-230 asserts exactly a bijection with inverse D_{1/r}. The general \u03b1,d version specializes correctly."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.SetScaling: H:homog",
+      "verdict": "PASS",
+      "reason": "Ledger:1561 and claims.yaml:1803-1809 match VariationalDilation.lean:180-182: measurable A and '0<c' imply '\u0393(c \u2022 A)=ofReal(c^(d-\u03b1))*\u0393 A'. TeX notes_stratonovich_ham_second_moment.tex:179-180 says 'For every Borel set A and c>0, \u0393(cA)=c^{d-\u03b1}\u0393(A)'. This is accurately labelled as the scaling clause only."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.map_dilation: L:variational-control-dilation",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:1562 and claims.yaml:1810-1816 match VariationalDilation.lean:185-187: 'h\u0393 : SetScaling \u03b1 \u0393', 'hr : 0 < r' imply '\u0393.map(r \u2022 \u00b7)=ofReal(r^(\u03b1-d)) \u2022 \u0393'. TeX integrated_unmasked_variational.tex:248-249 identifies the pushforward by '\u0393(A/r)=r^{\u03b1-d}\u0393(A)'. The ledger's line pointer is displaced, not its exponent. See W3."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.integral_dilation: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "Ledger:1563 and claims.yaml:1817-1823 match VariationalDilation.lean:200-202: SetScaling, '0<r' and 'Continuous G' give '\u222b G(ry)d\u0393=r^{\u03b1-d}\u222bGd\u0393'. TeX integrated_unmasked_variational.tex:243-246 states this for 'nonnegative measurable G'. The ledger expressly records the narrower continuous-test formulation; it covers the manuscript's smooth convolution tests, while map_dilation captures the underlying measure identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.integrable_dilation_iff: L:variational-control-dilation",
+      "verdict": "PARTIAL",
+      "reason": "Fidelity holds: claims.yaml:1824-1830 and VariationalDilation.lean:208-210 require 'SetScaling', '0<r', 'Continuous G' and conclude 'Integrable(G(r \u2022 \u00b7)) \u0393 \u2194 Integrable G \u0393'. TeX integrated_unmasked_variational.tex:243-249 instead states a nonnegative-measurable integral/pushforward identity, not this equivalence. Ledger:1564 does not identify this as an additional Lean-route auxiliary. See W2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.conv: E:compact-raw-mean",
+      "verdict": "PASS",
+      "reason": "Ledger:1565 and claims.yaml:1831-1837 match VariationalDilation.lean:221-222, '\u222b y, \u03c6(x-y) \u2202\u0393'. TeX integrated_compact_mean_family.tex:403-404 uses '(\u0393*\u03a8(u,\u00b7))(x)' with the same physical covariance. For the manuscript's smooth compact spatial slices and Radon \u0393, this is the intended ordinary convolution."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.mean: E:compact-raw-mean",
+      "verdict": "PASS",
+      "reason": "Ledger:1566 and claims.yaml:1838-1844 match VariationalDilation.lean:225-226, '\u222b u in Ioo 0 1, |s-u|^(-a)*conv \u0393 \u03a8_u x'. TeX integrated_compact_mean_family.tex:399-404 has 'a=\u03b1\u2080' and the same integral from 0 to 1. Endpoints and the rpow value at u=s are null-set conventions; amplitude and convolution orientation agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.rawCost: E:compact-raw-cost",
+      "verdict": "PASS",
+      "reason": "Ledger:1567 and claims.yaml:1845-1851 match VariationalDilation.lean:231-232, '\u222b \u03c3 in Ioo 0 1, \u222b x, \u03a8(\u03c3,x)*mean ... \u03c3 x'. TeX integrated_compact_mean_family.tex:408-410 states '0<v_\u03a8:=E Z\u00b2=\u222b\u222b\u03a8h<\u221e'. The ledger restricts its claim to the integral form and explicitly excludes the probabilistic equality, finiteness and positivity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.rate: E:variational-real-rayleigh",
+      "verdict": "PASS",
+      "reason": "Ledger:1568 and claims.yaml:1852-1858 match VariationalDilation.lean:238-239, 'WeakSobolev.rayleighRate (mean ... s)'. TeX integrated_unmasked_variational.tex:103-107 defines '\u03bb=\u221a(-E_s)' and proves its real Rayleigh formula over unit H\u00b9 f. The changed definitional presentation and unformalized spectral identification are expressly disclosed; the trial class is mathematically faithful for smooth bounded h_s."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.integratedRate: P:variational-unmasked-rate",
+      "verdict": "PASS",
+      "reason": "Ledger:1569 and claims.yaml:1859-1865 match VariationalDilation.lean:242-243, '\u222b s in Ioo 0 1, rate ... s'. TeX integrated_unmasked_variational.tex:109 defines 'I_\u03a8:=\u222b_0^1 \u03bb_{\u03a8,s} ds' and asserts positivity and finiteness. Only the definition is claimed, with those analytic conclusions explicitly left outside Lean."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.amp_mul_push: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1570 and claims.yaml:1866-1872 match VariationalDilation.lean:247-248: 'hr : 0 < r' implies 'r^(d+2-\u03b1)*r^(\u03b1-d)=r\u00b2'. TeX integrated_unmasked_variational.tex:228,246,250 uses these factors to scale the mean. The separately packaged exponent calculation is explicitly designated a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.amp_variance: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1571 and claims.yaml:1873-1879 match VariationalDilation.lean:253-254: 'hr : 0 < r' implies 'r^(d+2-\u03b1)*r\u00b2*(r^d)\u207b\u00b9=r^(4-\u03b1)'. TeX integrated_unmasked_variational.tex:253-254 displays the same factors. Its auxiliary classification is explicit; no covariance normalization or kinetic factor changes."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.conv_dil: L:variational-control-dilation",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:1572 and claims.yaml:1880-1886 match VariationalDilation.lean:261-263: SetScaling, '0<r', 'Continuous \u03a8' imply convolution scaling by r\u00b2 at rx. TeX integrated_unmasked_variational.tex:243-250 applies the Radon identity inside the temporal convolution. The continuous-control generalization is harmless; the cited line pointer is inaccurate. See W3."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.conv_dil_integrable_iff: L:variational-control-dilation",
+      "verdict": "PARTIAL",
+      "reason": "Claims.yaml:1887-1893 and VariationalDilation.lean:270-273 agree: SetScaling, '0<r', 'Continuous \u03a8' imply equivalence of \u0393-integrability of 'D_r\u03a8(u,x-y)' and '\u03a8(u,rx-y)'. TeX integrated_unmasked_variational.tex:243-250 uses a nonnegative pushforward identity and Tonelli, without stating this integrability equivalence. Ledger:1573 should distinguish the additional Lean auxiliary. See W2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.mean_dil: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "Ledger:1574 and claims.yaml:1894-1900 match VariationalDilation.lean:280-282: SetScaling, '0<r', 'Continuous \u03a8', arbitrary a,s,x give 'mean(D_r\u03a8) s x=r\u00b2 mean \u03a8 s (rx)'. TeX integrated_unmasked_variational.tex:233,250 gives exactly this mean identity under its stronger standing assumptions. Continuity follows from smoothness; extending s beyond I is disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.mean_dil_integrable_iff: L:variational-control-dilation",
+      "verdict": "PARTIAL",
+      "reason": "Claims.yaml:1901-1907 matches VariationalDilation.lean:288-293: SetScaling, '0<r', 'Continuous \u03a8' imply an 'IntegrableOn ... \u2194 IntegrableOn ...' equivalence for the mean's time integrands. TeX integrated_unmasked_variational.tex:249-250 says 'Positive Tonelli applies this identity inside the temporal convolution', not the equivalence. Ledger:1575 needs an explicit auxiliary classification. See W2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.cost_integrand_dil: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1576 and claims.yaml:1908-1914 match VariationalDilation.lean:302-306: SetScaling, '0<r', 'Continuous \u03a8' yield the pointwise cost integrand with prefactor 'r^(d+2-\u03b1)*r\u00b2*(r^d)\u207b\u00b9' and Jacobian r^d. TeX integrated_unmasked_variational.tex:251-254 performs the corresponding substitution in the pairing. The preparatory pointwise identity is explicitly marked auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.cost_inner_integrable_iff: L:variational-control-dilation",
+      "verdict": "PARTIAL",
+      "reason": "Claims.yaml:1915-1921 matches VariationalDilation.lean:311-314: SetScaling, '0<r', 'Continuous \u03a8' imply equivalence of spatial integrability of 'D_r\u03a8*mean(D_r\u03a8)' and '\u03a8*mean \u03a8'. TeX integrated_unmasked_variational.tex:251-254 states a Lebesgue substitution and variance identity, not this equivalence. Ledger:1577 presents an additional Lean-route safeguard without identifying it as such. See W2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.cost_inner_dil: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1578 and claims.yaml:1922-1928 match VariationalDilation.lean:321-324: SetScaling, '0<r', 'Continuous \u03a8' give r^(4-\u03b1) scaling of each spatial pairing. TeX integrated_unmasked_variational.tex:251-254 states the integrated variance calculation. The separately extracted inner-integral theorem is accurately marked as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.rawCost_dil: L:variational-control-dilation",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:1579 and claims.yaml:1929-1935 match VariationalDilation.lean:331-333: SetScaling, '0<r', 'Continuous \u03a8' imply 'rawCost(D_r\u03a8)=r^(4-\u03b1)*rawCost \u03a8'. TeX integrated_unmasked_variational.tex:234,251-254 gives the same factor, including r^(-d). The integral-form restriction is disclosed; only the line pointer needs correction. See W3."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.rawCost_integrable_iff: L:variational-control-dilation",
+      "verdict": "PARTIAL",
+      "reason": "Claims.yaml:1936-1942 matches VariationalDilation.lean:339-343: SetScaling, '0<r', 'Continuous \u03a8' give an IntegrableOn equivalence for the outer time integrands of rawCost. TeX integrated_unmasked_variational.tex:251-254 gives the variance identity, not this equivalence. Ledger:1580 needs an auxiliary qualification rather than direct proof-step correspondence. See W2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.rayleighSet_mean_dil: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "Ledger:1581 and claims.yaml:1943-1949 match VariationalDilation.lean:349-352: SetScaling, '0<r', 'Continuous \u03a8' imply 'rayleighSet(mean(D_r\u03a8))=r\u00b2 \u2022 rayleighSet(mean \u03a8)'. TeX integrated_unmasked_variational.tex:259-262 expressly uses the real Rayleigh bijection. The generalized hypotheses suffice and specialize to the same set for manuscript h_s."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.sSup_rayleighSet_mean_dil: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "Ledger:1582 and claims.yaml:1950-1956 match VariationalDilation.lean:358-362: SetScaling, '0<r', 'Continuous \u03a8' give r\u00b2 scaling of the Rayleigh suprema. TeX integrated_unmasked_variational.tex:262 states the 'squared rate identity'. The row's 'as suprema' qualification and external identification avoid claiming an unrestricted equality between a possibly negative supremum and a squared rate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.rate_dil: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "Ledger:1583 and claims.yaml:1957-1963 match VariationalDilation.lean:366-368: SetScaling, '0<r', 'Continuous \u03a8' imply 'rate(D_r\u03a8) s=r*rate \u03a8 s'. TeX integrated_unmasked_variational.tex:235,262-264 gives \u03bb scaling by r. The ledger explicitly limits Lean's conclusion to the Rayleigh-form rate and excludes the spectral bridge."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.rate_integrable_iff: L:variational-control-dilation",
+      "verdict": "PARTIAL",
+      "reason": "Claims.yaml:1964-1970 matches VariationalDilation.lean:374-377: SetScaling, '0<r', 'Continuous \u03a8' imply 'IntegrableOn(rate(D_r\u03a8)) Ioo \u2194 IntegrableOn(rate \u03a8) Ioo'. TeX integrated_unmasked_variational.tex:263-264 takes square roots and integrates positive rates; :109 already asserts Lipschitz regularity and finite I_\u03a8. It does not state this equivalence. Ledger:1584 should mark it as an additional auxiliary. See W2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.integratedRate_dil: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "Ledger:1585 and claims.yaml:1971-1977 match VariationalDilation.lean:384-386: SetScaling, '0<r', 'Continuous \u03a8' imply 'integratedRate(D_r\u03a8)=r*integratedRate \u03a8'. TeX integrated_unmasked_variational.tex:236,263-264 gives I_{D_r\u03a8}=rI_\u03a8. The Rayleigh-rate interpretation and unformalized spectral identification are disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.setScaling_of_homog: H:homog",
+      "verdict": "PASS",
+      "reason": "Ledger:1586 and claims.yaml:1978-1984 match VariationalDilation.lean:393-395: '(h : HomogCovariance d \u03b1 \u03b1\u2080 \u0393 \u03bc) : SetScaling \u03b1 \u0393 := h.scaling'. TeX notes_stratonovich_ham_second_moment.tex:169-185 includes '\u0393(cA)=c^{d-\u03b1}\u0393(A)' for Borel A and c>0. This is precisely a projection of that hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.variational_control_dilation_paper: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "Ledger:1587 and claims.yaml:1985-1991 match VariationalDilation.lean:404-412: 'hH : HomogCovariance', '\u0393 \u2260 0', '0<r', then InvOn, BijOn and four identities for every \u03a8\u2208CPos, using \u03b1\u2080. TeX integrated_unmasked_variational.tex:4-9 requires nonzero H:homog covariance, a=\u03b1\u2080 and the same class; :225-237 states those conclusions. HomogHypothesis.lean:64-80 matches TeX notes_stratonovich_ham_second_moment.tex:169-185. No stronger supplied hypothesis appears. The explicitly disclosed integral/Rayleigh presentation justifies a weaker-conclusion classification."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.VariationalDilation.variational_control_dilation_integrable_paper: L:variational-control-dilation",
+      "verdict": "FAIL",
+      "reason": "Claims.yaml:1992-1998 correctly summarizes VariationalDilation.lean:427-447: under HomogCovariance, \u0393\u22600, r>0 and \u03a8\u2208CPos it proves integrability equivalences and Rayleigh-set scaling. TeX integrated_unmasked_variational.tex:109 and integrated_compact_mean_family.tex:409-410 assert genuine finite quantities. Ledger:1588 adds 'so the identities relate genuine integrals and suprema', which does not follow from P\u2194Q or S'=r\u00b2S: both integrability propositions may be false, or both sets empty/unbounded. No absolute integrability, nonemptiness or boundedness conclusion is present. See W1; the extra companion also needs the mapping qualification in W2."
+    },
+    {
+      "claim": "PARA-VariationalDilation",
+      "verdict": "FAIL",
+      "reason": "Ledger:1441-1527 correctly identifies the files, weak-gradient model, control class, integral-form variance, Rayleigh-form rate, unused covariance hypotheses and excluded spectral/Gaussian identifications. However, :1493-1501 claims that transfer equivalences prevent statements from holding merely through junk values. VariationalDilation.lean:427-447 proves transfer, not validity on either side. The paragraph also does not distinguish its integrability auxiliaries from steps actually stated in TeX. See W1-W2."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "Ledger:151-160 lists exactly the section's 58 declarations: 23 WeakSobolev and 35 VariationalDilation entries, with no omission or duplication and with the labels assigned in :1531-1588. Every cited section label was found by searching all manuscript files and read in context. This mechanical consistency does not resolve the substantive mapping issue W2."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "Coverage.yaml:239-258 accurately assigns same-assumptions and conclusion weaker. VariationalDilation.lean:404-412 carries the manuscript's H:homog, nonzero covariance and r>0, uses a=\u03b1\u2080, and supplies nothing extra. The four identities concern faithfully represented integral/Rayleigh forms; the unformalized Gaussian and spectral identifications are explicitly excluded. The referenced claim IDs match claims.yaml. This classification does not establish the stronger junk-exclusion assurance criticized in W1."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger Scope:53-59 and Not in Lean:1615-1618 accurately explain the integral/Rayleigh restriction and missing identifications. RawVariational:533-545 correctly distinguishes exponent bookkeeping from the new dilation development. Its unqualified 'whole of' and 'whole lemma' wording is less precise than coverage.yaml's weaker-conclusion qualification, but the destination section states that restriction explicitly. See W5."
+    }
+  ],
+  "findings": {
+    "fatal": [
+      "W1 \u2014 Unsupported exclusion of junk values in variational_control_dilation_integrable_paper and PARA-VariationalDilation. Ledger candidate/statement-ledger.md:1493-1501 says 'So that no statement holds merely through such junk values'; :1588 concludes 'the identities relate genuine integrals and suprema'. Lean lean/StratonovichHAMSecondMoment/VariationalDilation.lean:430-447 instead concludes only 'Integrable ... \u2194 Integrable ...', analogous IntegrableOn equivalences, and 'rayleighSet ... = (r ^ 2) \u2022 rayleighSet ...'. Neither equivalence nor set scaling establishes integrability, nonemptiness or boundedness on either side. In contrast, TeX manuscript/notes/integrated_compact_mean_family.tex:409-410 asserts '0<v_\u03a8:=E Z\u00b2=...<\u221e', and manuscript/notes/integrated_unmasked_variational.tex:109 asserts positive finite I_\u03a8. Exact fix: replace the unconditional guarantee in the ledger with a conditional transfer statement, explicitly stating that actual integrability and nonempty bounded Rayleigh sets are not established by this companion. Mirror that correction in the Lean explanatory comments at VariationalDilation.lean:47-54,420-426, or strengthen the Lean conclusions to prove those validity properties."
+    ],
+    "major": [
+      "W2 \u2014 Integrability safeguards are not distinguished from manuscript proof steps. The rows candidate/statement-ledger.md:1564,1573,1575,1577,1580,1584,1588 assign direct L:variational-control-dilation correspondence to the integrability-equivalence declarations. Lean lean/StratonovichHAMSecondMoment/VariationalDilation.lean:208-210,270-273,288-293,311-314,339-343,374-377,427-447 states explicit 'Integrable ... \u2194 Integrable ...' or 'IntegrableOn ... \u2194 IntegrableOn ...' conclusions. TeX manuscript/notes/integrated_unmasked_variational.tex:243-250 instead uses 'for every nonnegative measurable G' and 'Positive Tonelli'; :251-264 gives substitution and Rayleigh identities, not these equivalences. These are useful additional safeguards for Lean's totalized Bochner-integral formulation, not assertions actually stated in that proof. Exact fix: explicitly mark these rows as additional Lean-route auxiliaries, with no direct manuscript statement, or clearly separate auxiliary association with the lemma from direct statement/proof correspondence; update the index and coverage annotation consistently."
+    ],
+    "minor": [
+      "W3 \u2014 Several TeX line references are displaced. For example, candidate/statement-ledger.md:1535 points to line 260 for U_r, but manuscript/notes/integrated_unmasked_variational.tex:259 contains 'U_rf(x)=r^{d/2}f(rx)'; :1562 points to 250-251 for the pushforward, actually at :248-249; :1572 points to 252-253 for convolution scaling, whose argument is at :243-250; and :1579 points to 254-258 for the variance calculation, actually at :251-254. Lean WeakSobolev.lean:132-134 and VariationalDilation.lean:185-187,261-263,331-333 have the correct formulas. Optional fix: refresh the numerical pointers against revision 3920258 while retaining the correct labels.",
+      "W4 \u2014 Standalone HasWeakGradient terminology needs qualification. Lean lean/StratonovichHAMSecondMoment/WeakSobolev.lean:70-72 defines the integral identity without requiring local integrability of f or g, while TeX manuscript/notes/integrated_unmasked_variational.tex:106,260 uses conventional Sobolev weak derivatives. Lean MemH1 at :76-77 and IsRayleighTrial at :222-227 impose L\u00b2 membership, so this does not change the manuscript's trial class. Optional fix: describe HasWeakGradient as the integral-identity predicate, equivalent to the usual weak-gradient relation in its L\u00b2/local-integrability context.",
+      "W5 \u2014 Cross-reference wording could reflect the accepted narrower conclusion. Candidate/statement-ledger.md:539-545 says 'The whole of' the lemma and 'the whole lemma', whereas Lean VariationalDilation.lean:404-412 uses defined rawCost and rayleighRate; TeX integrated_compact_mean_family.tex:409 defines variance probabilistically and integrated_unmasked_variational.tex:103 defines the rate spectrally. The destination section and coverage.yaml:254-258 disclose this correctly. Optional fix: qualify these cross-references as the whole dilation statement in integral/Rayleigh form."
+    ]
+  },
+  "required_repairs": [
+    "Correct the unconditional junk-exclusion/genuine-integral assurance in candidate/statement-ledger.md:1493-1501,1588 and the corresponding Lean explanatory comments. State only conditional transfer unless actual integrability and valid Rayleigh suprema are proved; explicitly identify the validity results still outside Lean.",
+    "Distinguish the seven integrability-equivalence/companion rows identified in W2 from direct manuscript statement or proof-step formalizations, and make their index and coverage descriptions consistent with that distinction."
+  ],
+  "limitations": [
+    "Requirement A was completed. Unread portions of the ledger, claims.yaml and the two partially read manuscript files are outside the requested sections, entries and context ranges; no claim of reviewing those portions is made.",
+    "The packet does not include the four refutation files mentioned at candidate/statement-ledger.md:1522-1527, so their contents and claimed results were not independently checked.",
+    "Compilation, absence of sorry and standard-axiom status were accepted as supplied by the review contract; no build or proof-verification workflow was run.",
+    "Provenance byte bindings were accepted as supervisor-checked; source repositories and revisions were not accessed.",
+    "This is an AI correspondence review, not human verification or a novelty audit."
+  ]
+}
