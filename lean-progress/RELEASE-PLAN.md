@@ -76,3 +76,44 @@ Allowed and intended: manuscript labels and TeX line numbers (the main repo goes
 - by Nov 26: approve the release candidate after the independent audit (I will have the scrubbed root commit, receipts, public-safety 0/0 and the audit report ready by Nov 25);
 - Nov 29-30: say "go" for the GitHub steps (create/rename repos, push, flip, Zenodo release). I will not touch GitHub before that.
 - Lean/Mathlib: the companion pins Lean 4.35.0; at release-prep I will check the current stable Lean/Mathlib and report whether an upgrade is advisable (not required for v1.0).
+
+## Private release-candidate dry run (2026-11-11; local only, nothing on GitHub or Zenodo)
+
+From companion a7f90b0, by a rerunnable script (session scratch
+`rc-dryrun/build-rc.sh <commit>`):
+- Scrub: 15 files, all under `verification/`, no `.lean` file: the
+  container image path -> `<container>.sif` (5 harness files); the runtime
+  tarball's scratch directory, which was named after another private
+  project, -> `<runtime-dir>` (5 sbatch files, 7 gate logs); a redaction
+  sentence in the three Easley READMEs.
+- Comment-only proof: all 493 `.lean` files byte-identical (stripped token
+  streams equal; positive and negative controls pass); claims.yaml,
+  coverage.yaml, comparator.json, Challenge, Solution and ChallengeDefs
+  byte-identical.
+- One local root commit (no remote), reproducible: 1 commit, 882 objects,
+  no borrowed objects; CITATION.cff valid; board files absent.
+- Private-pattern scan (49 block + 5 warn patterns: repository, package,
+  host, user, path, tooling and email names): 0 hits on the scrubbed tree
+  (27 on the unscrubbed source: positive control).
+- `lean-pkg public-safety --strict`: 348 `notes-ref` blocks (manuscript
+  paths `notes/...tex` cited in Lean doc comments, the ledger and
+  provenance) and 4 false `latex-label` warnings (`sec:05.2f` in a Python
+  format string). File-scoped allow lines bring it to 0/0 (tested).
+
+Open decisions for Le (before the Nov 26 release-candidate approval):
+1. The 348 `notes-ref` hits: accept file-scoped allow lines (the manuscript
+   paths are intended: the main repository is public the next day), or
+   rewrite the citations.
+2. The 46 existing receipts bind development commits that will not exist
+   in the public repository: keep them in the root commit as development
+   evidence, or describe them only in provenance (fresh receipts at the
+   root commit are cut either way).
+3. Author identity of the root commit: the personal address or the GitHub
+   noreply address.
+4. `provenance/DEVELOPMENT.md` will name the private -dev repository and
+   the main repository: allow those names in the public tree.
+5. Editorial: internal wave names (`wave L2`-`L5`, folder names such as
+   `leanchecker-easley-wave-l3`) in the public tree: keep or rename.
+Still to do: rebuild from the commit after the Easley record; README
+Verification record rewritten for the root commit; fresh receipts; the
+independent release audit by a different model family.
