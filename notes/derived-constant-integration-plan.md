@@ -57,7 +57,7 @@ promotion, publication or external circulation. No source-author or coauthor
 message is authorized by this work.
 
 Complete the private canonical wiki update only through repo-queue. Push
-owned units and verify actual <HUB> canonical/research HEAD parity when
+owned units and verify actual hub canonical/research HEAD parity when
 the host returns. Current NoRoute failures do not prove synchronization.
 The official Lean companion still requires separate decision4 approval;
 local80facts22seams do not constitute an official package gate. Do not mark
