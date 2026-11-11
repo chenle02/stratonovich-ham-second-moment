@@ -1,0 +1,136 @@
+Independent correspondence review: newly formalized whole labelled result(s) (Lean ledger rows) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  efec88b77eab). Review ONLY its section "## MaskedModulation (whole result)", the index
+  rows for it, and the items named in the global checks below. All other
+  rows were reviewed earlier.
+- the Lean modules (ground truth for what each declaration states):
+  lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean
+  lean/StratonovichHAMSecondMoment/TimeSchur.lean
+  lean/StratonovichHAMSecondMoment/MaskedModulation.lean
+  and lean/claims.yaml, lean/coverage.yaml.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  3920258be333. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that E:masked-time-schur, L:masked-temporal-modulation, and the narrowed input of L:masked-trig-products are formalized as stated in their
+rows: every conclusion proved, with hypotheses that match the manuscript,
+apart from side conditions the TeX leaves implicit and inputs explicitly
+declared as supplied. Test that claim hard: any Lean hypothesis that the
+manuscript does not have, any manuscript hypothesis the Lean drops, any
+weaker Lean conclusion, any changed constant, range, quantifier order or
+strictness, any modelling choice that changes the mathematical object, any
+supplied hypothesis stronger than the manuscript result it stands for, and
+any row labelled as a step of a TeX proof that is really an auxiliary of a
+different Lean proof route, is a finding, unless the ledger states it AND it
+is genuinely harmless. Decide that yourself from the TeX; do not accept the
+ledger's word.
+Pay attention to: whether "same-assumptions, full" is honest for the modulation lemma when Lean bounds the absolute value of the defining double integral and the identification with the H_a^C norm (TeX 153-154) is not formalized; whether hnorm is no stronger than the manuscript complexification clause; the constant C0(a) = 16/(1-a) and the uniformity in T and h; and that the different proof route is stated.
+
+CHECKS (exactly these 61, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.TimeSchur.time_schur_paper: E:masked-time-schur"
+  2. claim "StratonovichHAMSecondMoment.TimeSchur.time_schur_complex: E:masked-time-schur"
+  3. claim "StratonovichHAMSecondMoment.TimeSchur.time_schur_rclike: E:masked-time-schur"
+  4. claim "StratonovichHAMSecondMoment.TimeSchur.timeForm: L:masked-time-completion"
+  5. claim "StratonovichHAMSecondMoment.TimeSchur.kern: L:masked-time-completion"
+  6. claim "StratonovichHAMSecondMoment.TimeSchur.integral_row: E:masked-time-schur"
+  7. claim "StratonovichHAMSecondMoment.TimeSchur.lintegral_row_le: E:masked-time-schur"
+  8. claim "StratonovichHAMSecondMoment.TimeSchur.schur_lintegral: E:masked-time-schur"
+  9. claim "StratonovichHAMSecondMoment.TimeSchur.integrand: no direct label"
+  10. claim "StratonovichHAMSecondMoment.TimeSchur.intervalIntegrable_abs_rpow: no direct label"
+  11. claim "StratonovichHAMSecondMoment.TimeSchur.integral_abs_rpow_zero: no direct label"
+  12. claim "StratonovichHAMSecondMoment.TimeSchur.integral_abs_rpow_neg: no direct label"
+  13. claim "StratonovichHAMSecondMoment.TimeSchur.kern_nonneg: no direct label"
+  14. claim "StratonovichHAMSecondMoment.TimeSchur.kern_neg: no direct label"
+  15. claim "StratonovichHAMSecondMoment.TimeSchur.kern_sub_comm: no direct label"
+  16. claim "StratonovichHAMSecondMoment.TimeSchur.measurable_kern: no direct label"
+  17. claim "StratonovichHAMSecondMoment.TimeSchur.two_mul_le_add_sq_ennreal: no direct label"
+  18. claim "StratonovichHAMSecondMoment.MaskedModulation.masked_temporal_modulation_paper: L:masked-temporal-modulation"
+  19. claim "StratonovichHAMSecondMoment.MaskedModulation.modulation_bound: L:masked-temporal-modulation"
+  20. claim "StratonovichHAMSecondMoment.MaskedModulation.masked_trig_products_bridged_paper: L:masked-trig-products"
+  21. claim "StratonovichHAMSecondMoment.MaskedModulation.acorr: L:masked-temporal-modulation"
+  22. claim "StratonovichHAMSecondMoment.MaskedModulation.acorr_bound: L:masked-temporal-modulation"
+  23. claim "StratonovichHAMSecondMoment.MaskedModulation.acorr_lip: L:masked-temporal-modulation"
+  24. claim "StratonovichHAMSecondMoment.MaskedModulation.acorr_neg: L:masked-temporal-modulation"
+  25. claim "StratonovichHAMSecondMoment.MaskedModulation.timeForm_eq_acorr: no direct label"
+  26. claim "StratonovichHAMSecondMoment.MaskedModulation.integral_acorr_split: L:masked-temporal-modulation"
+  27. claim "StratonovichHAMSecondMoment.MaskedModulation.crude_bound: L:masked-temporal-modulation"
+  28. claim "StratonovichHAMSecondMoment.MaskedModulation.osc_bound: no direct label"
+  29. claim "StratonovichHAMSecondMoment.MaskedModulation.envelope_of_contDiffOn: no direct label"
+  30. claim "StratonovichHAMSecondMoment.MaskedModulation.memLp_modeFn: no direct label"
+  31. claim "StratonovichHAMSecondMoment.MaskedModulation.profile_sub_le: no direct label"
+  32. claim "StratonovichHAMSecondMoment.MaskedModulation.majorant_integrable: no direct label"
+  33. claim "StratonovichHAMSecondMoment.MaskedModulation.majorant_integral_le: no direct label"
+  34. claim "StratonovichHAMSecondMoment.MaskedModulation.constant_small: no direct label"
+  35. claim "StratonovichHAMSecondMoment.MaskedModulation.constant_large: no direct label"
+  36. claim "StratonovichHAMSecondMoment.MaskedModulation.shear_integrable: no direct label"
+  37. claim "StratonovichHAMSecondMoment.MaskedModulation.acorr_integrable: no direct label"
+  38. claim "StratonovichHAMSecondMoment.MaskedModulation.acorr_integrand_le: no direct label"
+  39. claim "StratonovichHAMSecondMoment.MaskedModulation.acorr_bound_abs: no direct label"
+  40. claim "StratonovichHAMSecondMoment.MaskedModulation.acorr_stronglyMeasurable: no direct label"
+  41. claim "StratonovichHAMSecondMoment.MaskedModulation.M_nonneg_of_bound: no direct label"
+  42. claim "StratonovichHAMSecondMoment.MaskedModulation.integrable_kern_indicator: no direct label"
+  43. claim "StratonovichHAMSecondMoment.MaskedModulation.modeFn_eq_indicator_mul: no direct label"
+  44. claim "StratonovichHAMSecondMoment.MaskedModulation.ii_rpow_shift: no direct label"
+  45. claim "StratonovichHAMSecondMoment.MaskedModulation.integral_rpow_shift: no direct label"
+  46. claim "StratonovichHAMSecondMoment.MaskedModulation.integrable_indicator_Ioc: no direct label"
+  47. claim "StratonovichHAMSecondMoment.MaskedModulation.integral_indicator_Ioc: no direct label"
+  48. claim "StratonovichHAMSecondMoment.MaskedModulation.norm_ofReal_rpow: no direct label"
+  49. claim "StratonovichHAMSecondMoment.MaskedModulation.norm_phase: no direct label"
+  50. claim "StratonovichHAMSecondMoment.MaskedModulation.continuous_phase: no direct label"
+  51. claim "StratonovichHAMSecondMoment.MaskedModulation.phase_add: no direct label"
+  52. claim "StratonovichHAMSecondMoment.MaskedModulation.phase_mul_conj: no direct label"
+  53. claim "StratonovichHAMSecondMoment.MaskedModulation.phase_neg: no direct label"
+  54. claim "StratonovichHAMSecondMoment.MaskedModulation.one_le_bracket: no direct label"
+  55. claim "StratonovichHAMSecondMoment.MaskedModulation.majorant: no direct label"
+  56. claim "StratonovichHAMSecondMoment.MaskedModulation.profile: no direct label"
+  57. claim "StratonovichHAMSecondMoment.MaskedModulation.phase: no direct label"
+  58. claim "PARA-MaskedModulation": the "MaskedModulation (whole result)" section paragraph is accurate, cites the right files, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input and what is not formalized, and does not overclaim
+  59. claim "LEDGER-INDEX": the "Index by label" rows for the MaskedModulation section list exactly these 57 declarations under the labels their rows give, and every label cited in the section exists in the manuscript (search \label across all files)
+  60. claim "COVERAGE-ROWS": the coverage.yaml rows E:masked-time-schur and L:masked-temporal-modulation (new, same-assumptions, full; the bounds are on the defining double integral, the completion H_a is not built) and the changed L:masked-trig-products row (inputs-supplied, inputs now hmem and the norm identity hnorm): classes, conclusions, notes, inputs and claims are right
+  61. claim "CROSS-REFERENCES": every other place in the ledger that points to the MaskedModulation section (step-module intros and rows, the "Not in Lean" section, Scope) is accurate
+For each row check (1-57): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: every Lean file
+   listed above; the "MaskedModulation (whole result)" section and the "Scope" and
+   "Index by label" sections of candidate/statement-ledger.md; the entries
+   of lean/claims.yaml for this section's modules; lean/coverage.yaml;
+   manuscript/notes/integrated_covariance_foundation.tex,
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 61 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-57.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.

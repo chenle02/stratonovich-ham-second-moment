@@ -1,0 +1,270 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-567 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/FrequencyRow.lean:1-220,221-440,441-650,651-803 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean:1-190,191-358 \u2014 complete.",
+    "candidate/statement-ledger.md:1-129,130-186,187-239,1063-1123,1124-1167,2191-2252 \u2014 complete required sections; partial file, with unrelated previously reviewed sections outside scope. Additional search matches read at 306,313,315-316,521,524,538-539,1671,1675,1732-1733,1744,1750.",
+    "lean/claims.yaml:790-846,1381-1591,4616-4777,4778-4917 \u2014 complete entries for all three supplied modules; partial file, with other modules outside scope.",
+    "lean/coverage.yaml:1-185,186-365,366-546 \u2014 complete.",
+    "manuscript/notes/integrated_wave_variance.tex:1-170 \u2014 complete required range; partial file, with 171-531 outside scope.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:125-225 \u2014 partial, standing-assumption context.",
+    "manuscript/notes/integrated_covariance_foundation.tex:1-85,285-380 \u2014 partial, spectral-growth and frequency-pair context.",
+    "Label search across all supplied manuscript/notes LaTeX files completed; every label cited in the FrequencyRow section was located."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.frequency_row_paper: P:frequency-row",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:767-774 assumes '0 < \u03b3', '\u03b3 < min (1 / 2) ((2 - \u03b1) / 2)', HomogCovariance and locally finite \u03bd with open-ball growth and '0 \u2264 C'. TeX integrated_wave_variance.tex:5-29 assumes H:homog, the identical strict \u03b3 range, positive Radon \u03bd and C \u2265 0. HomogHypothesis.lean:64-80 matches notes_stratonovich_ham_second_moment.tex:169-186. The existential K precedes d and all measures; the supremum bound matches TeX:47-53, and integrability matches its proof:136-137. Ledger:1124 and claims.yaml:4620 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.frequency_row: P:frequency-row",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:659-666 assumes 'a < 1', '\u03b1 + a < 2', '2 * \u03b3 \u2264 1', '\u03b1 + 2 * \u03b3 < 2', nonnegative C and open-ball growth. TeX integrated_wave_variance.tex:5-29 supplies stronger standing assumptions, including '0 < \u03b3 < min(1/2,(2-\u03b1)/2)'. Ledger:1125 explicitly discloses this generalization. Both give the same supremum estimate; Lean also proves the finiteness asserted at TeX:136-137. '\u2203 K ... \u2200 d' correctly implements TeX:48-49. Claims.yaml:4627 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.rowIntegral_le: P:frequency-row",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:558-563 uses 'a < 1', '\u03b1 + a < 2', '2 * \u03b3 \u2264 1', '\u03b1 + 2 * \u03b3 < 2', C \u2265 0 and open-ball growth, yielding '\u2200 \u03be ... rowIntegral ... \u2264 ofReal (K * C * scaleProfile \u03b1 h)'. TeX integrated_wave_variance.tex:5-29 has stronger disclosed assumptions and TeX:51 bounds the supremum, hence each row. Ledger:1126 correctly identifies this as pointwise form, not the complete integrability theorem; claims.yaml:4634 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.frequency_time_paper: C:frequency-time",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:787-794 assumes '1 / 2 < \u03b2' and '\u03b2 < min (1 - a / 2) ((3 - a - \u03b1) / 2)', besides the strict \u03b3 range, HomogCovariance, locally finite \u03bd and growth. TeX integrated_wave_variance.tex:5-29,141-150 has those same hypotheses and conclusion. K\u03b2 is chosen before d, \u0393, \u03bc, \u03bd, C and h, consistent with its stated dependence only on \u03b1,a,\u03b3,\u03b2. Ledger:1127 and claims.yaml:4641 agree; the unused \u03b2 lower bound is disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.frequency_time: C:frequency-time",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:738-744 assumes the general row hypotheses plus '2 * \u03b2 < 2 - a' and '2 * \u03b2 < 3 - a - \u03b1'. TeX integrated_wave_variance.tex:144-145 additionally requires '1/2 < \u03b2'; its upper bounds are equivalent to Lean's two strict inequalities. Ledger:1128 explicitly says no lower \u03b2 bound is assumed in this general theorem. The conclusion and constant dependence match TeX:147-150; claims.yaml:4648 is faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.scale_time_le: C:frequency-time",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:695-697 assumes '2 * \u03b2 < 2 - a' and '2 * \u03b2 < 3 - a - \u03b1', concluding 'h ^ (2 - a) * scaleProfile \u03b1 h \u2264 c * h ^ (2 * \u03b2)' for 0 < h \u2264 1. TeX integrated_wave_variance.tex:155-163 uses precisely these exponent comparisons and the critical logarithm bound. Ledger:1129 and claims.yaml:4655 accurately describe the scalar proof step; no endpoint is substituted."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.rowSeries_tsum_le: P:frequency-row",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:277-279 assumes 'a < 1' and '\u03b1 + a < 2', with K independent of h and the range '0 < h \u2192 h \u2264 1'. TeX integrated_wave_variance.tex:121-135 uses '\u03b1+a-2 < 0' and obtains 'S(h) \u2264 K_{\u03b1,a} B_\u03b1(h)' in that same range. The series and three cases agree. Ledger:1130 and claims.yaml:4662 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.summable_rowSeries: P:frequency-row",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:271-274 assumes 'a < 1', '\u03b1 + a < 2', '0 < h' and proves Summable. TeX integrated_wave_variance.tex:118-126 defines the same series and supplies a convergent geometric tail under '\u03b1+a-2 < 0'. Lean's extension beyond h \u2264 1 is harmless and explicitly stated in ledger:1131 and claims.yaml:4669."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.closedBall_le: E:frequency-translated-growth",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "FrequencyRow.lean:181-184 assumes '\u03bd (ball y r) \u2264 ENNReal.ofReal (C * r ^ \u03b1)' for r > 0 and concludes the corresponding closed-ball bound for R > 0. TeX integrated_wave_variance.tex:26-31 assumes '\u03bd(B(y,r)) \u2264 C r^\u03b1', 'C \u2265 0', and explicitly gives the radius-enlargement argument. Claims.yaml:4676 preserves ofReal. Ledger:1132 correctly generalizes the space and sign range, but could retain ofReal explicitly when discussing unrestricted C; see W2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.one_le_scaleProfile: E:variance-scale-profile",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:223-224 assumes '0 < h' and 'h \u2264 1', with arbitrary real \u03b1, and proves '1 \u2264 scaleProfile \u03b1 h'. TeX integrated_wave_variance.tex:13-19 defines the identical three cases for '0 < h \u2264 1', and TeX:136 explicitly uses 'B_\u03b1(h) \u2265 1'. Ledger:1133 and claims.yaml:4683 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.frequencyPair_le_two: P:frequency-row",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "FrequencyRow.lean:141 assumes 'a < 1' and proves 'frequencyPair a h r \u03c1 \u2264 2' for all real h,r,\u03c1. TeX integrated_wave_variance.tex:83-85 says both bracket powers are at most one 'since a-1 < 0'. Thus the mathematical mapping, ledger:1134 and claims.yaml:4690 are correct. The ledger's sentence about the doc comment is stale; see W1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.bracket_rpow_le_half: P:frequency-row",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "FrequencyRow.lean:116-117 assumes 'a < 1', '0 \u2264 t', 't / 2 \u2264 |x|' and concludes '<x>^(a-1) \u2264 2^(1-a) <t>^(a-1)'. TeX integrated_wave_variance.tex:103-112 gives the relevant half-radius inequalities and 'Each oscillatory bracket is at least <hr>/2', producing the same factor. Ledger:1135 and claims.yaml:4697 faithfully describe this step. Only the doc-comment characterization is stale; see W1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.scaleProfile: E:variance-scale-profile",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:219-220 defines 'if \u03b1 < 1 then 1 else if \u03b1 = 1 then 1 + Real.log (1 / h) else h ^ (1 - \u03b1)' without domain restrictions. TeX integrated_wave_variance.tex:13-19 defines the same cases for '0 < h \u2264 1'. Ledger:1136 and claims.yaml:4704 disclose the relevant domain; the total Lean definition changes no manuscript application."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.rowKernel: E:frequency-row-kernel",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:395-396 defines 'frequencyPair a h \u2016\u03be\u2016 \u2016\u03b7\u2016 / (bracket \u2016\u03be\u2016 * bracket \u2016\u03b7\u2016)' with no additional hypothesis. TeX integrated_wave_variance.tex:34-37 defines 'Q_h(|\u03be|,|\u03b7|)/(<\u03be><\u03b7>)'. MaskedTrigProducts.lean:100,106-107 supplies the same bracket and pair as integrated_covariance_foundation.tex:296,355-358. Ledger:1137 and claims.yaml:4711 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.rowIntegral: E:frequency-row-integral",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:400-401 defines 'ofReal (bracket \u2016\u03be\u2016 ^ (2 * \u03b3)) * \u222b\u207b l, ofReal (rowKernel a h \u03be (\u03be - l)) \u2202\u03bd'. TeX integrated_wave_variance.tex:38-45 defines the same weighted pushforward integral and says 'initially nonnegative extended integrals'. No density, integrability or finiteness is assumed by the definition. Ledger:1138 and claims.yaml:4718 accurately preserve this interpretation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.rowSeries: P:frequency-row",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:234-235 defines the term '((2 : \u211d) ^ (\u03b1 - 1)) ^ n * bracket (h * 2 ^ n) ^ (a - 1)' for n \u2208 \u2115, without sign hypotheses. TeX integrated_wave_variance.tex:118-119 defines 'S(h) = \u03a3_{j=0}\u221e 2^{j(\u03b1-1)} <h2^j>^{a-1}'. Positive-base power identities identify the terms exactly. Ledger:1139 and claims.yaml:4725 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.one_le_bracket: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:81 states '1 \u2264 bracket x' for every real x, with no hypothesis. TeX integrated_wave_variance.tex:10-11 gives '<\u03be> = sqrt(1+|\u03be|\u00b2)', not a separate labelled bracket lemma. Ledger:1140 and claims.yaml:4732 faithfully state this elementary auxiliary; no direct manuscript-result claim is made."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.bracket_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:86 states '0 < bracket x' for arbitrary real x, without assumptions. TeX integrated_wave_variance.tex:10-11 defines the positive square-root bracket but has no separately labelled positivity assertion. Ledger:1141 and claims.yaml:4739 accurately classify and paraphrase the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.abs_le_bracket: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:89 states '|x| \u2264 bracket x' with no hypothesis. TeX integrated_wave_variance.tex:10-11 uses the same square-root bracket; there is no labelled scalar comparison lemma. Ledger:1142 uses norm notation equivalent to absolute value on \u211d, and claims.yaml:4746 explicitly uses |x|. The auxiliary classification is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.bracket_mono: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:95 assumes '|x| \u2264 |y|' and concludes 'bracket x \u2264 bracket y'. TeX integrated_wave_variance.tex:10-11 defines the same bracket but states no corresponding labelled monotonicity lemma. Ledger:1143 and claims.yaml:4753 match the Lean hypothesis and conclusion; no direct-label mapping is claimed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.continuous_bracket: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:102 states 'Continuous bracket' without hypotheses. TeX integrated_wave_variance.tex:10-11 supplies the square-root formula, not a labelled continuity theorem. Ledger:1144 and claims.yaml:4760 faithfully describe this Lean auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.bracket_rpow_le_one: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:107 assumes 'a < 1' and proves 'bracket x ^ (a - 1) \u2264 1'. TeX integrated_wave_variance.tex:84-85 uses bracket powers 'at most one, since a-1 < 0'. Ledger:1145 and claims.yaml:4767 are exact; treating this scalar helper as an auxiliary rather than a separately labelled manuscript result is harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.bracket_rpow_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:111 states '0 \u2264 bracket x ^ e' for arbitrary real e,x and no hypotheses. TeX integrated_wave_variance.tex:10-11,43 uses the same positive bracket and nonnegative-integral interpretation but has no labelled scalar-power positivity result. Ledger:1146 and claims.yaml:4774 faithfully describe the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.frequencyPair_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:135 states '0 \u2264 frequencyPair a h r \u03c1' for all real parameters, with no assumptions. TeX integrated_covariance_foundation.tex:355-358 defines the pair as the same sum of positive bracket powers; integrated_wave_variance.tex:43 uses nonnegativity. Ledger:1147 and claims.yaml:4781 correctly record an auxiliary, not another labelled theorem."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.two_pow_rpow: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:146 assumes only 'n : \u2115' and '\u03b1 : \u211d', concluding '(2^n)^\u03b1 = (2^\u03b1)^n'. TeX integrated_wave_variance.tex:118-132 uses powers of this positive base without a separately labelled identity. Ledger:1148 and claims.yaml:4788 accurately describe the bookkeeping auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.le_shellSum: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:155-158 assumes a seminormed additive group, ENNReal F,c, a unit-ball bound and bounds on '2^n \u2264 \u2016x-y\u2016 \u2264 2^(n+1)', then proves the closed-ball indicator-sum majorant. TeX integrated_wave_variance.tex:65-69 instead splits into disjoint annuli. Ledger:1149 and claims.yaml:4795 faithfully state the auxiliary; the different shell bookkeeping is explicitly disclosed at ledger:1106-1115."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.lintegral_shellSum: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:171-174 assumes 'SeminormedAddCommGroup', 'MeasurableSpace' and 'OpensMeasurableSpace', with arbitrary measure and ENNReal coefficients, and proves the lower-integral identity. TeX integrated_wave_variance.tex:65-69 uses annular mass estimates, not this indicator-tsum identity. Ledger:1150 and claims.yaml:4802 correctly identify a Lean-route auxiliary and include the measurable-space condition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.shellSum_le: no direct label",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "FrequencyRow.lean:202-207 assumes open-ball growth '\u2264 ofReal (C * r ^ \u03b1)' and '\u2200 j, 0 \u2264 c j', and bounds sums of ofReal coefficients. TeX integrated_wave_variance.tex:26-29 has real growth with 'C \u2265 0'; its proof:65-69 uses the resulting shell masses. Claims.yaml:4809 is exact and ledger:1151 correctly describes the auxiliary, with the same optional ofReal clarification as W2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.rowSeries_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:238 assumes only real \u03b1,a,h and natural n, concluding '0 \u2264 rowSeries \u03b1 a h n'. TeX integrated_wave_variance.tex:118-119 defines the same nonnegative terms but gives no separately labelled positivity lemma. Ledger:1152 and claims.yaml:4816 accurately describe this auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.rowSeries_le_head: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:242-243 assumes 'a < 1', with arbitrary h,n, and bounds the term by '(2^(\u03b1-1))^n'. TeX integrated_wave_variance.tex:121-122 uses the bracket-power bound 'at most one' for the head. Ledger:1153 and claims.yaml:4823 faithfully state the more general scalar helper; its auxiliary classification does not overclaim a separate labelled result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.rowSeries_le_tail: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:250-251 assumes 'a < 1' and '0 < h', concluding the term is at most 'h^(a-1) (2^(\u03b1+a-2))^n'. TeX integrated_wave_variance.tex:122-126 uses the same tail majorant under its stronger standing assumptions. Ledger:1154 and claims.yaml:4830 faithfully describe the scalar auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.two_rpow_lt_one: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:267 assumes 's < 0' and concludes '(2 : \u211d)^s < 1'. TeX integrated_wave_variance.tex:123-126 uses '\u03b1+a-2 < 0' to obtain a convergent geometric tail. Ledger:1155 and claims.yaml:4837 accurately record the elementary auxiliary with no separate label claim."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.rowKernel_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:404 states '0 \u2264 rowKernel a h \u03be \u03b7' for arbitrary real a,h and Euclidean \u03be,\u03b7, without added assumptions. TeX integrated_wave_variance.tex:34-43 defines the same kernel and explicitly calls the integrals nonnegative. Ledger:1156 and claims.yaml:4844 correctly describe this positivity auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.continuous_rowKernel: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:409-410 states 'Continuous fun l => rowKernel a h \u03be (\u03be - l)' for arbitrary a,h,\u03be, without a measure hypothesis. TeX integrated_wave_variance.tex:34-45 defines this same integrand but has no labelled continuity assertion. Ledger:1157 and claims.yaml:4851 accurately describe the auxiliary; measurability is proved, not supplied."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.weighted_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:419-421 assumes no numerical restrictions and states '<\u03be>^(2\u03b3) \u03a6 = <\u03be>^(2\u03b3-1) Q/<\u03b7>'. TeX integrated_wave_variance.tex:35-40 defines the same weighted expression, with its negative-power form used at :83-88. Ledger:1158 and claims.yaml:4858 faithfully describe an algebraic auxiliary, not a separately labelled manuscript statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.weighted_le_two: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:428-429 assumes 'a < 1' and '2 * \u03b3 \u2264 1', proving '<\u03be>^(2\u03b3) \u03a6_h(\u03be,\u03b7) \u2264 2'. TeX integrated_wave_variance.tex:8,83-87 has the stronger strict \u03b3 range and bounds the two bracket powers by one. Ledger:1159 and claims.yaml:4865 exactly describe the Lean auxiliary and disclose its weaker hypotheses."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.weighted_le_near: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:442-445 assumes 'a < 1', '2 * \u03b3 \u2264 1', '\u2016l\u2016 \u2264 4 * \u2016\u03be\u2016' and '2^n \u2264 \u2016\u03be-l\u2016', giving '2 (2^n/5)^(2\u03b3-1) 2^(-n)'. TeX integrated_wave_variance.tex:83-99 instead uses '|\u03bb| \u2264 4q', q=max(1,|\u03be|), and a three-case A\u03be estimate. Ledger:1160 and claims.yaml:4872 are faithful; ledger:1106-1111 explicitly identifies the changed proof route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.weighted_le_far: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:470-473 assumes 'a < 1', '2 * \u03b3 \u2264 1', '0 < h', '4 * \u2016\u03be\u2016 < \u2016l\u2016' and '2^n \u2264 \u2016l\u2016', with coefficient '(4/3) 2^(-n) \u00b7 2 \u00b7 2^(1-a)'. TeX integrated_wave_variance.tex:101-112 uses '|\u03bb| > 4q' and coefficient '(4/3)2^(2-a)', which is identical. Ledger:1161 and claims.yaml:4879 accurately describe the shellwise auxiliary and the disclosed split change."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.nearCoef_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:525 states '0 \u2264 nearCoef \u03b3 j' for every real \u03b3 and natural j, with no additional hypotheses. TeX integrated_wave_variance.tex:83-99 has no nearCoef object, using A\u03be(q) instead. Ledger:1162 and claims.yaml:4886 faithfully record a Lean-route auxiliary, with no manuscript-result mapping asserted."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.farCoef_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:529 states '0 \u2264 farCoef a h j' for arbitrary real a,h and natural j, without assumptions. TeX integrated_wave_variance.tex:101-120 has a far-integral estimate and S(h), not this coefficient definition. Ledger:1163 and claims.yaml:4893 accurately describe the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.weighted_le_shells: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:535-540 assumes 'a < 1', '2 * \u03b3 \u2264 1', '0 < h' and bounds ofReal of the weighted kernel by two closed-ball tsums, centered at \u03be and 0. TeX integrated_wave_variance.tex:83-120 uses near/far integrals split at 4q rather than this pointwise majorant. Ledger:1164 and claims.yaml:4900 faithfully identify the different-route auxiliary; ledger:1106-1115 explicitly explains it."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.nearCoef: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:515-517 defines '0 => 2' and 'n + 1 => 2 * (2^n / 5)^(2\u03b3-1) * (2^n)\u207b\u00b9', with no \u03b3 restriction. TeX integrated_wave_variance.tex:83-99 contains no such definition, using the A\u03be(q) route. Ledger:1165 and claims.yaml:4907 exactly describe this Lean-only coefficient."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FrequencyRow.farCoef: no direct label",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:520-522 defines '0 => 2' and the successor coefficient '(4/3) (2^n)\u207b\u00b9 \u00b7 2 \u00b7 2^(1-a) <h2^n>^(a-1)' for unrestricted a,h. TeX integrated_wave_variance.tex:101-120 supplies the related far estimate but no farCoef definition. Ledger:1166 and claims.yaml:4914 faithfully describe the Lean-only coefficient."
+    },
+    {
+      "claim": "PARA-FrequencyRow",
+      "verdict": "PASS",
+      "reason": "Ledger:1065-1120 correctly identifies the current manuscript labels and line ranges, ENNReal integral interpretation, general and paper hypotheses, dimension-independent quantifier order, unused carried hypotheses, and absence of supplied analytic inputs. Its changed near/far bookkeeping matches FrequencyRow.lean:442-553, while its series and time descriptions match :277-388,695-758. It explicitly excludes the \u03bd=\u03bc, C=C\u0393 instance and the subsequent full-phase results."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "Ledger:224-230 lists exactly the 43 declarations in :1124-1166, under the same labels: 8 proposition entries, 3 corollary entries, 5 other labelled entries and 27 auxiliaries. Searching all supplied LaTeX files located every section label, including H:homog, E:masked-frequency-pair, both parameter ranges and P:masked-spectral-growth. No duplicate or omitted FrequencyRow declaration was found."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "Coverage.yaml:15-26 and :399-412 correctly classify C:frequency-time and P:frequency-row as same-assumptions/full, supported by the exact-hypothesis wrappers FrequencyRow.lean:767-794. Both conclusions, strict \u03b2 range, dimension-independent constants and nonnegative extended-integral interpretation agree with the manuscript. General theorem entries do not introduce stronger assumptions; the \u03bd=\u03bc application is explicitly excluded."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "Ledger:72-76 accurately describes the wrappers and constant order; :126 correctly includes FrequencyRow among modules with internal helpers. Ledger:2239-2243 distinguishes the formalized scalar results from the unformalized full-phase results and explicitly says the \u03bd=\u03bc, C=C\u0393 specialization is not stated. The ledger-wide search found no conflicting step-module or other FrequencyRow cross-reference."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "W1 \u2014 Stale doc-comment wording in candidate/statement-ledger.md:1134-1135. Both rows say 'Its doc comment calls it auxiliary', but FrequencyRow.lean:139-140 calls frequencyPair_le_two 'a step of the TeX proof', and :114-115 describes bracket_rpow_le_half as 'the bracket bound of TeX l. 107'. The mathematical mappings are correct: integrated_wave_variance.tex:84-85 says the powers are 'at most one, since a-1 < 0', and :107 says each bracket is 'at least <hr>/2'. Optional fix: delete those two stale sentences, update the first locator to TeX:84-87, and describe the comments as proof-step references.",
+      "W2 \u2014 Optional coercion clarification for unrestricted growth helpers, candidate/statement-ledger.md:1132,1151. FrequencyRow.lean:182-184 uses '\u2264 ENNReal.ofReal (C * r ^ \u03b1)' and the corresponding closed-ball conclusion; :204-207 likewise retains ofReal in the shell bound. TeX integrated_wave_variance.tex:26-29 instead writes '\u03bd(B(y,r)) \u2264 C r^\u03b1' with 'C \u2265 0'. The main correspondence is unaffected, and claims.yaml:4676,4809 already preserves ofReal. Optional fix: retain ofReal explicitly in these two ledger helper rows, clarifying that unrestricted negative C is interpreted by truncation to zero, not as a negative ENNReal bound."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "All complete-reading requirements A were satisfied. Partial-file coverage concerns only unrelated ledger/claims entries and manuscript material outside the requested ranges; those portions were not reviewed.",
+    "Compilation, absence of sorry and standard-axiom status were accepted as supplied; no build or independent proof verification was performed.",
+    "Historical byte-equivalence assertions concerning earlier manuscript revisions were not independently audited; correspondence was checked against the supplied frozen current revision.",
+    "This AI correspondence review is not human verification, a novelty audit, or verification of the manuscript's unformalized analytic results."
+  ]
+}

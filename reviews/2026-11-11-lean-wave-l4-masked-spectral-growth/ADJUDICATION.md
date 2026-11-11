@@ -1,0 +1,12 @@
+# Adjudication: wave-L4 correspondence review of the MaskedSpectralGrowth section
+
+- **Object:** the "MaskedSpectralGrowth (whole result)" section of the Lean companion ledger, its index rows, coverage rows and cross-references, at companion `efec88b`, manuscript `3920258`. Reviewer: Codex GPT-6.1-Sol, effort high, read-only, `CODEX_HOME` workaround; frozen packet; contract-check (schema), dry run and contract-check on the dispatched prompt clean.
+- **Result:** valid, **FAIL**, confidence high; 43 checks {'PASS': 41, 'PARTIAL': 1, 'FAIL': 1}; findings {fatal: 0, major: 2, minor: 0}.
+- **Adjudication:** every finding checked by the integrator against the Lean source and the TeX at `3920258` (the file:line evidence quoted in each finding was confirmed); all accepted, none rejected; all documentation (ledger rows, index, wording); no Lean statement change. Repairs at companion `7afcd23`.
+
+| ID | Sev | Disposition | Finding (as reported) | Repair (companion `7afcd23`) |
+|---|---|---|---|---|
+| W1 | major | **ACCEPTED** | W1 — GaussianTest.sub_upper declaration fidelity. candidate/statement-ledger.md:1634 states the fixed bound “norm(x) <= (1+norm(w)) (1+norm(x-w))”, but lean/StratonovichHAMSecondMoment/GaussianTest.lean:142 exports only “∃ (k : ℕ) (C : ℝ), ∀ x, ‖x‖ ≤ C * (1 + ‖x - w‖)^k”. The proof chooses the advertised witnesses at :143; claims.yaml:4006 correctly separates the existential conclusion from those witnesses. There is no corresponding TeX bound: manuscript/notes/integrated_covariance_foundation.tex:65-66 only invokes the “single Schwartz test”. Fix the ledger row to state the existential conclus… | applied as the finding's exact fix |
+| W2 | major | **ACCEPTED** | W2 — LEDGER-INDEX is incomplete by label association. candidate/statement-ledger.md:1648-1650 associates all three spectral-scaling declarations with “L:low-alpha-convolution”, but its index at :217 lists only spectralHomogeneous_of_scaling. Lean exports the pushforward identity at lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean:230-233 and the H:homog wrapper at :315-317; manuscript/notes/notes_stratonovich_ham_second_moment.tex:4522-4525 states “μ(A/c) = c^{-α}μ(A)” and equivalently “μ(cA) = c^αμ(A)”. Add map_smul_of_scaling and spectralHomogeneous_of_homog to that index row so it… | applied as the finding's exact fix |
+
+Next: narrow confirmation review of the wave-L4 repairs (`2026-11-11-lean-wave-l4-confirm`).

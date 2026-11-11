@@ -1,0 +1,12 @@
+# Adjudication: wave-L4 correspondence review of the FrequencyRow section
+
+- **Object:** the "FrequencyRow (whole result)" section of the Lean companion ledger, its index rows, coverage rows and cross-references, at companion `efec88b`, manuscript `3920258`. Reviewer: Codex GPT-6.1-Sol, effort high, read-only, `CODEX_HOME` workaround; frozen packet; contract-check (schema), dry run and contract-check on the dispatched prompt clean.
+- **Result:** valid, **PASS_WITH_NOTES**, confidence high; 47 checks {'PASS': 43, 'PASS_WITH_NOTES': 4}; findings {fatal: 0, major: 0, minor: 2}.
+- **Adjudication:** every finding checked by the integrator against the Lean source and the TeX at `3920258` (the file:line evidence quoted in each finding was confirmed); all accepted, none rejected; all documentation (ledger rows, index, wording); no Lean statement change. Repairs at companion `7afcd23`.
+
+| ID | Sev | Disposition | Finding (as reported) | Repair (companion `7afcd23`) |
+|---|---|---|---|---|
+| W1 | minor | **ACCEPTED** | W1 — Stale doc-comment wording in candidate/statement-ledger.md:1134-1135. Both rows say 'Its doc comment calls it auxiliary', but FrequencyRow.lean:139-140 calls frequencyPair_le_two 'a step of the TeX proof', and :114-115 describes bracket_rpow_le_half as 'the bracket bound of TeX l. 107'. The mathematical mappings are correct: integrated_wave_variance.tex:84-85 says the powers are 'at most one, since a-1 < 0', and :107 says each bracket is 'at least <hr>/2'. Optional fix: delete those two stale sentences, update the first locator to TeX:84-87, and describe the comments as proof-step referen… | applied as the finding's exact fix |
+| W2 | minor | **ACCEPTED** | W2 — Optional coercion clarification for unrestricted growth helpers, candidate/statement-ledger.md:1132,1151. FrequencyRow.lean:182-184 uses '≤ ENNReal.ofReal (C * r ^ α)' and the corresponding closed-ball conclusion; :204-207 likewise retains ofReal in the shell bound. TeX integrated_wave_variance.tex:26-29 instead writes 'ν(B(y,r)) ≤ C r^α' with 'C ≥ 0'. The main correspondence is unaffected, and claims.yaml:4676,4809 already preserves ofReal. Optional fix: retain ofReal explicitly in these two ledger helper rows, clarifying that unrestricted negative C is interpreted by truncation to zero,… | applied as the finding's exact fix |
+
+Next: narrow confirmation review of the wave-L4 repairs (`2026-11-11-lean-wave-l4-confirm`).

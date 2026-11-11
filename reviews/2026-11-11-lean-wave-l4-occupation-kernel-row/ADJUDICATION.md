@@ -1,0 +1,12 @@
+# Adjudication: wave-L4 correspondence review of the OccupationKernelRow section
+
+- **Object:** the "OccupationKernelRow (whole result)" section of the Lean companion ledger, its index rows, coverage rows and cross-references, at companion `efec88b`, manuscript `3920258`. Reviewer: Codex GPT-6.1-Sol, effort high, read-only, `CODEX_HOME` workaround; frozen packet; contract-check (schema), dry run and contract-check on the dispatched prompt clean.
+- **Result:** valid, **FAIL**, confidence high; 34 checks {'PASS': 31, 'PASS_WITH_NOTES': 2, 'FAIL': 1}; findings {fatal: 0, major: 1, minor: 1}.
+- **Adjudication:** every finding checked by the integrator against the Lean source and the TeX at `3920258` (the file:line evidence quoted in each finding was confirmed); all accepted, none rejected; all documentation (ledger rows, index, wording); no Lean statement change. Repairs at companion `7afcd23`.
+
+| ID | Sev | Disposition | Finding (as reported) | Repair (companion `7afcd23`) |
+|---|---|---|---|---|
+| W1 | major | **ACCEPTED** | W1 — LEDGER-INDEX has three incorrect label memberships. candidate/statement-ledger.md:231 places 'OccupationKernelRow.row' and 'OccupationKernelRow.Rstar' under 'L:occupation-kernel-row', although their actual rows at 1810-1811 say 'E:occupation-kernel-row'. OccupationKernelRow.lean:98,101 defines '∫ t in 0..1, Kstar ... (s-t)' and '2 * ∫ u in 0..(1/2), Kstar ... u'; TeX integrated_spatial_occupation.tex:295-297 labels precisely those expressions E:occupation-kernel-row. Likewise ledger:233 places 'OccupationKernelRow.pairing' under L:spatial-physical-pair, whereas row 1832 says E:spatial-phy… | applied as the finding's exact fix |
+| W2 | minor | **ACCEPTED** | W2 — Optional integrability wording clarification in PARA-OccupationKernelRow and Scope. Ledger:1803-1804 and 89-91 say 'Integrability is part of each integral conclusion.' OccupationKernelRow.lean:370-371 instead defines an unrestricted ENNReal lower integral, and its pairing theorems at 409-418 assert measurability and representative independence, not finite integrability. This correctly matches TeX integrated_spatial_occupation.tex:18, 'initially as an extended nonnegative integral'. The surrounding ledger text already explains this distinction, so it does not undermine correspondence. Opti… | applied as the finding's exact fix |
+
+Next: narrow confirmation review of the wave-L4 repairs (`2026-11-11-lean-wave-l4-confirm`).

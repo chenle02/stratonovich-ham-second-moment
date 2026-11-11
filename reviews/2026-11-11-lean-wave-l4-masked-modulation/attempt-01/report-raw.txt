@@ -1,0 +1,343 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json: lines 1-567, complete.",
+    "lean/StratonovichHAMSecondMoment/TimeSchur.lean: lines 1-332, complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean: lines 1-358, complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedModulation.lean: lines 1-1135, complete.",
+    "candidate/statement-ledger.md: lines 1-239, 514-540, 1355-1522, 1665-1752, 2191-2252; complete coverage of required Scope, Index, MaskedModulation section and relevant cross-references; partial file, unrelated sections excluded.",
+    "lean/claims.yaml: lines 1381-1605 and 4215-4615; complete coverage of the relevant modules' entries; partial file, unrelated entries excluded.",
+    "lean/coverage.yaml: lines 1-546, complete.",
+    "manuscript/notes/integrated_covariance_foundation.tex: lines 1-428, complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: lines 145-205, partial; standing assumptions read in context.",
+    "Exact cited-label searches across all frozen manuscript LaTeX files located the reviewed labels in integrated_covariance_foundation.tex at lines 141, 150, 300, 303 and 347."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeSchur.time_schur_paper: E:masked-time-schur",
+      "verdict": "PASS",
+      "reason": "Lean TimeSchur.lean:321-326 assumes '0 < a', 'a < 1', '0 < T', 'MemLp f 2' and proves product integrability and the stated constant. TeX integrated_covariance_foundation.tex:141-151 assumes 'T > 0' and extends the inclusion from 'L²(0,T)'; its standing temporal range is 0<a<1. Ledger:1465 and claims.yaml:4219 accurately restrict the correspondence to the defining integral."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeSchur.time_schur_complex: E:masked-time-schur",
+      "verdict": "PASS",
+      "reason": "Lean TimeSchur.lean:306-310 assumes '0 < a', 'a < 1', '0 < T', complex 'MemLp f 2', and bounds '‖timeForm a T f f‖'. TeX integrated_covariance_foundation.tex:153-154 specifies 'f(t) overline{f(s)}', and :175-179 extends the bound and identity to complex L² functions. Ledger:1466 and claims.yaml:4226 match; absolute value is not a weaker conclusion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeSchur.time_schur_rclike: E:masked-time-schur",
+      "verdict": "PASS",
+      "reason": "Lean TimeSchur.lean:243-247 assumes '[RCLike 𝕜]', 'a < 1', '0 ≤ T', 'MemLp f 2'. TeX integrated_covariance_foundation.tex:141-151 has real functions, T>0 and the standing 0<a<1, with complexification at :153-154. Ledger:1467 and claims.yaml:4233 explicitly describe this harmless generalization; specializing recovers the manuscript bound."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeSchur.timeForm: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeSchur.lean:298-299 defines the iterated integral 'f t * conj (g s) * kern'. TeX integrated_covariance_foundation.tex:143-145 defines the real form and :153-154 specifies complex conjugation. Ledger:1468 and claims.yaml:4240 accurately identify the complexified form, with integrability and completion limitations disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeSchur.kern: L:masked-time-completion",
+      "verdict": "PASS",
+      "reason": "Lean TimeSchur.lean:59 defines 'kern (a x : ℝ) := |x| ^ (-a)' without hypotheses. TeX integrated_covariance_foundation.tex:145 uses '|t-s|^{-a}'; :159 explicitly excludes the null diagonal in its kernel representation. Ledger:1469 and claims.yaml:4247 disclose the harmless diagonal convention."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeSchur.integral_row: E:masked-time-schur",
+      "verdict": "PASS",
+      "reason": "Lean TimeSchur.lean:116-118 assumes 'a < 1', 't ∈ Icc 0 T' and computes the exact integrable row. TeX integrated_covariance_foundation.tex:171-173 states only that the 'kernel row integral is at most 2T^{1-a}/(1-a)'. Ledger:1470 explicitly acknowledges the sharper computation; claims.yaml:4254 matches its type. It directly supplies the stated proof step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeSchur.lintegral_row_le: E:masked-time-schur",
+      "verdict": "PASS",
+      "reason": "Lean TimeSchur.lean:139-141 assumes 'a < 1', 't ∈ Icc 0 T' and proves the ENNReal row bound. TeX integrated_covariance_foundation.tex:171-172 states the same row constant under the standing temporal assumptions. Ledger:1471 and claims.yaml:4261 accurately disclose both the weaker assumptions and extended-nonnegative integral formulation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeSchur.schur_lintegral: E:masked-time-schur",
+      "verdict": "PASS",
+      "reason": "Lean TimeSchur.lean:167-172 assumes 'a < 1' and 'AEMeasurable g' for g valued in ℝ≥0∞. TeX integrated_covariance_foundation.tex:172-173 uses the row bound and '2|xy| ≤ |x|²+|y|²'. Ledger:1472 and claims.yaml:4268 explicitly describe the Tonelli formulation of that deduction; specialization to g=|f| is faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeSchur.integrand: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeSchur.lean:236-237 has only '[RCLike 𝕜]' and defines 'f p.1 * starRingEnd 𝕜 (f p.2) * kern'. TeX integrated_covariance_foundation.tex:145,153-154 supplies the corresponding expression, not a separately stated auxiliary. Ledger:1473 and claims.yaml:4275 faithfully describe the Lean-only definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeSchur.intervalIntegrable_abs_rpow: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeSchur.lean:80-81 assumes '-1 < r' and arbitrary u,v. TeX integrated_covariance_foundation.tex:171-173 invokes temporal integrability but contains no separately stated power-integrability lemma. Ledger:1474 and claims.yaml:4282 match the type and correctly identify a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeSchur.integral_abs_rpow_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeSchur.lean:98-99 assumes '-1 < r', '0 ≤ w' and proves w^(r+1)/(r+1). TeX integrated_covariance_foundation.tex:171-172 gives a row bound, not this elementary integral statement. Ledger:1475 and claims.yaml:4289 accurately describe the auxiliary and its hypotheses."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeSchur.integral_abs_rpow_neg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeSchur.lean:108-109 assumes '-1 < r', '0 ≤ w' and integrates from -w to zero. TeX integrated_covariance_foundation.tex:171-172 does not state this separate identity. Ledger:1476 and claims.yaml:4296 match the Lean type and make no direct manuscript attribution."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeSchur.kern_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeSchur.lean:62 states '0 ≤ kern a x' for arbitrary real a,x. TeX integrated_covariance_foundation.tex:145 uses the nonnegative power kernel but gives no separate lemma. Ledger:1477 and claims.yaml:4303 faithfully describe this elementary auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeSchur.kern_neg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeSchur.lean:66 states 'kern a (-x) = kern a x' without hypotheses. TeX integrated_covariance_foundation.tex:145 uses an absolute-value kernel, without a separate evenness statement. Ledger:1478 and claims.yaml:4310 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeSchur.kern_sub_comm: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeSchur.lean:70 states 'kern a (x-y) = kern a (y-x)' for arbitrary a,x,y. TeX integrated_covariance_foundation.tex:175-176 invokes 'symmetry' but does not state this standalone kernel identity. Ledger:1479 and claims.yaml:4317 correctly describe the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeSchur.measurable_kern: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeSchur.lean:74 assumes only real a and concludes 'Measurable (kern a)'. TeX integrated_covariance_foundation.tex:145 supplies the kernel, with no separate measurable-kernel statement. Ledger:1480 and claims.yaml:4324 match the Lean type."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TimeSchur.two_mul_le_add_sq_ennreal: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean TimeSchur.lean:154 assumes 'x y : ℝ≥0∞' and proves '2*x*y ≤ x²+y²'. TeX integrated_covariance_foundation.tex:172-173 uses '2|xy| ≤ |x|²+|y|²', not its extended-real version. Ledger:1481 and claims.yaml:4331 accurately identify the representation-specific auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.masked_temporal_modulation_paper: L:masked-temporal-modulation",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:1081-1092 assumes '0<a<1', '0<h≤1', interval containment, 'ContDiffOn ℝ 1 A', and the two sSup identities. TeX integrated_covariance_foundation.tex:296-308 assumes '0<h≤1', 'A∈C¹(I;ℂ)', M=sup|A|, D=sup|A′|, and every real ω. Ledger:1482 and claims.yaml:4339 match. The absolute integral bound is stronger than its real-part bound; the unbuilt norm identification is explicitly excluded, not silently claimed proved."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.modulation_bound: L:masked-temporal-modulation",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:879-887 assumes 'ContinuousOn A', '|A|≤M' and a D-Lipschitz bound, with 0<a<1 and h>0. TeX integrated_covariance_foundation.tex:301 assumes 'A∈C¹', with M,D the suprema. Lean :1025-1044 derives the envelope assumptions from those manuscript hypotheses. Ledger:1483 and claims.yaml:4346 explicitly identify this harmless general form."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.masked_trig_products_bridged_paper: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:1111-1127 assumes manuscript parameter/amplitude hypotheses, 'hmem : ∀ ω, modeFn ... ∈ V', and 'hnorm : ∀ f : V, MemLp ... → ‖emb f‖² = (timeForm ...).re'. TeX integrated_covariance_foundation.tex:148-155,177-179 supplies the L² inclusion and complexified integral identity; :347-358 states the product bound. hnorm is no stronger than that identity on the admitted L² class. Ledger:1484 and claims.yaml:4353 accurately state the supplied interface."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.acorr: L:masked-temporal-modulation",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:421 defines '∫ u, Φ(u+v)*conj(Φ u)' without hypotheses. TeX integrated_covariance_foundation.tex:312 defines 'c(v)=∫_s^{s+h-v} A(u+v)overline{A(u)} du' for 0≤v≤h. For Φ=1_I A these agree by support restriction and null endpoints. Ledger:1485 explicitly says this identification is not itself stated in Lean; claims.yaml:4360 matches."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.acorr_bound: L:masked-temporal-modulation",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:469-471 assumes 'Φ=0' outside I and '∀u, ‖Φ u‖≤M', proving M² max(h-v,0) for every v. TeX integrated_covariance_foundation.tex:318 gives 'c(h)=0', '|c(v)|≤hM²' for its C¹ amplitude. Ledger:1486 and claims.yaml:4367 explicitly describe the stronger envelope bound, which supplies both manuscript conclusions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.acorr_lip: L:masked-temporal-modulation",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:483-487 assumes measurable, supported, bounded, D-Lipschitz Φ, '0≤h', '0≤D', '0≤v≤w'. TeX integrated_covariance_foundation.tex:301,315-318 assumes C¹ A and proves '|c′|≤M²+hMD'. Ledger:1487 and claims.yaml:4374 accurately call the result the integrated form, not a formalization of the derivative identity. All specialized envelope assumptions follow from the manuscript amplitude."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.acorr_neg: L:masked-temporal-modulation",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:538 states 'acorr Φ (-v)=conj(acorr Φ v)' without hypotheses. TeX integrated_covariance_foundation.tex:318-324 uses 'two conjugate triangles' under the amplitude hypotheses. Ledger:1488 and claims.yaml:4381 correctly describe the stronger symmetry identity; the ledger explicitly discloses the nonintegrable-zero convention."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.timeForm_eq_acorr: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:633-637 assumes 'a<1', measurable, supported, bounded Φ, h≥0 and 'Icc s (s+h) ⊆ Icc 0 T'. TeX integrated_covariance_foundation.tex:319-324 instead writes the triangle reduction directly. Ledger:1489 and claims.yaml:4388 accurately describe the whole-line shear/Fubini identity as an auxiliary of the different Lean route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.integral_acorr_split: L:masked-temporal-modulation",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:681-685 assumes 'a<1', measurable, supported, bounded Φ and h≥0, and concludes 'X + conj X'. TeX integrated_covariance_foundation.tex:318-324 uses the two conjugate triangles and '2 Re' of the corresponding positive-half integral. Ledger:1490 and claims.yaml:4395 accurately explain this equivalent formulation and its explicit envelope assumptions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.crude_bound: L:masked-temporal-modulation",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:830-832 assumes 'a<1', '0<h', '0≤B', and '‖C v‖≤B max(h-v,0)' for v≥0; ω is unrestricted. TeX integrated_covariance_foundation.tex:325-329 uses '|f|≤K²' to bound the rescaled integral by K²/(1-a). Ledger:1491 and claims.yaml:4402 faithfully state the unscaled envelope estimate and disclose its use on the larger Lean small-frequency range."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.osc_bound: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:332-338 assumes '0<a<1', '0<δ<h', B,L≥0, 'AEStronglyMeasurable C', envelope/Lipschitz bounds and 'phase ω δ=-1'. TeX integrated_covariance_foundation.tex:331-342 instead assumes k>1 and integrates by parts. Ledger:1492 and claims.yaml:4409 match the alternative half-period-shift theorem and do not misattribute it to the TeX proof."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.envelope_of_contDiffOn: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:1025-1030 assumes '0<h', 'ContDiffOn ℝ 1 A' and the M,D sSup identities. TeX integrated_covariance_foundation.tex:301 assumes 'A∈C¹(I;ℂ)', M=sup|A|, D=sup|A′|, without a separate envelope lemma. Ledger:1493 and claims.yaml:4416 match; compactness and continuity establish finite, non-junk suprema in Lean :1031-1044."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.memLp_modeFn: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:1048-1050 assumes 'ContinuousOn A' and '∀u∈I, ‖A u‖≤M', with arbitrary T and ω. TeX integrated_covariance_foundation.tex:154-155 admits bounded interval amplitudes but does not separately state this MemLp lemma. Ledger:1494 and claims.yaml:4423 correctly identify the auxiliary establishing the hnorm premise."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.profile_sub_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:200-203 assumes '0<a', '0<δ<h', B,L≥0 and the specified envelope/Lipschitz bounds. TeX integrated_covariance_foundation.tex:331-342 has an integration-by-parts argument, not a shifted-profile inequality. Ledger:1495 and claims.yaml:4430 match the type and correctly classify the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.majorant_integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:128-129 assumes 'a<1', '0<δ', 'δ<h', with no sign assumptions on B,L. TeX integrated_covariance_foundation.tex:331-342 contains no such majorant. Ledger:1496 and claims.yaml:4437 accurately state this Lean-route integrability result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.majorant_integral_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:140-143 assumes 'a<1', '0<δ<h', '0≤B', '0≤L' and proves the displayed numerator divided by 1-a. TeX integrated_covariance_foundation.tex:336-338 bounds a different derivative integral. Ledger:1497 and claims.yaml:4444 accurately distinguish the shift majorant and reproduce its constant."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.constant_small: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:733-735 assumes '0<a<1', '0<h', 'B≤K²', 'bracket x≤8'. TeX integrated_covariance_foundation.tex:326-329 instead treats '|ωh|≤1'. Ledger:1498 and claims.yaml:4451 exactly state the different numerical certificate; no direct TeX-step attribution is made."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.constant_large: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:751-754 assumes '0<a<1', '0<h', '7<k', 'B≤K²', 'L+B≤2K²'. TeX integrated_covariance_foundation.tex:340-342 uses k>1 and '8√2≤16'. Ledger:1499 and claims.yaml:4458 accurately disclose the replacement certificate '4π·8/7≤16'; the final manuscript constant remains 16/(1-a)."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.shear_integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:595-598 assumes 'a<1', measurable, supported, bounded Φ and h≥0. TeX integrated_covariance_foundation.tex:319-324 reduces the covariance square without separately stating shear integrability. Ledger:1500 and claims.yaml:4465 faithfully state the whole-plane product-integrability auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.acorr_integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:432-433 assumes 'Measurable Φ', zero outside I and a global M-bound, with arbitrary v. TeX integrated_covariance_foundation.tex:312 defines c for its C¹ amplitude, not this separate integrability theorem. Ledger:1501 and claims.yaml:4472 match the type."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.acorr_integrand_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:447-449 assumes only support in I and '∀u, ‖Φ u‖≤M', for arbitrary v,u. TeX integrated_covariance_foundation.tex:312,318 gives c and its integral bound, not this pointwise indicator estimate. Ledger:1502 and claims.yaml:4479 match, including the absence of a v≥0 hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.acorr_bound_abs: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:546-548 assumes support and a global M-bound and proves 'M*M*max(h-|v|,0)' for every v. TeX integrated_covariance_foundation.tex:318 states '|c(v)|≤hM²' on its positive domain, not this symmetric support envelope. Ledger:1503 and claims.yaml:4486 correctly classify and paraphrase the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.acorr_stronglyMeasurable: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:557 assumes 'Measurable Φ' and concludes 'StronglyMeasurable (acorr Φ)'. TeX integrated_covariance_foundation.tex:312-318 assumes a C¹ amplitude and does not state this general measurability result. Ledger:1504 and claims.yaml:4493 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.M_nonneg_of_bound: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:428 assumes '∀u, ‖Φ u‖≤M' and concludes '0≤M'. TeX integrated_covariance_foundation.tex:301 defines M as a supremum of absolute values, with no separate result of this name. Ledger:1505 and claims.yaml:4500 faithfully state the elementary auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.integrable_kern_indicator: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:582-583 assumes 'a<1', '0≤h' and proves integrability of the kernel indicator on [-h,h]. TeX integrated_covariance_foundation.tex:171-172 uses kernel integrability without this standalone whole-line statement. Ledger:1506 and claims.yaml:4507 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.modeFn_eq_indicator_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:865-866 assumes arbitrary set I, A and real ω, and rewrites modeFn as '(I.indicator A) t * phase ω t'. TeX integrated_covariance_foundation.tex:304 uses '1_I A(t)e^{iωt}', without this implementation identity. Ledger:1507 and claims.yaml:4514 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.ii_rpow_shift: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:97-98 assumes '-1<r' and arbitrary δ,p,q. TeX integrated_covariance_foundation.tex:331-338 integrates powers on positive intervals but has no general shifted-power lemma. Ledger:1508 and claims.yaml:4521 accurately paraphrase the Lean Real.rpow auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.integral_rpow_shift: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:103-104 assumes '-1<r' and arbitrary real δ,p,q and states the endpoint-power formula. TeX integrated_covariance_foundation.tex:336-338 has no such general shifted identity. Ledger:1509 and claims.yaml:4528 match the Lean statement; powers here retain Lean's Real.rpow convention."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.integrable_indicator_Ioc: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:108-109 assumes real-valued f, 'p≤q' and 'IntervalIntegrable f volume p q'. TeX integrated_covariance_foundation.tex:331-338 uses interval integrals but does not state this indicator theorem. Ledger:1510 and claims.yaml:4535 correctly summarize the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.integral_indicator_Ioc: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:114-115 assumes only real-valued f and 'p≤q'; no integrability hypothesis is present. TeX integrated_covariance_foundation.tex:331-338 gives ordinary interval-integral estimates, not this totalized-integral identity. Ledger:1511 and claims.yaml:4542 correctly omit any extra assumption."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.norm_ofReal_rpow: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:195 assumes '0≤x' and arbitrary r and proves '‖(x^r:ℂ)‖=x^r'. TeX integrated_covariance_foundation.tex:321-338 uses real positive powers in complex integrals but states no corresponding coercion lemma. Ledger:1512 and claims.yaml:4549 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.norm_phase: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:311 assumes arbitrary real ω,t and proves '‖phase ω t‖=1'. TeX integrated_covariance_foundation.tex:304,327 uses the complex phase without separately labelling its unit modulus. Ledger:1513 and claims.yaml:4556 faithfully describe this auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.continuous_phase: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:314 assumes real ω and concludes 'Continuous (phase ω)'. TeX integrated_covariance_foundation.tex:304 uses the exponential phase but states no separate continuity theorem. Ledger:1514 and claims.yaml:4563 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.phase_add: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:319 assumes arbitrary real ω,t,u and states 'phase ω (t+u)=phase ω t*phase ω u'. TeX integrated_covariance_foundation.tex:319-324 uses phase differences implicitly, without this separate auxiliary. Ledger:1515 and claims.yaml:4570 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.phase_mul_conj: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:568 assumes arbitrary real ω,t and proves 'phase ω t * conj (phase ω t)=1'. TeX integrated_covariance_foundation.tex:319-324 uses conjugate phases but has no separate statement. Ledger:1516 and claims.yaml:4577 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.phase_neg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:573 assumes arbitrary real ω,t and states 'phase ω (-t)=conj (phase ω t)'. TeX integrated_covariance_foundation.tex:319-324 invokes conjugate triangles, not this standalone phase lemma. Ledger:1517 and claims.yaml:4584 accurately describe it."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.one_le_bracket: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:726 assumes arbitrary real x and proves '1≤bracket x'. TeX integrated_covariance_foundation.tex:296 defines '⟨x⟩=sqrt(1+x²)' without a separate lower-bound statement. Ledger:1518 and claims.yaml:4591 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.majorant: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:121-125 defines the three Ioc-indicator terms for arbitrary real parameters. TeX integrated_covariance_foundation.tex:331-342 instead differentiates and integrates by parts; it has no shift majorant. Ledger:1519 and claims.yaml:4598 accurately reproduce all three terms and endpoints."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.profile: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:191-192 defines '(Ioi 0).indicator (fun v => (v^(-a):ℂ)*C v)' without hypotheses. TeX integrated_covariance_foundation.tex:325 defines a different rescaled f; it does not define this whole-line truncated shift profile. Ledger:1520 and claims.yaml:4605 correctly distinguish the Lean-only object."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedModulation.phase: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean MaskedModulation.lean:308 defines 'Complex.exp (((ω*t:ℝ):ℂ)*Complex.I)' for real ω,t. TeX integrated_covariance_foundation.tex:304 uses 'e^{iωt}' without a named phase definition. Ledger:1521 and claims.yaml:4612 faithfully state the implementation auxiliary."
+    },
+    {
+      "claim": "PARA-MaskedModulation",
+      "verdict": "PASS",
+      "reason": "Ledger:1358-1461 accurately states the integral-only scope, missing completion/complexification construction, supplied hmem and L²-restricted hnorm, endpoint and derivative conventions, finite suprema, and the half-period-shift route. Lean MaskedModulation.lean:1081-1133 and TimeSchur.lean:306-330 support those descriptions. TeX integrated_covariance_foundation.tex:153-154,177-179 makes the norm-to-integral interpretation mathematically valid; the absolute-value conclusion is stronger, not weaker. The constant and uniformity agree with TeX :305-308."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "FAIL",
+      "reason": "W1: the complete Index at ledger:130-238 contains only 17 distinct declarations from the 57-row section, through :171,173,221-223. All 40 'no direct label' declarations at :1473-1481,1489,1492-1521 are absent. The secondary E:masked-temporal-modulation listing also is not identified as a cross-reference to the L-labelled rows. All cited manuscript labels do exist at integrated_covariance_foundation.tex:141,150,300,303,347; label existence does not cure the incomplete index."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:54-69 and :180-197 accurately qualify 'same-assumptions, full' as the bounds on the defining double integral, not construction of H_a. TeX integrated_covariance_foundation.tex:153-154,177-179 identifies that expression with the squared norm. Lean proves the stronger absolute-value bound with the exact constants. coverage.yaml:198-215 correctly assigns inputs-supplied to the bridged trigonometric result and identifies hmem and the L²-restricted hnorm; the retained older declarations still use hmod, as expressly explained in ledger:1686-1696."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Scope ledger:69-85, the MaskedTrigProducts introduction :1686-1719, and Not in Lean :2214-2221 consistently distinguish proved integral bounds from supplied completion interfaces. PhaseResponse :518-538 remains accurate. W2: ledger:1742 says the modulation bound 'is not proved' without the local-module qualifier; the surrounding text resolves this, but 'not proved in MaskedTrigProducts; proved in MaskedModulation' would avoid a stale global reading."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "W1 — LEDGER-INDEX is incomplete. candidate/statement-ledger.md:130-238 indexes only 17 distinct target declarations, although :1465-1521 contains 57. Missing are all nine TimeSchur auxiliaries at :1473-1481 and all 31 MaskedModulation auxiliaries at :1489,1492-1521. For example, Lean TimeSchur.lean:236-237 defines 'integrand', and MaskedModulation.lean:332-338 states the shift theorem with 'phase ω δ = -1'; neither is indexed. TeX integrated_covariance_foundation.tex:331-342 instead says 'integrate the exponential by parts', supporting the ledger's 'no direct label' classification rather than omission. Exact fix: add index groups enumerating all 40 under their existing no-direct-label classifications, and distinguish the secondary E:masked-temporal-modulation listing at ledger:173 as a cross-reference rather than a second primary row assignment."
+    ],
+    "minor": [
+      "W2 — CROSS-REFERENCES wording: candidate/statement-ledger.md:1742 says the modulation bound 'is not proved; it is the supplied hypothesis hmod'. That is true locally for MaskedTrigProducts.lean:349-350, but MaskedModulation.lean:1081-1094 now proves the integral bound corresponding to TeX integrated_covariance_foundation.tex:303-308, including 'C0(a)=16/(1-a)'. Optional clarification: say 'not proved in MaskedTrigProducts; the integral bound is proved in MaskedModulation and transferred by the bridged wrapper'."
+    ]
+  },
+  "required_repairs": [
+    "W1: Complete the Index by label with the 40 omitted no-direct-label declarations from ledger lines 1473-1481, 1489 and 1492-1521. Mark the additional E:masked-temporal-modulation mapping of the two L-labelled bound declarations as a secondary cross-reference, so primary index assignments reproduce the section's 57 rows."
+  ],
+  "limitations": [
+    "All sources and sections required by requirement A were read completely; unrelated ledger sections and claims entries were outside the requested review.",
+    "The manuscript main file was read only around the standing assumptions; unrelated manuscript material and incidental broad-search matches were not substantively reviewed.",
+    "Compilation, absence of sorry, and standard-axiom status were accepted as supplied; no build or proof-correctness audit was performed.",
+    "The completion, its inclusion and its norm identity are not constructed in the reviewed Lean files. Acceptance of the integral-form correspondence uses the explicit manuscript identity, not a claim that this identity was formalized.",
+    "This AI correspondence review is neither human verification nor a novelty audit."
+  ]
+}

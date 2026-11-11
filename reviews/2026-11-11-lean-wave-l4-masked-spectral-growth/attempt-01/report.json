@@ -1,0 +1,257 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-608 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/GaussianTest.lean:1-207 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean:1-519 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/SpectralHomog.lean:1-318 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/DampedNorms.lean:1-372 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/ClockCopy.lean:1-779 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean:1-88 \u2014 complete.",
+    "candidate/statement-ledger.md:1-239,265-279,630-739,768-805,830-839,1063-1128,1523-1664,2191-2252 \u2014 partial file; all required sections complete. Additional cross-reference searches covered the entire file.",
+    "lean/claims.yaml:3939-4214 \u2014 partial file; complete entries for GaussianTest, MaskedSpectralGrowth and ClockCopyHomog.",
+    "lean/coverage.yaml:1-546 \u2014 complete.",
+    "manuscript/notes/integrated_covariance_foundation.tex:1-80 \u2014 partial file; complete required range.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:150-216,640-760,4480-4535,7480-7710 \u2014 partial file; all required ranges complete.",
+    "manuscript/notes/**/*.tex \u2014 searched for the section's cited labels across all supplied LaTeX files; matching label lines were read in the two manuscript files listed above."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianTest.poly_mul_exp_neg_sq_le: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianTest.lean:47-48 assumes \u201cm : \u2115\u201d, \u201c0 < c\u201d, \u201c0 \u2264 s\u201d and gives exactly the exponential bound recorded in ledger:1625 and claims.yaml:3943. There is no corresponding TeX assertion or hypothesis; integrated_covariance_foundation.tex:65-66 merely invokes the \u201csingle Schwartz test\u201d. The auxiliary mapping is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianTest.gauss: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianTest.lean:63-66 defines \u201cgauss (c : \u211d)\u201d on a real inner-product space as exp(-(c\u2016x\u2016\u00b2)), without positivity of c. Ledger:1626 and claims.yaml:3950 agree. TeX:65-66 uses a particular Gaussian test, not this general definition; no direct label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianTest.contDiff_gauss: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianTest.lean:69 states \u201c(c : \u211d) : ContDiff \u211d \u221e (gauss c)\u201d, matching ledger:1627 and claims.yaml:3957. TeX:65-66 calls its particular test Schwartz but states no separate smoothness lemma. No manuscript hypothesis is attributed to this auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianTest.norm_iteratedFDeriv_exp_le: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianTest.lean:74-75 quantifies over \u201ci : \u2115\u201d and \u201cy : \u211d\u201d and bounds the iterated Fr\u00e9chet derivative by exp y, as in ledger:1628 and claims.yaml:3964. TeX:56-66 computes a Gaussian integral and invokes a Schwartz test; it contains no such derivative lemma. The no-direct-label classification is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianTest.gauss_decay: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianTest.lean:81-82 assumes \u201c0 < c\u201d and concludes \u201c\u2203 C : \u211d, \u2200 x\u201d, for each natural k,n. Ledger:1629 and claims.yaml:3971 preserve the quantifier order and bound. TeX:65-66 asserts Schwartz membership without this derivative-decay argument, so this is correctly identified as a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianTest.gaussSchwartz: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianTest.lean:118-121 takes \u201cc : \u211d\u201d and \u201chc : 0 < c\u201d and constructs \u201cSchwartzMap E \u211d\u201d, with the stated Gaussian values. Ledger:1630 and claims.yaml:3978 agree. TeX:65-66 uses a complex modulated Gaussian rather than this separate real foundation; no direct label is suitable."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianTest.gaussSchwartz_apply: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianTest.lean:124-125 assumes \u201chc : 0 < c\u201d and states the exact evaluation formula recorded in ledger:1631 and claims.yaml:3985. TeX:65-66 supplies the eventual Gaussian test, not an evaluation lemma for this Lean construction. The auxiliary mapping is accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianTest.phase_hasTemperateGrowth: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianTest.lean:129-130 assumes only \u201cy : E\u201d and establishes temperate growth of exp(-i\u27e8y,x\u27e9), matching ledger:1632 and claims.yaml:3992. TeX:65-66 uses precisely that phase but makes no separate temperate-growth assertion. No direct label correctly distinguishes the construction route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianTest.sub_hasTemperateGrowth: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianTest.lean:136-137 assumes \u201cw : E\u201d and proves temperate growth of x\u21a6x-w, matching ledger:1633 and claims.yaml:3999. TeX:65-66 uses the unshifted spatial Gaussian and has no translation-growth lemma. The no-direct-label mapping is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianTest.sub_upper: no direct label",
+      "verdict": "PARTIAL",
+      "reason": "W1: GaussianTest.lean:142 states \u201c\u2203 (k : \u2115) (C : \u211d), \u2200 x\u201d, whereas ledger:1634 presents the fixed inequality with k=1 and C=1+\u2016w\u2016 as the declaration's conclusion. Those witnesses occur in the proof at :143, not in its exported type. claims.yaml:4006 correctly gives the existential statement and identifies the proof witnesses. TeX:65-66 contains no corresponding bound; the no-direct-label mapping itself is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianTest.gaussTest: P:masked-spectral-growth",
+      "verdict": "PASS",
+      "reason": "GaussianTest.lean:153-156 assumes \u201chs : 0 < s\u201d and constructs the complex Schwartz map exp(-i\u27e8y,x\u27e9)exp(-s\u2016x-w\u2016\u00b2), matching ledger:1635 and claims.yaml:4013. TeX:65-66 invokes \u201ce^{-r\u00b2|x|\u00b2/4}e^{-iy\u00b7x}\u201d with r>0 (:40). The ledger explicitly identifies the specialization w=0, s=r\u00b2/4."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianTest.gaussTest_apply: P:masked-spectral-growth",
+      "verdict": "PASS",
+      "reason": "GaussianTest.lean:159-161 assumes \u201chs : 0 < s\u201d and gives exactly the evaluation formula in ledger:1636 and claims.yaml:4020. TeX:65-66 uses the same function at w=0, s=r\u00b2/4, under \u201cr > 0\u201d (:40). The section's specialization statement makes the harmless translation generalization explicit."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianTest.gaussTest_fourier: P:masked-spectral-growth",
+      "verdict": "PASS",
+      "reason": "GaussianTest.lean:174-177 assumes \u201c0 < s\u201d, with arbitrary w,y,\u03be in Rd d, and gives (\u03c0/s)^(d/2) times the stated phase and Gaussian. Ledger:1637 and claims.yaml:4027 agree. TeX:62-63, under r>0, gives (2\u221a\u03c0/r)^d exp(-|\u03be-y|\u00b2/r\u00b2); w=0 and s=r\u00b2/4 reproduce both exponent and constant exactly."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.integrable_gauss_of_tempered: no direct label",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:92-93 assumes \u201cIsTempered \u03bd\u201d and \u201c0 < b\u201d, with arbitrary w, and concludes Gaussian integrability, matching ledger:1638 and claims.yaml:4035. TeX:23-30 says a \u201cpositive tempered Radon measure\u201d integrates every Schwartz test. HomogHypothesis.lean:34-35 uses the weighted-integrability characterization justified in that prose; the Gaussian specialization and unlabelled mapping are accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.spectral_gaussTest: P:masked-spectral-growth",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:126-131 assumes \u201cIsSpectralMeasure \u0393 \u03bc\u201d and \u201c0 < s\u201d, giving the displayed Gaussian-test pairing identity. Ledger:1639 and claims.yaml:4042 agree. TeX:15-19 assumes the spectral identity for every complex Schwartz test, and :65-66 applies it to the unshifted test. The generalized test and totalized-integral scope are explicitly disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.spectral_translated_gauss: no direct label",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:138-143 assumes \u201cIsSpectralMeasure \u0393 \u03bc\u201d and \u201c0 < s\u201d and states exactly the translated Gaussian identity in ledger:1640 and claims.yaml:4049. TeX:65-66 instead uses modulation with zero spatial translation. This lemma supports the characteristic-function proof route, so assigning no direct label avoids a false proof-step attribution."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.sq_rpow_half: no direct label",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:153 assumes \u201c0 \u2264 a\u201d and natural d and states (a\u00b2)^(d/2)=a^d, matching ledger:1641 and claims.yaml:4056. TeX:62-63 contains the resulting Gaussian constant, not this separate power identity or its hypothesis. The auxiliary classification is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.gdens: no direct label",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:163 defines \u201cReal.toNNReal (Real.exp (-\u2016\u03be\u2016\u00b2))\u201d with no further hypothesis, matching ledger:1642 and claims.yaml:4063. Main TeX:704-705 says only \u201cusing Fourier uniqueness\u201d; it does not introduce this weight. The no-direct-label mapping properly records a Lean-route object."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.measurable_gdens: no direct label",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:166 states \u201cMeasurable (gdens (d := d))\u201d without additional assumptions, matching ledger:1643 and claims.yaml:4070. Main TeX:704-705 contains no Gaussian-weight measurability assertion. This is correctly treated as an auxiliary of the alternative uniqueness argument."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.coe_gdens: no direct label",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:170-171 gives \u201c(gdens \u03be : \u211d) = Real.exp (-\u2016\u03be\u2016\u00b2)\u201d for every \u03be, matching ledger:1644 and claims.yaml:4077. Main TeX:704-705 supplies no such object or hypothesis. No direct label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.charFun_map_withDensity: no direct label",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:175-178 quantifies over arbitrary \u03bc,c,t and gives exactly the weighted-pushforward characteristic-function identity in ledger:1645 and claims.yaml:4084. No finiteness or c>0 hypothesis is present or claimed. Main TeX:704-705 invokes Fourier uniqueness without this identity; the Lean-route auxiliary mapping is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.charFun_smul_withDensity: no direct label",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:192-195 permits arbitrary \u201ck : \u211d\u22650\u221e\u201d and uses \u201ck.toReal\u201d, precisely as ledger:1646 and claims.yaml:4091 state. Main TeX:704-705 contains no corresponding weighted characteristic-function lemma. Its possibly infinite scalar and totalized-integral semantics are not misrepresented as ordinary finite-measure conclusions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.scaling_constants: no direct label",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:205-207 assumes \u201c0 < c\u201d, arbitrary real alpha and natural d, and gives the identity paraphrased in ledger:1647 and claims.yaml:4098. Rewriting \u03c0/(1/4)=4\u03c0 and \u03c0/(1/(4c\u00b2))=4\u03c0c\u00b2 is exact. Main TeX:704-705 contains no such constants lemma, so no direct label is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.map_smul_of_scaling: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:230-233 assumes \u201cIsTempered \u03bc\u201d, \u201cIsSpectralMeasure \u0393 \u03bc\u201d, \u201cSpectralHomogeneous \u0393 (d-alpha)\u201d and c>0; the conclusion is \u03bc.map(c\u00b7)=ofReal(c^(-alpha))\u2022\u03bc. Ledger:1648 and claims.yaml:4105 agree. Main TeX:704-705 derives \u03bc(cA)=c^\u03b1\u03bc(A) from covariance scaling and Fourier uniqueness; :4522-4525 explicitly gives \u03bc(A/c)=c^(-\u03b1)\u03bc(A). This is the same pushforward statement, with a disclosed weaker assumption set."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.spectralHomogeneous_of_scaling: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:301-303 assumes precisely \u03bc tempered, the spectral convention and \u0393 scaling, and concludes \u201cSpectralHomogeneous \u03bc alpha\u201d; no exponent range is added. Ledger:1649 and claims.yaml:4112 match. Main TeX:704-705 and :4522-4525 derive exactly \u03bc(cA)=c^\u03b1\u03bc(A) under H:homog. The generalization is explicit and preserves the manuscript implication."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.spectralHomogeneous_of_homog: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:315-317 assumes only \u201ch : HomogCovariance d alpha alpha0 \u0393 \u03bc\u201d and applies the general theorem to \u201ch.\u03bc_tempered h.spectral h.scaling\u201d. Ledger:1650 and claims.yaml:4119 are exact. Main TeX:169-186 supplies those clauses, and :704-705 concludes \u03bc(cA)=c^\u03b1\u03bc(A). There is no hidden spectral-homogeneity, nonzero-covariance or integrability input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.MGamma: P:masked-spectral-growth",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:322 defines \u201c\u222b x, Real.exp (-(\u2016x\u2016\u00b2/4)) \u2202\u0393\u201d, matching ledger:1651 and claims.yaml:4126. TeX:35-37 defines the identical M_\u0393 under the section's H:homog and \u0393\u22600 assumptions (:5-6). The unrestricted Lean definition is harmless, and the ledger explicitly distinguishes its Bochner-integral semantics from proved integrability."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.CGamma: P:masked-spectral-growth",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:325 defines \u201cReal.exp 1 * MGamma \u0393 / (2 * Real.sqrt Real.pi)^d\u201d, matching ledger:1652 and claims.yaml:4133. TeX:38 defines \u201ce M_\u0393/(2\u221a\u03c0)^d\u201d. There is no changed normalization or additional hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.integrable_gauss_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:329-330 assumes \u201cIsTempered \u03bd\u201d and \u201c0 < c\u201d and concludes centered-Gaussian integrability, matching ledger:1653 and claims.yaml:4140. TeX:23-30 asserts Schwartz integrability in unlabelled prose; this separately named centered specialization is correctly classified as a Lean auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.MGamma_pos: P:masked-spectral-growth",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:335-336 assumes \u201cIsTempered \u0393\u201d and \u201c\u0393 \u2260 0\u201d and concludes both Gaussian integrability and \u201c0 < MGamma \u0393\u201d, matching ledger:1654 and claims.yaml:4147. TeX:55-56 explicitly attributes finiteness to temperedness and positivity to \u0393\u22600. These are exactly the used hypotheses; finiteness is not inferred merely from a totalized real integral."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.gauss_const_cancel: no direct label",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:345-346 assumes \u201c0 < r\u201d and states the exact constant-cancellation identity in ledger:1655 and claims.yaml:4154. TeX:40 assumes r>0 and :62-63 gives the reciprocal Fourier factor, but contains no separately stated cancellation lemma. The auxiliary classification is suitable."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.masked_gaussian_transform: E:masked-gaussian-transform",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:358-363 assumes \u201cIsSpectralMeasure \u0393 \u03bc\u201d and \u201c0 < r\u201d, with arbitrary y, and gives the factor \u201c(r/(2\u221a\u03c0))^d\u201d and phase exp(-i\u27e8y,x\u27e9). Ledger:1656 and claims.yaml:4161 match TeX:40-45 exactly. The ledger explicitly says this standalone generalized identity has no integrability conclusion; the paper wrapper proves integrability under the manuscript assumptions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.translated_gauss_le: E:masked-translated-ball",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:383-386 assumes the spectral convention, \u201cSpectralHomogeneous \u0393 (d-alpha)\u201d and r>0, and bounds the integral by \u201cr^alpha * MGamma \u0393/(2\u221a\u03c0)^d\u201d. Ledger:1657 and claims.yaml:4168 agree. TeX:46-47 has the identical bound, derived from nonnegativity and \u0393 scaling at :67-74. The weaker standalone hypotheses and absence of integrability are explicitly disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.closedBall_le: E:masked-translated-ball",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:421-424 adds \u201chint : Integrable \u2026 \u03bc\u201d to the spectral convention, \u0393 scaling and r>0, concluding the closed-ball bound in ENNReal. Ledger:1658 and claims.yaml:4175 reflect this. TeX:48-51 permits closed balls; its temperedness assumptions ensure Gaussian integrability (:23-30). Thus the explicit integrability condition is discharged under the manuscript hypotheses, not supplied externally."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.masked_spectral_growth: P:masked-spectral-growth",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:460-476 assumes \u0393 and \u03bc tempered, the spectral convention, \u0393 scaling and \u0393\u22600. It concludes integrability, M_\u0393>0, the transform, the nonnegative Gaussian bound and both ball bounds for \u201c\u2200 y \u2026 \u2200 r \u2026 0 < r\u201d. Ledger:1659 and claims.yaml:4182 preserve these conclusions. TeX:5-6,34-51 supplies the stronger standing assumptions and identical constants; the generalization is expressly identified."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedSpectralGrowth.masked_spectral_growth_paper: P:masked-spectral-growth",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:501-517 assumes only \u201cHomogCovariance d alpha alpha0 \u0393 \u03bc\u201d and \u201c\u0393 \u2260 0\u201d. TeX:5-6 assumes H:homog and \u0393\u22600, and :34-51 states exactly its conclusions. Ledger:1660 and claims.yaml:4189 agree. All y\u2208\u211d^d and r>0, both ball conventions, both integrability conclusions, strict M_\u0393 positivity and the constants are retained."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopyHomog.clock_copy_obstruction_paper: P:clock-copy-obstruction",
+      "verdict": "PASS",
+      "reason": "ClockCopyHomog.lean:53-66 assumes H:homog, \u0393\u22600, \u03b8>0 and \u201c-1 \u2264 \u03c1 \u2227 \u03c1 \u2264 1\u201d, with no homogeneity argument. Main TeX:7514-7515,7531-7539 specifies the same covariance and parameter class; :7555-7575 states the matching positive integrable weight, exact identities, strict inequality and factor 2-2^a. Ledger:1661 and claims.yaml:4197 are faithful. The discharged input follows solely from H:homog at MaskedSpectralGrowth.lean:315-317."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopyHomog.damped_N2_nonneg_paper: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "ClockCopyHomog.lean:71-73 assumes \u201cHomogCovariance \u2026\u201d and \u201c0 < \u03b8\u201d, without \u0393\u22600 or a supplied spectral-homogeneity argument, and concludes \u201c0 \u2264 N2sq alpha0 \u03b8 \u03bc\u201d. Main TeX:677-679 states the same nonnegativity under H:homog for every \u03b8>0. Ledger:1662 and claims.yaml:4204 match. The alternative proof route is disclosed rather than attributed to the TeX's temporal-positive-definiteness argument."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.ClockCopyHomog.damped_norms_finite_paper: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "ClockCopyHomog.lean:80-86 assumes only H:homog and \u03b8>0 and concludes absolute integrability of the N\u2082 triple integrand, its outer integrand and the N\u2081 Laplace integrand. Main TeX:677-679 asserts finiteness under exactly those hypotheses, with absolute integration justified at :714-729. Ledger:1663 and claims.yaml:4211 accurately restrict the scope to N\u2081,N\u2082 finiteness; N\u2080, scaling, tails and smoothing are not claimed."
+    },
+    {
+      "claim": "PARA-MaskedSpectralGrowth",
+      "verdict": "PASS",
+      "reason": "Ledger:1525-1621 accurately describes the three modules, manuscript locations, generalized hypotheses, unused carried fields, totalized integrals, integrability conclusions and alternative uniqueness route. MaskedSpectralGrowth.lean:230-317 derives spectral homogeneity without an external input. The \u03b1=0 examples are explicitly confined to variants of general theorems (:1609-1614), consistent with H:homog excluding \u03b1=0. The stated omissions are appropriately bounded."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "FAIL",
+      "reason": "W2: Ledger:213-220 contains all 39 distinct declarations, and all cited section labels exist in the manuscript. However, the L:low-alpha-convolution index row at :217 lists only spectralHomogeneous_of_scaling, while declaration rows :1648 and :1650 also assign map_smul_of_scaling and spectralHomogeneous_of_homog to that label. Therefore the index does not reproduce exactly the label associations given by the section's rows."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:70-88 correctly classifies L:damped-homogeneous-norms as same-assumptions/weaker and explicitly excludes N\u2080, scaling, tails and smoothing. Its :359-382 clock-copy row is same-assumptions/full and includes the new no-input wrapper. Its :439-456 masked-growth row is same-assumptions/full. The relevant claim IDs resolve in claims.yaml:3939-4214, and the new wrappers justify the classifications without silently retaining an extra hypothesis."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "Scope:61-68, ClockCopy introduction:654-665, and rows :802,837-838 explicitly distinguish the original wrappers' homogeneity argument from its now-proved discharge and the ClockCopyHomog wrappers. Not-in-Lean:2235-2238 correctly says spectral homogeneity is derived. FrequencyRow:1117-1120 says masked growth is not in that module, not that it is absent from Lean; :2240-2243 correctly distinguishes the unstated combined instance from its formalized inputs. No false remaining external-input claim was found in these cross-references."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "W1 \u2014 GaussianTest.sub_upper declaration fidelity. candidate/statement-ledger.md:1634 states the fixed bound \u201cnorm(x) <= (1+norm(w)) (1+norm(x-w))\u201d, but lean/StratonovichHAMSecondMoment/GaussianTest.lean:142 exports only \u201c\u2203 (k : \u2115) (C : \u211d), \u2200 x, \u2016x\u2016 \u2264 C * (1 + \u2016x - w\u2016)^k\u201d. The proof chooses the advertised witnesses at :143; claims.yaml:4006 correctly separates the existential conclusion from those witnesses. There is no corresponding TeX bound: manuscript/notes/integrated_covariance_foundation.tex:65-66 only invokes the \u201csingle Schwartz test\u201d. Fix the ledger row to state the existential conclusion, optionally adding that its proof uses k=1 and C=1+\u2016w\u2016. No numerical error or failure of the Gaussian construction is alleged.",
+      "W2 \u2014 LEDGER-INDEX is incomplete by label association. candidate/statement-ledger.md:1648-1650 associates all three spectral-scaling declarations with \u201cL:low-alpha-convolution\u201d, but its index at :217 lists only spectralHomogeneous_of_scaling. Lean exports the pushforward identity at lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean:230-233 and the H:homog wrapper at :315-317; manuscript/notes/notes_stratonovich_ham_second_moment.tex:4522-4525 states \u201c\u03bc(A/c) = c^{-\u03b1}\u03bc(A)\u201d and equivalently \u201c\u03bc(cA) = c^\u03b1\u03bc(A)\u201d. Add map_smul_of_scaling and spectralHomogeneous_of_homog to that index row so it agrees with the declaration rows."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "W1: Revise candidate/statement-ledger.md:1634 to paraphrase sub_upper's existential exported type; distinguish the explicit witnesses used in its proof.",
+    "W2: Add MaskedSpectralGrowth.map_smul_of_scaling and MaskedSpectralGrowth.spectralHomogeneous_of_homog to the L:low-alpha-convolution index row."
+  ],
+  "limitations": [
+    "All complete-reading requirement A ranges were read. Sources marked partial above have only out-of-scope portions unread; no required-range gap remains.",
+    "Compilation, standard-axiom status and packet byte binding were accepted as supplied; no build or independent hash verification was performed.",
+    "Imported foundations and refutation files absent from the packet were not independently inspected. The review checked the stated \u03b1=0 scope restriction, not execution of those refutations.",
+    "No nonzero instance satisfying every field of H:homog was supplied or independently verified; the ledger expressly discloses this.",
+    "This AI correspondence review is not human verification or a novelty audit."
+  ]
+}

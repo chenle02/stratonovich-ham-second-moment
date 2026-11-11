@@ -1,0 +1,139 @@
+Review the frozen packet rooted at <HOME>/.local/state/Le-AI-Lab/stratonovich-lean-wave-l4-review-OccupationKernelRow/attempt-01/workspace. Primary target: candidate/statement-ledger.md. Source revision: efec88b77eab046e702dad240d1210b2bcbeb140.
+
+You are an independent artifact reviewer. Read only the frozen packet
+and the supplied review contract. Report correctness, missing assumptions,
+incorrect constants, failed implications, and uncertainty. Do not edit files,
+use the network, send messages, publish, install, or delegate. Do not launch a
+research or coding workflow. Return a scientific report rather than a plan.
+Use exactly one JSON object with schema "subscription-review-report/1", verdict (PASS, PASS_WITH_NOTES, FAIL, or
+INCONCLUSIVE), confidence (high, medium, low), source_coverage (list of strings),
+checks (list of objects with claim, verdict, reason), findings (an object with
+fatal, major, minor lists), required_repairs (list), and limitations (list).
+required_repairs contains ONLY mandatory changes that block acceptance. Optional
+clarifications belong in findings.minor, never in required_repairs. PASS and
+PASS_WITH_NOTES require empty fatal, major and required_repairs lists and no
+failed/unchecked claim. If a repair is mandatory, return FAIL or INCONCLUSIVE;
+never weaken a finding to obtain PASS.
+Read every required source completely. Never use Grep head_limit or any other
+truncating or limiting option on a required source. After any pagination or
+truncation marker (for example a partial Read, an offset/limit notice, or
+"output truncated"), keep reading the next range until the whole file is read.
+In source_coverage, list each exact file and the line ranges you actually read.
+If coverage of any required source is incomplete, say "partial" for that source
+in source_coverage and state the gap in limitations.
+An AI review is not human verification or a novelty audit. Do not silently
+repair a candidate and PASS the original. A terminal error is not a verdict.
+
+Frozen packet file index (relative to workspace; a listed file is not proof of reading):
+["PROVENANCE.json", "candidate/statement-ledger.md", "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean", "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean", "lean/StratonovichHAMSecondMoment/TimeFractional.lean", "lean/claims.yaml", "lean/coverage.yaml", "manuscript/notes/book-layout.tex", "manuscript/notes/figures/active-subset-optimization.tex", "manuscript/notes/figures/common-noise.tex", "manuscript/notes/figures/cross-colour-cube.tex", "manuscript/notes/figures/dyadic-cover.tex", "manuscript/notes/figures/endpoint-elimination.tex", "manuscript/notes/figures/gaussian-enlargement.tex", "manuscript/notes/figures/global-control-blocks.tex", "manuscript/notes/figures/hermite-cutoff.tex", "manuscript/notes/figures/interval-allocations.tex", "manuscript/notes/figures/interval-end-metrics.tex", "manuscript/notes/figures/light-cone.tex", "manuscript/notes/figures/literature-interpretations.tex", "manuscript/notes/figures/literature-results-map.tex", "manuscript/notes/figures/nonseparable-controls.tex", "manuscript/notes/figures/order-of-limits.tex", "manuscript/notes/figures/positive-gram.tex", "manuscript/notes/figures/proof-map.tex", "manuscript/notes/figures/styles.tex", "manuscript/notes/figures/two-chain-pairings.tex", "manuscript/notes/figures/white-strip.tex", "manuscript/notes/integrated_actual_operator_driver.tex", "manuscript/notes/integrated_cameron_mean.tex", "manuscript/notes/integrated_compact_gaussian.tex", "manuscript/notes/integrated_compact_mean_family.tex", "manuscript/notes/integrated_constant_phase_young.tex", "manuscript/notes/integrated_covariance_foundation.tex", "manuscript/notes/integrated_exact_scaling.tex", "manuscript/notes/integrated_gaussian_tubes.tex", "manuscript/notes/integrated_intrinsic_constant.tex", "manuscript/notes/integrated_masked_moments.tex", "manuscript/notes/integrated_occupation_ceiling.tex", "manuscript/notes/integrated_point_transfer.tex", "manuscript/notes/integrated_positive_gram.tex", "manuscript/notes/integrated_radius_anchor.tex", "manuscript/notes/integrated_raw_block_lower.tex", "manuscript/notes/integrated_signed_moment_upper.tex", "manuscript/notes/integrated_signed_static.tex", "manuscript/notes/integrated_source_convergence.tex", "manuscript/notes/integrated_spatial_occupation.tex", "manuscript/notes/integrated_symplectic_phase.tex", "manuscript/notes/integrated_temporal_equilibrium.tex", "manuscript/notes/integrated_uniform_mean.tex", "manuscript/notes/integrated_uniform_products.tex", "manuscript/notes/integrated_unmasked_variational.tex", "manuscript/notes/integrated_wave_variance.tex", "manuscript/notes/integrated_white_evaluation.tex", "manuscript/notes/integrated_young_upper_foundation.tex", "manuscript/notes/literature_review.tex", "manuscript/notes/notes_stratonovich_ham_second_moment.tex"]
+
+Independent correspondence review: newly formalized whole labelled result(s) (Lean ledger rows) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  efec88b77eab). Review ONLY its section "## OccupationKernelRow (whole result)", the index
+  rows for it, and the items named in the global checks below. All other
+  rows were reviewed earlier.
+- the Lean modules (ground truth for what each declaration states):
+  lean/StratonovichHAMSecondMoment/TimeFractional.lean
+  lean/StratonovichHAMSecondMoment/HomogHypothesis.lean
+  lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean
+  and lean/claims.yaml, lean/coverage.yaml.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  3920258be333. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that L:occupation-kernel-row and L:spatial-physical-pair are formalized as stated in their
+rows: every conclusion proved, with hypotheses that match the manuscript,
+apart from side conditions the TeX leaves implicit and inputs explicitly
+declared as supplied. Test that claim hard: any Lean hypothesis that the
+manuscript does not have, any manuscript hypothesis the Lean drops, any
+weaker Lean conclusion, any changed constant, range, quantifier order or
+strictness, any modelling choice that changes the mathematical object, any
+supplied hypothesis stronger than the manuscript result it stands for, and
+any row labelled as a step of a TeX proof that is really an auxiliary of a
+different Lean proof route, is a finding, unless the ledger states it AND it
+is genuinely harmless. Decide that yourself from the TeX; do not accept the
+ledger's word.
+Pay attention to: that Kstar is exactly the TeX kernel (lines 282-289) and the identity with TimeFractional.Psi; the standing assumptions (a = alpha0, q = 4 - alpha, D = q - 2a, nonzero Gamma); "decreasing" vs strict decrease; the max as IsGreatest; and what the pairing lemma states about measurability and a.e. convergence.
+
+CHECKS (exactly these 34, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.OccupationKernelRow.kstarIntegrand: E:occupation-damped-kernel"
+  2. claim "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar: E:occupation-damped-kernel"
+  3. claim "StratonovichHAMSecondMoment.OccupationKernelRow.row: E:occupation-kernel-row"
+  4. claim "StratonovichHAMSecondMoment.OccupationKernelRow.Rstar: E:occupation-kernel-row"
+  5. claim "StratonovichHAMSecondMoment.OccupationKernelRow.Phi: L:occupation-kernel-row"
+  6. claim "StratonovichHAMSecondMoment.OccupationKernelRow.kstarIntegrand_eq_psiKernel: no direct label"
+  7. claim "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_eq_Psi: E:occupation-damped-kernel"
+  8. claim "StratonovichHAMSecondMoment.OccupationKernelRow.kstarIntegrand_integrable: E:occupation-damped-kernel"
+  9. claim "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_neg: L:occupation-kernel-row"
+  10. claim "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_pos: L:occupation-kernel-row"
+  11. claim "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_nonneg: no direct label"
+  12. claim "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_le_rpow: L:occupation-kernel-row"
+  13. claim "StratonovichHAMSecondMoment.OccupationKernelRow.Psi_diag_strictAnti: no direct label"
+  14. claim "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_strictAntiOn: L:occupation-kernel-row"
+  15. claim "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_measurable: no direct label"
+  16. claim "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_intervalIntegrable_zero_of_nonneg: no direct label"
+  17. claim "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_intervalIntegrable: no direct label"
+  18. claim "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_locallyIntegrable: L:occupation-kernel-row"
+  19. claim "StratonovichHAMSecondMoment.OccupationKernelRow.row_eq_Phi: L:occupation-kernel-row"
+  20. claim "StratonovichHAMSecondMoment.OccupationKernelRow.Phi_sum_le_of_le_half: no direct label"
+  21. claim "StratonovichHAMSecondMoment.OccupationKernelRow.Phi_sum_le: L:occupation-kernel-row"
+  22. claim "StratonovichHAMSecondMoment.OccupationKernelRow.occupation_kernel_row: L:occupation-kernel-row"
+  23. claim "StratonovichHAMSecondMoment.OccupationKernelRow.occupation_kernel_row_paper: L:occupation-kernel-row"
+  24. claim "StratonovichHAMSecondMoment.OccupationKernelRow.pairMeasure: L:spatial-physical-pair"
+  25. claim "StratonovichHAMSecondMoment.OccupationKernelRow.pairing: E:spatial-physical-pair"
+  26. claim "StratonovichHAMSecondMoment.OccupationKernelRow.ae_pair_of_ae: L:spatial-physical-pair"
+  27. claim "StratonovichHAMSecondMoment.OccupationKernelRow.spatial_physical_pair: L:spatial-physical-pair"
+  28. claim "StratonovichHAMSecondMoment.OccupationKernelRow.spatial_physical_pair_paper: L:spatial-physical-pair"
+  29. claim "PARA-OccupationKernelRow": the "OccupationKernelRow (whole result)" section paragraph is accurate, cites the right files, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input and what is not formalized, and does not overclaim
+  30. claim "LEDGER-INDEX": the "Index by label" rows for the OccupationKernelRow section list exactly these 28 declarations under the labels their rows give, and every label cited in the section exists in the manuscript (search \label across all files)
+  31. claim "COVERAGE-ROWS": the coverage.yaml rows L:occupation-kernel-row and L:spatial-physical-pair (new, same-assumptions, full): classes, conclusions and claims are right; in particular whether the pairing lemma, proved for sequences indexed by N, is the full lemma or a special case
+  32. claim "CROSS-REFERENCES": every other place in the ledger that points to the OccupationKernelRow section (step-module intros and rows, the "Not in Lean" section, Scope) is accurate
+  33. claim "LEDGER-TOTALS": the totals line (724 = 611 theorems + 113 definitions; 419 labelled, 305 unlabelled) agrees with a count of all per-module tables, and every claims.yaml decl has exactly one ledger row
+  34. claim "SCOPE-PROSE": the Scope bullets about the whole-result modules (counts, which results need no supplied input, which have supplied inputs, Gaussian measures beyond finitely many standard Gaussians, which results need no supplied input now that P:clock-copy-obstruction has none) and the internal-status sentence are accurate
+For each row check (1-28): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: every Lean file
+   listed above; the "OccupationKernelRow (whole result)" section and the "Scope" and
+   "Index by label" sections of candidate/statement-ledger.md; the entries
+   of lean/claims.yaml for this section's modules; lean/coverage.yaml;
+   lines 1-320 of manuscript/notes/integrated_spatial_occupation.tex (L:spatial-physical-pair, L:occupation-kernel-row),
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 34 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-28.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.
+

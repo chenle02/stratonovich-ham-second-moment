@@ -1,0 +1,123 @@
+Independent correspondence review: newly formalized whole labelled result(s) (Lean ledger rows) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  efec88b77eab). Review ONLY its section "## MaskedSpectralGrowth (whole result)", the index
+  rows for it, and the items named in the global checks below. All other
+  rows were reviewed earlier.
+- the Lean modules (ground truth for what each declaration states):
+  lean/StratonovichHAMSecondMoment/HomogHypothesis.lean
+  lean/StratonovichHAMSecondMoment/GaussianTest.lean
+  lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean
+  lean/StratonovichHAMSecondMoment/SpectralHomog.lean
+  lean/StratonovichHAMSecondMoment/DampedNorms.lean
+  lean/StratonovichHAMSecondMoment/ClockCopy.lean
+  lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean
+  and lean/claims.yaml, lean/coverage.yaml.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  3920258be333. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that P:masked-spectral-growth, and P:clock-copy-obstruction and the finiteness part of L:damped-homogeneous-norms now with no supplied input are formalized as stated in their
+rows: every conclusion proved, with hypotheses that match the manuscript,
+apart from side conditions the TeX leaves implicit and inputs explicitly
+declared as supplied. Test that claim hard: any Lean hypothesis that the
+manuscript does not have, any manuscript hypothesis the Lean drops, any
+weaker Lean conclusion, any changed constant, range, quantifier order or
+strictness, any modelling choice that changes the mathematical object, any
+supplied hypothesis stronger than the manuscript result it stands for, and
+any row labelled as a step of a TeX proof that is really an auxiliary of a
+different Lean proof route, is a finding, unless the ledger states it AND it
+is genuinely harmless. Decide that yourself from the TeX; do not accept the
+ledger's word.
+Pay attention to: whether spectralHomogeneous_of_homog really derives mu(cA) = c^alpha mu(A) from the H:homog fields alone (no hidden extra hypothesis), so that the re-issued ClockCopyHomog wrappers have exactly the manuscript hypotheses; whether the Gaussian Schwartz test, the masked Gaussian transform constant (r/(2 sqrt pi))^d and the bound r^alpha M_Gamma/(2 sqrt pi)^d match the TeX; that refutations at alpha = 0 are described as refuting variants of the general theorems outside H:homog; and that the ClockCopy section and the Not-in-Lean section no longer call the homogeneity supplied.
+
+CHECKS (exactly these 43, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.GaussianTest.poly_mul_exp_neg_sq_le: no direct label"
+  2. claim "StratonovichHAMSecondMoment.GaussianTest.gauss: no direct label"
+  3. claim "StratonovichHAMSecondMoment.GaussianTest.contDiff_gauss: no direct label"
+  4. claim "StratonovichHAMSecondMoment.GaussianTest.norm_iteratedFDeriv_exp_le: no direct label"
+  5. claim "StratonovichHAMSecondMoment.GaussianTest.gauss_decay: no direct label"
+  6. claim "StratonovichHAMSecondMoment.GaussianTest.gaussSchwartz: no direct label"
+  7. claim "StratonovichHAMSecondMoment.GaussianTest.gaussSchwartz_apply: no direct label"
+  8. claim "StratonovichHAMSecondMoment.GaussianTest.phase_hasTemperateGrowth: no direct label"
+  9. claim "StratonovichHAMSecondMoment.GaussianTest.sub_hasTemperateGrowth: no direct label"
+  10. claim "StratonovichHAMSecondMoment.GaussianTest.sub_upper: no direct label"
+  11. claim "StratonovichHAMSecondMoment.GaussianTest.gaussTest: P:masked-spectral-growth"
+  12. claim "StratonovichHAMSecondMoment.GaussianTest.gaussTest_apply: P:masked-spectral-growth"
+  13. claim "StratonovichHAMSecondMoment.GaussianTest.gaussTest_fourier: P:masked-spectral-growth"
+  14. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.integrable_gauss_of_tempered: no direct label"
+  15. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.spectral_gaussTest: P:masked-spectral-growth"
+  16. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.spectral_translated_gauss: no direct label"
+  17. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.sq_rpow_half: no direct label"
+  18. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.gdens: no direct label"
+  19. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.measurable_gdens: no direct label"
+  20. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.coe_gdens: no direct label"
+  21. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.charFun_map_withDensity: no direct label"
+  22. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.charFun_smul_withDensity: no direct label"
+  23. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.scaling_constants: no direct label"
+  24. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.map_smul_of_scaling: L:damped-homogeneous-norms"
+  25. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.spectralHomogeneous_of_scaling: L:damped-homogeneous-norms"
+  26. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.spectralHomogeneous_of_homog: L:damped-homogeneous-norms"
+  27. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.MGamma: P:masked-spectral-growth"
+  28. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.CGamma: P:masked-spectral-growth"
+  29. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.integrable_gauss_zero: no direct label"
+  30. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.MGamma_pos: P:masked-spectral-growth"
+  31. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.gauss_const_cancel: no direct label"
+  32. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.masked_gaussian_transform: E:masked-gaussian-transform"
+  33. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.translated_gauss_le: E:masked-translated-ball"
+  34. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.closedBall_le: E:masked-translated-ball"
+  35. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.masked_spectral_growth: P:masked-spectral-growth"
+  36. claim "StratonovichHAMSecondMoment.MaskedSpectralGrowth.masked_spectral_growth_paper: P:masked-spectral-growth"
+  37. claim "StratonovichHAMSecondMoment.ClockCopyHomog.clock_copy_obstruction_paper: P:clock-copy-obstruction"
+  38. claim "StratonovichHAMSecondMoment.ClockCopyHomog.damped_N2_nonneg_paper: L:damped-homogeneous-norms"
+  39. claim "StratonovichHAMSecondMoment.ClockCopyHomog.damped_norms_finite_paper: L:damped-homogeneous-norms"
+  40. claim "PARA-MaskedSpectralGrowth": the "MaskedSpectralGrowth (whole result)" section paragraph is accurate, cites the right files, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input and what is not formalized, and does not overclaim
+  41. claim "LEDGER-INDEX": the "Index by label" rows for the MaskedSpectralGrowth section list exactly these 39 declarations under the labels their rows give, and every label cited in the section exists in the manuscript (search \label across all files)
+  42. claim "COVERAGE-ROWS": the coverage.yaml rows P:masked-spectral-growth (new, same-assumptions, full), P:clock-copy-obstruction (now same-assumptions, full, carried by ClockCopyHomog.clock_copy_obstruction_paper) and L:damped-homogeneous-norms (now same-assumptions, weaker): classes, conclusions, scopes, notes and claims are right
+  43. claim "CROSS-REFERENCES": every other place in the ledger that points to the MaskedSpectralGrowth section (step-module intros and rows, the "Not in Lean" section, Scope) is accurate
+For each row check (1-39): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: every Lean file
+   listed above; the "MaskedSpectralGrowth (whole result)" section and the "Scope" and
+   "Index by label" sections of candidate/statement-ledger.md; the entries
+   of lean/claims.yaml for this section's modules; lean/coverage.yaml;
+   lines 1-80 of manuscript/notes/integrated_covariance_foundation.tex (P:masked-spectral-growth),
+   and lines 150-216, 640-760, 4505-4535 and 7480-7710 of manuscript/notes/notes_stratonovich_ham_second_moment.tex (H:homog; L:damped-homogeneous-norms and its proof; L:low-alpha-convolution; P:clock-copy-obstruction);
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 43 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-39.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.

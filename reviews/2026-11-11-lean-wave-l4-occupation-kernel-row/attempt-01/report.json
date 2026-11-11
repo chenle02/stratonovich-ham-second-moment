@@ -1,0 +1,255 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json: lines 1-568, complete.",
+    "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean: lines 1-150, 151-300, 301-448, complete.",
+    "lean/StratonovichHAMSecondMoment/TimeFractional.lean: lines 1-150, 151-300, 301-443, complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean: lines 1-105, complete.",
+    "candidate/statement-ledger.md: lines 1-239, 506-517, 570-582, 1206-1226, 1754-1836, 2191-2252 read; complete required Scope, Index and OccupationKernelRow sections. Partial remaining prose; declaration and label fields of all per-module tables scanned across lines 1-2252.",
+    "lean/claims.yaml: lines 788-845, 2393-2610, 4918-5114 read; complete required OccupationKernelRow entries. Partial remaining summaries; all declaration, kind and status fields scanned across lines 1-5114.",
+    "lean/coverage.yaml: lines 1-180, 181-365, 366-546, complete.",
+    "manuscript/notes/integrated_spatial_occupation.tex: lines 1-160, 161-320, 321-379, complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: lines 146-221 and 7480-7520 read in context; partial. Complete label search across lines 1-7752.",
+    "manuscript/notes/book-layout.tex: lines 1-70 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_actual_operator_driver.tex: lines 1-655 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_cameron_mean.tex: lines 1-457 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_compact_gaussian.tex: lines 1-617 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_compact_mean_family.tex: lines 1-512 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_constant_phase_young.tex: lines 1-553 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_covariance_foundation.tex: lines 1-428 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_exact_scaling.tex: lines 1-56 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_gaussian_tubes.tex: lines 1-503 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_intrinsic_constant.tex: lines 1-388 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_masked_moments.tex: lines 1-212 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_occupation_ceiling.tex: lines 1-308 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_point_transfer.tex: lines 1-323 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_positive_gram.tex: lines 1-218 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_radius_anchor.tex: lines 1-339 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_raw_block_lower.tex: lines 1-675 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_signed_moment_upper.tex: lines 1-236 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_signed_static.tex: lines 1-250 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_source_convergence.tex: lines 1-466 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_symplectic_phase.tex: lines 1-383 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_temporal_equilibrium.tex: lines 1-90 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_uniform_mean.tex: lines 1-388 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_uniform_products.tex: lines 1-530 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_unmasked_variational.tex: lines 1-343 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_wave_variance.tex: lines 1-531 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_white_evaluation.tex: lines 1-164 searched for labels; partial, prose not read.",
+    "manuscript/notes/integrated_young_upper_foundation.tex: lines 1-94 searched for labels; partial, prose not read.",
+    "manuscript/notes/literature_review.tex: lines 1-199 searched for labels; partial, prose not read.",
+    "manuscript/notes/figures/active-subset-optimization.tex: lines 1-32 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/common-noise.tex: lines 1-26 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/cross-colour-cube.tex: lines 1-39 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/dyadic-cover.tex: lines 1-32 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/endpoint-elimination.tex: lines 1-68 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/gaussian-enlargement.tex: lines 1-34 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/global-control-blocks.tex: lines 1-38 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/hermite-cutoff.tex: lines 1-29 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/interval-allocations.tex: lines 1-41 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/interval-end-metrics.tex: lines 1-42 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/light-cone.tex: lines 1-34 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/literature-interpretations.tex: lines 1-38 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/literature-results-map.tex: lines 1-110 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/nonseparable-controls.tex: lines 1-27 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/order-of-limits.tex: lines 1-23 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/positive-gram.tex: lines 1-30 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/proof-map.tex: lines 1-36 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/styles.tex: lines 1-14 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/two-chain-pairings.tex: lines 1-51 searched for labels; partial, other content not read.",
+    "manuscript/notes/figures/white-strip.tex: lines 1-34 searched for labels; partial, other content not read."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.kstarIntegrand: E:occupation-damped-kernel",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:88-89 defines, without hypotheses, 'exp (-(l + l ^ 2 / (2 * D)) * |u|) * l ^ (a - 1)'; integrated_spatial_occupation.tex:284-287 has exactly 'e^{-(lambda+lambda^2/(2D))|u|} lambda^{a-1}', under the standing 'D=q-2a>0' at lines 4-6. Ledger:1808 and claims.yaml:4919-4925 agree. Totalized division outside that range is disclosed and harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar: E:occupation-damped-kernel",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:94-95 defines 'if u = 0 then 0 else (Real.Gamma a)\u207b\u00b9 * \u222b l in Ioi 0, ...'; TeX:282-289 specifies the identical Gamma-normalized integral 'for u != 0' and 'K_star(0)=0'. Ledger:1809 and claims.yaml:4926-4932 match. Convergence under the manuscript's positive parameters is separately proved, not assumed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.row: E:occupation-kernel-row",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:98 defines '\u222b t in 0..1, Kstar a D (s - t)', with no definition-level hypotheses; TeX:296 has 'int_0^1 K_star(s-t) dt', with the maximum restricted to 's in [0,1]'. Ledger:1810 and claims.yaml:4933-4939 correctly describe the definition; the restriction enters the maximum theorem."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.Rstar: E:occupation-kernel-row",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:101 defines '2 * \u222b u in 0..(1 / 2), Kstar a D u'; TeX:297 defines 'R_star:=2 int_0^{1/2} K_star(u) du'. Neither definition independently asserts positivity or integrability. Ledger:1811 and claims.yaml:4940-4946 faithfully match the constant."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.Phi: L:occupation-kernel-row",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:246 defines '\u222b u in 0..t, Kstar a D u'; TeX:304-305 says 'Put Phi(t)=int_0^t K_star(u) du'. Ledger:1812 identifies this as a proof definition, and claims.yaml:4947-4953 agrees. Its extension to all real t is harmless oriented-integration notation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.kstarIntegrand_eq_psiKernel: no direct label",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:105-106 has unrestricted real 'a D u l' and the integrand identity with 'psiKernel a |u| (|u| / D) l'. TeX:284-287 gives the damped integrand under 'D>0', but does not name this auxiliary identity. Ledger:1813 and claims.yaml:4954-4960 accurately state the unrestricted identity and its Lean-only status."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_eq_Psi: E:occupation-damped-kernel",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:114 requires only 'hu : u \u2260 0' and concludes 'Kstar a D u = Psi a |u| (|u| / D)'. TeX:282-287 defines K_star off zero; notes_stratonovich_ham_second_moment.tex:7502-7506 defines Psi for 'r>0,v>=0'. Substitution r=|u|, v=|u|/D gives exactly the displayed kernel in the standing D>0 range. Ledger:1814 and claims.yaml:4961-4967 correctly disclose the stronger totalized identity; this is a definitional reformulation, not an attributed TeX proof step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.kstarIntegrand_integrable: E:occupation-damped-kernel",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:119-120 assumes '0 < a', '0 < D', 'u \u2260 0' and proves 'Integrable ... L0'. TeX:282-287 defines the integral off zero under the standing positive parameters; its proof at 302-304 bounds it by the Gamma integral. Ledger:1815 and claims.yaml:4968-4974 accurately state this separate convergence result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_neg: L:occupation-kernel-row",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:128 proves, without restrictions, 'Kstar a D (-u) = Kstar a D u'; TeX:292 says 'The kernel is even' under the standing assumptions. Ledger:1816 and claims.yaml:4975-4981 disclose the harmless generalization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_pos: L:occupation-kernel-row",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:132 assumes '0 < a', '0 < D', 'u \u2260 0' and proves '0 < Kstar a D u'; TeX:292 says 'positive off zero', with a=alpha0 in (0,1) and D>0 from its standing assumptions. Ledger:1817 and claims.yaml:4982-4988 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:137 assumes '0 < a', '0 < D' and proves '0 \u2264 Kstar a D u' for every u. TeX:289 and 292 supply zero at the origin and positivity elsewhere, but do not state this separate auxiliary. Ledger:1818 and claims.yaml:4989-4995 accurately identify it as unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_le_rpow: L:occupation-kernel-row",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:143-144 assumes '0 < a', '0 < D', 'u \u2260 0' and concludes 'Kstar a D u \u2264 |u| ^ (-a)'; TeX:293 states 'K_star(u) <= |u|^{-a} off zero' under stronger standing assumptions. Ledger:1819 and claims.yaml:4996-5002 match, including constant one."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.Psi_diag_strictAnti: no direct label",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:150-151 assumes '0 < a', '0 < D', '0 < r', 'r < r\u2032' and proves the strict diagonal Psi inequality. TeX:303 derives kernel monotonicity directly from its integrand, without this Psi lemma. Ledger:1820 and claims.yaml:5003-5009 correctly mark an auxiliary of the alternative Lean route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_strictAntiOn: L:occupation-kernel-row",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:178-179 assumes '0 < a', '0 < D' and proves 'StrictAntiOn ... (Ioi 0)'; TeX:292-293 says 'decreasing on (0,infinity)'. Ledger:1821 and claims.yaml:5010-5016 explicitly acknowledge strictness. Strict decrease implies the manuscript's weak decrease."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_measurable: no direct label",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:187 proves 'Measurable (Kstar a D)' for unrestricted real a,D. TeX:282-305 uses the positive-parameter integral and local integrability, but has no separate unrestricted measurability statement. Ledger:1822 and claims.yaml:5017-5023 faithfully describe this Lean auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_intervalIntegrable_zero_of_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:200-201 assumes '0 < a', 'a < 1', '0 < D', '0 \u2264 c' and proves interval integrability from 0 to c. TeX:304 states 'a<1 gives local integrability', not this separate interval lemma. Ledger:1823 and claims.yaml:5024-5030 correctly give its hypotheses and auxiliary status."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_intervalIntegrable: no direct label",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:215-216 assumes '0 < a', 'a < 1', '0 < D' and proves 'IntervalIntegrable ... b c' for all real b,c. TeX:292 and 304 claim local integrability under the standing assumptions. Ledger:1824 and claims.yaml:5031-5037 accurately describe the interval auxiliary without claiming a separate TeX proof step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.Kstar_locallyIntegrable: L:occupation-kernel-row",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:227-228 assumes '0 < a', 'a < 1', '0 < D' and concludes 'LocallyIntegrable (Kstar a D)'. TeX:292 says 'locally integrable', justified by 'a<1' at 304, with a>0,D>0 standing. Ledger:1825 and claims.yaml:5038-5044 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.row_eq_Phi: L:occupation-kernel-row",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:250-251 assumes '0 < a', 'a < 1', '0 < D' and proves 'row ... s = Phi ... s + Phi ... (1-s)' for every real s. TeX:306 says 'The row is Phi(s)+Phi(1-s)' in the unit-interval argument. Ledger:1826 and claims.yaml:5045-5051 disclose the harmless extension to all real s; oriented Phi makes it valid."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.Phi_sum_le_of_le_half: no direct label",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:264-266 assumes '0 < a', 'a < 1', '0 < D', '0 \u2264 s', 's \u2264 1/2' and proves the midpoint bound by shift comparison. TeX:304-306 instead uses concavity for s in [0,1]. Ledger:1827 and claims.yaml:5052-5058 correctly identify this restricted lemma as an alternative-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.Phi_sum_le: L:occupation-kernel-row",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:292-294 assumes '0 < a', 'a < 1', '0 < D', 's \u2208 Icc 0 1' and proves 'Phi(s)+Phi(1-s) \u2264 2*Phi(1/2)'. TeX:306 contains precisely that inequality in the same s range. Ledger:1828 and claims.yaml:5059-5065 match; the changed proof route is explicitly disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.occupation_kernel_row: L:occupation-kernel-row",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:306-315 assumes '0 < a', 'a < 1', '0 < D' and proves the advertised nine conjuncts. TeX:291-298 asserts the kernel properties and 'max_{s in [0,1]} ... = R_star ... in (0,infinity)' under stronger standing assumptions. 'IsGreatest (row ... '' Icc 0 1) (Rstar ...)' supplies both attainment and the upper bound, not merely a supremum bound. The proof at 324-330 realizes the midpoint. Ledger:1829 and claims.yaml:5066-5072 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.occupation_kernel_row_paper: L:occupation-kernel-row",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:342-353 assumes 'HomogCovariance d alpha a \u0393 \u03bc', '\u0393 \u2260 0', and 'D = (4-alpha)-2*a'. TeX:4-6 retains 'a nonzero original covariance from H:homog', sets 'a=alpha0', 'q=4-alpha', and 'D=q-2a>0'. HomogHypothesis.lean:64-80 matches H:homog at main TeX:169-185. Its threshold and a<1 imply D>0; a>0 is also available. No additional supplied hypothesis appears. Ledger:1830 and claims.yaml:5073-5079 match all conclusions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.pairMeasure: L:spatial-physical-pair",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:366 defines 'volume.prod \u0393' on Euclidean R^d times itself, without definition-level restrictions. TeX:13 defines 'nu(dx,dy)=dx Gamma(dy)' under H:homog. Ledger:1831 and claims.yaml:5080-5086 identify the same product measure."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.pairing: E:spatial-physical-pair",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:370-371 defines '\u222b\u207b p, f p.1 * h (p.1-p.2)' for 'f h : Rd d \u2192 \u211d\u22650\u221e'. TeX:14-19 defines the same extended nonnegative integral, initially with 'finite Borel representatives'. Ledger:1832 and claims.yaml:5087-5093 accurately disclose the broader function class. On the manuscript's representatives, the integrands and integrals agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.ae_pair_of_ae: L:spatial-physical-pair",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:376-378 assumes '[IsLocallyFiniteMeasure \u0393]' and an arbitrary 'P' holding Lebesgue-a.e.; it concludes 'P p.1 \u2227 P (p.1-p.2)' pairMeasure-a.e. TeX:25-31 uses local finiteness, null translates, and 'an arbitrary Lebesgue null set has a Borel null superset'. No measurability assumption on P is missing. Ledger:1833 and claims.yaml:5094-5100 faithfully map the null-set proof."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.spatial_physical_pair: L:spatial-physical-pair",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:409-418 assumes only '[IsLocallyFiniteMeasure \u0393]'; it proves sigma-finiteness, representative independence, 'AEMeasurable' products from 'AEMeasurable' factors, and convergence transfer for 'F : \u2115 \u2192 Rd d \u2192 \u211d'. TeX:13-21 and 25-31 gives the same assertions for nonnegative representatives and a.e. convergence. Its subsequent use at 200-203 is explicitly a common subsequence of real approximants. The N-indexed real formulation therefore covers the manuscript's convergence assertion, rather than imposing an additional analytic hypothesis. Ledger:1834 and claims.yaml:5101-5107 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationKernelRow.spatial_physical_pair_paper: L:spatial-physical-pair",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:434-444 assumes 'HomogCovariance d alpha a \u0393 \u03bc' and '\u0393 \u2260 0', and restates the four pairing conclusions. TeX:4-6 retains a nonzero H:homog covariance; its proof at 25 uses local finiteness. Lean obtains this from 'hH.\u0393_radon' at 445. Ledger:1835 and claims.yaml:5108-5114 correctly disclose that the remaining standing hypotheses are carried but unused."
+    },
+    {
+      "claim": "PARA-OccupationKernelRow",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:1754-1804 correctly describes the kernel, separate defining-integral convergence, nine conjuncts, IsGreatest maximum, strict decrease, standing assumptions, unused covariance hypotheses, alternative shift-comparison proof, ENNReal pairing, completion measurability, and N-indexed convergence. References agree with the read sources. The final blanket integrability sentence deserves the optional qualification in W2."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "FAIL",
+      "reason": "Ledger:231-234 contains all 28 declarations, but not under exactly their table labels: row and Rstar are indexed under L:occupation-kernel-row instead of their E:occupation-kernel-row label at 1810-1811; pairing is indexed under L:spatial-physical-pair instead of E:spatial-physical-pair at 1832. See W1. All eight labels cited in the section were found across the complete manuscript label search."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:216-226 and 292-302 correctly classify both results as same-assumptions/full and reference the matching paper wrappers. The kernel constant and attained maximum agree with TeX:295-298. The pairing note expressly restricts its displayed convergence conjunct to N-indexed real sequences, matching the manuscript's ordinary sequential a.e. convergence and its use at TeX:200-203. Moreover, ae_pair_of_ae transfers any a.e. predicate, so the underlying null-set result is not sequence-specific."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "Ledger-wide searches found no contradictory step-module reference to the new whole-result section. Scope:76-79 accurately names both wrappers. The 'Not in Lean' exclusion at 2244-2248 concerns the remaining spatial-control, four-linear and occupation-class results, not either newly formalized lemma. OccupationForm:506-516 describes unrelated unlabelled scalar inequalities."
+    },
+    {
+      "claim": "LEDGER-TOTALS",
+      "verdict": "PASS",
+      "reason": "A complete structural count of all per-module tables gives 724 declaration rows: 419 labelled and 305 unlabelled. Joining every row to claims.yaml gives exactly 611 theorem kinds and 113 definition kinds. All 724 claims declarations are distinct and have exactly one ledger row; there are no unmatched ledger declarations. These counts agree with ledger:20-25 and 237-238."
+    },
+    {
+      "claim": "SCOPE-PROSE",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:30-87 enumerates 26 whole-result modules and 23 results, split into 20 without supplied inputs and three with supplied analytic inputs; these counts agree with the table/claims inventory and coverage classifications, with the stated narrower scopes retained. Clock-copy and damped-norm wrappers now have no supplied spectral-homogeneity input, consistently with coverage.yaml:71-88 and 359-382. The Gaussian limitation at 92-95 does not exclude the finite-dimensional Gaussian transforms described there. The internal-status module list at 120-128 matches every module containing internal claims, including the six OccupationKernelRow internal helpers. W2 applies to the blanket integrability wording at 89-91."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "W1 \u2014 LEDGER-INDEX has three incorrect label memberships. candidate/statement-ledger.md:231 places 'OccupationKernelRow.row' and 'OccupationKernelRow.Rstar' under 'L:occupation-kernel-row', although their actual rows at 1810-1811 say 'E:occupation-kernel-row'. OccupationKernelRow.lean:98,101 defines '\u222b t in 0..1, Kstar ... (s-t)' and '2 * \u222b u in 0..(1/2), Kstar ... u'; TeX integrated_spatial_occupation.tex:295-297 labels precisely those expressions E:occupation-kernel-row. Likewise ledger:233 places 'OccupationKernelRow.pairing' under L:spatial-physical-pair, whereas row 1832 says E:spatial-physical-pair; Lean:370-371 defines the pairing integral displayed under that equation label at TeX:15-17. Fix the index by moving row and Rstar to an E:occupation-kernel-row entry and pairing to an E:spatial-physical-pair entry, retaining the other memberships and all 28 declarations."
+    ],
+    "minor": [
+      "W2 \u2014 Optional integrability wording clarification in PARA-OccupationKernelRow and Scope. Ledger:1803-1804 and 89-91 say 'Integrability is part of each integral conclusion.' OccupationKernelRow.lean:370-371 instead defines an unrestricted ENNReal lower integral, and its pairing theorems at 409-418 assert measurability and representative independence, not finite integrability. This correctly matches TeX integrated_spatial_occupation.tex:18, 'initially as an extended nonnegative integral'. The surrounding ledger text already explains this distinction, so it does not undermine correspondence. Optionally replace the blanket sentence with 'The real-valued kernel-integral conclusions include integrability; the physical pairing remains an extended nonnegative integral and need not be finite.'"
+    ]
+  },
+  "required_repairs": [
+    "Correct the three index memberships identified in W1: index row and Rstar under E:occupation-kernel-row, and pairing under E:spatial-physical-pair, consistently with their existing declaration rows."
+  ],
+  "limitations": [
+    "All complete-reading requirements A were satisfied; no required-source range remains unread.",
+    "Other manuscript files received complete label searches only. Their prose and mathematics were not independently reviewed; the main manuscript was read only in the contextual ranges reported above.",
+    "Outside the requested section, ledger and claims processing was restricted to global checks, relevant contextual passages, and structural declaration/label/kind/status counts. Earlier whole-result correspondence reviews were not repeated.",
+    "Compilation and absence of sorry were accepted as supplied. This review concerns correspondence, not independent proof checking, human verification, or novelty.",
+    "Historical byte identity with revisions absent from the frozen packet was not independently re-established."
+  ]
+}
