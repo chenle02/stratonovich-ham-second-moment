@@ -1,45 +1,118 @@
 \chapter*{Preface}
 \addcontentsline{toc}{chapter}{Preface}
 
-This volume studies the growth of the second moment for the Stratonovich
-hyperbolic Anderson model with temporally correlated Gaussian noise. The main
-question has two parts: what is the correct scale of growth, and what
-variational quantity determines the leading constant? Answering these questions
-requires us to keep track of the solution itself, its approximation by smooth
-noises, and the relation between deterministic wave propagation and Gaussian
-changes of measure.
+This book studies the second moment of the Stratonovich hyperbolic Anderson
+model driven by a Gaussian noise that is fractional in time. For this model,
+X.~Chen~\cite{chen:author2026:time-dependency} constructed the solution and
+showed that $\E u^2(t,x) \le e^{Ct^2}$ for large $t$. I ask two questions. What
+is the correct growth scale of $\log \E u^2(t,x)$, and what determines the
+constant in front of it? The scale is $t^\kappa$ with $\kappa =
+(4-\alpha-\alpha_0)/(3-\alpha)$, and the limit is given by an explicit
+variational formula. The first moment is better understood because its exact
+representation uses the time order of a single chain. The second moment is an
+integral over two chains whose points interleave, and most of this book is
+about what replaces that representation. The precise statements are in
+Chapter~\ref{S:book-setting}.
 
-The intended reader has a background in graduate probability and analysis.
+\section*{How this book was written}
+
+This book was drafted together with Amy, my AI research system. The name began
+as a typo. In an email to a coauthor in the summer of 2026, I meant to write
+``my AI Army'' but missed the letter r, so Army became Amy. My coauthor started
+calling the system Amy, and the name stayed. Amy is not a single language
+model. She is a research environment that I built: written workflows and
+standing rules (how a research round is run, how reviews are requested, what
+counts as evidence, when to stop), a research library (a bibliography, a
+collection of papers and their \LaTeX\ sources, and a wiki on stochastic
+partial differential equations), and interfaces through which a language model
+can use all of these. For this book,
+Amy was run with models from four families: Anthropic Claude, OpenAI GPT
+(through Codex), DeepSeek and Kimi.
+
+The division of labour was as follows. I chose the problem, set and revised
+the goals, decided which routes to pursue or abandon, chose the reviewers and
+decided which results to keep. The models drafted most of the mathematics, the
+proofs, the \LaTeX\ source and the bookkeeping. Each round that added a proof
+was sent to a reviewer from a different model family than its author, and every
+finding was answered in writing. Finite and algebraic steps were also checked
+in the proof assistant Lean; the analytic inputs enter Lean as explicitly named
+hypotheses and are not verified there. I take full responsibility for the
+content of this book. Amy is therefore not an author. She cannot take
+responsibility for the mathematics, which is the condition for authorship.
+Her contribution is nevertheless substantial and should be visible, so I
+acknowledge her here by name, and the AI-use statement records in detail which
+models did what.
+
+\section*{An experiment in doing mathematics}
+
+I also intend this book as an experiment in a new way of doing mathematics.
+The development, the writing and much of the checking were done with AI. The
+next step is human understanding, and I want it to happen in public. The
+complete project is on GitHub. Each result has a row in a verification
+ledger, and readers can check a proof, dispute it, repair it or explain it
+through a pull request. Every merged contribution is acknowledged by name,
+and a substantial mathematical contribution leads to coauthorship of the next
+version. Similar proposals for community work on AI-generated mathematics have
+appeared on the blog \emph{Proofs and Prompts}: open work groups that explain
+important preprints and report their progress in a Git
+repository,\footnote{A.~Van Werde, \emph{Collaborative work groups on
+exposition problems}, Proofs and Prompts, November~1, 2026,
+\url{https://proofsandprompts.com/2026/11/01/collaborative-work-groups-on-exposition-problems/}.}
+and a community-owned repository where AI proof reports can be read, corrected
+and reused.\footnote{M.~Lewin, \emph{Please STOP writing papers! (there is
+another way)}, Proofs and Prompts, November~2, 2026,
+\url{https://proofsandprompts.com/2026/11/02/please-stop-writing-papers-there-is-another-way/}.}
+
+The repository also keeps the complete history of the work, and this history
+is meant to be studied in its own right. Every commit is kept with its date
+and message, together with the frozen review packets, the raw reviewer
+reports with their model families and confidence levels, the written answers
+to every finding, the Lean records, and the routes that failed with the
+reasons they failed. A small number of removals (other authors' copyrighted
+texts, private infrastructure, collaborators' unpublished work and private
+planning notes) are listed with their reasons. I treat this record as the data
+of an experiment: it is kept complete so that others can check what was done,
+recover any earlier state, and study how an AI system for mathematics
+actually behaves, including where it failed. The same idea appears in several
+posts on \emph{Proofs and Prompts}. Kretschmer argues that the way AI was used
+is part of the research process and that a detailed disclosure is ``a worthy
+scientific unit''.\footnote{W.~Kretschmer, \emph{On AI disclosures}, Proofs
+and Prompts, October~27, 2026,
+\url{https://proofsandprompts.com/2026/10/27/on-ai-disclosures/}.} Kaipel
+proposes that every interaction with AI that influenced a manuscript be
+recorded in full and made available.\footnote{M.~Kaipel, \emph{Why and how to
+transparently disclose AI use in mathematics research}, Proofs and Prompts,
+October~28, 2026,
+\url{https://proofsandprompts.com/2026/10/28/why-and-how-to-transparently-disclose-ai-use-in-mathematics-research/}.}
+Lewin, in the post cited above, compares AI proofs with experimental data and
+points to the gravitational-wave observation, whose data were released with
+documentation and a DOI for others to analyze. Gonen Cohen discusses
+releasing the full prompting history so that results can be
+reproduced.\footnote{S.~Gonen Cohen,
+\emph{The question of reasoning traces}, Proofs and Prompts, August~11, 2026,
+\url{https://proofsandprompts.com/2026/08/11/the-question-of-reasoning-traces/}.}
+
+Because of this, the book keeps its claims separate. Proved results, imported
+statements, conditional consequences and open questions are distinguished
+throughout. A review by a language model is a check, not a proof, and Lean
+covers only the finite and algebraic steps. At the time of writing, the
+technical chapters have not yet been checked line by line by a human reader;
+the verification ledger records that status result by result.
+
+\section*{How to read this book}
+
+The reader should have a background in graduate probability and analysis.
 Familiarity with Gaussian processes, Fourier analysis, Sobolev spaces and
-bounded operators will be useful. The later chapters also use spectral theory
-and Young integration. These subjects enter for specific purposes: covariance
-estimates construct the random forcing, phase-space evolution retains both
-displacement and velocity, and variational estimates compare amplification
-with its Gaussian cost. Definitions and the required versions of imported
-results are given where they enter the argument.
-
-The volume can be read in several ways. The separate reading edition gives a
-short account of the model, main statements and proof strategy, with links to
-the detailed arguments here. Within this book, Chapter~\ref{S:book-setting}
-introduces the problem and states the main results. Readers who want the
-independent upper bound can proceed through Chapters~\ref{S:G0}
-and~\ref{S:book-independent-upper}. The sharp-constant argument occupies
-Chapters~\ref{S:book-gaussian-foundations}--\ref{S:book-constant}; the guide
-that follows explains its dependencies. The opening of each chapter identifies
-its purpose and the earlier material needed to enter it.
-
-The appendices have a separate role. They preserve explicit low-order
+bounded operators will be useful, and the later chapters also use spectral
+theory and Young integration. A separate reading edition gives a short account
+of the model, the main statements and the proof strategy, with links to the
+detailed arguments here. Readers who want only the upper bound at the correct
+scale can read Chapters~\ref{S:book-setting}--\ref{S:G0} and then
+Chapter~\ref{S:book-independent-upper}. The proof of the sharp constant
+occupies Chapters~\ref{S:book-gaussian-foundations}--\ref{S:book-constant}.
+The guide to the proof after these front pages maps the dependencies, and each
+chapter opens with its purpose and the earlier results it needs. The
+appendices are not prerequisites for the main theorems. They keep low-order
 calculations, shorter estimates under additional assumptions, covariance
-comparisons and an obstruction to a proposed clock representation. These
-calculations explain which features a successful argument must retain. They
-also offer concrete entry points for readers who prefer examples before the
-full construction. Their hypotheses and limitations remain visible, and their
-placement does not make them prerequisites for every main theorem.
-
-This is a working research manuscript. The exposition distinguishes written
-results, imported statements, conditional consequences and open questions.
-In particular, the future-work discussion separates higher-moment conjectures
-from the exploratory question of a scaling limit for logarithmic wavefields.
-The notation list, linked statements, navigation diagrams and subject index
-are intended to help readers move between these parts without losing the
-assumptions under which an argument is made.
+comparisons and an obstruction to a proposed clock representation, which show
+what a successful argument must retain.
