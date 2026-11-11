@@ -383,7 +383,13 @@
   **WAVE L5 CORRESPONDENCE GATE: CLOSED (Le, 2026-11-11)** at companion
   712c307 over manuscript 975feb3: Le accepted the six Codex reviews plus the
   confirmation review. Recorded in the companion README (a7f90b0) and the
-  board (docs/community 6064dec); #16, #3 and #24 told. Easley replay of the
+  board (docs/community 6064dec); #16, #3 and #24 told. Le's decision was also
+  relayed verbatim by #16 ("Approve the Lean wave L5 gate. Tell #22 to record
+  it."). Scope: AI statement-to-manuscript correspondence of the 248 wave-L5
+  ledger rows and the changed sections and coverage rows; NOT human
+  verification; the supplied input (GreenMass for N_0) and every analytic
+  input outside Lean are not verified; any later change to these rows or to
+  a cited label needs a successor review. Easley replay of the
   new modules: job 5690458 running (record follows).
   - Items (each verified independently by the integrator: build, refutations
     and audit exit 0 with no warnings, no sorryAx, forbidden-token grep
