@@ -225,7 +225,16 @@
      README/FORMALIZATION), check-controls; one Codex review per item,
      adjudicate every finding, repair, confirmation review; then STOP for
      Le's gate.
-  4. [ ] After L4: lean-pkg receipts of both tiers at one commit again
+  4. [x] DONE (2026-11-11): comparator extended to all 611 theorem claims
+     (comparator-l4 7c02a65 merged at companion 2f5ee14; CheckFidelity
+     611/611 and 762 copied constants Expr-equal, 0 problems; copied
+     definitions under their own prefix); comparator receipt (pass, all
+     611 judged) and lower-tier receipt (0 sorry, 724 claim axioms, peak
+     7.1 GiB) both at 2f5ee14, committed at 5ed4cf4; re-gated
+     verified-private 4073c64 -> 2f5ee14 with comparator evidence; claims
+     synced; `claims ledger`: READY, 513 required, 709 verified, 0 open,
+     15 out-of-scope. No claim rejected.
+     (Original item:) After L4: lean-pkg receipts of both tiers at one commit again
      (comparator regenerated for the new claims), regate, claims ledger.
   5. [ ] Easley `leanchecker --fresh` replay of the wave-L4 modules.
   6. [ ] Community board (docs/community) updated for L4; #16 and #3
