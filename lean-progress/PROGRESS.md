@@ -215,7 +215,11 @@
      `gate --receipt R --comparator C --regate`, `claims sync`, `claims
      ledger` (target: 0 open theorem claims); record; report any rejected
      claim as a statement-fidelity finding.
-  2. [ ] Easley `leanchecker --fresh` replay of the wave-L3 modules (job
+  2. [x] DONE (2026-11-11): wave-L3 replay at companion 687e631 (job
+     5688396, 4:35 h): 12/12 targets pass `lake env leanchecker --fresh`
+     (exit 0, empty output), default mode 45/45; evidence companion
+     31eb390, verification/leanchecker-easley-wave-l3/.
+     (Original item:) Easley `leanchecker --fresh` replay of the wave-L3 modules (job
      5688396 running): review, redact, commit evidence, record here.
   3. [x] DONE; gate closed by Le (2026-11-11): all four items formalized at
      FULL scope, no fallback used, nothing supplied except B24's narrowed
@@ -255,7 +259,16 @@
      15 out-of-scope. No claim rejected.
      (Original item:) After L4: lean-pkg receipts of both tiers at one commit again
      (comparator regenerated for the new claims), regate, claims ledger.
-  5. [ ] Easley `leanchecker --fresh` replay of the wave-L4 modules.
+  5. [x] DONE (2026-11-11): wave-L4 replay at companion 2f5ee14 (jobs
+     5688553 and 5688619): 17/17 targets pass, including 8 modules whose
+     sources or imports changed since their earlier replay. With the
+     837778a (35/35) and L3 replays, every one of the 51 library modules
+     and the umbrella has a passing --fresh replay at a commit where it and
+     all its imports are identical to 2f5ee14 (64 runs, all pass). Not
+     replayed: the comparator libraries ChallengeDefs, Challenge, Solution
+     (not imported by the umbrella). Evidence companion 31eb390,
+     verification/leanchecker-easley-wave-l4/; README 56d5002.
+     (Original item:) Easley `leanchecker --fresh` replay of the wave-L4 modules.
   6. [x] DONE (2026-11-11): board docs/community 25e63c5 (B14 now nothing
      supplied, B24 input narrowed, C19 and C21 partial, D4 slice) and
      81bfb25/6ed4ae4 (wave-L3 rows and paragraph record the closed L3
