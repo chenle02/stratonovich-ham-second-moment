@@ -11,8 +11,8 @@
 
 | ID | Sev | Disposition | Verified | Repair (companion branch `l6-repair`) |
 |---|---|---|---|---|
-| W1 | minor | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: SeriesType Gamma category wording | `829e466` |
-| W2 | minor | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: seriesType_nonneg pinpoint citation | `0490767` |
+| W1 | minor | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: SeriesType Gamma category wording. candidate/statement-ledger.md:2903-2906 describes the collection as facts the manuscript 'uses inline', and Index:428 categorizes gamma_mid_sq_le likewise, while ledger:2950 expressly s | `829e466` |
+| W2 | minor | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: seriesType_nonneg pinpoint citation. candidate/statement-ledger.md:3814 attributes 'since c_0 = 1, τ >= 0' to TeX line 7166; the quotation is actually at manuscript/notes/notes_stratonovich_ham_second_moment.tex:7164 | `0490767` |
 
 Every finding was verified before repair; none was declined. Lean files
 were changed in doc comments only (comment-stripped sources identical,

@@ -11,7 +11,7 @@
 
 | ID | Sev | Disposition | Verified | Repair (companion branch `l6-repair`) |
 |---|---|---|---|---|
-| W1 | fatal | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: total_of_fixed is misstated in candidate/statement-ledger | `020bae2` |
+| W1 | fatal | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: total_of_fixed is misstated in candidate/statement-ledger.md:4642 and lean/claims.yaml:7949: both omit the hypothesis c≥0 | `020bae2` |
 
 Every finding was verified before repair; none was declined. Lean files
 were changed in doc comments only (comment-stripped sources identical,

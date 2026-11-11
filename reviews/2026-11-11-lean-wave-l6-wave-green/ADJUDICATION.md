@@ -13,7 +13,7 @@
 |---|---|---|---|---|
 | W1 | minor | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: PARA-WaveGreen, exponential-integral explanation | `e4f7b27` |
 | W2 | minor | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: PARA-WaveGreen, used-field bookkeeping | `9c81373` |
-| W3 | minor | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: Stale supporting metadata | `89cea2f, 5373db5` |
+| W3 | minor | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: Stale supporting metadata. claims.yaml:6200 says 'the package defines no wave Green measure', and DampedNormsHomog.lean:48-52 says the WaveGreen discharge 'was not attempted' | `89cea2f, 5373db5` |
 
 Every finding was verified before repair; none was declined. Lean files
 were changed in doc comments only (comment-stripped sources identical,

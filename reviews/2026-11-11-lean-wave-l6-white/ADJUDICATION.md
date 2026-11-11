@@ -11,7 +11,7 @@
 
 | ID | Sev | Disposition | Verified | Repair (companion branch `l6-repair`) |
 |---|---|---|---|---|
-| W1 | minor | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: PARA-WhiteClockLaplace, stale description of comments: candidate/statement-ledger | `b95ba01` |
+| W1 | minor | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: PARA-WhiteClockLaplace, stale description of comments: candidate/statement-ledger.md:4703-4704 says 'Their Lean doc comments call them auxiliary to the route' | `b95ba01` |
 
 Every finding was verified before repair; none was declined. Lean files
 were changed in doc comments only (comment-stripped sources identical,

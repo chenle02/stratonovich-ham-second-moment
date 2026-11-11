@@ -11,8 +11,8 @@
 
 | ID | Sev | Disposition | Verified | Repair (companion branch `l6-repair`) |
 |---|---|---|---|---|
-| W1 | fatal | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: rayleighFloor_volume / PARA-SpatialStaticControls: candidate/statement-ledger | `7022b14` |
-| W2 | major | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: CROSS-REFERENCES: candidate/statement-ledger | `4574ba7` |
+| W1 | fatal | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: rayleighFloor_volume / PARA-SpatialStaticControls: candidate/statement-ledger.md:3442 says 'Γ = Lebesgue measure (white noise; in d = 1 this satisfies H:homog with α = 1)', and :3306-3307 repeats the white-noise identifi | `7022b14` |
+| W2 | major | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: CROSS-REFERENCES: candidate/statement-ledger.md:3210-3212 says 'Not formalized: the identification of spatialPair with OccupationKernelRow.pairing' | `4574ba7` |
 
 Every finding was verified before repair; none was declined. Lean files
 were changed in doc comments only (comment-stripped sources identical,

@@ -11,8 +11,8 @@
 
 | ID | Sev | Disposition | Verified | Repair (companion branch `l6-repair`) |
 |---|---|---|---|---|
-| W1 | minor | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: Localize the pairing-bridge disclaimer | `4574ba7` |
-| W2 | minor | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: Distinguish asserting from establishing nonemptiness | `42a2046` |
+| W1 | minor | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: Localize the pairing-bridge disclaimer. candidate/statement-ledger.md:2985-2987,3035,3210-3212 says the identification is 'not proved' or 'Not formalized' | `4574ba7` |
+| W2 | minor | **ACCEPTED** | verified against the Lean source and the TeX at `975feb3`: Distinguish asserting from establishing nonemptiness. candidate/statement-ledger.md:3188-3190,3236 and lean/claims.yaml:8919 say every R0 statement 'asserts nonemptiness and boundedness' | `42a2046` |
 
 Every finding was verified before repair; none was declined. Lean files
 were changed in doc comments only (comment-stripped sources identical,
