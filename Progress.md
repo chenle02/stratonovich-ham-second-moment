@@ -18958,3 +18958,11 @@ fits completely on page1 with its caption and opening prose. The rounded fade
 is unchanged. Inspected the report spread and reader page3. Both builds clean,
 215proofs preserved,95reader labels and264links valid,371index records checked.
 Book335pages; reader28. Evidence: private/audit/2026-11-11-guitar-first-page/.
+
+## 2026-11-11: acknowledge Chen's conjecture in the Abstract
+
+Added Le's approved opening: motivated by Xia Chen's moment conjecture, we
+determine the exact second-moment asymptotics through an intrinsic variational
+formula. Cited the public author version at(1.22). No equality with his specific
+energy formula is asserted. Mathematical body unchanged; clean335-page build,
+reader labels unchanged and371index records verified. Abstract visually checked.
