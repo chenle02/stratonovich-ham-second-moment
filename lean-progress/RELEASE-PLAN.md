@@ -117,3 +117,21 @@ Open decisions for Le (before the Nov 26 release-candidate approval):
 Still to do: rebuild from the commit after the Easley record; README
 Verification record rewritten for the root commit; fresh receipts; the
 independent release audit by a different model family.
+
+### Le's decisions on the five open items (2026-11-11)
+
+1. The 348 `notes-ref` hits: ACCEPT file-scoped allow lines (the manuscript
+   paths are intended), e.g. `allow: *.lean: ^notes/$`,
+   `allow: docs/statement-ledger.md: ^notes/$`,
+   `allow: provenance/manuscript-anchor.json: ^notes/$`, and
+   `allow: replay*.py: sec:05\.2f` for the 4 false `latex-label` warnings.
+2. The 46 existing receipts STAY in the root commit as development
+   evidence (provenance says they bind development commits of the private
+   -dev repository); fresh receipts are cut at the root commit.
+3. The root commit uses the GitHub noreply address as author and committer.
+4. `provenance/DEVELOPMENT.md` MAY name the private -dev repository and the
+   main repository (allow lines for exactly those names in that file).
+5. The internal wave names (`wave L2`-`L5`, `leanchecker-easley-wave-l*`)
+   are KEPT.
+These settle the release-candidate content; the hold on every public step
+("do not turn public yet") is unchanged.
