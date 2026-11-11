@@ -199,7 +199,25 @@
      claim as a statement-fidelity finding.
   2. [ ] Easley `leanchecker --fresh` replay of the wave-L3 modules (job
      5688396 running): review, redact, commit evidence, record here.
-  3. [ ] Wave L4 (four items L4-a..d below) in parallel worktrees:
+  3. [~] IN PROGRESS (2026-11-11 small hours): all four items formalized at
+     FULL scope, no fallback used, nothing supplied except B24's narrowed
+     input: L4-a P:masked-spectral-growth and the DISCHARGE of B14's input
+     (spectralHomogeneous_of_homog; ClockCopyHomog re-issues
+     clock_copy_obstruction_paper and damped_norms_finite_paper with only
+     the manuscript's hypotheses: B14 is now same-assumptions); L4-b
+     E:masked-time-schur and L:masked-temporal-modulation (constant
+     16/(1-a), different route) and masked_trig_products_bridged_paper
+     (B24 input narrowed from hmod to the norm identity hnorm); L4-c
+     P:frequency-row and C:frequency-time (all three alpha cases); L4-d
+     L:occupation-kernel-row and L:spatial-physical-pair. Code 515101a
+     (210 public declarations, standard axioms; check-controls 68/65/50
+     PASS); docs a635815..739c327, efec88b (724 claims; ledger 419/305;
+     coverage 40 rows: 20 same-assumptions, 16 inputs-supplied, 4
+     outside). Codex reviews at efec88b: FrequencyRow PASS_WITH_NOTES,
+     three FAIL; 0 fatal, 4 major, 4 minor, all documentation, all
+     accepted, repaired at 7afcd23; evidence Article d3e3620
+     (reviews/2026-11-11-lean-wave-l4-*). Confirmation review running.
+     (Original item:) Wave L4 (four items L4-a..d below) in parallel worktrees:
      formalize, verify independently, integrate (claims, ledger, coverage,
      README/FORMALIZATION), check-controls; one Codex review per item,
      adjudicate every finding, repair, confirmation review; then STOP for
