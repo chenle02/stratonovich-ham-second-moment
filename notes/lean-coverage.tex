@@ -6,9 +6,13 @@
 Some steps of this book were also checked in Lean, a proof assistant. They
 live in a separate Lean package, the Lean companion, to be released with the
 paper. This appendix lists, for each numbered result of the book that the
-companion covers, how much of it Lean checks. The list describes the
-companion at commit \lcCommit{} (\lcDate{}) and is generated from its
-coverage file, so a later version of the companion may cover more.
+companion covers, how much of it Lean checks.
+
+The Lean work is still in progress, and the list will become more complete
+with time. This appendix records what had been checked by machine at one
+fixed version of the companion: commit \lcCommit{}, made on \lcDate{} at
+\lcTime{}. All the checks reported below were run on that version, and the
+list is generated from its coverage file. A later version may cover more.
 
 Three points apply to every row. First, Lean checks the statements as they
 are written in Lean. Second, whether those statements say what the book says
@@ -19,6 +23,11 @@ Stratonovich integrals and the noise, the bounds imported from the
 literature, the passage from Laplace transforms to time, and the variational
 asymptotics. Where a row says that inputs are supplied, they enter Lean as
 named hypotheses.
+
+The last of these reviews checked again the rows that rest on
+Hypothesis~\ref{H:homog}, after a remark was added to that hypothesis. It
+found no problems. Its result was reviewed and accepted by the author; it is
+still AI-reviewed, not human-verified.
 
 \ifdefined\lcHaveReceipts
 The companion was built and checked with lean-pkg~\cite{chen:26:lean-pkg},
