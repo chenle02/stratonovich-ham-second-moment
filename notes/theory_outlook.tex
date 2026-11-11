@@ -1,0 +1,92 @@
+\section{Toward a general variational method for random evolution equations}
+\label{S:theory-outlook}
+
+The preceding section asks how to extend the results. Here we ask what the
+proof itself teaches us. Several long arguments preserve the same three
+objects: the displacement--velocity evolution, the covariance of the original
+noise, and a variational reward for deterministic amplification. Their
+connection suggests a possible method for other random evolution equations.
+These questions arose by asking Amy to revisit the calculations and failed
+approaches, then checking her proposed abstractions against the arguments.
+The present book supplies a detailed case study; a general theorem would
+require assumptions that can be verified independently in a second model.
+
+\Needspace{5\baselineskip}
+\paragraph{Compose the evolution and retain the joint Gaussian cost.}
+For a wave equation, displacement at the end of a time block does not determine
+the next block: velocity is also needed. Lemma~\ref{L:raw-block-restart}
+composes the full phase-space propagators and identifies them through limits
+of the same regularized noise. The Gaussian change of
+law in Proposition~\ref{P:raw-block-gaussian-law} acts on that common noise.
+It does not replace correlated blocks by independent copies.
+
+Even two Gaussian coordinates show why this distinction matters. If their
+covariance matrix is
+\[
+  C_\rho=\begin{pmatrix}1&\rho\\\rho&1\end{pmatrix},\qquad |\rho|<1,
+\]
+then a shift by $h=(q,q)$ has Cameron--Martin cost
+\[
+  \frac12 h^{\mathsf T}C_\rho^{-1}h=\frac{q^2}{1+\rho}.
+\]
+Indeed, $C_\rho h=(1+\rho)h$ and $|h|^2=2q^2$. The cost is $q^2$ for
+independent coordinates and tends to $q^2/2$ as $\rho\uparrow1$.
+Discarding correlation can therefore change the leading variational cost.
+The Gaussian shift formula is classical~\cite{janson:97:gaussian}*{Theorem~14.1};
+the work here is to connect it to the physical wave evolution and its terminal
+observable, with estimates uniform in the necessary limits.
+
+This suggests a precise task: find sufficient conditions under which a
+phase-space evolution, controlled by one Gaussian field, has matching
+long-time upper and lower moment bounds with the same deterministic reward
+and the same covariance cost. The conditions must include convergence from
+the original regularized equation, control of products on growing intervals,
+and passage from phase-space estimates to the chosen observable.
+Proposition~\ref{P:clock-copy-obstruction} rules out one unweighted
+constant-correlation Brownian-clock substitution; it does not rule out every
+probabilistic representation. The pathwise composition used here supplies
+neither a conditional-expectation identity nor a general martingale calculus.
+
+\paragraph{Separate the finite optimization from the wave estimates.}
+Propositions~\ref{P:gram-positive-optimizer}
+and~\ref{P:gram-entrywise-comparison} already apply in any real Hilbert space.
+For the square-root reward in~\eqref{E:finite-gram-score}, nonnegative Gram
+entries permit a positive conic maximizer and an entrywise comparison of
+optimized values. Singular matrices and inactive labels are included. This
+is the most explicit piece of the argument that can be stated without wave
+notation. Its physical application still needs the covariance and spectral
+estimates in Section~\ref{S:intrinsic-second-moment}.
+
+A useful test would replace the square-root reward by the growth rate of a
+damped equation. For the scalar equation $u''+2\eta u'=vu$, with $\eta>0$
+and $v\ge0$, substituting $u(t)=e^{rt}$ gives
+$r^2+2\eta r-v=0$. Its larger root is
+\[
+  r_\eta(v)=\sqrt{\eta^2+v}-\eta.
+\]
+Unlike $\sqrt v$, this reward has a finite derivative at zero and is not
+homogeneous in $v$ when $\eta$ is fixed. The active-set analysis and dilation
+argument therefore need to be checked again. A damped-wave transfer would
+also require new bounds for the physical propagator and noise approximation;
+the scalar calculation alone supplies none of these bounds.
+
+\paragraph{From an optimized value to the shape of large events.}
+The constant $C_2$ identifies an optimized reward, but does not show that the
+noise or solution, conditioned on large amplification, is close to an
+optimizing profile. Conjecture~\ref{Conj:positive-control-compactness} asks
+for compactness of one optimizing sequence after spatial translation.
+A further question is whether a suitable conditioned or moment-weighted law
+concentrates near such profiles. This needs a specified observable and
+scaling, tightness of the relevant laws, and upper bounds away from the
+optimizing set. Neither the moment limit nor the compactness conjecture alone
+provides these ingredients. This question concerns the shape of rare large
+events; its relation to typical fluctuations remains open, as discussed in
+Section~\ref{S:future-universality}.
+
+The first test of a broader method should be a second model for which one
+abstract statement removes a substantial part of the proof. A damped wave
+with correlated Gaussian forcing is a candidate. The Gaussian geometry and
+finite optimization should be separated from the estimates specific to its
+propagator. If those estimates require rebuilding nearly every argument,
+then the current work offers an instructive organization of a proof, while
+the proposed general method remains to be found.

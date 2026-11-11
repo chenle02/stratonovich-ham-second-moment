@@ -18902,3 +18902,33 @@ REDACTIONS.md, the release-design addendum and export-allowlist.json (exact
 hash). The real release filter leaves the three media files and
 notes/lean-coverage.tex byte-identical; front-door check PASS. Clean build,
 332 pages; book page 303 inspected.
+
+## 2026-11-11: Section 1.7 and the purpose of the P&P citations
+
+Le requested a second theory-retro, a separate Section1.7, and Preface motivation.
+The new section asks which pieces of the proof might become a general method:
+full phase-space composition with one joint Gaussian cost, finite positive-Gram
+optimization, and concentration near optimizing profiles. It gives the elementary
+two-coordinate Gaussian cost and damped scalar characteristic calculation, then
+specifies an unperformed damped-wave transfer test. No broader theorem is claimed.
+All existing215proof bodies remain unchanged. The chapter opening and subject
+index point to the new section; the reader's paired label map is refreshed.
+
+At Le's request, the final philosophical attributions were checked in the local
+<PRIVATE-PROJECT> repo, pinned in
+private/audit/2026-11-11-theory-outlook/p-and-p-source-pins.json. Madore's letter
+links open problems with understanding and new theories, and calls understanding
+a human activity; Lerario allows theories to originate in artificial systems
+and discusses organizing results through common principles. Neither is said to
+endorse this book. Madore joins the chronological post list asP4; identifiers
+and all links are updated consistently. The Preface explicitly describes this
+work as a practical response to selected P&P proposals and criticisms: public
+review, retained history and failed attempts, precise verification status, and
+AI-assisted reflection on arguments Amy helped produce. Le's emphasis that AI
+participates in seeking the explanation, not only producing a proof, is explicit.
+
+Both PDFs build with0errors,0undefined references/citations and0overfull boxes;
+95reader labels and264external links pass. Index371records match compiled pages.
+Book335pages, reader29. Preface changes, post list and Section1.7(pp.22--24)
+visually inspected. Exploratory and editorial scope only; no scientific gate
+or Lean correspondence receipt is transferred. Unrelated release/Lean WIP kept.
