@@ -18730,3 +18730,14 @@ six-repository queue after the source packet reached <HUB>. Exact tickets
 and supplied editions are recorded in
 private/audit/2026-11-10-attribution/queue-submissions.json. Status is queued,
 not ingested: Tropp2018, Sz.-Nagy1941, Calef--Hardin2009 and Lerner2013.
+
+## 2026-11-11: smaller wrapped guitar illustration
+
+At Le's request, reduced the shared guitar image from48%to42%of text width
+and placed it on the right in a wrapfigure beside the opening narrative in
+both editions. The caption retains the AI-art identification, linked
+SPDE-Visuals credit and CC0 dedication. Rounded corners and the fade remain.
+A page-space guard keeps the figure and caption inside the page; inspected
+the report's printed p.2 and reader p.3. Both builds are clean;215proofs
+unchanged,95mapped labels,264valid reader links and370index records checked.
+Current pair329+29pages. Evidence: private/audit/2026-11-11-guitar-wrap/.

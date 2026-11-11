@@ -1,12 +1,12 @@
-\begin{figure}
+\begin{wrapfigure}{r}{0.42\textwidth}
   \centering
   \begin{tikzpicture}
     \begin{scope}
       \clip[rounded corners=9pt]
-      (-0.24\textwidth,-0.24\textwidth) rectangle
-      (0.24\textwidth,0.24\textwidth);
+      (-0.5\linewidth,-0.5\linewidth) rectangle
+      (0.5\linewidth,0.5\linewidth);
       \node[inner sep=0pt,outer sep=0pt] (art) {
-      \includegraphics[width=0.48\textwidth]{media/guitar-sandstorm/illustration.png}};
+      \includegraphics[width=\linewidth]{media/guitar-sandstorm/illustration.png}};
       % Soft white rings blend the image into the paper without changing the art.
       \begin{scope}
         \clip (art.south west) rectangle (art.north east);
@@ -21,14 +21,11 @@
       (art.south west) rectangle (art.north east);
     \end{scope}
   \end{tikzpicture}
-  \caption[A guitar in a sandstorm]{AI-generated illustration inspired by
-    Walsh's guitar-in-a-sandstorm example. Artwork from Le Chen's
+  \caption[A guitar in a sandstorm]{Walsh's motivating picture, illustrated
+    with AI. Artwork from Le Chen's
     \href{https://github.com/SPDEngine/SPDE-Visuals}{SPDE-Visuals collection},
     shared under the
     \href{https://creativecommons.org/publicdomain/zero/1.0/}{CC0 public-domain dedication}.
-    This is an artistic illustration, not a
-    numerical simulation. Walsh's worked example uses an infinite string to
-    avoid boundary conditions. Companion videos and source information are
-    included in \path{media/guitar-sandstorm/}.}
+    An artistic illustration, not a numerical simulation.}
   \label{Fig:walsh-guitar}
-\end{figure}
+\end{wrapfigure}
