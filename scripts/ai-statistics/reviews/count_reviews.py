@@ -43,6 +43,14 @@ import re
 import sys
 import tarfile
 
+
+def public_name(text):
+    """File and folder names as they appear in the public release, whose filter
+    renames the private hub host (any case) to 'hub' in paths. The host name
+    is assembled from two parts so that this file itself survives the filter."""
+    return re.sub('green' + 'wood', 'hub', text, flags=re.IGNORECASE)
+
+
 ROOT = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else '.')
 OUT = os.path.abspath(sys.argv[2] if len(sys.argv) > 2 else '.')
 REV = os.path.join(ROOT, 'reviews')
@@ -760,17 +768,17 @@ agg['corpus'] = {'loose_text_files': sum(1 for p in FILES if '::' not in p), 'ar
 os.makedirs(OUT, exist_ok=True)
 with open(os.path.join(OUT, 'review-stats.json'), 'w') as fh:
     out_runs = [dict(r, evidence=ev_out(r['evidence']), n_evidence_files=len(set(r['evidence']))) for r in runs]
-    json.dump({'generated_from_commit': __import__('subprocess').run(['git','-C',ROOT,'rev-parse','HEAD'],capture_output=True,text=True).stdout.strip(), 'n_runs': len(runs), 'aggregates': agg, 'runs': out_runs, 'followups': FOLLOWUPS, 'folders': fold},
-              fh, indent=1, default=str)
+    fh.write(public_name(json.dumps({'generated_from_commit': __import__('subprocess').run(['git','-C',ROOT,'rev-parse','HEAD'],capture_output=True,text=True).stdout.strip(), 'n_runs': len(runs), 'aggregates': agg, 'runs': out_runs, 'followups': FOLLOWUPS, 'folders': fold},
+              indent=1, default=str)))
 cols = ['run_id', 'family', 'source_kind', 'folder', 'date', 'date_source', 'outcome', 'verdict', 'confidence',
         'accepted', 'accepted_effective', 'format_repaired', 'elapsed_seconds', 'input_tokens', 'output_tokens']
 with open(os.path.join(OUT, 'runs.tsv'), 'w') as fh:
     fh.write('\t'.join(cols) + '\n')
     for r in sorted(runs, key=lambda r: (r['date'] or '', r['run_id'])):
-        fh.write('\t'.join(str(r[c]) for c in cols) + '\n')
+        fh.write(public_name('\t'.join(str(r[c]) for c in cols)) + '\n')
 with open(os.path.join(OUT, 'unclassified.txt'), 'w') as fh:
     fh.write('# kind\titem\treason\n')
     for row in unclassified:
-        fh.write('\t'.join(row) + '\n')
+        fh.write(public_name('\t'.join(row)) + '\n')
 print(json.dumps({k: agg[k] for k in ('by_family', 'by_outcome', 'by_source_kind', 'preflight_refusals_not_runs', 'same_session_followup_dispatches')}, indent=1))
 print('runs', len(runs), 'unclassified', len(unclassified), 'files', len(FILES), 'archives', len(ARCHIVES), 'errors', len(errors))

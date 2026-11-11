@@ -10,6 +10,8 @@ It takes about 45 s and 4.3 GB of memory. Outputs: `review-stats.json`
 (aggregates, every run, follow-ups, folder categories; `generated_from_commit`
 names the commit counted), `runs.tsv` (one row per run) and `unclassified.txt`
 (folders and records not counted, with the reason).
+File and folder names in all three outputs are written as they appear in
+the public release, whose filter renames the private hub host to `hub`.
 
 Definitions (from the script; first written by a read-only subagent,
 2026-11-10): a run is one dispatch of one review task to one reviewer model,
