@@ -177,9 +177,31 @@
   0 sorry, 223 claim axioms); claims synced at f3e8275. Field reviews of
   lean-pkg proposal 0014 (declared controls) sent to lean-ops: final
   verdict ACCEPT with two fixes; acceptance is Le's.
-- **Observation for Le:** the Lean model of `H:homog` admits the zero
-  measures (Gamma = mu = 0), as the TeX clause list does; if non-degenerate
-  noise is intended, `H:homog` may need Gamma != 0 (manuscript decision).
+- **H:homog and zero covariance (asked #3 at Le's request; #3 answered
+  2026-11-10 at Article 66117c2):** the Lean model admits Gamma = mu = 0,
+  and so does the TeX, INTENTIONALLY. (a) Do not add Gamma != 0 to H:homog:
+  at zero covariance W = 0, u = 1, every moment is 1 and every rate 0;
+  E:kappa and E:driver-parameters depend only on the parameters.
+  (b) Zero is permitted by E:kappa, E:driver-parameters, P:mixed,
+  P:mild-construction, T:intro-upper/T:full-upper, P:Jensen (equality),
+  T:intro-second-moment/T:intrinsic-second-moment (C2 = 0 at zero).
+  Strict positivity statements carry their own local or section-level
+  Gamma != 0: L:compact-raw-profile, P:compact-original-common-trial,
+  L:variational-heat-envelope, P:variational-unmasked-rate,
+  P:variational-positive-scores, P:spatial-smooth-ratio,
+  P:spatial-energy-map, P:raw-block-original-lower, Appendix D's
+  P:static-minorant-lower, P:near-static-mean-gap,
+  P:moment-growth-logconvex, C:static-moment-constant-continuity;
+  C:white-relative-width needs c > 0; P:clock-copy-obstruction also states
+  Gamma != 0 itself. All formalized results (waves L1, L2) need no global
+  nondegeneracy. One wording issue: T:first's strict comparison E_* < E
+  must not be asserted at Gamma = 0. (c) No TeX or Lean change made. #3
+  recommends, for Le's manuscript decision: a short zero-covariance remark
+  right after H:homog, and an explicit nonzero qualification on T:first's
+  strict source comparison. Keep H:homog and the accepted Lean model; any
+  approved statement change gets the usual correspondence check. Lean
+  consequence: whole results whose statements need Gamma != 0 must carry
+  it as an explicit hypothesis (as P:clock-copy-obstruction does).
 - **Next:** Easley external kernel
   replay (leanchecker --fresh per module) of 837778a (Lean sources
   identical to 79afdde) in progress; human statement read (A1) still
