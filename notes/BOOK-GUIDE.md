@@ -2,8 +2,9 @@
 
 The long document is now a book-style technical companion. The short reader
 remains an article and the entry point. Both retain their existing filenames.
-The book has **326 pages, 11 chapters and four appendices**; the reader has
-**29 pages**. The full pair therefore contains 355 pages.
+The book has **329 pages, 11 chapters and five appendices** (four
+mathematical appendices and Appendix E, the AI work in numbers); the reader
+has **29 pages**. The full pair therefore contains 358 pages.
 
 The main proof runs continuously through the numbered chapters. The appendices
 retain finite-order calculations, direct bounds with additional hypotheses,
@@ -27,6 +28,7 @@ mathematical record was deleted to make the structure appear shorter.
 | B | Direct upper bounds and static interpolation | 245–263 |
 | C | Covariance comparisons in higher dimensions | 264–285 |
 | D | Static comparisons and the clock obstruction | 286–299 |
+| E | The AI work in numbers | 300–302 |
 
 The front matter has a Preface, Abstract, multilevel contents, illustrations,
 a six-page notation list and a guide to the argument. A five-page subject
@@ -81,7 +83,7 @@ classes. These changes preserve all 215 existing proof bodies.
 
 ## Entering a chapter directly
 
-All eleven chapters and four appendices now open with a motivating question,
+All eleven chapters and four mathematical appendices now open with a motivating question,
 linked prerequisites and a short outline. These openings explain what each
 chapter establishes and where its conclusions stop. They distinguish fixed
 spatial cutoffs from growing radii, signed upper controls from nonnegative
@@ -103,7 +105,7 @@ logarithmic wavefields and possible scaling limits. Rytov prior art and
 formal mechanisms are distinguished from conjectures and established results.
 
 The proof map now links its nodes to chapters, sections and results. A separate
-roadmap covers all eleven chapters and four appendices. Refresh the page table
+roadmap covers all eleven chapters and four mathematical appendices. Refresh the page table
 with `uv run --with pymupdf python scripts/refresh-book-guide.py`; the helper
 uses numbered chapter labels, so the front-matter guide is not an appendix.
 Refresh reader links with `python3 scripts/refresh-reader-labels.py`.
@@ -113,7 +115,7 @@ Refresh reader links with `python3 scripts/refresh-reader-labels.py`.
 The notation list has 85 recurring symbols in seven groups, with definition
 links and explicit local scope. The subject index has 167 headings including
 synonyms, built from 281 curated mappings and 360 page references at 230
-existing labels. All eleven chapters, four appendices and 27 included
+existing labels. All eleven chapters, four mathematical appendices and 27 included
 mathematical modules have subject coverage. The kernel label hook adds index
 entries without editing statements or proofs. See `index/README.md` for
 maintenance, generation and page-verification commands.

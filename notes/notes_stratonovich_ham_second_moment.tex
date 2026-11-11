@@ -36,6 +36,8 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,calc,positioning,decorations.pathreplacing}
 \input{notes/figures/styles}
+\input{notes/ai-statistics-data}
+\newcommand{\aiBookRef}[1]{\ref{#1}}
 \usepackage{url}
 \setlength{\emergencystretch}{3em}
 
@@ -147,13 +149,14 @@ needed.
   \ref{S:book-means}--\ref{S:book-growing-radius} & Spatial means and estimates uniform in the localization radius. \\
   \ref{S:book-point-upper}--\ref{S:book-constant} & The point upper bound and the variational constant. \\
   \midrule
-  Appendices & Other estimates, consistency checks and alternative approaches. \\
+  \ref{S:appendix-finite-order}--\ref{S:appendix-static-clock} & Other estimates, consistency checks and alternative approaches. \\
+  \ref{S:appendix-ai-statistics} & The AI work in numbers: who did the work, the reviews, and the approaches that did not work. \\
   \bottomrule
 \end{tabular}
 \end{center}
 
-Figure~\ref{Fig:chapter-roadmap} gives a map of all eleven chapters and four
-appendices. The reader links to the labelled statements in this companion. The numbering
+Figure~\ref{Fig:chapter-roadmap} gives a map of all eleven chapters and the
+four mathematical appendices. The reader links to the labelled statements in this companion. The numbering
 includes the chapter and section, so a statement can be located
 without searching the entire volume. The figures are explanatory schematics;
 their captions identify the precise results and the limits of the drawings.
@@ -7861,6 +7864,9 @@ analytic covariance, not its absolute-value bound, is being copied.
   method.
 \end{remark}
 
+\chapter{The AI work in numbers}\label{S:appendix-ai-statistics}
+
+\input{notes/ai-statistics}
 
 \backmatter
 \bibliography{All,extra}
