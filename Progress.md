@@ -18843,3 +18843,10 @@ No additional funder was inferred. The other session's Appendix E update was
 committed first (efe7fe5); its unfinished files were not included in this edit.
 Both PDFs build cleanly;215proof bodies preserved and264reader links valid.
 Acknowledgement inspected on printed p.iv. The pair remains329+29pages.
+
+## 2026-11-11: include Simons Foundation support
+
+At Le's request, added Simons Foundation Collaboration Grant for Mathematicians
+959981 to the Preface acknowledgement, following the grant identification in
+Le_Chen_Publications/46. Rebuilt report:0errors,0undefined references/citations,
+0overfull boxes;329pages unchanged. Reader and mathematics unchanged.
