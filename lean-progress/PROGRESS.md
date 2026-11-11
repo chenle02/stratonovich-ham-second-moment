@@ -199,7 +199,7 @@
      claim as a statement-fidelity finding.
   2. [ ] Easley `leanchecker --fresh` replay of the wave-L3 modules (job
      5688396 running): review, redact, commit evidence, record here.
-  3. [~] IN PROGRESS (2026-11-11 small hours): all four items formalized at
+  3. [x] DONE except Le's gate (2026-11-11 small hours): all four items formalized at
      FULL scope, no fallback used, nothing supplied except B24's narrowed
      input: L4-a P:masked-spectral-growth and the DISCHARGE of B14's input
      (spectralHomogeneous_of_homog; ClockCopyHomog re-issues
@@ -216,7 +216,10 @@
      outside). Codex reviews at efec88b: FrequencyRow PASS_WITH_NOTES,
      three FAIL; 0 fatal, 4 major, 4 minor, all documentation, all
      accepted, repaired at 7afcd23; evidence Article d3e3620
-     (reviews/2026-11-11-lean-wave-l4-*). Confirmation review running.
+     (reviews/2026-11-11-lean-wave-l4-*). Confirmation review at 7afcd23:
+     PASS_WITH_NOTES/high, accepted; C1 (duplicate index row) fixed at
+     ac6f767. **The wave L4 correspondence gate awaits Le** (proposed:
+     close at companion ac6f767 over manuscript 3920258).
      (Original item:) Wave L4 (four items L4-a..d below) in parallel worktrees:
      formalize, verify independently, integrate (claims, ledger, coverage,
      README/FORMALIZATION), check-controls; one Codex review per item,
