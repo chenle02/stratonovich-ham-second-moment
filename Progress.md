@@ -18675,3 +18675,23 @@ references. A separate book-guide helper removes the accidental front-matter
 rows and derives the15real chapter/appendix ranges from labels and the PDF.
 Both builds are clean and215proof bodies preserved. Index/notation/preface
 work remains a separate book-components unit.
+
+## 2026-11-10: preface, notation and subject index
+
+Completed Le's requested book components. Chapter1 is Introduction and the
+Overview is Abstract; labels remain stable. Added a one-page Preface, a
+six-page List of notation (85rows/7groups) and a five-page Subject index
+(281mappings,360records,230anchors,167headings including synonyms). Root
+inspected all notation/index pages and the preface/abstract/guide. Every
+index record matches its compiled label page; MakeIndex has0rejections and
+0warnings. Both builds are clean,215proofs preserved,95mapped labels and
+264reader links pass. Book320pages; reader29. Source data and reusable
+generator are in notes/index/; evidence in
+private/audit/2026-11-10-book-components/. Attribution audit remains separate.
+
+The earlier Wu source-edition request has completed gold at canonical
+wu:26:kpz with the supplied published PDF hash, and the dependent four-page
+universality wiki update is propagated with clean lint. Exact receipts were
+read on <HUB>. Adopted canonical Wu/Sung bibliography keys after a clean
+fast-forward of the local refdb mirror; temporary source entries were removed.
+No mathematical or whole-paper scientific gate is changed.

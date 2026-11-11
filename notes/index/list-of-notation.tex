@@ -1,0 +1,476 @@
+% Selected notation with explicit scope and definition links.
+% Generated from notes/index/notation.json.
+\chapter*{List of notation}
+\addcontentsline{toc}{chapter}{List of notation}
+\markboth{List of notation}{List of notation}
+\label{S:notation}
+
+The tables collect recurring notation and point to its definition or
+principal use. Symbols introduced for one calculation are defined there.
+Several letters are reused in different sections; the scope column records
+the main distinctions. These tables do not add assumptions to the model.
+
+\begingroup
+\small
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{12pt}
+
+\Needspace{8\baselineskip}
+\section*{Model, noise and scaling parameters}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.20\textwidth}
+  >{\raggedright\arraybackslash}p{0.49\textwidth}
+  >{\raggedright\arraybackslash}p{0.25\textwidth}@{}}
+  \toprule
+  Symbol & Meaning and scope & Definition or use \\
+  \midrule
+  \endfirsthead
+  \toprule
+  Symbol & Meaning and scope & Definition or use \\
+  \midrule
+  \endhead
+  \midrule
+  \multicolumn{3}{r}{\emph{Continued on the next page}} \\
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  $d$ &
+  Spatial dimension, $d \in \{1, 2, 3\}$. &
+  Hypothesis~\ref{H:homog} \\[5pt]
+  $\alpha$ &
+  Exponent in the spatial covariance homogeneity relation. &
+  Hypothesis~\ref{H:homog} \\[5pt]
+  $\alpha_0$, $a$ &
+  Temporal covariance exponent; $a = \alpha_0$ in the integrated arguments. &
+  \eqref{E:cov} \\[5pt]
+  $\Gamma$, $\gamma$ &
+  Spatial covariance measure; $\gamma$ denotes its density when one exists and
+  otherwise the corresponding distribution. &
+  Hypothesis~\ref{H:homog} \\[5pt]
+  $\mu$ &
+  Spectral measure, in the Fourier convention fixed by the hypothesis. &
+  Hypothesis~\ref{H:homog} \\[5pt]
+  $\dot W$, $W(f)$ &
+  Gaussian forcing and its isonormal realization on covariance test classes,
+  respectively. &
+  \eqref{E:cov}; Section~\ref{S:actual-operator-driver} \\[5pt]
+  $\mathbb{E}$ &
+  Expectation under the underlying probability measure. &
+  \eqref{E:intro-second-moment-limit} \\[5pt]
+  $\kappa$ &
+  Normalization exponent $(4 - \alpha - \alpha_0)/(3 - \alpha)$ in the moment
+  bounds and limit. &
+  \eqref{E:kappa} \\[5pt]
+  $\beta$, $\nu$ &
+  In the interval-field estimates, $\beta = 4 - \alpha - \alpha_0$ and $\nu = 3
+  - \alpha$. These letters have different local uses in path estimates. &
+  Section~\ref{S:interval-upper} \\[5pt]
+  $R_\alpha$ &
+  Spectral-mass constant in the independent upper bound. &
+  \eqref{E:intro-spectral-mass} \\[5pt]
+  $\Gamma_E$, $\operatorname{Beta}$ &
+  Euler Gamma and Beta functions; $\Gamma_E$ is distinct from the covariance
+  measure $\Gamma$. &
+  Lemma~\ref{L:equilibrium-gamma-beta} \\[5pt]
+  $\chi$ &
+  Degree of an auxiliary static covariance in the comparison arguments; it need
+  not equal $\alpha$. &
+  Section~\ref{S:three-endpoints} \\[5pt]
+\end{longtable}
+
+\Needspace{8\baselineskip}
+\section*{Solutions, kernels and pairing expansions}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.20\textwidth}
+  >{\raggedright\arraybackslash}p{0.49\textwidth}
+  >{\raggedright\arraybackslash}p{0.25\textwidth}@{}}
+  \toprule
+  Symbol & Meaning and scope & Definition or use \\
+  \midrule
+  \endfirsthead
+  \toprule
+  Symbol & Meaning and scope & Definition or use \\
+  \midrule
+  \endhead
+  \midrule
+  \multicolumn{3}{r}{\emph{Continued on the next page}} \\
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  $u(t,x)$ &
+  Canonical Stratonovich solution with displacement $1$ and velocity $0$ at time
+  zero. &
+  \eqref{E:HAM}; Proposition~\ref{P:mild-construction} \\[5pt]
+  $G_t$ &
+  Wave Green measure, with mass $t$ and support in the closed radius-$t$ ball. &
+  \eqref{E:expansion}; Lemma~\ref{L:constant-phase-free} \\[5pt]
+  $g_n$, $S_n(g_n)$ &
+  Ordered chain kernel and its multiple Stratonovich integral. &
+  \eqref{E:expansion} \\[5pt]
+  $X_n(t,x)$ &
+  The $n$th Stratonovich term $S_n(g_n)$; its iteration order is not an
+  orthogonal chaos order. &
+  Proposition~\ref{P:mixed} \\[5pt]
+  $I_1$, $I_2$, $\Pi_k$ &
+  The two ordered chains and the pair partitions of their $2k$ vertices. &
+  \eqref{E:mixed-diagram} \\[5pt]
+  $P_k$ &
+  Number of pair partitions, $(2k)!/(2^k k!)$. &
+  \eqref{E:B-envelope} \\[5pt]
+  $J_{m,n,D}$ &
+  Pairing integral for chain lengths $m,n$ and pair partition $D$. &
+  \eqref{E:mixed-diagram} \\[5pt]
+  $N_0$, $N_1$, $N_2$ &
+  Laplace-damped wave norms used in the construction estimates. &
+  \eqref{E:damped-norm-definitions} \\[5pt]
+  $B_K(t)$ &
+  Numerical majorant obtained by estimating each pairing separately; it is not
+  the actual second moment. &
+  \eqref{E:B-envelope} \\[5pt]
+\end{longtable}
+
+\Needspace{8\baselineskip}
+\section*{Covariance spaces and wave evolution}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.20\textwidth}
+  >{\raggedright\arraybackslash}p{0.49\textwidth}
+  >{\raggedright\arraybackslash}p{0.25\textwidth}@{}}
+  \toprule
+  Symbol & Meaning and scope & Definition or use \\
+  \midrule
+  \endfirsthead
+  \toprule
+  Symbol & Meaning and scope & Definition or use \\
+  \midrule
+  \endhead
+  \midrule
+  \multicolumn{3}{r}{\emph{Continued on the next page}} \\
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  $H_W$ &
+  Completion of smooth positive-time tests modulo covariance-null tests for the
+  original noise. &
+  Section~\ref{S:actual-operator-driver} \\[5pt]
+  $I$ &
+  The unit time interval; control tests have support in $(0,1)$, while compact
+  parameter families also use $[0,1]$. &
+  \eqref{E:variational-positive-class}; Section~\ref{S:compact-mean-family}
+  \\[5pt]
+  $H_t$, $H_{\mathrm{sp}}$ &
+  Temporal and spatial covariance Hilbert spaces. &
+  Section~\ref{S:actual-cameron-mean} \\[5pt]
+  $H_I$ &
+  Covariance space of tests supported in $I \times \mathbb{R}^d$, embedded in
+  $H_W$. &
+  Lemma~\ref{L:cameron-supported-tensor} \\[5pt]
+  $\Lambda$ &
+  Bessel multiplier $(1-\Delta)^{1/2}$. &
+  Section~\ref{S:wave-variance} \\[5pt]
+  $E_r$, $E$ &
+  Wave phase $E_r = H^r \times H^{r-1}$; the balanced phase is $E = H^{1/2}
+  \times H^{-1/2}$. &
+  Section~\ref{S:actual-operator-driver} \\[5pt]
+  $F$, $e_0$ &
+  Extended phase $F = E \oplus \mathbb{R}^2$ and the vector encoding constant
+  initial displacement. &
+  \eqref{E:constant-phase-space} \\[5pt]
+  $S_E(t)$, $S_F(t)$ &
+  Free wave groups on the respective phase spaces. &
+  Lemma~\ref{L:constant-phase-free} \\[5pt]
+  $M_R(W)$ &
+  Integrated Gaussian interaction operator path with spatial localization radius
+  $R$. &
+  Proposition~\ref{P:actual-operator-driver} \\[5pt]
+  $U_D$ &
+  Young evolution driven by an operator path $D$ in the interaction
+  representation. &
+  \eqref{E:constant-young-equation} \\[5pt]
+  $P_D(t,s)$ &
+  Physical wave evolution obtained by conjugating the interaction flow by the
+  free wave group. &
+  \eqref{E:constant-physical-flow}; Section~\ref{S:actual-symplectic-phase}
+  \\[5pt]
+  $B_E(V)$ &
+  Potential insertion $(u,v) \mapsto (0,Vu)$ on $E$. &
+  Lemma~\ref{L:uniform-E-lift} \\[5pt]
+  $\omega$, $J_E$ &
+  Symplectic form and its representing skew-adjoint operator on $E$. &
+  Lemma~\ref{L:symplectic-free} \\[5pt]
+\end{longtable}
+
+\Needspace{8\baselineskip}
+\section*{Regularization, spatial masks and time blocks}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.20\textwidth}
+  >{\raggedright\arraybackslash}p{0.49\textwidth}
+  >{\raggedright\arraybackslash}p{0.25\textwidth}@{}}
+  \toprule
+  Symbol & Meaning and scope & Definition or use \\
+  \midrule
+  \endfirsthead
+  \toprule
+  Symbol & Meaning and scope & Definition or use \\
+  \midrule
+  \endhead
+  \midrule
+  \multicolumn{3}{r}{\emph{Continued on the next page}} \\
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  $p_\epsilon$ &
+  Gaussian heat kernel used for spatial smoothing; its covariance normalization
+  is specified locally. &
+  Lemma~\ref{L:variational-heat-envelope} \\[5pt]
+  $\rho$, $Y_\rho$ &
+  A pair of noise-smoothing widths and the corresponding regularized source. In
+  damped phase estimates, $\rho$ instead denotes a positive damping parameter. &
+  Proposition~\ref{P:source-canonical-convergence};
+  Section~\ref{S:masked-moments} \\[5pt]
+  $R$, $\eta_R$, $m_R$ &
+  Spatial radius, cutoff profile and physical mask. In the uniform-radius
+  arguments, $\eta_R = \eta(\cdot/R)$ and $m_R = \eta_R^2$. &
+  Section~\ref{S:uniform-mean-regulation} \\[5pt]
+  $\delta$, $r_T$ &
+  Long-time normalization $\delta = T^{-\kappa}$ and shrinking spatial scale
+  $r_T = T\delta$. Smoothing parameters denoted by $\delta$ elsewhere are local.
+  &
+  Lemma~\ref{L:exact-canonical-scaling} \\[5pt]
+  $g_\delta$ &
+  Fast-noise amplitude $\delta^{(1 - a)/2}$. &
+  \eqref{E:raw-block-clocks} \\[5pt]
+  $B$, $N$, $s_m$, $\tau$ &
+  Fast block length, number of full blocks, slow block starts and final block
+  length. Here $\tau \in [0,B)$. &
+  \eqref{E:raw-block-clocks} \\[5pt]
+  $T_{\delta,m}$ &
+  Isometry used to pull each fast-time test back to the original Gaussian noise.
+  &
+  \eqref{E:raw-block-pullback} \\[5pt]
+  $X_m$, $H_m$ &
+  Random block operator input and its deterministic mean shift; these local
+  symbols differ from the Stratonovich terms $X_n(t,x)$. &
+  \eqref{E:raw-block-drivers} \\[5pt]
+  $R_\delta$ &
+  Growing spatial radius $\delta^{-1} + 2$ in the point upper bound; it differs
+  from the shrinking scale $r_T$. &
+  Section~\ref{S:original-point-transfer} \\[5pt]
+  $\gamma$, $\theta$, $\beta$ &
+  Auxiliary spatial and temporal regularity exponents. Here $\gamma$ is not the
+  covariance distribution and $\beta$ is not the coefficient-growth exponent. &
+  \eqref{E:driver-parameters} \\[5pt]
+\end{longtable}
+
+\Needspace{8\baselineskip}
+\section*{Controls, means and variational constants}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.20\textwidth}
+  >{\raggedright\arraybackslash}p{0.49\textwidth}
+  >{\raggedright\arraybackslash}p{0.25\textwidth}@{}}
+  \toprule
+  Symbol & Meaning and scope & Definition or use \\
+  \midrule
+  \endfirsthead
+  \toprule
+  Symbol & Meaning and scope & Definition or use \\
+  \midrule
+  \endhead
+  \midrule
+  \multicolumn{3}{r}{\emph{Continued on the next page}} \\
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  $\mathcal{C}_{\mathrm{pos}}$ &
+  Nonzero nonnegative smooth compact spacetime controls; separation into time
+  and space factors is not required. &
+  \eqref{E:intro-control-class} \\[5pt]
+  $h_{\Psi,s}$ &
+  Deterministic covariance mean induced by the control $\Psi$. &
+  \eqref{E:intro-control-mean} \\[5pt]
+  $v_\Psi$ &
+  Original Gaussian variance, equal to the squared covariance-space norm of the
+  control. &
+  \eqref{E:intro-control-variance}; \eqref{E:compact-raw-cost} \\[5pt]
+  $\lambda_{\Psi,s}$, $I_\Psi$ &
+  Positive Rayleigh growth rate and its integral over the unit interval, for
+  nonzero covariance. &
+  \eqref{E:variational-real-rayleigh} \\[5pt]
+  $\mathcal{R}_\Psi(s)$ &
+  Squared Rayleigh rate used in the introductory constant formula. &
+  \eqref{E:intro-control-rate} \\[5pt]
+  $S_c^{\mathrm{pos}}$ &
+  Supremum of $cI_\Psi - v_\Psi/2$. The coefficient-one value is auxiliary; the
+  coefficient-two value identifies $C_2$. &
+  Proposition~\ref{P:variational-positive-scores};
+  Theorem~\ref{T:intrinsic-second-moment} \\[5pt]
+  $C_2(\Gamma,a)$ &
+  Intrinsic second-moment constant, including its zero-covariance value. &
+  \eqref{E:intrinsic-second-moment-limit} \\[5pt]
+  $k$, $q$, $m$ &
+  In the spatial-energy and constant calculations, $k = 3 - \alpha$, $q = 4 -
+  \alpha$ and $m = q/k$. These are local conventions. &
+  Section~\ref{S:spatial-occupation-foundation};
+  \eqref{E:variational-score-homogeneity} \\[5pt]
+  $f_a$, $M_a$ &
+  Temporal equilibrium density and its total mass. $M_a$ is distinct from the
+  mean-growth rate $M(a)$. &
+  \eqref{E:temporal-equilibrium-density}; \eqref{E:temporal-equilibrium-mass}
+  \\[5pt]
+  $K(s,t)$, $K_0(a)$ &
+  Original temporal kernel $|s-t|^{-a}$ and its maximal row integral $2^a/(1 -
+  a)$. &
+  \eqref{E:positive-bochner-inclusion}; \eqref{E:white-moment-bounds} \\[5pt]
+  $B_\Gamma(f,h)$ &
+  Physical two-point covariance pairing. &
+  \eqref{E:spatial-physical-pair} \\[5pt]
+  $A_{\mathrm{sp}}(f)$, $b(f)$ &
+  Spatial covariance energy of $f^2$ and gradient energy $\|\nabla f\|_2^2$. &
+  Section~\ref{S:spatial-occupation-foundation} \\[5pt]
+  $R_{\mathrm{sp}}$ &
+  Best homogeneous spatial energy ratio, extended to real unit $H^1$ profiles. &
+  Proposition~\ref{P:spatial-four-linear};
+  Proposition~\ref{P:spatial-energy-map} \\[5pt]
+  $\mathcal{E}_{\mathrm{sp}}$ &
+  Supremum of $A_{\mathrm{sp}}(f) - b(f)/2$ over unit spatial profiles. &
+  \eqref{E:spatial-energy-map} \\[5pt]
+  $F_0(z)$ &
+  Scalar map from spatial energy to a variational bound; it is distinct from the
+  wave phase $F$. &
+  \eqref{E:spatial-static-energy-score} \\[5pt]
+  $\mathcal{O}$, $T(g)$ &
+  Admissible time-dependent unit spatial profiles and their integrated gradient
+  energy. &
+  Proposition~\ref{P:occupation-physical-class} \\[5pt]
+  $A(g)$, $C_{\rm occ}$ &
+  Original temporal occupation energy and its homogeneous ratio supremum. &
+  \eqref{E:raw-occupation-definitions} \\[5pt]
+  $\mathcal{E}_\zeta^{\mathcal{O}}$ &
+  Occupation energy with gradient penalty $\zeta T(g)$, using the original
+  temporal kernel. &
+  \eqref{E:raw-occupation-definitions} \\[5pt]
+  $K_\star$, $\mathcal{E}_\star^{\mathcal{O}}$ &
+  Auxiliary damped temporal kernel and its occupation energy; these differ from
+  the original-kernel quantities. &
+  \eqref{E:occupation-damped-kernel}; \eqref{E:occupation-own-energy} \\[5pt]
+  $C_t$, $T_R$, $\mathcal{T}_R$ &
+  Temporal, spatial and combined covariance-mean maps. Their domains and radius
+  dependence are specified at each construction. &
+  Propositions~\ref{P:cameron-temporal-map} and~\ref{P:cameron-full-mean};
+  Section~\ref{S:uniform-mean-regulation} \\[5pt]
+  $\mathcal{S}_R$, $V_{\rm up}$ &
+  Signed-control variational value at radius $R$ and its limsup along the
+  growing radii. &
+  \eqref{E:signed-raw-score} \\[5pt]
+\end{longtable}
+
+\Needspace{8\baselineskip}
+\section*{Gaussian geometry and finite optimization}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.20\textwidth}
+  >{\raggedright\arraybackslash}p{0.49\textwidth}
+  >{\raggedright\arraybackslash}p{0.25\textwidth}@{}}
+  \toprule
+  Symbol & Meaning and scope & Definition or use \\
+  \midrule
+  \endfirsthead
+  \toprule
+  Symbol & Meaning and scope & Definition or use \\
+  \midrule
+  \endhead
+  \midrule
+  \multicolumn{3}{r}{\emph{Continued on the next page}} \\
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  $\mathcal{K}(E)$ &
+  Compact operators on the Hilbert phase $E$. &
+  Proposition~\ref{P:actual-operator-driver} \\[5pt]
+  $\mathscr{B}_\delta$ &
+  Banach space of block paths with its weighted temporal norm. &
+  Proposition~\ref{P:tube-actual-law} \\[5pt]
+  $C$, $\mathcal{M}_\delta$ &
+  In Gaussian enlargement, $Ch = \mathbb{E}[XW(h)] =
+  \sqrt\delta\,\mathcal{M}_\delta h$. The letter $C$ elsewhere often denotes an
+  estimate constant. &
+  \eqref{E:tube-covariance-scale} \\[5pt]
+  $H_{\rm seen}$, $H_{\rm CM}$ &
+  Visible isonormal subspace and Cameron--Martin image of the covariance map. &
+  \eqref{E:tube-covariance-scale}; \eqref{E:tube-cameron-space} \\[5pt]
+  $E_0$ &
+  Closed support space of the Gaussian input; this is distinct from the wave
+  phase $E$. &
+  \eqref{E:tube-covariance-scale} \\[5pt]
+  $M_\delta$ &
+  Expected squared operator norm of the physical endpoint in the upper argument.
+  &
+  Section~\ref{S:original-signed-score-upper} \\[5pt]
+  $C_{ij}$ &
+  Finite Gram matrix entries $\langle k_i,k_j\rangle$, assumed nonnegative in
+  the positive-cone optimization. &
+  \eqref{E:finite-gram-score} \\[5pt]
+  $\mathfrak{F}_C$, $\mathscr{S}(C)$ &
+  Finite-control objective and its supremum. &
+  \eqref{E:finite-gram-score} \\[5pt]
+  $D_A^C$, $d_A^C$ &
+  Dual objective and its infimum for a selected subset $A$. The empty subset has
+  value zero. &
+  \eqref{E:finite-gram-dual} \\[5pt]
+  $w^A$, $\Phi_A$ &
+  Positive dual minimizer and the corresponding positive combination of Gram
+  vectors. &
+  \eqref{E:gram-dual-stationarity}; Proposition~\ref{P:gram-positive-optimizer}
+  \\[5pt]
+\end{longtable}
+
+\Needspace{8\baselineskip}
+\section*{Static comparisons and local outlook notation}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.20\textwidth}
+  >{\raggedright\arraybackslash}p{0.49\textwidth}
+  >{\raggedright\arraybackslash}p{0.25\textwidth}@{}}
+  \toprule
+  Symbol & Meaning and scope & Definition or use \\
+  \midrule
+  \endfirsthead
+  \toprule
+  Symbol & Meaning and scope & Definition or use \\
+  \midrule
+  \endhead
+  \midrule
+  \multicolumn{3}{r}{\emph{Continued on the next page}} \\
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  $L_0$, $\kappa_{\rm st}$ &
+  Static first-mean rate and static time exponent; the comparison retains the
+  source normalization stated there. &
+  \eqref{E:static-ratio-input} \\[5pt]
+  $M(a)$ &
+  Normalized first-mean limsup in the near-static comparison; it is not the
+  equilibrium mass $M_a$. &
+  Proposition~\ref{P:near-static-mean-gap} \\[5pt]
+  $\rho$ &
+  In the clock comparison only, correlation of the two auxiliary Brownian
+  clocks; neither a source width nor a damping parameter. &
+  \eqref{E:naive-clock-candidate} \\[5pt]
+  $p$ &
+  In future-work moment statements, a fixed moment order. Elsewhere it may be an
+  auxiliary integrability or Schatten index. &
+  Conjecture~\ref{Conj:intrinsic-even-moments}; Section~\ref{S:compact-gaussian}
+  \\[5pt]
+  $p$, $\nu$ &
+  Locally, $p = 2 - \alpha_0$ in the interval-field argument, while $\nu =
+  1/\theta$ in Young growth estimates. &
+  Section~\ref{S:interval-upper}; Lemma~\ref{L:young-upper-growth} \\[5pt]
+  $A$, $z_*$ &
+  In the conditional upper-tail discussion, $A = 2^{-m}C_2$ and $z_* = mA$. This
+  $A$ is not the occupation energy $A(g)$. &
+  Section~\ref{S:future-real-orders} \\[5pt]
+  $\mathcal{I}(z)$ &
+  Conditional upper-tail rate on the stated range of thresholds. &
+  \eqref{E:future-tail-rate} \\[5pt]
+  $H_a$ &
+  Covariance Hilbert space for the spatial-white optimizer conjecture. &
+  Section~\ref{S:future-optimizers} \\[5pt]
+  $J_a$, $\tau_y$ &
+  Control objective and spatial translation in the optimizer conjecture. &
+  Conjecture~\ref{Conj:positive-control-compactness} \\[5pt]
+  $h$, $b(t)$, $\varphi$ &
+  In the smooth logarithmic-wave outlook, $h = \log|u|$ and $h = b(t)+\varphi$.
+  This $b(t)$ is distinct from the spatial energy $b(f)$. &
+  \eqref{E:future-log-wave}; \eqref{E:future-centered-log-wave} \\[5pt]
+\end{longtable}
+\endgroup

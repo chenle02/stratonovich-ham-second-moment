@@ -29,6 +29,7 @@
 \usepackage{graphicx}
 \usepackage{mathrsfs}
 \usepackage{xcolor}
+\input{notes/index/setup}
 \usepackage[colorlinks=true]{hyperref}
 \usepackage{framed}
 \usepackage{tikz}
@@ -89,6 +90,8 @@ pdfauthor={Le Chen}, pdfsubject={Stratonovich moment asymptotics}}
 \clearpage
 \hypersetup{pageanchor=true}
 
+\input{notes/preface}
+
 \begin{abstract}
   We study the Stratonovich hyperbolic Anderson model with temporal covariance
   $|s-t|^{-\alpha_0}$ and homogeneous spatial covariance of order $\alpha$, for
@@ -113,6 +116,10 @@ pdfauthor={Le Chen}, pdfsubject={Stratonovich moment asymptotics}}
   context; their printed variational normalization is not corrected here or used
   to prescribe the constant.
 \end{abstract}
+
+\tableofcontents
+\listoffigures
+\input{notes/index/list-of-notation}
 
 \chapter*{A guide to the proof}
 \addcontentsline{toc}{chapter}{A guide to the proof}
@@ -150,11 +157,9 @@ includes the chapter and section, so a statement can be located
 without searching the entire volume. The figures are explanatory schematics;
 their captions identify the precise results and the limits of the drawings.
 
-\tableofcontents
-\listoffigures
 \mainmatter
 
-\chapter{Setting and strategy}\label{S:book-setting}
+\chapter{Introduction}\label{S:book-setting}
 
 \input{notes/chapter-guides/01-setting}
 
@@ -7847,4 +7852,5 @@ analytic covariance, not its absolute-value bound, is being copied.
 
 \backmatter
 \bibliography{All,extra}
+\printindex
 \end{document}

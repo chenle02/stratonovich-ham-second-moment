@@ -2,8 +2,8 @@
 
 The long document is now a book-style technical companion. The short reader
 remains an article and the entry point. Both retain their existing filenames.
-The book has **308 pages, 11 chapters and four appendices**; the reader has
-**29 pages**. The full pair therefore contains 337 pages.
+The book has **320 pages, 11 chapters and four appendices**; the reader has
+**29 pages**. The full pair therefore contains 349 pages.
 
 The main proof runs continuously through the numbered chapters. The appendices
 retain finite-order calculations, direct bounds with additional hypotheses,
@@ -12,7 +12,7 @@ mathematical record was deleted to make the structure appear shorter.
 
 | Chapter | Topic | Printed pages |
 |---|---|---|
-| 1 | Setting and strategy | 1–22 |
+| 1 | Introduction | 1–22 |
 | 2 | Construction and two-chain estimates | 23–45 |
 | 3 | An independent upper bound | 46–76 |
 | 4 | Covariance estimates and Gaussian approximation | 77–100 |
@@ -28,8 +28,9 @@ mathematical record was deleted to make the structure appear shorter.
 | C | Covariance comparisons in higher dimensions | 262–283 |
 | D | Static comparisons and the clock obstruction | 284–297 |
 
-The front matter has an overview, a guide to the argument, a multilevel contents
-page and a short list of illustrations. The cover has its own PDF page label;
+The front matter has a Preface, Abstract, multilevel contents, illustrations,
+a six-page notation list and a guide to the argument. A five-page subject
+index follows the bibliography. The cover has its own PDF page label;
 front matter uses Roman pages and the text uses Arabic pages. Chapter headings,
 running headers, restrained colors and Latin Modern fonts provide a consistent
 layout. Body size and text width remain 12pt and 6.2in. Chapters may start on any
@@ -106,3 +107,18 @@ roadmap covers all eleven chapters and four appendices. Refresh the page table
 with `uv run --with pymupdf python scripts/refresh-book-guide.py`; the helper
 uses numbered chapter labels, so the front-matter guide is not an appendix.
 Refresh reader links with `python3 scripts/refresh-reader-labels.py`.
+
+## Reference tools
+
+The notation list has 85 recurring symbols in seven groups, with definition
+links and explicit local scope. The subject index has 167 headings including
+synonyms, built from 281 curated mappings and 360 page references at 230
+existing labels. All eleven chapters, four appendices and 27 included
+mathematical modules have subject coverage. The kernel label hook adds index
+entries without editing statements or proofs. See `index/README.md` for
+maintenance, generation and page-verification commands.
+
+The opening chapter is titled Introduction. The Preface explains audience,
+prerequisites and reading routes; the Abstract retains the mathematical
+summary; the Guide to the proof explains dependencies. Acknowledgments and
+publication-specific matter are left for actual authorial/publication decisions.

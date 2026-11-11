@@ -1,0 +1,32 @@
+% Subject-index infrastructure for the technical companion only.
+% Load before hyperref; entries use the kernel label hook, not a label wrapper.
+\usepackage{longtable,array,needspace}
+\usepackage[noautomatic]{imakeidx}
+\makeindex[title=Subject index,intoc,columns=2,columnsep=24pt]
+\newcommand{\SubjectIndexLayout}{%
+\small
+\let\SubjectIndexOriginalItem\item
+\def\item{\needspace{3\baselineskip}\SubjectIndexOriginalItem}%
+}
+\indexsetup{othercode=\SubjectIndexLayout}
+
+\makeatletter
+\newcommand{\SubjectIndexAt}[2]{%
+\expandafter\gdef\csname ham@index@#1\endcsname{#2}%
+}
+\newcount\SubjectIndexAnchorCount
+\newcommand{\SubjectIndexLabel}[1]{%
+\@ifundefined{ham@index@#1}{}{%
+\@ifundefined{ham@index@done@#1}{%
+\global\advance\SubjectIndexAnchorCount by 1\relax
+\expandafter\gdef\csname ham@index@done@#1\endcsname{}%
+\csname ham@index@#1\endcsname
+}{}%
+}%
+}
+\makeatother
+\input{notes/index/anchors}
+\AddToHookWithArguments{label}[ham/subject-index]{\SubjectIndexLabel{#1}}
+\AtEndDocument{%
+\typeout{SUBJECT INDEX: \the\SubjectIndexAnchorCount\space curated anchors emitted.}%
+}

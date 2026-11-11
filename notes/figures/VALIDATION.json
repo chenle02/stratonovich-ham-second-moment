@@ -12,18 +12,18 @@
     "front_matter": "Roman",
     "main_text": "Arabic"
   },
-  "schema": "reader-figure-parity-validation/1",
-  "technical_pages": 308,
+  "schema": "book-components-validation/1",
+  "technical_pages": 320,
   "reader_pages": 29,
   "chapter_openings": 15,
   "technical_figures": 21,
   "reader_figures": 10,
-  "total_main_tex_inputs": 72,
-  "all_tex_files_including_reader": 75,
+  "total_main_tex_inputs": 76,
+  "all_tex_files_including_reader": 79,
   "tex_sources": [
     {
       "path": "notes/book-layout.tex",
-      "sha256": "0a7c9d5f494e6b829fc1299f1cc814ad7d0e0a4e427b31b3415b1400b60a232c"
+      "sha256": "df78bfbf51c83600a8c67bb33ff9c5f52f2e402c7ef65ccbf546d149ae19d577"
     },
     {
       "path": "notes/chapter-guides/01-setting.tex",
@@ -187,7 +187,7 @@
     },
     {
       "path": "notes/future_universality.tex",
-      "sha256": "dd4d190712d09bab8ecea836994acf4e94c9b7ba2a14b7898c74e9f8ccff3629"
+      "sha256": "fb5dcd4646ac0fe94d757dcb753e55df944c1e482909d31745aa914368b10f98"
     },
     {
       "path": "notes/future_work.tex",
@@ -200,6 +200,18 @@
     {
       "path": "notes/history_wave_equations_reader.tex",
       "sha256": "c0fa91bd79e6110e287b1cb68d07ba0ef7fdb606170de6c0b2a6b41afaa8ee88"
+    },
+    {
+      "path": "notes/index/anchors.tex",
+      "sha256": "ccb81267e282169a8ad51b3d1aa5b2b9af13febd6c0622906eabe9d4baf9ae71"
+    },
+    {
+      "path": "notes/index/list-of-notation.tex",
+      "sha256": "879e1933a2ba8feb75fe9c5980406f702b717a2d974a892388995cad4c5ccf8d"
+    },
+    {
+      "path": "notes/index/setup.tex",
+      "sha256": "e35c7dc9bf809df8afc3bc869a895d1e546fcd6ff4022554af873f7191c3a3ba"
     },
     {
       "path": "notes/integrated_actual_operator_driver.tex",
@@ -315,21 +327,25 @@
     },
     {
       "path": "notes/notes_stratonovich_ham_second_moment.tex",
-      "sha256": "1b41af552d44ecc0f81eacfd74a7da375a3da2d56e6d8989befc0fa37e71a48e"
+      "sha256": "0c440d6ed9b30b8cd5bd5ff270df1e31b75d77c7e146e0e5a543e7de8d89d94f"
     },
     {
       "path": "notes/notes_stratonovich_ham_second_moment_reader.tex",
       "sha256": "418690e7adaa9a5a9a0176db46d7b4e30f7c94e35de2fc3d445b45dfc2c225c8"
+    },
+    {
+      "path": "notes/preface.tex",
+      "sha256": "3875a946eef6b4d812b177235ab483bd5246cae70a31d744922a0e093849b812"
     }
   ],
-  "main_tex_sha256": "1b41af552d44ecc0f81eacfd74a7da375a3da2d56e6d8989befc0fa37e71a48e",
-  "main_pdf_sha256": "b237e9cca021f033dda47f3725ae3b1e518910e7aa87d3afdda879aa30fff74c",
+  "main_tex_sha256": "0c440d6ed9b30b8cd5bd5ff270df1e31b75d77c7e146e0e5a543e7de8d89d94f",
+  "main_pdf_sha256": "9851a0bf35c6fd2e65b12efb99fc6d57a2644ce09fab06852cb9e610da050873",
   "reader_tex_sha256": "418690e7adaa9a5a9a0176db46d7b4e30f7c94e35de2fc3d445b45dfc2c225c8",
   "reader_pdf_sha256": "1fe1a0641ca2c89042ea2949caf5668babfd90448429d5b1edf88f10ba729398",
   "bibliographies": [
     {
       "path": "notes/notes_stratonovich_ham_second_moment.bbl",
-      "sha256": "5b3b42899f1a48f94da990d1c1fbba4bfef02519da0ed1dac3d68d8a655df835"
+      "sha256": "6c9b2872beec42ff47a7a6bfabf5b3c27536b6588ab6a56686e5f902a83dc252"
     },
     {
       "path": "notes/notes_stratonovich_ham_second_moment_reader.bbl",
@@ -352,5 +368,52 @@
   "editorial_scope_only": true,
   "completed_local_date": "2026-11-10",
   "prior_validation": "private/audit/2026-11-10-reader-figure-parity/prior-validation.json",
-  "current_validation_scope": "Linked proof-map nodes and complete chapter/appendix roadmap; source proofs preserved and all reader destinations checked."
+  "current_validation_scope": "Preface, Abstract/Introduction titles, notation list and linked subject index; canonical published bibliography keys, preserved proofs, paired builds and reference checks.",
+  "subject_index": {
+    "entry_mappings": 281,
+    "index_records": 360,
+    "anchors": 230,
+    "top_level_headings": 167,
+    "pages": 5
+  },
+  "notation_list": {
+    "groups": 7,
+    "rows": 85,
+    "pages": 6
+  },
+  "preface_pages": 1,
+  "book_component_sources": [
+    {
+      "path": "notes/index/README.md",
+      "sha256": "6fddc9865f77ec382a2c424c495750d44de0bda715731d2fbcd7690751f1e6b6"
+    },
+    {
+      "path": "notes/index/anchors.tex",
+      "sha256": "ccb81267e282169a8ad51b3d1aa5b2b9af13febd6c0622906eabe9d4baf9ae71"
+    },
+    {
+      "path": "notes/index/entries.json",
+      "sha256": "669776431bc8105536d55219077fc3c3dd72a7c13cf799d0210b1ee5c142c13d"
+    },
+    {
+      "path": "notes/index/generate.py",
+      "sha256": "ddd5896d8fa45c293a6d798e1afb0ec0bdbc2241ebf3c55192012ebedea06fbb"
+    },
+    {
+      "path": "notes/index/list-of-notation.tex",
+      "sha256": "879e1933a2ba8feb75fe9c5980406f702b717a2d974a892388995cad4c5ccf8d"
+    },
+    {
+      "path": "notes/index/notation-locations.json",
+      "sha256": "730d1d5433b6dc728f243b86416c89a29b8ebeea5671dd727a93e1ba8d047978"
+    },
+    {
+      "path": "notes/index/notation.json",
+      "sha256": "bf4d3becebd91c081766bb5ba02bbcb39131bce35cf5c8f3b4d7bdb49b185253"
+    },
+    {
+      "path": "notes/index/setup.tex",
+      "sha256": "e35c7dc9bf809df8afc3bc869a895d1e546fcd6ff4022554af873f7191c3a3ba"
+    }
+  ]
 }
