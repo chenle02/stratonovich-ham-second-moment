@@ -1,7 +1,7 @@
 # Illustrations for the reader and technical companion
 
 The same TikZ sources are used by both documents. The technical companion
-contains all twelve figures; the reader uses seven central illustrations.
+contains 21 figures; the reader uses ten selected illustrations.
 Captions state the mathematical meaning and the limits of each schematic.
 They do not replace the proofs.
 
@@ -75,3 +75,11 @@ The positive-Gram diagram separates the singular-case heading from the vector
 label. All ten reader figures and the affected report figures were inspected.
 The guitar caption's source indentation now survives the repaired formatter.
 This resolves the previously pending caption-style correction.
+
+## Linked proof destinations and chapter roadmap
+
+The shared proof map now gives chapter/section/result destinations inside
+its nodes. The report also includes `chapter-roadmap.tex`, covering all eleven
+chapters and four appendices, with auxiliary comparisons shown separately.
+The node links are local in the report and external in the reading edition.
+Both report figures and the reader proof map were inspected after integration.

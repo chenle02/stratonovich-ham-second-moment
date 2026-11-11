@@ -1,36 +1,65 @@
 \begin{figure}
   \centering
-  \begin{tikzpicture}[x=1cm,y=1cm]
-    \node[ham/box,text width=4.2cm] (construction) at (3,0)
-    {One solution\\one fixed coupling\\retaining the given $W$};
-    \node[ham/box,text width=4cm] (upper) at (0,-2.2)
-    {Independent upper bound\\on moment growth};
-    \node[ham/box,text width=4cm] (lower) at (6,-2.2)
-    {Point lower bound\\for each fixed control};
-    \node[ham/box,text width=4.2cm] (finite) at (3,-4.4)
-    {Finite supremum\\over positive controls};
-    \node[ham/box,text width=4cm] (signed) at (0,-6.6)
-    {Operator estimates\\for the point upper bound};
-    \node[ham/box,text width=4cm] (comparison) at (6,-6.6)
-    {Positive Gram comparison\\then remove the mask};
-    \node[ham/box,text width=4.2cm] (limit) at (3,-8.8)
-    {Matching values\\$C_2(\Gamma,a)=S_2^{\mathrm{pos}}$};
+  \begin{tikzpicture}[x=1cm,y=1cm,
+    destination/.style={ham/box,text width=5.65cm,minimum height=1.55cm},
+    result/.style={destination,draw=hamteal,fill=hamteal!6}]
+    \node[destination] (construction) at (0,0)
+    {\textbf{The canonical solution}\\
+    \GuideRef{Chapter}{S:G0}\\
+    \GuideRef{Proposition}{P:mild-construction}};
+    \node[destination] (upper) at (-3.35,-2.4)
+    {\textbf{Independent upper bound}\\
+    \GuideRef{Chapter}{S:book-independent-upper}\\
+    \GuideRef{Theorem}{T:full-upper}};
+    \node[destination] (phase) at (3.35,-2.4)
+    {\textbf{Noise and full wave phase}\\
+    \GuideRef{Ch.}{S:book-gaussian-foundations},
+    \GuideRef{Ch.}{S:book-operator-paths},
+    \GuideRef{Ch.}{S:book-wave-evolution}\\
+    \GuideRef{Section}{S:constant-phase-young}};
+    \node[result] (finite) at (-3.35,-5)
+    {\textbf{Finite variational value}\\
+    \GuideRef{Section}{S:unmasked-variational}\\
+    \GuideRef{Proposition}{P:variational-positive-scores}};
+    \node[destination] (lower) at (3.35,-5)
+    {\textbf{Lower bound for each control}\\
+    \GuideRef{Chapter}{S:book-lower}\\
+    \GuideRef{Proposition}{P:raw-block-original-lower}};
+    \node[destination] (signed) at (0,-7.6)
+    {\textbf{The signed-control upper bound}\\
+    \GuideRef{Ch.}{S:book-means},
+    \GuideRef{Ch.}{S:book-growing-radius},
+    \GuideRef{Ch.}{S:book-point-upper}\\
+    \GuideRef{Proposition}{P:original-signed-point-upper}};
+    \node[destination] (comparison) at (0,-10.1)
+    {\textbf{Positive Gram comparison}\\
+    \textbf{and cutoff removal}\\
+    \GuideRef{Section}{S:finite-positive-gram}\\
+    \GuideRef{Proposition}{P:positive-score-cutoff}};
+    \node[result] (limit) at (0,-12.6)
+    {\textbf{Matching upper and lower values}\\
+    $C_2(\Gamma,\alpha_0)=S_2^{\mathrm{pos}}$\\
+    \GuideRef{Chapter}{S:book-constant};
+    \GuideRef{Theorem}{T:intrinsic-second-moment}};
     \draw[ham/arrow] (construction)--(upper);
-    \draw[ham/arrow] (construction)--(lower);
+    \draw[ham/arrow] (construction)--(phase);
     \draw[ham/arrow] (upper)--(finite);
+    \draw[ham/arrow] (phase)--(lower);
     \draw[ham/arrow] (lower)--(finite);
     \draw[ham/arrow] (finite)--(signed);
     \draw[ham/arrow] (signed)--(comparison);
     \draw[ham/arrow] (comparison)--(limit);
-    \draw[ham/arrow] (lower.east)--++(1.05,0) |- (limit.east);
+    \draw[ham/arrow] (lower.east)--++(.75,0) |- (limit.east);
   \end{tikzpicture}
-  \caption[Proof dependencies]{The main dependencies. The independent upper
-    bound and the fixed-control lower bound give finiteness before the sharp
-    constant is identified. Further operator estimates and the positive Gram
-    comparison then bound the same point moment from above. Arrows indicate
-    dependencies, not a claim that a box alone proves the next one. See
-    \ProofRef{Theorem}{T:full-upper},
-    \ProofRef{Proposition}{P:variational-positive-scores}, and
-    \ProofRef{Theorem}{T:intrinsic-second-moment}.}
+  \caption[Proof dependencies and destinations]{The principal proof
+    dependencies, with links to chapters and results in the technical companion.
+    The independent
+    upper bound and the fixed-control lower bound first give a finite
+    variational lower value. Further operator and Gaussian estimates give a
+    signed-control upper bound for the same point moment. Positive Gram
+    comparison and cutoff removal identify the two values. Arrows show
+    principal uses; each box also has the hypotheses and earlier inputs stated
+    at its linked destination. They do not assert independence of successive
+    time blocks. The zero-covariance case is included in the final theorem.}
   \label{Fig:proof-map}
 \end{figure}

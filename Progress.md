@@ -18662,3 +18662,16 @@ private/audit/2026-11-10-zero-covariance/AUDIT.md; reply delivered to Agent22
 as b2e2cb4d40b4. Adding a front zero-case remark is left to Le's manuscript
 decision. Nontrivial covariance is distinct from strictly positive-definite
 Gram matrices; existing null-space conventions remain.
+
+## 2026-11-10: navigable proof and chapter diagrams
+
+At Le's request, enriched Figure1.2 with compact linked theorem/section/chapter
+destinations. Added a separate roadmap for all11chapters and4appendices, with
+main inputs and auxiliary comparisons visually distinguished. A subagent
+checked the dependency map and standalone layout; root inspected the two
+integrated book figures and the reader map. New GuideRef links work locally
+and in the paired reader. A recursive label-refresh helper captures those
+references. A separate book-guide helper removes the accidental front-matter
+rows and derives the15real chapter/appendix ranges from labels and the PDF.
+Both builds are clean and215proof bodies preserved. Index/notation/preface
+work remains a separate book-components unit.

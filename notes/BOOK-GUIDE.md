@@ -2,8 +2,8 @@
 
 The long document is now a book-style technical companion. The short reader
 remains an article and the entry point. Both retain their existing filenames.
-The book has **307 pages, 11 chapters and four appendices**; the reader has
-**28 pages**. The full pair therefore contains 335 pages.
+The book has **308 pages, 11 chapters and four appendices**; the reader has
+**29 pages**. The full pair therefore contains 337 pages.
 
 The main proof runs continuously through the numbered chapters. The appendices
 retain finite-order calculations, direct bounds with additional hypotheses,
@@ -12,25 +12,21 @@ mathematical record was deleted to make the structure appear shorter.
 
 | Chapter | Topic | Printed pages |
 |---|---|---|
-| A | guide to the proof | ii–vii |
-| A | guide to the proof | ii–vii |
-| A | guide to the proof | ii–vii |
-| A | guide to the proof | ii–viii |
-| 1 | Setting and strategy | 1–21 |
-| 2 | Construction and two-chain estimates | 22–44 |
-| 3 | An independent upper bound | 45–75 |
-| 4 | Covariance estimates and Gaussian approximation | 76–99 |
-| 5 | The original noise and operator paths | 100–118 |
-| 6 | Fixed masks and wave evolution | 119–138 |
-| 7 | Scaling and the point lower bound | 139–155 |
-| 8 | Spatial controls and Gaussian means | 156–171 |
-| 9 | Bounds as the spatial radius grows | 172–186 |
-| 10 | Gaussian estimates for the point upper bound | 187–216 |
-| 11 | The constant and its consequences | 217–234 |
-| A | Finite-order calculations | 235–241 |
-| B | Direct upper bounds and static interpolation | 242–260 |
-| C | Covariance comparisons in higher dimensions | 261–282 |
-| D | Static comparisons and the clock obstruction | 283–296 |
+| 1 | Setting and strategy | 1–22 |
+| 2 | Construction and two-chain estimates | 23–45 |
+| 3 | An independent upper bound | 46–76 |
+| 4 | Covariance estimates and Gaussian approximation | 77–100 |
+| 5 | The original noise and operator paths | 101–119 |
+| 6 | Fixed masks and wave evolution | 120–139 |
+| 7 | Scaling and the point lower bound | 140–156 |
+| 8 | Spatial controls and Gaussian means | 157–172 |
+| 9 | Bounds as the spatial radius grows | 173–187 |
+| 10 | Gaussian estimates for the point upper bound | 188–217 |
+| 11 | The constant and its consequences | 218–235 |
+| A | Finite-order calculations | 236–242 |
+| B | Direct upper bounds and static interpolation | 243–261 |
+| C | Covariance comparisons in higher dimensions | 262–283 |
+| D | Static comparisons and the clock obstruction | 284–297 |
 
 The front matter has an overview, a guide to the argument, a multilevel contents
 page and a short list of illustrations. The cover has its own PDF page label;
@@ -59,9 +55,9 @@ upgrade of the independent review status. The previous 275-page article-style
 companion is preserved at commit 669ccc9.
 
 The reader's literal section-number references were replaced by links to stable
-labels and its external map refreshed: 82 mapped labels and 250 remote PDF links
+labels and its external map refreshed: 95 mapped labels and 264 remote PDF links
 resolve. Its figures remain fixed beside their explanations. The book contains
-20 illustrations and the reader contains ten.
+21 illustrations and the reader contains ten.
 
 Build from the repository root, using the recorded frozen bibliography if the
 external refdb is unavailable:
@@ -104,3 +100,9 @@ results of this edition.
 Section 1.6 now has five subsections, ending with a sourced outlook on
 logarithmic wavefields and possible scaling limits. Rytov prior art and
 formal mechanisms are distinguished from conjectures and established results.
+
+The proof map now links its nodes to chapters, sections and results. A separate
+roadmap covers all eleven chapters and four appendices. Refresh the page table
+with `uv run --with pymupdf python scripts/refresh-book-guide.py`; the helper
+uses numbered chapter labels, so the front-matter guide is not an appendix.
+Refresh reader links with `python3 scripts/refresh-reader-labels.py`.

@@ -1,0 +1,74 @@
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm,
+    route/.style={ham/box,text width=6.25cm,minimum height=1.35cm},
+    synthesis/.style={route,draw=hamteal,fill=hamteal!7},
+    auxiliary/.style={route,draw=hamgold,fill=hamgold!5,
+    minimum height=1.1cm}]
+    \node[route] (setting) at (0,0)
+    {\GuideRef{Chapter}{S:book-setting}\\
+    \textbf{Model, context and main results}};
+    \node[route] (construction) at (7.4,0)
+    {\GuideRef{Chapter}{S:G0}\\
+    \textbf{Construction and the mixed expansion}};
+    \node[route] (upper) at (0,-2.5)
+    {\GuideRef{Chapter}{S:book-independent-upper}\\
+    \textbf{Independent upper scale}\\
+    Finiteness before the sharp constant};
+    \node[route,minimum height=2.1cm] (phase) at (7.4,-2.5)
+    {\textbf{Construct the full wave evolution}\\[3pt]
+    \GuideRef{Ch.}{S:book-gaussian-foundations}: covariance estimates\\
+    \GuideRef{Ch.}{S:book-operator-paths}: original-noise paths\\
+    \GuideRef{Ch.}{S:book-wave-evolution}: fixed-mask evolution};
+    \node[route] (lower) at (0,-5.5)
+    {\GuideRef{Chapter}{S:book-lower}\\
+    \textbf{Scaling and the lower bound}\\
+    Optimize over nonnegative controls};
+    \node[route,minimum height=1.65cm] (means) at (7.4,-5.5)
+    {\textbf{Prepare uniform upper estimates}\\[3pt]
+    \GuideRef{Ch.}{S:book-means}: spatial controls and means\\
+    \GuideRef{Ch.}{S:book-growing-radius}: growing-radius bounds};
+    \node[synthesis] (constant) at (0,-8.3)
+    {\GuideRef{Chapter}{S:book-constant}\\
+    \textbf{The constant and its bounds}\\
+    Match the upper and lower values};
+    \node[route] (point) at (7.4,-8.3)
+    {\GuideRef{Chapter}{S:book-point-upper}\\
+    \textbf{Point upper bound}\\
+    Signed controls and the original cost};
+    \draw[ham/arrow] (setting)--(construction);
+    \draw[ham/arrow] (construction.south west)--(upper.north east);
+    \draw[ham/arrow] (construction)--(phase);
+    \draw[ham/arrow] (upper)--(lower);
+    \draw[ham/arrow] (phase.south west)--(lower.north east);
+    \draw[ham/arrow] (phase)--(means);
+    \draw[ham/arrow] (lower)--(means);
+    \draw[ham/arrow] (lower)--(constant);
+    \draw[ham/arrow] (means)--(point);
+    \draw[ham/arrow] (point)--(constant);
+    \node[ham/note,text=hamgold,text width=13.8cm] at (3.7,-9.85)
+    {\textbf{Appendices: checks and separate comparison arguments}};
+    \node[auxiliary] (finitechecks) at (0,-11)
+    {\GuideRef{Appendix}{S:appendix-finite-order}\\
+    Finite-order calculations};
+    \node[auxiliary] (direct) at (7.4,-11)
+    {\GuideRef{Appendix}{S:appendix-direct}\\
+    Direct bounds and static interpolation};
+    \node[auxiliary] (covariance) at (0,-12.9)
+    {\GuideRef{Appendix}{S:appendix-covariance}\\
+    Covariance comparisons};
+    \node[auxiliary] (clock) at (7.4,-12.9)
+    {\GuideRef{Appendix}{S:appendix-static-clock}\\
+    Static comparisons and the clock obstruction};
+  \end{tikzpicture}
+  \caption[Chapter and appendix roadmap]{A reading map for the whole book.
+    Blue arrows select principal inputs, not every dependency. In particular,
+    the independent upper scale supplies finiteness for the variational lower
+    value, which is also used in the spatial estimates. The upper argument
+    retains the earlier wave construction and the radius estimates; it does
+    not follow from the lower bound alone. The green box joins the two moment
+    bounds. Gold boxes identify auxiliary checks and comparisons with their
+    own hypotheses. No arrow from an appendix into the main proof is asserted.
+    Every chapter and appendix label is a link to its opening guide.}
+  \label{Fig:chapter-roadmap}
+\end{figure}
