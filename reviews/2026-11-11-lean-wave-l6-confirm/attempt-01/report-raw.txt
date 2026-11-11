@@ -1,0 +1,199 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "prior/a-WaveGreen-report.json:1-217 — complete.",
+    "prior/b-QuotientGaussian-report.json:1-523 — complete.",
+    "prior/c-WaveTwoVariances-report.json:1-314 — complete.",
+    "prior/d-Variational-report.json:1-457 — complete.",
+    "prior/e-SpatialRatio-report.json:1-387 — complete.",
+    "prior/f-StaticControls-report.json:1-471 — complete.",
+    "prior/g-SeriesType-report.json:1-318 — complete.",
+    "prior/h-White-report.json:1-305 — complete.",
+    "candidate/statement-ledger.md — partial substantive reading:1-458,851-948,1038-1216,1440-1603,2084-2361,2401-2463,2637-2799,2909-3471,3739-3978,4048-4154,4300-4963; complete structural parsing:1-4963. Scope, Index and all fourteen target sections read completely.",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean:1-540 — complete.",
+    "lean/StratonovichHAMSecondMoment/QuotientObstruction.lean:1-1005 — complete.",
+    "lean/StratonovichHAMSecondMoment/GaussianComparison.lean:1-227 — complete.",
+    "lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean:1-973 — complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalFloor.lean:1-670 — complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalRate.lean:1-828 — complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean:1-582 — complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:1-768 — complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:1-1161 — complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean:1-178 — complete.",
+    "lean/StratonovichHAMSecondMoment/SeriesType.lean:1-339 — complete.",
+    "lean/StratonovichHAMSecondMoment/TypeContinuity.lean:1-1183 — complete.",
+    "lean/StratonovichHAMSecondMoment/WhiteRelativeWidth.lean:1-221 — complete.",
+    "lean/StratonovichHAMSecondMoment/WhiteClockLaplace.lean:1-454 — complete.",
+    "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean:1-145 — partial.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 — complete.",
+    "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean:1-88 — complete.",
+    "lean/StratonovichHAMSecondMoment/TimeCompletion.lean:723-740,1043-1075 — partial.",
+    "lean/StratonovichHAMSecondMoment/TimeSchur.lean:315-332 — partial.",
+    "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean:303-323 — partial.",
+    "lean/claims.yaml — partial substantive reading:1-60,6185-6220,6860-6890,6910-6930,6980-7010,7450-7520,7545-7560,7598-7655,7890-7920,7943-7955,8245-8260,8476-8490,8998-9016,9440-9465,9516-9530,9620-9670,9715-9727,10100-10125, plus supporting search matches; complete YAML and declaration-identifier parsing:1-10307.",
+    "lean/coverage.yaml:1-982 — complete.",
+    "docs/coverage-scope-tex.yaml:1-27 — complete.",
+    "manuscript/notes/integrated_covariance_foundation.tex:1-428 — complete.",
+    "manuscript/notes/integrated_wave_variance.tex:1-460 — partial.",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-220 — partial.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-343 — complete.",
+    "manuscript/notes/integrated_compact_mean_family.tex:398-512 — partial.",
+    "manuscript/notes/integrated_white_evaluation.tex:1-170 — complete.",
+    "manuscript/notes/integrated_temporal_equilibrium.tex:1-95 — complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:175-236,690-850,1917-1935,2500-2620,2670-2702,3488-3505,3685-3699,4048-4062,4596-4614,5038-5052,5074-5116,5537-5550,5973-5990,6658-6676,6989-7014,7149-7202,7338-7533,7560-7630,7641-7650 — partial.",
+    "manuscript/notes/index/list-of-notation.tex:98-106 — partial.",
+    "PROVENANCE.json:1-55 — partial."
+  ],
+  "checks": [
+    {
+      "claim": "a-WaveGreen-W1",
+      "verdict": "PASS",
+      "reason": "Ledger:4483-4485 now restricts the exponential quotient to a != 0 and gives 2s at zero. This matches WaveGreen.lean:484-491 and main TeX:740-741."
+    },
+    {
+      "claim": "a-WaveGreen-W2",
+      "verdict": "PASS",
+      "reason": "Ledger:4465-4469 explicitly adds dim to the DampedNormsHomog used-field list and removes it from the unused list. WaveGreen.lean:452 uses h.dim; main TeX:191 supplies the dimension restriction."
+    },
+    {
+      "claim": "a-WaveGreen-W3",
+      "verdict": "FAIL",
+      "reason": "The cited summary at claims.yaml:6200 and module introduction at DampedNormsHomog.lean:46-53 are corrected. However, its GreenMass declaration comment still says the wave Green measures are ones 'which this package does not define' at :125-126. WaveGreen.lean:106-112 defines them and :274-276 discharges GreenMass, matching main TeX:825. The requested removal of package-wide absence claims remains incomplete; see C1."
+    },
+    {
+      "claim": "b-QuotientGaussian-W1",
+      "verdict": "PASS",
+      "reason": "Ledger:2785 and claims.yaml:7555 distinguish the exported zero-integral identity from integrability established inside its proof. QuotientObstruction.lean:773-776 exports only the equality; covariance-foundation TeX:273-281 supplies the corresponding bump calculation."
+    },
+    {
+      "claim": "b-QuotientGaussian-W2",
+      "verdict": "PASS",
+      "reason": "Ledger:2654-2657 now attributes nonnegative, nonzero tau to the construction, not separate exported existential conjuncts. QuotientObstruction.lean:924-946 and claims.yaml:7639 support that distinction; covariance-foundation TeX:282-291 uses such a time bump."
+    },
+    {
+      "claim": "c-WaveTwoVariances-W1",
+      "verdict": "PASS",
+      "reason": "Ledger:4672 and claims.yaml:7949 now include c >= 0, exactly the hc hypothesis of WaveTwoVariances.lean:548-555. This removes the prior false unrestricted scalar implication; the manuscript variance argument is at integrated_wave_variance.tex:394-446."
+    },
+    {
+      "claim": "d-Variational-W1",
+      "verdict": "PASS",
+      "reason": "Ledger:4366-4369 now excludes the Lebesgue-null diagonal. VariationalRate.lean:237-245 explicitly excludes u = s before the comparison; compact-mean TeX:444-445 uses the comparison under integration."
+    },
+    {
+      "claim": "d-Variational-W2",
+      "verdict": "PASS",
+      "reason": "Scope:48-50 now says 'to the scopes specified below', rather than claiming all conclusions in full. Coverage.yaml:884-902 preserves the operator exclusions required by VariationalRate.lean:739-759 versus unmasked-variational TeX:98-111."
+    },
+    {
+      "claim": "d-Variational-W3",
+      "verdict": "PASS",
+      "reason": "Scope:223-242 expressly separates claims.yaml status from the route-auxiliary category and names the reusable exceptions. Claims.yaml:8248-8254,8480-8486 agrees with the declarations; spatial-occupation TeX:41 does not separately name a radius lemma."
+    },
+    {
+      "claim": "e-SpatialRatio-W1",
+      "verdict": "PASS",
+      "reason": "Ledger:2998-3000,3033-3036,3229-3233 localizes the missing bridge to the individual modules and identifies SpatialStaticControls.pairing_eq_spatialPair. That theorem at :835-843 and its use in SpatialOccupationCompleted.lean:115-118 support the physical pairing of spatial-occupation TeX:15-19."
+    },
+    {
+      "claim": "e-SpatialRatio-W2",
+      "verdict": "PASS",
+      "reason": "Ledger:3203-3207,3259 now distinguishes asserted nonemptiness from nonemptiness established inside proofs. SpatialSmoothRatio.lean:632-645 proves the boundedness conclusion while constructing a unit test internally, consistently with spatial-occupation TeX:141-145."
+    },
+    {
+      "claim": "f-StaticControls-W1",
+      "verdict": "PASS",
+      "reason": "Ledger:3329-3332,3467, claims.yaml:9522-9523 and SpatialStaticControls.lean:66-68,1063-1068 now identify unrestricted Lebesgue covariance, alpha = 0, outside H:homog and not white noise. Main TeX:201-206 requires the positive-alpha range and identifies white noise with delta_0."
+    },
+    {
+      "claim": "f-StaticControls-W2",
+      "verdict": "PASS",
+      "reason": "Ledger:3229-3233 now acknowledges the finite-profile bridge and its completed-module use. SpatialStaticControls.lean:835-843 proves the equality for locally finite Gamma and continuous compactly supported nonnegative profiles, matching spatial-occupation TeX:15-19."
+    },
+    {
+      "claim": "g-SeriesType-W1",
+      "verdict": "PASS",
+      "reason": "Ledger:2911-2914,2931-2933,2961 and Index:434 give the standalone Gamma tool its own category and disclaim a manuscript line. SeriesType.lean:325-326 proves that tool; main TeX:7171-7186 instead contains the factorial and series arguments."
+    },
+    {
+      "claim": "g-SeriesType-W2",
+      "verdict": "PASS",
+      "reason": "Ledger:3839 now cites main TeX:7164 for 'since c_0 = 1, tau >= 0'. TypeContinuity.lean:135-138 proves the stated nonnegativity under the recorded coefficient and summability assumptions."
+    },
+    {
+      "claim": "h-White-W1",
+      "verdict": "PASS",
+      "reason": "Ledger:4731-4736 now explains that the Auxiliary heading groups helpers but the two Laplace lemmas are TeX proof steps. WhiteClockLaplace.lean:71-93 explicitly documents and proves the integrals displayed in main TeX:7609-7614."
+    },
+    {
+      "claim": "RESCAN-a-WaveGreen",
+      "verdict": "PASS",
+      "reason": "All rows at ledger:4501-4531 were checked against WaveGreen.lean:1-540 and the cited TeX. Mass, support, scaling and one-dimensional Fourier statements match. The cone-measure convention and missing higher-dimensional Fourier identities are disclosed at ledger:4438-4444,4491-4497."
+    },
+    {
+      "claim": "RESCAN-b-QuotientGaussian",
+      "verdict": "PASS",
+      "reason": "Rows in ledger:1548-1603,2637-2799 match GaussianComparison.lean:1-227 and QuotientObstruction.lean:1-1005 against covariance-foundation TeX:188-292. The finite comparison is not misrepresented as construction of the noise; covariance-functional and exported-witness boundaries are explicit."
+    },
+    {
+      "claim": "RESCAN-c-WaveTwoVariances",
+      "verdict": "PASS",
+      "reason": "Ledger:4533-4690 matches WaveTwoVariances.lean:1-973 and integrated_wave_variance.tex:1-460. The factor four, uniform constants, both directions and beta form are supported. The abstract-variance wrapper explicitly retains hlink and the J/norm inputs."
+    },
+    {
+      "claim": "RESCAN-d-Variational",
+      "verdict": "PASS",
+      "reason": "Ledger:4048-4154,4300-4413 matches the two complete Lean modules and unmasked-variational TeX:98-164,270-337. Route-only floor tools remain unlabelled; Rayleigh-form and integral-cost boundaries and S1Bdd-dependent supremum statements are preserved."
+    },
+    {
+      "claim": "RESCAN-e-SpatialRatio",
+      "verdict": "PASS",
+      "reason": "Ledger:2963-3082,3134-3277 matches SpatialFourierBound.lean:1-582, SpatialSmoothRatio.lean:1-768 and spatial-occupation TeX:1-147. The deterministic constant 2^(1+alpha), genuine-integral conditions, ratio positivity/finiteness and conditional score forms are accurately scoped."
+    },
+    {
+      "claim": "RESCAN-f-StaticControls",
+      "verdict": "PASS",
+      "reason": "Ledger:3083-3133,3278-3471 matches SpatialOccupationCompleted.lean:1-178, SpatialStaticControls.lean:1-1161 and spatial-occupation TeX:40-147. The different positivity route, named-input discharge, pairing bridge, existential scores and S1Bdd-dependent supremum forms are correctly distinguished."
+    },
+    {
+      "claim": "RESCAN-g-SeriesType",
+      "verdict": "PASS",
+      "reason": "Ledger:2909-2962,3739-3874 matches SeriesType.lean:1-339 and TypeContinuity.lean:1-1183 against the cited main-TeX ranges, especially :7149-7190,7338-7533. Scalar foundations, extended-real types, supplied stochastic inputs and changed proof routes are disclosed without additional labelled-row overclaims."
+    },
+    {
+      "claim": "RESCAN-h-White",
+      "verdict": "PASS",
+      "reason": "Ledger:4691-4837 matches both complete White Lean modules, integrated_white_evaluation.tex:101-161 and main TeX:7567-7623. Constants, damping signs, integrability, diagonal conventions and formula-only scope are accurate; neither the moment bracket nor spatial energy is claimed."
+    },
+    {
+      "claim": "LEDGER-TOTALS",
+      "verdict": "PASS",
+      "reason": "Structural inspection of every module table gives 1463 unique declaration rows, 737 labelled and 726 unlabelled, with four cells each. Claims.yaml gives exactly the same declarations, comprising 1210 theorems and 253 definitions. Expanding Index:454's module shorthand and excluding expressly marked cross-references leaves exactly one correctly labelled index occurrence per row. Ledger:456-457 and coverage.yaml:2 agree."
+    },
+    {
+      "claim": "NO-REGRESSION",
+      "verdict": "PASS",
+      "reason": "The inspected Scope, Index, Not-in-Lean and named cross-references retain their module-local and supplied-input qualifications; see ledger:851-948,1062-1216,1494-1500,2084-2191,2253-2357,2401-2458,3930-3974,4838-4963. All seven docs/coverage-scope-tex.yaml ascii fields exactly equal their coverage.yaml conclusion_scope values. C1 is a surviving stale comment, not a newly introduced ledger error."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "C1 — a-WaveGreen-W3, incomplete supporting-documentation repair. lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean:125-126 still describes wave Green measures 'which this package does not define'. In contrast, lean/StratonovichHAMSecondMoment/WaveGreen.lean:106 declares 'def waveGreen', and :274-276 proves 'GreenMass (waveGreen d)'. The cited manuscript/notes/notes_stratonovich_ham_second_moment.tex:825 uses 'G_s(R^d) = s'. Exact fix: replace the remaining package-wide absence sentence with 'not defined in this module; WaveGreen defines them and waveGreen_greenMass discharges this input for d in {1,2,3}'. The ledger and corrected introductory comment are otherwise accurate. This surviving false scope assertion prevents confirmation that W3 is fully resolved."
+    ]
+  },
+  "required_repairs": [
+    "Complete a-WaveGreen-W3 by correcting the stale package-wide absence assertion in lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean:123-126 to a module-local statement with the WaveGreen discharge reference."
+  ],
+  "limitations": [
+    "The complete-reading requirement was satisfied for all eight prior reports, fourteen target ledger sections, Scope, Index, fourteen own Lean modules and required cited TeX ranges.",
+    "Sources marked partial were not substantively read outside the listed ranges. Global table and claims checks used complete structural parsing, not mathematical review of unrelated declarations.",
+    "PROVENANCE.json:56-1225 was not read, and packet hashes were not independently verified.",
+    "Proof correctness and compilation were accepted as stipulated; no build, kernel audit or inspection of external references was performed. Refutation files outside the packet were not checked.",
+    "Historical regression assessment uses the supplied prior reports and present cross-reference consistency; the earlier complete ledger was not supplied.",
+    "This AI correspondence review is not human verification or a novelty audit."
+  ]
+}
