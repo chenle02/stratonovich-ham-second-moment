@@ -526,6 +526,25 @@
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
+- **WAVE L7 CORRESPONDENCE GATE: CLOSED (Le, 2026-11-12)** at companion
+  f3be834 over manuscript a284420, together with the re-anchor from 975feb3
+  to a284420: Le, verbatim: "I accept the six wave-L7 reviews plus the
+  confirmation and the a284420 re-anchor (re-check + confirmation PASS/high)
+  as closing the Lean wave L7 correspondence gate at companion f3be834 over
+  manuscript a284420." Recorded in the companion README (ed3cd68), the board
+  (docs/community c038761) and STATUS-DIGEST; #16, #3 and #24 told, with the
+  docs-only HEAD ed3cd68 for Appendix F. Scope: AI statement-to-manuscript
+  correspondence of the 268 wave-L7 ledger rows, the changed sections and
+  coverage rows, and the re-anchored rows of the two edited results; NOT
+  human verification; the supplied inputs (L:terminal-wick's two facts for
+  L:uniform-series-tail; the energy-split identity and L:fixed-split for
+  P:interval-coefficients; the operator/stochastic inputs of
+  C:static-interaction; S1Bdd for the supremum forms) and every analytic
+  input outside Lean are not verified; any later change to these rows or to
+  a cited label needs a successor review. Details: OVERNIGHT TODO LIST 2
+  below (FINAL entry). Open: the Easley replay of the wave-L6 modules (job
+  5692528; VPN down, collect when reachable); the wave-L7 modules have not
+  been replayed on Easley.
 - **OVERNIGHT TODO LIST 2 (Le, 2026-11-11 evening: "make a todo list for
   this overnight work and complete them overnight; the aim is to complete
   the lean verification as much as possible").** Read, as on 2026-11-10, as
@@ -538,13 +557,13 @@
      README replay sentence, record here. BLOCKED until Le connects the
      Auburn VPN and opens the Duo-authenticated ssh master (`ssh -fN
      Easley`); retried whenever the connection is up.
-  2. [x] DONE (2026-11-12; acceptance is Le's): When #3 commits the two approved manuscript points: re-anchor the
+  2. [x] DONE; accepted by Le 2026-11-12 with the L7 gate: When #3 commits the two approved manuscript points: re-anchor the
      companion (labels, statements/proofs, line citations,
      provenance/manuscript-anchor.json, ledger anchor sentence; new receipts
      if Lean comments move), narrow Codex re-check of P:spatial-smooth-ratio,
      SpatialFourierBound, SpatialSmoothRatio, the DampedNormsHomog smoothing
      rows and coverage notes; adjudicate; record.
-  3. [x] DONE up to Le's gate (2026-11-12): Wave L7 (deterministic targets left after L6, from the "Not in L6"
+  3. [x] DONE; gate closed by Le 2026-11-12 at f3be834 over a284420: Wave L7 (deterministic targets left after L6, from the "Not in L6"
      list), one agent and worktree each off companion main e4c9bd4, same
      gates as L6 (exact-hypothesis wrappers, refutations, audit, no sorry,
      standard axioms):
@@ -980,6 +999,8 @@
 | L5 | CLOSED (Le) | 2026-11-11 | Six items (H_a completion with B24 at same assumptions, masked continuous wave, masked auxiliary norm, rest of the damped-norm lemma, heat envelope and global mean, phase Bessel); gate at companion 712c307 over 975feb3; reviews/2026-11-11-lean-wave-l5-* |
 | L6 | OPEN (approved by Le) | 2026-11-11 | Eight items (wave Green measure, quotient obstruction and finite Gaussian comparison, wave two-variances core, variational foundations and two C18 results, deterministic R_0 and the smooth ratio, static controls, series-type cluster, white relative width and clock Laplace); defaults for the four decisions |
 | L6 | CLOSED (Le) | 2026-11-11 | Eight items integrated (14 modules); gate at companion bfa2fd0 over 975feb3 after eight reviews, a confirmation (C1 repaired) and a clean narrow re-confirmation; reviews/2026-11-11-lean-wave-l6-* |
+| L7 | OPEN (run overnight under Le's instruction) | 2026-11-11 | Six items (inventory product, uniform series tail, H^1 density, spatial four-linear and energy map, occupation physical class, interval/static scalar steps) plus two completion modules |
+| L7 | CLOSED (Le) | 2026-11-12 | Gate at companion f3be834 over a284420 (with the re-anchor from 975feb3); six reviews, confirmation, re-anchor re-check and confirmation; reviews/2026-11-11-lean-wave-l7-*, reviews/2026-11-12-lean-* |
 
 ## New proof seams retained for later statement fences
 
