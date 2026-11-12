@@ -442,7 +442,16 @@
     3 more with every conclusion proved and inputs supplied, 13 steps,
     4 outside); 33 whole-result modules, 56 library modules.
   - Open: the Easley leanchecker --fresh replay (job 5690458, nine targets:
-    the seven new modules, the umbrella and Axioms; default mode for all 59). From the board
+    the seven new modules, the umbrella and Axioms; default mode for all 59):
+    **PASS 9/9** (COMPLETED 0:0, 03:51:54, node831; each --fresh run
+    41:41-43:52, peak 7.7 GB; default mode 59/59). The import-closure check
+    (712c307 against 2f5ee14, 687e631, 837778a) shows every other module
+    covered by an earlier --fresh replay up to comments. Evidence: companion
+    bae18f4, verification/leanchecker-easley-wave-l5/ (HPC username,
+    container path and runtime directory redacted), with the README replay
+    sentence; DampedNorms and DampedNormsHomog have changed only in comments
+    since 712c307; the 14 wave-L6 modules are not replayed yet. #24 told.
+  From the board
   (companion branch docs/community), excluding the reserved B3, B4, B9.
   Three read-only feasibility reconnaissances against the TeX at 975feb3,
   every Mathlib name probed by compiling scratch files against the
@@ -589,6 +598,71 @@
   rotation lemma, the weak gradient of a test function, sum a^nu <= (sum
   a)^nu and Gamma((x+y)/2)^2 <= Gamma(x)Gamma(y). Eight items, one agent and
   worktree each, as in wave L5; dependencies noted.
+  **WAVE L6 CORRESPONDENCE GATE: CLOSED (Le, 2026-11-11)** at companion
+  bfa2fd0 over manuscript 975feb3: Le accepted the eight Codex reviews plus
+  the confirmation ("Yes, close L6 at the new commit if the re-confirmation
+  is clean"); the narrow re-confirmation at bfa2fd0 was clean (PASS/high,
+  4/4, no findings). Recorded in the companion README (e4c9bd4), the board,
+  STATUS-DIGEST; #16, #3 and #24 told. Scope: AI statement-to-manuscript
+  correspondence of the 491 wave-L6 ledger rows and the changed sections and
+  coverage rows; NOT human verification; the supplied inputs (S1Bdd for the
+  supremum statements, the D1/D8 links of P:wave-two-variances and
+  P:masked-noise-completion, the T:full-upper and static-law inputs of
+  P:moment-growth-logconvex and C:static-moment-constant-continuity) and
+  every analytic input outside Lean are not verified; any later change to
+  these rows or to a cited label needs a successor review (the pending
+  manuscript edits to P:spatial-smooth-ratio and L:damped-homogeneous-norms
+  will trigger one). Easley replay of the 14 new modules not yet run.
+  - Results (coverage rows): L:damped-homogeneous-norms now same-assumptions,
+    full (WaveGreen discharges GreenMass for d = 1, 2, 3; the d = 3 measure
+    via Measure.toSphere is a recorded definitional choice);
+    P:masked-quotient-obstruction same-assumptions, full; P:masked-noise-
+    completion inputs-supplied, weaker (the finite Gaussian comparison in
+    full; the identification with the masked/auxiliary covariances, D1,
+    supplied); P:wave-two-variances inputs-supplied, weaker (spectral core
+    input-free; E:variance-normalized-covariance and J supplied);
+    P:variational-unmasked-rate same-assumptions, weaker (operator half out,
+    D8); P:variational-positive-scores inputs-supplied, weaker (S1Bdd);
+    P:spatial-smooth-ratio same-assumptions, weaker, with R_0 < infinity by
+    the deterministic bound of SpatialFourierBound (a different route than
+    the TeX); L:spatial-static-controls same-assumptions, weaker;
+    L:positive-series-type, C:white-relative-width and L:white-clock-laplace
+    same-assumptions, full; P:moment-growth-logconvex and
+    C:static-moment-constant-continuity inputs-supplied, full; step rows for
+    L:higher-riesz and P:static-phase-all-orders. No manuscript defect; two
+    manuscript points (the deterministic R_0 bound, the smoothing scope)
+    approved by Le for addition (see the bullet above).
+  - Companion: 14 modules (WaveGreen, QuotientObstruction,
+    GaussianComparison, WaveTwoVariances, SpatialFourierBound,
+    VariationalFloor, VariationalRate, SpatialSmoothRatio,
+    SpatialStaticControls, SpatialOccupationCompleted, SeriesType,
+    TypeContinuity, WhiteRelativeWidth, WhiteClockLaplace); duplicated
+    definitions across L6-d/e/f unified, RayleighFloor and StaticControls
+    discharged in SpatialOccupationCompleted. Comparator over 1210 theorem
+    claims (CheckFidelity 1210/1210 types equal, 0 problems); check-controls
+    PASS (68 controls, 139 refutations, 71 audits).
+  - Reviews (Codex GPT-6.1-Sol, high) at 250cf39 over 975feb3: eight valid
+    reports (3 FAIL, 5 PASS_WITH_NOTES), 16 findings (2 fatal, 1 major,
+    13 minor), all in the documentation, none in a Lean statement or proof;
+    all accepted and repaired on l6-repair (merged; 4486c57). Evidence
+    Article 498f094, 3735f16 (reviews/2026-11-11-lean-wave-l6-*).
+    Confirmation at 4486c57: FAIL/high on one minor (C1, a stale GreenMass
+    doc comment in DampedNormsHomog; the same claim in DampedNorms), repaired
+    comment-only at 4b09ee6, merged 212aeea, comparator copies regenerated
+    bfa2fd0 (Article abb6ee4). Narrow re-confirmation at bfa2fd0: PASS/high,
+    4/4, no findings (Article 05677ba, reviews/2026-11-11-lean-wave-l6-reconfirm).
+  - Receipts at bfa2fd0 (committed d3f6a2b): comparator pass (1210
+    theorems); lower tier 0 sorry, 1463 claim axioms standard, peak 9.0 GiB.
+    (Receipts at 4486c57 also passed, 1d1eda6; superseded.) Re-gated
+    verified-private 4486c57 -> bfa2fd0 with comparator evidence; claims
+    synced; `claims ledger`: READY, 914 required, 1417 verified, 0 open,
+    46 out-of-scope (internal helper definitions). Docs-only descendants:
+    bae18f4 (Easley L5 evidence), e4c9bd4 (README closure); ledger still
+    READY at e4c9bd4.
+  - Totals: 1463 claims (1210 theorems, 253 definitions); 737 labelled, 726
+    unlabelled; coverage 59 rows (34 same-assumptions incl. 7 narrower,
+    4 inputs-supplied full, 17 inputs-supplied steps/narrower, 4 outside);
+    47 whole-result modules, 70 library modules.
 
   | Item | Target (label, TeX at 975feb3) | Builds on / new foundation | Class (fallback) | Size |
   |---|---|---|---|---|
@@ -781,6 +855,7 @@
 | L4 | CLOSED (Le) | 2026-11-11 | Four items (masked spectral growth and B14 input discharge, time-Schur and masked modulation, frequency row, occupation kernel row); gate at companion ac6f767 over 3920258; reviews/2026-11-11-lean-wave-l4-* |
 | L5 | CLOSED (Le) | 2026-11-11 | Six items (H_a completion with B24 at same assumptions, masked continuous wave, masked auxiliary norm, rest of the damped-norm lemma, heat envelope and global mean, phase Bessel); gate at companion 712c307 over 975feb3; reviews/2026-11-11-lean-wave-l5-* |
 | L6 | OPEN (approved by Le) | 2026-11-11 | Eight items (wave Green measure, quotient obstruction and finite Gaussian comparison, wave two-variances core, variational foundations and two C18 results, deterministic R_0 and the smooth ratio, static controls, series-type cluster, white relative width and clock Laplace); defaults for the four decisions |
+| L6 | CLOSED (Le) | 2026-11-11 | Eight items integrated (14 modules); gate at companion bfa2fd0 over 975feb3 after eight reviews, a confirmation (C1 repaired) and a clean narrow re-confirmation; reviews/2026-11-11-lean-wave-l6-* |
 
 ## New proof seams retained for later statement fences
 
