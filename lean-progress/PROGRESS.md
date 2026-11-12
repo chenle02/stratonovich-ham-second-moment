@@ -517,6 +517,19 @@
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
+- **Two manuscript points from the Lean verification (asked #3 at Le's
+  request, 2026-11-11; answer pending):** (1) R_0 < infinity WITHOUT
+  T:full-upper: Lean proves deterministically under H:homog alone, for every
+  admissible Gamma, A_sp(g) <= 2^(1+alpha) R_Gamma(1) b^(alpha/2), hence
+  R_0 <= 2^(1+alpha) R_alpha (spectral identity of the autocorrelation,
+  |Q^| <= 1, integration by parts |xi||Q^| <= 2 sqrt(b), resolvent
+  homogeneity; companion SpatialFourierBound.spatial_fourier_bound_paper),
+  while P:spatial-smooth-ratio gets it from S1Bdd (occupation TeX 142-145).
+  (2) The smoothing/truncation sentence of L:damped-homogeneous-norms (main
+  TeX 789-791) read as a measurable multiplier 0 <= g <= 1 of mu and a
+  measurable restriction of the Laplace domain (Le's reading; uses at
+  1072-1082 and 1591-1600 fit). Asked #3 whether to add both to the
+  manuscript; Le decides the edit. #3's answer: (pending).
 - **WAVE L6: APPROVED by Le (2026-11-11) as proposed, with the default
   answers to the four decisions; OPENED** (eight items launched in parallel
   worktrees, branches wave-l6/a..h off companion main). From the board
