@@ -10,7 +10,7 @@ Last updated: 2026-11-12 (afternoon), L8 reviews done (3 PASS_WITH_NOTES, 4 FAIL
 
 | Item | Current state |
 |---|---|
-| Current wave | **L8 OPEN**, gate pending. On companion main `3518233` (2108 claims, 1747 theorems; coverage 71 rows: 43 same-assumptions, 25 inputs-supplied, 3 outside); comparator receipt PASS (1747 theorem claims); lower-tier receipt running. Codex GPT-6.1-Sol reviews at `3518233`: g2, g3, g5b PASS_WITH_NOTES; g1, g4, g6a, g6b, g6c FAIL on ledger/coverage text, no Lean error (main items: the L:damped-homogeneous-norms scope overclaims; TerminalWick's global covariance measurability hK is an added hypothesis, so L:terminal-wick leaves same-assumptions; two refutation comments rely on Lean's 0/0; FiniteWick integrability wording; "fourteen" -> "fifteen"); Le's T:intrinsic-occupation-ceiling classification passed review. Repairs running on `wave-l8/repair`, then receipts at the repaired commit, Easley pilot and a confirmation review. **L9 OPEN**: integrated with L8 on `wave-l9/int` (`5ec3c11`); docs drafts done for all 12 modules; docs merge running; comparator, receipts, reviews next. **L10 OPEN**: all eight items done and verified: R2, R3 (L:higher-riesz d = 2, 3, M_3 optimal), W0, W1 (T:white-moment-bounds for S_2^pos on WhiteSpatialEnergy), FS0, FS1 `826a3da` (L:fixed-split on the Fock model; hfixed discharged with an added hypothesis hQ on the cutoff coefficients and supplied FockColumn, SegmentBound, DysonCrossCube, BackgroundPreserves, EntireCoefficients), A1, A1i; integration of seven on `wave-l10/int` (`5cc5295`, 2914 axiom entries clean), FS1 to add; docs drafts running on <MACHINE>. **L11 OPEN** (approved): K8 `1d0b902` (C:static-interaction re-issued: series identification, order bounds, per-block step proved; Gaussian parity, first-variance bounds, tensoring still supplied); K4 (chain measures g_n constructed with their mass, measurability proved from cell continuity, then hK removed from the constructed wrappers `21bdabc`; Green-regularization limit running); K2 (discharge FockColumn) running on <MACHINE>; K5/K6 wait for an Easley Mathlib pilot; K9 waits for the gaussian-chaos-lean release |
+| Current wave | **L8 OPEN**, gate pending. On companion main `3518233` (2108 claims, 1747 theorems; coverage 71 rows: 43 same-assumptions, 25 inputs-supplied, 3 outside); comparator receipt PASS (1747 theorem claims); lower-tier receipt running. Codex GPT-6.1-Sol reviews at `3518233`: g2, g3, g5b PASS_WITH_NOTES; g1, g4, g6a, g6b, g6c FAIL on ledger/coverage text, no Lean error (main items: the L:damped-homogeneous-norms scope overclaims; TerminalWick's global covariance measurability hK is an added hypothesis, so L:terminal-wick leaves same-assumptions; two refutation comments rely on Lean's 0/0; FiniteWick integrability wording; "fourteen" -> "fifteen"); Le's T:intrinsic-occupation-ceiling classification passed review. Repairs running on `wave-l8/repair`, then receipts at the repaired commit, Easley pilot and a confirmation review. **L9 OPEN**: integrated with L8 on `wave-l9/int` (`5ec3c11`); docs drafts done for all 12 modules; docs merge running; comparator, receipts, reviews next. **L10 OPEN**: all eight items done and verified: R2, R3 (L:higher-riesz d = 2, 3, M_3 optimal), W0, W1 (T:white-moment-bounds for S_2^pos on WhiteSpatialEnergy), FS0, FS1 `826a3da` (L:fixed-split on the Fock model; hfixed discharged with an added hypothesis hQ on the cutoff coefficients and supplied FockColumn, SegmentBound, DysonCrossCube, BackgroundPreserves, EntireCoefficients), A1, A1i; integration of seven on `wave-l10/int` (`5cc5295`, 2914 axiom entries clean), FS1 to add; docs drafts running on <MACHINE>. **L11 OPEN** (approved): K8 `1d0b902` (C:static-interaction re-issued: series identification, order bounds, per-block step proved; Gaussian parity, first-variance bounds, tensoring still supplied); K4 (chain measures g_n constructed with their mass, measurability proved from cell continuity, then hK removed from the constructed wrappers `21bdabc`; Green-regularization limit running); K2 (discharge FockColumn) running on <MACHINE>; K10 (L:finite-word-cutoff for multi-mode colors, removing FS1's hQ, accepted by Le for now) scoped, starts after FS1 is integrated; K5/K6 wait for an Easley Mathlib pilot; K9 waits for the gaussian-chaos-lean release |
 | Last closed gate | **L7**, closed by Le 2026-11-12 at companion `f3be834` over manuscript `a284420`, together with the re-anchor from `975feb3` |
 | Manuscript anchor | Article `a284420` (#3's two approved edits: `L:spatial-fourier-bound`, `E:damped-multiplier-comparison`) |
 | Companion | `chenle02/stratonovich-ham-second-moment-lean`, PRIVATE (HOLD: no public flip without Le); lean-pkg `verified-private` at `f3be834` (receipts `5aa557b`: comparator PASS over all 1430 theorem claims; lower tier 0 sorry, 1731 claim axioms, standard axioms only); docs-only HEAD `fcdf252`; `claims ledger` READY, 1071 required, 1681 verified, 0 open |
@@ -25,7 +25,7 @@ Last updated: 2026-11-12 (afternoon), L8 reviews done (3 PASS_WITH_NOTES, 4 FAIL
 | Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
 | Compute | <MACHINE>: L8 lower-tier receipt, L8 repair agent, L9 docs merge; Office: L11 K2 and K4 (Green-regularization limit); <MACHINE>: L10 docs drafts (two agents); Easley via <MACHINE>: L7 replay, then the L8 array |
-| Decisions open for Le | the L8 gate (after repairs, receipts and the confirmation review); L8-f's extra supplied inputs (chain measures by their mass; and hK, now disclosed as an added hypothesis); whether L10-FS1's added hypothesis hQ is acceptable or L:finite-word-cutoff should be formalized to remove it; release of gaussian-chaos-lean (opens D1 and K9); investing in D8; public release (HOLD; version levels approved 2026-11-12); lean-pkg 0.30.0 upgrade when released |
+| Decisions open for Le | the L8 gate (after repairs, receipts and the confirmation review); L8-f's extra supplied inputs (chain measures by their mass; and hK, now disclosed as an added hypothesis); release of gaussian-chaos-lean (opens D1 and K9); investing in D8; public release (HOLD; version levels approved 2026-11-12); lean-pkg 0.30.0 upgrade when released |
 | Next actions | L8: repairs → merge to main → both receipts, regate, claims ledger → Easley build + pilot → confirmation review → evidence to reviews/ → Le's gate, tag `L8-gate`. L9: docs merge → comparator → main → receipts → reviews. L10: add FS1 to the integration, docs merge → comparator → receipts → reviews. L11: K2, K4 (ii) reports → verify → integrate. Collect the Easley L7 replay |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
@@ -550,6 +550,43 @@ Last updated: 2026-11-12 (afternoon), L8 reviews done (3 PASS_WITH_NOTES, 4 FAIL
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
+- **L10-FS1 hQ ACCEPTED FOR NOW (Le, 2026-11-12); L11 item K10 scoped to
+  remove it.** Le, verbatim: "I accept L10-FS1's added hypothesis hQ for now;
+  record it in lean-progress/PROGRESS.md and scope formalizing
+  L:finite-word-cutoff as an L11 item to remove it." What hQ is: in
+  `FixedSplit.interval_coefficient_assembly_paper_fixed` (L10-FS1 `826a3da`)
+  the coefficient `Q p` of `interval_coefficient_assembly_paper_completed` is a
+  free function, so FS1 assumes `|Q p| <= ||<U_r v, U_q v>_(1/T)||`. In the TeX
+  Q_(r,q) IS that inner product (main TeX ~3473) and L:finite-word-cutoff
+  (~3490-3497) shows it is unchanged by the cutoff; neither step is
+  formalized. The L:fixed-split coverage row (L10 docs) lists hQ as an added
+  hypothesis, with the class inputs-supplied, weaker.
+
+  L11-K10 (scoped, not launched): formalize L:finite-word-cutoff in the
+  form FS1 needs and remove hQ.
+  - Have: `StratonovichHAMAudit.HermiteWord.cut_eq_raw` (finite words, abstract
+    degree bookkeeping); `HermiteWordFock.cut_eq_raw_fock` (L9: one Gaussian
+    mode per color, per-coordinate cutoffs); FS1's Fock model (colors `col :
+    Fin m -> iota`, cutoff set `cutIdx col N` = color total degree <= N_i).
+  - Gap: (1) the cutoff in FS1 and the TeX is on the per-color TOTAL degree
+    over several modes, not per coordinate, so the degree-raising lemmas
+    (goodDeg_insert etc.) must be redone for `cutIdx`; (2) identify Q_(r,q),
+    defined in P:interval-coefficients' coefficient model, with the cutoff
+    inner product `<U_r v, U_q v>_(1/T)` of FS1 (the TeX's line ~3473), which
+    needs the coefficient model of `interval_coefficient_assembly_paper_completed`
+    to be stated through the Fock embedding rather than as a free Q; (3)
+    re-issue `interval_coefficient_assembly_paper_fixed` without hQ.
+  - Feasibility: (1) is finite combinatorics on coefficient spaces (no new
+    analysis); (2) may need restating Q in the existing assembly theorem, a
+    statement change of a claimed theorem (companion major-version rule
+    applies after release; before release it is a new wrapper plus a
+    coverage update). Size 500-900 lines; risk medium (the identification of
+    the TeX's coefficient model). Compile on <MACHINE> or <MACHINE> after the
+    L10 integration of FS1. Fallback: (1) alone, with Q's identification as a
+    named input replacing hQ (a sharper, TeX-shaped input).
+  - Class after: L:finite-word-cutoff same-assumptions, narrower (finite
+    words) or full for the multi-mode form; L:fixed-split and
+    P:interval-coefficients lose hQ.
 - **L8 CORRESPONDENCE REVIEWS (2026-11-12), Codex GPT-6.1-Sol, effort high,
   at companion `3518233` over manuscript `a284420`.** No hold on the model
   (checked). Six groups, nine valid runs: g2 (space-time positivity, finite
