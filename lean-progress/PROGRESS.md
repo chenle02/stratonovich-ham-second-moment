@@ -6,7 +6,7 @@
 
 ## Status (kept current; updated at every milestone)
 
-Last updated: 2026-11-12 (11:15), L8 receipts at `aff7409` committed (`d476e17`), docs-only successor `27d22a1` and L7 replay evidence `ff40157` on companion main (both sent to #24); L9 narrow re-confirmation running; L8 Easley array running; L10 merging.
+Last updated: 2026-11-12 (afternoon), waves L12, L13, L14 PROPOSED; Easley stage 2 approved, first pre-gate replay (L10 integration `f0b795f`, 21 targets) running; L9 docs repair round 5 (every-cell Index rule) running.
 
 | Item | Current state |
 |---|---|
@@ -25,8 +25,8 @@ Last updated: 2026-11-12 (11:15), L8 receipts at `aff7409` committed (`d476e17`)
 | Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
 | Compute | <MACHINE>: L8 lower-tier receipt, L9 confirmation review; Office: L11 wrappers; <MACHINE>: L10 merge + comparator; Easley via <MACHINE>: L7 replay and the L8 array |
-| Decisions open for Le | the L9 gate (after its repairs, confirmation and receipts); release of gaussian-chaos-lean (opens D1 and K9); investing in D8; public release (HOLD; version levels approved 2026-11-12); lean-pkg 0.30.0 upgrade when released |
-| Next actions | L8: lower-tier receipt → merge `l8-gate-docs` with verification and replay sentences → SHA to #24; Easley array → collect → verification/leanchecker-easley-wave-l8/. L9: confirmation verdict → (repairs if any) → merge `wave-l9/repair` into main → both receipts, regate, ledger → Easley replay of the L9 modules → Le's L9 gate. L10: merge L9 repairs, comparator, reviews. L11: wrappers, docs merge after L10, comparator, reviews. Collect the Easley L7 replay |
+| Decisions open for Le | approval of the proposed waves L12, L13, L14 (decisions with defaults in each entry; D8 pilot option, P:nogo-29); the L9 gate (after its repairs, confirmation and receipts); release of gaussian-chaos-lean (opens D1 and K9); investing in D8; public release (HOLD; version levels approved 2026-11-12); lean-pkg 0.30.0 upgrade when released |
+| Next actions | L8: lower-tier receipt → merge `l8-gate-docs` with verification and replay sentences → SHA to #24; Easley array → collect → verification/leanchecker-easley-wave-l8/. L9: confirmation verdict → (repairs if any) → merge `wave-l9/repair` into main → both receipts, regate, ledger → Easley replay of the L9 modules → Le's L9 gate. L10: merge L9 repairs, comparator, reviews. L11: wrappers, docs merge after L10, comparator, reviews. Collect the Easley L7 replay. Proposed next: L12 (re-anchor, docs upgrades, hygiene before v1.0.0, small results and no-gos, F1), L13 (diagram model, Chapter 3 bounds for alpha <= 1, K5), L14 (K6 resolvent form, K1, higher transfer, d = 3 endpoints, class-O bridge) |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
 
@@ -550,6 +550,196 @@ Last updated: 2026-11-12 (11:15), L8 receipts at `aff7409` committed (`d476e17`)
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
+- **WAVE L12: PROPOSED (2026-11-12).** From read-only preparations (session scratch
+  l12-prep/: INVENTORY.md, DEBT.md, D8-FEASIBILITY.md; probes compiled on
+  Office at Mathlib `56a0058`), with classes predicted under Le's 2026-11-12
+  rules (strict whole result, split modelled-object rule with the
+  model-choice register, every-cell Index rule, version levels); "debt Bx"
+  are DEBT.md items, "board Bx" the reserved packages. Consolidation and
+  quick wins: the re-anchor, the L11 docs upgrades, the hygiene batch before `v1.0.0`, and
+  small deterministic results and no-gos. Excludes board B3, B4, B9.
+
+  WHERE IT RUNS. Office: formalization, 6 agents in worktrees through
+  `office-build.sh` (8G cap, `LEAN_NUM_THREADS=4`, at most 6 concurrent
+  builds). <MACHINE>: 2-3 agents through `homedell-build.sh` (at most 3
+  concurrent builds). <MACHINE>: orchestration, merges, lean-pkg comparator and
+  lower-tier receipts (the registry lives here). Easley: gates only (see
+  EASLEY STAGING below).
+
+  | Item | Target (labels, TeX at a284420; no-gos at 672a8c56, repinned by R0) | Deliverable | Class after (fallback) | Size |
+  |---|---|---|---|---|
+  | L12-R0 (Office, 1 agent, first) | all 220 labelled results + 4 covered displays; 33 new `P:nogo-01`..`-33` (`notes/no-go/*.tex`) | line remap of about 4,700 TeX references in about 350 files by the hunk map (scratch `build-reanchor-a284420-*.py` tooling); `provenance/manuscript-anchor.json` (new revision, title, subtitle, sha256 including `notes/no-go/*.tex`); COMPLETION 220 -> 253 rows (33 "not formalized") | no class change: all 227 T/P/L/C statements and proofs byte-identical (sha1 by `work/envs.py`, 0 changed, 0 removed) | script + ~350 files; no Lean statement |
+  | L12-DOC (<MACHINE>) | `L:finite-word-cutoff` (main 2531-2571), `L:uniform-series-tail` (3703-3748), `L:terminal-wick` (3600-3699), `L:fixed-split`, `P:interval-coefficients` (debt C2, C3) | docs after merging `wave-l11/K10` into L11 int: multi-mode `finite_word_cutoff_paper` and `finite_word_cutoff_integral` (nothing supplied); constructed chain measures (`e9e62f2`) | `L:finite-word-cutoff` inputs-supplied/weaker -> same-assumptions (whole if the review accepts the coordinatewise reading of the integral sentence, otherwise narrower: "integrals of words taken coordinatewise"); `L:uniform-series-tail` -> whole (constructed measures, split rule); `L:terminal-wick` -> same-assumptions, narrower (partial sums, complex r) until L12-TW; `L:fixed-split`, `P:interval-coefficients` lose hQ (Le's temporary acceptance retired), `DuhamelWords` named instead, stay narrower (SegmentBound, DysonCrossCube, BackgroundPreserves, EntireCoefficients, hsplits) | docs only |
+  | L12-TW (<MACHINE>) | `L:terminal-wick` (debt B1, B2) | partial-sum comparison `E(sum r^n Y_n)^2 <= E(sum r^n Y'_n)^2` from `terminal_wick_mono_constructed_paper` and `mixed_moment_odd`; complex r: `E|sum r^n Y_n|^2 = sum r^m conj(r)^n E[Y_m Y_n]` (check the TeX first: is the comparison claimed for complex r, or only the formula) | whole (fallback: real r only, narrower: "complex r not stated") | 180-450 |
+  | L12-C1 (<MACHINE>) | `L:damped-homogeneous-norms` (main 803-919), covariance-smoothing remark (debt C1) | `IsSpectralMeasure (volume.withDensity gamma_eps) (e^(-c eps abs(xi)^2) mu)`: Fubini of `phi(x) e^(i xi.x) e^(-eps abs(xi)^2)` against Lebesgue x `mu` (tempered `mu`, Schwartz `phi`), from `gammaEps_spectral`; not Fubini against the infinite `Gamma` (Le's L8 decision 2) | same/weaker -> whole, its only gap (fallback: row stays narrower, "covariance smoothing identified as multiplier membership only") | 250-500 |
+  | L12-HYG (Office, 1 agent, after the L10/L11/K10 merges) | no label (debt group a, debt B3, B6, B7) | comment batch A1-A11 (L9 residue deferred three times; six stale "L9-G/L8-c will prove" docstrings); dedup of the nine duplicate groups (`alpha_lt_two` x3 to `HomogCovariance.alpha_lt_two`; `one_add_sum_le_prod`; `heatDens` -> `heatK`; `gammaEps` naming hazard; three Green Fourier predicates; `K0`; `Nnorm`; `SpaceTimeCS`; `HermiteWord` native copy); unused-hypothesis probe of the "carried, unused" K2/K4/K8 fields; `im_root_le` at lambda/2: in-domain witness `r = a + i lambda`, `a^2 >= 3 lambda^2/4`, checked against `PhaseRangeBounds`, or a recorded non-refutation | no row class change; two claim rows removed and `gammaEps` renamed (major after release, so before `v1.0.0`); `ImaginaryRoot` control (c) -> (a) if the witness holds | ~50 comment lines; net -150..-300; 40-150 |
+  | L12-NG1 (Office) | `P:nogo-15`, `-16`, `-26`, `-30`, `-33` | `K = M1^T M1 + M0^T M2 + M2^T M0`, `(1,-2)K(1,-2)^T = -16/45` (probed) and the sigma^2 coefficient; `J_c = c^(2/(2-r)) J_1` via `mgf_gaussianReal`; scalar Young with `D = lambda t`; `lp.single` bumps (probed); matrix and integer arithmetic (probed) | whole each (fallback -15: the O(sigma^4) remainder as named input `PhaseSeriesRemainder`, inputs-supplied, whole) | 900-1500 |
+  | L12-NG2 (Office) | `P:nogo-22`, `-23`, `-17`, `-28`, `-18` (scalar half) | restatements on `masked_quotient_obstruction_paper` (probed), `gaussian_one_variance_test` with general n (`integral_sum_sq_sq`, probed), ClockCopy (alpha = 1 identity), the exact ceiling at d = 2, alpha = 5/4, a = 1/2; `I = 545/11616`, `M = 1025/21483` from `MiddleCross.actual` at b = 1, c = 11/10 (probed) | -23, -17, -28 whole; -22 narrower: the noise W is not constructed (as its parent); -18 narrower: identification of I and M_b(0;A) with the TeX integrals missing (DIAG) | 700-1300 |
+  | L12-NG3 (Office) | `P:nogo-01`; `P:envelope` (main 1937-2007), growth display | Stirling and `SeriesType.log_factorial_bounds`; `c t^rho <= log B_K <= C t^rho`; `log B_K ~ t^(beta/(beta-1))` | -01 whole; `P:envelope` new row, proof steps (first display needs `L:pairing-product-envelope`, D5) | 600-1000 |
+  | L12-SRC (<MACHINE>) | `L:source-finite-comparison` (source_convergence.tex 20-40), `L:tube-half-action` (gaussian_tubes.tex 485-501), `P:tube-rayleigh-transfer` (183-224) | `gaussian_seminorm_moment_le_paper` at `B = C I` with `sqrt C` by `CFC.sqrt_algebraMap` (`CFC.sqrt_smul` does not exist; Probe2); sup exchange in extended reals; layer-cake transfer on `RayleighTail` | first two whole; transfer inputs-supplied, whole (named input `TubeTail`, the Borell tail of `L:tube-closed-geometry`, D3, a true statement) | 650-1250 |
+  | L12-F1 (Office) | `E:fock-sandwich` of `L:fock-form` (main 2484-2488); `StaticInteractionCompleted.FockSandwich` | Hermite-truncated Fock space `PiLp 2 (idx_(<=N)^m -> L^2_band)`; diagonal `mulOp`; `A_0 = mulOp(abs(eta)^2 1_band)`; `CFC.sqrt (A_0 + rho^2) = mulOp(sqrt(...))` by `CFC.sqrt_eq_iff`, `invSqrtShift` by an explicit inverse (P30, P32 probed); then `FockForm.fock_form` + `FockColumnBound`. No D8, no pilot | no class change: `C:static-interaction`, `P:static-phase-all-orders` lose `FockSandwich`, stay narrower (CPInputs, PropagatorBlock, Gaussian parity, first-variance bounds) (fallback: CFC identification + named input `FockPackaging`) | 500-900 |
+
+  Dependencies: R0 after the L11 docs merge (K10 merged into L11 int) and
+  after the Article's uncommitted edits (at drafting time: `notes/no-go/*.tex`,
+  `no-go-appendix.tex` and the main TeX, the gold-lexical repair) are
+  committed; pin that commit and re-run the byte-identity check against it. DOC after the K10 merge; TW after DOC. HYG on the merged tree,
+  once. NG1-NG3 off R0 (their labels exist only at the new anchor). C1, TW,
+  SRC, F1 cite only a284420 labels and may start before R0 (remapped by the
+  same hunk map at integration). Expected: rows upgraded to whole 4
+  (`L:finite-word-cutoff`, `L:uniform-series-tail`, `L:terminal-wick`,
+  `L:damped-homogeneous-norms`); new rows 4 (3 whole, 1 proof steps); no-gos
+  11 (9 whole, 2 narrower). Gates as in L8-L11 (Codex GPT-6.1-Sol correspondence
+  reviews with complete packets, repairs, confirmation, receipts, Easley array
+  replay, Le closes the gate); at most two repair rounds per item.
+
+  EASLEY STAGING (applies to L12-L14; Le asked to scale up gradually). Rules:
+  compile locally; Easley runs gates and measured work only; preflight the
+  container with `type -P`; stop after two identical failures.
+  - Stage 1 (approved, L11 decisions 1-3): the array replay (build job,
+    one-task pilot, array of `leanchecker --fresh` targets, 2 CPUs / 36G per
+    task) at every gate commit. L8 reference: 92/92, 1 h 31 min, 53 CPU-h
+    used. D8-style modules peak at 8.75 GB on <MACHINE> (about 1 GB above the
+    L11 sizing), inside the 36G allowance.
+  - D8 pilot (L11 decision 5, Le's own condition). The premise does not hold:
+    77 of 81 modules already `import Mathlib`, so every replay since L3 has
+    loaded the D8 slice. Options: (a) waive; (b) one extra task in the next
+    array gate, `leanchecker --fresh` of `D8Probe.P50_workload` (Office:
+    30.7 min, 8.75 GB); (c) the designed job (`d8/easley/`, 4 CPUs, 16G,
+    about 1.3 h). Recommended (b).
+  - Stage 2 (APPROVED by Le 2026-11-12): lower-tier receipts by `lean-pkg
+    receipt slurm`, piloted at the L9 gate and compared with the local
+    receipt at the same commit (claim set, axioms, sorry count); the
+    comparator stays local (no bwrap or Landlock on Easley). Pre-gate replays
+    of integration commits, new modules only (first run: L10 integration
+    `f0b795f`, 21 targets, submitted 2026-11-12).
+  - Stage 3 (later, after stage 2): overlapping arrays, at most about 600
+    CPUs of the 1440 QOS cap.
+
+  Decisions for Le (defaults in brackets): 1. R0 timing [after the L11 docs
+  merge and the commit of the no-go edits; one re-anchor for every L12
+  branch]; 2. version level of R0 [patch: references and 33 not-formalized
+  rows only, unless the book revision is a new MAJOR]; 3. items citing only
+  a284420 labels start before R0 [yes]; 4. HYG in L12, one full rebuild and
+  one receipt round, before `v1.0.0` [yes]; 5. F1 now, independent of the D8
+  pilot [yes]; 6. `P:nogo-29` [out: it defines the objects of board B3/B4;
+  alternative: allowed as a self-contained counterexample module with no
+  claim on B3/B4 statements]; 7. class predictions above under the strict,
+  split and every-cell rules (-22, -18 narrower; `P:envelope` proof steps)
+  [yes]; 8. D8 pilot option [(b)]; 9. Easley stage 2 [approved 2026-11-12;
+  after a matching pilot at the L9 gate, L12 receipts come from Slurm]; 10. fallbacks
+  are true named inputs, never surrogates; two repair rounds [yes].
+
+  Not in L12: board B3, B4, B9 with `L:gram-realization`,
+  `L:gram-dual-minimum`, `L:white-cdf-square`; `P:nogo-29` (decision 6); the
+  diagram no-gos (L13); debt B5, B8 and the zero-covariance cases (L14 with
+  the class-O bridge); C8-C10 beyond F1 (they shrink input lists, change no
+  class; L15 candidates); everything needing D1, D5, D7 or D8.
+
+- **WAVE L13: PROPOSED (2026-11-12).** Structure: the two-chain diagram
+  model and the Chapter 3 upper bounds for alpha <= 1 with their no-gos; the
+  K5 `H^1` Hilbert layer; three row-upgrading bridges. Runs as L12 (Office 6-8
+  agents, <MACHINE> 2-3, <MACHINE> receipts, Easley stage 1 gate).
+
+  | Item | Target (labels, TeX at the R0 anchor; a284420 lines shown) | Deliverable | Class after (fallback) | Size |
+  |---|---|---|---|---|
+  | L13-DM0 (Office, 1 agent, first) | foundation for `P:mixed` (main 658-728), E:mixed-moment | `DiagramModel`: ordered chains, time simplices, pairings as FiniteWick involutions with self-pairings, d = 1 Green kernels, `J_(m,n,D)(t)`, `A_k(t)`; spectral form for general Gamma; named input `MixedMoment` = the exact statement of `P:mixed` (true; D5). Interfaces frozen, then a fidelity review against E:mixed-moment and (2.21) (self-pairings, chain orientation) before D1-D6 start | foundation; `DiagramModel` entered in the model-choice register (the TeX's deterministic integrals) | 800-1200 |
+  | L13-D1 (Office) | `L:d1-spatial` (4525-4594) | opening/closing label-set bound on `S_(D,eps)(h)` | whole on the model | 600-1000 |
+  | L13-D2 (Office) | `P:d1-upper` (4605-4687) | `A_k(t) <= (2ZK)^k t^(beta k)/(k! k^(bk))`; `E u^2 <= exp(C_2 t^kappa)` by `sum_rpow_le_rpow_sum` | narrower: coefficient display whole; moment display rests on `MixedMoment` about an unconstructed `u` (split rule) | 800-1300 |
+  | L13-D3 (Office) | `P:low-alpha-upper` (4820-4901), `C:d1-first-calibration` (4923-4957) | `K_sp^gen` from LowAlphaConvolution and AlphaOneConvolution (d = 1, 2, 3); `C_1 = C_2/2^((4-alpha)/(3-alpha))`, `2C_1 < C_2` | as D2: narrower (moment displays via `MixedMoment`); calibration constants whole | 800-1300 |
+  | L13-D4 (Office) | `L:white-test` (734-758), `P:riesz-small` (4313-4393), `P:nogo-04` | order-two closed forms by Beta integrals; the a -> 1 limit `2^(2-alpha)(1-alpha)` | -04 whole; the two lemmas narrower: values proved for `J_(m,n,D)`, the identification with `E X_1^2`, `E X_2` is `MixedMoment` | 900-1500 |
+  | L13-D5 (Office) | `P:nogo-02`, `-05`, `-06`, `-07` (`-03` optional) | adjacent-matching formula and Gamma-vs-factorial-cube consequence (with L12-NG3); chronological-merging support obstruction; geometry-free majorant exponent 3-a; label-span lower bound | whole (stated on diagram integrals); -03 narrower (remainder from D2, `u` unconstructed) | 1000-1600 |
+  | L13-D6 (Office, optional) | `P:white-four` (4160-4218) | the nine order-four integrals | whole on the model | 1500-2500 |
+  | L13-NG4 (Office) | `P:nogo-13`, `-20`, `-31`, `-24` | test functions near the plane vs `abs(x)^(-3/2)`; two disjoint bumps; 2x2 phase exponential and d'Alembert cutoff; `Lambda^(-gamma)` not compact via `Lp.fourierTransformₗᵢ` (probed) and weakly null translations | whole each (fallback -24: `Lambda^(-gamma)` given as a translation-invariant bounded operator, narrower) | 1100-1900 |
+  | L13-K5a (Office, after the pilot decision) | foundation (D8-lite); C19 fidelity | real `f`: `MemH1 f` with weak gradient `g` <-> `MemSobolev 1 2 (toTemperedDistribution f)`; `norm^2 = norm f^2 + (2 pi)^(-2) norm g^2` (Mathlib's convention); density of `C_c^infty` and Schwartz in `H^1` | foundation; P:spatial-four-linear etc. restated on Mathlib `H^1`, no class change (fallback: `MemH1 -> MemSobolev` only, converse named `H1Converse`) | 500-800 |
+  | L13-K5b (Office, after K5a) | foundation (form layer) | complex Lax-Milgram ported over `RCLike` (Mathlib has the real one only, P20); `q_V + c` bounded coercive Hermitian on `H^1` (bounded real V; signed V with `E:signed-multiplier-form` as hypothesis); bounded resolvent `R_V`: self-adjoint, positive, injective, `norm <= 1`; the real/complex reduction as a proved lemma | foundation (fallback: real Lax-Milgram, complexification as named input `ComplexifiedResolvent`) | 400-700 |
+  | L13-C4 (<MACHINE>) | `L:variational-global-mean` (unmasked_variational 64-96) | every mixed derivative of `h_s` bounded: differentiation under the integral against tempered Gamma | same/weaker -> whole (fallback: first derivatives only, narrower) | 300-700 |
+  | L13-C5 (<MACHINE>) | control of `gauss_shift_le`, S:static-phase | in-domain refutation for every `PhaseCovariance` with `mu != 0`, `q != 0`: growth `R^3` vs `R^alpha` mass of `B_(2R)` | control (c) -> (a); no row change | 200-450 |
+  | L13-C6 (<MACHINE>) | `P:masked-auxiliary-norm` (covariance_foundation 88-137) | the real-H clause: generalize over `RCLike`, or `H x H` with a complex structure | same/weaker -> whole (fallback: row stays narrower, "real H after complexification") | 300-600 |
+
+  Probed: Probe1 (`Real.Gamma`, `Complex.betaIntegral`, Stirling,
+  `Lp.fourierTransformₗᵢ`, `ContDiffBump`); D8 P10, P13, P20, P50 (K5/K6
+  workload 8.0 s, 7.0 GB). Not probed: LowAlphaConvolution, AlphaOneConvolution,
+  HigherRieszTwo/Three names (checked against the merged tree at start).
+  Dependencies: D1-D6 on DM0's frozen interfaces (stubs allowed); D5 on
+  L12-NG3; K5a on the pilot decision; K5b on K5a. Expected: 6-7 Chapter 3
+  labels (2-3 whole, 4 narrower with `MixedMoment`), 7-9 no-gos whole, 2 rows
+  to whole (C4, C6). DM0 is the one new definitional layer of the three waves
+  and carries the main fidelity risk.
+
+  Decisions for Le (defaults in brackets): 1. DM0 first, interfaces frozen
+  and reviewed by a family other than the author before D1-D6 [yes]; 2.
+  `DiagramModel` in the model-choice register, so statements about diagram
+  integrals are whole and statements about `u`, `X_n` narrower via
+  `MixedMoment` [yes]; 3. `MixedMoment` is the exact statement of `P:mixed`,
+  recorded in BOUNDARIES.md [yes]; 4. K5 starts once the D8 pilot task has
+  passed [yes]; 5. manuscript norms defined explicitly, never the
+  `BesselPotentialSpace` norm (2 pi factor) for manuscript constants [yes];
+  6. complex Lax-Milgram in the companion, an upstream Mathlib PR optional
+  later [yes]; 7. D6 and -03 only with spare capacity [yes].
+
+  Not in L13: `P:mixed`, `L:joint-fixed-order`, `L:spatial-wick-measures`
+  (D1/D5); `L:pairing-product-envelope` (needs `L:translated-covariance-CS`;
+  L15 candidate); `P:static-holder-upper`, `P:planar-upper`,
+  `P:three-transfer` (very long, static inputs); K6 (L14).
+
+- **WAVE L14: PROPOSED (2026-11-12).** Operator layer: K6 in resolvent form,
+  the K1 completion spaces, the higher-dimensional transfer and the d = 3
+  endpoint corollaries, the class-O bridge on K5. Runs as L12/L13.
+
+  | Item | Target (labels, TeX at the R0 anchor; a284420 lines shown) | Deliverable | Class after (fallback) | Size |
+  |---|---|---|---|---|
+  | L14-K6a (Office) | operator half of `P:variational-unmasked-rate` (unmasked_variational 98-140); first sentence of `L:signed-spectral-wave`; `P:signed-closed-form` (signed_static 39-109) | `R^(1/2)` by CFC; `range R^(1/2) = H^1` with `norm(R^(-1/2) u)^2 = q(u) + c norm(u)^2`; `inf spec H := c' - 1/norm R` = Rayleigh infimum, through the real reduction to `WeakSobolev.rayleighRate` | narrower: the operator is defined by its resolvent (H^2 domain and `LinearPMap` self-adjointness missing; `v_Psi = E W(Psi)^2` stays D1) (fallback: named input `FormDomainSqrt`, the KLMN fact) | 500-900 |
+  | L14-K6b (Office) | `E:compact-quarter-power`, `E:signed-quarter-phase` | `R_B <= R_A`, `CFC.nnrpow_le_nnrpow` at 1/4 (P42 probed), norm comparisons | proof steps of `L:compact-fractional-phase` and `P:signed-closed-form` (fallback: half powers only) | 300-500 |
+  | L14-K6c (Office) | `P:compact-ground-family` (compact_mean_family 33-112); `IndexedCone.GroundFamily` | Birman-Schwinger `K_kappa = V^(1/2)(kappa^2 - Delta)^(-1) V^(1/2)` on the Fourier side with `mulOp`; top eigenvalue attained (P40); `kappa -> norm K_kappa` monotone, continuous; `psi` in `H^1` at `E_1 = -kappa^2`; level Lipschitz bound | new row narrower: simplicity, positivity, `E_2` and gap `d_0` (named input `GroundSimpleGap`; min-max absent), `H^2` continuity of `p_sigma` missing; compactness by the TRUE named input `BirmanSchwingerCompact` (Hilbert-Schmidt for d <= 3; no HS in Mathlib); `L:raw-block-indexed-cone` stays narrower | 800-1400 |
+  | L14-K1a (Office) | `L:occupation-raw-square` (occupation_ceiling 23-90); rest of `L:positive-raw-embedding` (intrinsic_constant 22-110) | `H_sp`, `Q: H^1 -> H_sp`, `rho_g`, `H_I`, `J_G` as `Lp G 2` completions, no tensor identification; `norm(rho_g)^2 = A(g)` | new row narrower (class O by joint representatives until L14-O); `L:positive-raw-embedding` stays narrower (mean identity `E:positive-raw-mean` out) with the `H_t`, `H_I`, `J_G` gap closed | 1300-1700 |
+  | L14-K1b (Office) | `L:source-spatial-heat` (source_convergence 129-158), `L:positive-physical-gram` (intrinsic_constant 112-155) | `H_Gamma` completion, separability, Schwartz tests, heat positive contraction; finite covariance vectors `k_i` in `H_I` | heat lemma whole; Gram lemma narrower (entrywise order sentence out: adjacent to board B3) | 900-1400 |
+  | L14-HT (Office) | `P:higher-transfer` (5020-5163), `C:higher-riesz` (5239-5269), `P:higher-obstructions` = `P:nogo-08` (5271-5329) | debt B4 bridge `smoothCov (riesz c alpha) eps = ofReal (conv ...)`; Hoelder in time and Gamma constants on `DiagramModel`; Riesz corollary with `L:higher-riesz`; divergence of the translated wave convolutions | -08 / `P:higher-obstructions` whole; transfer and corollary narrower (moment displays via `MixedMoment`, `u` unconstructed) (fallback: `C:higher-riesz` with named input `HigherTransfer`) | 1700-2800 |
+  | L14-3D (<MACHINE>) | `L:product-endpoints` (6106-6200), `L:endpoint-closure` (6317-6380), `L:plane-endpoints` (6235-6315), `C:three-product-riesz` (6795-6839), `C:three-finite-images` (6841-6885) | endpoint arithmetic, Gaussian Hoelder comparison; closure under nonnegative sums and invertible linear images; plane endpoints, `V_low = c/pi`; the two assemblies | the three lemmas whole (fallback: PD of product Riesz densities as named input `RieszProductPD`, inputs-supplied, whole); corollaries narrower (`ThreeTransfer` = `P:three-transfer` named; `u` unconstructed) | 1500-2400 |
+  | L14-O (<MACHINE>) | `P:spatial-four-linear` (debt C7); class-O bridge (debt D3) for `P:occupation-physical-class`, `P:raw-occupation-energy`, `L:occupation-rayleigh-selection`, `T:intrinsic-occupation-ceiling`, `C:intrinsic-spatial-bracket`; their zero-covariance cases (debt B9) | topological joint continuity on `(H^1)^4` via K5; strongly `H^1`-measurable fields <-> joint representatives by simple-function approximation; Gamma = 0 cases | `P:spatial-four-linear`, `P:occupation-physical-class` -> whole; the other four lose the class-O clause and the zero case, stay narrower (C_2 sentences, `T:intrinsic-second-moment`, D1) | 1000-2000 |
+  | L14-K6d (optional, deferred) | `L:symplectic-free` supplied free group (C9) | `E = H^(1/2) x H^(-1/2)` from `BesselPotentialSpace` pairs, the free group as a Fourier-multiplier matrix, strong continuity, weak nullity of translations | removes `FreeWaveData`; row stays narrower (Young sums, D7) | 600-900 |
+
+  CORRECTION TO THE L11 TEXT OF K6. L11 listed "compact resolvent as a named
+  input (Rellich is not in Mathlib)". That would be a FALSE input: for
+  `H = -Delta - V` on `R^d` the essential spectrum is `[0, infty)` (the
+  manuscript's imported Teschl Theorem 10.2), so `(H + c)^(-1)` is not
+  compact and a wrapper assuming it would be vacuous. The true named input is
+  `BirmanSchwingerCompact` (compactness of `V^(1/2)(kappa^2 - Delta)^(-1)
+  V^(1/2)`, Hilbert-Schmidt for d <= 3); an alternative true input is "the
+  bottom is an isolated eigenvalue". Both go into BOUNDARIES.md with
+  provenance.
+
+  Probed (d8/probes, pin `56a0058`): CFC on `H ->L[C] H`, `CFC.sqrt_eq_iff`,
+  Loewner-Heinz (`CFC.nnrpow_le_nnrpow`), `CStarAlgebra.inv_le_inv_iff`, the
+  compact self-adjoint spectral theorem with the top eigenvalue attained
+  (P40), `LinearPMap.adjoint` (P41); absent: `LinearPMap.spectrum`/`cfc`,
+  closed forms, min-max, Rellich, Hilbert-Schmidt (P12), CFC on real Hilbert
+  spaces (P31). Dependencies: K6a/b/c on K5b; L14-O on K5a; HT on DM0 and
+  debt B4; 3D's corollaries on 3D's lemmas. Risk: K6 high (1600-2800 lines
+  with K6a-c), K1 medium. Expected: about 12 labels gain or upgrade a row
+  (5-6 whole, the rest narrower with the missing part named), 2 rows to whole
+  (`P:spatial-four-linear`, `P:occupation-physical-class`).
+
+  Decisions for Le (defaults in brackets): 1. K6 in resolvent form, results
+  classed narrower ("operator defined by its resolvent"); full D8 stays a
+  separate investment decision [yes]; 2. replace L11's "compact resolvent"
+  by the true inputs `BirmanSchwingerCompact` and `GroundSimpleGap` [yes];
+  3. K6d [deferred; only with spare capacity]; 4. K1 as `Lp G 2`
+  completions, no tensor identification (as L9 decision 4) [yes]; 5. the
+  entrywise-order sentence of `L:positive-physical-gram` [out, adjacent to
+  board B3]; 6. d = 3 corollaries with `ThreeTransfer` named, `P:three-transfer`
+  itself not formalized [yes]; 7. Easley stage 3 (overlapping arrays, at most
+  about 600 CPUs) [only after two clean stage-2 runs].
+
+  Not in L12-L14, with reasons: board B3, B4, B9, `L:gram-realization`,
+  `L:gram-dual-minimum`, `L:white-cdf-square`; `P:nogo-29` unless Le allows
+  it (L12 decision 6); everything needing D1, D2, D3 beyond `TubeTail`, D5
+  beyond `MixedMoment`, D7, or full D8 (`LinearPMap` self-adjointness on
+  `H^2`, unbounded functional calculus and the spectral wave matrices
+  `E:compact-spectral-wave`, the wave half of `L:signed-spectral-wave`,
+  min-max for `E_2`, Rellich, pointwise multipliers on `H^s`); Schatten-class
+  results (absent from Mathlib); `P:three-transfer`, `P:planar-upper`,
+  `P:static-holder-upper`; `P:nogo-21`, `-25`; `T:first`, `T:crude`
+  (imported statements: record them as imported, not "not formalized").
 - **EASLEY STAGE 2 APPROVED (Le, 2026-11-12).** Le, verbatim: "I approve
   Easley stage 2: pilot lower-tier receipts via lean-pkg receipt slurm at the
   L9 gate (compare with a local receipt at the same commit) and run pre-gate
