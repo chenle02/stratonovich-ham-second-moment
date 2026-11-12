@@ -538,13 +538,13 @@
      README replay sentence, record here. BLOCKED until Le connects the
      Auburn VPN and opens the Duo-authenticated ssh master (`ssh -fN
      Easley`); retried whenever the connection is up.
-  2. [ ] When #3 commits the two approved manuscript points: re-anchor the
+  2. [x] DONE (2026-11-12; acceptance is Le's): When #3 commits the two approved manuscript points: re-anchor the
      companion (labels, statements/proofs, line citations,
      provenance/manuscript-anchor.json, ledger anchor sentence; new receipts
      if Lean comments move), narrow Codex re-check of P:spatial-smooth-ratio,
      SpatialFourierBound, SpatialSmoothRatio, the DampedNormsHomog smoothing
      rows and coverage notes; adjudicate; record.
-  3. [ ] Wave L7 (deterministic targets left after L6, from the "Not in L6"
+  3. [x] DONE up to Le's gate (2026-11-12): Wave L7 (deterministic targets left after L6, from the "Not in L6"
      list), one agent and worktree each off companion main e4c9bd4, same
      gates as L6 (exact-hypothesis wrappers, refutations, audit, no sorry,
      standard axioms):
@@ -571,8 +571,8 @@
      receipts of both tiers at one commit, regate, claims ledger READY 0
      open; one Codex GPT-6.1-Sol review per item plus a confirmation;
      adjudicate and repair; STOP for Le's gate.
-  4. [ ] Board, README Trust section, STATUS-DIGEST; tell #16, #3, #24.
-  5. [ ] Retro of the night's lessons into Le-AI-Lab skills.
+  4. [x] DONE (2026-11-12): Board, README Trust section, STATUS-DIGEST; tell #16, #3, #24.
+  5. [x] DONE (2026-11-12, Le-AI-Lab 592207e): Retro of the night's lessons into Le-AI-Lab skills.
   STATUS (2026-11-12, overnight; updated as items complete):
   - Item 1: Easley up at 21:55 (Le connected); job 5692528 submitted at
     companion bfa2fd0 (16 --fresh targets two at a time, default replay of all
@@ -613,6 +613,36 @@
     L:damped-homogeneous-norms). Re-anchor to a284420 follows the L7 repairs
     (one line-citation remap for all waves), then receipts and the narrow
     re-check.
+  - FINAL (2026-11-12 morning): companion main 6a9fa9b (docs-only descendant
+    of f3be834; receipts 5aa557b at f3be834: comparator PASS, 1430 theorems;
+    lower tier 0 sorry, 1731 claim axioms, standard axioms only, peak 9.3 GiB;
+    re-gated verified-private a8fb495 -> f3be834 with comparator evidence;
+    claims ledger READY, 1071 required, 1681 verified, 0 open).
+    Wave L7 review chain: six reviews at a8fb495 (H1Density PASS; three
+    PASS_WITH_NOTES; UniformSeriesTail FAIL fatal = my lambda rewording;
+    SpatialFourLinear FAIL major = Gamma_tempered use), all repaired
+    (d2d29df; a mechanical field-use audit found one more wrong unused claim);
+    confirmation at d19c71a FAIL (C1 major, C2 minor, docs), repaired at
+    b0c995b. Re-anchor to a284420 (#3's edits): 255 cited labels exist once,
+    249 unchanged, 3 new (L:spatial-fourier-bound, E:spatial-fourier-bound,
+    E:damped-multiplier-comparison); 2888 citations, 1386 moved; new coverage
+    row L:spatial-fourier-bound (same-assumptions, weaker: Lean's constant is
+    R_Gamma(1), the TeX's R_alpha, identity not formalized);
+    L:damped-homogeneous-norms now weaker (the revised statement's lower
+    bounds for general m, S and the smoothing remarks are not stated in Lean).
+    Narrow re-check at 3eaf6ce FAIL (A1-A3 major, A4 minor, docs; A3 = TeX
+    locators misattributed to the wrong file by the shift tooling): full
+    content check of 1781 citations, 46 corrected (f3be834); confirmation
+    v1 INCONCLUSIVE (two changed refutation files missing from the packet),
+    v2 PASS/high, no findings. Evidence: reviews/2026-11-11-lean-wave-l7-*
+    (06ca20d), reviews/2026-11-12-lean-{wave-l7-confirm,reanchor-a284420,
+    reanchor-a284420-confirm} (756d462). Totals: 1731 claims (1430 theorems,
+    301 definitions; 891 labelled, 840 unlabelled); coverage 67 rows (39
+    same-assumptions incl. 12 narrower, 24 inputs-supplied, 4 outside); 55
+    whole-result modules. No manuscript defect found in L7. FOR LE: close the
+    wave-L7 gate and accept the re-anchor to a284420, at companion f3be834
+    (docs-only HEAD 6a9fa9b), or name changes. Item 1 (Easley L6 replay, job
+    5692528) still running.
   - Also: proposal 0015 accepted by Le and merged in lean-pkg (#456, #457);
     unreleased, so the coverage-scope-tex sidecar stays until 0.30.0. Two L6
     scope sentences reworded in plain English at #24's request (companion
