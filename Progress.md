@@ -19413,3 +19413,7 @@ PASS_WITH_NOTES/HIGH on the pre-box epoch; it is not transferred to the current
 boxed pages. Le clarified that work should continue; the project was not paused.
 The optional future-theory memo is explicitly unreviewed and outside this Gold
 scope. No public release, whole-paper acceptance or new Lean gate is claimed.
+
+## 2026-11-12: Section 1.7, Consistency checks
+
+[held back: collaborators' unpublished work]

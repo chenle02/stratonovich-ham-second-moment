@@ -1,0 +1,42 @@
+\section{Consistency checks}\label{S:consistency}
+
+These comparisons place the second-moment theorem alongside known bounds and
+Chen's conjecture. They are not inputs to the proof of
+Theorem~\ref{T:intro-second-moment}.
+
+\paragraph{Time-independent noise.}
+As $\alpha_0\downarrow0$, the exponent $\kappa$ tends to
+$(4-\alpha)/(3-\alpha)$, the exponent of the time-independent Stratonovich
+model found by Chen and Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~1.2}. This is
+a formal boundary limit: the large-time limit and the limit
+$\alpha_0\downarrow0$ are not interchanged (Remark~\ref{R:G1-scope}).
+
+\paragraph{The first moment.}
+If $\liminf_{t\to\infty}t^{-\kappa}\log\E u(t,x)\ge\ell$, then Jensen's
+inequality $\E u^2(t,x)\ge(\E u(t,x))^2$ gives the corresponding second-moment
+lower limit at least $2\ell$ (Proposition~\ref{P:Jensen}). Hence
+$C_2(\Gamma,\alpha_0)\ge2\ell$ in Theorem~\ref{T:intro-second-moment}. Taking
+$\ell=L_*$ of Theorem~\ref{T:first} is conditional on the intended first-moment
+lower bound with that constant; its printed normalization is not adopted
+unconditionally.
+
+\paragraph{The Skorohod model.}
+For Riesz covariances with $a=\alpha<d$ and $\alpha<2$, set
+$H=1-\alpha_0/2>1/2$. The Skorohod upper bound of Balan and
+Conus~\cite{balan.conus:16:intermittency}*{Theorem~2.1(b)} has the time
+exponent $(2H+2-a)/(3-a)=\kappa$. The comparison concerns time exponents only:
+the solution concepts and covariance normalizations differ, and no constants
+are compared. The Stratonovich moment expansion also includes self-pairings,
+that is, pairs of noise factors from the same ordered integral, which are
+absent from the Skorohod expansion (Remark~\ref{R:G1-scope}).
+
+\paragraph{Chen's conjecture.}
+For $p=1,2,\dots$, Chen conjectures that $t^{-\kappa}\log\E|u(t,x)|^p$ tends to
+$p^{(4-\alpha)/(3-\alpha)}L^*$ (Conjecture~\ref{Conj:allp}). For $p=2$ the
+conjectured value is $2^{(4-\alpha)/(3-\alpha)}L^*$. When $L^*>0$, this exceeds
+$2L^*$, the lower bound that Jensen's inequality would give if the first-moment
+rate were $L^*$; at zero covariance both values vanish.
+Theorem~\ref{T:intro-second-moment} does not decide this conjecture: its
+constant $C_2(\Gamma,\alpha_0)$ is given by its own variational formula and is
+not identified with the conjectured constant or with the first-moment limit.
+The conjectured value is a point of comparison, not a target of the proof.
