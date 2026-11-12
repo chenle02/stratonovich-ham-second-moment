@@ -10,7 +10,7 @@ Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine
 
 | Item | Current state |
 |---|---|
-| Current wave | **L8 OPEN** (approved 2026-11-12): six of nine items done and verified on their branches (a `b561f2a`, b `d339819`, d `8cd7e26`, e `e9b6dbc`, g `f33ab21`, h `efdba69`); c1, c2, f running. **L9 APPROVED** (2026-11-12, defaults): launches on <MACHINE> after the L8 integration commit. **L10** being prepared on <MACHINE> (independent items) |
+| Current wave | **L8 OPEN** (approved 2026-11-12): six of nine items done and verified on their branches (a `b561f2a`, b `d339819`, d `8cd7e26`, e `e9b6dbc`, g `f33ab21`, h `efdba69`); c1, c2, f running. **L9 APPROVED** (2026-11-12, defaults): launches on <MACHINE> after the L8 integration commit. **L10 PROPOSED** (independent cores on <MACHINE>; bullet "WAVE L10" below), awaiting Le's approval |
 | Last closed gate | **L7**, closed by Le 2026-11-12 at companion `f3be834` over manuscript `a284420`, together with the re-anchor from `975feb3` |
 | Manuscript anchor | Article `a284420` (#3's two approved edits: `L:spatial-fourier-bound`, `E:damped-multiplier-comparison`) |
 | Companion | `chenle02/stratonovich-ham-second-moment-lean`, PRIVATE (HOLD: no public flip without Le); lean-pkg `verified-private` at `f3be834` (receipts `5aa557b`: comparator PASS over all 1430 theorem claims; lower tier 0 sorry, 1731 claim axioms, standard axioms only); docs-only HEAD `fcdf252`; `claims ledger` READY, 1071 required, 1681 verified, 0 open |
@@ -25,7 +25,7 @@ Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine
 | Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
 | Compute | this laptop: L8 agents, integration, receipts; Office (36 cores): companion built at `0269e61`, `office-lean.sh` compile wrapper, Easley route, L9 compiling; <MACHINE> (12 cores): L10 independent items (companion being built there) |
-| Decisions open for Le | the L8 gate (after its reviews); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
+| Decisions open for Le | approve L10 (nine defaults); the L8 gate (after its reviews); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
 | Next actions | L8 items -> integration, docs, comparator, receipts, reviews, Le's gate; collect the Easley L7 replay (via <MACHINE>) |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
@@ -550,6 +550,60 @@ Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
+- **WAVE L10: PROPOSED (2026-11-12) for Le's approval; independent items to
+  run on <MACHINE>.** From a read-only preparation with every name probed by
+  compiling on <MACHINE> (companion built there at 0269e61; homedell-lean.sh,
+  homedell-build.sh; draft and probes in session scratch l10-prep/). Each
+  candidate is split into an INDEPENDENT core (imports only L1-L7 modules;
+  starts on approval, off 0269e61, rebased at integration) and a DEPENDENT
+  assembly (starts when its L8/L9 input is integrated; Office or <MACHINE>).
+  Excludes B3, B4, B9 and everything in L8/L9.
+
+  Independent (<MACHINE>, first batch of four agents; at most 3 concurrent
+  8G builds):
+
+  | Item | Target (TeX at a284420) | Deliverable | Class (fallback) | Size |
+  |---|---|---|---|---|
+  | L10-R2 | L:higher-riesz (main 5167-5236), d = 2 in full + shared steps; H:spatial-maximum 5008-5021 | the 2-D ball-mass bound G_1(B(w,R)) <= 2R^(3/2) (two cases, rotation + slices), layer cake, scaling, Gaussian double averaging, the d = 3 closed-form maximum 2^(1-alpha)/(2-alpha) (chord/convexity), the approximate identity; H:spatial-maximum in d = 2 with M_2 | row stays inputs-supplied, weaker (scope: d = 2 in full), full after R3 (fallback: the 2-D ball mass as named input TwoDimBallMass) | 600-900 |
+  | L10-W0 | prerequisites of T:white-moment-bounds (integrated_white_evaluation.tex 1-11, 101-127) | Gamma = c delta_0, mu = (c/2pi) Leb satisfy HomogCovariance 1 1 a (spectral identity by Fourier inversion at 0); V = c/pi; pairing = c int f^4; F_0(c^2/6) = sqrt c/(3 sqrt 2) tied to WhiteRelativeWidth's formulas | library lemmas (fallback: the spectral identity as named input WhiteSpectral) | 300-450 |
+  | L10-FS0 | model-free core of L:fixed-split (main 3053-3400): E:split-segment-product (exponents), E:interval-copy-metric, E:split-word-product, E:split-vector-cauchy, E:split-radius-factorial, E:split-explicit-constant | general telescoping lemma for the interval metric; M_k arithmetic; torus Cauchy extraction for absolutely convergent multivariate power series (avoids the missing multivariable Cauchy formula); word-norm product; C_split = 100^8 e^8 max(1, 12 delta^(-2)) | step lemmas (fallback: one-variable Cauchy, iterated) | 600-900 |
+  | L10-A1 | L:alpha-one-convolution (main 4760-4817), new row | polar decomposition of a 1-homogeneous spectral measure (sigma on the sphere x dr); I_a = pi (g_h * p_2a)(v) in [0, pi/2] by Fubini and the Gaussian cosine integral (no Fourier inversion); E:alpha-one-polar and 0 <= ... <= pi V/2; _paper wrapper with the L9-L spectral representation and the L9-G identity as explicit hypotheses | new row inputs-supplied until A1i, then same-assumptions, full (fallback: the polar decomposition as named input PolarDegreeOne) | 600-900 |
+  | (L10-J, optional) | L:positive-raw-embedding (integrated_intrinsic_constant.tex 22-112), first half of L:occupation-raw-square | J_G as the Lp G 2 completion under the kernel form (no tensor identification), ||J_G F||^2 = double integral <= K_0 ||F||^2; H_sp, Q; ||Psi||^2 = v_Psi | inputs-supplied, weaker (the mean identity out) (fallback: J_G alone) | 900-1300 |
+
+  Dependent (each starts when its input is integrated):
+
+  | Item | Waits for | Deliverable | Class after | Size |
+  |---|---|---|---|---|
+  | L10-FS1 | L9-H1, L9-H2 (and FS0) | L:fixed-split assembly: Z_S as Fock coefficient subspaces, E:split-fresh-insertion by vacuum insertion and FockColumn; supplied: L:interval-complex's segment bound and the Dyson cube identity E:interval-cross-cube; removes hfixed from interval_coefficient_assembly_paper_completed | L:fixed-split new row inputs-supplied; P:interval-coefficients loses L:fixed-split as input | 900-1400 |
+  | L10-W1 | L8-c1/c2, L8-d integrated (and W0) | T:white-moment-bounds for S_2^pos: (2/3) sqrt(c/M_a) <= S_2^pos <= (2/3) sqrt(c K_0), E_sp = c^2/6 as named input WhiteSpatialEnergy (provenance P:white-spatial-energy; B9 untouched); C_2 and c = 0 out | outside -> inputs-supplied, narrower | 150-300 |
+  | L10-R3 | L9-G's Archimedes law (stub once frozen), R2 | d = 3 F_3 formula, M_3 = c 2^(1-alpha)/(2-alpha), optimality by Fatou | L:higher-riesz same-assumptions, full | 400-600 |
+  | L10-A1i | L9-G, L9-L integrated | instantiate A1's two hypotheses | L:alpha-one-convolution same-assumptions, full | 50-100 |
+  | (L10-Jrho, optional) | L9-A1, L10-J | rho_g, ||rho_g||^2 = A(g), <Psi, rho_g> <= sqrt(v_Psi A(g)) | L:occupation-raw-square inputs-supplied, weaker | 300-500 |
+
+  Decisions for Le (defaults in brackets): 1. independent items start on
+  approval, on <MACHINE>, off 0269e61, rebased at integration, not waiting for
+  the L8/L9 gates [yes]; 2. core/assembly split as above, dependent halves on
+  Office or <MACHINE> whichever is free [yes]; 3. hypothesis-stub pattern for
+  A1 now and R3 once L9-G's statement is frozen [yes]; 4. white slice: E_sp
+  only as the named input WhiteSpatialEnergy, B9 untouched, C_2 and c = 0
+  out [yes]; 5. rows: new rows for L:alpha-one-convolution and (after FS1)
+  L:fixed-split; L:higher-riesz scope updated after R2, full after R3 [yes];
+  6. E:interval-metric overlap with L9-H3: FS0 owns the general telescoping
+  lemma, no duplicate claims [yes]; 7. L10-J and L10-Jrho optional, only with
+  spare capacity, Lp G 2 completion, the K_0 row lemma taken from L8-c2 [yes];
+  8. <MACHINE> capacity: at most 3 concurrent builds, first batch R2, W0, FS0,
+  A1 [yes]; 9. fallbacks are named inputs (TwoDimBallMass, WhiteSpectral,
+  PolarDegreeOne), never surrogates; at most two repair rounds per item [yes].
+
+  Gates as in L8/L9. Not in L10, with reasons: the narrowing of
+  P:occupation-physical-class (needs an H^1-valued type and a
+  joint-representative theorem absent from Mathlib; 1000-1500 lines; L11
+  candidate); the derivative clause of L:variational-global-mean (no consumer);
+  the real-H clause of P:masked-auxiliary-norm (low value); everything needing
+  D1/D3/D7/D8 (tube "In particular", P:interval-coefficients' coefficient model,
+  operator statements, P:wave-two-variances and P:masked-noise-completion
+  links, B5, B11, B12, B17-B19, B22 rest, C2, C16, C9 rest); reserved B3, B4,
+  B9; the mean identity E:positive-raw-mean and the C_2 forms.
 - **WAVE L9: APPROVED by Le (2026-11-12) as proposed, with the default
   answers to the nine decisions; to launch on <MACHINE> once the wave-L8
   integration commit exists.** Le, verbatim: "I approve Lean wave L9 as
@@ -1148,6 +1202,7 @@ Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine
 | L8 | OPEN (approved by Le) | 2026-11-12 | Defaults for the six decisions; nine agents launched; Easley L7 replay submitted via <MACHINE> |
 | L9 | PROPOSED | 2026-11-12 | Seven items (+1 optional) to run on <MACHINE>: exact occupation ceiling (A1, A2), Hermite/Fock foundation and consumers (H1, H2), wave Green Fourier d = 2, 3 (G), L:phase-contractions (P), L:low-alpha-convolution (L); awaiting Le's approval |
 | L9 | APPROVED (Le) | 2026-11-12 | Default decisions; launches on <MACHINE> after the L8 integration commit |
+| L10 | PROPOSED | 2026-11-12 | Independent cores on <MACHINE> (higher-Riesz d = 2, white-model prerequisites, fixed-split core, alpha-one convolution); dependent assemblies after L8/L9; awaiting Le's approval |
 
 ## New proof seams retained for later statement fences
 
