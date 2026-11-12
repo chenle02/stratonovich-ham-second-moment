@@ -10,7 +10,7 @@ Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine
 
 | Item | Current state |
 |---|---|
-| Current wave | **L8 OPEN** (approved 2026-11-12): six of nine items done and verified on their branches (a `b561f2a`, b `d339819`, d `8cd7e26`, e `e9b6dbc`, g `f33ab21`, h `efdba69`); c1, c2, f running. **L9 PROPOSED** (to run on <MACHINE>), awaiting Le's approval. **L10** being prepared on <MACHINE> (independent items) |
+| Current wave | **L8 OPEN** (approved 2026-11-12): six of nine items done and verified on their branches (a `b561f2a`, b `d339819`, d `8cd7e26`, e `e9b6dbc`, g `f33ab21`, h `efdba69`); c1, c2, f running. **L9 APPROVED** (2026-11-12, defaults): launches on <MACHINE> after the L8 integration commit. **L10** being prepared on <MACHINE> (independent items) |
 | Last closed gate | **L7**, closed by Le 2026-11-12 at companion `f3be834` over manuscript `a284420`, together with the re-anchor from `975feb3` |
 | Manuscript anchor | Article `a284420` (#3's two approved edits: `L:spatial-fourier-bound`, `E:damped-multiplier-comparison`) |
 | Companion | `chenle02/stratonovich-ham-second-moment-lean`, PRIVATE (HOLD: no public flip without Le); lean-pkg `verified-private` at `f3be834` (receipts `5aa557b`: comparator PASS over all 1430 theorem claims; lower tier 0 sorry, 1731 claim axioms, standard axioms only); docs-only HEAD `fcdf252`; `claims ledger` READY, 1071 required, 1681 verified, 0 open |
@@ -25,7 +25,7 @@ Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine
 | Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
 | Compute | this laptop: L8 agents, integration, receipts; Office (36 cores): companion built at `0269e61`, `office-lean.sh` compile wrapper, Easley route, L9 compiling; <MACHINE> (12 cores): L10 independent items (companion being built there) |
-| Decisions open for Le | approve L9 (with its nine defaults); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
+| Decisions open for Le | the L8 gate (after its reviews); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
 | Next actions | L8 items -> integration, docs, comparator, receipts, reviews, Le's gate; collect the Easley L7 replay (via <MACHINE>) |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
@@ -550,7 +550,12 @@ Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
-- **WAVE L9: PROPOSED (2026-11-12) for Le's approval; to run on <MACHINE>.** From
+- **WAVE L9: APPROVED by Le (2026-11-12) as proposed, with the default
+  answers to the nine decisions; to launch on <MACHINE> once the wave-L8
+  integration commit exists.** Le, verbatim: "I approve Lean wave L9 as
+  proposed in lean-progress/PROGRESS.md, with the default answers to its
+  nine decisions. Launch the items in parallel subagents compiling on <MACHINE>
+  once the L8 integration commit exists." Proposal as written: From
   three read-only feasibility reconnaissances against the TeX at a284420, with
   every Mathlib name probed by compiling on <MACHINE> (session scratch
   l9-feas/R1.md, R2.md, R3.md and their probe files; office-lean.sh). Excludes
@@ -1142,6 +1147,7 @@ Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine
 | L8 | PROPOSED | 2026-11-12 | Eight items: R_alpha identity; damped-norm lower bounds and smoothing claims; S1Bdd discharged deterministically (two agents); spatial bracket for S_2^pos; mask removal; finite Wick foundation and L:terminal-wick; symplectic-free core; static-phase Cauchy steps; awaiting Le's approval |
 | L8 | OPEN (approved by Le) | 2026-11-12 | Defaults for the six decisions; nine agents launched; Easley L7 replay submitted via <MACHINE> |
 | L9 | PROPOSED | 2026-11-12 | Seven items (+1 optional) to run on <MACHINE>: exact occupation ceiling (A1, A2), Hermite/Fock foundation and consumers (H1, H2), wave Green Fourier d = 2, 3 (G), L:phase-contractions (P), L:low-alpha-convolution (L); awaiting Le's approval |
+| L9 | APPROVED (Le) | 2026-11-12 | Default decisions; launches on <MACHINE> after the L8 integration commit |
 
 ## New proof seams retained for later statement fences
 
