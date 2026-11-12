@@ -25,7 +25,7 @@ Last updated: 2026-11-12 (evening), L8 merged into companion main (`3518233`, co
 | Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
 | Compute | this laptop (<MACHINE>): orchestration, merges, receipts, docs agent; Office (36 cores): L9 items compiled there (`office-build.sh`, worktrees `~/l9wt/<item>`), now L8 additions (`~/l9wt/L8X`) and L9 integration (`~/l9wt/int`); <MACHINE> (12 cores): L10 items (`homedell-build.sh`, `~/l10wt/<item>`); Easley via <MACHINE>: L7 replay running, L11 array harness ready |
-| Decisions open for Le | the L8 gate (after receipts and reviews; decided 2026-11-12: `T:intrinsic-occupation-ceiling` recorded as same-assumptions, narrower, constant K_0 R_sp); L8-f's extra supplied input (chain measures by their mass); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD; companion first public tag will be `v1.0.0`, matching the book's version rule 6f53bd8); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
+| Decisions open for Le | the L8 gate (after receipts and reviews; decided 2026-11-12: `T:intrinsic-occupation-ceiling` recorded as same-assumptions, narrower, constant K_0 R_sp); L8-f's extra supplied input (chain measures by their mass); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD; version levels approved 2026-11-12: first public tag `v1.0.0`, `.github` CODEOWNERS and labels drafts to adopt at release); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
 | Next actions | L8: finish wrapper + comparator 1747 and docs merge → merge to main → both receipts at one commit, regate, claims ledger → Easley L11 build + pilot → Codex reviews + confirmation → Le's gate, tag `L8-gate`. L9: integration → docs, comparator, receipts, reviews. L10: launch FS1, R3, A1i on <MACHINE> once L9 is integrated; W1 after L8 receipts. Collect the Easley L7 replay |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
@@ -550,6 +550,22 @@ Last updated: 2026-11-12 (evening), L8 merged into companion main (`3518233`, co
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
+- **COMPANION VERSION LEVELS (Le, 2026-11-12, relayed by #24).** Approved
+  with #22's three adjustments and the receipt rule: first public tag
+  `v1.0.0` (same MAJOR.MINOR.PATCH scheme as the book, Article
+  private/drafts/VERSIONING.md); patch = no claim changes (comments, docs,
+  statement-preserving refactor, a Lean/Mathlib/lean-pkg upgrade keeping every
+  statement, a re-anchor to a book minor/patch release with only references
+  changed); minor = claims added or a coverage row widened, every existing
+  statement kept; major = a Lean statement changed, a claim removed, a
+  coverage row narrowed or removed, or a move to a new book MAJOR version.
+  Every tag of any level sits on a commit carrying its own lean-pkg receipts
+  (comparator + lower tier, regated) or on a descendant touching no Lean
+  file, claim or coverage entry. Files to adopt in the companion at release:
+  Article private/drafts/companion/.github/CODEOWNERS and labels.yml. Owner
+  bypass while there is one maintainer; rulesets and squash-only merging
+  (private/2026-11-12-community-settings.md) apply after the companion is
+  public. The `<wave>-gate` milestone tags stay. Public release still HOLD.
 - **L8 COVERAGE DECISION (Le, 2026-11-12): `T:intrinsic-occupation-ceiling`
   is recorded as same-assumptions with a narrower conclusion for the L8
   gate.** Le, verbatim: "I accept recording T:intrinsic-occupation-ceiling as
