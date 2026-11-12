@@ -41,8 +41,9 @@ rendered diagram pages were reviewed. The complete figure set appears in the
 technical companion. See [the figure guide](figures/README.md). The earlier
 20-page reading editions remain historical; the current reader has 28 pages.
 
-The technical companion is now a book with 11 chapters and 6 appendices (the
-last two give the AI work in numbers and what Lean checks). The
+The technical companion is now a book with 11 chapters and 7 appendices (the
+last three give the AI work in numbers, what Lean checks, and the approaches
+that do not work). The
 reader remains in article format. Its technical references use the book's
 chapter/section numbering and printed pages, including explicit links to the
 appendices. See [the book guide](BOOK-GUIDE.md) and its numbering map. The

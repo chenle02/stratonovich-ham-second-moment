@@ -19092,3 +19092,46 @@ reviewed mathematical sections are byte-identical to their frozen candidate.
 Final checks:0errors,0undefined references/citations,0overfull boxes;216proofs,
 213unchanged;96reader labels,266links and373index records. New labels and exact
 ranges are recorded in final-label-ranges.json in the review directory.
+
+## 2026-11-11/12: Appendix G (approaches that do not work), the preface roles sentence, and Appendix F re-pins
+
+Le asked that no-gos be treated as first-class results (Tao, Mathstodon,
+2026-01-17, on the reporting bias against negative results). New Appendix G,
+"Approaches that do not work" (33f1777), lists all 33 mathematical no-gos of the
+record, NG-01 to NG-33 (ids as in scripts/ai-statistics/no-go/nogo-counts.json):
+what was tried, why it fails, what it does not rule out, and the status (8 proved
+in the book, 14 reviewed and settled, 11 recorded only). The four source-paper
+records stay held back ("Four further records concern the source paper; they are
+not listed here."). Appendix E keeps the counts and points to G. Preface: the
+Proofs and Prompts list is renumbered by date, Duminil-Copin's "Care for a little
+more AI?" is [P2] (Noel now [P13]); new sentences cite Morris [P8],
+Duminil-Copin [P2] and Tao (extra.bib tao:26:post). Gate: GPT-6 Astra (codex
+exec, read-only, refute mode) returned FAIL with 11 findings (2 blockers, 7
+major, 2 minor); all fixed, the source-defect blocker by rewording (the counts
+in Appendix E stay, as approved), the symlink blocker concerned the scratch
+preview only. Real release filter: all public files byte-identical.
+
+Preface roles sentence (Le's decision relayed by #16, 633c7d7): "Amy developed
+the mathematics: the models working within her drafted the proofs, the LaTeX
+source and the bookkeeping. My role was to drive the work: ..."
+
+Appendix F re-pins (verified commit / coverage commit of the Lean companion):
+- b68fec0: bfa2fd0 / e4c9bd4 after the wave-L6 gate; new sentence that the most
+  recent modules are not yet checked by the separate kernel checker on the
+  cluster (cluster unnamed, release keep-out rule).
+- feb29c2: coverage d3d7f4c, #22's plain-English rewording of two scope
+  sentences. It introduced an error (lambda called the Rayleigh supremum; it is
+  the square root), caught by #22's wave-L7 review; #16 was told to hold.
+- c6dded6: coverage 3c158f5 (branch appendix-f-lambda) fixes it. The pin
+  script's ledger check could not run because lean-pkg evaluates the ledger
+  against the companion clone's local HEAD (L7 work in progress), not the
+  verified commit; the bfa2fd0 summary from the READY ledger was kept.
+- dcb031e: f3be834 / ed3cd68 after Le closed wave L7 and the re-anchor to
+  a284420. 67 rows; 1731 claims; comparator 1430 PASS; ledger 1681 verified,
+  0 open, 50 out of scope; 840 unlabelled. make_appendix_f.py now writes one
+  small table per row, so a long group breaks across pages.
+All built in clean worktrees at origin/master (the shared PDF had #3's
+uncommitted work), committed by pathspec and fast-forwarded; 0 errors,
+0 undefined, 0 overfull. Book 345 pages; F on 307-310, G on 311-317.
+Open: #22 to replace the TeX line range "(lines 409-414)" in the
+P:occupation-physical-class row; then a coverage-only re-pin.
