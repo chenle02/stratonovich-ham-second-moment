@@ -1,4 +1,4 @@
-<!-- Headings and tables of the Lean companion's COMPLETION.md at ff401578ebbb, pinned by pin_companion.py; the prose is omitted. -->
+<!-- Headings and tables of the Lean companion's COMPLETION.md at d9ded8f34754, pinned by pin_companion.py; the prose is omitted. -->
 
 # Completion record
 

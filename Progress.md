@@ -19342,3 +19342,11 @@ major: material outside the permitted sources; "static" dropped from Chapter 9),
 all fixed; confirmation pass PASS, no new findings. Agent 3 told before drafting.
 Book 382 pages; guide page table recomputed from the aux (every range after
 Chapter 1 moves by one page). 0/0/0.
+
+Appendix F coverage re-pin (2026-11-12): coverage now from companion d9ded8f
+(docs-only after verified aff7409), which records the cluster replay of the L8
+gate: every library module, the umbrella and Axioms, 92/92 PASS --fresh and in
+default mode. The replay sentence drops "not yet checked this way" and says every
+module of the Lean library was checked a second time, except the three helper
+libraries used only for the separate statement check (README: not replayed).
+Receipts and tables unchanged.
