@@ -1,0 +1,379 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "INCONCLUSIVE",
+  "confidence": "medium",
+  "source_coverage": [
+    "candidate/statement-ledger.md:1-708,763-788,2780-2814,5616-5754,7329-7365; complete for required Scope, Index and SymplecticFree sections; other ranges are selected cross-reference context.",
+    "lean/StratonovichHAMSecondMoment/SymplecticFree.lean:1-764; complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105; complete.",
+    "lean/StratonovichHAMSecondMoment/WaveKernel.lean:1-98; partial file, required waveHat declaration at 43-44 complete.",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean:359-501; partial file, required freeWaveData_nonempty declaration and supporting translation construction complete.",
+    "lean/Audit/symplectic-free/Audit.lean:1-152; complete.",
+    "lean/refutations/symplectic-free/NontrivialSpace.lean:1-37; complete.",
+    "lean/refutations/symplectic-free/NotOrthogonal.lean:1-36; complete.",
+    "lean/refutations/symplectic-free/WeakNullity.lean:1-40; complete.",
+    "lean/refutations/symplectic-free/ZeroFrequency.lean:1-36; complete.",
+    "lean/claims.yaml:14112-14533,14843-14849; complete for required SymplecticFree entries and the non-vacuity entry.",
+    "lean/coverage.yaml:578-636; complete for L:symplectic-free row at 584-627.",
+    "docs/coverage-scope-tex.yaml:1-30; complete for required entry at 22-24.",
+    "excerpts/tex-excerpts.txt:1-195; complete.",
+    "manuscript/notes/integrated_symplectic_phase.tex:1-140; complete for cited statement and proof at 30-133.",
+    "manuscript/notes/integrated_constant_phase_young.tex:130-256; complete for cited Young proposition and proof.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:215-242; complete for cited H:homog.",
+    "manuscript/: recursive exact-label searches found H:homog at notes/notes_stratonovich_ham_second_moment.tex:225; P:constant-young-linear at notes/integrated_constant_phase_young.tex:190; L:symplectic-free and its two baseline labels at notes/integrated_symplectic_phase.tex:31,45,53, each exactly once.",
+    "PROVENANCE.json:1-32 plus matching revision and symplectic-path metadata lines; partial, not a complete manifest or byte-binding audit.",
+    "lean/provenance/manuscript-anchor.json:1-20,295-315; additional search matches at 426,824,1091,1353,1590,1772; partial.",
+    "StratonovichHAMAudit/DimensionalMatrix.lean: no lines read; required forward declaration is absent from the frozen packet."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.Jsymp: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "SymplecticFree.lean:103 defines '!![0, 1; -1, 0]' without hypotheses; integrated_symplectic_phase.tex:64 defines 'J_symp(q,p) = (p,-q)'. Ledger:5695 and claims.yaml:14116 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.omega2: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:107 takes arbitrary real two-vectors and defines 'z ⬝ᵥ (Jsymp *ᵥ w)'; TeX:79-84 uses the same per-frequency matrix form before Fourier integration. Ledger:5696 explicitly excludes that integration; claims.yaml:14123 matches."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.omega2_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:110 states, for arbitrary real two-vectors, 'omega2 z w = z 0 * w 1 - z 1 * w 0'. TeX:64,79-84 supplies the underlying symplectic matrix, not this separate coordinate lemma. Ledger:5697 and claims.yaml:14130 correctly describe an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.transpose_mul_Jsymp_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:116-117 assumes an arbitrary real 2-by-2 matrix and concludes 'Mᵀ * Jsymp * M = M.det • Jsymp'. TeX:79-81 checks the particular free matrix. The general determinant identity is correctly designated a Lean-route auxiliary at ledger:5698 and claims.yaml:14137."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.omega2_mulVec: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:123-124 quantifies arbitrary real M,z,w and gives determinant scaling of omega2; TeX:79-84 concerns the determinant-one free matrix and its integrated form. Ledger:5699 and claims.yaml:14144 accurately designate the general identity an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.sineQuotient: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:130 defines 't * Real.sinc (t * k)' for all real t,k; TeX:74-79 uses sin(tk)/k with its continuous value t at zero. WaveKernel.lean:44 has the identical formula at k=norm xi. Ledger:5700 and claims.yaml:14151 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.sineQuotient_of_ne_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:133-134 assumes 'hk : k ≠ 0' and concludes the quotient formula. TeX:74-79 uses that quotient away from zero and its extension at zero. Ledger:5701 and claims.yaml:14158 accurately state the auxiliary specialization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.sineQuotient_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:142 states 'sineQuotient t 0 = t' for every real t; TeX:78-79 uses precisely this extension in the zero-frequency matrix. Ledger:5702 and claims.yaml:14165 correctly record the scalar helper without claiming a separately labelled statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.sineQuotient_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:146 has no nonzero-frequency hypothesis: 'sineQuotient t k * k = sin(t*k)'. TeX:74-81 supplies the quotient and determinant calculation, but not this standalone identity. Ledger:5703 and claims.yaml:14172 accurately identify the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.continuous_sineQuotient: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:153 states continuity in k for every real t; TeX:78-79 expressly invokes the 'continuous sine quotient'. Ledger:5704 and claims.yaml:14179 preserve the variable and quantifier."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.sineQuotient_neg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:158 states oddness in t for all real t,k; TeX:120-121 asserts the reversal identity, rather than a separate scalar oddness lemma. Ledger:5705 and claims.yaml:14186 correctly classify the helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.freeMatrix: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:164-165 defines the displayed matrix for arbitrary t,k,br; TeX:70-79 specializes k=|xi| and br=<xi>. Ledger:5706 describes this parametrization and excludes its Fourier-operator interpretation; claims.yaml:14193 agrees. At arbitrary br the zero value is [[1,br*t],[0,1]], as the subsequent row expressly states."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.freeMatrixAt: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:168-169 substitutes 'norm xi' and 'sqrt(1+norm xi^2)' for every Euclidean frequency; TeX:70-76 uses k=|xi| and the Bessel bracket. Ledger:5707 and claims.yaml:14200 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.bracket_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:172 asserts positivity of sqrt(1+norm xi^2) for every d,xi; TeX:74-76 divides by <xi>, whose positivity is implicit. Ledger:5708 and claims.yaml:14207 correctly identify an auxiliary side-condition proof."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.freeMatrix_eq_forward: L:symplectic-free",
+      "verdict": "INCONCLUSIVE",
+      "reason": "Lean:177-180 assumes 'k ≠ 0' and 'br ≠ 0' and equates freeMatrix with the imported DimensionalMatrix.forward at q=k/br. TeX:74-76 displays the expected quotient matrix. Ledger:5709 and claims.yaml:14214 match the visible theorem type, but the required imported forward declaration is absent from the packet, preventing complete verification of its advertised expansion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.freeMatrix_zero_freq: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:187 has arbitrary real t,br and concludes '[[1, br*t],[0,1]]'; TeX:78 gives [[1,t],[0,1]] at physical frequency zero, where br=<0>=1. Ledger:5710 and claims.yaml:14221 explicitly retain br, so the harmless parametrization is not concealed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.freeMatrixAt_zero: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:191-192 quantifies every d,t and concludes 'freeMatrixAt t 0 = !![1,t;0,1]'; TeX:78 gives exactly that matrix. Ledger:5711 and claims.yaml:14228 match, without using zero-division values."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.continuous_freeMatrix: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:197-198 fixes real t,br and proves continuity in k; TeX:78-79 invokes continuous extension of the frequency formula. Ledger:5712 and claims.yaml:14235 correctly specify fixed br, rather than claiming a constructed Fourier multiplier."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.det_freeMatrix: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:207 assumes only 'br ≠ 0' and gives determinant one for all real t,k, including zero; TeX:80-81 gives cos^2(tk)+sin^2(tk)=1, 'also at zero'. Ledger:5713 and claims.yaml:14242 preserve this scope."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.freeMatrix_symplectic: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:220-221 assumes 'br ≠ 0', with arbitrary t,k, and concludes Wᵀ Jsymp W=Jsymp; TeX:79-81 states the same identity for the physical bracket, which is positive. Ledger:5714 and claims.yaml:14249 accurately expose the generalized parameter."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.freeMatrixAt_symplectic: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:225-227 has every real t and every Euclidean xi, with bracket positivity discharged internally; TeX:79-81 includes frequency zero. Ledger:5715 and claims.yaml:14256 match exactly at the per-frequency level."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.freeMatrix_preserves_omega2: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:230-231 assumes 'br ≠ 0' and arbitrary real two-vectors, proving omega2(Wz,Ww)=omega2(z,w). TeX:79-84 uses this frequency identity and then integrates. Ledger:5716 explicitly excludes the integration; claims.yaml:14263 matches the narrower conclusion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.freeMatrix_mul: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:236-237 assumes 'br ≠ 0' and proves W_s W_t=W_(s+t) for all real s,t,k. TeX:121-122 invokes the free-group law. Ledger:5717 correctly distinguishes this frequency realization from the supplied operator group; claims.yaml:14270 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.reversal: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:251 defines '!![1,0;0,-1]' without hypotheses; TeX:120 defines velocity reversal '(u,v)=(u,-v)'. Ledger:5718 and claims.yaml:14277 correctly state its one-frequency version."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.reversal_freeMatrix: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:254-255 quantifies all real t,k,br and proves R W_t R=W_(-t); TeX:120-121 obtains operator reversal from the full free Fourier matrix. Ledger:5719 and claims.yaml:14284 correctly report the algebraic identity and supplied operator counterpart."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.omega: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:265-269 assumes real modules and a bilinear pairing P, defining P(u,g)-P(f,v); TeX:35-38 uses the particular Sobolev duality. Ledger:5720 explicitly leaves that duality and J_E identification outside Lean; claims.yaml:14291 is faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.force: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:273 takes an arbitrary map M:U→V and defines '(0,M z.1)'; TeX:41 has '(0,bu)'. Ledger:5721 and claims.yaml:14298 clearly state the substitution M u=b u rather than asserting construction of Sobolev multiplication."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.omega_force_skew: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:278-280 assumes '∀ u f, P f (M u)=P u (M f)'; TeX:88-90 establishes this symmetry for bounded real b through duality and the cancellation integrals. Ledger:5722 expressly lists that symmetry as supplied; claims.yaml:14305 matches."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.omegaL2: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:287-292 takes any measure and pairs of real functions, using totalized Bochner integrals; TeX:89-90 uses genuine L²-function duality in the cancellation. Ledger:5723 discloses totalization and the missing duality identification; claims.yaml:14312 accurately describes the definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.forceL2: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:295-296 takes arbitrary real functions and defines '(0, fun x => b x*z.1 x)'; TeX:41,88-90 uses the same pointwise force for bounded smooth b. Ledger:5724 and claims.yaml:14319 accurately identify this function-level object."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.omegaL2_force_skew: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:300-307 requires no integrability: the two totalized integrals have identical integrands. TeX:89-90 states the absolutely integrable cancellation '-int fbu+int ubf=0'. Ledger:5725 explicitly distinguishes the unrestricted algebraic identity from the separately proved integrability; claims.yaml:14326 matches."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.integrable_mul_force: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:311-313 assumes 'AEStronglyMeasurable b', '∀ x, |b x|≤C', and MemLp u 2, MemLp f 2; TeX:88-90 assumes bounded smooth b and obtains absolute integrability for the L² functions. Ledger:5726 and claims.yaml:14333 faithfully expose the function-level generalization and omitted Sobolev bound."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.isCompactOperator_mul_left: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:330-331 assumes a bounded operator A and compact K, concluding A*K compact; TeX:100-101,125-127 uses bounded–compact composition. Ledger:5727 and claims.yaml:14340 correctly treat the standalone ideal lemma as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.isCompactOperator_mul_right: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:337-338 assumes compact K and bounded A, concluding K*A compact; TeX:100-101,125-127 uses the same ideal property within its proof. Ledger:5728 and claims.yaml:14347 accurately record the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.isCompactOperator_sub': no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:344-345 assumes compact A,B and concludes A-B compact; TeX:94-98 uses compact increments of X without isolating this general lemma. Ledger:5729 and claims.yaml:14354 faithfully classify it as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.isCompactOperator_add': no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:351-352 assumes compact A,B and concludes A+B compact; TeX:125-127 uses finite sums of compact products. Ledger:5730 and claims.yaml:14361 accurately describe a general auxiliary rather than a separately labelled result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.isCompactOperator_of_tendsto: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:359-361 requires a complete normed real space, '[l.NeBot]', operator-norm convergence and eventual compactness. TeX:98-99 takes an operator-norm limit in the compact ideal on the Hilbert phase space. Ledger:5731 and claims.yaml:14368 expose the essential filter condition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.youngSum: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:365-367 defines 'sum j<n, (X(p(j+1))-X(p j))*U(p j,s)' for arbitrary nodes; TeX:94-97 displays exactly that left-composition sum over partition nodes. Ledger:5732 and claims.yaml:14375 preserve multiplication order."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.isCompactOperator_youngSum: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:371-373 assumes '∀ j≤n, IsCompactOperator (X(p j))', with arbitrary U; TeX:94-98 assumes compact-valued X and asserts each displayed sum compact. Ledger:5733 and claims.yaml:14382 correctly state the sufficient finite-node hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.orderedProd: E:symplectic-compact-product-baseline",
+      "verdict": "PASS",
+      "reason": "Lean:383-385 defines P_0 at N=0 and left-multiplies by P_(n+1); TeX:54-57 uses P_N...P_0. Ledger:5734 and claims.yaml:14389 match the factor count and order."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.isCompactOperator_orderedProd_sub: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:389-391 assumes '∀ j≤N, compact(P j-Q j)' and concludes compactness of the ordered-product difference; TeX:125-128 telescopes against free factors using bounded–compact–bounded products. Ledger:5735 and claims.yaml:14396 accurately generalize that step without commuting noisy factors."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.WeaklyNull: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:414-415 defines '∀ w, Tendsto (inner (x i) w) l (nhds 0)'; TeX:105-110 proves the corresponding translated pairing limit and calls it weak convergence to zero. Ledger:5736 and claims.yaml:14403 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.eq_zero_of_mapClusterPt: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:420-422 assumes continuous g, a map-cluster point p and g(f i)→0, concluding g(p)=0; TeX:111-113 instead uses a norm-convergent subsequence and bounded linear testing. Ledger:5737 and claims.yaml:14410 correctly identify the different-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.tendsto_compact_of_weaklyNull: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:411,433-435 assumes a real Hilbert space, compact K, '∀ i, norm(x i)≤C' and weak nullity along any filter. TeX:104-113 supplies boundedness through translation isometries and proves norm-null compact images. Ledger:5738 and claims.yaml:14417 accurately disclose the filter/cluster-point route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.norm_le_norm_add_compact: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:451-454 requires a nontrivial filter, norm-preserving tau, commutation with S, weak nullity on every vector and compact K. TeX:104-119 establishes precisely these properties for translations before taking the operator-norm supremum. Ledger:5739 and claims.yaml:14424 correctly state the abstract deduction."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.norm_le_of_sub_compact: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:478-481 retains the same nontrivial-filter/isometry/commutation/nullity hypotheses and assumes compact(A-S). TeX:100-101 supplies that compact difference and TeX:103-119 supplies the bound. Ledger:5740 and claims.yaml:14431 accurately state the corollary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.one_le_norm_of_reversal: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:495-496 explicitly assumes '[Nontrivial E]', B*A=I, norm-preserving R and B=R*A*R. TeX:120-122 uses the nonzero concrete phase space, isometric reversal and group inverse to obtain 1≤norm(S(h))². Ledger:5741 and claims.yaml:14438 correctly expose nontriviality."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.FreeWaveData: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:522-535 supplies S(0)=I, the group law, isometric R with S(-h)=R*S(h)*R, and commuting isometric tau with cocompact weak nullity. TeX:104-110,120-122 proves these properties for concrete translations and reversal. No field is stronger than those facts; ledger:5742 and claims.yaml:14445 accurately disclose the abstraction. L8Completed.lean:487-499 supplies a nontrivial-dimensional model for d≥1, not the physical wave group."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.LeftYoungSumsConverge: L:symplectic-free",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean:543-547 requires an existential nontrivial filter on node lists, eventual membership in [s,t], and sums→U(t,s)-I. TeX:94-98 has genuine partition sums converging in operator norm; that implies this weaker input. Ledger:5743 and claims.yaml:14452 give the operative conditions, but 'partitions' omits the distinction that Lean enforces neither ordered endpoints nor mesh refinement (W1)."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.FreeWaveData.cocompact_neBot: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:554-557 assumes '1≤d' and concludes the Euclidean cocompact filter is nontrivial; TeX:109-110 takes |y|→infinity in positive-dimensional space. Ledger:5744 and claims.yaml:14459 correctly designate the filter side-condition proof as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.FreeWaveData.one_le_norm: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:561-564 assumes '[Nontrivial E]' and supplied F, with no completeness requirement, and concludes 1≤norm(F.S h). TeX:120-122 gives the same deduction from inverse and isometric reversal on E. Ledger:5745 and claims.yaml:14466 accurately expose F."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.FreeWaveData.norm_le_norm_add_compact: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:551,567-571 assumes real Hilbert E, supplied F, '1≤d' and compact K. TeX:104-119 supplies commuting weakly vanishing isometric translations and concludes the same norm inequality. Ledger:5746 and claims.yaml:14473 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.compact_young_baseline: E:symplectic-compact-young-baseline",
+      "verdict": "PASS",
+      "reason": "Lean:577-583 assumes nonzero Hilbert E, supplied F, d≥1, compact X on [s,t] and LeftYoungSumsConverge; it proves both compact differences and 1≤norm(S(t-s))≤norm(endpoint). TeX:43-49,94-123 supplies stronger path/evolution hypotheses and those same conclusions. Ledger:5747 and claims.yaml:14480 explicitly describe this general supplied-input form."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.FreeWaveData.orderedProd_S: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:601-602 assumes only supplied F, arbitrary real lengths and N, and combines the ordered free product into S(sum lengths). TeX:127-128 says 'Only the free factors are combined by the group law'. Ledger:5748 and claims.yaml:14487 accurately record the standalone helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.compact_product_baseline: E:symplectic-compact-product-baseline",
+      "verdict": "PASS",
+      "reason": "Lean:614-621 assumes nonzero Hilbert E, supplied F, d≥1 and compact(U_j(l_j,0)-I) for j≤N, with no length sign restriction. TeX:50-58,125-129 derives those compact differences from its Young paths and nonnegative lengths. Ledger:5749 and claims.yaml:14494 correctly describe the generalized hypothesis and identical product conclusions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.one_le_dim: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean:647-648 assumes HomogCovariance and extracts '1≤d' from its dimension field; TeX H:homog at notes_stratonovich_ham_second_moment.tex:226 assumes 'd in {1,2,3}'. Ledger:5750 and claims.yaml:14501 accurately identify the elementary auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.symplectic_compact_young_baseline_paper: E:symplectic-compact-young-baseline",
+      "verdict": "PASS",
+      "reason": "Lean:659-668 takes H:homog, supplied F, nonzero Hilbert E, T>0, 1/2<theta<1, HolderOnWith X on [0,T], X(0)=0, compact values and supplied convergence for every 0≤s≤t≤T. TeX:43-49 has the same path and time hypotheses with U_X its Young evolution; TeX:94-98 supplies convergence. Ledger:5751 and claims.yaml:14508 honestly state supplied inputs and reproduce all displayed conclusions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.symplectic_compact_product_baseline_paper: E:symplectic-compact-product-baseline",
+      "verdict": "PASS",
+      "reason": "Lean:681-694 takes H:homog, supplied F, nonzero Hilbert E, 1/2<theta<1, compact Hölder paths starting at zero, lengths in [0,B], and supplied convergence for j≤N. TeX:50-58 assumes the same finite family and length range with actual Young evolutions. Ledger:5752 and claims.yaml:14515 disclose the replacement and preserve factor order, compactness and both norm inequalities."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.symplectic_force_skew_paper: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:707-714 assumes H:homog, C-infinity real b and a global bound, proving integrability for MemLp-2 u,f and unrestricted function-level omegaL2 cancellation. TeX:40-41,88-91 assumes bounded real smooth b but concludes skewness for Sobolev duality on E. Ledger:5753 explicitly states the narrower L² object and omitted identification; claims.yaml:14522 matches."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SymplecticFree.symplectic_free_paper: L:symplectic-free",
+      "verdict": "PASS",
+      "reason": "Lean:729-754 combines supplied F and Young convergence, nonzero Hilbert E, the two wrappers' path hypotheses and bounded smooth b. TeX:30-60 additionally constructs J_E and asserts preservation of omega on the concrete phase space. Ledger:5754 explicitly excludes those conclusions and identifies the L² force substitution; claims.yaml:14529 faithfully summarizes the four actual conjuncts."
+    },
+    {
+      "claim": "PARA-SymplecticFree",
+      "verdict": "INCONCLUSIVE",
+      "reason": "Ledger:5616-5692 correctly locates the TeX statement/proof, distinguishes frequency algebra from the abstract supplied group, describes the filter proof route and lists the omitted Sobolev/Young constructions. Full confirmation of the DimensionalMatrix comparison at 5633-5634 is blocked by its absent source. Minor wording issues remain concerning 'partitions' and the statement that T>0 is carried in both wrappers (W1,W2)."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "The complete Index at ledger:365-708 lists the 60 declarations exactly once across rows 681-686, with matching labels and the 16 specified auxiliaries under no direct label. Recursive manuscript searches found each of the five labels cited by this section exactly once at the locations recorded in source_coverage."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:584-627 correctly uses 'inputs-supplied' and 'weaker', lists the supplied group/translation/reversal and Young convergence facts, and excludes J_E and preservation on E. Its claim identifiers occur in claims.yaml:14112-14532 and14843-14849. The non-vacuity theorem is an identity-group L² model, not a construction of the physical free group."
+    },
+    {
+      "claim": "SCOPE-RULES",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:590 and docs/coverage-scope-tex.yaml:22-24 have identical ASCII content and mathematically equivalent TeX content. They contain no Lean declaration/module names or source locators. The symbols W_t,J_symp,J_E and omega name manuscript objects. No rate lambda is described in this entry."
+    },
+    {
+      "claim": "REFUTATIONS",
+      "verdict": "PASS",
+      "reason": "NontrivialSpace.lean:22-35 refutes dropping nontriviality using the zero space; NotOrthogonal.lean:24-34 refutes orthogonality at t=1,k=0,br=1; WeakNullity.lean:25-38 refutes the unrestricted compact-perturbation bound on R with K=-I; ZeroFrequency.lean:25-34 refutes the identity value at frequency zero. These are genuine perturbations of the TeX:78-81,103-122 facts. Their headers accurately describe the counterexamples. The target ledger section contains no separate descriptions of these four refutations to contradict."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The Scope at ledger:273-277, the DimensionalMatrix discussion at 763-787 and the non-vacuity cross-reference at 2790-2793,2813 are consistent with the abstract/narrower scope. The Not in Lean parenthesis at 7345-7349 ambiguously attaches 'supplied as FreeWaveData' to J_E and preservation of omega, neither of which is a field (W3). Its main assertion that these are not formalized is correct."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "W1 — LeftYoungSumsConverge terminology. Ledger:5657-5660,5743 says 'filter of partitions'; SymplecticFree.lean:545-547 requires only a nontrivial filter on (n,p), eventual node membership in [s,t], and convergence. It requires neither p(0)=s, p(n)=t, ordering, nor mesh tending to zero. TeX integrated_symplectic_phase.tex:94-98 uses genuine partition sums. The weaker condition is sufficient and is implied by the TeX, so this does not invalidate the baseline deduction. Optional clarification: call these 'finite node lists' and explicitly state the omitted partition/mesh conditions.",
+      "W2 — Unused-hypothesis prose. Ledger:5669-5671 says 'T > 0 ... in both baseline wrappers'. SymplecticFree.lean:661 has '_hT : 0 < T', whereas the product wrapper at 681-689 has B and no positive-horizon hypothesis. TeX integrated_symplectic_phase.tex:43-51 likewise distinguishes [0,T] from the product horizon [0,B]. Optional fix: restrict the T>0 statement to the single-path wrapper.",
+      "W3 — Not in Lean parenthetical scope. Ledger:7345-7349 groups the free group, J_E and preservation of omega before saying 'supplied ... as FreeWaveData'. SymplecticFree.lean:522-535 supplies only the group, reversal and translation data; TeX integrated_symplectic_phase.tex:32-40,63-84 separately constructs J_E and proves preservation. Optional fix: attach the supplied-input parenthesis only to the free-group data, and separately say that J_E and preservation are omitted."
+    ]
+  },
+  "required_repairs": [
+    "Supply the frozen source declaration StratonovichHAMAudit.DimensionalMatrix.forward, including its namespace and relevant assumptions, so check 15 and the corresponding prose comparison can satisfy the mandatory declaration-reading requirement."
+  ],
+  "limitations": [
+    "Requirement A is incomplete for the explicitly named imported declaration DimensionalMatrix.forward: its module is not included in the packet. The visible equality theorem and its proof reference do not replace reading that declaration.",
+    "The partial reads of WaveKernel.lean and L8Completed.lean include the complete additional declarations required for this review; unrelated declarations in those modules were not reviewed.",
+    "PROVENANCE.json and manuscript-anchor.json were consulted selectively for revision/context metadata. Their remaining contents and all packet byte bindings were not independently audited.",
+    "The audit file contains #check/#print-axioms commands, not captured elaboration output. No Lean build was run; compilation and absence of sorry/nonstandard axioms were accepted as stipulated.",
+    "Earlier ledger waves and unrelated manuscript mathematics were not re-reviewed. This AI correspondence review is neither human verification nor a novelty audit."
+  ]
+}

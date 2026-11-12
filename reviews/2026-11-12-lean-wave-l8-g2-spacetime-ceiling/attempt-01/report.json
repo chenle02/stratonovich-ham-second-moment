@@ -1,0 +1,488 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-1481 complete.",
+    "lean/provenance/manuscript-anchor.json:1-1825 complete.",
+    "candidate/statement-ledger.md:37-708,3514-3609,4346-4453 complete required sections; additionally 2727-2808,4455-4517,4531,4553-4555,6825-6844,7329-7405 and cross-reference search matches; partial file.",
+    "lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean:1-1165 complete.",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean:1-1037 complete.",
+    "lean/claims.yaml:12490-13032 complete entries for both modules; partial file. Claim identifiers elsewhere were searched for existence.",
+    "lean/coverage.yaml:420-455,555-595,1090-1138,1150-1205,1220-1275,1350-1394 complete required rows; partial file.",
+    "docs/coverage-scope-tex.yaml:1-69 complete.",
+    "excerpts/tex-excerpts.txt:1-1169 complete.",
+    "lean/Audit/space-time-positivity/Audit.lean:1-125 complete.",
+    "lean/Audit/occupation-ceiling-finite/Audit.lean:1-101 complete.",
+    "lean/refutations/space-time-positivity/CSConstant.lean:1-156 complete.",
+    "lean/refutations/space-time-positivity/DropAlphaLtOne.lean:1-58 complete.",
+    "lean/refutations/space-time-positivity/VarianceFactor.lean:1-152 complete.",
+    "lean/refutations/occupation-ceiling-finite/WrongK0.lean:1-36 complete.",
+    "lean/refutations/occupation-ceiling-finite/WrongRowConstant.lean:1-36 complete.",
+    "lean/refutations/occupation-ceiling-finite/ZeroQuarterMax.lean:1-38 complete.",
+    "lean/refutations/occupation-ceiling-finite/ZeroScoreMax.lean:1-36 complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 complete.",
+    "lean/StratonovichHAMSecondMoment/H1Density.lean:72-94,164-204,545-598 partial file; required density and mollification declarations complete.",
+    "lean/StratonovichHAMSecondMoment/TimeCompletion.lean:99-241 partial file; required mixture definitions and kernel identity complete.",
+    "lean/StratonovichHAMSecondMoment/TimeSchur.lean:42-60,90-142 partial file; kernel definition and exact row theorem complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean:147-253,324-416,1133-1145,1203-1215,1350-1360 partial file; required named declarations complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean:191-219,281-307 partial file; required ratio and supremum-score wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:132-157,226-236,418-427,780-834,1142-1161 partial file; required named definitions and supremum-score wrapper complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean:138-179 partial file; required supremum-score and ratio wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:295-313,420-427,687-711 partial file; required named definitions and ratio wrapper complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalRate.lean:502-518,604-618,807-828 partial file; required score definitions and supremum wrapper complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:88-105,225-252 partial file; required control, mean, cost and rate definitions complete.",
+    "lean/StratonovichHAMSecondMoment/WeakSobolev.lean:61-86,212-243 partial file; required test, weak-gradient and Rayleigh definitions complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean:106-130 partial file; required pairing, energy and unit-test definitions complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalFloor.lean:100-107 partial file; gradient definition complete.",
+    "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean:468-485 partial file; density and mass definitions complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialBracket.lean:96-137 partial file; required constants and ceiling proposition complete.",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean:94-227 partial file; required bridges and completed wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean:288-305 partial context.",
+    "manuscript/notes/integrated_occupation_ceiling.tex:1-308 complete.",
+    "manuscript/notes/integrated_intrinsic_constant.tex:1-110,331-381 partial file; required cited ranges complete.",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-348 partial file; required cited ranges complete.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-19,98-164,270-337 partial file; required cited ranges complete.",
+    "manuscript/notes/integrated_compact_mean_family.tex:398-458 partial file; required cited ranges complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:225-242,3758-3982 partial file; required hypothesis and upper-bound context complete.",
+    "All files under manuscript/: searched for exact label definitions cited by the two target sections; every actual cited label has exactly one definition."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.cross_eq_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:127-129 assumes both profiles vanish when R < ||x|| and concludes zero correlation for 2R < ||y||. The ledger and claims.yaml:12492-12498 match. TeX integrated_intrinsic_constant.tex:68-75 uses compact support but states no separate support-correlation theorem; auxiliary mapping is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.abs_cross_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:143-145 assumes hFR, |F| <= A and |G| <= B, without integrability, and proves the advertised volume bound. TeX integrated_intrinsic_constant.tex:74-75 uses the analogous support-and-absolute-value estimate, not this separately quantified theorem."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.abs_spatialPair_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:160-164 assumes locally finite Gamma, common radius and pointwise bounds, yielding A B vol(B_R) Gamma(B_2R). TeX integrated_intrinsic_constant.tex:68-75 states the diagonal bound |B| Gamma(B-B)||q||_inf^2. The ledger accurately calls this a bilinear radius-ball auxiliary, not the exact labelled display."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.hasCompactSupport_of_radius: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:176-180 requires only vanishing outside a finite-radius ball; continuity is absent. Ledger and claims.yaml:12513-12519 preserve this. TeX integrated_intrinsic_constant.tex:68-69 already chooses compact spatial support; there is no separate labelled counterpart."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.exists_smooth_approx: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:185-188 assumes Continuous Q, radius support and delta > 0, giving a smooth compact P supported within R+1 with uniform error <= delta. TeX integrated_occupation_ceiling.tex:45-56 instead approximates an H^1 profile in H^1. The different approximation and auxiliary status are disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.spatialPair_self_nonneg_of_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:220-222 assumes locally finite Gamma, IsSpectralMeasure Gamma mu, continuity and bounded-radius support. TeX integrated_spatial_occupation.tex:245-255 establishes smooth covariance positivity; integrated_occupation_ceiling.tex:45-56 uses completion. The ledger accurately distinguishes its continuous-profile extension route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.spatialPair_bilin: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:275-281 requires locally finite Gamma and four continuous compact profiles and proves the stated two-slot quadratic expansion. TeX integrated_spatial_occupation.tex:253-255 uses a quadratic polynomial, but does not state this four-profile auxiliary. Summaries match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.timeMeasure_eq_Icc: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:320-324 identifies the restrictions to (0,1) and [0,1]. TeX integrated_occupation_ceiling.tex:6 uses I=(0,1); changing endpoints for Lebesgue integration is harmless and correctly treated as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.stPair: E:positive-bochner-inclusion",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:329-330 defines the physical slice pairing without hypotheses. TeX integrated_intrinsic_constant.tex:27-29 has <F(s),F(t)>_G, with G=H_sp interpreted through integrated_spatial_occupation.tex:15-17. The ledger explicitly gives this physical, polarized reading rather than claiming construction of G."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.stForm: E:positive-bochner-inclusion",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:340-341 defines the product-measure Bochner integral; TeX integrated_intrinsic_constant.tex:27-29 displays the same kernel-pairing integral. Its general totalization is disclosed, and the required a < 1/local-finiteness/continuous-compact integrability theorem is separately identified."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.field_data: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:349-350 assumes Continuous Phi and HasCompactSupport Phi and supplies nonnegative M,R with uniform bound and spatial support. TeX integrated_intrinsic_constant.tex:68,76-77 uses bounded compact-supported fields but has no such separately quantified declaration."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.pair_data: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:357-360 assumes two continuous compact fields and supplies bounds and a common radius. TeX integrated_intrinsic_constant.tex:68-77 supplies the compact-support context, not this auxiliary. Ledger and claims.yaml:12569-12575 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.slice_hasCompactSupport: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:369-371 assumes uniform spatial-radius vanishing and proves compact support of each slice; no continuity is required. TeX integrated_intrinsic_constant.tex:68 speaks of all spatial supports. The auxiliary mapping and paraphrase are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.cross_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:375-377 requires continuity of both fields but radius support only for Phi1. The ledger preserves that asymmetry. TeX integrated_intrinsic_constant.tex:76-77 discusses continuity in H_sp, not this jointly parameterized scalar correlation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.stPair_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:391-394 assumes locally finite Gamma, continuous fields and a common spatial radius. TeX integrated_intrinsic_constant.tex:75-77 obtains continuity using the local covariance bound. This is accurately recorded as a physical-pairing route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.abs_stPair_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:408-415 assumes pointwise M1,M2 bounds and common-radius support, not continuity or integrability, and yields the stated bound. TeX integrated_intrinsic_constant.tex:70-75 supplies the related diagonal local estimate. The table does not falsely identify them."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.kern_integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:419-420 requires only a < 1 and proves product-measure integrability. TeX integrated_occupation_ceiling.tex:4-6 uses a=alpha0, with 0<alpha0<1 in main TeX:226. The weaker auxiliary hypothesis is correctly stated."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.stIntegrand_integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:430-434 requires a < 1, locally finite Gamma and two continuous compact fields. TeX integrated_intrinsic_constant.tex:84-92 says the corresponding compact-support integrals are absolutely finite. The explicit physical-field integrability auxiliary is faithfully summarized."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.lin_data: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:444-447 assumes two continuous compact fields and proves those properties for Phi+t Psi, every real t. TeX integrated_spatial_occupation.tex:254-255 uses linear combinations but states no separate closure lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.stForm_quad: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:452-456 assumes a < 1, local finiteness and continuous compact fields, yielding the exact advertised expansion. TeX integrated_intrinsic_constant.tex:24-29 realizes a Hilbert quadratic form rather than stating this physical-field polynomial identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.stForm_comm: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:494-497 assumes even locally finite Gamma and continuous compact fields, with no restriction on a. TeX integrated_occupation_ceiling.tex:85-87 uses evenness for the physical identities. The ledger correctly preserves the unrestricted-a auxiliary type."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.stForm_sq_le_of_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:516-521 assumes a < 1, even local finiteness and positivity for every continuous compact Phi. TeX integrated_occupation_ceiling.tex:87-88 uses Hilbert Cauchy-Schwarz, with positivity supplied by the Hilbert construction. The ledger explicitly identifies its conditional discriminant route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.tAvg_data: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:538-540 requires an integrable time weight, continuous bounded Phi and common spatial-radius support. TeX integrated_intrinsic_constant.tex:57-66 concerns a different, H_sp-valued Bochner construction. The ledger makes no direct-label claim."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.weighted_stPair: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:554-560 assumes locally finite Gamma, integrable f,g and continuous bounded spatially supported fields, and proves the stated weighted Fubini identity. TeX integrated_occupation_ceiling.tex:78-87 uses Hilbert polarization and Fubini, not this mixture-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.mixProfile_integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:650-651 quantifies over every real pair w, without a positivity assumption on w. The ledger and claims.yaml:12660-12666 match. TeX integrated_occupation_ceiling.tex:44-90 does not employ this kernel-mixture profile."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.mixIntegrand_data: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:677-682 assumes 0<a, continuous P and integrable kern*P, concluding product integrability and the almost-everywhere section identity. TeX integrated_occupation_ceiling.tex:44-90 uses completion instead. The different route and hypotheses are accurately stated."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.stForm_self_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:744-746 requires 0<a<1, locally finite Gamma, a spectral measure and a continuous compact field. TeX integrated_intrinsic_constant.tex:24-29 supplies positivity as ||J_G F||^2. The physical-form proof route is correctly identified as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.stForm_sq_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:776-781 adds evenness to 0<a<1, local finiteness, spectral identity and continuous compact fields. TeX integrated_occupation_ceiling.tex:87-88 invokes Hilbert Cauchy-Schwarz. The ledger reports the physical-form version and does not claim the Hilbert objects."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.abs_conv_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:787-790 assumes local finiteness, |Psi|<=M, spatial-radius support and ||x||<=R; no integrability is assumed. TeX integrated_compact_mean_family.tex:427-436 uses compact spatial differences of finite Gamma mass. Auxiliary status and bound match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.conv_stronglyMeasurable: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:804-809 requires SFinite Gamma and Continuous Psi, exactly as summarized. TeX integrated_occupation_ceiling.tex:84-87 uses measurable physical integrands but does not state this parameterized-convolution theorem."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.spatialPair_eq_conv: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:814-817 requires local finiteness, continuity, bounds and common-radius support, and gives B(F,G)=int F conv(G). TeX integrated_intrinsic_constant.tex:84-92 uses the corresponding absolute Fubini identification. Its separate auxiliary status is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.integral_mean_mul_eq_stForm_swap: E:occupation-raw-identities",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:867-872 assumes a<1, locally finite Gamma and continuous compact Psi,Phi, concluding both integrability clauses and int h_Psi Phi=F(Phi,Psi). TeX integrated_occupation_ceiling.tex:31-38 has g in O and Psi in C_pos, with pairing int h_Psi g^2. The substituted field, integral-only reading and reversed order without evenness are expressly disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.stForm_self_eq_rawCost: E:positive-raw-mean",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:947-951 assumes a<1, locally finite Gamma and continuous compact Psi, proving F(Psi,Psi)=rawCost. TeX integrated_intrinsic_constant.tex:31-36 assumes Psi in C_pos and states ||Psi||_H_I^2=v_Psi. The ledger correctly limits the correspondence to the integral identity through the displayed form."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.integral_mean_mul_eq_stForm: E:occupation-raw-identities",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:959-966 assumes a<1, even locally finite Gamma and continuous compact Psi,Phi, giving integrability and int h_Psi Phi=F(Psi,Phi). TeX integrated_occupation_ceiling.tex:31-38 states the pairing for g in O and Psi in C_pos. The ledger clearly records the integral-form field substitution rather than claiming rho_g."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.sq_data: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:970-975 assumes Continuous G and HasCompactSupport G and proves these for G^2. TeX integrated_occupation_ceiling.tex:45-56 uses squares in a different H^1-completion argument; there is no separate labelled closure assertion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.integral_mean_mul_sq_eq_stForm: E:occupation-raw-identities",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:981-989 assumes a<1, even locally finite Gamma and continuous compact Psi,G. TeX integrated_occupation_ceiling.tex:31-38 instead uses g in O and Psi in C_pos. The exact squared-field identity and integrability conclusions match the ledger's explicitly restricted integral reading."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.integral_mean_mul_le_sqrt: L:occupation-raw-square",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:997-1008 requires 0<a<1, even locally finite Gamma, spectral identity and continuous compact Psi,Phi; it proves nonnegative costs and int h Phi<=sqrt(v F(Phi,Phi)). TeX integrated_occupation_ceiling.tex:31-40 uses g in O, Psi in C_pos and rho_g. The ledger explicitly states the field substitution and integral-only conclusion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.space_time_positivity_homog: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:1026-1057 assumes HomogCovariance alone and bundles the six advertised facts for continuous compact fields and C_pos controls. TeX integrated_occupation_ceiling.tex:20 assumes Gamma!=0, but this is deliberately absent from this auxiliary; main TeX:226-240 supplies all fields of HomogCovariance used."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.occupation_raw_square_cc_paper: L:occupation-raw-square",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:1073-1085 assumes HomogCovariance, Gamma!=0, a=alpha0, Psi in C_pos and continuous compact g. TeX integrated_occupation_ceiling.tex:4-21,31-40 instead quantifies over O. The changed profile class, absent Q/rho_g/norm identity, and unused _hGamma are all disclosed; this is not counted as full lemma coverage."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.positive_raw_variance_form_paper: L:positive-raw-embedding",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:1103-1112 assumes HomogCovariance, Gamma!=0, a=alpha0 and Psi in C_pos, concluding integrability, F(Psi,Psi)=rawCost and nonnegativity. TeX integrated_intrinsic_constant.tex:19,22-39 has the same standing assumptions but also constructs Hilbert maps and a mean identity. Those omissions and unused _hGamma are explicitly recorded."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.stFormIter: E:positive-bochner-inclusion",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:1120-1122 defines the iterated physical integral. TeX integrated_intrinsic_constant.tex:27-29 displays its product-integral counterpart. The ledger identifies the integrable continuous-compact regime and the equality theorem, rather than asserting unconditional Fubini."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.stFormIter_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:1126-1130 assumes a<1, locally finite Gamma and continuous compact fields and proves equality with the product form. TeX integrated_intrinsic_constant.tex:84-92 invokes absolute Fubini but has no separate iterated-versus-product declaration."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.SpaceTimeCS: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:1139-1144 defines cs, self and mean for Psi in C_pos and nonnegative continuous compact Phi. TeX integrated_intrinsic_constant.tex:27-34 and integrated_occupation_ceiling.tex:35-40 provide the corresponding form facts, not this named interface. The distinct structures' fields agree definitionally."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpaceTimePositivity.spaceTimeCS_holds: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpaceTimePositivity.lean:1150-1163 assumes only HomogCovariance and proves the interface; its proof ignores Phi's nonnegativity. TeX main file:226-240 supplies the time range, evenness, Radon and spectral conditions. The absent Gamma!=0 requirement and route-interface status are accurately recorded."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.K0: E:positive-bochner-inclusion",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:99 defines K0 a=2^a/(1-a), without hypotheses. TeX integrated_intrinsic_constant.tex:29 and integrated_occupation_ceiling.tex:94 give exactly that constant. SpatialBracket.lean:101 has the identical body."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.K0_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:102-103 assumes only a<1 and proves K0>0. TeX integrated_intrinsic_constant.tex:4-5,29 uses a=alpha0 in (0,1), without a separate positivity lemma. The general auxiliary statement is faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.rpow_add_rpow_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:107-108 assumes 0<=p<=1 and s in [0,1], proving the stated concavity bound. TeX integrated_intrinsic_constant.tex:42-46 applies concavity at p=1-a. The separately parameterized scalar helper is properly left without a direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.row_le: L:positive-raw-embedding",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:125-134 assumes 0<=a<1 and s in [0,1], proving the lower-integral bound by 2^a/(1-a). TeX integrated_intrinsic_constant.tex:42-46 gives (s^(1-a)+(1-s)^(1-a))/(1-a)<=K0 under a=alpha0 in (0,1). Endpoints and the added a=0 case are harmless generalizations."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.schur_sharp: L:positive-raw-embedding",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:139-142 assumes 0<=a<1 and measurable ENNReal-valued g, proving the diagonal scalar Schur inequality. TeX integrated_intrinsic_constant.tex:47-49 bounds the bilinear integral by K0||f||2||g||2. The ledger explicitly limits this to f=g>=0 and records the different 2xy argument."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.young_quarter: T:intrinsic-occupation-ceiling",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:204-207 assumes 0<alpha<4, X,T>=0 and proves the advertised maximum upper bound. TeX integrated_occupation_ceiling.tex:223-230 uses beta=alpha/4 and X=vC with 0<alpha<2. The broader scalar range and omission of attainment are accurately described."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.young_q: T:intrinsic-occupation-ceiling",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:236-238 assumes alpha<3 and E,v>=0. TeX integrated_occupation_ceiling.tex:235-237 uses E=cD, q=4-alpha, k=3-alpha and maximum (k/2)(2E/q)^(q/k). The stated upper-bound specialization matches exactly; the Lean scalar range is broader."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.ceilingValue: E:occupation-score-ceiling",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:277-280 defines c^(q/k) times k times [alpha^(alpha/2)C/(8q^(q/2))]^(1/k). TeX integrated_occupation_ceiling.tex:209-212 has this expression with C_occ. Ledger and claims.yaml:12854 correctly retain k outside the power and disclose the real-C substitution."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.ceilingValue_eq: T:intrinsic-occupation-ceiling",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:285-289 assumes 0<alpha<2 and C,c>0 and identifies the second scalar maximum with ceilingValue. TeX integrated_occupation_ceiling.tex:233-243 uses the same D and denominator eight. The ledger's explicit D formula resolves its dense parenthesization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.exists_unitTest_gt: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:342-345 assumes continuous 0<=V<=M, a nonempty Rayleigh set and q<sSup, and obtains a smooth compact unit test exceeding q. TeX integrated_occupation_ceiling.tex:160-168 uses a countable normalized dense family instead. The finite-route auxiliary classification is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.integral_le_toReal_lintegral: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:415-420 assumes only pointwise f>=0 for an arbitrary measure and explicitly handles integral_undef. TeX integrated_occupation_ceiling.tex:117-122 uses genuine nonnegative integrals, not Lean totalization. The table accurately identifies this as a Lean-only comparison helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.ofReal_integral_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:423-428 assumes only f>=0 and proves ofReal(int f)<=lintegral(ofReal f), including the nonintegrable case. TeX integrated_occupation_ceiling.tex:117-122 has no corresponding totalized-integral assertion. The auxiliary description is faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.stForm: E:positive-bochner-inclusion",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:439-441 defines the iterated physical form without hypotheses. TeX integrated_intrinsic_constant.tex:27-29 and integrated_occupation_ceiling.tex:12 contain the corresponding integrals. The ledger expressly limits identification to integrable cases and points to the proved Fubini bridge."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.fieldG_props: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:457-460 assumes finite indexing, continuous compact nonnegative chi_i and test functions f_i, yielding continuous compact nonnegative fieldG. TeX integrated_occupation_ceiling.tex:169-173 constructs countably selected profiles instead. The route difference and auxiliary status are explicit."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.spatialPair_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:473-475 assumes arbitrary Gamma and pointwise F,G>=0, without integrability. TeX integrated_spatial_occupation.tex:14-18 defines a nonnegative extended pairing; its integral convention differs. The ledger faithfully describes the Bochner auxiliary without claiming the extended object."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.spatialPair_fsum: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:479-484 assumes locally finite Gamma and continuous compact finite families, with arbitrary real coefficients. TeX integrated_occupation_ceiling.tex:117-122 has no finite-field expansion. Ledger and claims.yaml:12907-12913 accurately identify this route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.Nnorm_sq_unit: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:513-524 assumes IsUnitTest f and permits every real alpha, proving Nnorm^2=b^(alpha/4). TeX integrated_spatial_occupation.tex:221 defines N in its standing positive-alpha range. The broader algebraic helper and its range are accurately stated."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.pair_unit_le: P:raw-occupation-energy",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:531-536 assumes even locally finite spectral Gamma, alpha<4, R>=0 and the smooth unit-test ratio bound. TeX integrated_occupation_ceiling.tex:117-118 uses B(g_s^2,g_t^2)<=R_sp b_s^(alpha/4)b_t^(alpha/4). The ledger explicitly specializes to smooth unit tests and generalizes the bounding constant."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.field_energy_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:548-555 requires 0<alpha<2, 0<=a<1, the smooth ratio bound and continuous nonnegative partition weights summing to one on [0,1]; compact support of chi is absent. TeX integrated_occupation_ceiling.tex:117-122 concerns A(g) for O. The ledger correctly calls this the finite-field analogue, not that result itself."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.continuousOn_of_lip: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:662-667 assumes C>=0 and the stated pairwise bound on [0,1]. TeX integrated_occupation_ceiling.tex:168 notes continuity of canonical Rayleigh functions but does not state this generic Lipschitz lemma. Summaries match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.exists_near_field: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:678-685 assumes HomogCovariance, Gamma!=0, Psi in C_pos and epsilon>0, and constructs finite continuous compact weights and real unit tests with the advertised integrated bound. TeX integrated_occupation_ceiling.tex:149-193 instead gives a countable measurable selection in O. This replacement is fully disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.SpaceTimeCS: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:806-811 defines exactly the three advertised fields for C_pos controls and nonnegative continuous compact Phi. TeX integrated_intrinsic_constant.tex:27-34 and integrated_occupation_ceiling.tex:35-40 provide their mathematical content. This named interface is independently discharged under HomogCovariance, so it hides no stronger unresolved assumption."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.R0_bound: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:817-826 assumes HomogCovariance and Gamma!=0, concluding 0<alpha<2, R0>0 and the smooth unit-test bound. TeX integrated_spatial_occupation.tex:168-188 establishes the finite positive ratio independently of S1. The ledger correctly treats this packaging as a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.integratedRate_sq_le: T:intrinsic-occupation-ceiling",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:836-840 assumes HomogCovariance, Gamma!=0, SpaceTimeCS and Psi in C_pos. TeX integrated_occupation_ceiling.tex:224-233 uses the same positive-control setting but C=C_occ; Lean uses C=K0 R0. The changed constant and supplied interface are explicit, and the latter is discharged in L8Completed.lean:114-117."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.score_le_ceiling: T:intrinsic-occupation-ceiling",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:893-897 adds c>0 to HomogCovariance, Gamma!=0, SpaceTimeCS and Psi in C_pos, proving cI-v/2<=U_c[K0R0]. TeX integrated_occupation_ceiling.tex:235-245 yields the same score form with C_occ. The ledger accurately records the larger-constant conclusion and input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.occupation_ceiling_K0_paper: T:intrinsic-occupation-ceiling",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:938-944 assumes HomogCovariance, Gamma!=0 and SpaceTimeCS and quantifies over all c>0 and Psi in C_pos. TeX integrated_occupation_ceiling.tex:209-220 uses C_occ and also states a moment consequence. The ledger explicitly substitutes K0R_sp>=C_occ, justified by TeX:96, and excludes the moment and second-form conclusions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.s1Bdd_paper: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:952-958 assumes HomogCovariance, Gamma!=0 and SpaceTimeCS and proves BddAbove(score1Set). TeX integrated_unmasked_variational.tex:272-274 asserts boundedness for every c>0, including c=1. The narrower boundedness item and deterministic-versus-stochastic route difference are accurately recorded."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.occupation_ceiling_sSup_K0_paper: T:intrinsic-occupation-ceiling",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:965-974 assumes HomogCovariance, Gamma!=0 and SpaceTimeCS, then proves nonemptiness, boundedness and the supremum ceiling for every c>0. TeX integrated_occupation_ceiling.tex:209-215,245 takes the same supremum with C_occ. The ledger expressly substitutes K0R_sp and does not claim C_occ is formalized."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.variational_positive_scores_sSup_st_paper: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:982-988 assumes HomogCovariance, Gamma!=0 and SpaceTimeCS, proving positive finite suprema and c^((4-alpha)/(3-alpha)) scaling. TeX integrated_unmasked_variational.tex:272-280 states these and Q2>=S2. The missing Q2 assertion and input discharge are explicitly identified."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.spatial_static_score_sSup_st_paper: E:spatial-static-score",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:994-1001 assumes HomogCovariance, Gamma!=0, SpaceTimeCS and a nonnegative nonzero test z. TeX integrated_spatial_occupation.tex:4-10,41-53 has precisely that z and the bound lambda_z(1)-(M_a/2)B(z,z)<=S1. The extended-pairing real value and square-root rate preserve the object."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.spatial_smooth_score_sSup_st_paper: E:spatial-smooth-score",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:1007-1013 assumes HomogCovariance, Gamma!=0, SpaceTimeCS and a real smooth compact unit g. TeX integrated_spatial_occupation.tex:168-176 uses the same profiles and k[R(g)alpha^(alpha/2)/(8M_a q^(q/2))]^(1/k). The constant and inequality direction agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.R0_le_of_st_paper: P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:1019-1024 assumes HomogCovariance, Gamma!=0 and SpaceTimeCS and gives the advertised numerical upper bound on R0. TeX integrated_spatial_occupation.tex:168-175 implies this by solving the smooth-score bound and taking the ratio supremum. The ledger expressly identifies its historical proof route rather than attributing it to the revised finiteness proof at TeX:185-188."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingFinite.spatial_static_energy_score_sSup_st_paper: E:spatial-static-energy-score",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingFinite.lean:1030-1035 assumes HomogCovariance, Gamma!=0 and SpaceTimeCS and proves M_a^(-1/(3-alpha))F0(E_sp)<=S1. TeX integrated_spatial_occupation.tex:316-322 states exactly this score inequality. The named input is disclosed and discharged without changing E_sp or F0."
+    },
+    {
+      "claim": "PARA-SpaceTimePositivity",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The cited ranges, form identities, hypotheses, unused nonzero-covariance binder, narrower profile class and absent Hilbert constructions are accurate. W1 concerns only the excessively universal wording at ledger:4371-4380; the individual rows correctly state the exceptions."
+    },
+    {
+      "claim": "PARA-OccupationCeilingFinite",
+      "verdict": "PASS",
+      "reason": "Ledger:3514-3573 accurately describes the finite-partition deterministic route, the supplied-and-discharged interface, R0=R_sp, genuine supremum handling, and the larger ceiling. TeX integrated_occupation_ceiling.tex:96 explicitly gives C_occ<=K0R_sp; the unformalized second form, moment consequence and zero case are correctly excluded."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "The two section tables contain 77 distinct declarations. Each occurs exactly once in Index by label, ledger:635-654, with the same section-row label; auxiliaries occupy no-direct-label rows. Exact label-definition searches across manuscript/ found one definition for every cited label, including E:spatial-square-CS at integrated_spatial_occupation.tex:227."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "All six required coverage rows are same-assumptions/weaker with explicit integral/Rayleigh readings and exclusions. Their unconditional claims are supported by completed wrappers, notably L8Completed.lean:114-215, not merely by the conditional source wrappers. All 81 listed claim references across these rows exist in claims.yaml."
+    },
+    {
+      "claim": "SCOPE-RULES",
+      "verdict": "PASS",
+      "reason": "The six conclusion_scope sentences agree with their ASCII copies and mathematical TeX renderings in coverage-scope-tex.yaml:16-21,46-48,52-54,58-60,67-69. They contain no Lean module/declaration locators or TeX file/line locators. Every rate description uses a square root; E:variational-real-rayleigh fixes the real Rayleigh interpretation."
+    },
+    {
+      "claim": "REFUTATIONS",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "All seven files prove the negations or counterexamples advertised in their own comments: half-strength CS, omitted a<1, doubled variance, omitted 2^a, unit concavity bound, and two zero maxima. Their conclusions and contrast theorems match the relevant generic Lean statements. W3 distinguishes these generic controls from counterexamples satisfying every manuscript standing assumption; the ledger contains no separate detailed refutation descriptions to contradict."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Scope:197-224, L8Completed:2739-2781, SpatialBracket:4478-4509, VariationalRate:6826-6838 and Not in Lean:7352-7362,7384-7390 consistently preserve the larger constant, input discharge and unformalized stochastic/Hilbert conclusions. W2 is a minor inconsistency in the parenthetical label terminology at ledger:2751-2752."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "W1 \u2014 PARA-SpaceTimePositivity: ledger:4371-4380 says 'Every field in the statements' is continuous compactly supported and 'Integrability of every integrand is a conclusion'. This is broader than the actual auxiliary types: SpaceTimePositivity.lean:143-145 assumes only support and pointwise bounds, and :804-806 assumes continuity but not compact support. TeX integrated_intrinsic_constant.tex:84-92 concerns the genuine integrals used in the main identities. Optional clarification: restrict these prose sentences to the principal space-time positivity and mean/variance statements, excluding the explicitly totalized auxiliary bounds. The table already states the exceptions correctly.",
+      "W2 \u2014 CROSS-REFERENCES: ledger:2751-2752 calls integratedRate_sq_le and score_le_ceiling '(no manuscript label)', whereas ledger:3600-3601 and Index:643,646 map them to T:intrinsic-occupation-ceiling or its proof. Lean OccupationCeilingFinite.lean:836-840,893-897 supplies the larger-constant versions of TeX integrated_occupation_ceiling.tex:224-245. Optional clarification: replace the parenthetical with 'route lemmas, not separately labelled manuscript results'; their stated mathematical scope is already correct.",
+      "W3 \u2014 REFUTATIONS: the controls are accurate for their advertised generic Lean types, but some formal witnesses lie outside the manuscript's standing ranges. WrongRowConstant.lean:25-33 uses p=0, corresponding to a=1 rather than TeX main file:226's 0<a<1; ZeroScoreMax.lean:23-33 uses alpha=0 rather than main TeX:240's positive alpha. CSConstant.lean:9-12 and VarianceFactor.lean:9-12 use Lebesgue spatial covariance, outside the positive-homogeneity-exponent model. Optional clarification: identify these explicitly as controls for the generalized auxiliary statements, or add manuscript-admissible witnesses. This does not invalidate the negative controls as currently typed or the reviewed correspondence conclusions."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI correspondence review, not human verification or a novelty audit.",
+    "Compilation and absence of nonstandard axioms were stipulated; no compiler or proof-checking workflow was run. The supplied Audit files are source commands requesting checks, not captured elaboration transcripts.",
+    "The two target modules, required ledger sections, claim entries, coverage rows, refutations, audits, excerpts and cited authoritative TeX ranges were read completely. Partial contextual files were inspected only in the ranges listed; their unrelated declarations and earlier-wave results were not independently re-reviewed.",
+    "The ledger's historical statement about the pre-a284420 proof route cannot be independently reconstructed from older manuscript sources absent from this frozen packet; its present numerical consequence follows from the supplied revision."
+  ]
+}

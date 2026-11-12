@@ -1,0 +1,116 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "prior-reports/g2-report.json:1-488 complete.",
+    "prior-reports/g3-report.json:1-591 complete.",
+    "prior-reports/g5b-report.json:1-378 complete.",
+    "adjudication/ADJUDICATION.md:1-65 complete.",
+    "diffs/repair-3518233-bd1c439.diff:1-645 complete.",
+    "candidate/statement-ledger.md:1-376,639-643,1324-1372,1490-1497,1546-1569,1616-1632,1910-1957,2764-2851,3552-3657,4394-4515,5535-5566,5568-5681,5683-5827,5911-6008,6022-6044,7070-7090,7421-7599 partial file; all requirement-A sections complete.",
+    "docs/coverage-scope-tex.yaml:1-69 complete.",
+    "lean/coverage.yaml:1-26,33,55-66,159-170,210-219,224-233,244-254,259-269,301-311,431,501-510,514-524,565,580-710,726,730-740,781-790,851-860,864-874,877-887,915-925,942-954,1057,1089-1098,1108,1130,1165,1194,1236,1266,1288,1300-1311,1330-1339,1361-1399 partial file; both required rows complete; all class/conclusion fields additionally scanned for counts.",
+    "lean/README.md:70-100,185-225 partial.",
+    "lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean:1-222,313-456,490-521,744-781,785-817,859-1165 partial; finding-specific declarations and comments complete.",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean:1-142,197-207,232-238,273-289,798-840,886-898,928-1037 partial; finding-specific declarations and comments complete.",
+    "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean:1-615 complete.",
+    "lean/StratonovichHAMSecondMoment/SymplecticFree.lean:1-764 complete.",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean:75-291,309-357,475-501 partial.",
+    "lean/StratonovichHAMSecondMoment/FiniteWick.lean:570-621 partial; additional declaration-locator searches.",
+    "lean/StratonovichHAMSecondMoment/TerminalWick.lean:1-100,287-310,350-407,474-508,552-686 partial; changed comments complete.",
+    "lean/StratonovichHAMSecondMoment/DampedMultiplier.lean:212-230,259-289,363-389,412-608 partial; additional smoothing-declaration searches.",
+    "lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean:75-85,212-287 partial.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:85-105 partial.",
+    "lean/StratonovichHAMSecondMoment/WeakSobolev.lean:235-244 partial.",
+    "lean/refutations/occupation-ceiling-finite/WrongK0.lean:1-36 complete.",
+    "lean/refutations/occupation-ceiling-finite/WrongRowConstant.lean:1-36 complete.",
+    "lean/refutations/occupation-ceiling-finite/ZeroQuarterMax.lean:1-38 complete.",
+    "lean/refutations/occupation-ceiling-finite/ZeroScoreMax.lean:1-36 complete.",
+    "lean/refutations/space-time-positivity/CSConstant.lean:1-156 complete.",
+    "lean/refutations/space-time-positivity/VarianceFactor.lean:1-152 complete.",
+    "lean/refutations/space-time-positivity/DropAlphaLtOne.lean:1-58 complete.",
+    "prior-3518233/StratonovichHAMSecondMoment/TerminalWick.lean:28-34,49-58,592-607 partial, read through comparison output.",
+    "prior-3518233/refutations/spectral-mass-identity/AlphaPositive.lean:1-48 complete.",
+    "prior-3518233/refutations/spectral-mass-identity/FourierBoundAlphaZero.lean:1-76 complete.",
+    "manuscript/notes/integrated_intrinsic_constant.tex:1-110 partial; required cited ranges complete.",
+    "manuscript/notes/integrated_occupation_ceiling.tex:1-308 complete.",
+    "manuscript/notes/integrated_symplectic_phase.tex:1-145 partial; required cited ranges complete.",
+    "manuscript/notes/integrated_constant_phase_young.tex:135-256 partial.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-19,270-337 partial.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:225-242,528-534,803-848,905-919,2290-2308,2481-2488,2607-2641,3580-3699 partial; all finding-specific cited ranges complete.",
+    "PROVENANCE.json:1-80 partial; additional path/revision locator searches.",
+    "lean/provenance/manuscript-anchor.json:1-70 partial."
+  ],
+  "checks": [
+    {
+      "claim": "g2-W1",
+      "verdict": "PASS",
+      "reason": "The repaired paragraph at candidate/statement-ledger.md:4419-4433 restricts continuity, compact support and integrability assertions to principal statements and explicitly excludes totalized auxiliaries. This matches SpaceTimePositivity.lean:143-145,430-434,804-809 and the genuinely finite integrals of integrated_intrinsic_constant.tex:84-92. A separate residual blanket assertion in Scope is reported under NO-REGRESSION."
+    },
+    {
+      "claim": "g2-W2",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:2788-2790 now calls these route lemmas of the theorem's proof, not separately labelled results. OccupationCeilingFinite.lean:828-840,888-897 supplies the enlarged-constant versions of integrated_occupation_ceiling.tex:224-245; the mappings at ledger:3648-3649 are consistent."
+    },
+    {
+      "claim": "g2-W3",
+      "verdict": "PASS",
+      "reason": "ledger:3613-3621 and 4461-4468 correctly distinguish generalized-statement controls from manuscript-admissible witnesses. WrongRowConstant.lean:24-34 uses p=0; ZeroScoreMax.lean:22-34 uses alpha=0; CSConstant.lean:9-14,136-152 and VarianceFactor.lean:9-12,134-148 use Lebesgue covariance. These exclusions agree with H:homog at main TeX:226-240."
+    },
+    {
+      "claim": "g3-W1",
+      "verdict": "PASS",
+      "reason": "ledger:5662-5663 now explicitly includes the positive radius, entire map into a complete complex normed space, c>0 and d>=0. These match StaticPhaseCauchy.lean:187-229 and the manuscript application at main TeX:2301-2307,2484-2487,2613-2623."
+    },
+    {
+      "claim": "g5b-W1",
+      "verdict": "PASS",
+      "reason": "ledger:5723-5732,5738-5739,5816 and coverage.yaml:623-625 accurately describe finite node lists without ordering, endpoint or mesh requirements. SymplecticFree.lean:543-547 imposes exactly that weaker existential-filter condition. Genuine Young convergence in integrated_symplectic_phase.tex:94-98 implies it; the repair explicitly disclaims characterization of the Young evolution."
+    },
+    {
+      "claim": "g5b-W2",
+      "verdict": "PASS",
+      "reason": "ledger:7436-7442 now attaches FreeWaveData only to group, reversal and translation data and states that J_E and preservation of omega are neither proved nor assumed. FreeWaveData's complete field list at SymplecticFree.lean:522-535 supports this distinction from integrated_symplectic_phase.tex:32-40,63-84."
+    },
+    {
+      "claim": "g5b-W3",
+      "verdict": "PASS",
+      "reason": "ledger:5740-5744 correctly confines the unused T>0 hypothesis to the single-path wrapper. SymplecticFree.lean:659-671 has _hT; the product wrapper at :681-698 has B and no positivity argument. This matches the separate horizons in integrated_symplectic_phase.tex:43-51."
+    },
+    {
+      "claim": "g5b-W4",
+      "verdict": "PASS",
+      "reason": "ledger:5779 now gives [[1,br t],[0,1]] and explicitly specializes br=<0>=1. This matches SymplecticFree.lean:164-192 and the physical zero-frequency matrix in integrated_symplectic_phase.tex:74-79."
+    },
+    {
+      "claim": "RESCAN",
+      "verdict": "PASS",
+      "reason": "The five required ledger sections and two coverage rows preserve the disclosed abstraction boundaries: enlarged K_0 R_sp ceiling, discharged SpaceTimeCS, restricted continuous-compact occupation identities, supplied operator/Young inputs, and omitted Hilbert constructions. See ledger:2804-2819,3603-3610,4448-4459,5643-5650,5755-5764; L8Completed.lean:114-155; integrated_occupation_ceiling.tex:96,209-219. No additional material overclaim of the specified kinds was found within these sections and rows."
+    },
+    {
+      "claim": "NO-REGRESSION",
+      "verdict": "FAIL",
+      "reason": "The changed Scope passage still promises integrability for 'each real-valued integral conclusion' at ledger:295-297, although FiniteWick.lean:578-580 and SymplecticFree.lean:300-307 include totalized integral identities without integrability guarantees (C1). Otherwise the inspected smoothing and constant repairs agree with DampedMultiplier.lean:434-608 and SpectralMassIdentity.lean:77-81,228-285; the count is 28 same/full, 15 same/weaker, 5 supplied/full, 20 supplied/weaker and 3 outside. The required and changed scope/ASCII/TeX sentences agree. All Lean hunks in the complete diff are comment-only; direct TerminalWick comparison confirms this. Its new plural-wrapper parenthetical has the optional wording issue C2."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "C1 — Scope integrability guarantee remains materially overbroad. candidate/statement-ledger.md:295-297 says 'integrability is part of each real-valued integral conclusion'. But lean/StratonovichHAMSecondMoment/FiniteWick.lean:578-580 assumes only 'hF : Continuous F' and concludes equality of two integrals, not their integrability; its separate integrability equivalence is at :586-589. Likewise SymplecticFree.lean:300-307 proves the integral cancellation for arbitrary functions, while the manuscript explicitly calls its L2 application an 'absolutely integrable cancellation' at manuscript/notes/integrated_symplectic_phase.tex:88-90. The detailed ledger exceptions at :1926-1931 and :5798 are accurate but contradict the blanket Scope guarantee. Exact fix: replace the guarantee with 'Integrability is proved where explicitly stated; totalized integral identities and auxiliary bounds do not themselves guarantee integrability.'"
+    ],
+    "minor": [
+      "C2 — TerminalWick comment parenthetical has ambiguous distributive scope. lean/StratonovichHAMSecondMoment/TerminalWick.lean:31-32 groups both wrappers before 'hypotheses plus the added restriction hK'. Only terminal_wick_paper has hK (:616-624); terminal_wick_mono_paper's complete inputs at :667-679 do not. The TeX comparison says 'entrywise comparison ... compares all finite partial-order second moments' without this restriction (manuscript/notes/notes_stratonovich_ham_second_moment.tex:3640-3642). The ledger correctly distinguishes the wrappers at :5950-5951 and :6044. Optional exact clarification: 'Both wrappers use the supplied inputs below; terminal_wick_paper additionally requires hK, whereas terminal_wick_mono_paper does not.'"
+    ]
+  },
+  "required_repairs": [
+    "Narrow or remove the universal integrability guarantee in candidate/statement-ledger.md:295-297 as specified in C1. Do not imply that totalized integral identities certify integrability."
+  ],
+  "limitations": [
+    "Requirement A was completed. Files marked partial contain contextual or unrelated material outside the required ranges that was not independently reviewed.",
+    "This is an AI correspondence review, not human verification or a novelty audit. No compilation, proof-correctness audit, network access or file modification was performed.",
+    "Provenance revisions were inspected, but packet hashes were not independently recomputed.",
+    "The two current spectral-mass refutation files are represented by their complete repair hunks and supplied prior versions, rather than standalone current files. Unchanged finite-wick and terminal-wick refutation scripts are not supplied; their added numerical summaries were assessed against the displayed formulas, not by inspecting those scripts.",
+    "The FAIL concerns the residual Scope guarantee, not the validity of the eight specifically repaired findings or the Lean proofs."
+  ]
+}

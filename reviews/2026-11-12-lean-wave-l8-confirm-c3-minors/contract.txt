@@ -1,0 +1,96 @@
+Narrow confirmation review: repairs to the wave-L8 Lean companion ledger, coverage and comments after correspondence review
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+CONTEXT
+Wave L8 of the Lean companion (commit 35182337601a) was reviewed for statement
+correspondence with the manuscript. The reports are in prior-reports/.
+Their findings were adjudicated (adjudication/ADJUDICATION.md) and repaired
+at commit bd1c4393d2e5: documentation (ledger, coverage, scope sentences,
+README) and comment-only changes in Lean files. This packet covers
+the minor findings of the reviews of SpaceTimePositivity/OccupationCeilingFinite (g2), SpatialBracket/RemoveMask/StaticPhaseCauchy (g3) and SymplecticFree (g5b).
+
+PACKET
+- candidate/statement-ledger.md : the ledger at bd1c4393d2e5 (repaired).
+- lean/coverage.yaml, docs/coverage-scope-tex.yaml, lean/claims.yaml,
+  lean/README.md, lean/provenance/manuscript-anchor.json at bd1c4393d2e5.
+- the earlier review reports whose findings are checked here:
+    prior-reports/g2-report.json
+    prior-reports/g3-report.json
+    prior-reports/g5b-report.json
+- adjudication/ADJUDICATION.md : the verdict and the change made for each
+  finding. Its file:line references point to an intermediate commit; use
+  them as hints only and locate the text yourself.
+- diffs/repair-3518233-bd1c439.diff : every change made by the repairs.
+- prior-3518233/... : each changed file as it was at the reviewed commit.
+- Lean ground truth: every module under lean/StratonovichHAMSecondMoment/
+  and lean/StratonovichHAMAudit/ at bd1c4393d2e5; in particular
+    lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean
+    lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean
+    lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean
+    lean/StratonovichHAMSecondMoment/SymplecticFree.lean
+    lean/StratonovichHAMSecondMoment/L8Completed.lean
+  and the refutation files under
+    lean/refutations/occupation-ceiling-finite/
+    lean/refutations/space-time-positivity/
+- manuscript/notes/... : all LaTeX inputs at revision a2844206199b;
+  excerpts/tex-excerpts.txt numbers the statements and proofs of the
+  labels the findings concern (convenience copy; manuscript/ is
+  authoritative).
+- PROVENANCE.json : byte binding of every packet file.
+
+Proof correctness is NOT in question; correspondence is. Decide from the
+Lean and the TeX whether each prior finding is genuinely resolved, whether
+the repair is correct, and whether the repairs added any new overclaim. Do
+not accept the ledger's or the adjudication's word.
+
+CHECKS (exactly these 10, in this order, with these claim strings):
+  1. claim "g2-W1": finding W1 (minor) of prior-reports/g2-report.json is resolved at this commit, or its rejection in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, README and (where changed) Lean comments now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  2. claim "g2-W2": finding W2 (minor) of prior-reports/g2-report.json is resolved at this commit, or its rejection in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, README and (where changed) Lean comments now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  3. claim "g2-W3": finding W3 (minor) of prior-reports/g2-report.json is resolved at this commit, or its rejection in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, README and (where changed) Lean comments now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  4. claim "g3-W1": finding W1 (minor) of prior-reports/g3-report.json is resolved at this commit, or its rejection in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, README and (where changed) Lean comments now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  5. claim "g5b-W1": finding W1 (minor) of prior-reports/g5b-report.json is resolved at this commit, or its rejection in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, README and (where changed) Lean comments now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  6. claim "g5b-W2": finding W2 (minor) of prior-reports/g5b-report.json is resolved at this commit, or its rejection in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, README and (where changed) Lean comments now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  7. claim "g5b-W3": finding W3 (minor) of prior-reports/g5b-report.json is resolved at this commit, or its rejection in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, README and (where changed) Lean comments now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  8. claim "g5b-W4": finding W4 (minor) of prior-reports/g5b-report.json is resolved at this commit, or its rejection in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, README and (where changed) Lean comments now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  9. claim "RESCAN": in the ledger sections OccupationCeilingFinite, SpaceTimePositivity, StaticPhaseCauchy, SymplecticFree, L8Completed and the coverage rows T:intrinsic-occupation-ceiling, L:symplectic-free, no OTHER statement still overclaims in the way the findings describe (smoothing or "full lemma" claims, implicit-hypothesis claims, integrability guarantees, convention-independent numerical claims, counts); check against the Lean files and the TeX
+  10. claim "NO-REGRESSION": every change in diffs/repair-3518233-bd1c439.diff is correct: no new error in the changed ledger passages, Scope, Index and Not-in-Lean sections, coverage.yaml (every conclusion_scope plain English with no Lean names or TeX line numbers, ascii equal to its conclusion_scope, the tex version the same content, lambda described as the square root of the real Rayleigh supremum wherever described), README.md; the changes to Lean files are comment-only (no change to any declaration, statement or proof)
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: the prior reports
+   listed above; adjudication/ADJUDICATION.md;
+   diffs/repair-3518233-bd1c439.diff; the ledger sections "OccupationCeilingFinite (whole result)" (lines 3552-3657), "SpaceTimePositivity (whole result)" (lines 4394-4515), "StaticPhaseCauchy (whole result)" (lines 5568-5681), "SymplecticFree (whole result)" (lines 5683-5827), "L8Completed (whole result)" (lines 2764-2851), and the
+   "Scope" and "Not in Lean" sections of candidate/statement-ledger.md; the
+   coverage.yaml rows T:intrinsic-occupation-ceiling, L:symplectic-free and their
+   docs/coverage-scope-tex.yaml entries; for each finding, the Lean
+   declarations (and comments) and the TeX lines it cites, in the files at
+   this commit.
+B. Other files: search as needed and read matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 10 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: resolved and correct; PASS_WITH_NOTES: resolved, with a minor
+  wording point reported as a minor finding; PARTIAL: only partly
+  resolved; FAIL: not resolved or a new error; INCONCLUSIVE: not
+  checkable). reason: evidence with file:line.
+- "findings": fatal = misstatement a citing reader would be misled by;
+  major = material imprecision; minor = wording. Each string starts with an
+  ID (C1, C2, ...), names the item, quotes Lean and TeX with file:line,
+  and gives the exact fix.
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "limitations": anything you could not check.
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES;
+  FAIL if any fatal or major finding or required repair; INCONCLUSIVE if
+  the reading requirement could not be met.
+- "confidence": high only if requirement A is complete.

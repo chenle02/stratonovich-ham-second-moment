@@ -1,0 +1,141 @@
+Review the frozen packet rooted at <HOME>/.local/state/tmp/claude-1247658/-<HOME>-Dropbox-workspace-svn-Article-Stratonovich-HAM-Second-Moment/4c4c8276-f434-4c95-9605-690953ef166f/scratchpad/l8rev-conf2/r1-l8-reconfirm/attempt-01/workspace. Primary target: candidate/statement-ledger.md. Source revision: 168b3c0d5a5aa1626226ab2441f387c997fc5e6c.
+
+You are an independent artifact reviewer. Read only the frozen packet
+and the supplied review contract. Report correctness, missing assumptions,
+incorrect constants, failed implications, and uncertainty. Do not edit files,
+use the network, send messages, publish, install, or delegate. Do not launch a
+research or coding workflow. Return a scientific report rather than a plan.
+Use exactly one JSON object with schema "subscription-review-report/1", verdict (PASS, PASS_WITH_NOTES, FAIL, or
+INCONCLUSIVE), confidence (high, medium, low), source_coverage (list of strings),
+checks (list of objects with claim, verdict, reason), findings (an object with
+fatal, major, minor lists), required_repairs (list), and limitations (list).
+required_repairs contains ONLY mandatory changes that block acceptance. Optional
+clarifications belong in findings.minor, never in required_repairs. PASS and
+PASS_WITH_NOTES require empty fatal, major and required_repairs lists and no
+failed/unchecked claim. If a repair is mandatory, return FAIL or INCONCLUSIVE;
+never weaken a finding to obtain PASS.
+Read every required source completely. Never use Grep head_limit or any other
+truncating or limiting option on a required source. After any pagination or
+truncation marker (for example a partial Read, an offset/limit notice, or
+"output truncated"), keep reading the next range until the whole file is read.
+In source_coverage, list each exact file and the line ranges you actually read.
+If coverage of any required source is incomplete, say "partial" for that source
+in source_coverage and state the gap in limitations.
+An AI review is not human verification or a novelty audit. Do not silently
+repair a candidate and PASS the original. A terminal error is not a verdict.
+
+Frozen packet file index (relative to workspace; a listed file is not proof of reading):
+["PROVENANCE.json", "adjudication/confirmation-round.md", "candidate/statement-ledger.md", "diffs/repair2-2c7e099-168b3c0.diff", "docs/coverage-scope-tex.yaml", "excerpts/tex-excerpts.txt", "lean/StratonovichHAMAudit/ActualEvent.lean", "lean/StratonovichHAMAudit/AllAlphaMoment.lean", "lean/StratonovichHAMAudit/ClockFilter.lean", "lean/StratonovichHAMAudit/DampedLower.lean", "lean/StratonovichHAMAudit/DimensionalMatrix.lean", "lean/StratonovichHAMAudit/DirectEvent.lean", "lean/StratonovichHAMAudit/FiniteYoung.lean", "lean/StratonovichHAMAudit/GaussianTail.lean", "lean/StratonovichHAMAudit/GlobalOmega.lean", "lean/StratonovichHAMAudit/HermiteWord.lean", "lean/StratonovichHAMAudit/HermiteWordConsumer.lean", "lean/StratonovichHAMAudit/InteractionDriver.lean", "lean/StratonovichHAMAudit/JointTilt.lean", "lean/StratonovichHAMAudit/LocalFlow.lean", "lean/StratonovichHAMAudit/MiddleCross.lean", "lean/StratonovichHAMAudit/MovingCone.lean", "lean/StratonovichHAMAudit/OccupationForm.lean", "lean/StratonovichHAMAudit/PhaseResponse.lean", "lean/StratonovichHAMAudit/PositiveGram.lean", "lean/StratonovichHAMAudit/ProjectionResidual.lean", "lean/StratonovichHAMAudit/RawValueCeiling.lean", "lean/StratonovichHAMAudit/RawVariational.lean", "lean/StratonovichHAMAudit/TerminalCross.lean", "lean/StratonovichHAMAudit/WhiteCDF.lean", "lean/StratonovichHAMSecondMoment/Axioms.lean", "lean/StratonovichHAMSecondMoment/ClockCopy.lean", "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean", "lean/StratonovichHAMSecondMoment/DampedMultiplier.lean", "lean/StratonovichHAMSecondMoment/DampedNorms.lean", "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean", "lean/StratonovichHAMSecondMoment/DriverParameters.lean", "lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean", "lean/StratonovichHAMSecondMoment/FiniteWick.lean", "lean/StratonovichHAMSecondMoment/FrequencyRow.lean", "lean/StratonovichHAMSecondMoment/GaussianComparison.lean", "lean/StratonovichHAMSecondMoment/GaussianIBP.lean", "lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean", "lean/StratonovichHAMSecondMoment/GaussianTest.lean", "lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean", "lean/StratonovichHAMSecondMoment/H1Density.lean", "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean", "lean/StratonovichHAMSecondMoment/IndexedCone.lean", "lean/StratonovichHAMSecondMoment/IntervalScalar.lean", "lean/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean", "lean/StratonovichHAMSecondMoment/InventoryProduct.lean", "lean/StratonovichHAMSecondMoment/KappaRange.lean", "lean/StratonovichHAMSecondMoment/L8Completed.lean", "lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean", "lean/StratonovichHAMSecondMoment/MaskedContinuousWave.lean", "lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean", "lean/StratonovichHAMSecondMoment/MaskedModulation.lean", "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean", "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean", "lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean", "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean", "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean", "lean/StratonovichHAMSecondMoment/PhaseBessel.lean", "lean/StratonovichHAMSecondMoment/QuotientObstruction.lean", "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean", "lean/StratonovichHAMSecondMoment/RayleighTail.lean", "lean/StratonovichHAMSecondMoment/RemoveMask.lean", "lean/StratonovichHAMSecondMoment/SeriesType.lean", "lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean", "lean/StratonovichHAMSecondMoment/SpatialBracket.lean", "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean", "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean", "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean", "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean", "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean", "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean", "lean/StratonovichHAMSecondMoment/SpectralHomog.lean", "lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean", "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean", "lean/StratonovichHAMSecondMoment/SymplecticFree.lean", "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean", "lean/StratonovichHAMSecondMoment/TerminalWick.lean", "lean/StratonovichHAMSecondMoment/TimeCompletion.lean", "lean/StratonovichHAMSecondMoment/TimeFractional.lean", "lean/StratonovichHAMSecondMoment/TimeSchur.lean", "lean/StratonovichHAMSecondMoment/TypeContinuity.lean", "lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean", "lean/StratonovichHAMSecondMoment/VariationalDilation.lean", "lean/StratonovichHAMSecondMoment/VariationalFloor.lean", "lean/StratonovichHAMSecondMoment/VariationalMean.lean", "lean/StratonovichHAMSecondMoment/VariationalRate.lean", "lean/StratonovichHAMSecondMoment/WaveGreen.lean", "lean/StratonovichHAMSecondMoment/WaveKernel.lean", "lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean", "lean/StratonovichHAMSecondMoment/WeakSobolev.lean", "lean/StratonovichHAMSecondMoment/WhiteClockLaplace.lean", "lean/StratonovichHAMSecondMoment/WhiteRelativeWidth.lean", "lean/claims.yaml", "lean/coverage.yaml", "lean/refutations/finite-wick/AbsBound.lean", "lean/refutations/finite-wick/FourthMoment.lean", "lean/refutations/finite-wick/NonnegDropped.lean", "lean/refutations/finite-wick/PairingCount.lean", "lean/refutations/spectral-mass-identity/AlphaPositive.lean", "lean/refutations/spectral-mass-identity/ExponentSign.lean", "lean/refutations/spectral-mass-identity/FourierBoundAlphaZero.lean", "lean/refutations/spectral-mass-identity/SinFactorTwo.lean", "lean/refutations/terminal-wick/ChainMassFactorial.lean", "lean/refutations/terminal-wick/ChainMassSimplex.lean", "lean/refutations/terminal-wick/MajorantFactor.lean", "manuscript/notes/ai-statistics-data.tex", "manuscript/notes/ai-statistics.tex", "manuscript/notes/book-layout.tex", "manuscript/notes/chapter-guides/01-setting.tex", "manuscript/notes/chapter-guides/02-G0.tex", "manuscript/notes/chapter-guides/03-independent-upper.tex", "manuscript/notes/chapter-guides/04-gaussian-foundations.tex", "manuscript/notes/chapter-guides/05-operator-paths.tex", "manuscript/notes/chapter-guides/06-wave-evolution.tex", "manuscript/notes/chapter-guides/07-lower.tex", "manuscript/notes/chapter-guides/08-means.tex", "manuscript/notes/chapter-guides/09-growing-radius.tex", "manuscript/notes/chapter-guides/10-point-upper.tex", "manuscript/notes/chapter-guides/11-constant.tex", "manuscript/notes/chapter-guides/12-finite-order.tex", "manuscript/notes/chapter-guides/13-direct.tex", "manuscript/notes/chapter-guides/14-covariance.tex", "manuscript/notes/chapter-guides/15-static-clock.tex", "manuscript/notes/figures/active-subset-optimization.tex", "manuscript/notes/figures/chapter-roadmap.tex", "manuscript/notes/figures/common-noise.tex", "manuscript/notes/figures/cross-colour-cube.tex", "manuscript/notes/figures/dyadic-cover.tex", "manuscript/notes/figures/endpoint-elimination.tex", "manuscript/notes/figures/gaussian-enlargement.tex", "manuscript/notes/figures/global-control-blocks.tex", "manuscript/notes/figures/hermite-cutoff.tex", "manuscript/notes/figures/interval-allocations.tex", "manuscript/notes/figures/interval-end-metrics.tex", "manuscript/notes/figures/light-cone.tex", "manuscript/notes/figures/literature-interpretations.tex", "manuscript/notes/figures/literature-results-drawing.tex", "manuscript/notes/figures/literature-results-map.tex", "manuscript/notes/figures/nonseparable-controls.tex", "manuscript/notes/figures/order-of-limits.tex", "manuscript/notes/figures/positive-gram.tex", "manuscript/notes/figures/proof-map.tex", "manuscript/notes/figures/styles.tex", "manuscript/notes/figures/two-chain-pairings.tex", "manuscript/notes/figures/walsh-guitar.tex", "manuscript/notes/figures/white-strip.tex", "manuscript/notes/future_optimizers.tex", "manuscript/notes/future_universality.tex", "manuscript/notes/future_work.tex", "manuscript/notes/history_wave_equations.tex", "manuscript/notes/index/anchors.tex", "manuscript/notes/index/list-of-notation.tex", "manuscript/notes/index/setup.tex", "manuscript/notes/integrated_actual_operator_driver.tex", "manuscript/notes/integrated_cameron_mean.tex", "manuscript/notes/integrated_compact_gaussian.tex", "manuscript/notes/integrated_compact_mean_family.tex", "manuscript/notes/integrated_constant_phase_young.tex", "manuscript/notes/integrated_covariance_foundation.tex", "manuscript/notes/integrated_exact_scaling.tex", "manuscript/notes/integrated_gaussian_tubes.tex", "manuscript/notes/integrated_intrinsic_constant.tex", "manuscript/notes/integrated_masked_moments.tex", "manuscript/notes/integrated_occupation_ceiling.tex", "manuscript/notes/integrated_point_transfer.tex", "manuscript/notes/integrated_positive_gram.tex", "manuscript/notes/integrated_radius_anchor.tex", "manuscript/notes/integrated_raw_block_lower.tex", "manuscript/notes/integrated_signed_moment_upper.tex", "manuscript/notes/integrated_signed_static.tex", "manuscript/notes/integrated_source_convergence.tex", "manuscript/notes/integrated_spatial_occupation.tex", "manuscript/notes/integrated_symplectic_phase.tex", "manuscript/notes/integrated_temporal_equilibrium.tex", "manuscript/notes/integrated_uniform_mean.tex", "manuscript/notes/integrated_uniform_products.tex", "manuscript/notes/integrated_unmasked_variational.tex", "manuscript/notes/integrated_wave_variance.tex", "manuscript/notes/integrated_white_evaluation.tex", "manuscript/notes/integrated_young_upper_foundation.tex", "manuscript/notes/lean-coverage-data.tex", "manuscript/notes/lean-coverage.tex", "manuscript/notes/literature_review.tex", "manuscript/notes/no-go-appendix.tex", "manuscript/notes/notes_stratonovich_ham_second_moment.tex", "manuscript/notes/preface.tex", "manuscript/notes/theory_outlook.tex", "prior-2c7e099/StratonovichHAMSecondMoment/TerminalWick.lean", "prior-2c7e099/docs/coverage-scope-tex.yaml", "prior-2c7e099/docs/statement-ledger.md", "prior-reports/c1-report.json", "prior-reports/c2-report.json", "prior-reports/c3-report.json", "tools/mirror_check.out", "tools/mirror_check.py"]
+
+Narrow re-confirmation review: repairs of the wave-L8 confirmation findings (Lean companion ledger, coverage scope mirrors, comments)
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+CONTEXT
+The wave-L8 documentation of the Lean companion was reviewed, repaired, and
+the repairs were confirmed by three reviews (prior-reports/c1, c2, c3, at
+commit bd1c439), each of which FAILED only on remaining issues: an
+over-broad integrability sentence in the ledger Scope, fourteen missing
+TeX mirrors of coverage scope sentences, and wording points. These were
+repaired at commit 168b3c0d5a5a (base 2c7e099f9b42); the adjudication is
+adjudication/confirmation-round.md. Your task is narrow: those findings,
+the fourteen new mirrors, and the repair diff.
+
+PACKET
+- candidate/statement-ledger.md : the ledger at 168b3c0d5a5a.
+- lean/coverage.yaml, lean/claims.yaml, docs/coverage-scope-tex.yaml at 168b3c0d5a5a.
+- the confirmation reports whose findings are checked:
+    prior-reports/c1-report.json
+    prior-reports/c2-report.json
+    prior-reports/c3-report.json
+- adjudication/confirmation-round.md : the decision and change per finding
+  (hints only; verify yourself).
+- diffs/repair2-2c7e099-168b3c0.diff : every change of this repair;
+  prior-2c7e099/... : each changed file before the repair.
+- tools/mirror_check.py and tools/mirror_check.out : the orchestrator's
+  mirror completeness script and its output (evidence to verify, not to trust).
+- Lean ground truth at 168b3c0d5a5a: every module under
+  lean/StratonovichHAMSecondMoment/ and lean/StratonovichHAMAudit/; in
+  particular lean/StratonovichHAMSecondMoment/FiniteWick.lean,
+  lean/StratonovichHAMSecondMoment/SymplecticFree.lean,
+  lean/StratonovichHAMSecondMoment/TerminalWick.lean,
+  lean/StratonovichHAMSecondMoment/DampedMultiplier.lean and
+  lean/StratonovichHAMSecondMoment/WaveGreen.lean; the refutation files
+  under lean/refutations/finite-wick/, lean/refutations/terminal-wick/ and
+  lean/refutations/spectral-mass-identity/.
+- manuscript/notes/... : all LaTeX inputs at revision a2844206199b;
+  excerpts/tex-excerpts.txt numbers the statements and proofs of the 14
+  mirrored labels, of E:variance-normalized-covariance, E:masked-actual-noise-norm, and lines 3600-3700 and 840-850
+  of notes/notes_stratonovich_ham_second_moment.tex (convenience copy; manuscript/ is authoritative).
+- PROVENANCE.json : byte binding of every packet file.
+
+Proof correctness is NOT in question; correspondence is. Decide from the
+Lean and the TeX. Do not accept the ledger's or the adjudication's word.
+
+CHECKS (exactly these 24, in this order, with these claim strings):
+  1. claim "c1-C1": finding C1 (major) of prior-reports/c1-report.json is resolved at this commit as its fix specifies (or the adjudication justifies otherwise), and the repair says exactly what the Lean declarations and the TeX at a284420 support
+  2. claim "c1-C2": finding C2 (minor) of prior-reports/c1-report.json is resolved at this commit as its fix specifies (or the adjudication justifies otherwise), and the repair says exactly what the Lean declarations and the TeX at a284420 support
+  3. claim "c1-C3": finding C3 (minor) of prior-reports/c1-report.json is resolved at this commit as its fix specifies (or the adjudication justifies otherwise), and the repair says exactly what the Lean declarations and the TeX at a284420 support
+  4. claim "c2-C1": finding C1 (major) of prior-reports/c2-report.json is resolved at this commit as its fix specifies (or the adjudication justifies otherwise), and the repair says exactly what the Lean declarations and the TeX at a284420 support
+  5. claim "c2-C2": finding C2 (minor) of prior-reports/c2-report.json is resolved at this commit as its fix specifies (or the adjudication justifies otherwise), and the repair says exactly what the Lean declarations and the TeX at a284420 support
+  6. claim "c2-C3": finding C3 (minor) of prior-reports/c2-report.json is resolved at this commit as its fix specifies (or the adjudication justifies otherwise), and the repair says exactly what the Lean declarations and the TeX at a284420 support
+  7. claim "c3-C1": finding C1 (major) of prior-reports/c3-report.json is resolved at this commit as its fix specifies (or the adjudication justifies otherwise), and the repair says exactly what the Lean declarations and the TeX at a284420 support
+  8. claim "c3-C2": finding C2 (minor) of prior-reports/c3-report.json is resolved at this commit as its fix specifies (or the adjudication justifies otherwise), and the repair says exactly what the Lean declarations and the TeX at a284420 support
+  9. claim "MIRROR L:driver-holder-limit": the new docs/coverage-scope-tex.yaml entry for L:driver-holder-limit: its ascii equals the lean/coverage.yaml conclusion_scope of L:driver-holder-limit byte for byte; its tex is the same sentence typeset (mathematically equivalent, no added or lost content); the sentence is plain English (no Lean declaration names, no TeX line numbers); for this generic "steps only" sentence, also that it matches the coverage row class and conclusion
+  10. claim "MIRROR L:driver-interval-limit": the new docs/coverage-scope-tex.yaml entry for L:driver-interval-limit: its ascii equals the lean/coverage.yaml conclusion_scope of L:driver-interval-limit byte for byte; its tex is the same sentence typeset (mathematically equivalent, no added or lost content); the sentence is plain English (no Lean declaration names, no TeX line numbers); for this generic "steps only" sentence, also that it matches the coverage row class and conclusion
+  11. claim "MIRROR L:exact-canonical-scaling": the new docs/coverage-scope-tex.yaml entry for L:exact-canonical-scaling: its ascii equals the lean/coverage.yaml conclusion_scope of L:exact-canonical-scaling byte for byte; its tex is the same sentence typeset (mathematically equivalent, no added or lost content); the sentence is plain English (no Lean declaration names, no TeX line numbers); for this generic "steps only" sentence, also that it matches the coverage row class and conclusion
+  12. claim "MIRROR L:finite-word-cutoff": the new docs/coverage-scope-tex.yaml entry for L:finite-word-cutoff: its ascii equals the lean/coverage.yaml conclusion_scope of L:finite-word-cutoff byte for byte; its tex is the same sentence typeset (mathematically equivalent, no added or lost content); the sentence is plain English (no Lean declaration names, no TeX line numbers); for this generic "steps only" sentence, also that it matches the coverage row class and conclusion
+  13. claim "MIRROR L:higher-riesz": the new docs/coverage-scope-tex.yaml entry for L:higher-riesz: its ascii equals the lean/coverage.yaml conclusion_scope of L:higher-riesz byte for byte; its tex is the same sentence typeset (mathematically equivalent, no added or lost content); the sentence is plain English (no Lean declaration names, no TeX line numbers); and, checked FULLY, the sentence is faithful to the Lean declarations the coverage row lists (in lean/claims.yaml and the Lean modules) and to the TeX statement of L:higher-riesz (excerpts/tex-excerpts.txt): every mathematical claim in it (formulas, quantifiers, what is proved, what is not formalized, what is an input) is correct
+  14. claim "MIRROR L:raw-block-inputs": the new docs/coverage-scope-tex.yaml entry for L:raw-block-inputs: its ascii equals the lean/coverage.yaml conclusion_scope of L:raw-block-inputs byte for byte; its tex is the same sentence typeset (mathematically equivalent, no added or lost content); the sentence is plain English (no Lean declaration names, no TeX line numbers); for this generic "steps only" sentence, also that it matches the coverage row class and conclusion
+  15. claim "MIRROR L:raw-block-restart": the new docs/coverage-scope-tex.yaml entry for L:raw-block-restart: its ascii equals the lean/coverage.yaml conclusion_scope of L:raw-block-restart byte for byte; its tex is the same sentence typeset (mathematically equivalent, no added or lost content); the sentence is plain English (no Lean declaration names, no TeX line numbers); for this generic "steps only" sentence, also that it matches the coverage row class and conclusion
+  16. claim "MIRROR P:actual-wave-form": the new docs/coverage-scope-tex.yaml entry for P:actual-wave-form: its ascii equals the lean/coverage.yaml conclusion_scope of P:actual-wave-form byte for byte; its tex is the same sentence typeset (mathematically equivalent, no added or lost content); the sentence is plain English (no Lean declaration names, no TeX line numbers); for this generic "steps only" sentence, also that it matches the coverage row class and conclusion
+  17. claim "MIRROR P:gram-entrywise-comparison": the new docs/coverage-scope-tex.yaml entry for P:gram-entrywise-comparison: its ascii equals the lean/coverage.yaml conclusion_scope of P:gram-entrywise-comparison byte for byte; its tex is the same sentence typeset (mathematically equivalent, no added or lost content); the sentence is plain English (no Lean declaration names, no TeX line numbers); for this generic "steps only" sentence, also that it matches the coverage row class and conclusion
+  18. claim "MIRROR P:gram-positive-optimizer": the new docs/coverage-scope-tex.yaml entry for P:gram-positive-optimizer: its ascii equals the lean/coverage.yaml conclusion_scope of P:gram-positive-optimizer byte for byte; its tex is the same sentence typeset (mathematically equivalent, no added or lost content); the sentence is plain English (no Lean declaration names, no TeX line numbers); for this generic "steps only" sentence, also that it matches the coverage row class and conclusion
+  19. claim "MIRROR P:masked-noise-completion": the new docs/coverage-scope-tex.yaml entry for P:masked-noise-completion: its ascii equals the lean/coverage.yaml conclusion_scope of P:masked-noise-completion byte for byte; its tex is the same sentence typeset (mathematically equivalent, no added or lost content); the sentence is plain English (no Lean declaration names, no TeX line numbers); and, checked FULLY, the sentence is faithful to the Lean declarations the coverage row lists (in lean/claims.yaml and the Lean modules) and to the TeX statement of P:masked-noise-completion (excerpts/tex-excerpts.txt): every mathematical claim in it (formulas, quantifiers, what is proved, what is not formalized, what is an input) is correct
+  20. claim "MIRROR P:raw-block-original-lower": the new docs/coverage-scope-tex.yaml entry for P:raw-block-original-lower: its ascii equals the lean/coverage.yaml conclusion_scope of P:raw-block-original-lower byte for byte; its tex is the same sentence typeset (mathematically equivalent, no added or lost content); the sentence is plain English (no Lean declaration names, no TeX line numbers); for this generic "steps only" sentence, also that it matches the coverage row class and conclusion
+  21. claim "MIRROR P:wave-two-variances": the new docs/coverage-scope-tex.yaml entry for P:wave-two-variances: its ascii equals the lean/coverage.yaml conclusion_scope of P:wave-two-variances byte for byte; its tex is the same sentence typeset (mathematically equivalent, no added or lost content); the sentence is plain English (no Lean declaration names, no TeX line numbers); and, checked FULLY, the sentence is faithful to the Lean declarations the coverage row lists (in lean/claims.yaml and the Lean modules) and to the TeX statement of P:wave-two-variances (excerpts/tex-excerpts.txt): every mathematical claim in it (formulas, quantifiers, what is proved, what is not formalized, what is an input) is correct
+  22. claim "MIRROR P:white-spatial-energy": the new docs/coverage-scope-tex.yaml entry for P:white-spatial-energy: its ascii equals the lean/coverage.yaml conclusion_scope of P:white-spatial-energy byte for byte; its tex is the same sentence typeset (mathematically equivalent, no added or lost content); the sentence is plain English (no Lean declaration names, no TeX line numbers); for this generic "steps only" sentence, also that it matches the coverage row class and conclusion
+  23. claim "MIRROR-COMPLETENESS": docs/coverage-scope-tex.yaml has exactly one entry per lean/coverage.yaml row with a conclusion_scope and no other entries, every ascii equals its conclusion_scope, every tex is nonempty, and the header comment describes this; tools/mirror_check.out is consistent with your own count
+  24. claim "NO-REGRESSION": every change in diffs/repair2-2c7e099-168b3c0.diff is correct and introduces no new overclaim: the new Scope integrability sentence is true of every declaration it covers, the FiniteWick and WaveGreen wording, the TerminalWick module comment (comment-only: no declaration, statement or proof changed), and the 14 mirrors
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: the three prior
+   reports; adjudication/confirmation-round.md;
+   diffs/repair2-2c7e099-168b3c0.diff; docs/coverage-scope-tex.yaml; the
+   "Scope" section of candidate/statement-ledger.md and every ledger
+   passage the diff changes, in context; the module comment and the two
+   wrappers of TerminalWick.lean; for each prior finding, the Lean
+   declarations and TeX lines it cites; for the three fully checked
+   mirrors (L:higher-riesz, P:masked-noise-completion,
+   P:wave-two-variances), their coverage.yaml rows, the Lean declarations
+   those rows list, and their TeX statements; excerpts/tex-excerpts.txt.
+B. Other files: search as needed and read matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 24 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: resolved and correct; PASS_WITH_NOTES: resolved, with a minor
+  wording point reported as a minor finding; PARTIAL: only partly
+  resolved; FAIL: not resolved or a new error; INCONCLUSIVE: not
+  checkable). reason: evidence with file:line.
+- "findings": fatal = misstatement a citing reader would be misled by;
+  major = material imprecision; minor = wording. Each string starts with an
+  ID (R1, R2, ...), names the item, quotes Lean and TeX with file:line,
+  and gives the exact fix.
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "limitations": anything you could not check.
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES;
+  FAIL if any fatal or major finding or required repair; INCONCLUSIVE if
+  the reading requirement could not be met.
+- "confidence": high only if requirement A is complete.
+

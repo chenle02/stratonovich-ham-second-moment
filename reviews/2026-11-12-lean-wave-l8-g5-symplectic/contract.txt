@@ -1,0 +1,164 @@
+Independent correspondence review: wave L8 of the Lean companion (ledger rows, coverage classes and scope sentences) vs the manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  35182337601a). Review ONLY its sections "SymplecticFree (whole result)" (lines 5616-5754), the index rows for
+  them, and the items named in the checks below. Rows of earlier waves were
+  reviewed before.
+- the Lean modules (ground truth for what each declaration states), every
+  library module under lean/StratonovichHAMSecondMoment/. These sections'
+  own modules:
+     lean/StratonovichHAMSecondMoment/SymplecticFree.lean
+  Library modules they import directly (context; read the declarations
+  the rows name; their own imports are in the packet too):
+     lean/StratonovichHAMSecondMoment/HomogHypothesis.lean
+- refutation files of these modules (negative controls):
+     lean/refutations/symplectic-free/NontrivialSpace.lean
+     lean/refutations/symplectic-free/NotOrthogonal.lean
+     lean/refutations/symplectic-free/WeakNullity.lean
+     lean/refutations/symplectic-free/ZeroFrequency.lean
+- audit files (elaborated types printed by #check / #print axioms):
+     lean/Audit/symplectic-free/Audit.lean
+- lean/claims.yaml, lean/coverage.yaml, docs/coverage-scope-tex.yaml,
+  lean/provenance/manuscript-anchor.json.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  a2844206199b. Labels are \label{...}.
+- excerpts/tex-excerpts.txt : the statements and proofs of the labels these
+  sections cite, with the line numbers of the files under manuscript/
+  (a convenience copy; the files under manuscript/ are authoritative).
+- PROVENANCE.json : byte binding of every packet file.
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that the abstract core of L:symplectic-free (per-frequency free matrix, symplecticity, reversal, the compact-baseline displays on an abstract Hilbert space with a supplied free group FreeWaveData) are formalized as stated in their
+rows: every listed conclusion proved, with hypotheses that match the
+manuscript, apart from side conditions the TeX leaves implicit and inputs
+explicitly declared as supplied. Test that claim hard: any Lean hypothesis
+that the manuscript does not have, any manuscript hypothesis the Lean
+drops, any weaker Lean conclusion, any changed constant, range, quantifier
+order or strictness, any modelling choice that changes the mathematical
+object, any supplied hypothesis stronger than the manuscript result it
+stands for, any row labelled as a step of a TeX proof that is really an
+auxiliary of a different Lean proof route, any coverage class that
+overstates ("same-assumptions" when a hypothesis is added; "full" when a
+conclusion is narrower), and any declaration missing from or duplicated in
+the Index, is a finding, unless the ledger states it AND it is genuinely
+harmless. Decide that yourself from the TeX; do not accept the ledger's word.
+Pay attention to: W_t(xi) with t sinc(t k) and its value [[1,t],[0,1]] at xi = 0; W_t^T J_symp W_t = J_symp at every frequency; R W_t R = W_(-t); the supplied structure FreeWaveData (free group, isometric velocity reversal, weakly vanishing translations) vs what the TeX proves about the free group on E = H^(1/2) x H^(-1/2): is each field no stronger than the TeX, and is the structure shown nonvacuous (the non-vacuity theorem)?; the Young evolution given only by convergence of its left Young sums; J_E and the preservation of omega on E are recorded as not formalized; the coverage row class (inputs-supplied, weaker) and its plain-English scope sentence.
+
+CHECKS (exactly these 66, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.SymplecticFree.Jsymp: L:symplectic-free"
+  2. claim "StratonovichHAMSecondMoment.SymplecticFree.omega2: L:symplectic-free"
+  3. claim "StratonovichHAMSecondMoment.SymplecticFree.omega2_eq: no direct label"
+  4. claim "StratonovichHAMSecondMoment.SymplecticFree.transpose_mul_Jsymp_mul: no direct label"
+  5. claim "StratonovichHAMSecondMoment.SymplecticFree.omega2_mulVec: no direct label"
+  6. claim "StratonovichHAMSecondMoment.SymplecticFree.sineQuotient: L:symplectic-free"
+  7. claim "StratonovichHAMSecondMoment.SymplecticFree.sineQuotient_of_ne_zero: no direct label"
+  8. claim "StratonovichHAMSecondMoment.SymplecticFree.sineQuotient_zero: no direct label"
+  9. claim "StratonovichHAMSecondMoment.SymplecticFree.sineQuotient_mul: no direct label"
+  10. claim "StratonovichHAMSecondMoment.SymplecticFree.continuous_sineQuotient: L:symplectic-free"
+  11. claim "StratonovichHAMSecondMoment.SymplecticFree.sineQuotient_neg: no direct label"
+  12. claim "StratonovichHAMSecondMoment.SymplecticFree.freeMatrix: L:symplectic-free"
+  13. claim "StratonovichHAMSecondMoment.SymplecticFree.freeMatrixAt: L:symplectic-free"
+  14. claim "StratonovichHAMSecondMoment.SymplecticFree.bracket_pos: no direct label"
+  15. claim "StratonovichHAMSecondMoment.SymplecticFree.freeMatrix_eq_forward: L:symplectic-free"
+  16. claim "StratonovichHAMSecondMoment.SymplecticFree.freeMatrix_zero_freq: L:symplectic-free"
+  17. claim "StratonovichHAMSecondMoment.SymplecticFree.freeMatrixAt_zero: L:symplectic-free"
+  18. claim "StratonovichHAMSecondMoment.SymplecticFree.continuous_freeMatrix: L:symplectic-free"
+  19. claim "StratonovichHAMSecondMoment.SymplecticFree.det_freeMatrix: L:symplectic-free"
+  20. claim "StratonovichHAMSecondMoment.SymplecticFree.freeMatrix_symplectic: L:symplectic-free"
+  21. claim "StratonovichHAMSecondMoment.SymplecticFree.freeMatrixAt_symplectic: L:symplectic-free"
+  22. claim "StratonovichHAMSecondMoment.SymplecticFree.freeMatrix_preserves_omega2: L:symplectic-free"
+  23. claim "StratonovichHAMSecondMoment.SymplecticFree.freeMatrix_mul: L:symplectic-free"
+  24. claim "StratonovichHAMSecondMoment.SymplecticFree.reversal: L:symplectic-free"
+  25. claim "StratonovichHAMSecondMoment.SymplecticFree.reversal_freeMatrix: L:symplectic-free"
+  26. claim "StratonovichHAMSecondMoment.SymplecticFree.omega: L:symplectic-free"
+  27. claim "StratonovichHAMSecondMoment.SymplecticFree.force: L:symplectic-free"
+  28. claim "StratonovichHAMSecondMoment.SymplecticFree.omega_force_skew: L:symplectic-free"
+  29. claim "StratonovichHAMSecondMoment.SymplecticFree.omegaL2: L:symplectic-free"
+  30. claim "StratonovichHAMSecondMoment.SymplecticFree.forceL2: L:symplectic-free"
+  31. claim "StratonovichHAMSecondMoment.SymplecticFree.omegaL2_force_skew: L:symplectic-free"
+  32. claim "StratonovichHAMSecondMoment.SymplecticFree.integrable_mul_force: L:symplectic-free"
+  33. claim "StratonovichHAMSecondMoment.SymplecticFree.isCompactOperator_mul_left: no direct label"
+  34. claim "StratonovichHAMSecondMoment.SymplecticFree.isCompactOperator_mul_right: no direct label"
+  35. claim "StratonovichHAMSecondMoment.SymplecticFree.isCompactOperator_sub': no direct label"
+  36. claim "StratonovichHAMSecondMoment.SymplecticFree.isCompactOperator_add': no direct label"
+  37. claim "StratonovichHAMSecondMoment.SymplecticFree.isCompactOperator_of_tendsto: L:symplectic-free"
+  38. claim "StratonovichHAMSecondMoment.SymplecticFree.youngSum: L:symplectic-free"
+  39. claim "StratonovichHAMSecondMoment.SymplecticFree.isCompactOperator_youngSum: L:symplectic-free"
+  40. claim "StratonovichHAMSecondMoment.SymplecticFree.orderedProd: E:symplectic-compact-product-baseline"
+  41. claim "StratonovichHAMSecondMoment.SymplecticFree.isCompactOperator_orderedProd_sub: L:symplectic-free"
+  42. claim "StratonovichHAMSecondMoment.SymplecticFree.WeaklyNull: L:symplectic-free"
+  43. claim "StratonovichHAMSecondMoment.SymplecticFree.eq_zero_of_mapClusterPt: no direct label"
+  44. claim "StratonovichHAMSecondMoment.SymplecticFree.tendsto_compact_of_weaklyNull: L:symplectic-free"
+  45. claim "StratonovichHAMSecondMoment.SymplecticFree.norm_le_norm_add_compact: L:symplectic-free"
+  46. claim "StratonovichHAMSecondMoment.SymplecticFree.norm_le_of_sub_compact: L:symplectic-free"
+  47. claim "StratonovichHAMSecondMoment.SymplecticFree.one_le_norm_of_reversal: L:symplectic-free"
+  48. claim "StratonovichHAMSecondMoment.SymplecticFree.FreeWaveData: L:symplectic-free"
+  49. claim "StratonovichHAMSecondMoment.SymplecticFree.LeftYoungSumsConverge: L:symplectic-free"
+  50. claim "StratonovichHAMSecondMoment.SymplecticFree.FreeWaveData.cocompact_neBot: no direct label"
+  51. claim "StratonovichHAMSecondMoment.SymplecticFree.FreeWaveData.one_le_norm: L:symplectic-free"
+  52. claim "StratonovichHAMSecondMoment.SymplecticFree.FreeWaveData.norm_le_norm_add_compact: L:symplectic-free"
+  53. claim "StratonovichHAMSecondMoment.SymplecticFree.compact_young_baseline: E:symplectic-compact-young-baseline"
+  54. claim "StratonovichHAMSecondMoment.SymplecticFree.FreeWaveData.orderedProd_S: no direct label"
+  55. claim "StratonovichHAMSecondMoment.SymplecticFree.compact_product_baseline: E:symplectic-compact-product-baseline"
+  56. claim "StratonovichHAMSecondMoment.SymplecticFree.one_le_dim: no direct label"
+  57. claim "StratonovichHAMSecondMoment.SymplecticFree.symplectic_compact_young_baseline_paper: E:symplectic-compact-young-baseline"
+  58. claim "StratonovichHAMSecondMoment.SymplecticFree.symplectic_compact_product_baseline_paper: E:symplectic-compact-product-baseline"
+  59. claim "StratonovichHAMSecondMoment.SymplecticFree.symplectic_force_skew_paper: L:symplectic-free"
+  60. claim "StratonovichHAMSecondMoment.SymplecticFree.symplectic_free_paper: L:symplectic-free"
+  61. claim "PARA-SymplecticFree": the prose of the "SymplecticFree (whole result)" section is accurate: it cites the right files and line numbers at a284420, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input, reading, proof-route difference and what is not formalized, and does not overclaim
+  62. claim "LEDGER-INDEX": every one of these 60 declarations appears EXACTLY ONCE in the "Index by label" table, under the same label as its section row (an additional listing only as an explicitly marked cross-reference), route auxiliaries in a "no direct label" row, and every label cited in these sections exists exactly once in the manuscript (search \label across all files under manuscript/)
+  63. claim "COVERAGE-ROWS": the lean/coverage.yaml rows L:symplectic-free: class (same-assumptions / inputs-supplied), conclusion (full / weaker), conclusion_scope, note, inputs and claims are right and honest for the declarations of these modules; every claim id listed exists in lean/claims.yaml
+  64. claim "SCOPE-RULES": the conclusion_scope sentences of the rows L:symplectic-free and their docs/coverage-scope-tex.yaml entries obey the plain-English rules: no Lean declaration or module names, no TeX line numbers or file names (manuscript labels are allowed), the same content in ascii (equal to conclusion_scope) and tex, and wherever lambda (the rate) is described it is the SQUARE ROOT of the supremum of the real Rayleigh quotient, never the supremum itself
+  65. claim "REFUTATIONS": each refutation file listed under PACKET for these modules states the perturbation the ledger says it states, the perturbation is a genuine weakening or mis-statement of the corresponding manuscript claim, and the file proves its negation (or the counterexample) as described; the ledger's description of each refutation is accurate
+  66. claim "CROSS-REFERENCES": every other place in the ledger that points to these sections or their labels (other sections, the Scope bullets, the "Not in Lean" section) is accurate
+For each row check (1-60): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: these sections' own
+   Lean modules (listed above), and, for every other declaration a row
+   names, that declaration in its module; the refutation and audit files
+   listed above; the sections "SymplecticFree (whole result)" and the "Scope" and "Index by label"
+   sections of candidate/statement-ledger.md; the entries of lean/claims.yaml
+   for these modules; the rows L:symplectic-free of lean/coverage.yaml and their
+   docs/coverage-scope-tex.yaml entries;
+   excerpts/tex-excerpts.txt, and in the files under manuscript/ every
+   TeX line range the sections cite.
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 66 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-60.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "limitations": anything you could not check.
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES;
+  FAIL if any fatal or major finding or required repair; INCONCLUSIVE if
+  the reading requirement could not be met.
+- "confidence": high only if requirement A is complete.

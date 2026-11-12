@@ -1,0 +1,168 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "prior-reports/c1-report.json: 1-123, complete.",
+    "prior-reports/c2-report.json: 1-99, complete.",
+    "prior-reports/c3-report.json: 1-116, complete.",
+    "adjudication/confirmation-round.md: 1-14, complete.",
+    "diffs/repair2-2c7e099-168b3c0.diff: 1-148, complete.",
+    "docs/coverage-scope-tex.yaml: 1-112, complete.",
+    "excerpts/tex-excerpts.txt: 1-1169, complete.",
+    "candidate/statement-ledger.md: 1-390, 1905-1965, 7050-7110, partial file; complete Scope and all changed passages with context.",
+    "lean/coverage.yaml: 1-1399 parsed for mirror completeness; partial substantive reading at 33, 61-63, 165, 209-270, 285-330, 431, 490-530, 565, 590, 642, 685-686, 726, 736-738, 780-795, 850-876, 875-925, 941-979, 1057, 1088-1110, 1130, 1165, 1194, 1236, 1266, 1288, 1298-1345, 1367.",
+    "lean/claims.yaml: 6858-6865, 6921-6934, 6977-7004, 7686-7699, 7827-7833, 7855-7861, 7876-7882, 7925-7938, 7988-7994, 8009-8015, 8030-8050, 8065-8072, partial; all entries listed by the three fully checked mirror rows read.",
+    "lean/StratonovichHAMSecondMoment/TerminalWick.lean: 1-101, 594-688, partial; complete module comment and both wrappers.",
+    "lean/StratonovichHAMSecondMoment/FiniteWick.lean: 1-100, 241-370, 480-721, partial.",
+    "lean/StratonovichHAMSecondMoment/SymplecticFree.lean: 270-320, partial.",
+    "lean/StratonovichHAMSecondMoment/DampedMultiplier.lean: 209-229, 258-289, 357-440, 445-608, partial.",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean: 1-115, 180-260, 300-442, partial; all declarations listed by L:higher-riesz read completely.",
+    "lean/StratonovichHAMSecondMoment/GaussianComparison.lean: 1-227, complete.",
+    "lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean: 1-973, complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: 840-850, 3600-3700, 5167-5237, partial.",
+    "manuscript/notes/integrated_symplectic_phase.tex: 82-100, partial.",
+    "manuscript/notes/integrated_covariance_foundation.tex: 188-247, partial.",
+    "manuscript/notes/integrated_wave_variance.tex: 1-20, 140-188, 229-246, 368-459, partial.",
+    "prior-2c7e099/StratonovichHAMSecondMoment/TerminalWick.lean: 26-37, partial; complete file comparison inspected, showing only the module-comment change.",
+    "prior-2c7e099/docs/statement-ledger.md: 288-305, 1920-1933, 7070-7086, partial; complete comparison inspected.",
+    "prior-2c7e099/docs/coverage-scope-tex.yaml: 1-4, 13-21, 34-48, 64-69 through comparison hunks, partial; complete comparison inspected.",
+    "tools/mirror_check.py: 1-22, complete.",
+    "tools/mirror_check.out: 1-9, complete.",
+    "PROVENANCE.json: 1-85, partial."
+  ],
+  "checks": [
+    {
+      "claim": "c1-C1",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:295-301 removes the universal integrability guarantee and explicitly excludes totalized auxiliary identities. This matches lean/StratonovichHAMSecondMoment/FiniteWick.lean:578-592, unlike the actual Gaussian-product integrability established in manuscript/notes/notes_stratonovich_ham_second_moment.tex:3657-3660."
+    },
+    {
+      "claim": "c1-C2",
+      "verdict": "PASS",
+      "reason": "lean/StratonovichHAMSecondMoment/TerminalWick.lean:31-34 now assigns hK only to terminal_wick_paper, consistently with the complete signatures at 618-642 and 669-683. The TeX comparison adds no global covariance-measurability assumption at manuscript/notes/notes_stratonovich_ham_second_moment.tex:3640-3642."
+    },
+    {
+      "claim": "c1-C3",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:7080-7086 separately attributes the narrowed bundle to full_wave and the dimension-one identification to fourier_one. Their conclusions agree with lean/StratonovichHAMSecondMoment/DampedMultiplier.lean:547-606 and the broader TeX smoothing remark at manuscript/notes/notes_stratonovich_ham_second_moment.tex:845-847."
+    },
+    {
+      "claim": "c2-C1",
+      "verdict": "PASS",
+      "reason": "All fourteen missing entries are present at docs/coverage-scope-tex.yaml:17-40,59-67,74-76,80-82,104-109. Independent YAML comparison finds exactly 35 scopes and 35 unique matching mirrors, without missing entries, extras, ASCII mismatches or empty TeX."
+    },
+    {
+      "claim": "c2-C2",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:1928-1930 now says integrability appears either as a conjunct or separately. lean/StratonovichHAMSecondMoment/FiniteWick.lean:493-496 supplies integrability separately from wick_stdPi at 513-561; later field identities include it as a conjunct. This correctly describes the monomial application in manuscript/notes/notes_stratonovich_ham_second_moment.tex:3662-3673."
+    },
+    {
+      "claim": "c2-C3",
+      "verdict": "PASS",
+      "reason": "The repaired module comment at lean/StratonovichHAMSecondMoment/TerminalWick.lean:31-34 accurately distinguishes hK in the first wrapper at 626 from its absence throughout the comparison wrapper at 669-685, consistently with manuscript/notes/notes_stratonovich_ham_second_moment.tex:3640-3642."
+    },
+    {
+      "claim": "c3-C1",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:295-301 explicitly excepts both cited totalized identities. lean/StratonovichHAMSecondMoment/SymplecticFree.lean:300-307 has arbitrary functions, while 311-319 separately establishes integrability under L2 and boundedness assumptions, matching manuscript/notes/integrated_symplectic_phase.tex:88-90."
+    },
+    {
+      "claim": "c3-C2",
+      "verdict": "PASS",
+      "reason": "lean/StratonovichHAMSecondMoment/TerminalWick.lean:31-34 removes the distributive ambiguity: only terminal_wick_paper additionally requires hK. The signatures at 618-685 confirm this distinction; manuscript/notes/notes_stratonovich_ham_second_moment.tex:3640-3642 supports comparison without that added restriction."
+    },
+    {
+      "claim": "MIRROR L:driver-holder-limit",
+      "verdict": "PASS",
+      "reason": "docs/coverage-scope-tex.yaml:17-19 exactly mirrors lean/coverage.yaml:216-217 after YAML decoding. TeX only typesets the path; the plain-English steps-only limitation matches the inputs-supplied/weaker row at 211-223."
+    },
+    {
+      "claim": "MIRROR L:driver-interval-limit",
+      "verdict": "PASS",
+      "reason": "docs/coverage-scope-tex.yaml:20-22 exactly mirrors lean/coverage.yaml:230-231. Typesetting changes no content, introduces no declaration names or line locators, and matches the inputs-supplied/weaker classification at 225-236."
+    },
+    {
+      "claim": "MIRROR L:exact-canonical-scaling",
+      "verdict": "PASS",
+      "reason": "docs/coverage-scope-tex.yaml:23-25 exactly mirrors lean/coverage.yaml:250-251. The equivalent plain-English TeX sentence correctly limits the inputs-supplied/weaker row at 245-258 to steps rather than the law-scaling result."
+    },
+    {
+      "claim": "MIRROR L:finite-word-cutoff",
+      "verdict": "PASS",
+      "reason": "docs/coverage-scope-tex.yaml:26-28 exactly mirrors lean/coverage.yaml:265-266. TeX changes only path formatting; the limitation matches the inputs-supplied/weaker row and its finite-word claims at 260-269."
+    },
+    {
+      "claim": "MIRROR L:higher-riesz",
+      "verdict": "PASS",
+      "reason": "docs/coverage-scope-tex.yaml:29-31 exactly and equivalently mirrors lean/coverage.yaml:307-309. The listed claims map through lean/claims.yaml:6858-7004 to WaveGreen declarations: definition at lean/StratonovichHAMSecondMoment/WaveGreen.lean:106-112, masses at 194-257 and scaling at 323-407. The dimension-three surface-measure identification is explicitly definitional at 26-34, not derived. These are precisely supporting facts quoted in manuscript/notes/notes_stratonovich_ham_second_moment.tex:5179-5187, not its Riesz maximum estimates at 5167-5176."
+    },
+    {
+      "claim": "MIRROR L:raw-block-inputs",
+      "verdict": "PASS",
+      "reason": "docs/coverage-scope-tex.yaml:35-37 exactly mirrors lean/coverage.yaml:507-508, with equivalent path typesetting and no declaration names or line locators. The steps-only sentence matches the inputs-supplied/weaker row at 501-513."
+    },
+    {
+      "claim": "MIRROR L:raw-block-restart",
+      "verdict": "PASS",
+      "reason": "docs/coverage-scope-tex.yaml:38-40 exactly mirrors lean/coverage.yaml:520-521. Its equivalent plain-English TeX sentence correctly describes the inputs-supplied/weaker row and finite error-accumulation claim at 514-526."
+    },
+    {
+      "claim": "MIRROR P:actual-wave-form",
+      "verdict": "PASS",
+      "reason": "docs/coverage-scope-tex.yaml:59-61 exactly mirrors lean/coverage.yaml:787-788. TeX only formats the path, and the steps-only limitation matches the inputs-supplied/weaker row with matrix-algebra claims at 781-795."
+    },
+    {
+      "claim": "MIRROR P:gram-entrywise-comparison",
+      "verdict": "PASS",
+      "reason": "docs/coverage-scope-tex.yaml:62-64 exactly mirrors lean/coverage.yaml:857-858. The equivalent plain-English sentence matches the inputs-supplied/weaker row and its weighted-entrywise algebraic claim at 851-863."
+    },
+    {
+      "claim": "MIRROR P:gram-positive-optimizer",
+      "verdict": "PASS",
+      "reason": "docs/coverage-scope-tex.yaml:65-67 exactly mirrors lean/coverage.yaml:870-871. Path formatting preserves content; the sentence correctly limits the inputs-supplied/weaker row at 864-876 to its active-upper-bound step."
+    },
+    {
+      "claim": "MIRROR P:masked-noise-completion",
+      "verdict": "PASS",
+      "reason": "docs/coverage-scope-tex.yaml:74-76 exactly and equivalently mirrors lean/coverage.yaml:948-951. lean/claims.yaml:7686-7699 maps both claims to lean/StratonovichHAMSecondMoment/GaussianComparison.lean:149-200, which proves the stated seminorm comparison for real p >= 1, A and B-A positive semidefinite, with both integrability conclusions. The excluded noise identification, contraction and joint-Gaussianity assertions are distinct parts of manuscript/notes/integrated_covariance_foundation.tex:188-205; its finite comparison proof is at 239-246."
+    },
+    {
+      "claim": "MIRROR P:raw-block-original-lower",
+      "verdict": "PASS",
+      "reason": "docs/coverage-scope-tex.yaml:80-82 exactly mirrors lean/coverage.yaml:1095-1096. TeX only formats the path, and the plain-English limitation matches the inputs-supplied/weaker row and scalar moderate-penalty claim at 1089-1101."
+    },
+    {
+      "claim": "MIRROR P:wave-two-variances",
+      "verdict": "PASS",
+      "reason": "docs/coverage-scope-tex.yaml:104-106 exactly and equivalently mirrors lean/coverage.yaml:1305-1307. All eleven listed declarations were checked through lean/claims.yaml and lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean. InputBound/OutputBound at 628-648 and the core wrappers at 822-861 prove both spectral directions and the h^(2 beta) form without supplied analytic inputs. The abstract transfer at 903-927 expressly assumes J, its identities and hlink; it does not construct the noise form or Sobolev phase spaces. This matches manuscript/notes/integrated_wave_variance.tex:240-246,368-382,413-455."
+    },
+    {
+      "claim": "MIRROR P:white-spatial-energy",
+      "verdict": "PASS",
+      "reason": "docs/coverage-scope-tex.yaml:107-109 exactly mirrors lean/coverage.yaml:1336-1337. Its equivalent plain-English steps-only sentence matches the inputs-supplied/weaker row with two conditional scalar deductions at 1330-1343."
+    },
+    {
+      "claim": "MIRROR-COMPLETENESS",
+      "verdict": "PASS",
+      "reason": "Independent parsing and UTF-8 value comparison found 35 conclusion_scope rows, 35 unique mirror rows, identical label sets, no ASCII mismatches, no empty TeX and sorted labels. This agrees with tools/mirror_check.out:1-9. docs/coverage-scope-tex.yaml:1-5 accurately describes the correspondence."
+    },
+    {
+      "claim": "NO-REGRESSION",
+      "verdict": "PASS",
+      "reason": "Every hunk in diffs/repair2-2c7e099-168b3c0.diff:1-148 was inspected and compared with the supplied prior files. The Scope now disclaims unconditional integrability; FiniteWick packaging and WaveGreen attribution match their declarations; all fourteen mirrors are correct. Direct TerminalWick comparison shows only the module-comment replacement at current lines 31-34, with no declaration, statement or proof changes."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Requirement A was completed. Partial-file coverage leaves portions outside the specified review passages unreviewed; this is not a packet-wide correspondence audit.",
+    "PROVENANCE.json was inspected only through line 85; remaining file bindings and packet-wide hashes were not independently verified.",
+    "No compilation or proof-correctness audit was performed. Historical build claims in the adjudication were not independently verified.",
+    "This AI correspondence review is not human verification or a novelty audit."
+  ]
+}

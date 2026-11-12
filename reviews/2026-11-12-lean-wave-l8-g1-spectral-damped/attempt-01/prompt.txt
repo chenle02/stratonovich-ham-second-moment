@@ -1,0 +1,192 @@
+Review the frozen packet rooted at <HOME>/.local/state/tmp/claude-1247658/-<HOME>-Dropbox-workspace-svn-Article-Stratonovich-HAM-Second-Moment/4c4c8276-f434-4c95-9605-690953ef166f/scratchpad/l8rev/g1-spectral-damped/attempt-01/workspace. Primary target: candidate/statement-ledger.md. Source revision: 35182337601ae648f9b6d538dad2cacb78e7e7a4.
+
+You are an independent artifact reviewer. Read only the frozen packet
+and the supplied review contract. Report correctness, missing assumptions,
+incorrect constants, failed implications, and uncertainty. Do not edit files,
+use the network, send messages, publish, install, or delegate. Do not launch a
+research or coding workflow. Return a scientific report rather than a plan.
+Use exactly one JSON object with schema "subscription-review-report/1", verdict (PASS, PASS_WITH_NOTES, FAIL, or
+INCONCLUSIVE), confidence (high, medium, low), source_coverage (list of strings),
+checks (list of objects with claim, verdict, reason), findings (an object with
+fatal, major, minor lists), required_repairs (list), and limitations (list).
+required_repairs contains ONLY mandatory changes that block acceptance. Optional
+clarifications belong in findings.minor, never in required_repairs. PASS and
+PASS_WITH_NOTES require empty fatal, major and required_repairs lists and no
+failed/unchecked claim. If a repair is mandatory, return FAIL or INCONCLUSIVE;
+never weaken a finding to obtain PASS.
+Read every required source completely. Never use Grep head_limit or any other
+truncating or limiting option on a required source. After any pagination or
+truncation marker (for example a partial Read, an offset/limit notice, or
+"output truncated"), keep reading the next range until the whole file is read.
+In source_coverage, list each exact file and the line ranges you actually read.
+If coverage of any required source is incomplete, say "partial" for that source
+in source_coverage and state the gap in limitations.
+An AI review is not human verification or a novelty audit. Do not silently
+repair a candidate and PASS the original. A terminal error is not a verdict.
+
+Frozen packet file index (relative to workspace; a listed file is not proof of reading):
+["PROVENANCE.json", "candidate/statement-ledger.md", "docs/coverage-scope-tex.yaml", "excerpts/tex-excerpts.txt", "lean/Audit/damped-multiplier/Audit.lean", "lean/Audit/spectral-mass-identity/Audit.lean", "lean/StratonovichHAMSecondMoment/Axioms.lean", "lean/StratonovichHAMSecondMoment/ClockCopy.lean", "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean", "lean/StratonovichHAMSecondMoment/DampedMultiplier.lean", "lean/StratonovichHAMSecondMoment/DampedNorms.lean", "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean", "lean/StratonovichHAMSecondMoment/DriverParameters.lean", "lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean", "lean/StratonovichHAMSecondMoment/FiniteWick.lean", "lean/StratonovichHAMSecondMoment/FrequencyRow.lean", "lean/StratonovichHAMSecondMoment/GaussianComparison.lean", "lean/StratonovichHAMSecondMoment/GaussianIBP.lean", "lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean", "lean/StratonovichHAMSecondMoment/GaussianTest.lean", "lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean", "lean/StratonovichHAMSecondMoment/H1Density.lean", "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean", "lean/StratonovichHAMSecondMoment/IndexedCone.lean", "lean/StratonovichHAMSecondMoment/IntervalScalar.lean", "lean/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean", "lean/StratonovichHAMSecondMoment/InventoryProduct.lean", "lean/StratonovichHAMSecondMoment/KappaRange.lean", "lean/StratonovichHAMSecondMoment/L8Completed.lean", "lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean", "lean/StratonovichHAMSecondMoment/MaskedContinuousWave.lean", "lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean", "lean/StratonovichHAMSecondMoment/MaskedModulation.lean", "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean", "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean", "lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean", "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean", "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean", "lean/StratonovichHAMSecondMoment/PhaseBessel.lean", "lean/StratonovichHAMSecondMoment/QuotientObstruction.lean", "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean", "lean/StratonovichHAMSecondMoment/RayleighTail.lean", "lean/StratonovichHAMSecondMoment/RemoveMask.lean", "lean/StratonovichHAMSecondMoment/SeriesType.lean", "lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean", "lean/StratonovichHAMSecondMoment/SpatialBracket.lean", "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean", "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean", "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean", "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean", "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean", "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean", "lean/StratonovichHAMSecondMoment/SpectralHomog.lean", "lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean", "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean", "lean/StratonovichHAMSecondMoment/SymplecticFree.lean", "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean", "lean/StratonovichHAMSecondMoment/TerminalWick.lean", "lean/StratonovichHAMSecondMoment/TimeCompletion.lean", "lean/StratonovichHAMSecondMoment/TimeFractional.lean", "lean/StratonovichHAMSecondMoment/TimeSchur.lean", "lean/StratonovichHAMSecondMoment/TypeContinuity.lean", "lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean", "lean/StratonovichHAMSecondMoment/VariationalDilation.lean", "lean/StratonovichHAMSecondMoment/VariationalFloor.lean", "lean/StratonovichHAMSecondMoment/VariationalMean.lean", "lean/StratonovichHAMSecondMoment/VariationalRate.lean", "lean/StratonovichHAMSecondMoment/WaveGreen.lean", "lean/StratonovichHAMSecondMoment/WaveKernel.lean", "lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean", "lean/StratonovichHAMSecondMoment/WeakSobolev.lean", "lean/StratonovichHAMSecondMoment/WhiteClockLaplace.lean", "lean/StratonovichHAMSecondMoment/WhiteRelativeWidth.lean", "lean/claims.yaml", "lean/coverage.yaml", "lean/provenance/manuscript-anchor.json", "lean/refutations/damped-multiplier/FourierExponent.lean", "lean/refutations/damped-multiplier/GaussianSign.lean", "lean/refutations/damped-multiplier/MassNonProbability.lean", "lean/refutations/damped-multiplier/SumNotClosed.lean", "lean/refutations/spectral-mass-identity/AlphaPositive.lean", "lean/refutations/spectral-mass-identity/ExponentSign.lean", "lean/refutations/spectral-mass-identity/FourierBoundAlphaZero.lean", "lean/refutations/spectral-mass-identity/SinFactorTwo.lean", "manuscript/notes/ai-statistics-data.tex", "manuscript/notes/ai-statistics.tex", "manuscript/notes/book-layout.tex", "manuscript/notes/chapter-guides/01-setting.tex", "manuscript/notes/chapter-guides/02-G0.tex", "manuscript/notes/chapter-guides/03-independent-upper.tex", "manuscript/notes/chapter-guides/04-gaussian-foundations.tex", "manuscript/notes/chapter-guides/05-operator-paths.tex", "manuscript/notes/chapter-guides/06-wave-evolution.tex", "manuscript/notes/chapter-guides/07-lower.tex", "manuscript/notes/chapter-guides/08-means.tex", "manuscript/notes/chapter-guides/09-growing-radius.tex", "manuscript/notes/chapter-guides/10-point-upper.tex", "manuscript/notes/chapter-guides/11-constant.tex", "manuscript/notes/chapter-guides/12-finite-order.tex", "manuscript/notes/chapter-guides/13-direct.tex", "manuscript/notes/chapter-guides/14-covariance.tex", "manuscript/notes/chapter-guides/15-static-clock.tex", "manuscript/notes/figures/active-subset-optimization.tex", "manuscript/notes/figures/chapter-roadmap.tex", "manuscript/notes/figures/common-noise.tex", "manuscript/notes/figures/cross-colour-cube.tex", "manuscript/notes/figures/dyadic-cover.tex", "manuscript/notes/figures/endpoint-elimination.tex", "manuscript/notes/figures/gaussian-enlargement.tex", "manuscript/notes/figures/global-control-blocks.tex", "manuscript/notes/figures/hermite-cutoff.tex", "manuscript/notes/figures/interval-allocations.tex", "manuscript/notes/figures/interval-end-metrics.tex", "manuscript/notes/figures/light-cone.tex", "manuscript/notes/figures/literature-interpretations.tex", "manuscript/notes/figures/literature-results-drawing.tex", "manuscript/notes/figures/literature-results-map.tex", "manuscript/notes/figures/nonseparable-controls.tex", "manuscript/notes/figures/order-of-limits.tex", "manuscript/notes/figures/positive-gram.tex", "manuscript/notes/figures/proof-map.tex", "manuscript/notes/figures/styles.tex", "manuscript/notes/figures/two-chain-pairings.tex", "manuscript/notes/figures/walsh-guitar.tex", "manuscript/notes/figures/white-strip.tex", "manuscript/notes/future_optimizers.tex", "manuscript/notes/future_universality.tex", "manuscript/notes/future_work.tex", "manuscript/notes/history_wave_equations.tex", "manuscript/notes/index/anchors.tex", "manuscript/notes/index/list-of-notation.tex", "manuscript/notes/index/setup.tex", "manuscript/notes/integrated_actual_operator_driver.tex", "manuscript/notes/integrated_cameron_mean.tex", "manuscript/notes/integrated_compact_gaussian.tex", "manuscript/notes/integrated_compact_mean_family.tex", "manuscript/notes/integrated_constant_phase_young.tex", "manuscript/notes/integrated_covariance_foundation.tex", "manuscript/notes/integrated_exact_scaling.tex", "manuscript/notes/integrated_gaussian_tubes.tex", "manuscript/notes/integrated_intrinsic_constant.tex", "manuscript/notes/integrated_masked_moments.tex", "manuscript/notes/integrated_occupation_ceiling.tex", "manuscript/notes/integrated_point_transfer.tex", "manuscript/notes/integrated_positive_gram.tex", "manuscript/notes/integrated_radius_anchor.tex", "manuscript/notes/integrated_raw_block_lower.tex", "manuscript/notes/integrated_signed_moment_upper.tex", "manuscript/notes/integrated_signed_static.tex", "manuscript/notes/integrated_source_convergence.tex", "manuscript/notes/integrated_spatial_occupation.tex", "manuscript/notes/integrated_symplectic_phase.tex", "manuscript/notes/integrated_temporal_equilibrium.tex", "manuscript/notes/integrated_uniform_mean.tex", "manuscript/notes/integrated_uniform_products.tex", "manuscript/notes/integrated_unmasked_variational.tex", "manuscript/notes/integrated_wave_variance.tex", "manuscript/notes/integrated_white_evaluation.tex", "manuscript/notes/integrated_young_upper_foundation.tex", "manuscript/notes/lean-coverage-data.tex", "manuscript/notes/lean-coverage.tex", "manuscript/notes/literature_review.tex", "manuscript/notes/no-go-appendix.tex", "manuscript/notes/notes_stratonovich_ham_second_moment.tex", "manuscript/notes/preface.tex", "manuscript/notes/theory_outlook.tex"]
+
+Independent correspondence review: wave L8 of the Lean companion (ledger rows, coverage classes and scope sentences) vs the manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  35182337601a). Review ONLY its sections "SpectralMassIdentity (whole result)" (lines 5395-5499), "DampedMultiplier (whole result)" (lines 1312-1478), the index rows for
+  them, and the items named in the checks below. Rows of earlier waves were
+  reviewed before.
+- the Lean modules (ground truth for what each declaration states), every
+  library module under lean/StratonovichHAMSecondMoment/. These sections'
+  own modules:
+     lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean
+     lean/StratonovichHAMSecondMoment/DampedMultiplier.lean
+  Library modules they import directly (context; read the declarations
+  the rows name; their own imports are in the packet too):
+     lean/StratonovichHAMSecondMoment/ClockCopy.lean
+     lean/StratonovichHAMSecondMoment/DampedNorms.lean
+     lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean
+     lean/StratonovichHAMSecondMoment/HomogHypothesis.lean
+     lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean
+     lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean
+     lean/StratonovichHAMSecondMoment/SpectralHomog.lean
+     lean/StratonovichHAMSecondMoment/TimeFractional.lean
+     lean/StratonovichHAMSecondMoment/WaveGreen.lean
+     lean/StratonovichHAMSecondMoment/WaveKernel.lean
+- refutation files of these modules (negative controls):
+     lean/refutations/spectral-mass-identity/AlphaPositive.lean
+     lean/refutations/spectral-mass-identity/ExponentSign.lean
+     lean/refutations/spectral-mass-identity/FourierBoundAlphaZero.lean
+     lean/refutations/spectral-mass-identity/SinFactorTwo.lean
+     lean/refutations/damped-multiplier/FourierExponent.lean
+     lean/refutations/damped-multiplier/GaussianSign.lean
+     lean/refutations/damped-multiplier/MassNonProbability.lean
+     lean/refutations/damped-multiplier/SumNotClosed.lean
+- audit files (elaborated types printed by #check / #print axioms):
+     lean/Audit/spectral-mass-identity/Audit.lean
+     lean/Audit/damped-multiplier/Audit.lean
+- lean/claims.yaml, lean/coverage.yaml, docs/coverage-scope-tex.yaml,
+  lean/provenance/manuscript-anchor.json.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  a2844206199b. Labels are \label{...}.
+- excerpts/tex-excerpts.txt : the statements and proofs of the labels these
+  sections cite, with the line numbers of the files under manuscript/
+  (a convenience copy; the files under manuscript/ are authoritative).
+- PROVENANCE.json : byte binding of every packet file.
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that E:intro-spectral-mass read as R = R_Gamma(1), L:spatial-fourier-bound with the constant R_alpha, and the remaining parts of L:damped-homogeneous-norms (E:damped-multiplier-comparison lower bounds, Gaussian multipliers, mass under convolution, Green smoothing as a Fourier multiplier) are formalized as stated in their
+rows: every listed conclusion proved, with hypotheses that match the
+manuscript, apart from side conditions the TeX leaves implicit and inputs
+explicitly declared as supplied. Test that claim hard: any Lean hypothesis
+that the manuscript does not have, any manuscript hypothesis the Lean
+drops, any weaker Lean conclusion, any changed constant, range, quantifier
+order or strictness, any modelling choice that changes the mathematical
+object, any supplied hypothesis stronger than the manuscript result it
+stands for, any row labelled as a step of a TeX proof that is really an
+auxiliary of a different Lean proof route, any coverage class that
+overstates ("same-assumptions" when a hypothesis is added; "full" when a
+conclusion is narrower), and any declaration missing from or duplicated in
+the Index, is a finding, unless the ledger states it AND it is genuinely
+harmless. Decide that yourself from the TeX; do not accept the ledger's word.
+Pay attention to: R_alpha = alpha pi mu(B_1)/(2 sin(pi alpha/2)) vs R_Gamma(1) (open vs closed ball, alpha > 0 needed, Gamma = 0 allowed); the statement of L:spatial-fourier-bound with R_alpha against E:spatial-fourier-bound; the multiplier class (measurable m with values in [0,1]) and the nested Laplace domains of E:damped-multiplier-comparison; which assertions of L:damped-homogeneous-norms are proved in which dimension (in particular whether Green smoothing is identified as a multiplier of the class only in d = 1, and whether the coverage row and its scope sentence say so: it is recorded as conclusion weaker); the reading fixed by "Le's decision 2 for wave L8" is stated as a reading, not as the TeX; the refutation files test the claimed perturbation and actually refute it.
+
+CHECKS (exactly these 49, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.SpectralMassIdentity.ralpha: E:intro-spectral-mass"
+  2. claim "StratonovichHAMSecondMoment.SpectralMassIdentity.beta_real: no direct label"
+  3. claim "StratonovichHAMSecondMoment.SpectralMassIdentity.levelset_eq_ball: no direct label"
+  4. claim "StratonovichHAMSecondMoment.SpectralMassIdentity.resolvent_one_eq_ralpha: L:spatial-fourier-bound"
+  5. claim "StratonovichHAMSecondMoment.SpectralMassIdentity.resolvent_eq_ralpha: L:spatial-fourier-bound"
+  6. claim "StratonovichHAMSecondMoment.SpectralMassIdentity.alpha_mem_Ioo_of_homog: no direct label"
+  7. claim "StratonovichHAMSecondMoment.SpectralMassIdentity.resolvent_eq_ralpha_paper: L:spatial-fourier-bound"
+  8. claim "StratonovichHAMSecondMoment.SpectralMassIdentity.hRdef_iff_resolvent: E:intro-spectral-mass"
+  9. claim "StratonovichHAMSecondMoment.SpectralMassIdentity.hRdef_iff_resolvent_paper: E:intro-spectral-mass"
+  10. claim "StratonovichHAMSecondMoment.SpectralMassIdentity.spatial_fourier_bound_ralpha_paper: L:spatial-fourier-bound"
+  11. claim "StratonovichHAMSecondMoment.DampedMultiplier.N1on_nonneg: E:damped-multiplier-comparison"
+  12. claim "StratonovichHAMSecondMoment.DampedMultiplier.N2onSq_nonneg: E:damped-multiplier-comparison"
+  13. claim "StratonovichHAMSecondMoment.DampedMultiplier.damped_multiplier_comparison: E:damped-multiplier-comparison"
+  14. claim "StratonovichHAMSecondMoment.DampedMultiplier.IsMultiplier: E:damped-multiplier-comparison"
+  15. claim "StratonovichHAMSecondMoment.DampedMultiplier.IsMultiplier.mul: L:damped-homogeneous-norms"
+  16. claim "StratonovichHAMSecondMoment.DampedMultiplier.smoothed_smoothed: no direct label"
+  17. claim "StratonovichHAMSecondMoment.DampedMultiplier.gaussMult: L:damped-homogeneous-norms"
+  18. claim "StratonovichHAMSecondMoment.DampedMultiplier.coe_gaussMult: no direct label"
+  19. claim "StratonovichHAMSecondMoment.DampedMultiplier.isMultiplier_gaussMult: L:damped-homogeneous-norms"
+  20. claim "StratonovichHAMSecondMoment.DampedMultiplier.gaussKernel: L:damped-homogeneous-norms"
+  21. claim "StratonovichHAMSecondMoment.DampedMultiplier.isProbabilityMeasure_gaussKernel: no direct label"
+  22. claim "StratonovichHAMSecondMoment.DampedMultiplier.conv_univ: no direct label"
+  23. claim "StratonovichHAMSecondMoment.DampedMultiplier.isFiniteMeasure_of_greenMass: no direct label"
+  24. claim "StratonovichHAMSecondMoment.DampedMultiplier.greenMass_conv: L:damped-homogeneous-norms"
+  25. claim "StratonovichHAMSecondMoment.DampedMultiplier.N0_conv: L:damped-homogeneous-norms"
+  26. claim "StratonovichHAMSecondMoment.DampedMultiplier.gauss_waveGreen_mass: L:damped-homogeneous-norms"
+  27. claim "StratonovichHAMSecondMoment.DampedMultiplier.charFun_gaussKernel: no direct label"
+  28. claim "StratonovichHAMSecondMoment.DampedMultiplier.charFun_gaussKernel_conv: L:damped-homogeneous-norms"
+  29. claim "StratonovichHAMSecondMoment.DampedMultiplier.charFun_pair_gaussKernel_conv: L:damped-homogeneous-norms"
+  30. claim "StratonovichHAMSecondMoment.DampedMultiplier.N2GreenOuter: E:damped-norm-definitions"
+  31. claim "StratonovichHAMSecondMoment.DampedMultiplier.N2GreenSq: E:damped-norm-definitions"
+  32. claim "StratonovichHAMSecondMoment.DampedMultiplier.N2GreenOuter_gauss_ae: no direct label"
+  33. claim "StratonovichHAMSecondMoment.DampedMultiplier.N2GreenSq_gauss: L:damped-homogeneous-norms"
+  34. claim "StratonovichHAMSecondMoment.DampedMultiplier.GreenFourier: no direct label"
+  35. claim "StratonovichHAMSecondMoment.DampedMultiplier.greenFourier_one: no direct label"
+  36. claim "StratonovichHAMSecondMoment.DampedMultiplier.N2GreenOuter_ae_eq: no direct label"
+  37. claim "StratonovichHAMSecondMoment.DampedMultiplier.N2GreenSq_eq: E:damped-norm-definitions"
+  38. claim "StratonovichHAMSecondMoment.DampedMultiplier.N2GreenSq_gauss_eq: L:damped-homogeneous-norms"
+  39. claim "StratonovichHAMSecondMoment.DampedMultiplier.damped_homogeneous_norms_full_paper: L:damped-homogeneous-norms"
+  40. claim "StratonovichHAMSecondMoment.DampedMultiplier.damped_homogeneous_norms_fourier_paper: L:damped-homogeneous-norms"
+  41. claim "StratonovichHAMSecondMoment.DampedMultiplier.damped_homogeneous_norms_full_wave: L:damped-homogeneous-norms"
+  42. claim "StratonovichHAMSecondMoment.DampedMultiplier.damped_homogeneous_norms_fourier_one: L:damped-homogeneous-norms"
+  43. claim "PARA-SpectralMassIdentity": the prose of the "SpectralMassIdentity (whole result)" section is accurate: it cites the right files and line numbers at a284420, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input, reading, proof-route difference and what is not formalized, and does not overclaim
+  44. claim "PARA-DampedMultiplier": the prose of the "DampedMultiplier (whole result)" section is accurate: it cites the right files and line numbers at a284420, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input, reading, proof-route difference and what is not formalized, and does not overclaim
+  45. claim "LEDGER-INDEX": every one of these 42 declarations appears EXACTLY ONCE in the "Index by label" table, under the same label as its section row (an additional listing only as an explicitly marked cross-reference), route auxiliaries in a "no direct label" row, and every label cited in these sections exists exactly once in the manuscript (search \label across all files under manuscript/)
+  46. claim "COVERAGE-ROWS": the lean/coverage.yaml rows L:damped-homogeneous-norms, L:spatial-fourier-bound: class (same-assumptions / inputs-supplied), conclusion (full / weaker), conclusion_scope, note, inputs and claims are right and honest for the declarations of these modules; every claim id listed exists in lean/claims.yaml
+  47. claim "SCOPE-RULES": the conclusion_scope sentences of the rows L:damped-homogeneous-norms, L:spatial-fourier-bound and their docs/coverage-scope-tex.yaml entries obey the plain-English rules: no Lean declaration or module names, no TeX line numbers or file names (manuscript labels are allowed), the same content in ascii (equal to conclusion_scope) and tex, and wherever lambda (the rate) is described it is the SQUARE ROOT of the supremum of the real Rayleigh quotient, never the supremum itself
+  48. claim "REFUTATIONS": each refutation file listed under PACKET for these modules states the perturbation the ledger says it states, the perturbation is a genuine weakening or mis-statement of the corresponding manuscript claim, and the file proves its negation (or the counterexample) as described; the ledger's description of each refutation is accurate
+  49. claim "CROSS-REFERENCES": every other place in the ledger that points to these sections or their labels (other sections, the Scope bullets, the "Not in Lean" section) is accurate
+For each row check (1-42): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: these sections' own
+   Lean modules (listed above), and, for every other declaration a row
+   names, that declaration in its module; the refutation and audit files
+   listed above; the sections "SpectralMassIdentity (whole result)", "DampedMultiplier (whole result)" and the "Scope" and "Index by label"
+   sections of candidate/statement-ledger.md; the entries of lean/claims.yaml
+   for these modules; the rows L:damped-homogeneous-norms, L:spatial-fourier-bound of lean/coverage.yaml and their
+   docs/coverage-scope-tex.yaml entries;
+   excerpts/tex-excerpts.txt, and in the files under manuscript/ every
+   TeX line range the sections cite.
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 49 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-42.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "limitations": anything you could not check.
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES;
+  FAIL if any fatal or major finding or required repair; INCONCLUSIVE if
+  the reading requirement could not be met.
+- "confidence": high only if requirement A is complete.
+

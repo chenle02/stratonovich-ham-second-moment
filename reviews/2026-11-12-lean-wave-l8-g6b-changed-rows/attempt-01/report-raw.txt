@@ -1,0 +1,113 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "diffs/coverage.diff:1-509 complete",
+    "diffs/coverage-scope-tex.diff:1-75 complete",
+    "lean/coverage.yaml:27-54,159-209,527-547,559-583,682-704,1046-1070,1097-1118,1154-1254,1356-1382 complete required rows; partial file",
+    "prior/coverage-f3be834.yaml:27-39,144-177,488-526,544-562,904-931,958-977,1013-1082,1162-1167 complete required rows; partial file",
+    "docs/coverage-scope-tex.yaml:1-69 complete",
+    "prior/coverage-scope-tex-f3be834.yaml:1-48 complete",
+    "candidate/statement-ledger.md:188-222,627-670,676-707,1312-1440,2727-2813,5491-5500 and targeted search matches partial",
+    "lean/claims.yaml:12194-12490,12772-13251,14021-14041,14534-14849 complete relevant added-claim entries; partial file",
+    "lean/provenance/manuscript-anchor.json:1-1825 complete",
+    "PROVENANCE.json:1-40 partial",
+    "lean/Audit/l8-completed/Audit.lean:1-62 complete",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean:1-501 complete",
+    "lean/StratonovichHAMSecondMoment/DampedMultiplier.lean:1-608 complete",
+    "lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean:1-287 complete",
+    "lean/StratonovichHAMSecondMoment/SpatialBracket.lean:1-519 complete",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean:1-1037 complete",
+    "lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean:1-145,324-345,422-451,733-792,1010-1165 partial; required spaceTimeCS_holds declaration complete",
+    "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean:1-615 complete",
+    "lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean:1-320 complete",
+    "lean/StratonovichHAMSecondMoment/TerminalWick.lean:1-110,220-344,390-510,530-610 partial; required terminalWickInput_of_nonneg declaration complete",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 complete",
+    "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean:1-180 partial",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean:230-383 partial",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean:1-179 complete",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:1115-1161 partial",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:88-119 partial",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:88-104,229-253 partial",
+    "lean/StratonovichHAMSecondMoment/VariationalRate.lean:500-518,604-620 partial",
+    "lean/StratonovichHAMSecondMoment/FiniteWick.lean:636-658 partial",
+    "manuscript/notes/integrated_occupation_ceiling.tex:1-308 complete",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-449 complete",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-30,245-335 partial; required proposition statement complete",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:218-263,500-535,794-920,2050-2080,2290-2330,2474-2505,2570-2685,3600-3748 partial; all required statements complete"
+  ],
+  "checks": [
+    {
+      "claim": "CHANGED-ROW C:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "L8Completed.lean:222-281 discharges the ceiling input and proves both bracket bounds and the strict comparison under HomogCovariance and Gamma != 0, matching integrated_occupation_ceiling.tex:4-21,252-266. The row explicitly records both substitutions: S_2^pos for C_2 and energyValue(K_0 R_sp) for the occupation energy. Constants and strictness agree."
+    },
+    {
+      "claim": "CHANGED-ROW L:damped-homogeneous-norms",
+      "verdict": "PARTIAL",
+      "reason": "The new lower bounds, multiplier comparison and smoothed N_0 identity are supported by DampedMultiplier.lean:146-189,262-289,547-585. However, coverage.yaml:165 and docs/coverage-scope-tex.yaml:14-15 overstate spatial covariance smoothing: the proved conclusion is only IsMultiplier(gaussMult eta), not identification of the spectral measure of the smoothed covariance. See W1."
+    },
+    {
+      "claim": "CHANGED-ROW L:spatial-fourier-bound",
+      "verdict": "PASS",
+      "reason": "SpectralMassIdentity.lean:80-81,228-236,272-285 proves the manuscript's R_alpha identity and the exact bound 2^(1+alpha) R_alpha b^(alpha/2), under H:homog without Gamma != 0. This matches integrated_spatial_occupation.tex:101-111 and the constant at main TeX:528-532. Removing the weaker-scope entry is justified."
+    },
+    {
+      "claim": "CHANGED-ROW L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "L8Completed.lean:176-183 proves the supremum score bound without S1Bdd supplied, through the deterministic discharge at lines 114-142. The nonnegative nonzero smooth z hypotheses and M_a/2 coefficient match integrated_spatial_occupation.tex:40-54. The previously recorded Rayleigh and integral-cost limitations remain explicit."
+    },
+    {
+      "claim": "CHANGED-ROW L:uniform-series-tail",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:496-503 proves both TerminalWickInput fields, and L8Completed.lean:312-357 composes them with the tail lemma. The remaining measurability and chain-mass inputs are disclosed and follow the manuscript's proof at main TeX:3648-3659. UniformSeriesTail.lean:261-316 supplies every conclusion, including the final B_1 bound, of main TeX:3703-3727."
+    },
+    {
+      "claim": "CHANGED-ROW P:occupation-physical-class",
+      "verdict": "PASS",
+      "reason": "The change replaces a line-number reference by 'a simple-function approximation', accurately describing integrated_spatial_occupation.tex:406-414. OccupationPhysicalClass.lean:144-158 models the class using joint representatives; SpatialOccupationL7Completed.lean:323-381 supplies the stated bounds. The unformalized passage between this model and strongly H^1-measurable fields remains disclosed."
+    },
+    {
+      "claim": "CHANGED-ROW P:spatial-energy-map",
+      "verdict": "PASS",
+      "reason": "L8Completed.lean:210-215 proves M_a^(-1/(3-alpha)) F0(Esp) <= S1pos with only H:homog and Gamma != 0. This matches integrated_spatial_occupation.tex:316-322. SpatialOccupationL7Completed.lean:273-301 retains the energy identity and existential version; the new statement correctly removes the supplied boundedness input and preserves the modelling qualifications."
+    },
+    {
+      "claim": "CHANGED-ROW P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "L8Completed.lean:189-204 proves the supremum score bound and the stated R_0-versus-S_1 consequence without supplied boundedness. The score constant matches integrated_spatial_occupation.tex:167-176. The older auxiliary route is identified as such in the ledger, while the row correctly retains the independent Fourier route to finiteness from TeX:179-188."
+    },
+    {
+      "claim": "CHANGED-ROW P:static-phase-all-orders",
+      "verdict": "PASS",
+      "reason": "StaticPhaseCauchy.lean:192-229,365-451,568-613 supports the coefficient estimate, cutoff-limit deduction and series bound with exactly the advertised constants and exponents of main TeX:2577-2605. The circle bound, entireness, coefficient/norm identifications, cutoff convergence and free estimate are explicitly supplied; none is stronger than the corresponding argument at TeX:2611-2681. Abstract Banach quantities are disclosed."
+    },
+    {
+      "claim": "CHANGED-ROW P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "L8Completed.lean:140-170 proves boundedness, positivity and c^((4-alpha)/(3-alpha)) scaling with only the section's H:homog and nonzero covariance assumptions. These match integrated_unmasked_variational.tex:4-9,270-284. The deterministic proof route differs from TeX:309-325 but is accurately declared, and Q_2 >= S_2^pos remains explicitly excluded."
+    },
+    {
+      "claim": "CHANGED-ROW T:intrinsic-occupation-ceiling",
+      "verdict": "PASS",
+      "reason": "L8Completed.lean:128-155 proves the pointwise and supremum ceilings for every c > 0 without supplied analytic inputs. OccupationCeilingFinite.lean:277-332,893-974 has the correct denominator eight and powers from integrated_occupation_ceiling.tex:205-245. The larger constant K_0 R_sp, alternate deterministic route, integral/Rayleigh models and omitted occupation-energy and moment conclusions are all explicitly disclosed."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "W1 — L:damped-homogeneous-norms: the new scope sentence says 'Everything is proved ... except one remark' and 'spatial Gaussian smoothing ... [is] proved in every dimension' (lean/coverage.yaml:165; docs/coverage-scope-tex.yaml:14-15). TeX asserts that 'Spatial Gaussian smoothing ... give[s] multipliers in this class' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:845-846). Lean proves only 'IsMultiplier (gaussMult ... eta)' (lean/StratonovichHAMSecondMoment/DampedMultiplier.lean:223-228,573), without identifying the spectral measure of p_epsilon * Gamma; that omission is expressly acknowledged at DampedMultiplier.lean:458-459 and candidate/statement-ledger.md:1390-1395. Membership of a proposed multiplier does not establish its connection to covariance smoothing. Fix the coverage conclusion_scope and both ASCII/TeX scope sentences to disclose this additional omission, retaining the separate dimension-one limitation for the Green Fourier identification."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Correct lean/coverage.yaml:165 and docs/coverage-scope-tex.yaml:14-15: state that Gaussian multiplier membership is proved in every dimension but the spectral identification for spatial covariance smoothing is not formalized; retain the disclosed dimension-one Green identification and the proved N_0 mass identity."
+  ],
+  "limitations": [
+    "Requirement A was completed for all eleven checks. Partial-file entries contain the required rows, declarations or manuscript statements; unrelated earlier-wave content and unlisted helper proofs were not exhaustively reviewed.",
+    "PROVENANCE.json was inspected only at lines 1-40; lines 41-1675 and packet-wide byte bindings were not independently checked.",
+    "The audit file contains #check/#print commands, not captured elaborator output. Compilation and proof correctness were accepted as stipulated; no build was run.",
+    "This AI correspondence review is neither human verification nor a novelty audit."
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md: 1-708, 1312-1608, 4557-4595, 5395-5499, 6972-6992, 7329-7506; additional cross-reference search matches throughout the file. Partial overall; complete required Scope, Index, and target sections.",
+    "lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean: 1-287, complete.",
+    "lean/StratonovichHAMSecondMoment/DampedMultiplier.lean: 1-608, complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean: 1-105, complete.",
+    "lean/StratonovichHAMSecondMoment/SpectralHomog.lean: 42-194, 219-243; partial context file, complete relevant declarations.",
+    "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean: 219-320; partial context file, complete relevant homogeneity declarations.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean: 96-132, 450-594; partial context file, complete relevant definitions and bound declarations.",
+    "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean: 130-339, 400-709; partial context file, complete relevant definitions, comparison declarations, and wrappers.",
+    "lean/StratonovichHAMSecondMoment/DampedNorms.lean: 50-112, 297-373; partial context file, complete relevant norm definitions and finiteness declarations.",
+    "lean/StratonovichHAMSecondMoment/ClockCopy.lean: 80-97, 157-166, 210-219, 238-282, 766-779; partial context file, complete relevant nonnegativity declarations.",
+    "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean: 1-88, complete.",
+    "lean/StratonovichHAMSecondMoment/TimeFractional.lean: 43-61, 97-125; partial context file, complete relevant measure and kernel definitions.",
+    "lean/StratonovichHAMSecondMoment/WaveKernel.lean: 32-90; partial context file, complete relevant wave-transform definitions.",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean: 1-115, 238-281, 413-541; partial context file, complete relevant definitions, mass wrappers, and one-dimensional Fourier declaration.",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean: 828-902; partial context file, complete pairing_eq_spatialPair declaration.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalar.lean: search matches at 619, 633, 646, 653, 669, 677, 1162, 1177, 1204, 1215; partial contextual inspection of hRdef.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean: search matches at 176, 190; partial contextual inspection of hRdef.",
+    "lean/Audit/spectral-mass-identity/Audit.lean: 1-38, complete.",
+    "lean/Audit/damped-multiplier/Audit.lean: 1-100, complete.",
+    "lean/refutations/spectral-mass-identity/AlphaPositive.lean: 1-48, complete.",
+    "lean/refutations/spectral-mass-identity/ExponentSign.lean: 1-54, complete.",
+    "lean/refutations/spectral-mass-identity/FourierBoundAlphaZero.lean: 1-76, complete.",
+    "lean/refutations/spectral-mass-identity/SinFactorTwo.lean: 1-59, complete.",
+    "lean/refutations/damped-multiplier/FourierExponent.lean: 1-54, complete.",
+    "lean/refutations/damped-multiplier/GaussianSign.lean: 1-38, complete.",
+    "lean/refutations/damped-multiplier/MassNonProbability.lean: 1-50, complete.",
+    "lean/refutations/damped-multiplier/SumNotClosed.lean: 1-38, complete.",
+    "lean/claims.yaml: 12192-12490, complete entries for both target modules; additional claim-ID searches.",
+    "lean/coverage.yaml: 140-215, 520-560, complete target rows.",
+    "docs/coverage-scope-tex.yaml: 1-69, complete.",
+    "excerpts/tex-excerpts.txt: 1-249, complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: 225-242, 526-532, 777-919, 1664-1676, 4690-4704; partial manuscript file, complete ranges cited by the target sections.",
+    "manuscript/notes/integrated_spatial_occupation.tex: 1-36, 101-164; partial manuscript file, complete target statement and proof.",
+    "All files under manuscript/: unrestricted searches for the target sections' manuscript labels; relevant definitions were found uniquely in the two manuscript files listed above.",
+    "PROVENANCE.json: 1-65, 79-87, 475-483, 655-744, 1481-1489, plus revision search matches; partial contextual metadata inspection.",
+    "lean/provenance/manuscript-anchor.json: 1-125, 405-435, 1740-1825, plus revision search matches at 426 and 929; partial contextual metadata inspection."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralMassIdentity.ralpha: E:intro-spectral-mass",
+      "verdict": "PASS",
+      "reason": "Ledger:5490 and claims.yaml:12194-12200 match SpectralMassIdentity.lean:80-81: 'alpha * π * μ(ball 0 1).toReal / (2 * sin(π * alpha / 2))'. TeX notes_stratonovich_ham_second_moment.tex:528-532 gives precisely this constant. The open-ball convention is harmless under the stated homogeneity and local finiteness."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralMassIdentity.beta_real: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:5491 and claims.yaml:12201-12207 match SpectralMassIdentity.lean:86-110, with '0 < a' and 'a < 1'. TeX notes_stratonovich_ham_second_moment.tex:856-860 contains the radial integral, not this Beta identity. Its classification as a different-route auxiliary is accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralMassIdentity.levelset_eq_ball: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:5492 and claims.yaml:12208-12214 match SpectralMassIdentity.lean:115-121, assuming '0 < t'. TeX notes_stratonovich_ham_second_moment.tex:851-860 does not use these level sets. The empty-ball convention for t ≥ 1 is disclosed correctly."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralMassIdentity.resolvent_one_eq_ralpha: L:spatial-fourier-bound",
+      "verdict": "PASS",
+      "reason": "Ledger:5493 and claims.yaml:12215-12221 faithfully describe SpectralMassIdentity.lean:128-194: locally finite, alpha-homogeneous μ and '0 < alpha', 'alpha < 2'. TeX notes_stratonovich_ham_second_moment.tex:851-860 supplies these conditions; integrated_spatial_occupation.tex:149-155 gives the identity at q = 1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralMassIdentity.resolvent_eq_ralpha: L:spatial-fourier-bound",
+      "verdict": "PASS",
+      "reason": "Ledger:5494 and claims.yaml:12222-12228 match SpectralMassIdentity.lean:201-208, including '0 < q', integrability, and exponent 'alpha - 2'. TeX integrated_spatial_occupation.tex:151-155 likewise says 'q>0' and q^(alpha-2) R_alpha < infinity. No constant or strictness discrepancy."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralMassIdentity.alpha_mem_Ioo_of_homog: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:5495 and claims.yaml:12229-12235 match SpectralMassIdentity.lean:212-217: 'HomogCovariance ... → 0 < alpha ∧ alpha < 2'. TeX notes_stratonovich_ham_second_moment.tex:226-240 supplies alpha0 > 0, alpha0 + alpha < 2, and the positive alpha alternatives. The numerical extraction is appropriately auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralMassIdentity.resolvent_eq_ralpha_paper: L:spatial-fourier-bound",
+      "verdict": "PASS",
+      "reason": "Ledger:5496 and claims.yaml:12236-12242 match SpectralMassIdentity.lean:228-236, whose only substantive hypothesis is 'HomogCovariance d alpha alpha0 Γ μ'. TeX integrated_spatial_occupation.tex:103 and 149-155 uses H:homog and allows Γ = 0. Integrability and every positive q are included."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralMassIdentity.hRdef_iff_resolvent: E:intro-spectral-mass",
+      "verdict": "PASS",
+      "reason": "Ledger:5497 and claims.yaml:12243-12249 match SpectralMassIdentity.lean:242-247: local finiteness, homogeneity, '0 < alpha < 2', and arbitrary real R. TeX notes_stratonovich_ham_second_moment.tex:530-532 defines the quotient; integrated_spatial_occupation.tex:153-154 identifies it with the resolvent. The ledger explicitly labels the equivalence as a reading."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralMassIdentity.hRdef_iff_resolvent_paper: E:intro-spectral-mass",
+      "verdict": "PASS",
+      "reason": "Ledger:5498 and claims.yaml:12250-12256 match SpectralMassIdentity.lean:253-257, assuming H:homog and quantifying over every real R. TeX notes_stratonovich_ham_second_moment.tex:225-242,530-532 and integrated_spatial_occupation.tex:153-154 justify this reformulation without an added input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpectralMassIdentity.spatial_fourier_bound_ralpha_paper: L:spatial-fourier-bound",
+      "verdict": "PASS",
+      "reason": "Ledger:5499 and claims.yaml:12257-12263 match SpectralMassIdentity.lean:272-285: 'HomogCovariance' and 'IsUnitTest g'. TeX integrated_spatial_occupation.tex:103-110 assumes H:homog, real smooth compactly supported g with norm 1, and concludes b > 0 and 0 ≤ A_sp ≤ 2^(1+alpha) R_alpha b^(alpha/2). Constants, Γ = 0, and profile class match; the pairing bridge is available."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.N1on_nonneg: E:damped-multiplier-comparison",
+      "verdict": "PASS",
+      "reason": "Ledger:1447 and claims.yaml:12266-12272 match DampedMultiplier.lean:146-152, requiring only '0 < a' for arbitrary μ, θ and S. TeX notes_stratonovich_ham_second_moment.tex:826-838,913 gives the same lower bound under the stronger H:homog setting. The generalization is explicit."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.N2onSq_nonneg: E:damped-multiplier-comparison",
+      "verdict": "PASS",
+      "reason": "Ledger:1448 and claims.yaml:12273-12279 match DampedMultiplier.lean:159-166: s-finite μ, resolvent integrability, 'μ {0} = 0', '0 < a < 1', positive θ and measurable S. TeX notes_stratonovich_ham_second_moment.tex:826-839,851-860,900-911 supplies these facts under H:homog. No extra unproved paper hypothesis is hidden."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.damped_multiplier_comparison: E:damped-multiplier-comparison",
+      "verdict": "PASS",
+      "reason": "Ledger:1449 and claims.yaml:12280-12286 match DampedMultiplier.lean:175-189, including hN integrability and nonnegative-valued measurable g ≤ 1. TeX notes_stratonovich_ham_second_moment.tex:826-841 assumes measurable m in [0,1], S ⊆ S' ⊆ (0,infinity), θ > 0. Lean uses S intersected with the positive half-line through L0; the paper wrappers discharge hN and the spectral side conditions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.IsMultiplier: E:damped-multiplier-comparison",
+      "verdict": "PASS",
+      "reason": "Ledger:1450 and claims.yaml:12287-12293 match DampedMultiplier.lean:195: 'Measurable g ∧ ∀ ξ, g ξ ≤ 1', with g valued in NNReal. TeX notes_stratonovich_ham_second_moment.tex:826 explicitly assumes measurable m: R^d → [0,1]. The representations are equivalent."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.IsMultiplier.mul: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:1451 and claims.yaml:12294-12300 match DampedMultiplier.lean:199-202: two IsMultiplier hypotheses imply IsMultiplier of the product. TeX notes_stratonovich_ham_second_moment.tex:915-916 invokes products of multipliers in [0,1]. No closure-under-sums claim is made."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.smoothed_smoothed: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1452 and claims.yaml:12301-12307 match DampedMultiplier.lean:207-211, assuming measurable NNReal-valued g and h. TeX notes_stratonovich_ham_second_moment.tex:915-916 mentions products but does not state this measure-level associativity lemma. The route-auxiliary mapping is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.gaussMult: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:1453 and claims.yaml:12308-12314 match DampedMultiplier.lean:215: exp(-(eta * norm ξ squared)), valued in NNReal, for arbitrary eta. TeX notes_stratonovich_ham_second_moment.tex:845-846,915-916 refers to Gaussian multipliers. Membership, unlike the definition, separately requires eta ≥ 0."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.coe_gaussMult: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1454 and claims.yaml:12315-12321 match the unconditional coercion identity in DampedMultiplier.lean:218-219. TeX notes_stratonovich_ham_second_moment.tex:845-846 has no subtype-coercion assertion. Correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.isMultiplier_gaussMult: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:1455 and claims.yaml:12322-12328 match DampedMultiplier.lean:223-228, explicitly assuming '0 ≤ η'. TeX notes_stratonovich_ham_second_moment.tex:845-846,915-916 says Gaussian smoothing gives [0,1] multipliers. This proves membership of the Gaussian factor, not the omitted covariance-smoothing spectral identity; that local limitation is disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.gaussKernel: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:1456 and claims.yaml:12329-12335 accurately describe DampedMultiplier.lean:236-237, the pushforward by sqrt(v) scaling. TeX notes_stratonovich_ham_second_moment.tex:845-847,1674,4698 uses Gaussian convolution without fixing its variance normalization in this lemma. The v ≤ 0 convention and reparameterization are disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.isProbabilityMeasure_gaussKernel: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1457 and claims.yaml:12336-12342 match DampedMultiplier.lean:241-244, with every real v and no positivity hypothesis. TeX notes_stratonovich_ham_second_moment.tex:845-847 uses a normalized Gaussian smoothing kernel but contains no separate pushforward-probability instance. The convention is harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.conv_univ: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1458 and claims.yaml:12343-12349 match DampedMultiplier.lean:248-251: probability ρ and s-finite ν imply preservation of ν's total mass. TeX notes_stratonovich_ham_second_moment.tex:916-917 asserts the Gaussian Green specialization, not this general convolution theorem. Correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.isFiniteMeasure_of_greenMass: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1459 and claims.yaml:12350-12356 match DampedMultiplier.lean:255-257, assuming 'GreenMass G' and '0 < s'. TeX notes_stratonovich_ham_second_moment.tex:881 gives G_s(R^d) = s, which entails finiteness. The separate typeclass helper has no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.greenMass_conv: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:1460 and claims.yaml:12357-12363 match DampedMultiplier.lean:262-266, with probability ρ and supplied GreenMass G. TeX notes_stratonovich_ham_second_moment.tex:881,916-917 assumes the wave mass identity and says Gaussian Green smoothing preserves it. Generalization to any probability measure is explicit and valid."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.N0_conv: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:1461 and claims.yaml:12364-12370 match DampedMultiplier.lean:272-277: probability ρ, GreenMass G and θ > 0, with integrability and both N0 equalities. TeX notes_stratonovich_ham_second_moment.tex:784,809,846-847,881,916-917 gives the corresponding mass-based assertion. The supplied input is no stronger than the identity used."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.gauss_waveGreen_mass: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:1462 and claims.yaml:12371-12377 match DampedMultiplier.lean:282-289: d in {1,2,3}, arbitrary real v, θ > 0. TeX notes_stratonovich_ham_second_moment.tex:226,846-847,916-917 uses those dimensions and Gaussian smoothing. Extending v to nonpositive values is harmless because the kernel becomes Dirac at zero."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.charFun_gaussKernel: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1463 and claims.yaml:12378-12384 match DampedMultiplier.lean:296-305: '0 ≤ v' and exponent '-v norm(ξ)^2 / 2'. TeX notes_stratonovich_ham_second_moment.tex:845-846 does not separately display the normalized Gaussian transform. Correctly classified as a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.charFun_gaussKernel_conv: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:1464 and claims.yaml:12385-12391 match DampedMultiplier.lean:309-312: v ≥ 0 and finite G, with the single-transform exponent divided by two. TeX notes_stratonovich_ham_second_moment.tex:845-846,915-916 asserts Green smoothing contributes a multiplier. Finiteness is implicit for each wave G_s and explicitly supplied in the generic formulation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.charFun_pair_gaussKernel_conv: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:1465 and claims.yaml:12392-12398 match DampedMultiplier.lean:318-329: v ≥ 0, finite G and H, and pair multiplier exp(-v norm(ξ)^2). TeX notes_stratonovich_ham_second_moment.tex:790-791,845-846,915-916 uses a transform times a conjugate. The doubled exponent relative to one transform is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.N2GreenOuter: E:damped-norm-definitions",
+      "verdict": "PASS",
+      "reason": "Ledger:1466 and claims.yaml:12399-12405 match DampedMultiplier.lean:335-338, with arbitrary a, θ, S, μ and G. TeX notes_stratonovich_ham_second_moment.tex:788-791 and 829-834 gives the same outer expression with K_S and transforms of G_s. The generalized complex-valued definition and transform interpretation are explicit."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.N2GreenSq: E:damped-norm-definitions",
+      "verdict": "PASS",
+      "reason": "Ledger:1467 and claims.yaml:12406-12412 match DampedMultiplier.lean:342-343, integrating N2GreenOuter against P2. TimeFractional.lean:52-55 defines P2 as Lebesgue measure on the positive quadrant, matching TeX notes_stratonovich_ham_second_moment.tex:788-791. No integrability assertion is hidden in this definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.N2GreenOuter_gauss_ae: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1468 and claims.yaml:12413-12419 match DampedMultiplier.lean:349-361: G_s finite for every s > 0 and v ≥ 0 imply the stated P2-almost-everywhere identity. TeX notes_stratonovich_ham_second_moment.tex:845-846 does not state this integrand-level transport lemma. Correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.N2GreenSq_gauss: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:1469 and claims.yaml:12420-12426 match DampedMultiplier.lean:370-374: positive-time finiteness of G_s and v ≥ 0, for arbitrary a, θ, S and μ. TeX notes_stratonovich_ham_second_moment.tex:845-846,915-916 motivates the multiplier identity. The ledger correctly distinguishes this generic characteristic-function identity from identification with the waveHat-defined norms."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.GreenFourier: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1470 and claims.yaml:12427-12433 match DampedMultiplier.lean:380-382: positive-time finiteness and 'charFun (G s) ξ = waveHat s ξ'. TeX notes_stratonovich_ham_second_moment.tex:777-778,794-797 uses precisely the wave Fourier identity. Its status as an explicit hypothesis for arbitrary G, discharged only in dimension one, is accurately stated."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.greenFourier_one: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1471 and claims.yaml:12434-12440 match DampedMultiplier.lean:386-391: unconditional GreenFourier of waveGreen 1. TeX notes_stratonovich_ham_second_moment.tex:777-778 uses the Fourier formula without this dimension-specific wrapper. The ledger does not claim a corresponding two- or three-dimensional theorem."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.N2GreenOuter_ae_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:1472 and claims.yaml:12441-12447 match DampedMultiplier.lean:396-410, assuming 'GreenFourier G'. TeX notes_stratonovich_ham_second_moment.tex:777-778,788-797 supplies the underlying Fourier interpretation but not this P2-almost-everywhere coercion lemma. Correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.N2GreenSq_eq: E:damped-norm-definitions",
+      "verdict": "PASS",
+      "reason": "Ledger:1473 and claims.yaml:12448-12454 match DampedMultiplier.lean:417-421: GreenFourier G implies equality with the complex cast of N2onSq for all parameters. TeX notes_stratonovich_ham_second_moment.tex:777-778,788-797 defines the norm through these transforms. The supplied identity and possible totalized-integral interpretation are disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.N2GreenSq_gauss_eq: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:1474 and claims.yaml:12455-12461 match DampedMultiplier.lean:426-430: 'GreenFourier G' and v ≥ 0 imply the waveHat-defined multiplied norm identity. TeX notes_stratonovich_ham_second_moment.tex:777-778,845-846 uses that Fourier identity implicitly. Its supplied status and dimension-one discharge are explicit."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.damped_homogeneous_norms_full_paper: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:1475 and claims.yaml:12462-12468 faithfully enumerate DampedMultiplier.lean:460-505: H:homog plus GreenMass G; scaling, tails, both comparison bounds, multiplier membership/products, mass preservation and a generic N2GreenSq identity. TeX notes_stratonovich_ham_second_moment.tex:805-847,881 supplies H:homog and the mass identity. The detailed row does not identify N2GreenSq with N2onSq without GreenFourier."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.damped_homogeneous_norms_fourier_paper: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:1476 and claims.yaml:12469-12475 match DampedMultiplier.lean:515-541: H:homog, GreenFourier G, v ≥ 0, θ > 0 and measurable S ⊆ S'. TeX notes_stratonovich_ham_second_moment.tex:777-778,826-847 uses the wave Fourier identity and those comparison conditions. All four outer integrability conclusions and both identities are present; the supplied input is openly identified."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.damped_homogeneous_norms_full_wave: L:damped-homogeneous-norms",
+      "verdict": "PARTIAL",
+      "reason": "Ledger:1477 and claims.yaml:12476-12482 accurately paraphrase DampedMultiplier.lean:547-585, whose hypothesis is H:homog alone. However, the ledger labels it 'whole result with nothing supplied'. TeX notes_stratonovich_ham_second_moment.tex:845-846 asserts Green smoothing gives a multiplier for the wave norms in all permitted dimensions; the declaration concludes only an equality between N2GreenSq expressions, not their identification with N2onSq. That identification is separate at DampedMultiplier.lean:594-606 and restricted to d = 1. See W2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DampedMultiplier.damped_homogeneous_norms_fourier_one: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "Ledger:1478 and claims.yaml:12483-12489 match DampedMultiplier.lean:594-606: dimension one, H:homog alone, v ≥ 0, θ > 0 and measurable S ⊆ S'. TeX notes_stratonovich_ham_second_moment.tex:226,826-847 allows more dimensions. This row explicitly and honestly states the narrower dimension-one result, with no supplied Fourier identity."
+    },
+    {
+      "claim": "PARA-SpectralMassIdentity",
+      "verdict": "PARTIAL",
+      "reason": "The main correspondence, constants, open-ball discussion, Γ = 0 allowance, used fields and alternative proof route at ledger:5397-5475 are accurate. But ledger:5485-5486 says the alpha-zero controls give R_0 = 0 'under any reading of the quotient'. SpectralMassIdentity.lean:80-81 evaluates 0/0 using Lean's totalized division; TeX notes_stratonovich_ham_second_moment.tex:531 has no such convention. This is materially inaccurate; see W3."
+    },
+    {
+      "claim": "PARA-DampedMultiplier",
+      "verdict": "FAIL",
+      "reason": "Most detailed descriptions at ledger:1328-1435 correctly disclose supplied GreenFourier, dimension-one identification and the omitted covariance-smoothing identity. Nevertheless ledger:1323-1326 asserts 'every assertion of the lemma is a Lean conclusion' of full_wave. DampedMultiplier.lean:582-585 supplies only the generic transform-norm equality, whereas the wave-norm identification is dimension one at 594-606. The acknowledged reading does not make the stronger summary correct. See W2."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "Ledger:627-634 lists all 10 SpectralMassIdentity and 32 DampedMultiplier declarations exactly once, under the labels used by their section rows. Route-only helpers are under no direct label. Searches across manuscript/ found unique occurrences of the cited target labels, including H:homog, E:intro-spectral-mass, both spatial-bound labels, the damped definitions, comparison and tail labels."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "FAIL",
+      "reason": "The spatial-bound row at coverage.yaml:528-547 correctly records same-assumptions/full and the R_alpha theorem. The damped row correctly uses conclusion: weaker and its note at 207-209 accurately describes membership-only covariance smoothing. However its conclusion_scope at 165 contradicts that limitation by saying 'spatial Gaussian smoothing ... [is] proved in every dimension'. Only Gaussian-factor membership is proved; the spectral measure of p_eps * Γ is not identified. All listed claim IDs exist. See W1."
+    },
+    {
+      "claim": "SCOPE-RULES",
+      "verdict": "PASS",
+      "reason": "The damped sentence at coverage.yaml:165 equals docs/coverage-scope-tex.yaml:14; line 15 has the same content with N_0 typeset. It contains no Lean identifiers, file names or line numbers and does not describe a rate lambda. The full spatial-bound row has no conclusion_scope or corresponding scope entry. The substantive overstatement in the damped sentence is assessed separately in COVERAGE-ROWS."
+    },
+    {
+      "claim": "REFUTATIONS",
+      "verdict": "FAIL",
+      "reason": "All eight files prove the displayed formal negations or counterexamples. Six have the claimed genuine finite/integrable witnesses. AlphaPositive.lean:9-12,35-46 and FourierBoundAlphaZero.lean:15-16,57-67 rely on evaluating the quotient at alpha = 0 as Lean's 0/0 = 0. The ledger's claim at 5485-5486 that this works 'under any reading' is false: ordinary division is undefined there, and the continuous extension of alpha*pi/(2*sin(pi*alpha/2)) is 1. See W3."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "FAIL",
+      "reason": "The R_alpha cross-references and the explicit omissions at ledger:7407-7414 are accurate. But Scope:192-197, Index:630, and WaveGreen prose:6986-6988 call full_wave the full lemma despite the dimension-one-only wave-norm identification and the membership-only covariance-smoothing reading. These summaries must retain the narrower scope rather than override it. See W2."
+    }
+  ],
+  "findings": {
+    "fatal": [
+      "W1 — COVERAGE-ROWS: lean/coverage.yaml:165 and docs/coverage-scope-tex.yaml:14-15 say 'spatial Gaussian smoothing ... [is] proved in every dimension'. Lean DampedMultiplier.lean:223-228 proves only '0 ≤ η → IsMultiplier (gaussMult η)'; ledger:1391-1395 explicitly says the spectral identity for p_eps * Γ 'is not stated'. TeX notes_stratonovich_ham_second_moment.tex:845-846 says spatial Gaussian smoothing gives a multiplier, which identifies an operation, not merely membership of an unrelated factor. Fix both scope sentences to say explicitly that covariance smoothing is represented only by Gaussian-factor membership and that its spectral identity is not formalized. Retain conclusion: weaker."
+    ],
+    "major": [
+      "W2 — PARA-DampedMultiplier, full_wave row and CROSS-REFERENCES: ledger:1323-1326 says 'every assertion of the lemma is a Lean conclusion' of full_wave; ledger:1477,192-197,630,6986-6988 repeats whole/full-result language. Lean DampedMultiplier.lean:582-585 concludes N2GreenSq(p*G, μ) = N2GreenSq(G, mμ), not equality with the waveHat-defined N2onSq. The latter is proved without a supplied Fourier identity only for d = 1 at DampedMultiplier.lean:594-606. TeX notes_stratonovich_ham_second_moment.tex:226,845-846 applies the smoothing assertion in d = 1,2,3. Fix these summaries and the row/index qualifiers to describe the extended spectral and mass conclusions, explicitly retaining the dimension-one limitation and membership-only covariance-smoothing reading. Merely citing the later limitations does not justify calling full_wave the full lemma.",
+      "W3 — PARA-SpectralMassIdentity and REFUTATIONS: ledger:5485-5486, AlphaPositive.lean:10-12 and FourierBoundAlphaZero.lean:15-16 claim R_0 = 0 'under any reading' because its numerator is zero. Lean SpectralMassIdentity.lean:80-81 and AlphaPositive.lean:44-46 instead evaluate 0/0 using totalized division. TeX notes_stratonovich_ham_second_moment.tex:531 gives the quotient under the positive-alpha domain of H:homog at 240 and supplies no alpha-zero convention. Ordinary division is undefined at the witness; the continuous extension of the coefficient alpha*pi/(2*sin(pi*alpha/2)) equals 1, not 0. Fix the ledger and refutation comments to identify these as controls of the Lean-totalized extension outside the manuscript domain, remove the quotient-independent claim, and do not present them as convention-independent numerical counterexamples."
+    ],
+    "minor": [
+      "W4 — Scope attribution: ledger:189-192 attributes 'R_Gamma(1) = R_alpha' to spatial_fourier_bound_ralpha_paper. Lean SpectralMassIdentity.lean:272-285 uses that identity but does not conclude it; resolvent_eq_ralpha_paper at 228-236 does. TeX integrated_spatial_occupation.tex:153-154 states the identity separately. Optional clarification: name resolvent_eq_ralpha_paper for the identity and spatial_fourier_bound_ralpha_paper for its bound consequence."
+    ]
+  },
+  "required_repairs": [
+    "Correct the damped conclusion_scope and its ASCII/TeX copies as specified in W1, explicitly distinguishing Gaussian-factor membership from the unformalized covariance-smoothing spectral identity.",
+    "Replace the full/whole-result assertions about damped_homogeneous_norms_full_wave in the target prose, row qualifier, Scope, Index and WaveGreen cross-reference with the narrower scope specified in W2.",
+    "Correct the alpha-zero refutation descriptions and comments as specified in W3: disclose dependence on Lean's totalized division and remove the assertion that 0/0 is zero under any reading."
+  ],
+  "limitations": [
+    "The complete-reading requirement A was completed for its scoped sections, declarations, entries, audit/refutation files, excerpts and cited authoritative TeX ranges. Context modules and unrelated ledger sections were inspected selectively, as reflected in source_coverage.",
+    "PROVENANCE.json outside the reported ranges and manuscript-anchor.json outside the reported ranges were not read completely; these were contextual metadata inspections, not a byte-binding or historical-revision audit.",
+    "Compilation and standard-axiom status were accepted as supplied. The audit files contain #check/#print commands, not captured elaboration output; no build was launched.",
+    "The external source's Gaussian normalization was not independently checked; that source is not included in the frozen packet.",
+    "This is an AI correspondence review, not human verification or a novelty audit."
+  ]
+}

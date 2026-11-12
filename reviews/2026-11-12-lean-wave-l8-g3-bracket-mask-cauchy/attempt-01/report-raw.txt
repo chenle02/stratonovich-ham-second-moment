@@ -1,0 +1,591 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-1544 — complete; packet byte lengths and SHA-256 bindings also checked.",
+    "lean/provenance/manuscript-anchor.json:1-1825 — complete; current manuscript-source hashes checked.",
+    "candidate/statement-ledger.md:1-708, 848-865, 1041-1053, 2419-2443, 2514-2542, 2727-2814, 3514-3549, 3577-3586, 3598-3605, 4174-4290, 4292-4345, 4455-4555, 5501-5614, 6782-6848, 6892, 6895, 6899, 7329-7506 — complete required sections and identified cross-references.",
+    "lean/claims.yaml:13033-13512, 14533-14729 — complete entries for all 96 target declarations; referenced coverage claim IDs additionally checked for existence.",
+    "lean/coverage.yaml:27-54, 1183-1224, 1255-1276 — complete required rows.",
+    "docs/coverage-scope-tex.yaml:1-69 — complete.",
+    "excerpts/tex-excerpts.txt:1-1360 — complete, in consecutive ranges.",
+    "lean/StratonovichHAMSecondMoment/SpatialBracket.lean:1-519 — complete.",
+    "lean/StratonovichHAMSecondMoment/RemoveMask.lean:1-748 — complete.",
+    "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean:1-615 — complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 — complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:55-162, 188-198, 229-251 — complete required definitions and named dilation declaration; other contents outside scope.",
+    "lean/StratonovichHAMSecondMoment/WeakSobolev.lean:30-200, 219-258 — complete required weak-gradient, trial, value, set and rate declarations; other contents outside scope.",
+    "lean/StratonovichHAMSecondMoment/VariationalFloor.lean:405-481 — complete named floor declarations; other contents outside scope.",
+    "lean/StratonovichHAMSecondMoment/VariationalMean.lean:630-671 — complete named global-mean declaration and relevant context; other contents outside scope.",
+    "lean/StratonovichHAMSecondMoment/VariationalRate.lean:337-445, 506-542, 603-618, 781-828 — complete required rate, score-set, boundedness and named wrapper declarations; other contents outside scope.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean:268-308 — complete required energy and score wrappers; other contents outside scope.",
+    "lean/StratonovichHAMSecondMoment/SeriesType.lean:50-220 — complete required series-bound declarations; other contents outside scope.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalar.lean:586-640 — complete named nonnegativity and interaction-wrapper declarations; other contents outside scope.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean:1130-1144, 1204-1219, 1351-1357 — complete required spatial constant, energy and scalar-map definitions; other contents outside scope.",
+    "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean:477-485 — complete required density and mass definitions; other contents outside scope.",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean:95-103, 273-280, 924-976 — complete required constant, ceiling and discharge declarations; other contents outside scope.",
+    "lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean:1129-1165 — complete required interface and discharge declaration; other contents outside scope.",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean:75-145, 219-291 — complete required bridges and completed bracket declarations; other contents outside scope.",
+    "lean/Audit/spatial-bracket/Audit.lean:1-94 — complete.",
+    "lean/Audit/remove-mask/Audit.lean:1-107 — complete.",
+    "lean/Audit/static-phase-cauchy/Audit.lean:1-93 — complete.",
+    "lean/refutations/spatial-bracket/FaBelowF0.lean:1-31 — complete.",
+    "lean/refutations/spatial-bracket/IntegerOrder.lean:1-30 — complete.",
+    "lean/refutations/spatial-bracket/LogGapZero.lean:1-34 — complete.",
+    "lean/refutations/spatial-bracket/ZetaFactor.lean:1-52 — complete.",
+    "lean/refutations/spatial-bracket/ZetaOneFavorable.lean:1-38 — complete.",
+    "lean/refutations/remove-mask/ChiPlateau.lean:1-39 — complete.",
+    "lean/refutations/remove-mask/MaskSign.lean:1-40 — complete.",
+    "lean/refutations/remove-mask/MaskSupport.lean:1-37 — complete.",
+    "lean/refutations/remove-mask/PointCoefficient.lean:1-48 — complete.",
+    "lean/refutations/static-phase-cauchy/CauchyPower.lean:1-37 — complete.",
+    "lean/refutations/static-phase-cauchy/FockDropOne.lean:1-36 — complete.",
+    "lean/refutations/static-phase-cauchy/HalfConstant.lean:1-48 — complete.",
+    "lean/refutations/static-phase-cauchy/WeightSquare.lean:1-35 — complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:225-242, 2054-2066, 2288-2465, 2472-2683 — complete required authoritative ranges.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-337 — complete.",
+    "manuscript/notes/integrated_occupation_ceiling.tex:1-308 — complete.",
+    "manuscript/notes/integrated_compact_mean_family.tex:1-112, 398-512 — complete required authoritative ranges.",
+    "manuscript/notes/integrated_raw_block_lower.tex:1-18, 541-549 — complete required authoritative ranges.",
+    "manuscript/notes/integrated_spatial_occupation.tex:300-348 — complete required authoritative range.",
+    "manuscript/notes/integrated_intrinsic_constant.tex:331-381 — complete required authoritative range.",
+    "manuscript/notes/integrated_temporal_equilibrium.tex:30-56 — complete relevant mass-definition context."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.K0: P:raw-occupation-energy",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:100-101 defines '2 ^ a / (1 - a)' without hypotheses; TeX integrated_occupation_ceiling.tex:94 defines 'K_0 = 2^a/(1-a)' under the standing 0<a<1. The ledger records the totalized division convention; claims.yaml:13035-13041 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.coef: E:occupation-scalar-map",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:105-106 defines '(q-2b)^((q-2b)/2)/(8(q-b)^(q-b))'; TeX integrated_occupation_ceiling.tex:195-200 has exactly this coefficient for '0 <= b < q/2'. This is a total-formula definition, not an assertion extending the manuscript's admissible range; claims.yaml:13042-13048 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.Fb: E:occupation-scalar-map",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:111-112 defines 'k*(coef*(2z/(2-alpha))^((2-alpha)/2))^(1/k)'; TeX integrated_occupation_ceiling.tex:195-203 gives the same formula for z>0 and sets F_b(0)=0. The ledger explicitly distinguishes the total definition from its nonnegative-energy use; claims.yaml:13049-13055 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.logGap: C:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:115-117 defines '[q log q+(q-2a) log(q-2a)]/2-(q-a) log(q-a)'; TeX integrated_occupation_ceiling.tex:275-279 defines exactly that Delta. Positivity is separately proved, not built into the definition; claims.yaml:13056-13062 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.Dzeta: E:raw-occupation-energy",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:119-120 defines '(2-alpha)/2*(alpha/(2*zeta))^(alpha/(2-alpha))'; TeX integrated_occupation_ceiling.tex:99-104 defines the same D_zeta for zeta>0. The row correctly claims only the scalar factor, not the occupation-energy identity; claims.yaml:13063-13069 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.ceilingValue: E:occupation-score-ceiling",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:124-126 defines 'c^(q/k)*k*(alpha^(alpha/2)*C/(8*q^(q/2)))^(1/k)'; TeX integrated_occupation_ceiling.tex:209-215 has the identical constant with C_occ. The arbitrary-real-C abstraction and its nonnegative use are disclosed; claims.yaml:13070-13076 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.OccupationCeilingK0: T:intrinsic-occupation-ceiling",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:132-134 assumes the pointwise ceiling 'forall c, 0<c -> forall Psi in CPos'. TeX integrated_occupation_ceiling.tex:209-215 supplies the sharper C_occ ceiling and :96 supplies 'C_occ <= K_0 R_sp'. Since 1/k>0, substitution weakens the ceiling. Nonemptiness justifies the pointwise/supremum equivalence. The named-input status and later discharge are accurately recorded; claims.yaml:13077-13083 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.K0_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:139-140 has 'ha : a < 1' and concludes '0 < K0 a'; the ledger and claims.yaml:13084-13090 give exactly that hypothesis. TeX integrated_occupation_ceiling.tex:94 uses the constant under 0<a<1 but does not separately state this generalized helper. The no-direct-label assignment is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.coef_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:143-145 assumes '0 < 4-alpha-2*b' and '0 < 4-alpha-b'. TeX integrated_occupation_ceiling.tex:195 restricts 0<=b<q/2, which implies these inequalities. The generalized positivity helper is accurately stated and not represented as a manuscript theorem; claims.yaml:13091-13097 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.Fb_zero: E:occupation-scalar-map",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:148-151 assumes 'alpha < 2' and permits every real b, concluding 'Fb alpha b 0 = 0'; TeX integrated_occupation_ceiling.tex:195 explicitly sets 'F_b(0)=0' on its admissible b range. The harmless wider algebraic range is stated; claims.yaml:13098-13104 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.Fb_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:154-159 assumes 'alpha<2', both coefficient bases positive, and '0<z'. TeX integrated_occupation_ceiling.tex:195-200 supplies those conditions in its defining range but does not separately state this helper. Ledger and claims.yaml:13105-13111 match the Lean type."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.Fb_zero_eq_F0: E:occupation-scalar-map",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:163-173 assumes 'alpha<4' and proves 'Fb alpha 0 z = F0 alpha z' for every z. TeX integrated_occupation_ceiling.tex:202 says 'At b=0 this is exactly the map' of E:spatial-static-energy-score. The ledger explicitly states the wider formula range; claims.yaml:13112-13118 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.log_coef: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:176-182 assumes the two bases positive and expands log(coef), including '-log 8'. TeX integrated_occupation_ceiling.tex:283-286 subtracts logarithms but does not state this intermediate expansion. The route-auxiliary classification and claims.yaml:13119-13125 are accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.logGap_pos: C:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:186-197 assumes '0<a' and '0<4-alpha-2*a'. TeX integrated_occupation_ceiling.tex:280-283 has a>0 and q-2a>2-a>1 and explicitly offers strict midpoint convexity of x log x. Lean uses weaker sufficient conditions and exactly that offered route; claims.yaml:13126-13132 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.log_Fb_ratio: C:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:200-218 assumes 'alpha<2', 'q-2a>0', 'z>0' and concludes 'log(Fa/F0)=Delta/(3-alpha)'. TeX integrated_occupation_ceiling.tex:286 states that identity under stronger standing conditions. Ledger and claims.yaml:13133-13139 preserve the denominator and the strict domain."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.F0_lt_Fa: C:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:222-232 additionally assumes '0<a' and obtains 'F0 alpha z < Fb alpha a z'; TeX integrated_occupation_ceiling.tex:263-264, 278-286 gives the same strict comparison for positive energy. No inequality direction or strictness is lost; claims.yaml:13140-13146 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.F0_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:236-246 assumes 'alpha<2', '0<=t', '0<=E' and proves the stated homogeneity with exponent '(2-alpha)/2*(1/(3-alpha))'. TeX integrated_occupation_ceiling.tex:269-270 uses the scalar map but does not state this helper. The no-direct-label classification and claims.yaml:13147-13153 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.energyValue_pow: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:251-259 assumes '0<alpha<2' and 'C>=0'. The identity matches the substitution in TeX integrated_spatial_occupation.tex:342-344, generalized to a real constant. It is properly treated as a Lean-route helper rather than that labelled energy theorem; claims.yaml:13154-13160 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.ceilingValue_eq_half: E:occupation-score-ceiling",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:264-268 assumes '0<alpha<2', 'C>=0' and leaves c real, proving 'U_c[C]=c^m F0(energyValue alpha C)'. TeX integrated_occupation_ceiling.tex:214-215 has this at zeta=1/2 with C=C_occ. The substitution and wider scalar-c range are disclosed; claims.yaml:13161-13167 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.Dzeta_half: E:raw-occupation-energy",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:272-275 proves the formula identity for 'all real alpha, C'; TeX integrated_occupation_ceiling.tex:101-104 gives D_zeta and integrated_spatial_occupation.tex:311-312 gives energyValue's formula. The row correctly claims equality of scalar expressions, not equality of the underlying occupation and spatial energies; claims.yaml:13168-13174 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.ceilingValue_mul: C:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:280-292 assumes '0<alpha<2', 'K,R>=0' and proves 'U_c[KR]=c^m K^(1/k) F0(energyValue alpha R)'. TeX integrated_occupation_ceiling.tex:269-270 performs precisely this substitution at K=K_0, R=R_sp. The arbitrary-constant identity is accurately identified; claims.yaml:13175-13181 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.ceilingValue_eq_zeta: E:occupation-score-ceiling",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:297-314 assumes '0<alpha<2', 'C>=0', 'zeta>0' and retains '(2*zeta)^(alpha/(2*k))'. TeX integrated_occupation_ceiling.tex:214-215 has exactly that factor. The C_occ-to-C replacement is explicit; claims.yaml:13182-13188 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.ceiling_ratio_exp: C:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:319-344 assumes '0<alpha<2', 'q-2a>0', 'c,C,zeta>0' and proves exponent '(Delta-(alpha/2)*log(2*zeta))/k'. TeX integrated_occupation_ceiling.tex:287-288 states the identical ratio at E_zeta^O. The abstract energy replacement and positivity needed for division are accurately recorded; claims.yaml:13189-13195 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.counterexample_integers: C:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:350-353 has no hypotheses and states '11^11*7^7=234966429149994773', '2^5*9^18=4803028329503971872', and the correct strict order. TeX integrated_occupation_ceiling.tex:297-298 contains those exact integers; claims.yaml:13196-13202 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.counterexample_log: C:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:358-377 fixes 'alpha=5/4, a=1/2' and proves the exact logarithmic identity and negativity. TeX integrated_occupation_ceiling.tex:291-298 fixes those values and additionally d=2, irrelevant to the scalar computation. The denominator includes the essential 2^5; claims.yaml:13203-13209 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.counterexample_ratio: C:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:382-398 assumes 'c>0, C>0' and gives 'c^m Fa(D_1 C^(2/(2-alpha))) < U_c[C]' at alpha=5/4, a=1/2. TeX integrated_occupation_ceiling.tex:290-298 says the zeta=1 comparison is not universally favorable. The ledger correctly describes a comparison of bounds, not a refuted moment inequality; claims.yaml:13210-13216 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.S1Bdd_of_ceiling: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:403-407 assumes 'OccupationCeilingK0 alpha a Gamma' and derives 'S1Bdd a Gamma' using c=1. TeX integrated_occupation_ceiling.tex:209-213 supplies such a ceiling, whereas its separate boundedness proof is not this helper. The route-only classification and claims.yaml:13217-13223 are accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.spatial_bracket_lower_paper: E:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:414-431 assumes 'HomogCovariance ...' and 'Gamma != 0', concluding an admissible score exceeds every y below the stated lower endpoint. TeX integrated_occupation_ceiling.tex:257-258, 271-272 gives the lower bracket through S_2^pos and its identification with C_2. The existential form, Rayleigh interpretation and missing C_2 identification are explicitly disclosed; claims.yaml:13224-13230 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.spatial_bracket_lower_sSup_paper: E:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:437-445 assumes the standing hypotheses plus 'hB1 : S1Bdd alpha0 Gamma'. TeX integrated_unmasked_variational.tex:272-277 already proves that boundedness, and integrated_occupation_ceiling.tex:257-258 uses the resulting supremum. The extra supplied fact is openly identified and later discharged; claims.yaml:13231-13237 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.spatial_bracket_upper_paper: E:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:451-471 assumes 'HomogCovariance', 'Gamma != 0', and 'OccupationCeilingK0', concluding boundedness and 'S_2^pos <= 2^m K_0^(1/k) F0(E_sp)'. TeX integrated_occupation_ceiling.tex:259, 269-270 obtains this from the ceiling. The supplied input is weaker than the combined manuscript sources and its discharge is documented; claims.yaml:13238-13244 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialBracket.intrinsic_spatial_bracket_paper: C:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "Lean SpatialBracket.lean:481-517 assumes the standing hypotheses and 'OccupationCeilingK0' and proves all seven advertised conjuncts. TeX integrated_occupation_ceiling.tex:256-288 uses C_2 and E_(1/2)^O; the ledger expressly substitutes S_2^pos and 'D_(1/2)(K_0 R_sp)^(2/(2-alpha))'. It does not claim the sharper original-energy comparison or the zero case. claims.yaml:13245-13251 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.expNegInvGlue_eq: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:135-137 has 't : R' with no restriction and gives 'if t<=0 then 0 else exp(-(1/t))'. TeX integrated_unmasked_variational.tex:182 defines exactly this F. Ledger and claims.yaml:13254-13260 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.chi: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:140 defines 'smoothTransition (2-r)'; TeX integrated_unmasked_variational.tex:184 defines the quotient. The equivalence is actually proved by chi_eq at Lean :143-146, so the modelling substitution is justified rather than merely asserted; claims.yaml:13261-13267 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.chi_eq: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:143-146 permits every real r and proves 'F(2-r)/(F(2-r)+F(r-1))'. TeX integrated_unmasked_variational.tex:184 has exactly that quotient with no additional r restriction. claims.yaml:13268-13274 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.chi_denom_pos: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:149-151 states positivity for every real r; TeX integrated_unmasked_variational.tex:187 says 'The denominator is positive'. No missing range or exceptional endpoint appears; claims.yaml:13275-13281 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.chi_antitone: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:154-155 proves 'Antitone chi' without hypotheses; TeX integrated_unmasked_variational.tex:187-188 says chi is nonincreasing. The direction is correct; claims.yaml:13282-13288 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.chi_eq_one: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:158-159 assumes 'r<=1' and concludes 'chi r=1'; TeX integrated_unmasked_variational.tex:188-189 has exactly that plateau, including r=1. claims.yaml:13289-13295 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.chi_eq_zero: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:162-163 assumes '2<=r'; TeX integrated_unmasked_variational.tex:189 says 'zero on r>=2'. Endpoint and direction match; claims.yaml:13296-13302 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.chi_mem: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:166-167 proves '0<=chi r and chi r<=1' for every r; TeX integrated_unmasked_variational.tex:182-191 defines a nonnegative quotient bounded by one and calls the resulting masks '[0,1] masks'. The claimed profile property follows directly from the same definition; claims.yaml:13303-13309 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.chi_contDiff: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:170-171 proves 'ContDiff R infinity chi'; TeX integrated_unmasked_variational.tex:189 attributes smoothness to flatness of F. This is the same smooth profile, not a different cutoff; claims.yaml:13310-13316 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.chi_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:174-175 proves continuity with no hypotheses. TeX integrated_unmasked_variational.tex:189 states smoothness but no separate continuity step. The auxiliary classification and claims.yaml:13317-13323 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.mask: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:181 defines 'chi(norm x/R)' for real R; TeX integrated_unmasked_variational.tex:185 defines 'chi(|x|/R)' for positive radii. The ledger explicitly restricts relevant assertions to R>0 and explains the R<=0 extension; claims.yaml:13324-13330 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.mask_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:184-185 allows 'R : R' without a positivity hypothesis and proves continuity. TeX integrated_unmasked_variational.tex:189-190 states smoothness for the admissible positive-radius masks, not this all-real-R helper. The auxiliary row and claims.yaml:13331-13337 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.mask_mem: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:188 proves '0<=mask R x and mask R x<=1' for every R,x; TeX integrated_unmasked_variational.tex:191 calls the masks '[0,1] masks'. The total-definition extension is harmless and disclosed; claims.yaml:13338-13344 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.mask_radial: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:191-192 assumes 'norm x=norm y' and concludes equal mask values for every R. TeX integrated_unmasked_variational.tex:170 requires radial masks and :185 defines them by |x|. claims.yaml:13345-13351 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.mask_neg: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:195-196 proves 'mask R (-x)=mask R x' for every R,x; TeX integrated_unmasked_variational.tex:191 explicitly says 'These even ... masks'. No evenness assumption is substituted for the proved conclusion; claims.yaml:13352-13358 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.mask_eq_one: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:199-200 assumes '0<R' and 'norm x<=R'; TeX integrated_unmasked_variational.tex:185, 188-189 gives the same plateau through chi(r)=1 for r<=1. The closed-ball endpoint is correct; claims.yaml:13359-13365 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.mask_eq_zero: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:203-204 assumes '0<R' and '2*R<=norm x'; TeX integrated_unmasked_variational.tex:185, 189 gives zero for |x|/R>=2. The support radius is 2R, not R; claims.yaml:13366-13372 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.tsupport_mask_subset: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:208-213 assumes 'R>0' and proves 'tsupport mask subset closedBall 0 (2R)'. TeX integrated_unmasked_variational.tex:185-189 gives the same support consequence, and integrated_raw_block_lower.tex:7-8 requires support in the closed 2R ball. claims.yaml:13373-13379 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.mask_hasCompactSupport: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:216-218 assumes 'R>0' and concludes compact support. TeX integrated_unmasked_variational.tex:185-190 uses the compact mask but has no separate compact-support lemma. The auxiliary assignment and claims.yaml:13380-13386 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.mask_contDiff: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:222-231 assumes 'R>0' and proves global smoothness, using local constancy at x=0. TeX integrated_unmasked_variational.tex:189-190 explicitly makes the same origin argument. claims.yaml:13387-13393 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.mask_mono: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:234-236 assumes '0<R' and 'R<=Rprime' and proves increasing masks. TeX integrated_unmasked_variational.tex:191 states the same positive-radius monotonicity. The sign condition is retained; claims.yaml:13394-13400 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.mask_eventually_one: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:240-243 proves eventual equality to one for each fixed x. TeX integrated_unmasked_variational.tex:191 states pointwise convergence, not this stronger intermediate formulation. The ledger correctly calls it a route auxiliary; claims.yaml:13401-13407 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.mask_tendsto: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:246-247 states 'Tendsto (fun R => mask R x) atTop (nhds 1)' for every x. TeX integrated_unmasked_variational.tex:191 says the masks increase pointwise to one. claims.yaml:13408-13414 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.rayleighSet_nonempty: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:254-258 assumes 'V*f^2 integrable for every MemLp f 2' and constructs a unit test. TeX integrated_unmasked_variational.tex:198-205 works with bounded potentials and ordinary unit H1 trials, but does not state this generic helper. Ledger and claims.yaml:13415-13421 correctly retain its stronger integrability premise and auxiliary status."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.rayleighValue_le_sSup_of_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:263-275 assumes 'V<=W', integrability for W against every L2 square, 'BddAbove(rayleighSet W)', and membership of q in V's set. The ledger states these hypotheses. TeX integrated_unmasked_variational.tex:195-205 uses comparison in the bounded-potential setting but does not state this generic helper; claims.yaml:13422-13428 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.sSup_rayleighSet_mono: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:282-289 assumes 'V<=W', both square-integrability conditions and boundedness of W's value set; it concludes V's nonemptiness, boundedness and supremum comparison. TeX integrated_unmasked_variational.tex:197 uses monotonicity but not this standalone general statement. Ledger and claims.yaml:13429-13435 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.tendsto_sSup_rayleighSet: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:297-323 assumes a countably generated filter, 'V_i<=W', a uniform absolute bound, pointwise convergence, integrability and a nonempty bounded W value set. TeX integrated_unmasked_variational.tex:198-207 uses dominated convergence and numerical suprema for the corresponding bounded masked family. The ledger explicitly presents the general convergence formulation and its proof-route difference; claims.yaml:13436-13442 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.maskedMean: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:328-329 defines 'mask R x * mean a Gamma Psi s x'; TeX integrated_unmasked_variational.tex:195 uses 'm_R h_s'. The original mean is not recomputed with a masked covariance; claims.yaml:13443-13449 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.maskedRate: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:333-334 defines 'rayleighRate(maskedMean ...)', whose body is sqrt(sSup) at WeakSobolev.lean:241-242. TeX integrated_unmasked_variational.tex:195-196 obtains this formula for compact ground rates. The ledger explicitly excludes formalization of the spectral identification; claims.yaml:13450-13456 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.maskedIntegratedRate: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:337-338 defines the Bochner integral over '(0,1)'; TeX integrated_unmasked_variational.tex:212 integrates lambda_(R,s) over I. Endpoint omission does not change the Lebesgue integral, and integrability is subsequently proved rather than assumed through a totalized integral; claims.yaml:13457-13463 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.remove_mask: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:355-383 assumes tempered spectral measures, local finiteness of Gamma, scaling, 'alpha<2', 'Gamma!=0', '0<=a<1', and 'Psi in CPos'. TeX integrated_unmasked_variational.tex:4-9 has the stronger H:homog class and :168-212 gives the masked convergence argument. The row accurately enumerates every advertised rate clause and discloses Rayleigh-only objects and differing proof routes; claims.yaml:13464-13470 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.le_liminf_of_tendsto: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:567-573 assumes 'J R -> I' and eventual '2 J R-v/2 <= liminf L' in EReal, concluding the same inequality at I. TeX integrated_unmasked_variational.tex:217-218 takes the numerical supremum; it does not state this generic limit lemma. The coefficient two and variance-half penalty are preserved; claims.yaml:13471-13477 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.RawBlockOriginalLower: P:raw-block-original-lower",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:582-585 defines an eventual-in-R bound for a fixed real function L. TeX integrated_raw_block_lower.tex:543-547 supplies the bound for every eligible fixed mask and fixed x; :7-10 and integrated_compact_mean_family.tex:472-506 justify eligibility for all sufficiently large radii. The ground-rate and variance identifications are explicitly external. This input is no stronger than its source; claims.yaml:13478-13484 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.unmasked_point_lower: E:variational-unmasked-point-lower",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:592-600 assumes the general rate hypotheses and 'RawBlockOriginalLower ... v L', concluding '2 integratedRate-v/2 <= liminf L' in EReal. TeX integrated_unmasked_variational.tex:175-178, 214-218 has exactly the numerical deduction for the actual point moment. The arbitrary-function abstraction and supplied source are disclosed; claims.yaml:13485-13491 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.mask_family: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:611-621 states smoothness, evenness, radiality, [0,1] bounds, plateau and support for 'R>0', monotonicity for '0<R<=Rprime', and pointwise convergence. TeX integrated_unmasked_variational.tex:170, 182-191 and integrated_raw_block_lower.tex:7-8 give these exact mask properties. claims.yaml:13492-13498 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.variational_remove_mask_rates_paper: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:648-686 assumes 'HomogCovariance', 'Gamma!=0', 'Psi in CPos' and supplies all mask/rate clauses without another input. TeX integrated_unmasked_variational.tex:4-9, 168-174, 193-212 has those standing assumptions. The ledger correctly excludes compact spectral conclusions and correctly identifies the fields passed to the general theorem; claims.yaml:13499-13505 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RemoveMask.variational_remove_mask_paper: P:variational-remove-mask",
+      "verdict": "PASS",
+      "reason": "Lean RemoveMask.lean:702-746 adds 'RawBlockOriginalLower alpha0 Gamma Psi (rawCost ...) L' to the standing assumptions, retaining the rate package and point inequality. TeX integrated_unmasked_variational.tex:214-218 invokes P:raw-block-original-lower for the same control, variance and point liminf. The supplied-input/weaker scope is honest; claims.yaml:13506-13512 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.phaseI: L:complex-phase",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:90-91 defines the integral over '(0,infinity)' of 's^(-1/2)*(1+s)^((a-3)/2)'. TeX notes_stratonovich_ham_second_moment.tex:2298 defines exactly I_a under 0<a<1. The row limits genuine-integral claims to the proved integrability range; claims.yaml:14534-14540 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.phaseI_integrableOn: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:97-131 assumes 'a<2'. TeX notes_stratonovich_ham_second_moment.tex:2291, 2298 only needs 0<a<1. The comparison exponents correctly give local integrability at zero and integrability at infinity for a<2. This generalized integrability helper is properly unlabelled; claims.yaml:14541-14547 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.phaseI_pos: L:complex-phase",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:136-149 assumes 'a<2' and proves '0<phaseI a' using proved integrability. TeX notes_stratonovich_ham_second_moment.tex:2291, 2298-2299 needs this at 0<a<1 to define a positive delta. The wider sufficient range is explicitly disclosed; claims.yaml:14548-14554 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.deltaA: L:complex-phase",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:152 defines 'min (1/4) (pi/(8*phaseI a))'; TeX notes_stratonovich_ham_second_moment.tex:2299 has exactly 'min{1/4,pi/(8 I_a)}'. Neither numerical constant changes; claims.yaml:14555-14561 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.deltaA_pos: L:complex-phase",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:155-158 assumes 'a<2' and proves positive delta. TeX notes_stratonovich_ham_second_moment.tex:2291, 2299 uses 0<a<1 and the same positive definition. No unproved integral finiteness is hidden; claims.yaml:14562-14568 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.deltaA_le_quarter: L:complex-phase",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:161 assumes only 'a : R' and concludes 'deltaA a<=1/4'. TeX notes_stratonovich_ham_second_moment.tex:2299 has the same minimum, making this bound immediate in its domain. claims.yaml:14569-14575 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.taylorCoeff: P:static-phase-all-orders",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:171-172 defines '(n!)^(-1) smul iteratedDeriv n F 0' in a complex normed space. TeX notes_stratonovich_ham_second_moment.tex:2616-2625 uses the nth coefficient of the entire operator-valued coupling series. The coefficient interpretation is subsequently proved, not confused with the derivative itself; claims.yaml:14576-14582 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.taylorCoeff_eq_coeff: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:178-185 assumes completeness and 'HasFPowerSeriesOnBall F p 0 r', concluding 'p.coeff n=taylorCoeff F n'. TeX notes_stratonovich_ham_second_moment.tex:2616-2618 uses an entire series but does not state this library-interface identity. The auxiliary classification and claims.yaml:14583-14589 are accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.norm_taylorCoeff_le: P:static-phase-all-orders",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean StaticPhaseCauchy.lean:192-201 assumes 'Differentiable C F', completeness, '0<rho', and the circle bound, yielding 'M/rho^n'. TeX notes_stratonovich_ham_second_moment.tex:2613-2623 uses a positive radius and exactly its nth power. Ledger and claims.yaml:14590-14596 have the right estimate; the ledger could repeat rho>0 explicitly (W1)."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.norm_taylorCoeff_le_of_disc: P:static-phase-all-orders",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean StaticPhaseCauchy.lean:214-229 assumes an entire F, 'c>0', 'd>=0', and the bound for every 'dprime>0, d<=dprime'. TeX notes_stratonovich_ham_second_moment.tex:2301-2307, 2485-2487, 2611-2623 implies this with c=delta*lambda^(2-alpha/2), d=d_n; larger sandwich constants remain valid. The zero case is legitimately covered. claims.yaml:14597-14603 is exact; optional explicit side-condition wording is W1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.fockD: E:fock-sandwich",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:233 defines '2*sqrt(N+1)*sqrt(R)'; TeX notes_stratonovich_ham_second_moment.tex:2487 gives exactly d_N. The ledger explicitly restricts the manuscript interpretation to R=R_alpha>=0 and mentions the negative-R totalization; claims.yaml:14604-14610 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.fockD_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:236 proves nonnegativity for every natural N and real R. TeX notes_stratonovich_ham_second_moment.tex:2487 defines the positive-root expression but has no separate all-real-R helper. Ledger and claims.yaml:14611-14617 accurately classify it as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.fockD_le: P:static-phase-all-orders",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:240-245 assumes '1<=n' and permits every real R. TeX notes_stratonovich_ham_second_moment.tex:2633-2634 states 'd_n<=2 sqrt(2n) sqrt(R_alpha)' for positive orders. The factor sqrt(2) is retained; claims.yaml:14618-14624 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.orderConst: P:static-phase-all-orders",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:249 defines '400*sqrt(2)*exp(2)/delta'; TeX notes_stratonovich_ham_second_moment.tex:2586 has '400 sqrt(2) e^2/delta_(alpha/2)'. The row accurately treats delta as an abstract argument, later specialized; claims.yaml:14625-14631 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.allOrdersA: P:static-phase-all-orders",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:252 specializes orderConst to 'deltaA(alpha/2)'; TeX notes_stratonovich_ham_second_moment.tex:2585-2587 defines exactly that A_alpha. claims.yaml:14632-14638 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.allOrdersA_pos: P:static-phase-all-orders",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:255-258 assumes 'alpha<4'; TeX notes_stratonovich_ham_second_moment.tex:2054, 2583-2587 needs a finite positive constant for 0<alpha<2. The ledger explicitly states the wider proven range, and positivity rests on the genuine integral; claims.yaml:14639-14645 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.phase_weight_le: P:static-phase-all-orders",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:268-282 assumes 'n>=1', 'h>0', 'r>=0' and gives the multiplier comparisons with n^2. TeX notes_stratonovich_ham_second_moment.tex:2632-2633 compares norms by n and one at lambda=n/h. The squared-weight distinction is correct, and the missing Fourier integration is explicitly disclosed; claims.yaml:14646-14652 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.order_display_eq: P:static-phase-all-orders",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:289-312 assumes 'n>=1', 'h,delta>0', with real R,alpha. TeX notes_stratonovich_ham_second_moment.tex:2632-2638 uses these conditions and R_alpha>=0. All powers of h and n, and the e^(2n) factor, match; the row explicitly writes sqrt(R)^n rather than asserting a negative-base real-power identity. claims.yaml:14653-14659 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.hundred_mul_le: P:static-phase-all-orders",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:316-320 assumes '1<=n' and proves '100*n<=200^n'. TeX notes_stratonovich_ham_second_moment.tex:2640 states exactly this bound for the positive orders in question. claims.yaml:14660-14666 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.rpow_neg_le_factorial: P:static-phase-all-orders",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:324-331 assumes 'n>=1', 'gamma>=0' and derives 'n^(-gamma*n)<=1/(n!)^gamma'. TeX notes_stratonovich_ham_second_moment.tex:2640 uses 'n!<=n^n' at gamma=(3-alpha)/2>0. The inequality direction is correct; claims.yaml:14667-14673 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.order_final_le: P:static-phase-all-orders",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:337-357 assumes 'n>=1', 'h,delta>0', 'alpha<=3' and proves the displayed bound with orderConst delta. TeX notes_stratonovich_ham_second_moment.tex:2636-2641 has the same expression under 0<alpha<2. The wider alpha range and constant 400 are accurately reported; claims.yaml:14674-14680 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.all_orders_arith: P:static-phase-all-orders",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:365-378 assumes 'n>=1', 'h,delta>0', 'alpha<=3', '0<=d<=2 sqrt(2n) sqrt(R)'. TeX notes_stratonovich_ham_second_moment.tex:2631-2641 uses exactly this upper bound for d_n, with the external norm-comparison factor n. The conclusion and factorial exponent match; claims.yaml:14681-14687 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.static_phase_order_cutoff: E:all-static-phase-orders",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:401-423 assumes a complex Banach space, 'hentire', the disc bound 'hcircle', 'z1<=n*norm(C_n v)' and 'norm v<=N1'. TeX notes_stratonovich_ham_second_moment.tex:2611-2634 supplies these through the phase bound, finite-word identification, norm comparison and Fourier projection contraction. None is stronger than its cited source after the disclosed interpretation; claims.yaml:14688-14694 and the inputs-supplied/weaker classification agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.static_phase_all_orders_step: E:all-static-phase-orders",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:435-451 adds 'zc m b -> zm m' for each m and 'zm -> z'. TeX notes_stratonovich_ham_second_moment.tex:2643-2667 proves strong convergence in that order, which implies these norm limits along integer cutoffs. Quantifier order and the surviving uniform bound match; claims.yaml:14695-14701 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.sum_exponent_eq: P:static-phase-all-orders",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:458-473 assumes 'alpha<3', 'A,R>=0', 'h>0' and proves the exponent substitution. TeX notes_stratonovich_ham_second_moment.tex:2669-2670 chooses beta=(3-alpha)/2 and x=A_alpha|sigma|sqrt(R_alpha)h^((4-alpha)/2), producing :2601-2603. The powers of A, |sigma|^2 R and h match; claims.yaml:14702-14708 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.all_static_phase_sum_step: E:all-static-phase-sum",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:484-554 assumes a real Banach space, '0<=alpha<=2', 'A,R>=0', 'h>0', the free bound hZ0 and positive-order bounds hZ. TeX notes_stratonovich_ham_second_moment.tex:2588-2604, 2669-2681 supplies the same bounds in L2 phase. Absolute convergence, convergence and the squared norm estimate with '(sqrt(e)+2)^2' and exponent factor six are all proved. The unconstructed phase identification is disclosed; claims.yaml:14709-14715 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.static_phase_all_orders_paper: E:all-static-phase-orders",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:568-586 assumes local finiteness, '0<alpha<2', the R_alpha formula, 'h>0', 'n>=1', and all named operator/cutoff inputs. TeX notes_stratonovich_ham_second_moment.tex:2054-2066, 2577-2667 supplies the full covariance setting and those inputs. Omitted covariance structure enters through supplied hypotheses, not a false same-assumptions claim; unused carried assumptions are correctly identified. claims.yaml:14716-14722 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.StaticPhaseCauchy.all_static_phase_sum_paper: E:all-static-phase-sum",
+      "verdict": "PASS",
+      "reason": "Lean StaticPhaseCauchy.lean:598-613 assumes '0<alpha<2', the R_alpha formula, 'h>0', hZ0 and hZ; it derives R>=0 and absolute convergence with the stated bound. TeX notes_stratonovich_ham_second_moment.tex:2596-2604, 2669-2681 has identical constants and powers for actual regularized phases. The abstract Banach sequence and external identification are explicitly narrower; claims.yaml:14723-14729 agrees."
+    },
+    {
+      "claim": "PARA-SpatialBracket",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:4457-4521 accurately distinguishes S_2^pos from C_2, the enlarged scalar energy from E_(1/2)^O, the named ceiling input and its discharge, and the omitted zero case. The cited authoritative ranges in integrated_occupation_ceiling.tex:4-308 match. Lean SpatialBracket.lean:132-134, 414-517 and L8Completed.lean:222-281 confirm the stated scope and proof assembly."
+    },
+    {
+      "claim": "PARA-RemoveMask",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:4176-4250 accurately records the exact chi profile, positive-radius conventions, Rayleigh-rate abstraction, floor/Dini/dominated-convergence route differences, carried fields, and the single point-bound input. TeX integrated_unmasked_variational.tex:168-221 and integrated_raw_block_lower.tex:7-10, 541-549 support these descriptions. Lean RemoveMask.lean:355-559, 582-746 confirms them."
+    },
+    {
+      "claim": "PARA-StaticPhaseCauchy",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:5503-5583 correctly confines formalization to complex-analytic, scalar and Banach-space steps, identifies all supplied inputs, and excludes construction of the regularized phases and Gaussian/operator arguments. TeX notes_stratonovich_ham_second_moment.tex:2288-2683 and Lean StaticPhaseCauchy.lean:90-613 support the constants, cutoff order, zero-case treatment and carried-hypothesis statements."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "All 96 target declarations occur exactly once in candidate/statement-ledger.md:365-708, with the same label as their section row; route auxiliaries are in no-direct-label rows. A complete label search across manuscript TeX found exactly one definition of each of the 31 labels cited by the three target sections. No missing, duplicated or mislabelled target declaration was found."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "lean/coverage.yaml:27-54 correctly uses same-assumptions/weaker for the completed spatial bracket; L8Completed.lean:222-281 discharges its input. coverage.yaml:1183-1224 and :1255-1276 correctly use inputs-supplied/weaker and describe the external operator/Gaussian or point-bound inputs. All 45 listed claim references exist in claims.yaml. No full-result or same-assumptions overstatement was found."
+    },
+    {
+      "claim": "SCOPE-RULES",
+      "verdict": "PASS",
+      "reason": "The three conclusion_scope strings at lean/coverage.yaml:33, 1189, 1261 exactly equal the corresponding ASCII strings in docs/coverage-scope-tex.yaml:8, 56, 62. Their TeX versions preserve the same content. They contain no Lean identifiers, source filenames or line locators. The variational rates are explicitly square roots of real Rayleigh suprema; lambda=n/h in the static-phase sentence is the distinct phase parameter."
+    },
+    {
+      "claim": "REFUTATIONS",
+      "verdict": "PASS",
+      "reason": "All 13 files were read completely. Their theorem statements negate the advertised altered inequalities, constants, ranges or cutoff properties, with valid concrete counterexamples. In particular IntegerOrder retains the distinction caused by 2^5; ZetaOneFavorable compares ceilings rather than refuting a moment inequality; HalfConstant.lean:7-11 correctly describes a quarter-sized constant despite its filename. The ledger makes no conflicting per-file description."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "The Scope, Index, L8Completed, OccupationCeilingFinite, RawValueCeiling, SeriesType, VariationalRate, IntervalScalar and Not in Lean cross-references consistently retain the disclosed narrower objects and supplied inputs. In particular candidate/statement-ledger.md:210-213, 264-281, 2753-2781, 7337-7341, 7352-7362, 7391-7397 do not claim C_2 identification, original occupation energy, compact ground theory or constructed static phases are formalized."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "W1 — Optional standalone-row clarity for the Cauchy estimates. candidate/statement-ledger.md:5595-5596 abbreviates the side conditions, while Lean StaticPhaseCauchy.lean:193-194 explicitly requires '0 < rho' and :215-216 requires an entire map, '0 < c' and '0 <= d'. TeX notes_stratonovich_ham_second_moment.tex:2301, 2487, 2613-2623 supplies positive radii and c=delta*lambda^(2-alpha/2), d=d_n>=0; claims.yaml:14593, 14600 states the conditions explicitly. Thus the intended manuscript application is sound. Optional fix: repeat these conditions in the two ledger cells so they can be read independently."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI correspondence review, not human verification or a novelty audit.",
+    "Lean compilation and axiom admissibility were accepted as stipulated; no build was launched. The audit files contain checking commands and consumers, not captured elaboration logs.",
+    "Coverage statements concern the contract's required ranges and named declarations, not a fresh review of earlier waves or the entire manuscript. Other manuscript files were searched for label uniqueness; byte hashing was not treated as substantive mathematical reading.",
+    "External operator, Gaussian, spectral-ground-rate and canonical-solution identifications remain external exactly as disclosed by the candidate."
+  ]
+}

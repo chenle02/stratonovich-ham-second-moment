@@ -1,0 +1,320 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "INCONCLUSIVE",
+  "confidence": "medium",
+  "source_coverage": [
+    "candidate/statement-ledger.md: partial; read 1-510, 526, 544-546, 552, 554, 625, 644, 647-652, 661, 690-707, 1041-1052, 1170-1243, 1247-1280, 1309-1405, 1480-1650, 2727-2813, 4906-5045, 6277-6354, 6782-6899, 6901-7022, 7329-7506. Also structurally scanned all 1-7506 for declaration counts and index occurrences; that scan is not complete substantive reading.",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean: complete, 1-501.",
+    "lean/Audit/l8-completed/Audit.lean: complete, 1-62.",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean: partial; read 75-160, 226-270, 272-283, 435-444, 797-827, 879-1037.",
+    "lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean: partial; read 1130-1165.",
+    "lean/StratonovichHAMSecondMoment/SpatialBracket.lean: partial; read 97-138, 403-519.",
+    "lean/StratonovichHAMSecondMoment/SymplecticFree.lean: partial; read 512-575.",
+    "lean/StratonovichHAMSecondMoment/TerminalWick.lean: partial; read 470-510, 534-659.",
+    "lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean: complete, 1-320.",
+    "lean/StratonovichHAMSecondMoment/DampedMultiplier.lean: partial; read 330-608.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean: partial; read 24-105.",
+    "lean/StratonovichHAMSecondMoment/VariationalMean.lean: partial; read 95-205.",
+    "lean/StratonovichHAMSecondMoment/VariationalRate.lean: partial; read 500-517, 604-618, 777-828.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean: partial; read 89-101, 223-251.",
+    "lean/StratonovichHAMSecondMoment/WeakSobolev.lean: partial; read 62-67, 211-243.",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean: partial; read 295-312, 420-428.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean: partial; read 1120-1145, 1198-1220, 1347-1358.",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean: partial; read 410-427, 780-785.",
+    "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean: partial; read 471-485.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean: partial; read 111-132.",
+    "lean/claims.yaml: partial substantive reading, 14731-14849, covering every L8Completed entry completely; structurally scanned 1-14849 for identifiers, kinds and declaration correspondence.",
+    "lean/coverage.yaml: partial overall; read 1-70, 155-225, 527-630, 682-707, 1046-1073, 1097-1121, 1154-1255, 1350-1394. All twelve requested rows were read completely. Structurally scanned 1-1394 for classifications and claim identifiers.",
+    "docs/coverage-scope-tex.yaml: complete, 1-69.",
+    "diffs/coverage.diff: complete, 1-509.",
+    "diffs/coverage-scope-tex.diff: complete, 1-75.",
+    "diffs/statement-ledger-earlier-sections.diff: partial; read 1-210, 541-578, 1316-1412, 1488-1532.",
+    "diffs/statement-ledger.diff: partial; no substantive lines read.",
+    "excerpts/tex-excerpts.txt: partial; no substantive lines read; 1-2523 remain unread.",
+    "prior/statement-ledger-f3be834.md: partial; no substantive lines read.",
+    "prior/coverage-f3be834.yaml: partial; no substantive lines read.",
+    "prior/coverage-scope-tex-f3be834.yaml: partial; no substantive lines read.",
+    "PROVENANCE.json: partial; read 1-75.",
+    "lean/provenance/manuscript-anchor.json: partial; read 1-160.",
+    "manuscript/notes/integrated_occupation_ceiling.tex: complete, 1-308.",
+    "manuscript/notes/integrated_spatial_occupation.tex: complete, 1-449.",
+    "manuscript/notes/integrated_unmasked_variational.tex: partial; read 1-85, 98-164, 253-343.",
+    "manuscript/notes/integrated_symplectic_phase.tex: partial; read 1-134.",
+    "manuscript/notes/integrated_intrinsic_constant.tex: partial; read 1-80, 330-351.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: partial; read 210-278, 801-930, 3600-3748.",
+    "All files under manuscript/: automated label-occurrence search only, not complete substantive reading; every label extracted from the L8Completed section had exactly one occurrence."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.L8Completed.K0_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean L8Completed.lean:100 has no hypotheses and states equality of two Lean constants. TeX integrated_occupation_ceiling.tex:94 defines 'K_0 = 2^a/(1-a)', but contains no equality between module constants. The no-direct-label mapping and summaries at ledger:2797 and claims.yaml:14734 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L8Completed.ceilingValue_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean L8Completed.lean:105-106 has no hypotheses and equates two definitions. TeX integrated_occupation_ceiling.tex:209-215 defines U_c, not equality of Lean constants. The bodies at OccupationCeilingFinite.lean:277-280 and SpatialBracket.lean:124-126 agree; ledger:2798 and claims.yaml:14741 correctly describe an integration auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L8Completed.spaceTimeCS_completed: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean L8Completed.lean:114-117 assumes only 'hH : HomogCovariance ...' and constructs SpaceTimeCS; it does not assume Gamma != 0. TeX H:homog is at notes_stratonovich_ham_second_moment.tex:225-242; the underlying covariance identities appear in integrated_intrinsic_constant.tex:22-39 and integrated_occupation_ceiling.tex:33-40. This structural bridge itself has no manuscript counterpart. Ledger:2799 and claims.yaml:14748 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L8Completed.occupation_ceiling_K0_paper_completed: T:intrinsic-occupation-ceiling",
+      "verdict": "PASS",
+      "reason": "Lean L8Completed.lean:128-133 assumes 'HomogCovariance ...' and 'Gamma != 0', then quantifies 'c > 0' and 'Psi in CPos'. TeX integrated_occupation_ceiling.tex:4-21 retains the original covariance and assumes Gamma != 0; :205-215 gives the ceiling with C_occ. Lean substitutes K_0 R_sp, whose upper-bound relation to C_occ is TeX:94-96. Ledger:2800 and claims.yaml:14755 accurately state the explicitly weaker conclusion. The source wrapper's only removed hypothesis is SpaceTimeCS, OccupationCeilingFinite.lean:938-944."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L8Completed.s1Bdd_paper_completed: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "Lean L8Completed.lean:140-142 assumes 'HomogCovariance ...' and 'Gamma != 0' and concludes S1Bdd. TeX integrated_unmasked_variational.tex:4-5 assumes the same nonzero homogeneous covariance, and :272-274 asserts boundedness. S1Bdd is exactly BddAbove(score1Set), VariationalRate.lean:610-611. Ledger:2801 and claims.yaml:14762 are faithful and disclose the deterministic rather than stochastic proof route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L8Completed.occupation_ceiling_sSup_K0_paper_completed: T:intrinsic-occupation-ceiling",
+      "verdict": "PASS",
+      "reason": "Lean L8Completed.lean:149-155 assumes 'HomogCovariance ...', 'Gamma != 0' and, universally, 'c > 0'; it proves nonemptiness, boundedness and the supremum ceiling. TeX integrated_occupation_ceiling.tex:20-21 and :205-215 has the same standing assumptions and ceiling with C_occ. The larger K_0 R_sp constant and omitted second form/moment conclusion are disclosed at ledger:2802; claims.yaml:14769 matches the type."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L8Completed.variational_positive_scores_sSup_st_paper_completed: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "Lean L8Completed.lean:163-170 assumes only 'HomogCovariance ...' and 'Gamma != 0', with 'c > 0' inside the conclusion. TeX integrated_unmasked_variational.tex:4-5,272-279 has those assumptions and S_c = c^((4-alpha)/(3-alpha)) S_1 > 0. The exponent, positivity and boundedness match. Ledger:2803 explicitly excludes Q_2 >= S_2; claims.yaml:14776 is faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L8Completed.spatial_static_score_sSup_st_paper_completed: E:spatial-static-score",
+      "verdict": "PASS",
+      "reason": "Lean L8Completed.lean:176-183 assumes 'HomogCovariance ...', 'Gamma != 0', 'IsTestFunction z', 'forall x, 0 <= z x' and 'z != 0'. TeX integrated_spatial_occupation.tex:4-10,40-53 assumes the same covariance and 'nonnegative nonzero z in C_c^infinity'. Both bounds use lambda_z(1) - M_a B_Gamma(z,z)/2. Ledger:2804 and claims.yaml:14783 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L8Completed.spatial_smooth_score_sSup_st_paper_completed: E:spatial-smooth-score",
+      "verdict": "PASS",
+      "reason": "Lean L8Completed.lean:189-194 assumes 'HomogCovariance ...', 'Gamma != 0' and 'IsUnitTest g'. TeX integrated_spatial_occupation.tex:4-10,168-176 assumes the same covariance and a real smooth compact unit profile. SpatialSmoothRatio.lean:423-425 expands the bound with denominator 8 M_a q^(q/2), exactly as TeX:173-175. Ledger:2805 and claims.yaml:14790 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L8Completed.R0_le_of_st_paper_completed: P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "Lean L8Completed.lean:199-204 assumes 'HomogCovariance ...' and 'Gamma != 0'. TeX integrated_spatial_occupation.tex:4-10 has those standing assumptions, and :171-176 gives the score inequality from which the displayed quantitative bound follows by positive-power inversion. The factor 8 M_a q^(q/2)/alpha^(alpha/2) is correct. Ledger:2806 explicitly identifies this as the former finiteness route, not the current Fourier proof; claims.yaml:14797 matches."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L8Completed.spatial_static_energy_score_sSup_st_paper_completed: E:spatial-static-energy-score",
+      "verdict": "PASS",
+      "reason": "Lean L8Completed.lean:210-215 assumes 'HomogCovariance ...' and 'Gamma != 0' and concludes M_a^(-1/(3-alpha)) F0(Esp) <= S1pos. TeX integrated_spatial_occupation.tex:4-10,316-322 has the same assumptions and exponent -1/k. F0's denominator and powers agree with SpatialFourLinear.lean:1354-1356. Ledger:2807 and claims.yaml:14804 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L8Completed.occupationCeilingK0_holds: T:intrinsic-occupation-ceiling",
+      "verdict": "PASS",
+      "reason": "Lean L8Completed.lean:222-225 assumes 'HomogCovariance ...' and 'Gamma != 0' and proves the predicate defined at SpatialBracket.lean:132-134. TeX integrated_occupation_ceiling.tex:20-21,205-215 supplies the nonzero standing assumption and C_occ ceiling; :96 bounds C_occ by K_0 R_sp. Ledger:2808 expressly records that weaker constant and the omitted conclusions. Claims.yaml:14811 matches."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L8Completed.spatial_bracket_lower_sSup_paper_completed: E:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "Lean L8Completed.lean:232-237 assumes 'HomogCovariance ...' and 'Gamma != 0', without S1Bdd. TeX integrated_occupation_ceiling.tex:4-21,256-260 has the same standing assumptions and the lower factor 2^m M_a^(-1/k) F0(Esp). Lean concludes the bound for S_2, not C_2; ledger:2809 discloses that the identification at integrated_intrinsic_constant.tex:337-338 is outside Lean. Claims.yaml:14818 matches."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L8Completed.spatial_bracket_upper_paper_completed: E:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "Lean L8Completed.lean:245-251 assumes 'HomogCovariance ...' and 'Gamma != 0', without OccupationCeilingK0. TeX integrated_occupation_ceiling.tex:4-21,256-260 has the same standing assumptions and upper factor 2^m K_0^(1/k) F0(Esp). The replacement of C_2 by S_2 is expressly disclosed at ledger:2810. Claims.yaml:14825 and the source-wrapper discharge agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L8Completed.intrinsic_spatial_bracket_paper_completed: C:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "Lean L8Completed.lean:262-281 assumes 'HomogCovariance ...' and 'Gamma != 0' and has the seven reported conjuncts. TeX integrated_occupation_ceiling.tex:4-21,252-300 has those standing assumptions, but compares C_2 using E_(1/2)^O. Ledger:2811 accurately discloses both replacements: S_2 for C_2 and energyValue(alpha,K_0 R_sp) for E_(1/2)^O. The strict inequality and Delta > 0 are at the substituted energy, exactly as claims.yaml:14832 reports."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L8Completed.uniform_series_tail_terminal_wick_paper: L:uniform-series-tail",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean L8Completed.lean:312-345 assumes a probability space, d in {1,2,3}, T > 0, centered Gaussian fields, bounded diagonal covariance, nonnegative covariance, finite chain measures with specified masses, product measurability, r > 1, hB and hX. TeX notes_stratonovich_ham_second_moment.tex:3601-3608,3704-3714 assumes terminal-chain terms with nonnegative covariance, r > 1, the uniform moment bound and fixed-order limits. The supplied mass/measurability abstraction and joint-limit reading are disclosed. All seven conclusions of uniform_series_tail_paper match. W4: ledger:2812 incorrectly calls the omitted hK a covariance formula; TerminalWick.lean:618 makes it measurability of K."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L8Completed.freeWaveData_nonempty: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean L8Completed.lean:487-499 quantifies every natural d and constructs Nonempty(FreeWaveData d L2), with S = 1, R = 1 and actual translations. TeX integrated_symplectic_phase.tex:103-122 instead discusses the concrete free wave group on the Bessel phase space; it contains no such identity-group example. Ledger:2813 and claims.yaml:14846 correctly present only non-vacuity, not construction of the manuscript's free group."
+    },
+    {
+      "claim": "PARA-L8Completed",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:2727-2813 accurately describes the three discharges, retained H:homog/Gamma != 0 hypotheses, larger ceiling, substituted bracket energy, omitted moment identification and alternative deterministic route. The source wrappers at OccupationCeilingFinite.lean:938-1035 and SpatialBracket.lean:437-517 lose precisely the advertised inputs. W4 is a local misnaming of hK in row 2812, not loss of the covariance assumption."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The structural scan found each of the seventeen declarations exactly once in the index, at ledger:693-703, under the requested labels; all seventeen distinct manuscript labels extracted from this section occurred exactly once. However, the complete Index-by-label reading required by A was not finished, so the full check cannot receive PASS."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "INCONCLUSIVE",
+      "reason": "All twelve requested coverage rows were read, and every coverage claim identifier exists in claims.yaml. The L8 completed wrappers support the advertised discharges. W1 identifies an established overstatement in the damped-norm scope sentence. Substantive verification of every other cited declaration, particularly the physical-class and static-phase rows, remains incomplete."
+    },
+    {
+      "claim": "SCOPE-RULES",
+      "verdict": "PASS",
+      "reason": "The requested existing scope sentences contain no Lean declaration/module names or TeX filenames/line numbers. Automated comparison found every docs/coverage-scope-tex.yaml ASCII sentence identical to its coverage.yaml scope; their TeX counterparts preserve the content. Rate descriptions correctly say square root of the real Rayleigh supremum. The lambda = n/h in the static-phase entry is a damping parameter, not the Rayleigh rate. The full Fourier-bound and uniform-tail rows have no scope entries."
+    },
+    {
+      "claim": "REFUTATIONS",
+      "verdict": "PASS",
+      "reason": "The supplied contract lists no refutation files for L8Completed. There is therefore no negative-control file to verify for these seventeen rows."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "FAIL",
+      "reason": "W2: ledger:192-197 calls L:damped-homogeneous-norms 'stated in full', and :6986-6988 again says 'The full lemma'. This conflicts with its undisclosed spatial-covariance smoothing gap and its acknowledged dimension-one-only identification of Green smoothing; see DampedMultiplier.lean:456-459,515-527,594-606 and TeX:845-847."
+    },
+    {
+      "claim": "CHANGED-ROW C:intrinsic-spatial-bracket",
+      "verdict": "INCONCLUSIVE",
+      "reason": "Coverage.yaml:28-54 correctly discloses S_2 instead of C_2 and the substituted energy. The completed wrapper at L8Completed.lean:262-281 removes the ceiling input under H:homog and Gamma != 0. However, all scalar declarations added to this row were not read, and the prior file was not independently read."
+    },
+    {
+      "claim": "CHANGED-ROW L:damped-homogeneous-norms",
+      "verdict": "FAIL",
+      "reason": "W1: coverage.yaml:165 and docs/coverage-scope-tex.yaml:14-15 say everything except the higher-dimensional Green-smoothing identification is proved, including spatial Gaussian smoothing in every dimension. DampedMultiplier.lean:458-459 explicitly excludes the spectral identity for p_epsilon * Gamma; ledger:1391-1395 and :7411-7414 retain that exclusion. Gaussian multiplier membership alone is not that object-identification assertion of TeX:845-846."
+    },
+    {
+      "claim": "CHANGED-ROW L:spatial-fourier-bound",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The manuscript bound and its exact constant were read at integrated_spatial_occupation.tex:101-164. The change to full coverage depends on SpectralMassIdentity declarations that were not substantively read; the identifier-existence scan does not verify their types."
+    },
+    {
+      "claim": "CHANGED-ROW L:spatial-static-controls",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The new supremum wrapper at L8Completed.lean:176-183 agrees with TeX integrated_spatial_occupation.tex:40-53 and removes S1Bdd. Verification of the complete coverage claim list, including the original positivity and Lipschitz wrappers, was not completed."
+    },
+    {
+      "claim": "CHANGED-ROW L:uniform-series-tail",
+      "verdict": "PASS",
+      "reason": "Coverage.yaml:682-704 honestly retains inputs-supplied/full. UniformSeriesTail.lean:261-316 proves the full tail lemma, including the conditional final second-moment bound. TerminalWick.lean:496-503 discharges precisely the two TerminalWickInput fields from the remaining mass/measurability inputs, and L8Completed.lean:312-357 composes them. The diff:294-318 changes the supplied-input description accordingly, without claiming construction of the actual chain measures."
+    },
+    {
+      "claim": "CHANGED-ROW P:occupation-physical-class",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The wording change from line numbers to 'a simple-function approximation' agrees with TeX integrated_spatial_occupation.tex:409-414. The source physical-class and completion declarations needed to certify the entire changed row were not read."
+    },
+    {
+      "claim": "CHANGED-ROW P:spatial-energy-map",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The added completed supremum claim agrees with L8Completed.lean:210-215 and TeX integrated_spatial_occupation.tex:316-322. The underlying full energy-map theorem and every declaration cited by coverage.yaml:1104-1118 were not checked."
+    },
+    {
+      "claim": "CHANGED-ROW P:spatial-smooth-ratio",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The new completed score and quantitative R_0 wrappers agree with L8Completed.lean:189-204. The TeX's current Fourier proof and former score-based route are distinguished correctly. Full checking of the original module wrappers and the complete changed section was not finished."
+    },
+    {
+      "claim": "CHANGED-ROW P:static-phase-all-orders",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The coverage row and supplied-input list at coverage.yaml:1184-1224 were read, but the StaticPhaseCauchy source declarations and authoritative TeX ranges for their constants and cutoff hypotheses were not read."
+    },
+    {
+      "claim": "CHANGED-ROW P:variational-positive-scores",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The principal promotion to same-assumptions/weaker is supported by L8Completed.lean:140-170 versus integrated_unmasked_variational.tex:270-337. The complete set of older scalar/helper declarations cited by the changed row was not read, so the entire row check remains incomplete."
+    },
+    {
+      "claim": "CHANGED-ROW T:intrinsic-occupation-ceiling",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The same-assumptions/weaker classification itself is supported, as detailed in CLASS-OCCUPATION-CEILING. The complete added list of auxiliary ceiling declarations and prior-row comparison was not substantively checked."
+    },
+    {
+      "claim": "CHANGED-PASSAGE RawValueCeiling",
+      "verdict": "INCONCLUSIVE",
+      "reason": "Ledger:1041-1052 and the authoritative corollary proof at integrated_occupation_ceiling.tex:275-299 were read. The added completion reference agrees with L8Completed.lean:262-281, but the packet supplies no RawValueCeiling Lean module for independently checking the earlier scalar declaration's type."
+    },
+    {
+      "claim": "CHANGED-PASSAGE DampedNormsHomog (whole result)",
+      "verdict": "FAIL",
+      "reason": "W1/W2: the changed sentences at ledger:1535-1540 and :1597-1601 broadly say the closing Gaussian spatial/Green smoothing remarks are proved. TeX:845-847 concerns actual smoothing of those objects. DampedMultiplier.lean:458-459 excludes the spatial-covariance spectral identity, and :515-527 requires GreenFourier for the norm identification, discharged only in dimension one at :594-606. These cross-references require the same qualifications as the coverage row."
+    },
+    {
+      "claim": "CHANGED-PASSAGE SpatialFourierBound (whole result)",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The required whole ledger section, its changed hunks and the SpectralMassIdentity declarations supporting the new exact-constant statement were not completely read."
+    },
+    {
+      "claim": "CHANGED-PASSAGE SpatialFourLinear (whole result)",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The required whole ledger section and its changed hunks were not completely read. The completed static-energy supremum wrapper itself was checked, but that does not establish this broader passage check."
+    },
+    {
+      "claim": "CHANGED-PASSAGE SpatialOccupationCompleted (whole result)",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The whole ledger section at :4906-4956 was read, and its new claim that S1Bdd is discharged agrees with L8Completed.lean:140-170. The source completion declarations and required changed hunks were not completely read."
+    },
+    {
+      "claim": "CHANGED-PASSAGE SpatialOccupationL7Completed (whole result)",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The whole ledger section at :4958-5045 was read. Its added completed supremum reference agrees with L8Completed.lean:210-215, but the corresponding source completion declarations and changed hunks were not completely checked."
+    },
+    {
+      "claim": "CHANGED-PASSAGE SpatialSmoothRatio (whole result)",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The required whole ledger section :5047-5198 and its changed hunks were not completely read; only the relevant definitions and L8 completed wrappers were checked."
+    },
+    {
+      "claim": "CHANGED-PASSAGE SpatialStaticControls (whole result)",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The required whole ledger section :5200-5393 and its changed hunks were not completely read. Checking the completed static-score wrapper does not establish all changed cross-references in this section."
+    },
+    {
+      "claim": "CHANGED-PASSAGE UniformSeriesTail (whole result)",
+      "verdict": "PASS",
+      "reason": "Ledger:6277-6354, the corresponding hunks at diffs/statement-ledger-earlier-sections.diff:1316-1359, UniformSeriesTail.lean:1-320, TerminalWick.lean:496-503 and TeX:3600-3748 support the changed statements. The passage correctly distinguishes the proved abstract composition from construction/identification of the actual regularized family and retains the remaining inputs."
+    },
+    {
+      "claim": "CHANGED-PASSAGE VariationalRate (whole result)",
+      "verdict": "INCONCLUSIVE",
+      "reason": "Ledger:6782-6899 and the changed hunks :1360-1389 were read. The added S1Bdd-discharge claim is supported by L8Completed.lean:140-170. Complete reading of the other declarations named by this section was not achieved."
+    },
+    {
+      "claim": "CHANGED-PASSAGE WaveGreen (whole result)",
+      "verdict": "FAIL",
+      "reason": "W2: the changed paragraph at ledger:6978-6988 correctly says the Gaussian-smoothed Green norm is identified with N_{2,m,S} only in dimension one, then incorrectly calls damped_homogeneous_norms_full_wave 'The full lemma'. TeX:845-847 asserts the smoothing remarks without that restriction; DampedMultiplier.lean:547-585 does not discharge the missing identification."
+    },
+    {
+      "claim": "CLASS-OCCUPATION-CEILING",
+      "verdict": "PASS",
+      "reason": "Same-assumptions/weaker is the correct classification for the explicitly scoped variational ceiling. L8Completed.lean:128-155 takes only HomogCovariance and Gamma != 0, matching the standing assumptions at integrated_occupation_ceiling.tex:4-21. No SpaceTimeCS input remains. TeX P:raw-occupation-energy at :94-96 gives C_occ <= K_0 R_sp; the ceiling is increasing in that positive constant. Thus the larger ceiling is genuinely weaker, not an extra supplied assumption. Coverage.yaml:1360-1382 explicitly excludes C_occ, the occupation-energy form and the moment conclusion; neither inputs-supplied nor removal of the label is necessary."
+    },
+    {
+      "claim": "CLASS-DAMPED-NORMS",
+      "verdict": "FAIL",
+      "reason": "The weaker classification is correct, but the scope does not state all gaps exactly. The dimension-one limitation is real: DampedMultiplier.lean:515-527 takes GreenFourier G, and :594-606 discharges it only for d = 1. Additionally, :458-459 expressly says the spectral identity for spatial covariance smoothing p_epsilon * Gamma is not stated, whereas coverage.yaml:165 and docs/coverage-scope-tex.yaml:14-15 claim spatial Gaussian smoothing is proved in every dimension. TeX:845-846 concerns actual smoothing, not merely membership of exp(-eta|xi|^2) in a multiplier class. W1 requires correcting this scope assertion."
+    },
+    {
+      "claim": "LEDGER-TOTALS",
+      "verdict": "FAIL",
+      "reason": "The structural counts agree for 2108 unique ledger declarations, 1747 theorem and 361 definition claims, exactly one row per claims.yaml declaration, 66 whole-result modules, and 986 no-direct-label rows. Coverage has 43 same-assumptions results, five inputs-supplied results with full/default-full conclusions, 20 inputs-supplied/weaker rows and three outside main theorems. However, there are FIFTEEN same-assumptions/weaker rows, not the FOURTEEN stated at coverage.yaml:10-11. W3: the narrower-result subtotal is wrong."
+    },
+    {
+      "claim": "SCOPE-AND-NOT-IN-LEAN",
+      "verdict": "FAIL",
+      "reason": "The L8 discharges and remaining occupation/moment limitations at ledger:198-241,7352-7397 agree with the checked wrappers. However, W2 applies to the Scope's 'stated in full' claim at :192-197. The Not-in-Lean exclusion of the smoothed-covariance spectral identity at :7411-7414 further contradicts the coverage sentence claiming spatial Gaussian smoothing proved. The complete remaining changed-passage audit was not finished."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "W1 — L:damped-homogeneous-norms scope overstates spatial covariance smoothing. Coverage.yaml:165 and docs/coverage-scope-tex.yaml:14-15 say 'Everything is proved ... except one remark' and 'spatial Gaussian smoothing ... [is] proved in every dimension'. TeX notes_stratonovich_ham_second_moment.tex:845-846 says actual spatial Gaussian smoothing gives a multiplier. The cited Lean source instead states 'The spectral identity for spatial covariance smoothing p_epsilon * Gamma is not stated (only the membership of its multiplier)' at DampedMultiplier.lean:458-459; the same limitation remains in ledger:1391-1395,7411-7414. Exact fix: retain same-assumptions/weaker, but revise both scope versions to distinguish proved Gaussian multiplier membership from the unformalized covariance-smoothing identification, alongside the dimension-one Green-norm identification limitation.",
+      "W2 — Unqualified full-lemma cross-references are inaccurate. Ledger:192-197 says L:damped-homogeneous-norms is 'stated in full'; :6986-6988 says 'The full lemma'; :1535-1540,1597-1601 broadly claim its smoothing remarks are proved. TeX notes_stratonovich_ham_second_moment.tex:845-847 has no dimension-one restriction. Lean DampedMultiplier.lean:515-527 requires 'hF : GreenFourier G' for the relevant norm identification, discharged only in dimension one at :594-606; the full_wave type at :547-585 does not supply it in dimensions two and three. Exact fix: replace those full/complete-smoothing assertions with explicit references to the proved spectral conclusions and the two remaining smoothing-identification limitations.",
+      "W3 — The narrower-result subtotal is incorrect. Coverage.yaml:10-11 says 'fourteen with a narrower conclusion', but a structural count of its rows gives fifteen same-assumptions/weaker results, including L:positive-raw-embedding at :428-431 and T:intrinsic-occupation-ceiling at :1359-1362. The TeX/Lean comparison independently confirms that the latter's C_occ ceiling, TeX integrated_occupation_ceiling.tex:209-215, is replaced by K_0 R_sp in L8Completed.lean:128-155. Exact fix: change the subtotal to fifteen, consistently describing 28 full and 15 narrower same-assumptions results."
+    ],
+    "minor": [
+      "W4 — Misnamed dropped hypothesis in the terminal-Wick composition row. Ledger:2812 calls hK 'the covariance formula'. Lean TerminalWick.lean:618 actually has 'hK : Measurable ... K ...'; covariance identification remains in the centered-Gaussian-field hypothesis at L8Completed.lean:316, matching the field-with-covariance assumption in TeX notes_stratonovich_ham_second_moment.tex:3601-3603. Suggested wording fix: replace 'the covariance formula hK' with 'measurability of the covariance hK'."
+    ]
+  },
+  "required_repairs": [
+    "Correct the L:damped-homogeneous-norms conclusion_scope in lean/coverage.yaml and both corresponding versions in docs/coverage-scope-tex.yaml to disclose the spatial covariance-smoothing identification gap as well as the dimension-one-only Green-norm identification.",
+    "Qualify the ledger's full-lemma and complete-smoothing cross-references in Scope, DampedNormsHomog and WaveGreen so they do not claim the unformalized smoothing identifications.",
+    "Correct the coverage summary's narrower-result subtotal from fourteen to fifteen."
+  ],
+  "limitations": [
+    "Complete-reading requirement A was not met. Consequently this is not an acceptance report; the overall verdict is INCONCLUSIVE despite established mandatory documentation repairs.",
+    "The complete Index-by-label section, several required changed ledger sections, most of diffs/statement-ledger-earlier-sections.diff, diffs/statement-ledger.diff, and excerpts/tex-excerpts.txt were not completely read. Their gaps are recorded in source_coverage.",
+    "The prior files were not independently read. Old/new coverage wording was compared through the supplied complete coverage diffs, not independently reconstructed from those prior files.",
+    "Not every declaration cited by the twelve coverage rows or earlier-wave tables was substantively read. Identifier existence and numerical counts were checked by read-only structural scans; those scans do not establish mathematical correspondence.",
+    "The packet contains Audit.lean commands, not captured elaborated-type output. Types were inspected in source; no build or proof-correctness audit was attempted.",
+    "The RawValueCeiling step-module source is not included in the supplied file index, limiting independent checking of that earlier scalar declaration.",
+    "Provenance metadata was only partially read, and packet hashes were not independently verified.",
+    "No network access, file modification, delegation, installation or publication was performed. This AI review is neither human verification nor a novelty audit."
+  ]
+}

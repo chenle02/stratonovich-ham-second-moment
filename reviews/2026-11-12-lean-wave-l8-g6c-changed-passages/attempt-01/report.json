@@ -1,0 +1,119 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "diffs/statement-ledger-earlier-sections.diff: 1-1532, complete.",
+    "candidate/statement-ledger.md: 1041-1052, 1314-1326, 1386-1412, 1480-1650, 2727-2813, 4557-4904, 4906-4956, 4958-5045, 5047-5198, 5200-5393, 6277-6354, 6782-6899, 6901-7022, 7298-7302; partial file, complete for all eleven required sections.",
+    "diffs/statement-ledger.diff: 1942-1965 and nonconsecutive keyword-search matches within 35-2073; partial.",
+    "diffs/coverage.diff: 1-509, complete.",
+    "diffs/coverage-scope-tex.diff: 1-75, complete.",
+    "docs/coverage-scope-tex.yaml: 1-69, complete.",
+    "lean/coverage.yaml: 1-16, 155-214, 526-585, 680-713, 1097-1134, 1154-1186, 1210-1256; partial.",
+    "lean/claims.yaml: 12236-12252, 12476-12494, 14028-14042, 14759-14777; partial.",
+    "PROVENANCE.json: 1-55; partial.",
+    "lean/provenance/manuscript-anchor.json: 1-45; partial.",
+    "prior/statement-ledger-f3be834.md: 1217-1238, 5566-5577 and section-heading search matches; partial.",
+    "prior/coverage-f3be834.yaml: 144-188, 488-513, 1054-1085; partial.",
+    "prior/coverage-scope-tex-f3be834.yaml: 1-20; partial.",
+    "lean/Audit/l8-completed/Audit.lean: 1-62, complete.",
+    "lean/StratonovichHAMAudit/RawValueCeiling.lean: 1-27, complete.",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean: 1-501, complete.",
+    "lean/StratonovichHAMSecondMoment/DampedMultiplier.lean: 1-608, complete.",
+    "lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean: 1-287, complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean: 1-105, complete.",
+    "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean: 435-453, 525-597, 660-709; partial, named declarations complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean: 475-594; partial, named declarations complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean: 1690-1753; partial, changed-row declaration complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean: 1-179, complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean: 280-308; partial, changed-row declaration complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean: 344-378, 410-427, 590-657, 693-719, 730-762; partial, changed-row declarations complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean: 1135-1161; partial, changed-row declaration complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalRate.lean: 480-555, 598-828; partial, changed-row declarations complete.",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean: 434-443, 795-837, 930-1037; partial, named boundedness and completion declarations complete.",
+    "lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean: 1026-1068, 1110-1165; partial, named interface declarations complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialBracket.lean: 90-137, 180-200, 470-519; partial, named gap and bracket declarations complete.",
+    "lean/StratonovichHAMSecondMoment/TerminalWick.lean: 224-250, 275-308, 476-507, 610-660; partial, named input-discharge declaration complete.",
+    "lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean: 210-320; partial, changed-row declarations complete.",
+    "lean/StratonovichHAMSecondMoment/H1Density.lean: 65-95, 570-590; partial, density predicate and named theorem complete.",
+    "lean/StratonovichHAMSecondMoment/WaveKernel.lean: 30-70; partial.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean: 90-104, 228-254; partial.",
+    "manuscript/notes/integrated_spatial_occupation.tex: 1-348; partial file, required cited ranges complete.",
+    "manuscript/notes/integrated_unmasked_variational.tex: 1-20, 270-337; partial file, required cited ranges complete.",
+    "manuscript/notes/integrated_occupation_ceiling.tex: 1-308; partial file, required cited ranges complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: 225-265, 528-532, 777-919, 1145-1155, 1664-1673, 3600-3748, 7714-7723; partial file, required cited ranges complete."
+  ],
+  "checks": [
+    {
+      "claim": "CHANGED-PASSAGE RawValueCeiling",
+      "verdict": "PASS",
+      "reason": "RawValueCeiling.lean:12-25 proves the stated scalar inequality under a > 0 and q-2a > 0. SpatialBracket.lean:186-197 specializes its mathematical content to q=4-alpha; its bracket theorem at 481-517 has the disclosed variational scope. This matches manuscript/integrated_occupation_ceiling.tex:275-290."
+    },
+    {
+      "claim": "CHANGED-PASSAGE DampedNormsHomog (whole result)",
+      "verdict": "PARTIAL",
+      "reason": "The new lower bounds and mass-preservation references are correct, but candidate:1535-1540 and 1597-1599 overstate completion of the smoothing remarks. DampedMultiplier.lean:223-228 proves only membership of an explicitly defined Gaussian multiplier, not the spectral identity for smoothing Gamma. TeX main:845-847 asserts that actual spatial and Green smoothing give such multipliers. The associated coverage scope explicitly overclaims spatial smoothing; see W1."
+    },
+    {
+      "claim": "CHANGED-PASSAGE SpatialFourierBound (whole result)",
+      "verdict": "PASS",
+      "reason": "SpectralMassIdentity.lean:128-208, 228-236 proves the resolvent identities, including integrability. Its theorem at 272-285 has only HomogCovariance and IsUnitTest hypotheses and concludes the exact constant 2^(1+alpha) R_alpha. These match manuscript/integrated_spatial_occupation.tex:101-111, 149-159 and main:528-532."
+    },
+    {
+      "claim": "CHANGED-PASSAGE SpatialFourLinear (whole result)",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1728-1750 retains hdense and S1Bdd as reported. L8Completed.lean:140-142 proves S1Bdd from HomogCovariance and Gamma != 0, and 210-215 states the completed supremum bound. The hypotheses match manuscript/integrated_spatial_occupation.tex:4-10; the conclusion matches 316-322."
+    },
+    {
+      "claim": "CHANGED-PASSAGE SpatialOccupationCompleted (whole result)",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationCompleted.lean:145-162 still takes S1Bdd. L8Completed.lean:189-204 removes that supplied input under HomogCovariance and Gamma != 0. The smooth-score constant agrees with manuscript/integrated_spatial_occupation.tex:171-176; the historical ratio-bound qualification is accurate."
+    },
+    {
+      "claim": "CHANGED-PASSAGE SpatialOccupationL7Completed (whole result)",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationL7Completed.lean:296-301 retains S1Bdd exactly as described. L8Completed.lean:210-215 supplies the same supremum conclusion without it. The bound M_a^(-1/k) F_0(E_sp) matches manuscript/integrated_spatial_occupation.tex:316-322."
+    },
+    {
+      "claim": "CHANGED-PASSAGE SpatialSmoothRatio (whole result)",
+      "verdict": "PASS",
+      "reason": "SpatialSmoothRatio.lean:595-652 and 734-755 retain the named inputs. L8Completed.lean:140-142, 189-204 provides the claimed discharge under the standing homogeneous, nonzero-covariance assumptions. The manuscript uses the same score bound at integrated_spatial_occupation.tex:171-176, 213-215."
+    },
+    {
+      "claim": "CHANGED-PASSAGE SpatialStaticControls (whole result)",
+      "verdict": "PASS",
+      "reason": "SpatialStaticControls.lean:1151-1159 retains S1Bdd. L8Completed.lean:176-183 states the completed bound with only HomogCovariance, Gamma != 0 and the stated nonnegative nonzero test-function conditions. These match manuscript/integrated_spatial_occupation.tex:4-10, 40-53."
+    },
+    {
+      "claim": "CHANGED-PASSAGE UniformSeriesTail (whole result)",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:496-503 proves both TerminalWickInput fields with the disclosed variance bound, product measurability and chain-mass inputs. L8Completed.lean:312-357 composes this with the series-tail theorem. UniformSeriesTail.lean:301-316 separately retains the second-moment conclusion. The manuscript facts are main:3638-3644, 3657-3659 and 3703-3748; the unconstructed regularized-family identification remains explicitly excluded."
+    },
+    {
+      "claim": "CHANGED-PASSAGE VariationalRate (whole result)",
+      "verdict": "PASS",
+      "reason": "VariationalRate.lean:610-611 defines S1Bdd as the reported boundedness assertion. L8Completed.lean:140-170 proves boundedness and supremum scaling under HomogCovariance and Gamma != 0, matching manuscript/integrated_unmasked_variational.tex:4-5, 272-277. The different deterministic proof route and omission of Q_2 >= S_2^pos are accurately disclosed."
+    },
+    {
+      "claim": "CHANGED-PASSAGE WaveGreen (whole result)",
+      "verdict": "PARTIAL",
+      "reason": "The dimension-one identification and higher-dimensional gap are correctly described, but candidate:6986-6988 then calls full_wave the 'full lemma'. DampedMultiplier.lean:515-518 requires the additional hypothesis 'hF : GreenFourier G' for identification with the smoothed wave norm; 594-606 discharges it only in dimension one. TeX main:805 and 845-847 assert the smoothing conclusion under H:homog. The unqualified completion claim needs narrowing; see W1."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "W1 \u2014 DampedNormsHomog/WaveGreen smoothing scope is materially overstated. Candidate/statement-ledger.md:1535-1540,1597-1599 says the smoothing remarks are proved, and 6986-6988 calls full_wave the 'full lemma'. lean/coverage.yaml:165 and docs/coverage-scope-tex.yaml:14-15 additionally say 'spatial Gaussian smoothing ... [is] proved in every dimension'. Lean DampedMultiplier.lean:223-228 concludes only 'IsMultiplier (gaussMult eta)'; it does not identify the spectral measure of p_eps * Gamma. For Green smoothing, the identification theorem explicitly assumes '(hF : GreenFourier G)' at 515-518, discharged only for d=1 at 594-606. TeX manuscript/notes/notes_stratonovich_ham_second_moment.tex:845-847 says 'Spatial Gaussian smoothing and Gaussian smoothing of the Green kernel give multipliers in this class' under H:homog at 805. Mere multiplier membership does not establish correspondence with the smoothed covariance, and the abstract transform identity does not supply the missing higher-dimensional wave identification. The narrower disclosures at candidate:1391-1399 and coverage:207-209 do not make the contradictory completion sentences accurate. Exact fix: narrow these ledger and coverage sentences to the proved multiplier-membership, mass and abstract-transform results; explicitly exclude the covariance-smoothing spectral identity and restrict the smoothed-wave identification to d=1 or supplied GreenFourier. Retain conclusion: weaker."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Correct the smoothing-completion claims in candidate/statement-ledger.md:1535-1540,1597-1599,6986-6988 and the L:damped-homogeneous-norms scope sentences in lean/coverage.yaml:165 and docs/coverage-scope-tex.yaml:14-15 as specified in W1. Do not describe the full manuscript lemma as completed unless the missing identifications are supplied by Lean conclusions."
+  ],
+  "limitations": [
+    "Requirement A was completed for the eleven scoped checks. Unlisted portions of files marked partial were not read; contextual metadata, prior files and coverage documents were sampled under requirement B.",
+    "Unchanged earlier-wave assertions and new wave-L8 sections were not independently audited beyond the context needed for these checks.",
+    "Compilation and standard-axiom correctness were accepted as stipulated; no Lean build or independent byte-hash verification was performed.",
+    "This is an AI correspondence review, not human verification or a novelty audit."
+  ]
+}

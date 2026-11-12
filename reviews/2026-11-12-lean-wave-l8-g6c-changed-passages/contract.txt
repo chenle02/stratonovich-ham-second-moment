@@ -1,0 +1,120 @@
+Independent correspondence review: wave L8 of the Lean companion (ledger rows, coverage classes and scope sentences) vs the manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  35182337601a). Review ONLY the items named in the checks below; the section
+  "L8Completed (whole result)" (lines 2727-2813) is context. Rows of earlier waves were
+  reviewed before.
+- the Lean modules (ground truth for what each declaration states), every
+  library module under lean/StratonovichHAMSecondMoment/. These sections'
+  own modules:
+     lean/StratonovichHAMSecondMoment/L8Completed.lean
+  Library modules they import directly (context; read the declarations
+  the rows name; their own imports are in the packet too):
+     lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean
+     lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean
+     lean/StratonovichHAMSecondMoment/SpatialBracket.lean
+     lean/StratonovichHAMSecondMoment/SymplecticFree.lean
+     lean/StratonovichHAMSecondMoment/TerminalWick.lean
+     lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean
+- refutation files of these modules (negative controls):
+     (none for these modules)
+- audit files (elaborated types printed by #check / #print axioms):
+     lean/Audit/l8-completed/Audit.lean
+- the step modules (finite, algebraic and scalar steps) under
+  lean/StratonovichHAMAudit/, for example
+  lean/StratonovichHAMAudit/DimensionalMatrix.lean and
+  lean/StratonovichHAMAudit/RawValueCeiling.lean; read the declarations
+  that rows and sections name.
+- lean/claims.yaml, lean/coverage.yaml, docs/coverage-scope-tex.yaml,
+  lean/provenance/manuscript-anchor.json.
+- prior/statement-ledger-f3be834.md, prior/coverage-f3be834.yaml,
+  prior/coverage-scope-tex-f3be834.yaml : the same files at the wave-L7 gate
+  commit (before the wave-L8 merge).
+- diffs/statement-ledger.diff, diffs/coverage.diff,
+  diffs/coverage-scope-tex.diff : git diffs from that commit to this one.
+- diffs/statement-ledger-earlier-sections.diff : the hunks of the ledger
+  diff that fall in the Scope, "Index by label" and "Not in Lean" sections
+  and in the earlier (pre-wave-L8) sections named in the CHANGED-PASSAGE
+  checks; the hunks inside the new wave-L8 sections are reviewed by other
+  reviewers and are out of scope here, except "L8Completed (whole result)".
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  a2844206199b. Labels are \label{...}.
+- excerpts/tex-excerpts.txt : the statements and proofs of the labels these
+  sections cite, with the line numbers of the files under manuscript/
+  (a convenience copy; the files under manuscript/ are authoritative).
+- PROVENANCE.json : byte binding of every packet file.
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that every passage of the earlier (pre-wave-L8) ledger sections, and of the Scope, Index and Not-in-Lean sections, that the wave-L8 docs merge changed are formalized as stated in their
+rows: every listed conclusion proved, with hypotheses that match the
+manuscript, apart from side conditions the TeX leaves implicit and inputs
+explicitly declared as supplied. Test that claim hard: any Lean hypothesis
+that the manuscript does not have, any manuscript hypothesis the Lean
+drops, any weaker Lean conclusion, any changed constant, range, quantifier
+order or strictness, any modelling choice that changes the mathematical
+object, any supplied hypothesis stronger than the manuscript result it
+stands for, any row labelled as a step of a TeX proof that is really an
+auxiliary of a different Lean proof route, any coverage class that
+overstates ("same-assumptions" when a hypothesis is added; "full" when a
+conclusion is narrower), and any declaration missing from or duplicated in
+the Index, is a finding, unless the ledger states it AND it is genuinely
+harmless. Decide that yourself from the TeX; do not accept the ledger's word.
+Each CHANGED-PASSAGE check is about the changed hunks of that section (diffs/statement-ledger-earlier-sections.diff): check each changed sentence or row against the Lean source and the TeX. Unchanged text of these sections was reviewed in earlier waves and is context only.
+
+CHECKS (exactly these 11, in this order, with these claim strings):
+  1. claim "CHANGED-PASSAGE RawValueCeiling": every passage of the ledger section "RawValueCeiling" (lines 1041-1052) that the wave-L8 merge changed (see diffs/statement-ledger.diff) is accurate against the Lean source and the TeX at a284420
+  2. claim "CHANGED-PASSAGE DampedNormsHomog (whole result)": every passage of the ledger section "DampedNormsHomog (whole result)" (lines 1480-1650) that the wave-L8 merge changed (see diffs/statement-ledger.diff) is accurate against the Lean source and the TeX at a284420
+  3. claim "CHANGED-PASSAGE SpatialFourierBound (whole result)": every passage of the ledger section "SpatialFourierBound (whole result)" (lines 4557-4685) that the wave-L8 merge changed (see diffs/statement-ledger.diff) is accurate against the Lean source and the TeX at a284420
+  4. claim "CHANGED-PASSAGE SpatialFourLinear (whole result)": every passage of the ledger section "SpatialFourLinear (whole result)" (lines 4687-4904) that the wave-L8 merge changed (see diffs/statement-ledger.diff) is accurate against the Lean source and the TeX at a284420
+  5. claim "CHANGED-PASSAGE SpatialOccupationCompleted (whole result)": every passage of the ledger section "SpatialOccupationCompleted (whole result)" (lines 4906-4956) that the wave-L8 merge changed (see diffs/statement-ledger.diff) is accurate against the Lean source and the TeX at a284420
+  6. claim "CHANGED-PASSAGE SpatialOccupationL7Completed (whole result)": every passage of the ledger section "SpatialOccupationL7Completed (whole result)" (lines 4958-5045) that the wave-L8 merge changed (see diffs/statement-ledger.diff) is accurate against the Lean source and the TeX at a284420
+  7. claim "CHANGED-PASSAGE SpatialSmoothRatio (whole result)": every passage of the ledger section "SpatialSmoothRatio (whole result)" (lines 5047-5198) that the wave-L8 merge changed (see diffs/statement-ledger.diff) is accurate against the Lean source and the TeX at a284420
+  8. claim "CHANGED-PASSAGE SpatialStaticControls (whole result)": every passage of the ledger section "SpatialStaticControls (whole result)" (lines 5200-5393) that the wave-L8 merge changed (see diffs/statement-ledger.diff) is accurate against the Lean source and the TeX at a284420
+  9. claim "CHANGED-PASSAGE UniformSeriesTail (whole result)": every passage of the ledger section "UniformSeriesTail (whole result)" (lines 6277-6354) that the wave-L8 merge changed (see diffs/statement-ledger.diff) is accurate against the Lean source and the TeX at a284420
+  10. claim "CHANGED-PASSAGE VariationalRate (whole result)": every passage of the ledger section "VariationalRate (whole result)" (lines 6782-6899) that the wave-L8 merge changed (see diffs/statement-ledger.diff) is accurate against the Lean source and the TeX at a284420
+  11. claim "CHANGED-PASSAGE WaveGreen (whole result)": every passage of the ledger section "WaveGreen (whole result)" (lines 6901-7022) that the wave-L8 merge changed (see diffs/statement-ledger.diff) is accurate against the Lean source and the TeX at a284420
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps:
+   diffs/statement-ledger-earlier-sections.diff; for each of the 11
+   sections named in the checks, the whole section of
+   candidate/statement-ledger.md; every Lean declaration that a changed
+   sentence or row names (in its module, under lean/); and, in the files
+   under manuscript/, every TeX line range the changed text cites. Text
+   that did not change was reviewed earlier and is context only.
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 11 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side wherever a hypothesis is at issue.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "limitations": anything you could not check.
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES;
+  FAIL if any fatal or major finding or required repair; INCONCLUSIVE if
+  the reading requirement could not be met.
+- "confidence": high only if requirement A is complete.

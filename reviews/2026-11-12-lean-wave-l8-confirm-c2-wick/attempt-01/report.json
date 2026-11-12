@@ -1,0 +1,99 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "prior-reports/g4-report.json:1-522 \u2014 complete.",
+    "prior-reports/g6a-report.json:1-279 \u2014 complete.",
+    "adjudication/ADJUDICATION.md:1-65 \u2014 complete.",
+    "diffs/repair-3518233-bd1c439.diff:1-645 \u2014 complete.",
+    "candidate/statement-ledger.md:1-380,638-646,1328-1351,1538-1568,1608-1629,1897-2005,2764-2851,3610-3623,4416-4438,4458-4470,5540-5561,5659-5665,5722-5748,5776-5781,5813-5819,5911-6044,6367-6444,7070-7083,7421-7599 \u2014 partial file; all required sections complete.",
+    "lean/coverage.yaml:1-1399 \u2014 complete.",
+    "docs/coverage-scope-tex.yaml:1-69 \u2014 complete.",
+    "lean/README.md:65-105,195-230 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/FiniteWick.lean:1-100,241-370,480-721 \u2014 partial; required declarations and comments complete.",
+    "lean/StratonovichHAMSecondMoment/TerminalWick.lean:1-686 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean:1-320 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean:286-362 \u2014 partial; required composition declaration complete.",
+    "lean/StratonovichHAMSecondMoment/DampedMultiplier.lean:61-80,209-229,258-287,357-440,445-608 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean:70-85,214-239,263-281 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean:182-236 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/SymplecticFree.lean:155-172,510-555,650-705 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean:95-155,199-276,828-946 \u2014 partial; additional declaration-name searches.",
+    "lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean:133-157,420-451,766-818,936-978,1100-1165 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:20-105 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean:248-258 \u2014 partial; additional declaration-name searches.",
+    "lean/refutations/finite-wick/AbsBound.lean:1-43 \u2014 complete.",
+    "lean/refutations/finite-wick/FourthMoment.lean:1-41 \u2014 complete.",
+    "lean/refutations/finite-wick/NonnegDropped.lean:1-43 \u2014 complete.",
+    "lean/refutations/finite-wick/PairingCount.lean:1-39 \u2014 complete.",
+    "lean/refutations/terminal-wick/ChainMassFactorial.lean:1-37 \u2014 complete.",
+    "lean/refutations/terminal-wick/ChainMassSimplex.lean:1-37 \u2014 complete.",
+    "lean/refutations/terminal-wick/MajorantFactor.lean:1-41 \u2014 complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:225-242,290-328,372-401,526-532,777-850,903-919,2610-2626,3561-3748,5167-5190 \u2014 partial; required finding-specific passages complete.",
+    "manuscript/notes/integrated_symplectic_phase.tex:30-133 \u2014 partial.",
+    "manuscript/notes/integrated_occupation_ceiling.tex:4-43,90-97,203-241 \u2014 partial.",
+    "manuscript/notes/integrated_intrinsic_constant.tex:22-52 \u2014 partial.",
+    "manuscript/notes/integrated_spatial_occupation.tex:101-164 \u2014 partial.",
+    "prior-3518233/docs/coverage-scope-tex.yaml:1-69 \u2014 complete.",
+    "prior-3518233/refutations/spectral-mass-identity/AlphaPositive.lean:1-48 \u2014 complete.",
+    "prior-3518233/refutations/spectral-mass-identity/FourierBoundAlphaZero.lean:1-76 \u2014 complete.",
+    "prior-3518233/StratonovichHAMSecondMoment/TerminalWick.lean:28-34,49-58,592-604 \u2014 partial; read through direct comparison with the current file."
+  ],
+  "checks": [
+    {
+      "claim": "g4-W1",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The substantive defect is resolved. TerminalWick.lean:397,624 requires global covariance measurability, whereas manuscript/notes/notes_stratonovich_ham_second_moment.tex:3601-3605 requires only cell-wise mean-square continuity. The added restriction and valid cut-time counterexample are disclosed at candidate/statement-ledger.md:5938-5951,6025,6043; lean/coverage.yaml:642,669-675; docs/coverage-scope-tex.yaml:26-27; lean/README.md:208-214; and TerminalWick.lean:53-57,599-607. Minor collective-wrapper wording remains; see C3."
+    },
+    {
+      "claim": "g4-W2",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "candidate/statement-ledger.md:1924-1931,1942-1945 now correctly distinguishes proved monomial integrability from the totalized continuous-function bridge. FiniteWick.lean:578-592 gives an integral equality and an integrability equivalence, not unconditional integrability; :599-602 proves monomial integrability. This matches the Gaussian-monomial application in manuscript/notes/notes_stratonovich_ham_second_moment.tex:3662-3673. The residual phrase 'as a conjunct' is too literal for wick_stdPi; see C2."
+    },
+    {
+      "claim": "g4-W3",
+      "verdict": "PASS",
+      "reason": "Scope now expressly restricts comparison to individual mixed moments at candidate/statement-ledger.md:280-281, consistently with :5976-5980 and :6044. TerminalWick.lean:679-681 states comparison for each m,n; the manuscript at notes_stratonovich_ham_second_moment.tex:3641-3642 states finite partial-order second-moment comparison. The coverage scope and README preserve this distinction."
+    },
+    {
+      "claim": "g4-W4",
+      "verdict": "PASS",
+      "reason": "The lists at candidate/statement-ledger.md:1945-1952,5997-6002 accurately describe all seven supplied controls. The four finite-wick files distinguish combinatorial weights from the actual one-dimensional Gaussian fourth moment; the three terminal-wick files test scalar mass or majorant formulas. Their witnesses give 3 versus 12, 3 versus 1, -1, mass 1/2 versus 1, and sqrt(3)/24 greater than 1/24, consistently with manuscript notes_stratonovich_ham_second_moment.tex:3650-3655,3670-3673."
+    },
+    {
+      "claim": "g6a-W3",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:2850 now correctly calls hK covariance measurability. L8Completed.lean:312-357 retains CenteredGaussianField but requires neither covariance measurability nor cell continuity. TerminalWick.lean:501-508 discharges exactly the two TerminalWickInput fields without hK, matching the facts cited by the manuscript at notes_stratonovich_ham_second_moment.tex:3730-3733."
+    },
+    {
+      "claim": "RESCAN",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The four required ledger sections and both coverage rows consistently disclose supplied measures/measurability, real-r scope, mixed-moment-only comparison, and the additional formula hypothesis. The uniform-tail constants and seven-conclusion wrapper match UniformSeriesTail.lean:261-277 and manuscript notes_stratonovich_ham_second_moment.tex:3703-3726. The corrected count of fifteen same-assumptions/weaker rows is accurate. No further substantive overclaim was found; C2 concerns wording about how integrability is packaged."
+    },
+    {
+      "claim": "NO-REGRESSION",
+      "verdict": "FAIL",
+      "reason": "The changed smoothing scopes correctly disclose both gaps (DampedMultiplier.lean:71-76,515-527,594-606 versus manuscript notes_stratonovich_ham_second_moment.tex:845-847). The numerical convention corrections, Cauchy hypotheses, node-list abstraction and Not-in-Lean clarification are supported. All Lean changes in diffs/repair-3518233-bd1c439.diff:35-83,603-645 are confined to comments. However, the contract's universal ASCII/TeX mirroring requirement is not satisfied: lean/coverage.yaml contains 35 conclusion_scope fields, while docs/coverage-scope-tex.yaml:7-69 provides only 21 matching entries. Fourteen scopes have no ASCII/TeX counterpart; see C1. This omission predates the repair but still fails the explicitly requested universal check."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "C1 \u2014 NO-REGRESSION scope-mirror completeness. Fourteen conclusion_scope fields lack entries in docs/coverage-scope-tex.yaml:1-69: L:driver-holder-limit, L:driver-interval-limit, L:exact-canonical-scaling, L:finite-word-cutoff, L:higher-riesz, L:raw-block-inputs, L:raw-block-restart, P:actual-wave-form, P:gram-entrywise-comparison, P:gram-positive-optimizer, P:masked-noise-completion, P:raw-block-original-lower, P:wave-two-variances and P:white-spatial-energy. For example, lean/coverage.yaml:307-309 says 'Lean checks only the facts about the wave Green measures'; the corresponding Lean fact is 'waveGreen d s univ = ENNReal.ofReal s' at lean/StratonovichHAMSecondMoment/WaveGreen.lean:250-251, and the TeX says 'mass h and satisfy G_h(hA) = hG_1(A)' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:5186-5187. The mathematical limitation is disclosed, but its required mirror is absent. This is pre-existing metadata incompleteness, not a newly introduced mathematical regression. Fix: add entries for all fourteen labels, each with ASCII equal to its conclusion_scope and equivalent TeX."
+    ],
+    "minor": [
+      "C2 \u2014 FiniteWick integrability packaging. candidate/statement-ledger.md:1924-1926 says every Gaussian-monomial identity includes integrability 'as a conjunct'. Yet lean/StratonovichHAMSecondMoment/FiniteWick.lean:513-515 states wick_stdPi as an equality alone; integrability is separately proved at :493-496. The substantive assurance is correct, and the TeX's application concerns monomials ('the m+n Gaussian variables at their labelled vertices', manuscript/notes/notes_stratonovich_ham_second_moment.tex:3663). Optional exact wording improvement: replace 'as a conjunct' with 'either as a conjunct or in a separate theorem'.",
+      "C3 \u2014 TerminalWick module-comment scope. lean/StratonovichHAMSecondMoment/TerminalWick.lean:31-32 collectively describes both wrappers as having 'the added restriction hK', although :667-683 shows terminal_wick_mono_paper takes no hK; the ledger correctly states this at candidate/statement-ledger.md:5949-5951. The TeX's comparison sentence at manuscript/notes/notes_stratonovich_ham_second_moment.tex:3641-3642 likewise adds no global measurability hypothesis. Optional exact clarification: say 'terminal_wick_paper additionally requires hK; both wrappers retain the supplied inputs below'."
+    ]
+  },
+  "required_repairs": [
+    "Complete docs/coverage-scope-tex.yaml for the fourteen labels listed in C1, with an ASCII mirror equal to each lean/coverage.yaml conclusion_scope and a mathematically equivalent TeX version."
+  ],
+  "limitations": [
+    "Requirement A was completed. Unlisted portions of supporting files were not semantically reviewed.",
+    "The blocking finding concerns the contract's requirement to mirror every conclusion_scope; the fourteen omissions also occur in the prior scope file and are not regressions introduced by this repair.",
+    "Occupation-ceiling and space-time-positivity refutation files named by added prose are not supplied as standalone files. Their range distinctions were checked against the available general declarations and elementary mathematical witnesses, not against those omitted artifacts.",
+    "No compilation, proof-correctness certification, provenance hash reproduction, historical build verification, human verification or novelty audit was performed."
+  ]
+}

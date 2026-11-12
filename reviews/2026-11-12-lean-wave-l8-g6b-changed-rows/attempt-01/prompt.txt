@@ -1,0 +1,154 @@
+Review the frozen packet rooted at <HOME>/.local/state/tmp/claude-1247658/-<HOME>-Dropbox-workspace-svn-Article-Stratonovich-HAM-Second-Moment/4c4c8276-f434-4c95-9605-690953ef166f/scratchpad/l8rev-b/g6b-changed-rows/attempt-01/workspace. Primary target: candidate/statement-ledger.md. Source revision: 35182337601ae648f9b6d538dad2cacb78e7e7a4.
+
+You are an independent artifact reviewer. Read only the frozen packet
+and the supplied review contract. Report correctness, missing assumptions,
+incorrect constants, failed implications, and uncertainty. Do not edit files,
+use the network, send messages, publish, install, or delegate. Do not launch a
+research or coding workflow. Return a scientific report rather than a plan.
+Use exactly one JSON object with schema "subscription-review-report/1", verdict (PASS, PASS_WITH_NOTES, FAIL, or
+INCONCLUSIVE), confidence (high, medium, low), source_coverage (list of strings),
+checks (list of objects with claim, verdict, reason), findings (an object with
+fatal, major, minor lists), required_repairs (list), and limitations (list).
+required_repairs contains ONLY mandatory changes that block acceptance. Optional
+clarifications belong in findings.minor, never in required_repairs. PASS and
+PASS_WITH_NOTES require empty fatal, major and required_repairs lists and no
+failed/unchecked claim. If a repair is mandatory, return FAIL or INCONCLUSIVE;
+never weaken a finding to obtain PASS.
+Read every required source completely. Never use Grep head_limit or any other
+truncating or limiting option on a required source. After any pagination or
+truncation marker (for example a partial Read, an offset/limit notice, or
+"output truncated"), keep reading the next range until the whole file is read.
+In source_coverage, list each exact file and the line ranges you actually read.
+If coverage of any required source is incomplete, say "partial" for that source
+in source_coverage and state the gap in limitations.
+An AI review is not human verification or a novelty audit. Do not silently
+repair a candidate and PASS the original. A terminal error is not a verdict.
+
+Frozen packet file index (relative to workspace; a listed file is not proof of reading):
+["PROVENANCE.json", "candidate/statement-ledger.md", "diffs/coverage-scope-tex.diff", "diffs/coverage.diff", "diffs/statement-ledger-earlier-sections.diff", "diffs/statement-ledger.diff", "docs/coverage-scope-tex.yaml", "excerpts/tex-excerpts.txt", "lean/Audit/l8-completed/Audit.lean", "lean/StratonovichHAMAudit/ActualEvent.lean", "lean/StratonovichHAMAudit/AllAlphaMoment.lean", "lean/StratonovichHAMAudit/ClockFilter.lean", "lean/StratonovichHAMAudit/DampedLower.lean", "lean/StratonovichHAMAudit/DimensionalMatrix.lean", "lean/StratonovichHAMAudit/DirectEvent.lean", "lean/StratonovichHAMAudit/FiniteYoung.lean", "lean/StratonovichHAMAudit/GaussianTail.lean", "lean/StratonovichHAMAudit/GlobalOmega.lean", "lean/StratonovichHAMAudit/HermiteWord.lean", "lean/StratonovichHAMAudit/HermiteWordConsumer.lean", "lean/StratonovichHAMAudit/InteractionDriver.lean", "lean/StratonovichHAMAudit/JointTilt.lean", "lean/StratonovichHAMAudit/LocalFlow.lean", "lean/StratonovichHAMAudit/MiddleCross.lean", "lean/StratonovichHAMAudit/MovingCone.lean", "lean/StratonovichHAMAudit/OccupationForm.lean", "lean/StratonovichHAMAudit/PhaseResponse.lean", "lean/StratonovichHAMAudit/PositiveGram.lean", "lean/StratonovichHAMAudit/ProjectionResidual.lean", "lean/StratonovichHAMAudit/RawValueCeiling.lean", "lean/StratonovichHAMAudit/RawVariational.lean", "lean/StratonovichHAMAudit/TerminalCross.lean", "lean/StratonovichHAMAudit/WhiteCDF.lean", "lean/StratonovichHAMSecondMoment/Axioms.lean", "lean/StratonovichHAMSecondMoment/ClockCopy.lean", "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean", "lean/StratonovichHAMSecondMoment/DampedMultiplier.lean", "lean/StratonovichHAMSecondMoment/DampedNorms.lean", "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean", "lean/StratonovichHAMSecondMoment/DriverParameters.lean", "lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean", "lean/StratonovichHAMSecondMoment/FiniteWick.lean", "lean/StratonovichHAMSecondMoment/FrequencyRow.lean", "lean/StratonovichHAMSecondMoment/GaussianComparison.lean", "lean/StratonovichHAMSecondMoment/GaussianIBP.lean", "lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean", "lean/StratonovichHAMSecondMoment/GaussianTest.lean", "lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean", "lean/StratonovichHAMSecondMoment/H1Density.lean", "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean", "lean/StratonovichHAMSecondMoment/IndexedCone.lean", "lean/StratonovichHAMSecondMoment/IntervalScalar.lean", "lean/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean", "lean/StratonovichHAMSecondMoment/InventoryProduct.lean", "lean/StratonovichHAMSecondMoment/KappaRange.lean", "lean/StratonovichHAMSecondMoment/L8Completed.lean", "lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean", "lean/StratonovichHAMSecondMoment/MaskedContinuousWave.lean", "lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean", "lean/StratonovichHAMSecondMoment/MaskedModulation.lean", "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean", "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean", "lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean", "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean", "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean", "lean/StratonovichHAMSecondMoment/PhaseBessel.lean", "lean/StratonovichHAMSecondMoment/QuotientObstruction.lean", "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean", "lean/StratonovichHAMSecondMoment/RayleighTail.lean", "lean/StratonovichHAMSecondMoment/RemoveMask.lean", "lean/StratonovichHAMSecondMoment/SeriesType.lean", "lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean", "lean/StratonovichHAMSecondMoment/SpatialBracket.lean", "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean", "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean", "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean", "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean", "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean", "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean", "lean/StratonovichHAMSecondMoment/SpectralHomog.lean", "lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean", "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean", "lean/StratonovichHAMSecondMoment/SymplecticFree.lean", "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean", "lean/StratonovichHAMSecondMoment/TerminalWick.lean", "lean/StratonovichHAMSecondMoment/TimeCompletion.lean", "lean/StratonovichHAMSecondMoment/TimeFractional.lean", "lean/StratonovichHAMSecondMoment/TimeSchur.lean", "lean/StratonovichHAMSecondMoment/TypeContinuity.lean", "lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean", "lean/StratonovichHAMSecondMoment/VariationalDilation.lean", "lean/StratonovichHAMSecondMoment/VariationalFloor.lean", "lean/StratonovichHAMSecondMoment/VariationalMean.lean", "lean/StratonovichHAMSecondMoment/VariationalRate.lean", "lean/StratonovichHAMSecondMoment/WaveGreen.lean", "lean/StratonovichHAMSecondMoment/WaveKernel.lean", "lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean", "lean/StratonovichHAMSecondMoment/WeakSobolev.lean", "lean/StratonovichHAMSecondMoment/WhiteClockLaplace.lean", "lean/StratonovichHAMSecondMoment/WhiteRelativeWidth.lean", "lean/claims.yaml", "lean/coverage.yaml", "lean/provenance/manuscript-anchor.json", "manuscript/notes/ai-statistics-data.tex", "manuscript/notes/ai-statistics.tex", "manuscript/notes/book-layout.tex", "manuscript/notes/chapter-guides/01-setting.tex", "manuscript/notes/chapter-guides/02-G0.tex", "manuscript/notes/chapter-guides/03-independent-upper.tex", "manuscript/notes/chapter-guides/04-gaussian-foundations.tex", "manuscript/notes/chapter-guides/05-operator-paths.tex", "manuscript/notes/chapter-guides/06-wave-evolution.tex", "manuscript/notes/chapter-guides/07-lower.tex", "manuscript/notes/chapter-guides/08-means.tex", "manuscript/notes/chapter-guides/09-growing-radius.tex", "manuscript/notes/chapter-guides/10-point-upper.tex", "manuscript/notes/chapter-guides/11-constant.tex", "manuscript/notes/chapter-guides/12-finite-order.tex", "manuscript/notes/chapter-guides/13-direct.tex", "manuscript/notes/chapter-guides/14-covariance.tex", "manuscript/notes/chapter-guides/15-static-clock.tex", "manuscript/notes/figures/active-subset-optimization.tex", "manuscript/notes/figures/chapter-roadmap.tex", "manuscript/notes/figures/common-noise.tex", "manuscript/notes/figures/cross-colour-cube.tex", "manuscript/notes/figures/dyadic-cover.tex", "manuscript/notes/figures/endpoint-elimination.tex", "manuscript/notes/figures/gaussian-enlargement.tex", "manuscript/notes/figures/global-control-blocks.tex", "manuscript/notes/figures/hermite-cutoff.tex", "manuscript/notes/figures/interval-allocations.tex", "manuscript/notes/figures/interval-end-metrics.tex", "manuscript/notes/figures/light-cone.tex", "manuscript/notes/figures/literature-interpretations.tex", "manuscript/notes/figures/literature-results-drawing.tex", "manuscript/notes/figures/literature-results-map.tex", "manuscript/notes/figures/nonseparable-controls.tex", "manuscript/notes/figures/order-of-limits.tex", "manuscript/notes/figures/positive-gram.tex", "manuscript/notes/figures/proof-map.tex", "manuscript/notes/figures/styles.tex", "manuscript/notes/figures/two-chain-pairings.tex", "manuscript/notes/figures/walsh-guitar.tex", "manuscript/notes/figures/white-strip.tex", "manuscript/notes/future_optimizers.tex", "manuscript/notes/future_universality.tex", "manuscript/notes/future_work.tex", "manuscript/notes/history_wave_equations.tex", "manuscript/notes/index/anchors.tex", "manuscript/notes/index/list-of-notation.tex", "manuscript/notes/index/setup.tex", "manuscript/notes/integrated_actual_operator_driver.tex", "manuscript/notes/integrated_cameron_mean.tex", "manuscript/notes/integrated_compact_gaussian.tex", "manuscript/notes/integrated_compact_mean_family.tex", "manuscript/notes/integrated_constant_phase_young.tex", "manuscript/notes/integrated_covariance_foundation.tex", "manuscript/notes/integrated_exact_scaling.tex", "manuscript/notes/integrated_gaussian_tubes.tex", "manuscript/notes/integrated_intrinsic_constant.tex", "manuscript/notes/integrated_masked_moments.tex", "manuscript/notes/integrated_occupation_ceiling.tex", "manuscript/notes/integrated_point_transfer.tex", "manuscript/notes/integrated_positive_gram.tex", "manuscript/notes/integrated_radius_anchor.tex", "manuscript/notes/integrated_raw_block_lower.tex", "manuscript/notes/integrated_signed_moment_upper.tex", "manuscript/notes/integrated_signed_static.tex", "manuscript/notes/integrated_source_convergence.tex", "manuscript/notes/integrated_spatial_occupation.tex", "manuscript/notes/integrated_symplectic_phase.tex", "manuscript/notes/integrated_temporal_equilibrium.tex", "manuscript/notes/integrated_uniform_mean.tex", "manuscript/notes/integrated_uniform_products.tex", "manuscript/notes/integrated_unmasked_variational.tex", "manuscript/notes/integrated_wave_variance.tex", "manuscript/notes/integrated_white_evaluation.tex", "manuscript/notes/integrated_young_upper_foundation.tex", "manuscript/notes/lean-coverage-data.tex", "manuscript/notes/lean-coverage.tex", "manuscript/notes/literature_review.tex", "manuscript/notes/no-go-appendix.tex", "manuscript/notes/notes_stratonovich_ham_second_moment.tex", "manuscript/notes/preface.tex", "manuscript/notes/theory_outlook.tex", "prior/coverage-f3be834.yaml", "prior/coverage-scope-tex-f3be834.yaml", "prior/statement-ledger-f3be834.md"]
+
+Independent correspondence review: wave L8 of the Lean companion (ledger rows, coverage classes and scope sentences) vs the manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  35182337601a). Review ONLY the items named in the checks below; the section
+  "L8Completed (whole result)" (lines 2727-2813) is context. Rows of earlier waves were
+  reviewed before.
+- the Lean modules (ground truth for what each declaration states), every
+  library module under lean/StratonovichHAMSecondMoment/. These sections'
+  own modules:
+     lean/StratonovichHAMSecondMoment/L8Completed.lean
+  Library modules they import directly (context; read the declarations
+  the rows name; their own imports are in the packet too):
+     lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean
+     lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean
+     lean/StratonovichHAMSecondMoment/SpatialBracket.lean
+     lean/StratonovichHAMSecondMoment/SymplecticFree.lean
+     lean/StratonovichHAMSecondMoment/TerminalWick.lean
+     lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean
+- refutation files of these modules (negative controls):
+     (none for these modules)
+- audit files (elaborated types printed by #check / #print axioms):
+     lean/Audit/l8-completed/Audit.lean
+- the step modules (finite, algebraic and scalar steps) under
+  lean/StratonovichHAMAudit/, for example
+  lean/StratonovichHAMAudit/DimensionalMatrix.lean and
+  lean/StratonovichHAMAudit/RawValueCeiling.lean; read the declarations
+  that rows and sections name.
+- lean/claims.yaml, lean/coverage.yaml, docs/coverage-scope-tex.yaml,
+  lean/provenance/manuscript-anchor.json.
+- prior/statement-ledger-f3be834.md, prior/coverage-f3be834.yaml,
+  prior/coverage-scope-tex-f3be834.yaml : the same files at the wave-L7 gate
+  commit (before the wave-L8 merge).
+- diffs/statement-ledger.diff, diffs/coverage.diff,
+  diffs/coverage-scope-tex.diff : git diffs from that commit to this one.
+- diffs/statement-ledger-earlier-sections.diff : the hunks of the ledger
+  diff that fall in the Scope, "Index by label" and "Not in Lean" sections
+  and in the earlier (pre-wave-L8) sections named in the CHANGED-PASSAGE
+  checks; the hunks inside the new wave-L8 sections are reviewed by other
+  reviewers and are out of scope here, except "L8Completed (whole result)".
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  a2844206199b. Labels are \label{...}.
+- excerpts/tex-excerpts.txt : the statements and proofs of the labels these
+  sections cite, with the line numbers of the files under manuscript/
+  (a convenience copy; the files under manuscript/ are authoritative).
+- PROVENANCE.json : byte binding of every packet file.
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that every existing coverage row that the wave-L8 docs merge changed (class, conclusion, scope sentence, note, inputs, claims) are formalized as stated in their
+rows: every listed conclusion proved, with hypotheses that match the
+manuscript, apart from side conditions the TeX leaves implicit and inputs
+explicitly declared as supplied. Test that claim hard: any Lean hypothesis
+that the manuscript does not have, any manuscript hypothesis the Lean
+drops, any weaker Lean conclusion, any changed constant, range, quantifier
+order or strictness, any modelling choice that changes the mathematical
+object, any supplied hypothesis stronger than the manuscript result it
+stands for, any row labelled as a step of a TeX proof that is really an
+auxiliary of a different Lean proof route, any coverage class that
+overstates ("same-assumptions" when a hypothesis is added; "full" when a
+conclusion is narrower), and any declaration missing from or duplicated in
+the Index, is a finding, unless the ledger states it AND it is genuinely
+harmless. Decide that yourself from the TeX; do not accept the ledger's word.
+Each CHANGED-ROW check is about the row as changed: compare the prior and new row, then check the new text against the Lean declarations it cites and the manuscript statement. Earlier-wave content that did not change was reviewed before and is context only.
+
+CHECKS (exactly these 11, in this order, with these claim strings):
+  1. claim "CHANGED-ROW C:intrinsic-spatial-bracket": the coverage.yaml row C:intrinsic-spatial-bracket as changed by the wave-L8 merge (compare prior/coverage-f3be834.yaml and diffs/coverage.diff) and its docs/coverage-scope-tex.yaml entry: the new class, conclusion, conclusion_scope, note, inputs and claims are accurate for the Lean declarations they cite and the manuscript statement of C:intrinsic-spatial-bracket; nothing that was true before was made false
+  2. claim "CHANGED-ROW L:damped-homogeneous-norms": the coverage.yaml row L:damped-homogeneous-norms as changed by the wave-L8 merge (compare prior/coverage-f3be834.yaml and diffs/coverage.diff) and its docs/coverage-scope-tex.yaml entry: the new class, conclusion, conclusion_scope, note, inputs and claims are accurate for the Lean declarations they cite and the manuscript statement of L:damped-homogeneous-norms; nothing that was true before was made false
+  3. claim "CHANGED-ROW L:spatial-fourier-bound": the coverage.yaml row L:spatial-fourier-bound as changed by the wave-L8 merge (compare prior/coverage-f3be834.yaml and diffs/coverage.diff) and its docs/coverage-scope-tex.yaml entry: the new class, conclusion, conclusion_scope, note, inputs and claims are accurate for the Lean declarations they cite and the manuscript statement of L:spatial-fourier-bound; nothing that was true before was made false
+  4. claim "CHANGED-ROW L:spatial-static-controls": the coverage.yaml row L:spatial-static-controls as changed by the wave-L8 merge (compare prior/coverage-f3be834.yaml and diffs/coverage.diff) and its docs/coverage-scope-tex.yaml entry: the new class, conclusion, conclusion_scope, note, inputs and claims are accurate for the Lean declarations they cite and the manuscript statement of L:spatial-static-controls; nothing that was true before was made false
+  5. claim "CHANGED-ROW L:uniform-series-tail": the coverage.yaml row L:uniform-series-tail as changed by the wave-L8 merge (compare prior/coverage-f3be834.yaml and diffs/coverage.diff) and its docs/coverage-scope-tex.yaml entry: the new class, conclusion, conclusion_scope, note, inputs and claims are accurate for the Lean declarations they cite and the manuscript statement of L:uniform-series-tail; nothing that was true before was made false
+  6. claim "CHANGED-ROW P:occupation-physical-class": the coverage.yaml row P:occupation-physical-class as changed by the wave-L8 merge (compare prior/coverage-f3be834.yaml and diffs/coverage.diff) and its docs/coverage-scope-tex.yaml entry: the new class, conclusion, conclusion_scope, note, inputs and claims are accurate for the Lean declarations they cite and the manuscript statement of P:occupation-physical-class; nothing that was true before was made false
+  7. claim "CHANGED-ROW P:spatial-energy-map": the coverage.yaml row P:spatial-energy-map as changed by the wave-L8 merge (compare prior/coverage-f3be834.yaml and diffs/coverage.diff) and its docs/coverage-scope-tex.yaml entry: the new class, conclusion, conclusion_scope, note, inputs and claims are accurate for the Lean declarations they cite and the manuscript statement of P:spatial-energy-map; nothing that was true before was made false
+  8. claim "CHANGED-ROW P:spatial-smooth-ratio": the coverage.yaml row P:spatial-smooth-ratio as changed by the wave-L8 merge (compare prior/coverage-f3be834.yaml and diffs/coverage.diff) and its docs/coverage-scope-tex.yaml entry: the new class, conclusion, conclusion_scope, note, inputs and claims are accurate for the Lean declarations they cite and the manuscript statement of P:spatial-smooth-ratio; nothing that was true before was made false
+  9. claim "CHANGED-ROW P:static-phase-all-orders": the coverage.yaml row P:static-phase-all-orders as changed by the wave-L8 merge (compare prior/coverage-f3be834.yaml and diffs/coverage.diff) and its docs/coverage-scope-tex.yaml entry: the new class, conclusion, conclusion_scope, note, inputs and claims are accurate for the Lean declarations they cite and the manuscript statement of P:static-phase-all-orders; nothing that was true before was made false
+  10. claim "CHANGED-ROW P:variational-positive-scores": the coverage.yaml row P:variational-positive-scores as changed by the wave-L8 merge (compare prior/coverage-f3be834.yaml and diffs/coverage.diff) and its docs/coverage-scope-tex.yaml entry: the new class, conclusion, conclusion_scope, note, inputs and claims are accurate for the Lean declarations they cite and the manuscript statement of P:variational-positive-scores; nothing that was true before was made false
+  11. claim "CHANGED-ROW T:intrinsic-occupation-ceiling": the coverage.yaml row T:intrinsic-occupation-ceiling as changed by the wave-L8 merge (compare prior/coverage-f3be834.yaml and diffs/coverage.diff) and its docs/coverage-scope-tex.yaml entry: the new class, conclusion, conclusion_scope, note, inputs and claims are accurate for the Lean declarations they cite and the manuscript statement of T:intrinsic-occupation-ceiling; nothing that was true before was made false
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: diffs/coverage.diff
+   and diffs/coverage-scope-tex.diff; for each of the 11 changed rows, the
+   row in lean/coverage.yaml, the same row in prior/coverage-f3be834.yaml,
+   and its docs/coverage-scope-tex.yaml entry; the Lean declarations whose
+   claim ids the merge added to or removed from these rows (see
+   diffs/coverage.diff and lean/claims.yaml) and every declaration or
+   result the changed class, conclusion_scope, note or inputs text refers
+   to; lean/StratonovichHAMSecondMoment/L8Completed.lean; and, in the files
+   under manuscript/ (excerpts/tex-excerpts.txt has them numbered), the
+   statement of each of the 11 labels. Claims and text that did not change
+   were reviewed earlier and are context only.
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 11 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side wherever a hypothesis is at issue.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "limitations": anything you could not check.
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES;
+  FAIL if any fatal or major finding or required repair; INCONCLUSIVE if
+  the reading requirement could not be met.
+- "confidence": high only if requirement A is complete.
+

@@ -1,0 +1,522 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-1480 — complete.",
+    "candidate/statement-ledger.md:1-708,1875-1968,2727-2814,5838-5954,6277-6354,7329-7506 — complete required sections and relevant cross-reference contexts; partial file, unrelated sections excluded.",
+    "lean/StratonovichHAMSecondMoment/FiniteWick.lean:1-721 — complete.",
+    "lean/StratonovichHAMSecondMoment/TerminalWick.lean:1-680 — complete.",
+    "lean/StratonovichHAMSecondMoment/GaussianIBP.lean:1-327 — complete.",
+    "lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean:1-320 — complete.",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean:1-125,238-270 — complete required declarations and their context; partial file, other declarations excluded.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:20-34 — complete required Rd declaration; partial file.",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean:286-362 — complete relevant composition declaration and context; partial file.",
+    "lean/Audit/finite-wick/Audit.lean:1-126 — complete.",
+    "lean/Audit/terminal-wick/Audit.lean:1-116 — complete.",
+    "lean/refutations/finite-wick/AbsBound.lean:1-43 — complete.",
+    "lean/refutations/finite-wick/FourthMoment.lean:1-41 — complete.",
+    "lean/refutations/finite-wick/NonnegDropped.lean:1-43 — complete.",
+    "lean/refutations/finite-wick/PairingCount.lean:1-39 — complete.",
+    "lean/refutations/terminal-wick/ChainMassFactorial.lean:1-37 — complete.",
+    "lean/refutations/terminal-wick/ChainMassSimplex.lean:1-37 — complete.",
+    "lean/refutations/terminal-wick/MajorantFactor.lean:1-41 — complete.",
+    "lean/claims.yaml:10520-10630,13513-14112,14830-14849 — complete required module entries and referenced coverage-claim entries; partial file.",
+    "lean/coverage.yaml:630-715 — complete both required rows; partial file.",
+    "docs/coverage-scope-tex.yaml:1-69 — complete.",
+    "lean/provenance/manuscript-anchor.json:1-1825 — complete.",
+    "excerpts/tex-excerpts.txt:1-257 — complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:290-423,1800-1828,3561-3699,3700-3748,3914-3924,3963-3973,7149-7161 — complete required cited ranges and additional assumption/application contexts; partial file.",
+    "manuscript/notes/index/setup.tex:1-32 — complete.",
+    "manuscript/notes/preface.tex:78-89,134-158 — partial, contextual search follow-up only.",
+    "manuscript/notes/integrated_covariance_foundation.tex:145-158 — partial, contextual search follow-up only.",
+    "All files under manuscript/ were searched for the seven relevant exact label definitions; matches occur only in manuscript/notes/notes_stratonovich_ham_second_moment.tex:383,3586,3600,3611,3619,3624,3703. This search is not represented as a complete reading of those other files."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.pairings: E:terminal-wick-formula",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:65-73 defines maps satisfying 'p x ∈ S ∧ p x ≠ x ∧ p (p x) = x', identity outside S. TeX:3616-3622,3670-3673 uses unordered pair partitions of the labelled factors. The normalization counts each partition once. Ledger:1923 and claims.yaml:13518 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.pairWeight: E:terminal-pairing-integral",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:75-79 defines '∏ x ∈ S with x < p x, c x (p x)'. TeX:3634-3638 has one covariance factor per unordered pair and coefficient one. Selecting the smaller endpoint is harmless for symmetric covariance. Ledger:1924 and claims.yaml:13525 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.wickSum: E:terminal-wick-formula",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:81-83 defines '∑ p ∈ pairings S, pairWeight c S p'. TeX:3619-3622 sums over pair partitions, without extra coefficients. Ledger:1925 and claims.yaml:13532 faithfully describe this combinatorial component, not the integrated identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.mem_pairings: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:85-88 gives the exact membership equivalence. TeX:3670-3673 speaks of pair partitions but contains no function-encoding membership lemma. Ledger:1926 and claims.yaml:13539 match; no direct label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.pairings_empty: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:90-96 proves 'pairings ∅ = {id}', without additional hypotheses. TeX:3639 supplies the empty-product convention, not this encoding identity. Ledger:1927 and claims.yaml:13546 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.wickSum_empty: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:98-100 proves 'wickSum c ∅ = 1' for every c. TeX:3639 says empty chains have the usual empty-product meaning. Ledger:1928 and claims.yaml:13553 correctly give the encoding-level identity without claiming a direct labelled theorem."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.unpair_a: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:103,108-111 assumes 'a ≠ b' and concludes 'unpair a b p a = a'. TeX:3664-3673 uses the generating-function route and has no update operation. Ledger:1929 and claims.yaml:13560 correctly identify a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.unpair_b: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:112-114 proves 'unpair a b p b = b' without a distinctness hypothesis. TeX:3664-3673 contains no corresponding update lemma. Ledger:1930 and claims.yaml:13567 preserve the quantifiers."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.unpair_other: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:115-118 assumes 'x ≠ a' and 'x ≠ b' and preserves p x. TeX:3664-3673 has no function-update counterpart. Ledger:1931 and claims.yaml:13574 accurately classify and state the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.pairUp_a: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:106,119-122 assumes 'a ≠ b' and concludes 'pairUp a b q a = b'. TeX:3664-3673 has no such operation. Ledger:1932 and claims.yaml:13581 agree with the type."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.pairUp_b: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:123-125 proves 'pairUp a b q b = a' for arbitrary a,b,q. TeX:3664-3673 supplies no corresponding auxiliary. Ledger:1933 and claims.yaml:13588 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.pairUp_other: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:126-129 assumes 'x ≠ a' and 'x ≠ b' and concludes equality with q x. TeX:3664-3673 has no function-update counterpart. Ledger:1934 and claims.yaml:13595 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.fiber_sum: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:135-138 requires 'a ∈ S', '∀ x ∈ S, a ≤ x', and 'b ∈ S.erase a'; it factors the partner-b fiber as c a b times the smaller Wick sum. TeX:3664-3673 instead differentiates the generating function. Ledger:1935 and claims.yaml:13602 honestly mark this route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.wickSum_eq_sum_erase: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:241-243 assumes a is a least member of S and expands along its partner. TeX:3664-3673 does not state this recursion. Ledger:1936 and claims.yaml:13609 state the exact identity without mislabelling it a TeX proof step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.card_erase_erase: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:255-257 assumes 'a ∈ S' and 'b ∈ S.erase a' and proves cardinality S.card - 2. TeX:3664-3673 contains no such finite-set lemma. Ledger:1937 and claims.yaml:13616 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.wickSum_odd: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:260-261 assumes 'S.card = 2 * k + 1' and proves 'wickSum c S = 0' for arbitrary c. TeX:3638,3670 states odd total degree gives zero. Ledger:1938 explicitly calls this the pairing form of that step; claims.yaml:13623 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.wickSum_const_one: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:278-280 identifies the all-one Wick sum with the real coercion of the pairing count. TeX:3670-3673 has no standalone all-one calibration. Ledger:1939 and claims.yaml:13630 faithfully state an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.wickSum_abs_le: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:285-286 assumes '∀ x y, |c x y| ≤ V' and 'S.card = 2 * k'; the bound is '(2*k-1)!! * V^k'. TeX:3651-3656 obtains the corresponding Gaussian product bound by Hölder, not this arbitrary-weight theorem. Ledger:1940 and claims.yaml:13637 correctly give no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.card_pairings_even: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:319-320 assumes cardinality 2k and proves exactly '(2*k-1).doubleFactorial' pairings. TeX:3671-3673 uses unordered partitions and cancellation of 2^k k!, consistently giving (2k-1)!!. Ledger:1941 and claims.yaml:13644 correctly record the count and k=0 convention."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.card_pairings_odd: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:349-353 assumes cardinality 2k+1 and concludes 'pairings S = ∅'. TeX:3670 states odd-degree vanishing, not this encoding-level set identity. Ledger:1942 and claims.yaml:13651 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.wickSum_nonneg: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:356-358 assumes '∀ x y, 0 ≤ c x y'. TeX:3693-3694 assumes 'K ≥ 0' and makes each covariance product nonnegative. Ledger:1943 correctly identifies the pointwise step; claims.yaml:13658 matches."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.wickSum_mono: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:361-364 assumes '0 ≤ c₁' and 'c₁ ≤ c₂' entrywise. TeX:3641,3694-3695 uses '0 ≤ K₁ ≤ K₂'. Ledger:1944 and claims.yaml:13665 faithfully state the pointwise comparison step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.one_le_matBound: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:372,376-379 defines matBound as '1 + ∑ c, ∑ k, |A c k|' and proves it is at least one for every real square A. TeX:3664-3673 has no such growth constant. Ledger:1945 and claims.yaml:13672 correctly classify this auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.mulVec_apply_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:383-384 states '(A *ᵥ g) c = ∑ k, A c k * g k', with no analytic hypotheses. TeX:3664-3673 has no matrix-vector expansion in its proof route. Ledger:1946 and claims.yaml:13679 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.abs_mulVec_le: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:388-389 bounds '|(A *ᵥ g) c|' by 'matBound A * (1 + ‖g‖)', using the function-space sup norm. TeX:3664-3673 has no corresponding growth estimate. Ledger:1947 and claims.yaml:13686 preserve the norm convention."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.abs_prod_mulVec_le: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:409-413 gives the monomial bound with exponents T.card and no additional hypotheses. TeX:3664-3673 has no polynomial-growth auxiliary of this form. Ledger:1948 and claims.yaml:13693 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.continuous_mulVec_apply: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:417-420 proves continuity of 'g ↦ (A *ᵥ g) c' for arbitrary real A,c. TeX:3664-3673 does not state this route auxiliary. Ledger:1949 and claims.yaml:13700 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.continuous_prod_mulVec: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:424-426 proves continuity of each finite monomial in A g. TeX:3664-3673 has no corresponding continuity lemma. Ledger:1950 and claims.yaml:13707 correctly state the auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.hasDerivAt_mulVec_update: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:430-436 proves the slice derivative is 'A c e' at every real t. TeX:3664-3673 differentiates a generating function, not coordinate slices of A g. Ledger:1951 and claims.yaml:13714 correctly give no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.hasDerivAt_prod_update: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:440-449 defines monoDeriv and proves the derivative at 'Function.update x e t'. TeX:3664-3673 has no corresponding monomial slice calculation. Ledger:1952 and claims.yaml:13721 preserve the evaluation point."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.abs_monoDeriv_le: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:458-461 gives exactly 'T.card * matBound A * matBound A ^ T.card' times '(1 + ‖y‖)^T.card'. TeX:3664-3673 contains no such auxiliary constant. Ledger:1953 and claims.yaml:13728 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.integrable_prod_mulVec: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:493-496 proves Integrable of every finite monomial under stdPi, for arbitrary real A,j,T. TeX:3664-3673 does not state this change-of-model integrability lemma. Ledger:1954 and claims.yaml:13735 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.continuous_monoDeriv: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:500-503 proves 'Continuous (monoDeriv A j T e)' without extra assumptions. TeX:3664-3673 has no monoDeriv object. Ledger:1955 and claims.yaml:13742 correctly classify the route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.wick_stdPi: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:513-515 assumes 'S.card = n' and gives the monomial integral as the Wick sum for A Aᵀ, for every n. TeX:3664-3673 gives the general Gaussian identity by a different route, not this stdPi representation theorem. Ledger:1956 and claims.yaml:13749 agree; monomial integrability is separately proved at 493-496."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.sqrt_mul_transpose: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:567-573 requires 'K.PosSemidef' and proves 'CFC.sqrt K * (CFC.sqrt K)ᵀ = K'. TeX:3664-3673 uses covariance directly, without this square-root bridge. Ledger:1957 and claims.yaml:13756 correctly record an auxiliary identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.integral_multivariateGaussian_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:578-583 requires only 'Continuous F', with arbitrary K, and equates the two totalized integrals. TeX:3664-3673 has no arbitrary-continuous-F bridge. Ledger:1958 and claims.yaml:13763 accurately state the type. The separate paragraph's claim that all such integrals are genuine is false; see W2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.integrable_multivariateGaussian_iff: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:586-592 requires 'Continuous F' and proves an integrability equivalence, not integrability itself. TeX:3664-3673 has no such bridge. Ledger:1959 and claims.yaml:13770 preserve that distinction."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.wick_multivariateGaussian: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:599-602 assumes 'K.PosSemidef' and concludes both monomial integrability and the Wick formula. TeX:3601-3602,3662-3673 assumes a centered real Gaussian vector with covariance K; positive semidefiniteness is inherent. Ledger:1960 and claims.yaml:13777 faithfully map the Gaussian step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.wick_hasLaw: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:618-622 assumes 'K.PosSemidef' and 'HasLaw Xv (multivariateGaussian 0 K) P'. TeX:3601-3602,3662-3673 assumes the same finite-dimensional centered Gaussian law. HasLaw forces probability mass one, so no missing separate probability assumption changes the object. Ledger:1961 and claims.yaml:13784 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.CenteredGaussianField: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:642-646 requires positive semidefiniteness and the centered multivariate Gaussian law for every finite family, including repetitions. TeX:3601-3602 says 'centered real Gaussian field ... with covariance K'. These are matching finite-dimensional requirements. Ledger:1962 and claims.yaml:13791 are accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.CenteredGaussianField.wick: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:652-655 assumes CenteredGaussianField and arbitrary finite point/index families, and proves integrability plus the pairing sum. TeX:3662-3673 applies Wick to the Gaussian variables at labelled vertices. Ledger:1963 and claims.yaml:13798 faithfully describe that pointwise identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.CenteredGaussianField.wick_univ: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:660-664 specializes to all labels of Fin n, preserving integrability. TeX:3662-3673 differentiates once for each labelled factor. Ledger:1964 and claims.yaml:13805 match; no independence or distinct-point assumption is added."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.CenteredGaussianField.symm: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:667-670 assumes CenteredGaussianField and proves 'K y x = K x y'. TeX:3601-3602 makes K a covariance but states no separate symmetry lemma. Ledger:1965 and claims.yaml:13812 correctly use no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.CenteredGaussianField.abs_le: no direct label",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:674-675 assumes '∀ x, K x x ≤ V' and concludes '|K x y| ≤ V'. TeX:3602-3603 assumes the finite supremum of variances; the bound is its covariance consequence. Ledger:1966 and claims.yaml:13819 correctly state this auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.CenteredGaussianField.wick_append: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:690-694 assumes only the centered Gaussian field law and two finite tuples, and gives integrability plus the Wick sum for 'Fin.append p q'. TeX:3616-3618,3662-3673 concatenates the two chains without joining their Green measures. Ledger:1967 and claims.yaml:13826 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FiniteWick.CenteredGaussianField.sq_moment_le: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "FiniteWick.lean:707-710 assumes the Gaussian field and diagonal variance bound, proving square integrability and '(2n-1)!! * V^n'. TeX:3652-3656 gives the square-root version under the same bound. Ledger:1968 explicitly records the different Wick/count proof route; claims.yaml:13833 matches."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.chainWeight: E:terminal-chain-measure",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:110-114 defines the ordered-time product of Green total masses, not a measure on space-time tuples. TeX:3586-3598 defines the actual backward spatial pushforward measure. Ledger:5916 and claims.yaml:13842 explicitly restrict the correspondence to its mass integrand and say the identifying mass equality is not proved."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.chainWeight_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:124-125 assumes 'd = 1 ∨ d = 2 ∨ d = 3' and identifies the weight with the ofReal time-gap recursion. TeX:3648 says 'The mass of G_h is h', but has no equality between these two Lean encodings. Ledger:5917 and claims.yaml:13849 correctly identify an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.measurable_chainWeightReal: no direct label",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:138-139 proves joint measurability of '(T,s) ↦ chainWeightReal n T s' for every n. TeX:3648-3651 does not state this encoding-level measurability result. Ledger:5918 and claims.yaml:13856 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.chainMassReal_succ: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:158-159 states 'M_(n+1)(T) = ∫⁻ t in Ioo 0 T, ofReal(T-t) * M_n(t)' for every real T. TeX:3648-3650 states the same last-vertex recursion at positive horizons. Ledger:5919 and claims.yaml:13863 accurately explain the lower-integral encoding."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.chainMassReal_eq: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:192-193 assumes '0 ≤ T' and proves 'ofReal (T^(2*n)/(2*n)!)'. TeX:3650-3651 gives exactly T^(2n)/(2n)!. Ledger:5920 and claims.yaml:13870 preserve the factorial and exponent."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.aestronglyMeasurable_prod: no direct label",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:228-232 assumes CenteredGaussianField and a fixed tuple z and proves measurability in omega. TeX:3657-3659 concerns strong measurability in the chain variables, a different assertion. Ledger:5921 and claims.yaml:13877 correctly avoid that direct mapping."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.memLp_prod: no direct label",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:235-238 assumes the Gaussian field law and concludes 'MemLp ... 2 P' at each fixed tuple. TeX:3652-3659 bounds these products but has no separate MemLp encoding statement. Ledger:5922 and claims.yaml:13884 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.prodL2: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:242-243 defines the Lp class of the ordinary scalar product using proved MemLp. TeX:3607 integrates '∏ W(s_j,y_j)' in L². Ledger:5923 and claims.yaml:13891 identify the same integrand, not a Wick-renormalized product."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.coeFn_prodL2: no direct label",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:246-248 proves the Lp representative equals the scalar product P-almost everywhere. TeX:3607 has no quotient-representative lemma. Ledger:5924 and claims.yaml:13898 accurately state this bridge."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.inner_prodL2: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:252-255 assumes CenteredGaussianField and equates the L² inner product with the Wick sum for appended tuples. TeX:3662-3673 computes precisely the expectation of these labelled Gaussian products. Ledger:5925 and claims.yaml:13905 correctly state the pointwise step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.norm_prodL2_le: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:263-265 assumes '0 ≤ V' and '∀ x, K x x ≤ V'; its bound is 'sqrt((2n-1)!!) * sqrt(V)^n'. TeX:3602-3603,3652-3656 uses the nonnegative variance supremum and V^(n/2). Ledger:5926 and claims.yaml:13912 match, with the changed proof route disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.chainIntegral: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:285-286 defines '∫ z, prodL2 hW z ∂ν n'. TeX:3605-3608 uses the specific chain measure. Ledger:5927 and claims.yaml:13919 explicitly state the replacement by ν and the nonintegrable junk-value convention; the original measures are not claimed constructed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.integrable_prodL2: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:278,292-296 assumes finite ν, a variance bound, and 'hmeas : ∀ n, AEStronglyMeasurable ... (ν n)'. TeX:3657-3660 derives strong measurability on the cells and uses finite chain mass. Ledger:5928 and claims.yaml:13926 correctly make that intermediate assertion supplied. For the actual chain measures, cut-time sets are null, so the supplied a.e. condition is no stronger."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.norm_chainIntegral_le: E:terminal-term-majorant",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:301-305 assumes finite ν and a nonnegative variance bound and concludes the product majorant times '(ν n).real univ', without hmeas. TeX:3611-3615 has the same bound with mass T^(2n)/(2n)!. Ledger:5929 and claims.yaml:13933 explicitly record the general mass form and that the inequality also covers a junk integral."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.integrable_inner_prod: no direct label",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:308-312 assumes finite ν, the variance bounds and supplied hmeas, proving integrability of the inner-product kernel. TeX:3662 invokes Fubini but does not state this Lp-valued route auxiliary. Ledger:5930 and claims.yaml:13940 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.inner_chainIntegral: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:323-328 assumes finite ν, the variance bound and supplied hmeas and equates the inner product of integrals to the product-measure integral of the Wick sum. TeX:3662-3675 passes expectation through the two chain measures. Ledger:5931 and claims.yaml:13947 honestly describe the general-measure Fubini step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.measurable_append: no direct label",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:345-350 requires only MeasurableSpace X and proves measurability of Fin.append. TeX:3616-3618 defines concatenation but has no measurable-map auxiliary. Ledger:5932 and claims.yaml:13954 accurately classify it."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.integrable_pairWeight: no direct label",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:354-358 assumes 'Measurable ... K' and '|K x y| ≤ V' and finite ν, for arbitrary D, not necessarily a pairing. TeX:3624-3637 has no such general helper statement. Ledger:5933 and claims.yaml:13961 faithfully state these hypotheses; no direct label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.mixed_moment_eq_inner: no direct label",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:377-382 omits finite-measure assumptions and identifies the integral of the two Lp representatives with their inner product. TeX:3620 uses E[Y_m Y_n] but has no representative-level bridge. Ledger:5934 and claims.yaml:13968 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.mixed_moment_eq_sum_pairings: E:terminal-wick-formula",
+      "verdict": "FAIL",
+      "reason": "Fidelity passes: TerminalWick.lean:389-396, ledger:5935 and claims.yaml:13975 all include supplied hmeas, finite ν and 'hK : Measurable ... K'. Mapping fails as an exact-hypothesis specialization: TeX:3601-3605 requires bounded variance and mean-square continuity only on open cells, not globally Borel-measurable covariance. Cut-time values need not be Borel measurable. The section incorrectly treats this additional hypothesis as merely implicit; see W1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.mixed_moment_odd: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:403-407 assumes finite ν, the variance bound, supplied hmeas and 'Odd (m+n)', and concludes the mixed moment is zero. TeX:3638 states exactly odd-total-order vanishing. Ledger:5936 and claims.yaml:13982 preserve the condition; no covariance measurability or nonnegativity is added."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.integrable_wickSum_append: no direct label",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:414-421 assumes finite ν, the variance bound and supplied hmeas, proving integrability through equality with an inner-product kernel. TeX:3662-3675 has no separate assertion of this Lp-route helper. Ledger:5937 and claims.yaml:13989 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.mixed_moment_nonneg: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:424-430 adds '∀ x y, 0 ≤ K x y' to the finite-measure, variance and supplied-hmeas hypotheses. TeX:3639-3640,3693-3694 assumes K ≥ 0 and obtains nonnegative covariance-product integrals. Ledger:5938 and claims.yaml:13996 correctly give the mixed-moment consequence."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.pairing_integral_nonneg: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:432-438 assumes only '∀ x y, 0 ≤ K x y' and proves a nonnegative totalized integral for any ν,D. TeX:3639-3640 says every genuine pairing integral is nonnegative when K ≥ 0. Ledger:5939 and claims.yaml:14003 explicitly state the broader helper; the wrapper separately proves integrability."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.sqrt_doubleFactorial_div_le: no direct label",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:442-443 proves 'sqrt((2*n-1)!!)/(2*n)! ≤ 1/n!' for every natural n. TeX:3695-3697 instead uses the ratio test. Ledger:5940 and claims.yaml:14010 correctly classify this different-route inequality."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.summable_majorant: no direct label",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:466-471 assumes '0 ≤ c' and proves summability of c^n sqrt((2n-1)!!)/(2n)!. TeX:3695-3697 uses the same terminal majorant but a ratio-test argument. Ledger:5941 and claims.yaml:14017 honestly describe an auxiliary of the alternative proof."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.summable_norm_smul_chainIntegral: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:476-479 assumes finite ν, the nonnegative variance bound and '(ν n).real univ = T^(2*n)/(2*n)!', concluding norm summability for 'r : ℝ'. TeX:3642-3644 states real or complex r. Ledger:5942 and claims.yaml:14024 accurately restrict to real r; lack of hmeas and the junk-value interpretation are expressly disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.terminalWickInput_of_nonneg: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:496-503 assumes finite ν, the variance bound, supplied hmeas, exact masses and K ≥ 0. It constructs exactly 'abs_summable' and 'mixed_moment_nonneg' of UniformSeriesTail.lean:236-238. TeX:3730-3731 cites exactly absolute L² convergence and nonnegative mixed moments. Ledger:5943 and claims.yaml:14031 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.mixed_moment_mono: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:516-523 assumes two Gaussian fields, variance bounds, common finite ν, supplied hmeas for both and '0 ≤ K₁ ≤ K₂'. TeX:3641-3642,3694-3695 uses the same covariance comparison. Ledger:5944 and claims.yaml:14038 accurately state the per-mixed-moment result; the section explicitly discloses that finite-partial-sum second moments are not stated."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.Pt: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:535 defines '↥(Icc 0 T) × Rd d'; HomogHypothesis.lean:31 defines Rd as EuclideanSpace ℝ (Fin d). TeX:3601 uses '[0,T] × R^d'. Ledger:5945 and claims.yaml:14045 faithfully identify the point set."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.chainMass: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:539 defines the lower integral of chainWeight. TeX:3648-3651 names the total mass of the actual chain measure. Ledger:5946 expressly says the identifying measure-mass theorem is not formalized; claims.yaml:14052 states only the lower-integral definition. The restricted correspondence is honest."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.chainMass_eq: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:543-547 assumes 'd ∈ {1,2,3}' and '0 ≤ T', proving 'chainMass = ofReal(T^(2*n)/(2*n)!)'. TeX:3648-3651 gives exactly that mass formula from G_h(total)=h. Ledger:5947 and claims.yaml:14059 preserve the constants and honestly leave the actual measure unconstructed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.MeanSquareCellContinuous: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:555-557 requires a finite cut set Z and 'K q q - 2*K p q + K p p → 0' at every p off Z. TeX:3603-3605 requires joint mean-square continuity on each open time cell times R^d. For a real covariance these are equivalent after including endpoints among cut times. Ledger:5948 and claims.yaml:14066 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.pairingIntegral: E:terminal-pairing-integral",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:562-565 integrates pairWeight for the concatenated tuples against 'ν m × ν n'. TeX:3624-3637 uses two separate backward terminal chains and the same covariance product. Ledger:5949 and claims.yaml:14073 explicitly state the replacement measures and junk convention, without claiming construction of the TeX domains."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.chainIntegral_zero: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:569-577 assumes 'ν 0 univ = 1' and concludes Y_0=1 P-almost everywhere. TeX:3597-3598 puts unit mass on the empty tuple and TeX:3605 defines Y_0=1. Ledger:5950 and claims.yaml:14080 preserve the normalization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.sqrt_pow_eq_rpow: no direct label",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:580-584 assumes '0 ≤ V' and proves 'sqrt V ^ n = V ^ ((n:ℝ)/2)'. TeX:3613,3655 uses V^(n/2) but has no separate conversion lemma. Ledger:5951 and claims.yaml:14087 correctly state a real-power auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.supVar_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:587-592 assumes CenteredGaussianField, '0 ≤ T' and 'BddAbove' of diagonal values and proves their supremum nonnegative. TeX:3602-3603 defines V as a finite variance supremum, without a separate supremum lemma. Ledger:5952 and claims.yaml:14094 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.terminal_wick_paper: L:terminal-wick",
+      "verdict": "FAIL",
+      "reason": "TerminalWick.lean:610-634 has the nine conjuncts, correct factorial majorant, odd case and real-r quantifier described by ledger:5953 and claims.yaml:14101. However its hypothesis 'hK : Measurable ... K' at 618 is stronger than TeX:3601-3605's cell-wise mean-square continuity. Ledger:5953 calls this an 'Exact-hypothesis wrapper' and calls hK implicit, which is false without an additional convention or modification argument. See W1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TerminalWick.terminal_wick_mono_paper: L:terminal-wick",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:661-677 assumes the two Gaussian fields, bounded variances, cell continuity, common finite measures, supplied hmeas and '0 ≤ K₁ ≤ K₂', concluding comparison for every m,n. TeX:3641-3642 states finite-partial-order second-moment comparison. Ledger:5954 states the narrower per-mixed-moment conclusion, with that narrowing explicitly explained at 5893-5895; claims.yaml:14108 matches the operative hypotheses. No hK is required here."
+    },
+    {
+      "claim": "PARA-FiniteWick",
+      "verdict": "FAIL",
+      "reason": "The pairing representation, Gaussian-law abstraction, constants and Stein-versus-generating-function route are accurately described at ledger:1877-1913. But ledger:1902-1903 says every integral identity has integrability 'as a conjunct', and 1914-1915 says every Bochner integral has proved integrability. FiniteWick.lean:578-589 only assumes Continuous F and states a totalized integral equality plus a separate integrability equivalence. This is a false universal guarantee; see W2."
+    },
+    {
+      "claim": "PARA-TerminalWick",
+      "verdict": "FAIL",
+      "reason": "Ledger:5840-5912 correctly records the unconstructed measures, supplied hmeas, factorial masses, real-r restriction, per-mixed-moment comparison, unused hypotheses and omitted identification paragraphs. Its classification of global covariance measurability as implicit at 5875-5879,5953 is not justified by TeX:3601-3605 and fails at unrestricted cut-time values. See W1."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "The complete Index was read. Its rows at ledger:667-680 contain each of the 46 FiniteWick and 39 TerminalWick declarations exactly once under the section-row label, with the route auxiliaries in no-direct-label rows. The earlier occurrence of terminalWickInput_of_nonneg at 583 is explanatory text in the label column, not a duplicate declaration listing. Full-tree searches found each of the seven cited label definitions exactly once, at TeX:383,3586,3600,3611,3619,3624,3703."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "FAIL",
+      "reason": "coverage.yaml:635-671 correctly uses inputs-supplied/weaker and discloses real r, arbitrary mass-normalized measures and mixed-moment-only comparison. All listed claim IDs exist. Nevertheless the two-item inputs list omits the genuinely additional global covariance-measurability assumption used by the formula wrapper; merely calling it explicit in the note does not explain the stronger scope. See W1. The uniform-tail row at 682-704 correctly has full conditional conclusions: TerminalWickInput is exactly discharged, and the composition at L8Completed.lean:312-357 does not require hK."
+    },
+    {
+      "claim": "SCOPE-RULES",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:641 and docs/coverage-scope-tex.yaml:25-27 have matching ASCII content and mathematically equivalent TeX, without Lean names, filenames or line locators. Neither describes lambda. The full uniform-series-tail row has no conclusion_scope and no corresponding restriction entry; thus there is no inconsistent ASCII/TeX pair for it. The substantive hypothesis omission is separately reported under COVERAGE-ROWS."
+    },
+    {
+      "claim": "REFUTATIONS",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "All seven files were read completely. AbsBound:23-41 establishes 3>1; FourthMoment:25-39 gives E[Z^4]=3≠1; NonnegDropped:23-41 gives the finite all-minus-one pairing sum -1; PairingCount:24-37 distinguishes 3 from 12; ChainMassFactorial:23-35 and ChainMassSimplex:24-35 distinguish 1/2 from 1; MajorantFactor:23-39 refutes sqrt(3)/24≤1/24. These are genuine misstatements of the corresponding foundation or mass/majorant claims. The target ledger sections contain no descriptions of these seven controls, so there are no ledger descriptions to corroborate; an optional documentation note is W4."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "FAIL",
+      "reason": "The uniform-tail references at ledger:233-241,580-584,2783-2812,6282-6298,6351-6354 and the exclusions at 7485-7494 are substantively accurate. However the Scope summary at 269-273 says 'every conclusion for real r' without the independently acknowledged restriction at 5893-5895: the comparison is stated only for individual mixed moments, not finite-partial-sum second moments. Scope:281-283 also incorrectly subsumes the global hK requirement under implicit measurability. See W1 and W3."
+    }
+  ],
+  "findings": {
+    "fatal": [
+      "W1 — TerminalWick covariance measurability is an additional hypothesis, not an implicit consequence of the stated TeX assumptions. Lean TerminalWick.lean:618 requires 'hK : Measurable fun q => K q.1 q.2'; the formula theorem has the same requirement at 392. TeX manuscript/notes/notes_stratonovich_ham_second_moment.tex:3601-3605 assumes a centered real Gaussian field, bounded variance, and joint mean-square continuity only 'on each open cell' of a finite time partition. Those conditions leave cut-time values unrestricted. For example, take a standard Gaussian Z, an interior cut time c, a non-Borel set A in R^d, and W(t,y)=1_{t=c}1_A(y)Z. This is a bounded-variance centered Gaussian field, identically zero and mean-square continuous on every open cell; its actual-chain product maps are a.e. zero for positive order, satisfying the supplied hmeas. But its covariance is not globally Borel measurable, as a cut-time section recovers 1_A. Therefore ledger:5875-5879,5953 cannot describe hK as merely implicit or the wrapper as exact-hypothesis. Fix: either weaken the Lean requirement to suitable chain-measure-a.e. measurability and establish its manuscript applicability, or explicitly describe global covariance measurability as an additional restriction/supplied assumption in the ledger and coverage.yaml:661-671, updating the terminal conclusion-scope ASCII and TeX sentences consistently. Do not claim the original TeX hypotheses alone imply this hK."
+    ],
+    "major": [
+      "W2 — PARA-FiniteWick overstates integrability and absence of junk values. Ledger:1902-1903 says every integral identity has integrability 'as a conjunct'; 1914-1915 says 'every Bochner integral appears with a proof of integrability'. Lean FiniteWick.lean:578-580 assumes only 'Continuous F' and equates two Bochner integrals; 586-589 proves an Integrable equivalence, not Integrable F. A continuous F such as exp(x_0^4) under a nondegenerate one-dimensional standard Gaussian is not integrable, so the bridge identity can equate totalized zero values. TeX manuscript/notes/notes_stratonovich_ham_second_moment.tex:3662-3673 concerns finite Gaussian monomials, whose integrability is indeed established by the Lean development. Fix the ledger paragraph to restrict its genuine-integral assurance to Gaussian monomials and explain that the arbitrary-continuous-function bridge is a totalized identity, with integrability transferred only conditionally. No change to the correctly paraphrased bridge rows is necessary.",
+      "W3 — Scope omits one expressly acknowledged conclusion narrowing. Ledger:269-273 advertises L:terminal-wick as 'every conclusion for real r'. Lean TerminalWick.lean:674-675 concludes only 'E[Y1_m Y1_n] ≤ E[Y2_m Y2_n]' for each m,n, whereas TeX manuscript/notes/notes_stratonovich_ham_second_moment.tex:3641-3642 states comparison of 'all finite partial-order second moments'. Ledger:5893-5895 itself says second moments of finite partial sums are not stated as such. Although summing mixed-moment comparisons gives the mathematical implication, the review contract requires stated coverage to distinguish it. Fix Scope:269-273 to repeat the mixed-moment-only restriction, or add the finite-partial-sum comparison statement and adjust the narrower-scope descriptions consistently."
+    ],
+    "minor": [
+      "W4 — Negative-control documentation is absent from the two target sections. Ledger:1875-1968,5838-5954 contains no description of the seven supplied refutations. The files themselves accurately document and prove their perturbations; for example PairingCount.lean:7-10,30-37 refutes '(2k)!/k!' against the unordered-pair convention of TeX manuscript/notes/notes_stratonovich_ham_second_moment.tex:3671-3673. Optionally add a short cross-reference list distinguishing combinatorial controls from actual Gaussian-field examples; NonnegDropped.lean:23-37 tests arbitrary weights rather than presenting a covariance matrix."
+    ]
+  },
+  "required_repairs": [
+    "W1: Correct the treatment of global covariance measurability in the TerminalWick ledger prose, formula/wrapper correspondence and terminal coverage inputs/scope. Either supply a manuscript-valid a.e./modification bridge in Lean or explicitly classify global Borel measurability as an additional restriction, not an implicit TeX hypothesis. Keep the ASCII and TeX scope descriptions synchronized.",
+    "W2: Remove the false blanket assertion that every FiniteWick integral identity includes or proves integrability. Explicitly distinguish proved monomial integrability from the totalized arbitrary-continuous-F bridge and its conditional integrability equivalence.",
+    "W3: Make the Scope summary disclose that covariance comparison is stated per mixed moment rather than for second moments of finite partial sums, unless that latter conclusion is added as a Lean statement."
+  ],
+  "limitations": [
+    "The binding reading requirement A was completed. Partial-file entries above reflect the expressly scoped review, not gaps in required declarations, sections, registry entries or cited TeX ranges.",
+    "In check reasons, FiniteWick.lean, TerminalWick.lean, UniformSeriesTail.lean and L8Completed.lean refer to their exact paths under lean/StratonovichHAMSecondMoment/ listed in source_coverage; ledger means candidate/statement-ledger.md; TeX means manuscript/notes/notes_stratonovich_ham_second_moment.tex.",
+    "Lean compilation and standard-axiom status were accepted as stipulated. The supplied Audit files contain checking commands and consumer proofs, not captured elaborator output; no build or recompilation was performed.",
+    "Historical recompilation claims and provenance hashes were read but not independently reproduced. No external Mathlib source, network material or earlier manuscript revision was consulted.",
+    "The non-Borel cut-time example in W1 is a mathematical correspondence counterexample, not an additional machine-checked artifact.",
+    "This AI correspondence review is neither human verification nor a novelty audit."
+  ]
+}
