@@ -550,6 +550,25 @@ Last updated: 2026-11-12 (11:15), L8 receipts at `aff7409` committed (`d476e17`)
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
+- **"WHOLE RESULT" HEADING CONVENTION: STRICT (Le, 2026-11-12).** Le,
+  verbatim: "I approve the strict meaning of \"whole result\" for the L9
+  headings; finish the renames, re-run the r2 heading check, and record the
+  convention in lean-progress/PROGRESS.md." Prompted by the L9 narrow
+  re-confirmation at companion `ba6c565` (r2 audit of all 56 remaining
+  "(whole result)" headings: 20 FAIL, 8 INCONCLUSIVE; the companion had used
+  the heading also for narrower results and for foundation modules). The
+  convention, for every ledger section heading and Index first cell (all
+  waves, not only L9): (A) "(whole result)" only when every conclusion of the
+  labelled result is a Lean conclusion under the manuscript's hypotheses,
+  possibly with named, disclosed supplied inputs (coverage class
+  same-assumptions/full or inputs-supplied/full); (B) "(narrower result:
+  <what is missing>)" for same-assumptions/weaker rows and other partial but
+  labelled results; (C) "(foundation)" or "(proof steps of <label>)" for
+  modules proving facts that a result uses. FORMALIZATION.md, the ledger
+  Scope and the README counts use these three categories. Docs only: no Lean
+  change, and coverage classes change only if a row is found inconsistent
+  (to be reported, not silently changed). Renames and the r2 re-run on
+  branch `wave-l9/repair`.
 - **L8 RECEIPTS AND THE EASLEY L7 REPLAY (2026-11-12).** Receipts at the
   L8 gate commit `aff7409`, committed as `d476e17`: comparator PASS over all
   1747 theorem claims; lower tier 0 sorry, standard axioms only, axioms of
