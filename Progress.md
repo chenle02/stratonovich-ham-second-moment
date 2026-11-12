@@ -19187,3 +19187,11 @@ and the companion (private/drafts/companion/.github/), and
 private/2026-11-12-community-settings.md (rulesets with an owner bypass while
 there is one maintainer, tag protection for v*, squash merging, gh commands).
 All four public files pass the real filter byte-identical.
+
+Subtitle unified (Le, 2026-11-12): both documents use "Second Moment and Exact
+Asymptotics". Book cover subtitle and PDF metadata changed (was "Exact Asymptotics
+of the Second Moment"). The reading edition is retitled "Stratonovich Waves Driven
+by Space-Time Gaussian Noise: Second Moment and Exact Asymptotics" (was "The second
+moment of the Stratonovich hyperbolic Anderson model: a reading edition with a
+technical companion"; "A Reading Edition" and "The Main Results and the Ideas of the
+Proof" were considered and set aside), with matching PDF metadata.
