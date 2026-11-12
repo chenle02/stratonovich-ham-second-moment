@@ -19135,3 +19135,10 @@ uncommitted work), committed by pathspec and fast-forwarded; 0 errors,
 0 undefined, 0 overfull. Book 345 pages; F on 307-310, G on 311-317.
 Open: #22 to replace the TeX line range "(lines 409-414)" in the
 P:occupation-physical-class row; then a coverage-only re-pin.
+
+Appendix F coverage re-pin (2026-11-12): coverage now read from companion
+0269e61 (docs-only after verified f3be834): the P:occupation-physical-class row
+describes the measurability construction instead of citing TeX lines, and the
+cluster replay of the wave-L6 modules passed (16/16), so the replay sentence now
+says only the modules of the most recent stage (the eight wave-L7 modules) are
+not yet checked by the separate kernel checker. Receipt numbers unchanged.

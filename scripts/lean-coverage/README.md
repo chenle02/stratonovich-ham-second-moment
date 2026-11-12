@@ -15,7 +15,7 @@ this folder.
 | `make_appendix_f.py` | Writes `notes/lean-coverage-data.tex` (`python3 scripts/lean-coverage/make_appendix_f.py`). |
 
 Current pin: verified commit f3be834 (receipts and claims ledger bound to
-it), coverage files read from ed3cd68 (later commits change only
+it), coverage files read from 0269e61 (later commits change only
 documentation). lean-pkg 0.29.0.
 
 Checks built in:
