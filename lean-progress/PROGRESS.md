@@ -553,7 +553,15 @@
   the lean verification as much as possible").** Read, as on 2026-11-10, as
   approval to RUN wave L7 as proposed in item 3; every gate stays Le's to
   close. Order and status (updated as items complete):
-  1. [ ] Easley `leanchecker --fresh` replay of the 14 wave-L6 modules plus
+  1. [x] DONE (2026-11-12): job 5692528 PASS 16/16 (--fresh, each 43:13-44:08,
+     peak ~7.7 GB; default mode 73/73; COMPLETED 0:0, 06:09:54, node831;
+     collected via <MACHINE> after the laptop VPN dropped). Import-closure check:
+     every module not replayed has, comments stripped, the same source and
+     imports as at an earlier --fresh replay. Evidence companion 0269e61,
+     verification/leanchecker-easley-wave-l6/ (HPC username, container path,
+     runtime directory redacted; grep clean), README replay sentence. The
+     eight wave-L7 modules are not yet replayed. #24 sent the SHA.
+     (Original item:) Easley `leanchecker --fresh` replay of the 14 wave-L6 modules plus
      umbrella and Axioms at companion bfa2fd0, two at a time (harness ready
      in session scratch easley/wavel6: commit/tree pins, 73-target manifest,
      16 fresh targets); evidence verification/leanchecker-easley-wave-l6/,
