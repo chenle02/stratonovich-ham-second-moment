@@ -1,0 +1,182 @@
+{
+  "provider": "codex",
+  "started_utc": "2026-11-12T02:16:33.676348+00:00",
+  "workspace": "<HOME>/.local/state/Le-AI-Lab/stratonovich-lean-wave-l6-reconfirm/attempt-01/workspace",
+  "source_revision": "bfa2fd0ed721aa7bd2fc027a15b787d5024f4d57",
+  "input_hashes": {
+    "PROVENANCE.json": "e3a58f2413f0996c568a256e77f992e63749f2624726bfec2401a111afe61594",
+    "candidate/statement-ledger.md": "78015955132bb11280022e48b81a5431d5cb19a6e5bcebb40b552af8f40d7660",
+    "changes/diff-4486c57-bfa2fd0.patch": "49007bd902a58876d99f0cdbbd1a49d00ca36bfc8a7b863813c69cdd9dc0c267",
+    "lean/ChallengeDefs/StratonovichHAMSecondMoment/DampedNormsHomog.lean": "add4f1a18bc93400d527de56bfe97951b101a47303a8fad123720583032a04bb",
+    "lean/StratonovichHAMSecondMoment/DampedNorms.lean": "f993d6192f7f7b324b2d3afce0144c3e4e965a3a9a2e5df7bf5c7b53aaaed979",
+    "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean": "2fc27755ae44cc9f066234e0eb0456087741f3f76794164aa4a333285173434b",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean": "14ca22fb09680776751f5781ed1ce141478f2f04b0b2acac927a27b2d52134dd",
+    "lean/claims.yaml": "402582aa0ffb0b7318cb75c460aac97a19226235125be3276dcf39befed0deb2",
+    "lean/coverage.yaml": "02bd5e67845f760b02dcdd87eaa8ccc05a121166d40311d8dffc00e1a2b6ea72",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex": "fc18cdbc0b0b9734dbbaa03b0228ce6b958eb1828c6b64bfdd4764f2da366989",
+    "prior/confirm-report.json": "d756caabd17eb6fd055af12f472f88be59e1c644aeba1af72aa59dfdba0c692c"
+  },
+  "target": "candidate/statement-ledger.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "eedd4bf68494c20c3ffe90e4172a2114e64343f1b2f02267c9e24b78dfb83632",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": "PASS",
+  "accepted": true,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [],
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "DampedNorms.lean": [
+        "lean/StratonovichHAMSecondMoment/DampedNorms.lean"
+      ],
+      "PROVENANCE.json": [
+        "PROVENANCE.json"
+      ],
+      "WaveGreen.lean": [
+        "lean/StratonovichHAMSecondMoment/WaveGreen.lean"
+      ],
+      "candidate/statement-ledger.md": [
+        "candidate/statement-ledger.md"
+      ],
+      "claims.yaml": [
+        "lean/claims.yaml"
+      ],
+      "lean/ChallengeDefs/StratonovichHAMSecondMoment/DampedNormsHomog.lean": [
+        "lean/ChallengeDefs/StratonovichHAMSecondMoment/DampedNormsHomog.lean"
+      ],
+      "lean/StratonovichHAMSecondMoment/DampedNorms.lean": [
+        "lean/StratonovichHAMSecondMoment/DampedNorms.lean"
+      ],
+      "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean": [
+        "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean"
+      ],
+      "lean/claims.yaml": [
+        "lean/claims.yaml"
+      ],
+      "lean/coverage.yaml": [
+        "lean/coverage.yaml"
+      ],
+      "manuscript/notes/notes_stratonovich_ham_second_moment.tex": [
+        "manuscript/notes/notes_stratonovich_ham_second_moment.tex"
+      ],
+      "prior/confirm-report.json": [
+        "prior/confirm-report.json"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": null
+  },
+  "cli_version": "codex-cli 0.167.0",
+  "executable": "<HOME>/.nvm/versions/node/v26.8.1/lib/node_modules/@openai/codex/bin/codex.js",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "<HOME>/.nvm/versions/node/v26.8.1/lib/node_modules/@openai/codex/bin/codex.js",
+    "version": "codex-cli 0.167.0"
+  },
+  "auth": {
+    "auth_mode": "chatgpt",
+    "api_key_present": false
+  },
+  "model_requested": "gpt-6.1-sol",
+  "command_without_prompt": [
+    "<HOME>/.nvm/versions/node/v26.8.1/lib/node_modules/@openai/codex/bin/codex.js",
+    "exec",
+    "--ignore-user-config",
+    "--profile",
+    "subscription-review-dee9448facc843c0888a674b1c1a056f",
+    "--model",
+    "gpt-6.1-sol",
+    "-c",
+    "model_provider=\"openai\"",
+    "-c",
+    "model_instructions_file=\"<HOME>/.local/state/Le-AI-Lab/stratonovich-lean-wave-l6-reconfirm/attempt-01/codex-reviewer.md\"",
+    "-c",
+    "model_reasoning_effort=\"high\"",
+    "-c",
+    "web_search=\"disabled\"",
+    "-c",
+    "project_doc_max_bytes=0",
+    "-c",
+    "sandbox_mode=\"read-only\"",
+    "-c",
+    "approval_policy=\"never\"",
+    "--skip-git-repo-check",
+    "--json",
+    "-c",
+    "skills.config=[]",
+    "--sandbox",
+    "read-only",
+    "--cd",
+    "<HOME>/.local/state/Le-AI-Lab/stratonovich-lean-wave-l6-reconfirm/attempt-01/workspace",
+    "--disable",
+    "hooks",
+    "--disable",
+    "apps",
+    "--disable",
+    "plugins",
+    "--disable",
+    "browser_use",
+    "--disable",
+    "computer_use",
+    "--disable",
+    "image_generation",
+    "--disable",
+    "multi_agent",
+    "-",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 6978,
+  "prompt_sha256": "67254647810406799e85a8f6166277f5654f4c87641807352c49debf17210741",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "session_id": "01a1cd8a-e399-7a20-9b3a-454f13bf55aa",
+  "usage": {
+    "input_tokens": 1442613,
+    "cached_input_tokens": 1317504,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 5367,
+    "reasoning_output_tokens": 2330
+  },
+  "provider_error": false,
+  "provider_actual": "openai",
+  "instructions_sha256_actual": "b4a43ffb549322600bc7000dcbeaf07b048d7d93c857da29f3283c7824ec797e",
+  "model_actual": "gpt-6.1-sol",
+  "effort_actual": "high",
+  "sandbox_actual": "read-only",
+  "actual_route_verified": true,
+  "reviewer_profile_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "b2271133f076bec355b3318f3d28eeea2d7e032fb3099482470316c4e1d4bbfb",
+  "status": "review-complete",
+  "confidence": "high",
+  "report_interpretation": {
+    "contract_schema": "subscription-review-report/1",
+    "report_schema": "subscription-review-report/1",
+    "legacy_mode": null,
+    "normalized_verdict": "PASS",
+    "normalized_confidence": "high",
+    "normalized_check_verdicts": [
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "report_sha256": "3db252b9c48c874ceb1efcb466c06c7638300ef0fde3319025e393f3447dc8cd",
+  "report_text_format": "bare",
+  "report_body_sha256": "b2271133f076bec355b3318f3d28eeea2d7e032fb3099482470316c4e1d4bbfb",
+  "finished_utc": "2026-11-12T02:19:55.295253+00:00",
+  "elapsed_seconds": 201.619,
+  "transport_events_sha256": "478dd56b7973431100693f03e4b42abca7ac4b543a1182e4abbf7f557a1a2128",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

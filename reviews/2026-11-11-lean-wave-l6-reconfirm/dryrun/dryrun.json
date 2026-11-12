@@ -1,0 +1,143 @@
+{
+  "provider": "codex",
+  "started_utc": "2026-11-12T02:16:27.475742+00:00",
+  "workspace": "<HOME>/.local/state/Le-AI-Lab/stratonovich-lean-wave-l6-reconfirm/dryrun/workspace",
+  "source_revision": "bfa2fd0ed721aa7bd2fc027a15b787d5024f4d57",
+  "input_hashes": {
+    "PROVENANCE.json": "e3a58f2413f0996c568a256e77f992e63749f2624726bfec2401a111afe61594",
+    "candidate/statement-ledger.md": "78015955132bb11280022e48b81a5431d5cb19a6e5bcebb40b552af8f40d7660",
+    "changes/diff-4486c57-bfa2fd0.patch": "49007bd902a58876d99f0cdbbd1a49d00ca36bfc8a7b863813c69cdd9dc0c267",
+    "lean/ChallengeDefs/StratonovichHAMSecondMoment/DampedNormsHomog.lean": "add4f1a18bc93400d527de56bfe97951b101a47303a8fad123720583032a04bb",
+    "lean/StratonovichHAMSecondMoment/DampedNorms.lean": "f993d6192f7f7b324b2d3afce0144c3e4e965a3a9a2e5df7bf5c7b53aaaed979",
+    "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean": "2fc27755ae44cc9f066234e0eb0456087741f3f76794164aa4a333285173434b",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean": "14ca22fb09680776751f5781ed1ce141478f2f04b0b2acac927a27b2d52134dd",
+    "lean/claims.yaml": "402582aa0ffb0b7318cb75c460aac97a19226235125be3276dcf39befed0deb2",
+    "lean/coverage.yaml": "02bd5e67845f760b02dcdd87eaa8ccc05a121166d40311d8dffc00e1a2b6ea72",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex": "fc18cdbc0b0b9734dbbaa03b0228ce6b958eb1828c6b64bfdd4764f2da366989",
+    "prior/confirm-report.json": "d756caabd17eb6fd055af12f472f88be59e1c644aeba1af72aa59dfdba0c692c"
+  },
+  "target": "candidate/statement-ledger.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "eedd4bf68494c20c3ffe90e4172a2114e64343f1b2f02267c9e24b78dfb83632",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": null,
+  "accepted": false,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [],
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "DampedNorms.lean": [
+        "lean/StratonovichHAMSecondMoment/DampedNorms.lean"
+      ],
+      "PROVENANCE.json": [
+        "PROVENANCE.json"
+      ],
+      "WaveGreen.lean": [
+        "lean/StratonovichHAMSecondMoment/WaveGreen.lean"
+      ],
+      "candidate/statement-ledger.md": [
+        "candidate/statement-ledger.md"
+      ],
+      "claims.yaml": [
+        "lean/claims.yaml"
+      ],
+      "lean/ChallengeDefs/StratonovichHAMSecondMoment/DampedNormsHomog.lean": [
+        "lean/ChallengeDefs/StratonovichHAMSecondMoment/DampedNormsHomog.lean"
+      ],
+      "lean/StratonovichHAMSecondMoment/DampedNorms.lean": [
+        "lean/StratonovichHAMSecondMoment/DampedNorms.lean"
+      ],
+      "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean": [
+        "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean"
+      ],
+      "lean/claims.yaml": [
+        "lean/claims.yaml"
+      ],
+      "lean/coverage.yaml": [
+        "lean/coverage.yaml"
+      ],
+      "manuscript/notes/notes_stratonovich_ham_second_moment.tex": [
+        "manuscript/notes/notes_stratonovich_ham_second_moment.tex"
+      ],
+      "prior/confirm-report.json": [
+        "prior/confirm-report.json"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": null
+  },
+  "cli_version": "codex-cli 0.167.0",
+  "executable": "<HOME>/.nvm/versions/node/v26.8.1/lib/node_modules/@openai/codex/bin/codex.js",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "<HOME>/.nvm/versions/node/v26.8.1/lib/node_modules/@openai/codex/bin/codex.js",
+    "version": "codex-cli 0.167.0"
+  },
+  "auth": {
+    "auth_mode": "chatgpt",
+    "api_key_present": false
+  },
+  "model_requested": "gpt-6.1-sol",
+  "command_without_prompt": [
+    "<HOME>/.nvm/versions/node/v26.8.1/lib/node_modules/@openai/codex/bin/codex.js",
+    "exec",
+    "--ignore-user-config",
+    "--profile",
+    "subscription-review-d2a0f18537124ab489424407d8cf186e",
+    "--model",
+    "gpt-6.1-sol",
+    "-c",
+    "model_provider=\"openai\"",
+    "-c",
+    "model_instructions_file=\"<HOME>/.local/state/Le-AI-Lab/stratonovich-lean-wave-l6-reconfirm/dryrun/codex-reviewer.md\"",
+    "-c",
+    "model_reasoning_effort=\"high\"",
+    "-c",
+    "web_search=\"disabled\"",
+    "-c",
+    "project_doc_max_bytes=0",
+    "-c",
+    "sandbox_mode=\"read-only\"",
+    "-c",
+    "approval_policy=\"never\"",
+    "--skip-git-repo-check",
+    "--json",
+    "-c",
+    "skills.config=[]",
+    "--sandbox",
+    "read-only",
+    "--cd",
+    "<HOME>/.local/state/Le-AI-Lab/stratonovich-lean-wave-l6-reconfirm/dryrun/workspace",
+    "--disable",
+    "hooks",
+    "--disable",
+    "apps",
+    "--disable",
+    "plugins",
+    "--disable",
+    "browser_use",
+    "--disable",
+    "computer_use",
+    "--disable",
+    "image_generation",
+    "--disable",
+    "multi_agent",
+    "-",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 6974,
+  "prompt_sha256": "34bc58ad34e63549938112df16234d4f348ff2eba14962f0179f9b770cad2454",
+  "status": "dry-run",
+  "finished_utc": "2026-11-12T02:16:27.508600+00:00",
+  "elapsed_seconds": 0.033
+}

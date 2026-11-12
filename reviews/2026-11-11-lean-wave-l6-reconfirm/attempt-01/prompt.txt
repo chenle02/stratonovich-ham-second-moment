@@ -1,0 +1,89 @@
+Review the frozen packet rooted at <HOME>/.local/state/Le-AI-Lab/stratonovich-lean-wave-l6-reconfirm/attempt-01/workspace. Primary target: candidate/statement-ledger.md. Source revision: bfa2fd0ed721aa7bd2fc027a15b787d5024f4d57.
+
+You are an independent artifact reviewer. Read only the frozen packet
+and the supplied review contract. Report correctness, missing assumptions,
+incorrect constants, failed implications, and uncertainty. Do not edit files,
+use the network, send messages, publish, install, or delegate. Do not launch a
+research or coding workflow. Return a scientific report rather than a plan.
+Use exactly one JSON object with schema "subscription-review-report/1", verdict (PASS, PASS_WITH_NOTES, FAIL, or
+INCONCLUSIVE), confidence (high, medium, low), source_coverage (list of strings),
+checks (list of objects with claim, verdict, reason), findings (an object with
+fatal, major, minor lists), required_repairs (list), and limitations (list).
+required_repairs contains ONLY mandatory changes that block acceptance. Optional
+clarifications belong in findings.minor, never in required_repairs. PASS and
+PASS_WITH_NOTES require empty fatal, major and required_repairs lists and no
+failed/unchecked claim. If a repair is mandatory, return FAIL or INCONCLUSIVE;
+never weaken a finding to obtain PASS.
+Read every required source completely. Never use Grep head_limit or any other
+truncating or limiting option on a required source. After any pagination or
+truncation marker (for example a partial Read, an offset/limit notice, or
+"output truncated"), keep reading the next range until the whole file is read.
+In source_coverage, list each exact file and the line ranges you actually read.
+If coverage of any required source is incomplete, say "partial" for that source
+in source_coverage and state the gap in limitations.
+An AI review is not human verification or a novelty audit. Do not silently
+repair a candidate and PASS the original. A terminal error is not a verdict.
+
+Frozen packet file index (relative to workspace; a listed file is not proof of reading):
+["PROVENANCE.json", "candidate/statement-ledger.md", "changes/diff-4486c57-bfa2fd0.patch", "lean/ChallengeDefs/StratonovichHAMSecondMoment/DampedNormsHomog.lean", "lean/StratonovichHAMSecondMoment/DampedNorms.lean", "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean", "lean/StratonovichHAMSecondMoment/WaveGreen.lean", "lean/claims.yaml", "lean/coverage.yaml", "manuscript/notes/notes_stratonovich_ham_second_moment.tex", "prior/confirm-report.json"]
+
+Narrow re-confirmation: one repair to the wave-L6 Lean companion documentation
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+CONTEXT
+A confirmation review (prior/confirm-report.json, at companion 4486c57)
+passed 25 of 26 checks and found one remaining stale sentence (C1). The
+repair is a doc-comment change; the same stale claim was also fixed in a
+second file. The companion is now at bfa2fd0ed721. Your task is narrow: decide
+whether C1 is resolved and whether the repair introduced anything else.
+
+PACKET
+- candidate/statement-ledger.md, lean/claims.yaml, lean/coverage.yaml at bfa2fd0ed721
+- lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean, DampedNorms.lean, WaveGreen.lean
+- lean/ChallengeDefs/StratonovichHAMSecondMoment/DampedNormsHomog.lean (comparator copy)
+- changes/diff-4486c57-bfa2fd0.patch : every change between the two commits (receipts excluded)
+- prior/confirm-report.json : the earlier confirmation report
+- manuscript/notes/notes_stratonovich_ham_second_moment.tex at 975feb31ea65 (line 825: G_s(R^d) = s)
+- PROVENANCE.json
+
+CHECKS (exactly these 4, in this order, with these claim strings):
+  1. claim "C1-RESOLVED": finding C1 of prior/confirm-report.json is resolved: the GreenMass doc comment in lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean no longer claims the package does not define the wave Green measures, and it correctly points to WaveGreen.waveGreen_greenMass (check WaveGreen.lean for that declaration and its statement)
+  2. claim "DAMPEDNORMS-COMMENT": the module doc of lean/StratonovichHAMSecondMoment/DampedNorms.lean no longer makes the package-wide absence claim and its replacement sentence (N_0 formalized in DampedNormsHomog and WaveGreen) is true of the Lean files
+  3. claim "DIFF-SCOPE": changes/diff-4486c57-bfa2fd0.patch changes only Lean comments/doc comments in those two library files and the corresponding regenerated comparator copy (ChallengeDefs) — no statement, proof, definition, claim, coverage or ledger change
+  4. claim "NO-STALE-ABSENCE": no remaining text in candidate/statement-ledger.md, lean/claims.yaml or the three Lean files claims that the PACKAGE (as opposed to one module) does not define the wave Green measures or that N_0 is not formalized; and the ledger and coverage rows for L:damped-homogeneous-norms agree with the Lean files (same-assumptions, full, nothing supplied; d = 3 toSphere definitional choice stated)
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely: the patch; finding C1 of the prior report; the two
+   edited doc comments in context; the GreenMass structure and
+   waveGreen_greenMass; the "DampedNormsHomog (whole result)" and
+   "WaveGreen (whole result)" sections of the ledger.
+B. Search the ledger, claims.yaml and the three Lean files for
+   "does not define", "not formalized", "no wave Green" and read matches.
+C. If A is incomplete, mark affected checks INCONCLUSIVE.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 4 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-21.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.
+

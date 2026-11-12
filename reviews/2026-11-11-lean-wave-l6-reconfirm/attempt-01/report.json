@@ -1,0 +1,52 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-65 \u2014 complete.",
+    "changes/diff-4486c57-bfa2fd0.patch:1-47 \u2014 complete.",
+    "prior/confirm-report.json:1-199 \u2014 complete, including C1 at line 185.",
+    "lean/StratonovichHAMSecondMoment/DampedNorms.lean:1-372 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean:1-694 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean:1-540 \u2014 complete.",
+    "lean/ChallengeDefs/StratonovichHAMSecondMoment/DampedNormsHomog.lean:1-109 \u2014 complete.",
+    "candidate/statement-ledger.md:1-200,920-948,1038-1216,4414-4532,4838-4963 \u2014 partial overall; both required whole-result sections complete. Required phrase searches covered the entire file; all matches were read.",
+    "lean/claims.yaml:1-25,6185-6490,6850-7089,10283 \u2014 partial overall. Required phrase searches covered the entire file; all matches were read.",
+    "lean/coverage.yaml:1-145 \u2014 partial; complete L:damped-homogeneous-norms row at 108-140.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:175-236,690-850,5100-5120 \u2014 partial; complete relevant hypothesis, norm definitions, lemma and proof."
+  ],
+  "checks": [
+    {
+      "claim": "C1-RESOLVED",
+      "verdict": "PASS",
+      "reason": "C1 in prior/confirm-report.json:185 requested precisely the module-local qualification and discharge reference now present at lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean:123-127. GreenMass requires '\u2200 s : \u211d, 0 < s \u2192 G s univ = ENNReal.ofReal s' at :128-129. WaveGreen.lean:106-112 defines the measures, and :274-276 proves 'GreenMass (waveGreen d)' under 'hd : d = 1 \u2228 d = 2 \u2228 d = 3'. Side by side, the TeX hypothesis is 'd \u2208 {1,2,3}' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:191, and its proof uses 'G_s(R^d) = s' at :825. The corrected reference and dimension restriction are accurate."
+    },
+    {
+      "claim": "DAMPEDNORMS-COMMENT",
+      "verdict": "PASS",
+      "reason": "lean/StratonovichHAMSecondMoment/DampedNorms.lean:18-19 now says 'this module' and identifies DampedNormsHomog and WaveGreen as formalizing N\u2080. DampedNormsHomog.lean:131-134 defines N0; :308-310 proves integrability and N0 = \u03b8^(-2) under 'hG : GreenMass G' and 'h\u03b8 : 0 < \u03b8'. WaveGreen.lean:413-416 discharges GreenMass for the three dimensions. Side by side, manuscript/notes/notes_stratonovich_ham_second_moment.tex:747 defines the same integral, :769 requires '\u03b8 > 0', and :772 states N\u2080(\u03b8) = \u03b8^(-2)."
+    },
+    {
+      "claim": "DIFF-SCOPE",
+      "verdict": "PASS",
+      "reason": "The complete patch changes exactly three comment blocks: the comparator GreenMass doc comment at changes/diff-4486c57-bfa2fd0.patch:1-16, the DampedNorms module comment at :17-31, and the library GreenMass doc comment at :32-47. Every added or removed line is inside a Lean comment. No declaration, hypothesis, definition, proof, ledger, claims or coverage change appears."
+    },
+    {
+      "claim": "NO-STALE-ABSENCE",
+      "verdict": "PASS",
+      "reason": "Complete-file searches for the required phrases, supplemented by searches for wave Green and N\u2080/N_0/N0 references, found no surviving package-wide absence assertion. Ledger:932-936 expressly says 'in this section'; :1084-1093 and claims.yaml:6200 make module-local statements and identify the WaveGreen discharge. Coverage.yaml:108-140 records 'same-assumptions', 'full' and H:homog alone. Side by side, WaveGreen.lean:426-427 assumes only 'h : HomogCovariance d alpha alpha0 \u0393 \u03bc', while manuscript/notes/notes_stratonovich_ham_second_moment.tex:768 assumes 'Hypothesis H:homog'; neither adds \u0393 \u2260 0. The wrapper discharges GreenMass using 'waveGreen_greenMass d h.dim' at WaveGreen.lean:452. Its conclusions match ledger:4523 and TeX:769-791 within the explicitly documented multiplier/Laplace-domain reading. The d = 3 toSphere definitional choice is disclosed at ledger:4438-4444, coverage.yaml:138-140 and WaveGreen.lean:26-34."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "All portions required by complete-reading requirement A were read completely. Files marked partial were not read continuously outside the listed ranges and search matches; unrelated ledger sections, claims, coverage rows and manuscript material were not re-reviewed.",
+    "This is the requested narrow documentation reconfirmation, not a new audit of the earlier 26 checks. Diff scope relies on the supplied patch being the complete changeset described by the packet.",
+    "No Lean build, kernel check, comparator regeneration or independent audit of imported definitions was performed.",
+    "This AI review is not human verification or a novelty audit."
+  ]
+}
