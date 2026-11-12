@@ -80,65 +80,57 @@ the astronomer still has to check them, name them, put them in order and explain
 them. Mourrat~\hyperlink{pp:P5}{[P5]} suggests that mathematicians will become
 naturalists in this sense.
 
-I intend this book as a practical response to selected proposals and concerns
-in \emph{Proofs and Prompts}. The posts cited below guide concrete choices:
-opening the arguments to community review, preserving the development and
-failed attempts, distinguishing what has been checked, and asking what general
-ideas can be extracted from the work. The development, the writing and much of
-the checking were done with AI. I also use AI in the search for an explanation,
-as described below. Human understanding and public discussion remain aims of
-the experiment. The complete
-project is on GitHub. Each result has a row in a public table, and readers can
-check a proof, dispute it, repair it or explain it through a pull request. Every
-merged contribution is acknowledged by name, and a substantial mathematical
-contribution leads to coauthorship of the next version. Similar proposals for
-community work on AI-generated mathematics have appeared on the blog
-\emph{Proofs and Prompts}. Trombetti proposes an open platform where
-AI-generated results are examined, corrected, attributed and validated in
-public, so that a result can gradually acquire ``collective mathematical
-confidence'' on a ``Git Hub'' of proofs~\hyperlink{pp:P4}{[P4]}. Others propose
-open work groups that explain important preprints and report their progress in a
-Git repository~\hyperlink{pp:P11}{[P11]}, a community-owned repository where AI
-proof reports can be read, corrected and reused~\hyperlink{pp:P12}{[P12]}, and a
-site where AI-generated proofs are handed to teams of researchers who work to
-understand them~\hyperlink{pp:P14}{[P14]}. Ng~\hyperlink{pp:P10}{[P10]} proposes
-that mathematicians earn credit by writing works at the level of a doctoral
-thesis and defending them in public, with open reviews from the community.
-The public table and contribution process are intended to give these proposals
-a concrete body of mathematics to work on.
+This book is also an experiment in how such mathematics can be checked,
+shared and understood. It has four parts: opening the arguments to community
+review, preserving the development and the failed attempts, distinguishing what
+has been checked, and asking what general ideas can be extracted from the work.
+The development, the writing and much of the checking were done with AI. I also
+use AI in the search for an explanation, as described below. Human understanding
+and public discussion remain aims of the experiment. The complete project is on
+GitHub. Each result has a row in a public table, and readers can check a proof,
+dispute it, repair it or explain it through a pull request. Every merged
+contribution is acknowledged by name, and a substantial mathematical
+contribution leads to coauthorship of the next version. Similar proposals have
+appeared on the blog \emph{Proofs and Prompts}: an open platform where
+AI-generated results gradually acquire ``collective mathematical confidence''
+on a ``Git Hub'' of proofs~\hyperlink{pp:P4}{[P4]}, open work groups that
+explain important preprints in a Git repository~\hyperlink{pp:P11}{[P11]}, a
+community-owned repository of AI proof reports~\hyperlink{pp:P12}{[P12]}, teams
+of researchers who work to understand AI-generated
+proofs~\hyperlink{pp:P14}{[P14]}, and credit for works at the level of a
+doctoral thesis, defended in public with open reviews~\hyperlink{pp:P10}{[P10]}.
 
 The repository also keeps the complete history of the work, and this history is
 meant to be studied in its own right. Every change is kept with its date and a
 short description. So are the exact files sent to each reviewer, the reviewers'
 reports as received (with their model families and confidence levels), the
 written answers to every finding, the Lean records, and the approaches that
-failed, with the reasons. Morris~\hyperlink{pp:P9}{[P9]} asks for more accounts
-of failed attempts, so that others do not have to repeat them, and
-Duminil-Copin~\hyperlink{pp:P3}{[P3]} describes how his failed attempts on one
-conjecture brought him collaborators and ideas that he later used elsewhere. Tao
-has pointed out that negative results are rarely reported, so that what one
-hears about AI in mathematics is skewed towards success~\cite{tao:26:post}. For
-this reason I treat an approach that does not work as a result:
-Appendix~\ref{S:appendix-no-go} lists all the mathematical ones, each with what
-it does not rule out. A small number of
-removals (other authors' copyrighted texts, details of private computer systems,
-collaborators' unpublished work and private planning notes) are listed with
-their reasons. I treat this record as the data of an experiment: it is kept
-complete so that others can check what was done, recover any earlier state, and
-study how an AI system for mathematics actually behaves, including where it
-failed. The same idea appears in several posts on \emph{Proofs and Prompts}.
-Kretschmer argues that the way AI was used is part of the research process and
-that a detailed disclosure is ``a worthy scientific
-unit''~\hyperlink{pp:P7}{[P7]}. Kaipel proposes that every interaction with AI
+failed, with the reasons. A small number of removals (other authors'
+copyrighted texts, details of private computer systems, collaborators'
+unpublished work and private planning notes) are listed with their reasons. I
+treat this record as the data of an experiment: it is kept complete so that
+others can check what was done, recover any earlier state, trace a claim back
+to its construction, criticism and repair, and study how an AI system for
+mathematics actually behaves, including where it failed. Several posts on
+\emph{Proofs and Prompts} argue in the same direction: Kretschmer calls a
+detailed disclosure of AI use ``a worthy scientific
+unit''~\hyperlink{pp:P7}{[P7]}, Kaipel proposes that every interaction with AI
 that influenced a manuscript be recorded in full and made
-available~\hyperlink{pp:P8}{[P8]}. Lewin~\hyperlink{pp:P12}{[P12]} compares AI
-proofs with experimental data and points to the gravitational-wave observation,
-whose data were released with documentation and a DOI for others to analyze.
-Gonen Cohen~\hyperlink{pp:P2}{[P2]} discusses releasing the full prompting
-history as a way to improve reproducibility. Here the retained history lets a
-reader trace a claim back to its construction, criticism and repair.
+available~\hyperlink{pp:P8}{[P8]}, Lewin~\hyperlink{pp:P12}{[P12]} compares AI
+proofs with experimental data released with documentation for others to
+analyze, and Gonen Cohen~\hyperlink{pp:P2}{[P2]} discusses releasing the full
+prompting history to improve reproducibility.
 
-Because of this, the book keeps its claims separate. Proved results, imported
+I also treat an approach that does not work as a result.
+Appendix~\ref{S:appendix-no-go} lists all the mathematical ones, each with what
+it does not rule out, so that others do not have to try them again. This echoes
+Morris's call for more accounts of failed attempts~\hyperlink{pp:P9}{[P9]},
+Duminil-Copin's account of how failed attempts on one conjecture brought him
+collaborators and ideas that he later used elsewhere~\hyperlink{pp:P3}{[P3]},
+and Tao's remark that negative results are rarely reported, so that what one
+hears about AI in mathematics is skewed towards success~\cite{tao:26:post}.
+
+For the same reason, the book keeps its claims separate. Proved results, imported
 statements, conditional consequences and open questions are distinguished
 throughout. Lerario makes the same point about mathematics in general: it should
 always be clear how far a result has been checked, and an argument checked step
@@ -152,22 +144,21 @@ result has been checked.
 \section*{What can we learn from the proof?}
 
 A long argument produced with AI leaves another task: to understand which
-ideas make it work and whether they can be used elsewhere. In his letter to a
-worried student, Madore~\hyperlink{pp:P6}{[P6]} describes open problems as
-milestones toward understanding and new theories. He also argues that
-understanding is a human activity that computers cannot perform for us.
-Lerario~\hyperlink{pp:P13}{[P13]} also considers the possible origin of
-theories. In ``Qualitative growth'' and ``Continuity of research,''
-he discusses organizing separate results through common principles and allows
-that theories and research directions could originate in artificial systems.
-
-This book offers a small experiment in that direction. I ask Amy to return to
-the arguments she helped produce, including failed approaches, and to look for
-recurring constructions, indispensable assumptions and possible general
-principles. I use her proposals to guide further questions and checks. The aim
-is to involve AI in the search for an explanation as well as in the production
-of an argument. A proposed principle should explain why several steps belong
-together and help us treat a second problem with less repeated work.
+ideas make it work and whether they can be used elsewhere. This book offers a
+small experiment in that direction. I ask Amy to return to the arguments she
+helped produce, including failed approaches, and to look for recurring
+constructions, indispensable assumptions and possible general principles. I use
+her proposals to guide further questions and checks. The aim is to involve AI in
+the search for an explanation as well as in the production of an argument. A
+proposed principle should explain why several steps belong together and help us
+treat a second problem with less repeated work; whether it does is for people
+to judge. Madore~\hyperlink{pp:P6}{[P6]} describes open problems as milestones
+toward understanding and new theories, and argues that understanding is a human
+activity that computers cannot perform for us.
+Lerario~\hyperlink{pp:P13}{[P13]}, in ``Qualitative growth'' and ``Continuity
+of research,'' discusses organizing separate results through common principles
+and allows that theories and research directions could originate in artificial
+systems.
 
 Section~\ref{S:theory-outlook} records the first candidates from this exercise.
 It separates the classical tools, the structure visible in this proof and the
