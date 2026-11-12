@@ -4,7 +4,28 @@
 > (per the `lean-dev` skill). The mathematics authority is `../Progress.md`.
 > `.lean-dev-state.json` mirrors this file and changes only together with it.
 
-## Current wave
+## Status (kept current; updated at every milestone)
+
+Last updated: 2026-11-12, after the wave-L8 proposal (Article 35a6847).
+
+| Item | Current state |
+|---|---|
+| Current wave | **L8 PROPOSED** (2026-11-12): eight items, six decisions with defaults; awaiting Le's approval (bullet "WAVE L8: PROPOSED" below) |
+| Last closed gate | **L7**, closed by Le 2026-11-12 at companion `f3be834` over manuscript `a284420`, together with the re-anchor from `975feb3` |
+| Manuscript anchor | Article `a284420` (#3's two approved edits: `L:spatial-fourier-bound`, `E:damped-multiplier-comparison`) |
+| Companion | `chenle02/stratonovich-ham-second-moment-lean`, PRIVATE (HOLD: no public flip without Le); lean-pkg `verified-private` at `f3be834` (receipts `5aa557b`: comparator PASS over all 1430 theorem claims; lower tier 0 sorry, 1731 claim axioms, standard axioms only); docs-only HEAD `0269e61`; `claims ledger` READY, 1071 required, 1681 verified, 0 open |
+| Claims | 1731 (1430 theorems, 301 definitions); ledger 891 labelled, 840 no direct label |
+| Coverage rows (67) | 39 same-assumptions (27 full, 12 narrower); 24 inputs-supplied (5 every conclusion proved, 19 steps or narrower); 4 outside (`T:full-upper`, `T:intrinsic-occupation-ceiling`, `T:intrinsic-second-moment`, `T:white-moment-bounds`) |
+| Manuscript labelled results (220 T/P/L/C at `a284420`) | about 12% formalized as stated with nothing supplied (27); 18% with the manuscript's hypotheses incl. narrower (39); 29% with some Lean content (63); the 8 theorems: none end to end. Proof-weighted toward the main theorems: roughly 10-15%; the rest needs D1 (Gaussian chaos), D2, D5, D7, D8 foundations |
+| Key named inputs still supplied | `S1Bdd` (L8-c proposes its deterministic discharge); `TerminalWickInput` (L8-f); `L:fixed-split`, energy-split identity (P:interval-coefficients); operator/stochastic inputs of `C:static-interaction`; D1/D7/D8 links of `P:wave-two-variances`, `P:masked-noise-completion` |
+| Narrowed rows to restore | `L:spatial-fourier-bound` (R_alpha identity: L8-a); `L:damped-homogeneous-norms` (lower bounds, smoothing: L8-b) |
+| External kernel replay (Easley, `leanchecker --fresh`) | all library modules through wave L6 pass (latest: wave L6 at `bfa2fd0`, 16/16, companion `0269e61`); the 8 wave-L7 modules not yet replayed (laptop VPN down; Easley reachable via <MACHINE>) |
+| Book Appendix F (#24) | pinned to verified `f3be834`, coverage `ed3cd68` (book `dcb031e`); single SHA `0269e61` sent for the re-pin (scope fix + L6 replay) |
+| Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
+| Decisions open for Le | approve L8 (with defaults); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
+| Next actions | on L8 approval: launch nine agents; Easley replay of the L7 modules via <MACHINE>; L8 integration, comparator, receipts, reviews, Le's gate |
+
+## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
 
 - **Wave:** L0 (setup) — `CLOSED` 2026-11-09 (Le approved decision point 4
   in session; the open-release design D4 binds the companion).
