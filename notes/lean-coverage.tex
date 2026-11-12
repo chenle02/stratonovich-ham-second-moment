@@ -25,11 +25,13 @@ asymptotics. Where a row says that inputs are supplied, they enter Lean as
 named hypotheses.
 
 The last of these reviews covered the results added most recently to the
-companion, and its move to the current version of the book: six independent
-reviews, whose findings were repaired, and a confirmation review; then, after
-the move, a narrow review and a second confirmation review. Their result was
-reviewed and accepted by the author; it is still AI-reviewed, not
-human-verified.
+companion: six independent reviews, whose findings (all in the documentation)
+were repaired in two rounds, then a confirmation review and a second
+confirmation review. Their result was reviewed and accepted by the author; it
+is still AI-reviewed, not human-verified. In accepting it, the author recorded
+two points: in Lemma~\ref{L:terminal-wick} the Lean companion takes the chain
+measures as given through their total mass, and it assumes a measurability
+condition on the covariance that the book does not need.
 
 \ifdefined\lcHaveReceipts
 \begin{wrapfigure}{r}{0.19\textwidth}
@@ -64,11 +66,15 @@ Besides these rows, the companion checks \lcUnlabelled{} further computations
 that do not correspond to a single numbered result of the book.
 
 \ifdefined\lcHaveCompletion
+\Needspace{22\baselineskip}
 \medskip
 \noindent\textbf{How much of the book is covered.} The book has
 \lcNumberedTotal{} numbered results (theorems, propositions, lemmas and
 corollaries). The table gives the status of each in Lean;
 \lcNotFormalized{} of them (\lcNotFormalizedShare\%) are not formalized at all.
+\ifnum\lcAddedSinceRecord>0 The companion's record was made against an earlier
+revision of the book with \lcRecordTotal{} numbered results; the
+\lcAddedSinceRecord{} added since then are counted here as not formalized.\fi
 \begin{center}
 \small\lcCompletionTable
 \end{center}

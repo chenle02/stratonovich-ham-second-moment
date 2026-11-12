@@ -1,4 +1,4 @@
-<!-- Headings and tables of the Lean companion's COMPLETION.md at fcdf252af6b6, pinned by pin_companion.py; the prose is omitted. -->
+<!-- Headings and tables of the Lean companion's COMPLETION.md at ff401578ebbb, pinned by pin_companion.py; the prose is omitted. -->
 
 # Completion record
 
@@ -16,17 +16,26 @@
 | `L5-gate` | `712c307` | 2026-11-11 | `975feb3` | 972 | 810 | 46: 26 / 16 / 4 | wave L5: H_a completion, masked continuous wave, auxiliary norm, damped norms, heat envelope, phase Bessel |
 | `L6-gate` | `bfa2fd0` | 2026-11-11 | `975feb3` | 1463 | 1210 | 59: 34 / 21 / 4 | wave L6: wave Green measures, quotient obstruction, two variances, variational floor and rate, spatial ratio, static controls, series type, white width |
 | `L7-gate` | `f3be834` | 2026-11-12 | `a284420` | 1731 | 1430 | 67: 39 / 24 / 4 | wave L7 (inventory product, series tail, H^1 density, four-linear, occupation class, interval/static steps) and re-anchor to a284420 |
+| `L8-gate` | `aff7409` | 2026-11-12 | `a284420` | 2108 | 1747 | 71: 43 / 25 / 3 | wave L8 (spectral mass identity, damped-norm lower bounds, space-time positivity, finite occupation ceiling, spatial bracket, mask removal, finite and terminal Wick, symplectic free group, static phase Cauchy-Schwarz; S1Bdd proved) |
 
-## Completion by labelled result (manuscript a284420, companion f3be834)
+## In progress (not yet gated; updated 2026-11-12)
+
+| Wave | State | Content |
+|---|---|---|
+| L9 | integrated with L8; documentation merged; correspondence reviews and a confirmation review found documentation corrections only (no Lean error), all repaired; comparator over all 2050 theorem claims; a narrow re-confirmation running; receipts, the external kernel replay and the author's gate pending | low-alpha convolution in d = 1, 2, 3 and phase contractions in d = 3, with nothing supplied, wave Green Fourier identities, complex phase scalar steps, the exact occupation ceiling C_occ, Gaussian Hermite polynomials, the Fock layer and the Fock form (spatial column bound supplied), the one-mode case of the finite word cutoff |
+| L10 | all eight items integrated, documentation merged; L9 repairs being merged in, comparator being extended | higher Riesz bound in full for d = 2 and 3 with the optimal constant, the white-noise model and the white moment bounds for S_2^pos (spatial energy supplied), the fixed split (model-free core, and the assembly on the Fock model with its analytic inputs supplied), alpha-one convolution from the homogeneity hypothesis alone |
+| L11 | five items done (four integrated); documentation drafted | the spatial column bound of the Fock form proved for a concrete Fourier-side model; the chain measures of the terminal Wick lemma constructed, the lemma and the second-moment sentence of the uniform series tail stated for them with the manuscript's hypotheses only, and their Green regularization limit; the static interaction bounds with fewer supplied inputs; the finite word cutoff for several modes per color, which removes the fixed split's added hypothesis on the cutoff coefficients (the Duhamel word expansion of the coefficients supplied instead) |
+
+## Completion by labelled result (manuscript a284420, companion aff7409, gate L8-gate)
 
 | Status | Count | Share |
 |---|---|---|
-| formalized, manuscript hypotheses | 23 | 10% |
-| formalized, manuscript hypotheses, narrower conclusion | 12 | 5% |
+| formalized, manuscript hypotheses | 24 | 11% |
+| formalized, manuscript hypotheses, narrower conclusion | 15 | 7% |
 | inputs supplied, every conclusion proved | 5 | 2% |
-| inputs supplied, steps/narrower | 19 | 9% |
-| outside Lean (main theorem) | 4 | 2% |
-| not formalized | 157 | 71% |
+| inputs supplied, steps/narrower | 20 | 9% |
+| outside Lean (main theorem) | 3 | 1% |
+| not formalized | 153 | 70% |
 | total labelled results (Theorem, Proposition, Lemma, Corollary) | 220 | 100% |
 
 ## Covered displays and remarks (not counted above)
@@ -70,7 +79,7 @@
 | `L:inventory-product` | Lemma | notes_stratonovich_ham_second_moment.tex:2986 | formalized, manuscript hypotheses |
 | `L:fixed-split` | Lemma | notes_stratonovich_ham_second_moment.tex:3053 | not formalized |
 | `P:interval-coefficients` | Proposition | notes_stratonovich_ham_second_moment.tex:3402 | inputs supplied, steps/narrower |
-| `L:terminal-wick` | Lemma | notes_stratonovich_ham_second_moment.tex:3600 | not formalized |
+| `L:terminal-wick` | Lemma | notes_stratonovich_ham_second_moment.tex:3600 | inputs supplied, steps/narrower |
 | `L:uniform-series-tail` | Lemma | notes_stratonovich_ham_second_moment.tex:3703 | inputs supplied, every conclusion proved |
 | `T:full-upper` | Theorem | notes_stratonovich_ham_second_moment.tex:3758 | outside Lean (main theorem) |
 | `P:white-four` | Proposition | notes_stratonovich_ham_second_moment.tex:4160 | not formalized |
@@ -166,7 +175,7 @@
 | `P:tube-coarse-envelope` | Proposition | integrated_gaussian_tubes.tex:379 | not formalized |
 | `L:tube-rayleigh-tail` | Lemma | integrated_gaussian_tubes.tex:458 | formalized, manuscript hypotheses, narrower conclusion |
 | `L:tube-half-action` | Lemma | integrated_gaussian_tubes.tex:485 | not formalized |
-| `L:positive-raw-embedding` | Lemma | integrated_intrinsic_constant.tex:23 | not formalized |
+| `L:positive-raw-embedding` | Lemma | integrated_intrinsic_constant.tex:23 | formalized, manuscript hypotheses, narrower conclusion |
 | `L:positive-physical-gram` | Lemma | integrated_intrinsic_constant.tex:113 | not formalized |
 | `L:positive-uniform-optimizer` | Lemma | integrated_intrinsic_constant.tex:158 | not formalized |
 | `P:positive-signed-comparison` | Proposition | integrated_intrinsic_constant.tex:220 | not formalized |
@@ -178,8 +187,8 @@
 | `L:occupation-raw-square` | Lemma | integrated_occupation_ceiling.tex:24 | not formalized |
 | `P:raw-occupation-energy` | Proposition | integrated_occupation_ceiling.tex:93 | not formalized |
 | `L:occupation-rayleigh-selection` | Lemma | integrated_occupation_ceiling.tex:150 | not formalized |
-| `T:intrinsic-occupation-ceiling` | Theorem | integrated_occupation_ceiling.tex:205 | outside Lean (main theorem) |
-| `C:intrinsic-spatial-bracket` | Corollary | integrated_occupation_ceiling.tex:253 | inputs supplied, steps/narrower |
+| `T:intrinsic-occupation-ceiling` | Theorem | integrated_occupation_ceiling.tex:205 | formalized, manuscript hypotheses, narrower conclusion |
+| `C:intrinsic-spatial-bracket` | Corollary | integrated_occupation_ceiling.tex:253 | formalized, manuscript hypotheses, narrower conclusion |
 | `L:point-actual-finiteness` | Lemma | integrated_point_transfer.tex:20 | not formalized |
 | `L:point-fast-sources` | Lemma | integrated_point_transfer.tex:62 | not formalized |
 | `L:point-compact-source` | Lemma | integrated_point_transfer.tex:127 | not formalized |
@@ -219,13 +228,13 @@
 | `P:source-ordinary-response` | Proposition | integrated_source_convergence.tex:404 | not formalized |
 | `L:spatial-physical-pair` | Lemma | integrated_spatial_occupation.tex:12 | formalized, manuscript hypotheses |
 | `L:spatial-static-controls` | Lemma | integrated_spatial_occupation.tex:40 | formalized, manuscript hypotheses, narrower conclusion |
-| `L:spatial-fourier-bound` | Lemma | integrated_spatial_occupation.tex:102 | formalized, manuscript hypotheses, narrower conclusion |
+| `L:spatial-fourier-bound` | Lemma | integrated_spatial_occupation.tex:102 | formalized, manuscript hypotheses |
 | `P:spatial-smooth-ratio` | Proposition | integrated_spatial_occupation.tex:167 | formalized, manuscript hypotheses, narrower conclusion |
 | `P:spatial-four-linear` | Proposition | integrated_spatial_occupation.tex:220 | formalized, manuscript hypotheses, narrower conclusion |
 | `P:spatial-energy-map` | Proposition | integrated_spatial_occupation.tex:301 | formalized, manuscript hypotheses, narrower conclusion |
 | `L:occupation-kernel-row` | Lemma | integrated_spatial_occupation.tex:361 | formalized, manuscript hypotheses |
 | `P:occupation-physical-class` | Proposition | integrated_spatial_occupation.tex:387 | formalized, manuscript hypotheses, narrower conclusion |
-| `L:symplectic-free` | Lemma | integrated_symplectic_phase.tex:31 | not formalized |
+| `L:symplectic-free` | Lemma | integrated_symplectic_phase.tex:31 | inputs supplied, steps/narrower |
 | `L:symplectic-source-mean` | Lemma | integrated_symplectic_phase.tex:136 | not formalized |
 | `P:symplectic-source` | Proposition | integrated_symplectic_phase.tex:187 | not formalized |
 | `P:symplectic-raw` | Proposition | integrated_symplectic_phase.tex:221 | not formalized |
@@ -247,9 +256,9 @@
 | `L:variational-heat-envelope` | Lemma | integrated_unmasked_variational.tex:24 | formalized, manuscript hypotheses |
 | `L:variational-global-mean` | Lemma | integrated_unmasked_variational.tex:65 | formalized, manuscript hypotheses, narrower conclusion |
 | `P:variational-unmasked-rate` | Proposition | integrated_unmasked_variational.tex:99 | formalized, manuscript hypotheses, narrower conclusion |
-| `P:variational-remove-mask` | Proposition | integrated_unmasked_variational.tex:169 | not formalized |
+| `P:variational-remove-mask` | Proposition | integrated_unmasked_variational.tex:169 | inputs supplied, steps/narrower |
 | `L:variational-control-dilation` | Lemma | integrated_unmasked_variational.tex:225 | formalized, manuscript hypotheses, narrower conclusion |
-| `P:variational-positive-scores` | Proposition | integrated_unmasked_variational.tex:271 | inputs supplied, steps/narrower |
+| `P:variational-positive-scores` | Proposition | integrated_unmasked_variational.tex:271 | formalized, manuscript hypotheses, narrower conclusion |
 | `P:frequency-row` | Proposition | integrated_wave_variance.tex:47 | formalized, manuscript hypotheses |
 | `C:frequency-time` | Corollary | integrated_wave_variance.tex:141 | formalized, manuscript hypotheses |
 | `P:actual-wave-form` | Proposition | integrated_wave_variance.tex:212 | inputs supplied, steps/narrower |

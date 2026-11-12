@@ -74,7 +74,7 @@ COMPLETION_STATUS = [  # COMPLETION.md status -> (coverage key, wording in the b
      "Every conclusion proved; inputs supplied"),
     ("inputs supplied, steps/narrower", ("inputs-supplied", "weaker"),
      "Steps checked; inputs supplied"),
-    ("outside Lean (main theorem)", ("outside", "full"), "Outside Lean (main theorems)"),
+    ("outside Lean (main theorem)", ("outside", "full"), "Main theorems outside Lean"),
     ("not formalized", None, "Not formalized"),
 ]
 NUMBERED = ("T:", "P:", "L:", "C:")
@@ -104,9 +104,15 @@ def completion_tex(path, rows, numbers, commit, sm):
     total = by_status.pop("total labelled results (Theorem, Proposition, Lemma, Corollary)")
     book = {k for k in numbers if k.startswith(NUMBERED)}
     listed = {r[0].strip("`") for r in md_table(lines, "## Every labelled result")}
-    if listed != book or total != len(book):
-        raise SystemExit(f"COMPLETION.md lists {len(listed)} labelled results, total {total}; "
-                         f"the book has {len(book)} (differences: {sorted(listed ^ book)[:5]})")
+    if total != len(listed) or listed - book:
+        raise SystemExit(f"COMPLETION.md lists {len(listed)} labelled results (total {total}); "
+                         f"missing from the book: {sorted(listed - book)[:5]}")
+    # Results added to the book after the companion's manuscript revision: they
+    # are not in the record and cannot be covered, so they count as not formalized.
+    added = book - listed
+    covered_labels = {r["paper"]["label"] for r in rows}
+    if added & covered_labels:
+        raise SystemExit(f"labels covered but missing from COMPLETION.md: {sorted(added & covered_labels)[:5]}")
     cov = collections.Counter((r["class"], r.get("conclusion", "full")) for r in rows
                               if r["paper"]["label"].startswith(NUMBERED))
     covered = 0
@@ -117,6 +123,8 @@ def completion_tex(path, rows, numbers, commit, sm):
             covered += cov[key]
     if by_status["not formalized"] != total - covered:
         raise SystemExit("COMPLETION.md 'not formalized' does not equal the uncovered results")
+    by_status["not formalized"] += len(added)
+    total = len(book)
     other = [r["paper"]["label"] for r in rows if not r["paper"]["label"].startswith(NUMBERED)]
     same_full_all = sum(1 for r in rows if (r["class"], r.get("conclusion", "full")) == ("same-assumptions", "full"))
     if same_full_all - cov[("same-assumptions", "full")] != sum(
@@ -153,6 +161,8 @@ def completion_tex(path, rows, numbers, commit, sm):
         f"\\newcommand{{\\lcSameFullAll}}{{{same_full_all}}}\n",
         f"\\newcommand{{\\lcOtherRows}}{{{len(other)}}}\n",
         f"\\newcommand{{\\lcFirstStageDate}}{{{dt.date.fromisoformat(ms[0][2]).strftime('%B')}~{dt.date.fromisoformat(ms[0][2]).day}}}\n",
+        f"\\newcommand{{\\lcRecordTotal}}{{{len(listed)}}}\n",
+        f"\\newcommand{{\\lcAddedSinceRecord}}{{{len(added)}}}\n",
         "\\newcommand{\\lcHaveCompletion}{1}\n",
     ]
 

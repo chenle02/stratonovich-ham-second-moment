@@ -19276,3 +19276,23 @@ stratonovich-nogo-chapter12-math-2026-11-12 has tag object
 same 141aa7a8 commit. The annotation explicitly retains the open final
 visual/native-format and whole-book gates. Publication/notification telemetry:
 reviews/2026-11-12-nogo-integration/publication-math-checkpoint.json.
+
+## 2026-11-12: Appendix F re-pinned to the wave-L8 gate
+
+Le closed the wave-L8 gate at companion aff7409 (tag L8-gate) and asked to move
+Appendix F there. Pin: verified aff7409 (receipts d476e17: comparator 1747
+theorems PASS, lower tier 0 sorry and standard axioms over 2108 claims; ledger
+READY, 2058 verified, 0 open), coverage from ff40157 (latest docs-only
+successor: README records Le's acceptance and the L7 cluster replay, 10/10
+PASS). Text: last-review paragraph for L8 (six reviews, documentation findings
+repaired in two rounds, confirmation and re-confirmation; Le's two recorded
+points: chain measures of Lemma 3.3.6 supplied through their mass, and a
+measurability condition on the covariance not needed by the book); replay
+sentence back to "the most recent stage" (L8 array still running). Theorem
+11.3.4 is now formalized with a narrower conclusion, so the preface says "most
+of the main theorems are outside Lean" (Le) and the completion table says "Main
+theorems outside Lean" (3). The book now has 253 numbered results (Chapter 12
+added 33 after the companion's revision a284420); the generator counts them as
+not formalized (186, 74%) with an explaining line, and still refuses if a
+recorded result is missing from the book or an added one is covered. Book 381
+pages; F on 345-350; guides updated. 0/0/0.

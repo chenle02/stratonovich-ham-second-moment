@@ -1,5 +1,5 @@
 # Labels refer to manuscript revision a284420 (see provenance/manuscript-anchor.json).
-# 840 further claims check computations with no direct manuscript label; see docs/statement-ledger.md.
+# 986 further claims check computations with no direct manuscript label; see docs/statement-ledger.md.
 schema: coverage/1
 package: stratonovich-ham-second-moment-lean
 kind: paper
@@ -7,10 +7,10 @@ stack: lts-2026.10
 manuscript:
   title: The second moment of the hyperbolic Anderson model
   version: unposted
-summary: Thirty-nine labelled results are formalized in full with the manuscript's hypotheses (twelve with a narrower
+summary: Forty-three labelled results are formalized in full with the manuscript's hypotheses (fifteen with a narrower
   conclusion, see their rows) and five more with every conclusion proved and analytic inputs supplied; steps or
-  parts of 19 further labelled results are checked with analytic inputs supplied; the main theorems are outside
-  Lean.
+  parts of 20 further labelled results are checked with analytic inputs supplied; three of the four main theorems
+  are outside Lean.
 rows:
 - paper:
     number: Corollary C:frequency-time
@@ -28,15 +28,30 @@ rows:
     number: Corollary C:intrinsic-spatial-bracket
     title: A common spatial-energy bracket
     label: C:intrinsic-spatial-bracket
-  class: inputs-supplied
+  class: same-assumptions
   conclusion: weaker
-  conclusion_scope: Lean checks only the finite, algebraic or scalar steps of this result listed in docs/statement-ledger.md,
-    not the result itself.
+  conclusion_scope: "Lean proves, with the section's hypotheses (H:homog, Gamma != 0, a = alpha0) and nothing supplied, E:intrinsic-spatial-bracket and the comparison for the variational value S_2^pos in place of C_2(Gamma,a) (identified by T:intrinsic-second-moment), with the energy D_(1/2)(K_0 R_sp)^(2/(2-alpha)) in place of E_(1/2)^O in the comparison; lambda is the square root of the real Rayleigh supremum."
   claims:
+  - stratonovich-ham-second-moment-lean/l8-completed-intrinsic-spatial-bracket-paper-completed
+  - stratonovich-ham-second-moment-lean/l8-completed-spatial-bracket-upper-paper-completed
+  - stratonovich-ham-second-moment-lean/l8-completed-spatial-bracket-lower-s-sup-paper-completed
+  - stratonovich-ham-second-moment-lean/l8-completed-occupation-ceiling-k0-holds
+  - stratonovich-ham-second-moment-lean/spatial-bracket-intrinsic-spatial-bracket-paper
+  - stratonovich-ham-second-moment-lean/spatial-bracket-spatial-bracket-lower-paper
+  - stratonovich-ham-second-moment-lean/spatial-bracket-spatial-bracket-lower-s-sup-paper
+  - stratonovich-ham-second-moment-lean/spatial-bracket-spatial-bracket-upper-paper
+  - stratonovich-ham-second-moment-lean/spatial-bracket-ceiling-value-mul
+  - stratonovich-ham-second-moment-lean/spatial-bracket-f0-lt-fa
+  - stratonovich-ham-second-moment-lean/spatial-bracket-log-gap-pos
+  - stratonovich-ham-second-moment-lean/spatial-bracket-log-fb-ratio
+  - stratonovich-ham-second-moment-lean/spatial-bracket-ceiling-ratio-exp
+  - stratonovich-ham-second-moment-lean/spatial-bracket-counterexample-integers
+  - stratonovich-ham-second-moment-lean/spatial-bracket-counterexample-log
+  - stratonovich-ham-second-moment-lean/spatial-bracket-counterexample-ratio
   - stratonovich-ham-second-moment-lean/raw-value-ceiling-strict-log-gap
-  inputs:
-  - the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses
-    (see docs/statement-ledger.md)
+  note: The ceiling input (T:intrinsic-occupation-ceiling with C_occ <= K_0 R_sp) is proved deterministically in
+    OccupationCeilingFinite and discharged in L8Completed. v_Psi is the integral form; the direct zero case Gamma
+    = 0 after the corollary is not formalized.
 - paper:
     number: Corollary C:static-interaction
     title: Summable static interaction bounds
@@ -147,8 +162,26 @@ rows:
     label: L:damped-homogeneous-norms
   class: same-assumptions
   conclusion: weaker
-  conclusion_scope: "Only the upper bounds of E:damped-multiplier-comparison are proved (any measurable multiplier in [0,1], measurable domains S inside S'); its lower bounds are stated only for the full and tail domains without a multiplier, and the remarks that Gaussian smoothing gives such multipliers and keeps the N_0 mass identity are not formalized."
+  conclusion_scope: "Proved with the lemma's hypotheses except part of the closing smoothing remark: spatial smoothing of the covariance appears only as membership of the Gaussian factor in the multiplier class (its spectral identification is not formalized), and Green smoothing is identified with the smoothed norm only in dimension one. The N_0 mass identity under Green smoothing holds in every dimension."
   claims:
+  - stratonovich-ham-second-moment-lean/damped-multiplier-damped-homogeneous-norms-full-wave
+  - stratonovich-ham-second-moment-lean/damped-multiplier-damped-homogeneous-norms-full-paper
+  - stratonovich-ham-second-moment-lean/damped-multiplier-damped-multiplier-comparison
+  - stratonovich-ham-second-moment-lean/damped-multiplier-n1on-nonneg
+  - stratonovich-ham-second-moment-lean/damped-multiplier-n2on-sq-nonneg
+  - stratonovich-ham-second-moment-lean/damped-multiplier-is-multiplier
+  - stratonovich-ham-second-moment-lean/damped-multiplier-is-multiplier-mul
+  - stratonovich-ham-second-moment-lean/damped-multiplier-is-multiplier-gauss-mult
+  - stratonovich-ham-second-moment-lean/damped-multiplier-gauss-kernel
+  - stratonovich-ham-second-moment-lean/damped-multiplier-green-mass-conv
+  - stratonovich-ham-second-moment-lean/damped-multiplier-n0-conv
+  - stratonovich-ham-second-moment-lean/damped-multiplier-gauss-wave-green-mass
+  - stratonovich-ham-second-moment-lean/damped-multiplier-char-fun-gauss-kernel-conv
+  - stratonovich-ham-second-moment-lean/damped-multiplier-n2-green-sq-gauss
+  - stratonovich-ham-second-moment-lean/damped-multiplier-damped-homogeneous-norms-fourier-one
+  - stratonovich-ham-second-moment-lean/damped-multiplier-damped-homogeneous-norms-fourier-paper
+  - stratonovich-ham-second-moment-lean/damped-multiplier-n2-green-sq-gauss-eq
+  - stratonovich-ham-second-moment-lean/damped-multiplier-green-fourier-one
   - stratonovich-ham-second-moment-lean/wave-green-damped-homogeneous-norms-wave
   - stratonovich-ham-second-moment-lean/wave-green-n0-wave-green
   - stratonovich-ham-second-moment-lean/wave-green-wave-green-green-mass
@@ -171,10 +204,9 @@ rows:
   - stratonovich-ham-second-moment-lean/damped-norms-n2-outer-integrable
   - stratonovich-ham-second-moment-lean/damped-norms-n1-integrable
   - stratonovich-ham-second-moment-lean/masked-spectral-growth-spectral-homogeneous-of-homog
-  note: Under H:homog alone (no Gamma != 0) in damped_homogeneous_norms_wave, N_0 from waveGreen d (mass proved; d
-    = 3 uses toSphere as surface measure, Le's decision 4). The multiplier comparison is N1on_smoothed_mono and
-    N2onSq_smoothed_mono, for the manuscript's own m and S inside S', compared after time integration at each lambda
-    as in the TeX.
+  note: Under H:homog alone in damped_homogeneous_norms_full_wave (d = 3 Green measure via toSphere, Le's decision
+    4). Covariance smoothing is the membership of e^(-eta|xi|^2) in the class; Green smoothing p*G is that multiplier
+    on mu for the transforms of G_s, identified with N_{2,m,S} in d = 1 (Fourier identity of G_s proved there only).
 - paper:
     number: Lemma L:driver-holder-limit
     title: Hölder path limit
@@ -391,6 +423,24 @@ rows:
     projection in H, no basis; the wrapper states the TeX's hypotheses, separability carried unused. Integrability
     of the integrands is part of the conclusion.
 - paper:
+    number: Lemma L:positive-raw-embedding
+    title: Inclusion into the covariance space and the smooth mean
+    label: L:positive-raw-embedding
+  class: same-assumptions
+  conclusion: weaker
+  conclusion_scope: "Lean proves the variance identity in integral form (for Psi in C_pos the integral of |s-t|^(-a) B_Gamma(Psi_s,Psi_t) over I^2 is genuine and equals v_Psi >= 0) and the row bound int_I |s-t|^(-a) dt <= K_0 with the scalar Schur bound; H_t, H_I, the map J_G and the mean identity for the uniform E mean are not formalized."
+  claims:
+  - stratonovich-ham-second-moment-lean/space-time-positivity-positive-raw-variance-form-paper
+  - stratonovich-ham-second-moment-lean/space-time-positivity-st-form-self-eq-raw-cost
+  - stratonovich-ham-second-moment-lean/space-time-positivity-st-integrand-integrable
+  - stratonovich-ham-second-moment-lean/space-time-positivity-st-form
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-row-le
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-schur-sharp
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-k0
+  note: The space-time form is defined with the physical pairing B_Gamma, so the identity is the integral form of
+    ||Psi||^2_(H_I) = v_Psi through E:positive-bochner-inclusion with G = H_sp. The Schur bound is proved for nonnegative
+    scalar functions in [0,inf] by 2xy <= x^2 + y^2 and Tonelli. Gamma != 0 is carried, unused.
+- paper:
     number: Lemma L:positive-series-type
     title: Type of a positive coefficient series
     label: L:positive-series-type
@@ -475,6 +525,27 @@ rows:
   - the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses
     (see docs/statement-ledger.md)
 - paper:
+    number: Lemma L:spatial-fourier-bound
+    title: Deterministic Fourier bound for the spatial energy
+    label: L:spatial-fourier-bound
+  class: same-assumptions
+  conclusion: full
+  claims:
+  - stratonovich-ham-second-moment-lean/spectral-mass-identity-spatial-fourier-bound-ralpha-paper
+  - stratonovich-ham-second-moment-lean/spectral-mass-identity-resolvent-eq-ralpha-paper
+  - stratonovich-ham-second-moment-lean/spectral-mass-identity-resolvent-eq-ralpha
+  - stratonovich-ham-second-moment-lean/spectral-mass-identity-resolvent-one-eq-ralpha
+  - stratonovich-ham-second-moment-lean/spectral-mass-identity-ralpha
+  - stratonovich-ham-second-moment-lean/spatial-fourier-bound-spatial-fourier-bound-paper
+  - stratonovich-ham-second-moment-lean/spatial-fourier-bound-spatial-fourier-bound
+  - stratonovich-ham-second-moment-lean/spatial-fourier-bound-grad-energy-pos
+  - stratonovich-ham-second-moment-lean/spatial-fourier-bound-integral-autocorr-eq-spectral
+  - stratonovich-ham-second-moment-lean/spatial-fourier-bound-norm-fourier-q-sq-mul-le
+  - stratonovich-ham-second-moment-lean/spatial-fourier-bound-scalar-identity
+  note: Under H:homog alone (Gamma = 0 and singular covariances included), with R_alpha of E:intro-spectral-mass
+    (B_1 the open unit ball), proved equal to int mu(dxi)/(1+|xi|^2) by layer cake and a Beta integral; fourierQ
+    uses e^(+i xi.x), the conjugate of the TeX's F_0 Q for real Q, same modulus; B_Gamma is spatialPair (pairing_eq_spatialPair).
+- paper:
     number: Lemma L:spatial-physical-pair
     title: The physical two-point integral
     label: L:spatial-physical-pair
@@ -486,30 +557,15 @@ rows:
     representatives, that the integrand is nu-a.e. measurable, and that Lebesgue-a.e. convergence (of N-indexed
     real sequences) transfers to nu-a.e. convergence at x and x - y.
 - paper:
-    number: Lemma L:spatial-fourier-bound
-    title: Deterministic Fourier bound for the spatial energy
-    label: L:spatial-fourier-bound
-  class: same-assumptions
-  conclusion: weaker
-  conclusion_scope: "The bound is proved with the constant R_Gamma(1) = int mu(dxi)/(1+|xi|^2) in place of R_alpha of E:intro-spectral-mass; the identity R_Gamma(1) = R_alpha, which the lemma takes from the resolvent calculation in the proof of L:damped-homogeneous-norms, is not formalized."
-  claims:
-  - stratonovich-ham-second-moment-lean/spatial-fourier-bound-spatial-fourier-bound-paper
-  - stratonovich-ham-second-moment-lean/spatial-fourier-bound-spatial-fourier-bound
-  - stratonovich-ham-second-moment-lean/spatial-fourier-bound-grad-energy-pos
-  - stratonovich-ham-second-moment-lean/spatial-fourier-bound-integral-autocorr-eq-spectral
-  - stratonovich-ham-second-moment-lean/spatial-fourier-bound-norm-fourier-q-sq-mul-le
-  - stratonovich-ham-second-moment-lean/spatial-fourier-bound-scalar-identity
-  note: Under H:homog alone (Gamma = 0 and singular covariances included), by the lemma's route; fourierQ uses
-    e^(+i xi.x), the conjugate of the TeX's F_0 Q for real Q, with the same modulus; B_Gamma is spatialPair, equal
-    to the extended pairing (pairing_eq_spatialPair).
-- paper:
     number: Lemma L:spatial-static-controls
     title: Smooth temporal controls
     label: L:spatial-static-controls
   class: same-assumptions
   conclusion: weaker
-  conclusion_scope: "lambda is the square root of the supremum of the real Rayleigh quotient, and I_Psi, v_Psi are given by their integral formulas (identification with sqrt(-E_s) and E W(Psi)^2 is not formalized); E:spatial-static-score is proved in the form that every number below the bound is exceeded by some admissible score; its supremum form assumes the boundedness claim of P:variational-positive-scores."
+  conclusion_scope: "lambda is the square root of the supremum of the real Rayleigh quotient, and I_Psi, v_Psi are given by their integral formulas (identification with sqrt(-E_s) and E W(Psi)^2 is not formalized); E:spatial-static-score is proved both in the form that every number below the bound is exceeded by some admissible score and in its supremum form, with nothing supplied."
   claims:
+  - stratonovich-ham-second-moment-lean/l8-completed-spatial-static-score-s-sup-st-paper-completed
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-spatial-static-score-s-sup-st-paper
   - stratonovich-ham-second-moment-lean/spatial-occupation-completed-spatial-static-controls-completed-paper
   - stratonovich-ham-second-moment-lean/spatial-occupation-completed-rayleigh-floor-of-homog
   - stratonovich-ham-second-moment-lean/spatial-occupation-completed-static-controls-of-homog
@@ -523,7 +579,53 @@ rows:
   - stratonovich-ham-second-moment-lean/spatial-static-controls-pairing-eq-spatial-pair
   note: Under H:homog, Gamma != 0, a = alpha0 and nothing supplied, Lean proves lambda_z(c)^2 finite and positive
     for c > 0, lambda_z Lipschitz on compact positive intervals, B_Gamma(z,z) finite, and the score bound in existential
-    form; positivity uses the dilation floor of VariationalFloor, a different route from TeX lines 57-62.
+    and supremum form; positivity uses the dilation floor of VariationalFloor, a different route from TeX lines
+    57-62.
+- paper:
+    number: Lemma L:symplectic-free
+    title: Free wave form and compact Young baseline
+    label: L:symplectic-free
+  class: inputs-supplied
+  conclusion: weaker
+  conclusion_scope: "Lean proves both compact-baseline displays on an abstract nonzero Hilbert space with a supplied free group, isometric velocity reversal and weakly vanishing translations, for a Young evolution given only by convergence of its left Young sums; it proves W_t^T J_symp W_t = J_symp per frequency and the force skewness for the L^2 pairing. J_E and the preservation of omega on E are not formalized."
+  claims:
+  - stratonovich-ham-second-moment-lean/symplectic-free-symplectic-free-paper
+  - stratonovich-ham-second-moment-lean/symplectic-free-symplectic-compact-young-baseline-paper
+  - stratonovich-ham-second-moment-lean/symplectic-free-symplectic-compact-product-baseline-paper
+  - stratonovich-ham-second-moment-lean/symplectic-free-symplectic-force-skew-paper
+  - stratonovich-ham-second-moment-lean/symplectic-free-compact-young-baseline
+  - stratonovich-ham-second-moment-lean/symplectic-free-compact-product-baseline
+  - stratonovich-ham-second-moment-lean/symplectic-free-free-wave-data-one-le-norm
+  - stratonovich-ham-second-moment-lean/symplectic-free-free-wave-data-norm-le-norm-add-compact
+  - stratonovich-ham-second-moment-lean/symplectic-free-norm-le-norm-add-compact
+  - stratonovich-ham-second-moment-lean/symplectic-free-norm-le-of-sub-compact
+  - stratonovich-ham-second-moment-lean/symplectic-free-tendsto-compact-of-weakly-null
+  - stratonovich-ham-second-moment-lean/symplectic-free-one-le-norm-of-reversal
+  - stratonovich-ham-second-moment-lean/symplectic-free-is-compact-operator-of-tendsto
+  - stratonovich-ham-second-moment-lean/symplectic-free-is-compact-operator-young-sum
+  - stratonovich-ham-second-moment-lean/symplectic-free-is-compact-operator-ordered-prod-sub
+  - stratonovich-ham-second-moment-lean/symplectic-free-free-matrix-at-symplectic
+  - stratonovich-ham-second-moment-lean/symplectic-free-free-matrix-symplectic
+  - stratonovich-ham-second-moment-lean/symplectic-free-det-free-matrix
+  - stratonovich-ham-second-moment-lean/symplectic-free-free-matrix-at-zero
+  - stratonovich-ham-second-moment-lean/symplectic-free-free-matrix-mul
+  - stratonovich-ham-second-moment-lean/symplectic-free-reversal-free-matrix
+  - stratonovich-ham-second-moment-lean/symplectic-free-omega-l2-force-skew
+  - stratonovich-ham-second-moment-lean/symplectic-free-omega-force-skew
+  - stratonovich-ham-second-moment-lean/symplectic-free-integrable-mul-force
+  - stratonovich-ham-second-moment-lean/symplectic-free-free-wave-data
+  - stratonovich-ham-second-moment-lean/symplectic-free-left-young-sums-converge
+  - stratonovich-ham-second-moment-lean/l8-completed-free-wave-data-nonempty
+  inputs:
+  - the free wave group on E = H^(1/2) x H^(-1/2) with its group law, the isometric velocity reversal with S_E(-h)
+    = R S_E(h) R, and the spatial translations, isometric, commuting with S_E(h) and weakly null as |y| -> infinity
+    (integrated_symplectic_phase.tex lines 103-122); E is an abstract nonzero real Hilbert space
+  - 'P:constant-young-linear on L(E) (integrated_symplectic_phase.tex lines 91-98): the left Young sums of X over
+    partitions of [s,t] converge in operator norm to U_X(t,s) - I; supplied in the weaker form of convergence along
+    some nontrivial filter of finite node lists in [s,t] (no ordering, endpoint or mesh condition)'
+  note: The two displays are stated exactly as in the lemma, with its hypotheses (1/2 < theta < 1, compact-valued
+    Hoelder paths starting at zero) and H:homog, which is used only for d >= 1; the force claim is the L^2 identity
+    for smooth bounded b, with the cancellation integrand integrable.
 - paper:
     number: Lemma L:temporal-equilibrium
     title: Exact potential and mass
@@ -531,6 +633,47 @@ rows:
   claims:
   - stratonovich-ham-second-moment-lean/temporal-equilibrium-temporal-equilibrium-paper
   class: same-assumptions
+- paper:
+    number: Lemma L:terminal-wick
+    title: The finite terminal-chain Wick formula
+    label: L:terminal-wick
+  class: inputs-supplied
+  conclusion: weaker
+  conclusion_scope: "Proved for real r only, with the chain measures replaced by arbitrary finite measures on n-tuples of points of [0,T] x R^d of total mass T^(2n)/(2n)! (g_n^{T,x} not constructed); the comparison is stated per mixed moment E[Y_m Y_n], not for partial sums; the Wick formula adds a hypothesis the lemma lacks: joint measurability of the covariance."
+  claims:
+  - stratonovich-ham-second-moment-lean/terminal-wick-terminal-wick-paper
+  - stratonovich-ham-second-moment-lean/terminal-wick-terminal-wick-mono-paper
+  - stratonovich-ham-second-moment-lean/terminal-wick-terminal-wick-input-of-nonneg
+  - stratonovich-ham-second-moment-lean/terminal-wick-integrable-prod-l2
+  - stratonovich-ham-second-moment-lean/terminal-wick-norm-chain-integral-le
+  - stratonovich-ham-second-moment-lean/terminal-wick-mixed-moment-eq-sum-pairings
+  - stratonovich-ham-second-moment-lean/terminal-wick-mixed-moment-odd
+  - stratonovich-ham-second-moment-lean/terminal-wick-mixed-moment-nonneg
+  - stratonovich-ham-second-moment-lean/terminal-wick-pairing-integral-nonneg
+  - stratonovich-ham-second-moment-lean/terminal-wick-mixed-moment-mono
+  - stratonovich-ham-second-moment-lean/terminal-wick-summable-norm-smul-chain-integral
+  - stratonovich-ham-second-moment-lean/terminal-wick-chain-integral-zero
+  - stratonovich-ham-second-moment-lean/terminal-wick-chain-mass-eq
+  - stratonovich-ham-second-moment-lean/terminal-wick-inner-chain-integral
+  - stratonovich-ham-second-moment-lean/finite-wick-centered-gaussian-field-wick-append
+  - stratonovich-ham-second-moment-lean/finite-wick-centered-gaussian-field-sq-moment-le
+  - stratonovich-ham-second-moment-lean/finite-wick-wick-multivariate-gaussian
+  - stratonovich-ham-second-moment-lean/finite-wick-card-pairings-even
+  inputs:
+  - 'from the proof of L:terminal-wick (lines 3657-3659), supplied as hmeas: for each n the L2(Omega)-valued map
+    z -> prod_j W(z_j) is a.e. strongly measurable for the chain measure (the TeX derives it from the cell-wise
+    mean-square continuity)'
+  - 'E:terminal-chain-measure is not constructed: the chain measures enter as finite measures on n-tuples of points
+    of [0,T] x R^d with total mass M_n(T); Lean proves M_n(T) = T^(2n)/(2n)! from the Green masses (lines 3648-3651),
+    but not that M_n(T) is the total mass of g_n^{T,x}'
+  - 'an added measurability restriction not in the manuscript, hK: the covariance (p, q) -> K(p, q) is jointly
+    Borel measurable on pairs of points of [0,T] x R^d (for the Wick formula and the integrability of the pairing
+    integrands); the TeX assumes only bounded variance and mean-square continuity on the open cells of a finite
+    time partition, which leave the covariance at the cut times unrestricted'
+  note: Lean also proves the majorant for n = 0 and, for nonnegative covariance, the two facts L:uniform-series-tail
+    takes from this lemma (without hK). The probability measure and the cell-wise mean-square continuity (behind
+    the supplied measurability) are carried, unused. The symmetrization and d = 3
+    regularization paragraphs are not formalized.
 - paper:
     number: Lemma L:tube-rayleigh-tail
     title: Exact Rayleigh tail bound
@@ -548,18 +691,22 @@ rows:
   class: inputs-supplied
   conclusion: full
   claims:
+  - stratonovich-ham-second-moment-lean/l8-completed-uniform-series-tail-terminal-wick-paper
   - stratonovich-ham-second-moment-lean/uniform-series-tail-uniform-series-tail-paper
   - stratonovich-ham-second-moment-lean/uniform-series-tail-uniform-series-tail-second-moment-paper
   - stratonovich-ham-second-moment-lean/uniform-series-tail-uniform-series-tail
   - stratonovich-ham-second-moment-lean/uniform-series-tail-uniform-series-tail-second-moment
   - stratonovich-ham-second-moment-lean/uniform-series-tail-term-bound
   - stratonovich-ham-second-moment-lean/uniform-series-tail-terminal-wick-input
+  - stratonovich-ham-second-moment-lean/terminal-wick-terminal-wick-input-of-nonneg
   inputs:
-  - 'from L:terminal-wick, for every eps, delta > 0 (structure TerminalWickInput): absolute L2 convergence of sum_n
-    r^n Y_n at the given r, and E[Y_m Y_n] >= 0 for all m, n'
-  note: Lean proves every conclusion (sum X_n absolutely convergent, u^{eps,delta}(1) -> u in L2, E:uniform-series-tail
-    for Y and X, E|u|^2 <= B_1) for any real L2 family with the two supplied facts; eps, delta -> 0+ is the joint
-    limit along nhdsWithin 0 (Ioi 0) squared; IsProbabilityMeasure carried, unused.
+  - 'the inputs of L:terminal-wick, for every eps, delta > 0: the supplied L2 strong measurability of the field
+    products (hmeas), and the chain measures entering as finite measures with total mass T^(2n)/(2n)! (g_n^{T,x}
+    not constructed)'
+  note: For terms Y_n of L:terminal-wick (chain integrals of a centered Gaussian field with nonnegative covariance)
+    TerminalWick proves both facts of TerminalWickInput and L8Completed states the composition, without the added
+    hK of that lemma; the wrapper holds for any real L2 family with them. eps, delta -> 0+ is the joint limit along nhdsWithin 0 (Ioi 0) squared; IsProbabilityMeasure
+    carried, unused.
 - paper:
     number: Lemma L:variational-control-dilation
     title: Radon and Rayleigh dilation
@@ -958,10 +1105,12 @@ rows:
     label: P:spatial-energy-map
   class: same-assumptions
   conclusion: weaker
-  conclusion_scope: "E:spatial-static-energy-score is proved in an existential form (every y below M_a^(-1/k) F_0(E_sp) is exceeded by some I_Psi - v_Psi/2, with lambda the square root of the Rayleigh supremum E:variational-real-rayleigh and v_Psi by its integral formula); the supremum form assumes the boundedness claim of P:variational-positive-scores."
+  conclusion_scope: "E:spatial-static-energy-score is proved, with nothing supplied, both in an existential form (every y below M_a^(-1/k) F_0(E_sp) is exceeded by some I_Psi - v_Psi/2) and in its supremum form, with lambda the square root of the Rayleigh supremum E:variational-real-rayleigh and v_Psi by its integral formula (their identification with sqrt(-E_s) and E W(Psi)^2 is not formalized)."
   claims:
   - stratonovich-ham-second-moment-lean/spatial-occupation-l7-completed-spatial-energy-value-paper-completed
   - stratonovich-ham-second-moment-lean/spatial-occupation-l7-completed-spatial-static-energy-score-paper-completed
+  - stratonovich-ham-second-moment-lean/l8-completed-spatial-static-energy-score-s-sup-st-paper-completed
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-spatial-static-energy-score-s-sup-st-paper
   - stratonovich-ham-second-moment-lean/spatial-occupation-l7-completed-spatial-static-energy-score-s-sup-paper-completed
   - stratonovich-ham-second-moment-lean/spatial-four-linear-spatial-energy-value-paper
   - stratonovich-ham-second-moment-lean/spatial-four-linear-spatial-static-energy-score-paper
@@ -1013,10 +1162,14 @@ rows:
     label: P:spatial-smooth-ratio
   class: same-assumptions
   conclusion: weaker
-  conclusion_scope: "E:spatial-smooth-score is proved in the form that every y below the bound is exceeded by some I_Psi - v_Psi/2 (lambda the square root of the supremum of the real Rayleigh quotient, v_Psi given by its integral formula); its form as a supremum rests on a named input, the boundedness claim of P:variational-positive-scores. R_0 < inf is proved without that input, by L:spatial-fourier-bound."
+  conclusion_scope: "E:spatial-smooth-score is proved, with nothing supplied, both in the form that every y below the bound is exceeded by some I_Psi - v_Psi/2 and as a bound on the supremum, with lambda the square root of the real Rayleigh supremum and v_Psi given by its integral formula (identification with sqrt(-E_s) and E W(Psi)^2 is not formalized). R_0 < inf is proved by L:spatial-fourier-bound."
   claims:
   - stratonovich-ham-second-moment-lean/spatial-occupation-completed-spatial-smooth-ratio-completed-paper
   - stratonovich-ham-second-moment-lean/spatial-occupation-completed-spatial-smooth-score-completed-paper
+  - stratonovich-ham-second-moment-lean/l8-completed-spatial-smooth-score-s-sup-st-paper-completed
+  - stratonovich-ham-second-moment-lean/l8-completed-r0-le-of-st-paper-completed
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-spatial-smooth-score-s-sup-st-paper
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-r0-le-of-st-paper
   - stratonovich-ham-second-moment-lean/spatial-occupation-completed-spatial-smooth-score-s-sup-completed-paper
   - stratonovich-ham-second-moment-lean/spatial-occupation-completed-r0-finite-of-s1-bdd-completed-paper
   - stratonovich-ham-second-moment-lean/spatial-occupation-completed-static-controls-of-homog
@@ -1030,35 +1183,64 @@ rows:
   - stratonovich-ham-second-moment-lean/spatial-smooth-ratio-spatial-smooth-score
   - stratonovich-ham-second-moment-lean/spatial-fourier-bound-spatial-fourier-bound-paper
   note: Under H:homog and Gamma != 0 with nothing supplied, R_0 is positive and finite by L:spatial-fourier-bound,
-    the manuscript's route since revision a284420, so R_0 < inf does not depend on T:full-upper; B_Gamma is
-    spatialPair, equal to the extended pairing (pairing_eq_spatialPair).
+    the manuscript's route since revision a284420, so R_0 < inf does not depend on T:full-upper; B_Gamma is spatialPair,
+    equal to the extended pairing (pairing_eq_spatialPair).
 - paper:
     number: Proposition P:static-phase-all-orders
     title: All regularized static phase orders
     label: P:static-phase-all-orders
   class: inputs-supplied
   conclusion: weaker
-  conclusion_scope: Lean checks only the elementary series bound of the proof (lines 2670-2679), sum x^n/(n!)^beta
-    <= 2 e^(3 x^(1/beta)) for 1/2 <= beta <= 3 and x >= 0, including its beta < 1 Hoelder case, not the proposition.
+  conclusion_scope: "Lean proves the Cauchy coefficient estimate, the arithmetic at lambda = n/h and the series bound of the proof, and from them both displays for abstract Banach-space quantities, with the circle bound, entireness in the coupling, the coefficient identification, the norm comparisons, the cutoff removals and the free bound supplied; the phases themselves are not constructed."
   claims:
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-static-phase-all-orders-paper
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-all-static-phase-sum-paper
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-static-phase-all-orders-step
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-static-phase-order-cutoff
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-all-static-phase-sum-step
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-norm-taylor-coeff-le
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-norm-taylor-coeff-le-of-disc
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-all-orders-arith
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-order-display-eq
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-order-final-le
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-fock-d-le
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-phase-weight-le
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-hundred-mul-le
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-rpow-neg-le-factorial
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-sum-exponent-eq
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-all-orders-a-pos
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-delta-a-pos
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-phase-i-pos
   - stratonovich-ham-second-moment-lean/series-type-series-nu-le-two-exp-three
   - stratonovich-ham-second-moment-lean/series-type-series-nu-holder-le
   - stratonovich-ham-second-moment-lean/series-type-series-nu-summable-le
   - stratonovich-ham-second-moment-lean/series-type-sum-rpow-le-rpow-sum
   inputs:
-  - the Fock-space, Hermite and spectral estimates of the proof (L:fock-form, L:finite-word-cutoff and the cutoff
-    removals), which are not formalized
+  - the bound 100 e^(2 lambda h) for the phase propagator on the coupling disc of radius delta_(alpha/2) lambda^(2-alpha/2)/d',
+    for every d' >= d_n, d' > 0, from L:fock-form and L:complex-phase (lines 2611-2614); not formalized
+  - the phase entries are entire in the coupling (lines 2616-2617)
+  - the identification of the n-th coefficient, applied to S_b(f,g) times the vacuum, with the cutoff n-th Duhamel
+    phase via L:finite-word-cutoff (lines 2625-2630), with ||z||_(1/h) <= n ||z||_(n/h) (line 2632)
+  - '||S_b(f,g)||_(n/h) <= ||(f,g)||_(1/h) (line 2633)'
+  - the removal of the band and Gaussian cutoffs, as convergence of the norms (lines 2643-2667)
+  - the free bound ||Z_0(h)||_(1/h) <= sqrt(e) ||(f,g)||_(1/h) (line 2679)
+  note: Abstract complex and real Banach spaces stand for L^2(Omega; X_lambda); the wrappers state R_alpha by E:phase-constants
+    and A_alpha = 400 sqrt(2) e^2/delta_(alpha/2) with delta_a = min{1/4, pi/(8 I_a)} proved positive; the Gaussian-polynomial
+    structure and the uniformity in eps are those of the inputs.
 - paper:
     number: Proposition P:variational-positive-scores
     title: Intrinsic variational lower bounds
     label: P:variational-positive-scores
-  class: inputs-supplied
+  class: same-assumptions
   conclusion: weaker
-  conclusion_scope: 'Lean proves the proposition with exactly the section''s hypotheses except the boundedness of
-    the value sets: the supremum statements (S_c^pos finite, positive, equal to c^((4-alpha)/(3-alpha)) S_1^pos)
-    assume the boundedness claim of lines 272-274; Q_2 >= S_2^pos is not formalized; v_Psi is the cost in its integral
-    form.'
+  conclusion_scope: "Lean proves the proposition with the section's hypotheses and nothing supplied, including the boundedness of the value sets and the supremum statements (S_c^pos finite, positive, equal to c^((4-alpha)/(3-alpha)) S_1^pos), with lambda the square root of the real Rayleigh supremum and v_Psi the cost in its integral form; Q_2 >= S_2^pos is not formalized."
   claims:
+  - stratonovich-ham-second-moment-lean/l8-completed-variational-positive-scores-s-sup-st-paper-completed
+  - stratonovich-ham-second-moment-lean/l8-completed-s1-bdd-paper-completed
+  - stratonovich-ham-second-moment-lean/l8-completed-space-time-cs-completed
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-s1-bdd-paper
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-variational-positive-scores-s-sup-st-paper
+  - stratonovich-ham-second-moment-lean/space-time-positivity-space-time-cs-holds
   - stratonovich-ham-second-moment-lean/variational-rate-variational-positive-scores-paper
   - stratonovich-ham-second-moment-lean/variational-rate-variational-positive-scores-s-sup-paper
   - stratonovich-ham-second-moment-lean/variational-rate-positive-scores
@@ -1071,12 +1253,32 @@ rows:
   - stratonovich-ham-second-moment-lean/raw-variational-label-score
   - stratonovich-ham-second-moment-lean/raw-variational-positive-score
   - stratonovich-ham-second-moment-lean/raw-variational-strict-label-factor
+  note: 'The boundedness (TeX lines 272-274) is proved deterministically, not by the TeX''s stochastic proof (lines
+    309-325 via T:full-upper): it is the ceiling of T:intrinsic-occupation-ceiling with K_0 R_0 at c = 1, over the
+    space-time positivity of SpaceTimePositivity. I_Psi > 0 and v_Psi > 0 are deterministic (v_Psi by a route different
+    from L:compact-raw-profile).'
+- paper:
+    number: Proposition P:variational-remove-mask
+    title: Monotone rates and the original point moment
+    label: P:variational-remove-mask
+  class: inputs-supplied
+  conclusion: weaker
+  conclusion_scope: "Lean proves the mask family and every rate statement with the section's hypotheses and nothing supplied, for lambda_(R,s) defined as the square root of the real Rayleigh supremum of m_R h_s (compact ground rates not formalized); E:variational-unmasked-point-lower is derived from E:raw-block-original-lower as a supplied input, for a real function in place of the point moment."
+  claims:
+  - stratonovich-ham-second-moment-lean/remove-mask-variational-remove-mask-paper
+  - stratonovich-ham-second-moment-lean/remove-mask-variational-remove-mask-rates-paper
+  - stratonovich-ham-second-moment-lean/remove-mask-mask-family
+  - stratonovich-ham-second-moment-lean/remove-mask-remove-mask
+  - stratonovich-ham-second-moment-lean/remove-mask-unmasked-point-lower
+  - stratonovich-ham-second-moment-lean/remove-mask-tendsto-s-sup-rayleigh-set
   inputs:
-  - S1Bdd alpha0 Gamma, the boundedness claim of TeX lines 272-274 (manuscript proof 309-325 via T:full-upper and
-    E:variational-unmasked-point-lower); used only by the supremum statements
-  note: S1Bdd's manuscript proof (lines 309-325) uses T:full-upper and E:variational-unmasked-point-lower; its later
-    deterministic discharge is T:intrinsic-occupation-ceiling. I_Psi > 0 and v_Psi > 0 are proved deterministically
-    (v_Psi by a route different from L:compact-raw-profile).
+  - E:raw-block-original-lower of P:raw-block-original-lower for the masks m_R, all large R and one fixed x, with
+    the compact ground rate of m_R h_s read as its Rayleigh rate and v_Psi as its integral form; used only by the
+    point-moment display
+  note: 'The rate part states exactly the section''s hypotheses (H:homog, Gamma != 0, a = alpha0) with nothing supplied:
+    mask family, common margin, monotonicity in R, Lipschitz bound in s, exchange of suprema, pointwise and uniform
+    convergence on [0,1], integral convergence. Only the point display uses the input; the solution u is not defined
+    in Lean.'
 - paper:
     number: Proposition P:variational-unmasked-rate
     title: The unmasked Rayleigh rate
@@ -1160,8 +1362,29 @@ rows:
     number: Theorem T:intrinsic-occupation-ceiling
     title: The computed occupation ceiling
     label: T:intrinsic-occupation-ceiling
-  class: outside
-  note: main result; not formalized (the SPDE, stochastic integrals and analytic asymptotics are outside Lean)
+  class: same-assumptions
+  conclusion: weaker
+  conclusion_scope: "Lean proves c I_Psi - v_Psi/2 <= U_c for every nonnegative smooth control and S_c^pos <= U_c, for every c > 0, with the constant K_0 R_sp, an upper bound of C_occ, in place of C_occ (a larger ceiling); lambda is the square root of the real Rayleigh supremum and v_Psi the integral-form cost. The class O, A(g), C_occ, the second form through E_zeta^O and C_2(Gamma,a) <= U_2 are not formalized."
+  claims:
+  - stratonovich-ham-second-moment-lean/l8-completed-occupation-ceiling-s-sup-k0-paper-completed
+  - stratonovich-ham-second-moment-lean/l8-completed-occupation-ceiling-k0-paper-completed
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-occupation-ceiling-s-sup-k0-paper
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-occupation-ceiling-k0-paper
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-score-le-ceiling
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-integrated-rate-sq-le
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-ceiling-value
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-ceiling-value-eq
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-young-quarter
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-young-q
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-pair-unit-le
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-schur-sharp
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-k0
+  - stratonovich-ham-second-moment-lean/space-time-positivity-space-time-cs-holds
+  - stratonovich-ham-second-moment-lean/l8-completed-space-time-cs-completed
+  note: 'Route differs from the TeX: near-optimal smooth unit tests and a finite partition of unity in time replace
+    the countable selection of L:occupation-rayleigh-selection, and the space-time form (positive by a mixture of
+    rank-one time kernels, with Fubini identities; SpaceTimePositivity) replaces rho_g in H_I; F(G,G) <= K_0 R_0
+    T(G)^(alpha/2) uses the sharp Schur row K_0.'
 - paper:
     number: Theorem T:intrinsic-second-moment
     title: Intrinsic original second-moment constant
