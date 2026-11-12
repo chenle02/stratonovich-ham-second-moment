@@ -740,6 +740,32 @@ Last updated: 2026-11-12 (late night): L9 merged into main (`6eb79c7`), comparat
   results (absent from Mathlib); `P:three-transfer`, `P:planar-upper`,
   `P:static-holder-upper`; `P:nogo-21`, `-25`; `T:first`, `T:crude`
   (imported statements: record them as imported, not "not formalized").
+- **WAVE L15: FIRST ITEM SCHEDULED (Le, 2026-11-12).** Le, verbatim:
+  "Schedule the uniform E-mean layer (T_R, E, B_E, the L^r mean class) as an
+  L15 item to close L:positive-raw-embedding; record it in
+  lean-progress/PROGRESS.md." Item **L15-UM** (uniform E-mean layer). Target:
+  the mean identity `E:positive-raw-mean` (T_R Psi(s) = B_E(m_R h_(Psi,s))
+  a.e.) and the canonical-version sentence of `L:positive-raw-embedding`
+  (`integrated_intrinsic_constant.tex` lines 33-38 at a284420; proof
+  paragraphs 57-66 and 94-109), the last parts missing after L14-K1a
+  (`95f45b7`: H_t, H_I, J_G built; both identities of
+  `E:occupation-raw-identities` proved). Objects to build, none in the
+  companion now: T_R = J_R, the uniform E mean of `S:uniform-physical-products`
+  (`integrated_uniform_products.tex` line 2) and `L:uniform-mean-tensor`
+  (`integrated_uniform_mean.tex` line 145); the state space E with Lambda and
+  the lift/pairing B_E (`L:uniform-E-lift`, `E:uniform-E-pairing`,
+  `integrated_uniform_products.tex` lines 33-37); the row
+  `E:uniform-mean-row` (`integrated_uniform_mean.tex` line 15); C_t and the
+  L^r mean class with fixed r, 2 < r < 2/a; the identification of the mask
+  `RemoveMask.mask` (chi(abs(x)/R)) with m_R = eta(./R)^2 where the TeX needs
+  it. Builds on K1a's `OccupationCompletion` (and K1b's `SourceHeatGram`
+  after their H_I is unified at L14 integration). Expected class:
+  `L:positive-raw-embedding` -> whole if every conclusion is reached under
+  the TeX hypotheses (fallback: narrower, naming what is missing; true named
+  inputs only, no surrogates). Host Office; to be sized and its
+  dependencies fixed when L15 is proposed (line refs re-pinned by R0). Other
+  L15 candidates noted in L12/L13: C8-C10 beyond F1,
+  `L:pairing-product-envelope`.
 - **EASLEY STAGE 2 APPROVED (Le, 2026-11-12).** Le, verbatim: "I approve
   Easley stage 2: pilot lower-tier receipts via lean-pkg receipt slurm at the
   L9 gate (compare with a local receipt at the same commit) and run pre-gate
