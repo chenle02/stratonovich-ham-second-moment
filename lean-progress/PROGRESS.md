@@ -573,6 +573,50 @@
      adjudicate and repair; STOP for Le's gate.
   4. [ ] Board, README Trust section, STATUS-DIGEST; tell #16, #3, #24.
   5. [ ] Retro of the night's lessons into Le-AI-Lab skills.
+  STATUS (2026-11-12, overnight; updated as items complete):
+  - Item 1: Easley up at 21:55 (Le connected); job 5692528 submitted at
+    companion bfa2fd0 (16 --fresh targets two at a time, default replay of all
+    73), running on node831; 1-day limit.
+  - Item 3: all six items formalized, independently re-verified by the
+    integrator (build, refutations, audit, standard axioms only, forbidden
+    tokens absent) and merged (wave-l7/int): L7-a InventoryProduct
+    (L:inventory-product in full, nothing supplied); L7-b UniformSeriesTail
+    (L:uniform-series-tail, one input from L:terminal-wick: absolute
+    summability and nonnegative mixed moments); L7-c H1Density (density of
+    test functions in the weak-gradient H^1, nothing supplied); L7-d
+    SpatialFourLinear (P:spatial-four-linear, P:spatial-energy-map); L7-e
+    OccupationPhysicalClass (P:occupation-physical-class; class O modelled by
+    joint representatives); L7-f IntervalScalar (scalar steps of
+    C:static-interaction and P:interval-coefficients). Completion modules
+    IntervalScalarCompleted (discharges L:inventory-product) and
+    SpatialOccupationL7Completed (discharges the density and four-linear
+    inputs). 20 TeX line citations corrected comment-only. Docs merged (1731
+    claims: 1430 theorems, 301 definitions; 877 labelled, 854 unlabelled;
+    coverage 66 rows: 38 same-assumptions incl. 10 narrower, 24
+    inputs-supplied, 4 outside). Comparator extended to all 1430 theorem
+    claims (CheckFidelity 1430/1430, 0 problems; mutation caught). Companion
+    main a8fb495: comparator receipt PASS (1430); lower-tier receipt running.
+    No manuscript defect found.
+  - Item 3 reviews (Codex GPT-6.1-Sol, high) at a8fb495 over 975feb3: H1Density
+    PASS; InventoryProduct, OccupationPhysicalClass, IntervalScalar
+    PASS_WITH_NOTES; UniformSeriesTail FAIL (one FATAL: my plain-English
+    rewording at d3d7f4c of the L:spatial-static-controls and
+    P:spatial-smooth-ratio scope sentences says lambda is the Rayleigh
+    supremum; it is its square root; #24 had printed it on book p. 307,
+    nothing public; #24 told at once and holds the page); SpatialFourLinear
+    FAIL (one MAJOR: Gamma_tempered claimed unused but used transitively).
+    Seven minors (wording, one citation). All documentation; repair agent
+    running (branch l7-repair), then confirmation review.
+  - Item 2: #3 committed the two points at Article a284420 (new
+    L:spatial-fourier-bound with E:spatial-fourier-bound before
+    P:spatial-smooth-ratio; E:damped-multiplier-comparison in
+    L:damped-homogeneous-norms). Re-anchor to a284420 follows the L7 repairs
+    (one line-citation remap for all waves), then receipts and the narrow
+    re-check.
+  - Also: proposal 0015 accepted by Le and merged in lean-pkg (#456, #457);
+    unreleased, so the coverage-scope-tex sidecar stays until 0.30.0. Two L6
+    scope sentences reworded in plain English at #24's request (companion
+    d3d7f4c).
   NOT for the night (Le's decisions): closing the L7 gate; any public
   visibility change (HOLD); acceptance of lean-pkg proposal 0015; a lean-pkg
   upgrade; manuscript edits (#3's, approved by Le, only re-anchored here).
