@@ -1,11 +1,11 @@
 # Reading edition with the current technical companion
 
 Read [the 28-page reader](notes_stratonovich_ham_second_moment_reader.pdf)
-with [the 382-page technical companion](notes_stratonovich_ham_second_moment.pdf).
+with [the 383-page technical companion](notes_stratonovich_ham_second_moment.pdf).
 The reader introduces the model, proposed result and variational constant,
 explains how the main steps fit together, and links to the detailed proofs.
 It is a guided route through the work, not a standalone short proof.
-The combined record is 410 pages; no total-proof-length reduction is claimed.
+The combined record is 411 pages; no total-proof-length reduction is claimed.
 
 The reader follows the current **unadopted whole-paper mathematical candidate**.
 The November 11 deterministic update adds a spatial Fourier bound and clarifies

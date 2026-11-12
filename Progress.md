@@ -19350,3 +19350,15 @@ default mode. The replay sentence drops "not yet checked this way" and says ever
 module of the Lean library was checked a second time, except the three helper
 libraries used only for the separate statement check (README: not replayed).
 Receipts and tables unchanged.
+
+## 2026-11-12: Section 1.6, Why the scale is t^kappa
+
+New heuristic section (notes/why_kappa.tex) between "Main results" and "Strategy of
+the proof" (now 1.7), sourced from Lemma 7.1.1 (exact canonical scaling) and the
+chapter openings: the scaling turns long time into small noise (delta = T^-kappa,
+delta^2 d_t^2 V = Delta V + sqrt(delta) W V, T^-kappa log E u^2 = delta log E V^2);
+heuristically a shift of order delta^-1/2 costs v/(2 delta) and the frozen-potential
+mode delta^2 a'' = R a grows at rate sqrt(R)/delta, so gain minus cost times delta is
+the bracket of C_2. Marked as explanation, not proof. GPT-6 Astra: PASS_WITH_FIXES
+(one major: "time derivative carries delta" was wrong, the second derivative carries
+delta^2), fixed; confirmation PASS. Book 383 pages; guide table recomputed. 0/0/0.

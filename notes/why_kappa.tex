@@ -1,0 +1,48 @@
+\section{Why the scale is \texorpdfstring{$t^\kappa$}{t to the kappa}}\label{S:why-kappa}
+
+This section explains, without proof, where the exponent $\kappa$ and the form
+of $C_2(\Gamma,\alpha_0)$ in Theorem~\ref{T:intro-second-moment} come from.
+
+The first step is an exact scaling, proved in
+Lemma~\ref{L:exact-canonical-scaling}. Stretch time by a factor $T$ and space
+by $r_T=T^{(\alpha_0-1)/(3-\alpha)}$. Because the temporal covariance
+$|s-t|^{-\alpha_0}$ and the spatial covariance $\Gamma$ are homogeneous
+(Hypothesis~\ref{H:homog}), the stretched noise has the law of the original
+noise multiplied by a constant. With $\delta=T^{-\kappa}$, the stretched
+solution has the law of the solution $V_\delta$ of
+\[
+  \delta^2\partial_t^2V_\delta=\Delta V_\delta+\sqrt\delta\,\W V_\delta,
+  \qquad V_\delta(0,\cdot)=1,\quad \partial_tV_\delta(0,\cdot)=0,
+\]
+and
+\[
+  T^{-\kappa}\log\E|u(T,0)|^2=\delta\log\E|V_\delta(1,0)|^2
+\]
+(see~\eqref{E:exact-fast-equation} and~\eqref{E:exact-moment-scaling}). With
+this choice of $\kappa$, the time derivative carries the factor $\delta^2$ and
+the noise the factor $\sqrt\delta$. The growth of the second moment over long
+times thus becomes a question about small noise: does
+$\delta\log\E|V_\delta(1,0)|^2$ have a limit as $\delta\to0$?
+
+Heuristically it does, because a gain and a cost of the same order $1/\delta$
+balance. Shift the noise toward a deterministic potential, chosen through a
+nonnegative control $\Psi$, so that the potential seen by the wave at time $s$
+is $h_{\Psi,s}$ of~\eqref{E:intro-control-mean}. In the scaled equation this
+needs a shift of order $1/\sqrt\delta$, and its Gaussian cost is $v_\Psi/(2\delta)$,
+one half of the variance~\eqref{E:intro-control-variance} divided by $\delta$.
+Freezing the potential at time $s$ gives the equation
+$\delta^2a''=\mathcal{R}_\Psi(s)\,a$ for the amplitude of the leading mode,
+whose growing solution has exponential rate $\sqrt{\mathcal{R}_\Psi(s)}/\delta$.
+Heuristically, the square of the wave then grows like
+$\exp\bigl(2\int_I\sqrt{\mathcal{R}_\Psi(s)}\ud s/\delta\bigr)$. Gain minus
+cost, multiplied by $\delta$, is
+$2\int_I\sqrt{\mathcal{R}_\Psi(s)}\ud s-v_\Psi/2$, and taking the supremum over $\Psi\in\mathcal{C}_{\mathrm{pos}}$ gives
+$C_2(\Gamma,\alpha_0)$. Returning to the original variables,
+$\log\E u^2(T,x)$ grows like $C_2(\Gamma,\alpha_0)\,T^\kappa$.
+
+This argument only explains the answer. A proof needs a lower bound for each
+control, which computes the cost using the original covariance, retaining correlations between different time intervals
+(Chapter~\ref{S:book-lower}), and an upper bound showing that no other
+fluctuation of the noise does better (Chapters~\ref{S:book-means}--\ref{S:book-point-upper});
+Chapter~\ref{S:book-constant} matches the two. Section~\ref{S:strategy} describes
+these steps.
