@@ -102,7 +102,10 @@ def completion_tex(path, rows, numbers, commit, sm):
     comp = md_table(lines, "## Completion by labelled result")
     by_status = {r[0]: int(r[1]) for r in comp}
     total = by_status.pop("total labelled results (Theorem, Proposition, Lemma, Corollary)")
-    book = {k for k in numbers if k.startswith(NUMBERED)}
+    # The numbered no-gos of Chapter 12 (aux anchor "nogo.") are counted in
+    # Appendix G, not here, although their labels start with "P:".
+    nogos = set(re.findall(r"\\newlabel\{([^}]+)\}\{\{[^}]*\}\{[^}]*\}\{.*?\}\{nogo\.", AUXTEXT))
+    book = {k for k in numbers if k.startswith(NUMBERED) and k not in nogos}
     listed = {r[0].strip("`") for r in md_table(lines, "## Every labelled result")}
     if total != len(listed) or listed - book:
         raise SystemExit(f"COMPLETION.md lists {len(listed)} labelled results (total {total}); "
@@ -174,7 +177,8 @@ def main():
     m = next((re.match(r"#\s*(\d+) further claims", l) for l in head[:10]
               if re.match(r"#\s*(\d+) further claims", l)), None)
     unlabelled = m.group(1) if m else None
-    aux = open(AUX).read()
+    global AUXTEXT
+    aux = AUXTEXT = open(AUX).read()
     numbers = {k: v for k, v in re.findall(r"\\newlabel\{([^}]+)\}\{\{([^}]*)\}", aux)}
 
     rows = cov["rows"]

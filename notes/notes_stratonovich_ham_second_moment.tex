@@ -42,6 +42,7 @@
 \input{notes/ai-statistics-data}
 \newcommand{\aiBookRef}[1]{\ref{#1}}
 \input{notes/lean-coverage-data}
+\input{notes/verification-status-data}
 % Appendix F helpers: \lcRef{kind}{label}{number} is a linked reference.
 \makeatletter
 \def\lc@equation{Equation}
@@ -210,6 +211,7 @@ needed.
   \ref{S:appendix-finite-order}--\ref{S:appendix-static-clock} & Other estimates, consistency checks and alternative approaches. \\
   \ref{S:appendix-ai-statistics} & The AI work in numbers: who did the work, the reviews, and how many approaches failed. \\
   \ref{S:appendix-lean-checks} & What the Lean companion checks, result by result. \\
+  \ref{S:appendix-check-status} & How far each result has been checked: by AI review, by Lean and by people. \\
   \bottomrule
 \end{tabular}
 \end{center}
@@ -8047,6 +8049,10 @@ comparison, without refuting the comparison itself.
 \chapter{What Lean checks}\label{S:appendix-lean-checks}
 
 \input{notes/lean-coverage}
+
+\chapter{How far each result has been checked}\label{S:appendix-check-status}
+
+\input{notes/verification-status}
 
 \backmatter
 \bibliography{All,extra}

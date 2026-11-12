@@ -19417,3 +19417,26 @@ scope. No public release, whole-paper acceptance or new Lean gate is claimed.
 ## 2026-11-12: Section 1.7, Consistency checks
 
 [held back: collaborators' unpublished work]
+
+## 2026-11-12: Appendix G, how far each result has been checked
+
+New Appendix G (notes/verification-status.tex) after Appendix F, at Le's request:
+one table by proof group (I-V, 253 numbered results incl. the 33 no-gos) of the
+Lean status and of checks by people, generated like Appendix F. The ledger's
+results table (#16's VERIFICATION.md draft, b0474258; becomes the root
+VERIFICATION.md at release) is pinned in scripts/verification-status/verification.md
+by pin_verification.py; make_appendix_g.py writes verification-status-data.tex and
+stops if the labels, groups, Lean classes or claim counts disagree with the aux or
+with Appendix F's coverage.yaml. No 253-row list: the AI-review column is the same
+on every row (no per-result grade; reviews/ is summarized in Appendix E) and the
+Human column is "unchecked" everywhere. Re-pin at #16's release commit.
+GPT-6 Astra: PASS_WITH_FIXES, seven findings, all fixed: 64 (not 67) results have
+a Lean claim, three main theorems outside Lean; review-folder wording matches
+Appendix E; sign-off procedure as in the ledger; claim counts checked on every row;
+the check is against the coverage file, not Appendix F's output; preface "final
+three appendices"; and Appendix F counted the 33 no-gos (labels P:nogo-*) although
+its text says they are not counted. Le chose to keep the text: make_appendix_f.py
+now excludes aux anchors nogo., so Appendix F counts 220 results, 153 (70%) not
+formalized, and points to Appendix G for the no-gos. Confirmation pass PASS. Real
+release filter: 11 public files byte-identical. 386 pages, 0/0/0. Le approved the
+pages.

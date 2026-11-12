@@ -1,0 +1,69 @@
+% Appendix G: how far each result has been checked. The chapter heading is in
+% the main file. The counts come from verification-status-data.tex, generated
+% by scripts/verification-status/make_appendix_g.py from the pinned results
+% table of the verification ledger (scripts/verification-status/verification.md).
+
+This appendix records how far the numbered results of this book have been
+checked, in the three ways used in this project: by AI review, by Lean and by
+people. It is generated from the verification ledger, a table in the book's
+repository with one row for each of the \vsRows{} numbered theorems,
+propositions, lemmas, corollaries and no-go results. The counts below are
+those of the ledger on \vsDate{}. The ledger in the repository is the current
+record, and it changes as results are checked.
+
+For credit, the ledger divides the results into five groups by chapter:
+group~I is Chapters~\ref{S:book-setting}--\ref{S:book-independent-upper}
+(the setting and the upper bound), group~II is
+Chapters~\ref{S:book-gaussian-foundations}--\ref{S:book-lower} (Gaussian
+approximation and the lower bound), group~III is
+Chapters~\ref{S:book-means}--\ref{S:book-constant} (the matching upper bound
+and the constant), group~IV is
+Appendices~\ref{S:appendix-finite-order}--\ref{S:appendix-static-clock}, and
+group~V is the no-go results of Chapter~\ref{S:book-no-go}.
+Table~\ref{Tab:check-status} gives the counts.
+
+\begin{table}[!ht]
+  \centering
+  \caption{How far the numbered results have been checked, by group
+    (ledger of \vsDate).}\label{Tab:check-status}
+  \begin{tabular}{@{}lrrrrrr@{}}
+    \toprule
+    & I & II & III & IV & V & All \\
+    \midrule
+    \vsTable
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\medskip
+\noindent\textbf{AI review.} The repository keeps the AI reviews of this
+project in dated folders, with the responses to their findings. A folder may
+hold several review runs, or only preparation, decisions or diagnostics, and
+not every run produced a usable report.
+Appendix~\ref{S:appendix-ai-statistics} summarizes these records. No review
+grade is assigned to an individual result, so the table has no row for them.
+An AI review shows where to look; it is not a proof.
+
+\medskip
+\noindent\textbf{Lean.} The Lean rows come from the coverage file of the Lean
+companion from which Appendix~\ref{S:appendix-lean-checks} is generated; the
+script that generates this appendix checks the ledger's Lean entries and
+numbers of claims against that file. Of the \vsRows{} results, \vsLeanAny{}
+have some Lean claim, and \vsOutside{} more, all main theorems, are recorded as
+outside Lean. Appendix~\ref{S:appendix-lean-checks} says, result by result,
+what Lean checks and which inputs it takes as given. A Lean entry never
+covers the analytic inputs, and whether the Lean statements say what the book
+says was reviewed by AI, not by a person.
+
+\medskip
+\noindent\textbf{People.} To record a check, a mathematician opens a pull
+request that changes exactly one row of the ledger and says what was checked
+(the statement, the proof, the cited inputs and their hypotheses) and what was
+not. A result restated from a cited source is checked against that source,
+not reproved. To report a gap or an error, a reader opens an issue naming the
+result's label and the step in question; the row is then marked as disputed,
+and it returns to checked only through a new pull request that links the
+closed issue.
+\ifnum\vsHumanChecked=0 On the date above, no result had yet been checked in
+this way. \fi
+This is the column where readers can help most.
