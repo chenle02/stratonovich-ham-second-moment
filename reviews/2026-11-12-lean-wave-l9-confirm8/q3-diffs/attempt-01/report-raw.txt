@@ -1,0 +1,54 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "INCONCLUSIVE",
+  "confidence": "medium",
+  "source_coverage": [
+    "PROVENANCE.json: complete, lines 1-796.",
+    "diffs/docs-434a7e2-06ee849.diff: complete, lines 1-371; the truncated portion at 274-303 was reread.",
+    "diffs/docs-a723987-434a7e2.diff: partial file, lines 241-854 completely read in consecutive ranges; lines 1-240 and 855-991 not read.",
+    "adjudication/round7-434a7e2.md: complete, lines 1-109.",
+    "prior-reports/p3-diff-consistency-report.json: complete, lines 1-51.",
+    "candidate/statement-ledger.md: partial, continuous ranges 1-125, 563-566, 686-699, 862-901, 2317-2338, 2918-2975, 2985-3002, 3437-3492, 7048-7085, 8260-8278.",
+    "candidate/statement-ledger.md: partial, additional complete rows at lines 610, 667, 952, 1275, 1282-1283, 1312, 1343, 2016, 2018, 2417, 3016, 3235-3236, 3298, 3737, 3740, 3742, 3750-3752, 3756-3758, 3760, 4206, 4215-4217, 4538, 4956, 5129, 6409, 6411, 6416-6417, 6420, 6423, 6612, 6618-6619, 6727-6729, 7529-7533, 7769, 7778, 7780, 7782, 7785, 7789, 7793, 8021, 8045-8046, 8283, 8651, 8708.",
+    "candidate/statement-ledger.md: partial, additional complete heading lines 702, 715, 727, 744, 756, 782, 805, 814, 823, 841, 902, 934, 957, 982, 1000, 1013, 1025, 1048, 1065, 1077, 1090, 1107, 1123, 1136, 1347, 1519, 1699, 1879, 1895, 2102, 2212, 2344, 2452, 2508, 2626, 2643, 2664, 2773, 2897, 3035, 3180, 3238, 3330, 3344, 3493, 3625, 3800, 3915, 4084, 4232, 4324, 4434, 4543, 4626, 4774, 4834, 5002, 5165, 5254, 5363, 5383, 5501, 5555, 5678, 5783, 5913, 6132, 6184, 6273, 6426, 6621, 6732, 6858, 7004, 7086, 7221, 7406, 7543, 7622, 7795, 7903, 8048, 8167, 8299, 8416, 8574, 8656, 8721. Whole-file structural parsing was also performed, but is not complete textual reading.",
+    "lean/FORMALIZATION.md: partial, lines 92-128.",
+    "lean/claims.yaml: partial, lines 2194-2203, 3088-3097, 17322-17331.",
+    "tools/pointer_index.py: complete, lines 1-38.",
+    "tools/index_category_check.py: complete, lines 1-75.",
+    "tools/index_check_pointer.py: complete, lines 1-49.",
+    "tools/index_category_check.out: complete, line 1.",
+    "tools/index_check_pointer.out: complete, lines 1-8.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: partial, lines 734-749, 2472-2489, 2531-2553, 2828-2848, 4702-4725, 7766-7782.",
+    "manuscript/notes/integrated_raw_block_lower.tex: partial, lines 240-267, 278-316.",
+    "manuscript/notes/integrated_compact_gaussian.tex: partial, lines 39-59.",
+    "manuscript/notes/integrated_temporal_equilibrium.tex: partial, lines 31-55.",
+    "manuscript/notes/integrated_compact_mean_family.tex: partial, lines 32-60, 336-350.",
+    "manuscript/notes/integrated_spatial_occupation.tex: partial, lines 38-55."
+  ],
+  "checks": [
+    {
+      "claim": "NO-NEW-OVERCLAIM-434a7e2-06ee849",
+      "verdict": "PASS",
+      "reason": "All repair hunks were read. Context moves preserve the mathematical descriptions, supplied inputs and limitations (diffs/docs-434a7e2-06ee849.diff:65-371). Independent structural comparison found exactly 357 table/Index pointer pairs on each side, with no missing or extra pairs, no category mismatches and no labels in no-direct-label cells. The added assignments are supported by their section rows, including candidate/statement-ledger.md:900,1275,2016,2018,2325,2331,2992,4215-4217,6411,7058,7069-7070,7080-7082,8267. Authoritative TeX supports the co-label correspondence; supplied GroundFamily outputs and spatial column hypotheses remain explicitly supplied, not newly claimed as proved. The HermiteWordFock exception in lean/FORMALIZATION.md:110-113 agrees with the narrower section at candidate/statement-ledger.md:862-900 and the multimode/integral scope of manuscript/notes/notes_stratonovich_ham_second_moment.tex:2531-2553. The corrected q(t) agrees with lean/claims.yaml:2199 and manuscript/notes/integrated_raw_block_lower.tex:254-263; SpectralHomogeneous mu 1 agrees with lean/claims.yaml:3093 and the alpha=1 specialization at manuscript/notes/notes_stratonovich_ham_second_moment.tex:7774-7776. No new error or dropped limitation was identified."
+    },
+    {
+      "claim": "NO-NEW-OVERCLAIM-a723987-434a7e2-lines-241-854",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The entire requested diff range, diffs/docs-a723987-434a7e2.diff:241-854, was read. However, requirement A additionally demands complete reading of every corresponding section-table row for the removed per-declaration Index entries. That correspondence reading remains incomplete, particularly for the extensive declaration groups removed at lines 241-699. Selected retained limitations were verified, including the Fock column inputs at candidate/statement-ledger.md:2325-2334, abstract GroundFamily status at 2918-2975, and M1 at 3439,3474-3478,3487-3491. These samples and pointer-set equality do not establish universal preservation of supplied inputs and narrower scopes."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Complete-reading requirement A was not fully met: most section-table rows corresponding to the removed Index entries in the previous diff were not textually reviewed. The second check and overall acceptance therefore remain INCONCLUSIVE.",
+    "Whole-file structural parsing verifies pointer correspondence, not semantic preservation of every removed qualifier or supplied hypothesis.",
+    "Lean source files and elaborated types are absent from the packet. Selected declaration descriptions were corroborated against claims.yaml; this was not independent verification of Lean types or proofs.",
+    "PROVENANCE.json was read, but its byte bindings were not independently verified.",
+    "No mandatory documentation repair was established; an empty required_repairs list does not constitute acceptance.",
+    "This AI review is neither human verification nor a novelty audit."
+  ]
+}

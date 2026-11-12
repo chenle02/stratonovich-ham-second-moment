@@ -1,0 +1,179 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "adjudication/round8-06ee849.md:1-89 complete.",
+    "diffs/docs-06ee849-6d108c0.diff:1-355 complete; initially truncated output was reread in consecutive ranges.",
+    "excerpts/tex-excerpts.txt:1-639 complete.",
+    "candidate/statement-ledger.md:1-110,5585-5680,6085-6089,6256-6260,6778-6808,6840-6844,7190-7223,7590-7710,7771-7777,8045-8049,8572-8576 partial; all 27 required rows completely read.",
+    "lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean:1-126,319-344,867-879,947-996,1100-1125 partial; all eight required declarations completely read.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean:451-465,703-780 partial; required C4_sub_le statement completely read.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean:65-101 partial; required statement completely read.",
+    "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean:225-239 partial; required definition completely read.",
+    "lean/StratonovichHAMSecondMoment/TerminalWick.lean:229-234,285-307,352-385,390-409,480-513,538-574,603-667 partial; all five required statements completely read.",
+    "lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean:60-115,155-207,229-239,255-320 partial; all six required statements completely read.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:85-102,218-245 partial; all three required definitions completely read.",
+    "lean/StratonovichHAMSecondMoment/VariationalMean.lean:675-715 partial; required statement completely read.",
+    "lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean:870-895 partial; required statement completely read.",
+    "lean/StratonovichHAMSecondMoment/FockForm.lean:75-108,158-235 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean:95-113 partial.",
+    "lean/StratonovichHAMSecondMoment/TimeSchur.lean:54-61 partial.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:225-242,2472-2527,3576-3699,3703-3748 partial; relevant labelled statements and proofs completely read.",
+    "manuscript/notes/integrated_compact_mean_family.tex:398-458 partial; relevant labelled statement and proof completely read.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-8,64-96 partial; relevant labelled statement and proof completely read.",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-33,219-298 partial; relevant labelled statements and proofs completely read.",
+    "manuscript/notes/integrated_intrinsic_constant.tex:1-110 partial; relevant labelled statement and proof completely read.",
+    "manuscript/notes/integrated_occupation_ceiling.tex:1-90 partial; relevant labelled statements and proof completely read.",
+    "manuscript/notes/integrated_wave_variance.tex:165-178,405-418 partial."
+  ],
+  "checks": [
+    {
+      "claim": "ROW line 5645",
+      "verdict": "PASS",
+      "reason": "SpaceTimePositivity.lean:329-330 defines precisely the physical slice pairing, without supplied hypotheses or a covariance-space map. The added exclusion distinguishes it from J_G and its norm identity in manuscript/notes/integrated_intrinsic_constant.tex:24-30. Only the disclosure changes in diffs/docs-06ee849-6d108c0.diff:207-217."
+    },
+    {
+      "claim": "ROW line 5646",
+      "verdict": "PASS",
+      "reason": "SpaceTimePositivity.lean:340-341 defines the stated product-measure Bochner integral. Its totalized nature is disclosed; neither J_G nor its norm identity is a conclusion. This correctly limits correspondence to manuscript/notes/integrated_intrinsic_constant.tex:26-30 and integrated_occupation_ceiling.tex:10-18. Diff:207-217 preserves the existing statement."
+    },
+    {
+      "claim": "ROW line 5668",
+      "verdict": "PASS",
+      "reason": "SpaceTimePositivity.lean:867-872 has exactly the disclosed continuity, compact-support, local-finiteness and a<1 premises, both integrability conclusions, and the swapped order stForm Phi Psi. The Hilbert-space pairing of manuscript/notes/integrated_occupation_ceiling.tex:31-38 is not constructed. Diff:218-240 only appends the limitation."
+    },
+    {
+      "claim": "ROW line 5669",
+      "verdict": "PASS",
+      "reason": "SpaceTimePositivity.lean:947-951 proves equality with the integral-defined rawCost under the stated premises, not a Hilbert-space norm identity. The addition correctly distinguishes this from manuscript/notes/integrated_intrinsic_constant.tex:31-36. Diff:218-240 leaves the mathematical paraphrase unchanged."
+    },
+    {
+      "claim": "ROW line 5670",
+      "verdict": "PASS",
+      "reason": "SpaceTimePositivity.lean:959-966 includes evenness, local finiteness, a<1, and continuous compactly supported fields, with the three stated conclusions. The missing Hilbert-space objects are correctly disclosed relative to manuscript/notes/integrated_occupation_ceiling.tex:31-38. Diff:218-240 contains no other semantic change."
+    },
+    {
+      "claim": "ROW line 5672",
+      "verdict": "PASS",
+      "reason": "SpaceTimePositivity.lean:981-989 is exactly the squared-field specialization described. The continuity/support restrictions and all supplied premises are stated; the added limitation correctly excludes rho_g and H_I of manuscript/notes/integrated_occupation_ceiling.tex:25-38. Diff:218-240 preserves the rest."
+    },
+    {
+      "claim": "ROW line 5676",
+      "verdict": "PASS",
+      "reason": "SpaceTimePositivity.lean:1103-1112 proves only integrability, stForm=rawCost, and nonnegativity under the listed homogeneous-covariance/CPos assumptions. The unused nonzero-covariance binder and missing J_G construction are accurately disclosed against manuscript/notes/integrated_intrinsic_constant.tex:22-39. Diff:218-240 only adds the explicit exclusion."
+    },
+    {
+      "claim": "ROW line 5677",
+      "verdict": "PASS",
+      "reason": "SpaceTimePositivity.lean:1120-1122 defines exactly the iterated physical integral. The section supplies the local-finiteness context for the cited equality with stForm. No covariance-space map or norm identity is asserted, consistently with the new limitation and manuscript/notes/integrated_intrinsic_constant.tex:24-30. Diff:218-240 preserves the existing meaning."
+    },
+    {
+      "claim": "ROW line 6088",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:749-762 explicitly takes hB : SquareBound Gamma alpha R, R>=0 and the eight H1 pairs, and gives the four described telescoping bounds. The inherited premises are specified by ledger:6087. This matches the proof step in manuscript/notes/integrated_spatial_occupation.tex:277-282. Diff:241-249 adds only the named input disclosure."
+    },
+    {
+      "claim": "ROW line 6259",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationL7Completed.lean:85-91 contains hsm with exactly the smooth extended square bound stated, and discharges density using H1Density.h1TestDense. The parameter endpoints and local finiteness are correctly recorded. The manuscript density/Fatou steps are integrated_spatial_occupation.tex:262-275. Diff:250-258 only appends hsm."
+    },
+    {
+      "claim": "ROW line 6843",
+      "verdict": "PASS",
+      "reason": "StaticPhaseCauchy.lean:233 defines precisely 2 sqrt(N+1) sqrt(R). FockForm.lean:206-229 supplies the referenced coefficient-model estimate and symmetry conclusion, without constructing the spatial operators or packaging the resulting coefficient operator as self-adjoint. The added limitation accurately contrasts manuscript/notes/notes_stratonovich_ham_second_moment.tex:2472-2488. Diff:259-267 preserves the definition."
+    },
+    {
+      "claim": "ROW line 7202",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:361-365 explicitly names hK as joint measurability, with the stated uniform absolute bound and finite measures from :285. It proves integrability for every indicated D, without additional Gaussian assumptions. Diff:268-289 changes only the disclosure; this row has no direct manuscript label."
+    },
+    {
+      "claim": "ROW line 7204",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:396-403 takes hK with exactly the stated measurability meaning, together with the inherited Gaussian, variance and strong-measurability premises. The formula, arbitrary-measure generalization and added restriction are faithfully disclosed relative to manuscript/notes/notes_stratonovich_ham_second_moment.tex:3600-3645. Diff:268-289 only appends hK."
+    },
+    {
+      "claim": "ROW line 7211",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:483-486 names hmass as the real total-mass identity T^(2n)/(2n)!, with no strong-measurability premise. The real-r restriction and totalized-integral possibility are disclosed. This correctly narrows the complex-or-real assertion in manuscript/notes/notes_stratonovich_ham_second_moment.tex:3642-3644. Diff:268-289 preserves the rest."
+    },
+    {
+      "claim": "ROW line 7212",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:503-510 includes the named hmass identity, hmeas, variance assumptions and nonnegative covariance, and concludes exactly TerminalWickInput for real r. The two supplied facts correspond to manuscript/notes/notes_stratonovich_ham_second_moment.tex:3638-3644,3730-3731. Diff:268-289 adds only the binder name."
+    },
+    {
+      "claim": "ROW line 7222",
+      "verdict": "PASS",
+      "reason": "TerminalWick.lean:618-642 includes hmass : forall n, nu n univ = chainMass d n T and all nine disclosed conjuncts. The row correctly retains supplied hmeas, unconstructed chain measures, extra joint covariance measurability and real-only summation. These distinctions are supported by manuscript/notes/notes_stratonovich_ham_second_moment.tex:3585-3699. Diff:290-296 only appends hmass."
+    },
+    {
+      "claim": "ROW line 7612",
+      "verdict": "PASS",
+      "reason": "UniformSeriesTail.lean:64-71 takes hpos as pairwise nonnegative inner products and hS as HasSum, without completeness. The conclusion is exactly the stated diagonal bound, corresponding to manuscript/notes/notes_stratonovich_ham_second_moment.tex:3730-3733. Diff:299-323 changes only the disclosure."
+    },
+    {
+      "claim": "ROW line 7613",
+      "verdict": "PASS",
+      "reason": "UniformSeriesTail.lean:89-98 explicitly contains hsum as absolute scaled summability and hpos as pairwise inner-product nonnegativity, together with r>0 and the scaled moment bound. Its sqrt(B) r^(-n) conclusion matches the row and manuscript/notes/notes_stratonovich_ham_second_moment.tex:3718-3720,3730-3733. Diff:299-323 preserves the statement."
+    },
+    {
+      "claim": "ROW line 7617",
+      "verdict": "PASS",
+      "reason": "UniformSeriesTail.lean:164-178 names hsum and hpos with exactly the eventual quantifiers described, assumes a nontrivial filter, and concludes the stated term, summability, tail and full-series convergence results. Constants and quantifiers agree with the generalization of manuscript/notes/notes_stratonovich_ham_second_moment.tex:3703-3748. Diff:299-323 only adds names."
+    },
+    {
+      "claim": "ROW line 7618",
+      "verdict": "PASS",
+      "reason": "UniformSeriesTail.lean:195-204 contains the disclosed eventual hsum/hpos premises and the additional eventual B_1 bound, concluding precisely the limiting squared-norm bound. This is the general form of manuscript/notes/notes_stratonovich_ham_second_moment.tex:3725-3726,3746. Diff:299-323 leaves the meaning unchanged."
+    },
+    {
+      "claim": "ROW line 7623",
+      "verdict": "PASS",
+      "reason": "UniformSeriesTail.lean:261-277 explicitly names hTW for every positive epsilon and delta and states the joint positive-quadrant limit, all uniform estimates and absolute summability. The row discloses the abstract supplied input rather than claiming construction of the regularized family. It faithfully corresponds to manuscript/notes/notes_stratonovich_ham_second_moment.tex:3703-3748. Diff:299-323 only appends hTW."
+    },
+    {
+      "claim": "ROW line 7624",
+      "verdict": "PASS",
+      "reason": "UniformSeriesTail.lean:301-310 includes hTW with the stated positive-parameter quantifiers and the additional unscaled second-moment bound. The conclusion is precisely the limiting integral bound of manuscript/notes/notes_stratonovich_ham_second_moment.tex:3725-3726. Diff:299-323 adds only the hypothesis name."
+    },
+    {
+      "claim": "ROW line 7774",
+      "verdict": "PASS",
+      "reason": "VariationalDilation.lean:229-230 defines only the displayed convolution, with no analytic premises. The added limitation correctly limits this definition row's coverage of manuscript/notes/integrated_compact_mean_family.tex:398-424; separate consequences established in other modules are acknowledged in the section prose. Diff:325-337 preserves the definition."
+    },
+    {
+      "claim": "ROW line 7775",
+      "verdict": "PASS",
+      "reason": "VariationalDilation.lean:233-234 defines exactly the stated time convolution over (0,1). The row does not claim the regularity, covariance identification or other conclusions of manuscript/notes/integrated_compact_mean_family.tex:398-424; its new limitation is correct in this definition/module context. Diff:325-337 makes no other change."
+    },
+    {
+      "claim": "ROW line 7776",
+      "verdict": "PASS",
+      "reason": "VariationalDilation.lean:239-240 defines the integral form only. The explicitly unformalized identification with E W(Psi)^2 correctly distinguishes it from manuscript/notes/integrated_compact_mean_family.tex:408-410. Finiteness and positivity are already disclosed as outside this definition, with other-module results identified in the section prose. Diff:325-337 preserves the formula."
+    },
+    {
+      "claim": "ROW line 8048",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:679-691 has exactly the listed homogeneous-covariance/CPos premises and integrability, boundedness, Lipschitz, continuity and potential-integrability conclusions. It contains no mixed-derivative conclusion. The added exclusion correctly reflects manuscript/notes/integrated_unmasked_variational.tex:64-96. Diff:338-346 only repeats that limitation explicitly in the inputs cell."
+    },
+    {
+      "claim": "ROW line 8575",
+      "verdict": "PASS",
+      "reason": "WaveTwoVariances.lean:875-879 explicitly names hJL2 as componentwise MemLp 2 and hJ as the stated integral identity with inner w z. Orthonormality is the remaining premise. The orientation is correct, and no surjectivity or construction of the manuscript's unitary J is claimed. See manuscript/notes/integrated_wave_variance.tex:169-176,413. Diff:347-355 only adds the hypothesis names."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Acceptance is confined to the 27 specified row checks. Other ledger rows and the global checker claims were not independently audited.",
+    "Files marked partial were read only in the listed ranges, plus declaration-location searches. Unlisted portions of those files remain outside this review; no required row, repair hunk, declaration statement or relevant labelled TeX statement/proof remains unread.",
+    "Proof correctness, recompilation, provenance-hash verification and historical claims of prior recompilation were not independently tested.",
+    "This AI correspondence review is not human verification or a novelty audit."
+  ]
+}

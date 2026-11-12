@@ -1,0 +1,137 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "prior-reports/g2-report.json: 1-465 complete, including rereading after truncation.",
+    "prior-reports/g3-report.json: 1-376 complete.",
+    "prior-reports/g4-report.json: 1-465 complete.",
+    "adjudication/ADJUDICATION.md: 1-82 complete.",
+    "diffs/findings-repair-7bd4c62-338cdba.diff: 1-707 complete.",
+    "diffs/l9-repair-eb253a5-338cdba.diff: 187-237, 1458-1500 read; file headers at 1, 53, 88, 238, 269, 376, 485 inspected; partial contextual diff.",
+    "candidate/statement-ledger.md: 1-82, 254-289, 1505-1674, 3592-3645, 4475-4584, 4985-5150, 5403-5511 completely read in those ranges; partial file. All 1-9062 additionally searched structurally for declaration occurrence counts.",
+    "lean/coverage.yaml: 1-70, 155-235, 445-485, 630-715, 1405-1455, 1710-1764 read; all seven required rows complete; partial file. All 1-1764 parsed for counts, claim references and scope comparisons.",
+    "docs/coverage-scope-tex.yaml: 1-133 complete, including rereading after truncation; all required entries complete.",
+    "lean/claims.yaml: 15353-15387, 15570-15946, 16445-16452, 17331-17380 read; partial substantive reading. All 1-17380 parsed for counts, references and declaration occurrence checks.",
+    "lean/README.md: 1-45, 103-108, 130-178, 235-270, 316-329, 412-438 read; partial file.",
+    "lean/FORMALIZATION.md: 1-174 complete.",
+    "lean/COMPLETION.md: 1-58, 75-103, 193-202 read; partial file.",
+    "excerpts/tex-excerpts.txt: 1-1178 complete.",
+    "lean/StratonovichHAMSecondMoment/PhaseContractions.lean: 1-1095 complete.",
+    "lean/StratonovichHAMSecondMoment/L9Completed.lean: 1-186 complete.",
+    "lean/StratonovichHAMSecondMoment/RawOccupationEnergy.lean: 1-739 complete.",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingExact.lean: 1-797 complete.",
+    "lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean: 1-1420 complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean: 1-105 complete.",
+    "lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean: 200-218 read; partial file.",
+    "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean: 70-225, 330-355, 503-524 read; partial file.",
+    "lean/StratonovichHAMSecondMoment/SpatialBracket.lean: 105-132, 265-285 read; partial file.",
+    "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean: 80-165 read; partial file.",
+    "lean/StratonovichHAMSecondMoment/WaveGreenFourier.lean: 579-648, 685-768 read; partial file.",
+    "lean/refutations/phase-contractions/MiddleRegionExponent.lean: 1-41 complete.",
+    "lean/refutations/phase-contractions/NormalCoordinateConstant.lean: 1-42 complete.",
+    "lean/refutations/phase-contractions/ShiftInvariance.lean: 1-51 complete.",
+    "lean/refutations/raw-occupation-energy/EnergyExponent.lean: 1-50 complete.",
+    "lean/refutations/raw-occupation-energy/PenaltyPositive.lean: 1-38 complete.",
+    "lean/refutations/raw-occupation-energy/ScalarConstantHalved.lean: 1-44 complete.",
+    "lean/refutations/occupation-ceiling-exact/CellWidth.lean: 1-41 complete.",
+    "lean/refutations/occupation-ceiling-exact/ComparisonNeedsA.lean: 1-36 complete.",
+    "lean/refutations/occupation-ceiling-exact/TrapezoidLimit.lean: 1-42 complete.",
+    "lean/refutations/complex-phase-scalar/BlockExponent.lean: 1-34 complete.",
+    "lean/refutations/complex-phase-scalar/ImaginaryRoot.lean: 1-33 complete.",
+    "lean/refutations/complex-phase-scalar/NeumannInverse.lean: 1-37 complete.",
+    "lean/refutations/complex-phase-scalar/ParabolaQuarter.lean: 1-33 complete.",
+    "lean/refutations/complex-phase-scalar/PhaseWeight.lean: 1-37 complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: 225-242, 757-802, 2043-2138, 2256-2465, 2899-2982 read; complete authoritative passages for the prior findings; partial file.",
+    "manuscript/notes/integrated_occupation_ceiling.tex: 1-308 complete.",
+    "manuscript/notes/integrated_spatial_occupation.tex: 375-442 read; partial file.",
+    "manuscript/notes/integrated_unmasked_variational.tex: 270-284 read; partial file.",
+    "tools/mirror_check.py: 1-22 complete.",
+    "tools/mirror_check.out: 1-9 complete.",
+    "PROVENANCE.json: 1-55 textually read; partial textual coverage; 1-1899 completely parsed and all 222 listed byte-length/SHA-256 bindings verified.",
+    "lean/provenance/manuscript-anchor.json: 1-60 textually read; partial contextual coverage."
+  ],
+  "checks": [
+    {
+      "claim": "g2-W1",
+      "verdict": "PASS",
+      "reason": "The assurance at candidate/statement-ledger.md:5046-5057 is now restricted to the principal tempered-covariance setting and explicitly excludes integrability conclusions for gauss_shift_le, gammaEps_fourier and gammaEps_nonneg. This matches PhaseContractions.lean:192-194, 772-774, 976-979, versus the integrability conclusions at 286-292, 931-938 and 1070-1082. The manuscript's stronger standing class and finiteness statement are at notes_stratonovich_ham_second_moment.tex:2054-2057, 2097."
+    },
+    {
+      "claim": "g2-W2",
+      "verdict": "PASS",
+      "reason": "Candidate/statement-ledger.md:5088-5100 correctly distinguishes the two scalar manuscript-domain controls from ShiftInvariance. The latter uses dimension one and Lebesgue covariance at ShiftInvariance.lean:26-43, corresponding to alpha=0, outside the manuscript's dimension-three, 0<alpha<2 class at main TeX:2054-2057. The absence of an in-domain shift-equality control is explicit, making the documentation-only deferral justified."
+    },
+    {
+      "claim": "g2-W3",
+      "verdict": "PASS",
+      "reason": "Candidate/statement-ledger.md:3620-3622, 3644 and lean/claims.yaml:17377 now accurately distinguish absence of alpha0 from the conclusion from use of its hypotheses. L9Completed.lean:184 invokes PhaseCovariance.of_homog; PhaseContractions.lean:141-142 invokes SpectralMassIdentity.lean:212-217, which uses positivity and the threshold supplied by main TeX:226, 238."
+    },
+    {
+      "claim": "g3-W1",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The six-file account at candidate/statement-ledger.md:4551-4560 and 5473-5481 correctly separates scalar perturbations, Lean-route-only controls and totalized arithmetic. CellWidth.lean:26-33 and TrapezoidLimit.lean:26-34 concern constructions absent from the first-index selection at integrated_occupation_ceiling.tex:160-173. PenaltyPositive.lean:6-9 explicitly uses totalized division outside the positive-penalty domain at TeX:16. C2 suggests clarifying the generic README terminology."
+    },
+    {
+      "claim": "g3-W2",
+      "verdict": "PASS",
+      "reason": "Candidate/statement-ledger.md:4569 and lean/claims.yaml:15845 now specify natural floor, including its zero value for negative arguments. This matches OccupationCeilingExact.lean:160-168. The manuscript uses a different selection construction at integrated_occupation_ceiling.tex:169-173."
+    },
+    {
+      "claim": "g3-W3",
+      "verdict": "PASS",
+      "reason": "Candidate/statement-ledger.md:5439-5443 now correctly states that A finiteness is proved, while T finiteness belongs to occupation membership. Compare RawOccupationEnergy.lean:220-230, OccupationPhysicalClass.lean:154-158 and 509-522, and integrated_spatial_occupation.tex:381-383."
+    },
+    {
+      "claim": "g3-W4",
+      "verdict": "PASS",
+      "reason": "Candidate/statement-ledger.md:4542-4545 and 5460-5469 correctly describe equivalent a.e. occupation data while retaining the unformalized representation bridge. OccupationPhysicalClass.lean:144-158 models jointly measurable function/weak-gradient pairs; integrated_spatial_occupation.tex:381-383 and 407-414 supply the strongly H1-measurable formulation and representatives. The ceiling remains appropriately qualified by the missing moment identification, explicitly excluded at ledger:4538-4540 and supported by OccupationCeilingExact.lean:748-757."
+    },
+    {
+      "claim": "g4-W1",
+      "verdict": "PASS",
+      "reason": "The repaired summary at lean/claims.yaml:16448 now includes parameter signs, coupling, measurability and the explicit domination. These match ComplexPhaseScalar.lean:1250-1260 and the essential coupling-dependent estimate at main TeX:2301, 2357-2359. The ledger's fuller statement at 1670 remains accurate."
+    },
+    {
+      "claim": "g4-W2",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Candidate/statement-ledger.md:1589-1595 correctly reclassifies ImaginaryRoot as a reduced-premise control: its witness at ImaginaryRoot.lean:21-31 satisfies ComplexPhaseScalar.lean:515-516 but violates main TeX:2393. It does not claim that the strengthened bound fails under all manuscript hypotheses. The other controls correctly concern local scalar steps; C1 suggests making that local target more explicit."
+    },
+    {
+      "claim": "g4-W3",
+      "verdict": "PASS",
+      "reason": "Candidate/statement-ledger.md:1540-1543 now identifies the conditional branch in phaseG and the resulting zero value of phaseH. This matches ComplexPhaseScalar.lean:549-561 and the removable-value discussion at main TeX:2405-2407, 2429."
+    },
+    {
+      "claim": "g4-W4",
+      "verdict": "PASS",
+      "reason": "Candidate/statement-ledger.md:1666 preserves the general identity and adds numerical-range membership only when norm(u)=1. This matches ComplexPhaseScalar.lean:1161-1170 and the unit-vector requirement at main TeX:2283, 2373."
+    },
+    {
+      "claim": "RESCAN",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The five complete target sections preserve the distinctions between completed contraction results, representative-model occupation results, and input-carrying complex block-map deductions. In particular, L9Completed.lean:150-184 discharges the two contraction inputs, OccupationCeilingExact.lean:748-785 gives the exact occupation ceiling/comparison without identifying C2, and ComplexPhaseScalar.lean:1307-1378 retains its supplied inputs. The seven coverage rows agree; Rayleigh lambda is correctly described as a square root. Only the optional control-target wording in C1 remains."
+    },
+    {
+      "claim": "NO-REGRESSION",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The complete repair diff supports the scoped changes. Independent parsing confirms 47 same-assumptions rows, 30 inputs-supplied rows, three outside rows, 17 narrower same-assumptions rows, 25 narrower inputs-supplied rows, and 42 matching ASCII scope mirrors. All 2468 claims occur exactly once as ledger declaration entries. Target TeX mirrors preserve the mathematical content. The only Lean-file hunks in the since-reviewed diff are comments at diffs/l9-repair-eb253a5-338cdba.diff:187-237, 1458-1500; no declaration or proof changes appear. C1 is an optional clarification of newly added prose."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "C1 — ComplexPhaseScalar control-target wording. Candidate/statement-ledger.md:1584-1588 abbreviates BlockExponent as replacing the exponential bound and PhaseWeight as making 'the loss factor unsquared'. BlockExponent.lean:21-26 actually refutes the scalar majorant '(39+12*x)*exp x <= 100*exp x', corresponding to main TeX:2458-2459, not an identified propagator bound. PhaseWeight.lean:23-29 refutes an unsquared factor in the multiplier inequality, whereas main TeX:2968-2969 correctly has an unsquared factor for norms. Optional exact clarification: say 'the scalar block-sum majorant' and 'the multiplier/squared-norm loss factor unsquared'. The existing detailed declaration rows supply the correct distinctions.",
+      "C2 — Generic refutation terminology. Lean README.md:266-267, 325 and FORMALIZATION.md:87 use 'wrong variants of the whole results'. For example, CellWidth.lean:26-33 concerns 'OccupationCeilingExact.idx', while integrated_occupation_ceiling.tex:169-173 uses first-index Borel cells, not that index. The repaired ledger correctly classifies this at 4554-4560, so the generic wording need not be read as manuscript-counterexample certification. Optional exact replacement: 'proofs refuting specified declaration variants, including manuscript scalar steps, Lean-route-only constructions, and totalized or broader-generalization controls; see the ledger for their domains'."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Complete-reading requirement A was met. Contextual files outside its required passages were inspected only in the ranges reported; structural parsing and byte verification are not substantive correspondence review of their remaining contents.",
+    "No compiler, kernel replay or independent proof-correctness audit was performed; proof correctness was outside this contract.",
+    "The supplied diffs establish comment-only Lean changes within this packet; no external repository history was accessed.",
+    "No in-domain shift-equality refutation is supplied, and the ImaginaryRoot witness does not settle the strengthened root bound under the manuscript's full hypotheses.",
+    "This is an AI correspondence review, not human verification or a novelty audit."
+  ]
+}

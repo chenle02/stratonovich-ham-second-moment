@@ -1,0 +1,78 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md: 3102–3245 and 6699–6821 complete required sections; contextual reads 1–80, 250–458, 624, 642, 671–685, 753–758, 801–809, 818–823, 985, 1026, 1474–1550, 1624, 2289–2392, 2406–2408, 3296–3303, 3393–3395, 5487–5503, 5534; partial file.",
+    "lean/coverage.yaml: 1154–1191 and 1526–1574 complete required rows; partial file.",
+    "docs/coverage-scope-tex.yaml: 52–54 and 76–78 complete required entries; partial file.",
+    "prior/coverage-5ec3c11.yaml: 872–910 and 1183–1229, including complete required prior rows; partial file.",
+    "prior/coverage-scope-tex-5ec3c11.yaml: 37–39 and 55–57 complete corresponding entries; partial file.",
+    "prior/statement-ledger-5ec3c11.md: 2485–2501 and 5538–5602, covering the prior changed passages; partial file.",
+    "diffs/coverage.diff: 419–461 and 537–566 complete relevant hunks; partial file.",
+    "diffs/coverage-scope-tex.diff: 1–63 complete.",
+    "diffs/statement-ledger-changed-sections.diff: 1–61 complete.",
+    "diffs/statement-ledger.diff: 945–958 and 1535–1581 relevant hunks; partial file.",
+    "excerpts/tex-excerpts.txt: 1–1288 complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: 225–242, 2054–2066, 2164–2260, 2288–2465, 2472–2683, 2685–2796, 2800–2826, 2986–3581; complete required cited ranges, partial file.",
+    "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean: 1–615 complete.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean: 1–193 complete.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalar.lean: 1–215, 320–493, 540–765, 783–795, 813–831, 857–885, 967–1217; relevant declaration statements complete, partial file.",
+    "lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean: 1–100, 1175–1213, 1244–1350; relevant wrapper statements complete, partial file.",
+    "lean/StratonovichHAMSecondMoment/FockForm.lean: 1–260, including the complete cited fock_form_paper and fock_const_eq declarations; partial file.",
+    "lean/StratonovichHAMSecondMoment/InventoryProduct.lean: 628–699; partial file.",
+    "lean/StratonovichHAMSecondMoment/SeriesType.lean: 62–96, 113–122, 185–222; partial file.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean: 28–84; partial file.",
+    "lean/StratonovichHAMAudit/HermiteWordFock.lean: 1–53 complete.",
+    "lean/StratonovichHAMAudit/HermiteWord.lean: 1–61 complete.",
+    "lean/claims.yaml: 16424–16465, 17225–17259, 17324–17330, plus declaration-name searches; partial file.",
+    "PROVENANCE.json: 1–70; partial.",
+    "lean/provenance/manuscript-anchor.json: 1–25 verified as an explicit range; partial."
+  ],
+  "checks": [
+    {
+      "claim": "SCOPE-RULES",
+      "verdict": "PASS",
+      "reason": "The scopes at lean/coverage.yaml:1160–1162 and 1532–1535 contain no Lean declaration/module names or manuscript filenames/line numbers. Their folded text equals the corresponding ascii entries at docs/coverage-scope-tex.yaml:53,77; the tex entries at :54,78 preserve the content with mathematical typesetting. The occurrence 'lambda = n/h' denotes the phase-norm parameter, not the variational growth rate. Neither scope describes that rate as a Rayleigh supremum."
+    },
+    {
+      "claim": "L8-PATTERNS",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "No material instance of the four failure patterns was found in the reviewed passages, rows, scopes, or relevant summaries. The interval restriction is expressly disclosed: Lean '_hRpos : 0 < R' and '_hσpos : ∀ i, 0 < σ i' at IntervalScalarCompleted.lean:177–178 are narrower than the manuscript proposition followed by its zero/sign reduction at manuscript/notes/notes_stratonovich_ham_second_moment.tex:3402–3423; candidate/statement-ledger.md:3167–3176 and lean/coverage.yaml:1186–1191 acknowledge this. Supplied propagator and identification inputs remain supplied. The negative-R square-root convention at ledger:6804 is explicitly distinguished from the manuscript domain, not offered as a convention-free counterexample. 'Whole result' headings are accompanied by explicit weaker, inputs-supplied classifications. The genuinely full scalar block-series assertion is supported by IntervalScalar.lean:642–654. Relevant newly referenced declarations occur in the Index at ledger:807,818,823. W1 records only cross-reference wording."
+    },
+    {
+      "claim": "CHANGED-ROW P:static-phase-all-orders",
+      "verdict": "PASS",
+      "reason": "Comparison of prior/coverage-5ec3c11.yaml:1183–1224 with diffs/coverage.diff:537–566 shows that class, conclusion, scope, and claim IDs remain unchanged; the substantive additions disclose limitations. StaticPhaseCauchy.lean:568–586 still assumes 'hcircle' rather than deriving the propagator estimate. The manuscript obtains that estimate from the Fock and complex-phase lemmas at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2611–2614. The revised row accurately leaves their combination unformalized at lean/coverage.yaml:1560–1563. Its new one-coordinate warning at :1565–1568 matches HermiteWordFock.lean:43–48, versus the multi-coordinate phase construction at manuscript:2625–2630. Constants, parameter ranges, and the conditional abstract conclusions remain accurately described. The scope-rendering entry is unchanged and consistent."
+    },
+    {
+      "claim": "CHANGED-ROW P:interval-coefficients",
+      "verdict": "PASS",
+      "reason": "The prior row at prior/coverage-5ec3c11.yaml:872–909 and its complete diff hunk at diffs/coverage.diff:419–461 show unchanged class, conclusion, scope, and claim IDs. The added qualification at lean/coverage.yaml:1186–1188 correctly distinguishes HermiteWordFock's single-coordinate insertion 'gmul i' (HermiteWordFock.lean:43–48) from the manuscript's sums over several coordinates per color (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2531–2552,3490–3497). Inventory input discharge is real: IntervalScalarCompleted.lean:104–127 proves the inventory property, and :171–191 uses it while retaining hsplits and hfixed. The positive-R/positive-coupling restriction and omitted zero/sign reduction remain explicit. The assembly constant and subsequent absorbed-constant phase bound agree with manuscript:3499–3579."
+    },
+    {
+      "claim": "CHANGED-PASSAGE StaticPhaseCauchy (whole result)",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Every hunk in diffs/statement-ledger-changed-sections.diff:15–61 was checked against the complete section. FockForm.lean:206–232 retains the spatial column hypothesis 'hcol'; the corresponding manuscript column estimate is proved at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2492–2511. FockForm.lean:147–152 proves exactly the advertised conversion to d_N. ComplexPhaseScalar.lean:1307–1331 assumes the stated functional-calculus/integral inputs and concludes a weighted-block-map bound, whereas manuscript:2302–2307 bounds the actual phase propagator. Ledger:6747–6750 and 6780–6788 explicitly preserve that missing combination/identification, so the changed prose does not discharge the circle-bound input. The one-coordinate cutoff qualification is correct. W1 concerns terse cross-reference formulations, not the substantive scope."
+    },
+    {
+      "claim": "CHANGED-PASSAGE IntervalScalar (whole result)",
+      "verdict": "PASS",
+      "reason": "The only substantive changed passage, candidate/statement-ledger.md:3174–3176, now says that the invoked cutoff lemma is proved only with one Gaussian coordinate per color. This accurately matches HermiteWordFock.lean:43–48 and is narrower than the multi-coordinate manuscript lemma at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2531–2552. The paragraph continues to leave the finite-interval coefficient identification at manuscript:3490–3497,3549–3566 outside Lean. It neither claims that this identification is discharged nor changes the already qualified assembly and summation assertions."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "W1 — Cross-reference shorthand in candidate/statement-ledger.md:6794 ('L:complex-phase is formalized only with analytic inputs supplied') and :6787,6804 ('L:fock-form itself is in FockForm' / 'L:fock-form is FockForm.fock_form_paper') could identify the proved portions more precisely. ComplexPhaseScalar.lean:1326–1331 concludes a weighted-block-map inequality, whereas manuscript/notes/notes_stratonovich_ham_second_moment.tex:2302–2307 states the actual propagator inequality. FockForm.lean:206–232 gives the coefficient-model sandwich conclusions, whereas manuscript:2472–2489 also asserts self-adjointness of the unsandwiched operator on the larger Gaussian space. These differences are explicitly disclosed at ledger:6747–6750,6780–6788,1535–1537,2377–2385, so the cross-references are acceptable in context. Optional wording fix: replace the shorthand with 'the scalar and weighted-block-map deductions' and 'the coefficient-model sandwich estimate', respectively."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "All ranges required by complete-reading requirement A were read completely. Partial-file entries identify contextual sources whose unlisted portions were not reviewed; no conclusion is offered about those portions or unchanged earlier-wave assertions.",
+    "The manuscript-anchor historical remainder and PROVENANCE.json beyond the listed ranges were not reviewed. Packet hashes and repository ancestry were not independently recomputed.",
+    "Lean compilation and proof correctness were accepted as stipulated, not independently rerun.",
+    "This is an AI correspondence review, not human verification or a novelty audit."
+  ]
+}

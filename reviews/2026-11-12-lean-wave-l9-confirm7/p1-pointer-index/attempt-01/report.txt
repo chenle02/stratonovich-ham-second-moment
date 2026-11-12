@@ -1,0 +1,80 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md — partial full-file reading: lines 1-692 completely; exhaustive searches of all section-table label columns at 693-8711 for every Index key; complete list of ## headings searched at 1-8905. Additional full-row/context reading: 693-730, 832-892, 1260-1275, 2203-2248, 2310-2333, 2617-2654, 4198-4211, 6398-6405, 8692-8704. Required Scope, Index, headings and label-search coverage complete.",
+    "lean/FORMALIZATION.md — complete, lines 1-161.",
+    "lean/README.md — complete, lines 1-519.",
+    "tools/index_category_check.py — complete, lines 1-72.",
+    "tools/index_category_check.out — complete, line 1.",
+    "adjudication/round6-pointer-index.md — complete, lines 1-65.",
+    "tools/pointer_index.py — complete, lines 1-38; inspected, not executed.",
+    "tools/index_check_pointer.py — complete, lines 1-48.",
+    "tools/index_check_pointer.out — complete, lines 1-8.",
+    "PROVENANCE.json — partial, lines 1-90.",
+    "diffs/docs-a723987-434a7e2.diff — partial, search matches at lines 1, 5, 10, 12-13, 17, 21, 24, 26, 29, 35, 37, 695, 707, 881, 890, 899, 959, 974, 983.",
+    "manuscript/notes/integrated_actual_operator_driver.tex — partial, label-search matches at lines 18, 427, 528.",
+    "manuscript/notes/integrated_compact_gaussian.tex — partial, label-search matches at lines 13, 47, 98, 149, 180.",
+    "manuscript/notes/integrated_compact_mean_family.tex — partial, label-search matches at lines 256, 273, 277, 402, 408.",
+    "manuscript/notes/integrated_covariance_foundation.tex — partial, label-search matches at lines 34, 45, 49, 83, 88, 90, 95, 141, 150, 188, 258, 300, 303, 347, 358, 378.",
+    "manuscript/notes/integrated_exact_scaling.tex — partial, label-search match at line 4.",
+    "manuscript/notes/integrated_gaussian_tubes.tex — partial, label-search match at line 458.",
+    "manuscript/notes/integrated_intrinsic_constant.tex — partial, label-search matches at lines 23, 26, 33.",
+    "manuscript/notes/integrated_occupation_ceiling.tex — partial, label-search matches at lines 10, 24, 33, 93, 104, 120, 150, 196, 205, 213, 253, 256.",
+    "manuscript/notes/integrated_positive_gram.tex — partial, label-search matches at lines 26, 101, 175.",
+    "manuscript/notes/integrated_radius_anchor.tex — partial, label-search match at line 281.",
+    "manuscript/notes/integrated_raw_block_lower.tex — partial, label-search matches at lines 51, 233, 243, 339, 542.",
+    "manuscript/notes/integrated_spatial_occupation.tex — partial, lines 40-58; label-search matches additionally at 12, 15, 102, 106, 167, 171, 190, 220, 224, 227, 231, 301, 309, 316, 353, 361, 365, 387, 395, 399.",
+    "manuscript/notes/integrated_symplectic_phase.tex — partial, label-search matches at lines 31, 45, 53.",
+    "manuscript/notes/integrated_temporal_equilibrium.tex — partial, line 13 and lines 37-64.",
+    "manuscript/notes/integrated_unmasked_variational.tex — partial, label-search matches at lines 6, 24, 27, 65, 69, 99, 104, 169, 175, 225, 227, 271, 301.",
+    "manuscript/notes/integrated_wave_variance.tex — partial, label-search matches at lines 12, 25, 37, 41, 47, 141, 205, 212, 231, 240, 346, 350, 368, 376, 379, 390.",
+    "manuscript/notes/integrated_white_evaluation.tex — partial, label-search matches at lines 58, 103, 131.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex — partial, lines 2472-2571 and 4700-4728; label-search matches additionally at 219, 225, 252, 530, 782, 804, 822, 836, 1802, 2044, 2058, 2072, 2077, 2080, 2281, 2288, 2292, 2578, 2589, 2599, 2686, 2707, 2713, 2720, 2829, 2900, 2914, 2986, 2994, 3053, 3080, 3402, 3405, 3410, 3586, 3600, 3611, 3619, 3624, 3703, 3718, 5167, 7222, 7506, 7517, 7575, 7646, 7648, 7663, 7704, 7741, 7754, 7756, 7764, 7775."
+  ],
+  "checks": [
+    {
+      "claim": "POINTERS lines 512-600",
+      "verdict": "FAIL",
+      "reason": "All 89 first cells are existing, uniquely located manuscript labels; all listed section categories match their headings. All section sets match if only the leading label in each table cell is counted. However, the contract requires label-column uses, not merely leading labels: line 564 omits ClockCopy and MaskedSpectralGrowth despite explicit 'also L:low-alpha-convolution' at candidate/statement-ledger.md:1266,4206-4208. Literal label-column searches also find unlisted sections for lines 525 and 536. The supplied checker's anchored extraction at tools/index_category_check.py:53-54 ignores these non-leading references."
+    },
+    {
+      "claim": "POINTERS lines 601-688",
+      "verdict": "FAIL",
+      "reason": "All 87 manuscript labels exist uniquely, the single no-direct-label row matches its 71 sections, and every listed category matches its heading. Leading-label assignments match throughout. But line 667 omits FockForm, whose label column explicitly identifies E:fock-sandwich at candidate/statement-ledger.md:2322; line 686 omits HermiteWordFock, whose label column explicitly identifies E:finite-word-cutoff at :891. Literal label-column searches additionally expose omissions at lines 605 and 610. Thus the claimed exact section correspondence is false under the supplied contract."
+    },
+    {
+      "claim": "SCOPE-DESCRIPTION",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:62-84 defines the heading categories and explicitly describes a pointer Index without declaration lists or qualifiers; :85-100 records M1 and distinguishes missing constructions. The complete Scope at :37-505 contains no surviving every-cell or per-declaration Index requirement. The pointer implementation defects are reported separately."
+    },
+    {
+      "claim": "FORMALIZATION-WORDING",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "lean/FORMALIZATION.md:90-110 consistently describes section-category pointers, no per-declaration Index content, and the same M1 register. lean/README.md:108-118,300-303 is compatible. One broad sentence at FORMALIZATION.md:110-112 should explicitly preserve the HermiteWordFock exception already acknowledged at :82,84 and in the ledger Scope."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "P1 — First-slice pointer omissions. candidate/statement-ledger.md:564 lists only L9Completed, LowAlphaConvolution and WaveGreenFourier. Yet the label column for Lean declarations SpectralHomog.SpectralHomogeneous and MaskedSpectralGrowth.map_smul_of_scaling/spectralHomogeneous_of_scaling/spectralHomogeneous_of_homog explicitly says 'also `L:low-alpha-convolution`' at :1266,4206-4208. The authoritative TeX labels that lemma at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4702 and gives precisely the spectral-homogeneity step at :4719-4722. Fix: add `ClockCopy` (whole result) and `MaskedSpectralGrowth` (whole result) to Index row 564. The checker cannot establish the broader contract because tools/index_category_check.py:53-54 extracts only the first label.",
+      "P2 — Second-slice pointer omissions. candidate/statement-ledger.md:2322 labels Lean FockForm.fock_form with '`E:fock-sandwich`, main TeX lines 2484-2488', but Index row :667 omits FockForm. The TeX explicitly labels the sandwich bound at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2484-2488. Likewise, ledger :891 labels Lean HermiteWordFock.cut_eq_raw_fock with '`E:finite-word-cutoff` for the Fock model', but Index row :686 omits HermiteWordFock; the TeX labels the word equality at :2543-2550. Fix: add `FockForm` (narrower result) to row 667 and `HermiteWordFock` (narrower result) to row 686.",
+      "P3 — Undisclosed leading-label-only mapping convention. The supplied contract says sections whose tables use a label 'in their label column'; candidate/statement-ledger.md:79-84 does not restrict that rule to the first backticked label. Exhaustive searches reveal further missing label/section pairs: L:temporal-equilibrium→WhiteRelativeWidth (:8699); H:homog→L9Completed, PhaseContractions, QuotientObstruction, SpectralMassIdentity (:3482,4947,5120,6718,6720); L:spatial-fourier-bound→SpatialSmoothRatio (:6400,6411); E:spatial-static-score→SpatialSmoothRatio (:6402). For example, Lean SpatialSmoothRatio.StaticControls is described as '`E:spatial-static-score` in existential form' at :6402, while the TeX labels that score at manuscript/notes/integrated_spatial_occupation.tex:50-53. Some other references are contextual hypotheses rather than result attributions. Fix: distinguish those contextual references from label assignments, moving them outside the label column where appropriate, and make every remaining label assignment participate in pointer generation and checking. Do not treat a first-label-only match as proof of the present contract."
+    ],
+    "minor": [
+      "P4 — Audit-category wording. lean/FORMALIZATION.md:110-112 says the '`StratonovichHAMAudit` step modules are all of this kind' after defining category C. The ledger instead explicitly excepts HermiteWordFock at candidate/statement-ledger.md:76-78 and categorizes its Lean cut_eq_raw_fock as a narrower result at :853,891. The TeX permits multiple modes per color and Bochner integrals at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2532-2538,2551-2552, explaining that exception. Because FORMALIZATION.md:82,84 already acknowledges it, this is a local wording issue. Suggested exact clarification: replace 'are all of this kind' with 'are of this kind except HermiteWordFock, a narrower result'."
+    ]
+  },
+  "required_repairs": [
+    "Add the missing ClockCopy and MaskedSpectralGrowth pointers to L:low-alpha-convolution, with their whole-result heading categories.",
+    "Add FockForm (narrower result) to E:fock-sandwich and HermiteWordFock (narrower result) to E:finite-word-cutoff.",
+    "Resolve the label-column mapping discrepancy: separate contextual references from actual label assignments, include every actual assignment in the Index, and check non-leading assignments rather than extracting only the first label."
+  ],
+  "limitations": [
+    "Requirement A was completed. Full mathematical reading of the manuscript and all declaration statements was not required and was not performed; manuscript coverage outside the reported matches and contexts remains partial.",
+    "The additional non-leading references include contextual hypotheses and explicitly no-direct-label annotations; these must not automatically be interpreted as formalizations merely because a label string occurs there.",
+    "Proof correctness, build receipts, historical revision comparisons and provenance hashes were not independently verified.",
+    "This AI review is neither human verification nor a novelty audit."
+  ]
+}

@@ -1,0 +1,148 @@
+Independent correspondence review: wave L9 of the Lean companion (ledger rows, coverage classes and scope sentences) vs the manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  eb253a5022fa). Review ONLY its sections "FockForm (whole result)" (lines 2289-2418), "HermiteWordFock (whole result)" (lines 992-1026), the index rows for
+  them, and the items named in the checks below. Rows of earlier waves were
+  reviewed before.
+- the Lean modules (ground truth for what each declaration states), every
+  library module under lean/StratonovichHAMSecondMoment/. These sections'
+  own modules:
+     lean/StratonovichHAMSecondMoment/FockForm.lean
+     lean/StratonovichHAMAudit/HermiteWordFock.lean
+  Library modules they import directly or that the checks name (context;
+  read the declarations the rows name; their own imports are in the packet
+  too):
+     lean/StratonovichHAMSecondMoment/GaussianHermite.lean
+     lean/StratonovichHAMSecondMoment/GaussianIBP.lean
+     lean/StratonovichHAMSecondMoment/HermiteFock.lean
+     lean/StratonovichHAMAudit/HermiteWord.lean
+     lean/StratonovichHAMSecondMoment/HomogHypothesis.lean
+     lean/StratonovichHAMSecondMoment/IntervalScalar.lean
+     lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean
+- refutation files of these modules (negative controls):
+     lean/refutations/fock-form/CompressNonProjection.lean
+     lean/refutations/fock-form/OccupiedConstant.lean
+     lean/refutations/fock-form/TruncWithoutCutoff.lean
+- audit files (elaborated types printed by #check / #print axioms):
+     lean/Audit/fock-form/Audit.lean
+     lean/Audit/hermite-word-fock/Audit.lean
+- the step modules (finite, algebraic and scalar steps) under
+  lean/StratonovichHAMAudit/ (all of them are in the packet, for example
+  lean/StratonovichHAMAudit/HermiteWord.lean and
+  lean/StratonovichHAMAudit/DimensionalMatrix.lean); read the declarations
+  that rows and sections name.
+- lean/claims.yaml, lean/coverage.yaml, docs/coverage-scope-tex.yaml,
+  lean/provenance/manuscript-anchor.json.
+- prior/statement-ledger-5ec3c11.md, prior/coverage-5ec3c11.yaml,
+  prior/coverage-scope-tex-5ec3c11.yaml : the same files before the wave-L9
+  docs merge (companion 5ec3c1195fb7).
+- diffs/statement-ledger.diff, diffs/coverage.diff,
+  diffs/coverage-scope-tex.diff : git diffs from that commit to this one
+  (context; only the items named in the checks are in scope).
+- diffs/statement-ledger-changed-sections.diff : the hunks of the ledger diff that fall in the earlier sections named in the CHANGED-PASSAGE checks.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  a2844206199b. Labels are \label{...}.
+- excerpts/tex-excerpts.txt : the statements and proofs of the labels these
+  sections cite, with the line numbers of the files under manuscript/
+  (a convenience copy; the files under manuscript/ are authoritative).
+- PROVENANCE.json : byte binding of every packet file.
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that the consumers of the Hermite/Fock foundation: L:fock-form (E:fock-sandwich; the Fock half and compression proved, the spatial bound sum_i H_i^2 <= R_alpha rho^(alpha-4) supplied as FockColumn), L:interval-contractions (its Fock sentences), the Hermite step of E:occupied-multiplication in P:mild-construction, and L:finite-word-cutoff (E:finite-word-cutoff) applied to the concrete Gaussian Fock model through the audit file StratonovichHAMAudit/HermiteWordFock.lean with nothing supplied are formalized as stated in their
+rows: every listed conclusion proved, with hypotheses that match the
+manuscript, apart from side conditions the TeX leaves implicit and inputs
+explicitly declared as supplied. Test that claim hard: any Lean hypothesis
+that the manuscript does not have, any manuscript hypothesis the Lean
+drops, any weaker Lean conclusion, any changed constant, range, quantifier
+order or strictness, any modelling choice that changes the mathematical
+object, any supplied hypothesis stronger than the manuscript result it
+stands for, any row labelled as a step of a TeX proof that is really an
+auxiliary of a different Lean proof route, any coverage class that
+overstates ("same-assumptions" when a hypothesis is added; "full" when a
+conclusion is narrower), and any declaration missing from or duplicated in
+the Index, is a finding, unless the ledger states it AND it is genuinely
+harmless. Decide that yourself from the TeX; do not accept the ledger's word.
+A hypothesis is a "side condition the TeX leaves implicit" only if the TeX
+statement, its standing assumptions or its definitions imply it; otherwise
+it is an added restriction and must be disclosed as one. A control that
+uses Lean's totalized arithmetic outside the manuscript's domain is not a
+convention-free counterexample.
+Pay attention to: the named input FockColumn H c (column form sum_i ||H_i u||^2 <= c ||u||^2) vs the TeX's quadratic-form bound sum_i H_i^2 <= R_alpha rho^(alpha-4) (equivalent? stronger?); the compression to S_b; E:fock-sandwich with its constant; the coverage classes: L:fock-form, L:interval-contractions and P:mild-construction are "inputs-supplied, weaker" and L:finite-word-cutoff is "same-assumptions, weaker" (changed in this merge): is "same-assumptions" honest for L:finite-word-cutoff given the one-mode-per-color Fock model (the TeX allows m_i modes in color i) and any other restriction (degree cutoff N, finite m), and does its scope sentence say exactly what is narrower?; the four hypotheses of HermiteWord.cut_eq_raw discharged by goodDeg_vac, goodDeg_insert, goodDeg_frame, truncC_eq: are they the hypotheses the TeX's induction uses, and is the insertion J_i v = gmul i (K_i v) the TeX's insertion?; for P:mild-construction which part of the proposition is formalized (only the Hermite step of E:occupied-multiplication?) and whether its row and scope sentence say only that; refutations (compression of a non-projection, occupied constant, truncation without cutoff) test genuine perturbations. The changed passage of the step-module section "HermiteWord" is checked against StratonovichHAMAudit/HermiteWord.lean.
+
+CHECKS (exactly these 29, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.FockForm.FockColumn: L:fock-form"
+  2. claim "StratonovichHAMSecondMoment.FockForm.symm_of_isSelfAdjoint: no direct label"
+  3. claim "StratonovichHAMSecondMoment.FockForm.norm_proj_le: no direct label"
+  4. claim "StratonovichHAMSecondMoment.FockForm.compress_symm: no direct label"
+  5. claim "StratonovichHAMSecondMoment.FockForm.fockColumn_compress: L:fock-form"
+  6. claim "StratonovichHAMSecondMoment.FockForm.fock_const_eq: L:fock-form"
+  7. claim "StratonovichHAMSecondMoment.FockForm.fock_form: L:fock-form"
+  8. claim "StratonovichHAMSecondMoment.FockForm.fock_form_paper: L:fock-form"
+  9. claim "StratonovichHAMSecondMoment.FockForm.interval_contractions: L:interval-contractions"
+  10. claim "StratonovichHAMSecondMoment.FockForm.interval_contractions_paper: L:interval-contractions"
+  11. claim "StratonovichHAMSecondMoment.FockForm.occupied_multiplication: E:occupied-multiplication"
+  12. claim "StratonovichHAMSecondMoment.FockForm.occupied_multiplication_paper: E:occupied-multiplication"
+  13. claim "StratonovichHAMSecondMoment.FockForm.GoodDeg: L:finite-word-cutoff"
+  14. claim "StratonovichHAMSecondMoment.FockForm.truncC: L:finite-word-cutoff"
+  15. claim "StratonovichHAMSecondMoment.FockForm.goodDeg_vac: L:finite-word-cutoff"
+  16. claim "StratonovichHAMSecondMoment.FockForm.goodDeg_insert: L:finite-word-cutoff"
+  17. claim "StratonovichHAMSecondMoment.FockForm.goodDeg_frame: L:finite-word-cutoff"
+  18. claim "StratonovichHAMSecondMoment.FockForm.truncC_eq: L:finite-word-cutoff"
+  19. claim "StratonovichHAMAudit.HermiteWordFock.cut_eq_raw_fock: L:finite-word-cutoff"
+  20. claim "PARA-FockForm": the prose of the "FockForm (whole result)" section is accurate: it cites the right files and line numbers at a284420, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input, reading, proof-route difference and what is not formalized, and does not overclaim
+  21. claim "PARA-HermiteWordFock": the prose of the "HermiteWordFock (whole result)" section is accurate: it cites the right files and line numbers at a284420, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input, reading, proof-route difference and what is not formalized, and does not overclaim
+  22. claim "LEDGER-INDEX": every one of these 19 declarations appears EXACTLY ONCE in the "Index by label" table, under the same label as its section row (an additional listing only as an explicitly marked cross-reference), route auxiliaries in a "no direct label" row, and every label cited in these sections exists exactly once in the manuscript (search \label across all files under manuscript/)
+  23. claim "COVERAGE-ROWS": the lean/coverage.yaml rows L:finite-word-cutoff, L:fock-form, L:interval-contractions, P:mild-construction: class (same-assumptions / inputs-supplied), conclusion (full / weaker), conclusion_scope, note, inputs and claims are right and honest for the declarations of these modules; every claim id listed exists in lean/claims.yaml
+  24. claim "SCOPE-RULES": the conclusion_scope sentences of the rows L:finite-word-cutoff, L:fock-form, L:interval-contractions, P:mild-construction and their docs/coverage-scope-tex.yaml entries obey the plain-English rules: no Lean declaration or module names, no TeX line numbers or file names (manuscript labels are allowed), the same content in ascii (equal to conclusion_scope) and tex, and wherever lambda (the rate) is described it is the SQUARE ROOT of the supremum of the real Rayleigh quotient, never the supremum itself
+  25. claim "REFUTATIONS": each refutation file listed under PACKET for these modules states the perturbation the ledger says it states, the perturbation is a genuine weakening or mis-statement of the corresponding manuscript claim (inside the manuscript's domain, or explicitly described as a control of Lean's totalized extension outside it), and the file proves its negation (or the counterexample) as described; the ledger's description of each refutation is accurate
+  26. claim "CROSS-REFERENCES": every other place in the ledger that points to these sections or their labels (other sections, the Scope bullets, the "Not in Lean" section) is accurate
+  27. claim "L8-PATTERNS": the four failure patterns found by the wave-L8 reviews (the wave-L9 docs were written before those findings) are absent from these sections, their coverage rows, scope sentences (ascii and tex) and README/FORMALIZATION/COMPLETION-style summary sentences in the ledger: (a) a conclusion_scope or summary sentence that claims more than the cited Lean declarations conclude (e.g. "proved in every dimension" when one part is proved only in d = 1, or membership of a factor in a class presented as identification of the TeX operation); (b) a hypothesis described as a "side condition the TeX leaves implicit" or "implicit hypothesis made explicit" although the TeX does not imply it (it must then be disclosed as an added restriction); (c) a refutation or control that evaluates a quotient, power, inverse, logarithm or square root outside its domain using Lean's totalized operations (x/0 = 0, 0^(-a) = 0, Real.log 0 = 0, Real.sqrt of a negative = 0) but is described as convention-free or as a counterexample "under any reading"; (d) "full lemma", "whole result", "every assertion", "nothing supplied" or class "full" language for a declaration or row whose conclusion is narrower, or which carries a supplied input. Name every occurrence with file:line.
+  28. claim "CHANGED-ROW L:finite-word-cutoff": the coverage.yaml row L:finite-word-cutoff as changed by the wave-L9 docs merge (compare prior/coverage-5ec3c11.yaml and diffs/coverage.diff) and its docs/coverage-scope-tex.yaml entry: the new class, conclusion, conclusion_scope, note, inputs and claims are accurate for the Lean declarations they cite and the manuscript statement of L:finite-word-cutoff; nothing that was true before was made false
+  29. claim "CHANGED-PASSAGE HermiteWord": every passage of the ledger section "HermiteWord" (lines 971-990) that the wave-L9 docs merge changed (see diffs/statement-ledger-changed-sections.diff) is accurate against the Lean source and the TeX at a284420
+For each row check (1-19): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: these sections' own Lean modules (listed above), and, for every other declaration a row names, that declaration in its module; the refutation and audit files listed above; the sections "FockForm (whole result)", "HermiteWordFock (whole result)" and the "Scope" and "Index by label" sections of candidate/statement-ledger.md; the entries of lean/claims.yaml for these modules;
+   the rows L:finite-word-cutoff, L:fock-form, L:interval-contractions, P:mild-construction of lean/coverage.yaml and their docs/coverage-scope-tex.yaml entries;
+   for each CHANGED-ROW check, the same row in prior/coverage-5ec3c11.yaml and its hunk in diffs/coverage.diff and diffs/coverage-scope-tex.diff, and the Lean declarations whose claim ids the merge added to these rows (see lean/claims.yaml for their files);
+   diffs/statement-ledger-changed-sections.diff, and every ledger section named in a CHANGED-PASSAGE check (whole section);
+   excerpts/tex-excerpts.txt, and in the files under manuscript/ every TeX line range the sections and rows cite.
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 29 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-19.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "limitations": anything you could not check.
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES;
+  FAIL if any fatal or major finding or required repair; INCONCLUSIVE if
+  the reading requirement could not be met.
+- "confidence": high only if requirement A is complete.

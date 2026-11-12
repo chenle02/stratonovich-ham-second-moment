@@ -1,0 +1,60 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "medium",
+  "source_coverage": [
+    "PROVENANCE.json: lines 1-814, complete.",
+    "candidate/statement-ledger.md: lines 1-110, 837-919, 3128-3140, 3499-3520, 3702-3722, 5090-5115, 6377-6524, 8007-8034, 9038-9054, 9120-9134; partial overall, required Scope and Index ranges complete.",
+    "candidate/statement-ledger.md: complete list of ## headings read at lines 37, 501, 1166, 1179, 1191, 1208, 1220, 1246, 1269, 1278, 1287, 1305, 1326, 1366, 1398, 1421, 1446, 1464, 1477, 1489, 1512, 1529, 1541, 1554, 1571, 1587, 1600, 1811, 1983, 2163, 2343, 2359, 2566, 2676, 2808, 2916, 2972, 3090, 3107, 3128, 3237, 3361, 3382, 3499, 3644, 3702, 3794, 3808, 3901, 3957, 4089, 4264, 4379, 4548, 4696, 4788, 4898, 5007, 5090, 5238, 5298, 5466, 5629, 5718, 5827, 5847, 5965, 6019, 6142, 6247, 6377, 6596, 6648, 6737, 6890, 7085, 7196, 7322, 7468, 7550, 7685, 7870, 8007, 8086, 8259, 8367, 8512, 8631, 8763, 8880, 9038, 9120, 9185.",
+    "lean/FORMALIZATION.md: lines 1-160, complete.",
+    "tools/index_category_check.out: line 1, complete.",
+    "tools/index_category_check.py: lines 1-117, complete.",
+    "tools/decltable.py: lines 1-77, complete.",
+    "tools/regen_index.py: lines 1-74, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/H1Density.lean.excerpt.txt: lines 1-315, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/IntervalScalar.lean.excerpt.txt: lines 1-361, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/InventoryProduct.lean.excerpt.txt: lines 1-288, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean.excerpt.txt: lines 1-402, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialFourLinear.lean.excerpt.txt: lines 1-974, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/UniformSeriesTail.lean.excerpt.txt: lines 1-223, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/WhiteClockLaplace.lean.excerpt.txt: lines 1-286, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/WhiteRelativeWidth.lean.excerpt.txt: lines 1-175, complete.",
+    "excerpts/tex-excerpts.txt: lines 1-407, complete.",
+    "lean/coverage.yaml: lines 55-100, 113-134, 518-535, 842-856, 924-980, 984-1012, 1063-1083, 1176-1221, 1375-1405, 1466-1529, 1774-1781; partial overall, relevant coverage rows complete.",
+    "adjudication/round5-350d191.md: lines 1-89, complete.",
+    "adjudication/round3-d5667f5-split-rule.md: lines 1-131, complete.",
+    "manuscript/notes/integrated_spatial_occupation.tex: lines 1-45, 219-449, partial.",
+    "manuscript/notes/integrated_white_evaluation.tex: lines 1-12, 101-161, partial.",
+    "manuscript/notes/integrated_temporal_equilibrium.tex: lines 37-51, partial.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: lines 2685-2818, 2986-3040, 3053-3094, 3600-3748, 7638-7696, partial."
+  ],
+  "checks": [
+    {
+      "claim": "INDEX-CELLS lines 837-919",
+      "verdict": "FAIL",
+      "reason": "Residual section-level qualifiers do not accurately describe every listed declaration at candidate/statement-ledger.md:873-874, and four complete display wrappers retain an unjustified narrower-result category at lines 877, 879, 881 and 885. See K1-K2. The inspected white-transform constants, inventory coefficient bound, uniform-tail hypotheses and occupation-energy factor otherwise match their supplied statements."
+    },
+    {
+      "claim": "INDEX-MAPPING lines 837-919",
+      "verdict": "PASS",
+      "reason": "The label associations match the statements or proof steps: manuscript/notes/integrated_white_evaluation.tex:101-161; manuscript/notes/notes_stratonovich_ham_second_moment.tex:2685-2796, 2986-3040, 3053-3094, 3600-3748, 7640-7696; manuscript/notes/integrated_spatial_occupation.tex:219-442. The no-direct-label rows appropriately identify foundation or Lean-route infrastructure rather than additional labelled results."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "K1 — Residual mixed scope at candidate/statement-ledger.md:873-874. Both cells say 'narrower result: joint continuity of C_4 in sequential form', but this does not describe every declaration. For example, Lean spatial_Asp_pos_paper concludes only '0 < pairing ...' (lean-excerpts/StratonovichHAMSecondMoment/SpatialFourLinear.lean.excerpt.txt:847-850, original Lean 1565-1568); spatial_ratio_H1_paper concludes 'Rsp Γ alpha = R0 Γ alpha' (same excerpt:830-842); squarePairingBounds_paper supplies the homogeneous and squared-CS bounds (same excerpt:903-921). TeX separately asserts 'jointly continuous' and positivity at manuscript/notes/integrated_spatial_occupation.tex:229-236. Exact fix: retain the sequential-continuity qualification on the bundled result and continuity declaration only; give multilinearity, ratio equality, pairing bounds and positivity their own proof-step descriptions, retaining hdense only where actually present.",
+      "K2 — Complete displays incorrectly inherit narrower-result status at candidate/statement-ledger.md:877,879,881,885. Lean states the homogeneous bound, square-CS bound, four-linear integral bound and energy identity in full, with the disclosed density input: lean-excerpts/StratonovichHAMSecondMoment/SpatialFourLinear.lean.excerpt.txt:727-778,928-937, including 'Esp Γ = energyValue alpha (Rsp Γ alpha) ∧ 0 < Esp Γ'. These match manuscript/notes/integrated_spatial_occupation.tex:224-234,309-314. Neither sequential continuity nor rate/cost identification is part of these displays. Thus referring to the narrower enclosing section does not identify a missing conclusion of these labels. Exact fix: classify these four cells as 'proof steps: the display in full, with the named density input hdense; the enclosing proposition remains narrower', consistent with the distinction already applied to their completed counterparts."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Replace the inherited continuity qualifiers at lines 873-874 with declaration-appropriate scopes, splitting the row where necessary and preserving the actual density-input distinctions.",
+    "Reclassify lines 877, 879, 881 and 885 as full-display proof steps with hdense supplied, rather than narrower displays justified by unrelated section-level omissions."
+  ],
+  "limitations": [
+    "Requirement A was read completely. Partial-file coverage above concerns material outside its required ranges; the remaining manuscript and ledger bodies were not reviewed globally.",
+    "TerminalWick and completion-module Lean sources are not supplied among the excerpts, so their discharge cross-references could not be independently inspected.",
+    "Proof correctness, package-wide counts, provenance hashes and novelty were not audited. This AI review is not human verification."
+  ]
+}

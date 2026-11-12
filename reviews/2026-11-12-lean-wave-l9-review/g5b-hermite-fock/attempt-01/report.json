@@ -1,0 +1,322 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-1796 \u2014 complete; all listed byte lengths and SHA-256 bindings also checked.",
+    "candidate/statement-ledger.md:1-831,971-1027,2289-2401,2405-2418,2584-2700,2848-2963,3164-3183,3241,3535-3548,6735-6822,8654-8687 \u2014 partial file; required Scope, Index by label, and HermiteFock sections read completely.",
+    "lean/StratonovichHAMSecondMoment/HermiteFock.lean:1-641 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/GaussianHermite.lean:1-501 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/GaussianIBP.lean:1-327 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/FockForm.lean:1-546 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean:230-234 \u2014 partial file; referenced fockD declaration complete.",
+    "lean/StratonovichHAMAudit/HermiteWord.lean:1-61 \u2014 complete.",
+    "lean/StratonovichHAMAudit/HermiteWordFock.lean:1-53 \u2014 complete.",
+    "lean/StratonovichHAMAudit/HermiteWordConsumer.lean:1-70 \u2014 complete.",
+    "lean/Audit/hermite-fock/Audit.lean:1-123 \u2014 complete.",
+    "lean/refutations/hermite-fock/CreRowConstant.lean:1-42 \u2014 complete.",
+    "lean/refutations/hermite-fock/NumberOrder.lean:1-35 \u2014 complete.",
+    "lean/refutations/hermite-fock/VacuumSquareOfSum.lean:1-35 \u2014 complete.",
+    "lean/claims.yaml:224-237,14604-14610,16473-17331 \u2014 partial file; all HermiteFock entries and relevant GaussianHermite, FockForm, and finite-word entries complete.",
+    "lean/coverage.yaml:1-85,320-415,475-520,1290-1328 \u2014 partial file; all four required coverage rows complete.",
+    "docs/coverage-scope-tex.yaml:1-32,55-63 \u2014 partial file; all four required entries complete.",
+    "excerpts/tex-excerpts.txt:1-391 \u2014 complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:225-242,1773-1815,2009-2138,2282-2305,2461-2527,2531-2571,2779-2897 \u2014 partial file; every manuscript range cited by the HermiteFock section read completely.",
+    "lean/provenance/manuscript-anchor.json:1-30,455-480,527 \u2014 partial; revision metadata and relevant historical source entries inspected.",
+    "prior/statement-ledger-5ec3c11.md:848-865 \u2014 partial; earlier finite-word correspondence inspected.",
+    "prior/coverage-5ec3c11.yaml:258-281,300-365 \u2014 partial; earlier finite-word coverage inspected.",
+    "prior/coverage-scope-tex-5ec3c11.yaml:1-12 \u2014 partial; label searches additionally performed.",
+    "diffs/statement-ledger.diff:826-941 \u2014 partial; complete added HermiteFock section inspected.",
+    "diffs/coverage.diff:159-235,273-298,466-488 \u2014 partial; required coverage changes inspected.",
+    "diffs/coverage-scope-tex.diff:22-33,44-46 \u2014 partial; required scope changes inspected."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.deg: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean: 'deg ... := \u2211 i, k i' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:79-80). TeX: 'Gaussian Hermite degrees at most N' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2476-2477). This is the correct total-degree index, without additional hypotheses; candidate/statement-ledger.md:2916 and lean/claims.yaml:16870 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.degLE: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean: the finite coordinate box is filtered by '\u2211 i, k i \u2264 N' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:82-84). TeX: projection onto 'degrees at most N' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2476-2477). The box imposes no extra restriction because nonnegative coordinates of total degree \u2264 N individually satisfy that bound. Ledger:2917 and lean/claims.yaml:16877 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.mem_degLE: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean: 'k \u2208 degLE m N \u2194 deg k \u2264 N', with no extra hypothesis (lean/StratonovichHAMSecondMoment/HermiteFock.lean:86-91). candidate/statement-ledger.md:2918 and lean/claims.yaml:16884 match. TeX: no separate counterpart or hypothesis is claimed; this is correctly classified as an index-set auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.degLE_mono: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean hypothesis: 'h : N \u2264 M'; conclusion: 'degLE m N \u2286 degLE m M' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:93-95). Ledger:2919 and lean/claims.yaml:16891 retain the hypothesis. TeX: no corresponding statement is claimed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.zero_mem_degLE: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean: '(0 : Fin m \u2192 \u2115) \u2208 degLE m N' for every natural N (lean/StratonovichHAMSecondMoment/HermiteFock.lean:97-98). Ledger:2920 and lean/claims.yaml:16898 agree. TeX: no separate auxiliary statement is claimed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.deg_add_unitIdx: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean: 'deg (k + unitIdx i) = deg k + 1' for arbitrary k and i (lean/StratonovichHAMSecondMoment/HermiteFock.lean:100-102). Ledger:2921 and lean/claims.yaml:16905 agree. TeX: no separate correspondence claim is made."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.sub_add_unitIdx: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean requires 'h : k i \u2260 0' before asserting 'k - unitIdx i + unitIdx i = k' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:104-110). Ledger:2922 and lean/claims.yaml:16912 preserve this essential natural-subtraction condition. TeX: no counterpart is claimed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.add_sub_unitIdx: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean: 'k + unitIdx i - unitIdx i = k', without a positivity hypothesis (lean/StratonovichHAMSecondMoment/HermiteFock.lean:112-114). Ledger:2923 and lean/claims.yaml:16919 agree. TeX: no separate counterpart is claimed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.deg_sub_unitIdx: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean requires 'k i \u2260 0' and concludes 'deg (k - unitIdx i) + 1 = deg k' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:116-120). Ledger:2924 and lean/claims.yaml:16926 retain the condition. TeX: no separate counterpart is claimed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.sub_unitIdx_apply: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean: '(k - unitIdx i) i = k i - 1' in \u2115 (lean/StratonovichHAMSecondMoment/HermiteFock.lean:122-124). Ledger:2925 and lean/claims.yaml:16933 explicitly identify natural subtraction. TeX: no corresponding auxiliary theorem is claimed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.add_unitIdx_apply: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean: '(k + unitIdx i) i = k i + 1' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:126-128). Ledger:2926 and lean/claims.yaml:16940 agree. TeX: no separate counterpart is claimed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.sum_degLE_succ_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean hypotheses: '[AddCommMonoid M]' and '\u2200 k, k i = 0 \u2192 g k = 0'; conclusion shifts the degree-N+1 sum to the degree-N sum (lean/StratonovichHAMSecondMoment/HermiteFock.lean:130-152). Ledger:2927 and lean/claims.yaml:16947 reproduce these conditions. TeX: no direct counterpart is claimed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.sum_degLE_eq_of_vanish: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean hypotheses: 'N \u2264 M' and '\u2200 k, N < deg k \u2192 g k = 0', over an additive commutative monoid (lean/StratonovichHAMSecondMoment/HermiteFock.lean:154-161). Ledger:2928 and lean/claims.yaml:16954 match. TeX: no direct counterpart is claimed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.Supp: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean: '\u2200 k, N < deg k \u2192 v k = 0' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:167-168). TeX: the range of projection onto 'Gaussian Hermite degrees at most N' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2476-2478). Ledger:2929 and lean/claims.yaml:16961 correctly describe the finite-coordinate coefficient realization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.ann: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean: 'sqrt(k i + 1) \u2022 v (k + unitIdx i)' on complex-inner-product-space-valued coefficients (lean/StratonovichHAMSecondMoment/HermiteFock.lean:165-172). TeX: multiplication is 'a_i^*+a_i' with lowering coefficient 'sqrt(k_i)' on basis vectors (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2515-2517). Transposing basis action to coefficient action gives exactly this formula. Ledger:2930 and lean/claims.yaml:16968 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.cre: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean: 'sqrt(k i) \u2022 v (k - unitIdx i)' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:174-176). TeX: the creation coefficient is 'sqrt(k_i+1)' on h_k (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2515-2517); its coefficient-vector action is the displayed Lean formula. At k_i=0 the scalar is zero. Ledger:2931 and lean/claims.yaml:16975 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.gmul: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean: 'cre i v k + ann i v k' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:178-179). TeX: 'multiplication by g_i is a_i^*+a_i' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2515-2517). Ledger:2932 and lean/claims.yaml:16982 correctly treat this initially as a definition, with polynomial realization proved later."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.creRow: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean: '\u2211 i, cre i (u i) k' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:181-182). TeX: '(v_i) \u21a6 \u2211_i a_i^*v_i' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2517-2519). No symmetry or column hypothesis is needed for this definition. Ledger:2933 and lean/claims.yaml:16989 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.fieldOp: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean takes 'H : Fin m \u2192 X \u2192L[\u2102] X' and sums gmul acting on 'H i (v l)' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:184-186). TeX uses the Gaussian field sum and then its spatial sandwiches H_i (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2480,2495-2496,2520). Ledger:2934 and lean/claims.yaml:16996 correctly give the abstract field definition, not a construction of the spatial operators."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.vac: E:finite-word-cutoff",
+      "verdict": "PASS",
+      "reason": "Lean: 'if k = 0 then u else 0' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:188-189). TeX: the start vector is '1\u2297v' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2545-2548). Ledger:2935 and lean/claims.yaml:17003 correctly identify the vacuum coefficient vector, without claiming the entire cutoff lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.cre_of_eq_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean hypothesis: 'k i = 0'; conclusion: 'cre i v k = 0' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:191-193). Ledger:2936 and lean/claims.yaml:17010 match. TeX: no separate coefficient-level auxiliary is claimed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.cre_ann: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean: 'cre i (ann i v) k = ... k i ... \u2022 v k', for every coefficient function and index (lean/StratonovichHAMSecondMoment/HermiteFock.lean:195-204). Ledger:2937 and lean/claims.yaml:17017 agree, including the operator order. TeX: no separate coordinatewise theorem is claimed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.number_identity: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean: '\u2211 i, cre i (ann i v) k = ... deg k ... \u2022 v k' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:206-210). TeX: '\u2211_i a_i^*a_i = (k+1)I on degree k+1' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2518-2519). The different index names do not change the eigenvalue. Ledger:2938 and lean/claims.yaml:17024 correctly preserve the order and degree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.sum_inner_ann: L:fock-form",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean has no support hypotheses: its degree-N annihilation pairing equals the degree-N+1 creation pairing (lean/StratonovichHAMSecondMoment/HermiteFock.lean:212-222). TeX: 'annihilation part is its adjoint' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2522-2523). Ledger:2939 and lean/claims.yaml:17031 match. The inner-product convention difference is harmless here but could be stated explicitly; see W3."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.sum_inner_cre: L:fock-form",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean gives the conjugate adjoint identity, with degree-N+1 on the creation side and degree-N on the annihilation side (lean/StratonovichHAMSecondMoment/HermiteFock.lean:224-230). TeX: the same adjoint relation (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2518-2519,2522). Ledger:2940 and lean/claims.yaml:17038 agree. Conjugating both sides handles the TeX convention; see W3."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.sq_sum_re_inner_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean explicitly assumes '0 \u2264 \u2211 ... re (inner ...)' and concludes the squared finite Cauchy-Schwarz inequality (lean/StratonovichHAMSecondMoment/HermiteFock.lean:234-243). Ledger:2941 and lean/claims.yaml:17045 retain that hypothesis. TeX: no direct counterpart is claimed, so this proof-route restriction is not misrepresented as a manuscript assumption."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.creRow_bound: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean: the degree-N+1 output squared sum is bounded by '(N+1)' times the degree-N input squared sum, with no support hypothesis (lean/StratonovichHAMSecondMoment/HermiteFock.lean:245-250). TeX: the creation row on degree k has norm 'sqrt(k+1)' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2517-2522). Summing orthogonal degrees gives exactly the stated cutoff bound. Ledger:2942 and lean/claims.yaml:17052 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.creOp: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean: 'creRow (fun i l => H i (v l)) k' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:278-280). TeX: composing the creation row 'with the column of spatial operators' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2520-2521). Ledger:2943 and lean/claims.yaml:17059 match; symmetry is not required merely to define this operator."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.annOp: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean: '\u2211 i, ann i (fun l => H i (v l)) k' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:282-284). TeX: the annihilation part of the same spatial field (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2522-2523). Ledger:2944 and lean/claims.yaml:17066 correctly describe the definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.fieldOp_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean: 'fieldOp H v k = creOp H v k + annOp H v k', without symmetry or support assumptions (lean/StratonovichHAMSecondMoment/HermiteFock.lean:286-289). Ledger:2945 and lean/claims.yaml:17073 match. TeX: no separate correspondence is claimed for this definitional decomposition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.creOp_bound: L:fock-form",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean assumes only '\u2200 u, \u2211 i, \u2016H i u\u2016\u00b2 \u2264 c * \u2016u\u2016\u00b2' and concludes the squared bound '(N+1)c' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:291-302). TeX composes its creation row with the spatial column (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2520-2521). Ledger:2946 and lean/claims.yaml:17080 give the correct conclusion; the ledger input cell unnecessarily attributes a symmetry hypothesis to this declaration. This harmless understatement of Lean's generality is W1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.annOp_bound: L:fock-form",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean hypotheses are symmetry 'inner (H i u) w = inner u (H i w)', '0 \u2264 c', and the column bound; input degrees are \u2264 N+1 and output degrees \u2264 N (lean/StratonovichHAMSecondMoment/HermiteFock.lean:307-311). TeX uses adjointness after truncation (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2522-2523). Ledger:2947 and lean/claims.yaml:17087 correctly state the theorem. The comparison with TeX's Nc needs its input cutoff kept explicit; see W2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.annOp_supp: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean assumes 'hv : Supp N v' and concludes 'Supp N (annOp H v)' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:344-350). Ledger:2948 and lean/claims.yaml:17094 match. TeX: no direct counterpart is claimed; the deliberately non-sharp support conclusion is an honest route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.fieldOp_supp: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean assumes 'Supp N v' and concludes 'Supp (N+1) (fieldOp H v)' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:352-362). Ledger:2949 and lean/claims.yaml:17101 match. TeX: no separate correspondence is claimed for this support bookkeeping lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.fieldOp_bound: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean assumes symmetric H_i, '0 \u2264 c', the column bound, and 'Supp N v'; its untruncated output through degree N+1 has squared constant '(2 sqrt(N+1) sqrt c)^2' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:364-392). TeX supplies symmetry and the spatial column, then combines creation and annihilation (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2509-2524). Ledger:2950 and lean/claims.yaml:17108 explicitly disclose the general-column formulation, untruncated output, and proof route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.fieldOp_bound_trunc: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean retains symmetry, nonnegative column constant, and 'Supp N v', and restricts the output sum to degree N (lean/StratonovichHAMSecondMoment/HermiteFock.lean:394-402). TeX has P_N on both sides of the field and constant '2 sqrt(N+1) sqrt(R_alpha)' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2480-2487,2522-2524). Ledger:2951 and lean/claims.yaml:17115 accurately describe the conditional Fock half."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.fieldOp_symm_trunc: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean hypotheses are symmetry of H_i and 'Supp N v', 'Supp N w'; conclusion is equality of the two truncated coefficient pairings (lean/StratonovichHAMSecondMoment/HermiteFock.lean:404-410). TeX asserts selfadjointness of its compressed operators (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2480-2483). Ledger:2952 and lean/claims.yaml:17122 correctly limit the proved assertion to symmetry on the coefficient model, rather than claiming construction or selfadjointness of B itself."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.creRow_attained: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean hypothesis: '\u2200 k, deg k \u2260 j+1 \u2192 w k = 0'; conclusions are the two squared-sum equalities for the family a_i w (lean/StratonovichHAMSecondMoment/HermiteFock.lean:439-447). TeX identifies the row norm through '\u2211 a_i^*a_i=(k+1)I on degree k+1' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2518-2519). Ledger:2953 and lean/claims.yaml:17129 faithfully state the conditional equalities; they do not assert existence of a nonzero vector for degenerate m or X."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.integral_norm_sq_sum_smul: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean requires integrable pairwise products and the Gram identity 'if a=b then 1 else 0' on the finite set, and concludes integrability plus the norm-square integral identity (lean/StratonovichHAMSecondMoment/HermiteFock.lean:476-485). Ledger:2954 and lean/claims.yaml:17136 preserve both supplied mathematical hypotheses. TeX: no direct correspondence is claimed for this generic isometry auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.iota: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean: '\u2211 k \u2208 degLE m N, (hk k x : \u2102) \u2022 v k' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:515-518). TeX uses 'normalized Hermite polynomials' on degrees at most N (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2476,2515-2517). Ledger:2955 and lean/claims.yaml:17143 correctly identify this finite X-valued expansion, not the full Gaussian L\u00b2 space."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.integral_norm_sq_iota: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean concludes integrability and '\u222b \u2016iota N v\u2016\u00b2 = \u2211 ... \u2016v k\u2016\u00b2' under stdPi m, with no support assumption on values discarded by iota (lean/StratonovichHAMSecondMoment/HermiteFock.lean:520-527). TeX's 'normalized Hermite polynomials' and orthogonal degree decomposition use precisely this normalization (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2515-2522). Ledger:2956 and lean/claims.yaml:17150 correctly describe the finite-coefficient isometry."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.iota_vac: E:finite-word-cutoff",
+      "verdict": "PASS",
+      "reason": "Lean: 'iota N (vac u) x = u' for every N, u, x (lean/StratonovichHAMSecondMoment/HermiteFock.lean:529-534). TeX: '1\u2297v' is the constant Gaussian vacuum factor (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2545-2548). Ledger:2957 and lean/claims.yaml:17157 match, including N=0."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.coord_smul_iota: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean requires 'hv : Supp N v' and proves 'x_i \u2022 iota N v = iota (N+1) (gmul i v)' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:536-540). TeX: 'g_i h_k = sqrt(k_i+1)h_(k+e_i)+sqrt(k_i)h_(k-e_i)' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2515-2517). Ledger:2958 and lean/claims.yaml:17164 retain the support restriction and enlarged output cutoff; no false same-cutoff boundary identity is claimed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.sum_coord_smul_iota: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean takes continuous complex-linear H_i and 'Supp N v', and concludes the field action equals 'iota (N+1) (fieldOp H v)' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:581-591). TeX combines coordinate multiplication with the spatial column (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2515-2520). Ledger:2959 and lean/claims.yaml:17171 faithfully state this general finite-field realization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.gaussian_field_bound: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean requires symmetric H_i, '0 \u2264 c', the column bound, and 'Supp N v'; it concludes integrability of both squared norms and the untruncated Gaussian integral bound (lean/StratonovichHAMSecondMoment/HermiteFock.lean:593-609). TeX supplies the spatial column and uses the normalized Hermite field calculation (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2509-2524). Ledger:2960 and lean/claims.yaml:17178 explicitly disclose untruncated output and the conditional general-column form."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.gaussian_field_bound_trunc: L:fock-form",
+      "verdict": "PASS",
+      "reason": "Lean retains symmetry, nonnegative column constant, and support, and bounds '\u222b \u2016iota N (fieldOp H v)\u2016\u00b2' (lean/StratonovichHAMSecondMoment/HermiteFock.lean:611-623). TeX uses P_N on the output as well as the input (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2480,2522-2524). Ledger:2961 and lean/claims.yaml:17185 match. Input integrability is independently proved by integral_norm_sq_iota, not silently assumed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HermiteFock.vacuum_insertion_isometry: L:interval-contractions",
+      "verdict": "PASS",
+      "reason": "Lean: for arbitrary 'w : Fin m \u2192 X', the squared norm of '\u2211 i, x_i \u2022 w_i' is integrable and has integral '\u2211 i, \u2016w_i\u2016\u00b2' under stdPi m (lean/StratonovichHAMSecondMoment/HermiteFock.lean:625-639). TeX: the new-color input is independent and the Gaussian insertion squared norm is the spatial column sum (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2878-2880). Ledger:2962 and lean/claims.yaml:17192 correctly identify this first-chaos step, without claiming the spatial estimate itself."
+    },
+    {
+      "claim": "PARA-HermiteFock",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The model, constants, supplied-column distinction, support boundary, finite-coordinate limitation, and omitted closed/unbounded constructions are accurately disclosed at candidate/statement-ledger.md:2850-2906. GaussianHermite.lean:217-259,289-343 establishes the stated normalization and recurrence; HermiteFock.lean:368-410,517-639 establishes the advertised finite layer. 'Everything proved' concerns this conditional foundation, not discharge of the spatial column bound. Optional cutoff-index and inner-product-convention clarifications are W2-W3."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "All 47 declarations occur exactly once in candidate/statement-ledger.md:814-817, under labels matching their section rows. The 18 route auxiliaries are in the no-direct-label row. Searches across every manuscript input found exactly one definition of each label cited by this section: E:occupied-multiplication at main TeX:1802, L:fock-form:2472, E:finite-word-cutoff:2543, and L:interval-contractions:2829."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "lean/coverage.yaml:333-401,480-505,1297-1319 accurately scope the four rows. The one-mode-per-color finite-word specialization is explicitly a weaker conclusion, with its abstract hypotheses discharged in FockForm.lean:495-544 and HermiteWordFock.lean:43-51; it is not advertised as covering arbitrary m_i. The spatial inputs and abstract-operator identifications remain supplied for the Fock and interval results. The mild-construction row claims only finite real-polynomial multiplication. All 49 listed claim occurrences resolve to existing IDs in lean/claims.yaml."
+    },
+    {
+      "claim": "SCOPE-RULES",
+      "verdict": "PASS",
+      "reason": "The four sentences at lean/coverage.yaml:339-341,364-367,486-489,1303-1306 contain no declaration/module names or TeX filenames/line numbers. Their folded text equals the corresponding ASCII entries at docs/coverage-scope-tex.yaml:17,20,26,59; the TeX versions at :18,21,27,60 preserve the same content. None describes a Rayleigh rate lambda, so no supremum-versus-square-root error occurs."
+    },
+    {
+      "claim": "REFUTATIONS",
+      "verdict": "PASS",
+      "reason": "CreRowConstant.lean:21-40 refutes N instead of N+1 at N=0 and supplies the valid contrast; VacuumSquareOfSum.lean:22-33 gives 2 rather than 4 for two unit coefficients. NumberOrder.lean:22-33 refutes degree+1 instead of degree. Its chosen coefficient function is unrestricted, but the contradiction at k=0 uses only v(0)=1 and holds equally for the finite vacuum. These are genuine domain-valid perturbations of main TeX:2517-2519,2878-2880; no out-of-domain totalized division, power, logarithm, or square root is involved. Ledger:2908-2912 describes the three controls accurately."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "The Scope bullets, finite-word sections, FockForm section, GaussianHermite section, and Not in Lean discussion consistently separate proved algebra from supplied spatial analysis (candidate/statement-ledger.md:54-75,263-266,326-350,971-1026,2289-2418,2584-2700,8659-8678). Downstream references explicitly retain the one-mode limitation and the missing multi-mode identification (particularly :3174-3177 and :6751-6754). The finite polynomial multiplication bound is not confused with the closed-space extension or mild solution."
+    },
+    {
+      "claim": "L8-PATTERNS",
+      "verdict": "PASS",
+      "reason": "No material instance of the four specified patterns was found in the reviewed target and summaries. The four coverage conclusions are marked weaker; the two analytic consumers are inputs-supplied; the one-mode and finite-polynomial restrictions are explicit; no control relies on out-of-domain totalized arithmetic. The foundation's 'whole result'/'nothing supplied' wording at candidate/statement-ledger.md:2848-2851 is bounded by its explicit generic column hypotheses at :2881-2883 and exclusions at :2905-2906, not a claim to prove the spatial or SPDE results. W1-W3 are harmless wording/convention points, not concealed restrictions or missing conclusions."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "W1 \u2014 creOp_bound input-cell wording. candidate/statement-ledger.md:2946 says the column bound 'and the symmetry of the H_i are hypotheses'. Lean actually assumes only 'hc : \u2200 u, \u2211 i, \u2016H i u\u2016\u00b2 \u2264 c * \u2016u\u2016\u00b2' at lean/StratonovichHAMSecondMoment/HermiteFock.lean:293-296; lean/claims.yaml:17080 correctly reflects that. TeX's spatial H_i are selfadjoint at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2495-2496, so the manuscript application remains valid. Optional fix: remove symmetry from this declaration's input cell and identify it as a hypothesis needed by the annihilation/combined bounds, not this creation bound.",
+      "W2 \u2014 annihilation cutoff comparison. candidate/statement-ledger.md:2892-2897,2947 compares '(N+1)c' with TeX's 'Nc'. Lean's theorem bounds input degrees \u2264 N+1 into output degrees \u2264 N (lean/StratonovichHAMSecondMoment/HermiteFock.lean:307-311), whereas the explicit TeX 'sqrt n' concerns input degrees \u2264 n (manuscript/notes/notes_stratonovich_ham_second_moment.tex:1806-1809); the cited Fock proof itself says 'the same bound after truncation' at :2522-2523. The ledger's application with Supp N is sound. Optional fix: say that applying the N+1-to-N theorem to an input already supported through N leaves an unused degree of slack; do not compare the differently indexed operator domains without this qualification.",
+      "W3 \u2014 inner-product convention. The target prose does not mention that Lean uses conjugate-linearity in the first slot, visible in lean/StratonovichHAMSecondMoment/HermiteFock.lean:487-494, while the manuscript explicitly says 'linear in the first slot' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2824. All reviewed adjoint identities survive conjugation, and norm-square/real-part identities are unchanged. Optional fix: add this convention translation to candidate/statement-ledger.md:2860-2873; no theorem or constant needs alteration."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Requirement A was completed. Files marked partial were read only in the required sections/declarations or as optional context; unrelated earlier-wave rows, historical metadata, and remaining diff contents were not comprehensively reviewed.",
+    "Manuscript-wide searches establish uniqueness of the target labels, not a full review of every manuscript input.",
+    "Compilation and standard-axiom status were accepted as stipulated; no build was launched. The audit packet contains #check/#print commands rather than their captured output.",
+    "The unavailable GaussianHermite negative-control files mentioned in neighboring prose were not audited; check REFUTATIONS concerns the three supplied HermiteFock controls.",
+    "This AI correspondence review is neither human verification nor a novelty audit."
+  ]
+}

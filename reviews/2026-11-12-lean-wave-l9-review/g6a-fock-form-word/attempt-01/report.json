@@ -1,0 +1,204 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md:1-831, 950-1027, 2289-2418, 2584-2700, 2848-2963, 3165-3184, 3241, 3535-3547, 6710-6765, 6780-6793, 6804, 6816-6817, 6820, 8654-8690; partial file, complete required sections and relevant cross-references.",
+    "lean/StratonovichHAMSecondMoment/FockForm.lean:1-546; complete.",
+    "lean/StratonovichHAMAudit/HermiteWordFock.lean:1-53; complete.",
+    "lean/StratonovichHAMAudit/HermiteWord.lean:1-61; complete.",
+    "lean/StratonovichHAMAudit/HermiteWordConsumer.lean:1-70; complete.",
+    "lean/StratonovichHAMSecondMoment/HermiteFock.lean:1-641; complete.",
+    "lean/StratonovichHAMSecondMoment/GaussianHermite.lean:1-501; complete.",
+    "lean/StratonovichHAMSecondMoment/GaussianIBP.lean:105-120, 262-304; partial file, complete named transfer declarations and Gaussian-measure definition.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105; complete.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalar.lean:575-603; partial file, complete named ralpha_nonneg declaration.",
+    "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean:226-240; partial file, complete named fockD definition.",
+    "lean/Audit/fock-form/Audit.lean:1-91; complete.",
+    "lean/Audit/hermite-word-fock/Audit.lean:1-19; complete.",
+    "lean/refutations/fock-form/CompressNonProjection.lean:1-40; complete.",
+    "lean/refutations/fock-form/OccupiedConstant.lean:1-58; complete.",
+    "lean/refutations/fock-form/TruncWithoutCutoff.lean:1-43; complete.",
+    "lean/claims.yaml:222-239, 14604-14610, 16622-16802, 16824-16837, 16858-16876, 16895-17331; partial file, complete entries for the two target modules and relevant supporting claims.",
+    "lean/coverage.yaml:1-18, 328-404, 475-522, 1292-1323; partial file, complete four required rows.",
+    "docs/coverage-scope-tex.yaml:1-90; complete.",
+    "prior/coverage-5ec3c11.yaml:259-277; partial file, complete required prior row.",
+    "prior/statement-ledger-5ec3c11.md:848-868; partial file, complete prior HermiteWord section.",
+    "prior/coverage-scope-tex-5ec3c11.yaml:1-24; partial file; whole-file label search found no L:finite-word-cutoff entry.",
+    "diffs/statement-ledger-changed-sections.diff:1-59; complete.",
+    "diffs/coverage.diff:160-237; partial file, complete required changed-row hunk.",
+    "diffs/coverage-scope-tex.diff:1-39; partial file, complete hunk introducing the required scope entry.",
+    "excerpts/tex-excerpts.txt:1-850; complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:225-242, 1773-1940, 2043-2138, 2286-2300, 2460-2683, 2803-2897, 3053-3094, 3257-3262, 3490-3497; partial file, complete required cited ranges. Relevant label occurrences were also searched recursively across manuscript/.",
+    "PROVENANCE.json:1-40; partial, metadata only.",
+    "lean/provenance/manuscript-anchor.json:1-60; partial, metadata only."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.FockForm.FockColumn: L:fock-form",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:2401 and claims.yaml:17197-17203 match FockForm.lean:105-106, '\u2200 u, \u2211 i, \u2016H i u\u2016\u00b2 \u2264 c * \u2016u\u2016\u00b2'. MAPPING: the TeX explicitly gives '\u2211_i \u2016H_i f\u2016\u2082\u00b2' and '\u2211_i H_i\u00b2 \u2264 R_alpha rho^(alpha-4) I' at notes_stratonovich_ham_second_moment.tex:2499-2511. These are equivalent for the symmetric spatial sandwiches; a finite sub-sum is not a stronger input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FockForm.symm_of_isSelfAdjoint: no direct label",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:2402 and claims.yaml:17204-17210 retain Lean's '[CompleteSpace X]' and 'IsSelfAdjoint T' and its symmetry conclusion (FockForm.lean:109-111). MAPPING: the TeX calls its concrete multiplication operators selfadjoint at notes_stratonovich_ham_second_moment.tex:2495, but does not state this abstract conversion theorem. 'No direct label' correctly identifies a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FockForm.norm_proj_le: no direct label",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:2403 and claims.yaml:17211-17217 match Lean's symmetry and '\u2200 u, P (P u) = P u' hypotheses and '\u2016P u\u2016 \u2264 \u2016u\u2016' conclusion (FockForm.lean:115-122). MAPPING: the TeX uses the Fourier projection S_b at notes_stratonovich_ham_second_moment.tex:2477 and 2511-2513; its orthogonal-projection definition implies these hypotheses. The abstract contraction lemma is appropriately unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FockForm.compress_symm: no direct label",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:2404 and claims.yaml:17218-17224 match Lean's symmetric P and T, without an idempotence requirement (FockForm.lean:125-129). MAPPING: the TeX uses selfadjoint compressed sandwiches at notes_stratonovich_ham_second_moment.tex:2511-2513, but does not state this standalone abstract lemma. The route-auxiliary classification is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FockForm.fockColumn_compress: L:fock-form",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:2405 and claims.yaml:17225-17231 preserve Lean's '0 \u2264 c', FockColumn, symmetry and idempotence assumptions (FockForm.lean:134-143). MAPPING: the TeX says 'Compression to S_b preserves it' at notes_stratonovich_ham_second_moment.tex:2511-2513. Its S_b is an orthogonal projection and its constant is nonnegative. The same column constant is preserved."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FockForm.fock_const_eq: L:fock-form",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:2406 and claims.yaml:17232-17238 match Lean's '0 \u2264 R', '0 < rho' and exact identity (FockForm.lean:147-152). MAPPING: the TeX gives 'd_N = 2 sqrt(N+1) sqrt(R_alpha)' at notes_stratonovich_ham_second_moment.tex:2487 and the creation constant at 2520-2523. The exponent conversion to alpha/2-2 is correct, including R = 0."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FockForm.fock_form: L:fock-form",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:2407 and claims.yaml:17239-17245 match 'hcol : FockColumn H (R * rho^(alpha-4))', symmetric H and P, idempotent P and 'hv : Supp N v' (FockForm.lean:165-179). MAPPING: the TeX's corresponding input is its spatial quadratic-form bound at notes_stratonovich_ham_second_moment.tex:2509-2513; its conclusion is E:fock-sandwich at 2484-2488. The ledger correctly reports coefficient/Gaussian bounds and symmetry, with spatial inputs supplied."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FockForm.fock_form_paper: L:fock-form",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:2408 and claims.yaml:17246-17252 match the covariance hypotheses, R formula, positive widths, selfadjoint operators, supplied column bound and degree support in FockForm.lean:206-232. MAPPING: these correspond to the TeX's standing covariance class at notes_stratonovich_ham_second_moment.tex:2054-2066 and spatial proof at 2492-2513. The omitted coordinates beyond m and the narrower symmetry conclusion are expressly disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FockForm.interval_contractions: L:interval-contractions",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:2409 and claims.yaml:17253-17259 match Lean's symmetric S, M_i, P, '\u2016S f\u2016 \u2264 rho\u207b\u00b9 * \u2016f\u2016', commuting projection and supplied FockColumn(S M) hypotheses (FockForm.lean:253-279). MAPPING: the TeX supplies E:interval-column at notes_stratonovich_ham_second_moment.tex:2832-2835 and uses commuting band compression, vacuum isometry and substitution at 2875-2891. Constants and squared phase-norm interpretation agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FockForm.interval_contractions_paper: L:interval-contractions",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:2410 and claims.yaml:17260-17266 match '[CompleteSpace X]', HomogCovariance, positive widths, selfadjoint S/M/P, the norm estimate, supplied column and commutation assumptions (FockForm.lean:335-375). MAPPING: the TeX's admissible covariance class is at notes_stratonovich_ham_second_moment.tex:2814-2824; its column, vacuum and Fock statements are at 2832-2847. The ledger identifies the supplied operator realization and column bound rather than claiming to construct them."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FockForm.occupied_multiplication: E:occupied-multiplication",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:2411 and claims.yaml:17267-17273 match 'p : MvPolynomial (Fin m) \u211d', 'p.totalDegree \u2264 n', integrability and the squared constant '4 * (n+1)' (FockForm.lean:386-444). MAPPING: the TeX proves the finite-coordinate polynomial case before closure at notes_stratonovich_ham_second_moment.tex:1805-1810, with norm constant '2 sqrt(n+1)' at 1803. Squaring gives exactly Lean's constant."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FockForm.occupied_multiplication_paper: E:occupied-multiplication",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:2412 and claims.yaml:17274-17280 match Lean's probability measure, independent N(0,1) coordinates, real polynomial of degree \u2264 n and square-integrability conclusions (FockForm.lean:457-491). MAPPING: the TeX assumes 'any centered linear Gaussian' and 'F \u2208 P_{\u2264n}' at notes_stratonovich_ham_second_moment.tex:1800-1803. The ledger expressly restricts its claim to the finite-coordinate case and excludes the closure argument at 1810-1814."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FockForm.GoodDeg: L:finite-word-cutoff",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:2413 and claims.yaml:17281-17287 match '\u2200 k, (\u2203 c, d c < k c) \u2192 v k = 0' (FockForm.lean:497-498). MAPPING: the TeX tracks each color's total Hermite degree at notes_stratonovich_ham_second_moment.tex:2559-2563. With the ledger's explicit one-mode-per-color restriction, k c is precisely that color degree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FockForm.truncC: L:finite-word-cutoff",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:2414 and claims.yaml:17288-17294 match the coefficient cutoff 'if \u2200 c, k c \u2264 Nc c then v k else 0' (FockForm.lean:502-503). MAPPING: the TeX projects each color onto total Hermite degree \u2264 N_i at notes_stratonovich_ham_second_moment.tex:2540-2541. The correspondence is exact in the explicitly restricted one-mode model."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FockForm.goodDeg_vac: L:finite-word-cutoff",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:2415 and claims.yaml:17295-17301 match 'GoodDeg (fun _ => 0) (vac u)' (FockForm.lean:507-510). MAPPING: the TeX starts from '(I tensor F_0)(1 tensor v)' at notes_stratonovich_ham_second_moment.tex:2546 and explicitly starts its induction from degree zero at 2563. Setting u = F_0 v is legitimate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FockForm.goodDeg_insert: L:finite-word-cutoff",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:2416 and claims.yaml:17302-17308 match bounded K_i, GoodDeg d v and the raised bound 'd c + if c = i then 1 else 0' for gmul i (K_i v) (FockForm.lean:515-527). MAPPING: the TeX has 'J_i = sum_j M_gij tensor K_ij' at notes_stratonovich_ham_second_moment.tex:2536 and its raising/lowering recurrence at 2556-2560. Lean is exactly the disclosed m_i = 1 case, retaining lowering."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FockForm.goodDeg_frame: L:finite-word-cutoff",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:2417 and claims.yaml:17309-17315 match 'T : X \u2192L[\u2102] X' preserving GoodDeg d under coefficientwise application (FockForm.lean:530-531). MAPPING: the TeX assumes bounded frames acting only on X at notes_stratonovich_ham_second_moment.tex:2538-2539 and states that they preserve every Gaussian degree at 2560-2561."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.FockForm.truncC_eq: L:finite-word-cutoff",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:2418 and claims.yaml:17316-17322 retain both '\u2200 c, d c \u2264 Nc c' and 'GoodDeg d v' (FockForm.lean:536-544). MAPPING: the TeX proves the prefix degrees are \u2264 r_i \u2264 N_i at notes_stratonovich_ham_second_moment.tex:2561-2563 and consequently P is the identity at 2564-2565. No cutoff hypothesis is silently dropped."
+    },
+    {
+      "claim": "StratonovichHAMAudit.HermiteWordFock.cut_eq_raw_fock: L:finite-word-cutoff",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:1026 and claims.yaml:17324-17330 match 'K : Fin m \u2192 X \u2192L[\u2102] X', frames T, vacuum start and '\u2200 c, counts w c \u2264 Nc c' (HermiteWordFock.lean:43-51). MAPPING: the TeX allows 'sum_j M_gij tensor K_ij' and assumes 'N_i \u2265 r_i' at notes_stratonovich_ham_second_moment.tex:2532-2548. The row honestly states the one-mode restriction and omitted sums/integrals. All four abstract induction hypotheses are discharged; the coverage classification is a separate failure."
+    },
+    {
+      "claim": "PARA-FockForm",
+      "verdict": "PARTIAL",
+      "reason": "The mathematical body accurately identifies the supplied columns, operator abstractions, constants, unused covariance hypotheses, proof route and omitted closure/model construction (ledger:2296-2397; FockForm.lean:105-544; main TeX:1773-1814, 2472-2527, 2828-2897). However, the 'whole result' heading at ledger:2289 contradicts the explicitly partial correspondence under the contract's completeness-language rule (W2). The symmetry/self-adjointness wording also merits clarification (W3)."
+    },
+    {
+      "claim": "PARA-HermiteWordFock",
+      "verdict": "PARTIAL",
+      "reason": "The body correctly describes the one-mode coefficient model, insertion, frames, vacuum, four discharged hypotheses and omitted finite-sum/Bochner-integral statement (ledger:994-1026; HermiteWordFock.lean:43-51; main TeX:2531-2571). 'Nothing supplied' is true for that special case. Calling the section 'whole result' at ledger:992 nevertheless conflicts with its restricted scope (W2)."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "All 19 declarations occur exactly once in the Index: ledger:818-823 contains 5 + 2 + 2 + 6 + 3 + 1 declarations under the correct labels, with the three route auxiliaries under 'no direct label'. Recursive manuscript label searches found one occurrence of each label cited by the target sections, all in notes_stratonovich_ham_second_moment.tex."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "FAIL",
+      "reason": "W1: coverage.yaml:337 says 'same-assumptions', although HermiteWordFock.lean:43-48 accepts one K_i and one Gaussian mode per color, whereas main TeX:2532-2538 allows arbitrary m_i and K_ij. The scope correctly discloses this restriction, but 'weaker' does not make the assumption-class claim true. The other three rows honestly describe supplied inputs and narrower conclusions. All listed claim IDs were located in claims.yaml."
+    },
+    {
+      "claim": "SCOPE-RULES",
+      "verdict": "PASS",
+      "reason": "The four sentences at coverage.yaml:339-341, 364-367, 486-489 and 1303-1306 match the corresponding ASCII entries at docs/coverage-scope-tex.yaml:17, 20, 26 and 59. Their TeX versions preserve the content. They contain no Lean declaration/module names or TeX source locations. None describes the variational rate lambda, so the square-root rule is not implicated."
+    },
+    {
+      "claim": "REFUTATIONS",
+      "verdict": "PASS",
+      "reason": "CompressNonProjection.lean:21-32 refutes compression without idempotence using P = 2 id, giving 16 > 1. OccupiedConstant.lean:23-46 uses E[g^4] = 3 > 2 to refute n+1 in place of 4(n+1). TruncWithoutCutoff.lean:23-37 removes d \u2264 N and exhibits a degree-one coefficient killed at cutoff zero. These are genuine perturbations of the relevant projection, multiplication and cutoff assertions; none relies on totalized arithmetic. Ledger:2393-2397 describes them accurately."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PARTIAL",
+      "reason": "The substantive references correctly distinguish the one-mode word theorem, supplied spatial columns, unformalized multi-mode applications and mild-construction remainder (ledger:263-266, 327-334, 3173-3176, 6743-6754, 8659-8678; main TeX:2625-2630, 3257-3262, 3490-3497). References at ledger:60, 755 and 2345 repeat the problematic 'whole result' section names and should follow the qualification repair in W2."
+    },
+    {
+      "claim": "L8-PATTERNS",
+      "verdict": "FAIL",
+      "reason": "Pattern (d) occurs in the target headings at candidate/statement-ledger.md:992 and 2289 and their references at :60, :755 and :2345: 'whole result' is used despite one-mode-only coverage or supplied inputs (W2). The scoped 'nothing supplied' statements concern genuinely proved special cases and are not themselves false. No unsupported implicit side condition or totalized-arithmetic counterexample was found in the reviewed material."
+    },
+    {
+      "claim": "CHANGED-ROW L:finite-word-cutoff",
+      "verdict": "FAIL",
+      "reason": "The merge replaces 'inputs-supplied' by 'same-assumptions' (prior/coverage-5ec3c11.yaml:263; diffs/coverage.diff:164-188; coverage.yaml:337). The added concrete theorem discharges the realization only for m_i = 1, not the arbitrary grouped modes of main TeX:2532-2538. Thus the concrete progress and new scope sentence are accurate, but the promoted assumption class is not (W1). The new TeX scope entry accurately mirrors the restricted scope."
+    },
+    {
+      "claim": "CHANGED-PASSAGE HermiteWord",
+      "verdict": "PASS",
+      "reason": "The changed prose and last-column entries (diffs/statement-ledger-changed-sections.diff:10-20; ledger:982-990) explicitly qualify discharge by 'one coordinate per color'. HermiteWord.lean:23-59 has exactly the reported support, frame and projection hypotheses; FockForm.lean:507-544 proves their concrete instances, and HermiteWordFock.lean:49-51 applies them. These are the induction steps in main TeX:2556-2565, restricted as disclosed."
+    }
+  ],
+  "findings": {
+    "fatal": [
+      "W1 \u2014 False assumption-class promotion for L:finite-word-cutoff. lean/coverage.yaml:337 says 'class: same-assumptions'. Lean instead has 'K : Fin m \u2192 X \u2192L[\u2102] X' and insertion 'gmul i (fun l => K i (v l))' (lean/StratonovichHAMAudit/HermiteWordFock.lean:43-48), while the TeX allows arbitrary grouped modes and 'J_i = sum_{j=1}^{m_i} M_{g_ij} tensor K_ij' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2532-2538). This is a restriction of admissible operator data, not an implicit side condition or merely an omitted concluding sentence. Fix: remove the same-assumptions promotion for the manuscript lemma; retain an accurately classified one-mode special case and identify the remaining multi-mode realization as unformalized, or formalize arbitrary m_i before retaining that class. Qualify coverage.yaml:355's 'Nothing supplied' explicitly as applying only to the one-mode special case."
+    ],
+    "major": [
+      "W2 \u2014 Completeness-language mismatch. candidate/statement-ledger.md:992 and :2289 call the consumers 'whole result', repeated at :60, :755 and :2345. Lean's word theorem has only one mode per color (lean/StratonovichHAMAudit/HermiteWordFock.lean:43-48), versus arbitrary m_i and sums/integrals in the TeX (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2532-2552); the Fock theorem assumes 'hcol : FockColumn H ...' (lean/StratonovichHAMSecondMoment/FockForm.lean:217), whereas the TeX proves that column bound (main TeX:2492-2511). The detailed disclosures are useful, but the headings retain the contract's prohibited whole-result language for narrower/supplied-input correspondence. Fix: rename these headings to identify partial consumers and the one-mode finite-word special case, and update their references."
+    ],
+    "minor": [
+      "W3 \u2014 Symmetry terminology. candidate/statement-ledger.md:2380 says 'self-adjointness is proved', while Lean concludes the finite coefficient pairing identity 'sum inner (fieldOp ... v) w = sum inner v (fieldOp ... w)' (lean/StratonovichHAMSecondMoment/FockForm.lean:227-229); the TeX says 'bounded selfadjoint operators' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2483). Bounded symmetry has the intended self-adjoint interpretation on the complete finite coefficient space, but no such operator-space packaging is stated here. Optional clarification: use 'symmetry is proved' consistently, as the row and coverage scope already do."
+    ]
+  },
+  "required_repairs": [
+    "Resolve W1: withdraw the same-assumptions classification for the full multi-mode manuscript lemma, explicitly distinguish the no-input one-mode theorem from the remaining multi-mode realization, and update any affected coverage totals; alternatively supply a formal arbitrary-m_i realization.",
+    "Resolve W2: replace the two target 'whole result' headings with accurately scoped descriptions and update their occurrences at candidate/statement-ledger.md:60, 755 and 2345."
+  ],
+  "limitations": [
+    "All complete-reading requirement A sections, entries, declarations and cited TeX ranges were read. Files marked partial contain additional out-of-scope material that was not reviewed.",
+    "PROVENANCE.json:41-1810 and lean/provenance/manuscript-anchor.json:61-1825 were not read; provenance was consulted only for revision metadata, not cryptographically audited.",
+    "Compilation and standard-axiom status were accepted as stipulated; no build or proof-correctness audit was performed. The audit files contain check/print commands rather than captured elaborator output.",
+    "This is an AI correspondence review, not human verification or a novelty audit."
+  ]
+}

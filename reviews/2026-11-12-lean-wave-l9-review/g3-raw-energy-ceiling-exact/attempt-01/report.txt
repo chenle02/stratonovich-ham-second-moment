@@ -1,0 +1,376 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "medium",
+  "source_coverage": [
+    "candidate/statement-ledger.md:37-831, 1203-1215, 3411-3501, 4375-4569, 5257-5347, 5650-5753, 8654-8710; complete required sections; other portions searched for cross-references and refutation descriptions.",
+    "lean/StratonovichHAMSecondMoment/RawOccupationEnergy.lean:1-739; complete.",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingExact.lean:1-797; complete.",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean:1-1037; complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialBracket.lean:1-519; complete.",
+    "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean:1-314, 340-382, 484-524; partial file, required definitions and cited bound declarations complete.",
+    "lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean:317-345, 416-443, 989-1165; partial file, principal consumed declarations complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105; complete.",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean:1-325; partial file; ceiling and bracket declarations complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean:190-212, 300-325; partial file; ratio-identification and squarePairingBounds_holds declarations complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean:1100-1144, 1347-1358; partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:125-141, 827-906, 1005-1028; partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:139-167; partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean:103-131; partial.",
+    "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean:358-373; partial.",
+    "lean/StratonovichHAMSecondMoment/TimeSchur.lean:55-76; partial.",
+    "lean/StratonovichHAMSecondMoment/WeakSobolev.lean:125-139, 211-243; partial.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:89-105, 184-196, 224-255; partial.",
+    "lean/StratonovichHAMSecondMoment/VariationalMean.lean:672-731; partial.",
+    "lean/StratonovichHAMSecondMoment/VariationalRate.lean:503-510, 728-817; partial.",
+    "lean/StratonovichHAMAudit/RawValueCeiling.lean:1-27; complete.",
+    "lean/refutations/raw-occupation-energy/EnergyExponent.lean:1-50; complete.",
+    "lean/refutations/raw-occupation-energy/PenaltyPositive.lean:1-38; complete.",
+    "lean/refutations/raw-occupation-energy/ScalarConstantHalved.lean:1-44; complete.",
+    "lean/refutations/occupation-ceiling-exact/CellWidth.lean:1-41; complete.",
+    "lean/refutations/occupation-ceiling-exact/ComparisonNeedsA.lean:1-36; complete.",
+    "lean/refutations/occupation-ceiling-exact/TrapezoidLimit.lean:1-42; complete.",
+    "lean/Audit/raw-occupation-energy/Audit.lean:1-78; complete.",
+    "lean/Audit/occupation-ceiling-exact/Audit.lean:1-78; complete.",
+    "lean/claims.yaml:12171-12177, 12744-12750, 12865-12871, 13070-13076, 13182-13188, 15623-15946; complete target-module entries; partial file. All claim identifiers in the four coverage rows were checked for existence.",
+    "lean/coverage.yaml:1-72, 625-655, 1400-1439, 1704-1754; complete four required rows; partial file.",
+    "docs/coverage-scope-tex.yaml:7-9, 28-30, 64-66, 88-90; complete four required entries; partial file.",
+    "prior/coverage-5ec3c11.yaml:27-59, 1356-1389; complete required prior rows; partial file.",
+    "prior/coverage-scope-tex-5ec3c11.yaml:7-9, 67-69; complete relevant prior entries; partial file.",
+    "diffs/coverage.diff:1-75, 545-602; complete required changed-row hunks; partial file.",
+    "diffs/coverage-scope-tex.diff:1-63; complete.",
+    "diffs/statement-ledger-changed-sections.diff:1-335; complete.",
+    "excerpts/tex-excerpts.txt:1-1261; complete.",
+    "manuscript/notes/integrated_occupation_ceiling.tex:1-308; complete.",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-442; complete cited ranges; partial file.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-175, 270-337; complete cited ranges; partial file.",
+    "manuscript/notes/integrated_intrinsic_constant.tex:1-110, 331-381; complete cited ranges; partial file.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:225-242, 3703-3982; complete cited ranges; partial file.",
+    "PROVENANCE.json:1-55, 1770-1837 explicitly numbered; partial. An initial full-file display was truncated.",
+    "lean/provenance/manuscript-anchor.json:1-32, 1790-1825; partial."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.Araw: E:raw-occupation-definitions",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:97-98 defines the iterated nonnegative integral with 'kern a (s - t) * sqPair'. TeX integrated_occupation_ceiling.tex:4-12 specifies the same original kernel and physical square pairing. The diagonal convention is expressly allowed at TeX:6 and harmless for these time integrals."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.A: E:raw-occupation-definitions",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:101 states '(Araw a Γ G).toReal'; TeX integrated_occupation_ceiling.tex:12 defines A by the integral. On the stated occupation class and covariance hypotheses, Lean:220-230 proves finiteness, so this is the genuine real value."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.ratioSet: E:raw-occupation-definitions",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean RawOccupationEnergy.lean:106-108 uses '∃ G DG, IsOccField G DG ∧ r = A ... / T DG ^ (alpha / 2)'; TeX integrated_occupation_ceiling.tex:13-14 uses 'g∈O'. The representative-based formulation is disclosed. It is a modelling/bridge qualification, not evidence of a mathematically smaller class; see W4."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.Cocc: E:raw-occupation-definitions",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean RawOccupationEnergy.lean:112 is 'sSup (ratioSet a alpha Γ)'; TeX integrated_occupation_ceiling.tex:13-14 is the same ratio supremum. Nonemptiness and boundedness are conclusions at Lean:705-706. The class representation qualification is W4."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.energySet: E:raw-occupation-definitions",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean RawOccupationEnergy.lean:116-118 uses 'IsOccField G DG' and 'A ... - ζ * T DG'; TeX integrated_occupation_ceiling.tex:15-16 uses 'sup_{g∈O}{A(g)-ζT(g)}', ζ>0. Defining a total value-set function for other ζ does not assert the manuscript theorem there. See W4."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.EO: E:raw-occupation-definitions",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean RawOccupationEnergy.lean:122 is 'sSup (energySet a Γ ζ)'; TeX integrated_occupation_ceiling.tex:15-16 defines the same energy supremum for ζ>0. Lean:714-720 supplies its nonempty bounded value set in that domain. See W4."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.kern_meas: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:127-128 proves measurability for every real a, without an occupation hypothesis. TeX integrated_occupation_ceiling.tex:4-6 defines the kernel but contains no corresponding labelled measurability assertion. The no-direct-label designation is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.Araw_le: E:raw-occupation-bound",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:137-140 assumes '0 ≤ a', 'a < 1', '0 < alpha', 'alpha < 2', 'SquarePairingBounds Γ alpha R' and 'IsOccField G DG'. TeX integrated_occupation_ceiling.tex:115-122 invokes the spatial square bound under the standing covariance assumptions. The general parameter R and its discharged specialization to R_sp are explicitly distinguished."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.raw_occupation_bound: E:raw-occupation-bound",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:220-223 has the same general hypotheses as Araw_le and concludes finiteness and '0 ≤ A ... ≤ K0 a * R * T DG ^ (alpha / 2)'. TeX integrated_occupation_ceiling.tex:120-122 has the identical inequality with R_sp. The ledger discloses this generalization and the supplied bound in the general form."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.T_pos: P:raw-occupation-energy",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:234-235 assumes '0 < d' and 'IsOccField G DG' and proves '0 < T DG'. TeX integrated_occupation_ceiling.tex:115-117 proves positivity for a unit H1 occupation; H:homog gives d∈{1,2,3}. Finiteness is already part of both occupation-class definitions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.one_le_kern: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:254-255 assumes '0 ≤ a', s,t∈(0,1), and 't ≠ s'. TeX integrated_occupation_ceiling.tex:123-125 does not state this particular lower-bound route. Calling it a Lean-route auxiliary is accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.exists_pos_member: P:raw-occupation-energy",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:266-270 assumes local finiteness, scaling, Γ≠0, the numerical ranges and SquarePairingBounds, and produces an occupation with positive A. TeX integrated_occupation_ceiling.tex:123-125 uses a constant-in-time smooth unit profile under the standing hypotheses. The ledger accurately discloses the general bound hypothesis and different positivity route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.dilField: P:raw-occupation-energy",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:316 defines 'WeakSobolev.dilL2 ℓ (G s)', whose body is ℓ^(d/2)G_s(ℓx) at WeakSobolev.lean:132-134. TeX integrated_occupation_ceiling.tex:127 gives precisely this dilation; its mathematical use is for ℓ>0."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.dilGrad: P:raw-occupation-energy",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:320-321 defines 'ℓ • WeakSobolev.dilL2 ℓ (DG s) x'. TeX integrated_occupation_ceiling.tex:127-132 uses the H1 dilation and ℓ² gradient-energy scaling. The gradient interpretation is justified for weak-gradient pairs and positive ℓ, not asserted for arbitrary unrelated DG."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.lintegral_comp_smul_rd: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:325-326 assumes '0 < ℓ' and proves substitution for every extended-valued F. TeX integrated_occupation_ceiling.tex:134-135 mentions the dx factor ℓ^(-d), but not this unrestricted lower-integral theorem. The auxiliary designation is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.map_pairMeasure: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:339-344 assumes '[SFinite Γ]', SetScaling and ℓ>0 and gives the two Jacobian factors. TeX integrated_occupation_ceiling.tex:134-135 gives those factors under the Radon covariance assumptions, which imply s-finiteness here. The unrestricted measure identity is correctly marked auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.sqPair_dil: P:raw-occupation-energy",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:355-358 assumes s-finiteness, scaling and ℓ>0 and proves the extended pairing identity for all real f,h. TeX integrated_occupation_ceiling.tex:130-136 gives the same ℓ^alpha scaling on H1 profiles. The stronger generality and absence of an approximation step are correctly disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.gradSqE_dil: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:397-398 assumes only ℓ>0 and treats every vector field. TeX integrated_occupation_ceiling.tex:132 states the gradient-budget consequence for occupations, not this unrestricted vector-field lower-integral identity. No direct label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.qmp_dil: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:418-420 assumes ℓ>0 and proves quasi-measure preservation of (s,x)↦(s,ℓx). TeX integrated_occupation_ceiling.tex:127-129 asserts preservation of strong measurability, not this particular joint-representative auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.isOccField_dil: P:raw-occupation-energy",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean RawOccupationEnergy.lean:430-433 assumes ℓ>0 and IsOccField and concludes membership and 'Tlin ... = ofReal (ℓ^2) * Tlin DG'. TeX integrated_occupation_ceiling.tex:127-132 states membership and T(Uℓg)=ℓ²T(g). These agree under the representative model; see W4."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.Araw_dil: P:raw-occupation-energy",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:454-458 assumes s-finiteness, scaling and ℓ>0, and concludes both extended and real A-scaling. TeX integrated_occupation_ceiling.tex:131-136 gives A(Uℓg)=ℓ^alpha A(g). The general extension outside finite occupations does not weaken the in-domain identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.dil_inv: P:raw-occupation-energy",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:471-472 assumes ℓ>0 and proves inverse identities for fields and gradients. TeX integrated_occupation_ceiling.tex:128 says U_(1/ℓ) is the inverse. Applying the same theorem at 1/ℓ supplies the other composition, so the bijection reading is justified."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.scalar_max_zeta: P:raw-occupation-energy",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:493-495 assumes '0 < alpha < 2', '0 < ζ', C≥0 and X≥0. TeX integrated_occupation_ceiling.tex:137-141 optimizes Aℓ^alpha−ζTℓ² with the same positive penalty and exponent. The transformation to C X^(alpha/2)−ζX and Dζ C^(2/(2−alpha)) is exact."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.scalar_attain_zeta: P:raw-occupation-energy",
+      "verdict": "PASS",
+      "reason": "Lean RawOccupationEnergy.lean:531-535 assumes alpha∈(0,2), ζ>0 and r>0 and evaluates at X=(alpha r/(2ζ))^(2/(2−alpha)). TeX integrated_occupation_ceiling.tex:139-140 gives the corresponding positive dilation optimizer and the same attained value."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.raw_occupation_energy: P:raw-occupation-energy",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean RawOccupationEnergy.lean:567-579 explicitly assumes d>0, the numerical ranges, local finiteness, scaling, Γ≠0 and SquarePairingBounds. TeX integrated_occupation_ceiling.tex:92-111 works under H:homog and Γ≠0. The ledger honestly identifies this as the general form with R replacing R_sp; all displayed exponents, inverse formula and ζ-scaling match. See W4 for the class model."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RawOccupationEnergy.raw_occupation_energy_paper: P:raw-occupation-energy",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean RawOccupationEnergy.lean:703-720 assumes only 'HomogCovariance d alpha a Γ μ' and 'Γ ≠ 0'; TeX integrated_occupation_ceiling.tex:4-21 retains H:homog, a=alpha0 and Γ≠0. The conclusions include the correct C_occ bound, dilation laws, energy identity, inverse ratio identity, positivity and penalty scaling. No extra supplied analytic hypothesis appears. See W4."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.trap_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingExact.lean:108-110 assumes only n,p,q and proves continuity. TeX integrated_occupation_ceiling.tex:159-193 uses first-index Borel cells, not trapezoids. The ledger correctly treats this as a different-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.trap_mem: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingExact.lean:113-114 proves '0 ≤ trap ... ∧ trap ... ≤ 1' without interval-order assumptions. TeX integrated_occupation_ceiling.tex:159-193 contains no trapezoid assertion. The paraphrase and auxiliary mapping match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.trap_eq_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingExact.lean:117-126 assumes 's ∉ Ioo p q' and concludes zero. TeX integrated_occupation_ceiling.tex:169-173 uses different cells and has no corresponding trapezoid statement. The ledger is faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.trap_hasCompactSupport: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingExact.lean:129-131 proves compact support for every n,p,q. TeX integrated_occupation_ceiling.tex:159-193 does not use this construction. No direct label is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.trap_tendsto: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingExact.lean:134-154 proves pointwise convergence to 'Ioo p q' for every p,q,s. TeX integrated_occupation_ceiling.tex:169-173 has no trapezoid limit. The open-interval limit and auxiliary designation are correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.idx_measurable: no direct label",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean OccupationCeilingExact.lean:160-168 uses the natural-valued floor '⌊((N : ℝ) + 1) * s⌋₊' and proves measurability on R. TeX integrated_occupation_ceiling.tex:169-173 uses first-index cells instead. The measurability claim is right; the unqualified word 'floor' in the ledger and claims summary merits the notation clarification W2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.idx_close: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingExact.lean:172-192 assumes s∈[0,1] and gives width 1/(N+1), including s=1. TeX integrated_occupation_ceiling.tex:159-193 does not use this mesh. The stated constant, domain and auxiliary mapping are accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.idx_eq_iff: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingExact.lean:196-215 assumes s∈(0,1) and '∀ k : ℕ, (N+1)*s ≠ k'. TeX integrated_occupation_ceiling.tex:169-173 uses other Borel cells. The ledger preserves the off-node hypothesis and open-cell equivalence."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.ae_offNode: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingExact.lean:218-224 states a Lebesgue-a.e. assertion on all R, for every N and natural k. TeX integrated_occupation_ceiling.tex:169-173 has no equal-mesh node assertion. The quantifiers and auxiliary designation match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.sum_cellInd: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingExact.lean:232-239 assumes s∈(0,1), the off-node condition, and arbitrary finite weights w. TeX integrated_occupation_ceiling.tex:169-173 uses different cells. The ledger retains precisely the hypotheses needed for this route identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.gradSqE_grad: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingExact.lean:254-261 assumes 'IsUnitTest g' and identifies the extended gradient integral with ofReal(gradEnergy g). TeX integrated_occupation_ceiling.tex:165 uses the usual squared-gradient energy but has no separately labelled bridge between these Lean definitions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.stepField_isOcc: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingExact.lean:266-296 assumes finitely many real unit tests and proves occupation membership and the integral formula for T. TeX integrated_occupation_ceiling.tex:170-181 proves membership for a countable first-index selection. The ledger explicitly identifies the different witness and correctly leaves this route lemma without a direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.mean_pair_bound: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingExact.lean:302-312 assumes 0≤V≤M, a unit test, and integrability of Vg². TeX integrated_occupation_ceiling.tex:175-179 uses the related bounded-potential observation but does not state this general integral lemma. The ledger preserves the integrability hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.step_mean_le_sqrt: L:occupation-raw-square",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingExact.lean:324-328 assumes H:homog, Γ≠0, Ψ∈CPos and finite unit tests; TeX integrated_occupation_ceiling.tex:31-40 states the bound for every occupation. The ledger claims only its integral-form specialization to finite-cell fields and explicitly excludes Q, rho_g and the Hilbert identities. That limited mapping is valid."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.occupation_rayleigh_selection_paper: L:occupation-rayleigh-selection",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean OccupationCeilingExact.lean:517-521 assumes H:homog, Γ≠0, Ψ∈CPos and ε>0 and concludes '∃ G DG, IsOccField ... ∧ I²+T≤sqrt(v*A)+ε'. TeX integrated_occupation_ceiling.tex:151-155 has exactly this existential quantifier order and inequality. Finite simple witnesses suffice; a prescribed countable selector is not part of the lemma's conclusion. See W4."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.A_le_Cocc: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingExact.lean:653-658 assumes d>0, boundedness of ratioSet and IsOccField. TeX integrated_occupation_ceiling.tex:223-225 uses the bound from the definition of C_occ but does not separately label this conditional supremum lemma. The auxiliary designation and explicit boundedness hypothesis are accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.integratedRate_sq_le_Cocc: T:intrinsic-occupation-ceiling",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingExact.lean:666-669 assumes H:homog, Γ≠0 and Ψ∈CPos. TeX integrated_occupation_ceiling.tex:223-234 obtains the same first scalar maximum. The coefficient (q/4)(alpha/4)^(alpha/q), exponent 2/q and exact Cocc are preserved."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.score_le_ceiling_Cocc: T:intrinsic-occupation-ceiling",
+      "verdict": "PASS",
+      "reason": "Lean OccupationCeilingExact.lean:699-703 adds c>0 and Ψ∈CPos to the standing covariance assumptions. TeX integrated_occupation_ceiling.tex:235-245 optimizes the same cI−v/2 expression; c>0 is the domain of S_c in integrated_unmasked_variational.tex:272. SpatialBracket.lean:124-126 places k outside the 1/k power, matching the denominator-eight formula."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.intrinsic_occupation_ceiling_paper: T:intrinsic-occupation-ceiling",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean OccupationCeilingExact.lean:748-757 assumes only H:homog and Γ≠0, then quantifies over every c>0 and every ζ>0. TeX integrated_occupation_ceiling.tex:205-215 has the same two variational ceiling forms. The omitted C_2 sentence at TeX:217 is explicitly excluded in ledger:4469. The representative-model qualification is W4; neither S1Bdd nor SpaceTimeCS is assumed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationCeilingExact.intrinsic_spatial_comparison_paper: C:intrinsic-spatial-bracket",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean OccupationCeilingExact.lean:779-785 assumes H:homog and Γ≠0 and concludes the non-strict/strict chain for S_2^pos with EO(1/2). TeX integrated_occupation_ceiling.tex:261-265 has that chain for C_2. The substitution of S_2^pos is expressly disclosed; the strictness, energy argument and powers agree. See W4."
+    },
+    {
+      "claim": "PARA-RawOccupationEnergy",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:5257-5347 accurately records the original kernel, constants, general-versus-paper hypotheses, supplied-bound discharge and dilation/scalar routes against RawOccupationEnergy.lean:97-739 and TeX:92-147. Its statement that T finiteness is a conclusion needs the minor correction W3; its representative-class terminology is qualified by W4."
+    },
+    {
+      "claim": "PARA-OccupationCeilingExact",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:4375-4470 correctly describes finite equal cells, trapezoid approximation, Jensen, the exact constant, both ceiling forms, and exclusion of the C_2 identification. These match OccupationCeilingExact.lean:324-795 and TeX integrated_occupation_ceiling.tex:149-250. See W4 concerning 'narrower' versus an unformalized representation bridge."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "All 46 declarations occur exactly once in the declaration column of Index:790-800, with the section-row labels and route auxiliaries preserved. The mention of RawOccupationEnergy.EO in Index:722 is explanatory label-column text, not a second declaration listing. Searching label commands throughout manuscript/ found each of the 21 labels cited by the two target sections exactly once."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "coverage.yaml:28-58, 630-646, 1403-1439 and 1707-1742 distinguish S_c^pos from C_2, disclose the representative model and route differences, and cite existing claim identifiers. The paper wrappers require no added analytic input. The 'weaker' classification is defensible as a formalization-scope designation, with the mathematical representation clarification W4."
+    },
+    {
+      "claim": "SCOPE-RULES",
+      "verdict": "PASS",
+      "reason": "The four conclusion_scope entries agree with docs/coverage-scope-tex.yaml:7-9, 28-30, 64-66 and 88-90 in content and ASCII wording. They contain no Lean declaration/module names or TeX file/line references. Every description of lambda correctly says square root of the real Rayleigh supremum."
+    },
+    {
+      "claim": "REFUTATIONS",
+      "verdict": "FAIL",
+      "reason": "The six files prove their stated scalar or route counterexamples, and PenaltyPositive.lean:6-10 explicitly acknowledges totalized division at ζ=0. However, CellWidth.lean:2-9, 26-33 and TrapezoidLimit.lean:2-11, 26-34 refute properties of Lean-only constructions absent from the manuscript; the latter distinguishes endpoint values that do not change its time integrals. Neither target ledger section supplies the required account of these six controls. Thus the contract's assertion that every listed perturbation is a corresponding manuscript misstatement, accurately described in the ledger, is not met. See W1."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "Scope:216-263 distinguishes retained L8 K_0R_sp results from new L9 exact-C_occ results. Index:790-800, L8Completed:3465-3469, OccupationCeilingFinite:4531-4533, SpatialBracket:5699-5703 and Not in Lean:8689-8697 preserve the C_2 and representation qualifications. No contradictory global replacement of C_occ by K_0R_sp was found."
+    },
+    {
+      "claim": "L8-PATTERNS",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "No added covariance restriction is disguised as implicit, and no target control using totalized arithmetic is described as convention-free. The L8 K_0R_sp summaries are explicitly module-scoped at ledger:3465 and 4531-4533; the L9 summaries use C_occ. 'Whole result' is a module category qualified by explicit scope exclusions, not an unqualified C_2 theorem claim. W1 concerns missing control correspondence, rather than a false convention-free description."
+    },
+    {
+      "claim": "CHANGED-ROW T:intrinsic-occupation-ceiling",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Prior coverage:1356-1382 claimed only the K_0R_sp ceiling. The required diff hunks at coverage.diff:567-599 add declarations whose types at OccupationCeilingExact.lean:748-757 give both exact-Cocc forms without S1Bdd or SpaceTimeCS. The old larger ceiling remains valid. C_2 is still excluded, and the class qualification is disclosed; see W4."
+    },
+    {
+      "claim": "CHANGED-ROW C:intrinsic-spatial-bracket",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Prior coverage:27-54 substituted D_(1/2)(K_0R_sp)^(2/(2−alpha)) for the occupation energy. coverage.diff:24-48 adds the exact comparison wrapper, whose type at OccupationCeilingExact.lean:779-785 justifies the revised comparison. The unchanged bracket remains supplied by L8Completed.lean:262-281. The S_2^pos/C_2 distinction remains explicit; see W4."
+    },
+    {
+      "claim": "CHANGED-PASSAGE SpatialBracket (whole result)",
+      "verdict": "PASS",
+      "reason": "The changes at statement-ledger-changed-sections.diff:313-335 correctly replace a package-wide nonformalization statement by a module-local one and point to RawOccupationEnergy and OccupationCeilingExact. Ledger:5699-5703 and 5727 match the new definitions and comparison wrapper; the older SpatialBracket theorem still uses the larger energy exactly as disclosed."
+    },
+    {
+      "claim": "CHANGED-PASSAGE OccupationCeilingFinite (whole result)",
+      "verdict": "PASS",
+      "reason": "The changed sentence at statement-ledger-changed-sections.diff:302-309, ledger:4531-4533, correctly limits the old narrowings to that module and points to the L9 exact constant and second form. OccupationCeilingFinite.lean:938-974 still proves the larger K_0R_sp ceiling; OccupationCeilingExact.lean:748-757 supplies the additional result."
+    },
+    {
+      "claim": "CHANGED-PASSAGE L8Completed (whole result)",
+      "verdict": "PASS",
+      "reason": "The changed sentence at statement-ledger-changed-sections.diff:5-14, ledger:3465-3469, correctly distinguishes the unchanged L8 wrappers from the new L9 objects and theorems. L8Completed.lean:128-155 still has K_0R_sp, while the L9 wrapper has Cocc and EO."
+    },
+    {
+      "claim": "CLASS-OCCUPATION-CEILING",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Same-assumptions/weaker is appropriate; inputs-supplied is not required. Lean OccupationCeilingExact.lean:748-757 assumes exactly H:homog and Γ≠0, matching TeX integrated_occupation_ceiling.tex:4-21; c>0 comes from the definition of the variational values at integrated_unmasked_variational.tex:272. Both forms of E:occupation-score-ceiling, including (2ζ)^(alpha/(2k)), are present with Cocc, not K_0R_sp. The missing mathematical conclusion is the C_2 sentence. Joint representatives are a harmless representation of the same a.e. occupation data: TeX integrated_spatial_occupation.tex:407-414 constructs such representatives, and conversely the jointly measurable function/gradient pair defines a strongly measurable map into the separable closed H1 graph in L2×L2. Neither direction is formalized here, so that formalization limitation must remain disclosed, but it should not be described as an established genuinely smaller class. No further numerical, dimension, coefficient or covariance narrowing was found. See W4."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "W1 REFUTATIONS: The required manuscript-correspondence certification is not satisfied. CellWidth.lean:26-33 negates a bound for 'OccupationCeilingExact.idx'; TrapezoidLimit.lean:26-34 negates convergence of 'OccupationCeilingExact.trap' to a closed-interval indicator at s=0. TeX integrated_occupation_ceiling.tex:160-173 instead uses a countable first-index Borel selection and states neither construction; its integral conclusion is at :151-155. These are valid Lean-route unit controls, not refutations of corresponding manuscript assertions. Ledger sections :4375-4470 and :5257-5347 contain no descriptions of the six supplied controls, including the totalized ζ=0 limitation expressly stated in PenaltyPositive.lean:6-10. Fix: add a six-file control-correspondence account distinguishing manuscript scalar perturbations, Lean-route-only controls and the totalized-extension control. Do not certify the route-only files as manuscript negative controls; supplement them with actual manuscript-claim perturbations if that certification is retained."
+    ],
+    "minor": [
+      "W2 idx_measurable notation: ledger:4456 and claims.yaml:15845 write 'min(floor((N+1)s),N)' on all R, whereas OccupationCeilingExact.lean:160-161 uses natural floor '⌊...⌋₊', clipped at zero for negative arguments. TeX integrated_occupation_ceiling.tex:169-173 has no such index. Optional clarification: write 'natural floor' or max(0,floor(...)) before taking the minimum; the intended time-domain construction is unaffected.",
+      "W3 T finiteness wording: ledger:5293-5294 says A and T have finiteness as a conclusion. OccupationPhysicalClass.lean:154-158 already requires 'energy_lt_top : Tlin DG < ⊤', exactly as TeX integrated_spatial_occupation.tex:381-383 requires T(g)<∞ in the definition of O. Optional correction: say A finiteness is proved, while T finiteness is inherited from occupation membership and its real integral representation is proved.",
+      "W4 Representative-class terminology: ledger:5310-5316 and :4438-4443 calls joint representatives 'narrower'. Lean OccupationPhysicalClass.lean:154-158 specifies jointly a.e.-strongly measurable function/gradient representatives with unit H1 slices and finite budget; TeX integrated_spatial_occupation.tex:381-383 specifies strongly H1-measurable occupations and :407-414 constructs representatives. These describe equivalent a.e. mathematical data, although the bridge is not formalized. Optional clarification: distinguish an unformalized representation equivalence from a genuinely smaller mathematical class. The existing explicit representation disclaimer should remain."
+    ]
+  },
+  "required_repairs": [
+    "Resolve W1 before asserting that all six supplied refutation files satisfy REFUTATIONS: document each control's exact target and domain in the target ledger sections, expressly separate Lean-route-only controls from manuscript counterexamples, and supply genuine manuscript perturbation controls wherever the stronger manuscript-negative-control certification is retained."
+  ],
+  "limitations": [
+    "This is an AI correspondence review, not human verification, proof rechecking or a novelty audit. Compilation and standard-axiom status were accepted as stipulated.",
+    "Audit.lean files contain commands and consumer proofs, not captured elaboration output; they were read but not executed.",
+    "The complete target modules, target sections, four coverage rows, required changed passages, refutation files, audit files and excerpt file were read. Context library files were inspected in the reported ranges, not exhaustively.",
+    "PROVENANCE.json was not completely read after an initially truncated display; the unnumbered remainder was not relied on. Only numbered ranges 1-55 and 1770-1837 were subsequently inspected. Its intervening manifest entries and byte bindings were not independently verified.",
+    "lean/provenance/manuscript-anchor.json was read only at 1-32 and 1790-1825; the intervening metadata was not reviewed.",
+    "Unrelated portions of coverage files and diffs, and earlier-wave ledger results outside the requested changed passages, were not reviewed. The full prior ledger and full statement-ledger.diff were not read; the supplied changed-section diff was read completely."
+  ]
+}

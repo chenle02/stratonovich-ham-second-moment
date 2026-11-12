@@ -1,0 +1,465 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "INCONCLUSIVE",
+  "confidence": "medium",
+  "source_coverage": [
+    "candidate/statement-ledger.md: 1-831, 2299, 2408, 3503-3675, 4862-5003, 8232-8348, 8654-8846 read; complete primary sections, Scope, Index and Not in Lean; partial file. All per-module declaration rows additionally scanned structurally for totals and uniqueness.",
+    "lean/StratonovichHAMSecondMoment/PhaseContractions.lean: 1-1095 complete.",
+    "lean/StratonovichHAMSecondMoment/L9Completed.lean: 1-186 complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean: 1-105 complete.",
+    "lean/StratonovichHAMSecondMoment/LowAlphaConvolution.lean: 1-610 complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean: 80-152, 222-321, 350-382 read; partial file; named Gaussian-pairing and spectral-homogeneity declarations complete.",
+    "lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean: 65-287 read; partial file; named constant, resolvent and parameter-range declarations complete.",
+    "lean/StratonovichHAMSecondMoment/SpectralHomog.lean: 40-104, 168-194 read; partial file.",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean: 95-114, 238-280 read; partial file.",
+    "lean/StratonovichHAMSecondMoment/WaveKernel.lean: 30-90 read; partial file.",
+    "lean/StratonovichHAMSecondMoment/WaveGreenFourier.lean: 579-648, 685-768 read; partial file; named discharge declarations complete.",
+    "lean/StratonovichHAMSecondMoment/DampedMultiplier.lean: 230-245, 268-304, 333-354, 375-392 read; partial file.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalar.lean: 606-686, 778-850 read; partial file.",
+    "lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean: 1024-1058, 1080-1160, 1173-1230, 1300-1343 read; partial file.",
+    "lean/StratonovichHAMSecondMoment/FockForm.lean: 1-95, 206-244, 335-376, 457-490 read; partial file.",
+    "lean/StratonovichHAMSecondMoment/RawOccupationEnergy.lean: 695-739 read; partial file.",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingExact.lean: 739-797 read; partial file.",
+    "lean/StratonovichHAMAudit/HermiteWord.lean: 1-61 complete.",
+    "lean/StratonovichHAMAudit/HermiteWordFock.lean: 1-53 complete.",
+    "lean/Audit/phase-contractions/Audit.lean: 1-122 complete.",
+    "lean/Audit/l9-completed/Audit.lean: 1-41 complete.",
+    "lean/refutations/phase-contractions/MiddleRegionExponent.lean: 1-41 complete.",
+    "lean/refutations/phase-contractions/NormalCoordinateConstant.lean: 1-42 complete.",
+    "lean/refutations/phase-contractions/ShiftInvariance.lean: 1-51 complete.",
+    "lean/claims.yaml: 15300-15622 and 17331-17380 completely read for the primary modules; 1-17380 additionally parsed structurally for declaration counts and coverage-reference validation; partial substantive reading.",
+    "lean/coverage.yaml: 1-65, 515-552, 656-714 read; both target rows complete; 1-1754 additionally parsed structurally for class/conclusion counts; partial substantive reading.",
+    "docs/coverage-scope-tex.yaml: 1-90 complete.",
+    "diffs/statement-ledger-changed-sections.diff: 1-374 complete.",
+    "diffs/coverage-scope-tex.diff: 1-63 complete.",
+    "diffs/coverage.diff: 1-75, 567-602 read; partial; lines 76-566 not completely read.",
+    "diffs/statement-ledger.diff: partial; text not substantively read; the complete changed-sections extraction was used instead.",
+    "excerpts/tex-excerpts.txt: 1-1559 complete.",
+    "PROVENANCE.json: 1-80 textually read; 1-1810 completely parsed for binding verification. All 202 listed byte lengths and SHA-256 bindings matched; partial textual reading.",
+    "lean/provenance/manuscript-anchor.json: 1-85, 1395-1825 textually read; complete JSON parsed and current manuscript-source hashes checked; partial textual reading.",
+    "prior/statement-ledger-5ec3c11.md: 453, 706, 1129, 1240, 3284, 3405-3407 returned by structural searches; partial substantive reading.",
+    "prior/coverage-5ec3c11.yaml: 1-1394 parsed structurally; partial substantive reading.",
+    "prior/coverage-scope-tex-5ec3c11.yaml: 1-69 parsed structurally; partial substantive reading.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: 225-242, 757-802, 2043-2146, 2472-2527, 2531-2571, 4510-4518, 4665-4758, 5000-5008 substantively read; complete primary cited ranges; partial file. Labels searched throughout 1-7966.",
+    "manuscript/notes/integrated_occupation_ceiling.tex: 1-205 substantively read; partial file; labels searched throughout 1-308.",
+    "manuscript/notes/ai-statistics-data.tex: 1-173 complete label scan only.",
+    "manuscript/notes/ai-statistics.tex: 1-137 complete label scan only.",
+    "manuscript/notes/book-layout.tex: 1-77 complete label scan only.",
+    "manuscript/notes/chapter-guides/01-setting.tex: 1-20 complete label scan only.",
+    "manuscript/notes/chapter-guides/02-G0.tex: 1-17 complete label scan only.",
+    "manuscript/notes/chapter-guides/03-independent-upper.tex: 1-16 complete label scan only.",
+    "manuscript/notes/chapter-guides/04-gaussian-foundations.tex: 1-16 complete label scan only.",
+    "manuscript/notes/chapter-guides/05-operator-paths.tex: 1-17 complete label scan only.",
+    "manuscript/notes/chapter-guides/06-wave-evolution.tex: 1-16 complete label scan only.",
+    "manuscript/notes/chapter-guides/07-lower.tex: 1-16 complete label scan only.",
+    "manuscript/notes/chapter-guides/08-means.tex: 1-17 complete label scan only.",
+    "manuscript/notes/chapter-guides/09-growing-radius.tex: 1-17 complete label scan only.",
+    "manuscript/notes/chapter-guides/10-point-upper.tex: 1-17 complete label scan only.",
+    "manuscript/notes/chapter-guides/11-constant.tex: 1-17 complete label scan only.",
+    "manuscript/notes/chapter-guides/12-finite-order.tex: 1-16 complete label scan only.",
+    "manuscript/notes/chapter-guides/13-direct.tex: 1-17 complete label scan only.",
+    "manuscript/notes/chapter-guides/14-covariance.tex: 1-18 complete label scan only.",
+    "manuscript/notes/chapter-guides/15-static-clock.tex: 1-18 complete label scan only.",
+    "manuscript/notes/figures/active-subset-optimization.tex: 1-32 complete label scan only.",
+    "manuscript/notes/figures/chapter-roadmap.tex: 1-74 complete label scan only.",
+    "manuscript/notes/figures/common-noise.tex: 1-26 complete label scan only.",
+    "manuscript/notes/figures/cross-colour-cube.tex: 1-39 complete label scan only.",
+    "manuscript/notes/figures/dyadic-cover.tex: 1-32 complete label scan only.",
+    "manuscript/notes/figures/endpoint-elimination.tex: 1-68 complete label scan only.",
+    "manuscript/notes/figures/gaussian-enlargement.tex: 1-34 complete label scan only.",
+    "manuscript/notes/figures/global-control-blocks.tex: 1-38 complete label scan only.",
+    "manuscript/notes/figures/hermite-cutoff.tex: 1-29 complete label scan only.",
+    "manuscript/notes/figures/interval-allocations.tex: 1-41 complete label scan only.",
+    "manuscript/notes/figures/interval-end-metrics.tex: 1-42 complete label scan only.",
+    "manuscript/notes/figures/light-cone.tex: 1-34 complete label scan only.",
+    "manuscript/notes/figures/literature-interpretations.tex: 1-38 complete label scan only.",
+    "manuscript/notes/figures/literature-results-drawing.tex: 1-96 complete label scan only.",
+    "manuscript/notes/figures/literature-results-map.tex: 1-16 complete label scan only.",
+    "manuscript/notes/figures/nonseparable-controls.tex: 1-27 complete label scan only.",
+    "manuscript/notes/figures/order-of-limits.tex: 1-23 complete label scan only.",
+    "manuscript/notes/figures/positive-gram.tex: 1-30 complete label scan only.",
+    "manuscript/notes/figures/proof-map.tex: 1-65 complete label scan only.",
+    "manuscript/notes/figures/styles.tex: 1-14 complete label scan only.",
+    "manuscript/notes/figures/two-chain-pairings.tex: 1-51 complete label scan only.",
+    "manuscript/notes/figures/walsh-guitar.tex: 1-29 complete label scan only.",
+    "manuscript/notes/figures/white-strip.tex: 1-34 complete label scan only.",
+    "manuscript/notes/future_optimizers.tex: 1-72 complete label scan only.",
+    "manuscript/notes/future_universality.tex: 1-64 complete label scan only.",
+    "manuscript/notes/future_work.tex: 1-171 complete label scan only.",
+    "manuscript/notes/history_wave_equations.tex: 1-93 complete label scan only.",
+    "manuscript/notes/index/anchors.tex: 1-845 complete label scan only.",
+    "manuscript/notes/index/list-of-notation.tex: 1-476 complete label scan only.",
+    "manuscript/notes/index/setup.tex: 1-32 complete label scan only.",
+    "manuscript/notes/integrated_actual_operator_driver.tex: 1-655 complete label scan only.",
+    "manuscript/notes/integrated_cameron_mean.tex: 1-457 complete label scan only.",
+    "manuscript/notes/integrated_compact_gaussian.tex: 1-623 complete label scan only.",
+    "manuscript/notes/integrated_compact_mean_family.tex: 1-512 complete label scan only.",
+    "manuscript/notes/integrated_constant_phase_young.tex: 1-554 complete label scan only.",
+    "manuscript/notes/integrated_covariance_foundation.tex: 1-428 complete label scan only.",
+    "manuscript/notes/integrated_exact_scaling.tex: 1-56 complete label scan only.",
+    "manuscript/notes/integrated_gaussian_tubes.tex: 1-506 complete label scan only.",
+    "manuscript/notes/integrated_intrinsic_constant.tex: 1-388 complete label scan only.",
+    "manuscript/notes/integrated_masked_moments.tex: 1-212 complete label scan only.",
+    "manuscript/notes/integrated_point_transfer.tex: 1-323 complete label scan only.",
+    "manuscript/notes/integrated_positive_gram.tex: 1-218 complete label scan only.",
+    "manuscript/notes/integrated_radius_anchor.tex: 1-339 complete label scan only.",
+    "manuscript/notes/integrated_raw_block_lower.tex: 1-680 complete label scan only.",
+    "manuscript/notes/integrated_signed_moment_upper.tex: 1-236 complete label scan only.",
+    "manuscript/notes/integrated_signed_static.tex: 1-250 complete label scan only.",
+    "manuscript/notes/integrated_source_convergence.tex: 1-466 complete label scan only.",
+    "manuscript/notes/integrated_spatial_occupation.tex: 1-449 complete label scan only.",
+    "manuscript/notes/integrated_symplectic_phase.tex: 1-383 complete label scan only.",
+    "manuscript/notes/integrated_temporal_equilibrium.tex: 1-95 complete label scan only.",
+    "manuscript/notes/integrated_uniform_mean.tex: 1-388 complete label scan only.",
+    "manuscript/notes/integrated_uniform_products.tex: 1-530 complete label scan only.",
+    "manuscript/notes/integrated_unmasked_variational.tex: 1-343 complete label scan only.",
+    "manuscript/notes/integrated_wave_variance.tex: 1-531 complete label scan only.",
+    "manuscript/notes/integrated_white_evaluation.tex: 1-170 complete label scan only.",
+    "manuscript/notes/integrated_young_upper_foundation.tex: 1-94 complete label scan only.",
+    "manuscript/notes/lean-coverage-data.tex: 1-94 complete label scan only.",
+    "manuscript/notes/lean-coverage.tex: 1-62 complete label scan only.",
+    "manuscript/notes/literature_review.tex: 1-199 complete label scan only.",
+    "manuscript/notes/no-go-appendix.tex: 1-341 complete label scan only.",
+    "manuscript/notes/preface.tex: 1-252 complete label scan only.",
+    "manuscript/notes/theory_outlook.tex: 1-92 complete label scan only."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.PhaseCovariance: S:static-phase",
+      "verdict": "PASS",
+      "reason": "PhaseContractions.lean:123-135 requires '0 < alpha', 'alpha < 2', locally finite, even, tempered, positive-definite Gamma, its spectral measure and scaling c^(3-alpha). TeX notes_stratonovich_ham_second_moment.tex:2054-2057 gives the same class; the spectral-measure regularity follows the standing spectral convention. Ledger:4958 and claims.yaml:15304 faithfully describe it."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.PhaseCovariance.of_homog: S:static-phase",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:139-154 assumes 'HomogCovariance 3 alpha alpha0 Γ μ'; TeX:225-242 supplies these assumptions and :2048-2049 includes the original three-dimensional class. SpectralMassIdentity.lean:212-217 derives alpha < 2 from 'threshold' and 'alpha0_pos'. Ledger:4959 and claims.yaml:15311 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.PhaseCovariance.scaling': no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:158-162 assumes 'h : PhaseCovariance alpha Γ μ' and merely rewrites its scaling field as SpectralHomogeneous. TeX:2055-2056 supplies the underlying scaling, but has no separate cast-rewriting assertion. Ledger:4960 and claims.yaml:15318 correctly classify this as route-only."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.massM: E:phase-constants",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:166 defines '(Γ (ball 0 1)).toReal'; TeX:2060 defines 'M=Gamma(B_1)' and :2067 specifies the open ball. Local finiteness in the standing class makes toReal genuine. Ledger:4961 and claims.yaml:15325 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.cGam: E:phase-constants",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:169 defines '(3-alpha)*massM Γ/(4*pi)'; TeX:2062 gives '(3-alpha)M/(4pi)' under the standing class. Ledger:4962 and claims.yaml:15332 preserve the normalization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.bAlpha: E:phase-constants",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:172 defines '2^alpha + 3^(2-alpha)/(2-alpha)'; TeX:2063 states exactly that expression, with alpha < 2 at :2054. Ledger:4963 and claims.yaml:15339 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.dGam: E:phase-constants",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:175 defines 'cGam Γ alpha * bAlpha alpha'; TeX:2064 defines 'D_Gamma=c_Gamma b_alpha'. Ledger:4964 and claims.yaml:15346 correctly preserve the two distinct physical and spectral masses."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.dGam_eq: E:phase-constants",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:179-181 expands dGam without additional hypotheses. TeX:2060-2064 gives the same product; IntervalScalar.lean:620-621 uses exactly this expression as hDdef. Ledger:4965 and claims.yaml:15353 are accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.gauss_shift_le: L:phase-contractions",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:192-194 assumes 'IsSpectralMeasure Γ μ' and '0 < s'; TeX:2090-2098 proves the same shifted Gaussian comparison under the stronger standing class and states finiteness separately. Ledger:4966 and claims.yaml:15360 match the comparison type; they do not themselves establish finiteness. The blanket prose issue is W1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.ofReal_inv_eq_lintegral_exp: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:232-237 assumes '0 < c' and proves the nonnegative Laplace representation of 1/c. TeX:2098-2100 integrates the Gaussian comparison but does not separately state this identity. Ledger:4967 and claims.yaml:15367 correctly identify a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.lintegral_shift_resolvent_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:242-245 requires '[SFinite μ]', 'IsTempered μ', the spectral relation and '0 < lam'. TeX:2097-2100 has finite Gaussian integrals and Tonelli under the standing class. The lower-integral packaging is route-specific, correctly recorded at ledger:4968 and claims.yaml:15374."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.phase_resolvent: E:phase-resolvent",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:286-292 assumes locally finite tempered μ, spectral correspondence, Gamma scaling, '0 < alpha < 2' and '0 < lam'. TeX:2054-2057,2073-2077 has these assumptions in d=3. The constant R_alpha, exponent alpha-2, non-strict inequality and q=0 equality match :2100-2104. Ledger:4969 and claims.yaml:15381 disclose the dimension-general form."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.lintegral_rpow_Ioo: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:321-322 assumes '0 < β' and '0 < t', proving the lower-integral power formula. TeX:2111-2117 uses radial integration but does not state this intermediate identity. Ledger:4970 and claims.yaml:15388 correctly use no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.map_norm_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:338-341 assumes locally finite ν, '0 < β' and SpectralHomogeneous ν β, and identifies its norm pushforward. TeX:2111-2117 instead states the radial integration law directly. Ledger:4971 and claims.yaml:15395 correctly disclose the different route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.lintegral_norm_radial: L:phase-contractions",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:387-390 requires locally finite homogeneous ν, β>0 and 'f : ℝ → ℝ≥0∞' measurable. TeX:2111-2117 states the specialization β=3-alpha for nonnegative radial Schwartz functions. Ledger:4972 and claims.yaml:15402 accurately disclose the stronger measurable-function conclusion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.measure_singleton_zero: L:phase-contractions",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:400-402 assumes local finiteness, positive homogeneity degree and scaling. TeX:2089-2090 derives no spectral origin atom from the same facts. Ledger:4973 and claims.yaml:15409 accurately state the generalized measure lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.volume_homogeneous: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:406-410 proves 'SpectralHomogeneous volume 3' without covariance hypotheses. TeX:2116 uses ordinary Lebesgue radial integration but has no separate assertion of this scaling fact. Ledger:4974 and claims.yaml:15416 correctly mark it route-only."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.pdens: S:static-phase",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:416-420 defines '(2*pi*v)^(-d/2) exp(-norm(x)^2/(2v))'. TeX:2068-2070 specifies the Brownian Gaussian of covariance vI and uses p_(2eps). Ledger:4975 and claims.yaml:15423 preserve that normalization; the physical interpretation is for v>0."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.pprof_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:423-424 assumes '0 < v' and proves profile nonnegativity for every u. TeX:2068-2069 names a Gaussian density, not this profile lemma. Ledger:4976 and claims.yaml:15430 correctly give a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.continuous_pprof: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:427-428 has no sign restriction on v and proves continuity in u of the defined profile. TeX:2068-2069 only introduces the positive-variance density. Ledger:4977 and claims.yaml:15437 accurately report the unrestricted Lean continuity statement without assigning a manuscript result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.continuous_pdens: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:431-432 proves 'Continuous (pdens v)' for arbitrary v. TeX:2068-2069 introduces p_v in its physical domain, without a separately labelled continuity assertion. Ledger:4978 and claims.yaml:15444 are faithful route-only descriptions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.integral_pdens: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:436-448 assumes '0 < v' and concludes both integrability and integral one. TeX:2068-2069 calls p_v a Brownian Gaussian density, which implies this property. Ledger:4979 and claims.yaml:15451 accurately record the normalization fact without a direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.lintegral_pdens: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:451-455 assumes '0 < v' and proves the lower integral equals one. TeX:2068-2069 supplies the Gaussian-density interpretation but not this ENNReal formulation. Ledger:4980 and claims.yaml:15458 correctly classify it as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.WaveFourierThree: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:465-467 quantifies over every s>0 and ξ∈R^3 and states the waveGreen Fourier identity. TeX:777-778 specifies the same transform, including value s at zero, used at :2083. Ledger:4981 and claims.yaml:15465 correctly identify a named proposition, subsequently proved rather than assumed permanently."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.ArchimedesLaw: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:474-477 assumes 'norm(e)=1' and gives pushforward 'ofReal(2*pi) • volume.restrict (Icc (-1) 1)'. TeX:2125-2126 invokes normal-coordinate integration on the sphere. Ledger:4982 and claims.yaml:15472 correctly describe the classical input; it imposes no restriction on Gamma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.lintegral_waveGreen_three: L:phase-contractions",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:485-488 assumes ArchimedesLaw, a>0 and measurable ENNReal-valued φ. TeX:2125-2126 uses the same normal-coordinate integration. The factor a/2 and argument norm(y)^2+a^2-2a norm(y)t are correct. Ledger:4983 and claims.yaml:15479 disclose the supplied input and generality."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.sq_norm_rpow: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:521-526 quantifies over arbitrary v and alpha and proves the stated real-power identity. TeX:2128-2130 uses the power kernel but does not state this rewriting. Ledger:4984 and claims.yaml:15486 correctly classify the totalized algebraic identity as route-only."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.sq_rpow_eq_abs: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:529-531 proves '(x^2)^p=|x|^(2*p)' for real x,p. TeX:2129 uses |a-r|^(2-alpha), without this separate algebraic lemma. Ledger:4985 and claims.yaml:15493 are accurate; no convention-free counterexample is claimed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.integral_normal_coordinate: L:phase-contractions",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:537-541 assumes a,r>0 and alpha<2. TeX:2054,2125-2130 additionally has alpha>0. The interval-integral denominator ar(2-alpha) correctly precedes multiplication by a/2; the sphere formula then has 2r(2-alpha). Ledger:4986 and claims.yaml:15500 preserve the factor."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.sphere_convolution: L:phase-contractions",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:590-594 assumes ArchimedesLaw, a>0, alpha<2 and norm(z)>0. TeX:2125-2130 has r>0 and the standing 0<alpha<2. The exact numerator and denominator 2r(2-alpha) match. Ledger:4987 and claims.yaml:15507 correctly state the generalized lower-integral form."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.kernel_le_of_dist: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:621-624 requires ArchimedesLaw, a>0, alpha≥0 and '0<δ≤|a-norm(z)|'. TeX:2132-2134 uses the particular distance bounds a/2 and a. The abstract distance lemma is not separately stated there; ledger:4988 and claims.yaml:15514 correctly call it route-only."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.mul_rpow_neg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:656-657 assumes a>0 and proves 'a*a^(-alpha)=a^(1-alpha)'. TeX:2133-2135 has a>0 but no separate power-rewriting claim. Ledger:4989 and claims.yaml:15521 faithfully mark this auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.middle_region_le: L:phase-contractions",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:662-665 assumes a>0, alpha<2 and a/2≤r≤2a. TeX:2134-2135 states the same bound under 0<alpha<2. The power a^(1-alpha), constant 3^(2-alpha)/(2-alpha), and non-strict inequality match ledger:4990 and claims.yaml:15528."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.three_regions: L:phase-contractions",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:694-702 assumes ArchimedesLaw and a>0, 0<alpha<2. TeX:2132-2136 gives the same three constants and covers the endpoints by continuity. Lean directly includes closed endpoints, as disclosed at ledger:4991; claims.yaml:15535 agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.kernel_le_bAlpha: L:phase-contractions",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:720-723 assumes ArchimedesLaw, a>0 and 0<alpha<2, uniformly over z. TeX:2123,2132-2136 gives that same supremum bound. Ledger:4992 and claims.yaml:15542 preserve b_alpha and exponent 1-alpha."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.gammaEps: S:static-phase",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:745-746 defines 'int pdens (2*ε) (x-y) dΓ'; TeX:2069-2070 defines 'Gamma_epsilon=p_(2epsilon)*Gamma'. Ledger:4993 and claims.yaml:15549 correctly distinguish this from LowAlphaConvolution's p_epsilon smoothing. Integrability is supplied by the stated tempered positive-width results."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.traceT: L:phase-contractions",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:750-751 defines the complex scalar integral against waveGreen 3 a. TeX:2081-2082 defines exactly 'int exp(iq·x) Gamma_epsilon(x) G_a(dx)'. Ledger:4994 and claims.yaml:15556 are faithful; this T_epsilon is not a trace-class operator."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.integrable_pdens_sub: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:755-762 assumes 'IsTempered Γ' and v>0 and concludes integrability of every translated density. TeX:2055,2068-2070 supplies temperedness and positive smoothing, but no separate labelled integrability lemma. Ledger:4995 and claims.yaml:15563 correctly identify an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.ofReal_gammaEps: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:765-769 assumes tempered Gamma and epsilon>0 before identifying its Bochner integral with a lower integral. TeX:2069-2070 defines the same convolution under the standing tempered class. Ledger:4996 and claims.yaml:15570 correctly classify this conversion as route-only."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.gammaEps_nonneg: L:phase-contractions",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:772-774 assumes only a positive measure Gamma and epsilon>0; TeX:2109 has the stronger standing tempered class. Ledger:4997 and claims.yaml:15577 accurately state the positivity inequality. Its unrestricted version does not establish convolution integrability; see W1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.measurable_gammaEps: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:777-781 assumes '[SFinite Γ]' and arbitrary epsilon and concludes measurability of the defined integral. TeX:2054-2057 gives a locally finite covariance and positive smoothing, with no standalone measurability statement. Ledger:4998 and claims.yaml:15584 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.lintegral_gammaEps_le: E:phase-trace",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:790-794 assumes ArchimedesLaw, locally finite tempered homogeneous Gamma, 0<alpha<2 and epsilon,a>0. TeX:2054-2070,2108-2136 has these assumptions. The lower-integral bound has exactly D_Gamma*a^(1-alpha). Ledger:4999 and claims.yaml:15591 correctly disclose the input and route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.phase_trace: E:phase-trace",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:931-938 requires ArchimedesLaw and the physical covariance assumptions, with epsilon,a>0. TeX:2078-2082,2108-2110 states the bound and the T(a,0) comparison. Integrability, real T(a,0), and both inequalities match ledger:5000 and claims.yaml:15598; no spectral measure is needed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.gammaEps_fourier: L:phase-contractions",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:976-979 assumes only 'IsSpectralMeasure Γ μ' and epsilon>0 and states the displayed identity of Lean integrals. TeX:2055-2057,2107-2108 additionally supplies temperedness, making the integrals genuine. Ledger:5001 and claims.yaml:15605 match the identity type, but the section-wide no-junk assertion needs W1's correction."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.traceT_fourier: L:phase-contractions",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:1007-1012 assumes WaveFourierThree, locally finite tempered μ, spectral correspondence and epsilon,a>0. TeX:2081-2084,2107-2108 has those mathematical facts. The shift q+xi, multiplier exp(-epsilon|xi|^2), and integrability match ledger:5002 and claims.yaml:15612."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.PhaseContractions.phase_contractions_paper: L:phase-contractions",
+      "verdict": "PASS",
+      "reason": "Lean PhaseContractions.lean:1070-1082 assumes PhaseCovariance plus WaveFourierThree and ArchimedesLaw. TeX:2054-2086 has the same covariance class, both estimates and Fourier identity. Ledger:5003 and claims.yaml:15619 explicitly disclose the two source-module inputs; the completed wrapper discharges them."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L9Completed.waveFourierThree_holds: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean L9Completed.lean:75-76 has no hypothesis and proves WaveFourierThree from WaveGreenFourier.lean:595-611. TeX:777-778 specifies the same transform for s>0, with its value at zero. Ledger:3548 and claims.yaml:17335 correctly describe the bridge."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L9Completed.archimedesLaw_holds: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean L9Completed.lean:82-83 has no hypothesis and applies WaveGreenFourier.lean:621-643 to every unit e. TeX:2125-2126 uses the corresponding sphere-coordinate law. Ledger:3549 and claims.yaml:17342 correctly describe the unconditional discharge."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L9Completed.low_alpha_convolution_paper_completed: L:low-alpha-convolution",
+      "verdict": "PASS",
+      "reason": "Lean L9Completed.lean:96-110 assumes exactly 'HomogCovariance d alpha alpha0 Γ μ' and 'alpha<1'. TeX:4691-4703 retains H:homog and 0<alpha<1. Its complete conclusion is LowAlphaConvolution.lean:575-591 minus GreenFourier, discharged using hH.dim alone. Constants, smoothing range eta≥0 and uniform z quantification match ledger:3550 and claims.yaml:17349."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L9Completed.phase_trace_completed: E:phase-trace",
+      "verdict": "PASS",
+      "reason": "Lean L9Completed.lean:119-127 retains the locally finite tempered homogeneous Gamma, 0<alpha<2 and epsilon,a>0 hypotheses of PhaseContractions.lean:931-938, removing only ArchimedesLaw. TeX:2054-2079 implies these conditions. Ledger:3551 and claims.yaml:17356 preserve all conclusions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L9Completed.traceT_fourier_completed: L:phase-contractions",
+      "verdict": "PASS",
+      "reason": "Lean L9Completed.lean:134-140 retains locally finite tempered μ, spectral correspondence and epsilon,a>0, removing only WaveFourierThree from PhaseContractions.lean:1007-1012. TeX:2054-2057,2081-2084 has those facts and exactly the same Fourier form. Ledger:3552 and claims.yaml:17363 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L9Completed.phase_contractions_paper_completed: L:phase-contractions",
+      "verdict": "PASS",
+      "reason": "Lean L9Completed.lean:150-164 assumes only PhaseCovariance and reproduces PhaseContractions.lean:1072-1082 verbatim in substance. TeX:2054-2086 has that class, both bounds and both forms of T. Ledger:3553 and claims.yaml:17370 correctly report no remaining supplied input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.L9Completed.phase_contractions_homog_completed: L:phase-contractions",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean L9Completed.lean:170-184 assumes 'HomogCovariance 3 alpha alpha0 Γ μ'; TeX:225-242 and :2048-2049 permit this specialization. The conclusions match the completed phase wrapper. Ledger:3554 and claims.yaml:17377 are accurate except that 'alpha0 carried, unused' overlooks its use to derive alpha<2 through of_homog; see W3."
+    },
+    {
+      "claim": "PARA-PhaseContractions",
+      "verdict": "PARTIAL",
+      "reason": "The objects, constants, source ranges, discharged inputs and principal conclusions at candidate/statement-ledger.md:4864-4921,4932-4954 match the sources. However, :4923-4925 asserts integrability of every integrand is a conclusion and excludes all junk-integral statements. PhaseContractions.lean:192-194,772-774,976-979 do not conclude integrability under their unrestricted hypotheses. This material scope error is W1."
+    },
+    {
+      "claim": "PARA-L9Completed",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Candidate/statement-ledger.md:3505-3544 accurately describes the bridges, unchanged source-wrapper hypotheses and d=1,2,3 completion. L9Completed.lean:109-110,127,140,164 shows the exact substitutions. The only wording issue identified is 'alpha0 carried, unused' at ledger:3531-3532; its numerical assumptions are used through of_homog, as explained in W3."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "All 53 primary declarations occur exactly once as declaration entries in candidate/statement-ledger.md:780-789,824-826, under the labels of their section rows. The seven distinct labels cited in the primary sections each occur exactly once across the manuscript corpus: main TeX:225,2044,2058,2072,2077,2080,4702. Route auxiliaries are indexed under no direct label."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "lean/coverage.yaml:519-549,660-706 correctly uses same-assumptions/full for the completed low-alpha and phase conclusions. L9Completed.lean:96-110,150-184 removes the analytic inputs rather than assuming them. Every referenced claim ID exists. The toSphere choice and open-ball R_alpha are disclosed. Neither target row has a conclusion_scope field or remaining inputs field."
+    },
+    {
+      "claim": "SCOPE-RULES",
+      "verdict": "PASS",
+      "reason": "Neither full target row in lean/coverage.yaml:519-549,660-706 has conclusion_scope, and neither has an entry in docs/coverage-scope-tex.yaml:1-90. Thus there is no target ASCII/TeX drift or prohibited declaration/file name in such a sentence. No Rayleigh-rate lambda is described by these two rows; their lambda is the positive resolvent parameter."
+    },
+    {
+      "claim": "REFUTATIONS",
+      "verdict": "FAIL",
+      "reason": "MiddleRegionExponent.lean:26-39 and NormalCoordinateConstant.lean:27-40 give genuine in-domain numerical contradictions with the stated perturbations. ShiftInvariance.lean:9-12,26-43 instead uses d=1, Gamma=Lebesgue and μ=δ0; this is outside TeX:2054-2057's d=3,0<alpha<2 class and corresponds to homogeneity alpha=0. It refutes the broader Lean-only equality variant, not equality under the manuscript's standing class. The ledger supplies no description making that distinction. See W2."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The checked references at candidate/statement-ledger.md:236-248,2299,2408,3556-3675,8232-8348,8742-8750 accurately distinguish completed contraction bounds from still-supplied spatial operator inputs. However, the complete correspondence of every other cross-wave passage and all declarations it invokes was not finished; the broad 'every other place' claim is therefore not certified."
+    },
+    {
+      "claim": "L8-PATTERNS",
+      "verdict": "FAIL",
+      "reason": "The completed phase and low-alpha wrappers genuinely remove their supplied inputs, and no wrong constant or rate/supremum identification was found in them. Nevertheless, candidate/statement-ledger.md:4923-4925 overstates their integrability coverage as applying to every statement, although the unrestricted types at PhaseContractions.lean:192-194,772-774,976-979 omit it. This is a summary-conclusion overclaim of pattern (a), documented in W1."
+    },
+    {
+      "claim": "LEDGER-TOTALS",
+      "verdict": "PASS",
+      "reason": "Structural enumeration of all per-module rows gives exactly 2468 unique declarations: 2050 theorems,418 definitions,1310 labelled and1158 unlabelled. Every claims.yaml declaration has exactly one row. There are76 represented library modules. coverage.yaml has48 same-assumptions rows,17 weaker; five full/implicit-full inputs-supplied rows;24 weaker inputs-supplied rows; and three outside rows. These agree with ledger:44-75,267-287,829-830 and coverage.yaml:2,10-13."
+    },
+    {
+      "claim": "SCOPE-AND-NOT-IN-LEAN",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The complete changed-sections diff and Scope/Index/Not-in-Lean passages were read. The phase/low-alpha completion changes and the retained toSphere caveat are supported by the checked types; the Fock spatial input and occupation-class limitations are explicitly retained. However, not every declaration supporting all newly changed cross-wave summary passages was read completely, so the universal claim about all changed passages remains unverified."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "W1 — PARA-PhaseContractions, blanket integrability assurance. candidate/statement-ledger.md:4923-4925 says 'the integrability of every integrand (a conclusion, so no statement holds through the junk value of a non-integrable Bochner integral)'. In contrast, Lean PhaseContractions.lean:192-194 assumes only 'IsSpectralMeasure Γ μ' and s>0, :976-979 only that predicate and epsilon>0, and :772-774 allows any Gamma; none concludes integrability. TeX notes_stratonovich_ham_second_moment.tex:2054-2057 retains tempered Radon covariances and :2097 explicitly says 'The integrals are finite'. The distinction is substantive: the bare Lean spectral predicate, HomogHypothesis.lean:52-55, is an equality of totalized integrals and does not require temperedness or local finiteness. For example, infinite-mass atoms on both sides make all its Schwartz integral equalities zero without Gaussian integrability. Fix the ledger assurance by restricting it to the principal tempered-covariance estimates/wrappers, and explicitly describe unrestricted pairing identities and positivity statements as statements of Lean integrals; alternatively strengthen those auxiliary statements with genuine-integrability conclusions under appropriate hypotheses. The completed manuscript-domain bounds themselves were not found deficient.",
+      "W2 — REFUTATIONS, manuscript-domain mismatch. ShiftInvariance.lean:9-12 describes the example 'd = 1, Γ = Lebesgue measure, μ = δ_0'; its theorem at :35-43 assumes only 'IsSpectralMeasure Γ μ'. TeX notes_stratonovich_ham_second_moment.tex:2054-2057 instead requires a covariance on R^3 with '0 < alpha < 2' and degree3-alpha scaling. Lebesgue covariance has alpha=0, so this example is outside that class, independently of its dimension. It uses genuine finite Gaussian integrals, not an explicitly identified totalized-arithmetic extension control. Neither candidate primary section describes the negative controls or this limitation. Fix the manuscript-control correspondence by adding or replacing it with a counterexample satisfying S:static-phase, and identify the existing example only as a control for the broader Lean generalization."
+    ],
+    "minor": [
+      "W3 — L9Completed hypothesis-usage wording. candidate/statement-ledger.md:3531-3532,3554 and lean/claims.yaml:17377 call alpha0 'carried, unused'. Lean L9Completed.lean:184 calls PhaseCovariance.of_homog; PhaseContractions.lean:141-142 calls alpha_mem_Ioo_of_homog, whose proof at SpectralMassIdentity.lean:214 uses 'hH.threshold' and 'hH.alpha0_pos'. TeX notes_stratonovich_ham_second_moment.tex:226,238 supplies exactly these numerical hypotheses. No hypothesis is missing from the wrapper and its conclusion is independent of alpha0. Optional wording fix: say alpha0 does not occur in the conclusion, but its positivity and threshold hypotheses are used to obtain alpha<2."
+    ]
+  },
+  "required_repairs": [
+    "Correct candidate/statement-ledger.md:4923-4925 so its genuine-integrability assurance applies only where integrability is actually proved; explicitly qualify the unrestricted Gaussian-pairing and positivity declarations, or strengthen their Lean statements appropriately.",
+    "Provide a shift-equality negative control within S:static-phase and document its assumptions; do not present the existing d=1, alpha=0 example as a counterexample under the manuscript's standing class."
+  ],
+  "limitations": [
+    "The two primary Lean modules, their53 ledger rows and claims entries, both audit files, all three refutation files, the primary cited authoritative TeX ranges, the complete excerpts file, Scope, Index, Not in Lean and the changed-sections diff were read completely.",
+    "The broader complete-reading obligation for every declaration invoked by all cross-wave changed summary passages was not completed. Checks CROSS-REFERENCES and SCOPE-AND-NOT-IN-LEAN are therefore INCONCLUSIVE; the overall verdict is INCONCLUSIVE rather than acceptance despite the identified mandatory repairs.",
+    "Contextual coverage remains partial as listed: especially the full ledger diff, coverage.diff:76-566, prior-file substantive contents, and uncited portions of supporting modules. Structural parsing, label searching and hash verification are not substitutes for substantive correspondence reading.",
+    "The audit files contain #check/#print commands, not captured elaboration output. No compiler was run; compilation and standard-axiom proof correctness were accepted as supplied by the contract.",
+    "T_epsilon(a,q) is a complex scalar Fourier integral in both PhaseContractions.lean:750-751 and manuscript main TeX:2081-2084. No trace-class operator assertion about this T was present to verify.",
+    "This is an AI correspondence review, not human verification or a novelty audit."
+  ]
+}

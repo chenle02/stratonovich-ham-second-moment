@@ -1,0 +1,94 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md — partial file: 1-110, 5580-5697, 5875-5979, 6381-6469, 7055-7200, 7283-7417, 7739-7817, 8244-8362, 8612-8769; additional Index search matches at 501, 523, 551, 648, 657-658, 712-713, 715, 719-720, 724, 728-729, 734, 752-753, 760, 782, 789, 795-796, 798, 805-806, 809, 811, 815, 817, 819, 828, 834-835, 867. Required section ranges complete.",
+    "lean/FORMALIZATION.md — complete: 1-153.",
+    "adjudication/round3-d5667f5-split-rule.md — complete: 1-131.",
+    "prior-reports/h1-headings-lib-a-report.json — complete: 1-195.",
+    "prior-reports/h2-headings-lib-b-report.json — complete: 1-205.",
+    "prior-reports/h3-headings-lib-c-audit-report.json — complete: 1-341.",
+    "prior-reports/h4-index-cells-report.json — complete: 1-72.",
+    "prior-reports/h5-consistency-r1-diff-report.json — complete: 1-109.",
+    "excerpts/tex-excerpts.txt — complete: 1-564.",
+    "lean/coverage.yaml — partial: 1-60, 875-1010, 1373-1523, 1598-1706, 1730-1778. Every required coverage row complete.",
+    "docs/coverage-scope-tex.yaml — complete: 1-142.",
+    "lean/StratonovichHAMSecondMoment/RemoveMask.lean — partial: 548-748; all paper wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialBracket.lean — partial: 1-110, 390-519; all paper wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean — complete: 1-383.",
+    "lean/StratonovichHAMSecondMoment/SymplecticFree.lean — partial: 516-552, 639-764; supplied-input definitions and all paper wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/TerminalWick.lean — partial: 545-688; all paper wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean — partial: 190-320; supplied-input structure and all paper wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalRate.lean — partial: 731-828; all paper wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean — partial: 810-973; all paper wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean — partial: 1-357, 470-501; relevant completed wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean — partial: 224-257.",
+    "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean — partial: 144-175.",
+    "manuscript/notes/integrated_unmasked_variational.tex — partial: 1-20, 98-111, 168-221, 270-284.",
+    "manuscript/notes/integrated_spatial_occupation.tex — partial: 219-237, 300-325, 370-414.",
+    "manuscript/notes/integrated_symplectic_phase.tex — partial: 30-60.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex — partial: 3585-3645, 3703-3727.",
+    "manuscript/notes/integrated_wave_variance.tex — partial: 171-200, 368-383.",
+    "manuscript/notes/integrated_occupation_ceiling.tex — partial: 1-22, 92-112, 195-220, 252-266.",
+    "manuscript/notes/integrated_compact_mean_family.tex — partial: 398-410.",
+    "diffs/docs-d5667f5-e2c50b5.diff — partial: 824-896; truncated passage reread.",
+    "PROVENANCE.json — partial: 1-42.",
+    "lean/README.md — partial: 23-44; additional search matches at 100, 122, 338, 397, 407, 410, 432-433, 445.",
+    "lean/COMPLETION.md — partial: 35-56; additional search matches at 69, 76, 80-86, 89-91, 103, 135-136, 170, 172-173, 177, 184, 186, 196-199, 207, 209, 215, 218-219, 221, 238, 240-242, 244-245, 265-269, 272, 274, 277."
+  ],
+  "checks": [
+    {
+      "claim": "HEADING RemoveMask",
+      "verdict": "PASS",
+      "reason": "Category B is appropriate and the revised qualifier identifies the rate/cost modelling and canonical-moment substitution. RemoveMask.lean:648-682 proves the Rayleigh-rate conclusions; :702-739 additionally assumes RawBlockOriginalLower for arbitrary L and concludes a bound using rawCost. The manuscript instead names compact ground rates and the canonical solution (integrated_unmasked_variational.tex:168-179). Ledger:5580,5622-5632,5695-5696 and Index:798 disclose these boundaries; coverage.yaml:1628-1649 and its mirror agree."
+    },
+    {
+      "claim": "HEADING SpatialBracket",
+      "verdict": "PASS",
+      "reason": "The heading names both independent substitutions and the rate/cost identification gap. SpatialBracket.lean:481-495 concludes bounds for sSup(scoreSet ... 2) and uses energyValue(K0*Rsp), whereas integrated_occupation_ceiling.tex:252-266 uses C_2 and the actual occupation energy. L8Completed.lean:262-281 discharges the ceiling input without removing either substitution. Ledger:5875,5916-5932 and Index:795,834 accurately retain them. Coverage.yaml:27-58 distinguishes the later exact-energy contribution rather than attributing it to SpatialBracket alone."
+    },
+    {
+      "claim": "HEADING SpatialOccupationL7Completed",
+      "verdict": "PASS",
+      "reason": "The added sequential-continuity qualifier is necessary and accurate: SpatialOccupationL7Completed.lean:182-192 concludes Tendsto along sequences, versus joint continuity in integrated_spatial_occupation.tex:229-230. Its occupation conclusions still quantify over IsOccField (:323-349,363-374), not the constructed strongly H^1-measurable class of manuscript:381-414. The heading retains that bridge and the rate/cost gap. Ledger:6428-6448 also discloses S1Bdd; L8Completed.lean:210-215 supplies the corresponding supremum conclusion. Required coverage rows and mirrors preserve these distinctions."
+    },
+    {
+      "claim": "HEADING SymplecticFree",
+      "verdict": "PASS",
+      "reason": "The heading accurately separates absent phase-space symplectic conclusions from supplied baseline data. SymplecticFree.lean:707-714 proves the L^2 force identity; :729-754 bundles per-frequency symplecticity and conditional compact baselines, not J_E or symplectic preservation on the manuscript's E. Those additional conclusions occur in integrated_symplectic_phase.tex:32-41. FreeWaveData and Young convergence are explicit hypotheses (:522-547,659-689). Ledger:7055,7088-7104,7127-7136, Index:815-819, and coverage.yaml:879-923 consistently disclose this narrower scope."
+    },
+    {
+      "claim": "HEADING TerminalWick",
+      "verdict": "PASS",
+      "reason": "All material restrictions identified in the prior findings are now named. TerminalWick.lean:623-626 takes arbitrary finite measures with prescribed masses, supplied product measurability and added covariance measurability; :640 states real-r summability, and :669-683 compares individual mixed moments. The manuscript constructs the chains and asserts complex-r convergence and partial-order second-moment comparison (main TeX:3585-3598,3641-3644). Ledger:7283 and Index:811 accurately summarize these differences; coverage.yaml:932-972 and its mirror agree."
+    },
+    {
+      "claim": "HEADING UniformSeriesTail",
+      "verdict": "PASS",
+      "reason": "Reclassification from A to B correctly applies the split rule: the terminal-chain construction is not registered model choice M1. UniformSeriesTail.lean:261-277,301-310 proves the stated estimates and limit for arbitrary real L^2 families with TerminalWickInput, while the manuscript fixes terminal-chain terms (main TeX:3703-3727). L8Completed.lean:312-345 supplies the two upstream facts only for measures fixed by their masses. Ledger:7739,7753-7760 and Index:712,835 retain the missing identification; coverage.yaml:983-1006 and its mirror now say weaker."
+    },
+    {
+      "claim": "HEADING VariationalRate",
+      "verdict": "PASS",
+      "reason": "The revised heading names the spectral-rate and stochastic-cost identification gaps as well as the missing operator half and Q_2 inequality. VariationalRate.lean:739-759 proves Rayleigh-supremum statements; :781-823 uses rawCost and supplies no stochastic point-liminf conclusion. VariationalDilation.lean:236-247 explicitly distinguishes these definitions from noise variance and spectral bottom. These contrast with integrated_unmasked_variational.tex:100-109,272-279. Ledger:8244,8302-8308 and Index:657-658 agree with coverage.yaml:1598-1666 and its mirrors; completion of S1Bdd does not remove the narrowing."
+    },
+    {
+      "claim": "HEADING WaveTwoVariances",
+      "verdict": "PASS",
+      "reason": "The heading correctly names the abstract variance/phase-space substitution while preserving the full spectral-core claim. WaveTwoVariances.lean:903-927 takes abstract P, J, normSG and var with explicit transfer hypotheses; the manuscript bounds the actual ell_R on its Schwartz phase spaces (integrated_wave_variance.tex:171-200,368-383). The core wrappers at :822-853 require no such transfer inputs. Ledger:8612,8650-8664,8707-8715 and Index:648 match coverage.yaml:1667-1697 and its mirror."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Requirement A was completed; truncated required passages were reread. Partial-file coverage excludes unrelated sections or proof bodies, not required selections.",
+    "Acceptance concerns exactly the eight contracted headings and their relevant correspondence evidence. Aggregate counts, the entire Index, claims.yaml and unrelated classifications were not independently recertified.",
+    "No Lean build, proof-correctness audit, provenance-hash verification or complete-diff certification was performed.",
+    "This AI correspondence review is not human verification or a novelty audit."
+  ]
+}

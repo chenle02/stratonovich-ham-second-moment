@@ -1,0 +1,76 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "medium",
+  "source_coverage": [
+    "PROVENANCE.json:1-868 complete.",
+    "candidate/statement-ledger.md: partial file; 1-110,497-510,600-698,1897-1922,2649-2676,3822-3848,3997-4050,4740-4758,4971-4988,6329-6350,6470-6495,6623-6648,7603-7628,8099-8119,8363-8406,8612-8635 read. Required Scope and 99 Index rows complete.",
+    "candidate/statement-ledger.md: complete list of ## headings read at lines 37,497,900,913,925,942,954,980,1003,1012,1021,1039,1060,1100,1132,1155,1180,1198,1211,1223,1246,1263,1275,1288,1305,1321,1334,1545,1717,1897,2076,2092,2299,2409,2541,2649,2705,2823,2840,2861,2970,3094,3115,3232,3377,3435,3527,3541,3634,3690,3822,3997,4112,4281,4429,4521,4631,4740,4823,4971,5031,5199,5362,5451,5560,5580,5698,5752,5875,5980,6110,6329,6381,6470,6623,6818,6929,7055,7201,7283,7418,7603,7739,7818,7991,8099,8244,8363,8495,8612,8770,8852,8917.",
+    "lean/FORMALIZATION.md:1-153 complete.",
+    "lean/coverage.yaml: partial file; 1-90,95-118,145-165,233-287,441-460,561-642,658-671,736-755,822-879,1027-1062,1213-1301,1342-1373,1520-1628,1650-1698 read. Required label-row blocks complete; complete label-key search also read.",
+    "adjudication/round3-d5667f5-split-rule.md:1-131 complete.",
+    "excerpts/tex-excerpts.txt:1-724 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/DampedNormsHomog.lean.excerpt.txt:1-418 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/GaussianComparison.lean.excerpt.txt:1-147 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean.excerpt.txt:1-552 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/MaskedContinuousWave.lean.excerpt.txt:1-267 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean.excerpt.txt:1-79 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/MaskedModulation.lean.excerpt.txt:1-283 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/OccupationKernelRow.lean.excerpt.txt:1-173 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/PhaseBessel.lean.excerpt.txt:1-174 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/QuotientObstruction.lean.excerpt.txt:1-507 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SeriesType.lean.excerpt.txt:1-145 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialFourierBound.lean.excerpt.txt:1-325 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean.excerpt.txt:1-152 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean.excerpt.txt:1-436 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialStaticControls.lean.excerpt.txt:1-628 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/TimeCompletion.lean.excerpt.txt:1-587 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/TimeSchur.lean.excerpt.txt:1-100 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/TypeContinuity.lean.excerpt.txt:1-533 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/VariationalFloor.lean.excerpt.txt:1-340 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/VariationalMean.lean.excerpt.txt:1-449 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/VariationalRate.lean.excerpt.txt:1-530 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/WaveGreen.lean.excerpt.txt:1-288 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/WaveTwoVariances.lean.excerpt.txt:1-540 complete.",
+    "manuscript/notes/integrated_covariance_foundation.tex:1-423 partial.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-164,270-343 partial.",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-217,352-379 partial.",
+    "manuscript/notes/integrated_wave_variance.tex:1-25,143-176,185-247,346-460 partial.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:219-242,734-749,777-919,2670-2679,5179-5187,7222-7263,7496-7606 partial.",
+    "manuscript/notes/index/list-of-notation.tex:99-105 partial."
+  ],
+  "checks": [
+    {
+      "claim": "INDEX-CELLS lines 600-698",
+      "verdict": "FAIL",
+      "reason": "All 99 rows and the required category rules were read. Sixty-six first cells lack an explicit category required by candidate/statement-ledger.md:62-79. Row 610 incorrectly applies 'no supplied input' to an abstract theorem retaining hmem and hnorm (MaskedContinuousWave.lean.excerpt.txt:253-266). Several whole-result cells disagree with their narrower section headings, and the damped-norm wrappers omit more than the stated smoothing qualification. M1 was treated as the registered standard construction, not as a missing construction."
+    },
+    {
+      "claim": "INDEX-MAPPING lines 600-698",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The visible principal mappings agree with the manuscript statements and proofs, including the explicitly restricted covariance-functional and spectral-side readings. However, the packet does not expose every listed declaration's statement. In particular, the six internal helpers named at candidate/statement-ledger.md:602 are absent from the completely read OccupationKernelRow.lean.excerpt.txt:1-173. Some supplied signatures also stop before their conclusions finish, for example DampedNormsHomog.lean.excerpt.txt:414-418. Their hypotheses and exact correspondence cannot be independently certified from this packet."
+    }
+  ],
+  "findings": {
+    "fatal": [
+      "K1 \u2014 False input-free qualifier at candidate/statement-ledger.md:610. The row combines the completed theorem with masked_continuous_wave_paper under 'whole result; no supplied input'. Lean explicitly retains '(hmem : ...)' and '(hnorm : ...)' in lean-excerpts/StratonovichHAMSecondMoment/MaskedContinuousWave.lean.excerpt.txt:253-266 (embedded Lean lines 395-408). The manuscript instead uses the concrete completion: 'Lemma ... makes it continuous in H_a' and 'the averages are Bochner integrals' at manuscript/notes/integrated_covariance_foundation.tex:404-407. Fix: separate the completed input-free theorem from the abstract wrapper, and disclose hmem, hnorm and the abstract E/V/emb boundary for the latter; completion must not retroactively remove its hypotheses."
+    ],
+    "major": [
+      "K2 \u2014 Missing explicit Index categories. The 66 affected rows are candidate/statement-ledger.md:600,602-605,607-609,611,616-619,621,623-625,627,629-631,633-640,642-645,649-651,653,655-656,659-664,666-678,681-684,689,692,694,698. Descriptions such as 'auxiliary', 'definition' and 'finite Gaussian comparison only' do not use the required category words. For example, Lean defines 'nu ... := volume.withDensity (rho ...)' at lean-excerpts/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean.excerpt.txt:259-261, corresponding to 'nu_R(d eta) = rho_R(eta) d eta' at manuscript/notes/integrated_covariance_foundation.tex:83-86; its auxiliary setup is distinct from the proposition. Fix: explicitly classify every affected first cell as whole result, narrower result with its missing content, or foundation/proof steps with its precise scope, consistently with the holding section.",
+      "K3 \u2014 Unqualified whole-result cells conflict with narrower holding sections. candidate/statement-ledger.md:613-614,622,646-647,652 say 'whole result', whereas their sections at 3822,1897,8612 are narrower and do not name these as separate whole results. For example, Lean's 'def rho' and 'def nu' at lean-excerpts/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean.excerpt.txt:256-261 correctly encode the measure display at manuscript/notes/integrated_covariance_foundation.tex:83-86, but that does not make them the whole auxiliary-norm proposition, whose real-H clause is at line 99. Fix: classify these cells as proof steps specifying the fully covered displays, or explicitly separate whole-result sections and corresponding full coverage entries; do not leave the category disagreement unresolved.",
+      "K4 \u2014 Incomplete damped-norm narrowing at candidate/statement-ledger.md:620,639 and heading 1897. The heading names only the covariance-smoothing identification; row 639 excludes only the smoothing remark. Yet Lean's conclusions are only 'N2onSq ... <= N2onSq ...' and 'N1on ... <= N1on ...' at lean-excerpts/StratonovichHAMSecondMoment/DampedNormsHomog.lean.excerpt.txt:341-347,356-362. The TeX also states '0 <= N_{1,m,S}' and '0 <= N_{2,m,S}^2' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:838-839. The excerpt expressly records these lower bounds as absent from the wrapper at physical lines 406-413. Fix: state explicitly that these particular wrappers omit the general multiplier lower bounds as well as the relevant smoothing identification, classify row 620 as narrower rather than merely mentioning proof steps, and remove row 639's implication that smoothing is the only missing conclusion."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Separate the completed and abstract declarations in Index row 610 and disclose the abstract wrapper's retained hmem and hnorm inputs.",
+    "Add explicit, section-consistent categories to all 66 first cells identified in K2, naming or explicitly referencing missing content for every narrower-result cell.",
+    "Resolve the whole-result versus narrower-section disagreements in rows 613-614,622,646-647,652 without overstating the covered displays.",
+    "Correct the damped-norm heading and Index qualifications to disclose the general multiplier lower bounds absent from the listed wrappers."
+  ],
+  "limitations": [
+    "Requirement A was completed for the supplied files and required ranges. Partial-file entries outside those ranges are intentional contextual reads, not gaps in the required reading.",
+    "The frozen Lean excerpts omit six internal helper statements listed in row 602 and portions of several other signatures. Complete file reading cannot recover omitted source text; the universal mapping check therefore remains inconclusive.",
+    "No proof checking, repository-wide count audit, human verification or novelty audit was performed. No incorrect numerical constant was identified in the visible correspondence examined."
+  ]
+}

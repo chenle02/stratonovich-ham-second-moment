@@ -1,0 +1,87 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md — partial file; complete ranges: 1-496, 529-539, 692-715, 831-835, 3115-3190, 3541-3821, 5031-5275, 5362-5420, 7418-7530, 7603-7705, 7739-7817.",
+    "candidate/statement-ledger.md — complete heading inventory, heading-only reads: 37,497,900,913,925,942,954,980,1003,1012,1021,1039,1060,1100,1132,1155,1180,1198,1211,1223,1246,1263,1275,1288,1305,1321,1334,1545,1717,1897,2076,2092,2299,2409,2541,2649,2705,2823,2840,2861,2970,3094,3115,3232,3377,3435,3527,3541,3634,3690,3822,3997,4112,4281,4429,4521,4631,4740,4823,4971,5031,5199,5362,5451,5560,5580,5698,5752,5875,5980,6110,6329,6381,6470,6623,6818,6929,7055,7201,7283,7418,7603,7739,7818,7991,8099,8244,8363,8495,8612,8770,8852,8917.",
+    "candidate/statement-ledger.md — additional isolated search reads: 511,521,555,563,585,641,839-840,843-844,846,850,854,856,892,894,1113,1129-1130,1201,1207-1209,1362,1368,1391,1415,1419,1473-1477,1479,1482-1485,1502,1504-1507,1522-1523,1526-1529,1531,1536,1541-1543,2109,2113,2170,2419,2529,2553,2595,2598,3192-3193,3198-3200,3202,3209-3215,3217 (partial line),3441,4014,4019,4076,4080,4082,4121,4184,4192,4288,4302,4378,4382,4412-4414,4425-4427,4441,4451,4473,4486,4509,4748,4788,4978,5012,5841,5845,6059,6839,6869,6897,7209,7232,7568,8389,8391,8433,8447,8463,8473,8510,8552,8593-8594,8600-8605,8608,8775,8856,9006.",
+    "lean/FORMALIZATION.md — complete: 1-153.",
+    "lean/README.md — complete: 1-512.",
+    "adjudication/round3-d5667f5-split-rule.md — complete: 1-131.",
+    "prior-reports/h1-headings-lib-a-report.json — complete: 1-195.",
+    "prior-reports/h2-headings-lib-b-report.json — complete: 1-205.",
+    "prior-reports/h3-headings-lib-c-audit-report.json — complete: 1-341.",
+    "prior-reports/h4-index-cells-report.json — complete: 1-72.",
+    "prior-reports/h5-consistency-r1-diff-report.json — complete: 1-109.",
+    "excerpts/tex-excerpts.txt — complete: 1-167.",
+    "docs/coverage-scope-tex.yaml — complete: 1-142; no entries for L:low-alpha-convolution or L:phase-contractions.",
+    "lean/coverage.yaml — partial: 1-15,94-115,403,525-565,665-720,750-800,969,980-1020,1258-1300,1342-1380,1398-1412; all rows required by the five checks read completely.",
+    "lean/COMPLETION.md — partial: 12,25-61,120-125,211-215.",
+    "lean/StratonovichHAMSecondMoment/L9Completed.lean — complete: 1-186.",
+    "lean/StratonovichHAMSecondMoment/LowAlphaConvolution.lean — partial: 1-175,500-610; paper wrappers read completely.",
+    "lean/StratonovichHAMSecondMoment/PhaseContractions.lean — partial: 1-200,1035-1095; paper wrapper read completely.",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean — partial: 1-140; required range complete.",
+    "lean/StratonovichHAMSecondMoment/WaveGreenFourier.lean — partial: 700-768.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean — complete: 1-105.",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean — partial: 299-346.",
+    "lean/StratonovichHAMSecondMoment/QuotientObstruction.lean — partial: 580-610,979-1003.",
+    "lean/StratonovichHAMSecondMoment/IndexedCone.lean — partial: 985-1021.",
+    "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean — partial: 1-95,186,223,400-491.",
+    "lean/StratonovichHAMSecondMoment/TypeContinuity.lean — partial: 1-90,105,111,120,491,497,903,906,909,912,915,925-990,1080-1183.",
+    "lean/StratonovichHAMSecondMoment/TimeCompletion.lean — partial: 990-1075.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex — partial: 225-242,2048-2086,3703-3727,4691-4716,5175-5188,7500-7528,7574-7593.",
+    "manuscript/notes/integrated_covariance_foundation.tex — partial: 141-181,257-263.",
+    "manuscript/notes/integrated_raw_block_lower.tex — partial: 232-251.",
+    "manuscript/notes/integrated_radius_anchor.tex — partial: 245-310."
+  ],
+  "checks": [
+    {
+      "claim": "HEADING L9Completed",
+      "verdict": "PASS",
+      "reason": "M1 is named at candidate/statement-ledger.md:3636. L9Completed.lean:96-110 proves the low-alpha conclusions under H:homog and alpha < 1; :150-184 proves the contraction conclusions under PhaseCovariance and its H:homog specialization, without the former Fourier/Archimedes inputs. These reproduce manuscript main TeX:2072-2086,4702-4716. The remaining Green-measure identification is precisely registered M1 (WaveGreen.lean:26-34,106-111). Both coverage rows explicitly record same-assumptions/full at lean/coverage.yaml:531-560,672-717."
+    },
+    {
+      "claim": "HEADING LowAlphaConvolution",
+      "verdict": "PASS",
+      "reason": "M1 is named at candidate/statement-ledger.md:3692. LowAlphaConvolution.lean:575-608 and L9Completed.lean:96-110 contain the ball-mass identity, exact integral V h^(1-alpha)/(1-alpha), integrability, and uniform nonnegative convolution bound of manuscript main TeX:4691-4716. The Gaussian density, convolution and origin convention are constructed explicitly at LowAlphaConvolution.lean:142-163. No additional unidentified modelled object was found. Coverage is explicitly full at lean/coverage.yaml:534-535."
+    },
+    {
+      "claim": "HEADING PhaseContractions",
+      "verdict": "PASS",
+      "reason": "M1 is named at candidate/statement-ledger.md:5033. PhaseContractions.lean:123-175 models the standing covariance assumptions and printed constants; :1070-1082 and L9Completed.lean:150-164 contain both estimates and the physical/Fourier trace identity, matching manuscript main TeX:2054-2086. The completion discharges both named inputs. The sole remaining object identification is waveGreen 3 versus surface measure, covered by M1. Coverage explicitly records full at lean/coverage.yaml:675-676."
+    },
+    {
+      "claim": "REGISTER-TEXT",
+      "verdict": "FAIL",
+      "reason": "The ledger register at candidate/statement-ledger.md:62-93 accurately describes WaveGreen.lean:26-34,106-111, and its three M1 sections name the model. However, the required counterparts are incomplete: lean/README.md:106-117 merely takes Mathlib's sphere measure as surface measure, without identifying M1, disclosing the unproved identification, or stating the split rule. lean/FORMALIZATION.md:90-105 references the register and summarizes the distinction, but omits the requirement that the exceptional model be named. See K1."
+    },
+    {
+      "claim": "MISSING-CONSTRUCTIONS",
+      "verdict": "FAIL",
+      "reason": "The specified repairs are present: narrower headings at candidate/statement-ledger.md:3115,3541,5199,7739; narrower principal Index cells at :555,641,712,835; weaker coverage with matching scope mirrors at lean/coverage.yaml:756-795,984-1006,1263-1300 and docs/coverage-scope-tex.yaml:50-52,71-73,98-100. Nevertheless, the mandated whole-section search exposes further unregistered missing constructions. RadiusMeanAnchor explicitly leaves M_R and residual noises unconstructed (:5385-5413), while its wrapper takes arbitrary M (RadiusMeanAnchor.lean:458-469). TypeContinuity uses arbitrary mom rather than constructed solution moments (TypeContinuity.lean:957-976,1106-1110,1141-1145). Their whole headings and full coverage remain inconsistent with the split rule. See K2-K3."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "K1 REGISTER-TEXT — The required register counterparts are incomplete. Lean defines waveGreen 3 using 'ENNReal.ofReal (s / (4 * π))' and 'volume.toSphere.map' (lean/StratonovichHAMSecondMoment/WaveGreen.lean:106-111), explicitly saying that neither surface-measure identification is proved (:26-34). TeX uses 'sigma_h is surface measure on the sphere of radius h' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:5184-5186). lean/README.md:106-117 omits this unproved-identification boundary and the registered-choice/missing-construction split; lean/FORMALIZATION.md:90-105 omits the named-model requirement. Exact fix: add an explicit M1 description or explicit M1-register reference with the surface-measure disclaimer in README, and state in both counterparts that registered standard choices preserve whole status only with the model named, whereas missing constructions require narrower status.",
+      "K2 RadiusMeanAnchor — An additional missing construction remains classified whole. Lean takes '(M : ℕ → Ω → ℝ → E)' and moment/measurability hypotheses, then bounds expressions formed from M (lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:458-485); its module explicitly abstracts 'M_R, Y_m, W' to arbitrary paths (:17-19). TeX instead defines 'X_m(u)=g_delta M_R(Y_m)(min(u,ell_m))' for the specific residual noises (manuscript/notes/integrated_radius_anchor.tex:280-304). candidate/statement-ledger.md:5411-5413 expressly says the operator-path and residual-noise constructions are not formalized, yet :5362 and Index :537 say whole, and lean/coverage.yaml:1402-1411 says full. M1 does not cover these objects. Exact fix: classify this result as narrower for arbitrary random paths, naming the missing M_R(Y_m)/residual-noise construction and identification; update the heading, principal Index cell, coverage conclusion to weaker, scope sentence and TeX mirror, retaining the named moment inputs.",
+      "K3 TypeContinuity — The two stochastic moment results retain an unregistered abstract-object substitution. Lean quantifies '(mom : ℕ → ℝ → ℝ → ℝ)' with TypeContinuityInputs and concludes growth properties of mom (lean/StratonovichHAMSecondMoment/TypeContinuity.lean:957-976,1106-1122,1141-1160); its modelling disclosure calls the moment an 'abstract real function' (:46-49). TeX defines the rates through 'log E[u^(a)(T,x)^p]' and states the proposition and corollary for those rates (manuscript/notes/notes_stratonovich_ham_second_moment.tex:7505-7528,7574-7593). The supplied coefficient, interpolation and asymptotic facts do not construct the solution moments or formalize their identification with mom. Nevertheless candidate/statement-ledger.md:7603,7634-7638 and Index :696-697 classify them whole, with full coverage at lean/coverage.yaml:99-100,1346-1347. Exact fix: classify these two results as narrower for abstract moment functions, naming the missing solution-moment construction/identification; update their Index and coverage entries with weaker conclusions and matching scope mirrors. Retain the independent whole classification of L:positive-series-type."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Complete the README and FORMALIZATION register counterparts as specified in K1.",
+    "Reclassify P:radius-mean-anchor consistently as the narrower arbitrary-path result, with the missing physical construction disclosed in its heading, Index, coverage scope and TeX mirror.",
+    "Reclassify P:moment-growth-logconvex and C:static-moment-constant-continuity consistently as narrower abstract-moment results, preserving L:positive-series-type as whole.",
+    "Synchronize the affected Scope, README, FORMALIZATION, COMPLETION and coverage summaries and module/result counts after those reclassifications."
+  ],
+  "limitations": [
+    "Requirement A was completed; partial-file coverage outside its required selections is identified above. Other whole-result sections were searched for the stipulated phrases, not exhaustively re-reviewed declaration by declaration.",
+    "The observed heading tally is 26 whole, 30 narrower and 34 foundation/proof-step sections. Aggregate theorem/definition inventory counts were not independently recertified.",
+    "Proof correctness, compilation and kernel replay were outside scope. No build was run.",
+    "PROVENANCE byte bindings, repository history and the complete documentation diff were not independently authenticated.",
+    "This is an AI correspondence review, not human verification or a novelty audit."
+  ]
+}

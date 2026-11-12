@@ -1,0 +1,70 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-832 complete.",
+    "adjudication/round3-d5667f5-split-rule.md:1-131 complete.",
+    "candidate/statement-ledger.md:1-110,497-520,699-797,1717-1745,3232-3255,5875-5898,6381-6400,7739-7756; additionally all heading lines 37,497,900,913,925,942,954,980,1003,1012,1021,1039,1060,1100,1132,1155,1180,1198,1211,1223,1246,1263,1275,1288,1305,1321,1334,1545,1717,1897,2076,2092,2299,2409,2541,2649,2705,2823,2840,2861,2970,3094,3115,3232,3377,3435,3527,3541,3634,3690,3822,3997,4112,4281,4429,4521,4631,4740,4823,4971,5031,5199,5362,5451,5560,5580,5698,5752,5875,5980,6110,6329,6381,6470,6623,6818,6929,7055,7201,7283,7418,7603,7739,7818,7991,8099,8244,8363,8495,8612,8770,8852,8917. Partial file; required Scope, 99 rows and heading list complete.",
+    "lean/FORMALIZATION.md:1-153 complete.",
+    "lean/coverage.yaml:1-100,116-129,234-286,517-529,718-735,822-842,924-972,983-1047,1062-1077,1175-1212,1290-1548,1598-1649,1730-1766. Partial file; all existing coverage rows relevant to the reviewed Index labels complete.",
+    "excerpts/tex-excerpts.txt:1-708 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/DampedMultiplier.lean.excerpt.txt:1-433 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/H1Density.lean.excerpt.txt:1-315 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/IntervalScalar.lean.excerpt.txt:1-605 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean.excerpt.txt:1-176 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/InventoryProduct.lean.excerpt.txt:1-288 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean.excerpt.txt:1-429 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean.excerpt.txt:1-402 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/RemoveMask.lean.excerpt.txt:1-292 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpaceTimePositivity.lean.excerpt.txt:1-592 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialBracket.lean.excerpt.txt:1-324 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialFourLinear.lean.excerpt.txt:1-974 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean.excerpt.txt:1-362 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpectralMassIdentity.lean.excerpt.txt:1-187 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/UniformSeriesTail.lean.excerpt.txt:1-223 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/WhiteClockLaplace.lean.excerpt.txt:1-286 complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/WhiteRelativeWidth.lean.excerpt.txt:1-177 complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:225-242,526-532,775-919,2685-2796,2803-2824,2986-3094,3402-3581,3600-3748,7640-7696 partial.",
+    "manuscript/notes/integrated_white_evaluation.tex:1-170 complete.",
+    "manuscript/notes/integrated_temporal_equilibrium.tex:1-95 complete.",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-449 complete.",
+    "manuscript/notes/integrated_occupation_ceiling.tex:1-308 complete.",
+    "manuscript/notes/integrated_intrinsic_constant.tex:1-115 partial.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-30,168-221,270-343 partial."
+  ],
+  "checks": [
+    {
+      "claim": "INDEX-CELLS lines 699-797",
+      "verdict": "FAIL",
+      "reason": "57 first cells lack the required category words; others disagree with their section category. Row 764 also applies 'nothing supplied' to declarations explicitly taking GreenMass or GreenFourier inputs. Rows 730-731 describe R_0-specialized bounds although the listed theorems have an arbitrary supplied bound constant R. See K1-K4. The split rule itself supports keeping row 712 narrower: its abstract terminal-chain identification is not registered model choice M1 (Scope:80-93; coverage.yaml:983-1006)."
+    },
+    {
+      "claim": "INDEX-MAPPING lines 699-797",
+      "verdict": "PASS",
+      "reason": "The manuscript labels identify the corresponding definitions, conclusions or proof steps, with the disclosed specializations and substitutions. Checked against the authoritative manuscript, including main TeX:2685-2796,2986-3094,3402-3581,3703-3748,7640-7696; integrated_spatial_occupation.tex:219-348,381-442; integrated_occupation_ceiling.tex:23-300; and integrated_unmasked_variational.tex:168-221. No incorrect label assignment or unjustified 'no direct label' assignment was established. The failures concern categorization and scope qualifiers, not replacement manuscript labels."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "K1 — Missing Index categories. candidate/statement-ledger.md:700-797 contains 57 cells without 'whole result', 'narrower result', 'foundation' or 'proof steps': 700-702,706-707,709-711,713-716,718,720-723,725-727,732-736,741-744,748-750,752,754-759,762-769,773,776,787,790-794,796-797. For example, row 714 is only 'E:uniform-series-tail'. Lean's term_bound explicitly takes 'hsum : Summable ...' and 'hpos : ∀ m n, 0 ≤ inner ...' (lean-excerpts/StratonovichHAMSecondMoment/UniformSeriesTail.lean.excerpt.txt:77-81), whereas TeX states the terminal-family estimates '≤ B_r^{1/2}r^{-n}' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:3718-3723). Fix every listed cell by adding its applicable category or explicit categorized-section reference, preserving the supplied-input and missing-identification qualifications; '(proof)' and 'completion' alone do not satisfy Scope:62-79.",
+      "K2 — Category disagreement with the containing section. Row 788 says 'whole result', but SpatialBracket is headed 'narrower result' at candidate/statement-ledger.md:5875. The listed Lean facts are the scalar 'Fb alpha b 0 = 0' and 'Fb alpha 0 z = F0 alpha z' (lean-excerpts/StratonovichHAMSecondMoment/SpatialBracket.lean.excerpt.txt:143,153), corresponding to TeX's 'define F_b(0) = 0' and 'At b = 0 this is exactly the map' (manuscript/notes/integrated_occupation_ceiling.tex:195-203). Likewise, rows 771,772,774 use 'narrower result' inside the foundation section at ledger:5752; their integral-form identities do not construct the Hilbert-space objects in TeX's '||rho_g||² = A(g)' or '||Psi||² = v_Psi' (integrated_occupation_ceiling.tex:33-37; integrated_intrinsic_constant.tex:33-35). Fix row 788 by explicitly referring to SpatialBracket's narrower-result category while retaining that the scalar map is complete. Reword rows 771,772,774 as foundation/proof-step cells, retaining their integral-form restrictions rather than presenting them as labelled results.",
+      "K3 — 'Nothing supplied' is false for all declarations bundled in row 764. candidate/statement-ledger.md:764 includes damped_homogeneous_norms_full_paper and damped_homogeneous_norms_fourier_paper under that qualifier. Their Lean types explicitly contain '(hG : GreenMass G)' and '(hF : GreenFourier G)' (lean-excerpts/StratonovichHAMSecondMoment/DampedMultiplier.lean.excerpt.txt:375-376,389-390). These are the mass and Fourier identities used in TeX: 'G_s(R^d) = s' and 'Ghat_s(xi) = sin(s|xi|)/|xi|' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:881,777-778). Row 780 similarly calls pair_unit_le 'nothing supplied', although it takes the smooth homogeneous-bound hypothesis 'hR : ∀ g, IsUnitTest g → spatialEnergy Γ g ≤ R * gradEnergy g ^ (alpha / 2)' (OccupationCeilingFinite.lean.excerpt.txt:224-229), corresponding to an inequality used in integrated_occupation_ceiling.tex:117-118. Fix by separating conditional general helpers from discharged wrappers, or explicitly restricting 'nothing supplied' to the latter and naming the retained hypotheses for the former.",
+      "K4 — Incorrect constant specialization in rows 730-731. The cells say 'with R_0 for R_sp' and 'spEnergyVal alpha R_0', but occupation_physical_bound, Jlin_le and occupation_own_energy quantify an arbitrary R and take 'SquarePairingBounds Γ alpha R'; their conclusions contain 'Rstar a D * R' and 'spEnergyVal alpha R' (lean-excerpts/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean.excerpt.txt:295-306,357-363; original Lean:378-382 for Jlin_le). TeX uses 'R_star R_sp' and 'R_star^{2/(2-alpha)} E_sp' (manuscript/notes/integrated_spatial_occupation.tex:395-402). Fix rows 730-731 to describe the general supplied constant R, explain that the paper wrapper specializes R = R_0, and retain the modelled-class qualification and subsequent R_sp/E_sp identification."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Supply valid category wording or explicit categorized-section references for all 57 cells identified in K1.",
+    "Resolve the section-category disagreements identified in K2 without upgrading narrower or foundation modules.",
+    "Restrict the 'nothing supplied' qualifiers in rows 764 and 780 to declarations that actually discharge the relevant inputs; disclose the conditional helpers separately.",
+    "Correct rows 730-731 to distinguish their arbitrary supplied constant R from the R_0 specialization and subsequent manuscript-constant identifications."
+  ],
+  "limitations": [
+    "Requirement A was completed. Files marked partial were read only in the exact ranges listed; unrelated ledger bodies, coverage rows and manuscript passages were not reviewed.",
+    "The supplied Lean excerpts omit material by construction. No compilation or proof-correctness audit was performed; the review concerns documentation correspondence.",
+    "Package-wide counts, documentation outside the two requested checks, and provenance hashes were not independently audited.",
+    "This AI review is neither human verification nor a novelty audit."
+  ]
+}

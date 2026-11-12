@@ -1,0 +1,184 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "adjudication/round8-06ee849.md:1-89 \u2014 complete",
+    "diffs/docs-06ee849-6d108c0.diff:1-355 \u2014 complete",
+    "excerpts/tex-excerpts.txt:1-1868 \u2014 complete",
+    "candidate/statement-ledger.md:1-105,1350-1470,2260-2340,2930-3020,3100-3183,3698-3738,3766-3803,4274-4302,4490-4533,4724-4777,5205-5253 \u2014 partial; all 28 required rows read completely",
+    "lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean:1-113,245-325,1037,1041,1285-1287 \u2014 partial; required statements complete",
+    "lean/StratonovichHAMSecondMoment/FockForm.lean:16,24,88-150,200-257,330-400 \u2014 partial; required statements complete",
+    "lean/StratonovichHAMSecondMoment/IndexedCone.lean:73-130,215-290,724 \u2014 partial; required structure complete",
+    "lean/StratonovichHAMSecondMoment/IntervalScalar.lean:142-228,340-365,419,562-603,698-722,1150-1205 \u2014 partial; required statements complete",
+    "lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:110-149,203,376,378,488,490,657-663,770-817,840-875,881-954 \u2014 partial; required statements complete",
+    "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean:265-303 \u2014 partial; required statement complete",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean:90-103,429-445,527-570,671 \u2014 partial; required statements complete",
+    "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean:95-175,369-396,521-563,736-773 \u2014 partial; required statements complete",
+    "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:68,162,164,269-303,318,320,425,427 \u2014 partial; required statement complete",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:2050-2068,2164-2177,2288-2527,2685-2982,3053-3094,3402-3581 \u2014 partial; required labelled statements and relevant proofs complete",
+    "manuscript/notes/integrated_covariance_foundation.tex:1-137,295-376 \u2014 partial; required labelled statements and proofs complete",
+    "manuscript/notes/integrated_raw_block_lower.tex:232-334 \u2014 partial; required labelled statement and proof complete",
+    "manuscript/notes/integrated_radius_anchor.tex:280-330 \u2014 partial; required labelled statement and proof complete",
+    "manuscript/notes/integrated_intrinsic_constant.tex:1-110 \u2014 partial; required labelled statement and proof complete",
+    "manuscript/notes/integrated_occupation_ceiling.tex:1-42,92-147 \u2014 partial; required definitions and labelled statement and proof complete",
+    "manuscript/notes/integrated_spatial_occupation.tex:373-442 \u2014 partial; required labelled statements and proof complete"
+  ],
+  "checks": [
+    {
+      "claim": "ROW line 1458",
+      "verdict": "FAIL",
+      "reason": "The appended hJ and hJm are correct, and the original text is unchanged (diffs/docs-06ee849-6d108c0.diff:39-41). However, the norm-convergence interpretation omits completeness: lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean:251-256 assumes only a normed real space and concludes IntegrableOn plus an integral inequality. The TeX's operator-norm convergence is in a Hilbert-space setting (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2289-2290,2338). See P1."
+    },
+    {
+      "claim": "ROW line 1459",
+      "verdict": "PASS",
+      "reason": "hJm, hJ and hQ have precisely the disclosed measurability, domination and representation meanings in lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean:275-281. The conditional 1/6 bound matches manuscript/notes/notes_stratonovich_ham_second_moment.tex:2355-2360,2935-2939; the diff changes only disclosure."
+    },
+    {
+      "claim": "ROW line 1461",
+      "verdict": "PASS",
+      "reason": "hQ is the stated 1/6 premise; the ring assumptions and conclusions 7/6, invertibility and 6/5 match lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean:310-312 and manuscript/notes/notes_stratonovich_ham_second_moment.tex:2939-2940. The appendix is the only substantive addition."
+    },
+    {
+      "claim": "ROW line 2333",
+      "verdict": "PASS",
+      "reason": "FockColumn is the supplied proposition, bound as hc, in lean/StratonovichHAMSecondMoment/FockForm.lean:134-136. Nonnegative c, symmetry and idempotence are disclosed. Compression preserves the same bound, matching manuscript/notes/notes_stratonovich_ham_second_moment.tex:2511-2513."
+    },
+    {
+      "claim": "ROW line 2336",
+      "verdict": "PASS",
+      "reason": "The signature explicitly takes hcol : FockColumn and the disclosed operator and covariance assumptions (lean/StratonovichHAMSecondMoment/FockForm.lean:206-229). The finite-coordinate/coefficient-model limitations distinguish it correctly from manuscript/notes/notes_stratonovich_ham_second_moment.tex:2472-2527."
+    },
+    {
+      "claim": "ROW line 2338",
+      "verdict": "PASS",
+      "reason": "FockColumn occurs as hcol in lean/StratonovichHAMSecondMoment/FockForm.lean:335-362. The column estimate is supplied, while the subsequent compression, vacuum and truncated-field conclusions are proved. This matches the disclosed narrowing relative to manuscript/notes/notes_stratonovich_ham_second_moment.tex:2828-2897."
+    },
+    {
+      "claim": "ROW line 3016",
+      "verdict": "PASS",
+      "reason": "ConeConstants explicitly depends on G : GroundFamily F (lean/StratonovichHAMSecondMoment/IndexedCone.lean:238-286). Its relaxed signs, margins and inequalities agree with the row and section explanation, correctly distinguished from the choices in manuscript/notes/integrated_raw_block_lower.tex:254-281."
+    },
+    {
+      "claim": "ROW line 3143",
+      "verdict": "PASS",
+      "reason": "hY is exactly the universally quantified order bound in lean/StratonovichHAMSecondMoment/IntervalScalar.lean:146-150; all sign and index premises are disclosed. The factorial step corresponds to manuscript/notes/notes_stratonovich_ham_second_moment.tex:2753-2761."
+    },
+    {
+      "claim": "ROW line 3144",
+      "verdict": "PASS",
+      "reason": "hodd is precisely odd-total-degree vanishing in lean/StratonovichHAMSecondMoment/IntervalScalar.lean:171-174. The row correctly describes a finite regrouping auxiliary, not the TeX's infinite-series argument (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2752-2754)."
+    },
+    {
+      "claim": "ROW line 3145",
+      "verdict": "PASS",
+      "reason": "hY, hY0, hfirst and hodd all exist with the disclosed meanings; the remaining numerical and completeness premises are stated (lean/StratonovichHAMSecondMoment/IntervalScalar.lean:202-211). The general assembly accurately abstracts manuscript/notes/notes_stratonovich_ham_second_moment.tex:2733-2770."
+    },
+    {
+      "claim": "ROW line 3150",
+      "verdict": "PASS",
+      "reason": "hborn and hmean are the stated first-order and mean-cross-term bounds in lean/StratonovichHAMSecondMoment/IntervalScalar.lean:346-352. Their factors agree with manuscript/notes/notes_stratonovich_ham_second_moment.tex:2168-2174,2737-2742; the resulting constants are unchanged."
+    },
+    {
+      "claim": "ROW line 3156",
+      "verdict": "PASS",
+      "reason": "hstep is exactly the recurrence for j < K in lean/StratonovichHAMSecondMoment/IntervalScalar.lean:566-568. Nonnegativity premises and the finite exponential conclusion are disclosed, matching the iteration at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2792-2794."
+    },
+    {
+      "claim": "ROW line 3157",
+      "verdict": "PASS",
+      "reason": "h0 is 0 < alpha; alpha < 2 is also stated in the row and signature (lean/StratonovichHAMSecondMoment/IntervalScalar.lean:588-590). The toReal ball mass and normalization match manuscript/notes/notes_stratonovich_ham_second_moment.tex:2061,2820."
+    },
+    {
+      "claim": "ROW line 3166",
+      "verdict": "PASS",
+      "reason": "The definition agrees exactly with manuscript/notes/notes_stratonovich_ham_second_moment.tex:3075 (lean/StratonovichHAMSecondMoment/IntervalScalar.lean:714). The added limitation correctly separates this definition from the supplied fixed-split estimate hfixed at lean/StratonovichHAMSecondMoment/IntervalScalar.lean:1170-1173."
+    },
+    {
+      "claim": "ROW line 3181",
+      "verdict": "PASS",
+      "reason": "InventoryProduct is explicitly supplied as hinv; hsplits and hfixed and all numerical premises match lean/StratonovichHAMSecondMoment/IntervalScalar.lean:1157-1175. The positive-noise restriction and unformalized zero/sign reductions correctly distinguish manuscript/notes/notes_stratonovich_ham_second_moment.tex:3402-3423."
+    },
+    {
+      "claim": "ROW line 3797",
+      "verdict": "PASS",
+      "reason": "The complex Banach-space lower-integral statement is accurately described by lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:659-660,774-776. The added real-complexification limitation corresponds exactly to the separate sentence at manuscript/notes/integrated_covariance_foundation.tex:99."
+    },
+    {
+      "claim": "ROW line 3798",
+      "verdict": "PASS",
+      "reason": "Completeness is expressly omitted for this declaration, matching the row's complex normed-space formulation (lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:798-804). Temperedness, s-finiteness and R != 0 are disclosed. The real-H clause remains separate in manuscript/notes/integrated_covariance_foundation.tex:99,134-135."
+    },
+    {
+      "claim": "ROW line 3800",
+      "verdict": "PASS",
+      "reason": "All integrability, lower-integral finiteness and Bochner inequality conclusions match lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:847-855, with inherited complex Banach assumptions at 659-660. The added limitation correctly excludes manuscript/notes/integrated_covariance_foundation.tex:99."
+    },
+    {
+      "claim": "ROW line 3802",
+      "verdict": "PASS",
+      "reason": "The wrapper's homogeneous covariance, nonzero mask and separable complex Hilbert assumptions and conclusions match lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:932-950. The added exclusion correctly identifies the missing real-H sentence of manuscript/notes/integrated_covariance_foundation.tex:88-100."
+    },
+    {
+      "claim": "ROW line 4299",
+      "verdict": "PASS",
+      "reason": "hmem and hmod are exactly the mode-membership and modulation inputs; the conclusion includes division by two (lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean:278-286). This matches the proof's explicit half-factor at manuscript/notes/integrated_covariance_foundation.tex:363-375."
+    },
+    {
+      "claim": "ROW line 4513",
+      "verdict": "PASS",
+      "reason": "K0 is exactly 2^a/(1-a), with no supplied premise (lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean:99). The added limitation correctly distinguishes this scalar definition from the map and covariance-norm identity in manuscript/notes/integrated_intrinsic_constant.tex:24-30."
+    },
+    {
+      "claim": "ROW line 4525",
+      "verdict": "PASS",
+      "reason": "The iterated physical integral matches lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean:439-441. Its integrability qualification and added exclusion prevent identification with the constructed J_G norm identity of manuscript/notes/integrated_intrinsic_constant.tex:24-30."
+    },
+    {
+      "claim": "ROW line 4530",
+      "verdict": "PASS",
+      "reason": "hR is precisely the supplied unit-test energy inequality (lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean:531-536). The other assumptions and quarter powers are disclosed and correspond to manuscript/notes/integrated_occupation_ceiling.tex:117-118."
+    },
+    {
+      "claim": "ROW line 4531",
+      "verdict": "PASS",
+      "reason": "hR has the same disclosed unit-test meaning; the finite-field assumptions and bound match lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean:548-555. The row correctly states an analogue of manuscript/notes/integrated_occupation_ceiling.tex:117-122, without adding compact support of the time weights."
+    },
+    {
+      "claim": "ROW line 4765",
+      "verdict": "PASS",
+      "reason": "hR means R >= 0, separately from hB : SquarePairingBounds, and both are disclosed (lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean:378-382). The extended-integral formulation correctly abstracts manuscript/notes/integrated_spatial_occupation.tex:394-397."
+    },
+    {
+      "claim": "ROW line 4770",
+      "verdict": "PASS",
+      "reason": "hR is the disclosed nonnegativity assumption; hB, local finiteness and IsOccField are also stated. Every listed conclusion matches lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean:530-541 and the integral bound in manuscript/notes/integrated_spatial_occupation.tex:388-397."
+    },
+    {
+      "claim": "ROW line 4775",
+      "verdict": "PASS",
+      "reason": "hR is R >= 0; scaling, nonzero covariance and SquarePairingBounds are separate disclosed inputs (lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean:743-749). The nonempty bounded supremum and comparison constant correctly reflect manuscript/notes/integrated_spatial_occupation.tex:398-403,431-439 for the modelled class."
+    },
+    {
+      "claim": "ROW line 5250",
+      "verdict": "PASS",
+      "reason": "hmom is precisely the finite-family pth-moment bound; probability normalization, signs and integrability inputs are all disclosed (lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:276-283). The constant and finite-sum interpretation match manuscript/notes/integrated_radius_anchor.tex:311-320."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "P1 \u2014 ROW line 1458 overextends norm convergence to incomplete spaces. The row says 'For a real normed space E' and calls its conclusion 'norm convergence'. Lean instead assumes '[NormedAddCommGroup E] [NormedSpace \u211d E]' and concludes 'IntegrableOn J (Ioi 0) \u2227 ...' without completeness or a convergence conclusion (lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean:251-256). The TeX assumes 'a complex Hilbert space' and states 'The integrals converge in operator norm' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2289,2338). Absolute norm integrability does not ensure an E-valued integral in an incomplete space: in c00 with the \u21131 norm, let J equal e_n on successive subintervals of (1,2) of lengths 2^(-n), and zero elsewhere. It satisfies the row's domination with a=0, lambda=1, c=8, but its integral in the completion is the infinitely supported vector (2^(-n)), outside E. Exact fix: qualify the norm-convergence interpretation by completeness of E, and explicitly distinguish the unrestricted Lean IntegrableOn-plus-inequality statement from that Banach-space interpretation."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Amend candidate/statement-ledger.md:1458 to restrict the norm-convergence interpretation to complete E and disclose that the unrestricted Lean declaration itself states IntegrableOn and an integral norm inequality, not convergence in an arbitrary incomplete E."
+  ],
+  "limitations": [
+    "All reading required for the 28 checks was completed. Unlisted ranges of files marked partial were not reviewed; the verdict does not cover the remaining ledger rows or declarations.",
+    "Lean compilation, proof correctness, packet-wide byte binding and the mechanical checker totals were not independently audited.",
+    "This is an AI documentation-correspondence review, not human verification or a novelty audit."
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-46 partial.",
+    "prior-reports/r1-findings-renames-report.json:1-115 complete.",
+    "prior-reports/r2-whole-result-headings-report.json:1-394 complete; truncated portions reread.",
+    "adjudication/confirmation-round-338cdba.md:1-27 complete.",
+    "adjudication/re-confirmation-round-ba6c565.md:1-132 complete.",
+    "diffs/docs-ba6c565-d5667f5.diff:1-1022 complete; truncated portions reread.",
+    "excerpts/tex-excerpts.txt:1-25 complete.",
+    "candidate/statement-ledger.md:37-472,503-523,585-607,631-637,653-659,692-726,741-775,786-800,829-844,871-1307,1516-1542,1590-1618,1688-1725,1868-1898,2270-2325,2380-2410,2436-2442,2620-2645,2676-2700,2832-2857,2941-2966,3203-3228,3348-3378,3512-3552,3789-3818,4488-4525,4598-4633,4790-4820,5416-5442,5525-5578,5663-5685,5717-5745,5840-5868,6075-6108,6294-6326,6346-6377,6435-6468,6588-6624,6865-6888,7020-7055,7248-7292,7783-7828,7956-7984,8064-8099,8209-8240,8328-8367,8460-8500,8577-8615 partial file; Scope and every changed hunk in committed context complete.",
+    "candidate/statement-ledger.md: additional heading-only lines 473,1308,2050,2066,2515,2797,2814,3068,3089,3409,3501,3608,3662,3967,4082,4251,4399,4710,4941,5001,5167,5330,5948,6786,6897,7169,7386,7571,7707,8738,8820,8885; together with the preceding ranges, complete inventory of all ## headings.",
+    "candidate/statement-ledger.md: additional search-match lines 854,3605,4339,4668,4670,5112,6039,6429,6553,6644,6923,7303,7383 partial.",
+    "lean/FORMALIZATION.md:70-149 partial; required classification passage complete.",
+    "lean/README.md:1-210,258-280,325-342,360-370,432-448 partial; required count sentences complete.",
+    "lean/COMPLETION.md:1-281 complete; truncated passage reread.",
+    "lean/coverage.yaml:1-1764 complete, in consecutive ranges; every class/conclusion field additionally extracted and tallied.",
+    "lean/claims.yaml:1-55 textual reading;1-17380 programmatically scanned for declaration identifiers, kinds and module files for the recount; partial semantic review.",
+    "lean/StratonovichHAMSecondMoment/RemoveMask.lean:548-606,625-748 partial.",
+    "lean/StratonovichHAMSecondMoment/DampedMultiplier.lean:460-527 partial.",
+    "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean:669-709 partial.",
+    "lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:932-950 partial.",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingExact.lean:748-785 partial.",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean:938-1033 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialBracket.lean:481-495 partial.",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean:128-168,262-280,312-345 partial.",
+    "lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean:1073-1108 partial.",
+    "lean/StratonovichHAMSecondMoment/VariationalMean.lean:679-725 partial.",
+    "lean/StratonovichHAMSecondMoment/VariationalRate.lean:739-823 partial.",
+    "lean/StratonovichHAMSecondMoment/RayleighTail.lean:178-190 partial.",
+    "lean/StratonovichHAMSecondMoment/FiniteWick.lean:690-721 partial.",
+    "lean/StratonovichHAMSecondMoment/GaussianHermite.lean:243-261,450-481 partial.",
+    "lean/StratonovichHAMSecondMoment/HermiteFock.lean:597-641 partial.",
+    "lean/StratonovichHAMSecondMoment/H1Density.lean:575-589 partial.",
+    "lean/StratonovichHAMSecondMoment/SeriesType.lean:89-100 partial.",
+    "lean/StratonovichHAMSecondMoment/VariationalFloor.lean:466-482 partial.",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean:400-405 partial.",
+    "lean/StratonovichHAMSecondMoment/WaveGreenFourier.lean:721-727 partial.",
+    "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean:133-169,782-803 partial.",
+    "lean/StratonovichHAMSecondMoment/RawOccupationEnergy.lean:703-739 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean:68-124 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean:217-245,302-319,323-374 partial.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:50-92,412-420,438-458 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:693-770 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:1098-1155 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean:1444-1457,1580-1614,1720-1738 partial.",
+    "lean/StratonovichHAMAudit/HermiteWordFock.lean:1-53 complete.",
+    "lean/StratonovichHAMSecondMoment/L9Completed.lean:96-110,150-183 partial.",
+    "lean/StratonovichHAMSecondMoment/FockForm.lean:206-244,335-372 partial.",
+    "lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean:1307-1405 partial.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean:114-193 partial.",
+    "lean/StratonovichHAMSecondMoment/GaussianComparison.lean:183-205 partial.",
+    "lean/StratonovichHAMSecondMoment/TerminalWick.lean:618-642 partial.",
+    "lean/StratonovichHAMSecondMoment/SymplecticFree.lean:729-762 partial.",
+    "lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean:903-973 partial.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:803-848,2054-2086,2288-2310,2472-2553,2828-2848,2899-2917,3402-3414,3600-3645,7222-7234 partial.",
+    "manuscript/notes/integrated_covariance_foundation.tex:88-100,188-206 partial.",
+    "manuscript/notes/integrated_unmasked_variational.tex:64-111,168-221,225-238,270-284 partial.",
+    "manuscript/notes/integrated_raw_block_lower.tex:535-552 partial.",
+    "manuscript/notes/integrated_occupation_ceiling.tex:22-42,92-112,149-157,195-220,252-266 partial.",
+    "manuscript/notes/integrated_intrinsic_constant.tex:22-39 partial.",
+    "manuscript/notes/integrated_gaussian_tubes.tex:458-468 partial.",
+    "manuscript/notes/integrated_spatial_occupation.tex:40-54,166-176,219-237,262-268,300-325,381-414 partial.",
+    "manuscript/notes/integrated_wave_variance.tex:368-383 partial.",
+    "manuscript/notes/integrated_symplectic_phase.tex:30-60 partial."
+  ],
+  "checks": [
+    {
+      "claim": "R1-REMOVEMASK-ROW",
+      "verdict": "PASS",
+      "reason": "The Index row at candidate/statement-ledger.md:772 now says 'part of a result' and explicitly discloses Rayleigh-form rates, RawBlockOriginalLower and the real-function substitution. This agrees with the narrower heading at:5548, coverage.yaml:1615-1636, and RemoveMask.lean:582-585,648-682,702-739. The latter assumes L : ℝ → ℝ and hRB, whereas the authoritative TeX states compact ground rates and the original canonical solution's moment at integrated_unmasked_variational.tex:168-179. Neither missing identification is now presented as proved."
+    },
+    {
+      "claim": "R2-REPORT-FINDINGS",
+      "verdict": "PASS",
+      "reason": "R1-R7 are resolved by the narrower/foundation headings: ledger:1691,1871,3792,4491,4601,3515,5720,8067,8212,5528,2273,2679,2835,2944,5666,7959,8331,8463. Direct comparisons confirm the omissions: DampedMultiplier.lean:486 versus main TeX:845-846; MaskedAuxiliaryNorm.lean:934 versus covariance-foundation TeX:99; OccupationCeilingExact.lean:748-757 versus occupation-ceiling TeX:217; SpaceTimePositivity.lean:1103-1108 versus intrinsic-constant TeX:24-35; VariationalMean.lean:679-711 versus unmasked-variational TeX:66-67; VariationalRate.lean:739-823 versus that TeX:100-107,279; RayleighTail.lean:178-185 versus gaussian-tubes TeX:466-467. R8's strict separation is explicit at ledger:62-91 and FORMALIZATION.md:78-115. All eight formerly inconclusive modules now have category-B headings. This is justified by the unbridged occupation-class representation (OccupationPhysicalClass.lean:144-158 versus spatial-occupation TeX:381-414), sequential continuity (SpatialFourLinear.lean:1604-1611), or rate/cost identification boundaries; completing named inputs does not remove these boundaries."
+    },
+    {
+      "claim": "CLASSIFICATION-CONSISTENCY",
+      "verdict": "PASS",
+      "reason": "Independent recounts reproduce 26 whole numbered results without supplied inputs, 5 whole with inputs, 17 narrower, 25 steps/parts, 3 outside and 144 not formalized: 220 total (COMPLETION.md:35-56,62-281). Coverage has 30 same-assumptions/full rows, including the four displayed-equation/remark rows, 17 same-assumptions/weaker, 5 inputs-supplied/full, 25 inputs-supplied/weaker and 3 outside. Eleven legacy full rows omit an explicit conclusion field; their full interpretation agrees with COMPLETION's classifications. Heading counts are 29 whole, 27 narrower and 34 foundation/proof-step sections. Adding the three whole modules and seven foundations without separate headings (FORMALIZATION.md:111-115), and separating HermiteWordFock and the 23 audit sections, gives 28 whole library modules without supplied inputs, 4 whole with inputs, 26 narrower and 18 foundations. Recounting claims by those module assignments gives 624 + 106 + 772 + 466 + 82 = 2050 theorems and 152 + 28 + 154 + 78 + 6 = 418 inventoried definitions. These agree with FORMALIZATION.md:80-84, README.md:25-39,266-268 and ledger:44-91. Main-row full/weaker classifications agree; secondary weaker rows in whole modules and full components in narrower modules do not alter their main classification. No count or list disagreement found."
+    },
+    {
+      "claim": "NO-NEW-OVERCLAIM",
+      "verdict": "PASS",
+      "reason": "All 77 diff hunks and their committed contexts were read. The changes separate full conclusions, narrower conclusions and foundations without changing theorem statements or coverage classes. The revised coverage summary (coverage.yaml:10-13) correctly counts 30 full rows rather than the 26 numbered results alone. The renamed Index cells retain their substitutions and supplied inputs, including ledger:634,704-707,744-760,772,832-841. The renamed headings agree with the inspected Lean wrappers and authoritative TeX statements. COMPLETION.md has no hunk in the supplied diff; its unchanged inventory agrees with the recount. No new incorrect constant, failed implication or dropped limitation was identified."
+    },
+    {
+      "claim": "L8-REPAIRS-KEPT",
+      "verdict": "PASS",
+      "reason": "No diff hunk removes or weakens the specified repairs. The covariance-smoothing limitation remains at ledger:218-230,1693-1714; totalized division outside the alpha-positive domain remains at:6868-6882; TerminalWick's added hK restriction remains at:342-349,7278-7289 and matches TerminalWick.lean:626 rather than an assumption of main TeX:3600-3604. FiniteWick's monomial-only integrability qualification and continuous-F exception remain at ledger:2300-2321; the Scope integrability warning remains at:375-385. The one-mode and finite-word restrictions remain at:1034-1072 and match HermiteWordFock.lean:43-48 versus main TeX:2532-2552. Phase contractions remain three-dimensional (COMPLETION.md:29; L9Completed.lean:150-183; main TeX:2054-2086). Refutation-domain distinctions remain at ledger:1596-1611 and README.md:275-279."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Requirement A is complete; truncated outputs were reread. Partial-file coverage outside those required selections is explicitly identified above.",
+    "This is a narrow documentation-correspondence review, not a fresh certification of every unchanged ledger declaration. The claims inventory was parsed for counting, not reviewed semantically in full.",
+    "Proof correctness, compilation and kernel replay were outside scope; no build was run.",
+    "Provenance metadata was inspected only at lines 1-46. File hashes and repository history were not independently authenticated.",
+    "This AI review is not human verification or a novelty audit."
+  ]
+}

@@ -1,0 +1,205 @@
+{
+ "g1-wave-green-fourier-low-alpha": {
+  "rows": 64,
+  "checks": 75,
+  "deps": [
+   "DampedMultiplier",
+   "DampedNorms",
+   "DampedNormsHomog",
+   "HomogHypothesis",
+   "MaskedSpectralGrowth",
+   "SpectralHomog",
+   "TimeFractional",
+   "WaveGreen",
+   "WaveKernel"
+  ],
+  "refutations": 9,
+  "audits": 2,
+  "cov": [
+   "L:damped-homogeneous-norms",
+   "L:low-alpha-convolution",
+   "L:phase-contractions"
+  ],
+  "changed_rows": [
+   "L:damped-homogeneous-norms"
+  ],
+  "changed_secs": [
+   "DampedMultiplier (whole result)",
+   "WaveGreen (whole result)"
+  ],
+  "labels_found": 12,
+  "labels_missing": [],
+  "excerpt_lines": 473
+ },
+ "g2-phase-contractions-l9completed": {
+  "rows": 53,
+  "checks": 63,
+  "deps": [
+   "HomogHypothesis",
+   "LowAlphaConvolution",
+   "MaskedSpectralGrowth",
+   "SpectralHomog",
+   "SpectralMassIdentity",
+   "WaveGreen",
+   "WaveGreenFourier",
+   "WaveKernel"
+  ],
+  "refutations": 3,
+  "audits": 2,
+  "cov": [
+   "L:low-alpha-convolution",
+   "L:phase-contractions"
+  ],
+  "changed_rows": [],
+  "changed_secs": [],
+  "labels_found": 32,
+  "labels_missing": [],
+  "excerpt_lines": 1559
+ },
+ "g3-raw-energy-ceiling-exact": {
+  "rows": 46,
+  "checks": 60,
+  "deps": [
+   "OccupationCeilingFinite",
+   "OccupationPhysicalClass",
+   "SpaceTimePositivity",
+   "SpatialBracket"
+  ],
+  "refutations": 6,
+  "audits": 2,
+  "cov": [
+   "C:intrinsic-spatial-bracket",
+   "L:occupation-rayleigh-selection",
+   "P:raw-occupation-energy",
+   "T:intrinsic-occupation-ceiling"
+  ],
+  "changed_rows": [
+   "T:intrinsic-occupation-ceiling",
+   "C:intrinsic-spatial-bracket"
+  ],
+  "changed_secs": [
+   "SpatialBracket (whole result)",
+   "OccupationCeilingFinite (whole result)",
+   "L8Completed (whole result)"
+  ],
+  "labels_found": 37,
+  "labels_missing": [],
+  "excerpt_lines": 1261
+ },
+ "g4-complex-phase-scalar": {
+  "rows": 75,
+  "checks": 82,
+  "deps": [
+   "StaticPhaseCauchy"
+  ],
+  "refutations": 5,
+  "audits": 1,
+  "cov": [
+   "L:complex-phase",
+   "L:interval-complex"
+  ],
+  "changed_rows": [],
+  "changed_secs": [],
+  "labels_found": 6,
+  "labels_missing": [],
+  "excerpt_lines": 298
+ },
+ "g5a-gaussian-hermite": {
+  "rows": 56,
+  "checks": 63,
+  "deps": [
+   "GaussianIBP"
+  ],
+  "refutations": 3,
+  "audits": 1,
+  "cov": [
+   "L:finite-word-cutoff",
+   "L:fock-form",
+   "P:mild-construction"
+  ],
+  "changed_rows": [],
+  "changed_secs": [],
+  "labels_found": 12,
+  "labels_missing": [],
+  "excerpt_lines": 270
+ },
+ "g5b-hermite-fock": {
+  "rows": 47,
+  "checks": 54,
+  "deps": [
+   "GaussianHermite",
+   "GaussianIBP"
+  ],
+  "refutations": 3,
+  "audits": 1,
+  "cov": [
+   "L:finite-word-cutoff",
+   "L:fock-form",
+   "L:interval-contractions",
+   "P:mild-construction"
+  ],
+  "changed_rows": [],
+  "changed_secs": [],
+  "labels_found": 16,
+  "labels_missing": [],
+  "excerpt_lines": 391
+ },
+ "g6a-fock-form-word": {
+  "rows": 19,
+  "checks": 29,
+  "deps": [
+   "GaussianHermite",
+   "GaussianIBP",
+   "HermiteFock",
+   "HermiteWord",
+   "HomogHypothesis",
+   "IntervalScalar",
+   "StaticPhaseCauchy"
+  ],
+  "refutations": 3,
+  "audits": 2,
+  "cov": [
+   "L:finite-word-cutoff",
+   "L:fock-form",
+   "L:interval-contractions",
+   "P:mild-construction"
+  ],
+  "changed_rows": [
+   "L:finite-word-cutoff"
+  ],
+  "changed_secs": [
+   "HermiteWord"
+  ],
+  "labels_found": 18,
+  "labels_missing": [],
+  "excerpt_lines": 850
+ },
+ "g6b-static-interval-reworded": {
+  "rows": 0,
+  "checks": 6,
+  "deps": [
+   "ComplexPhaseScalar",
+   "FockForm",
+   "IntervalScalar",
+   "IntervalScalarCompleted",
+   "StaticPhaseCauchy"
+  ],
+  "refutations": 0,
+  "audits": 0,
+  "cov": [
+   "P:interval-coefficients",
+   "P:static-phase-all-orders"
+  ],
+  "changed_rows": [
+   "P:static-phase-all-orders",
+   "P:interval-coefficients"
+  ],
+  "changed_secs": [
+   "StaticPhaseCauchy (whole result)",
+   "IntervalScalar (whole result)"
+  ],
+  "labels_found": 26,
+  "labels_missing": [],
+  "excerpt_lines": 1288
+ }
+}

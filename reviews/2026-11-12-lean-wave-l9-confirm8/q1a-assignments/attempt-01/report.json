@@ -1,0 +1,168 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "adjudication/round7-434a7e2.md:1-109 \u2014 complete",
+    "diffs/docs-434a7e2-06ee849.diff:1-371 \u2014 complete, including all non-Index hunks",
+    "excerpts/tex-excerpts.txt:1-1330 \u2014 complete",
+    "candidate/statement-ledger.md:1-125,500-710,862-905,1136-1155,1198-1233,1240-1280,1338-1347,1895-1924,1959-2021,2212-2238,2271-2337,2918-3018,3437-3456,3476-3493,4084-4100,4186-4193,4200-4220,4834-4850,4953-4958,6273-6295,6360-6414,6621-6635,6717-6731,7004-7030,7035-7046,7052-7084,7221-7265,7329-7361,8167-8187,8260-8270,8299 \u2014 partial",
+    "lean/FORMALIZATION.md:99-122 \u2014 partial",
+    "lean/StratonovichHAMAudit/HermiteWordFock.lean:1-53 \u2014 complete",
+    "lean/StratonovichHAMAudit/HermiteWord.lean:1-61 \u2014 complete",
+    "lean/StratonovichHAMSecondMoment/FockForm.lean:74-205 \u2014 partial",
+    "lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean:40-57,75-85,195-245,285-343; search matches 443,479,565,675,792,915,1258 \u2014 partial",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:395-434 \u2014 partial",
+    "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean:340-382,470-491,555-624 \u2014 partial",
+    "lean/StratonovichHAMSecondMoment/SpectralHomog.lean:39-66 \u2014 partial",
+    "lean/StratonovichHAMSecondMoment/ClockCopy.lean:650-715 \u2014 partial",
+    "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean:75-86,220-322 \u2014 partial",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean:83-120 \u2014 partial",
+    "lean/StratonovichHAMSecondMoment/IndexedCone.lean:73-131,215-299,310-358 \u2014 partial",
+    "lean/StratonovichHAMSecondMoment/L9Completed.lean:95-186 \u2014 partial",
+    "lean/StratonovichHAMSecondMoment/PhaseContractions.lean:67-156 \u2014 partial",
+    "lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean:211-246 \u2014 partial",
+    "lean/StratonovichHAMSecondMoment/TimeCompletion.lean:343-357,479-505,518-544,560-579,689-725,992-1065; search matches 509,660,676 \u2014 partial",
+    "lean/StratonovichHAMSecondMoment/HermiteFock.lean:75,160-195 \u2014 partial",
+    "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean:227-235 \u2014 partial",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:225-242,528-532,734-758,803-919,2040-2138,2472-2571,2828-2897,4690-4758,5167-5237,7715-7905 \u2014 partial",
+    "manuscript/notes/integrated_covariance_foundation.tex:1-12,141-181 \u2014 partial",
+    "manuscript/notes/integrated_compact_gaussian.tex:47-90 \u2014 partial",
+    "manuscript/notes/integrated_compact_mean_family.tex:1-112,255-394 \u2014 partial",
+    "manuscript/notes/integrated_raw_block_lower.tex:1-18,232-335 \u2014 partial",
+    "manuscript/notes/integrated_temporal_equilibrium.tex:1-95 \u2014 complete",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-96,101-164 \u2014 partial",
+    "tools/pointer_index.py:1-38 \u2014 complete",
+    "tools/index_category_check.py:1-75 \u2014 complete",
+    "tools/index_category_check.out:1 \u2014 complete",
+    "tools/index_check_pointer.py:1-49 \u2014 complete",
+    "tools/index_check_pointer.out:1-8 \u2014 complete"
+  ],
+  "checks": [
+    {
+      "claim": "ASSIGN E:finite-word-cutoff / HermiteWordFock",
+      "verdict": "PASS",
+      "reason": "The cutoff/raw-word equality is a genuine single-mode-per-colour specialization of the finite-word cutoff identity: lean/StratonovichHAMAudit/HermiteWordFock.lean:43-51 and manuscript/notes/notes_stratonovich_ham_second_moment.tex:2531-2571. The degree restrictions and missing multimode/integration construction are disclosed at candidate/statement-ledger.md:862-900; the narrower-result pointer is appropriate."
+    },
+    {
+      "claim": "ASSIGN E:fock-sandwich / FockForm",
+      "verdict": "PASS",
+      "reason": "The coefficient and Gaussian-L2 bounds have the stated constant d_N rho^(alpha/2-2), under symmetry, idempotence and the supplied column bound: lean/StratonovichHAMSecondMoment/FockForm.lean:165-179. This realizes the sandwich estimate at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2484-2488 in the explicitly narrower coefficient model described at candidate/statement-ledger.md:2300-2331."
+    },
+    {
+      "claim": "ASSIGN E:gaussian-trace-holder / FiniteGaussianMatrix",
+      "verdict": "PASS",
+      "reason": "The declaration states the PSD-D/Hermitian-Y trace H\u00f6lder inequality with m >= 2 and exponents 1/m and (m-1)/m: lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean:294-297. These match manuscript/notes/integrated_compact_gaussian.tex:55-59 and the disclosed hypotheses at candidate/statement-ledger.md:2018."
+    },
+    {
+      "claim": "ASSIGN E:gaussian-trace-word / FiniteGaussianMatrix",
+      "verdict": "PASS",
+      "reason": "For Hermitian B,Y, even L and q <= L, the declaration bounds ReTr(B Y^q B Y^(L-q)) by ReTr(B\u00b2Y^L): lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean:203-205. Taking L=2m-2 gives manuscript/notes/integrated_compact_gaussian.tex:50-53; evenness identifies Y^L with |Y|^L. The generalized hypotheses are accurately recorded at candidate/statement-ledger.md:2016."
+    },
+    {
+      "claim": "ASSIGN E:interval-column / FockForm",
+      "verdict": "PASS",
+      "reason": "FockColumn is exactly the universal column inequality, not a proof of its spatial realization: lean/StratonovichHAMSecondMoment/FockForm.lean:105-106. Candidate/statement-ledger.md:2325 explicitly identifies its supplied interval specialization c=R_alpha rho^(alpha-2), matching manuscript/notes/notes_stratonovich_ham_second_moment.tex:2832-2835. Thus this is a named-input assignment, not context-only citation."
+    },
+    {
+      "claim": "ASSIGN E:spatial-static-score / SpatialSmoothRatio",
+      "verdict": "PASS",
+      "reason": "StaticControls supplies finiteness and controls attaining every level below lambda_z(1)-M_a B_Gamma(z,z)/2: lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:414-419. With the stated finite supremum, this represents the score lower bound at manuscript/notes/integrated_spatial_occupation.tex:40-53. Its supplied-input status and missing identifications are disclosed at candidate/statement-ledger.md:6273-6295,6411."
+    },
+    {
+      "claim": "ASSIGN E:temporal-equilibrium-density / TemporalEquilibrium",
+      "verdict": "PASS",
+      "reason": "The density definition has precisely r=(1-a)/2 and denominator Gamma(r)Gamma(1-r): lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean:480-481 and manuscript/notes/integrated_temporal_equilibrium.tex:37-41. Candidate/statement-ledger.md:7069 expressly discloses the Lean total-function extension beyond the manuscript's open interval."
+    },
+    {
+      "claim": "ASSIGN E:temporal-equilibrium-mass / TemporalEquilibrium",
+      "verdict": "PASS",
+      "reason": "The integral definition, gamma quotient and positivity agree: lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean:484,593-595,615-617; manuscript/notes/integrated_temporal_equilibrium.tex:46-49. Candidate/statement-ledger.md:7070,7081-7082 correctly distinguishes the unrestricted definition from results requiring 0<a<1."
+    },
+    {
+      "claim": "ASSIGN E:temporal-equilibrium-potential / TemporalEquilibrium",
+      "verdict": "PASS",
+      "reason": "The unnormalized beta-integral identity is an actual normalization proof step, and potential_eq_one proves integrability and value one for every s in [0,1]: lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean:349-351,561-564. These correspond to manuscript/notes/integrated_temporal_equilibrium.tex:44-45,61-83; both roles are accurately distinguished at candidate/statement-ledger.md:7058,7080."
+    },
+    {
+      "claim": "ASSIGN L:low-alpha-convolution / ClockCopy",
+      "verdict": "PASS",
+      "reason": "The supplied spectral-homogeneity predicate expresses mu(cA)=c^alpha mu(A): lean/StratonovichHAMSecondMoment/SpectralHomog.lean:59-61. This is the explicit scaling step in the convolution proof at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4718-4722. Candidate/statement-ledger.md:1275 labels it as a proof input, so the pointer does not assert that this definition proves the whole lemma."
+    },
+    {
+      "claim": "ASSIGN L:low-alpha-convolution / MaskedSpectralGrowth",
+      "verdict": "PASS",
+      "reason": "The three declarations establish pushforward scaling, the equivalent spectral-homogeneity predicate, and its homogeneous-covariance wrapper: lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean:230-233,301-303,315-317. These are precisely the scaling step at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4719-4722, with hypotheses accurately disclosed at candidate/statement-ledger.md:4215-4217."
+    },
+    {
+      "claim": "ASSIGN L:white-test / WaveGreen",
+      "verdict": "PASS",
+      "reason": "The one-dimensional branch defines the half-indicator wave kernel used directly in the white-test proof: lean/StratonovichHAMSecondMoment/WaveGreen.lean:106-112 and manuscript/notes/notes_stratonovich_ham_second_moment.tex:734-758. Candidate/statement-ledger.md:8267 records all branches and the registered three-dimensional model choice; the foundation pointer is justified by the one-dimensional proof datum."
+    },
+    {
+      "claim": "ASSIGN P:compact-F-complement / IndexedCone",
+      "verdict": "PASS",
+      "reason": "GroundFamily supplies the normalized complementary decay estimate and associated projection/eigenvector data: lean/StratonovichHAMSecondMoment/IndexedCone.lean:83-126. These are selected outputs of manuscript/notes/integrated_compact_mean_family.tex:337-394. Candidate/statement-ledger.md:2918-2992 explicitly identifies the supplied abstraction and omitted spectral construction, making the narrower-result assignment accurate."
+    },
+    {
+      "claim": "ASSIGN P:compact-ground-family / IndexedCone",
+      "verdict": "PASS",
+      "reason": "GroundFamily encodes selected ground-family outputs, including eigen-relations, normalization, continuity and positive margins: lean/StratonovichHAMSecondMoment/IndexedCone.lean:83-126. They correspond to manuscript/notes/integrated_compact_mean_family.tex:33-112,255-335. Candidate/statement-ledger.md:2918-2992 does not claim to construct the manuscript family; it accurately presents supplied outputs."
+    },
+    {
+      "claim": "ASSIGN E:masked-time-schur / TimeCompletion",
+      "verdict": "PASS",
+      "reason": "The constant is exactly 2T^(1-a)/(1-a), and both inclusion and extension satisfy the squared-norm inequality: lean/StratonovichHAMSecondMoment/TimeCompletion.lean:567,712-721,1005-1031. This matches manuscript/notes/integrated_covariance_foundation.tex:141-181, especially 150-152. The four assigned rows at candidate/statement-ledger.md:7337,7344,7357,7359 accurately describe the wrapper, constant and two realizations."
+    },
+    {
+      "claim": "CHANGED line 1343",
+      "verdict": "PASS",
+      "reason": "The repaired degree-one hypothesis is correct: the declaration assumes SpectralHomogeneous mu 1, alongside the disclosed integrability, atom and parameter hypotheses, not degree alpha: lean/StratonovichHAMSecondMoment/ClockCopy.lean:669-672. Its identity matches manuscript/notes/notes_stratonovich_ham_second_moment.tex:7725-7729,7774-7777 and candidate/statement-ledger.md:1343."
+    },
+    {
+      "claim": "CHANGED line 2016",
+      "verdict": "PASS",
+      "reason": "Both the retained lemma label and newly explicit equation assignment are genuine. The even-L trace-word bound at lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean:203-205 specializes to manuscript/notes/integrated_compact_gaussian.tex:50-53; candidate/statement-ledger.md:2016 accurately states its hypotheses and generality."
+    },
+    {
+      "claim": "CHANGED line 2018",
+      "verdict": "PASS",
+      "reason": "The equation assignment is supported by the actual PSD/Hermitian trace H\u00f6lder declaration, including m>=2 and the correct powers: lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean:294-297; manuscript/notes/integrated_compact_gaussian.tex:55-59. Candidate/statement-ledger.md:2018 introduces no undisclosed commutativity assumption."
+    },
+    {
+      "claim": "CHANGED line 3016",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Replacing the full-block q_B by q(t)=C_gap exp(-eta_gap t) correctly reflects the arbitrary-time theorem at lean/StratonovichHAMSecondMoment/IndexedCone.lean:335-338 and manuscript/notes/integrated_raw_block_lower.tex:254-269,289,310. The assignment and supplied inputs are accurate. The parenthetical pseudo-Lean expression at candidate/statement-ledger.md:3016 has only the minor multiplication typo P1."
+    },
+    {
+      "claim": "CHANGED line 3491",
+      "verdict": "PASS",
+      "reason": "The completed wrapper really assumes HomogCovariance and produces the phase-contraction conclusions: lean/StratonovichHAMSecondMoment/L9Completed.lean:170-184; manuscript/notes/notes_stratonovich_ham_second_moment.tex:2054-2057,2072-2138. Candidate/statement-ledger.md:3491 correctly retains the contraction lemma as assignment and moves H:homog to explanatory context."
+    },
+    {
+      "claim": "CHANGED line 4956",
+      "verdict": "PASS",
+      "reason": "PhaseCovariance.of_homog constructs the static-phase covariance class from HomogCovariance, using the threshold hypotheses to obtain the required alpha range: lean/StratonovichHAMSecondMoment/PhaseContractions.lean:123-154. This corresponds to manuscript/notes/notes_stratonovich_ham_second_moment.tex:2040-2066. Candidate/statement-ledger.md:4956 correctly assigns S:static-phase and treats H:homog as its input context."
+    },
+    {
+      "claim": "CHANGED line 6727",
+      "verdict": "PASS",
+      "reason": "The declaration proves R_Gamma(1)=R_alpha and the q^(alpha-2) scaling with integrability under the stated homogeneous-covariance hypothesis: lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean:228-236. This is the resolvent identity used at manuscript/notes/integrated_spatial_occupation.tex:149-155, with R_alpha defined at manuscript/notes/notes_stratonovich_ham_second_moment.tex:528-532. Candidate/statement-ledger.md:6727 correctly keeps the hypothesis in the statement rather than assigning its label."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "P1 \u2014 CHANGED line 3016: the optional parenthetical described as Lean reads `K.Cg * exp(-(K.\u03b7g t))` at candidate/statement-ledger.md:3016. The actual expression is `K.Cg * Real.exp (-(K.\u03b7g * t))` at lean/StratonovichHAMSecondMoment/IndexedCone.lean:337; the manuscript states `C_{\\mathrm{gap}}e^{-\\eta_{\\mathrm{gap}}t}` at manuscript/notes/integrated_raw_block_lower.tex:256. Replace that parenthetical expression with the actual Lean expression. The surrounding mathematical formula is already correct, so this is nonblocking typography."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "All passages required by requirement A were read completely, including section/table headers, complete declaration statements and authoritative manuscript statements or proof passages. Partial-file coverage denotes material outside those required passages; those remaining ranges were not reviewed.",
+    "The conclusions concern exactly the 22 requested documentation-correspondence checks, not a global certification of every ledger assignment.",
+    "Checker source and recorded outputs were inspected, not executed; syntactic checker success was not treated as semantic evidence.",
+    "No Lean build, proof-correctness audit or independent provenance-hash verification was performed.",
+    "This AI review is neither human verification nor a novelty audit."
+  ]
+}

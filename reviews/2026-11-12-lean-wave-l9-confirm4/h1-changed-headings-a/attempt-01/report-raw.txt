@@ -1,0 +1,110 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md — partial file; complete required ranges: 1-103, 1060-1099, 1545-1716, 2409-2540, 3115-3231, 3377-3434, 3541-3633, 4521-4739, 5199-5361.",
+    "candidate/statement-ledger.md — additional Index cells and declaration mappings read at 555-564, 640-642, 658, 676-678, 684, 686, 742, 746, 749-751, 759, 775-786, 791, 795, 821, 823, 827-837, 863-877, 886-891.",
+    "lean/FORMALIZATION.md — complete: 1-153.",
+    "adjudication/round3-d5667f5-split-rule.md — complete: 1-131.",
+    "prior-reports/h1-headings-lib-a-report.json — complete: 1-195.",
+    "prior-reports/h2-headings-lib-b-report.json — complete: 1-205.",
+    "prior-reports/h3-headings-lib-c-audit-report.json — complete: 1-341.",
+    "prior-reports/h4-index-cells-report.json — complete: 1-72.",
+    "prior-reports/h5-consistency-r1-diff-report.json — complete: 1-109.",
+    "excerpts/tex-excerpts.txt — complete: 1-723.",
+    "docs/coverage-scope-tex.yaml — complete: 1-142.",
+    "lean/coverage.yaml — partial file; required rows completely read within 1-75, 160-234, 332-406, 455-533, 635-665, 713-800, 849-927, 983-1010, 1175-1218, 1262-1349, 1425-1491, 1520-1558, 1598-1635, 1730-1778.",
+    "lean/StratonovichHAMAudit/HermiteWordFock.lean — complete: 1-53.",
+    "lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean — partial: 1037, 1041, 1170-1420; paper/completed declaration searches performed throughout.",
+    "lean/StratonovichHAMSecondMoment/FockForm.lean — partial: 1-114, 184-258, 318-392, 446-491; all paper-wrapper signatures read.",
+    "lean/StratonovichHAMSecondMoment/IndexedCone.lean — partial: 65-137, 963-1021; paper-wrapper signature read.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean — partial: 90-193; all paper/completed-wrapper signatures read.",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean — partial: 1-357; all paper/completed-wrapper signatures read.",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingExact.lean — partial: 510-528, 730-797; all paper-wrapper signatures read.",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean — partial: 926-1037; all paper-wrapper signatures read.",
+    "lean/StratonovichHAMSecondMoment/QuotientObstruction.lean — partial: 580-610, 976-1005; paper-wrapper signature read.",
+    "lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean — partial: 233-320.",
+    "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean — partial: 133-169.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean — partial: 224-256.",
+    "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean — partial, completion declaration-search matches: 53, 71, 80.",
+    "lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean — partial, completion declaration-search match: 62.",
+    "lean/StratonovichHAMSecondMoment/L9Completed.lean — partial, completion declaration-search matches: 96, 119, 134, 150, 170.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean — partial, completion declaration-search matches: 93, 133, 145, 157, 169.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean — partial, completion declaration-search matches: 85, 97, 107, 122, 132, 147, 163, 182, 200, 217, 253, 273, 284, 296, 323, 363.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex — partial: 1773-1816, 2288-2310, 2472-2489, 2531-2553, 2828-2848, 2899-2917, 3402-3423, 3703-3727.",
+    "manuscript/notes/integrated_occupation_ceiling.tex — partial: 1-42, 92-112, 149-157, 195-220, 252-266, 300-308.",
+    "manuscript/notes/integrated_unmasked_variational.tex — partial: 1-19, 98-111, 270-284.",
+    "manuscript/notes/integrated_raw_block_lower.tex — partial: 1-22, 232-251.",
+    "manuscript/notes/integrated_covariance_foundation.tex — partial: 257-270.",
+    "manuscript/notes/integrated_spatial_occupation.tex — partial: 40-54, 166-177, 300-325.",
+    "manuscript/notes/integrated_compact_mean_family.tex — partial: 398-411.",
+    "manuscript/notes/integrated_intrinsic_constant.tex — partial: 22-39.",
+    "diffs/docs-d5667f5-e2c50b5.diff — partial, search contexts: 645-651, 678-685, 718-726, 763-770."
+  ],
+  "checks": [
+    {
+      "claim": "HEADING HermiteWordFock",
+      "verdict": "PASS",
+      "reason": "The heading names both substantive restrictions: one mode per color and single words without the finite-sum/Bochner-integral conclusions. Lean quantifies one List word (lean/StratonovichHAMAudit/HermiteWordFock.lean:43-48); TeX allows multiple modes and explicitly includes sums and integrals (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2532-2552). The coverage scope agrees (lean/coverage.yaml:337-365). Contrary to the check's bracketed premise, the current coverage row directly cites this module at line 347."
+    },
+    {
+      "claim": "HEADING ComplexPhaseScalar",
+      "verdict": "PASS",
+      "reason": "Category B and its qualifications accurately distinguish the supplied-input block estimate from the actual propagator and interval-norm composition. Lean concludes the block inequality at ComplexPhaseScalar.lean:1307-1331 and a finite-jump product inequality at:1392-1397; TeX concludes the propagator bound and total phase-norm loss (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2302-2309,2909-2916). The heading and coverage scopes retain these boundaries (candidate/statement-ledger.md:1545; lean/coverage.yaml:171-173,466-490)."
+    },
+    {
+      "claim": "HEADING FockForm",
+      "verdict": "PASS",
+      "reason": "For the two labelled results named in the heading, the coefficient-space restriction, missing self-adjoint operator packaging, unconstructed spatial operators and supplied column bounds are accurately disclosed. Lean proves coefficient and Gaussian-integral bounds plus symmetry (FockForm.lean:206-229), and conditional contraction conclusions (:335-362), rather than constructing TeX's spatial operators and full Gaussian cutoff (manuscript/notes/notes_stratonovich_ham_second_moment.tex:2474-2488,2828-2847). The separate occupied-multiplication proof contribution remains explicitly restricted in the prose and coverage row (candidate/statement-ledger.md:2444-2454; lean/coverage.yaml:1325-1341)."
+    },
+    {
+      "claim": "HEADING IndexedCone",
+      "verdict": "PASS",
+      "reason": "The reclassification correctly applies the missing-construction branch, not M1. The wrapper takes an arbitrary GroundFamily and concludes the product bound for its flows, rates and observable (IndexedCone.lean:996-1012), whereas TeX uses the physical wave family (manuscript/notes/integrated_raw_block_lower.tex:4-17,232-247). The heading, coverage row and mirror explicitly retain the unformalized identification (candidate/statement-ledger.md:3115; lean/coverage.yaml:755-795; docs/coverage-scope-tex.yaml:50-52)."
+    },
+    {
+      "claim": "HEADING IntervalScalarCompleted",
+      "verdict": "PASS",
+      "reason": "The heading accurately restricts the completion to positive-noise scalar coefficient assembly, leaving evolution identification and zero/sign reductions outside Lean. The completed wrapper retains abstract coef and Q, supplied split bounds, R>0 and positive sigma (IntervalScalarCompleted.lean:171-189). TeX concerns actual evolution coefficients and explicitly performs the zero/sign reductions (manuscript/notes/notes_stratonovich_ham_second_moment.tex:3402-3423). Coverage records the surviving inputs and missing identification (lean/coverage.yaml:1175-1212)."
+    },
+    {
+      "claim": "HEADING L8Completed",
+      "verdict": "FAIL",
+      "reason": "Category B is correct, and the substitutions and chain-measure boundary are repaired. However, the aggregate heading still does not name every missing conclusion: the occupation-energy form of the ceiling and Q_2 >= S_2^pos remain absent. Lean's completed ceiling and positive-score wrappers conclude only the surrogate ceiling and variational supremum facts (L8Completed.lean:128-168); TeX additionally concludes the occupation-energy equality and point-liminf inequality (manuscript/notes/integrated_occupation_ceiling.tex:214-215; manuscript/notes/integrated_unmasked_variational.tex:279). Both omissions are explicitly retained elsewhere in the candidate, including Index cells 827-828 and section lines 3584-3594,3622. See K1."
+    },
+    {
+      "claim": "HEADING OccupationCeilingExact",
+      "verdict": "PASS",
+      "reason": "The heading correctly retains the missing moment conclusion, occupation-class bridge and rate/cost identifications. Lean proves both ceiling forms over Cocc and EO (OccupationCeilingExact.lean:748-757), and the comparison for the variational supremum rather than C_2 (:779-785). TeX uses the physical occupation class and C_2 (manuscript/notes/integrated_occupation_ceiling.tex:7-16,205-220,261-264). The joint-representative model and unformalized rate/cost bridges are independently visible in OccupationPhysicalClass.lean:144-158 and VariationalDilation.lean:236-247."
+    },
+    {
+      "claim": "HEADING OccupationCeilingFinite",
+      "verdict": "PASS",
+      "reason": "For its named occupation-ceiling result, the heading now explicitly names the larger constant, absent occupation-energy form, missing C_2 sentence and rate/cost identification gaps. Lean's wrappers conclude ceilingValue with K0*Rsp, without the occupation-energy equality or moment constant (OccupationCeilingFinite.lean:938-968), matching the stated narrowing from TeX (manuscript/notes/integrated_occupation_ceiling.tex:209-217). Discharging SpaceTimeCS in L8Completed.lean:114-155 does not remove those boundaries."
+    },
+    {
+      "claim": "HEADING QuotientObstruction",
+      "verdict": "PASS",
+      "reason": "The revised category B heading correctly distinguishes the covariance-functional obstruction from a constructed noise-variance theorem. Lean defines covW as an iterated integral and expressly does not construct W (QuotientObstruction.lean:586-594); its wrapper concludes the obstruction for covW (:991-996). TeX states it for E W(F)^2 (manuscript/notes/integrated_covariance_foundation.tex:257-263). Coverage and its mirror now disclose precisely this missing identification (lean/coverage.yaml:1262-1300; docs/coverage-scope-tex.yaml:98-100)."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "K1 — L8Completed's aggregate narrower heading is still incomplete. Lean concludes 'sSup (scoreSet ...) ≤ ... ceilingValue ... (K0 ... * Rsp ...)' (lean/StratonovichHAMSecondMoment/L8Completed.lean:149-154) and positive, homogeneous variational suprema (:163-168). TeX additionally asserts '= c^m(2 zeta)^(alpha/(2k)) F_0(E_zeta^O)' (manuscript/notes/integrated_occupation_ceiling.tex:214-215) and 'Q_2 >= S_2^pos' (manuscript/notes/integrated_unmasked_variational.tex:279). Neither conclusion appears in those Lean wrappers. The heading at candidate/statement-ledger.md:3541 does not name these omissions, although its Index cells :827-828 and prose :3584-3594,3622 do. Substitution of energyValue for E_(1/2)^O in the bracket comparison does not describe the missing general-zeta ceiling equality. Exact fix: append 'the occupation-energy form of the ceiling and Q_2 >= S_2^pos not formalized' to the L8Completed heading, retaining its existing substitutions and identification qualifications."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Complete the L8Completed heading by explicitly naming the unformalized occupation-energy form of the ceiling and Q_2 >= S_2^pos, as specified in K1."
+  ],
+  "limitations": [
+    "Requirement A's required selections were read completely; partial-file entries omit unrelated material or proof bodies, not required wrapper signatures or scope passages. Truncated outputs were reread.",
+    "The review covers the nine specified heading claims, not an exhaustive recertification of all Index cells, aggregate counts or other ledger sections.",
+    "Proof correctness, compilation and kernel replay were outside scope; no build was run.",
+    "Packet hashes, repository history and source-revision byte bindings were not independently authenticated.",
+    "No incorrect numerical constant was identified in the checked correspondence. The blocking finding concerns completeness of the prescribed heading qualification.",
+    "This AI correspondence review is not human verification or a novelty audit."
+  ]
+}

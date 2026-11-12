@@ -1,0 +1,275 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "adjudication/round7-434a7e2.md:1-109 complete.",
+    "diffs/docs-434a7e2-06ee849.diff:1-371 complete; initial truncation resolved by consecutive rereading.",
+    "excerpts/tex-excerpts.txt:1-2072 complete.",
+    "candidate/statement-ledger.md: partial file; complete required headings, table headers and rows at 934,950-952;1136,1232-1233,1282-1283,1312;2344,2406-2407,2417;3180,3227-3228,3235-3236;3238,3296-3298;3625,3735-3737,3740,3742,3750-3752,3756-3758,3760;4084,4190-4191,4206;5002,5080-5081,5129;6273,6393-6394,6409,6416-6417,6420,6423;6621,6719-6720,6728-6729;7406,7498-7499,7529-7533;7622,7734-7735,7769,7778,7780,7782,7785,7789,7793;7903,8005-8006,8021,8045-8046;8167,8265-8266,8283;8574,8623-8624,8651;8656,8699-8700,8708. Additional confirmed reading:1-105,934-951,1136-1233,2344-2407,3180-3228,7947-8006,8167-8266,8574-8624,8656-8700. Preliminary broader output was truncated; all required units were subsequently reread without truncation.",
+    "lean/StratonovichHAMAudit/JointTilt.lean:1-12 partial; required statement complete.",
+    "lean/StratonovichHAMSecondMoment/SpectralHomog.lean:173-192 partial; required definitions complete.",
+    "lean/StratonovichHAMSecondMoment/ClockCopy.lean:98-104 partial; required definition complete.",
+    "lean/StratonovichHAMSecondMoment/FrequencyRow.lean:223-224 partial; required statement complete.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean:130-193 complete through end of this range, partial file; both required statements complete.",
+    "lean/StratonovichHAMSecondMoment/InventoryProduct.lean:78-83 partial; required definition complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:100-165,260-264,267-272,291,295-296,313-314,332-333 partial; all required statements and relevant ambient variables complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean:126-131 partial; required statement complete.",
+    "lean/StratonovichHAMSecondMoment/QuotientObstruction.lean:550-580 partial; required statement complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:344-352,610-659,693-701,747-758 partial; all required statements complete.",
+    "lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean:242-246,253-256 partial; both required statements complete.",
+    "lean/StratonovichHAMSecondMoment/TypeContinuity.lean:903-919 partial; all five required definitions complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:216-218,278-281,296-301,319-322,347-351,382-385,430-465 partial; all required statements complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalMean.lean:301-304,707-711,720-725 partial; all required statements complete.",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean:313-314 partial; required statement complete.",
+    "lean/StratonovichHAMSecondMoment/WhiteClockLaplace.lean:379-401 partial; required definition complete.",
+    "lean/StratonovichHAMSecondMoment/WhiteRelativeWidth.lean:50-100 partial; required statement complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:225-242,521-538,2803-2824,2986-2998,3053-3094,3402-3423,3473-3547,5167-5188,7055-7076,7624-7644,7710-7781 partial; required local statements and setup read.",
+    "manuscript/notes/integrated_covariance_foundation.tex:1-100,257-292 partial; required local statements and setup read.",
+    "manuscript/notes/integrated_raw_block_lower.tex:119-157 partial; required proposition and proof complete.",
+    "manuscript/notes/integrated_wave_variance.tex:12-20,47-54,128-139 partial; required definition, proposition statement and cited proof step complete.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-111,225-284 partial; required local statements and dilation proof complete.",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-217 partial; required local statements and proofs complete.",
+    "manuscript/notes/integrated_temporal_equilibrium.tex:37-51 partial; required lemma statement complete.",
+    "manuscript/notes/integrated_white_evaluation.tex:101-112 partial; required theorem statement complete."
+  ],
+  "checks": [
+    {
+      "claim": "CLEARED line 952",
+      "verdict": "PASS",
+      "reason": "JointTilt.lean:9-10 proves only a scalar cancellation, not the change-of-law identity in integrated_raw_block_lower.tex:119-157. The context classification is correct; diff:65-73 preserves the formula and excluded inputs."
+    },
+    {
+      "claim": "CLEARED line 1282",
+      "verdict": "PASS",
+      "reason": "SpectralHomog.lean:173 defines the resolvent appearing in the main TeX:7720, before the proposition at 7753-7781. It does not prove that proposition. Diff:74-84 preserves the definition and foundation tag."
+    },
+    {
+      "claim": "CLEARED line 1283",
+      "verdict": "PASS",
+      "reason": "SpectralHomog.lean:176 defines the heat integral of main TeX:7718, not the obstruction proposition. Diff:74-84 correctly moves its setup reference without losing information."
+    },
+    {
+      "claim": "CLEARED line 1312",
+      "verdict": "PASS",
+      "reason": "ClockCopy.lean:98 defines vRho, matching the unlabelled setup at main TeX:7732-7737. It does not establish P:clock-copy-obstruction. Diff:85-93 preserves the formula and interpretation."
+    },
+    {
+      "claim": "CONTEXT line 2417",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:223-224 states the inequality used in integrated_wave_variance.tex:136. E:variance-scale-profile at 12-20 only defines the function. The retained proof-step assignment and context move agree with diff:115-123."
+    },
+    {
+      "claim": "CONTEXT line 3235",
+      "verdict": "PASS",
+      "reason": "IntervalScalarCompleted.lean:140-156 concludes the scalar coefficient bound and invokes the inventory theorem; it does not conclude the inventory-product bound. Main TeX:2986-2998,3405-3408 distinguish these. Diff:133-140 preserves the supplied inputs and restrictions."
+    },
+    {
+      "claim": "CONTEXT line 3236",
+      "verdict": "PASS",
+      "reason": "IntervalScalarCompleted.lean:171-191 retains hsplits, hfixed and positivity restrictions while concluding the coefficient bound of main TeX:3405-3408. L:inventory-product is a discharged dependency, correctly moved by diff:133-140."
+    },
+    {
+      "claim": "CLEARED line 3298",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:78 defines pOf=2-alpha0, matching unlabelled section notation at main TeX:2803-2813. S:interval-upper is context rather than a theorem assignment. Diff:144-152 preserves the parameter information."
+    },
+    {
+      "claim": "CLEARED line 3737",
+      "verdict": "PASS",
+      "reason": "MaskedAuxiliaryNorm.lean:120 defines the normalization constant in integrated_covariance_foundation.tex:8-12. S:masked-covariance identifies the section, not a result proved here. Diff:162-174 preserves the constant."
+    },
+    {
+      "claim": "CLEARED line 3740",
+      "verdict": "PASS",
+      "reason": "MaskedAuxiliaryNorm.lean:135-137 defines the unitary transform matching integrated_covariance_foundation.tex:8-12. The section reference is context; diff:162-174 preserves its sign, normalization and vector-valued formulation."
+    },
+    {
+      "claim": "CLEARED line 3742",
+      "verdict": "PASS",
+      "reason": "MaskedAuxiliaryNorm.lean:141,161-162 proves integrability for complex normed-space-valued Schwartz maps. This supports, rather than states, the Fourier convention in integrated_covariance_foundation.tex:8-12. Diff:162-174 preserves that distinction."
+    },
+    {
+      "claim": "CLEARED line 3750",
+      "verdict": "PASS",
+      "reason": "MaskedAuxiliaryNorm.lean:260 defines the mask from integrated_covariance_foundation.tex:79-80, outside P:masked-auxiliary-norm at 88-100. Diff:178-187 preserves the definition and setup reference."
+    },
+    {
+      "claim": "CLEARED line 3751",
+      "verdict": "PASS",
+      "reason": "MaskedAuxiliaryNorm.lean:263-264 defines the kernel introduced before the proposition in integrated_covariance_foundation.tex:79-82. No proposition conclusion is asserted. Diff:178-187 preserves the Fourier-transform identification."
+    },
+    {
+      "claim": "CLEARED line 3752",
+      "verdict": "PASS",
+      "reason": "MaskedAuxiliaryNorm.lean:267 defines Lz, matching unlabelled setup at integrated_covariance_foundation.tex:80-82, not the proposition's conclusions. Diff:178-187 preserves the norm-integral definition."
+    },
+    {
+      "claim": "CLEARED line 3756",
+      "verdict": "PASS",
+      "reason": "MaskedAuxiliaryNorm.lean:291 proves kernel integrability for nonzero R. This is setup supporting integrated_covariance_foundation.tex:79-82, not P:masked-auxiliary-norm itself. Diff:191-196 preserves its stronger R-not-zero range."
+    },
+    {
+      "claim": "CLEARED line 3757",
+      "verdict": "PASS",
+      "reason": "MaskedAuxiliaryNorm.lean:295-296 matches the unlabelled kernel-scaling identity in integrated_covariance_foundation.tex:81. The proposition begins at 88. Diff:191-196 preserves the positive-R condition and R^d factor."
+    },
+    {
+      "claim": "CLEARED line 3758",
+      "verdict": "PASS",
+      "reason": "MaskedAuxiliaryNorm.lean:313-314 matches the setup identity ||k_R||_1=L at integrated_covariance_foundation.tex:81-82, not a proposition conclusion. Diff:191-196 preserves the identity and positive-R condition."
+    },
+    {
+      "claim": "CLEARED line 3760",
+      "verdict": "PASS",
+      "reason": "MaskedAuxiliaryNorm.lean:332-333 supplies the setup positivity at integrated_covariance_foundation.tex:79-82. It does not prove the auxiliary-measure proposition. Diff:197-199 preserves integrability and the nonzero-mask hypothesis."
+    },
+    {
+      "claim": "CONTEXT line 4206",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:126-131 specializes the spectral convention to a Gaussian test, corresponding to integrated_covariance_foundation.tex:65-66. It does not establish the universal convention at 15-19. Diff:203-211 correctly retains the proof-step assignment."
+    },
+    {
+      "claim": "CONTEXT line 5129",
+      "verdict": "PASS",
+      "reason": "QuotientObstruction.lean:557-558 verifies H:homog for the example, exactly the proof step at integrated_covariance_foundation.tex:266-270. It does not state the general hypothesis itself. Diff:221-229 preserves the parameters and spectral normalization."
+    },
+    {
+      "claim": "CONTEXT line 6409",
+      "verdict": "PASS",
+      "reason": "SpatialSmoothRatio.lean:344-352 establishes ratio bounds and positive finite supremum, corresponding to integrated_spatial_occupation.tex:166-188. The Fourier bound at 101-164 is a dependency, not its conclusion. Diff:230-235 preserves that role."
+    },
+    {
+      "claim": "CONTEXT line 6416",
+      "verdict": "PASS",
+      "reason": "SpatialSmoothRatio.lean:610-633 derives an upper bound on each ratio from the score inequality of integrated_spatial_occupation.tex:171-176. The retained P:spatial-smooth-ratio assignment explicitly identifies the alternative finiteness route. Diff:242-245 preserves the inputs."
+    },
+    {
+      "claim": "CONTEXT line 6417",
+      "verdict": "PASS",
+      "reason": "SpatialSmoothRatio.lean:639-652 concludes boundedness and an R0 bound, rather than the displayed score inequality at integrated_spatial_occupation.tex:171-176. The alternative-route qualifier remains explicit. Diff:242-245 preserves the statement and dependencies."
+    },
+    {
+      "claim": "CONTEXT line 6420",
+      "verdict": "PASS",
+      "reason": "SpatialSmoothRatio.lean:693-701 establishes the ratio and supremum conclusions under H:homog, matching integrated_spatial_occupation.tex:182-188. L:spatial-fourier-bound supplies the estimate rather than being reproved by this wrapper. Diff:248-249 preserves this."
+    },
+    {
+      "claim": "CONTEXT line 6423",
+      "verdict": "PASS",
+      "reason": "SpatialSmoothRatio.lean:747-755 gives the supplied-input R0 bound derived from the score, not the score display itself at integrated_spatial_occupation.tex:171-176. Diff:252-253 preserves the historical-route qualifier and current Fourier-route distinction."
+    },
+    {
+      "claim": "CLEARED line 6728",
+      "verdict": "PASS",
+      "reason": "SpectralMassIdentity.lean:242-246 proves an interface equivalence involving the constant defined at main TeX:530-532. That definition does not state the equivalence. Diff:257-266 preserves the formula, hypotheses and bridge description."
+    },
+    {
+      "claim": "CLEARED line 6729",
+      "verdict": "PASS",
+      "reason": "SpectralMassIdentity.lean:253-256 is the H:homog wrapper of the interface equivalence, not E:intro-spectral-mass itself at main TeX:530-532. Diff:263-266 retains the wrapper hypothesis and an unlabelled explanatory qualifier."
+    },
+    {
+      "claim": "CLEARED line 7529",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:903 defines nuOf=3-alpha, matching section setup at main TeX:7062-7065. S:near-static-lower is context, not a result proved by this definition. Diff:270-283 preserves the information."
+    },
+    {
+      "claim": "CLEARED line 7530",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:906 defines amaxOf=min(1,2-alpha), matching unlabelled setup at main TeX:7065. The section label is contextual. Diff:270-283 preserves both the definition and its location."
+    },
+    {
+      "claim": "CLEARED line 7531",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:909 defines betaOf=4-alpha-a, matching main TeX:7066. It does not establish a section-level result. Diff:270-283 correctly preserves the notation as context."
+    },
+    {
+      "claim": "CLEARED line 7532",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:912 defines kappaOf=betaOf/nuOf, exactly the setup at main TeX:7067. S:near-static-lower is a contextual section reference. Diff:270-283 loses no parameter information."
+    },
+    {
+      "claim": "CLEARED line 7533",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:915 defines kappaSt=(4-alpha)/nuOf, matching main TeX:7068. It does not prove a labelled comparison theorem. Diff:270-283 preserves the definition and section context."
+    },
+    {
+      "claim": "CLEARED line 7769",
+      "verdict": "PASS",
+      "reason": "VariationalDilation.lean:216-218 proves an integrability equivalence. Integrated_unmasked_variational.tex:225-268 states dilation identities and uses positive integration, but states no such equivalence. Diff:287-295 preserves its auxiliary status."
+    },
+    {
+      "claim": "CLEARED line 7778",
+      "verdict": "PASS",
+      "reason": "VariationalDilation.lean:278-281 transfers convolution-integrand integrability at the appropriately rescaled point. Integrated_unmasked_variational.tex:243-250 instead states integral scaling. Diff:296-301 preserves the auxiliary description."
+    },
+    {
+      "claim": "CLEARED line 7780",
+      "verdict": "PASS",
+      "reason": "VariationalDilation.lean:296-301 transfers time-integrand integrability. This is not among the conclusions of integrated_unmasked_variational.tex:225-238 or the proof's displayed identities. Diff:302-304 preserves the distinction."
+    },
+    {
+      "claim": "CLEARED line 7782",
+      "verdict": "PASS",
+      "reason": "VariationalDilation.lean:319-322 gives spatial cost-integrand integrability equivalence, not the variance identity stated in integrated_unmasked_variational.tex:234,251-254. Diff:305-307 correctly retains no direct assignment."
+    },
+    {
+      "claim": "CLEARED line 7785",
+      "verdict": "PASS",
+      "reason": "VariationalDilation.lean:347-351 transfers integrability of the outer variance integrand. Integrated_unmasked_variational.tex:225-268 states the variance scaling, not this equivalence. Diff:309-311 preserves all explanatory content."
+    },
+    {
+      "claim": "CLEARED line 7789",
+      "verdict": "PASS",
+      "reason": "VariationalDilation.lean:382-385 proves rate-integrability equivalence, whereas integrated_unmasked_variational.tex:235-236,259-264 gives rate and integrated-rate scaling. Diff:314-316 correctly treats the lemma label as support context."
+    },
+    {
+      "claim": "CLEARED line 7793",
+      "verdict": "PASS",
+      "reason": "VariationalDilation.lean:438-458 bundles conditional integrability transfers and Rayleigh-set scaling, not the full manuscript lemma at integrated_unmasked_variational.tex:225-238. Diff:319-321 preserves the explicit non-construction and identification limitations."
+    },
+    {
+      "claim": "CONTEXT line 8021",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:301-304 gives the unnormalized Gaussian envelope at epsilon=1, corresponding to integrated_unmasked_variational.tex:23-35. Its use for the mean occurs at 77-82; it does not prove global mean regularity. Diff:325-330 preserves this."
+    },
+    {
+      "claim": "CLEARED line 8045",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:707-711 proves joint Lipschitz continuity without derivatives. Integrated_unmasked_variational.tex:64-74 states bounded mixed derivatives and a time-Lipschitz consequence, not this standalone joint formulation. Diff:334-340 preserves the narrower description."
+    },
+    {
+      "claim": "CONTEXT line 8046",
+      "verdict": "PASS",
+      "reason": "VariationalMean.lean:720-725 identifies admissible Rayleigh trials after automatic potential integrability. This supports the domain in integrated_unmasked_variational.tex:104-108, using the global bound at 64-74 rather than proving that lemma. Diff:334-341 preserves the side-condition qualifier."
+    },
+    {
+      "claim": "CLEARED line 8283",
+      "verdict": "PASS",
+      "reason": "WaveGreen.lean:313-314 concerns d=1 and arbitrary sets. Main TeX:5179-5187 states the quoted scaling for d=2,3. The dimensional distinction justifies context rather than assignment; diff:345-353 preserves it."
+    },
+    {
+      "claim": "CLEARED line 8651",
+      "verdict": "PASS",
+      "reason": "WhiteClockLaplace.lean:379 defines the Green function introduced in main TeX:7640-7642. S:two-clock-screen is section context, not a transform result established by the definition. Diff:354-361 preserves the formula."
+    },
+    {
+      "claim": "CLEARED line 8708",
+      "verdict": "PASS",
+      "reason": "WhiteRelativeWidth.lean:95-97 identifies two Lean constants. Integrated_white_evaluation.tex:107-108 and integrated_temporal_equilibrium.tex:46-49 supply matching formulas but no separate identification theorem. Diff:363-371 preserves all three contextual labels and the parameter range."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "The review covers exactly the 45 requested documentation-correspondence checks, not every declaration or Index pointer in the packet.",
+    "Files marked partial were read selectively; all reading units required by contract A were completed. Unlisted portions of those files were not systematically reviewed.",
+    "Proof correctness, Lean compilation, provenance hashes and historical manuscript versions were not independently audited. Checker outputs and adjudication conclusions were not used as substitutes for source comparison.",
+    "This AI review is neither human verification nor a novelty audit."
+  ]
+}

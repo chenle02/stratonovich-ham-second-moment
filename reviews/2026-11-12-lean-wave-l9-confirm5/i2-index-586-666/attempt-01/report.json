@@ -1,0 +1,75 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md \u2014 partial: lines 1-230, 586-666, 8111-8255; complete projection of all ## headings at lines 37, 501, 912, 925, 937, 954, 966, 992, 1015, 1024, 1033, 1051, 1072, 1112, 1144, 1167, 1192, 1210, 1223, 1235, 1258, 1275, 1287, 1300, 1317, 1333, 1346, 1557, 1729, 1909, 2088, 2104, 2311, 2421, 2553, 2661, 2717, 2835, 2852, 2873, 2982, 3106, 3127, 3244, 3389, 3447, 3539, 3553, 3646, 3702, 3834, 4009, 4124, 4293, 4441, 4533, 4643, 4752, 4835, 4983, 5043, 5211, 5374, 5463, 5572, 5592, 5710, 5764, 5887, 5992, 6122, 6341, 6393, 6482, 6635, 6830, 6941, 7067, 7213, 7295, 7430, 7615, 7751, 7830, 8003, 8111, 8256, 8375, 8507, 8624, 8782, 8864, 8929",
+    "lean/FORMALIZATION.md \u2014 complete: lines 1-160",
+    "tools/index_category_check.out \u2014 complete: line 1",
+    "lean/coverage.yaml \u2014 complete: lines 1-1781",
+    "excerpts/tex-excerpts.txt \u2014 complete: lines 1-675",
+    "lean-excerpts/StratonovichHAMSecondMoment/ClockCopyHomog.lean.excerpt.txt \u2014 complete: lines 1-85",
+    "lean-excerpts/StratonovichHAMSecondMoment/DampedNormsHomog.lean.excerpt.txt \u2014 complete: lines 1-439",
+    "lean-excerpts/StratonovichHAMSecondMoment/FrequencyRow.lean.excerpt.txt \u2014 complete: lines 1-355",
+    "lean-excerpts/StratonovichHAMSecondMoment/GaussianComparison.lean.excerpt.txt \u2014 complete: lines 1-147",
+    "lean-excerpts/StratonovichHAMSecondMoment/GaussianTest.lean.excerpt.txt \u2014 complete: lines 1-98",
+    "lean-excerpts/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean.excerpt.txt \u2014 complete: lines 1-548",
+    "lean-excerpts/StratonovichHAMSecondMoment/MaskedContinuousWave.lean.excerpt.txt \u2014 complete: lines 1-266",
+    "lean-excerpts/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean.excerpt.txt \u2014 complete: lines 1-79",
+    "lean-excerpts/StratonovichHAMSecondMoment/MaskedModulation.lean.excerpt.txt \u2014 complete: lines 1-377",
+    "lean-excerpts/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean.excerpt.txt \u2014 complete: lines 1-215",
+    "lean-excerpts/StratonovichHAMSecondMoment/OccupationKernelRow.lean.excerpt.txt \u2014 complete: lines 1-278",
+    "lean-excerpts/StratonovichHAMSecondMoment/PhaseBessel.lean.excerpt.txt \u2014 complete: lines 1-174",
+    "lean-excerpts/StratonovichHAMSecondMoment/QuotientObstruction.lean.excerpt.txt \u2014 complete: lines 1-509",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialFourierBound.lean.excerpt.txt \u2014 complete: lines 1-175",
+    "lean-excerpts/StratonovichHAMSecondMoment/TimeCompletion.lean.excerpt.txt \u2014 complete: lines 1-585",
+    "lean-excerpts/StratonovichHAMSecondMoment/TimeSchur.lean.excerpt.txt \u2014 complete: lines 1-175",
+    "lean-excerpts/StratonovichHAMSecondMoment/VariationalFloor.lean.excerpt.txt \u2014 complete: lines 1-340",
+    "lean-excerpts/StratonovichHAMSecondMoment/VariationalMean.lean.excerpt.txt \u2014 complete: lines 1-449",
+    "lean-excerpts/StratonovichHAMSecondMoment/VariationalRate.lean.excerpt.txt \u2014 complete: lines 1-530",
+    "lean-excerpts/StratonovichHAMSecondMoment/WaveGreen.lean.excerpt.txt \u2014 complete: lines 1-309",
+    "lean-excerpts/StratonovichHAMSecondMoment/WaveTwoVariances.lean.excerpt.txt \u2014 complete: lines 1-540",
+    "adjudication/round4-e2c50b5.md \u2014 complete: lines 1-108",
+    "adjudication/round3-d5667f5-split-rule.md \u2014 complete: lines 1-131",
+    "manuscript/notes/integrated_covariance_foundation.tex \u2014 complete: lines 1-423",
+    "manuscript/notes/integrated_wave_variance.tex \u2014 complete: lines 1-460",
+    "manuscript/notes/integrated_unmasked_variational.tex \u2014 partial: lines 1-165, 270-337",
+    "manuscript/notes/integrated_spatial_occupation.tex \u2014 partial: lines 1-112, 166-190, 350-379",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex \u2014 partial: lines 209-244, 734-919, 4718-4724, 5177-5190, 7730-7781",
+    "manuscript/notes/index/list-of-notation.tex \u2014 partial: lines 97-106"
+  ],
+  "checks": [
+    {
+      "claim": "INDEX-CELLS lines 586-666",
+      "verdict": "FAIL",
+      "reason": "The repaired completed-wave row 614 correctly separates the input-free theorem from the abstract wrapper at 615, and the quotient-obstruction restriction at 646 correctly follows the split rule. Nevertheless, row 594 assigns whole-result status to definitions alone; other whole-result cells still mix complete results with proof-only declarations. Several automatically assigned narrower-result references identify an unrelated omission rather than the limitation of their declarations. See K1-K3, against the rules at candidate/statement-ledger.md:62-95."
+    },
+    {
+      "claim": "INDEX-MAPPING lines 586-666",
+      "verdict": "FAIL",
+      "reason": "Row 633 includes variational_global_mean_lipschitz_paper under L:variational-global-mean while expressly acknowledging that it is not a TeX statement. The joint space-time Lipschitz conclusion is neither the displayed time-only bound nor a statement made in that lemma's proof (manuscript/notes/integrated_unmasked_variational.tex:64-96). Under the contract's statement-or-proof containment rule, this complement needs a separate no-direct-label row. See K4."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "K1 \u2014 Row 594 incorrectly says 'L:masked-time-completion (whole result: the form and its kernel)'. Lean supplies only 'def kern ... := |x| ^ (-a)' and 'def timeForm ... := \u222b ...' (lean-excerpts/StratonovichHAMSecondMoment/TimeSchur.lean.excerpt.txt:57-59,146-147; original Lean lines 57-59,298-299). TeX additionally asserts 'positive semidefinite', a separable null-quotient completion, continuous extension, and interval-amplitude membership (manuscript/notes/integrated_covariance_foundation.tex:147-155). Definitions do not conclude these assertions. Exact fix: change this cell to 'proof steps: definitions of the temporal form and kernel only'; retain whole-result status for the completed theorem at row 610.",
+      "K2 \u2014 Whole-result cells still contain proof-only declarations, contrary to the every-declaration split requirement. For example, row 596 includes FrequencyRow.frequencyPair_le_two, whose entire conclusion is 'frequencyPair a h r \u03c1 \u2264 2' (lean-excerpts/StratonovichHAMSecondMoment/FrequencyRow.lean.excerpt.txt:121-124), whereas P:frequency-row concludes 'sup J_h \u2264 K C B_alpha(h)' (manuscript/notes/integrated_wave_variance.tex:47-54). Row 637 includes IsOrthonormalL2 and separate one-direction Bessel theorems; phase_bessel concludes only the unconjugated inequality (lean-excerpts/StratonovichHAMSecondMoment/PhaseBessel.lean.excerpt.txt:129-133), while TeX also requires 'the same bound ... with conjugate u' (manuscript/notes/integrated_wave_variance.tex:346-355). Row 631 similarly includes heat_envelope explicitly 'without its positivity clause' (lean-excerpts/StratonovichHAMSecondMoment/VariationalMean.lean.excerpt.txt:147-158), although TeX says 'The value at zero is strictly positive' (manuscript/notes/integrated_unmasked_variational.tex:34). Analogous mixed full-result/supporting-declaration groupings occur at rows 593, 595, 597, 603, 605, 610 and 611. Exact fix: split complete-result declarations from definitions, constituent clauses and proof helpers, placing the latter in accurately scoped proof-steps/foundation cells; do not transfer a wrapper's whole-result category to every supporting declaration.",
+      "K3 \u2014 Rows 621, 632 and 635 refer to omissions unrelated to their own declarations. At 621, mu_closedBall_le concludes '\u03bc (closedBall y r) \u2264 ... CGamma \u0393 * r ^ alpha' (lean-excerpts/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean.excerpt.txt:315-319); its restriction is to the closed-ball mass portion of E:masked-translated-ball (manuscript/notes/integrated_covariance_foundation.tex:46-51), not the real-H complexification omission named by section MaskedAuxiliaryNorm. At 632, heat_identity concludes only the Fourier identity (lean-excerpts/StratonovichHAMSecondMoment/VariationalMean.lean.excerpt.txt:137-144); E:variational-heat-envelope also contains the nonnegative upper bound and finiteness (manuscript/notes/integrated_unmasked_variational.tex:27-33), unrelated to the section heading's missing mixed derivatives. At 635, the conclusion is merely 'IsRayleighTrial ... \u2194 MemLp ... \u2227 HasWeakGradient ... \u2227 \u222b f\u00b2 = 1' (same excerpt:443-448), not the rate identity 'lambda\u00b2 = sup ...' (same TeX file:104-108). Exact fix: classify these as proof steps respectively describing the closed-ball bound, the heat spectral integrand/identity only, and the Rayleigh admissibility side-condition equivalence; remove the irrelevant narrower-result section references.",
+      "K4 \u2014 Row 633 mixes a manuscript result with an additional consequence not stated there. Lean explicitly calls variational_global_mean_lipschitz_paper 'a first-order complement ... (not a TeX statement)' and concludes a bound involving arbitrary x and x' (lean-excerpts/StratonovichHAMSecondMoment/VariationalMean.lean.excerpt.txt:428-436). TeX states '||h_s-h_t||_infinity \u2264 C_Psi |s-t|' and its proof discusses bounded derivatives and the time Lipschitz estimate, not the joint metric inequality (manuscript/notes/integrated_unmasked_variational.tex:64-96). The joint inequality is a valid consequence of bounded first derivatives, but implication is not statement-or-proof containment. Exact fix: move this declaration to a separate 'no direct label (foundation: first-order joint-Lipschitz complement to L:variational-global-mean)' row, retaining its explanatory cross-reference."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Reclassify row 594 as definitions/proof steps, not a whole temporal-completion result.",
+    "Split the mixed whole-result cells identified in K2 so every declaration receives a category appropriate to its own scope.",
+    "Replace the misleading narrower-result references at rows 621, 632 and 635 with the declaration-specific proof-step descriptions in K3.",
+    "Separate variational_global_mean_lipschitz_paper from row 633 and give it the no-direct-label foundation mapping specified in K4."
+  ],
+  "limitations": [
+    "Requirement A was completed. Partial coverage entries concern additional context sources, not gaps in mandatory reading.",
+    "Unlisted portions of the ledger and manuscript were not reviewed; conclusions concern the specified 81 Index rows.",
+    "Lean ground truth was the supplied excerpts, including their marked omissions. Proof correctness and compilation were outside this review.",
+    "This AI review is neither human verification nor a novelty audit."
+  ]
+}

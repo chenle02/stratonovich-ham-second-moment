@@ -1,0 +1,109 @@
+Narrow confirmation review: repairs to the wave-L9 Lean companion ledger, coverage and scope sentences after correspondence review
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+CONTEXT
+Wave L9 of the Lean companion (commit eb253a5022fa) was reviewed for statement
+correspondence with the manuscript; the reports are in prior-reports/.
+Main (aff740933af2: wave L8 with both rounds of its review repairs) was then
+merged in (7bd4c62d9f1f), and the wave-L9 findings were adjudicated
+(adjudication/ADJUDICATION.md) and repaired at commit 338cdba9e552
+(documentation only; no Lean file changed). This packet covers
+a re-run of the two checks the wave-L9 review g2 left INCONCLUSIVE (CROSS-REFERENCES for PhaseContractions and L9Completed; SCOPE-AND-NOT-IN-LEAN with the totals), now at the repaired commit, together with the class and count changes of the repairs.
+
+PACKET
+- candidate/statement-ledger.md : the ledger at 338cdba9e552 (repaired).
+- lean/coverage.yaml, docs/coverage-scope-tex.yaml, lean/claims.yaml,
+  lean/README.md, lean/FORMALIZATION.md, lean/COMPLETION.md,
+  lean/provenance/manuscript-anchor.json at 338cdba9e552.
+- the earlier review reports whose findings are checked here:
+    prior-reports/g2-report.json
+- adjudication/ADJUDICATION.md : the verdict and the change made for each
+  wave-L9 finding, the merge resolution and the class/count changes. Use
+  its file:line references as hints only; locate the text yourself.
+- diffs/findings-repair-7bd4c62-338cdba.diff : the repair commit alone;
+  diffs/l9-repair-eb253a5-338cdba.diff : everything since the reviewed
+  commit (merge plus repair); prior-eb253a5/... : the docs files at the
+  reviewed commit.
+- diffs/scope-index-notinlean-5ec3c11-338cdba.diff : every change to the
+  Scope, Index by label and Not in Lean sections since 5ec3c1195fb7 (before
+  the wave-L9 docs merge), merged and repaired;
+  diffs/coverage-5ec3c11-338cdba.diff : the same span for coverage.yaml,
+  the scope mirrors, README.md, FORMALIZATION.md and COMPLETION.md;
+  prior-5ec3c11/... : those files before the wave-L9 docs merge.
+- tools/mirror_check.py and tools/mirror_check.out : the orchestrator's
+  mirror completeness script and its output at 338cdba9e552 (evidence to
+  verify, not to trust).
+- Lean ground truth: every module under lean/StratonovichHAMSecondMoment/
+  and lean/StratonovichHAMAudit/ at 338cdba9e552; in particular
+    lean/StratonovichHAMSecondMoment/L9Completed.lean
+    lean/StratonovichHAMSecondMoment/PhaseContractions.lean
+    lean/StratonovichHAMSecondMoment/WaveGreenFourier.lean
+    lean/StratonovichHAMSecondMoment/LowAlphaConvolution.lean
+    lean/StratonovichHAMSecondMoment/OccupationCeilingExact.lean
+    lean/StratonovichHAMSecondMoment/RawOccupationEnergy.lean
+    lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean
+    lean/StratonovichHAMSecondMoment/FockForm.lean
+    lean/StratonovichHAMSecondMoment/HermiteFock.lean
+    lean/StratonovichHAMSecondMoment/GaussianHermite.lean
+    lean/StratonovichHAMAudit/HermiteWordFock.lean
+  and the refutation files under
+    (none in this packet)
+- manuscript/notes/... : all LaTeX inputs at revision a2844206199b;
+  excerpts/tex-excerpts.txt numbers the statements and proofs of the
+  labels concerned (convenience copy; manuscript/ is authoritative).
+- PROVENANCE.json : byte binding of every packet file.
+
+Proof correctness is NOT in question; correspondence is. Decide from the
+Lean and the TeX whether each prior finding is genuinely resolved, whether
+each repair is correct, and whether the repairs added any new overclaim.
+A hypothesis is a side condition the TeX leaves implicit only if the TeX
+implies it; a control that uses Lean's totalized arithmetic or lies
+outside the manuscript's domain is not a manuscript counterexample. Do not
+accept the ledger's or the adjudication's word. A deferral to a later
+Lean wave is acceptable only if the documentation at this commit is
+accurate without it.
+
+CHECKS (exactly these 5, in this order, with these claim strings):
+  1. claim "CROSS-REFERENCES": every place in the ledger outside the sections "PhaseContractions (whole result)" and "L9Completed (whole result)" that points to these sections, their declarations or the labels L:phase-contractions, L:low-alpha-convolution, E:phase-resolvent, E:phase-trace (other sections, the Scope bullets, the Index by label rows, the "Not in Lean" section) is accurate against the Lean declarations it names and the TeX
+  2. claim "SCOPE-AND-NOT-IN-LEAN": every passage of the Scope, Index by label and Not in Lean sections that changed between 5ec3c11 (before the wave-L9 docs merge) and this commit (diffs/scope-index-notinlean-5ec3c11-338cdba.diff) is accurate: which results need no supplied input and which have supplied inputs; the inputs discharged in L9Completed; the narrower results (L:damped-homogeneous-norms, the one-mode case of L:finite-word-cutoff, the FockForm parts); removed and new Not-in-Lean bullets; nothing formalized only in part is described as fully formalized and nothing newly formalized is still listed as missing; check each changed sentence against the Lean declarations it names (lean/claims.yaml gives each declaration's file)
+  3. claim "LEDGER-TOTALS": the totals line of the ledger and the Scope counts agree with a count of all per-module tables and of lean/claims.yaml (every claims.yaml decl has exactly one ledger row); the coverage.yaml header count of claims with no direct label and its summary sentence agree with the coverage rows (count the classes and conclusions yourself); the counts in README.md, FORMALIZATION.md and COMPLETION.md agree with these and with the adjudication's "Class and count changes" (47 same-assumptions, 30 inputs-supplied, 3 outside; 26/17/5/25/3/144 labelled results in COMPLETION)
+  4. claim "RESCAN": in the ledger sections Scope, Index by label, Not in Lean, no OTHER statement still overclaims in the way the wave-L8 and wave-L9 findings describe ("full lemma", "whole result", "every assertion" or "nothing supplied" for a narrower or input-carrying result; hypotheses called implicit that the TeX does not imply; integrability guarantees broader than the declarations conclude; controls relying on Lean's totalized arithmetic or outside the manuscript's domain described as manuscript counterexamples; counts); check against the Lean files and the TeX
+  5. claim "NO-REGRESSION": every hunk of diffs/findings-repair-7bd4c62-338cdba.diff that touches the sections, rows or files of this packet's scope is correct and introduces no new error or overclaim (conclusion_scope sentences plain English with no Lean names or TeX line numbers, ascii equal to conclusion_scope, the tex the same content, lambda described as the square root of the real Rayleigh supremum wherever described); no Lean declaration, statement or proof changed between eb253a5 and this commit except comments (diffs/l9-repair-eb253a5-338cdba.diff)
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: the prior reports listed above;
+   adjudication/ADJUDICATION.md;
+   diffs/findings-repair-7bd4c62-338cdba.diff;
+   the ledger sections "Scope" (lines 37-457), "Index by label" (lines 458-858), "Not in Lean" (lines 8869-9063);
+   diffs/scope-index-notinlean-5ec3c11-338cdba.diff and diffs/coverage-5ec3c11-338cdba.diff; for every changed sentence of the Scope, Index and Not in Lean sections, the Lean declarations it names (their statements, in the modules lean/claims.yaml points to); the declarations of lean/StratonovichHAMSecondMoment/L9Completed.lean and the statements of the wave-L9 wrappers named in the Scope; the summary, header and every row class/conclusion of lean/coverage.yaml (for the counts); the count lines of lean/README.md, lean/FORMALIZATION.md and lean/COMPLETION.md;
+   excerpts/tex-excerpts.txt.
+B. Other files: search as needed and read matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 5 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: resolved and correct; PASS_WITH_NOTES: resolved, with a minor
+  wording point reported as a minor finding; PARTIAL: only partly
+  resolved; FAIL: not resolved or a new error; INCONCLUSIVE: not
+  checkable). reason: evidence with file:line.
+- "findings": fatal = misstatement a citing reader would be misled by;
+  major = material imprecision; minor = wording. Each string starts with an
+  ID (C1, C2, ...), names the item, quotes Lean and TeX with file:line,
+  and gives the exact fix.
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "limitations": anything you could not check.
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES;
+  FAIL if any fatal or major finding or required repair; INCONCLUSIVE if
+  the reading requirement could not be met.
+- "confidence": high only if requirement A is complete.

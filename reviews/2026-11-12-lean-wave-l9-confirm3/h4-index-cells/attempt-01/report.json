@@ -1,0 +1,72 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "INCONCLUSIVE",
+  "confidence": "low",
+  "source_coverage": [
+    "candidate/statement-ledger.md: partial file; lines 1-180 and 473-873 read completely. All ## headings read at lines 37,473,874,887,899,916,928,954,977,986,995,1013,1034,1074,1106,1129,1154,1172,1185,1197,1220,1237,1249,1262,1279,1295,1308,1519,1691,1871,2050,2066,2273,2383,2515,2623,2679,2797,2814,2835,2944,3068,3089,3206,3351,3409,3501,3515,3608,3662,3792,3967,4082,4251,4399,4491,4601,4710,4793,4941,5001,5167,5330,5419,5528,5548,5666,5720,5843,5948,6078,6297,6349,6438,6591,6786,6897,7023,7169,7251,7386,7571,7707,7786,7959,8067,8212,8331,8463,8580,8738,8820,8885. Additional context read at 5720-5736,6297-6317,6349-6370,7251-7276.",
+    "lean/FORMALIZATION.md: complete, lines 1-149.",
+    "lean/coverage.yaml: complete, lines 1-1764.",
+    "excerpts/tex-excerpts.txt: complete, lines 1-2252.",
+    "diffs/docs-ba6c565-d5667f5.diff: complete, lines 1-1022; truncated portions reread.",
+    "adjudication/re-confirmation-round-ba6c565.md: complete, lines 1-132; treated as hints only.",
+    "lean/StratonovichHAMAudit/RawValueCeiling.lean: complete, lines 1-27.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean: complete, lines 1-179.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean: complete, lines 1-383.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean: partial, lines 455-470.",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean: partial, lines 743-774.",
+    "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean: partial, lines 130-186; search match at 782.",
+    "lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean: partial, lines 320-347 and 1115-1125; declaration-location search matches also read at 391,452,494,516,744,776,947,1126.",
+    "lean/StratonovichHAMSecondMoment/TerminalWick.lean: partial, lines 1-90,270-312,550-688; truncated portions reread.",
+    "manuscript/notes/integrated_spatial_occupation.tex: partial, lines 1-55,219-237,262-285,342-405.",
+    "manuscript/notes/integrated_intrinsic_constant.tex: partial, lines 1-52.",
+    "manuscript/notes/integrated_occupation_ceiling.tex: partial, lines 246-303.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: partial, lines 3570-3665."
+  ],
+  "checks": [
+    {
+      "claim": "INDEX-CELLS lines 475-574",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The entire Index range and heading list were read, but the required declaration-level reading was not completed. A definite convention mismatch remains: line 477 gives the unqualified labelled corollary for RawValueCeiling.strict_log_gap, although its section at line 1249 is category C and its Lean conclusion is only the scalar logarithmic inequality (RawValueCeiling.lean:12-14), not the corollary's moment bracket (integrated_occupation_ceiling.tex:252-266). See H1."
+    },
+    {
+      "claim": "INDEX-CELLS lines 575-673",
+      "verdict": "INCONCLUSIVE",
+      "reason": "Required declaration-level reading was incomplete. Independently, cells 661-662 do not carry or accurately reference their section's category-B limitation at line 6297: completion removes named inputs but leaves Rayleigh-rate/integral-cost modelling. The completed score conclusion explicitly uses integratedRate and rawCost (SpatialOccupationCompleted.lean:169-176). See H2."
+    },
+    {
+      "claim": "INDEX-CELLS lines 674-772",
+      "verdict": "INCONCLUSIVE",
+      "reason": "Required declaration-level reading was incomplete. Examined counterexamples include the undisclosed class-O limitation in cell 734, the blanket 'nothing supplied' qualifiers in cells 728-729 despite retained analytic hypotheses, and the category-B wording for mere foundation definitions in cell 744. Evidence: SpatialOccupationL7Completed.lean:85-116,323-374; OccupationPhysicalClass.lean:154-158; SpaceTimePositivity.lean:329-341,1120-1122. See H2-H4."
+    },
+    {
+      "claim": "INDEX-CELLS lines 773-869",
+      "verdict": "INCONCLUSIVE",
+      "reason": "Required declaration-level reading was incomplete. Cell 785 still says only 'L:terminal-wick (TerminalWick)' rather than stating or accurately referencing its narrower scope. The listed wrapper assumes supplied measurability, arbitrary measures specified by their masses, and an added covariance-measurability hypothesis, and concludes convergence only for real r (TerminalWick.lean:618-642), whereas the manuscript uses the constructed terminal-chain measures and states real or complex r (main TeX:3585-3598,3643-3644). See H5."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "H1 \u2014 Category-C audit cells remain unqualified labelled results. candidate/statement-ledger.md:477 reads only '`C:intrinsic-spatial-bracket`', whereas its section at 1249 says '(proof steps)'. Lean proves '0 < (q*Real.log q+(q-2*a)*Real.log (q-2*a))/2 -(q-a)*Real.log (q-a)' (lean/StratonovichHAMAudit/RawValueCeiling.lean:12-14). The labelled TeX corollary instead asserts bounds on C_2 and an energy comparison (manuscript/notes/integrated_occupation_ceiling.tex:252-266); the logarithmic inequality appears in its proof at 275-283. Exact fix: change this cell to '`C:intrinsic-spatial-bracket` (proof steps: scalar logarithmic gap only)' and apply the required proof-step classification to the other unqualified audit mappings rather than leaving bare result labels.",
+      "H2 \u2014 Completion cells omit the surviving category-B limitations. Cells 661-662 and 734 of candidate/statement-ledger.md say 'completed wrappers' without stating or explicitly referencing the relevant narrowing; their sections at 6297 and 6349 do state it. Lean's completed score conclusion is '\u2203 \u03a8 \u2208 CPos d, y < integratedRate ... - rawCost ... / 2' (lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean:169-176). The occupation wrappers quantify over 'OccupationPhysicalClass.IsOccField G DG' (SpatialOccupationL7Completed.lean:323-325,363-365), whose fields require joint a.e. strong measurability (OccupationPhysicalClass.lean:154-158). TeX defines O through strong H^1-measurability and claims the energy over 'exactly this full class' (manuscript/notes/integrated_spatial_occupation.tex:381-403). coverage.yaml:1364-1367 explicitly records the missing identification. Exact fix: mark cells 661-662 as narrower results for the Rayleigh-rate/integral-cost conclusions, retaining their existing supplied-input qualifications; mark cell 734 'narrower result: class O modelled by joint representatives; bridge not formalized; SquarePairingBounds discharged'.",
+      "H3 \u2014 'Nothing supplied' incorrectly covers conditional general helper theorems. candidate/statement-ledger.md:728 includes squareBound_of_smooth_completed under that qualifier, but Lean retains 'hsm : \u2200 \u03c6 \u03c8, ... pairing ... \u2264 ...' (lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean:85-90). Cell 729 similarly includes C4_square_CS_completed and square_pairing_CS_completed, both retaining 'hB : SquareBound \u0393 alpha R' (same file:97-109). SquareBound is itself the analytic pairing estimate (SpatialFourLinear.lean:461-464). TeX derives that estimate by Fatou before using it for Cauchy-Schwarz (manuscript/notes/integrated_spatial_occupation.tex:270-285). Only the density input has been discharged in these general helpers. Exact fix: split or qualify these cells: the exact-hypothesis paper wrappers have nothing supplied; squareBound_of_smooth_completed retains hsm, and the two general Cauchy-Schwarz helpers retain SquareBound.",
+      "H4 \u2014 Foundation definitions are classified as a narrower labelled result. candidate/statement-ledger.md:744 calls the SpaceTimePositivity declarations a 'narrower result' of E:positive-bochner-inclusion, contrary to the category-C heading at 5720 and Scope at 72-75. Lean's 'def stPair', 'def stForm', and 'def stFormIter' only define physical integral expressions (lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean:329-341,1120-1122). TeX's display asserts a bounded map J_G, its covariance-space norm identity, and its bound (manuscript/notes/integrated_intrinsic_constant.tex:24-30). Exact fix: classify cell 744 as 'foundation: definitions of the physical space-time integral forms only; J_G and its covariance-space norm identity not formalized', not as a labelled narrower result.",
+      "H5 \u2014 TerminalWick's principal Index cell does not disclose its category-B scope. candidate/statement-ledger.md:785 gives only '`L:terminal-wick` (TerminalWick)', despite the narrower-result heading at 7251. Lean assumes 'hmass', 'hmeas', and 'hK : Measurable ... K ...' and concludes '(\u2200 r : \u211d, Summable ...)' (lean/StratonovichHAMSecondMoment/TerminalWick.lean:623-640). TeX constructs the actual chain measure (manuscript/notes/notes_stratonovich_ham_second_moment.tex:3585-3598), assumes cellwise mean-square continuity rather than global covariance measurability (3600-3605), and states convergence for 'every real or complex r' (3643-3644). Exact fix: replace the qualifier with 'narrower result: real r only; chain measures specified by masses, hmeas supplied; Wick formula additionally assumes hK', or explicitly reference a section qualification containing those limitations."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Apply category-C proof-step wording to the unqualified audit Index mappings, including line 477 (H1).",
+    "Disclose or explicitly reference the surviving category-B modelling limitations in completion cells 661-662 and 734 (H2).",
+    "Restrict 'nothing supplied' in cells 728-729 to the appropriate paper wrappers and disclose the general helpers' retained hsm/SquareBound hypotheses (H3).",
+    "Reclassify cell 744 as foundation definitions, distinguishing them from the labelled inclusion assertion (H4).",
+    "Add the narrower-result scope and restrictions to TerminalWick's principal Index cell 785 (H5)."
+  ],
+  "limitations": [
+    "Requirement A was not completed: although the category definitions, complete Index, complete heading list, coverage.yaml and excerpts were read, most required Lean declaration statements were not examined. All four checks therefore remain INCONCLUSIVE; the findings are established examples, not an exhaustive inventory.",
+    "Partial Lean files were read only at the ranges listed; unlisted declaration signatures and their surrounding parameter contexts remain unchecked.",
+    "Authoritative manuscript passages were inspected for the reported findings, not for every Index mapping.",
+    "Packet hashes and source-revision byte bindings were not independently verified.",
+    "Proof correctness was outside scope. This AI review is neither human verification nor a novelty audit."
+  ]
+}

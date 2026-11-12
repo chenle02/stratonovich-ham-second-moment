@@ -1,0 +1,90 @@
+Narrow re-confirmation review: wave-L9 Lean companion documentation after the confirmation-round repairs
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+CONTEXT
+The wave-L9 documentation of the Lean companion was reviewed, repaired,
+and the repairs were confirmed by four reviews at commit 338cdba9e552 (c1-c4),
+which found three major and four minor points: a README count claiming
+"full conclusions" of fifty-two results, partial modules still headed
+"(whole result)", a dimension claim in COMPLETION.md, and wording. These
+were adjudicated (adjudication/confirmation-round-338cdba.md) and repaired
+at commit ba6c56559a47 (documentation only; the intervening merge of the
+comparator tier changed no documentation). This packet covers the findings of the four wave-L9 confirmation reviews (c1-c4, at commit 338cdba: three major, four minor), their repairs, the nine renamed partial-module ledger headings and the Scope bullet.
+
+PACKET
+- candidate/statement-ledger.md : the ledger at ba6c56559a47.
+- lean/README.md, lean/FORMALIZATION.md, lean/COMPLETION.md,
+  lean/coverage.yaml, lean/claims.yaml, docs/coverage-scope-tex.yaml at
+  ba6c56559a47.
+- adjudication/confirmation-round-338cdba.md : the decision and change per
+  finding, the renamed headings, and the argument for the headings that
+  keep "(whole result)" (hints only; verify yourself).
+- diffs/docs-338cdba-ba6c565.diff : every documentation change of this
+  repair (README.md, FORMALIZATION.md, COMPLETION.md, the ledger).
+- the confirmation reports at 338cdba9e552: prior-reports/c1-damped-green-merge-report.json,
+  prior-reports/c2-phase-occupation-complex-report.json,
+  prior-reports/c3-hermite-fock-word-report.json, prior-reports/c4-scope-totals-rerun-report.json.
+- prior-338cdba/... : the four docs files before this repair.
+- adjudication/l8-round1-ADJUDICATION.md, adjudication/l8-round2-confirmation-round.md :
+  the wave-L8 repairs that must not be weakened (hints only).
+- refutation files: lean/refutations/complex-phase-scalar/,
+  lean/refutations/wave-green-fourier/.
+- Lean ground truth at ba6c56559a47: every module under
+  lean/StratonovichHAMSecondMoment/ and lean/StratonovichHAMAudit/.
+- manuscript/notes/... : all LaTeX inputs at revision a2844206199b;
+  excerpts/tex-excerpts.txt numbers the statements of the labels concerned
+  (convenience copy; manuscript/ is authoritative).
+- PROVENANCE.json : byte binding of every packet file.
+
+Proof correctness is NOT in question; correspondence of the documentation
+is. "(whole result)" is accurate only for a module that proves every
+conclusion of the labelled result it carries, under the manuscript's
+hypotheses or with named inputs that are disclosed (directly, or through a
+completion module that discharges its abstract inputs); a module that
+formalizes only proof steps, a part of a result, or a special case is not
+a whole result. Do not accept the ledger's or the adjudication's word.
+
+CHECKS (exactly these 10, in this order, with these claim strings):
+  1. claim "c1-C1": finding C1 (major) of prior-reports/c1-damped-green-merge-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/confirmation-round-338cdba.md is justified (a deferral only if the documentation at this commit is accurate without the deferred change); every place the adjudication says it changed says exactly what the Lean and the TeX at a284420 support
+  2. claim "c1-C2": finding C2 (minor) of prior-reports/c1-damped-green-merge-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/confirmation-round-338cdba.md is justified (a deferral only if the documentation at this commit is accurate without the deferred change); every place the adjudication says it changed says exactly what the Lean and the TeX at a284420 support
+  3. claim "c2-C1": finding C1 (minor) of prior-reports/c2-phase-occupation-complex-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/confirmation-round-338cdba.md is justified (a deferral only if the documentation at this commit is accurate without the deferred change); every place the adjudication says it changed says exactly what the Lean and the TeX at a284420 support
+  4. claim "c2-C2": finding C2 (minor) of prior-reports/c2-phase-occupation-complex-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/confirmation-round-338cdba.md is justified (a deferral only if the documentation at this commit is accurate without the deferred change); every place the adjudication says it changed says exactly what the Lean and the TeX at a284420 support
+  5. claim "c3-C1": finding C1 (major) of prior-reports/c3-hermite-fock-word-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/confirmation-round-338cdba.md is justified (a deferral only if the documentation at this commit is accurate without the deferred change); every place the adjudication says it changed says exactly what the Lean and the TeX at a284420 support
+  6. claim "c4-C1": finding C1 (major) of prior-reports/c4-scope-totals-rerun-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/confirmation-round-338cdba.md is justified (a deferral only if the documentation at this commit is accurate without the deferred change); every place the adjudication says it changed says exactly what the Lean and the TeX at a284420 support
+  7. claim "RENAMED-HEADINGS": each of the nine renamed ledger headings (line 1509: "ComplexPhaseScalar (parts of results, analytic inputs supplied)"; line 2613: "GaussianComparison (part of a result: the finite Gaussian comparison)"; line 3196: "IntervalScalar (proof steps and parts of results, analytic inputs supplied; `E:static-block-series` in full)"; line 3341: "IntervalScalarCompleted (parts of results, analytic inputs supplied)"; line 5538: "RemoveMask (part of a result, one display over a supplied input)"; line 6887: "StaticPhaseCauchy (proof steps of `P:static-phase-all-orders`, analytic inputs supplied)"; line 7013: "SymplecticFree (part of a result, analytic inputs supplied)"; line 7241: "TerminalWick (part of a result, analytic inputs supplied)"; line 8570: "WaveTwoVariances (part of a result, named inputs supplied; spectral core in full)") states accurately what its module formalizes (which labelled result or part, which inputs are supplied, what is in full), consistent with its section prose, its Lean module (the paper wrappers and their hypotheses), its coverage.yaml rows and FORMALIZATION.md; every Index-by-label reference to the old heading text was updated, and no Index row still calls these modules "(whole result)" unless the row is a definition or bound formalized in full with no input
+  8. claim "SCOPE-BULLET": the Scope bullet of the ledger that names the modules formalizing only proof steps or parts of results (and the "fifty-two labelled results ... to the scopes specified below" sentences in the Scope, README.md and FORMALIZATION.md) is accurate and complete: it names exactly the modules and audit file that FORMALIZATION.md counts as parts of labelled results, and nothing calls them whole results
+  9. claim "NO-NEW-OVERCLAIM": every hunk of diffs/docs-338cdba-ba6c565.diff is correct and introduces no new error or overclaim: counts, dimensions (low-alpha convolution in d = 1, 2, 3; phase contractions in d = 3), the descriptions of refutations as refuting specified variants with their domains, the control-target wording of BlockExponent and PhaseWeight against lean/refutations/complex-phase-scalar/
+  10. claim "L8-REPAIRS-KEPT": no hunk of diffs/docs-338cdba-ba6c565.diff removes or weakens a wave-L8 repair listed in adjudication/l8-round1-ADJUDICATION.md or adjudication/l8-round2-confirmation-round.md (damped-norm covariance-smoothing limitation, R_0 at alpha = 0 controls as totalized-division controls, TerminalWick hK as an added restriction, FiniteWick integrability limited to monomials, Scope integrability sentence, FiniteWick/WaveGreen wording)
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: the four prior reports; adjudication/confirmation-round-338cdba.md; diffs/docs-338cdba-ba6c565.diff; for each finding and each changed hunk, the passage at this commit in context; the Scope section and the Index-by-label rows of the renamed modules in candidate/statement-ledger.md; the opening prose (up to the row table) of each renamed section; the module-classification table and paragraphs of lean/FORMALIZATION.md (lines 75-140); for each renamed module, its paper wrappers (search "_paper") with their hypotheses and its coverage.yaml rows; the refutation files under lean/refutations/complex-phase-scalar/ and lean/refutations/wave-green-fourier/ArchimedesUnit.lean; excerpts/tex-excerpts.txt; for the L8-REPAIRS-KEPT check, only the hunks of the diff and the passages they touch.
+B. Other files: search as needed and read matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 10 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct, with a minor wording point
+  reported as a minor finding; PARTIAL: only partly correct or resolved;
+  FAIL: wrong, not resolved, or a new error; INCONCLUSIVE: not checkable).
+  reason: evidence with file:line.
+- "findings": fatal = misstatement a citing reader would be misled by;
+  major = material imprecision; minor = wording. Each string starts with an
+  ID (R1, R2, ...), names the item, quotes Lean and TeX with file:line,
+  and gives the exact fix.
+- "required_repairs": only changes that must be made before the
+  documentation can be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "limitations": anything you could not check.
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES;
+  FAIL if any fatal or major finding or required repair; INCONCLUSIVE if
+  the reading requirement could not be met.
+- "confidence": high only if requirement A is complete.

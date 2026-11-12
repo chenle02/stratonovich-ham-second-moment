@@ -1,0 +1,84 @@
+Re-review round 4: wave-L9 Lean companion ledger headings, Index cells and counts under the strict categories and the split modelled-object rule
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+CONTEXT
+The ledger of the Lean companion classifies every section heading and every
+Index cell as (A) "whole result", (B) "narrower result: <what is missing>"
+or (C) "foundation: ..." / "proof steps ...", as defined in the ledger
+Scope. A round-3 review at commit d5667f525407 found incomplete narrower
+headings, missing coverage fields and Index cells without categories. The
+author then fixed a SPLIT rule for modelled objects: a registered model
+choice (the standard construction of a manuscript object, recorded with the
+identification that is not formalized; M1 = the d = 3 wave Green measure
+via volume.toSphere) keeps a result whole and must be named; a missing
+construction (an abstract object standing in for one the manuscript
+constructs) makes the result narrower. Apply the register as written in the
+Scope, not the earlier unqualified modelled-object clause. The repairs and
+the rule are at commit e2c50b55cc6f (documentation only); the decisions are in
+adjudication/round3-d5667f5-split-rule.md. This packet covers the three whole-result sections that rely on the registered model choice M1, the register itself, and the results moved to narrower for missing constructions.
+
+PACKET
+- candidate/statement-ledger.md : the ledger at e2c50b55cc6f.
+- lean/README.md, lean/FORMALIZATION.md, lean/COMPLETION.md,
+  lean/coverage.yaml, docs/coverage-scope-tex.yaml at e2c50b55cc6f.
+- adjudication/round3-d5667f5-split-rule.md : the decision per round-3
+  finding, the split rule and the counts (hints only; verify yourself).
+- diffs/docs-d5667f5-e2c50b5.diff : every documentation change of this
+  repair.
+- Lean ground truth at e2c50b55cc6f: every module under lean/StratonovichHAMSecondMoment/ and
+  lean/StratonovichHAMAudit/, and lean/claims.yaml.
+- the round-3 reports:
+    prior-reports/h1-headings-lib-a-report.json
+    prior-reports/h2-headings-lib-b-report.json
+    prior-reports/h3-headings-lib-c-audit-report.json
+    prior-reports/h4-index-cells-report.json
+    prior-reports/h5-consistency-r1-diff-report.json
+- manuscript/notes/... : all LaTeX inputs at revision a2844206199b;
+  excerpts/tex-excerpts.txt numbers the statements of the labels concerned
+  (convenience copy; manuscript/ is authoritative).
+- PROVENANCE.json : byte binding of every packet file.
+
+Proof correctness is NOT in question; correspondence of the documentation
+is. Discharging a named input in a completion module does not make a
+narrower result whole. Do not accept the ledger's or the adjudication's
+word.
+
+CHECKS (exactly these 5, in this order, with these claim strings):
+  1. claim "HEADING L9Completed": the ledger heading "## L9Completed (whole result)" (line 3634; section lines 3634-3689) is correctly category A under the model-choice register: its only modelled object is the registered model choice M1 (the d = 3 wave Green measure via volume.toSphere), every other conclusion of the labelled result is a Lean conclusion under the manuscript's hypotheses, the section names M1, and the coverage rows [L:low-alpha-convolution (same-assumptions, full); L:phase-contractions (same-assumptions, full)] have conclusion full; if any other modelled object or missing construction remains (one that the register does not cover), the result is category B; apply the register as written, not the earlier unqualified modelled-object clause
+  2. claim "HEADING LowAlphaConvolution": the ledger heading "## LowAlphaConvolution (whole result)" (line 3690; section lines 3690-3821) is correctly category A under the model-choice register: its only modelled object is the registered model choice M1 (the d = 3 wave Green measure via volume.toSphere), every other conclusion of the labelled result is a Lean conclusion under the manuscript's hypotheses, the section names M1, and the coverage rows [L:low-alpha-convolution (same-assumptions, full)] have conclusion full; if any other modelled object or missing construction remains (one that the register does not cover), the result is category B; apply the register as written, not the earlier unqualified modelled-object clause
+  3. claim "HEADING PhaseContractions": the ledger heading "## PhaseContractions (whole result)" (line 5031; section lines 5031-5198) is correctly category A under the model-choice register: its only modelled object is the registered model choice M1 (the d = 3 wave Green measure via volume.toSphere), every other conclusion of the labelled result is a Lean conclusion under the manuscript's hypotheses, the section names M1, and the coverage rows [L:phase-contractions (same-assumptions, full)] have conclusion full; if any other modelled object or missing construction remains (one that the register does not cover), the result is category B; apply the register as written, not the earlier unqualified modelled-object clause
+  4. claim "REGISTER-TEXT": the model-choice register bullet of the ledger Scope and its counterparts in lean/FORMALIZATION.md and lean/README.md state M1 accurately (the Lean definition of waveGreen in d = 3 in lean/StratonovichHAMSecondMoment/WaveGreen.lean, and the identification with surface measure that is not proved), state the split rule exactly (registered standard model choices keep a result whole and are named; missing constructions make it narrower), and the register is applied consistently: every section and coverage row whose only modelled object is M1 is whole and names M1, and no section relies on the register for an object that is not M1
+  5. claim "MISSING-CONSTRUCTIONS": the results the split rule moves to narrower because of missing constructions (P:masked-quotient-obstruction / QuotientObstruction: noise W; L:raw-block-indexed-cone / IndexedCone: ground family; L:uniform-series-tail / UniformSeriesTail and the L8Completed composition: chain measures) are category B in their headings, Index cells and coverage rows (conclusion weaker, with scope sentences and TeX mirrors that name the missing construction); and no other section headed "whole result" depends on a construction that is missing in Lean (search the "whole result" sections for "not constructed", "abstract", "supplied", "not formalized")
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: the three heading categories and the model-choice register defined in the ledger Scope (candidate/statement-ledger.md, the bullets "Section headings use three categories" and "Model-choice register", about lines 62-96) and in lean/FORMALIZATION.md ("Heading categories"); adjudication/round3-d5667f5-split-rule.md; the prior-reports listed above; the heading line and opening prose (up to the row table) of each of these ledger sections: "L9Completed" (lines 3634-3689), "LowAlphaConvolution" (lines 3690-3821), "PhaseContractions" (lines 5031-5198); every sentence of each such section that mentions a supplied or named input, a narrower reading, a modelled object, a missing construction or what is not formalized (search each section); for each library module of these sections, its paper and completed wrappers (search "_paper" and "_completed" in its file and in the completion modules) with their hypotheses and conclusions; the coverage.yaml rows named in the checks and their docs/coverage-scope-tex.yaml entries; excerpts/tex-excerpts.txt; the Scope section of candidate/statement-ledger.md (lines 37-120), lean/StratonovichHAMSecondMoment/WaveGreen.lean lines 1-140, and the list of all "## " headings.
+B. Other files: search as needed and read matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 5 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct, with a minor wording point
+  reported as a minor finding; PARTIAL: only partly correct or resolved;
+  FAIL: wrong, not resolved, or a new error; INCONCLUSIVE: not checkable).
+  reason: evidence with file:line.
+- "findings": fatal = misstatement a citing reader would be misled by;
+  major = material imprecision; minor = wording. Each string starts with an
+  ID (K1, K2, ...), names the item, quotes Lean and TeX with file:line,
+  and gives the exact fix.
+- "required_repairs": only changes that must be made before the
+  documentation can be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "limitations": anything you could not check.
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES;
+  FAIL if any fatal or major finding or required repair; INCONCLUSIVE if
+  the reading requirement could not be met.
+- "confidence": high only if requirement A is complete.

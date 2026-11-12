@@ -1,0 +1,99 @@
+Re-review round 8: wave-L9 Lean companion ledger, label assignments and pointer Index
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+CONTEXT
+The statement ledger of the Lean companion has per-module sections, each
+headed with one of three categories ((A) "whole result", (B) "narrower
+result: <what is missing>", (C) "foundation: ..." / "proof steps ...",
+defined in the ledger Scope, together with a model-choice register), and a
+table per section giving, for each declaration, its manuscript label, what
+it states and its supplied inputs. After round 6 (reviewed commit
+434a7e2ff604), the author decided that the "Index by label" is a POINTER
+table: one row per manuscript label plus one "no direct label" row, listing
+the sections whose tables use the label, each with the category phrase of
+that section's heading; per-declaration statements and inputs live only in
+the section tables. Rule now applied: every backticked label in a
+section-table label cell is an assignment and creates an Index pointer;
+context-only mentions are moved to the "What it states" cell as
+"(Context: ...)"; no-direct-label cells carry no label. The repair is at
+commit 06ee849d5592 (documentation only); the decisions are in
+adjudication/round7-434a7e2.md. Mechanical
+checkers and their outputs are in tools/ (evidence to verify, not to
+trust). This packet covers every label kept as an assignment in a non-first position or newly backticked, and the other changed table rows.
+
+PACKET
+- candidate/statement-ledger.md : the ledger at 06ee849d5592.
+- lean/README.md, lean/FORMALIZATION.md, lean/COMPLETION.md,
+  lean/coverage.yaml, lean/claims.yaml, docs/coverage-scope-tex.yaml at
+  06ee849d5592.
+- adjudication/round7-434a7e2.md : the decisions, with the tables of moved
+  context labels, cleared cells and added pointers (hints only).
+- diffs/docs-434a7e2-06ee849.diff : every documentation change of this
+  repair.
+- tools/pointer_index.py, tools/index_category_check.py,
+  tools/index_category_check.out, tools/index_check_pointer.py,
+  tools/index_check_pointer.out : generator, checkers and their outputs.
+- lean/StratonovichHAMSecondMoment/*.lean and lean/StratonovichHAMAudit/*.lean : every module at 06ee849d5592 (full files).
+- manuscript/notes/... : all LaTeX inputs at revision a2844206199b;
+  excerpts/tex-excerpts.txt numbers the statements and proofs of the labels
+  concerned (convenience copy; manuscript/ is authoritative).
+- PROVENANCE.json : byte binding of every packet file.
+
+Proof correctness is NOT in question; correspondence of the documentation
+is. Do not accept the ledger's, the adjudication's or a checker's word.
+
+CHECKS (exactly these 22, in this order, with these claim strings):
+  1. claim "ASSIGN E:finite-word-cutoff / HermiteWordFock": the label E:finite-word-cutoff written in the label cell of the HermiteWordFock table row(s) at candidate/statement-ledger.md lines 900 is a genuine ASSIGNMENT: the Lean declaration(s) of that row state (or are a step of the proof of) exactly what E:finite-word-cutoff labels in the TeX at a284420, with the hypotheses the row discloses, and the Index pointer (E:finite-word-cutoff -> HermiteWordFock) is therefore right; not a mere context mention
+  2. claim "ASSIGN E:fock-sandwich / FockForm": the label E:fock-sandwich written in the label cell of the FockForm table row(s) at candidate/statement-ledger.md lines 2331 is a genuine ASSIGNMENT: the Lean declaration(s) of that row state (or are a step of the proof of) exactly what E:fock-sandwich labels in the TeX at a284420, with the hypotheses the row discloses, and the Index pointer (E:fock-sandwich -> FockForm) is therefore right; not a mere context mention
+  3. claim "ASSIGN E:gaussian-trace-holder / FiniteGaussianMatrix": the label E:gaussian-trace-holder written in the label cell of the FiniteGaussianMatrix table row(s) at candidate/statement-ledger.md lines 2018 is a genuine ASSIGNMENT: the Lean declaration(s) of that row state (or are a step of the proof of) exactly what E:gaussian-trace-holder labels in the TeX at a284420, with the hypotheses the row discloses, and the Index pointer (E:gaussian-trace-holder -> FiniteGaussianMatrix) is therefore right; not a mere context mention
+  4. claim "ASSIGN E:gaussian-trace-word / FiniteGaussianMatrix": the label E:gaussian-trace-word written in the label cell of the FiniteGaussianMatrix table row(s) at candidate/statement-ledger.md lines 2016 is a genuine ASSIGNMENT: the Lean declaration(s) of that row state (or are a step of the proof of) exactly what E:gaussian-trace-word labels in the TeX at a284420, with the hypotheses the row discloses, and the Index pointer (E:gaussian-trace-word -> FiniteGaussianMatrix) is therefore right; not a mere context mention
+  5. claim "ASSIGN E:interval-column / FockForm": the label E:interval-column written in the label cell of the FockForm table row(s) at candidate/statement-ledger.md lines 2325 is a genuine ASSIGNMENT: the Lean declaration(s) of that row state (or are a step of the proof of) exactly what E:interval-column labels in the TeX at a284420, with the hypotheses the row discloses, and the Index pointer (E:interval-column -> FockForm) is therefore right; not a mere context mention
+  6. claim "ASSIGN E:spatial-static-score / SpatialSmoothRatio": the label E:spatial-static-score written in the label cell of the SpatialSmoothRatio table row(s) at candidate/statement-ledger.md lines 6411 is a genuine ASSIGNMENT: the Lean declaration(s) of that row state (or are a step of the proof of) exactly what E:spatial-static-score labels in the TeX at a284420, with the hypotheses the row discloses, and the Index pointer (E:spatial-static-score -> SpatialSmoothRatio) is therefore right; not a mere context mention
+  7. claim "ASSIGN E:temporal-equilibrium-density / TemporalEquilibrium": the label E:temporal-equilibrium-density written in the label cell of the TemporalEquilibrium table row(s) at candidate/statement-ledger.md lines 7069 is a genuine ASSIGNMENT: the Lean declaration(s) of that row state (or are a step of the proof of) exactly what E:temporal-equilibrium-density labels in the TeX at a284420, with the hypotheses the row discloses, and the Index pointer (E:temporal-equilibrium-density -> TemporalEquilibrium) is therefore right; not a mere context mention
+  8. claim "ASSIGN E:temporal-equilibrium-mass / TemporalEquilibrium": the label E:temporal-equilibrium-mass written in the label cell of the TemporalEquilibrium table row(s) at candidate/statement-ledger.md lines 7070, 7081, 7082 is a genuine ASSIGNMENT: the Lean declaration(s) of that row state (or are a step of the proof of) exactly what E:temporal-equilibrium-mass labels in the TeX at a284420, with the hypotheses the row discloses, and the Index pointer (E:temporal-equilibrium-mass -> TemporalEquilibrium) is therefore right; not a mere context mention
+  9. claim "ASSIGN E:temporal-equilibrium-potential / TemporalEquilibrium": the label E:temporal-equilibrium-potential written in the label cell of the TemporalEquilibrium table row(s) at candidate/statement-ledger.md lines 7058, 7080 is a genuine ASSIGNMENT: the Lean declaration(s) of that row state (or are a step of the proof of) exactly what E:temporal-equilibrium-potential labels in the TeX at a284420, with the hypotheses the row discloses, and the Index pointer (E:temporal-equilibrium-potential -> TemporalEquilibrium) is therefore right; not a mere context mention
+  10. claim "ASSIGN L:low-alpha-convolution / ClockCopy": the label L:low-alpha-convolution written in the label cell of the ClockCopy table row(s) at candidate/statement-ledger.md lines 1275 is a genuine ASSIGNMENT: the Lean declaration(s) of that row state (or are a step of the proof of) exactly what L:low-alpha-convolution labels in the TeX at a284420, with the hypotheses the row discloses, and the Index pointer (L:low-alpha-convolution -> ClockCopy) is therefore right; not a mere context mention
+  11. claim "ASSIGN L:low-alpha-convolution / MaskedSpectralGrowth": the label L:low-alpha-convolution written in the label cell of the MaskedSpectralGrowth table row(s) at candidate/statement-ledger.md lines 4215, 4216, 4217 is a genuine ASSIGNMENT: the Lean declaration(s) of that row state (or are a step of the proof of) exactly what L:low-alpha-convolution labels in the TeX at a284420, with the hypotheses the row discloses, and the Index pointer (L:low-alpha-convolution -> MaskedSpectralGrowth) is therefore right; not a mere context mention
+  12. claim "ASSIGN L:white-test / WaveGreen": the label L:white-test written in the label cell of the WaveGreen table row(s) at candidate/statement-ledger.md lines 8267 is a genuine ASSIGNMENT: the Lean declaration(s) of that row state (or are a step of the proof of) exactly what L:white-test labels in the TeX at a284420, with the hypotheses the row discloses, and the Index pointer (L:white-test -> WaveGreen) is therefore right; not a mere context mention
+  13. claim "ASSIGN P:compact-F-complement / IndexedCone": the label P:compact-F-complement written in the label cell of the IndexedCone table row(s) at candidate/statement-ledger.md lines 2992 is a genuine ASSIGNMENT: the Lean declaration(s) of that row state (or are a step of the proof of) exactly what P:compact-F-complement labels in the TeX at a284420, with the hypotheses the row discloses, and the Index pointer (P:compact-F-complement -> IndexedCone) is therefore right; not a mere context mention
+  14. claim "ASSIGN P:compact-ground-family / IndexedCone": the label P:compact-ground-family written in the label cell of the IndexedCone table row(s) at candidate/statement-ledger.md lines 2992 is a genuine ASSIGNMENT: the Lean declaration(s) of that row state (or are a step of the proof of) exactly what P:compact-ground-family labels in the TeX at a284420, with the hypotheses the row discloses, and the Index pointer (P:compact-ground-family -> IndexedCone) is therefore right; not a mere context mention
+  15. claim "ASSIGN E:masked-time-schur / TimeCompletion": the label E:masked-time-schur written in the label cell of the TimeCompletion table row(s) at candidate/statement-ledger.md lines 7337, 7344, 7357, 7359 is a genuine ASSIGNMENT: the Lean declaration(s) of that row state (or are a step of the proof of) exactly what E:masked-time-schur labels in the TeX at a284420, with the hypotheses the row discloses, and the Index pointer (E:masked-time-schur -> TimeCompletion) is therefore right; not a mere context mention
+  16. claim "CHANGED line 1343": the changed table row at candidate/statement-ledger.md line 1343 (section ClockCopy): the change (see diffs/docs-434a7e2-06ee849.diff) is correct; every backticked label in its label cell is a genuine assignment of the declaration, and the statement and inputs cells are accurate against the Lean declaration and the TeX
+  17. claim "CHANGED line 2016": the changed table row at candidate/statement-ledger.md line 2016 (section FiniteGaussianMatrix): the change (see diffs/docs-434a7e2-06ee849.diff) is correct; every backticked label in its label cell is a genuine assignment of the declaration, and the statement and inputs cells are accurate against the Lean declaration and the TeX
+  18. claim "CHANGED line 2018": the changed table row at candidate/statement-ledger.md line 2018 (section FiniteGaussianMatrix): the change (see diffs/docs-434a7e2-06ee849.diff) is correct; every backticked label in its label cell is a genuine assignment of the declaration, and the statement and inputs cells are accurate against the Lean declaration and the TeX
+  19. claim "CHANGED line 3016": the changed table row at candidate/statement-ledger.md line 3016 (section IndexedCone): the change (see diffs/docs-434a7e2-06ee849.diff) is correct; every backticked label in its label cell is a genuine assignment of the declaration, and the statement and inputs cells are accurate against the Lean declaration and the TeX
+  20. claim "CHANGED line 3491": the changed table row at candidate/statement-ledger.md line 3491 (section L9Completed): the change (see diffs/docs-434a7e2-06ee849.diff) is correct; every backticked label in its label cell is a genuine assignment of the declaration, and the statement and inputs cells are accurate against the Lean declaration and the TeX
+  21. claim "CHANGED line 4956": the changed table row at candidate/statement-ledger.md line 4956 (section PhaseContractions): the change (see diffs/docs-434a7e2-06ee849.diff) is correct; every backticked label in its label cell is a genuine assignment of the declaration, and the statement and inputs cells are accurate against the Lean declaration and the TeX
+  22. claim "CHANGED line 6727": the changed table row at candidate/statement-ledger.md line 6727 (section SpectralMassIdentity): the change (see diffs/docs-434a7e2-06ee849.diff) is correct; every backticked label in its label cell is a genuine assignment of the declaration, and the statement and inputs cells are accurate against the Lean declaration and the TeX
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: adjudication/round7-434a7e2.md; diffs/docs-434a7e2-06ee849.diff (the hunks outside the "Index by label" section); for every check, the ledger row(s) named, the header of their section table, the Lean declaration(s) they name (complete statement, in the module file under lean/), and the TeX statement or proof lines of every label in the row (excerpts/tex-excerpts.txt; manuscript/ is authoritative).
+B. Other files: search as needed and read matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 22 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct, with a minor wording point
+  reported as a minor finding; PARTIAL: only partly correct; FAIL: wrong;
+  INCONCLUSIVE: not checkable). reason: evidence with file:line.
+- "findings": fatal = misstatement a citing reader would be misled by;
+  major = material imprecision; minor = wording. Each string starts with an
+  ID (P1, P2, ...), names the item, quotes Lean and TeX with file:line,
+  and gives the exact fix.
+- "required_repairs": only changes that must be made before the
+  documentation can be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "limitations": anything you could not check.
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES;
+  FAIL if any fatal or major finding or required repair; INCONCLUSIVE if
+  the reading requirement could not be met.
+- "confidence": high only if requirement A is complete.

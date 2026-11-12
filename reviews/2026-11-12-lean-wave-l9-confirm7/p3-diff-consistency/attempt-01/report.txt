@@ -1,0 +1,51 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "INCONCLUSIVE",
+  "confidence": "medium",
+  "source_coverage": [
+    "candidate/statement-ledger.md: partial; full text lines 1-730, 923, 1338, 1505, 2400-2415, 2920-3045, 3428-3450, 3484-3503, 4825-4843, 5156, 5238, 5243, 5424, 5489, 7077, 7200, 7210; additional first-cell text at lines 891, 1266, 2316, 2322, 3226-3227, 3482, 4197, 4206-4208, 4947, 5120, 6400, 6402, 6407-6408, 6411, 6414, 6718, 6720, 7049, 7060-7061, 7071-7073, 7328, 8012, 8037, 8258, 8699. Entire file machine-parsed for counts and pointer comparisons, not completely textually reviewed.",
+    "diffs/docs-a723987-434a7e2.diff: partial; lines 1-240, 855-991.",
+    "adjudication/round6-pointer-index.md: complete; lines 1-65.",
+    "lean/FORMALIZATION.md: complete; lines 1-161.",
+    "lean/README.md: complete; lines 1-519.",
+    "lean/COMPLETION.md: complete; lines 1-281.",
+    "lean/coverage.yaml: partial; lines 1-167, 169-172, 236, 238-241, 289, 291-294, 303, 305-308, 316, 318-320, 324, 326-329, 339, 341-344, 368, 370-373, 412, 414-416, 423, 425-427, 435, 437-439, 443, 445-448, 462, 464-467, 493, 495-498, 519, 521-523, 532, 534-536, 563, 565-567, 577, 579-581, 595, 597-599, 617, 619-621, 631, 633-635, 642, 644-647, 660, 662-664, 673, 675-677, 720, 722-725, 738, 740-742, 757, 759-762, 798, 800-803, 811, 813-816, 824, 826-828, 845, 847-849, 856, 858-861, 881, 883-886, 926, 928, 931-932, 934, 936-939, 975, 977-978, 981-982, 985, 987-990, 1009, 1011-1012, 1023-1024, 1029, 1031-1034, 1049, 1051-1053, 1064, 1066-1068, 1080, 1082-1085, 1096, 1098-1100, 1120, 1122-1124, 1137, 1139-1141, 1151, 1153-1156, 1164, 1166-1169, 1177, 1179-1182, 1215, 1217-1220, 1242, 1244-1247, 1264, 1266-1269, 1303, 1305-1307, 1321, 1323-1326, 1344, 1346-1349, 1376, 1378-1381, 1401, 1403-1406, 1416, 1418-1421, 1429, 1431-1434, 1467, 1469-1472, 1489, 1491-1494, 1524, 1526-1529, 1553, 1555-1558, 1602, 1604-1607, 1632, 1634-1637, 1654, 1656-1659, 1671, 1673-1676, 1702, 1704-1707, 1716, 1718-1720, 1727-1781. Header, summary and every row's class/conclusion were read; entire file also machine-parsed.",
+    "lean/claims.yaml: partial; lines 1-55, 1335-1380, 2010-2065, 2071, 2106, 2120, 2127, 2134, 2176, 2183, 2190, 2197, 2204, 2211, 2218, 2225, 2232, 2239, 2246, 2253, 2295, 4681, 14036, 14106, 16446. Entire file machine-parsed for declaration identifiers and kinds.",
+    "tools/pointer_index.py: complete; lines 1-38.",
+    "tools/index_category_check.py: complete; lines 1-72.",
+    "tools/index_category_check.out: complete; line 1.",
+    "tools/index_check_pointer.py: complete; lines 1-48.",
+    "tools/index_check_pointer.out: complete; lines 1-8.",
+    "manuscript/notes/integrated_wave_variance.tex: partial; lines 1-150.",
+    "manuscript/notes/integrated_compact_mean_family.tex: partial; lines 30-60, 250-360."
+  ],
+  "checks": [
+    {
+      "claim": "NO-NEW-OVERCLAIM",
+      "verdict": "INCONCLUSIVE",
+      "reason": "A definite pointer-completeness defect is established: candidate/statement-ledger.md:2983 explicitly co-labels GroundFamily with P:compact-F-projection, P:compact-F-complement and P:compact-ground-family, but the complete Index at lines 506-688 contains only the first of these. The generator and both checkers extract only the initial label (tools/pointer_index.py:25-28; tools/index_category_check.py:53-54; tools/index_check_pointer.py:12-15,35), explaining their false-negative completeness checks. Scope lines 79-84 promise pointers for the labels used by section tables. However, diff lines 241-854 and most section-table rows corresponding to removed Index entries were not textually reviewed; requirement C therefore prevents a completed verdict on this compound claim."
+    },
+    {
+      "claim": "CLASSIFICATION-CONSISTENCY",
+      "verdict": "PASS",
+      "reason": "Independent parsing counted 2468 distinct table declarations: 1300 labelled and 1168 without a direct label; their identifiers equal the claims.yaml identifiers, whose kinds count 2050 theorems and 418 definitions. These agree with candidate/statement-ledger.md:44-45,690-691, lean/README.md:278-280,449 and tools/index_check_pointer.out:1-8. Independent coverage counts are 47 same-assumptions (29 full, 18 weaker), 30 inputs-supplied (all weaker), and 3 outside. Independent counting of all 220 COMPLETION result rows gives 25 whole, 18 narrower, 0 whole with supplied inputs, 30 steps/narrower, 3 outside and 144 not formalized, matching lean/COMPLETION.md:35-43. The apparent 29-versus-25 difference is exactly the three equations and one remark excluded from numbered-result totals (COMPLETION.md:47-56), consistent with coverage.yaml:10-13, ledger:109-117, FORMALIZATION.md:80-82,129-134 and README.md:25-28. No disagreement among the requested classification totals was found."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "P1 — Missing co-label pointers. candidate/statement-ledger.md:2983 labels `StratonovichHAMSecondMoment.IndexedCone.GroundFamily` with `P:compact-F-projection`, `P:compact-F-complement`, and `P:compact-ground-family` as supplied outputs, but Index lines 506-688 omit the latter two labels entirely. The Lean declaration's supplied-output status is corroborated by lean/claims.yaml:2029-2031: 'Hypothesis structure of C16 outputs ... normalized complement ... positive margins.' The authoritative TeX contains `\\label{P:compact-ground-family}` and `d_0:=\\inf_I(\\lambda_\\sigma-\\mu_\\sigma)>0` (manuscript/notes/integrated_compact_mean_family.tex:34,48-52), and `\\label{P:compact-F-complement}` with the normalized complement estimate (same file:338,344-347). Thus these are genuine explicit co-labels, not incidental references. Exact fix: add an Index row for each omitted label, both pointing to `IndexedCone` (narrower result); make the generator and both pointer checkers enumerate every explicit co-label in the first cell rather than only its initial label, and regenerate their outputs. This does not change the declaration or coverage-classification totals."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Add the missing P:compact-F-complement and P:compact-ground-family pointer rows to IndexedCone, correct explicit-co-label handling in the generator and both checkers, and regenerate the affected checker outputs."
+  ],
+  "limitations": [
+    "Complete-reading requirement A was not met: diffs/docs-a723987-434a7e2.diff:241-854 and most corresponding section-table rows remain textually unreviewed. NO-NEW-OVERCLAIM is therefore INCONCLUSIVE despite the verified mandatory repair.",
+    "Whole-file machine parsing established counts and structural comparisons; it is not represented as complete semantic reading of the ledger or claims.",
+    "Lean source files and elaborated types are not supplied in this packet. Selected declaration descriptions were compared with claims.yaml, not independently kernel-checked.",
+    "PROVENANCE.json byte bindings were not independently verified.",
+    "This AI review is neither human verification nor a novelty audit."
+  ]
+}

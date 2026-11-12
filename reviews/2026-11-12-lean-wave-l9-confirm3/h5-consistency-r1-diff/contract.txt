@@ -1,0 +1,85 @@
+Narrow re-confirmation review: wave-L9 Lean companion ledger headings and Index cells under the strict three-category convention
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+CONTEXT
+The wave-L9 documentation of the Lean companion was re-confirmed at commit
+ba6c56559a47 by two reviews (prior-reports/r1-findings-renames-report.json
+and prior-reports/r2-whole-result-headings-report.json), which failed: a
+RemoveMask Index row still said "whole result", and many ledger headings
+said "(whole result)" for modules that prove only part of a result or are
+foundations. The author approved a strict convention: (A) "(whole result)"
+only when every conclusion of the labelled result is a Lean conclusion
+under the manuscript's hypotheses, supplied inputs named and disclosed
+(coverage conclusion full); (B) "(narrower result: <what is missing>)";
+(C) "(foundation: ...)" or "(proof steps ...)". It is written into the
+ledger Scope and lean/FORMALIZATION.md. Every heading and Index cell was
+reclassified at commit d5667f525407 (documentation only); the decisions are in
+adjudication/re-confirmation-round-ba6c565.md. This packet covers the r1 RemoveMask item, the r2 findings, classification consistency of the counts, the diff and the earlier repairs.
+
+PACKET
+- candidate/statement-ledger.md : the ledger at d5667f525407.
+- lean/README.md, lean/FORMALIZATION.md, lean/COMPLETION.md,
+  lean/coverage.yaml, lean/claims.yaml at d5667f525407.
+- prior-reports/r1-findings-renames-report.json,
+  prior-reports/r2-whole-result-headings-report.json : the reports at
+  ba6c56559a47.
+- adjudication/re-confirmation-round-ba6c565.md (the decisions, with the
+  old -> new heading table) and adjudication/confirmation-round-338cdba.md
+  (the previous round), hints only: verify yourself.
+- diffs/docs-ba6c565-d5667f5.diff : every documentation change of this
+  repair (README.md, FORMALIZATION.md, COMPLETION.md, the ledger,
+  coverage.yaml).
+- Lean ground truth at d5667f525407: every module under
+  lean/StratonovichHAMSecondMoment/ and lean/StratonovichHAMAudit/ (all
+  library and audit modules are in the packet).
+- manuscript/notes/... : all LaTeX inputs at revision a2844206199b;
+  excerpts/tex-excerpts.txt numbers the statements of the labels concerned
+  (convenience copy; manuscript/ is authoritative).
+- PROVENANCE.json : byte binding of every packet file.
+
+Proof correctness is NOT in question; correspondence of the documentation
+is. Apply the three categories exactly as the ledger Scope defines them.
+Discharging a named input in a completion module does not make a narrower
+result whole. A modelled object whose identification with the manuscript's
+object is not formalized makes the result category B. Do not accept the
+ledger's or the adjudication's word.
+
+CHECKS (exactly these 5, in this order, with these claim strings):
+  1. claim "R1-REMOVEMASK-ROW": finding R1 (major) of prior-reports/r1-findings-renames-report.json is resolved: the Index row of P:variational-remove-mask (about candidate/statement-ledger.md:772) no longer calls it a whole result, and its new text is accurate against lean/StratonovichHAMSecondMoment/RemoveMask.lean (the wrapper, its named input RawBlockOriginalLower and the real function standing in for the point moment), the RemoveMask section heading, the coverage.yaml row of P:variational-remove-mask, and the TeX statement
+  2. claim "R2-REPORT-FINDINGS": every finding R1-R8 of prior-reports/r2-whole-result-headings-report.json is resolved as its fix specifies, or its handling in adjudication/re-confirmation-round-ba6c565.md is justified (the strict three-category convention adopted; the eight INCONCLUSIVE modules decided as narrower results)
+  3. claim "CLASSIFICATION-CONSISTENCY": the counts and lists agree across the ledger Scope (lines 37-472), the kind table and "Heading categories" of lean/FORMALIZATION.md, lean/README.md, lean/COMPLETION.md and the coverage.yaml summary and rows, and with a count of the ledger headings by category: labelled results 26 whole with the manuscript's hypotheses + 5 whole with inputs supplied, 17 narrower, 25 steps or parts, 3 outside, 144 not formalized (220 in all); modules 28 whole with nothing supplied, 4 whole with inputs, 26 narrower, 18 foundations or proof steps (76 library modules), and the audit sections (23 proof-step sections plus HermiteWordFock narrower); theorem counts per kind summing to 2050 public theorems; every category-A module's main coverage row has conclusion full and every category-B module's main row conclusion weaker (or the discrepancy is explained). Count yourself; name every disagreement
+  4. claim "NO-NEW-OVERCLAIM": every hunk of diffs/docs-ba6c565-d5667f5.diff is correct and introduces no new error or overclaim: renamed headings and Index cells say what the Lean proves, the recounts are right, the coverage.yaml summary change is right, and no narrowing, supplied input or limitation stated before is dropped
+  5. claim "L8-REPAIRS-KEPT": no hunk of diffs/docs-ba6c565-d5667f5.diff removes or weakens a wave-L8 or earlier wave-L9 repair (damped-norm covariance-smoothing limitation; R_0 at alpha = 0 controls of totalized division; TerminalWick hK as an added restriction; FiniteWick integrability limited to monomials; the Scope integrability sentence; the one-mode restriction of L:finite-word-cutoff; phase contractions in d = 3; refutation domain wording)
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: prior-reports/r1-findings-renames-report.json and prior-reports/r2-whole-result-headings-report.json; adjudication/re-confirmation-round-ba6c565.md; diffs/docs-ba6c565-d5667f5.diff; for each hunk, the passage at this commit in context; the Scope section of candidate/statement-ledger.md (lines 37-472) and the list of all "## " headings; lean/FORMALIZATION.md lines 70-140; the count sentences of lean/README.md (search "whole", "narrower", "foundation", "2050") and lean/COMPLETION.md; the coverage.yaml summary and the class/conclusion of every row; lean/StratonovichHAMSecondMoment/RemoveMask.lean lines 680-720; excerpts/tex-excerpts.txt.
+B. Other files: search as needed and read matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 5 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct, with a minor wording point
+  reported as a minor finding; PARTIAL: only partly correct or resolved;
+  FAIL: wrong, not resolved, or a new error; INCONCLUSIVE: not checkable).
+  reason: evidence with file:line.
+- "findings": fatal = misstatement a citing reader would be misled by;
+  major = material imprecision; minor = wording. Each string starts with an
+  ID (H1, H2, ...), names the item, quotes Lean and TeX with file:line,
+  and gives the exact fix.
+- "required_repairs": only changes that must be made before the
+  documentation can be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "limitations": anything you could not check.
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES;
+  FAIL if any fatal or major finding or required repair; INCONCLUSIVE if
+  the reading requirement could not be met.
+- "confidence": high only if requirement A is complete.

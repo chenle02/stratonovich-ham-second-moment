@@ -1,0 +1,68 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md: lines 1-125, 748-828, 3244-3446, 6393-6481 read; partial file, required Scope and 81 Index rows complete.",
+    "candidate/statement-ledger.md: complete list of ## headings read at lines 37, 501, 912, 925, 937, 954, 966, 992, 1015, 1024, 1033, 1051, 1072, 1112, 1144, 1167, 1192, 1210, 1223, 1235, 1258, 1275, 1287, 1300, 1317, 1333, 1346, 1557, 1729, 1909, 2088, 2104, 2311, 2421, 2553, 2661, 2717, 2835, 2852, 2873, 2982, 3106, 3127, 3244, 3389, 3447, 3539, 3553, 3646, 3702, 3834, 4009, 4124, 4293, 4441, 4533, 4643, 4752, 4835, 4983, 5043, 5211, 5374, 5463, 5572, 5592, 5710, 5764, 5887, 5992, 6122, 6341, 6393, 6482, 6635, 6830, 6941, 7067, 7213, 7295, 7430, 7615, 7751, 7830, 8003, 8111, 8256, 8375, 8507, 8624, 8782, 8864, 8929.",
+    "lean/FORMALIZATION.md: lines 1-160, complete.",
+    "tools/index_category_check.out: line 1, complete; presence checker not rerun.",
+    "lean/coverage.yaml: contextual ranges 1-96, 232-287, 515-532, 718-737, 820-845, 854-975, 1175-1214, 1374-1401, 1414-1553, 1600-1654, 1732-1771; label-search matches across the file also read. Partial file; relevant coverage rows complete.",
+    "excerpts/tex-excerpts.txt: lines 1-653, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/DampedMultiplier.lean.excerpt.txt: lines 1-499, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/FiniteWick.lean.excerpt.txt: lines 1-360, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/IntervalScalar.lean.excerpt.txt: lines 1-346, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean.excerpt.txt: lines 1-176, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean.excerpt.txt: lines 1-429, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/RemoveMask.lean.excerpt.txt: lines 1-497, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpaceTimePositivity.lean.excerpt.txt: consecutive ranges 1-300 and 301-592, complete; earlier truncated output superseded.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialBracket.lean.excerpt.txt: lines 1-324, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean.excerpt.txt: lines 1-362, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpectralMassIdentity.lean.excerpt.txt: lines 1-187, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SymplecticFree.lean.excerpt.txt: consecutive ranges 1-267 and 268-534, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/TerminalWick.lean.excerpt.txt: lines 1-455, complete.",
+    "adjudication/round3-d5667f5-split-rule.md: consecutive ranges 1-70 and 71-131, complete.",
+    "adjudication/round4-e2c50b5.md: consecutive ranges 1-55 and 56-108, complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: lines 518-538, 774-919, 2980-2998, 3053-3094, 3402-3699; partial.",
+    "manuscript/notes/integrated_spatial_occupation.tex: consecutive ranges 1-218 and 219-449, complete.",
+    "manuscript/notes/integrated_occupation_ceiling.tex: consecutive ranges 1-160 and 161-308, complete.",
+    "manuscript/notes/integrated_symplectic_phase.tex: lines 1-133; partial.",
+    "manuscript/notes/integrated_intrinsic_constant.tex: lines 1-108; partial.",
+    "manuscript/notes/integrated_unmasked_variational.tex: lines 1-23, 168-221, 270-332; partial.",
+    "manuscript/notes/integrated_raw_block_lower.tex: lines 536-555; partial."
+  ],
+  "checks": [
+    {
+      "claim": "INDEX-CELLS lines 748-828",
+      "verdict": "FAIL",
+      "reason": "Required reading A is complete. The whole-result classification at candidate/statement-ledger.md:766 agrees with lean/coverage.yaml:824-843 and the Fourier-bound statement. Several repairs correctly separate supplied-input helpers, including cells 757, 759, 770 and 822. Nevertheless, cell 756 applies a positive-noise restriction to a general theorem lacking that restriction; cells 760-763 classify fully proved physical displays as narrower using unrelated module-level omissions; and cell 817 mixes definitions and theorems with different measurability and mass assumptions. These violate the every-declaration qualifier rule."
+    },
+    {
+      "claim": "INDEX-MAPPING lines 748-828",
+      "verdict": "FAIL",
+      "reason": "Cell 767 correctly maps ralpha to E:intro-spectral-mass, but also maps hRdef_iff_resolvent and hRdef_iff_resolvent_paper there. manuscript/notes/notes_stratonovich_ham_second_moment.tex:530-532 only defines R_alpha; it contains neither the resolvent identity nor these interface equivalences. The requisite identity instead appears in manuscript/notes/integrated_spatial_occupation.tex:149-155. The bridge declarations should have a separate auxiliary mapping."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "K1 — Cell 756 has a mixed positive-noise qualifier. candidate/statement-ledger.md:756 says 'positive noise only' for both completed assembly declarations. Lean's general interval_coefficient_assembly_completed assumes 'hR : 0 ≤ R' and 'σ i ^ 2 ≤ c * h i ^ (-alpha0)', without σ_i > 0 (lean-excerpts/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean.excerpt.txt:127-141, original Lean 140-154). Only the paper wrapper carries '_hRpos : 0 < R' and '_hσpos : ∀ i, 0 < σ i' (same excerpt:157-175). TeX explicitly performs the reduction: 'Zero noise is trivial; omit any zero σ_i' and 'Thus, we may assume σ_i > 0' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:3417-3423). Fix: split the cell into a general proof-step row, disclosing hsplits and hfixed, and a narrower paper-wrapper row retaining the positive-noise and unformalized-identification qualifications.",
+      "K2 — Cells 760-763 import narrowing that their declarations do not have. Cell 760 expressly cites missing 'rate and cost and class O identifications'; cells 761-763 refer to the same qualified section. These objects do not occur in the physical square-pairing, homogeneous-bound, four-linear-bound or spatial-energy-map statements. Lean proves, for example, '0 ≤ ...pairing... ≤ Real.sqrt (...)' under HomogCovariance, Γ ≠ 0 and H¹-pair hypotheses (lean-excerpts/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean.excerpt.txt:124-131), exactly the TeX display '0 ≤ B_Gamma(f²,h²) ≤ sqrt(A_sp(f)A_sp(h))' (manuscript/notes/integrated_spatial_occupation.tex:225-227). Likewise the energy theorem concludes 'Esp Γ = energyValue alpha (Rsp Γ alpha) ∧ 0 < Esp Γ' (original Lean 273-276), matching TeX:309-314. No rate, cost or occupation-class identification is needed for these displays. Fix: classify cells 760-763 as 'proof steps: the display in full, nothing supplied; enclosing result/module remains narrower', rather than asserting a nonexistent narrowing of each display.",
+      "K3 — Cell 817 still combines incompatible input scopes. Its blanket qualifications include 'chain measures specified by their masses, hmeas supplied', but prodL2 is a definition depending only on the Gaussian-field evidence and a tuple (lean-excerpts/StratonovichHAMSecondMoment/TerminalWick.lean.excerpt.txt:158-161). pairing_integral_nonneg assumes covariance nonnegativity, not hmeas or prescribed masses (same excerpt:289-293), while summable_norm_smul_chainIntegral assumes hmass but not hmeas (same excerpt:311-314). Other listed mixed-moment theorems require hmeas but not prescribed masses. TeX distinguishes the field-product definition, mass calculation and measurability argument: 'Y_n ... = integral product W ... g_n', 'M_n(T) = T^(2n)/(2n)!', and 'the product is strongly measurable in L²' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:3607-3608, 3648-3659). Fix: split definitions into foundation rows and separate the theorem groups by their actual mass and measurability inputs; retain the full real-r, mixed-moment, missing-chain-construction and added-hK qualifications on the appropriate narrower wrappers.",
+      "K4 — Cell 767 misattributes the resolvent-interface bridges. Lean states 'R = alpha * π * ... / (...) ↔ R = resolvent μ 1' (lean-excerpts/StratonovichHAMSecondMoment/SpectralMassIdentity.lean.excerpt.txt:145-159). E:intro-spectral-mass states only 'R_alpha = alpha π μ(B_1)/(2 sin(πα/2))' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:530-532). The additional identity 'R_Gamma(q) = q^(alpha-2) R_alpha' belongs to the proof of L:spatial-fourier-bound (manuscript/notes/integrated_spatial_occupation.tex:149-155), not to a proof attached to E:intro-spectral-mass. Fix: keep ralpha under E:intro-spectral-mass and move both hRdef_iff_resolvent declarations to 'no direct label (foundation: Lean-interface equivalences)', with cross-references to the definition and resolvent calculation."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "K1: Split cell 756 so the positive-noise qualification applies only to the paper wrapper.",
+    "K2: Reclassify cells 760-763 as complete-display proof steps within the narrower module, removing unrelated narrowing explanations.",
+    "K3: Split cell 817 by declaration role and actual mass/measurability assumptions.",
+    "K4: Separate the two resolvent-interface bridges from the E:intro-spectral-mass definition mapping."
+  ],
+  "limitations": [
+    "All mandatory reading-A portions were completed; partial-file coverage above concerns additional contextual sources or material outside those required portions.",
+    "Full Lean types for externally referenced completion declarations, including the WaveGreenFourier wrapper and L8Completed discharges, are not supplied among these excerpts; those references have documentary rather than independent type-level corroboration here.",
+    "Proof correctness, package-wide counts and Index rows outside lines 748-828 were not audited.",
+    "This AI correspondence review is neither human verification nor a novelty audit."
+  ]
+}

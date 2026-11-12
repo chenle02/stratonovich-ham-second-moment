@@ -1,0 +1,36 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "INCONCLUSIVE",
+  "confidence": "medium",
+  "source_coverage": [
+    "PROVENANCE.json:1-70 — complete",
+    "prior/f2-P1-finding.txt:1 — complete",
+    "prior/f2-repaired-rows-a-report.json:1-184 — complete",
+    "rows/old-row-6d108c0.txt:1 — complete",
+    "rows/new-row-ff40fde.txt:1 — complete",
+    "diffs/docs-6d108c0-ff40fde.diff:1-13 — complete",
+    "excerpts/tex-excerpts.txt:1-102 — complete",
+    "lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean:1-310 — partial file; target declaration and proof completely read at 247-268; imported phaseI definition unavailable",
+    "candidate/statement-ledger.md:1351-1470,6820-6840 — partial; target row completely read",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:2270-2370 — partial; required excerpt completely read"
+  ],
+  "checks": [
+    {
+      "claim": "F2-P1-RESOLVED",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The visible correction resolves P1: candidate/statement-ledger.md:1458 accurately reproduces the real normed-space assumptions, a < 2, lam > 0, restricted a.e.-strong measurability, pointwise domination, IntegrableOn conclusion and scaled Bochner-integral inequality in lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean:251-256. No completeness premise or separate nonnegativity premise on c occurs. Its completeness qualification is mathematically sound: bounded operators on the complex Hilbert space assumed at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2289 form a Banach space, supporting the operator-norm convergence stated at 2338. References 2338-2359 correctly cover convergence, domination and the bound. The label and inputs cell remain unchanged and correct (diffs/docs-6d108c0-ff40fde.diff:9-10). However, requirement A explicitly requires reading definitions including phaseI. That definition is imported from StaticPhaseCauchy (Lean:97,109), whose source is absent from the packet. The ledger's description at candidate/statement-ledger.md:6833 is not independent access to that Lean definition. Consequently, the binding complete-reading requirement cannot be fully satisfied."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Requirement A remains incomplete only for the imported Lean definition of phaseI. Supply the relevant frozen StaticPhaseCauchy definition to permit definitive confirmation; no row correction is presently identified.",
+    "Unlisted portions of files marked partial were not reviewed; this assessment concerns only the specified row.",
+    "Lean compilation and packet hash bindings were not independently verified.",
+    "This AI review is neither human verification nor a novelty audit."
+  ]
+}

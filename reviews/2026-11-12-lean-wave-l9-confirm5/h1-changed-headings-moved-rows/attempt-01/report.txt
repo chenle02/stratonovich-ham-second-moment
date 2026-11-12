@@ -1,0 +1,72 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md: partial file; complete required selections and contextual reads at lines 1-110, 533-553, 698-715, 824-849, 3553-3645, 5374-5462, 7615-7750.",
+    "lean/FORMALIZATION.md: complete, lines 1-160; truncated material reread.",
+    "adjudication/round3-d5667f5-split-rule.md: complete, lines 1-131; truncated material reread.",
+    "adjudication/round4-e2c50b5.md: complete, lines 1-108.",
+    "prior-reports/h1-changed-headings-a-report.json: complete, lines 1-110; truncated material reread.",
+    "prior-reports/h2-changed-headings-b-report.json: complete, lines 1-94.",
+    "prior-reports/h3-m1-register-report.json: complete, lines 1-87.",
+    "prior-reports/h4a-index-501-599-report.json: complete, lines 1-91.",
+    "prior-reports/h4b-index-600-698-report.json: complete, lines 1-76.",
+    "prior-reports/h4c-index-699-797-report.json: complete, lines 1-70.",
+    "prior-reports/h4d-index-798-895-report.json: complete, lines 1-85.",
+    "prior-reports/h5-consistency-diff-report.json: complete, lines 1-98.",
+    "excerpts/tex-excerpts.txt: complete, lines 1-390.",
+    "docs/coverage-scope-tex.yaml: complete, lines 1-151.",
+    "lean/coverage.yaml: partial file; complete required rows within lines 1-120, 737-757, 855-926, 984-1012, 1343-1417, 1466-1553, 1601-1633, 1733-1781.",
+    "diffs/docs-e2c50b5-350d191.diff: partial file; complete relevant coverage/mirror and heading hunks at lines 166-249, 1004-1030. Additional search matches read at lines 5, 16, 20-23, 27, 31-32, 40, 44, 46-47, 51, 79, 93, 111, 130, 136, 139, 142, 144, 158, 254, 262-264, 283, 288, 291, 295, 299, 301, 311, 329, 331, 337, 341, 596, 602-613, 978, 982, 985, 989, 1031, 1040.",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean: partial file, lines 1-357, 470-501; all paper/completed wrappers completely read.",
+    "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean: complete, lines 1-546.",
+    "lean/StratonovichHAMSecondMoment/TypeContinuity.lean: partial file, lines 1-125, 375-410, 469, 482, 485-615, 645-730, 820-860, 903-1015, 1080-1183; all paper wrappers completely read.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean: partial file, lines 224-257.",
+    "lean/claims.yaml: partial file, lines 1366-1386, 9746-9766, 9830-9878, 9914-9969.",
+    "lean/README.md: partial file, lines 22-42, 105-123, 196-220; additional search matches at lines 372, 406, 441.",
+    "lean/COMPLETION.md: partial file, lines 12, 35-57, 120-130, 211-218.",
+    "manuscript/notes/integrated_radius_anchor.tex: partial file, lines 1-45, 245-310.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: partial file, lines 225-242, 3703-3727, 7062-7087, 7222-7234, 7420-7448, 7496-7528, 7530-7543, 7574-7593.",
+    "manuscript/notes/integrated_occupation_ceiling.tex: partial file, lines 1-42, 195-220, 252-308.",
+    "manuscript/notes/integrated_unmasked_variational.tex: partial file, lines 1-20, 98-111, 270-284.",
+    "manuscript/notes/integrated_spatial_occupation.tex: partial file, lines 40-54, 166-177, 300-325.",
+    "manuscript/notes/integrated_symplectic_phase.tex: partial file, lines 30-60."
+  ],
+  "checks": [
+    {
+      "claim": "HEADING L8Completed",
+      "verdict": "PASS",
+      "reason": "Category B and the added omissions are supported. The completed ceiling uses K0*Rsp, the score wrapper omits Q_2, and the bracket uses S_2^pos and energyValue(K0*Rsp) (lean/StratonovichHAMSecondMoment/L8Completed.lean:128-168,262-281). TeX additionally states the occupation-energy ceiling equality and Q_2 inequality (manuscript/notes/integrated_occupation_ceiling.tex:214-217; manuscript/notes/integrated_unmasked_variational.tex:279). Arbitrary chain measures remain explicit hypotheses (L8Completed.lean:318-323). The heading, prose and Index preserve these boundaries (candidate/statement-ledger.md:3553,3593-3624,835-845); the required coverage rows and mirrors agree."
+    },
+    {
+      "claim": "HEADING RadiusMeanAnchor",
+      "verdict": "PASS",
+      "reason": "The revised heading correctly applies the missing-construction branch rather than M1. Lean quantifies arbitrary M and assumes moment and measurability facts (lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:442-469), then concludes the mean, margin, decay and limit formulas (:470-486). TeX fixes X_m through M_R(Y_m), with residual noises specified upstream (manuscript/notes/integrated_radius_anchor.tex:247-258,280-305). The heading, Index, supplied-input disclosures and weaker coverage consistently name the missing construction (candidate/statement-ledger.md:541,5374,5397-5425; lean/coverage.yaml:1400-1414). No incorrect constant was found."
+    },
+    {
+      "claim": "HEADING TypeContinuity",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Category B accurately names the unconstructed solution moments: both stochastic wrappers quantify arbitrary mom and take TypeContinuityInputs (lean/StratonovichHAMSecondMoment/TypeContinuity.lean:1106-1122,1141-1160), whereas TeX defines the rates using solution expectations (manuscript/notes/notes_stratonovich_ham_second_moment.tex:7505-7528,7574-7593). The independent positive-series lemma has all conclusions under its own hypotheses (TypeContinuity.lean:383-389; TeX:7222-7234), supporting its retained whole status. Heading, Index and coverage agree; the residual prose shorthand at ledger:7700 merits the optional clarification K1."
+    },
+    {
+      "claim": "MOVED-ROWS",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "All three rows correctly retain inputs-supplied and change to weaker, with appropriate claims, inputs and construction disclaimers (lean/coverage.yaml:95-116,1343-1374,1400-1414; relevant changes in diffs/docs-e2c50b5-350d191.diff:182-217). Their conclusion_scope strings equal the ASCII mirrors, and the TeX mirrors preserve their content (docs/coverage-scope-tex.yaml:14-16,107-109,113-115). Index cells distinguish wrapper inputs from helper premises (candidate/statement-ledger.md:541,700-702). L:positive-series-type remains same-assumptions/full (:698; coverage.yaml:737-755). Section agreement is substantive, subject only to K1's wording note."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "K1 — TypeContinuity prose: candidate/statement-ledger.md:7700 retains 'No conclusion is narrower than the TeX.' Lean explicitly takes '(mom : ℕ → ℝ → ℝ → ℝ)' (lean/StratonovichHAMSecondMoment/TypeContinuity.lean:1109,1144), while TeX defines rates through 'log E[u^(a)(T,x)^p]' (manuscript/notes/notes_stratonovich_ham_second_moment.tex:7508-7511). The revised heading and coverage clearly disclose this distinction, so this is nonblocking shorthand, not an undisclosed overclaim. Optional exact replacement: 'Every conclusion formula is proved for the abstract moment function; its identification with the solution moments is not formalized.'"
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Requirement A's specified selections were completely read; truncated required passages were reread. Partial-file entries omit unrelated sections, coverage rows, diff hunks or proof bodies, not required wrapper signatures or scope passages.",
+    "Review covers exactly the four contracted checks, not all 402 Index cells or a package-wide recount. Mechanical category presence was accepted as permitted.",
+    "No Lean compilation or proof-correctness audit was performed. Packet hashes and revision byte bindings were not independently authenticated.",
+    "This AI correspondence review is not human verification or a novelty audit."
+  ]
+}

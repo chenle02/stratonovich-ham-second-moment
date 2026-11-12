@@ -1,0 +1,113 @@
+Narrow confirmation review: repairs to the wave-L9 Lean companion ledger, coverage and scope sentences after correspondence review
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+CONTEXT
+Wave L9 of the Lean companion (commit eb253a5022fa) was reviewed for statement
+correspondence with the manuscript; the reports are in prior-reports/.
+Main (aff740933af2: wave L8 with both rounds of its review repairs) was then
+merged in (7bd4c62d9f1f), and the wave-L9 findings were adjudicated
+(adjudication/ADJUDICATION.md) and repaired at commit 338cdba9e552
+(documentation only; no Lean file changed). This packet covers
+the findings of the reviews of GaussianHermite (g5a), HermiteFock (g5b), FockForm/HermiteWordFock (g6a) and the reworded static-phase/interval rows (g6b), and the two reclassifications (L:finite-word-cutoff to inputs-supplied/weaker; L:damped-homogeneous-norms back to same-assumptions/weaker).
+
+PACKET
+- candidate/statement-ledger.md : the ledger at 338cdba9e552 (repaired).
+- lean/coverage.yaml, docs/coverage-scope-tex.yaml, lean/claims.yaml,
+  lean/README.md, lean/FORMALIZATION.md, lean/COMPLETION.md,
+  lean/provenance/manuscript-anchor.json at 338cdba9e552.
+- the earlier review reports whose findings are checked here:
+    prior-reports/g5a-report.json
+    prior-reports/g5b-report.json
+    prior-reports/g6a-report.json
+    prior-reports/g6b-report.json
+- adjudication/ADJUDICATION.md : the verdict and the change made for each
+  wave-L9 finding, the merge resolution and the class/count changes. Use
+  its file:line references as hints only; locate the text yourself.
+- diffs/findings-repair-7bd4c62-338cdba.diff : the repair commit alone;
+  diffs/l9-repair-eb253a5-338cdba.diff : everything since the reviewed
+  commit (merge plus repair); prior-eb253a5/... : the docs files at the
+  reviewed commit.
+- tools/mirror_check.py and tools/mirror_check.out : the orchestrator's
+  mirror completeness script and its output at 338cdba9e552 (evidence to
+  verify, not to trust).
+- Lean ground truth: every module under lean/StratonovichHAMSecondMoment/
+  and lean/StratonovichHAMAudit/ at 338cdba9e552; in particular
+    lean/StratonovichHAMSecondMoment/GaussianHermite.lean
+    lean/StratonovichHAMSecondMoment/HermiteFock.lean
+    lean/StratonovichHAMSecondMoment/FockForm.lean
+    lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean
+    lean/StratonovichHAMSecondMoment/IntervalScalar.lean
+    lean/StratonovichHAMAudit/HermiteWordFock.lean
+    lean/StratonovichHAMAudit/HermiteWord.lean
+  and the refutation files under
+    lean/refutations/gaussian-hermite/
+    lean/refutations/hermite-fock/
+    lean/refutations/fock-form/
+- manuscript/notes/... : all LaTeX inputs at revision a2844206199b;
+  excerpts/tex-excerpts.txt numbers the statements and proofs of the
+  labels concerned (convenience copy; manuscript/ is authoritative).
+- PROVENANCE.json : byte binding of every packet file.
+
+Proof correctness is NOT in question; correspondence is. Decide from the
+Lean and the TeX whether each prior finding is genuinely resolved, whether
+each repair is correct, and whether the repairs added any new overclaim.
+A hypothesis is a side condition the TeX leaves implicit only if the TeX
+implies it; a control that uses Lean's totalized arithmetic or lies
+outside the manuscript's domain is not a manuscript counterexample. Do not
+accept the ledger's or the adjudication's word. A deferral to a later
+Lean wave is acceptable only if the documentation at this commit is
+accurate without it.
+
+CHECKS (exactly these 12, in this order, with these claim strings):
+  1. claim "g5a-W1": finding W1 (minor) of prior-reports/g5a-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  2. claim "g5b-W1": finding W1 (minor) of prior-reports/g5b-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  3. claim "g5b-W2": finding W2 (minor) of prior-reports/g5b-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  4. claim "g5b-W3": finding W3 (minor) of prior-reports/g5b-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  5. claim "g6a-W1": finding W1 (fatal) of prior-reports/g6a-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  6. claim "g6a-W2": finding W2 (major) of prior-reports/g6a-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  7. claim "g6a-W3": finding W3 (minor) of prior-reports/g6a-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  8. claim "g6b-W1": finding W1 (minor) of prior-reports/g6b-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  9. claim "RECLASS-FINITE-WORD": the reclassification of L:finite-word-cutoff to inputs-supplied with conclusion weaker is correct and is stated consistently in its coverage row (class, conclusion, conclusion_scope, inputs, note), its scope mirror, the ledger (Scope, the HermiteWordFock and HermiteWord sections, Index), README.md, FORMALIZATION.md and COMPLETION.md: the one-mode-per-color restriction of the operator data (TeX J_i = sum_(j<=m_i) M_(g_ij) tensor K_ij) is disclosed as a restriction, "nothing supplied" is limited to the one-mode special case, and nothing still calls it same-assumptions or a whole result
+  10. claim "RECLASS-DAMPED": the reclassification of L:damped-homogeneous-norms back to same-assumptions with conclusion weaker is correct and stated consistently in its coverage row, its scope mirror, the ledger, README.md, FORMALIZATION.md and COMPLETION.md: covariance smoothing appears only as membership of the Gaussian factor in the multiplier class with its spectral identification not formalized, and the Green-smoothing identification in d = 1, 2, 3 is credited to the declarations that actually conclude it
+  11. claim "RESCAN": in the ledger sections GaussianHermite (whole result), HermiteFock (whole result), FockForm (parts of results, spatial column bounds supplied), HermiteWordFock (one-mode special case of `L:finite-word-cutoff`), HermiteWord, StaticPhaseCauchy (whole result), IntervalScalar (whole result) and the coverage rows L:finite-word-cutoff, L:fock-form, L:interval-contractions, P:mild-construction, P:static-phase-all-orders, P:interval-coefficients, L:damped-homogeneous-norms, no OTHER statement still overclaims in the way the wave-L8 and wave-L9 findings describe ("full lemma", "whole result", "every assertion" or "nothing supplied" for a narrower or input-carrying result; hypotheses called implicit that the TeX does not imply; integrability guarantees broader than the declarations conclude; controls relying on Lean's totalized arithmetic or outside the manuscript's domain described as manuscript counterexamples; counts); check against the Lean files and the TeX
+  12. claim "NO-REGRESSION": every hunk of diffs/findings-repair-7bd4c62-338cdba.diff that touches the sections, rows or files of this packet's scope is correct and introduces no new error or overclaim (conclusion_scope sentences plain English with no Lean names or TeX line numbers, ascii equal to conclusion_scope, the tex the same content, lambda described as the square root of the real Rayleigh supremum wherever described); no Lean declaration, statement or proof changed between eb253a5 and this commit except comments (diffs/l9-repair-eb253a5-338cdba.diff)
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: the prior reports listed above;
+   adjudication/ADJUDICATION.md;
+   diffs/findings-repair-7bd4c62-338cdba.diff;
+   the ledger sections "GaussianHermite (whole result)" (lines 2663-2780), "HermiteFock (whole result)" (lines 2928-3051), "FockForm (parts of results, spatial column bounds supplied)" (lines 2367-2498), "HermiteWordFock (one-mode special case of `L:finite-word-cutoff`)" (lines 1019-1058), "HermiteWord" (lines 998-1018), "StaticPhaseCauchy (whole result)" (lines 6881-7006), "IntervalScalar (whole result)" (lines 3190-3334);
+   the coverage.yaml rows L:finite-word-cutoff, L:fock-form, L:interval-contractions, P:mild-construction, P:static-phase-all-orders, P:interval-coefficients, L:damped-homogeneous-norms and their docs/coverage-scope-tex.yaml entries;
+   for each finding, the Lean declarations (and comments, and refutation files) and the TeX lines it cites, in the files at this commit;
+   lean/README.md, lean/FORMALIZATION.md and lean/COMPLETION.md where they mention L:finite-word-cutoff or L:damped-homogeneous-norms (search, read in context);
+   excerpts/tex-excerpts.txt.
+B. Other files: search as needed and read matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 12 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: resolved and correct; PASS_WITH_NOTES: resolved, with a minor
+  wording point reported as a minor finding; PARTIAL: only partly
+  resolved; FAIL: not resolved or a new error; INCONCLUSIVE: not
+  checkable). reason: evidence with file:line.
+- "findings": fatal = misstatement a citing reader would be misled by;
+  major = material imprecision; minor = wording. Each string starts with an
+  ID (C1, C2, ...), names the item, quotes Lean and TeX with file:line,
+  and gives the exact fix.
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "limitations": anything you could not check.
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES;
+  FAIL if any fatal or major finding or required repair; INCONCLUSIVE if
+  the reading requirement could not be met.
+- "confidence": high only if requirement A is complete.

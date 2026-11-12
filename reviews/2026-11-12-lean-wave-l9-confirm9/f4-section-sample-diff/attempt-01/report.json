@@ -1,0 +1,206 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "tools/section-sample.txt:1-26 complete",
+    "tools/lost-disclosure-check.out:1-380 complete",
+    "tools/lost_disclosure_check.py:1-90 complete",
+    "adjudication/round8-06ee849.md:1-89 complete",
+    "diffs/docs-06ee849-6d108c0.diff:1-355 complete",
+    "diffs/index-removed-a723987-434a7e2.diff:60,73,93,108,121,260,273,294,323,327,339,351,382,405,452,463,499,520,526,554,582,623,631,649,671,953 partial; all sampled removed Index rows complete",
+    "candidate/statement-ledger.md:1-111,1351-1444,1516,2216-2326,2336,2922-2989,2992,3184-3230,3240,3348-3420,3435,4328-4414,4433,4438-4510,4538,5006-5083,5167,5169-5221,5256,5258-5337,5351,5367-5378,5381,5387-5464,5503,5682-5752,5785,5917-6044,6112,6136-6177,6184,6188-6256,6275,6277-6396,6428,6430-6549,6621,6862-6944,6962,6987,7410-7501,7520,7547-7609,7623,7626-7737,7796,8052-8131,8169,8420-8524,8576 partial; all sampled section introductions and declaration rows complete",
+    "lean/FORMALIZATION.md:65-125 partial",
+    "tools/index_category_check.out:1 complete",
+    "tools/index_check_pointer.out:1-8 complete",
+    "lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean:251-256,275-281,310-312,1215-1221 partial",
+    "lean/StratonovichHAMSecondMoment/FockForm.lean:64-108,134-136,206-229,335-362 partial",
+    "lean/StratonovichHAMSecondMoment/IndexedCone.lean:83-153,238-286,335-338,996-1011 partial",
+    "lean/StratonovichHAMSecondMoment/IntervalScalar.lean:146-150,171-174,202-211,346-352,566-568,588-590,714,1157-1175 partial",
+    "lean/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean:171-189 partial",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean:232-236 partial",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingExact.lean:666-669 partial",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean:99,436-444,531-536,548-555,938-941 partial",
+    "lean/StratonovichHAMSecondMoment/QuotientObstruction.lean:991-996 partial",
+    "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:276-283,442-486 partial",
+    "lean/StratonovichHAMSecondMoment/RawOccupationEnergy.lean:266-270 partial",
+    "lean/StratonovichHAMSecondMoment/RayleighTail.lean:178-185 partial",
+    "lean/StratonovichHAMSecondMoment/RemoveMask.lean:702-745 partial",
+    "lean/StratonovichHAMSecondMoment/SpatialBracket.lean:481-495 partial",
+    "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean:749-762,1203-1214 partial",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean:145-148 partial",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean:85-90,363-374 partial",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:763-770 partial",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:1098-1105 partial",
+    "lean/StratonovichHAMSecondMoment/SymplecticFree.lean:187,389-391 partial",
+    "lean/StratonovichHAMSecondMoment/TypeContinuity.lean:490-501 partial",
+    "lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean:69-71,94-98,164-178,195-202,261-277,301-310 partial",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:225-251,412-420 partial",
+    "lean/StratonovichHAMSecondMoment/VariationalRate.lean:817-823 partial",
+    "lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean:875-879,903-927 partial",
+    "lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:115,139,141,203,230,376,378,484,488,490,611,657-660,774-776,802-804,847-855,881,923,932-950,954 partial",
+    "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean:278-286 partial",
+    "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean:76-113,128-159,378-382,530-541,743-749 partial",
+    "lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean:323-344,867-872,947-949,959-964,981-987,1103-1108,1118-1124 partial",
+    "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean:233 partial",
+    "lean/StratonovichHAMSecondMoment/TerminalWick.lean:361-365,396-403,483-486,503-508,618-642 partial",
+    "lean/StratonovichHAMSecondMoment/VariationalMean.lean:679-691 partial",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:2288-2310,2472-2489,2899-2917,3053-3094,3402-3424,3600-3645,3703-3748,7505-7515 partial",
+    "manuscript/notes/integrated_compact_mean_family.tex:398-422 partial",
+    "manuscript/notes/integrated_occupation_ceiling.tex:4-42,92-112,149-157,195-234,252-274 partial",
+    "manuscript/notes/integrated_intrinsic_constant.tex:4-49 partial",
+    "manuscript/notes/integrated_spatial_occupation.tex:4-10,40-54,166-176,219-237,300-325,377-439 partial",
+    "manuscript/notes/integrated_unmasked_variational.tex:4-17,63-95,98-111,168-179,225-240,270-284 partial",
+    "manuscript/notes/integrated_raw_block_lower.tex:232-254,263-281 partial",
+    "manuscript/notes/integrated_gaussian_tubes.tex:458-483 partial",
+    "manuscript/notes/integrated_symplectic_phase.tex:30-91,123-133 partial",
+    "manuscript/notes/integrated_covariance_foundation.tex:88-111,257-270 partial",
+    "manuscript/notes/integrated_radius_anchor.tex:280-306 partial",
+    "manuscript/notes/integrated_wave_variance.tex:171-176,240-246,368-383 partial"
+  ],
+  "checks": [
+    {
+      "claim": "SECTION-MATCH ComplexPhaseScalar.interval_complex_range_paper / clause: narrower result: block map not identified with the p",
+      "verdict": "PASS",
+      "reason": "The disclosure in the removed row (diffs/index-removed-a723987-434a7e2.diff:649) survives explicitly in candidate/statement-ledger.md:1351-1363,1394-1422. Lean concludes adjoint sandwich and numerical-range bounds, not a propagator or telescoping theorem (lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean:1215-1221); the manuscript asserts those additional conclusions at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2909-2915."
+    },
+    {
+      "claim": "SECTION-MATCH FockForm.fock_form_paper / clause: narrower result: coefficient model of the `m` multip",
+      "verdict": "PASS",
+      "reason": "The removed qualification (diffs/index-removed-a723987-434a7e2.diff:671) is explicit in candidate/statement-ledger.md:2216,2274-2284,2304-2313. Lean uses Fin m coefficient vectors and concludes a pairing symmetry, not self-adjoint packaging of the physical operator (lean/StratonovichHAMSecondMoment/FockForm.lean:206-229). Compare the physical operators in manuscript/notes/notes_stratonovich_ham_second_moment.tex:2472-2489."
+    },
+    {
+      "claim": "SECTION-MATCH IndexedCone.indexed_cone_paper / clause: narrower result: abstract ground family, its identif",
+      "verdict": "PASS",
+      "reason": "The qualification at diffs/index-removed-a723987-434a7e2.diff:108 is retained in candidate/statement-ledger.md:2922,2931-2935,2983-2988,2992. Lean takes an independent GroundFamily F; its covariance hypotheses do not identify that family (lean/StratonovichHAMSecondMoment/IndexedCone.lean:996-1011)."
+    },
+    {
+      "claim": "SECTION-MATCH IntervalScalarCompleted.interval_coefficient_assembly_paper_completed / clause: , identification with the interval evolution and the",
+      "verdict": "PASS",
+      "reason": "The complete limitation at diffs/index-removed-a723987-434a7e2.diff:452 survives in candidate/statement-ledger.md:3184,3218-3229,3240. Lean bounds a scalar coef under hsplits and hfixed and carries positive-noise assumptions (lean/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean:171-189); it does not construct the evolution or perform the reductions of manuscript/notes/notes_stratonovich_ham_second_moment.tex:3417-3423."
+    },
+    {
+      "claim": "SECTION-MATCH L8Completed.spatial_bracket_lower_sSup_paper_completed / clause: narrower result: `S_2^pos` in place of `C_2`, rate a",
+      "verdict": "PASS",
+      "reason": "The disclosure at diffs/index-removed-a723987-434a7e2.diff:582 is retained by candidate/statement-ledger.md:3348,3388-3407,3435. Lean concludes a bound on sSup(scoreSet ... 2), not C_2 (lean/StratonovichHAMSecondMoment/L8Completed.lean:232-236); the manuscript bracket uses C_2 at manuscript/notes/integrated_occupation_ceiling.tex:256-272."
+    },
+    {
+      "claim": "SECTION-MATCH OccupationCeilingExact.integratedRate_sq_le_Cocc / clause: class `O` bridge and rate and cost identification no",
+      "verdict": "PASS",
+      "reason": "The removed disclosure (diffs/index-removed-a723987-434a7e2.diff:631) is retained in candidate/statement-ledger.md:4328,4345-4349,4391-4398. Lean bounds integratedRate using rawCost and Cocc (lean/StratonovichHAMSecondMoment/OccupationCeilingExact.lean:666-669), with the joint-representative model rather than a formal bridge to the manuscript's strongly H^1-measurable class."
+    },
+    {
+      "claim": "SECTION-MATCH OccupationCeilingFinite.occupation_ceiling_K0_paper / clause: the occupation-energy form, `C_2 <= U_2` and the rat",
+      "verdict": "PASS",
+      "reason": "The limitations at diffs/index-removed-a723987-434a7e2.diff:499 survive in candidate/statement-ledger.md:4438,4451-4454,4488-4499,4538. Lean proves a single-control ceiling with K0*Rsp over SpaceTimeCS (lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean:938-941), not the occupation-energy identity or moment sentence of manuscript/notes/integrated_occupation_ceiling.tex:214-219."
+    },
+    {
+      "claim": "SECTION-MATCH QuotientObstruction.masked_quotient_obstruction_paper / clause: noise `W` not constructed, identification with noise",
+      "verdict": "PASS",
+      "reason": "The removed limitation (diffs/index-removed-a723987-434a7e2.diff:260) is stated in candidate/statement-ledger.md:5006,5030-5038,5076-5079. Lean concerns covW, not constructed random variables W(F) (lean/StratonovichHAMSecondMoment/QuotientObstruction.lean:991-996); the manuscript uses their variances at manuscript/notes/integrated_covariance_foundation.tex:257-263."
+    },
+    {
+      "claim": "SECTION-MATCH RadiusMeanAnchor.radius_mean_anchor_paper / clause: ` and the residual noises not constructed",
+      "verdict": "PASS",
+      "reason": "The complete old disclosure at diffs/index-removed-a723987-434a7e2.diff:73 is retained in candidate/statement-ledger.md:5169,5192-5199,5218-5220,5256. Lean takes arbitrary random paths M and supplied moment/measurability hypotheses (lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:442-486), whereas manuscript/notes/integrated_radius_anchor.tex:284-289 uses residual-noise operator paths."
+    },
+    {
+      "claim": "SECTION-MATCH RawOccupationEnergy.exists_pos_member / clause: class `O` bridge not formalized",
+      "verdict": "PASS",
+      "reason": "The removed qualification (diffs/index-removed-a723987-434a7e2.diff:623) survives in candidate/statement-ledger.md:5258,5315-5324. Lean produces IsOccField representatives (lean/StratonovichHAMSecondMoment/RawOccupationEnergy.lean:266-270); their definition is joint measurability plus unit H^1 slices and finite energy (lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean:154-158), not the formal bridge to manuscript/notes/integrated_spatial_occupation.tex:381-414."
+    },
+    {
+      "claim": "SECTION-MATCH RayleighTail.rayleigh_tail_paper / clause: narrower result: application to the operator moment ",
+      "verdict": "PASS",
+      "reason": "The limitation at diffs/index-removed-a723987-434a7e2.diff:60 remains explicit in candidate/statement-ledger.md:5367-5377,5381. Lean proves scalar integrability and the tail inequality (lean/StratonovichHAMSecondMoment/RayleighTail.lean:178-185), omitting the operator application in manuscript/notes/integrated_gaussian_tubes.tex:466-467."
+    },
+    {
+      "claim": "SECTION-MATCH RemoveMask.variational_remove_mask_paper / clause: narrower result: the rates with nothing supplied, in",
+      "verdict": "PASS",
+      "reason": "All qualifications at diffs/index-removed-a723987-434a7e2.diff:526 survive in candidate/statement-ledger.md:5387,5410-5438,5503: input-free Rayleigh rates, integral cost, missing identifications, and a point inequality conditional on RawBlockOriginalLower. Lean uses an arbitrary real function L (lean/StratonovichHAMSecondMoment/RemoveMask.lean:702-739), unlike the canonical-solution moment in manuscript/notes/integrated_unmasked_variational.tex:174-178."
+    },
+    {
+      "claim": "SECTION-MATCH SpatialBracket.intrinsic_spatial_bracket_paper / clause: ^O`, rate and cost identification not formalized",
+      "verdict": "PASS",
+      "reason": "The full old limitation (diffs/index-removed-a723987-434a7e2.diff:520) survives in candidate/statement-ledger.md:5682,5723-5739,5785. Lean uses scoreSet and energyValue(K0*Rsp), not C_2 and the exact occupation energy (lean/StratonovichHAMSecondMoment/SpatialBracket.lean:481-495); compare manuscript/notes/integrated_occupation_ceiling.tex:252-265."
+    },
+    {
+      "claim": "SECTION-MATCH SpatialFourLinear.Esp / clause: rate and cost identification not formalized",
+      "verdict": "PASS",
+      "reason": "The section-wide qualification at diffs/index-removed-a723987-434a7e2.diff:405 survives in candidate/statement-ledger.md:5917,6016-6019. Esp itself remains accurately described as an energy supremum (ledger:6112; lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean:1208-1213); the rate/cost boundary concerns its section's score application, manuscript/notes/integrated_spatial_occupation.tex:316-322."
+    },
+    {
+      "claim": "SECTION-MATCH SpatialOccupationCompleted.spatial_smooth_score_sSup_completed_paper / clause: narrower result: rate and cost identification not fo",
+      "verdict": "PASS",
+      "reason": "The disclosure at diffs/index-removed-a723987-434a7e2.diff:339 is retained explicitly in candidate/statement-ledger.md:6136,6169-6174. Lean retains S1Bdd and proves a score-supremum inequality (lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean:145-148), without supplying the spectral or stochastic identifications."
+    },
+    {
+      "claim": "SECTION-MATCH SpatialOccupationL7Completed.occupation_physical_class_Esp_paper / clause: narrower result: class `O` modelled by joint represe",
+      "verdict": "PASS",
+      "reason": "The limitation at diffs/index-removed-a723987-434a7e2.diff:463 survives in candidate/statement-ledger.md:6188,6246-6254,6275. Lean quantifies over IsOccField (lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean:363-374); the missing bridge is precisely to the strongly H^1-measurable class and representatives discussed in manuscript/notes/integrated_spatial_occupation.tex:381-414."
+    },
+    {
+      "claim": "SECTION-MATCH SpatialSmoothRatio.spatial_smooth_ratio_paper / clause: narrower result: rate and cost identification not fo",
+      "verdict": "PASS",
+      "reason": "The qualification at diffs/index-removed-a723987-434a7e2.diff:323 is retained in candidate/statement-ledger.md:6277,6347-6350. Lean takes StaticControls and concludes the existential score inequality using integratedRate and rawCost (lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:763-770); no spectral or stochastic identification is asserted."
+    },
+    {
+      "claim": "SECTION-MATCH SpatialStaticControls.spatial_static_controls_rate_paper / clause: narrower result: Rayleigh-form rate and integral-for",
+      "verdict": "PASS",
+      "reason": "The old qualification (diffs/index-removed-a723987-434a7e2.diff:327) survives in candidate/statement-ledger.md:6430,6442-6453,6621. Lean uses rayleighSet, lamSq and lamZ over the supplied RayleighFloor (lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:1098-1105), consistently separating the identifications from the Rayleigh assertion in manuscript/notes/integrated_spatial_occupation.tex:40-54."
+    },
+    {
+      "claim": "SECTION-MATCH SymplecticFree.freeMatrix_zero_freq / clause: narrower result: `J_E`, the duality-form identificat",
+      "verdict": "PASS",
+      "reason": "The section qualification in the removed grouped row (diffs/index-removed-a723987-434a7e2.diff:554) survives explicitly in candidate/statement-ledger.md:6862,6934-6943. Lean's declaration is only a finite matrix identity (lean/StratonovichHAMSecondMoment/SymplecticFree.lean:187), not construction of J_E or symplectic preservation on E as asserted in manuscript/notes/integrated_symplectic_phase.tex:32-40."
+    },
+    {
+      "claim": "SECTION-MATCH SymplecticFree.isCompactOperator_orderedProd_sub / clause: narrower result: `J_E`, the duality-form identificat",
+      "verdict": "PASS",
+      "reason": "The same removed grouped disclosure (diffs/index-removed-a723987-434a7e2.diff:554) remains in candidate/statement-ledger.md:6862,6934-6943. Lean proves abstract compactness of an ordered-product difference (lean/StratonovichHAMSecondMoment/SymplecticFree.lean:389-391), corresponding to the proof step in manuscript/notes/integrated_symplectic_phase.tex:125-128, without implying the omitted Hilbert-space constructions."
+    },
+    {
+      "claim": "SECTION-MATCH TypeContinuity.growthLower / clause: the solution moments not constructed",
+      "verdict": "PASS",
+      "reason": "The removed qualification (diffs/index-removed-a723987-434a7e2.diff:351) survives in candidate/statement-ledger.md:7410,7444-7450,7495-7500. Lean defines growthLower for an arbitrary real function m (lean/StratonovichHAMSecondMoment/TypeContinuity.lean:497-498), not the solution moment appearing in manuscript/notes/notes_stratonovich_ham_second_moment.tex:7505-7514."
+    },
+    {
+      "claim": "SECTION-MATCH UniformSeriesTail.uniform_series_tail_paper / clause: narrower result: an abstract `L^2` family, identific",
+      "verdict": "PASS",
+      "reason": "The limitation and supplied-input disclosure at diffs/index-removed-a723987-434a7e2.diff:382 survive in candidate/statement-ledger.md:7547,7553-7568,7605-7608,7623. Lean takes arbitrary Lp families and hTW (lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean:261-277), whereas manuscript/notes/notes_stratonovich_ham_second_moment.tex:3704-3706 specifies terminal-chain terms."
+    },
+    {
+      "claim": "SECTION-MATCH VariationalDilation.variational_control_dilation_paper / clause: narrower result: integral-form variance and Rayleigh",
+      "verdict": "PASS",
+      "reason": "The removed qualification (diffs/index-removed-a723987-434a7e2.diff:93) remains explicit in candidate/statement-ledger.md:7626,7657-7667,7796. Lean proves dilation identities for its integral and Rayleigh definitions (lean/StratonovichHAMSecondMoment/VariationalDilation.lean:229-251,412-420), without identifying them with the stochastic variance and spectral rate of manuscript/notes/integrated_unmasked_variational.tex:17,100-107."
+    },
+    {
+      "claim": "SECTION-MATCH VariationalRate.variational_positive_scores_sSup_paper / clause: narrower result: Rayleigh-form rates and integral-fo",
+      "verdict": "PASS",
+      "reason": "All old qualifications (diffs/index-removed-a723987-434a7e2.diff:294) survive in candidate/statement-ledger.md:8052,8062-8069,8096-8116,8169. Lean proves positivity and score homogeneity under S1Bdd (lean/StratonovichHAMSecondMoment/VariationalRate.lean:817-823), not the point-liminf comparison in manuscript/notes/integrated_unmasked_variational.tex:279-281."
+    },
+    {
+      "claim": "SECTION-MATCH WaveTwoVariances.wave_two_variances_paper / clause: narrower result: abstract variance and phase spaces,",
+      "verdict": "PASS",
+      "reason": "The removed limitation (diffs/index-removed-a723987-434a7e2.diff:273) survives in candidate/statement-ledger.md:8420,8458-8472,8515-8518,8576. Lean explicitly takes abstract P, J, normSG and var with hlink (lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean:903-927); it does not construct the physical objects of manuscript/notes/integrated_wave_variance.tex:171-176,240-246,368-383."
+    },
+    {
+      "claim": "NO-NEW-OVERCLAIM",
+      "verdict": "PASS",
+      "reason": "Every hunk of diffs/docs-06ee849-6d108c0.diff:1-355 was read. The convention additions agree (candidate/statement-ledger.md:79-88; lean/FORMALIZATION.md:90-96). The corrected step_Q expression matches lean/StratonovichHAMSecondMoment/IndexedCone.lean:335-338. The 55 disclosure repairs add genuine hypothesis names/types or preserve missing-construction limitations; they remove no prior narrowing or supplied input. The real-H, derivative, covariance-space, fixed-split and Fock qualifications agree with the inspected Lean statements and manuscript/notes/integrated_covariance_foundation.tex:93-99, integrated_unmasked_variational.tex:64-74, integrated_intrinsic_constant.tex:24-35, and notes_stratonovich_ham_second_moment.tex:2472-2489,3053-3094."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "All mandatory requirement-A material was read completely, including recovery of truncated output. Files marked partial were consulted only in the listed ranges; their unlisted portions were not reviewed.",
+    "Acceptance is confined to the specified 25 disclosure matches and the documentation repair diff; it does not certify unsampled section-level matches or the entire ledger.",
+    "The mechanical checker's word-overlap criterion is not semantic verification; the sampled disclosures were compared independently with their removed rows, current section text and Lean statements.",
+    "Lean proofs were not rebuilt or audited. Historical revisions and packet byte bindings were not independently authenticated.",
+    "This AI correspondence review is neither human verification nor a novelty audit."
+  ]
+}

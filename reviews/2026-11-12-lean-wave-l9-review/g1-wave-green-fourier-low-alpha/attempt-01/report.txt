@@ -1,0 +1,448 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md: complete required sections, lines 37-831, 1628-1797, 3556-3674, 8108-8347; additional context lines 1-36, 1263-1364, 1799-1970, 3503-3554, 4862-5003, 8654-8846; cross-reference searches also read matching lines 1365-1472, 2299, 2408, 4143-4281, 5775, 6604. Other sections outside the contracted review were not read completely.",
+    "lean/StratonovichHAMSecondMoment/WaveGreenFourier.lean: complete, lines 1-768.",
+    "lean/StratonovichHAMSecondMoment/LowAlphaConvolution.lean: complete, lines 1-610.",
+    "lean/StratonovichHAMSecondMoment/DampedMultiplier.lean: complete, lines 1-608.",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean: complete, lines 1-541.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean: complete, lines 1-105.",
+    "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean: complete, lines 1-709.",
+    "lean/StratonovichHAMSecondMoment/L9Completed.lean: complete, lines 1-186.",
+    "lean/StratonovichHAMSecondMoment/PhaseContractions.lean: complete, lines 1-1095.",
+    "lean/StratonovichHAMSecondMoment/DampedNorms.lean: partial contextual source, lines 52-90, 290-373; required referenced definitions and finiteness declarations read completely.",
+    "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean: partial contextual source, lines 92-152, 230-334; required Gaussian-integrability, spectral-pairing and homogeneity declarations read completely.",
+    "lean/StratonovichHAMSecondMoment/SpectralHomog.lean: partial contextual source, lines 40-104; spectral-homogeneity definition and displayed scaling/origin-mass declarations read completely.",
+    "lean/StratonovichHAMSecondMoment/WaveKernel.lean: partial contextual source, lines 1-100; required waveHat definitions and bounds read completely.",
+    "lean/StratonovichHAMSecondMoment/TimeFractional.lean: partial contextual source, lines 40-62; L0 and P2 definitions read completely.",
+    "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean: partial contextual source, lines 60-88; both referenced damped-norm declarations read completely.",
+    "lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean: partial contextual source, lines 70-86; ralpha definition read completely.",
+    "lean/Audit/wave-green-fourier/Audit.lean: complete, lines 1-100.",
+    "lean/Audit/low-alpha-convolution/Audit.lean: complete, lines 1-88.",
+    "lean/refutations/wave-green-fourier/ArchimedesUnit.lean: complete, lines 1-42.",
+    "lean/refutations/wave-green-fourier/CosineVariant.lean: complete, lines 1-50.",
+    "lean/refutations/wave-green-fourier/DimensionClause.lean: complete, lines 1-34.",
+    "lean/refutations/wave-green-fourier/PositiveTime.lean: complete, lines 1-37.",
+    "lean/refutations/wave-green-fourier/SphereConstant.lean: complete, lines 1-46.",
+    "lean/refutations/low-alpha-convolution/AlphaOneDivergence.lean: complete, lines 1-40.",
+    "lean/refutations/low-alpha-convolution/JunkKernelDirac.lean: complete, lines 1-65.",
+    "lean/refutations/low-alpha-convolution/MissingFactor.lean: complete, lines 1-40.",
+    "lean/refutations/low-alpha-convolution/NegativeVariance.lean: complete, lines 1-42.",
+    "lean/claims.yaml: complete required module entries, lines 14851-15300; additional entries lines 12462-12490, 17332-17380. All claim IDs in the three coverage rows were searched for existence; the rest of the file was not reviewed.",
+    "lean/coverage.yaml: complete required rows, lines 232-283, 519-549, 660-706.",
+    "docs/coverage-scope-tex.yaml: complete, lines 1-90; none of the three reviewed labels currently has an entry.",
+    "prior/coverage-5ec3c11.yaml: complete required prior row, lines 159-209; additional context lines 158, 210-214.",
+    "prior/coverage-scope-tex-5ec3c11.yaml: complete required prior entry, lines 13-15; additional context lines 1-12, 16-18.",
+    "diffs/coverage.diff: complete required changed-row hunks, lines 125-156; additional context lines 1-124, 157-160. Remaining unrelated hunks were not reviewed.",
+    "diffs/coverage-scope-tex.diff: complete, lines 1-63.",
+    "diffs/statement-ledger-changed-sections.diff: complete, lines 1-379.",
+    "excerpts/tex-excerpts.txt: complete, lines 1-473.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: complete required cited ranges, lines 225-242, 734-919, 1660-1678, 2044-2050, 2050-2138, 4124-4132, 4505-4520, 4691-4818, 4998-5010, 5167-5237, 7638-7646; manuscript-wide label search additionally checked all cited labels for uniqueness.",
+    "manuscript/notes/index/list-of-notation.tex: complete required notation context, lines 98-105.",
+    "lean/provenance/manuscript-anchor.json: partial metadata inspection, lines 1-85, 426, 929.",
+    "PROVENANCE.json: partial metadata inspection, lines 1-75; an initial whole-file display was truncated and is not counted as complete coverage."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.exists_rotation: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:107-120 takes 'n : ℕ' and 'ξ : Rd (n + 1)' and concludes the stated isometry identity. TeX: no rotation lemma in the Fourier display at manuscript/notes/notes_stratonovich_ham_second_moment.tex:777-778, 4740-4744. The route-only mapping and claims.yaml:14851-14857 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.integral_inner_norm: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:126-131 takes arbitrary 'g : ℝ → ℝ → ℂ', without integrability, exactly as ledger:8315 and claims.yaml:14858-14864 say. TeX: no corresponding rotation-of-integrals statement at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4740-4744."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.integrable_inner_norm: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:134-140 has arbitrary ξ and g and an integrability equivalence, not an unconditional integrability conclusion. Ledger:8316 and claims.yaml:14865-14871 match. TeX: no such equivalence in manuscript/notes/notes_stratonovich_ham_second_moment.tex:4740-4744."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.splitFirst_mp: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:143-154 defines the coordinate equivalence and proves 'MeasurePreserving (splitFirst n)' for Lebesgue measures, with only n as parameter. TeX: no coordinate-equivalence assertion in manuscript/notes/notes_stratonovich_ham_second_moment.tex:4740-4744. Ledger:8317 and claims.yaml:14872-14878 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.splitFirst_fst: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:157 states '(splitFirst n x).1 = x 0' without additional hypotheses. TeX: no direct statement; manuscript/notes/notes_stratonovich_ham_second_moment.tex:4740-4744 only quotes the final Fourier formula. Ledger:8318 and claims.yaml:14879-14885 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.norm_splitFirst: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:160-165 states the norm identity for every n and x. TeX: no direct counterpart in manuscript/notes/notes_stratonovich_ham_second_moment.tex:4740-4744. Ledger:8319 and claims.yaml:14886-14892 correctly identify a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.integral_slice: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean hypothesis is 'hg : Integrable (fun x => g (x 0) ‖x‖)' at WaveGreenFourier.lean:170-179, retained by ledger:8320 and claims.yaml:14893-14899. TeX: no slicing lemma or supplied slicing hypothesis in manuscript/notes/notes_stratonovich_ham_second_moment.tex:4740-4744; this is accurately route-only."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.integral_inv_sqrt_one_sub_sq: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:184-195 proves the fixed interval integral equals π, with no parameter hypotheses. TeX: no arcsine computation in manuscript/notes/notes_stratonovich_ham_second_moment.tex:4738-4744. Ledger:8321 and claims.yaml:14900-14906 agree; endpoint totalization does not change this Lebesgue integral."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.integral_inv_sqrt: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:198-208 explicitly requires 'ha : 0 < a', as ledger:8322 and claims.yaml:14907-14913 report. TeX: no corresponding parameterized integral at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4738-4744."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.integral_slice_two: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:214-232 takes every real c and concludes the stated conditional value. Ledger:8323 and claims.yaml:14914-14920 explicitly disclose the zero extension from sqrt/inverse totalization. TeX: its genuine density has '|y| < h' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:5182-5183; the helper is not mislabelled as that statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.measurable_radial2: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:235-237 proves measurability for every real s, as ledger:8324 and claims.yaml:14921-14927 state. TeX: no separate measurability assertion for the density at manuscript/notes/notes_stratonovich_ham_second_moment.tex:5182-5183."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.integrable_radial2: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean requires 'hs : 0 < s' at WaveGreenFourier.lean:241-251; TeX uses the positive-time density '1_{|y|<h}/(2π sqrt(h²-|y|²))' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:5182-5183. The zero extension is disclosed, and ledger:8325 plus claims.yaml:14928-14934 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.waveGreen_two_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:255-262 requires '0 < s' and identifies the indicator-defined measure with the totalized radial density. TeX: the same interior density is specified at manuscript/notes/notes_stratonovich_ham_second_moment.tex:5182-5183. Ledger:8326 and claims.yaml:14935-14941 correctly treat removal of the indicator as a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.radial2_sqrt: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:265-268 takes arbitrary real s,t,u and proves exactly the algebraic identity in ledger:8327 and claims.yaml:14942-14948. TeX: no corresponding identity at manuscript/notes/notes_stratonovich_ham_second_moment.tex:5182-5183."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.waveGreen_fourier_two: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean has 'hs : 0 < s', ξ ∈ R², integrability and integral = waveHat at WaveGreenFourier.lean:274-330. TeX has 'sin(s|ξ|)/|ξ|, with value s at ξ=0' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:777-778 and positive h at 4703. Ledger:8328 and claims.yaml:14949-14955 preserve the hypotheses, formula and origin value."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.norm_cexp_I: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:334-335 takes real a and proves norm(exp(Ia))=1. TeX: no separately stated norm lemma in manuscript/notes/notes_stratonovich_ham_second_moment.tex:4736-4751. Ledger:8329 and claims.yaml:14956-14962 accurately identify an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.integral_polar3: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean explicitly assumes 'hf : Integrable f' at WaveGreenFourier.lean:341-372 and uses volume.toSphere with radial factor r². TeX: no proof of the Fourier identity at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4738-4744. Ledger:8330 and claims.yaml:14963-14969 correctly describe the alternative route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.continuous_spherePhi: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:376-385 defines spherePhi and proves continuity for arbitrary ξ ∈ R³; no extra hypothesis is hidden. TeX: no spherePhi object in manuscript/notes/notes_stratonovich_ham_second_moment.tex:4738-4744. Ledger:8331 and claims.yaml:14970-14976 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.ball_polar: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:389-438 assumes 'hR : 0 < R' and concludes exactly the ball/interval integral identity. TeX: no ball-integral proof at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4738-4744. Ledger:8332 and claims.yaml:14977-14983 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.ball_slice: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:444-502 assumes '0 < R' and has slice factor 'π * (R²-t²)', not a two-dimensional Green density. TeX: no slicing argument at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4738-4744. Ledger:8333 and claims.yaml:14984-14990 correctly retain the dimension and constant."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.integral_exp_sym: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean hypotheses are 'hk : 0 ≤ k', 'hR : 0 < R' at WaveGreenFourier.lean:506-513; conclusion is '2 * R * sinc(k*R)'. TeX: no such interval-integral declaration at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4738-4744. Ledger:8334 and claims.yaml:14991-14997 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.hasDerivAt_ballSlice: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:517-556 requires k≥0 and R>0 and gives derivative '4π R² sinc(kR)'. TeX: no radius-differentiation argument at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4738-4744. Ledger:8335 and claims.yaml:14998-15004 preserve both hypotheses and derivative constant."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.sphere_fourier_aux: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:560-571 takes arbitrary ξ ∈ R³ and concludes 'spherePhi ξ 1 = 4π sinc ‖ξ‖'. TeX: no spherePhi statement at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4738-4744. Ledger:8336 and claims.yaml:15005-15011 accurately identify a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.sphere_fourier: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:579-588 has arbitrary ξ, integrability and '4π sinc ‖ξ‖' for volume.toSphere. TeX specifies ordinary surface measure in manuscript/notes/notes_stratonovich_ham_second_moment.tex:5184-5186, without a separate sphere-transform statement. Ledger:8337 and claims.yaml:15012-15018 explicitly retain the toSphere model; the 4π normalization is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.waveGreen_fourier_three: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:595-611 requires s>0 and proves the transform for exactly WaveGreen.lean:110-111, namely (s/(4π)) times the scaled toSphere measure. TeX has 'σ_h/(4πh)' with σ_h surface measure at manuscript/notes/notes_stratonovich_ham_second_moment.tex:5184-5186. The cone/surface modelling choice is explicitly disclosed in ledger:8338, and scaling σ_h=s² pushforward σ gives the correct normalization; claims.yaml:15019-15025 matches."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.archimedes: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean requires 'he : ‖e‖ = 1' and concludes pushforward = 'ofReal(2π) • volume.restrict (Icc (-1) 1)' at WaveGreenFourier.lean:621-643. TeX invokes 'integration over its normal coordinate' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2125-2131, not a separately labelled Archimedes theorem. Ledger:8339 and claims.yaml:15026-15032 correctly identify that underlying law."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.lintegral_sphere_inner: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:649-652 requires a unit e and 'hf : Measurable f', f valued in ENNReal, and has the exact 2π lower-integral formula. TeX: normal-coordinate integration at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2125-2131, no separate general integral theorem. Ledger:8340 and claims.yaml:15033-15039 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.integrable_sphere_inner: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:656-665 requires '‖e‖=1', a normed additive commutative group E, and 'IntegrableOn f (Icc (-1) 1)'; it concludes the stated sphere integrability. TeX: no general group-valued statement at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2125-2131. Ledger:8341 and claims.yaml:15040-15046 faithfully describe this generalized auxiliary law."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.integral_sphere_inner: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean adds '[NormedSpace ℝ E]' to the unit-vector and IntegrableOn hypotheses at WaveGreenFourier.lean:670-683 and concludes integrability plus the 2π Bochner identity. TeX: no separately labelled general statement at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2125-2131. Ledger:8342 and claims.yaml:15047-15053 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.waveGreen_fourier: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:692-701 explicitly requires 'd=1 ∨ d=2 ∨ d=3' and '0<s'. TeX supplies d∈{1,2,3} in H:homog and positive time in the application, manuscript/notes/notes_stratonovich_ham_second_moment.tex:226, 4703. The transform and integrability in ledger:8343 and claims.yaml:15054-15060 agree, including the origin value through waveHat."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.waveHat_eq_sin_div: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:706-713 assumes h>0 and writes an explicit 'if ξ=0 then h else sin(h‖ξ‖)/‖ξ‖'. TeX explicitly says 'with value s at ξ=0' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:777-778. Ledger:8344 and claims.yaml:15061-15067 preserve that distinction from totalized division."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.waveGreen_fourier_paper: L:low-alpha-convolution",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:721-729 assumes the three allowed dimensions and h>0, and concludes integrability, the correctly branched sine quotient, and mass h. TeX has 'for every R,h>0' and the display plus origin convention at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4703, 4740-4744. Ledger:8345 and claims.yaml:15068-15074 accurately map to that proof display."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.greenFourier: no direct label",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:736-741 assumes d∈{1,2,3} and proves GreenFourier, whose fields are finiteness and the transform for s>0 (DampedMultiplier.lean:380-382). TeX has the transform and mass at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4741-4744. Ledger:8346 and claims.yaml:15075-15081 correctly describe this packaging rather than inventing a label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.WaveGreenFourier.damped_homogeneous_norms_fourier_wave: L:damped-homogeneous-norms",
+      "verdict": "PASS",
+      "reason": "WaveGreenFourier.lean:753-766 assumes HomogCovariance, v≥0, θ>0 and measurable S⊆S′, and proves all eight listed conjuncts. TeX assumes H:homog, θ>0 and measurable S⊆S′⊆(0,∞), manuscript/notes/notes_stratonovich_ham_second_moment.tex:805-847. Lean's domains are automatically intersected with (0,∞), DampedNormsHomog.lean:150-162. Ledger:8347 and claims.yaml:15082-15088 accurately claim the Green-smoothing part, not covariance-smoothing identification."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.heatDens: L:low-alpha-convolution",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:144-145 defines '(2π ε)^(-d/2) exp(-‖w‖²/(2ε))'. TeX fixes covariance εI and mass one at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4513-4515, 5004-5005; ε>0 in the lemma at 4709. Ledger:3645 and claims.yaml:15090-15096 have the correct Brownian normalization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.gammaEps: E:low-alpha-convolution",
+      "verdict": "PARTIAL",
+      "reason": "The definition '∫ y, heatDens ε (x-y) ∂Γ' at LowAlphaConvolution.lean:148-149 matches TeX 'γ_ε=p_ε*γ', manuscript/notes/notes_stratonovich_ham_second_moment.tex:4515, and claims.yaml:15097-15103. However ledger:3646 additionally says integrability is a conclusion of 'every theorem that uses it'. gammaEps_nonneg at Lean:174-176 and gammaEps_spectral at 325-328 have no such conclusion. W2 requires narrowing that sentence to integrable_heatDens and the appropriate wrappers."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.smoothedGreen: E:low-alpha-convolution",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:153-154 defines 'gaussKernel η ∗ G h'; DampedMultiplier.lean:236-237 gives the centered Gaussian law, and LowAlphaConvolution.lean:452-458 proves the zero-width convention. TeX defines G_{h,η}=p_η*G_h and G_{h,0}=G_h at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4698. Ledger:3647 and claims.yaml:15104-15110 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.specV: E:low-alpha-radial",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:157 uses 'μ (closedBall 0 1)'. TeX explicitly defines 'V=μ{ξ:|ξ|≤1}' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4696. Ledger:3648 and claims.yaml:15111-15117 correctly distinguish this object from ralpha, which also contains a nontrivial α-dependent prefactor."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.lowKernel: E:low-alpha-radial",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:160 is 'if ξ=0 then h else min h ‖ξ‖⁻¹'. TeX writes min{h,|ξ|⁻¹} at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4706 and has no origin atom under its assumptions (4723-4724). Ledger:3649 and claims.yaml:15118-15124 explicitly state the natural origin value and do not substitute Lean's zero inverse."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.gaussFactor: L:low-alpha-convolution",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:163 defines 'exp(-(ε*‖ξ‖²/2))'. TeX uses covariance εI at manuscript/notes/notes_stratonovich_ham_second_moment.tex:5004-5005 and its Gaussian Fourier multiplier at 4744-4746. Ledger:3650 and claims.yaml:15125-15131 retain the necessary factor 1/2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.heatDens_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:168-170 requires '0≤ε' and concludes only nonnegativity. TeX works with ε>0 at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4709, 4752-4753. Ledger:3651 and claims.yaml:15132-15138 accurately state the broader auxiliary inequality without claiming a zero-variance density."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.gammaEps_nonneg: L:low-alpha-convolution",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:174-176 takes any positive measure Γ and ε≥0 and concludes '0≤gammaEps Γ ε x'. TeX has a nonnegative covariance measure under H:homog and ε>0, manuscript/notes/notes_stratonovich_ham_second_moment.tex:227, 4709, 4752-4754. Ledger:3652 and claims.yaml:15139-15145 faithfully state the inequality; genuine integrability in the manuscript setting is proved separately."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.measurable_lowKernel: no direct label",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:179-181 takes every real h and proves Measurable lowKernel. TeX: no separate measurability lemma at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4723-4733. Ledger:3653 and claims.yaml:15146-15152 correctly mark a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.lowKernel_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean requires h≥0 at LowAlphaConvolution.lean:184-188; TeX uses h>0 at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4703. Ledger:3654 and claims.yaml:15153-15159 retain that hypothesis and correctly treat the elementary bound as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.abs_waveHat_le_lowKernel: L:low-alpha-convolution",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:192-198 assumes h≥0 and includes ξ=0 through lowKernel's branch. TeX uses h>0 and the same envelope at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4748-4750, with the transform's origin value fixed at 4744. Ledger:3655 and claims.yaml:15160-15166 match under that stated convention."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.gaussFactor_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:201 takes all real ε and every ξ and proves strict positivity of the exponential. TeX: no separately labelled strict-positivity claim at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4744-4746. Ledger:3656 and claims.yaml:15167-15173 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.gaussFactor_le_one: no direct label",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:204-208 assumes ε≥0. TeX has ε>0 and η≥0 and says both multipliers have modulus at most one, manuscript/notes/notes_stratonovich_ham_second_moment.tex:4709, 4744-4746. Ledger:3657 and claims.yaml:15174-15180 accurately state the elementary auxiliary form."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.integrable_gaussFactor: no direct label",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:212-217 assumes 'IsTempered μ' and ε>0. TeX's spectral measure is tempered under H:homog (manuscript/notes/notes_stratonovich_ham_second_moment.tex:228) and justifies finite Gaussian weighting by polynomial growth at 4736. Ledger:3658 and claims.yaml:15181-15187 disclose this proof-route choice."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.measure_closedBall_eq: E:low-alpha-radial",
+      "verdict": "PASS",
+      "reason": "Lean assumes 'SpectralHomogeneous μ alpha' and R>0 at LowAlphaConvolution.lean:224-229. TeX derives 'μ(cA)=c^αμ(A)' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4719-4723 and states the closed-ball formula at 4705. Ledger:3659 and claims.yaml:15188-15194 preserve the exact ball and constant."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.levelset_lowKernel: no direct label",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:233-242 requires '0<t' and 't≤h' and identifies the non-strict superlevel set with a closed ball of radius t⁻¹. TeX's layer-cake computation uses these ball masses at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4727-4731. Ledger:3660 and claims.yaml:15195-15201 correctly present the exact set identity as an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.levelset_lowKernel_empty: no direct label",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:245-251 needs only 'h<t' and concludes the superlevel set is empty. TeX integrates the layer cake only to h at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4728-4729. Ledger:3661 and claims.yaml:15202-15208 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.lintegral_rpow_Ioc: no direct label",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:256-267 requires α<1 and h≥0 and states the ENNReal lower-integral identity. TeX uses 0<α<1 and h>0 at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4703, evaluating V∫₀ʰu^(−α)du at 4729-4733. Ledger:3662 and claims.yaml:15209-15215 correctly disclose a more general scalar auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.integral_lowKernel: E:low-alpha-radial",
+      "verdict": "PASS",
+      "reason": "Lean assumes local finiteness, SpectralHomogeneous, α<1 and h>0 at LowAlphaConvolution.lean:273-305, concluding V<∞, integrability and V h^(1−α)/(1−α). TeX assumes H:homog and 0<α<1, manuscript/notes/notes_stratonovich_ham_second_moment.tex:4691-4707. Ledger:3663 and claims.yaml:15216-15222 accurately state the generalized theorem; no lower bound on α is secretly required."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.integrable_heatDens: no direct label",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:311-319 assumes tempered Γ and ε>0, for every x. TeX supplies tempered Γ through H:homog at manuscript/notes/notes_stratonovich_ham_second_moment.tex:227 and invokes Gaussian translates at 4752-4753. Ledger:3664 and claims.yaml:15223-15229 faithfully state the standalone integrability auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.gammaEps_spectral: L:low-alpha-convolution",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:325-351 assumes only IsSpectralMeasure, ε>0 and x and concludes an equality of complex Bochner integrals. TeX's corresponding Fourier-Fubini step is under H:homog and finite Gaussian weighting, manuscript/notes/notes_stratonovich_ham_second_moment.tex:4736-4738. Ledger:3665 and claims.yaml:15230-15236 accurately state the equality; integrability is not a conjunct of this declaration, as distinguished in W2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.gammaEps_continuous_bounded: no direct label",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:355-382 requires tempered μ, IsSpectralMeasure and ε>0 and concludes continuity plus the stated uniform integral bound. TeX: no separately stated continuity/boundedness lemma at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4736-4738. Ledger:3666 and claims.yaml:15237-15243 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.smoothed_pairing_spectral: L:low-alpha-convolution",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:394-446 assumes SFinite μ, tempered Γ and μ, IsSpectralMeasure, ε>0 and finite G; it concludes all three integrabilities and the pairing equality. TeX has tempered Radon measures under H:homog and invokes 'Fourier Fubini ... for γ_ε and the finite measure G_{h,η}', manuscript/notes/notes_stratonovich_ham_second_moment.tex:227-228, 4736-4738. Ledger:3667 and claims.yaml:15244-15250 explicitly retain these assumptions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.smoothedGreen_zero: L:low-alpha-convolution",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:452-458 requires '[SFinite (G h)]' and proves G_{h,0}=G_h. TeX's G_h has finite mass h and explicitly sets G_{h,0}=G_h, manuscript/notes/notes_stratonovich_ham_second_moment.tex:4697-4698. Ledger:3668 and claims.yaml:15251-15257 correctly disclose the general-family hypothesis, which is automatic in the manuscript case."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.smoothedGreen_fourier: no direct label",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:463-487 assumes GreenFourier G, h>0 and η≥0, concluding finiteness, multiplier exp(−η‖ξ‖²/2), and the lowKernel bound. TeX uses these ingredients at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4738-4750. Ledger:3669 and claims.yaml:15258-15264 faithfully describe the auxiliary packaging and constant."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.smoothedGreen_pairing_spectral: L:low-alpha-convolution",
+      "verdict": "PASS",
+      "reason": "Lean hypotheses at LowAlphaConvolution.lean:495-514 are SFinite μ, tempered Γ and μ, IsSpectralMeasure, GreenFourier G, h,ε>0 and η≥0. TeX supplies the covariance assumptions, positive widths and imported wave transform at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4691-4709, 4736-4746. Ledger:3670 and claims.yaml:15265-15271 state the correct integrabilities, phase, Gaussian factors and supplied input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.low_alpha_convolution: L:low-alpha-convolution",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:527-559 assumes locally finite homogeneous μ, α<1, tempered Γ and μ, IsSpectralMeasure and GreenFourier G. TeX assumes H:homog with 0<α<1, manuscript/notes/notes_stratonovich_ham_second_moment.tex:4691-4715. Ledger:3671 and claims.yaml:15272-15278 explicitly disclose this generalized form. All displays, integrabilities and quantifiers ∀h>0 ∀ε>0 ∀η≥0 ∀z agree with the stated uniform bound."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.alpha_pos_of_homog: no direct label",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:562-566 assumes HomogCovariance and α<1 and concludes α>0. TeX H:homog already has '0<α<d, or α=d=1', manuscript/notes/notes_stratonovich_ham_second_moment.tex:240. Ledger:3672 and claims.yaml:15279-15285 correctly mark this parameter extraction as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.low_alpha_convolution_paper: L:low-alpha-convolution",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:575-591 assumes HomogCovariance, α<1 and GreenFourier(waveGreen d), returning α>0 and all displays. TeX has H:homog and 0<α<1 and imports the transform/mass display, manuscript/notes/notes_stratonovich_ham_second_moment.tex:4691-4703, 4738-4744. Ledger:3673 and claims.yaml:15286-15292 explicitly identify the supplied input and its discharge, rather than calling this wrapper alone unconditional."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.LowAlphaConvolution.low_alpha_convolution_one: L:low-alpha-convolution",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:596-608 assumes HomogCovariance in d=1 and α<1 only, using greenFourier_one internally. TeX allows d=1 and requires 0<α<1, manuscript/notes/notes_stratonovich_ham_second_moment.tex:4691-4703. Ledger:3674 and claims.yaml:15293-15299 correctly state the dimensional specialization and absence of supplied inputs."
+    },
+    {
+      "claim": "PARA-WaveGreenFourier",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:8234-8298 accurately records the Fourier identities, 4π sphere normalization, 2π Archimedes law, alternative proof route, toSphere choice and discharge of GreenFourier in all three dimensions; these match WaveGreenFourier.lean:107-766 and the cited manuscript passages. W3 concerns only the unqualified radial2 zero-extension sentence at ledger:8300-8301, outside its positive-time use."
+    },
+    {
+      "claim": "PARA-LowAlphaConvolution",
+      "verdict": "PARTIAL",
+      "reason": "The constants, closed-ball V, origin convention, εI normalization, supplied Fourier input, field usage and uniform quantifiers in ledger:3558-3641 are otherwise accurate. However ledger:3587-3589, 3618 and especially 3646 overgeneralize integrability conclusions: gammaEps_spectral (LowAlphaConvolution.lean:325-328) is an equality only, unlike smoothed_pairing_spectral:394-403 and the final wrappers. See W2."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "All 64 target declarations occur exactly once in the Index, ledger:770-779, under the same labels as their section rows. Route auxiliaries are in no-direct-label rows. A manuscript-wide search found exactly one definition of every label cited in the target sections; the labelled locations include main TeX:225, 782, 804, 2072, 4702, 4704, 4710, 4760, 5167."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "FAIL",
+      "reason": "All listed claim IDs exist. The low-alpha and phase-contractions same-assumptions/full rows are supported by L9Completed.lean:96-110, 150-184. The damped-norm row's 'conclusion: full' at lean/coverage.yaml:237 is not supported: its own note at 281-283 reduces covariance smoothing to factor membership, whereas TeX:845-846 asserts the actual smoothing operation gives that multiplier. WaveGreenFourier closes the d=2,3 Green gap, not this omitted covariance-identification conclusion among the cited declarations. W1."
+    },
+    {
+      "claim": "SCOPE-RULES",
+      "verdict": "PASS",
+      "reason": "The three current rows have no conclusion_scope fields and none has an entry in docs/coverage-scope-tex.yaml:1-90. Thus there is no malformed scope sentence, ASCII/TeX discrepancy or Rayleigh-rate misdefinition in these entries. The substantive need to restore an accurate damped-norm scope is separately a mandatory repair under W1, not a formatting success that validates the full classification."
+    },
+    {
+      "claim": "REFUTATIONS",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "All nine files prove the stated perturbation counterexamples or divergence. SphereConstant uses sinc's genuine origin value; CosineVariant and MissingFactor use in-domain nonzero/positive parameters. DimensionClause and PositiveTime explicitly disclose model-extension conventions; JunkKernelDirac and NegativeVariance explicitly disclose totalization reliance. They must not be read as convention-free manuscript counterexamples. The target ledger sections contain no contrary refutation descriptions. W4 identifies an incidental inaccurate proof-route comment in ArchimedesUnit.lean:7-9."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "FAIL",
+      "reason": "The L9Completed and PhaseContractions cross-references correctly discharge the two Fourier/sphere inputs, and ledger:8742-8750 correctly distinguishes pointwise covariance representation from spectral-measure identification. Nevertheless the Scope, Index and earlier sections still call L:damped-homogeneous-norms full, or attribute the full lemma to full_wave alone, despite the narrower cited conclusions. Occurrences and repairs are enumerated in W1."
+    },
+    {
+      "claim": "L8-PATTERNS",
+      "verdict": "FAIL",
+      "reason": "Patterns (a) and (d) remain: lean/coverage.yaml:237; candidate/statement-ledger.md:200-207, 247-248, 573, 696, 1639-1642, 1796, 1830-1831, 1855-1859, 1916-1918, 8112-8113, 8194-8196 overstate whole-lemma coverage or attribute it to insufficient wrappers. W2 additionally identifies an overly broad integrability summary at ledger:3587-3589, 3618, 3646. No undisclosed added manuscript restriction of pattern (b), or convention-free description of the totalized controls in pattern (c), was found."
+    },
+    {
+      "claim": "CHANGED-ROW L:damped-homogeneous-norms",
+      "verdict": "FAIL",
+      "reason": "diffs/coverage.diff:130-156 changes weaker to full, deletes the scope and adds two WaveGreenFourier claims; diffs/coverage-scope-tex.diff:16-18 removes the companion scope entry. The added declarations at WaveGreenFourier.lean:736-766 genuinely close the Green-Fourier identification in d=2,3. They do not state covariance-smoothing spectral identification. The old covariance-membership limitation survives in coverage.yaml:281-283 and ledger:1709-1713, so deleting all narrowing is unjustified. W1."
+    },
+    {
+      "claim": "CHANGED-PASSAGE DampedMultiplier (whole result)",
+      "verdict": "PASS",
+      "reason": "The actual replacements in diffs/statement-ledger-changed-sections.diff:166-219 accurately change d=1-only Fourier availability to d=1,2,3 and cite the new wrapper. They match WaveGreenFourier.lean:736-766 and DampedMultiplier.lean:515-541. The pre-existing 'every assertion' and 'whole result' assertions elsewhere in this section remain erroneous and are reported under W1; these are not newly inserted Fourier-extension claims."
+    },
+    {
+      "claim": "CHANGED-PASSAGE WaveGreen (whole result)",
+      "verdict": "FAIL",
+      "reason": "The Fourier-extension updates themselves are correct. However the revised paragraph, candidate/statement-ledger.md:8186-8196 (diffs/statement-ledger-changed-sections.diff:233-254), still concludes 'The full lemma with nothing supplied is ...damped_homogeneous_norms_full_wave'. That declaration at DampedMultiplier.lean:547-585 neither identifies its Green norm with N2onSq nor states the covariance-smoothing spectral identity. TeX:845-846 asserts both operations. The paragraph must describe the actual combination of results and remaining limitation. W1."
+    }
+  ],
+  "findings": {
+    "fatal": [
+      "W1 — L:damped-homogeneous-norms is incorrectly classified and summarized as fully formalized. TeX manuscript/notes/notes_stratonovich_ham_second_moment.tex:845-846 says 'Spatial Gaussian smoothing and Gaussian smoothing of the Green kernel give multipliers in this class.' The cited Lean full wrapper concludes only '∀ η, 0 ≤ η → IsMultiplier (gaussMult η)' and Green-family smoothing identities (DampedMultiplier.lean:573-584); its documentation explicitly says the covariance spectral identity 'is not stated' (458-459). WaveGreenFourier.lean:753-766 correctly supplies the missing Green identification in d=2,3, but does not add covariance identification. LowAlphaConvolution.lean:325-328 now proves a useful pointwise representation; this is neither the claimed spectral-measure statement nor a conclusion of the damped-norm row's cited declarations. The limitation is disclosed at candidate/statement-ledger.md:1709-1713, 8742-8750 and lean/coverage.yaml:281-283, yet contradicted by coverage.yaml:237 and ledger:200-207, 247-248, 573, 696, 1639-1642, 1796, 1830-1831, 1855-1859, 1916-1918, 8112-8113, 8194-8196. Exact fix: retain same-assumptions but change the coverage conclusion to weaker, restore matching plain-English ASCII/TeX scope sentences describing the covariance-identification gap and successful three-dimensional Green extension, and qualify these whole-lemma/full_wave summaries. Alternatively, prove and cite the missing covariance-identification conclusion and cite the Fourier wrapper wherever its Green identification is claimed."
+    ],
+    "major": [
+      "W2 — The LowAlphaConvolution ledger overstates integrability conclusions. candidate/statement-ledger.md:3646 says integrability is 'a conclusion of every theorem that uses' gammaEps; related blanket wording appears at 3587-3589 and 3618. In contrast, LowAlphaConvolution.lean:325-328 assumes only 'IsSpectralMeasure Γ μ', '0 < ε' and x and concludes an equality, with no Integrable conjunct; gammaEps_nonneg:174-176 also concludes only nonnegativity for arbitrary Γ. TeX manuscript/notes/notes_stratonovich_ham_second_moment.tex:4736-4738 explicitly justifies Fourier Fubini under the standing tempered/Radon assumptions. The final wrappers do supply genuine integrability, so the lemma's bound is not refuted. Exact fix: say that integrable_heatDens:311-319 supplies the inner integrability under tempered Γ and ε>0, that smoothed_pairing_spectral:394-403 and the final wrappers include the relevant integrabilities, and that gammaEps_spectral alone is an identity of Lean integrals without an integrability conclusion."
+    ],
+    "minor": [
+      "W3 — candidate/statement-ledger.md:8300-8301 says radial2 s r vanishes for 'r >= s' without stating s>=0. The actual supporting theorem WaveGreen.lean:159 requires 'hs : 0 ≤ s' and 'hr : s ≤ r'; for negative s the unqualified assertion is false. TeX's density is used at positive h, manuscript/notes/notes_stratonovich_ham_second_moment.tex:4703, 5182-5183, so this does not affect the reviewed Fourier results. Optional fix: write 'for 0 <= s <= r' or explicitly restrict the sentence to positive time and radial r.",
+      "W4 — lean/refutations/wave-green-fourier/ArchimedesUnit.lean:7-9 says the proof uses the package law at a unit vector to obtain nonzero sphere mass. The actual proof at 31-40 uses Measure.toSphere_ne_zero directly. TeX's normal-coordinate discussion at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2125-2131 is unaffected, and the counterexample is valid. Optional fix: correct the proof-route comment; no theorem change is needed."
+    ]
+  },
+  "required_repairs": [
+    "Repair W1: remove the unsupported full classification and whole-lemma/full_wave summaries, restoring an accurate covariance-smoothing limitation in lean/coverage.yaml and matching docs/coverage-scope-tex.yaml scope text; or add and cite the missing formal covariance-identification result. Preserve the correctly proved d=1,2,3 Green-smoothing extension.",
+    "Repair W2: replace blanket integrability-conclusion assertions in the LowAlphaConvolution section, particularly candidate/statement-ledger.md:3646, with declaration-specific statements distinguishing gammaEps_spectral's equality from the integrability conclusions of integrable_heatDens, smoothed_pairing_spectral and the final wrappers."
+  ],
+  "limitations": [
+    "The contracted complete-reading requirement A was completed for the target modules, required ledger sections, module claim entries, coverage rows, relevant change hunks, audits, refutations and cited manuscript ranges. Partial contextual-file coverage above does not assert review of their unrelated declarations.",
+    "PROVENANCE.json was inspected only partially; lines 76-1864 were not systematically read after the initial truncated display. manuscript-anchor.json was inspected at lines 1-85 and matching revision-history lines only. No complete byte-binding or provenance audit is claimed.",
+    "Manuscript-wide searches established cited-label uniqueness; unrelated manuscript statements, earlier-wave results and external source literature were not re-reviewed.",
+    "Compilation and standard-axiom status were supplied by the contract, not independently rerun. The audit files contain #check/#print directives rather than captured elaboration output.",
+    "The d=3 identification with Hausdorff or Riemannian surface measure is not proved in the packet; the disclosed Euclidean cone-measure model has the correct 4π normalization and Fourier law.",
+    "This AI correspondence review is not human verification or a novelty audit."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md: 1-701 complete, including required Scope 37-505 and Index 506-701; 702-8721 partial, with complete ## heading search and per-Index-label searches of all 2468 declaration label cells; 888-901 additionally read completely. Context-marker matches across 952-8708 read.",
+    "lean/FORMALIZATION.md: 1-162 complete.",
+    "tools/index_category_check.py: 1-75 complete.",
+    "tools/index_category_check.out: 1 complete.",
+    "adjudication/round7-434a7e2.md: 1-109 complete.",
+    "manuscript/notes/integrated_occupation_ceiling.tex: partial, label matches at 10,24,33,93,104,120,150,196,205,213,253,256.",
+    "manuscript/notes/integrated_actual_operator_driver.tex: partial, label matches at 18,427,528.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: partial, label matches at 219,225,252,530,734,782,804,822,836,1802,2044,2058,2072,2077,2080,2281,2288,2292,2472,2484,2531,2543,2578,2589,2599,2686,2707,2713,2720,2829,2832,2900,2914,2986,2994,3053,3080,3402,3405,3410,3586,3600,3611,3619,3624,3703,3718,4702,4704,4710,5167,7222,7506,7517,7575,7646,7648,7663,7704,7741,7754,7756,7764,7775; 2531-2557 additionally read completely.",
+    "manuscript/notes/integrated_exact_scaling.tex: partial, label match at 4.",
+    "manuscript/notes/integrated_compact_gaussian.tex: partial, label matches at 13,47,50,55,98,149,180.",
+    "manuscript/notes/integrated_positive_gram.tex: partial, label matches at 26,101,175.",
+    "manuscript/notes/integrated_covariance_foundation.tex: partial, label matches at 34,45,49,83,88,90,95,141,150,188,258,300,303,347,358,378.",
+    "manuscript/notes/integrated_raw_block_lower.tex: partial, label matches at 51,233,243,339,542.",
+    "manuscript/notes/integrated_temporal_equilibrium.tex: partial, label matches at 13,37,39,45,49.",
+    "manuscript/notes/integrated_gaussian_tubes.tex: partial, label match at 458.",
+    "manuscript/notes/integrated_unmasked_variational.tex: partial, label matches at 6,24,27,65,69,99,104,169,175,225,227,271,301.",
+    "manuscript/notes/integrated_wave_variance.tex: partial, label matches at 12,25,37,41,47,141,205,212,231,240,346,350,368,376,379,390.",
+    "manuscript/notes/integrated_radius_anchor.tex: partial, label match at 281.",
+    "manuscript/notes/integrated_white_evaluation.tex: partial, label matches at 58,103,131.",
+    "manuscript/notes/integrated_compact_mean_family.tex: partial, label matches at 34,256,273,277,338,402,408.",
+    "manuscript/notes/integrated_spatial_occupation.tex: partial, label matches at 12,15,40,50,102,106,167,171,190,220,224,227,231,301,309,316,353,361,365,387,395,399.",
+    "manuscript/notes/integrated_intrinsic_constant.tex: partial, label matches at 23,26,33.",
+    "manuscript/notes/integrated_symplectic_phase.tex: partial, label matches at 31,45,53."
+  ],
+  "checks": [
+    {
+      "claim": "POINTERS lines 512-604",
+      "verdict": "PASS",
+      "reason": "Independently searched every row label against the section-table label cells and manuscript label definitions. All 93 rows have existing labels, exactly the required section sets, and matching heading-category prefixes. This includes secondary assignments: candidate/statement-ledger.md:564 correctly includes ClockCopy and MaskedSpectralGrowth through label cells at 1275 and 4215-4217; the manuscript label exists at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4702. No missing or extra pointers or category discrepancies were found."
+    },
+    {
+      "claim": "POINTERS lines 605-697",
+      "verdict": "PASS",
+      "reason": "Independently searched all 93 rows, including the no-direct-label row, against all declaration label cells. Every manuscript label exists, section sets agree exactly, and category prefixes match their headings. For example, candidate/statement-ledger.md:686 correctly points to HermiteWordFock:900 and HermiteFock:2868,2890; the label exists at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2543. The no-direct-label section set at candidate/statement-ledger.md:697 agrees with the 1168 unlabelled declaration rows."
+    },
+    {
+      "claim": "SCOPE-AND-FORMALIZATION",
+      "verdict": "FAIL",
+      "reason": "The audit-category exception is correct: candidate/statement-ledger.md:77-78 and lean/FORMALIZATION.md:110-113 exclude HermiteWordFock from category C, consistently with its narrower-result heading at candidate/statement-ledger.md:862. However, neither the complete Scope nor the complete FORMALIZATION states the required label-cell assignment/context convention. Candidate/statement-ledger.md:79-84 and lean/FORMALIZATION.md:90-92 describe pointers only generically; candidate/statement-ledger.md:462-467 explains no-direct-label semantically but does not prohibit manuscript labels in those cells. The explicit rule appears in adjudication/round7-434a7e2.md:5,19,21, not in the two required reader-facing descriptions."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "P1 \u2014 Missing assignment convention in Scope and FORMALIZATION. The Lean-companion Scope says labels point to sections 'whose tables formalize it' (candidate/statement-ledger.md:79-84), while FORMALIZATION says the Index 'points from each label to those sections with their category' (lean/FORMALIZATION.md:90-92). Neither specifies that every backticked manuscript label anywhere in a label cell is an assignment, that context-only labels belong in the statement cell as '(Context: ...)', or that no-direct-label cells contain no manuscript label. This matters for nested co-labels such as 'L:finite-word-cutoff' and 'E:finite-word-cutoff' in candidate/statement-ledger.md:900, corresponding to TeX '\\label{L:finite-word-cutoff}' and '\\label{E:finite-word-cutoff}' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2531,2543. Exact fix: add all three convention clauses explicitly to both the ledger Scope and lean/FORMALIZATION.md. This is a documentation-rule omission, not a mathematical statement discrepancy."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Add to both candidate/statement-ledger.md Scope and lean/FORMALIZATION.md: every backticked manuscript label anywhere in a section-table label cell is an assignment and creates an Index pointer; context-only label mentions belong in the statement cell as '(Context: ...)'; no-direct-label cells carry no manuscript label."
+  ],
+  "limitations": [
+    "Requirement A was completed. Outside its required portions, ledger prose and manuscript files were searched selectively rather than read completely; coverage entries identify those partial readings.",
+    "The review checks documentation correspondence only. Lean proof correctness, package builds, provenance hashes, and historical revision equivalence were not verified.",
+    "This AI review is neither human verification nor a novelty audit."
+  ]
+}

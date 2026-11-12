@@ -1,0 +1,67 @@
+One-check confirmation: the resolvent_integral_le row of the wave-L9 Lean companion ledger
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+CONTEXT
+A confirmation review at commit 6d108c093553 found one major defect (finding
+P1, verbatim in prior/f2-P1-finding.txt): the ledger row of
+ComplexPhaseScalar.resolvent_integral_le said "norm convergence" for a real
+normed space E, although Lean assumes no completeness and concludes only
+integrability and a bound. The row was rewritten at commit ff40fded3905 (one
+line, documentation only).
+
+PACKET
+- prior/f2-P1-finding.txt : the finding, verbatim;
+  prior/f2-repaired-rows-a-report.json : the full report it comes from.
+- rows/old-row-6d108c0.txt and rows/new-row-ff40fde.txt : the row before
+  and after; diffs/docs-6d108c0-ff40fde.diff : the whole change.
+- candidate/statement-ledger.md : the ledger at ff40fded3905 (the row is at
+  line 1458; its section is "ComplexPhaseScalar").
+- lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean : the Lean module
+  at ff40fded3905 (full file); lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean :
+  the module it imports, which defines phaseI and deltaA (full file).
+- excerpts/tex-excerpts.txt : numbered lines 2270-2370 of
+  manuscript/notes/notes_stratonovich_ham_second_moment.tex at revision a2844206199b (the statement and proof of
+  L:complex-phase); manuscript/notes/notes_stratonovich_ham_second_moment.tex : the whole file.
+- PROVENANCE.json : byte binding of every packet file.
+
+CHECKS (exactly these 1, in this order, with these claim strings):
+  1. claim "F2-P1-RESOLVED": finding P1 is resolved and the new row is accurate with nothing overstated: its statement of the Lean conclusion (hypotheses, integrability, the bound, Lean's Bochner integral, no completeness assumed) matches the Lean declaration resolvent_integral_le exactly; its remark that reading the result as operator-norm convergence of the integral requires E complete, which the TeX's complex Hilbert space setting provides (TeX line 2338), is mathematically correct; its line references to the TeX are right; and the rest of the row (label, inputs cell) is unchanged in meaning and still correct
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: prior/f2-P1-finding.txt;
+   rows/old-row-6d108c0.txt; rows/new-row-ff40fde.txt;
+   diffs/docs-6d108c0-ff40fde.diff; the declaration resolvent_integral_le
+   in lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean (its full
+   statement and the definitions it uses: phaseI and deltaA in
+   lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean);
+   excerpts/tex-excerpts.txt.
+B. Other files: search as needed and read matches in context.
+C. If A is incomplete, mark the check INCONCLUSIVE and give confidence
+   medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 1 object above, with that claim string. verdict one
+  of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL (PASS: resolved and
+  correct; PASS_WITH_NOTES: resolved, with a minor wording point reported
+  as a minor finding; PARTIAL: only partly resolved; FAIL: not resolved or
+  a new error; INCONCLUSIVE: not checkable). reason: evidence with
+  file:line.
+- "findings": fatal = misstatement a citing reader would be misled by;
+  major = material imprecision; minor = wording. Each string starts with an
+  ID (C1, C2, ...), quotes Lean and TeX with file:line, and gives the exact
+  fix.
+- "required_repairs": only changes that must be made before the row can be
+  cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "limitations": anything you could not check.
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and the check is PASS or PASS_WITH_NOTES; FAIL
+  if any fatal or major finding or required repair; INCONCLUSIVE if the
+  reading requirement could not be met.
+- "confidence": high only if requirement A is complete.

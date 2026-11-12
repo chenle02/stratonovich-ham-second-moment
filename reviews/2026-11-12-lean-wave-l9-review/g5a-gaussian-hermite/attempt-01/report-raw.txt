@@ -1,0 +1,366 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-1796 complete; packet byte counts and SHA-256 bindings verified.",
+    "candidate/statement-ledger.md:1-831,971-1027,2289-2419,2584-2699,2848-2963,3165-3183,3241,3535-3550,6738-6763,6780-6794,6804,6816-6817,6820,8654-8846; complete required sections and relevant cross-reference matches; partial file.",
+    "lean/StratonovichHAMSecondMoment/GaussianHermite.lean:1-501 complete.",
+    "lean/StratonovichHAMSecondMoment/GaussianIBP.lean:1-327 complete.",
+    "lean/StratonovichHAMSecondMoment/HermiteFock.lean:1-641 complete.",
+    "lean/StratonovichHAMSecondMoment/FockForm.lean:1-546 complete.",
+    "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean:65-100,229-235; complete required fockD declaration; partial file.",
+    "lean/StratonovichHAMAudit/HermiteWord.lean:1-61 complete.",
+    "lean/StratonovichHAMAudit/HermiteWordFock.lean:1-53 complete.",
+    "lean/StratonovichHAMAudit/HermiteWordConsumer.lean:1-70 complete.",
+    "lean/refutations/gaussian-hermite/OrthogonalityNoDelta.lean:1-34 complete.",
+    "lean/refutations/gaussian-hermite/RecurrenceNoLowering.lean:1-39 complete.",
+    "lean/refutations/gaussian-hermite/UnnormalizedOrthonormal.lean:1-32 complete.",
+    "lean/Audit/gaussian-hermite/Audit.lean:1-137 complete.",
+    "lean/claims.yaml:16473-16865,17196-17331; complete GaussianHermite entries and inspected consumer entries; partial file. Required coverage claim identifiers also checked against the complete identifier inventory.",
+    "lean/coverage.yaml:1-80,329-408,1296-1323; complete required rows; partial file.",
+    "docs/coverage-scope-tex.yaml:1-24,58-60; complete required entries; partial file.",
+    "excerpts/tex-excerpts.txt:1-270 complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:225-242,1765-1825,2054-2066,2460-2571,2803-2897; complete ranges cited by the target section and inspected foundation consumers; partial file. Relevant label definitions searched across all manuscript inputs.",
+    "lean/provenance/manuscript-anchor.json:1-50,1740-1825; partial contextual inspection.",
+    "prior/statement-ledger-5ec3c11.md:848-865 and relevant search matches; partial contextual inspection.",
+    "prior/coverage-5ec3c11.yaml:258-276 and relevant search matches; partial contextual inspection.",
+    "prior/coverage-scope-tex-5ec3c11.yaml:1-18; partial contextual inspection.",
+    "diffs/statement-ledger.diff:702-827 and relevant search matches; partial contextual inspection.",
+    "diffs/coverage.diff:159-235,465-490 and relevant search matches; partial contextual inspection.",
+    "diffs/coverage-scope-tex.diff:19-28,43-47 and relevant search matches; partial contextual inspection."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.hermR: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:68 defines '(hermite n).map (Int.castRingHom ℝ)' for 'n : ℕ'; notes_stratonovich_ham_second_moment.tex:2467-2468 invokes 'standard Gaussian creation and annihilation algebra', without a separate polynomial-definition assertion. Ledger:2644 and claims.yaml:16474-16480 faithfully identify this foundation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.He: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:71 defines '(hermR n).eval x' for 'n : ℕ' and 'x : ℝ'; notes_stratonovich_ham_second_moment.tex:2467-2468 supplies only the general algebra citation. Ledger:2645 and claims.yaml:16481-16487 correctly describe evaluation, without claiming a labelled result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.derivative_hermite_succ: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:75-82 proves '∀ n : ℕ, derivative (hermite (n + 1)) = ... * hermite n' over integers. TeX:2515-2517 states coordinate multiplication, not this derivative induction. Ledger:2646 and claims.yaml:16488-16494 correctly classify the declaration as a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.hermR_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:85 states 'hermR 0 = 1', with no hypotheses. TeX:2515 uses 'normalized Hermite polynomials' but does not separately state this unnormalized base case. Ledger:2647 and claims.yaml:16495-16501 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.hermR_succ: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:88 states 'hermR (n + 1) = X * hermR n - derivative (hermR n)' for 'n : ℕ'. TeX:2515-2517 instead gives the normalized multiplication identity. Ledger:2648 and claims.yaml:16502-16508 accurately present an unlabelled foundational recurrence."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.derivative_hermR_succ: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:93-94 proves the real-polynomial Appell identity for 'n : ℕ', without supplied assumptions. TeX:2515-2517 uses the normalized recurrence, not an explicit Appell statement. Ledger:2649 and claims.yaml:16509-16515 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.hermR_succ_succ: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:100-101 states 'He_(n+2) = X He_(n+1) - (n+1) He_n' for natural n. TeX:2515-2517 states its normalized multiplication counterpart, not this separate polynomial identity. Ledger:2650 and claims.yaml:16516-16522 preserve the constants and mapping."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.hermR_monic: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:105 states '(hermR n).Monic' for every 'n : ℕ'. TeX:2515 names normalized Hermite polynomials without a monicity assertion. Ledger:2651 and claims.yaml:16523-16529 correctly describe a foundation rather than a manuscript proof step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.natDegree_hermR: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:108 states '(hermR n).natDegree = n' for natural n. TeX:2515-2517 uses Hermite degrees but does not separately assert this polynomial-degree theorem. Ledger:2652 and claims.yaml:16530-16536 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.iterate_derivative_hermR_self: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:112-113 states 'derivative^[n] (hermR n) = C (n ! : ℝ)' with only 'n : ℕ'. TeX:2515-2517 contains no iterated-derivative assertion. Ledger:2653 and claims.yaml:16537-16543 correctly mark a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.derivative_hermR: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:124-128 proves 'derivative (hermR n) = n * hermR (n - 1)' for all natural n, explicitly treating zero. TeX:2515-2517 states normalized coordinate multiplication, not this derivative formula. Ledger:2654 and claims.yaml:16544-16550 accurately disclose natural subtraction."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.X_mul_hermR: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:131-133 states 'X * hermR n = hermR (n + 1) + n * hermR (n - 1)' for natural n. TeX:2516-2517 gives the normalized square-root-coefficient version. Ledger:2655 and claims.yaml:16551-16557 accurately retain the unnormalized coefficient and zero case."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.integrable_eval: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:138-145 proves integrability for every 'p : ℝ[X]' against 'gaussianReal 0 1', rather than assuming it. TeX:2515 works with Gaussian polynomials without separately stating this integrability lemma. Ledger:2656 and claims.yaml:16558-16564 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.gE: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:148 defines '∫ x, p.eval x ∂gaussianReal 0 1' for real polynomials; integrability is proved at 138-145. TeX:2467-2468 cites Gaussian algebra without naming this functional. Ledger:2657 and claims.yaml:16565-16571 are accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.gE_add: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:151-152 states 'gE (p + q) = gE p + gE q' for 'p q : ℝ[X]', deriving integrability internally. TeX:2515-2517 does not state this linearity auxiliary. Ledger:2658 and claims.yaml:16572-16578 faithfully classify it."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.gE_sub: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:155-156 proves 'gE (p - q) = gE p - gE q' for real polynomials. TeX:2515-2517 has no separate subtraction-functional claim. Ledger:2659 and claims.yaml:16579-16585 correctly describe a route helper with nothing supplied."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.gE_C: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:159 states 'gE (C c) = c' for 'c : ℝ'; the measure is the probability law N(0,1). TeX:2474-2475 specifies 'independent standard Gaussian coordinates', consistent with that normalization, but has no separate constant-expectation assertion. Ledger:2660 and claims.yaml:16586-16592 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.gE_X_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:162-166 proves 'gE (X * p) = gE (derivative p)' for 'p : ℝ[X]'; the differentiability and three integrability inputs of GaussianIBP.lean:88-92 are discharged. TeX:2467-2468 invokes Gaussian algebra without this separate IBP statement. Ledger:2661 and claims.yaml:16593-16599 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.gE_hermR_succ_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:169-170 assumes only 'n : ℕ' and 'q : ℝ[X]' and concludes 'gE (hermR (n + 1) * q) = gE (hermR n * derivative q)'. TeX:2515-2517 does not state this shift separately. Ledger:2662 and claims.yaml:16600-16606 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.gE_hermR_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:178-179 proves 'gE (hermR n * q) = gE (derivative^[n] q)' for natural n and real polynomial q. TeX:2515-2517 states normalized multiplication, not this iterated shift. Ledger:2663 and claims.yaml:16607-16613 preserve the polynomial domain."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.gE_hermR_mul_hermR: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:185-186 states 'if n = m then (n ! : ℝ) else 0' for 'n m : ℕ'. TeX:2515 uses normalized Hermite polynomials; this is their unnormalized foundational orthogonality identity, not an independently labelled assertion. Ledger:2664 and claims.yaml:16614-16620 retain the factorial and delta."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.integral_He_mul_He: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:196-198 concludes both integrability under 'gaussianReal 0 1' and the factorial-delta integral for all natural indices. TeX:2474-2475 specifies standard real Gaussian coordinates and 2515 normalized Hermite polynomials. Ledger:2665 and claims.yaml:16621-16627 correctly identify the unnormalized foundation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.integral_He_succ_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:204-208 takes 'n : ℕ' and 'q : ℝ[X]' and proves both integrabilities and equality of the shifted integrals. TeX:2515-2517 contains no separate polynomial IBP shift assertion. Ledger:2666 and claims.yaml:16628-16634 accurately retain the domain and conclusions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.hnPoly: L:fock-form",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:217 defines 'C (√(n ! : ℝ))⁻¹ * hermR n' for natural n; positivity is proved at 227-228. TeX:2515 says 'normalized Hermite polynomials' under the standard Gaussians of 2474-2475. Ledger:2667 and claims.yaml:16635-16641 implement exactly that normalization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.hn: L:fock-form",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:220 defines '(hnPoly n).eval x' for natural n and real x. TeX:2515-2517 uses the normalized Hermite functions in Gaussian coordinates. Ledger:2668 and claims.yaml:16642-16648 correctly identify their one-variable realization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.hn_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:223 states 'hn n x = He n x / √(n ! : ℝ)' for all natural n and real x. TeX:2515 names the normalized polynomials but does not give this separate unfolding identity. Ledger:2669 and claims.yaml:16649-16655 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.sqrt_factorial_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:227-228 proves '0 < √(n ! : ℝ)' for every natural n. TeX:2515 uses normalization without a separate denominator-positivity statement. Ledger:2670 and claims.yaml:16656-16662 correctly classify this as a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.hn_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:231 proves 'hn 0 x = 1' for 'x : ℝ', without assumptions. TeX:2515 uses the normalized system without separately stating this base case. Ledger:2671 and claims.yaml:16663-16669 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.hn_one: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:234-235 proves 'hn 1 x = x' for every real x. TeX:2515-2517 fixes the compatible normalized recurrence, but has no separate first-polynomial assertion. Ledger:2672 and claims.yaml:16670-16676 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.integrable_hn_mul_hn: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:238-240 concludes 'Integrable (fun x => hn n x * hn m x) (gaussianReal 0 1)' for all natural indices. TeX:2515 uses normalized Gaussian Hermite coordinates without isolating this integrability lemma. Ledger:2673 and claims.yaml:16677-16683 are accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.integral_hn_mul_hn: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:243-244 proves integral '1' when 'n = m' and '0' otherwise, under N(0,1), with integrability established at 238-240. TeX:2515 implicitly uses the orthonormal normalized system; the separate one-variable foundation is reasonably unlabelled. Ledger:2674 and claims.yaml:16684-16690 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.mul_hn: L:fock-form",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:258-259 states 'x * hn n x = √(n+1) * hn (n+1) x + √n * hn (n-1) x' for natural n and real x. TeX:2516-2517 states the identical coordinate rule. Ledger:2675 and claims.yaml:16691-16697 correctly explain that the lowering coefficient vanishes at zero."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.hk: L:fock-form",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:289 defines '∏ i, hn (k i) (x i)' for 'k : Fin m → ℕ' and 'x : Fin m → ℝ'. TeX:2474-2477 and 2515-2517 use independent real Gaussian coordinates and their normalized multi-index Hermite polynomials. Ledger:2676 and claims.yaml:16698-16704 faithfully realize the finite-coordinate object."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.unitIdx: L:fock-form",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:292 defines 'Pi.single i 1' for 'i : Fin m'. TeX:2517 uses 'e_i' in the multi-index recurrence. Ledger:2677 and claims.yaml:16705-16711 identify precisely this unit multi-index."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.hk_zero: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:295 proves 'hk 0 x = 1' for every finite real coordinate vector. TeX:2515 uses the Hermite system, and 2546 its vacuum '1 ⊗ v', without separately stating this scalar product identity. Ledger:2678 and claims.yaml:16712-16718 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.hk_unitIdx: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:298 states 'hk (unitIdx i) x = x i' for every coordinate i and real vector x. TeX:2515-2517 uses the compatible first-chaos coordinate convention but does not separately state this identity. Ledger:2679 and claims.yaml:16719-16725 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.integrable_hk_mul_hk: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:305-306 proves product integrability for arbitrary finite multi-indices under 'GaussianIBP.stdPi m'; GaussianIBP.lean:115 defines the product of N(0,1) laws. TeX:2474-2475 requires 'independent standard Gaussian coordinates'. Ledger:2680 and claims.yaml:16726-16732 use the correct measure and domain."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.integral_hk_mul_hk: L:fock-form",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:315-316 concludes 'if k = l then 1 else 0' under the product standard Gaussian, for all finite multi-indices. TeX:2515-2523 uses normalized coordinates and orthogonal degree outputs. Ledger:2681 and claims.yaml:16733-16739 correctly map this implicit orthonormality step; real-valued basis functions also give the required complex Hilbert-factor Gram identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.hk_eq_mul_erase: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:326-328 factors 'hk k x' into the i-th factor and the product over 'univ.erase i', for arbitrary k, i and x. TeX:2516-2517 states the coordinate recurrence, not this product-reindexing helper. Ledger:2682 and claims.yaml:16740-16746 correctly mark a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.hk_eq_of_eq_off: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:332-334 assumes '∀ j, j ≠ i → l j = k j' and concludes the stated split product. TeX:2516-2517 changes a multi-index in only coordinate i but does not state this helper. Ledger:2683 and claims.yaml:16747-16753 retain exactly the off-coordinate equality hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.coord_mul_hk: L:fock-form",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:341-343 takes arbitrary k, i and x and proves '√(k_i+1) hk_(k+e_i) + √k_i hk_(k-e_i)'. TeX:2516-2517 gives exactly this rule; 2556-2559 expressly makes the lowering term zero at degree zero. Ledger:2684 and claims.yaml:16754-16760 preserve both constants and the boundary case."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.HermiteSpan: E:occupied-multiplication",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:355-358 defines existence of real coefficients representing F pointwise using indices with '∑ i, l i ≤ n'. TeX:1794-1798 defines the closed degree-at-most-n space, while 1806-1810 first handles 'finite-coordinate polynomials'. Ledger:2685 and claims.yaml:16761-16767 correctly restrict this definition to that finite-coordinate part, not its closure."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.Span1: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:361-362 defines '∃ b : ℕ → ℝ, ∀ x' a sum over 'range (j + 1)'. TeX:1806-1810 uses finite-coordinate polynomials but does not introduce this one-variable predicate. Ledger:2686 and claims.yaml:16768-16774 accurately classify the representation helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.Span1.add: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:365-366 assumes 'hf : Span1 j f' and 'hg : Span1 j g', concluding 'Span1 j (f + g)'. TeX:1806-1810 contains no separate span-addition assertion. Ledger:2687 and claims.yaml:16775-16781 faithfully state a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.Span1.smul: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:371-372 takes arbitrary 'r : ℝ' and 'hf : Span1 j f', concluding the representation of 'r * f x'. TeX:1806-1810 does not separately state this span-closure helper. Ledger:2688 and claims.yaml:16782-16788 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.Span1.mono: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:377 assumes 'hjj : j ≤ j′' and 'hf : Span1 j f', concluding 'Span1 j′ f'. TeX:1806-1810 uses degree bounds but has no separate monotonicity assertion. Ledger:2689 and claims.yaml:16789-16795 preserve the weak inequality."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.Span1.zero: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:386 states 'Span1 j (fun _ => 0)' for every natural j, with no hypotheses. TeX:1806-1810 does not separately assert zero membership. Ledger:2690 and claims.yaml:16796-16802 accurately identify this route helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.Span1.of_hn: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:389 assumes 'hl : l ≤ j' and concludes 'Span1 j (hn l)'. TeX:1806-1810 uses the normalized Hermite coordinates without this separate predicate-level inclusion. Ledger:2691 and claims.yaml:16803-16809 match the hypothesis and conclusion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.Span1.sum: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:395-396 assumes '∀ a ∈ s, Span1 j (f a)' for a finite set s and concludes membership of its pointwise sum. TeX:1806-1810 does not state this finite-sum helper separately. Ledger:2692 and claims.yaml:16810-16816 faithfully retain the common degree bound."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.pow_mem_span1: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:406 proves 'Span1 j (fun x => x ^ j)' for every natural j without supplied assumptions. TeX:1806-1810 passes from Hermite coordinates to 'finite-coordinate polynomials' without detailing this induction. Ledger:2693 and claims.yaml:16817-16823 correctly present its one-variable triangularity proof as a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.monomial_mem_hermiteSpan: E:occupied-multiplication",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:427-428 assumes 'hdk : ∑ i, k i ≤ n' and represents '∏ i, x i ^ k i' in HermiteSpan m n. TeX:1806-1810 uses Hermite coefficient estimates to conclude the bound for 'finite-coordinate polynomials'. Ledger:2694 and claims.yaml:16824-16830 correctly expose the implicit finite-dimensional spanning step, without claiming the later closure argument."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.HermiteSpan.add: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:452-453 assumes 'hF : HermiteSpan m n F' and 'hG : HermiteSpan m n G', concluding membership of their pointwise sum. TeX:1806-1810 does not separately state this algebraic closure lemma. Ledger:2695 and claims.yaml:16831-16837 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.HermiteSpan.smul: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:458-459 takes arbitrary 'r : ℝ' and 'hF : HermiteSpan m n F', concluding membership of 'r * F x'. TeX:1806-1810 contains no separately stated scalar-closure assertion. Ledger:2696 and claims.yaml:16838-16844 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.HermiteSpan.zero: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:464 states 'HermiteSpan m n (fun _ => 0)' for every natural n, without hypotheses. TeX:1806-1810 does not separately assert this representation fact. Ledger:2697 and claims.yaml:16845-16851 accurately classify the helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.HermiteSpan.sum: no direct label",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:467-468 assumes '∀ a ∈ s, HermiteSpan m n (F a)' and concludes the finite pointwise sum lies in the same span. TeX:1806-1810 uses finite polynomials without separately stating this closure lemma. Ledger:2698 and claims.yaml:16852-16858 preserve its quantifiers."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianHermite.mvPolynomial_mem_hermiteSpan: E:occupied-multiplication",
+      "verdict": "PASS",
+      "reason": "GaussianHermite.lean:480-481 assumes 'p : MvPolynomial (Fin m) ℝ' and 'hp : p.totalDegree ≤ n', concluding a pointwise Hermite representation. TeX:1806-1810 derives the multiplication estimate first for 'finite-coordinate polynomials'. Ledger:2699 and claims.yaml:16859-16865 correctly identify the spanning prerequisite; FockForm.lean:395 actually consumes it."
+    },
+    {
+      "claim": "PARA-GaussianHermite",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:2584-2699 accurately locates the manuscript passages, standard product measure, normalization, recurrence, spanning result, transfer, and excluded closure/chaos constructions. All foundational inputs are proved rather than supplied hypotheses. One harmless literal overstatement in the junk-value explanation is recorded as W1: unnormalized subtraction terms carry n rather than sqrt(n)."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "Ledger:810-813 contains each of the 56 target declarations exactly once, with the same labels as rows 2644-2699; route auxiliaries are unlabelled. An exact-name inventory check found no missing or duplicated entry. Searching label definitions across manuscript inputs found one occurrence each of the cited result/equation labels, at main TeX:1774,1802,2472,2484,2531,2543,2829."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:333-401,1297-1319 correctly separate the fully discharged one-mode-per-color subcase from the supplied spatial column bound and the unformalized mild-construction remainder. Every row is marked 'weaker'; the finite-word scope expressly excludes multiple modes per color and integration of words. HermiteWordFock.lean:43-51, FockForm.lean:165-232,386-491 support the stated scopes and constants. All listed claim identifiers exist."
+    },
+    {
+      "claim": "SCOPE-RULES",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:339-341,364-367,1303-1306 and docs/coverage-scope-tex.yaml:16-21,58-60 agree in content. The sentences contain no Lean declaration/module names, TeX source filenames, or source line numbers. ASCII and mathematical TeX versions express the same restrictions. None of these three sentences describes a Rayleigh rate, so no supremum-versus-square-root error arises."
+    },
+    {
+      "claim": "REFUTATIONS",
+      "verdict": "PASS",
+      "reason": "OrthogonalityNoDelta.lean:23-32 refutes the delta-free identity at indices 0,1; UnnormalizedOrthonormal.lean:21-30 refutes unit diagonal norm at degree 2; RecurrenceNoLowering.lean:22-37 refutes pure creation at n=1,x=0. These are genuine in-domain misstatements of the standard-Gaussian Hermite identities used at main TeX:2515-2517. Ledger:2635-2640 accurately describes all three; none relies on undefined arithmetic or nonintegrable integrals."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "Ledger Scope:54-75,263-266,326-350, HermiteWord/HermiteWordFock:971-1026, FockForm:2289-2418, HermiteFock:2848-2962, consumer discussions:3173-3176,6743-6754,6780-6788, and exclusions:8659-8678 consistently distinguish foundations, supplied spatial inputs, one-mode-per-color words, and omitted closure/solution constructions. The GaussianHermite references do not assert that the full SPDE or full multicolour cutoff theorem follows."
+    },
+    {
+      "claim": "L8-PATTERNS",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "No material occurrence of patterns (a)-(d) was found in the target section, required coverage rows, scope versions, or relevant ledger summaries. 'Whole result' is used as the documented module category, while actual manuscript coverage is explicitly qualified; all three required coverage rows say 'weaker'. The one-mode restriction and spatial supplied inputs remain visible in consumer summaries. W1 is a minor coefficient-wording correction, not an out-of-domain control or a false no-junk conclusion."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "W1 — PARA-GaussianHermite, candidate/statement-ledger.md:2623-2625: the phrase '(or n - 1) only appears multiplied by ... sqrt(n)' is too literal for the unnormalized formulas. GaussianHermite.lean:124-132 has 'n * hermR (n - 1)', whereas the normalized manuscript recurrence at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2516-2517 has 'sqrt(k_i) h_(k-e_i)'. Both coefficients vanish at zero, so the asserted absence of junk-value dependence remains correct. Optional exact wording fix: say that truncated lowering indices carry a coefficient n or sqrt(n), as appropriate, which vanishes at zero."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "All complete-reading requirement A ranges for this target were read. Partial-file entries above denote deliberately scoped reading of larger files, not gaps in those required ranges.",
+    "The remainder of manuscript-anchor.json, prior files, diffs, unrelated ledger sections, and unrelated library modules was not substantively reviewed. Searches and byte-binding checks are not claimed as complete semantic reading.",
+    "The supplied audit file contains #check/#print commands, not captured elaboration output. Compilation, absence of sorry, and the standard-axiom restriction were accepted as stipulated; no build was run.",
+    "Creation-row, number-order, and vacuum-square-of-sum refutation files are not included in this GaussianHermite packet. Their mathematical perturbations are consistent with the inspected foundation identities, but their separate Lean files were not verified.",
+    "External Janson content and claims about what is absent from Mathlib were not independently audited. The local proofs establish the Hermite identities without supplying Janson's algebra as a hypothesis.",
+    "This is an AI correspondence review, not human verification or a novelty audit."
+  ]
+}

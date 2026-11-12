@@ -1,0 +1,64 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md: 1-115, 667-747, 5992-6026, 6122-6173, 6341-6392, 6482-6530, 6635-6685, 7751-7829; complete required selections, partial remainder. Complete heading list read at lines 37,501,912,925,937,954,966,992,1015,1024,1033,1051,1072,1112,1144,1167,1192,1210,1223,1235,1258,1275,1287,1300,1317,1333,1346,1557,1729,1909,2088,2104,2311,2421,2553,2661,2717,2835,2852,2873,2982,3106,3127,3244,3389,3447,3539,3553,3646,3702,3834,4009,4124,4293,4441,4533,4643,4752,4835,4983,5043,5211,5374,5463,5572,5592,5710,5764,5887,5992,6122,6341,6393,6482,6635,6830,6941,7067,7213,7295,7430,7615,7751,7830,8003,8111,8256,8375,8507,8624,8782,8864,8929.",
+    "lean/FORMALIZATION.md: 1-160, complete.",
+    "tools/index_category_check.out: 1, complete.",
+    "excerpts/tex-excerpts.txt: 1-551, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/H1Density.lean.excerpt.txt: 1-315, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/IntervalScalar.lean.excerpt.txt: 1-347, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/InventoryProduct.lean.excerpt.txt: 1-288, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean.excerpt.txt: 1-402, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SeriesType.lean.excerpt.txt: 1-145, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialFourLinear.lean.excerpt.txt: 1-974, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialFourierBound.lean.excerpt.txt: 1-251, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean.excerpt.txt: 1-152, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean.excerpt.txt: 1-436, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialStaticControls.lean.excerpt.txt: 1-632, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/TypeContinuity.lean.excerpt.txt: 1-533, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/UniformSeriesTail.lean.excerpt.txt: 1-223, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/WhiteClockLaplace.lean.excerpt.txt: 1-286, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/WhiteRelativeWidth.lean.excerpt.txt: 1-177, complete.",
+    "lean/coverage.yaml: 52-132, 515-531, 734-765, 820-884, 907-1011, 1060-1082, 1175-1224, 1342-1404, 1465-1615; complete relevant coverage rows, partial remainder. Label-field search also read across the file.",
+    "adjudication/round3-d5667f5-split-rule.md: 1-131, complete.",
+    "adjudication/round4-e2c50b5.md: 1-108, complete.",
+    "manuscript/notes/integrated_spatial_occupation.tex: 1-449, complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: 2577-2605, 2670-2829, 2986-3040, 3402-3414, 3600-3748, 7062-7077, 7222-7263, 7505-7606, 7640-7696; partial, relevant passages read.",
+    "manuscript/notes/integrated_white_evaluation.tex: 1-9, 101-161; partial, relevant passages read.",
+    "manuscript/notes/integrated_temporal_equilibrium.tex: 37-51; partial, cited statement read."
+  ],
+  "checks": [
+    {
+      "claim": "INDEX-CELLS lines 667-747",
+      "verdict": "FAIL",
+      "reason": "The required reading is complete. The narrower classifications for the abstract moment and terminal-series families respect the split rule, but several first-cell qualifiers remain incorrect: line 742 denies inputs actually present in its helpers; line 717 applies the L2/TerminalWickInput description to arbitrary-Hilbert-space general forms; lines 735-736 omit an essential sign condition, and line 736 abbreviates away the occupation-energy multiplier. See K1-K3."
+    },
+    {
+      "claim": "INDEX-MAPPING lines 667-747",
+      "verdict": "PASS",
+      "reason": "No incorrect manuscript-label assignment was found. The spatial mappings match manuscript/notes/integrated_spatial_occupation.tex:12-442; the series, interaction, inventory, growth-type and clock mappings match manuscript/notes/notes_stratonovich_ham_second_moment.tex:2670-2829,2986-3040,3600-3748,7222-7263,7505-7606,7640-7696. The white-width mappings match manuscript/notes/integrated_white_evaluation.tex:101-161. The no-direct-label rows appropriately identify foundations or implementation auxiliaries rather than additional labelled results."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "K1 — False input-free qualifier at candidate/statement-ledger.md:742. The cell says its scalar helpers 'take no input' and assigns supplied inputs only to subsequent rows. However, IntervalScalar.lean.excerpt.txt, original Lean lines 202-207, requires hY, hodd and hfirst for static_interaction_assembly; lines 346-351 require hborn and hmean for first_coefficient_le; lines 566-567 require the per-block hypothesis hstep for independent_blocks_scalar. These are precisely the order/parity/variance and iteration facts used in manuscript/notes/notes_stratonovich_ham_second_moment.tex:2737-2752,2788-2793, not consequences established by these helpers. Fix: split the input-free definitions/scalar estimates from these conditional helpers, and explicitly disclose the latter's order, parity, first-variance and per-block premises. Do not retain 'take no input' over the mixed row.",
+      "K2 — Mixed scope and input packaging at candidate/statement-ledger.md:717. The cell describes all four declarations as an abstract 'L^2 family' with the two facts 'supplied as TerminalWickInput'. Only the paper wrappers take that structure: UniformSeriesTail.lean.excerpt.txt, original Lean lines 261-267,301-307, contain hTW. The general forms instead quantify over an arbitrary index/filter and real inner-product space, with eventual hypotheses hsum and hpos (original Lean lines 164-169,195-200). The TeX states positive regularization pairs and L2 terminal terms (manuscript/notes/notes_stratonovich_ham_second_moment.tex:3704-3714), and cites the two facts in its proof at 3730-3731. Fix: separate the paper wrappers from the arbitrary-Hilbert-space/filter general forms; identify TerminalWickInput only for the wrappers and disclose the general forms' eventual summability/nonnegative-inner-product hypotheses.",
+      "K3 — Incomplete general-bound qualifiers at candidate/statement-ledger.md:735-736. 'Any constant R with SquarePairingBounds' omits the explicit hypothesis 'hR : 0 ≤ R' in OccupationPhysicalClass.lean.excerpt.txt, original Lean lines 378-380,530-532,743-746. This is not implied by the predicate in general: its homogeneous field uses ENNReal.ofReal (R * Nnorm ... ^ 4) (original Lean lines 133-139), so Gamma = 0 permits negative R, whereas the advertised real physical bound would then have a negative right side. Additionally, line 736 says 'bound spEnergyVal alpha R'; the actual conclusion is 'EstarO ... ≤ Rstar a D ^ (2 / (2 - alpha)) * spEnergyVal alpha R' (original Lean lines 747-749). The TeX retains this multiplier in manuscript/notes/integrated_spatial_occupation.tex:399-402. Fix: state R ≥ 0 explicitly in both general-form cells and give the complete energy bound, including Rstar^(2/(2-alpha)); distinguish the parameter-free energy definitions from the conditional theorem."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Repair line 742 by separating input-free declarations from conditional helpers and disclosing the latter's supplied premises.",
+    "Split line 717's paper wrappers from its arbitrary-Hilbert-space/filter general forms and accurately describe their different input packaging and quantifiers.",
+    "Correct lines 735-736 to require R ≥ 0 and state the full occupation-energy bound with its Rstar multiplier."
+  ],
+  "limitations": [
+    "All selections required by requirement A were read completely; unselected portions of larger documentation and manuscript files were not reviewed.",
+    "Lean citations in findings use original line numbers printed inside the excerpts; source_coverage uses packet-file line numbers.",
+    "This is a documentation-correspondence review, not proof checking, human verification, or a novelty audit. Omitted Lean bodies and completion-module implementations were not independently kernel-verified.",
+    "The mechanical category-presence check was accepted as supplied, not rerun."
+  ]
+}

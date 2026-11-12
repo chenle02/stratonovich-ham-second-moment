@@ -1,0 +1,67 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md \u2014 partial file; required Scope 62-96 and Index 754-836 complete; also read 1-130, 6247-6285, 6596-6647, 6737-6776, 6833-6868, 6869-6874, 6878-6889, 7070-7084, 7870-7897, 8512-8555, 8880-8915, 8973-9012, 9017-9026.",
+    "candidate/statement-ledger.md \u2014 complete heading-only list read at lines 37, 501, 1166, 1179, 1191, 1208, 1220, 1246, 1269, 1278, 1287, 1305, 1326, 1366, 1398, 1421, 1446, 1464, 1477, 1489, 1512, 1529, 1541, 1554, 1571, 1587, 1600, 1811, 1983, 2163, 2343, 2359, 2566, 2676, 2808, 2916, 2972, 3090, 3107, 3128, 3237, 3361, 3382, 3499, 3644, 3702, 3794, 3808, 3901, 3957, 4089, 4264, 4379, 4548, 4696, 4788, 4898, 5007, 5090, 5238, 5298, 5466, 5629, 5718, 5827, 5847, 5965, 6019, 6142, 6247, 6377, 6596, 6648, 6737, 6890, 7085, 7196, 7322, 7468, 7550, 7685, 7870, 8007, 8086, 8259, 8367, 8512, 8631, 8763, 8880, 9038, 9120, 9185.",
+    "lean/FORMALIZATION.md \u2014 complete, lines 1-160.",
+    "tools/index_category_check.out \u2014 complete, line 1.",
+    "excerpts/tex-excerpts.txt \u2014 complete, lines 1-301.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SeriesType.lean.excerpt.txt \u2014 complete packet excerpt, lines 1-145.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialFourierBound.lean.excerpt.txt \u2014 complete packet excerpt, lines 1-325.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean.excerpt.txt \u2014 complete packet excerpt, lines 1-152.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean.excerpt.txt \u2014 complete packet excerpt, lines 1-436.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SpatialStaticControls.lean.excerpt.txt \u2014 complete packet excerpt, lines 1-632.",
+    "lean-excerpts/StratonovichHAMSecondMoment/TypeContinuity.lean.excerpt.txt \u2014 complete packet excerpt, lines 1-533.",
+    "lean-excerpts/StratonovichHAMSecondMoment/VariationalFloor.lean.excerpt.txt \u2014 complete packet excerpt, lines 1-340; truncated output recovered by subsequent reads.",
+    "lean-excerpts/StratonovichHAMSecondMoment/VariationalRate.lean.excerpt.txt \u2014 complete packet excerpt, lines 1-530; truncated output recovered by subsequent reads.",
+    "lean-excerpts/StratonovichHAMSecondMoment/WaveTwoVariances.lean.excerpt.txt \u2014 complete packet excerpt, lines 1-268; reread separately after truncation.",
+    "lean-excerpts/StratonovichHAMSecondMoment/WhiteRelativeWidth.lean.excerpt.txt \u2014 complete packet excerpt, lines 1-70.",
+    "lean/coverage.yaml \u2014 partial file, lines 1-20, 90-139, 730-759, 820-885, 1338-1378, 1518-1634, 1648-1704; complete relevant coverage rows read.",
+    "adjudication/round5-350d191.md \u2014 complete, lines 1-89; truncated portions reread.",
+    "adjudication/round3-d5667f5-split-rule.md \u2014 complete, lines 1-131.",
+    "tools/decltable.py \u2014 complete, lines 1-77; read only, not executed.",
+    "tools/regen_index.py \u2014 complete, lines 1-74; read only, not executed.",
+    "tools/index_category_check.py \u2014 complete, lines 1-117; read only, not executed.",
+    "manuscript/notes/integrated_spatial_occupation.tex \u2014 partial file, lines 1-217.",
+    "manuscript/notes/integrated_unmasked_variational.tex \u2014 partial file, lines 1-164 and 270-337.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex \u2014 partial file, lines 2668-2681, 7062-7077, 7222-7263, 7505-7606.",
+    "manuscript/notes/integrated_white_evaluation.tex \u2014 partial file, lines 130-161.",
+    "manuscript/notes/integrated_wave_variance.tex \u2014 partial file, lines 195-210 and 368-460.",
+    "manuscript/notes/integrated_covariance_foundation.tex \u2014 partial file, lines 88-129."
+  ],
+  "checks": [
+    {
+      "claim": "INDEX-CELLS lines 754-836",
+      "verdict": "FAIL",
+      "reason": "The required reading is complete, but some inherited qualifiers remain collective rather than declaration-specific: candidate/statement-ledger.md:770,811-812,815 confuse input-free/existential statements with supplied-input supremum statements. Line 786 incorrectly transfers the enclosing proposition's narrower status to a fully proved deterministic display. Lines 804 and 814 omit the important restriction that their wrappers prove only part (i), not the score inequality. See K1-K3."
+    },
+    {
+      "claim": "INDEX-MAPPING lines 754-836",
+      "verdict": "PASS",
+      "reason": "The manuscript anchors identify the corresponding statements, definitions, or proof components. Examples include the growth constant and adjacent bound at manuscript/notes/integrated_wave_variance.tex:205-210, the spatial definitions and estimates at manuscript/notes/integrated_spatial_occupation.tex:12-217, and the series/growth-type arguments at manuscript/notes/notes_stratonovich_ham_second_moment.tex:7222-7263,7505-7606. The older S1Bdd-based ratio estimates are consequences of the retained score inequality, not evidence that the current manuscript still uses that finiteness route. No mandatory label reassignment was established."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "K1 \u2014 Residual collective form/input qualifiers at candidate/statement-ledger.md:770,811-812,815. The qualifier 'supremum forms on the named input S1Bdd' at line 770 covers only variational_positive_scores_paper, whose Lean statement has no S1Bdd binder and concludes nonemptiness, positivity, scaling and a boundedness equivalence, not the supremum assertions (lean-excerpts/StratonovichHAMSecondMoment/VariationalRate.lean.excerpt.txt, original lines 781-802). Those supremum assertions occur in the separate S1Bdd-taking theorem at original lines 817-823. Likewise, line 811's theorem concludes '\u2200 y ... \u2203 \u03a8' without S1Bdd, whereas line 812's theorem concludes an inequality with S1pos under S1Bdd (lean-excerpts/StratonovichHAMSecondMoment/SpatialStaticControls.lean.excerpt.txt, original lines 1127-1137 and 1151-1155). Both declarations at ledger line 815 have existential score conclusions and no S1Bdd binder (lean-excerpts/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean.excerpt.txt, original lines 133-137 and 169-176). TeX distinguishes finite supremum assertions from these existential reformulations: manuscript/notes/integrated_unmasked_variational.tex:272-279 says 'bounded above' and defines the finite supremum, while manuscript/notes/integrated_spatial_occupation.tex:50-53,171-176 displays S1pos inequalities. Fix: make line 770 explicitly the input-free, non-supremum part; make line 811 existential with no named analytic input; make line 812 the sSup form with S1Bdd; make line 815 existential completed wrappers with no supplied input. Any discussion of other forms must explicitly identify them as declarations outside that row.",
+      "K2 \u2014 Incorrect narrower-result category for E:spatial-dilation at candidate/statement-ledger.md:786. Lean concludes both 'spatialEnergy \u0393 (dilL2 \u2113 g) = \u2113 ^ alpha * spatialEnergy \u0393 g' and 'gradEnergy (dilL2 \u2113 g) = \u2113 ^ 2 * gradEnergy g', under the section hypotheses and with no supplied analytic input (lean-excerpts/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean.excerpt.txt, original lines 673-677). These are exactly both identities in manuscript/notes/integrated_spatial_occupation.tex:189-195: 'A_sp(U_ell g)=ell^alpha A' and 'b(U_ell g)=ell^2 b(g)'. Neither identity involves the unconstructed spectral rate or stochastic cost named by the referenced section heading. Thus the reference does not identify anything missing from this display. Fix line 786 to 'proof steps: the display in full, nothing supplied; the enclosing proposition and module remain narrower', preserving E:spatial-dilation as the anchor.",
+      "K3 \u2014 Missing part-(i)-only restriction at candidate/statement-ledger.md:804,814. Both cells describe 'Rayleigh-form rate and integral-form cost', but their sole declarations assert integrability of U_z, positivity/finiteness of its Rayleigh supremum and local Lipschitz continuity; neither concludes a cost or score inequality (lean-excerpts/StratonovichHAMSecondMoment/SpatialStaticControls.lean.excerpt.txt, original lines 1098-1105; lean-excerpts/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean.excerpt.txt, original lines 93-100). The labelled TeX lemma additionally asserts 'S_1^{pos} >= lambda_z(1) - M_a B_Gamma(z,z)/2' at manuscript/notes/integrated_spatial_occupation.tex:50-53, after the rate assertions at lines 40-49. Merely naming unformalized rate/cost identifications does not disclose that this entire second conclusion is absent from these wrappers. Fix both cells to state 'part (i) only: positivity, finiteness and local Lipschitz continuity; E:spatial-static-score is not a conclusion of this declaration'. Retain RayleighFloor on line 804 and 'nothing supplied' on line 814."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Replace the collective form/input qualifiers at ledger lines 770, 811-812 and 815 with the declaration-specific descriptions specified in K1.",
+    "Reclassify ledger line 786 as proof steps proving E:spatial-dilation in full, as specified in K2.",
+    "Disclose the part-(i)-only scope and absent score conclusion at ledger lines 804 and 814, as specified in K3."
+  ],
+  "limitations": [
+    "Requirement A was completed. Other ledger, coverage and manuscript passages were read selectively; this is not a review of the remaining ledger rows or the full manuscript.",
+    "Lean citations in findings use the original line numbers printed inside the supplied excerpt files. Complete excerpt coverage does not mean complete original-module coverage.",
+    "The packet does not supply Lean excerpts for L8Completed or SpectralMassIdentity. Their asserted input discharges and constant-identification proofs were not independently inspected.",
+    "The supplied checker output says 'cells checked: 657; problems: 0', not the 402 stated in one check description. Category presence was not rechecked, and the mechanical result was not treated as evidence of semantic correctness.",
+    "Proof correctness, package-wide counts and provenance hashes were not independently verified. This AI review is neither human verification nor a novelty audit."
+  ]
+}

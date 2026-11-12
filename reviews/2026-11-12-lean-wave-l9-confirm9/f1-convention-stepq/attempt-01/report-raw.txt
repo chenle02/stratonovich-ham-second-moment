@@ -1,0 +1,36 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md: lines 37-705 and 2915-3035; partial file; required Scope lines 37-509 and step_Q row 3020 completely read.",
+    "lean/FORMALIZATION.md: lines 1-166; complete.",
+    "adjudication/round8-06ee849.md: lines 1-89; complete.",
+    "diffs/docs-06ee849-6d108c0.diff: lines 1-34 and 65-78; partial file; required Scope and FORMALIZATION.md hunks completely read. Additional search output was truncated and not relied upon.",
+    "lean/StratonovichHAMSecondMoment/IndexedCone.lean: lines 1-150 and 205-352; partial file; required step_Q declaration and field definitions completely read.",
+    "manuscript/notes/integrated_raw_block_lower.tex: lines 232-318; partial file; relevant constant definitions and full-block residual estimates completely read."
+  ],
+  "checks": [
+    {
+      "claim": "CONVENTION-TEXT",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:79-88 explicitly states all three labelling rules, the per-label/no-direct-label pointer structure, heading categories, and the separation from per-declaration statements and inputs. lean/FORMALIZATION.md:90-96 states the same rules consistently. The additions are confirmed by diffs/docs-06ee849-6d108c0.diff:5-34. The actual Index at candidate/statement-ledger.md:510-701 has label-to-section/category rows and one no-direct-label row, rather than declaration lists."
+    },
+    {
+      "claim": "STEPQ line 3020",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:3020 reproduces exactly `K.Cg * Real.exp (-(K.ηg * t))`, as found in lean/StratonovichHAMSecondMoment/IndexedCone.lean:335-338. Its residual inequality also matches, with M_Q = 1 + K.MP. The fields at IndexedCone.lean:250-273 identify the gap constants and their full-block expression. The authoritative TeX defines the complementary bound as C_gap exp(-eta_gap t) at manuscript/notes/integrated_raw_block_lower.tex:254-256 and q_B = C_gap exp(-eta_gap B) at lines 268-269. Thus q_B = q(B), as the row says."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Requirement A was completed without gaps; unread portions of partially covered files lie outside its required passages.",
+    "Acceptance concerns only the two requested documentation checks, not an exhaustive audit of label assignments, lost disclosures, proof correctness, or packet byte bindings.",
+    "This AI review is neither human verification nor a novelty audit."
+  ]
+}

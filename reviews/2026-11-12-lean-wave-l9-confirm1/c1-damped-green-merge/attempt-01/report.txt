@@ -1,0 +1,139 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "prior-reports/g1-report.json:1-448 complete.",
+    "adjudication/ADJUDICATION.md:1-82 complete.",
+    "adjudication/l8-round1-ADJUDICATION.md:1-80 complete.",
+    "adjudication/l8-round2-confirmation-round.md:1-14 complete.",
+    "diffs/findings-repair-7bd4c62-338cdba.diff:1-707 complete.",
+    "diffs/merge-7bd4c62-combined.diff:1-702 complete; truncated passages were reread.",
+    "diffs/l8-repairs-3518233-aff7409.diff:1-754 complete.",
+    "diffs/l9-repair-eb253a5-338cdba.diff:187-237,1458-1500 complete selected ranges; partial file. All diff file headers were also inspected.",
+    "candidate/statement-ledger.md:1-457,590-601,718-726,795-802,1675-2033,2257-2332,3499-3576,3585-3599,3646-3775,4623-4659,5720-5793,6828-6869,6977-6990,7040-7092,7098-7110,7127-7147,7163-7174,7235-7327,7343-7349,7361-7368,8315-8563,8893-8904 complete selected ranges; partial file. All expressly required sections and corresponding L8 repair passages were read.",
+    "lean/coverage.yaml:1-15,232-289,333-365,523-560,813-845,880-1007 complete selected ranges; partial textual reading. Entire file parsed for independent scope, mirror and classification counts.",
+    "docs/coverage-scope-tex.yaml:1-133 complete.",
+    "tools/mirror_check.py:1-22 complete.",
+    "tools/mirror_check.out:1-9 complete.",
+    "excerpts/tex-excerpts.txt:1-843 complete.",
+    "lean/README.md:1-115,185-275,403-445 complete selected ranges; partial file.",
+    "lean/FORMALIZATION.md:65-150 complete selected range; partial file.",
+    "lean/COMPLETION.md:21-100 complete selected range; partial file.",
+    "lean/claims.yaml:6480-6492,7008-7020,12460-12490,15080-15105,15137-15146,15228-15243,15840-15849,16443-16452,17344-17353,17372-17380 complete selected ranges; partial file.",
+    "lean/StratonovichHAMSecondMoment/DampedMultiplier.lean:1-114,245-301,430-608 complete selected ranges; partial file.",
+    "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean:1-80,115-180,646-709 complete selected ranges; partial file.",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean:89-167,404-464 complete selected ranges; partial file.",
+    "lean/StratonovichHAMSecondMoment/WaveGreenFourier.lean:1-85,615-685,688-768 complete selected ranges; partial file.",
+    "lean/StratonovichHAMSecondMoment/LowAlphaConvolution.lean:1-176,308-355,388-410,520-610 complete selected ranges; partial file.",
+    "lean/StratonovichHAMSecondMoment/L9Completed.lean:86-113 complete selected range; partial file.",
+    "lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean:70-87,199-287 complete selected ranges; partial file.",
+    "lean/StratonovichHAMSecondMoment/FiniteWick.lean:560-630 complete selected range; partial file.",
+    "lean/StratonovichHAMSecondMoment/TerminalWick.lean:1-87,600-688 complete selected ranges; partial file.",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean:307-359 complete selected range; partial file.",
+    "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean:185-236 complete selected range; partial file.",
+    "lean/StratonovichHAMSecondMoment/SymplecticFree.lean:535-552,651-700 complete selected ranges; partial file.",
+    "lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean:545-564,1156-1170,1238-1293 complete selected ranges; partial file.",
+    "lean/StratonovichHAMSecondMoment/HermiteFock.lean:286-329 complete selected range; partial file.",
+    "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean:143-167 complete selected range; partial file.",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingExact.lean:153-169 complete selected range; partial file.",
+    "lean/StratonovichHAMAudit/HermiteWordFock.lean:1-53 complete.",
+    "lean/refutations/wave-green-fourier/ArchimedesUnit.lean:1-42 complete.",
+    "lean/refutations/wave-green-fourier/CosineVariant.lean:1-50 complete.",
+    "lean/refutations/wave-green-fourier/DimensionClause.lean:1-34 complete.",
+    "lean/refutations/wave-green-fourier/PositiveTime.lean:1-37 complete.",
+    "lean/refutations/wave-green-fourier/SphereConstant.lean:1-46 complete.",
+    "lean/refutations/low-alpha-convolution/AlphaOneDivergence.lean:1-40 complete.",
+    "lean/refutations/low-alpha-convolution/JunkKernelDirac.lean:1-65 complete.",
+    "lean/refutations/low-alpha-convolution/MissingFactor.lean:1-40 complete.",
+    "lean/refutations/low-alpha-convolution/NegativeVariance.lean:1-42 complete.",
+    "lean/refutations/spectral-mass-identity/AlphaPositive.lean:1-53 complete.",
+    "lean/refutations/spectral-mass-identity/ExponentSign.lean:1-54 complete.",
+    "lean/refutations/spectral-mass-identity/FourierBoundAlphaZero.lean:1-80 complete.",
+    "lean/refutations/spectral-mass-identity/SinFactorTwo.lean:1-59 complete.",
+    "lean/refutations/terminal-wick/ChainMassFactorial.lean:1-37 complete.",
+    "lean/refutations/terminal-wick/ChainMassSimplex.lean:1-37 complete.",
+    "lean/refutations/terminal-wick/MajorantFactor.lean:1-41 complete.",
+    "lean/refutations/finite-wick/AbsBound.lean:1-43 complete.",
+    "lean/refutations/finite-wick/FourthMoment.lean:1-41 complete.",
+    "lean/refutations/finite-wick/NonnegDropped.lean:1-43 complete.",
+    "lean/refutations/finite-wick/PairingCount.lean:1-39 complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:225-242,526-532,734-757,775-919,2044-2057,2125-2138,2531-2576,2616-2634,3585-3748,4505-4520,4691-4758,4998-5010,5167-5194 complete selected ranges; partial file.",
+    "manuscript/notes/index/list-of-notation.tex:98-105 complete selected range; partial file.",
+    "manuscript/notes/integrated_spatial_occupation.tex:101-164,375-417 complete selected ranges; partial file.",
+    "manuscript/notes/integrated_symplectic_phase.tex:30-133 complete selected range; partial file.",
+    "manuscript/notes/integrated_covariance_foundation.tex:188-206 complete selected range; partial file.",
+    "manuscript/notes/integrated_wave_variance.tex:240-246,368-382 complete selected ranges; partial file."
+  ],
+  "checks": [
+    {
+      "claim": "g1-W1",
+      "verdict": "PARTIAL",
+      "reason": "The substantive repair is correct: lean/coverage.yaml:236-238 restores same-assumptions/weaker; candidate/statement-ledger.md:1686-1698,1852,1915-1921,8396-8411 distinguish multiplier membership from covariance identification and credit the Fourier wrappers correctly. DampedMultiplier.lean:458-459 explicitly excludes covariance identification, while WaveGreenFourier.lean:753-766 supplies the Green identification in dimensions 1,2,3, consistently with main TeX:845-847. However, lean/README.md:24-25 still advertises the 'full conclusions of fifty-two labelled results', without qualifying the narrower conclusions included in that number; see C1."
+    },
+    {
+      "claim": "g1-W2",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:3676-3682,3709-3718,3746,3765 now separates equality-only gammaEps_spectral and nonnegativity-only gammaEps_nonneg from integrable_heatDens and the pairing/final wrappers. This matches LowAlphaConvolution.lean:174-176,311-328,394-403,527-608 and L9Completed.lean:96-110. The distinction respects the tempered/Radon justification in main TeX:4691-4698,4736-4738."
+    },
+    {
+      "claim": "g1-W3",
+      "verdict": "PASS",
+      "reason": "Both repaired passages, candidate/statement-ledger.md:8391-8392 and8515-8516, use s^2 <= r^2, with 0 <= s <= r as a sufficient special case. This follows directly from the definition at WaveGreen.lean:153 and agrees with radial2_eq_zero:159-161. The manuscript density is used at positive time, main TeX:4703,5182-5183."
+    },
+    {
+      "claim": "g1-W4",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The incidental proof-route comment remains inaccurate, but its explicit deferral in adjudication/ADJUDICATION.md:43,79 is justified for this documentation-only confirmation. ArchimedesUnit.lean:31-40 uses Measure.toSphere_ne_zero, not the package law at a unit vector. Neither the refutation nor the normal-coordinate law in main TeX:2125-2131 is affected. See optional C2."
+    },
+    {
+      "claim": "MERGE-RESOLUTION",
+      "verdict": "PASS",
+      "reason": "The five conflicted files preserve the substantive L8 limitations and L9 extensions. The merged smoothing scope is retained at lean/coverage.yaml:236-238 and docs/coverage-scope-tex.yaml:17-19; README.md:87-102 credits both Fourier wrappers; COMPLETION.md:28-43,69 retains the narrower classification and updated categories. The ledger retains the Cauchy hypotheses at6986-6987 and separates full_wave from the Fourier identification at8403-8411. These correspond to the conflicting hunks in diffs/merge-7bd4c62-combined.diff:55-126,219-428,638-699."
+    },
+    {
+      "claim": "MERGE-L8-ROUND1",
+      "verdict": "PASS",
+      "reason": "No substantive L8 repair was lost. The covariance-smoothing limitation is retained and the old dimension-one Green limitation is legitimately superseded. The alpha-zero controls remain explicitly totalization-dependent at ledger:6852-6866 and in both repaired refutation headers. TerminalWick's added hK restriction remains at ledger:7262-7275,7349,7367 and coverage.yaml:956-959; FiniteWick's monomial-only integrability guarantee remains at ledger:2283-2291,2302-2312. The Cauchy, finite-node-list, free-matrix and Not-in-Lean corrections remain at6986-6987,7047-7069,7103,7140,8896-8902. Independent coverage counting gives 47 same-assumptions,30 inputs-supplied,3 outside, including17 same-assumptions/weaker rows."
+    },
+    {
+      "claim": "MERGE-L8-ROUND2",
+      "verdict": "PASS",
+      "reason": "The corrected global integrability sentence survives at candidate/statement-ledger.md:360-370. FiniteWick retains 'either as a conjunct or in a separate theorem' at2284-2291, matching FiniteWick.lean:578-608. The WaveGreen closing attribution survives at8405-8411. TerminalWick.lean:31-34 expressly distinguishes the wrappers' hK requirements, consistent with their types at618-642 and669-683. All fourteen mirror additions survive or are accurately superseded by L9 scope sentences."
+    },
+    {
+      "claim": "MIRROR-COMPLETENESS",
+      "verdict": "PASS",
+      "reason": "Independent parsing found80 coverage rows,42 rows with conclusion_scope,42 distinct mirror labels, no missing or extra labels, no ASCII mismatches and no empty TeX. This agrees with tools/mirror_check.out:1-9. All133 lines of docs/coverage-scope-tex.yaml were read; the changed translations preserve their ASCII content, particularly the covariance-identification limitation and dimensions1,2,3 at17-19. Full-conclusion rows for low-alpha convolution, spatial Fourier bound and uniform series tails correctly have no mirror entry."
+    },
+    {
+      "claim": "RESCAN",
+      "verdict": "PASS",
+      "reason": "Within the specified ledger sections and five coverage rows, no additional material overclaim of the listed kinds was found. The smoothing bundles are qualified; the Fourier input is discharged only where actually proved; LowAlphaConvolution's integrability statements are declaration-specific; hK remains an added restriction; and alpha-zero controls are not presented as manuscript counterexamples. Evidence includes ledger:203-215,255-259,364-370,1686-1698,1764-1793,3706-3724,8396-8411 and coverage.yaml:232-284,524-554,814-834,923-996."
+    },
+    {
+      "claim": "NO-REGRESSION",
+      "verdict": "FAIL",
+      "reason": "The technical smoothing, integrability and radial-density repairs are correct, and the inspected Lean changes since eb253a5 are comments only: diffs/l9-repair-eb253a5-338cdba.diff:187-237,1458-1500. The scope mirrors remain plain-English statements with matching ASCII and correctly square-root-defined Rayleigh rates. However, diffs/findings-repair-7bd4c62-338cdba.diff:74-85 revises the README overview while retaining the unsupported 'full conclusions' claim for all52 results. C1 requires qualification."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "C1 — README overview retains an unqualified full-conclusion overclaim. lean/README.md:24-25 says the modules 'prove the full conclusions of fifty-two labelled results'. That total includes the17 narrower conclusions explicitly recorded at lean/FORMALIZATION.md:80. In particular, main TeX manuscript/notes/notes_stratonovich_ham_second_moment.tex:845-847 asserts 'Spatial Gaussian smoothing and Gaussian smoothing of the Green kernel give multipliers in this class', whereas lean/StratonovichHAMSecondMoment/DampedMultiplier.lean:458-459 says 'The spectral identity for spatial covariance smoothing p_ε * Γ is not stated (only the membership of its multiplier, item5)'. The detailed README bullet at87-96 correctly acknowledges this limitation, but does not make the overview's literal full-conclusion count true. Exact fix: replace README.md:24-25 with wording such as 'formalize fifty-two labelled results to the scopes specified below, some with narrower conclusions, and parts of further results'. Keep the corrected numerical counts and detailed limitations."
+    ],
+    "minor": [
+      "C2 — Deferred Archimedes proof-route wording. lean/refutations/wave-green-fourier/ArchimedesUnit.lean:8-9 says 'The proof uses the package law at a unit vector', but its proof at39-40 invokes 'Measure.toSphere_ne_zero' directly. The manuscript's 'direct integration over its normal coordinate' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2125-2131 is unaffected. Optional exact fix in a later comment-only wave: replace that sentence with 'The proof uses Measure.toSphere_ne_zero to establish nonzero sphere mass.' The documented deferral does not block acceptance."
+    ]
+  },
+  "required_repairs": [
+    "Qualify lean/README.md:24-25 so the52-result overview does not claim full conclusions for results recorded with narrower conclusions; retain the existing counts and detailed scope disclosures."
+  ],
+  "limitations": [
+    "The expressly required sections and repair passages were read completely. Files marked partial were inspected only at the listed textual ranges, apart from the stated whole-file YAML parsing; their unrelated contents were not reviewed.",
+    "The complete historical documentation diff since eb253a5 was not reread line by line. Relevant documentation changes were examined through the complete repair, combined-merge and L8-repair diffs; all Lean-change hunks in that historical diff were read.",
+    "Compilation, proof correctness, receipt validity and complete provenance byte binding were not independently audited; this is a statement-correspondence review.",
+    "The disclosed dimension-three toSphere modelling choice was not independently identified with Hausdorff or Riemannian surface measure.",
+    "This AI review is not human verification or a novelty audit."
+  ]
+}

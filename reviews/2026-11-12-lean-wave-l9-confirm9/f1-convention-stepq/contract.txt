@@ -1,0 +1,84 @@
+Final confirmation: wave-L9 Lean companion ledger after round 8
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+CONTEXT
+The statement ledger of the Lean companion has per-module sections, each
+headed with one of three categories ((A) "whole result", (B) "narrower
+result: <what is missing>", (C) "foundation: ..." / "proof steps ...",
+defined in the ledger Scope, together with a model-choice register), and a
+table per section giving, for each declaration, its manuscript label, what
+it states and its supplied inputs. After round 6 (reviewed commit
+06ee849d5592), the author decided that the "Index by label" is a POINTER
+table: one row per manuscript label plus one "no direct label" row, listing
+the sections whose tables use the label, each with the category phrase of
+that section's heading; per-declaration statements and inputs live only in
+the section tables. Rule now applied: every backticked label in a
+section-table label cell is an assignment and creates an Index pointer;
+context-only mentions are moved to the "What it states" cell as
+"(Context: ...)"; no-direct-label cells carry no label. The repair is at
+commit 6d108c093553 (documentation only). This round wrote the convention into
+the Scope and FORMALIZATION.md, fixed the step_Q rendering, and, after a
+mechanical lost-disclosure check over the 657 per-declaration Index rows
+removed in a723987..434a7e2 (tools/lost_disclosure_check.py, output
+tools/lost-disclosure-check.out: 376 checks, 291 found in the declaration's
+own row, 85 in its section heading or prose, 0 lost), repaired 55
+section-table rows. The decisions are in adjudication/round8-06ee849.md. Mechanical
+checkers and their outputs are in tools/ (evidence to verify, not to
+trust). This packet covers the written labelling convention and the step_Q row.
+
+PACKET
+- candidate/statement-ledger.md : the ledger at 6d108c093553.
+- lean/README.md, lean/FORMALIZATION.md, lean/COMPLETION.md,
+  lean/coverage.yaml, lean/claims.yaml, docs/coverage-scope-tex.yaml at
+  6d108c093553.
+- adjudication/round8-06ee849.md : the decisions (hints only).
+- diffs/docs-06ee849-6d108c0.diff : every documentation change of this
+  repair; diffs/index-removed-a723987-434a7e2.diff : the earlier diff that
+  removed the per-declaration Index rows.
+- tools/lost_disclosure_check.py, tools/lost-disclosure-check.out,
+  tools/index_category_check.out, tools/index_check_pointer.out : the
+  lost-disclosure check and the checker outputs.
+- lean/StratonovichHAMSecondMoment/*.lean and lean/StratonovichHAMAudit/*.lean : every module at 6d108c093553 (full files).
+- manuscript/notes/... : all LaTeX inputs at revision a2844206199b;
+  excerpts/tex-excerpts.txt numbers the statements of the labels
+  concerned (convenience copy; manuscript/ is authoritative).
+- PROVENANCE.json : byte binding of every packet file.
+
+Proof correctness is NOT in question; correspondence of the documentation
+is. Do not accept the ledger's, the adjudication's or a checker's word.
+
+CHECKS (exactly these 2, in this order, with these claim strings):
+  1. claim "CONVENTION-TEXT": the ledger Scope (the Index paragraph) and lean/FORMALIZATION.md now state the labelling convention exactly and consistently: every backticked manuscript label in a section-table label cell is an assignment and creates an Index pointer; context-only mentions are in the statement cell as "(Context: ...)"; no-direct-label cells carry no manuscript label; and the pointer Index (one row per label plus one no-direct-label row, sections with their heading categories) is described accurately (this answers round-8 finding q2 P1, quoted in adjudication/round8-06ee849.md)
+  2. claim "STEPQ line 3020": the ConeConstants.step_Q row at candidate/statement-ledger.md line 3020 renders the Lean expression exactly as in lean/StratonovichHAMSecondMoment/IndexedCone.lean (K.Cg * Real.exp (-(K.ηg * t))) and its definition of q(t) and relation to the TeX q_B are right
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: the Scope section of candidate/statement-ledger.md (lines 37-509); lean/FORMALIZATION.md; adjudication/round8-06ee849.md; the hunks of diffs/docs-06ee849-6d108c0.diff in the Scope and in FORMALIZATION.md; the step_Q row and the declaration IndexedCone.ConeConstants.step_Q (and the field definitions it uses) in lean/StratonovichHAMSecondMoment/IndexedCone.lean.
+B. Other files: search as needed and read matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 2 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct, with a minor wording point
+  reported as a minor finding; PARTIAL: only partly correct; FAIL: wrong;
+  INCONCLUSIVE: not checkable). reason: evidence with file:line.
+- "findings": fatal = misstatement a citing reader would be misled by;
+  major = material imprecision; minor = wording. Each string starts with an
+  ID (P1, P2, ...), names the item, quotes Lean and TeX with file:line,
+  and gives the exact fix.
+- "required_repairs": only changes that must be made before the
+  documentation can be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "limitations": anything you could not check.
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES;
+  FAIL if any fatal or major finding or required repair; INCONCLUSIVE if
+  the reading requirement could not be met.
+- "confidence": high only if requirement A is complete.

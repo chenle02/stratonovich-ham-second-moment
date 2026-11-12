@@ -1,0 +1,35 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "prior/f2-P1-finding.txt: lines 1-1, complete.",
+    "rows/old-row-6d108c0.txt: lines 1-1, complete.",
+    "rows/new-row-ff40fde.txt: lines 1-1, complete.",
+    "diffs/docs-6d108c0-ff40fde.diff: lines 1-13, complete.",
+    "excerpts/tex-excerpts.txt: lines 1-102, complete.",
+    "PROVENANCE.json: lines 1-79, complete.",
+    "lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean: lines 1-310; search matches at 1041, 1380, 1385-1386, 1420; partial file, complete required declaration and proof.",
+    "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean: lines 1-165; search match at 615; partial file, complete required phaseI and deltaA definitions.",
+    "candidate/statement-ledger.md: lines 1408-1468, partial file; target row 1458 read completely.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: lines 2270-2370, partial file; complete cited passage."
+  ],
+  "checks": [
+    {
+      "claim": "F2-P1-RESOLVED",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:1458 accurately matches lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean:251-256: a real normed space without CompleteSpace, a < 2, lam > 0, restricted a.e.-strong measurability, pointwise domination for t > 0, and the conclusion IntegrableOn plus the stated norm inequality for Lean's Bochner integral. The factors 1/pi, lam^(a-2), and phaseI agree exactly; the scalar identity and domination argument appear at :204-237 and :257-268. No independent positivity assumption on c is missing: domination by the strictly positive scalar kernel forces c nonnegative. phaseI and deltaA at lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean:90-91,152 match manuscript/notes/notes_stratonovich_ham_second_moment.tex:2298-2299. The new wording no longer asserts norm convergence in arbitrary incomplete E. Completeness supplies the general Banach-valued convergence interpretation; the TeX assumes a complex Hilbert space at :2289, whose bounded-operator space is complete in operator norm. The convergence assertion is indeed at :2338, and :2338-2359 contains the domination and resulting bound, with c = |z|d/(1-delta). The label and inputs cell are unchanged in rows/old-row-6d108c0.txt:1, rows/new-row-ff40fde.txt:1 and diffs/docs-6d108c0-ff40fde.diff:9-10, and remain correct for this conditional theorem."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "All requirement-A sources and passages were read completely. Review is confined to the single contracted ledger row, not the whole ledger or manuscript.",
+    "Unread portions of partially covered files: candidate/statement-ledger.md:1-1407,1469-8918; ComplexPhaseScalar.lean:311-1040,1042-1379,1381-1384,1387-1419; StaticPhaseCauchy.lean:166-614; manuscript/notes/notes_stratonovich_ham_second_moment.tex:1-2269,2371-7966.",
+    "Lean was not executed, and imported Mathlib implementation details were not independently inspected. This is a frozen-source mathematical review, not human verification or a novelty audit."
+  ]
+}

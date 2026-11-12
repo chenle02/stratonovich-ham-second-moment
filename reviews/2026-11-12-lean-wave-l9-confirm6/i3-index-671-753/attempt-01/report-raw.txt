@@ -1,0 +1,69 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "medium",
+  "source_coverage": [
+    "candidate/statement-ledger.md: partial; lines 1-125, 279, 551, 671-753, 1106, 2163-2250, 2311-2330, 2916-2946, 4089-4114, 4260, 4832, 4849, 4890-4891, 5709, 8367-8418, 8497-8505, 8880-8936, 9032-9033, 9036. Complete heading-only reading at lines 37, 501, 1166, 1179, 1191, 1208, 1220, 1246, 1269, 1278, 1287, 1305, 1326, 1366, 1398, 1421, 1446, 1464, 1477, 1489, 1512, 1529, 1541, 1554, 1571, 1587, 1600, 1811, 1983, 2163, 2343, 2359, 2566, 2676, 2808, 2916, 2972, 3090, 3107, 3128, 3237, 3361, 3382, 3499, 3644, 3702, 3794, 3808, 3901, 3957, 4089, 4264, 4379, 4548, 4696, 4788, 4898, 5007, 5090, 5238, 5298, 5466, 5629, 5718, 5827, 5847, 5965, 6019, 6142, 6247, 6377, 6596, 6648, 6737, 6890, 7085, 7196, 7322, 7468, 7550, 7685, 7870, 8007, 8086, 8259, 8367, 8512, 8631, 8763, 8880, 9038, 9120, 9185.",
+    "lean/FORMALIZATION.md: complete, lines 1-160.",
+    "tools/index_category_check.out: complete, line 1.",
+    "lean/coverage.yaml: partial; lines 1-210, 231-290, 438-464, 558-619, 655-678, 1027-1070, 1213-1329, 1652-1715; relevant coverage rows read completely.",
+    "docs/coverage-scope-tex.yaml: complete, lines 1-151.",
+    "adjudication/round5-350d191.md: complete, lines 1-89.",
+    "adjudication/round3-d5667f5-split-rule.md: complete, lines 1-131.",
+    "excerpts/tex-excerpts.txt: complete, lines 1-451.",
+    "lean-excerpts/StratonovichHAMSecondMoment/DampedNormsHomog.lean.excerpt.txt: complete, physical lines 1-439.",
+    "lean-excerpts/StratonovichHAMSecondMoment/GaussianComparison.lean.excerpt.txt: complete, physical lines 1-147.",
+    "lean-excerpts/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean.excerpt.txt: complete, physical lines 1-548.",
+    "lean-excerpts/StratonovichHAMSecondMoment/MaskedContinuousWave.lean.excerpt.txt: complete, physical lines 1-266.",
+    "lean-excerpts/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean.excerpt.txt: complete, physical lines 1-79.",
+    "lean-excerpts/StratonovichHAMSecondMoment/MaskedModulation.lean.excerpt.txt: complete, physical lines 1-282.",
+    "lean-excerpts/StratonovichHAMSecondMoment/PhaseBessel.lean.excerpt.txt: complete, physical lines 1-174.",
+    "lean-excerpts/StratonovichHAMSecondMoment/QuotientObstruction.lean.excerpt.txt: complete, physical lines 1-509.",
+    "lean-excerpts/StratonovichHAMSecondMoment/TimeCompletion.lean.excerpt.txt: complete, physical lines 1-585.",
+    "lean-excerpts/StratonovichHAMSecondMoment/TimeSchur.lean.excerpt.txt: complete, physical lines 1-100.",
+    "lean-excerpts/StratonovichHAMSecondMoment/VariationalMean.lean.excerpt.txt: complete, physical lines 1-449.",
+    "lean-excerpts/StratonovichHAMSecondMoment/WaveGreen.lean.excerpt.txt: complete, physical lines 1-309.",
+    "lean-excerpts/StratonovichHAMSecondMoment/WaveTwoVariances.lean.excerpt.txt: complete, physical lines 1-385.",
+    "manuscript/notes/integrated_covariance_foundation.tex: complete, lines 1-428.",
+    "manuscript/notes/integrated_unmasked_variational.tex: partial, lines 1-115.",
+    "manuscript/notes/integrated_wave_variance.tex: partial, lines 1-20, 143-247, 346-460.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: partial, lines 209-244, 734-751, 775-919, 5167-5189.",
+    "manuscript/notes/index/list-of-notation.tex: partial, lines 98-105."
+  ],
+  "checks": [
+    {
+      "claim": "INDEX-CELLS lines 671-753",
+      "verdict": "FAIL",
+      "reason": "Residual category/qualifier errors occur at candidate/statement-ledger.md:691,703,718,749. In particular, the core theorems at lean-excerpts/StratonovichHAMSecondMoment/WaveTwoVariances.lean.excerpt.txt:315-340 have neither abstract phase-space data nor the supplied inputs attributed by row 749. Other rows still conflate comparison with finiteness, or distinct partial conclusions. The completed temporal and continuous-wave whole-result classifications are supported by their Lean statements and full coverage rows; the registered M1 exception was applied as written, not treated as a missing construction."
+    },
+    {
+      "claim": "INDEX-MAPPING lines 671-753",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The available declarations have appropriate statement/proof anchors, including Gaussian comparison in manuscript/notes/integrated_covariance_foundation.tex:239-246 and the spectral variance core in manuscript/notes/integrated_wave_variance.tex:385-458. However, row 708 names DampedNormsHomog.KS_univ, whose declaration is absent from the completely read lean-excerpts/StratonovichHAMSecondMoment/DampedNormsHomog.lean.excerpt.txt:1-439. The paraphrase at candidate/statement-ledger.md:2315 cannot independently verify its type or the no-direct-label mapping."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "K1 — WaveTwoVariances core row, candidate/statement-ledger.md:749: the qualifier attributes 'abstract variance and phase spaces' and 'the proposition with the named inputs hlink, hJL2/hJ, hnormSG' to two concrete spectral-core declarations. Lean concludes 'InputBound ... ∧ OutputBound ...' without P, J, var or those inputs (lean-excerpts/StratonovichHAMSecondMoment/WaveTwoVariances.lean.excerpt.txt:315-340; original Lean 822-853). Those binders occur only in the proposition wrapper at excerpt lines 360-373. TeX distinguishes the noise variance 'sum_k E|ell_R(I;e_k,z)|^2' at manuscript/notes/integrated_wave_variance.tex:374-375 from its spectral proof at lines 413-451. Fix row 749 to 'proof steps: spectral core for nu_R, with no supplied analytic input; noise/phase identification not established here'; retain the abstract-object and named-input qualifications only on row 750.",
+      "K2 — Auxiliary Fourier row, candidate/statement-ledger.md:691: a finiteness-only supporting lemma is presented alongside comparison theorems as a narrower labelled result. Lean's lintegral_paperHat_nu_lt_top concludes only '∫⁻ η, ‖paperHat ... η‖ₑ ^ 2 ∂nu ... < ⊤' (lean-excerpts/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean.excerpt.txt:458-460; original Lean 802-804). It does not conclude the comparison '∫ ‖hat(zeta_R F)‖² dmu ≤ ∫ ‖hat F‖² dnu_R' of manuscript/notes/integrated_covariance_foundation.tex:95-98; finiteness appears in that proof at lines 134-135. Fix by moving the finiteness-only declaration to a separate 'proof steps: finiteness of the right-hand side only' row, leaving the comparison declarations accurately scoped separately.",
+      "K3 — Damped full-domain row, candidate/statement-ledger.md:703: the retained qualifier includes 'N_0', although neither listed declaration mentions N_0. Lean states 'N1on a theta univ mu = N1 a theta mu' and 'N2onSq a theta univ mu = N2sq a theta mu' (lean-excerpts/StratonovichHAMSecondMoment/DampedNormsHomog.lean.excerpt.txt:284-289; original Lean 439-447). TeX defines N_0 separately at manuscript/notes/notes_stratonovich_ham_second_moment.tex:784 and N_1,N_2 at lines 785-791. Fix by removing N_0 and splitting into proof-step rows naming respectively the unrestricted N_1 identity and unrestricted N_2-squared identity; keep N_0 on row 702.",
+      "K4 — Mean-bound row, candidate/statement-ledger.md:718: 'the upper bound and the Lipschitz bound' does not describe every declaration in the row, and the section reference does not identify the missing conclusions of this equation. Lean mean_le concludes only 'mean ... ≤ B * exp ... * gMass ... * (2 / (1-a))', whereas mean_lip concludes only a joint difference bound (lean-excerpts/StratonovichHAMSecondMoment/VariationalMean.lean.excerpt.txt:332-349; original Lean 558-582). TeX E:variational-global-mean contains '0 ≤ h_s(x) ≤ M' and the time sup-norm Lipschitz estimate (manuscript/notes/integrated_unmasked_variational.tex:69-73); the unformalized mixed-derivative sentence is outside that display, at line 66. Fix by splitting into 'proof steps: upper bound only' and 'proof steps: joint Lipschitz estimate, yielding the displayed time estimate at x=x′' rows."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Correct row 749 to describe only the input-free spectral core, separating it from row 750's abstract proposition and supplied inputs.",
+    "Separate the finiteness-only declaration from the Fourier comparison declarations in row 691.",
+    "Remove the unsupported N_0 qualifier from row 703 and give the two full-domain identities their own accurately scoped proof-step rows.",
+    "Split row 718 into separately qualified upper-bound and Lipschitz proof-step rows.",
+    "Supply the frozen KS_univ declaration and necessary context so row 708 can be independently checked."
+  ],
+  "limitations": [
+    "Requirement A's specified files and ranges were read completely, including all supplied Lean excerpts. Nevertheless, the packet omits the Lean declaration KS_univ named by row 708.",
+    "For sources marked partial, portions outside the listed ranges were not reviewed; unrelated ledger entries, coverage rows and manuscript passages are outside this report.",
+    "Category-word presence was not rechecked. The supplied checker output reads 'cells checked: 657; problems: 0', rather than the stale 402 count in the check description.",
+    "Proof correctness, compilation, provenance byte hashes and package-wide counts were not independently audited.",
+    "This AI review is neither human verification nor a novelty audit."
+  ]
+}

@@ -1,0 +1,120 @@
+Review the frozen packet rooted at <HOME>/.local/state/tmp/claude-1247658/-<HOME>-Dropbox-workspace-svn-Article-Stratonovich-HAM-Second-Moment/4c4c8276-f434-4c95-9605-690953ef166f/scratchpad/l9rev-conf4/h4c-index-699-797/dryrun/workspace. Primary target: candidate/statement-ledger.md. Source revision: e2c50b55cc6faf63e9da85391608fb3e4c93b293.
+
+You are an independent artifact reviewer. Read only the frozen packet
+and the supplied review contract. Report correctness, missing assumptions,
+incorrect constants, failed implications, and uncertainty. Do not edit files,
+use the network, send messages, publish, install, or delegate. Do not launch a
+research or coding workflow. Return a scientific report rather than a plan.
+Use exactly one JSON object with schema "subscription-review-report/1", verdict (PASS, PASS_WITH_NOTES, FAIL, or
+INCONCLUSIVE), confidence (high, medium, low), source_coverage (list of strings),
+checks (list of objects with claim, verdict, reason), findings (an object with
+fatal, major, minor lists), required_repairs (list), and limitations (list).
+required_repairs contains ONLY mandatory changes that block acceptance. Optional
+clarifications belong in findings.minor, never in required_repairs. PASS and
+PASS_WITH_NOTES require empty fatal, major and required_repairs lists and no
+failed/unchecked claim. If a repair is mandatory, return FAIL or INCONCLUSIVE;
+never weaken a finding to obtain PASS.
+Read every required source completely. Never use Grep head_limit or any other
+truncating or limiting option on a required source. After any pagination or
+truncation marker (for example a partial Read, an offset/limit notice, or
+"output truncated"), keep reading the next range until the whole file is read.
+In source_coverage, list each exact file and the line ranges you actually read.
+If coverage of any required source is incomplete, say "partial" for that source
+in source_coverage and state the gap in limitations.
+An AI review is not human verification or a novelty audit. Do not silently
+repair a candidate and PASS the original. A terminal error is not a verdict.
+
+Frozen packet file index (relative to workspace; a listed file is not proof of reading):
+["PROVENANCE.json", "adjudication/round3-d5667f5-split-rule.md", "candidate/statement-ledger.md", "diffs/docs-d5667f5-e2c50b5.diff", "docs/coverage-scope-tex.yaml", "excerpts/tex-excerpts.txt", "lean-excerpts/StratonovichHAMSecondMoment/DampedMultiplier.lean.excerpt.txt", "lean-excerpts/StratonovichHAMSecondMoment/H1Density.lean.excerpt.txt", "lean-excerpts/StratonovichHAMSecondMoment/IntervalScalar.lean.excerpt.txt", "lean-excerpts/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean.excerpt.txt", "lean-excerpts/StratonovichHAMSecondMoment/InventoryProduct.lean.excerpt.txt", "lean-excerpts/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean.excerpt.txt", "lean-excerpts/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean.excerpt.txt", "lean-excerpts/StratonovichHAMSecondMoment/RemoveMask.lean.excerpt.txt", "lean-excerpts/StratonovichHAMSecondMoment/SpaceTimePositivity.lean.excerpt.txt", "lean-excerpts/StratonovichHAMSecondMoment/SpatialBracket.lean.excerpt.txt", "lean-excerpts/StratonovichHAMSecondMoment/SpatialFourLinear.lean.excerpt.txt", "lean-excerpts/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean.excerpt.txt", "lean-excerpts/StratonovichHAMSecondMoment/SpectralMassIdentity.lean.excerpt.txt", "lean-excerpts/StratonovichHAMSecondMoment/UniformSeriesTail.lean.excerpt.txt", "lean-excerpts/StratonovichHAMSecondMoment/WhiteClockLaplace.lean.excerpt.txt", "lean-excerpts/StratonovichHAMSecondMoment/WhiteRelativeWidth.lean.excerpt.txt", "lean/COMPLETION.md", "lean/FORMALIZATION.md", "lean/README.md", "lean/coverage.yaml", "manuscript/notes/ai-statistics-data.tex", "manuscript/notes/ai-statistics.tex", "manuscript/notes/book-layout.tex", "manuscript/notes/chapter-guides/01-setting.tex", "manuscript/notes/chapter-guides/02-G0.tex", "manuscript/notes/chapter-guides/03-independent-upper.tex", "manuscript/notes/chapter-guides/04-gaussian-foundations.tex", "manuscript/notes/chapter-guides/05-operator-paths.tex", "manuscript/notes/chapter-guides/06-wave-evolution.tex", "manuscript/notes/chapter-guides/07-lower.tex", "manuscript/notes/chapter-guides/08-means.tex", "manuscript/notes/chapter-guides/09-growing-radius.tex", "manuscript/notes/chapter-guides/10-point-upper.tex", "manuscript/notes/chapter-guides/11-constant.tex", "manuscript/notes/chapter-guides/12-finite-order.tex", "manuscript/notes/chapter-guides/13-direct.tex", "manuscript/notes/chapter-guides/14-covariance.tex", "manuscript/notes/chapter-guides/15-static-clock.tex", "manuscript/notes/figures/active-subset-optimization.tex", "manuscript/notes/figures/chapter-roadmap.tex", "manuscript/notes/figures/common-noise.tex", "manuscript/notes/figures/cross-colour-cube.tex", "manuscript/notes/figures/dyadic-cover.tex", "manuscript/notes/figures/endpoint-elimination.tex", "manuscript/notes/figures/gaussian-enlargement.tex", "manuscript/notes/figures/global-control-blocks.tex", "manuscript/notes/figures/hermite-cutoff.tex", "manuscript/notes/figures/interval-allocations.tex", "manuscript/notes/figures/interval-end-metrics.tex", "manuscript/notes/figures/light-cone.tex", "manuscript/notes/figures/literature-interpretations.tex", "manuscript/notes/figures/literature-results-drawing.tex", "manuscript/notes/figures/literature-results-map.tex", "manuscript/notes/figures/nonseparable-controls.tex", "manuscript/notes/figures/order-of-limits.tex", "manuscript/notes/figures/positive-gram.tex", "manuscript/notes/figures/proof-map.tex", "manuscript/notes/figures/styles.tex", "manuscript/notes/figures/two-chain-pairings.tex", "manuscript/notes/figures/walsh-guitar.tex", "manuscript/notes/figures/white-strip.tex", "manuscript/notes/future_optimizers.tex", "manuscript/notes/future_universality.tex", "manuscript/notes/future_work.tex", "manuscript/notes/history_wave_equations.tex", "manuscript/notes/index/anchors.tex", "manuscript/notes/index/list-of-notation.tex", "manuscript/notes/index/setup.tex", "manuscript/notes/integrated_actual_operator_driver.tex", "manuscript/notes/integrated_cameron_mean.tex", "manuscript/notes/integrated_compact_gaussian.tex", "manuscript/notes/integrated_compact_mean_family.tex", "manuscript/notes/integrated_constant_phase_young.tex", "manuscript/notes/integrated_covariance_foundation.tex", "manuscript/notes/integrated_exact_scaling.tex", "manuscript/notes/integrated_gaussian_tubes.tex", "manuscript/notes/integrated_intrinsic_constant.tex", "manuscript/notes/integrated_masked_moments.tex", "manuscript/notes/integrated_occupation_ceiling.tex", "manuscript/notes/integrated_point_transfer.tex", "manuscript/notes/integrated_positive_gram.tex", "manuscript/notes/integrated_radius_anchor.tex", "manuscript/notes/integrated_raw_block_lower.tex", "manuscript/notes/integrated_signed_moment_upper.tex", "manuscript/notes/integrated_signed_static.tex", "manuscript/notes/integrated_source_convergence.tex", "manuscript/notes/integrated_spatial_occupation.tex", "manuscript/notes/integrated_symplectic_phase.tex", "manuscript/notes/integrated_temporal_equilibrium.tex", "manuscript/notes/integrated_uniform_mean.tex", "manuscript/notes/integrated_uniform_products.tex", "manuscript/notes/integrated_unmasked_variational.tex", "manuscript/notes/integrated_wave_variance.tex", "manuscript/notes/integrated_white_evaluation.tex", "manuscript/notes/integrated_young_upper_foundation.tex", "manuscript/notes/lean-coverage-data.tex", "manuscript/notes/lean-coverage.tex", "manuscript/notes/literature_review.tex", "manuscript/notes/no-go-appendix.tex", "manuscript/notes/notes_stratonovich_ham_second_moment.tex", "manuscript/notes/preface.tex", "manuscript/notes/theory_outlook.tex"]
+
+Re-review round 4: wave-L9 Lean companion ledger headings, Index cells and counts under the strict categories and the split modelled-object rule
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+CONTEXT
+The ledger of the Lean companion classifies every section heading and every
+Index cell as (A) "whole result", (B) "narrower result: <what is missing>"
+or (C) "foundation: ..." / "proof steps ...", as defined in the ledger
+Scope. A round-3 review at commit d5667f525407 found incomplete narrower
+headings, missing coverage fields and Index cells without categories. The
+author then fixed a SPLIT rule for modelled objects: a registered model
+choice (the standard construction of a manuscript object, recorded with the
+identification that is not formalized; M1 = the d = 3 wave Green measure
+via volume.toSphere) keeps a result whole and must be named; a missing
+construction (an abstract object standing in for one the manuscript
+constructs) makes the result narrower. Apply the register as written in the
+Scope, not the earlier unqualified modelled-object clause. The repairs and
+the rule are at commit e2c50b55cc6f (documentation only); the decisions are in
+adjudication/round3-d5667f5-split-rule.md. This packet covers the 99 Index-by-label rows at ledger lines 699-797.
+
+PACKET
+- candidate/statement-ledger.md : the ledger at e2c50b55cc6f.
+- lean/README.md, lean/FORMALIZATION.md, lean/COMPLETION.md,
+  lean/coverage.yaml, docs/coverage-scope-tex.yaml at e2c50b55cc6f.
+- adjudication/round3-d5667f5-split-rule.md : the decision per round-3
+  finding, the split rule and the counts (hints only; verify yourself).
+- diffs/docs-d5667f5-e2c50b5.diff : every documentation change of this
+  repair.
+- Lean ground truth (excerpts, numbered by original line): 
+    lean-excerpts/StratonovichHAMSecondMoment/DampedMultiplier.lean.excerpt.txt
+    lean-excerpts/StratonovichHAMSecondMoment/H1Density.lean.excerpt.txt
+    lean-excerpts/StratonovichHAMSecondMoment/IntervalScalar.lean.excerpt.txt
+    lean-excerpts/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean.excerpt.txt
+    lean-excerpts/StratonovichHAMSecondMoment/InventoryProduct.lean.excerpt.txt
+    lean-excerpts/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean.excerpt.txt
+    lean-excerpts/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean.excerpt.txt
+    lean-excerpts/StratonovichHAMSecondMoment/RemoveMask.lean.excerpt.txt
+    lean-excerpts/StratonovichHAMSecondMoment/SpaceTimePositivity.lean.excerpt.txt
+    lean-excerpts/StratonovichHAMSecondMoment/SpatialBracket.lean.excerpt.txt
+    lean-excerpts/StratonovichHAMSecondMoment/SpatialFourLinear.lean.excerpt.txt
+    lean-excerpts/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean.excerpt.txt
+    lean-excerpts/StratonovichHAMSecondMoment/SpectralMassIdentity.lean.excerpt.txt
+    lean-excerpts/StratonovichHAMSecondMoment/UniformSeriesTail.lean.excerpt.txt
+    lean-excerpts/StratonovichHAMSecondMoment/WhiteClockLaplace.lean.excerpt.txt
+    lean-excerpts/StratonovichHAMSecondMoment/WhiteRelativeWidth.lean.excerpt.txt
+- manuscript/notes/... : all LaTeX inputs at revision a2844206199b;
+  excerpts/tex-excerpts.txt numbers the statements of the labels concerned
+  (convenience copy; manuscript/ is authoritative).
+- PROVENANCE.json : byte binding of every packet file.
+
+Proof correctness is NOT in question; correspondence of the documentation
+is. Discharging a named input in a completion module does not make a
+narrower result whole. Do not accept the ledger's or the adjudication's
+word.
+
+CHECKS (exactly these 2, in this order, with these claim strings):
+  1. claim "INDEX-CELLS lines 699-797": every first cell of the 99 Index-by-label rows at candidate/statement-ledger.md lines 699-797 is correct under the three heading categories and the model-choice register defined in the ledger Scope (candidate/statement-ledger.md, the bullets "Section headings use three categories" and "Model-choice register", about lines 62-96) and in lean/FORMALIZATION.md ("Heading categories"): the category word (whole result / narrower result / foundation / proof steps) agrees with the heading of the section holding its declarations and with the coverage row of its label (A only with conclusion full); a category-B cell names or explicitly refers to what is missing; a category-C cell does not present the declarations as a labelled result; every qualifier (inputs supplied, nothing supplied, in full, narrower, completion, M1) is true of every declaration listed in that row, checked against the Lean statements in lean-excerpts/
+  2. claim "INDEX-MAPPING lines 699-797": for the same rows, the label of each first cell is the right manuscript label for the declarations listed (the labelled statement, or its proof, contains them with the same hypotheses), or "no direct label" is right; check against excerpts/tex-excerpts.txt and the files under manuscript/
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: the three heading categories and the model-choice register defined in the ledger Scope (candidate/statement-ledger.md, the bullets "Section headings use three categories" and "Model-choice register", about lines 62-96) and in lean/FORMALIZATION.md ("Heading categories"); the rows at lines 699-797 of candidate/statement-ledger.md; the list of all "## " headings of the ledger; every file under lean-excerpts/ listed in PACKET; the coverage.yaml rows of the labels in these rows; excerpts/tex-excerpts.txt.
+B. Other files: search as needed and read matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 2 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct, with a minor wording point
+  reported as a minor finding; PARTIAL: only partly correct or resolved;
+  FAIL: wrong, not resolved, or a new error; INCONCLUSIVE: not checkable).
+  reason: evidence with file:line.
+- "findings": fatal = misstatement a citing reader would be misled by;
+  major = material imprecision; minor = wording. Each string starts with an
+  ID (K1, K2, ...), names the item, quotes Lean and TeX with file:line,
+  and gives the exact fix.
+- "required_repairs": only changes that must be made before the
+  documentation can be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "limitations": anything you could not check.
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES;
+  FAIL if any fatal or major finding or required repair; INCONCLUSIVE if
+  the reading requirement could not be met.
+- "confidence": high only if requirement A is complete.
+

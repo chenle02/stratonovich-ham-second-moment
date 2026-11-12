@@ -1,0 +1,341 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md:1-1307,6078-8884 partial file; all required Scope, Index, section prose and tables read completely.",
+    "lean/FORMALIZATION.md:1-149 complete.",
+    "excerpts/tex-excerpts.txt:1-1624 complete.",
+    "lean/coverage.yaml:1-240,312-318,363-406,587-622,665-711,730-748,814-834,846-963,974-1067,1319-1385,1412-1614,1637-1684 partial file; all coverage rows required by the 46 checks read completely.",
+    "lean/README.md:1-150,320-355 partial.",
+    "lean/COMPLETION.md:1-68,265-281 partial.",
+    "adjudication/re-confirmation-round-ba6c565.md:1-132 complete.",
+    "adjudication/confirmation-round-338cdba.md:1-27 complete.",
+    "prior-reports/r1-findings-renames-report.json:1-115 complete.",
+    "prior-reports/r2-whole-result-headings-report.json:296-394 partial; lines1-295 not read.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean:761-780,1420-1753 partial; required paper wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean:1-179 complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean:1-383 complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:393-420,673-774 partial; required paper wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:411-430,748-770,1090-1161 partial; required paper wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean:1-93,220-287 partial; required paper wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean:550-615 partial; required paper wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/SymplecticFree.lean:516-551,639-764 partial; required paper wrappers and supplied-input definitions complete.",
+    "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean:461-477,627-647 partial; required paper wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/TerminalWick.lean:483-522,545-688 partial; required paper wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/TimeCompletion.lean:6-92,490-545,994-1075 partial; required paper and completed wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/TypeContinuity.lean:375-406,925-1183 partial; required paper wrappers and named input complete.",
+    "lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean:198-320 partial; required paper wrappers and named input complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:80-195,224-256,398-465 partial; required paper wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalFloor.lean:405-484 partial.",
+    "lean/StratonovichHAMSecondMoment/VariationalMean.lean:600-733 partial; required paper wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/VariationalRate.lean:731-828 partial; required paper wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean:95-145,390-454 partial; required paper wrapper complete.",
+    "lean/StratonovichHAMSecondMoment/WaveGreenFourier.lean:712-768 partial; required paper wrapper complete.",
+    "lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean:810-973 partial; required paper wrappers complete.",
+    "lean/StratonovichHAMSecondMoment/WhiteClockLaplace.lean:430-454 partial; required paper wrapper complete.",
+    "lean/StratonovichHAMSecondMoment/WhiteRelativeWidth.lean:201-221 partial; required paper wrapper complete.",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean:1-501 complete.",
+    "lean/StratonovichHAMSecondMoment/L9Completed.lean:1-186 complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean:1-113 complete.",
+    "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean:146-169 partial.",
+    "lean/StratonovichHAMAudit/ActualEvent.lean:1-35 complete.",
+    "lean/StratonovichHAMAudit/AllAlphaMoment.lean:1-29 complete.",
+    "lean/StratonovichHAMAudit/ClockFilter.lean:1-64 complete.",
+    "lean/StratonovichHAMAudit/DampedLower.lean:1-34 complete.",
+    "lean/StratonovichHAMAudit/DimensionalMatrix.lean:1-23 complete.",
+    "lean/StratonovichHAMAudit/DirectEvent.lean:1-93 complete.",
+    "lean/StratonovichHAMAudit/FiniteYoung.lean:1-34 complete.",
+    "lean/StratonovichHAMAudit/GaussianTail.lean:1-29 complete.",
+    "lean/StratonovichHAMAudit/GlobalOmega.lean:1-144 complete.",
+    "lean/StratonovichHAMAudit/HermiteWord.lean:1-61 complete.",
+    "lean/StratonovichHAMAudit/HermiteWordFock.lean:1-53 complete.",
+    "lean/StratonovichHAMAudit/InteractionDriver.lean:1-100 complete.",
+    "lean/StratonovichHAMAudit/JointTilt.lean:1-28 complete.",
+    "lean/StratonovichHAMAudit/LocalFlow.lean:1-51 complete.",
+    "lean/StratonovichHAMAudit/MiddleCross.lean:1-192 complete.",
+    "lean/StratonovichHAMAudit/MovingCone.lean:1-30 complete.",
+    "lean/StratonovichHAMAudit/OccupationForm.lean:1-23 complete.",
+    "lean/StratonovichHAMAudit/PhaseResponse.lean:1-67 complete.",
+    "lean/StratonovichHAMAudit/PositiveGram.lean:1-87 complete.",
+    "lean/StratonovichHAMAudit/ProjectionResidual.lean:1-28 complete.",
+    "lean/StratonovichHAMAudit/RawValueCeiling.lean:1-27 complete.",
+    "lean/StratonovichHAMAudit/RawVariational.lean:1-73 complete.",
+    "lean/StratonovichHAMAudit/TerminalCross.lean:1-113 complete.",
+    "lean/StratonovichHAMAudit/WhiteCDF.lean:1-20 complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:225-242,528-532,803-848,2054-2086,2531-2553,2577-2605,3576-3645,3703-3727,7222-7234,7516-7528,7574-7593,7640-7671 partial.",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-111,166-177,219-237,300-325,350-449 partial.",
+    "manuscript/notes/integrated_temporal_equilibrium.tex:1-51 partial.",
+    "manuscript/notes/integrated_symplectic_phase.tex:1-60 partial.",
+    "manuscript/notes/integrated_white_evaluation.tex:1-9,58-65,101-138 partial.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-35,64-111,225-238,270-284 partial.",
+    "manuscript/notes/integrated_covariance_foundation.tex:1-12,141-166,296-310,347-390 partial.",
+    "manuscript/notes/integrated_wave_variance.tex:1-20,171-188,368-383 partial.",
+    "manuscript/notes/integrated_compact_mean_family.tex:398-424 partial.",
+    "manuscript/notes/integrated_occupation_ceiling.tex:92-112 partial."
+  ],
+  "checks": [
+    {
+      "claim": "HEADING SpatialFourLinear",
+      "verdict": "FAIL",
+      "reason": "The heading at candidate/statement-ledger.md:6078 correctly names sequential continuity and the rate/cost bridges. However, its main-result Index cell at:700 names the proved energy fragment rather than the missing score identifications required by the strict convention. Compare SpatialFourLinear.lean:1698-1738 and coverage.yaml:1450-1478. See H8."
+    },
+    {
+      "claim": "HEADING SpatialOccupationCompleted",
+      "verdict": "FAIL",
+      "reason": "The category-B heading at candidate/statement-ledger.md:6297 is accurate, but Index cells:661-662 merely say completed wrappers and omit the retained category-B boundary. SpatialOccupationCompleted.lean:133-177 still uses integral costs and Rayleigh rates; ledger:6330-6334 explicitly preserves that narrowing. See H8."
+    },
+    {
+      "claim": "HEADING SpatialOccupationL7Completed",
+      "verdict": "FAIL",
+      "reason": "Category B is correct, but the heading omits sequential-only continuity, retained explicitly at candidate/statement-ledger.md:6406-6414. SpatialOccupationL7Completed.lean:182-194 proves a sequence-limit statement, whereas manuscript/notes/integrated_spatial_occupation.tex:229-230 asserts joint continuity. Completion does not remove this boundary. See H1."
+    },
+    {
+      "claim": "HEADING SpatialSmoothRatio",
+      "verdict": "FAIL",
+      "reason": "The heading at candidate/statement-ledger.md:6438 correctly names the rate/cost identification gap. Its main-wrapper Index cell at:655 instead says both claims without that category-B qualification. SpatialSmoothRatio.lean:763-772 and coverage.yaml:1511-1513 retain the modelled-score boundary. See H8."
+    },
+    {
+      "claim": "HEADING SpatialStaticControls",
+      "verdict": "PASS",
+      "reason": "The category-B heading and principal Index cell accurately retain the rate/cost identification gap: candidate/statement-ledger.md:656,6591,6610-6614. SpatialStaticControls.lean:1098-1155 and the completed wrappers preserve these definitions; coverage.yaml:849-852 is weaker."
+    },
+    {
+      "claim": "HEADING SpectralMassIdentity",
+      "verdict": "PASS",
+      "reason": "Spatial_fourier_bound_ralpha_paper proves the complete spatial Fourier lemma with its printed constant under H:homog, including zero covariance: SpectralMassIdentity.lean:272-285; manuscript/notes/integrated_spatial_occupation.tex:101-111. The heading does not claim to prove all phase contractions; ledger:6788-6805 identifies the carried result."
+    },
+    {
+      "claim": "HEADING StaticPhaseCauchy",
+      "verdict": "PASS",
+      "reason": "Category C accurately describes the conditional scalar/operator proof assembly, not the constructed manuscript phases. StaticPhaseCauchy.lean:568-611 takes the analytic inputs; candidate/statement-ledger.md:6939-6960,6979-6989 discloses them. The actual phases and conclusions occur at main manuscript:2577-2605."
+    },
+    {
+      "claim": "HEADING SymplecticFree",
+      "verdict": "FAIL",
+      "reason": "Category B is correct, but supplied free-group/Young inputs do not describe the missing conclusions. SymplecticFree.lean:723-754 omits J_E and preservation of the form on E, asserted at manuscript/notes/integrated_symplectic_phase.tex:32-41. Ledger:7095-7103 acknowledges these omissions, absent from heading:7023 and its Index repetitions:789-793. See H2."
+    },
+    {
+      "claim": "HEADING TemporalEquilibrium",
+      "verdict": "FAIL",
+      "reason": "The mathematical conclusions are complete in TemporalEquilibrium.lean:470-474,633-645 and match manuscript/notes/integrated_temporal_equilibrium.tex:13-22,37-51. Nevertheless, neither required coverage row contains conclusion: full: coverage.yaml:312-318,916-922. Thus heading:7169 and Index:510-511 do not meet the explicitly required category-A metadata condition. See H3."
+    },
+    {
+      "claim": "HEADING TerminalWick",
+      "verdict": "FAIL",
+      "reason": "The heading at candidate/statement-ledger.md:7251 correctly identifies category B and added measurability, but omits real-only coupling, unconstructed terminal-chain identification and mixed-moment-only comparison. These are explicit in TerminalWick.lean:623-640,669-683 and ledger:7264-7277,7316-7334, versus main manuscript:3607-3608,3641-3644. See H4."
+    },
+    {
+      "claim": "HEADING TimeCompletion",
+      "verdict": "PASS",
+      "reason": "TimeCompletion.lean:1005-1031 supplies positivity, separability, extension, norm identities, interval amplitudes and density of the complexified real tests. Together with the concrete completed trig and wave wrappers, this supports category A. The direct complex-completion construction is explicitly characterized by its form and test density, rather than left as an unidentified surrogate; compare manuscript/notes/integrated_covariance_foundation.tex:141-156."
+    },
+    {
+      "claim": "HEADING TypeContinuity",
+      "verdict": "PASS",
+      "reason": "All stated type, log-convexity, continuity and static-limit conclusions appear at TypeContinuity.lean:383-389,1106-1122,1141-1160. The analytic hypotheses are individually named in TypeContinuityInputs at:957-976 and disclosed in ledger:7602-7660; the relevant coverage rows are full."
+    },
+    {
+      "claim": "HEADING UniformSeriesTail",
+      "verdict": "PASS",
+      "reason": "UniformSeriesTail.lean:261-277,301-310 includes absolute convergence, joint regularization convergence, coefficient/tail bounds and the final second-moment bound, matching main manuscript:3703-3727. TerminalWickInput at:236-238 contains the two disclosed upstream facts, not the desired tail conclusions."
+    },
+    {
+      "claim": "HEADING VariationalDilation",
+      "verdict": "PASS",
+      "reason": "The category-B heading accurately names the spectral-rate and stochastic-variance identifications left outside Lean. VariationalDilation.lean:236-251 defines the integral cost and Rayleigh rate; its paper wrappers at:412-458 prove the dilation identities for these quantities. Compare manuscript/notes/integrated_unmasked_variational.tex:225-238."
+    },
+    {
+      "claim": "HEADING VariationalFloor",
+      "verdict": "PASS",
+      "reason": "Category C is appropriate: VariationalFloor.lean:411-418,466-472 proves positivity-floor facts used by later results, not the labelled operator/rate proposition at manuscript/notes/integrated_unmasked_variational.tex:98-111. Ledger:7959-8066 identifies this foundation."
+    },
+    {
+      "claim": "HEADING VariationalMean",
+      "verdict": "PASS",
+      "reason": "The heading correctly separates the full heat-envelope lemma from the missing mixed-derivative conclusion. VariationalMean.lean:612-629,679-711 matches the heat envelope and displayed global bounds, but not every mixed derivative asserted at manuscript/notes/integrated_unmasked_variational.tex:66-67."
+    },
+    {
+      "claim": "HEADING VariationalRate",
+      "verdict": "FAIL",
+      "reason": "The heading correctly names the operator half and Q_2 inequality as missing, but omits the stochastic-cost identification. VariationalRate.lean:779-780 expressly uses rawCost, not E W(Psi)^2; ledger:8270-8276 confirms the additional gap. Index:634 overstates the scope as everything except Q_2. See H5."
+    },
+    {
+      "claim": "HEADING WaveGreen",
+      "verdict": "PASS",
+      "reason": "Category C accurately describes construction and elementary properties of the Green measures: WaveGreen.lean:100-112,400-407. These support several labelled results without supplying all their conclusions; main manuscript:803-848 includes additional damped-norm and smoothing assertions."
+    },
+    {
+      "claim": "HEADING WaveGreenFourier",
+      "verdict": "PASS",
+      "reason": "Category C correctly describes the Green Fourier identities, not the full labelled results consuming them. WaveGreenFourier.lean:721-768 and L9Completed.lean:96-184 distinguish the foundation from its completed applications; ledger:8463-8579 preserves that distinction."
+    },
+    {
+      "claim": "HEADING WaveTwoVariances",
+      "verdict": "FAIL",
+      "reason": "The spectral core is accurately called full, but named inputs do not name the remaining abstraction gap. WaveTwoVariances.lean:908-916 takes abstract P, J, normSG and var; the manuscript bounds E|ell_R|^2 on its actual phase spaces at integrated_wave_variance.tex:368-383. Ledger:8675-8683 admits the missing construction/identification. See H6."
+    },
+    {
+      "claim": "HEADING WhiteClockLaplace",
+      "verdict": "PASS",
+      "reason": "WhiteClockLaplace.lean:433-447 proves both transforms, their integrability and the diagonal specialization, matching main manuscript:7645-7671. The positive self-damping parameters are legitimate convergence conditions explicitly disclosed at ledger:8750-8754."
+    },
+    {
+      "claim": "HEADING WhiteRelativeWidth",
+      "verdict": "PASS",
+      "reason": "WhiteRelativeWidth.lean:215-219 proves the formula ratio, upper bound and equality case of manuscript/notes/integrated_white_evaluation.tex:131-138. Ledger:8820-8884 does not claim the separate stochastic moment bounds."
+    },
+    {
+      "claim": "HEADING ActualEvent",
+      "verdict": "PASS",
+      "reason": "The recurrence estimate and scalar penalty identity at ActualEvent.lean:9-26 are proof steps, not a labelled event theorem. Category C at candidate/statement-ledger.md:874-886 is accurate."
+    },
+    {
+      "claim": "HEADING AllAlphaMoment",
+      "verdict": "PASS",
+      "reason": "AllAlphaMoment.lean:8-20 proves two scalar inequalities. The proof-step classification at candidate/statement-ledger.md:887-898 does not claim a full stochastic moment result."
+    },
+    {
+      "claim": "HEADING ClockFilter",
+      "verdict": "PASS",
+      "reason": "ClockFilter.lean:14-35 proves a partial fraction, scalar filter bounds and a conditional integral inequality. Category C at candidate/statement-ledger.md:899-915 accurately describes these steps."
+    },
+    {
+      "claim": "HEADING DampedLower",
+      "verdict": "PASS",
+      "reason": "DampedLower.lean:9-24 supplies arithmetic/pi certificates only. The proof-step heading at candidate/statement-ledger.md:916-927 correctly avoids claiming the analytic lower-bound result."
+    },
+    {
+      "claim": "HEADING DimensionalMatrix",
+      "verdict": "PASS",
+      "reason": "DimensionalMatrix.lean:9-20 is a finite matrix multiplication calculation, not construction of the actual wave form. The category-C heading and prose at candidate/statement-ledger.md:928-953 are accurate."
+    },
+    {
+      "claim": "HEADING DirectEvent",
+      "verdict": "PASS",
+      "reason": "DirectEvent.lean:12-81 proves scaling and finite matrix identities. Category C at candidate/statement-ledger.md:954-976 accurately distinguishes these from an actual probabilistic event construction."
+    },
+    {
+      "claim": "HEADING FiniteYoung",
+      "verdict": "PASS",
+      "reason": "FiniteYoung.lean:9-11 is the finite weighted-power inequality used in a proof. The proof-step heading at candidate/statement-ledger.md:977-985 is appropriate."
+    },
+    {
+      "claim": "HEADING GaussianTail",
+      "verdict": "PASS",
+      "reason": "GaussianTail.lean:9-12 proves a scalar exponent bound under a cutoff hypothesis, not a Gaussian integration theorem. Category C at candidate/statement-ledger.md:986-994 is accurate."
+    },
+    {
+      "claim": "HEADING GlobalOmega",
+      "verdict": "PASS",
+      "reason": "GlobalOmega.lean:20-115 proves polynomial certificates and a rational inequality. The proof-step classification at candidate/statement-ledger.md:995-1012 accurately limits its scope."
+    },
+    {
+      "claim": "HEADING HermiteWord",
+      "verdict": "PASS",
+      "reason": "HermiteWord.lean:23-44 is an abstract induction conditional on Good, insertion/frame stability and cutoff exactness. It is not itself the Gaussian-model lemma. Category C at candidate/statement-ledger.md:1013-1033 is correct."
+    },
+    {
+      "claim": "HEADING HermiteWordFock",
+      "verdict": "FAIL",
+      "reason": "Category B is correct, but the heading names only the one-mode restriction. HermiteWordFock.lean:43-48 proves a single List word, and its:21-23 explicitly excludes finite sums and Bochner integrals. Main manuscript:2551-2552 includes those conclusions. Ledger:1064-1068 acknowledges the omission absent from heading:1034. See H7."
+    },
+    {
+      "claim": "HEADING InteractionDriver",
+      "verdict": "PASS",
+      "reason": "InteractionDriver.lean:16-95 supplies scalar parameter, Gaussian algebra and dyadic-margin calculations. Category C at candidate/statement-ledger.md:1074-1105 correctly avoids claiming the analytic driver construction."
+    },
+    {
+      "claim": "HEADING JointTilt",
+      "verdict": "PASS",
+      "reason": "JointTilt.lean:9-22 contains exponent cancellation and error identities, not a Gaussian change-of-measure theorem. The proof-step heading at candidate/statement-ledger.md:1106-1128 is accurate."
+    },
+    {
+      "claim": "HEADING LocalFlow",
+      "verdict": "PASS",
+      "reason": "LocalFlow.lean:12-48 proves exponent ranges, Schur rescalings and scalar obstructions. Category C at candidate/statement-ledger.md:1129-1153 correctly describes this scope."
+    },
+    {
+      "claim": "HEADING MiddleCross",
+      "verdict": "PASS",
+      "reason": "MiddleCross.lean:66-87,120-174 supplies algebraic identities and positivity certificates for explicit expressions. The proof-step heading at candidate/statement-ledger.md:1154-1171 does not claim the surrounding analytic comparison."
+    },
+    {
+      "claim": "HEADING MovingCone",
+      "verdict": "PASS",
+      "reason": "MovingCone.lean:8-27 proves conditional scalar budget and cone-conversion inequalities. Category C at candidate/statement-ledger.md:1172-1184 is accurate."
+    },
+    {
+      "claim": "HEADING OccupationForm",
+      "verdict": "PASS",
+      "reason": "OccupationForm.lean:8-20 proves scalar potential-budget and coercivity rearrangements. The proof-step heading at candidate/statement-ledger.md:1185-1196 correctly distinguishes these from a form-construction theorem."
+    },
+    {
+      "claim": "HEADING PhaseResponse",
+      "verdict": "PASS",
+      "reason": "PhaseResponse.lean:12-50 proves scalar exponent choices, trigonometric identities and a conditional frequency-window estimate. Category C at candidate/statement-ledger.md:1197-1219 is appropriate."
+    },
+    {
+      "claim": "HEADING PositiveGram",
+      "verdict": "PASS",
+      "reason": "PositiveGram.lean:12-76 proves finite Gram identities and conditional inequalities. The proof-step heading at candidate/statement-ledger.md:1220-1236 does not claim the full manuscript variational construction."
+    },
+    {
+      "claim": "HEADING ProjectionResidual",
+      "verdict": "PASS",
+      "reason": "ProjectionResidual.lean:12-24 proves numerical and scalar gap certificates. Category C at candidate/statement-ledger.md:1237-1248 accurately describes these steps."
+    },
+    {
+      "claim": "HEADING RawValueCeiling",
+      "verdict": "PASS",
+      "reason": "RawValueCeiling.lean:9-14 proves an integer certificate and strict log-convexity gap. The proof-step heading at candidate/statement-ledger.md:1249-1261 is accurate."
+    },
+    {
+      "claim": "HEADING RawVariational",
+      "verdict": "PASS",
+      "reason": "RawVariational.lean:9-65 proves scalar dilation, score and label-factor identities. Category C at candidate/statement-ledger.md:1262-1278 correctly avoids claiming the stochastic variational result."
+    },
+    {
+      "claim": "HEADING TerminalCross",
+      "verdict": "PASS",
+      "reason": "TerminalCross.lean:31-73 proves polynomial, scalar-rate and exponential comparison certificates. The proof-step heading at candidate/statement-ledger.md:1279-1294 accurately limits the claim."
+    },
+    {
+      "claim": "HEADING WhiteCDF",
+      "verdict": "PASS",
+      "reason": "WhiteCDF.lean:8-16 proves scalar consequences of an assumed quadratic inequality, not the CDF-square lemma or complete white-energy result. Category C at candidate/statement-ledger.md:1295-1307 is correct."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "H1 SpatialOccupationL7Completed: incomplete category-B heading. Lean states 'Tendsto (fun n => C4 ...) atTop' at lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean:182-192; TeX states 'jointly continuous on (H^1)^4' at manuscript/notes/integrated_spatial_occupation.tex:229-230. candidate/statement-ledger.md:6407-6408 explicitly retains the sequential-only boundary, omitted from heading:6349. Exact fix: append 'joint continuity only in sequential form' to that heading, retaining the class-O and rate/cost gaps; qualify Index:728 and:734 as narrower completion wrappers with their respective retained boundaries.",
+      "H2 SymplecticFree: supplied inputs are not a complete description of missing conclusions. Lean explicitly says 'the operator J_E ... and the preservation of omega by S_E on all of E ... are not formalized' at lean/StratonovichHAMSecondMoment/SymplecticFree.lean:723-725, whereas TeX asserts 'There is a bounded isometric skew-adjoint J_E' and 'The free group preserves omega' at manuscript/notes/integrated_symplectic_phase.tex:32-40. The force wrapper concludes only the omegaL2 identity at SymplecticFree.lean:707-714. Exact fix: replace the qualifier at candidate/statement-ledger.md:7023 and its Index repetitions:789-793 with 'narrower result: J_E, the duality-form identification and symplectic preservation on E not formalized; force skewness only at L2 level; free-group data and Young convergence supplied'.",
+      "H3 TemporalEquilibrium: category-A coverage prerequisite is absent. Lean concludes 'MemLp (density a) 1 ...' and 'MemLp (density a) 2 ...', the endpoint potential and exact positive mass at lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean:633-645, matching TeX 'belongs to L^1(0,1) intersect L^2(0,1)' and its displayed identities at manuscript/notes/integrated_temporal_equilibrium.tex:42-48; gamma_beta_paper:470-474 likewise matches TeX:13-22. But lean/coverage.yaml:312-318 and:916-922 contain no conclusion field. The strict rule at candidate/statement-ledger.md:62-66 requires conclusion full, not merely same-assumptions. Exact fix: add 'conclusion: full' to both coverage rows; the mathematical evidence supports retaining the whole-result heading and Index cells.",
+      "H4 TerminalWick: the category-B heading omits additional substantive boundaries. Lean quantifies 'forall r : real' at lean/StratonovichHAMSecondMoment/TerminalWick.lean:640, takes arbitrary nu with a mass hypothesis at:623-624, and compares individual mixed moments at:681-683. TeX asserts convergence for 'every real or complex r' and comparison of 'all finite partial-order second moments' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:3641-3644, using the actual terminal-chain measure at:3607-3608. Exact fix: extend candidate/statement-ledger.md:7251 and classify its main Index cell:785 to disclose real coupling only, mixed-moment comparison only, and the unformalized actual-chain construction/mass identification, while retaining supplied-input and added-measurability disclosures.",
+      "H5 VariationalRate: missing stochastic-cost identification is omitted from the heading and contradicted by the Index's exhaustive wording. Lean says 'rawCost ... not E W(Psi)^2' at lean/StratonovichHAMSecondMoment/VariationalRate.lean:779-780; TeX defines the 'original variance v_Psi = E W(Psi)^2' at manuscript/notes/integrated_unmasked_variational.tex:17-18 and uses it in the score set at:272-279. candidate/statement-ledger.md:8275-8276 acknowledges this gap, but heading:8212 omits it and Index:634 says 'everything except Q_2 >= S_2^pos'. Exact fix: add the missing cost identification to the heading and replace that Index qualifier with 'narrower result: Rayleigh-form rates and integral-form costs, their spectral/stochastic identification and Q_2 >= S_2^pos not formalized', retaining the S1Bdd disclosure.",
+      "H6 WaveTwoVariances: the category-B heading does not identify its modelled-object boundary. Lean takes '(var : ... P -> P -> real)' and only an upper-bound hypothesis hlink at lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean:908-916. TeX concludes bounds on the actual 'E|ell_R(I;e_k,z)|^2' and reversed variance at manuscript/notes/integrated_wave_variance.tex:371-382. Neither actual ell_R nor its phase-space identification is constructed, as candidate/statement-ledger.md:8675-8683 records. Exact fix: replace heading:8580 and Index qualifier:624 with a category-B description explicitly naming abstract variance/phase spaces and the unformalized identification with the manuscript objects, while preserving the named inputs and full spectral-core statement.",
+      "H7 HermiteWordFock: one-mode wording is not the complete narrowing. Lean proves a single '(w : List (Fin m × B))' equality at lean/StratonovichHAMAudit/HermiteWordFock.lean:43-48 and explicitly excludes sums/integrals at:21-23. TeX additionally says 'The equality holds for finite sums and for Bochner integrals of such words' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2551-2552. Exact fix: change candidate/statement-ledger.md:1034 to 'narrower result: L:finite-word-cutoff for one Gaussian mode per color and single finite words; finite sums and Bochner integrals not formalized'; give Index:865 the same category-B qualification.",
+      "H8 SpatialFourLinear, SpatialOccupationCompleted and SpatialSmoothRatio: retained Index qualifiers do not implement the strict category-B convention. Lean's shared definitions are explicitly 'rawCost' in integral form and a 'rate' whose identification is not formalized at lean/StratonovichHAMSecondMoment/VariationalDilation.lean:236-247. TeX uses the original variance 'v_Psi = E W(Psi)^2' at manuscript/notes/integrated_unmasked_variational.tex:17 and the corresponding score conclusions at manuscript/notes/integrated_spatial_occupation.tex:50-53,171-176,316-322. Their headings disclose these gaps, but candidate/statement-ledger.md:700 names only the proved energy fragment, :655 says 'both claims', and :661-662 say only 'completed wrappers'. Exact fix: add 'narrower result: rate and cost identification not formalized' to these main-result Index cells, retaining their existing fragment, completion and supplied-input information. Completion alone must not erase the category."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "H1: Add the retained sequential-continuity boundary to the SpatialOccupationL7Completed heading and accurately classify its principal completion Index cells.",
+    "H2: Make the SymplecticFree heading and repeated Index qualifiers name the missing J_E, duality and full-E symplectic conclusions, not merely supplied inputs.",
+    "H3: Add conclusion: full to the L:equilibrium-gamma-beta and L:temporal-equilibrium coverage rows.",
+    "H4: Complete the TerminalWick heading and principal Index classification with the real-only, mixed-moment-only and unconstructed actual-chain boundaries.",
+    "H5: Add the stochastic-cost identification gap to VariationalRate and remove the Index claim that only the Q_2 inequality is missing.",
+    "H6: Identify the abstract variance/phase-space substitution in the WaveTwoVariances heading and principal Index cell.",
+    "H7: Add the single-word restriction and missing finite-sum/Bochner-integral conclusions to the HermiteWordFock heading and Index qualification.",
+    "H8: Apply explicit, accurately scoped category-B qualifiers to the SpatialFourLinear, SpatialOccupationCompleted and SpatialSmoothRatio main-result Index cells identified above."
+  ],
+  "limitations": [
+    "Requirement A was completed. Partial-file coverage entries omit material outside the required selections; required passages and wrappers were read without remaining gaps.",
+    "Proof correctness, compilation and kernel replay were outside scope; no build was run.",
+    "Packet hashes, repository history and the documentation-only nature of the revision were not independently authenticated. PROVENANCE.json, claims.yaml and the complete diff were not audited.",
+    "Unrelated ledger classifications, aggregate module/result counts and the full claims inventory were not recertified.",
+    "No incorrect numerical constant was identified in the checked correspondence; the blocking findings concern scope descriptions, Index classifications and required coverage metadata.",
+    "This AI correspondence review is not human verification or a novelty audit."
+  ]
+}

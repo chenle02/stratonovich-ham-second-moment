@@ -1,0 +1,128 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "prior-reports/g5a-report.json:1-366 complete.",
+    "prior-reports/g5b-report.json:1-322 complete.",
+    "prior-reports/g6a-report.json:1-204 complete.",
+    "prior-reports/g6b-report.json:1-78 complete.",
+    "adjudication/ADJUDICATION.md:1-82 complete.",
+    "diffs/findings-repair-7bd4c62-338cdba.diff:1-707 complete.",
+    "diffs/l9-repair-eb253a5-338cdba.diff:1-660,1458-1500 partial; changed-file inventory also inspected.",
+    "candidate/statement-ledger.md:1-80,195-218,250-282,340-365,460-472,595-603,720-725,778-792,798-802,830-852,998-1058,1686-1710,1845-1856,1880-1923,2367-2498,2663-2780,2928-3051,3190-3334,6881-7006,8397-8412,8483-8498,8880-8910 partial file; all mandatory sections complete.",
+    "lean/coverage.yaml:1-18,225-415,480-525,1164-1205,1307-1333,1536-1594 partial file; all seven mandatory rows complete. Whole-file class counts and scope strings additionally parsed.",
+    "docs/coverage-scope-tex.yaml:1-133 complete.",
+    "lean/claims.yaml:222-238,12322-12328,12364-12370,12462-12489,14534-14729,15082-15088,16473-17331 partial.",
+    "lean/README.md:1-40,75-100,230-280,350-435 partial; all occurrences of the two reclassified labels read in context.",
+    "lean/FORMALIZATION.md:70-150 partial; all occurrences of the two reclassified labels read in context.",
+    "lean/COMPLETION.md:1-90 partial; both reclassified result entries and the summary counts read.",
+    "excerpts/tex-excerpts.txt:1-1589 complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:225-242,803-919,1773-1825,2054-2066,2288-2571,2577-2897,2986-3094,3402-3581 partial file; mandatory finding-specific passages complete.",
+    "lean/StratonovichHAMSecondMoment/GaussianHermite.lean:1-501 complete.",
+    "lean/StratonovichHAMSecondMoment/HermiteFock.lean:1-641 complete.",
+    "lean/StratonovichHAMSecondMoment/FockForm.lean:1-546 complete.",
+    "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean:1-615 complete.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalar.lean:1-1217 complete.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean:1-193 complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 complete.",
+    "lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean:1244-1350 partial; finding-specific declaration complete.",
+    "lean/StratonovichHAMSecondMoment/DampedMultiplier.lean:1-110,192-228,260-360,445-607 partial.",
+    "lean/StratonovichHAMSecondMoment/WaveGreenFourier.lean:737-768 partial.",
+    "lean/StratonovichHAMAudit/HermiteWord.lean:1-61 complete.",
+    "lean/StratonovichHAMAudit/HermiteWordFock.lean:1-53 complete.",
+    "lean/StratonovichHAMAudit/HermiteWordConsumer.lean:1-70 complete.",
+    "lean/refutations/gaussian-hermite/OrthogonalityNoDelta.lean:1-34 complete.",
+    "lean/refutations/gaussian-hermite/RecurrenceNoLowering.lean:1-39 complete.",
+    "lean/refutations/gaussian-hermite/UnnormalizedOrthonormal.lean:1-32 complete.",
+    "lean/refutations/hermite-fock/CreRowConstant.lean:1-42 complete.",
+    "lean/refutations/hermite-fock/NumberOrder.lean:1-35 complete.",
+    "lean/refutations/hermite-fock/VacuumSquareOfSum.lean:1-35 complete.",
+    "lean/refutations/fock-form/CompressNonProjection.lean:1-40 complete.",
+    "lean/refutations/fock-form/OccupiedConstant.lean:1-58 complete.",
+    "lean/refutations/fock-form/TruncWithoutCutoff.lean:1-43 complete.",
+    "tools/mirror_check.py:1-22 complete.",
+    "tools/mirror_check.out:1-9 complete.",
+    "PROVENANCE.json:1-42 partial; revision metadata only.",
+    "lean/provenance/manuscript-anchor.json:1-35 partial; revision metadata only."
+  ],
+  "checks": [
+    {
+      "claim": "g5a-W1",
+      "verdict": "PASS",
+      "reason": "The repaired explanation distinguishes normalized square-root coefficients from unnormalized integer coefficients (candidate/statement-ledger.md:2701-2705). This matches GaussianHermite.lean:124-133,258-259,341-343 and the normalized TeX recurrence at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2515-2517. Both lowering coefficients vanish at the truncated boundary."
+    },
+    {
+      "claim": "g5b-W1",
+      "verdict": "PASS",
+      "reason": "The creation-bound input cell now requires only the column bound (candidate/statement-ledger.md:3034), agreeing with HermiteFock.lean:293-296 and lean/claims.yaml:17077-17083. Symmetry is correctly reserved for annihilation and combined bounds; the TeX application supplies selfadjoint spatial operators at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2495-2496."
+    },
+    {
+      "claim": "g5b-W2",
+      "verdict": "PASS",
+      "reason": "The ledger explicitly distinguishes input cutoff N+1/output cutoff N and explains the slack when the input already has support through N (candidate/statement-ledger.md:2976-2985,3035). HermiteFock.lean:307-311 has exactly those cutoffs. TeX:1806-1809 instead discusses input degrees through n; TeX:2522-2523 says the same bound after truncation."
+    },
+    {
+      "claim": "g5b-W3",
+      "verdict": "PASS",
+      "reason": "The convention translation is now explicit at candidate/statement-ledger.md:2953-2957. Conjugate-linearity in Lean is visible in HermiteFock.lean:220-222,493-494; the manuscript specifies first-slot linearity at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2824. Conjugating the adjoint equalities preserves the stated identities and constants."
+    },
+    {
+      "claim": "g6a-W1",
+      "verdict": "PASS",
+      "reason": "lean/coverage.yaml:338-362 now uses inputs-supplied/weaker, discloses the restriction of operator data, and limits 'Nothing supplied' to the one-mode case. HermiteWordFock.lean:43-51 has one K_i and one coordinate per color, unlike the grouped sum in manuscript/notes/notes_stratonovich_ham_second_moment.tex:2532-2538. The remaining multi-mode realization is not claimed."
+    },
+    {
+      "claim": "g6a-W2",
+      "verdict": "PASS",
+      "reason": "The two specified headings and their references were corrected (candidate/statement-ledger.md:60,782,1019,2367,2423). They now accurately distinguish the one-mode word theorem from Fock consumers with supplied spatial columns. FockForm.lean:206-232 retains hcol, while manuscript/notes/notes_stratonovich_ham_second_moment.tex:2492-2511 proves the spatial estimate. Other surviving completeness-language problems are reported separately under RESCAN."
+    },
+    {
+      "claim": "g6a-W3",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:2458-2460 now says 'symmetry' and identifies the finite coefficient pairing identity without claiming operator-space packaging. This accurately describes FockForm.lean:227-229, rather than the full bounded-selfadjoint assertion of manuscript/notes/notes_stratonovich_ham_second_moment.tex:2483."
+    },
+    {
+      "claim": "g6b-W1",
+      "verdict": "PASS",
+      "reason": "The repaired cross-references identify the coefficient-model sandwich estimate and scalar/weighted-block-map deductions (candidate/statement-ledger.md:6929-6933,6968-6971,6978,6988). These match FockForm.lean:206-232 and ComplexPhaseScalar.lean:1307-1338. The actual propagator assertion at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2302-2307 remains explicitly outside the formalized identification."
+    },
+    {
+      "claim": "RECLASS-FINITE-WORD",
+      "verdict": "PASS",
+      "reason": "The classification and restriction are consistent across lean/coverage.yaml:334-362, docs/coverage-scope-tex.yaml:29-31, candidate/statement-ledger.md:54-76,274-280,343-359,998-1058,848-850, lean/README.md:249-253, lean/FORMALIZATION.md:82,135-137 and lean/COMPLETION.md:82. The concrete proof discharges the abstract induction hypotheses only for the disclosed special case. Parsed coverage totals are 47 same-assumptions, 30 inputs-supplied and 3 outside."
+    },
+    {
+      "claim": "RECLASS-DAMPED",
+      "verdict": "PASS",
+      "reason": "same-assumptions/weaker is supported: DampedMultiplier.lean:547-585 assumes H:homog alone but provides multiplier membership rather than a spectral identification of the smoothed covariance. The separate Green identification is concluded by DampedMultiplier.lean:594-606 and WaveGreenFourier.lean:753-766. This distinction is consistently recorded at lean/coverage.yaml:232-284, its mirror:17-19, candidate/statement-ledger.md:203-215,1686-1698,1852-1853,8397-8411, lean/README.md:87-96, lean/FORMALIZATION.md:80 and lean/COMPLETION.md:69."
+    },
+    {
+      "claim": "RESCAN",
+      "verdict": "FAIL",
+      "reason": "C1: 'IntervalScalar (whole result)' and 'StaticPhaseCauchy (whole result)' remain at candidate/statement-ledger.md:3190,6881, despite their immediately stated inputs-supplied/weaker scope (:3192-3201,6883-6892). IntervalScalar.lean:1157-1175 assumes hsplits and hfixed, and StaticPhaseCauchy.lean:568-586 assumes the circle bound and identifications. The manuscript asserts bounds for actual evolutions and Duhamel phases (main TeX:3402-3414,2577-2605). This is the same completeness-language mismatch accepted as g6a-W2. The reviewed formulas, controls and numerical coverage totals otherwise support their disclosed scopes."
+    },
+    {
+      "claim": "NO-REGRESSION",
+      "verdict": "FAIL",
+      "reason": "C1 also affects edited Scope and Index sentences: diffs/findings-repair-7bd4c62-338cdba.diff:223-226,288-289 retain whole-result terminology for partial consumers while correcting only the FockForm exception. The other scoped mathematical repairs are supported. Independently parsed scope data have 42 mirrors and no ASCII mismatches; the seven required TeX mirrors preserve their content. The complete changed-file inventory and Lean hunks in diffs/l9-repair-eb253a5-338cdba.diff:187-237,1458-1500 show comment-only Lean changes, not declaration or proof changes."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "C1 — Residual completeness-language mismatch in IntervalScalar and StaticPhaseCauchy. candidate/statement-ledger.md:3190,6881 still calls these sections '(whole result)', repeated for StaticPhaseCauchy at :780-784; the revised Scope at :62-64 singles out only FockForm as the exception. Lean instead assumes 'hsplits : coef = ...' and 'hfixed : ...' in lean/StratonovichHAMSecondMoment/IntervalScalar.lean:1168-1173, and 'hcircle : ...' plus coefficient and convergence inputs in lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean:578-582. TeX asserts the actual evolution coefficient '[s^{2k}] E||U_F^epsilon(T;s)v||^2' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:3405-3407 and the actual Duhamel-phase bound '||Z_n^epsilon(h)||' at :2589-2594. The detailed limitations are accurate but do not cure the prohibited headings, just as for accepted g6a-W2. Fix: rename both headings to identify proof steps/parts of results with supplied analytic inputs, update their Index references, and revise Scope:62-64 so 'whole result' is not the classification of these partial consumers. Retain the genuinely complete E:static-block-series subclaim."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Resolve C1 by replacing the IntervalScalar and StaticPhaseCauchy whole-result headings and corresponding references with accurately scoped proof-step/partial-result descriptions, and make the Scope classification consistent."
+  ],
+  "limitations": [
+    "Complete-reading requirement A was satisfied. Partial-file entries identify scoped contextual reading, not gaps in the mandatory sections, rows or finding-specific declarations.",
+    "The longer merge-plus-repair diff was not read throughout lines 661-1457. The repair-only diff was read completely, and all changed Lean-file hunks in the longer diff were inspected.",
+    "Provenance metadata was consulted, but packet hashes, repository ancestry and historical verification claims were not independently authenticated.",
+    "Proof correctness and compilation were outside this correspondence review; no build was launched. Unrelated modules and findings from other review groups were not comprehensively audited.",
+    "This AI review is not human verification or a novelty audit."
+  ]
+}

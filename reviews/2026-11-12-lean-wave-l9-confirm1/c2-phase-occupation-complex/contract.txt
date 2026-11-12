@@ -1,0 +1,111 @@
+Narrow confirmation review: repairs to the wave-L9 Lean companion ledger, coverage and scope sentences after correspondence review
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+CONTEXT
+Wave L9 of the Lean companion (commit eb253a5022fa) was reviewed for statement
+correspondence with the manuscript; the reports are in prior-reports/.
+Main (aff740933af2: wave L8 with both rounds of its review repairs) was then
+merged in (7bd4c62d9f1f), and the wave-L9 findings were adjudicated
+(adjudication/ADJUDICATION.md) and repaired at commit 338cdba9e552
+(documentation only; no Lean file changed). This packet covers
+the findings of the reviews of PhaseContractions/L9Completed (g2), RawOccupationEnergy/OccupationCeilingExact (g3) and ComplexPhaseScalar (g4): integrability scope, the classification of refutation controls (in-domain, Lean-route-only, totalized/generalization), the phase_block_of_inputs summary, and minors.
+
+PACKET
+- candidate/statement-ledger.md : the ledger at 338cdba9e552 (repaired).
+- lean/coverage.yaml, docs/coverage-scope-tex.yaml, lean/claims.yaml,
+  lean/README.md, lean/FORMALIZATION.md, lean/COMPLETION.md,
+  lean/provenance/manuscript-anchor.json at 338cdba9e552.
+- the earlier review reports whose findings are checked here:
+    prior-reports/g2-report.json
+    prior-reports/g3-report.json
+    prior-reports/g4-report.json
+- adjudication/ADJUDICATION.md : the verdict and the change made for each
+  wave-L9 finding, the merge resolution and the class/count changes. Use
+  its file:line references as hints only; locate the text yourself.
+- diffs/findings-repair-7bd4c62-338cdba.diff : the repair commit alone;
+  diffs/l9-repair-eb253a5-338cdba.diff : everything since the reviewed
+  commit (merge plus repair); prior-eb253a5/... : the docs files at the
+  reviewed commit.
+- tools/mirror_check.py and tools/mirror_check.out : the orchestrator's
+  mirror completeness script and its output at 338cdba9e552 (evidence to
+  verify, not to trust).
+- Lean ground truth: every module under lean/StratonovichHAMSecondMoment/
+  and lean/StratonovichHAMAudit/ at 338cdba9e552; in particular
+    lean/StratonovichHAMSecondMoment/PhaseContractions.lean
+    lean/StratonovichHAMSecondMoment/L9Completed.lean
+    lean/StratonovichHAMSecondMoment/RawOccupationEnergy.lean
+    lean/StratonovichHAMSecondMoment/OccupationCeilingExact.lean
+    lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean
+  and the refutation files under
+    lean/refutations/phase-contractions/
+    lean/refutations/raw-occupation-energy/
+    lean/refutations/occupation-ceiling-exact/
+    lean/refutations/complex-phase-scalar/
+- manuscript/notes/... : all LaTeX inputs at revision a2844206199b;
+  excerpts/tex-excerpts.txt numbers the statements and proofs of the
+  labels concerned (convenience copy; manuscript/ is authoritative).
+- PROVENANCE.json : byte binding of every packet file.
+
+Proof correctness is NOT in question; correspondence is. Decide from the
+Lean and the TeX whether each prior finding is genuinely resolved, whether
+each repair is correct, and whether the repairs added any new overclaim.
+A hypothesis is a side condition the TeX leaves implicit only if the TeX
+implies it; a control that uses Lean's totalized arithmetic or lies
+outside the manuscript's domain is not a manuscript counterexample. Do not
+accept the ledger's or the adjudication's word. A deferral to a later
+Lean wave is acceptable only if the documentation at this commit is
+accurate without it.
+
+CHECKS (exactly these 13, in this order, with these claim strings):
+  1. claim "g2-W1": finding W1 (major) of prior-reports/g2-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  2. claim "g2-W2": finding W2 (major) of prior-reports/g2-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  3. claim "g2-W3": finding W3 (minor) of prior-reports/g2-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  4. claim "g3-W1": finding W1 (major) of prior-reports/g3-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  5. claim "g3-W2": finding W2 (minor) of prior-reports/g3-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  6. claim "g3-W3": finding W3 (minor) of prior-reports/g3-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  7. claim "g3-W4": finding W4 (minor) of prior-reports/g3-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  8. claim "g4-W1": finding W1 (major) of prior-reports/g4-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  9. claim "g4-W2": finding W2 (major) of prior-reports/g4-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  10. claim "g4-W3": finding W3 (minor) of prior-reports/g4-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  11. claim "g4-W4": finding W4 (minor) of prior-reports/g4-report.json is resolved at this commit as its fix specifies, or its rejection or deferral in adjudication/ADJUDICATION.md is justified: the ledger, coverage.yaml, docs/coverage-scope-tex.yaml, claims.yaml, README.md, FORMALIZATION.md and COMPLETION.md now say exactly what the Lean declarations and the TeX at a284420 support, with no new overclaim
+  12. claim "RESCAN": in the ledger sections PhaseContractions (whole result), L9Completed (whole result), RawOccupationEnergy (whole result), OccupationCeilingExact (whole result), ComplexPhaseScalar (whole result) and the coverage rows L:phase-contractions, P:raw-occupation-energy, L:occupation-rayleigh-selection, T:intrinsic-occupation-ceiling, C:intrinsic-spatial-bracket, L:complex-phase, L:interval-complex, no OTHER statement still overclaims in the way the wave-L8 and wave-L9 findings describe ("full lemma", "whole result", "every assertion" or "nothing supplied" for a narrower or input-carrying result; hypotheses called implicit that the TeX does not imply; integrability guarantees broader than the declarations conclude; controls relying on Lean's totalized arithmetic or outside the manuscript's domain described as manuscript counterexamples; counts); check against the Lean files and the TeX
+  13. claim "NO-REGRESSION": every hunk of diffs/findings-repair-7bd4c62-338cdba.diff that touches the sections, rows or files of this packet's scope is correct and introduces no new error or overclaim (conclusion_scope sentences plain English with no Lean names or TeX line numbers, ascii equal to conclusion_scope, the tex the same content, lambda described as the square root of the real Rayleigh supremum wherever described); no Lean declaration, statement or proof changed between eb253a5 and this commit except comments (diffs/l9-repair-eb253a5-338cdba.diff)
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: the prior reports listed above;
+   adjudication/ADJUDICATION.md;
+   diffs/findings-repair-7bd4c62-338cdba.diff;
+   the ledger sections "PhaseContractions (whole result)" (lines 4985-5150), "L9Completed (whole result)" (lines 3592-3645), "RawOccupationEnergy (whole result)" (lines 5403-5511), "OccupationCeilingExact (whole result)" (lines 4475-4584), "ComplexPhaseScalar (whole result)" (lines 1505-1674);
+   the coverage.yaml rows L:phase-contractions, P:raw-occupation-energy, L:occupation-rayleigh-selection, T:intrinsic-occupation-ceiling, C:intrinsic-spatial-bracket, L:complex-phase, L:interval-complex and their docs/coverage-scope-tex.yaml entries;
+   for each finding, the Lean declarations (and comments, and refutation files) and the TeX lines it cites, in the files at this commit;
+   excerpts/tex-excerpts.txt.
+B. Other files: search as needed and read matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 13 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: resolved and correct; PASS_WITH_NOTES: resolved, with a minor
+  wording point reported as a minor finding; PARTIAL: only partly
+  resolved; FAIL: not resolved or a new error; INCONCLUSIVE: not
+  checkable). reason: evidence with file:line.
+- "findings": fatal = misstatement a citing reader would be misled by;
+  major = material imprecision; minor = wording. Each string starts with an
+  ID (C1, C2, ...), names the item, quotes Lean and TeX with file:line,
+  and gives the exact fix.
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "limitations": anything you could not check.
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES;
+  FAIL if any fatal or major finding or required repair; INCONCLUSIVE if
+  the reading requirement could not be met.
+- "confidence": high only if requirement A is complete.

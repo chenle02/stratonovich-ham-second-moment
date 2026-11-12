@@ -1,0 +1,67 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md: partial file; required Scope lines 62-96 and Index lines 1003-1085 completely read. Additional ranges read: 1-130, 3808-3900, 3957-4088, 5430-5465, 7196-7228, 7295-7321, 7550-7599, 7660-7684. Complete heading extraction read at lines 37, 501, 1166, 1179, 1191, 1208, 1220, 1246, 1269, 1278, 1287, 1305, 1326, 1366, 1398, 1421, 1446, 1464, 1477, 1489, 1512, 1529, 1541, 1554, 1571, 1587, 1600, 1811, 1983, 2163, 2343, 2359, 2566, 2676, 2808, 2916, 2972, 3090, 3107, 3128, 3237, 3361, 3382, 3499, 3644, 3702, 3794, 3808, 3901, 3957, 4089, 4264, 4379, 4548, 4696, 4788, 4898, 5007, 5090, 5238, 5298, 5466, 5629, 5718, 5827, 5847, 5965, 6019, 6142, 6247, 6377, 6596, 6648, 6737, 6890, 7085, 7196, 7322, 7468, 7550, 7685, 7870, 8007, 8086, 8259, 8367, 8512, 8631, 8763, 8880, 9038, 9120, 9185.",
+    "lean/FORMALIZATION.md: lines 1-160, complete.",
+    "tools/index_category_check.out: line 1, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/FiniteWick.lean.excerpt.txt: lines 1-360, complete supplied excerpt.",
+    "lean-excerpts/StratonovichHAMSecondMoment/L8Completed.lean.excerpt.txt: lines 1-350, complete supplied excerpt.",
+    "lean-excerpts/StratonovichHAMSecondMoment/LowAlphaConvolution.lean.excerpt.txt: lines 1-374, complete supplied excerpt.",
+    "lean-excerpts/StratonovichHAMSecondMoment/PhaseContractions.lean.excerpt.txt: lines 1-290, complete supplied excerpt.",
+    "lean-excerpts/StratonovichHAMSecondMoment/RemoveMask.lean.excerpt.txt: lines 1-201, complete supplied excerpt.",
+    "lean-excerpts/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean.excerpt.txt: lines 1-384, complete supplied excerpt.",
+    "lean-excerpts/StratonovichHAMSecondMoment/SymplecticFree.lean.excerpt.txt: lines 1-534, complete supplied excerpt.",
+    "lean-excerpts/StratonovichHAMSecondMoment/TerminalWick.lean.excerpt.txt: lines 1-455, complete supplied excerpt.",
+    "lean-excerpts/StratonovichHAMSecondMoment/WaveGreenFourier.lean.excerpt.txt: lines 1-379, complete supplied excerpt.",
+    "lean/coverage.yaml: partial file; required result rows completely read within lines 1-60, 164-290, 367-412, 492-520, 531-561, 672-720, 852-974, 984-1008, 1415-1427, 1466-1490, 1523-1652, 1733-1770; additional full-file label-location search.",
+    "excerpts/tex-excerpts.txt: lines 1-520, complete.",
+    "adjudication/round5-350d191.md: lines 1-89, complete.",
+    "adjudication/round3-d5667f5-split-rule.md: lines 1-131, complete.",
+    "tools/decltable.py: lines 1-77, complete.",
+    "tools/regen_index.py: lines 1-74, complete.",
+    "tools/index_category_check.py: lines 1-117, complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: partial; lines 777-848, 2038-2138, 2288-2310, 2472-2489, 2577-2683, 3576-3748, 4691-4757, 5179-5194.",
+    "manuscript/notes/integrated_spatial_occupation.tex: partial; lines 1-100, 166-250, 300-365.",
+    "manuscript/notes/integrated_symplectic_phase.tex: partial; lines 1-140.",
+    "manuscript/notes/integrated_unmasked_variational.tex: partial; lines 1-24, 168-221, 270-334.",
+    "manuscript/notes/integrated_occupation_ceiling.tex: partial; lines 1-40, 205-307.",
+    "manuscript/notes/integrated_raw_block_lower.tex: partial; lines 535-554."
+  ],
+  "checks": [
+    {
+      "claim": "INDEX-CELLS lines 1003-1085",
+      "verdict": "FAIL",
+      "reason": "The required reading is complete. The principal whole/narrower distinctions, including registered model choice M1 at candidate/statement-ledger.md:1076, are generally supported. However, false input and scope qualifiers remain at lines 1022, 1026, 1048 and 1074, with additional stale declaration-role descriptions identified in K4. The mechanical result at tools/index_category_check.out:1 does not establish semantic correctness: tools/decltable.py:17,44-45 recognizes the exact binder name hmeas but misses hmeas₁ and hmeas₂, which appear in the TerminalWick declarations."
+    },
+    {
+      "claim": "INDEX-MAPPING lines 1003-1085",
+      "verdict": "PASS",
+      "reason": "No incorrect manuscript-label assignment was found independently of the qualifier errors. The declarations correspond to the labelled statements, disclosed narrower parts, or proof ingredients: manuscript/notes/integrated_unmasked_variational.tex:168-221; manuscript/notes/notes_stratonovich_ham_second_moment.tex:2043-2138,2577-2683,3585-3748,4702-4757; manuscript/notes/integrated_symplectic_phase.tex:30-133; and manuscript/notes/integrated_occupation_ceiling.tex:205-300. The historical route explicitly disclosed at ledger line 1057 concerns the finiteness clause of P:spatial-smooth-ratio, although the current manuscript proves that clause differently."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "K1 — TerminalWick input-free claims are false. candidate/statement-ledger.md:1022 groups mixed_moment_mono with two other theorems under 'no named analytic input'; line 1026 repeats that assertion for terminal_wick_mono_paper, contradicting its own earlier measurability disclosure. Lean explicitly requires '(hmeas₁ : ∀ n, AEStronglyMeasurable ...)' and '(hmeas₂ : ∀ n, AEStronglyMeasurable ...)' in lean-excerpts/StratonovichHAMSecondMoment/TerminalWick.lean.excerpt.txt:330-337,450-451 (original Lean lines 523-530,679-680). The comparison wrapper also carries '_hmass' at excerpt line 449. TeX derives, rather than assumes, measurability: 'the product is strongly measurable in L²' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:3657-3659, and states comparison at 3640-3642. Exact fix: split mixed_moment_mono out of row 1022 and name both supplied measurability premises; remove the input-free assertion from row 1026 and explicitly disclose both measurability premises and the carried, unused mass premise.",
+      "K2 — Fixed-cutoff theorem incorrectly described as taking cutoff-removal inputs. candidate/statement-ledger.md:1048 says 'cutoff removals supplied' over static_phase_order_cutoff. Its complete Lean signature takes only the four relevant analytic premises 'hentire', 'hcircle', 'hz' and 'hv', and concludes a bound for z1: lean-excerpts/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean.excerpt.txt:265-273 (original lines 401-409). The actual limit premises 'hband' and 'hgauss' occur in the later theorem at excerpt lines 285-296. TeX likewise first obtains the estimate 'at the cutoffs' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2640-2641, then removes them at 2643-2666. Exact fix: describe row 1048 as the fixed-cutoff estimate with hcircle, hentire, hz and hv supplied, without cutoff-removal assumptions; retain the removal qualifier on row 1049 only.",
+      "K3 — Radial row still combines declarations with different conclusion scopes. candidate/statement-ledger.md:1074 says 'both displays, with V < infinity and integrability' over measure_closedBall_eq and integral_lowKernel. The former concludes only 'μ (closedBall 0 R) = ENNReal.ofReal (R ^ alpha) * specV μ', with no local-finiteness assumption or finiteness/integrability conclusion: lean-excerpts/StratonovichHAMSecondMoment/LowAlphaConvolution.lean.excerpt.txt:191-193. Only integral_lowKernel assumes local finiteness and alpha < 1 and concludes 'specV μ < ⊤ ∧ Integrable ...' at excerpt lines 219-222. TeX contains two separate identities at manuscript/notes/notes_stratonovich_ham_second_moment.tex:4704-4707. Exact fix: split row 1074 into a ball-mass-identity proof-step row and a layer-cake/integrability proof-step row, assigning the finiteness and integrability qualifiers only to the latter.",
+      "K4 — Several inherited captions no longer describe the declarations remaining in their rows. candidate/statement-ledger.md:1035,1038 still say 'general form and exact-hypothesis wrapper', but each lists only its paper wrapper; Lean separates 'theorem compact_product_baseline' and 'theorem compact_young_baseline' from their paper wrappers in lean-excerpts/StratonovichHAMSecondMoment/SymplecticFree.lean.excerpt.txt:404-427,444-477. Their TeX targets are the two displays at manuscript/notes/integrated_symplectic_phase.tex:45-58. Similarly, ledger line 1081 describes Gaussian-density and smoothed-covariance notation over only PhaseCovariance.of_homog, whose conclusion is 'PhaseCovariance alpha Γ μ' at lean-excerpts/StratonovichHAMSecondMoment/PhaseContractions.lean.excerpt.txt:139-140. Lines 1084-1085 claim 'the definition of T_eps' over theorem-only lists; for example, 'theorem lintegral_waveGreen_three' proves a spherical integration identity at that excerpt's lines 209-212, whereas TeX defines T_eps as an oscillatory covariance integral at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2081-2084. Exact fix: describe rows 1035 and 1038 as wrappers only; describe row 1081 solely as the implication from H:homog to the standing covariance class; replace the T_eps-definition captions at 1084-1085 with proof-step descriptions applicable to their actual theorem lists."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "K1: Separate mixed_moment_mono from the input-free row and correct the comparison wrapper's supplied-input description.",
+    "K2: Remove cutoff-removal assumptions from the fixed-cutoff theorem's Index caption.",
+    "K3: Split the radial identity row and assign each declaration its actual conclusion scope.",
+    "K4: Correct the stale wrapper, covariance-class and T_eps-definition captions at lines 1035, 1038, 1081, 1084 and 1085."
+  ],
+  "limitations": [
+    "Requirement A was completed; partial-file entries concern material outside the required ranges, not gaps in required reading.",
+    "The supplied Lean excerpts contain intentional omissions of original source ranges. All supplied excerpt lines were read; omitted implementation and proof bodies were not independently inspected.",
+    "This review concerns documentation correspondence for the specified 83 rows, not proof correctness, package-wide counts, or a complete documentation audit.",
+    "No Lean build, generator execution, network access, or independent provenance-hash verification was performed.",
+    "An AI review is not human verification or a novelty audit."
+  ]
+}

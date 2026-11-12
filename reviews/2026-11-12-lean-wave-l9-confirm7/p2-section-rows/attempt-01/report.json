@@ -1,0 +1,262 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "adjudication/round6-pointer-index.md:1-65 complete.",
+    "prior-reports/h2a-r5-findings-diff-first-half-report.json:1-154 complete; truncated ending reread.",
+    "prior-reports/h2b-r5-findings-diff-second-half-report.json:1-144 complete.",
+    "prior-reports/h3-consistency-l8-report.json:1-72 complete.",
+    "prior-reports/i1-index-505-587-report.json:1-95 complete; reread after truncation.",
+    "prior-reports/i2-index-588-670-report.json:1-77 complete.",
+    "prior-reports/i3-index-671-753-report.json:1-69 complete.",
+    "prior-reports/i4-index-754-836-report.json:1-67 complete.",
+    "prior-reports/i5-index-837-919-report.json:1-60 complete.",
+    "prior-reports/i6-index-920-1002-report.json:1-77 complete; truncated ending reread.",
+    "prior-reports/i7-index-1003-1085-report.json:1-67 complete; truncated beginning reread.",
+    "prior-reports/i8-index-1086-1161-report.json:1-84 complete.",
+    "diffs/docs-a723987-434a7e2.diff:1-34,881-991 partial file; all required hunks outside the Index read completely, including rereading truncated material.",
+    "candidate/statement-ledger.md: partial file; required selections complete. Read 1-115,918-925,1127-1138,1223-1224,1260-1280,1297-1302,1332-1348,1432-1433,1499-1509,1690,1825-1826,1843-1848,1886,1972-1973,1980-1997,2335-2352,2396-2412,2907-3024,3335,3408-3409,3420-3424,3484,3583-3584,3590-3605,3616,3726-3727,3763-3770,3786-3790,4075,4181-4182,4204-4209,4214-4218,4825,4944-4949,4955-4958,4961-4963,5156-5246,5374-5384,5452-5453,5487-5491,5669-5678,5740-5741,5767-5784,5868-5869,5898-5903,6175-6183,6244-6245,6256-6260,6264,6384-6385,6398-6402,6612-6620,6710-6731,6818-6819,6837-6847,7077-7093,7170-7171,7195-7212.",
+    "lean/StratonovichHAMSecondMoment/IndexedCone.lean:74-209,215-364,392-402,426-442,481-493,563-576,621-636,683-696,792-802 partial file; required structures and declaration statements complete. Declaration-location search matches also read.",
+    "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:68,164,320-353,427,431-546 partial file; both required declaration statements complete.",
+    "lean/StratonovichHAMSecondMoment/TerminalWick.lean:510-534,659-688 partial file; both required declaration statements and inherited variables complete.",
+    "lean/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean:1041,1096-1108,1150-1197,1234-1295,1307-1377 partial file; required declaration statements complete.",
+    "lean/StratonovichHAMSecondMoment/FrequencyRow.lean:215-238 partial file; required declaration complete.",
+    "lean/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean:390-413 partial file; required declaration complete.",
+    "lean/StratonovichHAMSecondMoment/LowAlphaConvolution.lean:90-112,138,140-171,220-229,269-288,358-375 partial file; required declarations complete.",
+    "lean/StratonovichHAMSecondMoment/GaussianIBP.lean:243-250,264-273,303-321 partial file; required declaration and inherited probability-space variables complete.",
+    "lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean:75,128-131,201-205,223-238,242-246 partial file; required declaration statements complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean:482-492,576-590 partial file; relevant declaration statements complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean:279-292,313-329 partial file; required declaration complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialBracket.lean:96,370-461 partial file; all three required declaration statements complete.",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean:228-258 partial file; both required completed bracket declarations complete.",
+    "lean/StratonovichHAMSecondMoment/RemoveMask.lean:623-683 partial file; required declaration statement complete.",
+    "lean/StratonovichHAMSecondMoment/ClockCopy.lean:17,669-675,722-740,766-771 partial file; all SpectralHomogeneous-taking declaration statements complete; all SpectralHomogeneous search matches read.",
+    "lean/StratonovichHAMSecondMoment/DampedNorms.lean:22,319-326,357-369 partial file; all SpectralHomogeneous-taking declaration statements complete; all SpectralHomogeneous search matches read.",
+    "lean/StratonovichHAMSecondMoment/SpectralHomog.lean:14,50-95,110-118,225-250 partial file; definition and all SpectralHomogeneous-taking declaration statements complete; all SpectralHomogeneous search matches read.",
+    "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean:256-258,293-295 partial file.",
+    "lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:476-478,495-498,505-508,515-517,896-915 partial file.",
+    "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean:230-233,301-303,315-316,383-386,421-424,460-476 partial file.",
+    "lean/StratonovichHAMSecondMoment/PhaseContractions.lean:158-162,286-292,326-341,406,1086 partial file.",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:344-352 partial file.",
+    "lean/StratonovichHAMAudit/InteractionDriver.lean:87-100 partial file; box_scale statement complete.",
+    "excerpts/tex-excerpts.txt:1-217,352-384,428-513,539-672,710-719,823-874,914-940,996-1137,1201-1305,1375-1430,1501-1642,1708-1791,1951-2000 partial file; required statement/proof selections read completely.",
+    "manuscript/notes/integrated_raw_block_lower.tex:232-335 partial file; required cone statement and proof complete.",
+    "manuscript/notes/integrated_compact_mean_family.tex:33-58,270-286,344-350 partial file.",
+    "manuscript/notes/integrated_radius_anchor.tex:1-28,158-181,247-276,280-330 partial file; required mean-anchor statement and proof complete.",
+    "manuscript/notes/integrated_wave_variance.tex:12-20,132-139 partial file.",
+    "manuscript/notes/integrated_compact_gaussian.tex:98-138 partial file.",
+    "manuscript/notes/integrated_spatial_occupation.tex:4-10,101-164,182-188,262-268,300-348 partial file.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-6,168-221 partial file.",
+    "manuscript/notes/integrated_occupation_ceiling.tex:4-21,205-216,252-300 partial file.",
+    "manuscript/notes/integrated_covariance_foundation.tex:34-52,88-101 partial file.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:225-242,528-532,809-813,851-885,2054-2057,2089-2105,2271-2465,2609-2641,2899-2982,3600-3699,4702-4733,7718-7724,7753-7778,7887-7900 partial file."
+  ],
+  "checks": [
+    {
+      "claim": "ROW GroundFamily.Pi_apply",
+      "verdict": "PASS",
+      "reason": "Ledger:2988 matches IndexedCone.lean:130-145: the supplied G is explicit and the conclusion is exactly Pi_sigma x = ell_sigma(x) \u2022 e_sigma. The unlabelled auxiliary attribution is appropriate; the underlying projection is manuscript/integrated_compact_mean_family.tex:270-273."
+    },
+    {
+      "claim": "ROW GroundFamily.Q_apply",
+      "verdict": "PASS",
+      "reason": "Ledger:2989 correctly discloses G and paraphrases IndexedCone.lean:148. Q = I - Pi agrees with manuscript/notes/integrated_compact_mean_family.tex:272-273."
+    },
+    {
+      "claim": "ROW GroundFamily.decomp",
+      "verdict": "PASS",
+      "reason": "Ledger:2994 matches IndexedCone.lean:171 and discloses G. The cited decomposition appears in manuscript/notes/integrated_raw_block_lower.tex:285-286."
+    },
+    {
+      "claim": "ROW GroundFamily.norm_Q_le",
+      "verdict": "PASS",
+      "reason": "Ledger:2996 matches IndexedCone.lean:181-182, including dependence on G. Attribution to the estimate behind M_Q = 1 + M_P is supported by manuscript/notes/integrated_raw_block_lower.tex:263."
+    },
+    {
+      "claim": "ROW GroundFamily.norm_Pi",
+      "verdict": "PASS",
+      "reason": "Ledger:2997 correctly states IndexedCone.lean:185-186 and names G. It appropriately claims an unlabelled auxiliary norm identity, not an additional manuscript result."
+    },
+    {
+      "claim": "ROW GroundFamily.norm_Pi_sub_le",
+      "verdict": "PASS",
+      "reason": "Both summands and their indices in ledger:2998 agree with IndexedCone.lean:190-191. G is disclosed; the auxiliary continuity role is consistent with manuscript/notes/integrated_compact_mean_family.tex:275-276."
+    },
+    {
+      "claim": "ROW ConeConstants.norm_Q_le",
+      "verdict": "PASS",
+      "reason": "Ledger:3004 states the bound in IndexedCone.lean:290-294 and discloses G and K. M_Q = 1 + M_P is explicitly defined in the section and manuscript/notes/integrated_raw_block_lower.tex:263."
+    },
+    {
+      "claim": "ROW ConeConstants.norm_PQ_le",
+      "verdict": "PASS",
+      "reason": "Ledger:3005 identifies the supplied ConeConstants gap field and G. IndexedCone.lean:298-300 is precisely its vector consequence; the source gap estimate is manuscript/notes/integrated_compact_mean_family.tex:344-348."
+    },
+    {
+      "claim": "ROW ConeConstants.step_ell",
+      "verdict": "PASS",
+      "reason": "Ledger:3006 matches the perturbation inequality in IndexedCone.lean:317-319 and discloses G and K. Its proof-step attribution matches the amplitude estimates at manuscript/notes/integrated_raw_block_lower.tex:288,304."
+    },
+    {
+      "claim": "ROW ConeConstants.step_Q",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:3007 correctly gives the residual perturbation inequality and supplied structures, matching IndexedCone.lean:335-338 and manuscript/notes/integrated_raw_block_lower.tex:289,310. Its shorthand q could optionally be expanded; see P1."
+    },
+    {
+      "claim": "ROW ConeConstants.step_obs",
+      "verdict": "PASS",
+      "reason": "Ledger:3008 correctly identifies the terminal observable perturbation step and supplies G and K. IndexedCone.lean:354-358 implements the unnormalized version of manuscript/notes/integrated_raw_block_lower.tex:324-328."
+    },
+    {
+      "claim": "ROW ConeConstants.rebase",
+      "verdict": "PASS",
+      "reason": "Ledger:3009 accurately identifies IndexedCone.lean:392-396 as rebasing an old-cone state to an adjacent index. G and K are disclosed; the matching manuscript calculation is integrated_raw_block_lower.tex:293-299."
+    },
+    {
+      "claim": "ROW ConeConstants.qB_nonneg",
+      "verdict": "PASS",
+      "reason": "Ledger:3010 matches IndexedCone.lean:426-427. The definition q_B = C_gap exp(-eta_gap B) is manuscript/notes/integrated_raw_block_lower.tex:268; the supplied G/K dependence is no longer hidden."
+    },
+    {
+      "claim": "ROW ConeConstants.entrance",
+      "verdict": "PASS",
+      "reason": "Ledger:3011 correctly states both conclusions of IndexedCone.lean:433-436, including the distinction between K.a and a_*. The specialization and constants match manuscript/notes/integrated_raw_block_lower.tex:287-291."
+    },
+    {
+      "claim": "ROW ConeConstants.block",
+      "verdict": "PASS",
+      "reason": "Ledger:3012 correctly summarizes both conclusions of IndexedCone.lean:481-485 and discloses G/K. The amplitude multiplier and cone preservation match manuscript/notes/integrated_raw_block_lower.tex:300-318."
+    },
+    {
+      "claim": "ROW ConeConstants.terminal",
+      "verdict": "PASS",
+      "reason": "Ledger:3013 matches IndexedCone.lean:563-566, including the K.j/2 constant and its specialization to j_*/2. Attribution is supported by manuscript/notes/integrated_raw_block_lower.tex:320-330."
+    },
+    {
+      "claim": "ROW ConeConstants.chain_cone",
+      "verdict": "PASS",
+      "reason": "Ledger:3014 correctly identifies the induction in IndexedCone.lean:621-630 and names its supplied G/K structures. The manuscript's entrance, repeated-block and terminal combination is integrated_raw_block_lower.tex:285-318,330-332."
+    },
+    {
+      "claim": "ROW ConeConstants.positive_product_of_constants",
+      "verdict": "PASS",
+      "reason": "Ledger:3015 correctly distinguishes the general constant a j/4 from its starred specialization. IndexedCone.lean:683-692 concludes the product inequality and strict positivity; manuscript/notes/integrated_raw_block_lower.tex:243-247,330-332 supplies the matching formula."
+    },
+    {
+      "claim": "ROW exists_coneConstants",
+      "verdict": "PASS",
+      "reason": "Ledger:3021 correctly supplies G, not K. IndexedCone.lean:792-793 constructs K with K.a = G.aStar and K.j = G.jStar. The stated construction order corresponds to manuscript/notes/integrated_raw_block_lower.tex:254-282."
+    },
+    {
+      "claim": "ROW mean_anchor_bound_blocks",
+      "verdict": "PASS",
+      "reason": "Ledger:5238 accurately records the general bound and all four supplied inputs hMC, hMint, hMmom and hXmeas. These occur in RadiusMeanAnchor.lean:326-343; the finite-sum estimate is manuscript/notes/integrated_radius_anchor.tex:307-321."
+    },
+    {
+      "claim": "ROW radius_mean_anchor_paper",
+      "verdict": "PASS",
+      "reason": "Ledger:5243 matches RadiusMeanAnchor.lean:442-486, including integrability, the mean bound, positive decay exponent and limit. Abstract paths and all four inputs are disclosed. Manuscript/notes/integrated_radius_anchor.tex:280-330 supports the attribution; ledger:923 is only a correct cross-reference."
+    },
+    {
+      "claim": "ROW mixed_moment_mono",
+      "verdict": "PASS",
+      "reason": "Ledger:7200 correctly names hmeas\u2081/hmeas\u2082 and summarizes the variance and covariance-comparison premises of TerminalWick.lean:518-530. The comparison and measurability proof steps are manuscript/notes/notes_stratonovich_ham_second_moment.tex:3640-3642,3657-3659,3693-3695."
+    },
+    {
+      "claim": "ROW terminal_wick_mono_paper",
+      "verdict": "PASS",
+      "reason": "Ledger:7210 correctly describes the per-mixed-moment conclusion, supplied measurability, unconstructed finite measures and carried mass premise. These match TerminalWick.lean:669-685 and the manuscript comparison at main TeX:3640-3642,3693-3695; no Wick-formula or series conclusion is attributed to this declaration."
+    },
+    {
+      "claim": "ROW phase_block_of_inputs",
+      "verdict": "PASS",
+      "reason": "Ledger:1505 matches ComplexPhaseScalar.lean:1250-1270, including all six supplied analytic hypotheses and the inverse-root identity hQ'. The constants and ordered block conclusion agree with the proof ingredients at main TeX:2329-2359,2430-2459; the helper remains unlabelled."
+    },
+    {
+      "claim": "ROW one_le_scaleProfile",
+      "verdict": "PASS",
+      "reason": "Ledger:2408 correctly states FrequencyRow.lean:223-224 with no supplied analytic input. The inequality is used in manuscript/notes/integrated_wave_variance.tex:136, whereas E:variance-scale-profile at :12-20 merely defines the profile; the repaired proof-step label is correct."
+    },
+    {
+      "claim": "FLAGGED resolvent_eq_ralpha_paper",
+      "verdict": "PASS",
+      "reason": "Ledger:6718 expressly says proof display, not whole lemma, and matches SpectralMassIdentity.lean:228-232 with no supplied input. Manuscript/notes/integrated_spatial_occupation.tex:152-155 is that calculation. Ledger:5902 instead describes the actual spatial_fourier_bound_paper theorem, whose complete conclusion is SpatialFourierBound.lean:576-585."
+    },
+    {
+      "claim": "FLAGGED static_phase_order_cutoff",
+      "verdict": "PASS",
+      "reason": "Ledger:6842 names exactly the four supplied analytic inputs hentire, hcircle, hz and hv in StaticPhaseCauchy.lean:401-409, not cutoff-removal hypotheses. Its fixed-cutoff attribution matches main TeX:2609-2641."
+    },
+    {
+      "claim": "FLAGGED spatial_static_energy_score_paper_completed",
+      "verdict": "PASS",
+      "reason": "Ledger:6258 correctly states the existential near-score form with no supplied input. SpatialOccupationL7Completed.lean:284-290 has precisely that conclusion and discharges density. The distinction from the manuscript's supremum display at integrated_spatial_occupation.tex:316-322 is explicit."
+    },
+    {
+      "claim": "FLAGGED variational_remove_mask_rates_paper",
+      "verdict": "PASS",
+      "reason": "Ledger:5489 accurately restricts RemoveMask.lean:648-682 to masks and Rayleigh-form rate conclusions, with no RawBlockOriginalLower premise. Manuscript/notes/integrated_unmasked_variational.tex:168-218 separates these rate clauses from the original point-moment lower bound."
+    },
+    {
+      "claim": "FLAGGED spatial_bracket_lower_paper",
+      "verdict": "PASS",
+      "reason": "Ledger:5769 correctly states the existential lower half with no supplied input, matching SpatialBracket.lean:414-418. Its S_2^pos versus C_2 limitation is explicit and consistent with manuscript/notes/integrated_occupation_ceiling.tex:256-260,271-272."
+    },
+    {
+      "claim": "FLAGGED spatial_bracket_lower_sSup_paper",
+      "verdict": "PASS",
+      "reason": "Ledger:5770 correctly retains S1Bdd for the lower supremum inequality in SpatialBracket.lean:437-441. Ledger:3422 correctly records its discharge in L8Completed.lean:232-237. Both match the lower half of integrated_occupation_ceiling.tex:256-260,271-272 without claiming C_2 identification."
+    },
+    {
+      "claim": "FLAGGED spatial_bracket_upper_paper",
+      "verdict": "PASS",
+      "reason": "Ledger:5771 correctly states boundedness and the upper inequality conditional on OccupationCeilingK0, matching SpatialBracket.lean:451-456. Ledger:3423 correctly describes the input-free completed wrapper at L8Completed.lean:245-251. The manuscript upper-bound calculation is integrated_occupation_ceiling.tex:269-271."
+    },
+    {
+      "claim": "FLAGGED measure_closedBall_eq",
+      "verdict": "PASS",
+      "reason": "Ledger:3599 states only the ball-mass identity from spectral homogeneity, matching LowAlphaConvolution.lean:224-226. It does not attach local finiteness or integrability conclusions. The matching manuscript identity is main TeX:4705, with proof at :4719-4723."
+    },
+    {
+      "claim": "FLAGGED integral_lowKernel",
+      "verdict": "PASS",
+      "reason": "Ledger:3603 correctly includes local finiteness, spectral homogeneity, alpha < 1, h > 0, finite V, integrability and the layer-cake value. These match LowAlphaConvolution.lean:273-276 and main TeX:4706-4707,4723-4733."
+    },
+    {
+      "claim": "FLAGGED complex_phase_paper",
+      "verdict": "PASS",
+      "reason": "Ledger:1506 explicitly includes hQ' and its representation identity alongside hCPC/hCPF/hCPH and hJm/hJ. These match ComplexPhaseScalar.lean:1307-1331. Main TeX:2329-2354,2433-2444 supports the supplied-input attribution, and the missing propagator identification remains disclosed."
+    },
+    {
+      "claim": "FLAGGED interval_complex_paper",
+      "verdict": "PASS",
+      "reason": "Ledger:1507 explicitly names hQ', the other inverse-root inputs and all three Crouzeix-Palencia hypotheses. ComplexPhaseScalar.lean:1351-1375 confirms them and the stated conclusions. Main TeX:2929-2944,2959-2964 supplies the corresponding proof ingredients; the block/propagator limitation is retained."
+    },
+    {
+      "claim": "FLAGGED integral_coord_mul_eq_of_growth_paper",
+      "verdict": "PASS",
+      "reason": "Ledger:1994 correctly labels this an integration-by-parts step. GaussianIBP.lean:272,306-315 confirms its probability, Gaussian-law, derivative, continuity and growth premises and its integrability/IBP conclusion. Manuscript/notes/integrated_compact_gaussian.tex:123-126 uses precisely this step, not as the whole matrix proposition."
+    },
+    {
+      "claim": "FLAGGED SpectralHomogeneous-hI",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "All SpectralHomogeneous-taking declarations found in the specified three modules disclose that supplied input in ledger:1267-1270,1272,1277-1278,1299-1300,1334-1336. Signatures are SpectralHomog.lean:66-90,112-114,225-245; DampedNorms.lean:321-323,359-365; ClockCopy.lean:669-672,722-734,766-768. Main TeX:851-852 derives spectral homogeneity. The degree-one row has an optional specialization wording improvement; see P2."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "P1 \u2014 ConeConstants.step_Q notation: candidate/statement-ledger.md:3007 uses an unexplained shorthand 'q'. Lean spells this factor as 'K.Cg * Real.exp (-(K.\u03b7g * t))' (lean/StratonovichHAMSecondMoment/IndexedCone.lean:337); the manuscript uses 'q_B' for its full-block specialization (manuscript/notes/integrated_raw_block_lower.tex:268,310). Optional exact clarification: write 'q(t) = C_gap exp(-eta_gap t)' in the row. The stated inequality and supplied inputs are otherwise correct.",
+      "P2 \u2014 ClockCopy.degree_one specialization: candidate/statement-ledger.md:1334 correctly states 'SpectralHomogeneous mu 1' in its statement cell but uses the generic phrase 'SpectralHomogeneous mu alpha' in its inputs cell. Lean takes '(hI : SpectralHomogeneous \u03bc 1)' (lean/StratonovichHAMSecondMoment/ClockCopy.lean:671), matching the manuscript's 'When alpha=1' specialization (manuscript/notes/notes_stratonovich_ham_second_moment.tex:7774-7776). Optional exact clarification: replace 'mu alpha' by 'mu 1' in that inputs cell."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Requirement A's selected rows, section/table headings, complete declaration statements, cited manuscript passages, prior reports and non-Index diff hunks were read. Files marked partial were not reviewed outside the recorded selections; these omissions are outside the required selections.",
+    "Check 38's universal input-disclosure test was applied to ClockCopy, DampedNorms and SpectralHomog, as specified, not expanded to every module containing spectral-homogeneity notation.",
+    "This is documentation-correspondence review, not proof verification, compilation, a complete pointer-Index audit, or independent authentication of provenance hashes. Mechanical checker outputs were not used as semantic evidence.",
+    "An AI review is neither human verification nor a novelty audit."
+  ]
+}

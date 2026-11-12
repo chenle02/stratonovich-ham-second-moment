@@ -1,0 +1,394 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "medium",
+  "source_coverage": [
+    "adjudication/confirmation-round-338cdba.md:1-27 complete.",
+    "lean/FORMALIZATION.md:1-175 complete.",
+    "lean/coverage.yaml:1-1764 complete; truncated portions were reread.",
+    "excerpts/tex-excerpts.txt:1-1986 complete, in consecutive ranges.",
+    "diffs/docs-338cdba-ba6c565.diff:1-274 complete; truncated portions were reread.",
+    "lean/COMPLETION.md:1-115 partial; later result-inventory rows were not read.",
+    "candidate/statement-ledger.md: partial file. Complete inventory of all '##' headings read. Required whole-section opening prose read at 1298-1393,1681-1825,1861-1994,2040-2048,2056-2141,2263-2323,2505-2566,2669-2727,2787-2796,2804-2815,2825-2897,2934-3007,3058-3067,3079-3146,3399-3456,3491-3499,3505-3577,3598-3641,3652-3748,3782-3891,3957-4044,4072-4180,4241-4346,4389-4447,4481-4567,4591-4663,4700-4751,4783-4892,4931-4975,4991-5107,5157-5234,5320-5372,5409-5488,5518-5529,5656-5696,5710-5785,5833-5903,5938-6031,6068-6195,6287-6328,6339-6407,6428-6547,6581-6700,6776-6873,7159-7194,7376-7489,7561-7651,7697-7759,7776-7887,7949-8014,8057-8158,8202-8281,8321-8418,8453-8532,8728-8776,8810-8852. Initially omitted prose line 8083 and truncated passages were reread.",
+    "candidate/statement-ledger.md: additional continuous ranges 1394-1508,6393-6439,7888-7896; input/scope table matches read at 1858,2038,2932,3149-3150,3153,3160-3163,3165,3169,3176-3179,3181-3192,3582-3583,3585-3586,3591-3596,3644-3650,3779-3780,4385-4387,4469,4583-4584,4588-4589,4690-4698,4898,4900,5133-5135,5139,5143-5144,5151-5152,5154-5155,5516,5826-5827,5831,5912,5933-5936,6035,6285,6335-6336,6566,6570-6572,6575,6577-6578,6731,6733,6745,6762,6771-6772,6774,7493-7494,7672,7690,7771,7923,7932,7934,7936,7939,7943,7945,7947,8198-8199,8312,8315,8319,8421,8435. Required input/narrowing sentence search completed; unrelated table rows remain unread.",
+    "lean/StratonovichHAMSecondMoment/ClockCopy.lean:722-734,766-768 partial.",
+    "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean:53-65,71-72,80-88 partial.",
+    "lean/StratonovichHAMSecondMoment/DampedMultiplier.lean:367-389,460-527 partial.",
+    "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean:669-709 partial.",
+    "lean/StratonovichHAMSecondMoment/DriverParameters.lean:1-51 complete.",
+    "lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean:381-392,1271-1279,1299-1321,1336-1346 partial.",
+    "lean/StratonovichHAMSecondMoment/FiniteWick.lean:690-721 partial; declaration-line inventory also searched.",
+    "lean/StratonovichHAMSecondMoment/FrequencyRow.lean:767-774,787-794 partial.",
+    "lean/StratonovichHAMSecondMoment/GaussianHermite.lean:243-261,450-501 partial; declaration-line inventory also searched.",
+    "lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean:1-132 complete.",
+    "lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean:82-89 partial.",
+    "lean/StratonovichHAMSecondMoment/H1Density.lean:86-94,575-589 partial; declaration-line inventory also searched.",
+    "lean/StratonovichHAMSecondMoment/HermiteFock.lean:597-641 partial; complete declaration-line inventory searched.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-102 partial.",
+    "lean/StratonovichHAMSecondMoment/IndexedCone.lean:83-129,996-1011 partial.",
+    "lean/StratonovichHAMSecondMoment/InventoryProduct.lean:689-694 partial.",
+    "lean/StratonovichHAMSecondMoment/KappaRange.lean:1-43 complete.",
+    "lean/StratonovichHAMSecondMoment/L8Completed.lean:114-115,128-132,140-141,149-154,163-168,176-181,189-193,199-203,210-213,215-228,232-236,245-250,262-280,312-345 partial.",
+    "lean/StratonovichHAMSecondMoment/L9Completed.lean:67-90,96-108,119-126,134-139,150-163,170-183 partial.",
+    "lean/StratonovichHAMSecondMoment/LowAlphaConvolution.lean:575-587 partial.",
+    "lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:161-162,189,195,323-324,749-751,802-804,832-833,932-950 partial.",
+    "lean/StratonovichHAMSecondMoment/MaskedContinuousWave.lean:395-408 partial.",
+    "lean/StratonovichHAMSecondMoment/MaskedModulation.lean:1081-1092,1111-1127 partial.",
+    "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean:339-354 partial.",
+    "lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean:62-69 partial.",
+    "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean:501-516 partial.",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingExact.lean:517-521,748-757,779-785 partial.",
+    "lean/StratonovichHAMSecondMoment/OccupationCeilingFinite.lean:938-941,952-954,965-968,982-987,994-999,1007-1011,1019-1023,1030-1033 partial.",
+    "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean:342-353,434-444 partial.",
+    "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean:133-169,782-803 partial.",
+    "lean/StratonovichHAMSecondMoment/PhaseBessel.lean:256-266 partial.",
+    "lean/StratonovichHAMSecondMoment/PhaseContractions.lean:1070-1082 partial.",
+    "lean/StratonovichHAMSecondMoment/QuotientObstruction.lean:991-996 partial.",
+    "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:442-486 partial.",
+    "lean/StratonovichHAMSecondMoment/RawOccupationEnergy.lean:703-720 partial.",
+    "lean/StratonovichHAMSecondMoment/RayleighTail.lean:178-185 partial.",
+    "lean/StratonovichHAMSecondMoment/SeriesType.lean:89-94 partial; declaration-line inventory also searched.",
+    "lean/StratonovichHAMSecondMoment/SpaceTimePositivity.lean:1073-1085,1103-1108 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialBracket.lean:414-418,437-441,451-456,481-495 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean:1426-1436,1444-1457,1465-1481,1489-1506,1522-1538,1546-1558,1565-1568,1580-1614,1631-1649,1677-1686,1698-1709,1728-1738 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean:68-100,105-124,133-137,145-148,157-161,169-176 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean:85-90,97-101,107-115,122-126,132-139,147-157,163-174,182-192,200-206,217-245,253-265,273-276,284-289,296-300,302-319,323-349,363-374 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:673-677,693-701,720-724,734-738,747-752,763-770 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:1098-1105,1127-1137,1151-1155 partial.",
+    "lean/StratonovichHAMSecondMoment/SpectralMassIdentity.lean:228-232,253-256,272-283 partial.",
+    "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean:470-473,633-643 partial.",
+    "lean/StratonovichHAMSecondMoment/TimeCompletion.lean:1005-1031,1056-1068 partial.",
+    "lean/StratonovichHAMSecondMoment/TypeContinuity.lean:383-389,957-993,1106-1122,1141-1160 partial.",
+    "lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean:223-259,261-277,301-310 partial.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:412-420,438-458 partial.",
+    "lean/StratonovichHAMSecondMoment/VariationalFloor.lean:466-482 partial; declaration-line inventory also searched.",
+    "lean/StratonovichHAMSecondMoment/VariationalMean.lean:612-621,679-691,707-711,720-725 partial.",
+    "lean/StratonovichHAMSecondMoment/VariationalRate.lean:739-759,781-802,817-823 partial.",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean:400-405 partial.",
+    "lean/StratonovichHAMSecondMoment/WaveGreenFourier.lean:721-727 partial.",
+    "lean/StratonovichHAMSecondMoment/WhiteClockLaplace.lean:433-447 partial.",
+    "lean/StratonovichHAMSecondMoment/WhiteRelativeWidth.lean:215-218 partial.",
+    "lean/StratonovichHAMSecondMoment/TerminalWick.lean:618-642,669-683 partial.",
+    "lean/StratonovichHAMSecondMoment/TimeSchur.lean:321-326 partial.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:803-848,1805-1814,2472-2489,2515-2526,2531-2553,3600-3645,3703-3727,7222-7234,7516-7528,7574-7593 partial.",
+    "manuscript/notes/integrated_covariance_foundation.tex:88-100 partial.",
+    "manuscript/notes/integrated_gaussian_tubes.tex:458-468 partial.",
+    "manuscript/notes/integrated_unmasked_variational.tex:64-74,98-111,225-238,270-284 partial.",
+    "manuscript/notes/integrated_spatial_occupation.tex:219-237,262-268,300-325,381-414 partial.",
+    "manuscript/notes/integrated_occupation_ceiling.tex:22-42,92-112,149-157,205-220,252-266 partial.",
+    "manuscript/notes/integrated_intrinsic_constant.tex:22-39 partial."
+  ],
+  "checks": [
+    {
+      "claim": "WHOLE ClockCopy",
+      "verdict": "PASS",
+      "reason": "Its main result P:clock-copy-obstruction is fully bundled, including positivity, integrability, strict loss and the degree-one identity: ClockCopy.lean:722-734 and ClockCopyHomog.lean:53-65. The secondary damped-norm contribution is explicitly identified as a finiteness slice at candidate/statement-ledger.md:1300-1305."
+    },
+    {
+      "claim": "WHOLE DampedMultiplier",
+      "verdict": "FAIL",
+      "reason": "The covariance-smoothing assertion remains absent, not merely supplied: candidate/statement-ledger.md:1692-1704; DampedMultiplier.lean:486 only proves multiplier membership, whereas manuscript/notes/notes_stratonovich_ham_second_moment.tex:845-846 identifies actual smoothing as producing that multiplier."
+    },
+    {
+      "claim": "WHOLE DampedNormsHomog",
+      "verdict": "FAIL",
+      "reason": "The wrapper at DampedNormsHomog.lean:669-692 lacks the comparison lower bounds and smoothing assertions. Other modules add lower bounds, but the covariance-smoothing conclusion remains unformalized: candidate/statement-ledger.md:1917-1926 and lean/coverage.yaml:235-238."
+    },
+    {
+      "claim": "WHOLE DriverParameters",
+      "verdict": "PASS",
+      "reason": "DriverParameters.lean:44-49 proves simultaneous nonemptiness of all three intervals; HomogHypothesis.lean:99-102 reinstates the full standing hypothesis. This matches excerpts/tex-excerpts.txt:1140-1146."
+    },
+    {
+      "claim": "WHOLE FiniteGaussianMatrix",
+      "verdict": "PASS",
+      "reason": "The trace bounds, both matrix bounds, p=2 equality and counterexamples are present at FiniteGaussianMatrix.lean:381-392,1299-1321,1336-1346, matching excerpts/tex-excerpts.txt:1035-1127."
+    },
+    {
+      "claim": "WHOLE FiniteWick",
+      "verdict": "FAIL",
+      "reason": "This is a foundation for the finite-value Wick step, not the whole labelled terminal-chain lemma. FiniteWick.lean:690-710 concerns finite products; the TeX also concludes chain-integral existence, bounds and series convergence at main manuscript:3607-3644. The ledger itself distinguishes these at :2265-2273,2319-2320."
+    },
+    {
+      "claim": "WHOLE FrequencyRow",
+      "verdict": "PASS",
+      "reason": "FrequencyRow.lean:767-794 supplies both results with constants quantified before dimension and measure, and includes row integrability. The statements match excerpts/tex-excerpts.txt:959-992."
+    },
+    {
+      "claim": "WHOLE GaussianHermite",
+      "verdict": "FAIL",
+      "reason": "GaussianHermite.lean:243-259,480-481 supplies orthogonality, recurrence and polynomial spanning. These are proof steps, not the whole Fock, cutoff or mild-construction results; see main manuscript:2472-2489,2531-2553 and candidate/statement-ledger.md:2671-2682."
+    },
+    {
+      "claim": "WHOLE GaussianScalarPowers",
+      "verdict": "PASS",
+      "reason": "All four conclusions occur at GaussianScalarPowers.lean:29-31,37-39,66-70,91-94, including integrability in the expectation statement; compare excerpts/tex-excerpts.txt:1019-1033."
+    },
+    {
+      "claim": "WHOLE GramScalarAlgebra",
+      "verdict": "PASS",
+      "reason": "GramScalarAlgebra.lean:82-89 bundles all three scalar/Hilbert identities with the stated Gram interpretation, matching excerpts/tex-excerpts.txt:1747-1759."
+    },
+    {
+      "claim": "WHOLE H1Density",
+      "verdict": "FAIL",
+      "reason": "H1Density.lean:86-91,575 proves density, a sentence inside the proof at manuscript/notes/integrated_spatial_occupation.tex:262-266. It does not prove either labelled proposition whose proof uses density; the section explicitly calls itself a foundation at ledger:2827-2840."
+    },
+    {
+      "claim": "WHOLE HermiteFock",
+      "verdict": "FAIL",
+      "reason": "HermiteFock.lean:597-620 proves an abstract finite Fock bound conditional on a column inequality. That is the Fock half of the proof, not the full spatial/operator conclusion in main manuscript:2472-2489; ledger:2936-2944 expressly says so."
+    },
+    {
+      "claim": "WHOLE HomogHypothesis",
+      "verdict": "PASS",
+      "reason": "HomogHypothesis.lean:33-80 encodes the covariance hypothesis, including convention, scaling and parameter ranges; :91-102 gives the two numerical consequences. Compare excerpts/tex-excerpts.txt:29-46."
+    },
+    {
+      "claim": "WHOLE IndexedCone",
+      "verdict": "PASS",
+      "reason": "IndexedCone.lean:996-1011 proves the complete quantified product bound and positive constant. GroundFamily is explicitly supplied and documented at :83-126 and ledger:3090-3145; its fields are the named upstream conclusions, rather than the cone conclusion itself."
+    },
+    {
+      "claim": "WHOLE InventoryProduct",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:689-694 proves the actual coefficient bound with one positive constant independent of M and k, matching excerpts/tex-excerpts.txt:362-375."
+    },
+    {
+      "claim": "WHOLE KappaRange",
+      "verdict": "PASS",
+      "reason": "KappaRange.lean:22-41 proves both strict inequalities under the numerical assumptions, with the full-hypothesis wrapper at HomogHypothesis.lean:91-93."
+    },
+    {
+      "claim": "WHOLE L8Completed",
+      "verdict": "FAIL",
+      "reason": "Discharging inputs does not complete missing conclusions. L8Completed.lean:128-154 uses K0*Rsp, :262-280 brackets a score supremum rather than C2, and :312-345 does not include the final B1 conclusion of the uniform-tail lemma. Compare occupation-ceiling TeX:205-220,252-266 and main TeX:3725-3726."
+    },
+    {
+      "claim": "WHOLE L9Completed",
+      "verdict": "PASS",
+      "reason": "L9Completed.lean:96-108 and :150-183 reproduce both complete contraction results without the abstract Fourier/Archimedes inputs, discharged at :75-83. The dimension distinction is correct: low-alpha d=1,2,3; phase d=3."
+    },
+    {
+      "claim": "WHOLE LowAlphaConvolution",
+      "verdict": "PASS",
+      "reason": "LowAlphaConvolution.lean:575-587 includes radial mass, integral identity and the uniform convolution bound; L9Completed.lean:96-108 discharges GreenFourier for every admissible dimension. Compare excerpts/tex-excerpts.txt:486-501."
+    },
+    {
+      "claim": "WHOLE MaskedAuxiliaryNorm",
+      "verdict": "FAIL",
+      "reason": "MaskedAuxiliaryNorm.lean:932-950 handles complex H only. The real-H complexification clause at manuscript/notes/integrated_covariance_foundation.tex:99 is expressly unformalized at ledger:3867-3871."
+    },
+    {
+      "claim": "WHOLE MaskedContinuousWave",
+      "verdict": "PASS",
+      "reason": "MaskedContinuousWave.lean:395-408 proves membership and the exact bound with disclosed hmem/hnorm. MaskedContinuousWaveCompleted.lean:62-69 removes both for the concrete completion, matching excerpts/tex-excerpts.txt:897-910."
+    },
+    {
+      "claim": "WHOLE MaskedModulation",
+      "verdict": "PASS",
+      "reason": "MaskedModulation.lean:1081-1092 proves the stronger absolute double-integral bound with the stated constant; :1111-1127 bridges the trig bound. TimeCompletion.lean:1018-1027,1056-1068 identifies the concrete norm and discharges the remaining inputs."
+    },
+    {
+      "claim": "WHOLE MaskedSpectralGrowth",
+      "verdict": "PASS",
+      "reason": "MaskedSpectralGrowth.lean:501-516 contains positivity/finiteness, the transform and both ball bounds of its main proposition. Compare excerpts/tex-excerpts.txt:783-802; its additional homogeneity work is disclosed as a bridge."
+    },
+    {
+      "claim": "WHOLE MaskedTrigProducts",
+      "verdict": "PASS",
+      "reason": "The disclosed hmem/hmod in MaskedTrigProducts.lean:339-354 are discharged through MaskedModulation and TimeCompletion.lean:1056-1068, yielding all choices and the manuscript constant."
+    },
+    {
+      "claim": "WHOLE OccupationCeilingExact",
+      "verdict": "FAIL",
+      "reason": "OccupationCeilingExact.lean:748-757 proves the exact variational ceiling, but not the moment conclusion C2<=U2 at manuscript/notes/integrated_occupation_ceiling.tex:217. Its comparison :779-785 likewise concerns the score supremum, not C2."
+    },
+    {
+      "claim": "WHOLE OccupationCeilingFinite",
+      "verdict": "FAIL",
+      "reason": "OccupationCeilingFinite.lean:938-968 gives a larger ceiling using K0*Rsp rather than Cocc; the energy form and moment conclusion are absent. L8Completed removes SpaceTimeCS, not these differences. Compare occupation-ceiling TeX:209-217."
+    },
+    {
+      "claim": "WHOLE OccupationKernelRow",
+      "verdict": "PASS",
+      "reason": "OccupationKernelRow.lean:342-353 and :434-444 contain the kernel properties, exact maximum, representative independence and null/convergence transfer. These match excerpts/tex-excerpts.txt:1504-1514,1633-1641."
+    },
+    {
+      "claim": "WHOLE OccupationPhysicalClass",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The quantitative conclusions and SquarePairingBounds discharge are present at OccupationPhysicalClass.lean:782-803 and SpatialOccupationL7Completed.lean:323-374. However, the bridge from strongly H1-measurable fields to IsOccField is unformalized; compare the latter's :154-158 with spatial-occupation TeX:381-414. I do not certify the whole-class correspondence from this packet alone."
+    },
+    {
+      "claim": "WHOLE PhaseBessel",
+      "verdict": "PASS",
+      "reason": "PhaseBessel.lean:256-266 includes both conjugation versions and Bochner integrability under the manuscript hypotheses; compare excerpts/tex-excerpts.txt:994-1004."
+    },
+    {
+      "claim": "WHOLE PhaseContractions",
+      "verdict": "PASS",
+      "reason": "PhaseContractions.lean:1070-1082 contains both bounds and the Fourier identity. The two disclosed inputs are discharged at L9Completed.lean:75-83,150-163; the result remains correctly three-dimensional."
+    },
+    {
+      "claim": "WHOLE QuotientObstruction",
+      "verdict": "PASS",
+      "reason": "QuotientObstruction.lean:991-996 proves admissibility, nonzero covariance and existence of the obstructing mask. Reading variance as the covariance functional is explicitly disclosed at ledger:5181-5189, consistent with excerpts/tex-excerpts.txt:860-867."
+    },
+    {
+      "claim": "WHOLE RadiusMeanAnchor",
+      "verdict": "PASS",
+      "reason": "RadiusMeanAnchor.lean:442-486 proves the mean estimate, positive exponent, radius substitution and decay limit. The unstopped moment and measurability inputs are explicit at :459-469 and ledger:5346-5359; compare excerpts/tex-excerpts.txt:1673-1699."
+    },
+    {
+      "claim": "WHOLE RawOccupationEnergy",
+      "verdict": "INCONCLUSIVE",
+      "reason": "RawOccupationEnergy.lean:703-720 contains every displayed algebraic and dilation conclusion over IsOccField. Equality of that modelled occupation class with the TeX class is not formalized, as ledger:5466-5474 records; this affects the meanings of both suprema."
+    },
+    {
+      "claim": "WHOLE RayleighTail",
+      "verdict": "FAIL",
+      "reason": "RayleighTail.lean:178-185 proves the scalar tail estimate and finite head only. The labelled lemma additionally asserts finiteness of the operator-moment bound at manuscript/notes/integrated_gaussian_tubes.tex:466-467; ledger:5526-5528 confirms that application is absent."
+    },
+    {
+      "claim": "WHOLE SeriesType",
+      "verdict": "FAIL",
+      "reason": "SeriesType.lean:89-91 is an elementary series estimate, not the coefficient/type equivalence of L:positive-series-type in main TeX:7222-7234. The latter is proved in TypeContinuity.lean:383-389. Ledger:5658-5662 identifies SeriesType as inline foundations."
+    },
+    {
+      "claim": "WHOLE SpaceTimePositivity",
+      "verdict": "FAIL",
+      "reason": "SpaceTimePositivity.lean:1073-1085,1103-1108 proves integral identities for continuous compact fields. It does not construct Q, rho_g, J_G or the mean map required by occupation-ceiling TeX:23-42 and intrinsic-constant TeX:22-39."
+    },
+    {
+      "claim": "WHOLE SpatialBracket",
+      "verdict": "FAIL",
+      "reason": "SpatialBracket.lean:481-495 brackets sSup(scoreSet ... 2), and uses energyValue(K0*Rsp). The TeX brackets C2 and compares the actual occupation energy at occupation-ceiling:257-264. Neither L8 completion nor the exact comparison supplies the missing C2 identification."
+    },
+    {
+      "claim": "WHOLE SpatialFourierBound",
+      "verdict": "PASS",
+      "reason": "The constant conversion is discharged, not assumed: SpectralMassIdentity.lean:228-232,272-283 gives the entire spatial Fourier lemma with Ralpha, including b>0 and genuine integrals. Compare excerpts/tex-excerpts.txt:1538-1549."
+    },
+    {
+      "claim": "WHOLE SpatialFourLinear",
+      "verdict": "INCONCLUSIVE",
+      "reason": "Density is discharged and the square, four-linear, positivity and ratio conclusions appear at SpatialOccupationL7Completed.lean:122-276. Sequential continuity is mathematically appropriate for H1, but the whole energy-score correspondence still uses the unbridged rate/cost interpretation recorded at ledger:6167-6169."
+    },
+    {
+      "claim": "WHOLE SpatialOccupationCompleted",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The named floor and StaticControls inputs are genuinely discharged at SpatialOccupationCompleted.lean:73-81,109-124. The remaining correspondence boundary is the identification of the Rayleigh/integral quantities with the manuscript's rate and variance, explicitly left outside Lean at ledger:6320-6324."
+    },
+    {
+      "claim": "WHOLE SpatialOccupationL7Completed",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The density and square-pairing discharges are present, and manuscript constants are restored at :363-374. The occupation-class bridge and rate/cost identifications remain outside the formalization: ledger:6396-6405. Completion of named inputs alone does not settle those semantic correspondences."
+    },
+    {
+      "claim": "WHOLE SpatialSmoothRatio",
+      "verdict": "INCONCLUSIVE",
+      "reason": "The ratio and score conclusions are present after the documented completions: SpatialSmoothRatio.lean:693-770; L8Completed.lean:189-203. Whether that proves the manuscript result rather than its integral/Rayleigh reformulation depends on the unformalized identifications at ledger:6498-6501."
+    },
+    {
+      "claim": "WHOLE SpatialStaticControls",
+      "verdict": "INCONCLUSIVE",
+      "reason": "Both parts, including the supremum score form, are supplied by SpatialOccupationCompleted.lean:93-100 and L8Completed.lean:176-181. The rate/cost correspondence boundary at ledger:6600-6604,6772-6774 remains unbridged; I do not treat an equivalent-looking reformulation as verified correspondence without that identification."
+    },
+    {
+      "claim": "WHOLE SpectralMassIdentity",
+      "verdict": "PASS",
+      "reason": "SpectralMassIdentity.lean:228-232,272-283 proves the resolvent identity and the full spatial Fourier lemma with its printed constant. The extra phase usage is a disclosed application, not a claim to prove phase contractions here."
+    },
+    {
+      "claim": "WHOLE TemporalEquilibrium",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:470-473,633-643 includes the Gamma/Beta identities, positivity, both Lp memberships, all endpoint potentials and the exact positive mass; compare excerpts/tex-excerpts.txt:1459-1490."
+    },
+    {
+      "claim": "WHOLE TimeCompletion",
+      "verdict": "PASS",
+      "reason": "TimeCompletion.lean:1005-1031 contains all completion clauses, including density of the complexified real tests, and :1056-1068 gives the concrete trig result. The continuous-wave completion is at its companion :62-69."
+    },
+    {
+      "claim": "WHOLE TypeContinuity",
+      "verdict": "PASS",
+      "reason": "TypeContinuity.lean:383-389,1106-1122,1141-1160 contains every stated conclusion. All analytic inputs are named in :957-976 and disclosed individually at ledger:7604-7620; they do not assume the log-convexity or continuity conclusions."
+    },
+    {
+      "claim": "WHOLE UniformSeriesTail",
+      "verdict": "PASS",
+      "reason": "UniformSeriesTail.lean:261-277 and :301-310 together prove all conclusions, including the final B1 bound. TerminalWickInput has exactly the two disclosed upstream facts at :229-238; the joint regularization limit is explicit."
+    },
+    {
+      "claim": "WHOLE VariationalDilation",
+      "verdict": "INCONCLUSIVE",
+      "reason": "VariationalDilation.lean:412-420 proves the bijection and four identities for its definitions; :438-458 only transfers genuineness conditions. The spectral-rate and stochastic-variance identifications are not formalized or supplied as named hypotheses, as ledger:7807-7817,7846-7850 records."
+    },
+    {
+      "claim": "WHOLE VariationalFloor",
+      "verdict": "FAIL",
+      "reason": "VariationalFloor.lean:466-472 proves a positivity floor for a Rayleigh set, not the operator, regularity and integrated-rate conclusions of P:variational-unmasked-rate at unmasked-variational TeX:98-111. Ledger:7951-7958 calls it a foundation with no labelled result of its own."
+    },
+    {
+      "claim": "WHOLE VariationalMean",
+      "verdict": "FAIL",
+      "reason": "The heat-envelope lemma is complete, but VariationalMean.lean:679-711 proves bounds and Lipschitz properties only. The mixed-derivative conclusion at unmasked-variational TeX:66-67 is missing, explicitly acknowledged at ledger:8135-8141."
+    },
+    {
+      "claim": "WHOLE VariationalRate",
+      "verdict": "FAIL",
+      "reason": "VariationalRate.lean:739-759 omits the operator half of P:variational-unmasked-rate; :781-823 and L8Completed.lean:163-168 omit Q2>=S2pos from P:variational-positive-scores. These are conclusions in unmasked-variational TeX:100-107,279, not undisclosed upstream inputs."
+    },
+    {
+      "claim": "WHOLE WaveGreen",
+      "verdict": "FAIL",
+      "reason": "The Green-measure facts are proved, but the labelled damped-norm result remains incomplete even after its companion wrappers: ledger:8323-8329,8411-8417 records the absent covariance-smoothing identification. Green masses and scaling alone also do not prove L:higher-riesz."
+    },
+    {
+      "claim": "WHOLE WaveGreenFourier",
+      "verdict": "FAIL",
+      "reason": "WaveGreenFourier.lean:721-727 proves the Fourier/mass display used in proofs; ledger:8455-8465,8491-8499 describes only the Green-smoothing part of the damped lemma. It does not itself prove the labelled contraction lemmas or the full damped result."
+    },
+    {
+      "claim": "WHOLE WhiteClockLaplace",
+      "verdict": "PASS",
+      "reason": "WhiteClockLaplace.lean:433-447 includes both transforms, the diagonal specialization and integrability. Positive self-damping parameters are explicitly disclosed at ledger:8740-8744 and are necessary convergence conditions."
+    },
+    {
+      "claim": "WHOLE WhiteRelativeWidth",
+      "verdict": "PASS",
+      "reason": "WhiteRelativeWidth.lean:215-218 proves exactly the formula ratio, upper bound and equality case of excerpts/tex-excerpts.txt:1976-1985. It does not claim the separate moment bounds."
+    },
+    {
+      "claim": "CLASSIFICATION-CONSISTENCY",
+      "verdict": "FAIL",
+      "reason": "The nine renamed headings agree with the explicit partial-module list, but the classification still calls 47 results 'Whole labelled result' while acknowledging seventeen narrower conclusions at FORMALIZATION.md:80. Proven omissions and proof-step foundations still retain whole headings; same-assumptions is not equivalent to every conclusion proved."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "R1 Damped-family headings overstate completion. Lean DampedMultiplier.lean:486 states 'IsMultiplier (gaussMult ...)', whereas main manuscript:845-846 says 'Spatial Gaussian smoothing ... give multipliers in this class'. Ledger:1703-1704 explicitly leaves the spectral identification unformalized. Rename DampedMultiplier and DampedNormsHomog as scoped/partial results, and WaveGreen/WaveGreenFourier as foundations or specified partial results; do not present their combination as the whole labelled lemma without the missing conclusion.",
+      "R2 MaskedAuxiliaryNorm omits a stated case. Lean MaskedAuxiliaryNorm.lean:934 requires 'InnerProductSpace ℂ H'; covariance-foundation TeX:99 additionally states 'For a real H, the same assertion holds after complexification'. Rename the heading to identify the complex-H case only, or supply the missing case before retaining 'whole result'.",
+      "R3 Occupation ceilings and bracket are not whole manuscript results. Lean OccupationCeilingExact.lean:754 bounds 'sSup (scoreSet ...)' and L8Completed.lean:153-154 uses 'K0 ... * Rsp'; occupation-ceiling TeX:212 uses C_occ and :217 additionally concludes 'C_2 ... <= U_2'. The bracket similarly uses C_2 at TeX:257-264, not just the score supremum. Rename OccupationCeilingExact, OccupationCeilingFinite, SpatialBracket and the mixed L8Completed heading to their actual scopes. A complete uniform-tail component does not make L8Completed's other results whole.",
+      "R4 SpaceTimePositivity is a partial integral-form foundation. Lean SpaceTimePositivity.lean:1106-1108 concludes integrability and 'stForm ... = rawCost ...'; intrinsic-constant TeX:24-35 additionally constructs J_G and identifies the uniform mean, while occupation-ceiling TeX:25-36 constructs Q and rho_g. Rename its heading as integral-form parts/foundations, not a whole result.",
+      "R5 VariationalMean and VariationalRate omit explicit conclusions. Lean VariationalMean.lean:682-691 gives bounds, continuity and integrability, not 'Every mixed time and space derivative' in unmasked-variational TeX:66-67. Lean VariationalRate.lean:742-759 concerns a Rayleigh supremum, omitting the self-adjoint operator assertion at TeX:100-102; its score wrappers omit 'Q_2 >= S_2^pos' at TeX:279. Rename both headings to identify these partial results, and classify them accordingly.",
+      "R6 RayleighTail omits the labelled lemma's application. Lean RayleighTail.lean:182-185 states scalar tail and head integrability; gaussian-tubes TeX:466-467 additionally asserts that the operator-moment bound is finite. Rename the heading to 'scalar estimate, application not formalized', or formalize that application.",
+      "R7 Foundations retain misleading whole-labelled-result headings. FiniteWick.lean:690-694 proves a finite-product Wick identity, whereas main TeX:3607-3644 includes chain integrals and convergence. GaussianHermite.lean:258-259 proves a recurrence used in main TeX:2515-2524; HermiteFock.lean:614-620 proves its abstract Fock step. H1Density.lean:575 proves the density sentence inside spatial-occupation TeX:262-266. SeriesType.lean:89-91 is not the type equivalence at main TeX:7222-7234. VariationalFloor.lean:466-472 is not the full proposition at unmasked-variational TeX:98-111. Rename these six headings as foundations/proof steps, retaining precise statements of the facts actually proved.",
+      "R8 Classification conflates assumptions with conclusion coverage. FORMALIZATION.md:80 says 'Whole labelled result, nothing supplied' while enumerating omitted conclusions; its :122,134 also counts foundations there. For example, Lean OccupationCeilingExact.lean:748-757 lacks the moment sentence in occupation-ceiling TeX:217. Split full conclusions, narrower/partial conclusions and foundations into distinct categories, update the ledger Scope and affected headings, and reconcile the summary wording with coverage.yaml's weaker rows. The existing nine-heading repair is insufficient."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Replace the unsupported whole-result headings identified in R1-R7 with headings naming the precise partial result, special case or foundation actually proved, unless the missing conclusions are supplied by a verified, explicitly documented completion.",
+    "Revise FORMALIZATION.md's classification and the ledger Scope so that narrower conclusions and proof-step foundations are not counted as whole labelled results; keep assumption coverage separate from conclusion coverage.",
+    "Preserve the existing disclosures of omitted conclusions, supplied inputs and dimension restrictions when making those classification repairs."
+  ],
+  "limitations": [
+    "The required adjudication, heading inventory, whole-section opening/scope prose, classification paragraphs, relevant coverage rows, supplied-input paper wrappers and complete TeX excerpt file were read. Files marked partial contain unread material outside those required selections.",
+    "Eight correspondence checks remain inconclusive because the packet records unformalized bridges between occupation-class representations or between integral/Rayleigh definitions and manuscript stochastic/spectral quantities. Equivalent mathematical representations should not automatically be called special cases, but their equivalence was not certified here.",
+    "The FAIL verdict does not depend on those inconclusive checks: explicit omitted conclusions and proof-step-only headings independently block acceptance.",
+    "Proof correctness was outside scope; no Lean build, kernel replay, network access or byte-hash verification was performed.",
+    "This is an AI correspondence review, not human verification or a novelty audit."
+  ]
+}

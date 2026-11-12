@@ -1,0 +1,75 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate/statement-ledger.md: partial file; read lines 1-115, 829-907, 909-936, 1235-1257, 1287-1299, 1557-1573, 2421-2552, 3553-3833, 4533-4544, 5043-5055, 5463-5476, 6941-6975. Required Scope and Index ranges complete.",
+    "candidate/statement-ledger.md: complete heading inventory read at lines 37, 501, 912, 925, 937, 954, 966, 992, 1015, 1024, 1033, 1051, 1072, 1112, 1144, 1167, 1192, 1210, 1223, 1235, 1258, 1275, 1287, 1300, 1317, 1333, 1346, 1557, 1729, 1909, 2088, 2104, 2311, 2421, 2553, 2661, 2717, 2835, 2852, 2873, 2982, 3106, 3127, 3244, 3389, 3447, 3539, 3553, 3646, 3702, 3834, 4009, 4124, 4293, 4441, 4533, 4643, 4752, 4835, 4983, 5043, 5211, 5374, 5463, 5572, 5592, 5710, 5764, 5887, 5992, 6122, 6341, 6393, 6482, 6635, 6830, 6941, 7067, 7213, 7295, 7430, 7615, 7751, 7830, 8003, 8111, 8256, 8375, 8507, 8624, 8782, 8864, 8929.",
+    "lean/FORMALIZATION.md: lines 1-160, complete.",
+    "tools/index_category_check.out: line 1, complete.",
+    "adjudication/round3-d5667f5-split-rule.md: lines 1-131, complete.",
+    "adjudication/round4-e2c50b5.md: lines 1-108, complete.",
+    "lean/coverage.yaml: partial file; read lines 1-305, 335-412, 461-520, 531-570, 641-728, 855-880, 933-975, 984-1017, 1320-1343, 1428-1498, 1523-1648, 1733-1781, and the label-field index. Required coverage rows complete; equation labels without standalone rows were checked through their parent results.",
+    "excerpts/tex-excerpts.txt: lines 1-633, complete.",
+    "lean-excerpts/StratonovichHAMAudit/DirectEvent.lean.excerpt.txt: lines 1-27, complete.",
+    "lean-excerpts/StratonovichHAMAudit/HermiteWordFock.lean.excerpt.txt: lines 1-48, complete.",
+    "lean-excerpts/StratonovichHAMAudit/InteractionDriver.lean.excerpt.txt: lines 1-21, complete.",
+    "lean-excerpts/StratonovichHAMAudit/JointTilt.lean.excerpt.txt: lines 1-23, complete.",
+    "lean-excerpts/StratonovichHAMAudit/RawValueCeiling.lean.excerpt.txt: lines 1-14, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/ComplexPhaseScalar.lean.excerpt.txt: lines 1-744, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/FockForm.lean.excerpt.txt: lines 1-371, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/GaussianHermite.lean.excerpt.txt: lines 1-336, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/HermiteFock.lean.excerpt.txt: lines 1-362, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/L8Completed.lean.excerpt.txt: lines 1-350, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/L9Completed.lean.excerpt.txt: lines 1-173, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/LowAlphaConvolution.lean.excerpt.txt: lines 1-374, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/OccupationCeilingExact.lean.excerpt.txt: lines 1-277, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/PhaseContractions.lean.excerpt.txt: lines 1-511, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/RawOccupationEnergy.lean.excerpt.txt: lines 1-320, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/StaticPhaseCauchy.lean.excerpt.txt: lines 1-384, complete.",
+    "lean-excerpts/StratonovichHAMSecondMoment/WaveGreenFourier.lean.excerpt.txt: lines 1-379, complete.",
+    "lean/StratonovichHAMAudit/AllAlphaMoment.lean: lines 1-29, complete.",
+    "lean/StratonovichHAMAudit/DampedLower.lean: lines 1-34, complete.",
+    "lean/StratonovichHAMAudit/GlobalOmega.lean: lines 1-144, complete.",
+    "lean/StratonovichHAMAudit/LocalFlow.lean: lines 1-51, complete.",
+    "lean/StratonovichHAMAudit/MiddleCross.lean: lines 1-192, complete.",
+    "lean/StratonovichHAMAudit/OccupationForm.lean: lines 1-23, complete.",
+    "lean/StratonovichHAMAudit/PhaseResponse.lean: lines 1-67, complete.",
+    "lean/StratonovichHAMAudit/ProjectionResidual.lean: lines 1-28, complete.",
+    "lean/StratonovichHAMAudit/TerminalCross.lean: lines 1-113, complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: partial; read lines 776-778, 803-919, 1773-1820, 2041-2140, 2270-2468, 2472-2683, 2828-2982, 3600-3748, 4691-4757.",
+    "manuscript/notes/integrated_occupation_ceiling.tex: read lines 1-308; partial-file review.",
+    "manuscript/notes/integrated_spatial_occupation.tex: partial; read lines 1-100, 166-200, 300-354.",
+    "manuscript/notes/integrated_unmasked_variational.tex: partial; read lines 270-333."
+  ],
+  "checks": [
+    {
+      "claim": "INDEX-CELLS lines 829-907",
+      "verdict": "FAIL",
+      "reason": "Two residual per-declaration classification problems remain: line 876 applies the qualifier 'both forms' to a theorem proving only the individual-control inequality, and line 900 classifies degree-support hypotheses and proof steps as a narrower labelled result. See K1-K2. The M1 exception itself is correctly applicable: the relevant sections explicitly name the model at candidate/statement-ledger.md:3648,3704,5045, and the completed Lean statements retain the required conclusions."
+    },
+    {
+      "claim": "INDEX-MAPPING lines 829-907",
+      "verdict": "PASS",
+      "reason": "The label destinations correspond to the manuscript statements or their proof steps. In particular, the occupation declarations match manuscript/notes/integrated_occupation_ceiling.tex:10-18,114-147,149-193,205-300; the complex-phase and Fock declarations match manuscript/notes/notes_stratonovich_ham_second_moment.tex:2288-2683,2828-2982; and the convolution declarations match :4691-4757. The identified classification defects do not require changing their manuscript labels."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "K1 \u2014 Mixed scope at candidate/statement-ledger.md:876. The cell says 'both forms of E:occupation-score-ceiling' for both listed declarations. However, lean-excerpts/StratonovichHAMSecondMoment/OccupationCeilingExact.lean.excerpt.txt:225-229 (original Lean lines 699-703) concludes only 'c * integratedRate ... - rawCost ... / 2 \u2264 SpatialBracket.ceilingValue ...'. It contains neither the supremum conclusion nor the occupation-energy identity. Those appear in intrinsic_occupation_ceiling_paper, original Lean lines 748-757. The TeX explicitly distinguishes the supremum inequality and energy form at manuscript/notes/integrated_occupation_ceiling.tex:209-215, with the individual-control argument at :235-245. Fix: split the row; classify score_le_ceiling_Cocc as proof steps establishing the individual-control ceiling only, retaining the model/identification disclaimers, and reserve 'both forms' for intrinsic_occupation_ceiling_paper.",
+      "K2 \u2014 Wrong result category at candidate/statement-ledger.md:900. This row contains the hypotheses and supporting definitions of the finite-word proof, not a narrower instance of its conclusion. lean-excerpts/StratonovichHAMSecondMoment/FockForm.lean.excerpt.txt:338-371 (original Lean lines 495-537) defines GoodDeg and truncC and proves statements such as 'GoodDeg ... (vac ... u)' and 'truncC Nc v = v' under a degree-bound hypothesis. The TeX places precisely these degree-preservation and cutoff-fixing steps in the proof at manuscript/notes/notes_stratonovich_ham_second_moment.tex:2556-2565; the labelled conclusion is the word equality at :2543-2548. Its actual one-mode formalization is cut_eq_raw_fock, separately indexed at ledger line 902. Fix: change line 900 to 'proof steps: degree-support definitions and hypotheses of the finite-word induction, one mode per color; nothing supplied', preserving its label and section reference."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Split ledger line 876 so that 'both forms' applies only to intrinsic_occupation_ceiling_paper; describe score_le_ceiling_Cocc as the individual-control proof step.",
+    "Reclassify ledger line 900 as proof steps rather than a narrower labelled result."
+  ],
+  "limitations": [
+    "All mandatory reading in requirement A was completed. Partial-file entries identify portions outside the required scope, not unread gaps in the required excerpts or Index slice.",
+    "The remaining ledger rows, package-wide counts, provenance hashes, and proof correctness were not independently audited.",
+    "Lean citations in findings distinguish physical excerpt lines from the original Lean numbering embedded in those excerpts. Material omitted from the supplied excerpts was not reconstructed.",
+    "This AI review is neither human verification nor a novelty audit."
+  ]
+}

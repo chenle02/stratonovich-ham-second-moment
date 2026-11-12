@@ -1,0 +1,994 @@
+{
+ "schema": "packet-provenance/1",
+ "lean_commit": "e2c50b55cc6faf63e9da85391608fb3e4c93b293",
+ "reviewed_commit": "d5667f525407d03490aac492d5a7b7e286ec6d49",
+ "manuscript_revision": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+ "files": [
+  {
+   "packet_path": "candidate/statement-ledger.md",
+   "repo": "Project-stratonovich-ham-second-moment-lean",
+   "commit": "e2c50b55cc6faf63e9da85391608fb3e4c93b293",
+   "source_path": "docs/statement-ledger.md",
+   "git_blob": "6b76aaebbcf6ceac2f606edb5c9187ffed788cb1",
+   "sha256": "57fc1b9ab6d00b28bf1696be928997b7699b2563adbcd414f74d71726096dd78",
+   "bytes": 1285775
+  },
+  {
+   "packet_path": "lean/README.md",
+   "repo": "Project-stratonovich-ham-second-moment-lean",
+   "commit": "e2c50b55cc6faf63e9da85391608fb3e4c93b293",
+   "source_path": "README.md",
+   "git_blob": "e6bb817fc27d0ba685ae071220849e044116e4bc",
+   "sha256": "de63d5bf24a8854afd0efa54859535a153ba69b712064ea3e07070161210edd0",
+   "bytes": 31277
+  },
+  {
+   "packet_path": "lean/FORMALIZATION.md",
+   "repo": "Project-stratonovich-ham-second-moment-lean",
+   "commit": "e2c50b55cc6faf63e9da85391608fb3e4c93b293",
+   "source_path": "FORMALIZATION.md",
+   "git_blob": "b5a7ccc06454c49c1e0c6dce9d2328d16ef23c58",
+   "sha256": "700ce1a6b6c2f1be3bcaa2aa9e352de1a4ad94706ec0b9911201dab3ed8227fc",
+   "bytes": 13089
+  },
+  {
+   "packet_path": "lean/COMPLETION.md",
+   "repo": "Project-stratonovich-ham-second-moment-lean",
+   "commit": "e2c50b55cc6faf63e9da85391608fb3e4c93b293",
+   "source_path": "COMPLETION.md",
+   "git_blob": "4eccadb3fefe83d0f58266d7c0ebbefcca889345",
+   "sha256": "0baf9aa78b8fec5dd8f6d8210d152c8bff621c8f0949a417cb767390889f2422",
+   "bytes": 30201
+  },
+  {
+   "packet_path": "lean/coverage.yaml",
+   "repo": "Project-stratonovich-ham-second-moment-lean",
+   "commit": "e2c50b55cc6faf63e9da85391608fb3e4c93b293",
+   "source_path": "coverage.yaml",
+   "git_blob": "1e276470377bcd7fa11acbe4800cba3e5e0e42c9",
+   "sha256": "861585aa16be5c595ba7bdb7e67d3e616d9c6752d69248b19dfe579446ff429d",
+   "bytes": 122396
+  },
+  {
+   "packet_path": "docs/coverage-scope-tex.yaml",
+   "repo": "Project-stratonovich-ham-second-moment-lean",
+   "commit": "e2c50b55cc6faf63e9da85391608fb3e4c93b293",
+   "source_path": "docs/coverage-scope-tex.yaml",
+   "git_blob": "00264c5bbdae4e6cf5effdfbe883b5356ae92e0c",
+   "sha256": "f7e8b8367bef8665dd64c2562254e96faabeef7801b2b091ae0fa9eb3709631a",
+   "bytes": 30848
+  },
+  {
+   "packet_path": "adjudication/round3-d5667f5-split-rule.md",
+   "source": "l9rev/ADJUDICATION.md, section \"Re-confirmation round 3, d5667f5, and Le's split modelled-object rule\"",
+   "sha256": "5d0e3840853eaf08e3fda4113582179e1aafb97eefdc83921e1ae83c158d6b0e",
+   "bytes": 24180
+  },
+  {
+   "packet_path": "diffs/docs-d5667f5-e2c50b5.diff",
+   "derived": "git diff d5667f525407 e2c50b55cc6f -- README.md FORMALIZATION.md COMPLETION.md docs/statement-ledger.md coverage.yaml docs/coverage-scope-tex.yaml",
+   "sha256": "50282c916fda83cfd188e023ad7e5301de2ba59c1b3d582f729adbc354b9a582",
+   "bytes": 143132
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMAudit/ActualEvent.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMAudit/ActualEvent.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "43afd2880c13c061962119bc944df15ffc742e1b30913fa708e0ce808dda25b4",
+   "bytes": 974
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/ClockCopy.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/ClockCopy.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "3fb9d0896de8a085823e094d6af0da2430040a20ca3f11441d2d02cd746f3bf1",
+   "bytes": 18239
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/ClockCopyHomog.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/ClockCopyHomog.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "032f50098dc2255435e5238feac27af768d4807cd78b19a283391baf7e79de49",
+   "bytes": 4794
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMAudit/ClockFilter.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMAudit/ClockFilter.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "79333d82ad9b000f5ffb498f7e0d038843e1658565b703e3a5d1f77ec53dd643",
+   "bytes": 1529
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/DampedNorms.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/DampedNorms.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "5435b5be8624de070ddedaa40dc4fa27cfda039c68986167d7a00818e978133c",
+   "bytes": 9605
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMAudit/DimensionalMatrix.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMAudit/DimensionalMatrix.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "daa95d986e65740d48fd7bd6fe1285afb9c1ffda299febb11a72b8a4aadea9eb",
+   "bytes": 1043
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMAudit/DirectEvent.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMAudit/DirectEvent.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "9e39123e8f75b79ae5edec72dad5c7b261c302752540b9db78c9ae12ae0f5510",
+   "bytes": 1468
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/DriverParameters.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/DriverParameters.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "5230ce2463972c12c322da70190b8ef8876c4010c48ba7ae01a2fc2980fd8ef0",
+   "bytes": 2289
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "320d272f5bcdd20779b1c8542da7e553538fb6a1e0749f80ed9d7d63910e73d4",
+   "bytes": 41547
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMAudit/FiniteYoung.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMAudit/FiniteYoung.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "7c1465e5745883cf40cb5c923300304a195e0218a8acd8da5b0b62e3c6d4caaa",
+   "bytes": 781
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/FrequencyRow.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/FrequencyRow.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "7173d3bc850d8c4f7430d99bad918acd24c63d32f72f40f5fd5d7b9dfbf2a1ca",
+   "bytes": 22730
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/GaussianIBP.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/GaussianIBP.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "42545217ea18b83b7ee87fd32dd1f1b81228d62a667b5a2c412e1245d221a779",
+   "bytes": 11171
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/GaussianScalarPowers.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/GaussianScalarPowers.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "228704052292b51e5ab2ae2244fe1628a1d6b7964fbcd74e357a66f8540914c4",
+   "bytes": 3014
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMAudit/GaussianTail.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMAudit/GaussianTail.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "f47d212e9cb8e47f5ae8b296d55fb679a0f2b5a3d1810dcab50aeac3482c66d1",
+   "bytes": 812
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/GaussianTest.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/GaussianTest.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "04d9319792149a75b3e3491a8f3119abe66a76fa2125187803c8e58ef4931fe6",
+   "bytes": 6435
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/GramScalarAlgebra.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/GramScalarAlgebra.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "ef67d68e4f825f0c1f0499675ed033bf0c64df2ce3d111ee8429865a87036bf9",
+   "bytes": 4543
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMAudit/HermiteWord.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMAudit/HermiteWord.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "e1b1775cf67edab7eea2485590dc139ed3543fe1e45b7cd0b0000f537ecdfde2",
+   "bytes": 1326
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/HomogHypothesis.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/HomogHypothesis.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "a69638d77b73f82cac58df268b2fc96f95ffdd33ded1d20dc5b3198012fd6b89",
+   "bytes": 5386
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/IndexedCone.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/IndexedCone.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "9aeb33de1960779dff3bcf44265eb55202781bb517ae3e484803fc4434ea66e0",
+   "bytes": 27802
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMAudit/InteractionDriver.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMAudit/InteractionDriver.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "39d0a6c6c42fd09fb9e2bdd25f17d1eca0d3315e9d9843e36aa675fe8263a531",
+   "bytes": 1805
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMAudit/JointTilt.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMAudit/JointTilt.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "3bb6f084974d8f709c421154907b4ab8bb41a1e68c68fa211bef995ab1f2627b",
+   "bytes": 695
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/KappaRange.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/KappaRange.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "5b0d106a7434d32bf3116814edc6775bcc7ac98ea9faed9fb0a44d7534230f96",
+   "bytes": 1667
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMAudit/LocalFlow.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMAudit/LocalFlow.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "0fd03fc29eea61810b98d6998e3de316224301b136cefa0a1eaab951bc1832f4",
+   "bytes": 755
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/MaskedModulation.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/MaskedModulation.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "aa1ccf9eaf80cb692c420710c1138a616aca9079159545b563f359fbea9e58e4",
+   "bytes": 14625
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "01d993ff8ba7ee6d7eb7571b4331885aeacbbfc5eb61f56757a60896d9476203",
+   "bytes": 18075
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/MaskedTrigProducts.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/MaskedTrigProducts.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "5a23a5d5ef5dfb6424ccbb609894df96744f91c7320698bab2eb45552cf48660",
+   "bytes": 15104
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMAudit/MovingCone.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMAudit/MovingCone.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "e8f8687d246b97df43f20f73411d73118f91a58da3d454f1dea27becafb2cc42",
+   "bytes": 1178
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/OccupationKernelRow.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/OccupationKernelRow.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "9e19393959f5f22a04789b1f004d7859869073c81c3baba63e1efa0eee10fe81",
+   "bytes": 9232
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMAudit/PhaseResponse.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMAudit/PhaseResponse.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "bc0db44b455fdb750083c90258191126b32b9ee511eef6d3f7617430c20c562d",
+   "bytes": 771
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMAudit/PositiveGram.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMAudit/PositiveGram.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "ae8bd4da0eb062aae727b05fa45cbb56b7ee9adb87b92ef18f8362b3d5ffbb0a",
+   "bytes": 1961
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/RadiusMeanAnchor.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "5a44e7b231db7d04c703f7be275b1d7a598e4c1ac8a38745fb794321c3763cc9",
+   "bytes": 16915
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMAudit/RawValueCeiling.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMAudit/RawValueCeiling.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "8536a959dfe6c4a31f7ef35a4210a48ca7c3cac95e5b3411585e57b7f1c52bbc",
+   "bytes": 757
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMAudit/RawVariational.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMAudit/RawVariational.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "27a74a869c5177dcf2733ced85c94ee7304ab1af0248130f23ba8f5bbf6016a7",
+   "bytes": 1321
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/RayleighTail.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/RayleighTail.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "eb31e504fc1d32e37f225d2cc43a9659aa8cbfe56f175d7ca86d4fa7f3b786c6",
+   "bytes": 4833
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/SpectralHomog.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/SpectralHomog.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "4a3b67b07fd2d4526764e2384d85f434bd618501d12a31dbb0dbbd02b9a8c791",
+   "bytes": 7908
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/TemporalEquilibrium.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/TemporalEquilibrium.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "d21121379226a54a3be0a3f4f27ff3eb84b09ee4da30b6c967e57532cbbc5f64",
+   "bytes": 12762
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/TimeCompletion.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/TimeCompletion.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "f6803386453e8eeb0a82d1d58c47dc1587e95e4f61c6b3e9c39d7333b4ef2db3",
+   "bytes": 9011
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/TimeFractional.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/TimeFractional.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "55c7b4d60361cdfb5509fb0d905fcd5c4191944d5a4d2061168d114fe2062715",
+   "bytes": 12313
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/TimeSchur.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/TimeSchur.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "640eb8e5d8f5e395de916ba8fb658387afd6bcc3923deaff7e89e6c140ccec4c",
+   "bytes": 8229
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/VariationalDilation.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/VariationalDilation.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "56589d965421dab0592dc9e066b0021a962ec7f771e72e50bca91dae04a02fad",
+   "bytes": 20951
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/WaveKernel.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/WaveKernel.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "068619e8d0c2e22cc409403f8785049f4773c9eb81539ac7da95a0fee9b141f1",
+   "bytes": 4339
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMSecondMoment/WeakSobolev.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMSecondMoment/WeakSobolev.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "ee3083f4b236864579b3abae102496a1278ce62932572387e34472f746ed59e3",
+   "bytes": 11088
+  },
+  {
+   "packet_path": "lean-excerpts/StratonovichHAMAudit/WhiteCDF.lean.excerpt.txt",
+   "derived": "numbered excerpt of StratonovichHAMAudit/WhiteCDF.lean at e2c50b55cc6f: header and the declarations named by Index rows 501-599",
+   "sha256": "ebc76ae944985d102713693246e5b8665d2ff216d01ee93cc9b7087b30a53e23",
+   "bytes": 772
+  },
+  {
+   "packet_path": "excerpts/tex-excerpts.txt",
+   "derived": "numbered TeX statement excerpts at a284420 for C:frequency-time, C:intrinsic-spatial-bracket, E:averaged-clock-kernel, E:clock-copy-obstruction, E:compact-F-eigen, E:compact-F-projection, E:compact-normalized-complement, E:compact-positive-margins, E:compact-rate-gap, E:compact-raw-cost, E:compact-raw-mean, E:cross-clock-lambda-weight, E:damped-norm-definitions, E:degree-one-clock-loss, E:driver-parameters, E:finite-hermitian-gaussian, E:frequency-row-integral, E:frequency-row-kernel, E:frequency-translated-growth, E:kappa, E:masked-frequency-pair, E:masked-gaussian-transform, E:masked-temporal-modulation, E:masked-time-schur, E:masked-translated-ball, E:naive-clock-candidate, E:raw-block-positive-product, E:variance-scale-profile, E:variational-control-dilation, E:variational-positive-class, E:variational-real-rayleigh, H:homog, L:compact-raw-profile, L:damped-homogeneous-norms, L:driver-holder-limit, L:driver-interval-limit, L:equilibrium-gamma-beta, L:exact-canonical-scaling, L:finite-word-cutoff, L:gaussian-scalar-powers, L:gaussian-trace-bounds, L:gram-scalar-algebra, L:low-alpha-convolution, L:masked-temporal-modulation, L:masked-time-completion, L:masked-trig-products, L:occupation-kernel-row, L:raw-block-indexed-cone, L:raw-block-inputs, L:raw-block-restart, L:spatial-physical-pair, L:temporal-equilibrium, L:tube-rayleigh-tail, L:variational-control-dilation, P:actual-wave-form, P:clock-copy-obstruction, P:compact-F-complement, P:compact-F-projection, P:compact-ground-family, P:finite-gaussian-matrix, P:frequency-row, P:gram-entrywise-comparison, P:gram-positive-optimizer, P:masked-spectral-growth, P:radius-mean-anchor, P:raw-block-original-lower, P:variational-positive-scores, P:variational-unmasked-rate, P:white-spatial-energy, R:gaussian-one-variance-test",
+   "sha256": "090c768f771db0e0d7fcdc04a484d5391fc04deb533ee6cac448418660995425",
+   "bytes": 51399
+  },
+  {
+   "packet_path": "manuscript/notes/notes_stratonovich_ham_second_moment.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/notes_stratonovich_ham_second_moment.tex",
+   "sha256": "c71765fb6a13aad853f7c5b834ef35b6bc0e780666af29e4cb1a610784c526b1",
+   "bytes": 383763
+  },
+  {
+   "packet_path": "manuscript/notes/index/setup.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/index/setup.tex",
+   "sha256": "e35c7dc9bf809df8afc3bc869a895d1e546fcd6ff4022554af873f7191c3a3ba",
+   "bytes": 1078
+  },
+  {
+   "packet_path": "manuscript/notes/index/anchors.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/index/anchors.tex",
+   "sha256": "30afb1c5af81a7ee7a5d9545052c9ff7ad51b22d4191cdb5ee1ccbc1a1189185",
+   "bytes": 26350
+  },
+  {
+   "packet_path": "manuscript/notes/figures/styles.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/styles.tex",
+   "sha256": "ba5c01a670b3c4cdece04550e4d60775a7c0e65f139a14a040d1068f08a6a3b9",
+   "bytes": 699
+  },
+  {
+   "packet_path": "manuscript/notes/ai-statistics-data.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/ai-statistics-data.tex",
+   "sha256": "d8eb3d9447afb6307413eb403151553f1c115479c7506a930b64355004708a5d",
+   "bytes": 10082
+  },
+  {
+   "packet_path": "manuscript/notes/lean-coverage-data.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/lean-coverage-data.tex",
+   "sha256": "451a07a7e59d72dc5ec3a7be332ff5a462e22560241c915ae5f32de8359108d9",
+   "bytes": 9425
+  },
+  {
+   "packet_path": "manuscript/notes/book-layout.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/book-layout.tex",
+   "sha256": "7f52be4b32e7528ce3be49ccb07991331ba32bea5cca31f5513a3b166e06d984",
+   "bytes": 2357
+  },
+  {
+   "packet_path": "manuscript/notes/preface.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/preface.tex",
+   "sha256": "76cc1ce9d3d1265addb7f9e05768023abba260156983b192958be9757d187c34",
+   "bytes": 16093
+  },
+  {
+   "packet_path": "manuscript/notes/chapter-guides/01-setting.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/chapter-guides/01-setting.tex",
+   "sha256": "2a9106511f5a62795844d3fd969bf5c940166643bc0c6d2606681e31f0f56d61",
+   "bytes": 1295
+  },
+  {
+   "packet_path": "manuscript/notes/history_wave_equations.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/history_wave_equations.tex",
+   "sha256": "672957b0b7830efca2f2d9edc8709ef7aae5d3d7f21f58a1f0f4547cada2536f",
+   "bytes": 5971
+  },
+  {
+   "packet_path": "manuscript/notes/figures/walsh-guitar.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/walsh-guitar.tex",
+   "sha256": "f645d260bd3be7471950738166b638cdc8ded857d0a0bda89bf64583a79d9328",
+   "bytes": 1202
+  },
+  {
+   "packet_path": "manuscript/notes/figures/proof-map.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/proof-map.tex",
+   "sha256": "2a0b11365792b75b41e2a009105161e3583991f0ad43a120cd6a34fd4772317e",
+   "bytes": 3066
+  },
+  {
+   "packet_path": "manuscript/notes/figures/chapter-roadmap.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/chapter-roadmap.tex",
+   "sha256": "6e945b11a10d9e52108288d3576dc33ecdf670b4a1bffa4e715c0a6d8c28bc73",
+   "bytes": 3635
+  },
+  {
+   "packet_path": "manuscript/notes/literature_review.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/literature_review.tex",
+   "sha256": "8bdfe93ebe9798ce78119bfd59e8597f01e06f4c6509ac962921bd6f69b8ff0e",
+   "bytes": 12212
+  },
+  {
+   "packet_path": "manuscript/notes/figures/literature-interpretations.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/literature-interpretations.tex",
+   "sha256": "a1b7622141ba00d5b990d2b5efae376938a0a9ae448c4ba9654a3a745ca1cc59",
+   "bytes": 1921
+  },
+  {
+   "packet_path": "manuscript/notes/figures/literature-results-map.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/literature-results-map.tex",
+   "sha256": "5ce006ee03e0bc96f78b4ea70b2175358a8b4a18e4839a49782ec66ba876768e",
+   "bytes": 965
+  },
+  {
+   "packet_path": "manuscript/notes/figures/literature-results-drawing.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/literature-results-drawing.tex",
+   "sha256": "299d12c349791c8ab7be6c5ca45af521a5be051dbe7a693e40003c7d525b0ab7",
+   "bytes": 4322
+  },
+  {
+   "packet_path": "manuscript/notes/future_work.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/future_work.tex",
+   "sha256": "7cf9f2a211c33aaa23855c02e474e872d382af38badcfa704a363654632add3e",
+   "bytes": 8969
+  },
+  {
+   "packet_path": "manuscript/notes/future_optimizers.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/future_optimizers.tex",
+   "sha256": "16556b898d78c5f17154aaf1bcd93da62bc7de72e5e0164c8be51e39782d1b45",
+   "bytes": 3299
+  },
+  {
+   "packet_path": "manuscript/notes/future_universality.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/future_universality.tex",
+   "sha256": "fb5dcd4646ac0fe94d757dcb753e55df944c1e482909d31745aa914368b10f98",
+   "bytes": 3747
+  },
+  {
+   "packet_path": "manuscript/notes/theory_outlook.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/theory_outlook.tex",
+   "sha256": "f958cfb8518b88d40e427c7a16cd669b4c687e6725e0b25ce61a3c5da7d2db5d",
+   "bytes": 5336
+  },
+  {
+   "packet_path": "manuscript/notes/chapter-guides/02-G0.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/chapter-guides/02-G0.tex",
+   "sha256": "ce0e63c362d71710cc375bda1cd1f81bfd2f28b3aad5e05e80d2fd56dd2053ec",
+   "bytes": 1107
+  },
+  {
+   "packet_path": "manuscript/notes/figures/two-chain-pairings.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/two-chain-pairings.tex",
+   "sha256": "1ad3e9a2b1cfce10e64c2dc8bfff1cd852a9770b7059cf7a9e87ac3c67ba5110",
+   "bytes": 2161
+  },
+  {
+   "packet_path": "manuscript/notes/figures/endpoint-elimination.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/endpoint-elimination.tex",
+   "sha256": "10e2fc042630cb1d7ff1219df70175fe9c89b854ff2c9d5ae7ddb25f543033d0",
+   "bytes": 3491
+  },
+  {
+   "packet_path": "manuscript/notes/figures/order-of-limits.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/order-of-limits.tex",
+   "sha256": "75911afa9e6eeed742a092d3a10fe06d6e914127091a498c1f273c027b4e43b2",
+   "bytes": 1117
+  },
+  {
+   "packet_path": "manuscript/notes/chapter-guides/03-independent-upper.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/chapter-guides/03-independent-upper.tex",
+   "sha256": "0ff7c528285b48b911644c3fc9db71c08bd6f492573c9a204f5d5e21a0e17fe7",
+   "bytes": 1131
+  },
+  {
+   "packet_path": "manuscript/notes/figures/hermite-cutoff.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/hermite-cutoff.tex",
+   "sha256": "e4d4799edc4022305c24850fa33c9c08a635d9d6f79a49f0ea4972b828a22325",
+   "bytes": 1570
+  },
+  {
+   "packet_path": "manuscript/notes/figures/interval-allocations.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/interval-allocations.tex",
+   "sha256": "21e1120f238cfaade99eec1bf6986fe1415fbae13b5a22340977c9cd3c4477f8",
+   "bytes": 2148
+  },
+  {
+   "packet_path": "manuscript/notes/figures/interval-end-metrics.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/interval-end-metrics.tex",
+   "sha256": "d9580cdbab4306c620eae2d71fc797d3c1ba9649b54a5ece4a12c56808c1f790",
+   "bytes": 2104
+  },
+  {
+   "packet_path": "manuscript/notes/figures/cross-colour-cube.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/cross-colour-cube.tex",
+   "sha256": "ae0226fe1dfba034b24d244464f4749812c512ba17e3697c1194676a35e61352",
+   "bytes": 2148
+  },
+  {
+   "packet_path": "manuscript/notes/figures/dyadic-cover.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/dyadic-cover.tex",
+   "sha256": "88733e66835907f09f7bbadba378804ecc56606b9edcb7c29074ec10764bd509",
+   "bytes": 1599
+  },
+  {
+   "packet_path": "manuscript/notes/chapter-guides/04-gaussian-foundations.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/chapter-guides/04-gaussian-foundations.tex",
+   "sha256": "4ac7c208a84526c551b7c8fa7c14087b6795fc27c6693c4d7ed58eafc26beff2",
+   "bytes": 1106
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_covariance_foundation.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_covariance_foundation.tex",
+   "sha256": "17aa2c1d764b9161c7e6640ed1ce19755f2b43c7a77b03119300030813d31f77",
+   "bytes": 20277
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_wave_variance.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_wave_variance.tex",
+   "sha256": "d7e956c8fc4c890b1b968f452ac4acc72aaed07e15bf6a13cc320a741d25eeeb",
+   "bytes": 24338
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_compact_gaussian.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_compact_gaussian.tex",
+   "sha256": "3043665006548bb5081b80a39e3017b96c6a03ecc8704ffd906044b939c105a0",
+   "bytes": 29904
+  },
+  {
+   "packet_path": "manuscript/notes/chapter-guides/05-operator-paths.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/chapter-guides/05-operator-paths.tex",
+   "sha256": "0bb9269766b3ade084b931c671691c514c01aa798002adca5c935d6cc1bb5d1c",
+   "bytes": 1145
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_actual_operator_driver.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_actual_operator_driver.tex",
+   "sha256": "25dbba4a4ca9c5c4296e9b3aaba7895ae8ad984d104a9a42429e30a38df99409",
+   "bytes": 34422
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_source_convergence.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_source_convergence.tex",
+   "sha256": "c347e3022348fd7975d38dc9c4c15e830aca223c8817253c4c39e753e4148696",
+   "bytes": 24142
+  },
+  {
+   "packet_path": "manuscript/notes/figures/common-noise.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/common-noise.tex",
+   "sha256": "f1bcf1462a808df02d7159c7441f2c42bcf2536a239e2a39716d7b785730c76c",
+   "bytes": 1357
+  },
+  {
+   "packet_path": "manuscript/notes/chapter-guides/06-wave-evolution.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/chapter-guides/06-wave-evolution.tex",
+   "sha256": "037982115503f2c2e2071c1564eec0918c9950ba443e42e7b45abbebc3f80fb1",
+   "bytes": 1086
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_masked_moments.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_masked_moments.tex",
+   "sha256": "533f96300b5e0e10205aeb374cdd55378fd3a27e8a5faf6148187f0c02221024",
+   "bytes": 11113
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_constant_phase_young.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_constant_phase_young.tex",
+   "sha256": "a97b4669b47a0ee4de84747a7a9e6763c38bdcafedadc638ee7f937a6c4b01bd",
+   "bytes": 26664
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_compact_mean_family.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_compact_mean_family.tex",
+   "sha256": "c52144e81d52ff1842c8081579ef2fdb300fbed4f8b962e21ae3e62d42fd2493",
+   "bytes": 24989
+  },
+  {
+   "packet_path": "manuscript/notes/chapter-guides/07-lower.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/chapter-guides/07-lower.tex",
+   "sha256": "86a3b6f6c3086a60c00a18a128e8c797cc44a0784115b3b1a123677104fe5933",
+   "bytes": 1099
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_exact_scaling.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_exact_scaling.tex",
+   "sha256": "4fc63312f1adfdcf045071c5fb61bc34985260089723203966afb1d7b8393649",
+   "bytes": 2596
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_raw_block_lower.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_raw_block_lower.tex",
+   "sha256": "dc10f207c3347e5e85b3169526cec53023b3e9d6ee86b6104f96de2d0cd2db2e",
+   "bytes": 33887
+  },
+  {
+   "packet_path": "manuscript/notes/figures/global-control-blocks.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/global-control-blocks.tex",
+   "sha256": "385d22194b62a51faa2f01096b745abcc47a6c5137649b2fca4e5c696dfaa703",
+   "bytes": 2061
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_unmasked_variational.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_unmasked_variational.tex",
+   "sha256": "985069b8e1dea64c8bd309102b406a6d9c0685840077e5d3a1193b0fd80907b4",
+   "bytes": 17339
+  },
+  {
+   "packet_path": "manuscript/notes/figures/nonseparable-controls.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/nonseparable-controls.tex",
+   "sha256": "76526fb586f0b5dd9bc01ab6007ac0590e61f6538d25f98ed5b4eec08f1517bd",
+   "bytes": 1341
+  },
+  {
+   "packet_path": "manuscript/notes/chapter-guides/08-means.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/chapter-guides/08-means.tex",
+   "sha256": "070630e15115518e2379656037a13fd0d9b9307d0eaf36aee831707fb0ddf04c",
+   "bytes": 1160
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_temporal_equilibrium.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_temporal_equilibrium.tex",
+   "sha256": "3040006c990fd35c51b169dc262db8bc3120d4f45f76b2c87b4d63f368409228",
+   "bytes": 4207
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_spatial_occupation.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_spatial_occupation.tex",
+   "sha256": "5089f4d6140d0594d1d218caa88e5031182b5eeac82f61b4c45b5c46acb6ddec",
+   "bytes": 21235
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_cameron_mean.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_cameron_mean.tex",
+   "sha256": "e21f9afd8c1c25c678e4dcb39c9946cd0dcc09b0419f2501172ac8a991ee7212",
+   "bytes": 23049
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_young_upper_foundation.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_young_upper_foundation.tex",
+   "sha256": "9436e1ba483cf4ae03664f3935eb58996c244db7c394c3afaa704ff91742c53c",
+   "bytes": 4559
+  },
+  {
+   "packet_path": "manuscript/notes/chapter-guides/09-growing-radius.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/chapter-guides/09-growing-radius.tex",
+   "sha256": "2c3bfa996d1c3f998d54ac00a70e177f8810c61394ba468fabf3681771e286c8",
+   "bytes": 1147
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_uniform_mean.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_uniform_mean.tex",
+   "sha256": "7b37b4fd7d6d43e7b26c280232fb6b337a6a8ec976df8fbc353872ae68cdf6fd",
+   "bytes": 18920
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_radius_anchor.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_radius_anchor.tex",
+   "sha256": "f9687211913c1d68366374c4a24f8f7729de2fe44a89137f96af6b04dbab1e84",
+   "bytes": 16787
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_signed_static.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_signed_static.tex",
+   "sha256": "8515397712a7aee51b4dc83fbe166fc070f85c85a9d48cc1f50452e6c6c3efd6",
+   "bytes": 13511
+  },
+  {
+   "packet_path": "manuscript/notes/chapter-guides/10-point-upper.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/chapter-guides/10-point-upper.tex",
+   "sha256": "d2166db4d4eaaca4dfe069a20038b75d27dc6c834ba6d8c17739e5c665594a3d",
+   "bytes": 1151
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_symplectic_phase.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_symplectic_phase.tex",
+   "sha256": "23b1747511dde29836b5f83b2699de3cc26ad4d6e928a09446aa8e1e2c58a025",
+   "bytes": 20016
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_gaussian_tubes.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_gaussian_tubes.tex",
+   "sha256": "171c57df271f36bf98860437cd5f52ee076e3460b84354743d63c9c41ff7b713",
+   "bytes": 26173
+  },
+  {
+   "packet_path": "manuscript/notes/figures/gaussian-enlargement.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/gaussian-enlargement.tex",
+   "sha256": "a3cadc03e1355b02b1730f0d4dc3f637958a6307c79c1f1eabcee7c3f5e33734",
+   "bytes": 1575
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_uniform_products.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_uniform_products.tex",
+   "sha256": "9f04e127d2f06a27561c56ba0fa0279396bcd8e9f7625a08ed67229b855ea4b8",
+   "bytes": 27214
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_point_transfer.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_point_transfer.tex",
+   "sha256": "d9a403b97b63577b82eb51ab36f7ce7bd587cf762e300647040bde44b8685ec4",
+   "bytes": 17496
+  },
+  {
+   "packet_path": "manuscript/notes/figures/light-cone.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/light-cone.tex",
+   "sha256": "6380579e482602631c92750d46544ae8ed203ddea779649d70290803742c5941",
+   "bytes": 1819
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_signed_moment_upper.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_signed_moment_upper.tex",
+   "sha256": "9c39dfb1047d354694abab75b1f726c2d83fbb70094245bc064acb37f6e96247",
+   "bytes": 11684
+  },
+  {
+   "packet_path": "manuscript/notes/chapter-guides/11-constant.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/chapter-guides/11-constant.tex",
+   "sha256": "ef1633d68755251a8bc5a1aaf44fce0f1a568a6125915b73e480a365e08e6728",
+   "bytes": 1130
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_positive_gram.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_positive_gram.tex",
+   "sha256": "5d497cc4a5f3254de757d6b650f68f9a5415fb5757668a0f3cd895654f0b6102",
+   "bytes": 10392
+  },
+  {
+   "packet_path": "manuscript/notes/figures/active-subset-optimization.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/active-subset-optimization.tex",
+   "sha256": "7b6b20c0965ef8db57d0c1d354d230cb998c84cd6e66ef139954c2bf32772470",
+   "bytes": 1818
+  },
+  {
+   "packet_path": "manuscript/notes/figures/positive-gram.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/positive-gram.tex",
+   "sha256": "297b5f9c49b3de0dc9f4a6a8a61600284645d75ecb1f4c140cb8b3986ef09db7",
+   "bytes": 1557
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_intrinsic_constant.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_intrinsic_constant.tex",
+   "sha256": "fcbd45d8aff9d3fe7d403bdd068988fd9d293a4f3769cdaeaeb0268b92426898",
+   "bytes": 20332
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_occupation_ceiling.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_occupation_ceiling.tex",
+   "sha256": "3d5cbf91bb2a7069070554d975e2f23345e7f9b166458efb2e9c48fd7403936c",
+   "bytes": 14222
+  },
+  {
+   "packet_path": "manuscript/notes/integrated_white_evaluation.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/integrated_white_evaluation.tex",
+   "sha256": "2f086a980f5eda53b39e7a16674267cec71cbbe744b37c00feca36f038bb75f7",
+   "bytes": 7950
+  },
+  {
+   "packet_path": "manuscript/notes/chapter-guides/12-finite-order.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/chapter-guides/12-finite-order.tex",
+   "sha256": "1977212c3c0540bad1c296a271b915dcd08623df553e3931283b31062db5a960",
+   "bytes": 1100
+  },
+  {
+   "packet_path": "manuscript/notes/figures/white-strip.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/figures/white-strip.tex",
+   "sha256": "685fe49aed151fd2b4bd728dcf3b037e6e4033926ce6254c590ffa358dc1f645",
+   "bytes": 1805
+  },
+  {
+   "packet_path": "manuscript/notes/chapter-guides/13-direct.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/chapter-guides/13-direct.tex",
+   "sha256": "467874d9940c6021f57da7791d27a83adf18718da961a65f81e0a32c4a95ca8c",
+   "bytes": 1141
+  },
+  {
+   "packet_path": "manuscript/notes/chapter-guides/14-covariance.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/chapter-guides/14-covariance.tex",
+   "sha256": "56a5fb1200e307dc1621d4aeb02ceb8362ac96fb9e9b5118474b1873c02281ed",
+   "bytes": 1187
+  },
+  {
+   "packet_path": "manuscript/notes/chapter-guides/15-static-clock.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/chapter-guides/15-static-clock.tex",
+   "sha256": "416009590d456c1adc4f83b0907e5afa8a955ab99ff9d47cdfcb3df335f25b74",
+   "bytes": 1221
+  },
+  {
+   "packet_path": "manuscript/notes/ai-statistics.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/ai-statistics.tex",
+   "sha256": "7cb032b09dafef8ebf97463cb02dada5b300682aea39ec1c5681f276f2eeb0d0",
+   "bytes": 6289
+  },
+  {
+   "packet_path": "manuscript/notes/lean-coverage.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/lean-coverage.tex",
+   "sha256": "dbc46581109b246f01f3ac37dde581b08a83314742c4820f6ff513075594dc5d",
+   "bytes": 3434
+  },
+  {
+   "packet_path": "manuscript/notes/no-go-appendix.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/no-go-appendix.tex",
+   "sha256": "159eddafef77fcedd3b70ad14d978f1fd4ac892777de6c63b7fc16a8b63f87ee",
+   "bytes": 20725
+  },
+  {
+   "packet_path": "manuscript/notes/index/list-of-notation.tex",
+   "repo": "Article-Stratonovich-HAM-Second-Moment",
+   "commit": "a2844206199b6798464eee7bdaaa45ed9b7c21a0",
+   "source_path": "notes/index/list-of-notation.tex",
+   "sha256": "879e1933a2ba8feb75fe9c5980406f702b717a2d974a892388995cad4c5ccf8d",
+   "bytes": 18525
+  }
+ ]
+}
