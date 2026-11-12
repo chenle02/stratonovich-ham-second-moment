@@ -1,0 +1,60 @@
+\section{Strategy of the proof}\label{S:strategy}
+
+The second moment is a convergent sum of two-chain pairing integrals,
+including empty chains and all relative time orders. Stratonovich integrals
+retain pairings within either chain as well as between the chains, so products
+of different orders can contribute (Proposition~\ref{P:mixed}). Estimating
+every pairing by one common bound gives a finite moment but loses the target
+growth scale (Proposition~\ref{P:envelope}). Chapter~\ref{S:book-no-go}
+discusses this and the other approaches that do not work. The proof proceeds in
+four steps, shown in Figure~\ref{Fig:proof-map}.
+
+\input{notes/figures/proof-map}
+
+\paragraph{One solution and an upper bound at the right scale.}
+Chapter~\ref{S:G0} derives the complete pairing expansion and constructs the
+solution used throughout (Proposition~\ref{P:mild-construction}).
+Chapter~\ref{S:book-independent-upper} then proves an upper bound at the scale
+$t^\kappa$ for the full covariance class, before the limiting constant is known
+(Theorem~\ref{T:full-upper}). The wave equation forces this argument to carry
+both displacement and velocity across time intervals. The constant of this
+bound is not claimed to be optimal.
+
+\paragraph{A lower bound for each control.}
+A lower bound comes from shifting the Gaussian noise toward a deterministic
+potential that makes the wave grow, and comparing the gain with the cost of the
+shift. Because the noise is correlated in time, the cost of a control is
+charged in the original covariance space, not added over time intervals as if
+they were independent. Chapters~\ref{S:book-gaussian-foundations}--\ref{S:book-wave-evolution}
+prepare the tools: covariance estimates for a potential multiplied by a smooth spatial cutoff of compact support, a
+random operator path driven by the noise of the original equation, and the
+evolution on the displacement--velocity phase space, identified with the
+physical wave. Chapter~\ref{S:book-lower} converts long time into an
+equivalent small-noise problem by equality in law
+(Section~\ref{S:exact-canonical-scaling}), for nonzero covariance, proves a lower bound for each fixed control in the
+class defined in Section~\ref{S:targets}, with an eligible fixed spatial mask
+(Proposition~\ref{P:raw-block-original-lower}), and then removes that mask and
+optimizes over controls to obtain a variational lower value
+(Section~\ref{S:unmasked-variational}). For zero covariance, the solution is
+identically one and the rate is zero. Together with the upper bound of the
+first step, this value is finite (Proposition~\ref{P:variational-positive-scores}).
+
+\paragraph{A matching upper bound.}
+The upper bound must account for all Gaussian fluctuations, not only the
+favourable shifts, and it must control the moment at one point while the region
+reached by the wave grows with time. Chapter~\ref{S:book-means} relates limits of smooth controls in the norm determined by the noise covariance to the deterministic means they induce. Chapter~\ref{S:book-growing-radius} separates the estimates that are
+uniform in the radius of the spatial cutoff from those whose dependence on the radius must be shown, and constructs the wave for completed static mean potentials of either sign at a fixed spatial cutoff. Chapter~\ref{S:book-point-upper} reduces the probabilistic estimate to
+growth under deterministic controls, returns to the original point moment through finite propagation and a spatial average of squared solutions, controls the Gaussian tail, and obtains an upper
+variational expression over signed controls
+(Proposition~\ref{P:original-signed-point-upper}).
+
+\paragraph{Identifying the constant.}
+The two bounds now concern the same point moment, but over different controls:
+nonnegative smooth controls below, signed controls in the covariance-norm completion just described above.
+Chapter~\ref{S:book-constant} shows that the two optimizations have the same
+value. It first solves a finite optimization problem whose matrix of pairwise covariance inner products has nonnegative entries (Section~\ref{S:finite-positive-gram}), then applies it to
+the physical means and removes the spatial cutoff
+(Proposition~\ref{P:positive-score-cutoff}). Theorem~\ref{T:intrinsic-second-moment}
+states the resulting limit. The remaining sections give bounds for its constant
+and, for spatial white noise in one dimension, explicit moment bounds; they do
+not evaluate the full supremum.

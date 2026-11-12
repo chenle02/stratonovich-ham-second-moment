@@ -19325,3 +19325,20 @@ Evidence: private/audit/2026-11-12-nogo-expansion/visual-cold-v2/ and
 visual-cold-v3/; reproducible packet builder
 reviews/2026-11-12-nogo-integration/prepare-visual-bounded.py.
 This atomic editorial checkpoint does not close the remaining review gate.
+
+## 2026-11-12: Section 1.6, Strategy of the proof
+
+Le asked whether the book has a global strategy; it had a guide table, a proof-map
+figure and chapter openings, but no prose account. New Section 1.6 "Strategy of
+the proof" (notes/proof_strategy.tex), after "Main results", built around the
+proof-map figure (moved into it) and sourced only from the chapter openings, the
+figure and the reading edition: the two-chain pairing sum and the failed common
+bound (P:envelope, Chapter 12), then four steps (one solution and the t^kappa upper
+bound; a lower bound for each control from a Gaussian shift costing half the
+variance; the matching upper bound over signed controls, uniform in the cutoff
+radius; identifying the constant by the positive Gram comparison and cutoff
+removal). Gate: GPT-6 Astra (codex exec, read-only) FAIL with six findings (two
+major: material outside the permitted sources; "static" dropped from Chapter 9),
+all fixed; confirmation pass PASS, no new findings. Agent 3 told before drafting.
+Book 382 pages; guide page table recomputed from the aux (every range after
+Chapter 1 moves by one page). 0/0/0.
