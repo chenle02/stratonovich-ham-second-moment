@@ -550,6 +550,18 @@ Last updated: 2026-11-12 (11:15), L8 receipts at `aff7409` committed (`d476e17`)
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
+- **INDEX-CELL RULE: EVERY CELL (Le, 2026-11-12).** Chosen by Le after the
+  L9 re-review round 4 at `e2c50b5` (about 224 of ~395 Index first cells carry
+  no category word). Every Index-by-label first cell starts with one of
+  "whole result", "narrower result: ...", "foundation: ..." or "proof steps:
+  ...", derived from its section's heading with per-row overrides where a
+  row's declarations differ; mixed rows (declarations with and without
+  supplied inputs, or of different categories) are split; a script check
+  enforces the category word on every cell. Applied together with the split
+  modelled-object rule as decided earlier, which by its own terms also makes
+  RadiusMeanAnchor (abstract random paths M for M_R(Y_m)) and TypeContinuity's
+  two moment results (an abstract moment function for log E u^p) narrower
+  (missing constructions, not registered model choices).
 - **EASLEY L8 ARRAY REPLAY PASSED (2026-11-12).** First full run of the
   L11 array harness, at the L8 gate `aff7409`: build 5692847 (12 min),
   pilot 5692848, then array 5692933 (task 0 default mode + 91 targets).
