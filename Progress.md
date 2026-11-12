@@ -19178,3 +19178,12 @@ private/2026-11-12-title-versions-and-public-home.md: title and version rule
 DECIDED (dc6302e, 6f53bd8); where the public repositories live (chenle02, a new
 organization, not lean-pkg) is OPEN, with the options, checked facts, pros and
 cons, and the recommendations as given (including one correction).
+
+Hosting decided (Le, 2026-11-12): both public repositories stay under chenle02
+for v1.0.0, as in the release plan; recorded in
+private/2026-11-12-title-versions-and-public-home.md (section 3). Drafts for
+Le's review: CODEOWNERS and GitHub labels for the book (private/drafts/.github/)
+and the companion (private/drafts/companion/.github/), and
+private/2026-11-12-community-settings.md (rulesets with an owner bypass while
+there is one maintainer, tag protection for v*, squash merging, gh commands).
+All four public files pass the real filter byte-identical.
