@@ -550,6 +550,20 @@ Last updated: 2026-11-12 (11:15), L8 receipts at `aff7409` committed (`d476e17`)
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
+- **MODELLED-OBJECT RULE: SPLIT (Le, 2026-11-12).** Chosen by Le from three
+  options after the L9 strict-heading re-check at `d5667f5` flagged six
+  whole-result headings. A documented definitional model choice that is the
+  standard construction keeps a result "whole", with the model named in a
+  model-choice register in the ledger Scope: the d = 3 wave Green measure
+  built from `volume.toSphere` (L6 decision 4), so L9Completed,
+  LowAlphaConvolution and PhaseContractions stay whole. A missing construction
+  makes a result "narrower": QuotientObstruction (the noise W is not
+  constructed; covariance functional only), IndexedCone (abstract
+  GroundFamily, link to the wave family by documentation only) and
+  `L:uniform-series-tail` at L8 (chain measures fixed only by their mass; the
+  L11 constructed-measure version can be whole). Their coverage rows move to
+  conclusion weaker (rows of gated waves L3, L6 and L8 change class by this
+  decision; counts recomputed).
 - **"WHOLE RESULT" HEADING CONVENTION: STRICT (Le, 2026-11-12).** Le,
   verbatim: "I approve the strict meaning of \"whole result\" for the L9
   headings; finish the renames, re-run the r2 heading check, and record the
