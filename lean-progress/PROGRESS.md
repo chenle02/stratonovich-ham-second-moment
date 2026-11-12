@@ -758,6 +758,28 @@ Last updated: 2026-11-12 (evening), waves L12, L13, L14 APPROVED (defaults); L12
   at the gate commit. Easley stays gates and measured heavy work only, never
   an edit-compile loop. Stage 1 (array at every gate) continues; stage 3
   (overlapping arrays, <= ~600 CPUs) waits for two clean stage-2 runs.
+- **L12 a284420-ONLY ITEMS DONE (2026-11-12), each independently verified
+  (build, refutations, Audit, standard axioms only) and pushed.** TW
+  (`50a9687`, Office): L:terminal-wick whole for the constructed chain
+  measures (partial-sum and full-series comparison for real r; absolute L^2
+  convergence for complex r, the TeX's only complex-r claim; the complex-r
+  comparison is false and refuted). C1 (`ce98a8a`, `f99ff58`, <MACHINE>):
+  spectral identification of the smoothed covariance p_eps * Gamma by Fubini
+  against Lebesgue x mu, plus uniqueness of the tempered spectral measure
+  (Gaussian charFun + Measure.ext_of_charFun): L:damped-homogeneous-norms
+  whole, nothing supplied (p_eps * Gamma modelled by its density, a register
+  entry). SRC (`1bf6302`, <MACHINE>): L:source-finite-comparison and
+  L:tube-half-action whole; P:tube-rayleigh-transfer every conclusion on two
+  TRUE named inputs from L:tube-closed-geometry (TubeAttained, TubeTail; the
+  plan named only TubeTail; accepted under the true-named-input default).
+  F1 (`188405f`, Office): FockSandwich discharged on K2's Fourier-side model
+  (PiLp Fock layer, CFC sqrt and inverse root with explicit IsUnit, band
+  projection); C:static-interaction and P:static-phase-all-orders re-issued
+  without it, still narrower (CPInputs, PropagatorBlock and the rest).
+  Wording note for Le (manuscript, not acted on): "all finite partial-order
+  second moments" in L:terminal-wick could say "mixed moments E[Y_m Y_n],
+  hence the partial-sum second moments for real r". L13 items started on free
+  slots: DM0 (Office, interface first), C4, C6, C5 (<MACHINE>).
 - **FIRST EASLEY PRE-GATE REPLAY PASSED (stage 2, 2026-11-12).** At the L10
   integration commit `f0b795f` (built on <MACHINE>, pushed): `make-inputs.sh
   new:aff7409` selected the 21 targets new since the last replayed gate (the
