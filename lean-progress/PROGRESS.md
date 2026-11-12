@@ -526,6 +526,56 @@
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
+- **OVERNIGHT TODO LIST 2 (Le, 2026-11-11 evening: "make a todo list for
+  this overnight work and complete them overnight; the aim is to complete
+  the lean verification as much as possible").** Read, as on 2026-11-10, as
+  approval to RUN wave L7 as proposed in item 3; every gate stays Le's to
+  close. Order and status (updated as items complete):
+  1. [ ] Easley `leanchecker --fresh` replay of the 14 wave-L6 modules plus
+     umbrella and Axioms at companion bfa2fd0, two at a time (harness ready
+     in session scratch easley/wavel6: commit/tree pins, 73-target manifest,
+     16 fresh targets); evidence verification/leanchecker-easley-wave-l6/,
+     README replay sentence, record here. BLOCKED until Le connects the
+     Auburn VPN and opens the Duo-authenticated ssh master (`ssh -fN
+     Easley`); retried whenever the connection is up.
+  2. [ ] When #3 commits the two approved manuscript points: re-anchor the
+     companion (labels, statements/proofs, line citations,
+     provenance/manuscript-anchor.json, ledger anchor sentence; new receipts
+     if Lean comments move), narrow Codex re-check of P:spatial-smooth-ratio,
+     SpatialFourierBound, SpatialSmoothRatio, the DampedNormsHomog smoothing
+     rows and coverage notes; adjudicate; record.
+  3. [ ] Wave L7 (deterministic targets left after L6, from the "Not in L6"
+     list), one agent and worktree each off companion main e4c9bd4, same
+     gates as L6 (exact-hypothesis wrappers, refutations, audit, no sorry,
+     standard axioms):
+     - L7-a `L:inventory-product` (main TeX 2949-3015): the coefficient
+       bound [z^k] prod (1 + v_i z + sum b_il z^l) <= C^k/(k!)^nu, in full
+       (deterministic).
+     - L7-b `L:uniform-series-tail` (main 3666-): the L^2 tail and limit
+       statements from the uniform r-moment bound, with any structural input
+       of its proof (the coefficient extraction in r) as a named hypothesis.
+     - L7-c D8-lite half (a): density of smooth compactly supported
+       functions in the hand-rolled weak-gradient H^1 (WeakSobolev).
+     - L7-d `P:spatial-four-linear` and `P:spatial-energy-map`
+       (integrated_spatial_occupation.tex 150-316) on H^1 profiles, with
+       L7-c's density as an explicit hypothesis (instantiated at
+       integration).
+     - L7-e `P:occupation-physical-class` (integrated_spatial_occupation.tex
+       317-) over L7-c/L7-d, same pattern.
+     - L7-f the deterministic scalar steps of `C:static-interaction` and
+       `P:interval-coefficients` (main 2649-, 3365-) as step rows
+       (inputs-supplied, weaker), reusing SeriesType.
+     Fallback per item: the largest honest scope with the rest as named
+     inputs. Then integrate (umbrella, Axioms, claims, ledger, coverage,
+     README/FORMALIZATION), check-controls, extend the comparator,
+     receipts of both tiers at one commit, regate, claims ledger READY 0
+     open; one Codex GPT-6.1-Sol review per item plus a confirmation;
+     adjudicate and repair; STOP for Le's gate.
+  4. [ ] Board, README Trust section, STATUS-DIGEST; tell #16, #3, #24.
+  5. [ ] Retro of the night's lessons into Le-AI-Lab skills.
+  NOT for the night (Le's decisions): closing the L7 gate; any public
+  visibility change (HOLD); acceptance of lean-pkg proposal 0015; a lean-pkg
+  upgrade; manuscript edits (#3's, approved by Le, only re-anchored here).
 - **Two manuscript points from the Lean verification (asked #3 at Le's
   request, 2026-11-11; answer pending):** (1) R_0 < infinity WITHOUT
   T:full-upper: Lean proves deterministically under H:homog alone, for every
