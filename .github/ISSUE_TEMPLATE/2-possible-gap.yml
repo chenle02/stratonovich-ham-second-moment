@@ -1,0 +1,67 @@
+name: I think a result has a gap
+description: Report an error, a gap, or a step you could not verify in one result.
+title: "[gap] <label>: <short description>"
+labels: ["possible-gap"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. The result's row in `VERIFICATION.md` becomes
+        `disputed (issue #n)` while this issue is open. It returns to
+        `checked` only through a pull request that links the closed issue.
+  - type: input
+    id: label
+    attributes:
+      label: Result label
+      placeholder: "L:..."
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Commit SHA, release tag or arXiv version you read.
+    validations:
+      required: true
+  - type: textarea
+    id: step
+    attributes:
+      label: The step in question
+      description: Quote the display, equation number or sentence, and say exactly what does not follow.
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Your assessment
+      options:
+        - The step is false (counterexample or contradiction below)
+        - The step is unjustified as written, but may be repairable
+        - A cited input does not apply (hypotheses not met)
+        - I could not verify it (it may be correct)
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: A counterexample, a computation, a reference, or the reason you believe the step fails.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: What depends on it
+      description: Optional. Which later results or theorems use this step, if you know.
+  - type: textarea
+    id: repair
+    attributes:
+      label: Proposed repair
+      description: Optional. A repair is also welcome as a pull request.
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Ground rules
+      options:
+        - label: This report contains no one else's unpublished work or copyrighted text.
+          required: true

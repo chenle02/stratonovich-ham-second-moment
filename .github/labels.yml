@@ -1,0 +1,36 @@
+# GitHub labels for the book repository. GitHub does not read this file by
+# itself; the maintainer applies it with `gh label` when the repository is set up.
+# (A "GitHub label" here is a tag on an issue or pull request, not a LaTeX
+# \label of a result.)
+
+# Version level of a pull request (VERSIONING.md). Every pull request carries
+# exactly one; the reviewer who merges it confirms it. The next release takes
+# the highest level merged since the last release.
+- name: patch
+  color: "c5def5"
+  description: "No change to the mathematics: wording, typos, references, figures, layout, metadata"
+- name: minor
+  color: "fbca04"
+  description: "Mathematics changes, every main theorem keeps its statement"
+- name: major
+  color: "d93f0b"
+  description: "Needs a new arXiv version: a main theorem added or restated, or an error affecting one"
+
+# Kinds of issue (used by the issue templates).
+- name: verification
+  color: "0e8a16"
+  description: "A reader checked a result (I checked a result)"
+- name: possible-gap
+  color: "b60205"
+  description: "A reader thinks a result has a gap"
+- name: question
+  color: "d4c5f9"
+  description: "Interpretation of a statement or a question"
+
+# Bookkeeping.
+- name: erratum
+  color: "5319e7"
+  description: "A correction of a stated result; record it in the changelog and the next release"
+- name: lean
+  color: "1d76db"
+  description: "Concerns the Lean companion or Appendix F"

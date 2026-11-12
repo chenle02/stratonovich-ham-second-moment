@@ -1,0 +1,23 @@
+# Who must review a pull request before it is merged. With branch protection
+# "Require review from Code Owners", a pull request that touches a path below
+# needs an approving review from the owner listed for it. The last matching
+# line wins. For version 1.0.0 the maintainer is the author alone; add a
+# co-maintainer to a line when one is appointed.
+
+# Everything, by default.
+*                                   @chenle02
+
+# The mathematics: the book's TeX sources and the reading edition.
+/notes/                             @chenle02
+
+# The public verification table: every change of a check status.
+/VERIFICATION.md                    @chenle02
+
+# Credit, versions and release rules.
+/CONTRIBUTING.md                    @chenle02
+/VERSIONING.md                      @chenle02
+/CHANGELOG.md                       @chenle02
+/CITATION.cff                       @chenle02
+
+# Data behind Appendices E and F, and the Lean pin.
+/scripts/                           @chenle02

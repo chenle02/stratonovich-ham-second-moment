@@ -1,0 +1,66 @@
+name: I checked a result
+description: Report a check of one result, so its row in VERIFICATION.md can record it.
+title: "[check] <label>"
+labels: ["verification"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for checking. One issue per result. You can also open a pull
+        request that changes the result's row in `VERIFICATION.md` directly
+        (see `CONTRIBUTING.md`); this form is for reporting the check first.
+  - type: input
+    id: label
+    attributes:
+      label: Result label
+      description: The LaTeX label from VERIFICATION.md, for example `L:masked-trig-products`.
+      placeholder: "L:..."
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version checked
+      description: Commit SHA, release tag or arXiv version you read.
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: What you checked
+      options:
+        - label: The statement (hypotheses and conclusion as written)
+        - label: Every step of the proof
+        - label: The cited inputs, and that their hypotheses hold where they are used
+        - label: The constants and their dependence
+  - type: textarea
+    id: notchecked
+    attributes:
+      label: What you did not check
+      description: Be explicit. A precise partial check is more useful than a vague full one.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes, typos or suggestions
+      description: Minor issues found along the way. A gap that a conclusion depends on belongs in a "possible gap" issue instead.
+  - type: dropdown
+    id: tools
+    attributes:
+      label: How you checked
+      description: Credit does not depend on tools; this is recorded for the history.
+      options:
+        - By hand
+        - By hand, with an AI assistant
+        - With a proof assistant
+        - Other (say below)
+    validations:
+      required: true
+  - type: checkboxes
+    id: responsibility
+    attributes:
+      label: Responsibility
+      options:
+        - label: I take responsibility for this report and agree that my name and this issue may be cited in VERIFICATION.md and the paper's acknowledgments.
+          required: true

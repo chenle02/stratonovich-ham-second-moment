@@ -1,152 +1,103 @@
-# Article-Stratonovich-HAM-Second-Moment
+# Stratonovich Waves Driven by Space-Time Gaussian Noise
 
-**Primary working branch:** `master`, consolidated with the complete research history on November 9, 2026. The canonical checkout now contains the current manuscript and development history; no change of checkout is needed. The editorial reader history is now merged here; its branch remains preserved.
+*Second Moment and Exact Asymptotics*
 
-**Start here:** [STATUS-DIGEST.md](STATUS-DIGEST.md) is a one-page gate board and constraint summary (derived; Progress.md remains the authority).
+> To make new mathematics found with AI as trustworthy as mathematics proved
+> by hand: every step open, every check recorded, every contributor credited.
 
-**Current book-style companion:** [384-page book PDF](notes/notes_stratonovich_ham_second_moment.pdf), with 12 chapters, six appendices, a proof guide, contents and illustrations list. The [28-page reader](notes/notes_stratonovich_ham_second_moment_reader.pdf) remains the short entry point. See [the book guide](notes/BOOK-GUIDE.md), [source/PDF validation](notes/figures/VALIDATION.json), [reading guide](notes/README-reader.md) and [development history](AI-DEV-HISTORY.md).
+This repository holds a research project in stochastic partial differential
+equations, developed by Le Chen (Auburn University) with Amy, his AI research system,
+together with its **complete development history**. It is published so that
+mathematicians can study how the work was actually done, check the results,
+and help interpret them.
 
-All mathematical content and labels are retained; supplementary routes are now
-in appendices. The companion has19 TikZ figures and the reader has nine.
-Their external references have been refreshed for the new numbering.
-The 215 technical proofs retain their mathematics. **The mathematical draft
-remains unadopted:** book layout does not promote any independent review.
+## The mathematics
 
-The second moment of the Stratonovich hyperbolic Anderson model with noise
-fractional in time: an upper bound at the correct scale
-t^{(4−α−α₀)/(3−α)} and the sharp p = 2 constant, building on X. Chen,
-*Time-dependency in hyperbolic Anderson models: Stratonovich regime*
-(author version, submitted to AAP; arXiv:2510.01412).
+We study the hyperbolic Anderson model, the stochastic wave equation
+$\partial_t^2 u = \Delta u + u\,\dot W$ in dimensions one to three, with initial
+data $(1,0)$, in the Stratonovich sense. The Gaussian noise has temporal
+covariance $|s-t|^{-\alpha_0}$ and a homogeneous spatial covariance of order
+$\alpha$. The paper identifies the large-time behaviour of the second moment at
+the scale $t^{\kappa}$, $\kappa = (4-\alpha-\alpha_0)/(3-\alpha)$, with an
+intrinsic constant given by an explicit variational formula.
 
-**Goal revised by Le (2026-10-31):** derive the actual asymptotic constant,
-whatever the computation gives. Chen's conjectured constants remain a
-comparison rather than a required answer. See [PROJECT-GOAL.md](PROJECT-GOAL.md).
+- Reading edition (28 pages): `notes/notes_stratonovich_ham_second_moment_reader.pdf`
+- Technical notes (386 pages): `notes/notes_stratonovich_ham_second_moment.pdf`
+- arXiv: the identifier is added here after posting.
 
-**Current written result (2026-11-03):** the original second-moment
-limit for every admissible dimension and covariance has an explicit
-intrinsic positive-control variational formula. The covariance amplitude,
-kinetic coefficient one and variance-half action are specified in
-[the limit theorem](notes/integrated_intrinsic_constant.tex). Zero covariance
-is treated directly. The earlier independent full upper bound is retained.
+## What is established, and what is not
 
-The [occupation bounds](notes/integrated_occupation_ceiling.tex) and
-[spatial-white example](notes/integrated_white_evaluation.tex) bound this
-same constant. The white spatial energy is evaluated exactly; the moment
-bounds are not an exact numerical evaluation of the intrinsic supremum.
-The auxiliary label-one score is not identified with an actual first-moment
-limit or Chen's printed constants.
+Please read this before citing anything.
 
-The current scientific source, `af97ae4`, contains 28 TeX files, 214 proof
-identities, 240 formal statements and a clean 263-page PDF. Its new compact
-Young norm argument and direct real conservation proof passed a bounded
-DeepSeek V4 Pro review of six changed deductions and their applications.
-See the [adjudication](reviews/2026-11-03-structural-baseline-candidate/root-adjudication.md).
+- The proofs are written out in full. Part I (the reading edition) has not
+  yet been checked line by line by a human reader.
+- The technical notes have been reviewed by AI systems from several model
+  families. The latest whole-paper review returned *pass with notes* at
+  **medium** confidence and is **not accepted** under the project's own
+  standard, which requires high confidence.
+- A Lean companion formalizes some results in full under the manuscript's
+  own hypotheses. For others it proves every conclusion, or checks steps,
+  with the analytic inputs entering as explicit hypotheses. Most of the main
+  theorems are outside Lean: three of the four; for the fourth, Lean proves a
+  narrower conclusion. VERIFICATION.md says, result by result, what
+  Lean covers. See the companion at
+  https://github.com/chenle02/stratonovich-ham-second-moment-lean and its
+  statement ledger. The correspondence between Lean and the manuscript was
+  reviewed by AI, not by a human reader.
+- **No AI review grade is a proof.** Human verification is recorded,
+  result by result, in [VERIFICATION.md](VERIFICATION.md).
 
-The [current index](reviews/2026-11-02-main-deepseek/proof-index-v7-neutral.json)
-and [depth ledger](reviews/2026-11-02-main-deepseek/depth-ledger-v54.json)
-record exact body and statement bindings. There are 210 locally accepted
-HIGH scopes, one unaccepted proof row (010), and three pending editorial
-changes. These scoped states do not establish whole-argument acceptance. Scoped
-reviews bind their recorded versions and do not certify the whole argument.
+## How you can help
 
-DeepSeek V4 Pro is the main reviewer under Le's direction. The current
-`af97ae4` whole MAIN is terminal after one fresh session and one factual
-same-session public-record supplement: actual INCONCLUSIVE/low, with 214
-reported proof rows (13 CHECKED, 201 LIMITED) and 13 literal joins (2 PASS,
-11 PARTIAL). No source mathematical defect was located; the critical end-to-end
-reconstruction remains incomplete. The [terminal record](reviews/2026-11-03-main-af97-terminal/)
-preserves both original and supplemental texts and their reporting qualifiers.
-Earlier whole reports on `8ce03ae` remain dated history. Local scoped states
-are preserved and are not combined into whole acceptance.
+- **Check a result.** Pick a row in [VERIFICATION.md](VERIFICATION.md), check
+  it, and open a pull request that changes that row and says exactly what you
+  checked.
+- **Report a gap or an error.** Open an issue with the result's label.
+- **Discuss interpretation.** Use GitHub Discussions.
+- **Formalize.** See the Lean companion's contributor guide and its work
+  packages.
 
-The first themed working pass is now closed: DeepSeek returned
-PASS_WITH_NOTES/medium for nine foundational proofs and fifteen declarations.
-Its one factual addendum records eight CHECKED and PROOF010/S040 LIMITED,
-because the mixed-series input remains unworked in that pass. The original
-factorial calculation is correct; returned captions and metadata errors are
-qualified in the [phase adjudication](reviews/2026-11-03-main-af97-theme-I-A-pilot/root-adjudication.md).
-This supplies mathematical working and does not meet the required HIGH gate.
-The following fifteen-proof pass and the later constructor, phase,
-independent-upper and intrinsic-constant passes are also closed. Their returned
-confidence and qualifications remain recorded under their original scopes;
-none supplies whole-argument acceptance. No source repair was identified in
-those adjudications.
+Credit is set out in advance in [CONTRIBUTING.md](CONTRIBUTING.md): every
+merged contribution is acknowledged by name, and substantial contributions
+lead to coauthorship.
 
-The latest remaining-calibration review (2026-11-04) covered 21 proofs,
-60 declarations and their canonical join. DeepSeek returned
-INCONCLUSIVE/medium, with eight CHECKED and thirteen LIMITED proof records.
-Root read the entire public response and all three complete author readbacks.
-The [closed adjudication](reviews/2026-11-04-main-af97-calibration-prebound/final/)
-distinguishes incomplete reconstruction and returned errors from manuscript
-gaps. No new source gap was established under the named inputs; no local grade
-or confidence was promoted. The original whole-current-source 214-proof,
-240-declaration, 13-join scientific verification remains open. Closed reports
-will not be retried for confidence or formatting.
+## How this was built
 
-The 263-page PNG preparation supplies no independent visual reading.
-Source/application and pixel checks, Kimi, the independent full-PDF visual audit
-and a fresh final cold read remain open. Kimi's recorded monthly-quota 429
-supplied no review or images. Wiki propagation and final private delivery
-remain pending. No whole-paper, goal-completion or circulation clearance is
-claimed.
+[HOW-THIS-WAS-BUILT.md](HOW-THIS-WAS-BUILT.md) is a guided tour of the
+development history: the workflow, the reviewer model families, the routes
+that failed, and where to look in the record. Some material was removed from
+the published history (other authors' copyrighted texts, private
+infrastructure details, collaborators' unpublished work, and private planning
+notes); [REDACTIONS.md](REDACTIONS.md) lists every class of removal with its
+reason and counts.
 
-The 80 finite Lean facts retain their 22 analytic boundaries; an official
-private companion and its package gate are separately authorized steps.
-Private wiki maintenance and Git delivery have verified earlier checkpoints;
-current outcome propagation and final delivery remain separate obligations.
-`Progress.md` is the workflow authority. The human launcher's `HANDOFF.md`
-identifies the active research checkout.
+The book's Appendix E, "The AI work in numbers", counts the work from this
+record: tokens and sessions by model family, every review run and its
+outcome, the failed approaches, and a day-by-day timeline with 14 milestones.
+Every number is rebuilt by the scripts in `scripts/ai-statistics/`. The
+milestones are listed in `scripts/ai-statistics/milestones.json` and tagged
+in this repository (`m01-project-set-up` … `m14-lean-gates-closed`), so
+`git checkout m05-goal-revised` shows the project as it stood that day.
 
-## Start here
+## AI use
 
-1. `AGENTS.md`: goal, scope boundary, structural facts, rules
-2. `PROJECT-GOAL.md`: completion contract
-3. `Progress.md`: workflow authority and round plan
-4. `sources/SOURCE-MANIFEST.md`: hash-pinned sources and page pinpoints
-5. `notes/notes_stratonovich_ham_second_moment.tex`: model, known results, targets, route
+Amy, Le Chen's AI research system, developed the mathematics: the models
+working within her drafted the proofs, the LaTeX source and the bookkeeping.
+Le Chen's role was to drive the work: choosing the problem, setting and
+revising the goals, deciding which approaches to pursue or abandon, choosing
+the reviewers and deciding which results to keep. Amy is model-agnostic: a
+research operating system (workflows and standing rules, plus a research
+knowledge base of bibliography, reference library, curated arXiv sources and
+an SPDE wiki) within which any capable language model can work. Here models
+from several families worked within her: Anthropic Claude, OpenAI GPT
+through Codex, DeepSeek and Kimi. Reviews are always recorded with the
+reviewer's model family, because a review counts only when that family
+differs from the author's. Amy is not an author: Le Chen takes full
+responsibility for the content. The paper's AI-use statement gives details.
 
-## Paper-dev dashboard
+## License and citation
 
-From the active research checkout, refresh the ignored session-state mirror
-from the canonical sections of `Progress.md`, then launch the dashboard:
-
-```bash
-python3 scripts/refresh-paper-dev-state.py
-paper-dev-dash
-```
-
-The historical round number remains4 while later scientific-cycle accounting
-is audited. It is not a count of reviewer calls or a reset of review debt.
-Dashboard review-directory counts are heuristic file discovery, not counts of
-scientific rounds or accepted reviews. Read the actual adjudications for
-qualified confidence. Missing session-local telemetry is not fabricated.
-
-A separate launcher checkout can display the research state using the refresh
-script's `--repo LAUNCHER --authority RESEARCH` options. Its own review list
-still describes its older snapshot; `paper-dev-dash --repo RESEARCH` displays
-the active checkout directly. The state JSON and lock remain gitignored.
-This repair adds no reviewer role assignments or passed scientific gates.
-
-## Building
-
-```bash
-latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=notes notes/notes_stratonovich_ham_second_moment.tex
-```
-
-## Hosting
-
-`origin` is the <HUB> bare repository
-`<HUB>:<HOME>/<REMOTES>/Article-Stratonovich-HAM-Second-Moment.git`.
-The wiki project page is
-`../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md`.
-
-## Related projects
-
-[held back: collaborators' unpublished work]
-
-## A guitar in a sandstorm
-
-[The illustrated opening](media/guitar-sandstorm/README.md) collects an
-AI-generated desert-guitar image and two short videos inspired by Walsh’s
-stochastic-string example. Source credit, the CC0 dedication and the distinction
-between artistic illustration and numerical simulation accompany the files.
+- Text and manuscript: CC BY 4.0 (`LICENSE`). Scripts and Lean code:
+  Apache-2.0 (`LICENSES/Apache-2.0.txt`).
+- Cite the paper and this repository; see `CITATION.cff`. The arXiv
+  identifier and the Zenodo DOI of the release are added after posting.
