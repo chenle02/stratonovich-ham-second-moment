@@ -6,11 +6,11 @@
 
 ## Status (kept current; updated at every milestone)
 
-Last updated: 2026-11-12, after the wave-L8 proposal (Article 35a6847).
+Last updated: 2026-11-12, wave L8 approved and opened.
 
 | Item | Current state |
 |---|---|
-| Current wave | **L8 PROPOSED** (2026-11-12): eight items, six decisions with defaults; awaiting Le's approval (bullet "WAVE L8: PROPOSED" below) |
+| Current wave | **L8 OPEN** (approved by Le 2026-11-12 with the default decisions): nine item agents running in parallel (bullet "WAVE L8" below) |
 | Last closed gate | **L7**, closed by Le 2026-11-12 at companion `f3be834` over manuscript `a284420`, together with the re-anchor from `975feb3` |
 | Manuscript anchor | Article `a284420` (#3's two approved edits: `L:spatial-fourier-bound`, `E:damped-multiplier-comparison`) |
 | Companion | `chenle02/stratonovich-ham-second-moment-lean`, PRIVATE (HOLD: no public flip without Le); lean-pkg `verified-private` at `f3be834` (receipts `5aa557b`: comparator PASS over all 1430 theorem claims; lower tier 0 sorry, 1731 claim axioms, standard axioms only); docs-only HEAD `0269e61`; `claims ledger` READY, 1071 required, 1681 verified, 0 open |
@@ -23,7 +23,7 @@ Last updated: 2026-11-12, after the wave-L8 proposal (Article 35a6847).
 | Book Appendix F (#24) | pinned to verified `f3be834`, coverage `ed3cd68` (book `dcb031e`); single SHA `0269e61` sent for the re-pin (scope fix + L6 replay) |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
 | Decisions open for Le | approve L8 (with defaults); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
-| Next actions | on L8 approval: launch nine agents; Easley replay of the L7 modules via <MACHINE>; L8 integration, comparator, receipts, reviews, Le's gate |
+| Next actions | L8 items -> integration, docs, comparator, receipts, reviews, Le's gate; collect the Easley L7 replay (via <MACHINE>) |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
 
@@ -547,7 +547,13 @@ Last updated: 2026-11-12, after the wave-L8 proposal (Article 35a6847).
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
-- **WAVE L8: PROPOSED (2026-11-12) for Le's approval.** From three read-only
+- **WAVE L8: APPROVED by Le (2026-11-12) as proposed, with the default
+  answers to the six decisions; OPENED** (nine item agents in parallel
+  worktrees, branches wave-l8/{a,b,c1,c2,d,e,f,g,h} off companion main
+  0269e61; Easley replay of the eight wave-L7 modules at f3be834 submitted
+  via <MACHINE> at the same time). Le, verbatim: "I approve Lean wave L8 as
+  proposed in lean-progress/PROGRESS.md, with the default answers to its six
+  decisions." Proposal as written: From three read-only
   feasibility reconnaissances against the TeX at a284420 with every Mathlib
   name probed by compiling scratch files against companion f3be834 (session
   scratch l8-feas/R1.md, R2.md, R3.md and their probe files; beta.lean and
@@ -1065,6 +1071,7 @@ Last updated: 2026-11-12, after the wave-L8 proposal (Article 35a6847).
 | L7 | OPEN (run overnight under Le's instruction) | 2026-11-11 | Six items (inventory product, uniform series tail, H^1 density, spatial four-linear and energy map, occupation physical class, interval/static scalar steps) plus two completion modules |
 | L7 | CLOSED (Le) | 2026-11-12 | Gate at companion f3be834 over a284420 (with the re-anchor from 975feb3); six reviews, confirmation, re-anchor re-check and confirmation; reviews/2026-11-11-lean-wave-l7-*, reviews/2026-11-12-lean-* |
 | L8 | PROPOSED | 2026-11-12 | Eight items: R_alpha identity; damped-norm lower bounds and smoothing claims; S1Bdd discharged deterministically (two agents); spatial bracket for S_2^pos; mask removal; finite Wick foundation and L:terminal-wick; symplectic-free core; static-phase Cauchy steps; awaiting Le's approval |
+| L8 | OPEN (approved by Le) | 2026-11-12 | Defaults for the six decisions; nine agents launched; Easley L7 replay submitted via <MACHINE> |
 
 ## New proof seams retained for later statement fences
 
