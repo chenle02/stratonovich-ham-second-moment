@@ -1,0 +1,168 @@
+Review the frozen packet rooted at <HOME>/.local/state/Le-AI-Lab/stratonovich-lean-reanchor-a284420-review/attempt-01/workspace. Primary target: candidate/statement-ledger.md. Source revision: 3eaf6ce8a58465cdfa2a895686ae6066390dcca2.
+
+You are an independent artifact reviewer. Read only the frozen packet
+and the supplied review contract. Report correctness, missing assumptions,
+incorrect constants, failed implications, and uncertainty. Do not edit files,
+use the network, send messages, publish, install, or delegate. Do not launch a
+research or coding workflow. Return a scientific report rather than a plan.
+Use exactly one JSON object with schema "subscription-review-report/1", verdict (PASS, PASS_WITH_NOTES, FAIL, or
+INCONCLUSIVE), confidence (high, medium, low), source_coverage (list of strings),
+checks (list of objects with claim, verdict, reason), findings (an object with
+fatal, major, minor lists), required_repairs (list), and limitations (list).
+required_repairs contains ONLY mandatory changes that block acceptance. Optional
+clarifications belong in findings.minor, never in required_repairs. PASS and
+PASS_WITH_NOTES require empty fatal, major and required_repairs lists and no
+failed/unchecked claim. If a repair is mandatory, return FAIL or INCONCLUSIVE;
+never weaken a finding to obtain PASS.
+Read every required source completely. Never use Grep head_limit or any other
+truncating or limiting option on a required source. After any pagination or
+truncation marker (for example a partial Read, an offset/limit notice, or
+"output truncated"), keep reading the next range until the whole file is read.
+In source_coverage, list each exact file and the line ranges you actually read.
+If coverage of any required source is incomplete, say "partial" for that source
+in source_coverage and state the gap in limitations.
+An AI review is not human verification or a novelty audit. Do not silently
+repair a candidate and PASS the original. A terminal error is not a verdict.
+
+Frozen packet file index (relative to workspace; a listed file is not proof of reading):
+["PROVENANCE.json", "candidate/statement-ledger.md", "docs/coverage-scope-tex.yaml", "lean/StratonovichHAMSecondMoment/Axioms.lean", "lean/StratonovichHAMSecondMoment/ClockCopy.lean", "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean", "lean/StratonovichHAMSecondMoment/DampedNorms.lean", "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean", "lean/StratonovichHAMSecondMoment/DriverParameters.lean", "lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean", "lean/StratonovichHAMSecondMoment/FrequencyRow.lean", "lean/StratonovichHAMSecondMoment/GaussianComparison.lean", "lean/StratonovichHAMSecondMoment/GaussianIBP.lean", "lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean", "lean/StratonovichHAMSecondMoment/GaussianTest.lean", "lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean", "lean/StratonovichHAMSecondMoment/H1Density.lean", "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean", "lean/StratonovichHAMSecondMoment/IndexedCone.lean", "lean/StratonovichHAMSecondMoment/IntervalScalar.lean", "lean/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean", "lean/StratonovichHAMSecondMoment/InventoryProduct.lean", "lean/StratonovichHAMSecondMoment/KappaRange.lean", "lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean", "lean/StratonovichHAMSecondMoment/MaskedContinuousWave.lean", "lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean", "lean/StratonovichHAMSecondMoment/MaskedModulation.lean", "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean", "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean", "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean", "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean", "lean/StratonovichHAMSecondMoment/PhaseBessel.lean", "lean/StratonovichHAMSecondMoment/QuotientObstruction.lean", "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean", "lean/StratonovichHAMSecondMoment/RayleighTail.lean", "lean/StratonovichHAMSecondMoment/SeriesType.lean", "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean", "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean", "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean", "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean", "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean", "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean", "lean/StratonovichHAMSecondMoment/SpectralHomog.lean", "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean", "lean/StratonovichHAMSecondMoment/TimeCompletion.lean", "lean/StratonovichHAMSecondMoment/TimeFractional.lean", "lean/StratonovichHAMSecondMoment/TimeSchur.lean", "lean/StratonovichHAMSecondMoment/TypeContinuity.lean", "lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean", "lean/StratonovichHAMSecondMoment/VariationalDilation.lean", "lean/StratonovichHAMSecondMoment/VariationalFloor.lean", "lean/StratonovichHAMSecondMoment/VariationalMean.lean", "lean/StratonovichHAMSecondMoment/VariationalRate.lean", "lean/StratonovichHAMSecondMoment/WaveGreen.lean", "lean/StratonovichHAMSecondMoment/WaveKernel.lean", "lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean", "lean/StratonovichHAMSecondMoment/WeakSobolev.lean", "lean/StratonovichHAMSecondMoment/WhiteClockLaplace.lean", "lean/StratonovichHAMSecondMoment/WhiteRelativeWidth.lean", "lean/claims.yaml", "lean/coverage.yaml", "lean/provenance/manuscript-anchor.json", "manuscript-975feb3/notes/integrated_spatial_occupation.tex", "manuscript-975feb3/notes/notes_stratonovich_ham_second_moment.tex", "manuscript/notes/ai-statistics-data.tex", "manuscript/notes/ai-statistics.tex", "manuscript/notes/book-layout.tex", "manuscript/notes/chapter-guides/01-setting.tex", "manuscript/notes/chapter-guides/02-G0.tex", "manuscript/notes/chapter-guides/03-independent-upper.tex", "manuscript/notes/chapter-guides/04-gaussian-foundations.tex", "manuscript/notes/chapter-guides/05-operator-paths.tex", "manuscript/notes/chapter-guides/06-wave-evolution.tex", "manuscript/notes/chapter-guides/07-lower.tex", "manuscript/notes/chapter-guides/08-means.tex", "manuscript/notes/chapter-guides/09-growing-radius.tex", "manuscript/notes/chapter-guides/10-point-upper.tex", "manuscript/notes/chapter-guides/11-constant.tex", "manuscript/notes/chapter-guides/12-finite-order.tex", "manuscript/notes/chapter-guides/13-direct.tex", "manuscript/notes/chapter-guides/14-covariance.tex", "manuscript/notes/chapter-guides/15-static-clock.tex", "manuscript/notes/figures/active-subset-optimization.tex", "manuscript/notes/figures/chapter-roadmap.tex", "manuscript/notes/figures/common-noise.tex", "manuscript/notes/figures/cross-colour-cube.tex", "manuscript/notes/figures/dyadic-cover.tex", "manuscript/notes/figures/endpoint-elimination.tex", "manuscript/notes/figures/gaussian-enlargement.tex", "manuscript/notes/figures/global-control-blocks.tex", "manuscript/notes/figures/hermite-cutoff.tex", "manuscript/notes/figures/interval-allocations.tex", "manuscript/notes/figures/interval-end-metrics.tex", "manuscript/notes/figures/light-cone.tex", "manuscript/notes/figures/literature-interpretations.tex", "manuscript/notes/figures/literature-results-drawing.tex", "manuscript/notes/figures/literature-results-map.tex", "manuscript/notes/figures/nonseparable-controls.tex", "manuscript/notes/figures/order-of-limits.tex", "manuscript/notes/figures/positive-gram.tex", "manuscript/notes/figures/proof-map.tex", "manuscript/notes/figures/styles.tex", "manuscript/notes/figures/two-chain-pairings.tex", "manuscript/notes/figures/walsh-guitar.tex", "manuscript/notes/figures/white-strip.tex", "manuscript/notes/future_optimizers.tex", "manuscript/notes/future_universality.tex", "manuscript/notes/future_work.tex", "manuscript/notes/history_wave_equations.tex", "manuscript/notes/index/anchors.tex", "manuscript/notes/index/list-of-notation.tex", "manuscript/notes/index/setup.tex", "manuscript/notes/integrated_actual_operator_driver.tex", "manuscript/notes/integrated_cameron_mean.tex", "manuscript/notes/integrated_compact_gaussian.tex", "manuscript/notes/integrated_compact_mean_family.tex", "manuscript/notes/integrated_constant_phase_young.tex", "manuscript/notes/integrated_covariance_foundation.tex", "manuscript/notes/integrated_exact_scaling.tex", "manuscript/notes/integrated_gaussian_tubes.tex", "manuscript/notes/integrated_intrinsic_constant.tex", "manuscript/notes/integrated_masked_moments.tex", "manuscript/notes/integrated_occupation_ceiling.tex", "manuscript/notes/integrated_point_transfer.tex", "manuscript/notes/integrated_positive_gram.tex", "manuscript/notes/integrated_radius_anchor.tex", "manuscript/notes/integrated_raw_block_lower.tex", "manuscript/notes/integrated_signed_moment_upper.tex", "manuscript/notes/integrated_signed_static.tex", "manuscript/notes/integrated_source_convergence.tex", "manuscript/notes/integrated_spatial_occupation.tex", "manuscript/notes/integrated_symplectic_phase.tex", "manuscript/notes/integrated_temporal_equilibrium.tex", "manuscript/notes/integrated_uniform_mean.tex", "manuscript/notes/integrated_uniform_products.tex", "manuscript/notes/integrated_unmasked_variational.tex", "manuscript/notes/integrated_wave_variance.tex", "manuscript/notes/integrated_white_evaluation.tex", "manuscript/notes/integrated_young_upper_foundation.tex", "manuscript/notes/lean-coverage-data.tex", "manuscript/notes/lean-coverage.tex", "manuscript/notes/literature_review.tex", "manuscript/notes/no-go-appendix.tex", "manuscript/notes/notes_stratonovich_ham_second_moment.tex", "manuscript/notes/preface.tex", "manuscript/notes/theory_outlook.tex", "prior/wave-l7-confirm-report.json"]
+
+Narrow correspondence re-check: the Lean companion ledger after re-anchoring to manuscript revision a284420 (two approved manuscript edits) and two confirmation repairs
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+CONTEXT
+Manuscript revision a284420 made two approved edits: (1) in
+notes/integrated_spatial_occupation.tex a new lemma L:spatial-fourier-bound
+(E:spatial-fourier-bound), a deterministic Fourier bound for the spatial
+energy, placed before P:spatial-smooth-ratio, whose proof now obtains
+0 < R_0 < infinity from it; (2) in the main file, L:damped-homogeneous-norms
+now states a comparison for measurable spectral multipliers m with values in
+[0,1] and nested Laplace domains S subset S' (E:damped-multiplier-comparison).
+The Lean companion was re-anchored from 975feb3 to a284420 (line citations
+remapped, rows for the two edited results revised). Two documentation
+findings (C1, C2) of an earlier confirmation review (prior/) were repaired
+at the same time. Your task is narrow: the rows of the two edited results
+and the new lemma, the re-anchor, and C1/C2.
+
+PACKET
+- candidate/statement-ledger.md : the ledger at Lean companion commit 3eaf6ce8a584.
+- lean/claims.yaml, lean/coverage.yaml, lean/provenance/manuscript-anchor.json,
+  docs/coverage-scope-tex.yaml.
+- prior/wave-l7-confirm-report.json : the confirmation review with C1, C2.
+- the Lean modules (ground truth for what is proved):
+  lean/StratonovichHAMSecondMoment/Axioms.lean
+  lean/StratonovichHAMSecondMoment/ClockCopy.lean
+  lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean
+  lean/StratonovichHAMSecondMoment/DampedNorms.lean
+  lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean
+  lean/StratonovichHAMSecondMoment/DriverParameters.lean
+  lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean
+  lean/StratonovichHAMSecondMoment/FrequencyRow.lean
+  lean/StratonovichHAMSecondMoment/GaussianComparison.lean
+  lean/StratonovichHAMSecondMoment/GaussianIBP.lean
+  lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean
+  lean/StratonovichHAMSecondMoment/GaussianTest.lean
+  lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean
+  lean/StratonovichHAMSecondMoment/H1Density.lean
+  lean/StratonovichHAMSecondMoment/HomogHypothesis.lean
+  lean/StratonovichHAMSecondMoment/IndexedCone.lean
+  lean/StratonovichHAMSecondMoment/IntervalScalar.lean
+  lean/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean
+  lean/StratonovichHAMSecondMoment/InventoryProduct.lean
+  lean/StratonovichHAMSecondMoment/KappaRange.lean
+  lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean
+  lean/StratonovichHAMSecondMoment/MaskedContinuousWave.lean
+  lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean
+  lean/StratonovichHAMSecondMoment/MaskedModulation.lean
+  lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean
+  lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean
+  lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean
+  lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean
+  lean/StratonovichHAMSecondMoment/PhaseBessel.lean
+  lean/StratonovichHAMSecondMoment/QuotientObstruction.lean
+  lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean
+  lean/StratonovichHAMSecondMoment/RayleighTail.lean
+  lean/StratonovichHAMSecondMoment/SeriesType.lean
+  lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean
+  lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean
+  lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean
+  lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean
+  lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean
+  lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean
+  lean/StratonovichHAMSecondMoment/SpectralHomog.lean
+  lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean
+  lean/StratonovichHAMSecondMoment/TimeCompletion.lean
+  lean/StratonovichHAMSecondMoment/TimeFractional.lean
+  lean/StratonovichHAMSecondMoment/TimeSchur.lean
+  lean/StratonovichHAMSecondMoment/TypeContinuity.lean
+  lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean
+  lean/StratonovichHAMSecondMoment/VariationalDilation.lean
+  lean/StratonovichHAMSecondMoment/VariationalFloor.lean
+  lean/StratonovichHAMSecondMoment/VariationalMean.lean
+  lean/StratonovichHAMSecondMoment/VariationalRate.lean
+  lean/StratonovichHAMSecondMoment/WaveGreen.lean
+  lean/StratonovichHAMSecondMoment/WaveKernel.lean
+  lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean
+  lean/StratonovichHAMSecondMoment/WeakSobolev.lean
+  lean/StratonovichHAMSecondMoment/WhiteClockLaplace.lean
+  lean/StratonovichHAMSecondMoment/WhiteRelativeWidth.lean
+- manuscript/notes/... : all LaTeX inputs at revision a2844206199b.
+- manuscript-975feb3/notes/ : the two edited files at the previous revision
+  975feb31ea65, for comparison.
+- PROVENANCE.json : byte binding of every packet file.
+
+Proof correctness is NOT in question; correspondence is. Decide from the
+Lean and the TeX. Do not accept the ledger's word.
+
+CHECKS (exactly these 9, in this order, with these claim strings):
+  1. claim "ANCHOR-PARAGRAPH": the opening anchor paragraph of candidate/statement-ledger.md and manuscript.change_from_previous in lean/provenance/manuscript-anchor.json accurately describe the move from 975feb3 to a284420: the new lemma L:spatial-fourier-bound (E:spatial-fourier-bound) before P:spatial-smooth-ratio, the changed proof of P:spatial-smooth-ratio, and the multiplier/Laplace-domain comparison E:damped-multiplier-comparison in L:damped-homogeneous-norms; nothing else claimed as changed in cited statements or proofs
+  2. claim "FOURIER-BOUND": the SpatialFourierBound section rows and index rows map the deterministic bound (spatial_fourier_bound_paper, spatial_fourier_bound and the proof-step rows) to L:spatial-fourier-bound / E:spatial-fourier-bound correctly: hypotheses (H:homog, Gamma = 0 allowed, real unit smooth compactly supported g), conclusion (b > 0, 0 <= A_sp(g) <= 2^(1+alpha) R b^(alpha/2)), the transform convention, and the constant: the TeX states R_alpha (E:intro-spectral-mass) while Lean states R_Gamma(1); the new coverage.yaml row L:spatial-fourier-bound (same-assumptions, weaker) and its docs/coverage-scope-tex.yaml entry say this honestly in plain English
+  3. claim "SMOOTH-RATIO": every ledger row, claims.yaml summary, coverage.yaml note/scope and Lean doc comment about P:spatial-smooth-ratio and the R_0 route is accurate at a284420: the manuscript now proves 0 < R_0 < infinity by L:spatial-fourier-bound, independently of the finiteness of S_1^pos; the boundedness claim of P:variational-positive-scores is still used only for the real-valued score (supremum) statements; no text still says Lean uses a different route from the TeX for R_0; where lambda is described it is the square root of the real Rayleigh supremum
+  4. claim "DAMPED": every ledger row, claims.yaml summary, coverage.yaml row/scope and Lean doc comment about L:damped-homogeneous-norms matches its revised statement and proof at a284420 (main TeX 803-919; E:damped-multiplier-comparison at 836): which parts Lean proves exactly (multiplier m in [0,1], nested Laplace domains, full and tail upper comparisons, comparison after time integration) and which it does not state (the lower bounds 0 <= N for general m and S; the Gaussian/Green smoothing remarks); the downgrade of the coverage row to weaker and its scope sentence are honest and plain English; no text still calls the multiplier reading "Le's reading" instead of citing the manuscript
+  5. claim "CONFIRM-C1": finding C1 of prior/wave-l7-confirm-report.json is resolved: the IntervalScalar.static_block_series ledger row and claims.yaml summary say exactly which positivity binder is used (0 < alpha0, to get alpha < 2 with alpha + alpha0 < 2) and which is unused, matching IntervalScalar.lean
+  6. claim "CONFIRM-C2": finding C2 of prior/wave-l7-confirm-report.json is resolved: no ledger row or claims.yaml summary says H^1 convergence of the gradients; the wording is H^1 convergence of the profiles, that is L^2 convergence of each function and of its weak gradient
+  7. claim "LINES": every TeX line citation in the ledger sections SpatialFourierBound, SpatialSmoothRatio, SpatialStaticControls, SpatialOccupationCompleted, SpatialFourLinear, SpatialOccupationL7Completed, OccupationPhysicalClass, OccupationKernelRow, DampedNorms, DampedNormsHomog, WaveGreen, and in their Lean modules, points at a284420 to the content it describes (compare with the 975feb3 copies in manuscript-975feb3/ where useful)
+  8. claim "LABELS": every manuscript label cited in candidate/statement-ledger.md and lean/coverage.yaml exists exactly once in the TeX at a284420 (search \label across all files under manuscript/)
+  9. claim "NO-NEW-ERROR": the re-anchor introduced no other error in the Scope bullets, the Index by label, the Not-in-Lean section, the coverage.yaml summary counts and docs/coverage-scope-tex.yaml (ascii equals conclusion_scope; plain English)
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: the opening
+   anchor paragraph, the Scope section and the sections SpatialFourierBound,
+   SpatialSmoothRatio, SpatialStaticControls, SpatialOccupationCompleted,
+   DampedNorms and DampedNormsHomog of candidate/statement-ledger.md; the
+   coverage.yaml rows L:spatial-fourier-bound, P:spatial-smooth-ratio,
+   L:damped-homogeneous-norms, L:spatial-static-controls and their
+   docs/coverage-scope-tex.yaml entries; lean/provenance/manuscript-anchor.json;
+   lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean,
+   SpatialSmoothRatio.lean and DampedNormsHomog.lean; lines 1-260 of
+   manuscript/notes/integrated_spatial_occupation.tex and lines 790-930 of
+   the main TeX file at a284420, and the corresponding ranges of the
+   975feb3 copies; prior/wave-l7-confirm-report.json; for CONFIRM-C1/C2 the
+   cited rows and lean/StratonovichHAMSecondMoment/IntervalScalar.lean and lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean at those rows.
+B. Other files: search as needed and read matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 9 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong;
+  INCONCLUSIVE: not checkable). reason: evidence with file:line.
+- "findings": fatal = misstatement a citing reader would be misled by;
+  major = material imprecision; minor = wording. Each string starts with an
+  ID (A1, A2, ...), names the item, quotes Lean and TeX with file:line,
+  and gives the exact fix.
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.
+

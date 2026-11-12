@@ -1,0 +1,93 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "INCONCLUSIVE",
+  "confidence": "medium",
+  "source_coverage": [
+    "PROVENANCE.json:1-67 \u2014 partial.",
+    "prior/reanchor-recheck-report.json:1-181 \u2014 complete.",
+    "prior/repair.diff:1-329 \u2014 complete.",
+    "candidate/statement-ledger.md:1-561,1768-1788,3083-3097,3793-3808,3937-3945,4063-4070,4093-4100,4127-4261,4378-4387,4811-4825,4865-4879,4903-4917,5113-5127,5238-5252,5365-5379,5580-5596,5673-5687,6022-6036 \u2014 partial file; complete anchor, Scope, Index and changed citing passages. Additional full-file wording searches were performed.",
+    "lean/provenance/manuscript-anchor.json:1-1825 \u2014 complete.",
+    "docs/coverage-scope-tex.yaml:1-48 \u2014 complete.",
+    "lean/coverage.yaml:1-17,143-179,488-529,959-1040,1090-1131 \u2014 partial substantive reading; entire 1-1179 parsed for scope-string equality.",
+    "lean/claims.yaml:11495-11512 \u2014 partial; both changed summaries read.",
+    "lean/StratonovichHAMSecondMoment/ClockCopy.lean:5-15 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/IndexedCone.lean:1-30 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalar.lean:1069-1079 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean:126-128,765-780,1275-1277,1516-1520,1673-1678,1689-1699 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:1-140,241-251,339-375,692-708 \u2014 partial file; complete required 1-140 and changed citing passages.",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:90-100,1089-1093 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/SpectralHomog.lean:4-16,24-36,220-230,239-249 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/TimeCompletion.lean:1-20 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/TimeFractional.lean:189-199 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/TypeContinuity.lean:49-59,253-263,1088-1098 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:11-21,60-70,402-412 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/VariationalRate.lean:710-720,761-771 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean:15-25,244-254 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean:1-28,62-72,528-532,582-586 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean:97-132,137-165 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean:149-178 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean:177-184 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean:383-392 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean:451-456 \u2014 partial.",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-449 \u2014 complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:795-919,2731-2798,3568-3573,3733-3738,5184-5189,7060-7071,7257-7262,7421-7425,7697-7764 \u2014 partial; all changed target locators in this file read with two lines of context.",
+    "manuscript/notes/integrated_compact_mean_family.tex:342-350 \u2014 partial.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-10,238-270 \u2014 partial.",
+    "manuscript/notes/integrated_wave_variance.tex:169-178,194-205 \u2014 partial.",
+    "manuscript/notes/integrated_covariance_foundation.tex:1-10 \u2014 partial.",
+    "manuscript-975feb3/notes/integrated_spatial_occupation.tex:94-153 \u2014 partial substantive reading; entire 1-379 scanned for label definitions.",
+    "manuscript-975feb3/notes/notes_stratonovich_ham_second_moment.tex:760-848,2658-2662 \u2014 partial substantive reading; entire 1-7884 scanned for label definitions.",
+    "lean/refutations/clock-copy/WrongPsiExponent.lean: no lines read \u2014 partial; file absent from packet. Changed excerpt read at prior/repair.diff:312-320.",
+    "lean/refutations/interval-scalar/PhaseFactorE.lean: no lines read \u2014 partial; file absent from packet. Changed excerpt read at prior/repair.diff:321-329."
+  ],
+  "checks": [
+    {
+      "claim": "A1",
+      "verdict": "PASS",
+      "reason": "The repaired certification at candidate/statement-ledger.md:24-32 explicitly names and excludes all three newly introduced labels from its historical preservation claim, consistently with lean/provenance/manuscript-anchor.json:426. Label scans of the supplied old/new TeX confirm that L:spatial-fourier-bound and E:spatial-fourier-bound are new at manuscript/notes/integrated_spatial_occupation.tex:102,106, and E:damped-multiplier-comparison is new at manuscript/notes/notes_stratonovich_ham_second_moment.tex:836. The smooth-ratio statement remains unchanged; its revised proof is correctly excepted."
+    },
+    {
+      "claim": "A2",
+      "verdict": "PASS",
+      "reason": "SpatialSmoothRatio.lean:97-102 now explicitly says R_0 finiteness is not a route difference and that both proofs use L:spatial-fourier-bound. Its proof actually invokes spatial_fourier_bound at :358. This matches spatial TeX:185-188. Ledger:4137-4146,4220-4224 and coverage.yaml:1035-1037 agree; the genuine constancy-versus-Fourier-support and optimization differences remain. Historical S1Bdd-based results are explicitly identified as the pre-a284420 route."
+    },
+    {
+      "claim": "A3",
+      "verdict": "PASS",
+      "reason": "All four locators are repaired correctly: WaveGreen.lean:19 points to main TeX:881 for the mass identity; SpatialStaticControls.lean:94 points to spatial TeX:87-88 for cost monotone convergence; ledger:6028 points to spatial TeX:444-449 for zero covariance; coverage.yaml:1011 points to spatial TeX:262-268 for H^1 density."
+    },
+    {
+      "claim": "A4",
+      "verdict": "PASS",
+      "reason": "Ledger:3799-3800 now says H^1 convergence of profiles means L^2 convergence of each function and its weak gradient, consistently with its row at :3943 and SpatialFourLinear.lean:771-775. Spatial TeX:262-270 supports this interpretation. Full-file wording searches found no remaining ledger assertion of H^1 convergence of gradients."
+    },
+    {
+      "claim": "FIXES",
+      "verdict": "INCONCLUSIVE",
+      "reason": "All 44 corrections whose citing files are present have correct target content and file attribution. These include ClockCopy:9; IndexedCone:24; IntervalScalar:1073; SpatialFourLinear:1693; SpatialSmoothRatio:245; SpatialStaticControls:94; SpectralHomog:8,10,28,30,224,243; TimeCompletion:14; TimeFractional:193; TypeContinuity:53,257,1092; VariationalDilation:15,64,406; VariationalRate:714,765; WaveGreen:19,248; WaveTwoVariances:66; claims.yaml:11499,11506; coverage.yaml:1011,1125; and ledger:1780,3089,4213,4253,4817,4871,4909,5119,5244,5371,5586-5588,5679,6028. The A1/A2/A4 wording changes are also correct. The remaining two corrections appear only in prior/repair.diff:312-329 because both refutation files are absent. Their proposed targets are correct\u2014main TeX:7713 states the negative-exponent bound, and :3570-3571 states the zero-order energy bound\u2014but their current citing sentences cannot be read in their files as requirement A demands."
+    },
+    {
+      "claim": "NO-NEW-ERROR",
+      "verdict": "PASS",
+      "reason": "No repair-induced error was found in the anchor, Scope or Index (ledger:1-561). The two coverage edits correctly locate density and the unitary J statement at spatial TeX:262-268 and wave-variance TeX:171-176. All 14 docs/coverage-scope-tex.yaml ASCII strings exactly equal their corresponding coverage.yaml conclusion_scope strings; the plain-English scopes retain the disclosed narrowing and supplied-input distinctions."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "B1 \u2014 FIXES has a mandatory source-coverage gap, not a demonstrated mathematical error. The packet omits refutations/clock-copy/WrongPsiExponent.lean and refutations/interval-scalar/PhaseFactorE.lean. prior/repair.diff:317-319 quotes the former's repaired citation as 'TeX line 7713'; manuscript/notes/notes_stratonovich_ham_second_moment.tex:7713 indeed states 'Psi_a(r,v) <= r^{-a}'. prior/repair.diff:326-328 quotes the latter's repaired citation as 'lines 3570-3571'; that TeX passage indeed says the zero-order energy 'is at most e||v||_{1/T}^2'. These excerpts support the proposed locators but cannot establish their presence in the frozen citing files at f3be8348e28d. Exact remedy: supply both current refutation files with provenance binding to that revision so their citing sentences can be checked directly."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Supplement the frozen packet with refutations/clock-copy/WrongPsiExponent.lean and refutations/interval-scalar/PhaseFactorE.lean at f3be8348e28d0f050f8aa9896aaf029af8867b45, with provenance bindings, to close the two mandatory current-file reading gaps."
+  ],
+  "limitations": [
+    "Complete-reading requirement A is incomplete only for the two absent refutation citing files; consequently FIXES is INCONCLUSIVE and confidence is medium.",
+    "All 46 proposed corrected locators were compared with their manuscript targets, but only 44 could additionally be confirmed in their current citing files.",
+    "Historical comparisons outside the two supplied previous-revision TeX files rely on the frozen provenance manifest; older versions of other inputs were not independently recovered.",
+    "This was a narrow correspondence review, not a Lean build, proof-correctness audit, exhaustive recheck of all 1781 citations, or independent verification of every provenance hash.",
+    "An AI review is neither human verification nor a novelty audit."
+  ]
+}

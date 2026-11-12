@@ -1,0 +1,143 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "prior/a-InventoryProduct-report.json:1-213 — complete.",
+    "prior/b-UniformSeriesTail-report.json:1-216 — complete.",
+    "prior/c-H1Density-report.json:1-220 — complete.",
+    "prior/d-SpatialFourLinear-report.json:1-601 — complete.",
+    "prior/e-OccupationPhysicalClass-report.json:1-235 — complete.",
+    "prior/f-IntervalScalar-report.json:1-317 — complete.",
+    "candidate/statement-ledger.md:1-546,1731-1839,1978-2271,3069-3216,3724-3940,3992-4077,4819-4893,5858-6020 — complete required sections; partial file substantively. Additional contexts:742-760,1073-1090,1110-1120,1840-1842,2272-2274,2858-2882,3217,3399-3407,3941,4078-4080,4466-4496,4608-4618,4894,5315-5320,5532-5540,5842-5848. Lines1-6020 additionally scanned structurally for every declaration row.",
+    "lean/StratonovichHAMSecondMoment/InventoryProduct.lean:1-700 — complete.",
+    "lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean:1-320 — complete.",
+    "lean/StratonovichHAMSecondMoment/H1Density.lean:1-672 — complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean:1-1753 — complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean:1-383 — complete.",
+    "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean:1-816 — complete.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalar.lean:1-1217 — complete.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean:1-193 — complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 — complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean:1-178 — complete.",
+    "lean/StratonovichHAMSecondMoment/WeakSobolev.lean:54-140,208-247 — partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:125-153,221-245,1120-1161 — partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:646-711 — partial.",
+    "lean/StratonovichHAMSecondMoment/TypeContinuity.lean:899-914 — partial.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:238-255 — partial.",
+    "lean/claims.yaml:10308-10851,11813-11826 — complete textual ranges; declaration and summary matches within10852-12191 also read. Lines1-12191 parsed structurally for declaration counts, kinds and equality with ledger rows; partial substantive coverage.",
+    "lean/coverage.yaml:1-1161 — complete.",
+    "docs/coverage-scope-tex.yaml:1-42 — complete.",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-379 — complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:178-252,1975-2000,2090-2105,2450-2480,2490-2540,2580-2758,2900-3030,3320-3675 — partial file; complete required cited ranges.",
+    "manuscript/notes/integrated_unmasked_variational.tex:90-172,265-330 — partial.",
+    "PROVENANCE.json:1-95 — partial."
+  ],
+  "checks": [
+    {
+      "claim": "a-InventoryProduct-W1",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:2258 now distinguishes the TeX beta/nu power sum from Lean's replacement p-sum route. This matches InventoryProduct.lean:277-292,599-609 and main TeX:2931-2949; claims.yaml:10435-10441 states only the actual inequality."
+    },
+    {
+      "claim": "a-InventoryProduct-W2",
+      "verdict": "PASS",
+      "reason": "Ledger:2227-2231,2241 now expressly separates positive-index analytic applications from unrestricted definitions and factorCoeff_nonneg. InventoryProduct.lean:52-56,81-91,471-473 supports that qualification; main TeX:2914-2922 uses positive k and product indices."
+    },
+    {
+      "claim": "b-UniformSeriesTail-W1",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:493,1001 and docs/coverage-scope-tex.yaml:11-12,38-39 now say square root of the Rayleigh supremum. WeakSobolev.lean:241-242 defines precisely Real.sqrt(sSup(...)); spatial TeX:43-45 and unmasked-variational TeX:103-107 identify the supremum with lambda squared."
+    },
+    {
+      "claim": "b-UniformSeriesTail-W2",
+      "verdict": "PASS",
+      "reason": "Ledger:4830-4832 now cites main TeX:3565-3568, including the odd-moment sentence at3565. UniformSeriesTail.lean:229-238 correctly describes the supplied two-field interface."
+    },
+    {
+      "claim": "d-SpatialFourLinear-W1",
+      "verdict": "PASS",
+      "reason": "Ledger:3782-3789 and SpatialFourLinear.lean:61-65 now distinguish unused temperedness in the extension/energy-value route from its use by score wrappers. The calls at SpatialFourLinear.lean:1722,1750 reach SpatialOccupationCompleted.lean:109-138 and SpatialStaticControls.lean:1138-1140, which explicitly uses Gamma_tempered. Spatial TeX:269-276 uses the corresponding score route."
+    },
+    {
+      "claim": "d-SpatialFourLinear-W2",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The cited coverage sentences are corrected at coverage.yaml:966 and docs/coverage-scope-tex.yaml:35-36: H1 convergence means L2 convergence of functions and gradients, matching SpatialFourLinear.lean:771-775 and spatial TeX:200-213. Related shorthand remains locally loose in ledger:3894 and claims.yaml:11148; see C2."
+    },
+    {
+      "claim": "e-OccupationPhysicalClass-W1",
+      "verdict": "PASS",
+      "reason": "Ledger:29-32 now names both source namespaces, consistent with its distinction at251-254. OccupationPhysicalClass.lean:108-109 is correctly located in the whole-result namespace and models the square specialization of spatial TeX:15-19."
+    },
+    {
+      "claim": "f-IntervalScalar-W1",
+      "verdict": "PASS",
+      "reason": "Ledger:2066-2073 now limits the positivity assertion to manuscript-facing bounds and explicitly permits totalized zero-index definitions and bridges. IntervalScalar.lean:688-700 and IntervalScalarCompleted.lean:62-77 are unrestricted; main TeX:2914-2922 uses positive indices."
+    },
+    {
+      "claim": "f-IntervalScalar-W2",
+      "verdict": "PASS",
+      "reason": "Ledger:5984-5988 now excludes construction and identification of the concrete interaction map, not abstract series convergence. IntervalScalar.lean:432-433 proves Summable; main TeX:2614-2618 defines the concrete map."
+    },
+    {
+      "claim": "RESCAN-a-InventoryProduct",
+      "verdict": "PASS",
+      "reason": "All31 rows at ledger:2240-2270 were compared with the complete module and main TeX:2736-2747,2913-2967. Constants, quantifiers, summability conditions and disclosed alternative proof routes agree; no additional overclaim found."
+    },
+    {
+      "claim": "RESCAN-b-UniformSeriesTail",
+      "verdict": "PASS",
+      "reason": "All13 rows at ledger:4880-4892 agree with UniformSeriesTail.lean:69-316 and main TeX:3527-3675. The supplied terminal-Wick interface, joint limit, eventual generalization and exact geometric-tail constant are distinguished correctly."
+    },
+    {
+      "claim": "RESCAN-c-H1Density",
+      "verdict": "PASS",
+      "reason": "All33 rows at ledger:1806-1838 agree with the complete H1Density module. Spatial TeX:192-198 supports the density foundation; the mollify-first route and converse theorem absent from TeX are explicitly classified as such."
+    },
+    {
+      "claim": "RESCAN-d-SpatialFourLinear",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "All88 source rows and17 completion rows at ledger:3852-3939,4060-4076 match the complete modules and spatial TeX:149-278,311-372. Density discharge, finite pairings, constants, sequential continuity and retained S1Bdd are accurately disclosed. C2 concerns only redundant convergence wording."
+    },
+    {
+      "claim": "RESCAN-e-OccupationPhysicalClass",
+      "verdict": "PASS",
+      "reason": "All35 rows at ledger:3181-3215 agree with OccupationPhysicalClass.lean:108-814 and spatial TeX:311-372. Joint-representative modelling, extended integrals, finiteness, supplied bounds and R0 versus Rsp/Esp conversions are disclosed."
+    },
+    {
+      "claim": "RESCAN-f-IntervalScalar",
+      "verdict": "FAIL",
+      "reason": "The51 rows preserve the scalar conclusions and supplied-input boundaries, but ledger:2093 falsely says alpha0 positivity is unused. IntervalScalar.lean:541-558 explicitly records and uses it to obtain alpha<2; claims.yaml:11822 repeats the stale dependency claim. See C1."
+    },
+    {
+      "claim": "LEDGER-TOTALS",
+      "verdict": "PASS",
+      "reason": "An exhaustive structural count gives1731 unique declaration rows,877 labelled and854 unlabelled, exactly matching claims.yaml's1430 theorem and301 definition entries. Every declaration has four cells and exactly one non-cross-reference Index occurrence under its primary table label. These agree with ledger:545-546 and coverage.yaml:2."
+    },
+    {
+      "claim": "NO-REGRESSION",
+      "verdict": "FAIL",
+      "reason": "Rate descriptions and ASCII/scope equality pass: every docs/coverage-scope-tex.yaml ASCII entry equals its coverage.yaml scope. However, the hypothesis-use repair is inconsistent: ledger:2019-2020 and IntervalScalar.lean:541-542 correctly identify alpha0 positivity as used, while ledger:2093 and claims.yaml:11822 still call it unused. C1 blocks acceptance."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "C1 — IntervalScalar.static_block_series dependency audit remains incorrect. candidate/statement-ledger.md:2093 says '0 < alpha and 0 < alpha0 are carried and not used'; lean/claims.yaml:11822 repeats this. In contrast, lean/StratonovichHAMSecondMoment/IntervalScalar.lean:541-542 explicitly says '_ha0 ... is used despite its name', and its proof at556-558 derives alpha<2 using positivity of alpha0 together with alpha+alpha0<2. The corrected ledger paragraph at2019-2020 already recognizes this. Main TeX manuscript/notes/notes_stratonovich_ham_second_moment.tex:2638-2641 assumes '0 < alpha_0 < 1' and the proof at2699-2713 uses the resulting parameter range for the scalar bounds. Exact fix: in ledger:2093 and claims.yaml:11822 replace the unused-hypotheses sentence with '0 < alpha is carried but unused; 0 < alpha0 is used with alpha + alpha0 < 2 to derive alpha < 2.' No Lean theorem change is needed."
+    ],
+    "minor": [
+      "C2 — Residual H1-convergence shorthand. candidate/statement-ledger.md:3894 and lean/claims.yaml:11148 still say 'convergence in H^1 of the functions and of their named gradients', although the immediately preceding formulas are correct. Lean SpatialFourLinear.lean:774-775 requires two L2 limits; manuscript/notes/integrated_spatial_occupation.tex:200-201,211-213 requires H1 convergence of profiles, not H1 convergence of gradients. Optional exact clarification: use the repaired coverage wording, 'H1 convergence of the profiles, represented by L2 convergence of each function and its weak gradient', also in the shorthand at ledger:3751."
+    ]
+  },
+  "required_repairs": [
+    "Correct the static_block_series hypothesis-use annotation in candidate/statement-ledger.md:2093 and lean/claims.yaml:11822 as specified in C1; retain the already-correct paragraph and Lean comment."
+  ],
+  "limitations": [
+    "Complete-reading requirement A was satisfied. Partial files listed above have unread material outside the required sections or contextual declarations; unrelated mathematics was not independently reassessed.",
+    "The structural scans cover all ledger rows and claims metadata, not a substantive review of every unrelated summary or theorem.",
+    "The packet does not provide the previous source tree for a direct historical diff; repair assessment compares the frozen sources with the six prior reports.",
+    "PROVENANCE.json was read only through line95; remaining bindings were not inspected or independently authenticated.",
+    "No build, proof-correctness audit, network access or file modification was performed. Referenced refutation artifacts were not supplied.",
+    "This AI correspondence review is neither human verification nor a novelty audit."
+  ]
+}

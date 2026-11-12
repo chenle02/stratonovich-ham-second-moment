@@ -1,0 +1,88 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "prior/reanchor-recheck-report.json:1-181 \u2014 complete.",
+    "prior/repair.diff:1-329 \u2014 complete.",
+    "lean/provenance/manuscript-anchor.json:1-1825 \u2014 complete.",
+    "candidate/statement-ledger.md:1-561 \u2014 complete anchor, Scope and Index; 1768-1789,3085-3095,3791-3809,4130-4185,4206-4224,4248-4260,4810-4825,4867-4873,4896-4918,5114-5121,5239-5255,5367-5374,5582-5595,5672-5685,6005-6045 \u2014 partial file, complete changed citing passages. Additional convergence and route-wording searches across 1-6080.",
+    "docs/coverage-scope-tex.yaml:1-48 \u2014 complete.",
+    "lean/coverage.yaml:1-1179 \u2014 complete structural parse for scope equality; partial substantive reading: all conclusion_scope fields and 770-780,990-1041,1090-1135.",
+    "lean/claims.yaml:11490-11510 \u2014 partial; complete changed citing entries.",
+    "lean/StratonovichHAMSecondMoment/ClockCopy.lean:1-40 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/IndexedCone.lean:1-40 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalar.lean:1068-1080 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean:763-779,1688-1700 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:1-140,240-252,337-375,600-611,633-644,683-710,741-750 \u2014 partial file; required 1-140 complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:89-101 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/SpectralHomog.lean:3-15,23-35,219-231,238-250 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/TimeCompletion.lean:1-28 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/TimeFractional.lean:188-200 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/TypeContinuity.lean:48-60,252-264,1087-1114 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:4-22,59-71,401-413 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/VariationalRate.lean:709-736,760-780 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/WaveGreen.lean:14-26,243-255 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean:61-73 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean:119-145 \u2014 partial.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean:536-594 \u2014 partial.",
+    "lean/refutations/clock-copy/WrongPsiExponent.lean:1-13 \u2014 partial.",
+    "lean/refutations/interval-scalar/PhaseFactorE.lean:1-15 \u2014 partial.",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-449 \u2014 complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:824-919,2731-2798,3568-3573,3733-3738,5177-5189,7060-7071,7257-7262,7421-7425,7697-7764 \u2014 partial; all changed main-file citation targets and required context complete. Entire file additionally compared with the supplied previous revision.",
+    "manuscript/notes/integrated_compact_mean_family.tex:340-350 \u2014 partial.",
+    "manuscript/notes/integrated_covariance_foundation.tex:1-10 \u2014 partial.",
+    "manuscript/notes/integrated_wave_variance.tex:169-178,198-205 \u2014 partial.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-7,238-270 \u2014 partial.",
+    "manuscript/notes/integrated_symplectic_phase.tex:169-178 \u2014 partial; inspected while establishing the correct file attribution.",
+    "manuscript/notes/integrated_temporal_equilibrium.tex:1-10 \u2014 partial; inspected while establishing the correct file attribution.",
+    "manuscript/notes/index/list-of-notation.tex:100-104 \u2014 partial.",
+    "manuscript-975feb3/notes/integrated_spatial_occupation.tex:95-148 \u2014 partial substantive reading; entire 1-379 compared by textual diff.",
+    "manuscript-975feb3/notes/notes_stratonovich_ham_second_moment.tex:760-848,2658-2725 \u2014 partial substantive reading; entire 1-7884 compared by textual diff."
+  ],
+  "checks": [
+    {
+      "claim": "A1",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:24-32 explicitly names the three new labels and restricts historical preservation to the remaining labels, retaining the three changed-environment exceptions. This agrees with lean/provenance/manuscript-anchor.json:426. The supplied revision comparisons substantiate the additions at manuscript/notes/integrated_spatial_occupation.tex:101-164 and manuscript/notes/notes_stratonovich_ham_second_moment.tex:826-847, and the changed smooth-ratio proof at spatial TeX:179-217."
+    },
+    {
+      "claim": "A2",
+      "verdict": "PASS",
+      "reason": "SpatialSmoothRatio.lean:97-100 now explicitly excludes R_0 finiteness from the route differences and identifies L:spatial-fourier-bound as common to both proofs. Its actual invocation at :358 agrees with spatial TeX:185-188. The genuine constancy-versus-Fourier-support and optimization differences remain, consistently with ledger:4220-4224 and spatial TeX:180-182,211-213. Coverage:1019,1035-1037 and docs/coverage-scope-tex.yaml:44-45 state the same corrected route."
+    },
+    {
+      "claim": "A3",
+      "verdict": "PASS",
+      "reason": "All four replacements locate their described content: WaveGreen.lean:19 points to the mass identity at main TeX:881; SpatialStaticControls.lean:94 points to cost convergence at spatial TeX:87-88; ledger:6028 points to the zero-covariance remark at spatial TeX:444-449; coverage.yaml:1011 points to density and its sketch at spatial TeX:262-268."
+    },
+    {
+      "claim": "A4",
+      "verdict": "PASS",
+      "reason": "ledger:3798-3800 now says H^1 convergence of profiles, meaning L^2 convergence of each function and its weak gradient. This matches the two L^2 limits defining H1Tendsto at SpatialFourLinear.lean:771-775 and spatial TeX:262-270. The ledger convergence-wording search found no remaining assertion of H^1 convergence of gradients."
+    },
+    {
+      "claim": "FIXES",
+      "verdict": "PASS",
+      "reason": "Checked all 46 corrected citation occurrences: 27 in Lean/module or refutation comments, two in claims.yaml, two in coverage.yaml and 15 in the ledger. Every changed citing passage and target range, with two lines of manuscript context, was read. The corrected targets include main TeX:7699-7762,851-860,7708-7713,7715-7724,7259-7260,7423,3570-3571,3735-3736,5186-5187; compact-mean-family:344-348; covariance-foundation:5-8; unmasked-variational:4-5,240-268; wave-variance:171-176,202; and spatial-occupation:87-88,198-199,262-268,327-348,338-346,362-363,381-384,444-449. All contain the described content in the correct file. The historical example added at manuscript-anchor.json:426 also correctly maps previous main TeX:2660-2723 to current :2733-2796. A1, A2 and A4 text changes are accurate."
+    },
+    {
+      "claim": "NO-NEW-ERROR",
+      "verdict": "PASS",
+      "reason": "The diff introduces no changes to the Scope or Index and no new correspondence error in the revised anchor or coverage passages. The two coverage locator changes agree with spatial TeX:262-268 and wave-variance TeX:171-176. All 14 docs/coverage-scope-tex.yaml ascii values exactly equal their corresponding parsed coverage.yaml conclusion_scope values; their English and TeX versions preserve the same qualifications, including the unformalized constant identification, existential-versus-supremum distinction and L^2 gradient convergence."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Complete-reading requirement A was satisfied; truncated outputs were reread to close the gaps. Partial coverage outside the required passages is identified above.",
+    "This is a narrow confirmation of the supplied repairs, not a fresh audit of all 1781 citations or all Lean\u2013manuscript correspondences.",
+    "Historical comparisons directly used the two supplied previous-revision TeX files; other historical source bytes were not independently authenticated.",
+    "No Lean build, proof-correctness audit or independent PROVENANCE.json byte-binding verification was performed.",
+    "This AI review is neither human verification nor a novelty audit."
+  ]
+}
