@@ -19154,3 +19154,19 @@ title carries them); the PDF metadata title matches. Per Le, "hyperbolic
 Anderson model" stays out of the title; the preface names it in its first
 sentence. The reading edition keeps its own title. Frozen review packets under
 reviews/ keep the old title as historical records.
+
+## 2026-11-12: version numbers (MAJOR.MINOR.PATCH)
+
+Le approved a version rule for the community-driven book. MAJOR = a new arXiv
+version (a main theorem added or restated, an error affecting a stated result
+corrected, a substantially simpler proof, or enough accumulated changes);
+MINOR = mathematics changes with every main theorem's statement unchanged (gap
+filled, proof repaired, new lemma or no-go, new Lean-checked result, raised
+check status); PATCH = no mathematical change. Lower numbers reset. Every
+release at every level gets a tag vX.Y.Z, a GitHub release and a Zenodo DOI
+(Le: patches too). Pull requests are labelled patch/minor/major; the next
+release takes the highest label; errors are graded by effect; when in doubt,
+the higher level. Draft rule: private/drafts/VERSIONING.md (front-door file,
+for #16's export list). The cover now reads "Version 1.0.0" and the preface
+states the rule in two sentences. #16 asked to switch the planned v1.0 tags to
+v1.0.0 and to add VERSIONING.md to the front-door files.
