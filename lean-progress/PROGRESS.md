@@ -25,7 +25,7 @@ Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine
 | Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
 | Compute | this laptop: L8 agents, integration, receipts; Office (36 cores): companion built at `0269e61`, `office-lean.sh` compile wrapper, Easley route, L9 compiling; <MACHINE> (12 cores): L10 independent items (companion being built there) |
-| Decisions open for Le | the L8 gate (after its reviews); L8-f's extra supplied input (chain measures by their mass); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
+| Decisions open for Le | approve L11 (Easley array gate, seven defaults); the L8 gate (after its reviews); L8-f's extra supplied input (chain measures by their mass); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
 | Next actions | L8 items -> integration, docs, comparator, receipts, reviews, Le's gate; collect the Easley L7 replay (via <MACHINE>) |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
@@ -550,6 +550,62 @@ Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
+- **WAVE L11: PROPOSED (2026-11-12) for Le's approval; Easley for massive
+  verification, <MACHINE>/<MACHINE> for formalization.** From a read-only
+  preparation (session scratch l11-prep/: L11-DRAFT.md, the Easley array
+  harness in l11-prep/easley/, probe outputs). Nothing submitted.
+
+  PART A, EASLEY ARRAY GATE (the HPC rule holds: Easley runs gates and
+  measured-heavy work only, never an edit-compile loop). Probe (read-only via
+  Office): nova_20 has 120 nodes (20 cores, 128 GB), 92 idle at probe time;
+  QOS resourcecap_plus caps 1440 CPUs per user (about 1110 free); arrays up
+  to 5001; scratch 5.3T of 50T. Harness (written, tested locally with bash
+  -n, shellcheck, a byte-for-byte manifest reproduction and synthetic
+  collector runs; not yet run on Easley): one build job (4 CPUs, 24G, 1 day;
+  fresh clone at a pinned commit, cache get, full build, sealed workspace
+  tarball with hashes); then array task 1 alone as a PILOT; only after it
+  reaches REPLAY_STARTED are task 0 (default-mode replay of all targets) and
+  tasks 2..N (one leanchecker --fresh target each) released; collector
+  checks exact coverage against the manifest and sacct COMPLETED 0:0 for
+  every task, writes the existing evidence format, and writes a STOP file
+  when two failures share a signature. Same checks as waves L5-L7 (commit
+  and tree pins, Mathlib pin, module manifest, file-nr guard, monitor,
+  checker hashes). Sizing: one --fresh run uses one core and 7.7 GB peak;
+  tasks at 2 CPUs and 36G (36G caps packing at 3 tasks per node, keeping
+  the node's open files near 186k of 262k; 12G would pack 5-10 per node and
+  overrun it). Estimate for about 90-101 targets (the L8 and L9 heads):
+  about 1.5 h from submission to collection (vs about 33 h two at a time),
+  about 70-80 core-hours used, 175-195 reserved. Comparator receipts stay
+  local: Easley has no bwrap or Landlock for the judge (kernel 3.10,
+  max_user_namespaces = 0), so lean-pkg's Slurm comparator gives no speedup.
+
+  PART B, FORMALIZATION CANDIDATES (compile on <MACHINE> or <MACHINE>; final
+  scoping after the L9 and L10 results):
+
+  | Item | Target | Size | Notes |
+  |---|---|---|---|
+  | K1 | proof devices of L:occupation-raw-square and L:positive-raw-embedding (H_sp, Q, rho_g, J_G, H_I as Lp completions) | 1300-1700 | would also remove SpaceTimePosDef if any fallback used it |
+  | K2 | discharge FockColumn (the spatial column bound of L:fock-form / E:interval-column) | 500-900 | after L9-H |
+  | K4 | remaining inputs of L:terminal-wick: (i) strong measurability of the product in L^2; (ii) the d = 3 Green-regularization limit; (iii) constructing the chain measures g_n (L8-f took them by their mass) | 200-400; 400-700; size after scoping | |
+  | K5 | D8-lite H^1 Hilbert layer (Mathlib's BesselPotentialSpace, Lax-Milgram) | 800-1500 | Easley pilot first (larger Mathlib slice) |
+  | K6 | D8-lite operator layer for C16/C3 (bounded resolvent, ground state from the Rayleigh maximum, compact resolvent as a named input: Rellich is not in Mathlib) | 2000-3500, high risk | Easley pilot first |
+  | K7 | any named input that L9 or L10 leaves at a fallback | 200-800 each | |
+  | K8 | C:static-interaction re-issued with fewer inputs (after L8-h, L9-H3) | 300-600 | |
+  | K9 | the three withheld GaussianChaos seams | | only if Le releases gaussian-chaos-lean |
+
+  (L:alpha-one-convolution, the draft's K3, is already L10-A1.)
+
+  Decisions for Le (defaults in brackets): 1. approve the Easley array gate as
+  the replay mechanism from now on, starting with the build + one-task pilot
+  [yes]; 2. task sizing 2 CPUs / 36G [yes; 4 CPUs / 36G if Le prefers the
+  CPU count]; 3. first full run at the L8 integration commit once its
+  receipts exist, then at each later gate commit [yes]; 4. comparator
+  receipts stay local [yes]; 5. K5 and K6 only after an Easley pilot of
+  their Mathlib imports [yes]; 6. K9 only after a release decision on
+  gaussian-chaos-lean [yes]; 7. B3, B4, B9 stay reserved [yes].
+
+  Not in L11: anything needing D1, D2, D5 or D7 beyond the named inputs
+  above; the C_2 forms; the public release (HOLD).
 - **WAVE L10: APPROVED by Le (2026-11-12) as proposed, with the default
   answers to the nine decisions; the four independent items (R2, W0, FS0, A1)
   launched on <MACHINE>; dependent items start when their L8/L9 inputs are
@@ -1208,6 +1264,7 @@ Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine
 | L9 | APPROVED (Le) | 2026-11-12 | Default decisions; launches on <MACHINE> after the L8 integration commit |
 | L10 | PROPOSED | 2026-11-12 | Independent cores on <MACHINE> (higher-Riesz d = 2, white-model prerequisites, fixed-split core, alpha-one convolution); dependent assemblies after L8/L9; awaiting Le's approval |
 | L10 | OPEN (approved by Le) | 2026-11-12 | Defaults; R2, W0, FS0, A1 launched on <MACHINE>; FS1, W1, R3, A1i wait for their inputs |
+| L11 | PROPOSED | 2026-11-12 | Easley array gate (build + pilot, then one --fresh target per task, about 1.5 h for about 90-101 targets) and formalization candidates K1-K9 on <MACHINE>/<MACHINE>; awaiting Le's approval |
 
 ## New proof seams retained for later statement fences
 
