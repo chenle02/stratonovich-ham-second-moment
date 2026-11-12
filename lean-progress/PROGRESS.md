@@ -567,6 +567,17 @@
   N_0 has no covariance multiplier: keep its mass argument separate
   (Gaussian Green smoothing preserves G_s(R^d) = s). The current
   applications fit this reading.
+  **Le's decision (2026-11-11): add BOTH as #3 recommended.** Sent to #3:
+  (1) the deterministic lemma A_sp(g) <= 2^(1+alpha) R_Gamma(1) b^(alpha/2)
+  just before P:spatial-smooth-ratio (unnormalized transform explicit,
+  Gamma = 0 and singular measures covered), used for R_0 finiteness instead
+  of T:full-upper, S1Bdd kept for the real-valued S_1^pos conclusions;
+  (2) the multiplier/Laplace-restriction scope (m, S subset S') in
+  L:damped-homogeneous-norms with the quadratic-form and scope notes.
+  Next after #3's commit: re-anchor the companion to the new revision
+  (labels, statements/proofs, line citations) and re-check the affected
+  ledger rows (P:spatial-smooth-ratio, SpatialFourierBound,
+  SpatialSmoothRatio, DampedNormsHomog smoothing rows, coverage notes).
 - **WAVE L6: APPROVED by Le (2026-11-11) as proposed, with the default
   answers to the four decisions; OPENED** (eight items launched in parallel
   worktrees, branches wave-l6/a..h off companion main). From the board
