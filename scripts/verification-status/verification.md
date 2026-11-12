@@ -1,6 +1,6 @@
 <!-- Pinned by pin_verification.py from the verification ledger; do not edit by hand. -->
-ledger-date: 2026-11-12T10:03:52-06:00
-lean-coverage-commit: ff40157
+ledger-date: 2026-11-12T16:22:00-06:00
+lean-coverage-commit: d9ded8f
 
 | Label | Group | Kind | Title | File | AI review | Lean | Human |
 |---|---|---|---|---|---|---|---|
@@ -217,7 +217,7 @@ lean-coverage-commit: ff40157
 | `P:nogo-26` | V | No-go | A pure Young power and a maximum from an average | `notes/no-go/topology.tex` | see review record | no Lean claim | unchecked |
 | `P:nogo-27` | V | No-go | The temporal concentration threshold | `notes/no-go/topology.tex` | see review record | no Lean claim | unchecked |
 | `P:nogo-30` | V | No-go | Escaping variational scores | `notes/no-go/topology.tex` | see review record | no Lean claim | unchecked |
-| `P:nogo-32` | V | No-go | Positive-cutoff point sources need auxiliary noise | `notes/no-go/topology.tex` | see review record | no Lean claim | unchecked |
+| `P:nogo-32` | V | No-go | The point feature is outside the closed noise image | `notes/no-go/topology.tex` | see review record | no Lean claim | unchecked |
 | `P:nogo-23` | V | No-go | A one-sided variance bound fails | `notes/no-go/optimization.tex` | see review record | no Lean claim | unchecked |
 | `P:nogo-28` | V | No-go | An occupation ceiling need not improve a comparison value | `notes/no-go/optimization.tex` | see review record | no Lean claim | unchecked |
 | `P:nogo-29` | V | No-go | Empty sets, concavity and matrix order | `notes/no-go/optimization.tex` | see review record | no Lean claim | unchecked |
