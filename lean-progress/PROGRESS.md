@@ -6,23 +6,25 @@
 
 ## Status (kept current; updated at every milestone)
 
-Last updated: 2026-11-12, wave L9 proposed (to run on <MACHINE>); L8 running.
+Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine items done; L10 being prepared on <MACHINE>.
 
 | Item | Current state |
 |---|---|
-| Current wave | **L8 OPEN** (approved by Le 2026-11-12 with the default decisions): nine item agents running in parallel; L8-a (R_alpha = R_Gamma(1)) done and verified (branch wave-l8/a b561f2a). **L9 PROPOSED** (to run on <MACHINE>; bullet "WAVE L9" below), awaiting Le's approval |
+| Current wave | **L8 OPEN** (approved 2026-11-12): six of nine items done and verified on their branches (a `b561f2a`, b `d339819`, d `8cd7e26`, e `e9b6dbc`, g `f33ab21`, h `efdba69`); c1, c2, f running. **L9 PROPOSED** (to run on <MACHINE>), awaiting Le's approval. **L10** being prepared on <MACHINE> (independent items) |
 | Last closed gate | **L7**, closed by Le 2026-11-12 at companion `f3be834` over manuscript `a284420`, together with the re-anchor from `975feb3` |
 | Manuscript anchor | Article `a284420` (#3's two approved edits: `L:spatial-fourier-bound`, `E:damped-multiplier-comparison`) |
-| Companion | `chenle02/stratonovich-ham-second-moment-lean`, PRIVATE (HOLD: no public flip without Le); lean-pkg `verified-private` at `f3be834` (receipts `5aa557b`: comparator PASS over all 1430 theorem claims; lower tier 0 sorry, 1731 claim axioms, standard axioms only); docs-only HEAD `0269e61`; `claims ledger` READY, 1071 required, 1681 verified, 0 open |
+| Companion | `chenle02/stratonovich-ham-second-moment-lean`, PRIVATE (HOLD: no public flip without Le); lean-pkg `verified-private` at `f3be834` (receipts `5aa557b`: comparator PASS over all 1430 theorem claims; lower tier 0 sorry, 1731 claim axioms, standard axioms only); docs-only HEAD `fcdf252`; `claims ledger` READY, 1071 required, 1681 verified, 0 open |
 | Claims | 1731 (1430 theorems, 301 definitions); ledger 891 labelled, 840 no direct label |
 | Coverage rows (67) | 39 same-assumptions (27 full, 12 narrower); 24 inputs-supplied (5 every conclusion proved, 19 steps or narrower); 4 outside (`T:full-upper`, `T:intrinsic-occupation-ceiling`, `T:intrinsic-second-moment`, `T:white-moment-bounds`) |
-| Manuscript labelled results (220 T/P/L/C at `a284420`) | about 12% formalized as stated with nothing supplied (27); 18% with the manuscript's hypotheses incl. narrower (39); 29% with some Lean content (63); the 8 theorems: none end to end. Proof-weighted toward the main theorems: roughly 10-15%; the rest needs D1 (Gaussian chaos), D2, D5, D7, D8 foundations |
+| Manuscript labelled results (220 T/P/L/C at `a284420`; per-label table in the companion's COMPLETION.md) | 23 (10%) formalized with the manuscript's hypotheses, full; 12 (5%) same hypotheses, narrower; 5 (2%) every conclusion proved with inputs supplied; 19 (9%) steps or narrower with inputs supplied; 4 (2%) outside (main theorems); 157 (71%) not formalized. So 10% as stated, 16% with the manuscript's hypotheses incl. narrower, 27% with some Lean content (plus 4 covered displays/remarks). No theorem end to end. Proof-weighted toward the main theorems: roughly 10-15%; the rest needs D1, D2, D5, D7, D8 |
 | Key named inputs still supplied | `S1Bdd` (L8-c proposes its deterministic discharge); `TerminalWickInput` (L8-f); `L:fixed-split`, energy-split identity (P:interval-coefficients); operator/stochastic inputs of `C:static-interaction`; D1/D7/D8 links of `P:wave-two-variances`, `P:masked-noise-completion` |
 | Narrowed rows to restore | `L:spatial-fourier-bound` (R_alpha identity: L8-a); `L:damped-homogeneous-norms` (lower bounds, smoothing: L8-b) |
 | External kernel replay (Easley, `leanchecker --fresh`) | all library modules through wave L6 pass (latest: wave L6 at `bfa2fd0`, 16/16, companion `0269e61`); wave L7 at `f3be834`: job 5692712 running (submitted via <MACHINE>) |
 | Book Appendix F (#24) | pinned to verified `f3be834`, coverage `ed3cd68` (book `dcb031e`); single SHA `0269e61` sent for the re-pin (scope fix + L6 replay) |
+| Milestone tags (companion, annotated, pushed) | `L0-companion-created` 38d1616, `ledger-gate` 48ce162, `L1-gate` b876362, `L2-gate` 79afdde, `L3-gate` dfc2fe8, `L4-gate` ac6f767, `reanchor-975feb3` d40f394, `L5-gate` 712c307, `L6-gate` bfa2fd0, `L7-gate` f3be834; a new tag at every gate closure |
+| Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
-| Compute | this laptop: L8 agents, integration, receipts; Office (36 cores): companion built at `0269e61`, `office-lean.sh` compile wrapper, Easley route, L9 compiling; <MACHINE> (12 cores): spare |
+| Compute | this laptop: L8 agents, integration, receipts; Office (36 cores): companion built at `0269e61`, `office-lean.sh` compile wrapper, Easley route, L9 compiling; <MACHINE> (12 cores): L10 independent items (companion being built there) |
 | Decisions open for Le | approve L9 (with its nine defaults); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
 | Next actions | L8 items -> integration, docs, comparator, receipts, reviews, Le's gate; collect the Easley L7 replay (via <MACHINE>) |
 
