@@ -2,10 +2,9 @@
 
 The long document is now a book-style technical companion. The short reader
 remains an article and the entry point. Both retain their existing filenames.
-The book has **335 pages, 11 chapters and six appendices** (four
-mathematical appendices; Appendix E, the AI work in numbers; and Appendix F,
-what Lean checks); the reader
-has **28 pages**. The full pair therefore contains 363 pages.
+The book has **345 pages, 11 chapters and seven appendices**: four proof
+appendices, Appendix E on the AI work, Appendix F on Lean coverage, and
+Appendix G on approaches that do not work. The reader has **28 pages**. The full pair therefore contains 373 pages.
 
 The main proof runs continuously through the numbered chapters. The appendices
 retain finite-order calculations, direct bounds with additional hypotheses,
@@ -15,22 +14,23 @@ mathematical record was deleted to make the structure appear shorter.
 | Chapter | Topic | Printed pages |
 |---|---|---|
 | 1 | Introduction | 1–24 |
-| 2 | Construction and two-chain estimates | 25–47 |
-| 3 | An independent upper bound | 48–79 |
-| 4 | Covariance estimates and Gaussian approximation | 80–104 |
-| 5 | The original noise and operator paths | 105–123 |
-| 6 | Fixed masks and wave evolution | 124–143 |
-| 7 | Scaling and the point lower bound | 144–160 |
-| 8 | Spatial controls and Gaussian means | 161–176 |
-| 9 | Bounds as the spatial radius grows | 177–191 |
-| 10 | Gaussian estimates for the point upper bound | 192–221 |
-| 11 | The constant and its consequences | 222–239 |
-| A | Finite-order calculations | 240–246 |
-| B | Direct upper bounds and static interpolation | 247–265 |
-| C | Covariance comparisons in higher dimensions | 266–287 |
-| D | Static comparisons and the clock obstruction | 288–301 |
-| E | The AI work in numbers | 302–304 |
-| F | What Lean checks | 305–307 |
+| 2 | Construction and two-chain estimates | 25–48 |
+| 3 | An independent upper bound | 49–80 |
+| 4 | Covariance estimates and Gaussian approximation | 81–105 |
+| 5 | The original noise and operator paths | 106–124 |
+| 6 | Fixed masks and wave evolution | 125–144 |
+| 7 | Scaling and the point lower bound | 145–161 |
+| 8 | Spatial controls and Gaussian means | 162–178 |
+| 9 | Bounds as the spatial radius grows | 179–193 |
+| 10 | Gaussian estimates for the point upper bound | 194–223 |
+| 11 | The constant and its consequences | 224–241 |
+| A | Finite-order calculations | 242–248 |
+| B | Direct upper bounds and static interpolation | 249–267 |
+| C | Covariance comparisons in higher dimensions | 268–289 |
+| D | Static comparisons and the clock obstruction | 290–303 |
+| E | The AI work in numbers | 304–306 |
+| F | What Lean checks | 307–310 |
+| G | Approaches that do not work | 311–317 |
 
 The front matter has a Preface, Abstract, multilevel contents, illustrations
 and a guide to the argument. After the bibliography, the six-page List of
@@ -52,11 +52,11 @@ its two old prose references were corrected from Section to Chapter.
 identities and the old reader's 71 landmarks. Source-paper theorem and page
 pinpoints retain the source paper's numbering; they were not renumbered.
 
-All 215 technical proofs retain their mathematical expressions, checked by
-proof owner. The 27 mathematical modules retain their proof text; one now includes an
-additional explanatory figure. The literature section is a separate input. This is a
-structural and typographic revision, not a new mathematical result or an
-upgrade of the independent review status. The previous 275-page article-style
+In the original book-format conversion, all 215 technical proofs retained
+their mathematical expressions, checked by proof owner. The 27 mathematical modules retained their proof text; one received an
+additional explanatory figure. The literature section became a separate input.
+That conversion was structural and typographic, without upgrading the
+independent mathematical review status. The previous 275-page article-style
 companion is preserved at commit 669ccc9.
 
 The reader's literal section-number references were replaced by links to stable
@@ -126,3 +126,10 @@ The opening chapter is titled Introduction. The Preface explains audience,
 prerequisites and reading routes; the Abstract retains the mathematical
 summary; the Guide to the proof explains dependencies. Acknowledgments and
 publication-specific matter are left for actual authorial/publication decisions.
+
+The November 11 deterministic update adds Lemma `L:spatial-fourier-bound` and
+revises the proofs of `P:spatial-smooth-ratio` and
+`L:damped-homogeneous-norms`. The current book has 216 proofs, with 213 unchanged
+from its immediate baseline. That scoped mathematical review is recorded in
+`../reviews/2026-11-11-deterministic-spatial-multiplier/`; it is separate from
+the historical formatting checks and the open whole-paper gates.

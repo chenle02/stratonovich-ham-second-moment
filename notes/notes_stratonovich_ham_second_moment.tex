@@ -823,9 +823,28 @@ exact source qualification.
     N_1^{(M)}(1)\longrightarrow0,\qquad
     N_2^{(M)}(1)\longrightarrow0\quad(M\to\infty).
   \end{equation}
-  Spatial Gaussian smoothing, Gaussian smoothing of the Green kernel, and
-  restriction of a temporal Laplace domain do not increase these corresponding
-  full or tail norm bounds.
+  More precisely, let $m:\R^d\to[0,1]$ be measurable and let
+  $S\subset S'\subset(0,\infty)$ be measurable. Define $N_{1,m,S}(\theta)$
+  by replacing $\mu$ with $m\mu$ and restricting the $\lambda$ integral in
+  $N_1$ to $S$. Define $N_{2,m,S}(\theta)^2$ by replacing $\mu$ with $m\mu$
+  and the temporal kernel in $N_2^2$ with
+  \[
+    K_S(r)=\frac1{\Gamma_{\mathrm{E}}(\alpha_0)}
+    \int_S e^{-\lambda|r|}\lambda^{\alpha_0-1}\ud\lambda.
+  \]
+  Then, for every $\theta>0$,
+  \begin{equation}\label{E:damped-multiplier-comparison}
+    \begin{split}
+      0\le N_{1,m,S}(\theta)&\le N_{1,1,S'}(\theta),\\
+      0\le N_{2,m,S}(\theta)^2&\le N_{2,1,S'}(\theta)^2.
+    \end{split}
+  \end{equation}
+  These are comparisons of spectral expressions, including full and tail
+  domains. An arbitrary $m$ need not preserve Hypothesis~\ref{H:homog}; the
+  scaling identities above are asserted for the original covariance only.
+  Spatial Gaussian smoothing and Gaussian smoothing of the Green kernel
+  give multipliers in this class. The separate mass identity for $N_0$ is
+  unchanged by Gaussian smoothing of the Green kernel.
 \end{lemma}
 
 \begin{proof}
@@ -872,13 +891,30 @@ exact source qualification.
   \to 0$. The tail kernel is positive definite by the same Laplace-mixture
   argument, so its quadratic form is nonnegative.
 
-  Spatial and Green Gaussian smoothing multiply the spectral integrals by
-  factors in $[0,1]$. For $N_1$ the integrand is nonnegative. For $N_2$, first
-  integrate in time: the quadratic form at each $\xi$ is nonnegative, so its
-  Gaussian multiplier can be removed in an upper bound. Restricting a temporal
-  Laplace domain likewise decreases the first norm and its nonnegative
-  covariance quadratic form. This proves all smoothing and truncation
-  assertions, including the bounds for temporal tails. This proves
+  For the multiplier comparisons, define
+  \[
+    B_\theta(\lambda,\xi)=\int_0^\infty\int_0^\infty
+    e^{-\theta(s+t)}e^{-\lambda|s-t|}
+    \widehat G_s(\xi)\overline{\widehat G_t(\xi)}\ud s\ud t.
+  \]
+  For each $\lambda>0$ and $\xi$, the positive definiteness of
+  $e^{-\lambda|s-t|}$ gives $B_\theta(\lambda,\xi)\ge0$.
+  The absolute-integrability bound above, $0\le m\le1$ and
+  $0\le K_S\le|\cdot|^{-\alpha_0}$ justify changing the integration order:
+  \[
+    N_{2,m,S}(\theta)^2
+    =\frac1{\Gamma_{\mathrm{E}}(\alpha_0)}
+    \int_S\lambda^{\alpha_0-1}
+    \int m(\xi)B_\theta(\lambda,\xi)\mu(\ud\xi)\ud\lambda.
+  \]
+  Nonnegativity now proves the second comparison
+  in~\eqref{E:damped-multiplier-comparison}. It is used after time integration,
+  not pointwise on the oscillating product of wave Fourier kernels. The first
+  comparison follows directly from the nonnegative integrand defining $N_1$.
+  The choices $S=(0,\infty)$ or $S=(M,\infty)$ give the full or tail bounds.
+  Gaussian spatial and Green smoothing contribute products of multipliers in
+  $[0,1]$ depending only on $\xi$. Gaussian Green smoothing also preserves
+  $G_s(\R^d)=s$, proving its separate assertion for $N_0$. This proves
   Lemma~\ref{L:damped-homogeneous-norms}.
 \end{proof}
 

@@ -19012,3 +19012,83 @@ verified commit stays 712c307. coverage.yaml, the receipt summary and
 notes/lean-coverage-data.tex are byte-identical, so the PDF is unchanged.
 One more README-only companion commit will follow when the Easley replay
 (job 5690458) finishes; only the coverage SHA would move.
+
+## 2026-11-11: deterministic spatial bound and precise multiplier comparison — candidate
+
+Gate class: scoped
+Gate scope: L:spatial-fourier-bound (new), P:spatial-smooth-ratio finiteness
+proof and its spatial-extension consumers; L:damped-homogeneous-norms multiplier
+statement/proof and its smoothing/truncation uses. Internal Lean-to-manuscript
+transfer approved by Le; no external collaborator-response or submission gate.
+Mandatory protocols: AGENTS.md mathematical proof/source/build gates; independent
+DeepSeek V4 Pro MAIN and native Kimi-K3 at configured effort, HIGH reports;
+whole-paper/final gates remain separate and open. Lean successor correspondence
+belongs to Agent22 after the manuscript commit.
+
+Candidate adds an unnormalized Fourier proof with explicit resolvent constant,
+including zero and singular covariances; R_0 finiteness is now deterministic,
+while the real-valued S_1^pos score premises remain. The multiplier statement
+uses arbitrary measurable0<=m<=1 and nested positive Laplace domains only for
+spectral expressions, with positivity after time integration and N_0 separate.
+Frozen packet and local zero/white/sign checks:
+reviews/2026-11-11-deterministic-spatial-multiplier/. New label
+L:spatial-fourier-bound; equation labels E:spatial-fourier-bound and
+E:damped-multiplier-comparison. No existing label removed. Review PENDING.
+
+Routing: NORMAL_REVIEW of the two written deductions and applications; no
+Lean no-dispatch exemption claimed. Existing Lean proof reports inform the
+scope but do not certify the new manuscript boundary. Both families receive
+the same frozen target/context/diff without prior verdicts. Kimi doctor reports
+configured max effort; the initial dry run refused an unsupported per-call
+effort flag before dispatch. The corrected dry run omits that flag and passes.
+DeepSeek's configured paper-review-deepseek route returned READY with tools
+denied. These health/preflight outcomes are not scientific verdicts.
+
+The first frozen candidate received no scientific verdict: DeepSeek and Kimi
+both reached the900-second wall limit; Kimi logged APIConnectionError/retrying.
+Attempts and receipts retained. Root independently found a stale relative
+reference introduced by inserting the new lemma: P:spatial-smooth-ratio now
+names L:spatial-static-controls instead of saying "the preceding proof".
+Corrected source is frozen under candidate-v2; this changed input requires
+fresh reviews, not resuming or rewriting the original attempts. Same two
+reviewer models and HIGH threshold,3600-second allowance, no fallback or
+confidence relaxation. No mathematical formula/hypothesis changed in this repair.
+
+Mathematical reviews now pass in the two required families: DeepSeek V4 Pro
+PASS_WITH_NOTES/high (one lineage, a concrete report-only theta correction and
+serialization repair retained), and expanded-context Kimi-K3 PASS_WITH_NOTES/high,
+11checks with no required repairs. The earlier Kimi medium/invalid report is
+preserved and not upgraded. New context supplied its unavailable interfaces;
+no mathematical candidate change was made to obtain a preferred verdict.
+
+Image fidelity remains pending. Kimi's Read tool rejected the supplied PNGs;
+its accepted text report explicitly lists that gap. Agent21 is implementing a
+supported read-only ReadMediaFile route; the visual follow-up packet is ready.
+The corrected reader paragraph and current builds pass96label/266link and
+373index checks. Scope and every optional/report-only finding are adjudicated
+in the review directory's ADJUDICATION.md. No whole-paper or successor Lean
+gate is claimed. Third-party page images/text in these packets stay private.
+
+The remaining image gate is closed for this scoped revision. Agent21 delivered
+Le-AI-Lab8273447a with a Kimi-only --allow-image-read flag and unchanged default
+read-only profile;140runner tests and three mutation checks passed. The live
+source/rendered-image follow-up returned PASS/high,7checks, accepted=true,
+using only Read and ReadMediaFile. Four source pages and five manuscript pages
+were inspected, with targeted crops. Full native source-bearing artifacts stay
+under private/audit/2026-11-11-deterministic-source-images/; exact report/receipt
+copies and the final adjudication are in the scoped reviews directory.
+
+Root accepts this approved two-point manuscript revision on the conjunction of
+DeepSeek V4 Pro mathematical PASS_WITH_NOTES/high, expanded Kimi-K3 mathematical
+PASS_WITH_NOTES/high and the separate Kimi image-fidelity PASS/high. Earlier
+timeouts, medium/invalid reports and report-only errors remain intact. No new
+required mathematical repair was found. This does not close whole-paper gates
+or claim human verification. Agent22's re-anchor/correspondence remains next.
+
+The public-preparation owner's concurrently committed Appendix F/G and Preface
+updates were preserved. The integrated book is345pages (reader28); all five
+reviewed manuscript pages are pixel-identical to the reviewed render. The
+reviewed mathematical sections are byte-identical to their frozen candidate.
+Final checks:0errors,0undefined references/citations,0overfull boxes;216proofs,
+213unchanged;96reader labels,266links and373index records. New labels and exact
+ranges are recorded in final-label-ranges.json in the review directory.

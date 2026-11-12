@@ -1,0 +1,92 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "TARGET.md (whole file as supplied): damped-norms section, including E:damped-norm-definitions and the complete statement and proof of L:damped-homogeneous-norms",
+    "TARGET.md (whole file as supplied): complete spatial-occupation module from L:spatial-physical-pair through P:occupation-physical-class, including the closing zero-covariance paragraph",
+    "CONTEXT.md (whole file as supplied): H:homog and zero covariance, R_alpha definition, unitary/distributional spectral convention, the existing positive-control scores and their finiteness arguments, and the existing multiplier consumers",
+    "DIFF.md (whole file as supplied): both hunks, namely notes/integrated_spatial_occupation.tex and notes/notes_stratonovich_ham_second_moment.tex"
+  ],
+  "checks": [
+    {
+      "claim": "L:spatial-fourier-bound handles H:homog with alpha<2, b>0, zero covariance, and singular Gamma/mu cases.",
+      "verdict": "PASS",
+      "reason": "The b>0 argument is valid: a C_c^infty unit L2 function with vanishing full gradient is a constant and must vanish. The proof uses only the measure Gamma and its spectral measure mu, so no density is required; c_Q is C_c^infty with compact support so the Gamma pairing is finite even for singular Gamma, and |F0 Q|^2 is Schwartz so the mu pairing is finite even for the white-noise spectral measure. Zero covariance forces mu=0 by tempered Fourier uniqueness, giving R_alpha=0 and vanishing both sides. The threshold alpha0+alpha<2 with alpha0>0 gives alpha<2, so the resolvent exponent is admissible."
+    },
+    {
+      "claim": "The unnormalized Fourier convention is used consistently, the autocorrelation Schwartz identity holds, all integrals are finite, and no illicit Fubini over two infinite oscillatory measures is performed.",
+      "verdict": "PASS",
+      "reason": "F0 is defined without the unitary constant and is stated as c_d^{-1}widehat Q. E:masked-spectral-convention is applied to the compactly supported Schwartz function c_Q, whose inner Fourier integral is an ordinary absolutely convergent integral. The equality A_sp(g)=int|F0 Q|^2 mu(dxi) is a distributional pairing, not an interchange of two sigma-finite oscillatory measures, and the text explicitly disclaims such an interchange."
+    },
+    {
+      "claim": "The Fourier/gradient estimates, the majorant 8b/(4b+|xi|^2), the resolvent identity, and the constant 2^(1+alpha)R_alpha are correct.",
+      "verdict": "PASS",
+      "reason": "|F0 Q|<=||Q||_1=1 and |xi||F0 Q|<=||grad Q||_1<=2||g||_2||grad g||_2=2sqrt b are valid. The two-region split gives the stated majorant. The resolvent identity int mu(dxi)/(q^2+|xi|^2)=q^{alpha-2}R_alpha follows from mu(B_r)=r^alpha mu(B_1) and int_0^infty u^{alpha-1}/(1+u^2)du=pi/(2 sin(pi alpha/2)); with q=2sqrt b this gives 8b R_Gamma(2sqrt b)=2^{1+alpha}R_alpha b^{alpha/2}."
+    },
+    {
+      "claim": "R0 finiteness is now deterministic; strict positivity is local to Gamma nonzero; there is no cycle with T:full-upper or S1^pos; the score argument retains its finite-real S1^pos premises.",
+      "verdict": "PASS",
+      "reason": "L:spatial-fourier-bound gives the uniform bound R(g)<=2^{1+alpha}R_alpha for smooth unit profiles, so R0 is finite without invoking the finiteness of S1^pos. Positivity of A_sp(g) for a nonzero nonnegative smooth bump uses autocorrelation positivity near zero and the homogeneity-induced positivity of every origin-centered Gamma ball, valid for nonzero Gamma. The score inequality in P:spatial-smooth-ratio still uses L:spatial-static-controls, whose proof legitimately depends only on the already fixed finite-real S1^pos from P:variational-positive-scores; no circularity with T:full-upper enters through R0 anymore."
+    },
+    {
+      "claim": "N_{1,m,S}, N_{2,m,S}^2, arbitrary measurable m in [0,1], measurable nested positive Laplace domains, and finiteness are well-defined.",
+      "verdict": "PASS",
+      "reason": "For every fixed theta>0 the comparisons are at the same theta, and finiteness of the full quantities N_1(theta) and N_2(theta)^2 for every theta>0 has already been established before the multiplier comparison. Since the integrands are nonnegative and m<=1, S subset S' subset (0,infty), one has N_{1,m,S}(theta)<=N_{1,1,S'}(theta)<=N_1(theta)<infty and N_{2,m,S}(theta)^2<=N_{2,1,S'}(theta)^2<=N_2(theta)^2<infty. The second inequality in each chain is domination by the full-domain integral at the same theta; it does not compare to theta=1. The set S need not be bounded away from 0 or infinity, because the already proved full-domain integrability absorbs every measurable S subset (0,infty). This corrects my prior reasoning, which had conflated the candidate's same-theta comparison with the scaling identity at theta=1; that was a report-only error and exposes no manuscript defect."
+    },
+    {
+      "claim": "N2 has a nonnegative time quadratic form at each (lambda,xi), the integral exchanges are justified, monotonicity follows, and no pointwise sign claim is made for products of wave Fourier kernels.",
+      "verdict": "PASS",
+      "reason": "B_theta(lambda,xi) is the time integral against the positive-definite kernel e^{-lambda|s-t|}, so B_theta>=0. The already established absolute-integrability majorant, 0<=m<=1, and 0<=K_S<=|r|^{-alpha0} justify the exchanges. The comparison then uses nonnegativity after time integration, and the text explicitly records that no pointwise sign claim on widehat G_s overline{widehat G_t} is used."
+    },
+    {
+      "claim": "Exact scaling identities remain for the original homogeneous covariance; arbitrary m is not asserted to define a new H:homog model; Gaussian smoothing and the separate N0 mass argument are covered.",
+      "verdict": "PASS",
+      "reason": "The N0, N1, and N2 scaling under the full original covariance are preserved in the lemma. The text explicitly states that an arbitrary m need not preserve H:homog and that scaling is asserted only for the original covariance. Gaussian spatial and Green smoothing are identified as multipliers in the same m-class, and Green spatial smoothing is separately handled for N0 because G_s(R^d)=s is preserved by normalized spatial convolution."
+    },
+    {
+      "claim": "Full/tail comparisons, temporal tails, and the included existing consumers remain valid.",
+      "verdict": "PASS",
+      "reason": "Choosing S=S'=(0,infty) gives the full bounds and S=S'=(M,infty) gives the tail bounds. N1^(M) tends to zero as the tail of a finite nonnegative integral. For N2^(M), 0<=K_M<=|r|^{-alpha0} and K_M->0 for r<>0, with the absolute majorant integrable, so dominated convergence applies away from the null diagonal. The comparison statement is exactly the multiplier-removal mechanism used by the existing smoothing consumers."
+    },
+    {
+      "claim": "The diff introduces no mathematical weakening in P:spatial-smooth-ratio, and the downstream four-linear extension and energy identification in TARGET.md remain valid.",
+      "verdict": "PASS",
+      "reason": "The change replaces the S1^pos-dependent proof of R0 finiteness by a deterministic bound and otherwise preserves the score-inequality argument. Downstream, P:spatial-four-linear only needs a finite positive R0, now supplied deterministically, and the continuity/extension argument is unchanged; P:spatial-energy-map uses R_sp=R0 and the same energy identity without that proof being affected. No needed conclusion is lost."
+    },
+    {
+      "claim": "Global scope: cross-label consistency, inherited assumptions, substantive unproved steps, and remaining blockers.",
+      "verdict": "PASS",
+      "reason": "Labels such as L:spatial-fourier-bound, L:spatial-static-controls, P:spatial-smooth-ratio, L:damped-homogeneous-norms, and E:intro-spectral-mass are consistent. The only substantive cross-reference is to the resolvent calculation inside the proof of L:damped-homogeneous-norms, which is valid. The corrected check5 reassessment found only a report-side reasoning slip, not a manuscript issue. No blocker or unresolved mathematical gap was found in the scoped material; only the listed minor exposition issues remain."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      {
+        "claim": "The damped-norms proof reduces radial spectral integrals using only the ball-mass law mu(B_r)=r^alpha V.",
+        "reason": "This is correct by layer-cake/Stieltjes integration for the monotone radial integrands used, but the proof does not state that one-line justification explicitly."
+      },
+      {
+        "claim": "Positive definiteness of e^{-lambda|s-t|} is invoked to obtain B_theta>=0.",
+        "reason": "This is standard, but one line showing the nonnegative Fourier transform of the corresponding Cauchy-type measure would make the argument self-contained."
+      },
+      {
+        "claim": "The notation N_{2,m,S}(theta)^2 denotes a defined expression rather than the square of a scalar N_{2,m,S}(theta).",
+        "reason": "The prose defines the symbol explicitly, but the suffix '^2' could invite the wrong reading."
+      },
+      {
+        "claim": "L:spatial-fourier-bound cites a resolvent computation from inside the proof of L:damped-homogeneous-norms rather than a numbered standalone equation.",
+        "reason": "The computation is valid and visible in the supplied TARGET.md, but promoting it to a labeled equation would improve cross-referencing."
+      }
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a scoped review of the supplied changed prose and its stated interfaces only; it is not a whole-manuscript acceptance, novelty assessment, or image review.",
+    "Only TARGET.md, CONTEXT.md, DIFF.md, and the environment instruction file were read.",
+    "The supplied inline packet contained no numbered line ranges, so source_coverage is recorded by file and section rather than by line numbers.",
+    "No attempt was made to consult unseen surrounding lemmas beyond the supplied context."
+  ]
+}

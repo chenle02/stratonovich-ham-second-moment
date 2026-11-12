@@ -1,0 +1,92 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "TARGET.md lines 1-608 (complete)",
+    "CONTEXT.md lines 1-517 (complete)",
+    "DIFF.md lines 1-190 (complete)",
+    "EXPANDED_CONTEXT.md lines 1-1346 (complete)",
+    "CHEN_SOURCE.md lines 1-214 (complete)",
+    "READER_SYNC.md lines 1-21 (complete)",
+    "chen-author-page-3.png: partial - not readable with the tools available in this environment (image file; no media-inspection tool); substituted by the layout-extracted text of printed page 3 in CHEN_SOURCE.md lines 5-74",
+    "chen-author-page-13.png: partial - same image-access gap; substituted by CHEN_SOURCE.md lines 76-139",
+    "chen-author-page-14.png: partial - same image-access gap; substituted by CHEN_SOURCE.md lines 141-214"
+  ],
+  "checks": [
+    {
+      "claim": "H:homog cases (alpha<2, b>0, zero covariance, singular Gamma/mu) in L:spatial-fourier-bound",
+      "verdict": "PASS",
+      "reason": "alpha<2 is inherited from H:homog since alpha_0>0 and the threshold alpha_0+alpha<2 (CONTEXT lines 6-23); this also validates the finiteness condition 0<alpha<2 of the resolvent integral and covers alpha=d=1 white noise (checked separately: bound becomes 2*b^{1/2}, consistent with direct Plancherel). b>0 is correctly proved: b=0 plus smoothness forces constant g, and compact support contradicts ||g||_2=1. For Gamma=0, Fourier uniqueness gives mu=0, hence R_alpha=0 and both sides of E:spatial-fourier-bound vanish, as stated. The distributional spectral identity E:masked-spectral-convention is applied to the Schwartz autocorrelation c_Q with no density assumption, so singular and atomic covariances are covered; the section's strict-positivity claims remain local to Gamma!=0 (TARGET line 161, CONTEXT lines 26-31)."
+    },
+    {
+      "claim": "Unnormalized Fourier convention, autocorrelation Schwartz identity, integrability, no illicit Fubini",
+      "verdict": "PASS",
+      "reason": "F_0 is explicitly defined unnormalized and its relation to the unitary convention is noted only as a remark; the identity actually used is the unnormalized distribution pairing E:masked-spectral-convention. c_Q(y)=int Q(x)Q(x-y)dx is smooth compactly supported for Q=g^2, hence Schwartz; the change of variables gives F_0 c_Q(xi)=|F_0 Q(xi)|^2 for real Q (verified), and evenness of |F_0 Q| absorbs the e^{+i xi.x} sign in the convention. Finiteness: c_Q compactly supported against Radon Gamma, and |F_0 Q|^2 Schwartz against tempered mu. The pairing is a single distribution evaluation, honoring CONTEXT's stated discipline of not interchanging two infinite oscillatory measures (CONTEXT lines 66-74)."
+    },
+    {
+      "claim": "Fourier/gradient bounds, majorant 8b/(4b+|xi|^2), resolvent identity, constant 2^(1+alpha)R_alpha",
+      "verdict": "PASS",
+      "reason": "Re-derived: |F_0 Q|<=||Q||_1=1, and |xi|^2 F_0 Q = -F_0(xi.grad Q) gives |xi||F_0 Q|<=||grad Q||_1<=2||g||_2||grad g||_2=2 sqrt(b). Hence |F_0 Q|^2<=min(1,4b/|xi|^2), and the split at |xi|^2=4b verifies min(1,4b/|xi|^2)<=8b/(4b+|xi|^2) in both regimes exactly. From mu(B_r)=V r^alpha, int mu(dxi)/(q^2+|xi|^2)=alpha V q^{alpha-2} int_0^inf u^{alpha-1}/(1+u^2) du = q^{alpha-2} R_alpha with R_alpha=alpha pi mu(B_1)/(2 sin(pi alpha/2)), matching E:intro-spectral-mass and the calculation cited from L:damped-homogeneous-norms (TARGET lines 84-90). The final assembly 8b*(2 sqrt b)^{alpha-2}=2^{1+alpha} b^{alpha/2} is exact."
+    },
+    {
+      "claim": "R_0 finiteness now deterministic, strict positivity local to Gamma!=0, no cycle with T:full-upper or S1Bdd; score argument retains finite-real S_1^pos premises",
+      "verdict": "PASS",
+      "reason": "R(g)<=2^{1+alpha}R_alpha now rests only on H:homog, the spectral identity, and the deterministic resolvent calculation; the proof explicitly states independence of S_1^pos finiteness (TARGET lines 342-345). Positivity R_0>0 uses the smooth-compact autocorrelation argument under the retained nonzero covariance. The score inequality still flows from S_1^pos>=I_Psi - v_Psi/2 per control and the finite real S_1^pos of P:variational-positive-scores; the new closing sentence (TARGET lines 370-373, DIFF lines 108-112) states exactly this. No path from L:spatial-fourier-bound to T:full-upper or S_1^pos exists, so there is no cycle; the algebra of the score inequality was re-verified in full (L^k=1/(qC), 1+u=4/q, q^q C = 8 M_a q^{q/2}/(R(g) alpha^{alpha/2}))."
+    },
+    {
+      "claim": "Definitions of N_{1,m,S}, N_{2,m,S}^2, arbitrary measurable m in [0,1], measurable nested positive Laplace domains, and finiteness",
+      "verdict": "PASS",
+      "reason": "m:Borel->[0,1] and measurable S subset S' subset (0,infty) give well-defined measure m mu and kernel K_S(r)=Gamma_E(alpha_0)^{-1} int_S e^{-lambda|r|} lambda^{alpha_0-1} dlambda <= |r|^{-alpha_0}; finiteness of N_{1,m,S} and N_{2,m,S}^2 follows from the proved full-norm bounds via the comparison itself (N_{i,1,S'}<=N_i<inf). The earlier tail notation K_M coincides with K_{(M,infty)}, and N_2=N_{2,1,(0,infty)} since int_0^inf e^{-lambda|r|} lambda^{alpha_0-1} dlambda = Gamma(alpha_0)|r|^{-alpha_0}."
+    },
+    {
+      "claim": "N2 nonnegative time quadratic form at each (lambda,xi), justified integral exchanges, multiplier/domain monotonicity; no pointwise sign claim on wave-transform products",
+      "verdict": "PASS",
+      "reason": "B_theta(lambda,xi)=int int e^{-theta(s+t)} e^{-lambda|s-t|} Ghat_s(xi) conj(Ghat_t(xi)) ds dt >=0 because e^{-lambda|s-t|} is positive definite (Bochner/Cauchy density; also factorized explicitly in EXPANDED_CONTEXT lines 60-70), applied to the L^1 function psi(s)=e^{-theta s} Ghat_s(xi). The exchange N_{2,m,S}(theta)^2 = Gamma_E^{-1} int_S lambda^{alpha_0-1} int m B_theta dmu dlambda is justified by Tonelli on absolute values using 0<=K_S<=|.|^{-alpha_0}, 0<=m<=1, and the previously proved (s,t,xi) absolute majorant (min(s,1/|xi|) bounds with mu(B_r)=V r^alpha, alpha_0<1). Monotonicity in m and in S then follows from nonnegativity of B_theta and of lambda^{alpha_0-1}. The text correctly states the sign is used only after time integration, never pointwise on the oscillating product of wave Fourier kernels (TARGET lines 141-144)."
+    },
+    {
+      "claim": "Exact scaling only for the original homogeneous covariance; arbitrary m not a new H:homog model; Gaussian smoothing cases and separate N0 mass argument",
+      "verdict": "PASS",
+      "reason": "Re-derived the scaling: N_0(theta)=int e^{-theta s} s ds = theta^{-2}; N_1 via lambda=theta u, xi=theta eta gives theta^{alpha+alpha_0-2} N_1(1); N_2 via s=u/theta, t=v/theta, xi=theta eta with Ghat_{u/theta}(theta eta)=theta^{-1} Ghat_u(eta) and mu(d(theta eta))=theta^alpha mu(d eta) gives theta^{-(4-alpha-alpha_0)} N_2(1)^2, beta=4-alpha-alpha_0, exactly as stated. The lemma explicitly disclaims H:homog for arbitrary m and confines scaling to the original covariance (TARGET lines 73-75). Gaussian spatial smoothing and Gaussian Green smoothing give multipliers in [0,1] (in the admitted class), and heat convolution preserves G_s(R^d)=s, so the N_0 identity is separately unchanged (TARGET lines 76-78, 146-148)."
+    },
+    {
+      "claim": "Full/tail comparison, temporal tails, and the included existing consumers remain valid",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "S=(0,infty) and S=(M,infty) recover the full and tail bounds used by the consumers in CONTEXT lines 430-516 (Gaussian multiplier removal in nonnegative transforms and covariance quadratic forms, uniformity in regularizations, d=3 Green smoothing with multiplier <=1 and unchanged N_0). N_1^{(M)}(1)->0 is a tail of the finite N_1(1) integral; N_2^{(M)}(1)^2->0 follows from K_M<=|.|^{-alpha_0}, K_M(r)->0 off zero, and dominated convergence against the proved absolute majorant, with the tail kernel still positive definite - exactly what E:joint-temporal-tail in L:joint-fixed-order consumes. Source conventions (1.5), (2.24), (3.3)-(3.5) embedded in the consumer text were cross-checked against CHEN_SOURCE.md's extracted text (condition (1.5) as int (1+|xi|^2)^{-(2-alpha_0)/2} mu < inf; (2.24) cap form; (3.3)-(3.5) norm shapes, including the repeated-x qualification of (3.5) handled via R:source-case2-time-shift). Note: the three PNG pages could not be rendered in this environment; corroboration is textual only (see limitations)."
+    },
+    {
+      "claim": "No unintended weakening or lost conclusion in P:spatial-smooth-ratio; downstream four-linear extension and energy identification",
+      "verdict": "PASS",
+      "reason": "The proposition statement is unchanged; the deleted S_1^pos-dependent bound on R_0 was proof-internal and is replaced by the strictly stronger deterministic bound R_0<=2^{1+alpha}R_alpha, so nothing downstream loses its premise. The cross-reference fix ('autocorrelation argument in the proof of Lemma L:spatial-static-controls') is correct. Downstream re-verified: A_sp(cf)=c^4 A_sp(f) and N(f)^4=||f||_2^{4-alpha} ||grad f||_2^alpha give E:spatial-homogeneous-bound from R_0; signed smooth PSD via B_Gamma(Q,Q)=int |Qhat_ord|^2 mu >=0 plus symmetry from evenness of Gamma yields covariance Cauchy-Schwarz; density of C_c^inf in H^1 (cutoff+mollification), nu-a.e. transfer via L:spatial-physical-pair, Fatou then telescoping continuity give E:spatial-four-linear and R_sp=R_0; A_sp(f)>0 for nonzero H^1 f uses a bounded level set and positive Gamma ball mass. The dilation maximization (ell^{2-alpha}=alpha A/b), the energy identity E_sp=(2-alpha)/2 * alpha^{alpha/(2-alpha)} R_sp^{2/(2-alpha)}, the substitution R_sp alpha^{alpha/2}=(2 E_sp/(2-alpha))^{(2-alpha)/2}, and the occupation bound J<=R_star R_sp T^{alpha/2} with its scalar maximization all check algebraically. The zero-covariance closing paragraph is consistent (all pairings vanish, energies are zero suprema approached by small dilations)."
+    },
+    {
+      "claim": "Global scope: cross-label consistency, inherited assumptions, substantive unproved steps, remaining blockers",
+      "verdict": "PASS",
+      "reason": "All labels invoked by the changed text resolve within the packet with matching content: H:homog, E:intro-spectral-mass, E:masked-spectral-convention (CONTEXT), L:damped-homogeneous-norms, L:spatial-physical-pair, L:spatial-static-controls, P:spatial-smooth-ratio, P:spatial-four-linear, P:spatial-energy-map, P:occupation-physical-class, L:occupation-kernel-row (TARGET), L:translated-covariance-CS, R:source-case2-time-shift, L:pairing-product-envelope, L:joint-fixed-order, T:full-upper, temporal equilibrium identities, compact common-trial input (EXPANDED_CONTEXT). DIFF matches TARGET verbatim at both changed sites. Remaining unproved steps are standard and appropriately cited: the Euler integral int_0^inf u^{alpha-1}/(1+u^2)du=pi/(2 sin(pi alpha/2)), Fourier scaling duality mu(cA)=c^alpha mu(A) from Gamma(cA)=c^{d-alpha}Gamma(A), Bochner positive-definiteness of e^{-lambda|s-t|}, and Plancherel. No substantive gap or blocker found within the scoped review; whole-paper acceptance remains out of scope."
+    },
+    {
+      "claim": "Reader synchronization paragraph matches the revised dependency structure",
+      "verdict": "PASS",
+      "reason": "READER_SYNC states the precise revised order: deterministic Fourier bound makes the smooth spatial ratio finite without a stochastic moment estimate; the temporal equilibrium profile supplies controls for the separate score inequality; polarization and density give the four-linear extension; the fractional product estimate then uses this extension to reach H^{1/2}/H^{-1/2}. This matches TARGET and DIFF exactly, and it does not claim that finiteness of S_1^pos or any moment score became deterministic."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "The identification int_0^inf u^{alpha-1}/(1+u^2) du = pi/(2 sin(pi alpha/2)), used to equate the resolvent with q^{alpha-2} R_alpha inside L:spatial-fourier-bound, is standard but not derived in the text; an explicit half-sentence would close the loop with E:intro-spectral-mass.",
+      "In L:damped-homogeneous-norms the tail norms N_1^{(M)}(1) and N_2^{(M)}(1) are introduced verbally just before the general N_{i,m,S} notation; stating them as N_{1,1,(M,infty)}(1) and N_{2,1,(M,infty)}(1) would make the notation self-reinforcing.",
+      "CONTEXT.md contains the E:theta-envelope consumer block twice verbatim (lines 430-472 and 474-515); this is a harmless duplication in the review packet's context file, not in the manuscript.",
+      "The d=3 Green-smoothing multiplier and the Gaussian spatial multiplier are asserted to lie in [0,1] and to preserve G_s(R^d)=s without a displayed normalization check of p_eta; consistent with the source's p.13 definition and standard, but left implicit."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Image access: the three supplied source-page PNGs could not be rendered or read with the tools available in this environment (the Read tool accepts only text; no media-inspection tool is present). Definitions (1.5), (2.24), and (3.3)-(3.5) were therefore verified only against CHEN_SOURCE.md's layout-extracted text, which was legible, internally consistent, and consistent with every use in TARGET/CONTEXT; glyph-level corroboration against the printed pages was not possible.",
+    "No shell tool is available in this environment, so the source revision sha256:ba4aedd12e8466646ac37cbf2f206704853742fd05529879dedfc6cea5458e0d and the CHEN_SOURCE PDF hash could not be independently recomputed.",
+    "The Lean companion proof mentioned in the assignment is not part of the packet and was not re-verified; this review assesses the written deductions and their interfaces only.",
+    "L:cameron-fractional-products (referenced in READER_SYNC) lies outside the packet; only its interface role as a downstream consumer of the four-linear extension could be checked, not its proof.",
+    "Unchanged stochastic theorems supplied as context (T:full-upper, P:variational-positive-scores, L:pairing-product-envelope, L:joint-fixed-order, compact-ground-family material) were read completely and assessed at the interface level as instructed; they were not freshly re-proved, and whole-paper acceptance and novelty are outside this review's scope.",
+    "This is an AI review, not human verification."
+  ]
+}

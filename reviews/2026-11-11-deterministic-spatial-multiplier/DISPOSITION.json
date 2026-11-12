@@ -1,0 +1,37 @@
+{
+  "scope": [
+    "L:spatial-fourier-bound",
+    "P:spatial-smooth-ratio",
+    "L:damped-homogeneous-norms"
+  ],
+  "status": "accepted-scoped",
+  "whole_paper_acceptance": false,
+  "human_verification": false,
+  "lean_successor_correspondence": "pending Agent22",
+  "reviews": [
+    {
+      "route": "paper-review-deepseek",
+      "model": "deepseek/deepseek-v4-pro",
+      "verdict": "PASS_WITH_NOTES",
+      "confidence": "high",
+      "report": "candidate-v2/deepseek-format-repair-01/report-raw.txt",
+      "lineages": 1
+    },
+    {
+      "route": "subscription-review-cli",
+      "model": "kimi-code/k3",
+      "verdict": "PASS_WITH_NOTES",
+      "confidence": "high",
+      "report": "expanded-context-v3/kimi-attempt-01/report.json",
+      "scope": "mathematical/text; excludes unread images"
+    },
+    {
+      "route": "subscription-review-cli --allow-image-read",
+      "model": "kimi-code/k3",
+      "verdict": "PASS",
+      "confidence": "high",
+      "report": "visual-followup/report.json",
+      "scope": "four source and five rendered manuscript pages"
+    }
+  ]
+}

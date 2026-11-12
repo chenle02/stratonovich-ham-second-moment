@@ -95,6 +95,74 @@ its usual pointwise sense.
   Lemma~\ref{L:spatial-static-controls}.
 \end{proof}
 
+The next estimate also allows zero covariance and does not use the finiteness
+of $S_1^{\mathrm{pos}}$.
+
+\begin{lemma}[Deterministic Fourier bound for the spatial energy]
+  \label{L:spatial-fourier-bound}
+  Under Hypothesis~\ref{H:homog}, allowing $\Gamma=0$, let
+  $g\in C_c^\infty(\R^d;\R)$ satisfy $\|g\|_2=1$ and put
+  $b=\|\nabla g\|_2^2$. Then $b>0$ and
+  \begin{equation}\label{E:spatial-fourier-bound}
+    0\le A_{\mathrm{sp}}(g)
+    \le 2^{1+\alpha}R_\alpha b^{\alpha/2},
+  \end{equation}
+  where $R_\alpha$ is defined in~\eqref{E:intro-spectral-mass}.
+\end{lemma}
+
+\begin{proof}
+  If $b=0$, smoothness makes $\nabla g=0$ everywhere. Thus, $g$ is constant,
+  and compact support forces $g=0$, contrary to $\|g\|_2=1$. Put $Q=g^2$ and
+  use the unnormalized Fourier transform
+  \[
+    \mathcal{F}_0Q(\xi)=\int_{\R^d}e^{-i\xi\cdot x}Q(x)\ud x.
+  \]
+  In the unitary convention of Section~\ref{S:masked-covariance}, this is
+  $c_d^{-1}\widehat Q$, with $c_d=(2\pi)^{-d/2}$.
+  The autocorrelation
+  \[
+    c_Q(y)=\int_{\R^d}Q(x)Q(x-y)\ud x
+  \]
+  is smooth and compactly supported. Apply the distributional spectral
+  identity~\eqref{E:masked-spectral-convention} to this Schwartz function.
+  Its inner Fourier integral is $|\mathcal{F}_0Q(\xi)|^2$, since $Q$ is real.
+  Hence
+  \[
+    A_{\mathrm{sp}}(g)=\int c_Q(y)\Gamma(\ud y)
+    =\int|\mathcal{F}_0Q(\xi)|^2\mu(\ud\xi).
+  \]
+  Both integrals are finite: $c_Q$ is compactly supported and $\Gamma$ is
+  Radon, while $|\mathcal{F}_0Q|^2$ is Schwartz and $\mu$ is tempered.
+  No density of either measure is required.
+
+  Since $\|Q\|_1=1$, we have $|\mathcal{F}_0Q|\le1$. Integration by parts
+  and the Cauchy--Schwarz inequality give
+  \[
+    |\xi|\,|\mathcal{F}_0Q(\xi)|
+    \le\|\nabla Q\|_1
+    \le2\|g\|_2\|\nabla g\|_2=2\sqrt b.
+  \]
+  Splitting into $|\xi|^2\le4b$ and $|\xi|^2>4b$ therefore yields
+  \[
+    |\mathcal{F}_0Q(\xi)|^2\le\frac{8b}{4b+|\xi|^2}.
+  \]
+  The deterministic resolvent calculation in the proof of
+  Lemma~\ref{L:damped-homogeneous-norms}, together
+  with~\eqref{E:intro-spectral-mass}, gives, for $q>0$,
+  \[
+    \mathcal{R}_\Gamma(q):=\int\frac{\mu(\ud\xi)}{q^2+|\xi|^2}
+    =q^{\alpha-2}R_\alpha<\infty.
+  \]
+  Consequently,
+  \[
+    A_{\mathrm{sp}}(g)\le8b\mathcal{R}_\Gamma(2\sqrt b)
+    =2^{1+\alpha}R_\alpha b^{\alpha/2}.
+  \]
+  Nonnegativity follows from the spectral identity. If $\Gamma=0$, then
+  $\mu=0$ and both sides of~\eqref{E:spatial-fourier-bound} vanish. This proves
+  Lemma~\ref{L:spatial-fourier-bound}.
+\end{proof}
+
 \begin{proposition}[The finite smooth spatial ratio]
   \label{P:spatial-smooth-ratio}
   For real unit $g \in C_c^\infty(\R^d)$ put $R(g) =
@@ -112,9 +180,13 @@ its usual pointwise sense.
   The gradient energy $b(g)$ is positive: a nonzero $L^2$ function with zero
   weak gradient would have Fourier transform supported only at zero, and hence
   would vanish. Its square is nonnegative nonzero smooth compact, so the
-  autocorrelation argument in the preceding proof gives $0 < A: =
-  A_{\mathrm{sp}}(g) < \infty$. With $U_\ell g(x) = \ell^{d/2}g(\ell x)$, the
-  physical changes of variables give
+  autocorrelation argument in the proof of
+  Lemma~\ref{L:spatial-static-controls} gives
+  $0 < A:=A_{\mathrm{sp}}(g)<\infty$. Lemma~\ref{L:spatial-fourier-bound} gives
+  $R(g)\le2^{1+\alpha}R_\alpha$ for every such profile. A normalized compact
+  bump supplies a positive ratio. Thus, $0<R_0<\infty$, independently of the
+  finiteness of $S_1^{\mathrm{pos}}$. It remains to prove the score inequality.
+  With $U_\ell g(x)=\ell^{d/2}g(\ell x)$, the physical changes of variables give
   \begin{equation}\label{E:spatial-dilation}
     A_{\mathrm{sp}}(U_\ell g)=\ell^\alpha A,\qquad
     b(U_\ell g)=\ell^2b(g).
@@ -138,11 +210,9 @@ its usual pointwise sense.
   \]
   Its maximum occurs at $L^k = 1/(qC)$ and is $(k/q)(qC)^{-1/k}$. Since $1+u =
   4/q$, $1/(q^qC) = R(g)\alpha^{\alpha/2}/(8M_aq^{q/2})$,
-  proving~\eqref{E:spatial-smooth-score}. The already finite
-  $S_1^{\mathrm{pos}}$ bounds every ratio by
-  $8M_aq^{q/2}(S_1^{\mathrm{pos}}/k)^k/\alpha^{\alpha/2}$. A normalized compact
-  bump supplies a positive ratio. This proves positivity and finiteness of $R_0$
-  before any rough spatial extension is invoked. This proves
+  proving~\eqref{E:spatial-smooth-score}. This argument retains the finite
+  real value $S_1^{\mathrm{pos}}$ fixed at the start of the section; only the
+  proof of $R_0<\infty$ is independent of that input. This proves
   Proposition~\ref{P:spatial-smooth-ratio}.
 \end{proof}
 

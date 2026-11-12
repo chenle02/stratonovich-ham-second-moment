@@ -1,0 +1,106 @@
+{
+  "provider": "kimi",
+  "started_utc": "2026-11-12T03:03:16.835508+00:00",
+  "workspace": "<HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment/reviews/2026-11-11-deterministic-spatial-multiplier/candidate-v2/kimi-attempt-02/workspace",
+  "source_revision": "sha256:3a5e00f30eff74c589e290967d25314b00bbadbaae0468b658cf9207ca7ca514",
+  "input_hashes": {
+    "CONTEXT.md": "386139b53fcab53d4cd6239f9db107c2c8305eac4c305a5ad983699cb322dd0a",
+    "DIFF.md": "e61d02011ce7d4a1f5f46058dbb3ed6cba757628c1e548c22a7f313622598568",
+    "TARGET.md": "af33f26fb96c233a11b3e136a81cd21ed03b9ced78b43ace0ba75188f820e967"
+  },
+  "target": "TARGET.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "8d3e564de31beae42e064c782656b9ba34f77153cde24e1b52ef9cc23a93f6a2",
+  "effort_requested": null,
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": null,
+  "accepted": false,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [
+    {
+      "code": "unsupported-schema",
+      "path": "",
+      "message": "invalid report JSON: Expecting ',' delimiter: line 1 column 12927 (char 12926)"
+    }
+  ],
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "CONTEXT.md": [
+        "CONTEXT.md"
+      ],
+      "DIFF.md": [
+        "DIFF.md"
+      ],
+      "TARGET.md": [
+        "TARGET.md"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": null
+  },
+  "cli_version": "2.5.2",
+  "executable": "<HOME>/.kimi-code/bin/kimi",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "<HOME>/.kimi-code/bin/kimi",
+    "version": "2.5.2"
+  },
+  "auth": {
+    "provider": "managed:kimi-code",
+    "source": "oauth"
+  },
+  "configured_effort": "max",
+  "model_requested": "kimi-code/k3",
+  "command_without_prompt": [
+    "<HOME>/.kimi-code/bin/kimi",
+    "--model",
+    "kimi-code/k3",
+    "--output-format",
+    "stream-json",
+    "--agent-file",
+    "<HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment/reviews/2026-11-11-deterministic-spatial-multiplier/candidate-v2/kimi-attempt-02/kimi-reviewer.md",
+    "--prompt",
+    "<retained prompt.txt>"
+  ],
+  "prompt_transport": "argv",
+  "prompt_bytes": 5391,
+  "prompt_sha256": "586cf4ab127ed6bb038ce8d89f77b7413dfc9923b4216e625bc8a32a03df70ba",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "provider_error": false,
+  "session_id": "session_5b54ce0e-01ad-4596-b11b-f69f688a2fc3",
+  "model_actual": "k3",
+  "model_alias_actual": "kimi-code/k3",
+  "effort_actual": "max",
+  "usage_records": [
+    {
+      "inputOther": 1398,
+      "output": 292,
+      "inputCacheRead": 2560,
+      "inputCacheCreation": 0
+    },
+    {
+      "inputOther": 22076,
+      "output": 68657,
+      "inputCacheRead": 3840,
+      "inputCacheCreation": 0
+    }
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "871c9c9fedcb9d1796b19d4988cac863af904f7c52869626db7085c915fa0f71",
+  "status": "invalid-report",
+  "reason": "invalid report JSON: Expecting ',' delimiter: line 1 column 12927 (char 12926)",
+  "finished_utc": "2026-11-12T03:25:06.177789+00:00",
+  "elapsed_seconds": 1309.342,
+  "transport_events_sha256": "b58c6b34ba472e11cecd7299164eac683a090e8b4f4c693d3f49900473b6b1fe",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

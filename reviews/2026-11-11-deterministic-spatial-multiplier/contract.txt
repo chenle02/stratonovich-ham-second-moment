@@ -1,0 +1,17 @@
+Review this frozen mathematical manuscript patch as an independent skeptical reader. This is a scoped mathematics/application review, not a whole-book acceptance or novelty claim. The author is GPT; no prior reviewer report is provided. Do not edit, use network, delegate, or initiate other work.
+
+Read TARGET.md, CONTEXT.md and DIFF.md completely. TARGET.md contains the complete changed damped-norm section and spatial-occupation module; CONTEXT.md supplies H:homog (including zero), R_alpha, the unitary/spectral convention, existing positive-control scores and the relevant smoothing consumers. Existing scores and their upstream proofs are context, not targets for fresh whole-paper acceptance. Do not infer a theorem is true because a Lean companion exists: assess these written deductions and their interfaces. The new proof has been checked in Lean by another agent, but no exemption is claimed for the changed prose.
+
+Return exactly one JSON object, without preface or code fences, with schema "subscription-review-report/1", verdict PASS/PASS_WITH_NOTES/FAIL/INCONCLUSIVE, confidence high/medium/low, source_coverage (exact files and line ranges actually read), checks (objects with claim/verdict/reason), findings (fatal/major/minor arrays), required_repairs (mandatory changes only), limitations. PASS requires no failed or unchecked required claim and no fatal/major finding or required repair. Give honest confidence; a lower-confidence assessment is not a failure of transport. Optional exposition belongs in minor findings, not required_repairs. Do not silently repair the candidate.
+
+Required checks (each separately):
+1. H:homog, alpha<2, b>0, zero covariance and singular Gamma/mu cases in L:spatial-fourier-bound.
+2. Unnormalized Fourier convention, autocorrelation Schwartz identity, integrability, no illicit Fubini over two infinite oscillatory measures.
+3. Fourier/gradient bounds, majorant8b/(4b+|xi|^2), deterministic resolvent identity and constant2^(1+alpha)R_alpha.
+4. R_0 finiteness now deterministic, strict positivity local to Gamma!=0, no cycle with T:full-upper or S1Bdd; the score argument retains its exact finite-real S_1^pos premises.
+5. Definitions of N_{1,m,S}, N_{2,m,S}^2, arbitrary measurable m in[0,1], measurable nested positive Laplace domains, and finiteness.
+6. N2 nonnegative time quadratic form at each(lambda,xi), justified integral exchanges, and multiplier/domain monotonicity; no pointwise sign claim about products of wave transforms.
+7. Exact scaling remains for original homogeneous covariance; arbitrary m is not asserted to give a new H:homog model; Gaussian smoothing cases and separate N0 mass argument.
+8. Full/tail comparison, temporal tails and the included existing consumers remain valid.
+9. The diff introduces no unintended mathematical weakening or loss of a needed conclusion in P:spatial-smooth-ratio; assess the downstream four-linear extension and energy identification in TARGET.md.
+10. Global scope for this patch: cross-label consistency, assumptions inherited from sections, substantive unproved steps and any remaining blockers. This is not an image review; root checks the rendered changed pages separately.
