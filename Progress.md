@@ -19170,3 +19170,11 @@ the higher level. Draft rule: private/drafts/VERSIONING.md (front-door file,
 for #16's export list). The cover now reads "Version 1.0.0" and the preface
 states the rule in two sentences. #16 asked to switch the planned v1.0 tags to
 v1.0.0 and to add VERSIONING.md to the front-door files.
+
+## 2026-11-12: title, versions and the public home recorded
+
+The title, version-number and hosting discussions with Le are recorded in
+private/2026-11-12-title-versions-and-public-home.md: title and version rule
+DECIDED (dc6302e, 6f53bd8); where the public repositories live (chenle02, a new
+organization, not lean-pkg) is OPEN, with the options, checked facts, pros and
+cons, and the recommendations as given (including one correction).
