@@ -1,0 +1,12 @@
+Read all lines of these files; the entire new and prior target are supplied to check the exact change and unchanged mathematical scope. Other no-gos need only change-correspondence checking, not a new full proof review.
+- candidate/topology.tex
+- previous/topology.tex
+- candidate/nogo-projection-escape.tex
+- previous/nogo-projection-escape.tex
+- candidate/nogo-feature-range.tex
+- previous/nogo-feature-range.tex
+- sources/integrated_cameron_mean.tex
+- sources/integrated_temporal_equilibrium.tex
+- sources/projection-mathematics.md
+- sources/homogeneity-hypothesis.tex
+- CHANGE-CONTRACT.md

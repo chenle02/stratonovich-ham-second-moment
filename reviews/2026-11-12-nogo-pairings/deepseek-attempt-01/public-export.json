@@ -1,0 +1,121 @@
+{
+  "derived_from_private_native_sha256": "17e03311fd6f3ca811ccfd6b1f8cec79dccdc895a4193b98fc3652b1fc73555f",
+  "derivation": "Explicit public derivative retaining session/message metadata and assistant public text only; user payload and all reasoning parts omitted. Native original retained privately.",
+  "info": {
+    "id": "ses_e2fe27041ffeYEXx9kVMnV5TZk",
+    "slug": "hidden-forest",
+    "projectID": "global",
+    "directory": "<HOME>/.local/state/tmp/stratonovich-review-carrier-bjeb2hyt",
+    "path": "<HOME>/.local/state/tmp/stratonovich-review-carrier-bjeb2hyt",
+    "title": "nogo-pairings-ten-mathematical-review",
+    "agent": "artifact-reviewer",
+    "model": {
+      "id": "deepseek-v4-pro",
+      "providerID": "deepseek",
+      "variant": "default"
+    },
+    "version": "1.18.31",
+    "summary": {
+      "additions": 0,
+      "deletions": 0,
+      "files": 0
+    },
+    "cost": 0.16318302,
+    "tokens": {
+      "input": 34523,
+      "output": 3883,
+      "reasoning": 67025,
+      "cache": {
+        "read": 0,
+        "write": 0
+      }
+    },
+    "permission": [
+      {
+        "permission": "question",
+        "pattern": "*",
+        "action": "deny"
+      },
+      {
+        "permission": "plan_enter",
+        "pattern": "*",
+        "action": "deny"
+      },
+      {
+        "permission": "plan_exit",
+        "pattern": "*",
+        "action": "deny"
+      }
+    ],
+    "time": {
+      "created": 1794492960702,
+      "updated": 1794493715191
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1794492960902
+        },
+        "agent": "artifact-reviewer",
+        "model": {
+          "providerID": "deepseek",
+          "modelID": "deepseek-v4-pro"
+        },
+        "summary": {
+          "diffs": []
+        },
+        "id": "msg_1d01d90860016TCkCS9VirzQ2q",
+        "sessionID": "ses_e2fe27041ffeYEXx9kVMnV5TZk"
+      },
+      "parts": []
+    },
+    {
+      "info": {
+        "parentID": "msg_1d01d90860016TCkCS9VirzQ2q",
+        "role": "assistant",
+        "mode": "artifact-reviewer",
+        "agent": "artifact-reviewer",
+        "path": {
+          "cwd": "<HOME>/.local/state/tmp/stratonovich-review-carrier-bjeb2hyt",
+          "root": "/"
+        },
+        "cost": 0.16318302,
+        "tokens": {
+          "total": 105431,
+          "input": 34523,
+          "output": 3883,
+          "reasoning": 67025,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        },
+        "modelID": "deepseek-v4-pro",
+        "providerID": "deepseek",
+        "time": {
+          "created": 1794492961372,
+          "completed": 1794493715171
+        },
+        "finish": "stop",
+        "id": "msg_1d01d925c001q4bCikCQgzWvRV",
+        "sessionID": "ses_e2fe27041ffeYEXx9kVMnV5TZk"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "{\"schema\":\"subscription-review-report/1\",\"verdict\":\"PASS_WITH_NOTES\",\"confidence\":\"high\",\"source_coverage\":[\"README.txt (complete file)\",\"pairings.tex (complete file)\",\"nogo-chain-geometry.tex (complete file)\",\"book-mixed.tex (complete file)\",\"book-envelope.tex (complete file)\",\"book-finite.tex (complete file)\",\"book-clock.tex (complete file)\",\"route-screen-math.md (complete mathematical sections; administrative header/history tail omitted as supplied)\",\"merge-diagnostic.md (complete mathematical sections; administrative header omitted as supplied)\",\"middle-cross-math.md (complete file)\",\"packet-manifest.json (complete file)\"],\"checks\":[{\"claim\":\"NG-01 common-parameter majorant has the wrong scale\",\"verdict\":\"PASS\",\"reason\":\"Recomputed the optimization: inf_theta e^(2 theta t) theta^(-beta k) is attained at theta = beta k/(2t) with value e^(beta k)(2t/(beta k))^(beta k). Using k! <= P_k <= 2^k k!, 2k+1 <= 3^k, and e^(-k) <= k!/k^k <= 1, B_K is sandwiched between two series sum (c t^beta)^k/(k!)^q with q = beta-1. The upper growth uses sum z^k/(k!)^q <= (sum z^(k/q)/k!)^q = e^(q z^(1/q)); the lower growth uses the single term at k ~ z^(1/q)/2, which is at least 2^(qk) since k! <= k^k. Hence log B_K ~ t^(beta/(beta-1)) two-sided. Since beta-1 = 3-alpha-a < 3-alpha, rho = beta/(beta-1) > kappa = beta/(3-alpha). Crucial scoping is correct: the lower estimate concerns the numerical majorant B_K, not the moment, and the split count 2k+1 costs only an exponential factor. No defect.\"},{\"claim\":\"NG-02 single adjacent diagram has no uniform cubic factorial denominator\",\"verdict\":\"PASS\",\"reason\":\"For the (0,2k) split with adjacent matching, each contraction integrates the odd Green factor to mass h_(2j-1) and evaluates the even factor at zero as 1/2, with temporal weight h_(2j)^(-a). This gives J_adj = 2^(-k) integral over sum h_i < t of prod h_(2j-1) h_(2j)^(-a). The Dirichlet simplex formula with parameters 2 and 1-a (both positive) yields [Gamma(1-a)/2]^k t^((3-a)k)/Gamma(1+(3-a)k). Cross-checks: k=1 matches G0's E X2 = c0 t^(3-a)/2 with c0=1/((1-a)(2-a)(3-a)); k=2, a=0 gives t^6/2880, the (0,4),A static value in G1. Stirling then gives log((k!)^3 J_adj(1)) = a k log k + O(k), exceeding k log C for every fixed C. The approximate-identity justification (spatial box bound t^k/2^k, k disjoint integrable temporal factors, dominated convergence over the delta limit) is complete and sound.\"},{\"claim\":\"NG-03 doubled variance does not give the proposed squared mean\",\"verdict\":\"PASS\",\"reason\":\"Verified a_1 = 1/3 at alpha=a=1/2, c=1 from the coefficient c/((1-alpha)(2-alpha-a)(3-alpha-a)(4-alpha-a)), matching book-finite E:riesz-two. For independent uniforms on [-s,s],[-r,r] with 0<r<=s, E|U-V| = s/2 + r^2/(6s) <= 2s/3; Jensen for z->z^(-alpha) gives the spatial pair bound (3/2)^alpha s^(1-alpha) r. Integrating the two temporal triangles I verified the triangle integral equals exactly 1/((1-a)(2-a)(4-alpha-a)), so b_1 >= 2(3/2)^alpha/((1-a)(2-a)(4-alpha-a)) = (8/9)sqrt(3/2) > 2/3 = 2a_1. The small-time implication is rigorous, not formal: nonnegative coefficients and convergence at a fixed z_0 give |O(z^2)| <= (z/z_0)^2 * const for 0<=z<=z_0, so the strictly positive leading difference b_1-2a_1 forces the inequality for all small t. The amplitude-sqrt2 coefficient 4a_1 is correct.\"},{\"claim\":\"NG-04 first coefficient ratio diverges at the temporal boundary\",\"verdict\":\"PASS\",\"reason\":\"Verified K(s,s) = c 2^(1-alpha) s^(2-alpha)/((1-alpha)(2-alpha)) by direct integration, giving H(0) = 2 int_0^1 K(s,s) ds = c 2^(2-alpha)/((1-alpha)(2-alpha)(3-alpha)). The approximate identity eps v^(-1+eps) dv on [0,1] has total mass 1 and mass 1-delta^eps on [delta,1] tending to 0, so (1-a)b_1 -> H(0). The a_1 limit c/((1-alpha)^2(2-alpha)(3-alpha)) follows from the four factors as a -> 1. The ratio (1-a)A_1/a_1 -> 2^(2-alpha)(1-alpha) > 0 is correct, hence A_1/a_1 -> infinity and any alpha-only constant (including 2^(4-alpha)) fails for a near 1. The continuity of K on [0,1]^2 from Riesz local integrability and dominated convergence is appropriate, and the scope (fixed-a constants remain possible; only uniformity in a is excluded) is accurately stated.\"},{\"claim\":\"NG-05 chronological merging breaks wave support\",\"verdict\":\"PASS\",\"reason\":\"Coordinates in the proof and in nogo-chain-geometry.tex match: chain 1 times (1/4,3/4) with positions (1/5,1/5), chain 2 times (1/2,7/8) with positions (-2/5,-2/5). Displacements vs elapsed times are 1/5<1/4, 0<1/2, 2/5<1/2, 0<3/8, so all four Green factors are positive (product 2^(-4)); the chronologically merged jump from (1/4,1/5) to (1/2,-2/5) has displacement 3/5 > 1/4, so the merged single-chain factor vanishes. The figure's dashed edge A(0.2,0.25) to C(-0.4,0.5) correctly encodes this 3/5>1/4 defect. For white noise, domestic contractions leave exactly the two free spatial variables x,y with |x|<1/4 and |y|<1/2; open neighborhoods of the four times and of x,y preserve all strict inequalities, giving positive contracted measure. For Riesz covariance, independent perturbations avoiding the diagonals give positive ordinary measure with finite positive covariance. No multiplicative constant turns a zero merged kernel into a positive bound; the pointwise (not integrated) scope and reopening conditions are correct.\"},{\"claim\":\"NG-06 geometry-free majorant loses the scale\",\"verdict\":\"PASS\",\"reason\":\"Bounding the 2k wave indicators by one over the box [-t,t] leaves the spatial factor at most 2^(-2k)(2t)^k = t^k/2^k per diagram. After this replacement the temporal sum is symmetric in 2k labels, so the split-simplex integral is 1/(m!n!) times the cube integral. The identities sum_{m+n=2k} 1/(m!n!) = 2^(2k)/(2k)!, P_k = (2k)!/(2^k k!), and int_0^t int_0^t |s-r|^(-a) ds dr = 2t^(2-a)/((1-a)(2-a)) are all correct; the powers of two cancel exactly, producing A_k t^((3-a)k) <= (1/k!)[2t^(3-a)/((1-a)(2-a))]^k. The sum is exp(2t^(3-a)/((1-a)(2-a))) with time exponent 3-a > kappa = (3-a)/2. Correctly identified as a valid upper bound whose scale is too weak, explicitly not a moment lower bound; reopening through a spatial estimate retaining order dependence is accurately stated.\"},{\"claim\":\"NG-07 block labels are not chronological ranks\",\"verdict\":\"PASS\",\"reason\":\"For the pure-cross identity matching j<->k+j, contracting the white pairs gives spatial factor 2^(-k) prod min(h_j,g_j). Restricting both chain times to windows ((j-1/4)/k, j/k): for j=1 this is (3/4k, 1/k), so every increment (including h_1) is at least 3/(4k); consecutive windows are separated, total volume is (1/(4k))^(2k)=(4k)^(-2k), and paired differences are at most 1/(4k) so |s_j-r_j|^(-a) >= (4k)^a. Multiplication gives 2^(-k)(3/(4k))^k (4k)^(ak) (4k)^(-2k) = (3*4^a/128)^k k^(-(3-a)k). Then log((k!)^3 J_k(1)) >= a k log k + O(k), contradicting any fixed C in C^k/(k!)^3. The claim is correctly limited to falsifying the block-label substitution; no shuffle estimate or Skorohod theorem is claimed.\"},{\"claim\":\"NG-10 unweighted merge does not remove a crossing covariance\",\"verdict\":\"PASS\",\"reason\":\"At the displayed point a=1,b=3,T=4,x=(0,0),z=(1/2,0),w=(1/4,0) with v near 2: v-a=1, b-v=1, so |w-x|=1/4<1 and |z-w|=1/4<1, putting w strictly inside both merge disks; the outer constraints |w-z|=1/4<T-b=1 and |x|=0<a hold with strict margin, so an interior ball about w persists under small changes of the data and v near 2. Hence |w-y|^(-alpha) has infinite essential supremum on the admissible lens: for every M a smaller ball has the weight > M. The pair (1,3) factors (b-a)^(-alpha_0) c|z-x|^(-alpha) pull out exactly, while the pair (2,4) factors depend on v,y and belong in W; the temporal factor alone obeys (T-v)^(-alpha_0) <= (T-b)^(-alpha_0). The text is careful that infinite essential supremum does not imply divergence of W (Riesz locally integrable for alpha<2); it falsifies only the unweighted uniform-supremum pullout and retains the remote time-gap cost, consistent with merge-diagnostic.\"},{\"claim\":\"NG-17 constant-correlation clock copying undercounts\",\"verdict\":\"PASS\",\"reason\":\"The no-go exactly restates Proposition P:clock-copy-obstruction, whose identities it cites. I re-derived the key evaluation: with w=u+v, q=u-v, the q-integral gives 2(1-e^(-Aw))/A for A=theta lambda+lambda^2/2, and the resolvent identity R(q)=(1/2)int e^(-q^2 w/2)h(w)dw yields J_{Gamma,1} = Gamma(a)^(-1) int lambda^(a-2)[R(theta)-R(theta+lambda)]/(2theta+lambda) d lambda = int [2theta/(2theta+lambda)] w_theta(lambda) d lambda, matching the stated density w_theta = lambda^(a-2)[R(theta)-R(theta+lambda)]/(2theta Gamma(a)). Positivity (R strictly decreasing), integrability (lambda^(a-1) near 0, lambda^(a-2) at infinity), and the monotonicity via v_rho >= |u-v| with Psi_a decreasing in v give J_{Gamma,rho} <= J_{Gamma,1} < K_Gamma. The alpha=1 ratio: with R(q)=R(1)/q and the Beta integral, J_{Gamma,1} = (2-2^a)K_Gamma (verified explicitly). Scope matches Remark R:clock-copy-scope; no new clock theorem or higher-order rule is asserted.\"},{\"claim\":\"NG-18 shift-erased envelope exceeds the wave transform\",\"verdict\":\"PASS\",\"reason\":\"Independently verified the rational test. Formula (I) at b=1, c=11/10 (lambda=1/10) gives numerator 2+4(11/10)+2(121/100)-11/10+1 = 218/25 and denominator 8(11/10)(2)(3)(11/10)(16/5) = 92928/500, reducing to 4360/92928 = 545/11616. The shift-erased envelope is M_b(eta;A) at eta=0, so p=b and M_b(0;A) = (1+c+2b)/[4 b^2 c(c+1)(c+2b)(1+2b)] = (41/10)/(85932/1000) = 4100/85932 = 1025/21483. The difference is -6005/7562016 < 0 (LCM 7562016 with gcd 33). Verified the bridge integral (B) via the standard antiderivative (test point b=1, eta=0, tau=1/2 gives 4/5), the substitution m(s)ds = dz/pi (z=sqrt(2s-1)), the three-rates partial-fraction triple integral, the area-derivative identity 2(R-max(C,|q|))_+, and the density factorization h(r)h(R+wz/r) from the covariance matrix determinant rR+wz. Correctly scoped: only the shift-erased closure M_b(0;A) <= I is falsified; J <= I is not refuted.\"},{\"claim\":\"Source/application checks\",\"verdict\":\"PASS\",\"reason\":\"All required sources were read completely. The ten no-gos map correctly onto the supplied material: NG-01 onto P:envelope/R:G0-verdict; NG-02/03/04/06/07 onto route-screen-math Screens 1-4 and the G0/G1 coefficient forms (checked against book-finite and book-mixed); NG-05 onto the nogo-chain-geometry figure and route-screen 'Pointwise concatenation'; NG-10 onto merge-diagnostic; NG-17 onto book-clock P:clock-copy-obstruction and R:clock-copy-scope; NG-18 onto middle-cross-math sections 1-5. Established inputs used (P:mixed convergent moment expansion, homogeneous norm scalings, clock identities) are applied consistently, and the no-gos correctly refrain from certifying source-paper images or rendering.\"},{\"claim\":\"Scope and reopening conditions\",\"verdict\":\"PASS\",\"reason\":\"Surviving scopes and reopening conditions are stated accurately for all ten: NG-01/NG-06 are loss-of-scale failures, not moment lower bounds; NG-02/NG-07 are single-diagram and block-labeling witnesses that do not obstruct grouped or summed estimates; NG-03 excludes white noise, large time, and prefactor>1 comparisons; NG-04 leaves fixed-a constants open and only forbids uniformity as a -> 1; NG-05 and NG-10 are pointwise and unweighted obstructions, leaving integrated and covariance-weighted routes open; NG-17 excludes only the constant-correlation unweighted clock copying; NG-18 does not refute J <= I and leaves the S_{A,1/2}-retaining envelope open. Historical dispositions are treated only as context.\"}],\"findings\":{\"fatal\":[],\"major\":[],\"minor\":[\"book-envelope P:envelope cites Lemma L:damped-homogeneous-norms (not supplied) for the constants N_1(1), N_2(1); these affect only the constant K in NG-01/NG-06, not the exponents or factorial powers, so no conclusion depends on the unprovided lemma.\",\"Cross-references to unprovided results (Section S:interval-upper, P:d1-upper, T:intro-upper, Lemma L:joint-fixed-order) cannot be independently verified, but the ten negative claims are self-contained in the supplied excerpts.\",\"NG-18's assertion 0 <= S_{A,s}(w) <= 1 is stated without proof in pairings.tex; independently checked via the two sign cases of S = (s e^(-Aw)-A e^(-sw))/(s-A) and the A=s form (1+Aw)e^(-Aw), holding for all w >= 0.\"]},\"required_repairs\":[],\"limitations\":[\"Review does not certify third-party source images or final rendered layout; nogo-chain-geometry coordinates were checked mathematically, not pixel-wise.\",\"book-*.tex packets are selected excerpts (manifest byte_equal_to_source=false for several); upstream sections not in the packet were unavailable but did not block any of the ten assigned claims.\",\"route-screen-math.md and merge-diagnostic.md were supplied with administrative headers removed per the manifest selection.\"]}",
+          "time": {
+            "start": 1794493677525,
+            "end": 1794493715155
+          },
+          "id": "prt_1d0287fd50011If9UUeBSou1fb",
+          "sessionID": "ses_e2fe27041ffeYEXx9kVMnV5TZk",
+          "messageID": "msg_1d01d925c001q4bCikCQgzWvRV"
+        }
+      ]
+    }
+  ]
+}

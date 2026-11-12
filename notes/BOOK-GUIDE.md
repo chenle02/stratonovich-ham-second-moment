@@ -2,9 +2,9 @@
 
 The long document is now a book-style technical companion. The short reader
 remains an article and the entry point. Both retain their existing filenames.
-The book has **346 pages, 11 chapters and seven appendices**: four proof
-appendices, Appendix E on the AI work, Appendix F on Lean coverage, and
-Appendix G on approaches that do not work. The reader has **28 pages**. The full pair therefore contains 374 pages.
+The book has **380 pages, 12 chapters and six appendices**: four proof
+appendices, Appendix E on the AI work and Appendix F on Lean coverage.
+Chapter 12 presents numbered obstructions and failed approaches. The reader has **28 pages**. The full pair therefore contains 408 pages.
 
 The main proof runs continuously through the numbered chapters. The appendices
 retain finite-order calculations, direct bounds with additional hypotheses,
@@ -23,14 +23,14 @@ mathematical record was deleted to make the structure appear shorter.
 | 8 | Spatial controls and Gaussian means | 162–178 |
 | 9 | Bounds as the spatial radius grows | 179–193 |
 | 10 | Gaussian estimates for the point upper bound | 194–223 |
-| 11 | The constant and its consequences | 224–241 |
-| A | Finite-order calculations | 242–248 |
-| B | Direct upper bounds and static interpolation | 249–267 |
-| C | Covariance comparisons in higher dimensions | 268–289 |
-| D | Static comparisons and the clock obstruction | 290–303 |
-| E | The AI work in numbers | 304–306 |
-| F | What Lean checks | 307–311 |
-| G | Approaches that do not work | 312–318 |
+| 11 | The constant and its consequences | 224–242 |
+| 12 | Obstructions and failed approaches | 243–279 |
+| A | Finite-order calculations | 280–286 |
+| B | Direct upper bounds and static interpolation | 287–305 |
+| C | Covariance comparisons in higher dimensions | 306–327 |
+| D | Static comparisons and the clock obstruction | 328–341 |
+| E | The AI work in numbers | 342–344 |
+| F | What Lean checks | 345–349 |
 
 The front matter has a Preface, Abstract, multilevel contents, illustrations
 and a guide to the argument. After the bibliography, the six-page List of
@@ -85,7 +85,7 @@ classes. These changes preserve all 215 existing proof bodies.
 
 ## Entering a chapter directly
 
-All eleven chapters and four mathematical appendices now open with a motivating question,
+All twelve chapters and four mathematical appendices now open with a motivating question,
 linked prerequisites and a short outline. These openings explain what each
 chapter establishes and where its conclusions stop. They distinguish fixed
 spatial cutoffs from growing radii, signed upper controls from nonnegative
@@ -107,7 +107,7 @@ logarithmic wavefields and possible scaling limits. Rytov prior art and
 formal mechanisms are distinguished from conjectures and established results.
 
 The proof map now links its nodes to chapters, sections and results. A separate
-roadmap covers all eleven chapters and four mathematical appendices. Refresh the page table
+roadmap covers all twelve chapters and four mathematical appendices. Refresh the page table
 with `uv run --with pymupdf python scripts/refresh-book-guide.py`; the helper
 uses numbered chapter labels, so the front-matter guide is not an appendix.
 Refresh reader links with `python3 scripts/refresh-reader-labels.py`.
@@ -117,7 +117,7 @@ Refresh reader links with `python3 scripts/refresh-reader-labels.py`.
 The notation list has 85 recurring symbols in seven groups, with definition
 links and explicit local scope. The subject index has 167 headings including
 synonyms, built from 281 curated mappings and 360 page references at 230
-existing labels. All eleven chapters, four mathematical appendices and 27 included
+existing labels. All twelve chapters, four mathematical appendices and 27 included
 mathematical modules have subject coverage. The kernel label hook adds index
 entries without editing statements or proofs. See `index/README.md` for
 maintenance, generation and page-verification commands.

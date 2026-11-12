@@ -1,0 +1,38 @@
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[x=5cm,y=5cm,>=stealth,font=\small]
+    \draw[->,gray] (-.65,0) -- (.55,0) node[right] {$x$};
+    \draw[->,gray] (0,-.04) -- (0,1.04) node[above] {$s$};
+    \draw[gray!35,densely dotted] (-.6,.6) -- (0,0) -- (.5,.5);
+    \coordinate (O) at (0,0);
+    \coordinate (A) at (.2,.25);
+    \coordinate (B) at (.2,.75);
+    \coordinate (C) at (-.4,.5);
+    \coordinate (D) at (-.4,.875);
+    \draw[hamblue,very thick,->] (O) -- (A);
+    \draw[hamblue,very thick,->] (A) -- (B);
+    \draw[hamteal,very thick,->] (O) -- (C);
+    \draw[hamteal,very thick,->] (C) -- (D);
+    \draw[hamgold,very thick,dashed,->] (A) -- (C)
+    node[midway,above,sloped,fill=white,inner sep=2pt]
+    {$3/5>1/4$};
+    \fill (O) circle (.6pt) node[below right] {root $(0,0)$};
+    \fill[hamblue] (A) circle (.7pt)
+    node[right,black] {$(1/5,1/4)$};
+    \fill[hamblue] (B) circle (.7pt)
+    node[right,black] {$(1/5,3/4)$};
+    \fill[hamteal] (C) circle (.7pt)
+    node[left,black] {$(-2/5,1/2)$};
+    \fill[hamteal] (D) circle (.7pt)
+    node[left,black] {$(-2/5,7/8)$};
+    \node[hamblue,anchor=west] at (.65,.94) {first chain};
+    \node[hamteal,anchor=west] at (.65,.84) {second chain};
+    \node[hamgold,anchor=west] at (.65,.74) {merged jump};
+  \end{tikzpicture}
+  \caption{Root-forward coordinates $(x,s)$ for No-go~\ref{P:nogo-05}.
+    Each solid edge lies strictly inside its propagation cone. Chronological
+    merging inserts the dashed jump, whose distance $3/5$ exceeds its elapsed
+    time $1/4$. The picture refutes pointwise concatenation, not an integrated
+    comparison. For domestic white pairs the two free positions are \mbox{$x$ and $y$}.}
+  \label{F:nogo-chain-geometry}
+\end{figure}

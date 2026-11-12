@@ -1,16 +1,19 @@
 # STATUS DIGEST — read this first, then the tail of Progress.md
 
-Current working edition (November 11): **345-page book and 28-page reader**.
-All eleven chapters and the four mathematical appendices have motivation,
-linked prerequisites and an outline. Section 1.5 states the two existing
-results as Theorems 1.5.1 and 1.5.2, with links to their unchanged proofs.
-The current candidate has 216 proofs: 213 retain their exact text from the
-preceding edition, two are revised, and one deterministic spatial-energy lemma
-is new. Its scoped mathematical and image review passed; the records are in
-reviews/2026-11-11-deterministic-spatial-multiplier/. The 96 technical labels
-and 266 reader links pass. This update does not clear the whole-paper gates
-below. Older page counts in dated entries describe their historical editions. Exact current pins:
-notes/figures/VALIDATION.json.
+Current working edition (November 12): **380-page book and 28-page reader**,
+with12 chapters and 6 appendices. Chapter 12, "Obstructions and failed approaches",
+promotes former Appendix G:33 numbered no-gos, complete arguments, four diagrams,
+main-text backlinks and subject-index entries. The Preface and roadmap link to it.
+All 216 pre-existing proof bodies are byte-identical; 33 no-go proofs are added.
+Scoped DeepSeek V4 Pro/native Kimi K3 mathematics reviews passed at HIGH.
+The final visual/navigation gate is still open: its 49-image cold report body
+was PASS_WITH_NOTES/HIGH, but native ingestion rejected its prose prefix.
+Two small contents/roadmap refinements remain. No whole-book gate is cleared.
+There are99 mapped technical labels and272 valid reader links; both builds have
+zero errors, undefined references/citations and overfull boxes. Exact pins and
+honest review disposition: notes/figures/VALIDATION.json and
+reviews/2026-11-12-nogo-integration/DISPOSITION.json. Earlier dated page counts
+and review grades remain historical.
 
 Section 1.6 now discusses higher even moments as future work.
 

@@ -1,0 +1,105 @@
+{
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "TARGET.md",
+    "CONTEXT.md: notes/integrated_wave_variance.tex",
+    "CONTEXT.md: notes/integrated_positive_gram.tex",
+    "CONTEXT.md: notes/integrated_occupation_ceiling.tex",
+    "CONTEXT.md: notes/integrated_spatial_occupation.tex",
+    "CONTEXT.md: notes/integrated_compact_gaussian.tex",
+    "CONTEXT.md: Hypothesis H:homog",
+    "CONTEXT.md: Proposition P:low-alpha-upper",
+    "CONTEXT.md: Proposition P:static-phase-all-orders"
+  ],
+  "checks": [
+    {
+      "claim": "NG23: X=sum g_i e_i^T has unique nonzero singular value (sum g_i^2)^{1/2}, so E||X||_{S_4}^4=E(sum g_i^2)^2=n^2+2n; for n=16 this equals 288.",
+      "verdict": "PASS",
+      "reason": "The row matrix XX^*=sum_i g_i^2 is 1x1, so the only singular value is (sum g_i^2)^{1/2}. E chi-square moment is Var+mean^2=2n+n^2=n(n+2); at n=16 this is 16*18=288. Independent Gaussians give E g_i^4=3 and E g_i^2 g_j^2=1 for i!=j, exactly the expansion used."
+    },
+    {
+      "claim": "NG23: V_in=I_n, so 9 Tr V_in^2=9n=144 at n=16, while V_out=n acts on a one-dimensional space; the transpose gives the matching output-only failure.",
+      "verdict": "PASS",
+      "reason": "For A_i=e_i^T, sum A_i^*A_i=sum e_i e_i^T=I_n, hence Tr V_in^2=n. The one-sided constant for p=4 is sqrt(p-1) raised to p, i.e. 9, so the asserted one-input bound is 9n. Transposition preserves singular values and swaps the two variance directions, producing the analogous failure for V_out."
+    },
+    {
+      "claim": "NG23: no dimension-independent constant bounds the fourth moment by Tr V_in^2 alone, and the both-variance comparison values 1224/2304 are consistent.",
+      "verdict": "PASS",
+      "reason": "For fixed n the ratio to Tr V_in^2 is n+2, which is unbounded as n grows, so no universal constant works. The average bound fourth power is 9*(Tr V_out^2+Tr V_in^2)/2 = 9*(256+16)/2=1224, and the maximum bound fourth power is 9*max(256,16)=2304; both exceed 288 and are not contradicted."
+    },
+    {
+      "claim": "NG28: the parameter choice d=2, alpha=5/4, a=1/2 is admissible, and log(F_a/F_0)=Delta/k with the displayed Delta.",
+      "verdict": "PASS",
+      "reason": "Hypothesis H:homog permits d=2, 0<alpha<2, alpha<d, and alpha+a=7/4<2. With q=11/4, k=7/4, the scalar-map logarithmic difference is ((q-2a)/2)*log(q-2a)-(q-a)log(q-a)-((q/2)log q-q log q), which is exactly Delta/k as claimed."
+    },
+    {
+      "claim": "NG28: the ceiling identity U_2=2^m(2zeta)^{alpha/(2k)}F_0(E_zeta^O) and the penalty-dependent ratio at zeta=1 are computed correctly.",
+      "verdict": "PASS",
+      "reason": "Using C_occ=(2E_zeta/(2-alpha))^{(2-alpha)/2}(2zeta/alpha)^{alpha/2}, the formula U_2=2^m(2zeta)^{alpha/(2k)}F_0(E_zeta^O) matches Theorem T:intrinsic-occupation-ceiling. Hence the ratio of 2^mF_a(E_zeta^O) to U_2 is exp{(Delta-(alpha/2)log(2zeta))/k}, correctly capturing the kinetic-penalty factor."
+    },
+    {
+      "claim": "NG28: the exact integer arithmetic gives 8{Delta-(alpha/2)log 2}=log(11^11*7^7/(2^5*9^18))<0.",
+      "verdict": "PASS",
+      "reason": "Expanding the logs gives 11*log(11/4)+7*log(7/4)-18*log(9/4)-5*log2, which rearranges to log(11^11*7^7/(2^5*9^18)). Direct multiplication gives 11^11*7^7=234966429149994773 and 2^5*9^18=4803028329503971872, so the logarithm is negative."
+    },
+    {
+      "claim": "NG28: energies are positive and finite for nonzero admissible covariance, and the result refutes only an ordering of computed upper bounds, not an actual-moment inequality.",
+      "verdict": "PASS",
+      "reason": "Proposition P:raw-occupation-energy gives E_zeta^O finite and positive when Gamma!=0, and the zero-covariance degenerate case is explicitly excluded by 'nonzero admissible covariance'. The sign calculation is independent of Gamma, so it holds for all such covariances, but the scope stays an ordering statement and does not decide whether C_2 lies below the comparison value."
+    },
+    {
+      "claim": "NG29: the empty active set cannot be omitted; with one unit vector, ell=1/10, b=4, the nonempty dual infimum is negative while F(0)=0.",
+      "verdict": "PASS",
+      "reason": "The one-dimensional dual is D(w)=1/(100w)-4w+w^2/2, and D(4)=1/400-16+8=-3199/400<0, so the infimum is negative. The objective obeys F(0)=0, so the primal supremum is at least zero. Dropping the empty-set value 0 from the maximum would therefore fail."
+    },
+    {
+      "claim": "NG29: global concavity fails for the one-dimensional primal objective with k=ell=b=1.",
+      "verdict": "PASS",
+      "reason": "F(x)=2*sqrt((x-1)_+)-x^2/2 gives F(0)=0, F(2)=0 and F(1)=-1/2. Midpoint concavity would require F(1)>=0, so the objective is not concave."
+    },
+    {
+      "claim": "NG29: entrywise order between nonnegative PSD Grams need not be PSD order; C=I_2 and D=((1,1/2),(1/2,1)) are a counterexample.",
+      "verdict": "PASS",
+      "reason": "Both matrices are symmetric PSD, with D having eigenvalues 3/2 and 1/2, and all entries satisfy 0<=C_ij<=D_ij. However D-C=((0,1/2),(1/2,0)) has eigenvalues 1/2 and -1/2, so D-C is not PSD. The positive-orthant salvage remains valid because sum w_i(D-C)_{ij}w_j>=0 for nonnegative weights, as stated in Proposition P:gram-entrywise-comparison."
+    },
+    {
+      "claim": "NG33: the free phase matrix S_0(t)=((1,t),(0,1)) is not a Euclidean contraction, and this transfers to the inhomogeneous Sobolev wave phase via a low-frequency witness.",
+      "verdict": "PASS",
+      "reason": "The vector (0,1) maps to (t,1), whose norm sqrt(1+t^2) exceeds 1 for t>0. For E=H^{1/2}xH^{-1/2}, conjugating the free wave symbol by J_0=diag(Lambda^{1/2},Lambda^{-1/2}) gives the displayed symbol, whose limit as r tends to 0 is S_0(t). Normalized Fourier bumps concentrated near frequency zero in the second coordinate have image norm tending to sqrt(1+t^2), showing noncontractivity."
+    },
+    {
+      "claim": "NG33: the proposed Holder identity x^n/(n!)^theta=A_nB_n fails; the correct identity is A_n^theta*B_n^{1-theta}.",
+      "verdict": "PASS",
+      "reason": "At theta=3/4, n=1, x=1, x^n/(n!)^theta=1, while A_1B_1=2*(2^-3)=1/4. Algebraically A_n^theta*B_n^{1-theta}=2^{theta n}*x^n/(n!)^theta*2^{-theta n}=x^n/(n!)^theta, matching the Holder splitting used in Proposition P:static-phase-all-orders."
+    },
+    {
+      "claim": "NG33: the factorial denominator k!*k^{(2-alpha)k} cannot generally be replaced by (k!)^3; the valid weakening is k!*k^{(2-alpha)k} >= (k!)^{3-alpha}.",
+      "verdict": "PASS",
+      "reason": "At alpha=1, k=3, the original denominator is 6*27=162, while (k!)^3=216, so replacing by the larger denominator would assert the stronger bound M/216 from M/162, which does not follow. The valid weakening uses k!<=k^k and 2-alpha>0 to obtain (k!)^{2-alpha}<=k^{(2-alpha)k}, hence k!*k^{(2-alpha)k}>=(k!)^{3-alpha}; at alpha=1,k=3 the right side is 36."
+    },
+    {
+      "claim": "NG33: the proof disclaims availability of an actual-coefficient counterexample and only refutes the numerical inference.",
+      "verdict": "PASS",
+      "reason": "The text explicitly says 'An upper bound M/162 does not imply the smaller upper bound M/216' and the scope states the arithmetic check refutes an inference between numerical bounds, not that the actual coefficient exceeds M/216. This honors the distinction between failed upper-envelope inference and a false actual moment inequality."
+    },
+    {
+      "claim": "Cross-references, scope statements and consistency with the supplied context hold for all four no-go results.",
+      "verdict": "PASS",
+      "reason": "NG23 is consistent with Remark R:gaussian-one-variance-test and Proposition P:finite-gaussian-matrix. NG28 matches Corollary C:intrinsic-spatial-bracket's distinction between zeta=1/2 and zeta=1. NG29 matches Remark R:gram-controls and the active-set convention of Proposition P:gram-positive-optimizer. NG33 matches the corrected Holder step in Proposition P:static-phase-all-orders and the b=2-alpha factorial denominator in Proposition P:low-alpha-upper. No hidden additional hypotheses beyond those stated in Hypothesis H:homog were found."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "NG33 item 3 relies on the identification of the denominator b as 2-alpha in Proposition P:low-alpha-upper; this is explicit at alpha=1 in the supplied context but only inferred for alpha<1 from the weighted AM-GM total exponent. The arithmetic counterexample itself is fully verified."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This review is mathematical/applications only; rendered pages were not checked.",
+    "Surrounding main-text propositions (e.g., P:raw-occupation-energy, P:finite-gaussian-matrix, P:low-alpha-upper) were used as supplied context interfaces, not re-derived from the whole book.",
+    "The review does not attempt to establish any new moment inequality or covariance-order statement beyond checking the four no-go results themselves."
+  ]
+}

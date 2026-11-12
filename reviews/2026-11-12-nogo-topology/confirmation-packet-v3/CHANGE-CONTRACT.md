@@ -1,0 +1,3 @@
+Mandatory repair: NG25 completed mean map operator-norm assertion now quantifies only 2<r<2/a, the domain range of the cited completed compact map. The explicit translated time-constant control lower-bound calculation is unchanged.
+Optional clarity: NG26 scalar time interval is now explicitly [0,1].
+All three target files were formatted by format-tex with2-space indentation. Author mechanically compared every non-whitespace character: the only differences from previous/topology.tex are those two sentence replacements; both diagrams differ only in whitespace. Reviewer must judge the repaired claim independently. No past review verdict is supplied.

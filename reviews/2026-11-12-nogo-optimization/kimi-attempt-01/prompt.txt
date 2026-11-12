@@ -1,0 +1,31 @@
+Review the frozen packet rooted at <HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment/reviews/2026-11-12-nogo-optimization/kimi-attempt-01/workspace. Primary target: TARGET.md. Source revision: sha256:47f3f5be10a099e02b4ea8b06ab27b0ad95f30ecd6f6343aef7c1d0380b37962.
+
+You are an independent artifact reviewer. Read only the frozen packet
+and the supplied review contract. Report correctness, missing assumptions,
+incorrect constants, failed implications, and uncertainty. Do not edit files,
+use the network, send messages, publish, install, or delegate. Do not launch a
+research or coding workflow. Return a scientific report rather than a plan.
+Use exactly one JSON object with schema "subscription-review-report/1", verdict (PASS, PASS_WITH_NOTES, FAIL, or
+INCONCLUSIVE), confidence (high, medium, low), source_coverage (list of strings),
+checks (list of objects with claim, verdict, reason), findings (an object with
+fatal, major, minor lists), required_repairs (list), and limitations (list).
+required_repairs contains ONLY mandatory changes that block acceptance. Optional
+clarifications belong in findings.minor, never in required_repairs. PASS and
+PASS_WITH_NOTES require empty fatal, major and required_repairs lists and no
+failed/unchecked claim. If a repair is mandatory, return FAIL or INCONCLUSIVE;
+never weaken a finding to obtain PASS.
+Read every required source completely. Never use Grep head_limit or any other
+truncating or limiting option on a required source. After any pagination or
+truncation marker (for example a partial Read, an offset/limit notice, or
+"output truncated"), keep reading the next range until the whole file is read.
+In source_coverage, list each exact file and the line ranges you actually read.
+If coverage of any required source is incomplete, say "partial" for that source
+in source_coverage and state the gap in limitations.
+An AI review is not human verification or a novelty audit. Do not silently
+repair a candidate and PASS the original. A terminal error is not a verdict.
+
+Frozen packet file index (relative to workspace; a listed file is not proof of reading):
+["CONTEXT.md", "TARGET.md"]
+
+Review the frozen mathematical target independently and skeptically. Author family GPT. Scope: four numbered No-go results23,28,29,33 in the new chapter Obstructions and failed approaches. Do not use tools, network, edit, delegate, or rely on any previous verdict. Read TARGET.md and CONTEXT.md completely. Every target statement, proof, counterexample, quantified scope, and cited application is required; existing context results are interfaces, not a fresh whole-book acceptance. Check all constants directly; do not silently repair a candidate. A failed upper-envelope inference is not automatically a false actual-moment inequality. Output exactly one JSON object schema "subscription-review-report/1", verdict PASS/PASS_WITH_NOTES/FAIL/INCONCLUSIVE, confidence high/medium/low, source_coverage array of strings; checks array of objects with claim, verdict (PASS/PASS_WITH_NOTES/FAIL/INCONCLUSIVE/PARTIAL), reason; findings object with fatal,major,minor each arrays of STRINGS; required_repairs array of STRINGS; limitations array of STRINGS. Honest confidence, no required unchecked claim may receive PASS. Required distinct checks: NG23 exact Gaussian row/transpose moments, dimension-independent quantifier and both-variance comparison; NG28 scalar-map logarithms, kinetic penalty, exact integers, nonzero/finite energy and admissible parameters, comparison value versus proved bound distinction; NG29 empty-active-set sign, nonconcavity, entrywise versus PSD and positive-orthant salvage; NG33 free-wave normalized Sobolev low-frequency witness, Holder factors, correct factorial weakening and restriction to inference versus actual coefficient. Verify cross-references, lack of hidden hypotheses and consistency with supplied context. This is math/application review only; rendered pages checked separately.
+

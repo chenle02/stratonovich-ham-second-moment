@@ -1,0 +1,98 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "README.txt lines 1-12 (complete)",
+    "packet-manifest.json lines 1-79 (complete)",
+    "pairings.tex lines 1-610 (complete)",
+    "nogo-chain-geometry.tex lines 1-38 (complete)",
+    "book-mixed.tex lines 1-184 (complete)",
+    "book-envelope.tex lines 1-102 (complete)",
+    "book-finite.tex lines 1-351 (complete)",
+    "book-clock.tex lines 1-326 (complete)",
+    "route-screen-math.md lines 1-162 (complete)",
+    "merge-diagnostic.md lines 1-150 (complete)",
+    "middle-cross-math.md lines 1-168 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "NG-01: common-parameter majorant has wrong scale (numerical-majorant lower bound, factorial exponent, optimization)",
+      "verdict": "PASS",
+      "reason": "Recomputed the optimization: minimizer theta=beta*k/(2t) gives inf = e^{beta k}(2t/(beta k))^{beta k}, matching book-envelope P:envelope. P_k=(2k-1)!! gives k!<=P_k<=2^k k!, and (k/e)^k<=k!<=k^k; absorbing (2k+1)<=3^k, e^{beta k} and (2/beta)^{beta k} into per-k exponential constants sandwiches B_K between two series sum(c t^beta)^k/(k!)^q with q=beta-1>1, exactly as in book-envelope. The ell^q<=ell^1 inequality gives the upper exp(q z^{1/q}); the single summand k=floor(z^{1/q}/2) with k!<=k^k gives >=2^{qk}, so log B_K ~ t^{beta/(beta-1)} two-sided. Since beta-1=3-alpha-a<3-alpha, rho=beta/(beta-1)>beta/(3-alpha)=kappa. The statement is correctly about the numerical majorant B_K, not the moment; the missing factorial power is (k!)^a=(k!)^{alpha_0} and the 2k+1 split count is absorbable, both consistent with R:G0-verdict and route-screen. One-chain variant with e^{theta t} has the same defect, matching book-envelope lines 89-93. No defect found."
+    },
+    {
+      "claim": "NG-02: adjacent diagram defeats uniform cubic factorial denominator (fixed-order delta regularization, exact Dirichlet integral, k-dependent contradiction)",
+      "verdict": "PASS",
+      "reason": "Contraction bookkeeping verified: pair (2j-1,2j) sets positions equal, even Green factor G_{h_{2j}}(0)=1/2, odd increment integrates to mass h_{2j-1}, temporal factor h_{2j}^{-a}, giving 2^{-k} prod h_{2j-1} h_{2j}^{-a}. At k=1 this is E X_2 = c_0 t^{3-a}/2 (L:white-test); at k=2,a=0 it is 1/2880, matching the static (0,4),A entry in book-finite. The Dirichlet simplex integral with per-pair parameters 2 and 1-a yields [Gamma_E(1-a)/2]^k t^{(3-a)k}/Gamma_E(1+(3-a)k), identical to route-screen Screen 1. Stirling gives log((k!)^3 J_adj(1)) = (3-(3-a)) k log k + O(k) = a k log k + O(k), exceeding k log C for every fixed C, so no C(a) bounds every diagram by C^k t^{(3-a)k}/(k!)^3. The fixed-order Gaussian delta regularization is justified: continuity at zero displacement, hyperplane boundaries of measure zero, uniform spatial bound 2^{-2k}(2t)^k, and k disjoint integrable temporal factors |s-r|^{-a} (a<1) giving dominated convergence and temporal truncation limits. Scope is correctly narrow: one diagram whose own denominator is (k!)^{3-a}, stronger than the needed (k!)^2, so the summed bound is not obstructed."
+    },
+    {
+      "claim": "NG-03: doubled-variance squared-mean comparison fails at small time (rigorous remainder via convergent series, not formal Taylor)",
+      "verdict": "PASS",
+      "reason": "a_1 = c/[(1-alpha)(2-alpha-a)(3-alpha-a)(4-alpha-a)] matches book-finite E:riesz-two; at alpha=a=1/2, c=1, a_1=1/3. E|U-V| = s/2 + r^2/(6s) recomputed exactly for 0<r<=s and is <=2s/3. Convexity of z^{-alpha} with Jensen gives the kernel lower bound (3/2)^alpha s^{1-alpha} r; integrating over both temporal triangles yields b_1 >= 2(3/2)^alpha/[(1-a)(2-a)(4-alpha-a)] = (8/9)sqrt(3/2) \u2248 1.0887 > 2/3 = 2a_1, a strict rational-surd gap needing no quadrature (consistent with route-screen's b_1\u22481.713864). The small-time implication is rigorous: with z=t^beta, both series have nonnegative coefficients converging at some z_0>0 (the second moment by P:mixed, the amplitude-sqrt2 mean per route-screen), tails are bounded by (z/z_0)^2 times their z_0-values, including the nonnegative Cauchy product of the squared mean, so the difference has strictly positive leading coefficient b_1-2a_1 and is positive for small t. The excluded mechanism (positive Gaussian-exponential mixtures via ||h+k||^2/2<=||h||^2+||k||^2) is stated correctly, and white noise, large-time, and prefactor>1 variants are correctly left open."
+    },
+    {
+      "claim": "NG-04: first coefficient ratio diverges at the time boundary (parameter-dependent vs uniform constants, approximate identity)",
+      "verdict": "PASS",
+      "reason": "K(s,s) = c 2^{1-alpha} s^{2-alpha}/[(1-alpha)(2-alpha)] follows from book-finite's exact interval kernel ((s+r)^{2-alpha}-|s-r|^{2-alpha})/[2(1-alpha)(2-alpha)] at r=s. H(v)=2\u222b_v^1 K(s,s-v)ds is continuous with H(0)=c 2^{2-alpha}/[(1-alpha)(2-alpha)(3-alpha)], matching route-screen 3a. The measures epsilon v^{-1+epsilon}dv on [0,1] have mass one and mass 1-delta^epsilon\u21920 on [delta,1], so with epsilon=1-a, (1-a)b_1\u2192H(0); continuity of K on the closed square follows from local integrability of the Riesz kernel (alpha<1) and dominated convergence. Meanwhile a_1\u2192c/[(1-alpha)^2(2-alpha)(3-alpha)]. Hence (1-a)A_1/a_1 = 2(1-a)+(1-a)b_1/a_1 \u2192 2^{2-alpha}(1-alpha) > 0, so A_1/a_1 diverges as a\u21911 and no alpha-only constant, including 2^{4-alpha}, can satisfy A_k<=C^k a_k for all k>=1 and all 0<a<1 at fixed covariance. Scope is correct: a parameter-dependent C(alpha,a) remains possible, the argument only forces divergence at the boundary, and static-endpoint tests constrain uniform families, not separately chosen constants at fixed a."
+    },
+    {
+      "claim": "NG-05: chronological merging breaks wave support (root-forward chain support, positive measure after white domestic contractions)",
+      "verdict": "PASS",
+      "reason": "Root-forward witness verified: chain one times (1/4,3/4) at x=1/5, chain two times (1/2,7/8) at y=-2/5, horizon 1. Edge data (displacement, elapsed): (1/5,1/4), (0,1/2), (2/5,1/2), (0,3/8), all strictly sub-conical, so the original Green product is 2^{-4}. The merged jump (1/4,1/5)\u2192(1/2,-2/5) has displacement 3/5 > 1/4, so the merged single-chain factor vanishes; all inequalities strict, giving open neighborhoods. With domestic white pairs the delta contractions leave exactly the two free spatial variables x,y, and open neighborhoods of the four times and (x,y) have positive contracted measure, justified by the same Gaussian regularization as NG-02. For Riesz covariance, independent perturbation of all four positions avoiding domestic diagonals keeps covariance factors finite and strictly positive while the support defect persists; no multiplier repairs a zero upper bound. This matches route-screen's pointwise-concatenation falsification. Figure coordinates (0,0),(.2,.25),(.2,.75),(-.4,.5),(-.4,.875), dashed A\u2192C labeled 3/5>1/4 with dotted cone s=|x| are mathematically consistent (coordinate check only, no pixel review). Scope correctly limited to pointwise concatenation; integrated or grouped comparisons remain open."
+    },
+    {
+      "claim": "NG-06: geometry-free majorant loses the scale (exact cube symmetry/counts, limitation of majorant)",
+      "verdict": "PASS",
+      "reason": "After k white contractions, each pairing's spatial bound is t^k/2^k (2k Green sup-norms 1/2 and k free positions in [-t,t]), matching route-screen Screen 4. Once indicators are erased, the summed temporal pairing kernel is symmetric in all 2k times, so its integral over a split-(m,n) simplex equals the cube integral divided by m!n!. The three identities check out: sum_{m+n=2k} 1/(m!n!) = 2^{2k}/(2k)! (binomial theorem), P_k=(2k)!/(2^k k!), and \u222b_0^t\u222b_0^t |s-r|^{-a} ds dr = 2t^{2-a}/((1-a)(2-a)) by direct computation. Multiplying t^k/2^k \u00b7 P_k \u00b7 2^{2k}/(2k)! \u00b7 [2t^{2-a}/((1-a)(2-a))]^k collapses exactly to (1/k!)[2t^{3-a}/((1-a)(2-a))]^k, whose sum over k is exp(2t^{3-a}/((1-a)(2-a))). The time exponent 3-a exceeds the target kappa=(3-a)/2 for white noise. The text correctly labels this a valid upper bound failing the scale, not a moment lower bound, and the reopening condition (retain order dependence before symmetrization) matches the recon verdict; the P:d1-upper pointer is contextual and outside the packet."
+    },
+    {
+      "claim": "NG-07: block labels are not chronological ranks (label-span falsification only, no new Skorohod/shuffle result)",
+      "verdict": "PASS",
+      "reason": "For the pure-cross matching j\u2194k+j on two length-k white chains, contractions identify paired positions and successive spatial integration gives 2^{-k} prod min(h_j,g_j) \u2014 verified inductively from \u222b G_h(x-z)G_g(x-z)dx = min(h,g)/2. The windows ((j-1/4)/k, j/k) have length 1/(4k), are disjoint and strictly increasing, so ordering is automatic; increments satisfy h_j,g_j > 3/(4k) (including j=1 from the root), paired gaps |s_j-r_j| <= 1/(4k), and the domain volume is (4k)^{-2k}. The lower bound 2^{-k}(3/(4k))^k (4k)^{ak}\u00b7(4k)^{-2k} = (3\u00b74^a/128)^k k^{-(3-a)k} matches route-screen exactly (128=2\u00b74^3). Stirling gives log((k!)^3 J_k(1)) >= a k log k + O(k), refuting any C^k/(k!)^3 assignment justified solely by block-label span k. Within each window the paired vertices are adjacent in actual chronological order, isolating precisely the label/rank substitution error. The fixed-k smoothing justification via spatial box bound and disjoint integrable temporal factors parallels NG-02. The text correctly disclaims any new shuffle estimate or Skorohod theorem and states the reopening requirement (conditioning on actual order plus an independent summed-cost proof)."
+    },
+    {
+      "claim": "NG-10: unweighted merge does not remove a crossing covariance (infinite essential supremum does not imply divergence; remote time-gap cost retained)",
+      "verdict": "PASS",
+      "reason": "The weighted merge W matches merge-diagnostic section 2 exactly, with pair (1,3) factors (b-a)^{-alpha_0} c|z-x|^{-alpha} outside and pair (2,4) factors (T-v)^{-alpha_0}|w-y|^{-alpha} inside the v,y integration. The witness t=5,a=1,b=3,T=4, x=(0,0), z=(1/2,0), w=(1/4,0), v near 2 satisfies |w-x|=1/4<1=v-a and |w-z|=1/4<1=b-v strictly, plus outer constraints |w-z|=1/4<1=T-b and |x|=0<1=a, so w is strictly interior to the merge lens; on a smaller ball |w-y|^{-alpha}>M with positive measure for every M, giving infinite essential supremum robust to small perturbations. The temporal pullout (T-v)^{-alpha_0} <= (T-b)^{-alpha_0} retains the remote-gap cost as required. Parameter ranges 0<alpha_0<1/2, 3/2<=alpha<2-alpha_0 agree with the diagnostic and H:homog's threshold. Scope is correct: alpha<2 keeps the Riesz singularity locally integrable, so no divergence of W or the diagram is inferred; the unweighted BNZ substitution is blocked, and reopening via a covariance-weighted convolution inequality or integrable envelope mirrors the diagnostic's OPEN status, with no such inequality asserted."
+    },
+    {
+      "claim": "NG-17: constant-correlation unweighted clock copying has strict deficit (prior proposition identities, finite integral hypotheses)",
+      "verdict": "PASS",
+      "reason": "The recalled identities match book-clock P:clock-copy-obstruction exactly: w_theta(lambda) = lambda^{a-2}[R_Gamma(theta)-R_Gamma(theta+lambda)]/(2 theta Gamma_E(a)), K_Gamma=\u222bw_theta, J_{Gamma,1}=\u222b[2theta/(2theta+lambda)]w_theta; I independently re-derived the underlying spectral identity (2theta+lambda)/[2theta(theta^2+r^2)((theta+lambda)^2+r^2)] from the sine transforms on both cones. Strict positivity follows from mu\u22600 and strict resolvent decrease; integrability follows from homogeneity giving lambda^{a-1} near zero and lambda^{a-2} at infinity for 0<a<1. The multiplier 2theta/(2theta+lambda) in (0,1) yields the strict inequality J_{Gamma,1}<K_Gamma; v_rho=u+v-2 rho min(u,v) >= |u-v| with Psi_a decreasing in v gives J_{Gamma,rho}<=J_{Gamma,1}, and positivity holds for all -1<=rho<=1. For alpha=1, R_Gamma(q)=R_Gamma(1)/q and the Beta integral \u222bx^{a-1}/(x+c)dx = c^{a-1}Gamma_E(a)Gamma_E(1-a) give ratio 2(1-2^{a-1})=2-2^a in (0,1), and the white case cross-checks K_\u00d7(theta,theta)=Gamma_E(1-a)/(4 theta^{3-a}). Scope matches R:clock-copy-scope: exactly the constant-correlation unweighted family, static-endpoint blindness, no higher-order correction rule."
+    },
+    {
+      "claim": "NG-18: shift-erased envelope exceeds actual wave transform (actual I vs M_b(0;A), exact rational gap, Gaussian bridge/root-kernel, J<=I not refuted)",
+      "verdict": "PASS",
+      "reason": "All displayed formulas match middle-cross-math.md: the exact I with area derivative 2(R-max(C,|q|))_+ and value (1/16)\u222be^{-max(|q|,t)}dt; the three q-region contributions; the summed rational I=(2b^2+4bc+2c^2-c+1)/[8bc(b+1)(2b+1)(b+c-1)(2b+2c-1)]. I recomputed det=rR+wz, the H_gamma Gamma-mixture, the convolution 2S_{A,s}(w)/(s+A) with 0<=S<=1 (exactly), the bridge integral (independently for eta=0: 1/[(b^2+tau/2)b] = 2(p+b)/[bp((p+b)^2+2tau)]), m(s)ds=dz/pi under z=sqrt(2s-1), and the triple-resolvent partial fraction (checked at coincident rates). At b=1,c=11/10 (nu=0, lambda=1/10, A=21/200, c^2=1+2A): I=(218/25)/(185856/1000)=545/11616, M_1(0;A)=(c+3)/[12c(c+1)(c+2)]=1025/21483, and I-M=-6005/7562016 (7562016=2^5\u00b73^2\u00b77\u00b711^2\u00b731), all recomputed exactly. The strict negative gap falsifies only the pointwise closure M_b(0;A)<=I; J<=J^+<=M_b(0;A) remains consistent, the surviving envelope retains S_{A,1/2}(w), continuity extends the overshoot to some nu>0, and the text explicitly declines to refute J<=I or any integrated comparison."
+    },
+    {
+      "claim": "Source/application check: packet-internal inputs checked before use; external citations are context only",
+      "verdict": "PASS",
+      "reason": "All book results the no-gos rely on are supplied and were verified: H:homog with beta=4-alpha-alpha_0 and P_k count (book-mixed), P:mixed nonnegative convergent two-chain expansion including unequal chains, L:white-test constants c_0, book-finite E:riesz-two a_1 and the exact interval kernel behind b_1, P:envelope's B_K growth and R:G0-verdict's missing (k!)^{alpha_0}, book-clock P:clock-copy-obstruction and E:naive-clock-candidate/E:averaged-clock-kernel, plus the three recon memos' witnesses. The no-gos quote these accurately: NG-01 restates P:envelope as a majorant obstruction with the same caveat; NG-17 is exactly the proved book obstruction; NG-02/05/07/10/18 reproduce the recon witnesses with identical constants. External items (chen:author2026 Theorem 3.1, BNZ Lemma 4.3/(4.7), chen.hu:25 Theorem 1.2) are contextual citations rather than proof inputs; forward references S:interval-upper, P:d1-upper, R:d1-upper-checks point to the book's positive argument and do not bear on the no-go implications. No misapplication, no silent repair, and no unprovided upstream dependency blocks local assessment."
+    },
+    {
+      "claim": "Scope check: surviving scopes and reopening conditions for all ten no-gos",
+      "verdict": "PASS",
+      "reason": "Each no-go states its boundary consistently with the recon memos and the book: NG-01 and NG-06 carry explicit majorant-not-moment caveats; NG-02 states the single-diagram narrowness and that the summed bound survives; NG-03 excludes white noise, large-time comparisons, and prefactors larger than one; NG-04 carves out parameter-dependent constants and endpoint/uniform-family readings; NG-05 is pointwise-only with integrated or grouped comparisons left open; NG-07 is purely a block-label falsification with an explicit no-new-shuffle/Skorohod disclaimer; NG-10 states that infinite essential supremum does not imply divergence, retains the remote-gap cost, and asserts no weighted inequality; NG-17 delimits exactly the constant-correlation unweighted family with static-endpoint blindness; NG-18 explicitly declines to refute J<=I or integrated closures and identifies the surviving S_{A,1/2}-retaining envelope. Reopening conditions are concrete and non-vacuous in every case, and historical dispositions are marked as context rather than evidence. No overreach found in any of the ten."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "NG-01's proof compresses the absorption of the factors (2k+1)<=3^k, e^{beta k}, and (2/beta)^{beta k} into the comparison constants without displaying it; the full expansion appears in book-envelope P:envelope, so the step is verifiable but terse.",
+      "NG-05's positive-measure assertion for white covariance is at the contracted level (two free spatial variables); the packet justifies the contraction by cross-reference to NG-02's smoothing argument rather than restating that the contracted measure is positive on open sets of (x,y) and the four times.",
+      "NG-18 derives the bridge identity by 'integrating a quadratic power' plus the eta=tau=0 check; the full factoring derivation is only in middle-cross-math.md section 4 (supplied), so the .tex proof is slightly elliptical though consistent.",
+      "NG-03's remainder bound assumes existence of a positive convergence point z_0 for both series, including the squared Cauchy product at amplitude sqrt2; packet sources assert this convergence (P:mixed and route-screen) but the packet does not reprove it."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "External citations (Chen Theorem 3.1 and its page anchors, BNZ Lemma 4.3/(4.7), Chen-Hu Theorem 1.2) were not independently verified; they function as context, not as logical inputs to the no-go proofs.",
+    "Forward cross-references S:interval-upper, Proposition P:d1-upper, Remark R:d1-upper-checks and upstream construction lemmas (L:crude-corrected, L:vertex-crude, L:damped-homogeneous-norms, L:pairing-product-envelope, L:joint-fixed-order, P:mild-construction) are outside the packet; the no-go proofs do not depend on them, but the surrounding book chain was not reviewed.",
+    "The figure nogo-chain-geometry.tex was reviewed for mathematical coordinate consistency only; no pixel-level or rendered-layout certification is made.",
+    "Historical review-status remarks embedded in the target (e.g., the NG-18 tail) are context only and were not adjudicated.",
+    "This is an AI artifact review, not human verification or a novelty audit; third-party source images were not certified."
+  ]
+}

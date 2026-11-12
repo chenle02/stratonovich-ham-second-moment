@@ -68,6 +68,12 @@
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{conjecture}[theorem]{Conjecture}
+% Stable no-go identifiers survive thematic regrouping in the no-go chapter.
+\newtheoremstyle{nogostyle}{8pt}{8pt}{\normalfont}{}
+{\bfseries\color{hamblue}}{.}{0.5em}{}
+\theoremstyle{nogostyle}
+\newtheorem{nogo}{No-go}
+\renewcommand{\thenogo}{\ifnum\value{nogo}<10 0\fi\arabic{nogo}}
 \theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{hypothesis}[theorem]{Hypothesis}
@@ -182,16 +188,16 @@ needed.
   \ref{S:book-lower} & Exact scaling and the lower bound for fixed controls. \\
   \ref{S:book-means}--\ref{S:book-growing-radius} & Spatial means and estimates uniform in the localization radius. \\
   \ref{S:book-point-upper}--\ref{S:book-constant} & The point upper bound and the variational constant. \\
+  \ref{S:book-no-go} & Obstructions and failed approaches: every mathematical no-go, and what it does not rule out. \\
   \midrule
   \ref{S:appendix-finite-order}--\ref{S:appendix-static-clock} & Other estimates, consistency checks and alternative approaches. \\
   \ref{S:appendix-ai-statistics} & The AI work in numbers: who did the work, the reviews, and how many approaches failed. \\
   \ref{S:appendix-lean-checks} & What the Lean companion checks, result by result. \\
-  \ref{S:appendix-no-go} & Approaches that do not work: every mathematical no-go, and what it does not rule out. \\
   \bottomrule
 \end{tabular}
 \end{center}
 
-Figure~\ref{Fig:chapter-roadmap} gives a map of all eleven chapters and the
+Figure~\ref{Fig:chapter-roadmap} gives a map of all twelve chapters and the
 four mathematical appendices. The reader links to the labelled statements in this companion. The numbering
 includes the chapter and section, so a statement can be located
 without searching the entire volume. The figures are explanatory schematics;
@@ -556,6 +562,11 @@ To state the limiting constant, let $I = (0,1)$ and define
   =\left\{\Psi\in C_c^\infty(I\times\R^d;\R):
   \Psi\ge0,\ \Psi\ne0\right\}.
 \end{equation}
+
+No-go~\ref{P:nogo-20} exhibits controls whose covariance profiles do not
+separate into a scalar time factor and one spatial function. This does not
+decide whether a smaller family suffices for optimization.
+
 This class includes controls that do not separate into a function of time and
 a function of space. For $\Psi \in \mathcal{C}_{\mathrm{pos}}$, its covariance
 mean and variance are
@@ -726,6 +737,12 @@ regularization on pp.~13--14}.
   of its enumeration. Regrouping by total order gives~\eqref{E:full-second}.
   This proves Proposition~\ref{P:mixed}.
 \end{proof}
+
+The two chain orders must remain distinct: chronological concatenation can
+violate wave support, and a difference of block labels need not measure
+chronological separation. No-gos~\ref{P:nogo-05} and~\ref{P:nogo-07}
+give explicit positive-measure witnesses.
+
 
 \input{notes/figures/two-chain-pairings}
 
@@ -2036,6 +2053,11 @@ already occurs in the diagonal estimate and Minkowski's inequality.
   $(2,0)$ terms of Lemma~\ref{L:white-test}.
 \end{remark}
 
+No-go~\ref{P:nogo-01} isolates this scale obstruction. The adjacent-diagram
+calculation in No-go~\ref{P:nogo-02} also explains why one cannot repair it
+by assigning a cubic-factorial estimate to every individual pairing.
+
+
 \chapter{An independent upper bound}\label{S:book-independent-upper}
 
 \input{notes/chapter-guides/03-independent-upper}
@@ -2048,6 +2070,9 @@ establish a uniform estimate for the first variance coefficient with arbitrary
 deterministic initial phase. The covariance may be any member of the original
 three-dimensional class; no endpoint representation is assumed. The estimate
 below is not an all-order propagator bound.
+No-go~\ref{P:nogo-14} shows why scalar solution-value moments cannot be
+multiplied across blocks. No-go~\ref{P:nogo-15} shows why both the first
+random term and the second-order mean enter the phase energy coefficient.
 
 
 
@@ -2794,6 +2819,11 @@ occupation spaces in this argument.
   \le e^y$ for $y \ge 0$ proves \eqref{E:independent-static-blocks}. This proves
   Corollary~\ref{C:static-interaction}.
 \end{proof}
+
+The independent-block estimate does not use log-convexity in additive
+covariance amplitudes. That unrestricted interpolation principle already
+fails for a scalar Gaussian wave; see No-go~\ref{P:nogo-11}.
+
 
 These estimates concern individual static phase and interaction maps. Their
 summability alone does not identify the evolution driven by overlapping interval
@@ -4103,9 +4133,15 @@ the time intervals below.
     assert equality at either bound.
   \item \textbf{Source comparisons and scope.}
     The source first-moment normalization remains a qualified comparison
-    question. Historical alternatives and failed routes above retain their
-    original scope; they are not new premises of the intrinsic-limit proof.
+    question. Chapter~\ref{S:book-no-go} collects the failed approaches and
+    explains their precise scope and the constructions that replace them.
+    They are not new premises of the intrinsic-limit proof.
 \end{enumerate}
+
+\chapter{Obstructions and failed approaches}\label{S:book-no-go}
+\label{S:appendix-no-go} % Retained for existing links to the former appendix.
+
+\input{notes/no-go-appendix}
 
 \appendix
 
@@ -4458,6 +4494,12 @@ integrals is asserted.
   an incorrect pairing rule, but cannot determine an all-order factorial power
   or prove either principal goal.
 \end{remark}
+
+No-gos~\ref{P:nogo-03} and~\ref{P:nogo-04} use these finite coefficients
+to disprove a squared-mean comparison with unit prefactor for every time
+and a coefficient constant uniform near $\alpha_0=1$, respectively.
+Neither test determines the large-time constant.
+
 
 
 \chapter{Direct upper bounds and static interpolation}\label{S:appendix-direct}
@@ -4973,6 +5015,10 @@ definition of $A_k(t)$ is now applied to the present $d$-dimensional solution.
   constants.
 \end{remark}
 
+No-go~\ref{P:nogo-06} quantifies the loss avoided here: discarding the
+spatial constraints before summation gives the wrong time exponent.
+
+
 \begin{remark}[Boundary and literature comparisons]\label{R:d1-comparisons}
   As $\alpha_0\downarrow0$, the time exponent tends to $(4-\alpha)/(3-\alpha)$,
   the Chen--Hu static exponent cited in Remark~\ref{R:G1-scope}. This is an
@@ -5016,6 +5062,11 @@ $G_{h,0} = G_h$.
   particular, each pairing edge may have its own positive covariance width and
   each Green factor its own nonnegative smoothing width.
 \end{hypothesis}
+
+This uniform maximum is an additional assumption, not a consequence of
+homogeneity. No-go~\ref{P:nogo-08} gives admissible covariances for which
+the translated wave convolution diverges.
+
 
 \begin{proposition}[Conditional upper bound]\label{P:higher-transfer}
   Suppose that Hypotheses~\ref{H:homog} and~\ref{H:spatial-maximum} hold in the
@@ -5267,6 +5318,12 @@ $G_{h,0} = G_h$.
   Proposition~\ref{P:higher-transfer} applies. This proves
   Corollary~\ref{C:higher-riesz}.
 \end{proof}
+
+Another possible reduction would merge two neighboring wave kernels.
+No-go~\ref{P:nogo-10} explains why an unweighted convolution estimate
+cannot simply discard the covariance linking a merged vertex to its remote
+partner in a crossing diagram.
+
 
 \begin{proposition}[Obstructions to the spatial hypothesis]
   \label{P:higher-obstructions}
@@ -6913,6 +6970,14 @@ penalty tends to zero.
   not inputs to the intrinsic constant theorem~\ref{T:intrinsic-second-moment}.
 \end{remark}
 
+Euclidean radial lowering can destroy positive definiteness, even for an
+admissible coordinate-product covariance; see No-go~\ref{P:nogo-09}.
+Two other substitutes fail for different reasons: a heat--Mellin square can
+have infinite local mass, while angular smoothing of a singular covariance
+cannot retain a uniform isotropic density envelope; see
+No-gos~\ref{P:nogo-12} and~\ref{P:nogo-13}.
+
+
 \section{Physical and spectral energy for measure covariances}
 \label{S:energy-fidelity}
 
@@ -7947,6 +8012,12 @@ analytic covariance, not its absolute-value bound, is being copied.
   method.
 \end{remark}
 
+No-go~\ref{P:nogo-17} summarizes the missing degree-two multiplier.
+No-go~\ref{P:nogo-18} records a different degree-four obstruction: erasing
+an additional shift makes one upper envelope too large to close its
+comparison, without refuting the comparison itself.
+
+
 \chapter{The AI work in numbers}\label{S:appendix-ai-statistics}
 
 \input{notes/ai-statistics}
@@ -7954,10 +8025,6 @@ analytic covariance, not its absolute-value bound, is being copied.
 \chapter{What Lean checks}\label{S:appendix-lean-checks}
 
 \input{notes/lean-coverage}
-
-\chapter{Approaches that do not work}\label{S:appendix-no-go}
-
-\input{notes/no-go-appendix}
 
 \backmatter
 \bibliography{All,extra}

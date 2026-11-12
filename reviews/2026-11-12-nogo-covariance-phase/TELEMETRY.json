@@ -1,0 +1,142 @@
+{
+  "schema": "nogo-review-native-telemetry/1",
+  "scope": "Two independent scientific reviews; DS derived schema normalization is not another scientific vote. Kimi attempt01 was a pre-dispatch refusal, not a model call.",
+  "aggregation_policy": "Keep provider-reported fields verbatim. Do not infer cost or split Kimi output into reasoning/public tokens.",
+  "deepseek": {
+    "session_id": "ses_e2fe1f794ffeZkSbQAwQVtiGlv",
+    "native_assistant_metadata": [
+      {
+        "role": "assistant",
+        "mode": "artifact-reviewer",
+        "agent": "artifact-reviewer",
+        "cost": 0.12049092,
+        "tokens": {
+          "total": 74262,
+          "input": 20112,
+          "output": 3228,
+          "reasoning": 50922,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        },
+        "modelID": "deepseek-v4-pro",
+        "providerID": "deepseek",
+        "time": {
+          "created": 1794492992226,
+          "completed": 1794493738513
+        },
+        "finish": "stop",
+        "id": "msg_1d01e0ae20016YBxEbDbkdNRcw",
+        "sessionID": "ses_e2fe1f794ffeZkSbQAwQVtiGlv"
+      }
+    ],
+    "native_step_start": [
+      {
+        "type": "step_start",
+        "timestamp": 1794492995646,
+        "sessionID": "ses_e2fe1f794ffeZkSbQAwQVtiGlv",
+        "part": {
+          "id": "prt_1d01e1836001cm7310mtJcSkjA",
+          "messageID": "msg_1d01e0ae20016YBxEbDbkdNRcw",
+          "sessionID": "ses_e2fe1f794ffeZkSbQAwQVtiGlv",
+          "type": "step-start"
+        }
+      }
+    ],
+    "native_step_finish": [
+      {
+        "type": "step_finish",
+        "timestamp": 1794493738536,
+        "sessionID": "ses_e2fe1f794ffeZkSbQAwQVtiGlv",
+        "part": {
+          "id": "prt_1d0296e01001C0GsigL0Wqc7cs",
+          "reason": "stop",
+          "messageID": "msg_1d01e0ae20016YBxEbDbkdNRcw",
+          "sessionID": "ses_e2fe1f794ffeZkSbQAwQVtiGlv",
+          "type": "step-finish",
+          "tokens": {
+            "total": 74262,
+            "input": 20112,
+            "output": 3228,
+            "reasoning": 50922,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          },
+          "cost": 0.12049092
+        }
+      }
+    ],
+    "wrapper_exit_and_timing": {
+      "exit": 0,
+      "elapsed_seconds": 748.1245584487915
+    },
+    "public_raw_events": {
+      "path": "reviews/2026-11-12-nogo-covariance-phase/deepseek-attempt-01/raw.jsonl",
+      "sha256": "c3ef8df964cfa93d859f070552179e70800f0ece87e7b2fce550699124182bf3"
+    },
+    "public_report": {
+      "path": "reviews/2026-11-12-nogo-covariance-phase/deepseek-attempt-01/report-public.txt",
+      "sha256": "41577cc5eef8801da60a3257c5cf555fe4500ec9513a6b3ce85436d6372515a4"
+    },
+    "native_private_custody": [
+      {
+        "original_location": "reviews/2026-11-12-nogo-covariance-phase/deepseek-attempt-01/native-session-snapshot.json",
+        "retained_private_location": "private/audit/2026-11-12-nogo-expansion/covariance-phase/deepseek-attempt-01/native-session-snapshot.json",
+        "sha256": "b8a466bbbd37da9ca563868c034bd931f535e6b686c38e07a9783e5cc9dd73ab"
+      },
+      {
+        "original_location": "reviews/2026-11-12-nogo-covariance-phase/deepseek-attempt-01/native-session-final.json",
+        "retained_private_location": "private/audit/2026-11-12-nogo-expansion/covariance-phase/deepseek-attempt-01/native-session-final.json",
+        "sha256": "3a17c7dbdb8eba46c5df929b55513ac5c11da5cf1cffeb628ce1cb1ae0e40cff"
+      }
+    ],
+    "normalization_provenance": {
+      "path": "reviews/2026-11-12-nogo-covariance-phase/deepseek-attempt-01/normalization-provenance.json",
+      "sha256": "4f968bd6536b03eb49cdcdd5389adb158fed365d8b1c7f3fe6ebdf945fb1dbaa"
+    }
+  },
+  "kimi": {
+    "provider": "kimi",
+    "started_utc": "2026-11-12T14:16:48.651441+00:00",
+    "finished_utc": "2026-11-12T14:32:56.372056+00:00",
+    "elapsed_seconds": 967.72,
+    "session_id": "session_3e56e151-eb89-44ed-a589-c131471d95ac",
+    "model_requested": "kimi-code/k3",
+    "model_actual": "k3",
+    "model_alias_actual": "kimi-code/k3",
+    "configured_effort": "max",
+    "effort_actual": "max",
+    "usage_records": [
+      {
+        "inputOther": 20537,
+        "output": 52747,
+        "inputCacheRead": 2560,
+        "inputCacheCreation": 0
+      }
+    ],
+    "transport_exit_code": 0,
+    "transport_ok": true,
+    "actual_route_verified": true,
+    "tool_calls_observed": [],
+    "candidate_hashes_unchanged": true,
+    "prompt_bytes": 69389,
+    "prompt_sha256": "9a173290d4d992f86682c8a8f65877ea333a349d753c65542b7cd5e27f8bceac",
+    "raw_report_sha256": "2009969f1aa7a4da2972437d1d7609cf14673826cfd0ed2a967092b082d32fbb",
+    "report_sha256": "9c9019fb00e4b6add4ef65e700176205995be3387bb21575b5dacca36dc813ad",
+    "report_body_sha256": "2009969f1aa7a4da2972437d1d7609cf14673826cfd0ed2a967092b082d32fbb",
+    "transport_events_sha256": "58568bf4a6b9711e3db8bad19f2af50464611d85d1a28bd309f64995fbebf32c",
+    "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reported_cost": "not supplied by native receipt; no estimate made",
+    "native_receipt": {
+      "path": "reviews/2026-11-12-nogo-covariance-phase/kimi-attempt-02/receipt.json",
+      "sha256": "d64e2d254d91f0db5c0937fcb76aefa82d1a6992d0f68588e3b6b168013e65a3"
+    },
+    "events": {
+      "path": "reviews/2026-11-12-nogo-covariance-phase/kimi-attempt-02/events.jsonl",
+      "sha256": "58568bf4a6b9711e3db8bad19f2af50464611d85d1a28bd309f64995fbebf32c"
+    }
+  }
+}

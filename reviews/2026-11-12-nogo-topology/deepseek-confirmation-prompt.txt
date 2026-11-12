@@ -1,0 +1,1908 @@
+This is a bounded mathematical repair confirmation on a NEW frozen candidate, not a request to raise any earlier confidence. No old verdicts are supplied. Read READING-PLAN.md, CHANGE-CONTRACT.md and all listed files completely. The author has narrowed NG25's completed-map operator norm assertion from all finite r>=1 to exactly 2<r<2/a, the range in which the supplied Proposition P:cameron-full-mean defines a compact map. The smooth-control witness was unchanged. NG26's scalar time interval is now explicitly [0,1]. All files were formatted to2-space indentation.
+
+Return exactly THREE checks with ids NG25-REPAIR, NG26-INTERVAL, UNCHANGED-CORRESPONDENCE. For NG25-REPAIR independently verify full statement/proof including supported H_I domain, P_J exact annihilation by white spatial separation, raw norm1, temporal equilibrium identity/mass, exact four-coordinate mean multiplier and unit phase dual, c_a>0 independent of J and R witness, and fixed-R vs growing-R scope. Assess whether the narrowed 2<r<2/a assertion is well-defined and proved; a single explicit smooth test family alone does not define a completed mean map outside its known range. For NG26-INTERVAL verify the added [0,1] interval matches the exact scalar norm/ODE calculation and changes no conclusion. For UNCHANGED-CORRESPONDENCE compare previous/topology.tex and candidate/topology.tex plus both previous/current diagram sources: outside those two clauses, is the mathematics and every exclusion unchanged, allowing purely indentation/whitespace differences? This check is correspondence only, not a new mathematical review of the other6 no-gos.
+
+Return ONLY one bare JSON object, no prose or fences or final paragraph. Schema subscription-review-report/1. Required top fields: schema, verdict (PASS/PASS_WITH_NOTES/FAIL/INCONCLUSIVE), confidence (high/medium/low honestly chosen), source_coverage (array strings with exact files and actual complete line ranges), checks (three objects each with id,claim,verdict,reason), findings (object with fatal,major,minor arrays of STRINGS), required_repairs (array STRINGS), limitations (array STRINGS). Check verdicts ONLY PASS/PASS_WITH_NOTES/FAIL/INCONCLUSIVE/PARTIAL. Provide decisive calculations in reasons. A passing verdict requires all3 checks passing and no required repairs. Mandatory changes belong in required_repairs and force FAIL/INCONCLUSIVE; optional notes in minor. No execution, editing, network, delegation, other communications or publication. No visual, novelty, full-book or Lean coverage is requested. Do not include explanatory prose before the JSON: it makes the report invalid.
+
+All required files follow inline. Do not call tools.
+
+===== BEGIN READING-PLAN.md =====
+Read all lines of these files; the entire new and prior target are supplied to check the exact change and unchanged mathematical scope. Other no-gos need only change-correspondence checking, not a new full proof review.
+- candidate/topology.tex
+- previous/topology.tex
+- candidate/nogo-projection-escape.tex
+- previous/nogo-projection-escape.tex
+- candidate/nogo-feature-range.tex
+- previous/nogo-feature-range.tex
+- sources/integrated_cameron_mean.tex
+- sources/integrated_temporal_equilibrium.tex
+- sources/projection-mathematics.md
+- sources/homogeneity-hypothesis.tex
+- CHANGE-CONTRACT.md
+
+===== END READING-PLAN.md =====
+
+===== BEGIN CHANGE-CONTRACT.md =====
+Mandatory repair: NG25 completed mean map operator-norm assertion now quantifies only 2<r<2/a, the domain range of the cited completed compact map. The explicit translated time-constant control lower-bound calculation is unchanged.
+Optional clarity: NG26 scalar time interval is now explicitly [0,1].
+All three target files were formatted by format-tex with2-space indentation. Author mechanically compared every non-whitespace character: the only differences from previous/topology.tex are those two sentence replacements; both diagrams differ only in whitespace. Reviewer must judge the repaired claim independently. No past review verdict is supplied.
+
+===== END CHANGE-CONTRACT.md =====
+
+===== BEGIN candidate/topology.tex =====
+\section{Topology, localization and limits of variational arguments}
+\label{S:nogo-topology}
+
+A useful approximation must be small in the topology in which the next
+argument uses it. The obstructions below distinguish a local operator from a
+Hilbert--Schmidt operator, a fixed spatial cutoff from a growing one, and
+pointwise convergence from convergence of variational suprema. Throughout,
+$a=\alpha_0\in(0,1)$ and $\Lambda=(1-\Delta)^{1/2}$, except that the positive
+number $L$ denotes the temporal feature cutoff in No-go~\ref{P:nogo-32}.
+
+\subsection{The first driver cannot always be Hilbert--Schmidt}
+\label{S:nogo-21}
+
+The one-dimensional operator construction suggests trying the same
+Hilbert--Schmidt space in higher dimensions. A compact spatial observation
+removes infinite volume, but it does not remove the following high-frequency
+obstruction. The relevant compatibility is with the given noise, through its
+bilinear first-driver tests.
+
+\setcounter{nogo}{20}
+\begin{nogo}[A same-noise Hilbert--Schmidt obstruction]
+  \label{P:nogo-21}
+  Suppose that $d\in\{2,3\}$, $s\in\R$, and $0<T\le1$. Put
+  $E_s=H^s(\R^d)\times H^{s-1}(\R^d)$ and let $S(t)$ be the massless wave
+  phase group. For every nonzero covariance satisfying Hypothesis~\ref{H:homog},
+  there are a nonnegative compact smooth physical coefficient mask $\zeta$ and
+  a compact smooth observation cutoff $\chi$, equal to one on a sufficiently
+  large ball, for which the localized Gaussian first-driver form has no
+  compatible realization in $L^2(\Omega;\operatorname{HS}(E_s,E_s))$.
+  Here compatibility means equality with the given $W$ for each fixed smooth
+  phase pair, as specified in the proof.
+\end{nogo}
+
+\begin{proof}
+  First consider a deterministic coefficient $h(u,x)=k(u)H(x)$, where
+  $H\in C_c^\infty(\R^d)$ is nonzero, even and nonnegative, and
+  $k\in W^{1,\infty}[0,T]$ satisfies $k\ge k_0>0$. Write
+  $B(b)(v,w)=(0,bv)$ and
+  \[
+    A_h=\int_0^T S(-u)B(h(u))S(u)\ud u,\qquad
+    S(u,\xi)=\begin{pmatrix}
+      \cos(u|\xi|)&\sin(u|\xi|)/|\xi|\\
+      -|\xi|\sin(u|\xi|)&\cos(u|\xi|)
+    \end{pmatrix}.
+  \]
+  The sine quotient has its continuous value at zero. The integral is a strong
+  operator integral on $E_s$: $S(u)$ is strongly continuous and uniformly
+  bounded on compact time intervals, and multiplication by $H$ is bounded on
+  $H^s$. For the latter assertion, the weighted Fourier kernel is bounded in
+  absolute value by a constant times
+  $\langle\xi-\eta\rangle^{|s|}|\widehat H(\xi-\eta)|$, an integrable
+  convolution kernel. This proves boundedness for every fixed real $s$.
+
+  Normalize the Fourier coordinates by
+  $\operatorname{diag}(\langle\xi\rangle^s,\langle\xi\rangle^{s-1})$.
+  Using the unitary Fourier transform, the lower-left block of $A_h$ then has
+  kernel
+  \[
+    K_s(\xi,\eta)=(2\pi)^{-d/2}
+    \langle\xi\rangle^{s-1}\langle\eta\rangle^{-s}
+    \widehat H(\xi-\eta)
+    \int_0^T k(u)\cos(u|\xi|)\cos(u|\eta|)\ud u.
+  \]
+  This formula follows from both phase coordinates: before applying the weights,
+  the full product, with $r=|\xi|$, $\rho=|\eta|$, is
+  \[
+    \widehat H(\xi-\eta)
+    \begin{pmatrix}
+      -\dfrac{\sin(ru)}r\cos(\rho u)&
+      -\dfrac{\sin(ru)}r\dfrac{\sin(\rho u)}\rho\\
+      \cos(ru)\cos(\rho u)&\cos(ru)\dfrac{\sin(\rho u)}\rho
+    \end{pmatrix}.
+  \]
+  All Fourier and time exchanges are justified on Schwartz pairs by the rapid
+  decay of $\widehat H$ and then by density.
+
+  Let $J_0=\int_0^T k>0$ and
+  $B_0=\|k\|_\infty+T\|k'\|_\infty$. Choose $\epsilon>0$ so that
+  $\epsilon\le1$, $\epsilon T\le1$ and
+  $\widehat H(z)\ge\widehat H(0)/2>0$ when $|z|\le\epsilon$.
+  If $|\xi-\eta|\le\epsilon$, then
+  \[
+    \int_0^T k(u)\cos((r-\rho)u)\ud u\ge J_0/2,
+    \qquad
+    \left|\int_0^T k(u)\cos((r+\rho)u)\ud u\right|
+    \le B_0/(r+\rho).
+  \]
+  The second bound is integration by parts in the absolutely continuous
+  function $k$. Product-to-sum therefore bounds the time integral in $K_s$
+  from below by $J_0/8$ when
+  $r\ge R_0:=\max(1,2\epsilon,4B_0/J_0)$.
+  On the same region,
+  \[
+    \langle\xi\rangle^{s-1}\langle\eta\rangle^{-s}
+    =\langle\xi\rangle^{-1}
+    (\langle\xi\rangle/\langle\eta\rangle)^s
+    \ge 2^{-|s|}/(\sqrt2 r).
+  \]
+  Consequently, $|K_s(\xi,\eta)|\ge c_s/|\xi|$ there, for $c_s>0$.
+  If $P_N$ cuts off Fourier frequencies to $B_N$, its truncated kernel is
+  square integrable and Parseval followed by Tonelli gives
+  \[
+    \|P_NK_sP_N\|_{\operatorname{HS}}^2
+    \ge c_s^2|B_\epsilon||\mathbb S^{d-1}|
+    \int_{R_0}^{N-\epsilon}r^{d-3}\ud r\longrightarrow\infty.
+  \]
+  Indeed Parseval in the second kernel variable identifies its square integral
+  with the sum of squared images of an orthonormal basis. If $A_h$ were
+  Hilbert--Schmidt, every block compression would have bounded
+  Hilbert--Schmidt norm. The displayed divergence proves otherwise. Real
+  Hilbert--Schmidt operators and their complexifications have the same norm,
+  so Fourier complexification has not changed the conclusion.
+
+  Suppose that $\operatorname{supp}H\subset B_A$, and let $\chi=1$ on
+  $B_{A+T+1}$. With $D_\chi$ denoting multiplication of both phase coordinates,
+  finite propagation gives
+  \[
+    D_\chi A_h=A_h=A_hD_\chi.
+  \]
+  For completeness, the local wave energy on a shrinking ball has boundary
+  flux $v_t\partial_n v-(v_t^2+|\nabla v|^2)/2\le0$. Zero initial data
+  therefore remain zero in the interior cone; time reversal gives the same
+  support assertion for $S(-u)$. Apply this first to smooth data and then use
+  Sobolev continuity and distributional testing to pass to $E_s$. The
+  coefficient acts only in $B_A$, and the resulting output lies in
+  $B_{A+T}$. Thus the failure persists after this compact observation.
+
+  We next produce $h$ as an actual covariance mean. Choose $L_0\ge1$ with
+  $0<\Gamma(B_{L_0})<\infty$, and an even nonnegative $q\in C_c^\infty$
+  equal to at least one on $B_{2L_0+1}$. Set $U=\Gamma*q$. Local finiteness
+  of $\Gamma$ permits differentiation on every compact set, so $U$ is smooth,
+  even and nonnegative, with $U(0)>0$. Moreover,
+  \[
+    Q=\int q(x)U(x)\ud x
+    \ge |B_{L_0+1}|\Gamma(B_{L_0})>0.
+  \]
+  Choose an even nonnegative compact smooth $\zeta$, equal to one near zero,
+  and put $H=\zeta U$. Choose $f\in C_c^\infty(0,1)$ nonnegative and
+  nonzero, and set
+  \[
+    Z=W(f\otimes q),\qquad
+    k(u)=\int_0^1|u-v|^{-a}f(v)\ud v.
+  \]
+  For $u\in[0,1]$, $k(u)\ge\int f>0$. Moving the derivative to the smooth
+  zero extension of $f$ shows $k\in C^1[0,1]$, since $|\cdot|^{-a}$ is
+  locally integrable. Also $\E Z^2=Q\int_0^1 f(u)k(u)\ud u\in(0,\infty)$.
+  The mask is applied after the covariance convolution: $H=\zeta(\Gamma*q)$.
+
+  It remains to specify the compatible first-driver form with the correct
+  Sobolev adjoint. For real Schwartz phases $z,w$ put
+  \[
+    v_u=[S(u)z]_1,\qquad
+    G_w(u)=-\frac{\sin(u|D|)}{|D|}(\chi\Lambda^{2s}w_1)
+    +\cos(u|D|)(\chi\Lambda^{2s-2}w_2),
+  \]
+  and define
+  $F_{z,w}(u,x)=\mathbf1_{(0,T)}(u)\zeta(x)v_u(x)G_w(u,x)$.
+  This test lies in the raw noise completion. In fact, on a fixed compact
+  spatial support $K$, its covariance norm is bounded by a constant times
+  $\|u\mapsto\|F(u)\|_\infty\|_{L^2(0,T)}$, by local Radon mass
+  $\Gamma(K-K)$ and the time Schur bound for $|u-v|^{-a}$. Smooth interior
+  time approximation gives membership. Define
+  $\ell_\chi(z,w)=W(F_{z,w})$ on the given noise space.
+  Direct transposition, with the Sobolev weights retained, gives
+  \[
+    G_w(u)=\Lambda^{2s-2}
+    \big((D_\chi S(-u))^{*_{E_s}}w\big)_2.
+  \]
+  In particular, multiplication by $\chi$ has not been treated as self-adjoint
+  in $E_s$. Absolute Fubini in the covariance pairing now gives
+  \[
+    \E[Z\ell_\chi(z,w)]
+    =\int_0^T\!\int k(u)H(x)v_u(x)G_w(u,x)\ud x\ud u
+    =\langle D_\chi A_hz,w\rangle_{E_s}
+    =\langle A_hz,w\rangle_{E_s}.
+  \]
+  All spatial factors in the raw tests have compact support and the temporal
+  singularity is integrable, which supplies the absolute Fubini bound.
+
+  If $X\in L^2(\Omega;\operatorname{HS}(E_s,E_s))$ satisfied
+  $\langle Xz,w\rangle_{E_s}=\ell_\chi(z,w)$ almost surely for every fixed
+  Schwartz pair, then Cauchy--Schwarz would make
+  $Y=\E[ZX]$ a Hilbert--Schmidt Bochner integral. Continuous matrix evaluation
+  would give $\langle Yz,w\rangle=\langle A_hz,w\rangle$ for all such pairs.
+  Density implies $Y=A_h$, a contradiction. This proves No-go~\ref{P:nogo-21}.
+\end{proof}
+
+This result concerns the same-index phase spaces $E_s$ and a compatible
+$L^2$ Hilbert--Schmidt realization. It does not concern every cutoff: the zero
+cutoff, for example, has no such obstruction. It is not a nonexistence result
+for the Stratonovich solution or its moments. A route using loss of regularity
+between input and output, operator norms, or a different Schatten class must
+supply its own estimates; changing the fixed index $s$ alone cannot reopen
+this particular route.
+
+\subsection{A physical mask may not act on the noise quotient}
+\label{S:nogo-22}
+
+A smooth physical mask is harmless on ordinary test functions. It need not
+preserve the zero classes of a covariance seminorm. The following is the
+obstruction already proved in Proposition~\ref{P:masked-quotient-obstruction};
+we include its witness to explain why the auxiliary completion is needed.
+
+\setcounter{nogo}{21}
+\begin{nogo}[A mask that separates noise-null representatives]
+  \label{P:nogo-22}
+  For $d=2$, $\alpha=1$, $0<a<1$ and
+  $\Gamma=\delta_0(\ud x_1)\ud x_2$, there exist real compact smooth $F$ and
+  a nonnegative smooth square mask $\zeta$ for which
+  $\E W(F)^2=0$ but $\E W(\zeta F)^2>0$.
+  Thus multiplication by this mask does not descend to the original noise
+  quotient, and no finite uniform covariance-norm multiplier bound holds.
+\end{nogo}
+\begin{proof}
+  Choose a nonnegative nonconstant compact smooth plateau function $\psi$ and
+  put $\chi=\psi^2$. The spatial covariance seminorm is
+  \[
+    V(g)=\int_\R\left(\int_\R g(x_1,x_2)\ud x_2\right)^2\ud x_1.
+  \]
+  This also shows positive definiteness of the nonnegative even tempered
+  measure $\Gamma$; its scaling is $\Gamma(cA)=c\Gamma(A)$, as required
+  for $d=2$, $\alpha=1$. Put
+  $g(x)=\chi(x_1)\chi''(x_2)$ and
+  $\zeta(x)=\chi(x_1)\chi(x_2)=(\psi(x_1)\psi(x_2))^2$.
+  Then $\int\chi''=0$, whereas integration by parts gives
+  \[
+    \int\zeta(x)g(x)\ud x_2=-\chi(x_1)^2\int(\chi')^2.
+  \]
+  Consequently, $V(g)=0$ and
+  $V(\zeta g)=\int\chi^4\,\big(\int(\chi')^2\big)^2>0$.
+  Tensor with a nonzero nonnegative $\tau\in C_c^\infty(0,T)$. Its temporal
+  variance is finite and strictly positive, so $F=\tau\otimes g$ has the
+  asserted full-noise variances. This proves No-go~\ref{P:nogo-22}.
+\end{proof}
+
+This covariance is not two-dimensional spatial white noise. One can still
+mask individual tests before taking an auxiliary completion. To reopen a
+multiplier argument on the original quotient, one must first prove that the
+chosen mask preserves its null space and then prove the required norm bound.
+
+\subsection{Frequency decay does not give whole-space compactness}
+\label{S:nogo-24}
+
+The compact-cutoff estimates use spatial confinement as well as frequency
+smoothing. Removing the former loses compactness even for a deterministic
+Bessel multiplier; see Proposition~\ref{P:cutoff-boundary-tests}.
+
+\setcounter{nogo}{23}
+\begin{nogo}[Translations defeat whole-space compactness]
+  \label{P:nogo-24}
+  For every $d\ge1$ and $\gamma>0$, the operator $\Lambda^{-\gamma}$ on
+  $L^2(\R^d)$ is not compact.
+\end{nogo}
+\begin{proof}
+  Take a nonzero Schwartz function $f$ with Gaussian Fourier transform and put
+  $g=\Lambda^{-\gamma}f$. Then $g$ is nonzero and Schwartz. For translations
+  $T_hg(x)=g(x-h)$, Plancherel gives
+  \[
+    \langle T_hg,g\rangle
+    =\int e^{-i\xi\cdot h}|\widehat g(\xi)|^2\ud\xi\longrightarrow0
+    \quad (|h|\longrightarrow\infty).
+  \]
+  The limit follows, for example, by integration by parts in the Fourier
+  transform of the Schwartz function $|\widehat g|^2$.
+  Choose a sufficiently large spacing $b$ and $h_n=nb e_1$ so that distinct
+  images $T_{h_n}g$ have squared distance at least $\|g\|_2^2$.
+  The inputs $T_{h_n}f$ have constant norm and
+  $\Lambda^{-\gamma}T_{h_n}f=T_{h_n}g$. Their images have no Cauchy
+  subsequence. This proves No-go~\ref{P:nogo-24}.
+\end{proof}
+
+Compact spatial cutoffs and the conditional Schatten estimates in the main
+text survive. No necessity at a Schatten endpoint is asserted here. A
+whole-space successor needs a tightness condition that prevents translation
+of mass, or an explicitly different topology.
+
+\subsection{Fixed projections do not control growing spatial masks}
+\label{S:nogo-25}
+
+At each fixed radius the Cameron mean map can be compact. Its finite-rank
+approximations need not be uniform in that radius. The following witness uses
+actual unit controls for one-dimensional spatial white noise. The fixed-radius
+map and its compact approximation are those of
+Proposition~\ref{P:cameron-full-mean}.
+
+\setcounter{nogo}{24}
+\begin{nogo}[Escape from every fixed smooth projection]
+  \label{P:nogo-25}
+  Let $\Gamma=\delta_0$ in $d=1$, and let $H_I$ be the closed raw-noise
+  space generated by tests supported in $I\times\R$, $I=(0,1)$. Let $P_J$
+  be any fixed finite-rank orthogonal projection in $H_I$ whose range is
+  spanned by smooth compact tests supported in $I\times\R$. For the physical masked mean multiplier $T_R$ on
+  $F=(H^{1/2}\times H^{-1/2})\oplus\R^2$, with the last coordinates
+  representing constant displacement and velocity, one has, for every
+  $2<r<2/a$,
+  \[
+    \sup_R\|T_R(I-P_J)\|_{H_I\to L^r((0,1);\mathcal K(F))}\ge c_a>0,
+  \]
+  where $c_a$ can be chosen independently of $J$. Here the smooth masks $m_R$
+  equal one on $[-R,R]$. For a smooth control $\Psi$ with covariance mean
+  $h_\Psi$, the operator sends $(v,w,c,d)$ to
+  $(0,m_Rh_\Psi(s)(v+c),0,0)$.
+\end{nogo}
+\begin{proof}
+  Use the temporal equilibrium density $f_a$ of
+  Lemma~\ref{L:temporal-equilibrium}, so that
+  $\int_0^1|s-t|^{-a}f_a(t)\ud t=1$ and
+  $\|f_a\|_{H_a}^2=M_a>0$.
+  Choose nonnegative $q\in C_c^\infty(\R)$ with $\|q\|_2=1$, and put
+  $q_n(x)=q(x-x_n)$, where $x_n\to\infty$. The controls
+  \[
+    \Psi_n=\frac{f_a\otimes q_n}{\sqrt{M_a}}
+  \]
+  have unit raw norm and time-independent covariance mean
+  $q_n/\sqrt{M_a}$. Membership follows by $L^2$ approximation of $f_a$ and
+  the Schur bound for the temporal kernel.
+  The finitely many tests spanning $P_J$ have common compact spatial support.
+  For all sufficiently large $n$, spatial whiteness gives
+  $P_J\Psi_n=0$ exactly. Choose $R_n$ to contain $\operatorname{supp}q_n$
+  in the plateau of $m_{R_n}$.
+
+  The constant-displacement input $e=(0,0,1,0)$ has norm one. The phase dual
+  \[
+    w_n=(0,\Lambda q_n/\|q\|_{H^{1/2}},0,0)
+  \]
+  also has norm one. Indeed its velocity norm is $H^{-1/2}$, and translation
+  preserves $\|q\|_{H^{1/2}}$. The mean multiplier sends $e$ to the velocity
+  $q_n/\sqrt{M_a}$, so the $H^{-1/2}$ inner product gives, for every $s$,
+  \[
+    \langle T_{R_n}\Psi_n(s)e,w_n\rangle_F
+    =\frac{\|q_n\|_2^2}{\sqrt{M_a}\|q\|_{H^{1/2}}}
+    =:c_a>0.
+  \]
+  Integrating over the unit time interval proves the bound for all $r$ stated.
+  This proves No-go~\ref{P:nogo-25}.
+\end{proof}
+
+\input{notes/figures/nogo-projection-escape}
+
+For a fixed $R$, sufficiently distant translates miss its mask, so there is
+no contradiction with fixed-radius compactness. A replacement must use
+projections depending on the radius with quantitative control, or a different
+localization argument. The witness does not exclude every such strategy.
+
+\subsection{Two distinct limitations of block costs}
+\label{S:nogo-26}
+
+A nonlinear block argument must handle both small perturbations and rare large
+blocks. A power larger than one misses the first effect; an averaged budget
+alone does not bound the largest block.
+
+\setcounter{nogo}{25}
+\begin{nogo}[A pure Young power and a maximum from an average]
+  \label{P:nogo-26}
+  On $[0,1]$, with $\theta=2/3$ and $\nu=1/\theta=3/2$, no finite constant
+  $C>0$ gives
+  $\log U(1)\le C\|D\|_{C^\theta}^{\nu}$ for all scalar paths starting at zero
+  and solving $\ud U=U\ud D$, $U(0)=1$, when
+  $\|D\|_{C^\theta}=\|D\|_\infty+[D]_{C^\theta}$.
+  Moreover, a bound on $N^{-1}\sum_{j=1}^N b_j^r$, $r>0$, does not give a
+  bound independent of $N$ on $\max_j b_j$.
+\end{nogo}
+\begin{proof}
+  For $D(t)=xt$, $x>0$, the solution is $U(t)=e^{xt}$ and
+  $\|D\|_{C^{2/3}}=2x$. Taking $x=1/(16C^2)$ gives
+  $C(2x)^{3/2}=x/\sqrt2<x=\log U(1)$.
+  For the second assertion, take $b_1=N^{1/r}$ and $b_j=0$ for $j>1$.
+  Their averaged $r$th power is one while their maximum tends to infinity.
+  This proves No-go~\ref{P:nogo-26}.
+\end{proof}
+
+A linear-plus-power cost is not refuted. For any $\tau>0$ and $\nu>1$,
+$x\le\tau+\tau^{1-\nu}x^\nu$ gives an explicit alternative with slack.
+Also, if $0<\nu<r$ and $N^{-1}\sum b_j^r\le M$, then H\"older gives
+$N^{-1}\sum b_j^\nu\le M^{\nu/r}$, and
+\[
+  \frac1N\sum_{b_j>K}b_j^\nu\le K^{\nu-r}M.
+\]
+Thus an averaged tail argument survives. Reopening the block route requires
+an actual evolution estimate with its linear term or slack, followed by an
+averaged bad-block estimate. These scalar tests alone do not construct a
+Cameron potential or prove a wave evolution bound.
+
+\subsection{Concentrating temporal controls restrict integrability}
+\label{S:nogo-27}
+
+Compactness of a temporal mean map has a natural upper endpoint. A
+concentrating control detects both excessive integrability and failure of
+compactness at that endpoint.
+
+\setcounter{nogo}{26}
+\begin{nogo}[The temporal concentration threshold]
+  \label{P:nogo-27}
+  Let $I=(0,1)$, $0<a<1$, and let $H_a$ be the completion of smooth tests for
+  $\|f\|_{H_a}^2=\int_I\int_I f(t)f(s)|t-s|^{-a}\ud t\ud s$.
+  On smooth tests set $C_af(t)=\int_I|t-s|^{-a}f(s)\ud s$.
+  The map $C_a$ is not bounded from $H_a$ to $L^r(I)$ when $r>2/a$,
+  including $r=\infty$, and it is not compact into $L^{2/a}(I)$.
+\end{nogo}
+\begin{proof}
+  Choose $t_0\in I$ and a nonzero nonnegative
+  $\phi\in C_c^\infty(-1,1)$. Put
+  \[
+    v_\phi=\int\!\int\phi(u)\phi(v)|u-v|^{-a}\ud u\ud v\in(0,\infty),
+    \qquad
+    f_\epsilon(t)=\frac{\epsilon^{a/2-1}}{\sqrt{v_\phi}}
+    \phi((t-t_0)/\epsilon).
+  \]
+  For sufficiently small $\epsilon$, its support lies in $I$. Changing both
+  variables shows $\|f_\epsilon\|_{H_a}=1$, and
+  \[
+    (C_af_\epsilon)(t_0+\epsilon y)
+    =\frac{\epsilon^{-a/2}}{\sqrt{v_\phi}}
+    \int|y-v|^{-a}\phi(v)\ud v.
+  \]
+  For $|y|\le1$, the last integral is at least $2^{-a}\int\phi>0$.
+  Thus for finite $r$,
+  $\|C_af_\epsilon\|_{L^r}\ge c_r\epsilon^{1/r-a/2}$, and the analogous
+  supremum lower bound is $c\epsilon^{-a/2}$. This proves unboundedness above
+  $2/a$.
+  For every fixed $t\ne t_0$, on the other hand,
+  $C_af_\epsilon(t)=O_t(\epsilon^{a/2})\to0$.
+  At $r=2/a$ the norm lower bound stays strictly positive. If a subsequence
+  converged strongly in this $L^r$ space, a further subsequence would converge
+  almost everywhere to its strong limit. The limit would have to be zero,
+  contradicting the norm lower bound. This proves No-go~\ref{P:nogo-27}.
+\end{proof}
+
+The endpoint argument refutes compactness, not boundedness. Tensoring the
+controls with one fixed nonzero spatial profile transfers this input
+obstruction to a corresponding separated mean map. The corrected compact
+range $2<r<2/a$ is consistent with the witness. A larger range requires
+additional temporal regularity or restrictions that exclude concentration.
+
+\subsection{Pointwise convergence does not pass through a supremum}
+\label{S:nogo-30}
+
+The Gaussian action cost must remain in a variational comparison. Even with
+that cost, bounded near-maximizers can escape in infinitely many directions.
+
+\setcounter{nogo}{29}
+\begin{nogo}[Escaping variational scores]
+  \label{P:nogo-30}
+  There are continuous functions $J_n$ on the Hilbert space $\ell^2$ tending
+  to zero at every point such that
+  \[
+    \sup_h\{J_n(h)-\tfrac12\|h\|^2\}\ge\tfrac12,
+    \qquad
+    \sup_h\{0-\tfrac12\|h\|^2\}=0.
+  \]
+  The witnesses for the first inequality have norm one.
+\end{nogo}
+\begin{proof}
+  Let $(e_n)$ be the standard orthonormal sequence and set
+  $J_n(h)=(1-2\|h-e_n\|)_+$.
+  For each fixed $h\in\ell^2$, its $n$th coordinate tends to zero, and hence
+  $\|h-e_n\|^2=\|h\|^2+1-2\langle h,e_n\rangle\to\|h\|^2+1\ge1$.
+  Thus $J_n(h)=0$ eventually. But $J_n(e_n)=1$, so its score at $e_n$ is
+  $1/2$. The limiting score is nonpositive and equals zero at $h=0$.
+  This proves No-go~\ref{P:nogo-30}.
+\end{proof}
+
+A bounded action budget alone supplies no strong compactness in $\ell^2$.
+To pass to an exact constant one needs a variational upper-limit argument,
+for example compactness of near-maximizers in a topology with the needed
+upper semicontinuity. Pointwise convergence, or compactness proved only with
+an additional fixed spatial cutoff, does not supply that argument by itself.
+
+\subsection{A cutoff point feature can lie outside the raw-noise image}
+\label{S:nogo-32}
+
+Lemma~\ref{L:source-retaining-isometry} embeds the original noise into one
+fixed larger Gaussian space. Its closed image retains all original raw tests.
+It does not contain every positive-cutoff point feature. The following
+explicit orthogonal vector explains the role of the auxiliary noise.
+
+\setcounter{nogo}{31}
+\begin{nogo}[Positive-cutoff point sources need auxiliary noise]
+  \label{P:nogo-32}
+  Suppose that $\Gamma\ne0$ satisfies Hypothesis~\ref{H:homog}, $t_0>0$,
+  $L\in(0,\infty)$ and $\epsilon>0$. In the feature space
+  \[
+    \mathcal G=L^2((0,\infty)_\lambda\times\R_r,
+    \nu_a(\ud\lambda)\ud r;H_\Gamma),\qquad
+    \nu_a(\ud\lambda)=\lambda^{a-1}\ud\lambda/\Gamma_E(a),
+  \]
+  let $K=\Phi H_W$ be the closed image of
+  Lemma~\ref{L:source-retaining-isometry}. Set $g=p_\epsilon(x-\cdot)$ and
+  \[
+    v(\lambda,r)=\mathbf1_{\{\lambda\le L\}}\sqrt{2\lambda}
+    e^{-\lambda(t_0-r)}\mathbf1_{\{r\le t_0\}}g.
+  \]
+  Then $v\notin K$. On the fixed extension
+  $\mathcal I(v)=W(\Phi^{-1}Pv)+J((I-P)v)$, where $P$ projects onto $K$
+  and $J$ is independent of $W$, one has
+  $\operatorname{Var}(\mathcal I(v)\mid\sigma(W))>0$.
+\end{nogo}
+\begin{proof}
+  The heat profile has finite strictly positive norm:
+  \[
+    \|g\|_{H_\Gamma}^2=\int p_{2\epsilon}(y)\Gamma(\ud y)>0.
+  \]
+  Finiteness follows from temperedness and Gaussian decay, and positivity from
+  nonzero nonnegative $\Gamma$. Integrating in $r$ also gives
+  $\|v\|_{\mathcal G}^2=\|g\|^2\nu_a((0,L])<\infty$.
+  Choose nonnegative nonzero smooth bumps $u_A,u_B$ supported in compact
+  intervals $A\subset(0,L)$ and $B\subset(L,\infty)$, respectively, and put
+  \[
+    p(\lambda)=\frac{u_A(\lambda)}{\int u_A\ud\nu_a}
+    -\frac{u_B(\lambda)}{\int u_B\ud\nu_a}.
+  \]
+  Then $\int p\ud\nu_a=0$ and $\int_{(0,L]}p\ud\nu_a=1$.
+  Choose $\varphi\in C_c^\infty(0,\infty)$ with $\varphi(t_0)=1$, and define
+  \[
+    q(\lambda,r)=\frac{p(\lambda)}{\sqrt{2\lambda}}
+    (\varphi'(r)+\lambda\varphi(r))g.
+  \]
+  Its support in $\lambda$ stays away from zero and infinity. In particular,
+  \[
+    \|q\|_{\mathcal G}^2=\frac{\|g\|^2}{2}
+    \left(\|\varphi'\|_2^2\int\frac{p^2}{\lambda}\ud\nu_a
+    +\|\varphi\|_2^2\int\lambda p^2\ud\nu_a\right)<\infty,
+  \]
+  where the cross term vanishes because $\int\varphi'\varphi=0$.
+  For a smooth compact raw tensor $F$ the isometry is
+  \[
+    \Phi F(\lambda,r)=\sqrt{2\lambda}
+    \int_{t>0,\ t\ge r}e^{-\lambda(t-r)}F_t\ud t.
+  \]
+  The identity
+  \[
+    \int_{-\infty}^t e^{-\lambda(t-r)}
+    (\varphi'(r)+\lambda\varphi(r))\ud r=\varphi(t)
+  \]
+  follows by differentiating $e^{-\lambda(t-r)}\varphi(r)$ in $r$.
+  All integrals paired with $q$ are absolutely integrable because its two
+  supports are compact and its $\lambda$ support stays away from zero.
+  Consequently,
+  \[
+    \langle\Phi F,q\rangle_{\mathcal G}
+    =\left(\int_{t>0}\langle F_t,g\rangle_{H_\Gamma}
+    \varphi(t)\ud t\right)\int p\ud\nu_a=0.
+  \]
+  Density and continuity give $q\perp K$. The same calculation for the point
+  feature instead gives
+  \[
+    \langle v,q\rangle_{\mathcal G}
+    =\varphi(t_0)\|g\|^2\int_{(0,L]}p\ud\nu_a=\|g\|^2>0.
+  \]
+  Thus $(I-P)v\ne0$. Independence of $J$ and $W$ yields
+  \[
+    \operatorname{Var}(\mathcal I(v)\mid\sigma(W))
+    =\|(I-P)v\|^2\ge\frac{|\langle v,q\rangle|^2}{\|q\|^2}>0.
+  \]
+  This proves No-go~\ref{P:nogo-32}.
+\end{proof}
+
+\input{notes/figures/nogo-feature-range}
+
+The conclusion concerns positive finite cutoffs and $t_0>0$ in this fixed
+extension. It neither treats time zero nor proves that a nonlinear canonical
+limit retains an auxiliary component. Raw-test convergence can remove such
+components in a limit. The fixed-extension source construction remains valid;
+a claim that a particular nonlinear limit is measurable with respect to $W$
+alone would need its own convergence argument.
+
+===== END candidate/topology.tex =====
+
+===== BEGIN previous/topology.tex =====
+\section{Topology, localization and limits of variational arguments}
+\label{S:nogo-topology}
+
+A useful approximation must be small in the topology in which the next
+argument uses it. The obstructions below distinguish a local operator from a
+Hilbert--Schmidt operator, a fixed spatial cutoff from a growing one, and
+pointwise convergence from convergence of variational suprema. Throughout,
+$a=\alpha_0\in(0,1)$ and $\Lambda=(1-\Delta)^{1/2}$, except that the positive
+number $L$ denotes the temporal feature cutoff in No-go~\ref{P:nogo-32}.
+
+\subsection{The first driver cannot always be Hilbert--Schmidt}
+\label{S:nogo-21}
+
+The one-dimensional operator construction suggests trying the same
+Hilbert--Schmidt space in higher dimensions. A compact spatial observation
+removes infinite volume, but it does not remove the following high-frequency
+obstruction. The relevant compatibility is with the given noise, through its
+bilinear first-driver tests.
+
+\setcounter{nogo}{20}
+\begin{nogo}[A same-noise Hilbert--Schmidt obstruction]
+\label{P:nogo-21}
+Suppose that $d\in\{2,3\}$, $s\in\R$, and $0<T\le1$. Put
+$E_s=H^s(\R^d)\times H^{s-1}(\R^d)$ and let $S(t)$ be the massless wave
+phase group. For every nonzero covariance satisfying Hypothesis~\ref{H:homog},
+there are a nonnegative compact smooth physical coefficient mask $\zeta$ and
+a compact smooth observation cutoff $\chi$, equal to one on a sufficiently
+large ball, for which the localized Gaussian first-driver form has no
+compatible realization in $L^2(\Omega;\operatorname{HS}(E_s,E_s))$.
+Here compatibility means equality with the given $W$ for each fixed smooth
+phase pair, as specified in the proof.
+\end{nogo}
+
+\begin{proof}
+First consider a deterministic coefficient $h(u,x)=k(u)H(x)$, where
+$H\in C_c^\infty(\R^d)$ is nonzero, even and nonnegative, and
+$k\in W^{1,\infty}[0,T]$ satisfies $k\ge k_0>0$. Write
+$B(b)(v,w)=(0,bv)$ and
+\[
+ A_h=\int_0^T S(-u)B(h(u))S(u)\ud u,\qquad
+ S(u,\xi)=\begin{pmatrix}
+ \cos(u|\xi|)&\sin(u|\xi|)/|\xi|\\
+ -|\xi|\sin(u|\xi|)&\cos(u|\xi|)
+ \end{pmatrix}.
+\]
+The sine quotient has its continuous value at zero. The integral is a strong
+operator integral on $E_s$: $S(u)$ is strongly continuous and uniformly
+bounded on compact time intervals, and multiplication by $H$ is bounded on
+$H^s$. For the latter assertion, the weighted Fourier kernel is bounded in
+absolute value by a constant times
+$\langle\xi-\eta\rangle^{|s|}|\widehat H(\xi-\eta)|$, an integrable
+convolution kernel. This proves boundedness for every fixed real $s$.
+
+Normalize the Fourier coordinates by
+$\operatorname{diag}(\langle\xi\rangle^s,\langle\xi\rangle^{s-1})$.
+Using the unitary Fourier transform, the lower-left block of $A_h$ then has
+kernel
+\[
+ K_s(\xi,\eta)=(2\pi)^{-d/2}
+ \langle\xi\rangle^{s-1}\langle\eta\rangle^{-s}
+ \widehat H(\xi-\eta)
+ \int_0^T k(u)\cos(u|\xi|)\cos(u|\eta|)\ud u.
+\]
+This formula follows from both phase coordinates: before applying the weights,
+the full product, with $r=|\xi|$, $\rho=|\eta|$, is
+\[
+ \widehat H(\xi-\eta)
+ \begin{pmatrix}
+ -\dfrac{\sin(ru)}r\cos(\rho u)&
+ -\dfrac{\sin(ru)}r\dfrac{\sin(\rho u)}\rho\\
+ \cos(ru)\cos(\rho u)&\cos(ru)\dfrac{\sin(\rho u)}\rho
+ \end{pmatrix}.
+\]
+All Fourier and time exchanges are justified on Schwartz pairs by the rapid
+decay of $\widehat H$ and then by density.
+
+Let $J_0=\int_0^T k>0$ and
+$B_0=\|k\|_\infty+T\|k'\|_\infty$. Choose $\epsilon>0$ so that
+$\epsilon\le1$, $\epsilon T\le1$ and
+$\widehat H(z)\ge\widehat H(0)/2>0$ when $|z|\le\epsilon$.
+If $|\xi-\eta|\le\epsilon$, then
+\[
+ \int_0^T k(u)\cos((r-\rho)u)\ud u\ge J_0/2,
+ \qquad
+ \left|\int_0^T k(u)\cos((r+\rho)u)\ud u\right|
+ \le B_0/(r+\rho).
+\]
+The second bound is integration by parts in the absolutely continuous
+function $k$. Product-to-sum therefore bounds the time integral in $K_s$
+from below by $J_0/8$ when
+$r\ge R_0:=\max(1,2\epsilon,4B_0/J_0)$.
+On the same region,
+\[
+ \langle\xi\rangle^{s-1}\langle\eta\rangle^{-s}
+ =\langle\xi\rangle^{-1}
+ (\langle\xi\rangle/\langle\eta\rangle)^s
+ \ge 2^{-|s|}/(\sqrt2 r).
+\]
+Consequently, $|K_s(\xi,\eta)|\ge c_s/|\xi|$ there, for $c_s>0$.
+If $P_N$ cuts off Fourier frequencies to $B_N$, its truncated kernel is
+square integrable and Parseval followed by Tonelli gives
+\[
+ \|P_NK_sP_N\|_{\operatorname{HS}}^2
+ \ge c_s^2|B_\epsilon||\mathbb S^{d-1}|
+ \int_{R_0}^{N-\epsilon}r^{d-3}\ud r\longrightarrow\infty.
+\]
+Indeed Parseval in the second kernel variable identifies its square integral
+with the sum of squared images of an orthonormal basis. If $A_h$ were
+Hilbert--Schmidt, every block compression would have bounded
+Hilbert--Schmidt norm. The displayed divergence proves otherwise. Real
+Hilbert--Schmidt operators and their complexifications have the same norm,
+so Fourier complexification has not changed the conclusion.
+
+Suppose that $\operatorname{supp}H\subset B_A$, and let $\chi=1$ on
+$B_{A+T+1}$. With $D_\chi$ denoting multiplication of both phase coordinates,
+finite propagation gives
+\[
+ D_\chi A_h=A_h=A_hD_\chi.
+\]
+For completeness, the local wave energy on a shrinking ball has boundary
+flux $v_t\partial_n v-(v_t^2+|\nabla v|^2)/2\le0$. Zero initial data
+therefore remain zero in the interior cone; time reversal gives the same
+support assertion for $S(-u)$. Apply this first to smooth data and then use
+Sobolev continuity and distributional testing to pass to $E_s$. The
+coefficient acts only in $B_A$, and the resulting output lies in
+$B_{A+T}$. Thus the failure persists after this compact observation.
+
+We next produce $h$ as an actual covariance mean. Choose $L_0\ge1$ with
+$0<\Gamma(B_{L_0})<\infty$, and an even nonnegative $q\in C_c^\infty$
+equal to at least one on $B_{2L_0+1}$. Set $U=\Gamma*q$. Local finiteness
+of $\Gamma$ permits differentiation on every compact set, so $U$ is smooth,
+even and nonnegative, with $U(0)>0$. Moreover,
+\[
+ Q=\int q(x)U(x)\ud x
+ \ge |B_{L_0+1}|\Gamma(B_{L_0})>0.
+\]
+Choose an even nonnegative compact smooth $\zeta$, equal to one near zero,
+and put $H=\zeta U$. Choose $f\in C_c^\infty(0,1)$ nonnegative and
+nonzero, and set
+\[
+ Z=W(f\otimes q),\qquad
+ k(u)=\int_0^1|u-v|^{-a}f(v)\ud v.
+\]
+For $u\in[0,1]$, $k(u)\ge\int f>0$. Moving the derivative to the smooth
+zero extension of $f$ shows $k\in C^1[0,1]$, since $|\cdot|^{-a}$ is
+locally integrable. Also $\E Z^2=Q\int_0^1 f(u)k(u)\ud u\in(0,\infty)$.
+The mask is applied after the covariance convolution: $H=\zeta(\Gamma*q)$.
+
+It remains to specify the compatible first-driver form with the correct
+Sobolev adjoint. For real Schwartz phases $z,w$ put
+\[
+ v_u=[S(u)z]_1,\qquad
+ G_w(u)=-\frac{\sin(u|D|)}{|D|}(\chi\Lambda^{2s}w_1)
+       +\cos(u|D|)(\chi\Lambda^{2s-2}w_2),
+\]
+and define
+$F_{z,w}(u,x)=\mathbf1_{(0,T)}(u)\zeta(x)v_u(x)G_w(u,x)$.
+This test lies in the raw noise completion. In fact, on a fixed compact
+spatial support $K$, its covariance norm is bounded by a constant times
+$\|u\mapsto\|F(u)\|_\infty\|_{L^2(0,T)}$, by local Radon mass
+$\Gamma(K-K)$ and the time Schur bound for $|u-v|^{-a}$. Smooth interior
+time approximation gives membership. Define
+$\ell_\chi(z,w)=W(F_{z,w})$ on the given noise space.
+Direct transposition, with the Sobolev weights retained, gives
+\[
+ G_w(u)=\Lambda^{2s-2}
+       \big((D_\chi S(-u))^{*_{E_s}}w\big)_2.
+\]
+In particular, multiplication by $\chi$ has not been treated as self-adjoint
+in $E_s$. Absolute Fubini in the covariance pairing now gives
+\[
+ \E[Z\ell_\chi(z,w)]
+ =\int_0^T\!\int k(u)H(x)v_u(x)G_w(u,x)\ud x\ud u
+ =\langle D_\chi A_hz,w\rangle_{E_s}
+ =\langle A_hz,w\rangle_{E_s}.
+\]
+All spatial factors in the raw tests have compact support and the temporal
+singularity is integrable, which supplies the absolute Fubini bound.
+
+If $X\in L^2(\Omega;\operatorname{HS}(E_s,E_s))$ satisfied
+$\langle Xz,w\rangle_{E_s}=\ell_\chi(z,w)$ almost surely for every fixed
+Schwartz pair, then Cauchy--Schwarz would make
+$Y=\E[ZX]$ a Hilbert--Schmidt Bochner integral. Continuous matrix evaluation
+would give $\langle Yz,w\rangle=\langle A_hz,w\rangle$ for all such pairs.
+Density implies $Y=A_h$, a contradiction. This proves No-go~\ref{P:nogo-21}.
+\end{proof}
+
+This result concerns the same-index phase spaces $E_s$ and a compatible
+$L^2$ Hilbert--Schmidt realization. It does not concern every cutoff: the zero
+cutoff, for example, has no such obstruction. It is not a nonexistence result
+for the Stratonovich solution or its moments. A route using loss of regularity
+between input and output, operator norms, or a different Schatten class must
+supply its own estimates; changing the fixed index $s$ alone cannot reopen
+this particular route.
+
+\subsection{A physical mask may not act on the noise quotient}
+\label{S:nogo-22}
+
+A smooth physical mask is harmless on ordinary test functions. It need not
+preserve the zero classes of a covariance seminorm. The following is the
+obstruction already proved in Proposition~\ref{P:masked-quotient-obstruction};
+we include its witness to explain why the auxiliary completion is needed.
+
+\setcounter{nogo}{21}
+\begin{nogo}[A mask that separates noise-null representatives]
+\label{P:nogo-22}
+For $d=2$, $\alpha=1$, $0<a<1$ and
+$\Gamma=\delta_0(\ud x_1)\ud x_2$, there exist real compact smooth $F$ and
+a nonnegative smooth square mask $\zeta$ for which
+$\E W(F)^2=0$ but $\E W(\zeta F)^2>0$.
+Thus multiplication by this mask does not descend to the original noise
+quotient, and no finite uniform covariance-norm multiplier bound holds.
+\end{nogo}
+\begin{proof}
+Choose a nonnegative nonconstant compact smooth plateau function $\psi$ and
+put $\chi=\psi^2$. The spatial covariance seminorm is
+\[
+ V(g)=\int_\R\left(\int_\R g(x_1,x_2)\ud x_2\right)^2\ud x_1.
+\]
+This also shows positive definiteness of the nonnegative even tempered
+measure $\Gamma$; its scaling is $\Gamma(cA)=c\Gamma(A)$, as required
+for $d=2$, $\alpha=1$. Put
+$g(x)=\chi(x_1)\chi''(x_2)$ and
+$\zeta(x)=\chi(x_1)\chi(x_2)=(\psi(x_1)\psi(x_2))^2$.
+Then $\int\chi''=0$, whereas integration by parts gives
+\[
+ \int\zeta(x)g(x)\ud x_2=-\chi(x_1)^2\int(\chi')^2.
+\]
+Consequently, $V(g)=0$ and
+$V(\zeta g)=\int\chi^4\,\big(\int(\chi')^2\big)^2>0$.
+Tensor with a nonzero nonnegative $\tau\in C_c^\infty(0,T)$. Its temporal
+variance is finite and strictly positive, so $F=\tau\otimes g$ has the
+asserted full-noise variances. This proves No-go~\ref{P:nogo-22}.
+\end{proof}
+
+This covariance is not two-dimensional spatial white noise. One can still
+mask individual tests before taking an auxiliary completion. To reopen a
+multiplier argument on the original quotient, one must first prove that the
+chosen mask preserves its null space and then prove the required norm bound.
+
+\subsection{Frequency decay does not give whole-space compactness}
+\label{S:nogo-24}
+
+The compact-cutoff estimates use spatial confinement as well as frequency
+smoothing. Removing the former loses compactness even for a deterministic
+Bessel multiplier; see Proposition~\ref{P:cutoff-boundary-tests}.
+
+\setcounter{nogo}{23}
+\begin{nogo}[Translations defeat whole-space compactness]
+\label{P:nogo-24}
+For every $d\ge1$ and $\gamma>0$, the operator $\Lambda^{-\gamma}$ on
+$L^2(\R^d)$ is not compact.
+\end{nogo}
+\begin{proof}
+Take a nonzero Schwartz function $f$ with Gaussian Fourier transform and put
+$g=\Lambda^{-\gamma}f$. Then $g$ is nonzero and Schwartz. For translations
+$T_hg(x)=g(x-h)$, Plancherel gives
+\[
+ \langle T_hg,g\rangle
+ =\int e^{-i\xi\cdot h}|\widehat g(\xi)|^2\ud\xi\longrightarrow0
+ \quad (|h|\longrightarrow\infty).
+\]
+The limit follows, for example, by integration by parts in the Fourier
+transform of the Schwartz function $|\widehat g|^2$.
+Choose a sufficiently large spacing $b$ and $h_n=nb e_1$ so that distinct
+images $T_{h_n}g$ have squared distance at least $\|g\|_2^2$.
+The inputs $T_{h_n}f$ have constant norm and
+$\Lambda^{-\gamma}T_{h_n}f=T_{h_n}g$. Their images have no Cauchy
+subsequence. This proves No-go~\ref{P:nogo-24}.
+\end{proof}
+
+Compact spatial cutoffs and the conditional Schatten estimates in the main
+text survive. No necessity at a Schatten endpoint is asserted here. A
+whole-space successor needs a tightness condition that prevents translation
+of mass, or an explicitly different topology.
+
+\subsection{Fixed projections do not control growing spatial masks}
+\label{S:nogo-25}
+
+At each fixed radius the Cameron mean map can be compact. Its finite-rank
+approximations need not be uniform in that radius. The following witness uses
+actual unit controls for one-dimensional spatial white noise. The fixed-radius
+map and its compact approximation are those of
+Proposition~\ref{P:cameron-full-mean}.
+
+\setcounter{nogo}{24}
+\begin{nogo}[Escape from every fixed smooth projection]
+\label{P:nogo-25}
+Let $\Gamma=\delta_0$ in $d=1$, and let $H_I$ be the closed raw-noise
+space generated by tests supported in $I\times\R$, $I=(0,1)$. Let $P_J$
+be any fixed finite-rank orthogonal projection in $H_I$ whose range is
+spanned by smooth compact tests supported in $I\times\R$. For the physical masked mean multiplier $T_R$ on
+$F=(H^{1/2}\times H^{-1/2})\oplus\R^2$, with the last coordinates
+representing constant displacement and velocity, one has, for every finite
+$r\ge1$,
+\[
+ \sup_R\|T_R(I-P_J)\|_{H_I\to L^r((0,1);\mathcal K(F))}\ge c_a>0,
+\]
+where $c_a$ can be chosen independently of $J$. Here the smooth masks $m_R$
+equal one on $[-R,R]$. For a smooth control $\Psi$ with covariance mean
+$h_\Psi$, the operator sends $(v,w,c,d)$ to
+$(0,m_Rh_\Psi(s)(v+c),0,0)$.
+\end{nogo}
+\begin{proof}
+Use the temporal equilibrium density $f_a$ of
+Lemma~\ref{L:temporal-equilibrium}, so that
+$\int_0^1|s-t|^{-a}f_a(t)\ud t=1$ and
+$\|f_a\|_{H_a}^2=M_a>0$.
+Choose nonnegative $q\in C_c^\infty(\R)$ with $\|q\|_2=1$, and put
+$q_n(x)=q(x-x_n)$, where $x_n\to\infty$. The controls
+\[
+ \Psi_n=\frac{f_a\otimes q_n}{\sqrt{M_a}}
+\]
+have unit raw norm and time-independent covariance mean
+$q_n/\sqrt{M_a}$. Membership follows by $L^2$ approximation of $f_a$ and
+the Schur bound for the temporal kernel.
+The finitely many tests spanning $P_J$ have common compact spatial support.
+For all sufficiently large $n$, spatial whiteness gives
+$P_J\Psi_n=0$ exactly. Choose $R_n$ to contain $\operatorname{supp}q_n$
+in the plateau of $m_{R_n}$.
+
+The constant-displacement input $e=(0,0,1,0)$ has norm one. The phase dual
+\[
+ w_n=(0,\Lambda q_n/\|q\|_{H^{1/2}},0,0)
+\]
+also has norm one. Indeed its velocity norm is $H^{-1/2}$, and translation
+preserves $\|q\|_{H^{1/2}}$. The mean multiplier sends $e$ to the velocity
+$q_n/\sqrt{M_a}$, so the $H^{-1/2}$ inner product gives, for every $s$,
+\[
+ \langle T_{R_n}\Psi_n(s)e,w_n\rangle_F
+ =\frac{\|q_n\|_2^2}{\sqrt{M_a}\|q\|_{H^{1/2}}}
+ =:c_a>0.
+\]
+Integrating over the unit time interval proves the bound for all $r$ stated.
+This proves No-go~\ref{P:nogo-25}.
+\end{proof}
+
+\input{notes/figures/nogo-projection-escape}
+
+For a fixed $R$, sufficiently distant translates miss its mask, so there is
+no contradiction with fixed-radius compactness. A replacement must use
+projections depending on the radius with quantitative control, or a different
+localization argument. The witness does not exclude every such strategy.
+
+\subsection{Two distinct limitations of block costs}
+\label{S:nogo-26}
+
+A nonlinear block argument must handle both small perturbations and rare large
+blocks. A power larger than one misses the first effect; an averaged budget
+alone does not bound the largest block.
+
+\setcounter{nogo}{25}
+\begin{nogo}[A pure Young power and a maximum from an average]
+\label{P:nogo-26}
+With $\theta=2/3$ and $\nu=1/\theta=3/2$, no finite constant $C>0$ gives
+$\log U(1)\le C\|D\|_{C^\theta}^{\nu}$ for all scalar paths starting at zero
+and solving $\ud U=U\ud D$, $U(0)=1$, when
+$\|D\|_{C^\theta}=\|D\|_\infty+[D]_{C^\theta}$.
+Moreover, a bound on $N^{-1}\sum_{j=1}^N b_j^r$, $r>0$, does not give a
+bound independent of $N$ on $\max_j b_j$.
+\end{nogo}
+\begin{proof}
+For $D(t)=xt$, $x>0$, the solution is $U(t)=e^{xt}$ and
+$\|D\|_{C^{2/3}}=2x$. Taking $x=1/(16C^2)$ gives
+$C(2x)^{3/2}=x/\sqrt2<x=\log U(1)$.
+For the second assertion, take $b_1=N^{1/r}$ and $b_j=0$ for $j>1$.
+Their averaged $r$th power is one while their maximum tends to infinity.
+This proves No-go~\ref{P:nogo-26}.
+\end{proof}
+
+A linear-plus-power cost is not refuted. For any $\tau>0$ and $\nu>1$,
+$x\le\tau+\tau^{1-\nu}x^\nu$ gives an explicit alternative with slack.
+Also, if $0<\nu<r$ and $N^{-1}\sum b_j^r\le M$, then H\"older gives
+$N^{-1}\sum b_j^\nu\le M^{\nu/r}$, and
+\[
+ \frac1N\sum_{b_j>K}b_j^\nu\le K^{\nu-r}M.
+\]
+Thus an averaged tail argument survives. Reopening the block route requires
+an actual evolution estimate with its linear term or slack, followed by an
+averaged bad-block estimate. These scalar tests alone do not construct a
+Cameron potential or prove a wave evolution bound.
+
+\subsection{Concentrating temporal controls restrict integrability}
+\label{S:nogo-27}
+
+Compactness of a temporal mean map has a natural upper endpoint. A
+concentrating control detects both excessive integrability and failure of
+compactness at that endpoint.
+
+\setcounter{nogo}{26}
+\begin{nogo}[The temporal concentration threshold]
+\label{P:nogo-27}
+Let $I=(0,1)$, $0<a<1$, and let $H_a$ be the completion of smooth tests for
+$\|f\|_{H_a}^2=\int_I\int_I f(t)f(s)|t-s|^{-a}\ud t\ud s$.
+On smooth tests set $C_af(t)=\int_I|t-s|^{-a}f(s)\ud s$.
+The map $C_a$ is not bounded from $H_a$ to $L^r(I)$ when $r>2/a$,
+including $r=\infty$, and it is not compact into $L^{2/a}(I)$.
+\end{nogo}
+\begin{proof}
+Choose $t_0\in I$ and a nonzero nonnegative
+$\phi\in C_c^\infty(-1,1)$. Put
+\[
+ v_\phi=\int\!\int\phi(u)\phi(v)|u-v|^{-a}\ud u\ud v\in(0,\infty),
+ \qquad
+ f_\epsilon(t)=\frac{\epsilon^{a/2-1}}{\sqrt{v_\phi}}
+ \phi((t-t_0)/\epsilon).
+\]
+For sufficiently small $\epsilon$, its support lies in $I$. Changing both
+variables shows $\|f_\epsilon\|_{H_a}=1$, and
+\[
+ (C_af_\epsilon)(t_0+\epsilon y)
+ =\frac{\epsilon^{-a/2}}{\sqrt{v_\phi}}
+ \int|y-v|^{-a}\phi(v)\ud v.
+\]
+For $|y|\le1$, the last integral is at least $2^{-a}\int\phi>0$.
+Thus for finite $r$,
+$\|C_af_\epsilon\|_{L^r}\ge c_r\epsilon^{1/r-a/2}$, and the analogous
+supremum lower bound is $c\epsilon^{-a/2}$. This proves unboundedness above
+$2/a$.
+For every fixed $t\ne t_0$, on the other hand,
+$C_af_\epsilon(t)=O_t(\epsilon^{a/2})\to0$.
+At $r=2/a$ the norm lower bound stays strictly positive. If a subsequence
+converged strongly in this $L^r$ space, a further subsequence would converge
+almost everywhere to its strong limit. The limit would have to be zero,
+contradicting the norm lower bound. This proves No-go~\ref{P:nogo-27}.
+\end{proof}
+
+The endpoint argument refutes compactness, not boundedness. Tensoring the
+controls with one fixed nonzero spatial profile transfers this input
+obstruction to a corresponding separated mean map. The corrected compact
+range $2<r<2/a$ is consistent with the witness. A larger range requires
+additional temporal regularity or restrictions that exclude concentration.
+
+\subsection{Pointwise convergence does not pass through a supremum}
+\label{S:nogo-30}
+
+The Gaussian action cost must remain in a variational comparison. Even with
+that cost, bounded near-maximizers can escape in infinitely many directions.
+
+\setcounter{nogo}{29}
+\begin{nogo}[Escaping variational scores]
+\label{P:nogo-30}
+There are continuous functions $J_n$ on the Hilbert space $\ell^2$ tending
+to zero at every point such that
+\[
+ \sup_h\{J_n(h)-\tfrac12\|h\|^2\}\ge\tfrac12,
+ \qquad
+ \sup_h\{0-\tfrac12\|h\|^2\}=0.
+\]
+The witnesses for the first inequality have norm one.
+\end{nogo}
+\begin{proof}
+Let $(e_n)$ be the standard orthonormal sequence and set
+$J_n(h)=(1-2\|h-e_n\|)_+$.
+For each fixed $h\in\ell^2$, its $n$th coordinate tends to zero, and hence
+$\|h-e_n\|^2=\|h\|^2+1-2\langle h,e_n\rangle\to\|h\|^2+1\ge1$.
+Thus $J_n(h)=0$ eventually. But $J_n(e_n)=1$, so its score at $e_n$ is
+$1/2$. The limiting score is nonpositive and equals zero at $h=0$.
+This proves No-go~\ref{P:nogo-30}.
+\end{proof}
+
+A bounded action budget alone supplies no strong compactness in $\ell^2$.
+To pass to an exact constant one needs a variational upper-limit argument,
+for example compactness of near-maximizers in a topology with the needed
+upper semicontinuity. Pointwise convergence, or compactness proved only with
+an additional fixed spatial cutoff, does not supply that argument by itself.
+
+\subsection{A cutoff point feature can lie outside the raw-noise image}
+\label{S:nogo-32}
+
+Lemma~\ref{L:source-retaining-isometry} embeds the original noise into one
+fixed larger Gaussian space. Its closed image retains all original raw tests.
+It does not contain every positive-cutoff point feature. The following
+explicit orthogonal vector explains the role of the auxiliary noise.
+
+\setcounter{nogo}{31}
+\begin{nogo}[Positive-cutoff point sources need auxiliary noise]
+\label{P:nogo-32}
+Suppose that $\Gamma\ne0$ satisfies Hypothesis~\ref{H:homog}, $t_0>0$,
+$L\in(0,\infty)$ and $\epsilon>0$. In the feature space
+\[
+ \mathcal G=L^2((0,\infty)_\lambda\times\R_r,
+       \nu_a(\ud\lambda)\ud r;H_\Gamma),\qquad
+ \nu_a(\ud\lambda)=\lambda^{a-1}\ud\lambda/\Gamma_E(a),
+\]
+let $K=\Phi H_W$ be the closed image of
+Lemma~\ref{L:source-retaining-isometry}. Set $g=p_\epsilon(x-\cdot)$ and
+\[
+ v(\lambda,r)=\mathbf1_{\{\lambda\le L\}}\sqrt{2\lambda}
+ e^{-\lambda(t_0-r)}\mathbf1_{\{r\le t_0\}}g.
+\]
+Then $v\notin K$. On the fixed extension
+$\mathcal I(v)=W(\Phi^{-1}Pv)+J((I-P)v)$, where $P$ projects onto $K$
+and $J$ is independent of $W$, one has
+$\operatorname{Var}(\mathcal I(v)\mid\sigma(W))>0$.
+\end{nogo}
+\begin{proof}
+The heat profile has finite strictly positive norm:
+\[
+ \|g\|_{H_\Gamma}^2=\int p_{2\epsilon}(y)\Gamma(\ud y)>0.
+\]
+Finiteness follows from temperedness and Gaussian decay, and positivity from
+nonzero nonnegative $\Gamma$. Integrating in $r$ also gives
+$\|v\|_{\mathcal G}^2=\|g\|^2\nu_a((0,L])<\infty$.
+Choose nonnegative nonzero smooth bumps $u_A,u_B$ supported in compact
+intervals $A\subset(0,L)$ and $B\subset(L,\infty)$, respectively, and put
+\[
+ p(\lambda)=\frac{u_A(\lambda)}{\int u_A\ud\nu_a}
+            -\frac{u_B(\lambda)}{\int u_B\ud\nu_a}.
+\]
+Then $\int p\ud\nu_a=0$ and $\int_{(0,L]}p\ud\nu_a=1$.
+Choose $\varphi\in C_c^\infty(0,\infty)$ with $\varphi(t_0)=1$, and define
+\[
+ q(\lambda,r)=\frac{p(\lambda)}{\sqrt{2\lambda}}
+              (\varphi'(r)+\lambda\varphi(r))g.
+\]
+Its support in $\lambda$ stays away from zero and infinity. In particular,
+\[
+ \|q\|_{\mathcal G}^2=\frac{\|g\|^2}{2}
+ \left(\|\varphi'\|_2^2\int\frac{p^2}{\lambda}\ud\nu_a
+       +\|\varphi\|_2^2\int\lambda p^2\ud\nu_a\right)<\infty,
+\]
+where the cross term vanishes because $\int\varphi'\varphi=0$.
+For a smooth compact raw tensor $F$ the isometry is
+\[
+ \Phi F(\lambda,r)=\sqrt{2\lambda}
+      \int_{t>0,\ t\ge r}e^{-\lambda(t-r)}F_t\ud t.
+\]
+The identity
+\[
+ \int_{-\infty}^t e^{-\lambda(t-r)}
+       (\varphi'(r)+\lambda\varphi(r))\ud r=\varphi(t)
+\]
+follows by differentiating $e^{-\lambda(t-r)}\varphi(r)$ in $r$.
+All integrals paired with $q$ are absolutely integrable because its two
+supports are compact and its $\lambda$ support stays away from zero.
+Consequently,
+\[
+ \langle\Phi F,q\rangle_{\mathcal G}
+ =\left(\int_{t>0}\langle F_t,g\rangle_{H_\Gamma}
+                      \varphi(t)\ud t\right)\int p\ud\nu_a=0.
+\]
+Density and continuity give $q\perp K$. The same calculation for the point
+feature instead gives
+\[
+ \langle v,q\rangle_{\mathcal G}
+ =\varphi(t_0)\|g\|^2\int_{(0,L]}p\ud\nu_a=\|g\|^2>0.
+\]
+Thus $(I-P)v\ne0$. Independence of $J$ and $W$ yields
+\[
+ \operatorname{Var}(\mathcal I(v)\mid\sigma(W))
+ =\|(I-P)v\|^2\ge\frac{|\langle v,q\rangle|^2}{\|q\|^2}>0.
+\]
+This proves No-go~\ref{P:nogo-32}.
+\end{proof}
+
+\input{notes/figures/nogo-feature-range}
+
+The conclusion concerns positive finite cutoffs and $t_0>0$ in this fixed
+extension. It neither treats time zero nor proves that a nonlinear canonical
+limit retains an auxiliary component. Raw-test convergence can remove such
+components in a limit. The fixed-extension source construction remains valid;
+a claim that a particular nonlinear limit is measurable with respect to $W$
+alone would need its own convergence argument.
+
+===== END previous/topology.tex =====
+
+===== BEGIN candidate/nogo-projection-escape.tex =====
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \draw[ham/arrow] (-.5,0)--(10.5,0) node[right] {$x$};
+    \fill[hamblue!12] (0,.1) rectangle (2.4,1.1);
+    \node[ham/note] at (1.2,1.95)
+    {Fixed projection $P_J$\\common spatial support};
+    \draw[hamblue,thick] (0,.1) rectangle (2.4,1.1);
+    \draw[hamteal,thick] (6.5,.1) .. controls (7.1,.1) and (7.1,1.1) .. (7.5,1.1)
+    .. controls (7.9,1.1) and (7.9,.1) .. (8.5,.1);
+    \node[ham/note] at (7.5,1.65) {Translated bump $q_n$};
+    \draw[ham/arrow] (4,.6)--(5.9,.6);
+    \node[ham/note] at (4.95,1.15) {$x_n\to\infty$};
+    \draw[hamgold,thick] (-.3,-.3)--(-.3,-.6)--(9.5,-.6)--(9.5,-.3);
+    \node[ham/note] at (4.6,-1.1) {Growing plateau $m_{R_n}=1$ retains $q_n$};
+    \node[ham/note] at (4.6,-1.8)
+    {$P_J\Psi_n=0$,\qquad $\|T_{R_n}\Psi_n\|\ge c_a>0$};
+  \end{tikzpicture}
+  \caption[Escape from a fixed spatial projection]{Schematic for
+    No-go~\ref{P:nogo-25}. For one-dimensional spatial white noise, a translated
+    unit control is exactly orthogonal to the finitely many compact tests of
+    $P_J$, while a growing mask retains its nonzero phase functional.
+    At any fixed radius sufficiently distant bumps miss the mask.}
+  \label{Fig:nogo-projection-escape}
+\end{figure}
+
+===== END candidate/nogo-projection-escape.tex =====
+
+===== BEGIN previous/nogo-projection-escape.tex =====
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \draw[ham/arrow] (-.5,0)--(10.5,0) node[right] {$x$};
+    \fill[hamblue!12] (0,.1) rectangle (2.4,1.1);
+    \node[ham/note] at (1.2,1.95)
+      {Fixed projection $P_J$\\common spatial support};
+    \draw[hamblue,thick] (0,.1) rectangle (2.4,1.1);
+    \draw[hamteal,thick] (6.5,.1) .. controls (7.1,.1) and (7.1,1.1) .. (7.5,1.1)
+      .. controls (7.9,1.1) and (7.9,.1) .. (8.5,.1);
+    \node[ham/note] at (7.5,1.65) {Translated bump $q_n$};
+    \draw[ham/arrow] (4,.6)--(5.9,.6);
+    \node[ham/note] at (4.95,1.15) {$x_n\to\infty$};
+    \draw[hamgold,thick] (-.3,-.3)--(-.3,-.6)--(9.5,-.6)--(9.5,-.3);
+    \node[ham/note] at (4.6,-1.1) {Growing plateau $m_{R_n}=1$ retains $q_n$};
+    \node[ham/note] at (4.6,-1.8)
+      {$P_J\Psi_n=0$,\qquad $\|T_{R_n}\Psi_n\|\ge c_a>0$};
+  \end{tikzpicture}
+  \caption[Escape from a fixed spatial projection]{Schematic for
+    No-go~\ref{P:nogo-25}. For one-dimensional spatial white noise, a translated
+    unit control is exactly orthogonal to the finitely many compact tests of
+    $P_J$, while a growing mask retains its nonzero phase functional.
+    At any fixed radius sufficiently distant bumps miss the mask.}
+  \label{Fig:nogo-projection-escape}
+\end{figure}
+
+===== END previous/nogo-projection-escape.tex =====
+
+===== BEGIN candidate/nogo-feature-range.tex =====
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \filldraw[fill=hamblue!7,draw=hamblue] (-.5,-.5)--(6,-.5)--(7.5,1.4)--(1,1.4)--cycle;
+    \coordinate (o) at (1,.15);
+    \coordinate (p) at (4.5,.65);
+    \coordinate (v) at (4.5,3.05);
+    \draw[ham/arrow] (o)--(p) node[midway,below] {$Pv$};
+    \draw[ham/arrow] (o)--(v) node[midway,above left] {$v$};
+    \draw[ham/arrow,draw=hamteal] (p)--(v)
+    node[ham/note,midway,right,align=left]
+    {$(I-P)v\ne0$\\supplied by $J$};
+    \draw[hamblue] (4.22,.61)--(4.22,.88)--(4.5,.92);
+    \node[ham/note] at (2.5,-.95) {Closed raw-noise image $K=\Phi H_W$};
+    \node[ham/note] at (1.45,2.55) {Feature space $\mathcal G$};
+  \end{tikzpicture}
+  \caption[The point feature and the closed noise image]{Hilbert-space
+    schematic for No-go~\ref{P:nogo-32}, drawn in three coordinates only.
+    The explicit vector $q\perp K$ has $\langle v,q\rangle>0$, so a
+    positive finite cutoff point feature at $t_0>0$ has a nonzero component
+    supplied by $J$. This says nothing by itself about measurability of a
+    nonlinear limit with respect to $W$.}
+  \label{Fig:nogo-feature-range}
+\end{figure}
+
+===== END candidate/nogo-feature-range.tex =====
+
+===== BEGIN previous/nogo-feature-range.tex =====
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \filldraw[fill=hamblue!7,draw=hamblue] (-.5,-.5)--(6,-.5)--(7.5,1.4)--(1,1.4)--cycle;
+    \coordinate (o) at (1,.15);
+    \coordinate (p) at (4.5,.65);
+    \coordinate (v) at (4.5,3.05);
+    \draw[ham/arrow] (o)--(p) node[midway,below] {$Pv$};
+    \draw[ham/arrow] (o)--(v) node[midway,above left] {$v$};
+    \draw[ham/arrow,draw=hamteal] (p)--(v)
+      node[ham/note,midway,right,align=left]
+      {$(I-P)v\ne0$\\supplied by $J$};
+    \draw[hamblue] (4.22,.61)--(4.22,.88)--(4.5,.92);
+    \node[ham/note] at (2.5,-.95) {Closed raw-noise image $K=\Phi H_W$};
+    \node[ham/note] at (1.45,2.55) {Feature space $\mathcal G$};
+  \end{tikzpicture}
+  \caption[The point feature and the closed noise image]{Hilbert-space
+    schematic for No-go~\ref{P:nogo-32}, drawn in three coordinates only.
+    The explicit vector $q\perp K$ has $\langle v,q\rangle>0$, so a
+    positive finite cutoff point feature at $t_0>0$ has a nonzero component
+    supplied by $J$. This says nothing by itself about measurability of a
+    nonlinear limit with respect to $W$.}
+  \label{Fig:nogo-feature-range}
+\end{figure}
+
+===== END previous/nogo-feature-range.tex =====
+
+===== BEGIN sources/integrated_cameron_mean.tex =====
+\section{The compact mean and Cameron map on time blocks}
+\label{S:actual-cameron-mean}
+
+Retain the nonzero original covariance in Hypothesis~\ref{H:homog}, its
+amplitude, $a = \alpha_0$, and the real phases $E = H^{1/2}\times H^{-1/2}$ and
+$F = E\oplus\R^2$. Write $\Lambda = (1-\Delta)^{1/2}$. The form $B_\Gamma$ and
+constant $R_{\mathrm{sp}}$ are those of
+Section~\ref{S:spatial-occupation-foundation}. Let $H_{\mathrm{sp}}$ be the real
+covariance-null completion of $C_c^\infty(\R^d)$ with inner product $B_\Gamma$,
+and $H_t$ the analogous completion of $C_c^\infty(I)$, $I = (0,1)$, with time
+kernel $|s-t|^{-a}$. Let $H = H_I$ be the completion of smooth tests supported
+inside $I\times\R^d$. It embeds isometrically as a closed subspace of the given
+$H_W$. We retain the given $W$ restricted to it.
+
+Fix $R > 0$ and real even $\eta_R \in C_c^\infty(\R^d)$ with $0 \le \eta_R \le
+1$, equal to one on the radius-$R$ ball and supported in the closed radius-$2R$
+ball. The physical mask is $m_R = \eta_R^2$. Every operator path below takes its
+mask argument equal to $m_R$: at this fixed radius the base profile $\zeta(y) =
+m_R(Ry)$ meets the earlier hypotheses. The root $\eta_R$ factors state tests; it
+does not multiply an original noise class. All compactness conclusions here fix
+$R$.
+
+\subsection{Fractional products and the compact spatial map}
+
+\begin{lemma}[Fractional covariance products]
+  \label{L:cameron-fractional-products}
+  For $\alpha/4 < s < 1/2$, products of real $H^s$ functions define elements of
+  $H_{\mathrm{sp}}$, with
+  \begin{equation}\label{E:cameron-fractional-product}
+    \|fg\|_{H_{\mathrm{sp}}}
+    \le C_s^2\sqrt{R_{\mathrm{sp}}}\|f\|_{H^s}\|g\|_{H^s}.
+  \end{equation}
+  Their Hilbert pairings equal their physical integrals. In particular,
+  \begin{equation}\label{E:cameron-fractional-absolute}
+    \int|f_1(x)f_2(x)f_3(x-y)f_4(x-y)|\ud x\,\Gamma(\ud y)
+    \le C_s^4R_{\mathrm{sp}}\prod_{j=1}^4\|f_j\|_{H^s}.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  First approximate real $H^1$ factors by compact smooth ones. The absolute
+  four-linear bound~\eqref{E:spatial-four-linear} and covariance PSD make their
+  products Cauchy in $H_{\mathrm{sp}}$, with norm at most
+  $\sqrt{R_{\mathrm{sp}}}N(f)N(g)$. Expanding product differences proves
+  independence of approximation; physical continuity identifies all pairings.
+  PSD for products also follows from $fg = ((f+g)^2-(f-g)^2)/4$.
+
+  Use real radial Fourier bands $D_0 = 1_{\{|\xi|<1\}}$ and $D_j =
+  1_{\{2^{j-1}\le|\xi|<2^j\}}$, $j \ge 1$. For $f \in H^s$ put $f_j = D_jf$.
+  Each block is real and in $H^1$. Frequency support, Parseval and weighted
+  Cauchy--Schwarz give
+  \begin{equation}\label{E:cameron-dyadic-product}
+    N(f_j)\le2^{j\alpha/4}\|f_j\|_2,\qquad
+    \sum_{j\ge0}N(f_j)\le C_s\|f\|_{H^s}.
+  \end{equation}
+  Indeed, $\sum_j2^{-2j(s-\alpha/4)} < \infty$, while $\sum_j2^{2js}\|f_j\|_2^2
+  \le 2^{2s}\|f\|_{H^s}^2$. The low block has factor one. No $L^p$ multiplier
+  result is used. Also $\sum_j\|f_j\|_2 < \infty$ since $s > 0$. Thus,
+  $\sum_j|f_j|$ lies in $L^2$ by Minkowski and monotone convergence, and the
+  series is absolutely convergent a.e. with sum $f$.
+
+  Apply the absolute $H^1$ four-linear estimate to each band quadruple. The sum
+  of its absolute integrals is at most
+  $R_{\mathrm{sp}}\prod_{\ell=1}^4\sum_jN((f_\ell)_j) < \infty$. Tonelli and the
+  null-set transfer at both spatial positions in
+  Lemma~\ref{L:spatial-physical-pair} identify the physical product series,
+  proving~\eqref{E:cameron-fractional-absolute}. The double series
+  $\sum_{j,k}f_jg_k$ is also absolutely convergent in $H_{\mathrm{sp}}$ by the
+  $H^1$ product bound. Its partial sums are products of $H^1$ functions. The
+  absolute quadruple calculation identifies their limiting physical pairings and
+  gives~\eqref{E:cameron-fractional-product}. Compact smooth functions are dense
+  in $H^s$: approximate in Fourier space by real Schwartz functions, then cut
+  each off compactly in $H^1$ and hence in $H^s$. This also proves uniqueness of
+  the bilinear extension. This proves Lemma~\ref{L:cameron-fractional-products}.
+\end{proof}
+
+\begin{proposition}[Compact spatial mean map]\label{P:cameron-spatial-map}
+  The smooth-test map
+  \[
+    T_{\mathrm{sp}}q=iB_F(m_R(\Gamma*q))
+  \]
+  extends to a compact linear map $T_{\mathrm{sp}}:H_{\mathrm{sp}} \to
+  \mathcal{K}(F)$, where $\mathcal{K}(F)$ has the operator norm. For $z =
+  (z_1,z_2,c_1,c_2)$ and $w = (w_1,w_2,d_1,d_2)$ set $w' = \Lambda^{-1}w_2$. Its
+  exact row identity is
+  \begin{equation}\label{E:cameron-spatial-row}
+    \langle T_{\mathrm{sp}}qz,w\rangle_F
+    =\langle q,k(z,w)\rangle_{H_{\mathrm{sp}}},
+    \qquad
+    k(z,w)=(\eta_Rz_1+c_1\eta_R)(\eta_Rw').
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  Fix $s$ with $\alpha/4 < s < 1/2$; this interval is nonempty because the
+  original threshold implies $\alpha < 2$. For smooth compact $q$, $\Gamma*q$ is
+  locally smooth by differentiation under the compactly restricted Radon
+  integral. The masked potential is smooth compact. The velocity pairing in $E$
+  has weight $\Lambda^{-1}$; hence physical Fubini
+  gives~\eqref{E:cameron-spatial-row} on smooth states. Evenness of $\Gamma$
+  changes $B_\Gamma(k,q)$ to $B_\Gamma(q,k)$. For general states the localized
+  products are $L^1$, and $\Gamma*q$ is bounded on their compact support. $L^2$
+  state approximation passes the physical integral to the limit, while
+  Lemma~\ref{L:cameron-fractional-products} passes the $H_{\mathrm{sp}}$
+  pairing. This proves the row.
+
+  Multiplication by $\eta_R$ maps bounded $H^{1/2}$ sets to precompact $H^s$
+  sets by Proposition~\ref{P:cutoff-singular-values}, with gain $1/2-s > 0$.
+  This applies to $z_1$ and $w'$. The $c_1\eta_R$ family is finite dimensional
+  and compact. The closures of both factor families for unit $z,w$ are compact,
+  so their products have compact closure $\mathcal{L}$ in $H_{\mathrm{sp}}$ by
+  the fractional product bound. The row identity gives $\|T_{\mathrm{sp}}q\| \le
+  \sup_{k\in\mathcal{L}}\|k\|\|q\|$. Null covariance classes therefore map to
+  zero.
+
+  For smooth $q$, multiplication by its potential is compact $H^{1/2} \to
+  H^{-1/2}$ by the same whole-space cutoff result with gain one. Its extra $c_1$
+  column is finite rank, and the instantaneous $c_2$ column is zero. Thus, the
+  smooth images lie in $\mathcal{K}(F)$, and so does the bounded extension by
+  operator-norm closure.
+
+  Choose a complete smooth-test orthonormal basis of $H_{\mathrm{sp}}$ by
+  countable compact-support approximation and Gram--Schmidt, omitting null
+  classes. Let $Q_n$ project onto its first $n$ terms. The row identity yields
+  \[
+    \|T_{\mathrm{sp}}(I-Q_n)\|
+    \le\sup_{k\in\mathcal{L}}\|(I-Q_n)k\|_{H_{\mathrm{sp}}}
+    \longrightarrow0.
+  \]
+  Strong projection convergence is uniform on compact $\mathcal{L}$ by a
+  finite-net argument and $\|I-Q_n\| \le 1$. Each $T_{\mathrm{sp}}Q_n$ has
+  finite-dimensional range; their operator-norm limit is a compact map. This is
+  compactness of the map, in addition to compact values. This proves
+  Proposition~\ref{P:cameron-spatial-map}.
+\end{proof}
+
+\subsection{The supported tensor and temporal mean}
+
+\begin{lemma}[Supported original tensor space]\label{L:cameron-supported-tensor}
+  Canonically $H = H_t\otimes H_{\mathrm{sp}}$ as real Hilbert spaces. It is
+  separable and admits a complete orthonormal basis $e_j$ with smooth test
+  representatives supported inside $I\times\R^d$. Projection $P_J$ onto its
+  first $J$ elements is also an orthogonal projection on $H_W$ by the same
+  finite formula.
+\end{lemma}
+
+\begin{proof}
+  On separated smooth tests, absolute Fubini makes the original inner product
+  exactly the tensor product after both null quotients. Finite sums are dense:
+  approximate a smooth compact spacetime test uniformly by smooth time
+  partitions times its spatial slices, on one common compact support inside
+  $I\times\R^d$. A uniform error $\epsilon$ on spatial compact $A$ has squared
+  original covariance norm at most
+  \[
+    \epsilon^2|A|\Gamma(A-A)
+    \int_I\int_I|s-t|^{-a}\ud s\ud t<\infty.
+  \]
+  This also gives countable smooth-test density on exhausting compact sets, both
+  here and in $H_{\mathrm{sp}}$. Gram--Schmidt skipping zeros preserves smooth
+  compact support. The isometric embedding into $H_W$ has closed image by
+  completeness; its finite orthonormal projection formula remains orthogonal
+  there. It is not multiplication by a time indicator and gives no independence
+  of disjoint time intervals. This proves
+  Lemma~\ref{L:cameron-supported-tensor}.
+\end{proof}
+
+\begin{proposition}[The compact temporal mean, without trace class]
+  \label{P:cameron-temporal-map}
+  Let $K$ on $L^2(I)$ have kernel $|s-t|^{-a}$. It is compact, self-adjoint,
+  strictly positive and injective. The map $\iota:f\mapsto K^{1/2}f$ extends
+  isometrically from $H_t$ onto $L^2(I)$, and the temporal mean
+  \begin{equation}\label{E:cameron-temporal-map}
+    C_t=K^{1/2}\iota:H_t\longrightarrow L^r(I)
+  \end{equation}
+  is bounded and compact for every $2 < r < 2/a$. The displayed formula first
+  has its $L^2(I)$ meaning; the same completed map is then shown to take values
+  compactly in $L^r(I)$. The operator $K$ is not trace class and $C_t:H_t \to
+  L^2(I)$ is not Hilbert--Schmidt.
+\end{proposition}
+
+\begin{proof}
+  Schur bounds $K$ by its finite row and column integrals. The Gamma
+  representation of $|s-t|^{-a}$ and zero extension of $f \in L^2(I)$ give
+  strict positivity directly: the kernel $e^{-\lambda|v|}$ has quadratic form
+  \[
+    \int_\R\frac{2\lambda}{\lambda^2+\xi^2}
+    |\widehat{f}(\xi)|^2\ud\xi>0
+    \quad(f\ne0,\ \lambda>0)
+  \]
+  in the unitary Fourier convention. Absolute Fubini is justified by Schur
+  applied to $|f(s)f(t)|$. Integrating with positive weight
+  $\lambda^{a-1}/\Gamma_E(a)$ proves positivity and injectivity. Symmetry gives
+  self-adjointness. The deterministic truncated kernel $K_\epsilon =
+  K1_{\{|s-t|\ge\epsilon\}}$ is square integrable, so finite separated-kernel
+  approximations make it compact. The Schur norm of $K-K_\epsilon$ is at most
+  $2\epsilon^{1-a}/(1-a)$, proving compactness of $K$. These truncations are not
+  used as Gaussian covariances. Its positive square root is compact by the
+  compact spectral theorem.
+
+  On tests $\|K^{1/2}f\|_2 = \|f\|_{H_t}$. Smooth-test $L^2$ density and $\ker K
+  = 0$ imply that its range is dense, so the isometry extends onto $L^2(I)$. On
+  tests $C_tf = Kf$, and~\eqref{E:cameron-temporal-map} first gives compactness
+  into $L^2$.
+
+  Extend $K_a(v) = |v|^{-a}1_{\{|v|\le1\}}$ to the line. It lies in $L^{r/2}$.
+  Scalar Young convolution gives
+  \[
+    \|g\|_{H_t}^2\le\|K_a\|_{r/2}\|g\|_{r'}^2,\qquad
+    r'=r/(r-1).
+  \]
+  To verify the needed Young inequality, take $u = r/2$, $v = r'$, so $u,v < r$
+  and $1/u+1/v = 1+1/r$. Split the absolute convolution integrand into
+  $(|f|^u|h|^v)^{1/r}$, $|f|^{1-u/r}$ and $|h|^{1-v/r}$. H\"older with exponents
+  $r$, $(1/u-1/r)^{-1}$ and $(1/v-1/r)^{-1}$, followed by integration and
+  Tonelli, gives $\|f*h\|_r \le \|f\|_u\|h\|_v$. Covariance Cauchy--Schwarz and
+  $L^r$ duality now imply $\|Kf\|_r \le C_{a,r}\|f\|_{H_t}$ on tests. Their $Kf$
+  are bounded by the integrable-kernel row, making duality legitimate before
+  completion. Density extends the estimate, with $L^2$ value equal
+  to~\eqref{E:cameron-temporal-map}. Choose $r < r_2 < 2/a$. Compactness into
+  $L^2$ and boundedness into $L^{r_2}$ give compactness into $L^r$ by $\|u\|_r
+  \le \|u\|_2^\tau\|u\|_{r_2}^{1-\tau}$ with $1/r = \tau/2+(1-\tau)/r_2$.
+
+  Finally, the orthonormal cell indicators $N^{1/2}1_{(j/N,(j+1)/N)}$, $0 \le j
+  < N$, have $K$ quadratic forms summing to $2N^a/((1-a)(2-a)) \to \infty$.
+  Thus, positive $K$ has infinite trace, and $K^{1/2}\iota$ is not
+  Hilbert--Schmidt into $L^2$. No instantaneous $L^2$-valued Gaussian has been
+  introduced. This proves Proposition~\ref{P:cameron-temporal-map}.
+\end{proof}
+
+No-go~\ref{P:nogo-27} explains the upper endpoint of this compactness
+range: temporal concentration makes the mean map unbounded above
+$2/\alpha_0$ and noncompact at $2/\alpha_0$. The endpoint witness does not
+refute boundedness there.
+
+
+\begin{proposition}[The compact time-space mean]\label{P:cameron-full-mean}
+  Fix one $2 < r < 2/a$ throughout this proposition. For finite tensors with
+  orthonormal spatial labels define
+  \[
+    \mathcal{U}\left(\sum_j f_j\otimes q_j\right)(s)
+    =\sum_j(Kf_j)(s)q_j.
+  \]
+  It extends to a bounded map $H \to L^r(I;H_{\mathrm{sp}})$ with dimension-free
+  bound. The map
+  \begin{equation}\label{E:cameron-full-mean}
+    T\Phi(s)=T_{\mathrm{sp}}(\mathcal{U}\Phi(s))
+    :H\longrightarrow L^r(I;\mathcal{K}(F))
+  \end{equation}
+  is compact. For smooth supported $\Phi$, it is the multiplier
+  $iB_F(m_Rh_\Phi(s))$, where $h_\Phi = |\cdot|^{-a}*(\Gamma*\Phi)$. For the
+  supported projections of Lemma~\ref{L:cameron-supported-tensor},
+  \begin{equation}\label{E:cameron-compact-tail}
+    \epsilon_J:=\|T(I-P_J)\|_{H\to L^r(\mathcal{K}(F))}
+    \longrightarrow0.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  For a finite-dimensional spatial field $g$, positivity of the time kernel and
+  scalar Young give
+  \[
+    \|g\|_{H_t\otimes H_{\mathrm{sp}}}^2
+    \le\int_I\int_I|s-t|^{-a}\|g_s\|\|g_t\|\ud s\ud t
+    \le C_{a,r}^2\|g\|_{L^{r'}(H_{\mathrm{sp}})}^2.
+  \]
+  Hilbert Cauchy--Schwarz and finite-dimensional $L^r$ duality give
+  $\|\mathcal{U}\Phi\|_{L^r(H_{\mathrm{sp}})} \le C_{a,r}\|\Phi\|_H$. The
+  duality can be checked by the pointwise direction
+  $\|\mathcal{U}\Phi\|^{r-2}\mathcal{U}\Phi$ and smooth coefficient
+  approximation in $L^{r'}$, controlled by the displayed estimate. No dimension
+  factor occurs. Tensor density and completeness extend this to a strongly
+  measurable Bochner field. This time-only map still contains spatial vectors in
+  the covariance space. Spatial covariance is applied once, by
+  $T_{\mathrm{sp}}$.
+
+  The physical mean identity on separated tests follows
+  from~\eqref{E:cameron-spatial-row}. For a smooth spacetime test use the
+  separated compact-support approximations in the tensor proof. Their uniform
+  errors give uniformly small masked mean errors, using the finite time row and
+  locally finite spatial covariance on the relevant compact differences. The
+  multiplier bound by $L^\infty+L^2$ then gives uniform operator convergence,
+  identifying the $L^r$ mean in~\eqref{E:cameron-full-mean}. General $H$
+  controls denote completed operator fields, without a pointwise-potential
+  assertion.
+
+  Let $Q_n$ be the spatial projections in the compact-map proof. The maps
+  $T_n\Phi = T_{\mathrm{sp}}Q_n\mathcal{U}\Phi$ approximate $T$ in operator norm
+  by the dimension-free bound and $\|T_{\mathrm{sp}}(I-Q_n)\| \to 0$. For fixed
+  $n$, each spatial coordinate extraction $H \to H_t$ has norm at most one and
+  its image under $C_t$ is precompact in $L^r$. Finite combination with the
+  compact operators $T_{\mathrm{sp}}q_j$ makes $T_n$ compact. Hence, $T$ is
+  compact. Scalar time compactness alone tensored with an infinite identity
+  would not prove this.
+
+  To prove~\eqref{E:cameron-compact-tail}, if it failed choose unit $v_J$ on a
+  subsequence with $\|T(I-P_J)v_J\|$ bounded below. The vectors $(I-P_J)v_J$
+  tend weakly to zero, since their pairings with fixed $h$ are bounded by
+  $\|(I-P_J)h\|$. Compactness gives a norm-convergent image subsequence with
+  weak limit zero, a contradiction. This proves
+  Proposition~\ref{P:cameron-full-mean}.
+\end{proof}
+
+The radius remains fixed in this approximation. No-go~\ref{P:nogo-25}
+shows that translated white-noise controls prevent these fixed smooth
+projections from giving tails uniform over growing radii.
+
+
+\subsection{The noise residual and its Cameron operator}
+
+Choose integer $B \ge 1$ and $0 < \delta < \min(1,1/B)$. Put $N =
+\lfloor1/(\delta B)\rfloor$, $s_m = m\delta B$, $\ell_m = B$ for $m < N$ and
+$\ell_N = \delta^{-1}-NB \in [0,B)$. The intervals $I_m =
+[s_m,s_m+\delta\ell_m]$ partition $[0,1]$ up to endpoints. With $Q_J = I-P_J$ on
+$H_W$ and the explicit pullback~\eqref{E:raw-block-pullback}, define
+\[
+  Y_{m,J}(f)=W(Q_JT_{\delta,m}f),\qquad
+  g_\delta=\delta^{(1-a)/2}.
+\]
+Fix parameters
+\begin{equation}\label{E:cameron-block-parameters}
+  \frac12<\theta<\min\left(1-\frac a2,\frac{3-a-\alpha}{2}\right),
+  \qquad \frac1{1-\theta}<r<\frac2a,\qquad
+  \frac1\theta\le p<2<r .
+\end{equation}
+These intervals are nonempty.
+
+\begin{lemma}[Supported residual paths]\label{L:cameron-actual-residual}
+  Gaussian transfer with mask $m_R$ and its $F$ extension constructs the
+  centered Gaussian paths
+  \[
+    X_{m,J}(u)=g_\delta A_{m_R}(Y_{m,J})(\min(u,\ell_m)),
+    \qquad 0\le u\le B.
+  \]
+  Their finite tuple lies in the separable space $\mathscr{B}_0^{N+1}$, where
+  $\mathscr{B}_0 = h_0^\theta([0,B];\mathcal{K}(F))$. Every continuous linear
+  statistic $\ell(X)$ is $W(k_\ell)$ for some $k_\ell \in H_I$. An empty last
+  interval gives zero.
+\end{lemma}
+
+\begin{proof}
+  Isometry of the pullback and orthogonality of $Q_J$ give
+  $\operatorname{Var}Y_{m,J}(f) \le \|f\|_{H_W}^2$.
+  Proposition~\ref{P:source-gaussian-transfer} therefore applies. Its finite
+  sums retain both deterministic localizations, and their limits retain the true
+  $F$ extension and constant columns. Choose $\theta < \beta < \beta_2$ below
+  the upper threshold in~\eqref{E:cameron-block-parameters}; read the
+  operator-path construction at exponent $\beta$ with auxiliary $\beta_2$.
+  Constant stopping preserves compact values and $C^\beta$ bounds, hence gives
+  paths in the little $C^\theta$ closure by polygonal approximation. Its
+  separability is Lemma~\ref{L:raw-block-inputs}.
+
+  As in Lemma~\ref{L:raw-block-inputs}, every observed row's slow pullback
+  belongs to $H_I$: its time support is in $[0,1]$, and approximating its
+  indicator inside $I$ converges in original covariance norm by dominated
+  convergence against the integrable time kernel and locally finite $\Gamma$ on
+  the common compact support. This includes endpoints. Schwartz $E$ states and
+  both true constant columns supply the identities, then boundedness extends
+  them to $F$. Let $P_H$ be the orthogonal projection onto closed $H_I$.
+  Transfer for the noise $f\mapsto W(P_HQ_JT_{\delta,m}f)$ leaves each observed
+  row unchanged, since its residual slow test already lies in $H_I$. Countable
+  states and rational times identify the same operator paths. This
+  projected-transfer series has coefficient tests in $H_I$. Applying $\ell$
+  gives an $L^2$ limit in the closed isonormal image $W(H_I)$, proving the
+  assertion. Original global-basis tests were not assumed individually
+  supported. No time-support independence or Hilbert-valued noise is used. This
+  proves Lemma~\ref{L:cameron-actual-residual}.
+\end{proof}
+
+\begin{proposition}[Cameron covariance and averaged bound]
+  \label{P:cameron-actual-embedding}
+  The covariance map $L_{\delta,J}\Phi = \E[XW(\Phi)]$ is
+  \begin{equation}\label{E:cameron-actual-covariance}
+    (L_{\delta,J}\Phi)_m(u)=\sqrt\delta
+    \int_0^{\min(u,\ell_m)}
+    S_F(-v)T(Q_J\Phi)(s_m+\delta v)S_F(v)\ud v ,
+    \qquad \Phi\in H.
+  \end{equation}
+  This is a compact-operator Bochner integral. Define the exact norm and
+  constants
+  \begin{equation}\label{E:cameron-averaged-norm}
+    \|x\|_{\delta,p}
+    =\left(\delta\sum_{m=0}^N\|x_m\|_{C^\theta}^p\right)^{1/p},
+    \quad G_B=\sup_{|v|\le B}\|S_F(v)\|,
+    \quad C_B=G_B^2[B^{1-1/r}+B^{1-1/r-\theta}].
+  \end{equation}
+  Then the Gaussian Cameron embedding satisfies
+  \begin{equation}\label{E:cameron-averaged-bound}
+    \|L_{\delta,J}\Phi\|_{\delta,p}
+    \le\sqrt\delta\,C_B(2/B)^{1/p-1/r}
+    \epsilon_J\|\Phi\|_H .
+  \end{equation}
+  Convergence $\epsilon_J \to 0$ fixes $R$ and is independent of $\delta$.
+\end{proposition}
+
+\begin{proof}
+  For smooth supported $\Phi$, $Q_J\Phi$ is another such test. The explicit
+  pullback covariance~\eqref{E:raw-block-mean-jacobian} gives
+  \[
+    \E[Y_{m,J}(f)W(\Phi)]
+    =\delta^{a/2}\int f(v,x)
+    h_{Q_J\Phi}(s_m+\delta v,x)\ud x\ud v .
+  \]
+  Absolute Fubini also holds for signed compact tests. Multiplying by $g_\delta$
+  gives $\sqrt\delta$. Explicit rows and~\eqref{E:cameron-spatial-row} give
+  \eqref{E:cameron-actual-covariance}. The constant-velocity input acquires
+  displacement $v$ under $S_F(v)$; the constant displacement remains one. Both
+  columns are included.
+
+  Both $S_F$ and its adjoint are strongly continuous on Hilbert $F$. In
+  Bessel-unitary $E$ coordinates the Fourier matrix is
+  \[
+    \begin{pmatrix}
+      \cos(v|\xi|)&\langle\xi\rangle\sin(v|\xi|)/|\xi|\\
+      -|\xi|\sin(v|\xi|)/\langle\xi\rangle&\cos(v|\xi|)
+    \end{pmatrix}.
+  \]
+  Its continuous zero quotient and common bound $C(1+B)$ apply also to its
+  adjoint; dominated convergence proves the assertion. The constant block is
+  finite dimensional. For compact $A$, conjugation $S_F(-v)AS_F(v)$ is norm
+  continuous: strong convergence is uniform on compact images, and the right
+  factor follows by adjoints. Joint norm continuity in $(v,A)$ and uniform
+  bounds give Bochner measurability for the conjugated strongly measurable
+  compact-operator field. No norm continuity of the free group itself is
+  assumed.
+
+  Write $M = TQ_J\Phi$. H\"older and the primitive increment estimate give
+  \begin{equation}\label{E:cameron-local-primitive-bound}
+    \|(L_{\delta,J}\Phi)_m\|_{C^\theta}
+    \le\sqrt\delta\,C_B\delta^{-1/r}\|M\|_{L^r(I_m)}.
+  \end{equation}
+  Its primitive exponent is $1-1/r > \theta$. Simple compact-operator integrand
+  approximation in $L^r$ puts the primitive in $\mathscr{B}_0$; constant
+  stopping does not increase the H\"older norm. Affine pullback preserves null
+  sets. For fixed $\delta,J$ the covariance map is bounded by Bochner
+  Cauchy--Schwarz and finite tuple $L^2$ moments. The integral is bounded by the
+  displayed estimate, so equality on smooth controls extends by density to all
+  $H$. Dense states and rational times make it a full operator-path identity.
+
+  Let $H_{\mathrm{seen}}$ be the closed span of the $k_\ell$ from
+  Lemma~\ref{L:cameron-actual-residual}. Then $\ell(L_{\delta,J}\Phi) = \langle
+  k_\ell,\Phi\rangle_H$ and $\ker L_{\delta,J} = H_{\mathrm{seen}}^\perp$. The
+  first Wiener chaos definition of the Cameron space is therefore
+  $L_{\delta,J}(H_{\mathrm{seen}})$ with the minimum $H$ preimage norm. Extra
+  directions are removed by orthogonal projection, without an inverse
+  covariance. A bound in the original $H$ norm is thus the embedding bound.
+
+  Put $t_m = \|M\|_{L^r(I_m)} \ge 0$ and $n = N+1 \ge 2$. Finite power mean at
+  exponent $r/p > 1$, applied to $t_m^p$, gives
+  \[
+    \left(\sum_m t_m^p\right)^{1/p}
+    \le n^{1/p-1/r}\left(\sum_m t_m^r\right)^{1/r}.
+  \]
+  The true partition gives $\sum_m t_m^r = \|M\|_{L^r(I)}^r$, including an empty
+  last interval, and $n \le 2/(\delta B)$. Hence, the exact $\delta$-weighted
+  norm gives
+  \[
+    \|L_{\delta,J}\Phi\|_{\delta,p}
+    \le\sqrt\delta\,C_B(\delta n)^{1/p-1/r}\|M\|_{L^r}
+    \le\sqrt\delta\,C_B(2/B)^{1/p-1/r}
+    \epsilon_J\|\Phi\|_H.
+  \]
+  The $B$ factor remains explicit; covariance and mask occur once. This proves
+  Proposition~\ref{P:cameron-actual-embedding}.
+\end{proof}
+
+These conclusions fix the radius and make no uniform-radius projection tail
+assertion. No concentration estimate or original moment upper bound follows from
+this section alone.
+
+===== END sources/integrated_cameron_mean.tex =====
+
+===== BEGIN sources/integrated_temporal_equilibrium.tex =====
+\section{The temporal equilibrium density}
+\label{S:temporal-equilibrium}
+
+The density in Lemma~\ref{L:temporal-equilibrium} is the classical interval
+Riesz equilibrium density. Its probability-normalized form on $[-1,1]$ is
+recalled by Calef and Hardin~\cite{calef.hardin:source2008:riesz}*{p.~1}.
+We prove the potential identity with the normalization used here.
+
+We use Euler's function $\Gamma_E(x) = \int_0^\infty u^{x-1}e^{-u}\ud u$, $x >
+0$, and $\operatorname{Beta}(x,y) = \int_0^1t^{x-1}(1-t)^{y-1}\ud t$, $x,y > 0$.
+Both integrals are positive and finite.
+
+\begin{lemma}[Gamma and Beta identities]\label{L:equilibrium-gamma-beta}
+  For positive arguments,
+  \begin{align*}
+    \Gamma_E(x+1)&=x\Gamma_E(x),\\
+    \operatorname{Beta}(x,y)
+    &=\frac{\Gamma_E(x)\Gamma_E(y)}{\Gamma_E(x+y)},\\
+    \Gamma_E(2x)
+    &=\frac{2^{2x-1}\Gamma_E(x)\Gamma_E(x+1/2)}{\sqrt\pi}.
+  \end{align*}
+\end{lemma}
+
+\begin{proof}
+  Integration by parts gives the recurrence, with vanishing boundary terms. In
+  the positive product Gamma integral, use $(u,v) = (Rt,R(1-t))$, with Jacobian
+  $R$; Tonelli gives the Beta--Gamma identity. For the last identity, symmetry,
+  then $t = (1+v)/2$ and $v^2 = w$, give $\operatorname{Beta}(x,x) =
+  2^{1-2x}\operatorname{Beta}(1/2,x)$. Also $\Gamma_E(1/2) = \int_\R e^{-z^2}\ud
+  z = \sqrt\pi$: the substitution $u = z^2$ gives the first equality, and
+  squaring the positive Gaussian integral and using polar coordinates gives
+  $2\pi\int_0^\infty re^{-r^2}\ud r = \pi$. Substituting these into the
+  Beta--Gamma identity proves duplication. This proves
+  Lemma~\ref{L:equilibrium-gamma-beta}.
+\end{proof}
+
+\begin{lemma}[Exact potential and mass]\label{L:temporal-equilibrium}
+  For $0 < a < 1$ put $r = (1-a)/2$ and, for $0 < t < 1$,
+  \begin{equation}\label{E:temporal-equilibrium-density}
+    f_a(t)=\frac{[t(1-t)]^{-r}}{\Gamma_E(r)\Gamma_E(1-r)}.
+  \end{equation}
+  This positive function belongs to $L^1(0,1)\cap L^2(0,1)$, and
+  \begin{align}
+    \int_0^1|s-t|^{-a}f_a(t)\ud t&=1
+    &&\text{for every }s\in[0,1],\label{E:temporal-equilibrium-potential}\\
+    M_a:=\int_0^1f_a(t)\ud t
+    &=\frac{\Gamma_E((1+a)/2)}
+    {\Gamma_E(1+a)\Gamma_E((1-a)/2)}>0.
+    \label{E:temporal-equilibrium-mass}
+  \end{align}
+\end{lemma}
+
+\begin{proof}
+  The positive binomial series $(1-z)^{-p} = \sum_{n\ge0}(p)_nz^n/n!$, $p > 0$,
+  $0 \le z < 1$, follows directly as follows. Its coefficient ratio gives
+  uniform convergence on compact subintervals, including for its derivative.
+  Termwise differentiation gives $(1-z)y' = py$, $y(0) = 1$; hence $(1-z)^py$ is
+  constant one. Here $(p)_0 = 1$, $(p)_n = p(p+1)\cdots(p+n-1)$. All terms used
+  below are nonnegative, so Tonelli applies.
+
+  For $0 < s < 1$ split the integral of $|s-t|^{2r-1}[t(1-t)]^{-r}$ into left
+  and right parts. In the left part, $t = su$ gives
+  \begin{align*}
+    L(s)
+    &=s^r\int_0^1(1-u)^{2r-1}u^{-r}(1-su)^{-r}\ud u\\
+    &=\operatorname{Beta}(1-r,2r)s^r
+    \sum_{n\ge0}
+    \frac{(r)_n(1-r)_ns^n}{(1+r)_n n!}.
+  \end{align*}
+  The Beta ratio follows from the Gamma recurrence. Since $(r)_n/(1+r)_n =
+  r/(r+n)$, expanding the incomplete Beta integral gives
+  \[
+    L(s)=r\operatorname{Beta}(1-r,2r)B_s(r,r),\qquad
+    B_s(r,r)=\int_0^s u^{r-1}(1-u)^{r-1}\ud u.
+  \]
+  Reflection makes the right part $L(1-s)$, while symmetry gives
+  $B_s(r,r)+B_{1-s}(r,r) = \operatorname{Beta}(r,r)$. The full integral is
+  therefore $r\operatorname{Beta}(1-r,2r)\operatorname{Beta}(r,r) =
+  \Gamma_E(r)\Gamma_E(1-r)$. All integrals are finite because $-r > -1$ and
+  $2r-1 > -1$. At $s = 0$ the integral is directly $\operatorname{Beta}(r,1-r) =
+  \Gamma_E(r)\Gamma_E(1-r)$; $s = 1$ follows by reflection. This proves
+  \eqref{E:temporal-equilibrium-potential}, including the endpoints without a
+  limiting argument there.
+
+  Integrability and square integrability follow from $-r > -1$ and $-2r = a-1 >
+  -1$. Finally,
+  \[
+    M_a=
+    \frac{\operatorname{Beta}(1-r,1-r)}
+    {\Gamma_E(r)\Gamma_E(1-r)}
+    =\frac{\Gamma_E(1-r)}{\Gamma_E(2-2r)\Gamma_E(r)},
+  \]
+  which is~\eqref{E:temporal-equilibrium-mass}. Its time mass has not been
+  renormalized. This proves Lemma~\ref{L:temporal-equilibrium}.
+\end{proof}
+
+===== END sources/integrated_temporal_equilibrium.tex =====
+
+===== BEGIN sources/projection-mathematics.md =====
+## 9. White controls obstruct uniform-R fixed smooth projections; scope
+
+Here is a precise negative guard against an automatic growing-mask upgrade.
+Take the admissible d1 white Gamma=delta0,alpha1, any0<a<1. From the scalar equilibrium identity/mass in damped-lower-endpoint-bridge.md Section2,
+f_a in L2(I), K_a*f_a=1 and ||f_a||H_t²=M_a>0. Its H_t membership follows
+by smooth L2 approximation and the Schur norm bound. Let q be a nonnegative
+unit-L2 compact smooth bump and q_n(x)=q(x-x_n), centers escaping to infinity.
+The raw H unit direction Phi_n=f_a tensor q_n/sqrt(M_a) has actual mean
+q_n/sqrt(M_a), constant in time. This follows either directly from the
+scalar identity or from the L2/mean completion in Sections5-6.
+
+Fix J. The finitely many smooth compact basis tests spanning P_J have a
+common compact spatial support. Choose x_n outside that support by more
+than the radius of q. White spatial covariance gives P_J Phi_n=0 exactly,
+regardless of temporal correlation. Choose R_n large enough that m_(R_n)=1
+on supp q_n. Use F input e_disp=(0,0,1,0) in this section's four-entry
+notation, norm1, and output dual w_n=(0,Lambda q_n/||q||H1/2,0,0), norm1.
+The completed multiplier has the constant-in-time coordinate
+
+ <T_(R_n)Phi_n(s)e_disp,w_n>F=1/[sqrt(M_a)||q||H1/2]>0.       (16)
+
+Indeed the E velocity inner product has weight Lambda^-1, and q_n is unit
+L2 with translation-invariant H1/2 norm. Thus for every fixed J,
+ sup_R ||T_R(I-P_J)||H->Lr(K(F))>=1/[sqrt(M_a)||q||H1/2].
+There is NO projection-tail convergence uniform in R for this fixed family.
+This refutes ONLY that proposed extension, not fixed-R C1-C3, not all
+projection/localization strategies and not the original sharp-upper goal.
+For fixed R, sufficiently far white-noise q_n misses its mask. The negative
+guard uses a bounded phase functional, no Sobolev point trace. It is the
+exact control proposed separately in globalization-guard-v0.md.
+
+
+===== END sources/projection-mathematics.md =====
+
+===== BEGIN sources/homogeneity-hypothesis.tex =====
+\begin{hypothesis}[Homogeneous covariance]\label{H:homog}
+  Let $d \in \{1,2,3\}$ and $0 < \alpha_0 < 1$. The spatial covariance is a
+  nonnegative, even, positive-definite tempered Radon measure $\Gamma$ on
+  $\R^d$, with positive even tempered Radon spectral measure $\mu$ in the
+  convention
+  \[
+    \Gamma=\int e^{i\xi\cdot x}\mu(\ud\xi)
+    \quad\text{in the sense of tempered distributions}.
+  \]
+  The symbol $\gamma$ in~\eqref{E:cov} denotes this covariance as a function
+  when one exists, and as a distribution otherwise. For every Borel set $A$ and
+  $c > 0$, $\Gamma(cA) = c^{d-\alpha}\Gamma(A)$, and
+  \begin{equation}\label{E:threshold}
+    \alpha_0+\alpha<2,
+  \end{equation}
+  with $0 < \alpha < d$, or $\alpha = d = 1$. In particular, the last case
+  includes spatial white noise $\Gamma = \delta_0$.
+\end{hypothesis}
+===== END sources/homogeneity-hypothesis.tex =====

@@ -1,0 +1,58 @@
+{
+  "schema": "manuscript-build-environment/1",
+  "pdflatex": {
+    "argv": [
+      "pdflatex",
+      "--version"
+    ],
+    "exit_code": 0,
+    "version_output": [
+      "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)",
+      "kpathsea version 6.4.2"
+    ]
+  },
+  "latexmk": {
+    "argv": [
+      "latexmk",
+      "-v"
+    ],
+    "exit_code": 0,
+    "version_output": [
+      "Latexmk, John Collins, 9 March 2026. Version 4.88"
+    ]
+  },
+  "python": {
+    "argv": [
+      "python3",
+      "--version"
+    ],
+    "exit_code": 0,
+    "version_output": [
+      "Python 3.12.3"
+    ]
+  },
+  "formatter_sha256": "562e32793fdbd07a219d8da7a37c420777608c0e886edca7ef06f99ed0593542",
+  "environment_observed": {
+    "SOURCE_DATE_EPOCH": null,
+    "FORCE_SOURCE_DATE": null
+  },
+  "build_commands": [
+    "latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=notes notes/notes_stratonovich_ham_second_moment.tex",
+    "python3 scripts/refresh-reader-labels.py",
+    "latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=notes notes/notes_stratonovich_ham_second_moment_reader.tex"
+  ],
+  "authoring_duration_seconds": null,
+  "review_telemetry": "reviews/2026-11-12-nogo-integration/TELEMETRY.json",
+  "makeindex_version_probe": {
+    "argv": [
+      "makeindex",
+      "--version"
+    ],
+    "exit_code": 1,
+    "version_output": []
+  },
+  "makeindex": {
+    "source": "notes/notes_stratonovich_ham_second_moment.ilg",
+    "version_line": "This is makeindex, version 2.18 [TeX Live 2026] (kpathsea + Thai support)."
+  }
+}

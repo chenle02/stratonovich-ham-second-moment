@@ -1,0 +1,28 @@
+from pathlib import Path
+import json,hashlib,datetime
+b=Path(__file__).resolve().parent;root=b.parents[1]
+def rel(p):return str(p.relative_to(root))
+def read(p):return json.loads(p.read_text()) if p.exists() else None
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest() if p.exists() else None
+out=[]
+for name,relationship,ancestor in [('deepseek-attempt-01','original-full-eight',None),('deepseek-confirmation-01','fresh-bounded-substantive-repair-confirmation','deepseek-attempt-01')]:
+ d=b/name;launch=read(d/'launch.json');exit=read(d/'exit.json');bind=read(d/'native-binding.json');report=read(d/'report.json');events=[json.loads(l) for l in (d/'raw.jsonl').read_text().splitlines()] if (d/'raw.jsonl').exists() else []
+ out.append({'attempt':name,'relationship':relationship,'ancestor':ancestor,'requested_model':launch['model'],'actual_route_records':bind.get('actual_models') if bind else None,'native_session':bind.get('session') if bind else None,'source_revision':launch['source_revision'],'candidate_sha256':read(b/('packet-manifest-v2.json' if name=='deepseek-attempt-01' else 'confirmation-manifest-v3.json'))['files'][0].get('packet_sha256',read(b/'confirmation-manifest-v3.json')['files'][0].get('sha256')),'timing':{'event_step_start_timestamp_ms':next((e['timestamp'] for e in events if e.get('type')=='step_start'),None),'event_step_finish_timestamp_ms':next((e['timestamp'] for e in events if e.get('type')=='step_finish'),None),'subprocess_elapsed_seconds':exit.get('elapsed_seconds') if exit else None},'transport_exit':exit.get('exit') if exit else None,'reported_verdict':report.get('verdict') if report else None,'reported_confidence':report.get('confidence') if report else None,'native_acceptance':None,'native_acceptance_note':'Direct OpenCode route has no subscription-CLI acceptance boolean; strict report parser and author adjudication are recorded separately.','source_coverage':report.get('source_coverage') if report else None,'raw_provider_usage':[x.get('tokens') for x in bind.get('actual_models',[])] if bind else None,'evidence':{'launch':rel(d/'launch.json'),'exit':rel(d/'exit.json'),'native_binding':rel(d/'native-binding.json'),'public_report':rel(d/'report.json'),'raw_events':rel(d/'raw.jsonl')},'evidence_sha256':{p.name:sha(p) for p in [d/'launch.json',d/'exit.json',d/'native-binding.json',d/'report.json',d/'raw.jsonl']}})
+for name,relationship,ancestor in [('kimi-attempt-01','original-full-eight',None),('kimi-format-01','same-session-format-only-continuation','kimi-attempt-01'),('kimi-confirmation-01','fresh-bounded-substantive-repair-confirmation','kimi-attempt-01'),('kimi-full-v3-01','fresh-full-eight-substantively-repaired-candidate','kimi-attempt-01')]:
+ d=b/name;r=read(d/'receipt.json');row={'attempt':name,'relationship':relationship,'ancestor':ancestor,'receipt':rel(d/'receipt.json'),'receipt_sha256':sha(d/'receipt.json'),'status':'live-no-terminal-receipt' if r is None else r.get('status')}
+ if r:
+  row.update({'requested_model':r.get('model_requested'),'actual_model':r.get('model_actual'),'actual_model_alias':r.get('model_alias_actual'),'actual_effort':r.get('effort_actual'),'native_session':r.get('session_id'),'source_revision':r.get('source_revision'),'source_hashes':r.get('input_hashes'),'started_utc':r.get('started_utc'),'finished_utc':r.get('finished_utc'),'elapsed_seconds':r.get('elapsed_seconds'),'transport_exit':r.get('transport_exit_code'),'transport_ok':r.get('transport_ok'),'actual_route_verified':r.get('actual_route_verified'),'native_scientific_verdict':r.get('scientific_verdict'),'native_confidence':r.get('confidence'),'native_acceptance':r.get('accepted'),'diagnostics':r.get('diagnostics'),'raw_provider_usage_records':r.get('usage_records'),'tool_calls_observed':r.get('tool_calls_observed'),'candidate_hashes_unchanged':r.get('candidate_hashes_unchanged'),'resume_binding':r.get('resume_binding'),'format_lineage':r.get('format_lineage')})
+  p=d/'report.txt'
+  try:
+   raw=p.read_text();j=json.loads(raw[raw.index('{'):]);row['public_JSON_object_for_analysis_only']={'verdict':j.get('verdict'),'confidence':j.get('confidence'),'source_coverage':j.get('source_coverage'),'check_ids':[x.get('id') for x in j.get('checks',[])],'note':'This does not override native refusal or create a recovered receipt.'}
+  except Exception:row['public_JSON_object_for_analysis_only']=None
+  row['evidence_sha256']={p.name:sha(p) for p in [d/'events.jsonl',d/'input-manifest.json',d/'execution.json',d/'report.txt',d/'report-raw.txt',d/'receipt.json']}
+ out.append(row)
+for row in out:
+ if row['attempt'].startswith('deepseek'):
+  mp=b/('packet-manifest-v2.json' if row['attempt']=='deepseek-attempt-01' else 'confirmation-manifest-v3.json')
+  row['source_manifest']=rel(mp);row['source_manifest_sha256']=sha(mp)
+  row['source_hashes']={x['packet']:x.get('packet_sha256',x.get('sha256')) for x in read(mp)['files']}
+result={'schema':'nogo-topology-review-telemetry/1','generated_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'scope':'Eight topology no-gos, plus bounded repair confirmations; no cost estimates, token totals or missing values invented. Raw provider usage dictionaries retain their original route conventions.','attempts':out,'preprovider_refusals':[{'path':rel(b/'preflight-v1-refusal.json'),'sha256':sha(b/'preflight-v1-refusal.json')}],'reading_delivery_records':sorted(set([rel(p) for p in b.glob('*delivery-author-check.json')]+[rel(b/'kimi-read-delivery-author-check.json')]))}
+(b/'telemetry.json').write_text(json.dumps(result,indent=2)+'\n')
+print('wrote',rel(b/'telemetry.json'),'attempts',len(out))

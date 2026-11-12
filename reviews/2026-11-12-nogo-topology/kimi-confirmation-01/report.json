@@ -1,0 +1,55 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "READING-PLAN.md lines 1-12 (complete)",
+    "CHANGE-CONTRACT.md lines 1-3 (complete)",
+    "candidate/topology.tex lines 1-565 (complete)",
+    "previous/topology.tex lines 1-564 (complete)",
+    "candidate/nogo-projection-escape.tex lines 1-25 (complete)",
+    "previous/nogo-projection-escape.tex lines 1-25 (complete)",
+    "candidate/nogo-feature-range.tex lines 1-24 (complete)",
+    "previous/nogo-feature-range.tex lines 1-24 (complete)",
+    "sources/integrated_cameron_mean.tex lines 1-468 (complete)",
+    "sources/integrated_temporal_equilibrium.tex lines 1-95 (complete)",
+    "sources/homogeneity-hypothesis.tex lines 1-18 (complete)",
+    "sources/projection-mathematics.md lines 1-31 (complete)"
+  ],
+  "checks": [
+    {
+      "id": "NG25-REPAIR",
+      "claim": "The narrowed NG25 assertion \u2014 for every 2<r<2/a, sup_R ||T_R(I-P_J)||_{H_I -> L^r((0,1);K(F))} >= c_a > 0 with c_a independent of J \u2014 is well-defined (the completed mean map exists on exactly this range) and is proved by the supplied equilibrium-density witness.",
+      "verdict": "PASS",
+      "reason": "Independently verified the full statement and proof against the supplied sources. (1) Domain: Gamma=delta_0 in d=1 is admissible under H:homog (homogeneity-hypothesis.tex lines 16-17: alpha=d=1 explicitly includes spatial white noise); the threshold alpha_0+alpha<2 becomes a+1<2, i.e. a in (0,1), so 2<r<2/a is nonempty and matches the section convention a=alpha_0 in (0,1). H_I as the closed raw-noise space of tests supported in (0,1)xR matches H=H_I of integrated_cameron_mean.tex lines 11-13. (2) Well-definedness of the narrowed assertion: for each fixed R and each 2<r<2/a, Proposition P:cameron-full-mean (lines 236-256) defines T=T_R: H -> L^r(I;K(F)) as a bounded compact map (Young bound needs r/2<1/a, i.e. r<2/a; lower endpoint r>2 enters via the L^2-isometry/L^{r_2} interpolation), so the operator norm in the assertion is a finite number; the old quantifier 'every finite r>=1' ranged outside the map's proven domain, and the repair removes exactly that defect \u2014 the claim no longer rests on a test family defining a map outside its known range. (3) Equilibrium identity/mass: Lemma L:temporal-equilibrium gives Kf_a(s)=\u222b_0^1|s-t|^{-a}f_a(t)dt=1 for every s in [0,1] (endpoints included) and M_a=\u222bf_a=Gamma((1+a)/2)/(Gamma(1+a)Gamma((1-a)/2))>0; I rechecked the constant: with r=(1-a)/2 the left/right split gives total potential r\u00b7B(1-r,2r)\u00b7B(r,r)=Gamma(r)Gamma(1-r), and f_a in L^1\u2229L^2 since -r>-1 and -2r=a-1>-1. Hence ||f_a||_{H_a}^2=\u222bf_a(s)(Kf_a)(s)ds=M_a. (4) Raw norm 1: whiteness factorizes the H_I inner product, so ||Psi_n||^2=(||f_a||_{H_a}^2/M_a)||q_n||_2^2=1; membership via L^2 approximation of f_a plus the Schur bound sup_s\u222b_I|s-t|^{-a}dt<=2/(1-a), as stated. (5) Exact P_J annihilation: the finitely many smooth compact spanning tests have common compact spatial support K; for x_n large, supp q_n \u2229 K = empty, and with Gamma=delta_0 the H_I pairing with each spanning test is \u222b\u222b|s-t|^{-a}<q_n,phi(s,\u00b7)>_{L^2}=0, so P_J Psi_n=0 exactly \u2014 matches projection-mathematics.md lines 12-14. (6) Exact four-coordinate multiplier and unit dual: the map sends (v,w,c,d)->(0,m_R h_Psi(s)(v+c),0,0) (consistent with the row identity k(z,w)=(eta_R z_1+c_1 eta_R)(eta_R w') and the zero c_2 column in P:cameron-spatial-map); h_{Psi_n}(s)=(Kf_a)(s)q_n/sqrt(M_a)=q_n/sqrt(M_a) since Gamma*q_n=q_n. The completed-map value on the nonsmooth-in-time Psi_n is legitimate: smooth g_k->f_a in L^2 (hence H_a by Schur) gives g_k\u2297q_n->Psi_n in H_I, boundedness of T_{R_n} gives L^r convergence, K is L^2-bounded so Kg_k->Kf_a=1 in L^2, and the L^r and L^2 limits agree, yielding T_{R_n}Psi_n(s)=iB_F(m_{R_n}q_n/sqrt(M_a))=iB_F(q_n/sqrt(M_a)) a.e. because m_{R_n}=1 on supp q_n. With e=(0,0,1,0) (norm 1) the output velocity is q_n/sqrt(M_a); the dual w_n=(0,Lambda q_n/||q||_{H^{1/2}},0,0) has norm ||Lambda q_n||_{H^{-1/2}}/||q||_{H^{1/2}}=||q_n||_{H^{1/2}}/||q||_{H^{1/2}}=1 (translation-invariant H^{1/2} norm, |q\u0302_n|=|q\u0302|). (7) Constant: the H^{-1/2} pairing gives <q_n/sqrt(M_a), Lambda q_n/||q||_{H^{1/2}}>=||q_n||_2^2/(sqrt(M_a)||q||_{H^{1/2}})=1/(sqrt(M_a)||q||_{H^{1/2}})=c_a>0 for every s, independent of J, n and R \u2014 exactly the value in projection-mathematics.md eq. (16). Integrating the pointwise operator-norm lower bound over the unit interval yields ||T_{R_n}(I-P_J)||>=c_a for every r in the stated range, and sup_R includes the chosen R_n. (8) Fixed-R vs growing-R scope: the closing remark (far translates miss a fixed mask) is consistent with the fixed-radius tail convergence epsilon_J=||T(I-P_J)||->0 of P:cameron-full-mean eq. (E:cameron-compact-tail) and with the Cameron section's own cross-reference to No-go 25; no contradiction is claimed or implied."
+    },
+    {
+      "id": "NG26-INTERVAL",
+      "claim": "The added scalar time interval [0,1] in NG26 matches the exact norm/ODE calculation and changes no conclusion.",
+      "verdict": "PASS",
+      "reason": "On [0,1] with D(t)=xt, x>0: ||D||_infty = x (attained at t=1) and [D]_{C^{2/3}} = sup_{s\u2260t} x|t-s|/|t-s|^{2/3} = x\u00b7sup|t-s|^{1/3} = x (since max |t-s|=1 on [0,1]), so ||D||_{C^{2/3}}=2x exactly as the proof uses; on any other interval this sum would not equal 2x, so the explicit [0,1] is the precise domain of the displayed computation. The ODE dU=U dD, U(0)=1, has U(t)=e^{xt}, so log U(1)=x, matching the terminal time 1 named in the statement. With x=1/(16C^2): C(2x)^{3/2}=2^{3/2}C\u00b7(16C^2)^{-3/2}=2^{3/2}C/(64C^3)=sqrt(8)/(64C^2)=1/(16\u00b7sqrt2\u00b7C^2)=x/sqrt2<x=log U(1), so no finite C works. The second assertion is unchanged and correct: b_1=N^{1/r}, b_j=0 (j>1) gives N^{-1}sum b_j^r = 1 while max_j b_j = N^{1/r} -> infinity. The interval addition is a clarification that aligns statement and proof; no constant, exponent, or conclusion changed."
+    },
+    {
+      "id": "UNCHANGED-CORRESPONDENCE",
+      "claim": "Outside the two repaired clauses (NG25 r-range and NG26 [0,1] interval), the mathematics and every exclusion in topology.tex and in both diagram sources are unchanged, up to indentation/whitespace.",
+      "verdict": "PASS",
+      "reason": "Full text comparison of previous/topology.tex (564 lines) against candidate/topology.tex (565 lines; the one extra line is a rewrap in the NG26 statement) finds exactly two non-whitespace token changes: (i) NG25 statement 'one has, for every finite r>=1,' -> 'one has, for every 2<r<2/a,'; (ii) NG26 statement 'With theta=2/3' -> 'On [0,1], with theta=2/3'. Everything else is 2-space re-indentation and line rewrapping with identical token streams: No-gos 21, 22, 24, 27, 30, 32 and their proofs are token-identical (including the rewrapped display lines in NG21's G_w and Sobolev-adjoint identities and NG32's G-space, p(lambda), q(lambda,r), and pairing displays, which carry the same symbols in the same order); all scope/exclusion paragraphs are unchanged, including NG21's 'not a nonexistence result' paragraph, NG22's mask-quotient caveat, NG24's tightness remark, NG25's fixed-R compatibility paragraph, NG26's linear-plus-power survival paragraph, NG27's endpoint remark including the pre-existing sentence 'The corrected compact range 2<r<2/a is consistent with the witness.', NG30's upper-semicontinuity remark, NG32's measurability caveat, and both \\input lines. The diagrams are likewise unchanged in content: candidate vs previous nogo-projection-escape.tex differ only in continuation-line indentation (lines 7, 10, 17), and candidate vs previous nogo-feature-range.tex differ only in continuation-line indentation (lines 11-12); all coordinates, labels, captions and figure labels are identical. This was correspondence checking only, not a fresh proof review of the other six no-gos."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "NG25's constant c_a = 1/(sqrt(M_a)||q||_{H^{1/2}}) depends on the fixed auxiliary bump q in addition to a; the notation c_a suppresses the q-dependence. The statement only claims independence from J, which holds (c_a is also independent of n and R), so this is cosmetic.",
+      "The NG25 proof compresses into one sentence ('time-independent covariance mean q_n/sqrt(M_a)') the justification that the completed map evaluated at the nonsmooth-in-time control Psi_n equals the explicit multiplier; the justification is available in the cited sources (L^2 approximation of f_a, L^2-boundedness of K, agreement of L^r and L^2 limits giving C_t f_a = K f_a = 1 a.e., and the smooth-test multiplier formula of P:cameron-full-mean), so this is a compression, not a gap.",
+      "The pointwise witness computation actually yields the lower bound for every finite r>=1 wherever the completed map is defined; the statement's restriction to 2<r<2/a is deliberately matched to the range in which P:cameron-full-mean supplies the compact completed map, and the proof's closing phrase 'for all r stated' reads consistently with that narrowing."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Review is confined to the frozen packet; external cross-references not supplied in the packet (e.g., P:cutoff-singular-values, P:source-gaussian-transfer, L:source-retaining-isometry, E:raw-block-pullback, the Calef-Hardin citation) were accepted as cited where the three checks depend on them, but all facts load-bearing for NG25-REPAIR and NG26-INTERVAL were verified from the supplied sources (homogeneity-hypothesis.tex, integrated_cameron_mean.tex, integrated_temporal_equilibrium.tex, projection-mathematics.md).",
+    "The UNCHANGED-CORRESPONDENCE comparison was performed by complete reading and token-level comparison of both versions rather than by a mechanical diff; whitespace-only differences (2-space re-indentation, display line rewrapping, continuation indentation in the two figures) were classified by inspection of identical token streams.",
+    "Per instructions, the correspondence check did not re-prove the six unchanged no-gos (21, 22, 24, 27, 30, 32); only the repaired NG25 assertion received a full independent statement/proof verification, and NG26 received an exact recomputation.",
+    "This is an AI artifact review, not human verification, a novelty audit, a compilation/Lean check, or a whole-book consistency review."
+  ]
+}

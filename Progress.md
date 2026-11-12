@@ -19212,3 +19212,56 @@ its tables already formatted. pin_companion.py keeps the stored receipt summary
 when the ledger reports not-ready only because the companion clone's HEAD has
 moved past the verified commit. Book 346 pages; F on 307-311, G on 312-318;
 guides updated. 0/0/0.
+
+
+## 2026-11-12: Chapter 12 no-go results — mathematical integration checkpoint
+
+Le requested first-class numbered no-gos, full context/proofs, diagrams and
+main-text links, then promoted former Appendix G to Chapter 12, "Obstructions
+and failed approaches". The chapter has five thematic groups and stable
+No-go 01–33 identifiers, four TikZ diagrams, a reading guide, subject-index
+entries, and contextual links for every identifier from elsewhere in the book.
+The Preface and chapter roadmap advertise the chapter; the reader links to it.
+The former S:appendix-no-go label is retained as a compatibility alias.
+
+Scoped mathematics: DeepSeek V4 Pro and native Kimi K3 reviews at HIGH cover
+all 33 current no-gos. Findings and reviewer errors are adjudicated, not silently
+rewritten. The NG-25 operator norm is stated only on its established completed
+map range; NG-26 explicitly uses [0,1]; NG-33 now writes the inhomogeneous
+Sobolev normalization and conjugated Fourier matrix. Historical grades,
+including NG-09's old MEDIUM/nonacceptance, remain historical. These are
+AI reviews, not human verification or a whole-book acceptance.
+
+Build/source gates:380-page book, 28-page reader,12 chapters / 6 appendices,
+249 proof bodies (216 old bodies byte-identical against 474d678d,33 new no-go
+proofs),26 book / 10 reader figures,407 index records,99 mapped technical labels
+and272 valid reader-to-book links. Both builds have0 errors,0 undefined
+references/citations and0 overfull boxes. Main theorem statements and proofs
+are not changed. Validation and source/PDF pins:
+reviews/2026-11-12-nogo-integration/validation.json and notes/figures/VALIDATION.json.
+
+This is an atomic mathematical checkpoint, not a round-close claim. The fresh
+cold reader actually read all 49 required PNGs and returned a public
+PASS_WITH_NOTES/HIGH body with no mandatory repairs, but its leading prose
+made the native receipt invalid-report/accepted=false. That refusal remains
+preserved. Two contents titles are crowded and the roadmap's Chapter 12 box
+can better match the main chapters; these small editorial refinements and a
+native-accepted final visual/navigation check remain open. The whole-book
+scientific/cold gates remain open independently.
+
+Review records: reviews/2026-11-12-nogo-{pairings,covariance-phase,topology,optimization}/.
+Integration disposition and 17-attempt telemetry (including pre-dispatch
+refusal, invalid reports and same-session format continuation) are under
+reviews/2026-11-12-nogo-integration/. Raw provider timing/token/cost fields
+are retained without invented totals; missing authoring telemetry is null.
+Frozen TeX evidence is stored in manifest-bound tar archives to prevent the
+commit formatter from changing reviewed bytes. Native internal reasoning
+exports remain private. Author checks and image packets are in
+private/audit/2026-11-12-nogo-expansion/. The foreign untracked
+private/audit/2026-11-10-book-format/main-build.stdout remains untouched.
+
+Requested milestone tag: stratonovich-nogo-chapter12-math-2026-11-12,
+annotated at this verified mathematical checkpoint; tag/push receipts follow.
+Durable no-go scope lessons already pushed in Le-AI-Lab 8a94eb27; audit
+checkpoint Article e4d685b. Wiki timeline draft is held until the final
+editorial checkpoint; no round-close provenance is claimed yet.

@@ -1,0 +1,80 @@
+\subsection{NG-33: check the mathematics returned by a reviewer}
+\label{S:nogo-33}
+
+A review report is also a mathematical argument and can contain an incorrect
+step. This historical record groups three such checks. The manuscript had
+the correct expressions; the examples below explain why the proposed review
+steps could not replace them. These are not three new counterexamples to the
+stochastic model.
+
+\setcounter{nogo}{32}
+\begin{nogo}[Three invalid proof steps]\label{P:nogo-33}
+  The following assertions fail.
+  \begin{enumerate}
+    \item The free phase matrix
+      $S_0(t)=\left(\begin{smallmatrix}1&t\\0&1\end{smallmatrix}\right)$
+      is a contraction in the Euclidean norm for every $t\ge0$.
+    \item For $0<\vartheta<1$, the series term $x^n/(n!)^\vartheta$ equals
+      $A_nB_n$, where
+      \[
+        A_n=\frac{(2x^{1/\vartheta})^n}{n!},\qquad
+        B_n=2^{-\vartheta n/(1-\vartheta)}.
+      \]
+    \item The denominator $k!\,k^{(2-\alpha)k}$ may always be replaced by
+      the larger denominator $(k!)^3$ in the coefficient bound of
+      Proposition~\ref{P:low-alpha-upper}.
+  \end{enumerate}
+\end{nogo}
+
+\begin{proof}
+  The vector $(0,1)$ has norm one, but its image under $S_0(t)$ has norm
+  $\sqrt{1+t^2}>1$ for $t>0$. To transfer this to the whole-space phase,
+  use exactly the inhomogeneous Sobolev norm of
+  Section~\ref{S:wave-variance}: $E=H^{1/2}\times H^{-1/2}$ and
+  $J_0=\operatorname{diag}(\Lambda^{1/2},\Lambda^{-1/2})$, where
+  $\Lambda=(1-\Delta)^{1/2}$. With $r=|\xi|$ and
+  $\langle\xi\rangle=\sqrt{1+r^2}$, the Fourier symbol of
+  $J_0S(t)J_0^{-1}$ is
+  \[
+    \begin{pmatrix}
+      \cos(tr)&\langle\xi\rangle\sin(tr)/r\\
+      -r\sin(tr)/\langle\xi\rangle&\cos(tr)
+    \end{pmatrix}
+    \longrightarrow S_0(t)\qquad(r\downarrow0).
+  \]
+  Choose normalized Fourier bumps supported in balls shrinking to zero
+  and place them in the second coordinate of $J_0z$. Continuity of this
+  matrix at zero shows that their image norms tend to $\sqrt{1+t^2}$.
+  Thus $S(t)$ is not a contraction on this $E$. The distinction between
+  $\langle\xi\rangle$ and $|\xi|$ matters: this is not a claim about the
+  homogeneous energy norm. The valid estimate keeps a free-growth factor.
+
+  The correct identity in the second assertion is
+  $x^n/(n!)^\vartheta=A_n^\vartheta B_n^{1-\vartheta}$.
+  At $\vartheta=3/4$, $n=1$ and $x=1$, its left side is one, whereas
+  $A_1B_1=2\cdot(1/8)=1/4$. H\"older applies to the weighted product, as
+  in the proof of Proposition~\ref{P:static-phase-all-orders}.
+
+  For the third assertion choose the permitted spatial-white value
+  $\alpha=1$ and $k=3$. Then $k!k^{(2-\alpha)k}=162<216=(k!)^3$.
+  An upper bound $M/162$ does not imply the smaller upper bound $M/216$.
+  The valid factorial weakening is instead
+  \[
+    k!k^{(2-\alpha)k}\ge(k!)^{3-\alpha},
+  \]
+  since $k!\le k^k$ and $2-\alpha>0$; at this example its right side is
+  $36$. This proves No-go~\ref{P:nogo-33}.
+\end{proof}
+
+\paragraph{Scope and what survives.}
+The last arithmetic check refutes an inference between numerical bounds;
+it does not prove that the actual coefficient exceeds $M/216$.
+All three corrected arguments remain in the main text. Their lesson is to
+check an asserted derivation against its domains, factors and quantifiers,
+even when the report containing it has a favorable overall verdict.
+
+\paragraph{What would permit the discarded steps?}
+Contractivity needs a suitable invariant norm or a restricted state class.
+The H\"older factors need their conjugate powers. A stronger factorial
+bound needs an additional estimate; it cannot be obtained by changing the
+exponent in the denominator.

@@ -1,0 +1,25 @@
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \node[ham/box,text width=1.8cm] (initial) at (0,0)
+    {Initial phase\\$(1,0)$};
+    \node[ham/box,text width=3cm] (middle) at (4.1,0)
+    {After block 1\\$(c(Z_1),Z_1s(Z_1))$};
+    \node[ham/box,text width=2.6cm] (final) at (8.7,0)
+    {After block 2\\$M(Z_2)M(Z_1)e_1$};
+    \draw[ham/arrow] (initial)--node[above,font=\small] {$M(Z_1)$} (middle);
+    \draw[ham/arrow] (middle)--node[above,font=\small] {$M(Z_2)$} (final);
+    \node[ham/note,text width=10cm] at (4.4,-1.7)
+    {Retained displacement: $c(Z_2)c(Z_1)+s(Z_2)Z_1s(Z_1)$.\\
+    Resetting the velocity would retain only $c(Z_2)c(Z_1)$.};
+    \node[ham/note,text width=10cm] at (4.4,-3)
+    {True second moment: $1+3A+O(A^2)$.\\
+    Product of reset-block moments: $1+\frac23A+O(A^2)$.};
+  \end{tikzpicture}
+  \caption[Velocity survives a block boundary]{Two independent scalar static
+    Gaussian blocks, each of variance $A$. The second block acts on both
+    components of the first block's phase. This is a scalar diagnostic
+    outside the target homogeneous-noise model; see
+    No-go~\ref{P:nogo-14}.}
+  \label{Fig:nogo-phase-blocks}
+\end{figure}

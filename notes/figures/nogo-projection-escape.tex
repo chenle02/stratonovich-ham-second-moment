@@ -1,0 +1,25 @@
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \draw[ham/arrow] (-.5,0)--(10.5,0) node[right] {$x$};
+    \fill[hamblue!12] (0,.1) rectangle (2.4,1.1);
+    \node[ham/note] at (1.2,1.95)
+    {Fixed projection $P_J$\\common spatial support};
+    \draw[hamblue,thick] (0,.1) rectangle (2.4,1.1);
+    \draw[hamteal,thick] (6.5,.1) .. controls (7.1,.1) and (7.1,1.1) .. (7.5,1.1)
+    .. controls (7.9,1.1) and (7.9,.1) .. (8.5,.1);
+    \node[ham/note] at (7.5,1.65) {Translated bump $q_n$};
+    \draw[ham/arrow] (4,.6)--(5.9,.6);
+    \node[ham/note] at (4.95,1.15) {$x_n\to\infty$};
+    \draw[hamgold,thick] (-.3,-.3)--(-.3,-.6)--(9.5,-.6)--(9.5,-.3);
+    \node[ham/note] at (4.6,-1.1) {Growing plateau $m_{R_n}=1$ retains $q_n$};
+    \node[ham/note] at (4.6,-1.8)
+    {$P_J\Psi_n=0$,\qquad $\|T_{R_n}\Psi_n\|\ge c_a>0$};
+  \end{tikzpicture}
+  \caption[Escape from a fixed spatial projection]{Schematic for
+    No-go~\ref{P:nogo-25}. For one-dimensional spatial white noise, a translated
+    unit control is exactly orthogonal to the finitely many compact tests of
+    $P_J$, while a growing mask retains its nonzero phase functional.
+    At any fixed radius sufficiently distant bumps miss the mask.}
+  \label{Fig:nogo-projection-escape}
+\end{figure}

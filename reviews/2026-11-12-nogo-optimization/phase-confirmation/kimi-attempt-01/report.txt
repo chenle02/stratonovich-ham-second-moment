@@ -1,0 +1,59 @@
+I have read both files in the frozen packet completely (TARGET.md, 80 lines; CONTEXT.md, 238 lines; no truncation markers). I verified every computation independently: the conjugated wave symbol and zero-frequency shear limit, the shrinking-bump norm limit, the Hölder factor identity and its scalar counterexample, and the factorial arithmetic with its valid weakening.
+
+```json
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "TARGET.md: lines 1-80 (complete file; single read; no truncation marker)",
+    "CONTEXT.md: lines 1-238 (complete file; single read; no truncation marker)"
+  ],
+  "checks": [
+    {
+      "claim": "Item 1: S_0(t)=[[1,t],[0,1]] is not a Euclidean contraction, and non-contractivity transfers to the wave group on the explicit inhomogeneous space E=H^{1/2}xH^{-1/2} via J_0=diag(Lambda^{1/2},Lambda^{-1/2}), Lambda=(1-Delta)^{1/2}; both off-diagonal Fourier entries are conjugated; <xi> is distinguished from |xi|; the zero-frequency limit is the shear; normalized shrinking velocity bumps give norm limit sqrt(1+t^2); the conclusion is restricted to this norm.",
+      "verdict": "PASS",
+      "reason": "Verified. S_0(t)(0,1)=(t,1) has norm sqrt(1+t^2)>1 for t>0. With r=|xi|, <xi>=sqrt(1+r^2), conjugating the wave symbol (CONTEXT lines 13-19, sine quotient t at zero) by diag(<xi>^{1/2},<xi>^{-1/2}) yields exactly the displayed matrix: upper-right <xi> sin(tr)/r, lower-left -r sin(tr)/<xi>, diagonals cos(tr); both off-diagonals carry the inhomogeneous <xi> weight. As r down to 0 this tends to S_0(t). Taking J_0 z=(0,phi_delta) with L^2-normalized phi_delta supported in B(0,delta) (velocity bumps in the second coordinate of J_0 z), the squared image norm is the integral of [<xi>^2 sin^2(tr)/r^2 + cos^2(tr)]|phi_delta|^2, whose bracket converges uniformly to t^2+1 on the shrinking supports, so the norm limit is sqrt(1+t^2)>1 for t>0; hence S(t) is not a contraction on this E. Multiplier entries are bounded (sin(tr)/r <= t and <xi>/r bounded times decay), so the conjugated operator on L^2 is legitimate. The text correctly restricts the conclusion to the inhomogeneous norm ('this is not a claim about the homogeneous energy norm', 'the valid estimate keeps a free-growth factor'): with homogeneous weights |D|^{1/2} the conjugated symbol would be the unitary rotation [[cos(tr),sin(tr)],[-sin(tr),cos(tr)]], so contractivity fails only because of the <xi> vs |xi| mismatch at zero frequency. The explanation is correct though brief."
+    },
+    {
+      "claim": "Item 2: the correct Holder factor identity is x^n/(n!)^vartheta = A_n^vartheta B_n^{1-vartheta} with A_n=(2x^{1/vartheta})^n/n!, B_n=2^{-vartheta n/(1-vartheta)}, and the discarded product A_n B_n is refuted by an exact scalar counterexample.",
+      "verdict": "PASS",
+      "reason": "Algebra verified: A_n^vartheta B_n^{1-vartheta} = 2^{n vartheta} x^n/(n!)^vartheta * 2^{-vartheta n} = x^n/(n!)^vartheta. The discarded product equals (x^n/n!) 2^{n(1-2vartheta)/(1-vartheta)}, which differs from the series term. At vartheta=3/4, n=1, x=1: left side = 1; A_1=2, B_1=2^{-3}=1/8, A_1 B_1=1/4 != 1, exactly as stated. Holder with conjugate exponents 1/vartheta and 1/(1-vartheta) applied to A_n^vartheta B_n^{1-vartheta} matches the use in CONTEXT lines 232-233 (beta<1 case), and the geometric sum bound by 2 is valid there since beta in (1/2,1) gives 2^{-beta/(1-beta)}<1/2."
+    },
+    {
+      "claim": "Item 3: the denominator k! k^{(2-alpha)k} in Proposition P:low-alpha-upper cannot always be enlarged to (k!)^3; counterexample at the permitted value alpha=1, k=3 (162<216); M/162 does not imply M/216; the valid weakening is k! k^{(2-alpha)k} >= (k!)^{3-alpha}, equal to 36 at the example.",
+      "verdict": "PASS",
+      "reason": "Arithmetic verified: k! k^{(2-alpha)k} at alpha=1,k=3 is 6*3^3=162; (k!)^3=216; 162<216, so the proposed replacement is illegitimate, and for M>0 the bound M/162 does not imply the smaller bound M/216. Alpha=1 is permitted (CONTEXT: 0<alpha<=1, d in {1,2,3}) and the proposition explicitly derives b=1 at alpha=1 (CONTEXT lines 95-97), consistent with exponent 2-alpha. The valid weakening follows from k^k >= k! raised to the positive power 2-alpha: k! k^{(2-alpha)k} >= k! (k!)^{2-alpha} = (k!)^{3-alpha}; at the example the right side is 6^2=36 <= 162. This matches the proposition's second inequality with q=3-alpha."
+    },
+    {
+      "claim": "Quantifiers and refutation logic: each nogo assertion is a universal claim refuted by a single admissible instance, and the scope paragraph distinguishes a failed inference from an actual coefficient counterexample.",
+      "verdict": "PASS",
+      "reason": "'For every t>=0' is refuted by any t>0; the series-term identity for 0<vartheta<1 is refuted at vartheta=3/4,n=1,x=1; 'may always be replaced' is refuted at alpha=1,k=3 with alpha=1 inside the proposition's hypothesis 0<alpha<=1. The scope statement 'refutes an inference between numerical bounds; it does not prove that the actual coefficient exceeds M/216' is the correct logical distinction and is honestly stated."
+    },
+    {
+      "claim": "Source interfaces: E, J_0, the wave symbol with the sine-quotient convention, the Holder factors, and the coefficient denominator of P:low-alpha-upper match the supplied CONTEXT.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "E=E_{1/2}, J's unitary symbol (<xi>^{1/2},<xi>^{-1/2}), and the wave matrix match CONTEXT lines 4-19; the Holder factors match CONTEXT lines 232-233 exactly (vartheta corresponding to beta); the alpha=1 closing constant M=pi V/2 and b=1 match CONTEXT lines 87 and 95-97. Note: P:low-alpha-upper as supplied writes the denominator k! k^{bk} and identifies b=1 explicitly only at alpha=1; the general identification b=2-alpha used in the target's notation is only implicit in the packet (it refers to an earlier weighted AM-GM computation in P:d1-upper, not supplied). The counterexample needs only alpha=1, so correctness within the packet is unaffected."
+    },
+    {
+      "claim": "Framing and scope: the manuscript had the correct expressions; these are not new counterexamples to the stochastic model; the 'what would permit' paragraph is sound.",
+      "verdict": "PASS",
+      "reason": "Consistent with the supplied CONTEXT, which contains the correct Holder usage and the factorial weakening. Contractivity would need an invariant norm (e.g., the homogeneous energy norm) or a restricted state class; the Holder factors need their conjugate powers; a stronger factorial bound needs an additional estimate rather than a changed exponent. All three statements are mathematically sound."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Interface observation (optional clarification, not an error): the packet states the coefficient denominator of P:low-alpha-upper as k! k^{bk} and derives b=1 explicitly only at alpha=1; the target's notation k^{(2-alpha)k} presumes b=2-alpha for all alpha. This is consistent with the alpha=1 derivation and the AM-GM weight structure, but the general identification is not explicit in the packet; the target's counterexample uses only alpha=1.",
+      "The explanation of why non-contractivity is excluded only in the inhomogeneous norm is correct but terse: it names the <xi> vs |xi| distinction and contrasts with the homogeneous energy norm without exhibiting the homogeneous-weight conjugation (a unitary rotation) explicitly. An optional elaboration, not a required change."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI mathematical review, not human verification or a novelty audit; conclusions cover only internal correctness of the supplied packet.",
+    "Verification is confined to the two packet files. Referenced manuscript items not supplied (Section S:wave-variance beyond the normalization excerpt, Proposition P:d1-upper, Lemmas L:low-alpha-convolution and L:alpha-one-convolution, and the source citation) could not be cross-checked; consistency with them is assessed only through the interfaces quoted in CONTEXT.md.",
+    "The general relation b=2-alpha for the exponent in P:low-alpha-upper's denominator is not derivable from the packet; only b=1 at alpha=1 is explicit, which is all the target's counterexample requires."
+  ]
+}
+```

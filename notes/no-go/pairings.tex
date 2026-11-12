@@ -1,0 +1,605 @@
+\section{Pairings, ordering, and comparison kernels}\label{S:nogo-pairings}
+
+The second moment contains two ordered chains and all their Gaussian
+pairings, including pairs within a chain. This structure offers several
+natural reductions: estimate each pairing separately, compare with a single
+chain, or copy the first-moment clock. The obstructions below distinguish
+loss of scale from failure of an inequality. A majorant can be too large even
+when every step used to obtain it is valid.
+
+Throughout this section write $a=\alpha_0$ and
+$\beta=4-\alpha-a$. Let $X_n$ denote the ordered Stratonovich term of degree
+$n$, and put
+\[
+  a_k=\E X_{2k}(1,x),\qquad
+  A_k=\sum_{m+n=2k}\E[X_m(1,x)X_n(1,x)],\qquad
+  b_1=\E X_1(1,x)^2.
+\]
+Thus $A_1=2a_1+b_1$. Homogeneity supplies the factor $t^{\beta k}$.
+The nonnegative convergent moment expansions used here are those of
+Proposition~\ref{P:mixed}; they include unequal chain lengths. In dimension
+one we use $G_s(z)=\frac12\mathbf1_{\{|z|<s\}}$.
+
+\subsection{NG-01: one common estimate loses a factorial power}
+\label{S:nogo-01}
+
+Theorem~3.1 of~\cite{chen:author2026:time-dependency} controls all the
+pairing patterns. Applying its homogeneous norm bound to each pattern is
+therefore an attractive first attempt at the upper exponent. The issue is
+what happens after optimization and summation.
+
+\setcounter{nogo}{0}
+\begin{nogo}[The common-parameter majorant has the wrong scale]
+  \label{P:nogo-01}
+  Under Hypothesis~\ref{H:homog}, let $P_k=(2k)!/(2^k k!)$ and $K>0$.
+  The numerical majorant
+  \[
+    B_K(t)=1+\sum_{k\ge1}(2k+1)P_kK^k
+    \inf_{\theta>0}e^{2\theta t}\theta^{-\beta k}
+  \]
+  satisfies $\log B_K(t)\asymp t^{\beta/(\beta-1)}$ as $t\to\infty$.
+  Since $\beta/(\beta-1)>\kappa=\beta/(3-\alpha)$, this majorant cannot
+  establish a finite upper constant on the scale $t^\kappa$.
+\end{nogo}
+\begin{proof}
+  The infimum equals $e^{\beta k}(2t/(\beta k))^{\beta k}$.
+  The inequalities $k!\le P_k\le2^k k!$ and
+  $e^{-k}\le k!/k^k\le1$ show that $B_K$ lies between two series
+  \[
+    \sum_{k\ge0}\frac{(c t^\beta)^k}{(k!)^q},\qquad q=\beta-1>1,
+  \]
+  with different positive constants $c$. For $z>0$, this series is at most
+  $\exp(qz^{1/q})$, by the $\ell^q$--$\ell^1$ inequality. Its term with
+  $k=\lfloor z^{1/q}/2\rfloor$ is at least $2^{qk}$ for large $z$.
+  This proves the two-sided growth. Finally, $\beta-1=3-\alpha-a<3-\alpha$.
+  This proves No-go~\ref{P:nogo-01}.
+\end{proof}
+
+This restates the obstruction in Proposition~\ref{P:envelope} and
+Remark~\ref{R:G0-verdict}. The lower estimate is for $B_K$, not for the
+moment. The valid upper estimate improves the crude quadratic exponent,
+but its factorial denominator misses $(k!)^a$. The split count $2k+1$
+costs only an exponential factor in $k$; removing it does not repair the
+loss. The same calculation for one chain, with $e^{\theta t}$, has the
+same defect. Reopening requires an estimate retaining ordering or grouping
+pairings before taking this common bound. Section~\ref{S:interval-upper}
+provides such a different argument.
+
+\subsection{NG-02: a single adjacent diagram is too large}
+\label{S:nogo-02}
+
+There are roughly an exponential factor times $k!$ pairings of $2k$
+vertices. In white space, a uniform denominator $(k!)^3$ for each diagram
+would therefore give the desired denominator $(k!)^2$ after summation.
+The following example explains why that convenient sufficient estimate is
+stronger than the problem permits.
+
+\setcounter{nogo}{1}
+\begin{nogo}[No uniform cubic factorial denominator per diagram]
+  \label{P:nogo-02}
+  Let $d=1$, $\Gamma=\delta_0$ and $0<a<1$. For the split $(0,2k)$
+  and adjacent matching $\{(1,2),(3,4),\ldots,(2k-1,2k)\}$, its contribution is
+  \[
+    J_{\rm adj}(t)=
+    \left[\frac{\Gamma_{\mathrm E}(1-a)}2\right]^k
+    \frac{t^{(3-a)k}}{\Gamma_{\mathrm E}(1+(3-a)k)}.
+  \]
+  Consequently, there is no finite $C=C(a)$ bounding every diagram by
+  $C^k t^{(3-a)k}/(k!)^3$ for all $k$ and $t>0$.
+\end{nogo}
+\begin{proof}
+  Use root-forward increments $h_1,\ldots,h_{2k}>0$ with
+  $\sum h_i<t$. Each adjacent contraction evaluates the even Green factor
+  at zero, giving $1/2$, and integration of the preceding free increment
+  gives mass $h_{2j-1}$. The temporal factor is $h_{2j}^{-a}$. Therefore,
+  \[
+    J_{\rm adj}(t)=2^{-k}
+    \int_{\sum h_i<t}\prod_{j=1}^k h_{2j-1}h_{2j}^{-a}\,\ud h.
+  \]
+  Here delta contractions mean limits of Gaussian approximate identities.
+  For completeness, fix $k$ and a strictly positive increment vector.
+  After convolution the paired positions approach equality. The even Green
+  factors are continuous at zero; the remaining indicator boundaries are
+  finitely many hyperplanes in the $k$ free positions and have measure zero.
+  The limit is thus the stated diagonal integral. All positions in the
+  original chain lie in $[-t,t]$. Uniformly in the smoothing widths, replacing
+  its Green indicators by one bounds the spatial integral by
+  $2^{-2k}(2t)^k$: each disjoint smoothed pair has integral at most $2t$
+  over $[-t,t]^2$. The temporal factors on the full time cube are a product
+  of $k$ disjoint factors $|s-r|^{-a}$, each integrable because $a<1$.
+  Dominated convergence justifies the fixed-order spatial limit through the
+  time integration, and also temporal truncation limits.
+
+  The Dirichlet simplex formula, with parameters $2$ and $1-a$ for each
+  pair, now gives the asserted expression. Stirling's formula yields
+  \[
+    \log\big((k!)^3J_{\rm adj}(1)\big)=a k\log k+O(k).
+  \]
+  This exceeds $k\log C$ eventually for every fixed $C$.
+  This proves No-go~\ref{P:nogo-02}.
+\end{proof}
+
+The adjacent matching is only one diagram. Its denominator is, up to
+exponential factors, $(k!)^{3-a}$, which is stronger than the desired
+summed denominator $(k!)^2$. Hence, this witness does not obstruct the
+summed bound. A viable successor must retain the number of large diagrams,
+or sum before estimating; it cannot assign the same cubic denominator to
+all of them.
+
+\subsection{NG-03: doubled variance does not give the proposed squared mean}
+\label{S:nogo-03}
+
+A positive mixture of exponentials of linear Gaussian functionals would
+satisfy a useful comparison between the second moment and the mean at
+noise amplitude $\sqrt2$. Such a representation must be established for
+the wave rather than inferred from a parabolic analogy.
+
+\setcounter{nogo}{2}
+\begin{nogo}[Failure of the all-time comparison with unit prefactor]
+  \label{P:nogo-03}
+  For the admissible Riesz case $d=1$, $\Gamma(x)=|x|^{-1/2}$ and $a=1/2$,
+  \[
+    \E u(t,x)^2>\big(\E u_{\sqrt2}(t,x)\big)^2
+  \]
+  for all sufficiently small $t>0$, where $u_\lambda$ uses noise amplitude
+  $\lambda$ and the same initial data.
+\end{nogo}
+\begin{proof}
+  More generally, for $\Gamma(x)=c|x|^{-\alpha}$, $0<\alpha<1$,
+  direct integration of the length-two chain gives
+  \[
+    a_1=\frac{c}{(1-\alpha)(2-\alpha-a)(3-\alpha-a)(4-\alpha-a)}.
+  \]
+  Indeed the spatial integral is
+  $c h_1h_2^{1-\alpha}/(1-\alpha)$ and its temporal factor is $h_2^{-a}$;
+  integrate over $h_1+h_2<1$. At $\alpha=a=1/2$, $c=1$, this gives $a_1=1/3$.
+  For independent uniforms $U$ on $[-s,s]$ and $V$ on $[-r,r]$, $0<r\le s$,
+  \[
+    \E|U-V|=\frac{s}{2}+\frac{r^2}{6s}\le\frac{2s}{3}.
+  \]
+  Jensen's inequality for $z\mapsto z^{-\alpha}$ implies
+  \[
+    \int G_s(x)G_r(y)|x-y|^{-\alpha}\,\ud x\ud y
+    \ge (3/2)^\alpha s^{1-\alpha}r.
+  \]
+  Integrating on the two temporal triangles gives
+  \[
+    b_1\ge
+    \frac{2(3/2)^\alpha}{(1-a)(2-a)(4-\alpha-a)}
+    =\frac89\sqrt{\frac32}>\frac23=2a_1.
+  \]
+  The comparison is a finite-time failure, not just a formal coefficient test.
+  Put $z=t^\beta$. The two nonnegative series under comparison have expansions
+  \[
+    \E u(t,x)^2=1+(2a_1+b_1)z+O(z^2),\qquad
+    (\E u_{\sqrt2}(t,x))^2=1+4a_1z+O(z^2).
+  \]
+  To justify the remainders, choose any fixed positive $z_0$ at which these
+  series converge, using the moment expansion also at amplitude $\sqrt2$.
+  For each nonnegative coefficient sequence $(c_j)$,
+  $\sum_{j\ge2}c_jz^j\le(z/z_0)^2\sum_{j\ge2}c_jz_0^j$ when
+  $0\le z\le z_0$. Apply this to both series, including the nonnegative
+  Cauchy product for the squared mean. Their difference therefore has the
+  strictly positive leading coefficient $b_1-2a_1$.
+  This proves No-go~\ref{P:nogo-03}.
+\end{proof}
+
+For a deterministic nonnegative mixture of Gaussian exponentials, the
+inequality follows by Tonelli and
+$\|h+k\|^2/2\le\|h\|^2+\|k\|^2$, provided the same mixture represents
+all amplitudes in the comparison. That proposed mechanism is excluded by
+the example. White noise, an eventual large-time comparison, or a prefactor
+larger than one is not excluded. Reopening requires a restriction or a new
+comparison that removes the contradicted first-coefficient requirement;
+it cannot merely assert this positive-mixture representation.
+
+\subsection{NG-04: a coefficient constant cannot be uniform at the time boundary}
+\label{S:nogo-04}
+
+Comparing $A_k$ with $a_k$ retains the self-pairings of the Stratonovich
+problem and would transfer a first-moment bound to the second moment.
+However, a prescribed asymptotic constant must not be imposed on every
+low-order coefficient without checking parameter uniformity.
+
+\setcounter{nogo}{3}
+\begin{nogo}[Divergence of the first coefficient ratio]
+  \label{P:nogo-04}
+  Fix $0<\alpha<1$ and $c>0$, with $\Gamma(x)=c|x|^{-\alpha}$ in $d=1$.
+  Then
+  \[
+    \lim_{a\uparrow1}(1-a)\frac{A_1}{a_1}
+    =2^{2-\alpha}(1-\alpha)>0.
+  \]
+  In particular no constant depending on $\alpha$ alone, including
+  $2^{4-\alpha}$, can satisfy $A_k\le C^k a_k$ for every $k\ge1$
+  and every $0<a<1$ at this fixed spatial covariance.
+\end{nogo}
+\begin{proof}
+  Let
+  $K(s,r)=\int G_s(x)G_r(y)c|x-y|^{-\alpha}\,\ud x\ud y$.
+  This is continuous on $[0,1]^2$ by local integrability of the Riesz kernel
+  and dominated convergence on a fixed square. Direct integration gives
+  \[
+    K(s,s)=\frac{c\,2^{1-\alpha}s^{2-\alpha}}
+    {(1-\alpha)(2-\alpha)}.
+  \]
+  Writing $v=s-r$, define the continuous function
+  $H(v)=2\int_v^1 K(s,s-v)\,\ud s$. Then
+  \[
+    b_1=\int_0^1v^{-a}H(v)\,\ud v,\qquad
+    H(0)=\frac{c\,2^{2-\alpha}}
+    {(1-\alpha)(2-\alpha)(3-\alpha)}.
+  \]
+  For any continuous $H$ on $[0,1]$,
+  $\varepsilon\int_0^1v^{-1+\varepsilon}H(v)\,\ud v\to H(0)$.
+  Indeed the measures have mass one, and their mass on $[\delta,1]$ is
+  $1-\delta^\varepsilon\to0$; continuity controls $[0,\delta]$.
+  Thus $(1-a)b_1\to H(0)$. The formula for $a_1$ in the preceding proof gives
+  \[
+    a_1\longrightarrow
+    \frac{c}{(1-\alpha)^2(2-\alpha)(3-\alpha)}.
+  \]
+  Combine these limits with $A_1=2a_1+b_1$.
+  This proves No-go~\ref{P:nogo-04}.
+\end{proof}
+
+For each fixed $a<1$, a finite constant $C=C(\alpha,a)$ remains possible;
+the argument only forces it to diverge as $a\uparrow1$. It also says
+nothing against comparisons beginning at large order or large time with
+suitable prefactors. Reopening requires explicitly allowing that parameter
+dependence or removing the low orders. Historical static-endpoint tests
+likewise constrain an endpoint or a uniform family, not a separately
+chosen constant at an arbitrary positive $a$.
+
+\subsection{NG-05: chronological merging breaks wave support}
+\label{S:nogo-05}
+
+A single chain has the monotone ordering needed by the first-moment
+representation. Sorting two chains by time looks like a direct way to
+recover it. Finite propagation prevents the resulting pointwise comparison.
+
+\setcounter{nogo}{4}
+\begin{nogo}[Support obstruction to pointwise concatenation]
+  \label{P:nogo-05}
+  In $d=1$, no finite constant can bound every product of two root-forward
+  chain kernels by the single-chain kernel obtained by chronological merging.
+  The failure occurs in the $(2,2)$ split on a set of positive measure for
+  Riesz covariance and, with domestic pairs, for white covariance.
+\end{nogo}
+\begin{proof}
+  Work at horizon one with root $(0,0)$. The first chain has times
+  $(1/4,3/4)$ and positions $(x,x)$, $x=1/5$; the second has times
+  $(1/2,7/8)$ and positions $(y,y)$, $y=-2/5$.
+  The four original displacements and elapsed times are
+  \[
+    (1/5,1/4),\quad(0,1/2),\quad(2/5,1/2),\quad(0,3/8).
+  \]
+  Each displacement is strictly smaller than its elapsed time, so their
+  Green product is $2^{-4}$. The merged chain instead includes the jump
+  from $(1/4,1/5)$ to $(1/2,-2/5)$. Its displacement is $3/5>1/4$,
+  so that Green factor vanishes. All these inequalities are strict.
+
+  For white noise choose domestic pairs within each original chain. The
+  delta contractions leave precisely the two free spatial variables $x,y$.
+  Open neighborhoods of the displayed four times and these two variables
+  preserve both conclusions and have positive contracted measure. Gaussian
+  regularization justifies this contraction as in No-go~\ref{P:nogo-02}.
+  For Riesz covariance perturb all four spatial positions independently
+  in small neighborhoods. Avoiding the domestic diagonals gives a set of
+  positive ordinary measure on which the covariance factors are finite and
+  strictly positive, while the same support defect persists.
+  No multiplier can turn the zero merged product into a positive upper bound.
+  This proves No-go~\ref{P:nogo-05}.
+\end{proof}
+
+\input{notes/figures/nogo-chain-geometry}
+
+The time coordinates here are root-forward chain coordinates; applying a
+terminal-to-point convention again would change the object being tested.
+The result concerns pointwise concatenation. Integrated comparisons and
+comparisons of grouped Wick sums remain possible. Reopening requires
+averaging, extra displacement variables, or another mechanism that preserves
+the two original propagation constraints instead of imposing the false
+merged one.
+
+\subsection{NG-06: erasing geometry before summation loses the scale}
+\label{S:nogo-06}
+
+After white contractions, the temporal pairing sum is symmetric. One can
+exploit that symmetry immediately by forgetting the spatial indicators.
+The resulting bound is easy to sum but too weak for the desired exponent.
+
+\setcounter{nogo}{5}
+\begin{nogo}[The geometry-free majorant]
+  \label{P:nogo-06}
+  For $d=1$, $\Gamma=\delta_0$, $0<a<1$, replacing every wave indicator by
+  one while retaining only the spatial box $[-t,t]$ gives the coefficient
+  majorant
+  \[
+    A_k t^{(3-a)k}\le
+    \frac{1}{k!}\left[\frac{2t^{3-a}}{(1-a)(2-a)}\right]^k.
+  \]
+  Its sum is $\exp(2t^{3-a}/((1-a)(2-a)))$, whose time exponent
+  $3-a$ exceeds the target $(3-a)/2$.
+\end{nogo}
+\begin{proof}
+  The spatial replacement gives $(2t)^k/2^{2k}=t^k/2^k$ for each pairing.
+  After this replacement the sum over all pairings is symmetric in the
+  $2k$ times. Its integral over a split $(m,n)$ simplex equals the cube
+  integral divided by $m!n!$. The identities
+  \[
+    \sum_{m+n=2k}\frac1{m!n!}=\frac{2^{2k}}{(2k)!},\qquad
+    P_k=\frac{(2k)!}{2^k k!},\qquad
+    \int_0^t\int_0^t|s-r|^{-a}\,\ud s\ud r
+    =\frac{2t^{2-a}}{(1-a)(2-a)}
+  \]
+  give the stated product and its exponential sum.
+  This proves No-go~\ref{P:nogo-06}.
+\end{proof}
+
+This is a valid upper bound and a failure of its scale, not a moment lower
+bound. Symmetry itself remains useful. The reopening condition is a spatial
+estimate with enough order dependence retained before temporal
+symmetrization; Proposition~\ref{P:d1-upper} retains this order dependence
+and sums the temporal pairings afterwards (see
+Remark~\ref{R:d1-upper-checks}).
+
+\subsection{NG-07: block labels are not chronological ranks}
+\label{S:nogo-07}
+
+Temporal singularities favor close paired times. A proposed penalty for
+long pairs must therefore measure time separation or actual chronological
+rank. Labeling all vertices of one chain before those of the other creates
+an artificial distance unrelated to either.
+
+\setcounter{nogo}{6}
+\begin{nogo}[Large label span does not imply a cubic denominator]
+  \label{P:nogo-07}
+  In white space with $0<a<1$, consider two length-$k$ chains and the matching
+  $j\leftrightarrow k+j$. Although every pair has label distance $k$, its
+  unit-time diagram satisfies
+  \[
+    J_k(1)\ge \left(\frac{3\,4^a}{128}\right)^k k^{-(3-a)k}.
+  \]
+  Thus no estimate assigning $C^k/(k!)^3$ to these diagrams solely on account
+  of their block-label span can hold uniformly in $k$.
+\end{nogo}
+\begin{proof}
+  Let the chain times be $s_j,r_j$, with increments $h_j,g_j$ from the
+  common root. White contractions identify their paired positions, and
+  integration of the successive spatial increments gives
+  $2^{-k}\prod_{j=1}^k\min(h_j,g_j)$. Restrict both $s_j,r_j$ to
+  $((j-1/4)/k,j/k)$. The domain has volume $(4k)^{-2k}$,
+  each increment is at least $3/(4k)$, and each paired difference is at most
+  $1/(4k)$. Multiplication gives the lower bound. The contraction can again
+  be obtained at fixed $k$ by Gaussian smoothing; the spatial box bound and
+  integrable disjoint temporal factors justify the limit.
+  Stirling's formula implies
+  $\log((k!)^3J_k(1))\ge a k\log k+O(k)$, contradicting any fixed $C$.
+  This proves No-go~\ref{P:nogo-07}.
+\end{proof}
+
+% [held back: collaborators' unpublished work]
+
+\subsection{NG-10: an unweighted merge does not remove a crossing covariance}
+\label{S:nogo-10}
+
+A two-wave convolution estimate can remove an interior chain vertex when
+no other factor depends on it. In a crossing pairing that vertex still
+interacts with a remote partner. The following order-four calculation
+identifies the missing weight before any all-order iteration is attempted.
+
+\setcounter{nogo}{9}
+\begin{nogo}[No finite spatial-supremum pullout in the merge lens]
+  \label{P:nogo-10}
+  In $d=2$, take $\Gamma(z)=c|z|^{-\alpha}$, $c>0$,
+  $0<\alpha_0<1/2$ and $3/2\le\alpha<2-\alpha_0$.
+  For the root-forward $(0,4)$ diagram
+  with pairs $(1,3),(2,4)$, merging vertex two requires the weighted integral
+  \[
+    W=c\int_a^b(T-v)^{-\alpha_0}
+    \int_{\mathbb R^2}G_{v-a}(y-x)G_{b-v}(z-y)|w-y|^{-\alpha}
+    \,\ud y\ud v,
+    \qquad 0<a<b<T.
+  \]
+  Here the letters $a,b,T$ are vertex times, so the temporal exponent is
+  written $\alpha_0$. The spatial weight has no finite uniform essential
+  supremum on admissible merge lenses. Hence, pulling it out by a uniform
+  supremum cannot reduce $W$ to an unweighted two-wave convolution.
+\end{nogo}
+\begin{proof}
+  Set $t=5$, $a=1$, $b=3$, $T=4$, $x=(0,0)$,
+  $z=(1/2,0)$ and $w=(1/4,0)$. For $v$ near $2$, the point $y=w$
+  is strictly inside both disks $|y-x|<v-a$ and $|z-y|<b-v$.
+  It also satisfies the outer constraint $|w-z|<T-b$, and $|x|<a$.
+  There is therefore an interior ball about $w$ in the merge lens.
+  For every $M>0$ a smaller ball has positive Lebesgue measure and
+  $|w-y|^{-\alpha}>M$ there. This proves infinite essential supremum;
+  the strict inequalities persist under small changes of the fixed data.
+  The other pair contributes $(b-a)^{-\alpha_0}c|z-x|^{-\alpha}$ outside
+  the merge, whereas the two factors for pair $(2,4)$ depend on $v,y$
+  and must remain in $W$. The temporal weight alone admits the bound
+  $(T-v)^{-\alpha_0}\le(T-b)^{-\alpha_0}$.
+  This proves No-go~\ref{P:nogo-10}.
+\end{proof}
+
+The unweighted estimate of~\cite{bolanos-guerrero.nualart.ea:21:averaging}
+cannot be substituted for this different object without controlling the
+weight. Infinite essential supremum does not imply divergence of $W$ or
+of the diagram: the Riesz singularity is locally integrable for $\alpha<2$.
+A reopening condition is a covariance-weighted convolution inequality,
+or an explicit envelope integrable against the remaining diagram factors,
+with the remote-gap cost retained. No such inequality is asserted here.
+
+\subsection{NG-17: direct copying of the first-moment clock undercounts}
+\label{S:nogo-17}
+
+The source's first-moment clock representation suggests attaching one
+Brownian clock to each ordered chain. A degree-two cross pair already tests
+whether this copying preserves the interaction. It does not, even when
+the two clocks are shared.
+
+\setcounter{nogo}{16}
+\begin{nogo}[Constant-correlation clock copying misses a positive factor]
+  \label{P:nogo-17}
+  Under the nonzero covariance hypotheses of
+  Proposition~\ref{P:clock-copy-obstruction}, let $K_\Gamma(\theta)$ be the
+  true cross-pair transform and $J_{\Gamma,\rho}(\theta)$ the direct
+  unweighted candidate~\eqref{E:naive-clock-candidate}, $-1\le\rho\le1$.
+  Then for every $\theta>0$,
+  \[
+    0<J_{\Gamma,\rho}(\theta)\le J_{\Gamma,1}(\theta)<K_\Gamma(\theta).
+  \]
+  If $\alpha=1$, then $J_{\Gamma,1}=(2-2^a)K_\Gamma$.
+\end{nogo}
+\begin{proof}
+  Recall $\mathcal R_\Gamma(q)=\int(q^2+|\xi|^2)^{-1}\mu(\ud\xi)$.
+  The exact transform identities proved in
+  Proposition~\ref{P:clock-copy-obstruction} give
+  \[
+    w_\theta(\lambda)=
+    \frac{\lambda^{a-2}}{2\theta\Gamma_{\mathrm E}(a)}
+    [\mathcal R_\Gamma(\theta)-\mathcal R_\Gamma(\theta+\lambda)],
+    \qquad
+    K_\Gamma=\int_0^\infty w_\theta(\lambda)\,\ud\lambda,
+  \]
+  \[
+    J_{\Gamma,1}=\int_0^\infty
+    \frac{2\theta}{2\theta+\lambda}w_\theta(\lambda)\,\ud\lambda.
+  \]
+  The density is strictly positive because $\mu\ne0$ and the resolvent
+  strictly decreases. It is integrable: homogeneity bounds it by multiples
+  of $\lambda^{a-1}$ near zero and $\lambda^{a-2}$ at infinity.
+  The multiplier is strictly between zero and one. For smaller correlations,
+  $u+v-2\rho\min(u,v)\ge|u-v|$, and the positive Laplace integral
+  $\Psi_a(r,v)$ in~\eqref{E:averaged-clock-kernel} decreases with $v$.
+  This proves the chain of inequalities. When $\alpha=1$, insert
+  $\mathcal R_\Gamma(q)=\mathcal R_\Gamma(1)/q$ and use
+  $\int_0^\infty x^{a-1}/(x+c)\,\ud x
+  =c^{a-1}\Gamma_{\mathrm E}(a)\Gamma_{\mathrm E}(1-a)$ to obtain the ratio.
+  This proves No-go~\ref{P:nogo-17}.
+\end{proof}
+
+This is the already proved book obstruction, not a new clock impossibility
+theorem. At the static endpoint the discrepancy disappears, so homogeneity
+and static checks alone cannot detect it. At degree two the missing
+shared-clock multiplier is exactly $1+\lambda/(2\theta)$; no higher-order
+correction rule follows. Reopening requires relative-order weights or a
+different coupling or representation that reproduces the actual cross-pair
+transform. Remark~\ref{R:clock-copy-scope} gives the full boundary of this
+statement, including the distinction between gap transforms and physical
+unequal-time moments.
+
+\subsection{NG-18: erasing the middle-cross shift makes an envelope too large}
+\label{S:nogo-18}
+
+A later white-space comparison retains four vertices and a middle cross
+pair. Removing the clock-overlap penalty gives a positive upper bound.
+One further simplification, erasing the shift of its root kernel, also
+increases the bound, but increases it beyond the comparator at an explicit
+parameter point. This is an obstruction to closing that envelope, not a
+counterexample to the original comparison.
+
+\setcounter{nogo}{17}
+\begin{nogo}[The shift-erased envelope is not below the wave transform]
+  \label{P:nogo-18}
+  Consider the white $(1,3)$ diagram with middle-cross partition $02\cdot13$,
+  common gap damping one, cross rate $\lambda\ge0$ and self rate $\nu\ge0$.
+  Put $b=1+\nu$, $c=1+\lambda$, $A=\lambda+\lambda^2/2$. Its actual wave
+  transform $I$ and the shift-erased clock upper envelope $M_b(0;A)$ satisfy
+  at $b=1,c=11/10$
+  \[
+    I=\frac{545}{11616},\qquad M_b(0;A)=\frac{1025}{21483},\qquad
+    I-M_b(0;A)=-\frac{6005}{7562016}<0.
+  \]
+  Consequently the proposed pointwise closure $M_b(0;A)\le I$ is false.
+\end{nogo}
+\begin{proof}
+  We give the integral identifications so that the rational test specifies
+  which bound fails. With singleton gap $u$ and long-chain gaps $v,w,z$,
+  the spatial factor is
+  $\int G_u(X)G_v(Y)G_w(X-Y)G_z(Y-X)\,\ud X\ud Y$.
+  Set $R=u+v$, $q=u-v$. Integration in $R$, including its Jacobian,
+  gives the exact wave expression
+  \[
+    I=\frac1{16}\int_{w,z>0}\int_{\mathbb R}
+    e^{-b(w+z)-\lambda|q-w|}
+    \int_0^{\min(w,z)}e^{-\max(|q|,t)}\,\ud t\ud q\ud w\ud z.
+  \]
+  To check the spatial reduction, the derivative of the area
+  $\{|X|<u,|Y|<v,|X-Y|<C\}$ with respect to $C$ is
+  $2(R-\max(C,|q|))_+$; the area vanishes at $C=0$.
+  Integrate this against $e^{-R}/32$ for $R>|q|$.
+  Next integrate $z\ge t$ and put $w=t+x$. Splitting the remaining $q$
+  integral into $q<0$, $0\le q\le t$, and $q\ge t$ gives respectively
+  \[
+    \frac{1/c+1/(2b+\lambda+1)}{16b(b+\lambda)(2b+2\lambda+1)},\quad
+    \frac1{16b(b+\lambda)(2b+1)(2b+1+\lambda)},
+  \]
+  \[
+    \frac{1/(b+\lambda)+1/c}{16b(2b+1)(b+1)}.
+  \]
+  Adding gives
+  \[
+    I=\frac{2b^2+4bc+2c^2-c+1}
+    {8bc(b+1)(2b+1)(b+c-1)(2b+2c-1)}.
+  \]
+
+  For the clock envelope write $h(r)=(2\pi r)^{-1/2}$ and
+  $m(s)=1/(\pi\sqrt2\sqrt{s-1/2})$, $s>1/2$.
+  The two spatial pair differences have covariance matrix
+  $\left(\begin{smallmatrix}u+v+w&-w\\-w&w+z\end{smallmatrix}\right)$.
+  Writing $r=w+z$, its determinant is $rR+wz$, so their joint white
+  density factors as $h(r)h(R+wz/r)$. After deleting the nonnegative
+  clock-overlap penalty, the root kernel is
+  \[
+    H_\gamma(q)=\int_{|q|}^\infty e^{-R/2}h(R+\gamma)\,\ud R
+    =\int_{1/2}^\infty\frac{m(s)}s
+    e^{-(s-1/2)\gamma}e^{-s|q|}\,\ud s,
+    \qquad \gamma=\frac{wz}{r}.
+  \]
+  The equality follows from the positive Gamma integral for $h$.
+  Its convolution
+  with $e^{-A|q-w|}$ equals $2S_{A,s}(w)/(s+A)$, where
+  \[
+    S_{A,s}(w)=e^{-Aw}+\int_0^w A e^{-At}e^{-s(w-t)}\,\ud t\le1.
+  \]
+  Replacing $S$ by one is precisely the shift erasure. More generally,
+  replacing it by $e^{-\eta w}$ defines
+  \[
+    M_b(\eta;A)=\frac1{16}\int_{1/2}^\infty
+    \frac{m(s)}{s(s+A)}\int_0^\infty h(r)e^{-b^2r/2}
+    \int_0^r e^{-(s-1/2)w(r-w)/r-\eta w}\,\ud w\ud r\ud s.
+  \]
+  All integrals here are positive. Put $w=rt$ and $p=\sqrt{b^2+2\eta}$.
+  The elementary bridge integral is
+  \[
+    \int_0^1[b^2+2\eta t+2\tau t(1-t)]^{-3/2}\,\ud t
+    =\frac{2(p+b)}{bp((p+b)^2+2\tau)}.
+  \]
+  It follows by integrating a quadratic power; at $\eta=\tau=0$ both sides
+  are $b^{-3}$. Substitution $z=\sqrt{2s-1}$ and partial fractions give
+  \begin{align*}
+    M_b(\eta;A)&=\frac{p+b}{2\pi bp}
+    \int_0^\infty\frac{\ud z}
+    {(z^2+1)(z^2+c^2)(z^2+(p+b)^2)}\\
+    &=\frac{1+c+p+b}{4bp c(c+1)(c+p+b)(1+p+b)}.
+  \end{align*}
+  The usual identity $\int_0^\infty(z^2+q^2)^{-1}\ud z=\pi/(2q)$
+  proves the partial fraction evaluation; coincident rates follow by
+  continuity. At $\eta=0$, $p=b$. Substituting the asserted rational
+  parameters in these two expressions gives the displayed strict gap.
+  This proves No-go~\ref{P:nogo-18}.
+\end{proof}
+
+The boundary value $\nu=0$ is a legitimate fixed-parameter transform;
+continuity of both rational expressions also gives an overshoot for some
+$\nu>0$ nearby. The no-go does not refute $J\le I$, where $J$ is the
+original shared-clock candidate, nor does it decide an integrated
+comparison using this envelope. The surviving middle-cross comparison
+retains $S_{A,1/2}(w)$, instead of replacing it by one, and obtains a smaller
+envelope. Reopening this particular closure requires keeping a shift cost
+or proving a different integrated estimate. The historical standalone
+record was not separately adjudicated; the subsequent accepted
+middle-cross analysis and this reconstructed proof do not change that
+historical review status.

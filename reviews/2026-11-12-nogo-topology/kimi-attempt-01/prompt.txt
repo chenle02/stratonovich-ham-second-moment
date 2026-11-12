@@ -1,0 +1,47 @@
+Review the frozen packet rooted at <HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment/reviews/2026-11-12-nogo-topology/kimi-attempt-01/workspace. Primary target: candidate/topology.tex. Source revision: 474d678d3d0152a690ad98232769a2ac6e33dc20.
+
+You are an independent artifact reviewer. Read only the frozen packet
+and the supplied review contract. Report correctness, missing assumptions,
+incorrect constants, failed implications, and uncertainty. Do not edit files,
+use the network, send messages, publish, install, or delegate. Do not launch a
+research or coding workflow. Return a scientific report rather than a plan.
+Use exactly one JSON object with schema "subscription-review-report/1", verdict (PASS, PASS_WITH_NOTES, FAIL, or
+INCONCLUSIVE), confidence (high, medium, low), source_coverage (list of strings),
+checks (list of objects with claim, verdict, reason), findings (an object with
+fatal, major, minor lists), required_repairs (list), and limitations (list).
+required_repairs contains ONLY mandatory changes that block acceptance. Optional
+clarifications belong in findings.minor, never in required_repairs. PASS and
+PASS_WITH_NOTES require empty fatal, major and required_repairs lists and no
+failed/unchecked claim. If a repair is mandatory, return FAIL or INCONCLUSIVE;
+never weaken a finding to obtain PASS.
+Read every required source completely. Never use Grep head_limit or any other
+truncating or limiting option on a required source. After any pagination or
+truncation marker (for example a partial Read, an offset/limit notice, or
+"output truncated"), keep reading the next range until the whole file is read.
+In source_coverage, list each exact file and the line ranges you actually read.
+If coverage of any required source is incomplete, say "partial" for that source
+in source_coverage and state the gap in limitations.
+An AI review is not human verification or a novelty audit. Do not silently
+repair a candidate and PASS the original. A terminal error is not a verdict.
+
+Frozen packet file index (relative to workspace; a listed file is not proof of reading):
+["READING-PLAN.md", "candidate/nogo-feature-range.tex", "candidate/nogo-projection-escape.tex", "candidate/topology.tex", "sources/block-cost-mathematics.md", "sources/feature-range-mathematics.md", "sources/homogeneity-hypothesis.tex", "sources/hs-obstruction-mathematics.md", "sources/integrated_cameron_mean.tex", "sources/integrated_compact_gaussian.tex", "sources/integrated_covariance_foundation.tex", "sources/integrated_source_convergence.tex", "sources/integrated_temporal_equilibrium.tex", "sources/projection-mathematics.md"]
+
+Independently review the eight no-go statements and proofs in candidate/topology.tex for mathematical correctness and precise scope. This is a fresh scoped mathematical review, not a whole-book, novelty, visual, Lean or publication verdict. The author is a GPT model. No previous review grades are supplied. The text will be placed in the book chapter 'Obstructions and failed approaches'; chapter numbering is outside this assignment.
+
+Read READING-PLAN.md and EVERY LINE of EVERY file listed there. Do not truncate required files: continue every paginated read. These are complete relevant mathematical arguments, not claims of prior acceptance. The source-to-candidate applications must be checked, particularly the temporal equilibrium dependency and the exact masked mean operator. Other theorems appearing in full supporting modules are context, not additional assigned proof obligations unless the candidate uses them. No third-party paper theorem is used as an unexplained premise of the assigned no-gos. If you find a missing load-bearing premise, report it honestly rather than infer it from a label.
+
+Return exactly eight mandatory checks, one per ID below, in the checks array. Each check must have string fields id, claim, verdict, reason. The reason must reconstruct the decisive calculation and identify any missing hypothesis; do not only restate the conclusion. Scope exclusions are part of each check.
+NG21: For each fixed real s, dimensions2,3, every nonzero H:homog covariance, and T in(0,1], the chosen compact physical mask and sufficiently large observation cutoff preclude a same-given-noise compatible L2(Omega;HS(E_s,E_s)) first-driver realization. Check full phase matrix, weighted lower-left kernel, uniform positive near-diagonal time average, Bessel weights, divergence of integral r^(d-3), finite propagation, covariance mean k zeta(Gamma*q), actual Sobolev adjoint/test completion, and Bochner E[ZX] contradiction. No arbitrary-cutoff/all-state-space/SPDE-nonexistence conclusion.
+NG22: The admissible singular covariance delta0(dx1)dx2 is not d2white; mask fails to descend to the original null quotient. Recompute unmasked0/masked-positive variance, square-mask choice and temporal tensor.
+NG24: Whole-space Lambda^(-gamma) noncompactness via translations; check norm/correlation/separation and no Schatten endpoint necessity assertion.
+NG25: Supported raw H_I unit controls f_a tensor q_n/sqrt(M_a), fixed finite smooth projections killed exactly by spatial-white translations; growing mask retains a positive actual F phase pairing. Verify four-coordinate multiplier, unit velocity dual, constant independent of projection rank and failure only of uniform-radius fixed-projection tail convergence; fixed-radius compactness survives.
+NG26: Recompute scalar Young pure-power counterexample x=1/(16C^2), norm2x, nu3/2; averaged-r-budget rare-block example; correct surviving averaged nu-tail estimate for nu<r and linear/slack repair. Not an actual SPDE/control realizability theorem.
+NG27: Concentration has exact unit H_a norm, mean size epsilon^(-a/2), Lr lower epsilon^(1/r-a/2), pointwise0 away from t0 and endpoint noncompactness. Do not infer endpoint unboundedness or overstate a tensor transfer.
+NG30: Include the Gaussian cost ||h||^2/2. Prove pointwise J_n->0 yet scores at e_n>=1/2 and limiting supremum0; bounded action alone is not compactness or a variational limsup theorem.
+NG32: For Gamma nonzero,t0>0,positive finite feature cutoffs, explicitly check q=p(lambda)(phi'+lambda phi)/sqrt(2lambda) tensor g in actual feature Hilbert space, full lambda cancellation, positive truncated mass, orthogonality to complete closed Phi image, nonzero v-pairing and conditional auxiliary variance. No claim at t0=0; nonlinear-limit W-measurability remains unsettled. Check g nonzero for admissible singular Radon covariances too.
+
+Report output MUST be one strict bare JSON object, no Markdown fences, introductory prose or trailing prose. Required schema:
+{"schema":"subscription-review-report/1","verdict":"INCONCLUSIVE","confidence":"low","source_coverage":["exact packet-relative file and actual complete line ranges"],"checks":[{"id":"NG21","claim":"precise claim checked","verdict":"INCONCLUSIVE","reason":"actual mathematical reasoning"}],"findings":{"fatal":[],"major":[],"minor":[]},"required_repairs":[],"limitations":[]}
+This example is grammar only, not a requested judgment. Include all eight checks, not just the sample. Overall verdict allowed: PASS,PASS_WITH_NOTES,FAIL,INCONCLUSIVE. EACH check verdict allowed ONLY PASS,PASS_WITH_NOTES,FAIL,INCONCLUSIVE,PARTIAL. confidence must be high,medium,low, honestly chosen; never raise it to satisfy a gate. findings.fatal, findings.major, findings.minor, required_repairs and limitations must be arrays of STRINGS, never objects. Required repairs mean mandatory blocking changes; optional clarifications go in minor. A passing overall verdict requires all8 checks passing and no mandatory repairs. Keep all uncertainty explicit. Text-only review supplies no visual coverage. No editing, execution, network, delegation, external messages or publication.
+

@@ -1,0 +1,259 @@
+# Complete review target: No-go23,28,29,33
+
+\section{Finite optimization and checks on review arguments}
+\label{S:nogo-optimization}
+
+The last group concerns finite calculations. These examples are small enough
+that every number can be checked directly, but the distinctions they expose
+matter in the infinite-dimensional proof: the two variance directions, the
+normalization of an energy, the active set of an optimization, and the exact
+inequality used in a review.
+
+\subsection{NG-23: both Gaussian variance directions}
+\label{S:nogo-23}
+
+A rectangular Gaussian matrix has an input variance and an output variance.
+Keeping only one would simplify the moment estimate, but the dimensions of
+the two spaces cannot be ignored. This is the counterexample behind
+Remark~\ref{R:gaussian-one-variance-test}.
+
+\setcounter{nogo}{22}
+\begin{nogo}[A one-sided variance bound fails]\label{P:nogo-23}
+  Let $g_1,\ldots,g_n$ be independent standard real Gaussians,
+  $A_i=e_i^{\mathsf T}$ the coordinate row matrices, and
+  $X=\sum_i g_iA_i$. Put $V_{\rm in}=\sum_iA_i^*A_i$ and
+  $V_{\rm out}=\sum_iA_iA_i^*$. For $n=16$,
+  \[
+    \E\|X\|_{S_4}^4=288>144=9\operatorname{Tr}V_{\rm in}^2.
+  \]
+  The transposed family gives the analogous failure of an output-only bound.
+  More generally, no constant independent of $n$ bounds the left side by
+  $\operatorname{Tr}V_{\rm in}^2$ alone for all these row matrices.
+\end{nogo}
+
+\begin{proof}
+  The only nonzero singular value of $X$ is
+  $(\sum_i g_i^2)^{1/2}$. Since $\E g_i^4=3$ and
+  $\E g_i^2g_j^2=1$ for $i\ne j$,
+  \[
+    \E\|X\|_{S_4}^4
+    =\E\left(\sum_i g_i^2\right)^2
+    =3n+n(n-1)=n(n+2).
+  \]
+  Here $V_{\rm in}=I_n$, whereas $V_{\rm out}=n$ acts on a
+  one-dimensional space. The proposed bound gives $9n$, which is smaller
+  than $n(n+2)$ at $n=16$. The ratio to $\operatorname{Tr}V_{\rm in}^2=n$
+  is $n+2$, so no fixed constant works for all $n$. Transposition exchanges
+  the variance directions and preserves the singular values. This proves
+  No-go~\ref{P:nogo-23}.
+\end{proof}
+
+\paragraph{Scope and what survives.}
+This is a finite-matrix counterexample, not a counterexample to a wave
+estimate. Proposition~\ref{P:finite-gaussian-matrix} retains both variances.
+At $n=16$, its average and maximum bounds have fourth powers $1224$ and
+$2304$, respectively, and neither is contradicted by $288$.
+
+\paragraph{What would permit a different estimate?}
+A one-sided estimate would need additional structure relating the two
+variance operators, with its dimension dependence stated. It cannot follow
+from the Gaussian matrix form alone.
+
+\subsection{NG-28: the normalization matters when bounds are compared}
+\label{S:nogo-28}
+
+The occupation argument gives the upper ceiling $U_2$ for $C_2$.
+It is tempting to compare it with an energy expression by changing the
+coefficient of the gradient penalty. The comparison must be calculated:
+a value with penalty one is not interchangeable with a value with penalty
+one-half. In particular, not every comparison value below is itself a proved
+upper bound for the moment constant.
+
+Retain $q=4-\alpha$, $k=3-\alpha$ and $m=q/k$, and the occupation energies
+$\mathcal{E}_\zeta^{\mathcal O}$ of~\eqref{E:raw-occupation-definitions}.
+For $z>0$, the scalar maps are
+\[
+  F_b(z)=k\left[
+  \frac{(q-2b)^{(q-2b)/2}}{8(q-b)^{q-b}}
+  \left(\frac{2z}{2-\alpha}\right)^{(2-\alpha)/2}
+  \right]^{1/k},\qquad 0\le b<q/2.
+\]
+These are the maps in~\eqref{E:occupation-scalar-map}; here $b$ is only
+a display parameter and $a=\alpha_0$ is the temporal exponent.
+
+\setcounter{nogo}{27}
+\begin{nogo}[An occupation ceiling need not improve a comparison value]
+  \label{P:nogo-28}
+  For $d=2$, $\alpha=5/4$, $a=1/2$ and every nonzero admissible covariance,
+  \[
+    2^mF_a(\mathcal{E}_1^{\mathcal O})<U_2.
+  \]
+  Thus, the reverse comparison is not valid throughout the admissible class.
+\end{nogo}
+
+\begin{proof}
+  The energies are finite and positive by
+  Proposition~\ref{P:raw-occupation-energy}. Put
+  \[
+    \Delta=\frac12\{q\log q+(q-2a)\log(q-2a)\}
+    -(q-a)\log(q-a).
+  \]
+  Subtracting the logarithms of $F_a$ and $F_0$ gives
+  $\log(F_a(z)/F_0(z))=\Delta/k$. The identity in
+  Theorem~\ref{T:intrinsic-occupation-ceiling} gives
+  $U_2=2^m(2\zeta)^{\alpha/(2k)}F_0(\mathcal{E}_\zeta^{\mathcal O})$.
+  Therefore,
+  \[
+    \frac{2^mF_a(\mathcal{E}_\zeta^{\mathcal O})}{U_2}
+    =\exp\left\{\frac{\Delta-(\alpha/2)\log(2\zeta)}{k}\right\}.
+  \]
+  At the stated parameters, $q=11/4$, $k=7/4$, and
+  \[
+    8\{\Delta-(\alpha/2)\log2\}
+    =\log\frac{11^{11}7^7}{2^5 9^{18}}<0,
+  \]
+  because
+  \[
+    234966429149994773<4803028329503971872.
+  \]
+  This proves No-go~\ref{P:nogo-28}.
+\end{proof}
+
+\paragraph{Scope and what survives.}
+This refutes an ordering of two computed quantities, not an inequality for
+the actual moment. It does not decide whether $C_2$ is below the smaller
+comparison value. At $\zeta=1/2$, the logarithmic difference is instead
+$\Delta/k>0$, by strict convexity of $x\log x$; that is the valid strict
+comparison in Corollary~\ref{C:intrinsic-spatial-bracket}.
+
+\paragraph{What would permit a different comparison?}
+Match the covariance amplitude, admissible profiles and kinetic penalty,
+then prove the sign of the resulting ratio in the parameter range claimed.
+Comparing the names of the energies is insufficient.
+
+\subsection{NG-29: three safeguards in the Gram optimization}
+\label{S:nogo-29}
+
+The finite optimization of Section~\ref{S:finite-positive-gram} uses
+\[
+  F(\Phi)=2\sum_i\ell_i
+  \sqrt{(\langle\Phi,k_i\rangle-b_i)_+}-\frac12\|\Phi\|^2,
+  \qquad \ell_i>0,\quad b_i\ge0.
+\]
+The Gram entries $C_{ij}=\langle k_i,k_j\rangle$ are nonnegative. Three
+possible simplifications fail: omitting the empty active set, invoking
+global concavity, and treating entrywise order as positive semidefinite order.
+
+\setcounter{nogo}{28}
+\begin{nogo}[Empty sets, concavity and matrix order]\label{P:nogo-29}
+  Each of the following failures occurs within the finite setting above.
+  \begin{enumerate}
+    \item With one unit vector, $\ell=1/10$ and $b=4$, the nonempty-set
+      dual infimum is negative, while the primal supremum is nonnegative.
+    \item With $H=\R$ and $k=\ell=b=1$, the primal objective is not concave.
+    \item There are positive semidefinite Grams $C,D$ with
+      $0\le C_{ij}\le D_{ij}$ for every entry but $D-C$ not positive semidefinite.
+  \end{enumerate}
+\end{nogo}
+
+\begin{proof}
+  In the first example the nonempty dual is
+  \[
+    D(w)=\frac{1}{100w}-4w+\frac{w^2}{2},\qquad w>0.
+  \]
+  Its infimum is at most $D(4)=-3199/400<0$, whereas $F(0)=0$.
+  Dropping the empty value from the maximum of dual infima therefore cannot
+  give the primal supremum.
+
+  In the second example $F(x)=2\sqrt{(x-1)_+}-x^2/2$. Directly,
+  $F(0)=F(2)=0$ but $F(1)=-1/2$, violating midpoint concavity.
+
+  For the third example take
+  \[
+    C=\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad
+    D=\begin{pmatrix}1&1/2\\1/2&1\end{pmatrix}.
+  \]
+  The eigenvalues of $D$ are $3/2$ and $1/2$, while those of $D-C$ are
+  $1/2$ and $-1/2$. All entries are ordered as claimed. This proves
+  No-go~\ref{P:nogo-29}.
+\end{proof}
+
+\paragraph{Scope and what survives.}
+These are the checks in Remark~\ref{R:gram-controls}. They explain the
+empty-set convention and active-set proof of
+Proposition~\ref{P:gram-positive-optimizer}. Entrywise comparison still
+works in Proposition~\ref{P:gram-entrywise-comparison}: for nonnegative
+weights $w_i$, the form $\sum_{i,j}w_i(D_{ij}-C_{ij})w_j$ is nonnegative.
+No order on all vectors, and no covariance monotonicity for nonlinear waves,
+is asserted by that calculation.
+
+\paragraph{What would permit a shortcut?}
+A restricted concavity argument must first justify its active region.
+A matrix comparison must specify the vectors on which its quadratic form
+is nonnegative. Neither step follows from a convenient change of terminology.
+
+\subsection{NG-33: check the mathematics returned by a reviewer}
+\label{S:nogo-33}
+
+A review report is also a mathematical argument and can contain an incorrect
+step. This historical record groups three such checks. The manuscript had
+the correct expressions; the examples below explain why the proposed review
+steps could not replace them. These are not three new counterexamples to the
+stochastic model.
+
+\setcounter{nogo}{32}
+\begin{nogo}[Three invalid proof steps]\label{P:nogo-33}
+  The following assertions fail.
+  \begin{enumerate}
+    \item The free phase matrix
+      $S_0(t)=\left(\begin{smallmatrix}1&t\\0&1\end{smallmatrix}\right)$
+      is a contraction in the Euclidean norm for every $t\ge0$.
+    \item For $0<\vartheta<1$, the series term $x^n/(n!)^\vartheta$ equals
+      $A_nB_n$, where
+      \[
+        A_n=\frac{(2x^{1/\vartheta})^n}{n!},\qquad
+        B_n=2^{-\vartheta n/(1-\vartheta)}.
+      \]
+    \item The denominator $k!\,k^{(2-\alpha)k}$ may always be replaced by
+      the larger denominator $(k!)^3$ in the coefficient bound of
+      Proposition~\ref{P:low-alpha-upper}.
+  \end{enumerate}
+\end{nogo}
+
+\begin{proof}
+  The vector $(0,1)$ has norm one, but its image under $S_0(t)$ has norm
+  $\sqrt{1+t^2}>1$ for $t>0$. The same obstruction applies to the normalized
+  whole-space wave phase: its Fourier matrix tends to $S_0(t)$ as
+  $|\xi|\to0$. Unit Fourier bumps concentrated near zero, placed in the
+  velocity coordinate, therefore have image norms tending to
+  $\sqrt{1+t^2}$. The valid estimate keeps an exponential free-growth factor.
+
+  The correct identity in the second assertion is
+  $x^n/(n!)^\vartheta=A_n^\vartheta B_n^{1-\vartheta}$.
+  At $\vartheta=3/4$, $n=1$ and $x=1$, its left side is one, whereas
+  $A_1B_1=2\cdot(1/8)=1/4$. H\"older applies to the weighted product, as
+  in the proof of Proposition~\ref{P:static-phase-all-orders}.
+
+  For the third assertion choose the permitted spatial-white value
+  $\alpha=1$ and $k=3$. Then $k!k^{(2-\alpha)k}=162<216=(k!)^3$.
+  An upper bound $M/162$ does not imply the smaller upper bound $M/216$.
+  The valid factorial weakening is instead
+  \[
+    k!k^{(2-\alpha)k}\ge(k!)^{3-\alpha},
+  \]
+  since $k!\le k^k$ and $2-\alpha>0$; at this example its right side is
+  $36$. This proves No-go~\ref{P:nogo-33}.
+\end{proof}
+
+\paragraph{Scope and what survives.}
+The last arithmetic check refutes an inference between numerical bounds;
+it does not prove that the actual coefficient exceeds $M/216$.
+All three corrected arguments remain in the main text. Their lesson is to
+check an asserted derivation against its domains, factors and quantifiers,
+even when the report containing it has a favorable overall verdict.
+
+\paragraph{What would permit the discarded steps?}
+Contractivity needs a suitable invariant norm or a restricted state class.
+The H\"older factors need their conjugate powers. A stronger factorial
+bound needs an additional estimate; it cannot be obtained by changing the
+exponent in the denominator.

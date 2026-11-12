@@ -1,0 +1,90 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "candidate-review.tex lines 1-730 (complete, as supplied inline in the frozen packet)",
+    "context.txt lines 1-535 (complete, as supplied inline in the frozen packet)",
+    "exact-checks.json lines 1-44 (complete, as supplied inline in the frozen packet)",
+    "exact-checks.py lines 1-33 (complete, as supplied inline in the frozen packet)"
+  ],
+  "checks": [
+    {
+      "claim": "NG08: Riesz d=2 witness diverges for 3/2<=alpha<2 (logarithmic at 3/2); product witnesses exist for every 1<alpha<2 in dimensions 2 and 3; smoothing cannot restore the constant (Fatou); examples satisfy alpha+alpha_0<2; scope limited to the spatial-supremum input.",
+      "verdict": "PASS",
+      "reason": "Wedge estimate 0<1-|y|^2<=2rho verified (cos<=-1/2 on the angular range), constant c/(3 sqrt2) from angular mass 2pi/3 and density 1/(2pi sqrt(1-|y|^2)) verified, and rho^{1/2-alpha} diverges exactly for alpha>=3/2. For the product kernel, a1=(1+max{2-alpha,alpha-1})/2 and a2=alpha-a1 satisfy 0<a1,a2<1 and a1+a2/2>1 on both branches (checked at the join alpha=3/2 and at the endpoints); the change of variables u=1-y1, y2=sqrt(2u-u^2)w reproduces the stated beta factor B((1-a2)/2,1/2) and the u^{-a1}(2u-u^2)^{-a2/2} integrand, divergent at u=0 since a1+a2/2>1. The 3D projection identity of the wave surface measure onto G_1^{(2)} (two graphs, Jacobian (1-|y|^2)^{-1/2}/4pi) is correct, matching the supplied source P:higher-obstructions. Gaussian-mixture positive definiteness per coordinate plus Schur product is valid; singular sets have zero translated wave measure so the Fatou liminf conclusion holds; alpha_0 in (0,2-alpha) gives admissibility."
+    },
+    {
+      "claim": "NG09: Gamma=|x1|^{-9/10}|x2|^{-3/5} in d=3 is admissible (alpha=3/2, alpha_0=1/4); F=|x|^{1/2}Gamma stays locally integrable and tempered but is not positive definite, via finite convolution at 0 versus growth c_sigma sqrt(L) along Le3 contradicting covariance Cauchy--Schwarz.",
+      "verdict": "PASS",
+      "reason": "Exponents 9/10+3/5=3/2 with each in (0,1) give local integrability and Gaussian-mixture positive definiteness of Gamma; alpha+alpha_0=7/4<2. Multiplication by |x|^{1/2} preserves local integrability/temperedness. (p_sigma*F)(0) is finite (integrable coordinate singularities, Gaussian decay). On the box [1,2]x[1,2]x[L-1,L+1] the Gaussian factor is bounded below by (2pi sigma^2)^{-3/2} e^{-9/(2 sigma^2)} and |y|^{1/2}>=(L-1)^{1/2}, yielding c_sigma sqrt(L) for L>=2. For a positive definite distribution the sesquilinear form on Schwartz tests obeys Cauchy--Schwarz; choosing a Gaussian test with autocorrelation p_sigma gives |(p_sigma*F)(x)|<=(p_sigma*F)(0), contradicting the growth. Scope correctly restricted to this radial multiplication."
+    },
+    {
+      "claim": "NG11: F(A)=E cosh^2(sqrt Z)=1+sum 2^{3k-1}(2k)!A^k/(k!(4k)!); ratio bound 16A(2k+1)/prod_{j=1}^4(4k+j)<=16A/(4k+1)^3; tail certificate with q_A=16A/81^3<1; outward rational intervals over 10^6 and strict gap 6945091633359/10^12>0 refuting log-convexity in additive variance; geometric (log-amplitude) convexity survives.",
+      "verdict": "PASS",
+      "reason": "Series derivation from cosh^2 w=(1+cosh 2w)/2 and even Gaussian moments is correct; termwise integration is justified by the dominating exp(2 sqrt|Z|) with finite Gaussian expectation, and all resulting coefficients are positive. The ratio computation (using (2k+2)/(k+1)=2) gives the stated 16A(2k+1)/((4k+1)...(4k+4)), and (2k+1)(4k+1)^2 <= (4k+2)(4k+3)(4k+4) holds (difference 32k^3+112k^2+94k+23>0), so the cubic bound and the geometric tail after k=20 are valid; q_A<1 at A=99,100,101. I independently recomputed the integer arithmetic: 212332413^2 - 207442590*217304019 = 45085053610402569 - 45078108518769210 = 6945091633359, matching the tex and JSON exactly; rough partial sums (about 212.33 at A=100) corroborate the intervals. The additive-versus-logarithmic distinction (positive power series are log-convex in log A by H\u00f6lder) is correctly stated, and the example is explicitly declared outside the homogeneous model."
+    },
+    {
+      "claim": "NG12: for d=3, alpha=11/10, alpha_0=1/4, beta=9/5, Gamma=|x1|^{-9/10}|x2|^{-1/5}, the Mellin-square recipe H=int s^{-4/5} F_s^2 ds is not locally finite: strip bound int_B F_s^2 >= c s^{-2/5}, Tonelli gives c int_0^{1/16} s^{-6/5} ds = infinity; failure isolated to local finiteness of the infinite mixture.",
+      "verdict": "PASS",
+      "reason": "Admissibility (exponents in (0,1), sum 11/10, alpha+alpha_0=1.35<2) is correct. For |x1|<=sqrt s, integration over sqrt s<=y1<=2 sqrt s gives (p_s^{(1)}*|.|^{-9/10})(x1)>=c s^{-9/20}; for x2 in [1/2,1] the second factor has a positive s-independent lower bound; the third factor is 1. The strip volume 2 sqrt s yields int_B F_s^2 >= c s^{1/2-9/10}=c s^{-2/5}; Mellin weight (2 alpha-beta)/2-1 = -4/5; positive Tonelli gives s^{-6/5}, divergent at 0. Formal homogeneity degree -beta (-9/5) is consistent. The conclusion excludes the displayed recipe only, as stated."
+    },
+    {
+      "claim": "NG13: the plane covariance (1/2pi)|y|^{-1/2}dy tensor delta_0(dz) is admissible with alpha=3/2, alpha_0=1/4; any vaguely convergent nonnegative Gamma_n with Gamma_n(dx)<=C_n|x|^{-3/2}dx forces C_n to infinity (not merely unbounded); no claim against other majorants or cone density.",
+      "verdict": "PASS",
+      "reason": "Local integrability and homogeneity (ball mass proportional to R^{3/2}, hence d-alpha=3/2) verified; positive definiteness via the planar Riesz Gaussian mixture times the constant-in-z kernel is correct; temperedness follows from polynomial growth. If a subsequence had C_n<=C, vague convergence on nonnegative compactly supported f plus the domination would give Gamma <= C|x|^{-3/2}dx as measures, but the planar annulus 1<=|y|<=2 has positive Gamma mass and zero Lebesgue measure - contradiction. Excluding every bounded subsequence yields C_n -> infinity as stated. The scope disclaimers (no ellipsoid representation needed; rules out only the uniform scalar isotropic envelope) are honored."
+    },
+    {
+      "claim": "NG19: actual admissible d=1 parent C=(1-a)|s-t|^{-a}|x-y|^{-1/2} (a=99/100, alpha=1/2) and legal rank-one projection give C-P PSD with E u_C(h;1,0) < E u_P(h;1,0) for small h>0; A_C=20000/1932951<1/96; A_P>=101/(3200 sqrt2)>1/48; amplified-covariance L2 tail O(h^4); bounded-potential remainder M^n/(2n)!; q-tilt density E L_q=1, E L_q^2=[q(2-q)]^{-1/2}; Q=C+(q-1)P with A_Q<A_(qP)-1/96; equivalent-law (not new model) scope.",
+      "verdict": "PASS",
+      "reason": "Independently recomputed: E_phi=int_{[-1,1]^2}|x-y|^{-1/2}=16 sqrt2/3; temporal integral 2/(2-a), so V=2E_phi/(2-a). B_a(s)>=1 and <=2; F<=4 globally and F>=2 sqrt2 on [-1,1] (since (sqrt(1+x)+sqrt(1-x))^2=2+2 sqrt(1-x^2) in [2,4]); hence m m>=8/V on the backward cone (kernel support gives |y|<1-t, |z|<1-s). Integrating z first gives 2 sqrt(t-s) (= (t-s)^{1-alpha}/(1-alpha)), the y-mass is 1-t, and the Beta integral (1/2)B(2-alpha-a,3) yields the stated three-factor denominator; numerically (0.01/0.5)/(0.51*1.51*2.51)=0.02/1.932951=20000/1932951, and 20000*96=1920000<1932951. Constant-covariance integral =1/24 verified, so A_P>=8/(24V)=101/(3200 sqrt2), strictly above 1/48 since 48*101=4848>4800>=3200 sqrt2. The amplified-covariance application of P:mixed (r^2 C admissible; nonnegative series contains r^{2n} E X_n^2, giving ||X_n||_2<=sqrt(B_r) r^{-n} and the O(h^4) L2 tail; odd means vanish by sign symmetry) is within the named prior input's hypotheses. The deterministic Picard mass pattern 1/2, 1/24 = 1/(2n)! for n=1,2 verified by direct integration; absolute series bounded by E cosh sqrt(M|Z|)<infinity. The tilt computations (E L_q=1, E L_q^2=[q(2-q)]^{-1/2}, tilted variance q, covariance Q=C+(q-1)P by independence of Z and W-perp) are all correct, and A_Q=A_C+(q-1)A_P<qA_P-1/96 follows from the gap. The regularization bound 0<=m_{epsilon,delta}<=8/sqrt V (from (1-a)int K_delta<=2 and F<=4) and dominated convergence on the finite-mass (mass 1/24) terminal kernel are consistent with the supplied source. The projection is explicitly not asserted stationary/homogeneous, and the q-statement is framed as equivalent-law only."
+    },
+    {
+      "claim": "NG14: two independent variance-A Gaussian blocks give E y(1)^2=1+A/3+O(A^2), E y(2)^2=1+3A+O(A^2), hence E y(2)^2 > (E y(1)^2)^2 for small A>0, with a rigorous Gaussian-integrable remainder; scalar diagnostic outside H:homog.",
+      "verdict": "PASS",
+      "reason": "Propagator M(z)=[[c,s],[zs,c]] with c=sum z^n/(2n)!, s=sum z^n/(2n+1)! is the correct unit-time phase map; y(2)=c(Z2)c(Z1)+s(Z2)Z1 s(Z1) follows from phase continuity. Expansion 1+(3/2)z+(1/2)w+(5/24)z^2+(5/12)zw+(1/24)w^2 verified term by term; after squaring the z^2 coefficient is 5/12+9/4=8/3 and the w^2 coefficient is 1/12+1/4=1/3 (sum 3, matching exact-checks.py); the zw term is killed by independence and centering. Single-block c(z)^2=1+z+z^2/3 gives 1/3, and (1+A/3)^2=1+2A/3+O(A^2), gap 7A/3. Remainder: |c(z)|+|s(z)|<=2 e^{sqrt|z|} bounds the squared displacement by C(1+|z|)^2 e^{2 sqrt|z|+2 sqrt|w|}, integrable at any fixed variance A1; termwise even-moment evaluation yields a convergent series with nonnegative coefficients b_j at A1, and sum_{j>=2} b_j A^j <= (A/A1)^2 sum b_j A1^j = O(A^2). So the claim does not rest on formal coefficients alone. Outside-model scope is stated explicitly."
+    },
+    {
+      "claim": "NG15: with M(z)=M0+zM1+z^2 M2+..., the full variance coefficient K=M1^T M1+M0^T M2+M2^T M0 equals [[4/3,4/5],[4/5,17/45]]; (1,-2)K(1,-2)^T=-16/45; first-random-term-only 5/4 underestimates the e1 coefficient 4/3; E||M(sigma Z)(1,-2)^T||^2=5-16 sigma^2/45+O(sigma^4); scalar arbitrary-phase scope only.",
+      "verdict": "PASS",
+      "reason": "M0=[[1,1],[0,1]], M1=[[1/2,1/6],[1,1/2]], M2=[[1/24,1/120],[1/6,1/24]] verified against the series of c, s, zs. Recomputed by hand: M1^T M1=[[5/4,7/12],[7/12,5/18]]; M0^T M2+M2^T M0=[[1/12,13/60],[13/60,1/10]]; sums give 5/4+1/12=4/3, 7/12+13/60=4/5, 5/18+1/10=17/45. Quadratic form: 4/3-16/5+68/45=(60-144+68)/45=-16/45. ||M0(1,-2)^T||^2=||(-1,-2)||^2=5. The order-sigma^2 formula (odd Gaussian moments vanish) and the O(sigma^4) tail via absolute summability at fixed sigma_1 are rigorous. The text correctly disclaims any implication for the original (1,0) solution-value moment."
+    },
+    {
+      "claim": "NG16: J_c=c^{2/(2-r)}J_1 with J_1 finite and positive; the surrogate sup{2AH^r-H^2}=2J_1<J_2 strictly; for Y=e^{sigma Z} the full tilted-mean Cauchy--Schwarz bound optimized at h=sigma recovers E Y^2=e^{2 sigma^2} exactly, while the deterministic substitution Y(h)=e^{sigma h} loses half the exponent; generic score calculations, not an SPDE no-go.",
+      "verdict": "PASS",
+      "reason": "Substitution H=c^{1/(2-r)}K scales both terms by c^{2/(2-r)} (since 1+r/(2-r)=2/(2-r)); J_1 finite for r<2 and positive for small H. The surrogate factors as 2J_1, and 2/(2-r)>1 with J_1>0 gives strictness. E L_h^2=e^{h^2}; E_{Q_h}Y=e^{sigma^2/2+sigma h}; exponent sigma^2+2 sigma h-h^2 maximized at h=sigma equals 2 sigma^2, matching E e^{2 sigma Z}; the deterministic substitution maximizes 2 sigma h-h^2 to sigma^2. Scope disclaimers are present and accurate."
+    },
+    {
+      "claim": "NG20: for any 0<a<1 and d=1 white covariance c_Gamma delta_0, the constructed nonnegative smooth compactly supported psi yields profiles h_sigma not representable as b(sigma)U(x), witnessed by the positive determinant c_Gamma^2(A^2-B^2)q1(x1)q2(x2); representation failure only, not optimizer insufficiency; model condition 1+a<2.",
+      "verdict": "PASS",
+      "reason": "Support of f1 in (1/8,1/4) gives u<1-u, hence A>B>0; time reflection gives h_0=c_Gamma(Aq1+Bq2), h_1=c_Gamma(Bq1+Aq2); disjoint spatial supports make the determinant c_Gamma^2(A^2-B^2)q1(x1)q2(x2)>0, while a product form would force it to vanish. White noise is an admitted case (alpha=d=1 in H:homog) and 1+a<2. The omission of the immaterial (1-a) temporal prefactor does not affect the conclusion. The auxiliary bound h_sigma>=Gamma*int psi du (from |sigma-u|^{-a}>=1 on the unit square) is correct and its limited role is stated."
+    },
+    {
+      "claim": "NG31: B=[[0,1],[1,0]] has ||e^{tB}||=e^t but contracts the phase (1,-1) as e^{-t}; masks chi_s, chi_l agreeing on [-2,2] with zero initial displacement and unit-mass velocity in (5,6) produce free-wave displacements 0 versus 1/2 throughout [-2,2] at time 9; claims restricted to arbitrary-phase/guard failures.",
+      "verdict": "PASS",
+      "reason": "Eigenvalues +/-1 with eigenvectors (1,1), (1,-1) are correct, and symmetry gives the operator norm e^t for t>=0 while e^{tB}(1,-1)=e^{-t}(1,-1). chi_s v=0 (supports [-4,4] versus (5,6)) and chi_l v=v; d'Alembert with zero displacement gives u(9,x)=(1/2)int_{x-9}^{x+9}v=1/2 on [-2,2] because x-9<=-7<5 and x+9>=7>6. The stated moral (need cone-wide agreement of both coordinates; retain the specified phase or prove a nonvanishing unstable component) does not overreach."
+    },
+    {
+      "claim": "Integration: every new claim carries a proof and exact scope boundaries; scalar counterexamples are not promoted to the homogeneous model; no mathematical statement rests on formal coefficients alone; contextual book references are not fresh proof obligations.",
+      "verdict": "PASS",
+      "reason": "NG-11, NG-14, NG-15, NG-16 explicitly declare themselves scalar diagnostics outside H:homog; NG-14 adds the analytic O(A^2) certificate in the text (exact-checks.py itself defers the tail to the TeX); NG-19 applies the named prior input P:mixed within its stated hypotheses (amplified covariance r^2 C remains admissible, nonnegativity yields the diagonal bound) and matches the supplied projection-residual source verbatim in constants and structure; NG-08 restates the supplied P:higher-obstructions with identical computations; NG-12 matches the supplied Mellin-screen exponents; NG-20 matches the supplied nonseparability screen including the deliberate positive-a restriction. Citations of H:spatial-maximum, C:static-interaction, P:static-phase-all-orders, R:three-endpoint-scope, S:interval-upper, S:static-phase are contextual references permitted by the contract. No failed implication between premises and conclusions was found in any entry."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Packet audit-trail naming: exact-checks.py serializes to 'checks.json' and emits additional entries (NG-05, NG-12, NG-18, NG-23, NG-28, NG-29, NG-33) not present in the supplied exact-checks.json, which is a four-entry subset (NG-11, NG-14, NG-15, NG-19); all in-scope values in the supplied JSON agree with the tex and with hand recomputation, so this is a hygiene note only.",
+      "NG-12 does not state the variance normalization of the heat kernel p_s; all relevant bounds use generic constants, so the divergence conclusion is unaffected.",
+      "NG-13's phrase 'Gamma would be absolutely continuous' is shorthand for the correct statement that Gamma would be dominated by the absolutely continuous measure C|x|^{-3/2}dx; the argument itself is sound.",
+      "Hypothesis H:spatial-maximum and the successor results cited in scope paragraphs (C:static-interaction, P:static-phase-all-orders, R:three-endpoint-scope, S:interval-upper, S:static-phase) are not restated in the packet; per the review contract these are not fresh proof obligations, and the two prior inputs that are supplied (P:mixed, P:higher-obstructions) match their uses in NG-19 and NG-08."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Per the review contract, all input was supplied inline and no tools were used; the inline text (candidate-review.tex 730 lines, context.txt 535 lines, exact-checks.json 44 lines, exact-checks.py 33 lines) is taken as the faithful frozen packet.",
+    "P:mixed, the parent fixed-order construction, and finiteness at every amplified homogeneous covariance are named prior inputs: their internal proofs were not re-derived; only the correctness of their application here (amplified-covariance tail, self-pair coefficient, nonnegativity) was checked, as the contract directs.",
+    "The NG-11 rational enclosures and gap numerator were verified by independent hand arithmetic; exact-checks.py was read but not executed, so its runtime behavior is not certified.",
+    "The TikZ figure in NG-14 was checked only for consistency of its labels with the proven formulas; this review is not a rendered-image verification, source-paper audit, novelty judgment, or whole-book gate, and an AI review is not human verification."
+  ]
+}

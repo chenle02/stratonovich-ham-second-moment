@@ -4,7 +4,7 @@
 
 **Start here:** [STATUS-DIGEST.md](STATUS-DIGEST.md) is a one-page gate board and constraint summary (derived; Progress.md remains the authority).
 
-**Current book-style companion:** [293-page book PDF](notes/notes_stratonovich_ham_second_moment.pdf), with 11 chapters, four appendices, a proof guide, contents and illustrations list. The [27-page reader](notes/notes_stratonovich_ham_second_moment_reader.pdf) remains the short entry point. See [the book guide](notes/BOOK-GUIDE.md), [source/PDF validation](notes/figures/VALIDATION.json), [reading guide](notes/README-reader.md) and [development history](AI-DEV-HISTORY.md).
+**Current book-style companion:** [380-page book PDF](notes/notes_stratonovich_ham_second_moment.pdf), with 12 chapters, six appendices, a proof guide, contents and illustrations list. The [28-page reader](notes/notes_stratonovich_ham_second_moment_reader.pdf) remains the short entry point. See [the book guide](notes/BOOK-GUIDE.md), [source/PDF validation](notes/figures/VALIDATION.json), [reading guide](notes/README-reader.md) and [development history](AI-DEV-HISTORY.md).
 
 All mathematical content and labels are retained; supplementary routes are now
 in appendices. The companion has19 TikZ figures and the reader has nine.

@@ -1,341 +1,85 @@
-% Appendix G: approaches that do not work. The chapter heading is in the main
-% file. Every entry is taken from the project's no-go record; the identifiers
-% NG-01 to NG-33 match scripts/ai-statistics/no-go/nogo-counts.json.
+% Stable NG-01--NG-33 records, reorganized by mathematical cause.
+% Historical review grades are preserved in the provenance record.
+\section{How to read the negative results}
+\label{S:nogo-guide}
 
-A no-go is a result. It closes an approach, says exactly how much it closes,
-and saves the next person from trying it again. This appendix lists every
-mathematical no-go in the record of this project: \aiNogoMath{} approaches
-that cannot work as stated, or claims that turned out to be false. Most of
-them were found by the AI system itself, by testing an idea on a small case
-before investing in it; some were found by its reviewers. Tao has pointed
-out that negative results are rarely reported, so that what one hears about
-AI in mathematics is skewed towards success~\cite{tao:26:post}. This list is
-one way to correct that for a single project.
+The proof of the main results did not follow one route from beginning to end.
+Several plausible steps lost the required time scale, changed the covariance
+class, discarded part of the wave state, or asserted uniformity that was not
+available. This chapter explains those failures as mathematical results.
+Each entry starts with the reason the approach was attractive, states a
+precise obstruction, and supplies its argument. It then separates what fails
+from what survives and specifies what a replacement would need to establish.
 
-Each entry says what was tried, why it fails, and what it does \emph{not} rule
-out. None of them refutes a theorem of this book: each closes one route, and
-several of the routes were replaced by the arguments in the main text. Many
-of the failures are shown on a simple test case, such as white noise in
-space, a single Gaussian variable, or a small diagram; the entry then says
-only that the route fails there. The identifiers NG-01 to NG-33 are the stable identifiers in the project
-record.
+\paragraph{Where to begin.}
+For pairing arguments, start with the two-chain expansion in
+Proposition~\ref{P:mixed}; for covariance and phase arguments, recall
+Hypothesis~\ref{H:homog} and the displacement--velocity state. The topology
+section states its own spaces, and the finite examples need only Gaussian
+moments and elementary optimization. Each entry gives more specific
+prerequisites and points to the part of the positive proof it explains.
+The five groups below can be read independently.
 
-The entries are grouped by how far they were checked.
-\begin{itemize}
-  \item \emph{Proved in this book} (\aiNogoInBook{} entries): the failure is a
-    stated result of the book, with its proof.
-  \item \emph{Reviewed and settled} (\aiNogoReviewed{} entries): the failure
-    has a review by an AI model of a different family from the author, and a
-    written adjudication. This does not mean that every review met the
-    acceptance threshold (see NG-09). It is not proved in this book.
-  \item \emph{Recorded only} (\aiNogoRecorded{} entries): the failure was
-    found and checked by the author system, usually by an exact computation
-    on a test case; no separate independent adjudication of it was located.
-\end{itemize}
-Four further records concern the source
-paper~\cite{chen:author2026:time-dependency}; they are not listed here. The failures of a method of checking and of the
-process are counted in Appendix~\ref{S:appendix-ai-statistics}.
+The stable records NG-01 to NG-33 are printed below as No-go~01 to No-go~33.
+Their numbers do not change when related examples are placed together. Some
+restate results proved earlier in the book; others give the retained
+counterexample in full. They are records of attempted approaches, not a count
+of independent discoveries. No-go~\ref{P:nogo-33} groups three elementary
+errors found in review arguments.
 
-\section*{Proved in this book}
+\paragraph{The scope of a counterexample.}
+Unless an entry specifies a different model, the covariance and initial data
+are those of Hypothesis~\ref{H:homog} and the canonical Stratonovich equation
+with data $(1,0)$. We write $a=\alpha_0$. Scalar ordinary differential
+equations, finite matrices and abstract Hilbert-space examples are identified
+as such. They test the general principles stated in those entries; an example
+outside Hypothesis~\ref{H:homog} does not refute a theorem restricted to that
+hypothesis. A numerical majorant growing too quickly is an obstruction to its
+use in a proof, not a lower bound on the actual moment.
 
-\begin{description}
-  \item[NG-01.] \textbf{One estimate for every pairing cannot reach the time scale
-    $t^\kappa$.} \emph{Tried:} bound every two-chain pairing integral
-    by~\cite{chen:author2026:time-dependency}*{Theorem~3.1} with one common
-    Laplace parameter, and then count the pairings. \emph{Why it fails:} the
-    optimized bound grows like $\exp(ct^{\rho})$ with
-    $\rho=\beta/(\beta-1)>\kappa$, where $\beta=4-\alpha-\alpha_0$; its
-    coefficient of order $k$ misses the factor $(k!)^{\alpha_0}$. The same
-    loss occurs for the first moment. \emph{Not ruled out:} refined or
-    grouped uses of that theorem. \emph{Where:}
-    Proposition~\ref{P:envelope} and Remark~\ref{R:G0-verdict}.
+\paragraph{The status of the evidence.}
+The historical record distinguishes arguments already in the book, arguments
+that received a review, and author-side diagnostics. These descriptions are
+not interchangeable. A review may have occurred without meeting its required
+acceptance threshold, as happened for the earlier NG-09 record. The proofs
+below are the present mathematical account; the original reports and their
+grades remain unchanged. Where an earlier computation was only formal, the
+necessary analytic justification is given explicitly rather than attributed
+to that earlier computation.
 
-  \item[NG-08.] \textbf{The spatial-maximum input fails for rougher covariances.}
-    \emph{Tried:} assume a uniform bound on a translated spatial convolution
-    (Hypothesis~\ref{H:spatial-maximum}) for the higher-dimensional upper
-    bound. \emph{Why it fails:} in $d=2$, for the Riesz covariance with
-    $3/2\le\alpha<2$ the shifted Green integral diverges (logarithmically at
-    $\alpha=3/2$); for every $1<\alpha<2$ a product covariance
-    $c|x_1|^{-\alpha_1}|x_2|^{-\alpha_2}$ is admissible but has no uniform
-    maximum. \emph{Not ruled out:} the result itself; the full class is
-    covered by a different argument (Section~\ref{S:interval-upper}).
-    \emph{Where:} Proposition~\ref{P:higher-obstructions}.
+\begin{center}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.26\textwidth}>{\raggedright\arraybackslash}p{0.41\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}@{}}
+  \toprule
+  Obstruction & What a successful argument must retain & Entries \\
+  \midrule
+  \hyperref[S:nogo-pairings]{Pairing and coefficient estimates} & Temporal order, spatial support and
+  the quantifiers on constants & 01--07, 10, 17, 18 \\
+  \hyperref[S:nogo-covariance]{Covariance comparisons} & The actual covariance class and the correct
+  order of comparison & 08, 09, 11--13, 19 \\
+  \hyperref[S:nogo-phase]{Phase and Gaussian controls} & Velocity, the second-order mean and the
+  full tilted law & 14--16, 20, 31 \\
+  \hyperref[S:nogo-topology]{Operator spaces and limits} & The specified topology, radius dependence
+  and control of moving maximizers & 21, 22, 24--27, 30, 32 \\
+  \hyperref[S:nogo-optimization]{Finite optimization and review} & Both variances, active sets and exact
+  algebraic factors & 23, 28, 29, 33 \\
+  \bottomrule
+\end{tabular}
+\end{center}
 
-  \item[NG-17.] \textbf{Copying the first-moment Brownian clock to two chains
-    undercounts the cross pairs.} \emph{Tried:} copy the Brownian clock
-    representation of the first moment
-    \cite{chen:author2026:time-dependency}*{Theorem~6.1} to two chains, with
-    a constant correlation between the two clocks (independent or shared).
-    \emph{Why it fails:} for every nonzero admissible covariance the copied
-    cross-pair transform is strictly smaller than the true one. For spatial
-    white noise in $d=1$, with $\alpha_0=1/2$ and damping parameter
-    $\theta=1$, the true cross-pair transform is about $0.4431$, while the
-    shared and independent clocks give about $0.2596$ and $0.2041$. \emph{Not ruled out:} weights that depend on the
-    relative order, other couplings of the clocks, and other two-clock
-    methods. \emph{Where:} Proposition~\ref{P:clock-copy-obstruction} and
-    Remark~\ref{R:clock-copy-scope}.
+The main text cites these entries where they explain a choice in the proof.
+The entries also point back to the construction or estimate that survives.
+This is intended to let a reader begin with an attempted approach, understand
+its obstruction, and then follow the successful replacement.
 
-  \item[NG-22.] \textbf{A physical mask need not preserve tests of zero noise
-    variance.} \emph{Tried:} assume that multiplying a test function by a
-    compact mask is bounded in the norm given by the noise. \emph{Why it
-    fails:} in $d=2$ with $\alpha=1$ and $\Gamma=\delta_0(dx_1)\,dx_2$, a test
-    $g=\chi(x_1)\chi''(x_2)$ has zero variance while the masked test has
-    positive variance. \emph{Not ruled out:} bounds in an auxiliary spectral
-    norm, which the book uses instead. \emph{Where:}
-    Proposition~\ref{P:masked-quotient-obstruction}.
+Tao has observed that negative results are underreported, which can make the
+public account of AI-assisted mathematics appear more successful than the
+underlying research process~\cite{tao:26:post}. The purpose here is to make
+these particular failures usable. Separate source-paper qualifications and
+failures of the checking process retain their own records; they are not
+silently added to the 33 mathematical identifiers below.
 
-  \item[NG-23.] \textbf{A Gaussian moment bound needs both variance directions.}
-    \emph{Tried:} bound the fourth Schatten moment of a finite Gaussian
-    matrix by its input variance alone (or its output variance alone).
-    \emph{Why it fails:} with sixteen coordinate rows the moment is $288$,
-    while the input-only bound gives $144$; the transpose refutes the
-    output-only bound. \emph{Not ruled out:} nothing about the wave; this is
-    a fact about finite matrices. \emph{Where:}
-    Remark~\ref{R:gaussian-one-variance-test}.
-
-  \item[NG-24.] \textbf{A whole-space cutoff cannot replace the compact cutoff.}
-    \emph{Tried:} take the cutoff equal to one everywhere in the
-    compactness argument. \emph{Why it fails:} the operator
-    $\Lambda^{-\gamma}$ on $L^2(\mathbb{R}^d)$ is not compact for any
-    $\gamma>0$, since translates of one function have no convergent
-    subsequence. \emph{Not ruled out:} only the cutoff equal to one is excluded;
-    nothing is claimed at the endpoint of the Schatten range. \emph{Where:} Proposition~\ref{P:cutoff-boundary-tests}.
-
-  \item[NG-28.] \textbf{Comparing two computed upper bounds is not automatic.}
-    \emph{Tried:} assume that the occupation-based upper bound of
-    Theorem~\ref{T:intrinsic-occupation-ceiling} always improves on the
-    comparison bound with energy penalty $\zeta=1$. \emph{Why it fails:} for $\alpha=5/4$, $\alpha_0=1/2$ and
-    $d=2$ the comparison has the wrong sign. \emph{Not ruled out:} this
-    compares two bounds only; no moment inequality is refuted. \emph{Where:}
-    the proof of Corollary~\ref{C:intrinsic-spatial-bracket}.
-
-  \item[NG-29.] \textbf{Three shortcuts in the finite Gram optimization fail.}
-    \emph{Tried:} drop the empty value, use concavity on the whole range,
-    or read entrywise order of Gram matrices as positive semidefinite order.
-    \emph{Why it fails:} explicit examples with one or two vectors refute
-    each shortcut. \emph{Not ruled out:} these are finite checks, not
-    statements about waves. \emph{Where:} Remark~\ref{R:gram-controls}.
-\end{description}
-
-\section*{Reviewed and settled}
-
-\begin{description}
-  \item[NG-02.] \textbf{No bound of the same form holds for every single diagram.}
-    \emph{Tried:} a bound $C^k t^{(3-\alpha_0)k}/(k!)^3$ for every pairing
-    diagram of order $k$, for white noise in space. \emph{Why it fails:} the
-    diagram in which every pair is adjacent has
-    $\log\bigl[(k!)^3J(1)\bigr]=\alpha_0k\log k+O(k)$. \emph{Not ruled out:}
-    a bound for the sum over diagrams, which is the route taken in the book.
-
-  \item[NG-03.] \textbf{The second moment is not bounded by the squared mean at
-    doubled noise variance for all times.} \emph{Tried:}
-    $\E u^2(t,x)\le(\E u_{\sqrt2}(t,x))^2$ for every $t>0$, where
-    $u_{\sqrt2}$ solves the equation with the noise multiplied by $\sqrt2$.
-    \emph{Why it fails:} the inequality forces a condition on the first
-    coefficients that fails for a Riesz covariance, so it fails for small
-    $t$; and the wave solution is not a positive mixture of exponentials of
-    linear Gaussian functionals. \emph{Not ruled out:} a version for white
-    noise, a comparison for large times, a constant larger than one, and the
-    conjectured constant.
-
-  \item[NG-04.] \textbf{One comparison constant cannot serve all parameters.}
-    \emph{Tried:} compare every coefficient with the constant
-    $2^{4-\alpha}$, uniformly in the parameters; this would give the
-    conjectured sharp upper constant. \emph{Why it fails:} for a fixed Riesz
-    exponent $\alpha<1$, the ratio of the first coefficients tends to
-    infinity as $\alpha_0\to1$. \emph{Not ruled out:} constants depending on
-    $\alpha$ and $\alpha_0$, and comparisons for large times only.
-
-  \item[NG-05.] \textbf{Two chains cannot be joined into one, point by point.}
-    \emph{Tried:} bound the product of the two chains pointwise by the
-    single chain obtained by joining them in time order, to use the ordering
-    of the one-chain representation. \emph{Why it fails:} for Riesz and
-    white noise there are configurations of order $(2,2)$, forming a set of
-    positive measure, where every Green factor of the two chains is positive
-    but the joined chain vanishes. \emph{Not ruled out:} integrated or
-    grouped comparisons.
-
-  \item[NG-06.] \textbf{Dropping the spatial geometry first is too weak.}
-    \emph{Tried:} for spatial white noise in $d=1$, bound every wave
-    indicator by one and then symmetrize the time factors. \emph{Why it
-    fails:} the result is $\exp(Ct^{3-\alpha_0})$, while here
-    $\kappa=(3-\alpha_0)/2<3-\alpha_0$. \emph{Not ruled out:}
-    symmetrizations that keep the spatial factors, as the proof in the book
-    does.
-
-  \item[NG-09.] \textbf{Radial lowering of the covariance fails in $d=3$.}
-    \emph{Tried:} build the endpoint covariance in $d=3$ as
-    $|x|^{\alpha-1}\Gamma(x)$. \emph{Why it fails:} for
-    $\Gamma=|x_1|^{-9/10}|x_2|^{-3/5}$, constant in $x_3$, the Gaussian
-    smoothing of the lowered function grows like $\sqrt{L}$ along the
-    $x_3$-axis, which a covariance cannot do. \emph{Not ruled out:} the
-    planar construction, and the product construction used instead
-    (Remark~\ref{R:three-endpoint-scope}). Its review returned medium
-    confidence and was not accepted at the required high threshold.
-
-  \item[NG-13.] \textbf{Angular smoothing gives no uniform Riesz envelope.}
-    \emph{Tried:} approximate a planar covariance by smoothed angular
-    measures and take an angular supremum, to dominate it by an isotropic
-    Riesz covariance. \emph{Why it fails:} for $\alpha=3/2$ and
-    $\alpha_0=1/4$ the smoothed measures stay positive definite with fixed
-    mass, but the amplitude of every isotropic Riesz envelope tends to
-    infinity. \emph{Not ruled out:} other envelopes and endpoint
-    comparisons.
-
-  \item[NG-19.] \textbf{Adding an independent Gaussian component can decrease
-    the wave mean.} \emph{Tried:}
-    a lower bound obtained by projecting the noise onto one Gaussian
-    direction and discarding the positive remainder. \emph{Why it fails:}
-    for an explicit Riesz covariance in $d=1$ with $\alpha=1/2$, the full
-    covariance minus the projected one is positive semidefinite, yet the
-    projected noise has the larger mean coefficient of degree two (by more
-    than $1/96$). The projected noise need not be stationary or
-    homogeneous.
-    \emph{Not ruled out:} other tilts, projections chosen for large times,
-    and the sharp constant; the bridge to large times stays unproved, not
-    refuted.
-
-  \item[NG-20.] \textbf{The covariance profiles are not separable.} \emph{Tried:}
-    write the covariance profile of a general positive test as a fixed
-    function times a scalar factor. \emph{Why it fails:} for white noise,
-    the profiles of two bumps are not proportional (an exact determinant is
-    positive). \emph{Not ruled out:} the nonseparable family, which was then
-    treated directly.
-
-  \item[NG-21.] \textbf{A Hilbert--Schmidt reconstruction of the first Duhamel
-    term fails in $d=2,3$.} \emph{Tried:} write the random operator given by the first term of the
-    Duhamel expansion, after masking, as a Hilbert--Schmidt operator on an $L^2$-based Sobolev space. \emph{Why it
-    fails:} for every nonzero covariance the masked mean has a kernel of size
-    about $1/|\xi|$ near the diagonal in frequency, whose trace diverges; this
-    holds for every Sobolev index. \emph{Not ruled out:} operator-norm and
-    Schatten-class frameworks, which the book uses.
-
-  \item[NG-25.] \textbf{A fixed projection gives no tails uniform in the radius.}
-    \emph{Tried:} extend the compactness at a fixed radius to tails
-    uniform in the radius, with one fixed smooth projection. \emph{Why it
-    fails:} for white noise in $d=1$, translated controls escape any fixed
-    finite projection, while a growing mask keeps each of them with a
-    bounded nonzero coefficient. \emph{Not ruled out:} the results at a
-    fixed radius.
-
-  \item[NG-27.] \textbf{A corrected range of exponents.} \emph{Tried:} an early
-    draft of an auxiliary statement allowed every temporal integrability
-    exponent $r>2$. \emph{Why it fails:} a family of temporal tests concentrating
-    near a fixed interior time gives the exponent $1/r-\alpha_0/2$, so the bound fails for $r>2/\alpha_0$
-    and is not compact at $r=2/\alpha_0$; the statement was corrected to
-    $2<r<2/\alpha_0$. \emph{Not ruled out:} boundedness at the endpoint, which this calculation
-    does not decide, and the main asymptotic goal.
-
-  \item[NG-32.] \textbf{Point features at a positive cutoff need not come from the
-    noise alone.} \emph{Tried:} a claim made in a review, and used as a
-    working assumption, that these features lie in the closed range of the
-    noise map. \emph{Why it fails:} an explicit vector orthogonal to that
-    range has a nonzero pairing with a cutoff feature. \emph{Not ruled
-    out:} anything at time zero; the arguments built on the extended noise
-    remain valid.
-
-  \item[NG-33.] \textbf{Mathematical claims in reviews, refuted when checked.}
-    \emph{Tried:} accepting the derivations returned by AI reviewers as
-    written. \emph{Why it fails:} several were wrong when checked against
-    the sources, for example a free evolution claimed to be a contraction
-    (it is only bounded by an exponential), an exponent misplaced in a
-    H\"older product, and a miscounted denominator for white noise at
-    order three ($162$ against $216$). \emph{Not ruled out:} none of these
-    revealed a defect in the book.
-\end{description}
-
-\section*{Recorded only}
-
-\begin{description}
-  \item[NG-07.] \textbf{Counting time blocks misjudges short pairs.} \emph{Tried:}
-    penalize each pair by the number of time blocks it spans. \emph{Why it
-    fails:} two paired points can be adjacent in time while their labels
-    are $k$ apart, and the penalty would contradict an explicit lower bound
-    of order $(3\cdot4^{\alpha_0}/128)^k k^{-(3-\alpha_0)k}$. \emph{Not ruled
-    out:} estimates that use the actual order in time.
-
-  \item[NG-10.] \textbf{A known two-wave estimate does not remove a crossing pair.}
-    \emph{Tried:} use a two-wave convolution estimate
-    of~\cite{bolanos-guerrero.nualart.ea:21:averaging}, without weights, to
-    remove one vertex of a crossing pair in $d=2$. \emph{Why it fails:} in a
-    diagram of order four the spatial covariance has no finite uniform bound
-    on the region needed. \emph{Not ruled out:} a weighted version.
-
-  \item[NG-11.] \textbf{The second moment is not log-convex in the variance.}
-    \emph{Tried:} use log-convexity of $\E[y^2]$ in the noise variance to
-    pass between time blocks. \emph{Why it fails:} for $y''=Zy$ on unit time
-    with $y(0)=1$, $y'(0)=0$ and $\operatorname{Var}Z=A$, the function
-    $F(A)=\E[y^2]$ satisfies $F(100)^2>F(99)F(101)$, by an exact computation.
-    This scalar example has $\alpha=\alpha_0=0$, outside the class of the
-    book; it refutes only log-convexity in the additive variance.
-    \emph{Not ruled out:} the log-convexity in the logarithm of the amplitude
-    that the book uses.
-
-  \item[NG-12.] \textbf{One recipe for the static endpoint does not give a
-    covariance.} \emph{Tried:} a single formula for the static endpoint, a
-    time integral of the square of the heat-smoothed covariance. \emph{Why it
-    fails:} for an admissible product covariance in $d=3$ the integral
-    diverges near time zero. \emph{Not ruled out:} the other constructions
-    of the endpoint.
-
-  \item[NG-14.] \textbf{Moments of the solution do not multiply across time
-    blocks.} \emph{Tried:} multiply bounds for the second moment over
-    successive time blocks. \emph{Why it fails:} the wave carries a velocity:
-    for two independent static Gaussian blocks of unit length, the
-    coefficient of the common variance parameter in the two-block second
-    moment is $3$, while in the product of the two single-block second
-    moments it is $2/3$. This spatially constant example lies outside the
-    class of the book. \emph{Not ruled out:} bounds that carry both displacement and
-    velocity, as in Section~\ref{S:static-phase}.
-
-  \item[NG-15.] \textbf{The first Duhamel term alone does not control the phase.}
-    \emph{Tried:} drop the second-order mean term and keep only the random
-    first term. \emph{Why it fails:} in a scalar test the first-variance
-    matrix is $\left(\begin{smallmatrix}4/3&4/5\\4/5&17/45\end{smallmatrix}\right)$,
-    and the initial phase $(1,-2)$ gives the negative value $-16/45$. This
-    scalar example has spatial exponent $\alpha=0$, outside the theorem, and
-    says nothing about the original initial data $(1,0)$.
-    \emph{Not ruled out:} the estimate of Section~\ref{S:static-phase},
-    which controls both terms.
-
-  \item[NG-16.] \textbf{A deterministic stand-in for the Gaussian tilt loses a
-    factor.} \emph{Tried:} a lower bound from a deterministic surrogate of
-    the Gaussian tilt. \emph{Why it fails:} in scalar Gaussian tests, replacing the
-    randomly tilted solution by a deterministic surrogate gives a strictly
-    weaker lower bound than averaging the full tilted solution. \emph{Not
-    ruled out:} other Gaussian shifts.
-
-  \item[NG-18.] \textbf{Removing a time shift overshoots.} \emph{Tried:}
-    simplify a comparison of two white-noise diagrams of orders $(1,3)$ and
-    $(3,1)$ by removing the time shift in the cross-pair kernel. \emph{Why it
-    fails:} an exact check at one rational parameter point found the
-    simplified bound too large; the record marks this check as provisional. \emph{Not ruled out:}
-    the comparison itself, later proved with a different envelope.
-
-  \item[NG-26.] \textbf{A pure power cost per block is not enough.} \emph{Tried:}
-    split time into good and bad blocks, with a perturbation cost given by
-    a pure power and a uniform bound for each block. \emph{Why it fails:}
-    exact scalar tests refute the pure power cost without a linear term, and
-    rare bad blocks can make the largest amplitude diverge under a bounded
-    average budget. \emph{Not ruled out:} a cost with a linear term or an
-    adjustable slack.
-
-  \item[NG-30.] \textbf{Pointwise convergence is not enough for an exact constant.}
-    \emph{Tried:} pass to the limit constant using pointwise convergence of
-    the variational functionals. \emph{Why it fails:} on $\ell^2$, the
-    functionals $J_n(h)=(1-2\|h-e_n\|)_+$ tend to zero at every point, yet
-    their suprema stay at least $1/2$. \emph{Not ruled out:} a separate
-    variational convergence, which is then needed.
-
-  \item[NG-31.] \textbf{Lower bounds for an arbitrary initial phase, and two missing
-    guards.} \emph{Tried:} (a) extend a lower bound to every initial phase;
-    (b) drop the requirement that two masks agree throughout the region of
-    initial data that can influence the observation, or forget the velocity,
-    when comparing cutoffs. \emph{Why it fails:} (a) the system with generator
-    $\left(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\right)$ grows like
-    $e^t$, but the initial phase $(1,-1)$ decays like $e^{-t}$; (b) for the
-    free wave in $d=1$ with initial velocity $\mathbf{1}_{[5,6]}$ and time
-    $9$, two masks that agree on $[-2,2]$ give the values $0$ and $1/2$
-    there. \emph{Not ruled out:} the statements for the original initial
-    data $(1,0)$.
-\end{description}
+\input{notes/no-go/pairings}
+\input{notes/no-go/covariance}
+\input{notes/no-go/phase}
+\input{notes/no-go/topology}
+\input{notes/no-go/optimization}

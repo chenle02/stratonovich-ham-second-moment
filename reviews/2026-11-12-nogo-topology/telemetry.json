@@ -1,0 +1,783 @@
+{
+  "schema": "nogo-topology-review-telemetry/1",
+  "generated_utc": "2026-11-12T14:59:33.314971+00:00",
+  "scope": "Eight topology no-gos, plus bounded repair confirmations; no cost estimates, token totals or missing values invented. Raw provider usage dictionaries retain their original route conventions.",
+  "attempts": [
+    {
+      "attempt": "deepseek-attempt-01",
+      "relationship": "original-full-eight",
+      "ancestor": null,
+      "requested_model": "deepseek/deepseek-v4-pro",
+      "actual_route_records": [
+        {
+          "provider": "deepseek",
+          "model": "deepseek-v4-pro",
+          "finish": "stop",
+          "tokens": {
+            "total": 82367,
+            "input": 47910,
+            "output": 4135,
+            "reasoning": 30066,
+            "cache": {
+              "write": 0,
+              "read": 256
+            }
+          }
+        }
+      ],
+      "native_session": "ses_e2fe0d967ffeVoofuiAt5RFlMy",
+      "source_revision": "474d678d3d0152a690ad98232769a2ac6e33dc20",
+      "candidate_sha256": "eb341382c0ea330603d40312bd2fcdca9bc2f86c948259ee116ccd03de56d2f0",
+      "timing": {
+        "event_step_start_timestamp_ms": 1794493066949,
+        "event_step_finish_timestamp_ms": 1794493498793,
+        "subprocess_elapsed_seconds": 435.0365869998932
+      },
+      "transport_exit": 0,
+      "reported_verdict": "PASS",
+      "reported_confidence": "high",
+      "native_acceptance": null,
+      "native_acceptance_note": "Direct OpenCode route has no subscription-CLI acceptance boolean; strict report parser and author adjudication are recorded separately.",
+      "source_coverage": [
+        "READING-PLAN.md: complete supplied text",
+        "candidate/topology.tex: complete file, subsections S:nogo-21 through S:nogo-32 and all eight no-go proofs",
+        "candidate/nogo-projection-escape.tex: complete file",
+        "candidate/nogo-feature-range.tex: complete file",
+        "sources/integrated_temporal_equilibrium.tex: complete file",
+        "sources/integrated_cameron_mean.tex: complete file",
+        "sources/integrated_source_convergence.tex: complete file",
+        "sources/integrated_covariance_foundation.tex: complete file",
+        "sources/integrated_compact_gaussian.tex: complete file",
+        "sources/hs-obstruction-mathematics.md: complete file",
+        "sources/projection-mathematics.md: complete file",
+        "sources/block-cost-mathematics.md: complete file",
+        "sources/feature-range-mathematics.md: complete file",
+        "sources/homogeneity-hypothesis.tex: complete file"
+      ],
+      "raw_provider_usage": [
+        {
+          "total": 82367,
+          "input": 47910,
+          "output": 4135,
+          "reasoning": 30066,
+          "cache": {
+            "write": 0,
+            "read": 256
+          }
+        }
+      ],
+      "evidence": {
+        "launch": "reviews/2026-11-12-nogo-topology/deepseek-attempt-01/launch.json",
+        "exit": "reviews/2026-11-12-nogo-topology/deepseek-attempt-01/exit.json",
+        "native_binding": "reviews/2026-11-12-nogo-topology/deepseek-attempt-01/native-binding.json",
+        "public_report": "reviews/2026-11-12-nogo-topology/deepseek-attempt-01/report.json",
+        "raw_events": "reviews/2026-11-12-nogo-topology/deepseek-attempt-01/raw.jsonl"
+      },
+      "evidence_sha256": {
+        "launch.json": "8d01d8a69c059c2b9fb551398da7f367d046c0e9608e8c5ec31db2e3aacdb937",
+        "exit.json": "2db9071bc5241ded5b3fce0325d454199b5af4ac08ceff1a57f2e2446879677c",
+        "native-binding.json": "9d4747d0fb662ddb77623db3dc78c4adaf85ac5181e92b211463bb2220d8d6db",
+        "report.json": "257288f6e8a3cdf12c44ed8b90a73db5250b86aa6782113773f9cbc8dffd0d92",
+        "raw.jsonl": "eb376a6cd0a20114ec43df5e5b39d62af290ed05234591f1b156db0ff1ef66a2"
+      },
+      "source_manifest": "reviews/2026-11-12-nogo-topology/packet-manifest-v2.json",
+      "source_manifest_sha256": "b187cede34eefedbebf22cc16b0a1ee9d8e0bc88dbc1a31d05a72abff5662fd7",
+      "source_hashes": {
+        "candidate/topology.tex": "eb341382c0ea330603d40312bd2fcdca9bc2f86c948259ee116ccd03de56d2f0",
+        "candidate/nogo-projection-escape.tex": "d75248d8f9f8e3431c33e77dbf62cd876c21fdeb442743d3a53fd1fb2eaecdc3",
+        "candidate/nogo-feature-range.tex": "897468e992e150eaff1f69d17150003bb25b067d4ca01fdce0355e9980d71ec7",
+        "sources/integrated_temporal_equilibrium.tex": "3040006c990fd35c51b169dc262db8bc3120d4f45f76b2c87b4d63f368409228",
+        "sources/integrated_cameron_mean.tex": "8aa9a93fb43a1c1a26d40ed7eaf7e47e16e9b913ffe28579d7218f754136d41e",
+        "sources/integrated_source_convergence.tex": "2c1c1e1b4624f0d520af150c5bf334a93034c7df757723e5b00e3d9f1ccd4990",
+        "sources/integrated_covariance_foundation.tex": "19b9c76f1e8c8bf9d9936473d11893cd2b55c862e4daae908ea56123eaf86aef",
+        "sources/integrated_compact_gaussian.tex": "b9d5abf7d81a6b5dc5e9a859a5db11a210a726489a33382ce6acaec23dfc1cc9",
+        "sources/hs-obstruction-mathematics.md": "886078104205e5e90308024cfda91877f479a263528c024c6f72a1bf483bbc7a",
+        "sources/projection-mathematics.md": "3e3d69abc687912a9340216ae79d89eef40ecd22b260cc22cb5a3f11fe7c4492",
+        "sources/block-cost-mathematics.md": "1d4d192b0c2a922c1346481051756931ac4f81fd6bc99ac022ae89f72f402f1f",
+        "sources/feature-range-mathematics.md": "e64df43157e66b1e6005d1cf0861e504e1bfa6b59178c1f5e64da48e4fc4086f",
+        "sources/homogeneity-hypothesis.tex": "c0a19a7e14638371113bedbc0c6d143e18c55037c462c1b5c53f7c297ffcd1da"
+      }
+    },
+    {
+      "attempt": "deepseek-confirmation-01",
+      "relationship": "fresh-bounded-substantive-repair-confirmation",
+      "ancestor": "deepseek-attempt-01",
+      "requested_model": "deepseek/deepseek-v4-pro",
+      "actual_route_records": [
+        {
+          "provider": "deepseek",
+          "model": "deepseek-v4-pro",
+          "finish": "stop",
+          "tokens": {
+            "total": 61409,
+            "input": 27383,
+            "output": 1643,
+            "reasoning": 32127,
+            "cache": {
+              "write": 0,
+              "read": 256
+            }
+          }
+        }
+      ],
+      "native_session": "ses_e2fd28772ffeLMA3THudKgoqvS",
+      "source_revision": "484afebd851da18c6e63eac505c8fd33089e6ece",
+      "candidate_sha256": "6f8c1aec01e90c7de0f83910993ed6c4249fb0355b8fbdda1bf168ec0f8a2941",
+      "timing": {
+        "event_step_start_timestamp_ms": 1794494005540,
+        "event_step_finish_timestamp_ms": 1794494326394,
+        "subprocess_elapsed_seconds": 324.2458519935608
+      },
+      "transport_exit": 0,
+      "reported_verdict": "PASS",
+      "reported_confidence": "high",
+      "native_acceptance": null,
+      "native_acceptance_note": "Direct OpenCode route has no subscription-CLI acceptance boolean; strict report parser and author adjudication are recorded separately.",
+      "source_coverage": [
+        "previous/topology.tex:1-565",
+        "candidate/topology.tex:1-565",
+        "previous/nogo-projection-escape.tex:1-25",
+        "candidate/nogo-projection-escape.tex:1-25",
+        "previous/nogo-feature-range.tex:1-24",
+        "candidate/nogo-feature-range.tex:1-24",
+        "sources/integrated_cameron_mean.tex:1-468",
+        "sources/integrated_temporal_equilibrium.tex:1-95",
+        "sources/projection-mathematics.md:1-30",
+        "sources/homogeneity-hypothesis.tex:1-18",
+        "CHANGE-CONTRACT.md:1-3",
+        "READING-PLAN.md:1-12"
+      ],
+      "raw_provider_usage": [
+        {
+          "total": 61409,
+          "input": 27383,
+          "output": 1643,
+          "reasoning": 32127,
+          "cache": {
+            "write": 0,
+            "read": 256
+          }
+        }
+      ],
+      "evidence": {
+        "launch": "reviews/2026-11-12-nogo-topology/deepseek-confirmation-01/launch.json",
+        "exit": "reviews/2026-11-12-nogo-topology/deepseek-confirmation-01/exit.json",
+        "native_binding": "reviews/2026-11-12-nogo-topology/deepseek-confirmation-01/native-binding.json",
+        "public_report": "reviews/2026-11-12-nogo-topology/deepseek-confirmation-01/report.json",
+        "raw_events": "reviews/2026-11-12-nogo-topology/deepseek-confirmation-01/raw.jsonl"
+      },
+      "evidence_sha256": {
+        "launch.json": "f5c50ace8792238299a72b07da13132e2c7b9b2672b9268efb377608e79cb99e",
+        "exit.json": "cf65d355820f5338fa0a2dba61d1bd283dbe5318a00cc92eb92e76b0d25298eb",
+        "native-binding.json": "3f3252b09e658d7d84bcf081b8e0d768656cc1d3b8efcaf929083cc3da0c0ea5",
+        "report.json": "ad652b89bea444bc1c4f63ad5b88501f2a435e175d8ed0faaadb581de8c534c7",
+        "raw.jsonl": "d65960917651c1588cfaa9797b8267ffe2954f3fbb16bccb2bc248f218a83990"
+      },
+      "source_manifest": "reviews/2026-11-12-nogo-topology/confirmation-manifest-v3.json",
+      "source_manifest_sha256": "60cc5102d08169b0ff3045d994f8510e2d640ac1af4338d0b307e5e653f73347",
+      "source_hashes": {
+        "candidate/topology.tex": "6f8c1aec01e90c7de0f83910993ed6c4249fb0355b8fbdda1bf168ec0f8a2941",
+        "previous/topology.tex": "eb341382c0ea330603d40312bd2fcdca9bc2f86c948259ee116ccd03de56d2f0",
+        "candidate/nogo-projection-escape.tex": "042157b7a4bb25a56852baa4254e7f6615aa08bbb5201070070f1cf37dbe9253",
+        "previous/nogo-projection-escape.tex": "d75248d8f9f8e3431c33e77dbf62cd876c21fdeb442743d3a53fd1fb2eaecdc3",
+        "candidate/nogo-feature-range.tex": "8e739703462ac166d62f2ba06a933ba99418dc52c626d2d1e55e80bb099e61b0",
+        "previous/nogo-feature-range.tex": "897468e992e150eaff1f69d17150003bb25b067d4ca01fdce0355e9980d71ec7",
+        "sources/integrated_cameron_mean.tex": "8aa9a93fb43a1c1a26d40ed7eaf7e47e16e9b913ffe28579d7218f754136d41e",
+        "sources/integrated_temporal_equilibrium.tex": "3040006c990fd35c51b169dc262db8bc3120d4f45f76b2c87b4d63f368409228",
+        "sources/projection-mathematics.md": "3e3d69abc687912a9340216ae79d89eef40ecd22b260cc22cb5a3f11fe7c4492",
+        "sources/homogeneity-hypothesis.tex": "c0a19a7e14638371113bedbc0c6d143e18c55037c462c1b5c53f7c297ffcd1da"
+      }
+    },
+    {
+      "attempt": "kimi-attempt-01",
+      "relationship": "original-full-eight",
+      "ancestor": null,
+      "receipt": "reviews/2026-11-12-nogo-topology/kimi-attempt-01/receipt.json",
+      "receipt_sha256": "c33ad862bda0e72ce7ae1f2413ae3008c0eba1ac46c8279fad7d6e5a795535d0",
+      "status": "invalid-report",
+      "requested_model": "kimi-code/k3",
+      "actual_model": "k3",
+      "actual_model_alias": "kimi-code/k3",
+      "actual_effort": "max",
+      "native_session": "session_e069b9d9-181d-463c-8feb-f2574f71b932",
+      "source_revision": "474d678d3d0152a690ad98232769a2ac6e33dc20",
+      "source_hashes": {
+        "READING-PLAN.md": "c1121391b4b9d045a4b5573a2db12ae35b4f56ebd2dd2eb7a934a0a7ff70906e",
+        "candidate/nogo-feature-range.tex": "897468e992e150eaff1f69d17150003bb25b067d4ca01fdce0355e9980d71ec7",
+        "candidate/nogo-projection-escape.tex": "d75248d8f9f8e3431c33e77dbf62cd876c21fdeb442743d3a53fd1fb2eaecdc3",
+        "candidate/topology.tex": "eb341382c0ea330603d40312bd2fcdca9bc2f86c948259ee116ccd03de56d2f0",
+        "sources/block-cost-mathematics.md": "1d4d192b0c2a922c1346481051756931ac4f81fd6bc99ac022ae89f72f402f1f",
+        "sources/feature-range-mathematics.md": "e64df43157e66b1e6005d1cf0861e504e1bfa6b59178c1f5e64da48e4fc4086f",
+        "sources/homogeneity-hypothesis.tex": "c0a19a7e14638371113bedbc0c6d143e18c55037c462c1b5c53f7c297ffcd1da",
+        "sources/hs-obstruction-mathematics.md": "886078104205e5e90308024cfda91877f479a263528c024c6f72a1bf483bbc7a",
+        "sources/integrated_cameron_mean.tex": "8aa9a93fb43a1c1a26d40ed7eaf7e47e16e9b913ffe28579d7218f754136d41e",
+        "sources/integrated_compact_gaussian.tex": "b9d5abf7d81a6b5dc5e9a859a5db11a210a726489a33382ce6acaec23dfc1cc9",
+        "sources/integrated_covariance_foundation.tex": "19b9c76f1e8c8bf9d9936473d11893cd2b55c862e4daae908ea56123eaf86aef",
+        "sources/integrated_source_convergence.tex": "2c1c1e1b4624f0d520af150c5bf334a93034c7df757723e5b00e3d9f1ccd4990",
+        "sources/integrated_temporal_equilibrium.tex": "3040006c990fd35c51b169dc262db8bc3120d4f45f76b2c87b4d63f368409228",
+        "sources/projection-mathematics.md": "3e3d69abc687912a9340216ae79d89eef40ecd22b260cc22cb5a3f11fe7c4492"
+      },
+      "started_utc": "2026-11-12T14:17:45.063065+00:00",
+      "finished_utc": "2026-11-12T14:31:14.519991+00:00",
+      "elapsed_seconds": 809.457,
+      "transport_exit": 0,
+      "transport_ok": true,
+      "actual_route_verified": true,
+      "native_scientific_verdict": null,
+      "native_confidence": null,
+      "native_acceptance": false,
+      "diagnostics": [
+        {
+          "code": "unsupported-schema",
+          "path": "",
+          "message": "invalid report JSON: Expecting value: line 1 column 1 (char 0)"
+        }
+      ],
+      "raw_provider_usage_records": [
+        {
+          "inputOther": 1929,
+          "output": 118,
+          "inputCacheRead": 2560,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 460,
+          "output": 281,
+          "inputCacheRead": 4352,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 9970,
+          "output": 201,
+          "inputCacheRead": 4608,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 9978,
+          "output": 179,
+          "inputCacheRead": 14336,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 15205,
+          "output": 181,
+          "inputCacheRead": 24064,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 15955,
+          "output": 178,
+          "inputCacheRead": 39168,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 1161,
+          "output": 178,
+          "inputCacheRead": 55040,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 1870,
+          "output": 41538,
+          "inputCacheRead": 56064,
+          "inputCacheCreation": 0
+        }
+      ],
+      "tool_calls_observed": [
+        "Read"
+      ],
+      "candidate_hashes_unchanged": true,
+      "resume_binding": null,
+      "format_lineage": null,
+      "public_JSON_object_for_analysis_only": {
+        "verdict": "PASS_WITH_NOTES",
+        "confidence": "high",
+        "source_coverage": [
+          "READING-PLAN.md lines 1-13 (complete)",
+          "candidate/topology.tex lines 1-564 (complete)",
+          "candidate/nogo-projection-escape.tex lines 1-25 (complete)",
+          "candidate/nogo-feature-range.tex lines 1-24 (complete)",
+          "sources/block-cost-mathematics.md lines 1-14 (complete)",
+          "sources/feature-range-mathematics.md lines 1-64 (complete)",
+          "sources/homogeneity-hypothesis.tex lines 1-18 (complete)",
+          "sources/hs-obstruction-mathematics.md lines 1-305 (complete)",
+          "sources/integrated_cameron_mean.tex lines 1-468 (complete)",
+          "sources/integrated_compact_gaussian.tex lines 1-632 (complete)",
+          "sources/integrated_covariance_foundation.tex lines 1-433 (complete)",
+          "sources/integrated_source_convergence.tex lines 1-472 (complete)",
+          "sources/integrated_temporal_equilibrium.tex lines 1-95 (complete)",
+          "sources/projection-mathematics.md lines 1-31 (complete)"
+        ],
+        "check_ids": [
+          "NG21",
+          "NG22",
+          "NG24",
+          "NG25",
+          "NG26",
+          "NG27",
+          "NG30",
+          "NG32"
+        ],
+        "note": "This does not override native refusal or create a recovered receipt."
+      },
+      "evidence_sha256": {
+        "events.jsonl": "338373b0684c474bb94e46cf31724d53a051d9690a317c9c304274e9e46d38a6",
+        "input-manifest.json": "05cbf4bffd37e6792bf4f00c4127212da7b60a04952fa3945835b9b6965b1841",
+        "execution.json": "37db7e3e860a276b528a655382fdd66c7623375b607b32b46f424ad74a36dacb",
+        "report.txt": "f3504a0adcd62ee3e01c3c5c6a0c9e8c0accb382c85eca8952cf1bed12a6bb48",
+        "report-raw.txt": "9fa07a74e6ff82e59a12fab1a2d6afff8fe80c9a424f86146e417a6a0eb29aaa",
+        "receipt.json": "c33ad862bda0e72ce7ae1f2413ae3008c0eba1ac46c8279fad7d6e5a795535d0"
+      }
+    },
+    {
+      "attempt": "kimi-format-01",
+      "relationship": "same-session-format-only-continuation",
+      "ancestor": "kimi-attempt-01",
+      "receipt": "reviews/2026-11-12-nogo-topology/kimi-format-01/receipt.json",
+      "receipt_sha256": "5fc33f44826da049abd33eebe649229e42e92278bd5f6d67e1168a916fe18c81",
+      "status": "review-complete",
+      "requested_model": "kimi-code/k3",
+      "actual_model": "k3",
+      "actual_model_alias": "kimi-code/k3",
+      "actual_effort": "max",
+      "native_session": "session_e069b9d9-181d-463c-8feb-f2574f71b932",
+      "source_revision": "474d678d3d0152a690ad98232769a2ac6e33dc20",
+      "source_hashes": {
+        "READING-PLAN.md": "c1121391b4b9d045a4b5573a2db12ae35b4f56ebd2dd2eb7a934a0a7ff70906e",
+        "candidate/nogo-feature-range.tex": "897468e992e150eaff1f69d17150003bb25b067d4ca01fdce0355e9980d71ec7",
+        "candidate/nogo-projection-escape.tex": "d75248d8f9f8e3431c33e77dbf62cd876c21fdeb442743d3a53fd1fb2eaecdc3",
+        "candidate/topology.tex": "eb341382c0ea330603d40312bd2fcdca9bc2f86c948259ee116ccd03de56d2f0",
+        "sources/block-cost-mathematics.md": "1d4d192b0c2a922c1346481051756931ac4f81fd6bc99ac022ae89f72f402f1f",
+        "sources/feature-range-mathematics.md": "e64df43157e66b1e6005d1cf0861e504e1bfa6b59178c1f5e64da48e4fc4086f",
+        "sources/homogeneity-hypothesis.tex": "c0a19a7e14638371113bedbc0c6d143e18c55037c462c1b5c53f7c297ffcd1da",
+        "sources/hs-obstruction-mathematics.md": "886078104205e5e90308024cfda91877f479a263528c024c6f72a1bf483bbc7a",
+        "sources/integrated_cameron_mean.tex": "8aa9a93fb43a1c1a26d40ed7eaf7e47e16e9b913ffe28579d7218f754136d41e",
+        "sources/integrated_compact_gaussian.tex": "b9d5abf7d81a6b5dc5e9a859a5db11a210a726489a33382ce6acaec23dfc1cc9",
+        "sources/integrated_covariance_foundation.tex": "19b9c76f1e8c8bf9d9936473d11893cd2b55c862e4daae908ea56123eaf86aef",
+        "sources/integrated_source_convergence.tex": "2c1c1e1b4624f0d520af150c5bf334a93034c7df757723e5b00e3d9f1ccd4990",
+        "sources/integrated_temporal_equilibrium.tex": "3040006c990fd35c51b169dc262db8bc3120d4f45f76b2c87b4d63f368409228",
+        "sources/projection-mathematics.md": "3e3d69abc687912a9340216ae79d89eef40ecd22b260cc22cb5a3f11fe7c4492"
+      },
+      "started_utc": "2026-11-12T14:32:08.459677+00:00",
+      "finished_utc": "2026-11-12T14:34:15.771422+00:00",
+      "elapsed_seconds": 127.311,
+      "transport_exit": 0,
+      "transport_ok": true,
+      "actual_route_verified": true,
+      "native_scientific_verdict": "PASS_WITH_NOTES",
+      "native_confidence": "high",
+      "native_acceptance": false,
+      "diagnostics": [
+        {
+          "code": "input-identity",
+          "path": "continuation_tool_use_events",
+          "message": "format-repair continuation tool use is unverifiable for this provider stream; only a Claude stream-json continuation can be accepted"
+        }
+      ],
+      "raw_provider_usage_records": [
+        {
+          "inputOther": 1929,
+          "output": 118,
+          "inputCacheRead": 2560,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 460,
+          "output": 281,
+          "inputCacheRead": 4352,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 9970,
+          "output": 201,
+          "inputCacheRead": 4608,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 9978,
+          "output": 179,
+          "inputCacheRead": 14336,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 15205,
+          "output": 181,
+          "inputCacheRead": 24064,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 15955,
+          "output": 178,
+          "inputCacheRead": 39168,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 1161,
+          "output": 178,
+          "inputCacheRead": 55040,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 1870,
+          "output": 41538,
+          "inputCacheRead": 56064,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 43601,
+          "output": 6230,
+          "inputCacheRead": 57856,
+          "inputCacheCreation": 0
+        }
+      ],
+      "tool_calls_observed": [],
+      "candidate_hashes_unchanged": true,
+      "resume_binding": {
+        "mode": "format-repair",
+        "prior_receipt_sha256": "c33ad862bda0e72ce7ae1f2413ae3008c0eba1ac46c8279fad7d6e5a795535d0",
+        "prior_manifest_sha256": "05cbf4bffd37e6792bf4f00c4127212da7b60a04952fa3945835b9b6965b1841",
+        "prior_prompt_sha256": "f968bf68d55b93e93775062698939b59497ad234c8014d0757061275cdd9b989",
+        "prior_raw_report_sha256": "9fa07a74e6ff82e59a12fab1a2d6afff8fe80c9a424f86146e417a6a0eb29aaa",
+        "prior_status": "invalid-report"
+      },
+      "format_lineage": {
+        "schema": "subscription-review-format-lineage/1",
+        "result": "FORMAT-LINEAGE-PRESERVED",
+        "original_raw_sha256": "9fa07a74e6ff82e59a12fab1a2d6afff8fe80c9a424f86146e417a6a0eb29aaa",
+        "continuation_raw_sha256": "3491f5b5e1490ba61636113899f34a3091ecf2e59412b2343f390954d966cdd8",
+        "continuation_body_sha256": "3491f5b5e1490ba61636113899f34a3091ecf2e59412b2343f390954d966cdd8",
+        "token_count": 102,
+        "token_sequence_sha256": "11035ab5aebd4dfc967ca59e289cc4a9df0e068028bfae0d10abae7c5beadded"
+      },
+      "public_JSON_object_for_analysis_only": {
+        "verdict": "PASS_WITH_NOTES",
+        "confidence": "high",
+        "source_coverage": [
+          "READING-PLAN.md lines 1-13 (complete)",
+          "candidate/topology.tex lines 1-564 (complete)",
+          "candidate/nogo-projection-escape.tex lines 1-25 (complete)",
+          "candidate/nogo-feature-range.tex lines 1-24 (complete)",
+          "sources/block-cost-mathematics.md lines 1-14 (complete)",
+          "sources/feature-range-mathematics.md lines 1-64 (complete)",
+          "sources/homogeneity-hypothesis.tex lines 1-18 (complete)",
+          "sources/hs-obstruction-mathematics.md lines 1-305 (complete)",
+          "sources/integrated_cameron_mean.tex lines 1-468 (complete)",
+          "sources/integrated_compact_gaussian.tex lines 1-632 (complete)",
+          "sources/integrated_covariance_foundation.tex lines 1-433 (complete)",
+          "sources/integrated_source_convergence.tex lines 1-472 (complete)",
+          "sources/integrated_temporal_equilibrium.tex lines 1-95 (complete)",
+          "sources/projection-mathematics.md lines 1-31 (complete)"
+        ],
+        "check_ids": [
+          "NG21",
+          "NG22",
+          "NG24",
+          "NG25",
+          "NG26",
+          "NG27",
+          "NG30",
+          "NG32"
+        ],
+        "note": "This does not override native refusal or create a recovered receipt."
+      },
+      "evidence_sha256": {
+        "events.jsonl": "2c56472fcd2e2c19a20e60a3b7d52757b98cda5e034302d21aae89abf9a093b4",
+        "input-manifest.json": "3742804ba92a56802c2b7bd192670d888bbea98e555bb123108d4307ef8b41e3",
+        "execution.json": "c250cfaec4a56109792bef95c64191a15b0322db6994225224c9b3febea5df81",
+        "report.txt": "1c9d339edef4e0061ef451ad55797f296bbcffaa8deb792493a9c4a46a3fc2e2",
+        "report-raw.txt": "3491f5b5e1490ba61636113899f34a3091ecf2e59412b2343f390954d966cdd8",
+        "receipt.json": "5fc33f44826da049abd33eebe649229e42e92278bd5f6d67e1168a916fe18c81"
+      }
+    },
+    {
+      "attempt": "kimi-confirmation-01",
+      "relationship": "fresh-bounded-substantive-repair-confirmation",
+      "ancestor": "kimi-attempt-01",
+      "receipt": "reviews/2026-11-12-nogo-topology/kimi-confirmation-01/receipt.json",
+      "receipt_sha256": "a6c1f3570dbbacd3ce2fb600d578f20cd16287b6087045eb91147bebcbae30a3",
+      "status": "review-complete",
+      "requested_model": "kimi-code/k3",
+      "actual_model": "k3",
+      "actual_model_alias": "kimi-code/k3",
+      "actual_effort": "max",
+      "native_session": "session_1e43370f-b670-4c81-95f4-f11d2ce750c0",
+      "source_revision": "484afebd851da18c6e63eac505c8fd33089e6ece",
+      "source_hashes": {
+        "CHANGE-CONTRACT.md": "1c949ae0008b05ac8d00a27e8d86114a1b93bef3143fba1b035120ef13fff730",
+        "READING-PLAN.md": "539dc7628191207d61b5b29cb96d36fd2bec25df9194aea80f6df4a5cf4ebef3",
+        "candidate/nogo-feature-range.tex": "8e739703462ac166d62f2ba06a933ba99418dc52c626d2d1e55e80bb099e61b0",
+        "candidate/nogo-projection-escape.tex": "042157b7a4bb25a56852baa4254e7f6615aa08bbb5201070070f1cf37dbe9253",
+        "candidate/topology.tex": "6f8c1aec01e90c7de0f83910993ed6c4249fb0355b8fbdda1bf168ec0f8a2941",
+        "previous/nogo-feature-range.tex": "897468e992e150eaff1f69d17150003bb25b067d4ca01fdce0355e9980d71ec7",
+        "previous/nogo-projection-escape.tex": "d75248d8f9f8e3431c33e77dbf62cd876c21fdeb442743d3a53fd1fb2eaecdc3",
+        "previous/topology.tex": "eb341382c0ea330603d40312bd2fcdca9bc2f86c948259ee116ccd03de56d2f0",
+        "sources/homogeneity-hypothesis.tex": "c0a19a7e14638371113bedbc0c6d143e18c55037c462c1b5c53f7c297ffcd1da",
+        "sources/integrated_cameron_mean.tex": "8aa9a93fb43a1c1a26d40ed7eaf7e47e16e9b913ffe28579d7218f754136d41e",
+        "sources/integrated_temporal_equilibrium.tex": "3040006c990fd35c51b169dc262db8bc3120d4f45f76b2c87b4d63f368409228",
+        "sources/projection-mathematics.md": "3e3d69abc687912a9340216ae79d89eef40ecd22b260cc22cb5a3f11fe7c4492"
+      },
+      "started_utc": "2026-11-12T14:33:23.466778+00:00",
+      "finished_utc": "2026-11-12T14:42:55.804047+00:00",
+      "elapsed_seconds": 572.337,
+      "transport_exit": 0,
+      "transport_ok": true,
+      "actual_route_verified": true,
+      "native_scientific_verdict": "PASS",
+      "native_confidence": "high",
+      "native_acceptance": true,
+      "diagnostics": [],
+      "raw_provider_usage_records": [
+        {
+          "inputOther": 1363,
+          "output": 200,
+          "inputCacheRead": 2560,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 616,
+          "output": 195,
+          "inputCacheRead": 3840,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 17329,
+          "output": 851,
+          "inputCacheRead": 4352,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 10563,
+          "output": 9210,
+          "inputCacheRead": 21504,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 10185,
+          "output": 516,
+          "inputCacheRead": 32000,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 1808,
+          "output": 226,
+          "inputCacheRead": 41984,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 1193,
+          "output": 17066,
+          "inputCacheRead": 43776,
+          "inputCacheCreation": 0
+        }
+      ],
+      "tool_calls_observed": [
+        "Read"
+      ],
+      "candidate_hashes_unchanged": true,
+      "resume_binding": null,
+      "format_lineage": null,
+      "public_JSON_object_for_analysis_only": {
+        "verdict": "PASS",
+        "confidence": "high",
+        "source_coverage": [
+          "READING-PLAN.md lines 1-12 (complete)",
+          "CHANGE-CONTRACT.md lines 1-3 (complete)",
+          "candidate/topology.tex lines 1-565 (complete)",
+          "previous/topology.tex lines 1-564 (complete)",
+          "candidate/nogo-projection-escape.tex lines 1-25 (complete)",
+          "previous/nogo-projection-escape.tex lines 1-25 (complete)",
+          "candidate/nogo-feature-range.tex lines 1-24 (complete)",
+          "previous/nogo-feature-range.tex lines 1-24 (complete)",
+          "sources/integrated_cameron_mean.tex lines 1-468 (complete)",
+          "sources/integrated_temporal_equilibrium.tex lines 1-95 (complete)",
+          "sources/homogeneity-hypothesis.tex lines 1-18 (complete)",
+          "sources/projection-mathematics.md lines 1-31 (complete)"
+        ],
+        "check_ids": [
+          "NG25-REPAIR",
+          "NG26-INTERVAL",
+          "UNCHANGED-CORRESPONDENCE"
+        ],
+        "note": "This does not override native refusal or create a recovered receipt."
+      },
+      "evidence_sha256": {
+        "events.jsonl": "1ed97d3967a999755090981325c873fd1e02a531677604224467b659c2e1f4d8",
+        "input-manifest.json": "e10140cf607b5e84d331513df8d61ac6b4ce1a4637ab32017377d71db2ccb048",
+        "execution.json": "f8ac4995415eb0a2ebae2261a243fc2e14000bc9bab38dda2a6528c5b5819117",
+        "report.txt": "a4d99a0ce4abcc29555e226418e2dd6bd66c38d569f547368d443ea2aa5e6dc1",
+        "report-raw.txt": "b41f0149960c7faae6563e56b309eccf1ad578360915f4fe99d468319ecc4935",
+        "receipt.json": "a6c1f3570dbbacd3ce2fb600d578f20cd16287b6087045eb91147bebcbae30a3"
+      }
+    },
+    {
+      "attempt": "kimi-full-v3-01",
+      "relationship": "fresh-full-eight-substantively-repaired-candidate",
+      "ancestor": "kimi-attempt-01",
+      "receipt": "reviews/2026-11-12-nogo-topology/kimi-full-v3-01/receipt.json",
+      "receipt_sha256": "bb30643af009b5c7f7593d422fc2122b119b163a9c3694c45d2f4032138e5f5c",
+      "status": "review-complete",
+      "requested_model": "kimi-code/k3",
+      "actual_model": "k3",
+      "actual_model_alias": "kimi-code/k3",
+      "actual_effort": "max",
+      "native_session": "session_fd02ed14-e71b-40c7-bd4c-c0911c88216b",
+      "source_revision": "484afebd851da18c6e63eac505c8fd33089e6ece",
+      "source_hashes": {
+        "READING-PLAN.md": "c1121391b4b9d045a4b5573a2db12ae35b4f56ebd2dd2eb7a934a0a7ff70906e",
+        "candidate/nogo-feature-range.tex": "8e739703462ac166d62f2ba06a933ba99418dc52c626d2d1e55e80bb099e61b0",
+        "candidate/nogo-projection-escape.tex": "042157b7a4bb25a56852baa4254e7f6615aa08bbb5201070070f1cf37dbe9253",
+        "candidate/topology.tex": "6f8c1aec01e90c7de0f83910993ed6c4249fb0355b8fbdda1bf168ec0f8a2941",
+        "sources/block-cost-mathematics.md": "1d4d192b0c2a922c1346481051756931ac4f81fd6bc99ac022ae89f72f402f1f",
+        "sources/feature-range-mathematics.md": "e64df43157e66b1e6005d1cf0861e504e1bfa6b59178c1f5e64da48e4fc4086f",
+        "sources/homogeneity-hypothesis.tex": "c0a19a7e14638371113bedbc0c6d143e18c55037c462c1b5c53f7c297ffcd1da",
+        "sources/hs-obstruction-mathematics.md": "886078104205e5e90308024cfda91877f479a263528c024c6f72a1bf483bbc7a",
+        "sources/integrated_cameron_mean.tex": "8aa9a93fb43a1c1a26d40ed7eaf7e47e16e9b913ffe28579d7218f754136d41e",
+        "sources/integrated_compact_gaussian.tex": "b9d5abf7d81a6b5dc5e9a859a5db11a210a726489a33382ce6acaec23dfc1cc9",
+        "sources/integrated_covariance_foundation.tex": "19b9c76f1e8c8bf9d9936473d11893cd2b55c862e4daae908ea56123eaf86aef",
+        "sources/integrated_source_convergence.tex": "2c1c1e1b4624f0d520af150c5bf334a93034c7df757723e5b00e3d9f1ccd4990",
+        "sources/integrated_temporal_equilibrium.tex": "3040006c990fd35c51b169dc262db8bc3120d4f45f76b2c87b4d63f368409228",
+        "sources/projection-mathematics.md": "3e3d69abc687912a9340216ae79d89eef40ecd22b260cc22cb5a3f11fe7c4492"
+      },
+      "started_utc": "2026-11-12T14:36:56.206234+00:00",
+      "finished_utc": "2026-11-12T14:56:52.097373+00:00",
+      "elapsed_seconds": 1195.891,
+      "transport_exit": 0,
+      "transport_ok": true,
+      "actual_route_verified": true,
+      "native_scientific_verdict": "PASS_WITH_NOTES",
+      "native_confidence": "high",
+      "native_acceptance": true,
+      "diagnostics": [],
+      "raw_provider_usage_records": [
+        {
+          "inputOther": 1992,
+          "output": 183,
+          "inputCacheRead": 2560,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 588,
+          "output": 131,
+          "inputCacheRead": 4352,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 8773,
+          "output": 215,
+          "inputCacheRead": 4864,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 1305,
+          "output": 129,
+          "inputCacheRead": 13568,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 1780,
+          "output": 560,
+          "inputCacheRead": 14848,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 8720,
+          "output": 135,
+          "inputCacheRead": 16384,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 7749,
+          "output": 208,
+          "inputCacheRead": 25088,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 7462,
+          "output": 192,
+          "inputCacheRead": 32768,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 11129,
+          "output": 141,
+          "inputCacheRead": 40192,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 5345,
+          "output": 24401,
+          "inputCacheRead": 51200,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 25526,
+          "output": 133,
+          "inputCacheRead": 56320,
+          "inputCacheCreation": 0
+        },
+        {
+          "inputOther": 1568,
+          "output": 30930,
+          "inputCacheRead": 81664,
+          "inputCacheCreation": 0
+        }
+      ],
+      "tool_calls_observed": [
+        "Read"
+      ],
+      "candidate_hashes_unchanged": true,
+      "resume_binding": null,
+      "format_lineage": null,
+      "public_JSON_object_for_analysis_only": {
+        "verdict": "PASS_WITH_NOTES",
+        "confidence": "high",
+        "source_coverage": [
+          "READING-PLAN.md: lines 1-5 (complete)",
+          "candidate/topology.tex: lines 1-565 (complete)",
+          "candidate/nogo-projection-escape.tex: lines 1-25 (complete)",
+          "candidate/nogo-feature-range.tex: lines 1-25 (complete)",
+          "sources/integrated_temporal_equilibrium.tex: lines 1-95 (complete)",
+          "sources/integrated_cameron_mean.tex: lines 1-468 (complete)",
+          "sources/integrated_source_convergence.tex: lines 1-472 (complete)",
+          "sources/integrated_covariance_foundation.tex: lines 1-433 (complete)",
+          "sources/homogeneity-hypothesis.tex: lines 1-18 (complete)",
+          "sources/integrated_compact_gaussian.tex: lines 1-632 (complete)",
+          "sources/hs-obstruction-mathematics.md: lines 1-305 (complete)",
+          "sources/projection-mathematics.md: lines 1-31 (complete)",
+          "sources/block-cost-mathematics.md: lines 1-14 (complete)",
+          "sources/feature-range-mathematics.md: lines 1-64 (complete)"
+        ],
+        "check_ids": [
+          "NG21",
+          "NG22",
+          "NG24",
+          "NG25",
+          "NG26",
+          "NG27",
+          "NG30",
+          "NG32"
+        ],
+        "note": "This does not override native refusal or create a recovered receipt."
+      },
+      "evidence_sha256": {
+        "events.jsonl": "6d5d5b6405750a5973a0337c6e91af89de036ccc65aaefa1995eabf26e3652ce",
+        "input-manifest.json": "5206b514587064e830128287eebd9ef754d56fcfce147b97e24734d71b880e74",
+        "execution.json": "57579248be2ea60e5e8f5b327c58a95111a7686a953978c281a494a037d48af4",
+        "report.txt": "392f3507cfb78f97e972ae980b424a7a0e2111fe7b8742812219aef132dfc69d",
+        "report-raw.txt": "ed029d12653b7b4f3116ce3c90d575df0492bc098112491ea2f62250fa317a1e",
+        "receipt.json": "bb30643af009b5c7f7593d422fc2122b119b163a9c3694c45d2f4032138e5f5c"
+      }
+    }
+  ],
+  "preprovider_refusals": [
+    {
+      "path": "reviews/2026-11-12-nogo-topology/preflight-v1-refusal.json",
+      "sha256": "8354467502c972bf7e00f8577effec801f547afbfd64fa45e0fed817735ec197"
+    }
+  ],
+  "reading_delivery_records": [
+    "reviews/2026-11-12-nogo-topology/kimi-confirmation-01-delivery-author-check.json",
+    "reviews/2026-11-12-nogo-topology/kimi-full-v3-01-delivery-author-check.json",
+    "reviews/2026-11-12-nogo-topology/kimi-read-delivery-author-check.json"
+  ]
+}

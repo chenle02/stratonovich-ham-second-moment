@@ -46,18 +46,21 @@
     \draw[ham/arrow] (lower)--(constant);
     \draw[ham/arrow] (means)--(point);
     \draw[ham/arrow] (point)--(constant);
-    \node[ham/note,text=hamgold,text width=13.8cm] at (3.7,-9.85)
+    \node[auxiliary,text width=13.65cm] (nogo) at (3.7,-10.2)
+    {\GuideRef{Chapter}{S:book-no-go}: \textbf{Obstructions and failed approaches}\\
+    Numbered counterexamples explain choices throughout the proof};
+    \node[ham/note,text=hamgold,text width=13.8cm] at (3.7,-11.85)
     {\textbf{Appendices: checks and separate comparison arguments}};
-    \node[auxiliary] (finitechecks) at (0,-11)
+    \node[auxiliary] (finitechecks) at (0,-13)
     {\GuideRef{Appendix}{S:appendix-finite-order}\\
     Finite-order calculations};
-    \node[auxiliary] (direct) at (7.4,-11)
+    \node[auxiliary] (direct) at (7.4,-13)
     {\GuideRef{Appendix}{S:appendix-direct}\\
     Direct bounds and static interpolation};
-    \node[auxiliary] (covariance) at (0,-12.9)
+    \node[auxiliary] (covariance) at (0,-14.9)
     {\GuideRef{Appendix}{S:appendix-covariance}\\
     Covariance comparisons};
-    \node[auxiliary] (clock) at (7.4,-12.9)
+    \node[auxiliary] (clock) at (7.4,-14.9)
     {\GuideRef{Appendix}{S:appendix-static-clock}\\
     Static comparisons and the clock obstruction};
   \end{tikzpicture}
@@ -67,7 +70,8 @@
     value, which is also used in the spatial estimates. The upper argument
     retains the earlier wave construction and the radius estimates; it does
     not follow from the lower bound alone. The green box joins the two moment
-    bounds. Gold boxes identify auxiliary checks and comparisons with their
+    bounds. Chapter~\ref{S:book-no-go} explains failed alternatives to these steps.
+    The remaining gold boxes identify auxiliary checks and comparisons with their
     own hypotheses. No arrow from an appendix into the main proof is asserted.
     Every chapter and appendix label is a link to its opening guide.}
   \label{Fig:chapter-roadmap}

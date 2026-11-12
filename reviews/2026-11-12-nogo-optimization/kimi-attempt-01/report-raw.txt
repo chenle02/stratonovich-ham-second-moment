@@ -1,0 +1,97 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "<HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment/reviews/2026-11-12-nogo-optimization/kimi-attempt-01/workspace/TARGET.md: lines 1-259 (complete file)",
+    "<HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment/reviews/2026-11-12-nogo-optimization/kimi-attempt-01/workspace/CONTEXT.md: lines 1-1844 (complete file)"
+  ],
+  "checks": [
+    {
+      "claim": "NG-23: exact Gaussian row moments. For A_i = e_i^T (1 x n), X = sum g_i A_i has the single nonzero singular value (sum g_i^2)^{1/2}, E||X||_{S_4}^4 = n(n+2) = 288 at n=16, V_in = I_n, V_out = n (scalar).",
+      "verdict": "PASS",
+      "reason": "X is the row vector (g_1,...,g_n), so ||X||_{S_4}^4 = (sum g_i^2)^2; expanding with E g^4 = 3 and E g_i^2 g_j^2 = 1 (i != j) gives 3n + n(n-1) = n(n+2), and 16*18 = 288. A_i^*A_i = e_i e_i^T sums to I_n; A_i A_i^* = 1 sums to the 1x1 scalar n. All correct."
+    },
+    {
+      "claim": "NG-23: dimension-independent quantifier and both-variance comparison: 288 > 144 = 9 Tr V_in^2; ratio to Tr V_in^2 is n+2, so no n-independent constant works; average/maximum bounds have fourth powers 1224 and 2304, not contradicted by 288; transposed family refutes the output-only analog.",
+      "verdict": "PASS",
+      "reason": "9 Tr I_16^2 = 144 < 288; n(n+2)/n = n+2 is unbounded, proving the no-uniform-constant claim. From context (E:finite-gaussian-average/maximum with p=4, factor (p-1)^{p/2}=9): average fourth power 9(n^2+n)/2 = 9*136 = 1224 and maximum 9 max(n^2,n) = 9*256 = 2304 at n=16, both >= 288. Transposition swaps V_in and V_out and preserves singular values, so the output-only bound fails identically. Matches Remark R:gaussian-one-variance-test exactly."
+    },
+    {
+      "claim": "NG-28: scalar-map logarithms: log(F_a(z)/F_0(z)) = Delta/k with Delta = (1/2){q log q + (q-2a) log(q-2a)} - (q-a) log(q-a), and 2^m F_a(E_zeta)/U_2 = exp((Delta - (alpha/2) log(2 zeta))/k).",
+      "verdict": "PASS",
+      "reason": "Direct algebra from the displayed F_b (identical to context E:occupation-scalar-map): the z-dependent factor cancels in the ratio, the 8 cancels, and k log(F_a/F_0) = ((q-2a)/2) log(q-2a) + (q/2) log q - (q-a) log(q-a) = Delta. Combined with U_2 = 2^m (2 zeta)^{alpha/(2k)} F_0(E_zeta) from Theorem T:intrinsic-occupation-ceiling, the ratio formula follows exactly."
+    },
+    {
+      "claim": "NG-28: kinetic penalty and exact integers: at d=2, alpha=5/4, a=1/2 (q=11/4, k=7/4), 8{Delta - (alpha/2) log 2} = log(11^11 7^7 / (2^5 9^18)) < 0 because 234966429149994773 < 4803028329503971872.",
+      "verdict": "PASS",
+      "reason": "Recomputed independently: 11^11 = 285311670611, 7^7 = 823543, product = 234966429149994773; 9^18 = 150094635296999121, times 2^5 = 4803028329503971872; strict inequality holds. In 8 Delta - 5 log 2 the powers of 4 cancel (-11-7+18 = 0), leaving log(11^11 7^7/(2^5 9^18)). Negative log gives ratio < 1 at zeta=1, i.e. 2^m F_a(E_1^O) < U_2. The zeta=1/2 vs zeta=1 penalty distinction via the factor (2 zeta)^{alpha/(2k)} is correctly tracked."
+    },
+    {
+      "claim": "NG-28: hypotheses and quantifiers: nonzero admissible covariance, finite positive occupation energy, admissible parameters (a < q/2, H:homog threshold).",
+      "verdict": "PASS",
+      "reason": "alpha=5/4 < 2 = d, a=alpha_0=1/2 in (0,1), alpha+a = 7/4 < 2 satisfy Hypothesis H:homog; a = 1/2 < q/2 = 11/8 and q-2a = 7/4 > 0 keep the logarithms at positive arguments. Finiteness and positivity of E_1^O for nonzero Gamma are correctly cited to Proposition P:raw-occupation-energy. Since the ratio is independent of the energy value, the conclusion 'every nonzero admissible covariance' is sound."
+    },
+    {
+      "claim": "NG-28: comparison-value versus proved-bound distinction and the zeta=1/2 contrast.",
+      "verdict": "PASS",
+      "reason": "The scope text correctly states the result refutes an ordering of two computed quantities and does not decide whether C_2 is below the smaller comparison value; the intro's warning 'not every comparison value below is itself a proved upper bound' is accurate. At zeta=1/2 the exponent reduces to Delta/k > 0 by strict midpoint convexity of x log x (q-a is the midpoint of q and q-2a, both positive since q-2a > 2-a > 1), matching Corollary C:intrinsic-spatial-bracket (C_2 <= 2^m F_0(E_{1/2}) < 2^m F_a(E_{1/2}))."
+    },
+    {
+      "claim": "NG-29(1): empty-active-set sign: one unit vector, ell=1/10, b=4 gives nonempty dual D(w) = 1/(100w) - 4w + w^2/2 with infimum <= D(4) = -3199/400 < 0, while the primal supremum is >= F(0) = 0.",
+      "verdict": "PASS",
+      "reason": "D(4) = 1/400 - 16 + 8 = (1-3200)/400 = -3199/400 = -7.9975 < 0; F(0) = 0 since (-4)_+ = 0. Hence dropping d_empty = 0 from the maximum in Proposition P:gram-positive-optimizer cannot yield the primal supremum. Identical to the check in Remark R:gram-controls."
+    },
+    {
+      "claim": "NG-29(2): with H=R, k=ell=b=1, F(x) = 2 sqrt((x-1)_+) - x^2/2 is not concave.",
+      "verdict": "PASS",
+      "reason": "F(0) = 0, F(2) = 2*1 - 2 = 0, F(1) = -1/2 < (F(0)+F(2))/2 = 0, violating midpoint concavity and hence concavity. Consistent with R:gram-controls (objective decreases on [0,1])."
+    },
+    {
+      "claim": "NG-29(3): entrywise order does not imply PSD order (C=I_2, D=[[1,1/2],[1/2,1]]), while the positive-orthant salvage (nonnegative weights) remains valid.",
+      "verdict": "PASS",
+      "reason": "0 <= C_ij <= D_ij entrywise; D is PSD with eigenvalues 3/2 and 1/2; D-C = [[0,1/2],[1/2,0]] has eigenvalues 1/2 and -1/2, so not PSD. The salvage claim matches Proposition P:gram-entrywise-comparison: for w_i >= 0 the form sum w_i(D_ij - C_ij)w_j = w_1 w_2 >= 0, and the scope correctly disclaims any PSD order or covariance monotonicity for nonlinear waves."
+    },
+    {
+      "claim": "NG-33(1): S_0(t) = [[1,t],[0,1]] is not a Euclidean contraction (image of (0,1) has norm sqrt(1+t^2)), and the normalized whole-space wave phase has Fourier matrix tending to S_0(t) as |xi| -> 0, giving low-frequency velocity bumps image norms tending to sqrt(1+t^2); the valid estimate keeps an exponential free-growth factor.",
+      "verdict": "PASS",
+      "reason": "S_0(t)(0,1) = (t,1) has norm sqrt(1+t^2) > 1 for t > 0. In the supplied unitary normalization J_0(u,v) = (Lambda^{1/2}u, Lambda^{-1/2}v), the free-wave Fourier generator is M(xi) = [[0,<xi>],[-|xi|^2/<xi>,0]] with M(xi)^2 = -|xi|^2 I, so e^{tM(xi)} = cos(|xi|t) I + sin(|xi|t) M(xi)/|xi| -> S_0(t) as |xi| -> 0; unit bumps concentrating at zero frequency in the velocity coordinate therefore have image norms -> sqrt(1+t^2). The exponential-factor replacement is exactly what the context uses (e^{lambda h/2}, e^{2 lambda h} in P:static-phase-all-orders)."
+    },
+    {
+      "claim": "NG-33(2): the plain product identity x^n/(n!)^vartheta = A_n B_n fails; the correct Holder splitting is x^n/(n!)^vartheta = A_n^vartheta B_n^{1-vartheta}; counterexample vartheta=3/4, n=1, x=1 gives 1 vs A_1 B_1 = 1/4.",
+      "verdict": "PASS",
+      "reason": "A_n^vartheta B_n^{1-vartheta} = 2^{vartheta n} x^n (n!)^{-vartheta} * 2^{-vartheta n} = x^n/(n!)^vartheta, correct with conjugate powers vartheta and 1-vartheta as used in the proof of P:static-phase-all-orders. At vartheta=3/4, n=1, x=1: LHS = 1, A_1 = 2, B_1 = 2^{-3} = 1/8, A_1 B_1 = 1/4 != 1. Counterexample and correction both verified."
+    },
+    {
+      "claim": "NG-33(3): replacing k! k^{(2-alpha)k} by (k!)^3 is invalid (alpha=1, k=3: 162 < 216, so M/162 does not imply M/216); the valid weakening is k! k^{(2-alpha)k} >= (k!)^{3-alpha} (RHS 36 at the example); the scope restricts the conclusion to the inference, not the actual coefficient.",
+      "verdict": "PASS",
+      "reason": "At alpha=1 (permitted: P:low-alpha-upper covers 0 < alpha <= 1, and alpha=d=1 is the spatial-white case in H:homog), k=3: 3! * 3^3 = 6*27 = 162 < 216 = 6^3, so the proposed replacement strengthens rather than weakens the bound. The valid weakening follows from k^k >= k! and 2-alpha > 0, giving (k!)^{3-alpha} = 36 <= 162 at the example. The scope sentence correctly states the check refutes an inference between numerical bounds and does not prove the actual coefficient exceeds M/216."
+    },
+    {
+      "claim": "Cross-references and context consistency: every cited label exists in the supplied context, the no-go numbering is 23/28/29/33, and all shared constants match.",
+      "verdict": "PASS",
+      "reason": "R:gaussian-one-variance-test, P:finite-gaussian-matrix, E:raw-occupation-definitions, E:occupation-scalar-map, P:raw-occupation-energy, T:intrinsic-occupation-ceiling, C:intrinsic-spatial-bracket, S:finite-positive-gram, R:gram-controls, P:gram-positive-optimizer, P:gram-entrywise-comparison, P:low-alpha-upper, P:static-phase-all-orders all exist in CONTEXT.md with matching content (288/144/1224/2304; the integer pair 234966429149994773 and 4803028329503971872; -3199/400; the 2x2 Gram example; F_b formulas). \\setcounter{nogo}{22/27/28/32} yields 23/28/29/33, and the context's back-references to No-gos 23, 28, 29 are consistent."
+    },
+    {
+      "claim": "No hidden hypotheses: each no-go's assumptions are stated and honored by its proof.",
+      "verdict": "PASS",
+      "reason": "NG-23, NG-29 and NG-33 are self-contained finite checks with explicit parameters. NG-28 explicitly retains q=4-alpha, k=3-alpha, m=q/k, cites the occupation energies and the ceiling identity, and quantifies over every nonzero admissible covariance, which the proof covers because the ratio is covariance-independent. Quantifiers (n=16 then all n; 0<vartheta<1; 'may always be replaced') are addressed at the correct strength by the given counterexamples."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "NG-33(1): the step from the 2x2 matrix to the whole-space normalized wave phase ('its Fourier matrix tends to S_0(t) as |xi| -> 0') is argued at interface level; the defining Section S:wave-variance is outside the packet. The limit computation is standard and consistent with the supplied J_0 normalization, so this is a coverage note, not an error.",
+      "NG-28: the phrase 'the reverse comparison' has no explicit antecedent inequality; the displayed formula and the zeta = 1/2 contrast make the intended meaning unambiguous, but a one-line definition would aid a first reader (optional clarity only).",
+      "NG-33(3) identifies the exponent b in P:low-alpha-upper's denominator k! k^{bk} with 2-alpha; this is supported by the context's proof sketch (weighted AM-GM with total weight k(2-alpha)) and is explicit at alpha=1 ('the same bound with b=1'), so the counterexample is fully supported either way; noted only because P:d1-upper, which fixes b and q, is outside the packet."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Scope was mathematical content only; LaTeX rendering/compilation of the chapter is checked separately and was not assessed.",
+    "The packet supplies interfaces, not the whole book: P:d1-upper (origin of the (k!)^q factorial inequality) and S:wave-variance (definition of the normalized wave phase) are not included. All four no-go statements, proofs and constants were verified independently of those missing sources, and no inconsistency with the supplied interfaces was found.",
+    "Integer identities (11^11 * 7^7 = 234966429149994773, 2^5 * 9^18 = 4803028329503971872) and all rational/eigenvalue computations were recomputed by hand within this review; no computational tools were used.",
+    "This is an AI artifact review, not human verification or a novelty audit; it does not certify the book-wide role of these no-gos beyond the supplied context interfaces."
+  ]
+}

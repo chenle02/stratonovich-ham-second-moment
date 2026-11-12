@@ -1,0 +1,535 @@
+The main-book Proposition P:mixed is a named prior input: its convergent nonnegative mixed series and fixed-order construction may be used here, but check its hypotheses and application to amplified covariance and equivalent-law remainders. This packet does not request revalidation of the entire parent construction. No external theorem from Rubin is needed for the candidate vague-domination proof. All supplied sources are project-authored text.
+
+===== notes/notes_stratonovich_ham_second_moment.tex (mathematical excerpt) =====
+\begin{hypothesis}[Homogeneous covariance]\label{H:homog}
+  Let $d \in \{1,2,3\}$ and $0 < \alpha_0 < 1$. The spatial covariance is a
+  nonnegative, even, positive-definite tempered Radon measure $\Gamma$ on
+  $\R^d$, with positive even tempered Radon spectral measure $\mu$ in the
+  convention
+  \[
+    \Gamma=\int e^{i\xi\cdot x}\mu(\ud\xi)
+    \quad\text{in the sense of tempered distributions}.
+  \]
+  The symbol $\gamma$ in~\eqref{E:cov} denotes this covariance as a function
+  when one exists, and as a distribution otherwise. For every Borel set $A$ and
+  $c > 0$, $\Gamma(cA) = c^{d-\alpha}\Gamma(A)$, and
+  \begin{equation}\label{E:threshold}
+    \alpha_0+\alpha<2,
+  \end{equation}
+  with $0 < \alpha < d$, or $\alpha = d = 1$. In particular, the last case
+  includes spatial white noise $\Gamma = \delta_0$.
+\end{hypothesis}
+
+
+===== notes/notes_stratonovich_ham_second_moment.tex (mathematical excerpt) =====
+\begin{proposition}[Mixed terms]\label{P:mixed}
+  Under Hypothesis~\ref{H:homog},
+  \begin{equation}\label{E:mixed-moment}
+    \E[X_m(t,x)X_n(t,x)]
+    =\begin{cases}
+      \displaystyle\sum_{D\in\Pi_k}J_{m,n,D}(t),&m+n=2k,\\
+      0,&m+n\text{ odd},
+    \end{cases}
+  \end{equation}
+  where the case $m = n = 0$ equals one. In particular,
+  \begin{equation}\label{E:full-second}
+    \E u^2(t,x)=\sum_{k=0}^\infty\sum_{m=0}^{2k}
+    \sum_{D\in\Pi_k}J_{m,2k-m,D}(t).
+  \end{equation}
+  This is a convergent series of nonnegative terms.
+\end{proposition}
+
+\begin{proof}
+  Lemma~\ref{L:joint-fixed-order} below constructs each $X_n$ and each
+  individual two-chain diagram at arbitrary vertexwise widths, including unequal
+  and empty chains. Its proof uses the positive spatial-measure limit and
+  Lemma~\ref{L:pairing-product-envelope}; it uses neither the present
+  proposition nor any infinite solution series.
+
+  At positive noise widths Wick's formula gives zero at odd total order and the
+  finite pairing sum at even total order. The Green-width limit is taken first,
+  as in the construction preceding Lemma~\ref{L:spatial-wick-measures}. At fixed
+  $m,n$, joint $L^2$ convergence of the two factors gives product convergence in
+  $L^1$:
+  \[
+    \|Y_mY_n-X_mX_n\|_1
+    \le\|Y_m-X_m\|_2\|Y_n\|_2
+    +\|X_m\|_2\|Y_n-X_n\|_2\longrightarrow0.
+  \]
+  A zero-order factor stays equal to one. Each individual Wick diagram also has
+  the finite nonnegative limit in Lemma~\ref{L:joint-fixed-order}.
+
+  To identify its initial-chain form, for terminal variables in the first chain
+  set
+  \[
+    s'_j=t-s_{m+1-j},\qquad y'_j=x-y_{m+1-j},\qquad1\le j\le m,
+  \]
+  and use the corresponding length-$n$ transformation on the second chain. Each
+  transformed chain has initial root $(0,0)$. For example, $G(t-s_m,x-y_m)$
+  becomes $G(s'_1,y'_1)$; every other factor becomes the corresponding
+  successive increment. The differences in each covariance change sign, absorbed
+  by evenness. The vertex involution is
+  \[
+    \rho(j)=m+1-j\ (1\le j\le m),\qquad
+    \rho(m+j)=m+n+1-j\ (1\le j\le n).
+  \]
+  It induces the pairing bijection $D\mapsto\{\{\rho(a),\rho(b)\}:\{a,b\}\in
+  D\}$. The same transformation holds before removing noise smoothing. Passing
+  to the finitely many diagram limits proves \eqref{E:mixed-moment} with
+  precisely~\eqref{E:mixed-diagram}.
+
+  Lemmas~\ref{L:crude-corrected} and~\ref{L:vertex-crude} independently prove
+  fixed-$t$ norm summability of the $X_n$, using the fixed-order construction
+  just cited and Lemma~\ref{L:pairing-product-envelope}.
+  Proposition~\ref{P:mild-construction} identifies their series as a
+  Stratonovich mild solution. None of those proofs uses the present mixed-term
+  identity. Hence, $U_N = \sum_{n=0}^N X_n \to u$ in $L^2$, and
+  \[
+    |\E U_N^2-\E u^2|
+    \le\|U_N-u\|_2(\|U_N\|_2+\|u\|_2)\longrightarrow0.
+  \]
+  The finite expansions of $\E U_N^2$ increase, since every mixed expectation
+  computed above is nonnegative. Their limit is the full double sum, independent
+  of its enumeration. Regrouping by total order gives~\eqref{E:full-second}.
+  This proves Proposition~\ref{P:mixed}.
+\end{proof}
+
+The two chain orders must remain distinct: chronological concatenation can
+violate wave support, and a difference of block labels need not measure
+chronological separation. No-gos~\ref{P:nogo-05} and~\ref{P:nogo-07}
+give explicit positive-measure witnesses.
+
+
+
+===== notes/notes_stratonovich_ham_second_moment.tex (mathematical excerpt) =====
+\begin{proposition}[Obstructions to the spatial hypothesis]
+  \label{P:higher-obstructions}
+  In dimension two, Riesz covariance with $3/2 \le \alpha < 2$ fails
+  Hypothesis~\ref{H:spatial-maximum}. For every $1 < \alpha < 2$ there are
+  nonnegative, nonnegative definite homogeneous locally integrable covariance
+  functions in both dimensions two and three that fail it.
+\end{proposition}
+
+\begin{proof}
+  For the first claim set $h = 1$, $z = -e_1$, and $y =
+  e_1+\rho(\cos\phi,\sin\phi)$. On the wedge $0 < \rho < 1/2$, $2\pi/3 \le \phi
+  \le 4\pi/3$, we have $0 < 1-|y|^2 \le 2\rho$. Therefore,
+  \[
+    \int G_1^{(2)}(\ud y)c|y-e_1|^{-\alpha}
+    \ge\frac{c}{3\sqrt2}\int_0^{1/2}\rho^{1/2-\alpha}\ud\rho
+    =\infty.
+  \]
+  This includes logarithmic divergence at $\alpha = 3/2$. For the second claim
+  choose $a_1 = (1+\max\{2-\alpha,\alpha-1\})/2$ and $a_2 = \alpha-a_1$. Then $0
+  < a_1,a_2 < 1$ and $a_1+a_2/2 > 1$. The function $\gamma(x) =
+  c|x_1|^{-a_1}|x_2|^{-a_2}$, independent of $x_3$ in dimension three, is
+  locally integrable, tempered, and homogeneous of degree $-\alpha$. The
+  Gaussian mixture identity in the preceding proof applied separately to each
+  coordinate shows nonnegative definiteness; products of these Gaussians and the
+  constant function in the third coordinate are positive definite. More
+  explicitly, for the Schwartz autocorrelation $\psi$ used in the preceding
+  proof, choose $N > 1$ and bound $|\psi(x)| \le
+  C_N\prod_{j=1}^d(1+|x_j|)^{-N}$. Then $\int\gamma(x)|\psi(x)|\ud x < \infty$,
+  by the product of one-dimensional integrals and $a_1,a_2 < 1$. Tonelli with
+  $|\psi|$ and then Fubini justify the two Gaussian-mixture integrals against
+  $\psi$. Their integrands are nonnegative quadratic forms, proving the
+  assertion also for the covariance independent of $x_3$. With $u = 1-y_1$ and
+  then $y_2 = \sqrt{2u-u^2}\,w$, Tonelli gives
+  \[
+    \int G_1^{(2)}(\ud y)\gamma(y-e_1)
+    =\frac{c B((1-a_2)/2,1/2)}{2\pi}
+    \int_0^2u^{-a_1}(2u-u^2)^{-a_2/2}\ud u=\infty.
+  \]
+  The beta factor is finite and the integral diverges at zero. The projection of
+  $G_1^{(3)}$ onto its first two coordinates is $G_1^{(2)}$: the two sphere
+  graphs each have surface Jacobian $(1-|y|^2)^{-1/2}$, divided by $4\pi$.
+  Hence, the same divergence holds in dimension three. For radial Riesz
+  covariance, the approximate-identity argument in Lemma~\ref{L:higher-riesz}
+  applies. For the product covariance, Gaussian factorization and Tonelli give
+  \[
+    (p_\epsilon*\gamma)(x)
+    =c\prod_{j=1}^2
+    (p_\epsilon^{(1)}*|\,\cdot\,|^{-a_j})(x_j).
+  \]
+  In dimension three the third coordinate integrates to one. Each factor
+  converges when $x_j \ne 0$ by the same argument with dimension one and
+  exponent $a_j < 1$. This does not require the product kernel to be bounded at
+  infinity; it is unbounded along its singular axes. The singular sets have zero
+  shifted Green measure in both dimensions. Fatou with $\eta = 0$ implies that
+  the smoothed convolution tends to infinity in lower limit as
+  $\epsilon\downarrow0$. Even if both widths must be positive, take $\eta =
+  \epsilon$ and use their sum in the Gaussian identity above. Thus, no uniform
+  $M$ exists. This proves Proposition~\ref{P:higher-obstructions}.
+\end{proof}
+
+
+===== notes/projection-residual-obstruction.md (mathematical excerpt) =====
+## 1. The proposed consumer and the counterexample
+
+Set d=1, alpha=1/2, a=99/100, horizon T=1, terminal point x=0. Let W have
+covariance
+
+    C((s,x),(t,y))=(1-a)|s-t|^(-a)|x-y|^(-1/2).             (C)
+
+The factor1-a is a positive spatial amplitude: Gamma(x)=(1-a)|x|^(-1/2)
+is even, nonnegative, positive definite, homogeneous and locally integrable.
+The parameters satisfy alpha+a<2. These are the original model assumptions.
+For example, positive definiteness follows from the positive Gaussian-kernel
+mixture |x|^(-1/2)=Gamma(1/4)^(-1) integral_0^infinity
+v^(-3/4) exp(-v x^2)dv. The analogous Gaussian mixture works for the temporal
+power. Local integrability and polynomial growth give a tempered Radon kernel.
+
+Let psi=1_[0,1] x 1_[-1,1] be a spacetime test, let V=E[W(psi)^2], and put
+Z=W(psi)/sqrt(V). The covariance profile m(s,x)=E[W(s,x)Z], interpreted as a
+covariance with a generalized field, gives the rank-one kernel P=m tensor m.
+Gaussian projection gives W=Zm+Wperp, with independent residual Wperp and
+covariance C-P>=0 in Loewner order. P is also pointwise nonnegative.
+
+For a covariance D write A_D for its ordinary degree-two mean coefficient
+at (1,0). We prove
+
+    A_C=20000/1932951 < 1/96,
+    A_P >= 101/(3200 sqrt(2)) > 1/48.                       (A)
+
+In particular A_P-A_C>1/96. Thus Loewner positivity of the residual does not
+make its contribution to this wave mean nonnegative.
+
+For fixed1<q<2 let Q=C+(q-1)P. This is the actual variance-q tilt of the
+coordinate Z, retaining Wperp. Linearity of the degree-two coefficient gives
+
+    A_Q=A_C+(q-1)A_P < q A_P-1/96=A_(qP)-1/96.              (Q)
+
+Both C and Q are pointwise nonnegative covariance kernels. Q and P generally
+are nonstationary and nonhomogeneous; only their parent C is claimed to be
+in the original class.
+
+The comparison also fails for full means at sufficiently small positive
+noise coupling. Let u_C(h) denote the original solution with noise hW. For
+Q, use this same measurable solution functional under the equivalent
+variance-q law. For qP, use the ordinary bounded-potential mild equation
+with noise h sqrt(q) Zm. As h decreases to zero,
+
+    E_Q u_C(h)=1+h^2 A_Q+O(h^4),
+    E u_(qP)(h)=1+h^2 q A_P+O(h^4).                         (M)
+
+Consequently E_Q u_C(h)<E u_(qP)(h) for all sufficiently small h>0. The same
+argument at q=1 gives E_C u_C(h)<E u_P(h). This refutes the unconditional
+mean comparison used to discard a Loewner-positive Gaussian residual.
+
+## 2. Normalize the actual projection
+
+The noise Hilbert space has inner product induced by(C). The indicator psi
+belongs to its completion: bounded compactly supported smooth approximants
+converge by dominated convergence for the locally integrable product kernel.
+They can be chosen bounded between zero and one on a fixed compact set,
+converging to psi pointwise almost everywhere. Direct integration
+gives
+
+    E_phi=integral_[-1,1]^2 |x-y|^(-1/2) dxdy=16 sqrt(2)/3,
+    V=2 E_phi/(2-a),
+    m(s,x)=B_a(s) F(x)/sqrt(V),                             (P)
+    B_a(s)=s^(1-a)+(1-s)^(1-a),   0<=s<=1,
+    F(x)=integral_[-1,1] |x-y|^(-1/2)dy.
+
+For |x|<=1, F(x)=2(sqrt(1+x)+sqrt(1-x))>=2sqrt(2), since the square of
+the sum is at least2. It is globally bounded by4: outside[-1,1] it equals
+2(sqrt(|x|+1)-sqrt(|x|-1)), which decreases from2sqrt(2). For s in[0,1],
+B_a(s)>=s+(1-s)=1 and B_a(s)<=2. Hence m is nonnegative and bounded on
+the observation interval, and on its backward light cone
+
+    m(s,x)m(t,y) >= 8/V=4(2-a)/E_phi.                      (L)
+
+Projection positivity is a separate, elementary Gaussian Hilbert fact:
+for any test f, Var(W(f))-Cov(W(f),Z)^2>=0 by Cauchy--Schwarz. Moreover the
+Gaussian residual is orthogonal to Z, so independent. This does not imply
+that the residual kernel is pointwise nonnegative. No independence of two
+wave paths or replacement of the ordinary Stratonovich mean is being used.
+
+## 3. Compute and bound the first mean coefficient
+
+The terminal Picard kernel underlying the named prior fixed-order
+Stratonovich construction (canonical P:mixed) gives the single self-pair
+integral, with G_t(x)=1{|x|<t}/2,
+
+    A_D=integral_(0<s<t<1) integral_(R^2)
+          G_(1-t)(-y) G_(t-s)(y-z) D((s,z),(t,y)) dzdy dsdt. (I)
+
+For the added bounded profile the same formula follows directly by Wick's
+identity at positive widths and the limit justified in Section4. No time
+reversal of a nonstationary kernel is used. There is one Wick pairing and
+no factorial multiplier. For(C), integrate z
+first. The spatial factor is (t-s)^(1/2)/(1-alpha) with alpha=1/2; the
+remaining Green mass is1-t. Thus
+
+    A_C=(1-a)/(1-alpha)
+          /[(2-alpha-a)(3-alpha-a)(4-alpha-a)]
+        =20000/1932951.                                    (R)
+
+Indeed with r=t-s the time integral is
+(1/2) integral_0^1 r^(1-alpha-a)(1-r)^2 dr, equal to the reciprocal of
+the three displayed factors. The kernel is integrable since alpha+a<2.
+At the chosen parameters20000*96=1920000<1932951.
+
+For P, every contributing vertex satisfies |y|<1-t and |z|<1-s, so(L)
+applies. With covariance replaced by the constant one, the integral(I) is
+
+    integral_(0<s<t<1) (1-t)(t-s) dsdt=1/24.
+
+It follows that
+
+    A_P >= [4(2-a)/E_phi]/24=(2-a)/(32sqrt(2))
+          =101/(3200sqrt(2)) > 1/48.                        (B)
+
+The last strict inequality follows from sqrt(2)<3/2 and101>100. This proves
+(A), and linearity gives(Q). The local ProjectionResidual scalar consumer
+checks the actual rational/square-root gap and its affine tilted-coefficient
+application; the Gaussian, cone and integral identifications are outside Lean.
+
+## 4. Pass to full means without assuming a new Q-model theorem
+
+Write the original ordinary Stratonovich expansion at (1,0) as
+u_C(h)=sum_(n>=0) h^n X_n. Named prior inputs are canonical P:mixed and the
+parent construction: nonnegative mixed moments, convergence in L2 and
+finiteness for every amplified homogeneous covariance. Fix r>1 and
+B_r=E|u_C(r)|^2<infinity. Apply P:mixed to the admissible covariance r^2 C.
+The same-noise n-linearity identifies its coefficients with r^n X_n, so its
+nonnegative mixed series contains r^(2n) E X_n^2. This gives the following
+bound directly, without the uniform-regularization premise of the separate
+L:uniform-series-tail:
+
+    ||X_n||_2 <= sqrt(B_r) r^(-n),
+    ||sum_(n>=4) h^n X_n||_2
+       <= sqrt(B_r) (|h|/r)^4/(1-|h|/r),   |h|<r.           (T)
+
+The variance-q density is
+
+    L_q(Z)=q^(-1/2) exp((1-1/q) Z^2/2),
+    E L_q=1,   E L_q^2=[q(2-q)]^(-1/2),  1<q<2.           (D)
+
+These are the elementary one-coordinate Gaussian integrals already screened
+in the earlier variance-tool work. Cauchy--Schwarz transfers(T) to an O(h^4)
+L1 remainder under this density. The tilted law is Gaussian with covariance
+Q and is equivalent to the parent, so the original measurable solution is
+well-defined under it. Global sign symmetry kills odd-order expectations.
+The fixed-order Wick identity gives E_Q X_2=A_Q: at positive regularization
+widths this is the ordinary Gaussian covariance formula; L2 parent
+convergence and L_q in L2 pass the expectation to the limit. The projection
+profiles use the source's common-noise temporal Laplace cutoff and spatial
+heat average, not temporal convolution. Explicitly, with K_delta the
+truncated temporal covariance of current author(2.9)--(2.11),
+
+    m_(epsilon,delta)(s,x)
+      = [(1-a) integral_0^1 K_delta(s-r)dr]
+          (p_epsilon*F)(x)/sqrt(V).
+
+The bound0<=K_delta<=|.|^(-a), together with F<=4 globally and the
+unit mass of p_epsilon, gives0<=m_(epsilon,delta)<=8/sqrt(V), and
+the profiles converge to m at interior times and every spatial point by
+monotone convergence in the temporal factor and the heat approximate
+identity for bounded continuous F. Thus the P integral passes by dominated
+convergence on the finite-mass terminal kernel. The source coupling, cross-
+covariance with Z and this exact limit are detailed in the accompanying
+regularization addendum. Therefore the first line of(M) follows. We do not
+invoke Chen's stationary representation for the nonstationary Q.
+
+For qP, m is bounded by some M on[0,1] x R. Deterministic Picard iteration
+has coefficients d_n with |d_n|<=M^n/(2n)! at horizon one, by the Green mass
+identity integral G_t=t and induction. With noise h sqrt(q) Zm, the absolute
+mean series is bounded by E cosh(sqrt(M sqrt(q)|Z|)) at |h|<=1. It is finite:
+sqrt(v)<=1+v and the Gaussian has all exponential moments of |Z|. Factoring
+|h|^4 from its tail gives O(h^4); odd Gaussian powers vanish. Its degree-two
+term is q A_P. This proves the second line of(M), hence the strict full-mean
+comparison for small h. This proves the stated obstruction.
+
+## 5. What remains for a useful large-time lower bridge
+
+The known finite-coordinate density mechanism itself is not disproved. For
+an N-dimensional orthogonal Gaussian projection P_T and fixed1<q<2 it gives
+
+    E u_C(T,x)^2 >= [q(2-q)]^(N/2) [E_Q u_C(T,x)]^2,
+    Q=C+(q-1)P_T.                                         (F)
+
+A sufficient MODEL-specific bridge would require, for each fixed q in(1,2)
+and each tolerance delta>0, projections of ranks N_T=o(T^kappa) for which
+the modified mean is eventually positive and
+
+    liminf_(T->infinity) T^(-kappa) log E_Q u_C(T,x)
+       >= q^(1/(3-alpha)) ell-delta.                        (H)
+
+Here ell>0 must be an independently valid first-mean lower constant. Applying
+this to the original sharp target requires its intended source constant;
+no correction of the recorded printed normalization discrepancy is adopted.
+If(H) held, (F) would give the lower factor2^(1+1/(3-alpha)) by first taking
+T to infinity, then delta to zero and q up to2. No q(T)->2 substitution or
+uniform q estimate is needed. This is only the missing micro-contract, not
+a proof of(H) or the original conjectured sharp constant.
+
+The new counterexample shows why(H) cannot be replaced by the unconditional
+instruction 'discard the independent residual and use qP'. It does not rule
+out specially chosen projections, a leading-order comparison or a different
+model-specific route. The failed deterministic-surrogate mean-shift argument
+is a separate recorded shortcut. No Skorohod result is developed here: this
+obstruction uses the ordinary Stratonovich self-pair contribution to the mean.
+No new general existence, all-order sharpness, novelty or circulation claim.
+
+===== reviews/2026-10-28-covariance-recon/mellin-square-screen.md (mathematical excerpt) =====
+A tempting universal recipe,with F_s=p_s*Gamma,would define a static endpoint
+density by int_0^infinity s^{(2alpha-beta)/2-1} F_s(x)^2 ds. Its formal
+homogeneity is beta and its positive mixtures would preserve positive
+definiteness. Local finiteness is an indispensable additional condition.
+
+Take the ordinary admissible d3 product
+ Gamma(x)=|x1|^(-9/10)|x2|^(-1/5),constant in x3,
+ alpha=11/10,alpha0=1/4,theta=7/8,beta=9/5.
+All source thresholds and the H9parameter interval hold. This target already
+has valid coordinate-product endpoints;the new recipe is a different route.
+
+For0<s<1/16 and |x1|<=sqrt(s),Gaussian integration over
+y1 in[sqrt(s),2sqrt(s)] gives
+ (p_s^(1)*|.|^-9/10)(x1)>=C s^(-9/20).
+For x2 in[1/2,1],the other Gaussian convolution has a uniform positive lower
+bound,by integrating y2 near x2. The third factor is1. Integrating F_s² on
+the fixed box B=[-1,1]x[1/2,1]x[-1,1],using the shrinking x1strip,gives
+ int_B F_s(x)^2 dx >= C s^(1/2-9/10)=C s^(-2/5).
+
+The Mellin weight is s^(-4/5). Positive Tonelli therefore yields
+ int_B int_0^infinity s^(-4/5)F_s(x)^2 ds dx
+   >= C int_0^(1/16) s^(-6/5) ds =infinity.
+Thus the recipe is not a locally finite Radon covariance for this valid
+input. The exact exponent/parameter control is in the JSON.
+
+Total homogeneity and centered Gaussian variance are not enough to certify
+this nonlinear construction;coordinate singularities matter. A possible
+repair requires an actually locally finite endpoint construction and the
+full Gaussian comparison,for example with justified anisotropic regularization.
+Neither is supplied here. This does not question the manuscript's linear-map
+closure:that proof convolves already admissible endpoints and never constructs
+a new covariance by this Mellin-square formula. No Skorohod result is developed.
+
+===== reviews/2026-10-28-covariance-recon/additive-variance-falsification.md (mathematical excerpt) =====
+Consider the static scalar wave ODE y''=Zy,y(0)=1,y'(0)=0,where Z is a real
+centered Gaussian of variance A. The entire solution is cosh(sqrt(Z)) at t1,
+interpreted by its real power series also for negative Z. Gaussian moments
+and cosh²(w)=(1+cosh(2w))/2 give
+
+ F(A)=E[y(1)²]=1+sum_(k>=1)2^(3k-1)(2k)! A^k/[k!(4k)!].
+
+Termwise expectation is justified by E exp(2sqrt(|Z|))<infinity. All remaining
+series terms are positive. For k>=1,the next/current term ratio is
+16A(2k+1)/[(4k+1)(4k+2)(4k+3)(4k+4)]<=16A/(4k+1)^3.
+After order N20,the positive tail is at most term_(N+1)/(1-q),
+q=16A/(4N+1)^3<1. Exact Fraction calculations at A99,100,101 show
+
+ lowerF(100)² > upperF(99)*upperF(101),
+
+with the exact positive rational margin retained in the JSON. Hence a generic
+argument claiming logconvexity in ADDITIVE Gaussian covariance amplitudes is
+false. This does not affect the valid coefficient Holder in the manuscript:
+that uses geometric interpolation,which corresponds to log amplitude rather
+than amplitude. Positive power-series coefficients indeed give logconvexity
+in log A.
+
+This toy is the alpha=alpha0=0 endpoint,outside the strict project regime.
+No false claim is made that this alone refutes a specialized interior-noise
+inequality. Its role is falsification BEFORE investing in an unrestricted
+Gaussian covariance-mixture shortcut. Any restricted replacement needs its
+own proof;the original full upper/sharp targets remain open.
+
+===== reviews/2026-10-28-phase-propagator/calibration.md (mathematical excerpt) =====
+## Scalar falsification before the proof
+
+The scalar spatially constant covariance is alpha=0,outside the theorem.
+For y''=sigma Z y,unit-time Z standard Gaussian,and phase norm u²+v²,
+the entire phase matrix is M(sigma Z),where
+
+ M(z)=[[cosh(sqrt z),sinh(sqrt z)/sqrt z],
+       [z sinh(sqrt z)/sqrt z,cosh(sqrt z)]].
+
+M=M0+zM1+z²M2+...,with the exact rational matrices in checks.py. For any
+initial phase x,the coefficient of sigma² in E|M(sigma Z)x|² is x^T K x,
+where K=M1^T M1+M0^T M2+M2^T M0. Exact arithmetic gives
+
+ K=[[4/3,4/5],[4/5,17/45]],  (1,-2)K(1,-2)^T=-16/45.
+
+The first random term alone has a nonnegative squared norm,but its cross
+term with the mean second-order phase cannot be dropped. This also shows
+why arbitrary-phase energy cannot simply inherit the original (1,0)
+solution-value covariance monotonicity. If the exact scalar full flow is
+considered,the same coefficient is its actual local Taylor coefficient:
+for bounded real sigma,each of the first four sigma derivatives of M(sigma Z)
+is bounded by a polynomial in |Z| times exp(C sqrt(|Z|));Gaussian integration
+is finite. Dominated differentiation and Gaussian symmetry give
+E|M(sigma Z)(1,-2)^T|²=5-16sigma²/45+O(sigma^4).
+This observation is not a counterexample to the HAM target or its original
+data and temporal assumptions.
+
+The local checks also sample the exact centered spherical Riesz convolution
+and radial resolvent formula. The slow alpha1.9 improper quadrature is only
+required to agree at relative1e-4;the proof uses the exact beta integral,
+not a claim of fifty correct digits in that quadrature.
+
+
+===== reviews/2026-10-28-general-covariance-cones/block-propagator-screen.md (mathematical excerpt) =====
+Falsification before investing in that program: even two independent scalar
+static blocks do NOT multiply their second moments for data(1,0). Let y''=Z_i y
+on consecutive unit intervals,i=1,2,with independent centered Gaussian Z_i of
+variance A. Set c(z)=cosh(sqrt(z)),s(z)=sinh(sqrt(z))/sqrt(z),understood by
+their entire power series,so negative z gives the corresponding cosine/sine.
+The exact phase propagator is
+
+ M(z)=[[c(z),s(z)],[z s(z),c(z)]].
+
+Thus the final value is c(Z2)c(Z1)+s(Z2)Z1s(Z1),not c(Z2)c(Z1).
+The exact rational FORMAL expansion gives
+
+ E y(1)^2=1+A/3+O(A²),
+ E y(2)^2=1+3A+O(A²),
+ [E y(1)^2]^2=1+2A/3+O(A²).
+
+The formal first-order gap is7A/3. The accompanying script computes through
+A² by independent Gaussian even-moment substitution,without floating-point
+quadrature. This is a finite diagnostic,not an analytic remainder certificate.
+It says to carry velocity and study an operator/energy norm BEFORE attempting
+an SPDE block theorem. It neither proves that such a norm estimate exists nor
+rules it out. Any proposed inequality must state which phase norm,noise
+amplitude,interval length and constants it uses,then pass this test.
+
+
+===== reviews/2026-10-30-nonseparable-family/falsification-v1.md (mathematical excerpt) =====
+Fix ANY0<a<1 and original d1 white Gamma=c_Gamma delta0,c_Gamma>0.
+Choose nonzero nonnegative smooth f1 supported in(1/8,1/4), let
+f2(u)=f1(1-u), and choose nonzero nonnegative smooth spatial bumps
+q1 supported in(-2,-1),q2 supported in(1,2). Then
+psi(u,x)=f1(u)q1(x)+f2(u)q2(x) is a legal positive nonseparable test.
+
+Put A=int_0^1 u^-a f1(u)du and B=int_0^1 (1-u)^-a f1(u)du.
+Both are finite/positive because support stays away from endpoints.
+On supp f1, u<1-u, so u^-a>(1-u)^-a. Since f1 is positive on an
+interval, A>B>0. Direct change of variable using the reflected f2 gives
+
+ h_0=c_Gamma(Aq1+Bq2), h_1=c_Gamma(Bq1+Aq2).
+
+Choose x1 with q1(x1)>0 and x2 with q2(x2)>0. Disjoint supports give
+
+ h_0(x1)h_1(x2)-h_1(x1)h_0(x2)
+       =c_Gamma^2(A^2-B^2)q1(x1)q2(x2)>0.
+
+Thus the endpoint profiles are not proportional, so there cannot exist
+a single spatial U and scalar b(sigma) representing ALLh_sigma. No
+Fourier normalization or numerical singular-integral computation was used.
+For a time where f1>0 only q1 appears, while for a time where f2>0 only
+q2 appears. A single product would require these nonzero disjoint spatial
+bumps to be proportional, which is impossible. Thus psi itself is not a
+single product.
+This is inside the actual allowed white model, with1+a<2.
+
+Separate common-positive-profile screen: for any nonnegative psi and
+sigma,u in[0,1], |sigma-u|^-a>=1 except the harmless integrable diagonal.
+Hence q_sigma>=int psi(u,.)du=:q_avg and h_sigma>=Gamma*q_avg by the
+positive Radon convolution. q_avg is nonzero smooth compact because
+psi is nonzero/nonnegative. This screen supplies a candidate fixed
+attractive comparison profile; it is NOT the desired uniform F-wave
+complement, which still needs proof.
+
+At the static endpoint a=0 the two endpoint weights coincide (A=B);
+this witness is deliberately restricted to the stated positivea range.

@@ -1,0 +1,88 @@
+{
+  "derivation": "Native metadata and public-text only. Private reasoning removed from this derived export; native bytes preserved at private custody location and hash.",
+  "native_custody": [
+    {
+      "original_location": "reviews/2026-11-12-nogo-covariance-phase/deepseek-attempt-01/native-session-snapshot.json",
+      "retained_private_location": "private/audit/2026-11-12-nogo-expansion/covariance-phase/deepseek-attempt-01/native-session-snapshot.json",
+      "sha256": "b8a466bbbd37da9ca563868c034bd931f535e6b686c38e07a9783e5cc9dd73ab"
+    },
+    {
+      "original_location": "reviews/2026-11-12-nogo-covariance-phase/deepseek-attempt-01/native-session-final.json",
+      "retained_private_location": "private/audit/2026-11-12-nogo-expansion/covariance-phase/deepseek-attempt-01/native-session-final.json",
+      "sha256": "3a17c7dbdb8eba46c5df929b55513ac5c11da5cf1cffeb628ce1cb1ae0e40cff"
+    }
+  ],
+  "session": {
+    "id": "ses_e2fe1f794ffeZkSbQAwQVtiGlv",
+    "title": "nogo-covariance-phase-11-independent-review",
+    "version": "1.18.31",
+    "time": {
+      "created": 1794492991595,
+      "updated": 1794493738559
+    }
+  },
+  "assistant_metadata": [
+    {
+      "role": "assistant",
+      "mode": "artifact-reviewer",
+      "agent": "artifact-reviewer",
+      "cost": 0.12049092,
+      "tokens": {
+        "total": 74262,
+        "input": 20112,
+        "output": 3228,
+        "reasoning": 50922,
+        "cache": {
+          "write": 0,
+          "read": 0
+        }
+      },
+      "modelID": "deepseek-v4-pro",
+      "providerID": "deepseek",
+      "time": {
+        "created": 1794492992226,
+        "completed": 1794493738513
+      },
+      "finish": "stop",
+      "id": "msg_1d01e0ae20016YBxEbDbkdNRcw",
+      "sessionID": "ses_e2fe1f794ffeZkSbQAwQVtiGlv"
+    }
+  ],
+  "parts": [
+    {
+      "type": "step-start",
+      "id": "prt_1d01e1836001cm7310mtJcSkjA",
+      "sessionID": "ses_e2fe1f794ffeZkSbQAwQVtiGlv",
+      "messageID": "msg_1d01e0ae20016YBxEbDbkdNRcw"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"$schema\": \"subscription-review-report/1\",\n  \"verdict\": \"PASS\",\n  \"confidence\": \"high\",\n  \"source_coverage\": [\n    \"candidate-review.tex: L1-730 (all eleven entries NG-08, NG-09, NG-11, NG-12, NG-13, NG-19, NG-14, NG-15, NG-16, NG-20, NG-31)\",\n    \"context.txt: L1-535 (Hypothesis H:homog, Proposition P:mixed, P:higher-obstructions, projection-residual-obstruction.md, mellin-square-screen.md, additive-variance-falsification.md, calibration.md, block-propagator-screen.md, nonseparable-family/falsification-v1.md)\",\n    \"exact-checks.json: L1-44\",\n    \"exact-checks.py: L1-33\"\n  ],\n  \"checks\": [\n    {\n      \"claim\": \"NG-08: admissible Riesz/product examples, translated wave divergence, smoothing Fatou, ranges and exact scope.\",\n      \"verdict\": \"PASS\",\n      \"reason\": \"The Riesz lower bound has the correct polar factor (density 1/(2pi), wedge length 2pi/3, Jacobian) giving divergence exactly when 1/2-alpha <= -1, i.e. alpha >= 3/2, with logarithmic divergence at alpha=3/2. The product exponents satisfy 0<a1,a2<1 and a1+a2/2>1 in both subcases of 1<alpha<2; each factor is a positive Gaussian mixture, so the coordinate product is positive definite in d=2 and, with the constant third factor, in d=3. The beta-integral computation and its divergence at u=0 are correct, and projection of the d=3 unit wave measure onto the first two coordinates is G_1^{(2)}, so the d=3 claim follows. Gaussian smoothing convergence off the zero translated-wave-measure singular axes and Fatou lower-limit divergence are sound. The stated admissibility condition alpha0<2-alpha is exact.\"\n    },\n    {\n      \"claim\": \"NG-09: product input admissibility, local integrability/temperedness after radial multiplication, fixed Gaussian convolution growth, covariance Cauchy-Schwarz contradiction.\",\n      \"verdict\": \"PASS\",\n      \"reason\": \"Gamma has degree 9/10+3/5=3/2, both coordinate exponents in (0,1), is positive definite as a Schur product of one-dimensional Gaussian-mixture kernels and a constant, and is a tempered Radon measure because coordinate singularities are integrable and Schwartz decay handles the unbounded singular axes. Multiplication by |x|^{1/2} preserves local integrability and temperedness. The convolution p_sigma*F finite at zero and the lower bound of order sqrt(L) on a fixed box near Le3 are correct. If F were positive definite, the Cauchy-Schwarz inequality for the positive form would impose |(p_sigma*F)(x)| <= (p_sigma*F)(0), contradicted for large L. The scope is correctly limited to Euclidean radial multiplication.\"\n    },\n    {\n      \"claim\": \"NG-11: entire-series Gaussian integration, exact coefficient ratio/tail certificate/rational interval and strict log-convexity failure; additive versus logarithmic variance distinction.\",\n      \"verdict\": \"PASS\",\n      \"reason\": \"The identity cosh^2(w)=(1+cosh(2w))/2 gives t_k(A)=2^{3k-1}(2k)!A^k/[k!(4k)!], confirmed by direct expansion. Termwise integration is justified since E exp(2 sqrt|Z|)<infinity. The ratio bound 16A(2k+1)/[(4k+1)(4k+2)(4k+3)(4k+4)] <= 16A/(4k+1)^3 is correct, so the tail after t_20 is bounded by t_21/(1-q_A). The supplied outward rational intervals are of the correct form, and the positive gap lower numerator 6945091633359/10^12 proves F(100)^2>F(99)F(101), falsifying additive log-convexity. The distinction between additive variance and geometric amplitude interpolation is accurately stated.\"\n    },\n    {\n      \"claim\": \"NG-12: product heat lower bounds, strip exponent, Mellin exponent and positive Tonelli divergence; failure only of local finiteness for stated recipe.\",\n      \"verdict\": \"PASS\",\n      \"reason\": \"Gamma with exponents 9/10 and 1/5 has degree alpha=11/10 and is admissible as in NG-09. On |x1|<=sqrt(s) the first smoothed factor is bounded below by c s^{-9/20}, while the second factor and the constant third coordinate give positive constants; hence the box integral is bounded below by c s^{1/2-9/10}=c s^{-2/5}. The Mellin weight is exactly s^{-4/5}, so Tonelli yields integral s^{-6/5}, which diverges. The conclusion is correctly limited to non-local-finiteness of the displayed heat-Mellin recipe.\"\n    },\n    {\n      \"claim\": \"NG-13: plane covariance admissibility and homogeneity, vague-limit domination, C_n tends to infinity (not just unbounded); no overstatement about other majorants/density.\",\n      \"verdict\": \"PASS\",\n      \"reason\": \"The planar Riesz factor |y|^{-1/2} is locally integrable and positive definite, and the normal Dirac covariance is positive definite, so the product is admissible with homogeneity alpha=3/2 and alpha0=1/4. The mass on radius R balls is proportional to R^{3/2}, giving temperedness. If a subsequence C_n were bounded by C, vague convergence would imply Gamma <= C|x|^{-3/2}dx for nonnegative compactly supported continuous functions, hence absolute continuity with respect to three-dimensional Lebesgue measure; the positive-mass planar annulus contradicts this. This excludes every bounded subsequence, so C_n tends to infinity. The scope is carefully limited to uniform scalar isotropic density envelopes.\"\n    },\n    {\n      \"claim\": \"NG-19: actual parent H-admissibility; legal normalized rank-one projection; exact degree-two coefficients; PSD versus pointwise order; amplified-parent L2 remainder; bounded-potential Gaussian remainder; optional q equivalent-law scope, density L2 norm and common-noise regularization.\",\n      \"verdict\": \"PASS\",\n      \"reason\": \"The parent C is admissible with alpha=1/2, a=99/100 and alpha+a<2. The rank-one projection is legal by local integrability and dominated convergence, and C-P is positive semidefinite. Direct computation gives E_phi=16sqrt2/3, V=2E_phi/(2-a), m=B_a F/sqrt V, with the stated bounds on the backward cone. The degree-two integral has no extra factorial: A_C=20000/1932951<1/96 and A_P>=101/(3200sqrt2)>1/48, so the strict coefficient gap is real. The amplified-parent L2 tail via P:mixed and the bounded-potential Picard bound give O(h^4) remainders, so the small-h full-mean inequality follows. The optional q statement is correctly scoped as an equivalent-law statement: L_q has finite second moment [q(2-q)]^{-1/2}, Cauchy-Schwarz transfers the tail, and the regularized cross-covariance identifies A_Q=A_C+(q-1)A_P without invoking a homogeneous model theorem for the nonstationary Q.\"\n    },\n    {\n      \"claim\": \"NG-14: exact two-block phase, polynomial coefficients, rigorous Gaussian-integrable analytic O(A^2) remainder and strict small-A inequality; scalar outside-H scope.\",\n      \"verdict\": \"PASS\",\n      \"reason\": \"The propagator M(z)=[[c(z),s(z)],[z s(z),c(z)]] is correct, and the terminal value c(Z2)c(Z1)+s(Z2)Z1s(Z1) is exact. Expansion through degree two gives coefficients 3/2z+1/2w+5/24z^2+5/12zw+1/24w^2. Squaring yields z^2 and w^2 coefficients 8/3 and 1/3, while c(z)^2 has z^2 coefficient 1/3, so the variance coefficients are 3 and 1/3 versus 2/3 for the product. The bound |c|+|s|<=2e^{sqrt|z|} gives absolute integrability at a fixed variance, and the nonnegative-coefficient series justifies the uniform O(A^2) tail for 0<=A<=A1. The strict difference 7A/3+O(A^2) is valid. The scalar outside-H scope is explicit.\"\n    },\n    {\n      \"claim\": \"NG-15: FULL variance-parameter coefficient including second-order mean, matrix arithmetic, negative phase and e1 omission witness, analytic remainder and original-data limitation.\",\n      \"verdict\": \"PASS\",\n      \"reason\": \"M0, M1, M2 are the exact coefficient matrices. The formula K=M1^T M1+M0^T M2+M2^T M0 correctly accounts for the cross term with the second-order mean. Actual matrix arithmetic gives K=[[4/3,4/5],[4/5,17/45]], and (1,-2)K(1,-2)^T=-16/45. For e1 the first random term is 5/4 while the full coefficient is 4/3, so omission of the mean cross term underestimates rather than bounds the coefficient. The analytic tail bound from absolute Gaussian summability gives E|M(sigma Z)(1,-2)|^2=5-16sigma^2/45+O(sigma^4). The statement is correctly limited to arbitrary-phase scalar covariance monotonicity, not the original solution-value moment at (1,0).\"\n    },\n    {\n      \"claim\": \"NG-16: generic homogeneous-score optimization and exact exponential Gaussian shift; deterministic surrogate loss only, not an SPDE impossibility.\",\n      \"verdict\": \"PASS\",\n      \"reason\": \"The substitution H=c^{1/(2-r)}K makes both terms scale by c^{2/(2-r)}, so J_c=c^{2/(2-r)}J1. The surrogate is 2(AH^r-H^2/2), hence 2J1, while J2=2^{2/(2-r)}J1>2J1 because 2/(2-r)>1 for r<2. The Gaussian shift computation is exact: E_Qh Y=e^{sigma^2/2+sigma h}, and maximization of sigma^2+2sigma h-h^2 at h=sigma recovers e^{2sigma^2}=E Y^2, while substituting the deterministic value e^{sigma h} only gives e^{sigma^2}. The scope is correctly restricted to a deterministic-surrogate score loss.\"\n    },\n    {\n      \"claim\": \"NG-20: actual admissible white covariance control, determinant and nonseparability; exact representation failure does not decide optimizer sufficiency.\",\n      \"verdict\": \"PASS\",\n      \"reason\": \"With f1 supported in (1/8,1/4), u<1-u on the support gives A>B>0. Reflection gives h0=cGamma(Aq1+Bq2) and h1=cGamma(Bq1+Aq2). Disjoint spatial supports produce the nonzero determinant cGamma^2(A^2-B^2)q1(x1)q2(x2)>0, so a single b(sigma)U(x) representation is impossible. The white covariance has alpha=1 and 1+a<2, so the model parameter condition is verified. The conclusion is only an exact representation obstruction, and the note about the common lower profile and optimizer reduction is accurate.\"\n    },\n    {\n      \"claim\": \"NG-31: stable/unstable phase witness, smooth unit-mass velocity and masks, d'Alembert cone witness; arbitrary-phase/guard claims only.\",\n      \"verdict\": \"PASS\",\n      \"reason\": \"For B=[[0,1],[1,0]], the eigenvectors (1,1) and (1,-1) have eigenvalues 1 and -1, so the operator norm is e^t while e^{tB}(1,-1)=e^{-t}(1,-1); this is a valid phase-growth illustration. For the wave witness, chi_s v=0 and chi_l v=v, with chi_s and chi_l agreeing on [-2,2]. D'Alembert's formula at time nine gives u_s=0 and u_l=1/2 on [-2,2], because every interval [x-9,x+9] with -2<=x<=2 contains (5,6). The proof therefore establishes the arbitrary-phase and non-full-cone guard claims without overstating the original specified-phase terminal lower bound.\"\n    },\n    {\n      \"claim\": \"Integration: all new claims have arguments and exact boundaries; no scalar counterexample promoted to homogeneous model, no claimed mathematical statement rests on formal coefficients alone; contextual successor references are not fresh proof obligations.\",\n      \"verdict\": \"PASS\",\n      \"reason\": \"Each entry states the class in which it applies. The scalar diagnostics NG-11, NG-14, NG-15, and NG-16 are explicitly outside the homogeneous model; NG-19 marks P and Q as not necessarily homogeneous; NG-20 and NG-31 state only representation/guard failures. Analytic remainders are supplied for NG-11, NG-14, NG-15, and NG-19, so no live claim rests on formal coefficients alone. Proposition P:mixed is used only as the named prior for the amplified-parent tail and fixed-order coefficient, and its hypotheses are satisfied there; successor references such as Section interval-upper or static-phase replacements are scoped references, not additional proof obligations.\"\n    }\n  ],\n  \"findings\": {\n    \"fatal\": [],\n    \"major\": [],\n    \"minor\": []\n  },\n  \"required_repairs\": [],\n  \"limitations\": [\n    \"The review verifies formulas and bounds analytically and confirms that the supplied exact-checks are outward enclosures; it does not independently recompute every large exact rational interval from scratch.\",\n    \"The optional equivalent-law step in NG-19 is compressed in the candidate text and relies on the supplied context regularization addendum for the parent fixed-order coefficient transfer; this was checked for consistency and remains within the named-prior allowance.\",\n    \"Several entries rely on context excerpts for H:homog, P:mixed, and P:higher-obstructions rather than restating those prior proofs inline; their application to the present witnesses was checked, but the parent proofs themselves were not revalidated.\",\n    \"This is a mathematical no-go review only; source-paper audit, rendered-image verification, novelty judgment, and whole-book gate were not performed.\"\n  ]\n}",
+      "time": {
+        "start": 1794493704110,
+        "end": 1794493738480
+      },
+      "id": "prt_1d028e7ae001drlTey7e3RowgN",
+      "sessionID": "ses_e2fe1f794ffeZkSbQAwQVtiGlv",
+      "messageID": "msg_1d01e0ae20016YBxEbDbkdNRcw"
+    },
+    {
+      "reason": "stop",
+      "type": "step-finish",
+      "tokens": {
+        "total": 74262,
+        "input": 20112,
+        "output": 3228,
+        "reasoning": 50922,
+        "cache": {
+          "write": 0,
+          "read": 0
+        }
+      },
+      "cost": 0.12049092,
+      "id": "prt_1d0296e01001C0GsigL0Wqc7cs",
+      "sessionID": "ses_e2fe1f794ffeZkSbQAwQVtiGlv",
+      "messageID": "msg_1d01e0ae20016YBxEbDbkdNRcw"
+    }
+  ]
+}

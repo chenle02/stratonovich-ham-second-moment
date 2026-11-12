@@ -1,0 +1,24 @@
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \filldraw[fill=hamblue!7,draw=hamblue] (-.5,-.5)--(6,-.5)--(7.5,1.4)--(1,1.4)--cycle;
+    \coordinate (o) at (1,.15);
+    \coordinate (p) at (4.5,.65);
+    \coordinate (v) at (4.5,3.05);
+    \draw[ham/arrow] (o)--(p) node[midway,below] {$Pv$};
+    \draw[ham/arrow] (o)--(v) node[midway,above left] {$v$};
+    \draw[ham/arrow,draw=hamteal] (p)--(v)
+    node[ham/note,midway,right,align=left]
+    {$(I-P)v\ne0$\\supplied by $J$};
+    \draw[hamblue] (4.22,.61)--(4.22,.88)--(4.5,.92);
+    \node[ham/note] at (2.5,-.95) {Closed raw-noise image $K=\Phi H_W$};
+    \node[ham/note] at (1.45,2.55) {Feature space $\mathcal G$};
+  \end{tikzpicture}
+  \caption[The point feature and the closed noise image]{Hilbert-space
+    schematic for No-go~\ref{P:nogo-32}, drawn in three coordinates only.
+    The explicit vector $q\perp K$ has $\langle v,q\rangle>0$, so a
+    positive finite cutoff point feature at $t_0>0$ has a nonzero component
+    supplied by $J$. This says nothing by itself about measurability of a
+    nonlinear limit with respect to $W$.}
+  \label{Fig:nogo-feature-range}
+\end{figure}

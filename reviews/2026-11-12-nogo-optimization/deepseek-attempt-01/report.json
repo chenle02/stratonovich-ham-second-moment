@@ -1,0 +1,90 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "source_coverage": [
+    "TARGET.md",
+    "CONTEXT.md/integrated_compact_gaussian.tex",
+    "CONTEXT.md/integrated_occupation_ceiling.tex",
+    "CONTEXT.md/integrated_positive_gram.tex",
+    "CONTEXT.md/integrated_spatial_occupation.tex",
+    "CONTEXT.md main-source contexts H:homog, P:low-alpha-upper, P:static-phase-all-orders"
+  ],
+  "checks": [
+    {
+      "claim": "NG23 exact row/transpose moment: for n=16 coordinate rows, E||X||_S4^4=288 and 9 Tr V_in^2=144.",
+      "verdict": "PASS",
+      "reason": "For A_i=e_i^T, X is the row vector g^T with single singular value ||g||. Thus E||X||_S4^4=E(sum_i g_i^2)^2=3n+n(n-1)=n(n+2)=288. Here V_in=I_n, so Tr V_in^2=n=16 and 9*16=144. Transposing gives the same 288 with V_out=I_n, refuting an output-only bound at 9*16=144."
+    },
+    {
+      "claim": "NG23 dimension-independent quantifier: no constant independent of n bounds E||X||_S4^4 by Tr V_in^2 alone for all row matrices.",
+      "verdict": "PASS",
+      "reason": "For the row family, E||X||_S4^4=n(n+2) while Tr V_in^2=n, so a constant c would need c>=n+2 for each n; no finite uniform constant exists."
+    },
+    {
+      "claim": "NG23 both-variance comparison: Proposition finite-gaussian-matrix average and maximum bounds have fourth powers 1224 and 2304 at n=16, not contradicted by 288.",
+      "verdict": "PASS",
+      "reason": "Tr V_out^2=n^2=256 and Tr V_in^2=n=16. The average Trace-power bound gives 9*(256+16)/2=1224; the maximum bound gives 9*256=2304. Both dominate 288, so the actual moment does not refute the two-sided estimate."
+    },
+    {
+      "claim": "NG28 scalar-map logarithms and exact inequality at d=2, alpha=5/4, a=1/2, zeta=1.",
+      "verdict": "PASS",
+      "reason": "From F_b, (F_a/F_0)^k=q^{q/2}(q-2a)^{(q-2a)/2}/(q-a)^{q-a}, giving log(F_a/F_0)=Delta/k with Delta as stated. The theorem identity U_2=2^m(2zeta)^{alpha/(2k)}F_0(E_zeta^O) gives ratio exponent [Delta-(alpha/2)log(2zeta)]/k. At zeta=1, 8[Delta-(5/8)log2]=11log11+7log7-18log9-5log2=log(11^11 7^7/(2^5 9^18)). The integers 234966429149994773 and 4803028329503971872 are exact and the quotient is <1."
+    },
+    {
+      "claim": "NG28 admissible parameters, finite positive energies, kinetic penalty, and the comparison-value versus proved-bound distinction.",
+      "verdict": "PASS",
+      "reason": "alpha_0+alpha=7/4<2, alpha=5/4 lies in (0,d=2), a=1/2 is in (0,1), and q-2a>0. Proposition P:raw-occupation-energy supplies positivity and finiteness of E_zeta^O for nonzero Gamma. The zeta=1 kinetic penalty is used, and the resulting strict inequality concerns only two computed comparison quantities, not the actual moment constant C_2; the scope statements correctly avoid asserting that C_2 exceeds the smaller value."
+    },
+    {
+      "claim": "NG29 empty active set: nonempty dual infimum is negative while F(0)=0.",
+      "verdict": "PASS",
+      "reason": "D(w)=1/(100w)-4w+w^2/2 gives D(4)=1/400-16+8=-3199/400<0. At Phi=0 the primal objective is zero, so the primal supremum is nonnegative and the empty active value cannot be dropped."
+    },
+    {
+      "claim": "NG29 nonconcavity of F(x)=2 sqrt((x-1)_+)-x^2/2.",
+      "verdict": "PASS",
+      "reason": "F(0)=F(2)=0 while F(1)=-1/2. Concavity would require F(1)>= (F(0)+F(2))/2=0, which fails."
+    },
+    {
+      "claim": "NG29 entrywise comparison versus PSD order and the positive-orthant salvage.",
+      "verdict": "PASS",
+      "reason": "C=I_2 and D=[[1,1/2],[1/2,1]] are nonnegative PSD Gram matrices; D has eigenvalues 3/2,1/2 and D-C has eigenvalues 1/2,-1/2, so entrywise dominance does not imply PSD dominance. For positive weights w_i, the dual difference is sum_{i,j} w_i w_j (D_{ij}-C_{ij})>=0 termwise, so Proposition P:gram-entrywise-comparison needs no PSD order."
+    },
+    {
+      "claim": "NG33 free-wave S0(t) noncontraction and its normalized whole-space low-frequency witness.",
+      "verdict": "PARTIAL",
+      "reason": "The finite part is correct: S0(t)(0,1)=(t,1) has norm sqrt(1+t^2)>1 for t>0. The transfer to the 'normalized whole-space wave phase' is not established by the supplied context and appears questionable under the normalization present there: conjugating the physical wave symbol [[cos(tr),r^{-1}sin(tr)],[-r sin(tr),cos(tr)]] by J0=(Lambda^{1/2},Lambda^{-1/2}) gives the orthogonal symbol [[cos(tr),sin(tr)],[-sin(tr),cos(tr)]], whose r->0 limit is the identity, not S0(t). The asserted S0 low-frequency limit and unit-bump norm sqrt(1+t^2) require an explicit operator/norm reference, which is not in the supplied material."
+    },
+    {
+      "claim": "NG33 Holder factors: the asserted A_nB_n identity is false and the correct weighted identity is A_n^vartheta B_n^{1-vartheta}.",
+      "verdict": "PASS",
+      "reason": "At vartheta=3/4, n=1, x=1 the left side is 1, while A_1B_1=2*(1/8)=1/4. Algebra gives A_n^vartheta B_n^{1-vartheta}=(2x^{1/vartheta})^{n vartheta}/(n!)^vartheta * 2^{-vartheta n}=x^n/(n!)^vartheta, matching the Holder argument in P:static-phase-all-orders."
+    },
+    {
+      "claim": "NG33 factorial weakening and the restriction to an inference about bounds rather than the actual coefficient.",
+      "verdict": "PASS",
+      "reason": "At the permitted spatial-white case alpha=1 and k=3, the original denominator is k!k^{(2-alpha)k}=6*27=162, while (k!)^3=216. A larger denominator yields a smaller upper bound, so M/162 does not imply M/216. The valid weakening is k!k^{(2-alpha)k} >= (k!)^{3-alpha} since k!<=k^k and 2-alpha>0; at the example the right side is 6^2=36<=162. The target correctly restricts this to an invalid inference and does not claim the actual coefficient exceeds M/216."
+    },
+    {
+      "claim": "Cross-references and consistency with supplied context.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The cited numerical identities and statements match Remark R:gaussian-one-variance-test, Proposition P:finite-gaussian-matrix, Theorem T:intrinsic-occupation-ceiling, Corollary C:intrinsic-spatial-bracket, Remark R:gram-controls, Proposition P:gram-positive-optimizer, Proposition P:gram-entrywise-comparison, Proposition P:low-alpha-upper and Proposition P:static-phase-all-orders. The only gap is the unprovided definition of the normalized wave phase used in the NG33 low-frequency transfer."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "NG33 item 1 contains a low-frequency transfer that is not verified by the supplied context and appears inconsistent with the normalization stated there. Under J0=(Lambda^{1/2},Lambda^{-1/2}) from integrated_compact_gaussian, the conjugated free-wave symbol is [[cos(tr),sin(tr)],[-sin(tr),cos(tr)]] and tends to the identity as |xi|->0, not to S0(t). The assertion that unit Fourier bumps near zero in the velocity coordinate have image norms tending to sqrt(1+t^2) therefore needs an explicit operator and norm reference, or should be corrected/removed. The finite S0(t) noncontraction itself remains valid."
+    ],
+    "minor": []
+  },
+  "required_repairs": [
+    "Clarify or correct the NG33 item 1 transfer to the normalized whole-space wave phase: specify the exact operator and norm whose low-frequency symbol tends to S0(t), cite the missing wave-variance section, or remove the transfer sentence while retaining the finite S0(t) counterexample."
+  ],
+  "limitations": [
+    "The exact definition of the normalized whole-space wave phase in the wave-variance section is not included in the supplied context; the low-frequency witness was assessed by inference from the free-wave operators cos(h sqrt L) and sin(h sqrt L)/sqrt L.",
+    "Energy positivity and finiteness in NG28 rely on earlier propositions such as P:raw-occupation-energy; their use is consistent with the supplied excerpts but was not independently re-derived.",
+    "This review covers mathematical/application content only; rendered pages were not checked."
+  ]
+}

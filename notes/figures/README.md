@@ -1,12 +1,16 @@
 # Illustrations for the reader and technical companion
 
 The same TikZ sources are used by both documents. The technical companion
-contains 21 figures; the reader uses ten selected illustrations.
+contains 26 figures; the reader uses ten selected illustrations.
 Captions state the mathematical meaning and the limits of each schematic.
 They do not replace the proofs.
 
 | Source | What it explains | Reader |
 |---|---|---|
+| `nogo-chain-geometry.tex` | Chronological merging can violate the original wave-support geometry | Chapter 12 |
+| `nogo-phase-blocks.tex` | Velocity passes across a block boundary | Chapter 12 |
+| `nogo-projection-escape.tex` | A fixed projection cannot follow translated controls as the radius grows | Chapter 12 |
+| `nogo-feature-range.tex` | A finite-cutoff point feature can lie outside the closed image of the original noise | Chapter 12 |
 | `proof-map.tex` | The independent upper bound and the fixed-control lower bound establish finiteness before the sharp comparison | Yes |
 | `nonseparable-controls.tex` | Nonnegative smooth controls need not be one temporal function times one spatial function | Yes |
 | `two-chain-pairings.tex` | Self-pairs, cross-pairs and unequal chain lengths; ordering is only within each chain | Yes |

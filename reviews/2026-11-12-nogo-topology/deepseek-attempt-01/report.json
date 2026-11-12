@@ -1,0 +1,83 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "READING-PLAN.md: complete supplied text",
+    "candidate/topology.tex: complete file, subsections S:nogo-21 through S:nogo-32 and all eight no-go proofs",
+    "candidate/nogo-projection-escape.tex: complete file",
+    "candidate/nogo-feature-range.tex: complete file",
+    "sources/integrated_temporal_equilibrium.tex: complete file",
+    "sources/integrated_cameron_mean.tex: complete file",
+    "sources/integrated_source_convergence.tex: complete file",
+    "sources/integrated_covariance_foundation.tex: complete file",
+    "sources/integrated_compact_gaussian.tex: complete file",
+    "sources/hs-obstruction-mathematics.md: complete file",
+    "sources/projection-mathematics.md: complete file",
+    "sources/block-cost-mathematics.md: complete file",
+    "sources/feature-range-mathematics.md: complete file",
+    "sources/homogeneity-hypothesis.tex: complete file"
+  ],
+  "checks": [
+    {
+      "id": "NG21",
+      "claim": "For each d in {2,3}, each real Sobolev index s, T in (0,1], and each nonzero H:homog covariance, a chosen compact physical mask zeta and a compact observation cutoff chi (equal to one on a sufficiently large ball) defeat any compatible L^2(Omega;HS(E_s,E_s)) realization of the localized first-driver bilinear form paired with the given Gaussian noise W.",
+      "verdict": "PASS",
+      "reason": "The full phase product S(-u)B(h)S(u) reproduces lower-left entry cos(u|xi|)Hhat(xi-eta)cos(u|eta|), so the weighted lower-left kernel is K_s=(2pi)^{-d/2}<xi>^{s-1}<eta>^{-s}Hhat(xi-eta)I with I=int_0^T k cos(ru)cos(rho u)du. Near |xi-eta|<=epsilon, cos((r-rho)u)>=1/2 gives the difference integral >=J0/2, while integration by parts (boundary k(0)sin0=0) bounds the sum integral by (||k||_inf+T||k'||_inf)/(r+rho), so I>=J0/8 on r>=R0; the Bessel weights give <xi>^{s-1}<eta>^{-s}>=2^{-|s|}/(sqrt2 r), hence |K_s|>=c_s/r. The truncated HS norm dominates c_s^2|B_eps||S^{d-1}|int_{R0}^{N-eps}r^{d-3}dr, which diverges logarithmically for d=2 and linearly for d=3, so A_h is bounded but not HS. Finite propagation gives D_chi A_h=A_h=A_hD_chi with chi=1 on B_{A+T+1}; the mask is applied after the covariance convolution, H=zeta(Gamma*q), q>=1 on a ball of positive Gamma mass, producing mean kH for Z=W(f tensor q) and E Z^2=Q int fk in (0,inf). The test F=zeta v_u G_w is in the noise completion by the local Radon bound plus time Schur, and G_w is exactly the Bessel-weighted second coordinate of (D_chi S(-u))^{*_E_s}w; crucially this uses the true non-self-adjoint E_s adjoint of multiplication by chi (the chi sits beside Lambda^{2s}w1 and Lambda^{2s-2}w2, not commuted through the Bessel weights). Hence E[Z ell_chi(z,w)]=<D_chi A_h z,w>=<A_h z,w>. If X were an L^2(Omega;HS) realization, ZX is L^1 Bochner and Y=E[ZX] is HS with matrix entries <Yz,w>=<A_h z,w> on the dense Schwartz pairs, forcing Y=A_h, contradiction. No missing hypothesis: the construction uses only local finiteness and nonzero mass of Gamma, not alpha. Scope is explicitly fixed same-index HS realization and the chosen cutoffs; no arbitrary-cutoff, all-state-space, or SPDE-nonexistence conclusion is drawn."
+    },
+    {
+      "id": "NG22",
+      "claim": "For d=2, alpha=1 and Gamma=delta_0(dx1)dx2, a nonnegative smooth square mask zeta separates a null noise representative: E W(F)^2=0 while E W(zeta F)^2>0, so mask multiplication does not descend to the original null quotient and no uniform covariance-norm multiplier bound holds.",
+      "verdict": "PASS",
+      "reason": "The spatial covariance seminorm is V(g)=int (int g(x1,x2)dx2)^2 dx1, as follows by integrating the autocorrelation against delta_0(dx1)dx2. With chi=psi^2 nonzero compact smooth and g(x)=chi(x1)chi''(x2), the x2 marginal of g is chi(x1)int chi''=0, so V(g)=0. For zeta(x)=chi(x1)chi(x2)=(psi(x1)psi(x2))^2, the masked marginal is zeta g with int zeta(x)g(x)dx2=chi(x1)^2 int chi chi''=-I_chi chi(x1)^2, giving V(zeta g)=J_chi I_chi^2>0 with I_chi=int(chi')^2, J_chi=int chi^4. Tensoring with nonzero nonnegative tau in C_c^inf(0,T) gives full-noise variances ||tau||_a^2 V(g)=0 and ||tau||_a^2 V(zeta g)>0, with ||tau||_a^2 finite strictly positive because the time kernel |s-t|^{-a} is positive definite. This covariance is not 2D white noise: in the stated spectral convention its spectral measure is mu=(2pi)^{-1}dxi1 delta_0(dxi2), so it is a singular admissible Radon example satisfying Hypothesis H:homog with alpha=1. The claim is only the quotient/non-descent failure for this witness and the resulting absence of a finite multiplier bound on the original quotient; it does not block masking tests before an auxiliary completion, and it makes no claim about spatial white noise."
+    },
+    {
+      "id": "NG24",
+      "claim": "For every d>=1 and gamma>0 the whole-space Bessel multiplier Lambda^{-gamma}=(1-Delta)^{-gamma/2} on L^2(R^d) is not compact; translations defeat compactness.",
+      "verdict": "PASS",
+      "reason": "Take nonzero Schwartz f with Gaussian Fourier transform and g=Lambda^{-gamma}f, nonzero Schwartz. Plancherel gives <T_h g,g>=int e^{-i xi.h}|g-hat(xi)|^2 dxi, the Fourier transform of the Schwartz function |g-hat|^2, so by Riemann-Lebesgue/integration by parts it tends to 0 as |h|->inf. Choose spacing so |<T_{h_n-h_m}g,g>|<=||g||^2/2 for distinct translates; then ||T_{h_n}g-T_{h_m}g||^2=2||g||^2-2Re<T_{h_n-h_m}g,g> >= ||g||^2, so the images have pairwise distance >=||g|| and contain no Cauchy subsequence. The inputs T_{h_n}f have equal norm and Lambda^{-gamma}T_{h_n}f=T_{h_n}g, so the map is not compact. The proof asserts none of the excluded alternatives: it is stated explicitly that compact spatial cutoffs and the conditional Schatten estimates survive, and no necessity at a Schatten endpoint p gamma=d is asserted. Scope is just the whole-space deterministic Bessel multiplier."
+    },
+    {
+      "id": "NG25",
+      "claim": "For d=1 white noise Gamma=delta_0, every fixed finite-rank projection P_J with range spanned by smooth compact supported tests in I x R fails uniformly over growing masks m_R: sup_R ||T_R(I-P_J)||_{H_I->L^r((0,1);K(F))} >= c_a>0 with c_a independent of J.",
+      "verdict": "PASS",
+      "reason": "Using the temporal equilibrium density, int_0^1|s-t|^{-a}f_a(t)dt=1 and ||f_a||_{H_a}^2=M_a, so Psi_n=(f_a tensor q_n)/sqrt(M_a) has raw norm one because spatial white noise uses the L^2 inner product and q_n has unit L^2 norm. Its covariance mean is q_n/sqrt(M_a) independent of time. Since the finitely many generating tests of P_J have a common compact spatial support, spatial whiteness gives P_J Psi_n=0 exactly for all sufficiently distant supp q_n. The constant-displacement input e=(0,0,1,0) has norm one (third coordinate c=1); the velocity dual w_n=(0,Lambda q_n/||q||_{H^{1/2}},0,0) has norm one because translation preserves ||q||_{H^{1/2}} and H^{-1/2} uses Lambda^{-1}. The multiplier sends e to the velocity q_n/sqrt(M_a), so <T_{R_n}Psi_n(s)e,w_n>_F=||q_n||^2/(sqrt(M_a)||q||_{H^{1/2}})=1/(sqrt(M_a)||q||_{H^{1/2}})=:c_a>0 for every s; hence the K(F)-norm of T_{R_n}Psi_n(s) is >=c_a and its L^r norm over the unit interval is >=c_a, with c_a depending only on a and the fixed bump q, not on J. The failure is only of the uniform-radius tail for fixed smooth projections; for fixed R sufficiently distant bumps miss the mask, so fixed-radius compactness of Proposition P:cameron-full-mean is not contradicted, and radius-dependent projection strategies are not ruled out."
+    },
+    {
+      "id": "NG26",
+      "claim": "With theta=2/3, nu=3/2, no finite C gives log U(1)<=C||D||_{C^theta}^nu for all scalar paths dU=U dD, U(0)=1; and an averaged r-th-power budget does not bound the maximum block, while the averaged nu-tail for nu<r and a linear-plus-power repair survive.",
+      "verdict": "PASS",
+      "reason": "For D(t)=xt, log U(1)=x and ||D||_{C^{2/3}}=||D||_inf+[D]_{C^{2/3}}=x+x=2x. Taking x=1/(16C^2) gives C(2x)^{3/2}=x/sqrt2<x=log U(1), a strict violation for every C>0. For the rare-block obstruction, b_1=N^{1/r} and b_j=0 for j>1 give N^{-1}sum b_j^r=1 while max b_j=N^{1/r}->inf, so no N-independent maximum bound follows. The surviving estimate is also correct: for 0<nu<r, Holder gives N^{-1}sum b_j^nu<=M^{nu/r}, and on the tail {b_j>K}, b_j^nu=b_j^r b_j^{nu-r}<=b_j^r K^{nu-r}, so N^{-1}sum_{b_j>K}b_j^nu<=K^{nu-r}M. The linear/slack repair x<=tau+tau^{1-nu}x^nu is elementary (if x<=tau trivial; if x>tau then tau^{1-nu}x^nu=x(x/tau)^{nu-1}>=x). The statement is explicitly scalar and makes no claim to construct a Cameron potential or prove a wave evolution bound; it refutes only the pure power and the average-only maximum inference."
+    },
+    {
+      "id": "NG27",
+      "claim": "On I=(0,1) with H_a completion for |t-s|^{-a}, the mean C_a f(t)=int|t-s|^{-a}f(s)ds is unbounded from H_a to L^r for r>2/a (including r=infinity) and is not compact into L^{2/a}.",
+      "verdict": "PASS",
+      "reason": "With phi in C_c^inf(-1,1) nonnegative nonzero, v_phi=int int phi(u)phi(v)|u-v|^{-a}du dv>0, and f_eps(t)=eps^{a/2-1}phi((t-t0)/eps)/sqrt(v_phi), the change t=t0+eps u, s=t0+eps v gives ||f_eps||_{H_a}^2=eps^{a-2-a+2}(1/v_phi)v_phi=1 exactly. The mean satisfies (C_a f_eps)(t0+eps y)=eps^{-a/2}sqrt(v_phi)^{-1}int|y-v|^{-a}phi(v)dv, and for |y|<=1 the integral is >=2^{-a}int phi>0 because |y-v|<=2 and phi>=0. Hence ||C_a f_eps||_{L^r}>=c eps^{1/r-a/2} and the supremum lower bound is c eps^{-a/2}; the exponent is negative exactly for r>2/a, and the sup bound blows up, proving unboundedness there. For each fixed t!=t0 the support moves away, giving C_a f_eps(t)=O_t(eps^{a/2})->0. At r=2/a the L^r lower bound is a strictly positive constant; if a subsequence converged strongly, an a.e. subsequence would converge to the same limit, which must be 0 a.e. by the pointwise convergence for t!=t0, contradicting the positive norm limit. Thus compactness fails at the endpoint. The text explicitly states this refutes compactness, not boundedness, at r=2/a, and the tensor-transfer remark is only the separated-map input obstruction, so no endpoint unboundedness or overbroad transfer is claimed."
+    },
+    {
+      "id": "NG30",
+      "claim": "There are continuous functions J_n on ell^2 tending to 0 at every point such that sup_h(J_n(h)-(1/2)||h||^2)>=1/2 with unit-norm witnesses, while sup_h(0-(1/2)||h||^2)=0; bounded action plus pointwise convergence is not compactness or a variational limsup theorem.",
+      "verdict": "PASS",
+      "reason": "Set J_n(h)=(1-2||h-e_n||)_+. For fixed h, the n-th coordinate tends to 0, so ||h-e_n||^2=||h||^2+1-2<h,e_n>->||h||^2+1>=1; hence eventually ||h-e_n||>=1/2 and J_n(h)=0, proving pointwise convergence to 0. At the unit vector e_n, J_n(e_n)=1, so the Gaussian-cost score is 1-1/2=1/2, giving sup_h(J_n(h)-(1/2)||h||^2)>=1/2. The limiting functional is identically 0, whose score supremum over h is 0, attained at h=0. Each J_n is continuous as a composition of the continuous norm with the positive part. The example shows exactly that a bounded action budget and pointwise convergence supply neither compactness of near-maximizers nor an upper-semicontinuity/limsup passage; no stronger variational theorem is asserted and none is used as a premise."
+    },
+    {
+      "id": "NG32",
+      "claim": "For nonzero Gamma satisfying H:homog, t0>0, finite L>0 and eps>0, the positive-cutoff point feature v(lambda,r)=1_{lambda<=L}sqrt(2lambda)e^{-lambda(t0-r)}1_{r<=t0}g with g=p_eps(x-.) satisfies v outside the closed image K=Phi H_W, and on the fixed extension with independent J the conditional variance Var(I(v)|sigma(W)) is strictly positive.",
+      "verdict": "PASS",
+      "reason": "||g||_{H_Gamma}^2=int p_{2eps}(y)Gamma(dy) is finite by temperedness plus Gaussian decay and strictly positive because p_{2eps}>0 everywhere and Gamma is nonzero, including admissible singular Radon and atomic covariances; the r-integral gives int_{r<=t0}2lambda e^{-2lambda(t0-r)}dr=1, so ||v||_G^2=nu_a((0,L])||g||^2<inf. For q=p(lambda)(phi'(r)+lambda phi(r))/sqrt(2lambda) tensor g with phi in C_c^inf(0,inf), phi(t0)=1, and p a two-bump combination supported away from 0 and infinity with int p dnu_a=0 and int_{lambda<=L}p dnu_a=1, the norm is finite and the cross term vanishes because int phi'phi=0: ||q||^2=(||g||^2/2)(||phi'||_2^2 int p^2/lambda dnu_a + ||phi||_2^2 int lambda p^2 dnu_a). In <Phi F,q> the sqrt(2lambda) of Phi and the 1/sqrt(2lambda) of q cancel exactly, and since d/dr[e^{-lambda(t-r)}phi(r)]=e^{-lambda(t-r)}(phi'+lambda phi), the inner integral over r<=t equals phi(t); hence <Phi F,q>=(int_{t>0}<F_t,g>phi(t)dt)(int p dnu_a)=0, and by density, closedness of the range, and continuity of pairing q is orthogonal to all of K. The same inner identity with upper limit t0 gives <v,q>=phi(t0)||g||^2 int_{lambda<=L}p dnu_a=||g||^2>0, so (I-P)v is nonzero. Then Var(I(v)|sigma(W))=||(I-P)v||^2>=|<v,q>|^2/||q||^2>0, using only the independence of J from W on the product extension. Scope is explicit: t0>0 and finite positive cutoffs only; nothing is claimed at t0=0, and the W-measurability of a nonlinear limit is left open."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "No line numbers were supplied with the inline files; source coverage lists complete supplied text per file.",
+    "The two TikZ figures are schematics; no visual content could be reviewed.",
+    "Supporting theorems imported from the source modules were checked only in the exact amount the eight no-gos invoke them, per the assignment scope.",
+    "Review is text-only mathematics: no execution, Lean checking, or publication assessment."
+  ]
+}

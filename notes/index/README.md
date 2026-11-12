@@ -21,8 +21,8 @@ They do not add mathematical hypotheses or alter statement/proof text.
   `label` hook and never redefines `\label`. The installed TeX Live 2026 format
   provides this hook. Only selected labels emit entries, once per label.
 
-The catalogue covers all 27 integrated modules, the main-source construction
-and upper-bound arguments, all four appendices, and selected explanatory
+The catalogue covers the integrated proof modules, the main-source construction
+and upper-bound arguments, the four mathematical appendices, all 33 numbered no-go results, and selected explanatory
 figures and future-work discussions. Its purpose is useful retrieval, not a
 concordance or a count of every word. Index page numbers come from the actual
 label encounter during typesetting. No broad chapter ranges are manufactured.
