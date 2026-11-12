@@ -550,6 +550,24 @@ Last updated: 2026-11-12 (11:15), L8 receipts at `aff7409` committed (`d476e17`)
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
+- **EASLEY STAGE 2 APPROVED (Le, 2026-11-12).** Le, verbatim: "I approve
+  Easley stage 2: pilot lower-tier receipts via lean-pkg receipt slurm at the
+  L9 gate (compare with a local receipt at the same commit) and run pre-gate
+  replays of integration commits (new modules only)." (1) At the L9 gate
+  commit, cut the lower-tier receipt twice: `lean-pkg receipt systemd` on
+  <MACHINE> as before AND `lean-pkg receipt slurm` from an Easley job (template
+  and `--check` preflight first; job sized from the measured local receipt:
+  37-41 min, 9.5-10.1 GiB peak); compare the two (claim-axioms count, sorry
+  count, axiom sets per claim, build log) and record the comparison; only
+  after a matching pilot may later gates use the Slurm receipt alone.
+  Comparator receipts stay local (no bwrap/Landlock on Easley). (2) Pre-gate
+  replays: after each integration commit is built locally and pushed, an
+  Easley array replays `--fresh` only the modules new or changed since the
+  last replayed gate (`make-inputs.sh ... new:<BASE>`, plus umbrella and
+  Axioms), with the usual pilot task first; the full gate array still runs
+  at the gate commit. Easley stays gates and measured heavy work only, never
+  an edit-compile loop. Stage 1 (array at every gate) continues; stage 3
+  (overlapping arrays, <= ~600 CPUs) waits for two clean stage-2 runs.
 - **INDEX-CELL RULE: EVERY CELL (Le, 2026-11-12).** Chosen by Le after the
   L9 re-review round 4 at `e2c50b5` (about 224 of ~395 Index first cells carry
   no category word). Every Index-by-label first cell starts with one of
