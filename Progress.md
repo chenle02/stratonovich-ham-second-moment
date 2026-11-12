@@ -19142,3 +19142,15 @@ describes the measurability construction instead of citing TeX lines, and the
 cluster replay of the wave-L6 modules passed (16/16), so the replay sentence now
 says only the modules of the most recent stage (the eight wave-L7 modules) are
 not yet checked by the separate kernel checker. Receipt numbers unchanged.
+
+## 2026-11-12: book title
+
+Le asked for a title that is easy to remember, with "Stratonovich",
+"space-time" and "Gaussian noise" in it, and "exact asymptotics" after it. New
+title (Title Case, Le's choice): "Stratonovich Waves Driven by Space-Time
+Gaussian Noise", subtitle "Exact Asymptotics of the Second Moment". The cover
+lines "Time-dependent noise" and "The Stratonovich regime" are dropped (the
+title carries them); the PDF metadata title matches. Per Le, "hyperbolic
+Anderson model" stays out of the title; the preface names it in its first
+sentence. The reading edition keeps its own title. Frozen review packets under
+reviews/ keep the old title as historical records.
