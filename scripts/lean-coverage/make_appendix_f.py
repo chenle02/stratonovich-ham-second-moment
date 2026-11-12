@@ -65,6 +65,98 @@ def time_stamp(iso):
     return f"{h}:{t.minute:02d}~{'a.m.' if t.hour < 12 else 'p.m.'}\\ (UTC{sign}{off_s})"
 
 
+COMPLETION_STATUS = [  # COMPLETION.md status -> (coverage key, wording in the book)
+    ("formalized, manuscript hypotheses", ("same-assumptions", "full"),
+     "Formalized with the paper's own hypotheses"),
+    ("formalized, manuscript hypotheses, narrower conclusion", ("same-assumptions", "weaker"),
+     "With the paper's hypotheses; narrower conclusion"),
+    ("inputs supplied, every conclusion proved", ("inputs-supplied", "full"),
+     "Every conclusion proved; inputs supplied"),
+    ("inputs supplied, steps/narrower", ("inputs-supplied", "weaker"),
+     "Steps checked; inputs supplied"),
+    ("outside Lean (main theorem)", ("outside", "full"), "Outside Lean (main theorems)"),
+    ("not formalized", None, "Not formalized"),
+]
+NUMBERED = ("T:", "P:", "L:", "C:")
+
+
+def md_table(lines, start):
+    """Rows of the first Markdown table after the line starting with `start`."""
+    i = next(k for k, l in enumerate(lines) if l.startswith(start))
+    rows, seen = [], False
+    for l in lines[i + 1:]:
+        if l.startswith("|"):
+            seen = True
+            cells = [c.strip() for c in l.strip().strip("|").split("|")]
+            if not set("".join(cells)) <= set("-: "):
+                rows.append(cells)
+        elif seen:
+            break
+    return rows[1:]  # drop the header row
+
+
+def completion_tex(path, rows, numbers, commit, sm):
+    """Completion and milestone tables from the pinned COMPLETION.md, checked
+    against coverage.yaml, the book's labels and the receipt summary."""
+    lines = open(path).read().splitlines()
+    comp = md_table(lines, "## Completion by labelled result")
+    by_status = {r[0]: int(r[1]) for r in comp}
+    total = by_status.pop("total labelled results (Theorem, Proposition, Lemma, Corollary)")
+    book = {k for k in numbers if k.startswith(NUMBERED)}
+    listed = {r[0].strip("`") for r in md_table(lines, "## Every labelled result")}
+    if listed != book or total != len(book):
+        raise SystemExit(f"COMPLETION.md lists {len(listed)} labelled results, total {total}; "
+                         f"the book has {len(book)} (differences: {sorted(listed ^ book)[:5]})")
+    cov = collections.Counter((r["class"], r.get("conclusion", "full")) for r in rows
+                              if r["paper"]["label"].startswith(NUMBERED))
+    covered = 0
+    for status, key, _ in COMPLETION_STATUS:
+        if key is not None:
+            if by_status[status] != cov[key]:
+                raise SystemExit(f"COMPLETION.md '{status}' = {by_status[status]}, coverage.yaml has {cov[key]}")
+            covered += cov[key]
+    if by_status["not formalized"] != total - covered:
+        raise SystemExit("COMPLETION.md 'not formalized' does not equal the uncovered results")
+    other = [r["paper"]["label"] for r in rows if not r["paper"]["label"].startswith(NUMBERED)]
+    same_full_all = sum(1 for r in rows if (r["class"], r.get("conclusion", "full")) == ("same-assumptions", "full"))
+    if same_full_all - cov[("same-assumptions", "full")] != sum(
+            1 for r in rows if not r["paper"]["label"].startswith(NUMBERED)
+            and (r["class"], r.get("conclusion", "full")) == ("same-assumptions", "full")):
+        raise SystemExit("display/remark rows are not all same-assumptions full")
+    ctab = ["\\begin{tabular}{@{}lrr@{}}\n  \\toprule\n  Status & Results & Share \\\\\n  \\midrule\n"]
+    for status, _, wording in COMPLETION_STATUS:
+        n = by_status[status]
+        ctab.append(f"  {wording} & {n} & {round(100 * n / total)}\\% \\\\\n")
+    ctab.append(f"  \\midrule\n  Total & {total} & 100\\% \\\\\n  \\bottomrule\n\\end{{tabular}}\n")
+
+    ms = md_table(lines, "## Milestones")
+    last = ms[-1]
+    if last[1].strip("`") != commit[:7]:
+        raise SystemExit(f"the last milestone is {last[1]}, the verified commit is {commit[:7]}")
+    if sm and (int(last[4]) != sm["lower"]["claims_checked"] or int(last[5]) != sm["comparator"]["theorems"]):
+        raise SystemExit("the last milestone's claims or theorems differ from the receipts")
+    if int(last[6].split(":")[0]) != len(rows):
+        raise SystemExit("the last milestone's coverage rows differ from coverage.yaml")
+    mtab = ["\\begin{tabular}{@{}llrrr@{}}\n  \\toprule\n  Stage & Date & Claims & Theorems & Results covered \\\\\n  \\midrule\n"]
+    for r in ms:
+        d = dt.date.fromisoformat(r[2])
+        mtab.append(f"  \\texttt{{{tex_escape(r[0].strip('`'))}}} & {d.strftime('%B')}~{d.day} & "
+                    f"{r[4]} & {r[5]} & {r[6].split(':')[0]} \\\\\n")
+    mtab.append("  \\bottomrule\n\\end{tabular}\n")
+    return [
+        "\\newcommand{\\lcCompletionTable}{%\n" + "".join(ctab) + "}\n",
+        "\\newcommand{\\lcMilestoneTable}{%\n" + "".join(mtab) + "}\n",
+        f"\\newcommand{{\\lcNumberedTotal}}{{{total}}}\n",
+        f"\\newcommand{{\\lcNotFormalized}}{{{by_status['not formalized']}}}\n",
+        f"\\newcommand{{\\lcNotFormalizedShare}}{{{round(100 * by_status['not formalized'] / total)}}}\n",
+        f"\\newcommand{{\\lcSameFullNumbered}}{{{cov[('same-assumptions', 'full')]}}}\n",
+        f"\\newcommand{{\\lcSameFullAll}}{{{same_full_all}}}\n",
+        f"\\newcommand{{\\lcOtherRows}}{{{len(other)}}}\n",
+        f"\\newcommand{{\\lcFirstStageDate}}{{{dt.date.fromisoformat(ms[0][2]).strftime('%B')}~{dt.date.fromisoformat(ms[0][2]).day}}}\n",
+        "\\newcommand{\\lcHaveCompletion}{1}\n",
+    ]
+
+
 def main():
     cov = yaml.safe_load(open(os.path.join(HERE, "coverage.yaml")))
     commit, date = open(os.path.join(HERE, "coverage-commit.txt")).read().split()[:2]
@@ -172,6 +264,10 @@ def main():
             f"\\newcommand{{\\lcVerified}}{{{le['verified']}}}\n",
             f"\\newcommand{{\\lcOpen}}{{{le['open']}}}\n",
             "\\newcommand{\\lcHaveReceipts}{1}\n"]
+    comp_path = os.path.join(HERE, "completion.md")
+    completion = (completion_tex(comp_path, rows, numbers, commit,
+                                 json.load(open(summ_path)) if os.path.exists(summ_path) else None)
+                  if os.path.exists(comp_path) else [])
     d = dt.date.fromisoformat(date[:10])
     out = ["% Generated by make_appendix_f.py from coverage.yaml; do not edit by hand.\n",
            f"\\newcommand{{\\lcCommit}}{{{commit[:7]}}}\n",
@@ -180,7 +276,7 @@ def main():
            f"\\newcommand{{\\lcRows}}{{{len(rows)}}}\n",
            f"\\newcommand{{\\lcSummary}}{{{tex_escape(cov['summary'])}}}\n",
            f"\\newcommand{{\\lcUnlabelled}}{{{unlabelled}}}\n",
-           "\\newcommand{\\lcTables}{%\n" + "".join(body) + "}\n"] + receipts
+           "\\newcommand{\\lcTables}{%\n" + "".join(body) + "}\n"] + receipts + completion
     open(OUT, "w").write("".join(out))
     print(f"{len(rows)} rows; categories {[ (k, len(by_cat.get(k, []))) for k, _ in CATEGORIES ]}; "
           f"unlabelled {unlabelled}; commit {commit[:7]}")

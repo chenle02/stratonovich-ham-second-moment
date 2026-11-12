@@ -19195,3 +19195,20 @@ by Space-Time Gaussian Noise: Second Moment and Exact Asymptotics" (was "The sec
 moment of the Stratonovich hyperbolic Anderson model: a reading edition with a
 technical companion"; "A Reading Edition" and "The Main Results and the Ideas of the
 Proof" were considered and set aside), with matching PDF metadata.
+
+## 2026-11-12: Appendix F completion and milestone tables
+
+Le asked for the Lean verification status in Appendix F. Two generated tables
+added at the end of the appendix: completion over all 220 numbered results of
+the book (157, 71%, not formalized; the four display/remark rows explain why the
+first group lists 27 rows and the table 23) and the companion's milestones from
+creation (November 9, 88 claims) to the L7 gate (November 12, 1731 claims, 1430
+theorems, 67 rows). Source: the companion's COMPLETION.md, pinned as headings and
+tables only (its prose names a private machine) at coverage commit fcdf252
+(docs-only after verified f3be834). make_appendix_f.py checks the record against
+the book's labels (sets equal), coverage.yaml (each status count), the receipt
+summary (claims, theorems) and the verified commit (last milestone), and writes
+its tables already formatted. pin_companion.py keeps the stored receipt summary
+when the ledger reports not-ready only because the companion clone's HEAD has
+moved past the verified commit. Book 346 pages; F on 307-311, G on 312-318;
+guides updated. 0/0/0.

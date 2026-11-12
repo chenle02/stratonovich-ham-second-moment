@@ -62,3 +62,27 @@ In short: \lcSummary{} The \lcRows{} labelled results fall into five groups.
 \medskip
 Besides these rows, the companion checks \lcUnlabelled{} further computations
 that do not correspond to a single numbered result of the book.
+
+\ifdefined\lcHaveCompletion
+\medskip
+\noindent\textbf{How much of the book is covered.} The book has
+\lcNumberedTotal{} numbered results (theorems, propositions, lemmas and
+corollaries). The table gives the status of each in Lean;
+\lcNotFormalized{} of them (\lcNotFormalizedShare\%) are not formalized at all.
+\begin{center}
+\small\lcCompletionTable
+\end{center}
+The groups above also contain \lcOtherRows{} rows for displayed equations or
+remarks, which are not numbered results. This is why the first group above has
+\lcSameFullAll{} rows and the first line of this table \lcSameFullNumbered.
+
+\medskip
+\noindent\textbf{How the companion grew.} Each stage is a tagged commit of the
+companion, from its creation on \lcFirstStageDate{} to the version described in
+this appendix. Claims counts the Lean declarations the companion lists for
+checking, and Theorems counts those among them that are theorems (the others
+are definitions); Results covered counts the rows of the lists above.
+\begin{center}
+\small\lcMilestoneTable
+\end{center}
+\fi

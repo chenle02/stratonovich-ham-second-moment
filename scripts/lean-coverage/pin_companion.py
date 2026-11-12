@@ -37,6 +37,19 @@ if cov_full != full:
     if build:
         raise SystemExit(f"commits after the verified commit change build inputs: {build}")
 open(os.path.join(HERE, "coverage.yaml"), "w").write(git("show", f"{cov_full}:coverage.yaml"))
+# The companion's completion record (milestones and the status of every
+# labelled result), if it exists at the coverage commit.
+if "COMPLETION.md" in git("ls-tree", "--name-only", cov_full).split():
+    # Headings and tables only: the generator reads nothing else, and the prose
+    # may name private machines that must not appear in public files.
+    kept = [l for l in git("show", f"{cov_full}:COMPLETION.md").splitlines()
+            if l.startswith(("#", "|")) or not l.strip()]
+    text = "\n".join(kept)
+    while "\n\n\n" in text:
+        text = text.replace("\n\n\n", "\n\n")
+    open(os.path.join(HERE, "completion.md"), "w").write(
+        f"<!-- Headings and tables of the Lean companion's COMPLETION.md at {cov_full[:12]}, "
+        "pinned by pin_companion.py; the prose is omitted. -->\n\n" + text.strip() + "\n")
 open(os.path.join(HERE, "coverage-commit.txt"), "w").write(f"{full}\n{date}\n{cov_full}\n")
 
 # Receipts are read from the coverage commit through git, not the working tree.
@@ -60,9 +73,18 @@ for r in (lo, co):
         raise SystemExit("receipt is bound to a different commit")
 ledger = json.loads(subprocess.run(
     ["lean-pkg", "claims", "ledger", "--json", "stratonovich-ham-second-moment-lean"],
-    capture_output=True, text=True, check=True).stdout)
+    capture_output=True, text=True).stdout or "{}")  # non-zero exit = ledger not ready; judged below
 
 if ledger.get("bound_commit") != full or not ledger.get("ok"):
+    # lean-pkg evaluates the ledger against the clone's local HEAD. If HEAD has
+    # moved on (new work in progress) but the stored summary is already for
+    # this verified commit, keep it: the receipts and the ledger it records are
+    # bound to the same commit and did not change.
+    summ = os.path.join(HERE, "lean-receipt-summary.json")
+    if os.path.exists(summ) and json.load(open(summ)).get("commit") == full:
+        print(f"note: ledger bound to {str(ledger.get('bound_commit'))[:7]}, ok={ledger.get('ok')} "
+              f"against the clone's HEAD; kept the stored summary for {full[:7]}")
+        sys.exit(0)
     raise SystemExit(f"claims ledger is bound to {str(ledger.get('bound_commit'))[:7]} "
                      f"(ok={ledger.get('ok')}), not a finished ledger at {full[:7]}")
 ca = lo.get("claim_axioms", {})

@@ -224,3 +224,45 @@
 \newcommand{\lcVerified}{1681}
 \newcommand{\lcOpen}{0}
 \newcommand{\lcHaveReceipts}{1}
+\newcommand{\lcCompletionTable}{%
+\begin{tabular}{@{}lrr@{}}
+  \toprule
+  Status & Results & Share \\
+  \midrule
+  Formalized with the paper's own hypotheses & 23 & 10\% \\
+  With the paper's hypotheses; narrower conclusion & 12 & 5\% \\
+  Every conclusion proved; inputs supplied & 5 & 2\% \\
+  Steps checked; inputs supplied & 19 & 9\% \\
+  Outside Lean (main theorems) & 4 & 2\% \\
+  Not formalized & 157 & 71\% \\
+  \midrule
+  Total & 220 & 100\% \\
+  \bottomrule
+\end{tabular}
+}
+\newcommand{\lcMilestoneTable}{%
+\begin{tabular}{@{}llrrr@{}}
+  \toprule
+  Stage & Date & Claims & Theorems & Results covered \\
+  \midrule
+  \texttt{L0-companion-created} & November~9 & 88 & 82 & 25 \\
+  \texttt{ledger-gate} & November~10 & 88 & 82 & 28 \\
+  \texttt{L1-gate} & November~10 & 117 & 104 & 28 \\
+  \texttt{L2-gate} & November~10 & 223 & 188 & 29 \\
+  \texttt{L3-gate} & November~10 & 557 & 470 & 33 \\
+  \texttt{L4-gate} & November~11 & 724 & 611 & 40 \\
+  \texttt{reanchor-975feb3} & November~11 & 724 & 611 & 40 \\
+  \texttt{L5-gate} & November~11 & 972 & 810 & 46 \\
+  \texttt{L6-gate} & November~11 & 1463 & 1210 & 59 \\
+  \texttt{L7-gate} & November~12 & 1731 & 1430 & 67 \\
+  \bottomrule
+\end{tabular}
+}
+\newcommand{\lcNumberedTotal}{220}
+\newcommand{\lcNotFormalized}{157}
+\newcommand{\lcNotFormalizedShare}{71}
+\newcommand{\lcSameFullNumbered}{23}
+\newcommand{\lcSameFullAll}{27}
+\newcommand{\lcOtherRows}{4}
+\newcommand{\lcFirstStageDate}{November~9}
+\newcommand{\lcHaveCompletion}{1}
