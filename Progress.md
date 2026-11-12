@@ -19440,3 +19440,12 @@ now excludes aux anchors nogo., so Appendix F counts 220 results, 153 (70%) not
 formalized, and points to Appendix G for the no-gos. Confirmation pass PASS. Real
 release filter: 11 public files byte-identical. 386 pages, 0/0/0. Le approved the
 pages.
+
+## 2026-11-12: book guide and reader README after Appendix G
+
+notes/BOOK-GUIDE.md refreshed with scripts/refresh-book-guide.py from a clean
+build at cc2a43d2 (386 pages; reader 28; pair 414; row G 354-355) and its prose
+now says seven appendices, naming Appendix G; the Subject index is six pages
+(physical 381-386). notes/README-reader.md: 386-page companion, 414-page record,
+7 appendices, "the final three appendices" (E, F, G). book-numbering-map.json
+unchanged. Le-requested.
