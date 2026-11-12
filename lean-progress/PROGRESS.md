@@ -25,7 +25,7 @@ Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine
 | Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
 | Compute | this laptop: L8 agents, integration, receipts; Office (36 cores): companion built at `0269e61`, `office-lean.sh` compile wrapper, Easley route, L9 compiling; <MACHINE> (12 cores): L10 independent items (companion being built there) |
-| Decisions open for Le | approve L11 (Easley array gate, seven defaults); the L8 gate (after its reviews); L8-f's extra supplied input (chain measures by their mass); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
+| Decisions open for Le | the L8 gate (after its reviews); L8-f's extra supplied input (chain measures by their mass); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
 | Next actions | L8 items -> integration, docs, comparator, receipts, reviews, Le's gate; collect the Easley L7 replay (via <MACHINE>) |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
@@ -550,8 +550,12 @@ Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
-- **WAVE L11: PROPOSED (2026-11-12) for Le's approval; Easley for massive
-  verification, <MACHINE>/<MACHINE> for formalization.** From a read-only
+- **WAVE L11: APPROVED by Le (2026-11-12) as proposed, with the default
+  answers to the seven decisions.** Le, verbatim: "I approve Lean wave L11 as
+  proposed in lean-progress/PROGRESS.md, with the default answers to its seven
+  decisions. Run the Easley array gate build + one-task pilot via <MACHINE> at the
+  L8 integration commit once its receipts exist." The formalization
+  candidates K1-K9 are scoped after the L9/L10 results. Proposal as written: From a read-only
   preparation (session scratch l11-prep/: L11-DRAFT.md, the Easley array
   harness in l11-prep/easley/, probe outputs). Nothing submitted.
 
@@ -1265,6 +1269,7 @@ Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine
 | L10 | PROPOSED | 2026-11-12 | Independent cores on <MACHINE> (higher-Riesz d = 2, white-model prerequisites, fixed-split core, alpha-one convolution); dependent assemblies after L8/L9; awaiting Le's approval |
 | L10 | OPEN (approved by Le) | 2026-11-12 | Defaults; R2, W0, FS0, A1 launched on <MACHINE>; FS1, W1, R3, A1i wait for their inputs |
 | L11 | PROPOSED | 2026-11-12 | Easley array gate (build + pilot, then one --fresh target per task, about 1.5 h for about 90-101 targets) and formalization candidates K1-K9 on <MACHINE>/<MACHINE>; awaiting Le's approval |
+| L11 | APPROVED (Le) | 2026-11-12 | Defaults; Easley build + one-task pilot via <MACHINE> at the L8 integration commit once its receipts exist; K1-K9 scoped after L9/L10 |
 
 ## New proof seams retained for later statement fences
 
