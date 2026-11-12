@@ -49,7 +49,7 @@ for line in embedded.splitlines():
 for p in [main,reader]:assert not re.search(r'(^!|Overfull \\|undefined|multiply defined)',p.with_suffix('.log').read_text(),re.M),p
 assert all('\t' not in p.read_text() for p in mt|rt)
 backlinks={f'{i:02}':[] for i in range(1,34)}
-for p in mt:
+for p in sorted(mt):
  if p.relative_to(ROOT).as_posix().startswith('notes/no-go'):continue
  for key in backlinks:
   if '\\ref{P:nogo-'+key+'}' in p.read_text():backlinks[key].append(p.relative_to(ROOT).as_posix())

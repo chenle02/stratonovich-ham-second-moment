@@ -19296,3 +19296,32 @@ added 33 after the companion's revision a284420); the generator counts them as
 not formalized (186, 74%) with an explaining line, and still refuses if a
 recorded result is missing from the book or an added one is covered. Book 381
 pages; F on 345-350; guides updated. 0/0/0.
+
+
+## 2026-11-12: Chapter 12 editorial successor and bounded review carrier
+
+The Chapter 12 roadmap box now uses the main-chapter blue style, with a
+consistent caption. Four optional short Contents headings remove titles that
+abutted their page numbers; their displayed subsection titles are unchanged.
+All 249 book proof bodies are byte-identical to mathematical checkpoint
+141aa7a8. The rebuilt book remains 380 pages; the reader remains 28 pages.
+Build, reference, index and reader-link checks pass. Exact editorial
+correspondence is in reviews/2026-11-12-nogo-integration/editorial-successor.json.
+
+The first cold review's complete 49-image public body was HIGH with no
+mandatory repairs, but its native receipt remains invalid because of a prose
+prefix. A second immutable candidate supplied the missing Contents continuation
+and the editorial refinements. It repeatedly read only the first part of one
+oversized text file and never reached the images. This was observed incomplete
+delivery, not a silence-based timeout. The author stopped that one process and
+retained its terminal blocked-provider receipt and complete stream. Le then
+clarified: "Continue your work, I do not mean to stop you." The project is not
+paused. A third immutable packet splits the complete chapter into bounded
+files (each below 70,000 bytes), includes all 50 required page images, and is
+under a fresh native Kimi cold review. No report or acceptance is inferred
+from dispatch. Native refusals and author actions remain in the telemetry.
+
+Evidence: private/audit/2026-11-12-nogo-expansion/visual-cold-v2/ and
+visual-cold-v3/; reproducible packet builder
+reviews/2026-11-12-nogo-integration/prepare-visual-bounded.py.
+This atomic editorial checkpoint does not close the remaining review gate.
