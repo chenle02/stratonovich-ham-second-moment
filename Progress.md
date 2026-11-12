@@ -19265,3 +19265,14 @@ annotated at this verified mathematical checkpoint; tag/push receipts follow.
 Durable no-go scope lessons already pushed in Le-AI-Lab 8a94eb27; audit
 checkpoint Article e4d685b. Wiki timeline draft is held until the final
 editorial checkpoint; no round-close provenance is claimed yet.
+
+
+### Chapter 12 mathematical checkpoint publication receipt
+
+Commit 141aa7a89eaebc42f9a03dee8e037f053fd7b9e9 was pushed to origin and
+<HUB>'s checkout was verified at the same commit. Annotated tag
+stratonovich-nogo-chapter12-math-2026-11-12 has tag object
+4992fe56b60cca4291ce7a895052c7a6acf21641; the peeled remote target is the
+same 141aa7a8 commit. The annotation explicitly retains the open final
+visual/native-format and whole-book gates. Publication/notification telemetry:
+reviews/2026-11-12-nogo-integration/publication-math-checkpoint.json.
