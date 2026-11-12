@@ -6,7 +6,7 @@
 
 ## Status (kept current; updated at every milestone)
 
-Last updated: 2026-11-12 (evening), L8 integrated with its comparator (1745 claims), L8 closing steps running; all six L9 items committed, L9 integration running; four L10 independent items committed.
+Last updated: 2026-11-12 (evening), L8 merged into companion main (`3518233`, comparator 1747 claims), receipts and the six L8 reviews running; Le accepted the `T:intrinsic-occupation-ceiling` classification; L9 integrated on `wave-l9/int` (`96000d0`); L10 FS1, R3, A1i running on <MACHINE>.
 
 | Item | Current state |
 |---|---|
@@ -25,7 +25,7 @@ Last updated: 2026-11-12 (evening), L8 integrated with its comparator (1745 clai
 | Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
 | Compute | this laptop (<MACHINE>): orchestration, merges, receipts, docs agent; Office (36 cores): L9 items compiled there (`office-build.sh`, worktrees `~/l9wt/<item>`), now L8 additions (`~/l9wt/L8X`) and L9 integration (`~/l9wt/int`); <MACHINE> (12 cores): L10 items (`homedell-build.sh`, `~/l10wt/<item>`); Easley via <MACHINE>: L7 replay running, L11 array harness ready |
-| Decisions open for Le | the L8 gate (after receipts and reviews); L8-f's extra supplied input (chain measures by their mass); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD; companion first public tag will be `v1.0.0`, matching the book's version rule 6f53bd8); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
+| Decisions open for Le | the L8 gate (after receipts and reviews; decided 2026-11-12: `T:intrinsic-occupation-ceiling` recorded as same-assumptions, narrower, constant K_0 R_sp); L8-f's extra supplied input (chain measures by their mass); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD; companion first public tag will be `v1.0.0`, matching the book's version rule 6f53bd8); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
 | Next actions | L8: finish wrapper + comparator 1747 and docs merge → merge to main → both receipts at one commit, regate, claims ledger → Easley L11 build + pilot → Codex reviews + confirmation → Le's gate, tag `L8-gate`. L9: integration → docs, comparator, receipts, reviews. L10: launch FS1, R3, A1i on <MACHINE> once L9 is integrated; W1 after L8 receipts. Collect the Easley L7 replay |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
@@ -550,6 +550,20 @@ Last updated: 2026-11-12 (evening), L8 integrated with its comparator (1745 clai
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
+- **L8 COVERAGE DECISION (Le, 2026-11-12): `T:intrinsic-occupation-ceiling`
+  is recorded as same-assumptions with a narrower conclusion for the L8
+  gate.** Le, verbatim: "I accept recording T:intrinsic-occupation-ceiling as
+  same-assumptions with a narrower conclusion (constant K_0 R_sp) for the L8
+  gate." What Lean proves (L8-c2 `OccupationCeilingFinite`, discharged with
+  nothing supplied in `L8Completed`): under the theorem's standing
+  hypotheses, for every c > 0, c I_Psi - v_Psi/2 <= U_c and S_c^pos <= U_c
+  with the constant K_0 R_sp, a proved upper bound of C_occ, in place of
+  C_occ (a larger ceiling). The row moves from outside to same-assumptions,
+  narrower (companion coverage.yaml at the L8 merge `3518233`; COMPLETION
+  counts 24 full / 15 narrower / 3 outside main theorems). The exact-C_occ
+  form is L9-A (`OccupationCeilingExact`, integrated on `wave-l9/int`); the
+  row can become full when L9 is gated. The L8 group-6 Codex review is asked
+  to check this classification; the L8 gate itself stays open.
 - **WAVE L11: APPROVED by Le (2026-11-12) as proposed, with the default
   answers to the seven decisions.** Le, verbatim: "I approve Lean wave L11 as
   proposed in lean-progress/PROGRESS.md, with the default answers to its seven
