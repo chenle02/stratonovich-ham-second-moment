@@ -758,6 +758,18 @@ Last updated: 2026-11-12 (evening), waves L12, L13, L14 APPROVED (defaults); L12
   at the gate commit. Easley stays gates and measured heavy work only, never
   an edit-compile loop. Stage 1 (array at every gate) continues; stage 3
   (overlapping arrays, <= ~600 CPUs) waits for two clean stage-2 runs.
+- **FIRST EASLEY PRE-GATE REPLAY PASSED (stage 2, 2026-11-12).** At the L10
+  integration commit `f0b795f` (built on <MACHINE>, pushed): `make-inputs.sh
+  new:aff7409` selected the 21 targets new since the last replayed gate (the
+  12 L9 modules, the 8 L10 modules, the umbrella and Axioms) out of 111
+  modules; build 5694096, pilot 5694097, then the rest; collect.py
+  VERDICT=COMPLETE, all 23 jobs COMPLETED. No kernel problem in the L9/L10
+  modules ahead of their gates. Evidence stays in the Easley run directory
+  and session scratch (pre-gate replays are not gate evidence; the full array
+  runs again at each gate commit). Found and fixed on the way: the harness's
+  `submit.sh rest` exited silently (pipefail on the not-yet-existing pilot
+  log) before the pilot started; fixed in the Le-AI-Lab skill copy
+  (`94168e1`) and the session copy.
 - **INDEX AS A POINTER TABLE (Le, 2026-11-12).** After six L9 re-review
   rounds whose remaining findings all came from the Index-by-label table
   (round 6 at `a723987`: 1 fatal, 40 major, all per-row captions and input
