@@ -529,7 +529,44 @@
   TeX 789-791) read as a measurable multiplier 0 <= g <= 1 of mu and a
   measurable restriction of the Laplace domain (Le's reading; uses at
   1072-1082 and 1591-1600 fit). Asked #3 whether to add both to the
-  manuscript; Le decides the edit. #3's answer: (pending).
+  manuscript; Le decides the edit. **#3's answer (2026-11-11): recommends
+  adding BOTH, subject to Le's manuscript decision; no manuscript edit made;
+  recorded as recommendations awaiting Le's edit decision, NOT a successor
+  manuscript review acceptance.**
+  (1) YES, a substantive simplification. #3 checked P:spatial-smooth-ratio,
+  its S_1^pos dependency, H:homog, the damped resolvent proof and the pinned
+  SpatialFourierBound.lean; the constant is correct:
+  8b R_Gamma(2 sqrt b) = 2^(1+alpha) R_Gamma(1) b^(alpha/2), b > 0 for a real
+  smooth compact unit test. Notation: write the UNNORMALIZED transform
+  FQ(xi) = int exp(-i xi.x) Q(x) dx explicitly; with the chapter's unitary
+  hat, A_sp = (2pi)^d int |hat Q|^2 dmu and |hat Q| <= c_d, the factors cancel
+  and the constant is unchanged; do not print the unnormalized identity with
+  the unitary hat unexplained (Lean's fourierQ is unnormalized, plus sign;
+  |.|^2 unaffected for real Q). Place a short deterministic lemma right
+  before P:spatial-smooth-ratio (or a separate first part of its proof):
+  Schwartz autocorrelation identity, Fourier/gradient bounds, resolvent
+  scaling; use it for R_0 finiteness, keep the score argument, cite the
+  deterministic resolvent calculation instead of T:full-upper. Covers
+  Gamma = 0 (R_0 = 0; strict positivity stays local to Gamma != 0) and
+  singular measures; a finiteness bound, not a sharp constant. Keep S1Bdd
+  where real-valued S_1^pos conclusions need it: this removes the stochastic
+  dependency for R_0 and the downstream purely spatial estimates, not for
+  every C19/S_1^pos conclusion.
+  (2) YES, useful precision. Scope: for theta > 0, measurable m : R^d -> [0,1]
+  and measurable S subset S' subset (0,inf), with N_{1,m,S}, N_{2,m,S}^2 the
+  spectral expressions with mu replaced by m mu and the Laplace mixture
+  restricted to S: 0 <= N_{1,m,S} <= N_{1,1,S'} and
+  0 <= N_{2,m,S}^2 <= N_{2,1,S'}^2 (full and tail comparisons, Gaussian
+  spatial/Green multipliers). Use m, not g (g is the spatial profile in (1)).
+  Explain that N_2 monotonicity is taken after the time quadratic form at
+  each (lambda, xi), nonnegative by positive definiteness of
+  exp(-lambda|s-t|), not pointwise for the oscillating wave-kernel product.
+  A bound for the spectral expressions only: an arbitrary m need not preserve
+  homogeneity or a nonnegative physical covariance; do not extend the
+  scaling identities or assert a new admissible H:homog model for m mu.
+  N_0 has no covariance multiplier: keep its mass argument separate
+  (Gaussian Green smoothing preserves G_s(R^d) = s). The current
+  applications fit this reading.
 - **WAVE L6: APPROVED by Le (2026-11-11) as proposed, with the default
   answers to the four decisions; OPENED** (eight items launched in parallel
   worktrees, branches wave-l6/a..h off companion main). From the board
