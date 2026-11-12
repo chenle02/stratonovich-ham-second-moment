@@ -36,6 +36,7 @@
 \usepackage[colorlinks=true]{hyperref}
 \usepackage{framed}
 \usepackage{tikz}
+\usepackage[breakable,skins]{tcolorbox}
 \usetikzlibrary{arrows.meta,calc,positioning,decorations.pathreplacing}
 \input{notes/figures/styles}
 \input{notes/ai-statistics-data}
@@ -69,11 +70,27 @@
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{conjecture}[theorem]{Conjecture}
 % Stable no-go identifiers survive thematic regrouping in the no-go chapter.
-\newtheoremstyle{nogostyle}{8pt}{8pt}{\normalfont}{}
+\newtheoremstyle{nogostyle}{0pt}{0pt}{\normalfont}{}
 {\bfseries\color{hamblue}}{.}{0.5em}{}
 \theoremstyle{nogostyle}
 \newtheorem{nogo}{No-go}
 \renewcommand{\thenogo}{\ifnum\value{nogo}<10 0\fi\arabic{nogo}}
+% Frame only the formal obstruction; motivation, proof and scope remain outside.
+\tcolorboxenvironment{nogo}{
+enhanced jigsaw,
+breakable,
+colback=hamblue!6!white,
+colframe=hamblue!32!white,
+boxrule=0.35pt,
+arc=2mm,
+boxsep=0pt,
+left=6pt,
+right=6pt,
+top=5pt,
+bottom=5pt,
+before skip=8pt,
+after skip=8pt
+}
 \theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{hypothesis}[theorem]{Hypothesis}

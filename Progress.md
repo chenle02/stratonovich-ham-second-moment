@@ -19362,3 +19362,54 @@ mode delta^2 a'' = R a grows at rate sqrt(R)/delta, so gain minus cost times del
 the bracket of C_2. Marked as explanation, not proof. GPT-6 Astra: PASS_WITH_FIXES
 (one major: "time derivative carries delta" was wrong, the second derivative carries
 delta^2), fixed; confirmation PASS. Book 383 pages; guide table recomputed. 0/0/0.
+
+
+## 2026-11-12: boxed no-go statements and Gold lexical/source repairs
+
+Le requested Gold Standard work and a distinct no-go presentation. The formal
+statements now use breakable rounded boxes, upright text, a thin border and a
+6% blue tint (darkened from 3% at Le's request). Motivation, proofs and scope
+remain outside the boxes. Stable No-go 01–33 numbering is retained.
+
+The author-side Gold lexical/domain scan found and repaired NG13's all-Borel
+homogeneity bridge, NG16's c>0 domain, NG18's missing eta/tau domains and
+ambiguous convolution operand, and NG19's generalized-field covariance
+profile definition. Root also made positivity of V explicit before division,
+proved the elementary S<=1 bound, and declared NG33's positive-variable
+conventions. Fresh complete-entry DeepSeek and native Kimi reviews of these
+five entries returned PASS/HIGH, with 20/16 passing checks and no findings or
+required repairs. Exact targets and actual model/session evidence are retained
+in reviews/2026-11-12-nogo-gold-repairs/. Historical context metadata is not a
+mathematical premise; these are development repair reviews, not blind Gold
+replays or a fabricated four-role panel.
+
+Three direct external citations were source-verified privately. Chen's author
+Theorem 3.1/(3.6) is now scoped to its regularized finite-measure/norm hypotheses
+with the book's application linked. BNZ is cited from published Lemma 4.3, p. 20,
+whose display is unnumbered there (arXiv-v2's (4.7) must not be imported). Its
+q/delta range and absence of a remote covariance weight are explicit. Tao's
+reporting-bias attribution was verified from the first-party post API; blank
+screenshots receive no visual credit. Source copies/images/hashes stay private;
+the public summary contains editions, locators and claim scope only.
+
+NG32's framing now names the precise feature-image obstruction and links to
+P:constant-raw-average, which separately proves W-measurability of the tested
+fixed-mask limit. Its negative statement and proof are unchanged. Appendix F
+clarifies that its theorem/proposition/lemma/corollary count does not add the
+separately numbered no-gos. Original proof bodies remain unchanged.
+
+Formal scoped Gold certification is in progress, not claimed complete.
+Agent 21 supplied canonical runner role overrides/native receipt integration
+(Le-AI-Lab 8713d17c) and image-flag forwarding (c79ed237). The explicit project
+DS-Pro/native-Kimi policy overrides the generic recipe's Qwen/Flash defaults;
+four purpose roles and the final cold/honesty sequence remain required.
+Message receipts 81fc23a2f06b, ecb69d9dcfa3, 796380de5579 retain the routing trail.
+A bounded same-scientific-HEAD sparse carrier is being prepared: the full
+18,000-file checkout must not become an oversized native prompt index.
+
+The first visual report's prose-prefix refusal and the second actual Read loop
+remain retained. The bounded-file third attempt is native-accepted
+PASS_WITH_NOTES/HIGH on the pre-box epoch; it is not transferred to the current
+boxed pages. Le clarified that work should continue; the project was not paused.
+The optional future-theory memo is explicitly unreviewed and outside this Gold
+scope. No public release, whole-paper acceptance or new Lean gate is claimed.

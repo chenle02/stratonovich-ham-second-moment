@@ -18,9 +18,16 @@ def sources(p,seen=None):
  return seen
 def proofs(s):return re.findall(r'\\begin\{proof\}.*?\\end\{proof\}',s,re.S)
 mt,rt=sources(main),sources(reader);old_count=new_count=0
+base_paths=set(subprocess.check_output(['git','ls-tree','-r','--name-only',BASE],cwd=ROOT,text=True).splitlines())
+concurrent_context_inputs=[]
 for p in sorted(mt):
  path=p.relative_to(ROOT).as_posix();new=proofs(p.read_text());new_count+=len(new)
  if path.startswith('notes/no-go/'):continue
+ if path not in base_paths:
+  assert not new, ('Unreviewed added proof',path)
+  assert not re.search(r'\\begin\{(?:theorem|lemma|proposition|corollary|hypothesis|conjecture)\}',p.read_text()),path
+  concurrent_context_inputs.append(path)
+  continue
  if path.startswith('notes/figures/nogo-'):
   assert not new
   continue
@@ -66,6 +73,7 @@ if notation:
  start=int(notation[1]);v['notation_list']['printed_pages']=f'{start}--{start+5}'
 index_page=re.search(r'\\contentsline \{chapter\}\{Subject index\}\{(\d+)\}',main.with_suffix('.toc').read_text())
 if index_page:v['subject_index']['pages']=len(mp.pages)-mp.page_labels.index(index_page[1])
+v['new_nonproof_context_inputs_since_baseline']=concurrent_context_inputs
 (FOLDER/'index-verification.json').write_text(json.dumps(idx,indent=2)+'\n')
 (FOLDER/'validation.json').write_text(json.dumps(v,indent=2)+'\n')
 (ROOT/'notes/figures/VALIDATION.json').write_text(json.dumps(v,indent=2)+'\n')

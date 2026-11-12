@@ -2,9 +2,9 @@
 
 The long document is now a book-style technical companion. The short reader
 remains an article and the entry point. Both retain their existing filenames.
-The book has **383 pages, 12 chapters and six appendices**: four proof
+The book has **384 pages, 12 chapters and six appendices**: four proof
 appendices, Appendix E on the AI work and Appendix F on Lean coverage.
-Chapter 12 presents numbered obstructions and failed approaches. The reader has **28 pages**. The full pair therefore contains 411 pages.
+Chapter 12 presents numbered obstructions and failed approaches. The reader has **28 pages**. The full pair therefore contains 412 pages.
 
 The main proof runs continuously through the numbered chapters. The appendices
 retain finite-order calculations, direct bounds with additional hypotheses,
@@ -24,13 +24,13 @@ mathematical record was deleted to make the structure appear shorter.
 | 9 | Bounds as the spatial radius grows | 181–195 |
 | 10 | Gaussian estimates for the point upper bound | 196–225 |
 | 11 | The constant and its consequences | 226–244 |
-| 12 | Obstructions and failed approaches | 245–281 |
-| A | Finite-order calculations | 282–288 |
-| B | Direct upper bounds and static interpolation | 289–307 |
-| C | Covariance comparisons in higher dimensions | 308–329 |
-| D | Static comparisons and the clock obstruction | 330–343 |
-| E | The AI work in numbers | 344–346 |
-| F | What Lean checks | 347–352 |
+| 12 | Obstructions and failed approaches | 245–282 |
+| A | Finite-order calculations | 283–289 |
+| B | Direct upper bounds and static interpolation | 290–308 |
+| C | Covariance comparisons in higher dimensions | 309–330 |
+| D | Static comparisons and the clock obstruction | 331–344 |
+| E | The AI work in numbers | 345–347 |
+| F | What Lean checks | 348–353 |
 
 The front matter has a Preface, Abstract, multilevel contents, illustrations
 and a guide to the argument. After the bibliography, the six-page List of

@@ -1,22 +1,30 @@
 # STATUS DIGEST — read this first, then the tail of Progress.md
 
-Current working edition (November 12): **380-page book and 28-page reader**,
-with 12 chapters and 6 appendices. Chapter 12, "Obstructions and failed approaches",
-promotes former Appendix G: 33 numbered no-gos, complete arguments, four diagrams,
-main-text backlinks and subject-index entries. The Preface and roadmap link to it.
-All 216 pre-existing proof bodies are byte-identical; 33 no-go proofs are added.
-Scoped DeepSeek V4 Pro/native Kimi K3 mathematics reviews passed at HIGH.
-The final visual/navigation gate is still open: its 49-image cold report body
-was PASS_WITH_NOTES/HIGH, but native ingestion rejected its prose prefix.
-A later source-read loop was stopped; a bounded-file successor is running.
-Four Contents headings and the Chapter 12 roadmap styling are now refined. No whole-book gate is cleared.
-There are 99 mapped technical labels and 272 valid reader links; both builds have
-zero errors, undefined references/citations and overfull boxes. Exact pins and
-honest review disposition: notes/figures/VALIDATION.json and
-reviews/2026-11-12-nogo-integration/DISPOSITION.json. Earlier dated page counts
-and review grades remain historical.
+Current working edition (November 12): **384-page book and 28-page reader**,
+with 12 chapters and 6 appendices. Chapter 12 contains 33 numbered no-gos,
+now framed by subtle rounded boxes with a 6% blue background. Motivation,
+proofs and scope remain outside the boxes. The Preface, roadmap, previous
+chapters, reader and subject index link to these results.
 
-Section 1.6 now discusses higher even moments as future work.
+The Gold lexical audit repaired domains/definitions in NG13, NG16, NG18,
+NG19 and NG33; fresh DeepSeek V4 Pro and native Kimi K3 reviews both returned
+PASS/HIGH with no required repairs. The three external citations have a
+primary-source pinpoint audit. All 216 pre-existing book proof bodies remain
+byte-identical; there are 249 proof bodies including the 33 no-gos.
+The Le-approved strategy and scaling explanations were added concurrently
+by another author and are preserved.
+
+Formal Chapter 12 Gold certification is **IN PROGRESS**. Its four-role panel,
+final replay sequence and evidence closure are distinct from the completed
+scoped development reviews. The prior native-accepted visual review covers
+the pre-box epoch; current boxed-page checks remain to be completed. No
+whole-book or human-verification gate is cleared. The 99-label map and all
+272 reader-to-book links pass; both builds have zero errors, undefined
+references/citations and overfull boxes. Exact source/PDF pins and review
+telemetry: notes/figures/VALIDATION.json and
+reviews/2026-11-12-nogo-integration/.
+
+The future-work section discusses higher even moments as open extensions.
 
 November 10/11 (editorial, no mathematical change): the preface now explains
 how the book was made with Amy, Le's AI research system, and cites Proofs and

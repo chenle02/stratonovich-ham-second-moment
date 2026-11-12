@@ -23,10 +23,12 @@ one we use $G_s(z)=\frac12\mathbf1_{\{|z|<s\}}$.
 \subsection{NG-01: one common estimate loses a factorial power}
 \label{S:nogo-01}
 
-Theorem~3.1 of~\cite{chen:author2026:time-dependency} controls all the
-pairing patterns. Applying its homogeneous norm bound to each pattern is
-therefore an attractive first attempt at the upper exponent. The issue is
-what happens after optimization and summation.
+Chen's author version~\cite{chen:author2026:time-dependency}*{Theorem~3.1, (3.6)}
+bounds regularized two-chain integrals for arbitrary pairings under its
+finite-measure and norm hypotheses. Proposition~\ref{P:envelope} gives the
+application under Hypothesis~\ref{H:homog}. Applying one common norm bound
+to every pairing is an attractive first attempt at the upper exponent.
+The issue is what happens after optimization and summation.
 
 \setcounter{nogo}{0}
 \begin{nogo}[The common-parameter majorant has the wrong scale]
@@ -423,9 +425,11 @@ identifies the missing weight before any all-order iteration is attempted.
   This proves No-go~\ref{P:nogo-10}.
 \end{proof}
 
-The unweighted estimate of~\cite{bolanos-guerrero.nualart.ea:21:averaging}
-cannot be substituted for this different object without controlling the
-weight. Infinite essential supremum does not imply divergence of $W$ or
+The unweighted powered-kernel convolution estimate in
+\cite{bolanos-guerrero.nualart.ea:21:averaging}*{Lemma~4.3, p.~20}
+assumes $1/2<q<1$ and $1\le\delta\le1/q$. It contains no covariance factor
+linking the integration variable to a remote vertex and does not directly
+estimate $W$ above. Infinite essential supremum does not imply divergence of $W$ or
 of the diagram: the Riesz singularity is locally integrable for $\alpha<2$.
 A reopening condition is a covariance-weighted convolution inequality,
 or an explicit envelope integrable against the remaining diagram factors,
@@ -559,20 +563,23 @@ counterexample to the original comparison.
     \qquad \gamma=\frac{wz}{r}.
   \]
   The equality follows from the positive Gamma integral for $h$.
-  Its convolution
-  with $e^{-A|q-w|}$ equals $2S_{A,s}(w)/(s+A)$, where
+  The convolution of the mixture component $q\mapsto e^{-s|q|}$ with
+  $q\mapsto e^{-A|q|}$, evaluated at $w$, equals $2S_{A,s}(w)/(s+A)$, where
   \[
     S_{A,s}(w)=e^{-Aw}+\int_0^w A e^{-At}e^{-s(w-t)}\,\ud t\le1.
   \]
-  Replacing $S$ by one is precisely the shift erasure. More generally,
-  replacing it by $e^{-\eta w}$ defines
+  The inequality follows by bounding $e^{-s(w-t)}$ by one; the remaining
+  integral is $1-e^{-Aw}$.
+  Replacing $S$ by one is precisely the shift erasure. More generally, for
+  $\eta\ge0$, replacing it by $e^{-\eta w}$ defines
   \[
     M_b(\eta;A)=\frac1{16}\int_{1/2}^\infty
     \frac{m(s)}{s(s+A)}\int_0^\infty h(r)e^{-b^2r/2}
     \int_0^r e^{-(s-1/2)w(r-w)/r-\eta w}\,\ud w\ud r\ud s.
   \]
-  All integrals here are positive. Put $w=rt$ and $p=\sqrt{b^2+2\eta}$.
-  The elementary bridge integral is
+  All integrals here are positive. Set $w=rt$ and $\tau=s-1/2$.
+  For $\eta,\tau\ge0$, put $p=\sqrt{b^2+2\eta}$. The elementary bridge
+  integral is
   \[
     \int_0^1[b^2+2\eta t+2\tau t(1-t)]^{-3/2}\,\ud t
     =\frac{2(p+b)}{bp((p+b)^2+2\tau)}.

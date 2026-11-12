@@ -1,0 +1,1 @@
+Review the complete five numbered no-go entries in NG13.md, NG16.md, NG18.md, NG19.md and NG33.md. They are the required targets, including statements, full proofs and scope paragraphs. Every supplied Markdown file is below the tool Read cap; read each completely.

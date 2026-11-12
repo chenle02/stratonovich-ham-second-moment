@@ -1,7 +1,7 @@
 {
   "schema": "nogo-chapter-review-telemetry/1",
-  "collected_utc": "2026-11-12T16:05:14.179594+00:00",
-  "checkout_head_at_collection": "c74353073f8ffae76a94de58ea439fa2cba4ed23",
+  "collected_utc": "2026-11-12T19:39:16.528862+00:00",
+  "checkout_head_at_collection": "ba8e05f9ed89d37af5d10abd46321a2802cad34b",
   "collection_script": "reviews/2026-11-12-nogo-integration/build-telemetry.py",
   "authoring": {
     "family": "GPT",
@@ -69,8 +69,8 @@
       33
     ]
   },
-  "attempt_count": 18,
-  "distinct_observed_native_session_count": 16,
+  "attempt_count": 21,
+  "distinct_observed_native_session_count": 19,
   "attempts": [
     {
       "attempt": "reviews/2026-11-12-nogo-pairings/deepseek-attempt-01",
@@ -3707,6 +3707,957 @@
         "kimi-reviewer.md": "4dc792cce9fa54d65757b3f4a2b5e1cd17c0c371822b3f0c43dbc0662db9581f",
         "input-manifest.json": "9210ea8056de31317d84c30345fb733b45fcd78be03243e526be66b4f381e40d",
         "execution.json": "c70c9753383c2c862972b466263aae8fd2486b2339b5c5d85e44d8b0749380f1"
+      }
+    },
+    {
+      "attempt": "private/audit/2026-11-12-nogo-expansion/visual-cold-v3/kimi-attempt-01",
+      "group": "visual-navigation",
+      "relationship": "bounded-file-pre-box-cold-review",
+      "parent_within_group": "visual-cold-v2/kimi-attempt-01",
+      "route": "native-subscription-cli-kimi",
+      "status": "review-complete",
+      "native_acceptance": true,
+      "native_receipt": "private/audit/2026-11-12-nogo-expansion/visual-cold-v3/kimi-attempt-01/receipt.json",
+      "native_receipt_sha256": "b851573717c2f8c55432eaef21923ce41073d1b792b4991472317d842a7d8b3b",
+      "native_fields": {
+        "model_requested": "kimi-code/k3",
+        "model_actual": "k3",
+        "model_alias_actual": "kimi-code/k3",
+        "configured_effort": "max",
+        "effort_actual": "max",
+        "session_id": "session_19578ba5-edf6-4e1a-8f2f-31cca604ab10",
+        "actual_route_verified": true,
+        "source_revision": "sha256:8d465fb935ab19673f7dabe40350945688ddfaf71fb6ce338fa8a333bfc8d800",
+        "input_hashes": {
+          "COVARIANCE.md": "6f2320497c0db543832fe4a0cb19b79f8ea955bb44c676dc25d2fca06965d295",
+          "DIAGRAMS.md": "17ab771c8e3ac320b10710b4d2ccac4138dd3014d1e2457e13a1f8f035d40fbb",
+          "INTRODUCTION.md": "a3263bf3c5a3902e41d59ce73f2c0382acc825e2277ae5b831b1854e7c945a10",
+          "NAVIGATION.md": "f414749fd0bfb303f38b8f3a5492117ab05487ed0b8c6add9f144e06d8d04a9a",
+          "OPTIMIZATION.md": "98a80b64e1ff33f37915d98762e2e88a3d8fc69ade71458858e4668dabca0da4",
+          "PAGE-MAP.json": "fa63710847265efd55cca881dc0dc28a47cc7dcee343bcb166463205ad87ca2c",
+          "PAIRINGS.md": "eb84a425d8ff6b76fe1c3f3f42953a1192faa1777b7bcf6984a3fcf253b396e6",
+          "PHASE.md": "5e3eb3d5bae7c10910156b1bd994c180f0aba07358c5cc593dbf60407858d03a",
+          "TARGET.md": "d5463bdd9f9b90510b0ef0b5cc75ed8826f83114550ffd613874d35a7007f764",
+          "TOPOLOGY.md": "6f8c1aec01e90c7de0f83910993ed6c4249fb0355b8fbdda1bf168ec0f8a2941",
+          "book-004.png": "51cf73ded6e5138378b06ea8958f37194e88384276a190d47d6f4ccbcc7aadff",
+          "book-012.png": "ab06d0e0f76b7fc8b99c6f7abf8be79c606bf1188375c4f6e9477e0a1406eeb1",
+          "book-013.png": "60a687faafe927e3915494433c859d35787c02c59c350720cdcdbbe169f1a55c",
+          "book-015.png": "095252bd06922b38565164986b10f8dc099421806e34322eec65ddefc3aa7eb6",
+          "book-016.png": "fc13fc283e15ddc30a0514228764c30bdbed555d9bfa96b7e23fd31b32a71cd4",
+          "book-022.png": "cb46616b23c22d8dea9a2916830d1151f8085cc54ce091d9e2b9ac70523504df",
+          "book-259.png": "1ab1c423af943cfa29c91c1a51b7ed10bf6ab9267ed7ea95658d56af058f2ee8",
+          "book-260.png": "3ef6c8883446bc50785948ba8067bbd684201586fa1e759ef82fc36cb8deb036",
+          "book-261.png": "dbdd00ccb07e62650e0663be4eefb833429c905588a8e5d14649f1baba007106",
+          "book-262.png": "9f61b2ae6be72fa10be702e40ac7024a0c8278b0a2974656387dcd4fbc630e71",
+          "book-263.png": "1299a653f9a6f0e4bb650f617fa86df41987f3b787a3a8cf74c667a8595f717b",
+          "book-264.png": "4155972f0bc17d85aa72685895b7c8b9110968069aefda8d7c2974c2f267e1f7",
+          "book-265.png": "3c7079900aa18ae73a85682d1504c7f4dc23575ec24d550bbc539e06eecce797",
+          "book-266.png": "530252f967be2957ddbb102dc3c71fa9e4b57987120fe921397db61ff7598734",
+          "book-267.png": "5334780ae8ec925831d33b4db13f2489bcaba8cdc78c0fd6d32c98b4d66f9a65",
+          "book-268.png": "6fca3bc150369942be9179a7489a44bdfdaf9542e4502fe5b900054d04af3b66",
+          "book-269.png": "e5f2d2da5a0c0fbb6a5a40820490115b3225e578f2c61482cc7b85ea6f776daf",
+          "book-270.png": "7b04217b47fbac612f33c9f894601ce543b78e71f52d783ca3065973f43861a6",
+          "book-271.png": "3287cc6c4a46ff81b4522973122e61b1f902e100fd5699a3af2eb7d7d18c22dc",
+          "book-272.png": "63f5d8d6c550927b9b6c2e191d916061a5748c0678002a8735a0924aa97b85a2",
+          "book-273.png": "ca00cc2f97d0b658020a2442fa03e582efed1398a8adfab9adb5d07294853ff3",
+          "book-274.png": "b59c4b5b6cf987ec4e97b57504adf3c3dca8b83de2cc873c07b68e13cae04f40",
+          "book-275.png": "81bce599955f42b6cac2a2c9a2f3544dc4f91a91114b3c0d956f8e507f83bb88",
+          "book-276.png": "b2fd9caaf0d891109891c947b1de5477bf77b1e83a0a310fc7123f2db8df50bd",
+          "book-277.png": "a56d905066aa6fc0efc2bc3cea56e0a5bdc935c52fd1eeca284d7fa831cd01f9",
+          "book-278.png": "8cc1d22959e3df7dd228078878932bb307ea2a386d6cd91390337263613768d2",
+          "book-279.png": "7376831f67e738cde46eebd3b31dbc720c5c52b078b5da219eadcf2a1877e64c",
+          "book-280.png": "a3f765a4d4199a71add49406bb3541effe87d068abfbfd22530fba55e512eeee",
+          "book-281.png": "14c7556dded0e8a9a9357b0f48f9a01e46c5f08310d8a6192595efb0297e4259",
+          "book-282.png": "b6a13c80f57e10f3b884f175cbb035251fbdc9fe94b3fe1722f4a9ff050c5b9f",
+          "book-283.png": "651e018c902ec6954f95bba7fee00f5e77892c59f33bc298a93746480ca4c06a",
+          "book-284.png": "0a7bb6073c12ffb63ffaddc9de792dd6507ac8693d2b4595b5acde697e0cde4f",
+          "book-285.png": "924ae9f95b5541b82b2baf5ba6e961640cb1834256c4b619d83a33be15390215",
+          "book-286.png": "69bb38715562a11e84fd0232040c9ade68a10813c74c06a4c76076c56dceeb7e",
+          "book-287.png": "522042ca75c401cfc577bf14103a3a333a23a2dc219f5ea53d24c9b7c597612b",
+          "book-288.png": "99194cd1596b9ff07da47aca4ab56b2fa60ae54c34e1c8c344dfe878bfc36a5d",
+          "book-289.png": "861eb21513a92a3602d565dd4be75de89cbb5c20f9365a2058f04b0b2bb3b7e6",
+          "book-290.png": "6da6665b46d1951ba02d74c57ed95ec15f8d6ff0ae83dd05440c0997aa1a4c7d",
+          "book-291.png": "340bd82e36254232d335dc3c3c463cd54983e78777877c7046b806fd2963ef67",
+          "book-292.png": "6f8197842813d45afd9e3f4ea227b15bca706e70c2a2ffa24fa913d70ae841f1",
+          "book-293.png": "5ba6bc99adb08fff113c57451efb248ba6ed69125fa123372cac6158ab19a2b0",
+          "book-294.png": "be498ce105ce38084f5eed0a6767ffb520988f8e6c283472f4ab9c0f6c113581",
+          "book-295.png": "3be0e1afddbf17b34071de9d7e10f5f80d8bb25da5d8248b0c74458c2204a604",
+          "book-375.png": "b99b649565cfb2f933fc166a619f3354e5786f46e1a1abd40f728560bccb3cd9",
+          "book-376.png": "4c4a867530362d67f8214721b08b93c460d325117d02bb9add113c27f6bb749d",
+          "book-377.png": "8e6e67aa5574cbaece693d3252205b07e4c534679f527b959f97d2fadfcb6b6d",
+          "book-378.png": "8c88458fe56e3a144774c6bfdf5480ec3f9e4ff1ce26f2fbb5d0741b88ba1a97",
+          "book-379.png": "ddbf087f30a5746352c2b7223823ff0620f98d324353fa0d6ea88e8d72e3f85d",
+          "book-380.png": "9c3c80d0c737be62d33774198a6999954c620dee359edd39f57062e03e254714",
+          "reader-26.png": "d86b4c206e4567a103a377727a083716ac3451e6fa2bf67ae5077cbcfb2e7ad0"
+        },
+        "started_utc": "2026-11-12T16:03:06.021586+00:00",
+        "finished_utc": "2026-11-12T16:16:04.690348+00:00",
+        "elapsed_seconds": 778.668,
+        "transport_exit_code": 0,
+        "transport_ok": true,
+        "scientific_verdict": "PASS_WITH_NOTES",
+        "confidence": "high",
+        "diagnostics": [],
+        "usage_records": [
+          {
+            "inputOther": 1644,
+            "output": 964,
+            "inputCacheRead": 3072,
+            "inputCacheCreation": 0
+          },
+          {
+            "inputOther": 59959,
+            "output": 889,
+            "inputCacheRead": 4608,
+            "inputCacheCreation": 0
+          },
+          {
+            "inputOther": 16784,
+            "output": 868,
+            "inputCacheRead": 64512,
+            "inputCacheCreation": 0
+          },
+          {
+            "inputOther": 16712,
+            "output": 859,
+            "inputCacheRead": 81292,
+            "inputCacheCreation": 0
+          },
+          {
+            "inputOther": 16760,
+            "output": 859,
+            "inputCacheRead": 98048,
+            "inputCacheCreation": 0
+          },
+          {
+            "inputOther": 16798,
+            "output": 876,
+            "inputCacheRead": 114719,
+            "inputCacheCreation": 0
+          },
+          {
+            "inputOther": 16816,
+            "output": 13689,
+            "inputCacheRead": 131428,
+            "inputCacheCreation": 0
+          },
+          {
+            "inputOther": 14382,
+            "output": 233,
+            "inputCacheRead": 148224,
+            "inputCacheCreation": 0
+          },
+          {
+            "inputOther": 656,
+            "output": 179,
+            "inputCacheRead": 162560,
+            "inputCacheCreation": 0
+          },
+          {
+            "inputOther": 650,
+            "output": 21992,
+            "inputCacheRead": 163092,
+            "inputCacheCreation": 0
+          }
+        ],
+        "tool_calls_observed": [
+          "Read",
+          "ReadMediaFile"
+        ],
+        "candidate_hashes_unchanged": true,
+        "resumed_from": null,
+        "resume_mode": null,
+        "resume_binding": null,
+        "format_lineage": null,
+        "image_read_enabled": true
+      },
+      "public_report_observation": {
+        "path": "private/audit/2026-11-12-nogo-expansion/visual-cold-v3/kimi-attempt-01/report.json",
+        "interpretation": "parsed-public-report",
+        "sha256": "4fa73ba0cd2a3a5417f20ee141001039d22b7711ba85c1380a34aff45d483794",
+        "schema": "subscription-review-report/1",
+        "alternative_schema_key": null,
+        "verdict": "PASS_WITH_NOTES",
+        "confidence": "high",
+        "checks": [
+          {
+            "claim": "NG-01 (common-parameter majorant has the wrong scale): understandable motivation, explicit statement/argument, correct failure-versus-surviving scope",
+            "verdict": "PASS",
+            "reason": "Motivated as the attractive per-pattern application of Theorem 3.1 of [16]; the infimum evaluation e^{beta k}(2t/(beta k))^{beta k} and the two-sided series comparison giving log B_K ~ t^{beta/(beta-1)} are internally consistent, and beta/(beta-1) > kappa = beta/(3-alpha) follows from beta-1 = 3-alpha-a < 3-alpha. Closing text correctly frames this as an obstruction to the majorant, not a moment lower bound, notes the 2k+1 split count is not the issue, and points to Section 3.3 as the surviving argument."
+          },
+          {
+            "claim": "NG-02 (a single adjacent diagram is too large): motivation, explicit witness, honest scope",
+            "verdict": "PASS",
+            "reason": "Motivated by the pairing count versus a per-diagram (k!)^3 hope. The adjacent-matching Dirichlet-simplex evaluation J_adj(t) = [Gamma_E(1-a)/2]^k t^{(3-a)k}/Gamma_E(1+(3-a)k) with log((k!)^3 J_adj(1)) = a k log k + O(k) defeats any fixed C, and the Gaussian-smoothing justification of delta contractions is included. Scope is honest: the single diagram has denominator (k!)^{3-a}, stronger than the summed (k!)^2, so it does not obstruct the summed bound."
+          },
+          {
+            "claim": "NG-03 (squared-mean comparison fails at unit prefactor): motivation, finite-time argument, scope",
+            "verdict": "PASS",
+            "reason": "Motivation (positive-mixture of Gaussian exponentials would give the sqrt2-amplitude comparison) is clear. The Riesz d=1 alpha=a=1/2 computation a_1=1/3 and b_1 >= (8/9)sqrt(3/2) > 2/3 = 2a_1 is directionally correct, and the passage from coefficients to a small-time strict inequality is justified via nonnegative series remainders at a fixed convergent z_0. Scope explicitly does not exclude white noise, large-time comparison, or prefactor larger than one."
+          },
+          {
+            "claim": "NG-04 (no coefficient constant uniform at the time boundary): statement and argument consistent",
+            "verdict": "PASS",
+            "reason": "The limit (1-a)A_1/a_1 -> 2^{2-alpha}(1-alpha) > 0 follows consistently from (1-a)b_1 -> H(0) and the a_1 limit; the conclusion that no C(alpha) can serve all a in (0,1) is correctly drawn. Scope notes a fixed a<1 constant C(alpha,a) remains possible and that large-order or large-time comparisons are untouched."
+          },
+          {
+            "claim": "NG-05 (chronological merging breaks wave support): witness correct, figure matches, scope precise",
+            "verdict": "PASS",
+            "reason": "The (2,2) witness has displacements (1/5,1/4),(0,1/2),(2/5,1/2),(0,3/8) all strictly sub-light-speed giving Green product 2^{-4}, while the merged jump (3/5,1/4) violates support; positive-measure persistence is argued for both Riesz and domestic white pairs. Rendered Figure 12.1 coordinates match the proof exactly. Scope is limited to pointwise concatenation; integrated comparisons survive."
+          },
+          {
+            "claim": "NG-06 (geometry-free majorant loses the scale): statement and identities consistent",
+            "verdict": "PASS",
+            "reason": "The chain t^k/2^k (spatial box) times 2^{2k}/(2k)! (split simplexes) times P_k pairings times the double integral 2t^{2-a}/((1-a)(2-a)) per pair assembles to (1/k!)[2t^{3-a}/((1-a)(2-a))]^k with exponential sum at exponent 3-a exceeding the target (3-a)/2. Framed as a valid bound with the wrong scale, not a moment lower bound; Proposition B.1.2 / Remark B.1.8 given as the surviving order-retaining argument."
+          },
+          {
+            "claim": "NG-07 (block labels are not chronological ranks): witness and scope correct",
+            "verdict": "PASS",
+            "reason": "The windowed lower bound J_k(1) >= (3*4^a/128)^k k^{-(3-a)k} is assembled consistently from volume (4k)^{-2k}, increments >= 3/(4k), min product factor 2^{-k}, and paired differences <= 1/(4k); (k!)^3 J_k grows like k^{ak}, defeating any label-span-based C^k/(k!)^3. Scope: refutes the label substitution only; no new shuffle estimate claimed."
+          },
+          {
+            "claim": "NG-10 (unweighted merge keeps a crossing covariance weight): statement and scope correct",
+            "verdict": "PASS",
+            "reason": "The d=2 (0,4) crossing diagram yields the weighted integral W with Riesz factor |w-y|^{-alpha} shown to have infinite essential supremum on the merge lens via an interior ball argument at explicit data; hence a uniform-supremum pullout is unavailable. The text correctly notes infinite supremum does not imply divergence of W (alpha<2 locally integrable) and asserts no weighted inequality; the unweighted estimate of [7] is not substitutable."
+          },
+          {
+            "claim": "NG-17 (constant-correlation clock copying undercounts): consistent with the proved book obstruction",
+            "verdict": "PASS",
+            "reason": "Restates Proposition D.2.2's exact transforms: K_Gamma = integral of w_theta, J_{Gamma,1} with multiplier 2theta/(2theta+lambda) strictly in (0,1), giving 0 < J_{Gamma,rho} <= J_{Gamma,1} < K_Gamma; the alpha=1 ratio 2-2^a is positive for a<1 and consistent. Honest framing: an already-proved book obstruction, invisible to static-endpoint checks; Remark D.2.3 cited for the full boundary."
+          },
+          {
+            "claim": "NG-18 (shift-erased envelope exceeds the wave transform): rational test verified, scope honest",
+            "verdict": "PASS",
+            "reason": "Spot verification confirms I = 545/11616 from the stated rational closed form at b=1, c=11/10, M_b(0;A) = 1025/21483 from the partial-fraction formula at eta=0 (p=b), and the difference -6005/7562016 with common denominator 2^5*3^2*7*11^2*31 = 7562016 exactly. The text explicitly says this does not refute J <= I or integrated comparisons, and honestly records that the historical standalone record was not separately adjudicated."
+          },
+          {
+            "claim": "NG-08 (translated spatial maximum need not be finite): witnesses and scope correct",
+            "verdict": "PASS",
+            "reason": "Riesz witness gives integral rho^{1/2-alpha} divergent for alpha >= 3/2 (logarithmic at 3/2); the product-covariance exponents a_1=(1+max{2-alpha,alpha-1})/2, a_2=alpha-a_1 satisfy 0<a_1,a_2<1 and a_1+a_2/2>1 for 1<alpha<2, giving the divergent u-integral; Fatou smoothing argument included. Scope: excludes the spatial-supremum hypothesis B.2.1, not moment finiteness; Section 3.3 named as the full-class replacement."
+          },
+          {
+            "claim": "NG-09 (radial lowering can destroy positive definiteness): argument sound, historical status honest",
+            "verdict": "PASS",
+            "reason": "The 3D product covariance Gamma=|x_1|^{-9/10}|x_2|^{-3/5} with F=|x|^{1/2}Gamma gives (p_sigma*F)(Le_3) >= c_sigma sqrt(L), contradicting the positive-definiteness Cauchy-Schwarz bound |(p_sigma*F)(x)| <= (p_sigma*F)(0). The entry states the original endpoint review returned MEDIUM and was not accepted at the HIGH threshold, and that the reconstruction does not change that disposition; coordinatewise and planar endpoint arguments are said to survive (Remark C.2.8)."
+          },
+          {
+            "claim": "NG-11 (scalar wave moment not log-convex in variance): enclosures consistent, scope stated",
+            "verdict": "PASS",
+            "reason": "The series t_k(A)=2^{3k-1}(2k)!/(k!(4k)!) A^k with ratio bound 16A/(4k+1)^3 and geometric tail q_A=16A/81^3 gives finite outward enclosures at A=99,100,101; the implied difference F(100)^2-F(99)F(101) >= 6945091633359/10^12 is consistent with the tabulated bounds (approx 6.945). Explicitly flagged as outside the strict homogeneous model; geometric interpolation t -> log F(e^t) survives by Holder."
+          },
+          {
+            "claim": "NG-12 (heat-Mellin square need not be locally finite): exponent arithmetic consistent, scope correct",
+            "verdict": "PASS",
+            "reason": "With alpha=11/10, beta=9/5 the Mellin weight exponent (2alpha-beta)/2-1 = -4/5 matches the display; the strip estimate gives int_B F_s^2 >= c s^{-2/5}, and Tonelli yields int_0^{1/16} s^{-6/5} ds = infinity. The entry correctly attributes the failure to local finiteness of the infinite mixture, not to positive definiteness of finite mixtures, and does not claim to exclude endpoint interpolation itself."
+          },
+          {
+            "claim": "NG-13 (no uniform isotropic envelope for a plane covariance): argument and scope correct",
+            "verdict": "PASS",
+            "reason": "If C_n stayed bounded, vague convergence would force Gamma <= C|x|^{-3/2}dx, i.e. absolute continuity, contradicted by the planar annulus of positive Gamma mass and zero Lebesgue measure; hence C_n -> infinity. Admissibility (alpha=3/2, alpha_0=1/4) and positive definiteness of the plane covariance are justified. Scope: rules out a uniform scalar isotropic density envelope only, not other majorants."
+          },
+          {
+            "claim": "NG-19 (discarding an independent Gaussian residual can lower the wave mean): constants verified, scope careful",
+            "verdict": "PASS",
+            "reason": "Parent C=(1-a)|s-t|^{-a}|x-y|^{-1/2} at a=99/100 gives A_C=20000/1932951 < 1/96 (consistent), while the rank-one projection gives A_P >= 8/(24V) = 101/(3200 sqrt2) > 1/48 (consistent), so the small-coupling mean ordering reverses despite C-P positive semidefinite. Coefficient-to-mean passage is justified via amplified-covariance L^2 tails, and the q-tilt equivalent-law extension is argued without claiming a stationary-model existence theorem for Q."
+          },
+          {
+            "claim": "NG-14 (two independent wave blocks do not multiply scalar moments): expansion verified, scope honest",
+            "verdict": "PASS",
+            "reason": "The two-block displacement c(Z_2)c(Z_1)+s(Z_2)Z_1 s(Z_1) expanded to degree two gives squared-moment 1+3A+O(A^2) versus reset-product 1+2A/3+O(A^2), difference 7A/3 (consistent); the O(A^2) remainder is justified by absolute Gaussian integrability of the even nonnegative series. Figure 12.2 matches. Explicitly outside Hypothesis 1.2.1; Corollary 3.2.5 given as the valid phase-space replacement."
+          },
+          {
+            "claim": "NG-15 (the missing second-order mean term): matrix entries verified, scope correct",
+            "verdict": "PASS",
+            "reason": "K = M_1^T M_1 + M_0^T M_2 + M_2^T M_0 with the displayed M_0,M_1,M_2 recomputes to [[4/3,4/5],[4/5,17/45]], and (1,-2)K(1,-2)^T = -16/45 while ||M(0)(1,-2)||^2 = 5, matching the stated energy 5-(16/45)sigma^2+O(sigma^4); ||M_1 e_1||^2=5/4 < 4/3=e_1^T K e_1 shows the first random term is not even an upper bound. Scope: nothing against monotonicity for the original (1,0)-data moment."
+          },
+          {
+            "claim": "NG-16 (deterministic surrogate loses the annealed factor): calculus verified, scope stated",
+            "verdict": "PASS",
+            "reason": "Substitution H=c^{1/(2-r)}K gives J_c=c^{2/(2-r)}J_1, and 2J_1 < J_2 = 2^{2/(2-r)}J_1 since 2/(2-r)>1; the tilted-mean Cauchy-Schwarz bound recovers E Y^2 = e^{2 sigma^2} exactly at h=sigma, while the deterministic substitution yields only e^{sigma^2}. Framed as generic scalar score calculations, not an SPDE no-go."
+          },
+          {
+            "claim": "NG-20 (covariance profiles need not separate): witness and scope correct",
+            "verdict": "PASS",
+            "reason": "The reflected-bump test gives h_0 = c_G(A q_1 + B q_2), h_1 = c_G(B q_1 + A q_2) with A>B>0, so the determinant h_0(x_1)h_1(x_2)-h_1(x_1)h_0(x_2) = c_G^2(A^2-B^2)q_1 q_2 > 0 rules out any product form b(sigma)U(x); white covariance alpha=1 satisfies 1+a<2. Scope: exact representation obstruction only; optimizer reduction would need a variational proof; the surviving lower profile h_sigma >= Gamma * integral psi is noted without overclaiming."
+          },
+          {
+            "claim": "NG-31 (initial phase and the backward cone): both witnesses correct, scope precise",
+            "verdict": "PASS",
+            "reason": "B=[[0,1],[1,0]] has ||e^{tB}||=e^t yet contracts the (1,-1) eigenvector; the d'Alembert mask example with v supported in (5,6) gives u_s(9,x)=0 and u_l(9,x)=1/2 throughout [-2,2] since every [x-9,x+9] contains (5,6). The text states the first example does not refute the (1,0) terminal lower bound and that finite propagation with the full-cone two-coordinate guard survives."
+          },
+          {
+            "claim": "NG-21 (same-noise Hilbert-Schmidt obstruction): argument complete, scope precise",
+            "verdict": "PASS",
+            "reason": "The Fourier kernel lower bound |K_s| >= c_s/|xi| on |xi-eta|<=epsilon, r>=R_0 yields block-compression HS divergence c_s^2|B_eps||S^{d-1}| int r^{d-3} dr for d in {2,3}; persistence under compact observation is argued via finite propagation; h is realized as an actual covariance mean zeta(Gamma*q)k(u); the compatible first-driver form uses the correct E_s adjoint (chi not treated as self-adjoint). Scope limited to same-index E_s and a compatible L^2 HS realization; not a nonexistence result for the solution."
+          },
+          {
+            "claim": "NG-22 (a mask may not act on the noise quotient): witness correct, scope correct",
+            "verdict": "PASS",
+            "reason": "For Gamma=delta_0(dx_1)dx_2 (d=2, alpha=1 scaling Gamma(cA)=cGamma(A) verified), g(x)=chi(x_1)chi''(x_2) has V(g)=0 while zeta g gives -chi(x_1)^2 int (chi')^2, hence V(zeta g)>0; tensoring with a temporal bump gives the full-noise variance statements. The text notes one can still mask tests before an auxiliary completion and does not claim the covariance is 2D white noise."
+          },
+          {
+            "claim": "NG-24 (frequency decay does not give whole-space compactness): standard witness, scope correct",
+            "verdict": "PASS",
+            "reason": "Translated images T_{h_n}g of g=Lambda^{-gamma}f become asymptotically orthogonal (Plancherel plus decay of the Fourier transform of |g-hat|^2), so no Cauchy subsequence despite constant input norms. Scope: compact spatial cutoffs and conditional Schatten estimates survive; no Schatten-endpoint necessity asserted."
+          },
+          {
+            "claim": "NG-25 (escape from every fixed smooth projection): witness correct, figure matches",
+            "verdict": "PASS",
+            "reason": "Unit controls Psi_n = f_a tensor q_n / sqrt(M_a) built from the temporal equilibrium density (Lemma 8.1.2) satisfy P_J Psi_n = 0 exactly for large n (common compact support of the finite spanning tests versus distant translates), while pairing against the unit phase dual w_n gives <T_{R_n}Psi_n e, w_n> = ||q||_2^2/(sqrt(M_a)||q||_{H^{1/2}}) = c_a > 0, uniform in R. Figure 12.3 renders this schematic accurately; no contradiction with fixed-radius compactness is claimed."
+          },
+          {
+            "claim": "NG-26 (two distinct limitations of block costs): scalar witnesses verified",
+            "verdict": "PASS",
+            "reason": "For D(t)=xt, ||D||_{C^{2/3}}=2x and log U(1)=x; at x=1/(16C^2), C(2x)^{3/2}=x/sqrt2 < x, defeating any pure 3/2-power bound; the b_1=N^{1/r} example separates averaged budgets from maxima. Surviving alternatives (linear-plus-power with slack; Holder averaged-tail bound K^{nu-r}M) are stated without claiming to construct a Cameron potential."
+          },
+          {
+            "claim": "NG-27 (temporal concentration threshold): scaling argument correct, endpoint scope honest",
+            "verdict": "PASS",
+            "reason": "Normalized concentrating tests f_epsilon give (C_a f_epsilon)(t_0+epsilon y) = epsilon^{-a/2} v_phi^{-1/2} int |y-v|^{-a} phi(v) dv, hence L^r lower bound c_r epsilon^{1/r - a/2} (divergent for r>2/a, supremum c epsilon^{-a/2}) and a strictly positive lower bound at r=2/a with pointwise O(epsilon^{a/2}) decay, which by a.e. convergence of a subsequence rules out compactness at the endpoint. Explicitly: the endpoint refutes compactness, not boundedness; corrected range 2<r<2/a consistent."
+          },
+          {
+            "claim": "NG-30 (escaping variational scores): witness correct, implication stated properly",
+            "verdict": "PASS",
+            "reason": "J_n(h)=(1-2||h-e_n||)_+ on l^2 tends to zero pointwise (||h-e_n||^2 -> ||h||^2+1 >= 1) yet J_n(e_n)=1 gives score 1/2 against the limiting supremum 0. The closing text asks for a variational upper-limit argument (compact near-maximizers with upper semicontinuity) rather than claiming impossibility of any such passage."
+          },
+          {
+            "claim": "NG-32 (positive-cutoff point sources need auxiliary noise): orthogonal witness correct, scope honest",
+            "verdict": "PASS",
+            "reason": "The constructed q with int p d nu_a = 0 and int_{(0,L]} p d nu_a = 1 satisfies <Phi F, q>=0 for all raw F (so q perp K by density) while <v,q> = phi(t_0)||g||^2 * 1 = ||g||^2 > 0, giving Var(I(v)|sigma(W)) >= |<v,q>|^2/||q||^2 > 0. Figure 12.4 matches and the caption plus closing text explicitly decline any claim about measurability of a nonlinear limit with respect to W alone."
+          },
+          {
+            "claim": "NG-23 (both Gaussian variance directions): arithmetic verified, scope correct",
+            "verdict": "PASS",
+            "reason": "E||X||_{S_4}^4 = E(sum g_i^2)^2 = 3n+n(n-1)=n(n+2)=288 at n=16, exceeding 9 Tr V_in^2 = 9n = 144; ratio n+2 prevents any dimension-free constant; transposition gives the output-only failure. Framed as a finite-matrix counterexample behind Remark 4.3.4; Proposition 4.3.3's bounds (1224, 2304) are noted as not contradicted."
+          },
+          {
+            "claim": "NG-28 (normalization matters when bounds are compared): sign computation verified, scope precise",
+            "verdict": "PASS",
+            "reason": "The ratio 2^m F_a(E_1^O)/U_2 = exp{(Delta - (alpha/2) log 2)/k} at q=11/4, k=7/4, alpha=5/4 reduces to 8{...} = log(11^11 7^7 / (2^5 9^18)), and the printed big-integer comparison 234966429149994773 < 4803028329503971872 matches 11^11*7^7 < 2^5*9^18, so the ratio is below one. Scope: refutes an ordering of computed quantities only; the zeta=1/2 strict comparison in Corollary 11.3.5 survives via strict convexity of x log x."
+          },
+          {
+            "claim": "NG-29 (three safeguards in the Gram optimization): all three failures verified",
+            "verdict": "PASS",
+            "reason": "(1) D(w)=1/(100w)-4w+w^2/2 has D(4)=-3199/400<0 while F(0)=0, so dropping the empty active set breaks duality; (2) F(x)=2 sqrt((x-1)_+) - x^2/2 has F(0)=F(2)=0, F(1)=-1/2, violating midpoint concavity; (3) C=I, D=[[1,1/2],[1/2,1]] are entrywise ordered with D-C eigenvalues +/-1/2. Scope paragraph correctly limits the conclusion and notes entrywise comparison survives for nonnegative weights (Proposition 11.1.5)."
+          },
+          {
+            "claim": "NG-33 (check the mathematics returned by a reviewer): three invalid steps correctly refuted",
+            "verdict": "PASS",
+            "reason": "(1) S_0(t)(0,1)=(t,1) has norm sqrt(1+t^2)>1, transferred to the inhomogeneous Sobolev phase via the r->0 symbol limit; (2) the correct Holder identity is x^n/(n!)^theta = A_n^theta B_n^{1-theta}, with A_1 B_1 = 2*(1/8)=1/4 != 1 at theta=3/4; (3) at alpha=1, k=3: k! k^{(2-alpha)k}=162 < 216=(k!)^3, and the valid weakening k! k^{(2-alpha)k} >= (k!)^{3-alpha} (=36 here) is stated. Framed as review-step checks, not new model counterexamples; the manuscript's original expressions are stated to have been correct."
+          },
+          {
+            "claim": "Chapter 12 placement as a main chapter with the former appendix label retained",
+            "verdict": "PASS",
+            "reason": "NAVIGATION.md shows \\chapter{Obstructions and failed approaches}\\label{S:book-no-go} plus a retained \\label{S:appendix-no-go} placed before \\appendix; the guide table now lists it among chapters and the text says twelve chapters; rendered Contents (book-012) place Chapter 12 at page 243 between Chapter 11 and Appendix A (page 280), and the chapter opening page (book-259) renders as a main-chapter head."
+          },
+          {
+            "claim": "Dedicated stable no-go numbering 01-33",
+            "verdict": "PASS",
+            "reason": "A dedicated 'nogo' theorem counter with zero-padded two-digit printing is defined, and each entry forces its stable number via setcounter; rendered pages show No-go 01 through No-go 33 exactly once each, in ascending thematic order (pairings 01-07,10,17,18; covariance 08,09,11-13,19; phase 14-16,20,31; topology 21,22,24-27,30,32; optimization 23,28,29,33), matching the guide table on book-260."
+          },
+          {
+            "claim": "Five thematic sections with the promised grouping",
+            "verdict": "PASS",
+            "reason": "Sections 12.2-12.6 (pairings; covariance; phase; topology; finite optimization and review) match the intro table's entry lists exactly, and the union of the five entry lists is precisely NG-01..NG-33 with no gaps or duplicates."
+          },
+          {
+            "claim": "Honest historical review status",
+            "verdict": "PASS",
+            "reason": "NG-09 states the earlier review returned MEDIUM and was not accepted at the HIGH threshold and that the reconstruction does not change that disposition; NG-18 states its standalone record was not separately adjudicated; the ai-statistics passage now calls the ledger counts historical classifications, not current proof coverage or acceptance grades; NG-33 is framed as grouping errors found in review arguments."
+          },
+          {
+            "claim": "No claim that outside-model diagnostics refute H:homog results",
+            "verdict": "PASS",
+            "reason": "The 12.1 scope paragraph states an example outside Hypothesis 1.2.1 does not refute a theorem restricted to it; NG-11, NG-14, NG-15, NG-16 and NG-31 each carry explicit outside-model or generic-principle scope statements, and Figure 12.2's caption repeats the scalar-diagnostic status."
+          },
+          {
+            "claim": "Main-text backlinks explain genuine choices without changing old theorems or adding premises",
+            "verdict": "PASS",
+            "reason": "Every diff hunk in NAVIGATION.md is a post-proof remark-style paragraph linking a design choice to a no-go (NG-01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 plus NG-33 in the preface); none alters a theorem statement, and several explicitly add the scope caveat (e.g. NG-27 does not refute endpoint boundedness; NG-28 says nothing about the actual moment constant; the 11.5 item states the failed routes are not new premises of the intrinsic-limit proof)."
+          },
+          {
+            "claim": "Figure 12.1 (chain geometry) rendered correctly and not misleading",
+            "verdict": "PASS",
+            "reason": "book-265 shows root (0,0), first chain (1/5,1/4),(1/5,3/4) and second chain (-2/5,1/2),(-2/5,7/8) with the dashed merged jump labeled 3/5>1/4, matching the proof's coordinates; legend and caption are legible and state the refutation is of pointwise concatenation only."
+          },
+          {
+            "claim": "Figure 12.2 (phase blocks) rendered correctly and not misleading",
+            "verdict": "PASS",
+            "reason": "book-279 shows the three boxes with M(Z_1), M(Z_2) arrows and the notes contrasting retained displacement c(Z_2)c(Z_1)+s(Z_2)Z_1 s(Z_1) against the reset product, with true 1+3A versus reset 1+2A/3; caption flags the scalar diagnostic as outside the target model."
+          },
+          {
+            "claim": "Figure 12.3 (projection escape) rendered correctly and not misleading",
+            "verdict": "PASS",
+            "reason": "book-287 shows the fixed-projection support box, the translated bump q_n with x_n -> infinity arrow, the growing plateau bracket and the two key relations P_J Psi_n=0 and ||T_{R_n} Psi_n|| >= c_a > 0; all legible and consistent with No-go 25."
+          },
+          {
+            "claim": "Figure 12.4 (point feature and closed noise image) rendered correctly and not misleading",
+            "verdict": "PASS",
+            "reason": "book-291 shows the plane K=Phi H_W, the vector v, its projection Pv with right-angle marker, and the orthogonal residual (I-P)v != 0 supplied by J; caption states the schematic is in three coordinates only and disclaims any nonlinear-limit measurability conclusion."
+          },
+          {
+            "claim": "Overall roadmap Figure 1.3 styles Chapter 12 as a main chapter",
+            "verdict": "PASS",
+            "reason": "book-022 shows the Chapter 12 box in the same route style as other chapters, placed between the main grid and the gold appendix boxes with no arrows asserting dependency; the caption adds that Chapter 12 explains failed alternatives and retains the statement that no arrow from an appendix into the main proof is asserted."
+          },
+          {
+            "claim": "Contents pages complete and consistent",
+            "verdict": "PASS_WITH_NOTES",
+            "reason": "book-012/013 list Chapter 12 with sections 12.1-12.6, all subsections with correct page numbers (12.1 at 243 through 12.6.4 at 278), and the four shortened entries (NG-03, NG-04, NG-10, NG-18) render in their short forms while section headings keep the long forms. One defect: the 12.2.10 entry prints as '12.2.10NG-18:' with no space between the number and the title (number-width too narrow for the only two-digit subsection number), confirmed by native-resolution zoom."
+          },
+          {
+            "claim": "Illustrations list and guide-to-proof table consistent",
+            "verdict": "PASS_WITH_NOTES",
+            "reason": "book-015 lists Figures 12.1-12.4 at pages 249, 263, 271, 275, matching the rendered figure pages; book-016's guide table has the Chapter 12 row ('Obstructions and failed approaches: every mathematical no-go, and what it does not rule out') and the 'twelve chapters' wording. Note: the 12.1 entry prints the full five-line caption (no short caption supplied for nogo-chain-geometry), unlike the short captions of 12.2-12.4."
+          },
+          {
+            "claim": "Subject index covers all 33 no-gos with correct pages",
+            "verdict": "PASS",
+            "reason": "book-377/378 contain the entry 'no-go results, 243' followed by 33 named subentries; I matched each of the 33 no-go titles to an index line and verified the printed page numbers against the rendered chapter pages (e.g. wrong-scale majorant 245, concatenation 248, clock copying 252, shift-erased envelope 253, spatial maximum 255, radial lowering 256, log-convex 257, heat-Mellin 258, residual 259, wave blocks 261, variance coefficient 263, surrogate 264, profiles 265, growth/cutoff 266, Hilbert-Schmidt 266, mask 269, translations 270, projection 270, Young power 272, concentration 272, escaping scores 273, point sources 274, one-sided variance 276, occupation ceiling 277, empty sets 278, three invalid steps 278)."
+          },
+          {
+            "claim": "Reader navigation page accurate",
+            "verdict": "PASS",
+            "reason": "reader-26 renders the updated Section 11 text pointing to Technical Notes Chapter 12 p. 243 with examples No-go 14 p. 261 and No-go 30 p. 273, matching the printed pages where those no-gos appear (book-277 page 261 and book-289 page 273); the reader's label list includes P:nogo-14 and P:nogo-30 with those numbers."
+          },
+          {
+            "claim": "Visual page quality across the supplied packet",
+            "verdict": "PASS",
+            "reason": "All 50 listed PNGs were inspected with ReadMediaFile: no clipped or overlapping text, no unreadable formulas, no dangling headings (every section/subsection heading has body text on its page), no unresolved '??' references, and footers match PAGE-MAP printed_page values throughout (chapter pages 243-279 contiguous, index 359-364 contiguous)."
+          }
+        ],
+        "findings": {
+          "fatal": [],
+          "major": [],
+          "minor": [
+            "Contents entry 12.2.10 renders as '12.2.10NG-18: an oversized middle-cross envelope' with no space between the subsection number and the title (TOC number-width too narrow for the only two-digit subsection number); still legible and unambiguous in context.",
+            "Illustrations entry 12.1 prints the full five-line caption because notes/figures/nogo-chain-geometry.tex supplies no short caption, while Figures 12.2-12.4 use short captions; cosmetic inconsistency only.",
+            "The topology subsections 12.5.1-12.5.8 omit the 'NG-nn:' prefix in their titles that the other four thematic sections use; the enclosed No-go environments still carry the stable numbers, so navigation and the index are unaffected."
+          ]
+        },
+        "required_repairs": [],
+        "source_coverage": [
+          "TARGET.md lines 1-15 (complete)",
+          "INTRODUCTION.md lines 1-85 (complete)",
+          "PAIRINGS.md lines 1-610 (complete)",
+          "COVARIANCE.md lines 1-406 (complete)",
+          "PHASE.md lines 1-300 (complete)",
+          "TOPOLOGY.md lines 1-565 (complete)",
+          "OPTIMIZATION.md lines 1-272 (complete)",
+          "DIAGRAMS.md lines 1-205 (complete)",
+          "NAVIGATION.md lines 1-1021 (complete)",
+          "PAGE-MAP.json lines 1-302 (complete)",
+          "book-004.png (full image, printed page iii)",
+          "book-012.png (full image plus native-resolution region zoom of the 12.2.9/12.2.10 Contents lines, printed page xi)",
+          "book-013.png (full image, printed page xii)",
+          "book-015.png (full image plus native-resolution region zoom of the 12.1 Illustrations entry, printed page xiv)",
+          "book-016.png (full image, printed page xv)",
+          "book-022.png (full image, printed page 6, roadmap Figure 1.3)",
+          "book-259.png (full image, printed page 243)",
+          "book-260.png (full image, printed page 244)",
+          "book-261.png (full image, printed page 245)",
+          "book-262.png (full image, printed page 246)",
+          "book-263.png (full image, printed page 247)",
+          "book-264.png (full image, printed page 248)",
+          "book-265.png (full image, printed page 249, Figure 12.1)",
+          "book-266.png (full image, printed page 250)",
+          "book-267.png (full image, printed page 251)",
+          "book-268.png (full image, printed page 252)",
+          "book-269.png (full image, printed page 253)",
+          "book-270.png (full image, printed page 254)",
+          "book-271.png (full image, printed page 255)",
+          "book-272.png (full image, printed page 256)",
+          "book-273.png (full image, printed page 257)",
+          "book-274.png (full image, printed page 258)",
+          "book-275.png (full image, printed page 259)",
+          "book-276.png (full image, printed page 260)",
+          "book-277.png (full image, printed page 261)",
+          "book-278.png (full image, printed page 262)",
+          "book-279.png (full image, printed page 263, Figure 12.2)",
+          "book-280.png (full image, printed page 264)",
+          "book-281.png (full image, printed page 265)",
+          "book-282.png (full image, printed page 266)",
+          "book-283.png (full image, printed page 267)",
+          "book-284.png (full image, printed page 268)",
+          "book-285.png (full image, printed page 269)",
+          "book-286.png (full image, printed page 270)",
+          "book-287.png (full image, printed page 271, Figure 12.3)",
+          "book-288.png (full image, printed page 272)",
+          "book-289.png (full image, printed page 273)",
+          "book-290.png (full image, printed page 274)",
+          "book-291.png (full image, printed page 275, Figure 12.4)",
+          "book-292.png (full image, printed page 276)",
+          "book-293.png (full image, printed page 277)",
+          "book-294.png (full image, printed page 278)",
+          "book-295.png (full image, printed page 279)",
+          "book-375.png (full image, subject index printed page 359)",
+          "book-376.png (full image, subject index printed page 360)",
+          "book-377.png (full image, subject index printed page 361, no-go results entry)",
+          "book-378.png (full image, subject index printed page 362)",
+          "book-379.png (full image, subject index printed page 363)",
+          "book-380.png (full image, subject index printed page 364)",
+          "reader-26.png (full image, reader pdf page 26)"
+        ],
+        "limitations": [
+          "This was a comprehension, scope, navigation and visual review per the assignment, not a fresh re-derivation of every proof: constants and key algebra were directly verified for NG-01 through NG-07, NG-14, NG-15, NG-16, NG-18, NG-19, NG-23, NG-26, NG-28, NG-29 and NG-33, while the longer analytic arguments (NG-08, NG-09, NG-10, NG-11 tail enclosures, NG-12, NG-13, NG-17, NG-20, NG-21, NG-22, NG-24, NG-25, NG-27, NG-30, NG-31, NG-32) were checked for internal consistency, correct constants and stated scope rather than fully re-proved.",
+          "Existing cited theorem proofs (e.g. Proposition 2.1.1, Proposition D.2.2, Lemma 5.2.4) were treated as interfaces per the review contract; their correctness was not reopened.",
+          "Cross-references were verified to be resolved on the rendered pages (no '??' anywhere in the packet) and sampled targets were correct, but the numeric target of every cross-reference was not exhaustively re-verified.",
+          "Image inspection was performed at the supplied 918x1188 rendering resolution (with native-resolution zooms for the two noted spots); defects below that resolution cannot be excluded.",
+          "An AI review is not human verification or a novelty audit."
+        ]
+      },
+      "evidence_sha256": {
+        "STATUS.md": "f105b2846c3dc563213d37151ec3b090f930e1cadbba0582eca9f2a147862e01",
+        "report.txt": "926ac257c1b23b269f551c1f5062e57ce6245efcba12613207002e8759bf1bf0",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "receipt.json": "b851573717c2f8c55432eaef21923ce41073d1b792b4991472317d842a7d8b3b",
+        "prompt.txt": "4b034a2f423c16c4f110c454976d73b6df8f10138c8703e04ae27bc0cab368aa",
+        "events.jsonl": "f4e74fc08d3bd7bca7f4adb9d6d9e4a6ff1e2f86dcb3350e0dbebd1c34409918",
+        "kimi-reviewer.md": "4dc792cce9fa54d65757b3f4a2b5e1cd17c0c371822b3f0c43dbc0662db9581f",
+        "report-raw.txt": "db0c49b12fc98941fcc5aa8baf9390ba6cb0a17f95b9ed606d1b0c6ba13eef7c",
+        "input-manifest.json": "2d29d9f4e04ec7209a83350281e06ee18f97f09a3d310a51a598209778f6c494",
+        "execution.json": "4c5281723337ca7ecf523ea218ff019a13673f37b6439095eba86684e11cca03",
+        "report.json": "4fa73ba0cd2a3a5417f20ee141001039d22b7711ba85c1380a34aff45d483794"
+      }
+    },
+    {
+      "attempt": "reviews/2026-11-12-nogo-gold-repairs/deepseek-attempt-01",
+      "group": "gold-lexical-repairs",
+      "relationship": "five-entry-domain-and-bridge-confirmation",
+      "parent_within_group": null,
+      "route": "opencode-paper-review-deepseek",
+      "status": "terminal",
+      "native_acceptance": null,
+      "native_acceptance_note": "OpenCode scientific report; no subscription-CLI accepted flag exists.",
+      "launch": {
+        "argv": [
+          "opencode",
+          "run",
+          "--pure",
+          "--dir",
+          "<HOME>/.local/state/tmp/stratonovich-review-carrier-bjeb2hyt",
+          "--agent",
+          "artifact-reviewer",
+          "--model",
+          "deepseek/deepseek-v4-pro",
+          "--format",
+          "json",
+          "--title",
+          "nogo-gold-domain-repairs-review"
+        ],
+        "category": "paper-review-deepseek",
+        "model": "deepseek/deepseek-v4-pro",
+        "permission": {
+          "*": "deny"
+        },
+        "fresh_session": true,
+        "source_revision": "sha256:c7a4471036e88fca83ee26bed54a09e1005cf40e0226d265593921ba081edcf2",
+        "automatic_retry": false
+      },
+      "process_exit": {
+        "exit": 0,
+        "elapsed_seconds": 381.3973443508148
+      },
+      "native_assistant_metadata": [
+        {
+          "id": "msg_1d09ddaba001Ojcj7lxxRpRATk",
+          "sessionID": "ses_e2f622df1ffe4LmSO78qS70T54",
+          "providerID": "deepseek",
+          "modelID": "deepseek-v4-pro",
+          "mode": "artifact-reviewer",
+          "agent": "artifact-reviewer",
+          "variant": null,
+          "finish": "stop",
+          "time": {
+            "created": 1794501368506,
+            "completed": 1794501745738
+          },
+          "tokens": {
+            "total": 69708,
+            "input": 33266,
+            "output": 3062,
+            "reasoning": 33124,
+            "cache": {
+              "write": 0,
+              "read": 256
+            }
+          },
+          "cost": 0.093609472
+        }
+      ],
+      "public_native_export": "reviews/2026-11-12-nogo-gold-repairs/deepseek-attempt-01/public-native-export.json",
+      "public_native_export_sha256": "8c6751d91097410784b59691167bcedf35b99a1b21e1384c8ba331c09ff8ccb7",
+      "native_sessions": [
+        "ses_e2f622df1ffe4LmSO78qS70T54"
+      ],
+      "event_timestamps_ms": [
+        {
+          "type": "step_start",
+          "timestamp": 1794501371828
+        },
+        {
+          "type": "step_finish",
+          "timestamp": 1794501745750
+        }
+      ],
+      "public_report_observation": {
+        "path": "reviews/2026-11-12-nogo-gold-repairs/deepseek-attempt-01/report.json",
+        "interpretation": "parsed-public-report",
+        "sha256": "c07befeb786cfdf11a97a92dd62e4a1dcbfb8c01149e17e83186310a6a13d521",
+        "schema": "subscription-review-report/1",
+        "alternative_schema_key": null,
+        "verdict": "PASS",
+        "confidence": "high",
+        "checks": [
+          {
+            "claim": "NG13: plane covariance is homogeneous with degree 3/2 for every Borel set by direct change of variables",
+            "verdict": "PASS",
+            "reason": "On the plane-support measure \u0393(dy,dz)=(2\u03c0)^-1|y|^-1/2 dy \u03b40(dz), scaling a Borel set A (whose z-coordinate on the support remains 0) gives \u0393(rA)=\u222b_{rA}|y|^-1/2dy/(2\u03c0)=r^{2-1/2}\u0393(A)=r^{3/2}\u0393(A); the substitution is direct in the defining integral and not inferred from centered-ball masses."
+          },
+          {
+            "claim": "NG13: planar Riesz factor, Dirac factor and their product are positive definite, Radon, tempered and spectral-admissible",
+            "verdict": "PASS",
+            "reason": "|y|^-1/2 in R^2 has a positive Gaussian-mixture representation and is locally integrable; \u03b40(dz) is positive definite; the product quadratic form restricts the normal coordinates to coincide, leaving an integral of nonnegative planar quadratic forms. Finite mass proportional to R^{3/2} on balls gives polynomial growth/temperedness, and Bochner-Schwartz provides the positive tempered Radon spectral measure with \u03b10+\u03b1=1/4+3/2<2."
+          },
+          {
+            "claim": "NG13: vague convergence plus a bound C_n|x|^-3/2 forces C_n\u2192\u221e",
+            "verdict": "PASS",
+            "reason": "A bounded subsequence C_n\u2264C gives, for every nonnegative compactly supported continuous f, \u222bf d\u0393=lim\u222bf d\u0393_n\u2264C\u222bf|x|^-3/2dx; by monotone-class/regularity extension \u0393 would be absolutely continuous with respect to Lebesgue measure on R^3. But the annulus {1\u2264|y|\u22642,z=0} has positive \u0393 mass and zero Lebesgue measure. Hence no bounded subsequence exists."
+          },
+          {
+            "claim": "NG13: the envelope obstruction is scoped to a uniform scalar isotropic density envelope, not a counterexample to the stochastic equation",
+            "verdict": "PASS",
+            "reason": "The text explicitly states it rules out only the uniform scalar isotropic density envelope used with an angular supremum, and labels the reopening condition as a uniform estimate without angular supremum or a singular-support-adapted comparison; no numerical inference against the stochastic equation is claimed."
+          },
+          {
+            "claim": "NG16: J_c scaling and domains, finite positive J1",
+            "verdict": "PASS",
+            "reason": "A>0, c>0, 0<r<2 are declared before the scaling. H=c^{1/(2-r)}K multiplies both terms by c^{2/(2-r)}, so J_c=c^{2/(2-r)}J_1. J1 is positive for small H and finite because r<2."
+          },
+          {
+            "claim": "NG16: strict surrogate comparison 2J1<J2",
+            "verdict": "PASS",
+            "reason": "Multiplying J1's objective by two gives sup{2AH^r-H^2}=2J1, and J2=2^{2/(2-r)}J1 with 2/(2-r)>1 because r>0; since J1>0 the strict inequality holds."
+          },
+          {
+            "claim": "NG16: exact Gaussian tilted mean recovery and lost logarithmic factor for the deterministic surrogate",
+            "verdict": "PASS",
+            "reason": "Under Q_h, E_{Q_h}Y=e^{\u03c3\u00b2/2+\u03c3h}; Cauchy-Schwarz with E L_h\u00b2=e^{h\u00b2} gives E Y\u00b2\u2265e^{\u03c3\u00b2+2\u03c3h-h\u00b2}, maximized at h=\u03c3 to e^{2\u03c3\u00b2}=E Y\u00b2. Replacing the tilted mean by e^{\u03c3h} gives max_h e^{2\u03c3h-h\u00b2}=e^{\u03c3\u00b2}, losing the factor e^{\u03c3\u00b2} in the original scale (\u03c3\u00b2 instead of 2\u03c3\u00b2 in the logarithm)."
+          },
+          {
+            "claim": "NG16: scope is generic scalar score arithmetic, not an SPDE no-go",
+            "verdict": "PASS",
+            "reason": "The scope paragraph identifies the lost term and states that a deterministic surrogate needs an explicit negligible-error estimate; no stochastic-solution counterexample is asserted."
+          },
+          {
+            "claim": "NG18: exact actual wave transform and its three q-region evaluation",
+            "verdict": "PASS",
+            "reason": "The spatial reduction \u222bG_uG_vG_wG_z gives area derivative 2(R-max(C,|q|))_+, leading to I as the iterated integral; the q<0, 0\u2264q\u2264t, q\u2265t contributions are stated and their sum equals I=[2b\u00b2+4bc+2c\u00b2-c+1]/[8bc(b+1)(2b+1)(b+c-1)(2b+2c-1)]. Consistency checks hold: at c=1 this reduces to (b+1)/[4b\u00b2(2b+1)\u00b2]."
+          },
+          {
+            "claim": "NG18: convolution operands, S\u22641, nonnegative parameters and bridge identity including endpoints",
+            "verdict": "PASS",
+            "reason": "The convolution of e^{-s|q|} with e^{-A|q|} evaluated at w equals 2S_{A,s}(w)/(s+A), with S=e^{-Aw}+A\u222b_0^w e^{-At}e^{-s(w-t)}dt\u22650 and S\u22641 by bounding e^{-s(w-t)}\u22641. \u03b7\u22650 and \u03c4=s-1/2\u22650, so b=1+\u03bd>0 and p=\u221a(b\u00b2+2\u03b7)>0. The bridge integral \u222b_0^1[b\u00b2+2\u03b7t+2\u03c4t(1-t)]^{-3/2}dt equals 2(p+b)/[bp((p+b)\u00b2+2\u03c4)] (verified by the quadratic completion; at \u03b7=\u03c4=0 both sides are b^{-3})."
+          },
+          {
+            "claim": "NG18: M_b resolvent partial-fraction identity and exact fractions at the test point",
+            "verdict": "PASS",
+            "reason": "The positive-rate triple-resolvent formula \u222b_0^\u221e[(z\u00b2+q1\u00b2)(z\u00b2+q2\u00b2)(z\u00b2+q3\u00b2)]^{-1}dz=\u03c0(q1+q2+q3)/[2q1q2q3(q1+q2)(q2+q3)(q3+q1)] yields M_b(\u03b7;A)=(1+c+p+b)/[4bpc(c+1)(c+p+b)(1+p+b)]. At b=1, c=11/10, p=1, A=21/200 this is 1025/21483, and I=545/11616, so I-M=-6005/7562016<0, matching the stated fractions exactly."
+          },
+          {
+            "claim": "NG18: limited scope of the oversized envelope",
+            "verdict": "PASS",
+            "reason": "The no-go targets only the shift-erased bound M_b(0;A) and explicitly does not refute J\u2264I or an integrated comparison; \u03bd=0 is a legitimate fixed-parameter value, continuity gives overshoot for some \u03bd>0 nearby, and the surviving envelope retains S_{A,1/2}(w). No counterexample to the stochastic comparison J\u2264I is claimed."
+          },
+          {
+            "claim": "NG19: admissible one-dimensional parent, legal indicator test, and 0<V<\u221e before normalizing",
+            "verdict": "PASS",
+            "reason": "d=1, \u03b1=1/2, a=99/100 satisfy \u03b1+a<2; the power kernels are positive definite by Gaussian mixtures and locally integrable. The indicator \u03c8=1_[0,1]\u00d71_[-1,1] has finite double integral E_\u03c6=16\u221a2/3 and V=2E_\u03c6/(2-a)=3200\u221a2/303, which is finite and strictly positive, so Z=W(\u03c8)/\u221aV is well defined."
+          },
+          {
+            "claim": "NG19: distributional covariance profile m and rank-one projection P with PSD residual, no pointwise W(s,x)",
+            "verdict": "PASS",
+            "reason": "m=(1/\u221aV)\u222bC dy dr is locally integrable, Fubini identifies \u27e8m,f\u27e9=E[W(f)Z] for smooth compactly supported tests, and m=B_a(s)F(x)/\u221aV is bounded and nonnegative with m(s,x)m(t,y)\u22658/V on the backward cone. The projection W=Zm+W^\u22a5 realizes P=m\u2297m; C-P is Loewner positive by Cauchy-Schwarz, and the text correctly avoids any pointwise random field evaluation W(s,x)."
+          },
+          {
+            "claim": "NG19: exact coefficient bounds A_C<1/96 and A_P>1/48",
+            "verdict": "PASS",
+            "reason": "For \u03b1=1/2, a=99/100, spatial integration gives the temporal integrand (t-s)^{1-\u03b1-a} and A_C=(1-a)/[(1-\u03b1)(2-\u03b1-a)(3-\u03b1-a)(4-\u03b1-a)]=20000/1932951<1/96. The terminal cone lies in {|x|<1-s,|y|<1-t}, where m(s,z)m(t,y)\u22658/V, and the D=1 integral is 1/24, so A_P\u22658/(24V)=101/(3200\u221a2)>1/48."
+          },
+          {
+            "claim": "NG19: full small-coupling mean comparison with O(h^4) remainder for parent and bounded profile",
+            "verdict": "PASS",
+            "reason": "For the parent, amplified covariance r\u00b2C plus nonnegative mixed moments give ||X_n||_2\u2264\u221aB_r r^{-n} and an L\u00b2 tail O((|h|/r)^4); odd terms vanish by Gaussian symmetry. For P=Zm the deterministic Picard coefficients are bounded by M^n/(2n)! and the absolute mean series is dominated by E cosh(\u221a(M|Z|))<\u221e, giving E u_C(h)=1+h\u00b2A_C+O(h^4) and E u_P(h)=1+h\u00b2A_P+O(h^4). The strict coefficient gap proves the small-h inequality."
+          },
+          {
+            "claim": "NG19: equivalent-law tilt Q=C+(q-1)P and L_q moments, with A_Q<qA_P-1/96",
+            "verdict": "PASS",
+            "reason": "L_q=q^{-1/2}e^{(1-q^{-1})Z\u00b2/2} has E L_q=1 and E L_q\u00b2=[q(2-q)]^{-1/2} for 1<q<2, and the tilted Gaussian covariance is C+(q-1)P. Linearity gives A_Q=A_C+(q-1)A_P, and A_P-A_C>1/96 implies A_Q<qA_P-1/96. The same measurable solution carries the O(h^4) L\u00b9 remainder via Cauchy-Schwarz, and the note omits any stationary-model existence claim for Q."
+          },
+          {
+            "claim": "NG33: shear matrix contraction failure and whole-space low-frequency witness",
+            "verdict": "PASS",
+            "reason": "For t>0 the unit vector (0,1) maps to (t,1) with norm \u221a(1+t\u00b2)>1. The symbol of J0S(t)J0^{-1} on E=H^{1/2}\u00d7H^{-1/2} is [[cos(tr),\u27e8\u03be\u27e9sin(tr)/r],[-r sin(tr)/\u27e8\u03be\u27e9,cos(tr)]], which tends to S0(t) as r\u21930; normalized bumps in the second coordinate of J0z, supported on balls shrinking to zero, give image norms tending to \u221a(1+t\u00b2), so S(t) is not a contraction on E."
+          },
+          {
+            "claim": "NG33: H\u00f6lder-factor identity error and its counterexample",
+            "verdict": "PASS",
+            "reason": "The claim x^n/(n!)^\u03b8=A_nB_n is false; the correct weighted product is A_n^\u03b8 B_n^{1-\u03b8}, as used in Proposition P:static-phase-all-orders. At \u03b8=3/4, n=1, x=1 the weighted product is 2^{3/4}\u00b7(1/8)^{1/4}=1, whereas A_1B_1=2\u00b7(1/8)=1/4."
+          },
+          {
+            "claim": "NG33: factorial denominator inference failure and valid weakening",
+            "verdict": "PASS",
+            "reason": "With the permitted \u03b1=1 and k=3, k!k^{(2-\u03b1)k}=6\u00b73^3=162<216=(k!)^3, so M/162 does not imply M/216 for M>0. The valid bound is k!k^{(2-\u03b1)k}\u2265(k!)^{3-\u03b1} via k!\u2264k^k, which at this example gives (3!)^2=36\u2264162; the scope paragraph correctly restricts the refutation to the numerical inference, not the actual coefficient bound."
+          }
+        ],
+        "findings": {
+          "fatal": [],
+          "major": [],
+          "minor": []
+        },
+        "required_repairs": [],
+        "source_coverage": [
+          "HOMOG-CONTEXT.md (full)",
+          "MIDDLE-CROSS-CONTEXT.md (full)",
+          "NG13.md (full)",
+          "NG16.md (full)",
+          "NG18.md (full)",
+          "NG19.md (full)",
+          "NG33.md (full)",
+          "PROJECTION-CONTEXT.md (full)",
+          "TARGET.md (full)",
+          "WAVE-FACTORIAL-CONTEXT.md (full)",
+          "P:low-alpha-upper (full)",
+          "P:static-phase-all-orders (full)",
+          "Complete direct-bound section (full)",
+          "Full wave-variance section (full)"
+        ],
+        "limitations": [
+          "NG18's analytic identifications (wave transform, bridge/resolvent, survival envelope) and NG19's tail/fixed-order machinery are checked against the supplied MiddleCross and Projection contexts, which are treated as explicit interfaces (accepted prior analyses, P:mixed, parent construction) rather than re-certified here.",
+          "The NG19 display writes the pair of one-dimensional pair integrations as \u222b over R\u00b2 for (z,y); this is consistent notation for the two scalar integrations, and all checked computations were performed in d=1.",
+          "No all-order sharpness, whole-book certification, rendering/presentation check, or certification of the named external context theorems is implied by this verdict."
+        ]
+      },
+      "evidence_sha256": {
+        "report.txt": "66ce521e0a89bb0136d346e425af28712bc0dba3efe228d6e809a83abfd8dd2c",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "raw.jsonl": "3b59e75c8925dfc8f020bdefa50367e43e8a2041daa0e4f121499f77225d52d5",
+        "public-native-export.json": "8c6751d91097410784b59691167bcedf35b99a1b21e1384c8ba331c09ff8ccb7",
+        "exit.json": "6aa435e10340d2e9da337a5ddecb6a1cce6317a6e14fb74aedd4e9f277ec39dd",
+        "report.json": "c07befeb786cfdf11a97a92dd62e4a1dcbfb8c01149e17e83186310a6a13d521",
+        "native-evidence.json": "619f2f55312b54cee7ddb21c730cf7d95cc4d19ae8b0e2c2af789844987e200e",
+        "launch.json": "f8ce17b9986d70780016fc7c6cb0b33d89dbcd4e166127958c78e77e46df7cd0"
+      }
+    },
+    {
+      "attempt": "reviews/2026-11-12-nogo-gold-repairs/kimi-attempt-01",
+      "group": "gold-lexical-repairs",
+      "relationship": "five-entry-domain-and-bridge-confirmation",
+      "parent_within_group": null,
+      "route": "native-subscription-cli-kimi",
+      "status": "review-complete",
+      "native_acceptance": true,
+      "native_receipt": "reviews/2026-11-12-nogo-gold-repairs/kimi-attempt-01/receipt.json",
+      "native_receipt_sha256": "562877f4c1682dcb0bc5992061dfb6d18fd6d2e5ab2a31eb97652b1c3d1e57da",
+      "native_fields": {
+        "model_requested": "kimi-code/k3",
+        "model_actual": "k3",
+        "model_alias_actual": "kimi-code/k3",
+        "configured_effort": "max",
+        "effort_actual": "max",
+        "session_id": "session_a3340a18-18ae-4b60-8b17-4cbe15a994be",
+        "actual_route_verified": true,
+        "source_revision": "sha256:c7a4471036e88fca83ee26bed54a09e1005cf40e0226d265593921ba081edcf2",
+        "input_hashes": {
+          "HOMOG-CONTEXT.md": "c0a19a7e14638371113bedbc0c6d143e18c55037c462c1b5c53f7c297ffcd1da",
+          "MIDDLE-CROSS-CONTEXT.md": "a1ea05729fce6d0060241a8624b54677e7e6e6fc063d3549dfce7191a5d7e911",
+          "NG13.md": "0355e17f99a5ecff617d784e122cb398224c410be5b579feac6a4365e624e294",
+          "NG16.md": "8285922eedbaf09733f3521931ee0b2458c72c924574c659e9403d1337faa993",
+          "NG18.md": "feba7ee2ab96e3425c034542fc82bdb0382bbe4f06b153224dee25b2149f01e8",
+          "NG19.md": "6841eae068fe78930db3d477fc36f447731e54ead5c0cd459238a7c7c9c2ee8f",
+          "NG33.md": "73facb10af235a015846a921493ec3ff05e8051dabc66c352f65b8d9340878aa",
+          "PROJECTION-CONTEXT.md": "c0d9728c684fa3ac7337559415b4b7d6edf9edc1477df85eed58744da5ccdaa8",
+          "TARGET.md": "cf9bb1975cce71a0d57282713f91361b7b92559ce742f92f1772461c9e1422bf",
+          "WAVE-FACTORIAL-CONTEXT.md": "67d86e7ac9d203796aa33992b72ba8ab91d36b5e56ff49e9628450b96155d288"
+        },
+        "started_utc": "2026-11-12T16:36:04.414869+00:00",
+        "finished_utc": "2026-11-12T16:45:53.191472+00:00",
+        "elapsed_seconds": 588.775,
+        "transport_exit_code": 0,
+        "transport_ok": true,
+        "scientific_verdict": "PASS",
+        "confidence": "high",
+        "diagnostics": [],
+        "usage_records": [
+          {
+            "inputOther": 1860,
+            "output": 408,
+            "inputCacheRead": 2048,
+            "inputCacheCreation": 0
+          },
+          {
+            "inputOther": 1987,
+            "output": 274,
+            "inputCacheRead": 3840,
+            "inputCacheCreation": 0
+          },
+          {
+            "inputOther": 5434,
+            "output": 216,
+            "inputCacheRead": 5888,
+            "inputCacheCreation": 0
+          },
+          {
+            "inputOther": 4817,
+            "output": 198,
+            "inputCacheRead": 11264,
+            "inputCacheCreation": 0
+          },
+          {
+            "inputOther": 25681,
+            "output": 33725,
+            "inputCacheRead": 15872,
+            "inputCacheCreation": 0
+          }
+        ],
+        "tool_calls_observed": [
+          "Read"
+        ],
+        "candidate_hashes_unchanged": true,
+        "resumed_from": null,
+        "resume_mode": null,
+        "resume_binding": null,
+        "format_lineage": null,
+        "image_read_enabled": null
+      },
+      "public_report_observation": {
+        "path": "reviews/2026-11-12-nogo-gold-repairs/kimi-attempt-01/report.json",
+        "interpretation": "parsed-public-report",
+        "sha256": "2fdb10acbbe63672ace45eab08a1baf54bc34f9e644d93706a49950f6b5eef6e",
+        "schema": "subscription-review-report/1",
+        "alternative_schema_key": null,
+        "verdict": "PASS",
+        "confidence": "high",
+        "checks": [
+          {
+            "claim": "NG13: Gamma(dy,dz)=(1/2pi)|y|^{-1/2}dy delta_0(dz) is an admissible H:homog covariance in d=3 with alpha=3/2, alpha_0=1/4 (nonnegative, even, positive-definite, tempered Radon with positive even tempered Radon spectral measure)",
+            "verdict": "PASS",
+            "reason": "alpha_0+alpha=7/4<2 with 0<alpha<3. Planar Riesz kernel |y|^{-1/2}=(1/Gamma(1/4))int_0^inf v^{-3/4}e^{-v|y|^2}dv is locally integrable (int_0^1 r^{1/2}dr<inf) and positive definite by the Gaussian mixture; the normal delta_0 has quadratic form int dz [tangential nonnegative forms], so the product is positive definite; spectral measure ~|xi|^{-3/2}dxi_1dxi_2 dx xi_3 is locally integrable and of polynomial growth; ball mass (2/3)R^{3/2} gives tempered Radon."
+          },
+          {
+            "claim": "NG13: all-Borel homogeneity Gamma(rA)=r^{3/2}Gamma(A) by direct change of variables, not inferred from centered-ball masses",
+            "verdict": "PASS",
+            "reason": "The proof substitutes y=ry' in the defining integral for every Borel A: dy=r^2dy', |y|^{-1/2}=r^{-1/2}|y'|^{-1/2}, giving r^{3/2}Gamma(A)=r^{d-alpha}Gamma(A) including sets with empty planar trace (both sides zero). Verified independently."
+          },
+          {
+            "claim": "NG13: vague limit plus uniform envelope contradiction implies C_n -> infinity",
+            "verdict": "PASS",
+            "reason": "If a subsequence has C_n<=C, vague convergence on nonnegative compactly supported continuous f yields int f dGamma <= C int f|x|^{-3/2}dx (right side finite by local integrability), hence measure domination Gamma <= C|x|^{-3/2}dx. The compact planar annulus {1<=|y|<=2, z=0} has Gamma-mass (2/3)(2^{3/2}-1)>0 but zero 3D Lebesgue measure, contradiction. Every bounded subsequence excluded, so C_n->inf. Scope paragraph correctly limits the conclusion to uniform scalar isotropic density envelopes."
+          },
+          {
+            "claim": "NG16: domains A>0, c>0, 0<r<2 declared before scaling; J_c=c^{2/(2-r)}J_1",
+            "verdict": "PASS",
+            "reason": "All quantifiers stated in the nogo header. Substitution H=c^{1/(2-r)}K multiplies both cAH^r and H^2/2 by c^{2/(2-r)}, giving the scaling; verified symbolically."
+          },
+          {
+            "claim": "NG16: J_1 finite and positive; strict 2J_1<J_2",
+            "verdict": "PASS",
+            "reason": "r<2 makes the continuous score tend to -inf, so the sup is attained and finite; small H>0 gives positivity. sup{2AH^r-H^2}=2J_1 trivially, while J_2=2^{2/(2-r)}J_1>2J_1 since 2/(2-r)>1 and J_1>0."
+          },
+          {
+            "claim": "NG16: exact Gaussian tilted mean recovers E Y^2; deterministic surrogate loses a logarithmic factor",
+            "verdict": "PASS",
+            "reason": "E L_h^2=e^{h^2}; E_{Q_h}Y=e^{-h^2/2}E e^{(sigma+h)Z}=e^{sigma^2/2+sigma h}; exponent sigma^2+2 sigma h-h^2 maximized at h=sigma gives e^{2sigma^2}=E e^{2 sigma Z}=EY^2 exactly. Substituting Y(h)=e^{sigma h} maximizes 2 sigma h-h^2, giving e^{sigma^2}; half the logarithm is lost, as stated."
+          },
+          {
+            "claim": "NG18: both convolution operands stated, S_{A,s}(w)<=1, eta>=0, tau=s-1/2>=0, positive b,p, bridge identity correct including endpoints",
+            "verdict": "PASS",
+            "reason": "Convolution int_R e^{-s|q|}e^{-A|q-w|}dq=2S_{A,s}(w)/(s+A) verified by direct three-region integration matching the closed forms (se^{-Aw}-Ae^{-sw})/(s-A) and (1+Aw)e^{-Aw}; S<=1 by bounding e^{-s(w-t)}<=1 and int_0^w Ae^{-At}dt=1-e^{-Aw}. b=1+nu>=1>0, p=sqrt(b^2+2eta)>0, tau>=0 since s>1/2. Bridge integral int_0^1[b^2+2 eta t+2 tau t(1-t)]^{-3/2}dt=2(p+b)/(bp((p+b)^2+2 tau)) checked at eta=tau=0 (both sides b^{-3}) and matches context (B); coincident rates by continuity as stated."
+          },
+          {
+            "claim": "NG18: exact integrals and rational fractions; the displayed gap I-M_b(0;A)=-6005/7562016<0 at b=1, c=11/10",
+            "verdict": "PASS",
+            "reason": "Independently recomputed: area derivative 2(R-max(C,|q|))_+ and the (V) identity checked (d>=C case gives Ce^{-d}/16); I formula matches context (I); at b=1,c=11/10 numerator 872/100=218/25, denominator 185856/1000, I=545/11616 (gcd-reduced). M_b(0;A) formula matches context (M) with p=b; value 1025/21483. LCM(11616,21483)=7562016=11616*651=21483*352; 545*651=354795, 1025*352=360800, difference -6005/7562016<0. A=21/200 consistent with c^2=1+2A. Determinant (u+v+w)(w+z)-w^2=rR+wz and density factorization h(r)h(R+wz/r) verified. Partial-fraction triple-resolvent evaluation reproduces (1+c+p+b)/[4bpc(c+1)(c+p+b)(1+p+b)]."
+          },
+          {
+            "claim": "NG18: limited scope of the oversized envelope (does not refute J<=I; surviving comparison retains S_{A,1/2})",
+            "verdict": "PASS",
+            "reason": "Deleting the nonnegative clock-overlap penalty gives J^+>=J and replacing S<=1 by 1 enlarges further, so M_b(0;A)>=J^+>=J; the strict overshoot excludes only the shift-erased closure M_b(0;A)<=I, exactly as scoped and consistent with MIDDLE-CROSS-CONTEXT section 5 (U built from S_{A,h_*}, h_*=1/2) and the accepted (T) chain 0<J<=J^+<=U<I."
+          },
+          {
+            "claim": "NG19: legal indicator test; 0<V<infinity established before normalizing Z",
+            "verdict": "PASS",
+            "reason": "psi=1_[0,1]x1_[-1,1] admitted to the noise Hilbert completion by bounded smooth approximation and dominated convergence against the locally integrable product kernel, per PROJECTION-CONTEXT section 2. V=(1-a)*[2/((1-a)(2-a))]*E_phi=2E_phi/(2-a)=3200 sqrt(2)/303 is finite and strictly positive before Z=W(psi)/sqrt(V) is defined."
+          },
+          {
+            "claim": "NG19: distributional covariance profile via kernel and test pairing; no pointwise W(s,x) random variable",
+            "verdict": "PASS",
+            "reason": "m(s,x)=(1/sqrt V)int_0^1int_{-1}^1 C((s,x),(r,y))dydr is a locally integrable kernel formula; Fubini gives <m,f>=E[W(f)Z] for smooth compact tests, so m is used only as the covariance of the generalized field with Z. Verified m(s,x)=B_a(s)F(x)/sqrt V with B_a(s)=(s^{1-a}+(1-s)^{1-a}), F(x)=int_{-1}^1|x-y|^{-1/2}dy."
+          },
+          {
+            "claim": "NG19: Gaussian projection gives PSD residual (Loewner/quadratic-form), not pointwise order; P=m tensor m",
+            "verdict": "PASS",
+            "reason": "Cauchy-Schwarz gives Var(W(f))-E[W(f)Z]^2>=0 for every test f, so C-P is positive semidefinite as a kernel; the Gaussian residual is orthogonal hence independent of Z. The text explicitly disclaims pointwise nonnegativity and stationarity/homogeneity of P."
+          },
+          {
+            "claim": "NG19: constants E_phi=16 sqrt2/3, V=2E_phi/(2-a), A_C=20000/1932951<1/96, A_P>=101/(3200 sqrt2)>1/48, and full analytic remainder including the equivalent-law comparison",
+            "verdict": "PASS",
+            "reason": "E_phi recomputed (int F = 16 sqrt2/3). A_C: spatial z-integral gives 2 sqrt(t-s)=(t-s)^{1/2}/(1-alpha), Green masses give (1-t); Dirichlet integral (1/2)int_0^1 r^{1/2-a}(1-r)^2dr=1/[(3/2-a)(5/2-a)(7/2-a)], so A_C=2(1/100)*10^6/(51*151*251)=20000/1932951; 20000*96=1920000<1932951. On the backward cone |y|<1-t, |z|<1-s, mm>=8/V; covariance-one integral int_{0<s<t<1}(1-t)(t-s)=1/24 (checked); A_P>=8/(24V)=(2-a)/(32 sqrt2)=101/(3200 sqrt2)>1/48 via sqrt2<3/2 and 101>100. Remainder: ||X_n||_2<=sqrt(B_r)r^{-n} from amplified covariance r^2C and P:mixed; tail O(h^4); odd means vanish by sign symmetry. For P, |Picard coefficients|<=M^n/(2n)! verified exactly via the gap Dirichlet integral (a_1=1, others 2, sum 2n+1, giving 1/(2n)!), absolute series bounded by E cosh sqrt(M|Z|)<inf. Tilt: L_q=q^{-1/2}exp((1-1/q)Z^2/2), E L_q^2=[q(2-q)]^{-1/2} finite for 1<q<2 (verified), Q=C+(q-1)P, A_Q=A_C+(q-1)A_P<qA_P-1/96 since A_C+1/96<2/96<A_P; regularized profiles m_{eps,delta} bounded by 8/sqrt V via 0<=K_delta<=|.|^{-a}, F<=4, unit mass p_eps; dominated convergence on the finite-mass terminal kernel plus L^2 parent convergence and L_q in L^2 transfer the degree-two coefficient; explicitly scoped as equivalent-law, no new stationary Q-model."
+          },
+          {
+            "claim": "NG33: conventions x>0, integer n>=1, 0<theta<1, M>0; counterexamples are to the asserted steps, not the stochastic model",
+            "verdict": "PASS",
+            "reason": "All quantifiers and positivity conventions stated in the nogo items. Item 2 at theta=3/4,n=1,x=1: left side 1, A_1B_1=2*2^{-3}=1/4; correct identity x^n/(n!)^theta=A_n^theta B_n^{1-theta} verified algebraically (2^{n theta}*2^{-n theta}=1), matching the conjugate-power Holder step in P:static-phase-all-orders. Item 3 at permitted alpha=1, k=3: k!k^{(2-alpha)k}=6*27=162<216=(k!)^3; for M>0, M/162 does not imply M/216; valid weakening k!k^{(2-alpha)k}>=(k!)^{3-alpha} follows from k!<=k^k and equals 36 at the example, matching the b=2-alpha, q=3-alpha step in P:low-alpha-upper/P:d1-upper. Scope correctly notes the arithmetic refutes an inference between numerical bounds, not the actual coefficient."
+          },
+          {
+            "claim": "NG33: exact inhomogeneous Fourier symbol of J_0S(t)J_0^{-1} and low-frequency witness",
+            "verdict": "PASS",
+            "reason": "Matrix symbol [[cos(tr),<xi>sin(tr)/r],[-r sin(tr)/<xi>,cos(tr)]] independently recomputed from S(t,xi) in WAVE-FACTORIAL-CONTEXT and J_0=diag(Lambda^{1/2},Lambda^{-1/2}); it converges to S_0(t)=[[1,t],[0,1]] as r downarrow 0 (sine quotient -> t, <xi>->1). S_0(t)(0,1)=(t,1) has norm sqrt(1+t^2)>1 for t>0; normalized Fourier bumps supported in shrinking balls placed in the second coordinate of J_0z have image L^2 norms tending to sqrt(1+t^2), and J_0 is unitary from E=H^{1/2}xH^{-1/2} to L^2, so S(t) is not a contraction on this inhomogeneous E; the explicit disclaimer about the homogeneous energy norm is consistent with the context's free-growth bounds (e^{lambda h/2})."
+          },
+          {
+            "claim": "Cross-file consistency: each NG entry's cited interfaces match the supplied contexts",
+            "verdict": "PASS",
+            "reason": "NG13's admissibility matches HOMOG-CONTEXT H:homog (d=3, 0<alpha<d, alpha_0+alpha<2, Gamma(cA)=c^{d-alpha}Gamma(A)). NG18's formulas (I),(J),(B),(M), S bound and the rational test match MIDDLE-CROSS-CONTEXT sections 2-5 verbatim, including the same numerical values. NG19's (C),(P),(A),(Q),(M),(T),(D) match PROJECTION-CONTEXT, including 20000/1932951, 101/(3200 sqrt2), the 8/sqrt V regularization bound and the equivalent-law caveat. NG33's references to S:wave-variance norms, P:static-phase-all-orders Holder structure and P:low-alpha-upper factorial weakening match WAVE-FACTORIAL-CONTEXT."
+          }
+        ],
+        "findings": {
+          "fatal": [],
+          "major": [],
+          "minor": []
+        },
+        "required_repairs": [],
+        "source_coverage": [
+          "TARGET.md lines 1-1 (complete)",
+          "NG13.md lines 1-54 (complete)",
+          "NG16.md lines 1-50 (complete)",
+          "NG18.md lines 1-116 (complete)",
+          "NG19.md lines 1-127 (complete)",
+          "NG33.md lines 1-82 (complete)",
+          "HOMOG-CONTEXT.md lines 1-18 (complete)",
+          "MIDDLE-CROSS-CONTEXT.md lines 1-251 (complete)",
+          "PROJECTION-CONTEXT.md lines 1-217 (complete)",
+          "WAVE-FACTORIAL-CONTEXT.md lines 1-1302 (complete)"
+        ],
+        "limitations": [
+          "AI review only; not human verification, not a novelty audit, and not a Lean replay.",
+          "Per the review contract, existing context theorems (Proposition P:mixed, the prior adjudications cited in context headers, and the Lean certificate claims of MIDDLE-CROSS-CONTEXT section 6) were treated as explicit interfaces: I verified that the targets quote them exactly and apply them within their stated scopes, but did not re-certify those contexts end-to-end or execute any code.",
+          "Rendering/compilation was declared separate and was not assessed.",
+          "External literature remarks inside contexts (e.g., the Balan--Conus normalization comparison) were not checked against the published literature; they are not inputs to the five targets.",
+          "No files outside the frozen packet were consulted; all verification above is internal to the ten supplied files."
+        ]
+      },
+      "evidence_sha256": {
+        "STATUS.md": "4258b6f9fc07fae37c87acd85af8bb86da72f0c4a2ae927401578b278f13c3d1",
+        "report.txt": "6381c0c4862ee8e666c92665039abd349c31fe6abeb585361f3257f833093314",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "receipt.json": "562877f4c1682dcb0bc5992061dfb6d18fd6d2e5ab2a31eb97652b1c3d1e57da",
+        "prompt.txt": "5947709030749f1a893886a5a4eb555373d11a90bf2cf91d8175fa44450da367",
+        "events.jsonl": "a5d1b5a4bbb579272f2cd4a2b8a48df4edd01f425e17afeb6b072bb8234ee31d",
+        "kimi-reviewer.md": "69bbe9f4a09694550c270cc799729d6044371120baf1bd67d29c8b9cc246dd81",
+        "report-raw.txt": "4d2672f867d6f9e791e06a7bbef9a195616a21691396c1123dd1ff215417af75",
+        "input-manifest.json": "8939178dddfdd142551f6bf134151aa5fda7f6617f74feadf3d26f4db707f029",
+        "execution.json": "34c2ba226820f57a9a116782c4ef0821788fbec5080e615d00b31cf24d833adb",
+        "report.json": "2fdb10acbbe63672ace45eab08a1baf54bc34f9e644d93706a49950f6b5eef6e"
       }
     }
   ],

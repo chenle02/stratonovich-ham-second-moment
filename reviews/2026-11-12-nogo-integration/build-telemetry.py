@@ -22,6 +22,9 @@ specs=[
  ('reviews/2026-11-12-nogo-topology/kimi-full-v3-01','topology','full-review-of-substantively-repaired-candidate','kimi-attempt-01'),
  ('private/audit/2026-11-12-nogo-expansion/visual-cold/kimi-attempt-01','visual-navigation','fresh-cold-reading-and-49-image-review',None),
  ('private/audit/2026-11-12-nogo-expansion/visual-cold-v2/kimi-attempt-01','visual-navigation','editorial-successor-stopped-after-repeated-incomplete-source-reads','visual-cold/kimi-attempt-01'),
+ ('private/audit/2026-11-12-nogo-expansion/visual-cold-v3/kimi-attempt-01','visual-navigation','bounded-file-pre-box-cold-review','visual-cold-v2/kimi-attempt-01'),
+ ('reviews/2026-11-12-nogo-gold-repairs/deepseek-attempt-01','gold-lexical-repairs','five-entry-domain-and-bridge-confirmation',None),
+ ('reviews/2026-11-12-nogo-gold-repairs/kimi-attempt-01','gold-lexical-repairs','five-entry-domain-and-bridge-confirmation',None),
 ]
 def read(p):return json.loads(p.read_text()) if p.is_file() else None
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest() if p.is_file() else None

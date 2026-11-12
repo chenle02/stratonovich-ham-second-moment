@@ -1,0 +1,112 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "TARGET.md lines 1-1 (complete)",
+    "NG13.md lines 1-54 (complete)",
+    "NG16.md lines 1-50 (complete)",
+    "NG18.md lines 1-116 (complete)",
+    "NG19.md lines 1-127 (complete)",
+    "NG33.md lines 1-82 (complete)",
+    "HOMOG-CONTEXT.md lines 1-18 (complete)",
+    "MIDDLE-CROSS-CONTEXT.md lines 1-251 (complete)",
+    "PROJECTION-CONTEXT.md lines 1-217 (complete)",
+    "WAVE-FACTORIAL-CONTEXT.md lines 1-1302 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "NG13: Gamma(dy,dz)=(1/2pi)|y|^{-1/2}dy delta_0(dz) is an admissible H:homog covariance in d=3 with alpha=3/2, alpha_0=1/4 (nonnegative, even, positive-definite, tempered Radon with positive even tempered Radon spectral measure)",
+      "verdict": "PASS",
+      "reason": "alpha_0+alpha=7/4<2 with 0<alpha<3. Planar Riesz kernel |y|^{-1/2}=(1/Gamma(1/4))int_0^inf v^{-3/4}e^{-v|y|^2}dv is locally integrable (int_0^1 r^{1/2}dr<inf) and positive definite by the Gaussian mixture; the normal delta_0 has quadratic form int dz [tangential nonnegative forms], so the product is positive definite; spectral measure ~|xi|^{-3/2}dxi_1dxi_2 dx xi_3 is locally integrable and of polynomial growth; ball mass (2/3)R^{3/2} gives tempered Radon."
+    },
+    {
+      "claim": "NG13: all-Borel homogeneity Gamma(rA)=r^{3/2}Gamma(A) by direct change of variables, not inferred from centered-ball masses",
+      "verdict": "PASS",
+      "reason": "The proof substitutes y=ry' in the defining integral for every Borel A: dy=r^2dy', |y|^{-1/2}=r^{-1/2}|y'|^{-1/2}, giving r^{3/2}Gamma(A)=r^{d-alpha}Gamma(A) including sets with empty planar trace (both sides zero). Verified independently."
+    },
+    {
+      "claim": "NG13: vague limit plus uniform envelope contradiction implies C_n -> infinity",
+      "verdict": "PASS",
+      "reason": "If a subsequence has C_n<=C, vague convergence on nonnegative compactly supported continuous f yields int f dGamma <= C int f|x|^{-3/2}dx (right side finite by local integrability), hence measure domination Gamma <= C|x|^{-3/2}dx. The compact planar annulus {1<=|y|<=2, z=0} has Gamma-mass (2/3)(2^{3/2}-1)>0 but zero 3D Lebesgue measure, contradiction. Every bounded subsequence excluded, so C_n->inf. Scope paragraph correctly limits the conclusion to uniform scalar isotropic density envelopes."
+    },
+    {
+      "claim": "NG16: domains A>0, c>0, 0<r<2 declared before scaling; J_c=c^{2/(2-r)}J_1",
+      "verdict": "PASS",
+      "reason": "All quantifiers stated in the nogo header. Substitution H=c^{1/(2-r)}K multiplies both cAH^r and H^2/2 by c^{2/(2-r)}, giving the scaling; verified symbolically."
+    },
+    {
+      "claim": "NG16: J_1 finite and positive; strict 2J_1<J_2",
+      "verdict": "PASS",
+      "reason": "r<2 makes the continuous score tend to -inf, so the sup is attained and finite; small H>0 gives positivity. sup{2AH^r-H^2}=2J_1 trivially, while J_2=2^{2/(2-r)}J_1>2J_1 since 2/(2-r)>1 and J_1>0."
+    },
+    {
+      "claim": "NG16: exact Gaussian tilted mean recovers E Y^2; deterministic surrogate loses a logarithmic factor",
+      "verdict": "PASS",
+      "reason": "E L_h^2=e^{h^2}; E_{Q_h}Y=e^{-h^2/2}E e^{(sigma+h)Z}=e^{sigma^2/2+sigma h}; exponent sigma^2+2 sigma h-h^2 maximized at h=sigma gives e^{2sigma^2}=E e^{2 sigma Z}=EY^2 exactly. Substituting Y(h)=e^{sigma h} maximizes 2 sigma h-h^2, giving e^{sigma^2}; half the logarithm is lost, as stated."
+    },
+    {
+      "claim": "NG18: both convolution operands stated, S_{A,s}(w)<=1, eta>=0, tau=s-1/2>=0, positive b,p, bridge identity correct including endpoints",
+      "verdict": "PASS",
+      "reason": "Convolution int_R e^{-s|q|}e^{-A|q-w|}dq=2S_{A,s}(w)/(s+A) verified by direct three-region integration matching the closed forms (se^{-Aw}-Ae^{-sw})/(s-A) and (1+Aw)e^{-Aw}; S<=1 by bounding e^{-s(w-t)}<=1 and int_0^w Ae^{-At}dt=1-e^{-Aw}. b=1+nu>=1>0, p=sqrt(b^2+2eta)>0, tau>=0 since s>1/2. Bridge integral int_0^1[b^2+2 eta t+2 tau t(1-t)]^{-3/2}dt=2(p+b)/(bp((p+b)^2+2 tau)) checked at eta=tau=0 (both sides b^{-3}) and matches context (B); coincident rates by continuity as stated."
+    },
+    {
+      "claim": "NG18: exact integrals and rational fractions; the displayed gap I-M_b(0;A)=-6005/7562016<0 at b=1, c=11/10",
+      "verdict": "PASS",
+      "reason": "Independently recomputed: area derivative 2(R-max(C,|q|))_+ and the (V) identity checked (d>=C case gives Ce^{-d}/16); I formula matches context (I); at b=1,c=11/10 numerator 872/100=218/25, denominator 185856/1000, I=545/11616 (gcd-reduced). M_b(0;A) formula matches context (M) with p=b; value 1025/21483. LCM(11616,21483)=7562016=11616*651=21483*352; 545*651=354795, 1025*352=360800, difference -6005/7562016<0. A=21/200 consistent with c^2=1+2A. Determinant (u+v+w)(w+z)-w^2=rR+wz and density factorization h(r)h(R+wz/r) verified. Partial-fraction triple-resolvent evaluation reproduces (1+c+p+b)/[4bpc(c+1)(c+p+b)(1+p+b)]."
+    },
+    {
+      "claim": "NG18: limited scope of the oversized envelope (does not refute J<=I; surviving comparison retains S_{A,1/2})",
+      "verdict": "PASS",
+      "reason": "Deleting the nonnegative clock-overlap penalty gives J^+>=J and replacing S<=1 by 1 enlarges further, so M_b(0;A)>=J^+>=J; the strict overshoot excludes only the shift-erased closure M_b(0;A)<=I, exactly as scoped and consistent with MIDDLE-CROSS-CONTEXT section 5 (U built from S_{A,h_*}, h_*=1/2) and the accepted (T) chain 0<J<=J^+<=U<I."
+    },
+    {
+      "claim": "NG19: legal indicator test; 0<V<infinity established before normalizing Z",
+      "verdict": "PASS",
+      "reason": "psi=1_[0,1]x1_[-1,1] admitted to the noise Hilbert completion by bounded smooth approximation and dominated convergence against the locally integrable product kernel, per PROJECTION-CONTEXT section 2. V=(1-a)*[2/((1-a)(2-a))]*E_phi=2E_phi/(2-a)=3200 sqrt(2)/303 is finite and strictly positive before Z=W(psi)/sqrt(V) is defined."
+    },
+    {
+      "claim": "NG19: distributional covariance profile via kernel and test pairing; no pointwise W(s,x) random variable",
+      "verdict": "PASS",
+      "reason": "m(s,x)=(1/sqrt V)int_0^1int_{-1}^1 C((s,x),(r,y))dydr is a locally integrable kernel formula; Fubini gives <m,f>=E[W(f)Z] for smooth compact tests, so m is used only as the covariance of the generalized field with Z. Verified m(s,x)=B_a(s)F(x)/sqrt V with B_a(s)=(s^{1-a}+(1-s)^{1-a}), F(x)=int_{-1}^1|x-y|^{-1/2}dy."
+    },
+    {
+      "claim": "NG19: Gaussian projection gives PSD residual (Loewner/quadratic-form), not pointwise order; P=m tensor m",
+      "verdict": "PASS",
+      "reason": "Cauchy-Schwarz gives Var(W(f))-E[W(f)Z]^2>=0 for every test f, so C-P is positive semidefinite as a kernel; the Gaussian residual is orthogonal hence independent of Z. The text explicitly disclaims pointwise nonnegativity and stationarity/homogeneity of P."
+    },
+    {
+      "claim": "NG19: constants E_phi=16 sqrt2/3, V=2E_phi/(2-a), A_C=20000/1932951<1/96, A_P>=101/(3200 sqrt2)>1/48, and full analytic remainder including the equivalent-law comparison",
+      "verdict": "PASS",
+      "reason": "E_phi recomputed (int F = 16 sqrt2/3). A_C: spatial z-integral gives 2 sqrt(t-s)=(t-s)^{1/2}/(1-alpha), Green masses give (1-t); Dirichlet integral (1/2)int_0^1 r^{1/2-a}(1-r)^2dr=1/[(3/2-a)(5/2-a)(7/2-a)], so A_C=2(1/100)*10^6/(51*151*251)=20000/1932951; 20000*96=1920000<1932951. On the backward cone |y|<1-t, |z|<1-s, mm>=8/V; covariance-one integral int_{0<s<t<1}(1-t)(t-s)=1/24 (checked); A_P>=8/(24V)=(2-a)/(32 sqrt2)=101/(3200 sqrt2)>1/48 via sqrt2<3/2 and 101>100. Remainder: ||X_n||_2<=sqrt(B_r)r^{-n} from amplified covariance r^2C and P:mixed; tail O(h^4); odd means vanish by sign symmetry. For P, |Picard coefficients|<=M^n/(2n)! verified exactly via the gap Dirichlet integral (a_1=1, others 2, sum 2n+1, giving 1/(2n)!), absolute series bounded by E cosh sqrt(M|Z|)<inf. Tilt: L_q=q^{-1/2}exp((1-1/q)Z^2/2), E L_q^2=[q(2-q)]^{-1/2} finite for 1<q<2 (verified), Q=C+(q-1)P, A_Q=A_C+(q-1)A_P<qA_P-1/96 since A_C+1/96<2/96<A_P; regularized profiles m_{eps,delta} bounded by 8/sqrt V via 0<=K_delta<=|.|^{-a}, F<=4, unit mass p_eps; dominated convergence on the finite-mass terminal kernel plus L^2 parent convergence and L_q in L^2 transfer the degree-two coefficient; explicitly scoped as equivalent-law, no new stationary Q-model."
+    },
+    {
+      "claim": "NG33: conventions x>0, integer n>=1, 0<theta<1, M>0; counterexamples are to the asserted steps, not the stochastic model",
+      "verdict": "PASS",
+      "reason": "All quantifiers and positivity conventions stated in the nogo items. Item 2 at theta=3/4,n=1,x=1: left side 1, A_1B_1=2*2^{-3}=1/4; correct identity x^n/(n!)^theta=A_n^theta B_n^{1-theta} verified algebraically (2^{n theta}*2^{-n theta}=1), matching the conjugate-power Holder step in P:static-phase-all-orders. Item 3 at permitted alpha=1, k=3: k!k^{(2-alpha)k}=6*27=162<216=(k!)^3; for M>0, M/162 does not imply M/216; valid weakening k!k^{(2-alpha)k}>=(k!)^{3-alpha} follows from k!<=k^k and equals 36 at the example, matching the b=2-alpha, q=3-alpha step in P:low-alpha-upper/P:d1-upper. Scope correctly notes the arithmetic refutes an inference between numerical bounds, not the actual coefficient."
+    },
+    {
+      "claim": "NG33: exact inhomogeneous Fourier symbol of J_0S(t)J_0^{-1} and low-frequency witness",
+      "verdict": "PASS",
+      "reason": "Matrix symbol [[cos(tr),<xi>sin(tr)/r],[-r sin(tr)/<xi>,cos(tr)]] independently recomputed from S(t,xi) in WAVE-FACTORIAL-CONTEXT and J_0=diag(Lambda^{1/2},Lambda^{-1/2}); it converges to S_0(t)=[[1,t],[0,1]] as r downarrow 0 (sine quotient -> t, <xi>->1). S_0(t)(0,1)=(t,1) has norm sqrt(1+t^2)>1 for t>0; normalized Fourier bumps supported in shrinking balls placed in the second coordinate of J_0z have image L^2 norms tending to sqrt(1+t^2), and J_0 is unitary from E=H^{1/2}xH^{-1/2} to L^2, so S(t) is not a contraction on this inhomogeneous E; the explicit disclaimer about the homogeneous energy norm is consistent with the context's free-growth bounds (e^{lambda h/2})."
+    },
+    {
+      "claim": "Cross-file consistency: each NG entry's cited interfaces match the supplied contexts",
+      "verdict": "PASS",
+      "reason": "NG13's admissibility matches HOMOG-CONTEXT H:homog (d=3, 0<alpha<d, alpha_0+alpha<2, Gamma(cA)=c^{d-alpha}Gamma(A)). NG18's formulas (I),(J),(B),(M), S bound and the rational test match MIDDLE-CROSS-CONTEXT sections 2-5 verbatim, including the same numerical values. NG19's (C),(P),(A),(Q),(M),(T),(D) match PROJECTION-CONTEXT, including 20000/1932951, 101/(3200 sqrt2), the 8/sqrt V regularization bound and the equivalent-law caveat. NG33's references to S:wave-variance norms, P:static-phase-all-orders Holder structure and P:low-alpha-upper factorial weakening match WAVE-FACTORIAL-CONTEXT."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "AI review only; not human verification, not a novelty audit, and not a Lean replay.",
+    "Per the review contract, existing context theorems (Proposition P:mixed, the prior adjudications cited in context headers, and the Lean certificate claims of MIDDLE-CROSS-CONTEXT section 6) were treated as explicit interfaces: I verified that the targets quote them exactly and apply them within their stated scopes, but did not re-certify those contexts end-to-end or execute any code.",
+    "Rendering/compilation was declared separate and was not assessed.",
+    "External literature remarks inside contexts (e.g., the Balan--Conus normalization comparison) were not checked against the published literature; they are not inputs to the five targets.",
+    "No files outside the frozen packet were consulted; all verification above is internal to the ten supplied files."
+  ]
+}

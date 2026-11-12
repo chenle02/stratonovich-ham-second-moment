@@ -1,0 +1,2238 @@
+Your final output is consumed by json.loads. Begin literally with {"schema":"subscription-review-report/1", and end with }. No prose prefix, no fences, no acknowledgement outside JSON. Put coverage and all qualifications inside the JSON fields.
+
+Independently and adversarially review the five complete targets NG13.md, NG16.md, NG18.md, NG19.md, NG33.md, and every supplied context file. The author is GPT; no previous verdict is supplied. These are negative results: try to rescue the excluded claim within its stated quantifiers, and distinguish a counterexample to a numerical inference from a counterexample to the stochastic equation. Read all files completely using only read-only tools (DeepSeek's inline carrier has no tools). No edits, shell, network, delegation, or source discovery outside this packet. Existing context theorems are explicit interfaces, not targets for whole-book certification.
+
+Required separate checks: NG13 all-Borel homogeneity by direct change of variables (not inferred from centered-ball masses), Radon/tempered/positive-definite plane covariance, vague limit and uniform envelope contradiction. NG16 all A,c,r domains declared before scaling, c>0 and 0<r<2, finite positive J1, strict2J1<J2, exact Gaussian tilted mean and lost logarithmic factor. NG18 both convolution operands, S<=1, eta>=0, tau=s-1/2>=0, positive b,p and bridge identity at endpoints, exact integrals/fractions and actual limited scope of the oversized envelope. NG19 legal indicator test, 0<V<infinity before normalizing Z, distributional covariance profile via kernel and test pairing, no pointwise W(s,x) random variable, Gaussian projection/PSD versus pointwise order, constants and full analytic remainder (including equivalent-law comparison). NG33 positive x/integer n and positive M conventions, exact inhomogeneous Fourier symbol and low-frequency witness, Holder factors, factorial weakening and counterexample scope. For each verify every local bridge, inherited assumptions, convention and cited application; do not silently repair the source. All five full entries must be checked, not merely the changed words. Rendering is separate.
+
+Return exactly one JSON object with schema "subscription-review-report/1"; verdict PASS/PASS_WITH_NOTES/FAIL/INCONCLUSIVE; confidence high/medium/low; source_coverage array of strings naming complete files/ranges; checks array of {claim,verdict,reason} with check verdict PASS/PASS_WITH_NOTES/FAIL/INCONCLUSIVE/PARTIAL; findings object fatal,major,minor arrays of STRINGS; required_repairs and limitations arrays of STRINGS. No unchecked required claim may be passed; any mandatory repair requires FAIL or INCONCLUSIVE. Honest confidence. Do not append or prepend commentary.
+
+
+# HOMOG-CONTEXT.md
+\begin{hypothesis}[Homogeneous covariance]\label{H:homog}
+  Let $d \in \{1,2,3\}$ and $0 < \alpha_0 < 1$. The spatial covariance is a
+  nonnegative, even, positive-definite tempered Radon measure $\Gamma$ on
+  $\R^d$, with positive even tempered Radon spectral measure $\mu$ in the
+  convention
+  \[
+    \Gamma=\int e^{i\xi\cdot x}\mu(\ud\xi)
+    \quad\text{in the sense of tempered distributions}.
+  \]
+  The symbol $\gamma$ in~\eqref{E:cov} denotes this covariance as a function
+  when one exists, and as a distribution otherwise. For every Borel set $A$ and
+  $c > 0$, $\Gamma(cA) = c^{d-\alpha}\Gamma(A)$, and
+  \begin{equation}\label{E:threshold}
+    \alpha_0+\alpha<2,
+  \end{equation}
+  with $0 < \alpha < d$, or $\alpha = d = 1$. In particular, the last case
+  includes spatial white noise $\Gamma = \delta_0$.
+\end{hypothesis}
+# MIDDLE-CROSS-CONTEXT.md
+# Middle-cross/self comparison in white space
+
+Status: accepted scoped analytic/type/application review, six groups and
+seventeen checks PASS/HIGH at source e638186. See
+reviews/2026-10-29-middle-cross/adjudication-v1.md. The scope is
+d=α=1, Γ=δ₀, raw temporal exponent 0<a<1,
+and common gap damping θ>0. A positive multiple of δ₀ contributes the same
+positive square to every four-vertex term. The original general covariance
+comparison remains at nine terms. This note adds two WHITE terms only,
+giving thirteen there. It does not solve the all-order or sharp
+constant problem.
+
+The ordered diagram definitions, the analytic shared clock and their white
+spatial regularization limits are the named prior inputs from the degree-four
+memo. These are auxiliary chain-gap transforms, not physical unequal-time
+correlations or diagonal-horizon moment Laplace transforms. Normalize θ=1.
+
+## 1. Statement and labels
+
+For split (1,3), the singleton is vertex 0 and the long chain is 1<2<3.
+The partition is 02·13. Attach λ≥0 to the CROSS pair 02 and ν≥0 to the SELF
+pair 13. Let I be the actual wave transform and J the shared-clock candidate.
+Delete the nonnegative clock-overlap penalty to define the enlarged candidate
+J⁺≥J. We prove the strict comparison
+
+    0<J(λ,ν)≤J⁺(λ,ν)≤U(b,c)<I(λ,ν),  λ>0,ν≥0,             (T)
+    b=1+ν, c=1+λ.
+
+At λ=0 all four quantities agree. Fractional averaging gives J_a<I_a
+for every 0<a<1. The mirrored (3,1) partition is also 02·13, but canonical
+pair 02 is then SELF and pair 13 is CROSS. Its parameters must be exchanged.
+
+## 2. Actual wave integral
+
+Let u be the singleton time and v,w,z the three positive long-chain gaps.
+The cross time difference is |u−v−w| and the self span is w+z. The white
+spatial pairing gives
+
+    G_u(X)G_v(Y)G_w(X−Y)G_z(Y−X),   G_t(x)=1{|x|<t}/2.
+
+Put C=min(w,z). The spatial factor is area{|X|<u,|Y|<v,|X−Y|<C}/16.
+For R=u+v, q=u−v, d=|q|, the area derivative with respect to C is
+2(R−max(C,d))₊. To see this directly, assume u≥v by symmetry. Each strip
+edge has projected length [min(u,C+v)−max(−u,C−v)]₊, which equals
+(R−max(C,u−v))₊; add the two edges. The area is zero at C=0. Including the
+coordinate Jacobian 1/2, positive Tonelli and one elementary Gamma integral give
+
+    (1/32)∫_{|q|}∞ e^(−R)area(R,q,C)dR
+      = (1/16)∫₀ᶜ e^(−max(|q|,t))dt.                        (V)
+
+For d≥C the value is Ce^(−d)/16. For d<C it is
+[(d+1)e^(−d)−e^(−C)]/16. Hence the actual transform is
+
+    I=(1/16)∫ e^(−b(w+z)−λ|q−w|)
+                   ∫₀^{min(w,z)}e^(−max(|q|,t))dt dq dw dz.
+
+Swap the positive integrals, integrate z≥t and set w=t+x. This gives
+(1/(16b))∫_{t,x≥0}e^(−2bt−bx)∫_ℝe^(−λ|q−t−x|−max(|q|,t))dq dt dx.
+There are three q regions. Their respective contributions are
+
+    q<0:    [1/c+1/(2b+λ+1)]/[16b(b+λ)(2b+2λ+1)],
+    0≤q≤t:  1/[16b(b+λ)(2b+1)(2b+1+λ)],
+    q≥t:    [1/(b+λ)+1/c]/[16b(2b+1)(b+1)].
+
+For q<0 set q=−d, integrate x, then split d≥t and d<t. For the middle
+region set q=t−y, 0≤y≤t. For q≥t set q=t+y and split x≥y or x<y.
+Each calculation is a product of positive exponential integrals. Their sum is
+
+    I(λ,ν)= [2b²+4bc+2c²−c+1]
+              /[8bc(b+1)(2b+1)(b+c−1)(2b+2c−1)].             (I)
+
+No cross delay was discarded and no extra shuffle or factorial factor appears.
+
+## 3. Heat bridge and a survival envelope
+
+The variables in this section are operational times. The two spatial Brownian
+pair differences have covariance matrix
+
+    [ u+v+w   −w  ]
+    [   −w    w+z ].
+
+With r=w+z and R=u+v, its determinant is rR+wz. The joint δ density at
+zero therefore equals h(r)h(R+wz/r), h(t)=(2πt)^(−1/2). This factorization
+of density values is not independence of the two pair differences.
+
+For forward scalar-clock increments the covariance is their nonnegative
+interval overlap O. Deleting exp(−λνO) increases the positive averaged
+integrand. The retained overlap factor and joint Gaussian density are strictly
+positive at every finite positive-gap point, so their integral J is positive.
+Put A=λ+λ²/2. The self factor and heat damping combine to
+exp(−b²r/2). The root change R=u+v,q=u−v has Jacobian 1/2. Thus
+
+    J⁺=(1/32)∫₀∞ h(r)e^(−b²r/2)
+            ∫₀ʳ∫_ℝ e^(−A|q−w|) H_{w(r−w)/r}(q)dq dw dr,
+    H_γ(q)=∫_{|q|}∞e^(−R/2)h(R+γ)dR.                        (J)
+
+The elementary Gamma representation of h gives the positive mixture
+
+    H_γ(q)=∫_{1/2}∞ [m(s)/s]e^(−(s−1/2)γ)e^(−s|q|)ds,
+    m(s)=1/[π√2√(s−1/2)].
+
+The measure [m(s)/s]ds has mass one, since H₀(0)=∫e^(−R/2)h(R)dR=1.
+All interchanges are positive Tonelli. Direct integration of the even root
+kernel gives
+
+    ∫_ℝe^(−s|q|−A|q−w|)dq = [2/(s+A)]S_{A,s}(w),
+    S_{A,s}(w)=e^(−Aw)+∫₀ʷAe^(−At)e^(−s(w−t))dt.
+
+In particular 0≤S≤1. On the mixing support s≥h_*:=1/2, the positive
+integral formula proves S_{A,s}(w)≤S_{A,h_*}(w). It retains the shift w.
+For A≠s, S=(s e^(−Aw)−A e^(−sw))/(s−A), and for A=s,
+S=(1+Aw)e^(−Aw). These closed forms are not integrated separately in s.
+
+## 4. Exact bridge–resolvent integral
+
+Define M_b(η;A), η≥0, by replacing the root kernel in (J) with
+[2/(s+A)]e^(−ηw) after inserting the positive s mixture. It equals
+
+    (1/16)∫ [m(s)/(s(s+A))] h(r)e^(−b²r/2)
+                e^(−(s−1/2)w(r−w)/r−ηw) ds dw dr, 0<w<r.
+
+Set w=rt and integrate r. With τ=s−1/2 and p=√(b²+2η), the remaining
+bridge integral is
+
+    ∫₀¹[b²+2ηt+2τt(1−t)]^(−3/2)dt
+       =2(p+b)/[bp((p+b)²+2τ)].                              (B)
+
+For (η,τ)≠(0,0), integrate the quadratic directly and use p²=b²+2η.
+The result before cancellation is
+[(η+τ)/b−(η−τ)/p]/[(η+τ)²+2b²τ]. Factor the denominator as
+[τ+(p−b)²/2][τ+(p+b)²/2] to obtain (B). At (0,0) both sides are 1/b³;
+continuity also follows from the bound b^(−3) on the positive integrand.
+
+Now substitute z=√(2s−1), so m(s)ds=dz/π, and 1+2A=c². Then
+
+    M_b(η;A)=(p+b)/(2πbp)
+      ∫₀∞ dz/[(z²+1)(z²+c²)(z²+(p+b)²)]
+      =(1+c+p+b)/[4bp c(c+1)(c+p+b)(1+p+b)].                  (M)
+
+The last identity follows by partial fractions and
+∫₀∞(z²+q²)^(−1)dz=π/(2q): for positive rates q₁,q₂,q₃ the triple integral
+is π(q₁+q₂+q₃)/[2q₁q₂q₃(q₁+q₂)(q₂+q₃)(q₃+q₁)]. One first obtains
+the two-factor value π/[2q₁q₂(q₁+q₂)] by subtraction,then subtracts the
+two-factor formulas at q₂ and q₃ and cancels q₃²−q₂². Coincident rates follow
+by dominated convergence; all rates here are positive. Every preceding
+integral is positive and finite.
+
+## 5. A nonsingular upper bound
+
+The survival envelope from §3 bounds J⁺ by the positive integral obtained
+with S_{A,h_*}. For A≠h_* it is
+
+    U=[h_* M_b(A;A)−A M_b(h_*;A)]/(h_*−A).
+
+This combination must not be split into separate fractional λ integrals
+across A=h_*. We now eliminate that apparent singularity.
+Put d=√(b²+c²−1), e=√(b²+1), B=b+c, C=b+1, K=1/[4bc(c+1)], and
+
+    m₀(x)=K[1/(x(x+C))+1/(x(x+B)(x+C))].
+
+Formula (M) is m₀(p). Since e²−d²=1−2A,
+U=m₀(e)+(m₀(d)−m₀(e))/(e²−d²). The locally Lean-checked algebra identity is
+
+    m₀(d)−m₀(e)=(e−d)K(F₁+F₂),
+    F₁=(d+e+C)/[de(d+C)(e+C)],
+    F₂=[d²+de+e²+(B+C)(d+e)+BC]
+          /[de(d+B)(e+B)(d+C)(e+C)].
+
+Therefore the nonsingular form is
+
+    U(b,c)=m₀(e)+K(F₁+F₂)/(d+e).                             (U)
+
+It is finite, positive and continuous for b,c≥1. It also equals the
+survival-envelope integral at A=h_*. Indeed 2/(s+A)≤4, S≤1 and
+e^(−(s−1/2)γ)≤1 give an integrable dominating bound whose total is
+(1/8)∫rh(r)e^(−b²r/2)dr=1/(8b³), uniformly in A≥0. The survival integral
+and (U) are continuous; their equality away from A=h_* extends to that
+point. No derivative or singular signed integral is needed there.
+
+Erasing the shift instead would give M_b(0;A). That larger bound is too
+weak: at b=1,c=11/10, I=545/11616 while M_b(0;A)=1025/21483, with
+I−M_b(0;A)=−6005/7562016. This excludes that shortcut, not J≤I.
+The even root component has zero initial hazard; the terminal-cross note's
+positive pure-exponential component rate cannot simply be reused here.
+
+## 6. The actual two-root consumer in Lean
+
+The local MiddleCross module proves
+
+    upper b c √(b²+c²−1) √(b²+1) < actual b c,  b≥1,c>1.       (L)
+
+Here actual is exactly (I), and upper is exactly (U), with m₀,F₁,F₂ written
+out. The desired inequality and numerator positivity are not hypotheses.
+The proof verifies the original rational difference and denominator signs,
+not just a separate positive polynomial.
+
+For completeness, its certificate construction is as follows. Clear the
+original positive denominator
+
+    8bcde(b+1)(2b+1)(c+1)(d+e)(b+c−1)
+      ·(b+c+d)(b+c+e)(b+d+1)(b+e+1)(2b+2c−1).
+
+For the root parameters Z=b+e≥2 and T=(d+c)/(b+1)>1, the root equations give
+
+    b=(Z²−1)/(2Z), e=(Z²+1)/(2Z),
+    c=((b+1)T−(b−1)/T)/2, d=((b+1)T+(b−1)/T)/2.
+
+The code derives these inverse identities from the actual square roots.
+After substitution, the cleared numerator multiplied by 32768T⁷Z⁹ is the
+explicit certificate Cert(Z−2,T−1). Cert has 300 positive integer monomials,
+all divisible by its second argument, including terms with first-argument
+degree zero. Thus it is positive for Z−2≥0,T−1>0. The full identity,
+positivity, inverse/domain facts, rational difference, resolvent difference
+and actual consumer (L) are source-checked in Lean. The certificate is in
+the source, with the exact monomial data retained by its generator.
+
+The analytic wave, Gaussian bridge and survival-integral identifications
+remain outside Lean; their independent source/type/application review passed
+at the scope stated above. This is a local proof/replay using pinned read-only dependencies,
+not a new companion, full Mathlib rebuild, Comparator or formal SPDE gate.
+
+## 7. Fractional averaging and scope
+
+For λ>0,ν≥0, combine J≤J⁺≤U with (L) to obtain (T). At λ=0, the overlap
+factor is one, S=1 and (M) gives
+J=J⁺=U=I=(b+1)/[4b²(2b+1)²]. No Gamma(0) is used.
+
+For 0<a<1 average with Γ(a)^(−2)λ^(a−1)ν^(a−1)dλdν on the positive
+quadrant. Let s₀=b+c≥2. The numerator in (I) is at most 2s₀², while
+(b+1)≥b, (2b+1)≥2b, (s₀−1)≥s₀/2 and (2s₀−1)≥s₀. Hence
+I≤1/(4b³c)≤1/(4bc). The two positive Gamma integrals give
+I_a≤Γ(1−a)²/4<∞. Thus J_a<I_a by positivity of the pointwise difference
+on the positive parameter domain, not by a limit of strict inequalities.
+
+At common θ>0 the fixed-parameter factor is θ^(−6) with parameters
+λ/θ,ν/θ, and the fractional factor is θ^(2a−6). Positive white amplitudes
+give a common positive square. On the wave side four gaps and two spatial
+variables scale by θ^(−1). On the clock side use operational gaps θ^(−2)
+times the primed gaps: the four measures contribute θ^(−8), the joint
+two-pair white density contributes θ², and the scalar clock parameters become
+λ/θ,ν/θ by Brownian scaling. Swapping chain names gives the mirror with
+its canonical parameters exchanged.
+
+[held back: collaborators' unpublished work]
+
+# NG13.md
+\subsection{NG-13: angular smoothing and isotropic envelopes}\label{S:nogo-13}
+
+Smooth angular densities admit finite angular suprema. It is tempting to
+approximate a singular covariance by such densities and apply the Riesz
+estimate with that supremum as amplitude. The limit below shows why the
+amplitudes cannot remain bounded.
+
+\setcounter{nogo}{12}
+\begin{nogo}[No uniform isotropic envelope for a plane covariance]
+  \label{P:nogo-13}
+  In $\mathbb R^3=\mathbb R^2\times\mathbb R$ set
+  \[
+    \Gamma(\ud y,\ud z)=\frac1{2\pi}|y|^{-1/2}\ud y\,\delta_0(\ud z).
+  \]
+  This is an admissible covariance with $\alpha=3/2$ and
+  $\alpha_0=1/4$. If nonnegative measures $\Gamma_n$ converge vaguely to
+  $\Gamma$ and satisfy
+  \[
+    \Gamma_n(\ud x)\le C_n|x|^{-3/2}\ud x,
+  \]
+  then $C_n\to\infty$.
+\end{nogo}
+\begin{proof}
+  The planar Riesz factor is locally integrable and positive definite by
+  its Gaussian mixture representation. The normal Dirac covariance is
+  positive definite: in its quadratic form the two normal coordinates
+  coincide, leaving an integral of nonnegative tangential quadratic
+  forms. Thus, the product is positive definite. For every $r>0$ and
+  Borel set $A$, the substitution $y=ry'$ in its defining integral gives
+  $\Gamma(rA)=r^{2-1/2}\Gamma(A)=r^{3/2}\Gamma(A)$. Its finite mass on
+  a radius $R$ ball is proportional to $R^{3/2}$; polynomial mass growth
+  also gives temperedness.
+
+  Suppose a subsequence of $C_n$ were bounded by $C<\infty$. For every
+  nonnegative compactly supported continuous $f$, vague convergence gives
+  \[
+    \int f\ud\Gamma=\lim_n\int f\ud\Gamma_n
+    \le C\int f(x)|x|^{-3/2}\ud x.
+  \]
+  This is measure domination, so $\Gamma$ would be absolutely continuous
+  with respect to three-dimensional Lebesgue measure. But the compact
+  planar annulus $\{(y,0):1\le|y|\le2\}$ has positive $\Gamma$ mass and
+  zero Lebesgue measure. This contradiction excludes every bounded
+  subsequence, proving the asserted limit.
+  This proves No-go~\ref{P:nogo-13}.
+\end{proof}
+
+This argument applies in particular to angular smoothing whenever the
+smoothed covariances converge to the plane measure. It requires no
+ellipsoid representation. It rules out a uniform scalar isotropic density
+envelope, not other covariance majorants or density of any proposed cone.
+The reopening condition is an estimate that remains uniform without taking
+an angular supremum, or a comparison adapted to the singular support.
+
+
+# NG16.md
+\subsection{NG-16: replacing a tilted mean by a deterministic value}
+\label{S:nogo-16}
+
+The Gaussian density cost is exact. A loss may instead enter when the
+random solution under the tilted law is replaced by a deterministic
+surrogate. The following two calculations identify the loss without
+asserting an obstruction to Gaussian shifts themselves.
+
+\setcounter{nogo}{15}
+\begin{nogo}[A deterministic surrogate can lose the annealed factor]
+  \label{P:nogo-16}
+  Let $A>0$, $c>0$ and $0<r<2$, and define
+  \[
+    J_c=\sup_{H\ge0}\{cAH^r-H^2/2\}.
+  \]
+  Then $J_c=c^{2/(2-r)}J_1$, whereas
+  \[
+    \sup_{H\ge0}\{2AH^r-H^2\}=2J_1<J_2.
+  \]
+  Moreover, for $Y=e^{\sigma Z}$, $Z$ standard Gaussian and $\sigma>0$,
+  the full tilted-mean Cauchy--Schwarz bound recovers $\E Y^2$ exactly,
+  while substituting $Y(h)=e^{\sigma h}$ loses a factor in its logarithm.
+\end{nogo}
+\begin{proof}
+  Substitute $H=c^{1/(2-r)}K$ in the definition of $J_c$. Both terms
+  acquire the factor $c^{2/(2-r)}$. The supremum $J_1$ is finite, since
+  $r<2$, and positive, since for small positive $H$ the positive term
+  dominates. Factoring two from the surrogate score proves the strict
+  comparison because $2/(2-r)>1$.
+
+  Let $Q_h$ be the Gaussian shift with density
+  $L_h=e^{hZ-h^2/2}$ relative to the standard Gaussian law. Then
+  $\E L_h^2=e^{h^2}$, so Cauchy--Schwarz gives
+  \[
+    \E Y^2\ge(\E_{Q_h}Y)^2e^{-h^2}.
+  \]
+  The exact tilted mean is $\E_{Q_h}Y=e^{\sigma^2/2+\sigma h}$.
+  Maximizing its resulting exponent
+  $\sigma^2+2\sigma h-h^2$ at $h=\sigma$ gives
+  $e^{2\sigma^2}=\E Y^2$. Substitution of the deterministic value
+  $Y(h)$ instead gives the maximum $e^{\sigma^2}$.
+  This proves No-go~\ref{P:nogo-16}.
+\end{proof}
+
+These are generic scalar score calculations, not an SPDE no-go. They
+identify which term is lost and show that retaining the full tilted mean
+can avoid the loss. A deterministic surrogate remains useful if one
+proves that its error is negligible on the intended exponential scale;
+without such an estimate it cannot identify the annealed constant.
+
+
+# NG18.md
+\subsection[NG-18: an oversized middle-cross envelope]{NG-18: erasing the middle-cross shift makes an envelope too large}
+\label{S:nogo-18}
+
+A later white-space comparison retains four vertices and a middle cross
+pair. Removing the clock-overlap penalty gives a positive upper bound.
+One further simplification, erasing the shift of its root kernel, also
+increases the bound, but increases it beyond the comparator at an explicit
+parameter point. This is an obstruction to closing that envelope, not a
+counterexample to the original comparison.
+
+\setcounter{nogo}{17}
+\begin{nogo}[The shift-erased envelope is not below the wave transform]
+  \label{P:nogo-18}
+  Consider the white $(1,3)$ diagram with middle-cross partition $02\cdot13$,
+  common gap damping one, cross rate $\lambda\ge0$ and self rate $\nu\ge0$.
+  Put $b=1+\nu$, $c=1+\lambda$, $A=\lambda+\lambda^2/2$. Its actual wave
+  transform $I$ and the shift-erased clock upper envelope $M_b(0;A)$ satisfy
+  at $b=1,c=11/10$
+  \[
+    I=\frac{545}{11616},\qquad M_b(0;A)=\frac{1025}{21483},\qquad
+    I-M_b(0;A)=-\frac{6005}{7562016}<0.
+  \]
+  Consequently the proposed pointwise closure $M_b(0;A)\le I$ is false.
+\end{nogo}
+\begin{proof}
+  We give the integral identifications so that the rational test specifies
+  which bound fails. With singleton gap $u$ and long-chain gaps $v,w,z$,
+  the spatial factor is
+  $\int G_u(X)G_v(Y)G_w(X-Y)G_z(Y-X)\,\ud X\ud Y$.
+  Set $R=u+v$, $q=u-v$. Integration in $R$, including its Jacobian,
+  gives the exact wave expression
+  \[
+    I=\frac1{16}\int_{w,z>0}\int_{\mathbb R}
+    e^{-b(w+z)-\lambda|q-w|}
+    \int_0^{\min(w,z)}e^{-\max(|q|,t)}\,\ud t\ud q\ud w\ud z.
+  \]
+  To check the spatial reduction, the derivative of the area
+  $\{|X|<u,|Y|<v,|X-Y|<C\}$ with respect to $C$ is
+  $2(R-\max(C,|q|))_+$; the area vanishes at $C=0$.
+  Integrate this against $e^{-R}/32$ for $R>|q|$.
+  Next integrate $z\ge t$ and put $w=t+x$. Splitting the remaining $q$
+  integral into $q<0$, $0\le q\le t$, and $q\ge t$ gives respectively
+  \[
+    \frac{1/c+1/(2b+\lambda+1)}{16b(b+\lambda)(2b+2\lambda+1)},\quad
+    \frac1{16b(b+\lambda)(2b+1)(2b+1+\lambda)},
+  \]
+  \[
+    \frac{1/(b+\lambda)+1/c}{16b(2b+1)(b+1)}.
+  \]
+  Adding gives
+  \[
+    I=\frac{2b^2+4bc+2c^2-c+1}
+    {8bc(b+1)(2b+1)(b+c-1)(2b+2c-1)}.
+  \]
+
+  For the clock envelope write $h(r)=(2\pi r)^{-1/2}$ and
+  $m(s)=1/(\pi\sqrt2\sqrt{s-1/2})$, $s>1/2$.
+  The two spatial pair differences have covariance matrix
+  $\left(\begin{smallmatrix}u+v+w&-w\\-w&w+z\end{smallmatrix}\right)$.
+  Writing $r=w+z$, its determinant is $rR+wz$, so their joint white
+  density factors as $h(r)h(R+wz/r)$. After deleting the nonnegative
+  clock-overlap penalty, the root kernel is
+  \[
+    H_\gamma(q)=\int_{|q|}^\infty e^{-R/2}h(R+\gamma)\,\ud R
+    =\int_{1/2}^\infty\frac{m(s)}s
+    e^{-(s-1/2)\gamma}e^{-s|q|}\,\ud s,
+    \qquad \gamma=\frac{wz}{r}.
+  \]
+  The equality follows from the positive Gamma integral for $h$.
+  The convolution of the mixture component $q\mapsto e^{-s|q|}$ with
+  $q\mapsto e^{-A|q|}$, evaluated at $w$, equals $2S_{A,s}(w)/(s+A)$, where
+  \[
+    S_{A,s}(w)=e^{-Aw}+\int_0^w A e^{-At}e^{-s(w-t)}\,\ud t\le1.
+  \]
+  The inequality follows by bounding $e^{-s(w-t)}$ by one; the remaining
+  integral is $1-e^{-Aw}$.
+  Replacing $S$ by one is precisely the shift erasure. More generally, for
+  $\eta\ge0$, replacing it by $e^{-\eta w}$ defines
+  \[
+    M_b(\eta;A)=\frac1{16}\int_{1/2}^\infty
+    \frac{m(s)}{s(s+A)}\int_0^\infty h(r)e^{-b^2r/2}
+    \int_0^r e^{-(s-1/2)w(r-w)/r-\eta w}\,\ud w\ud r\ud s.
+  \]
+  All integrals here are positive. Set $w=rt$ and $\tau=s-1/2$.
+  For $\eta,\tau\ge0$, put $p=\sqrt{b^2+2\eta}$. The elementary bridge
+  integral is
+  \[
+    \int_0^1[b^2+2\eta t+2\tau t(1-t)]^{-3/2}\,\ud t
+    =\frac{2(p+b)}{bp((p+b)^2+2\tau)}.
+  \]
+  It follows by integrating a quadratic power; at $\eta=\tau=0$ both sides
+  are $b^{-3}$. Substitution $z=\sqrt{2s-1}$ and partial fractions give
+  \begin{align*}
+    M_b(\eta;A)&=\frac{p+b}{2\pi bp}
+    \int_0^\infty\frac{\ud z}
+    {(z^2+1)(z^2+c^2)(z^2+(p+b)^2)}\\
+    &=\frac{1+c+p+b}{4bp c(c+1)(c+p+b)(1+p+b)}.
+  \end{align*}
+  The usual identity $\int_0^\infty(z^2+q^2)^{-1}\ud z=\pi/(2q)$
+  proves the partial fraction evaluation; coincident rates follow by
+  continuity. At $\eta=0$, $p=b$. Substituting the asserted rational
+  parameters in these two expressions gives the displayed strict gap.
+  This proves No-go~\ref{P:nogo-18}.
+\end{proof}
+
+The boundary value $\nu=0$ is a legitimate fixed-parameter transform;
+continuity of both rational expressions also gives an overshoot for some
+$\nu>0$ nearby. The no-go does not refute $J\le I$, where $J$ is the
+original shared-clock candidate, nor does it decide an integrated
+comparison using this envelope. The surviving middle-cross comparison
+retains $S_{A,1/2}(w)$, instead of replacing it by one, and obtains a smaller
+envelope. Reopening this particular closure requires keeping a shift cost
+or proving a different integrated estimate. The historical standalone
+record was not separately adjudicated; the subsequent accepted
+middle-cross analysis and this reconstructed proof do not change that
+historical review status.
+
+# NG19.md
+\subsection{NG-19: discarding an independent Gaussian residual}
+\label{S:nogo-19}
+
+An orthogonal Gaussian projection produces an independent residual with
+positive semidefinite covariance. This makes projection a useful change-of-law
+tool. It does not give pointwise nonnegative residual covariance, and the
+wave mean need not increase when that residual is restored.
+
+\setcounter{nogo}{18}
+\begin{nogo}[A positive semidefinite residual can lower the wave mean]
+  \label{P:nogo-19}
+  There is an admissible one-dimensional parent covariance $C$ and an
+  actual rank-one Gaussian projection with covariance $P$ such that
+  $C-P$ is positive semidefinite but
+  \[
+    \E u_C(h;1,0)<\E u_P(h;1,0)
+  \]
+  for all sufficiently small positive noise couplings $h$. The projection
+  $P$ is not asserted to be stationary or homogeneous.
+\end{nogo}
+\begin{proof}
+  Put $a=99/100$ and
+  \[
+    C((s,x),(t,y))=(1-a)|s-t|^{-a}|x-y|^{-1/2}.
+  \]
+  Its spatial degree is $\alpha=1/2$, and $\alpha+a<2$. Gaussian mixtures
+  of the two power kernels verify positive definiteness and local
+  integrability. Let $\psi(s,x)=\mathbf1_{[0,1]}(s)\mathbf1_{[-1,1]}(x)$,
+  and $V=\E W(\psi)^2$. The indicator is a legal Hilbert-space test by
+  bounded smooth approximation and dominated convergence. Local integrability
+  and positivity of $C$ give $0<V<\infty$. Put $Z=W(\psi)/\sqrt V$ and
+  define the covariance profile by the locally integrable kernel formula
+  \[
+    m(s,x)=\frac1{\sqrt V}\int_0^1\int_{-1}^1
+    C((s,x),(r,y))\ud y\ud r.
+  \]
+  For every smooth compactly supported spacetime test $f$, Fubini's
+  theorem identifies $\langle m,f\rangle=\E[W(f)Z]$.
+  Thus, $m$ is the covariance of the generalized field with $Z$; no
+  pointwise random variable $W(s,x)$ is used. Gaussian projection gives
+  $W=Zm+W^\perp$ with $W^\perp$ independent of $Z$ and
+  covariance $C-P$, where $P=m\otimes m$. Cauchy--Schwarz gives its
+  positive semidefiniteness.
+
+  Direct integration gives, on $0\le s\le1$,
+  \[
+    E_\phi=\frac{16\sqrt2}{3},\quad V=\frac{2E_\phi}{2-a},\quad
+    m(s,x)=\frac{B_a(s)F(x)}{\sqrt V},
+  \]
+  where $B_a(s)=s^{1-a}+(1-s)^{1-a}\ge1$ and
+  $F(x)=\int_{-1}^1|x-y|^{-1/2}\ud y$. We have $F\le4$ everywhere and
+  $F(x)\ge2\sqrt2$ for $|x|\le1$. Thus, $m$ is bounded and nonnegative,
+  and $m(s,x)m(t,y)\ge8/V$ on the backward cone of $(1,0)$.
+
+  For a covariance $D$ the degree-two ordinary mean coefficient is
+  \[
+    A_D=\int_{0<s<t<1}\int_{\mathbb R^2}
+    G_{1-t}(-y)G_{t-s}(y-z)D((s,z),(t,y))
+    \ud z\ud y\ud s\ud t.
+  \]
+  This is the single self-pair term of Proposition~\ref{P:mixed}; there
+  is no additional factorial. With $G_r(x)=\mathbf1_{\{|x|<r\}}/2$,
+  integration of the parent covariance yields
+  \[
+    A_C=\frac{1-a}{1-\alpha}
+    \frac1{(2-\alpha-a)(3-\alpha-a)(4-\alpha-a)}
+    =\frac{20000}{1932951}<\frac1{96}.
+  \]
+  For covariance one the same integral is
+  $\int_{0<s<t<1}(1-t)(t-s)\ud s\ud t=1/24$. Therefore,
+  \[
+    A_P\ge\frac{8}{24V}
+    =\frac{101}{3200\sqrt2}>\frac1{48}.
+  \]
+
+  We justify passage from coefficients to full means. Write the parent
+  solution as $u_C(h)=\sum_{n\ge0}h^nX_n$. For any fixed $r>1$,
+  finiteness of the second moment at amplified covariance $r^2C$ and
+  nonnegativity of the mixed moments in Proposition~\ref{P:mixed} give
+  \[
+    \|X_n\|_2\le \sqrt{B_r}\,r^{-n},\qquad
+    B_r=\E|u_C(r;1,0)|^2<\infty.
+  \]
+  Hence, the $L^2$ norm of the tail starting at $n=4$ is at most
+  $\sqrt{B_r}(|h|/r)^4/(1-|h|/r)$. Odd means vanish by Gaussian sign
+  symmetry, giving $\E u_C(h)=1+h^2A_C+O(h^4)$.
+
+  For $P$, the potential is the bounded profile $Zm$. If $M=\sup|m|$,
+  the deterministic Picard coefficients at time one are bounded by
+  $M^n/(2n)!$. The absolute mean series for $|h|\le1$ is bounded by
+  $\E\cosh\sqrt{M|Z|}<\infty$. Factoring $h^4$ from its tail and
+  using symmetry therefore gives $\E u_P(h)=1+h^2A_P+O(h^4)$.
+  The strict coefficient gap proves the claimed inequality.
+  This proves No-go~\ref{P:nogo-19}.
+\end{proof}
+
+The same distinction persists under a variance tilt of the projected
+coordinate. For $1<q<2$, its density relative to the parent law is
+\[
+  L_q(Z)=q^{-1/2}\exp\bigl((1-q^{-1})Z^2/2\bigr),\qquad
+  \E L_q^2=[q(2-q)]^{-1/2}.
+\]
+The equivalent Gaussian law has covariance $Q=C+(q-1)P$. The same original
+measurable solution has an $O(h^4)$ mean remainder under this law by
+Cauchy--Schwarz and the preceding $L^2$ tail estimate. Its degree-two
+coefficient is $A_Q=A_C+(q-1)A_P<qA_P-1/96$. This is an equivalent-law
+statement, not a new stationary-model existence theorem for $Q$.
+To identify its degree-two coefficient, one can use the same regularization
+as the parent construction. If $K_\delta$ denotes the truncated temporal
+covariance and $p_\epsilon$ the spatial heat kernel, its cross-covariance
+with $Z$ is
+\[
+  m_{\epsilon,\delta}(s,x)
+  =\frac{(1-a)\int_0^1K_\delta(s-r)\ud r}{\sqrt V}
+  (p_\epsilon*F)(x).
+\]
+The bounds $0\le K_\delta\le|\,\cdot\,|^{-a}$ and $F\le4$ give
+$0\le m_{\epsilon,\delta}\le8/\sqrt V$. These profiles converge to
+$m$ at interior times. Dominated convergence on the finite-mass terminal
+wave kernel identifies the added $P$ contribution. The parent degree-two
+term converges in $L^2$, and $L_q\in L^2$ transfers its expectation to the
+equivalent law. Thus, the fixed-order Gaussian covariance identity indeed
+gives the stated $A_Q$, without invoking a homogeneous representation for
+$Q$. Consequently, discarding the residual also fails in this tilted comparison.
+A large-time bridge for specially chosen projections could still hold,
+but it must be proved at the required scale. Positive semidefinite order
+alone cannot supply it.
+
+# NG33.md
+\subsection{NG-33: check the mathematics returned by a reviewer}
+\label{S:nogo-33}
+
+A review report is also a mathematical argument and can contain an incorrect
+step. This historical record groups three such checks. The manuscript had
+the correct expressions; the examples below explain why the proposed review
+steps could not replace them. These are not three new counterexamples to the
+stochastic model.
+
+\setcounter{nogo}{32}
+\begin{nogo}[Three invalid proof steps]\label{P:nogo-33}
+  The following assertions fail.
+  \begin{enumerate}
+    \item The free phase matrix
+      $S_0(t)=\left(\begin{smallmatrix}1&t\\0&1\end{smallmatrix}\right)$
+      is a contraction in the Euclidean norm for every $t\ge0$.
+    \item For $x>0$, an integer $n\ge1$ and $0<\vartheta<1$, the series term
+      $x^n/(n!)^\vartheta$ equals
+      $A_nB_n$, where
+      \[
+        A_n=\frac{(2x^{1/\vartheta})^n}{n!},\qquad
+        B_n=2^{-\vartheta n/(1-\vartheta)}.
+      \]
+    \item The denominator $k!\,k^{(2-\alpha)k}$ may always be replaced by
+      the larger denominator $(k!)^3$ in the coefficient bound of
+      Proposition~\ref{P:low-alpha-upper}.
+  \end{enumerate}
+\end{nogo}
+
+\begin{proof}
+  The vector $(0,1)$ has norm one, but its image under $S_0(t)$ has norm
+  $\sqrt{1+t^2}>1$ for $t>0$. To transfer this to the whole-space phase,
+  use exactly the inhomogeneous Sobolev norm of
+  Section~\ref{S:wave-variance}: $E=H^{1/2}\times H^{-1/2}$ and
+  $J_0=\operatorname{diag}(\Lambda^{1/2},\Lambda^{-1/2})$, where
+  $\Lambda=(1-\Delta)^{1/2}$. With $r=|\xi|$ and
+  $\langle\xi\rangle=\sqrt{1+r^2}$, the Fourier symbol of
+  $J_0S(t)J_0^{-1}$ is
+  \[
+    \begin{pmatrix}
+      \cos(tr)&\langle\xi\rangle\sin(tr)/r\\
+      -r\sin(tr)/\langle\xi\rangle&\cos(tr)
+    \end{pmatrix}
+    \longrightarrow S_0(t)\qquad(r\downarrow0).
+  \]
+  Choose normalized Fourier bumps supported in balls shrinking to zero
+  and place them in the second coordinate of $J_0z$. Continuity of this
+  matrix at zero shows that their image norms tend to $\sqrt{1+t^2}$.
+  Thus $S(t)$ is not a contraction on this $E$. The distinction between
+  $\langle\xi\rangle$ and $|\xi|$ matters: this is not a claim about the
+  homogeneous energy norm. The valid estimate keeps a free-growth factor.
+
+  The correct identity in the second assertion is
+  $x^n/(n!)^\vartheta=A_n^\vartheta B_n^{1-\vartheta}$.
+  At $\vartheta=3/4$, $n=1$ and $x=1$, its left side is one, whereas
+  $A_1B_1=2\cdot(1/8)=1/4$. H\"older applies to the weighted product, as
+  in the proof of Proposition~\ref{P:static-phase-all-orders}.
+
+  For the third assertion choose the permitted spatial-white value
+  $\alpha=1$ and $k=3$. Then $k!k^{(2-\alpha)k}=162<216=(k!)^3$.
+  For $M>0$, an upper bound $M/162$ does not imply the smaller upper bound
+  $M/216$.
+  The valid factorial weakening is instead
+  \[
+    k!k^{(2-\alpha)k}\ge(k!)^{3-\alpha},
+  \]
+  since $k!\le k^k$ and $2-\alpha>0$; at this example its right side is
+  $36$. This proves No-go~\ref{P:nogo-33}.
+\end{proof}
+
+\paragraph{Scope and what survives.}
+The last arithmetic check refutes an inference between numerical bounds;
+it does not prove that the actual coefficient exceeds $M/216$.
+All three corrected arguments remain in the main text. Their lesson is to
+check an asserted derivation against its domains, factors and quantifiers,
+even when the report containing it has a favorable overall verdict.
+
+\paragraph{What would permit the discarded steps?}
+Contractivity needs a suitable invariant norm or a restricted state class.
+The H\"older factors need their conjugate powers. A stronger factorial
+bound needs an additional estimate; it cannot be obtained by changing the
+exponent in the denominator.
+
+# PROJECTION-CONTEXT.md
+# Rank-one projection does not permit discarding the residual
+
+Status: accepted scoped obstruction. Primary analytic/type/application review
+passed six checks HIGH at source efbdbd9; the exact common-noise source/limit
+clarification passed nine focused checks HIGH at source1787644. See
+reviews/2026-10-29-projection-residual-screen/adjudication.md.
+This is a fixed-horizon, small-coupling obstruction to a particular proposed
+lower-bound shortcut. The parent is an admissible Stratonovich HAM. It is
+not an obstruction to every covariance tilt or to the sharp asymptotic goal.
+
+## 1. The proposed consumer and the counterexample
+
+Set d=1, alpha=1/2, a=99/100, horizon T=1, terminal point x=0. Let W have
+covariance
+
+    C((s,x),(t,y))=(1-a)|s-t|^(-a)|x-y|^(-1/2).             (C)
+
+The factor1-a is a positive spatial amplitude: Gamma(x)=(1-a)|x|^(-1/2)
+is even, nonnegative, positive definite, homogeneous and locally integrable.
+The parameters satisfy alpha+a<2. These are the original model assumptions.
+For example, positive definiteness follows from the positive Gaussian-kernel
+mixture |x|^(-1/2)=Gamma(1/4)^(-1) integral_0^infinity
+v^(-3/4) exp(-v x^2)dv. The analogous Gaussian mixture works for the temporal
+power. Local integrability and polynomial growth give a tempered Radon kernel.
+
+Let psi=1_[0,1] x 1_[-1,1] be a spacetime test, let V=E[W(psi)^2], and put
+Z=W(psi)/sqrt(V). The covariance profile m(s,x)=E[W(s,x)Z], interpreted as a
+covariance with a generalized field, gives the rank-one kernel P=m tensor m.
+Gaussian projection gives W=Zm+Wperp, with independent residual Wperp and
+covariance C-P>=0 in Loewner order. P is also pointwise nonnegative.
+
+For a covariance D write A_D for its ordinary degree-two mean coefficient
+at (1,0). We prove
+
+    A_C=20000/1932951 < 1/96,
+    A_P >= 101/(3200 sqrt(2)) > 1/48.                       (A)
+
+In particular A_P-A_C>1/96. Thus Loewner positivity of the residual does not
+make its contribution to this wave mean nonnegative.
+
+For fixed1<q<2 let Q=C+(q-1)P. This is the actual variance-q tilt of the
+coordinate Z, retaining Wperp. Linearity of the degree-two coefficient gives
+
+    A_Q=A_C+(q-1)A_P < q A_P-1/96=A_(qP)-1/96.              (Q)
+
+Both C and Q are pointwise nonnegative covariance kernels. Q and P generally
+are nonstationary and nonhomogeneous; only their parent C is claimed to be
+in the original class.
+
+The comparison also fails for full means at sufficiently small positive
+noise coupling. Let u_C(h) denote the original solution with noise hW. For
+Q, use this same measurable solution functional under the equivalent
+variance-q law. For qP, use the ordinary bounded-potential mild equation
+with noise h sqrt(q) Zm. As h decreases to zero,
+
+    E_Q u_C(h)=1+h^2 A_Q+O(h^4),
+    E u_(qP)(h)=1+h^2 q A_P+O(h^4).                         (M)
+
+Consequently E_Q u_C(h)<E u_(qP)(h) for all sufficiently small h>0. The same
+argument at q=1 gives E_C u_C(h)<E u_P(h). This refutes the unconditional
+mean comparison used to discard a Loewner-positive Gaussian residual.
+
+## 2. Normalize the actual projection
+
+The noise Hilbert space has inner product induced by(C). The indicator psi
+belongs to its completion: bounded compactly supported smooth approximants
+converge by dominated convergence for the locally integrable product kernel.
+They can be chosen bounded between zero and one on a fixed compact set,
+converging to psi pointwise almost everywhere. Direct integration
+gives
+
+    E_phi=integral_[-1,1]^2 |x-y|^(-1/2) dxdy=16 sqrt(2)/3,
+    V=2 E_phi/(2-a),
+    m(s,x)=B_a(s) F(x)/sqrt(V),                             (P)
+    B_a(s)=s^(1-a)+(1-s)^(1-a),   0<=s<=1,
+    F(x)=integral_[-1,1] |x-y|^(-1/2)dy.
+
+For |x|<=1, F(x)=2(sqrt(1+x)+sqrt(1-x))>=2sqrt(2), since the square of
+the sum is at least2. It is globally bounded by4: outside[-1,1] it equals
+2(sqrt(|x|+1)-sqrt(|x|-1)), which decreases from2sqrt(2). For s in[0,1],
+B_a(s)>=s+(1-s)=1 and B_a(s)<=2. Hence m is nonnegative and bounded on
+the observation interval, and on its backward light cone
+
+    m(s,x)m(t,y) >= 8/V=4(2-a)/E_phi.                      (L)
+
+Projection positivity is a separate, elementary Gaussian Hilbert fact:
+for any test f, Var(W(f))-Cov(W(f),Z)^2>=0 by Cauchy--Schwarz. Moreover the
+Gaussian residual is orthogonal to Z, so independent. This does not imply
+that the residual kernel is pointwise nonnegative. No independence of two
+wave paths or replacement of the ordinary Stratonovich mean is being used.
+
+## 3. Compute and bound the first mean coefficient
+
+The terminal Picard kernel underlying the named prior fixed-order
+Stratonovich construction (canonical P:mixed) gives the single self-pair
+integral, with G_t(x)=1{|x|<t}/2,
+
+    A_D=integral_(0<s<t<1) integral_(R^2)
+          G_(1-t)(-y) G_(t-s)(y-z) D((s,z),(t,y)) dzdy dsdt. (I)
+
+For the added bounded profile the same formula follows directly by Wick's
+identity at positive widths and the limit justified in Section4. No time
+reversal of a nonstationary kernel is used. There is one Wick pairing and
+no factorial multiplier. For(C), integrate z
+first. The spatial factor is (t-s)^(1/2)/(1-alpha) with alpha=1/2; the
+remaining Green mass is1-t. Thus
+
+    A_C=(1-a)/(1-alpha)
+          /[(2-alpha-a)(3-alpha-a)(4-alpha-a)]
+        =20000/1932951.                                    (R)
+
+Indeed with r=t-s the time integral is
+(1/2) integral_0^1 r^(1-alpha-a)(1-r)^2 dr, equal to the reciprocal of
+the three displayed factors. The kernel is integrable since alpha+a<2.
+At the chosen parameters20000*96=1920000<1932951.
+
+For P, every contributing vertex satisfies |y|<1-t and |z|<1-s, so(L)
+applies. With covariance replaced by the constant one, the integral(I) is
+
+    integral_(0<s<t<1) (1-t)(t-s) dsdt=1/24.
+
+It follows that
+
+    A_P >= [4(2-a)/E_phi]/24=(2-a)/(32sqrt(2))
+          =101/(3200sqrt(2)) > 1/48.                        (B)
+
+The last strict inequality follows from sqrt(2)<3/2 and101>100. This proves
+(A), and linearity gives(Q). The local ProjectionResidual scalar consumer
+checks the actual rational/square-root gap and its affine tilted-coefficient
+application; the Gaussian, cone and integral identifications are outside Lean.
+
+## 4. Pass to full means without assuming a new Q-model theorem
+
+Write the original ordinary Stratonovich expansion at (1,0) as
+u_C(h)=sum_(n>=0) h^n X_n. Named prior inputs are canonical P:mixed and the
+parent construction: nonnegative mixed moments, convergence in L2 and
+finiteness for every amplified homogeneous covariance. Fix r>1 and
+B_r=E|u_C(r)|^2<infinity. Apply P:mixed to the admissible covariance r^2 C.
+The same-noise n-linearity identifies its coefficients with r^n X_n, so its
+nonnegative mixed series contains r^(2n) E X_n^2. This gives the following
+bound directly, without the uniform-regularization premise of the separate
+L:uniform-series-tail:
+
+    ||X_n||_2 <= sqrt(B_r) r^(-n),
+    ||sum_(n>=4) h^n X_n||_2
+       <= sqrt(B_r) (|h|/r)^4/(1-|h|/r),   |h|<r.           (T)
+
+The variance-q density is
+
+    L_q(Z)=q^(-1/2) exp((1-1/q) Z^2/2),
+    E L_q=1,   E L_q^2=[q(2-q)]^(-1/2),  1<q<2.           (D)
+
+These are the elementary one-coordinate Gaussian integrals already screened
+in the earlier variance-tool work. Cauchy--Schwarz transfers(T) to an O(h^4)
+L1 remainder under this density. The tilted law is Gaussian with covariance
+Q and is equivalent to the parent, so the original measurable solution is
+well-defined under it. Global sign symmetry kills odd-order expectations.
+The fixed-order Wick identity gives E_Q X_2=A_Q: at positive regularization
+widths this is the ordinary Gaussian covariance formula; L2 parent
+convergence and L_q in L2 pass the expectation to the limit. The projection
+profiles use the source's common-noise temporal Laplace cutoff and spatial
+heat average, not temporal convolution. Explicitly, with K_delta the
+truncated temporal covariance of current author(2.9)--(2.11),
+
+    m_(epsilon,delta)(s,x)
+      = [(1-a) integral_0^1 K_delta(s-r)dr]
+          (p_epsilon*F)(x)/sqrt(V).
+
+The bound0<=K_delta<=|.|^(-a), together with F<=4 globally and the
+unit mass of p_epsilon, gives0<=m_(epsilon,delta)<=8/sqrt(V), and
+the profiles converge to m at interior times and every spatial point by
+monotone convergence in the temporal factor and the heat approximate
+identity for bounded continuous F. Thus the P integral passes by dominated
+convergence on the finite-mass terminal kernel. The source coupling, cross-
+covariance with Z and this exact limit are detailed in the accompanying
+regularization addendum. Therefore the first line of(M) follows. We do not
+invoke Chen's stationary representation for the nonstationary Q.
+
+For qP, m is bounded by some M on[0,1] x R. Deterministic Picard iteration
+has coefficients d_n with |d_n|<=M^n/(2n)! at horizon one, by the Green mass
+identity integral G_t=t and induction. With noise h sqrt(q) Zm, the absolute
+mean series is bounded by E cosh(sqrt(M sqrt(q)|Z|)) at |h|<=1. It is finite:
+sqrt(v)<=1+v and the Gaussian has all exponential moments of |Z|. Factoring
+|h|^4 from its tail gives O(h^4); odd Gaussian powers vanish. Its degree-two
+term is q A_P. This proves the second line of(M), hence the strict full-mean
+comparison for small h. This proves the stated obstruction.
+
+## 5. What remains for a useful large-time lower bridge
+
+The known finite-coordinate density mechanism itself is not disproved. For
+an N-dimensional orthogonal Gaussian projection P_T and fixed1<q<2 it gives
+
+    E u_C(T,x)^2 >= [q(2-q)]^(N/2) [E_Q u_C(T,x)]^2,
+    Q=C+(q-1)P_T.                                         (F)
+
+A sufficient MODEL-specific bridge would require, for each fixed q in(1,2)
+and each tolerance delta>0, projections of ranks N_T=o(T^kappa) for which
+the modified mean is eventually positive and
+
+    liminf_(T->infinity) T^(-kappa) log E_Q u_C(T,x)
+       >= q^(1/(3-alpha)) ell-delta.                        (H)
+
+Here ell>0 must be an independently valid first-mean lower constant. Applying
+this to the original sharp target requires its intended source constant;
+no correction of the recorded printed normalization discrepancy is adopted.
+If(H) held, (F) would give the lower factor2^(1+1/(3-alpha)) by first taking
+T to infinity, then delta to zero and q up to2. No q(T)->2 substitution or
+uniform q estimate is needed. This is only the missing micro-contract, not
+a proof of(H) or the original conjectured sharp constant.
+
+The new counterexample shows why(H) cannot be replaced by the unconditional
+instruction 'discard the independent residual and use qP'. It does not rule
+out specially chosen projections, a leading-order comparison or a different
+model-specific route. The failed deterministic-surrogate mean-shift argument
+is a separate recorded shortcut. No Skorohod result is developed here: this
+obstruction uses the ordinary Stratonovich self-pair contribution to the mean.
+No new general existence, all-order sharpness, novelty or circulation claim.
+
+# TARGET.md
+Review the complete five numbered no-go entries in NG13.md, NG16.md, NG18.md, NG19.md and NG33.md. They are the required targets, including statements, full proofs and scope paragraphs. Every supplied Markdown file is below the tool Read cap; read each completely.
+
+# WAVE-FACTORIAL-CONTEXT.md
+# Exact phase and unitary normalization
+\subsection{Forms on the full phase}
+
+Choose and fix $T > 0$. Set $\Lambda = (1-\Delta)^{1/2}$, $s = 1/2$ and $E_r =
+H^r(\R^d)\times H^{r-1}(\R^d)$. On the complexification of $E = E_s$, use inner
+products linear in the first slot. The map
+\[
+  Jz(\xi) = \left(\langle\xi\rangle^{1/2}\widehat{z}_1(\xi),
+  \langle\xi\rangle^{-1/2}\widehat{z}_2(\xi)\right)
+\]
+is unitary onto $L^2(\R^d;\mathbb{C}^2)$. The full massless wave group has
+Fourier matrix
+\begin{equation}\label{E:variance-free-matrix}
+  S(t,\xi) =
+  \begin{pmatrix}
+    \cos(t|\xi|) & \sin(t|\xi|)/|\xi|\\
+    -|\xi|\sin(t|\xi|) & \cos(t|\xi|)
+  \end{pmatrix},
+\end{equation}
+where the sine quotient is $t$ at zero. Let $B(b)(u,v) = (0,bu)$. Choose and fix
+a real even nonnegative $\zeta \in C_c^\infty(\R^d)$ equal to one on $B_1$ and
+zero off $B_2$, and put $\zeta_R(x) = \zeta(x/R)$ for $R > 0$. For $I =
+[t_0,t_0+h] \subset [0,T]$, $0 < h \le 1$, and Schwartz phases $z,w$, put
+\begin{align}
+  v_z(t) &= [S(t)z]_1,
+  \label{E:variance-displacement}\\
+  G_w(t) &= -\frac{\sin(t|D|)}{|D|}\Lambda w_1
+  +\cos(t|D|)\Lambda^{-1}w_2,
+  \label{E:variance-dual-wave}\\
+  F_{z,w}(t,x) &= 1_I(t)v_z(t,x)\overline{G_w(t,x)},
+  \qquad \ell_R(I;z,w) = W_{\mathbb{C}}(\zeta_RF_{z,w}),
+  \label{E:variance-actual-form}
+\end{align}
+where $W_{\mathbb{C}}(F) = W(\operatorname{Re}F)+iW(\operatorname{Im}F)$. There
+is no observation cutoff in this definition.
+
+We first assume $\Gamma \ne 0$. If $\Gamma = 0$, all forms and the column maps
+below are zero, so their bounds hold directly. For the nonzero case, let $\nu_R$
+be~\eqref{E:masked-auxiliary-measure} and set
+\begin{equation}\label{E:variance-actual-growth-constant}
+  L_\zeta = \|\widehat{\zeta}\|_1,\qquad
+  C_\nu = c_d^2L_\zeta^2C_\Gamma.
+\end{equation}
+Proposition~\ref{P:masked-auxiliary-norm} gives a positive even tempered Radon
+measure with $\nu_R(B(y,r)) \le C_\nu r^\alpha$, uniformly in $R$.
+
+
+# P:low-alpha-upper
+\begin{proposition}[Upper bound for $\alpha \le 1$]\label{P:low-alpha-upper}
+  Suppose that Hypothesis~\ref{H:homog} and the standing covariance positivity
+  assumptions hold, $d \in \{1,2,3\}$, $0 < \alpha \le 1$, and $V > 0$. Define
+  \begin{equation}\label{E:low-alpha-constants}
+    \begin{split}
+      K_{\rm sp}^{\rm gen}
+      &=\begin{cases}
+        \displaystyle\frac{V2^{2-\alpha}(1-\alpha)^{-\alpha}}
+        {(2-\alpha)^{2-\alpha}},&0<\alpha<1,\\[2mm]
+        \pi V,&\alpha=1,
+      \end{cases}\\
+      C_2^{\rm gen}&=q(2ZK_{\rm sp}^{\rm gen})^{1/q}.
+    \end{split}
+  \end{equation}
+  With the same $A_k$, $b$, $q$, $\beta$, and $Z$ as above, for
+  $k \ge 1$ and $t > 0$,
+  \begin{equation}\label{E:low-alpha-coefficient}
+    A_k(t)\le\frac{(2ZK_{\rm sp}^{\rm gen})^k t^{\beta k}}
+    {k!\,k^{bk}}
+    \le\frac{(2ZK_{\rm sp}^{\rm gen})^k t^{\beta k}}{(k!)^q},
+    \qquad
+    \E u^2(t,x)\le\exp(C_2^{\rm gen}t^\kappa).
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  First smooth the noise as in~\cite{chen:author2026:time-dependency}*{(2.9), (2.11), (2.23)--(2.24)}.
+  In dimension three also use $G_{h,\eta}$ with $\eta > 0$, as in the
+  source's pp.~13--14. The increment change of variables is now a
+  triangular map on vectors in $\R^d$, still of determinant one.
+  The descending-label proof of Lemma~\ref{L:d1-spatial} depends only
+  on which increments enter each position, not on their dimension.
+  Its invariant therefore remains valid: at a closing label there
+  is exactly one covariance depending on that vector increment, and
+  at an opening label its pair has already been removed.
+  If $0 < \alpha < 1$, Lemma~\ref{L:low-alpha-convolution} gives the
+  closing bound $Mh_l^{1-\alpha}$ with $M = V/(1-\alpha)$.
+  At $\alpha = 1$, Lemma~\ref{L:alpha-one-convolution} gives the
+  constant closing bound $M = \pi V/2$. Every opening gives mass
+  $h_l$, uniformly in $\eta$ and all noise-smoothing parameters.
+  For $\alpha < 1$, the same weighted arithmetic--geometric mean
+  calculation gives
+  \[
+    M^k\prod_{i\in O_D}h_i\prod_{j\in C_D}h_j^{1-\alpha}
+    \le (K_{\rm sp}^{\rm gen})^k\frac{t^{bk}}{k^{bk}}.
+  \]
+  At $\alpha = 1$, ordinary arithmetic--geometric mean on the $k$ opening
+  increments gives $M^k\prod_{i\in O_D}h_i \le (2M)^kt^k/k^k$, which is the same
+  bound with $b = 1$ and $K_{\rm sp}^{\rm gen} = \pi V$. Both cases use
+  $\sum_lh_l \le 2t$. For $d = 1,2$ one may use the Green densities directly;
+  their opening mass and closing convolution obey these same bounds.
+
+  Replace the nonnegative truncated temporal factors by $|s_i-s_j|^{-\alpha_0}$
+  before taking their pairing sum. The temporal symmetry, cube integral and
+  split count in~\eqref{E:d1-time-symmetry} do not involve the spatial
+  dimension. Thus, exactly the multiplication of counts in the proof of
+  Proposition~\ref{P:d1-upper} gives the first bound
+  in~\eqref{E:low-alpha-coefficient} for the regularized moments.
+
+  We spell out the limit in dimension three. Fix every noise-smoothing parameter
+  and first let $\eta\downarrow0$. At each time vector, the Gaussian moment
+  formula is a finite sum of bounded continuous products of the smoothed
+  covariance functions, integrated against products of the finite Green
+  measures. These products of measures converge weakly as $\eta\downarrow0$,
+  with the same masses $\prod_l h_l$. At fixed noise smoothing the Gaussian
+  covariance factors are uniformly bounded, so a constant times $\prod_lh_l$
+  dominates on each bounded time simplex. Dominated convergence applies also to
+  the covariance between two approximations with different $\eta$ values. The
+  resulting common joint covariance limit proves the $L^2$ Cauchy property of
+  each fixed-order random integral. This is the inner limit used in the source's
+  definition on pp.~13--14. Products of two factors converge in $L^1$ by
+  Cauchy--Schwarz, so the moment inequality survives this limit. Next send the
+  noise-smoothing parameters to zero using the fixed-order $L^2$ convergence of
+  Lemma~\ref{L:joint-fixed-order}, and again pass products in $L^1$. In
+  dimensions one and two only the latter limit is required. The bounds at both
+  stages are uniform.
+
+  We have proved the first coefficient bound for $A_k(t)$. The factorial
+  inequality and nonnegative-series argument in Proposition~\ref{P:d1-upper}
+  apply unchanged, with $K_{\rm sp}^{\rm gen}$ in place of $K_{\rm sp}$ and $A_0
+  = 1$. This proves Proposition~\ref{P:low-alpha-upper}.
+\end{proof}
+# P:static-phase-all-orders
+\begin{proposition}[All regularized static phase orders]
+  \label{P:static-phase-all-orders}
+  Retain the full covariance class of Section~\ref{S:static-phase}. For real
+  Schwartz $f,g$, let $Z_n^\epsilon(h)$ be the $n$th regularized static Duhamel
+  phase, with the recursion \eqref{E:phase-duhamel} for every $n \ge 0$. This is
+  an ordinary Gaussian polynomial of degree at most $n$, including
+  self-contractions; it is not a pure Wick chaos. There is an explicit finite
+  constant
+  \[
+    A_\alpha=\frac{400\sqrt2\,e^2}{\delta_{\alpha/2}}
+  \]
+  such that, for $n \ge 1$, uniformly in $\epsilon > 0$,
+  \begin{equation}\label{E:all-static-phase-orders}
+    \|Z_n^\epsilon(h)\|_{L^2(\Omega;X_{1/h})}
+    \le
+    \frac{(A_\alpha\sqrt{R_\alpha})^n
+    h^{(4-\alpha)n/2}}{(n!)^{(3-\alpha)/2}}
+    \|(f,g)\|_{1/h}.
+  \end{equation}
+  At every fixed positive smoothing and real coupling $\sigma$,
+  $\sum_{n\ge0}\sigma^nZ_n^\epsilon(h)$ converges in $L^2$ phase. Its squared
+  norm is at most
+  \begin{equation}\label{E:all-static-phase-sum}
+    (\sqrt e+2)^2
+    \exp\left\{6A_\alpha^{2/(3-\alpha)}
+    (|\sigma|^2R_\alpha)^{1/(3-\alpha)}
+    h^{(4-\alpha)/(3-\alpha)}\right\}\|(f,g)\|_{1/h}^2.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  If $R_\alpha = 0$, spectral homogeneity gives $\mu = 0$, and every
+  positive-order term is zero. Assume $R_\alpha > 0$. First work at finite
+  Gaussian cutoff $m$, degree cutoff $N$ and spatial band $b$, with initial
+  phase $S_b(f,g)$ times the Gaussian vacuum $1$. All relevant operators are
+  bounded. Lemmas~\ref{L:fock-form} and~\ref{L:complex-phase}, with $a =
+  \alpha/2$, give a bound $100e^{2\lambda h}$ on the complex coupling circle of
+  radius $\delta_{\alpha/2}\lambda^{2-\alpha/2}/d_N$.
+
+  The four phase entries are entire in the coupling, by the power series for
+  $\cos(h\sqrt L)$ and $\sin(h\sqrt L)/\sqrt L$ of a bounded $L$. Cauchy's
+  formula for their operator-valued series bounds the $n$th coefficient by
+  \[
+    100e^{2\lambda h}
+    \left(\frac{d_N}
+    {\delta_{\alpha/2}\lambda^{2-\alpha/2}}\right)^n
+    \|S_b(f,g)\|_\lambda .
+  \]
+  The coefficient is exactly the $n$th Duhamel phase from the vacuum. Apply
+  Lemma~\ref{L:finite-word-cutoff} with one color, $N = n$, the spatial phase
+  Hilbert space as $\mathscr{X}$, and its free wave operators as the $F_l$. It
+  identifies each cutoff Duhamel word exactly with its uncompressed word,
+  including self-contractions. Dominated time integration preserves this
+  identity.
+
+  Choose $\lambda = n/h$. For any phase $z$, $\|z\|_{1/h} \le n\|z\|_{n/h}$ and
+  $\|(f,g)\|_{n/h} \le \|(f,g)\|_{1/h}$. Also $d_n \le
+  2\sqrt{2n}\sqrt{R_\alpha}$. The preceding bound is therefore at most
+  \[
+    100n\left(\frac{2\sqrt2 e^2}{\delta_{\alpha/2}}\right)^n
+    R_\alpha^{n/2}h^{(4-\alpha)n/2}
+    n^{-(3-\alpha)n/2}\|(f,g)\|_{1/h}.
+  \]
+  Since $100n \le 200^n$ and $n! \le n^n$, this gives
+  \eqref{E:all-static-phase-orders} at the cutoffs.
+
+  We justify removal of those cutoffs at fixed $\epsilon$ and $n$. On Gaussian
+  degrees at most $N$, the unweighted field multiplication has norm at most
+  $2\sqrt{N+1}\sqrt{v_\epsilon}$, uniformly in $m$, by the same
+  creation/annihilation argument applied pointwise in $x$. It follows that the
+  noise phase insertion $(u,v)\mapsto(0,W_\epsilon u)$, between the required
+  finite degree levels, is bounded on $X_\lambda$ by this constant divided by
+  $\lambda$. Free phase evolution is bounded by $e^{\lambda h/2}$. For finite
+  $m$, $S_b \to I$ strongly and commutes with the free propagator. Each fixed
+  Duhamel word therefore converges strongly as $b \to \infty$, by dominated time
+  integration.
+
+  Next let $m \to \infty$ on the full Gaussian space. The truncated field
+  multiplications converge strongly between finite degree levels. To see this,
+  first take a vector depending on finitely many Gaussian coordinates. The
+  annihilation tail is then zero, while the creation tail is bounded by a
+  constant times
+  \[
+    \left(\int\sum_{i>m}e_i(x)^2\|F(x)\|^2\ud x\right)^{1/2},
+  \]
+  which tends to zero by dominated convergence, since the sum is bounded by
+  $v_\epsilon$. Such vectors are dense; the uniform multiplication bound extends
+  strong convergence to all vectors in those degree levels. Dominated time
+  integration again gives convergence of every fixed word. The limit is
+  precisely $Z_n^\epsilon$, so the estimate survives both limits. We assert no
+  zero-smoothing phase limit in this argument.
+
+  Finally, put $\beta = (3-\alpha)/2 \in (1/2,3/2)$ and $x =
+  A_\alpha|\sigma|\sqrt{R_\alpha}h^{(4-\alpha)/2}$. The elementary series
+  satisfies
+  \[
+    \sum_{n\ge0}\frac{x^n}{(n!)^\beta}
+    \le2e^{3x^{1/\beta}}.
+  \]
+  For $\beta \ge 1$, this follows from $\sum a_n^\beta \le (\sum a_n)^\beta$
+  with $a_n = x^{n/\beta}/n!$. For $\beta < 1$, apply H\"older to
+  $((2x^{1/\beta})^n/n!)^\beta (2^{-\beta n/(1-\beta)})^{1-\beta}$. The second
+  geometric sum is at most two. Since $\|Z_0(h)\|_{1/h} \le \sqrt
+  e\|(f,g)\|_{1/h}$, absolute $L^2$ summation and squaring give
+  \eqref{E:all-static-phase-sum}. This proves
+  Proposition~\ref{P:static-phase-all-orders}.
+\end{proof}
+# Complete direct-bound section, including b=2-alpha and upstream convolution lemmas
+\section{Upper bounds for spatial exponents at most one}\label{S:d1-upper}
+
+The upper bound at scale $t^\kappa$ is proved for $0 < \alpha \le 1$ in
+dimensions one, two and three under the standing assumptions. The separate
+one-dimensional Riesz estimates retain their sharper constants and white
+endpoint. Degree-one covariance in dimensions two and three does not mean full
+spatial white noise. Section~\ref{S:interval-upper} treats the higher exponents
+by a separate argument. The intrinsic constant is identified  in
+Theorem~\ref{T:intrinsic-second-moment}.
+
+We retain the two-chain expansion of Proposition~\ref{P:mixed}, but estimate its
+spatial and temporal factors in a different order. The spatial estimate keeps a
+power of the number of pairs. After taking a common spatial maximum, we sum all
+temporal pairings before using the ordered time domains.
+
+Throughout this section $0 < \alpha_0 < 1$. We first work in dimension one with
+either of the spatial covariances
+\begin{equation}\label{E:d1-covariances}
+  \begin{cases}
+    \gamma(y)=c_\alpha|y|^{-\alpha},&0<\alpha<1,\quad c_\alpha>0,\\
+    \gamma=c_\delta\delta_0,&\alpha=1,\quad c_\delta>0.
+  \end{cases}
+\end{equation}
+Put $b = 2-\alpha$, $q = 3-\alpha$, $\beta = 4-\alpha-\alpha_0$, and
+\begin{equation}\label{E:d1-constants}
+  Z=\frac{2}{(1-\alpha_0)(2-\alpha_0)},\qquad
+  K_{\rm sp}=
+  \begin{cases}
+    \displaystyle\frac{c_\alpha 2^{2-\alpha}(1-\alpha)^{-\alpha}}
+    {(2-\alpha)^{2-\alpha}},&0<\alpha<1,\\[2mm]
+    c_\delta,&\alpha=1.
+  \end{cases}
+\end{equation}
+These parameters satisfy Hypothesis~\ref{H:homog}, so the fixed-order
+integrability and mixed expansion already established apply.
+
+\subsection{A spatial bound retaining the ordered increments}
+
+For $m+n = 2k$, label the two chains in block order as in~\eqref{E:mixed-diagram}. For each vertex $l$ write
+$h_l = s_l-s_{p(l)} > 0$ and $y_l = x_l-x_{p(l)}$, with a separate root zero
+in each chain. Thus, $x_l$ is the sum of increments in its own chain
+up to label $l$. The spatial change of variables has determinant one.
+In this section $x_l$ denotes a spatial position and $y_l$ its increment; this local
+notation differs from the position variables $y_l$
+in~\eqref{E:mixed-diagram}. The terminal evaluation point of $u(t,x)$
+remains denoted by $x$.
+Let $p_\epsilon$ be the centered Brownian Gaussian density of variance
+$\epsilon$ and mass one, and set
+$\gamma_\epsilon = p_\epsilon*\gamma$. Allow a separate positive
+$\epsilon_e$ for every pair $e \in D$ and define
+\[
+  S_{D,\boldsymbol\epsilon}(h)
+  =\int_{\R^{2k}}\prod_{l=1}^{2k}G(h_l,y_l)
+  \prod_{(i,j)\in D}\gamma_{\epsilon_{i,j}}(x_j-x_i)\ud y,
+  \qquad G(h,y)=\tfrac12\mathbf1_{\{|y|<h\}}.
+\]
+This is an ordinary nonnegative integral; no pointwise delta value is used.
+
+\begin{lemma}[Spatial estimate]\label{L:d1-spatial}
+  Suppose~\eqref{E:d1-covariances} holds, $k \ge 1$, and $D$ is any pairing of
+  the two chains. Orient every pair $(i,j)$ by $i < j$ and let $O_D$ and $C_D$
+  be its opening and closing label sets. Then, uniformly in
+  $\boldsymbol\epsilon$,
+  \begin{equation}\label{E:d1-spatial-product}
+    S_{D,\boldsymbol\epsilon}(h)\le
+    \begin{cases}
+      \displaystyle\left(\frac{c_\alpha}{1-\alpha}\right)^k
+      \prod_{i\in O_D}h_i\prod_{j\in C_D}h_j^{1-\alpha},
+      &0<\alpha<1,\\[2mm]
+      \displaystyle\left(\frac{c_\delta}{2}\right)^k
+      \prod_{i\in O_D}h_i,&\alpha=1.
+    \end{cases}
+  \end{equation}
+  In particular, if $\sum_{l=1}^{2k}h_l \le 2t$, then
+  \begin{equation}\label{E:d1-spatial-max}
+    S_{D,\boldsymbol\epsilon}(h)
+    \le K_{\rm sp}^{\,k}\frac{t^{bk}}{k^{bk}}.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We first record the convolution bounds. For $0 < \alpha < 1$, the
+  integral of the even decreasing function $|y|^{-\alpha}$ over an
+  interval of fixed length is maximal when the interval is centered
+  at zero. Therefore,
+  \[
+    \sup_z\int_\R G(h,y)c_\alpha|y+z|^{-\alpha}\ud y
+    =\frac{c_\alpha h^{1-\alpha}}{1-\alpha}.
+  \]
+  By Tonelli's theorem, the integral with $\gamma_\epsilon$ equals the
+  $p_\epsilon(w)\ud w$ average of the unsmoothed integrals with shifts $z-w$.
+  Its nonnegative mass-one average is therefore bounded by the same supremum. In
+  the white case, $\gamma_\epsilon = c_\delta p_\epsilon$, so
+  \[
+    \sup_z\int_\R G(h,y)\gamma_\epsilon(y+z)\ud y
+    \le\frac{c_\delta}{2}.
+  \]
+  Both estimates are uniform in $\epsilon > 0$.
+
+  Now integrate \emph{all} spatial increments in descending label order
+  $2k,2k-1,\ldots,1$. Before processing label $l$, the remaining covariance
+  factors are exactly those pairs whose closing labels are at most $l$; the
+  bounds from the removed pairs depend only on $h$. If $l \in C_D$, its pair is
+  $(i,l)$ with $i < l$ and $x_l-x_i = y_l+z$, where $z$ is independent of $y_l$.
+  Every other remaining pair has both endpoints smaller than $l$, so its two
+  positions are independent of $y_l$: positions involve only earlier increments
+  in their own block chain. Thus, the only covariance involving $y_l$ is its own
+  pair, and the convolution bound removes it. If $l \in O_D$, its partner has a
+  larger label and its covariance factor has already been removed. All remaining
+  covariances have endpoints smaller than $l$, so integration of $y_l$ gives
+  only $\int G(h_l,y_l)\ud y_l = h_l$. This also preserves the stated invariant
+  for the next label. Tonelli's theorem and the nonnegativity of all factors
+  justify each step. There are $k$ labels of each type,
+  proving~\eqref{E:d1-spatial-product} for every split and pairing.
+
+  For Riesz covariance, weighted arithmetic--geometric mean gives
+  \[
+    \prod_{i\in O_D}h_i\prod_{j\in C_D}h_j^{1-\alpha}
+    \le\left(\frac{2t}{bk}\right)^{bk}
+    (1-\alpha)^{(1-\alpha)k}.
+  \]
+  Indeed, the weights are one at the $k$ openings and $1-\alpha$ at the $k$
+  closings, with total $bk$, and the sum of the increments is at most $2t$.
+  Multiplication by $(c_\alpha/(1-\alpha))^k$ gives~\eqref{E:d1-spatial-max}
+  with the stated $K_{\rm sp}$. In the white case, $\prod_{i\in O_D}h_i \le
+  (2t/k)^k$; multiplying by $(c_\delta/2)^k$ gives the same conclusion with $b =
+  1$ and $K_{\rm sp} = c_\delta$. This proves Lemma~\ref{L:d1-spatial}.
+\end{proof}
+
+\subsection{Summing temporal pairings before using time ordering}
+
+Define the total-order coefficients
+\[
+  A_k(t)=\sum_{m=0}^{2k}\E[X_m(t,x)X_{2k-m}(t,x)],\qquad A_0(t)=1.
+\]
+They do not depend on $x$, by spatial stationarity. By
+Proposition~\ref{P:mixed}, $\E u^2(t,x) = \sum_{k\ge0}A_k(t)$.
+
+\begin{proposition}[One-dimensional upper bound]\label{P:d1-upper}
+  Under~\eqref{E:d1-covariances}, for every $k \ge 1$ and $t > 0$,
+  \begin{equation}\label{E:d1-coefficient}
+    A_k(t)\le
+    \frac{(2ZK_{\rm sp})^k t^{\beta k}}{k!\,k^{bk}}
+    \le\frac{(2ZK_{\rm sp})^k t^{\beta k}}{(k!)^q}.
+  \end{equation}
+  Consequently,
+  \begin{equation}\label{E:d1-upper}
+    \E u^2(t,x)\le\exp(C_2t^\kappa),\qquad
+    C_2=q(2ZK_{\rm sp})^{1/q},\quad \kappa=\frac{\beta}{q}.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  We first work with the Gaussian spatial smoothing and temporal truncation
+  in~\cite{chen:author2026:time-dependency}*{(2.9), (2.11), (2.23)--(2.24)}. Let
+  $X_n^{\epsilon,\delta}$ be the smoothed Stratonovich term, using common
+  parameters in every factor. Wick's formula expresses each mixed expectation of
+  total order $2k$ as a sum over $D \in \Pi_k$. After the chain reversal in
+  Proposition~\ref{P:mixed}, its spatial factor is the one in
+  Lemma~\ref{L:d1-spatial}; its temporal factors are nonnegative and bounded by
+  $|s_i-s_j|^{-\alpha_0}$. For times in $[0,t]^m_ < \times[0,t]^{2k-m}_ <$, the
+  increments sum to the two terminal times and therefore to at most $2t$.
+  Extract~\eqref{E:d1-spatial-max}, which is independent of the time vector, the
+  split, the pairing, and the smoothing parameters. The remaining temporal sum
+  is
+  \[
+    F_k(s_1,\ldots,s_{2k})
+    =\sum_{D\in\Pi_k}\prod_{(i,j)\in D}|s_i-s_j|^{-\alpha_0}.
+  \]
+  Every permutation of the $2k$ labels bijects $\Pi_k$, so $F_k$ is fully
+  symmetric. Moreover,
+  \[
+    \int_{[0,t]^2}|s-r|^{-\alpha_0}\ud s\ud r
+    =Zt^{2-\alpha_0},\qquad
+    \int_{[0,t]^{2k}}F_k(s)\ud s
+    =P_k(Zt^{2-\alpha_0})^k<\infty.
+  \]
+  The second equality uses the disjoint endpoints of every pairing. Partitioning
+  the time cube according to the order within each block now gives
+  \begin{equation}\label{E:d1-time-symmetry}
+    \int_{[0,t]^m_<\times[0,t]^{2k-m}_<}F_k(s)\ud s
+    =\frac{P_k(Zt^{2-\alpha_0})^k}{m!(2k-m)!}.
+  \end{equation}
+  Ties have measure zero. Crucially, this symmetry is applied to the \emph{sum}
+  of pairings after taking the common spatial bound, not to an individual
+  temporally weighted diagram.
+
+  The number of pairings obeys $P_0 = 1$ and $P_k = (2k-1)P_{k-1}$, by choosing
+  the partner of the smallest label. Hence, $P_k = (2k)!/(2^kk!)$. The binomial
+  identity gives
+  \[
+    \sum_{m=0}^{2k}\frac1{m!(2k-m)!}=\frac{2^{2k}}{(2k)!}.
+  \]
+  Multiplying~\eqref{E:d1-time-symmetry} by the spatial bound and summing over
+  $m$ yields
+  \[
+    \sum_{m=0}^{2k}\E[X_m^{\epsilon,\delta}X_{2k-m}^{\epsilon,\delta}]
+    \le K_{\rm sp}^{\,k}\frac{t^{bk}}{k^{bk}}
+    \frac{2^{2k}}{(2k)!}
+    \frac{(2k)!}{2^kk!}(Zt^{2-\alpha_0})^k
+    =\frac{(2ZK_{\rm sp})^kt^{\beta k}}{k!\,k^{bk}}.
+  \]
+  The same proof covers empty chains, with $X_0^{\epsilon,\delta} = 1$.
+
+  By Lemma~\ref{L:joint-fixed-order}, each smoothed factor converges in $L^2$.
+  Products converge in $L^1$ by Cauchy--Schwarz; for fixed $k$ the sum over
+  splits is finite. The bound is uniform in $\epsilon,\delta$, so it passes to
+  $A_k(t)$. Since $k! \le k^k$ and $b > 0$, we have $k!\,k^{bk} \ge (k!)^{b+1} =
+  (k!)^q$, proving both inequalities in~\eqref{E:d1-coefficient}.
+
+  Finally, for $z \ge 0$ and $q \ge 1$,
+  \[
+    \sum_{k\ge0}\frac{z^k}{(k!)^q}
+    =\sum_{k\ge0}\left(\frac{z^{k/q}}{k!}\right)^q
+    \le\left(\sum_{k\ge0}\frac{z^{k/q}}{k!}\right)^q
+    =\exp(qz^{1/q}).
+  \]
+  Apply this inequality with $z = 2ZK_{\rm sp}t^\beta$, adding the separately
+  defined term $A_0 = 1$. Proposition~\ref{P:mixed} then
+  gives~\eqref{E:d1-upper}. This proves Proposition~\ref{P:d1-upper}.
+\end{proof}
+
+\subsection{Spectral bounds for $0 < \alpha \le 1$ in all three dimensions}
+
+We now retain Hypothesis~\ref{H:homog} with $d \in \{1,2,3\}$ and $0 < \alpha
+\le 1$. The covariance is nonnegative and nonnegative definite as in
+Section~\ref{S:model}; when it is a distribution, both these properties and its
+homogeneity are understood distributionally. Let $\mu$ be its positive Radon
+spectral measure in the convention $\gamma(x) = \int e^{i\xi\cdot
+x}\mu(\ud\xi)$, and put $V = \mu(\{\xi:|\xi|\le1\})$. No isotropy or spectral
+density is assumed. Write $G_h$ for the positive wave-kernel measure of mass
+$h$, and $G_{h,\eta} = p_\eta*G_h$ for $\eta > 0$; set $G_{h,0} = G_h$. The
+measure notation includes the sphere kernel in dimension three. The mixed-moment
+definition of $A_k(t)$ is now applied to the present $d$-dimensional solution.
+
+\begin{lemma}[Low-$\alpha$ convolution bound]\label{L:low-alpha-convolution}
+  Under the preceding assumptions with $0 < \alpha < 1$, for every $R,h > 0$,
+  \begin{equation}\label{E:low-alpha-radial}
+    \mu(\{\xi:|\xi|\le R\})=VR^\alpha,\qquad
+    \int_{\R^d}\min\{h,|\xi|^{-1}\}\mu(\ud\xi)
+    =\frac{V}{1-\alpha}h^{1-\alpha}.
+  \end{equation}
+  For $\epsilon > 0$ and $\eta \ge 0$,
+  \begin{equation}\label{E:low-alpha-convolution}
+    0\le\int_{\R^d}G_{h,\eta}(\ud y)\gamma_\epsilon(y+z)
+    \le\frac{V}{1-\alpha}h^{1-\alpha},
+    \qquad z\in\R^d.
+  \end{equation}
+  The estimate is uniform in both smoothing parameters and in $z$.
+\end{lemma}
+
+\begin{proof}
+  The spectral measure of $\gamma(c\,\cdot)$ is the pushforward of $\mu$ under
+  $\xi\mapsto c\xi$. Homogeneity and uniqueness of the Fourier transform on
+  tempered distributions therefore give $\mu(A/c) = c^{-\alpha}\mu(A)$ for every
+  Borel set $A$. Equivalently, $\mu(cA) = c^\alpha\mu(A)$. This proves the
+  ball-mass formula. Since $\mu$ is Radon, $V < \infty$, and continuity from
+  above gives $\mu(\{0\}) = \lim_{R\downarrow0}VR^\alpha = 0$. By the layer-cake
+  identity and Tonelli's theorem,
+  \[
+    \int_{\R^d}\min\{h,|\xi|^{-1}\}\mu(\ud\xi)
+    =\int_0^h\mu(\{\xi:|\xi|\le u^{-1}\})\ud u
+    =V\int_0^h u^{-\alpha}\ud u.
+  \]
+  The endpoint of each indicator has no effect on its $u$ integral. Since
+  $\alpha < 1$, the last expression is the finite quantity
+  in~\eqref{E:low-alpha-radial}. This computation uses ball masses, not a radial
+  density for $\mu$.
+
+  Gaussian weighting gives a finite measure, by the polynomial ball growth of
+  $\mu$. Thus, Fourier Fubini is justified for $\gamma_\epsilon$ and the finite
+  measure $G_{h,\eta}$. From the source's wave-kernel
+  formulas~\cite{chen:author2026:time-dependency}*{(2.3)--(2.5), p.~7},
+  \[
+    \widehat{G}_h(\xi)=\frac{\sin(h|\xi|)}{|\xi|},\qquad
+    G_h(\R^d)=h,
+  \]
+  with value $h$ in the Fourier formula at zero. The Fourier multipliers of
+  $p_\epsilon$ and $p_\eta$ have absolute value at most one, with the latter
+  multiplier equal to one when $\eta = 0$. Consequently,
+  \[
+    \left|\int G_{h,\eta}(\ud y)\gamma_\epsilon(y+z)\right|
+    \le\int_{\R^d}\frac{|\sin(h|\xi|)|}{|\xi|}\mu(\ud\xi)
+    \le\int_{\R^d}\min\{h,|\xi|^{-1}\}\mu(\ud\xi).
+  \]
+  Nonnegativity of $\gamma$ as a distribution implies $\gamma_\epsilon \ge 0$,
+  since Gaussian translates are nonnegative test functions; $G_{h,\eta}$ is also
+  nonnegative. This proves the lower bound in~\eqref{E:low-alpha-convolution}.
+  Combining the preceding displays proves its upper bound. No positivity of the
+  oscillatory Fourier integrand is asserted. This proves
+  Lemma~\ref{L:low-alpha-convolution}.
+\end{proof}
+
+\begin{lemma}[Degree-one convolution bound]\label{L:alpha-one-convolution}
+  Under the preceding covariance assumptions with $\alpha = 1$, for every $h >
+  0$, $\epsilon > 0$, $\eta \ge 0$, and $z \in \R^d$,
+  \begin{equation}\label{E:alpha-one-convolution}
+    0\le\int_{\R^d}G_{h,\eta}(\ud y)\gamma_\epsilon(y+z)
+    \le\frac{\pi V}{2}.
+  \end{equation}
+  No isotropy or angular density is required.
+\end{lemma}
+
+\begin{proof}
+  Fourier uniqueness, applied to the distributional homogeneity as above, gives
+  $\mu(cA) = c\mu(A)$ and $\mu(\{0\}) = 0$. Define a finite measure on the unit
+  sphere by
+  \[
+    \sigma(E)=\mu\{\xi:0<|\xi|\le1,\ \xi/|\xi|\in E\}.
+  \]
+  Its total mass is $V$. Homogeneity implies that the corresponding sector of
+  radius $R$ has mass $R\sigma(E)$. Subtracting two such sectors shows that a
+  polar rectangle $(r_1,r_2]\times E$ has mass $(r_2-r_1)\sigma(E)$. Uniqueness
+  of measures on these generating rectangles therefore gives the polar
+  decomposition $\mu(\ud\xi) = \ud r\,\sigma(\ud\theta)$, $r > 0$, $\theta \in
+  \mathbb{S}^{d-1}$. The real stationary covariance is even; Fourier uniqueness
+  makes $\mu$, and hence $\sigma$, even.
+
+  Use the Brownian Gaussian convention, so the combined covariance and Green
+  smoothing multiplier is $e^{-ar^2}$ with $a = (\epsilon+\eta)/2 > 0$. Gaussian
+  weighting makes the spectral measure finite. Fourier Fubini and evenness give
+  \begin{equation}\label{E:alpha-one-polar}
+    \begin{split}
+      \int G_{h,\eta}(\ud y)\gamma_\epsilon(y+z)
+      &=\int_{\mathbb{S}^{d-1}} I_a(h,\theta\cdot z)\sigma(\ud\theta),\\
+      I_a(h,v)&=\int_0^\infty e^{-ar^2}
+      \frac{\sin(hr)}r\cos(rv)\ud r.
+    \end{split}
+  \end{equation}
+  The radial integral is absolutely convergent: its integrand is bounded near
+  zero and Gaussian-decaying at infinity. Passing from the complex exponential
+  to cosine introduces no factor two, since both antipodal directions are
+  already included in $\sigma$.
+
+  Let $g_h(v) = \tfrac12\mathbf1_{\{|v|<h\}}$ and let $p_{2a}^{(1)}(v) = (4\pi
+  a)^{-1/2}e^{-v^2/(4a)}$ be the one-dimensional Gaussian density. Their Fourier
+  transforms are $\sin(hr)/r$ and $e^{-ar^2}$. The one-dimensional inversion
+  factor is $1/(2\pi)$ in the source convention, so
+  \[
+    (g_h*p_{2a}^{(1)})(v)
+    =\frac1{2\pi}\int_\R e^{irv}e^{-ar^2}
+    \frac{\sin(hr)}r\ud r
+    =\frac1\pi I_a(h,v).
+  \]
+  The sign in the inversion exponential is immaterial because the integrand
+  pairs evenly under $r\mapsto-r$. Since $p_{2a}^{(1)}$ has mass one and $0 \le
+  g_h \le 1/2$, we obtain $0 \le I_a(h,v) \le \pi/2$. Integrating against
+  $\sigma$, whose mass is $V$, proves~\eqref{E:alpha-one-convolution}. This
+  retains the oscillation until the one-dimensional integral is evaluated; the
+  divergent absolute Fourier envelope at $\alpha = 1$ is not used. This proves
+  Lemma~\ref{L:alpha-one-convolution}.
+\end{proof}
+
+\begin{proposition}[Upper bound for $\alpha \le 1$]\label{P:low-alpha-upper}
+  Suppose that Hypothesis~\ref{H:homog} and the standing covariance positivity
+  assumptions hold, $d \in \{1,2,3\}$, $0 < \alpha \le 1$, and $V > 0$. Define
+  \begin{equation}\label{E:low-alpha-constants}
+    \begin{split}
+      K_{\rm sp}^{\rm gen}
+      &=\begin{cases}
+        \displaystyle\frac{V2^{2-\alpha}(1-\alpha)^{-\alpha}}
+        {(2-\alpha)^{2-\alpha}},&0<\alpha<1,\\[2mm]
+        \pi V,&\alpha=1,
+      \end{cases}\\
+      C_2^{\rm gen}&=q(2ZK_{\rm sp}^{\rm gen})^{1/q}.
+    \end{split}
+  \end{equation}
+  With the same $A_k$, $b$, $q$, $\beta$, and $Z$ as above, for
+  $k \ge 1$ and $t > 0$,
+  \begin{equation}\label{E:low-alpha-coefficient}
+    A_k(t)\le\frac{(2ZK_{\rm sp}^{\rm gen})^k t^{\beta k}}
+    {k!\,k^{bk}}
+    \le\frac{(2ZK_{\rm sp}^{\rm gen})^k t^{\beta k}}{(k!)^q},
+    \qquad
+    \E u^2(t,x)\le\exp(C_2^{\rm gen}t^\kappa).
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  First smooth the noise as in~\cite{chen:author2026:time-dependency}*{(2.9), (2.11), (2.23)--(2.24)}.
+  In dimension three also use $G_{h,\eta}$ with $\eta > 0$, as in the
+  source's pp.~13--14. The increment change of variables is now a
+  triangular map on vectors in $\R^d$, still of determinant one.
+  The descending-label proof of Lemma~\ref{L:d1-spatial} depends only
+  on which increments enter each position, not on their dimension.
+  Its invariant therefore remains valid: at a closing label there
+  is exactly one covariance depending on that vector increment, and
+  at an opening label its pair has already been removed.
+  If $0 < \alpha < 1$, Lemma~\ref{L:low-alpha-convolution} gives the
+  closing bound $Mh_l^{1-\alpha}$ with $M = V/(1-\alpha)$.
+  At $\alpha = 1$, Lemma~\ref{L:alpha-one-convolution} gives the
+  constant closing bound $M = \pi V/2$. Every opening gives mass
+  $h_l$, uniformly in $\eta$ and all noise-smoothing parameters.
+  For $\alpha < 1$, the same weighted arithmetic--geometric mean
+  calculation gives
+  \[
+    M^k\prod_{i\in O_D}h_i\prod_{j\in C_D}h_j^{1-\alpha}
+    \le (K_{\rm sp}^{\rm gen})^k\frac{t^{bk}}{k^{bk}}.
+  \]
+  At $\alpha = 1$, ordinary arithmetic--geometric mean on the $k$ opening
+  increments gives $M^k\prod_{i\in O_D}h_i \le (2M)^kt^k/k^k$, which is the same
+  bound with $b = 1$ and $K_{\rm sp}^{\rm gen} = \pi V$. Both cases use
+  $\sum_lh_l \le 2t$. For $d = 1,2$ one may use the Green densities directly;
+  their opening mass and closing convolution obey these same bounds.
+
+  Replace the nonnegative truncated temporal factors by $|s_i-s_j|^{-\alpha_0}$
+  before taking their pairing sum. The temporal symmetry, cube integral and
+  split count in~\eqref{E:d1-time-symmetry} do not involve the spatial
+  dimension. Thus, exactly the multiplication of counts in the proof of
+  Proposition~\ref{P:d1-upper} gives the first bound
+  in~\eqref{E:low-alpha-coefficient} for the regularized moments.
+
+  We spell out the limit in dimension three. Fix every noise-smoothing parameter
+  and first let $\eta\downarrow0$. At each time vector, the Gaussian moment
+  formula is a finite sum of bounded continuous products of the smoothed
+  covariance functions, integrated against products of the finite Green
+  measures. These products of measures converge weakly as $\eta\downarrow0$,
+  with the same masses $\prod_l h_l$. At fixed noise smoothing the Gaussian
+  covariance factors are uniformly bounded, so a constant times $\prod_lh_l$
+  dominates on each bounded time simplex. Dominated convergence applies also to
+  the covariance between two approximations with different $\eta$ values. The
+  resulting common joint covariance limit proves the $L^2$ Cauchy property of
+  each fixed-order random integral. This is the inner limit used in the source's
+  definition on pp.~13--14. Products of two factors converge in $L^1$ by
+  Cauchy--Schwarz, so the moment inequality survives this limit. Next send the
+  noise-smoothing parameters to zero using the fixed-order $L^2$ convergence of
+  Lemma~\ref{L:joint-fixed-order}, and again pass products in $L^1$. In
+  dimensions one and two only the latter limit is required. The bounds at both
+  stages are uniform.
+
+  We have proved the first coefficient bound for $A_k(t)$. The factorial
+  inequality and nonnegative-series argument in Proposition~\ref{P:d1-upper}
+  apply unchanged, with $K_{\rm sp}^{\rm gen}$ in place of $K_{\rm sp}$ and $A_0
+  = 1$. This proves Proposition~\ref{P:low-alpha-upper}.
+\end{proof}
+
+\begin{remark}[Scope of the spectral estimates]\label{R:low-alpha-scope}
+  If $V = 0$, spectral homogeneity gives $\mu(B_R) = 0$ for every $R$, hence
+  $\mu = 0$ and $u = 1$; the noise-free conclusion is immediate. Otherwise, all
+  angular and dimensional dependence is allowed in $V$. For $0 < \alpha < 1$,
+  the example $\gamma(x) = c|x_1|^{-\alpha}$ in dimensions two or three has its
+  spectral measure supported on an axis; a full-dimensional density is not
+  required. The absolute Fourier envelope diverges at $\alpha = 1$, where the
+  separate oscillatory calculation in Lemma~\ref{L:alpha-one-convolution} is
+  essential. The endpoint is not obtained by taking a limit in $K_{\rm sp}^{\rm
+  gen}$ for $\alpha < 1$. For $d = 1$ and $\gamma = c_\delta\delta_0$, the
+  source convention gives $\mu(\ud\xi) = c_\delta\ud\xi/(2\pi)$ and $V =
+  c_\delta/\pi$. Hence, the endpoint constant $K_{\rm sp}^{\rm gen} = \pi V =
+  c_\delta$ agrees exactly with Proposition~\ref{P:d1-upper}, with no extra
+  antipodal factor. In dimensions two and three the endpoint covers degree-one
+  homogeneous covariance, not full spatial white noise. No result for $\alpha >
+  1$ follows from these estimates.
+\end{remark}
+
+\subsection{Checks on the scale, constants and scope}
+
+\begin{corollary}[First-moment calibration]\label{C:d1-first-calibration}
+  Let $K_*$ be $K_{\rm sp}$ under~\eqref{E:d1-covariances}, or $K_{\rm sp}^{\rm
+  gen}$ under the hypotheses of Proposition~\ref{P:low-alpha-upper}. Put
+  $C_{2,*} = q(2ZK_*)^{1/q}$. Then
+  \begin{equation}\label{E:d1-first-calibration}
+    \E u(t,x)\le\exp(C_{1,*}t^\kappa),\qquad
+    C_{1,*}=q\left(\frac{ZK_*}{2^{3-\alpha}}\right)^{1/q}
+    =\frac{C_{2,*}}{2^{(4-\alpha)/(3-\alpha)}}.
+  \end{equation}
+  In either nonzero case $2C_{1,*} < C_{2,*}$. Conditionally on a first-moment
+  lower rate at least $L_*$, $2L_* \le 2C_{1,*} < C_{2,*}$, consistently with
+  Proposition~\ref{P:Jensen}.
+\end{corollary}
+
+\begin{proof}
+  For one chain of length $2k$, the increments sum to at most $t$. The spatial
+  estimate in Lemma~\ref{L:d1-spatial}, or in the proof of
+  Proposition~\ref{P:low-alpha-upper}, therefore applies with $t/2$ in place of
+  $t$. The temporal pairing sum on one ordered simplex is
+  $P_k(Zt^{2-\alpha_0})^k/(2k)!$. Using the same regularization and limit order
+  as in the respective upper-bound proof gives
+  \[
+    \E X_{2k}(t,x)
+    \le\frac{(ZK_*/2^{b+1})^k t^{\beta k}}{k!\,k^{bk}}
+    \le\frac{(ZK_*/2^{3-\alpha})^k t^{\beta k}}{(k!)^q}.
+  \]
+  Every odd term has zero expectation. The $L^2$ expansion permits taking
+  expectations of partial sums, and the resulting nonnegative even series is
+  summed by the scalar inequality in the proof of Proposition~\ref{P:d1-upper}.
+  This gives~\eqref{E:d1-first-calibration}. If the first-moment lower rate is
+  at least $L_*$, \eqref{E:d1-first-calibration} implies $L_* \le C_{1,*}$. In
+  the stated nonzero cases $K_* > 0$, hence $C_{1,*} > 0$; and
+  $(4-\alpha)/(3-\alpha) > 1$ gives $2C_{1,*} < C_{2,*}$. This proves
+  Corollary~\ref{C:d1-first-calibration}.
+\end{proof}
+
+\begin{remark}[Checks and comparison with the uniform pairing bound]\label{R:d1-upper-checks}
+  The argument preserves the factor $k^{-(2-\alpha)k}$ from the spatial
+  increment maximum. Replacing the spatial volume merely by a constant times
+  $t^{(2-\alpha)k}$ would lose the factorial power needed
+  in~\eqref{E:d1-coefficient}. This proof does not use the
+  common-Laplace-parameter norm majorant of Proposition~\ref{P:envelope}, and it
+  does not assert a stronger factorial estimate for every individual diagram.
+  Instead, the temporal ordering is exploited after summing pairings
+  in~\eqref{E:d1-time-symmetry}. Thus, the scoped G0 obstruction remains valid.
+  For unit white covariance, the bound on the total-order-two coefficient is
+  $2Z$, whereas the exact value from Lemma~\ref{L:white-test} is $2c_0$; their
+  ratio is $2(3-\alpha_0) > 4$. At the static endpoint the exact order-four
+  coefficient is $11/540$, while the first bound in~\eqref{E:d1-coefficient}
+  gives $1/2$. These are checks of normalization, not evidence of sharp
+  constants.
+\end{remark}
+
+No-go~\ref{P:nogo-06} quantifies the loss avoided here: discarding the
+spatial constraints before summation gives the wrong time exponent.
+
+
+\begin{remark}[Boundary and literature comparisons]\label{R:d1-comparisons}
+  As $\alpha_0\downarrow0$, the time exponent tends to $(4-\alpha)/(3-\alpha)$,
+  the Chen--Hu static exponent cited in Remark~\ref{R:G1-scope}. This is an
+  exponent calibration, not an interchange of the static and large-time limits.
+  With the Riesz normalization $c_\alpha = (1-\alpha)/2$, the displayed $K_{\rm
+  sp}$ tends to one as $\alpha\uparrow1$, matching unit white covariance. For
+  comparison only, the Skorohod upper bound of
+  Balan--Conus~\cite{balan.conus:16:intermittency}*{Theorem~2.1(b), (8), (10),
+  p.~1492} has time exponent $(2H+2-a)/(3-a)$. Setting $H = 1-\alpha_0/2$ and $a
+  = \alpha$ yields the same $\kappa$. Their covariance normalization contains
+  $H(2H-1)$ and they use a Skorohod mild solution. No constants or solutions are
+  identified, and their theorem is not an input to the present proof. The
+  current coverage of this section is $0 < \alpha \le 1$ in $d = 1,2,3$,
+  including the one-dimensional white case. It does not address $1 < \alpha <
+  2-\alpha_0$ in dimensions two and three.
+\end{remark}
+
+
+# Full wave-variance section
+\section{Frequency estimates and both wave variance directions}
+\label{S:wave-variance}
+
+We now apply the covariance and temporal estimates of
+Section~\ref{S:masked-covariance} to the full wave phase. We retain
+Hypothesis~\ref{H:homog}, write $a = \alpha_0$, and choose and fix
+\begin{equation}\label{E:variance-gamma-range}
+  0 < \gamma < \min\left(\frac12,\frac{2-\alpha}{2}\right).
+\end{equation}
+The interval is nonempty because $\alpha+a < 2$. We use $\langle\xi\rangle =
+\sqrt{1+|\xi|^2}$ and set
+\begin{equation}\label{E:variance-scale-profile}
+  B_\alpha(h) =
+  \begin{cases}
+    1, & \alpha < 1,\\
+    1+\log(1/h), & \alpha = 1,\\
+    h^{1-\alpha}, & \alpha > 1,
+  \end{cases}
+  \qquad 0 < h \le 1.
+\end{equation}
+
+\subsection{A scalar row estimate for a measure}
+
+Let $\nu$ be a positive Radon measure satisfying
+\begin{equation}\label{E:frequency-translated-growth}
+  \nu(B(y,r)) \le C r^\alpha,
+  \qquad y \in \R^d,\quad r > 0,
+\end{equation}
+where $C \ge 0$. If the estimate is initially known for open balls, apply it at
+radius $r+\epsilon$ and let $\epsilon \downarrow 0$ to obtain the closed-ball
+estimate. Neither evenness nor a density is assumed here.
+Using~\eqref{E:masked-frequency-pair}, define
+\begin{align}
+  \Phi_h(\xi,\eta)
+  &:= \frac{\mathcal{Q}_h(|\xi|,|\eta|)}
+  {\langle\xi\rangle\langle\eta\rangle},
+  \label{E:frequency-row-kernel}\\
+  J_h(\xi)
+  &:= \langle\xi\rangle^{2\gamma}
+  \int_{\R^d}\Phi_h(\xi,\xi-\lambda)\nu(\ud\lambda).
+  \label{E:frequency-row-integral}
+\end{align}
+These are initially nonnegative extended integrals. In particular, the notation
+denotes a pushforward of $\nu$, not integration against an assumed spectral
+density.
+
+\begin{proposition}[Uniform scalar row]\label{P:frequency-row}
+  There is a finite $K = K(\alpha,a,\gamma)$, independent of $d,\nu,C,h$ and
+  $\xi$, such that
+  \begin{equation}\label{E:frequency-row-bound}
+    \sup_{\xi\in\R^d}J_h(\xi) \le K C B_\alpha(h),
+    \qquad 0 < h \le 1.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  If $C = 0$, a countable covering by finite balls gives $\nu = 0$, and the
+  result is immediate. Suppose $C > 0$. For each $\xi$, let $\nu_\xi$ be the
+  pushforward under $\lambda \mapsto \eta = \xi-\lambda$. Then $\nu_\xi(B(0,R))
+  \le CR^\alpha$. For $q \ge 1$, put
+  \[
+    A_\xi(q) = \int_{|\eta|\le5q}\langle\eta\rangle^{-1}
+    \nu_\xi(\ud\eta).
+  \]
+  Choose $N = \lceil\log_2(5q)\rceil$, so $5q \le 2^N < 10q$. Splitting into the
+  unit ball and the annuli $2^j < |\eta| \le 2^{j+1}$ gives
+  \[
+    A_\xi(q) \le C\left(1+2^\alpha
+    \sum_{j=0}^{N-1}2^{j(\alpha-1)}\right).
+  \]
+  The geometric sum is bounded when $\alpha < 1$, is $N$ when $\alpha = 1$, and
+  is at most $2^{N(\alpha-1)}/(2^{\alpha-1}-1)$ when $\alpha > 1$. Hence,
+  \begin{equation}\label{E:frequency-inverse-bessel}
+    A_\xi(q) \le K_\alpha C
+    \begin{cases}
+      1, & \alpha < 1,\\
+      1+\log q, & \alpha = 1,\\
+      q^{\alpha-1}, & \alpha > 1,
+    \end{cases}
+  \end{equation}
+  with a constant depending only on $\alpha$.
+
+  Set $q = \max(1,|\xi|)$ and $\epsilon = 1-2\gamma > 0$. On $|\lambda| \le 4q$
+  we have $|\eta| \le 5q$. Both bracket powers in $\mathcal{Q}_h$ are at most
+  one, since $a-1 < 0$. The contribution of this region to $J_h(\xi)$ is at most
+  \[
+    2\langle\xi\rangle^{-\epsilon}A_\xi(q)
+    \le 2q^{-\epsilon}A_\xi(q).
+  \]
+  If $\alpha < 1$, this is uniformly bounded
+  by~\eqref{E:frequency-inverse-bessel}. If $\alpha = 1$, the bound follows from
+  \[
+    e^{-\epsilon u}(1+u) \le 1+\frac1{e\epsilon},
+    \qquad u = \log q \ge 0,
+  \]
+  since $u e^{-\epsilon u}$ has maximum $1/(e\epsilon)$. If $\alpha > 1$, the
+  remaining power is $q^{\alpha+2\gamma-2}$, whose exponent is negative
+  by~\eqref{E:variance-gamma-range}. Thus, the near contribution is at most a
+  constant times $C$ in all three cases.
+
+  On the far region write $r = |\lambda| > 4q$. Then
+  \[
+    |\eta| \ge \frac{3r}4,\qquad
+    \big||\eta|-|\xi|\big| \ge \frac r2,\qquad
+    |\eta|+|\xi| \ge \frac r2.
+  \]
+  Each oscillatory bracket is at least $\langle hr\rangle/2$, whereas
+  $\langle\eta\rangle^{-1} \le 4/(3r)$ and $\langle\xi\rangle^{-\epsilon} \le
+  1$. Consequently, the far contribution is at most
+  \[
+    \frac43\,2^{2-a}\int_{|\lambda|>4q}
+    |\lambda|^{-1}\langle h|\lambda|\rangle^{a-1}\nu(\ud\lambda).
+  \]
+  Enlarge the domain to $|\lambda| > 1$ and split it into dyadic annuli.
+  Applying~\eqref{E:frequency-translated-growth} to their masses bounds this
+  expression by a constant depending only on $\alpha,a$ times $C S(h)$, where
+  \[
+    S(h) = \sum_{j=0}^\infty
+    2^{j(\alpha-1)}\langle h2^j\rangle^{a-1}.
+  \]
+  Choose $L = \lfloor\log_2(1/h)\rfloor \ge 0$. For $j \le L$ the bracket power
+  is at most one. For $j \ge L+1$ it is at most $(h2^j)^{a-1}$. Since
+  $\alpha+a-2 < 0$, the tail is
+  \[
+    \frac{h^{a-1}2^{(L+1)(\alpha+a-2)}}{1-2^{\alpha+a-2}}
+    \le \frac{h^{1-\alpha}}{1-2^{\alpha+a-2}}.
+  \]
+  The inequality uses $2^{L+1} > 1/h$ and the negative exponent. The finite sum
+  is bounded by $1/(1-2^{\alpha-1})$ for $\alpha < 1$, by $1+\log_2(1/h)$ for
+  $\alpha = 1$, and by
+  \[
+    \frac{2^{\alpha-1}h^{1-\alpha}}{2^{\alpha-1}-1}
+  \]
+  for $\alpha > 1$. Since $h^{1-\alpha} \le 1$ in the first case, we obtain
+  $S(h) \le K_{\alpha,a}B_\alpha(h)$. Combining the near and far bounds, and
+  using $B_\alpha(h) \ge 1$, proves the assertion and finiteness of the original
+  integral. All constants arose from numerical shell estimates and are
+  independent of $d$. This proves Proposition~\ref{P:frequency-row}.
+\end{proof}
+
+\begin{corollary}[A time exponent above one half]\label{C:frequency-time}
+  For every
+  \begin{equation}\label{E:variance-beta-range}
+    \frac12 < \beta < \min\left(1-\frac a2,
+    \frac{3-a-\alpha}{2}\right),
+  \end{equation}
+  there is a finite $K_\beta = K_\beta(\alpha,a,\gamma,\beta)$ such that
+  \begin{equation}\label{E:frequency-time-bound}
+    h^{2-a}\sup_\xi J_h(\xi) \le K_\beta C h^{2\beta},
+    \qquad 0 < h \le 1.
+  \end{equation}
+\end{corollary}
+
+\begin{proof}
+  Both upper endpoints in~\eqref{E:variance-beta-range} exceed one half, by $a <
+  1$ and $\alpha+a < 2$. If $\alpha < 1$, use $2-a > 2\beta$ in
+  Proposition~\ref{P:frequency-row}. If $\alpha > 1$, use $3-a-\alpha > 2\beta$.
+  For $\alpha = 1$, set $\delta = 2-a-2\beta > 0$ and $u = \log(1/h)$. Then
+  \[
+    h^\delta(1+\log(1/h))
+    = e^{-\delta u}(1+u) \le 1+\frac1{e\delta}.
+  \]
+  This absorbs the critical logarithm. No endpoint value of $\beta$ is used.
+  This proves Corollary~\ref{C:frequency-time}.
+\end{proof}
+
+\subsection{Forms on the full phase}
+
+Choose and fix $T > 0$. Set $\Lambda = (1-\Delta)^{1/2}$, $s = 1/2$ and $E_r =
+H^r(\R^d)\times H^{r-1}(\R^d)$. On the complexification of $E = E_s$, use inner
+products linear in the first slot. The map
+\[
+  Jz(\xi) = \left(\langle\xi\rangle^{1/2}\widehat{z}_1(\xi),
+  \langle\xi\rangle^{-1/2}\widehat{z}_2(\xi)\right)
+\]
+is unitary onto $L^2(\R^d;\mathbb{C}^2)$. The full massless wave group has
+Fourier matrix
+\begin{equation}\label{E:variance-free-matrix}
+  S(t,\xi) =
+  \begin{pmatrix}
+    \cos(t|\xi|) & \sin(t|\xi|)/|\xi|\\
+    -|\xi|\sin(t|\xi|) & \cos(t|\xi|)
+  \end{pmatrix},
+\end{equation}
+where the sine quotient is $t$ at zero. Let $B(b)(u,v) = (0,bu)$. Choose and fix
+a real even nonnegative $\zeta \in C_c^\infty(\R^d)$ equal to one on $B_1$ and
+zero off $B_2$, and put $\zeta_R(x) = \zeta(x/R)$ for $R > 0$. For $I =
+[t_0,t_0+h] \subset [0,T]$, $0 < h \le 1$, and Schwartz phases $z,w$, put
+\begin{align}
+  v_z(t) &= [S(t)z]_1,
+  \label{E:variance-displacement}\\
+  G_w(t) &= -\frac{\sin(t|D|)}{|D|}\Lambda w_1
+  +\cos(t|D|)\Lambda^{-1}w_2,
+  \label{E:variance-dual-wave}\\
+  F_{z,w}(t,x) &= 1_I(t)v_z(t,x)\overline{G_w(t,x)},
+  \qquad \ell_R(I;z,w) = W_{\mathbb{C}}(\zeta_RF_{z,w}),
+  \label{E:variance-actual-form}
+\end{align}
+where $W_{\mathbb{C}}(F) = W(\operatorname{Re}F)+iW(\operatorname{Im}F)$. There
+is no observation cutoff in this definition.
+
+We first assume $\Gamma \ne 0$. If $\Gamma = 0$, all forms and the column maps
+below are zero, so their bounds hold directly. For the nonzero case, let $\nu_R$
+be~\eqref{E:masked-auxiliary-measure} and set
+\begin{equation}\label{E:variance-actual-growth-constant}
+  L_\zeta = \|\widehat{\zeta}\|_1,\qquad
+  C_\nu = c_d^2L_\zeta^2C_\Gamma.
+\end{equation}
+Proposition~\ref{P:masked-auxiliary-norm} gives a positive even tempered Radon
+measure with $\nu_R(B(y,r)) \le C_\nu r^\alpha$, uniformly in $R$.
+
+\begin{proposition}[Form and phase kernel]\label{P:actual-wave-form}
+  The tests $\zeta_RF_{z,w}$ in~\eqref{E:variance-actual-form} belong to the
+  original noise completion. The form $\ell_R$ is linear in $z$ and conjugate
+  linear in $w$, and uses the same $W$ as the model. For a smooth deterministic
+  coefficient $b$ with common compact spatial support and bounded spatial
+  derivatives on $[0,T]$,
+  \begin{equation}\label{E:variance-physical-adjoint}
+    \langle S(-t)B(b(t))S(t)z,w\rangle_E
+    = \int b(t,x)v_z(t,x)\overline{G_w(t,x)}\ud x.
+  \end{equation}
+  For a real compact smooth $\chi$, multiplication $D_\chi$ on both phase
+  entries has adjoint
+  \begin{equation}\label{E:variance-cutoff-adjoint}
+    D_\chi^{*,E}w
+    = \left(\Lambda^{-1}\chi\Lambda w_1,
+    \Lambda\chi\Lambda^{-1}w_2\right).
+  \end{equation}
+  With $U = Jz$, $V = Jw$, $r = |\xi|$, $\rho = |\eta|$ and the continuous
+  functions $c_r,b_r$ of Lemma~\ref{L:masked-continuous-wave}, set
+  \begin{equation}\label{E:variance-normalized-kernel}
+    \mathcal{K}(t;\xi,\eta)
+    = \frac1{\sqrt{\langle\xi\rangle\langle\eta\rangle}}
+    \begin{pmatrix}
+      -b_rc_\rho & -b_rb_\rho\\
+      c_rc_\rho & c_rb_\rho
+    \end{pmatrix}(t).
+  \end{equation}
+  Then
+  \begin{equation}\label{E:variance-normalized-covariance}
+    \E|\ell_R(I;z,w)|^2
+    \le \int\left\|\int\sum_{i,j=1}^2
+    1_I\mathcal{K}_{ij}(\cdot;\eta+\lambda,\eta)
+    U_j(\eta)\overline{V_i(\eta+\lambda)}\ud\eta
+    \right\|_{H_a^{\mathbb{C}}}^2\nu_R(\ud\lambda).
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  The wave multipliers are smooth at zero through the continuous sine quotient,
+  with polynomially bounded frequency derivatives on finite time intervals.
+  Bessel multipliers preserve Schwartz space. Thus, $v_z,G_w$ and their product
+  are continuous in all Schwartz seminorms on $[0,T]$. For tests supported in a
+  fixed compact $K$, the absolute spatial pairing is bounded by
+  \[
+    |K|\Gamma(K-K)\|F(t)\|_\infty\|H(u)\|_\infty.
+  \]
+  Indeed, only $y \in K-K$ contributes to $\int\Gamma(\ud y)\int
+  F(t,x)\overline{H(u,x-y)}\ud x$. Combine this with the temporal Schur bound
+  and approximate the interval indicator and the continuous time dependence by
+  smooth interior temporal tests, keeping the spatial support of $\zeta_R$. This
+  admits the masked product in the original completion in every allowed
+  dimension.
+
+  We also identify its auxiliary and spectral limits. Approximate a
+  Schwartz-valued function on $I$ by time partitions with frozen spatial values,
+  and then replace the finitely many indicators by compact smooth temporal
+  functions. A diagonal sequence $F_n$ of finite temporal tensors converges in
+  $L^2$ time in every Schwartz seminorm. Fourier integration by parts and the
+  spatial weighted supremum bounds give, for sufficiently large fixed $N$,
+  \[
+    \|\widehat{F_n-F}(\xi)\|_{L^2(0,T)}
+    \le \epsilon_n\langle\xi\rangle^{-N},\qquad \epsilon_n \to 0.
+  \]
+  Choose $N$ so that the square weight is integrable against both tempered
+  measures $\mu$ and $\nu_R$. Lemma~\ref{L:masked-time-completion} gives
+  convergence in their spectral $H_a$ norms. Multiplication by the fixed
+  $\zeta_R$ preserves these $L^2$ Schwartz-seminorm limits, so the masked
+  differences converge in the $\mu$ spectral norm too. The preceding
+  compact-support estimate also gives convergence in the original completion.
+  Hence, the auxiliary extension and original-noise limit agree on these
+  products. Constants for this admission argument may depend on $R$; they are
+  not the uniform variance constants below.
+
+  For real tensor tests $f,g$, the Hermitian symmetry of their spatial
+  transforms gives
+  \[
+    A(-\xi) = \overline{A(\xi)},\qquad
+    A(\xi) = \langle\widehat{f}(\xi),\widehat{g}(\xi)\rangle_{H_a^{\mathbb{C}}}.
+  \]
+  Integration against either even $\mu$ or even $\nu_R$ cancels the imaginary
+  mixed term. Expanding the squared norm of $\widehat{f}+i\widehat{g}$, then
+  using the preceding approximation, extends
+  Proposition~\ref{P:masked-noise-completion} to the present complex tests:
+  \begin{equation}\label{E:variance-complex-noise}
+    \E|W_{\mathbb{C}}(\zeta_RF)|^2
+    = (2\pi)^d\int\|\widehat{\zeta_RF}(\xi)\|_{H_a^{\mathbb{C}}}^2\mu(\ud\xi)
+    \le (2\pi)^d\int\|\widehat{F}(\lambda)\|_{H_a^{\mathbb{C}}}^2\nu_R(\ud\lambda).
+  \end{equation}
+  This is a bound for the masked noise, not a declaration that its law is
+  stationary. Complex linearity of $W_{\mathbb{C}}$ and linearity of $v_z,G_w$
+  prove the stated sesquilinearity.
+
+  Smooth multiplication is bounded on each Sobolev space: Fourier convolution,
+  the inequality $\langle\xi\rangle^r\langle\eta\rangle^{-r} \le
+  2^{|r|/2}\langle\xi-\eta\rangle^{|r|}$ and weighted Schwartz decay reduce this
+  to the $L^1*L^2$ bound. The free matrix is strongly continuous and bounded on
+  $E$ on compact time intervals, directly by its weighted Fourier entries. Thus,
+  the ordinary first-response integral exists on states. Since $S(-t)(0,f) =
+  (-\sin(t|D|)f/|D|,\cos(t|D|)f)$, moving the real self-adjoint multipliers and
+  the two Sobolev weights onto $w$ proves \eqref{E:variance-physical-adjoint}.
+  The same weighted duality gives \eqref{E:variance-cutoff-adjoint}. Inserting
+  this adjoint in $G_w$ is the correctly observed form; $D_\chi$ need not be
+  self-adjoint on $E$. This deterministic identity does not identify a
+  positive-width source with the original noise or assert a source limit.
+
+  The definitions give exactly
+  \begin{align*}
+    \widehat{v}_z(t,\eta)
+    &= \langle\eta\rangle^{-1/2}
+    [c_\rho(t)U_1(\eta)+b_\rho(t)U_2(\eta)],\\
+    \widehat{G}_w(t,\xi)
+    &= \langle\xi\rangle^{-1/2}
+    [-b_r(t)V_1(\xi)+c_r(t)V_2(\xi)].
+  \end{align*}
+  Their product gives~\eqref{E:variance-normalized-kernel}. At zero frequencies
+  one uses the continuous sine quotient, not division by zero; at $\xi = \eta =
+  0$ the matrix is
+  $\left(\begin{smallmatrix}-t&-t^2\\1&t\end{smallmatrix}\right)$. Fourier
+  multiplication with the conjugate yields
+  \[
+    \widehat{F}_{z,w}(t,-\lambda)
+    = c_d1_I(t)\int\sum_{i,j=1}^2\mathcal{K}_{ij}(t;\eta+\lambda,\eta)
+    U_j(\eta)\overline{V_i(\eta+\lambda)}\ud\eta.
+  \]
+  The spatial integral is absolutely convergent uniformly on the finite time
+  interval by Schwartz decay. The Schur bound also makes it a Bochner
+  $H_a^{\mathbb{C}}$ integral. Reflect $\lambda$ using evenness of $\nu_R$
+  in~\eqref{E:variance-complex-noise}. Since $(2\pi)^dc_d^2 = 1$, this
+  proves~\eqref{E:variance-normalized-covariance} with no remaining Fourier
+  factor. This proves Proposition~\ref{P:actual-wave-form}.
+\end{proof}
+
+\subsection{Bessel's inequality and the two variances}
+
+\begin{lemma}[Hilbert-valued finite Bessel inequality]\label{L:phase-bessel}
+  Let $H$ be a separable complex Hilbert space, let $\{u_k\}$ be a finite
+  orthonormal family in $L^2(\R^d;\mathbb{C}^2)$, and let $g = (g_1,g_2) \in
+  L^2(\R^d;H^2)$. Then
+  \begin{equation}\label{E:phase-bessel}
+    \sum_k\left\|\int\sum_{j=1}^2u_{k,j}(\eta)g_j(\eta)\ud\eta\right\|_H^2
+    \le \int\sum_{j=1}^2\|g_j(\eta)\|_H^2\ud\eta.
+  \end{equation}
+  The same bound holds with $\overline{u_{k,j}}$ in place of $u_{k,j}$.
+\end{lemma}
+
+\begin{proof}
+  Expand $g$ in a countable orthonormal basis of $H$. On each scalar coefficient
+  apply scalar Bessel to the orthonormal family $\{\overline{u_k}\}$, or to
+  $\{u_k\}$ for the conjugated version. Scalar finite Bessel follows by
+  subtracting an orthogonal finite projection and expanding its nonnegative
+  squared norm. Sum over the $H$ basis and use Parseval and nonnegative Tonelli.
+  The Bochner integrals exist by $L^2$ Cauchy--Schwarz. A finite-dimensional $H$
+  uses its finite basis, and the zero space is immediate. No independence is
+  involved. This proves Lemma~\ref{L:phase-bessel}.
+\end{proof}
+
+\begin{proposition}[Both variance directions]\label{P:wave-two-variances}
+  There is a finite $C_T$, depending on the fixed model, mask,
+  $a,\alpha,\gamma,T$, but not on $R,I$ or the orthonormal family, such that for
+  every finite complex $E$-orthonormal Schwartz family $\{e_k\}$ and every
+  Schwartz phase $z$,
+  \begin{align}
+    \sum_k\E|\ell_R(I;e_k,z)|^2
+    &\le C_T h^{2-a}B_\alpha(h)\|z\|_{E_{s-\gamma}}^2,
+    \label{E:wave-input-variance}\\
+    \sum_k\E|\ell_R(I;z,e_k)|^2
+    &\le C_T h^{2-a}B_\alpha(h)\|z\|_{E_{s-\gamma}}^2.
+    \label{E:wave-output-variance}
+  \end{align}
+  For every $\beta$ in~\eqref{E:variance-beta-range}, either right side may be
+  replaced by $C_{T,\beta}h^{2\beta}\|z\|_{E_{s-\gamma}}^2$.
+\end{proposition}
+
+\begin{proof}
+  Each entry in~\eqref{E:variance-normalized-kernel} is a product of two
+  continuous wave factors times $(\langle\xi\rangle\langle\eta\rangle)^{-1/2}$,
+  with a possible minus sign. Lemma~\ref{L:masked-continuous-wave} therefore
+  gives
+  \begin{equation}\label{E:variance-kernel-time-bound}
+    \|1_I\mathcal{K}_{ij}(\cdot;\xi,\eta)\|_{H_a^{\mathbb{C}}}^2
+    \le A_T h^{2-a}\Phi_h(\xi,\eta),
+    \qquad A_T = C_1(a)(1+T)^4.
+  \end{equation}
+  The positive even Radon measure $\nu_R$ satisfies the growth bound
+  \eqref{E:variance-actual-growth-constant}. Thus, all hypotheses of
+  Proposition~\ref{P:frequency-row} hold, and
+  \begin{equation}\label{E:variance-actual-row-bound}
+    \int\Phi_h(\xi,\xi-\lambda)\nu_R(\ud\lambda)
+    \le K C_\nu B_\alpha(h)\langle\xi\rangle^{-2\gamma}.
+  \end{equation}
+  No nonnegative physical inverse covariance of $\nu_R$ is needed.
+
+  The kernels used in Lemma~\ref{L:phase-bessel} belong to its stated $L^2$
+  space for each fixed $\lambda$. Indeed, $|c_r(t)| \le 1$ and $|b_r(t)| \le
+  \sqrt{2}\max(1,T)$ on $[0,T]$, by the high- and low-frequency representations.
+  The kernels are continuous into $L^2(0,T)$ in their frequency variables, hence
+  into $H_a^{\mathbb{C}}$ by Schur. Separability gives strong measurability.
+  Multiplication by shifted Schwartz components of $U$ or $V$ then gives the
+  required $L^2$ integrability. Later $\lambda$ integrals are of nonnegative
+  functions; their finiteness follows from the estimates below.
+
+  First fix $V = Jz$ and let $U_k = Je_k$ be the input family.
+  In~\eqref{E:variance-normalized-covariance} set
+  \[
+    g_j^\lambda(\eta) = \sum_{i=1}^2
+    1_I\mathcal{K}_{ij}(\cdot;\eta+\lambda,\eta)
+    \overline{V_i(\eta+\lambda)}.
+  \]
+  Lemma~\ref{L:phase-bessel} and Cauchy--Schwarz over the two output components
+  give
+  \begin{align*}
+    \sum_j\|g_j^\lambda(\eta)\|_{H_a^{\mathbb{C}}}^2
+    &\le 2\sum_{i,j}|V_i(\eta+\lambda)|^2
+    \|1_I\mathcal{K}_{ij}(\cdot;\eta+\lambda,\eta)\|_{H_a^{\mathbb{C}}}^2\\
+    &\le 4A_T h^{2-a}\Phi_h(\eta+\lambda,\eta)
+    \sum_i|V_i(\eta+\lambda)|^2.
+  \end{align*}
+  Change variables $\xi = \eta+\lambda$ in the Lebesgue integral for each
+  $\lambda$, apply Tonelli and~\eqref{E:variance-actual-row-bound}, and use
+  $\|z\|_{E_{s-\gamma}} = \|\langle\xi\rangle^{-\gamma}Jz\|_2$. This
+  proves~\eqref{E:wave-input-variance} with $C_T = 4A_TKC_\nu$.
+
+  Next fix $U = Jz$ and let $V_k = Je_k$ be the output family. After $\eta =
+  \xi-\lambda$ in~\eqref{E:variance-normalized-covariance}, put
+  \[
+    f_i^\lambda(\xi) = \sum_{j=1}^2
+    1_I\mathcal{K}_{ij}(\cdot;\xi,\xi-\lambda)U_j(\xi-\lambda).
+  \]
+  Apply the conjugated version of Lemma~\ref{L:phase-bessel}. Cauchy--Schwarz
+  over the two input components bounds its right side by
+  \[
+    4A_T h^{2-a}\int\Phi_h(\xi,\xi-\lambda)
+    \sum_j|U_j(\xi-\lambda)|^2\ud\xi.
+  \]
+  After the change of variables and Tonelli, the row at fixed $\eta$ is
+  $\int\Phi_h(\eta+\lambda,\eta)\nu_R(\ud\lambda)$. Reflect $\lambda$ using the
+  evenness of $\nu_R$ and then use symmetry of $\Phi_h$. This row becomes
+  $\int\Phi_h(\eta,\eta-\lambda)\nu_R(\ud\lambda)$, which is bounded
+  by~\eqref{E:variance-actual-row-bound} with $\xi = \eta$. This proves
+  \eqref{E:wave-output-variance} with the same $C_T$.
+
+  Use Corollary~\ref{C:frequency-time} for $h^{2-a}$ times the row integral at
+  the two applications above to obtain the asserted $h^{2\beta}$ bounds,
+  including strict absorption of the critical logarithm. The constants are
+  uniform in $R,I$ and family size. The $R$-dependent admission estimate was not
+  used as this uniform variance bound. This proves
+  Proposition~\ref{P:wave-two-variances}.
+\end{proof}
+
+\subsection{Mean-square columns on the original probability space}
+
+Write $E_r^{\mathrm{real}}$ for the real phase space in dimension $d$.
+
+\begin{proposition}[Column and adjoint-column maps]\label{P:wave-square-columns}
+  On the same probability space there are deterministic bounded real linear maps
+  \[
+    m_{R,I},n_{R,I}:E_{s-\gamma}^{\mathrm{real}}\longrightarrow
+    L^2(\Omega;E_s^{\mathrm{real}}),
+  \]
+  with squared bounds $C_T h^{2-a}B_\alpha(h)$, such that, for every fixed real
+  Schwartz pair $z,w$,
+  \begin{equation}\label{E:variance-square-columns}
+    \langle m_{R,I}z,w\rangle_E
+    = \ell_R(I;z,w) = \langle z,n_{R,I}w\rangle_E
+    \quad\text{in }L^2(\Omega).
+  \end{equation}
+  Fixed-vector values and finite families of values are centered Gaussian.
+\end{proposition}
+
+\begin{proof}
+  Choose a countable real Schwartz orthonormal basis $\{e_k\}$ of $E_s$. Such a
+  basis follows by Gram--Schmidt from a countable dense Schwartz family,
+  discarding zero residuals. Schwartz density follows by smooth Fourier cutoff
+  approximation in the weighted $L^2$ norms: approximate by compact smooth
+  Fourier coordinates, replace $g(\xi)$ by $(g(\xi)+\overline{g(-\xi)})/2$, and
+  apply the inverse Bessel/Fourier maps. The resulting phases are real Schwartz,
+  and Gram--Schmidt preserves that class. The same density holds in
+  $E_{s-\gamma}$.
+
+  For fixed real Schwartz $z$, define
+  \[
+    m_N(z) = \sum_{k\le N}\ell_R(I;z,e_k)e_k,
+    \qquad n_N(z) = \sum_{k\le N}\ell_R(I;e_k,z)e_k.
+  \]
+  Both are finite Gaussian sums on the original $W$. By
+  Proposition~\ref{P:wave-two-variances}, their coefficient expected squares
+  have finite sum. Orthogonality gives the squared tail norms as the
+  corresponding sums of expected squares. Thus, both sequences converge in
+  $L^2(\Omega;E_s)$ to $m(z),n(z)$ with the asserted bounds, without
+  independence of the coefficients. Finite-sum measurability and separable $E_s$
+  give strong measurability of the limits. The bounded real linear maps extend
+  uniquely from Schwartz phases to $E_{s-\gamma}$.
+
+  If $w_N$ is the $E_s$ projection of a Schwartz $w$ onto the first $N$ basis
+  vectors, then $\langle m_N(z),w\rangle_E = \ell_R(I;z,w_N)$. The singleton
+  form of~\eqref{E:wave-output-variance}, after normalizing $w-w_N$ in $E_s$,
+  gives
+  \[
+    \E|\ell_R(I;z,w-w_N)|^2
+    \le C_T h^{2-a}B_\alpha(h)\|z\|_{E_{s-\gamma}}^2\|w-w_N\|_{E_s}^2.
+  \]
+  The zero residual is immediate. The right side tends to zero, giving the first
+  identity in~\eqref{E:variance-square-columns}. For the second, project $z$
+  instead and use the singleton input bound \eqref{E:wave-input-variance}. A
+  fixed countable Schwartz orthonormal basis and Parseval show basis
+  independence of the constructed limits.
+
+  Continuous linear functionals of the limits, and finite linear combinations of
+  such functionals, are $L^2$ limits of centered Gaussian variables with
+  convergent variances. Their characteristic functions therefore converge to
+  those of centered Gaussians. The same reasoning after the bounded input
+  extension proves joint Gaussianity for arbitrary fixed inputs and finite
+  families of the two maps. This proves Proposition~\ref{P:wave-square-columns}.
+\end{proof}
+
+These are maps into $L^2(\Omega;E_s)$ for fixed intervals. No common uncountable
+almost-sure version, random bounded operator, Hilbert--Schmidt realization, time
+path, source convergence or new solution-moment bound is inferred by this
+section alone. Both variance directions are retained in
+Section~\ref{S:actual-operator-driver}.

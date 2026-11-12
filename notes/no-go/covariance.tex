@@ -261,9 +261,11 @@ amplitudes cannot remain bounded.
   its Gaussian mixture representation. The normal Dirac covariance is
   positive definite: in its quadratic form the two normal coordinates
   coincide, leaving an integral of nonnegative tangential quadratic
-  forms. Thus, the product is positive definite. Its mass on a radius
-  $R$ ball is proportional to $R^{3/2}$, giving the required homogeneity;
-  polynomial mass growth also gives temperedness.
+  forms. Thus, the product is positive definite. For every $r>0$ and
+  Borel set $A$, the substitution $y=ry'$ in its defining integral gives
+  $\Gamma(rA)=r^{2-1/2}\Gamma(A)=r^{3/2}\Gamma(A)$. Its finite mass on
+  a radius $R$ ball is proportional to $R^{3/2}$; polynomial mass growth
+  also gives temperedness.
 
   Suppose a subsequence of $C_n$ were bounded by $C<\infty$. For every
   nonnegative compactly supported continuous $f$, vague convergence gives
@@ -314,10 +316,19 @@ wave mean need not increase when that residual is restored.
   Its spatial degree is $\alpha=1/2$, and $\alpha+a<2$. Gaussian mixtures
   of the two power kernels verify positive definiteness and local
   integrability. Let $\psi(s,x)=\mathbf1_{[0,1]}(s)\mathbf1_{[-1,1]}(x)$,
-  $V=\E W(\psi)^2$, $Z=W(\psi)/\sqrt V$, and
-  $m(s,x)=\E[W(s,x)Z]$. The indicator is a legal Hilbert-space test by
-  bounded smooth approximation and dominated convergence. Gaussian
-  projection gives $W=Zm+W^\perp$ with $W^\perp$ independent of $Z$ and
+  and $V=\E W(\psi)^2$. The indicator is a legal Hilbert-space test by
+  bounded smooth approximation and dominated convergence. Local integrability
+  and positivity of $C$ give $0<V<\infty$. Put $Z=W(\psi)/\sqrt V$ and
+  define the covariance profile by the locally integrable kernel formula
+  \[
+    m(s,x)=\frac1{\sqrt V}\int_0^1\int_{-1}^1
+    C((s,x),(r,y))\ud y\ud r.
+  \]
+  For every smooth compactly supported spacetime test $f$, Fubini's
+  theorem identifies $\langle m,f\rangle=\E[W(f)Z]$.
+  Thus, $m$ is the covariance of the generalized field with $Z$; no
+  pointwise random variable $W(s,x)$ is used. Gaussian projection gives
+  $W=Zm+W^\perp$ with $W^\perp$ independent of $Z$ and
   covariance $C-P$, where $P=m\otimes m$. Cauchy--Schwarz gives its
   positive semidefiniteness.
 

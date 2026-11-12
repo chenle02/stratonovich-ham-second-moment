@@ -1,0 +1,162 @@
+{
+  "provider": "kimi",
+  "started_utc": "2026-11-12T16:36:04.414869+00:00",
+  "workspace": "<HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment/reviews/2026-11-12-nogo-gold-repairs/kimi-attempt-01/workspace",
+  "source_revision": "sha256:c7a4471036e88fca83ee26bed54a09e1005cf40e0226d265593921ba081edcf2",
+  "input_hashes": {
+    "HOMOG-CONTEXT.md": "c0a19a7e14638371113bedbc0c6d143e18c55037c462c1b5c53f7c297ffcd1da",
+    "MIDDLE-CROSS-CONTEXT.md": "a1ea05729fce6d0060241a8624b54677e7e6e6fc063d3549dfce7191a5d7e911",
+    "NG13.md": "0355e17f99a5ecff617d784e122cb398224c410be5b579feac6a4365e624e294",
+    "NG16.md": "8285922eedbaf09733f3521931ee0b2458c72c924574c659e9403d1337faa993",
+    "NG18.md": "feba7ee2ab96e3425c034542fc82bdb0382bbe4f06b153224dee25b2149f01e8",
+    "NG19.md": "6841eae068fe78930db3d477fc36f447731e54ead5c0cd459238a7c7c9c2ee8f",
+    "NG33.md": "73facb10af235a015846a921493ec3ff05e8051dabc66c352f65b8d9340878aa",
+    "PROJECTION-CONTEXT.md": "c0d9728c684fa3ac7337559415b4b7d6edf9edc1477df85eed58744da5ccdaa8",
+    "TARGET.md": "cf9bb1975cce71a0d57282713f91361b7b92559ce742f92f1772461c9e1422bf",
+    "WAVE-FACTORIAL-CONTEXT.md": "67d86e7ac9d203796aa33992b72ba8ab91d36b5e56ff49e9628450b96155d288"
+  },
+  "target": "TARGET.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "33e89279b0fe01571585d58db6535ffe7b7b09c9e238ce6c044951449018c56f",
+  "effort_requested": null,
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": "PASS",
+  "accepted": true,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [],
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "NG13.md": [
+        "NG13.md"
+      ],
+      "NG16.md": [
+        "NG16.md"
+      ],
+      "NG18.md": [
+        "NG18.md"
+      ],
+      "NG19.md": [
+        "NG19.md"
+      ],
+      "NG33.md": [
+        "NG33.md"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": null
+  },
+  "cli_version": "2.5.2",
+  "executable": "<HOME>/.kimi-code/bin/kimi",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "<HOME>/.kimi-code/bin/kimi",
+    "version": "2.5.2"
+  },
+  "auth": {
+    "provider": "managed:kimi-code",
+    "source": "oauth"
+  },
+  "configured_effort": "max",
+  "model_requested": "kimi-code/k3",
+  "command_without_prompt": [
+    "<HOME>/.kimi-code/bin/kimi",
+    "--model",
+    "kimi-code/k3",
+    "--output-format",
+    "stream-json",
+    "--agent-file",
+    "<HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment/reviews/2026-11-12-nogo-gold-repairs/kimi-attempt-01/kimi-reviewer.md",
+    "--prompt",
+    "<retained prompt.txt>"
+  ],
+  "prompt_transport": "argv",
+  "prompt_bytes": 5040,
+  "prompt_sha256": "53b688fe7d68da1b76f3339e2f9315a066bed2ca40e7abaa4c563a8d2b19a440",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "provider_error": false,
+  "session_id": "session_a3340a18-18ae-4b60-8b17-4cbe15a994be",
+  "model_actual": "k3",
+  "model_alias_actual": "kimi-code/k3",
+  "effort_actual": "max",
+  "usage_records": [
+    {
+      "inputOther": 1860,
+      "output": 408,
+      "inputCacheRead": 2048,
+      "inputCacheCreation": 0
+    },
+    {
+      "inputOther": 1987,
+      "output": 274,
+      "inputCacheRead": 3840,
+      "inputCacheCreation": 0
+    },
+    {
+      "inputOther": 5434,
+      "output": 216,
+      "inputCacheRead": 5888,
+      "inputCacheCreation": 0
+    },
+    {
+      "inputOther": 4817,
+      "output": 198,
+      "inputCacheRead": 11264,
+      "inputCacheCreation": 0
+    },
+    {
+      "inputOther": 25681,
+      "output": 33725,
+      "inputCacheRead": 15872,
+      "inputCacheCreation": 0
+    }
+  ],
+  "actual_route_verified": true,
+  "tool_calls_observed": [
+    "Read"
+  ],
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "4d2672f867d6f9e791e06a7bbef9a195616a21691396c1123dd1ff215417af75",
+  "status": "review-complete",
+  "confidence": "high",
+  "report_interpretation": {
+    "contract_schema": "subscription-review-report/1",
+    "report_schema": "subscription-review-report/1",
+    "legacy_mode": null,
+    "normalized_verdict": "PASS",
+    "normalized_confidence": "high",
+    "normalized_check_verdicts": [
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "report_sha256": "2fdb10acbbe63672ace45eab08a1baf54bc34f9e644d93706a49950f6b5eef6e",
+  "report_text_format": "bare",
+  "report_body_sha256": "4d2672f867d6f9e791e06a7bbef9a195616a21691396c1123dd1ff215417af75",
+  "finished_utc": "2026-11-12T16:45:53.191472+00:00",
+  "elapsed_seconds": 588.775,
+  "transport_events_sha256": "a5d1b5a4bbb579272f2cd4a2b8a48df4edd01f425e17afeb6b072bb8234ee31d",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
