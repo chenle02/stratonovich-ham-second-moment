@@ -10,7 +10,7 @@ Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine
 
 | Item | Current state |
 |---|---|
-| Current wave | **L8 OPEN** (approved 2026-11-12): six of nine items done and verified on their branches (a `b561f2a`, b `d339819`, d `8cd7e26`, e `e9b6dbc`, g `f33ab21`, h `efdba69`); c1, c2, f running. **L9 APPROVED** (2026-11-12, defaults): launches on <MACHINE> after the L8 integration commit. **L10 PROPOSED** (independent cores on <MACHINE>; bullet "WAVE L10" below), awaiting Le's approval |
+| Current wave | **L8 OPEN** (approved 2026-11-12): six of nine items done and verified on their branches (a `b561f2a`, b `d339819`, d `8cd7e26`, e `e9b6dbc`, g `f33ab21`, h `efdba69`); c1, c2, f running. **L9 APPROVED** (2026-11-12, defaults): launches on <MACHINE> after the L8 integration commit. **L10 OPEN** (approved 2026-11-12): R2, W0, FS0, A1 running on <MACHINE>; dependent items wait for L8/L9 inputs. L8: all nine items integrated on wave-l8/int (d7a6a27); docs, comparator, receipts, reviews next. L9: six agents running on <MACHINE> |
 | Last closed gate | **L7**, closed by Le 2026-11-12 at companion `f3be834` over manuscript `a284420`, together with the re-anchor from `975feb3` |
 | Manuscript anchor | Article `a284420` (#3's two approved edits: `L:spatial-fourier-bound`, `E:damped-multiplier-comparison`) |
 | Companion | `chenle02/stratonovich-ham-second-moment-lean`, PRIVATE (HOLD: no public flip without Le); lean-pkg `verified-private` at `f3be834` (receipts `5aa557b`: comparator PASS over all 1430 theorem claims; lower tier 0 sorry, 1731 claim axioms, standard axioms only); docs-only HEAD `fcdf252`; `claims ledger` READY, 1071 required, 1681 verified, 0 open |
@@ -25,7 +25,7 @@ Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine
 | Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
 | Compute | this laptop: L8 agents, integration, receipts; Office (36 cores): companion built at `0269e61`, `office-lean.sh` compile wrapper, Easley route, L9 compiling; <MACHINE> (12 cores): L10 independent items (companion being built there) |
-| Decisions open for Le | approve L10 (nine defaults); the L8 gate (after its reviews); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
+| Decisions open for Le | the L8 gate (after its reviews); L8-f's extra supplied input (chain measures by their mass); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
 | Next actions | L8 items -> integration, docs, comparator, receipts, reviews, Le's gate; collect the Easley L7 replay (via <MACHINE>) |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
@@ -550,8 +550,12 @@ Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
-- **WAVE L10: PROPOSED (2026-11-12) for Le's approval; independent items to
-  run on <MACHINE>.** From a read-only preparation with every name probed by
+- **WAVE L10: APPROVED by Le (2026-11-12) as proposed, with the default
+  answers to the nine decisions; the four independent items (R2, W0, FS0, A1)
+  launched on <MACHINE>; dependent items start when their L8/L9 inputs are
+  integrated.** Le, verbatim: "I approve Lean wave L10 as proposed in
+  lean-progress/PROGRESS.md, with the default answers to its nine decisions."
+  Proposal as written: From a read-only preparation with every name probed by
   compiling on <MACHINE> (companion built there at 0269e61; homedell-lean.sh,
   homedell-build.sh; draft and probes in session scratch l10-prep/). Each
   candidate is split into an INDEPENDENT core (imports only L1-L7 modules;
@@ -1203,6 +1207,7 @@ Last updated: 2026-11-12, milestone tags and COMPLETION.md added; L8 six of nine
 | L9 | PROPOSED | 2026-11-12 | Seven items (+1 optional) to run on <MACHINE>: exact occupation ceiling (A1, A2), Hermite/Fock foundation and consumers (H1, H2), wave Green Fourier d = 2, 3 (G), L:phase-contractions (P), L:low-alpha-convolution (L); awaiting Le's approval |
 | L9 | APPROVED (Le) | 2026-11-12 | Default decisions; launches on <MACHINE> after the L8 integration commit |
 | L10 | PROPOSED | 2026-11-12 | Independent cores on <MACHINE> (higher-Riesz d = 2, white-model prerequisites, fixed-split core, alpha-one convolution); dependent assemblies after L8/L9; awaiting Le's approval |
+| L10 | OPEN (approved by Le) | 2026-11-12 | Defaults; R2, W0, FS0, A1 launched on <MACHINE>; FS1, W1, R3, A1i wait for their inputs |
 
 ## New proof seams retained for later statement fences
 
