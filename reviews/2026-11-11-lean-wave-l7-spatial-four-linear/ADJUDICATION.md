@@ -1,0 +1,11 @@
+# Adjudication: wave-L7 correspondence review, SpatialFourLinear and SpatialOccupationL7Completed
+
+- **Object:** the wave-L7 ledger section(s) SpatialFourLinear and SpatialOccupationL7Completed, their index rows, claims.yaml summaries, coverage rows and cross-references at companion `a8fb495` (manuscript `975feb3`). Reviewer: Codex GPT-6.1-Sol, effort high, read-only, `CODEX_HOME` workaround; frozen packet with every library module (the item's own modules read completely), claims.yaml, coverage.yaml, docs/coverage-scope-tex.yaml and all TeX inputs at `975feb3`; contract-check, dry run and contract-check on the dispatched prompt clean.
+- **Result:** valid, **FAIL**, confidence high, receipt accepted: False; 110 checks: 1 FAIL, 108 PASS, 1 PASS_WITH_NOTES; 2 finding(s), all documentation, none in a Lean statement or proof.
+
+| ID | Sev | Disposition | Verified | Repair (companion branch `l7-repair`, merged at d2d29df) |
+|---|---|---|---|---|
+| W1 | major | **ACCEPTED** | verified: Gamma_tempered is used through spatial_smooth_score_completed_paper -> staticControls_of_homog -> SpatialStaticControls.spatial_static_score_paper (hH.Γ_tempered). The module doc and ledger now say it is used by the two energy-score wrappers; only Gamma_posdef and mu_even are unused; positivity of A_sp uses only Gamma_radon and scaling. A mechanical audit of every "carried but unused" claim in the eight wave-L7 modules (a metaprogram walking each declaration's reachable constants for HomogCovariance projections, plus an unused-binder scan; positive control: it found this Gamma_tempered use) found one further wrong claim, _ha0 in IntervalScalar.static_block_series, also fixed | `319cc2e, 26e30aa` |
+| W2 | minor | **ACCEPTED** | verified: H1Tendsto is L^2 convergence of the functions and of their weak gradients; the scope sentence now reads "H^1 convergence of the four profiles, that is L^2 convergence of each function and of its weak gradient" | `1e481f7` |
+
+Every finding was verified against the Lean source and the TeX at `975feb3` before repair; none was declined. Lean files were changed in doc comments only (stripped sources identical to a8fb495, rebuilt; CheckFidelity 1430/1430, 0 problems after regeneration). Companion main after the merge: `d19c71a`. A confirmation review follows; the gate is Le's decision.

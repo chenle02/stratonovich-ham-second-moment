@@ -1,0 +1,317 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-1248 \u2014 complete.",
+    "candidate/statement-ledger.md:1-546,682-697,1977-2264,3539-3592,5940-6000 \u2014 partial file; required Scope, Index, target sections and relevant cross-references complete.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalar.lean:1-1217 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean:1-193 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/InventoryProduct.lean:1-698 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/SeriesType.lean:1-339 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/TypeContinuity.lean:899-914 \u2014 partial file; required named definitions nuOf and betaOf complete.",
+    "lean/claims.yaml:9597-9668,10308-10525,11713-12072 \u2014 partial file; entries for all four required modules complete.",
+    "lean/coverage.yaml:1-1171 \u2014 complete.",
+    "docs/coverage-scope-tex.yaml:1-42 \u2014 complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:180-220,1975-2000,2090-2105,2450-2480,2490-2540,2580-2758,2900-3030,3320-3520 \u2014 partial file; all required manuscript ranges complete.",
+    "All manuscript .tex files were searched for the labels cited in the target sections; all matching definitions occur in the main manuscript at the locations reported in the checks."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.exp_mul_two_k_add_one_le: C:static-interaction",
+      "verdict": "PASS",
+      "reason": "Ledger:2073 and claims.yaml:11717 match IntervalScalar.lean:90-91: 'hk : 1 \u2264 k' gives 'exp 1 * (2*k+1) \u2264 (3*exp 1)^k'. TeX:2689 states 'e(2k+1) \u2264 (3e)^k', used for k\u22652. Lean's k\u22651 generalization is harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.tail_sum_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:2074 and claims.yaml:11724 match IntervalScalar.lean:111-113: '1 \u2264 \u03b3', '0 \u2264 x', arbitrary m, with the stated partial-sum bound. TeX:2691-2696 instead treats the infinite tail with '\u03b3 > 1'. The finite partial-sum formulation is correctly identified as a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.tail_series_le: C:static-interaction",
+      "verdict": "PASS",
+      "reason": "Ledger:2075 and claims.yaml:11731 match IntervalScalar.lean:134-138: '1 \u2264 \u03b3', '0 \u2264 x', Summable and tail \u2264 x\u00b2 exp(\u03b3x^(1/\u03b3)). TeX:2691-2696 has the same tail estimate under '\u03b3 > 1'. Including \u03b3=1 strengthens the result without restricting its manuscript application."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.pair_norm_le: C:static-interaction",
+      "verdict": "PASS",
+      "reason": "Ledger:2076 and claims.yaml:11738 match IntervalScalar.lean:146-150: 'M,a,\u03b3,N \u2265 0', the all-n norm bound and 'r+s=2*k'. TeX:2673-2688 supplies that bound with M=\u221ae/(\u03bbh), a=A\u221aR h^((4\u2212\u03b1)/2), and uses 'r!s! \u2265 (k!)\u00b2', including zero indices. The abstract pair estimate is the stated proof step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.square_sum_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:2077 and claims.yaml:11745 match IntervalScalar.lean:171-174: 'Odd (r+s) \u2192 c r s = 0' and finite square-sum regrouping. TeX:2679-2682 has odd-pair cancellation but directly regroups absolutely convergent double series. The different finite-sum route is explicitly recorded, not attributed to a TeX display."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.static_interaction_assembly: C:static-interaction",
+      "verdict": "PASS",
+      "reason": "Ledger:2078 and claims.yaml:11752 match IntervalScalar.lean:202-211: complete real Hilbert space, 'N\u22650, K\u22651, a\u22650, \u03b3\u22651', hY0, hY, hodd and '|<Y1,Y1>+2<Y0,Y2>|\u2264Lc*N\u00b2'. TeX:2661-2697 supplies these with K=(\u03bbh)^\u22121 and the displayed order and first-coefficient bounds. The generalized conclusion and partial-sum proof route are accurately described."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.staticL: C:static-interaction",
+      "verdict": "PASS",
+      "reason": "Ledger:2079 and claims.yaml:11759 reproduce IntervalScalar.lean:323-325: '4*exp 1*R*h\u00b2*lam^(alpha\u22122) + 4*\u221a(exp 1)*D/((2\u2212alpha)*(3\u2212alpha))*(h^(3\u2212alpha)/lam)'. TeX:2623-2626 has exactly 4e and 4\u221ae. This is an unrestricted scalar definition; manuscript applications supply positive h,\u03bb and \u03b1<2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.staticB: C:static-interaction",
+      "verdict": "PASS",
+      "reason": "Ledger:2080 and claims.yaml:11766 match IntervalScalar.lean:328: 'staticB A := 3*exp 1*A\u00b2'. TeX:2620 defines 'B_alpha=3e A_alpha\u00b2'. There are no additional hypotheses in the definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.staticX: C:static-interaction",
+      "verdict": "PASS",
+      "reason": "Ledger:2081 and claims.yaml:11773 match IntervalScalar.lean:331: 'staticB A * \u03c3\u00b2 * R * h^(4\u2212alpha)'. TeX:2627 defines 'x=B_alpha \u03c3\u00b2 R_alpha h^(4\u2212alpha)'. Parameters are correctly abstracted as real scalars."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.staticE: C:static-interaction",
+      "verdict": "PASS",
+      "reason": "Ledger:2082 and claims.yaml:11780 match IntervalScalar.lean:335-338: '\u03c3\u00b2*staticL + (lam*h)\u207b\u00b9\u00b2*(staticX\u00b2*exp((3\u2212alpha)*staticX^(1/(3\u2212alpha))))'. TeX:2620,2628-2630 has \u03b3=3\u2212\u03b1 and precisely this expression. Positive manuscript \u03bb,h justify the inverse-power notation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.first_coefficient_le: C:static-interaction",
+      "verdict": "PASS",
+      "reason": "Ledger:2083 and claims.yaml:11787 match IntervalScalar.lean:346-352: 'alpha<2', 'R,D\u22650', 'lam,h>0', 'lam*h\u22641', '0\u2264b', hborn and hmean. TeX:2664-2669 bounds b by e times E:phase-born and 2|m| by 2N\u221ae times E:phase-mean; TeX:2095-2101 supplies the identical factors and denominator \u03bb(2\u2212\u03b1)(3\u2212\u03b1). Neither supplied bound is strengthened."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.staticE_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:2084 and claims.yaml:11794 match IntervalScalar.lean:392-393: 'alpha<2', 'R,D\u22650', 'lam,h>0' imply '0\u2264staticE', for arbitrary A,\u03c3. TeX:2720-2721 uses '1+y\u2264e^y for y\u22650'. The separate sign lemma is correctly a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.static_interaction_step: E:static-interaction",
+      "verdict": "PASS",
+      "reason": "Ledger:2085 and claims.yaml:11801 match IntervalScalar.lean:420-433. Lean's 'hY0 : \u2016Y 0\u2016=N', displayed hY, 'Odd(r+s) \u2192 inner=0', hborn and hmean correspond respectively to TeX:2664,2673-2679,2667-2669 and2095-2101. The constants, \u03bbh\u22641 and \u03b1 range agree. The real-Hilbert abstraction, unused \u03b1>0 and missing interaction-map identification are explicitly disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.summable_dyadic_rpow: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:2086 and claims.yaml:11808 match IntervalScalar.lean:463-464: '0<lam', '0<q' imply summability of ((1/2)^j/lam)^q. TeX:2712-2713 says the positive powers yield convergent geometric series. This standalone formulation is correctly marked auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.block_term_le: C:static-interaction",
+      "verdict": "PASS",
+      "reason": "Ledger:2087 and claims.yaml:11815 match IntervalScalar.lean:480-488: 'alpha<2', 'R\u22650', positive \u03bb,T,q, 'q\u2264lam\u207b\u00b9', \u03b2>0 and 's\u00b2=q^(\u2212alpha0)'. TeX:2699-2713 uses \u03b2>2 and the same three powers 1\u2212\u03b10, 2\u2212\u03b1\u2212\u03b10, 2\u03b2\u22123. The exponential endpoint bound and all displayed constants agree; arbitrary D is harmless because its term is retained exactly."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.static_block_series: E:static-block-series",
+      "verdict": "PASS",
+      "reason": "Ledger:2088 and claims.yaml:11822 match IntervalScalar.lean:543-548, including the expressly recorded carried '0<alpha' and '0<alpha0'. TeX:2638-2641 assumes '0<alpha0<1', 'alpha+alpha0<2', h_j=2^\u2212j/\u03bb and \u03c3_j\u00b2=h_j^\u2212\u03b10. Lean proves the full summability statement; R,D nonnegativity is explicit in this general form."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.independent_blocks_scalar: C:static-interaction",
+      "verdict": "PASS",
+      "reason": "Ledger:2089 and claims.yaml:11829 match IntervalScalar.lean:566-568: '\u2200j,0\u2264E j', '0\u2264m 0' and the recurrence for j<K. TeX:2719-2721 iterates e^(\u03bbh_j)(1+E_j) and uses '1+y\u2264e^y'. The abstract recurrence and final exponent accurately capture this scalar step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.ralpha_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:2090 and claims.yaml:11836 match IntervalScalar.lean:588-590: any measure \u03bc and '0<alpha<2' give nonnegativity of the formula with '(\u03bc(ball 0 1)).toReal'. TeX:1988,2747 defines the same R_alpha for Radon measures. The broader toReal sign lemma is correctly auxiliary, with no assertion of finite mass for arbitrary measures."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.dgamma_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:2091 and claims.yaml:11843 match IntervalScalar.lean:598-600: any measure \u0393 and 'alpha<2' give nonnegativity of '(3\u2212alpha)*\u0393(B1).toReal/(4\u03c0)*(2^alpha+3^(2\u2212alpha)/(2\u2212alpha))'. TeX:1989-1991 defines D_Gamma by exactly these factors. Correct auxiliary classification."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.static_interaction_paper: E:static-interaction",
+      "verdict": "PASS",
+      "reason": "Ledger:2092 and claims.yaml:11850 match IntervalScalar.lean:614-634. Lean assumes locally finite \u03bc,\u0393 on R\u00b3 and '0<alpha<2', with the R,D formulas; TeX:1981-1992 has the full covariance class. Its omitted clauses enter only through the disclosed hY0/hY/hodd/hborn/hmean, identical to TeX:2664-2679. The weaker model identification and unused local-finiteness hypotheses are recorded."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.static_block_series_paper: E:static-block-series",
+      "verdict": "PASS",
+      "reason": "Ledger:2093 and claims.yaml:11857 match IntervalScalar.lean:642-654: locally finite \u03bc,\u0393 on R\u00b3, '0<alpha', '0<alpha0<1', 'alpha+alpha0<2', positive \u03bb,T and the dyadic \u03c3\u00b2 identity. TeX:2638-2641 states precisely the resulting series convergence, with constants from1985-1992. No analytic input is assumed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.independent_static_blocks_paper: E:independent-static-blocks",
+      "verdict": "PASS",
+      "reason": "Ledger:2094 and claims.yaml:11864 match IntervalScalar.lean:665-676. Lean's supplied 'm(j+1)\u2264exp(lam*h j)*(1+staticE)*m j' is the per-block bound in TeX:2714-2720. Its exponent matches TeX:2647-2652 after the stated index shift. The carried \u03bbh_j\u22641, local finiteness and unformalized operator extensions are disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.invV: L:inventory-product",
+      "verdict": "PASS",
+      "reason": "Ledger:2095 and claims.yaml:11871 match IntervalScalar.lean:688-690: 'i^(\u2212\u03b2)+k\u207b\u00b9*i^(\u2212(\u03b2\u22121))+k^(alpha\u22122)*i^(\u2212(2\u2212alpha0))'. TeX:2914-2917 specifies k\u22651 and the same v_i for product indices i\u22651. The unrestricted Lean definition merely extends the formula outside its manuscript use."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.invB: L:inventory-product",
+      "verdict": "PASS",
+      "reason": "Ledger:2096 and claims.yaml:11878 match IntervalScalar.lean:694-695: 'i^(\u2212\u03b2*l)*(1+l*i/k)\u00b2/(l!)^(3\u2212alpha)'. TeX:2914,2918 has k\u22651 and l\u22652, with identical formula. The definition is unrestricted, but invCoeff uses this branch only for l\u22652."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.invCoeff: E:inventory-product",
+      "verdict": "PASS",
+      "reason": "Ledger:2097 and claims.yaml:11885 match IntervalScalar.lean:699-700: 'if l=0 then 1 else if l=1 then invV else invB'. TeX:2922 gives '1+v_i z+sum_(l\u22652)b_(i,l)z^l'. Thus the coefficient object, including the constant and singleton branches, agrees."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.InventoryProduct: E:inventory-product",
+      "verdict": "PASS",
+      "reason": "Ledger:2098 and claims.yaml:11892 match IntervalScalar.lean:707-710: '\u2200 M k,1\u2264k \u2192 coeff k (prod j:Fin M \u2026(j+1))\u2264C^k/(k!)^(3\u2212alpha)'. TeX:2920-2924 chooses C independently of M,k and gives the same bound. The row correctly distinguishes this predicate from a theorem and identifies its later discharge."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.splitEll: L:fixed-split",
+      "verdict": "PASS",
+      "reason": "Ledger:2099 and claims.yaml:11899 match IntervalScalar.lean:714: '(if 0<p.1 then 1 else 0)+(if 0<p.2 then 1 else 0)'. TeX:2982,3002 uses nonnegative integer splits and defines 'ell_i=1_(r_i>0)+1_(q_i>0)'. This is the definition only, not the fixed-split lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.splitFactor: E:fixed-split-bound",
+      "verdict": "PASS",
+      "reason": "Ledger:2100 and claims.yaml:11906 match IntervalScalar.lean:721-724: inactive factor 1, cross singleton '\u03c3\u00b2h\u00b2lam^(alpha\u22122)', otherwise the factorial and metric factor. TeX:2999-3016 defines C and B and supplies exactly these products under r_i+q_i=2k_i. The row correctly limits the claim to the per-color factor."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.splitEll_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:2101 and claims.yaml:11913 match IntervalScalar.lean:727: arbitrary p has 'splitEll p\u22642'. TeX:3019-3020 says 'a higher color has at most two metric factors'. The unrestricted elementary helper is appropriately auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.splitFactor_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:2102 and claims.yaml:11920 match IntervalScalar.lean:731-734: '0<h', '0<lam', arbitrary \u03b1,\u03c3,\u03ba,p imply nonnegativity. TeX:3011-3016 uses positive lengths and \u03bb=k/T>0. No separate labelled sign statement exists, so the auxiliary mapping is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.invCoeff_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:2103 and claims.yaml:11927 match IntervalScalar.lean:737-739: all real \u03b1,\u03b10 and natural k,i,l satisfy '0\u2264invCoeff'. TeX:2913,2928 calls these 'nonnegative coefficients' and the 'positive product', in the positive-index regime. This broader sign helper is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.H_rpow: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:2104 and claims.yaml:11934 match IntervalScalar.lean:742-744: '0\u2264L', '0\u2264T', '0<i' give '(L*T/i)^q=L^q*T^q*i^(\u2212q)' for real q. TeX:3455-3464 substitutes h=LT/i with positive T,i and L\u22651 but does not state this standalone identity. Correct route-auxiliary mapping."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.singleton_weight_le: P:interval-coefficients",
+      "verdict": "PASS",
+      "reason": "Ledger:2105 and claims.yaml:11941 match IntervalScalar.lean:751-756: '1\u2264\u03b2', h,T>0, L\u22651, k,i\u22651 and 'h\u2264LT/i'. TeX:3437-3438,3452-3464 has \u03b2>2 and the same length substitution at \u03bb=k/T. Lean's weaker \u03b2 condition and extracted L^\u03b2 agree with the stated singleton step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.cross_weight_le: P:interval-coefficients",
+      "verdict": "PASS",
+      "reason": "Ledger:2106 and claims.yaml:11948 match IntervalScalar.lean:783-787: 'alpha\u22642', 'alpha0\u22642', positive h,T, L\u22651, k,i\u22651 and h\u2264LT/i. TeX:3439,3453-3464 uses \u03b1<2 and p=2\u2212\u03b10>0. The resulting L^\u03b2 T^\u03b2 k^(\u03b1\u22122)i^\u2212p bound is a valid generalized version of precisely that substitution."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.higher_weight_le: P:interval-coefficients",
+      "verdict": "PASS",
+      "reason": "Ledger:2107 and claims.yaml:11955 match IntervalScalar.lean:813-818: '1\u2264\u03b2', '2\u2264l', positive h,T, L\u22651, k,i\u22651 and h\u2264LT/i. TeX:3448-3456 uses \u03b2>2,l\u22652 to make all powers positive. Lean allows nonnegative limiting exponents and proves the same whole-weight estimate; it does not incorrectly bound the inverse-length factor separately."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.two_mul_add_one_le_three_pow: P:interval-coefficients",
+      "verdict": "PASS",
+      "reason": "Ledger:2108 and claims.yaml:11962 match IntervalScalar.lean:857: arbitrary natural k has '2*k+1\u22643^k'. TeX:3414-3415 uses 'prod_i(2k_i+1)\u22643^k' with nonnegative k_i summing to k. The per-color inequality is exactly the elementary split-count input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.color_split_sum_le: P:interval-coefficients",
+      "verdict": "PASS",
+      "reason": "Ledger:2109 and claims.yaml:11969 match IntervalScalar.lean:869-875. Lean assumes 'alpha<2', '0<alpha0<1', threshold, positive h,T, L\u22651,c\u22650,k,i\u22651, h\u2264LT/i and '\u03c3\u00b2\u2264c*h^(\u2212alpha0)'. TeX:2973,3426-3464 supplies these and combines singleton alternatives before counting splits. The bound '(3cL^\u03b2T^\u03b2)^l invCoeff' counts the split factor once."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.kvector_sum_eq_coeff: P:interval-coefficients",
+      "verdict": "PASS",
+      "reason": "Ledger:2110 and claims.yaml:11976 match IntervalScalar.lean:967-972: arbitrary \u03b1,\u03b10,M,k, sum over 'finsuppAntidiag k' equals the product coefficient. TeX:3466-3471 states 'sum_(sum k_i=k) prod_i w_(i,k_i)=[z^k]prod_i(sum_l w_(i,l)z^l)'. Finite color indexing and ordinary, not exponential, coefficients agree; no multinomial factor is introduced."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.interval_coefficient_assembly: E:interval-coefficient-bound",
+      "verdict": "PASS",
+      "reason": "Ledger:2111 and claims.yaml:11983 match IntervalScalar.lean:991-1005. Lean's 'hsplits : coef=\u03a3\u03ba \u03a3p Q p' matches TeX:3405-3415 after parity; 'hfixed : |Q p|\u2264k\u00b2 Cs^k R^k V prod splitFactor' matches TeX:3009-3016 after the stated cutoff identification; 'hinv' matches TeX:2921-2924. The inventory hypotheses match2973. The constant 12=4\u00b73 and all exponents match3426-3474."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.interval_phase_bound_of_coefficients: E:interval-phase-bound",
+      "verdict": "PASS",
+      "reason": "Ledger:2112 and claims.yaml:11990 match IntervalScalar.lean:1077-1083: '\u03bd\u22651', C,R,V\u22650,T>0, 'c(2k+1)=0', 'c 0\u2264eV', the even-coefficient bound and 'energy=tsum c'. TeX:3410-3412,3486-3505 supplies parity, the power-series identity, 'zero-order energy\u2264e\u2016v\u2016\u00b2' and the same coefficient estimate with \u03bd>1. Summability is concluded, not assumed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.homog_alpha_range: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:2113 and claims.yaml:11997 match IntervalScalar.lean:1130-1140: 'hH : HomogCovariance \u2026' implies 0<\u03b1<2,0<\u03b10<1 and \u03b1+\u03b10<2. TeX:190-207 assumes '0<\u03b10<1', threshold and '0<\u03b1<d, or \u03b1=d=1'. These imply the claimed range. The extraction lemma is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.interval_coefficient_assembly_paper: E:interval-coefficient-bound",
+      "verdict": "PASS",
+      "reason": "Ledger:2114 and claims.yaml:12004 match IntervalScalar.lean:1157-1175. Lean carries '_hRpos : 0<R' and '_h\u03c3pos : \u2200i,0<\u03c3 i'; TeX:2981-2983 assumes these for L:fixed-split, while3344-3350 reduces the general proposition to that regime. The ledger explicitly records the narrowing and omitted reductions. hsplits/hfixed/hinv match the cited displays, and C=12 max(c,0) max(1,L)^\u03b2 Cs Cinv is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalar.interval_phase_bound_paper: E:interval-phase-bound",
+      "verdict": "PASS",
+      "reason": "Ledger:2115 and claims.yaml:12011 match IntervalScalar.lean:1200-1215. Lean assumes H:homog, R's formula, 'C,V\u22650', T>0, hodd,h0,hcoef,henergy. TeX:2747,3410-3412,3497-3506 supplies the same formula and scalar facts. The exponent '(3\u2212\u03b1) C^(1/(3\u2212\u03b1)) R^(1/(3\u2212\u03b1)) T^(\u03b2/(3\u2212\u03b1))' matches the explicitly absorbed constant at3505."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalarCompleted.invV_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:2166 and claims.yaml:12019 match IntervalScalarCompleted.lean:62-64: arbitrary real \u03b1,\u03b10 and 'k i : \u2115', with invV=vCoef. TeX:2914-2917 defines only the underlying v_i for k\u22651 and positive indices, not a module bridge. The unrestricted equality of Lean definitions is correctly classified as an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalarCompleted.invB_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:2167 and claims.yaml:12026 match IntervalScalarCompleted.lean:68-70: arbitrary 'k i l : \u2115', invB=bCoef. TeX:2918 has the same formula for l\u22652, k,i\u22651 but no inter-module equality. The bridge and its unrestricted quantifiers are accurately described."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalarCompleted.invCoeff_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:2168 and claims.yaml:12033 match IntervalScalarCompleted.lean:75-77: arbitrary real \u03b1,\u03b10 and natural k,i,l, 'invCoeff \u2026=factorCoeff \u2026'. TeX:2922 supplies the factor '1+v_i z+sum_(l\u22652)b_(i,l)z^l'; it contains no bridge statement. Correct auxiliary mapping."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalarCompleted.prod_fin_eq_inventoryProduct: no direct label",
+      "verdict": "PASS",
+      "reason": "Ledger:2169 and claims.yaml:12040 match IntervalScalarCompleted.lean:82-96: arbitrary \u03b1,\u03b10,M,k, product over 'j:Fin M' at j+1 equals inventoryProduct over Icc 1 M. TeX:2922 uses 'prod_(i=1)^M'. This is an exact reindexing, including M=0, correctly marked as a bridge rather than a manuscript proof step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalarCompleted.inventoryProduct_holds: L:inventory-product",
+      "verdict": "PASS",
+      "reason": "Ledger:2170 and claims.yaml:12047 match IntervalScalarCompleted.lean:104-111: '0<alpha0', 'alpha0<1', 'alpha0+alpha<2' yield InventoryProduct with inventoryConst. TeX:2738-2741,2913-2924 has the same exponents and a C independent of M,k. InventoryProduct.lean:638-694 proves this input; the bridge preserves all coefficients and fixes C before M,k."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalarCompleted.inventoryProduct_holds_paper: L:inventory-product",
+      "verdict": "PASS",
+      "reason": "Ledger:2171 and claims.yaml:12054 match IntervalScalarCompleted.lean:120-127: 'hH : HomogCovariance \u2026' gives '0<inventoryConst \u2227 InventoryProduct \u2026'. TeX:190-207 supplies H:homog, and2920-2924 requires a finite parameter-only C. Only alpha0_pos, alpha0_lt_one and threshold enter the discharge, exactly as recorded."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalarCompleted.interval_coefficient_assembly_completed: E:interval-coefficient-bound",
+      "verdict": "PASS",
+      "reason": "Ledger:2172 and claims.yaml:12061 match IntervalScalarCompleted.lean:140-156. Lean retains 'hsplits : coef=\u03a3\u03ba\u03a3p Q p' and 'hfixed : |Q p|\u2264k\u00b2 Cs^k R^k V prod splitFactor', corresponding to TeX:3405-3415 and3009-3016; the remaining inventory assumptions match2973. Only hinv is removed, using inventoryProduct_holds. The conclusion uses exactly Cinv=inventoryConst."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.IntervalScalarCompleted.interval_coefficient_assembly_paper_completed: E:interval-coefficient-bound",
+      "verdict": "PASS",
+      "reason": "Ledger:2173 and claims.yaml:12068 match IntervalScalarCompleted.lean:171-191. Lean retains H:homog, R's formula, '_hRpos', '_h\u03c3pos', hsplits and hfixed; TeX:2747,2981-3016,3405-3415 supplies their positive-noise proof regime. The omitted zero-noise/sign reductions of3344-3350 remain explicitly disclosed. The exact constant is 12 max(c,0) max(1,L)^\u03b2 Cs inventoryConst."
+    },
+    {
+      "claim": "PARA-IntervalScalar",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:1979-2069 accurately explains the real-Hilbert and scalar abstractions, supplied inputs, carried hypotheses, partial-sum route, constants, complete block-series result and unformalized operator/model identifications. All manuscript anchors checked agree. W1 concerns only the overly broad wording of the junk-value sentence, not a bound or correspondence failure."
+    },
+    {
+      "claim": "PARA-IntervalScalarCompleted",
+      "verdict": "PASS",
+      "reason": "Ledger:2119-2162 accurately describes IntervalScalarCompleted.lean:62-191: four proved bridges, complete discharge of hinv, unchanged hsplits/hfixed, unchanged positive-noise narrowing and explicit constant. The original two assembly statements and the completed statements have identical remaining hypotheses. The cited TeX ranges identify the correct results."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "The complete Index, ledger:281-546, lists all 43 IntervalScalar and eight IntervalScalarCompleted declarations exactly once at520-534, under the same labels as their section rows. All 15 route auxiliaries occupy no-direct-label rows. Searching all manuscript TeX inputs found every label cited in the target sections, with no duplicate definitions."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:40-75 and715-752 correctly use 'inputs-supplied' and 'weaker', distinguish the full block-series display, disclose the operator/model inputs and positive-noise narrowing, and record the inventory discharge. Their claims resolve to the checked declarations. docs/coverage-scope-tex.yaml:7-9,22-24 faithfully reproduces both conclusion-scope sentences."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Relevant references in Scope:198-206, InventoryProduct:2227-2229, SeriesType:3584,3587 and Not in Lean:5966-5980 are substantively consistent with the target sections and TeX. W2 suggests clarifying that Not in Lean excludes the concrete interaction-map identification, not the abstract summability conclusion that Lean proves."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "W1 \u2014 PARA-IntervalScalar, optional domain clarification. Ledger:2065-2068 says 'every real power has a positive base' or an index 'i >= 1'. However, IntervalScalar.lean:688-700 defines the inventory formulas for unrestricted natural k,i, and IntervalScalarCompleted.lean:62-77 explicitly proves bridges with 'k i : \u2115'. TeX:2914-2922 uses 'k \u2265 1' and product indices i=1,\u2026,M. No manuscript estimate relies on exceptional zero-index values. Suggested wording: 'In manuscript-facing bounds, all bases and denominators satisfy the stated positivity conditions; unrestricted definitions and bridge identities also include Lean's totalized zero-index values.'",
+      "W2 \u2014 CROSS-REFERENCES, optional wording clarification. Ledger:5966-5968 places 'the static interaction map and its convergent series sum sigma^n Y_n' under Not in Lean. IntervalScalar.lean:432-433 proves 'Summable (fun n => \u03c3^n \u2022 Y n)', whereas TeX:2614-2618 defines the concrete interaction map by the transported phase series. The target paragraph already distinguishes these correctly at ledger:1997-1999. Suggested wording: 'the construction of the static interaction map and its identification with the abstract convergent series proved in Lean.'"
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Complete-reading requirement A was satisfied. Files marked partial were read to the specified sections or named declarations; unrelated portions were outside this review.",
+    "The review accepts the supplied compilation and supervisor-checked byte-binding assurances; it did not rebuild Lean or independently validate packet hashes.",
+    "Acceptance applies to the disclosed conditional proof steps and inventory completion, not to full formalization of C:static-interaction or P:interval-coefficients.",
+    "This AI correspondence review is not human verification, an independent proof audit, or a novelty audit."
+  ]
+}

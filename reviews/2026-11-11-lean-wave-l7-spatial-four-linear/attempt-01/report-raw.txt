@@ -1,0 +1,601 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-1248 — complete.",
+    "candidate/statement-ledger.md:1-546,1730-1760,3062-3135,3170-3206,3655-3678,3714-3922,3974-4059,5875-5902,5935-5965 — partial file; complete required Scope, Index, target sections and relevant cross-references.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean:1-1749 — complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean:1-383 — complete.",
+    "lean/StratonovichHAMSecondMoment/H1Density.lean:1-672 — complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:1-768 — complete.",
+    "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean:1-448 — complete.",
+    "lean/claims.yaml:4918-5115,8831-9041,10618-11466,12072-12191 — partial file; complete entries for all five required modules.",
+    "lean/coverage.yaml:1-1171 — complete.",
+    "docs/coverage-scope-tex.yaml:1-42 — complete.",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-379 — complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 — complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean:1-178 — complete.",
+    "lean/StratonovichHAMSecondMoment/WeakSobolev.lean:1-140,211-255,275-329 — partial; required weak-gradient, H1, uniqueness and Rayleigh declarations read completely.",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:125-170,775-790,825-899,1080-1161 — partial; required IsUnitH1, zE, pairing bridge and score-wrapper declarations read completely.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:82-106,210-255 — partial; required control, mean, cost and rate definitions read completely.",
+    "lean/StratonovichHAMSecondMoment/VariationalRate.lean:500-520,600-620 — partial; required score-set, S1Bdd and S1pos definitions read completely.",
+    "lean/StratonovichHAMSecondMoment/VariationalFloor.lean:95-110,640-670 — partial; required gradient definition and zero-gradient theorem read completely.",
+    "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean:1-190,387-400,574-588,725-816 — partial; required class, pairing, interface, energy definitions and source wrapper read completely.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean:75-105 — partial; autocorrelation and real-pairing definitions read.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:170-225 — partial; complete standing hypothesis H:homog read.",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-30,95-120,260-330 — partial; relevant control, Rayleigh and boundedness statements read.",
+    "manuscript/notes/integrated_compact_mean_family.tex:380-430 — partial; complete L:compact-raw-profile statement read."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.cross_eq_convolution: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:116-118: unrestricted 'F G' and the convolution identity. TeX integrated_spatial_occupation.tex:172-174 discusses correlations, not this Mathlib identity; auxiliary/no-direct-label mapping is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.cross_integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:124-126: '[IsLocallyFiniteMeasure Γ]', continuous compactly supported F,G imply integrability. TeX integrated_spatial_occupation.tex:172-174 uses local finiteness and compact correlation support; this separately packaged convolution-route auxiliary is correctly unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.inner_integrable: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:135-138 assumes 'Continuous F', 'HasCompactSupport F', 'Continuous G' and concludes integrability for every y, exactly as summarized. TeX integrated_spatial_occupation.tex:172-174 treats smooth compact profiles; this more general inner-integrability helper has no independent labelled assertion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.spatialPair_quad: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries reproduce SpatialFourLinear.lean:143-148, including local finiteness, both compact supports and the mixed-term sum. TeX integrated_spatial_occupation.tex:184-185 says 'quadratic polynomial for Q+tP'; the expanded auxiliary is correctly not presented as a separate manuscript result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.spatialPair_comm: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:187-189 requires 'IsEven Γ', continuous P,Q and compact support only of Q, matching both summaries. TeX integrated_spatial_occupation.tex:183-184 derives symmetry for smooth compact profiles; the more general translation/pushforward helper is correctly marked auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.spatialPair_self_nonneg: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:211-215 assumes 'IsSpectralMeasure Γ μ' and 'IsTestFunction Q', concluding nonnegativity without integrability. Both summaries preserve this qualification. TeX integrated_spatial_occupation.tex:175-181 states 'BΓ(Q,Q)=∫|Q̂|² dμ≥0'; the proof-step mapping is accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.spatialPair_sq_le: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:220-223 requires locally finite even Γ, a spectral measure and real test Q,P; both summaries match its squared inequality. TeX integrated_spatial_occupation.tex:183-188 obtains covariance Cauchy–Schwarz from symmetry and the quadratic polynomial under the same standing assumptions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.l2: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "Both summaries identify the definition '(eLpNorm f 2 volume).toReal' at SpatialFourLinear.lean:239-242. On the manuscript domain 'f∈H¹' in integrated_spatial_occupation.tex:151-152 this is exactly the norm ||f||₂; totalization outside that domain is disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.Nnorm: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:246-247 defines 'l2 f^(1-alpha/4) * l2 g^(alpha/4)'. TeX integrated_spatial_occupation.tex:151-152 defines 'N(f)=||f||₂^(1-alpha/4)||∇f||₂^(alpha/4)'. The named weak gradient and both summaries preserve the object and exponents."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.l2_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries match the unrestricted '0 ≤ l2 f' at SpatialFourLinear.lean:250-251. TeX integrated_spatial_occupation.tex:151 uses a norm on H¹, whose nonnegativity is implicit; the standalone totalized-norm helper is appropriately unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.Nnorm_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:254-255 proves '0 ≤ Nnorm alpha f g' without assumptions, as summarized. TeX integrated_spatial_occupation.tex:151-152 defines N on H¹; this totalized-power helper is not claimed as a separate TeX statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.l2_sq: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:258-259 assumes 'MemLp f 2 volume' and proves 'l2 f ^ 2 = ∫ ||f||²', matching both summaries. TeX integrated_spatial_occupation.tex:151 uses the ordinary L² norm; the conversion lemma is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.Nnorm_pow_four: no direct label",
+      "verdict": "PASS",
+      "reason": "The unrestricted identity at SpatialFourLinear.lean:269-270 matches both summaries, including powers '(4-alpha)/2' and 'alpha/2'. TeX integrated_spatial_occupation.tex:151,154 uses N(f)⁴; the algebraic rewriting is correctly unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.gradEnergy_eq_l2_sq: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:283-288 assumes 'IsTestFunction φ' and identifies gradEnergy with 'l2 (grad φ)^2', as summarized. TeX integrated_spatial_occupation.tex:35 defines 'b(g)=||∇g||₂²'; this classical-gradient bridge is appropriately auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.integral_sq_eq_l2_sq: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:291-293: real 'MemLp f 2 volume' implies '∫ f²=l2 f²'. TeX integrated_spatial_occupation.tex:151 assumes H¹ and ordinary L² norms; this normalization conversion has no independent label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.spatialEnergy_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:296-297 proves nonnegativity for arbitrary Γ,g using totalized Bochner integrals, exactly as summarized. TeX integrated_spatial_occupation.tex:35 initially uses smooth profiles; the ledger correctly avoids asserting finiteness or a separate manuscript result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.gradEnergy_const_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:300-304 assumes 'Differentiable ℝ φ' and proves scaling by c², matching both summaries. TeX integrated_spatial_occupation.tex:170-171 normalizes smooth compact f; this general classical-gradient scaling helper is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.spatialEnergy_const_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries reproduce SpatialFourLinear.lean:307-313: arbitrary Γ,g,c and scaling by c⁴. TeX integrated_spatial_occupation.tex:170-171 uses amplitude normalization for smooth profiles; the unrestricted totalized-integral identity is appropriately unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.isTest_sq: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:316-317 assumes 'IsTestFunction φ' and concludes the same for φ². Both summaries match. TeX integrated_spatial_occupation.tex:190 notes that smooth-profile squares remain smooth and nonnegative; this support/smoothness helper is harmlessly marked auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.smooth_homog_bound: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:323-326 assumes 'alpha < 4' and the unit-test bound with R, concluding the N⁴ bound. Both summaries retain these general-form hypotheses. TeX integrated_spatial_occupation.tex:170-172 normalizes in R₀, including f=0, under 0<alpha<2; the specialization is exact."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.smooth_square_bound: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:375-380 assumes locally finite even Γ, spectral μ, '0 ≤ R' and the smooth homogeneous bound; only the upper square-pairing bound is concluded. Both summaries say so. TeX integrated_spatial_occupation.tex:185-190 gives this smooth bound with R₀."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.smooth_pairing_bound: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:398-408 has the smooth_square_bound hypotheses and concludes the 'ENNReal.ofReal' bound, matching both summaries. TeX integrated_spatial_occupation.tex:186-188 writes the physical real inequality; the explicit extended/real bridge is correctly classified as a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.l2_sub_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:413-417: 'MemLp u 2', 'MemLp f 2' imply '|l2 u-l2 f|≤l2(u-f)'. TeX integrated_spatial_occupation.tex:203 invokes continuity of N; the reverse-triangle helper is appropriately unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.l2_sub_tendsto: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:420-425 assumes only convergence of the extended L² norm of uₙ-f to zero and concludes convergence of its real value. Both summaries match. TeX integrated_spatial_occupation.tex:200-203 uses H¹ approximation; this toReal limit conversion is auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.l2_tendsto: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:429-435 requires all uₙ and f in L² plus L² convergence, precisely as summarized. TeX integrated_spatial_occupation.tex:200-203 invokes continuity of N along H¹ approximation; this norm-convergence helper is correctly unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.Nnorm_tendsto: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:439-445: '0 ≤ alpha', 'alpha ≤ 4' and convergence of the two norms imply the displayed power-product limit. TeX integrated_spatial_occupation.tex:203 uses continuity of N with 0<alpha<2; the general scalar helper is auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.IsH1Pair: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:451-452 defines 'MemLp f 2 ∧ MemLp g 2 ∧ HasWeakGradient f g', matching both summaries. TeX integrated_spatial_occupation.tex:151 says 'real f∈H¹'. WeakSobolev.lean:70-83 supplies the usual weak-gradient definition and a.e. uniqueness, making this representation faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.SquareBound: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:457-460 universally quantifies two H¹ pairs and bounds the extended square pairing by 'ofReal (R N(f)² N(h)²)', as summarized. TeX integrated_spatial_occupation.tex:200-205 proves the R₀ instance by Fatou; the newly named intermediate predicate is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.squareBound_of_smooth: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:469-480 requires local finiteness, '0≤alpha≤4', hdense and the smooth square bound. Both summaries disclose them. TeX integrated_spatial_occupation.tex:192-203 supplies density and applies Fatou. The independent subsequences at Lean:484-489 are accurately recorded, not an extra input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.aesm_fst: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:533-537 assumes locally finite Γ and 'AEStronglyMeasurable f volume', concluding measurability at x; both summaries match. TeX integrated_spatial_occupation.tex:26-31 supplies null-set transfer. The explicit measurability helper is appropriately unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.aesm_sub: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:541-546: local finiteness and a.e.-strong measurability transfer to f(x-y). TeX integrated_spatial_occupation.tex:26-31 treats translated null sets; this implementation helper is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.lintegral_sq_prod: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:549-555 proves the unrestricted lower-integral identity for real f,h, exactly as summarized. TeX integrated_spatial_occupation.tex:207-209 uses the squared integrals in Cauchy–Schwarz; the ENNReal rewriting helper has no separate label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.four_lintegral_le: E:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:560-566 assumes local finiteness, 'SquareBound Γ alpha R', '0≤R' and four H¹ pairs. Both summaries preserve these general-form hypotheses. TeX integrated_spatial_occupation.tex:161-164,207-210 gives exactly the absolute-integral bound at R=R₀, obtained from the preceding square bound."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.C4: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:613-614 defines the product-measure Bochner integral with arguments at x,x,x-y,x-y, as both summaries state. TeX integrated_spatial_occupation.tex:159 defines 'C₄=BΓ(f₁f₂,f₃f₄)'. The nonintegrable zero convention is disclosed and integrability is established on H¹."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.four_integrable: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:618-627 assumes 'SquareBound', nonnegative R, local finiteness and four H¹ pairs, concluding Integrable. Both summaries inherit precisely these hypotheses. TeX integrated_spatial_occupation.tex:159-160,207-210 asserts absolute convergence under the established square bound."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.abs_C4_le: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:630-635 with 'SquareBound', '0≤R', local finiteness and four H¹ pairs. TeX integrated_spatial_occupation.tex:159-164 gives absolute convergence and the absolute-integral bound; the ledger correctly identifies |C₄|≤R∏N as a consequence, not a separate displayed claim."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.integrable_mul_dir: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:649-657 assumes 'MemLp f 2', 'IsTestFunction φ' and arbitrary direction v; both summaries match. TeX integrated_spatial_occupation.tex:192-198 uses weak-gradient H¹; this test-integrability lemma belongs to the Lean difference route, not a labelled proof step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.integrable_inner_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries reproduce SpatialFourLinear.lean:661-672: L² vector field g and test φ imply integrability of '<g,v>φ'. TeX integrated_spatial_occupation.tex:192-198 uses weak gradients without separately stating this helper; no-direct-label is accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.IsH1Pair.sub: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:676-691 assumes two 'IsH1Pair' predicates and concludes the difference pair is H¹, exactly as summarized. TeX integrated_spatial_occupation.tex:211-212 telescopes differences in H¹; the explicit weak-gradient closure lemma is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.isH1Pair_test: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:695-697 assumes 'IsTestFunction φ' and concludes 'IsH1Pair φ (grad φ)', matching both summaries. TeX integrated_spatial_occupation.tex:192-201 includes smooth compact functions in H¹; the classical/weak-gradient bridge is appropriately unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.C4_sub_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:703-710, including SquareBound, R≥0, local finiteness, eight H¹ pairs and the ordering of telescoping terms. TeX integrated_spatial_occupation.tex:211 says 'Telescoping a difference one argument at a time'; this expanded implementation identity is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.C4_sub_le: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:745-765 has the C4_sub_eq hypotheses and the four corresponding N-product bounds, as summarized. TeX integrated_spatial_occupation.tex:211-212 invokes the telescoping estimate; the explicit expanded bound is appropriately unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.H1Tendsto: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:768-771 defines L² convergence of uₙ-f and vₙ-g, exactly as both summaries state. TeX integrated_spatial_occupation.tex:160,211-213 uses H¹ convergence. With the separately required H¹-pair predicates, this is the correct graph-norm convergence, not convergence of gradients in H¹."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.Nnorm_tendsto_of_H1: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:774-779: '0≤alpha≤4', H¹ sequence and limit pairs, and H1Tendsto imply convergence of N. TeX integrated_spatial_occupation.tex:203 invokes continuity of N; this predicate-specific helper is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.Nnorm_sub_tendsto_of_H1: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:783-788 requires '0<alpha<4' and H1Tendsto, without membership assumptions, and proves N of differences tends to zero. Both summaries preserve this. TeX integrated_spatial_occupation.tex:211-212 uses vanishing differences; the helper is appropriately unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.C4_tendsto: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:794-804 assumes local finiteness, SquareBound, R≥0, 0<alpha<4, H¹ sequence/limit pairs and four H1Tendsto predicates. Both summaries match. TeX integrated_spatial_occupation.tex:159-160,211-213 asserts joint continuity; the ledger explicitly records the sequential formulation, equivalent on the intended H¹ metric space."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.pairing_toReal_eq_C4: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:841-857: locally finite Γ and a.e.-strongly measurable f,h suffice, with no finiteness assumption. TeX integrated_spatial_occupation.tex:31-32 reserves genuine signed pairings for absolute convergence; the ledger explicitly discloses the auxiliary identity's infinite-toReal zero case."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.C4_test_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:861-868 assumes local finiteness and test φ,ψ, identifying C₄(φ,φ,ψ,ψ) with the iterated real pairing. Both summaries match. TeX integrated_spatial_occupation.tex:159,172-174 uses these compatible integrals; the explicit bridge is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.C4_square_CS: E:spatial-square-CS",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:878-888 requires locally finite even Γ, spectral μ, SquareBound, R≥0, 0<alpha<4, hdense and two H¹ pairs, exactly as summarized. TeX integrated_spatial_occupation.tex:155-157,213-215 gives square-pairing Cauchy–Schwarz. The different passage-to-the-limit route is explicitly disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.square_pairing_CS: E:spatial-square-CS",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:905-919, including hdense, SquareBound and the conclusion 'pairing ... < ⊤'. TeX integrated_spatial_occupation.tex:152-157 requires finite square pairings and '0≤B≤sqrt(A(f)A(h))'. Diagonal finiteness follows by specializing SquareBound; no infinite toReal value substitutes for A."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.C4_linear_one: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:931-935 assumes local finiteness, SquareBound, R≥0 and the five relevant H¹ pairs, with arbitrary real a,b. Both summaries match the first-slot linearity equation. TeX integrated_spatial_occupation.tex:207-210 derives multilinearity after absolute convergence."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.C4_linear_three: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "Both summaries reproduce SpatialFourLinear.lean:950-954 with SquareBound, R≥0, local finiteness and the relevant H¹ pairs. TeX integrated_spatial_occupation.tex:210 states multilinearity; this is precisely its third-slot equation in general form."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.C4_comm_one_two: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:968-970 proves the unrestricted first-two-slot symmetry, matching both summaries. TeX integrated_spatial_occupation.tex:159 defines a product symmetric in these slots but does not separately assert this totalized identity; auxiliary/no-direct-label is accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.C4_comm_three_four: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:973-975: no hypotheses and symmetry in the last two slots. TeX integrated_spatial_occupation.tex:159 defines the symmetric product; the standalone totalized-integral symmetry is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.pairing_sq_pos: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:986-989 assumes local finiteness, SetScaling, 'Γ≠0', a.e.-strong measurability and '¬f=ᵐ0'; both summaries explicitly allow infinity and drop H¹. TeX integrated_spatial_occupation.tex:166,221-226 proves positivity by a positive-measure level set. The compact-set/translate-continuity route difference is disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.l2_eq_sqrt: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1085-1086 assumes real 'MemLp f 2' and identifies l2 with sqrt(∫f²), matching both summaries. TeX integrated_spatial_occupation.tex:151 uses the ordinary L² norm; this spelling conversion is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.l2_eq_sqrt': no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:1089-1091: an L² vector field g has 'l2 g=sqrt(∫||g||²)'. TeX integrated_spatial_occupation.tex:151 uses ||∇f||₂; the vector-norm conversion is appropriately unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.Nnorm_eq_sqrt: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1095-1099 assumes f,g∈L² and gives precisely the two square-root powers summarized in both places. TeX integrated_spatial_occupation.tex:151-152 defines N with the same exponents. This is a faithful interface spelling, not another mathematical hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.gradL2_pos: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1105-1106 assumes '0<d' and 'IsUnitH1 f g', proving positive gradient energy, as summarized. TeX integrated_spatial_occupation.tex:218-219 states this for real unit H¹ profiles. The mollification/zero-gradient route instead of Fourier support is accurately recorded."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.ratioSetH1: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:1133-1136: the ratio set ranges over 'IsUnitH1 f g' and uses the finite pairing's real value divided by b^(alpha/2). TeX integrated_spatial_occupation.tex:165,218-219 uses all real unit H¹ profiles; positivity of b and pairing finiteness are established."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.Rsp: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1139 defines 'sSup (ratioSetH1 Γ alpha)', exactly as summarized. TeX integrated_spatial_occupation.tex:165 calls R_sp the ratio supremum over all real unit H¹ profiles. The ledger discloses real-sSup totalization and the accompanying nonempty/boundedness results."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.unitH1_A_le: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1143-1146 assumes SquareBound, '0≤R' and a unit H¹ pair, concluding A≤R b^(alpha/2). Both summaries match. TeX integrated_spatial_occupation.tex:218-219 applies the homogeneous bound to unit profiles; the normalization helper is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.unitTest_bridge: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:1159-1167: local finiteness and 'IsUnitTest g' identify the extended pairing's real value and classical gradient energy. TeX integrated_spatial_occupation.tex:35,100-101 uses these quantities directly; the representation bridge is appropriately unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.Rsp_eq_R0: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1173-1180 requires d>0, local finiteness, SquareBound at R₀, nonempty smooth ratios and R₀≥0. Both summaries preserve them and all conclusions. TeX integrated_spatial_occupation.tex:165,218-221 proves R_sp=R₀ by the homogeneous bound and smooth inclusion; these inputs are discharged in the paper wrappers."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.energySet: P:spatial-energy-map",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:1204-1206: values 'pairing.toReal - ∫||g||²/2' over IsUnitH1 pairs. TeX integrated_spatial_occupation.tex:232-236 defines the energy over all real unit H¹ profiles. The extended pairing is finite on this domain under the standing assumptions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.Esp: P:spatial-energy-map",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1209 defines 'sSup (energySet Γ)', matching both summaries. TeX integrated_spatial_occupation.tex:234-236 defines E_sp as the same supremum. Nonemptiness and boundedness are proved, rather than assumed or replaced by a totalized sSup value."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.energyValue: E:spatial-energy-map",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1213-1214 defines '(2-alpha)/2 * alpha^(alpha/(2-alpha)) * R^(2/(2-alpha))', exactly as summarized. TeX integrated_spatial_occupation.tex:240-243 has the identical coefficient and both exponents at R=R_sp."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.young_bound: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:1218-1219: '0<alpha<2', R≥0, beta≥0 imply the scalar upper bound. TeX integrated_spatial_occupation.tex:260-265 maximizes the dilation expression instead; the weighted-AM–GM route auxiliary is correctly unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.energy_attain: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1248-1250 assumes 0<alpha<2 and R>0, with beta='(alpha*R)^(2/(2-alpha))', matching both summaries. TeX integrated_spatial_occupation.tex:260-264 specifies the corresponding optimal dilation. The beta-parameter scalar helper is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.energyValue_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1267-1269 assumes only 'alpha<2' and proves continuity on all real R, as summarized. TeX integrated_spatial_occupation.tex:267-268 takes ratios approaching the supremum; this scalar-continuity implementation lemma is appropriately unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.energyValue_mem: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:1275-1278: local finiteness, scaling, Γ≠0, d>0, 0<alpha<2 and a unit test imply membership in energySet. TeX integrated_spatial_occupation.tex:258-268 dilates the full H¹ class; the ledger correctly identifies this smooth-only lower-bound route as an auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.energy_map: E:spatial-energy-map",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1313-1318 requires scaling, Γ≠0, d>0, 0<alpha<2, SquareBound at R₀, nonempty bounded smooth ratios and R₀>0. Both summaries match. TeX integrated_spatial_occupation.tex:239-244,257-268 has the same energy value after R_sp=R₀; the alternate upper/lower proof route is disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.F0: E:spatial-static-energy-score",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1350-1352 defines '(3-alpha)*((2z/(2-alpha))^((2-alpha)/2)/(8*(4-alpha)^((4-alpha)/2)))^(1/(3-alpha))', matching both summaries. TeX integrated_spatial_occupation.tex:249-251 gives exactly this F₀ for z>0, k=3-alpha and q=4-alpha."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.score_identity: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:1357-1360, including 0<alpha<2, 'mass a>0' and R≥0. TeX integrated_spatial_occupation.tex:270-276 makes the same substitution. The totalized scalar-map identity is correctly presented as an auxiliary, not another labelled result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.smoothScoreBound_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1382-1387 assumes only 'alpha<3' and proves continuity in R, exactly as summarized. TeX integrated_spatial_occupation.tex:269-270 passes approaching smooth ratios through the score formula; this general scalar helper is appropriately unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.squareBound_R0: no direct label",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:1395-1404: 'HomogCovariance', 'Γ≠0', hdense yield the numerical range, smooth-ratio facts and SquareBound at R₀. TeX integrated_spatial_occupation.tex:170-205 obtains those ingredients in several steps; their bundled Lean assembly is correctly auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_homogeneous_bound_paper: E:spatial-homogeneous-bound",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1422-1432 assumes 'HomogCovariance', 'Γ≠0', hdense and an H¹ pair, concluding A≤ofReal(R₀N⁴). Both summaries match. TeX integrated_spatial_occupation.tex:4-10,151-154 has the same standing assumptions and bound; density at TeX:192-198 is explicitly supplied here and discharged in completion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_square_CS_paper: E:spatial-square-CS",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:1440-1453: H:homog, Γ≠0, hdense and two H¹ pairs imply finite B and '0≤B≤sqrt(A(f)A(h))'. TeX integrated_spatial_occupation.tex:4-10,152-157 has these assumptions and conclusions. Diagonal finiteness is supplied by the homogeneous bound."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_four_linear_bound_paper: E:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1461-1481 requires H:homog, Γ≠0, hdense and four H¹ pairs, proving the lower-integral bound, Integrable and |C₄| bound. Both summaries match. TeX integrated_spatial_occupation.tex:159-164,207-210 gives absolute convergence and the same R₀∏N constant."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_four_linear_multilinear_paper: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:1485-1502: H:homog, Γ≠0, hdense, H¹ pairs and arbitrary real a,b imply four slotwise linearity equations. TeX integrated_spatial_occupation.tex:210 derives multilinearity for the absolutely convergent C₄; the extra carried pairs do not restrict the intended class."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_four_linear_continuous_paper: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1518-1534 requires H:homog, Γ≠0, hdense, H¹ sequence/limit pairs and four H1Tendsto predicates. Both summaries accurately state the sequential conclusion. TeX integrated_spatial_occupation.tex:160,211-213 says 'jointly continuous'; this formalization boundary is explicitly recorded."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_ratio_H1_paper: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:1542-1554: H:homog, Γ≠0 and hdense imply positive b and ratio≤R₀ for every unit H¹ pair, nonempty bounded ratios and R_sp=R₀. TeX integrated_spatial_occupation.tex:165-166,218-221 states the same comparison over all real unit H¹ profiles."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_Asp_pos_paper: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1561-1566 assumes H:homog, Γ≠0, an H¹ pair and '¬f=ᵐ0', with no hdense, exactly as summarized. TeX integrated_spatial_occupation.tex:166,221-226 asserts A_sp(f)>0 for every nonzero H¹ profile. Nonzero is correctly interpreted modulo null sets."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_four_linear_paper: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "Both summaries match the six components at SpatialFourLinear.lean:1576-1610 under H:homog, Γ≠0 and hdense. TeX integrated_spatial_occupation.tex:149-167 asserts these spatial bounds, convergence and ratio/positivity facts. Sequential continuity and the separately issued multilinearity/|C₄| statements are explicitly distinguished."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.squarePairingBounds_paper: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1627-1645 assumes H:homog, Γ≠0 and hdense and proves the homogeneous bound plus squared ENNReal Cauchy–Schwarz for L² weak-gradient pairs. Both summaries match. TeX integrated_spatial_occupation.tex:151-157 has the identical N and inequalities; finiteness justifies the squared extended form."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_energy_value_paper: E:spatial-energy-map",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:1673-1682 under H:homog, Γ≠0 and hdense: nonempty bounded energySet, Esp=energyValue(alpha,Rsp), Esp>0 and Rsp=R₀. TeX integrated_spatial_occupation.tex:232-244 has exactly that supremum and '(2-alpha)/2 alpha^(alpha/(2-alpha)) R_sp^(2/(2-alpha))'."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_static_energy_score_paper: E:spatial-static-energy-score",
+      "verdict": "PASS",
+      "reason": "SpatialFourLinear.lean:1694-1705 assumes H:homog, Γ≠0 and hdense, concluding '∀y<bound, ∃Ψ∈CPos, y<IΨ-vΨ/2'. Both summaries preserve the quantifier order. TeX integrated_spatial_occupation.tex:246-252 states 'S₁pos≥bound'; its finite-supremum standing claim is TeX:8-10. The existential/Rayleigh/integral scope is disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_static_energy_score_sSup_paper: E:spatial-static-energy-score",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialFourLinear.lean:1724-1734: H:homog, Γ≠0, hdense and 'S1Bdd alpha0 Γ' imply the displayed supremum inequality. TeX integrated_spatial_occupation.tex:8-10,246-252 explicitly retains finite S₁pos from P:variational-positive-scores; integrated_unmasked_variational.tex:272-274 supplies exactly that boundedness claim."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.squareBound_of_smooth_completed: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationL7Completed.lean:85-91 requires local finiteness, 0≤alpha≤4 and the smooth square bound, with no hdense. Both summaries match. TeX integrated_spatial_occupation.tex:192-205 supplies density and the Fatou argument; H1Density.lean:86-91,575-585 proves exactly the discharged predicate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.C4_square_CS_completed: E:spatial-square-CS",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialOccupationL7Completed.lean:97-102: locally finite even Γ, spectral μ, SquareBound, R≥0, 0<alpha<4 and H¹ pairs imply squared C₄ Cauchy–Schwarz. TeX integrated_spatial_occupation.tex:155-157,213-215 supplies the corresponding inequality; density is proved, and the continuity-limit route is disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.square_pairing_CS_completed: E:spatial-square-CS",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationL7Completed.lean:107-116 has the preceding general hypotheses without hdense and concludes finite B and the real square-root bound, matching both summaries. TeX integrated_spatial_occupation.tex:152-157 requires exactly finite physical square pairings and '0≤B≤sqrt(A(f)A(h))'."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_homogeneous_bound_paper_completed: E:spatial-homogeneous-bound",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialOccupationL7Completed.lean:122-127: only 'HomogCovariance', 'Γ≠0' and the H¹ pair remain. TeX integrated_spatial_occupation.tex:4-10,151-154 has the same hypotheses and 'A_sp(f)≤R₀N(f)⁴'. The finite ofReal right side establishes finiteness."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_square_CS_paper_completed: E:spatial-square-CS",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationL7Completed.lean:132-140 assumes H:homog, Γ≠0 and two H¹ pairs, concluding finite B and the square-root bound. Both summaries match. TeX integrated_spatial_occupation.tex:4-10,152-157 has the same assumptions and conclusions; no analytic density hypothesis remains."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_four_linear_bound_paper_completed: E:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialOccupationL7Completed.lean:147-158: H:homog, Γ≠0 and four H¹ pairs imply the absolute-integral R₀∏N bound, Integrable and |C₄| bound. TeX integrated_spatial_occupation.tex:159-164,207-210 has identical arguments and constant; density is discharged rather than strengthened."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_four_linear_multilinear_paper_completed: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationL7Completed.lean:163-176 retains H:homog, Γ≠0, H¹ pairs and arbitrary a,b, with all four linearity equations. Both summaries match. TeX integrated_spatial_occupation.tex:210 states multilinearity after absolute convergence; the completion adds no supplied input."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_four_linear_continuous_paper_completed: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialOccupationL7Completed.lean:182-194: H:homog, Γ≠0, H¹ sequence/limit pairs and H1Tendsto imply convergence of C₄. TeX integrated_spatial_occupation.tex:160,211-213 states joint continuity. The ledger explicitly records that only its sequential formulation, not a Continuous declaration on an H¹ type, is issued."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_ratio_H1_paper_completed: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationL7Completed.lean:200-207 assumes only H:homog and Γ≠0 and gives positive b, ratio≤R₀, nonempty bounded H¹ ratios and R_sp=R₀. Both summaries match. TeX integrated_spatial_occupation.tex:165-166,218-221 ranges over the same real unit H¹ class."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_four_linear_paper_completed: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialOccupationL7Completed.lean:217-246: H:homog and Γ≠0 suffice for the six bundled clauses. TeX integrated_spatial_occupation.tex:149-167 has the corresponding bounds, absolute convergence, continuity, ratio equality and positivity. Sequential continuity and separately issued multilinearity are expressly recorded; no density input remains."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.squarePairingBounds_paper_completed: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationL7Completed.lean:253-266 assumes only H:homog and Γ≠0 and proves both interface fields for all L² weak-gradient pairs. Both summaries match. TeX integrated_spatial_occupation.tex:151-157 gives N and the homogeneous/square-CS bounds; the sqrt-integral spelling and squared extended form are equivalent on this finite domain."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_energy_value_paper_completed: E:spatial-energy-map",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialOccupationL7Completed.lean:273-277: 'HomogCovariance' and 'Γ≠0' imply nonempty bounded energySet, Esp=energyValue(alpha,Rsp), Esp>0 and Rsp=R₀. TeX integrated_spatial_occupation.tex:232-244 gives precisely this energy and coefficient/exponents. No optimizer or H¹ dilation hypothesis is introduced."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_static_energy_score_paper_completed: E:spatial-static-energy-score",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationL7Completed.lean:284-290 requires only H:homog and Γ≠0 and concludes '∀y<bound, ∃Ψ∈CPos, y<IΨ-vΨ/2'. Both summaries match. TeX integrated_spatial_occupation.tex:246-252 uses the finite supremum instead; the existential formulation and unformalized operator/stochastic identifications are explicitly disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_static_energy_score_sSup_paper_completed: E:spatial-static-energy-score",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialOccupationL7Completed.lean:296-301: H:homog, Γ≠0 and 'S1Bdd alpha0 Γ' imply 'mass^(-1/k)F₀(Esp)≤S1pos'. TeX integrated_spatial_occupation.tex:8-10,246-252 retains finite S₁pos; integrated_unmasked_variational.tex:272-274 states the exact boundedness claim supplied here."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.squarePairingBounds_holds: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationL7Completed.lean:310-313 assumes H:homog and Γ≠0 and constructs 'SquarePairingBounds Γ alpha (R0 Γ alpha)', as summarized. Its fields at OccupationPhysicalClass.lean:133-139 are exactly the homogeneous and squared square-CS claims of TeX integrated_spatial_occupation.tex:151-157."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.occupation_physical_class_completed_paper: P:occupation-physical-class",
+      "verdict": "PASS",
+      "reason": "Both summaries match SpatialOccupationL7Completed.lean:323-351: H:homog, Γ≠0 and 'D=(4-alpha)-2a', with IsOccField, yield measurability, representative independence, integral identities, finite J and the R₀/spEnergyVal bounds. TeX integrated_spatial_occupation.tex:311-334 instead starts with strongly H¹-measurable fields. The joint-representative modelling boundary and constant conversion are explicitly disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.occupation_physical_class_Esp_paper: P:occupation-physical-class",
+      "verdict": "PASS",
+      "reason": "SpatialOccupationL7Completed.lean:363-381 assumes H:homog, Γ≠0 and 'D=(4-alpha)-2a', with no SquarePairingBounds input, and states J≤R_star R_sp T^(alpha/2), positive bounded occupation energy≤R_star^(2/(2-alpha))Esp, and Esp>0. Both summaries match TeX integrated_spatial_occupation.tex:325-333, subject to the expressly recorded IsOccField modelling boundary."
+    },
+    {
+      "claim": "PARA-SpatialFourLinear",
+      "verdict": "FAIL",
+      "reason": "W1: candidate/statement-ledger.md:3771 incorrectly says 'Carried but unused: Gamma_tempered'. The score proof calls SpatialOccupationCompleted.spatial_smooth_score_completed_paper at SpatialFourLinear.lean:1718; its StaticControls discharge reaches SpatialStaticControls.lean:1138-1140, which explicitly uses 'hH.Γ_tempered'. TeX H:homog includes temperedness at notes_stratonovich_ham_second_moment.tex:192, so theorem assumptions still match, but the requested dependency inventory does not."
+    },
+    {
+      "claim": "PARA-SpatialOccupationL7Completed",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:3974-4038 accurately describes removal of hdense and SquarePairingBounds, retention of S1Bdd only for the supremum score, general-form hypotheses, no new objects and unchanged modelling boundaries. SpatialOccupationL7Completed.lean:85-381 confirms these descriptions; the cited TeX ranges and energy constants are correct."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "All 105 target declarations occur exactly once in candidate/statement-ledger.md:281-545, with section-consistent labels. The relevant rows are 502-510 and 535-541. Repository-wide label searches found every label cited in the target sections exactly once; auxiliary rows are explicitly marked no direct label."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "lean/coverage.yaml:944-1001 correctly uses same-assumptions/weaker, includes completed declarations and density discharge, preserves the energy constant, and discloses sequential continuity and existential/S1Bdd score scopes. docs/coverage-scope-tex.yaml:28-33 agrees. W2: the continuity scope's phrase 'convergence in H^1 ... of their weak gradients' should say L² convergence of functions and gradients."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "The relevant references in candidate/statement-ledger.md:157-171,1736-1745,3071-3128,3173-3205,3663-3669,5881-5895,5936-5956 correctly identify density/interface discharge, the R_sp/E_sp conversions and remaining boundaries. None incorrectly leaves either discharged input outside Lean or claims topological continuity, H¹ dilation or stochastic/operator identifications."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "W1 — PARA-SpatialFourLinear, incorrect dependency audit. candidate/statement-ledger.md:3771 says 'Carried but unused: Gamma_tempered', repeating SpatialFourLinear.lean:60-61. However SpatialFourLinear.lean:1718 invokes the completed smooth-score theorem; SpatialOccupationCompleted.lean:109-124,133-138 discharges StaticControls using SpatialStaticControls.spatial_static_score_paper, whose proof explicitly calls 'convZ_props hH.Γ_tempered ...' and 'static_score hH.Γ_tempered ...' at SpatialStaticControls.lean:1138-1140. TeX retains 'positive-definite tempered Radon measure Γ' at manuscript/notes/notes_stratonovich_ham_second_moment.tex:192 and uses the static-score route at integrated_spatial_occupation.tex:269-276. Thus the theorem hypotheses remain faithful, but the claim that this field is unused throughout the module is false. Exact fix: amend the ledger inventory to say Γ_tempered is unused by the spatial-extension/energy-value route but used through the static-control discharge for the score wrappers; do not list it as globally unused."
+    ],
+    "minor": [
+      "W2 — COVERAGE-ROWS, convergence wording. lean/coverage.yaml:971-973 and docs/coverage-scope-tex.yaml:32-33 describe 'convergence in H^1 of the four functions and of their weak gradients'. Lean H1Tendsto at SpatialFourLinear.lean:768-771 requires L² convergence of functions and their named gradients; TeX integrated_spatial_occupation.tex:160,211-213 requires H¹ convergence of the profiles, not H¹ convergence of their gradients. Optional exact clarification: write 'H¹ convergence of the four profiles, represented by L² convergence of each function and its weak gradient'. The surrounding ledger explains this correctly, so this is wording rather than a stronger actual hypothesis."
+    ]
+  },
+  "required_repairs": [
+    "Correct the SpatialFourLinear paragraph's Γ_tempered used/unused inventory as specified in W1, distinguishing the spatial-extension/energy-value route from the score route."
+  ],
+  "limitations": [
+    "This is an AI correspondence review, not human verification or a novelty audit. Compilation and proof correctness were accepted as stipulated; no build was run.",
+    "Requirement A was completed. Files marked partial were read to the required declarations, entries, sections or relevant context; unrelated portions were not reviewed.",
+    "Basename citations in checks identify the exact packet paths listed in source_coverage. Repository-wide label searches do not constitute complete reading of every scanned manuscript file.",
+    "The disclosed sequential-continuity, Rayleigh/integral-score and joint-representative boundaries were assessed as stated scopes, not silently repaired or treated as additional formalized identifications.",
+    "Provenance was read; supervisor-checked byte binding was accepted rather than independently re-established."
+  ]
+}

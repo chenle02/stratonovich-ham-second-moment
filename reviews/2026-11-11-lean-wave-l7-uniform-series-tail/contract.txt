@@ -1,0 +1,95 @@
+Independent correspondence review: newly formalized whole labelled result(s) (Lean ledger rows) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  a8fb49554e1f). Review ONLY its sections "UniformSeriesTail (whole result)", the index rows for
+  them, and the items named in the global checks below. All other rows were
+  reviewed earlier.
+- the Lean modules (ground truth for what each declaration states):
+  lean/StratonovichHAMSecondMoment/*.lean (every library module; these
+  sections' own modules: UniformSeriesTail)
+  and lean/claims.yaml, lean/coverage.yaml, docs/coverage-scope-tex.yaml.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  975feb31ea65. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that L:uniform-series-tail (every conclusion proved; one supplied input TerminalWickInput from L:terminal-wick) are formalized as stated in their
+rows: every conclusion proved, with hypotheses that match the manuscript,
+apart from side conditions the TeX leaves implicit and inputs explicitly
+declared as supplied. Test that claim hard: any Lean hypothesis that the
+manuscript does not have, any manuscript hypothesis the Lean drops, any
+weaker Lean conclusion, any changed constant, range, quantifier order or
+strictness, any modelling choice that changes the mathematical object, any
+supplied hypothesis stronger than the manuscript result it stands for, any
+row labelled as a step of a TeX proof that is really an auxiliary of a
+different Lean proof route, and any declaration missing from or duplicated
+in the Index, is a finding, unless the ledger states it AND it is genuinely
+harmless. Decide that yourself from the TeX; do not accept the ledger's word.
+Pay attention to: whether TerminalWickInput (absolute summability at the given r; nonnegative mixed moments E[Y_m Y_n]) is no stronger than L:terminal-wick (lines 3565-3571) and is exactly what the proof cites (3657-3658); the term bound via the diagonal of the nonnegative double sum; the tail bound constant 1/(1 - r^{-1}); the reading of the limit as eps, delta -> 0 jointly (product of right neighbourhoods); E|f|^2 written as an integral and its equality with the L^2 norm.
+
+CHECKS (exactly these 19, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.UniformSeriesTail.norm_sq_le_of_inner_nonneg: L:uniform-series-tail"
+  2. claim "StratonovichHAMSecondMoment.UniformSeriesTail.term_bound: E:uniform-series-tail"
+  3. claim "StratonovichHAMSecondMoment.UniformSeriesTail.hasSum_geometric_tail: no direct label"
+  4. claim "StratonovichHAMSecondMoment.UniformSeriesTail.summable_geometric_mul: no direct label"
+  5. claim "StratonovichHAMSecondMoment.UniformSeriesTail.tail_bound: L:uniform-series-tail"
+  6. claim "StratonovichHAMSecondMoment.UniformSeriesTail.uniform_series_tail: L:uniform-series-tail"
+  7. claim "StratonovichHAMSecondMoment.UniformSeriesTail.uniform_series_tail_second_moment: L:uniform-series-tail"
+  8. claim "StratonovichHAMSecondMoment.UniformSeriesTail.integral_mul_eq_inner: no direct label"
+  9. claim "StratonovichHAMSecondMoment.UniformSeriesTail.integral_sq_eq_norm_sq: no direct label"
+  10. claim "StratonovichHAMSecondMoment.UniformSeriesTail.TerminalWickInput: L:terminal-wick"
+  11. claim "StratonovichHAMSecondMoment.UniformSeriesTail.eventually_pos_pair: no direct label"
+  12. claim "StratonovichHAMSecondMoment.UniformSeriesTail.uniform_series_tail_paper: L:uniform-series-tail"
+  13. claim "StratonovichHAMSecondMoment.UniformSeriesTail.uniform_series_tail_second_moment_paper: L:uniform-series-tail"
+  14. claim "PARA-UniformSeriesTail": the "UniformSeriesTail (whole result)" section paragraph is accurate, cites the right files and lines at 975feb3, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input, proof-route difference and what is not formalized, and does not overclaim
+  15. claim "LEDGER-INDEX": every one of these 13 declarations appears EXACTLY ONCE in the "Index by label" table, under the same label as its section row (an additional listing only as an explicitly marked cross-reference), route auxiliaries in a "no direct label" row, and every label cited in the sections exists in the manuscript (search \label across all files)
+  16. claim "COVERAGE-ROWS": the coverage.yaml row L:uniform-series-tail (new, inputs-supplied, full; the joint limit eps, delta -> 0 read for both hypothesis and conclusion) and, as a global check, the conclusion_scope rewordings of the existing rows L:spatial-static-controls, P:spatial-smooth-ratio, L:higher-riesz, P:variational-positive-scores and P:variational-unmasked-rate (plain English; same content as before; ascii in docs/coverage-scope-tex.yaml equals conclusion_scope)
+  17. claim "CROSS-REFERENCES": every other place in the ledger that points to these sections or their labels (other sections, the "Not in Lean" section, Scope) is accurate
+  18. claim "LEDGER-TOTALS": the totals line (1731 declarations; 877 labelled, 854 unlabelled) agrees with a count of all per-module tables, every claims.yaml decl has exactly one ledger row, and the coverage.yaml header count (854) agrees
+  19. claim "SCOPE-PROSE": the Scope bullets and the Not-in-Lean section after wave L7 (counts; which results need no supplied input, which have supplied inputs; the inputs discharged in IntervalScalarCompleted and SpatialOccupationL7Completed; the new Not-in-Lean bullets for L:terminal-wick, the strong-measurability construction of the class O and the operator/stochastic inputs of C:static-interaction and P:interval-coefficients) and the internal-status sentence are accurate
+For each row check (1-13): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: these sections' own
+   Lean modules (lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean), and,
+   for every other declaration a row names, that declaration in its module;
+   the sections "UniformSeriesTail (whole result)" and the "Scope" and "Index by label" sections of
+   candidate/statement-ledger.md; the entries of lean/claims.yaml for these
+   modules; lean/coverage.yaml; docs/coverage-scope-tex.yaml;
+   lines 3520-3680 of manuscript/notes/notes_stratonovich_ham_second_moment.tex (L:terminal-wick 3527-3626 and L:uniform-series-tail 3630-3675),
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 19 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-13.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.

@@ -1,0 +1,213 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-1248 \u2014 complete.",
+    "candidate/statement-ledger.md:1-546,1977-2264,5940-6000 \u2014 complete required Scope, Index and InventoryProduct sections and relevant cross-reference contexts; partial file, unrelated sections excluded.",
+    "lean/StratonovichHAMSecondMoment/InventoryProduct.lean:1-698 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/SeriesType.lean:1-339 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/TypeContinuity.lean:1-1183 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean:1-193 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/IntervalScalar.lean:684-714,974-1191 \u2014 partial file; complete inventory definitions and relevant assembly declarations.",
+    "lean/claims.yaml:9597-9962,10308-10525 \u2014 complete entries for SeriesType, TypeContinuity and InventoryProduct; partial file, other modules excluded.",
+    "lean/coverage.yaml:1-1171 \u2014 complete.",
+    "docs/coverage-scope-tex.yaml:1-42 \u2014 complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:155-240,2730-2970,3329,3450-3476 \u2014 complete required range and relevant standing-assumption/application contexts; partial file.",
+    "manuscript/notes/**/*.tex \u2014 searched across all supplied LaTeX files for the five labels cited by the InventoryProduct section; matches only in notes_stratonovich_ham_second_moment.tex:190,2731,2913,2921,3329; this search is not a complete reading of those files."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.pOf: no direct label",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:74-76 defines 'pOf (alpha0 : \u211d) := 2 - alpha0', without hypotheses; TeX notes_stratonovich_ham_second_moment.tex:2739 writes 'p=2-\u03b1\u2080>1' under the standing assumptions. The definition extends harmlessly beyond that range. Ledger:2233 and claims.yaml:10309-10315 faithfully describe it; no direct result label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.vCoef: L:inventory-product",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "InventoryProduct.lean:79-81 has exactly 'i^(-beta) + k\u207b\u00b9*i^(-(beta-1)) + k^(alpha-2)*i^(-p)'; TeX:2914-2917 assumes 'k\u22651' and gives the identical three terms. TypeContinuity.lean:903,909 supplies the correct exponents. Ledger:2234 and claims.yaml:10316-10322 match the definition. The all-natural definition causes no coefficient-bound mismatch; the ledger's blanket 'every theorem' wording merits W2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.bCoef: L:inventory-product",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:84-85 defines 'i^(-betaOf alpha alpha0 * l)*(1+l*i/k)^2/(l!)^nuOf alpha'. TeX:2914,2918 has 'k\u22651' and the same formula for 'l\u22652'. Ledger:2235 explicitly distinguishes the unrestricted definition from its use at l\u22652; claims.yaml:10323-10329 agrees. All manuscript uses have positive i and k."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.factorCoeff: E:inventory-product",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:88-89 gives 'if l=0 then 1 else if l=1 then vCoef ... else bCoef ...', with no hypotheses. TeX:2914,2918,2922 uses k\u22651 and the factor '1+v_i z+sum_{l\u22652} b_{i,l}z^l'. These are precisely its coefficients. Ledger:2236 and claims.yaml:10330-10336 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.factorSeries: E:inventory-product",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:92-93 defines 'PowerSeries.mk (factorCoeff ...)' without additional assumptions. TeX:2922 uses the corresponding factor under k\u22651. Formal power series faithfully represent this coefficient-extraction object; convergence is not needed for its definition. Ledger:2237 and claims.yaml:10337-10343 accurately disclose the representation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.inventoryProduct: E:inventory-product",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:97-98 defines '\u220f i \u2208 Icc 1 M, factorSeries ...'; TeX:2922 has 'prod_{i=1}^M' of the identical factors, with k\u22651 from :2914. No proxy coefficient or supplied product identity replaces the object. Ledger:2238 and claims.yaml:10344-10350 are faithful; allowing M=0 is harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.factorEval: L:inventory-product",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:101-102 defines '\u2211' l, factorCoeff ... * z^l' without a convergence hypothesis. TeX:2928 evaluates at 'z=\u03b8k^\u03bd, \u03b8=1/4', with k\u22651. Ledger:2239 and claims.yaml:10351-10357 explicitly disclose tsum's nonsummable value; InventoryProduct.lean:570-575 proves summability at the point actually used."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.expConst: no direct label",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:106-110 defines the six-term rational expression K with no hypotheses; its analytic application assumes 0<alpha0<1 and alpha0+alpha<2. TeX:2964 merely writes 'e^{Ck}', with no explicit K. Ledger:2240 and claims.yaml:10358-10364 reproduce all six constants and denominators correctly and identify this as a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.inventoryConst: E:inventory-product",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:113 defines '4 * Real.exp (expConst alpha alpha0)' independently of M,k,d,\u0393,\u03bc. TeX:2920 requires 'a finite C=C(\u03b1,\u03b1\u2080), independent of M,k'. Ledger:2241 and claims.yaml:10365-10371 accurately present an explicit witness; the final theorem establishes its applicability under the manuscript assumptions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.inventoryConst_pos: E:inventory-product",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:115-116 states '0 < inventoryConst alpha alpha0' for arbitrary real parameters. TeX:2920 requires a finite usable bound constant under the standing parameter range. This stronger positivity fact for the explicit witness is harmless and accurately stated in ledger:2242 and claims.yaml:10372-10378."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.coeff_mul_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:126-127 assumes '\u2200 n, 0\u2264coeff n F' and the same for G, concluding coefficient nonnegativity of F*G. TeX:2964 refers to 'Positivity of its coefficients' but contains no separate binary-product lemma. Ledger:2243 and claims.yaml:10379-10385 faithfully classify this general helper as a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.coeff_prod_nonneg: L:inventory-product",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:133-134 assumes '\u2200 i\u2208s, \u2200 n, 0\u2264coeff n (F i)' and concludes nonnegativity for the finite product. TeX:2928 calls this the 'positive product', and :2964 uses 'Positivity of its coefficients'. Ledger:2244 and claims.yaml:10386-10392 correctly state this general finite-product justification."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.partialEval_mul_le: no direct label",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:145-147 assumes nonnegative coefficients and 'hz : 0\u2264z', concluding the product partial-evaluation inequality for every N. TeX:2964-2965 bounds a coefficient through the full evaluated product, not through partial evaluations. Ledger:2245 and claims.yaml:10393-10399 correctly describe this Lean-only intermediate step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.partialEval_prod_le: no direct label",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:185-187 assumes coefficient nonnegativity for i\u2208s and '0\u2264z', and bounds partialEval of the product by the product of partialEval. TeX:2964-2965 uses the full product evaluation instead. Ledger:2246 and claims.yaml:10400-10406 match the type and appropriately assign no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.coeff_mul_pow_le_partialEval: no direct label",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:206-207 assumes '\u2200 n, 0\u2264coeff n F' and '0\u2264z', proving 'coeff N F*z^N\u2264partialEval F N z'. TeX:2964-2965 uses coefficient positivity directly against the full evaluation. Ledger:2247 and claims.yaml:10407-10413 correctly present the partial-sum helper without claiming a separate manuscript step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.coeff_prod_le_prod_tsum: L:inventory-product",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:217-220 assumes nonnegative coefficients, 'hz : 0<z', and 'hsum : \u2200 i\u2208s, Summable (...)'. TeX:2928 evaluates at positive z=k^\u03bd/4, and :2964-2965 bounds the kth coefficient by the evaluation divided by z^k. Ledger:2248 and claims.yaml:10414-10420 accurately expose the convergence side condition; it is subsequently proved."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.sum_range_rpow_tail_le: no direct label",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:232-233 assumes '1<s' and natural '1\u2264a', proving the stated range-sum bound for every n. TeX:2951-2962 uses tail estimates under \u03b2>2 but does not formulate this shifted range lemma. Ledger:2249 and claims.yaml:10421-10427 faithfully state its assumptions, constant, and auxiliary status."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.sum_rpow_tail_le: L:inventory-product",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:252-254 assumes '1<s', '1\u2264a', and '\u2200 i\u2208t, a<i', concluding sum i^(-s)\u2264a^(1-s)/(s-1). TeX:2951-2962 uses exactly these tail comparisons at a=k\u22651 and exponents \u03b2, \u03b2\u22121, 2\u03b2, 2\u03b2\u22122, all exceeding one. Ledger:2250 and claims.yaml:10428-10434 correctly describe the implicit estimates."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.sum_rpow_pos_le: L:inventory-product",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "InventoryProduct.lean:275-276 assumes '1<s' and '\u2200 i\u2208t, 1\u2264i', proving sum i^(-s)\u2264s/(s-1); claims.yaml:10435-10441 matches. TeX:2946-2949 uses the convergent \u03b2/\u03bd power sum, so the label mapping is valid. Ledger:2251's additional p attribution is locally loose: TeX:2931-2938 bounds logarithms by an improper integral. The paragraph already discloses that replacement; see W1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.tail_scaled_le: no direct label",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:295-297 assumes '1<s', 'e\u2264s', '0\u2264c', '1\u2264k', and indices i>k, concluding the coarser bound ck/(s\u22121). TeX:2953-2961 retains intermediate powers k^alpha0 and k^(2alpha0\u22121). Ledger:2252 and claims.yaml:10442-10448 correctly identify the coarsened general statement as a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.one_add_sq_le_four_pow: L:inventory-product",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:316 states '((1:\u211d)+l)^2\u22644^l' for every natural l, without additional assumptions. TeX:2942 explicitly states '(1+l)^2\u22644^l' in the i\u2264k case. Ledger:2253 and claims.yaml:10449-10455 match; extending the elementary inequality to all natural l is harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.sq_le_two_pow_succ: no direct label",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:322 states 'l^2\u22642^(l+1)' for every natural l. TeX:2956-2957 states the uniform higher-degree bound without giving its proof and does not state this inequality. Ledger:2254 and claims.yaml:10456-10462 accurately identify the unconditional auxiliary used to establish that bound."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.factorial_rpow_ge_one: no direct label",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:337-338 assumes 'h\u03bd : 0\u2264\u03bd' and proves '1\u2264(l!)^\u03bd'. TeX:2738 has the stronger standing condition '\u03bd>1' and uses the factorial denominator in :2957. Ledger:2255 and claims.yaml:10463-10469 accurately describe the weaker-assumption helper and do not falsely present it as a manuscript proof step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.factor_small: L:inventory-product",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:344-349 assumes '1\u2264\u03bd', '0\u2264P', 'A\u22644*P', '0\u2264Q', 0\u2264y\u22641, and the stated coefficient identities. TeX:2940-2949 has \u03bd>1, i\u2264k, singleton\u22642P_i and the S\u03bd(4P_i) bound. Ledger:2256 and claims.yaml:10470-10476 reproduce the Lean type; ledger:2218-2221 explicitly discloses the harmless 4P relaxation, e^Q replacement and partial-sum formulation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.factor_large: L:inventory-product",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:388-393 assumes '0\u2264\u03bd', 0\u2264P\u22641/4, A,Q,y\u22650 and the coefficient identities, concluding exp(A+Q+128P\u00b2(1+y\u00b2)). TeX:2951-2963 has \u03bd>1, P_i\u22641/4 and the uniform CP\u00b2(1+y\u00b2) estimate. Ledger:2257 and claims.yaml:10477-10483 match; ledger:2214-2221 discloses the explicit 128 and partial-sum route. The stronger generality introduces no additional manuscript hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.params: no direct label",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:442-445 assumes '0<alpha0', 'alpha0<1', 'alpha0+alpha<2', and concludes the listed nonstrict \u03bd and \u03b2 comparisons plus \u03b2>2, p>1 and \u03bd+\u03b1\u22122=1. TeX:2738-2741,2930 gives the stronger strict comparisons and identity under H:homog. Ledger:2258 and claims.yaml:10484-10490 explicitly state the difference; this helper is not misrepresented as the full parameter statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.factorCoeff_nonneg: L:inventory-product",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:469 states '0\u2264factorCoeff alpha alpha0 k i l' for all natural k,i,l and real parameters, with no hypotheses. TeX:2914-2918,2928 uses k\u22651, positive indices and calls the factors positive. Ledger:2259 and claims.yaml:10491-10497 accurately disclose the unrestricted nonnegativity result. Its extra zero-index cases do not change the product being bounded."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.factor_partial_le: no direct label",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:475-478 assumes 0<alpha0<1, alpha0+alpha<2, '1\u2264k' and '1\u2264i', proving every partial factor sum\u2264exp(gExp ...). TeX:2928-2963 works with full evaluated factors under H:homog and k\u22651. Ledger:2260 and claims.yaml:10498-10504 correctly state this alternative-route helper; gExp is explicitly defined at InventoryProduct.lean:459-465."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.inventory_product_eval_le: L:inventory-product",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:570-575 assumes 0<alpha0<1, alpha0+alpha<2 and '1\u2264k', with arbitrary M, and concludes factor summability and product\u2264exp(Kk). TeX:2928 fixes z=k^\u03bd/4 and :2963-2964 concludes 'the entire product ... at most e^{Ck}'. Ledger:2261 and claims.yaml:10505-10511 match; the e^Q route is explicitly disclosed and still supplies the required uniform exponential bound."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.inventory_product: L:inventory-product",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:638-641 assumes '0<alpha0', 'alpha0<1', 'alpha0+alpha<2', and '1\u2264k', concluding the actual 'coeff k (inventoryProduct ...)'\u2264C^k/(k!)^\u03bd for arbitrary M. TeX:2914-2923 has k\u22651 and the identical bound under H:homog. Ledger:2262 and claims.yaml:10512-10518 explicitly identify the weaker-assumption generalization. The constant is fixed solely by alpha,alpha0."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.InventoryProduct.inventory_product_paper: L:inventory-product",
+      "verdict": "PASS",
+      "reason": "InventoryProduct.lean:687-694 assumes only 'h : HomogCovariance d alpha alpha0 \u0393 \u03bc' and concludes C>0 and the bound for '\u2200 M k : \u2115, 1\u2264k \u2192 ...'. HomogHypothesis.lean:64-80 matches TeX H:homog:190-207; TeX:2914-2923 requires exactly this coefficient bound and parameter-only constant. Ledger:2263 and claims.yaml:10519-10525 are faithful. No nonzero-covariance, convergence, or inventory-bound input is supplied."
+    },
+    {
+      "claim": "PARA-InventoryProduct",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:2177-2229 correctly identifies the manuscript locations, exact coefficient object, explicit parameter-only constant, general and H:homog forms, unused covariance fields, proved summability, empty-product convention and external application boundary. InventoryProduct.lean:344-435,475-630 supports the disclosed e^Q, 128, 4P and partial-sum routes. No conclusion of TeX:2913-2925 is omitted. W2 only qualifies the broad zero-index/junk-value wording."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "Ledger:491-494 contains exactly 31 distinct InventoryProduct declarations: 14 under L:inventory-product, five under E:inventory-product, pOf without a direct label, and 11 route auxiliaries without a direct label. These classifications agree with :2233-2263; none is repeated elsewhere in the Index. Searching all supplied LaTeX files finds the section's five cited labels exactly once, at main TeX:190,2731,2913,2921,3329."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:287-299 correctly assigns L:inventory-product 'class: same-assumptions' and 'conclusion: full', references the paper theorem, general theorem and evaluation theorem, and states the exact coefficient bound with C=4exp(K(alpha,alpha0)). InventoryProduct.lean:687-694 supplies the manuscript-hypothesis form with nothing supplied. docs/coverage-scope-tex.yaml has no conflicting inventory restriction; :22-24 correctly treats its downstream use as proved."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "The relevant ledger references in Scope:154-156,203-205, IntervalScalar:2032-2035,2095-2098,2111,2114, IntervalScalarCompleted:2119-2173 and Not in Lean:5973-5980 consistently distinguish the proved inventory lemma from remaining operator/stochastic inputs. IntervalScalarCompleted.lean:62-127 proves coefficient equality, product reindexing and discharge; :140-191 removes hinv from both assembly wrappers. TeX:3463-3474 confirms the cited application. No contradictory inventory exclusion was found."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "W1 \u2014 sum_rpow_pos_le attribution: candidate/statement-ledger.md:2251 says the bound is used for both p and beta/nu '(in the TeX...)'. Lean InventoryProduct.lean:275-276 proves 'sum i^(-s) \u2264 s/(s-1)' under '1<s'; its p application occurs at :597-598. TeX notes_stratonovich_ham_second_moment.tex:2933-2938 instead uses 'sum log(1+A i^(-p)) \u2264 integral ...', whereas :2946-2949 genuinely uses the beta/nu power sum. The route difference is already correctly disclosed at ledger:2210-2213, so this is local wording rather than a substantive mapping defect. Optional exact clarification: replace the final attribution with 'used directly for beta/nu in the TeX and for p in Lean's disclosed replacement route'.",
+      "W2 \u2014 zero-index qualification: candidate/statement-ledger.md:2234 says 'every theorem has k >= 1', and :2222-2224 broadly describes positive bases. Lean InventoryProduct.lean:469 actually states 'theorem factorCoeff_nonneg (k i l : \u2115)' without positivity hypotheses, as ledger:2259 correctly records. TeX notes_stratonovich_ham_second_moment.tex:2914 says 'For k\u22651', and :2922 only uses i=1,...,M. The analytic coefficient bounds do enforce the manuscript domain, so no bound relies on a zero-base convention. Optional exact clarification: say 'every analytic evaluation/coefficient bound uses k>=1 and i>=1; unrestricted definitions and the nonnegativity helper also cover zero indices using Lean's conventions'."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Requirement A was completed, including rereading truncated outputs; there are no gaps in its required sections, entries or ranges.",
+    "Unrelated ledger sections, claims for other modules, and manuscript text outside the reported contexts were not reviewed. Partial-file coverage above reflects this contractual scope, not an incomplete required reading.",
+    "Compilation, absence of sorry and standard-axiom status were accepted as supplied; no build or independent proof audit was performed.",
+    "The supervisor-checked provenance binding was accepted; hashes were not independently recomputed.",
+    "This AI correspondence review is neither human verification nor a novelty audit."
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-1248 \u2014 complete.",
+    "candidate/statement-ledger.md:1-546,1730-1838,3100-3131,3658-3680,3714-3820,3860-3863,3880-3884,3909-3921,3974-4059,5080-5110,5928-5975 \u2014 partial file; required Scope, Index and H1Density section complete; additional cross-reference searches.",
+    "lean/StratonovichHAMSecondMoment/H1Density.lean:1-672 \u2014 complete, consecutively read.",
+    "lean/StratonovichHAMSecondMoment/WeakSobolev.lean:1-329 \u2014 complete, consecutively read.",
+    "lean/StratonovichHAMSecondMoment/VariationalFloor.lean:1-670 \u2014 complete, consecutively read.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean:1-383 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean:459-535 \u2014 partial; density hypothesis and complete squareBound_of_smooth declaration/proof read; additional density-reference searches.",
+    "lean/claims.yaml:1580-1755,8072-8347,10618-10851 \u2014 partial file; complete required WeakSobolev, VariationalFloor and H1Density entries.",
+    "lean/coverage.yaml:1-1171 \u2014 complete, consecutively read.",
+    "docs/coverage-scope-tex.yaml:1-42 \u2014 complete.",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-379 \u2014 complete, consecutively read.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:160-235 \u2014 partial; standing assumptions read. Exact-label searches across all supplied manuscript inputs located the section's cited proposition labels."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.H1TestDense: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:86-91: 'MemLp f 2 volume \u2192 MemLp g 2 volume \u2192 ... HasWeakGradient f g' yields test functions with BOTH function and gradient eLpNorm errors tending to zero. TeX, manuscript/notes/integrated_spatial_occupation.tex:192-196: 'Smooth compact functions are dense in H^1', including 'the function and its weak gradients'. This is genuine real H^1 graph-norm density, not merely L\u00b2 density. Ledger:1805 and lean/claims.yaml:10619-10625 faithfully describe the predicate; no independent manuscript label exists."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.lintegral_mul_sq_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:98-101: 'AEMeasurable a \u03bc', 'AEMeasurable b \u03bc', and '\u222b\u207b x, a x \u2202\u03bc = 1' imply the weighted square inequality. TeX, manuscript/notes/integrated_spatial_occupation.tex:195-196, invokes 'L\u00b2 translation continuity', not this probability-weight inequality. Ledger:1806 and lean/claims.yaml:10626-10632 accurately state its hypotheses and constant; its classification as a Lean-route auxiliary is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.tendsto_zero_of_eventually_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:122-124: 'M \u2260 \u22a4' and '\u2200 \u03b7 : \u211d, 0 < \u03b7 \u2192 \u2200\u1da0 n ... a n \u2264 ENNReal.ofReal \u03b7 * M' imply convergence to zero. TeX, manuscript/notes/integrated_spatial_occupation.tex:192-196, gives the approximation sketch without this general extended-real lemma. Ledger:1807 and lean/claims.yaml:10633-10639 preserve the quantifier order and finiteness condition; no direct label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.tendsto_eLpNorm_two_of_dominated: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:139-143, assumes 'MemLp B 2 volume', a.e.-strong measurability of every F n, the all-n/all-x domination, and pointwise convergence to zero. TeX, manuscript/notes/integrated_spatial_occupation.tex:194, says cutoffs 'converge by the function and gradient tails'. Ledger:1808 and lean/claims.yaml:10640-10646 correctly state the stronger pointwise hypotheses of this general route auxiliary, without attributing its precise statement to TeX."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.mollify: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:173-180: F is a real normed space and 'mollify' is convolution of '\u03c6.normed volume' with u using real scalar multiplication and volume. TeX, manuscript/notes/integrated_spatial_occupation.tex:195, mentions 'Mollification' without choosing this kernel. Ledger:1809 and lean/claims.yaml:10647-10653 correctly disclose the normalized-bump model and its auxiliary status."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.continuous_mollify: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:173-185: 'LocallyIntegrable u volume' implies 'Continuous (mollify \u03c6 u)' for a normalized smooth bump and real normed target F. TeX, manuscript/notes/integrated_spatial_occupation.tex:195-196, uses mollification of H^1 functions, whose local integrability follows from L\u00b2 membership. Ledger:1810 and lean/claims.yaml:10654-10660 faithfully summarize this auxiliary; no additional supplied input is hidden."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.contDiff_mollify: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:173-193: 'LocallyIntegrable u volume' yields 'ContDiff \u211d \u221e (mollify \u03c6 u)'. TeX, manuscript/notes/integrated_spatial_occupation.tex:192-196, seeks smooth compact approximants and invokes mollification. Ledger:1811 and lean/claims.yaml:10661-10667 correctly state smoothness under local integrability and classify this precise declaration as auxiliary rather than a labelled TeX step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.eLpNorm_mollify_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:198-200: 'MemLp u 2 volume' implies 'eLpNorm (mollify \u03c6 u) 2 volume \u2264 eLpNorm u 2 volume', with constant exactly 1. TeX, manuscript/notes/integrated_spatial_occupation.tex:195-196, instead invokes 'L\u00b2 translation continuity'. Ledger:1812, its route explanation at 1764-1771, and lean/claims.yaml:10668-10674 accurately identify this contraction as an alternative-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.memLp_mollify: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:248-250: 'MemLp u 2 volume' implies 'MemLp (mollify \u03c6 u) 2 volume'. TeX, manuscript/notes/integrated_spatial_occupation.tex:195-196, mollifies an H^1 function and its L\u00b2 weak gradients. Ledger:1813 and lean/claims.yaml:10675-10681 correctly state L\u00b2 preservation, with no extra completeness hypothesis or supplied analytic assumption."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.mollify_sub: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:254-256, assumes 'LocallyIntegrable u volume' and 'LocallyIntegrable w volume' and concludes the pointwise difference identity for every x. TeX, manuscript/notes/integrated_spatial_occupation.tex:195-196, gives only the mollification-convergence sketch. Ledger:1814 and lean/claims.yaml:10682-10688 match the exact hypotheses, sign and pointwise conclusion; the no-direct-label route classification is accurate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.tendsto_mollify_of_continuous: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:266-274, requires '[CompleteSpace F]', 'Continuous c', 'HasCompactSupport c', and outer radii tending to zero; its conclusion is L\u00b2 convergence. TeX, manuscript/notes/integrated_spatial_occupation.tex:195-196, uses 'L\u00b2 translation continuity' instead of this continuous-compact intermediate case. Ledger:1815 and lean/claims.yaml:10689-10695 include completeness and every substantive assumption; auxiliary mapping is correct."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.tendsto_mollify: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:266,301-303: with complete F, 'MemLp u 2 volume' and '(\u03c6 n).rOut \u2192 0' imply the L\u00b2 error tends to zero. TeX, manuscript/notes/integrated_spatial_occupation.tex:195-196: 'Mollification then converges in H^1 by L\u00b2 translation continuity of the function and its weak gradients'. Ledger:1816 and lean/claims.yaml:10696-10702 correctly state this component lemma; the different proof route is explicitly disclosed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.fderiv_mollify_apply: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:338-341, assumes local integrability of real f and vector g plus 'HasWeakGradient f g', and concludes 'fderiv \u211d (mollify \u03c6 f) x v = inner \u211d (mollify \u03c6 g x) v' for every x,v. TeX, manuscript/notes/integrated_spatial_occupation.tex:195-196, invokes mollification of 'the function and its weak gradients'. Ledger:1817 and lean/claims.yaml:10703-10709 accurately state this auxiliary identity and its hypotheses."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.grad_mollify: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:385-387: 'LocallyIntegrable f', 'LocallyIntegrable g' and 'HasWeakGradient f g' yield 'grad (mollify \u03c6 f) = mollify \u03c6 g'. TeX, manuscript/notes/integrated_spatial_occupation.tex:195-196, uses mollification convergence for the function and weak gradients. Ledger:1818 and lean/claims.yaml:10710-10716 match the function equality, not merely an a.e. statement; the classical gradient is correctly identified."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.tendsto_bumpN_rOut: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:395-399, proves outer radii tend to zero; lean/StratonovichHAMSecondMoment/VariationalFloor.lean:570-572 defines them as '2 / (n + 2 : \u211d)'. TeX, manuscript/notes/integrated_spatial_occupation.tex:195, says 'Mollification' without specifying a sequence. Ledger:1819 and lean/claims.yaml:10717-10723 correctly record this concrete auxiliary sequence and constant."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.cutBump: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:403-405: 'cutBump' is the smooth bump with radii 1 and 2. TeX, manuscript/notes/integrated_spatial_occupation.tex:192-193: cutoffs are 'equal to one on the radius-R ball, vanishing beyond 2R'. Ledger:1820 and lean/claims.yaml:10724-10730 accurately specify the closed-unit-ball plateau and radius-2 vanishing; the canonical profile is an auxiliary implementation choice."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.cutoff: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:409: 'cutoff (n : \u2115) ... := cutBump d (((n : \u211d) + 1)\u207b\u00b9 \u2022 x)'. TeX, manuscript/notes/integrated_spatial_occupation.tex:192-193, uses radius R and 2R cutoffs. Ledger:1821 and lean/claims.yaml:10731-10737 correctly instantiate R=n+1; they do not claim an arbitrary-radius theorem or a labelled TeX declaration."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.cutoff_contDiff: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:412-413: for every natural n, 'ContDiff \u211d \u221e (cutoff ... n)'. TeX, manuscript/notes/integrated_spatial_occupation.tex:192-196, uses cutoffs and mollification to obtain smooth compact approximants. Ledger:1822 and lean/claims.yaml:10738-10744 faithfully state unconditional smoothness of the selected cutoff, appropriately as a route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.cutoff_hasCompactSupport: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:416-417: every 'cutoff ... n' has compact support. TeX, manuscript/notes/integrated_spatial_occupation.tex:192-193: cutoffs vanish 'beyond 2R'. Ledger:1823 and lean/claims.yaml:10745-10751 correctly summarize the compact-support conclusion and natural-number parameter without introducing any supplied hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.cutoff_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:420: '0 \u2264 cutoff n x' for every n,x. TeX, manuscript/notes/integrated_spatial_occupation.tex:192-195, specifies cutoff plateau, support and gradient bounds, not this separate positivity assertion. Ledger:1824 and lean/claims.yaml:10752-10758 accurately describe the chosen auxiliary cutoff; the additional harmless construction property is not falsely attributed to a TeX label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.cutoff_le_one: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:423: 'cutoff n x \u2264 1' for every n,x. TeX, manuscript/notes/integrated_spatial_occupation.tex:192-195, gives the cutoff approximation sketch without separately stating this upper bound. Ledger:1825 and lean/claims.yaml:10759-10765 preserve the exact bound 1 and correctly classify it as an auxiliary construction property."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.cutoff_eq_one: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:427: '\u2016x\u2016 \u2264 (n : \u211d) + 1' implies 'cutoff n x = 1'. TeX, manuscript/notes/integrated_spatial_occupation.tex:192-193: cutoffs are 'equal to one on the radius-R ball'. Ledger:1826 and lean/claims.yaml:10766-10772 correctly retain the non-strict closed-ball hypothesis and R=n+1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.cutoff_isTest: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:436-438: 'ContDiff \u211d \u221e h' implies 'IsTestFunction (fun x => cutoff n x * h x)'. TeX, manuscript/notes/integrated_spatial_occupation.tex:192-196, cuts off first and mollifies afterwards. Ledger:1827 and lean/claims.yaml:10773-10779 correctly restrict this auxiliary to smooth h; ledger:1773-1780 explicitly explains why Lean applies it after mollification rather than claiming the TeX's weak product-rule step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.grad_cutoff_mul: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:442-443, assumes 'ContDiff \u211d \u221e h' and proves 'grad (cutoff n * h) = cutoff n \u2022 grad h + h \u2022 grad (cutoff n)' pointwise. TeX, manuscript/notes/integrated_spatial_occupation.tex:194-195, mentions the 'extra gradient term' for general H^1 f. Ledger:1828 and lean/claims.yaml:10780-10786 accurately state the classical smooth rule; the mollify-first restriction is disclosed, not concealed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.exists_bound_fderiv_cutBump: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:451-452: '\u2203 C : \u211d, 0 \u2264 C \u2227 \u2200 y ... \u2016fderiv \u211d (cutBump d) y\u2016 \u2264 C'. TeX, manuscript/notes/integrated_spatial_occupation.tex:193, requires cutoff gradient 'at most C/R'. Ledger:1829 and lean/claims.yaml:10787-10793 accurately record existence, nonnegativity and uniformity in y; C may depend on the dimension/profile, as the TeX allows."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.norm_grad_cutoff_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:459-460: '\u2200 y, \u2016fderiv \u211d (cutBump d) y\u2016 \u2264 C' implies '\u2016grad (cutoff n) x\u2016 \u2264 C / ((n : \u211d) + 1)'. TeX, manuscript/notes/integrated_spatial_occupation.tex:193, gives 'gradient at most C/R'. Ledger:1830 and lean/claims.yaml:10794-10800 retain the same constant and scaling with R=n+1; existence of such C is proved separately."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.tendsto_cutoff_smul: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:469-471: for real normed G, 'MemLp w 2 volume' implies the L\u00b2 error of 'cutoff n x \u2022 w x - w x' tends to zero. TeX, manuscript/notes/integrated_spatial_occupation.tex:194, uses 'the function and gradient tails'. Ledger:1831 and lean/claims.yaml:10801-10807 correctly state this vector-valued auxiliary, which applies to both the scalar function and vector gradient."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.tendsto_cutoff_test: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:488-492, requires smooth h and 'MemLp h 2 volume', 'MemLp (grad h) 2 volume', and proves both L\u00b2 limits. TeX, manuscript/notes/integrated_spatial_occupation.tex:192-195, treats the cutoff step for general H^1 f. Ledger:1832 and lean/claims.yaml:10808-10814 accurately retain smoothness; ledger:1773-1780 explains its use after mollification. The smooth-only intermediate theorem does not weaken the final density result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.exists_test_approx: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:529-533, assumes f,g in L\u00b2, 'HasWeakGradient f g', and '0 < \u03b5' for \u03b5 in \u211d\u22650\u221e, then produces one test \u03c8 with BOTH errors '\u2264 \u03b5'. TeX, manuscript/notes/integrated_spatial_occupation.tex:192-196, asserts density in H^1. Ledger:1833 and lean/claims.yaml:10815-10821 faithfully give the epsilon formulation, including extended \u03b5 and non-strict error bounds; arbitrary positive finite \u03b5 suffices for density."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.h1TestDense: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:575: 'theorem h1TestDense (d : \u2115) : H1TestDense d', with no supplied input. Its predicate at 86-91 requires L\u00b2 function AND gradient convergence. TeX, manuscript/notes/integrated_spatial_occupation.tex:192-196: 'Smooth compact functions are dense in H^1'; standing d\u2208{1,2,3} appears in manuscript/notes/notes_stratonovich_ham_second_moment.tex:191. Ledger:1757-1758,1834 and lean/claims.yaml:10822-10828 explicitly disclose the harmless all-natural-d generalization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.h1TestDense_of_memH1: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:590-594: 'MemH1 f' yields an L\u00b2 weak gradient g and a test sequence converging to f and g in L\u00b2. WeakSobolev.lean:65-77 defines real tests, distributional weak gradients and MemH1 in the standard way. TeX, manuscript/notes/integrated_spatial_occupation.tex:192-196, asserts density in H^1. Ledger:1835 and lean/claims.yaml:10829-10835 match this existential-gradient formulation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.tendsto_integral_mul_of_L2: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:603-606, assumes every u n, u0 and w belongs to L\u00b2 and the L\u00b2 error tends to zero, then proves convergence of their real integrals against w. TeX, manuscript/notes/integrated_spatial_occupation.tex:192-198, contains no such standalone integral-limit assertion. Ledger:1836 and lean/claims.yaml:10836-10842 accurately describe this auxiliary to the converse proof; no TeX proof-step attribution is made."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.H1Density.hasWeakGradient_of_tendsto: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean, lean/StratonovichHAMSecondMoment/H1Density.lean:632-637: 'MemLp f', 'MemLp g', test functions \u03c6 n and BOTH L\u00b2 limits imply 'HasWeakGradient f g'. TeX, manuscript/notes/integrated_spatial_occupation.tex:192-198, states density and a separability remark, not this converse theorem. Ledger:1760-1763,1837 and lean/claims.yaml:10843-10849 explicitly say 'not stated in the TeX'. The graph-limit conclusion and its additional scope are accurately disclosed."
+    },
+    {
+      "claim": "PARA-H1Density",
+      "verdict": "PASS",
+      "reason": "Candidate/statement-ledger.md:1730-1801 accurately identifies the unlabelled foundation in manuscript/notes/integrated_spatial_occupation.tex:192-196 and its consumers. WeakSobolev.lean:65-83 models real H^1 through L\u00b2 weak gradients, with a.e. uniqueness; VariationalFloor.lean:85-105 supplies the classical gradient. H1Density.lean:198-244,301-330,529-596 confirms contraction, continuous-compact L\u00b2 approximation, mollify-then-cut and both graph limits. The paragraph discloses all-d generality, the alternative route, the converse's absence from TeX, and unformalized separability. The separate a.e.-subsequence extraction is visible in SpatialFourLinear.lean:484-489; no input is silently supplied."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "The complete Index, candidate/statement-ledger.md:281-546, lists exactly five foundation declarations at 500 and the other 28 declarations at 501, each once, matching the 33 section rows at 1805-1837. All are under 'no direct label'; route auxiliaries are explicitly distinguished. Exact-label searches across the supplied manuscript inputs locate the section's cited labels uniquely at manuscript/notes/integrated_spatial_occupation.tex:150 and :231. No missing or duplicated target declaration was found."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "Complete reading of lean/coverage.yaml:1-1171 finds no separate coverage row for this unlabelled foundation. The consumer rows cite h1-density-h1-test-dense at 960 and 998; their notes explicitly say 'density proved in H1Density' at 964 and 'proved ... not supplied' at 999-1001. SpatialOccupationL7Completed.lean:246,277 actually discharges hdense with H1Density.h1TestDense. The narrower consumer conclusions remain disclosed in coverage.yaml:949-951,971-973 and docs/coverage-scope-tex.yaml:31-36."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "The relevant Scope, consumer, completion, VariationalFloor and 'Not in Lean' references agree: candidate/statement-ledger.md:157-165,3117-3119,3666-3669,3747-3759,3983-4003,4042-4055,5096-5099,5936-5956. They consistently distinguish source theorems taking hdense from completed wrappers discharging it, and retain the unformalized separability remark. SpatialFourLinear.lean:471-476 has exactly the H1TestDense body; SpatialOccupationL7Completed.lean:91-301 supplies its proof. No stale assertion that density remains outside Lean was found."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Requirement A is complete. The ledger and claims.yaml were otherwise read only in the listed sections, entries and search contexts; unrelated previously reviewed rows were not reassessed.",
+    "SpatialFourLinear.lean and the main manuscript file were read only in the listed contextual ranges and search matches, not in full. Their unrelated declarations and manuscript results are outside this review.",
+    "Compilation and standard-axiom status were accepted as stipulated; no build or independent proof audit was performed. Supervisor-checked byte binding was not independently recomputed.",
+    "Refutation files mentioned by the ledger were not supplied; their described mathematical examples were assessed, but their executable artifacts were not inspected.",
+    "This AI correspondence review is neither human verification nor a novelty audit."
+  ]
+}

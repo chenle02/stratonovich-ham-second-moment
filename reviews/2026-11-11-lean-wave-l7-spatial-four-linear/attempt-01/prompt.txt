@@ -1,0 +1,216 @@
+Review the frozen packet rooted at <HOME>/.local/state/Le-AI-Lab/stratonovich-lean-wave-l7-review-d-SpatialFourLinear/attempt-01/workspace. Primary target: candidate/statement-ledger.md. Source revision: a8fb49554e1fae437a770e235c6e90b2cfb5ee1a.
+
+You are an independent artifact reviewer. Read only the frozen packet
+and the supplied review contract. Report correctness, missing assumptions,
+incorrect constants, failed implications, and uncertainty. Do not edit files,
+use the network, send messages, publish, install, or delegate. Do not launch a
+research or coding workflow. Return a scientific report rather than a plan.
+Use exactly one JSON object with schema "subscription-review-report/1", verdict (PASS, PASS_WITH_NOTES, FAIL, or
+INCONCLUSIVE), confidence (high, medium, low), source_coverage (list of strings),
+checks (list of objects with claim, verdict, reason), findings (an object with
+fatal, major, minor lists), required_repairs (list), and limitations (list).
+required_repairs contains ONLY mandatory changes that block acceptance. Optional
+clarifications belong in findings.minor, never in required_repairs. PASS and
+PASS_WITH_NOTES require empty fatal, major and required_repairs lists and no
+failed/unchecked claim. If a repair is mandatory, return FAIL or INCONCLUSIVE;
+never weaken a finding to obtain PASS.
+Read every required source completely. Never use Grep head_limit or any other
+truncating or limiting option on a required source. After any pagination or
+truncation marker (for example a partial Read, an offset/limit notice, or
+"output truncated"), keep reading the next range until the whole file is read.
+In source_coverage, list each exact file and the line ranges you actually read.
+If coverage of any required source is incomplete, say "partial" for that source
+in source_coverage and state the gap in limitations.
+An AI review is not human verification or a novelty audit. Do not silently
+repair a candidate and PASS the original. A terminal error is not a verdict.
+
+Frozen packet file index (relative to workspace; a listed file is not proof of reading):
+["PROVENANCE.json", "candidate/statement-ledger.md", "docs/coverage-scope-tex.yaml", "lean/StratonovichHAMSecondMoment/Axioms.lean", "lean/StratonovichHAMSecondMoment/ClockCopy.lean", "lean/StratonovichHAMSecondMoment/ClockCopyHomog.lean", "lean/StratonovichHAMSecondMoment/DampedNorms.lean", "lean/StratonovichHAMSecondMoment/DampedNormsHomog.lean", "lean/StratonovichHAMSecondMoment/DriverParameters.lean", "lean/StratonovichHAMSecondMoment/FiniteGaussianMatrix.lean", "lean/StratonovichHAMSecondMoment/FrequencyRow.lean", "lean/StratonovichHAMSecondMoment/GaussianComparison.lean", "lean/StratonovichHAMSecondMoment/GaussianIBP.lean", "lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean", "lean/StratonovichHAMSecondMoment/GaussianTest.lean", "lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean", "lean/StratonovichHAMSecondMoment/H1Density.lean", "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean", "lean/StratonovichHAMSecondMoment/IndexedCone.lean", "lean/StratonovichHAMSecondMoment/IntervalScalar.lean", "lean/StratonovichHAMSecondMoment/IntervalScalarCompleted.lean", "lean/StratonovichHAMSecondMoment/InventoryProduct.lean", "lean/StratonovichHAMSecondMoment/KappaRange.lean", "lean/StratonovichHAMSecondMoment/MaskedAuxiliaryNorm.lean", "lean/StratonovichHAMSecondMoment/MaskedContinuousWave.lean", "lean/StratonovichHAMSecondMoment/MaskedContinuousWaveCompleted.lean", "lean/StratonovichHAMSecondMoment/MaskedModulation.lean", "lean/StratonovichHAMSecondMoment/MaskedSpectralGrowth.lean", "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean", "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean", "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean", "lean/StratonovichHAMSecondMoment/PhaseBessel.lean", "lean/StratonovichHAMSecondMoment/QuotientObstruction.lean", "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean", "lean/StratonovichHAMSecondMoment/RayleighTail.lean", "lean/StratonovichHAMSecondMoment/SeriesType.lean", "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean", "lean/StratonovichHAMSecondMoment/SpatialFourierBound.lean", "lean/StratonovichHAMSecondMoment/SpatialOccupationCompleted.lean", "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean", "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean", "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean", "lean/StratonovichHAMSecondMoment/SpectralHomog.lean", "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean", "lean/StratonovichHAMSecondMoment/TimeCompletion.lean", "lean/StratonovichHAMSecondMoment/TimeFractional.lean", "lean/StratonovichHAMSecondMoment/TimeSchur.lean", "lean/StratonovichHAMSecondMoment/TypeContinuity.lean", "lean/StratonovichHAMSecondMoment/UniformSeriesTail.lean", "lean/StratonovichHAMSecondMoment/VariationalDilation.lean", "lean/StratonovichHAMSecondMoment/VariationalFloor.lean", "lean/StratonovichHAMSecondMoment/VariationalMean.lean", "lean/StratonovichHAMSecondMoment/VariationalRate.lean", "lean/StratonovichHAMSecondMoment/WaveGreen.lean", "lean/StratonovichHAMSecondMoment/WaveKernel.lean", "lean/StratonovichHAMSecondMoment/WaveTwoVariances.lean", "lean/StratonovichHAMSecondMoment/WeakSobolev.lean", "lean/StratonovichHAMSecondMoment/WhiteClockLaplace.lean", "lean/StratonovichHAMSecondMoment/WhiteRelativeWidth.lean", "lean/claims.yaml", "lean/coverage.yaml", "manuscript/notes/ai-statistics-data.tex", "manuscript/notes/ai-statistics.tex", "manuscript/notes/book-layout.tex", "manuscript/notes/chapter-guides/01-setting.tex", "manuscript/notes/chapter-guides/02-G0.tex", "manuscript/notes/chapter-guides/03-independent-upper.tex", "manuscript/notes/chapter-guides/04-gaussian-foundations.tex", "manuscript/notes/chapter-guides/05-operator-paths.tex", "manuscript/notes/chapter-guides/06-wave-evolution.tex", "manuscript/notes/chapter-guides/07-lower.tex", "manuscript/notes/chapter-guides/08-means.tex", "manuscript/notes/chapter-guides/09-growing-radius.tex", "manuscript/notes/chapter-guides/10-point-upper.tex", "manuscript/notes/chapter-guides/11-constant.tex", "manuscript/notes/chapter-guides/12-finite-order.tex", "manuscript/notes/chapter-guides/13-direct.tex", "manuscript/notes/chapter-guides/14-covariance.tex", "manuscript/notes/chapter-guides/15-static-clock.tex", "manuscript/notes/figures/active-subset-optimization.tex", "manuscript/notes/figures/chapter-roadmap.tex", "manuscript/notes/figures/common-noise.tex", "manuscript/notes/figures/cross-colour-cube.tex", "manuscript/notes/figures/dyadic-cover.tex", "manuscript/notes/figures/endpoint-elimination.tex", "manuscript/notes/figures/gaussian-enlargement.tex", "manuscript/notes/figures/global-control-blocks.tex", "manuscript/notes/figures/hermite-cutoff.tex", "manuscript/notes/figures/interval-allocations.tex", "manuscript/notes/figures/interval-end-metrics.tex", "manuscript/notes/figures/light-cone.tex", "manuscript/notes/figures/literature-interpretations.tex", "manuscript/notes/figures/literature-results-drawing.tex", "manuscript/notes/figures/literature-results-map.tex", "manuscript/notes/figures/nonseparable-controls.tex", "manuscript/notes/figures/order-of-limits.tex", "manuscript/notes/figures/positive-gram.tex", "manuscript/notes/figures/proof-map.tex", "manuscript/notes/figures/styles.tex", "manuscript/notes/figures/two-chain-pairings.tex", "manuscript/notes/figures/walsh-guitar.tex", "manuscript/notes/figures/white-strip.tex", "manuscript/notes/future_optimizers.tex", "manuscript/notes/future_universality.tex", "manuscript/notes/future_work.tex", "manuscript/notes/history_wave_equations.tex", "manuscript/notes/index/anchors.tex", "manuscript/notes/index/list-of-notation.tex", "manuscript/notes/index/setup.tex", "manuscript/notes/integrated_actual_operator_driver.tex", "manuscript/notes/integrated_cameron_mean.tex", "manuscript/notes/integrated_compact_gaussian.tex", "manuscript/notes/integrated_compact_mean_family.tex", "manuscript/notes/integrated_constant_phase_young.tex", "manuscript/notes/integrated_covariance_foundation.tex", "manuscript/notes/integrated_exact_scaling.tex", "manuscript/notes/integrated_gaussian_tubes.tex", "manuscript/notes/integrated_intrinsic_constant.tex", "manuscript/notes/integrated_masked_moments.tex", "manuscript/notes/integrated_occupation_ceiling.tex", "manuscript/notes/integrated_point_transfer.tex", "manuscript/notes/integrated_positive_gram.tex", "manuscript/notes/integrated_radius_anchor.tex", "manuscript/notes/integrated_raw_block_lower.tex", "manuscript/notes/integrated_signed_moment_upper.tex", "manuscript/notes/integrated_signed_static.tex", "manuscript/notes/integrated_source_convergence.tex", "manuscript/notes/integrated_spatial_occupation.tex", "manuscript/notes/integrated_symplectic_phase.tex", "manuscript/notes/integrated_temporal_equilibrium.tex", "manuscript/notes/integrated_uniform_mean.tex", "manuscript/notes/integrated_uniform_products.tex", "manuscript/notes/integrated_unmasked_variational.tex", "manuscript/notes/integrated_wave_variance.tex", "manuscript/notes/integrated_white_evaluation.tex", "manuscript/notes/integrated_young_upper_foundation.tex", "manuscript/notes/literature_review.tex", "manuscript/notes/notes_stratonovich_ham_second_moment.tex", "manuscript/notes/preface.tex"]
+
+Independent correspondence review: newly formalized whole labelled result(s) (Lean ledger rows) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  a8fb49554e1f). Review ONLY its sections "SpatialFourLinear (whole result)", "SpatialOccupationL7Completed (whole result)", the index rows for
+  them, and the items named in the global checks below. All other rows were
+  reviewed earlier.
+- the Lean modules (ground truth for what each declaration states):
+  lean/StratonovichHAMSecondMoment/*.lean (every library module; these
+  sections' own modules: SpatialFourLinear, SpatialOccupationL7Completed, H1Density, SpatialSmoothRatio, OccupationKernelRow)
+  and lean/claims.yaml, lean/coverage.yaml, docs/coverage-scope-tex.yaml.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  975feb31ea65. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean files compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that P:spatial-four-linear and P:spatial-energy-map (H^1 density discharged in SpatialOccupationL7Completed) are formalized as stated in their
+rows: every conclusion proved, with hypotheses that match the manuscript,
+apart from side conditions the TeX leaves implicit and inputs explicitly
+declared as supplied. Test that claim hard: any Lean hypothesis that the
+manuscript does not have, any manuscript hypothesis the Lean drops, any
+weaker Lean conclusion, any changed constant, range, quantifier order or
+strictness, any modelling choice that changes the mathematical object, any
+supplied hypothesis stronger than the manuscript result it stands for, any
+row labelled as a step of a TeX proof that is really an auxiliary of a
+different Lean proof route, and any declaration missing from or duplicated
+in the Index, is a finding, unless the ledger states it AND it is genuinely
+harmless. Decide that yourself from the TeX; do not accept the ledger's word.
+Pay attention to: N(f) and the homogeneous bound A_sp(f) <= R_0 N(f)^4; the square Cauchy-Schwarz bound (with finiteness); C_4 absolutely convergent and its continuity (only sequential: is that recorded?); R_sp = R_0; the energy value (2-alpha)/2 alpha^(alpha/(2-alpha)) R^(2/(2-alpha)) against E:spatial-energy-map; the score display in existential form and the supremum form only under the boundedness claim of P:variational-positive-scores; that the _completed wrappers have exactly the manuscript hypotheses (H:homog, Gamma != 0); the proof-route differences recorded.
+
+CHECKS (exactly these 110, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.SpatialFourLinear.cross_eq_convolution: no direct label"
+  2. claim "StratonovichHAMSecondMoment.SpatialFourLinear.cross_integrable: no direct label"
+  3. claim "StratonovichHAMSecondMoment.SpatialFourLinear.inner_integrable: no direct label"
+  4. claim "StratonovichHAMSecondMoment.SpatialFourLinear.spatialPair_quad: no direct label"
+  5. claim "StratonovichHAMSecondMoment.SpatialFourLinear.spatialPair_comm: no direct label"
+  6. claim "StratonovichHAMSecondMoment.SpatialFourLinear.spatialPair_self_nonneg: P:spatial-four-linear"
+  7. claim "StratonovichHAMSecondMoment.SpatialFourLinear.spatialPair_sq_le: P:spatial-four-linear"
+  8. claim "StratonovichHAMSecondMoment.SpatialFourLinear.l2: P:spatial-four-linear"
+  9. claim "StratonovichHAMSecondMoment.SpatialFourLinear.Nnorm: P:spatial-four-linear"
+  10. claim "StratonovichHAMSecondMoment.SpatialFourLinear.l2_nonneg: no direct label"
+  11. claim "StratonovichHAMSecondMoment.SpatialFourLinear.Nnorm_nonneg: no direct label"
+  12. claim "StratonovichHAMSecondMoment.SpatialFourLinear.l2_sq: no direct label"
+  13. claim "StratonovichHAMSecondMoment.SpatialFourLinear.Nnorm_pow_four: no direct label"
+  14. claim "StratonovichHAMSecondMoment.SpatialFourLinear.gradEnergy_eq_l2_sq: no direct label"
+  15. claim "StratonovichHAMSecondMoment.SpatialFourLinear.integral_sq_eq_l2_sq: no direct label"
+  16. claim "StratonovichHAMSecondMoment.SpatialFourLinear.spatialEnergy_nonneg: no direct label"
+  17. claim "StratonovichHAMSecondMoment.SpatialFourLinear.gradEnergy_const_mul: no direct label"
+  18. claim "StratonovichHAMSecondMoment.SpatialFourLinear.spatialEnergy_const_mul: no direct label"
+  19. claim "StratonovichHAMSecondMoment.SpatialFourLinear.isTest_sq: no direct label"
+  20. claim "StratonovichHAMSecondMoment.SpatialFourLinear.smooth_homog_bound: P:spatial-four-linear"
+  21. claim "StratonovichHAMSecondMoment.SpatialFourLinear.smooth_square_bound: P:spatial-four-linear"
+  22. claim "StratonovichHAMSecondMoment.SpatialFourLinear.smooth_pairing_bound: no direct label"
+  23. claim "StratonovichHAMSecondMoment.SpatialFourLinear.l2_sub_le: no direct label"
+  24. claim "StratonovichHAMSecondMoment.SpatialFourLinear.l2_sub_tendsto: no direct label"
+  25. claim "StratonovichHAMSecondMoment.SpatialFourLinear.l2_tendsto: no direct label"
+  26. claim "StratonovichHAMSecondMoment.SpatialFourLinear.Nnorm_tendsto: no direct label"
+  27. claim "StratonovichHAMSecondMoment.SpatialFourLinear.IsH1Pair: P:spatial-four-linear"
+  28. claim "StratonovichHAMSecondMoment.SpatialFourLinear.SquareBound: no direct label"
+  29. claim "StratonovichHAMSecondMoment.SpatialFourLinear.squareBound_of_smooth: P:spatial-four-linear"
+  30. claim "StratonovichHAMSecondMoment.SpatialFourLinear.aesm_fst: no direct label"
+  31. claim "StratonovichHAMSecondMoment.SpatialFourLinear.aesm_sub: no direct label"
+  32. claim "StratonovichHAMSecondMoment.SpatialFourLinear.lintegral_sq_prod: no direct label"
+  33. claim "StratonovichHAMSecondMoment.SpatialFourLinear.four_lintegral_le: E:spatial-four-linear"
+  34. claim "StratonovichHAMSecondMoment.SpatialFourLinear.C4: P:spatial-four-linear"
+  35. claim "StratonovichHAMSecondMoment.SpatialFourLinear.four_integrable: P:spatial-four-linear"
+  36. claim "StratonovichHAMSecondMoment.SpatialFourLinear.abs_C4_le: P:spatial-four-linear"
+  37. claim "StratonovichHAMSecondMoment.SpatialFourLinear.integrable_mul_dir: no direct label"
+  38. claim "StratonovichHAMSecondMoment.SpatialFourLinear.integrable_inner_mul: no direct label"
+  39. claim "StratonovichHAMSecondMoment.SpatialFourLinear.IsH1Pair.sub: no direct label"
+  40. claim "StratonovichHAMSecondMoment.SpatialFourLinear.isH1Pair_test: no direct label"
+  41. claim "StratonovichHAMSecondMoment.SpatialFourLinear.C4_sub_eq: no direct label"
+  42. claim "StratonovichHAMSecondMoment.SpatialFourLinear.C4_sub_le: no direct label"
+  43. claim "StratonovichHAMSecondMoment.SpatialFourLinear.H1Tendsto: P:spatial-four-linear"
+  44. claim "StratonovichHAMSecondMoment.SpatialFourLinear.Nnorm_tendsto_of_H1: no direct label"
+  45. claim "StratonovichHAMSecondMoment.SpatialFourLinear.Nnorm_sub_tendsto_of_H1: no direct label"
+  46. claim "StratonovichHAMSecondMoment.SpatialFourLinear.C4_tendsto: P:spatial-four-linear"
+  47. claim "StratonovichHAMSecondMoment.SpatialFourLinear.pairing_toReal_eq_C4: no direct label"
+  48. claim "StratonovichHAMSecondMoment.SpatialFourLinear.C4_test_eq: no direct label"
+  49. claim "StratonovichHAMSecondMoment.SpatialFourLinear.C4_square_CS: E:spatial-square-CS"
+  50. claim "StratonovichHAMSecondMoment.SpatialFourLinear.square_pairing_CS: E:spatial-square-CS"
+  51. claim "StratonovichHAMSecondMoment.SpatialFourLinear.C4_linear_one: P:spatial-four-linear"
+  52. claim "StratonovichHAMSecondMoment.SpatialFourLinear.C4_linear_three: P:spatial-four-linear"
+  53. claim "StratonovichHAMSecondMoment.SpatialFourLinear.C4_comm_one_two: no direct label"
+  54. claim "StratonovichHAMSecondMoment.SpatialFourLinear.C4_comm_three_four: no direct label"
+  55. claim "StratonovichHAMSecondMoment.SpatialFourLinear.pairing_sq_pos: P:spatial-four-linear"
+  56. claim "StratonovichHAMSecondMoment.SpatialFourLinear.l2_eq_sqrt: no direct label"
+  57. claim "StratonovichHAMSecondMoment.SpatialFourLinear.l2_eq_sqrt': no direct label"
+  58. claim "StratonovichHAMSecondMoment.SpatialFourLinear.Nnorm_eq_sqrt: no direct label"
+  59. claim "StratonovichHAMSecondMoment.SpatialFourLinear.gradL2_pos: P:spatial-four-linear"
+  60. claim "StratonovichHAMSecondMoment.SpatialFourLinear.ratioSetH1: P:spatial-four-linear"
+  61. claim "StratonovichHAMSecondMoment.SpatialFourLinear.Rsp: P:spatial-four-linear"
+  62. claim "StratonovichHAMSecondMoment.SpatialFourLinear.unitH1_A_le: no direct label"
+  63. claim "StratonovichHAMSecondMoment.SpatialFourLinear.unitTest_bridge: no direct label"
+  64. claim "StratonovichHAMSecondMoment.SpatialFourLinear.Rsp_eq_R0: P:spatial-four-linear"
+  65. claim "StratonovichHAMSecondMoment.SpatialFourLinear.energySet: P:spatial-energy-map"
+  66. claim "StratonovichHAMSecondMoment.SpatialFourLinear.Esp: P:spatial-energy-map"
+  67. claim "StratonovichHAMSecondMoment.SpatialFourLinear.energyValue: E:spatial-energy-map"
+  68. claim "StratonovichHAMSecondMoment.SpatialFourLinear.young_bound: no direct label"
+  69. claim "StratonovichHAMSecondMoment.SpatialFourLinear.energy_attain: no direct label"
+  70. claim "StratonovichHAMSecondMoment.SpatialFourLinear.energyValue_continuous: no direct label"
+  71. claim "StratonovichHAMSecondMoment.SpatialFourLinear.energyValue_mem: no direct label"
+  72. claim "StratonovichHAMSecondMoment.SpatialFourLinear.energy_map: E:spatial-energy-map"
+  73. claim "StratonovichHAMSecondMoment.SpatialFourLinear.F0: E:spatial-static-energy-score"
+  74. claim "StratonovichHAMSecondMoment.SpatialFourLinear.score_identity: no direct label"
+  75. claim "StratonovichHAMSecondMoment.SpatialFourLinear.smoothScoreBound_continuous: no direct label"
+  76. claim "StratonovichHAMSecondMoment.SpatialFourLinear.squareBound_R0: no direct label"
+  77. claim "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_homogeneous_bound_paper: E:spatial-homogeneous-bound"
+  78. claim "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_square_CS_paper: E:spatial-square-CS"
+  79. claim "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_four_linear_bound_paper: E:spatial-four-linear"
+  80. claim "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_four_linear_multilinear_paper: P:spatial-four-linear"
+  81. claim "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_four_linear_continuous_paper: P:spatial-four-linear"
+  82. claim "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_ratio_H1_paper: P:spatial-four-linear"
+  83. claim "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_Asp_pos_paper: P:spatial-four-linear"
+  84. claim "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_four_linear_paper: P:spatial-four-linear"
+  85. claim "StratonovichHAMSecondMoment.SpatialFourLinear.squarePairingBounds_paper: P:spatial-four-linear"
+  86. claim "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_energy_value_paper: E:spatial-energy-map"
+  87. claim "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_static_energy_score_paper: E:spatial-static-energy-score"
+  88. claim "StratonovichHAMSecondMoment.SpatialFourLinear.spatial_static_energy_score_sSup_paper: E:spatial-static-energy-score"
+  89. claim "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.squareBound_of_smooth_completed: P:spatial-four-linear"
+  90. claim "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.C4_square_CS_completed: E:spatial-square-CS"
+  91. claim "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.square_pairing_CS_completed: E:spatial-square-CS"
+  92. claim "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_homogeneous_bound_paper_completed: E:spatial-homogeneous-bound"
+  93. claim "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_square_CS_paper_completed: E:spatial-square-CS"
+  94. claim "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_four_linear_bound_paper_completed: E:spatial-four-linear"
+  95. claim "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_four_linear_multilinear_paper_completed: P:spatial-four-linear"
+  96. claim "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_four_linear_continuous_paper_completed: P:spatial-four-linear"
+  97. claim "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_ratio_H1_paper_completed: P:spatial-four-linear"
+  98. claim "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_four_linear_paper_completed: P:spatial-four-linear"
+  99. claim "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.squarePairingBounds_paper_completed: P:spatial-four-linear"
+  100. claim "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_energy_value_paper_completed: E:spatial-energy-map"
+  101. claim "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_static_energy_score_paper_completed: E:spatial-static-energy-score"
+  102. claim "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.spatial_static_energy_score_sSup_paper_completed: E:spatial-static-energy-score"
+  103. claim "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.squarePairingBounds_holds: P:spatial-four-linear"
+  104. claim "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.occupation_physical_class_completed_paper: P:occupation-physical-class"
+  105. claim "StratonovichHAMSecondMoment.SpatialOccupationL7Completed.occupation_physical_class_Esp_paper: P:occupation-physical-class"
+  106. claim "PARA-SpatialFourLinear": the "SpatialFourLinear (whole result)" section paragraph is accurate, cites the right files and lines at 975feb3, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input, proof-route difference and what is not formalized, and does not overclaim
+  107. claim "PARA-SpatialOccupationL7Completed": the "SpatialOccupationL7Completed (whole result)" section paragraph is accurate, cites the right files and lines at 975feb3, states every abstraction, implicit hypothesis, unused carried hypothesis, supplied input, proof-route difference and what is not formalized, and does not overclaim
+  108. claim "LEDGER-INDEX": every one of these 105 declarations appears EXACTLY ONCE in the "Index by label" table, under the same label as its section row (an additional listing only as an explicitly marked cross-reference), route auxiliaries in a "no direct label" row, and every label cited in the sections exists in the manuscript (search \label across all files)
+  109. claim "COVERAGE-ROWS": the coverage.yaml rows P:spatial-four-linear and P:spatial-energy-map (new, same-assumptions, weaker) and their docs/coverage-scope-tex.yaml entries: classes, conclusions, scopes (plain English), notes and claims are right
+  110. claim "CROSS-REFERENCES": every other place in the ledger that points to these sections or their labels (other sections, the "Not in Lean" section, Scope) is accurate
+For each row check (1-105): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: these sections' own
+   Lean modules (lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean, lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean, lean/StratonovichHAMSecondMoment/H1Density.lean, lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean, lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean), and,
+   for every other declaration a row names, that declaration in its module;
+   the sections "SpatialFourLinear (whole result)", "SpatialOccupationL7Completed (whole result)" and the "Scope" and "Index by label" sections of
+   candidate/statement-ledger.md; the entries of lean/claims.yaml for these
+   modules; lean/coverage.yaml; docs/coverage-scope-tex.yaml;
+   manuscript/notes/integrated_spatial_occupation.tex,
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 110 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-105.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.
+

@@ -1,0 +1,235 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-1248 \u2014 complete.",
+    "candidate/statement-ledger.md:1-546,3062-3206,3813-3829,3891,3918,3974-4059,5935-5956 \u2014 partial file; complete required Scope, Index and OccupationPhysicalClass sections, plus relevant cross-reference contexts.",
+    "lean/StratonovichHAMSecondMoment/OccupationPhysicalClass.lean:1-816 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialOccupationL7Completed.lean:1-383 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/OccupationKernelRow.lean:1-448 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/SpatialFourLinear.lean:1-1749 \u2014 complete.",
+    "lean/claims.yaml:4918-5114,10850-11712,12072-12191 \u2014 partial file; complete entries for all four required modules.",
+    "lean/coverage.yaml:1-1171 \u2014 complete.",
+    "docs/coverage-scope-tex.yaml:1-42 \u2014 complete.",
+    "manuscript/notes/integrated_spatial_occupation.tex:1-379 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 \u2014 complete.",
+    "lean/StratonovichHAMSecondMoment/WeakSobolev.lean:54-135 \u2014 partial; required supporting definitions and weakGradient_ae_unique read completely.",
+    "lean/StratonovichHAMSecondMoment/SpatialStaticControls.lean:125-153 \u2014 partial; IsUnitH1 definition read completely.",
+    "lean/StratonovichHAMSecondMoment/SpatialSmoothRatio.lean:288-308,646-711 \u2014 partial; R0, homog_consequences and spatial_smooth_ratio_R0_paper read completely.",
+    "lean/StratonovichHAMSecondMoment/H1Density.lean:80-97,570-589 \u2014 partial; H1TestDense and h1TestDense read completely.",
+    "lean/StratonovichHAMSecondMoment/VariationalDilation.lean:180-205 \u2014 partial; SetScaling definition read completely.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:178-252 \u2014 partial; standing hypothesis H:homog read completely. Exact cited-label searches across manuscript/notes returned their unique definitions in this file and integrated_spatial_occupation.tex."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.sqPair: E:spatial-physical-pair",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:108-109 defines 'pairing \u0393 (fun x => ofReal (f x ^ 2)) (fun x => ofReal (h x ^ 2))', without hypotheses. TeX integrated_spatial_occupation.tex:15-19 defines 'B_\u0393(f,h)=\u222b f(x)h(x-y)\u03bd(dx,dy)' initially as an extended nonnegative integral. Specialization to squares is exact; ledger:3171 and claims.yaml:11471 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.gradSqE: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:114 defines '\u222b\u207b x, \u2016gf x\u2016\u2091 ^ 2', without asserting gf is a gradient. TeX integrated_spatial_occupation.tex:35 defines 'b(g)=\u2016\u2207g\u2016_2^2' on H^1. Ledger:3172 and claims.yaml:11478 correctly condition the identification on gf being a weak gradient; the unlabelled mapping is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.Nnorm: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:119-120 uses 'sqrt (\u222b f\u00b2) ^ (1-alpha/4) * sqrt (\u222b \u2016gf\u2016\u00b2) ^ (alpha/4)'. TeX integrated_spatial_occupation.tex:151-152 has 'f \u2208 H^1' and 'N(f)=\u2016f\u2016_2^{1-alpha/4}\u2016\u2207f\u2016_2^{alpha/4}'. On the stated L^2 weak-gradient interpretation these coincide. Ledger:3173 and claims.yaml:11485 accurately expose the Bochner formulation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.SquarePairingBounds: P:spatial-four-linear",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:133-139 requires 'MemLp f 2', 'MemLp gf 2', 'HasWeakGradient f gf', and similarly for h, supplying the diagonal bound and squared square-pairing CS. TeX integrated_spatial_occupation.tex:151-157 assumes real H^1 profiles and states 'A_sp(f) \u2264 R_0 N(f)^4' and 'B_\u0393(f\u00b2,h\u00b2) \u2264 sqrt(A_sp(f)A_sp(h))'. Finiteness makes the formulations equivalent at R=R_0. Ledger:3174 and claims.yaml:11492 match; discharge is explicit at SpatialOccupationL7Completed.lean:253-266,310-313."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.Tlin: P:occupation-physical-class",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:142 defines '\u222b\u207b s, gradSqE (DG s) \u2202volI'. TeX integrated_spatial_occupation.tex:312-313 defines 'T(g)=\u222b_0^1 b(g_s) ds < infinity' for the occupation class. The nonnegative extended formulation agrees on admissible fields; ledger:3175 and claims.yaml:11499 state it accurately."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.IsOccField: P:occupation-physical-class",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:154-158 requires 'AEStronglyMeasurable' joint G and DG, '\u2200\u1d50 s, IsUnitH1 (G s) (DG s)', and 'Tlin DG < top'. TeX integrated_spatial_occupation.tex:311-314 requires 'strongly H^1-measurable fields', unit norm a.e., and finite T. Ledger:3098-3107,3176 explicitly records the unformalized identification in both directions; claims.yaml:11506 accurately describes the model. No additional time smoothness or support restriction is hidden. Acceptance concerns this disclosed representative-based scope, not an asserted formal equivalence of classes."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.Jlin: P:occupation-physical-class",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:164-165 defines '\u222b\u207b s, \u222b\u207b t, ofReal (Kstar a D (s-t)) * sqPair \u0393 (G s) (G t)'. TeX integrated_spatial_occupation.tex:321-323 defines the same nonnegative double integral; its proof:358 explicitly permits positive Tonelli before finiteness. Ledger:3090-3093 specifies inner t and outer s, resolving the abbreviated wording at ledger:3177 and claims.yaml:11513."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.J: P:occupation-physical-class",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:504 defines '(Jlin a D \u0393 G).toReal'; finiteness under the analytic hypotheses and IsOccField is proved at :530-577. TeX integrated_spatial_occupation.tex:324-327 states 'every g \u2208 O' satisfies '0 \u2264 J(g) \u2264 ... < infinity'. Ledger:3178 and claims.yaml:11520 correctly attach the finiteness qualification rather than treating unrestricted toReal as an integral."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.T: P:occupation-physical-class",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:507 defines '(Tlin DG).toReal', with 'energy_lt_top : Tlin DG < top' in IsOccField at :158. TeX integrated_spatial_occupation.tex:312-313 requires 'T(g)=\u222b_0^1 b(g_s) ds < infinity'. Ledger:3179 and claims.yaml:11527 agree; T_eq_integral supplies the real-integral identification."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.spEnergyVal: E:spatial-energy-map",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:582-583 defines '(2-alpha)/2 * alpha^(alpha/(2-alpha)) * R^(2/(2-alpha))', without hypotheses. TeX integrated_spatial_occupation.tex:239-244 gives that formula at R_sp under the standing assumptions. Ledger:3180 and claims.yaml:11534 explicitly map only the right-hand formula at arbitrary real R, not the spatial supremum itself. All factors and exponents match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.energySet: E:occupation-own-energy",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:731-733 defines values witnessed by 'IsOccField G DG' and 'v = J ... G - T DG / 2'. TeX integrated_spatial_occupation.tex:328-331 takes 'sup_{g\u2208O}(J(g)-T(g)/2)' over exactly its class. Ledger:3181 and claims.yaml:11541 accurately state the value set over the disclosed modelled class; the coefficient 1/2 is unchanged."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.EstarO: E:occupation-own-energy",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:737 defines 'sSup (energySet a D \u0393)'; :743-765 proves 'Nonempty \u2227 BddAbove' under the stated analytic assumptions. TeX integrated_spatial_occupation.tex:330-332 defines the occupation supremum, and :364-369 supplies its positive witness and finiteness. Ledger:3182 and claims.yaml:11548 correctly cite the theorem making this a genuine supremum."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.squareCS_of_sqrt: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:169-170 assumes 'X \u2260 top', 'A \u2260 top', 'B \u2260 top', and 'X.toReal \u2264 sqrt(A.toReal * B.toReal)', concluding 'X^2 \u2264 A*B'. TeX integrated_spatial_occupation.tex:152-157 states finite physical pairings and the real square-root bound, not this abstract conversion lemma. Ledger:3183 and claims.yaml:11555 faithfully describe a Lean-route auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.ae_prod_both: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:181-184 assumes '\u2200\u1d50 s \u2202volI, P s' and concludes the property at both coordinates product-a.e. TeX integrated_spatial_occupation.tex:358-359 says 'Null-time modifications affect only a product-null set'; it does not state this standalone predicate lemma. Ledger:3184 and claims.yaml:11562 match; the auxiliary classification is sound."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.sqPair_congr: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:189-190 assumes '[IsLocallyFiniteMeasure \u0393]', 'f =\u1d50 f\u2032' and 'h =\u1d50 h\u2032', concluding equality of sqPair. TeX integrated_spatial_occupation.tex:18-30 states representative independence for B_\u0393 and explains null-set transfer. Ledger:3185 and claims.yaml:11569 correctly describe this squares-specialization auxiliary without claiming a separate labelled manuscript step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.sqPair_aemeasurable: P:occupation-physical-class",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:201-204 assumes locally finite \u0393 and 'AEStronglyMeasurable (fun p => G p.1 p.2) (volI.prod volume)', concluding 'AEMeasurable' pairings. TeX integrated_spatial_occupation.tex:318 says 'pairings ... are measurable'; :339-349 constructs joint versions and identifies the physical integral a.e. Ledger:3186 and claims.yaml:11576 accurately state the a.e. conclusion and representative hypothesis; ledger:3141-3143 records the different Tonelli route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.gradSqE_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:229-231 assumes 'MemLp gf 2 volume', concluding integrability of '\u2016gf\u2016\u00b2' and 'gradSqE gf = ofReal (\u222b \u2016gf\u2016\u00b2)'. TeX integrated_spatial_occupation.tex:35 uses 'b(g)=\u2016\u2207g\u2016_2\u00b2' on H^1. Ledger:3187 and claims.yaml:11583 correctly present the extended-to-real bridge as an auxiliary, with no additional manuscript claim."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.sqPair_self_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:243-246 assumes '0 \u2264 R', '0 \u2264 alpha', SquarePairingBounds and 'IsUnitH1 f gf', yielding 'sqPair \u0393 f f \u2264 ofReal R * gradSqE gf^(alpha/2)'. TeX integrated_spatial_occupation.tex:151-154 gives the homogeneous bound and :312 imposes unit norm. Ledger:3188 and claims.yaml:11590 exactly describe the normalized specialization; its auxiliary classification and discharged input are explicit."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.sqPair_le_half: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:263-267 assumes nonnegative R and alpha, SquarePairingBounds and two unit H^1 pairs, yielding 'ofReal (R/2) * (b_f^(alpha/2)+b_h^(alpha/2))' as upper bound. TeX integrated_spatial_occupation.tex:351-356 combines square CS with '2F(s)F(t) \u2264 F(s)^2+F(t)^2'. Ledger:3189 and claims.yaml:11597 correctly describe this combined auxiliary with the factor 1/2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.row_lintegral_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:317-319 assumes '0<a', 'a<1', '0<D', 's\u2208Icc 0 1' and bounds the extended row by 'ofReal (Rstar a D)'. TeX integrated_spatial_occupation.tex:291-298 states the exact real row maximum on [0,1]. Ledger:3190 and claims.yaml:11604 accurately describe its extended-integral auxiliary specialization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.col_lintegral_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:336-343 assumes '0<a<1', '0<D', 't\u2208Icc 0 1' and proves the extended column bound using Kstar_neg. TeX integrated_spatial_occupation.tex:356-357 says the 'column bound is the same because K_star is even'. Ledger:3191 and claims.yaml:11611 match; identifying the extended formulation as an auxiliary is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.lintegral_rpow_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:348-349 assumes 'AEMeasurable f volI', '0<p', 'p<1' and proves '\u222b\u207b f^p \u2264 (\u222b\u207b f)^p'. TeX integrated_spatial_occupation.tex:353-355 uses '0<alpha/2<1' and concavity for b on the unit time interval. Ledger:3192 and claims.yaml:11618 correctly describe the general H\u00f6lder auxiliary, not a literal TeX proof lemma; the probability-mass normalization is proved at Lean:359-360."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.gradSqE_aemeasurable: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:368-373 assumes joint 'AEStronglyMeasurable' DG and proves 'AEMeasurable (fun s => gradSqE (DG s)) volI'. TeX integrated_spatial_occupation.tex:337 derives measurability of b from continuity of the squared gradient norm on H^1. Ledger:3193 and claims.yaml:11625 accurately describe the different representative-based auxiliary route."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.Jlin_le: E:occupation-physical-bound",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:378-382 assumes '0<a<1', '0<D', '0<alpha<2', '0\u2264R', SquarePairingBounds and IsOccField, without local finiteness, and proves the extended bound with 'Rstar * R * (Tlin DG).toReal^(alpha/2)'. TeX integrated_spatial_occupation.tex:324-326 has 'g\u2208O' and 'J(g)\u2264R_star R_sp T(g)^(alpha/2)'. Ledger:3194 and claims.yaml:11632 accurately expose the general hypotheses and constant replacement; the paper completion restores R_sp."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.sqPair_Jlin_congr: P:occupation-physical-class",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:467-471 assumes locally finite \u0393 and '\u2200\u1d50 s, G s =\u1d50[volume] G\u2032 s', concluding product-a.e. equality of pairings and exact equality of Jlin. TeX integrated_spatial_occupation.tex:318-319 states 'representative independent', while :345-346,358-359 addresses spatial versions and null-time changes. Ledger:3195 and claims.yaml:11639 preserve these quantifiers and conclusions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.Tlin_congr: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:484-485 assumes '\u2200\u1d50 s, DG s =\u1d50[volume] DG\u2032 s' and concludes 'Tlin DG = Tlin DG\u2032'. TeX integrated_spatial_occupation.tex:312-313 defines T through the squared weak-gradient norm, without a separate lemma about named gradient versions. Ledger:3196 and claims.yaml:11646 accurately classify and summarize this auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.Tlin_unique: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:496-501 assumes a.e. 'IsUnitH1 (G s) (DG s)' and 'IsUnitH1 (G s) (DG\u2032 s)', concluding equality of Tlin by weak-gradient uniqueness. TeX integrated_spatial_occupation.tex:311-313 treats g_s as an H^1 element and b(g_s) as intrinsic. Ledger:3197 and claims.yaml:11653 match the stronger explicit unit-pair hypotheses of this auxiliary; no manuscript theorem is falsely attributed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.T_eq_integral: P:occupation-physical-class",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:511-512 assumes 'IsOccField G DG' and proves integrability of 's \u21a6 \u222b x, \u2016DG s x\u2016\u00b2' and that its integral equals T. TeX integrated_spatial_occupation.tex:312-313 assumes finite 'T(g)=\u222b_0^1 b(g_s) ds'; :337-338 supplies measurability. Ledger:3198 and claims.yaml:11660 accurately describe the real-integral proof step within the disclosed class model."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.occupation_physical_bound: E:occupation-physical-bound",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:530-541 assumes '0<a<1', '0<D', '0<alpha<2', '0\u2264R', locally finite \u0393, SquarePairingBounds and IsOccField; it proves a.e. measurability, finite Jlin, the integrable product-space real form, and '0\u2264J\u2264Rstar*R*T^(alpha/2)'. TeX integrated_spatial_occupation.tex:318-326 states measurability and the same bound for g\u2208O with R_sp. Ledger:3199 and claims.yaml:11667 accurately expose the generalization and supplied input; no finiteness is assumed instead of proved."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.scalar_max: P:occupation-physical-class",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:587-588 assumes '0<alpha<2', '0\u2264c', '0\u2264T' and proves 'c*T^(alpha/2)-T/2 \u2264 spEnergyVal alpha c'. TeX integrated_spatial_occupation.tex:361-363 maximizes the expression over 'T\u22650' at c=R_star R_sp. Ledger:3200 and claims.yaml:11674 explicitly claim the upper inequality, not an attainment theorem; the AM-GM route and exact constant agree with the required upper-bound step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.Kstar_one_le: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:617-618 assumes '0<a', '0<D', s,t\u2208(0,1), and 't\u2260s', concluding 'Kstar ... 1 \u2264 Kstar ... (s-t)'. TeX integrated_spatial_occupation.tex:289 sets 'K_star(0)=0' and :292-293 states decrease only on positive arguments. Ledger:3201 and claims.yaml:11681 retain the indispensable off-diagonal condition and correctly mark this alternative positivity-route lemma as auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.volI_univ: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:631-632 proves 'volI univ = 1', without hypotheses. TeX integrated_spatial_occupation.tex:311-313 uses time interval '(0,1)' and :353-355 invokes its unit-length concavity bound. Ledger:3202 and claims.yaml:11688 correctly describe the normalization as an unlabelled auxiliary."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.exists_pos_member: P:occupation-physical-class",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:640-645 assumes the recorded parameter ranges, nonnegative R, locally finite '\u0393\u22600', SetScaling and SquarePairingBounds, and concludes '\u2203 G DG, IsOccField G DG \u2227 0<J-T/2'. TeX integrated_spatial_occupation.tex:364-369 uses a constant-in-time dilated unit compact profile to establish the same positive witness. Ledger:3203 and claims.yaml:11695 match; the disclosed K_star(1) lower-bound route is implemented at Lean:678-727 and genuinely proves nonemptiness."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.occupation_own_energy: E:occupation-own-energy",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:743-749 assumes '0<a<1', 'D>0', '0<alpha<2', 'R\u22650', locally finite nonzero scaling \u0393 and SquarePairingBounds; it concludes Nonempty, BddAbove, and '0<EstarO\u2264Rstar^(2/(2-alpha))*spEnergyVal alpha R'. TeX integrated_spatial_occupation.tex:328-332 states '0<E_star^O\u2264R_star^(2/(2-alpha))*E_sp'. Ledger:3204 and claims.yaml:11702 correctly expose the general formula constant; the completed wrapper identifies it with E_sp."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.OccupationPhysicalClass.occupation_physical_class_paper: P:occupation-physical-class",
+      "verdict": "PASS",
+      "reason": "Lean OccupationPhysicalClass.lean:782-803 assumes 'HomogCovariance d alpha a \u0393 \u03bc', '\u0393\u22600', 'D=(4-alpha)-2*a', and SquarePairingBounds at R_0; its universal field clause and separate global energy clause match ledger:3205 and claims.yaml:11709. TeX integrated_spatial_occupation.tex:4-10 supplies the covariance and parameter assumptions; :311-332 supplies O, measurability, J and energy bounds. The class-model and R_0/formula differences are explicitly recorded. SpatialOccupationL7Completed.lean:310-381 removes the supplied input and restores both R_sp and the actual spatial supremum E_sp."
+    },
+    {
+      "claim": "PARA-OccupationPhysicalClass",
+      "verdict": "PASS",
+      "reason": "Ledger:3064-3167 accurately identifies the TeX statement, standing assumptions and proof ranges. Its object definitions, extended-to-real qualifications, class-model limitation in both directions, SquarePairingBounds discharge, and distinction between spEnergyVal and E_sp agree with the four complete Lean modules. The H\u00f6lder, Tonelli, AM-GM and K_star(1) route differences are real and disclosed. K_star(0)=0 agrees with OccupationKernelRow.lean:94-95 and TeX:289. The zero-covariance remark at TeX:374-379 is correctly excluded. No hidden optimizer or compact-support condition is imposed on general occupation fields."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "All 35 declarations occur exactly once in the Index table, at ledger:511-519, under their section-row labels; the 14 route auxiliaries are grouped under 'no direct label'. The completed wrappers are separately indexed at :541. Exact label searches across all manuscript inputs returned one definition for every label cited by the reviewed section: the spatial/occupation labels in integrated_spatial_occupation.tex and H:homog in notes_stratonovich_ham_second_moment.tex:190."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:890-916 correctly uses 'same-assumptions' with 'conclusion: weaker' and explicitly limits the result to the joint-representative class, leaving both class-identification directions unformalized. The listed claims support measurability, representative independence, nonemptiness, positivity and the exact R_sp/E_sp bounds; no analytic input remains in the completed occupation wrappers. docs/coverage-scope-tex.yaml:28-30 has matching ASCII and TeX scope statements. This is not an unqualified claim to have formalized the strong-H^1 class identification."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Relevant cross-references at ledger:166-171,3818-3823,3891,3918,4004-4038,4056-4058,5936-5956 consistently describe input discharge, exact constants and the remaining class-model limitation. The 'Not in Lean' list correctly retains strong-H^1 measurability/class identification, the exact J_0 calculation and the zero-covariance remark. Only the generic source-path wording in Scope:29-30 needs an optional clarification; the correct whole-result path is already given at :250-253."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "W1 \u2014 Scope source-path wording: candidate/statement-ledger.md:29-30 says 'The exact statement is the Lean type in StratonovichHAMAudit/<Module>.lean', although these whole-result declarations are in StratonovichHAMSecondMoment; for example OccupationPhysicalClass.lean:108-109 defines 'sqPair ... := pairing \u0393 ...', corresponding to TeX integrated_spatial_occupation.tex:15-19, 'B_\u0393(f,h)=\u222b f(x)h(x-y)\u03bd(dx,dy)'. The correct distinction already appears at ledger:250-253, so this is nonblocking. Optional fix: mention both source namespaces in Scope:29-30 or refer there to the later path distinction."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Acceptance is limited to the ledger's explicitly disclosed representative-based occupation model. Neither direction of its formal identification with strongly H^1-measurable fields is proved in the packet.",
+    "Requirement A was completed. Partial-file coverage outside its required sections and declarations reflects the expressly limited review scope; unrelated ledger rows and unrelated module contents were not reviewed.",
+    "Compilation, absence of sorry and the standard-axiom restriction were accepted as supplied; no build was run. Supervisor-checked byte binding was not independently recomputed.",
+    "This AI correspondence review is not human verification, a novelty audit, or verification of the manuscript's remaining stochastic results."
+  ]
+}
