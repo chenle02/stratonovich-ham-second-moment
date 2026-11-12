@@ -6,7 +6,7 @@
 
 ## Status (kept current; updated at every milestone)
 
-Last updated: 2026-11-12 (afternoon), waves L12, L13, L14 PROPOSED; Easley stage 2 approved, first pre-gate replay (L10 integration `f0b795f`, 21 targets) running; L9 docs repair round 5 (every-cell Index rule) running.
+Last updated: 2026-11-12 (evening), waves L12, L13, L14 APPROVED (defaults); L12 items citing only a284420 labels launched (C1, SRC on <MACHINE>; F1, TW on <MACHINE>); R0 after the L11 docs merge; L9 pointer-Index repair running.
 
 | Item | Current state |
 |---|---|
@@ -25,7 +25,7 @@ Last updated: 2026-11-12 (afternoon), waves L12, L13, L14 PROPOSED; Easley stage
 | Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
 | Compute | <MACHINE>: L8 lower-tier receipt, L9 confirmation review; Office: L11 wrappers; <MACHINE>: L10 merge + comparator; Easley via <MACHINE>: L7 replay and the L8 array |
-| Decisions open for Le | approval of the proposed waves L12, L13, L14 (decisions with defaults in each entry; D8 pilot option, P:nogo-29); the L9 gate (after its repairs, confirmation and receipts); release of gaussian-chaos-lean (opens D1 and K9); investing in D8; public release (HOLD; version levels approved 2026-11-12); lean-pkg 0.30.0 upgrade when released |
+| Decisions open for Le | the L9 gate (after its repairs, confirmation and receipts); release of gaussian-chaos-lean (opens D1 and K9); investing in D8; public release (HOLD; version levels approved 2026-11-12); lean-pkg 0.30.0 upgrade when released |
 | Next actions | L8: lower-tier receipt → merge `l8-gate-docs` with verification and replay sentences → SHA to #24; Easley array → collect → verification/leanchecker-easley-wave-l8/. L9: confirmation verdict → (repairs if any) → merge `wave-l9/repair` into main → both receipts, regate, ledger → Easley replay of the L9 modules → Le's L9 gate. L10: merge L9 repairs, comparator, reviews. L11: wrappers, docs merge after L10, comparator, reviews. Collect the Easley L7 replay. Proposed next: L12 (re-anchor, docs upgrades, hygiene before v1.0.0, small results and no-gos, F1), L13 (diagram model, Chapter 3 bounds for alpha <= 1, K5), L14 (K6 resolvent form, K1, higher transfer, d = 3 endpoints, class-O bridge) |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
@@ -550,7 +550,7 @@ Last updated: 2026-11-12 (afternoon), waves L12, L13, L14 PROPOSED; Easley stage
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
-- **WAVE L12: PROPOSED (2026-11-12).** From read-only preparations (session scratch
+- **WAVE L12: APPROVED by Le (2026-11-12) as proposed, with the default answers to its decisions.** Le, verbatim: "I approve Lean waves L12, L13 and L14 as proposed in lean-progress/PROGRESS.md, with the default answers to their decisions. Launch L12's items that cite only a284420 labels now on <MACHINE> and <MACHINE>; start R0 after the L11 docs merge." Proposal as written: From read-only preparations (session scratch
   l12-prep/: INVENTORY.md, DEBT.md, D8-FEASIBILITY.md; probes compiled on
   Office at Mathlib `56a0058`), with classes predicted under Le's 2026-11-12
   rules (strict whole result, split modelled-object rule with the
@@ -635,7 +635,7 @@ Last updated: 2026-11-12 (afternoon), waves L12, L13, L14 PROPOSED; Easley stage
   the class-O bridge); C8-C10 beyond F1 (they shrink input lists, change no
   class; L15 candidates); everything needing D1, D5, D7 or D8.
 
-- **WAVE L13: PROPOSED (2026-11-12).** Structure: the two-chain diagram
+- **WAVE L13: APPROVED by Le (2026-11-12) as proposed, with the default answers to its decisions.** Le, verbatim: "I approve Lean waves L12, L13 and L14 as proposed in lean-progress/PROGRESS.md, with the default answers to their decisions. Launch L12's items that cite only a284420 labels now on <MACHINE> and <MACHINE>; start R0 after the L11 docs merge." Proposal as written: Structure: the two-chain diagram
   model and the Chapter 3 upper bounds for alpha <= 1 with their no-gos; the
   K5 `H^1` Hilbert layer; three row-upgrading bridges. Runs as L12 (Office 6-8
   agents, <MACHINE> 2-3, <MACHINE> receipts, Easley stage 1 gate).
@@ -682,7 +682,7 @@ Last updated: 2026-11-12 (afternoon), waves L12, L13, L14 PROPOSED; Easley stage
   L15 candidate); `P:static-holder-upper`, `P:planar-upper`,
   `P:three-transfer` (very long, static inputs); K6 (L14).
 
-- **WAVE L14: PROPOSED (2026-11-12).** Operator layer: K6 in resolvent form,
+- **WAVE L14: APPROVED by Le (2026-11-12) as proposed, with the default answers to its decisions.** Le, verbatim: "I approve Lean waves L12, L13 and L14 as proposed in lean-progress/PROGRESS.md, with the default answers to their decisions. Launch L12's items that cite only a284420 labels now on <MACHINE> and <MACHINE>; start R0 after the L11 docs merge." Proposal as written: Operator layer: K6 in resolvent form,
   the K1 completion spaces, the higher-dimensional transfer and the d = 3
   endpoint corollaries, the class-O bridge on K5. Runs as L12/L13.
 
