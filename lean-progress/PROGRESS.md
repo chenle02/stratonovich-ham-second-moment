@@ -939,6 +939,18 @@ Last updated: 2026-11-12 (late night): L9 receipts at `6eb79c7` done (comparator
   follows. Scope: AI statement-to-manuscript correspondence, **not human
   verification**; supplied inputs stay outside Lean; later changes need a
   successor review.
+- **L9 PUBLIC-DEFINITION COUNT CORRECTION APPROVED (Le, 2026-11-12).** Le,
+  verbatim: "I approve a docs-only correction on companion main for the
+  public-definition count (89 vs 91) once the L10 repair agent names the two
+  declarations; record it in lean-progress/PROGRESS.md and push it as a
+  successor to 6eb79c7." Background: the L10 review (p7 W1) found that the
+  unlisted public definitions are miscounted; a source scan of main
+  `6eb79c7` gives 91 where main's reviewed L9 docs (Scope, README,
+  FORMALIZATION) say 89. Plan: the L10 repair agent builds the inventory
+  from the elaborated environment and names the two declarations; then a
+  docs-only commit on main after `bb79f83` (receipts at `6eb79c7`) corrects
+  the count and its totals, Lean untouched, pushed and synced to <HUB>.
+  The receipts stay bound to `6eb79c7`. Status: waiting for the names.
 - **L10 DOCS DECISIONS (Le, 2026-11-12).** Le, verbatim: "I accept the 5
   VariationalMean lost-disclosure flags as a checker false positive and keep
   HigherRieszTwo headed as a narrower result." (1) The lost-disclosure check
