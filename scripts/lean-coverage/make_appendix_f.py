@@ -136,7 +136,6 @@ def main():
         if not rs:
             continue
         body.append(f"\\lcCategory{{{tex_escape(wording)}}}{{{len(rs)}}}\n")
-        body.append("\\begin{lcTable}\n")
 
         def order(r):  # book order: chapters by number, then appendices A, B, ...
             parts = numbers[r["paper"]["label"]].split(".")
@@ -149,8 +148,10 @@ def main():
             if key == ("same-assumptions", "weaker") and (scope_tex_r or scope):
                 txt = tex_with_refs(scope_tex_r) if scope_tex_r else text_with_refs(scope)
                 line += f"\\newline{{\\footnotesize {txt}}}"
-            body.append(line + " \\\\\n")
-        body.append("\\end{lcTable}\n\n")
+            # One small table per row, so that a long group can break across
+            # pages between rows (a single tabular cannot break).
+            body.append("\\begin{lcTable}\n" + line + "\n\\end{lcTable}\n")
+        body.append("\n")
 
     summ_path = os.path.join(HERE, "lean-receipt-summary.json")
     receipts = []

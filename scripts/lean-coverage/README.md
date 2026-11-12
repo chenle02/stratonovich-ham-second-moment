@@ -14,8 +14,8 @@ this folder.
 | `pin_companion.py` | Writes the four files above from a clone of the companion (`python3 pin_companion.py COMPANION VERIFIED_COMMIT [COVERAGE_COMMIT]`; needs `lean-pkg` on the PATH). |
 | `make_appendix_f.py` | Writes `notes/lean-coverage-data.tex` (`python3 scripts/lean-coverage/make_appendix_f.py`). |
 
-Current pin: verified commit bfa2fd0 (receipts and claims ledger bound to
-it), coverage files read from 3c158f5 (later commits change only
+Current pin: verified commit f3be834 (receipts and claims ledger bound to
+it), coverage files read from ed3cd68 (later commits change only
 documentation). lean-pkg 0.29.0.
 
 Checks built in:
