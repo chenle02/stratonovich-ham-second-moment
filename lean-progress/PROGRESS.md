@@ -6,12 +6,12 @@
 
 ## Status (kept current; updated at every milestone)
 
-Last updated: 2026-11-12 (night), L8 review chain complete (re-confirmation PASS/high at `168b3c0`; evidence Article `9c0df47`), final receipts running at companion main `aff7409`; L9 reviews 3 PASS_WITH_NOTES, 4 FAIL, 1 INCONCLUSIVE (documentation only), repairs running; L10 docs merge running; L11 integrated (`d08c2fb`), docs drafts and K10 running; later: L10 docs merged (`fa9a4b9`), L11-K10 done (`1a38b1d`, hQ removed).
+Last updated: 2026-11-12 (night), Le closed the L8 gate at companion `aff7409` (tag `L8-gate`); L9 repairs, L10 and L11 docs in progress.
 
 | Item | Current state |
 |---|---|
-| Current wave | **L8 OPEN**, gate pending. Correspondence chain complete: six Codex GPT-6.1-Sol groups at `3518233` (3 PASS_WITH_NOTES, 4 FAIL on documentation, no Lean error) → repairs `aeaccf6`, `7af916a`, `bd1c439` → confirmation at `bd1c439` (all original findings resolved; two remaining: Scope integrability sentence, 14 missing TeX mirrors) → repairs `5868223`, `168b3c0` → re-confirmation at `168b3c0` PASS, high, 24/24 checks, no findings. Evidence Article `9c0df47` (reviews/2026-11-12-lean-wave-l8-*). Main `aff7409` = both repair rounds + COMPLETION update; receipts at `3518233` PASS (historical); final receipts at `aff7409` running; then the Easley array. No class or count change from the repairs (28 / 15 / 5 / 20 / 3 of 71 rows). **L9 OPEN**: docs `eb253a5`; Codex reviews at `eb253a5`: g5a, g5b, g6b PASS_WITH_NOTES; g1, g3, g4, g6a FAIL (2 fatal: L:damped-homogeneous-norms re-promoted to full; L:finite-word-cutoff called same-assumptions though Lean covers one mode per color; 7 major: integrability blankets, refutations not classified as manuscript-domain vs route-only vs outside-domain controls, one claims summary missing hypotheses, whole-result headings), g2 INCONCLUSIVE (medium); post-L9 T:intrinsic-occupation-ceiling row (same-assumptions, narrower) confirmed by g3. Repairs on `wave-l9/repair` (L8 repairs merged in first) running; comparator extension to 2050 running on <MACHINE>. **L10 OPEN**: all eight items integrated (`0ca5e6b`), L9 docs merged in (`ab51752`); docs merged `fa9a4b9` (2757 claims, 2268 theorems; coverage 82 rows: 50 same-assumptions, 30 inputs-supplied, 2 outside; COMPLETION 29 / 17 / 5 / 25 / 2 / 142 of 220; L:higher-riesz and L:alpha-one-convolution same-assumptions full, T:white-moment-bounds outside -> inputs-supplied, L:fixed-split new row with hQ recorded as accepted for now). **L11 OPEN**: K2, K4, K8 integrated on `wave-l11/int` (`d08c2fb`; 2878 axiom entries clean); K2 does not discharge K8's FockSandwich (different model: needs a packaged ℓ² Hilbert space, CFC inverse root of a bounded operator, a ρ-independent B, operator-norm conversion, Fourier-to-physical identification); docs drafts running on <MACHINE>; K10 done `1a38b1d` (multi-mode L:finite-word-cutoff proved natively in a library module; hQ removed: `interval_coefficient_assembly_paper_words` with the sharper supplied input DuhamelWords, the Duhamel word expansion of the coefficients; independently verified on <MACHINE>) |
-| Last closed gate | **L7**, closed by Le 2026-11-12 at companion `f3be834` over manuscript `a284420`, together with the re-anchor from `975feb3` |
+| Current wave | **L8 CLOSED** by Le 2026-11-12 at `aff7409` (tag `L8-gate`); final receipts and the Easley replay at `aff7409` in progress. Correspondence chain complete: six Codex GPT-6.1-Sol groups at `3518233` (3 PASS_WITH_NOTES, 4 FAIL on documentation, no Lean error) → repairs `aeaccf6`, `7af916a`, `bd1c439` → confirmation at `bd1c439` (all original findings resolved; two remaining: Scope integrability sentence, 14 missing TeX mirrors) → repairs `5868223`, `168b3c0` → re-confirmation at `168b3c0` PASS, high, 24/24 checks, no findings. Evidence Article `9c0df47` (reviews/2026-11-12-lean-wave-l8-*). Main `aff7409` = both repair rounds + COMPLETION update; receipts at `3518233` PASS (historical); final receipts at `aff7409` running; then the Easley array. No class or count change from the repairs (28 / 15 / 5 / 20 / 3 of 71 rows). **L9 OPEN**: docs `eb253a5`; Codex reviews at `eb253a5`: g5a, g5b, g6b PASS_WITH_NOTES; g1, g3, g4, g6a FAIL (2 fatal: L:damped-homogeneous-norms re-promoted to full; L:finite-word-cutoff called same-assumptions though Lean covers one mode per color; 7 major: integrability blankets, refutations not classified as manuscript-domain vs route-only vs outside-domain controls, one claims summary missing hypotheses, whole-result headings), g2 INCONCLUSIVE (medium); post-L9 T:intrinsic-occupation-ceiling row (same-assumptions, narrower) confirmed by g3. Repairs on `wave-l9/repair` (L8 repairs merged in first) running; comparator extension to 2050 running on <MACHINE>. **L10 OPEN**: all eight items integrated (`0ca5e6b`), L9 docs merged in (`ab51752`); docs merged `fa9a4b9` (2757 claims, 2268 theorems; coverage 82 rows: 50 same-assumptions, 30 inputs-supplied, 2 outside; COMPLETION 29 / 17 / 5 / 25 / 2 / 142 of 220; L:higher-riesz and L:alpha-one-convolution same-assumptions full, T:white-moment-bounds outside -> inputs-supplied, L:fixed-split new row with hQ recorded as accepted for now). **L11 OPEN**: K2, K4, K8 integrated on `wave-l11/int` (`d08c2fb`; 2878 axiom entries clean); K2 does not discharge K8's FockSandwich (different model: needs a packaged ℓ² Hilbert space, CFC inverse root of a bounded operator, a ρ-independent B, operator-norm conversion, Fourier-to-physical identification); docs drafts running on <MACHINE>; K10 done `1a38b1d` (multi-mode L:finite-word-cutoff proved natively in a library module; hQ removed: `interval_coefficient_assembly_paper_words` with the sharper supplied input DuhamelWords, the Duhamel word expansion of the coefficients; independently verified on <MACHINE>) |
+| Last closed gate | **L8**, closed by Le 2026-11-12 at companion `aff7409` over manuscript `a284420` (tag `L8-gate`), with L8-f's mass-supplied chain measures and hK recorded as an added restriction. Previous: L7 at `f3be834` |
 | Manuscript anchor | Article `a284420` (#3's two approved edits: `L:spatial-fourier-bound`, `E:damped-multiplier-comparison`) |
 | Companion | `chenle02/stratonovich-ham-second-moment-lean`, PRIVATE (HOLD: no public flip without Le); lean-pkg `verified-private` at `f3be834` (receipts `5aa557b`: comparator PASS over all 1430 theorem claims; lower tier 0 sorry, 1731 claim axioms, standard axioms only); docs-only HEAD `fcdf252`; `claims ledger` READY, 1071 required, 1681 verified, 0 open |
 | Claims | 1731 (1430 theorems, 301 definitions); ledger 891 labelled, 840 no direct label |
@@ -25,7 +25,7 @@ Last updated: 2026-11-12 (night), L8 review chain complete (re-confirmation PASS
 | Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
 | Compute | <MACHINE>: L8 final receipts, L9 repairs, L10 docs merge; Office: L9 comparator, L11 docs drafts; <MACHINE>: L11-K10; Easley via <MACHINE>: L7 replay, then the L8 array |
-| Decisions open for Le | the L8 gate (after repairs, receipts and the confirmation review); L8-f's extra supplied inputs (chain measures by their mass; and hK, now disclosed as an added hypothesis); release of gaussian-chaos-lean (opens D1 and K9); investing in D8; public release (HOLD; version levels approved 2026-11-12); lean-pkg 0.30.0 upgrade when released |
+| Decisions open for Le | the L9 gate (after its repairs, confirmation and receipts); release of gaussian-chaos-lean (opens D1 and K9); investing in D8; public release (HOLD; version levels approved 2026-11-12); lean-pkg 0.30.0 upgrade when released |
 | Next actions | L8: final receipts at `aff7409` → regate, ledger → Easley build + pilot → all targets → evidence in verification/ → Le's gate, tag `L8-gate`, COMPLETION/README/board/#24. L9: repairs → re-run g2's checks + confirmation → comparator → merge to main → receipts. L10: docs merge → merge the L9 repairs → comparator → reviews. L11: docs merge → comparator → reviews; K10 → integrate. Collect the Easley L7 replay |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
@@ -550,6 +550,40 @@ Last updated: 2026-11-12 (night), L8 review chain complete (re-confirmation PASS
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
+- **WAVE L8 CORRESPONDENCE GATE: CLOSED (Le, 2026-11-12)** at companion
+  `aff7409` over manuscript `a284420`; annotated tag `L8-gate` (pushed). Le,
+  verbatim: "I accept the six wave-L8 reviews, the two repair rounds, the
+  confirmation and the re-confirmation (PASS/high at 168b3c0) as closing the
+  Lean wave L8 correspondence gate at companion aff7409 over manuscript
+  a284420, with L8-f's mass-supplied chain measures and hK as an added
+  restriction recorded." Evidence: six Codex GPT-6.1-Sol groups at `3518233`
+  (g2, g3, g5b PASS_WITH_NOTES; g1, g4, g6a-c FAIL on documentation, no Lean
+  error), repairs `aeaccf6`, `7af916a`, `bd1c439`; confirmation at `bd1c439`
+  (every original finding resolved; two remaining), repairs `5868223`,
+  `168b3c0`; re-confirmation PASS/high, 24/24, at `168b3c0`
+  (Article `9c0df47`, reviews/2026-11-12-lean-wave-l8-*; adjudication in each
+  ADJUDICATION.md). Recorded with the gate: (1) L8-f's chain measures enter
+  through their mass (`hmass`, supplied; constructed with the mass proved in
+  L11-K4); (2) TerminalWick's `hK`, global measurability of the covariance,
+  is an added restriction not in the manuscript (L11-K4 removes it for the
+  constructed chain measures); (3) FreeWaveData's non-vacuity is shown on
+  L²(R^d) with S = 1, R = 1 and translations, not for the free wave group.
+  Content: nine items (spectral mass identity R_alpha = R_Gamma(1);
+  damped multiplier lower bounds; space-time positivity; finite occupation
+  ceiling with K_0 R_sp; spatial bracket; mask removal; finite and terminal
+  Wick; symplectic free group; static phase Cauchy-Schwarz) and
+  L8Completed (`S1Bdd` proved with nothing supplied). Package at the gate:
+  2108 claims (1747 theorems, 361 definitions; 1122 labelled, 986
+  unlabelled); coverage 71 rows: 43 same-assumptions (28 full, 15 narrower),
+  25 inputs-supplied (5 full, 20 narrower), 3 outside; COMPLETION 24 full,
+  15 narrower, 5, 20, 3 outside, 153 not formalized of 220. Le's
+  T:intrinsic-occupation-ceiling decision (same-assumptions, narrower with
+  K_0 R_sp) passed review. Receipts at `3518233` PASS (comparator 1747,
+  lower tier 2108 claim axioms, 0 sorry; `4e4d173`, historical); final
+  receipts at `aff7409` running; the Easley array replay at `aff7409`
+  follows. Scope: AI statement-to-manuscript correspondence, **not human
+  verification**; supplied inputs stay outside Lean; later changes need a
+  successor review.
 - **L10-FS1 hQ ACCEPTED FOR NOW (Le, 2026-11-12); L11 item K10 scoped to
   remove it.** Le, verbatim: "I accept L10-FS1's added hypothesis hQ for now;
   record it in lean-progress/PROGRESS.md and scope formalizing
