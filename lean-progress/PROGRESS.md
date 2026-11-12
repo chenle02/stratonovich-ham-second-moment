@@ -550,6 +550,29 @@ Last updated: 2026-11-12 (late), L8 on companion main `3518233` with comparator 
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
+- **L8 CORRESPONDENCE REVIEWS (2026-11-12), Codex GPT-6.1-Sol, effort high,
+  at companion `3518233` over manuscript `a284420`.** No hold on the model
+  (checked). Six groups, nine valid runs: g2 (space-time positivity, finite
+  ceiling) PASS_WITH_NOTES; g3 (bracket, mask removal, static phase Cauchy)
+  PASS_WITH_NOTES; g5 (symplectic) first run INCONCLUSIVE (packet lacked the
+  audit step modules), rerun g5b PASS_WITH_NOTES; g1 (spectral mass, damped
+  multiplier) FAIL (1 fatal, 2 major); g4 (finite and terminal Wick) FAIL
+  (1 fatal, 2 major); g6 (L8Completed and the changed earlier rows) first run
+  INCONCLUSIVE (too large), split into g6a FAIL (2 major), g6b FAIL (1 major),
+  g6c FAIL (1 major). All high confidence. No finding is a Lean error: they
+  concern ledger and coverage text. Main items: the L:damped-homogeneous-norms
+  scope sentence overclaims (covariance smoothing is only multiplier
+  membership; Green smoothing identified only in d = 1; found independently by
+  four reviewers); the TerminalWick hypothesis hK (global measurability of the
+  covariance) is an added hypothesis, not implied by the TeX (fatal; docs will
+  disclose it and the row leaves same-assumptions; L11-K4 is asked to remove hK
+  from the constructed wrappers); refutation comments on R_0 at alpha = 0
+  overstate (Lean's totalized 0/0); FiniteWick integrability wording;
+  terminal-wick scope (mixed moments only); "fourteen" -> "fifteen" narrower.
+  The classification call on T:intrinsic-occupation-ceiling (same-assumptions,
+  narrower) PASSED. Repairs running on branch `wave-l8/repair`; then receipts
+  at the repaired commit and a confirmation review. Evidence in session
+  scratch l8rev/ and l8rev-b/ (to be copied to reviews/ with the confirmation).
 - **COMPANION VERSION LEVELS (Le, 2026-11-12, relayed by #24).** Approved
   with #22's three adjustments and the receipt rule: first public tag
   `v1.0.0` (same MAJOR.MINOR.PATCH scheme as the book, Article
