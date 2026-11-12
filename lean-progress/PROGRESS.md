@@ -6,20 +6,20 @@
 
 ## Status (kept current; updated at every milestone)
 
-Last updated: 2026-11-12 (10:53), Easley L7 replay job 5692712 COMPLETED (4 h 01 min; to collect); L8 lower-tier receipt at `aff7409` at 2060/2108 claim axioms; Easley L8 array: 2 of 92 tasks done, 90 running; L9 confirmation repairs `ba6c565`, narrow re-confirmation running; L10 merging the L9 repairs and extending the comparator.
+Last updated: 2026-11-12 (11:15), L8 receipts at `aff7409` committed (`d476e17`), docs-only successor `27d22a1` and L7 replay evidence `ff40157` on companion main (both sent to #24); L9 narrow re-confirmation running; L8 Easley array running; L10 merging.
 
 | Item | Current state |
 |---|---|
 | Current wave | **L8 CLOSED** by Le 2026-11-12 at `aff7409` (tag `L8-gate`): comparator receipt at `aff7409` PASS; lower-tier receipt running; docs-only successor (README acceptance + verification record, COMPLETION L8-gate row) ready on branch `l8-gate-docs` (`9155c82`), merged after the receipt and sent to #24 for Appendix F; Easley array at `aff7409` (92 `--fresh` targets): build 5692847 COMPLETED, pilot 5692848 (StratonovichHAMAudit.ActualEvent) TASK_PASS, remaining targets (task 0 + tasks 2-92) released as array 5692933. **L9 OPEN**: docs `eb253a5`; reviews: 3 PASS_WITH_NOTES, 4 FAIL (2 fatal, 7 major, documentation only), 1 INCONCLUSIVE; every finding accepted and repaired on `wave-l9/repair` (`338cdba`, after merging main `aff7409`; L:damped-homogeneous-norms back to same-assumptions narrower; L:finite-word-cutoff to inputs-supplied, one mode per color; controls classified per refutation file); comparator over all 2050 theorem claims, 0 fidelity problems (`7e6169f`), merged into the repair branch (`3938893`); confirmation review at `338cdba` (four packets): c2 PASS_WITH_NOTES; c1, c3, c4 FAIL on one wording finding each (README overview 'full conclusions'; partial modules still headed whole result; phase contractions dimension in COMPLETION); merge preservation of every L8 repair, mirrors 42/42, totals, both reclassifications and the re-run of g2's two inconclusive checks PASS (high); repairs `ba6c565` (nine partial-module headings renamed); narrow re-confirmation at `ba6c565` running. Coverage on that branch 80 rows: 47 / 30 / 3; COMPLETION 26 / 17 / 5 / 25 / 3 / 144 of 220. **L10 OPEN**: eight items integrated, docs merged (`fa9a4b9`, 2757 claims, 2268 theorems); merging the L9 repairs and extending the comparator on <MACHINE>. **L11 OPEN**: K2, K4, K8 integrated (`d08c2fb`), K10 (`1a38b1d`, hQ removed via DuhamelWords); docs drafts done for K2/K4/K8 (149 rows, conservative classes); two constructed-measure wrappers done (`e9e62f2`: the terminal-Wick comparison and the uniform-series-tail second moment for the constructed chain measures, TeX hypotheses only), so L:terminal-wick and L:uniform-series-tail can become same-assumptions at the L11 docs merge |
 | Last closed gate | **L8**, closed by Le 2026-11-12 at companion `aff7409` over manuscript `a284420` (tag `L8-gate`), with L8-f's mass-supplied chain measures and hK recorded as an added restriction. Previous: L7 at `f3be834` |
 | Manuscript anchor | Article `a284420` (#3's two approved edits: `L:spatial-fourier-bound`, `E:damped-multiplier-comparison`) |
-| Companion | `chenle02/stratonovich-ham-second-moment-lean`, PRIVATE (HOLD: no public flip without Le); lean-pkg `verified-private` at `f3be834` (receipts `5aa557b`: comparator PASS over all 1430 theorem claims; lower tier 0 sorry, 1731 claim axioms, standard axioms only); docs-only HEAD `fcdf252`; `claims ledger` READY, 1071 required, 1681 verified, 0 open |
+| Companion | `chenle02/stratonovich-ham-second-moment-lean`, PRIVATE (HOLD: no public flip without Le); main `ff40157`; lean-pkg receipts at the L8 gate `aff7409` (`d476e17`: comparator PASS over 1747 theorem claims; lower tier 0 sorry, 2108 claim axioms, standard axioms only); `claims ledger` READY, 0 open; tags `L0-companion-created` ... `L8-gate` |
 | Claims | 1731 (1430 theorems, 301 definitions); ledger 891 labelled, 840 no direct label |
 | Coverage rows (67) | 39 same-assumptions (27 full, 12 narrower); 24 inputs-supplied (5 every conclusion proved, 19 steps or narrower); 4 outside (`T:full-upper`, `T:intrinsic-occupation-ceiling`, `T:intrinsic-second-moment`, `T:white-moment-bounds`) |
 | Manuscript labelled results (220 T/P/L/C at `a284420`; per-label table in the companion's COMPLETION.md) | 23 (10%) formalized with the manuscript's hypotheses, full; 12 (5%) same hypotheses, narrower; 5 (2%) every conclusion proved with inputs supplied; 19 (9%) steps or narrower with inputs supplied; 4 (2%) outside (main theorems); 157 (71%) not formalized. So 10% as stated, 16% with the manuscript's hypotheses incl. narrower, 27% with some Lean content (plus 4 covered displays/remarks). No theorem end to end. Proof-weighted toward the main theorems: roughly 10-15%; the rest needs D1, D2, D5, D7, D8 |
 | Key named inputs still supplied | `FockColumn` in the abstract wrappers (proved for the concrete Fourier-side model by K2); Crouzeix-Palencia, inverse-root, propagator inputs (L9-H3); `WhiteSpatialEnergy` (B9, reserved); FS1: SegmentBound, DysonCrossCube, BackgroundPreserves, EntireCoefficients and the added hQ (K10 running); C:static-interaction: Gaussian parity (D1), first-variance bounds, tensoring (D1), FockSandwich (the L11 integration checks whether K2 discharges it); TerminalWick: hK added at L8 (removed by K4 for the constructed measures); D1/D7/D8 links of P:wave-two-variances, P:masked-noise-completion |
 | Narrowed rows to restore | `L:damped-homogeneous-norms` (L8: narrower, scope being rewritten; after L9 the Green part holds in d = 1, 2, 3, the covariance-smoothing identification still missing); `T:intrinsic-occupation-ceiling` (L8: K_0 R_sp; L9: exact C_occ, still narrower for the C_2 sentence and the class O); `L:terminal-wick` (L8: added hK; K4 removes it); `L:higher-riesz`, `L:alpha-one-convolution` (full after L10) |
-| External kernel replay (Easley, `leanchecker --fresh`) | all library modules through wave L6 pass; wave L7 at `f3be834`: job 5692712 COMPLETED (4 h 01 min), evidence to collect; wave L8 at `aff7409`: build and pilot PASS, array 5692933: 2 of 92 tasks completed, 90 running. Easley is now reached directly over the campus network |
+| External kernel replay (Easley, `leanchecker --fresh`) | every library module through wave L7 passes (wave L7 at `f3be834`: job 5692712, 10/10, default 81/81; companion `ff40157`); wave L8 at `aff7409`: build and pilot PASS, array 5692933 running. Easley reached directly over the campus network |
 | Book Appendix F (#24) | pinned to verified `f3be834`, coverage `ed3cd68` (book `dcb031e`); single SHA `0269e61` sent for the re-pin (scope fix + L6 replay) |
 | Milestone tags (companion, annotated, pushed) | `L0-companion-created` 38d1616, `ledger-gate` 48ce162, `L1-gate` b876362, `L2-gate` 79afdde, `L3-gate` dfc2fe8, `L4-gate` ac6f767, `reanchor-975feb3` d40f394, `L5-gate` 712c307, `L6-gate` bfa2fd0, `L7-gate` f3be834; a new tag at every gate closure |
 | Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
@@ -550,6 +550,19 @@ Last updated: 2026-11-12 (10:53), Easley L7 replay job 5692712 COMPLETED (4 h 01
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
+- **L8 RECEIPTS AND THE EASLEY L7 REPLAY (2026-11-12).** Receipts at the
+  L8 gate commit `aff7409`, committed as `d476e17`: comparator PASS over all
+  1747 theorem claims; lower tier 0 sorry, standard axioms only, axioms of
+  all 2108 claims (runtime 37 min, peak 9.5 GiB); claims ledger READY (1342
+  required, 2058 verified, 0 open). Docs-only successor `27d22a1` (README:
+  Le's L8 acceptance and the verification record at `aff7409`; COMPLETION.md:
+  `L8-gate` milestone row) sent to #24 for Appendix F. Easley job 5692712
+  (`leanchecker --fresh` at the L7 gate `f3be834`): 10/10 PASS (eight wave-L7
+  modules, umbrella, Axioms), default mode 81/81, no sorryAx; closure and
+  replay-coverage checks: every library module through wave L7 has passed a
+  `--fresh` replay (evidence `verification/leanchecker-easley-wave-l7/`,
+  companion `ff40157`, docs-only; SHA sent to #24). The wave-L8 array at
+  `aff7409` (build and pilot PASS) is running.
 - **WAVE L8 CORRESPONDENCE GATE: CLOSED (Le, 2026-11-12)** at companion
   `aff7409` over manuscript `a284420`; annotated tag `L8-gate` (pushed). Le,
   verbatim: "I accept the six wave-L8 reviews, the two repair rounds, the
