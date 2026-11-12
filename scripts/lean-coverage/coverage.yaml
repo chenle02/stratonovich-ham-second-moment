@@ -441,7 +441,7 @@ rows:
     label: L:spatial-static-controls
   class: same-assumptions
   conclusion: weaker
-  conclusion_scope: "lambda is the supremum of the real Rayleigh quotient and I_Psi, v_Psi are given by their integral formulas (identification with sqrt(-E_s) and E W(Psi)^2 is not formalized); E:spatial-static-score is proved in the form that every number below the bound is exceeded by some admissible score, and its form as a supremum rests on a named input, the boundedness claim of P:variational-positive-scores."
+  conclusion_scope: "lambda is the square root of the supremum of the real Rayleigh quotient, and I_Psi, v_Psi are given by their integral formulas (identification with sqrt(-E_s) and E W(Psi)^2 is not formalized); E:spatial-static-score is proved in the form that every number below the bound is exceeded by some admissible score; its supremum form assumes the boundedness claim of P:variational-positive-scores."
   claims:
   - stratonovich-ham-second-moment-lean/spatial-occupation-completed-spatial-static-controls-completed-paper
   - stratonovich-ham-second-moment-lean/spatial-occupation-completed-rayleigh-floor-of-homog
@@ -812,7 +812,7 @@ rows:
     label: P:spatial-smooth-ratio
   class: same-assumptions
   conclusion: weaker
-  conclusion_scope: "E:spatial-smooth-score is proved in the form that every y below the bound is exceeded by some I_Psi - v_Psi/2 (lambda the supremum of the real Rayleigh quotient, v_Psi given by its integral formula); its form as a supremum rests on a named input, the boundedness claim of P:variational-positive-scores. R_0 < inf is proved without that input, by a direct Fourier bound."
+  conclusion_scope: "E:spatial-smooth-score is proved in the form that every y below the bound is exceeded by some I_Psi - v_Psi/2 (lambda the square root of the supremum of the real Rayleigh quotient, v_Psi given by its integral formula); its form as a supremum rests on a named input, the boundedness claim of P:variational-positive-scores. R_0 < inf is proved without that input, by a direct Fourier bound."
   claims:
   - stratonovich-ham-second-moment-lean/spatial-occupation-completed-spatial-smooth-ratio-completed-paper
   - stratonovich-ham-second-moment-lean/spatial-occupation-completed-spatial-smooth-score-completed-paper
