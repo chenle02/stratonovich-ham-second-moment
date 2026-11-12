@@ -531,7 +531,10 @@
   to a284420: Le, verbatim: "I accept the six wave-L7 reviews plus the
   confirmation and the a284420 re-anchor (re-check + confirmation PASS/high)
   as closing the Lean wave L7 correspondence gate at companion f3be834 over
-  manuscript a284420." Recorded in the companion README (ed3cd68), the board
+  manuscript a284420." Le's decision was also relayed verbatim by #16
+  (2026-11-12): "Approve the Lean wave L7 gate and the re-anchor to a284420
+  at companion f3be834. Tell #22 to record it." Recorded in the companion
+  README (ed3cd68), the board
   (docs/community c038761) and STATUS-DIGEST; #16, #3 and #24 told, with the
   docs-only HEAD ed3cd68 for Appendix F. Scope: AI statement-to-manuscript
   correspondence of the 268 wave-L7 ledger rows, the changed sections and
