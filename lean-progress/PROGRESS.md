@@ -6,11 +6,11 @@
 
 ## Status (kept current; updated at every milestone)
 
-Last updated: 2026-11-12, wave L8 approved and opened.
+Last updated: 2026-11-12, wave L9 proposed (to run on <MACHINE>); L8 running.
 
 | Item | Current state |
 |---|---|
-| Current wave | **L8 OPEN** (approved by Le 2026-11-12 with the default decisions): nine item agents running in parallel (bullet "WAVE L8" below) |
+| Current wave | **L8 OPEN** (approved by Le 2026-11-12 with the default decisions): nine item agents running in parallel; L8-a (R_alpha = R_Gamma(1)) done and verified (branch wave-l8/a b561f2a). **L9 PROPOSED** (to run on <MACHINE>; bullet "WAVE L9" below), awaiting Le's approval |
 | Last closed gate | **L7**, closed by Le 2026-11-12 at companion `f3be834` over manuscript `a284420`, together with the re-anchor from `975feb3` |
 | Manuscript anchor | Article `a284420` (#3's two approved edits: `L:spatial-fourier-bound`, `E:damped-multiplier-comparison`) |
 | Companion | `chenle02/stratonovich-ham-second-moment-lean`, PRIVATE (HOLD: no public flip without Le); lean-pkg `verified-private` at `f3be834` (receipts `5aa557b`: comparator PASS over all 1430 theorem claims; lower tier 0 sorry, 1731 claim axioms, standard axioms only); docs-only HEAD `0269e61`; `claims ledger` READY, 1071 required, 1681 verified, 0 open |
@@ -19,10 +19,11 @@ Last updated: 2026-11-12, wave L8 approved and opened.
 | Manuscript labelled results (220 T/P/L/C at `a284420`) | about 12% formalized as stated with nothing supplied (27); 18% with the manuscript's hypotheses incl. narrower (39); 29% with some Lean content (63); the 8 theorems: none end to end. Proof-weighted toward the main theorems: roughly 10-15%; the rest needs D1 (Gaussian chaos), D2, D5, D7, D8 foundations |
 | Key named inputs still supplied | `S1Bdd` (L8-c proposes its deterministic discharge); `TerminalWickInput` (L8-f); `L:fixed-split`, energy-split identity (P:interval-coefficients); operator/stochastic inputs of `C:static-interaction`; D1/D7/D8 links of `P:wave-two-variances`, `P:masked-noise-completion` |
 | Narrowed rows to restore | `L:spatial-fourier-bound` (R_alpha identity: L8-a); `L:damped-homogeneous-norms` (lower bounds, smoothing: L8-b) |
-| External kernel replay (Easley, `leanchecker --fresh`) | all library modules through wave L6 pass (latest: wave L6 at `bfa2fd0`, 16/16, companion `0269e61`); the 8 wave-L7 modules not yet replayed (laptop VPN down; Easley reachable via <MACHINE>) |
+| External kernel replay (Easley, `leanchecker --fresh`) | all library modules through wave L6 pass (latest: wave L6 at `bfa2fd0`, 16/16, companion `0269e61`); wave L7 at `f3be834`: job 5692712 running (submitted via <MACHINE>) |
 | Book Appendix F (#24) | pinned to verified `f3be834`, coverage `ed3cd68` (book `dcb031e`); single SHA `0269e61` sent for the re-pin (scope fix + L6 replay) |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
-| Decisions open for Le | approve L8 (with defaults); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
+| Compute | this laptop: L8 agents, integration, receipts; Office (36 cores): companion built at `0269e61`, `office-lean.sh` compile wrapper, Easley route, L9 compiling; <MACHINE> (12 cores): spare |
+| Decisions open for Le | approve L9 (with its nine defaults); release of gaussian-chaos-lean (opens D1); investing in D8 (Sobolev/self-adjoint); public release (HOLD); lean-pkg 0.30.0 upgrade when released (extension keys, proposal 0015) |
 | Next actions | L8 items -> integration, docs, comparator, receipts, reviews, Le's gate; collect the Easley L7 replay (via <MACHINE>) |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
@@ -547,6 +548,72 @@ Last updated: 2026-11-12, wave L8 approved and opened.
   `BesselPotentialSpace` (H^{s,p} via the Fourier transform) and
   `SchwartzMap.denseRange_toLpCLM`; connecting them to `WeakSobolev.MemH1`
   would give D8-lite (estimated 800-1500 lines).
+- **WAVE L9: PROPOSED (2026-11-12) for Le's approval; to run on <MACHINE>.** From
+  three read-only feasibility reconnaissances against the TeX at a284420, with
+  every Mathlib name probed by compiling on <MACHINE> (session scratch
+  l9-feas/R1.md, R2.md, R3.md and their probe files; office-lean.sh). Excludes
+  the reserved B3, B4, B9 and everything in wave L8. Seven items (plus one
+  optional), one agent each.
+
+  WHERE IT RUNS. Office (36 cores, about 52G free; companion built there at
+  0269e61) does all compiling: each agent edits in its own worktree and builds
+  through a wrapper that syncs the worktree's new files to a matching Office
+  worktree and runs `lake build` there (8G cap, LEAN_NUM_THREADS=4); this
+  laptop only orchestrates, integrates and cuts the lean-pkg receipts (the
+  registry lives here). <MACHINE> (12 cores, 34G) is the spare builder.
+
+  | Item | Target (label, TeX at a284420) | Builds on | Class (fallback) | Size |
+  |---|---|---|---|---|
+  | L9-A1 | P:raw-occupation-energy over the ORIGINAL-kernel class (integrated_occupation_ceiling.tex 92-147): new Araw with TimeSchur.kern a on (0,1)^2, Cocc, EO zeta; 0 < C_occ <= K_0 R_sp (Rsp_eq_R0, squarePairingBounds_holds, TimeSchur.integral_row, concavity); dilation A(U_l g) = l^alpha A(g), T(U_l g) = l^2 T(g) (isUnitH1_dil, hasWeakGradient_dilL2, Measure.map_addHaar_smul); both energy formulas (scalar_max) | OccupationPhysicalClass (IsOccField, sqPair), SpatialFourLinear, TimeSchur, WeakSobolev | same-assumptions, narrower (O by joint representatives, as in L7) (fallback: the bounds and E^O <= D_zeta C_occ^(2/(2-alpha)); the equality as named input RawOccupationDilation) | 600-800 |
+  | L9-A2 | L:occupation-rayleigh-selection by FINITE INTERVAL CELLS (g_s = f_i, compact smooth unit tests, on cell i; uniform Lipschitz bound from L8-c2; Mathlib has no measurable-selection theorem, and the TeX's selection needs only measurable_find / exists_dense_seq) and T:intrinsic-occupation-ceiling (E2) with the exact C_occ, both forms, for S_c^pos (205-249); with it B13's S_2^pos <= 2^m F_0(E^O_(1/2)) < 2^m F_a(E^O_(1/2)) | L9-A1 (definitions fixed first), L8-c (space-time Cauchy-Schwarz for step fields), L8-d | E2 moves outside -> same-assumptions, narrower (S_c^pos; the C_2 sentence stays out, D1) (fallback: a 200-line extension of L8-c1's positivity to step fields; else the named input SpaceTimePosDef; never S1Bdd) | 500-800 |
+  | L9-H1 | Hermite/Fock FOUNDATION (new modules GaussianHermite, HermiteFock): orthogonality E[He_n He_m] = n! delta via the shift E[He_(n+1) f] = E[He_n f'] on GaussianIBP (derivative identity and recurrence already proved in the probe); normalized multi-index Hermite functions, orthonormal under the product Gaussian, with x_i h_k = sqrt(k_i+1) h_(k+e_i) + sqrt(k_i) h_(k-e_i); the X-valued expansion isometry (X a complex Hilbert space); the abstract finite Fock layer (sum a_i* a_i = degree; creation row norm sqrt(j+1); for self-adjoint H_i with sum ||H_i u||^2 <= c||u||^2 the norm bound 2 sqrt(N+1) sqrt(c), truncated and untruncated; vacuum insertion isometry) | GaussianIBP, Mathlib Polynomial.hermite | foundation, nothing supplied (fallback: the X-valued isometry for scalar X only, the Hermite identification as named input HermiteIso) | 1200-1700 |
+  | L9-H2 | consumers: L:fock-form (main 2472-2527; E:fock-sandwich; compression by S_b proved; the spatial column bound sum ||H_i u||^2 <= R_alpha rho^(alpha-4) ||u||^2 as named input FockColumn, provenance the Gaussian isometry, Plancherel and E:phase-resolvent); L:interval-contractions (2829-2898): E:interval-fock and the vacuum-insertion bound, E:interval-column as the same input; E:occupied-multiplication (1802, in P:mild-construction) for finitely many coordinates (spanning lemma: degree-<= n polynomials lie in the Hermite span of degree <= n); bonus: discharge the degree-raising hypothesis of HermiteWord.cut_eq_raw with the concrete Fock model | L9-H1 (run after it in the same worktree, or against fixed stubs of its statements) | L:fock-form, L:interval-contractions inputs-supplied; E:occupied-multiplication same-assumptions, narrower (finite coordinates; the closure in P_(<= n) is D1) (fallback: E:occupied-multiplication only for F given in Hermite form) | 600-900 |
+  | L9-G | Wave Green Fourier identities in d = 2, 3 (int e^(i xi.x) dG_s = sin(s|xi|)/|xi|; cited at main 4741 in L:low-alpha-convolution, in L:alpha-one-convolution, and in E:phase-trace of L:phase-contractions): d = 2 by rotation (Submodule.reflection_sub, LinearIsometryEquiv.measurePreserving) and Fubini with the slice integral int_(-1)^1 (1-x^2)^(-1/2) = pi (probed); d = 3 by computing the ball integral two ways (measurePreserving_homeomorphUnitSphereProd; volume_preserving_piFinSuccAbove, EuclideanSpace.volume_ball) and differentiating in R; the Archimedes law (image of the sphere measure under omega -> <e,omega> is 2 pi Lebesgue on [-1,1], Measure.ext_of_charFun); a unified waveGreen_fourier for d in {1,2,3}; L8-b's (iii) (Green smoothing as a Fourier multiplier) extended to every d. No Bessel functions needed | WaveGreen, L8-b | same-assumptions; the d = 3 measure stays the recorded toSphere definitional choice (fallback: d = 2 only; d = 3 and Archimedes deferred) | 700-1100 |
+  | L9-P | L:phase-contractions (main 2072-2137; new coverage row): E:phase-resolvent (shifted resolvent <= R_alpha lambda^(alpha-2); Gaussian Fourier pairing, resolvent_homog, L8-a); E:phase-trace (|T_eps| <= D_Gamma a^(1-alpha): radial law Gamma(B_r) = M r^(3-alpha), the sphere convolution formula, three regions); feeds P:static-phase-variance and C:static-interaction | L8-a; L9-G's d = 3 identity and Archimedes law as explicit hypotheses with their exact statements, instantiated at integration | same-assumptions, full (fallback: E:phase-resolvent in full plus the sphere formula and the three-region bound; the trace identity as a named input) | 900-1400 |
+  | L9-L | L:low-alpha-convolution (main 4702-4757; new coverage row): V h^(1-alpha)/(1-alpha) in every d (Gaussian spectral representation, charFun_conv, layer cake) | L8-b (iii); L9-G's identity as a hypothesis, instantiated at integration | same-assumptions, full | 400-700 |
+  | (L9-H3, optional) | scalar steps of L:complex-phase (2288-2465) and L:interval-complex (2899-2947): the numerical-range parabola, scalar bounds on C_h, F_h, H_h, (39+12 lambda h) e^(lambda h) <= 100 e^(2 lambda h), E:interval-metric, the Neumann bounds 7/6 and 6/5 | SeriesType | inputs-supplied, weaker (Crouzeix-Palencia, the functional calculus, the resolvent integrals supplied) | 300-500 |
+
+  Dependencies: A2 needs A1's definitions and L8-c/L8-d (and a re-check that
+  L8-c1's Cauchy-Schwarz covers step fields once L8-c lands); H2 needs H1; P
+  and L take L9-G's results as hypotheses (L5-b pattern); P needs L8-a, L
+  needs L8-b. All items build on wave L8's modules.
+
+  Decisions for Le inside this approval (defaults in brackets):
+  1. Start: [after the wave-L8 integration commit (L9 worktrees off that
+     commit, so the L8 modules are importable); not waiting for the L8 gate].
+  2. Selection: [finite interval cells instead of the TeX's countable
+     measurable selection, stated as a route difference].
+  3. The class O: [modelled by joint representatives, as in L7].
+  4. Proof devices H_I, H_sp, Q, rho_g of L:occupation-raw-square and
+     L:positive-raw-embedding: [not in L9 (1300-1700 lines, low payoff); if
+     done later, the Lp G 2 completion with no tensor identification].
+  5. Hermite/Fock: [in the companion, not in gaussian-chaos-lean;
+     probabilists' He_n normalized by sqrt(n!); finite coefficient spaces, no
+     tensor-product inner product; FockColumn the named input for the spatial
+     half; general coefficient operators H_i instead of the TeX's rotated
+     basis, recorded as a route difference].
+  6. Green Fourier in d = 2, 3: [by rotation and slicing, no Bessel
+     functions; the d = 3 measure stays the toSphere definitional row].
+  7. New coverage rows for L:phase-contractions and L:low-alpha-convolution:
+     [yes, same-assumptions].
+  8. L9-H3: [include if capacity allows].
+  9. Fallbacks are named inputs, never S1Bdd or a surrogate; the C_2 forms
+     stay out (D1).
+
+  Gates as in waves L7 and L8 (reviews per item with complete packets; a
+  confirmation; the mechanical "unused hypothesis" audit; plain-English scope
+  sentences checked against the Lean; receipts here; Le closes the gate).
+  Stopping condition: all items integrated and reviewed, or at their fallback
+  with the rest named; at most two repair rounds per item.
+
+  Not in L9, with reasons: L:fixed-split (L10, inputs-supplied, 1500-2300
+  lines, high risk: needs L:interval-complex's segment bound and the Dyson
+  cube identity supplied; it would remove hfixed from the interval-coefficient
+  wrappers); the white-noise slice of T:white-moment-bounds (L10, after the L8
+  gate; E_sp = c^2/6 only as a named input from P:white-spatial-energy, B9 not
+  touched); the d = 3 upper bound of L:higher-riesz (L10, reusing the
+  Archimedes law); L:alpha-one-convolution (lower priority); the proof
+  devices of decision 4; everything needing D1, D2, D5, D7 or full D8.
 - **WAVE L8: APPROVED by Le (2026-11-12) as proposed, with the default
   answers to the six decisions; OPENED** (nine item agents in parallel
   worktrees, branches wave-l8/{a,b,c1,c2,d,e,f,g,h} off companion main
@@ -1072,6 +1139,7 @@ Last updated: 2026-11-12, wave L8 approved and opened.
 | L7 | CLOSED (Le) | 2026-11-12 | Gate at companion f3be834 over a284420 (with the re-anchor from 975feb3); six reviews, confirmation, re-anchor re-check and confirmation; reviews/2026-11-11-lean-wave-l7-*, reviews/2026-11-12-lean-* |
 | L8 | PROPOSED | 2026-11-12 | Eight items: R_alpha identity; damped-norm lower bounds and smoothing claims; S1Bdd discharged deterministically (two agents); spatial bracket for S_2^pos; mask removal; finite Wick foundation and L:terminal-wick; symplectic-free core; static-phase Cauchy steps; awaiting Le's approval |
 | L8 | OPEN (approved by Le) | 2026-11-12 | Defaults for the six decisions; nine agents launched; Easley L7 replay submitted via <MACHINE> |
+| L9 | PROPOSED | 2026-11-12 | Seven items (+1 optional) to run on <MACHINE>: exact occupation ceiling (A1, A2), Hermite/Fock foundation and consumers (H1, H2), wave Green Fourier d = 2, 3 (G), L:phase-contractions (P), L:low-alpha-convolution (L); awaiting Le's approval |
 
 ## New proof seams retained for later statement fences
 
