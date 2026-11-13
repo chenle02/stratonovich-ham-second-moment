@@ -1,0 +1,7 @@
+% Both bibliographies use bare arXiv identifiers in their eprint fields.
+% Keep the printed identifiers while making their destinations web URLs.
+\AtBeginDocument{%
+\renewcommand{\eprint}[1]{%
+\href{https://arxiv.org/abs/#1}{\nolinkurl{#1}}%
+}%
+}
