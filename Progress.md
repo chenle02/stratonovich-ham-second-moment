@@ -19506,3 +19506,24 @@ Parallel work now inventories whole-report review coverage, repeats isolated
 reproducible builds for the 387-page edition, and coordinates the public
 source package with Agent 16. Final separate cold/honesty replays, exact-tip
 closure, wiki/handoff propagation and a scoped milestone tag remain required.
+
+
+## 2026-11-13: reproducible book and reader reference repair
+
+Adopted the reproducible 387-page L9 PDF at 21a1acf4: two isolated builds
+agree byte for byte. Against the preceding committed PDF, all text and RGB
+pixels on pages 2–387 match; page 1 differs only in the date (November 13,
+from the pinned scientific commit timestamp). No mathematical source changed.
+The subsequent full reader/book label check found one stale imported label:
+Future work was still 1.8 in the reader but is now 1.9 in the book. Refreshed
+the generated label and rebuilt the 28-page reader: 99 mapped labels and 272
+external links now agree, with 0 errors, undefined references or overfull
+boxes. All 216 pre-existing proof bodies remain byte-identical to the stored
+Chapter 12 baseline. Validation now derives seven appendices from the actual
+Contents rather than retaining the old fixed count of six.
+
+The corrected Chapter 12 development panel is running on the frozen
+947965c6 carrier (scientific PDF epoch 21a1acf4), with clean primary text and
+all twenty context files required. Its eventual report must retain that exact
+scope; the later reader label repair belongs in the final integration replay.
+Whole-report HIGH acceptance remains open.
