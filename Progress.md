@@ -19856,3 +19856,23 @@ Evidence: private/audit/2026-11-13-f2-manuscript/. The refreshed combined
 package is a new artifact and needs its own release-equality check; the old
 8608740f/35578e22 receipt is not transferred. Existing visual receipts remain
 immutable pending exact carrier/source correspondence to the new PDF.
+
+
+## 2026-11-13: refreshed F2 package and visual correspondence
+
+The new 103-file package is bound to f1726ccb and has SHA-256
+ce8d9eb1e0b72d03009fc6595a4645d49676b87c3d127cdcf74453bc99ee2e26.
+All 101 tracked source inputs match that commit; bibliography and index are
+separately generated. Isolated local and pinned TeX Live 2025 builds pass
+at 419 pages with unchanged index records and valid labels/internal links.
+The old package remains unchanged. The real filter was rerun after the
+latest release-rule update and again preserves the manuscript/front door.
+
+All 82 original carriers and actual source excerpts for the 18 accepted
+visual pages were reproduced exactly from the new PDF. Their original
+reports, confidence and limitations remain unchanged; this is correspondence,
+not a new vote. The edited page 301 was not among those 18; the other 401
+pages remain outside accepted visual coverage. Agent 16 has the new exact
+package/source pin for its fresh release-equality run.
+Evidence: private/audit/2026-11-13-f2-package-custody/ and
+private/audit/2026-11-13-f2-visual-rebind/.
