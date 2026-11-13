@@ -31,8 +31,8 @@ was written with her.
   requires high confidence, so this review is **not accepted**, and no grade
   is carried over to the current edition.
 - **Lean.** A companion Lean package checks parts of the work. Its coverage
-  file at commit <!--s:lean.coverage-->`34b65d7`<!--/s--> (documentation changes only after the verified
-  commit <!--s:lean.verified-->`6eb79c7`<!--/s-->; to be re-pinned to the companion's release tag) records:
+  file at release v0.9.0 (https://doi.org/10.5281/zenodo.24199105; built from development commit
+  <!--s:lean.verified-->`6eb79c7`<!--/s-->, coverage file as at <!--s:lean.coverage-->`34b65d7`<!--/s-->) records:
   - <!--s:lean.full_words-->forty-three<!--/s--> numbered results, three displayed equations and one remark
     formalized under the manuscript's own hypotheses (<!--s:lean.narrow_words-->eighteen<!--/s--> of the results
     with a narrower conclusion);

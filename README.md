@@ -56,7 +56,8 @@ Please read this before citing anything.
   theorems are outside Lean: <!--s:lean.outside_main_words-->three<!--/s--> of the <!--s:main.count_words-->four<!--/s-->; for the fourth, Lean proves a
   narrower conclusion. [VERIFICATION.md](VERIFICATION.md) says, result by
   result, what Lean covers. See the companion at
-  https://github.com/chenle02/stratonovich-ham-second-moment-lean and its
+  https://github.com/chenle02/stratonovich-ham-second-moment-lean (release v0.9.0,
+  DOI 10.5281/zenodo.24199105) and its
   statement ledger. The correspondence between Lean and the manuscript was
   reviewed by AI, not by a human reader.
 - **No AI review grade is a proof.** Human verification is recorded,

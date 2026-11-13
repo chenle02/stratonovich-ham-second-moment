@@ -19,7 +19,7 @@ defined constant, given by a fully specified variational formula. The work
 was done with AI systems under the direction of Le Chen (the PI), who set the
 goals, made the decisions and changed direction when needed.
 
-**Size of the record at manuscript revision <!--s:rev.tex-->`63d9d32`<!--/s-->:**
+**Size of the record at manuscript revision <!--s:rev.tex-->`f1726cc`<!--/s-->:**
 - **Technical notes:** <!--s:pages.book-->388<!--/s--> pages, with <!--s:chapters-->12<!--/s--> chapters and <!--s:appendices.count-->7<!--/s--> appendices (<!--s:appendices.letters-->A–G<!--/s-->).
   Chapter 12, "Obstructions and failed approaches", states <!--s:nogo-->33<!--/s--> numbered no-go
   results with proofs.
@@ -397,8 +397,9 @@ whole paper is therefore **not accepted**. The second whole review, the
 remaining visual checks, the final calibrations and the final cold read are
 open.
 
-**Formally checked:** the Lean companion's coverage at its commit <!--s:lean.coverage-->`34b65d7`<!--/s-->
-(documentation changes only after <!--s:lean.verified-->`6eb79c7`<!--/s-->, where wave <!--s:lean.wave-->L9<!--/s--> was verified; the
+**Formally checked:** the Lean companion's release v0.9.0 (DOI 10.5281/zenodo.24199105) records,
+in its coverage file (development commit <!--s:lean.coverage-->`34b65d7`<!--/s-->, documentation changes
+only after <!--s:lean.verified-->`6eb79c7`<!--/s-->, where wave <!--s:lean.wave-->L9<!--/s--> was verified; the
 PI closed its correspondence gate on November 12) records the
 following, result by result in `VERIFICATION.md`:
 - <!--s:lean.full_words-->forty-three<!--/s--> numbered results, three displayed equations and one remark

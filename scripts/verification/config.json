@@ -4,15 +4,58 @@
   "coverage_commit_file": "scripts/lean-coverage/coverage-commit.txt",
   "receipt_summary": "scripts/lean-coverage/lean-receipt-summary.json",
   "groups": [
-    ["I", ["S:book-setting", "S:G0", "S:book-independent-upper"]],
-    ["II", ["S:book-gaussian-foundations", "S:book-operator-paths", "S:book-wave-evolution", "S:book-lower"]],
-    ["III", ["S:book-means", "S:book-growing-radius", "S:book-point-upper", "S:book-constant"]],
-    ["IV", ["S:appendix-finite-order", "S:appendix-direct", "S:appendix-covariance", "S:appendix-static-clock"]],
-    ["V", ["S:book-no-go"]]
+    [
+      "I",
+      [
+        "S:book-setting",
+        "S:G0",
+        "S:book-independent-upper"
+      ]
+    ],
+    [
+      "II",
+      [
+        "S:book-gaussian-foundations",
+        "S:book-operator-paths",
+        "S:book-wave-evolution",
+        "S:book-lower"
+      ]
+    ],
+    [
+      "III",
+      [
+        "S:book-means",
+        "S:book-growing-radius",
+        "S:book-point-upper",
+        "S:book-constant"
+      ]
+    ],
+    [
+      "IV",
+      [
+        "S:appendix-finite-order",
+        "S:appendix-direct",
+        "S:appendix-covariance",
+        "S:appendix-static-clock"
+      ]
+    ],
+    [
+      "V",
+      [
+        "S:book-no-go"
+      ]
+    ]
   ],
-  "main_theorems": ["T:full-upper", "T:intrinsic-second-moment", "T:intrinsic-occupation-ceiling", "T:white-moment-bounds"],
+  "main_theorems": [
+    "T:full-upper",
+    "T:intrinsic-second-moment",
+    "T:intrinsic-occupation-ceiling",
+    "T:white-moment-bounds"
+  ],
   "source_size_clause": "at manuscript revision `f1712b0` (group V at `141aa7a`, where Chapter 12 was added)",
   "lean_wave": "L9",
   "lean_gate_date": "2026-11-12",
-  "coverage_commit_note": "which after `{verified}` changes only documentation: no Lean source or build file, and in the statement ledger only the prose count of public definitions (89 to 91), not its claim rows"
+  "coverage_commit_note": "which after `{verified}` changes only documentation: no Lean source or build file, and in the statement ledger only the prose count of public definitions (89 to 91), not its claim rows",
+  "companion_release": "v0.9.0",
+  "companion_doi": "10.5281/zenodo.24199105"
 }

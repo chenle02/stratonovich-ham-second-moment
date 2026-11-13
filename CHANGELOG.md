@@ -18,8 +18,8 @@ development history.
   reading edition <!--s:pages.reader-->28<!--/s--> pages; <!--s:results-->220<!--/s--> numbered results and <!--s:nogo-->33<!--/s--> numbered no-go
   results (Chapter 12), each listed with its check status in
   [VERIFICATION.md](VERIFICATION.md); <!--s:proofs-->249<!--/s--> proofs written in this project.
-- **Lean:** the companion's coverage at its commit <!--s:lean.coverage-->`34b65d7`<!--/s--> (verified commit
-  <!--s:lean.verified-->`6eb79c7`<!--/s-->) records <!--s:lean.full-->43<!--/s--> results formalized under the manuscript's own
+- **Lean:** the companion's release v0.9.0 (DOI 10.5281/zenodo.24199105; development commits
+  <!--s:lean.coverage-->`34b65d7`<!--/s--> for coverage, <!--s:lean.verified-->`6eb79c7`<!--/s--> verified) records <!--s:lean.full-->43<!--/s--> results formalized under the manuscript's own
   hypotheses (<!--s:lean.narrow-->18<!--/s--> with a narrower conclusion) and steps or parts of <!--s:lean.inputs-->30<!--/s--> more,
   with named analytic inputs supplied. Three of
   the four main theorems are outside Lean; for `T:intrinsic-occupation-ceiling`
