@@ -19972,3 +19972,16 @@ No author contact occurred. This is author-side reconnaissance, not an
 independent review or a new mathematical acceptance. Memo, exact source
 pinpoints, book audit and revision-specific label map:
 private/audit/2026-11-13-first-moment-scope/.
+
+
+## 2026-11-13: book-only arXiv package at release 04a6279a
+
+Prepared the book-only package from the exact release revision
+04a6279aa163049987d4fcaebc68f69d50c91600, per Le's decision. No reader or combined
+edition is included. The 106-file archive has SHA256
+6b23f091dcec3c93c0744e3807ef18d8005e635b6dc36eb0c720dce7c264b642.
+Local and pinned TeX Live 2025 builds pass; detailed guards and source bindings
+are retained in private/audit/2026-11-13-book-arxiv-04a6279a/. Agent 16 received
+the archive path and hash for independent filtered-tree equality. Actual
+arXiv preview and scientific/cold-review acceptance are separate and remain
+open. Package records remain local during the release freeze.
