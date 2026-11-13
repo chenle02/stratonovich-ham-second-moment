@@ -19948,3 +19948,27 @@ the filtered tree of the same source revision. No scientific, visual or
 arXiv-preview acceptance is inferred from compilation.
 
 Evidence: private/audit/2026-11-13-release-988fd4fa-package-custody/.
+
+
+## 2026-11-13: for Le — first-moment scope audit
+
+The current author edition of Xia Chen's time-dependent paper gives two-sided
+first-mean bounds (Theorem 1.2, p. 3) and predicts equality with its upper bound
+(after (1.14), p. 4); Remark 8.1, p. 60 records the unresolved complex-functional
+step. The exact signed first-mean limit remains open as far as the checked
+wiki and primary sources establish. The older arXiv v1 claim is not the current
+authority. Signed and absolute first moments are separate targets.
+
+The book's positive-score homogeneity and exact second-moment theorem do not
+identify the auxiliary S_1^pos with either first-moment constant. Restriction to
+a favorable event uses nonnegativity of a square; signed means require control
+of cancellation. An absolute-moment adaptation also needs a new transfer from
+the masked observable to the original solution. Existing actual first-mean
+comparisons and static-limit continuity remain useful, with their stated scope.
+
+A bounded falsification-first scoping round is worth considering, beyond the
+current p=2 completion contract. No proof wave is authorized or started.
+No author contact occurred. This is author-side reconnaissance, not an
+independent review or a new mathematical acceptance. Memo, exact source
+pinpoints, book audit and revision-specific label map:
+private/audit/2026-11-13-first-moment-scope/.
