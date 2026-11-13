@@ -20047,3 +20047,22 @@ remain separate. Curated disposition: private/publication-closeout/operator-fami
 The detailed custody archive is under sources/review-packets/ and excluded
 from public export. A next-family inventory checks existing evidence before
 any fresh independent review.
+
+
+## 2026-11-13: scoped Kimi recovery and current-book visual acceptance
+
+The envelope/joint Kimi report is PASS_WITH_NOTES/high after one canonical
+unique-closer recovery; native accepted=false/invalid-report is preserved,
+and derived acceptance is not a new vote. All required text and 90 images
+match the frozen inputs and returned native pixels/bytes. One minor criticism
+of the helper constant was refuted from its stated per-edge definition; no
+target defect or required manuscript repair was found. The separate DeepSeek
+main result remains medium, so no paired HIGH or whole-report closure is
+claimed. Curated evidence: private/publication-closeout/envelope-family/.
+
+Current-book pages 2–8 passed a separate native visual/source-layout review
+at HIGH; all 69 images and required text lines were verified. Together with
+the exact inherited cover correspondence, coverage is 8/392 pages. Remaining
+visual regions and mathematical/cold-review duties remain open. Raw reports,
+source transcripts and native images are retained under sources/review-packets/.
+No publication push was made during the freeze.
