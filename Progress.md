@@ -19549,3 +19549,19 @@ Book: Figure 1.2 badges and the guide's Video introduction table (`4bb8eaca`),
 how-made sentence added; README "Video introduction" and AI-DEV-HISTORY entry.
 Not a review of the mathematics; no gate state changes.
 
+
+## 2026-11-13: where to find the companion and the ledger (Appendices F and G)
+
+Le's request via #16: the book now gives the links a reader needs. Appendix F
+opens with the public Lean companion, release 0.9.0
+(github.com/chenle02/stratonovich-ham-second-moment-lean/tree/v0.9.0), and #22's
+provenance sentence: its Lean sources and configuration are identical to
+development commit 6eb79c7, its own receipts bind its root commit, and
+provenance/DEVELOPMENT.md maps it to the development commits cited (#22: all
+1166 build-input blobs equal those at 34b65d7; cite the tag, not the root SHA,
+which is final only after the release audit). Appendix G gives the ledger at
+github.com/chenle02/stratonovich-ham-second-moment/blob/v1.0.0/VERIFICATION.md.
+Links print without https:// on their own line (\href, full URL). README-reader:
+388-page book, 416-page record (stale since the video-introduction commit). The
+preface line is #3's. 388 pages, 0/0/0; release filter byte-identical; Le
+approved the pages. Links resolve only after the public flip.
