@@ -1,5 +1,5 @@
 # Labels refer to manuscript revision a284420 (see provenance/manuscript-anchor.json).
-# 986 further claims check computations with no direct manuscript label; see docs/statement-ledger.md.
+# 1168 further claims check computations with no direct manuscript label; see docs/statement-ledger.md.
 schema: coverage/1
 package: stratonovich-ham-second-moment-lean
 kind: paper
@@ -7,9 +7,9 @@ stack: lts-2026.10
 manuscript:
   title: The second moment of the hyperbolic Anderson model
   version: unposted
-summary: Forty-three labelled results are formalized in full with the manuscript's hypotheses (fifteen with a narrower
-  conclusion, see their rows) and five more with every conclusion proved and analytic inputs supplied; steps or
-  parts of 20 further labelled results are checked with analytic inputs supplied; three of the four main theorems
+summary: With the manuscript's hypotheses, twenty-nine labelled results are formalized with every conclusion and eighteen with
+  a narrower conclusion (see their rows); steps or
+  parts of 30 further labelled results are checked with analytic inputs supplied; three of the four main theorems
   are outside Lean.
 rows:
 - paper:
@@ -30,9 +30,13 @@ rows:
     label: C:intrinsic-spatial-bracket
   class: same-assumptions
   conclusion: weaker
-  conclusion_scope: "Lean proves, with the section's hypotheses (H:homog, Gamma != 0, a = alpha0) and nothing supplied, E:intrinsic-spatial-bracket and the comparison for the variational value S_2^pos in place of C_2(Gamma,a) (identified by T:intrinsic-second-moment), with the energy D_(1/2)(K_0 R_sp)^(2/(2-alpha)) in place of E_(1/2)^O in the comparison; lambda is the square root of the real Rayleigh supremum."
+  conclusion_scope: Lean proves, with the section's hypotheses and nothing supplied, E:intrinsic-spatial-bracket and the comparison
+    S_2^pos <= 2^m F_0(E_(1/2)^O) < 2^m F_a(E_(1/2)^O) for the variational value S_2^pos in place of C_2(Gamma,a) (identified
+    by T:intrinsic-second-moment), with E_(1/2)^O over the class O modelled by joint representatives; lambda is the square
+    root of the real Rayleigh supremum.
   claims:
   - stratonovich-ham-second-moment-lean/l8-completed-intrinsic-spatial-bracket-paper-completed
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-exact-intrinsic-spatial-comparison-paper
   - stratonovich-ham-second-moment-lean/l8-completed-spatial-bracket-upper-paper-completed
   - stratonovich-ham-second-moment-lean/l8-completed-spatial-bracket-lower-s-sup-paper-completed
   - stratonovich-ham-second-moment-lean/l8-completed-occupation-ceiling-k0-holds
@@ -49,9 +53,9 @@ rows:
   - stratonovich-ham-second-moment-lean/spatial-bracket-counterexample-log
   - stratonovich-ham-second-moment-lean/spatial-bracket-counterexample-ratio
   - stratonovich-ham-second-moment-lean/raw-value-ceiling-strict-log-gap
-  note: The ceiling input (T:intrinsic-occupation-ceiling with C_occ <= K_0 R_sp) is proved deterministically in
-    OccupationCeilingFinite and discharged in L8Completed. v_Psi is the integral form; the direct zero case Gamma
-    = 0 after the corollary is not formalized.
+  note: The upper bracket uses the ceiling with K_0 R_sp (OccupationCeilingFinite, L8Completed); the comparison uses the exact
+    ceiling of OccupationCeilingExact at zeta = 1/2. v_Psi is the integral form; the direct zero case Gamma = 0 after the
+    corollary is not formalized.
 - paper:
     number: Corollary C:static-interaction
     title: Summable static interaction bounds
@@ -93,7 +97,8 @@ rows:
     title: Recovery of the static moment constant
     label: C:static-moment-constant-continuity
   class: inputs-supplied
-  conclusion: full
+  conclusion: weaker
+  conclusion_scope: "Every conclusion is proved for an abstract moment function with the supplied facts of the logconvexity proposition and the static minorant and law; the moments of the solution are not constructed, so their identification with that function is not formalized."
   claims:
   - stratonovich-ham-second-moment-lean/type-continuity-static-moment-constant-continuity-paper
   - stratonovich-ham-second-moment-lean/type-continuity-static-constant-core
@@ -128,6 +133,7 @@ rows:
     title: driver parameters
     label: E:driver-parameters
   class: same-assumptions
+  conclusion: full
   claims:
   - stratonovich-ham-second-moment-lean/homog-hypothesis-parameters-nonempty-paper
 - paper:
@@ -137,6 +143,7 @@ rows:
   claims:
   - stratonovich-ham-second-moment-lean/homog-hypothesis-kappa-mem-ioo-paper
   class: same-assumptions
+  conclusion: full
 - paper:
     number: Equation E:masked-time-schur
     title: Schur bound for the temporal form
@@ -157,14 +164,84 @@ rows:
     bound for the norm in the completion H_a (TimeCompletion.emb_norm_sq_le) and for its continuous extension on
     L^2 classes.
 - paper:
+    number: Lemma L:complex-phase
+    title: A complex phase bound
+    label: L:complex-phase
+  class: inputs-supplied
+  conclusion: weaker
+  conclusion_scope: Lean proves, with the lemma's hypotheses, the numerical-range and scalar steps on W(L) with nothing supplied,
+    and, with the inputs below, the bounds 3, 6(1+lambda h), 6 (times e^(lambda h)) for C_h(L), F_h(L), H_h(L), the root comparisons
+    7/6, 6/5 and the bound 100 e^(2 lambda h) for the weighted block map; its identification with M_z(h) is not formalized.
+  claims:
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-complex-phase-paper
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-complex-phase-range-paper
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-complex-phase-assembly
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-phase-range-bounds-of
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-phase-scalar-bounds
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-parabola
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-norm-le-of-parabola
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-im-root-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-young-parabola
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-form-of-sandwich
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-form-opt-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-coupled-form-bounds
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-num-range-sub-point
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-q-sub-one-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-resolvent-integral-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-kappa-integral
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-kappa-rpow-eq
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-neumann-inverse-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-neumann-root-comparison
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-resolvent-difference
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-integrand-factor-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-neumann-prefactor-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-coeff-le-of-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-kappa-coeff-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-one-sub-delta-a-ge
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-delta-a-mul-phase-i-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-parabola-coeff-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-range-ratio-const-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-norm-phase-c-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-norm-phase-g-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-norm-phase-g-le-prime
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-norm-sin-le-mul
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-phase-f-small
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-phase-f-large
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-norm-phase-f-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-range-ratio-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-norm-phase-h-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-one-add-sqrt-two-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-block-norm-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-block-constant-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-phase-range-bounds
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-num-range
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-shift-op
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-inv-sqrt-shift
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-csqrt
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-phase-c
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-phase-f
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-phase-g
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-phase-h
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-delta-a-pos
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-phase-i-pos
+  inputs:
+  - 'E:cp-input (Crouzeix-Palencia, main TeX lines 2277-2286, imported in the TeX) for C_h, F_h, H_h at L = A_0 - zB with
+    its holomorphy precondition: operators of norm at most (1+sqrt 2) M whenever the scalar function is bounded by M on W(L)'
+  - 'the inverse-root integral representation of lines 2329-2354 for L^* = A_0 - conj(z)B (bounded holomorphic calculus):
+    Q'' - 1 = pi^(-1) int_0^inf J(t) dt with J strongly measurable and ||J(t)|| <= (|z| d/(1-delta_a)) t^(-1/2) kappa^(a-3)'
+  note: 'Not formalized: the phase propagator M_z(h) and its identification with the weighted block map (lines 2433-2444,
+    2461-2464). A_rho^(-1/2) is the inverse of the continuous-functional-calculus square root, proved invertible for rho >
+    0. The self-adjointness of B is carried but unused.'
+- paper:
     number: Lemma L:damped-homogeneous-norms
     title: Homogeneous damped norms and temporal tails
     label: L:damped-homogeneous-norms
   class: same-assumptions
   conclusion: weaker
-  conclusion_scope: "Proved with the lemma's hypotheses except part of the closing smoothing remark: spatial smoothing of the covariance appears only as membership of the Gaussian factor in the multiplier class (its spectral identification is not formalized), and Green smoothing is identified with the smoothed norm only in dimension one. The N_0 mass identity under Green smoothing holds in every dimension."
+  conclusion_scope: "Proved with the lemma's hypotheses except part of the closing smoothing remark: spatial smoothing of the covariance appears only as membership of the Gaussian factor in the multiplier class (its spectral identification is not formalized). Green smoothing is identified with the smoothed norm in dimensions 1, 2 and 3. The N_0 mass identity under Green smoothing holds in every dimension."
   claims:
   - stratonovich-ham-second-moment-lean/damped-multiplier-damped-homogeneous-norms-full-wave
+  - stratonovich-ham-second-moment-lean/wave-green-fourier-damped-homogeneous-norms-fourier-wave
   - stratonovich-ham-second-moment-lean/damped-multiplier-damped-homogeneous-norms-full-paper
   - stratonovich-ham-second-moment-lean/damped-multiplier-damped-multiplier-comparison
   - stratonovich-ham-second-moment-lean/damped-multiplier-n1on-nonneg
@@ -182,6 +259,7 @@ rows:
   - stratonovich-ham-second-moment-lean/damped-multiplier-damped-homogeneous-norms-fourier-paper
   - stratonovich-ham-second-moment-lean/damped-multiplier-n2-green-sq-gauss-eq
   - stratonovich-ham-second-moment-lean/damped-multiplier-green-fourier-one
+  - stratonovich-ham-second-moment-lean/wave-green-fourier-green-fourier
   - stratonovich-ham-second-moment-lean/wave-green-damped-homogeneous-norms-wave
   - stratonovich-ham-second-moment-lean/wave-green-n0-wave-green
   - stratonovich-ham-second-moment-lean/wave-green-wave-green-green-mass
@@ -204,9 +282,9 @@ rows:
   - stratonovich-ham-second-moment-lean/damped-norms-n2-outer-integrable
   - stratonovich-ham-second-moment-lean/damped-norms-n1-integrable
   - stratonovich-ham-second-moment-lean/masked-spectral-growth-spectral-homogeneous-of-homog
-  note: Under H:homog alone in damped_homogeneous_norms_full_wave (d = 3 Green measure via toSphere, Le's decision
-    4). Covariance smoothing is the membership of e^(-eta|xi|^2) in the class; Green smoothing p*G is that multiplier
-    on mu for the transforms of G_s, identified with N_{2,m,S} in d = 1 (Fourier identity of G_s proved there only).
+  note: Under H:homog alone in damped_homogeneous_norms_full_wave (d = 3 Green measure via toSphere, Le's decision 4). Covariance
+    smoothing is the membership of e^(-eta|xi|^2) in the class (its spectral identification is not formalized); Green smoothing p*G is that multiplier on mu for the transforms
+    of G_s, identified with N_{2,m,S} in d = 1, 2, 3 (damped_homogeneous_norms_fourier_wave).
 - paper:
     number: Lemma L:driver-holder-limit
     title: Hölder path limit
@@ -239,6 +317,7 @@ rows:
     title: Gamma and Beta identities
     label: L:equilibrium-gamma-beta
   class: same-assumptions
+  conclusion: full
   claims:
   - stratonovich-ham-second-moment-lean/temporal-equilibrium-gamma-beta-paper
 - paper:
@@ -262,19 +341,79 @@ rows:
     label: L:finite-word-cutoff
   class: inputs-supplied
   conclusion: weaker
-  conclusion_scope: Lean checks only the finite, algebraic or scalar steps of this result listed in docs/statement-ledger.md,
-    not the result itself.
+  conclusion_scope: Lean proves E:finite-word-cutoff for one Gaussian coordinate per color (m_i = 1), in normalized Hermite
+    coefficients with values in a complex inner product space, for a single finite word whose color counts are at most the
+    cutoffs; colors with several coordinates and the sentence on finite sums and Bochner integrals of words are not formalized.
   claims:
-  - stratonovich-ham-second-moment-lean/hermite-word-raw-support
+  - stratonovich-ham-second-moment-lean/hermite-word-fock-cut-eq-raw-fock
   - stratonovich-ham-second-moment-lean/hermite-word-cut-eq-raw
+  - stratonovich-ham-second-moment-lean/hermite-word-raw-support
+  - stratonovich-ham-second-moment-lean/fock-form-good-deg-insert
+  - stratonovich-ham-second-moment-lean/fock-form-good-deg-vac
+  - stratonovich-ham-second-moment-lean/fock-form-good-deg-frame
+  - stratonovich-ham-second-moment-lean/fock-form-trunc-c-eq
+  - stratonovich-ham-second-moment-lean/fock-form-good-deg
+  - stratonovich-ham-second-moment-lean/fock-form-trunc-c
+  - stratonovich-ham-second-moment-lean/hermite-fock-vac
+  - stratonovich-ham-second-moment-lean/hermite-fock-coord-smul-iota
+  - stratonovich-ham-second-moment-lean/gaussian-hermite-coord-mul-hk
   inputs:
-  - the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses
-    (see docs/statement-ledger.md)
+  - 'one Gaussian mode per color: the insertion is J_i = M_(g_i) tensor K_i, whereas the lemma allows m_i modes in color i
+    and J_i = sum_(j=1)^(m_i) M_(g_ij) tensor K_ij (lines 2532-2538); the multi-mode case is not formalized'
+  note: 'Nothing supplied in the one-mode special case: HermiteWord.cut_eq_raw is applied in the audit file HermiteWordFock
+    with its four hypotheses proved in FockForm (degree raising of g_i tensor K_i, frames on X, per-color truncation); multiplication
+    by g_i is a_i^* + a_i on coefficients (HermiteFock.coord_smul_iota). Lowering terms retained. Multi-mode case: wave L11
+    (item K10).'
+- paper:
+    number: Lemma L:fock-form
+    title: Gaussian cutoff form bound
+    label: L:fock-form
+  class: inputs-supplied
+  conclusion: weaker
+  conclusion_scope: Lean proves E:fock-sandwich and the symmetry of the sandwiched truncated operator, uniformly in eps, m
+    and the band, on Gaussian polynomials of degree at most N in the m multiplied coordinates (in normalized Hermite coefficients
+    and in Gaussian L^2), from the supplied spatial column bound sum_i H_i^2 <= R_alpha rho^(alpha-4); coordinates g_i with
+    i > m are not modelled.
+  claims:
+  - stratonovich-ham-second-moment-lean/fock-form-fock-form-paper
+  - stratonovich-ham-second-moment-lean/fock-form-fock-form
+  - stratonovich-ham-second-moment-lean/fock-form-fock-column
+  - stratonovich-ham-second-moment-lean/fock-form-fock-column-compress
+  - stratonovich-ham-second-moment-lean/fock-form-fock-const-eq
+  - stratonovich-ham-second-moment-lean/hermite-fock-gaussian-field-bound-trunc
+  - stratonovich-ham-second-moment-lean/hermite-fock-gaussian-field-bound
+  - stratonovich-ham-second-moment-lean/hermite-fock-field-op-bound-trunc
+  - stratonovich-ham-second-moment-lean/hermite-fock-field-op-bound
+  - stratonovich-ham-second-moment-lean/hermite-fock-field-op-symm-trunc
+  - stratonovich-ham-second-moment-lean/hermite-fock-cre-op-bound
+  - stratonovich-ham-second-moment-lean/hermite-fock-ann-op-bound
+  - stratonovich-ham-second-moment-lean/hermite-fock-cre-row-bound
+  - stratonovich-ham-second-moment-lean/hermite-fock-cre-row-attained
+  - stratonovich-ham-second-moment-lean/hermite-fock-number-identity
+  - stratonovich-ham-second-moment-lean/hermite-fock-sum-inner-ann
+  - stratonovich-ham-second-moment-lean/hermite-fock-sum-inner-cre
+  - stratonovich-ham-second-moment-lean/hermite-fock-coord-smul-iota
+  - stratonovich-ham-second-moment-lean/hermite-fock-sum-coord-smul-iota
+  - stratonovich-ham-second-moment-lean/hermite-fock-integral-norm-sq-iota
+  - stratonovich-ham-second-moment-lean/gaussian-hermite-coord-mul-hk
+  - stratonovich-ham-second-moment-lean/gaussian-hermite-integral-hk-mul-hk
+  - stratonovich-ham-second-moment-lean/gaussian-hermite-mul-hn
+  - stratonovich-ham-second-moment-lean/static-phase-cauchy-fock-d
+  inputs:
+  - 'the spatial column bound sum_i H_i^2 <= R_alpha rho^(alpha-4) for H_i = A_rho^(-1/2) M_(e_i) A_rho^(-1/2) (lines 2492-2511:
+    the representation W_eps = sum_i g_i e_i, Gaussian isometry, spatial Plancherel and E:phase-resolvent of L:phase-contractions),
+    as the named input FockColumn'
+  - self-adjointness of the H_i (lines 2494-2496) and of S_b, S_b idempotent, and the identification of the abstract operators
+    on X with A_rho^(-1/2) M_(e_i) A_rho^(-1/2) and S_b (S_b commutes with A_rho)
+  note: Wrapper fock_form_paper with the standing class of S:static-phase (lines 2054-2066) and R_alpha of E:phase-constants;
+    of these only 0 < alpha < 2 and the formula for R_alpha are used. The Fock half (normalized Hermite recurrence, creation-row
+    norm, annihilation as adjoint, truncation) and the compression to S_b are proved (GaussianHermite, HermiteFock).
 - paper:
     number: Lemma L:gaussian-scalar-powers
     title: Scalar power estimates
     label: L:gaussian-scalar-powers
   class: same-assumptions
+  conclusion: full
   claims:
   - stratonovich-ham-second-moment-lean/gaussian-scalar-powers-weighted-power
   - stratonovich-ham-second-moment-lean/gaussian-scalar-powers-integer-power
@@ -285,6 +424,7 @@ rows:
     title: Two Hermitian trace bounds
     label: L:gaussian-trace-bounds
   class: same-assumptions
+  conclusion: full
   claims:
   - stratonovich-ham-second-moment-lean/finite-gaussian-matrix-gaussian-trace-bounds-paper
   - stratonovich-ham-second-moment-lean/finite-gaussian-matrix-trace-word-le
@@ -296,6 +436,7 @@ rows:
     title: Scalar and Hilbert identities
     label: L:gram-scalar-algebra
   class: same-assumptions
+  conclusion: full
   claims:
   - stratonovich-ham-second-moment-lean/gram-scalar-algebra-gram-scalar-algebra-paper
 - paper:
@@ -318,6 +459,63 @@ rows:
   inputs:
   - the Riesz convolution estimates of the proof (spherical coordinates, the maximum of F_d); not formalized
 - paper:
+    number: Lemma L:interval-complex
+    title: Complex sums and changing phase weights
+    label: L:interval-complex
+  class: inputs-supplied
+  conclusion: weaker
+  conclusion_scope: Lean proves, with the lemma's hypotheses, the adjoint sandwich bound and the numerical-range and scalar
+    steps on W(A_0 - V) with nothing supplied; with the inputs below, the bound 100 e^(2 Lambda h) for the weighted block
+    map, not identified with the propagator in X_Lambda; and E:interval-metric for given finite jump data, without the telescoping
+    along the time partition.
+  claims:
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-interval-complex-paper
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-interval-complex-range-paper
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-interval-metric-paper
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-interval-metric-instance
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-sandwich-adjoint-norm
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-interval-form-bounds
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-phase-weight-change
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-jump-ratio-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-neumann-root-comparison
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-q-sub-one-le
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-phase-range-bounds-of
+  - stratonovich-ham-second-moment-lean/complex-phase-scalar-complex-phase-assembly
+  inputs:
+  - 'E:cp-input (Crouzeix-Palencia, main TeX lines 2277-2286) for C_h, F_h, H_h at L = A_0 - V with weight Lambda: operators
+    of norm at most (1+sqrt 2) M whenever the scalar function is bounded by M on W(L)'
+  - 'the inverse-root integral representation of lines 2929-2944 for L^* = A_0 - V^*: Q'' - 1 = pi^(-1) int_0^inf J(t) dt
+    with J strongly measurable and ||J(t)|| <= (D/(1-delta_a)) t^(-1/2) kappa^(a-3)'
+  note: 'Proved for E:interval-metric: the multiplier form of the weight change, the jump ratio and the product over jumps
+    with pairwise disjoint ending sets. The composition of the phase norms with the segment propagators (the general telescoping
+    lemma) is wave L10-FS0. The self-adjointness of V is not needed.'
+- paper:
+    number: Lemma L:interval-contractions
+    title: Dimension-independent Gaussian contractions
+    label: L:interval-contractions
+  class: inputs-supplied
+  conclusion: weaker
+  conclusion_scope: Lean proves, from E:interval-column as a supplied input, its band-compressed form, the bound sqrt(R_alpha)
+    rho^((alpha-2)/2) for the phase insertion on a color in its vacuum, the sandwich bound R_alpha rho^(alpha-4) with self-adjointness,
+    and E:interval-fock, for finitely many modes and any inner product space as the other factor; E:interval-column itself
+    is not proved.
+  claims:
+  - stratonovich-ham-second-moment-lean/fock-form-interval-contractions-paper
+  - stratonovich-ham-second-moment-lean/fock-form-interval-contractions
+  - stratonovich-ham-second-moment-lean/fock-form-fock-column
+  - stratonovich-ham-second-moment-lean/hermite-fock-vacuum-insertion-isometry
+  - stratonovich-ham-second-moment-lean/hermite-fock-gaussian-field-bound-trunc
+  - stratonovich-ham-second-moment-lean/hermite-fock-field-op-bound-trunc
+  - stratonovich-ham-second-moment-lean/fock-form-fock-const-eq
+  inputs:
+  - E:interval-column (lines 2832-2835; proved in the TeX at lines 2851-2875 by the Gaussian comparison, radial spectral homogeneity
+    and spatial Plancherel) for the finite mode family, as the named input FockColumn
+  - '||A_rho^(-1/2) f|| <= rho^(-1) ||f||, self-adjointness of A_rho^(-1/2), of the M_(e_m) and of S_b, S_b idempotent and
+    commuting with A_rho^(-1/2), and the identification of the abstract operators with the TeX''s'
+  note: Wrapper interval_contractions_paper under H:homog, as the other S:interval-upper wrappers, with R_alpha of line 2820;
+    only 0 < alpha < 2 is used (for R_alpha >= 0). Uniform in eps, the mode number and the band; the phase insertion is the
+    first-chaos isometry HermiteFock.vacuum_insertion_isometry.
+- paper:
     number: Lemma L:inventory-product
     title: A coefficient bound for a product with nonnegative coefficients
     label: L:inventory-product
@@ -330,6 +528,37 @@ rows:
   note: Under H:homog (only 0 < alpha0 < 1 and alpha0 + alpha < 2 used), Lean proves 0 < C and [z^k] prod_{i=1}^M
     (1 + v_i z + sum_{l>=2} b_{i,l} z^l) <= C^k/(k!)^nu for every M and k >= 1, with the explicit C = 4 exp(K(alpha,
     alpha0)), independent of M and k.
+- paper:
+    number: Lemma L:low-alpha-convolution
+    title: Low-alpha convolution bound
+    label: L:low-alpha-convolution
+  class: same-assumptions
+  conclusion: full
+  claims:
+  - stratonovich-ham-second-moment-lean/l9-completed-low-alpha-convolution-paper-completed
+  - stratonovich-ham-second-moment-lean/low-alpha-convolution-low-alpha-convolution-paper
+  - stratonovich-ham-second-moment-lean/low-alpha-convolution-low-alpha-convolution-one
+  - stratonovich-ham-second-moment-lean/low-alpha-convolution-low-alpha-convolution
+  - stratonovich-ham-second-moment-lean/low-alpha-convolution-measure-closed-ball-eq
+  - stratonovich-ham-second-moment-lean/low-alpha-convolution-integral-low-kernel
+  - stratonovich-ham-second-moment-lean/low-alpha-convolution-smoothed-pairing-spectral
+  - stratonovich-ham-second-moment-lean/low-alpha-convolution-smoothed-green-pairing-spectral
+  - stratonovich-ham-second-moment-lean/low-alpha-convolution-gamma-eps-spectral
+  - stratonovich-ham-second-moment-lean/low-alpha-convolution-gamma-eps-nonneg
+  - stratonovich-ham-second-moment-lean/low-alpha-convolution-abs-wave-hat-le-low-kernel
+  - stratonovich-ham-second-moment-lean/low-alpha-convolution-smoothed-green-zero
+  - stratonovich-ham-second-moment-lean/low-alpha-convolution-spec-v
+  - stratonovich-ham-second-moment-lean/low-alpha-convolution-low-kernel
+  - stratonovich-ham-second-moment-lean/low-alpha-convolution-heat-dens
+  - stratonovich-ham-second-moment-lean/low-alpha-convolution-gamma-eps
+  - stratonovich-ham-second-moment-lean/low-alpha-convolution-smoothed-green
+  - stratonovich-ham-second-moment-lean/low-alpha-convolution-gauss-factor
+  - stratonovich-ham-second-moment-lean/wave-green-fourier-wave-green-fourier-paper
+  - stratonovich-ham-second-moment-lean/wave-green-fourier-green-fourier
+  - stratonovich-ham-second-moment-lean/masked-spectral-growth-spectral-homogeneous-of-homog
+  note: Under H:homog and alpha < 1 alone in low_alpha_convolution_paper_completed, d = 1, 2, 3, G_h = waveGreen d h (d =
+    3 via toSphere, Le's decision 4), p_eps of covariance eps I, G_(h,eta) = N(0, eta I) * G_h. The Fourier display of lines
+    4740-4744 is proved (WaveGreenFourier), not imported. Integrability is part of each conclusion.
 - paper:
     number: Lemma L:masked-continuous-wave
     title: Continuous sine factors
@@ -410,6 +639,24 @@ rows:
     off zero, locally integrable, strictly decreasing on (0,inf), K_star(u) <= |u|^(-a) off zero, and that R_star
     = 2 int_0^(1/2) K_star is the greatest row value over s in [0,1], with 0 < R_star and each row integral integrable.
 - paper:
+    number: Lemma L:occupation-rayleigh-selection
+    title: Countable Rayleigh near-occupations
+    label: L:occupation-rayleigh-selection
+  class: same-assumptions
+  conclusion: weaker
+  conclusion_scope: Lean proves E:occupation-rayleigh-selection with the section's hypotheses and nothing supplied, with g_eps
+    in the class O modelled by fields with jointly measurable representatives (the witness is a finite-cell field of real
+    unit tests); lambda is the square root of the real Rayleigh supremum and v_Psi the integral-form cost.
+  claims:
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-exact-occupation-rayleigh-selection-paper
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-exact-step-mean-le-sqrt
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-exact-step-field-is-occ
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-exists-unit-test-gt
+  - stratonovich-ham-second-moment-lean/space-time-positivity-integral-mean-mul-le-sqrt
+  note: 'Route (wave L9, decision 2): N+1 equal time cells with near-optimal real unit tests at the nodes and Lipschitz bounds
+    in s replace the countable first-index Borel selection; int int h g^2 <= sqrt(v_Psi A(g)) is proved for these fields from
+    the continuous case (SpaceTimePositivity) by dominated convergence, not through Q and rho_g of L:occupation-raw-square.'
+- paper:
     number: Lemma L:phase-bessel
     title: Hilbert-valued finite Bessel inequality
     label: L:phase-bessel
@@ -422,6 +669,53 @@ rows:
   note: Proved more generally (any measure space, any complete complex inner product space, finite index sets) by
     projection in H, no basis; the wrapper states the TeX's hypotheses, separability carried unused. Integrability
     of the integrands is part of the conclusion.
+- paper:
+    number: Lemma L:phase-contractions
+    title: Two static contraction bounds
+    label: L:phase-contractions
+  class: same-assumptions
+  conclusion: full
+  claims:
+  - stratonovich-ham-second-moment-lean/l9-completed-phase-contractions-paper-completed
+  - stratonovich-ham-second-moment-lean/l9-completed-phase-contractions-homog-completed
+  - stratonovich-ham-second-moment-lean/l9-completed-phase-trace-completed
+  - stratonovich-ham-second-moment-lean/l9-completed-trace-t-fourier-completed
+  - stratonovich-ham-second-moment-lean/l9-completed-wave-fourier-three-holds
+  - stratonovich-ham-second-moment-lean/l9-completed-archimedes-law-holds
+  - stratonovich-ham-second-moment-lean/phase-contractions-phase-contractions-paper
+  - stratonovich-ham-second-moment-lean/phase-contractions-phase-resolvent
+  - stratonovich-ham-second-moment-lean/phase-contractions-phase-trace
+  - stratonovich-ham-second-moment-lean/phase-contractions-lintegral-gamma-eps-le
+  - stratonovich-ham-second-moment-lean/phase-contractions-trace-t-fourier
+  - stratonovich-ham-second-moment-lean/phase-contractions-gauss-shift-le
+  - stratonovich-ham-second-moment-lean/phase-contractions-gamma-eps-fourier
+  - stratonovich-ham-second-moment-lean/phase-contractions-lintegral-norm-radial
+  - stratonovich-ham-second-moment-lean/phase-contractions-measure-singleton-zero
+  - stratonovich-ham-second-moment-lean/phase-contractions-lintegral-wave-green-three
+  - stratonovich-ham-second-moment-lean/phase-contractions-integral-normal-coordinate
+  - stratonovich-ham-second-moment-lean/phase-contractions-sphere-convolution
+  - stratonovich-ham-second-moment-lean/phase-contractions-middle-region-le
+  - stratonovich-ham-second-moment-lean/phase-contractions-three-regions
+  - stratonovich-ham-second-moment-lean/phase-contractions-kernel-le-b-alpha
+  - stratonovich-ham-second-moment-lean/phase-contractions-gamma-eps-nonneg
+  - stratonovich-ham-second-moment-lean/phase-contractions-integral-pdens
+  - stratonovich-ham-second-moment-lean/phase-contractions-phase-covariance
+  - stratonovich-ham-second-moment-lean/phase-contractions-phase-covariance-of-homog
+  - stratonovich-ham-second-moment-lean/phase-contractions-mass-m
+  - stratonovich-ham-second-moment-lean/phase-contractions-c-gam
+  - stratonovich-ham-second-moment-lean/phase-contractions-b-alpha
+  - stratonovich-ham-second-moment-lean/phase-contractions-d-gam
+  - stratonovich-ham-second-moment-lean/phase-contractions-d-gam-eq
+  - stratonovich-ham-second-moment-lean/phase-contractions-pdens
+  - stratonovich-ham-second-moment-lean/phase-contractions-gamma-eps
+  - stratonovich-ham-second-moment-lean/phase-contractions-trace-t
+  - stratonovich-ham-second-moment-lean/wave-green-fourier-archimedes
+  - stratonovich-ham-second-moment-lean/wave-green-fourier-wave-green-fourier-three
+  - stratonovich-ham-second-moment-lean/wave-green-fourier-sphere-fourier
+  - stratonovich-ham-second-moment-lean/spectral-mass-identity-ralpha
+  note: Under the section's standing assumptions (PhaseCovariance, lines 2054-2057) alone in phase_contractions_paper_completed,
+    and under H:homog in d = 3. G_a = waveGreen 3 a (toSphere, Le's decision 4); R_alpha uses V = mu(open B_1). Evenness and
+    positive definiteness are carried, unused; the three regions are closed. Integrability is part of each conclusion.
 - paper:
     number: Lemma L:positive-raw-embedding
     title: Inclusion into the covariance space and the smooth mean
@@ -464,6 +758,8 @@ rows:
     title: Indexed cone and terminal displacement
     label: L:raw-block-indexed-cone
   class: inputs-supplied
+  conclusion: weaker
+  conclusion_scope: "Every conclusion is proved for an abstract ground family (flows, vectors, duals, rates and observable, with the properties of the compact mean family supplied as inputs); its identification with the physical wave family of the compact mean family is not formalized."
   claims:
   - stratonovich-ham-second-moment-lean/indexed-cone-indexed-cone-paper
   - stratonovich-ham-second-moment-lean/indexed-cone-indexed-cone
@@ -495,7 +791,7 @@ rows:
     and sigma -> ell_sigma on I'
   - 'GroundFamily fields margin_ell, margin_obs (C16 output, E:compact-positive-margins): inf_I ell_sigma(e_0) >
     0 and inf_I O_phi(e_sigma) > 0'
-  note: Lean proves the whole conclusion E:raw-block-positive-product, with c_* = a_* j_*/4 and positivity, from
+  note: Lean proves every conclusion of E:raw-block-positive-product for the abstract ground family, with c_* = a_* j_*/4 and positivity, from
     the ground family of S:compact-mean-family supplied as one hypothesis structure (GroundFamily) whose fields
     are C16 conclusions; the standing H:homog and Gamma != 0 are carried but unused, and ||e_0|| = 1 is generalized.
 - paper:
@@ -633,6 +929,7 @@ rows:
   claims:
   - stratonovich-ham-second-moment-lean/temporal-equilibrium-temporal-equilibrium-paper
   class: same-assumptions
+  conclusion: full
 - paper:
     number: Lemma L:terminal-wick
     title: The finite terminal-chain Wick formula
@@ -689,7 +986,8 @@ rows:
     title: Uniform series tails from scaled moments
     label: L:uniform-series-tail
   class: inputs-supplied
-  conclusion: full
+  conclusion: weaker
+  conclusion_scope: "The bounds and the L^2 limit are proved for any real L^2 family with absolutely convergent series and nonnegative mixed moments; for the terminal-chain terms these two facts are proved with the chain measures fixed only by their total masses, so the identification with the terms of the terminal Wick lemma is not formalized."
   claims:
   - stratonovich-ham-second-moment-lean/l8-completed-uniform-series-tail-terminal-wick-paper
   - stratonovich-ham-second-moment-lean/uniform-series-tail-uniform-series-tail-paper
@@ -823,6 +1121,7 @@ rows:
     title: Finite Gaussian matrix moment
     label: P:finite-gaussian-matrix
   class: same-assumptions
+  conclusion: full
   claims:
   - stratonovich-ham-second-moment-lean/finite-gaussian-matrix-finite-gaussian-matrix-paper
   - stratonovich-ham-second-moment-lean/finite-gaussian-matrix-finite-gaussian-matrix
@@ -880,9 +1179,9 @@ rows:
     label: P:interval-coefficients
   class: inputs-supplied
   conclusion: weaker
-  conclusion_scope: Lean checks the assembly of E:interval-coefficient-bound (length substitution, split count,
-    product-coefficient identity, with L:inventory-product proved in Lean) from E:interval-energy-splits and L:fixed-split
-    as supplied inputs, for R_alpha > 0 and sigma_i > 0, and the summation from it to E:interval-phase-bound.
+  conclusion_scope: Lean checks the assembly of E:interval-coefficient-bound (length substitution, split count, product-coefficient
+    identity, with L:inventory-product proved in Lean) from E:interval-energy-splits and L:fixed-split as supplied inputs,
+    for R_alpha > 0 and sigma_i > 0, and the summation from it to E:interval-phase-bound.
   claims:
   - stratonovich-ham-second-moment-lean/interval-scalar-completed-interval-coefficient-assembly-paper-completed
   - stratonovich-ham-second-moment-lean/interval-scalar-completed-interval-coefficient-assembly-completed
@@ -900,18 +1199,18 @@ rows:
   - stratonovich-ham-second-moment-lean/interval-scalar-two-mul-add-one-le-three-pow
   - stratonovich-ham-second-moment-lean/inventory-product-inventory-product
   inputs:
-  - E:interval-energy-splits combined with the reflection parity (lines 3478-3488), the coefficient as the sum over
-    degree vectors kappa (sum kappa_i = k) and splits r_i + q_i = 2 kappa_i of Q_(r,q)
-  - L:fixed-split (E:fixed-split-bound; lemma lines 3053-3094) at lambda = k/T with constant C_split, for every
-    such split; not formalized
-  - for E:interval-phase-bound, the power-series identity at s = 1 (lines 3430-3472, 3558-3565), the vanishing of
-    odd coefficients (lines 3483-3485) and the zero-order bound e ||v||^2 (lines 3570-3571)
-  - the identification of the coefficients with the finite-interval model (Hermite cutoff by L:finite-word-cutoff,
-    lines 3490-3497; lines 3549-3566), and the reduction to sigma_i > 0 (zero noise and sign change, lines 3417-3423);
+  - E:interval-energy-splits combined with the reflection parity (lines 3478-3488), the coefficient as the sum over degree
+    vectors kappa (sum kappa_i = k) and splits r_i + q_i = 2 kappa_i of Q_(r,q)
+  - L:fixed-split (E:fixed-split-bound; lemma lines 3053-3094) at lambda = k/T with constant C_split, for every such split;
     not formalized
-  note: Wrappers under H:homog with R_alpha of line 2820; constant 12 max(c,0) max(1,L)^beta C_split C_inv with
-    C_inv = inventoryConst(alpha, alpha0) from InventoryProduct.inventory_product, discharged in IntervalScalarCompleted;
-    the zero-noise case and the sign reduction (lines 3417-3423) are not formalized.
+  - for E:interval-phase-bound, the power-series identity at s = 1 (lines 3430-3472, 3558-3565), the vanishing of odd coefficients
+    (lines 3483-3485) and the zero-order bound e ||v||^2 (lines 3570-3571)
+  - the identification of the coefficients with the finite-interval model (Hermite cutoff by L:finite-word-cutoff, lines 3490-3497,
+    which Lean proves only with one Gaussian coordinate per color; lines 3549-3566), and the reduction to sigma_i > 0 (zero
+    noise and sign change, lines 3417-3423); not formalized
+  note: Wrappers under H:homog with R_alpha of line 2820; constant 12 max(c,0) max(1,L)^beta C_split C_inv with C_inv = inventoryConst(alpha,
+    alpha0) from InventoryProduct.inventory_product, discharged in IntervalScalarCompleted; the zero-noise case and the sign
+    reduction (lines 3417-3423) are not formalized.
 - paper:
     number: Proposition P:masked-auxiliary-norm
     title: Auxiliary mask norm
@@ -966,7 +1265,8 @@ rows:
     title: A physical mask need not preserve noise-null tests
     label: P:masked-quotient-obstruction
   class: same-assumptions
-  conclusion: full
+  conclusion: weaker
+  conclusion_scope: "Proved with the proposition's hypotheses for the covariance functional: the noise W is not constructed, so E W(F)^2 is read as the covariance functional of the test F, and its identification with the variance of the noise is not formalized."
   claims:
   - stratonovich-ham-second-moment-lean/quotient-obstruction-masked-quotient-obstruction-paper
   - stratonovich-ham-second-moment-lean/quotient-obstruction-masked-quotient-obstruction
@@ -1018,11 +1318,35 @@ rows:
     the Gaussian bound and the open and closed ball bounds of E:masked-translated-ball; the Gaussian Schwartz test
     is built in Lean (GaussianTest).
 - paper:
+    number: Proposition P:mild-construction
+    title: Mild construction from the fixed-order limits
+    label: P:mild-construction
+  class: inputs-supplied
+  conclusion: weaker
+  conclusion_scope: Lean proves only the multiplication bound E:occupied-multiplication of the proof, for F a real polynomial
+    of total degree at most n in finitely many independent standard Gaussians and H a real combination of them; its extension
+    to the closed space of degree at most n, the almost-sure identification and the mild-solution statement E:mild-construction
+    are not formalized.
+  claims:
+  - stratonovich-ham-second-moment-lean/fock-form-occupied-multiplication-paper
+  - stratonovich-ham-second-moment-lean/fock-form-occupied-multiplication
+  - stratonovich-ham-second-moment-lean/gaussian-hermite-mv-polynomial-mem-hermite-span
+  - stratonovich-ham-second-moment-lean/gaussian-hermite-monomial-mem-hermite-span
+  - stratonovich-ham-second-moment-lean/hermite-fock-gaussian-field-bound
+  - stratonovich-ham-second-moment-lean/hermite-fock-vacuum-insertion-isometry
+  inputs:
+  - 'the closure step of E:occupied-multiplication (lines 1810-1814: approximation in P_(<=n), the L^2 Cauchy property of
+    the products and the almost-sure identification of the limit with HF); not formalized'
+  - the fixed-order limits X_n in P_(<=n) (lines 1794-1798) and the proof of E:mild-construction (from line 1816); not formalized
+  note: E:occupied-multiplication for finite-coordinate polynomials is proved with nothing supplied, by the spanning step
+    and the Gaussian Fock bound with X = C; F may depend on H. H:homog plays no role in that display and is not carried.
+- paper:
     number: Proposition P:moment-growth-logconvex
     title: Log-convexity of the upper growth type
     label: P:moment-growth-logconvex
   class: inputs-supplied
-  conclusion: full
+  conclusion: weaker
+  conclusion_scope: "Every conclusion is proved for an abstract moment function with the supplied coefficient, interpolation, static-law, minorant and upper-bound facts; the moments E u^(a)(T,x)^p of the solution are not constructed, so their identification with that function is not formalized."
   claims:
   - stratonovich-ham-second-moment-lean/type-continuity-moment-growth-logconvex-paper
   - stratonovich-ham-second-moment-lean/type-continuity-growth-logconvex-core
@@ -1078,13 +1402,15 @@ rows:
     title: Averaged block mean tends to zero
     label: P:radius-mean-anchor
   class: inputs-supplied
+  conclusion: weaker
+  conclusion_scope: "Every conclusion is proved for abstract random paths with the supplied moment bound; the operator paths M_R(Y_m) and the residual noises are not constructed, so the identification of these paths with the manuscript's block paths is not formalized."
   claims:
   - stratonovich-ham-second-moment-lean/radius-mean-anchor-radius-mean-anchor-paper
   inputs:
   - 'the moment bound of C:radius-covariance-residuals (from P:radius-actual-moments) on the unstopped block paths:
     almost surely C^theta, p-th norm power integrable, (E||M_R(Y_m)||^p)^(1/p) <= C sqrt(p) R^(d/Q)'
   - measurability of the C^theta norm of the stopped block paths (implicit in the manuscript)
-  note: Lean proves every conclusion under exactly the manuscript's hypotheses (E:radius-mean-anchor with integrability
+  note: Lean proves every conclusion, for abstract random paths, under the manuscript's hypotheses (E:radius-mean-anchor with integrability
     of Z_delta, e_anchor > 0 for every d, E:radius-mean-anchor-decay and its limit); the moment input is supplied.
 - paper:
     number: Proposition P:raw-block-original-lower
@@ -1099,6 +1425,44 @@ rows:
   inputs:
   - the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses
     (see docs/statement-ledger.md)
+- paper:
+    number: Proposition P:raw-occupation-energy
+    title: Original occupation energy and dilation
+    label: P:raw-occupation-energy
+  class: same-assumptions
+  conclusion: weaker
+  conclusion_scope: 'Lean proves every claim with the section''s hypotheses (H:homog, Gamma != 0, a = alpha0) and nothing
+    supplied: 0 < C_occ <= K_0 R_sp, E:raw-occupation-bound, the dilation identities, E:raw-occupation-energy, E:raw-occupation-ratio,
+    E_zeta^O > 0 and its zeta-scaling, with the class O, hence C_occ and E_zeta^O, taken over fields with jointly measurable
+    representatives of g and of its gradient.'
+  claims:
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-raw-occupation-energy-paper
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-raw-occupation-energy
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-raw-occupation-bound
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-araw-le
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-t-pos
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-exists-pos-member
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-is-occ-field-dil
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-araw-dil
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-sq-pair-dil
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-dil-inv
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-scalar-max-zeta
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-scalar-attain-zeta
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-araw
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-a
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-ratio-set
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-cocc
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-energy-set
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-eo
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-dil-field
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-dil-grad
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-k0
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-row-le
+  - stratonovich-ham-second-moment-lean/spatial-bracket-dzeta
+  - stratonovich-ham-second-moment-lean/spatial-occupation-l7-completed-square-pairing-bounds-holds
+  note: 'Route as in the TeX except: the spatial bound enters as (R/2)(b_s^(alpha/2) + b_t^(alpha/2)) with the sharp Schur
+    row K_0; positivity uses |s-t|^(-a) >= 1 on (0,1)^2 and A_sp > 0; the dilation identity holds for all real functions,
+    so no approximation step is needed. The direct zero case Gamma = 0 (lines 302-308) is not formalized.'
 - paper:
     number: Proposition P:spatial-energy-map
     title: The spatial energy and static lower variational expression
@@ -1191,7 +1555,10 @@ rows:
     label: P:static-phase-all-orders
   class: inputs-supplied
   conclusion: weaker
-  conclusion_scope: "Lean proves the Cauchy coefficient estimate, the arithmetic at lambda = n/h and the series bound of the proof, and from them both displays for abstract Banach-space quantities, with the circle bound, entireness in the coupling, the coefficient identification, the norm comparisons, the cutoff removals and the free bound supplied; the phases themselves are not constructed."
+  conclusion_scope: Lean proves the Cauchy coefficient estimate, the arithmetic at lambda = n/h and the series bound of the
+    proof, and from them both displays for abstract Banach-space quantities, with the circle bound, entireness in the coupling,
+    the coefficient identification, the norm comparisons, the cutoff removals and the free bound supplied; the phases themselves
+    are not constructed.
   claims:
   - stratonovich-ham-second-moment-lean/static-phase-cauchy-static-phase-all-orders-paper
   - stratonovich-ham-second-moment-lean/static-phase-cauchy-all-static-phase-sum-paper
@@ -1217,10 +1584,14 @@ rows:
   - stratonovich-ham-second-moment-lean/series-type-sum-rpow-le-rpow-sum
   inputs:
   - the bound 100 e^(2 lambda h) for the phase propagator on the coupling disc of radius delta_(alpha/2) lambda^(2-alpha/2)/d',
-    for every d' >= d_n, d' > 0, from L:fock-form and L:complex-phase (lines 2611-2614); not formalized
+    for every d' >= d_n, d' > 0, from L:fock-form and L:complex-phase (lines 2611-2614); not formalized (the sandwich bound
+    E:fock-sandwich is proved in FockForm from the spatial column bound, but not its combination with L:complex-phase into
+    this propagator bound)
   - the phase entries are entire in the coupling (lines 2616-2617)
-  - the identification of the n-th coefficient, applied to S_b(f,g) times the vacuum, with the cutoff n-th Duhamel
-    phase via L:finite-word-cutoff (lines 2625-2630), with ||z||_(1/h) <= n ||z||_(n/h) (line 2632)
+  - the identification of the n-th coefficient, applied to S_b(f,g) times the vacuum, with the cutoff n-th Duhamel phase via
+    L:finite-word-cutoff (lines 2625-2630), with ||z||_(1/h) <= n ||z||_(n/h) (line 2632); L:finite-word-cutoff is proved
+    only with one Gaussian coordinate per color (HermiteWordFock), while the phase words carry m coordinates per color, and
+    the identification is not formalized
   - '||S_b(f,g)||_(n/h) <= ||(f,g)||_(1/h) (line 2633)'
   - the removal of the band and Gaussian cutoffs, as convergence of the norms (lines 2643-2667)
   - the free bound ||Z_0(h)||_(1/h) <= sqrt(e) ||(f,g)||_(1/h) (line 2679)
@@ -1346,6 +1717,7 @@ rows:
     title: Both variance directions are necessary
     label: R:gaussian-one-variance-test
   class: same-assumptions
+  conclusion: full
   claims:
   - stratonovich-ham-second-moment-lean/finite-gaussian-matrix-gaussian-one-variance-test-paper
   - stratonovich-ham-second-moment-lean/finite-gaussian-matrix-gaussian-one-variance-test
@@ -1364,8 +1736,19 @@ rows:
     label: T:intrinsic-occupation-ceiling
   class: same-assumptions
   conclusion: weaker
-  conclusion_scope: "Lean proves c I_Psi - v_Psi/2 <= U_c for every nonnegative smooth control and S_c^pos <= U_c, for every c > 0, with the constant K_0 R_sp, an upper bound of C_occ, in place of C_occ (a larger ceiling); lambda is the square root of the real Rayleigh supremum and v_Psi the integral-form cost. The class O, A(g), C_occ, the second form through E_zeta^O and C_2(Gamma,a) <= U_2 are not formalized."
+  conclusion_scope: 'Lean proves, with the section''s hypotheses and nothing supplied, for every c > 0: c I_Psi - v_Psi/2
+    <= U_c for every nonnegative smooth control, S_c^pos <= U_c with the exact C_occ, and U_c = c^m (2 zeta)^(alpha/(2k))
+    F_0(E_zeta^O) for every zeta > 0, with C_occ and E_zeta^O over the class O modelled by joint representatives; C_2(Gamma,a)
+    <= U_2 is not formalized.'
   claims:
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-exact-intrinsic-occupation-ceiling-paper
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-exact-score-le-ceiling-cocc
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-exact-integrated-rate-sq-le-cocc
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-exact-occupation-rayleigh-selection-paper
+  - stratonovich-ham-second-moment-lean/occupation-ceiling-exact-step-mean-le-sqrt
+  - stratonovich-ham-second-moment-lean/raw-occupation-energy-raw-occupation-energy-paper
+  - stratonovich-ham-second-moment-lean/spatial-bracket-ceiling-value-eq-zeta
+  - stratonovich-ham-second-moment-lean/spatial-bracket-ceiling-value
   - stratonovich-ham-second-moment-lean/l8-completed-occupation-ceiling-s-sup-k0-paper-completed
   - stratonovich-ham-second-moment-lean/l8-completed-occupation-ceiling-k0-paper-completed
   - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-occupation-ceiling-s-sup-k0-paper
@@ -1381,10 +1764,9 @@ rows:
   - stratonovich-ham-second-moment-lean/occupation-ceiling-finite-k0
   - stratonovich-ham-second-moment-lean/space-time-positivity-space-time-cs-holds
   - stratonovich-ham-second-moment-lean/l8-completed-space-time-cs-completed
-  note: 'Route differs from the TeX: near-optimal smooth unit tests and a finite partition of unity in time replace
-    the countable selection of L:occupation-rayleigh-selection, and the space-time form (positive by a mixture of
-    rank-one time kernels, with Fubini identities; SpaceTimePositivity) replaces rho_g in H_I; F(G,G) <= K_0 R_0
-    T(G)^(alpha/2) uses the sharp Schur row K_0.'
+  note: 'lambda is the square root of the real Rayleigh supremum and v_Psi the integral-form cost. Route: a finite-cell selection
+    replaces the countable one, space-time Cauchy-Schwarz replaces rho_g in H_I. The zero case Gamma = 0 is not formalized;
+    the K_0 R_sp form (wave L8) remains. Le''s decision of 2026-11-12 covered that L8 form; this row is for his L9 gate.'
 - paper:
     number: Theorem T:intrinsic-second-moment
     title: Intrinsic original second-moment constant

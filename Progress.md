@@ -19449,3 +19449,26 @@ now says seven appendices, naming Appendix G; the Subject index is six pages
 (physical 381-386). notes/README-reader.md: 386-page companion, 414-page record,
 7 appendices, "the final three appendices" (E, F, G). book-numbering-map.json
 unchanged. Le-requested.
+
+## 2026-11-12: Appendices F and G at Lean wave L9
+
+Le decided to move both appendices to wave L9 now, outside a release commit.
+Appendix F re-pinned: verified 6eb79c7 (tag L9-gate), coverage 34b65d7 (#22's
+docs-only successor: the definition count 91/509 and the D8 probe files renamed
+to .lean.txt, so pin_companion.py's strict rule passes; lean-pkg receipt check
+also gives PASS receipts and PASS binding; its FAIL coverage line, comparator
+theorems mapped to no row, was already present at the L8 pin). 80 rows
+(29/18/0/30/3); completion 25/18/0/30/3/144 of 220; milestone row L9-gate (2468
+claims, 2050 theorems); 1168 unlabelled. The L8 review paragraph is replaced by
+#22's L9 paragraph (eight correspondence reviews, ten confirmation rounds, three
+conventions, accepted 2026-11-12 with the count correction, four open points),
+reproduced with references; a reference for the Fock form was left out because
+the coverage row does not support it. #16 regenerated the root VERIFICATION.md
+from 34b65d7 (7f62dac0); Appendix G re-pinned, generator accepted every label,
+group, Lean entry and claim count: 25/18/0/30/3/177 of 253, 73 with a Lean claim.
+GPT-6 Astra PASS_WITH_FIXES: "five groups" was hard-coded (now \lcGroups, four),
+and "144 ... not formalized at all" omitted the three main theorems outside Lean
+(wrong at L8 too; now \lcOutsideNumbered). Layout: \Needspace keeps "How the
+companion grew" with its table. Guide: 387 pages, F 348-354, G 355-356, pair
+415; README-reader 387/415. 0/0/0; release filter byte-identical on all changed
+public files. Le approved the pages.

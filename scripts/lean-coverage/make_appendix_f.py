@@ -39,6 +39,7 @@ CATEGORIES = [  # (class, conclusion) -> wording from the companion README
      "Steps checked, not the result itself; analytic inputs supplied as hypotheses."),
     (("outside", "full"), "Not formalized."),
 ]
+WORDS = {0: "no", 1: "one", 2: "two", 3: "three", 4: "four", 5: "five"}  # counts in prose
 PREFIX_KIND = {"T": "Theorem", "L": "Lemma", "P": "Proposition", "C": "Corollary",
                "R": "Remark", "D": "Definition", "H": "Hypothesis", "E": "Equation",
                "S": "Section", "SS": "Section"}
@@ -160,6 +161,7 @@ def completion_tex(path, rows, numbers, commit, sm):
         f"\\newcommand{{\\lcNumberedTotal}}{{{total}}}\n",
         f"\\newcommand{{\\lcNotFormalized}}{{{by_status['not formalized']}}}\n",
         f"\\newcommand{{\\lcNotFormalizedShare}}{{{round(100 * by_status['not formalized'] / total)}}}\n",
+        f"\\newcommand{{\\lcOutsideNumbered}}{{{WORDS.get(by_status['outside Lean (main theorem)'], by_status['outside Lean (main theorem)'])}}}\n",
         f"\\newcommand{{\\lcSameFullNumbered}}{{{cov[('same-assumptions', 'full')]}}}\n",
         f"\\newcommand{{\\lcSameFullAll}}{{{same_full_all}}}\n",
         f"\\newcommand{{\\lcOtherRows}}{{{len(other)}}}\n",
@@ -290,6 +292,7 @@ def main():
            f"\\newcommand{{\\lcRows}}{{{len(rows)}}}\n",
            f"\\newcommand{{\\lcSummary}}{{{tex_escape(cov['summary'])}}}\n",
            f"\\newcommand{{\\lcUnlabelled}}{{{unlabelled}}}\n",
+           f"\\newcommand{{\\lcGroups}}{{{WORDS[sum(1 for k, _ in CATEGORIES if by_cat.get(k))]}}}\n",
            "\\newcommand{\\lcTables}{%\n" + "".join(body) + "}\n"] + receipts + completion
     open(OUT, "w").write("".join(out))
     print(f"{len(rows)} rows; categories {[ (k, len(by_cat.get(k, []))) for k, _ in CATEGORIES ]}; "

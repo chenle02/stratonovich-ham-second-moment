@@ -24,14 +24,32 @@ literature, the passage from Laplace transforms to time, and the variational
 asymptotics. Where a row says that inputs are supplied, they enter Lean as
 named hypotheses.
 
-The last of these reviews covered the results added most recently to the
-companion: six independent reviews, whose findings (all in the documentation)
-were repaired in two rounds, then a confirmation review and a second
-confirmation review. Their result was reviewed and accepted by the author; it
-is still AI-reviewed, not human-verified. In accepting it, the author recorded
-two points: in Lemma~\ref{L:terminal-wick} the Lean companion takes the chain
-measures as given through their total mass, and it assumes a measurability
-condition on the covariance that the book does not need.
+The statements added in wave L9, and the changes that wave made to existing
+entries of the coverage record, were checked against the book in eight
+independent correspondence reviews, done by AI models from a different family
+than the one that wrote the formal statements. The reviews found documentation
+corrections only, and no error in a Lean proof. The corrections were made and
+re-checked over ten confirmation rounds. During them the author fixed three
+conventions for the record: a result counts as formalized in full only if every
+conclusion is a Lean conclusion under the book's hypotheses, and otherwise the
+missing part is named; a result about an object the companion models by a
+registered standard choice counts in full, while a result that needs an object
+the companion does not construct counts as narrower; and the record's index
+lists, for each label, only the sections where it is treated. A final
+confirmation passed with high confidence, and the author accepted wave L9 on
+November~12, 2026, with a correction of the count of public definitions
+recorded as a documentation-only successor. The record states what remains
+open. The exact occupation-ceiling constant is now formalized, but
+Theorem~\ref{T:intrinsic-occupation-ceiling} stays narrower, because its second
+sentence is not formalized and the class of occupation fields is modelled by
+joint representatives. The Fock form is proved with a bound on its
+spatial column supplied as an input.
+The Green-kernel part of
+Lemma~\ref{L:damped-homogeneous-norms} holds in dimensions one to three, but
+the lemma stays narrower because the smoothing of the covariance is not yet
+identified. Lemma~\ref{L:finite-word-cutoff} is formalized for one Gaussian
+mode per color only. These reviews are not a human verification, and they do
+not check the analytic inputs that stay outside Lean.
 
 \ifdefined\lcHaveReceipts
 \begin{wrapfigure}{r}{0.19\textwidth}
@@ -57,7 +75,7 @@ separate kernel checker, run on a computing cluster; three helper libraries used
 only for the separate statement check were not.
 \fi
 
-In short: \lcSummary{} The \lcRows{} labelled results fall into five groups.
+In short: \lcSummary{} The \lcRows{} labelled results fall into \lcGroups{} groups.
 
 \lcTables
 
@@ -69,8 +87,10 @@ that do not correspond to a single numbered result of the book.
 \Needspace{22\baselineskip}
 \medskip
 \noindent\textbf{Which numbered results the table counts.} The table covers
-\lcNumberedTotal{} numbered theorems, propositions, lemmas and corollaries;
-\lcNotFormalized{} of them (\lcNotFormalizedShare\%) are not formalized at all.
+\lcNumberedTotal{} numbered theorems, propositions, lemmas and corollaries.
+Besides the \lcOutsideNumbered{} main theorems recorded as outside Lean,
+\lcNotFormalized{} further results (\lcNotFormalizedShare\% of the total) are
+not formalized.
 The separately numbered no-gos in Chapter~\ref{S:book-no-go} are not added to
 this count; Appendix~\ref{S:appendix-check-status} counts them with the other
 results. Some restate results listed here; the listed coverage retains
@@ -85,6 +105,7 @@ The groups above also contain \lcOtherRows{} rows for displayed equations or
 remarks, which are not numbered results. This is why the first group above has
 \lcSameFullAll{} rows and the first line of this table \lcSameFullNumbered.
 
+\Needspace{24\baselineskip}
 \medskip
 \noindent\textbf{How the companion grew.} Each stage is a tagged commit of the
 companion, from its creation on \lcFirstStageDate{} to the version described in
