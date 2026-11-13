@@ -19757,3 +19757,27 @@ distinct physical pages of the unchanged combined PDF. The other 401 pages
 and final integration/cold visual review remain open. The private D7 guide
 now reflects the actual Contents numbering I.1--I.11.
 Evidence: private/audit/2026-11-13-combined-visual-next10-custody/.
+
+
+## 2026-11-13: spatial-Wick target review accepted at full stated scope
+
+Fresh Kimi K3/max returned PASS_WITH_NOTES/HIGH for
+L:spatial-wick-measures, with ten reconstructed checks covering all 35
+author-listed operations and the actual parent/consumer applications. Root
+read the full report. Native acceptance, all 23 mandatory text files, all
+46 image byte/pixel matches and unchanged 89-file packet were verified; the
+current proof interior matches the frozen target exactly. The ambient-space
+wording and positive-damping domain are expository notes, with no required
+repair. This joins the earlier scoped DeepSeek HIGH report; neither review
+recertifies every supporting parent or the whole construction chain.
+
+The erroneous 338c source transcription identified during whole-report QA
+is absent from this packet and from the separate conditional-033 packet,
+including renamed-file hash checks. The 005 report explicitly recognizes
+the printed repeated-x source formula and our independently justified
+y-variable convention. Its source credit is therefore not a claim that
+the printed source contains y. Original reports and receipts are unchanged.
+
+Evidence: private/audit/2026-11-12-preprint-readiness/
+proof005-lossless-carrier-v1/custody-release-v1/ and
+source-equation35-followup/. Whole-report/cold gates remain open.
