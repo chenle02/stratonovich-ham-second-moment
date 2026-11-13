@@ -2,6 +2,10 @@
 
 *Second Moment and Exact Asymptotics*
 
+[![Version 1.0.0](https://img.shields.io/badge/version-1.0.0-blue)](CHANGELOG.md)
+[![Text: CC BY 4.0](https://img.shields.io/badge/text-CC%20BY%204.0-lightgrey)](LICENSE)
+[![Code: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-lightgrey)](LICENSES/Apache-2.0.txt)
+
 > To make new mathematics found with AI as trustworthy as mathematics proved
 > by hand: every step open, every check recorded, every contributor credited.
 
@@ -10,6 +14,15 @@ equations, developed by Le Chen (Auburn University) with Amy, his AI research sy
 together with its **complete development history**. It is published so that
 mathematicians can study how the work was actually done, check the results,
 and help interpret them.
+
+**Contents:**
+[The mathematics](#the-mathematics) ·
+[What is established, and what is not](#what-is-established-and-what-is-not) ·
+[How you can help](#how-you-can-help) ·
+[How this was built](#how-this-was-built) ·
+[AI use](#ai-use) ·
+[Documents in this repository](#documents-in-this-repository) ·
+[License and citation](#license-and-citation)
 
 ## The mathematics
 
@@ -21,9 +34,11 @@ $\alpha$. The paper identifies the large-time behaviour of the second moment at
 the scale $t^{\kappa}$, $\kappa = (4-\alpha-\alpha_0)/(3-\alpha)$, with an
 intrinsic constant given by an explicit variational formula.
 
-- Reading edition (28 pages): `notes/notes_stratonovich_ham_second_moment_reader.pdf`
-- Technical notes (386 pages): `notes/notes_stratonovich_ham_second_moment.pdf`
-- arXiv: the identifier is added here after posting.
+| Read | Where |
+| --- | --- |
+| Reading edition (28 pages) | [`notes/notes_stratonovich_ham_second_moment_reader.pdf`](notes/notes_stratonovich_ham_second_moment_reader.pdf) |
+| Technical notes (386 pages) | [`notes/notes_stratonovich_ham_second_moment.pdf`](notes/notes_stratonovich_ham_second_moment.pdf) |
+| arXiv | The identifier is added here after posting. |
 
 ## What is established, and what is not
 
@@ -39,8 +54,8 @@ Please read this before citing anything.
   own hypotheses. For others it proves every conclusion, or checks steps,
   with the analytic inputs entering as explicit hypotheses. Most of the main
   theorems are outside Lean: three of the four; for the fourth, Lean proves a
-  narrower conclusion. VERIFICATION.md says, result by result, what
-  Lean covers. See the companion at
+  narrower conclusion. [VERIFICATION.md](VERIFICATION.md) says, result by
+  result, what Lean covers. See the companion at
   https://github.com/chenle02/stratonovich-ham-second-moment-lean and its
   statement ledger. The correspondence between Lean and the manuscript was
   reviewed by AI, not by a human reader.
@@ -74,10 +89,11 @@ reason and counts.
 The book's Appendix E, "The AI work in numbers", counts the work from this
 record: tokens and sessions by model family, every review run and its
 outcome, the failed approaches, and a day-by-day timeline with 14 milestones.
-Every number is rebuilt by the scripts in `scripts/ai-statistics/`. The
-milestones are listed in `scripts/ai-statistics/milestones.json` and tagged
-in this repository (`m01-project-set-up` … `m14-lean-gates-closed`), so
-`git checkout m05-goal-revised` shows the project as it stood that day.
+Every number is rebuilt by the scripts in
+[`scripts/ai-statistics/`](scripts/ai-statistics/). The milestones are listed
+in [`scripts/ai-statistics/milestones.json`](scripts/ai-statistics/milestones.json)
+and tagged in this repository (`m01-project-set-up` … `m14-lean-gates-closed`),
+so `git checkout m05-goal-revised` shows the project as it stood that day.
 
 ## AI use
 
@@ -85,19 +101,35 @@ Amy, Le Chen's AI research system, developed the mathematics: the models
 working within her drafted the proofs, the LaTeX source and the bookkeeping.
 Le Chen's role was to drive the work: choosing the problem, setting and
 revising the goals, deciding which approaches to pursue or abandon, choosing
-the reviewers and deciding which results to keep. Amy is model-agnostic: a
-research operating system (workflows and standing rules, plus a research
-knowledge base of bibliography, reference library, curated arXiv sources and
-an SPDE wiki) within which any capable language model can work. Here models
-from several families worked within her: Anthropic Claude, OpenAI GPT
-through Codex, DeepSeek and Kimi. Reviews are always recorded with the
-reviewer's model family, because a review counts only when that family
-differs from the author's. Amy is not an author: Le Chen takes full
-responsibility for the content. The paper's AI-use statement gives details.
+the reviewers and deciding which results to keep.
+
+Amy is model-agnostic: a research operating system (workflows and standing
+rules, plus a research knowledge base of bibliography, reference library,
+curated arXiv sources and an SPDE wiki) within which any capable language
+model can work. Here models from several families worked within her:
+Anthropic Claude, OpenAI GPT through Codex, DeepSeek and Kimi. Reviews are
+always recorded with the reviewer's model family, because a review counts
+only when that family differs from the author's.
+
+Amy is not an author: Le Chen takes full responsibility for the content. The
+paper's AI-use statement gives details.
+
+## Documents in this repository
+
+| File | What it holds |
+| --- | --- |
+| [VERIFICATION.md](VERIFICATION.md) | Human verification, result by result, and what Lean covers |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute, and how credit is given |
+| [HOW-THIS-WAS-BUILT.md](HOW-THIS-WAS-BUILT.md) | A guided tour of the development history |
+| [AI-USE-STATEMENT.md](AI-USE-STATEMENT.md) | Statement on the use of AI |
+| [REDACTIONS.md](REDACTIONS.md) | Every class of removal from the published history, with its reason and counts |
+| [VERSIONING.md](VERSIONING.md) | How version numbers are assigned |
+| [CHANGELOG.md](CHANGELOG.md) | What changed in each version |
+| [CITATION.cff](CITATION.cff) | Citation metadata |
 
 ## License and citation
 
-- Text and manuscript: CC BY 4.0 (`LICENSE`). Scripts and Lean code:
-  Apache-2.0 (`LICENSES/Apache-2.0.txt`).
-- Cite the paper and this repository; see `CITATION.cff`. The arXiv
-  identifier and the Zenodo DOI of the release are added after posting.
+- Text and manuscript: CC BY 4.0 ([`LICENSE`](LICENSE)). Scripts and Lean code:
+  Apache-2.0 ([`LICENSES/Apache-2.0.txt`](LICENSES/Apache-2.0.txt)).
+- Cite the paper and this repository; see [`CITATION.cff`](CITATION.cff). The
+  arXiv identifier and the Zenodo DOI of the release are added after posting.
