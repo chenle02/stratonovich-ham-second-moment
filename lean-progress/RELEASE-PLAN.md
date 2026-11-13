@@ -172,3 +172,34 @@ release.
 Book release levels (Le, relayed by #24, 2026-11-13): the book v1.0.0 keeps Lean at L9 (Appendices F and G at verified `6eb79c7`, coverage `34b65d7`; VERIFICATION.md at `34b65d7`); L10 goes into book 1.1.0. Pin for 1.1.0 (unless a later gate supersedes it): verified `b2bf7a9`, coverage `d6a0505`. The L11 wording for hQ will replace the hQ sentence if L11 is included. Paragraph as sent to #24:
 
 The statements added in wave L10, and the changes that wave made to existing entries of the coverage record, were checked against the manuscript in eight independent correspondence reviews, done by AI models from a different family than the one that wrote the formal statements, under the conventions the author fixed in wave L9. The reviews found documentation corrections only, and no error in a Lean proof. The corrections were made, a confirmation review checked them, and a final re-confirmation passed with high confidence. The author accepted wave L10 on 2026-11-13, recording one point with it: in the step that assembles Proposition P:interval-coefficients from Lemma L:fixed-split, the formal version assumes a bound on the pairings of the cut-off coefficients that the manuscript does not state as a hypothesis (in the manuscript it follows from Lemma L:finite-word-cutoff); the author accepted this added hypothesis for now. The record states what remains open: Theorem T:white-moment-bounds is formalized for the variational value S_2^pos rather than for C_2, with the white spatial energy supplied as an input; and Lemma L:fixed-split is formalized with its analytic inputs supplied and the cut-off evolution not constructed. Lemma L:higher-riesz is formalized in full for dimensions two and three, and Lemma L:alpha-one-convolution from the homogeneity hypothesis alone. These reviews are not a human verification, and they do not check the analytic inputs that stay outside Lean.
+
+## RELEASED: v0.9.0 public (2026-11-13)
+
+- Public repository `chenle02/stratonovich-ham-second-moment-lean` (fresh, one
+  root commit; local checkout `<PRIVATE-PROJECT>`,
+  <HUB> clone at the same path). Root `ed66b5b` (scrubbed release tree of
+  dev `34b65d7`, verified `6eb79c7`; all 1166 build-input files identical),
+  receipts commit `6cc04c1` (lower tier and comparator bound to the root),
+  annotated tag `v0.9.0` on `6cc04c1` (noreply tagger), DOI commit `0966ef6`
+  (docs only; receipts still bind).
+- Gates passed before the flip: comment-only proof (all .lean byte-identical),
+  `lean-pkg public-safety --strict --history` 0/0 (rerun after tagging and
+  after the DOI commit), gitleaks clean, independent release audit by Codex
+  GPT-6.1-Sol (round 3: PASS_WITH_NOTES, high, accepted), consent recorded in
+  the registry (Le's instruction).
+- Flip by `gh` (Le's choice, 2026-11-13: "Flip now via GitHub"), not by
+  `lean-pkg publish`, whose checklist refuses two bookkeeping items: 1408
+  compared helper theorems not credited to a coverage row (283 of them
+  `reusable`), and the coverage page needs a posted manuscript pin or
+  `--allow-private-manuscript`. The release notes state the gap. Registry:
+  record moved to the public checkout and gated at `ed66b5b` (status
+  verified-private; `doi-minted` refused until `publish` marks it public).
+  To fix in v0.10.0.
+- Title: kept the a284420 title (Le, 2026-11-13).
+- Zenodo: Le switched the repository on; GitHub release v0.9.0
+  (https://github.com/chenle02/stratonovich-ham-second-moment-lean/releases/tag/v0.9.0)
+  minted version DOI 10.5281/zenodo.24199105 and concept DOI
+  10.5281/zenodo.24199104 (record isSupplementTo .../tree/v0.9.0, creator
+  Chen, Le, version 0.9.0).
+- The private development repository is `chenle02/stratonovich-ham-second-moment-lean-dev`
+  (all history, milestone tags L0-L10, waves L11-L14 in progress).
