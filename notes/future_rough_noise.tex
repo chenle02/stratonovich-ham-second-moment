@@ -1,0 +1,69 @@
+\subsection{Rough noise beyond the present covariance class}
+\label{S:future-rough-noise-extension}
+
+We ask whether we can construct the Stratonovich wave equation with initial
+data $(1,0)$, and determine its moment growth, beyond
+Hypothesis~\ref{H:homog}.
+We use $d = 1$ to illustrate these questions and consider Gaussian noises with
+product spectral measure $\mu_0\otimes\mu$, where
+\[
+  \mu_0(\ud\tau) = c_0|\tau|^{\alpha_0-1}\ud\tau,
+  \qquad
+  \mu(\ud\xi) = c_1|\xi|^{\alpha-1}\ud\xi,
+  \qquad c_0, c_1 > 0,
+\]
+with $\alpha_0, \alpha > 0$ and $\alpha_0 + \alpha < 2$. The corresponding Hurst
+parameters are $H_0 = 1 - \alpha_0/2$ and $H = 1 - \alpha/2$. Thus, the
+proposed condition is $H_0 + H > 1$. We propose this region for investigation,
+without asserting a solvability criterion. The
+physical covariance in the rough regions is understood as a distribution and
+need not be a nonnegative Radon measure.
+
+After matching the covariance normalization, the current theorem covers
+$0 < \alpha_0 < 1$, $0 < \alpha < 1$, and the spatial white noise segment
+$\alpha = 1$, $0 < \alpha_0 < 1$.
+Figure~\ref{Fig:rough-noise-region} separates this range from the two proposed
+regions: rough space with $\alpha > 1$, and rough time with $\alpha_0 > 1$. The
+temporal white noise segment $\alpha_0 = 1$, $0 < \alpha < 1$ is outside the
+current theorem. Its integration convention and its relation to the present
+variational formula require separate treatment. On either white noise line
+we mean a Dirac covariance with
+its specified normalization, not the literal function $|r|^{-1}$. The point
+$(\alpha,\alpha_0) = (1,1)$ lies on the excluded boundary $\alpha_0 + \alpha =
+2$; this exclusion is not a nonexistence statement.
+
+\input{notes/figures/rough-noise-regions-figure}
+
+Rough spatial covariance is already used in related equations. Balan, Chen and
+Ma~\cite{balan.chen.ea:22:parabolic}*{Theorem~1.1} construct the Skorohod
+solution of the parabolic Anderson model for their class of initial data,
+with $H_0 \in (1/2, 1)$, $0 < H < 1/2$ and
+$H_0 + H > 3/4$. In the notation above, this gives $0 < \alpha_0 < 1$, $1 <
+\alpha < 2$ and $\alpha_0 + \alpha < 5/2$. Their frequency estimates and bounds
+for ratios of Gamma functions suggest methods to investigate. Their estimates
+for the heat kernel and orthogonal chaos expansion do not directly treat the
+oscillatory wave kernel or the self-pairings in an ordinary Stratonovich
+expansion. Related results for wave equations with rough spatial noise are
+given by Song, Song and Xu~\cite{song.song.ea:20:fractional}*{Theorem~3.2} and
+Liu, Hu and Wang~\cite{liu.hu.ea:22:nonlinear}; their parameter ranges and
+definitions of the stochastic integral must also be retained.
+
+The present proof uses nonnegative physical covariance in its pairing bounds
+and comparisons of masked moments. It also uses Young integration to construct
+the wave evolution. These arguments require further work for the proposed
+spectral model. Their limitations do not by themselves imply that the model is
+ill posed. At each regularization, noise enters the velocity equation, while
+displacement is its time integral. This structure may permit a different
+construction. Even after a construction, the sharp moment asymptotics would
+remain a separate question. The rough temporal range requires particular
+care. The formal continuation of the expression in~\eqref{E:kappa} gives
+\[
+  \frac{4-\alpha-\alpha_0}{3-\alpha}
+  = 1+\frac{1-\alpha_0}{3-\alpha}.
+\]
+It equals one at $\alpha_0 = 1$ and falls below one when $\alpha_0 > 1$.
+For $\alpha_0 \ge 1$, the factor $\delta^{(1-\alpha_0)/2}$ used in the
+current block error estimate no longer tends to zero. This factor still
+vanishes in the proposed rough spatial range with $\alpha_0 < 1$. We leave
+both the appropriate moment scale and its limiting constant open in these
+extensions.

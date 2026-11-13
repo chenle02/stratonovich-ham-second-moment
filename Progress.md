@@ -17,7 +17,7 @@ force Chen's predicted constant or create a Lean companion without approval.
 ## Status
 
 Research INCOMPLETE — preprint-readiness closure is active at Le's request
-(2026-11-12). The 388-page book includes Chapter 12 and the L9 verification
+(2026-11-12). The 391-page book includes Chapter 12, the approved rough-noise future-work discussion and the L9 verification
 appendices. Whole-report HIGH scientific review, final cold acceptance and
 release closure remain open. The historical Kimi hold was lifted; prior
 MEDIUM and malformed reports remain unaccepted in their recorded scopes.
@@ -19888,3 +19888,26 @@ Appendix F" (#3 assigned that hunk to this commit). Both link to
 https://doi.org/10.5281/zenodo.24199105. On top of release commit B f0971944:
 388 pages, 0/0/0, guides unchanged; release filter byte-identical. Le approved the
 pages (via #16); #16 re-cuts B next.
+
+## 2026-11-13: approved rough-noise future-work figure integrated locally
+
+Le approved including the rough-noise discussion and figure in this release.
+They are appended after the existing future-work subsections; the opening
+hypothesis/exponent convention now expressly excepts only this new subsection.
+No theorem, proof or conjecture was added or changed. Expanded old book
+statements and all 249 proof blocks are byte-exact; reader changes only its
+99-label portable map. New subsection 1.9.6 and Figure 1.6 have stable new labels,
+a short Illustrations caption and one curated index entry.
+
+Local builds/formatter pass: 0 errors/undefined/overfull/duplicate destinations.
+Book 388 → 391, reader 28 → 28, combined 419 → 421. The book has one extra Illustrations
+page plus two main-text pages; combined front matter does not grow. All old
+label numbers stay fixed, 851 printed-page references shift +2, and two new
+bibliography entries renumber all 45 old book/combined citations. The original
+formal statements/proofs and hypotheses of old conjectures are unchanged.
+Evidence: private/audit/2026-11-13-rough-noise-integration/.
+
+This is a locally adopted future-work discussion, not new scientific
+acceptance. No provider call or push. Root sends the candidate SHA to Agent 16
+for the full book-only arXiv/release recut, guide/G-pin update, and coordination
+with Agent 22 (Lean) and Agent 29 (videos). The reader remains a GitHub artifact.

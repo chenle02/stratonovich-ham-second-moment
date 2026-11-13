@@ -1,0 +1,91 @@
+% Palette matches the book's hamblue/hamgold without changing shared styles.
+\begingroup%
+\definecolor{rnBlue}{RGB}{36,75,105}%
+\definecolor{rnGold}{RGB}{156,101,20}%
+\definecolor{rnGray}{RGB}{105,110,115}%
+\begin{tikzpicture}[
+  x=3.8cm,y=3.8cm,
+  font=\small,
+  region/.style={align=center,fill=white,fill opacity=.94,
+  text opacity=1,inner sep=2pt,rounded corners=1pt},
+  legend/.style={anchor=west,align=left,text width=4.4cm},
+  axis/.style={-{Latex[length=2.1mm]},line width=.7pt},
+  threshold/.style={draw=rnGray!45,densely dotted,line width=.8pt}
+  ]
+  % Three disjoint interiors within the proposed open triangle.
+  \fill[rnBlue!16] (0,0) rectangle (1,1);
+  \fill[rnGold!7] (1,0)--(2,0)--(1,1)--cycle;
+  \fill[pattern=north east lines,pattern color=rnGold!38]
+  (1,0)--(2,0)--(1,1)--cycle;
+  \fill[rnGold!7] (0,1)--(1,1)--(0,2)--cycle;
+  \fill[pattern=north west lines,pattern color=rnGold!38]
+  (0,1)--(1,1)--(0,2)--cycle;
+
+  % White-noise thresholds continue across the plot; exterior is subdued.
+  \draw[threshold] (1,1)--(1,2.2);
+  \draw[threshold] (1,1)--(2.2,1);
+  \draw[rnBlue,line width=1.7pt] (1,0)--(1,1);
+  \draw[rnGold,line width=1.35pt,dash pattern=on 5pt off 3pt]
+  (0,1)--(1,1);
+  \draw[rnGray,line width=1pt,dash pattern=on 4pt off 3pt]
+  (0,2)--(2,0)
+  node[pos=.25,above=6pt,sloped,text=rnGray]
+  {$\alpha + \alpha_0 = 2$};
+
+  \draw[axis] (0,0)--(2.2,0) node[right=5pt] {$\alpha$};
+  \draw[axis] (0,0)--(0,2.2) node[above=5pt] {$\alpha_0$};
+  \node[below left=3pt] at (0,0) {$0$};
+  \foreach \v in {1,2} {
+  \draw (\v,0)--++(0,-.025) node[below=4pt] {$\v$};
+  \draw (0,\v)--++(-.025,0) node[left=4pt] {$\v$};
+  }
+
+  \node[region,text=rnBlue,text width=2.75cm] at (.49,.46)
+  {\textbf{Current theorem}\\regular region\\
+  $0 < \alpha < 1$, $0 < \alpha_0 < 1$};
+  \node[region,text=rnGold,text width=2.4cm] at (1.35,.17)
+  {\mbox{Rough space}\\\mbox{open question}};
+  \node[region,text=rnGold,text width=2.4cm] at (.35,1.16)
+  {\mbox{Rough time}\\\mbox{open question}};
+  \node[text=rnGray,align=center,text width=3.0cm] at (1.67,1.79)
+  {Rough in both\\time and space\\outside the proposed region};
+  \node[text=rnGray,anchor=west,align=left,text width=3.0cm]
+  at (1.13,1.20) {Both white $(1,1)$\\excluded};
+  \draw[rnGray,line width=.6pt] (1.02,1.02)--(1.10,1.12);
+
+  % Open markers: neither axes nor the diagonal belong to the range.
+  \foreach \p in {(0,0),(0,1),(1,0),(0,2),(2,0)} {
+  \filldraw[fill=white,draw=rnGray,line width=.7pt] \p circle[radius=2.2pt];
+  }
+  \filldraw[fill=white,draw=rnGray,line width=1.2pt]
+  (1,1) circle[radius=3.4pt];
+
+  % Legend uses fill, hatching and line style as well as color.
+  \node[legend,font=\normalsize\bfseries,text=rnBlue] at (2.39,2.02)
+  {Current theorem};
+  \filldraw[fill=rnBlue!16,draw=rnBlue!50]
+  (2.39,1.745) rectangle (2.57,1.855);
+  \node[legend] at (2.66,1.80) {Regular region};
+  \draw[rnBlue,line width=1.7pt] (2.39,1.52)--(2.57,1.52);
+  \node[legend] at (2.66,1.52)
+  {White noise in space\\$\alpha = 1$, $0 < \alpha_0 < 1$};
+
+  \node[legend,font=\normalsize\bfseries,text=rnGold] at (2.39,1.20)
+  {Extension questions};
+  \filldraw[fill=rnGold!7,draw=rnGold!60]
+  (2.39,.865) rectangle (2.57,.975);
+  \fill[pattern=north east lines,pattern color=rnGold!55]
+  (2.39,.865) rectangle (2.57,.975);
+  \node[legend] at (2.66,.92) {Rough space: $\alpha > 1$\\rough time: $\alpha_0 > 1$};
+  \draw[rnGold,line width=1.35pt,dash pattern=on 5pt off 3pt]
+  (2.39,.58)--(2.57,.58);
+  \node[legend] at (2.66,.58)
+  {White noise in time\\Endpoint question};
+
+  \draw[rnGray,line width=1pt,dash pattern=on 4pt off 3pt]
+  (2.39,.29)--(2.57,.29);
+  \node[legend] at (2.66,.29) {Excluded diagonal};
+  \draw[threshold] (2.39,.07)--(2.57,.07);
+  \node[legend] at (2.66,.07) {White noise lines\\(continued)};
+\end{tikzpicture}%
+\endgroup%
