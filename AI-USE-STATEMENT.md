@@ -31,14 +31,13 @@ was written with her.
   requires high confidence, so this review is **not accepted**, and no grade
   is carried over to the current edition.
 - **Lean.** A companion Lean package checks parts of the work. Its coverage
-  file at commit `d9ded8f` (documentation changes only after the verified
-  commit `aff7409`; to be re-pinned to the companion's release tag) records:
-  - thirty-nine numbered results, three displayed equations and one remark
-    formalized under the manuscript's own hypotheses (fifteen of the results
+  file at commit `34b65d7` (documentation changes only after the verified
+  commit `6eb79c7`; to be re-pinned to the companion's release tag) records:
+  - forty-three numbered results, three displayed equations and one remark
+    formalized under the manuscript's own hypotheses (eighteen of the results
     with a narrower conclusion);
-  - five further results have every conclusion proved, with named analytic
-    inputs supplied as hypotheses;
-  - for twenty more, Lean checks steps or parts of the proof.
+  - for thirty more, Lean checks steps or parts of the proof, with named
+    analytic inputs supplied as hypotheses.
 
   All of it is kernel-checked, using only Lean's standard axioms. Every
   module of the Lean library was also checked a second time by Lean's

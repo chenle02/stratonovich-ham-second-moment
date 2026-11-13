@@ -397,16 +397,14 @@ whole paper is therefore **not accepted**. The second whole review, the
 remaining visual checks, the final calibrations and the final cold read are
 open.
 
-**Formally checked:** the Lean companion's coverage at its commit `d9ded8f`
-(documentation changes only after `aff7409`, where wave L8 was verified; the
+**Formally checked:** the Lean companion's coverage at its commit `34b65d7`
+(documentation changes only after `6eb79c7`, where wave L9 was verified; the
 PI closed its correspondence gate on November 12) records the
 following, result by result in `VERIFICATION.md`:
-- thirty-nine numbered results, three displayed equations and one remark
-  formalized under the manuscript's own hypotheses (fifteen of the results
+- forty-three numbered results, three displayed equations and one remark
+  formalized under the manuscript's own hypotheses (eighteen of the results
   with a narrower conclusion);
-- five results with every conclusion proved, with named analytic inputs
-  supplied;
-- steps or parts of twenty more.
+- steps or parts of thirty more, with named analytic inputs supplied.
 
 Three of the four main theorems and the analytic parts of the argument are
 not formally verified; for the fourth, `T:intrinsic-occupation-ceiling`, Lean
