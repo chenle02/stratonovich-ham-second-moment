@@ -19,16 +19,16 @@ defined constant, given by a fully specified variational formula. The work
 was done with AI systems under the direction of Le Chen (the PI), who set the
 goals, made the decisions and changed direction when needed.
 
-**Size of the record at manuscript revision `cc2a43d`:**
-- **Technical notes:** 386 pages, with 12 chapters and 7 appendices (A–G).
-  Chapter 12, "Obstructions and failed approaches", states 33 numbered no-go
+**Size of the record at manuscript revision <!--s:rev.tex-->`cc2a43d`<!--/s-->:**
+- **Technical notes:** <!--s:pages.book-->386<!--/s--> pages, with <!--s:chapters-->12<!--/s--> chapters and <!--s:appendices.count-->7<!--/s--> appendices (<!--s:appendices.letters-->A–G<!--/s-->).
+  Chapter 12, "Obstructions and failed approaches", states <!--s:nogo-->33<!--/s--> numbered no-go
   results with proofs.
-- **Reading edition:** 28 pages.
-- **Results:** 220 numbered results (8 theorems, 93 propositions, 106
-  lemmas, 13 corollaries) and the 33 no-go results of Chapter 12, each
+- **Reading edition:** <!--s:pages.reader-->28<!--/s--> pages.
+- **Results:** <!--s:results-->220<!--/s--> numbered results (<!--s:theorems-->8<!--/s--> theorems, <!--s:propositions-->93<!--/s--> propositions, <!--s:lemmas-->106<!--/s-->
+  lemmas, <!--s:corollaries-->13<!--/s--> corollaries) and the <!--s:nogo-->33<!--/s--> no-go results of Chapter 12, each
   listed in `VERIFICATION.md`.
-- **Proofs:** 249 proofs were written in this project: 216 for numbered
-  results and 33 for the no-go results of Chapter 12. The other four numbered
+- **Proofs:** <!--s:proofs-->249<!--/s--> proofs were written in this project: <!--s:proofs.results-->216<!--/s--> for numbered
+  results and <!--s:nogo-->33<!--/s--> for the no-go results of Chapter 12. The other four numbered
   results either restate the source paper (`T:first`, `T:crude`) or are
   the introduction's statements of theorems proved later
   (`T:intro-upper`, `T:intro-second-moment`).
@@ -397,14 +397,14 @@ whole paper is therefore **not accepted**. The second whole review, the
 remaining visual checks, the final calibrations and the final cold read are
 open.
 
-**Formally checked:** the Lean companion's coverage at its commit `34b65d7`
-(documentation changes only after `6eb79c7`, where wave L9 was verified; the
+**Formally checked:** the Lean companion's coverage at its commit <!--s:lean.coverage-->`34b65d7`<!--/s-->
+(documentation changes only after <!--s:lean.verified-->`6eb79c7`<!--/s-->, where wave <!--s:lean.wave-->L9<!--/s--> was verified; the
 PI closed its correspondence gate on November 12) records the
 following, result by result in `VERIFICATION.md`:
-- forty-three numbered results, three displayed equations and one remark
-  formalized under the manuscript's own hypotheses (eighteen of the results
+- <!--s:lean.full_words-->forty-three<!--/s--> numbered results, three displayed equations and one remark
+  formalized under the manuscript's own hypotheses (<!--s:lean.narrow_words-->eighteen<!--/s--> of the results
   with a narrower conclusion);
-- steps or parts of thirty more, with named analytic inputs supplied.
+- steps or parts of <!--s:lean.inputs_words-->thirty<!--/s--> more, with named analytic inputs supplied.
 
 Three of the four main theorems and the analytic parts of the argument are
 not formally verified; for the fourth, `T:intrinsic-occupation-ceiling`, Lean

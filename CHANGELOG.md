@@ -5,7 +5,7 @@ MINOR changes the mathematics but not the statement of any main theorem, and
 PATCH changes no mathematics. Results are named by label; labels do not change
 between versions, numbers may.
 
-## 1.0.0 — 2026-12-01
+## 1.0.0 — <!--s:release.date-->2026-12-01<!--/s-->
 
 First public release: the book, its reading edition and the complete
 development history.
@@ -14,13 +14,13 @@ development history.
   `T:intrinsic-second-moment` (intrinsic original second-moment constant),
   `T:intrinsic-occupation-ceiling` (the computed occupation ceiling) and
   `T:white-moment-bounds` (explicit white moment bounds).
-- **Size:** technical notes 386 pages, with 12 chapters and appendices A–G;
-  reading edition 28 pages; 220 numbered results and 33 numbered no-go
+- **Size:** technical notes <!--s:pages.book-->386<!--/s--> pages, with <!--s:chapters-->12<!--/s--> chapters and appendices <!--s:appendices.letters-->A–G<!--/s-->;
+  reading edition <!--s:pages.reader-->28<!--/s--> pages; <!--s:results-->220<!--/s--> numbered results and <!--s:nogo-->33<!--/s--> numbered no-go
   results (Chapter 12), each listed with its check status in
-  [VERIFICATION.md](VERIFICATION.md); 249 proofs written in this project.
-- **Lean:** the companion's coverage at its commit `34b65d7` (verified commit
-  `6eb79c7`) records 43 results formalized under the manuscript's own
-  hypotheses (18 with a narrower conclusion) and steps or parts of 30 more,
+  [VERIFICATION.md](VERIFICATION.md); <!--s:proofs-->249<!--/s--> proofs written in this project.
+- **Lean:** the companion's coverage at its commit <!--s:lean.coverage-->`34b65d7`<!--/s--> (verified commit
+  <!--s:lean.verified-->`6eb79c7`<!--/s-->) records <!--s:lean.full-->43<!--/s--> results formalized under the manuscript's own
+  hypotheses (<!--s:lean.narrow-->18<!--/s--> with a narrower conclusion) and steps or parts of <!--s:lean.inputs-->30<!--/s--> more,
   with named analytic inputs supplied. Three of
   the four main theorems are outside Lean; for `T:intrinsic-occupation-ceiling`
   Lean proves a narrower conclusion.

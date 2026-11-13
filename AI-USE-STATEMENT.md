@@ -31,18 +31,18 @@ was written with her.
   requires high confidence, so this review is **not accepted**, and no grade
   is carried over to the current edition.
 - **Lean.** A companion Lean package checks parts of the work. Its coverage
-  file at commit `34b65d7` (documentation changes only after the verified
-  commit `6eb79c7`; to be re-pinned to the companion's release tag) records:
-  - forty-three numbered results, three displayed equations and one remark
-    formalized under the manuscript's own hypotheses (eighteen of the results
+  file at commit <!--s:lean.coverage-->`34b65d7`<!--/s--> (documentation changes only after the verified
+  commit <!--s:lean.verified-->`6eb79c7`<!--/s-->; to be re-pinned to the companion's release tag) records:
+  - <!--s:lean.full_words-->forty-three<!--/s--> numbered results, three displayed equations and one remark
+    formalized under the manuscript's own hypotheses (<!--s:lean.narrow_words-->eighteen<!--/s--> of the results
     with a narrower conclusion);
-  - for thirty more, Lean checks steps or parts of the proof, with named
+  - for <!--s:lean.inputs_words-->thirty<!--/s--> more, Lean checks steps or parts of the proof, with named
     analytic inputs supplied as hypotheses.
 
   All of it is kernel-checked, using only Lean's standard axioms. Every
   module of the Lean library was also checked a second time by Lean's
   separate kernel checker. Analytic and probabilistic inputs that enter as
-  hypotheses are **not** verified by Lean. Most of the main theorems are outside Lean: three of the four. For
+  hypotheses are **not** verified by Lean. Most of the main theorems are outside Lean: <!--s:lean.outside_main_words-->three<!--/s--> of the <!--s:main.count_words-->four<!--/s-->. For
   the fourth, `T:intrinsic-occupation-ceiling`, Lean proves a narrower
   conclusion under the manuscript's own hypotheses. The correspondence
   between the Lean statements and the manuscript's statements was reviewed

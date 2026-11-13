@@ -36,8 +36,8 @@ intrinsic constant given by an explicit variational formula.
 
 | Read | Where |
 | --- | --- |
-| Reading edition (28 pages) | [`notes/notes_stratonovich_ham_second_moment_reader.pdf`](notes/notes_stratonovich_ham_second_moment_reader.pdf) |
-| Technical notes (386 pages) | [`notes/notes_stratonovich_ham_second_moment.pdf`](notes/notes_stratonovich_ham_second_moment.pdf) |
+| Reading edition (<!--s:pages.reader-->28<!--/s--> pages) | [`notes/notes_stratonovich_ham_second_moment_reader.pdf`](notes/notes_stratonovich_ham_second_moment_reader.pdf) |
+| Technical notes (<!--s:pages.book-->386<!--/s--> pages) | [`notes/notes_stratonovich_ham_second_moment.pdf`](notes/notes_stratonovich_ham_second_moment.pdf) |
 | arXiv | The identifier is added here after posting. |
 
 ## What is established, and what is not
@@ -53,7 +53,7 @@ Please read this before citing anything.
 - A Lean companion formalizes some results in full under the manuscript's
   own hypotheses. For others it proves every conclusion, or checks steps,
   with the analytic inputs entering as explicit hypotheses. Most of the main
-  theorems are outside Lean: three of the four; for the fourth, Lean proves a
+  theorems are outside Lean: <!--s:lean.outside_main_words-->three<!--/s--> of the <!--s:main.count_words-->four<!--/s-->; for the fourth, Lean proves a
   narrower conclusion. [VERIFICATION.md](VERIFICATION.md) says, result by
   result, what Lean covers. See the companion at
   https://github.com/chenle02/stratonovich-ham-second-moment-lean and its
@@ -92,7 +92,7 @@ by a model family different from the one that drafted it. Episodes 1-10 follow
 the draft at version `38d67ec` and episode 11 (Chapter 12) the draft at
 `0f553e08`, so theorem numbers in them may differ from later versions. The
 videos explain the argument; they are not part of it or of its review. They
-were built in a separate repository, `<PRIVATE-PROJECT>`.
+were built in a separate repository, which is not public.
 
 ## How this was built
 
