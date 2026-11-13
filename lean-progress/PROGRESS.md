@@ -1005,6 +1005,21 @@ Last updated: 2026-11-13: Le closed the L10 gate at companion `b2bf7a9` (tag `L1
   follows. Scope: AI statement-to-manuscript correspondence, **not human
   verification**; supplied inputs stay outside Lean; later changes need a
   successor review.
+- **ALL FROZEN ITEMS INTEGRATED (2026-11-13).** Lean-only stacked branch
+  `wave-l14/stack` `b2d0a8b` = L11 int `6277695` + L12 (`cfc0285`: TW, C1,
+  SRC, F1) + L13 (`ef183d1`: DM0, DM0b, D1-D4, D6, C4-C6, K5a, K5b) + L14
+  (`aa17344`: K1a, K1b, 3D, 3Dpd, O). Office: full build 9190 jobs, 0
+  warnings; 4822 `#print axioms` lines, standard axioms only; 509/509
+  refutation and Audit files compile. Duplicates reported for HYG (not
+  refactored): `FockColumnBound.mulOp` (L11) vs `ResolventForm.mulOp` (L13)
+  and the two `mulR`; `integral_norm_sq_eq` in TerminalWickComplete and
+  H1Mathlib; `heatDens_eq` in WhiteCollapse and SourceHeatGram;
+  `measurePreserving_incr` (RieszFourDiagrams, WhiteFour);
+  `measurable_covEps_riesz` (D1Spatial, RieszFourDiagrams);
+  `lintegral_cube_timeWeight` (D1Upper, TwoSimplexTime); variant pairs of
+  `lintegral_pi_prod`, `sum_incr_le`, `card_closers`, `spatialPos_white_le`,
+  `timeWeight_smul`. Docs, reviews, receipts and gates of L12-L14 follow
+  (L12 docs running on `wave-l12/int`).
 - **LEAN FREEZE AFTER THIS WAVE; PUBLICATION NEXT (Le, 2026-11-13).** Le,
   verbatim: "After this wave of lean verification, we will freeze and start the
   publication proceedure and leave the rest of verification for the future
