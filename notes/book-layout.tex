@@ -35,6 +35,8 @@ citecolor=hamteal, urlcolor=hamblue}
 \addcontentsline{toc}{chapter}{Abstract}
 }{}
 \makeatletter
+% Leave room after long Contents numbers such as 12.2.10.
+\renewcommand*{\l@subsection}{\@dottedtocline{2}{3.8em}{4em}}
 \renewcommand{\maketitle}{%
 \begin{titlepage}
   \thispdfpagelabel{Cover}
