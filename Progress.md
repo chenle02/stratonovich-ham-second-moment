@@ -20066,3 +20066,13 @@ the exact inherited cover correspondence, coverage is 8/392 pages. Remaining
 visual regions and mathematical/cold-review duties remain open. Raw reports,
 source transcripts and native images are retained under sources/review-packets/.
 No publication push was made during the freeze.
+
+
+## 2026-11-13: book package refreshed at db546d2e
+
+Fresh exact-revision and isolated book-only builds pass at 392 pages. The
+107-file archive is byte-identical to cb05a5a8…ed34 from 3f14a7e5, so its
+pinned TL2025 receipt is retained by explicit equality, not reissued. Evidence:
+private/audit/2026-11-13-book-arxiv-db546d2e/. Agent 16 received path/hash for
+the current filtered-history check. No source/scientific acceptance or push
+is implied. The final release-day epoch will be supplied by Agent 16.
