@@ -25,7 +25,7 @@ Last updated: 2026-11-13: Le closed the L11 gate at companion `b780f10` (tag `L1
 | Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
 | Compute | Easley ROUTING (Le, 2026-11-13): "Now, Easley needs to be reached via <MACHINE>" — every Easley command and transfer goes through Office (`ssh <MACHINE> "ssh Easley bash -s"`, scratch helper `E.sh`); no direct `ssh Easley` from <MACHINE>. Office: L13 integration (K5b); <MACHINE>: L12 and L14 integration; <MACHINE>: release candidate v0.9.0, L11 repairs; Easley (via <MACHINE>): L10 array and Slurm receipt |
-| Decisions open for Le | the L12 gate (after its receipts); the six L13/L14 decisions (M4-M6, two narrower rows, MaskedAuxiliaryReal heading, L:plane-endpoints, FirstMomentSeries and SignedMultiplierForm); release of gaussian-chaos-lean (opens D1 and K9); public release (HOLD); lean-pkg 0.30.0 upgrade when released |
+| Decisions open for Le | the L12 gate (after its receipts); release of gaussian-chaos-lean (opens D1 and K9); public release (HOLD); lean-pkg 0.30.0 upgrade when released |
 | Next actions | FREEZE PLAN (Le, 2026-11-13): no new items. Finish running items (L10 gate prep, L11 reviews, K5b, D4 follow-up, L14-O). L10 gate -> L11 repairs/confirmation/receipts/gate -> L12-L14 integration (L13 part 2: D4, D6, K5a, K5b; L14: O) -> docs, reviews, receipts, Easley, gates -> HYG -> R0 re-anchor -> release candidate (publication procedure; public flip/DOI/submission only on Le's go). Future/community list: NG1-NG4, D5, HT, K6, L15-UM, B3/B4/B9 |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
@@ -1034,6 +1034,28 @@ Last updated: 2026-11-13: Le closed the L11 gate at companion `b780f10` (tag `L1
   follows. Scope: AI statement-to-manuscript correspondence, **not human
   verification**; supplied inputs stay outside Lean; later changes need a
   successor review.
+- **L13/L14 DOCS DECISIONS (Le, 2026-11-13).** Le, verbatim: "I accept M4,
+  M5 and M6 as model-choice register entries, L:occupation-rayleigh-selection
+  and L:occupation-raw-square as narrower, MaskedAuxiliaryReal headed whole
+  with the Fréchet reading, L:plane-endpoints as whole, and FirstMomentSeries
+  and SignedMultiplierForm as true named inputs; record it in
+  lean-progress/PROGRESS.md and start the L13/L14 correspondence reviews."
+  On `wave-l14/stack` `f74d825`: (1) register entries M4 (the two-chain
+  diagram model `DiagramModel`: statements about diagram integrals whole,
+  about u and X_n narrower via `MixedMoment`), M5 (the `Lp` completions
+  `HK`/`Ht`/`Hsp`/`HI`/`HGamma` of the occupation layer, no tensor
+  identification and no `Hsp`/`HGamma` isometry), M6 (`H^1` as the
+  weak-gradient graph `ClassOH1.H1R`); (2) `L:occupation-rayleigh-selection`
+  narrower (rate in Rayleigh form, cost in integral form) and
+  `L:occupation-raw-square` narrower (stated for joint representatives;
+  whole would need a composition with ClassOBridge, not done under the
+  freeze); (3) MaskedAuxiliaryReal headed "whole result" (whole rests on two
+  wrappers together) and `L:variational-global-mean` read with iterated
+  Fréchet derivatives; (4) `L:plane-endpoints` whole (V_low = c/pi for the
+  exhibited spectral measure); (5) `FirstMomentSeries` (TeX 620, 4949-4950)
+  and `SignedMultiplierForm` (E:signed-multiplier-form) are true named
+  inputs, listed with the other supplied inputs. L13/L14 correspondence
+  reviews started.
 - **M3 ACCEPTED (Le, 2026-11-13).** Le, verbatim: "I accept M3 as a
   model-choice register entry (p_eps * Gamma modelled by its density
   gamma_eps), so L:damped-homogeneous-norms counts as whole; record it in
