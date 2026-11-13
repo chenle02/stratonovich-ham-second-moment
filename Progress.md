@@ -19876,3 +19876,15 @@ pages remain outside accepted visual coverage. Agent 16 has the new exact
 package/source pin for its fresh release-equality run.
 Evidence: private/audit/2026-11-13-f2-package-custody/ and
 private/audit/2026-11-13-f2-visual-rebind/.
+
+## 2026-11-13: companion DOI in Appendix F and the preface
+
+The Lean companion v0.9.0 is public (#22; repository, tag, release and
+provenance/DEVELOPMENT.md checked on GitHub; version DOI 10.5281/zenodo.24199105
+resolves to the Zenodo record). Appendix F gives the DOI on its own line under the
+v0.9.0 link; the preface's "Where to find everything" sentence reads "The Lean
+companion, at release 0.9.0 (DOI 10.5281/zenodo.24199105), is described in
+Appendix F" (#3 assigned that hunk to this commit). Both link to
+https://doi.org/10.5281/zenodo.24199105. On top of release commit B f0971944:
+388 pages, 0/0/0, guides unchanged; release filter byte-identical. Le approved the
+pages (via #16); #16 re-cuts B next.
