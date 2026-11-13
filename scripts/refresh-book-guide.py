@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Refresh book navigation from actual numbered chapters and compiled labels."""
+"""Refresh book navigation from actual numbered chapters and compiled labels:
+notes/BOOK-GUIDE.md, the current page counts in notes/README-reader.md, and
+notes/book-numbering-map.json. Needs the built book (PDF and .aux) and reader PDF."""
 from pathlib import Path
 import json
 import re
@@ -40,6 +42,23 @@ s = s[:a] + '\n'.join(rows) + s[b:]
 s = re.sub(r'The book has \*\*\d+ pages,', f'The book has **{len(book)} pages,', s)
 s = re.sub(r'\*\*\d+ pages\*\*', f'**{len(reader)} pages**', s)
 s = re.sub(r'contains \d+ pages', f'contains {len(book) + len(reader)} pages', s)
+p.write_text(s)
+# The reader's README quotes the current page counts in five places; the
+# historical counts there (earlier editions) are left alone. Each pattern must
+# match exactly once, so a reworded sentence stops the refresh instead of
+# leaving a stale number.
+p = ROOT / 'notes/README-reader.md'
+s = p.read_text()
+for pattern, value in [
+    (r'(\[the )\d+(-page reader\])', len(reader)),
+    (r'(\[the )\d+(-page technical companion\])', len(book)),
+    (r'(The combined record is )\d+( pages)', len(book) + len(reader)),
+    (r'(the current reader has )\d+( pages)', len(reader)),
+    (r'(the reading edition is )\d+( pages)', len(reader)),
+]:
+    s, n = re.subn(pattern, lambda m: f'{m.group(1)}{value}{m.group(2)}', s)
+    if n != 1:
+        raise SystemExit(f'README-reader.md: {pattern!r} matched {n} times (need exactly one)')
 p.write_text(s)
 p = ROOT / 'notes/book-numbering-map.json'
 data = json.loads(p.read_text())
