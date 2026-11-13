@@ -20085,3 +20085,13 @@ checks if sufficient. Root will verify the actual image-read route before
 using it and retain its true scope. Mathematical/source-application reviews
 keep their prescribed independent families. This preference does not itself
 waive a required visual check or alter earlier verdicts.
+
+
+## 2026-11-13: division of publication work (Le)
+
+Le takes the final page-by-page typesetting review after Agent 3 completes the
+mathematical proof and presentation work. Agent 3 stops new automated layout
+batches/calibrations, preserves completed evidence and collects already-running
+B003. Mathematical/source/application and fresh scientific review gates remain
+unchanged. A stable final PDF plus known layout issues will be handed to Le;
+no completed human visual review is claimed yet.
