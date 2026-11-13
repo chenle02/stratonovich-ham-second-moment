@@ -461,3 +461,39 @@ now states the existing upper bound and exact second-moment limit as Theorems
 1.5.1 and 1.5.2, with self-contained definitions and links to their unchanged
 proofs in Theorems 3.3.8 and 11.2.6. Legacy labels remain aliases. This is a
 restatement of written claims, not a new proof or independent acceptance.
+
+## November 10-13: an eleven-episode video introduction
+
+Le asked for a YouTube series introducing the book, about twenty minutes per
+episode, with a synthetic voice, in the style of the earlier lean-pkg videos.
+Amy built it in a separate repository, `<PRIVATE-PROJECT>`; the
+models working within her (Claude for the scripts and Manim scenes) drafted
+eleven scripts and their animations. Episodes 1-10 follow the book at
+`38d67ec`: the model and its history, the two main theorems, the two-chain
+expansion, the time scale, the Gaussian toolkit, the lower and upper bounds,
+the constant, the appendices' other routes, and how the book was written.
+Episode 11, added after Chapter 12 landed, covers the obstructions at
+`0f553e08`.
+
+Every displayed formula is a marked block copied from the environment carrying
+its label and checked against the manuscript at the pin by script; every book
+number shown or spoken was read from a fresh build's `.aux`; the rendered
+narration was checked to be exactly the script. DeepSeek V4 Pro, a different
+family from the scripts' author, gave each script a frozen-packet, read-only
+cold review: every report was PASS_WITH_NOTES at HIGH confidence, with 25
+minor findings for episodes 1-10 (19 accepted, 6 rejected with source
+evidence) and one for episode 11 (accepted). A later audit of the videos
+themselves fixed 14 off-frame or overlapping labels, raised 53 items out of
+the caption band and added clause-by-clause highlights to 15 long static
+holds. The 1080p masters are mastered to -14 LUFS with English captions and a
+CC BY music bed.
+
+The series was uploaded as Private on November 12 and made public on November
+13, Le switching the videos in YouTube Studio:
+<https://www.youtube.com/playlist?list=PLWiXjeUrQ62k>. A signed-out check passed
+for all eleven (playback, captions, 1080p, thumbnail, playlist). The book now
+links the episodes from Figure 1.2 and lists their coverage in the guide to
+the proof (`4bb8eaca`). The videos explain the argument and are not part of
+its review: the script reviews checked fidelity to the manuscript, not the
+mathematics, and no human has reviewed the scripts.
+

@@ -76,6 +76,24 @@ Credit is set out in advance in [CONTRIBUTING.md](CONTRIBUTING.md): every
 merged contribution is acknowledged by name, and substantial contributions
 lead to coauthorship.
 
+## Video introduction
+
+An eleven-episode video introduction to the book is on YouTube:
+<https://www.youtube.com/playlist?list=PLWiXjeUrQ62k>. Each episode runs about
+twenty minutes with a synthetic voice and follows the book chapter by chapter;
+the book's guide to the proof lists what each episode covers, and the badges
+in its Figure 1.2 link to the episodes.
+
+Le Chen made the series with Amy. She drafted the scripts and the Manim
+animations from the book; every displayed formula is copied from the
+statement carrying its label and checked by script, the narration was checked
+to be exactly the script, and each script was reviewed against the manuscript
+by a model family different from the one that drafted it. Episodes 1-10 follow
+the draft at version `38d67ec` and episode 11 (Chapter 12) the draft at
+`0f553e08`, so theorem numbers in them may differ from later versions. The
+videos explain the argument; they are not part of it or of its review. They
+were built in a separate repository, `<PRIVATE-PROJECT>`.
+
 ## How this was built
 
 [HOW-THIS-WAS-BUILT.md](HOW-THIS-WAS-BUILT.md) is a guided tour of the

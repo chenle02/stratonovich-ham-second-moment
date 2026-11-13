@@ -19539,3 +19539,13 @@ need new wording then) was built and dropped. Kept for the next pin:
 make_appendix_f.py now turns book labels in the companion's summary sentence into
 references (the L10 summary names T:full-upper and T:intrinsic-second-moment);
 at the L9 pin the generated data is byte-identical.
+
+## 2026-11-13: video introduction published and linked from the book
+
+Eleven-episode YouTube series (playlist PLWiXjeUrQ62k), made with Amy in
+`<PRIVATE-PROJECT>` from the book at `38d67ec` (episodes 1-10) and
+`0f553e08` (episode 11); public since 2026-11-13, signed-out check PASS 11/11.
+Book: Figure 1.2 badges and the guide's Video introduction table (`4bb8eaca`),
+how-made sentence added; README "Video introduction" and AI-DEV-HISTORY entry.
+Not a review of the mathematics; no gate state changes.
+
