@@ -19708,3 +19708,34 @@ parent-proof, whole-report, visual, cold or submission gates. Receipt hash
 source revision586e88591c607aba78c4e713fd5535884442b58036e2b96ab711de4909073e67.
 Full private custody: private/audit/2026-11-12-preprint-readiness/
 source-fidelity-tiles-v1/custody-release-v1/.
+
+
+## 2026-11-13: release equality and first current visual acceptance
+
+Agent 16's 50826d13 check clears the exact combined source package against a
+strict filtered export of 8608740f: 103 files, zero unequal. The bibliography
+and index were rebuilt in the filtered tree and match. A one-byte figure
+change was rejected. This closes release-redaction equality for that package,
+not an arXiv upload or a later changed source.
+
+The first independent eight-page visual pilot returned MEDIUM; its small
+roadmap badge digits and chart key/date digits were not independently legible.
+The original receipt remains unaccepted and preserved at cab1aa54. A fresh
+review retained all original pages and contexts and added six 300-dpi vector
+crops addressing those exact limitations. It returned PASS_WITH_NOTES/HIGH,
+native accepted, with no required repairs. All 38 required images and 14 texts
+were read; detailed bands and new crops are exact native payloads. Two
+orientation overviews were downsampled, as recorded; the exact bands cover
+all visible page content. No retrospective byte-identity requirement was
+added to the frozen legibility contract.
+
+Root read every page reason. The chart's Oct 26 key date versus Oct 27 plotted
+marker is intentional: its already-public caption distinguishes recorded
+local dates from UTC commit-day positions. No source edit was needed.
+Acceptance covers physical pages 1, 14, 53, 154, 299, 303, 395 and 410 of
+PDF712baa4612628c077678967970b9fa4acb4b4d85080d4425315bfeec545ef74e
+only. The other 411 pages, final visual integration/cold reading and the
+scientific whole-report gate remain outside this acceptance.
+
+Evidence: private/audit/2026-11-13-combined-visual-successor-custody/
+and private/audit/2026-11-13-combined-visual-successor-preparation/.
