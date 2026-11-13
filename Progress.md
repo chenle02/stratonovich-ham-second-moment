@@ -19926,3 +19926,25 @@ Book 392 pages, reader 28, combined 422; all zero build/reference/box gates pass
 Later printed pages shift by one; reader's portable map is refreshed.
 Evidence: private/audit/2026-11-13-first-mean-future-work/. Candidate prepared
 for Agent 16's release sequencing; the old arXiv package is not reused for it.
+
+
+## 2026-11-13: combined package from exact release 988fd4fa
+
+Built in a detached checkout of 988fd4fafd8af4cab0a1f78160a4c05f1dc6bee9,
+including the approved companion DOI and refreshed Appendix E. The standalone
+book matches the committed release PDF in text and 96-dpi RGB. The combined
+PDF has 419 pages; all build/reference/overflow/destination checks pass, with
+903 book labels, 407 index entries and 3275 internal links. Its DOI links are
+on physical pages 7 and 396. No manuscript TeX was changed.
+
+The new 103-file package has SHA256
+dec36eb233c3f7c3127aa36fc1afd067c43d32058479486770c046acb44d7ed6.
+All 101 tracked inputs match the requested release; the two generated
+companions are separately bound. The exact tracked book BBL was copied for
+the combined job, with no live reference-database input. Local isolated and
+pinned TL2025 builds pass. Older packages and shared foreign front-door WIP
+are preserved. Agent 16 will run a fresh equality check on this package and
+the filtered tree of the same source revision. No scientific, visual or
+arXiv-preview acceptance is inferred from compilation.
+
+Evidence: private/audit/2026-11-13-release-988fd4fa-package-custody/.
