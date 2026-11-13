@@ -19649,3 +19649,29 @@ Evidence: private/audit/2026-11-12-preprint-readiness/combined-adoption/.
 This is a packaging checkpoint, not scientific acceptance. Whole-report
 HIGH, fresh cold review, source-image and visual coverage, the final combined
 TeX Live compatibility build and arXiv preview remain open. No upload made.
+
+
+## 2026-11-13: combined source package and TeX Live 2025 compatibility
+
+The 103-file combined arXiv candidate has SHA-256
+35578e2260f96ff16dfaa8d4eaf5b4d7bdcfafc92a7159bf931114aaeb27c648.
+It has no private input or symlink; the manifest records moving the committed
+main source to the package root and adding the pdfoutput directive. Generated
+bibliography and index files are supplied. Isolated local and pinned TeX Live
+2025 builds both produce 419 pages with zero errors, undefined references,
+overfull boxes or duplicate/missing destinations. The 903 book label numbers
+and pages, 407 index entries and 3275 internal links are verified. Newly
+generated index records match byte for byte, so no index repair was needed.
+
+The outputs are not identical: 311 pages differ in raw text extraction,
+principally legacy math-font Unicode mappings, and 60 pages differ in rendered
+pixels. Author visual QA inspected all 60 difference regions and observed no
+missing symbols, clipping, overlap, misplaced rules or changed line wrapping.
+Equation and table spacing differences remain documented. This is author QA,
+not the independent whole-document visual gate. The frozen lab TL2025 image
+is not arXiv's exact dated tree; the actual upload preview remains required.
+
+Evidence: private/audit/2026-11-13-combined-arxiv-package/ and
+private/audit/2026-11-13-combined-arxiv-custody/. Agent 16 has the exact package
+and mapping for the filtered-release equality check. No upload or public flip
+is authorized by this checkpoint, and scientific review gates remain open.
