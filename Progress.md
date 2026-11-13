@@ -20018,3 +20018,19 @@ resolve the bounded envelope/joint-family preparation findings before
 independent model dispatch. Ownership, pending evidence and freeze rules:
 private/publication-closeout/STATUS.md. No new proof or Lean wave is authorized
 by this closeout task; the article push freeze remains in force.
+
+
+## 2026-11-13: envelope-family main review completed below HIGH threshold
+
+Fresh DeepSeek V4 Pro reviewed the four complete targets and specified
+parent/consumer applications at source 3f14a7e5. Transport completed normally
+in 227 seconds, with exact exported input/final-text correspondence, no tools
+and unchanged input hashes. Verdict PASS_WITH_NOTES / medium; twelve checks,
+no fatal/major findings or required repairs. This does not meet HIGH and is
+not accepted as closing the family or the whole report. No confidence-only
+retry is launched. Two reviewer paraphrases are qualified against the actual
+manuscript inequalities/order dependence; no manuscript repair is indicated.
+
+Kimi's independent proof/source-image review remains running. Curated result
+and adjudication: private/publication-closeout/envelope-family/. Raw report,
+events and export are retained under sources/review-packets/ only.
