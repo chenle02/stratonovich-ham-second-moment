@@ -20076,3 +20076,12 @@ pinned TL2025 receipt is retained by explicit equality, not reissued. Evidence:
 private/audit/2026-11-13-book-arxiv-db546d2e/. Agent 16 received path/hash for
 the current filtered-history check. No source/scientific acceptance or push
 is implied. The final release-day epoch will be supplied by Agent 16.
+
+
+## 2026-11-13: faster models for presentation checks (Le)
+
+Le authorized GPT-6.1 Sol or Terra for routine typesetting/layout/navigation
+checks if sufficient. Root will verify the actual image-read route before
+using it and retain its true scope. Mathematical/source-application reviews
+keep their prescribed independent families. This preference does not itself
+waive a required visual check or alter earlier verdicts.
