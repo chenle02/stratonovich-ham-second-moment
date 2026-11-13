@@ -19682,3 +19682,29 @@ tag at 1d7b21cf; its peeled remote target was checked and <HUB> fetched it.
 The single Telegram milestone notice succeeded. The annotation explicitly
 retains the open scientific, visual, source, cold, release-equality and actual
 arXiv-preview gates. Receipt: private/audit/2026-11-13-combined-arxiv-custody/milestone.json.
+
+
+## 2026-11-13: fresh operator/Gaussian source-interface fidelity pass
+
+A fresh Kimi K3/max read of lossless overlapping source crops returned
+PASS/HIGH, native accepted, with no required repairs. The six checks cover
+Crouzeix--Palencia arXiv v1 equation (3)/Theorem 6, Janson Theorem 13.7 and
+Remark 13.8, and the displayed application hypotheses in the phase, interval
+and Fock arguments. All eight mandatory texts were returned completely; all
+28 actual native images match the frozen bytes and decoded pixels. The four
+CP pages reconstruct exactly from 24 overlapping crops; four Janson pages
+remain unchanged. The original downsampled attempts remain unchanged too.
+
+Root read the complete report and retained its report-only exponent typo
+(-1/1 where the source has -1/2) and a two-line endpoint overstatement. The
+partial-mode number-operator bound remains an inequality in general; an
+identity requires the complete active-mode fixed-degree space. No source
+statement or proof needed an edit. The reviewed CP source is the author
+preprint, not an unread published edition.
+
+This closes this exact fresh source-interface assignment only, not complete
+parent-proof, whole-report, visual, cold or submission gates. Receipt hash
+9a8ba57d0c706ade1d2d8b2cc1e232d59a07d68569815480b88a881103395219;
+source revision586e88591c607aba78c4e713fd5535884442b58036e2b96ab711de4909073e67.
+Full private custody: private/audit/2026-11-12-preprint-readiness/
+source-fidelity-tiles-v1/custody-release-v1/.
