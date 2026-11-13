@@ -2,10 +2,10 @@
 
 The long document is now a book-style technical companion. The short reader
 remains an article and the entry point. Both retain their existing filenames.
-The book has **391 pages, 12 chapters and seven appendices**: four proof
+The book has **392 pages, 12 chapters and seven appendices**: four proof
 appendices, Appendix E on the AI work, Appendix F on Lean coverage and
 Appendix G on how far each result has been checked.
-Chapter 12 presents numbered obstructions and failed approaches. The reader has **28 pages**. The full pair therefore contains 419 pages.
+Chapter 12 presents numbered obstructions and failed approaches. The reader has **28 pages**. The full pair therefore contains 420 pages.
 
 The main proof runs continuously through the numbered chapters. The appendices
 retain finite-order calculations, direct bounds with additional hypotheses,
@@ -14,25 +14,25 @@ mathematical record was deleted to make the structure appear shorter.
 
 | Chapter | Topic | Printed pages |
 |---|---|---|
-| 1 | Introduction | 1–28 |
-| 2 | Construction and two-chain estimates | 29–52 |
-| 3 | An independent upper bound | 53–84 |
-| 4 | Covariance estimates and Gaussian approximation | 85–109 |
-| 5 | The original noise and operator paths | 110–128 |
-| 6 | Fixed masks and wave evolution | 129–148 |
-| 7 | Scaling and the point lower bound | 149–165 |
-| 8 | Spatial controls and Gaussian means | 166–182 |
-| 9 | Bounds as the spatial radius grows | 183–197 |
-| 10 | Gaussian estimates for the point upper bound | 198–227 |
-| 11 | The constant and its consequences | 228–246 |
-| 12 | Obstructions and failed approaches | 247–284 |
-| A | Finite-order calculations | 285–291 |
-| B | Direct upper bounds and static interpolation | 292–310 |
-| C | Covariance comparisons in higher dimensions | 311–332 |
-| D | Static comparisons and the clock obstruction | 333–346 |
-| E | The AI work in numbers | 347–349 |
-| F | What Lean checks | 350–356 |
-| G | How far each result has been checked | 357–358 |
+| 1 | Introduction | 1–29 |
+| 2 | Construction and two-chain estimates | 30–53 |
+| 3 | An independent upper bound | 54–85 |
+| 4 | Covariance estimates and Gaussian approximation | 86–110 |
+| 5 | The original noise and operator paths | 111–129 |
+| 6 | Fixed masks and wave evolution | 130–149 |
+| 7 | Scaling and the point lower bound | 150–166 |
+| 8 | Spatial controls and Gaussian means | 167–183 |
+| 9 | Bounds as the spatial radius grows | 184–198 |
+| 10 | Gaussian estimates for the point upper bound | 199–228 |
+| 11 | The constant and its consequences | 229–247 |
+| 12 | Obstructions and failed approaches | 248–285 |
+| A | Finite-order calculations | 286–292 |
+| B | Direct upper bounds and static interpolation | 293–311 |
+| C | Covariance comparisons in higher dimensions | 312–333 |
+| D | Static comparisons and the clock obstruction | 334–347 |
+| E | The AI work in numbers | 348–350 |
+| F | What Lean checks | 351–357 |
+| G | How far each result has been checked | 358–359 |
 
 The front matter has a Preface, Abstract, multilevel contents, illustrations
 and a guide to the argument. After the bibliography, the six-page List of
