@@ -19527,3 +19527,15 @@ The corrected Chapter 12 development panel is running on the frozen
 all twenty context files required. Its eventual report must retain that exact
 scope; the later reader label repair belongs in the final integration replay.
 Whole-report HIGH acceptance remains open.
+
+## 2026-11-13: book stays at Lean L9 for v1.0.0; L10 goes into 1.1.0
+
+Le's decision: the public companion's first tag is v0.9.0 (the L9 state), so the
+book keeps Appendices F and G at L9 for this release and L10 goes into release
+1.1.0 (VERSIONING.md, middle number). The L10 preview (verified b2bf7a9, coverage
+d6a0505: 82 rows, 27/18/0/31/2/142 of 220; #22's L10 review paragraph; two of the
+four main theorems outside Lean, so the preface's "most of the main theorems" will
+need new wording then) was built and dropped. Kept for the next pin:
+make_appendix_f.py now turns book labels in the companion's summary sentence into
+references (the L10 summary names T:full-upper and T:intrinsic-second-moment);
+at the L9 pin the generated data is byte-identical.

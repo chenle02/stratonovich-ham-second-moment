@@ -290,7 +290,7 @@ def main():
            f"\\newcommand{{\\lcDate}}{{{d.strftime('%B')}~{d.day}, {d.year}}}\n",
            f"\\newcommand{{\\lcTime}}{{{time_stamp(date)}}}\n",
            f"\\newcommand{{\\lcRows}}{{{len(rows)}}}\n",
-           f"\\newcommand{{\\lcSummary}}{{{tex_escape(cov['summary'])}}}\n",
+           f"\\newcommand{{\\lcSummary}}{{{text_with_refs(cov['summary'])}}}\n",  # labels become references
            f"\\newcommand{{\\lcUnlabelled}}{{{unlabelled}}}\n",
            f"\\newcommand{{\\lcGroups}}{{{WORDS[sum(1 for k, _ in CATEGORIES if by_cat.get(k))]}}}\n",
            "\\newcommand{\\lcTables}{%\n" + "".join(body) + "}\n"] + receipts + completion
