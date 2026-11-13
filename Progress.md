@@ -17,7 +17,7 @@ force Chen's predicted constant or create a Lean companion without approval.
 ## Status
 
 Research INCOMPLETE — preprint-readiness closure is active at Le's request
-(2026-11-12). The 387-page book includes Chapter 12 and the L9 verification
+(2026-11-12). The 388-page book includes Chapter 12 and the L9 verification
 appendices. Whole-report HIGH scientific review, final cold acceptance and
 release closure remain open. The historical Kimi hold was lifted; prior
 MEDIUM and malformed reports remain unaccepted in their recorded scopes.
@@ -19565,3 +19565,64 @@ Links print without https:// on their own line (\href, full URL). README-reader:
 388-page book, 416-page record (stale since the video-introduction commit). The
 preface line is #3's. 388 pages, 0/0/0; release filter byte-identical; Le
 approved the pages. Links resolve only after the public flip.
+
+
+[held back: collaborators' unpublished work]
+
+[held back: collaborators' unpublished work]
+
+
+## 2026-11-13: preprint preparation, review outcomes and runtime recovery
+
+The standalone book has 388 pages and the reader 28. Eight existing arXiv
+bibliography links now use web URLs, with printed text unchanged (bbc1c1a3).
+The reader's obsolete 293-page description is removed (282c8c0b). Long
+Contents subsection numbers have more room (5aa4c0e7), without changing
+mathematical statements, proof bodies or numbering. The 216 pre-existing
+proof bodies remain unchanged; Chapter 12 adds 33. The reproducible-build
+milestone at 6013c7b0 is tagged stratonovich-preprint-build-2026-11-13 and its
+single Telegram notice succeeded. That milestone binds its earlier 387-page
+edition, not every later editorial successor.
+
+The two archived standalone source packages pass an isolated TeX Live 2025
+compatibility build (487dd070). The frozen image is not arXiv's exact dated
+installation, and the final combined package and arXiv preview remain to be
+checked. The D7 source generator is being prepared for a public notes entrypoint.
+Root found 38 duplicate PDF destinations despite the original combined checker
+printing PASS. The failed source/PDF/checker output is preserved; early loading
+of float before hyperref removes the duplicates, and the checker now tests
+actual internal targets. The corrected assembly is 419 pages, preserving book
+numbering and 407 index entries; this is preparation, not submission clearance.
+
+Focused DeepSeek reviews of PROOF042 and coupled PROOF047/048 returned
+PASS_WITH_NOTES/HIGH. Author QA found report-only errors (including a product
+kernel described as a convolution and an incorrect time exponent). The single
+factual correction for each lineage returned HIGH again; original reports and
+qualifications remain preserved, with final collection/adjudication pending.
+PROOF005 returned HIGH; the conditional PROOF033 returned MEDIUM with source
+fidelity limitations. These are local reports, not a whole-report acceptance.
+No new manuscript defect has been identified by these reports or author audits.
+
+The original focused Kimi attempts produced no scientific verdict: timeout or
+repeated thinking-only server interruptions. Root stopped only the two owned
+005/033 retry loops after repeated observed errors and recorded the signals;
+this was not a quota finding or a pause of the research task. Agent 21 diagnosed
+the failures and supplied an opt-in retry guard. Fresh contracts retain all
+mathematical source and required reading but focus the final assessment on one
+complete target and its applications, with parent proofs read as declared
+interfaces rather than claiming their recertification. The model, configured
+max effort and HIGH threshold are unchanged. The focused 042 attempt completed
+with native-accepted PASS_WITH_NOTES/HIGH and source images; separate 047/048
+attempts are running. Parent and whole-report obligations remain explicit.
+
+The corrected Chapter 12 panel at 947965c6 is still unclosed: main DeepSeek
+HIGH (with a report-only NG11 false identity preserved), cold DeepSeek MEDIUM,
+Kimi skeptic accepted after an unchanged-content format continuation but with
+five missing individual check records, and Kimi honesty timed out. All required
+contexts and images were delivered where assigned; delivery is not acceptance.
+No unchanged confidence-only retry or synthetic four-role closure is used.
+
+Evidence is retained under private/audit/2026-11-12-preprint-readiness/.
+Whole-report HIGH/cold/source/visual gates, final filtered-source equality,
+publication package checks and wiki/handoff closure remain open. No preprint
+has been uploaded by this work.
