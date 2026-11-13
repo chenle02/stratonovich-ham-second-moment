@@ -203,3 +203,17 @@ The statements added in wave L10, and the changes that wave made to existing ent
   Chen, Le, version 0.9.0).
 - The private development repository is `chenle02/stratonovich-ham-second-moment-lean-dev`
   (all history, milestone tags L0-L10, waves L11-L14 in progress).
+
+## v0.10.0 started (Le, 2026-11-13)
+
+Le: "Start v0.10.0 for the public companion: map the 1408 helper theorems,
+fix the coverage page and lean-pkg publish, and add the generated verification
+and coverage pages to the site." Answers the same day: state "L12 gate state"
+(L10 + L11 + L12, dev `56fc59e` plus its gate docs once the L12 receipts and
+Easley are in); helpers "Credit labelled, smoke the rest": compared theorems
+whose ledger row carries a direct manuscript label with a coverage row are
+credited to that row; all other compared theorems go to a separate comparator
+configuration declared a smoke check (compared, not credited to a result);
+helper claims marked `reusable` among them are relabelled `internal` in
+claims.yaml, so both receipts are re-cut. The book's 1.1.0 pin follows
+(#24/#16 to agree). Recorded locally during #16's book-release push freeze.
