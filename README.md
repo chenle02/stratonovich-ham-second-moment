@@ -37,7 +37,7 @@ intrinsic constant given by an explicit variational formula.
 | Read | Where |
 | --- | --- |
 | Reading edition (<!--s:pages.reader-->28<!--/s--> pages) | [`notes/notes_stratonovich_ham_second_moment_reader.pdf`](notes/notes_stratonovich_ham_second_moment_reader.pdf) |
-| Technical notes (<!--s:pages.book-->391<!--/s--> pages) | [`notes/notes_stratonovich_ham_second_moment.pdf`](notes/notes_stratonovich_ham_second_moment.pdf) |
+| Technical notes (<!--s:pages.book-->392<!--/s--> pages) | [`notes/notes_stratonovich_ham_second_moment.pdf`](notes/notes_stratonovich_ham_second_moment.pdf) |
 | arXiv | The identifier is added here after posting. |
 
 ## What is established, and what is not
