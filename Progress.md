@@ -19985,3 +19985,18 @@ are retained in private/audit/2026-11-13-book-arxiv-04a6279a/. Agent 16 received
 the archive path and hash for independent filtered-tree equality. Actual
 arXiv preview and scientific/cold-review acceptance are separate and remain
 open. Package records remain local during the release freeze.
+
+
+## 2026-11-13: book-only package refreshed at release 3f14a7e5
+
+Built from exactly 3f14a7e5a8bff4c51daa91004c24ca7f317f24fc, including both
+approved Future Work additions. The 107-file book-only archive has SHA256
+cb05a5a821ece6a4e0de59470a129c94e739790844e5d2079869d0508c95ed34. Local and pinned
+TeX Live 2025 builds pass at 392 pages, with stable label numbers/pages and
+index records, valid links, embedded fonts and zero build/reference/box gates.
+TeX Live's internal-anchor naming difference is explicitly recorded, not
+misrepresented as raw AUX equality. Records and source manifest:
+private/audit/2026-11-13-book-arxiv-3f14a7e5/. Agent 16 received path/hash for
+independent filtered-tree equality; Agent 29 and Agent 22 received the source
+revision for their checks. No submission, scientific acceptance or push is
+implied by this packaging checkpoint.
