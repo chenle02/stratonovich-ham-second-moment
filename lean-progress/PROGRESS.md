@@ -6,7 +6,7 @@
 
 ## Status (kept current; updated at every milestone)
 
-Last updated: 2026-11-13 (night): L9 CLOSED (`6eb79c7`), docs successors `f8c9da0`, `1c9e15b` (count 91/509), `34b65d7` (probe files renamed); L10 review repairs confirmed PASS/high at `0904978`; L11 merged onto L10 with docs (`6277695`, comparator 2423); D2, D3 done and verified.
+Last updated: 2026-11-13: Le decided the LEAN FREEZE after this wave (finish started items, gate L10-L14, HYG, R0), then the publication procedure; no new Lean items.
 
 | Item | Current state |
 |---|---|
@@ -26,7 +26,7 @@ Last updated: 2026-11-13 (night): L9 CLOSED (`6eb79c7`), docs successors `f8c9da
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
 | Compute | <MACHINE>: L10 repairs + confirmation, L11 docs merge; Office: D2, D6, D4 follow-up, K5a; <MACHINE>: D3; Easley: idle after the L9 array. Routing: from <MACHINE> on eduroam `ssh Easley` timed out (2026-11-12 night); Easley was driven through Office's live connection (`ssh <MACHINE> "ssh Easley bash -s"`) |
 | Decisions open for Le | the L10 gate (after its repairs, confirmation and receipts); release of gaussian-chaos-lean (opens D1 and K9); public release (HOLD); lean-pkg 0.30.0 upgrade when released |
-| Next actions | L9: lower-tier receipt → regate, claims ledger, push → COMPLETION in-progress rows for L9-L14 onto main → Easley array evidence into verification/leanchecker-easley-wave-l9/ → compare the Slurm receipt with the local one → Le's L9 gate. L10: docs catch-up → reviews. L11: docs merge → reviews; then R0 → L12 DOC, NG1-3, HYG. L13: DM0 repair → re-confirmation → D1-D6; K5 after the D8 task. L14: HT after DM0; O, K6 after K5; integrate K1a/K1b (unify their H_I) and 3D |
+| Next actions | FREEZE PLAN (Le, 2026-11-13): no new items. Finish running items (L10 gate prep, L11 reviews, K5b, D4 follow-up, L14-O). L10 gate -> L11 repairs/confirmation/receipts/gate -> L12-L14 integration (L13 part 2: D4, D6, K5a, K5b; L14: O) -> docs, reviews, receipts, Easley, gates -> HYG -> R0 re-anchor -> release candidate (publication procedure; public flip/DOI/submission only on Le's go). Future/community list: NG1-NG4, D5, HT, K6, L15-UM, B3/B4/B9 |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
 
@@ -972,6 +972,24 @@ Last updated: 2026-11-13 (night): L9 CLOSED (`6eb79c7`), docs successors `f8c9da
   follows. Scope: AI statement-to-manuscript correspondence, **not human
   verification**; supplied inputs stay outside Lean; later changes need a
   successor review.
+- **LEAN FREEZE AFTER THIS WAVE; PUBLICATION NEXT (Le, 2026-11-13).** Le,
+  verbatim: "After this wave of lean verification, we will freeze and start the
+  publication proceedure and leave the rest of verification for the future
+  or for the community". Scope, from Le's answers the same day: (1) "Finish
+  started, gate L10-L14": nothing new is started; the items running now
+  (L10 gate preparation, L11 reviews, K5b, D4 follow-up, L14-O) finish; then
+  everything already built is integrated, reviewed, receipted and gated (L10,
+  L11, and L12-L14 as built: L12 TW, C1, SRC, F1; L13 DM0, DM0b, D1-D4, D6,
+  C4-C6, K5a, K5b; L14 K1a, K1b, 3D, 3Dpd, O), with HYG (hygiene before
+  v1.0.0) before the release. (2) "Yes, R0 before release": the companion is
+  re-anchored to the current manuscript (docs only; the 33 no-go results
+  enter as not-formalized rows). Moved to the future/community list, not
+  started: L12 NG1-NG3 (and DOC beyond what the L11 merge already did); L13
+  D5, NG4; L14 HT, K6a-c, K6d; L15-UM; board B3, B4, B9 stay reserved. The
+  publication procedure (release candidate, public-safety audits, fresh-repo
+  history, Palomar/Zenodo) is prepared after the freeze; the actual public
+  flip, release, DOI and submission each still need Le's explicit go (HOLD
+  unchanged until then).
 - **L11 DOCS DECISIONS (Le, 2026-11-13).** Le, verbatim: "I accept M2 as a
   model-choice register entry, L:fock-form and L:interval-contractions as
   same-assumptions narrower, and both Index pointer presentations as they
