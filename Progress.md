@@ -16,9 +16,11 @@ force Chen's predicted constant or create a Lean companion without approval.
 
 ## Status
 
-Research INCOMPLETE — the focused literature/contribution revision is
-completed locally, with its Git delivery recorded in commit history. Kimi hold
-and all original scientific acceptance gates are preserved.
+Research INCOMPLETE — preprint-readiness closure is active at Le's request
+(2026-11-12). The 387-page book includes Chapter 12 and the L9 verification
+appendices. Whole-report HIGH scientific review, final cold acceptance and
+release closure remain open. The historical Kimi hold was lifted; prior
+MEDIUM and malformed reports remain unaccepted in their recorded scopes.
 
 ## Round
 
@@ -19472,3 +19474,35 @@ and "144 ... not formalized at all" omitted the three main theorems outside Lean
 companion grew" with its table. Guide: 387 pages, F 348-354, G 355-356, pair
 415; README-reader 387/415. 0/0/0; release filter byte-identical on all changed
 public files. Le approved the pages.
+
+
+## 2026-11-12: preprint-readiness closure authorized
+
+Le asked whether the report was ready for a preprint. Root distinguished the
+finished exposition from the remaining review and release gates. Le directed
+completion and then reiterated: "Try all your best to pass the remaining gates."
+This authorizes work on those gates, not a lower confidence threshold or a
+retroactive acceptance of malformed reports. No preprint upload has occurred.
+
+Current publication source/PDF is the L9 appendix edition at a4cee68d, carried
+by later evidence/front-door commits. The whole-report contract remains open;
+old 215-proof/263-row MEDIUM reports are being mapped to current source before
+selecting new substantive review work. Do not repeat an unchanged packet only
+to seek a preferred confidence label. Chapter 12's narrower HIGH results do
+not certify its declared interfaces or the whole book.
+
+The canonical Chapter 12 four-role panel at 09b08131, manifest 20261112-154348,
+completed: DeepSeek main PASS/HIGH and development cold PASS_WITH_NOTES/HIGH;
+Kimi skeptic and honesty have raw PASS_WITH_NOTES/high assessments but native
+invalid-report refusals (duplicate keys; prefixed prose). Supported immutable
+format-only continuations are being prepared; original outcomes stay intact.
+Both Kimi image traces cover all 60 required images. The DeepSeek Chen source
+text-read gap remains explicit. Image-checked clean source transcriptions and
+a fail-closed assembly repair are committed at 338c91bf. They supply no
+retroactive read credit. Initial report-side false positives and open gates
+are recorded in private/audit/2026-11-12-preprint-readiness/.
+
+Parallel work now inventories whole-report review coverage, repeats isolated
+reproducible builds for the 387-page edition, and coordinates the public
+source package with Agent 16. Final separate cold/honesty replays, exact-tip
+closure, wiki/handoff propagation and a scoped milestone tag remain required.
