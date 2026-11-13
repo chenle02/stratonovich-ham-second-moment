@@ -223,3 +223,17 @@ claims.yaml, so both receipts are re-cut. The book's 1.1.0 pin follows
 Pin: verified `56fc59e` (tag L12-gate), coverage `cb18a64` (or a later docs-only successor). Supersedes the L10 paragraph above.
 
 The statements added in waves L10, L11 and L12, and the changes those waves made to existing entries of the coverage record, were checked against the manuscript in correspondence reviews done by AI models from a different family than the one that wrote the formal statements, under the conventions the author fixed in wave L9. Each wave's reviews found documentation corrections only, and no error in a Lean proof; the corrections were made and confirmed by a confirmation review that passed with high confidence. The author accepted wave L10 on 2026-11-13, recording that one assembly step of Proposition P:interval-coefficients assumed a bound on the pairings of the cut-off coefficients that the manuscript does not state as a hypothesis; wave L11 proves that bound from a supplied expansion of the coefficients. The author accepted wave L11 on 2026-11-13, with two further modelling choices recorded: the Gaussian space is represented by Hermite coefficient vectors, and Lemma L:fock-form and Lemma L:interval-contractions hold with the manuscript's hypotheses but narrower conclusions, on a Fourier-side model not identified with the physical-space operators. The author accepted wave L12 on 2026-11-13, recording that the smoothed covariance of Lemma L:damped-homogeneous-norms is modelled by its density; with that choice the lemma is formalized in full. Lemma L:terminal-wick is now formalized in full for the constructed chain measures, Lemma L:higher-riesz in dimensions two and three, and Lemmas L:source-finite-comparison and L:tube-half-action in full. The record states what remains open: Theorem T:white-moment-bounds is formalized for the variational value S_2^pos rather than for C_2, with the white spatial energy supplied; Proposition P:tube-rayleigh-transfer is proved from two supplied facts of Lemma L:tube-closed-geometry; Corollary C:static-interaction and Proposition P:static-phase-all-orders still rest on supplied analytic inputs; and Theorem T:intrinsic-occupation-ceiling remains narrower. These reviews are not a human verification, and they do not check the analytic inputs that stay outside Lean.
+
+## v0.10.0 retargeted to the L14 state (Le, 2026-11-13)
+
+Le (via #24): the book skips companion v0.10.0 at L12; book 1.1.0 pins the
+public companion release that carries the final L14 state (`8f51004`). Le's
+answer the same day: "Retarget v0.10.0 to L14". The L12 candidate
+(`$SP/v010/pub`, dc7755e/7a5d573/40cfe87) is not published; v0.10.0 is rebuilt
+from the L14 gate state (dev `8f51004` plus its receipts, Easley evidence and
+gate record) with the same helper accounting (credit labelled rows, smoke the
+rest, reusable helpers in the smoke set relabelled internal), fresh receipts,
+an independent audit and the generated pages; it waits for the book repository
+to be public so the manuscript can be pinned. Then: push, `lean-pkg publish`,
+tag v0.10.0, GitHub release (Zenodo DOI), site, and the 1.1.0 pin to #24 with
+an L10-L14 Appendix F paragraph.
