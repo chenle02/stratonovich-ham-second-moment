@@ -14,7 +14,7 @@ development history.
   `T:intrinsic-second-moment` (intrinsic original second-moment constant),
   `T:intrinsic-occupation-ceiling` (the computed occupation ceiling) and
   `T:white-moment-bounds` (explicit white moment bounds).
-- **Size:** technical notes <!--s:pages.book-->386<!--/s--> pages, with <!--s:chapters-->12<!--/s--> chapters and appendices <!--s:appendices.letters-->A–G<!--/s-->;
+- **Size:** technical notes <!--s:pages.book-->388<!--/s--> pages, with <!--s:chapters-->12<!--/s--> chapters and appendices <!--s:appendices.letters-->A–G<!--/s-->;
   reading edition <!--s:pages.reader-->28<!--/s--> pages; <!--s:results-->220<!--/s--> numbered results and <!--s:nogo-->33<!--/s--> numbered no-go
   results (Chapter 12), each listed with its check status in
   [VERIFICATION.md](VERIFICATION.md); <!--s:proofs-->249<!--/s--> proofs written in this project.
