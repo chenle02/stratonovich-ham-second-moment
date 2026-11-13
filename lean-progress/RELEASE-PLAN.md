@@ -135,3 +135,20 @@ independent release audit by a different model family.
    are KEPT.
 These settle the release-candidate content; the hold on every public step
 ("do not turn public yet") is unchanged.
+
+## GO: public release now (Le, 2026-11-13)
+
+Le, verbatim (in session, 2026-11-13): "Can you turn this repo public, at the
+same time, following lean-pkg to beautify the GitHub document page." "Make
+sure that you have milestone tagged for the repo" "Also please register this
+at Zenodoo" "Do all the necessary steps to turn this into public". Le's answers
+the same day: path "Fresh public repo" (the approved 2026-11-11 plan: rename
+the current repository to `stratonovich-ham-second-moment-lean-dev`, private,
+full history and the milestone tags `L0-companion-created` ... `L9-gate` kept;
+one scrubbed root commit in a fresh public repository under the canonical
+name; a direct flip was declined because early history holds the HPC
+username, the container path and home paths); version "v0.9.0 at the L9
+gate now" (tree of companion `34b65d7`, verified `6eb79c7`; v1.0.0 after the
+freeze plan: L10-L14 gates, HYG, re-anchor); Zenodo "Yes, I'll toggle Zenodo"
+(Le switches the public repository on in Zenodo before the GitHub release
+v0.9.0 is published). This lifts the 2026-11-11 HOLD for these steps only.
