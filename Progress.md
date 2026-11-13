@@ -19781,3 +19781,36 @@ the printed source contains y. Original reports and receipts are unchanged.
 Evidence: private/audit/2026-11-12-preprint-readiness/
 proof005-lossless-carrier-v1/custody-release-v1/ and
 source-equation35-followup/. Whole-report/cold gates remain open.
+
+
+## 2026-11-13: correct a review-source transcription, preserve the distinction
+
+A fresh enlarged inspection of the pinned author PDF confirms that Chen's
+printed (3.5), page 14, repeats x in its second Green factor. The 338c clean
+carrier incorrectly wrote y and described it as literal print. That was our
+unmarked editorial correction. Its original bytes, manifest and all frozen
+recipients are preserved. A new carrier records printed x, states the intended
+independent-variable y form separately, and retains the need for its local
+justification. Future Chapter 12 assemblies now select that new pinned carrier;
+the existing held assemblies were not run or overwritten.
+
+The book already explicitly records the repeated x and proves its own
+independent-variable form; no mathematical manuscript repair follows. The
+whole-blind review and corrected Chapter 12 panel received the faulty carrier,
+so their affected source-credit claims need the explicit correction. The
+005 and 033 packets do not contain or reference that carrier, including
+renamed-file hash checks; their own source convention already states the
+printed-x qualification. The 005 reviewer noticed it independently.
+
+Durable lesson: a clean UTF-8 file, image-read event and matching hash do not
+establish literal transcription fidelity. Inspect the actual glyph at adequate
+resolution and separate the printed formula from its mathematically intended
+repair. Evidence/addendum/recipient map: private/audit/
+2026-11-13-chen-equation35-correction/. Original runtime addresses are retained
+inside the original-map archive; readable metadata uses relative paths.
+
+The fresh whole-report result remains INCONCLUSIVE/LOW and is not adopted.
+Its alleged fixed-shift dyadic-nesting error compares different grid families;
+the source's fixed-t nesting is correct. A single factual same-session
+correction/public-record completion is running with all issues batched, honest
+unread/partial statuses allowed and no higher-confidence request.
