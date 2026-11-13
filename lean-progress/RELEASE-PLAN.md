@@ -158,3 +158,11 @@ Zenodo." The milestone tags L0-companion-created ... L9-gate stay in the
 private `stratonovich-ham-second-moment-lean-dev` repository (renamed
 2026-11-13; all clones repointed); the public README and COMPLETION.md list
 each milestone with its development commit.
+
+Release level (Le's decision, 2026-11-13, relayed by #16): "this release STAYS
+AT L9 (option 1)". The book (Appendices F and G, root VERIFICATION.md, front
+door) keeps Lean at L9: coverage `34b65d7`, verified `6eb79c7`; the public
+companion's first tag is v0.9.0 = the L9 state. L10 (`b2bf7a9`, gate closed
+2026-11-13) is not re-pinned for this release; it goes into the next MINOR
+release of both. The L10 Appendix F paragraph sent to #24 is held for that
+release.
