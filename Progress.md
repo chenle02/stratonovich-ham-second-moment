@@ -19814,3 +19814,26 @@ Its alleged fixed-shift dyadic-nesting error compares different grid families;
 the source's fixed-t nesting is correct. A single factual same-session
 correction/public-record completion is running with all issues batched, honest
 unread/partial statuses allowed and no higher-confidence request.
+
+
+## 2026-11-13: whole-blind lineage remains unaccepted after record completion
+
+The fresh DeepSeek V4 Pro main call and its sole factual same-session
+completion both returned INCONCLUSIVE/LOW. Native input identity, model,
+zero tools, normal finish and exact original two-message prefix were checked.
+The original public record had a missing array delimiter and grouped coverage.
+The completion supplies all 603 assigned IDs individually, but has an extra
+empty findings.najor key and fails the strict report schema. No third call or
+synthetic accepted receipt is used. Complete record counts are not complete
+mathematical reconstruction: proof rows are 22 PASS_WITH_NOTES, 103 PARTIAL
+and 128 INCONCLUSIVE; the joins remain 12 INCONCLUSIVE and one PARTIAL.
+
+[held back: collaborators' unpublished work]
+
+Native totals are 868371 tokens for the first call and 901512 for the
+completion; the latter already includes its 855424 cache-read tokens. Exact
+usage/timing/raw reported-cost fields are retained without inferred pricing.
+Evidence: private/audit/2026-11-13-whole-review-terminal-custody/.
+The mathematical proofs remain written, but independent verification is
+incomplete. The source package passing build/release checks does not close
+this scientific gate.
