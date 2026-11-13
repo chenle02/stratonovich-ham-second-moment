@@ -19626,3 +19626,26 @@ Evidence is retained under private/audit/2026-11-12-preprint-readiness/.
 Whole-report HIGH/cold/source/visual gates, final filtered-source equality,
 publication package checks and wiki/handoff closure remain open. No preprint
 has been uploaded by this work.
+
+
+## 2026-11-13: combined preprint candidate adopted for packaging
+
+The public entrypoint notes/combined.tex and its 419-page PDF combine the
+reader and book. The generator remains private; the generated source builds
+without it. Book numbering (903 labels), 407 index entries and the reader's
+451 mathematical spans are preserved. The book's page offset is uniformly
++28. All 3275 internal links resolve among 1632 named destinations. The build
+has no errors, undefined references, overfull boxes, duplicate destinations
+or local-file links. Source preservation and the release filter pass.
+
+The original late-float build had 38 duplicate destinations despite its
+checker printing PASS. It and the false PASS are retained in the adoption
+evidence; loading float before hyperref fixes the anchors. The strengthened
+checker also verifies targets and has negative-control evidence. The default
+source contains no dedication; selecting one requires an explicit generator
+argument. No mathematical statement or proof was changed by this assembly.
+
+Evidence: private/audit/2026-11-12-preprint-readiness/combined-adoption/.
+This is a packaging checkpoint, not scientific acceptance. Whole-report
+HIGH, fresh cold review, source-image and visual coverage, the final combined
+TeX Live compatibility build and arXiv preview remain open. No upload made.
