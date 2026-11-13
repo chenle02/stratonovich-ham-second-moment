@@ -20034,3 +20034,16 @@ manuscript inequalities/order dependence; no manuscript repair is indicated.
 Kimi's independent proof/source-image review remains running. Curated result
 and adjudication: private/publication-closeout/envelope-family/. Raw report,
 events and export are retained under sources/review-packets/ only.
+
+
+## 2026-11-13: reuse five accepted operator proofs at their exact scope
+
+Root independently checked the current B0 statements/proofs against the actual
+required input of the accepted Opus reviews, including surrounding assumption
+blocks. Only formatting, single-letter macro braces and six identified prose
+commas differ. Five standalone HIGH review scopes are retained; no new model
+call or whole-book acceptance is claimed. Current consumers and global joins
+remain separate. Curated disposition: private/publication-closeout/operator-family/REUSE.json.
+The detailed custody archive is under sources/review-packets/ and excluded
+from public export. A next-family inventory checks existing evidence before
+any fresh independent review.
