@@ -5,7 +5,7 @@ MINOR changes the mathematics but not the statement of any main theorem, and
 PATCH changes no mathematics. Results are named by label; labels do not change
 between versions, numbers may.
 
-## 1.0.0 — <!--s:release.date-->2026-12-01<!--/s-->
+## 1.0.0 — <!--s:release.date-->2026-11-13<!--/s-->
 
 First public release: the book, its reading edition and the complete
 development history.
