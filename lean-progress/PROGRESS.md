@@ -1005,6 +1005,17 @@ Last updated: 2026-11-13: Le closed the L10 gate at companion `b2bf7a9` (tag `L1
   follows. Scope: AI statement-to-manuscript correspondence, **not human
   verification**; supplied inputs stay outside Lean; later changes need a
   successor review.
+- **M3 ACCEPTED (Le, 2026-11-13).** Le, verbatim: "I accept M3 as a
+  model-choice register entry (p_eps * Gamma modelled by its density
+  gamma_eps), so L:damped-homogeneous-norms counts as whole; record it in
+  lean-progress/PROGRESS.md." Register entry M3 (wave L12, `DampedSmoothing`):
+  the smoothed covariance p_eps * Gamma of `L:damped-homogeneous-norms` is the
+  measure with Lebesgue density gamma_eps (`DampedSmoothing.smoothedCov`); its
+  identification with Mathlib's `Measure.conv` of N(0, eps I) and Gamma is not
+  proved. With M1 and M3, `L:damped-homogeneous-norms` counts as a whole
+  result (same-assumptions/full) on `wave-l12/int` `3c3664c`; the L12
+  documentation's "not yet accepted by the author" wording for M3 is updated
+  at the L12 repairs.
 - **ALL FROZEN ITEMS INTEGRATED (2026-11-13).** Lean-only stacked branch
   `wave-l14/stack` `b2d0a8b` = L11 int `6277695` + L12 (`cfc0285`: TW, C1,
   SRC, F1) + L13 (`ef183d1`: DM0, DM0b, D1-D4, D6, C4-C6, K5a, K5b) + L14
