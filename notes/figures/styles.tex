@@ -3,6 +3,11 @@
 \definecolor{hamblue}{RGB}{36,75,105}
 \definecolor{hamteal}{RGB}{30,112,106}
 \definecolor{hamgold}{RGB}{156,101,20}
+\definecolor{hamvideo}{RGB}{178,34,34}
+% Links to the video introduction (playlist PLWiXjeUrQ62k): \VideoEp{episode}{YouTube id}.
+\newcommand{\VideoPlaylist}{\url{https://www.youtube.com/playlist?list=PLWiXjeUrQ62k}}
+\newcommand{\VideoEp}[2]{\href{https://youtu.be/#2}{\textcolor{white}{\textbf{$\blacktriangleright$\,#1}}}}
+\newcommand{\VideoRef}[2]{\href{https://youtu.be/#2}{\textcolor{hamvideo}{$\blacktriangleright$\,#1}}}
 \tikzset{
 ham/box/.style={draw=hamblue, fill=hamblue!4, rounded corners=2pt,
 align=center, font=\small, inner sep=5pt, minimum height=9mm},
@@ -10,5 +15,6 @@ ham/arrow/.style={-{Latex[length=2mm]}, semithick, draw=hamblue},
 ham/pair/.style={dashed, thick, draw=hamteal},
 ham/dot/.style={circle, draw=hamblue, fill=white, inner sep=1.8pt},
 ham/note/.style={font=\small, align=center},
-ham/brace/.style={decorate, decoration={brace, amplitude=4pt}, semithick}
+ham/brace/.style={decorate, decoration={brace, amplitude=4pt}, semithick},
+ham/video/.style={fill=hamvideo, rounded corners=1.5pt, inner sep=1.8pt, font=\scriptsize}
 }

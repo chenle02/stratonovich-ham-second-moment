@@ -49,8 +49,21 @@
     \node[route,text width=13.65cm,minimum height=1.1cm] (nogo) at (3.7,-10.2)
     {\GuideRef{Chapter}{S:book-no-go}: \textbf{Obstructions and failed approaches}\\
     Numbered counterexamples explain choices throughout the proof};
+    % Video badges: each links to the episode that covers the box.
+    \node[ham/video] at ([xshift=-0.75cm]setting.north east)
+    {\VideoEp{1}{wx57PQ1iMJE}\enspace\VideoEp{2}{MvNCNOq9rDw}};
+    \node[ham/video] at ([xshift=-0.45cm]construction.north east) {\VideoEp{3}{b5-sqI77FLw}};
+    \node[ham/video] at ([xshift=-0.45cm]upper.north east) {\VideoEp{4}{h07fqJUS0vQ}};
+    \node[ham/video] at ([xshift=-0.45cm]phase.north east) {\VideoEp{5}{FGR9ShF2F0w}};
+    \node[ham/video] at ([xshift=-0.45cm]lower.north east) {\VideoEp{6}{rMaiMhor8oU}};
+    \node[ham/video] at ([xshift=-0.75cm]means.north east)
+    {\VideoEp{6}{rMaiMhor8oU}\enspace\VideoEp{7}{14MeOpSe274}};
+    \node[ham/video] at ([xshift=-0.45cm]constant.north east) {\VideoEp{8}{scz2HDdJZT0}};
+    \node[ham/video] at ([xshift=-0.45cm]point.north east) {\VideoEp{7}{14MeOpSe274}};
+    \node[ham/video] at ([xshift=-0.45cm]nogo.north east) {\VideoEp{11}{tkX8BbdXSZA}};
     \node[ham/note,text=hamgold,text width=13.8cm] at (3.7,-11.85)
-    {\textbf{Appendices: checks and separate comparison arguments}};
+    {\textbf{Appendices: checks and separate comparison arguments}\quad
+    \tikz[baseline=(v.base)]\node[ham/video] (v) {\VideoEp{9}{I-1qNZWs770}};};
     \node[auxiliary] (finitechecks) at (0,-13)
     {\GuideRef{Appendix}{S:appendix-finite-order}\\
     Finite-order calculations};
@@ -73,6 +86,8 @@
     bounds. Chapter~\ref{S:book-no-go} explains failed alternatives to these steps.
     Gold boxes identify auxiliary checks and comparisons with their
     own hypotheses. No arrow from an appendix into the main proof is asserted.
-    Every chapter and appendix label is a link to its opening guide.}
+    Every chapter and appendix label is a link to its opening guide. Red badges
+    link to the episodes of the video introduction that cover each box; the
+    table in the guide to the proof lists them.}
   \label{Fig:chapter-roadmap}
 \end{figure}
