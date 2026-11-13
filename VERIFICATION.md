@@ -58,35 +58,35 @@ The five groups have 253 rows in total (31 + 72 + 82 + 35 + 33). The Group colum
 | `T:intro-second-moment` | I | Theorem | Second-moment limit | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
 | `P:mixed` | I | Proposition | Mixed terms | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
 | `L:white-test` | I | Lemma | White-space test | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
-| `L:damped-homogeneous-norms` | I | Lemma | Homogeneous damped norms and temporal tails | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized, narrower conclusion (40 Lean claims) | unchecked |
+| `L:damped-homogeneous-norms` | I | Lemma | Homogeneous damped norms and temporal tails | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized, narrower conclusion (42 Lean claims) | unchecked |
 | `L:translated-covariance-CS` | I | Lemma | Translated covariance Cauchy–Schwarz | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
 | `L:pairing-product-envelope` | I | Lemma | Pairing product envelope | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
 | `L:spatial-wick-measures` | I | Lemma | Positive spatial Wick-measure limit | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
 | `L:joint-fixed-order` | I | Lemma | Joint diagram limits and fixed-order construction | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
 | `L:crude-corrected` | I | Lemma | Corrected crude estimate | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
 | `L:vertex-crude` | I | Lemma | Uniform vertexwise regularization bound | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
-| `P:mild-construction` | I | Proposition | Mild construction from the fixed-order limits | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
+| `P:mild-construction` | I | Proposition | Mild construction from the fixed-order limits | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | inputs supplied (6 Lean claims) | unchecked |
 | `P:envelope` | I | Proposition | The uniform pairing estimate | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
-| `L:phase-contractions` | I | Lemma | Two static contraction bounds | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
+| `L:phase-contractions` | I | Lemma | Two static contraction bounds | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (37 Lean claims) | unchecked |
 | `P:static-phase-variance` | I | Proposition | First variance estimate for arbitrary phase | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
-| `L:complex-phase` | I | Lemma | A complex phase bound | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
-| `L:fock-form` | I | Lemma | Gaussian cutoff form bound | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
-| `L:finite-word-cutoff` | I | Lemma | Exact cutoffs for finite Gaussian words | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | inputs supplied (2 Lean claims) | unchecked |
+| `L:complex-phase` | I | Lemma | A complex phase bound | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | inputs supplied (51 Lean claims) | unchecked |
+| `L:fock-form` | I | Lemma | Gaussian cutoff form bound | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | inputs supplied (24 Lean claims) | unchecked |
+| `L:finite-word-cutoff` | I | Lemma | Exact cutoffs for finite Gaussian words | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | inputs supplied (12 Lean claims) | unchecked |
 | `P:static-phase-all-orders` | I | Proposition | All regularized static phase orders | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | inputs supplied (22 Lean claims) | unchecked |
 | `C:static-interaction` | I | Corollary | Summable static interaction bounds | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | inputs supplied (12 Lean claims) | unchecked |
-| `L:interval-contractions` | I | Lemma | Dimension-independent Gaussian contractions | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
-| `L:interval-complex` | I | Lemma | Complex sums and changing phase weights | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
+| `L:interval-contractions` | I | Lemma | Dimension-independent Gaussian contractions | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | inputs supplied (7 Lean claims) | unchecked |
+| `L:interval-complex` | I | Lemma | Complex sums and changing phase weights | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | inputs supplied (12 Lean claims) | unchecked |
 | `L:inventory-product` | I | Lemma | A coefficient bound for a product with nonnegative coefficients | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (3 Lean claims) | unchecked |
 | `L:fixed-split` | I | Lemma | A fixed degree-split estimate | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
 | `P:interval-coefficients` | I | Proposition | Uniform interval coefficients | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | inputs supplied (15 Lean claims) | unchecked |
 | `L:terminal-wick` | I | Lemma | The finite terminal-chain Wick formula | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | inputs supplied (18 Lean claims) | unchecked |
-| `L:uniform-series-tail` | I | Lemma | Uniform series tails from scaled moments | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | every conclusion, inputs supplied (8 Lean claims) | unchecked |
+| `L:uniform-series-tail` | I | Lemma | Uniform series tails from scaled moments | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | inputs supplied (8 Lean claims) | unchecked |
 | `T:full-upper` | I | Theorem | Full upper scale | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | outside Lean | unchecked |
 | `P:masked-spectral-growth` | II | Proposition | Translated spectral mass | `notes/integrated_covariance_foundation.tex` | see review record | formalized in full (7 Lean claims) | unchecked |
 | `P:masked-auxiliary-norm` | II | Proposition | Auxiliary mask norm | `notes/integrated_covariance_foundation.tex` | see review record | formalized, narrower conclusion (12 Lean claims) | unchecked |
 | `L:masked-time-completion` | II | Lemma | Temporal covariance completion | `notes/integrated_covariance_foundation.tex` | see review record | formalized in full (11 Lean claims) | unchecked |
 | `P:masked-noise-completion` | II | Proposition | Completion on the same noise | `notes/integrated_covariance_foundation.tex` | see review record | inputs supplied (2 Lean claims) | unchecked |
-| `P:masked-quotient-obstruction` | II | Proposition | A physical mask need not preserve noise-null tests | `notes/integrated_covariance_foundation.tex` | see review record | formalized in full (27 Lean claims) | unchecked |
+| `P:masked-quotient-obstruction` | II | Proposition | A physical mask need not preserve noise-null tests | `notes/integrated_covariance_foundation.tex` | see review record | formalized, narrower conclusion (27 Lean claims) | unchecked |
 | `L:masked-temporal-modulation` | II | Lemma | Modulated amplitudes | `notes/integrated_covariance_foundation.tex` | see review record | formalized in full (7 Lean claims) | unchecked |
 | `L:masked-trig-products` | II | Lemma | Correlated trigonometric products | `notes/integrated_covariance_foundation.tex` | see review record | formalized in full (4 Lean claims) | unchecked |
 | `L:masked-continuous-wave` | II | Lemma | Continuous sine factors | `notes/integrated_covariance_foundation.tex` | see review record | formalized in full (4 Lean claims) | unchecked |
@@ -144,7 +144,7 @@ The five groups have 253 rows in total (31 + 72 + 82 + 35 + 33). The Group colum
 | `L:raw-block-inputs` | II | Lemma | Coupled Gaussian block inputs | `notes/integrated_raw_block_lower.tex` | see review record | inputs supplied (1 Lean claim) | unchecked |
 | `P:raw-block-gaussian-law` | II | Proposition | Change of law on the whole norm-Borel space | `notes/integrated_raw_block_lower.tex` | see review record | no Lean claim | unchecked |
 | `L:raw-block-uniform-error` | II | Lemma | Uniform block error | `notes/integrated_raw_block_lower.tex` | see review record | no Lean claim | unchecked |
-| `L:raw-block-indexed-cone` | II | Lemma | Indexed cone and terminal displacement | `notes/integrated_raw_block_lower.tex` | see review record | every conclusion, inputs supplied (12 Lean claims) | unchecked |
+| `L:raw-block-indexed-cone` | II | Lemma | Indexed cone and terminal displacement | `notes/integrated_raw_block_lower.tex` | see review record | inputs supplied (12 Lean claims) | unchecked |
 | `L:raw-block-restart` | II | Lemma | Composition over time blocks and regularized products | `notes/integrated_raw_block_lower.tex` | see review record | inputs supplied (1 Lean claim) | unchecked |
 | `P:raw-block-point-comparison` | II | Proposition | The square observable and canonical comparison | `notes/integrated_raw_block_lower.tex` | see review record | no Lean claim | unchecked |
 | `P:raw-block-original-lower` | II | Proposition | Original point lower rate at the Gaussian quadratic cost | `notes/integrated_raw_block_lower.tex` | see review record | inputs supplied (1 Lean claim) | unchecked |
@@ -182,7 +182,7 @@ The five groups have 253 rows in total (31 + 72 + 82 + 35 + 33). The Group colum
 | `P:radius-compact-envelopes` | III | Proposition | Radius-explicit compact envelopes | `notes/integrated_radius_anchor.tex` | see review record | no Lean claim | unchecked |
 | `P:radius-actual-moments` | III | Proposition | Radius-explicit path moments | `notes/integrated_radius_anchor.tex` | see review record | no Lean claim | unchecked |
 | `C:radius-covariance-residuals` | III | Corollary | Deterministic covariance residuals | `notes/integrated_radius_anchor.tex` | see review record | no Lean claim | unchecked |
-| `P:radius-mean-anchor` | III | Proposition | Averaged block mean tends to zero | `notes/integrated_radius_anchor.tex` | see review record | every conclusion, inputs supplied (1 Lean claim) | unchecked |
+| `P:radius-mean-anchor` | III | Proposition | Averaged block mean tends to zero | `notes/integrated_radius_anchor.tex` | see review record | inputs supplied (1 Lean claim) | unchecked |
 | `L:signed-limiting-multiplier` | III | Lemma | The limiting multiplier | `notes/integrated_signed_static.tex` | see review record | no Lean claim | unchecked |
 | `P:signed-closed-form` | III | Proposition | Closed form and quarter-power phase | `notes/integrated_signed_static.tex` | see review record | no Lean claim | unchecked |
 | `L:signed-spectral-wave` | III | Lemma | The bottom and spectral wave | `notes/integrated_signed_static.tex` | see review record | no Lean claim | unchecked |
@@ -228,10 +228,10 @@ The five groups have 253 rows in total (31 + 72 + 82 + 35 + 33). The Group colum
 | `P:positive-score-cutoff` | III | Proposition | Cutoff removal for the optimized variational expression | `notes/integrated_intrinsic_constant.tex` | see review record | no Lean claim | unchecked |
 | `T:intrinsic-second-moment` | III | Theorem | Intrinsic original second-moment constant | `notes/integrated_intrinsic_constant.tex` | see review record | outside Lean | unchecked |
 | `L:occupation-raw-square` | III | Lemma | Full-profile squares in the original space | `notes/integrated_occupation_ceiling.tex` | see review record | no Lean claim | unchecked |
-| `P:raw-occupation-energy` | III | Proposition | Original occupation energy and dilation | `notes/integrated_occupation_ceiling.tex` | see review record | no Lean claim | unchecked |
-| `L:occupation-rayleigh-selection` | III | Lemma | Countable Rayleigh near-occupations | `notes/integrated_occupation_ceiling.tex` | see review record | no Lean claim | unchecked |
-| `T:intrinsic-occupation-ceiling` | III | Theorem | The computed occupation ceiling | `notes/integrated_occupation_ceiling.tex` | see review record | formalized, narrower conclusion (15 Lean claims) | unchecked |
-| `C:intrinsic-spatial-bracket` | III | Corollary | A common spatial-energy bracket | `notes/integrated_occupation_ceiling.tex` | see review record | formalized, narrower conclusion (17 Lean claims) | unchecked |
+| `P:raw-occupation-energy` | III | Proposition | Original occupation energy and dilation | `notes/integrated_occupation_ceiling.tex` | see review record | formalized, narrower conclusion (24 Lean claims) | unchecked |
+| `L:occupation-rayleigh-selection` | III | Lemma | Countable Rayleigh near-occupations | `notes/integrated_occupation_ceiling.tex` | see review record | formalized, narrower conclusion (5 Lean claims) | unchecked |
+| `T:intrinsic-occupation-ceiling` | III | Theorem | The computed occupation ceiling | `notes/integrated_occupation_ceiling.tex` | see review record | formalized, narrower conclusion (23 Lean claims) | unchecked |
+| `C:intrinsic-spatial-bracket` | III | Corollary | A common spatial-energy bracket | `notes/integrated_occupation_ceiling.tex` | see review record | formalized, narrower conclusion (18 Lean claims) | unchecked |
 | `L:white-cdf-square` | III | Lemma | A square identity for the distribution function | `notes/integrated_white_evaluation.tex` | see review record | no Lean claim | unchecked |
 | `P:white-spatial-energy` | III | Proposition | Exact white spatial energy | `notes/integrated_white_evaluation.tex` | see review record | inputs supplied (2 Lean claims) | unchecked |
 | `T:white-moment-bounds` | III | Theorem | Explicit white moment bounds | `notes/integrated_white_evaluation.tex` | see review record | outside Lean | unchecked |
@@ -274,7 +274,7 @@ The five groups have 253 rows in total (31 + 72 + 82 + 35 + 33). The Group colum
 | `P:riesz-small` | IV | Proposition | Riesz finite coefficients | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
 | `L:d1-spatial` | IV | Lemma | Spatial estimate | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
 | `P:d1-upper` | IV | Proposition | One-dimensional upper bound | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
-| `L:low-alpha-convolution` | IV | Lemma | Low-$\alpha$ convolution bound | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
+| `L:low-alpha-convolution` | IV | Lemma | Low-$\alpha$ convolution bound | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (21 Lean claims) | unchecked |
 | `L:alpha-one-convolution` | IV | Lemma | Degree-one convolution bound | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
 | `P:low-alpha-upper` | IV | Proposition | Upper bound for $\alpha \le 1$ | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
 | `C:d1-first-calibration` | IV | Corollary | First-moment calibration | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
@@ -300,15 +300,15 @@ The five groups have 253 rows in total (31 + 72 + 82 + 35 + 33). The Group colum
 | `P:static-minorant-lower` | IV | Proposition | Static temporal-minimum comparison | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
 | `P:near-static-mean-gap` | IV | Proposition | Near-static strict gap from the mean rate | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
 | `L:full-moment-coefficient-holder` | IV | Lemma | Interpolation of the full moment coefficients | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
-| `P:moment-growth-logconvex` | IV | Proposition | Log-convexity of the upper growth type | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | every conclusion, inputs supplied (10 Lean claims) | unchecked |
-| `C:static-moment-constant-continuity` | IV | Corollary | Recovery of the static moment constant | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | every conclusion, inputs supplied (5 Lean claims) | unchecked |
+| `P:moment-growth-logconvex` | IV | Proposition | Log-convexity of the upper growth type | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | inputs supplied (10 Lean claims) | unchecked |
+| `C:static-moment-constant-continuity` | IV | Corollary | Recovery of the static moment constant | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | inputs supplied (5 Lean claims) | unchecked |
 | `L:white-clock-laplace` | IV | Lemma | White-space low-order Laplace transforms | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (6 Lean claims) | unchecked |
 | `P:clock-copy-obstruction` | IV | Proposition | Obstruction to unweighted constant-correlation clock copying | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (13 Lean claims) | unchecked |
 
 ## Notes
 
 - Results: 253 (8 theorems, 93 propositions, 106 lemmas, 13 corollaries, 33 no-go results).
-- Lean: 24 formalized in full, 15 formalized with a narrower conclusion, 5 with every conclusion and inputs supplied, 20 with inputs supplied, 3 outside Lean, 186 with no Lean claim.
+- Lean: 25 formalized in full, 18 formalized with a narrower conclusion, 0 with every conclusion and inputs supplied, 30 with inputs supplied, 3 outside Lean, 177 with no Lean claim.
 - `T:first` and `T:crude` restate results of the cited source; their titles give the citation key and pinpoint.
 - The companion's coverage file also maps 4 labels that are not numbered theorems, propositions, lemmas or corollaries (displayed equations and a remark), class same-assumptions. They have no rows here.
-- Manuscript read at origin/master `bc116f6`; the book's TeX there is as at `cc2a43d` (later commits change only the guide files). The Lean column is taken from the companion's `coverage.yaml` (class, conclusion and claims of each row) at its commit `d9ded8f`, which after `aff7409` changes only documentation (no Lean source, build file or statement ledger). `aff7409` is where wave L8 was confirmed and both lean-pkg receipts were cut (1,747 theorems compared, 2,108 claims, 0 `sorry`, standard axioms only); Le closed the wave-L8 gate on 2026-11-12. Its manuscript anchor is revision `a284420`, so the 33 no-go results of Chapter 12, added later, have no Lean claim. The companion's `docs/statement-ledger.md` at `d9ded8f` gives the declarations behind each claim. Every theorem, proposition, lemma or corollary label in that coverage file exists at `cc2a43d`.
+- Manuscript read at origin/master `bfd13fa`; the book's TeX there is as at `087819b`. The Lean column is taken from the companion's `coverage.yaml` (class, conclusion and claims of each row) at its commit `34b65d7`, which after `6eb79c7` changes only documentation: no Lean source or build file, and in the statement ledger only the prose count of public definitions (89 to 91), not its claim rows. `6eb79c7` is where wave L9 was confirmed and both lean-pkg receipts were cut (2,050 theorem claims compared, 2,468 claims, 0 `sorry`, standard axioms only); Le closed the wave-L9 gate on 2026-11-12. Its manuscript anchor is revision `a284420`, so the 33 no-go results of Chapter 12, added later, have no Lean claim. The companion's `docs/statement-ledger.md` at `34b65d7` gives the declarations behind each claim. Every theorem, proposition, lemma or corollary label in that coverage file exists at `087819b`.
