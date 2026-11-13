@@ -22,6 +22,16 @@ import subprocess
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+# Every check runs before any file is written: outputs are collected in `out`
+# and written together at the end, so a refused pin leaves the pinned files as
+# they were.
+out = {}
+
+
+def write_all(files):
+    for name, text in files.items():
+        with open(os.path.join(HERE, name), "w") as fh:
+            fh.write(text)
 repo, commit = sys.argv[1], sys.argv[2]
 cov_commit = sys.argv[3] if len(sys.argv) > 3 else commit
 git = lambda *a: subprocess.run(["git", "-C", repo, *a], capture_output=True, text=True, check=True).stdout
@@ -36,7 +46,7 @@ if cov_full != full:
              ("lake-manifest.json", "lean-toolchain", "claims.yaml", "lean-pkg-binding.yaml")]
     if build:
         raise SystemExit(f"commits after the verified commit change build inputs: {build}")
-open(os.path.join(HERE, "coverage.yaml"), "w").write(git("show", f"{cov_full}:coverage.yaml"))
+out["coverage.yaml"] = git("show", f"{cov_full}:coverage.yaml")
 # The companion's completion record (milestones and the status of every
 # labelled result), if it exists at the coverage commit.
 if "COMPLETION.md" in git("ls-tree", "--name-only", cov_full).split():
@@ -47,10 +57,10 @@ if "COMPLETION.md" in git("ls-tree", "--name-only", cov_full).split():
     text = "\n".join(kept)
     while "\n\n\n" in text:
         text = text.replace("\n\n\n", "\n\n")
-    open(os.path.join(HERE, "completion.md"), "w").write(
+    out["completion.md"] = (
         f"<!-- Headings and tables of the Lean companion's COMPLETION.md at {cov_full[:12]}, "
         "pinned by pin_companion.py; the prose is omitted. -->\n\n" + text.strip() + "\n")
-open(os.path.join(HERE, "coverage-commit.txt"), "w").write(f"{full}\n{date}\n{cov_full}\n")
+out["coverage-commit.txt"] = f"{full}\n{date}\n{cov_full}\n"
 
 # Receipts are read from the coverage commit through git, not the working tree.
 sha12 = full[:12]
@@ -64,8 +74,7 @@ lo = json.loads(git("show", f"{cov_full}:{lower[0]}"))
 co = json.loads(git("show", f"{cov_full}:{comparator}"))
 scope_names = git("ls-tree", "--name-only", cov_full, "docs/").split()
 if "docs/coverage-scope-tex.yaml" in scope_names:
-    open(os.path.join(HERE, "coverage-scope-tex.yaml"), "w").write(
-        git("show", f"{cov_full}:docs/coverage-scope-tex.yaml"))
+    out["coverage-scope-tex.yaml"] = git("show", f"{cov_full}:docs/coverage-scope-tex.yaml")
 if lo.get("schema") != "lower-receipt/1" or co.get("schema") != "comparator-receipt/2":
     raise SystemExit("unexpected receipt schema")
 for r in (lo, co):
@@ -84,6 +93,7 @@ if ledger.get("bound_commit") != full or not ledger.get("ok"):
     if os.path.exists(summ) and json.load(open(summ)).get("commit") == full:
         print(f"note: ledger bound to {str(ledger.get('bound_commit'))[:7]}, ok={ledger.get('ok')} "
               f"against the clone's HEAD; kept the stored summary for {full[:7]}")
+        write_all(out)
         sys.exit(0)
     raise SystemExit(f"claims ledger is bound to {str(ledger.get('bound_commit'))[:7]} "
                      f"(ok={ledger.get('ok')}), not a finished ledger at {full[:7]}")
@@ -104,5 +114,6 @@ summary = {
                "open": ledger["counts"].get("open"),
                "out_of_scope": ledger["counts"].get("out-of-scope")},
 }
-json.dump(summary, open(os.path.join(HERE, "lean-receipt-summary.json"), "w"), indent=2)
+out["lean-receipt-summary.json"] = json.dumps(summary, indent=2)
+write_all(out)
 print(json.dumps(summary, indent=2))
