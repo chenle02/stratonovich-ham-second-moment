@@ -462,7 +462,7 @@ for sid, files in sorted(ses_files.items()):
     home = sorted(execf or own or nonpre, key=lambda q: ('::' in q, q))[0]
     hdir = vdirname(home)
     votes = collections.Counter()
-    for p in own:
+    for p in sorted(own):  # fixed order: ties and the report do not depend on hashing
         x = unwrap(JSON[p])
         m = harvest(x, MODEL_KEYS) if isinstance(x, dict) else None
         if not family(m) and isinstance(x, dict):
@@ -472,7 +472,7 @@ for sid, files in sorted(ses_files.items()):
             votes[m] += 1
     model = votes.most_common(1)[0][0] if votes else None
     if len({family(m) for m in votes}) > 1:
-        unclassified.append(('mixed-model-fields', sid, 'model fields disagree across session files: %s (majority used)' % dict(votes)))
+        unclassified.append(('mixed-model-fields', sid, 'model fields disagree across session files: %s (majority used)' % dict(sorted(votes.items()))))
     if not model:
         for p in vglob(hdir, '*.json'):
             m = harvest(unwrap(JSON.get(p)), MODEL_KEYS, depth=1)
