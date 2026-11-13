@@ -1,5 +1,5 @@
 <!-- Pinned by pin_verification.py from the verification ledger; do not edit by hand. -->
-ledger-date: 2026-11-13T08:12:24-06:00
+ledger-date: 2026-11-13T09:49:53-06:00
 lean-coverage-commit: 34b65d7
 
 | Label | Group | Kind | Title | File | AI review | Lean | Human |
