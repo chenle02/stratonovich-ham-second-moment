@@ -1,0 +1,46 @@
+\subsection{Exact first-moment asymptotics}
+\label{S:future-first-moment}
+
+For a nonzero spatial covariance and a fixed positive temporal exponent
+$\alpha_0$, can we determine the exact large-time growth of the signed mean
+$\E u(t,x)$? This question is distinct
+from determining the growth of $\E|u(t,x)|$. The current author version of
+Xia Chen's paper gives two-sided bounds for the signed mean and predicts
+that the upper bound is sharp;
+see~\cite{chen:author2026:time-dependency}*{Theorem~1.2,
+(1.10), the discussion following (1.14), and Remark~8.1}. The second-moment
+result of this book does not identify either first-moment constant.
+
+The positive-control variational problem provides a quantity to investigate.
+Proposition~\ref{P:variational-positive-scores} and
+Theorem~\ref{T:intrinsic-second-moment} give
+\[
+  S_1^{\mathrm{pos}}=2^{-m}C_2,
+  \qquad m=\frac{4-\alpha}{3-\alpha}.
+\]
+This identity concerns control suprema. It does not prove that either
+$t^{-\kappa}\log\E u(t,x)$ or $t^{-\kappa}\log\E|u(t,x)|$ converges to
+$S_1^{\mathrm{pos}}$. Before proposing such an identification, we must check it
+against the actual mean bounds, the static limit and the source's covariance
+normalization. A variational characterization of the first mean may require
+a different functional.
+
+The main missing lower-bound argument concerns cancellation. The second-moment
+proof restricts a nonnegative squared observable to a favorable event. For a
+signed observable, the contribution from the complementary event cannot be
+discarded. Positivity of the unconditional Wick coefficients does not supply
+this comparison. Absolute values remove that particular obstruction, but a
+first absolute-moment argument still needs a comparison between the localized
+observable and the original solution, together with a matching upper bound.
+The completed quadratic comparisons do not provide these statements.
+
+There is a useful boundary calibration. At $\alpha_0=0$, Chen--Hu's static
+first-mean asymptotic is an imported result; see~\eqref{E:static-ratio-input}.
+Corollary~\ref{C:static-moment-constant-continuity} shows that the signed
+first-mean lower and upper growth rates approach that constant as
+$\alpha_0\downarrow0$, after the large-time liminf and limsup have been taken.
+It does not establish an exact time limit at a fixed positive $\alpha_0$.
+A first step is to test a proposed first-moment formula on the small-order
+pairing coefficients and this static calibration, then isolate the needed
+cancellation or localization estimate. We leave the existence and variational
+identification of both first-moment limits open.

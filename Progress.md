@@ -19911,3 +19911,18 @@ This is a locally adopted future-work discussion, not new scientific
 acceptance. No provider call or push. Root sends the candidate SHA to Agent 16
 for the full book-only arXiv/release recut, guide/G-pin update, and coordination
 with Agent 22 (Lean) and Agent 29 (videos). The reader remains a GitHub artifact.
+
+
+## 2026-11-13: first-moment asymptotics as an open research direction
+
+At Le's request, added Subsection 1.9.7, Exact first-moment asymptotics,
+label S:future-first-moment, on printed page 27. It separates signed and
+absolute means, records the auxiliary control identity without claiming a
+first-moment limit, and identifies cancellation/localization and static-limit
+calibrations as the next questions. Existing results and bibliography numbers
+are unchanged. No theorem, proof or conjecture is added.
+
+Book 392 pages, reader 28, combined 422; all zero build/reference/box gates pass.
+Later printed pages shift by one; reader's portable map is refreshed.
+Evidence: private/audit/2026-11-13-first-mean-future-work/. Candidate prepared
+for Agent 16's release sequencing; the old arXiv package is not reused for it.
