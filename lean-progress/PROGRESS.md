@@ -1061,6 +1061,18 @@ Last updated: 2026-11-13: Le closed the L12 gate at companion `56fc59e` (tag `L1
   follows. Scope: AI statement-to-manuscript correspondence, **not human
   verification**; supplied inputs stay outside Lean; later changes need a
   successor review.
+- **L13/L14 REVIEW ROUND 1 AND DECISION F (2026-11-13).** Twelve Codex
+  GPT-6.1-Sol packets at `wave-l14/stack` `f74d825` (scratch l1314rev): all
+  FAIL at high confidence on documentation only (no Lean error, no false
+  whole/full claim; all 24 new and changed coverage rows pass their checks;
+  counts and merge preservation confirmed); repairs A-R accepted. Decision
+  F (Le, answer of 2026-11-13: "Narrower + new row"): ResolventForm (K5b) is
+  headed "narrower result" and `P:signed-closed-form` gets a coverage row
+  (form bounds E:signed-form-bounds, the form version of A >= 1 and the
+  Cauchy-Schwarz step, with E:signed-multiplier-form carried as
+  SignedMultiplierForm; missing: H_V itself, D(A^1/2) = H^1,
+  E:signed-quarter-phase, the H^-1/2 completion, conjugation,
+  L:signed-limiting-multiplier). Repairs and a confirmation round running.
 - **L13/L14 DOCS DECISIONS (Le, 2026-11-13).** Le, verbatim: "I accept M4,
   M5 and M6 as model-choice register entries, L:occupation-rayleigh-selection
   and L:occupation-raw-square as narrower, MaskedAuxiliaryReal headed whole
