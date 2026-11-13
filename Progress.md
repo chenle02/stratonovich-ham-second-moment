@@ -20000,3 +20000,21 @@ private/audit/2026-11-13-book-arxiv-3f14a7e5/. Agent 16 received path/hash for
 independent filtered-tree equality; Agent 29 and Agent 22 received the source
 revision for their checks. No submission, scientific acceptance or push is
 implied by this packaging checkpoint.
+
+
+## 2026-11-13: active publication-completion goal with the release team
+
+Le explicitly requested completing publication together with Agents 16, 22,
+24 and 29. Agent 3 activated the goal and sent scoped requests: release safety
+and sequencing (16), exact public Lean pin/receipts (22), editorial/metadata
+audit (24), video links/page checks (29). Agent 3 retains scientific/source,
+visual and fresh cold-review closure plus exact book-only packaging.
+
+The current package at source 3f14a7e5 has passed local/TL2025 builds and
+Agent 16's filtered-tree equality check (f5466ec0; 107 files, 0 unequal).
+Whole-report scientific, full visual/final cold and actual submission gates
+remain separate and open. A successor review packet is being prepared to
+resolve the bounded envelope/joint-family preparation findings before
+independent model dispatch. Ownership, pending evidence and freeze rules:
+private/publication-closeout/STATUS.md. No new proof or Lean wave is authorized
+by this closeout task; the article push freeze remains in force.
