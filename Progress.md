@@ -19837,3 +19837,22 @@ Evidence: private/audit/2026-11-13-whole-review-terminal-custody/.
 The mathematical proofs remain written, but independent verification is
 incomplete. The source package passing build/release checks does not close
 this scientific gate.
+
+
+## 2026-11-13: Le-approved F2 manuscript wording
+
+[held back: collaborators' unpublished work]
+
+Book and combined PDF rebuilt at the fixed epoch: 388 and 419 pages, zero
+errors, undefined references/citations or overfull boxes. All label numbers
+and pages are unchanged; the reader requires no new build. All 3275 combined
+internal links resolve. Only physical page 270 of the book and page 301 of
+the combined document differ in text and 96-dpi RGB rendering; the edited
+page was visually inspected. The real release filter preserves the changed
+TeX and front door byte-for-byte. Paired validation also passes (249 book
+proofs, all 216 pre-existing bodies unchanged).
+
+Evidence: private/audit/2026-11-13-f2-manuscript/. The refreshed combined
+package is a new artifact and needs its own release-equality check; the old
+8608740f/35578e22 receipt is not transferred. Existing visual receipts remain
+immutable pending exact carrier/source correspondence to the new PDF.
