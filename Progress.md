@@ -19739,3 +19739,21 @@ scientific whole-report gate remain outside this acceptance.
 
 Evidence: private/audit/2026-11-13-combined-visual-successor-custody/
 and private/audit/2026-11-13-combined-visual-successor-preparation/.
+
+
+## 2026-11-13: current front-matter visual batch accepted
+
+Fresh Kimi K3/max review of physical pages 2--11 returned
+PASS_WITH_NOTES/HIGH, with ten individual page records and no required
+repairs. Root read every record and retained the cosmetic empty Preface
+running-head note; the current front-matter styling is kept. Historical scan
+interiors are illustrations, not newly certified historical source text.
+The actual downsampled views and exact close-ups are recorded, with no false
+claim of complete exact-band reconstruction on page 4. All required body
+text, captions, references and assigned small glyphs were read.
+
+Together with the prior eight-page successor, this accepts exactly 18
+distinct physical pages of the unchanged combined PDF. The other 401 pages
+and final integration/cold visual review remain open. The private D7 guide
+now reflects the actual Contents numbering I.1--I.11.
+Evidence: private/audit/2026-11-13-combined-visual-next10-custody/.
