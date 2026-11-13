@@ -152,3 +152,9 @@ gate now" (tree of companion `34b65d7`, verified `6eb79c7`; v1.0.0 after the
 freeze plan: L10-L14 gates, HYG, re-anchor); Zenodo "Yes, I'll toggle Zenodo"
 (Le switches the public repository on in Zenodo before the GitHub release
 v0.9.0 is published). This lifts the 2026-11-11 HOLD for these steps only.
+Tags (Le, 2026-11-13, verbatim): "Keep only the v0.9.0 tag on the public repo;
+skip L9-gate-public. Tell me when the new repo exists so I can switch it on in
+Zenodo." The milestone tags L0-companion-created ... L9-gate stay in the
+private `stratonovich-ham-second-moment-lean-dev` repository (renamed
+2026-11-13; all clones repointed); the public README and COMPLETION.md list
+each milestone with its development commit.
