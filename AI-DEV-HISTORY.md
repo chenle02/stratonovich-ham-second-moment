@@ -302,12 +302,12 @@ state and leaves the source, PDF and earlier review evidence unchanged.
 
 Le subsequently authorized updating and merging the editorial reader. Its two
 original commits remain parents in the history. The November 9 reader still has
-20 pages, now paired with the267-page candidate (287pages combined). Sixty-four
-of the68 old embedded labels had stale numbers/pages; all were refreshed and
-one pairing-envelope label added, giving69 matched labels. All209 external PDF
+20 pages, now paired with the 267-page candidate (287 pages combined). Sixty-four
+of the 68 old embedded labels had stale numbers/pages; all were refreshed and
+one pairing-envelope label added, giving 69 matched labels. All 209 external PDF
 links resolve in the current companion. The source-bound explanation now cites
 the self-contained product envelope rather than importing that entire step
-from Chen. Root checked pages1/4/5/19; builds are clean, the technical PDF is
+from Chen. Root checked pages 1/4/5/19; builds are clean, the technical PDF is
 byte-identical, and independent acceptance is unchanged. See
 reviews/2026-11-09-reader-current-companion-merge/ for the exact validation.
 
@@ -367,10 +367,10 @@ finite-model lemma contains its actual quantitative statement.
 
 The revised reader has 24 pages and the technical companion 275 pages. The growth
 from 20/269 pages is explained by illustrations rather than hidden by smaller
-typography. Both builds are clean;71 label mappings and233 external PDF links
+typography. Both builds are clean; 71 label mappings and 233 external PDF links
 match. All 215 technical proofs retain their ordered mathematical expressions
 and labels, with only documented source typography changes. The site audit,
-source/caption review and inspection of19 figure pages are editorial evidence,
+source/caption review and inspection of 19 figure pages are editorial evidence,
 not a new whole-proof or whole-PDF acceptance. The old scientific grades and
 visual-page credits remain bound to their original editions. The figure guide
 and shareable source pins are under notes/figures/; private iteration records
@@ -398,7 +398,7 @@ labels remain unchanged while their displayed numbers and pages change.
 The book has 284 pages and the reader stays 24 pages. All 215 technical proofs retain
 their mathematics, checked by owner despite the reordering. The 27 included
 mathematical modules are unchanged. The reader's fixed-number references were
-replaced by label links;78 landmarks and 240 remote links resolve. Source-paper
+replaced by label links; 78 landmarks and 240 remote links resolve. Source-paper
 theorem/page citations retain their original numbering. Old scientific and
 visual receipts remain historical rather than being restamped on the new book.
 The organization guide and numbering crosswalk are under notes/; exact source
@@ -426,15 +426,15 @@ captured the shared index. The committed artifact hashes were independently
 checked and match final validation. The mixed commit is preserved as history;
 it is not presented as a manuscript-only atomic commit.
 
-### Figure1.3 and reusable lessons
+### Figure 1.3 and reusable lessons
 
-After Le identified Figure1.3 as too plain, its uniform text-box grid was
+After Le identified Figure 1.3 as too plain, its uniform text-box grid was
 replaced with distinct product columns, temporal covariance sketches, clearer
 result headings and a separate contribution band. Rendered review caught
 overrun that clean LaTeX logs did not; shorter text and flush-left paragraphs
-resolved it. The final book stays293pages and all246 reader links resolve.
+resolved it. The final book stays 293 pages and all 246 reader links resolve.
 The mathematical claims and review states are unchanged. The session retro
-updated three existing Le-AI-Lab skills at3f9e25b for shared-index commits,
+updated three existing Le-AI-Lab skills at 3f9e25b for shared-index commits,
 careful Lean mappings and separate figure semantics/layout/design checks.
 
 ## November 10: entering the book at any chapter
@@ -449,8 +449,8 @@ forty-year historical narrative is integrated into both editions, and Chen's
 author-version citation now uses public bibliographic information without
 internal paths or hashes.
 
-The resulting book has301 pages and the reader 28. All215proof bodies remain
-unchanged up to whitespace, with81matched technical labels and248valid remote
+The resulting book has 301 pages and the reader 28. All 215 proof bodies remain
+unchanged up to whitespace, with 81 matched technical labels and 248 valid remote
 links. These editorial changes do not clear independent scientific review.
 The requested recurring conceptual reflection is available as theory-retro
 in the canonical lab commands; it separates useful synthesis from unverified
