@@ -19675,3 +19675,10 @@ Evidence: private/audit/2026-11-13-combined-arxiv-package/ and
 private/audit/2026-11-13-combined-arxiv-custody/. Agent 16 has the exact package
 and mapping for the filtered-release equality check. No upload or public flip
 is authorized by this checkpoint, and scientific review gates remain open.
+
+
+Packaging milestone stratonovich-combined-package-2026-11-13 is an annotated
+tag at 1d7b21cf; its peeled remote target was checked and <HUB> fetched it.
+The single Telegram milestone notice succeeded. The annotation explicitly
+retains the open scientific, visual, source, cold, release-equality and actual
+arXiv-preview gates. Receipt: private/audit/2026-11-13-combined-arxiv-custody/milestone.json.
