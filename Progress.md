@@ -20488,3 +20488,7 @@ Durable lesson: a failed optional route or scoped gate blocks only its actual de
 ### 2026-11-14: Author Young-observable boundary check
 
 The bounded check in `private/audit/2026-11-14-young-observable-author-join/MEMO.md` finds that current PROOF108/110 explicitly discharge PROOF103's conditional masked-average L² premise. Same-W retention, both constant columns, uniform integrability, fixed-width common events and fixed-radius limits are preserved. The four source files match the retained 3f scope. No source edit, independent review vote, upstream reproof or global closure is added.
+
+### 2026-11-14 Bounded intrinsic-join author check
+
+Root reviewed the actual finiteness and positive-intrinsic application memo. No local circularity or same-canonical/covariance/cost mismatch was found: independent upper plus fixed-test lower precede finite score suprema and final equality. Exact pins and limitations: `private/publication-closeout/remaining-math/author-intrinsic-joins/MEMO.md` and `SOURCE-PINS.json`. Author evidence only, no independent vote, manuscript edit or provider call; deeper parent/global/cold obligations remain open.
