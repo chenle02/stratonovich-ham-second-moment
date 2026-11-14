@@ -20304,3 +20304,8 @@ Original PASS/HIGH preserved. Exclude the false common[-11,11] interval: correct
 ### 2026-11-14 — N7 terminal custody and scoped adjudication
 
 Original PASS/HIGH preserved. Retain the sequencewise varying-functional upper-limit condition; compactness/limit upper-semicontinuity alone is not enough. Correct Holder factorization remains valid; no replacement inferred. Exact delivery, root full-read adjudication and source-private archive binding: `private/publication-closeout/chapter12-n7-result`. No canonical grade rewriting, extra independent vote or global acceptance.
+
+
+### 2026-11-14 — N8 terminal custody and scoped adjudication
+
+Original PASS/HIGH preserved. Exclude reversed pointwise AM-GM weights; retain correct source orientation and symmetric summed bound. Projection exhaustion and bounded operator-map domain retain parent hypotheses. Exact delivery, root full-read adjudication and source-private archive binding: `private/publication-closeout/chapter12-n8-result`. No canonical grade rewriting, extra independent vote or global acceptance.
