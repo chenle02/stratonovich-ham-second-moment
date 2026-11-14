@@ -20404,3 +20404,8 @@ Root verified all62 archive members and the exact saved-final-LF/transmitted-pro
 ### 2026-11-14 — H02A valid FAIL extraction preserved
 
 Root read and verified complete six-source/six-duty documentary extraction and44-member custody. Original canonical FAIL/HIGH accepted=false remains unchanged, with4major/18minor/3requiredrepairs/5limitations concerning historical002959 failures and report errors. ExactNG11whole-section947965c→R4identity plus existingN4disposition pins reject a new current-proof-defect inference; no reproof or retry. Fresh syntheses must consume this full FAIL as adverse evidence and judge current resolutions. Records: `private/publication-closeout/history-h02a-terminal-custody/`; zero mathematical votes, no historical failures repaired to green.
+
+
+### 2026-11-14 — H02B extraction and historical encoding evidence preserved
+
+Original canonical PASS_WITH_NOTES/HIGH retained for six complete sources/six duties, ten minor findings/five limitations and A1–A13 routes. Root corrected an initial visual-repr misreading: exact historical parsed NG26 text contains three LF+u sequences, not literal backslash-nu; same in native and continuation bodies. Preserve that serialization observation and all historical originals; no current manuscript defect or proof rework follows. Root verified50-member archive and adjudication at `private/publication-closeout/history-h02b-terminal-custody/`. One original review plus format continuation is not two substantive votes; this extraction casts zero mathematical votes.
