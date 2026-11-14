@@ -20394,3 +20394,8 @@ Root read the draft memo and independently matched the exact Git patch for3f14a7
 ### 2026-11-14 — H01A fresh extraction attempt02 terminal
 
 Original attempt01 remains duplicate-key invalid-report/unaccepted. Fresh attempt02 used the same original active contract652eb475, a distinct Opus5.5 session and unchanged R4; canonical PASS_WITH_NOTES/HIGH accepted=true, seven complete sources/six duties. Root read all six reasons,12minor findings and5limitations; accepted bounded extraction only with route/refusal/assignment wording corrections, preserving full C1-C5,D1-D7,K1-K10,R1-R3 adverse routing. Zero mathematical votes; no historical grade becomes current proof acceptance. Unused serialization-reminder draft remains proposal only. Records: `private/publication-closeout/history-h01a-attempt02-custody/`. H01B/D-LINEAGE live custody is separate.
+
+
+### 2026-11-14 — H01B extraction custody verified
+
+Root verified all62 archive members and the exact saved-final-LF/transmitted-prompt hash boundary; no changed historical prompt is inferred. Original canonical PASS_WITH_NOTES/HIGH retained for six extraction duties/six complete sources, with seven minor findings, six limitations and A1–A9 routes unchanged. Input hashes are workspace availability, not reading; parser-refusal and historical-epoch qualifications remain. One historical honesty review plus format repair is not two substantive votes; this extraction creates zero mathematical votes. Records: `private/publication-closeout/history-h01b-terminal-custody/`.
