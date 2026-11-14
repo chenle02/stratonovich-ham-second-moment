@@ -20389,3 +20389,8 @@ Root verified the exact237-member preparation archive (SHA256 e88a76d120752ed982
 ### 2026-11-14 — whole-book source-delta mapping preserved
 
 Root read the draft memo and independently matched the exact Git patch for3f14a7e5→b5d8a537. Seven of106notesTeXfiles changed;248/249book proof bodies and all4reader proofs are byte-identical, with only the documented C_dir alias in PROOF029 changing a book proof body. This is lexical source correspondence, not regrading, semantic certification or current-consumer/global closure; original210scopedHIGH and later33NG obligations retain their scopes. `notes/combined.tex` still has older inlined attribution/readerabstract and needs its separate derived-artifact refresh at finalrelease. Exact patch/hashes and limits: `private/audit/2026-11-14-whole-book-source-delta/`. No publicsource/PDF edit or provider call.
+
+
+### 2026-11-14 — H01A fresh extraction attempt02 terminal
+
+Original attempt01 remains duplicate-key invalid-report/unaccepted. Fresh attempt02 used the same original active contract652eb475, a distinct Opus5.5 session and unchanged R4; canonical PASS_WITH_NOTES/HIGH accepted=true, seven complete sources/six duties. Root read all six reasons,12minor findings and5limitations; accepted bounded extraction only with route/refusal/assignment wording corrections, preserving full C1-C5,D1-D7,K1-K10,R1-R3 adverse routing. Zero mathematical votes; no historical grade becomes current proof acceptance. Unused serialization-reminder draft remains proposal only. Records: `private/publication-closeout/history-h01a-attempt02-custody/`. H01B/D-LINEAGE live custody is separate.
