@@ -6392,8 +6392,8 @@ Proposition~\ref{P:mixed}, $\E u^2(t,x) = \sum_{k\ge0}A_k(t)$.
   \end{equation}
   Consequently,
   \begin{equation}\label{E:d1-upper}
-    \E u^2(t,x)\le\exp(C_2t^\kappa),\qquad
-    C_2=q(2ZK_{\rm sp})^{1/q},\quad \kappa=\frac{\beta}{q}.
+    \E u^2(t,x)\le\exp(C_{\rm dir}t^\kappa),\qquad
+    C_{\rm dir}=q(2ZK_{\rm sp})^{1/q},\quad \kappa=\frac{\beta}{q}.
   \end{equation}
 \end{proposition}
 
@@ -6609,7 +6609,7 @@ definition of $A_k(t)$ is now applied to the present $d$-dimensional solution.
         {(2-\alpha)^{2-\alpha}},&0<\alpha<1,\\[2mm]
         \pi V,&\alpha=1,
       \end{cases}\\
-      C_2^{\rm gen}&=q(2ZK_{\rm sp}^{\rm gen})^{1/q}.
+      C_{\rm dir}^{\rm gen}&=q(2ZK_{\rm sp}^{\rm gen})^{1/q}.
     \end{split}
   \end{equation}
   With the same $A_k$, $b$, $q$, $\beta$, and $Z$ as above, for
@@ -6619,7 +6619,7 @@ definition of $A_k(t)$ is now applied to the present $d$-dimensional solution.
     {k!\,k^{bk}}
     \le\frac{(2ZK_{\rm sp}^{\rm gen})^k t^{\beta k}}{(k!)^q},
     \qquad
-    \E u^2(t,x)\le\exp(C_2^{\rm gen}t^\kappa).
+    \E u^2(t,x)\le\exp(C_{\rm dir}^{\rm gen}t^\kappa).
   \end{equation}
 \end{proposition}
 
@@ -7860,8 +7860,8 @@ first treat $\Gamma \ne 0$ and $1 < \alpha < 2$.
 
 \begin{corollary}[Full planar parameter range]\label{C:planar-range}
   In dimension two, under Hypothesis~\ref{H:homog} and the standing covariance
-  positivity assumptions, the upper bound $\E u^2(t,x) \le \exp(C_2t^\kappa)$
-  holds throughout $0 < \alpha < 2-\alpha_0$, with a finite constant $C_2$
+  positivity assumptions, the upper bound $\E u^2(t,x) \le \exp(C_{\rm dir}t^\kappa)$
+  holds throughout $0 < \alpha < 2-\alpha_0$, with a finite constant $C_{\rm dir}$
   depending on $\alpha_0$ and the spatial covariance. A nonnegative generalized
   covariance is interpreted as the homogeneous measure and its Gaussian
   approximations described above.
@@ -7870,7 +7870,7 @@ first treat $\Gamma \ne 0$ and $1 < \alpha < 2$.
 \begin{proof}
   For $0 < \alpha \le 1$, apply Proposition~\ref{P:low-alpha-upper}. For $1 <
   \alpha < 2-\alpha_0$, apply Proposition~\ref{P:planar-upper}. If the
-  covariance vanishes, $u = 1$ and $C_2 = 0$ suffices. This proves
+  covariance vanishes, $u = 1$ and $C_{\rm dir} = 0$ suffices. This proves
   Corollary~\ref{C:planar-range}.
 \end{proof}
 
