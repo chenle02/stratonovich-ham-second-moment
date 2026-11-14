@@ -20504,3 +20504,7 @@ The bounded check in `private/audit/2026-11-14-independent-upper-author-join/MEM
 ### 2026-11-14 Uniform-radius signed-upper author join
 
 Root reviewed the actual radius anchor, good/bad/last-cell budgets and residual limit consumer. No local hypothesis or order mismatch found. Evidence: `private/publication-closeout/remaining-math/author-uniform-signed-join/MEMO.md` and `SOURCE-PINS.json`. This bounded author check retains existing numerical-depth scope; no new proof, independent vote, provider call or manuscript edit. Whole-book review and global/cold obligations remain open.
+
+### 2026-11-14: Author envelope-to-constructor seam check
+
+The bounded check in `private/audit/2026-11-14-envelope-constructor-author-join/MEMO.md` finds no gap in the pairing-envelope induction, edge multiplicities after fusion, independent regional indicators, marked-tail estimate or joint-width passage consumed by mild construction. It preserves cap/Green/noise ordering and original scope limits. Root read and agreed with this bounded finding. This is author integration, not an independent vote or whole-book acceptance. Author-audit expansion stops here; the required independent whole-book assessment remains separate.
