@@ -20430,3 +20430,8 @@ Evidence and full author adjudication: `private/publication-closeout/disclosure-
 D-HISTORICAL retains canonical PASS_WITH_NOTES/HIGH, accepted=true for extraction only, with all12 required bodies and frozen520 hashes matching. The author correction distinguishes the latest assigned historical composition document from current Le choiceB: one shared N1–N8 set,13H+4D extraction and two fresh syntheses;169 originaltext/52image duties. The old authority/report are not rewritten and this slice does not certify the full source union.
 
 Evidence and full author adjudication: `private/publication-closeout/disclosure-historical-r4-terminal-20261114/`. Raw records remain in the source-private archive pinned there. Zero new mathematical votes or provider calls; public repair proposals remain separate and require their own release approval.
+
+
+### 2026-11-14 — H03A/B same-epoch extraction custody verified
+
+Root verified89-member archive c858bfc0 and read both complete adjudications. Separate original PASS_WITH_NOTES/HIGH extraction results retained; H03A10sources and H03B2sources cover distinct whole records. Historical59/61of87, rejected Kimi52exactimages and zero epoch Gold agreements remain. Optional see_also is not an extra schema failure; bad report tree/line locators are not binding; same-family labels alone do not prove session dependence. Records: `private/publication-closeout/history-h03-epoch-terminal-custody/`. Zero mathematical votes; no current-proof or global closure.
