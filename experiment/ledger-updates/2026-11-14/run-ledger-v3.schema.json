@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Repository-wide mathematics experiment: instrumented subset ledger",
+  "type": "object",
+  "required": [
+    "schema",
+    "snapshot_utc",
+    "status",
+    "experiment_scope",
+    "coverage",
+    "originals_preserved",
+    "tokens_costs_recomputed",
+    "rows",
+    "correction_recorded_utc",
+    "supersedes",
+    "publication_state_as_of_correction",
+    "correction_scope"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "publication-experiment-runs/3"
+    },
+    "snapshot_utc": {
+      "type": "string"
+    },
+    "status": {
+      "const": "RECORDED_EXPERIMENT_SNAPSHOT"
+    },
+    "experiment_scope": {
+      "type": "string"
+    },
+    "coverage": {
+      "type": "string"
+    },
+    "originals_preserved": {
+      "const": true
+    },
+    "tokens_costs_recomputed": {
+      "const": false
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "lineage",
+          "record_kind",
+          "role",
+          "scope",
+          "source_snapshot",
+          "actual_model",
+          "configured_effort",
+          "actual_effort",
+          "status",
+          "reported_verdict",
+          "reported_confidence",
+          "native_accepted",
+          "derived_accepted",
+          "accepted_at_stated_scope",
+          "started_utc",
+          "finished_utc",
+          "elapsed_seconds",
+          "token_usage_reported",
+          "cost_reported",
+          "cost_currency",
+          "provider_calls",
+          "new_independent_vote",
+          "original_public_final_sha256",
+          "public_report_representation",
+          "report_summary",
+          "original_withheld",
+          "withheld_categories",
+          "reading_scope",
+          "telemetry_note",
+          "registry_status",
+          "adjudication_status",
+          "report_versions",
+          "registry_snapshot_sha256",
+          "result_snapshot_sha256",
+          "receipt_snapshot_sha256",
+          "actual_family",
+          "WHOLE_BOOK_ACCEPTED",
+          "cost_currency_note",
+          "pending",
+          "outcome",
+          "token_field_format",
+          "aggregation_eligible",
+          "aggregation_note",
+          "redaction_note",
+          "model_identity_evidence",
+          "telemetry_denominator_eligible",
+          "usage_nonoverlap_verified",
+          "token_format_signature",
+          "accounting_scope"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "lineage": {
+            "type": "string"
+          },
+          "record_kind": {
+            "enum": [
+              "provider_attempt",
+              "format_continuation",
+              "derived_recovery",
+              "parser_refusal",
+              "preflight",
+              "audit_addendum"
+            ]
+          },
+          "role": {},
+          "scope": {},
+          "source_snapshot": {},
+          "actual_model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "configured_effort": {},
+          "actual_effort": {},
+          "status": {},
+          "reported_verdict": {},
+          "reported_confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low",
+              null
+            ]
+          },
+          "native_accepted": {},
+          "derived_accepted": {},
+          "accepted_at_stated_scope": {},
+          "started_utc": {},
+          "finished_utc": {},
+          "elapsed_seconds": {},
+          "token_usage_reported": {
+            "type": [
+              "object",
+              "array",
+              "null"
+            ]
+          },
+          "cost_reported": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "cost_currency": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "provider_calls": {},
+          "new_independent_vote": {},
+          "original_public_final_sha256": {},
+          "public_report_representation": {
+            "const": "author-written process summary; not the complete provider final"
+          },
+          "report_summary": {
+            "type": "string",
+            "pattern": "^\\.\\./\\.\\./reports/[A-Za-z0-9_-]+\\.md$"
+          },
+          "original_withheld": {
+            "const": true
+          },
+          "withheld_categories": {},
+          "reading_scope": {},
+          "telemetry_note": {},
+          "registry_status": {},
+          "adjudication_status": {},
+          "report_versions": {},
+          "registry_snapshot_sha256": {},
+          "result_snapshot_sha256": {},
+          "receipt_snapshot_sha256": {},
+          "actual_family": {
+            "enum": [
+              "DeepSeek",
+              "Kimi",
+              "Anthropic",
+              "OpenAI",
+              null
+            ]
+          },
+          "WHOLE_BOOK_ACCEPTED": {
+            "const": false
+          },
+          "cost_currency_note": {},
+          "pending": {
+            "type": "boolean"
+          },
+          "outcome": {
+            "enum": [
+              "accepted-at-scope",
+              "not-accepted",
+              "invalid",
+              "refused",
+              "recovered",
+              "preflight",
+              "continuation",
+              "timeout"
+            ]
+          },
+          "token_field_format": {},
+          "aggregation_eligible": {
+            "type": "boolean"
+          },
+          "aggregation_note": {},
+          "redaction_note": {},
+          "model_identity_evidence": {},
+          "telemetry_denominator_eligible": {},
+          "usage_nonoverlap_verified": {},
+          "token_format_signature": {},
+          "accounting_scope": {}
+        }
+      }
+    },
+    "correction_recorded_utc": {},
+    "supersedes": {},
+    "publication_state_as_of_correction": {},
+    "correction_scope": {}
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "source_ledger_sha256": "dc8374b9603cfeb0b6470d3a40bc6cf94e34503c86773d7be635277f821b335c",
+  "source_ledger_commit": "3422eca590fd36d8ddd551039702e76db9a4ab4b",
+  "model_evidence_sha256": "4711928f72ad7df8572606bee1914edd9325e447a5478776806f7f161065cad3",
+  "model_evidence_commit": "830d602ba9512d631f1048bc99287b12c8503bcf",
+  "existing_row_field_changes": [
+    {
+      "id": "P1-deepseek",
+      "field": "actual_model",
+      "old": null,
+      "new": "deepseek-v4-pro"
+    },
+    {
+      "id": "P1-deepseek",
+      "field": "actual_family",
+      "old": null,
+      "new": "DeepSeek"
+    },
+    {
+      "id": "P1-deepseek",
+      "field": "aggregation_eligible",
+      "old": false,
+      "new": true
+    },
+    {
+      "id": "P1-cold",
+      "field": "actual_model",
+      "old": null,
+      "new": "deepseek-v4-pro"
+    },
+    {
+      "id": "P1-cold",
+      "field": "actual_family",
+      "old": null,
+      "new": "DeepSeek"
+    },
+    {
+      "id": "P1-cold",
+      "field": "aggregation_eligible",
+      "old": false,
+      "new": true
+    },
+    {
+      "id": "P2-deepseek",
+      "field": "aggregation_eligible",
+      "old": false,
+      "new": true
+    },
+    {
+      "id": "P2-cold",
+      "field": "actual_model",
+      "old": null,
+      "new": "deepseek-v4-pro"
+    },
+    {
+      "id": "P2-cold",
+      "field": "actual_family",
+      "old": null,
+      "new": "DeepSeek"
+    },
+    {
+      "id": "P2-cold",
+      "field": "aggregation_eligible",
+      "old": false,
+      "new": true
+    }
+  ],
+  "new_field_semantics": {
+    "telemetry_denominator_eligible": "provider attempt, no known zero-call exclusion; includes running/missing-usage records for honest n-of-N",
+    "aggregation_eligible": "provider attempt AND actual reported usage; actual_model may be null",
+    "usage_nonoverlap_verified": "false for both format continuations; no inferred delta",
+    "token_format_signature": "Exact reported field/type shape; different formats not merged",
+    "accounting_scope": "Historical panel header/final-step limitation explicit"
+  },
+  "reported_values_or_outcomes_changed": false,
+  "records_added_or_deleted": 0,
+  "whole_book_accepted": false
+}
