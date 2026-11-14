@@ -20354,3 +20354,8 @@ PASS_WITH_NOTES/HIGH retained at local shared-component scope. Direct-factorial 
 ### 2026-11-14 — native R4 N5 terminal adjudicated
 
 PASS_WITH_NOTES/HIGH retained at local shared-component scope. Original invalid attempt unchanged; unique official closer-insertion recovery is call-free and not a new vote. Different independent-root/time-block constructions are not supporting analogies; figure historical page discrepancy remains integration duty. Exact receipts/coverage/IDs and root full-read adjudication: `private/publication-closeout/native-r4-n5-result`. Original failed outputs and any recovered derivative remain distinct. No source edit or extra vote; global gates remain open.
+
+
+### 2026-11-14 — native R4 N7 terminal adjudicated
+
+Original canonical PASS_WITH_NOTES/HIGH accepted=true retained with exact source/coverage/ID audit and root full public-reason read. Descriptive proof cross-reference/static-phase and b/q definitions remain integration duties; no upstream whole-book acceptance. See `private/publication-closeout/native-r4-n7-result` for unchanged original evidence and adjudication. One shared component; no source edit or global acceptance.
