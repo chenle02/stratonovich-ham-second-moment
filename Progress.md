@@ -17,10 +17,41 @@ force Chen's predicted constant or create a Lean companion without approval.
 ## Status
 
 Research INCOMPLETE — preprint-readiness closure is active at Le's request
-(2026-11-12). The 391-page book includes Chapter 12, the approved rough-noise future-work discussion and the L9 verification
+(2026-11-12). The 394-page book includes Chapter 12, the approved rough-noise future-work discussion and the L9 verification
 appendices. Whole-report HIGH scientific review, final cold acceptance and
 release closure remain open. The historical Kimi hold was lifted; prior
 MEDIUM and malformed reports remain unaccepted in their recorded scopes.
+
+## Active publication-completion frontier (2026-11-14)
+
+Le explicitly requested setting and pursuing the publication-completion goal.
+The goal service is ACTIVE; this resumption preserves PROJECT-GOAL.md and the
+required whole-paper scientific, source/visual, fresh cold and delivery gates.
+The older roadmap counts and launcher snapshots below remain historical;
+they do not override this frontier or the latest dated adjudications.
+
+Current adopted artifacts: 394-page book and 28-page reader. Both isolated
+builds at `20c1582d` pass 0 errors / 0 undefined / 0 overfull, with matching
+pagewise extracted text and valid internal link targets. Rebuilt PDF bytes
+differ; no visual or scientific acceptance is inferred. Exact hashes, the
+initial staging failure and expected release-marker drift are retained in
+`private/publication-closeout/publication-resume-20261114/`.
+
+Immediate scientific dependency: whole-book MAIN and independent Kimi remain
+MEDIUM under the required HIGH gate; Chapter 12 honesty is scoped HIGH, while
+the native skeptic synthesis is terminal incomplete without a judgment.
+The unwritten five synthesis checks and the whole-book assurance decision
+remain explicit. No unchanged confidence-only rerun, safeguard workaround,
+model substitution or redundant F12 constructor call is launched.
+Continue independent authorized work; do not treat this scoped failure as
+blocking every publication duty. Final cold acceptance remains open.
+
+After scientific closure: Le's all-page typesetting read; Agent 16's source
+R; companion re-anchor, Le acceptance and public v0.10.0/L14; F/G and front-door
+re-pin with zero shifted citations; final F; exact book-only source package,
+filtered equality/negative control, rehearsal/audit and Le's release acceptance.
+Agent 16 prepares arXiv to preview; Le alone submits. Lean stays frozen at L14.
+The plan above is an intra-round checkpoint, not whole-book clearance.
 
 ## Round
 
@@ -20512,3 +20543,7 @@ The bounded check in `private/audit/2026-11-14-envelope-constructor-author-join/
 ### 2026-11-14: Existing F12 constructor coverage; redundant call stopped
 
 Root and author read the retained complete F12 reason in `sources/review-packets/envelope-joint-3f14a7e5-kimi-terminal.tar.gz::kimi-syntax-recovery-01/report.json` (report SHA-256 `6fb27510644777e3a3600e15fe4978d4140bf1a457dd2cd6f3cc52986e1ef9c6`). F12 explicitly covers the 006→009 consumer: finite-degree multiplication/closedness, fixed-external-width inner Bochner limit, uniform q_n bounds, d=3 Green-before-noise passage, external limit from joint vertexwise convergence, and summability identifying the same canonical mild product integral. Current006/009 label-through-proof bodies are byte-identical to 3f14a7e5. The proposed duplicate focused call was stopped before packet freeze or provider launch. This records existing adopted scope only; no new vote or grade change, and original DeepSeek MEDIUM plus whole-book/global limits remain unchanged.
+
+### 2026-11-14: Publication-completion goal resumed; clean build checkpoint
+
+Le requested the active publication goal and immediate work. Verified local/origin/<HUB> parity at `20c1582d`, preserved all foreign untracked work, and rebuilt the exact adopted book/reader in an isolated copy. Both builds pass zero errors, undefined references/citations and overfull boxes; 394/28 pages, pagewise extracted text equal, no invalid internal targets. Actual PDF hashes differ and are recorded without claiming visual equality. The initial missing-media staging error was corrected from the same tracked commit, with its failed exit preserved. Read-only release_sync --check identifies expected held front-door/source/date/Appendix E drift; no release-day mutation was executed. Plan and receipts: `private/publication-closeout/publication-resume-20261114/`. Whole-book HIGH, incomplete Chapter 12 skeptic, final cold and owner-sequenced release obligations remain open; no new provider call, scientific vote, public change or release approval is claimed.
