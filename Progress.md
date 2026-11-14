@@ -20492,3 +20492,7 @@ The bounded check in `private/audit/2026-11-14-young-observable-author-join/MEMO
 ### 2026-11-14 Bounded intrinsic-join author check
 
 Root reviewed the actual finiteness and positive-intrinsic application memo. No local circularity or same-canonical/covariance/cost mismatch was found: independent upper plus fixed-test lower precede finite score suprema and final equality. Exact pins and limitations: `private/publication-closeout/remaining-math/author-intrinsic-joins/MEMO.md` and `SOURCE-PINS.json`. Author evidence only, no independent vote, manuscript edit or provider call; deeper parent/global/cold obligations remain open.
+
+### 2026-11-14 Point-upper and symplectic-tube author joins
+
+Root reviewed the bounded current-source application memo: no local input, normalization, compactness, average-of-squares or source-limit-order mismatch found. Evidence: `private/publication-closeout/remaining-math/author-point-tube-joins/MEMO.md` and `SOURCE-PINS.json`. Same canonical endpoint and original half-action retained. Author check only; no manuscript edit, provider call or independent acceptance. Existing parent/global/cold obligations remain open.
