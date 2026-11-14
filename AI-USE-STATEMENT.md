@@ -59,11 +59,12 @@ was written with her.
 
 ## The record
 
-The complete development history (every step, every review with its model
-family and grade, and the routes that failed) is public at
+A filtered development history (the proof revisions, the review runs with
+their model families and grades, selected reports, and the routes that failed)
+is public at
 https://github.com/chenle02/stratonovich-ham-second-moment (release tag
 `v1.0.0`),
-with a small number of documented redactions (other authors' copyrighted
+with documented redactions (other authors' copyrighted
 texts, private infrastructure, collaborators' unpublished work and private
 planning notes).
 

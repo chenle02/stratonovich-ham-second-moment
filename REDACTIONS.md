@@ -1,14 +1,17 @@
 # What was removed from the published history, and why
 
-This repository publishes the **complete** development history of the
-project: every commit, in order, with its original date and message. A
-small number of things could not be published. They were removed with a
-documented, reproducible filter. This file lists every class of removal,
-why it was removed and how much.
+This repository publishes a filtered copy of the project's development
+history: its commits in their original order, with their original dates and
+messages, after a documented, reproducible filter removed what could not be
+published. This file lists every class of removal, why it was removed and how
+much.
 
-Nothing below changes the mathematics or the record of how it was
-developed. Where a file was removed, the commit that touched it still
-appears, and its message is kept unless a rule below says otherwise.
+The filter removed whole files, held back paragraphs inside files and commit
+messages, and dropped the commits that touched only removed material (counted
+below). It changes no mathematical statement or proof in the manuscripts.
+Where a commit touched both published and removed material, the commit still
+appears, and its message is kept unless a rule below says otherwise. The
+original history and the withheld records are retained privately.
 
 ## Commit identifiers
 

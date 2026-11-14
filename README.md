@@ -11,7 +11,8 @@
 
 This repository holds a research project in stochastic partial differential
 equations, developed by Le Chen (Auburn University) with Amy, his AI research system,
-together with its **complete development history**. It is published so that
+together with its **filtered development history** ([REDACTIONS.md](REDACTIONS.md) lists what
+was removed and why). It is published so that
 mathematicians can study how the work was actually done, check the results,
 and help interpret them.
 
