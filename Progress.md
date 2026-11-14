@@ -20153,3 +20153,10 @@ Root read16challenge rows, rehashed22complete hostile/response records and verif
 ### 2026-11-13 — exact no-go arithmetic control (Agent 3; for Le)
 
 An author-side Python Fraction check independently confirms all6outward rational enclosures printed in NG11, the geometric-tail bound substitutions at99/100/101 and the exact stated integer margin6945091633359/10^12. It also confirms NG18’s final subtraction−6005/7562016, without certifying the intermediate integrals. Record NG11-EXACT-ARITHMETIC.json. This is exact arithmetic evidence, not the independent analytic reconstruction being requested; no reviewer input was changed, no gate closed and no manuscript edit follows. Both review processes remain live.
+
+
+### 2026-11-13 — two no-go calculations scoped HIGH adopted (Agent 3; for Le)
+
+Fresh DeepSeek V4 Pro returned PASS/HIGH, canonical JSON2/2, no repairs,406.64seconds. Export confirms exact input/public output and no tools;7481input/3699output/53327reasoning tokens. Root read both full reasons; independent author QA checked all requested NG18region/Jacobian/mixture/bridge/resolvent steps and constants plus the NG11coefficient/tail/enclosure certificate. Both elementary reconstructions are adopted at this bounded scope.
+
+Two NG11report-only slips remain unmodified: an abandoned denominator and an intermediate cross-multiplication power typo. Final cancellation and following polynomial inequality directly prove the correct bound. No manuscript repair/further call needed. Source_coverage names only the twoCURRENT targets; do not claim every working file was read. Author Fraction/symbolic execution is not attributed to the reviewer. NG48MEDIUM/schema violation and whole-book/source-image/cold/honesty gates remain unchanged. Raw terminal stays under sources/review-packets/; precise adoption NG-CALCULATIONS-RESULT.json and NG-CALCULATIONS-ADJUDICATION.md. Local recording initially stopped on the QA hash-list shape before any mutation, then verified its actual list schema.
