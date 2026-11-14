@@ -20359,3 +20359,8 @@ PASS_WITH_NOTES/HIGH retained at local shared-component scope. Original invalid 
 ### 2026-11-14 — native R4 N7 terminal adjudicated
 
 Original canonical PASS_WITH_NOTES/HIGH accepted=true retained with exact source/coverage/ID audit and root full public-reason read. Descriptive proof cross-reference/static-phase and b/q definitions remain integration duties; no upstream whole-book acceptance. See `private/publication-closeout/native-r4-n7-result` for unchanged original evidence and adjudication. One shared component; no source edit or global acceptance.
+
+
+### 2026-11-14 — native R4 N8 terminal adjudicated
+
+Original canonical PASS_WITH_NOTES/HIGH accepted=true retained with exact source/coverage/ID audit and root full public-reason read. Exclude report-only 'unbounded at and above2/a': NG27 proves noncompactness at endpoint, not endpoint unboundedness. Actual bounded operator range unchanged. See `private/publication-closeout/native-r4-n8-result` for unchanged original evidence and adjudication. One shared component; no source edit or global acceptance.
