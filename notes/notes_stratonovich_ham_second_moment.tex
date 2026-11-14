@@ -502,8 +502,9 @@ retain the printed formulas without adopting a correction. The upper-bound
 proofs below do not use the first-moment upper constant.
 
 \begin{theorem}[\cite{chen:author2026:time-dependency}*{Theorem~1.2, (1.10)--(1.13)}]\label{T:first}
-  \emph{Source statement as printed.} The source states, under
-  Hypothesis~\ref{H:homog},
+  \emph{Source statement as printed.} Under its covariance and homogeneity
+  assumptions~\cite{chen:author2026:time-dependency}*{(1.2), (1.3), (1.8), (1.9)},
+  the author version states
   \[
     L_*\le\liminf_{t\to\infty}t^{-\kappa}\log\E u(t,x)
     \le\limsup_{t\to\infty}t^{-\kappa}\log\E u(t,x)\le L^*,
@@ -526,10 +527,15 @@ proofs below do not use the first-moment upper constant.
   lower bound.
 \end{theorem}
 
+The source writes its spatial covariance as a function and explicitly includes
+one-dimensional spatial white noise. We do not claim an extension of this
+quoted result to every singular Radon covariance in Hypothesis~\ref{H:homog}.
+
 The source predicts that the limit exists and equals $L^*$
-\cite{chen:author2026:time-dependency}*{p.~4}; this is not proved,
-and~\cite{chen:author2026:time-dependency}*{Remark~8.1} explains why the lower
-bound is not sharp (complex-valued intersection local time).
+\cite{chen:author2026:time-dependency}*{p.~4}; this is not proved.
+The source also suggests that the constant in its lower estimate may not be
+sharp, relating the difficulty to the complex-valued intersection-local-time
+representation~\cite{chen:author2026:time-dependency}*{Remark~8.1, (8.8)}.
 
 \begin{theorem}[\cite{chen:author2026:time-dependency}*{Remark~5.1, (5.8)}]\label{T:crude}
   $\E u^2(t,x) \le e^{Ct^2}$ for large $t$.
