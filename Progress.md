@@ -20349,3 +20349,8 @@ Original canonical PASS_WITH_NOTES/HIGH accepted=true, fivecomplete sources/four
 ### 2026-11-14 — native R4 N4 terminal adjudicated
 
 PASS_WITH_NOTES/HIGH retained at local shared-component scope. Direct-factorial six-endpoint Fraction check is author computation, not native execution or another vote; report-only decimal/regularization attribution errors excluded. Exact receipts/coverage/IDs and root full-read adjudication: `private/publication-closeout/native-r4-n4-result`. Original failed outputs and any recovered derivative remain distinct. No source edit or extra vote; global gates remain open.
+
+
+### 2026-11-14 — native R4 N5 terminal adjudicated
+
+PASS_WITH_NOTES/HIGH retained at local shared-component scope. Original invalid attempt unchanged; unique official closer-insertion recovery is call-free and not a new vote. Different independent-root/time-block constructions are not supporting analogies; figure historical page discrepancy remains integration duty. Exact receipts/coverage/IDs and root full-read adjudication: `private/publication-closeout/native-r4-n5-result`. Original failed outputs and any recovered derivative remain distinct. No source edit or extra vote; global gates remain open.
