@@ -20299,3 +20299,8 @@ Original producerPASS_WITH_NOTES/HIGH acceptedtrue; six IDs,4texts/14exactPNG,33
 ### 2026-11-14 — N5 terminal custody and scoped adjudication
 
 Original PASS/HIGH preserved. Exclude the false common[-11,11] interval: correct common interval[-7,7] contains(5,6). White-noise lower-profile formula and phase-norm wording retain their local scope. Exact delivery, root full-read adjudication and source-private archive binding: `private/publication-closeout/chapter12-n5-result`. No canonical grade rewriting, extra independent vote or global acceptance.
+
+
+### 2026-11-14 — N7 terminal custody and scoped adjudication
+
+Original PASS/HIGH preserved. Retain the sequencewise varying-functional upper-limit condition; compactness/limit upper-semicontinuity alone is not enough. Correct Holder factorization remains valid; no replacement inferred. Exact delivery, root full-read adjudication and source-private archive binding: `private/publication-closeout/chapter12-n7-result`. No canonical grade rewriting, extra independent vote or global acceptance.
