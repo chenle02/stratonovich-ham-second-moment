@@ -20463,3 +20463,7 @@ The bounded author-side allocation check in `private/audit/2026-11-14-final-allo
 ### 2026-11-14: Two fresh Chapter 12 syntheses launched; initial custody
 
 Preserved the exact carrier `41dba482` at adopted source epoch `1a3cd72b`, both contracts/source plans, classified references, dryruns and initial launch records in `private/publication-closeout/chapter12-two-syntheses-1a3-initial-freeze/`. Root launched skeptic/honesty under exec 77360, PIDs 2163831/2163832. All 595 archive members are verified; live outputs/events and duplicate workspaces are excluded. This records initial launch only, not a terminal verdict or scientific acceptance. Le's workflow lesson: prepare sufficiently, then execute; further work should address concrete findings or remaining requirements, not add setup for its own sake.
+
+### 2026-11-14: Skeptic initial synthesis context stop preserved
+
+Preserved the original skeptic attempt 01 terminal record in `private/publication-closeout/chapter12-skeptic-first-context-stop/`: blocked-provider / Prompt is too long, actual Opus 5.5, 274.845 seconds, no scientific verdict or confidence. Root reports complete required delivery and last nonzero context 962680; neither establishes a review vote. All 31 archive members are verified. Honesty remains separate and is excluded from this unit. Concrete input lesson: retain canonical copies in the archive, but do not duplicate identical raw/canonical report content in the reviewer working context. No historical result was relabelled or source duty removed.
