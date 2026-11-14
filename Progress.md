@@ -20274,3 +20274,8 @@ Actual DeepSeek V4 Pro completed N2 in 402.463 seconds: all 23 inline inputs byt
 ### 2026-11-14 — N1 bounded text review terminal and adjudicated
 
 Root read the complete public report and all eight task reasons. Original HIGH — all assigned no-go results mathematically correct as stated; confidence HIGH, no canonical grade conversion. All 32 inline bodies exact; actual DeepSeek V4 Pro, one assistant call, zero tools, normal stop. False constant-factor Stirling asymptotics; omitted t^(2-a) in abbreviated time-cube integral; d1 Green scaling not all-dimensional. These report-only points are excluded or qualified in `private/publication-closeout/chapter12-n1-result/ROOT-ADJUDICATION.md`; no required manuscript repair established. Full source/session originals are preserved in `sources/review-packets/chapter12-n1-156620f8-terminal.tar.gz`. Source-image, global synthesis, whole-book and fresh cold gates remain open.
+
+
+### 2026-11-14 — N6 bounded text review terminal and adjudicated
+
+Root read the complete public report and all eight task reasons. Original ACCEPT at HIGH threshold; confidence HIGH, no canonical grade conversion. All 21 inline bodies exact; actual DeepSeek V4 Pro, one assistant call, zero tools, normal stop. False sharp Schur constant aside; strong operator integration is vectorwise, not norm-Bochner in B(E). These report-only points are excluded or qualified in `private/publication-closeout/chapter12-n6-result/ROOT-ADJUDICATION.md`; no required manuscript repair established. Full source/session originals are preserved in `sources/review-packets/chapter12-n6-156620f8-terminal.tar.gz`. Source-image, global synthesis, whole-book and fresh cold gates remain open.
