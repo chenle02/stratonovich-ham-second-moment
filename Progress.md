@@ -20284,3 +20284,8 @@ Root read the complete public report and all eight task reasons. Original ACCEPT
 ### 2026-11-14 — N3 bounded review terminal and adjudicated
 
 Root read the complete original ACCEPT/HIGH report, seven reasons for NG08/09/12/13 and all limitations. Exact22input/actualDeepSeek delivery is retained; no required source repair established. Exclude the reviewer-only smooth-multiplier claim, Gaussian convention and endpoint/locator slips as detailed in `private/publication-closeout/chapter12-n3-result/ROOT-ADJUDICATION.md`. Historical NG09 MEDIUM unchanged. Raw terminal evidence is source-private; no canonical grade conversion, source-image, synthesis, whole-book or final-cold acceptance.
+
+
+### 2026-11-14 — N4 terminal custody and scoped adjudication
+
+Original ACCEPT/HIGH for NG03/11/15/16/19; eight checks,38inputs exact. Exclude report-only evenness claim for cosh(sqrt(z)); finite NG11 certificate is not newly executed. No required manuscript repair. Root read full public reasons and limitations. Exact delivery and adjudication: `private/publication-closeout/chapter12-n4-result`; complete rawsource/session custody: `sources/review-packets/chapter12-n4-156620f8-terminal.tar.gz`. Original grades remain unchanged; no whole-composition, whole-book or final-cold acceptance.
