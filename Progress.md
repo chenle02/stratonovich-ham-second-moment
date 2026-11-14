@@ -20344,3 +20344,8 @@ Original PASS_WITH_NOTES/HIGH accepted=true retained after25complete texts/eight
 ### 2026-11-14 — N2 general algebra supplement terminal
 
 Original canonical PASS_WITH_NOTES/HIGH accepted=true, fivecomplete sources/fourIDs/all520hashes verified on same candidate. Root read general sum-to-I, resolvent/coincident-rate, fixedgap and fulltheta derivations; these close the identified algebra duties left qualified in nativeN2. Original point-check report and grade remain unchanged; combined evidence is onecluster with a supplement, not a secondwholeN2vote. Scope/custody: `private/publication-closeout/native-n2-algebra-supplement-result`. No manuscript repair or source/global/synthesis/wholebook/finalcold closure.
+
+
+### 2026-11-14 — native R4 N4 terminal adjudicated
+
+PASS_WITH_NOTES/HIGH retained at local shared-component scope. Direct-factorial six-endpoint Fraction check is author computation, not native execution or another vote; report-only decimal/regularization attribution errors excluded. Exact receipts/coverage/IDs and root full-read adjudication: `private/publication-closeout/native-r4-n4-result`. Original failed outputs and any recovered derivative remain distinct. No source edit or extra vote; global gates remain open.
