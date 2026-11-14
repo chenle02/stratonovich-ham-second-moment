@@ -20186,3 +20186,8 @@ The report addresses the corrected calculations, current canonical joins and adv
 ### 2026-11-13 — complete MAIN public reasons read (Agent 3; for Le)
 
 Root read every public reason of MAINv2. Two report-only formula slips were checked against current TeX: the missing square on N2(1), and the misplaced c in the intermediate occupation bound. The manuscript statements and final optimizations are correct; no edit or fresh review is warranted merely to repair those report phrases. They are excluded from reused reasoning and preserved in the original report. Full disposition: WHOLE-MAIN-V2-ADJUDICATION.md. MEDIUM and the exact source/coverage limitations remain unchanged.
+
+
+### 2026-11-13 — current reviewer states and supported panel path recorded (Agent 3; for Le)
+
+The dashboard now distinguishes the malformed MAINv1 from the valid but MEDIUM MAINv2, rather than leaving the former as the latest state. Office21’s full response e0e5fd86bf6e was read: the stock runner cannot bind a partial-role successor, and its mechanical panel_closed ignores confidence/row coverage. We will use a genuine fresh Chapter12-scoped panel on corrected inputs; the earlier panel remains history, not final-HEAD votes. No new tool build was requested. Independent whole-book Kimi preparation and the live033source review continue; no unchanged broad DeepSeek confidence retry or automatic duplicate final cold review is scheduled.
