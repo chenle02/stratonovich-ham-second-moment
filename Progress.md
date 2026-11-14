@@ -20451,3 +20451,7 @@ Root approved exact archive and all 31 payloads. H06 remains PASS_WITH_NOTES/hig
 ### 2026-11-14 H07 terminal historical extraction custody
 
 Root approved exact archive and all 31 payloads. H07 remains PASS_WITH_NOTES/high at extraction scope only, with complete adverse findings and author qualifications retained; zero mathematical votes. All required reads, 520 frozen source hashes and applicable reversible views were checked. Custody: `private/publication-closeout/h07-r4-terminal-20261114/RESULT.json`; private raw archive `sources/review-packets/h07-r4-terminal-20261114.tar.gz`. Synthesis remains unfrozen pending final repair verification and integration.
+
+### 2026-11-14 H08 terminal historical extraction custody
+
+Root approved exact archive and all 31 payloads. H08 remains PASS_WITH_NOTES/high at extraction scope only, with complete adverse findings and author qualifications retained; zero mathematical votes. All required reads, 520 frozen source hashes and applicable reversible views were checked. Custody: `private/publication-closeout/h08-r4-terminal-20261114/RESULT.json`; private raw archive `sources/review-packets/h08-r4-terminal-20261114.tar.gz`. Synthesis remains unfrozen pending final repair verification and integration.
