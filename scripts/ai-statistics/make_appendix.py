@@ -179,6 +179,29 @@ def tex_path(s):
     return "\\path{" + s + "}"
 
 
+def running_note(rows):
+    """Clause for records still running, which the table shows by status.
+
+    Their ledger outcome is provisional, so the table does not count it; the
+    clause says how many such records there are and what the ledger records
+    for them. Empty when no record is running, so the sentence stays true.
+    """
+    run = [r for r in rows if r.get("status") == "running"]
+    if not run:
+        return ""
+    words = "zero one two three four five six seven eight nine ten".split()
+    n = len(run)
+    count = words[n] if n < len(words) else str(n)
+    outs = sorted({OUTCOME_TEX[r["outcome"]].lower() for r in run})
+    listed = outs[0] if len(outs) == 1 else ", ".join(outs[:-1]) + " and " + outs[-1]
+    if n == 1:
+        tail = f"one record, whose provisional outcome is {listed}"
+    else:
+        tail = f"{count} records, whose provisional outcomes are {listed}"
+    return ("; a record whose run is still going is counted by that status"
+            f" instead ({tail})")
+
+
 def closeout(out, ledger_rel):
     commit, blob = ledger_source(ledger_rel)
     led = json.load(open(os.path.join(ROOT, ledger_rel)))
@@ -282,6 +305,7 @@ def closeout(out, ledger_rel):
             noun = "record" if len(sel) == 1 else "records"
             cost.append(f"{label(m)}: {amount} ({cur or 'currency not recorded'}; {len(sel)} {noun})")
     lines.append(macro("aiCloseoutCost", "; ".join(cost) if cost else "none reported"))
+    lines.append(macro("aiCloseoutRunningNote", running_note(rows)))
     lines.append(macro("aiCloseoutRecords", str(len(rows))))
     lines.append(macro("aiCloseoutUsageRecords", str(len(usage))))
     lines.append(macro("aiCloseoutDenominator", str(len(den))))
