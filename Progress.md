@@ -20240,3 +20240,10 @@ Le chose B: a fresh complete panel, not a new scope-completion mode. He then swi
 ### 2026-11-13 — subscription-only Fable access clarified (Agent 3; for Le)
 
 Le clarified that the selected Fable5.2 access is via subscription. Root has therefore directed21 to verify the existing native ClaudeCode first-party subscription route, without purchasing credits, upgrading, or enabling new overage/credit-consent settings. The earlier separate-credit question is not retained as an automatic blocker based solely on picker text; an actual native refusal must be reported if access is unavailable. This does not authorize new billing settings or an API bridge. Full scientific calls still require the exact model/adapter/source-trace checks. No Fable call has yet been made by root.
+
+
+### 2026-11-13 — offline input preservation and current release dependencies (Agent 3; for Le)
+
+Root independently verified all108 framed source documents against committed snapshot75eb688b and retained all52 images in a private input archive. The generic payload is1751436bytes, SHA185e9da69f69bc2d5a8c636b6efce922b5703790ca6fdb9c264c3e01a5553a62; no provider call or formal fresh panel is claimed. Earlier draft credit/model wording remains historical; current authority selects native Claude Code Opus5.5 under Le’s subscription-only fallback.21 reports one successful tiny Opus transport calibration, not a scientific review; CLI325 production read/image pins remain pending. The observed Max weekly utilization was98%, with reset2026-11-18T09:00:00Z and overage off; this is a warning, not an invented quota refusal or guaranteed budget. No purchases or billing-setting changes.
+
+Le also changed the final Lean target to L14/publicv0.10.0. The recorded R-to-F sequence requires scientific closure and typesetting before R, companion re-anchor/review/Le acceptance and publication, then metadata repinning with zero shifted cited lines, final release checks and Le acceptance. No v0.10.0 publication or current book repin is claimed by this planning record. See FINAL-COMPANION-PIN-PLAN.json.
