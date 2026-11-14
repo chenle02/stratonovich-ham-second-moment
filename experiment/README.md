@@ -1,0 +1,39 @@
+# An experiment in a new way of doing mathematics
+
+The experiment is the way of doing mathematics described in the [Preface](../notes/preface.tex). The dataset is the **entire released repository and its retained public history**: how the problem and goals were chosen, proof iterations, successful and failed approaches, numbered no-gos, human decisions, AI drafting, source verification, independent criticism and responses, and the precise scope of Lean checks. The experiment is not merely a record of publication closeout, and a favorable review is not proof of mathematical correctness.
+
+Start with the [repository guide](../README.md), the Preface, and the [public-history index](history-index/README.md). The latter is presently a labelled placeholder; the actual all-history inventory will be generated only from the release-day filtered checkout. Disclosure restrictions and removals must remain explicit rather than being mistaken for absence of failed work.
+
+## Current instrumented subset: publication closeout
+
+The [machine-readable ledger](run-ledger.json) is **one bounded subset**, not a lifetime experiment census. It currently contains29 process records: all11 entries in the captured closeout registry; eight role attempts from two scoped Chapter12 panels; two same-session format continuations; three canonical derived-recovery events; one refused recovery; one delivery-audit addendum; and three native preflights. [Completeness and exclusions](COMPLETENESS.md) records the boundary.
+
+Each row has an explicit outcome: `accepted-at-scope`, `not-accepted`, `invalid`, `refused`, `recovered`, `preflight`, `continuation`, or `timeout`. `not-accepted` can mean pending or no established gate acceptance; it is not automatically a negative mathematical verdict. A recovered representation is not a new independent vote, and a recovered report can still fail its confidence threshold. Every row has `WHOLE_BOOK_ACCEPTED: false`.
+
+All report files here are **author-written process summaries**, not full raw provider finals. Complete originals and unsuccessful attempts remain preserved privately. Private reasoning, credentials/runtime identifiers, third-party source transcriptions/images, held source criticisms and private correspondence are not exported. No summary is mislabelled as an unchanged raw report. Existing disclosure holds remain in force.
+
+## Telemetry for later analysis
+
+Only verified **actual model identifiers and families** are reported; unknown actual identities are `null`, without requested-model fallback. Stable record IDs may retain an old purpose-role label; only `actual_model` and `actual_family` identify the model. Token objects and per-request lists retain their reported field names and formats. Missing values are `null`; no token totals, costs, model identities or estimates are fabricated. Numeric reasoning-token counts are telemetry, not reasoning content.
+
+Appendix E may aggregate only actual reported fields, grouped by **actual model and original field format**, with the contributing count `n` out of eligible count `N` stated. Do not mix incompatible token formats or accounting levels. Derived recoveries, preflights and audit addenda are excluded; continuation usage must not be added to parent usage until nonoverlap is verified. `cost_currency` is populated only from an explicit recorded receipt currency; otherwise it is `null` and labelled “currency not recorded.” A numeric cost without a recorded currency is not a dollar estimate.
+
+Registry, receipt and result snapshot hashes preserve provenance. The conditional-review row records its native invalid report, below-threshold recovery, and verified delivery addendum separately. The whole-book skeptic is running; its terminal result and actual reading coverage are not assumed. No lifetime totals or whole-book acceptance are inferred from this subset.
+
+## Release boundary and history indexing
+
+This is a draft under Agent16's strict per-file precommit/filter hold. The instruction to publish the experiment in this release does not lift source, correspondence or other existing disclosure holds. No public-path commit, push, actual filtered-history inventory or new export has occurred. Source snapshot IDs are provenance strings, not links into unfiltered private history.
+
+The [inventory generator](tools/index_filtered_reviews.py) scans every reachable tree in an approved filtered checkout, recording each retained review/report/telemetry path/blob version and its SHA256. It generates relative current-file links, identifies historical versions by Git object IDs, and does not re-export content or turn artifacts into review votes. [Synthetic tests](tools/test_index_filtered_reviews.py) check historical versions and rejection of private/runtime paths; they are not a release audit.
+
+After the release-day filtered checkout and filter receipt exist, the coordinator can run:
+
+```sh
+python experiment/tools/index_filtered_reviews.py \
+  --filtered-root /path/to/filtered-checkout \
+  --output /path/to/filtered-checkout/experiment/history-index \
+  --filter-receipt /path/to/approved-filter-receipt.json \
+  --ack-filtered
+```
+
+These are illustrative placeholders, not private host paths. The generated files require their own exact release/filter review. No absent historical data is silently counted as zero.
