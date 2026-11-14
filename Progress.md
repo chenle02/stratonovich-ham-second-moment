@@ -20399,3 +20399,8 @@ Original attempt01 remains duplicate-key invalid-report/unaccepted. Fresh attemp
 ### 2026-11-14 — H01B extraction custody verified
 
 Root verified all62 archive members and the exact saved-final-LF/transmitted-prompt hash boundary; no changed historical prompt is inferred. Original canonical PASS_WITH_NOTES/HIGH retained for six extraction duties/six complete sources, with seven minor findings, six limitations and A1–A9 routes unchanged. Input hashes are workspace availability, not reading; parser-refusal and historical-epoch qualifications remain. One historical honesty review plus format repair is not two substantive votes; this extraction creates zero mathematical votes. Records: `private/publication-closeout/history-h01b-terminal-custody/`.
+
+
+### 2026-11-14 — H02A valid FAIL extraction preserved
+
+Root read and verified complete six-source/six-duty documentary extraction and44-member custody. Original canonical FAIL/HIGH accepted=false remains unchanged, with4major/18minor/3requiredrepairs/5limitations concerning historical002959 failures and report errors. ExactNG11whole-section947965c→R4identity plus existingN4disposition pins reject a new current-proof-defect inference; no reproof or retry. Fresh syntheses must consume this full FAIL as adverse evidence and judge current resolutions. Records: `private/publication-closeout/history-h02a-terminal-custody/`; zero mathematical votes, no historical failures repaired to green.
