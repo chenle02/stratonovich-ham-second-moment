@@ -92,6 +92,162 @@ def macro(name, value):
     return f"\\newcommand{{\\{name}}}{{{value}}}\n"
 
 
+
+# ---- The publication closeout reviews (public experiment ledger) ----------
+# experiment/run-ledger.json is the public, bounded record of the closeout
+# reviews (its own `coverage` line says what it covers). It is counted as it
+# stands: no figure is estimated or recomputed, and a missing value stays
+# missing. The book build stops if the ledger is absent (Le, 2026-11-13).
+LEDGER = os.path.join(HERE, "..", "..", "experiment", "run-ledger.json")
+OUTCOMES = ["accepted-at-scope", "not-accepted", "invalid", "refused",
+            "recovered", "preflight", "continuation", "timeout"]
+PENDING = "running"   # display class: a review still running (no verdict yet)
+OUTCOME_TEX = {"accepted-at-scope": "Accepted at the stated scope",
+               "not-accepted": "Not accepted", "invalid": "Invalid report",
+               "refused": "Recovery refused", "recovered": "Recovered",
+               "preflight": "Preflight (no call)",
+               "continuation": "Continuation (no new vote)",
+               "timeout": "Timed out",
+               PENDING: "Still running (no verdict yet)"}
+CLOSEOUT_FAMILY = [("deepseek", "DeepSeek"), ("kimi", "Kimi"), ("k3", "Kimi"),
+                   ("qwen", "Qwen"), ("claude", "Claude"), ("gpt", "GPT")]
+
+
+NO_CALL, UNRECORDED = "no model call", "model not recorded"
+
+
+def closeout_model(row):
+    """The actual model as recorded, without a provider prefix ("deepseek/"),
+    so one model reached through two routes is one column. A record with no
+    actual model is "no model call" when it records zero provider calls, and
+    "model not recorded" otherwise (it ran, but the ledger leaves the model
+    out); its tokens and costs are still counted in that column."""
+    m = row.get("actual_model")
+    if m:
+        return m.split("/")[-1]
+    return NO_CALL if row.get("provider_calls") == 0 else UNRECORDED
+
+
+def closeout_family(model):
+    for key, fam in CLOSEOUT_FAMILY:
+        if model and key in model.lower():
+            return fam
+    return "other"
+
+
+def tex_tt(s):
+    return "\\texttt{" + s.replace("_", "\\_").replace("-", "-{}") + "}"
+
+
+# Records that are not additional provider usage: their telemetry, if any, is
+# not added to the token and cost sums (ledger owner, 2026-11-14). A format
+# continuation counts only if the ledger marks its usage as not overlapping
+# the original's (USAGE_NONOVERLAP_FIELD true).
+NOT_USAGE_KINDS = {"derived_recovery", "parser_refusal", "preflight", "audit_addendum"}
+CONTINUATION_KIND = "format_continuation"
+USAGE_NONOVERLAP_FIELD = "usage_nonoverlap_verified"
+
+
+def counts_as_usage(row):
+    kind = row.get("record_kind")
+    if kind in NOT_USAGE_KINDS or row.get("provider_calls") == 0:
+        return False
+    if row.get("aggregation_eligible") is False:   # the ledger's own exclusion
+        return False
+    if kind == CONTINUATION_KIND:
+        return row.get(USAGE_NONOVERLAP_FIELD) is True
+    return True
+
+
+def closeout(out):
+    if not os.path.exists(LEDGER):
+        raise SystemExit(f"{LEDGER} is missing: the closeout subsection is generated from it")
+    led = json.load(open(LEDGER))
+    rows = led["rows"]
+    bad = [r.get("id") for r in rows if r.get("outcome") not in OUTCOMES]
+    if bad:
+        raise SystemExit(f"ledger rows without a known outcome: {bad[:5]}")
+    if any(r.get("whole_book_accepted") for r in rows):
+        raise SystemExit("a ledger row accepts the whole book; the appendix text says none does")
+    named = sorted({closeout_model(r) for r in rows} - {NO_CALL, UNRECORDED})
+    cols = named + [k for k in (UNRECORDED, NO_CALL) if any(closeout_model(r) == k for r in rows)]
+    label = lambda m: (f"{tex_tt(m)} ({closeout_family(m)})" if m in named
+                       else m[0].upper() + m[1:])
+    # Column heads in two lines (family over model) so the table fits the page.
+    stack = {NO_CALL: "No model\\\\call", UNRECORDED: "Model not\\\\recorded"}
+    head = " & ".join(f"\\shortstack[r]{{{closeout_family(m)}\\\\{tex_tt(m)}}}" if m in named
+                      else f"\\shortstack[r]{{{stack[m]}}}" for m in cols)
+    lines = []
+    body = []
+    # A review whose provider call is still running (status "running") keeps
+    # its ledger outcome but is shown as still running: no acceptance yet, and
+    # not a negative verdict. A terminal record that is only pending
+    # adjudication (pending true, e.g. an invalid report) keeps its outcome
+    # (ledger owner, 2026-11-14).
+    shown = lambda r: PENDING if r.get("status") == "running" else r["outcome"]
+    for o in OUTCOMES + [PENDING]:
+        cnt = [sum(1 for r in rows if shown(r) == o and closeout_model(r) == m) for m in cols]
+        if sum(cnt):
+            body.append(f"{OUTCOME_TEX[o]} & " + " & ".join(str(c) for c in cnt) + f" & {sum(cnt)} \\\\\n")
+    tot = [sum(1 for r in rows if closeout_model(r) == m) for m in cols]
+    body.append("\\midrule\n")
+    body.append("Records & " + " & ".join(str(c) for c in tot) + f" & {len(rows)} \\\\\n")
+    # The whole tabular is one macro: a column specification cannot come from
+    # a macro (array expands no preamble tokens).
+    # Rows inside the tabular are indented two spaces, as format-tex (the
+    # commit hook) writes them, so a committed copy equals a fresh run.
+    inner = ["\\toprule\n", f"Outcome & {head} & All \\\\\n", "\\midrule\n"] + body + ["\\bottomrule\n"]
+    lines.append("\\newcommand{\\aiCloseoutTable}{%\n"
+                 f"\\begin{{tabular}}{{@{{}}l{'r' * (len(cols) + 1)}@{{}}}}\n"
+                 + "".join("  " + x for x in inner) + "\\end{tabular}}\n")
+
+    # Tokens: per actual model and per reporting format, under the format's own
+    # field names, summed only over the records that report them.
+    tok = []
+    usage = [r for r in rows if counts_as_usage(r)]
+    for m in cols:
+        mr = [r for r in usage if closeout_model(r) == m]
+        fmt = {}
+        for r in mr:
+            t = r.get("token_usage_reported")
+            if isinstance(t, dict):
+                flat = {}
+                for k, v in t.items():
+                    if isinstance(v, dict):
+                        flat.update({f"{k}.{kk}": vv for kk, vv in v.items()})
+                    else:
+                        flat[k] = v
+                fmt.setdefault("summary", []).append(flat)
+            elif isinstance(t, list):
+                calls = {}
+                for c in t:
+                    for k, v in c.items():
+                        calls[k] = calls.get(k, 0) + (v or 0)
+                fmt.setdefault("per call", []).append(calls)
+        for kind, recs in sorted(fmt.items()):
+            keys = sorted({k for d in recs for k in d if isinstance(d.get(k), (int, float))})
+            vals = ", ".join(f"{tex_tt(k)} {fmt_int(sum(d.get(k) or 0 for d in recs))}" for k in keys)
+            tok.append(f"{label(m)} ({kind}) & {vals} & {len(recs)} of {len(mr)} \\\\\n")
+    lines.append("\\newcommand{\\aiCloseoutTokenRows}{%\n" + "".join(tok) + "}\n")
+
+    # Cost: per model and recorded currency; a cost without a currency is
+    # printed as such, never assigned one.
+    cost = []
+    for m in cols:
+        mr = [r for r in usage if closeout_model(r) == m and r.get("cost_reported") is not None]
+        for cur in sorted({r.get("cost_currency") or "" for r in mr}):
+            sel = [r for r in mr if (r.get("cost_currency") or "") == cur]
+            amount = f"{sum(r['cost_reported'] for r in sel):.2f}"
+            cost.append(f"{label(m)}: {amount} ({cur or 'currency not recorded'}; {len(sel)} records)")
+    lines.append(macro("aiCloseoutCost", "; ".join(cost) if cost else "none reported"))
+    lines.append(macro("aiCloseoutRecords", str(len(rows))))
+    lines.append(macro("aiCloseoutUsageRecords", str(len(usage))))
+    lines.append(macro("aiCloseoutMonth",
+                       dt.datetime.fromisoformat(led["snapshot_utc"]).strftime("%B %Y")))
+    lines.append(macro("aiCloseoutSnapshot",
+                       dt.datetime.fromisoformat(led["snapshot_utc"]).strftime("%B~%-d, %Y")))
+    out.extend(lines)
+
 def main():
     runs, stats, usage, nogo, milestones = load()
     counted_commit = stats["generated_from_commit"]
@@ -269,6 +425,8 @@ def main():
     rows = [f"{c} \\\\\n" for c in cells]  # one line each
     out.append("\\newcommand{\\aiMilestoneKey}{%\n" + "".join(rows) + "}\n")
     out.append(macro("aiMilestones", str(len(milestones))))
+
+    closeout(out)
 
     root = os.path.abspath(os.path.join(HERE, "..", ".."))
     with open(os.path.join(root, "notes", "ai-statistics-data.tex"), "w") as fh:

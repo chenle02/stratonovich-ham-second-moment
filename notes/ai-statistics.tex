@@ -139,3 +139,45 @@ token totals come from the logs of one machine. The \aiCommits{} commits are
 counted in the working repository; the public history has fewer, because commits
 that changed only private files are left out of it. A short list of review
 folders could not be classified and is kept with the scripts.
+
+\section*{The publication closeout reviews of \aiCloseoutMonth}
+
+This section covers only the closeout reviews before publication, in
+\aiCloseoutMonth: \aiCloseoutRecords{} records in the experiment's run ledger,
+whose snapshot is dated \aiCloseoutSnapshot. The experiment itself is the way of
+doing mathematics described in the Preface, and its primary record is the whole
+repository: its history, proofs, failed approaches, human and AI work, sources,
+reviews and the Lean companion. The run ledger instruments only this closing
+round, and only partly; its own coverage note says what it includes. Its
+records are not added to the totals above, and its token counts, reported for
+some records only, are not totals for the project. The table counts the outcome
+recorded for each record, by the model that actually ran. No record accepts the
+whole book: each acceptance is limited to the scope its review stated.
+
+\begin{center}
+\small
+\setlength{\tabcolsep}{5pt}
+\aiCloseoutTable
+\end{center}
+
+Where a review tool reported token counts for a closeout record, they are summed
+below per model and in the form in which they were reported. Only the
+\aiCloseoutUsageRecords{} records that the ledger marks as eligible for
+aggregation are summed. Recoveries, refusals, preflights and addenda made no new
+provider call; a format continuation is not summed, because its usage may
+overlap the original's; and the ledger also leaves out the records whose model
+it does not record. Records without figures are not estimated, and these sums
+cover only the records summed.
+
+\begin{center}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.27\textwidth}>{\raggedright\arraybackslash}p{0.5\textwidth}r@{}}
+  \toprule
+  Model (form) & Reported totals & Reported on \\
+  \midrule
+  \aiCloseoutTokenRows
+  \bottomrule
+\end{tabular}
+\end{center}
+
+Reported costs of the closeout records: \aiCloseoutCost.

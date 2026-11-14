@@ -178,3 +178,30 @@ Total & 627 & 590 & 37 & 325 & 76 & 135 & \\
 \textbf{14}~Nov~11: Lean correspondence gates closed through wave L4 \\
 }
 \newcommand{\aiMilestones}{14}
+\newcommand{\aiCloseoutTable}{%
+\begin{tabular}{@{}lrrrrr@{}}
+  \toprule
+  Outcome & \shortstack[r]{DeepSeek\\\texttt{deepseek-{}v4-{}pro}} & \shortstack[r]{Kimi\\\texttt{k3}} & \shortstack[r]{Model not\\recorded} & \shortstack[r]{No model\\call} & All \\
+  \midrule
+  Accepted at the stated scope & 1 & 2 & 0 & 0 & 3 \\
+  Not accepted & 2 & 0 & 4 & 0 & 6 \\
+  Invalid report & 2 & 6 & 0 & 0 & 8 \\
+  Recovery refused & 0 & 0 & 0 & 1 & 1 \\
+  Recovered & 0 & 0 & 0 & 4 & 4 \\
+  Preflight (no call) & 0 & 0 & 0 & 3 & 3 \\
+  Continuation (no new vote) & 0 & 2 & 0 & 0 & 2 \\
+  Timed out & 0 & 1 & 0 & 0 & 1 \\
+  Still running (no verdict yet) & 0 & 0 & 1 & 0 & 1 \\
+  \midrule
+  Records & 5 & 11 & 5 & 8 & 29 \\
+  \bottomrule
+\end{tabular}}
+\newcommand{\aiCloseoutTokenRows}{%
+\texttt{deepseek-{}v4-{}pro} (DeepSeek) (summary) & \texttt{cache.read} 0, \texttt{cache.write} 0, \texttt{input} 1{,}986{,}239, \texttt{output} 33{,}007, \texttt{reasoning} 121{,}948, \texttt{total} 2{,}141{,}194 & 5 of 5 \\
+\texttt{k3} (Kimi) (per call) & \texttt{inputCacheCreation} 0, \texttt{inputCacheRead} 81{,}112{,}651, \texttt{inputOther} 2{,}768{,}218, \texttt{output} 594{,}309 & 9 of 9 \\
+}
+\newcommand{\aiCloseoutCost}{\texttt{deepseek-{}v4-{}pro} (DeepSeek): 1.52 (currency not recorded; 4 records)}
+\newcommand{\aiCloseoutRecords}{29}
+\newcommand{\aiCloseoutUsageRecords}{14}
+\newcommand{\aiCloseoutMonth}{November 2026}
+\newcommand{\aiCloseoutSnapshot}{November~14, 2026}
