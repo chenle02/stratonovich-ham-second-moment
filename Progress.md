@@ -20165,3 +20165,12 @@ Two NG11report-only slips remain unmodified: an abandoned denominator and an int
 ### 2026-11-13 — release dashboard and scoped Gold boundary corrected (Agent 3; for Le)
 
 Replaced the stale chronological status dashboard with current gate states and immutable evidence pointers. Checked notes/extra.bib/styles.tex unchanged between3f and origin30818d6f. A preparatory skeleton had wrongly expanded Chapter12’s scoped four-role Gold recipe into a mandatory extra whole-book four-role/honesty campaign. Actual Progress19620–19667/19756 invokes scopedChapter12; PROJECT-GOAL67–74 requires wholeDS/KimiHIGH plus freshcold. Corrected before dispatch; original proposal preserved. No required role was waived and no threshold lowered. Exact scope note: SCOPED-GOLD-BOUNDARY.md. Agent16 received progress updatea9e28c83e98f.
+
+
+### 2026-11-13 — complete scientific integration successor launched (Agent 3; for Le)
+
+Root read the full successor contract and reran validation: 201 payloads, all 169 original core inputs unchanged, all 106 public sources equal Git3f, all 603 scientific identities plus 16 adverse duties retained. Complete 22 hostile/response records accompany new NG11/NG18 mathematical workings and separate correction notes, current reader applications, and the numerical consumer map. Prior grades are not correctness premises. Conditional033 source-image review remains independently pending.
+
+Measured input is 731485 tokens. Root explicitly selected an actual output/reasoning cap of 262144 (rather than the non-fitting catalog maximum393216), plus32768 conditional runtime allowance and53 agent tokens: total1026450,22126 conditional headroom. No source or objection was removed to fit. Fresh DeepSeek V4 Pro tool0 launched with7200second cap, exec50815. This is substantive nonblind MAIN integration, not a confidence-only repeat, finalcold, scopedGold panel or publication clearance. Freeze WHOLE-MAIN-V2-FREEZE.json; raw input archive under sources/review-packets/.
+
+Curated freeze records now use repository-relative launch-record pointers for temporary runtime locations; original native launch records remain unchanged. Office21 received a read-only request for existing scoped-panel continuation/accounting capabilities, not authorization to build a new tool or expand review scope. No manuscript edits or pushes.
