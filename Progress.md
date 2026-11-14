@@ -20294,3 +20294,8 @@ Original ACCEPT/HIGH for NG03/11/15/16/19; eight checks,38inputs exact. Exclude 
 ### 2026-11-14 — SOURCE-BNZ terminal custody and scoped adjudication
 
 Original producerPASS_WITH_NOTES/HIGH acceptedtrue; six IDs,4texts/14exactPNG,334candidatehashes. Bounded BNZ edition/kernel/Lemma4.3/NG10application/proof-start scope only; no full external proof or fresh publisher-byte identity. Root read full public reasons and limitations. Exact delivery and adjudication: `private/publication-closeout/chapter12-source-bnz-result`; complete rawsource/session custody: `sources/review-packets/chapter12-source-bnz-161337-terminal.tar.gz`. Original grades remain unchanged; no whole-composition, whole-book or final-cold acceptance.
+
+
+### 2026-11-14 — N5 terminal custody and scoped adjudication
+
+Original PASS/HIGH preserved. Exclude the false common[-11,11] interval: correct common interval[-7,7] contains(5,6). White-noise lower-profile formula and phase-norm wording retain their local scope. Exact delivery, root full-read adjudication and source-private archive binding: `private/publication-closeout/chapter12-n5-result`. No canonical grade rewriting, extra independent vote or global acceptance.
