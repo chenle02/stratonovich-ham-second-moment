@@ -144,7 +144,12 @@ folders could not be classified and is kept with the scripts.
 
 This section covers only the closeout reviews before publication, in
 \aiCloseoutMonth: \aiCloseoutRecords{} records in the experiment's run ledger,
-whose snapshot is dated \aiCloseoutSnapshot. The experiment itself is the way of
+whose snapshot is dated \aiCloseoutSnapshot. The figures come from the dated
+correction of that ledger recorded on \aiCloseoutCorrection{}
+(\aiCloseoutSource, commit \texttt{\aiCloseoutSourceCommit}, blob
+\texttt{\aiCloseoutSourceBlob}); it adds verified model identities and
+accounting fields and leaves every reported outcome, token count and cost as
+in the snapshot. The experiment itself is the way of
 doing mathematics described in the Preface, and its primary record is the whole
 repository: its history, proofs, failed approaches, human and AI work, sources,
 reviews and the Lean companion. The run ledger instruments only this closing
@@ -160,14 +165,19 @@ whole book: each acceptance is limited to the scope its review stated.
 \aiCloseoutTable
 \end{center}
 
-Where a review tool reported token counts for a closeout record, they are summed
-below per model and in the form in which they were reported. Only the
-\aiCloseoutUsageRecords{} records that the ledger marks as eligible for
-aggregation are summed. Recoveries, refusals, preflights and addenda made no new
-provider call; a format continuation is not summed, because its usage may
-overlap the original's; and the ledger also leaves out the records whose model
-it does not record. Records without figures are not estimated, and these sums
-cover only the records summed.
+Token counts are given for the \aiCloseoutDenominator{} original provider
+attempts, per model and per reporting format, in the form in which the review
+tool reported them. Only the \aiCloseoutUsageRecords{} attempts with reported
+usage are summed; an attempt without figures is shown as having no reported
+value, and nothing is estimated. Recoveries, refusals, preflights and addenda
+made no new provider call, and format continuations are not summed, because
+their usage may overlap the original's. For the panel records the reported
+counts cover only the final step, not the whole session. The formats, as
+recorded in the ledger:
+\begin{itemize}\small
+  \setlength{\itemsep}{0pt}
+  \aiCloseoutFormatKey
+\end{itemize}
 
 \begin{center}
 \small

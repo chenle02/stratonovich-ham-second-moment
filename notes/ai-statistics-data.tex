@@ -184,7 +184,7 @@ Total & 627 & 590 & 37 & 325 & 76 & 135 & \\
   Outcome & \shortstack[r]{DeepSeek\\\texttt{deepseek-{}v4-{}pro}} & \shortstack[r]{Kimi\\\texttt{k3}} & \shortstack[r]{Model not\\recorded} & \shortstack[r]{No model\\call} & All \\
   \midrule
   Accepted at the stated scope & 1 & 2 & 0 & 0 & 3 \\
-  Not accepted & 2 & 0 & 4 & 0 & 6 \\
+  Not accepted & 5 & 0 & 1 & 0 & 6 \\
   Invalid report & 2 & 6 & 0 & 0 & 8 \\
   Recovery refused & 0 & 0 & 0 & 1 & 1 \\
   Recovered & 0 & 0 & 0 & 4 & 4 \\
@@ -193,15 +193,30 @@ Total & 627 & 590 & 37 & 325 & 76 & 135 & \\
   Timed out & 0 & 1 & 0 & 0 & 1 \\
   Still running (no verdict yet) & 0 & 0 & 1 & 0 & 1 \\
   \midrule
-  Records & 5 & 11 & 5 & 8 & 29 \\
+  Records & 8 & 11 & 2 & 8 & 29 \\
   \bottomrule
 \end{tabular}}
 \newcommand{\aiCloseoutTokenRows}{%
-\texttt{deepseek-{}v4-{}pro} (DeepSeek) (summary) & \texttt{cache.read} 0, \texttt{cache.write} 0, \texttt{input} 1{,}986{,}239, \texttt{output} 33{,}007, \texttt{reasoning} 121{,}948, \texttt{total} 2{,}141{,}194 & 5 of 5 \\
-\texttt{k3} (Kimi) (per call) & \texttt{inputCacheCreation} 0, \texttt{inputCacheRead} 81{,}112{,}651, \texttt{inputOther} 2{,}768{,}218, \texttt{output} 594{,}309 & 9 of 9 \\
+\texttt{deepseek-{}v4-{}pro} (DeepSeek), format A & \texttt{cache.read} 0, \texttt{cache.write} 0, \texttt{input} 1{,}986{,}239, \texttt{output} 33{,}007, \texttt{reasoning} 121{,}948, \texttt{total} 2{,}141{,}194 & 5 of 8 \\
+\texttt{deepseek-{}v4-{}pro} (DeepSeek), format D (header/final-step only) & \texttt{input} 19{,}811, \texttt{output} 10{,}253, \texttt{reasoning} 34{,}463 & 3 of 8 \\
+\texttt{k3} (Kimi), format B & \texttt{inputCacheCreation} 0, \texttt{inputCacheRead} 5{,}405{,}065, \texttt{inputOther} 264{,}438, \texttt{output} 100{,}424 & 1 of 9 \\
+\texttt{k3} (Kimi), format C & \texttt{inputCacheCreation} 0, \texttt{inputCacheRead} 75{,}707{,}586, \texttt{inputOther} 2{,}503{,}780, \texttt{output} 493{,}885 & 8 of 9 \\
+Model not recorded, format D (header/final-step only) & \texttt{input} 26{,}040, \texttt{output} 2{,}515, \texttt{reasoning} 3{,}621 & 1 of 2 \\
+Model not recorded & no reported value & 1 of 2 \\
 }
-\newcommand{\aiCloseoutCost}{\texttt{deepseek-{}v4-{}pro} (DeepSeek): 1.52 (currency not recorded; 4 records)}
+\newcommand{\aiCloseoutFormatKey}{%
+\item[A:] \path{{cache:{read:number,write:number},input:number,output:number,reasoning:number,total:number}}
+\item[B:] \path{list[{inputCacheCreation:number,inputCacheRead:number,inputOther:number,output:number};{inputCacheCreation:number,inputOther:number,output:number}]}
+\item[C:] \path{list[{inputCacheCreation:number,inputCacheRead:number,inputOther:number,output:number}]}
+\item[D:] \path{{input:number,output:number,reasoning:number}}
+}
+\newcommand{\aiCloseoutCost}{\texttt{deepseek-{}v4-{}pro} (DeepSeek): 1.64 (currency not recorded; 7 records); Model not recorded: 0.04 (currency not recorded; 1 record)}
 \newcommand{\aiCloseoutRecords}{29}
-\newcommand{\aiCloseoutUsageRecords}{14}
+\newcommand{\aiCloseoutUsageRecords}{18}
+\newcommand{\aiCloseoutDenominator}{19}
+\newcommand{\aiCloseoutSource}{\path{experiment/ledger-updates/2026-11-14/run-ledger-v3.json}}
+\newcommand{\aiCloseoutSourceCommit}{ef80cb87}
+\newcommand{\aiCloseoutSourceBlob}{acb451a0}
+\newcommand{\aiCloseoutCorrection}{November~14, 2026}
 \newcommand{\aiCloseoutMonth}{November 2026}
 \newcommand{\aiCloseoutSnapshot}{November~14, 2026}

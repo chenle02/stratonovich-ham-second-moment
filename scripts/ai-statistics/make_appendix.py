@@ -94,11 +94,14 @@ def macro(name, value):
 
 
 # ---- The publication closeout reviews (public experiment ledger) ----------
-# experiment/run-ledger.json is the public, bounded record of the closeout
-# reviews (its own `coverage` line says what it covers). It is counted as it
-# stands: no figure is estimated or recomputed, and a missing value stays
-# missing. The book build stops if the ledger is absent (Le, 2026-11-13).
-LEDGER = os.path.join(HERE, "..", "..", "experiment", "run-ledger.json")
+# The ledger is the public, bounded record of the closeout reviews (its own
+# `coverage` line says what it covers). It is counted as it stands: no figure
+# is estimated or recomputed, and a missing value stays missing. The file is
+# chosen explicitly (here, or with --ledger), never as "the newest on disk",
+# and must be committed and unmodified: the appendix names it with its commit
+# and blob (ledger owner, 2026-11-14). The book build stops if it is absent.
+ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
+LEDGER_DEFAULT = "experiment/ledger-updates/2026-11-14/run-ledger-v3.json"
 OUTCOMES = ["accepted-at-scope", "not-accepted", "invalid", "refused",
             "recovered", "preflight", "continuation", "timeout"]
 PENDING = "running"   # display class: a review still running (no verdict yet)
@@ -152,17 +155,33 @@ def counts_as_usage(row):
     kind = row.get("record_kind")
     if kind in NOT_USAGE_KINDS or row.get("provider_calls") == 0:
         return False
-    if row.get("aggregation_eligible") is False:   # the ledger's own exclusion
-        return False
+    if row.get("aggregation_eligible") is not True:   # v3: an original provider
+        return False                                   # attempt with reported usage
     if kind == CONTINUATION_KIND:
         return row.get(USAGE_NONOVERLAP_FIELD) is True
     return True
 
 
-def closeout(out):
-    if not os.path.exists(LEDGER):
-        raise SystemExit(f"{LEDGER} is missing: the closeout subsection is generated from it")
-    led = json.load(open(LEDGER))
+def ledger_source(rel):
+    """Commit and blob of a committed, unmodified ledger file."""
+    git = lambda *a: subprocess.run(["git", "-C", ROOT, *a], capture_output=True, text=True)
+    if not os.path.exists(os.path.join(ROOT, rel)):
+        raise SystemExit(f"{rel} is missing: the closeout subsection is generated from it")
+    if git("ls-files", "--error-unmatch", rel).returncode or git("diff", "--quiet", "HEAD", "--", rel).returncode:
+        raise SystemExit(f"{rel} is not committed or has local changes; use a committed ledger")
+    commit = git("log", "-1", "--format=%h", "--", rel).stdout.strip()
+    blob = git("rev-parse", "--short", f"HEAD:{rel}").stdout.strip()
+    return commit, blob
+
+
+def tex_path(s):
+    """A long literal (format signature, path) that may break at punctuation."""
+    return "\\path{" + s + "}"
+
+
+def closeout(out, ledger_rel):
+    commit, blob = ledger_source(ledger_rel)
+    led = json.load(open(os.path.join(ROOT, ledger_rel)))
     rows = led["rows"]
     bad = [r.get("id") for r in rows if r.get("outcome") not in OUTCOMES]
     if bad:
@@ -201,47 +220,77 @@ def closeout(out):
                  f"\\begin{{tabular}}{{@{{}}l{'r' * (len(cols) + 1)}@{{}}}}\n"
                  + "".join("  " + x for x in inner) + "\\end{tabular}}\n")
 
-    # Tokens: per actual model and per reporting format, under the format's own
-    # field names, summed only over the records that report them.
-    tok = []
+    # Tokens (ledger v3): the denominator is the original provider attempts
+    # (telemetry_denominator_eligible); the sums use only those with reported
+    # usage (aggregation_eligible). Lines are per actual model and exact
+    # token_format_signature, under the format's own field names; a record
+    # without figures is a "no reported value" line, never zero.
+    den = [r for r in rows if r.get("telemetry_denominator_eligible") is True]
     usage = [r for r in rows if counts_as_usage(r)]
+    if any(r not in den for r in usage):
+        raise SystemExit("a summed record is outside the telemetry denominator")
+    sigs = []
+    for r in den:
+        sg = r.get("token_format_signature")
+        if sg and sg != "not-recorded" and sg not in sigs:
+            sigs.append(sg)
+    letter = {sg: chr(ord("A") + i) for i, sg in enumerate(sigs)}
+    tok = []
     for m in cols:
-        mr = [r for r in usage if closeout_model(r) == m]
-        fmt = {}
-        for r in mr:
-            t = r.get("token_usage_reported")
-            if isinstance(t, dict):
-                flat = {}
-                for k, v in t.items():
-                    if isinstance(v, dict):
-                        flat.update({f"{k}.{kk}": vv for kk, vv in v.items()})
-                    else:
-                        flat[k] = v
-                fmt.setdefault("summary", []).append(flat)
-            elif isinstance(t, list):
-                calls = {}
-                for c in t:
+        md = [r for r in den if closeout_model(r) == m]
+        if not md:
+            continue
+        for sg in sigs + ["not-recorded"]:
+            bucket = [r for r in md if (r.get("token_format_signature") or "not-recorded") == sg]
+            if not bucket:
+                continue
+            if sg == "not-recorded":
+                tok.append(f"{label(m)} & no reported value & {len(bucket)} of {len(md)} \\\\\n")
+                continue
+            scopes = {("header" if "header/final-step" in (r.get("accounting_scope") or "") else "full")
+                      for r in bucket}
+            if len(scopes) > 1:
+                raise SystemExit(f"mixed accounting scopes in one format for {m}")
+            rep_rows = [r for r in bucket if r in usage]
+            sums = collections.Counter()
+            for r in rep_rows:
+                t = r.get("token_usage_reported")
+                items = t if isinstance(t, list) else [t]
+                for c in items:
                     for k, v in c.items():
-                        calls[k] = calls.get(k, 0) + (v or 0)
-                fmt.setdefault("per call", []).append(calls)
-        for kind, recs in sorted(fmt.items()):
-            keys = sorted({k for d in recs for k in d if isinstance(d.get(k), (int, float))})
-            vals = ", ".join(f"{tex_tt(k)} {fmt_int(sum(d.get(k) or 0 for d in recs))}" for k in keys)
-            tok.append(f"{label(m)} ({kind}) & {vals} & {len(recs)} of {len(mr)} \\\\\n")
+                        if isinstance(v, dict):
+                            for kk, vv in v.items():
+                                sums[f"{k}.{kk}"] += vv or 0
+                        elif isinstance(v, (int, float)):
+                            sums[k] += v
+            vals = ", ".join(f"{tex_tt(k)} {fmt_int(sums[k])}" for k in sorted(sums))
+            note = " (header/final-step only)" if scopes == {"header"} else ""
+            tok.append(f"{label(m)}, format {letter[sg]}{note} & {vals} & {len(rep_rows)} of {len(md)} \\\\\n")
     lines.append("\\newcommand{\\aiCloseoutTokenRows}{%\n" + "".join(tok) + "}\n")
+    # One line per format, the signature exactly as recorded.
+    items = "".join(f"\\item[{letter[sg]}:] {tex_path(sg)}\n" for sg in sigs)
+    lines.append("\\newcommand{\\aiCloseoutFormatKey}{%\n" + items + "}\n")
 
-    # Cost: per model and recorded currency; a cost without a currency is
-    # printed as such, never assigned one.
+    # Cost: per model over the summed records; no currency is recorded, so
+    # none is assigned.
     cost = []
     for m in cols:
         mr = [r for r in usage if closeout_model(r) == m and r.get("cost_reported") is not None]
         for cur in sorted({r.get("cost_currency") or "" for r in mr}):
             sel = [r for r in mr if (r.get("cost_currency") or "") == cur]
             amount = f"{sum(r['cost_reported'] for r in sel):.2f}"
-            cost.append(f"{label(m)}: {amount} ({cur or 'currency not recorded'}; {len(sel)} records)")
+            noun = "record" if len(sel) == 1 else "records"
+            cost.append(f"{label(m)}: {amount} ({cur or 'currency not recorded'}; {len(sel)} {noun})")
     lines.append(macro("aiCloseoutCost", "; ".join(cost) if cost else "none reported"))
     lines.append(macro("aiCloseoutRecords", str(len(rows))))
     lines.append(macro("aiCloseoutUsageRecords", str(len(usage))))
+    lines.append(macro("aiCloseoutDenominator", str(len(den))))
+    lines.append(macro("aiCloseoutSource", tex_path(ledger_rel)))
+    lines.append(macro("aiCloseoutSourceCommit", commit))
+    lines.append(macro("aiCloseoutSourceBlob", blob))
+    if led.get("correction_recorded_utc"):
+        lines.append(macro("aiCloseoutCorrection",
+                           dt.datetime.fromisoformat(led["correction_recorded_utc"]).strftime("%B~%-d, %Y")))
     lines.append(macro("aiCloseoutMonth",
                        dt.datetime.fromisoformat(led["snapshot_utc"]).strftime("%B %Y")))
     lines.append(macro("aiCloseoutSnapshot",
@@ -249,6 +298,11 @@ def closeout(out):
     out.extend(lines)
 
 def main():
+    import argparse
+    ap = argparse.ArgumentParser(description="Generate notes/ai-statistics-data.tex")
+    ap.add_argument("--ledger", default=LEDGER_DEFAULT,
+                    help="committed experiment ledger, repository-relative (default: %(default)s)")
+    args = ap.parse_args()
     runs, stats, usage, nogo, milestones = load()
     counted_commit = stats["generated_from_commit"]
     commits = git_commits(counted_commit)
@@ -426,7 +480,7 @@ def main():
     out.append("\\newcommand{\\aiMilestoneKey}{%\n" + "".join(rows) + "}\n")
     out.append(macro("aiMilestones", str(len(milestones))))
 
-    closeout(out)
+    closeout(out, args.ledger)
 
     root = os.path.abspath(os.path.join(HERE, "..", ".."))
     with open(os.path.join(root, "notes", "ai-statistics-data.tex"), "w") as fh:
