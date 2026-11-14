@@ -298,3 +298,22 @@ Open items in the record:
 For this release the companion's line citations were re-anchored to the published manuscript, and the re-anchor was reviewed in the same way.
 
 These reviews are not a human verification, and they do not check the analytic inputs that stay outside Lean.
+
+### Re-anchor tool committed (2026-11-14)
+The tool now lives on the private companion dev branch `reanchor-98f45bed` at `1fa1508`, in `reanchor/`. Session scratch is no longer the reference copy.
+- **Not exported.** `.gitattributes` marks `reanchor/` (and itself) `export-ignore`, so `git archive` and the public release tree built from it contain neither. This matters because `overrides.json` and `census-decisions.json` quote manuscript context.
+- **Not a build input.** The receipts are unaffected.
+- **Contents:**
+  - `tools/`: `run_reanchor.sh`, `reanchor_locators.py`, `census2.py`, `anchor_pin.py`, `anchor-changes.json`, `lean_comment_only.py`, `add_new_lines.py`, `cited_ranges.py`;
+  - `overrides.json` (the hand resolutions, keyed on the a284420 side);
+  - `census-decisions.json`;
+  - `spans-new.tsv`;
+  - `README.md`.
+- **Usage:** from any checkout of the dev repository, with the manuscript repository at `<HOME>/workspace/svn/Article-Stratonovich-HAM-Second-Moment`:
+  `reanchor/tools/run_reanchor.sh NEW_SHA [OLD_SHA=a284420] [COMPANION_REF=reanchor-98f45bed]`
+  - Output goes to `${REANCHOR_OUT:-~/.local/state/stratonovich-reanchor}/run-<NEW8>/`, outside the repository.
+  - Nothing is committed.
+  - Before rerunning the same SHA: `git worktree remove --force <OUT>/tree; rm -rf <OUT>`.
+- **Adding a notable manuscript change:** add one entry to `tools/anchor-changes.json`. An entry is used only if its SHA is an ancestor of NEW_SHA. The three entries now are 98f45bed (the C_dir rename), 6f27a8ec (the Chen attribution) and 9581d7c6 (the front-guide paragraph).
+- **Tested from the committed location against 9581d7c6.** The result is identical to the scratch run: 8915 locator rows, the same tree, 2002 files scanned, and every check passes.
+- At R: run the committed copy against R, then rebuild the v0.10.0 public candidate with receipts, then the re-anchor review and confirmation, then Le's acceptance.
