@@ -20416,3 +20416,10 @@ Original canonical PASS_WITH_NOTES/HIGH retained for six complete sources/six du
 The original native extraction ended FAIL/MEDIUM, accepted=false, with all seven required source bodies covered and four task IDs. Independent technical audit verifies the frozen520-file identity, source-view inverses and B002 original/recovered structured-content equality. The two required metadata repairs concern current README status/representation wording and correction navigation; they are not mathematical proof defects. Exact-file supplement approval remains recorded, while external release is held. The provider outcome and all original records remain unchanged.
 
 Terminal custody and the full author adjudication are in `private/publication-closeout/disclosure-lineage-r4-terminal-20261114/`; raw records remain in the source-private archive named there. The three-file private README/dated-availability proposal is pending release filtering and Le approval, not adopted by this commit. No new provider call, mathematical vote, ledger rewrite or public repair occurred.
+
+
+### 2026-11-14 — D-LEDGER terminal custody and scoped disposition
+
+D-LEDGER remains canonical FAIL/MEDIUM, accepted=false. All11 required bodies and frozen520 hashes match. Exact v3-to-v4 preservation and the current generator closeout macro equality were checked without code or TeX edits. Two required AppendixE prose repairs remain in the separate held editor/release-owner unit; no table or historical report was changed.
+
+Evidence and full author adjudication: `private/publication-closeout/disclosure-ledger-r4-terminal-20261114/`. Raw records remain in the source-private archive pinned there. Zero new mathematical votes or provider calls; public repair proposals remain separate and require their own release approval.
