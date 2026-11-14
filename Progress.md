@@ -20423,3 +20423,10 @@ Terminal custody and the full author adjudication are in `private/publication-cl
 D-LEDGER remains canonical FAIL/MEDIUM, accepted=false. All11 required bodies and frozen520 hashes match. Exact v3-to-v4 preservation and the current generator closeout macro equality were checked without code or TeX edits. Two required AppendixE prose repairs remain in the separate held editor/release-owner unit; no table or historical report was changed.
 
 Evidence and full author adjudication: `private/publication-closeout/disclosure-ledger-r4-terminal-20261114/`. Raw records remain in the source-private archive pinned there. Zero new mathematical votes or provider calls; public repair proposals remain separate and require their own release approval.
+
+
+### 2026-11-14 — D-HISTORICAL terminal custody and scoped disposition
+
+D-HISTORICAL retains canonical PASS_WITH_NOTES/HIGH, accepted=true for extraction only, with all12 required bodies and frozen520 hashes matching. The author correction distinguishes the latest assigned historical composition document from current Le choiceB: one shared N1–N8 set,13H+4D extraction and two fresh syntheses;169 originaltext/52image duties. The old authority/report are not rewritten and this slice does not certify the full source union.
+
+Evidence and full author adjudication: `private/publication-closeout/disclosure-historical-r4-terminal-20261114/`. Raw records remain in the source-private archive pinned there. Zero new mathematical votes or provider calls; public repair proposals remain separate and require their own release approval.
