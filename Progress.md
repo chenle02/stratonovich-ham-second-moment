@@ -16,8 +16,8 @@ force Chen's predicted constant or create a Lean companion without approval.
 
 ## Status
 
-Research INCOMPLETE — preprint-readiness closure is active at Le's request
-(2026-11-12). The 394-page book includes Chapter 12, the approved rough-noise future-work discussion and the L9 verification
+Research INCOMPLETE — publication execution awaits Le's scientific-review
+direction (2026-11-14). The 394-page book includes Chapter 12, the approved rough-noise future-work discussion and the L9 verification
 appendices. Whole-report HIGH scientific review, final cold acceptance and
 release closure remain open. The historical Kimi hold was lifted; prior
 MEDIUM and malformed reports remain unaccepted in their recorded scopes.
@@ -25,7 +25,7 @@ MEDIUM and malformed reports remain unaccepted in their recorded scopes.
 ## Active publication-completion frontier (2026-11-14)
 
 Le explicitly requested setting and pursuing the publication-completion goal.
-The goal service is ACTIVE; this resumption preserves PROJECT-GOAL.md and the
+Execution awaits review direction; the objective preserves PROJECT-GOAL.md and the
 required whole-paper scientific, source/visual, fresh cold and delivery gates.
 The older roadmap counts and launcher snapshots below remain historical;
 they do not override this frontier or the latest dated adjudications.
@@ -20551,3 +20551,9 @@ Le requested the active publication goal and immediate work. Verified local/orig
 ### 2026-11-14: Exact current book-only source candidate built and checked
 
 Prepared the 107-file book-only archive at `66dadf6c`, with a reusable revision-bound private builder. All non-derived recorder inputs match exact Git blobs; the index is separately generated. Three isolated package passes succeed with zero build guards, identical text/labels/index, clean PDF syntax, embedded non-Type3 fonts and 2,968 valid links. A deliberate source mutation is detected. Package/reference/adopted book rasterizations match on all394pages at72dpi; this is mechanical equality, not independent visual/scientific or human acceptance. Archive: `sources/release-candidates/book-66dadf6c-interim.tar.gz`, SHA256 `2e4ec748876beed3ead0c38143407059a102322953ce6e4f5ccca792664b9504`. Manifest, exact hash bindings and limits: `private/publication-closeout/publication-resume-20261114/PACKAGE-MANIFEST.json` and `PACKAGE-README.md`. Final F/epoch, filtered-tree equality/negative control and arXiv preview remain pending. Inspected the incomplete skeptic's original final/partial output; no judgment is recovered. Asked Le whether to authorize a bounded successor for its five unwritten checks followed by a fresh assembly assessment; source duties and HIGH remain unchanged, and no provider call is made while that question is pending. Independent package work proceeded without treating the scoped skeptic failure as a blanket stop.
+
+### 2026-11-14: Current TL2025 compatibility verified; required review direction remains
+
+The interim archive at66dadf6c now passes a fresh <HUB> container build pinned to TL2025 digest dbd65d778eb83de9b45fb0a8deb3afe44cbbaba2272e4e1e644e94dda52c7109. Network disabled, no BibTeX or system change. The canonical helper's successful current-date build is preserved separately; a fresh explicit SOURCE_DATE_EPOCH/FORCE_SOURCE_DATE run also passes all three runs with the matching cover date. The394pages,907printed-label records,index,2968links,fonts and zero build guards pass. The246cross-year anchor differences are individually retained and obey only the documented exact mapping; text/PDF-byte equality is not claimed. Evidence and reproducible comparison: `private/publication-closeout/publication-resume-20261114/tl2025/` and `check_tl2025.py`; output archive binding in EVIDENCE-ARCHIVE.json.
+
+The same scientific-review dependency has remained across goal activation, source packaging and this compatibility turn. Le's question about a bounded successor for five unwritten skeptic checks is unanswered. All independent build/package/compatibility work presently available is complete; no model call or live wait exists. Per the paper-dev failed-mandatory-route rule, the full publication goal is BLOCKED pending Le's direction, not completed or downgraded. Exact three-turn audit and remaining dependent gates: `private/publication-closeout/publication-resume-20261114/BLOCKED-AUDIT.md`. No scientific vote, finalF, cold acceptance, public release or submission is claimed.
