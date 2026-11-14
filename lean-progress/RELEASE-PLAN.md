@@ -266,3 +266,35 @@ Tool state:
 - A pattern-free census decides all 14972 uncaptured prose numbers; the run stops if any number is undecided.
 - 8915 citations, 0 unresolved.
 - The dry run at manuscript tip 2f534eda is identical to the one at 98f45bed.
+
+## Book pin (L14 = v0.10.0): Appendix F and preface paragraph (approved by Le and sent to #24, 2026-11-14)
+
+Pins (placeholders until v0.10.0 is published): verified = <v0.10.0 public commit> (replaces `6eb79c7`), coverage = <v0.10.0 coverage commit> (replaces `34b65d7`), version DOI = <v0.10.0 Zenodo DOI>. The concept DOI `10.5281/zenodo.24199104` is unchanged. This paragraph supersedes the L10 and L12 paragraphs above. Suggested use: the full text in Appendix F, and its first and last paragraphs in the preface.
+
+The statements added in waves L10 to L14, and the changes those waves made to existing entries of the coverage record, were checked against the manuscript in correspondence reviews. The reviews were done by AI models from a different family than the one that wrote the formal statements, under the conventions the author fixed in wave L9. Each wave's reviews found documentation corrections only, and no error in a Lean proof. The corrections were made, and a confirmation review passed with high confidence.
+
+The author accepted waves L10 and L11 on 2026-11-13:
+- In wave L10, one assembly step of Proposition P:interval-coefficients assumed a bound on the pairings of the cut-off coefficients that the manuscript does not state as a hypothesis. Wave L11 proves that bound from a supplied expansion of the coefficients.
+- In wave L11, the Gaussian space is represented by Hermite coefficient vectors. Lemmas L:fock-form and L:interval-contractions hold with the manuscript's hypotheses but narrower conclusions, on a Fourier-side model not identified with the physical-space operators.
+
+The author accepted wave L12 the same day, recording that the smoothed covariance of Lemma L:damped-homogeneous-norms is modelled by its density; with that choice the lemma is formalized in full.
+
+Waves L13 and L14 were accepted together, with three further modelling choices recorded:
+- the second moment's two-chain pairing integrals are represented by a deterministic diagram model, with the mixed-moment expansion of Proposition P:mixed supplied as an input;
+- the occupation spaces are modelled by their L² completions;
+- H¹ is modelled as the graph of the weak gradient.
+
+On these models:
+- Propositions P:spatial-four-linear, P:occupation-physical-class, P:raw-occupation-energy and P:masked-auxiliary-norm, and Lemma L:variational-global-mean, are formalized in full.
+- Theorem T:intrinsic-occupation-ceiling is formalized in both forms with the exact constant C_occ over the occupation class itself, without its moment sentence C_2 ≤ U_2.
+- Propositions P:d1-upper and P:low-alpha-upper have their diagram values and coefficient bounds proved on the model, and their statements about the solution follow from the supplied P:mixed.
+
+Open items in the record:
+- Theorems T:full-upper and T:intrinsic-second-moment are outside Lean.
+- Theorem T:white-moment-bounds is formalized for the variational value S_2^pos rather than for C_2, with the white spatial energy supplied.
+- Several results rest on named inputs, each listed with the result that supplies it. These include Propositions P:mixed and P:three-transfer, the first-moment series, and the signed multiplier form.
+- No theorem of the manuscript is verified end to end.
+
+For this release the companion's line citations were re-anchored to the published manuscript, and the re-anchor was reviewed in the same way.
+
+These reviews are not a human verification, and they do not check the analytic inputs that stay outside Lean.
