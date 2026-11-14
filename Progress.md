@@ -20409,3 +20409,10 @@ Root read and verified complete six-source/six-duty documentary extraction and44
 ### 2026-11-14 — H02B extraction and historical encoding evidence preserved
 
 Original canonical PASS_WITH_NOTES/HIGH retained for six complete sources/six duties, ten minor findings/five limitations and A1–A13 routes. Root corrected an initial visual-repr misreading: exact historical parsed NG26 text contains three LF+u sequences, not literal backslash-nu; same in native and continuation bodies. Preserve that serialization observation and all historical originals; no current manuscript defect or proof rework follows. Root verified50-member archive and adjudication at `private/publication-closeout/history-h02b-terminal-custody/`. One original review plus format continuation is not two substantive votes; this extraction casts zero mathematical votes.
+
+
+### 2026-11-14 — D-LINEAGE terminal extraction and private repair boundary
+
+The original native extraction ended FAIL/MEDIUM, accepted=false, with all seven required source bodies covered and four task IDs. Independent technical audit verifies the frozen520-file identity, source-view inverses and B002 original/recovered structured-content equality. The two required metadata repairs concern current README status/representation wording and correction navigation; they are not mathematical proof defects. Exact-file supplement approval remains recorded, while external release is held. The provider outcome and all original records remain unchanged.
+
+Terminal custody and the full author adjudication are in `private/publication-closeout/disclosure-lineage-r4-terminal-20261114/`; raw records remain in the source-private archive named there. The three-file private README/dated-availability proposal is pending release filtering and Le approval, not adopted by this commit. No new provider call, mathematical vote, ledger rewrite or public repair occurred.
