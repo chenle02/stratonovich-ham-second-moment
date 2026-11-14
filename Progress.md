@@ -20384,3 +20384,8 @@ Root verified the source-private archive and all127 member hashes/bytes and read
 ### 2026-11-14 — remaining H12/D3 extraction preparation custody verified
 
 Root verified the exact237-member preparation archive (SHA256 e88a76d120752ed982d6b9d3c76b77e0a60eebaf189bcfb315a0e0f49460fff1). Twelve remaining H groups and three D groups have active extraction-only contracts, unchanged source duties, pinned specs and canonical dry-run receipts; full83-original H ownership remains76remaining plus7H01A. Records: `private/publication-closeout/remaining-history-disclosure-active-preparation/`. Status VERIFIED_PREPARATION_HELD_NO_DISPATCH: no model calls, mathematical votes or scale decision; root retains sequencing after pilot completion.
+
+
+### 2026-11-14 — whole-book source-delta mapping preserved
+
+Root read the draft memo and independently matched the exact Git patch for3f14a7e5→b5d8a537. Seven of106notesTeXfiles changed;248/249book proof bodies and all4reader proofs are byte-identical, with only the documented C_dir alias in PROOF029 changing a book proof body. This is lexical source correspondence, not regrading, semantic certification or current-consumer/global closure; original210scopedHIGH and later33NG obligations retain their scopes. `notes/combined.tex` still has older inlined attribution/readerabstract and needs its separate derived-artifact refresh at finalrelease. Exact patch/hashes and limits: `private/audit/2026-11-14-whole-book-source-delta/`. No publicsource/PDF edit or provider call.
