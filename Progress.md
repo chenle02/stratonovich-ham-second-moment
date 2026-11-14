@@ -20455,3 +20455,7 @@ Root approved exact archive and all 31 payloads. H07 remains PASS_WITH_NOTES/hig
 ### 2026-11-14 H08 terminal historical extraction custody
 
 Root approved exact archive and all 31 payloads. H08 remains PASS_WITH_NOTES/high at extraction scope only, with complete adverse findings and author qualifications retained; zero mathematical votes. All required reads, 520 frozen source hashes and applicable reversible views were checked. Custody: `private/publication-closeout/h08-r4-terminal-20261114/RESULT.json`; private raw archive `sources/review-packets/h08-r4-terminal-20261114.tar.gz`. Synthesis remains unfrozen pending final repair verification and integration.
+
+### 2026-11-14: Original Chapter 12 allocation reconciliation
+
+The bounded author-side allocation check in `private/audit/2026-11-14-final-allocation-check/REPORT.md` verifies all 169 R4 original identities/hashes, the disjoint once-only H83/D46 partitions, 18 reversible views and 52 image pins. The remaining 40 duties have explicit source/range owners. Both proposed syntheses still owe direct complete reads of all five no-go modules; completed component delivery is not whole-module synthesis. Chen's older supplemental book-text binding differs from R4 and is not relabelled current. This private allocation record adds no scientific vote, global acceptance or publication tag.
