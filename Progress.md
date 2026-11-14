@@ -20379,3 +20379,8 @@ Original canonical PASS_WITH_NOTES/HIGH accepted=true retained after exact sourc
 ### 2026-11-14 — H01A and D-CURRENT extraction pilot custody verified
 
 Root verified the source-private archive and all127 member hashes/bytes and read both semantic memos. H01A original remains invalid-report/unaccepted (duplicate major key); no manual deduplication or failed-lineage repair is accepted, and the proposed fresh H extraction remains held. D-CURRENT original refusal remains unchanged; its canonical format-only continuation is accepted with identical complete JSON content, four checks, eleven minor findings, four limitations and zero continuation tool calls. This is extraction-only custody, zero mathematical votes and no overall gate closure. Records: `private/publication-closeout/history-disclosure-pilot-custody/`; archive `sources/review-packets/history-h01a-and-disclosure-current-pilots-terminal.tar.gz` (SHA256 a5f4091689fb98ff9cfad128a9203c70d88b35271eacd66c9abad99e639bf39c).
+
+
+### 2026-11-14 — remaining H12/D3 extraction preparation custody verified
+
+Root verified the exact237-member preparation archive (SHA256 e88a76d120752ed982d6b9d3c76b77e0a60eebaf189bcfb315a0e0f49460fff1). Twelve remaining H groups and three D groups have active extraction-only contracts, unchanged source duties, pinned specs and canonical dry-run receipts; full83-original H ownership remains76remaining plus7H01A. Records: `private/publication-closeout/remaining-history-disclosure-active-preparation/`. Status VERIFIED_PREPARATION_HELD_NO_DISPATCH: no model calls, mathematical votes or scale decision; root retains sequencing after pilot completion.
