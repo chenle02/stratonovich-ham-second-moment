@@ -20191,3 +20191,8 @@ Root read every public reason of MAINv2. Two report-only formula slips were chec
 ### 2026-11-13 — current reviewer states and supported panel path recorded (Agent 3; for Le)
 
 The dashboard now distinguishes the malformed MAINv1 from the valid but MEDIUM MAINv2, rather than leaving the former as the latest state. Office21’s full response e0e5fd86bf6e was read: the stock runner cannot bind a partial-role successor, and its mechanical panel_closed ignores confidence/row coverage. We will use a genuine fresh Chapter12-scoped panel on corrected inputs; the earlier panel remains history, not final-HEAD votes. No new tool build was requested. Independent whole-book Kimi preparation and the live033source review continue; no unchanged broad DeepSeek confidence retry or automatic duplicate final cold review is scheduled.
+
+
+### 2026-11-13 — pending reviewer read-view preflight (Agent 3; for Le)
+
+Before either pending dispatch, root found required text lines up to46735characters in the Chapter12carrier and32072 in the whole-Kimi mathematical carrier. File-size bounds alone do not establish complete Read delivery. This is a preparation finding, not a claimed native truncation. Workers are preserving originals while preparing reversible line-safe views or establishing existing exact native long-line delivery; full reconstruction and mandatory read auditing remain required. No source/objection is removed, no system/tool change or calibration provider call requested, and the live033input remains untouched. Record READ-VIEW-PREFLIGHT.json. Durable lesson: inspect physical line length as well as total file size, then verify actual returned content; neither size rule is reading evidence.
