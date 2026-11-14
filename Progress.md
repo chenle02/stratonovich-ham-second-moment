@@ -20459,3 +20459,7 @@ Root approved exact archive and all 31 payloads. H08 remains PASS_WITH_NOTES/hig
 ### 2026-11-14: Original Chapter 12 allocation reconciliation
 
 The bounded author-side allocation check in `private/audit/2026-11-14-final-allocation-check/REPORT.md` verifies all 169 R4 original identities/hashes, the disjoint once-only H83/D46 partitions, 18 reversible views and 52 image pins. The remaining 40 duties have explicit source/range owners. Both proposed syntheses still owe direct complete reads of all five no-go modules; completed component delivery is not whole-module synthesis. Chen's older supplemental book-text binding differs from R4 and is not relabelled current. This private allocation record adds no scientific vote, global acceptance or publication tag.
+
+### 2026-11-14: Two fresh Chapter 12 syntheses launched; initial custody
+
+Preserved the exact carrier `41dba482` at adopted source epoch `1a3cd72b`, both contracts/source plans, classified references, dryruns and initial launch records in `private/publication-closeout/chapter12-two-syntheses-1a3-initial-freeze/`. Root launched skeptic/honesty under exec 77360, PIDs 2163831/2163832. All 595 archive members are verified; live outputs/events and duplicate workspaces are excluded. This records initial launch only, not a terminal verdict or scientific acceptance. Le's workflow lesson: prepare sufficiently, then execute; further work should address concrete findings or remaining requirements, not add setup for its own sake.
