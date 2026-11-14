@@ -20500,3 +20500,7 @@ Root reviewed the bounded current-source application memo: no local input, norma
 ### 2026-11-14: Author independent-upper boundary check
 
 The bounded check in `private/audit/2026-11-14-independent-upper-author-join/MEMO.md` verifies the current048→049/050/051 assembly with006/009: fixed-family identification versus uniform coefficients, localization, common widths, positive Wick comparison, r=2 tails and separate mild identification. No new variation of047 or missing consumer inference was found. This adds no independent vote, external reproof, source edit or global acceptance.
+
+### 2026-11-14 Uniform-radius signed-upper author join
+
+Root reviewed the actual radius anchor, good/bad/last-cell budgets and residual limit consumer. No local hypothesis or order mismatch found. Evidence: `private/publication-closeout/remaining-math/author-uniform-signed-join/MEMO.md` and `SOURCE-PINS.json`. This bounded author check retains existing numerical-depth scope; no new proof, independent vote, provider call or manuscript edit. Whole-book review and global/cold obligations remain open.
