@@ -1,0 +1,11 @@
+# C003/B001 provenance correction, 2026-11-14
+
+This additive v4 ledger preserves the [v3 snapshot](../2026-11-14/run-ledger-v3.json) unchanged. It corrects one representation label: C003's historical `original_public_final_sha256` was the hash of the native parser's serialized `report.json`, rather than the raw public assistant-final text. [CORRECTIONS.json](CORRECTIONS.json) records the exact byte identities and comparison.
+
+The [published B001 original final](../../report-supplement-v1/full-reports/B001-original-final.txt) is byte-identical to the retained raw final (20,440 bytes, SHA256 `3b9253ee87210dcfdc0066361b84a98ec818c2221c25ecce628e5703927dce3e`). The parsed serialization has20,622 bytes and SHA256 `35a2c46fe8b657db46ef6d5660409633401bfdbcb3ad71520b6b14a335407693`. The two parse to identical JSON values; the latter is exactly the former parsed and serialized with two-space indentation, ASCII escaping and a final newline. This does not alter any scientific finding and is not another review or provider call.
+
+V4 identifies both representations in `report_versions`. The corrected raw-final field is not silently demoted: it now identifies raw bytes; the former value remains explicitly recorded as the parsed serialization. `original_withheld` remains true for the complete native evidence bundle, with `original_withheld_scope` making clear that the public assistant final itself is available. Private reasoning, third-party material, held source criticism and private runtime/correspondence are not released by this correction.
+
+All other28 rows are identical. The29 record outcomes, actual models, confidence, acceptance, usage, costs, currencies, elapsed times and aggregation eligibility are unchanged. This is not a refresh of historical running or pending states. Appendix E may later select the committed v4 file explicitly with `--ledger`; its numerical tables should be unchanged, while its source and correction provenance change. No manuscript regeneration is included.
+
+This draft requires exact-file release approval. The original ledger, raw final, parser serialization, native receipt and earlier supplement remain preserved; no new raw report or source attachment is included.

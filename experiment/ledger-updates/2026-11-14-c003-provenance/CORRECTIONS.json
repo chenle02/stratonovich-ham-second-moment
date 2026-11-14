@@ -1,0 +1,68 @@
+{
+  "schema": "experiment-provenance-correction/1",
+  "record": "C003",
+  "previous_ledger": {
+    "path": "experiment/ledger-updates/2026-11-14/run-ledger-v3.json",
+    "sha256": "61714d2cab2f98be18d75011f11e98d4f62bc45a100e65479c9a114609a7405c",
+    "immutable": true
+  },
+  "raw_final": {
+    "sha256": "3b9253ee87210dcfdc0066361b84a98ec818c2221c25ecce628e5703927dce3e",
+    "bytes": 20440,
+    "public_path": "experiment/report-supplement-v1/full-reports/B001-original-final.txt",
+    "exact_public_file_equality": true
+  },
+  "parsed_serialization": {
+    "sha256": "35a2c46fe8b657db46ef6d5660409633401bfdbcb3ad71520b6b14a335407693",
+    "bytes": 20622,
+    "semantic_equality_to_raw": true,
+    "exact_derivation": "json.dumps(json.loads(raw), indent=2, ensure_ascii=True) + newline, encoded UTF-8"
+  },
+  "native_receipt": {
+    "sha256": "fbb2d24080f605f336f6284e5eaa616bdd66575727cbb98be3728bec86a987cf",
+    "raw_report_sha256": "3b9253ee87210dcfdc0066361b84a98ec818c2221c25ecce628e5703927dce3e",
+    "report_sha256": "35a2c46fe8b657db46ef6d5660409633401bfdbcb3ad71520b6b14a335407693"
+  },
+  "finding": "Historical original_public_final_sha256 was populated from the receipt report_sha256 (parsed serialization) rather than raw_report_sha256. Neither report content nor its verdict changed. This is more than a final-newline difference.",
+  "changed_C003_fields": [
+    "original_public_final_sha256",
+    "public_report_representation",
+    "report_versions",
+    "redaction_note",
+    "original_withheld_scope"
+  ],
+  "other28_rows_identical": true,
+  "protected_fields_unchanged": [
+    "outcome",
+    "reported_verdict",
+    "reported_confidence",
+    "status",
+    "pending",
+    "actual_model",
+    "actual_family",
+    "native_accepted",
+    "accepted_at_stated_scope",
+    "WHOLE_BOOK_ACCEPTED",
+    "token_usage_reported",
+    "cost_reported",
+    "cost_currency",
+    "provider_calls",
+    "new_independent_vote",
+    "record_kind",
+    "aggregation_eligible",
+    "aggregation_note",
+    "telemetry_denominator_eligible",
+    "usage_nonoverlap_verified",
+    "token_field_format",
+    "token_format_signature",
+    "accounting_scope",
+    "elapsed_seconds",
+    "started_utc",
+    "finished_utc"
+  ],
+  "same_attempt_and_vote": true,
+  "new_provider_calls": 0,
+  "originals_preserved_privately": true,
+  "full_original_bundle_withheld_flag_retained_and_explicitly_scoped": true,
+  "appendix_E_expected_effect": "All29 record classifications,18 contributing usage rows,19 denominator rows and every numerical/model/token/currency table value unchanged. A later explicit --ledger selection changes source path/commit/blob/correction provenance only; no regeneration was performed."
+}
