@@ -179,6 +179,26 @@ def tex_path(s):
     return "\\path{" + s + "}"
 
 
+WHOLE_BOOK = "WHOLE_BOOK_ACCEPTED"   # field name as in the ledger and its schema
+
+
+def check_no_whole_book(rows):
+    """Refuse a ledger in which any row could accept the whole book.
+
+    The appendix says that no record accepts the whole book. The schema makes
+    WHOLE_BOOK_ACCEPTED required and constant false, so a row without the field,
+    or with any value other than false, is refused. (An earlier version read a
+    lower-case key that the ledger does not have, so it could never fire.)
+    """
+    missing = [r.get("id") for r in rows if WHOLE_BOOK not in r]
+    if missing:
+        raise SystemExit(f"ledger rows without {WHOLE_BOOK}: {missing[:5]}")
+    accepting = [r.get("id") for r in rows if r[WHOLE_BOOK] is not False]
+    if accepting:
+        raise SystemExit(f"ledger rows with {WHOLE_BOOK} not false: {accepting[:5]}; "
+                         "the appendix text says no record accepts the whole book")
+
+
 def running_note(rows):
     """Clause for records still running, which the table shows by status.
 
@@ -209,8 +229,7 @@ def closeout(out, ledger_rel):
     bad = [r.get("id") for r in rows if r.get("outcome") not in OUTCOMES]
     if bad:
         raise SystemExit(f"ledger rows without a known outcome: {bad[:5]}")
-    if any(r.get("whole_book_accepted") for r in rows):
-        raise SystemExit("a ledger row accepts the whole book; the appendix text says none does")
+    check_no_whole_book(rows)
     named = sorted({closeout_model(r) for r in rows} - {NO_CALL, UNRECORDED})
     cols = named + [k for k in (UNRECORDED, NO_CALL) if any(closeout_model(r) == k for r in rows)]
     label = lambda m: (f"{tex_tt(m)} ({closeout_family(m)})" if m in named
