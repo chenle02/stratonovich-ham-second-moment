@@ -20374,3 +20374,8 @@ Original canonical PASS_WITH_NOTES/HIGH accepted=true retained after exact sourc
 ### 2026-11-14 — SOURCE-TAO terminal scoped adjudication
 
 Original canonical PASS_WITH_NOTES/HIGH accepted=true retained after exact source/route/required-ID coverage audit and root full public-reason read. Saved primary-snapshot/editorial application only. Separate author BIB-COUNT-CHECK verifies literal URL/date/identifier and33labels; no liveURL availability/account authentication, enlarged native scope or new vote. Evidence and original source-private archive binding: `private/publication-closeout/native-r4-source-tao-result`. No source edit, extra vote or global acceptance.
+
+
+### 2026-11-14 — H01A and D-CURRENT extraction pilot custody verified
+
+Root verified the source-private archive and all127 member hashes/bytes and read both semantic memos. H01A original remains invalid-report/unaccepted (duplicate major key); no manual deduplication or failed-lineage repair is accepted, and the proposed fresh H extraction remains held. D-CURRENT original refusal remains unchanged; its canonical format-only continuation is accepted with identical complete JSON content, four checks, eleven minor findings, four limitations and zero continuation tool calls. This is extraction-only custody, zero mathematical votes and no overall gate closure. Records: `private/publication-closeout/history-disclosure-pilot-custody/`; archive `sources/review-packets/history-h01a-and-disclosure-current-pilots-terminal.tar.gz` (SHA256 a5f4091689fb98ff9cfad128a9203c70d88b35271eacd66c9abad99e639bf39c).
