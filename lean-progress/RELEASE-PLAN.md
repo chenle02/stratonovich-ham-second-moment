@@ -237,3 +237,20 @@ an independent audit and the generated pages; it waits for the book repository
 to be public so the manuscript can be pinned. Then: push, `lean-pkg publish`,
 tag v0.10.0, GitHub release (Zenodo DOI), site, and the 1.1.0 pin to #24 with
 an L10-L14 Appendix F paragraph.
+
+## The book cites L14: v0.10.0 is re-anchored to the release SHA R (Le, 2026-11-13)
+
+- Le decided that the book appendix (F/G) and the video series (#29) anchor to Lean L14, the public companion v0.10.0. This supersedes "book v1.0.0 pins v0.9.0" and the "Wait for the book" order. #16 relayed Le's confirmation and confirmed the sequence.
+- The re-anchor is folded into v0.10.0 (Le: "Fold into v0.10.0"). It targets R, not 98f45bed (#3's C_dir rename), because notes/*.tex still changes before the release (#16).
+- Sequence (#16, confirmed):
+  1. #16 cuts R after #3's scientific closure and Le's typesetting pass and announces its full SHA.
+  2. #22 re-anchors to R, gets the re-anchor reviewed and confirmed, and Le accepts it.
+  3. #22 publishes v0.10.0: tag, GitHub release and Zenodo version DOI, with the manuscript pinned to R and its sha256.
+  4. Re-pin: #24 does Appendices F and G; #16 does release_sync (VERIFICATION, README, HOW-THIS-WAS-BUILT, AI-USE, CHANGELOG, CITATION). Before #16 approves the push, #22 runs the remap R -> candidate, and it must show 0 shifted citations.
+  5. The release date and cover date are set at F, the day of going public.
+  6. At F: the strict rehearsal, the rule-33a trial audit, Le's accept file and the live export. #22 then adds a docs-only companion note recording F.
+- The words Le must choose: at L14 two of the four main theorems are outside Lean, not three. This affects preface.tex:62 ("most of the main theorems are outside Lean"), Appendix F and the front-door files. #24 asks Le before step 4.
+- State on the companion dev repo (private):
+  - Branch reanchor-98f45bed at 1220baf holds the adopted C_dir wording only, and is comment-only.
+  - The line remap is a rerunnable dry-run tool (run_reanchor.sh) that commits nothing. Its dry run against 98f45bed counted 8745 citations: 5093 shifted, 3427 unchanged, 225 hand-resolved, 4 already wrong at a284420.
+  - Spot-check of the attribution (five multi-file modules, Codex GPT-6.1-Sol) is running.
