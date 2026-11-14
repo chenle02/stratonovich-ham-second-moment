@@ -20435,3 +20435,7 @@ Evidence and full author adjudication: `private/publication-closeout/disclosure-
 ### 2026-11-14 — H03A/B same-epoch extraction custody verified
 
 Root verified89-member archive c858bfc0 and read both complete adjudications. Separate original PASS_WITH_NOTES/HIGH extraction results retained; H03A10sources and H03B2sources cover distinct whole records. Historical59/61of87, rejected Kimi52exactimages and zero epoch Gold agreements remain. Optional see_also is not an extra schema failure; bad report tree/line locators are not binding; same-family labels alone do not prove session dependence. Records: `private/publication-closeout/history-h03-epoch-terminal-custody/`. Zero mathematical votes; no current-proof or global closure.
+
+### 2026-11-14: H04 historical extraction custody
+
+Preserved H04A/H04B terminal PASS_WITH_NOTES/HIGH extraction records, complete assigned coverage (8/1 originals), exact source bindings and root adjudications in `private/publication-closeout/history-h04-epoch-terminal-custody/`. The source-private archive retains all 83 verified members. Corrections distinguish eight originals from the report's nine, generated placeholders from reviews, and 178 scanner waivers from missing mandatory bodies. Historical native pre-provider failures remain failures; scoped DeepSeek outputs remain separate. This documentary extraction supplies zero mathematical votes and no global closure.
