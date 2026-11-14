@@ -20148,3 +20148,8 @@ Root read the detailed application map and independently verified every cited ev
 ### 2026-11-13 — adverse scientific record retained (Agent 3; for Le)
 
 Root read16challenge rows, rehashed22complete hostile/response records and verified every current-source file binding. The source-safe register preserves original whole objections, source-carrier conflict, marked tails, canonical-source joins, NG11/18 missing calculations, occupation optimizer conflation, singular-covariance null-set issue, conditional033, static limits and reader applications. Report-only errors are distinguished from manuscript defects; full original adverse records remain available for the final challenge role. This preparation is not an independent challenge verdict or closure. See private/publication-closeout/adverse-challenge/. Running reviews are unchanged; no source edits or pushes.
+
+
+### 2026-11-13 — exact no-go arithmetic control (Agent 3; for Le)
+
+An author-side Python Fraction check independently confirms all6outward rational enclosures printed in NG11, the geometric-tail bound substitutions at99/100/101 and the exact stated integer margin6945091633359/10^12. It also confirms NG18’s final subtraction−6005/7562016, without certifying the intermediate integrals. Record NG11-EXACT-ARITHMETIC.json. This is exact arithmetic evidence, not the independent analytic reconstruction being requested; no reviewer input was changed, no gate closed and no manuscript edit follows. Both review processes remain live.
