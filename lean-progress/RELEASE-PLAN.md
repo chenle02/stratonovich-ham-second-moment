@@ -254,3 +254,15 @@ an L10-L14 Appendix F paragraph.
   - Branch reanchor-98f45bed at 1220baf holds the adopted C_dir wording only, and is comment-only.
   - The line remap is a rerunnable dry-run tool (run_reanchor.sh) that commits nothing. Its dry run against 98f45bed counted 8745 citations: 5093 shifted, 3427 unchanged, 225 hand-resolved, 4 already wrong at a284420.
   - Spot-check of the attribution (five multi-file modules, Codex GPT-6.1-Sol) is running.
+
+### Re-anchor tool cleared for R (2026-11-14, overnight)
+Four independent review rounds were run on the dry run against 98f45bed, all with Codex GPT-6.1-Sol at high effort, read-only. The evidence is kept in session scratch and will be copied to reviews/ with the review at R.
+- Round 1 (FAIL): 4 wrong-file attributions and 3 ranges already wrong at a284420. The 3 were fixed in companion dev commit `2487458`, comment-only.
+- Round 2 (FAIL): the guard's file candidates were too narrow (ClassOBridge's zero-case citation left at 303 instead of 309), and a header range was missed.
+- Round 3 (FAIL): 8 citations the scanner had missed, in label + bare range, "and N-M" and "Nff." forms.
+- Round 4 (INCONCLUSIVE/medium, only because the orchestrator's packet left out one generated file; those 3 rows were verified by hand): no remap error found. The census sample, all 37 printed changes and a search of 17 modules turned up no stale citation.
+
+Tool state:
+- A pattern-free census decides all 14972 uncaptured prose numbers; the run stops if any number is undecided.
+- 8915 citations, 0 unresolved.
+- The dry run at manuscript tip 2f534eda is identical to the one at 98f45bed.
