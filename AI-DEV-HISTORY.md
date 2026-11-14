@@ -19,9 +19,12 @@ The [source manifest](sources/SOURCE-MANIFEST.md) identifies the source editions
 The [Lean ledger](lean-progress/PROGRESS.md) records local formal verification;
 its dated additions must be read alongside its older summary paragraphs.
 
-The [complete Git chronology](history/git-history.tsv) contains all **1,068**
+The [Git chronology](history/git-history.tsv) lists the **1,068**
 commits reachable from this research branch through
-`11e009aac6fcc9fdeddb00cdd7063dc56c457aad`, immediately before this checkpoint.
+`11e009aac6fcc9fdeddb00cdd7063dc56c457aad`, immediately before this checkpoint,
+under their original IDs and with the filter applied to the subjects; in the
+published history the IDs differ and some of these commits were dropped (see
+[REDACTIONS.md](REDACTIONS.md)).
 It includes full hashes, parents, author/committer dates and subjects.
 [The JSON snapshot](history/git-history-snapshot.json) supplies the same records
 and an explicit scope boundary. It excludes unmerged branches, external

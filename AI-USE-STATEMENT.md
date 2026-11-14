@@ -64,9 +64,9 @@ their model families and grades, selected reports, and the routes that failed)
 is public at
 https://github.com/chenle02/stratonovich-ham-second-moment (release tag
 `v1.0.0`),
-with documented redactions (other authors' copyrighted
-texts, private infrastructure, collaborators' unpublished work and private
-planning notes).
+with documented redactions. [REDACTIONS.md](REDACTIONS.md) lists every class of
+removal with its reasons and counts, including review records held back until a
+source author has been told and evidence archives that were not deposited.
 
 ## Disclosure of support
 

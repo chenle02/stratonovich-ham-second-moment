@@ -107,8 +107,8 @@ notes); [REDACTIONS.md](REDACTIONS.md) lists every class of removal with its
 reason and counts.
 
 The book's Appendix E, "The AI work in numbers", counts the work from this
-record: tokens and sessions by model family, every review run and its
-outcome, the failed approaches, and a day-by-day timeline with 14 milestones.
+record: tokens and sessions by model family, the recorded review runs and
+their outcomes, the failed approaches, and a day-by-day timeline with 14 milestones.
 Every number is rebuilt by the scripts in
 [`scripts/ai-statistics/`](scripts/ai-statistics/). The milestones are listed
 in [`scripts/ai-statistics/milestones.json`](scripts/ai-statistics/milestones.json)
