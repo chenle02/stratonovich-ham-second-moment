@@ -199,6 +199,24 @@ def check_no_whole_book(rows):
                          "the appendix text says no record accepts the whole book")
 
 
+def header_note(rows, letter):
+    """Sentence on the records whose counts cover only the panel header/final step.
+
+    Their ledger accounting_scope says so; the sentence names how many there are and
+    their format letters. Empty when there are none, so the caveat disappears rather
+    than leaving a dangling phrase. It starts with a space: the prose puts it straight
+    after a full stop.
+    """
+    hdr = [r for r in rows if "header/final-step" in (r.get("accounting_scope") or "")]
+    if not hdr:
+        return ""
+    ls = sorted({letter[r["token_format_signature"]] for r in hdr})
+    fmt = ("format~" + ls[0]) if len(ls) == 1 else \
+        ("formats~" + ", ".join(ls[:-1]) + " and~" + ls[-1])
+    return (f" For the {len(hdr)} panel records in {fmt} the reported counts cover only"
+            " the final step, not the whole session.")
+
+
 def running_note(rows):
     """Clause for records still running, which the table shows by status.
 
@@ -308,6 +326,7 @@ def closeout(out, ledger_rel):
             vals = ", ".join(f"{tex_tt(k)} {fmt_int(sums[k])}" for k in sorted(sums))
             note = " (header/final-step only)" if scopes == {"header"} else ""
             tok.append(f"{label(m)}, format {letter[sg]}{note} & {vals} & {len(rep_rows)} of {len(md)} \\\\\n")
+    lines.append(macro("aiCloseoutHeaderNote", header_note(den, letter)))
     lines.append("\\newcommand{\\aiCloseoutTokenRows}{%\n" + "".join(tok) + "}\n")
     # One line per format, the signature exactly as recorded.
     items = "".join(f"\\item[{letter[sg]}:] {tex_path(sg)}\n" for sg in sigs)
@@ -376,6 +395,7 @@ def main():
 
     rows = []
     coverage = []
+    timed = {}
     tot = collections.Counter()
     for f in FAMILIES:
         R = fam_rows(f)
@@ -391,6 +411,7 @@ def main():
         rows.append(f"{FAM_TEX[f]} & {len(R)} & {completed} & {failed} & {bar} & {fail} "
                     f"& {medium} & {hours} \\\\\n")
         coverage.append(f"{FAM_TEX[f]} {len(secs)} of {len(R)}")
+        timed[f] = len(secs)
         tot.update(runs=len(R), completed=completed, failed=failed, bar=bar, fail=fail,
                    medium=medium)
     rows.append("\\midrule\n")
@@ -398,6 +419,9 @@ def main():
                 f"& {tot['fail']} & {tot['medium']} & \\\\\n")
     out.append("\\newcommand{\\aiReviewTableRows}{%\n" + "".join(rows) + "}\n")
     out.append(macro("aiHoursCoverage", "; ".join(coverage)))
+    # Runs whose time was recorded, for the prose that says which data are missing
+    # (Kimi: the worker-machine logs hold no Kimi tokens and few Kimi times).
+    out.append(macro("aiRunsKimiTimed", str(timed["Kimi"])))
     out.append(macro("aiRunsMetBar", str(tot["bar"])))
     out.append(macro("aiRunsFail", str(tot["fail"])))
     out.append(macro("aiRunsMedium", str(tot["medium"])))

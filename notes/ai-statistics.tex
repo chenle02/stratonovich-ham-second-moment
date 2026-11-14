@@ -48,9 +48,10 @@ output tokens were internal reasoning. Counting cached input on both sides,
 the worker read about \aiWorkerToDeepSeekRatio{} times as much as the
 DeepSeek reviews. The Claude figures include editing and coordination as well
 as reviews. Only the DeepSeek reviews carry a dollar figure,
-\$\aiDeepSeekCost{}; the other models were used on subscriptions. No token
-counts were recorded for Kimi. These totals are a snapshot taken at
-\aiUsageSnapshot{} from the worker machine's logs.
+\$\aiDeepSeekCost{}; the other models were used on subscriptions. The worker
+machine's logs hold no token counts for Kimi, so these totals leave Kimi out;
+the closeout records at the end of this appendix carry Kimi's own reported
+counts. These totals are a snapshot taken at \aiUsageSnapshot{} from those logs.
 
 \section*{Reviews}
 
@@ -132,7 +133,8 @@ main theorems.
 
 Counts of runs and tokens measure effort, not correctness: a thousand commits do
 not prove a theorem, and a passed review is a check, not a proof. Some figures
-are incomplete. Kimi recorded neither tokens nor the time of each run; some
+are incomplete. The worker machine's logs hold no Kimi tokens, and only
+\aiRunsKimiTimed{} of the \aiRunsKimi{} Kimi runs have a recorded time; some
 DeepSeek runs recorded only their last request, so DeepSeek hours are too low;
 and the dates of \aiRunsDatedByFolder{} runs are taken from folder names. The
 token totals come from the logs of one machine. The \aiCommits{} commits are
@@ -173,8 +175,7 @@ tool reported them. Only the \aiCloseoutUsageRecords{} attempts with reported
 usage are summed; an attempt without figures is shown as having no reported
 value, and nothing is estimated. Recoveries, refusals, preflights and addenda
 made no new provider call, and format continuations are not summed, because
-their usage may overlap the original's. For the panel records the reported
-counts cover only the final step, not the whole session. The formats, as
+their usage may overlap the original's.\aiCloseoutHeaderNote{} The formats, as
 recorded in the ledger:
 \begin{itemize}\small
   \setlength{\itemsep}{0pt}
