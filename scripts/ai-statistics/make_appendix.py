@@ -101,7 +101,7 @@ def macro(name, value):
 # and must be committed and unmodified: the appendix names it with its commit
 # and blob (ledger owner, 2026-11-14). The book build stops if it is absent.
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
-LEDGER_DEFAULT = "experiment/ledger-updates/2026-11-14/run-ledger-v3.json"
+LEDGER_DEFAULT = "experiment/ledger-updates/2026-11-14-c003-provenance/run-ledger-v4.json"
 OUTCOMES = ["accepted-at-scope", "not-accepted", "invalid", "refused",
             "recovered", "preflight", "continuation", "timeout"]
 PENDING = "running"   # display class: a review still running (no verdict yet)
