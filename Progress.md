@@ -20264,3 +20264,8 @@ Accepted the substance of the native honesty015853 FRAMING finding: the Preface 
 ### 2026-11-14 — N2 dependency pilot preserved, preparation only
 
 Preserved the NG05/10/17/18 dependency pilot: 23 hash-verified assigned text inputs, 84,103 bytes, with complete source/cross-reference/ownership mapping. Curated tasks and correspondence are in `private/publication-closeout/chapter12-n2-pilot-preparation/`; full inputs and the earlier overbroad intermediate selection are source-private in `sources/review-packets/chapter12-n2-dependency-pilot-preparation.tar.gz`. A missing old inventory label was not a mathematical proof hole. This is a proposal, not dispatch-ready: contract/source-allocation approval and actual request-budget measurement remain pending. No provider call, independent review vote or gate closure.
+
+
+### 2026-11-14 — N2 bounded text pilot terminal and adjudicated
+
+Actual DeepSeek V4 Pro completed N2 in 402.463 seconds: all 23 inline inputs byte-exact, eight substantive tasks for NG05/10/17/18, original ACCEPT/HIGH with declared upstream-interface conditions. Root read the complete public report; no required manuscript repair established. Exclude report-only claims of full weighted-diagram finiteness and globally nonzero H:homog from reuse; retain the local restrictions in the source. Actual usage: 30,525 input, 41,082 reasoning, 5,628 output tokens. Records: `private/publication-closeout/chapter12-n2-pilot-result/`; complete raw source/session custody: `sources/review-packets/chapter12-n2-154356-terminal.tar.gz`. No canonical grade conversion, extra vote, source-image acceptance, global synthesis or whole-book closure.
