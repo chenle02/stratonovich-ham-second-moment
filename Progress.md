@@ -20269,3 +20269,8 @@ Preserved the NG05/10/17/18 dependency pilot: 23 hash-verified assigned text inp
 ### 2026-11-14 — N2 bounded text pilot terminal and adjudicated
 
 Actual DeepSeek V4 Pro completed N2 in 402.463 seconds: all 23 inline inputs byte-exact, eight substantive tasks for NG05/10/17/18, original ACCEPT/HIGH with declared upstream-interface conditions. Root read the complete public report; no required manuscript repair established. Exclude report-only claims of full weighted-diagram finiteness and globally nonzero H:homog from reuse; retain the local restrictions in the source. Actual usage: 30,525 input, 41,082 reasoning, 5,628 output tokens. Records: `private/publication-closeout/chapter12-n2-pilot-result/`; complete raw source/session custody: `sources/review-packets/chapter12-n2-154356-terminal.tar.gz`. No canonical grade conversion, extra vote, source-image acceptance, global synthesis or whole-book closure.
+
+
+### 2026-11-14 — N1 bounded text review terminal and adjudicated
+
+Root read the complete public report and all eight task reasons. Original HIGH — all assigned no-go results mathematically correct as stated; confidence HIGH, no canonical grade conversion. All 32 inline bodies exact; actual DeepSeek V4 Pro, one assistant call, zero tools, normal stop. False constant-factor Stirling asymptotics; omitted t^(2-a) in abbreviated time-cube integral; d1 Green scaling not all-dimensional. These report-only points are excluded or qualified in `private/publication-closeout/chapter12-n1-result/ROOT-ADJUDICATION.md`; no required manuscript repair established. Full source/session originals are preserved in `sources/review-packets/chapter12-n1-156620f8-terminal.tar.gz`. Source-image, global synthesis, whole-book and fresh cold gates remain open.
