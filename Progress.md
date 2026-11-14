@@ -20443,3 +20443,7 @@ Preserved H04A/H04B terminal PASS_WITH_NOTES/HIGH extraction records, complete a
 ### 2026-11-14: H05 historical extraction custody
 
 Preserved H05A/H05B terminal PASS_WITH_NOTES/HIGH extraction records, three complete assigned originals each, exact source bindings and root adjudications in `private/publication-closeout/history-h05-epoch-terminal-custody/`. All 80 source-private archive members are verified. The suggested identification of 14 images with 14 page groups remains unproved; the recorded 14/52 image count is retained. Native admission and nonzero usage before the context stop remain distinct from pre-provider failure, supervisor interruption and undispatched honesty. Original adverse findings remain intact. This documentary extraction supplies zero mathematical votes and no global closure.
+
+### 2026-11-14 H06 terminal historical extraction custody
+
+Root approved exact archive and all 31 payloads. H06 remains PASS_WITH_NOTES/high at extraction scope only, with complete adverse findings and author qualifications retained; zero mathematical votes. All required reads, 520 frozen source hashes and applicable reversible views were checked. Custody: `private/publication-closeout/h06-r4-terminal-20261114/RESULT.json`; private raw archive `sources/review-packets/h06-r4-terminal-20261114.tar.gz`. Synthesis remains unfrozen pending final repair verification and integration.
