@@ -20364,3 +20364,8 @@ Original canonical PASS_WITH_NOTES/HIGH accepted=true retained with exact source
 ### 2026-11-14 — native R4 N8 terminal adjudicated
 
 Original canonical PASS_WITH_NOTES/HIGH accepted=true retained with exact source/coverage/ID audit and root full public-reason read. Exclude report-only 'unbounded at and above2/a': NG27 proves noncompactness at endpoint, not endpoint unboundedness. Actual bounded operator range unchanged. See `private/publication-closeout/native-r4-n8-result` for unchanged original evidence and adjudication. One shared component; no source edit or global acceptance.
+
+
+### 2026-11-14 — FIGURE-INTEGRATION terminal scoped adjudication
+
+Original canonical PASS_WITH_NOTES/HIGH accepted=true retained after exact source/route/required-ID coverage audit and root full public-reason read. Four scientific diagrams/assigned text and16exactimageviews only; historical physical-versus-printed folios reconciled. Not current-wholePDF layout or Le all-page visual acceptance. Evidence and original source-private archive binding: `private/publication-closeout/native-r4-figure-integration-result`. No source edit, extra vote or global acceptance.
