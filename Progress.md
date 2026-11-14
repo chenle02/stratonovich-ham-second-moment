@@ -20475,3 +20475,12 @@ Preserved the deduplicated skeptic successor in `private/publication-closeout/ch
 ### 2026-11-14 HONESTY synthesis terminal custody
 
 Root approved exact private custody of the original invalid report and official byte-reversible fence extraction: PASS_WITH_NOTES/high, no required repairs, one Chapter12 honesty lineage. All42 required sources and544 carrier hashes verified; all seven checks, ten minor findings and six limitations retained. This is not whole-book acceptance, final cold or release approval, and does not supply a missing skeptic judgment. Evidence: `private/publication-closeout/honesty-synthesis-terminal-20261114/RESULT.json`. No new provider call.
+
+
+### 2026-11-14 — for Le: resume independent publication work after scoped review stop
+
+The workflow bug was treating the unclosed Chapter 12 skeptic synthesis as a prerequisite for every remaining publication task. The actual dependency is narrower: its gate stays unclosed for Le, while independent whole-book author checks can proceed. No runner defect or detailed cause of the provider safeguard stop has been established. The incomplete result and missing judgment remain preserved; no retry or grade conversion follows from this correction.
+
+Resumed existing duties: JOIN-F-YOUNG-OBSERVABLE (same-noise identification, both constant columns, common event and uniform integrability) and JOIN-UNMASK-FINITENESS / JOIN-POSITIVE-INTRINSIC (acyclic finiteness and the same canonical solution/control normalization). These are author checks of current source, not independent review votes. Root also read the current fixed-control lower transfer, signed point upper and final intrinsic identification. Any concrete issue will be adjudicated against those source arguments.
+
+Durable lesson: a failed optional route or scoped gate blocks only its actual dependents. Continue already authorized independent work; use the existing workflow, stop adding preparation after sufficient checks, and add effort only for a concrete finding or an unmet requirement. Do not treat a model transport failure as a mathematical failure, or a local passing review as whole-book acceptance.
