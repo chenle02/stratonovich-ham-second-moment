@@ -1,0 +1,106 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "TARGET.md lines 1-9 (complete)",
+    "IMAGE-MAP.json lines 1-2047 (complete)",
+    "SOURCE-MAP.json lines 1-100 (complete)",
+    "REFERENCE-MAP.json lines 1-25 (complete)",
+    "PREAMBLE.md lines 1-132 (complete)",
+    "ABSTRACT.md lines 1-49 (complete)",
+    "PREFACE.md lines 1-296 (complete)",
+    "LAYOUT.md lines 1-77 (complete)",
+    "STYLES.md lines 1-20 (complete)",
+    "p002-overview.png (773x1000, full view)",
+    "p002-band1-t01.png (740x659)", "p002-band1-t02.png (741x659)",
+    "p002-band2-t01.png (740x659)", "p002-band2-t02.png (741x659)",
+    "p002-band3-t01.png (740x685)", "p002-band3-t02.png (741x685)",
+    "p002-rate-and-interpretation-300dpi-t01.png (539x376)", "p002-rate-and-interpretation-300dpi-t02.png (540x376)", "p002-rate-and-interpretation-300dpi-t03.png (539x376)", "p002-rate-and-interpretation-300dpi-t04.png (540x376)",
+    "p003-overview.png (619x800, full view)",
+    "p003-band1-t01.png (740x659)", "p003-band1-t02.png (410x659)", "p003-band1-t03.png (411x659)",
+    "p003-band2-t01.png (740x659)", "p003-band2-t02.png (410x659)", "p003-band2-t03.png (411x369)", "p003-band2-t04.png (411x370)",
+    "p003-band3-t01.png (740x685)", "p003-band3-t02.png (741x685)",
+    "p003-scan-captions-credits-300dpi-t01.png (646x414)", "p003-scan-captions-credits-300dpi-t02.png (646x414)", "p003-scan-captions-credits-300dpi-t03.png (363x414)", "p003-scan-captions-credits-300dpi-t04.png (363x414)", "p003-scan-captions-credits-300dpi-t05.png (646x415)",
+    "p004-overview.png (773x1000, full view)",
+    "p004-band1-t01.png (740x659)", "p004-band1-t02.png (741x659)",
+    "p004-band2-t01.png (740x659)", "p004-band2-t02.png (741x659)",
+    "p004-band3-t01.png (740x685)", "p004-band3-t02.png (741x685)",
+    "p005-overview.png (773x1000, full view)",
+    "p005-band1-t01.png (740x659)", "p005-band1-t02.png (741x659)",
+    "p005-band2-t01.png (740x659)", "p005-band2-t02.png (741x659)",
+    "p005-band3-t01.png (740x685)", "p005-band3-t02.png (741x685)",
+    "p006-overview.png (773x1000, full view)",
+    "p006-band1-t01.png (740x659)", "p006-band1-t02.png (741x659)",
+    "p006-band2-t01.png (740x659)", "p006-band2-t02.png (741x659)",
+    "p006-band3-t01.png (740x685)", "p006-band3-t02.png (741x685)",
+    "p006-repository-doi-context-300dpi-t01.png (539x230)", "p006-repository-doi-context-300dpi-t02.png (540x230)", "p006-repository-doi-context-300dpi-t03.png (539x230)", "p006-repository-doi-context-300dpi-t04.png (540x230)",
+    "p007-overview.png (773x1000, full view)",
+    "p007-band1-t01.png (740x659)", "p007-band1-t02.png (741x659)",
+    "p007-band2-t01.png (740x659)", "p007-band2-t02.png (741x659)",
+    "p007-band3-t01.png (740x685)", "p007-band3-t02.png (741x685)",
+    "p008-overview.png (773x1000, full view)",
+    "p008-band1-t01.png (740x659)", "p008-band1-t02.png (741x659)",
+    "p008-band2-t01.png (740x659)", "p008-band2-t02.png (741x659)",
+    "p008-band3-t01.png (740x685)", "p008-band3-t02.png (741x685)",
+    "p008-abstract-formulas-300dpi-t01.png (696x559)", "p008-abstract-formulas-300dpi-t02.png (696x559)", "p008-abstract-formulas-300dpi-t03.png (697x559)", "p008-abstract-formulas-300dpi-t04.png (697x559)"
+  ],
+  "checks": [
+    {
+      "claim": "PAGE-002",
+      "verdict": "PASS",
+      "reason": "Physical page 2 is the Preface opening, folio 'i' centered at the bottom (confirmed in overview and band3 tiles; the numeral straddles the t01/t02 split and is legible in both halves). The chapter head 'Preface' is set huge, bold, ragged-right in hamblue (RGB 36,75,105 per STYLES.md) with no 'Chapter' label, matching the numberless titleformat in LAYOUT.md lines 22-23; no headrule appears on this opening page, consistent with the plain page style (headrulewidth 0pt). The first paragraph matches PREFACE.md lines 4-15 word for word across the tile boundaries: 'X. Chen [17]' with the bracketed 17 in cite color, the inline display of E u^2(t,x) <= e^{Ct^2} with blackboard-bold E, 'The scale is t^kappa with kappa = (4 - alpha - alpha_0)/(3 - alpha)', and the closing 'The precise statements are in Chapter 1.' — the [17] and 'Chapter 1' agree with REFERENCE-MAP entries chen:author2026:time-dependency -> {17} and S:book-setting -> {1}. The required 300dpi rate-paragraph detail (pdf clip 75,245-535,335) was read in all four overlapping tiles: small glyphs resolve cleanly, e.g. 'growth scale of log Eu^2(t,x)' (t02), 'e is t^k with k = (4 - alpha -' (t02, superscript kappa and subscript-free alpha crisp), 'a - a_0)/(3 - a), and the' with the subscript 0 on alpha_0 clearly attached (t03), and 'ts are in Chapter 1.' with '1' in link color (t03). The section head 'How this book was written' appears in blue Large bold (LAYOUT.md lines 25-26). Second-paragraph content (Amy naming anecdote, 'missed the letter r, so Army became Amy', 'Anthropic Claude, OpenAI GPT (through Codex), DeepSeek and Kimi', the LaTeX logotype, and the hyperlinked '[P1]' after 'writing mathematics with AI') matches PREFACE.md lines 19-49. Line wrapping and justification are normal; no overfull boxes, clipping, or glyph defects are visible in any tile. Tile boundaries are mid-line cuts whose continuations are present in the complementary tile, as the packet states."
+    },
+    {
+      "claim": "PAGE-003",
+      "verdict": "PASS",
+      "reason": "Physical page 3, folio 'ii' centered (band3 tiles), continues the Preface with 'Her contribution is nevertheless substantial... which models did what.' (PREFACE.md lines 47-49), followed by the blue section head 'An experiment in doing mathematics'. The running-head area carries the 0.3pt headrule but no running-head text; this is the actual output (see findings). The wrapfigure sits at the right margin (wrapfig r, 0.29 textwidth per PREFACE.md line 53) and contains both historical scans stacked with captions between and below: the Galileo scan (a Sidereus Nuncius page headed 'RECENS HABITAE' with folio 13 and Ori./Occ. star-and-circle diagrams) and the Huygens scan (Systema Saturnium page 55 with the ring-phase ellipse diagram and the dark Saturn-globe engraving). The required 300dpi caption/credit detail (pdf clip 385,330-540,670) was read in all five tiles: caption 1 reads exactly 'Galileo, Sidereus Nuncius (1610): Jupiter (the circle) and its moons (the stars) on several nights.' with the title italic; caption 2 reads 'Huygens, Systema Saturnium (1659): Saturn's ring as seen from Earth around its orbit.'; the credit block reads 'Scans: University of Oklahoma Libraries; Smithsonian Libraries. Public domain; see media/historical-astronomy/.' with the path in typewriter at scriptsize — all identical to PREFACE.md lines 58-68. In-text citations on this page read '[31]' after 'no one had seen before' and '[44]' after 'published the explanation in 1659', matching REFERENCE-MAP galilei:89:sidereus -> {31} and vanhelden:95:saturn -> {44}; the Mourrat hyperlink renders '[P5]' (band2-t01 shows 'rat [P5] suggests', completing 'Mourrat' across the tile cut). Body text matches PREFACE.md lines 69-107, including 'This is version 1.0.0 of the book' and 'the blog Proofs and Prompts' in italics. Text wraps correctly around the figure with no collision; the figure does not overflow the text block."
+    },
+    {
+      "claim": "PAGE-004",
+      "verdict": "PASS",
+      "reason": "Physical page 4, folio 'iii' centered (band3 tiles), continues the 'experiment' paragraph exactly from PREFACE.md lines 99-153: the page opens mid-sentence 'a \"Git Hub\" of proofs [P4], open work groups that explain important preprints in a Git repository [P11], a community-owned repository of AI proof reports [P12], teams of researchers who work to understand AI-generated proofs [P14], and credit for works at the level of a doctoral thesis, defended in public with open reviews [P10].' — all five post markers present in the source order. The 'repository keeps the complete history' paragraph shows '[P7]' after 'a worthy scientific unit', '[P8]' after 'made available', 'Lewin [P12]' and 'Gonen Cohen [P2]', matching PREFACE.md lines 120-128. The sentence 'Review arguments themselves require checking: No-go 33 records three incorrect steps proposed in reviews and the calculations that exposed them.' renders the cross-reference as the bare number '33' in link color, agreeing with REFERENCE-MAP P:nogo-33 -> {33} (label text 'Three invalid proof steps', page 284 — only the number is visible here, which is what \\ref produces). 'Chapter 12 gives numbered statements and proofs for the mathematical obstructions' matches S:book-no-go -> {12}. Morris '[P9]', Duminil-Copin '[P3]', and the Tao citation '[41]' after 'skewed towards success' match PREFACE.md lines 139-143 and REFERENCE-MAP tao:26:post -> {41}. The closing paragraph ('keeps its claims separate... Lerario... heuristic analogy [P13]... checked line by line by a human reader') matches lines 145-153. Headrule present with blank running head, as on page 3. No typographic defects, no missing or duplicated lines across band boundaries."
+    },
+    {
+      "claim": "PAGE-005",
+      "verdict": "PASS",
+      "reason": "Physical page 5, folio 'iv' centered (band3 tiles), carries two blue section heads: 'What can we learn from the proof?' and 'How to read this book' (PREFACE.md lines 155 and 193). Body content matches lines 157-214: Madore '[P6]', Lerario '[P13]' with the quoted phrases 'Qualitative growth' and 'Continuity of research,' (comma inside quotes, as in source), the cross-reference 'Section 1.10 records the first candidates' with '1.10' in link color matching REFERENCE-MAP S:theory-outlook -> {1.10} ('Toward a general variational method for random evolution equations'), 'No reduction in length is claimed in this version.', and Hairer '[P1]' at the paragraph end. In 'How to read this book' the cross-references render as 'Chapters 1-2 and then Chapter 3' and 'Chapters 4-11', consistent with S:book-setting -> {1}, S:G0 -> {2}, S:book-independent-upper -> {3}, S:book-gaussian-foundations -> {4} and S:book-constant -> {11}; the en-dashes in the ranges are visible in the band tiles ('Chapters 1–2', 'Chapters 4–11'). The paragraph ends mid-sentence at 'covariance comparisons' continuing to page 6, matching the source flow. Headrule present with blank running head. Justification and hyphenation are normal (e.g. 'artifi-cial' across a tile edge is a cut, not a hyphenation error, as the complementary tile shows)."
+    },
+    {
+      "claim": "PAGE-006",
+      "verdict": "PASS",
+      "reason": "Physical page 6, folio 'v' centered (the numeral is split between the two near-empty band3 tiles, each showing one stroke half; combined they read 'v'). The page completes 'How to read this book': 'and an obstruction to a proposed clock representation... Chapter 12 gathers these and other obstructions... The final three appendices give the AI work in numbers (Appendix E), what Lean checks (Appendix F) and how far each result has been checked (Appendix G).' — the letters E, F, G match REFERENCE-MAP S:appendix-ai-statistics -> {E}, S:appendix-lean-checks -> {F}, S:appendix-check-status -> {G}. The bold inline head 'Where to find everything.' opens the repository paragraph (PREFACE.md lines 217-222). The required 300dpi DOI detail (pdf clip 75,195-535,250) was read in all four tiles: 'repository at release 1.0.0. The verification ledger there records, for each numbered result, how far it has been checked and how a reader can check it. The Lean companion, at release 0.9.0 (DOI 10.5281/zenodo.24199105), is described in Appendix F.' — the DOI digits are fully legible across the t02/t03 junction ('10.5281/zenodo.2419910' + '9105)') and are colored as a link; 'Appendix F' shows the link-colored F (t04). The centered footnotesize typewriter block lists exactly the three URLs of PREFACE.md lines 224-226: github.com/chenle02/stratonovich-ham-second-moment/tree/v1.0.0, .../blob/v1.0.0/VERIFICATION.md, and ...-lean/tree/v0.9.0. The 'Acknowledgements' section head and grant text match lines 229-235 (DMS-2246850, CAREER Grant DMS-2443823, Simons Foundation Collaboration Grant 959981, ChatGPT for Academic Researchers). The flushright signature block reads 'Le Chen, with Amy / Auburn, Alabama / November 2026' (lines 238-242). Headrule present with blank running head. The Posts section is correctly deferred to the next page (Needspace{20\\baselineskip} at line 246), and the lower half of this page is blank — the actual output, consistent with that keep-together."
+    },
+    {
+      "claim": "PAGE-007",
+      "verdict": "PASS",
+      "reason": "Physical page 7, folio 'vi' centered (band3 tiles), contains the complete 'Posts from Proofs and Prompts' section (PREFACE.md lines 247-296): blue section head with 'Proofs and Prompts' italic inside it; the intro paragraph 'In the text these posts are marked [P1]-[P14]. They are listed here in order of date, not in the bibliography, and each title is a link to the post... citing a post does not imply that its author endorses this experiment.'; and all fourteen items [P1]-[P14] in date order with italic linked titles: [P1] Hairer, Writing mathematics in the age of AI, August 7, 2026; [P2] Gonen Cohen, The question of reasoning traces, August 11, 2026; [P3] Duminil-Copin, Care for a little more AI?, August 30, 2026; [P4] Trombetti, ProofForum: Keeping AI-generated mathematics human, September 22, 2026 (wrapped 'Septem-ber'); [P5] Mourrat, Why I chose to do math, and how I'm grappling with AI advances, October 8, 2026; [P6] Madore, Letter to a worried student, October 20, 2026; [P7] Kretschmer, On AI disclosures, October 27, 2026; [P8] Kaipel, Why and how to transparently disclose AI use in mathematics research, October 28, 2026; [P9] Morris, Let's stop writing papers..., October 30, 2026 (ellipsis present); [P10] Ng, A new system of accreditation, November 1, 2026; [P11] Van Werde, Collaborative work groups on exposition problems, November 1, 2026 (wrapped 'Novem-ber'); [P12] Lewin, Please STOP writing papers! (there is another way), November 2, 2026 ('STOP' in small caps as the source's italic-corrected capitals render); [P13] Lerario, The shape of mathematical knowledge, November 9, 2026; [P14] Noel, I'm giving my theorems away, November 10, 2026. Every author, title and date matches the source; the bracketed labels are upright black hypertargets, titles italic in link color. The list occupies the upper two-thirds of the page; the remainder is blank. Headrule present with blank running head."
+    },
+    {
+      "claim": "PAGE-008",
+      "verdict": "PASS",
+      "reason": "Physical page 8, folio 'vii' centered (band3 tiles), is the Abstract opening: 'Abstract' chapter head in the same numberless blue style as Preface (matches the abstract environment in LAYOUT.md lines 33-36 issuing \\chapter*{Abstract}); as a chapter opening it uses the plain style — no headrule, which is what the overview and band1 tiles show. The text matches ABSTRACT.md lines 1-48: the opening sentence 'Motivated by Xia Chen's moment conjecture [17, (1.22)], we determine the exact second-moment asymptotics...' renders the starred amsrefs citation as '[17, (1.22)]' with '17' in cite color (ABSTRACT.md line 3 \\cite{chen:author2026:time-dependency}*{(1.22)}); 'Theorem 1.5.2' matches REFERENCE-MAP T:intro-second-moment -> {1.5.2}. The inline conditions 'd in {1,2,3}, 0 < alpha_0 < 1, 0 < alpha < d or alpha = d = 1, and alpha + alpha_0 < 2' and '|s - t|^{-alpha_0}' are present and correctly typeset. All displayed formulas were verified glyph-by-glyph in the required 300dpi detail (pdf clip 145,290-460,539, four tiles): (1) 'lim_{T -> infinity} T^{-kappa} log E u^2(T,x) = C_2(Gamma, alpha_0), kappa = (4 - alpha - alpha_0)/(3 - alpha)' with the limit subscript under lim, blackboard-bold E, and a built-up fraction (t01, t03); (2) 'C_2(Gamma, alpha_0) = sup_{Psi in C_c^infty((0,1) x R^d; R), Psi >= 0, Psi != 0} { 2 int_0^1 sqrt(R_Psi(s)) ds - v_Psi/2 }.' with the two-line substack subscript, the radical bar over R_Psi(s), and the built-up v_Psi/2 fraction (t01, t03); (3) the aligned trio 'h_{Psi,s}(x) = int_0^1 |s-r|^{-alpha_0} (Gamma * Psi_r)(x) dr', 'v_Psi = int_0^1 int_{R^d} Psi(s,x) h_{Psi,s}(x) dx ds', 'R_Psi(s) = sup_{f in H^1(R^d;R), ||f||_2 = 1} { int_{R^d} h_{Psi,s}(x) f(x)^2 dx - || nabla f ||_2^2 }' (t02, t04) — all delimiters, subscripts, norms and the nabla are correct and match ABSTRACT.md lines 25-35. Closing paragraphs match lines 36-48 ('L^2 norms, and Psi_r = Psi(r, .)', 'Gaussian cost v_Psi/2', 'for Gamma = 0, the solution is one and the constant is zero', 'scale T^kappa', ending 'spatial white noise in one dimension.')."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Pages 3-7 (folios ii-vi) print the 0.3pt headrule with an entirely blank running head. The cause is visible in the supplied sources: LAYOUT.md sets \\fancyhead[L]{\\small\\nouppercase{\\leftmark}} and redefines \\chaptermark, but PREFACE.md uses \\chapter*{Preface}, which issues no mark, so \\leftmark is empty throughout the front matter. The output is self-consistent with the frozen source (not a rendering fault), but the contract rightly refuses to presume the blank head is intentional design; a human layout pass may want \\markboth{Preface}{Preface} in the front matter. Recorded as an observation, not a packet defect.",
+      "On page 6 the centered folio 'v' falls exactly on the vertical tile boundary of band3, so each of p006-band3-t01/t02 shows only half of the numeral; it is unambiguous only when the complementary tiles are combined (the overview shows it whole). Coverage is adequate as supplied, but the folio is a case where a single tile alone would be inconclusive.",
+      "On page 7 the [P4] and [P11] entries break the month names as 'Septem-ber 22, 2026' and 'Novem-ber 1, 2026' at line ends. This is standard LaTeX hyphenation of the source wording, matches PREFACE.md lines 263-264 and 284-285, and is not a glyph error; noted only because hyphenated month names are a cosmetic choice some copy editors disallow.",
+      "The wrapfigure scans on page 3 are low-contrast historical images by nature; their internal Latin text (e.g. 'RECENS HABITAE', 'Systema Saturnium. 55', 'Atque') is legible at 300dpi in the required detail tiles, but per the contract no transcription or authenticity assessment of the scan contents was performed beyond placement, captions and credits.",
+      "The amsrefs starred citation renders as '[17, (1.22)]' with a space after the comma and the parenthesized note in upright text; this matches ABSTRACT.md line 3 exactly and is noted only to record the actual glyph sequence read at band and overview level."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Visual/source-fidelity review only: no mathematical correctness, proof validity, or novelty was assessed, and no citation target (other than the REFERENCE-MAP number lookup) was verified against external literature; no links were clicked.",
+    "The historical scans were treated strictly as illustrations: placement, visible captions and credits were checked against PREFACE.md, but no historical-authenticity or complete Latin-transcription judgment was made.",
+    "PNG byte/hash re-computation was not performed (no execution permitted in this review); the identity of the inspected files with the IMAGE-MAP.json hashes is asserted by the packet, not re-verified here.",
+    "Whether the blank running heads on folios ii-vi are intentional cannot be decided from the packet; the supplied layout source mechanically produces them, and the observation is reported rather than adjudicated.",
+    "Only physical pages 2-8 were in scope; pages outside this range (title page, contents, Chapter 1 onward) were not observed and nothing is certified about them.",
+    "Small-glyph readings were taken from the four required 300dpi detail sets (rate paragraph on p2, scan captions/credits on p3, repository/DOI line on p6, abstract formulas on p8); other regions were read at band (144dpi) and overview scale, which proved sufficient for all body text but is a coarser sampling.",
+    "This AI review is not human verification; all judgments are image-level correspondences between the frozen renders and the frozen source contexts."
+  ]
+}

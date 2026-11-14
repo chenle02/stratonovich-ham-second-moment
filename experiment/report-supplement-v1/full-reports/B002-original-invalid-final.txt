@@ -1,0 +1,161 @@
+All 68 required images and all 10 text files have now been completely inspected. Compiling the final report.
+
+**Verification summary:** Pages 9–14 (folios viii–xiii) reproduce every printed Contents entry in CONTENTS.md lines 1–240 with matching titles, numbers, leaders and destinations; pages 15–16 (xiv–xv) reproduce all 28 ILLUSTRATIONS.md entries including the 5-line wrapped figure 12.1 caption with "No-go 05" reference glyph; pages 17–18 (xvi–xvii) reproduce GUIDE.md's prose, the Chapters/Purpose table (all 12 rows matching REFERENCE-MAP label numbers 1–2, 3, 4–6, 7, 8–9, 10–11, 12, A–D, E, F, G), the Figure 1.2 reference, the YouTube playlist URL wrap, the draft versions 38d67ec/0f553e08, and the 11-row Ep./Title/Covers video table with red ▶ markers. Long labels (12.2.10, NG-01…NG-33), hanging wrapped entries (5.2.2, 7.3.3, 12.1 LOF), en-dashes (heat–Mellin, Hilbert–Schmidt), math glyphs ($t^\kappa$, $0<\alpha\le1$, $(x,s)$, $3/5$, $1/4$), folios viii–xvii, and page transitions Contents→Illustrations→guide all check out.
+
+```json
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS",
+  "confidence": "high",
+  "source_coverage": [
+    "TARGET.md lines 1-7 (complete)",
+    "CONTENTS.md lines 1-240 (complete)",
+    "GUIDE.md lines 1-76 (complete)",
+    "ILLUSTRATIONS.md lines 1-46 (complete)",
+    "IMAGE-MAP.json lines 1-2168 (complete)",
+    "SOURCE-MAP.json lines 1-126 (complete)",
+    "REFERENCE-MAP.json lines 1-37 (complete)",
+    "LAYOUT.md lines 1-77 (complete)",
+    "PREAMBLE.md lines 1-132 (complete)",
+    "STYLES.md lines 1-20 (complete)",
+    "p009-overview.png (inspected, complete)",
+    "p009-band1-t01.png (inspected, complete)",
+    "p009-band1-t02.png (inspected, complete)",
+    "p009-band2-t01.png (inspected, complete)",
+    "p009-band2-t02.png (inspected, complete)",
+    "p009-band3-t01.png (inspected, complete)",
+    "p009-band3-t02.png (inspected, complete)",
+    "p010-overview.png (inspected, complete)",
+    "p010-band1-t01.png (inspected, complete)",
+    "p010-band1-t02.png (inspected, complete)",
+    "p010-band2-t01.png (inspected, complete)",
+    "p010-band2-t02.png (inspected, complete)",
+    "p010-band3-t01.png (inspected, complete)",
+    "p010-band3-t02.png (inspected, complete)",
+    "p011-overview.png (inspected, complete)",
+    "p011-band1-t01.png (inspected, complete)",
+    "p011-band1-t02.png (inspected, complete)",
+    "p011-band2-t01.png (inspected, complete)",
+    "p011-band2-t02.png (inspected, complete)",
+    "p011-band3-t01.png (inspected, complete)",
+    "p011-band3-t02.png (inspected, complete)",
+    "p012-overview.png (inspected, complete)",
+    "p012-band1-t01.png (inspected, complete)",
+    "p012-band1-t02.png (inspected, complete)",
+    "p012-band2-t01.png (inspected, complete)",
+    "p012-band2-t02.png (inspected, complete)",
+    "p012-band3-t01.png (inspected, complete)",
+    "p012-band3-t02.png (inspected, complete)",
+    "p013-overview.png (inspected, complete)",
+    "p013-band1-t01.png (inspected, complete)",
+    "p013-band1-t02.png (inspected, complete)",
+    "p013-band2-t01.png (inspected, complete)",
+    "p013-band2-t02.png (inspected, complete)",
+    "p013-band3-t01.png (inspected, complete)",
+    "p013-band3-t02.png (inspected, complete)",
+    "p014-overview.png (inspected, complete)",
+    "p014-band1-t01.png (inspected, complete)",
+    "p014-band1-t02.png (inspected, complete)",
+    "p014-band2-t01.png (inspected, complete)",
+    "p014-band2-t02.png (inspected, complete)",
+    "p014-band3-t01.png (inspected, complete)",
+    "p014-band3-t02.png (inspected, complete)",
+    "p015-overview.png (inspected, complete)",
+    "p015-band1-t01.png (inspected, complete)",
+    "p015-band1-t02.png (inspected, complete)",
+    "p015-band2-t01.png (inspected, complete)",
+    "p015-band2-t02.png (inspected, complete)",
+    "p015-band3-t01.png (inspected, complete)",
+    "p015-band3-t02.png (inspected, complete)",
+    "p016-overview.png (inspected, complete)",
+    "p016-band1-t01.png (inspected, complete)",
+    "p016-band1-t02.png (inspected, complete)",
+    "p016-band3-t01.png (inspected, complete)",
+    "p016-band3-t02.png (inspected, complete)",
+    "p017-overview.png (inspected, complete)",
+    "p017-band1-t01.png (inspected, complete)",
+    "p017-band1-t02.png (inspected, complete)",
+    "p017-band2-t01.png (inspected, complete)",
+    "p017-band2-t02.png (inspected, complete)",
+    "p017-band3-t01.png (inspected, complete)",
+    "p017-band3-t02.png (inspected, complete)",
+    "p018-overview.png (inspected, complete)",
+    "p018-band1-t01.png (inspected, complete)",
+    "p018-band1-t02.png (inspected, complete)",
+    "p018-band2-t01.png (inspected, complete)",
+    "p018-band2-t02.png (inspected, complete)",
+    "p018-band3-t01.png (inspected, complete)",
+    "p018-band3-t02.png (inspected, complete)"
+  ],
+  "checks": [
+    {
+      "claim": "PAGE-009",
+      "verdict": "PASS",
+      "reason": "Physical page 9 (folio viii) opens Contents with blue numberless heading; chapter entries Preface i, Abstract vii, Illustrations xiv, A guide to the proof xvi (bold, no leaders) and all numbered entries 1 Introduction 1 through 1.10 'Toward a general variational method for random evolution equations' 28 match CONTENTS.md lines 1-51 exactly, including $t^\\kappa$ in 1.6; subsection leaders, number columns and folio viii correct; paragraph-level .toc lines correctly suppressed (tocdepth=2 per LAYOUT.md)."
+    },
+    {
+      "claim": "PAGE-010",
+      "verdict": "PASS",
+      "reason": "Physical page 10 (folio ix) carries running head 'Contents' with 0.3pt rule; entries 2 Construction and two-chain estimates 30 through 5.1.5 'Time-path convergence and Gaussian norm bounds' 119 all match CONTENTS.md lines 55-96, including 3.3.3 -> 79, 4.2.4 -> 100, 4.3 -> 101; folio ix present."
+    },
+    {
+      "claim": "PAGE-011",
+      "verdict": "PASS",
+      "reason": "Physical page 11 (folio x) entries 5.2 -> 121 through 9.1.1 -> 184 match CONTENTS.md lines 97-134; two wrapped entries observed with proper hanging indent and leaders on the continuation line: 5.2.2 ('The spatial covariance space and an extension preserving the / given noise ... 123') and 7.3.3 ('Full-class dilation and finite variational values for nonnegative / controls ... 165'); folio x present."
+    },
+    {
+      "claim": "PAGE-012",
+      "verdict": "PASS",
+      "reason": "Physical page 12 (folio xi) entries 9.1.2 -> 186 through 12.3 -> 259 match CONTENTS.md lines 135-178; long subsection number 12.2.10 (NG-18 -> 258) is properly spaced per the LAYOUT.md \\l@subsection 4em adjustment; NG-01..NG-17 identifiers match; folio xi present."
+    },
+    {
+      "claim": "PAGE-013",
+      "verdict": "PASS",
+      "reason": "Physical page 13 (folio xii) entries 12.3.1 NG-08 -> 260 through B.3 -> 307 match CONTENTS.md lines 179-225; en-dashes in 'heat--Mellin' and 'Hilbert--Schmidt' render correctly; math in B.1.3 'Spectral bounds for 0 < alpha <= 1 in all three dimensions' -> 297 legible; NG-19/20/23/28/29/31/33 identifiers match; folio xii present."
+    },
+    {
+      "claim": "PAGE-014",
+      "verdict": "PASS",
+      "reason": "Physical page 14 (folio xiii) completes the Contents: C -> 312, C.1 312, C.2 319, C.3 331, D -> 334, D.1 334, D.1.1 339, D.2 342, E 348, F 351, G 358, Bibliography 360, List of notation 363, Subject index 369, matching CONTENTS.md lines 226-240; lower body blank as expected; folio xiii centered."
+    },
+    {
+      "claim": "PAGE-015",
+      "verdict": "PASS",
+      "reason": "Physical page 15 (folio xiv) shows the blue 'Illustrations' heading and LOF entries 1.1 -> 1 through A.1 -> 288 matching ILLUSTRATIONS.md lines 2-39; the long figure 12.1 caption wraps over five lines with hanging indent, contains the 'No-go 05' reference glyph, $(x,s)$, 3/5, 1/4, italic x and y, and ends with leaders to 254; chapter \\addvspace gaps visible between groups; folio xiv present."
+    },
+    {
+      "claim": "PAGE-016",
+      "verdict": "PASS",
+      "reason": "Physical page 16 (folio xv) is the LOF continuation with the single entry E.1 'The work day by day, with milestones' -> 350 matching ILLUSTRATIONS.md line 44; mid-page band is blank (consistent with IMAGE-MAP omitted_blank_tiles for p016-band2, confirmed empty in overview); folio xv centered. Running head reads 'Contents' (stale mark), a source-faithful cosmetic artifact noted in minor findings, not a correspondence failure."
+    },
+    {
+      "claim": "PAGE-017",
+      "verdict": "PASS",
+      "reason": "Physical page 17 (folio xvi) opens 'A guide to the proof' with the intro paragraph and the Chapters/Purpose booktabs table matching GUIDE.md lines 7-36; all twelve reference numbers (1-2, 3, 4-6, 7, 8-9, 10-11, 12, A-D, E, F, G) agree with REFERENCE-MAP labels; wrapped cells for rows 12, E, G render correctly; 'Figure 1.2' reference matches the Fig:chapter-roadmap label; Video introduction paragraph begins with the playlist URL breaking 'https://www.youtube.com/ playlist?list=PLWiXjeUrQ62k' in blue typewriter; folio xvi present."
+    },
+    {
+      "claim": "PAGE-018",
+      "verdict": "PASS",
+      "reason": "Physical page 18 (folio xvii) completes the guide: closing video paragraph with texttt versions 38d67ec and 0f553e08 matching GUIDE.md lines 53-56, and the Ep./Title/Covers table (lines 58-76) with all 11 rows, red \\blacktriangleright video glyphs, wrapped Title/Covers cells (e.g. 'ex-ponent $\\kappa$', 'Chap-ter 1'), and references Chapter 1-3, 4-6, 7-8, 9-10, 11, 12, Appendices A-D, E-G all matching REFERENCE-MAP; bottom rule and folio xvii present. Running head again shows the stale 'Contents' mark (minor finding)."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Pages 16 (folio xv, Illustrations continuation) and 18 (folio xvii, guide continuation) carry the running head 'Contents': the redefined \\listoffigures and the \\chapter* guide heading set no mark (LAYOUT.md lines 14-17, 67-71), so the \\tableofcontents mark persists. The rendering is exactly what the committed source produces, so this is a cosmetic observation about the book's own typesetting, not a source-correspondence defect.",
+      "Paragraph-level entries present in CONTENTS.md (e.g. 'Video introduction.' xvi, 'Zero covariance.' 4) do not appear in the printed Contents; this is intentional per \\setcounter{tocdepth}{2} (LAYOUT.md line 29).",
+      "Physical page 16 band 2 tiles are not part of the required set (IMAGE-MAP omitted_blank_tiles: 'Entire parent RGB white; no visible ink'); the overview confirms the mid-page region is blank, so coverage is complete.",
+      "Tile overlap duplicates a few glyphs across adjacent bands (e.g. folios appear in both band-3 tiles); this is the documented overlapping-tile design, not duplication in the PDF."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI visual/source-correspondence review only; it is not human verification, not a novelty audit, and certifies no mathematical content, proofs, or imported sources.",
+    "URL functionality, hyperlink destinations, and YouTube video content were not tested (no network use permitted); only the printed glyphs of the playlist URL and episode identifiers were checked against GUIDE.md/STYLES.md.",
+    "Fidelity of the rasters to the committed PDF bytes is asserted by the packet's custody metadata (IMAGE-MAP sha256 fields); I verified visual content against the compiled .toc/.lof and source contexts, not by re-hashing the PDF.",
+    "Pages outside 9-18 were not inspected; cross-page claims (e.g. that chapter 2 truly starts on printed page 30) rest on the compiled CONTENTS.md/ILLUSTRATIONS.md binding, which REFERENCE-MAP declares matched to the committed build.",
+    "All 68 required views were legible at the supplied resolution; no glyph required inference from source."
+  ]
+}
+```
