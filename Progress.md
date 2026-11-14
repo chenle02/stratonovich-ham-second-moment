@@ -20251,3 +20251,7 @@ Le also changed the final Lean target to L14/publicv0.10.0. The recorded R-to-F 
 ## 2026-11-14 — Chapter12 panel011022 main-review adjudication (Agent3)
 
 Actual DeepSeek V4 Pro returned PASS_WITH_NOTES/HIGH on the frozen complete panel input; all125 text deliveries are verified, with no image credit. Root read the complete report and rejected its new NG-03 wording recommendation: the reviewer integrates s*r^(1-alpha), whereas the proof correctly integrates s^(1-alpha)*r for r<=s. The printed beta-integral value is exact. See `private/publication-closeout/chapter12-panel-20261114-011022/MAIN-NG03-ADJUDICATION.md`. Original report/confidence preserved; no manuscript change. Other notes remain optional editorial items. Native reviews and full-panel closure are pending.
+
+## 2026-11-14 — Chapter12 panel011022 native skeptic (Agent3)
+
+Actual native Opus5.5 completed PASS_WITH_NOTES/MEDIUM, accepted=false. Root read all33 no-go checks and adjudicated all11 minor findings in `private/publication-closeout/chapter12-panel-20261114-011022/QWEN-ADJUDICATION.md`. No required mathematical repair and no manuscript change. The canonical ledger verifies80/125 texts complete,44 unread,1 partial and52/52 exact images; the missing nonblind history/metadata is a real outstanding duty, not waived or relabelled. NG-11 certificate wording is already present; the Appendix E display is a valid status normalization, with optional prose precision sent to the editorial owner. This does not close the HIGH/full-coverage gate.
