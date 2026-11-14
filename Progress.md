@@ -20095,3 +20095,10 @@ batches/calibrations, preserves completed evidence and collects already-running
 B003. Mathematical/source/application and fresh scientific review gates remain
 unchanged. A stable final PDF plus known layout issues will be handed to Le;
 no completed human visual review is claimed yet.
+
+
+### 2026-11-13 — publication closeout: terminal review custody (Agent 3; for Le)
+
+The complete corrected book/reader MAIN call finished on unchanged frozen inputs. Actual DeepSeek V4 Pro, tool-free: 609547 input, 10102 output and 23360 reasoning tokens; native public final equals the retained report. Its raw verdict is PASS_WITH_NOTES/MEDIUM, but JSON is invalid and canonical unique-closer recovery refused. It is not accepted and does not close the scientific gate. Grouped spot checks and partial reader applications are under independent scope adjudication; no confidence-only retry or manuscript repair is inferred. Source-safe result: private/publication-closeout/WHOLE-MAIN-RESULT.json; raw custody remains in sources/review-packets/.
+
+The already-running B003 visual check finished accepted HIGH with exact delivery of all 89 assigned images and 15 texts. Retained scoped visual coverage is now 28/392 pages. This is not scientific or human verification; Le owns the final all-page typesetting read after mathematical closeout, and no further automated visual batch was started. Three internal workers now handle scientific coverage, remaining family evidence and fresh independent-review duties. Both records are committed locally only while Agent 16’s release freeze remains in force.
