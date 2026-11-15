@@ -31,23 +31,23 @@ required whole-paper scientific, source/visual, fresh cold and delivery gates.
 The older roadmap counts and launcher snapshots below remain historical;
 they do not override this frontier or the latest dated adjudications.
 
-Current origin manuscript: 396-page book and 28-page reader at source
-`b35536c1` (approved figure replay; earlier Figure7.2/page2 fix retained).
-Le approved the replay push;16 verified exact source/PDF equality, clean builds,
-placements and synchronization. This is source/presentation adoption, not
-scientific/global or publication acceptance. Exact paired hashes and scoped
-source/link/filter evidence: `private/audit/2026-11-15-iceberg-memory-combined-held/`.
-Earlier package/compatibility receipts retain their exact older source scopes.
+Current origin manuscript: 395-page book and 28-page reader after the
+readability replay`9c334846`; scientific review inputs remain frozen at
+`b35536c1`. The replay preserves all printed Arabic page numbers and the
+mathematical proof source; its shorter List-of-Figures caption removes one
+Roman page. This is presentation adoption, not global scientific or publication
+acceptance. Car/Preface replay and further explanatory candidates remain in
+their separately checked approval routes.
 
-Immediate scientific dependency: the four approved local blind checks on
-sourceb35536c1, frozen16131204, run sequentially OP→IC→PU→CH by3. OP is accepted
-within its assigned local scope at06594e2d; IC is qualified PARTIAL positive
-evidence atdf8039cb and its full assigned scope is NOT accepted, despite raw
-PASS/high. No confirmed manuscript defect or retry follows from that distinction.
-PU is reported active and CH approved waiting. Earlier broader MEDIUM,
-incomplete and qualified evidence retains its scope; Le's assurance decision
-remains after the actual results. No whole-parent/global promotion is inferred.
-Continue authorized independent publication work, without duplicate reviews.
+Immediate scientific dependency: the approved local OP→IC→PU→CH sequence.
+OP is accepted only within its assigned local scope (`06594e2d`). IC is
+qualified PARTIAL positive evidence, with full assigned scope NOT accepted
+(`df8039cb`), despite raw PASS/high. PU has substantive mathematical evidence
+but an observed internal automatic stream retry and uncounted abandoned-stream
+usage; protocol/cap acceptance needs Le's explicit disposition. CH is running
+unchanged as approved; no result is inferred. No confirmed manuscript defect,
+retry or whole-parent/global promotion follows. Le's remaining assurance
+choice is after the actual adjudications. Independent authorized work continues.
 
 After scientific closure: Le's all-page typesetting read; Agent 16's source
 R; companion re-anchor, Le acceptance and public v0.10.0/L14; F/G and front-door
@@ -59,7 +59,7 @@ The plan above is an intra-round checkpoint, not whole-book clearance.
 ## Live team status — read before messaging
 
 <!-- team-status:start -->
-Snapshot UTC: 2026-11-15T05:49:37.411661+00:00. Agent5 maintains this compact summary from submitted
+Snapshot UTC: 2026-11-15T06:09:31.749140+00:00. Agent5 maintains this compact summary from submitted
 owner reports and committed artifacts. Owners keep their normal dated entries
 below; those entries and exact receipts establish scope. This is not a new
 acceptance ledger. Check this section and its linked evidence before asking
@@ -69,8 +69,9 @@ stale/ambiguous information, rather than routine queries.
 ### Agent3 — mathematics and reviews
 
 - Current: OP locally accepted; IC full assigned scope unaccepted (partial
-  positive evidence); PU reported active; CH approved waiting.
-- Artifacts: frozen scopes16131204/sourceb35536c1; OP06594e2d; ICdf8039cb.
+  positive evidence); PU protocol acceptance/cap compliance qualified; CH running.
+- Artifacts: frozen scopes16131204/sourceb35536c1; OP06594e2d; ICdf8039cb;
+  PU/CH disposition in go/no-go section7 (`c2326865`, `1939b666`).
 - Next: finish the approved single-attempt sequence, preserve raw reports,
   adjudicate exact scopes and bring the remaining assurance decision to Le.
 - Also: guides/endings source audit40f63f79 and successor checkc074c0eb done.
@@ -81,10 +82,10 @@ stale/ambiguous information, rather than routine queries.
 
 - Current: figure replayb35536c1 on origin/<HUB>; car design settled at
   be3e548c, accepted Preface replay slot7=6aa11295.
-- Ready for the approval/adoption route: corrected guides3a4ea3bc, endings
-  d91a9bfd, short-LoF captionef8fac86 and reading table12debd7d.
-- Next: source-safe sequencing and exact combined candidates for Le; preserve
-  the current approved review inputs until later-job preflights have passed.
+- Readability guides/endings/short-LoF/time table landed as`9c334846` after
+  owner checks; source-line remap is verified by22. Current book395/reader28.
+- Next: actual review dispositions and Le's assurance, final composed typesetting
+  coverage, separately approved explanatory/voice candidates and release freezes.
 - Dependency: Le's assurance/typesetting/release decisions and approved source
   freezes. Agent16 owns R, final F, export/rehearsal and release safety.
 
@@ -99,11 +100,13 @@ stale/ambiguous information, rather than routine queries.
 
 ### Agent24 — writing and polishing
 
-- Current: required guide/endings corrections implemented as3a4ea3bc/d91a9bfd
-  and independently source-checked by3; all remain in the approval route.
+- Current: required guides/endings corrections independently source-checked
+  by3 and landed through`9c334846`. Glossary6ae1a4e7/radius table987531a1 now
+  have exact required source/definition corrections from3 (`74561e45`).
 - Car is settled: be3e548c carried by slot7=6aa11295; no new design work.
-- Next: authorized writing/held candidates and exact handoffs; Agent5 is
-  drawing the supplied exponent, mask/window and control→mean→wave briefs.
+- Next: glossary/radius successors, the focused plural-authorial-voice pass
+  below, and exact handoffs. Agent5's exponent56114300 and maskca8449db assets
+  are HELD ready for24; the control→mean→wave drawing is in progress.
 - Dependency:3checks mathematical/dependency claims;16checks publication
   candidates; Le approves required final SHAs. F/G wait for R/public Lean pins.
 
@@ -127,6 +130,36 @@ stale/ambiguous information, rather than routine queries.
   taking over publication, mathematics, Lean, writing or video ownership.
 <!-- team-status:end -->
 
+
+## Editorial rule and focused update — plural authorial voice
+
+Le's standing instruction (2026-11-15): throughout the book, use **we / our /
+us** for authorial prose, with **ours / ourselves** where grammar requires.
+Avoid authorial **I / my / me / mine / myself** and convert contractions and
+verb agreement contextually. This rule is effective now; it is not a global
+search-and-replace operation.
+
+- Agent24 owns the focused prose pass. Preserve mathematical symbols such as
+  interval`I`, Roman`Part I`, macro names, labels, bibliography keys, URLs,
+  published titles, verbatim quotations and original review/history evidence.
+  The sole-author metadata and factual attribution are unchanged.
+- Apply it across the active book inputs and affected reader prose, including
+  Preface and captions where applicable. Keep the settled car drawing fixed.
+  Proper source titles and quotations remain exact even when they contain I/my.
+- Prepare one clearly scoped HELD voice-pass candidate on the composed approved
+  source, showing parent, changed paths, intentional exceptions and page impact.
+  Rebuild affected PDFs and check references, typography and source preservation.
+- Agent3 checks any mathematical/dependency wording or frozen-input overlap;
+  frozen reviewer inputs/archives are never edited. Agent16 controls publication
+  review and the applicable final-SHA/push approval route.
+- Agent29 receives the same authorial-voice policy for future related video
+  narration and its repository instructions at a natural checkpoint; no early
+  final-F re-pin, historical-quote rewrite or duplicate render is requested.
+  Agent22 is not assigned a prose rewrite.
+
+This is the shared focus anchor. Read it before asking about this style rule.
+Routine notices wait until the receiving agent is idle with clear input; the
+rule itself does not wait for another style-confirmation question.
 
 ## Round
 
@@ -20694,7 +20727,6 @@ After the focused result,16 verified and adopted #5's source-combined Figure7.2/
 ### 2026-11-15: Honest ledger/front-door upkeep prepared privately for16
 
 Prepared schema-compatible draft rows for the two new DeepSeek calls and public-safe author summaries, without changing experiment/, notes/ or front doors: `private/publication-closeout/new-cold-ledger-draft-20261115/`. Raw broad INCONCLUSIVE/medium/253NOT_READ and focused PASS_WITH_NOTES/high/fourCHECKED remain separate from accepted_at_stated_scope=false and incomplete required reconstruction. Both original assistant token objects and actual finish/time/source/hash identities are retained, uncertain broad effort/currency left null, no helper-as-reviewer vote. Duplicate checks againstv2/v3/v4 found neither run; C012/C013 remain provisional, not registry reservations. The current AppendixE generator selects committedv4, so v2-only edits would be insufficient; no generator or public ledger was run/written. The private frontdoor-update patch corrects the stale latest-whole-review description and accurately explains NOT_READ as not independently audited, not missing source/absent author audit. All public candidates omit session/runtime paths, private reasoning and source-sensitive details.16 exact-file/filter check and Le disposition are required before publication of these concrete drafts.
-||||||| parent of 500002ea (HELD: combine approved iceberg and section 3.2 memory figures)
 
 ### 2026-11-15: Approved iceberg + placed memory combined HELD candidate (Agent5)
 
@@ -20796,3 +20828,21 @@ Working-word corrections: Order says need not be orthogonal (odd total order van
 Misreading1 needs cited covariance/data scope for exponent comparisons, not a universal Skorohod identification;2 says not claimed sharp and distinguishes upper bound C from the actual asymptotic constant;3 distinguishes evaluating the white spatial energy from evaluating the full intrinsic supremum, without claiming a proved numerical inequality (the zero branch both vanishes). Misreadings4–6 (no claimed ceiling attainment/equality, auxiliary S1pos, author-edition versus arXivv1) are correct with existing source/normalization qualifications retained. Root uses plainer equivalent Control/Clock wording in REPORT.
 
 Radius rows1–4 are correct in E scope with their cited hypotheses; they do not give uniform F constant-column bounds. Row5 is the expected weighted block-path norm, not a deterministic Cameron mean, and its decay at Rdelta=delta^-1+2 requires fixed even Q>2d/(1−alpha0), in addition to Qgamma>d and beta_t−eta_t−1/Q>0. All model/exponents/B,p,Q are fixed before delta decreases. Optional explicit table scope note is supplied, not an unproved uniform Q/B limit.24 makes successors/line fitting; Le's OK before landing remains unchanged.
+
+### 2026-11-15: Le sets plural authorial voice; focused writing handoff
+
+Recorded the immediate standing rule and single focus anchor above: use
+we/our/us for book authorial prose, with grammatical ours/ourselves.24owns
+the context-aware pass;3checks mathematical/frozen-source overlap,16publication
+gates,29future video narration/repository rule. Preserve mathI, PartI, labels,
+macros, exact source titles/quotes, historical evidence and author metadata.
+No bulk replacement or bookTeX/PDF change in this policy/log-only checkpoint;
+no need to ask Le to approve a policy already explicitly requested. Notices
+are deferred while owners are busy. Also removed one stray literal diff3
+marker from the earlier500002replay; all adjacent historical entries retained,
+Gitindex had no unresolved stages, no mathematics/source evidence deleted.
+
+Coordinator refresh at the voice-policy checkpoint: recorded landed readability
+9c334846 (395/28), actual IC partial-scope qualification, PU's automatic-retry/
+unknown-total-usage protocol boundary and unchanged CH execution. This summary
+does not adjudicate the open PU disposition or turn raw HIGH into acceptance.
