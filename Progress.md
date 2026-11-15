@@ -20973,3 +20973,9 @@ its actual rows/accounting-generatorpatch/fixture rather than issuing obsolete
 pre-proposal warnings or drafting duplicate rows. No publicdata/generator/prose
 change, newmodelcall or PUprotocol waiver. Required/partial rawreview scopes
 and unknown first-stream usage remain separate from publication acceptance.
+
+### 2026-11-15: Active closeout navigation refreshed to actual adopted artifacts
+
+The navigation dashboard still described the old394-page156620f8 epoch and R2 development roles as current, so refreshed `private/publication-closeout/STATUS.md` from actual adopted files/immutable receipts. Book395pages/SHA256c594065800fd1ab8a9d53c92cf39d4842eebb3838a460fa6f5bb807b1aed33b6(latestPDF9c334846), reader28pages/SHA256765c5be9969438b3dd8951619dad15d69963326b74d696c9d1a2c57d2481eff0(latestPDFb810c8d8); disk matches Git blobs, no held396-page candidate substituted. Observation `private/publication-closeout/publication-resume-20261114/ADOPTED-ARTIFACT-OBSERVATION-20261115.json`. This is no new build or finalR/F epoch.
+
+Current summary explicitly distinguishes scopedOPpositive, IC/CHpartial, PUautomatic-retry protocol pendingLe/unknown first usage, completed4call lifecycle, earlier broadINCONCLUSIVE/medium and Chapter12skepticNOTOBTAINED. Earlier reports/failedcompositions remain linked as historical, never overwritten/promoted. Privateledger/disclosure/editorial/bridge proposals and remaining scientific/humanvisual/R→companion→F/package/filter/arXiv sequence are linked with their exact limits. Agent16/Le retain sequencing/decisions; no new provider call, source/PDF/script change, release or grade upgrade.
