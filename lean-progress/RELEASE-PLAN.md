@@ -317,3 +317,19 @@ The tool now lives on the private companion dev branch `reanchor-98f45bed` at `1
 - **Adding a notable manuscript change:** add one entry to `tools/anchor-changes.json`. An entry is used only if its SHA is an ancestor of NEW_SHA. The three entries now are 98f45bed (the C_dir rename), 6f27a8ec (the Chen attribution) and 9581d7c6 (the front-guide paragraph).
 - **Tested from the committed location against 9581d7c6.** The result is identical to the scratch run: 8915 locator rows, the same tree, 2002 files scanned, and every check passes.
 - At R: run the committed copy against R, then rebuild the v0.10.0 public candidate with receipts, then the re-anchor review and confirmation, then Le's acceptance.
+
+## v0.10.0 and video dependency order (#16, 2026-11-15; agreed by #22 with three precisions)
+Le chose option A for the release on 2026-11-15: the honest-standing release states every grade as recorded and upgrades none. R is issued only after Le's typesetting pass on master `33ed4ef7`.
+1. R, after Le's typesetting pass.
+2. #22 re-anchors the companion to R, verifies it and has it reviewed. Le accepts the v0.10.0 candidate. The acceptance is of the exact commit that step 3 tags.
+3. #22 creates the IMMUTABLE v0.10.0 tag on a fixed commit SHA. This is not yet a public release, and no DOI is claimed.
+4. #29 renders against R plus the v0.10.0 tag name and commit SHA. The on-screen identity uses these and never a DOI. #29 uploads the 11 episodes PRIVATE and collects the new IDs.
+5. #22 publishes the v0.10.0 release, and Zenodo mints its DOI. Steps 4 and 5 depend only on step 3: they can run in either order or in parallel, and both must finish before step 6.
+6. Re-pin. #24 puts the v0.10.0 DOI and the 11 new video IDs into the book, followed by one rebuild of the book, reader and combined editions. #3 reseals, #22 runs the zero-shift check, #16 verifies, and Le names the push. That push is F.
+7. Rehearsal and trial audit, Le's accept file, then export and the repository flip. The new videos are PUBLIC no later than the flip, and the old ones are made Unlisted after each signed-out check. Le submits to arXiv (the book only).
+The DOI and final links go into the video descriptions, which stay editable, so no video waits for a DOI.
+
+#22's precisions (none changes the order):
+- Step 3, a local tag before publication. The v0.10.0 tag is created on the local public-candidate commit and is NOT pushed to the public GitHub repository before step 5, because a pushed tag would make the commit public. The SHA is fixed from the moment the tag is created. #22 keeps a private backup (a git bundle on <HUB>) and gives #29 the tag name and the full commit SHA. #29 uses no GitHub URL for it until step 5.
+- Step 5, the GitHub route as for v0.9.0. Push main and the tag, publish the gh release, and Zenodo mints the DOI. `lean-pkg publish` refuses while the manuscript is unposted, because the book stays private until F. The lean-pkg registry record stays verified-private until F; after F, #22 records it with lean-pkg.
+- Step 6, the DOI as a docs-only successor. The Zenodo DOI is written into the companion by a docs-only commit on top of the tag, as `0966ef6` did for v0.9.0. The book pins are: verified = the v0.10.0 tag commit; coverage = the same commit, or the DOI successor if #24 wants the DOI-bearing docs. #22 sends both SHAs and the DOI after step 5.
