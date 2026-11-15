@@ -1,0 +1,90 @@
+\chapter*{Working words and common misreadings}
+\addcontentsline{toc}{chapter}{Working words and common misreadings}
+\markboth{Working words and common misreadings}{Working words and common misreadings}
+\label{S:glossary}
+
+The proof uses a few everyday words in a fixed sense. This list collects them,
+and then names the misreadings that are easiest to make. It adds no assumption
+and no statement. For symbols see the List of notation, and for page numbers
+the Index.
+
+\section*{Working words}
+
+\begin{description}
+  \item[Chain.] The ordered $n$-vertex wave kernel $g_n$: wave Green factors
+    at $n$ times in increasing order. The $n$-th term of the solution
+    integrates $n$ noise factors against one chain (Section~\ref{S:known}).
+  \item[Order.] The number of noise factors in a term. Terms of different
+    orders need not be orthogonal here, and the total order $m+n$ of a product
+    is not a Wiener-chaos order.
+  \item[Pairing.] A matching of noise factors two by two, made when an
+    expectation is taken. The second moment sums over all pairings of the
+    vertices of two chains (Proposition~\ref{P:mixed}). A self-pairing matches
+    two vertices of the same chain.
+  \item[Canonical solution.] The sum of the fixed-order limits, obtained from
+    the regularized classical equations
+    (Proposition~\ref{P:mild-construction}).
+  \item[Phase.] Displacement and velocity together. Localized perturbations
+    lie in $E=H^{1/2}\times H^{-1/2}$; constant data are carried in
+    $F=E\oplus\mathbb{R}^2$ (Section~\ref{S:constant-phase-young}).
+    A restarted wave needs both components (No-go~\ref{P:nogo-14}).
+  \item[Mask.] A smooth compactly supported spatial function that multiplies
+    the physical potential. The lower bound takes a numerical supremum after
+    fixed-mask bounds; the upper point comparison uses growing supports
+    (Propositions~\ref{P:variational-remove-mask} and~\ref{P:original-point-transfer}).
+  \item[Radius.] The size of the region where the mask equals one.
+    The upper point comparison chooses a radius growing with its fast time
+    horizon; lower-bound masks remain fixed before time asymptotics
+    (Chapters~\ref{S:book-lower} and~\ref{S:book-growing-radius}).
+  \item[Block.] One interval of a subdivision of the time axis. The noise in
+    one block is correlated with the noise in the others, so bounds do not
+    simply multiply across blocks.
+  \item[Control.] A vector in the covariance Hilbert space that specifies a
+    Gaussian mean shift. The lower bound uses nonzero nonnegative smooth
+    compact tests $\Psi\in\mathcal{C}_{\mathrm{pos}}$; the upper bound also
+    uses signed completed controls $\Phi\in H_I$.
+    The shift is toward the induced mean.
+  \item[Gaussian cost.] The price of that shift: $v_\Psi/2$, half the variance
+    of $W(\Psi)$. It is paid once for the whole time interval, not once per
+    block.
+  \item[Variational value.] The nonnegative-control value
+    $S_c^{\mathrm{pos}}=\sup_{\Psi\in\mathcal{C}_{\mathrm{pos}}}
+    (cI_\Psi-v_\Psi/2)$ (Proposition~\ref{P:variational-positive-scores}).
+    The constant of Theorem~\ref{T:intrinsic-second-moment} is $S_2^{\mathrm{pos}}$.
+  \item[Ceiling.] An upper bound for the constant, computed from occupation
+    and energy estimates (Theorem~\ref{T:intrinsic-occupation-ceiling}).
+  \item[Clock.] An auxiliary scalar Brownian motion used with a spatial
+    Brownian path to represent the time Laplace transform of the expectation
+    of one expansion term (Section~\ref{S:two-clock-screen}). Copying it with
+    two clocks, constant correlation and no extra weight fails for the first
+    cross pairing (Proposition~\ref{P:clock-copy-obstruction}).
+\end{description}
+
+\section*{Common misreadings}
+
+\begin{description}
+  \item[``This is the Skorohod model.''] It is not. Stratonovich second
+    moments retain self-pairings and mixed terms with $m\ne n$. In the
+    Skorohod chaos expansion, unequal orders are orthogonal and there are no
+    self-contractions. The exponent comparisons here require the cited
+    covariance and data hypotheses; they identify neither solutions nor
+    leading constants.
+  \item[``Theorem~\ref{T:full-upper} gives the constant.''] It gives an upper
+    bound at scale $T^\kappa$, with a constant not claimed sharp. The exact
+    asymptotic constant is identified in Theorem~\ref{T:intrinsic-second-moment},
+    by a separate argument.
+  \item[``The white-noise formulas evaluate the constant.''] They give
+    two-sided bounds (Theorem~\ref{T:white-moment-bounds}). The spatial energy
+    is evaluated in Proposition~\ref{P:white-spatial-energy}; its relation to
+    the moment constant gives bounds, not an evaluation of the full intrinsic
+    supremum.
+  \item[``The ceiling is the constant.''] The ceiling is not asserted to be
+    attained or to equal the constant.
+  \item[``$S_1^{\mathrm{pos}}$ is the first-moment constant.''] It is an
+    auxiliary variational value. No identification with a first-moment
+    constant is asserted.
+  \item[``The arXiv version of the source is the one cited.''] Statements from
+    Xia Chen's paper are cited from his public author
+    version~\cite{chen:author2026:time-dependency}. Its Theorem~1.2 differs
+    from the statement in arXiv:2510.01412v1~\cite{chen:25:time-dependency}.
+\end{description}

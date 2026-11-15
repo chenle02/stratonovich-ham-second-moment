@@ -1,0 +1,44 @@
+% Amy metaphor, redrawn in TikZ from the author's video SVG.
+\begin{tikzpicture}[x=1cm,y=1cm,font=\normalsize]
+  \draw[hamblue!45,thick] (.2,0)--(14.5,0);
+  \filldraw[draw=hamblue,fill=hamblue!5,thick,rounded corners=6pt]
+  (.7,.45)--(.7,2.1)--(2.4,2.1)--(3.2,3.75)
+  --(6.9,3.75)--(7.05,2.2)--(9.5,2.05)--(9.8,1.75)
+  --(9.8,.45)--cycle;
+  \filldraw[draw=hamblue!70,fill=white]
+  (2.65,2.25)--(3.4,3.45)--(4.7,3.45)--(4.7,2.25)--cycle;
+  \filldraw[draw=hamblue!70,fill=white]
+  (5,2.25)--(5,3.45)--(6.7,3.45)--(6.85,2.25)--cycle;
+  \fill[hamteal] (4.05,3.08) circle (.27);
+  \fill[hamteal] (3.6,2.35) .. controls (3.6,2.95) and (4.5,2.95) .. (4.5,2.35)--cycle;
+  \draw[hamteal,line width=1.1pt] (3.4,2.65) circle (.24);
+  \filldraw[draw=hamgold,fill=hamgold!30] (.65,1.3) rectangle (.88,1.8);
+  \draw[hamgold] (.12,1.35)--(.45,1.42) (.08,1.55)--(.45,1.55)
+  (.12,1.75)--(.45,1.68);
+  \draw[hamblue,line width=2pt] (.45,.75)--(1,.75);
+  \node[font=\normalsize\bfseries,text=hamblue] at (6.2,2.8) {Amy};
+  \foreach \x in {2.5,8} {
+  \filldraw[draw=hamblue,fill=white,line width=2pt] (\x,.43) circle (.48);
+  \fill[hamblue] (\x,.43) circle (.12);
+  }
+  \node[draw=hamblue,fill=white,rounded corners=2pt,inner sep=4pt] at (2.35,1.65) {SPDEs-wiki};
+  \node[draw=hamblue,fill=white,rounded corners=2pt,inner sep=4pt] at (5.1,1.65) {SPDEs-Bib};
+  \node[draw=hamblue,fill=white,rounded corners=2pt,inner sep=4pt] at (7.8,1.65) {skills};
+  \node at (5.1,.85) {rules and interfaces};
+  \node[font=\normalsize\bfseries,text=hamteal] at (4.2,4.55) {Driver: the author};
+  \draw[hamteal] (4.2,4.23)--(4.2,3.85);
+  \node[font=\normalsize\bfseries,text=hamgold] at (12.25,4.55) {Fuel: language models};
+  \foreach \name/\yy in {Claude/3.6,GPT/2.8,DeepSeek/2,Kimi/1.2} {
+  \node[draw=hamgold,fill=hamgold!10,rounded corners=2pt,
+  minimum width=2.6cm,minimum height=.55cm] at (12.4,\yy) {\name};
+  \draw[hamgold] (10.6,\yy)--(11.1,\yy);
+  }
+  % Vertical ellipsis: same centre as the fuel boxes, one box-gap below Kimi.
+  \foreach \yy in {.70,.59,.48} {
+  \fill[hamgold] (12.4,\yy) circle (.025);
+  }
+  \draw[hamgold,thick] (10.6,1.2)--(10.6,3.6);
+  \draw[hamgold,thick] (10.6,2.4) .. controls (10.1,2.4) and (10.3,1.25) .. (9.15,1.25);
+  \fill[hamgold] (8.85,1.1) rectangle (9.15,1.4);
+  \node at (7.3,-.75) {The author builds and maintains the car, and chooses its route.};
+\end{tikzpicture}

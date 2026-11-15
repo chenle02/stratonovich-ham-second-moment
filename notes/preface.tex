@@ -1,10 +1,11 @@
 \chapter*{Preface}
 \addcontentsline{toc}{chapter}{Preface}
+\markboth{Preface}{Preface}
 
 This book studies the second moment of the Stratonovich hyperbolic Anderson
 model driven by a Gaussian noise that is fractional in time. For this model,
 X.~Chen~\cite{chen:author2026:time-dependency} constructed the solution and
-showed that $\E u^2(t,x) \le e^{Ct^2}$ for large $t$. I ask two questions. What
+showed that $\E u^2(t,x) \le e^{Ct^2}$ for large $t$. We ask two questions. What
 is the correct growth scale of $\log \E u^2(t,x)$, and what determines the
 constant in front of it? The scale is $t^\kappa$ with $\kappa =
 (4-\alpha-\alpha_0)/(3-\alpha)$, and the limit is given by an explicit
@@ -16,39 +17,74 @@ Chapter~\ref{S:book-setting}.
 
 \section*{How this book was written}
 
-This book was drafted together with Amy, my AI research system. The name began
-as a typo. In an email to a coauthor in the summer of 2026, I meant to write
-``my AI Army'' but missed the letter r, so Army became Amy. My coauthor started
-calling the system Amy, and the name stayed. Amy is not a single language model.
-She is a research environment that I built: written rules for how the work is
+This book was drafted together with Amy, our AI research system. The name began
+as a typo. In an email to a coauthor in the summer of 2026, the author meant to
+write ``my AI Army'' but missed the letter r, so Army became Amy. The coauthor
+started calling the system Amy, and the name stayed. Amy is not a single language model.
+She is a research environment that we built: written rules for how the work is
 done (how each step is organized, how reviews are requested, what counts as
 evidence, when to stop), a research library (a bibliography, a collection of
 papers and their \LaTeX\ sources, and a wiki on stochastic partial differential
 equations), and interfaces through which a language model can use all of these.
 For this book, Amy was run with models from four families: Anthropic Claude,
-OpenAI GPT (through Codex), DeepSeek and Kimi.
+OpenAI GPT (through Codex), DeepSeek and Kimi. Amy is model-agnostic by design:
+any of these can be replaced. Running local, open-weight models, such as Qwen,
+on our own machines is the next thing to test.
 
-One way to picture this is as a car. I built the car and keep it up: the
-written rules, a library of more than a thousand skills learned from earlier
+One way to picture this is as a car. The author built the car and keeps it up:
+the written rules, a library of more than a thousand skills learned from earlier
 work, the research library, and the interfaces. The bibliography is
 \href{https://github.com/chenle02/SPDEs-Bib}{SPDEs-Bib}, and the wiki is built
 on Andrej Karpathy's LLM Wiki pattern~\cite{karpathy:26:llm}: a knowledge base
 that the language models write and maintain. The models are the fuel; they can
-be replaced, and this book used four. I am the driver.
+be replaced, and this book used four. The author is the driver.
+
+\begin{figure}[!htb]
+  \centering
+  \input{notes/figures/amy-car-drawing}
+
+  \smallskip
+  {\footnotesize Amy as a car: the picture behind the car paragraph.\par}
+\end{figure}
 
 References and results are looked up in the bibliography and the wiki instead
 of being recalled, which guards against invented citations and misremembered
 theorems, and it is what makes checking every cited result against its source
-practical. Beyond the mathematics, the choices were mine: what goes into the
+practical. Beyond the mathematics, the choices were ours: what goes into the
 book and what stays out, how it is built, the standard of presentation, what is
 claimed, what is stated only as a conjecture, and what is left for future work.
 Terence Tao has said that mathematics is entering an era of proof
 abundance~\cite{tao:26:math}; when proofs are plentiful, choices like these
 shape a book as much as any proof does.
 
+\begin{figure}[!tp]
+  \centering
+  \includegraphics[width=0.6\textwidth]{media/spdes-wiki-graph/spdes-wiki-graph.png}
+
+  \smallskip
+  \parbox{0.9\textwidth}{\centering\footnotesize The SPDEs-wiki as a graph: each dot is one of its more than
+  4,000 pages, each a Markdown file the models wrote from a paper, a concept or a
+  person they read about. With SPDEs-Bib, it is Amy's long-term memory, which
+  helps her not to hallucinate. Both are parts of the infrastructure, with
+  agent-agnostic skills and the command-line tools built around them.\par}
+
+  \bigskip
+  \includegraphics[width=\textwidth]{media/spdes-wiki-graph/spdes-wiki-local-book.png}
+
+  \smallskip
+  \parbox{0.9\textwidth}{\centering\footnotesize A close-up of the graph
+  above: the wiki around this book. Each dot is one page of
+  the wiki, a Markdown file that the models write and maintain from what they have
+  read: a digest of a paper, or a page on a concept, a theorem or an open problem.
+  Lines are links between pages. Shown are the pages that link to this book's
+  project page or that it links to; some are linked only for a side remark. Drawn
+  from the wiki's link index, November~14, 2026; see
+  \path{media/spdes-wiki-graph/}.\par}
+\end{figure}
+
 The division of labour was as follows. Amy developed the mathematics: the models
 working within her drafted the proofs, the \LaTeX\ source and the bookkeeping.
-My role was to drive the work: I chose the problem, set and revised the goals,
+Our role was to drive the work: we chose the problem, set and revised the goals,
 decided which approaches to pursue or abandon, chose the reviewers and decided
 which results to keep. Each new proof was sent to a
 reviewer from a different model family than its author, and every finding was
@@ -59,13 +95,16 @@ source before it is used. Hairer recommends both practices in his advice on
 writing mathematics with AI~\hyperlink{pp:P1}{[P1]}. The proof assistant Lean was also used: it checks some
 results in full under the book's own hypotheses and the finite and algebraic
 steps of others; analytic inputs that enter Lean as hypotheses are not verified
-there, and most of the main theorems are outside Lean. I take full responsibility for
+there, and two of the four main theorems, the full upper scale
+(Theorem~\ref{T:full-upper}) and the second-moment constant
+(Theorem~\ref{T:intrinsic-second-moment}), are outside Lean. The author takes full responsibility for
 the content of this book. Amy is therefore not an author. She cannot take
 responsibility for the mathematics, which is the condition for authorship. Her
-contribution is nevertheless substantial and should be visible, so I acknowledge
+contribution is nevertheless substantial and should be visible, so we acknowledge
 her here by name, and the AI-use statement records in detail which models did
 what.
 
+\clearpage
 \section*{An experiment in doing mathematics}
 
 \begin{wrapfigure}{r}{0.29\textwidth}
@@ -102,17 +141,18 @@ This book is also an experiment in how such mathematics can be checked,
 shared and understood. It has four parts: opening the arguments to community
 review, preserving the development and the failed attempts, distinguishing what
 has been checked, and asking what general ideas can be extracted from the work.
-The development, the writing and much of the checking were done with AI. I also
+The development, the writing and much of the checking were done with AI. We also
 use AI in the search for an explanation, as described below. Human understanding
-and public discussion remain aims of the experiment. The complete project is on
-GitHub. Each result has a row in a public table, and readers can check a proof,
-dispute it, repair it or explain it through a pull request, or extend the Lean
-verification and the tools behind the book. Every merged contribution is
-acknowledged by name, and a substantial contribution, to the mathematics, the
-Lean verification or the tools, leads to coauthorship of the next version.
+and public discussion remain aims of the experiment. The manuscript and its
+filtered development record are on GitHub. Each result has a row in a public
+table, and readers can check a proof, dispute it, repair it or explain it
+through a pull request, or extend the Lean verification and the tools behind the
+book. Every merged contribution is acknowledged by name, and a substantial
+contribution, to the mathematics, the Lean verification or the tools, leads to
+coauthorship of the next version.
 Help with \mbox{de-slopping} is especially welcome: turning AI-written
 arguments into ones a person can read and trust. And whether it is the
-mathematics or the methodology, I would be happy to see this work inspire your
+mathematics or the methodology, we would be happy to see this work inspire your
 own. This is
 version 1.0.0 of the book. Later versions follow one rule, written in the
 repository: the last number changes for corrections of wording and form, the
@@ -129,7 +169,7 @@ of researchers who work to understand AI-generated
 proofs~\hyperlink{pp:P14}{[P14]}, and credit for works at the level of a
 doctoral thesis, defended in public with open reviews~\hyperlink{pp:P10}{[P10]}.
 
-I also treat the development record as data for an experiment in doing
+We also treat the development record as data for an experiment in doing
 mathematics with AI. The public repository preserves a filtered history:
 proof revisions, failed approaches with their reasons, Lean records, review
 summaries, selected original reports, and marked copies whose output format
@@ -158,7 +198,7 @@ Review arguments themselves require checking: No-go~\ref{P:nogo-33}
 records three incorrect steps proposed in reviews and the calculations
 that exposed them.
 
-I also treat an approach that does not work as a result.
+We also treat an approach that does not work as a result.
 Chapter~\ref{S:book-no-go} gives numbered statements and proofs for the
 mathematical obstructions, explaining why each approach was attractive,
 where it fails and what it does not rule out. Readers can use these results
@@ -175,7 +215,7 @@ throughout. Lerario makes the same point about mathematics in general: it should
 always be clear how far a result has been checked, and an argument checked step
 by step by a proof assistant such as Lean should not have the same standing as a
 heuristic analogy~\hyperlink{pp:P13}{[P13]}. A review by a language model is a
-check, not a proof, and Lean checks only part of the book; most of the main theorems are outside it. At the time of writing, the technical chapters have not yet been
+check, not a proof, and Lean checks only part of the book; two of the four main theorems are outside it. At the time of writing, the technical chapters have not yet been
 checked line by line by a human reader; the public table records how far each
 result has been checked.
 
@@ -183,9 +223,9 @@ result has been checked.
 
 A long argument produced with AI leaves another task: to understand which
 ideas make it work and whether they can be used elsewhere. This book offers a
-small experiment in that direction. I ask Amy to return to the arguments she
+small experiment in that direction. We ask Amy to return to the arguments she
 helped produce, including failed approaches, and to look for recurring
-constructions, indispensable assumptions and possible general principles. I use
+constructions, indispensable assumptions and possible general principles. We use
 her proposals to guide further questions and checks. The aim is to involve AI in
 the search for an explanation as well as in the production of an argument. A
 proposed principle should explain why several steps belong together and help us
@@ -210,7 +250,7 @@ and each estimate was kept once it had been checked. Once the ideas that make
 the proof work are understood, many of these steps should merge or disappear.
 Several estimates may follow from one principle, some detours may turn out to
 be unnecessary, and the sharp constant may need only part of the present
-machinery. I expect this simplification to come after, and through, human
+machinery. We expect this simplification to come after, and through, human
 understanding of the argument, with AI used to test each proposed shortcut
 against the full proof. No reduction in length is claimed in this version.
 Hairer makes a similar point: in digesting an argument produced by AI, one may
@@ -255,9 +295,9 @@ Appendix~\ref{S:appendix-lean-checks}.
 
 \section*{Acknowledgements}
 
-I was supported in part by the U.S. National Science Foundation under
+The author was supported in part by the U.S. National Science Foundation under
 Grant \mbox{DMS-2246850} and CAREER Grant \mbox{DMS-2443823}, and by Simons
-Foundation Collaboration Grant for Mathematicians 959981. I thank OpenAI for
+Foundation Collaboration Grant for Mathematicians 959981. We thank OpenAI for
 providing access to its AI tools through the ChatGPT for Academic Researchers
 program.
 

@@ -101,3 +101,66 @@ final page images, source-equality and real-filter checks:
 This is not yet the adopted set;16checks and Leapproves this combined SHA
 before push. Car remains separate in the Preface replay; existing adopted
 validation/count statements above retain their historical scopes.
+
+## HELD drawing asset: kappa fan
+
+`kappa-fan-drawing.tex` plots the exponent against the temporal parameter for
+three supplied spatial exponents. The3/2line stops at its excluded half-time
+cutoff; the same line's continuation is faint/dashed and explicitly outside
+the hypothesis. Open endpoints, spatial-white label, static-limit note and
+longer-memory arrow retain the requested scope. Content9.61×5.03cm,12ptprose.
+Standalone0/0/0/0/exact-fraction evidence:
+`private/audit/2026-11-15-kappa-fan-drawing-held/`; current bounded pins:
+`VALIDATION-kappa-fan-held.json`.24owns caption/placement,3checks caption,
+16andLeapprove. No current book/reader insertion, figure counts or adopted
+PDF pins are changed by this drawing-only HELD unit.
+
+The kappa-fan HELD successor to56114300uses true ytick7/5instead of4/3;
+4/3nowlabels only the gold open cutoff. The memory arrow is under the actual
+axis and title, away from the legend. Curves/endpoints/palette/legend/type/
+scales are unchanged. Final0/0/0/0and exact-Fraction regression pass. Content
+9.598×5.160cm versus9.608×5.028cm: height+1.32mm explicitly disclosed to keep
+3.20ptannotation clearance without smaller type or clipping.24checks actual
+book-page impact; no adoption or size waiver. Evidence:
+`private/audit/2026-11-15-kappa-axis-clarity-held/`; latest pins in
+`VALIDATION-kappa-fan-held.json`.
+
+## HELD drawing asset: physical-mask window (2026-11-15)
+
+`mask-window-drawing.tex` stacks a smoothed toy potential, a smooth squared-root
+mask and their verified product over one spatial axis. The 11.8 cm by 6 cm drawing
+uses 12 pt prose. It is not inserted in the book or reader; #24 owns caption and
+placement, #3 checks the draft caption, and #16/Le approve. No covariance claim is
+made by this asset. Standalone 0/0/0/0 and product/plateau/support evidence:
+`VALIDATION-mask-window-held.json` and
+`private/audit/2026-11-15-mask-window-drawing-held/`. Existing adopted figure
+counts/pins are unchanged; no integration/scientific gate is advanced.
+
+## HELD drawing asset: control, mean and wave
+
+`control-mean-wave-drawing.tex` is the supplied Chapter8construction-order
+row: Gaussian control, deterministic mean and wave evolution, two labelled
+arrows, and a fixed-spatial-radius bracket. No equations or other claims.
+Content14.55×2.89cm; matched12pttitle baselines and uniform11ptbody/edge/note
+hierarchy retain clear margins and a two-line middle description. Scoped
+0/0/0/0preview, exact wording/baseline checks and hashes:
+`private/audit/2026-11-15-control-mean-wave-drawing-held/` and
+`VALIDATION-control-mean-wave-held.json`.24owns caption/placement,3checks
+caption,16andLeapprove. No book/reader insertion or adopted pins changed.
+
+The Chapter8control/mean/wave HELD successor to8025ccd6retains its main row,
+adds live-overridable section macros on the arrow labels, and two lighter
+secondaryinputs8.1→8.2with only8.2feeding the mean box. The thin fixed-radius
+bracket spans both rows below them, avoiding a path/label crossing. Content
+14.550×4.201cm; preservedmain12/11pthierarchy, secondary11pt; both default and
+override previews0/0/0/0. Evidence:
+`private/audit/2026-11-15-control-mean-wave-inputs-held/`; current bounded pins
+`VALIDATION-control-mean-wave-held.json`.24caption/placement and3scientific
+captioncheck precede16/Leapproval. No book/reader/caption or public/master change.
+
+Latest Chapter8flow HELD successor toa33fd95cmoves only the two main-arrow
+lines fromy=.80to.60, preserving xextents and every other drawing byte. Final
+standalone0/0/0/0, text/dimensions unchanged; arrows meet straight sides below
+rounded top corners. Evidence/two-line diff:
+`private/audit/2026-11-15-control-mean-wave-lower-arrows-held/`.24typesets
+and seeks Le/3/16checks; no book edit or push/adoption in this source unit.

@@ -1,0 +1,89 @@
+{
+  "status": "HELD drawing asset only; not integrated",
+  "parent": "9445840afce95433ed480ff948486639c83ac13c",
+  "brief": "Agent24 6d686a4ced7e / Le readability plan",
+  "scope": "One-dimensional toy after smoothing; not a realization of unsmoothed distribution, not a covariance or optimizer claim",
+  "caption_and_placement_owner": "Agent24; draft caption requires Agent3 check; Agent16 and Le approve candidate",
+  "draft_caption_included_or_approved": false,
+  "book_reader_and_covariance_source_unchanged": true,
+  "source_crosschecks": [
+    {
+      "path": "notes/integrated_covariance_foundation.tex",
+      "pinpoint": "S:masked-covariance; auxiliary-mask discussion and quotient caution"
+    },
+    {
+      "path": "notes/integrated_cameron_mean.tex",
+      "lines": "15-20",
+      "meaning": "physical mask is eta_R squared, root one on radiusR and supported in radius2R"
+    },
+    {
+      "path": "notes/integrated_uniform_mean.tex",
+      "lines": "7-10",
+      "meaning": "fixed smooth eta, unit plateau, closed radius-two support, scaled and squared"
+    }
+  ],
+  "construction": {
+    "display_coordinate": "x/R",
+    "mask": "square of a genuine C-infinity flat-root step, sampled at531 points",
+    "top": "smooth irregular oscillatory toy profile, sampled linearly",
+    "bottom": "quadratic product of each pair of displayed linear segments, represented as cubic Bezier; exact construction apart from9decimal coordinate rounding",
+    "numeric_checks": {
+      "sample_count": 531,
+      "sample_step_in_x_over_R": 0.01,
+      "mask_is_eta_squared": true,
+      "mask_range": [
+        0.0,
+        1.0
+      ],
+      "max_plateau_error": 0.0,
+      "max_outside_support_value": 0.0,
+      "max_inside_plateau_product_error": 0.0,
+      "max_outside_support_product": 0.0,
+      "max_even_mask_error": 0.0,
+      "product_interpolant_checks": 4770,
+      "max_unrounded_product_algebra_error": 1.1102230246251565e-16,
+      "max_rounded_curve_vs_display_product_error_cm": 9.29089361001445e-10,
+      "rounded_coordinate_places": 9,
+      "curve_model": "C-infinity toy potential; eta-squared C-infinity mask; top/mask sampled linearly; bottom is the quadratic product of the displayed linear interpolants, represented as cubic Bezier segments, up to decimal-coordinate rounding.",
+      "limits": "Finite drawing consistency checks only; not a proof or covariance/model assertion. The draft caption is not included or approved by this asset."
+    }
+  },
+  "geometry": {
+    "designed_drawing_cm": [
+      11.8,
+      6.0
+    ],
+    "fraction_of_book_textwidth": 0.7493014986029972,
+    "preview_points": [
+      0.0,
+      0.0,
+      346.4440002441406,
+      182.03399658203125
+    ],
+    "standalone_border_tex_pt": 6,
+    "pdf_text_span_sizes_points": [
+      11.955
+    ],
+    "intended_prose_size_tex_pt": 12,
+    "axis": "one shared horizontal x axis; aligned guides at minus2R,minusR,R,2R; grey panel reference baselines are not separate axes"
+  },
+  "gate_scope": "Standalone preview only; no full-book, caption, integration or scientific clearance",
+  "gates": {
+    "errors": 0,
+    "undefined_references": 0,
+    "undefined_citations": 0,
+    "overfull_boxes": 0
+  },
+  "author_visual_check": "Final complete preview inspected enlarged and at reading size: panel starts/ticks/guides align; all prose12pt; headers clear of curves; product tapers/zeros clear; no clipping/collision/tiny note text. No integrated-page/caption inspection claimed.",
+  "hashes": {
+    "notes/figures/mask-window-drawing.tex": "f5ed5bf0d0189f7632e9b93a03e799359acbb561296d8cdb66b6131b5be48bb0",
+    "private/audit/2026-11-15-mask-window-drawing-held/generate.py": "bb80f1d1f7cac7e5e926d9164db401707b790b625be2fbca37c041dd035a7348",
+    "private/audit/2026-11-15-mask-window-drawing-held/numeric-checks.json": "d0d0c6a76f6ef7a855fcf06a2256e6e7acf29aca6b5773e47a73094a32381b0a",
+    "private/audit/2026-11-15-mask-window-drawing-held/samples.csv": "04a65f8b661d5e20a980b416b79aa1459964657b34896ed4c87ae4a8c0a03455",
+    "private/audit/2026-11-15-mask-window-drawing-held/preview.tex": "d20f8de2089d3513707b6d1e5fb49f5dbd25cb115ccfed510de0a2aeb833400d",
+    "private/audit/2026-11-15-mask-window-drawing-held/preview.pdf": "4f33b23bd351103e68dd5d3b7b879fc7d2cb31c6be662e3e458ba0cdafbb68bf",
+    "private/audit/2026-11-15-mask-window-drawing-held/preview.png": "9ea1c9edbf21852d1a2aa2cd54cf387792726a1df5f42a6122323c1f02118c0b",
+    "private/audit/2026-11-15-mask-window-drawing-held/build.stdout": "192e7d6a6d539717144634edcd98477f8e9beefa1263554e78b7235ec697ead9"
+  },
+  "audit_normalization": "CSV line endings are LF; build stdout final blank lines trimmed. Numerical values, drawing and preview bytes unchanged."
+}
