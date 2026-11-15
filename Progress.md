@@ -44,8 +44,8 @@ OP is accepted only within its assigned local scope (`06594e2d`). IC is
 qualified PARTIAL positive evidence, with full assigned scope NOT accepted
 (`df8039cb`), despite raw PASS/high. PU has substantive mathematical evidence
 but an observed internal automatic stream retry and uncounted abandoned-stream
-usage; protocol/cap acceptance needs Le's explicit disposition. CH is running
-unchanged as approved; no result is inferred. No confirmed manuscript defect,
+usage; protocol/cap acceptance needs Le's explicit disposition. CH is terminal (raw PASS_WITH_NOTES/high); source/repair adjudication is
+pending and no acceptance is inferred. No confirmed manuscript defect,
 retry or whole-parent/global promotion follows. Le's remaining assurance
 choice is after the actual adjudications. Independent authorized work continues.
 
@@ -59,7 +59,7 @@ The plan above is an intra-round checkpoint, not whole-book clearance.
 ## Live team status — read before messaging
 
 <!-- team-status:start -->
-Snapshot UTC: 2026-11-15T06:09:31.749140+00:00. Agent5 maintains this compact summary from submitted
+Snapshot UTC: 2026-11-15T06:26:26.533464+00:00. Agent5 maintains this compact summary from submitted
 owner reports and committed artifacts. Owners keep their normal dated entries
 below; those entries and exact receipts establish scope. This is not a new
 acceptance ledger. Check this section and its linked evidence before asking
@@ -69,11 +69,12 @@ stale/ambiguous information, rather than routine queries.
 ### Agent3 — mathematics and reviews
 
 - Current: OP locally accepted; IC full assigned scope unaccepted (partial
-  positive evidence); PU protocol acceptance/cap compliance qualified; CH running.
+  positive evidence); PU protocol acceptance/cap compliance qualified; all four
+  calls are terminal and PU/CH final curation/cohort summary is next.
 - Artifacts: frozen scopes16131204/sourceb35536c1; OP06594e2d; ICdf8039cb;
   PU/CH disposition in go/no-go section7 (`c2326865`, `1939b666`).
-- Next: finish the approved single-attempt sequence, preserve raw reports,
-  adjudicate exact scopes and bring the remaining assurance decision to Le.
+- Next: preserve/adjudicate the terminal PU/CH reports and protocol boundaries,
+  publish the exact cohort summary and bring the remaining assurance choice to Le.
 - Also: guides/endings source audit40f63f79 and successor checkc074c0eb done.
 - Dependency: actual review returns; no new source binding, retry or grade
   promotion is inferred by coordination.
@@ -105,8 +106,8 @@ stale/ambiguous information, rather than routine queries.
   have exact required source/definition corrections from3 (`74561e45`).
 - Car is settled: be3e548c carried by slot7=6aa11295; no new design work.
 - Next: glossary/radius successors, the focused plural-authorial-voice pass
-  below, and exact handoffs. Agent5's exponent56114300 and maskca8449db assets
-  are HELD ready for24; the control→mean→wave drawing is in progress.
+  below, and exact handoffs. Agent5's exponent56114300, maskca8449db and control→mean→wave8025ccd6
+  assets are HELD and delivered to24 for caption/placement integration.
 - Dependency:3checks mathematical/dependency claims;16checks publication
   candidates; Le approves required final SHAs. F/G wait for R/public Lean pins.
 
@@ -122,6 +123,7 @@ stale/ambiguous information, rather than routine queries.
 
 - Current:30-minute read-only watchdog plus continuous message handling;
   all-five-screen context is combined with submitted artifacts before decisions.
+  Three requested drawing assets are delivered; plural-voice rule/task is shared.
 - Source of truth: this live section and the dated Progress entries. Runtime
   screenshots and private snapshots are observations, not approvals.
 - Prompt only concrete authorized unblocked work. Do not disturb busy agents,
@@ -20850,3 +20852,22 @@ does not adjudicate the open PU disposition or turn raw HIGH into acceptance.
 ### 2026-11-15: Glossary/table successors match audited text (read-only)
 
 At24's request38b1a616e014, root verified glossary0479797d5fa249cd1c433b3405b33f9d5f9b838c and radius-table4f526f96202cea7654db6c1152d159d98e4c0cf7 against REPORT at74561e45. All10 glossary replacements match modulo wrapping; all9 other entries remain byte-exact. Remaining glossary diff is wrapping only. Table row5 and the recommended E/Q/limit-order note match exactly modulo wrapping; root read the full extra diff (footnotesize minipage only), rows1–4/header unchanged. Evidence `private/publication-closeout/glossary-audit-6ae1a4e7/SUCCESSOR-BYTE-CHECK.json`. No candidate/source/PDF edit or adoption;24/16 own verification/sequence, Le's OK still required. The separately landed9c334846 readability unit followed CH's launch; the frozen scientific inputs remain b35536c1, no native job was rebound.
+
+### 2026-11-15: Voice-rule and drawing handoffs recorded without scope promotion
+
+24received the focused plural-authorial-voice job (68f8f7ff8220);29received
+the related-video rule (17b970a5a7ad) and recorded it in video docs/SCRIPT-BRIEF.md
+atab74dab, pushed/synced, leaving oldtitles/quotes/mathI and futureFrepin intact.
+These are instruction/standing-rule completions, not a completed book prosepass.
+24also received one bundled requested-assets handoff9d119fe71cf7: exponent
+56114300, maskca8449db, control→mean→wave8025ccd6; all standalone0/0/0/0,
+finalimages viewed by5, no root/book/reader/caption integration or push inferred.
+24places/captions,3checks semantics,16/Leapprove exact integrated SHAs.
+
+Allfour native review calls are terminal per3d624c912c41d and section7; final
+PU/CH curation/cohort summary remains next. PU's protocol/cap exception stays
+forLe, CHrawPASS_WITH_NOTES/high is not acceptance. Live status refreshed from
+submitted evidence, with no extra provider calls, status queries or busy-agent
+prompts. Reusable watchdog discipline is committed/synced in Le-AI-Lab98265b48;
+verifiedFYIinitial-delivery limitation recorded inde25b46d, without transport
+patching or a disruptive test.
