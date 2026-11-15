@@ -61,7 +61,7 @@ The plan above is an intra-round checkpoint, not whole-book clearance.
 ## Live team status — read before messaging
 
 <!-- team-status:start -->
-Snapshot UTC: 2026-11-15T06:40:21.426809+00:00. Agent5 maintains this compact summary from submitted
+Snapshot UTC: 2026-11-15T07:13:00.728739+00:00. Agent5 maintains this compact summary from submitted
 owner reports and committed artifacts. Owners keep their normal dated entries
 below; those entries and exact receipts establish scope. This is not a new
 acceptance ledger. Check this section and its linked evidence before asking
@@ -110,8 +110,10 @@ stale/ambiguous information, rather than routine queries.
 - Car is settled: be3e548c carried by slot7=6aa11295; no new design work.
 - Next: the focused plural-authorial-voice pass and integration handoffs;
   glossary/radius successors await16/Le checks rather than another rewrite.
-  Exponent56114300, maskca8449db and control→mean→wave8025ccd6 assets are HELD
-  and delivered to24 for caption/placement integration.
+  Exponent source fixdbc1e96a is now typeset as9c2abb1e (same pages,1.32mm
+  annotation-height exception measured). Maskca8449db/flow8025ccd6 are HELD;
+ 3's caption audit39cad063 requires the mask-covariance clarification only.
+  Voice9f5c7e6a conforms to the standing rule in5's bounded source check.
 - Dependency:3checks mathematical/dependency claims;16checks publication
   candidates; Le approves required final SHAs. F/G wait for R/public Lean pins.
 
@@ -20920,3 +20922,24 @@ Script, full inventories/hashes and scoped report: `private/publication-closeout
 At24fa23c766d973 checked KAPPAcb880192, MASKf3bbf93b, FLOWacb1d910 and their guide04/08 navigation changes. Exactold/new/evidence: `private/publication-closeout/figure-caption-audit-20261115/REPORT.md`, RESULT.json, KAPPA.* and MASK-FLOW.*. KAPPA is correct: identity, monotonicities, static limits, excluded endpoints and alpha3/2 cutoff; its rendered alpha1 white legend explicitly says d1, with higher-dimensional scope explained in report. FLOW is correct as its stated construction-order/composite-map picture; optional concise integrated-block-path wording is separate, both guide pointers correct.
 
 MASK requires a minimal covariance-scope clarification: covariance of the localized product acquires a mask at both spatial arguments, while original W/H_W and the covariance norm for control costs remain fixed. The source/drawing itself makes no false covariance assertion; exact minimal caption replacement is proposed, not applied. The smoothed toy/distribution caveat is otherwise sound. Root independently extracted and viewed the3existing committed PDF pages(physical33,106,195), retaining images/PDFhashes in viewed-pages/ and RESULT. This is bounded visual context only, no new build/whole-book/source-primary-pixel certificate or new sciencevote. A nonblocking optional layout observation notes FLOW float before the continued tail of Lemma8.3.1.24 owns successor/fitting;16/Le exactSHA gates remain. Voice9f5c7e6a was onlyFYI, not silently added to the caption audit. No candidate/source/PDF edit or adoption by root.
+
+### 2026-11-15: κ clarity successor and bounded voice-source check
+
+24/16's specific numeric-tick/memory-arrow finding was fixed by source
+dbc1e96ab2c62a9741c2bd13d5819f13e7d579d9, parent56114300 preserved.
+Ticks now1,7/5,3/2,5/3,2;goldcutoff4/3labelled;memoryarrowunderactualaxis.
+Curves/endpoints/colour/legend/fonts/scales unchanged. Contentheight grows
+1.32mm for readableclearance, explicitlydisclosed, not falselyclaimedfixed.
+24's exactone-fileswap typeset successor9c2abb1e passes sixzero gates/filter,
+395pages andsame8Chapter1target shifts/nochapterstartmoves;HELD,noadoption
+inferred. Mask/flowdrawings had no16finding;3's captionaudit39cad063 requires
+onlymaskproductcovarianceatbothspatialarguments whileoriginalnoise/costnorm
+stayfixed.24owns that caption correction.
+
+5read voice9f5c7e6a's fullchangedprose and screened114activebookTeXinputs.
+Remaining apparentI/myhits are exactquote/publishedtitles/videoID/math/Roman
+notation, not unconvertedauthorialprose. Five factual third-person author
+sentences are compatible withthe rule. Bounded evidence:
+`private/publication-closeout/agent5-supervision-20261115/VOICE-PASS-9f5c-SOURCE-QA.md`.
+No candidateedit/rebuild/filter/sciencevoteorpushapproval; no redundantpolicy
+confirmationneeded, exactcandidatepublicationroute retained.
