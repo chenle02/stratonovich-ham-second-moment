@@ -61,7 +61,7 @@ The plan above is an intra-round checkpoint, not whole-book clearance.
 ## Live team status — read before messaging
 
 <!-- team-status:start -->
-Snapshot UTC: 2026-11-15T17:35:14.860013+00:00. Agent5 maintains this summary from owner
+Snapshot UTC: 2026-11-15T18:20:02.149361+00:00. Agent5 maintains this summary from owner
 receipts and committed artifacts. Owners retain their dated evidence below.
 This is the workflow summary, not a scientific acceptance ledger. Read it
 before asking another agent for status; send only needed handoffs or decisions.
@@ -74,6 +74,8 @@ before asking another agent for status; send only needed handoffs or decisions.
 - Completed: Appendix E upkeep c35cbc0a and exact combined-tree reseal33ed4ef7
   are adopted. The selected ledger has35 process records; snapshot185 artifacts
   passed. Chapter8 caption/dependency check requires no change.
+- Wiki402 working-status upkeep is actually maintained at5a12e0c9; exact
+  published-page hash/receipt are retained at a156c3a8. No lifecycle promotion.
 - Next: reconcile final review inventory and reseal after any later relevant
   source/PDF/decision change. No new scientific review or proof repair authorized.
 
@@ -127,6 +129,8 @@ before asking another agent for status; send only needed handoffs or decisions.
 - Completed: illustration fixes and ordered artifact handoffs; independently
   verified landed402/28 PDF hashes and origin/<HUB>/<MACHINE> parity. The main
   checkout PDF is current. Stable local previews retain exact committed bytes.
+  Operational HANDOFF25970146 is adopted after16 exact-file/filter approval;
+  current402/28/Wiki/PU facts and historical/WIP preservation are verified.
 - Current:1800-second read-only watcher and message handling; no generic nudges,
   no busy-session interruption or submission of unsent drafts. Internal push
   blockage is historical; remaining release decisions retain their own gates.
@@ -21131,3 +21135,21 @@ Agent5b0a426c08825 explicitly clarified its own no-model wording: no newscientif
 Exactticket tk-20261115-124442-codex-stratonovich-wiki402 / UIDstratonovich-working-402-33ed4ef7-ac4e4ca3-20261115 returned maintained. Root verified actualreceipt id/UID/kind/status, canonicalclean HEAD/originv4/remoteparity at5a12e0c901061791185a085bf9e8917d18ab9a6a, onlychangedpathcontent/projects/stratonovich-ham-second-moment.md and actualworking/committedpageSHA0768146d4e49ab5dd3c6bbfe0a4478ae94b838fdb205295a204643f86e61d377 EXACTly matching preparedpage. Currentstatus nowrecordsadopted402/28/source33ed/c0/livec255, matchedPDFhashes,185artifactconsistency/35processrecords and boundedPUacceptance withunknownusage/cost/cap, while preserving old395checkpointashistory and alloriginalbody/math/outlook/frontmatter/collaborators/relations/target_papernull/activeprivateworking status. Scientificassurance andR/F/Lean/video/publicrelease/arXiv remainopen.
 
 Receipt reports allnine targetedlintcounterszero,tab/controlPASS,112project/5contract relationvalidation, all5anchorbackrefs+bothcompanionreciprocity, normalindex/dashboard/fullhook/prepush/contentrender1page0findings andnarrowcleanpublish. Generatedownedsemanticdelta empty; noextra propagatecommit.59preexisting lexical-overlap siblingnonlinks deferred/outofscope unchanged; noedgechanges. Otherfive HEADsunchangedperreceipt. Rootdidnotrepeatworkerpassedgates orclaimprojectBrainharvest. Byteexactrawreceiptpreserved sources/queue-receipts/tk-20261115-124442-codex-stratonovich-wiki402.receipt.json.gz; privatepublishedverification/lateststate retained. Ordinarymetadataexecutorrecordedgpt-6.1-sol, notscientificreview/vote. No newproof/reviewrestart/sourcePDFedit/releaseapproval; noforce/wake/newexecutor/servicechange. This actuallycompletes task-specificPROJECT-GOALitem5 workingstatusreconciliation, not thewholepublicationgoal. LocalstaleWikiHEAD/foreignuv.lockstilluntouched.
+
+### 2026-11-15: Exact operational handoff 25970146 adopted after Agent16 check
+
+Prepared the HANDOFF-only successor on fc12b9f0; Agent16 approved the exact
+file SHA and filter at message0bdfc44a6efe, with no required change. Rechecked
+origin/parent/file before pushing the exact25970146 fast-forward, then synced
+<HUB> and the primary <MACHINE> checkout. File SHA2b59b616 matches on both hosts;
+402/28 PDF hashes are unchanged. Nine parser headings and nonrecursive Next
+pass; older history and external preservation inventory remain verbatim, and
+the original88 foreign entries were untouched. Corrected stale395/PU-pending/
+held-source instructions to adopted33ed/Wiki5a12 and accepted boundedPU.
+
+HANDOFF is outside the185-artifact manifest; no bound TeX/PDF/review/disclosure
+artifact changed, so no duplicate build or reseal was run. Curated landing,
+owner-filter and helper-validation evidence is retained at
+private/publication-closeout/agent5-supervision-20261115/HANDOFF-LANDING-25970146.json.
+R/F/scientific assurance, Lean/video/public release and Le-only submission
+remain open; metadata adoption is not clearance of those gates.
