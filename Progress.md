@@ -18,7 +18,7 @@ force Chen's predicted constant or create a Lean companion without approval.
 
 Research INCOMPLETE — focused DeepSeek report is PASS_WITH_NOTES/high, with
 report-only slips and incomplete core reconstructions retained; Le's assurance
-decision remains pending. Earlier whole-cold INCONCLUSIVE/medium is unchanged. The 396-page book includes Chapter 12, the approved rough-noise future-work discussion and the L9 verification
+decision remains pending. Earlier whole-cold INCONCLUSIVE/medium is unchanged. The origin book includes Chapter 12, the approved rough-noise future-work discussion and the L9 verification
 appendices. Whole-report HIGH scientific review, final cold acceptance and
 release closure remain open. The historical Kimi hold was lifted; prior
 MEDIUM and malformed reports remain unaccepted in their recorded scopes.
