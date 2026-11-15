@@ -184,27 +184,35 @@ Total & 627 & 590 & 37 & 325 & 76 & 135 & \\
   \toprule
   Outcome & \shortstack[r]{DeepSeek\\\texttt{deepseek-{}v4-{}pro}} & \shortstack[r]{Kimi\\\texttt{k3}} & \shortstack[r]{Model not\\recorded} & \shortstack[r]{No model\\call} & All \\
   \midrule
-  Accepted at the stated scope & 1 & 2 & 0 & 0 & 3 \\
-  Not accepted & 5 & 0 & 1 & 0 & 6 \\
+  Accepted at the stated scope & 3 & 2 & 0 & 0 & 5 \\
+  Not accepted & 9 & 0 & 1 & 0 & 10 \\
   Invalid report & 2 & 6 & 0 & 0 & 8 \\
   Recovery refused & 0 & 0 & 0 & 1 & 1 \\
   Recovered & 0 & 0 & 0 & 4 & 4 \\
   Preflight (no call) & 0 & 0 & 0 & 3 & 3 \\
   Continuation (no new vote) & 0 & 2 & 0 & 0 & 2 \\
   Timed out & 0 & 1 & 0 & 0 & 1 \\
-  Still running (no verdict yet) & 0 & 0 & 1 & 0 & 1 \\
+  Running at snapshot & 0 & 0 & 1 & 0 & 1 \\
   \midrule
-  Records & 8 & 11 & 2 & 8 & 29 \\
+  Records & 14 & 11 & 2 & 8 & 35 \\
   \bottomrule
 \end{tabular}}
-\newcommand{\aiCloseoutHeaderNote}{ For the 4 panel records in format~D the reported counts cover only the final step, not the whole session.}
+\newcommand{\aiCloseoutAccountingKey}{%
+\item[S1:] The usage object as the tool reported it; no wider total is implied.
+\item[S2:] The final step of a panel run only, not the whole session.
+\item[S3:] One response of the model; no session total is implied.
+\item[S4:] The final step only; the usage of an earlier abandoned attempt is unknown.
+}
+\newcommand{\aiCloseoutHeaderNote}{ For the 5 records with scopes~S2 and~S4 the reported counts cover only the final step, not the whole session.}
 \newcommand{\aiCloseoutTokenRows}{%
-\texttt{deepseek-{}v4-{}pro} (DeepSeek), format A & \texttt{cache.read} 0, \texttt{cache.write} 0, \texttt{input} 1{,}986{,}239, \texttt{output} 33{,}007, \texttt{reasoning} 121{,}948, \texttt{total} 2{,}141{,}194 & 5 of 8 \\
-\texttt{deepseek-{}v4-{}pro} (DeepSeek), format D (header/final-step only) & \texttt{input} 19{,}811, \texttt{output} 10{,}253, \texttt{reasoning} 34{,}463 & 3 of 8 \\
-\texttt{k3} (Kimi), format B & \texttt{inputCacheCreation} 0, \texttt{inputCacheRead} 5{,}405{,}065, \texttt{inputOther} 264{,}438, \texttt{output} 100{,}424 & 1 of 9 \\
-\texttt{k3} (Kimi), format C & \texttt{inputCacheCreation} 0, \texttt{inputCacheRead} 75{,}707{,}586, \texttt{inputOther} 2{,}503{,}780, \texttt{output} 493{,}885 & 8 of 9 \\
-Model not recorded, format D (header/final-step only) & \texttt{input} 26{,}040, \texttt{output} 2{,}515, \texttt{reasoning} 3{,}621 & 1 of 2 \\
-Model not recorded & no reported value & 1 of 2 \\
+\texttt{deepseek-{}v4-{}pro} (DeepSeek), format A, scope~S1 & \texttt{cache.read} 0, \texttt{cache.write} 0, \texttt{input} 1{,}986{,}239, \texttt{output} 33{,}007, \texttt{reasoning} 121{,}948, \texttt{total} 2{,}141{,}194 & 5 of 14 \\
+\texttt{deepseek-{}v4-{}pro} (DeepSeek), format A, scope~S3 & \texttt{cache.read} 0, \texttt{cache.write} 0, \texttt{input} 1{,}154{,}041, \texttt{output} 61{,}540, \texttt{reasoning} 193{,}545, \texttt{total} 1{,}409{,}126 & 5 of 14 \\
+\texttt{deepseek-{}v4-{}pro} (DeepSeek), format A, scope~S4 (header/final-step only) & \texttt{cache.read} 15{,}488, \texttt{cache.write} 0, \texttt{input} 34, \texttt{output} 12{,}327, \texttt{reasoning} 60{,}815, \texttt{total} 88{,}664 & 1 of 14 \\
+\texttt{deepseek-{}v4-{}pro} (DeepSeek), format D, scope~S2 (header/final-step only) & \texttt{input} 19{,}811, \texttt{output} 10{,}253, \texttt{reasoning} 34{,}463 & 3 of 14 \\
+\texttt{k3} (Kimi), format B, scope~S1 & \texttt{inputCacheCreation} 0, \texttt{inputCacheRead} 5{,}405{,}065, \texttt{inputOther} 264{,}438, \texttt{output} 100{,}424 & 1 of 9 \\
+\texttt{k3} (Kimi), format C, scope~S1 & \texttt{inputCacheCreation} 0, \texttt{inputCacheRead} 75{,}707{,}586, \texttt{inputOther} 2{,}503{,}780, \texttt{output} 493{,}885 & 8 of 9 \\
+Model not recorded, format D, scope~S2 (header/final-step only) & \texttt{input} 26{,}040, \texttt{output} 2{,}515, \texttt{reasoning} 3{,}621 & 1 of 2 \\
+Model not recorded, scope~S1 & no reported value & 1 of 2 \\
 }
 \newcommand{\aiCloseoutFormatKey}{%
 \item[A:] \path{{cache:{read:number,write:number},input:number,output:number,reasoning:number,total:number}}
@@ -212,14 +220,22 @@ Model not recorded & no reported value & 1 of 2 \\
 \item[C:] \path{list[{inputCacheCreation:number,inputCacheRead:number,inputOther:number,output:number}]}
 \item[D:] \path{{input:number,output:number,reasoning:number}}
 }
-\newcommand{\aiCloseoutCost}{\texttt{deepseek-{}v4-{}pro} (DeepSeek): 1.64 (currency not recorded; 7 records); Model not recorded: 0.04 (currency not recorded; 1 record)}
-\newcommand{\aiCloseoutRunningNote}{; a record whose run is still going is counted by that status instead (one record, whose provisional outcome is not accepted)}
-\newcommand{\aiCloseoutRecords}{29}
-\newcommand{\aiCloseoutUsageRecords}{18}
-\newcommand{\aiCloseoutDenominator}{19}
-\newcommand{\aiCloseoutSource}{\path{experiment/ledger-updates/2026-11-14-c003-provenance/run-ledger-v4.json}}
-\newcommand{\aiCloseoutSourceCommit}{dc5fc6b0}
-\newcommand{\aiCloseoutSourceBlob}{31d2f7fb}
-\newcommand{\aiCloseoutCorrection}{November~14, 2026}
+\newcommand{\aiCloseoutCost}{\texttt{deepseek-{}v4-{}pro} (DeepSeek), format A, scope~S1: 1.52 (currency not recorded; 4 records; known reported components only); \texttt{deepseek-{}v4-{}pro} (DeepSeek), format D, scope~S2: 0.12 (currency not recorded; 3 records; known reported components only); \texttt{deepseek-{}v4-{}pro} (DeepSeek), format A, scope~S3: 0.87 (currency not recorded; 4 records; known reported components only); Model not recorded, format D, scope~S2: 0.04 (currency not recorded; 1 record; known reported components only)}
+\newcommand{\aiCloseoutRunningNote}{; historical running records retain their snapshot status (one record, whose provisional outcome is not accepted)}
+\newcommand{\aiCloseoutHistoricalRecords}{29}
+\newcommand{\aiCloseoutRecentRecords}{6}
+\newcommand{\aiCloseoutRecentWords}{Six}
+\newcommand{\aiCloseoutLocalWords}{Four}
+\newcommand{\aiCloseoutLocalPassWords}{three}
+\newcommand{\aiCloseoutLocalNotesWords}{one}
+\newcommand{\aiCloseoutLocalAcceptedWords}{Two}
+\newcommand{\aiCloseoutLocalPartialWords}{two}
+\newcommand{\aiCloseoutRecords}{35}
+\newcommand{\aiCloseoutUsageRecords}{24}
+\newcommand{\aiCloseoutDenominator}{25}
+\newcommand{\aiCloseoutSource}{\path{experiment/ledger-updates/2026-11-15-cold-closeout/run-ledger-v4.json}}
+\newcommand{\aiCloseoutSourceCommit}{c2359a4f}
+\newcommand{\aiCloseoutSourceBlob}{eab20562}
+\newcommand{\aiCloseoutCorrection}{November~15, 2026}
 \newcommand{\aiCloseoutMonth}{November 2026}
-\newcommand{\aiCloseoutSnapshot}{November~14, 2026}
+\newcommand{\aiCloseoutSnapshot}{November~15, 2026}

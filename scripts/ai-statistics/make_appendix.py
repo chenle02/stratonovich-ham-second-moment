@@ -46,7 +46,7 @@ def load():
 COMMITS_FILE = os.path.join(HERE, "commits-per-day.json")
 
 
-def git_commits(until):
+def git_commits(until, *, record=True):
     """Commits per UTC day up to the counted commit.
 
     In the working repository the counted commit exists: count from git and
@@ -61,11 +61,12 @@ def git_commits(until):
         out = subprocess.run(["git", "log", "--format=%ad", "--date=format-local:%Y-%m-%d", until],
                              capture_output=True, text=True, check=True, env=env).stdout.split()
         counts = collections.Counter(out)
-        with open(COMMITS_FILE, "w") as fh:
-            json.dump({"counted_commit": until, "time_zone": "UTC",
-                       "total": sum(counts.values()), "per_day": dict(sorted(counts.items()))},
-                      fh, indent=2)
-            fh.write("\n")
+        if record:
+            with open(COMMITS_FILE, "w") as fh:
+                json.dump({"counted_commit": until, "time_zone": "UTC",
+                           "total": sum(counts.values()), "per_day": dict(sorted(counts.items()))},
+                          fh, indent=2)
+                fh.write("\n")
         return counts
     rec = json.load(open(COMMITS_FILE))
     if rec["counted_commit"] != until:
@@ -101,7 +102,7 @@ def macro(name, value):
 # and must be committed and unmodified: the appendix names it with its commit
 # and blob (ledger owner, 2026-11-14). The book build stops if it is absent.
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
-LEDGER_DEFAULT = "experiment/ledger-updates/2026-11-14-c003-provenance/run-ledger-v4.json"
+LEDGER_DEFAULT = "experiment/ledger-updates/2026-11-15-cold-closeout/run-ledger-v4.json"
 OUTCOMES = ["accepted-at-scope", "not-accepted", "invalid", "refused",
             "recovered", "preflight", "continuation", "timeout"]
 PENDING = "running"   # display class: a review still running (no verdict yet)
@@ -111,7 +112,7 @@ OUTCOME_TEX = {"accepted-at-scope": "Accepted at the stated scope",
                "preflight": "Preflight (no call)",
                "continuation": "Continuation (no new vote)",
                "timeout": "Timed out",
-               PENDING: "Still running (no verdict yet)"}
+               PENDING: "Running at snapshot"}
 CLOSEOUT_FAMILY = [("deepseek", "DeepSeek"), ("kimi", "Kimi"), ("k3", "Kimi"),
                    ("qwen", "Qwen"), ("claude", "Claude"), ("gpt", "GPT")]
 
@@ -174,6 +175,14 @@ def ledger_source(rel):
     return commit, blob
 
 
+def tex_text(s):
+    """Escape ordinary prose while retaining normal interword line breaks."""
+    escapes = {"\\": r"\textbackslash{}", "&": r"\&", "%": r"\%",
+               "$": r"\$", "#": r"\#", "_": r"\_", "{": r"\{", "}": r"\}",
+               "~": r"\textasciitilde{}", "^": r"\textasciicircum{}"}
+    return "".join(escapes.get(c, c) for c in s)
+
+
 def tex_path(s):
     """A long literal (format signature, path) that may break at punctuation."""
     return "\\path{" + s + "}"
@@ -199,21 +208,21 @@ def check_no_whole_book(rows):
                          "the appendix text says no record accepts the whole book")
 
 
-def header_note(rows, letter):
+def header_note(rows, scope_key):
     """Sentence on the records whose counts cover only the panel header/final step.
 
     Their ledger accounting_scope says so; the sentence names how many there are and
-    their format letters. Empty when there are none, so the caveat disappears rather
+    their accounting scopes. Empty when there are none, so the caveat disappears rather
     than leaving a dangling phrase. It starts with a space: the prose puts it straight
     after a full stop.
     """
     hdr = [r for r in rows if "header/final-step" in (r.get("accounting_scope") or "")]
     if not hdr:
         return ""
-    ls = sorted({letter[r["token_format_signature"]] for r in hdr})
-    fmt = ("format~" + ls[0]) if len(ls) == 1 else \
-        ("formats~" + ", ".join(ls[:-1]) + " and~" + ls[-1])
-    return (f" For the {len(hdr)} panel records in {fmt} the reported counts cover only"
+    keys = sorted({scope_key[r["accounting_scope"]] for r in hdr})
+    scopes = ("scope~" + keys[0]) if len(keys) == 1 else \
+        ("scopes~" + ", ".join(keys[:-1]) + " and~" + keys[-1])
+    return (f" For the {len(hdr)} records with {scopes} the reported counts cover only"
             " the final step, not the whole session.")
 
 
@@ -236,8 +245,8 @@ def running_note(rows):
         tail = f"one record, whose provisional outcome is {listed}"
     else:
         tail = f"{count} records, whose provisional outcomes are {listed}"
-    return ("; a record whose run is still going is counted by that status"
-            f" instead ({tail})")
+    return ("; historical running records retain their snapshot status"
+            f" ({tail})")
 
 
 def closeout(out, ledger_rel):
@@ -295,6 +304,11 @@ def closeout(out, ledger_rel):
         if sg and sg != "not-recorded" and sg not in sigs:
             sigs.append(sg)
     letter = {sg: chr(ord("A") + i) for i, sg in enumerate(sigs)}
+    # Keep the original token-field signature and accounting scope distinct.
+    # These are reported component sums, never actual all-activity totals.
+    scopes_all = list(dict.fromkeys(r.get("accounting_scope") or "Accounting scope not recorded"
+                                   for r in den))
+    scope_key = {scope: f"S{i+1}" for i, scope in enumerate(scopes_all)}
     tok = []
     for m in cols:
         md = [r for r in den if closeout_model(r) == m]
@@ -302,48 +316,83 @@ def closeout(out, ledger_rel):
             continue
         for sg in sigs + ["not-recorded"]:
             bucket = [r for r in md if (r.get("token_format_signature") or "not-recorded") == sg]
-            if not bucket:
-                continue
-            if sg == "not-recorded":
-                tok.append(f"{label(m)} & no reported value & {len(bucket)} of {len(md)} \\\\\n")
-                continue
-            scopes = {("header" if "header/final-step" in (r.get("accounting_scope") or "") else "full")
-                      for r in bucket}
-            if len(scopes) > 1:
-                raise SystemExit(f"mixed accounting scopes in one format for {m}")
-            rep_rows = [r for r in bucket if r in usage]
-            sums = collections.Counter()
-            for r in rep_rows:
-                t = r.get("token_usage_reported")
-                items = t if isinstance(t, list) else [t]
-                for c in items:
-                    for k, v in c.items():
-                        if isinstance(v, dict):
-                            for kk, vv in v.items():
-                                sums[f"{k}.{kk}"] += vv or 0
-                        elif isinstance(v, (int, float)):
-                            sums[k] += v
-            vals = ", ".join(f"{tex_tt(k)} {fmt_int(sums[k])}" for k in sorted(sums))
-            note = " (header/final-step only)" if scopes == {"header"} else ""
-            tok.append(f"{label(m)}, format {letter[sg]}{note} & {vals} & {len(rep_rows)} of {len(md)} \\\\\n")
-    lines.append(macro("aiCloseoutHeaderNote", header_note(den, letter)))
+            for scope in scopes_all:
+                scoped = [r for r in bucket if
+                          (r.get("accounting_scope") or "Accounting scope not recorded") == scope]
+                if not scoped:
+                    continue
+                if sg == "not-recorded":
+                    tok.append(f"{label(m)}, scope~{scope_key[scope]} & no reported value & {len(scoped)} of {len(md)} \\\\\n")
+                    continue
+                rep_rows = [r for r in scoped if r in usage]
+                sums = collections.Counter()
+                for r in rep_rows:
+                    t = r.get("token_usage_reported")
+                    items = t if isinstance(t, list) else [t]
+                    for c in items:
+                        for k, v in c.items():
+                            if isinstance(v, dict):
+                                for kk, vv in v.items():
+                                    sums[f"{k}.{kk}"] += vv or 0
+                            elif isinstance(v, (int, float)):
+                                sums[k] += v
+                vals = ", ".join(f"{tex_tt(k)} {fmt_int(sums[k])}" for k in sorted(sums))
+                note = " (header/final-step only)" if "header/final-step" in scope else ""
+                tok.append(f"{label(m)}, format {letter[sg]}, scope~{scope_key[scope]}{note} & {vals} & {len(rep_rows)} of {len(md)} \\\\\n")
+    scope_descriptions = {
+        "Original reported object/list; do not infer a broader accounting level":
+            "The usage object as the tool reported it; no wider total is implied.",
+        "Panel header/final-step usage only; not verified full-session totals":
+            "The final step of a panel run only, not the whole session.",
+        "One native assistant response; reported token object. No broader session accounting inferred.":
+            "One response of the model; no session total is implied.",
+        "header/final-step usage only; previous abandoned stream usage unknown; not full invocation totals.":
+            "The final step only; the usage of an earlier abandoned attempt is unknown.",
+    }
+    accounting_items = "".join(f"\\item[{scope_key[scope]}:] {tex_text(scope_descriptions.get(scope, scope))}\n"
+                               for scope in scopes_all)
+    lines.append("\\newcommand{\\aiCloseoutAccountingKey}{%\n" + accounting_items + "}\n")
+    lines.append(macro("aiCloseoutHeaderNote", header_note(den, scope_key)))
     lines.append("\\newcommand{\\aiCloseoutTokenRows}{%\n" + "".join(tok) + "}\n")
     # One line per format, the signature exactly as recorded.
     items = "".join(f"\\item[{letter[sg]}:] {tex_path(sg)}\n" for sg in sigs)
     lines.append("\\newcommand{\\aiCloseoutFormatKey}{%\n" + items + "}\n")
 
-    # Cost: per model over the summed records; no currency is recorded, so
-    # none is assigned.
+    # Sum cost components only within model/format/currency/accounting scope.
+    # A missing abandoned-stream cost remains unknown, not zero.
     cost = []
     for m in cols:
         mr = [r for r in usage if closeout_model(r) == m and r.get("cost_reported") is not None]
-        for cur in sorted({r.get("cost_currency") or "" for r in mr}):
-            sel = [r for r in mr if (r.get("cost_currency") or "") == cur]
-            amount = f"{sum(r['cost_reported'] for r in sel):.2f}"
-            noun = "record" if len(sel) == 1 else "records"
-            cost.append(f"{label(m)}: {amount} ({cur or 'currency not recorded'}; {len(sel)} {noun})")
+        for scope in scopes_all:
+            scoped = [r for r in mr if
+                      (r.get("accounting_scope") or "Accounting scope not recorded") == scope]
+            for sg in sigs + ["not-recorded"]:
+                formatted = [r for r in scoped if
+                             (r.get("token_format_signature") or "not-recorded") == sg]
+                for cur in sorted({r.get("cost_currency") or "" for r in formatted}):
+                    sel = [r for r in formatted if (r.get("cost_currency") or "") == cur]
+                    amount = f"{sum(r['cost_reported'] for r in sel):.2f}"
+                    noun = "record" if len(sel) == 1 else "records"
+                    form = letter.get(sg, "not recorded")
+                    cost.append(f"{label(m)}, format {form}, scope~{scope_key[scope]}: {amount} ({cur or 'currency not recorded'}; {len(sel)} {noun}; known reported components only)")
     lines.append(macro("aiCloseoutCost", "; ".join(cost) if cost else "none reported"))
     lines.append(macro("aiCloseoutRunningNote", running_note(rows)))
+    recent = [r for r in rows if r["id"] in {f"C{i:03}" for i in range(12, 18)}]
+    local = [r for r in recent if r["id"] in {f"C{i:03}" for i in range(14, 18)}]
+    words = "zero one two three four five six seven eight nine ten".split()
+    word = lambda n: words[n] if n < len(words) else str(n)
+    lines.append(macro("aiCloseoutHistoricalRecords", str(len(rows) - len(recent))))
+    lines.append(macro("aiCloseoutRecentRecords", str(len(recent))))
+    lines.append(macro("aiCloseoutRecentWords", word(len(recent)).capitalize()))
+    lines.append(macro("aiCloseoutLocalWords", word(len(local)).capitalize()))
+    lines.append(macro("aiCloseoutLocalPassWords",
+                       word(sum(r.get("reported_verdict") == "PASS" for r in local))))
+    lines.append(macro("aiCloseoutLocalNotesWords",
+                       word(sum(r.get("reported_verdict") == "PASS_WITH_NOTES" for r in local))))
+    lines.append(macro("aiCloseoutLocalAcceptedWords",
+                       word(sum(r.get("accepted_at_stated_scope") is True for r in local)).capitalize()))
+    lines.append(macro("aiCloseoutLocalPartialWords",
+                       word(sum(str(r.get("adjudication_status", "")).startswith("PARTIAL") for r in local))))
     lines.append(macro("aiCloseoutRecords", str(len(rows))))
     lines.append(macro("aiCloseoutUsageRecords", str(len(usage))))
     lines.append(macro("aiCloseoutDenominator", str(len(den))))
@@ -364,10 +413,12 @@ def main():
     ap = argparse.ArgumentParser(description="Generate notes/ai-statistics-data.tex")
     ap.add_argument("--ledger", default=LEDGER_DEFAULT,
                     help="committed experiment ledger, repository-relative (default: %(default)s)")
+    ap.add_argument("--check", action="store_true",
+                    help="verify generated Appendix E data without writing any files")
     args = ap.parse_args()
     runs, stats, usage, nogo, milestones = load()
     counted_commit = stats["generated_from_commit"]
-    commits = git_commits(counted_commit)
+    commits = git_commits(counted_commit, record=not args.check)
     out = []
     out.append("% Generated by make_appendix.py; do not edit by hand.\n")
     out.append(f"% Review runs counted at commit {counted_commit}.\n")
@@ -550,8 +601,16 @@ def main():
     closeout(out, args.ledger)
 
     root = os.path.abspath(os.path.join(HERE, "..", ".."))
-    with open(os.path.join(root, "notes", "ai-statistics-data.tex"), "w") as fh:
-        fh.write("".join(out))
+    output = os.path.join(root, "notes", "ai-statistics-data.tex")
+    rendered = "".join(out)
+    if args.check:
+        with open(output) as fh:
+            if fh.read() != rendered:
+                raise SystemExit("Appendix E generated data are stale; regenerate from the selected committed ledger")
+        print("Appendix E generated data match the selected committed ledger")
+    else:
+        with open(output, "w") as fh:
+            fh.write(rendered)
 
 
 if __name__ == "__main__":

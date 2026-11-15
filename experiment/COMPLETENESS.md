@@ -13,3 +13,7 @@ This is **not a lifetime attempt-completeness claim**. The release-day inventory
 For Appendix E, aggregate only actual reported fields by actual model and original field format, stating n-of-N. Do not estimate missing values, infer requested models as actual ones, assume cost currency, or add derived recovery/preflight/addendum records to provider usage. Continuation accounting needs a verified nonoverlap boundary before addition.
 
 Agent16 re-filter approval is pending for this revised per-file manifest. No public commit or push is authorized by the draft itself; source, correspondence and all other standing release holds remain unchanged.
+
+## Additive closeout update, 2026-11-15
+
+The older snapshot statements above describe the captured historical registry, including its then-running row. Appendix E now selects [the additive 35-record snapshot](ledger-updates/2026-11-15-cold-closeout/README.md): the same29 row values plus C012–C017. The six later invocations do not turn this into a lifetime census or certify the whole book. Their current dispositions and missing coverage, plus the disclosed PU retry exception and unknown whole-run usage/cost/cap compliance, are recorded separately. The project-wide census and one-machine usage snapshot remain historical and are not silently enlarged by these closeout rows. Final publication requires renewed exact-revision synchronization, including reviews held privately; the machine gate cannot discover missing private review decisions by itself.

@@ -12,7 +12,8 @@ This appendix records how much of the work was done, by which kind of model,
 and how often the checks failed. It counts what the project's own records
 show. Every number is produced by a short script from files kept in the
 repository, and the scripts are kept with it, so a reader can rebuild each
-figure and each table. The work ran for \aiDays{} days, from \aiFirstDay{} to
+figure and each table. The historical census covers \aiDays{} days, from
+\aiFirstDay{} to
 \aiLastDay{} (dates in UTC), with \aiCommits{} recorded changes
 (commits).
 
@@ -55,7 +56,8 @@ counts. These totals are a snapshot taken at \aiUsageSnapshot{} from those logs.
 
 \section*{Reviews}
 
-The repository holds \aiReviewFolders{} review folders. Of these,
+At that historical census, the repository held \aiReviewFolders{} review
+folders. Of these,
 \aiFoldersWithRun{} contain at least one review run; the others hold
 preparation, decisions or diagnostics. A \emph{run} is one review task sent to
 one reviewer model, with or without a usable report. There were \aiRuns{}
@@ -149,10 +151,14 @@ This section covers only the closeout reviews before publication, in
 whose snapshot is dated \aiCloseoutSnapshot. The figures come from the dated
 correction of that ledger recorded on \aiCloseoutCorrection{}
 (\aiCloseoutSource, commit \texttt{\aiCloseoutSourceCommit}, blob
-\texttt{\aiCloseoutSourceBlob}); it adds verified model identities and
-accounting fields, separates the hash of one review's raw report from that of
-its parsed copy (C003), and leaves every reported outcome, token count and cost
-as in the snapshot. The experiment itself is the way of
+\texttt{\aiCloseoutSourceBlob}). Earlier corrections added verified model
+identities and accounting fields and separated one raw report's hash from
+that of its parsed copy (C003). The current snapshot preserves all
+\aiCloseoutHistoricalRecords{} older
+rows unchanged and adds \aiCloseoutRecentRecords{} later cold-review records,
+including the author's
+bounded decision on the uniform-product review. Reported grades and token
+objects remain unchanged. The experiment itself is the way of
 doing mathematics described in the Preface, and its primary record is the whole
 repository: its history, proofs, failed approaches, human and AI work, sources,
 reviews and the Lean companion. The run ledger instruments only this closing
@@ -161,7 +167,30 @@ records are not added to the totals above, and its token counts, reported for
 some records only, are not totals for the project. The table counts the outcome
 recorded for each record, by the model that actually ran\aiCloseoutRunningNote.
 No record accepts the whole book: each acceptance is limited to the scope its
-review stated.
+review stated. The preserved older rows retain their historical status: a
+row marked as running describes its snapshot date, not a live process now.
+
+\aiCloseoutRecentWords{} later calls add scoped observations in this
+November~15 update. A whole-source call returned inconclusive at medium
+confidence;
+a focused call returned pass with notes at high confidence but did not
+complete the required core reconstruction. \aiCloseoutLocalWords{} local
+calls returned \aiCloseoutLocalPassWords{} passes and
+\aiCloseoutLocalNotesWords{} pass with notes, all at high confidence.
+\aiCloseoutLocalAcceptedWords{} were accepted as scoped mathematical evidence
+with notes and \aiCloseoutLocalPartialWords{} were partial. For the
+uniform-product check, the author accepted a bounded
+exception for one automatic native retry, with the incident disclosed. The
+original JSON-format failure in one report remains recorded; a
+copy in which only the JSON punctuation was corrected is not another review.
+These calls do not replace a complete independent review of the book. The
+combined critical review of Chapter~12 was not obtained: one attempt
+exhausted its context and the next stopped at a safeguard with invalid partial
+output. It was never marked passed. A separate high-confidence review of
+whether Chapter~12 faithfully states its evidence and limitations does not
+replace that missing assessment.
+Author-side source comparisons and delivery checks are not additional
+independent scientific votes.
 
 \begin{center}
 \small
@@ -169,18 +198,33 @@ review stated.
 \aiCloseoutTable
 \end{center}
 
-Token counts are given for the \aiCloseoutDenominator{} original provider
-attempts, per model and per reporting format, in the form in which the review
-tool reported them. Only the \aiCloseoutUsageRecords{} attempts with reported
-usage are summed; an attempt without figures is shown as having no reported
-value, and nothing is estimated. Recoveries, refusals, preflights and addenda
-made no new provider call, and format continuations are not summed, because
-their usage may overlap the original's.\aiCloseoutHeaderNote{} The formats, as
-recorded in the ledger:
+Token counts are given for the \aiCloseoutDenominator{} original review
+records, per model, reporting format and accounting scope, in the form in which
+the review tool reported them. Only the \aiCloseoutUsageRecords{} records with
+reported usage are summed; a record without figures is shown as having no
+reported value, and nothing is estimated. Records separately marked as derived
+recoveries, parser refusals, preflights or audit addenda do not represent new
+provider calls in this ledger. Format continuations count toward usage only
+when nonoverlap is verified.\aiCloseoutHeaderNote{} The formats, as recorded
+in the ledger:
 \begin{itemize}\small
   \setlength{\itemsep}{0pt}
   \aiCloseoutFormatKey
 \end{itemize}
+
+Accounting scopes are kept separate:
+\begin{itemize}\small
+  \setlength{\itemsep}{0pt}
+  \aiCloseoutAccountingKey
+\end{itemize}
+These are sums of known reported components, not actual all-activity totals.
+A review record counts a review task, not a provider-stream total. An automatic
+retry within one later review record opened two streams of generated output;
+it is separate from the recorded repairs to report formats. Usage and cost
+for the earlier
+abandoned stream are unavailable. The reported final-step total is not the
+whole invocation. Actual whole-run usage and cost remain unknown, as does
+whether the whole run stayed within its approved token limit.
 
 \begin{center}
 \small
@@ -193,4 +237,5 @@ recorded in the ledger:
 \end{tabular}
 \end{center}
 
-Reported costs of the closeout records: \aiCloseoutCost.
+Known reported cost components of the closeout records (not actual
+all-activity cost): \aiCloseoutCost.

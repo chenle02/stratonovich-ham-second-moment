@@ -39,3 +39,9 @@ Definitions: a *run* is one review task sent to one reviewer model; *met the
 bar* is a completed run graded PASS or PASS WITH NOTES at HIGH confidence.
 Meeting the bar is not acceptance: recorded acceptance exists only for the
 Claude and GPT runs (see `reviews/README.md`).
+
+## Final review synchronization gate
+
+Appendix E's historical census remains separate from its later closeout ledger. The default selected committed ledger is now `experiment/ledger-updates/2026-11-15-cold-closeout/run-ledger-v4.json`. That additive snapshot preserves the29 historical rows and adds six later cold checks. `python3 scripts/ai-statistics/make_appendix.py --check` verifies generated data without writing files; `--ledger PATH` selects a different explicitly committed snapshot. Token sums are separated by actual model, original field signature and accounting scope; reported costs are also separated by currency. Partial final-step objects never certify whole-run usage.
+
+Le required this consistency work as a final publishing gate on 2026-11-15. Run `python3 scripts/ai-statistics/check_review_sync.py` to verify the captured snapshot. The final release owner must run the release mode against a detached checkout of the exact release SHA with an external attestation bound to that SHA and the REVIEW-SYNC manifest hash, after reconciling all final review decisions, including private evidence. Later reviews, decisions or artifact changes require renewed synchronization. The check does not grant scientific acceptance or public release; release-wrapper integration and rehearsal belong to its owner.

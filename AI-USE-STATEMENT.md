@@ -25,11 +25,23 @@ was written with her.
   belongs to a different family from the model that wrote the work under
   review. The reviewers were DeepSeek V4 Pro (main reviewer), Kimi-K3 and
   Claude, and Codex (GPT) for the Lean statement ledger.
-- **Whole-paper review.** The latest review of the complete technical notes
-  (DeepSeek V4 Pro) returned *pass with notes* at **medium** confidence, with
-  no required repair, on an earlier edition. The project's own standard
-  requires high confidence, so this review is **not accepted**, and no grade
-  is carried over to the current edition.
+- **Whole-paper review.** Earlier complete-note reviews remain at **medium**
+  confidence and are **not accepted** under the project's high-confidence
+  standard. Six further review invocations are recorded separately. A blind
+  whole-source call returned *inconclusive* at **medium** confidence; all 253
+  proof rows were marked `NOT_READ`, meaning the proof bodies were not
+  independently audited in that session, although the full scientific source
+  was supplied. A focused call returned *pass with notes* at **high**
+  confidence, with required core reconstruction incomplete. Four local calls
+  returned three passes and one pass with notes, all at **high** confidence.
+  Two were accepted as scoped mathematical evidence with notes and two were
+  partial. The author accepted a bounded exception for one automatic native
+  retry in the uniform-product check, with the incident disclosed. Its
+  abandoned-stream usage/cost and whole-run usage/cost and aggregate cap
+  compliance remain unknown. These are scoped observations, not
+  whole-book or release acceptance; no earlier grade is upgraded.
+  The separate Chapter 12 skeptic synthesis was **not obtained**; the scoped
+  HIGH honesty synthesis does not replace it.
 - **Lean.** A companion Lean package checks parts of the work. Its coverage
   file at release v0.9.0 (https://doi.org/10.5281/zenodo.24199105; built from development commit
   <!--s:lean.verified-->`6eb79c7`<!--/s-->, coverage file as at <!--s:lean.coverage-->`34b65d7`<!--/s-->) records:

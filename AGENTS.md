@@ -125,6 +125,19 @@ All.bib -> ../refdb/All.bib (read-only), extra.bib (local additions)
   `numerics-gate-before-proof-investment`, `cited-theorem-source-fidelity-gate`,
   `le-chen-writing-style`, and `skills/latex-conventions`.
 
+### Final publication consistency gate (Le, 2026-11-15)
+- Before publication, reconcile every final review and decision with the selected
+  committed experiment ledger, report summaries, Appendix E, AI-use disclosures
+  and rebuilt PDF at the exact release revision. Preserve raw grades, partial
+  and inconclusive outcomes, historical snapshots, missing reviews and unknown
+  usage/costs; favorable counts do not establish whole-book acceptance.
+- Run `scripts/ai-statistics/check_review_sync.py` and the generator's `--check`.
+  The release owner must integrate this as a STOP before export and attest that
+  all final review decisions, including private records, were reconciled at that
+  exact SHA. Any later review, decision or relevant artifact change invalidates
+  the prior synchronization check. This gate does not replace scientific,
+  source/filter, typesetting or public-release approval.
+
 ### LaTeX
 - Build from the repo root:
   `latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=notes notes/notes_stratonovich_ham_second_moment.tex`
