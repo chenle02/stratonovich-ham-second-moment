@@ -44,8 +44,10 @@ OP is accepted only within its assigned local scope (`06594e2d`). IC is
 qualified PARTIAL positive evidence, with full assigned scope NOT accepted
 (`df8039cb`), despite raw PASS/high. PU has substantive mathematical evidence
 but an observed internal automatic stream retry and uncounted abandoned-stream
-usage; protocol/cap acceptance needs Le's explicit disposition. CH is terminal (raw PASS_WITH_NOTES/high); source/repair adjudication is
-pending and no acceptance is inferred. No confirmed manuscript defect,
+usage; protocol/cap acceptance needs Le's explicit disposition. CH is qualified PARTIAL positive evidence (required joint-empty-chain step
+incomplete in the report). All four local calls and their curation are closed
+at1b4328c6; no calls remain authorized/in progress. Le's scientific-assurance
+choice and PU protocol disposition remain pending; no acceptance is inferred. No confirmed manuscript defect,
 retry or whole-parent/global promotion follows. Le's remaining assurance
 choice is after the actual adjudications. Independent authorized work continues.
 
@@ -59,7 +61,7 @@ The plan above is an intra-round checkpoint, not whole-book clearance.
 ## Live team status — read before messaging
 
 <!-- team-status:start -->
-Snapshot UTC: 2026-11-15T06:26:26.533464+00:00. Agent5 maintains this compact summary from submitted
+Snapshot UTC: 2026-11-15T06:40:21.426809+00:00. Agent5 maintains this compact summary from submitted
 owner reports and committed artifacts. Owners keep their normal dated entries
 below; those entries and exact receipts establish scope. This is not a new
 acceptance ledger. Check this section and its linked evidence before asking
@@ -70,11 +72,12 @@ stale/ambiguous information, rather than routine queries.
 
 - Current: OP locally accepted; IC full assigned scope unaccepted (partial
   positive evidence); PU protocol acceptance/cap compliance qualified; all four
-  calls are terminal and PU/CH final curation/cohort summary is next.
+  calls and curation are closed; CH is also PARTIAL, not a full assigned-scope pass.
 - Artifacts: frozen scopes16131204/sourceb35536c1; OP06594e2d; ICdf8039cb;
-  PU/CH disposition in go/no-go section7 (`c2326865`, `1939b666`).
-- Next: preserve/adjudicate the terminal PU/CH reports and protocol boundaries,
-  publish the exact cohort summary and bring the remaining assurance choice to Le.
+  cohort1b4328c6/board308b916e; exact FOUR-CHECKS-SUMMARY/RESULT and
+  OP/IC/PU/CH adjudications under four-small-cold-b35536c1-attempt-01.
+- Next: Le's assurance/PU-protocol disposition; continue authorized private
+  ledger/disclosure upkeep and specific source-semantic handoffs, no new reviews.
 - Also: guides/endings source audit40f63f79 and successor checkc074c0eb done.
 - Dependency: final source/protocol adjudications and Le's assurance decision;
   no new source binding, retry or grade promotion is inferred by coordination.
@@ -20887,3 +20890,21 @@ CH `four-small-ch-b35536c1-attempt-01`/`ses_e223f1f2dffe2e6xXtIuUcltM9` ended06:
 CH full pairing/fusion induction and substantive norm/tail/translated-CS/nonempty joint chain are actually worked. But its empty-chain joint step sets T_i=0 while retaining ell_i<T_i, so full requested empty-chain reconstruction is not counted complete. Other report-only notes: wrong intermediate N1 power/condition, upper-bound telescoping described as equality, an erroneous independence claim for correlated common-prefix fields, and an extra reversed-base bound lacking relabelled-data qualification. No source defect confirmed. Raw repairs1/2 are already addressed by source norm/Case2 independent-origin/A−B qualifications with no new offending downstream site located;3 is optional notation clarity, because Green width is removed before a new local temporal eta is introduced. None justifies a source mathematical repair. Full PU/CH originals, custody, all report-only findings, source/contract comparisons and each raw repair disposition are retained; no silent report correction or extra independent vote.
 
 Le's final scientific-assurance and PU transport-policy dispositions remain required. There is no automatic new cold check or authority to rerun. Readability adoption9c334846 occurred after CH launch; the frozen scientific inputs were never rebound. Publication still needs the separate final source/human visual/ledger/companion/exact-filter-package/release gates.
+
+### 2026-11-15: Shared-status frontier reflects the closed four-check cohort
+
+Read submitted3f430c501210 and committed1b4328c6/308b916e: allfour calls
+and curation closed; OPacceptedatlocalassignedscope, IC/CHpartial, PUlocalcore
+obtained but protocol/capacceptance pendingLe after automaticretry. No more
+authorized calls, no manuscriptdefectconfirmed or sourceeditjustified, no
+whole-bookpass. Live summary now points to exactcohortrecords instead of
+stale'curationnext'.16already presents the human decisions; no duplicate
+assurancequestion or idle/busyagentnudge.
+
+Routine preparation choices sent through supportedguardedhandoffs to24:
+keep factual third-person 'the author' sentences (not targetedI/my/me narration);
+prepare allthree authorizedfigure HELDcandidates with actualpageimpact rather
+than dropChapter8solelytoavoidremap; preserveLe's eventualadoptionchoice.
+Retain the checkedradius-table scope note and prepare onlya row5ragged-right
+label alignment if no newerLechoice. These are preparation decisions, not
+adoption/pushapproval; no publicsourceor mathclaim changed by5.
