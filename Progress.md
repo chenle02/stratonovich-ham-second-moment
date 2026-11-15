@@ -16,8 +16,8 @@ force Chen's predicted constant or create a Lean companion without approval.
 
 ## Status
 
-Research INCOMPLETE — publication execution awaits Le's scientific-review
-direction (2026-11-14). The 394-page book includes Chapter 12, the approved rough-noise future-work discussion and the L9 verification
+Research INCOMPLETE — final blind DeepSeek cold-read scope prepared; dispatch
+awaits Le's OK relayed by Agent16 (2026-11-14). The 394-page book includes Chapter 12, the approved rough-noise future-work discussion and the L9 verification
 appendices. Whole-report HIGH scientific review, final cold acceptance and
 release closure remain open. The historical Kimi hold was lifted; prior
 MEDIUM and malformed reports remain unaccepted in their recorded scopes.
@@ -25,7 +25,7 @@ MEDIUM and malformed reports remain unaccepted in their recorded scopes.
 ## Active publication-completion frontier (2026-11-14)
 
 Le explicitly requested setting and pursuing the publication-completion goal.
-Execution awaits review direction; the objective preserves PROJECT-GOAL.md and the
+The final cold scope awaits Le approval via Agent16; the objective preserves PROJECT-GOAL.md and the
 required whole-paper scientific, source/visual, fresh cold and delivery gates.
 The older roadmap counts and launcher snapshots below remain historical;
 they do not override this frontier or the latest dated adjudications.
@@ -20557,3 +20557,9 @@ Prepared the 107-file book-only archive at `66dadf6c`, with a reusable revision-
 The interim archive at66dadf6c now passes a fresh <HUB> container build pinned to TL2025 digest dbd65d778eb83de9b45fb0a8deb3afe44cbbaba2272e4e1e644e94dda52c7109. Network disabled, no BibTeX or system change. The canonical helper's successful current-date build is preserved separately; a fresh explicit SOURCE_DATE_EPOCH/FORCE_SOURCE_DATE run also passes all three runs with the matching cover date. The394pages,907printed-label records,index,2968links,fonts and zero build guards pass. The246cross-year anchor differences are individually retained and obey only the documented exact mapping; text/PDF-byte equality is not claimed. Evidence and reproducible comparison: `private/publication-closeout/publication-resume-20261114/tl2025/` and `check_tl2025.py`; output archive binding in EVIDENCE-ARCHIVE.json.
 
 The same scientific-review dependency has remained across goal activation, source packaging and this compatibility turn. Le's question about a bounded successor for five unwritten skeptic checks is unanswered. All independent build/package/compatibility work presently available is complete; no model call or live wait exists. Per the paper-dev failed-mandatory-route rule, the full publication goal is BLOCKED pending Le's direction, not completed or downgraded. Exact three-turn audit and remaining dependent gates: `private/publication-closeout/publication-resume-20261114/BLOCKED-AUDIT.md`. No scientific vote, finalF, cold acceptance, public release or submission is claimed.
+
+### 2026-11-14: Le disposition received; exact blind final-cold scope proposed
+
+Verified Agent16's consolidated disposition at `dce93262`, go/no-go section7, and handled the three outstanding FYIs under the canonical amsg workflow. Chapter12 skeptic is NOT OBTAINED, with no retry/provider switch/prompt change to reproduce stopped output; honesty does not substitute. The earlier bounded-successor question is superseded. Le authorizes preparation of a fresh blind DeepSeek V4 Pro final cold read, with exact scope first to16, who shows Le and relays any dispatch OK. The earlier global MEDIUM reports retain their grades; Le decides release assurance after the actual cold report.
+
+Prepared current scientific source at `dce93262`:123input files, all253proof bodies and268formal mathematical declarations unchanged, including33no-gos and four reader proofs. Administrative/history/status material and earlier application judgments are excluded from the blind carrier, with exact edits held coordinator-only.13explicit source statement aids plus10exact-edition raw PDF extracts (180physical pages) retain representation limits; no image credit is claimed. Final framed input2239370bytes/620371tokens; isolated agent53tokens; combined reasoning/public cap262144; conditional runtime allowance32768 gives total915336 and headroom133240 under1048576. This is offline accounting, not admission or attention evidence. Exact list, contract,13join/9global duty mapping, source bindings, frozen-input hash and no-dispatch status: `private/publication-closeout/cold-scope-20261114/`. Frozen model-only archive: `sources/review-packets/final-cold-blind-dce93262-proposed-input.tar.gz`. No provider call/session, new vote, manuscript change or source-image/visual/final-release acceptance. Scope is to be sent to16 for Le; dispatch remains held until16 relays Le's explicit OK.
