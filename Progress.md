@@ -18,7 +18,7 @@ force Chen's predicted constant or create a Lean companion without approval.
 
 Research INCOMPLETE — focused DeepSeek report is PASS_WITH_NOTES/high, with
 report-only slips and incomplete core reconstructions retained; Le's assurance
-decision remains pending. Earlier whole-cold INCONCLUSIVE/medium is unchanged. The 394-page book includes Chapter 12, the approved rough-noise future-work discussion and the L9 verification
+decision remains pending. Earlier whole-cold INCONCLUSIVE/medium is unchanged. The 396-page book includes Chapter 12, the approved rough-noise future-work discussion and the L9 verification
 appendices. Whole-report HIGH scientific review, final cold acceptance and
 release closure remain open. The historical Kimi hold was lifted; prior
 MEDIUM and malformed reports remain unaccepted in their recorded scopes.
@@ -31,21 +31,23 @@ required whole-paper scientific, source/visual, fresh cold and delivery gates.
 The older roadmap counts and launcher snapshots below remain historical;
 they do not override this frontier or the latest dated adjudications.
 
-Current adopted artifacts: 394-page book and 28-page reader. Both isolated
-builds at `20c1582d` pass 0 errors / 0 undefined / 0 overfull, with matching
-pagewise extracted text and valid internal link targets. Rebuilt PDF bytes
-differ; no visual or scientific acceptance is inferred. Exact hashes, the
-initial staging failure and expected release-marker drift are retained in
-`private/publication-closeout/publication-resume-20261114/`.
+Current origin manuscript: 396-page book and 28-page reader at source
+`b35536c1` (approved figure replay; earlier Figure7.2/page2 fix retained).
+Le approved the replay push;16 verified exact source/PDF equality, clean builds,
+placements and synchronization. This is source/presentation adoption, not
+scientific/global or publication acceptance. Exact paired hashes and scoped
+source/link/filter evidence: `private/audit/2026-11-15-iceberg-memory-combined-held/`.
+Earlier package/compatibility receipts retain their exact older source scopes.
 
-Immediate scientific dependency: whole-book MAIN and independent Kimi remain
-MEDIUM under the required HIGH gate; Chapter 12 honesty is scoped HIGH, while
-the native skeptic synthesis is terminal incomplete without a judgment.
-The unwritten five synthesis checks and the whole-book assurance decision
-remain explicit. No unchanged confidence-only rerun, safeguard workaround,
-model substitution or redundant F12 constructor call is launched.
-Continue independent authorized work; do not treat this scoped failure as
-blocking every publication duty. Final cold acceptance remains open.
+Immediate scientific dependency: the four approved local blind checks on
+sourceb35536c1, frozen16131204, run sequentially OP→IC→PU→CH by3. OP is accepted
+within its assigned local scope at06594e2d; IC is qualified PARTIAL positive
+evidence atdf8039cb and its full assigned scope is NOT accepted, despite raw
+PASS/high. No confirmed manuscript defect or retry follows from that distinction.
+PU is reported active and CH approved waiting. Earlier broader MEDIUM,
+incomplete and qualified evidence retains its scope; Le's assurance decision
+remains after the actual results. No whole-parent/global promotion is inferred.
+Continue authorized independent publication work, without duplicate reviews.
 
 After scientific closure: Le's all-page typesetting read; Agent 16's source
 R; companion re-anchor, Le acceptance and public v0.10.0/L14; F/G and front-door
@@ -53,6 +55,78 @@ re-pin with zero shifted citations; final F; exact book-only source package,
 filtered equality/negative control, rehearsal/audit and Le's release acceptance.
 Agent 16 prepares arXiv to preview; Le alone submits. Lean stays frozen at L14.
 The plan above is an intra-round checkpoint, not whole-book clearance.
+
+## Live team status — read before messaging
+
+<!-- team-status:start -->
+Snapshot UTC: 2026-11-15T05:49:37.411661+00:00. Agent5 maintains this compact summary from submitted
+owner reports and committed artifacts. Owners keep their normal dated entries
+below; those entries and exact receipts establish scope. This is not a new
+acceptance ledger. Check this section and its linked evidence before asking
+another agent for status. Send messages for handoffs, decisions or genuine
+stale/ambiguous information, rather than routine queries.
+
+### Agent3 — mathematics and reviews
+
+- Current: OP locally accepted; IC full assigned scope unaccepted (partial
+  positive evidence); PU reported active; CH approved waiting.
+- Artifacts: frozen scopes16131204/sourceb35536c1; OP06594e2d; ICdf8039cb.
+- Next: finish the approved single-attempt sequence, preserve raw reports,
+  adjudicate exact scopes and bring the remaining assurance decision to Le.
+- Also: guides/endings source audit40f63f79 and successor checkc074c0eb done.
+- Dependency: actual review returns; no new source binding, retry or grade
+  promotion is inferred by coordination.
+
+### Agent16 — final publication process
+
+- Current: figure replayb35536c1 on origin/<HUB>; car design settled at
+  be3e548c, accepted Preface replay slot7=6aa11295.
+- Ready for the approval/adoption route: corrected guides3a4ea3bc, endings
+  d91a9bfd, short-LoF captionef8fac86 and reading table12debd7d.
+- Next: source-safe sequencing and exact combined candidates for Le; preserve
+  the current approved review inputs until later-job preflights have passed.
+- Dependency: Le's assurance/typesetting/release decisions and approved source
+  freezes. Agent16 owns R, final F, export/rehearsal and release safety.
+
+### Agent22 — Lean verification
+
+- Current: frozen L14, re-anchor tool1fa1508 ready; b355 dry run verified
+  8915 citations,0unresolved; expected shifts are to be absorbed at R.
+- Next: on Agent16's full R, re-anchor, review/confirmation, Le acceptance and
+  public v0.10.0 delivery with exact tag/commits/DOI/receipts.
+- Later check: R→re-pin candidate must have0SHIFTED citations before push.
+- Dependency: R; no early re-anchor or duplicate idle-time tests.
+
+### Agent24 — writing and polishing
+
+- Current: required guide/endings corrections implemented as3a4ea3bc/d91a9bfd
+  and independently source-checked by3; all remain in the approval route.
+- Car is settled: be3e548c carried by slot7=6aa11295; no new design work.
+- Next: authorized writing/held candidates and exact handoffs; Agent5 is
+  drawing the supplied exponent, mask/window and control→mean→wave briefs.
+- Dependency:3checks mathematical/dependency claims;16checks publication
+  candidates; Le approves required final SHAs. F/G wait for R/public Lean pins.
+
+### Agent29 — video repository
+
+- Current: review fixes56a3d86 pushed/synced; reported video gate passed,
+ 31commented scenes rendered, render audits empty. Car/figure displays handled.
+- Next: final-F re-pin, moved numbers/pages and raw scene stamps,1080p build,
+  gate and replacement/book-link handoff in the approved release sequence.
+- Dependency: final F and22's publicv0.10.0 tag/commits/DOI; no early re-pin.
+
+### Agent5 — coordination and helper work
+
+- Current:30-minute read-only watchdog plus continuous message handling;
+  all-five-screen context is combined with submitted artifacts before decisions.
+- Source of truth: this live section and the dated Progress entries. Runtime
+  screenshots and private snapshots are observations, not approvals.
+- Prompt only concrete authorized unblocked work. Do not disturb busy agents,
+  and do not prompt an idle agent merely because it is idle.
+- Keep each owner responsible; helpers may assist independent jobs without
+  taking over publication, mathematics, Lean, writing or video ownership.
+<!-- team-status:end -->
+
 
 ## Round
 
@@ -20683,3 +20757,32 @@ The one approved IC attempt `four-small-ic-b35536c1-attempt-01` / `ses_e225abd76
 Adjudication is PARTIAL substantive positive evidence, not full IC acceptance. The report actually works many local resolvent/root/numerical-range/phase/Fourier/column/number-operator steps, but its required occupied/multimode/extra-factor finite-Gaussian control is wrong as written. A false extra creation-row norm identity has the explicit2mode counterexample4vs2; the Hermite control drops raising/lowering weights, miscomputes d2²(6not3 atR=1/2), and calls its occupied input independent. Other located report-only issues include dimension-attribution/finite-rank scope, a dropped radial scaling factor, norm upper bounds written as equalities, a scalar cancellation missing a square root, and local inverse-root representation explanations. The correct alternate number-operator route does not validate a failed required IC-F control. No manuscript defect is confirmed or manuscript repair justified; the source uses the correct local row-product argument. Raw PASS/high/CHECKED stay unchanged, no full-scope/parent/book promotion. Full original, syntax manifest, native checks, two author-side non-voting comparisons and bounded disposition: `private/publication-closeout/four-small-cold-b35536c1-attempt-01/IC-ADJUDICATION.md`, IC-RESULT.json and IC-TERMINAL-ARCHIVE-MANIFEST.json. Le retains scientific-assurance disposition.
 
 After IC termination and another exact source/profile/input check, PU `four-small-pu-b35536c1-attempt-01` / `ses_e2250269affea4QJA60fu75ePg` launched05:30:50.696514UTC with the approved unchanged model/variant/cap/timeout/denied tools. PU nativePID4020995 is verified live as of05:42:45UTC; CH remains approved waiting with zero attempts. Initial IC result, format failure, math qualification and PU launch are delivered to16 through the standing amsg owner. There is no new cold-call authorization or source repair inferred from this report.
+
+### 2026-11-15: Le sets Agent5 publication-supervision goal and30-minute cadence
+
+Activecoordinationgoal: assist3(mainmath/reviews),16(finalpublication),
+22(Lean),24(writing/polishing),29(videos);Le corrected temporary25backto29.
+5coordinates dependencies/versions and makesboundedroutinechoices, preserving
+owners and explicitLe-only approvals/submission. Parallelhelpersauthorized;
+helpwithinprojectjobsbetweenticks. Allfiveownerstatusescollected, exactfour
+localreviewapprovalrecordverified,carSETTLEDbe3/slot7=6aaandb355adoptionbound.
+Read-onlywatchdogactuallyrunning, initially600seconds and now1800seconds
+per Le's later correction; fullfive-agentreads and duplicate-lockcheckpassed. amsghelpercollectsmessages/timerrounds;5decides
+rightnextprompts, no busyinterruptionsorautomaticgatewaivers. Curatedstate,
+readinessfindings, promptorderandtimercontrol:
+`private/publication-closeout/agent5-supervision-20261115/`. No publicsource
+changes ornewreviewcalls inthisunit. SourceR/Lean/Ftypesetting/ledger/combined
+artifactandquietorigincustodyhandshakesarebeingclarified withowners.
+
+Le's later operating rules: read allfivecurrent screens plus submitted
+messages/artifacts before deciding; do not disturb busyagents, and do not
+promptidleagentswithoutconcreteauthorizedunblockedwork. Helpincomingjobs
+betweenthirtyminutechecks. Actual17messageoutboundauditfoundnomisrouting;
+no messagetotemporary25assignmentwasstored/sent. Rolesremain3/16/22/24/29.
+
+Le requested Progress.md as the shared status view to reduce agent-to-agent
+queries. Added one live coordination section with the exact3/16/22/24/29roles;
+5maintains that summary, while owners retain normal dated evidence updates.
+The watchdog is now30minutes, reads allfive screens passively, and never
+prompts busy agents or idle agents without a needed ready task. No new review,
+source adoption or public-release action is authorized by the status summary.
