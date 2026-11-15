@@ -20846,3 +20846,7 @@ Coordinator refresh at the voice-policy checkpoint: recorded landed readability
 9c334846 (395/28), actual IC partial-scope qualification, PU's automatic-retry/
 unknown-total-usage protocol boundary and unchanged CH execution. This summary
 does not adjudicate the open PU disposition or turn raw HIGH into acceptance.
+
+### 2026-11-15: Glossary/table successors match audited text (read-only)
+
+At24's request38b1a616e014, root verified glossary0479797d5fa249cd1c433b3405b33f9d5f9b838c and radius-table4f526f96202cea7654db6c1152d159d98e4c0cf7 against REPORT at74561e45. All10 glossary replacements match modulo wrapping; all9 other entries remain byte-exact. Remaining glossary diff is wrapping only. Table row5 and the recommended E/Q/limit-order note match exactly modulo wrapping; root read the full extra diff (footnotesize minipage only), rows1–4/header unchanged. Evidence `private/publication-closeout/glossary-audit-6ae1a4e7/SUCCESSOR-BYTE-CHECK.json`. No candidate/source/PDF edit or adoption;24/16 own verification/sequence, Le's OK still required. The separately landed9c334846 readability unit followed CH's launch; the frozen scientific inputs remain b35536c1, no native job was rebound.
