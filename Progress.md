@@ -16,8 +16,8 @@ force Chen's predicted constant or create a Lean companion without approval.
 
 ## Status
 
-Research INCOMPLETE — final blind DeepSeek cold-read scope prepared; dispatch
-awaits Le's OK relayed by Agent16 (2026-11-14). The 394-page book includes Chapter 12, the approved rough-noise future-work discussion and the L9 verification
+Research INCOMPLETE — the Le-approved final blind DeepSeek cold read is RUNNING
+(fresh native session launched 2026-11-14 local time); no verdict yet. The 394-page book includes Chapter 12, the approved rough-noise future-work discussion and the L9 verification
 appendices. Whole-report HIGH scientific review, final cold acceptance and
 release closure remain open. The historical Kimi hold was lifted; prior
 MEDIUM and malformed reports remain unaccepted in their recorded scopes.
@@ -25,7 +25,7 @@ MEDIUM and malformed reports remain unaccepted in their recorded scopes.
 ## Active publication-completion frontier (2026-11-14)
 
 Le explicitly requested setting and pursuing the publication-completion goal.
-The final cold scope awaits Le approval via Agent16; the objective preserves PROJECT-GOAL.md and the
+The approved final cold read is running; the objective preserves PROJECT-GOAL.md and the
 required whole-paper scientific, source/visual, fresh cold and delivery gates.
 The older roadmap counts and launcher snapshots below remain historical;
 they do not override this frontier or the latest dated adjudications.
@@ -20567,3 +20567,7 @@ Prepared current scientific source at `dce93262`:123input files, all253proof bod
 ### 2026-11-14: Exact final-cold proposal delivered to Agent16 for Le
 
 Scope commit `c055307b` is pushed and synchronized with <HUB>. Sent Agent16 the exact123-file list,2239370bytes/620371tokens,262144combined cap,15-question contract,13join/9global mapping, model-input/archive hashes and all text-only limits. amsg delivery `d96c19f9f4c9` is confirmed from actual#3 to the live-resolved#16. Delivery is not Le approval or a running reviewer. `private/publication-closeout/cold-scope-20261114/SCOPE-REQUEST.json` and DISPATCH-STATUS retain the held state: no provider calls, no session, no Chapter12 retry; await16's relay of Le's OK or concrete scope changes.
+
+### 2026-11-14: Approved final blind cold read launched; exact native transport confirmed
+
+Agent16 relayed Le's OK for exactscope c055307b, recorded at c7e90185. Post-approval preflight passes the unchanged archive/prompt/profile hashes, scientific source and effective tool-zero profile. One fresh pure DeepSeek V4 Pro process launched as `final-cold-dce93262-attempt-01`, native session `ses_e231148dcffeDqRTaZW0GDsMiC`, nativePID2980412, runnerPID2980410, exec28130. Combined cap262144; timeout7200s; no health call, previous session, fallback, continuation or retry. The initial native transcript confirms the exact2239370-byte approved user prompt hash46e54d15cb08c5c3af6a3c322aa84c5179cc9089992ee8e0073f081327ac79d8 and actualdeepseek/deepseek-v4-pro assistant. No private reasoning is inspected. Agent16 launch message9cd4095cd614 delivered. Launch/source/profile custody: `private/publication-closeout/final-cold-dce93262-attempt-01/`; live streams remain excluded. This is RUNNING, with no scientific verdict or confidence. Chapter12 skeptic stays NOT OBTAINED; no cold result or release acceptance is inferred.
