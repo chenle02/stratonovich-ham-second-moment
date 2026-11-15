@@ -1,0 +1,13 @@
+# Later cold-review records and Appendix E synchronization, 2026-11-15
+
+This additive snapshot contains **35 process records**, preserving every JSON value of the previous 29 rows and adding C012–C017. The prior v4 and all earlier snapshots remain unchanged. This is a bounded closeout dataset, not a lifetime review census or 35 independent scientific votes. Six new reports are represented by explicitly labelled author summaries; complete native evidence remains private.
+
+The six raw results are one INCONCLUSIVE/medium, two PASS_WITH_NOTES/high and three PASS/high. Adjudication is separate: the broad call was inconclusive, the earlier focused call was partial, OP supplies scoped positive evidence, IC and CH are partial, and PU supplies scoped evidence accepted by Le with the automatic retry disclosed. PU's earlier-stream usage/cost and aggregate cap compliance remain unknown; its final-step object is not whole-run telemetry. No row accepts the whole book.
+
+The old snapshot's running/pending fields describe that historical date, not current processes. Earlier whole-note DeepSeek and independent Kimi reviews remain below the required HIGH threshold. Chapter12 honesty synthesis supplies scoped PASS_WITH_NOTES/HIGH evidence only; the separate skeptic synthesis is NOT OBTAINED (context overflow, then safeguard stop with invalid partial output). It was never passed and was not retried further. These status notes do not add calls or duplicate historical lineages in this ledger. Author-side extraction and source comparisons are not additional independent scientific votes.
+
+Appendix E selects this committed snapshot explicitly. Its historical project-wide census through November12 and its one-machine usage snapshot remain unchanged; these six records are not silently added to either. Known reported components are grouped by actual model, original token format, accounting scope and cost currency, with n-of-N coverage. Unknown values remain unknown.
+
+## Final publishing gate
+
+Le directly required on 2026-11-15 that this synchronization be part of the final publishing gate. Before export, all final reviews and decisions must be reconciled to the selected ledger, report summaries, Appendix E, AI-use disclosure and rebuilt PDF. Run `python3 scripts/ai-statistics/check_review_sync.py` for the captured snapshot. The release wrapper also requires an external release-owner attestation bound to the exact release SHA and REVIEW-SYNC.json hash. This is a consistency check, not scientific acceptance or a completeness oracle for private reviews. Any later review or decision requires a refreshed snapshot/summary/manifest and final owner reconciliation before export. Public-release and source-disclosure gates remain in force.
