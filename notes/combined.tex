@@ -287,6 +287,7 @@ and its history, and the Lean companion, are at
 
 \chapter*{A guide to the proof}
 \addcontentsline{toc}{chapter}{A guide to the proof}
+\markboth{A guide to the proof}{A guide to the proof}
 
 The reading edition states the main results and explains the route through
 this volume. The chapters below supply the proofs in their dependency order.
@@ -297,6 +298,24 @@ chapter opens with its motivating question, the earlier definitions or results
 needed to enter it, and an outline of the argument. Readers may use these
 openings to choose a starting point and follow the linked prerequisites when
 needed.
+
+How much to read depends on the time at hand.
+
+\begin{center}
+\begin{tabular}{@{}p{0.20\textwidth}p{0.71\textwidth}@{}}
+  \toprule
+  Time & What to read \\
+  \midrule
+  Ten minutes & The two main theorems in Section~\ref{S:targets}, the reason for the exponent in Section~\ref{S:why-kappa}, and the map in Figure~\ref{Fig:chapter-roadmap}. \\
+  One evening & The reading edition, or Chapter~\ref{S:book-setting} followed by the opening of each later chapter. The first two videos cover Chapter~\ref{S:book-setting}. \\
+  The full proof & Chapters~\ref{S:G0}--\ref{S:book-constant} in order. Each opening says which results to keep and which proofs can wait on a first reading. \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+Lemma~\ref{L:white-test} gives concrete variance and mean calculations.
+No-go~\ref{P:nogo-05} shows geometrically why merging two chains can violate
+wave support.
 
 \begin{center}
 \begin{tabular}{@{}p{0.20\textwidth}p{0.71\textwidth}@{}}
@@ -327,7 +346,7 @@ their captions identify the precise results and the limits of the drawings.
 
 \paragraph{Video introduction.}
 An introduction to this book in eleven videos, each about twenty minutes and
-narrated by a synthetic voice, is on YouTube at \VideoPlaylist. I made the
+narrated by a synthetic voice, is on YouTube at \VideoPlaylist. We made the
 series with Amy: she drafted the scripts and animations from this book, every
 displayed formula is copied from the statement that carries its label, and each
 script was reviewed against the manuscript by a model family different from the
@@ -363,17 +382,18 @@ part of it or of its review.
 \part{Reading edition}
 \begin{readingedition}
   \section*{Summary}
-  We present the proof of the second-moment asymptotics in an order that
-  separates construction, an independent upper bound, and identification of the
-  limiting constant. The spatial covariance is a nonnegative positive-definite
-  homogeneous Radon measure in dimensions one, two or three. The temporal
-  covariance is a fractional power. The limiting constant is a supremum over all
-  nonnegative smooth compact spacetime controls, with the original covariance
-  amplitude, gradient coefficient one and Gaussian variance-half action. The
-  reader contains the definitions, the main statements, the connecting
-  deductions and an explicit map to the detailed proofs in Part~II.
-  Part~II is part of the proof package. Finite-order
-  calibrations and alternative estimates remain in Part~II.
+  This reading edition explains how fast the second moment grows and what
+  determines its limiting constant. We follow the argument from construction of
+  the solution to an independent upper bound at the correct time scale, and
+  then to identification of the constant. The spatial covariance is a
+  nonnegative positive-definite homogeneous Radon measure in dimensions one,
+  two or three. The temporal covariance is a fractional power. The limiting
+  constant is a supremum over all nonnegative smooth compact spacetime controls,
+  with the original covariance amplitude and gradient coefficient one. The
+  Gaussian cost is half the variance of the associated Gaussian functional.
+  We give the definitions, main statements and connecting deductions, with
+  links to the full proofs in the book. The book also contains the finite-order
+  calculations and alternative estimates.
 
   \noindent\textbf{Working-draft status.} This short account accompanies
   version 1.0.0 of the book, Part~II, which contains the full proofs. Linking its
@@ -384,7 +404,8 @@ part of it or of its review.
   \section{From a guitar in a sandstorm to moment asymptotics}\label{S:reader-history}
 
   % ---- inlined from notes/figures/walsh-guitar.tex (figure labels renamed RD-Fig:) ----
-  \begin{wrapfigure}{r}{0.36\textwidth}
+  % End the book wrap before printed page 2; retain the reader's 18 lines.
+  \begin{wrapfigure}[\ifdefined\chapter17\else18\fi]{r}{0.36\textwidth}
     \centering
     \begin{tikzpicture}
       \begin{scope}
@@ -503,29 +524,46 @@ part of it or of its review.
   % ---- inlined from notes/figures/nonseparable-controls.tex (figure labels renamed RD-Fig:) ----
   \begin{figure}
     \centering
-    \begin{tikzpicture}[x=1cm,y=1cm]
-      \draw[ham/arrow] (0,0)--(6,0) node[right] {$x$};
-      \draw[ham/arrow] (0,0)--(0,3.6) node[above] {$s$};
-      \draw[dotted] (.3,3.15)--(5.6,3.15);
-      \node[anchor=east,font=\small] at (-.1,.05) {$0$};
-      \node[anchor=east,font=\small] at (-.1,3.15) {$1$};
-      \filldraw[draw=hamblue,fill=hamblue!12] (.85,.45) rectangle (2.55,1.45);
-      \filldraw[draw=hamteal,dashed,fill=hamteal!12] (3.25,1.8) rectangle (5.05,2.8);
-      \node[font=\small] at (1.7,.95) {$\phi_1(s)\psi_1(x)$};
-      \node[font=\small] at (4.15,2.3) {$\phi_2(s)\psi_2(x)$};
-      \node[ham/box,text width=4.6cm] at (9,2.65)
-      {$\Psi\ge0$, smooth and compactly supported\\
-      $\Psi=\phi_1\psi_1+\phi_2\psi_2$};
-      \node[ham/box,text width=4.6cm] at (9,-.2)
-      {Keep covariance amplitude\\
-      gradient coefficient $1$\\
-      cost $v_\Psi/2$};
+    \begin{tikzpicture}[x=1cm,y=1cm,font=\normalsize]
+      % Identical panel widths, baselines, box sizes and type sizes.
+      \foreach \shift in {0,7.6} {
+      \begin{scope}[xshift=\shift cm]
+        \draw[ham/arrow] (.85,0)--(6.4,0) node[right] {$x$};
+        \draw[ham/arrow] (.85,0)--(.85,2.3) node[above] {$s$};
+        \node[anchor=east] at (.7,.6) {early};
+        \node[anchor=east] at (.7,1.75) {late};
+        \node at (2.1,-.3) {left};
+        \node at (4.9,-.3) {right};
+        \filldraw[draw=hamblue,fill=hamblue!12]
+        (1,.2) rectangle (3.2,1);
+        \filldraw[draw=hamteal,fill=hamteal!12]
+        (3.8,1.35) rectangle (6,2.15);
+        \node at (2.1,.6) {$>0$};
+        \node at (4.9,1.75) {$>0$};
+      \end{scope}
+      }
+      \node[font=\normalsize\bfseries] at (3.5,3.5) {Single product};
+      \node[font=\normalsize\bfseries] at (11.1,3.5) {Two-bump sum};
+      \node at (3.5,2.95) {$\Psi=\phi\psi$};
+      \node at (11.1,2.95) {$\Psi=\phi_1\psi_1+\phi_2\psi_2$};
+      \foreach \x/\y in {4.9/.6,2.1/1.75} {
+      \filldraw[draw=hamgold,dashed,fill=hamgold!12]
+      (\x-1.1,\y-.4) rectangle (\x+1.1,\y+.4);
+      \node[text=hamgold] at (\x,\y) {$>0$ forced};
+      }
+      \node at (12.5,.6) {$0$};
+      \node at (9.7,1.75) {$0$};
+      \node[align=center,text width=6.6cm] at (3.5,-.95)
+      {Four positive blocks:\\ the cross blocks are forced.};
+      \node[align=center,text width=6.6cm] at (11.1,-.95)
+      {Two positive blocks:\\ the cross blocks can be zero.};
+      \node at (7.3,-1.65)
+      {Schematic supports, not an optimizer or a density claim.};
     \end{tikzpicture}
-    \caption[Controls that need not factor]{The control class is not restricted to
-      one product of time and space functions. Two smooth nonnegative bumps with
-      distinct time and space supports give a simple non-factorizing example. The
-      shaded sets indicate supports, not a proposed optimizer. The full class is
-      infinite-dimensional; see \ProofRef{Theorem}{T:intrinsic-second-moment}.}
+    \caption[Controls that need not factor]{The full control class allows spatial
+      profiles to change with time, as in this sum of two smooth nonnegative product bumps that no single
+      time--space product can represent. The full class is infinite-dimensional;
+      see \ProofRef{Theorem}{T:intrinsic-second-moment}.}
     \label{RD-Fig:nonseparable-controls}
   \end{figure}
   This includes functions that do not factor into one temporal function and one
@@ -1065,8 +1103,8 @@ part of it or of its review.
   This is \TNref{Proposition}{P:interval-coefficients}. The full finite Fock
   deductions are in Part~II,
   Sections~\ref{TN-S:static-all-orders}--\ref{TN-S:interval-upper}, including
-  \TNref{Lemma}{L:interval-complex}. The separate variance estimate in Technical
-  Notes, Section~\ref{TN-S:static-phase}, controls both the Born term and the
+  \TNref{Lemma}{L:interval-complex}. The separate variance estimate in Part~II,
+  Section~\ref{TN-S:static-phase}, controls both the Born term and the
   second-order mean term.
   It is a first-variance tool, not a substitute for the all-order coefficient
   estimate~\eqref{E:reader-interval-coefficients}. Neither term can be dropped
@@ -1881,7 +1919,9 @@ part of it or of its review.
   as numbered results, with proofs and links to the arguments that replace them.
   For example, \TNref{No-go}{P:nogo-14} explains why velocity must be retained
   across time blocks, and \TNref{No-go}{P:nogo-30} explains why pointwise
-  convergence alone does not justify a limit of variational suprema.
+  convergence alone does not justify a limit of variational suprema. Part~II
+  also has a short list of working words and common misreadings, placed before
+  its List of notation.
 
   \begin{longtable}{@{}p{0.45\textwidth}p{0.50\textwidth}@{}}
     \textbf{Required assertion} & \textbf{Part~II reference}\\\hline
@@ -2182,8 +2222,9 @@ retain the printed formulas without adopting a correction. The upper-bound
 proofs below do not use the first-moment upper constant.
 
 \begin{theorem}[\cite{chen:author2026:time-dependency}*{Theorem~1.2, (1.10)--(1.13)}]\label{T:first}
-  \emph{Source statement as printed.} The source states, under
-  Hypothesis~\ref{H:homog},
+  \emph{Source statement as printed.} Under its covariance and homogeneity
+  assumptions~\cite{chen:author2026:time-dependency}*{(1.2), (1.3), (1.8), (1.9)},
+  the author version states
   \[
     L_*\le\liminf_{t\to\infty}t^{-\kappa}\log\E u(t,x)
     \le\limsup_{t\to\infty}t^{-\kappa}\log\E u(t,x)\le L^*,
@@ -2206,10 +2247,15 @@ proofs below do not use the first-moment upper constant.
   lower bound.
 \end{theorem}
 
+The source writes its spatial covariance as a function and explicitly includes
+one-dimensional spatial white noise. We do not claim an extension of this
+quoted result to every singular Radon covariance in Hypothesis~\ref{H:homog}.
+
 The source predicts that the limit exists and equals $L^*$
-\cite{chen:author2026:time-dependency}*{p.~4}; this is not proved,
-and~\cite{chen:author2026:time-dependency}*{Remark~8.1} explains why the lower
-bound is not sharp (complex-valued intersection local time).
+\cite{chen:author2026:time-dependency}*{p.~4}; this is not proved.
+The source also suggests that the constant in its lower estimate may not be
+sharp, relating the difficulty to the complex-valued intersection-local-time
+representation~\cite{chen:author2026:time-dependency}*{Remark~8.1, (8.8)}.
 
 \begin{theorem}[\cite{chen:author2026:time-dependency}*{Remark~5.1, (5.8)}]\label{T:crude}
   $\E u^2(t,x) \le e^{Ct^2}$ for large $t$.
@@ -3797,6 +3843,8 @@ calculation in No-go~\ref{P:nogo-02} also explains why one cannot repair it
 by assigning a cubic-factorial estimate to every individual pairing.
 
 
+\input{notes/chapter-endings/02-G0}
+
 \chapter{An independent upper bound}\label{S:book-independent-upper}
 
 \input{notes/chapter-guides/03-independent-upper}
@@ -4445,6 +4493,8 @@ occupation spaces in this argument.
   \eqref{E:all-static-phase-sum}. This proves
   Proposition~\ref{P:static-phase-all-orders}.
 \end{proof}
+
+\input{notes/figures/noise-memory-figure}
 
 \begin{corollary}[Summable static interaction bounds]
   \label{C:static-interaction}
@@ -5766,6 +5816,8 @@ the time intervals below.
 \end{remark}
 
 
+\input{notes/chapter-endings/03-independent-upper}
+
 \chapter{Covariance estimates and Gaussian approximation}\label{S:book-gaussian-foundations}
 
 \input{notes/chapter-guides/04-gaussian-foundations}
@@ -5774,12 +5826,16 @@ the time intervals below.
 \input{notes/integrated_wave_variance}
 \input{notes/integrated_compact_gaussian}
 
+\input{notes/chapter-endings/04-gaussian-foundations}
+
 \chapter{The original noise and operator paths}\label{S:book-operator-paths}
 
 \input{notes/chapter-guides/05-operator-paths}
 
 \input{notes/integrated_actual_operator_driver}
 \input{notes/integrated_source_convergence}
+
+\input{notes/chapter-endings/05-operator-paths}
 
 \chapter{Fixed masks and wave evolution}\label{S:book-wave-evolution}
 
@@ -5789,6 +5845,8 @@ the time intervals below.
 \input{notes/integrated_constant_phase_young}
 \input{notes/integrated_compact_mean_family}
 
+\input{notes/chapter-endings/06-wave-evolution}
+
 \chapter{Scaling and the point lower bound}\label{S:book-lower}
 
 \input{notes/chapter-guides/07-lower}
@@ -5797,22 +5855,32 @@ the time intervals below.
 \input{notes/integrated_raw_block_lower}
 \input{notes/integrated_unmasked_variational}
 
+\input{notes/chapter-endings/07-lower}
+
 \chapter{Spatial controls and Gaussian means}\label{S:book-means}
 
 \input{notes/chapter-guides/08-means}
+
+\input{notes/figures/control-mean-wave-figure}
 
 \input{notes/integrated_temporal_equilibrium}
 \input{notes/integrated_spatial_occupation}
 \input{notes/integrated_cameron_mean}
 \input{notes/integrated_young_upper_foundation}
 
+\input{notes/chapter-endings/08-means}
+
 \chapter{Bounds as the spatial radius grows}\label{S:book-growing-radius}
 
 \input{notes/chapter-guides/09-growing-radius}
 
+\input{notes/chapter-tables/09-radius}
+
 \input{notes/integrated_uniform_mean}
 \input{notes/integrated_radius_anchor}
 \input{notes/integrated_signed_static}
+
+\input{notes/chapter-endings/09-growing-radius}
 
 \chapter{Gaussian estimates for the point upper bound}\label{S:book-point-upper}
 
@@ -9771,6 +9839,7 @@ comparison, without refuting the comparison itself.
 
 \backmatter
 \bibliography{All,extra}
+\input{notes/glossary}
 \input{notes/index/list-of-notation}
 \printindex
 \end{document}
