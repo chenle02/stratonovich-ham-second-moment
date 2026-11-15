@@ -76,8 +76,8 @@ stale/ambiguous information, rather than routine queries.
 - Next: preserve/adjudicate the terminal PU/CH reports and protocol boundaries,
   publish the exact cohort summary and bring the remaining assurance choice to Le.
 - Also: guides/endings source audit40f63f79 and successor checkc074c0eb done.
-- Dependency: actual review returns; no new source binding, retry or grade
-  promotion is inferred by coordination.
+- Dependency: final source/protocol adjudications and Le's assurance decision;
+  no new source binding, retry or grade promotion is inferred by coordination.
 
 ### Agent16 — final publication process
 
@@ -92,8 +92,8 @@ stale/ambiguous information, rather than routine queries.
 
 ### Agent22 — Lean verification
 
-- Current: frozen L14, re-anchor tool1fa1508 ready; b355 dry run verified
-  8915 citations,0unresolved; expected shifts are to be absorbed at R.
+- Current: frozen L14, re-anchor tool1fa1508 ready;9c334846 remap matches the
+  combined dry run,8915 citations/0unresolved; expected shifts absorbed at R.
 - Next: on Agent16's full R, re-anchor, review/confirmation, Le acceptance and
   public v0.10.0 delivery with exact tag/commits/DOI/receipts.
 - Later check: R→re-pin candidate must have0SHIFTED citations before push.
@@ -102,19 +102,21 @@ stale/ambiguous information, rather than routine queries.
 ### Agent24 — writing and polishing
 
 - Current: required guides/endings corrections independently source-checked
-  by3 and landed through`9c334846`. Glossary6ae1a4e7/radius table987531a1 now
-  have exact required source/definition corrections from3 (`74561e45`).
+  by3 and landed through`9c334846`. Corrected glossary0479797d/radius table
+  4f526f96 are HELD;3verified exact successor text at69aa5272.
 - Car is settled: be3e548c carried by slot7=6aa11295; no new design work.
-- Next: glossary/radius successors, the focused plural-authorial-voice pass
-  below, and exact handoffs. Agent5's exponent56114300, maskca8449db and control→mean→wave8025ccd6
-  assets are HELD and delivered to24 for caption/placement integration.
+- Next: the focused plural-authorial-voice pass and integration handoffs;
+  glossary/radius successors await16/Le checks rather than another rewrite.
+  Exponent56114300, maskca8449db and control→mean→wave8025ccd6 assets are HELD
+  and delivered to24 for caption/placement integration.
 - Dependency:3checks mathematical/dependency claims;16checks publication
   candidates; Le approves required final SHAs. F/G wait for R/public Lean pins.
 
 ### Agent29 — video repository
 
 - Current: review fixes56a3d86 pushed/synced; reported video gate passed,
- 31commented scenes rendered, render audits empty. Car/figure displays handled.
+ 31commented scenes rendered, render audits empty. Standing narration-voice
+  rule recorded atab74dab; car/figure displays handled.
 - Next: final-F re-pin, moved numbers/pages and raw scene stamps,1080p build,
   gate and replacement/book-link handoff in the approved release sequence.
 - Dependency: final F and22's publicv0.10.0 tag/commits/DOI; no early re-pin.
