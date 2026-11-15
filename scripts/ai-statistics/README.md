@@ -11,6 +11,8 @@ from the files in this folder and the repository's git history.
 | `reviews/` | `count_reviews.py` counts review runs from `reviews/`; outputs `runs.tsv`, `review-stats.json`, `unclassified.txt`. |
 | `tokens/` | `token_totals.py` reads local model logs; `token-totals.json` is the recorded snapshot. |
 | `no-go/` | `nogo-counts.json`: kind and status of each recorded no-go (see its README). |
+| `timeline.json`, `commits-per-day-timeline.json` | The commit up to which commits per day are counted for the opening numbers and the line in the figure, and the counts. This can be later than the commit of the review census. |
+| `selection.json` | Names, by path and SHA-256, the dated token and no-go snapshots that `make_appendix.py` must read. The generator stops if one is missing or differs. |
 
 Rebuild from the repository root:
 
@@ -21,18 +23,32 @@ Rebuild from the repository root:
 `count_reviews.py` takes about 45 s and 4.3 GB of memory.
 `token_totals.py` only works on the machine that holds the model logs
 (set `CODEX_SESSIONS` and `OPENCODE_DB` if they are not in the default
-places); everyone else uses the committed `token-totals.json`.
+places); everyone else uses the committed snapshots. Set `TOKEN_TOTALS_OUT`
+to write a new dated snapshot (for example `token-totals-2026-11-15.json`)
+without overwriting an earlier one, and then name it in `selection.json`.
+
+## Two dates
+
+The review census (`reviews/`) ends at the commit named in
+`reviews/review-stats.json`; its last day is November 12, 2026, and the bars
+of the figure stop there. The commits per day, the milestones, the token
+totals and the no-go record are dated snapshots that can be later
+(`timeline.json`, `selection.json`). The first snapshots
+(`commits-per-day.json`, `tokens/token-totals.json` of November 11 and
+`no-go/nogo-counts.json` of November 10) stay in the repository unchanged.
+Reviews done after the census are not added to its bars; they are reported
+through the closeout ledger described below.
 
 ## Every number and its source
 
 | Number in Appendix E | Source |
 |---|---|
-| days, first and last day, commits (UTC days) | `git log` up to the commit named in `reviews/review-stats.json`, `TZ=UTC`, recorded in `commits-per-day.json`. The public repository's history is filtered (commit ids rewritten, private-only commits dropped), so there the script reads this file. |
+| days, first and last day, commits (UTC days) | `git log` up to the commit named in `timeline.json`, `TZ=UTC`, recorded in `commits-per-day-timeline.json` (without `timeline.json`: the commit named in `reviews/review-stats.json`, recorded in `commits-per-day.json`). The public repository's history is filtered (commit ids rewritten, private-only commits dropped), so there the script reads this file. |
 | review folders, folders with a run, runs, follow-ups, runs dated by folder name | `reviews/review-stats.json`, `reviews/runs.tsv` |
 | review table: runs, completed, not completed, met the bar, FAIL, MEDIUM, hours and their coverage | `reviews/runs.tsv` (rules in `make_appendix.py`) |
 | GPT FAIL count | `reviews/runs.tsv`, family GPT/Codex |
-| worker sessions and tokens; Claude calls and tokens; DeepSeek sessions, tokens and cost; snapshot time; worker/DeepSeek ratio | `tokens/token-totals.json` |
-| no-go totals by kind and status | `no-go/nogo-counts.json` |
+| worker sessions and tokens; Claude calls and tokens; DeepSeek sessions, tokens and cost; snapshot time; worker/DeepSeek ratio | the token snapshot named in `selection.json` |
+| no-go totals by kind and status | the no-go snapshot named in `selection.json`; the first-snapshot counts quoted in the text come from `no-go/nogo-counts.json` |
 | timeline figure | `reviews/runs.tsv` (bars), `git log` (line), `milestones.json` (numbered markers and key) |
 
 Definitions: a *run* is one review task sent to one reviewer model; *met the

@@ -162,8 +162,13 @@ def opencode():
 if __name__ == "__main__":
     snap = {"repository": REPO, "codex_worker": codex(), "claude_code": claude(),
             "opencode": opencode(),
-            "note": "Local logs of the worker machine only; subscription use has no dollar cost."}
-    with open(os.path.join(HERE, "token-totals.json"), "w") as fh:
+            "note": "Local logs of the worker machine only; subscription use has no dollar cost.",
+            "snapshot_utc": __import__("datetime").datetime.now(
+                __import__("datetime").timezone.utc).strftime("%Y-%m-%dT%H:%MZ")}
+    # TOKEN_TOTALS_OUT names another file beside this script, so that a later
+    # snapshot can be recorded without overwriting an earlier one.
+    out_name = os.path.basename(os.environ.get("TOKEN_TOTALS_OUT", "token-totals.json"))
+    with open(os.path.join(HERE, out_name), "w") as fh:
         json.dump(snap, fh, indent=2, sort_keys=True)
         fh.write("\n")
     print(json.dumps(snap, indent=2, sort_keys=True))
