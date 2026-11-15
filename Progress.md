@@ -61,7 +61,7 @@ The plan above is an intra-round checkpoint, not whole-book clearance.
 ## Live team status — read before messaging
 
 <!-- team-status:start -->
-Snapshot UTC: 2026-11-15T18:20:02.149361+00:00. Agent5 maintains this summary from owner
+Snapshot UTC: 2026-11-15T19:25:20.262988+00:00. Agent5 maintains this summary from owner
 receipts and committed artifacts. Owners retain their dated evidence below.
 This is the workflow summary, not a scientific acceptance ledger. Read it
 before asking another agent for status; send only needed handoffs or decisions.
@@ -76,8 +76,9 @@ before asking another agent for status; send only needed handoffs or decisions.
   passed. Chapter8 caption/dependency check requires no change.
 - Wiki402 working-status upkeep is actually maintained at5a12e0c9; exact
   published-page hash/receipt are retained at a156c3a8. No lifecycle promotion.
-- Next: reconcile final review inventory and reseal after any later relevant
-  source/PDF/decision change. No new scientific review or proof repair authorized.
+- Next: include the new honest-standing release disposition in final review
+  inventory/reconciliation at the next required seal. Raw grades stay unchanged;
+  no new scientific review or proof repair is authorized.
 
 ### Agent16 — final publication process
 
@@ -86,10 +87,13 @@ before asking another agent for status; send only needed handoffs or decisions.
   33ed4ef7 reseal. Origin, <HUB> and <MACHINE> are synchronized;402/28 pages.
 - Checks: own pinned builds, source equality, page map, links/filter and exact
   reseal check passed. The earlier internal-push approval hold is resolved.
-- Next: Le's scientific-assurance disposition and the applicable typesetting
-  acceptance, then full source freeze R. R/F/public release/arXiv are not issued
-  or authorized by the internal landing. Gate277ec8c8 remains a separate held
-  release-procedure unit; replay on the current tip if adopted.
+- Assurance disposition: Le chose the honest-standing release at eeaa40e2,
+  with every raw grade/limitation unchanged. This is not a whole-book HIGH pass.
+- Review-sync STOP is adopted at a27e5f94 (rehearsed c7cd9c40, shared clone and
+  owned exit cleanup). Live export requires the owner's exact-SHA attestation.
+  Old277ec8c8 is superseded, not a current gate-adoption blocker.
+- Next: Le's typesetting pass on the adopted402-page PDF, then16's actual R.
+  R/F/public release/arXiv have not been issued by these decisions.
 
 ### Agent22 — Lean verification
 
@@ -21153,3 +21157,21 @@ owner-filter and helper-validation evidence is retained at
 private/publication-closeout/agent5-supervision-20261115/HANDOFF-LANDING-25970146.json.
 R/F/scientific assurance, Lean/video/public release and Le-only submission
 remain open; metadata adoption is not clearance of those gates.
+
+### 2026-11-15: Review-sync gate adoption and Le assurance disposition verified
+
+Agent16 landed a27e5f94 under Le's direct instruction and recorded it at8d90fac5.
+Root compared all3gate-file blobs to rehearsedc7cd9c40: exact equality;
+no185-manifest artifact changed. Live export now enforces the release-owner
+attestation for the exact release SHA; dry-run fixture success is not that
+attestation. Superseded277 is retained historically, not pending adoption.
+
+Le directly chose the honest-standing release at eeaa40e2: grades stay as
+recorded, including whole-bookMEDIUM, coldINCONCLUSIVE, IC/CHpartial and
+Chapter12skepticNOTOBTAINED; scopedOP/PUacceptance remains scoped. No review
+grade, proof or public acceptance wording changed. Final inventory/resealing
+must reconcile this new decision before publication. Next is Le's typesetting
+pass on adopted402/28, then16's R; no R/F/public release/arXiv is inferred.
+Curated source/equality/decision and bounded disk-audit closure evidence is
+private/publication-closeout/agent5-supervision-20261115/GATE-AND-ASSURANCE-a27e5f94.json.
+No duplicate book build, scientific call or retest was run for this record.
