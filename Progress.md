@@ -61,7 +61,7 @@ The plan above is an intra-round checkpoint, not whole-book clearance.
 ## Live team status — read before messaging
 
 <!-- team-status:start -->
-Snapshot UTC: 2026-11-15T07:13:00.728739+00:00. Agent5 maintains this compact summary from submitted
+Snapshot UTC: 2026-11-15T07:23:53.270299+00:00. Agent5 maintains this compact summary from submitted
 owner reports and committed artifacts. Owners keep their normal dated entries
 below; those entries and exact receipts establish scope. This is not a new
 acceptance ledger. Check this section and its linked evidence before asking
@@ -106,13 +106,15 @@ stale/ambiguous information, rather than routine queries.
 
 - Current: required guides/endings corrections independently source-checked
   by3 and landed through`9c334846`. Corrected glossary0479797d/radius table
-  4f526f96 are HELD;3verified exact successor text at69aa5272.
+  34a356ac are HELD;3checked glossary/row semantics at69aa5272, with the latter
+  table adding only the requested ragged-right row5 alignment.
 - Car is settled: be3e548c carried by slot7=6aa11295; no new design work.
 - Next: the focused plural-authorial-voice pass and integration handoffs;
   glossary/radius successors await16/Le checks rather than another rewrite.
   Exponent source fixdbc1e96a is now typeset as9c2abb1e (same pages,1.32mm
   annotation-height exception measured). Maskca8449db/flow8025ccd6 are HELD;
- 3's caption audit39cad063 requires the mask-covariance clarification only.
+ 3checked the corrected mask5fbf25e2 at44f9d961; κ9c2abb1e and mask remain
+  in16/Le's approval route, and the flow alternative remains HELD.
   Voice9f5c7e6a conforms to the standing rule in5's bounded source check.
 - Dependency:3checks mathematical/dependency claims;16checks publication
   candidates; Le approves required final SHAs. F/G wait for R/public Lean pins.
@@ -130,7 +132,8 @@ stale/ambiguous information, rather than routine queries.
 
 - Current:30-minute read-only watchdog plus continuous message handling;
   all-five-screen context is combined with submitted artifacts before decisions.
-  Three requested drawing assets are delivered; plural-voice rule/task is shared.
+  Requested drawing fixes/handoffs are done; focused private six-call ledger
+  proposal2b82289f is under read-only accounting/schema QA, not public adoption.
 - Source of truth: this live section and the dated Progress entries. Runtime
   screenshots and private snapshots are observations, not approvals.
 - Prompt only concrete authorized unblocked work. Do not disturb busy agents,
@@ -20957,3 +20960,16 @@ Root corrected public wording to literal253proof-row NOT_READ with the report's 
 ### 2026-11-15: Mask-caption successor matches required covariance clarification
 
 24reported5fbf25e279218918375b43137b406142cbeaa59e (held). Root independently checks required covariance replacement exact modulo wrapping; drawing, guide04 and readerTeX are byte-identical to f3bbf93b. Root read the full fitting-shortened caption: support/product meaning preserved, original noise/control norm distinguished from product covariance, and the unchanged drawing still labels the potential after smoothing. No new mathematical claim or edit by root. Evidence `private/publication-closeout/figure-caption-audit-20261115/MASK-SUCCESSOR-BYTE-CHECK.json`.24's reported clean builds/filter,396/28pages and10destination changes/0chapter-start moves are not independently duplicated/promoted here.16/Le own exactSHA adoption. Kappa drawing successor remains5/24's pending presentation work; flow has no required caption correction.
+
+### 2026-11-15: Mask-caption correction closed; ledger-proposal QA is bounded
+
+3checked exactmask5fbf25e2caption/source at44f9d961: product covariance has
+the mask at both spatialarguments while originalnoise/control-cost norm stays
+fixed;drawing/guide04/readerTeX unchanged. No new rebuildoradoption by5.
+Live24row now marks the completed correction rather than requesting it again.
+
+3's six-call privateproposal2b82289f is available to16;5's helper is checking
+its actual rows/accounting-generatorpatch/fixture rather than issuing obsolete
+pre-proposal warnings or drafting duplicate rows. No publicdata/generator/prose
+change, newmodelcall or PUprotocol waiver. Required/partial rawreview scopes
+and unknown first-stream usage remain separate from publication acceptance.
