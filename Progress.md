@@ -16,8 +16,8 @@ force Chen's predicted constant or create a Lean companion without approval.
 
 ## Status
 
-Research INCOMPLETE — the Le-approved final blind DeepSeek cold read is RUNNING
-(fresh native session launched 2026-11-14 local time); no verdict yet. The 394-page book includes Chapter 12, the approved rough-noise future-work discussion and the L9 verification
+Research INCOMPLETE — final blind DeepSeek attempt returned INCONCLUSIVE/medium;
+no final-cold acceptance. Await Le's assurance disposition via Agent16. The 394-page book includes Chapter 12, the approved rough-noise future-work discussion and the L9 verification
 appendices. Whole-report HIGH scientific review, final cold acceptance and
 release closure remain open. The historical Kimi hold was lifted; prior
 MEDIUM and malformed reports remain unaccepted in their recorded scopes.
@@ -25,7 +25,7 @@ MEDIUM and malformed reports remain unaccepted in their recorded scopes.
 ## Active publication-completion frontier (2026-11-14)
 
 Le explicitly requested setting and pursuing the publication-completion goal.
-The approved final cold read is running; the objective preserves PROJECT-GOAL.md and the
+The final cold attempt is terminal INCONCLUSIVE/medium; the objective preserves PROJECT-GOAL.md and the
 required whole-paper scientific, source/visual, fresh cold and delivery gates.
 The older roadmap counts and launcher snapshots below remain historical;
 they do not override this frontier or the latest dated adjudications.
@@ -20571,3 +20571,9 @@ Scope commit `c055307b` is pushed and synchronized with <HUB>. Sent Agent16 the 
 ### 2026-11-14: Approved final blind cold read launched; exact native transport confirmed
 
 Agent16 relayed Le's OK for exactscope c055307b, recorded at c7e90185. Post-approval preflight passes the unchanged archive/prompt/profile hashes, scientific source and effective tool-zero profile. One fresh pure DeepSeek V4 Pro process launched as `final-cold-dce93262-attempt-01`, native session `ses_e231148dcffeDqRTaZW0GDsMiC`, nativePID2980412, runnerPID2980410, exec28130. Combined cap262144; timeout7200s; no health call, previous session, fallback, continuation or retry. The initial native transcript confirms the exact2239370-byte approved user prompt hash46e54d15cb08c5c3af6a3c322aa84c5179cc9089992ee8e0073f081327ac79d8 and actualdeepseek/deepseek-v4-pro assistant. No private reasoning is inspected. Agent16 launch message9cd4095cd614 delivered. Launch/source/profile custody: `private/publication-closeout/final-cold-dce93262-attempt-01/`; live streams remain excluded. This is RUNNING, with no scientific verdict or confidence. Chapter12 skeptic stays NOT OBTAINED; no cold result or release acceptance is inferred.
+
+### 2026-11-14: Final blind cold read terminal INCONCLUSIVE/medium; no retry
+
+The one authorized fresh DeepSeek V4 Pro attempt `final-cold-dce93262-attempt-01` / `ses_e231148dcffeDqRTaZW0GDsMiC` ended exit0, finishstop,270.359569s, with valid bare JSON: INCONCLUSIVE/medium. Exact approved native prompt, unchanged profile, one user/assistant, no parent session or tools. Usage620734input+15275public+11849reasoning, cache0; combined27124 below262144, no timeout or output exhaustion. No private reasoning is inspected. All253proof IDs/paths are complete and correct but every row is literally NOT_READ, with one generic not-independently-audited reason.121of123filenames appear in source_coverage; two figure carriers are not named, not missing from transport.15integration and11source-application assessments are limited/sampled; no full final-cold/whole-book certification follows.
+
+Read the entire public report, every integration/source reason, all unique proof-row text and allfive limitations. Raw fatal findings0; one major explicitly concerns insufficient independent reconstruction, not a confirmed mathematical defeat; one minor reports positive sampled arithmetic. Required repairs empty. No manuscript defect or repair is invented, no NOT_READ is upgraded and no prior grade is changed. Unmodified public report: `sources/review-packets/final-cold-dce93262-public-report.json`, SHA2566d88d9b79a79a62e443ce6fecbde5d1546093cbc4df51a0996f782bdfbcee461. Exact native custody, structural checks and bounded disposition: `private/publication-closeout/final-cold-dce93262-attempt-01/RESULT.json`, ADJUDICATION.md and TERMINAL-ARCHIVE-MANIFEST.json. Agent16 initial terminal result dc639683dff0 delivered; full custody/result path follows. Chapter12 skeptic remains NOT OBTAINED, honesty does not substitute; no retry/continuation/fallback, source change, cold acceptance or release approval. Le's section7 assurance decision remains pending.
