@@ -66,3 +66,20 @@ Claude and GPT runs (see `reviews/README.md`).
 Appendix E's historical census remains separate from its later closeout ledger. The default selected committed ledger is now `experiment/ledger-updates/2026-11-15-cold-closeout/run-ledger-v4.json`. That additive snapshot preserves the29 historical rows and adds six later cold checks. `python3 scripts/ai-statistics/make_appendix.py --check` verifies generated data without writing files; `--ledger PATH` selects a different explicitly committed snapshot. Token sums are separated by actual model, original field signature and accounting scope; reported costs are also separated by currency. Partial final-step objects never certify whole-run usage.
 
 Le required this consistency work as a final publishing gate on 2026-11-15. Run `python3 scripts/ai-statistics/check_review_sync.py` to verify the captured snapshot. The final release owner must run the release mode against a detached checkout of the exact release SHA with an external attestation bound to that SHA and the REVIEW-SYNC manifest hash, after reconciling all final review decisions, including private evidence. Later reviews, decisions or artifact changes require renewed synchronization. The check does not grant scientific acceptance or public release; release-wrapper integration and rehearsal belong to its owner.
+
+
+## Additive chronology and policy evidence
+
+Step B selects review_evidence and review_inventory explicitly in
+selection.json. The generator verifies their hashes, original-ledger binding,
+118/25/93/4 inventory counts, clock kinds, day bounds and unchanged-grade policy
+before producing the chronology macros. The original 35-row ledger is not
+rewritten. The inventory does not enter completion, met-bar, token or cost sums;
+the historical quality table remains tied to its own census.
+
+The release consistency checker now requires the archival combined edition as
+well as the book and reader. Every selected input must be present, match its
+declared hash and be included in the final review-sync seal. The source code
+change belongs to B; the manifest-only reseal remains D, after combined
+regeneration and all authorized source changes. No final owner attestation or
+scientific/release acceptance is manufactured by snapshot checks.

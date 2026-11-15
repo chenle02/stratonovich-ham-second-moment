@@ -17,3 +17,15 @@ Agent16 re-filter approval is pending for this revised per-file manifest. No pub
 ## Additive closeout update, 2026-11-15
 
 The older snapshot statements above describe the captured historical registry, including its then-running row. Appendix E now selects [the additive 35-record snapshot](ledger-updates/2026-11-15-cold-closeout/README.md): the same29 row values plus C012–C017. The six later invocations do not turn this into a lifetime census or certify the whole book. Their current dispositions and missing coverage, plus the disclosed PU retry exception and unknown whole-run usage/cost/cap compliance, are recorded separately. The project-wide census and one-machine usage snapshot remain historical and are not silently enlarged by these closeout rows. Final publication requires renewed exact-revision synchronization, including reviews held privately; the machine gate cannot discover missing private review decisions by itself.
+
+
+## Later evidence, 2026-11-15
+
+The [dated evidence addendum](ledger-updates/2026-11-15-evidence-update/README.md)
+does not change the 35-row snapshot. It distinguishes six recovered runner/CLI
+start clocks, three OpenCode client-clock records and one bounded-day record,
+and links C011's later invalid/recovered-medium result without another call.
+The recovered 118-attempt catalog and four followups are a bounded retained
+corpus; they are not a lifetime/API-request count or a drop-in quality census.
+Unknown models, clocks and grade projections remain unknown rather than being
+filled from requested routes, neighboring starts or generic text matches.

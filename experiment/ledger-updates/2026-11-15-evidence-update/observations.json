@@ -1,0 +1,257 @@
+{
+  "schema": "publication-review-evidence/1",
+  "recorded_date": "2026-11-15",
+  "base_snapshot": {
+    "source_commit": "ed8ca5b1ac3d6d2fd677c3b7f93cea8621908d05",
+    "ledger_path": "experiment/ledger-updates/2026-11-15-cold-closeout/run-ledger-v4.json",
+    "ledger_sha256": "1ea970215e108a17c11749bd5fce83a0c8dbe15a3c03a47f15faac0cf3c050ce",
+    "row_count": 35
+  },
+  "catalog": {
+    "path": "experiment/ledger-updates/2026-11-15-evidence-update/review-attempts.json",
+    "sha256": "abdd5a93eb79c259b961eb22458263f521acde07c20f49c97288f17ca6f54456"
+  },
+  "counts": {
+    "missing_start_observations": 10,
+    "recorded_starts": 6,
+    "client_clocks": 3,
+    "bounded_records": 1
+  },
+  "observations": [
+    {
+      "record_id": "C001",
+      "evidence_kind": "missing_start_recorded_runner_launch",
+      "timestamp_kind": "recorded_runner_launch; not provider API clock",
+      "date_utc": "2026-11-13",
+      "recorded_start_utc": "2026-11-13T20:47:11.227388+00:00",
+      "witnesses": [
+        {
+          "kind": "verified_recorded_runner_launch_metadata",
+          "sha256": "9018ed0becf53b31ddd5cf45629cd0b09964f8f3e9383580d836599ff1398b85"
+        }
+      ],
+      "original_null_start_preserved": true
+    },
+    {
+      "record_id": "C006",
+      "evidence_kind": "missing_start_recorded_runner_launch",
+      "timestamp_kind": "recorded_runner_launch; not provider API clock",
+      "date_utc": "2026-11-14",
+      "recorded_start_utc": "2026-11-14T00:00:37.645321+00:00",
+      "witnesses": [
+        {
+          "kind": "verified_recorded_runner_launch_metadata",
+          "sha256": "c74323fa52686cbf8c5fd2de877c7314d010c0484a1d3f86ab0a89c03eacc32a"
+        }
+      ],
+      "original_null_start_preserved": true
+    },
+    {
+      "record_id": "C007",
+      "evidence_kind": "missing_start_recorded_runner_launch",
+      "timestamp_kind": "recorded_runner_launch; not provider API clock",
+      "date_utc": "2026-11-14",
+      "recorded_start_utc": "2026-11-14T00:22:13.811729+00:00",
+      "witnesses": [
+        {
+          "kind": "verified_recorded_runner_launch_metadata",
+          "sha256": "59a0f3787edb58015996821ecd8dd29d739a5fb651f098b254ad31da3b205afd"
+        }
+      ],
+      "original_null_start_preserved": true
+    },
+    {
+      "record_id": "C009",
+      "evidence_kind": "missing_start_recorded_runner_launch",
+      "timestamp_kind": "recorded_runner_launch; not provider API clock",
+      "date_utc": "2026-11-14",
+      "recorded_start_utc": "2026-11-14T00:32:32.408329+00:00",
+      "witnesses": [
+        {
+          "kind": "verified_recorded_runner_launch_metadata",
+          "sha256": "ef10af824c052d5b940204a58326d8745e72b37a6667db9f728f8be6861472f3"
+        }
+      ],
+      "original_null_start_preserved": true
+    },
+    {
+      "record_id": "C010",
+      "evidence_kind": "missing_start_recorded_runner_launch",
+      "timestamp_kind": "recorded_runner_launch; not provider API clock",
+      "date_utc": "2026-11-14",
+      "recorded_start_utc": "2026-11-14T00:52:24.214003+00:00",
+      "witnesses": [
+        {
+          "kind": "verified_recorded_runner_launch_metadata",
+          "sha256": "4e02b3fb40b7d4422e8fe1ffbad8a8d7c05a57a624df2ad36d07e34ac8692c8e"
+        }
+      ],
+      "original_null_start_preserved": true
+    },
+    {
+      "record_id": "C011",
+      "evidence_kind": "missing_start_recorded_CLI_receipt_and_later_terminal_metadata",
+      "timestamp_kind": "recorded_CLI_reviewer_receipt_clock; not separately observed provider API clock",
+      "date_utc": "2026-11-14",
+      "recorded_start_utc": "2026-11-14T01:19:53.631078+00:00",
+      "cli_receipt_finished_utc": "2026-11-14T02:08:50.981196+00:00",
+      "historical_ledger_status_label": "running (original snapshot only)",
+      "later_native_status_label": "invalid-report",
+      "later_recovered_status_label": "review-complete-recovered",
+      "literal_recovered_reported_result": {
+        "verdict": "PASS_WITH_NOTES",
+        "confidence": "medium",
+        "kind": "reported recovered public-result metadata; not a grade from the invalid native receipt; no new review"
+      },
+      "original_null_and_status_fields_preserved": true,
+      "new_attempt": false,
+      "witnesses": [
+        {
+          "kind": "verified_CLI_receipt_metadata",
+          "sha256": "bc0bc99c8de0f1c1b1b473be153ad3de3de9e14d43e5dae54f4f09bb1cf4e985"
+        }
+      ]
+    },
+    {
+      "record_id": "P1-deepseek",
+      "evidence_kind": "missing_start_client_clock_with_bounded_role_day",
+      "timestamp_kind": "OpenCode_CLIENT_session_creation_and_last_update; not invocation start/completion",
+      "date_utc": "2026-11-12",
+      "client_session_created_utc": "2026-11-12T20:43:49.912000+00:00",
+      "client_session_updated_utc": "2026-11-12T20:50:43.169000+00:00",
+      "invocation_day_bounds": {
+        "start_not_before_utc": "2026-11-12T20:43:48Z",
+        "finish_not_after_utc": "2026-11-12T20:50:43.704244+00:00"
+      },
+      "original_null_start_finish_preserved": true,
+      "witnesses": [
+        {
+          "kind": "historical_selected_ledger",
+          "sha256": "1ea970215e108a17c11749bd5fce83a0c8dbe15a3c03a47f15faac0cf3c050ce"
+        },
+        {
+          "kind": "verified_client_info_metadata",
+          "sha256": "423cefc197b71756a236cd1fe4faa4ae9fb3dac2ff0251d207331eaa4fc475c2"
+        },
+        {
+          "kind": "bounded_day_preparation_metadata",
+          "sha256": "0d17fe928900612e724480833f5005c52dbbe30ccbabe820d80437579638278c"
+        },
+        {
+          "kind": "bounded_day_later_role_receipt_metadata",
+          "sha256": "2c1e5e4af0a8a7dc6a78fd1a72f88360aa0f2606de27b018290344c6a76b8730"
+        }
+      ]
+    },
+    {
+      "record_id": "P1-cold",
+      "evidence_kind": "missing_start_client_clock_with_bounded_role_day",
+      "timestamp_kind": "OpenCode_CLIENT_session_creation_and_last_update; not invocation start/completion",
+      "date_utc": "2026-11-12",
+      "client_session_created_utc": "2026-11-12T21:23:16.679000+00:00",
+      "client_session_updated_utc": "2026-11-12T21:30:23.344000+00:00",
+      "invocation_day_bounds": {
+        "start_not_before_utc": "2026-11-12T20:43:48Z",
+        "finish_not_after_utc": "2026-11-12T21:30:23.843392+00:00"
+      },
+      "original_null_start_finish_preserved": true,
+      "witnesses": [
+        {
+          "kind": "historical_selected_ledger",
+          "sha256": "1ea970215e108a17c11749bd5fce83a0c8dbe15a3c03a47f15faac0cf3c050ce"
+        },
+        {
+          "kind": "verified_client_info_metadata",
+          "sha256": "f3e32d2bf38e18ac0b6a79b12653878e5dd12c42f210372f780152fee2479d4b"
+        },
+        {
+          "kind": "bounded_day_preparation_metadata",
+          "sha256": "0d17fe928900612e724480833f5005c52dbbe30ccbabe820d80437579638278c"
+        },
+        {
+          "kind": "bounded_day_later_role_receipt_metadata",
+          "sha256": "5956493a77c50d64445e31d01772740dba4414463b7742ceaac5ad55aa69ad85"
+        }
+      ]
+    },
+    {
+      "record_id": "P2-cold",
+      "evidence_kind": "missing_start_client_clock_with_bounded_role_day",
+      "timestamp_kind": "OpenCode_CLIENT_session_creation_and_last_update; not invocation start/completion",
+      "date_utc": "2026-11-13",
+      "client_session_created_utc": "2026-11-13T06:30:31.125000+00:00",
+      "client_session_updated_utc": "2026-11-13T06:45:35.581000+00:00",
+      "invocation_day_bounds": {
+        "start_not_before_utc": "2026-11-13T05:29:59Z",
+        "finish_not_after_utc": "2026-11-13T06:45:35.874074+00:00"
+      },
+      "original_null_start_finish_preserved": true,
+      "witnesses": [
+        {
+          "kind": "historical_selected_ledger",
+          "sha256": "1ea970215e108a17c11749bd5fce83a0c8dbe15a3c03a47f15faac0cf3c050ce"
+        },
+        {
+          "kind": "verified_client_info_metadata",
+          "sha256": "343466e7ce52988b5e460902c3215837762c22975b9329ffad90a22c8bd22c3e"
+        },
+        {
+          "kind": "bounded_day_preparation_metadata",
+          "sha256": "2339401037d7e7a5b998350817be1610fdefce97dd73ac5723abadcf6408e419"
+        },
+        {
+          "kind": "bounded_day_later_role_receipt_metadata",
+          "sha256": "f95e5e56ecde0bf11158ba3914158da6a3303a95e3e9b5f63db44c12c1d322d4"
+        }
+      ]
+    },
+    {
+      "record_id": "P2-deepseek",
+      "evidence_kind": "missing_start_bounded_role_day_only",
+      "timestamp_kind": "bounded_UTC_day_from_explicit_preparation_and_next_role_metadata; no duration subtraction",
+      "date_utc": "2026-11-13",
+      "actual_model": null,
+      "actual_family": null,
+      "invocation_day_bounds": {
+        "start_not_before_utc": "2026-11-13T05:29:59Z",
+        "finish_not_after_utc": "2026-11-13T05:39:03.357231+00:00"
+      },
+      "original_null_start_finish_preserved": true,
+      "witnesses": [
+        {
+          "kind": "bounded_day_preparation_metadata",
+          "sha256": "2339401037d7e7a5b998350817be1610fdefce97dd73ac5723abadcf6408e419"
+        },
+        {
+          "kind": "bounded_day_later_role_receipt_metadata",
+          "sha256": "b306e74e08bc94859870805a8fc04fa4365e4d99344dbef2426f5cb2dc93b263"
+        }
+      ]
+    }
+  ],
+  "policy_decision": {
+    "date": "2026-11-15",
+    "kind": "author_policy_decision",
+    "option": "A",
+    "source_commit": "eeaa40e2e7b7e1a4661c3fefca94335fd5840cdb",
+    "grades_unchanged": true,
+    "new_whole_book_acceptance": false,
+    "new_independent_vote": false,
+    "new_review_call": false,
+    "is_public_release_execution": false,
+    "is_final_accept_file": false,
+    "summary": "The author chose the honest-standing release route with grades and scoped evidence stated plainly. This is an author policy decision; it does not execute public release, upgrade a grade, close a missing scientific assessment or replace later publishing gates.",
+    "witnesses": [
+      {
+        "kind": "retained_author_policy_record",
+        "sha256": "ade66bb07e7c4a72c3ae7a7e7e578ac4b362ce9921a68e9e83c6dc592b3567be"
+      }
+    ]
+  },
+  "limits": [
+    "Original35 ledger rows/files remain unchanged; observations are additive evidence about existing records, not new calls.",
+    "No quality/completion/acceptance projection or new token/cost sum is supplied. C011 literal later receipt result is metadata, not a grade upgrade.",
+    "118is a retained-corpus attempt-lineage inventory, not API requests, native streams or a verified lifetime total. Four followups remain separate.",
+    "Some dates are client/session or panel-dispatch dates and some are bounded days; precise provider invocation timestamps are not invented. Actual model/family remain null where not verified."
+  ]
+}

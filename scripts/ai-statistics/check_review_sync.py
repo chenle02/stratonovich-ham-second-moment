@@ -47,10 +47,13 @@ RAW_FINGERPRINTS = {
 ACCEPTED = {"C012": False, "C013": False, "C014": True,
             "C015": False, "C016": True, "C017": False}
 BOOKS = ("notes/notes_stratonovich_ham_second_moment",
-         "notes/notes_stratonovich_ham_second_moment_reader")
+         "notes/notes_stratonovich_ham_second_moment_reader",
+         "notes/combined")
 LANGUAGE_FILES = ("AI-USE-STATEMENT.md", "notes/ai-statistics.tex")
 CHECKER = "scripts/ai-statistics/check_review_sync.py"
 GENERATOR = "scripts/ai-statistics/make_appendix.py"
+SELECTION = "scripts/ai-statistics/selection.json"
+REQUIRED_REVIEW_SELECTIONS = ("review_evidence", "review_inventory")
 
 
 class SyncError(Exception):
@@ -132,8 +135,41 @@ def source_closure(root):
             queue.append(child)
     for book in BOOKS:
         required.add(book + ".pdf")
-        if (root / (book + ".bbl")).is_file():
-            required.add(book + ".bbl")
+        required.add(book + ".bbl")
+    return required
+
+
+def selected_artifacts(root):
+    """Bind explicit inputs, not provider activity or lifetime completeness.
+
+    Selection paths are relative to scripts/ai-statistics, unlike the manifest's
+    repository-relative paths. A parent component is permitted only if the
+    canonical target remains inside the release tree.
+    """
+    selection_path = checked_path(root, SELECTION)
+    selection = read_json(selection_path)
+    if not isinstance(selection, dict):
+        raise SyncError("Appendix E selection must be a JSON object")
+    if any(not isinstance(selection.get(key), dict) for key in REQUIRED_REVIEW_SELECTIONS):
+        raise SyncError("Selection must name review_evidence and review_inventory")
+    required = {SELECTION}
+    for key, entry in selection.items():
+        if not isinstance(entry, dict):
+            continue  # e.g. the explanatory note; not a selected input
+        name, expected_hash = entry.get("path"), entry.get("sha256")
+        if (not isinstance(name, str) or not name or "\\" in name or
+                PurePosixPath(name).is_absolute()):
+            raise SyncError(f"Invalid selected path for {key}")
+        target = (selection_path.parent / name).resolve()
+        if not target.is_relative_to(root):
+            raise SyncError(f"Selected input escapes the release tree: {key}")
+        relative = target.relative_to(root).as_posix()
+        path = checked_path(root, relative)
+        if not isinstance(expected_hash, str) or not re.fullmatch(r"[0-9a-f]{64}", expected_hash):
+            raise SyncError(f"Invalid selected SHA256 for {key}")
+        if digest(path.read_bytes()) != expected_hash:
+            raise SyncError(f"Selected input differs from selection.json: {key}")
+        required.add(relative)
     return required
 
 
@@ -247,6 +283,7 @@ def validate(root: Path, ledger_name=LEDGER, manifest_name=MANIFEST,
     summaries = [summary_path(root, ledger_name, row) for row in rows]
     required.update(summaries)
     required.update(source_closure(root))
+    required.update(selected_artifacts(root))
     artifacts = manifest.get("artifacts_sha256")
     if not isinstance(artifacts, dict) or not required.issubset(artifacts):
         raise SyncError("Required source/PDF/summary/ledger/decision/generator hashes absent: " +

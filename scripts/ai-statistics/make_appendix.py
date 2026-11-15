@@ -437,6 +437,171 @@ def closeout(out, ledger_rel):
                        dt.datetime.fromisoformat(led["snapshot_utc"]).strftime("%B~%-d, %Y")))
     out.extend(lines)
 
+
+def validate_review_evidence(updates, inventory, ledger, later):
+    """Check an additive chronology; never infer grades or merge usage."""
+    def need(condition, message):
+        if not condition:
+            raise ValueError(message)
+
+    need(updates.get("schema") == "publication-review-evidence/1",
+         "unsupported review evidence schema")
+    need(inventory.get("schema") == "publication-review-attempt-inventory/1",
+         "unsupported attempt inventory schema")
+    need(inventory["base_snapshot"] == updates["base_snapshot"]
+         and updates["base_snapshot"]["row_count"] == len(ledger["rows"]),
+         "addendum base snapshots disagree")
+    attempts = inventory["attempts"]
+    followups = inventory["followups"]
+    counts = inventory["counts"]
+    ids = [row["id"] for row in attempts]
+    need(len(set(ids)) == len(ids), "duplicate recovered attempt identifiers")
+    need(len(attempts) == counts["attempts"] == later["total"],
+         "recovered attempt totals disagree")
+    days = collections.Counter(row["date_utc"] for row in attempts)
+    need(dict(days) == later["per_day"], "recovered UTC-day totals disagree")
+    for day in days:
+        dt.date.fromisoformat(day)
+    base_ids = {r["id"] for r in ledger["rows"]
+                if r["record_kind"] == "provider_attempt"}
+    linked = [r["base_record_id"] for r in attempts if r["base_record_id"]]
+    need(len(linked) == len(set(linked)) and set(linked) == base_ids,
+         "recovered inventory does not link each original attempt exactly once")
+    need(len(linked) == counts["base_attempts"] == later["in_closeout_ledger"],
+         "base-attempt counts disagree")
+    need(len(attempts) - len(linked) == counts["extra_attempts"] ==
+         later["not_in_closeout_ledger"], "additional-attempt counts disagree")
+    need(len(followups) == counts["followups"], "follow-up counts disagree")
+    need(len({r["id"] for r in followups}) == len(followups)
+         and not (set(ids) & {r["id"] for r in followups}),
+         "follow-ups are duplicated or counted as fresh attempts")
+    # This catalog deliberately has no completion or scientific-grade projection.
+    for row in attempts:
+        need(not ({"verdict", "confidence", "accepted", "accepted_effective"} &
+                  set(row)), "quality projection entered the timeline inventory")
+    observations = updates["observations"]
+    missing = {r["id"] for r in ledger["rows"]
+               if r["record_kind"] == "provider_attempt"
+               and r["started_utc"] is None}
+    need({r["record_id"] for r in observations} == missing
+         and len(observations) == len(missing),
+         "missing-start observations do not match the frozen ledger")
+    starts = [r for r in observations if r.get("recorded_start_utc")]
+    clients = [r for r in observations if r.get("client_session_created_utc")]
+    bounded = [r for r in observations if r not in starts and r not in clients]
+    need(not ({r["record_id"] for r in starts} &
+              {r["record_id"] for r in clients}),
+         "client clock was promoted to a recorded invocation start")
+    observed_counts = updates["counts"]
+    need(len(observations) == observed_counts["missing_start_observations"]
+         and len(starts) == observed_counts["recorded_starts"]
+         and len(clients) == observed_counts["client_clocks"]
+         and len(bounded) == observed_counts["bounded_records"],
+         "clock-evidence counts disagree")
+    need({r["record_id"] for r in starts} ==
+         {"C001", "C006", "C007", "C009", "C010", "C011"},
+         "recorded-start evidence set changed")
+
+    def utc(value):
+        parsed = dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
+        need(parsed.tzinfo is not None, "clock lacks a timezone")
+        return parsed.astimezone(dt.timezone.utc)
+
+    for row in starts:
+        need(utc(row["recorded_start_utc"]).date().isoformat() == row["date_utc"],
+             "recorded start and UTC day disagree")
+    for row in clients:
+        need(not row.get("recorded_start_utc"),
+             "client-session creation is not a runner/API start")
+        utc(row["client_session_created_utc"])
+        if row.get("client_session_updated_utc"):
+            utc(row["client_session_updated_utc"])
+    need(len(bounded) == 1 and bounded[0]["record_id"] == "P2-deepseek",
+         "bounded panel evidence set changed")
+    p2 = next(row for row in attempts
+              if row["base_record_id"] == "P2-deepseek")
+    need(p2["actual_model"] is None and p2["actual_family"] is None,
+         "requested P2 route was promoted to actual attribution")
+    for row in clients + bounded:
+        window = row["invocation_day_bounds"]
+        lower = utc(window["start_not_before_utc"])
+        upper = utc(window["finish_not_after_utc"])
+        need(lower <= upper and lower.date().isoformat() == row["date_utc"]
+             == upper.date().isoformat(), "panel invocation day is not bounded")
+    point_keys = ("started_utc", "finished_utc", "recorded_start_utc",
+                  "invocation_started_utc", "invocation_finished_utc",
+                  "client_session_created_utc", "client_session_updated_utc")
+    need(not any(p2["time_evidence"].get(k) for k in point_keys),
+         "bounded P2 evidence gained an invented point clock")
+    c11 = next(row for row in observations if row["record_id"] == "C011")
+    need(c11["later_native_status_label"] == "invalid-report"
+         and c11["later_recovered_status_label"] == "review-complete-recovered"
+         and c11["literal_recovered_reported_result"]["verdict"] == "PASS_WITH_NOTES"
+         and c11["literal_recovered_reported_result"]["confidence"] == "medium"
+         and c11["new_attempt"] is False,
+         "C011 terminal/recovered evidence was changed or counted as a new review")
+    decision = updates["policy_decision"]
+    expected = {"grades_unchanged": True, "new_whole_book_acceptance": False,
+                "new_independent_vote": False, "new_review_call": False,
+                "is_public_release_execution": False, "is_final_accept_file": False}
+    need(decision["option"] == "A" and decision["date"] == "2026-11-15",
+         "author policy event changed")
+    for key, value in expected.items():
+        need(decision.get(key) is value,
+             "policy event must not change grades, calls or acceptance")
+    return starts, clients, bounded
+
+
+def review_evidence(out, ledger_rel):
+    """Generate only chronology and decision macros from hash-selected evidence."""
+    import hashlib
+    updates_path = selected("review_evidence")
+    inventory_path = selected("review_inventory")
+    updates = json.load(open(updates_path))
+    inventory = json.load(open(inventory_path))
+    ledger_path = os.path.join(ROOT, ledger_rel)
+    base = updates["base_snapshot"]
+    if (base["ledger_path"] != ledger_rel or
+            hashlib.sha256(open(ledger_path, "rb").read()).hexdigest()
+            != base["ledger_sha256"]):
+        raise SystemExit("review evidence is not bound to the selected frozen ledger")
+    catalog = updates["catalog"]
+    if (os.path.abspath(os.path.join(ROOT, catalog["path"])) !=
+            os.path.abspath(inventory_path) or
+            hashlib.sha256(open(inventory_path, "rb").read()).hexdigest()
+            != catalog["sha256"]):
+        raise SystemExit("review inventory differs from the evidence addendum")
+    ledger = json.load(open(ledger_path))
+    later = json.load(open(selected("later_attempts")))
+    try:
+        starts, clients, bounded = validate_review_evidence(
+            updates, inventory, ledger, later)
+    except (KeyError, TypeError, ValueError) as error:
+        raise SystemExit(f"invalid additive review evidence: {error}")
+    counts = inventory["counts"]
+    for name, key in [("aiEvidenceAttempts", "attempts"),
+                      ("aiEvidenceBaseAttempts", "base_attempts"),
+                      ("aiEvidenceExtraAttempts", "extra_attempts"),
+                      ("aiEvidenceFollowups", "followups")]:
+        out.append(macro(name, fmt_int(counts[key])))
+    out.append(macro("aiEvidenceRecordedStarts", str(len(starts))))
+    out.append(macro("aiEvidenceClientClocks", str(len(clients))))
+    start_rows = []
+    for row in sorted(starts, key=lambda r: r["record_id"]):
+        stamp = dt.datetime.fromisoformat(row["recorded_start_utc"].replace("Z", "+00:00"))
+        stamp = stamp.astimezone(dt.timezone.utc).strftime("%Y-%m-%d %H:%M:%S.%f")
+        kind = "CLI receipt start" if row["record_id"] == "C011" else "Runner launch"
+        start_rows.append(f'{tex_tt(row["record_id"])} & {tex_tt(stamp)} & {kind} '
+                          + r"\\" + "\n")
+    out.append("\\newcommand{\\aiEvidenceStartRows}{%\n" + "".join(start_rows) + "}\n")
+    out.append(macro("aiEvidenceDecisionDate",
+                     dt.date.fromisoformat(updates["policy_decision"]["date"])
+                     .strftime("%B~%-d, %Y")))
+    out.append(macro("aiEvidenceInventoryPath",
+                     tex_path(os.path.relpath(inventory_path, ROOT))))
+    out.append(macro("aiEvidenceUpdatesPath",
+                     tex_path(os.path.relpath(updates_path, ROOT))))
+
 def main():
     import argparse
     ap = argparse.ArgumentParser(description="Generate notes/ai-statistics-data.tex")
@@ -689,6 +854,7 @@ def main():
     out.append(macro("aiMilestones", str(len(milestones))))
 
     closeout(out, args.ledger)
+    review_evidence(out, args.ledger)
 
     root = os.path.abspath(os.path.join(HERE, "..", ".."))
     output = os.path.join(root, "notes", "ai-statistics-data.tex")

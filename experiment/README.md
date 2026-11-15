@@ -14,6 +14,18 @@ Each row has an explicit outcome: `accepted-at-scope`, `not-accepted`, `invalid`
 
 The files in [reports/](reports/) are **author-written process summaries**. The separate [report supplement](report-supplement-v1/README.md) retains four unchanged provider final responses and one derived B002 recovery. Its [dated availability map](report-supplement-v1/AVAILABILITY-2026-11-14.json) identifies the files, hashes, scopes and recorded approval. A provider final response is distinct from private model reasoning; retaining it at an exportable path does not mean the repository has been released publicly. Complete native evidence and unsuccessful attempts remain preserved privately. Private reasoning, credentials and runtime details, third-party source texts and images, held source criticisms and private correspondence remain under their disclosure rules.
 
+## Dated evidence without rewriting the snapshot
+
+The [November 15 evidence update](ledger-updates/2026-11-15-evidence-update/README.md)
+links later clock and terminal evidence to the original record IDs. It preserves
+all 35 snapshot rows, including their historical nulls and then-running fields.
+Its separate, sanitized catalog contains 118 retained review attempts (25 already
+represented in the snapshot and 93 additional records) and four same-session
+followups. It is timeline evidence, not a new completion, grade or acceptance
+table, and contributes no additional token or cost sum. The dated author-policy
+decision selects an honest-standing release with unchanged grades; it neither
+executes a public release nor supplies missing scientific acceptance.
+
 ## Telemetry for later analysis
 
 Only verified **actual model identifiers and families** are reported; unknown actual identities are `null`, without requested-model fallback. Stable record IDs may retain an old purpose-role label; only `actual_model` and `actual_family` identify the model. Token objects and per-request lists retain their reported field names and formats. Missing values are `null`; no token totals, costs, model identities or estimates are fabricated. Numeric reasoning-token counts are telemetry, not reasoning content.

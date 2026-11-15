@@ -38,6 +38,22 @@ class ReviewSyncGateTests(unittest.TestCase):
             self.write(name + ".tex", "\\input{notes/shared-input}\n")
             self.write(name + ".pdf", b"%PDF-1.7 fixture artifact\n")
             self.write(name + ".bbl", "Bibliography fixture\n")
+        self.selected_evidence = "experiment/ledger-updates/2026-11-15-evidence-update/observations.json"
+        self.selected_inventory = "experiment/ledger-updates/2026-11-15-evidence-update/review-attempts.json"
+        self.selected_tokens = "scripts/ai-statistics/tokens/fixture.json"
+        self.write(self.selected_evidence, '{"observations": []}\n')
+        self.write(self.selected_inventory, '{"attempts": []}\n')
+        self.write(self.selected_tokens, '{"snapshot": "fixture"}\n')
+        self.selection = {
+            "note": "Selected fixture inputs; no provider/lifetime claim.",
+            "review_evidence": {"path": "../../" + self.selected_evidence,
+                                "sha256": gate.digest((self.root / self.selected_evidence).read_bytes())},
+            "review_inventory": {"path": "../../" + self.selected_inventory,
+                                 "sha256": gate.digest((self.root / self.selected_inventory).read_bytes())},
+            "tokens": {"path": "tokens/fixture.json",
+                       "sha256": gate.digest((self.root / self.selected_tokens).read_bytes())},
+        }
+        self.write(gate.SELECTION, json.dumps(self.selection))
         self.decision_name = "experiment/ledger-updates/2026-11-15-cold-closeout/PU-DISPOSITION.json"
         self.write(self.decision_name, (REPO / self.decision_name).read_bytes())
         for row in current["rows"]:
@@ -116,6 +132,63 @@ class ReviewSyncGateTests(unittest.TestCase):
     def test_pdf_source_pair_is_hash_bound(self):
         self.write(gate.BOOKS[0] + ".pdf", b"Changed PDF after sealing")
         with self.assertRaisesRegex(gate.SyncError, "Artifact changed"):
+            self.check()
+
+    def test_missing_combined_pdf_cannot_be_omitted_from_the_seal(self):
+        (self.root / "notes/combined.pdf").unlink()
+        self.seal()
+        with self.assertRaisesRegex(gate.SyncError, "hashes absent.*notes/combined.pdf"):
+            self.check()
+
+    def test_combined_pdf_and_bibliography_remain_hash_bound(self):
+        for name in ("notes/combined.pdf", "notes/combined.bbl"):
+            with self.subTest(name=name):
+                original = (self.root / name).read_bytes()
+                self.write(name, b"Changed after sealing")
+                with self.assertRaisesRegex(gate.SyncError, "Artifact changed.*" + name):
+                    self.check()
+                self.write(name, original)
+
+    def test_missing_selection_or_review_selection_is_fatal(self):
+        original = (self.root / gate.SELECTION).read_bytes()
+        (self.root / gate.SELECTION).unlink()
+        self.seal()
+        with self.assertRaisesRegex(gate.SyncError, "Required file missing.*selection.json"):
+            self.check()
+        self.write(gate.SELECTION, original)
+        del self.selection["review_inventory"]
+        self.write(gate.SELECTION, json.dumps(self.selection))
+        self.seal()
+        with self.assertRaisesRegex(gate.SyncError, "review_evidence and review_inventory"):
+            self.check()
+
+    def test_selected_input_missing_or_changed_is_fatal_even_when_resealed(self):
+        original = (self.root / self.selected_evidence).read_bytes()
+        (self.root / self.selected_evidence).unlink()
+        self.seal()
+        with self.assertRaisesRegex(gate.SyncError, "Required file missing.*observations.json"):
+            self.check()
+        self.write(self.selected_evidence, original + b" ")
+        self.seal()
+        with self.assertRaisesRegex(gate.SyncError, "differs from selection.json.*review_evidence"):
+            self.check()
+
+    def test_every_selection_and_selection_file_requires_manifest_hash(self):
+        for name in (gate.SELECTION, self.selected_inventory, self.selected_tokens):
+            with self.subTest(name=name):
+                saved = self.manifest["artifacts_sha256"].pop(name)
+                self.write(gate.MANIFEST, json.dumps(self.manifest))
+                with self.assertRaisesRegex(gate.SyncError, "hashes absent"):
+                    self.check()
+                self.manifest["artifacts_sha256"][name] = saved
+        self.write(gate.MANIFEST, json.dumps(self.manifest))
+
+    def test_selected_parent_paths_are_allowed_only_inside_the_repo(self):
+        self.assertEqual(self.check()["status"], "PASS")  # ../../experiment works
+        self.selection["review_evidence"]["path"] = "../../../outside.json"
+        self.write(gate.SELECTION, json.dumps(self.selection))
+        self.seal()
+        with self.assertRaisesRegex(gate.SyncError, "Selected input escapes"):
             self.check()
 
     def test_omitted_input_source_cannot_hide_in_sparse_manifest(self):

@@ -14,7 +14,7 @@ show. Every number is produced by a short script from files kept in the
 repository, and the scripts are kept with it, so a reader can rebuild each
 figure and each table. The record covers \aiDays{} days, from \aiFirstDay{}
 to \aiLastDay{} (dates in UTC), with \aiCommits{} recorded changes (commits).
-The census of review runs ends on \aiReviewLastDay{}. For \aiLaterFirstDay{}
+The retained reviews-folder census ends on \aiReviewLastDay{}. For \aiLaterFirstDay{}
 to \aiLaterLastDay{} the figure also shows a separate count of recovered
 review attempts, and the last section lists the reviews of the publication
 closeout.
@@ -221,6 +221,17 @@ replace that missing assessment.
 Author-side source comparisons and delivery checks are not additional
 independent scientific votes.
 
+The \aiCloseoutRecords{}-record ledger remains a dated snapshot. A separate
+evidence addendum links later observations to its original identifiers,
+including its missing launch clocks and C011's terminal report. The recovered
+inventory contains \aiEvidenceAttempts{} documented review attempts:
+\aiEvidenceBaseAttempts{} already represented in this ledger and
+\aiEvidenceExtraAttempts{} additional records, with \aiEvidenceFollowups{}
+same-session follow-ups listed separately. It is a timeline inventory, not a
+new completion, pass-rate or acceptance table; it does not add tokens or costs
+to the snapshots above. Its public metadata are in
+\aiEvidenceInventoryPath.
+
 \begin{center}
 \small
 \setlength{\tabcolsep}{5pt}
@@ -268,3 +279,48 @@ whether the whole run stayed within its approved token limit.
 
 Known reported cost components of the closeout records (not actual
 all-activity cost): \aiCloseoutCost.
+
+
+\subsection*{Later evidence and the author's decision}
+
+Missing cells in the original ledger mean that a value was not verified in
+that snapshot, not that no record could ever be recovered. Original launch
+records or CLI receipts now supply \aiEvidenceRecordedStarts{} of its
+previously missing start clocks:
+
+\begin{center}
+\small
+\begin{tabular}{@{}lll@{}}
+  \toprule
+  Record & Recorded clock (UTC) & Kind \\
+  \midrule
+  \aiEvidenceStartRows
+  \bottomrule
+\end{tabular}
+\end{center}
+
+These are client-runner or CLI receipt clocks, not independently measured
+provider API boundaries. They were read from retained records, not calculated
+by subtracting a duration from a later clock. The original ledger's nulls
+remain unchanged.
+
+For \aiEvidenceClientClocks{} other panel records, the retained clocks record
+an OpenCode client session's creation and last update. These do not establish
+the review invocation's exact start or finish. For the remaining panel
+record, only its UTC day is bounded by the recorded panel creation and the
+next role's receipt under the documented sequential workflow. Its exact
+start, finish and actual model remain unknown. The evidence addendum keeps
+recorded clocks, client clocks, decoded clocks and bounds distinct.
+
+C011 was still running at the original snapshot. Its later receipt records
+an invalid report; a punctuation-only recovery returned pass with notes at
+medium confidence. The review is terminal and remains unaccepted under the
+high-confidence standard. This is later evidence about the same invocation,
+not another review or an upgraded grade.
+
+On \aiEvidenceDecisionDate{}, the author chose the policy of an
+\emph{honest-standing release with the grades stated plainly}. This decision
+changes no grade, supplies no missing review and does not turn scoped
+evidence into whole-book scientific acceptance. It selects how the record is
+disclosed; it is not a public-release act or the final release accept file.
+The dated observation and decision metadata are in \aiEvidenceUpdatesPath.

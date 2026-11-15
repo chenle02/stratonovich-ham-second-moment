@@ -12,9 +12,9 @@
   "not_in_closeout_ledger": 93,
   "limits": [
     "An attempt is one documented dispatch of a review task. Blocked attempts and attempts that returned an invalid report are included; this is not a count of completed reviews.",
-    "The day of an attempt comes from a session record, a decoded session record or a dated panel dispatch, not from a measured start time of the model call.",
+    "UTC days use recorded launch or CLI receipt clocks, client-session or decoded client clocks, and bounded panel-dispatch evidence; not every day comes from a measured invocation start.",
     "The reviewer model actually used is not verified for every attempt, so the attempts are not split by family.",
-    "The records kept are a bounded corpus: automatic retries and follow-ups may have left no record. The total is not to be added to the census of review runs and is not a lifetime count.",
+    "The collections are shown separately. Together they still do not establish a complete project-wide inventory or the number of provider requests; activity with no retained record is missing.",
     "No grade, verdict or acceptance is taken from these attempts."
   ],
   "audit": {
