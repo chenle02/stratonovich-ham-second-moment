@@ -20908,3 +20908,9 @@ than dropChapter8solelytoavoidremap; preserveLe's eventualadoptionchoice.
 Retain the checkedradius-table scope note and prepare onlya row5ragged-right
 label alignment if no newerLechoice. These are preparation decisions, not
 adoption/pushapproval; no publicsourceor mathclaim changed by5.
+
+### 2026-11-15: Reusable exact-byte review/source bridge prepared (not final F)
+
+Read-only immutable source comparison b35536c1→308b916e6e0bee4c828723c83f04c15a2aa9fe60 verifies51/51 scientific packet payload records (49unique hashes), all4 external archive/PDFGitblobs and the literal CPpage text unchanged. Current LF locations are recomputed by exact byte search, never assumed from old line numbers. The full book/reader include graph grows108→116files with0missing;253proofs,268core theorem-like declarations and19definition/remark/goal environments have EXACTbytes unchanged,0changed/added/removed. Whole-source inventory has91unchanged,17changed and8new files; prose/guide/figure changes outside formal environments are explicitly not certified by this byte identity.
+
+Script, full inventories/hashes and scoped report: `private/publication-closeout/review-source-bridge-20261115/bridge.py`, BRIDGE.json, README.md and SHA256SUMS. It reuses the old blind input/environment patterns, performs no build/model call/Git mutation, and does not upgrade any mathematical grade, source-image gate, PUprotocol acceptance or finalF. Root fixed a separate-output-directory bug (script snapshot missing before checksum generation), verified a genuinely separate output with matching hashes, then regenerated the base report against the same immutable308bpin. OUTPUT-DIRECTORY-CHECK.json records that meaningful implementation check. The script does not fetch or attest remote parity; later editorial adoption/sourceR requires a new immutable bridge and separate build/filter/package verification.
