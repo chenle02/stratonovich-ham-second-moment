@@ -20640,3 +20640,8 @@ files retains9exactmanuscript/PDFtargets byte-identically,2PDFs/no deletion sets
 Evidence `private/audit/2026-11-15-iceberg-memory-combined-held/`; no scientific
 or wholehistory/export acceptance inferred. Per16's21893cfb77bd, MUSTawait16
 verification AND Le's OWNapproval of combinedSHA beforepush. No push/adoption.
+
+Metadata follow-up before review: actual figure-destination census is27to29,
+not the stale README-derived26to28. Corrected candidate metadata only; six
+approved sources and both PDF hashes remain unchanged from the one paired
+build. Integration commit500002ea remains reachable; no rebuild or stackedPDFs.

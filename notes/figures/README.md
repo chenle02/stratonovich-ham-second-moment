@@ -93,7 +93,7 @@ Both report figures and the reader proof map were inspected after integration.
 One combined-source build includes the exact approved icebergc81b81cd and
 placed-memory2bf48696 sources. MemoryFigure3.2 is on printed64 inside3.2;
 icebergFigure12.1 is on printed250 inside12.1. Candidate396book/28reader,
-28book figures; earlier Figure7.2/guitar-wrap sources unchanged. All99reader
+29numberedbook figures; earlier Figure7.2/guitar-wrap sources unchanged. All99reader
 technical labels and271external named links checked. Bounded source/PDFpins:
 `VALIDATION-iceberg-memory-combined-held.json`; detailed current-origin impact,
 final page images, source-equality and real-filter checks:
