@@ -111,6 +111,10 @@ Uniformity, fractional norms and all applications to $F$ are proved below.
   Proposition~\ref{P:compact-ground-family}.
 \end{proof}
 
+The rate gap~\eqref{E:compact-rate-gap} is a statement about the spectrum of
+$H_\sigma$. The wave on $E$ is measured in the fixed norm of $E$, so we first
+compare the two.
+
 \begin{lemma}[Uniform fractional phase norms]\label{L:compact-fractional-phase}
   Let $B = 1-\Delta$, $c = 1+M$ and $A_\sigma = H_\sigma+c$. The quarter-power
   domain is $H^{1/2}$ and
@@ -251,6 +255,9 @@ Uniformity, fractional norms and all applications to $F$ are proved below.
 
 For the constant coordinates write $C(t)(c_1,c_2) = (c_1+tc_2,c_2)$ and
 $D_\sigma(c_1,c_2) = (0,V_\sigma c_1) \in E$.
+The data $e_0 = (0,1,0)$ lie entirely in these constant coordinates, outside
+$iE$. So we follow the flow on all of $F$, where $D_\sigma$ couples the
+constants to $E$.
 
 \begin{proposition}[The growing projection on the wave phase space]
   \label{P:compact-F-projection}
@@ -334,6 +341,11 @@ $D_\sigma(c_1,c_2) = (0,V_\sigma c_1) \in E$.
   Proposition~\ref{P:compact-F-projection}.
 \end{proof}
 
+Proposition~\ref{P:compact-F-projection} isolates the growing part
+$\Pi_\sigma$. It remains to bound the flow on the complement $Q_\sigma$. The
+proof of Lemma~\ref{L:raw-block-indexed-cone} uses the normalized form of this
+bound.
+
 \begin{proposition}[Complementary wave evolution and parameter dependence]
   \label{P:compact-F-complement}
   Uniformly over $\sigma$ and $t \ge 0$,
@@ -394,6 +406,10 @@ $D_\sigma(c_1,c_2) = (0,V_\sigma c_1) \in E$.
 \end{proof}
 
 \subsection{The original nonnegative control and a common trial}
+
+So far $V_\sigma$ was any continuous family
+satisfying~\eqref{E:compact-common-trial}. We now produce such a family from a
+nonnegative test $\Psi$ and the original covariance $\Gamma$, in two steps.
 
 \begin{lemma}[The original mean and variance]\label{L:compact-raw-profile}
   Let $\Gamma \ne 0$ satisfy Hypothesis~\ref{H:homog}, let $a = \alpha_0$, and
@@ -456,6 +472,10 @@ $D_\sigma(c_1,c_2) = (0,V_\sigma c_1) \in E$.
   the claimed compact family and its fixed-$R$ Lipschitz bounds. This proves
   Lemma~\ref{L:compact-raw-profile}.
 \end{proof}
+
+Lemma~\ref{L:compact-raw-profile} gives a smooth compact family for every
+fixed mask, but not yet the common negative
+trial~\eqref{E:compact-common-trial}.
 
 \begin{proposition}[Binding with the original control and cost fixed]
   \label{P:compact-original-common-trial}

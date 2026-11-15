@@ -255,6 +255,10 @@ than invoke a nonlinear bounded-vector-field theorem.
   Proposition~\ref{P:constant-young-linear}.
 \end{proof}
 
+Proposition~\ref{P:constant-young-linear} concerns one deterministic operator
+path. We now apply it to the random paths $A$ and $A^\rho$
+of~\eqref{E:constant-phase-driver} and pass to the physical flow on $F$.
+
 \begin{proposition}[Gaussian Young and physical flows]
   \label{P:constant-gaussian-flow}
   Apply Proposition~\ref{P:constant-young-linear} to $A,A^\rho$. The resulting
@@ -377,6 +381,10 @@ than invoke a nonlinear bounded-vector-field theorem.
 
 \subsection{Ordinary source solutions and the original tested observable}
 
+So far $P_{A^\rho}$ is defined through Young integrals, not through the source
+equation of Proposition~\ref{P:masked-source-moments}. We now connect the two
+at a fixed source width $\rho$.
+
 \begin{lemma}[Identification with the ordinary source equation]
   \label{L:constant-source-solution}
   For fixed $\rho$, the displacement distribution of $P_{A^\rho}(t,0)e_0$ is the
@@ -434,6 +442,10 @@ than invoke a nonlinear bounded-vector-field theorem.
   in distributions. Their displacement limits agree. This proves
   Lemma~\ref{L:constant-source-solution}.
 \end{proof}
+
+Lemma~\ref{L:constant-source-solution} holds at each fixed $\rho$. To reach
+the original noise we test against a fixed $\phi$ and use the source
+limit~\eqref{E:constant-flow-limit}.
 
 \begin{proposition}[Original average and original point moment]
   \label{P:constant-raw-average}
@@ -518,6 +530,9 @@ than invoke a nonlinear bounded-vector-field theorem.
   are at fixed mask and horizon, before time asymptotics. This proves
   Proposition~\ref{P:constant-raw-average}.
 \end{proof}
+
+So far the operator path comes from the noise alone.
+Section~\ref{S:compact-mean-family} also needs a deterministic potential.
 
 \begin{proposition}[Compact deterministic base]\label{P:constant-compact-base}
   Let $h \in C([0,T];C_c^\infty(K))$ be real for one fixed compact $K$, with all

@@ -22,6 +22,10 @@ $R$.
 
 \subsection{Fractional products and the compact spatial map}
 
+The four-linear estimate~\eqref{E:spatial-four-linear} needs $H^1$ factors.
+The first component of a state in $E$ lies only in $H^{1/2}$, so we first
+extend that estimate to fractional Sobolev factors.
+
 \begin{lemma}[Fractional covariance products]
   \label{L:cameron-fractional-products}
   For $\alpha/4 < s < 1/2$, products of real $H^s$ functions define elements of
@@ -73,6 +77,9 @@ $R$.
   each off compactly in $H^1$ and hence in $H^s$. This also proves uniqueness of
   the bilinear extension. This proves Lemma~\ref{L:cameron-fractional-products}.
 \end{proof}
+
+With these products in $H_{\mathrm{sp}}$, we can extend the spatial mean map
+from smooth tests to all of $H_{\mathrm{sp}}$.
 
 \begin{proposition}[Compact spatial mean map]\label{P:cameron-spatial-map}
   The smooth-test map
@@ -136,6 +143,10 @@ $R$.
 
 \subsection{The supported tensor and temporal mean}
 
+Proposition~\ref{P:cameron-spatial-map} treats the spatial variable alone. A
+control in $H$ depends on time and space, so we first split $H$ into a time
+factor and a spatial factor.
+
 \begin{lemma}[Supported original tensor space]\label{L:cameron-supported-tensor}
   Canonically $H = H_t\otimes H_{\mathrm{sp}}$ as real Hilbert spaces. It is
   separable and admits a complete orthonormal basis $e_j$ with smooth test
@@ -163,6 +174,9 @@ $R$.
   of disjoint time intervals. This proves
   Lemma~\ref{L:cameron-supported-tensor}.
 \end{proof}
+
+It remains to treat the time factor $H_t$, whose kernel is $|s-t|^{-a}$.
+Proposition~\ref{P:cameron-full-mean} then combines the two maps.
 
 \begin{proposition}[The compact temporal mean, without trace class]
   \label{P:cameron-temporal-map}

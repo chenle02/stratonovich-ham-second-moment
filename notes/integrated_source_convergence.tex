@@ -39,6 +39,11 @@ noises and operator paths throughout; assume $\Gamma \ne 0$ in the construction.
   Lemma~\ref{L:source-finite-comparison}.
 \end{proof}
 
+Lemma~\ref{L:source-finite-comparison} compares two finite Gaussian sums with
+the same vectors. We apply it to the coefficient paths $A_j$, keeping the
+original basis $f_j$ and replacing $W(f_j)$ by the evaluations of another
+Gaussian noise.
+
 \begin{proposition}[Gaussian transfer and stability]
   \label{P:source-gaussian-transfer}
   Let $Y$ be a centered Gaussian linear noise on smooth compact positive-time
@@ -125,6 +130,11 @@ noises and operator paths throughout; assume $\Gamma \ne 0$ in the construction.
 \end{proof}
 
 \subsection{The spatial covariance space and an extension preserving the given noise}
+
+Proposition~\ref{P:source-gaussian-transfer} reduces source-path convergence
+to uniform variance domination and vanishing residual variance on each test,
+for noises jointly Gaussian with $W$. We now construct such regularized
+sources, beginning with the spatial covariance space and heat regularization.
 
 \begin{lemma}[Original spatial space and heat]\label{L:source-spatial-heat}
   Let $H_\Gamma$ be the real test-null completion with

@@ -109,6 +109,14 @@ The theorem treats zero covariance directly.
   Lemma~\ref{L:positive-raw-embedding}.
 \end{proof}
 
+Proposition~\ref{P:original-signed-point-upper} bounds the original point
+limsup by a limsup of the signed values $\mathcal{S}_R$.
+Proposition~\ref{P:variational-positive-scores} bounds the original point
+liminf below by $S_2^{\mathrm{pos}}$. To close this gap in
+Theorem~\ref{T:intrinsic-second-moment} we compare $\mathcal{S}_R$ with
+$S_2^{\mathrm{pos}}$. We start with finite Gram matrices, with and without the
+mask.
+
 \begin{lemma}[Finite covariance vectors and entrywise order]
   \label{L:positive-physical-gram}
   Take a finite partition of $I$ with nonempty cells $I_i$, lengths $\ell_i > 0$
@@ -153,6 +161,12 @@ The theorem treats zero covariance directly.
   $D-C^R$ is positive semidefinite. This proves
   Lemma~\ref{L:positive-physical-gram}.
 \end{proof}
+
+By Proposition~\ref{P:gram-positive-optimizer}, the unmasked finite problem has
+a maximizer built from the $k_i^\infty$. Their time factors $h_i$ are scaled
+indicators, so this maximizer is in general not a test in
+$\mathcal{C}_{\mathrm{pos}}$. We also need a bound on the controls that holds
+uniformly in $R$.
 
 \begin{lemma}[Uniform optimizer norm and positive smoothing]
   \label{L:positive-uniform-optimizer}
@@ -215,6 +229,12 @@ The theorem treats zero covariance directly.
   the smooth approximants. The zero branch will use $S_2^{\mathrm{pos}} \ge 0$
   directly. This proves Lemma~\ref{L:positive-uniform-optimizer}.
 \end{proof}
+
+Lemma~\ref{L:positive-physical-gram} orders the masked and unmasked Grams
+entrywise. Lemma~\ref{L:positive-uniform-optimizer} keeps the unmasked optimizer
+in a fixed ball and, when it is nonzero, approximates it by nonnegative tests.
+The time averaging of Proposition~\ref{P:uniform-rate-averaging} links these
+finite problems to the rate.
 
 \begin{proposition}[Signed variational values bounded by the variational value over nonnegative controls]
   \label{P:positive-signed-comparison}
@@ -293,6 +313,9 @@ The theorem treats zero covariance directly.
   Proposition~\ref{P:variational-positive-scores}, not from this conclusion.
   This proves Proposition~\ref{P:positive-signed-comparison}.
 \end{proof}
+
+Proposition~\ref{P:positive-signed-comparison} bounds $\mathcal{S}_R$ above for
+every $R$. For the limit we still need a lower bound as the mask is removed.
 
 \begin{proposition}[Cutoff removal for the optimized variational expression]
   \label{P:positive-score-cutoff}

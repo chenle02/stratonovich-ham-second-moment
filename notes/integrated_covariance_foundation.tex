@@ -140,6 +140,9 @@ L > 0$. Define
 
 \subsection{Temporal completion and the original noise}
 
+The noise in~\eqref{E:cov} is also correlated in time, with kernel
+$|t-s|^{-a}$. We now complete the temporal tests in that form.
+
 \begin{lemma}[Temporal covariance completion]\label{L:masked-time-completion}
   Let $T > 0$. The form
   \[
@@ -350,6 +353,10 @@ Lemma~\ref{L:masked-time-completion}.
   the bound for either sign of $\omega$. This proves
   Lemma~\ref{L:masked-temporal-modulation}.
 \end{proof}
+
+Lemma~\ref{L:masked-temporal-modulation} treats one exponential mode. A
+product of two sines or cosines is a sum of four such modes, which we bound
+next.
 
 \begin{lemma}[Correlated trigonometric products]\label{L:masked-trig-products}
   Let $r,\rho \ge 0$. Let $P_r$ be either $\cos(rt)$ or $\sin(rt)$, and let

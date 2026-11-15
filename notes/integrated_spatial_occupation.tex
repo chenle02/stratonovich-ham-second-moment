@@ -163,6 +163,11 @@ of $S_1^{\mathrm{pos}}$.
   Lemma~\ref{L:spatial-fourier-bound}.
 \end{proof}
 
+Lemma~\ref{L:spatial-static-controls} gives a lower bound for each nonzero,
+nonnegative smooth spatial control of compact support. We now scale and
+dilate a single profile and optimize. The resulting bound depends on the
+profile only through the ratio of $A_{\mathrm{sp}}$ to a power of $b$.
+
 \begin{proposition}[The finite smooth spatial ratio]
   \label{P:spatial-smooth-ratio}
   For real unit $g \in C_c^\infty(\R^d)$ put $R(g) =
@@ -215,6 +220,10 @@ of $S_1^{\mathrm{pos}}$.
   proof of $R_0<\infty$ is independent of that input. This proves
   Proposition~\ref{P:spatial-smooth-ratio}.
 \end{proof}
+
+So far $A_{\mathrm{sp}}$ has been used only for smooth compact profiles.
+Proposition~\ref{P:occupation-physical-class} needs it and the square pairings
+for real $H^1$ profiles, so we extend them with the same constant $R_0$.
 
 \begin{proposition}[The physical four-linear extension]
   \label{P:spatial-four-linear}
@@ -297,6 +306,10 @@ of $S_1^{\mathrm{pos}}$.
   Proposition~\ref{P:spatial-four-linear}.
 \end{proof}
 
+By Proposition~\ref{P:spatial-four-linear}, the ratio supremum is the same
+over smooth and over $H^1$ profiles. We now express it through an energy and
+restate the score bound in those terms.
+
 \begin{proposition}[The spatial energy and static lower variational expression]
   \label{P:spatial-energy-map}
   Over all real unit $H^1$ profiles define the energy
@@ -356,7 +369,9 @@ Define, for $u \ne 0$,
   e^{-(\lambda+\lambda^2/(2D))|u|}
   \lambda^{a-1}\ud\lambda,
 \end{equation}
-and set $K_\star(0) = 0$ for time integration.
+and set $K_\star(0) = 0$ for time integration. The spatial estimates above
+concern individual $H^1$ profiles. To apply them to time-dependent families,
+we first compute the exact row bound for this time kernel.
 
 \begin{lemma}[Exact row maximum]\label{L:occupation-kernel-row}
   The kernel is even, positive off zero, locally integrable, decreasing on

@@ -375,6 +375,11 @@ Proposition~\ref{P:wave-two-variances}.
   Lemma~\ref{L:driver-actual-variances}.
 \end{proof}
 
+Lemma~\ref{L:driver-actual-variances} gives tails
+$T_{{\rm out},N},T_{{\rm in},N}$ that tend to zero only strongly. They lie
+below the compact envelopes in~\eqref{E:driver-compact-tail-envelopes}. We
+now use this compact domination to improve the mode of convergence.
+
 \begin{lemma}[Compact domination of positive tails]\label{L:driver-dominated-tails}
   If $0 \le T_N \le B$, with positive compact $B \in S_m$, $m \ge 1$, and $T_N
   \to 0$ weakly, then
@@ -399,6 +404,11 @@ Proposition~\ref{P:wave-two-variances}.
   $\lambda_j(B)^m$ proves the trace limit. No order comparison of the operator
   powers is used. This proves Lemma~\ref{L:driver-dominated-tails}.
 \end{proof}
+
+Trace powers of variances must still be turned into moments of Gaussian sums.
+Proposition~\ref{P:finite-gaussian-matrix} keeps the average of the two trace
+powers, but only for matrices. Corollary~\ref{C:finite-gaussian-operators}
+bounds compact sums only through the envelope norm $\|K_{\rm out}\|_{S_p}$.
 
 \begin{lemma}[Retained finite Gaussian variance powers]\label{L:driver-gaussian-tail-average}
   Let $Z_\ell$ be finitely many compact operators whose two variances $V_{\rm
@@ -429,6 +439,10 @@ Proposition~\ref{P:wave-two-variances}.
 \end{proof}
 
 \subsection{Interval limits on the given probability space}
+
+The two previous lemmas control tails of the series $\sum_jg_jA_j(I)$ through
+its two variances. We now fix one interval and use them to pass to the limit in
+$N$, without leaving the original probability space.
 
 \begin{lemma}[Fixed-interval operator construction]\label{L:driver-interval-limit}
   For each fixed short interval $I$, $X_N(I)$ converges in every finite
@@ -530,6 +544,10 @@ Proposition~\ref{P:wave-two-variances}.
 \end{proof}
 
 \subsection{Time-path convergence and Gaussian norm bounds}
+
+Lemma~\ref{L:driver-interval-limit} works one interval at a time.
+Proposition~\ref{P:actual-operator-driver} asks for more: convergence in the
+$C^\theta$ path norm and compact values at every time on one path event.
 
 \begin{lemma}[H\"older path limit]\label{L:driver-holder-limit}
   The finite paths $X_N(t) = X_N((0,t))$ converge in
