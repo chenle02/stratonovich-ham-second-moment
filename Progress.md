@@ -135,7 +135,8 @@ stale/ambiguous information, rather than routine queries.
   Requested drawing fixes/handoffs are done. Private six-call ledger proposal
   2b82289f passed bounded35-row accounting/currency/guard QA;3closed the low
   provenance wording note ata32a44aa without changing any record value.
-  Current authorized5helpers are complete; final adoption decisions stay withLe/16.
+  Current authorized5helpers are complete; the goal's three-turn approval-blocker
+  audit passed. Passive monitoring continues; final decisions stay withLe/16.
 - Source of truth: this live section and the dated Progress entries. Runtime
   screenshots and private snapshots are observations, not approvals.
 - Prompt only concrete authorized unblocked work. Do not disturb busy agents,
@@ -21028,3 +21029,15 @@ final exact-file/filter/normalbuild gates,24AppendixE,LePU/assurance decisions.
 All currently assigned5drawing/correction/operationalQA jobs are complete and
 handed off. No new ownerprompt is needed merely for idle/waiting status.
 The30min passivewatchdog remains live; publication as a whole is incomplete.
+
+### 2026-11-15: Agent5 goal approval-blocker audit passed; passive watch continues
+
+After allassigned5preparation/QA/handoffs completed, threeconsecutivegoalturns
+verifiedsameexplicitLe-onlyassurance/PU/adoptionblocker. Freshorigin5107state
+and submittedhistory/inbox yielded no newdecision or authorizedjob. No extra
+models/tests/ownerquestions/nudges can supply the reserved approval. Blocked
+audit `private/publication-closeout/agent5-supervision-20261115/BLOCKED-AUDIT.md`
+andJSON retain exactscope/timestamps. Goal is blocked, NOTcompleted orpaused;
+publication/R/F/Lean/publicledger/package/wiki/release/arXiv duties remain.
+Userrequested30min passivewatchdog/inbox continues; no ownerwork is interrupted
+or stopped. Resume only on actualnewdecision/job/materialstatechange.
