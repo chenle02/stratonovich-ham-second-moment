@@ -1,17 +1,21 @@
-The covariance estimates must now produce a random operator path driven by the
-noise of the original equation. Constructing an unrelated Gaussian field with a
-convenient covariance would not suffice for the later comparisons. We must also
-show that smoothing the original noise gives operator paths converging to this
-same construction.
+The covariance estimates must now produce something random: an operator path
+driven by the noise of the original equation. Another Gaussian field with a
+convenient covariance would not do, because the later comparisons are made
+on the original noise (Figure~\ref{Fig:common-noise}).
 
-This chapter uses the two variance directions and compact Gaussian estimates of
-Chapter~\ref{S:book-gaussian-foundations}. The wave phase consists of a
-displacement in $H^{1/2}$ and a velocity in $H^{-1/2}$. We first construct the
-integrated interaction path on this space, for a fixed spatial mask and finite
-time horizon. Proposition~\ref{P:actual-operator-driver} states its regularity
-and approximation properties. Section~\ref{S:source-driver-convergence} then
-matches the regularized sources to the original noise and proves convergence in
-the path norm. The construction preserves the joint noise information needed for
-Gaussian changes of law. The next chapter uses these paths to solve the
-evolution equation; uniform bounds as the mask expands are deferred to
-Chapter~\ref{S:book-growing-radius}.
+The wave phase is a displacement in $H^{1/2}$ and a velocity
+in $H^{-1/2}$. For a fixed spatial mask and a finite time horizon,
+Section~\ref{S:actual-operator-driver} builds the integrated interaction path
+on this space. Proposition~\ref{P:actual-operator-driver} states its regularity
+and how it is approximated. Section~\ref{S:source-driver-convergence} matches
+the regularized sources to the original noise and proves convergence in the
+path norm. The construction keeps the joint noise information that Gaussian
+changes of law will need.
+
+The chapter uses the two variance directions and the compact
+Gaussian estimates of Chapter~\ref{S:book-gaussian-foundations}. On
+a first reading, keep Propositions~\ref{P:actual-operator-driver}
+and~\ref{P:source-gaussian-transfer} and let the proofs wait. The
+dependence of the operator-path bounds on the mask radius is tracked in
+Chapter~\ref{S:book-growing-radius}. Episode~\VideoRef{5}{FGR9ShF2F0w}
+of the video series covers this chapter.

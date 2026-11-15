@@ -1,16 +1,21 @@
-The complete pairing expansion gives a finite second moment, but estimating
-every pairing by the same quantity loses too much information. We now seek an
-upper bound at the correct time scale without first knowing the limiting
-constant. The wave equation introduces an additional difficulty: evolution
-across a time interval must retain both displacement and velocity.
+Chapter~\ref{S:G0} shows that the second moment is finite. How fast can
+it grow? This chapter gives a first answer, before the exact constant is
+known: no faster than $\exp(CT^\kappa)$, up to a polynomial factor. This is
+Theorem~\ref{T:full-upper}, and it proves Theorem~\ref{T:intro-upper}. Its
+constant is not claimed to be optimal.
 
-The starting points are Hypothesis~\ref{H:homog} and the fixed-order
-construction in Chapter~\ref{S:G0}. Section~\ref{S:static-phase} first examines
-the variance contribution for arbitrary deterministic initial phase. This
-calculation motivates the all-order static estimates that follow, but is not
-itself an all-order bound. Section~\ref{S:interval-upper} then represents the
-temporal comparison through Gaussian fields supported on intervals and controls
-their combined contribution. The resulting Theorem~\ref{T:full-upper} gives a
-finite upper rate for the full admissible covariance class. Its constant is not
-claimed to be optimal. This independent finiteness estimate is available before
-the variational identification in Chapter~\ref{S:book-constant}.
+The natural plan is to cut time into blocks and multiply the bounds. A wave
+does not allow this easily. Each block must hand on both displacement
+and velocity (No-go~\ref{P:nogo-14}), and the noise in one block is
+correlated with the noise in the others. Sections~\ref{S:static-phase}
+and~\ref{S:static-all-orders} show how far independent blocks
+go. Section~\ref{S:interval-upper} then replaces the blocks by Gaussian fields
+on overlapping intervals; Figure~\ref{Fig:dyadic-cover} is the picture to
+keep in mind.
+
+The model prerequisites are Hypothesis~\ref{H:homog} and the
+construction of Chapter~\ref{S:G0}. On a first reading, skip the proofs of
+Propositions~\ref{P:static-phase-variance} and~\ref{P:static-phase-all-orders}
+and of Corollary~\ref{C:static-interaction}: Theorem~\ref{T:full-upper}
+uses only the lemmas of those sections. Episode~\VideoRef{4}{h07fqJUS0vQ}
+of the video series follows this chapter.

@@ -1,16 +1,21 @@
-An operator path describes the forcing, but we still need to identify the wave
-it drives. There is a small but important issue with the initial data: the
-constant displacement is not in the whole-space Sobolev phase used for the
-operator estimates. We therefore keep the constant coordinates explicitly while
-retaining both displacement and velocity.
+An operator path describes the forcing. Which wave does it drive? The initial
+data hide a catch: the constant displacement does not lie in the Sobolev phase
+of the operator estimates. So we carry the constant coordinates explicitly,
+with displacement and velocity.
 
-The input is the path construction and source convergence from
-Chapter~\ref{S:book-operator-paths}, together with the canonical expansion from
-Chapter~\ref{S:G0}. Section~\ref{S:masked-moments} compares the regularized
-solutions and their tested moments. Section~\ref{S:constant-phase-young}
-constructs Young evolution on the enlarged phase space and identifies it with
-the physical wave. Finally, Section~\ref{S:compact-mean-family} studies compact
-families of nonnegative deterministic potentials. Their positive ground states
-and uniform spectral gap will control growth in the lower-bound argument. All
-masks and horizons here are fixed. These results do not yet justify letting the
-spatial radius grow with the observation time.
+This chapter has no figure. Section~\ref{S:masked-moments}
+compares the regularized solutions and their tested
+moments. Section~\ref{S:constant-phase-young} builds the Young evolution on
+the enlarged phase space (Proposition~\ref{P:constant-young-linear}) and
+identifies it with the physical wave. Section~\ref{S:compact-mean-family}
+studies compact families of nonnegative potentials with a common
+negative trial value. Their positive ground states and uniform gap
+(Proposition~\ref{P:compact-ground-family}) control growth in the lower bound.
+
+The inputs are the paths of Chapter~\ref{S:book-operator-paths}
+and the canonical expansion of Chapter~\ref{S:G0}. On a
+first reading, keep Propositions~\ref{P:constant-young-linear}
+and~\ref{P:compact-original-common-trial} and let the proofs wait. The
+masks are fixed before source and time limits; none grows with observation
+time here. Episode~\VideoRef{5}{FGR9ShF2F0w} of the video series covers
+this chapter.

@@ -1,17 +1,19 @@
-Before estimating the second moment, we must specify the solution and the terms
-that contribute to it. Stratonovich integrals retain pairings within one ordered
-chain as well as pairings between two chains. Consequently, products of
-different orders need not have zero expectation. Omitting these terms would
-change the moment under study.
+Which solution do we mean, and which terms does its second moment contain? A
+Stratonovich integral keeps the pairings inside one ordered chain as well as
+the pairings between two chains (Figure~\ref{Fig:two-chain-pairings}). So
+products of different orders need not have zero expectation, and dropping
+them would change the moment under study.
 
-We work with the model and covariance of Section~\ref{S:model}. Starting from
-the ordered expansion in Section~\ref{S:known}, we derive the complete mixed
-moment formula in Proposition~\ref{P:mixed}. We then examine a low-order term
-and the bounds that lead to the coarse quadratic-exponential estimate. Finite
-product estimates and joint limits construct the series, and
-Proposition~\ref{P:mild-construction} verifies its mild equation. The final
-section determines what homogeneity recovers from a common bound for each
-pairing. That bound still loses the target growth scale. This chapter therefore
-provides the solution used later and identifies a limitation of one estimation
-method; the sharper upper argument begins in
-Chapter~\ref{S:book-independent-upper}.
+We work with the model of Section~\ref{S:model}. Proposition~\ref{P:mixed}
+gives the complete formula for the mixed
+moments. Lemma~\ref{L:joint-fixed-order} constructs each fixed-order term. The
+summable bounds of Lemma~\ref{L:vertex-crude} then construct their series, and
+Proposition~\ref{P:mild-construction} identifies it as a mild solution. These
+results give the construction and mixed-moment formula used later.
+
+The last section asks how far one common bound for every pairing can go. It
+still loses the correct growth scale (Proposition~\ref{P:envelope}).
+Chapters~\ref{S:book-independent-upper}--\ref{S:book-constant}
+do not use that proposition, so it can wait on a first
+reading. Episode~\VideoRef{3}{b5-sqI77FLw} of the video series follows
+this chapter.
