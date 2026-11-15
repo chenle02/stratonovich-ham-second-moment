@@ -179,6 +179,7 @@ Gaussian Noise}
 pdfauthor={Le Chen}, pdfsubject={Stratonovich moment asymptotics}}
 \maketitle
 \clearpage
+\input{notes/imprint}
 
 \chapter*{About this edition}
 \addcontentsline{toc}{chapter}{About this edition}
@@ -3360,6 +3361,9 @@ empty chain.
   Lemma~\ref{L:spatial-wick-measures}.
 \end{proof}
 
+Lemma~\ref{L:spatial-wick-measures} removes only the spatial widths. We now
+remove the temporal widths too and construct each fixed-order term.
+
 \begin{lemma}[Joint diagram limits and fixed-order construction]
   \label{L:joint-fixed-order}
   Under Hypothesis~\ref{H:homog}, every two-chain diagram with $m+n = 2k \ge 2$
@@ -3523,6 +3527,10 @@ $\theta_0 = 1$ such that, for $\theta \ge \theta_0$,
 
 \section{The mild equation with the corrected bound}
 
+Lemma~\ref{L:crude-corrected} states bounds for the limits $X_n$ and their
+sum. We now bound the regularized terms uniformly in all positive vertexwise
+widths; Proposition~\ref{P:mild-construction} uses this bound.
+
 \begin{lemma}[Uniform vertexwise regularization bound]\label{L:vertex-crude}
   Under Hypothesis~\ref{H:homog}, there are $C < \infty$ and $\theta_0 > 0$ such
   that, for all positive vertexwise widths and $n \ge 1$,
@@ -3590,6 +3598,9 @@ $\theta_0 = 1$ such that, for $\theta \ge \theta_0$,
   The ratio test proves~\eqref{E:vertex-summability}. This proves
   Lemma~\ref{L:vertex-crude}.
 \end{proof}
+
+We now show that the series of the fixed-order terms solves the mild
+equation.
 
 \begin{proposition}[Mild construction from the fixed-order limits]
   \label{P:mild-construction}
@@ -3754,6 +3765,9 @@ over unequal chain lengths is not responsible for this loss: the same loss
 already occurs in the diagonal estimate and Minkowski's inequality.
 
 \section{What homogeneity recovers, and what the bound still loses}
+
+Under homogeneity the norms scale exactly in $\theta$. We now use this
+scaling in place of~\eqref{E:crude-norms}.
 
 \begin{proposition}[The uniform pairing estimate]\label{P:envelope}
   Under Hypothesis~\ref{H:homog}, there is $K > 0$ such that
@@ -4359,6 +4373,9 @@ occupation spaces in this argument.
 
 \subsection{Finite Gaussian products and their degree cutoffs}
 
+Lemma~\ref{L:fock-form} bounds the field only on Hermite degrees at most $N$.
+We now check that this cutoff does not change the finite words that we need.
+
 \begin{lemma}[Exact cutoffs for finite Gaussian words]\label{L:finite-word-cutoff}
   Let $g_{ij}$, $1 \le i \le M$, $1 \le j \le m_i$, be independent standard real
   Gaussian coordinates, grouped by color $i$, and let $\mathscr{X}$ be a complex
@@ -4404,6 +4421,10 @@ occupation spaces in this argument.
 \input{notes/figures/hermite-cutoff}
 
 \subsection{Uniform bounds for all orders}
+
+Proposition~\ref{P:static-phase-variance} controls only the first variance
+coefficient. We now combine Lemmas~\ref{L:complex-phase}, \ref{L:fock-form}
+and~\ref{L:finite-word-cutoff} to bound every static Duhamel order.
 
 \begin{proposition}[All regularized static phase orders]
   \label{P:static-phase-all-orders}
@@ -4663,6 +4684,11 @@ Complex Hilbert inner products are linear in the first slot.
 
 \subsection{Contractions and complex phase estimates}
 
+The resolvent estimate in Lemma~\ref{L:phase-contractions} and the Gaussian
+cutoff bound in Lemma~\ref{L:fock-form} were stated for a covariance on
+$\R^3$. We now derive the needed column and finite-degree bounds for every
+admissible $d$.
+
 \begin{lemma}[Dimension-independent Gaussian contractions]
   \label{L:interval-contractions}
   Uniformly in positive spatial smoothing and in finite Gaussian-mode and
@@ -4820,6 +4846,10 @@ Complex Hilbert inner products are linear in the first slot.
 \end{proof}
 
 \subsection{Summing the coefficient bounds}
+
+We first record an elementary bound for power series. The proof of
+Proposition~\ref{P:interval-coefficients} uses it to sum over the ways a total
+order $k$ splits among the interval fields.
 
 \begin{lemma}[A coefficient bound for a product with nonnegative coefficients]\label{L:inventory-product}
   For $k \ge 1$, define
@@ -5537,6 +5567,10 @@ tuple. This definition introduces no kernel symmetrization.
 \end{proof}
 
 \subsection{Removing the regularization}
+
+Proposition~\ref{P:interval-coefficients} holds uniformly in the smoothing
+$\epsilon > 0$, but it concerns regularized fields only. We still have to pass
+to the unregularized solution.
 
 \begin{lemma}[Uniform series tails from scaled moments]\label{L:uniform-series-tail}
   Fix $(T,x)$. For each positive regularization pair $(\epsilon,\delta)$, let
