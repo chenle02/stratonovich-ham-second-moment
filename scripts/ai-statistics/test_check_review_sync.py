@@ -174,7 +174,7 @@ class ReviewSyncGateTests(unittest.TestCase):
 
     def init_release(self):
         env = {**os.environ, "GIT_AUTHOR_NAME": "Fixture", "GIT_COMMITTER_NAME": "Fixture",
-               "GIT_AUTHOR_EMAIL": "<email removed>", "GIT_COMMITTER_EMAIL": "<email removed>",
+               "GIT_AUTHOR_EMAIL": "fixture", "GIT_COMMITTER_EMAIL": "fixture",
                "GIT_AUTHOR_DATE": "2026-11-15T01:00:00+00:00", "GIT_COMMITTER_DATE": "2026-11-15T01:00:00+00:00"}
         for args in [("init", "-q"), ("add", "."), ("-c", "core.hooksPath=/dev/null", "commit", "-q", "-m", "fixture")]:
             subprocess.run(["git", "-C", str(self.root), *args], check=True, capture_output=True, env=env)

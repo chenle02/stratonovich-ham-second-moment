@@ -21119,3 +21119,7 @@ draft input is treated as approval. PU bounded exception is now recorded at
 remain explicit. No new review, duplicate build, source adoption, freeze or
 public release is authorized by this status refresh. Private/release wiring
 belongs to16; no idle-worker nudge is needed.
+
+### 2026-11-15: Appendix E candidate technical review and inherited date-pin correction
+
+Agent16 cd325d9da735 independently built/checks b647: clean396pages, honest AppendixE, sourceproofs/reader unchanged, generateddata/tests pass, live/draft AI-use agree and every changed/new public line clean under filter (existing AGENTS/Progress scrub hits predate candidate). Required correction: interim book must inherit the adopted Nov13cover pin, not currentdate. Rebuilt with SOURCE_DATE_EPOCH1794571200/FORCE_SOURCE_DATE1; PDFtext comparison proves only coverdate changes and other395pages identical. This does not assign finalR/epoch. Fixture email literal replaced with plain fixture identity to avoid rule14 rewriting.18tests/5wholebookguards remain PASS; manifest and validation resealed. Backmatter112targets move1page; no chapterstart moves. Source/push remains held for exactcorrectedSHA adoption; private/release STOP integration and rehearsal remain16-owned. Originf1daProgress changes were merged preserving bothappendblocks, without rebasing scientific/data provenance or losing5ownersequence.
