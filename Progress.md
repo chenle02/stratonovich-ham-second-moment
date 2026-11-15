@@ -16,8 +16,9 @@ force Chen's predicted constant or create a Lean companion without approval.
 
 ## Status
 
-Research INCOMPLETE — final blind DeepSeek attempt returned INCONCLUSIVE/medium;
-no final-cold acceptance. Await Le's assurance disposition via Agent16. The 394-page book includes Chapter 12, the approved rough-noise future-work discussion and the L9 verification
+Research INCOMPLETE — focused DeepSeek report is PASS_WITH_NOTES/high, with
+report-only slips and incomplete core reconstructions retained; Le's assurance
+decision remains pending. Earlier whole-cold INCONCLUSIVE/medium is unchanged. The 394-page book includes Chapter 12, the approved rough-noise future-work discussion and the L9 verification
 appendices. Whole-report HIGH scientific review, final cold acceptance and
 release closure remain open. The historical Kimi hold was lifted; prior
 MEDIUM and malformed reports remain unaccepted in their recorded scopes.
@@ -20605,3 +20606,13 @@ and finalPDFs byte-identically with full current TeX KEEP context. Initial
 stub-context filter failure is retained and explained. Evidence:
 `private/audit/2026-11-14-approved-figures-combined-held/`. Await16verification
 before push/adoption; no new-video figures, scientific or release gate waiver.
+
+### 2026-11-15: Focused report raw HIGH; full public adjudication qualified for Le
+
+Completed the single approved focused DeepSeekV4Pro/max attempt, session `ses_e22c61c78ffeuUHr4ZOTSzykTn`, exit0/stop after529.248111s. Exact approved1665205-byte promptf46651dc and profileb2af5f7d remain unchanged, zero tools, one parentless fresh session/user/assistant, actual native max variant. Usage471810input+15429public+26063reasoning, cache0:41492combined below393216, no timeout/exhaustion. Original valid JSON remains PASS_WITH_NOTES/high, fourCHECKED, fatal0major0requiredrepairs0. All17subchecks, fourCHassessments and43exact unique source-site IDs returned. Prefix-added target keys differ from the exact requested key shape; a coordinator-only bijective binding records the deviation without rewriting the native report.
+
+Parent read the full public final and used two explicitly authorized GPT6.1Sol/medium author-side source-comparison helpers, not new independent review votes. Bounded comparisons found correct manuscript expressions at report-only slips/placeholders (variance ratio/product; Ceta/sup-Ctheta; radius equality/bound; incomplete B-power and normalized-log expressions; sign/source-variable/attribution qualifications). More importantly, the public response still invokes required internal core work: variance/finite Gaussian/compactness inputs, local interval-complex/contraction calculations, uniform-rate/arbitrary-residual product/limit estimates, and local pairing/fusion/marked-tail proof. These are explicit reconstruction-depth limits under the frozen contract, not confirmed false manuscript lemmas or new source repairs. Useful positive Gaussian-realization/closed-tube/Rayleigh and coefficient/tail/point/source-use arguments retain their actual scope. Raw HIGH is not downgraded, but unconditional completion of the four-parent reconstruction is not inferred.
+
+Unmodified59698-byte public report: `sources/review-packets/focused-parents-chen-b2ad4c81-public-report.json`, SHA2565393bbb2499f3fd65525b7105331157168c789ccefca8ae82cb3c2755c69d29b. Full location-backed memo, source/helper comparisons, structure/native identity, exact limitations and raw custody: `private/publication-closeout/focused-parents-chen-b2ad4c81-attempt-01/ADJUDICATION.md`, RESULT.json and TERMINAL-ARCHIVE-MANIFEST.json. No private reasoning is inspected. No retry/continuation/fallback or source-proof edit. Standing amsg agent sent initial terminal0a026e2f5f4a and subsequent qualificatione515052ae12a to16; full memo follows for Le's actual assurance choice. Prior whole-cold/global grades and Chapter12 NOT OBTAINED remain unchanged; no full-book/release approval claimed.
+
+After the focused result,16 verified and adopted #5's source-combined Figure7.2/page2fix b1290529, recorded at d09eeaa4. The fixes are now on origin; book394/reader28, original figure/destination pages and linkcounts2968/388 preserved, clean builds/filter at exact source/PDF equality. The reviewed parent-proof files remain unchanged fromb2; no input rebinding occurred. Separately all88untracked entries are secured by external full-hash <HUB> backup plus committed retention1222a180 and final receipt/table b767740c; no original files deleted.
