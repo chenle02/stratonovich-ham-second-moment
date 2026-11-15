@@ -1,27 +1,44 @@
 \begin{figure}
   \centering
-  \begin{tikzpicture}[x=1cm,y=1cm]
-    \draw[ham/arrow] (0,0)--(6,0) node[right] {$x$};
-    \draw[ham/arrow] (0,0)--(0,3.6) node[above] {$s$};
-    \draw[dotted] (.3,3.15)--(5.6,3.15);
-    \node[anchor=east,font=\small] at (-.1,.05) {$0$};
-    \node[anchor=east,font=\small] at (-.1,3.15) {$1$};
-    \filldraw[draw=hamblue,fill=hamblue!12] (.85,.45) rectangle (2.55,1.45);
-    \filldraw[draw=hamteal,dashed,fill=hamteal!12] (3.25,1.8) rectangle (5.05,2.8);
-    \node[font=\small] at (1.7,.95) {$\phi_1(s)\psi_1(x)$};
-    \node[font=\small] at (4.15,2.3) {$\phi_2(s)\psi_2(x)$};
-    \node[ham/box,text width=4.6cm] at (9,2.65)
-    {$\Psi\ge0$, smooth and compactly supported\\
-    $\Psi=\phi_1\psi_1+\phi_2\psi_2$};
-    \node[ham/box,text width=4.6cm] at (9,-.2)
-    {Keep covariance amplitude\\
-    gradient coefficient $1$\\
-    cost $v_\Psi/2$};
+  \begin{tikzpicture}[x=1cm,y=1cm,font=\normalsize]
+    % Identical panel widths, baselines, box sizes and type sizes.
+    \foreach \shift in {0,7.6} {
+    \begin{scope}[xshift=\shift cm]
+      \draw[ham/arrow] (.85,0)--(6.4,0) node[right] {$x$};
+      \draw[ham/arrow] (.85,0)--(.85,2.3) node[above] {$s$};
+      \node[anchor=east] at (.7,.6) {early};
+      \node[anchor=east] at (.7,1.75) {late};
+      \node at (2.1,-.3) {left};
+      \node at (4.9,-.3) {right};
+      \filldraw[draw=hamblue,fill=hamblue!12]
+      (1,.2) rectangle (3.2,1);
+      \filldraw[draw=hamteal,fill=hamteal!12]
+      (3.8,1.35) rectangle (6,2.15);
+      \node at (2.1,.6) {$>0$};
+      \node at (4.9,1.75) {$>0$};
+    \end{scope}
+    }
+    \node[font=\normalsize\bfseries] at (3.5,3.5) {Single product};
+    \node[font=\normalsize\bfseries] at (11.1,3.5) {Two-bump sum};
+    \node at (3.5,2.95) {$\Psi=\phi\psi$};
+    \node at (11.1,2.95) {$\Psi=\phi_1\psi_1+\phi_2\psi_2$};
+    \foreach \x/\y in {4.9/.6,2.1/1.75} {
+    \filldraw[draw=hamgold,dashed,fill=hamgold!12]
+    (\x-1.1,\y-.4) rectangle (\x+1.1,\y+.4);
+    \node[text=hamgold] at (\x,\y) {$>0$ forced};
+    }
+    \node at (12.5,.6) {$0$};
+    \node at (9.7,1.75) {$0$};
+    \node[align=center,text width=6.6cm] at (3.5,-.95)
+    {Four positive blocks:\\ the cross blocks are forced.};
+    \node[align=center,text width=6.6cm] at (11.1,-.95)
+    {Two positive blocks:\\ the cross blocks can be zero.};
+    \node at (7.3,-1.65)
+    {Schematic supports, not an optimizer or a density claim.};
   \end{tikzpicture}
-  \caption[Controls that need not factor]{The control class is not restricted to
-    one product of time and space functions. Two smooth nonnegative bumps with
-    distinct time and space supports give a simple non-factorizing example. The
-    shaded sets indicate supports, not a proposed optimizer. The full class is
-    infinite-dimensional; see \ProofRef{Theorem}{T:intrinsic-second-moment}.}
+  \caption[Controls that need not factor]{The full control class allows spatial
+    profiles to change with time, as in this sum of two smooth nonnegative product bumps that no single
+    time--space product can represent. The full class is infinite-dimensional;
+    see \ProofRef{Theorem}{T:intrinsic-second-moment}.}
   \label{Fig:nonseparable-controls}
 \end{figure}

@@ -20591,3 +20591,17 @@ Standing amsg agent forwarded16's Le approval38e764453a40 for exactscope487bf2e1
 ### 2026-11-15: All88untracked entries secured, reconciled and retained
 
 Executed Le request0b95308cde6e/dacfe286. Additive external <HUB> backup at `<HUB>:~/untracked-backup/Article-Stratonovich-HAM-Second-Moment/2026-11-15/`:88entries,49530regular files,1646576702bytes, rsync0, no --delete/deletion. Full remote SHA256 verification of all49530files passes with0mismatches/missing/extra, stronger than requested32sample. Reconciled2945unique contents:2434verified in pushed Git blobs or actual members of125committed tar archives at487bf2e1;36entries already fully covered and52partially covered. Newly retained the remaining511unique contents/72759286bytes:130inert verbatim small text files under `private/untracked-retention-20261115/text/`,381raw payloads in `sources/review-packets/untracked-uncovered-20261115-content.tar.gz`. Complete original-path/mode/size/hash/location map for all49530files: `sources/review-packets/untracked-20261115-file-map.jsonl.gz`;88-row table and backup/retention receipts: `private/untracked-retention-20261115/`. Actual bytes, not filename/manifest presence alone, establish matches. No raw provider reasoning is inspected, no original source is deleted/moved/reset, no manuscript or held candidate is adopted. Verify committed payload hashes, push and sync before final table delivery to16.
+
+### 2026-11-14: Approved Figure7.2/page2 combined HELD candidate prepared (Agent5)
+
+At16's8c7f0efc0813 after the focused-cold result, combined exact approved source
+blobs0105fbea(walsh-guitar) and68245156(nonseparable-controls) on origin tip
+94016586. Rebuilt book/reader from that one combined source, no stacked PDFs,
+Nov13epoch1794589200. Both logs0errors/0undefinedrefs/0undefinedcites/0overfull/
+0multiply/0duplicate-destinations;394/28pages, text changes only bookprinted1–3,
+162 and reader4; no destination-page changes, invalid links or label-map drift.
+Final affected pages inspected. Real release filter preserves the two sources
+and finalPDFs byte-identically with full current TeX KEEP context. Initial
+stub-context filter failure is retained and explained. Evidence:
+`private/audit/2026-11-14-approved-figures-combined-held/`. Await16verification
+before push/adoption; no new-video figures, scientific or release gate waiver.
