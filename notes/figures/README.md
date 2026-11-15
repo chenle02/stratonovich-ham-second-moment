@@ -87,3 +87,17 @@ its nodes. The report also includes `chapter-roadmap.tex`, covering all eleven
 chapters and four appendices, with auxiliary comparisons shown separately.
 The node links are local in the report and external in the reading edition.
 Both report figures and the reader proof map were inspected after integration.
+
+## Combined iceberg and memory candidate — HELD
+
+One combined-source build includes the exact approved icebergc81b81cd and
+placed-memory2bf48696 sources. MemoryFigure3.2 is on printed64 inside3.2;
+icebergFigure12.1 is on printed250 inside12.1. Candidate396book/28reader,
+28book figures; earlier Figure7.2/guitar-wrap sources unchanged. All99reader
+technical labels and271external named links checked. Bounded source/PDFpins:
+`VALIDATION-iceberg-memory-combined-held.json`; detailed current-origin impact,
+final page images, source-equality and real-filter checks:
+`private/audit/2026-11-15-iceberg-memory-combined-held/`.
+This is not yet the adopted set;16checks and Leapproves this combined SHA
+before push. Car remains separate in the Preface replay; existing adopted
+validation/count statements above retain their historical scopes.

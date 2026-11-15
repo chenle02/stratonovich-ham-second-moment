@@ -20620,3 +20620,23 @@ After the focused result,16 verified and adopted #5's source-combined Figure7.2/
 ### 2026-11-15: Honest ledger/front-door upkeep prepared privately for16
 
 Prepared schema-compatible draft rows for the two new DeepSeek calls and public-safe author summaries, without changing experiment/, notes/ or front doors: `private/publication-closeout/new-cold-ledger-draft-20261115/`. Raw broad INCONCLUSIVE/medium/253NOT_READ and focused PASS_WITH_NOTES/high/fourCHECKED remain separate from accepted_at_stated_scope=false and incomplete required reconstruction. Both original assistant token objects and actual finish/time/source/hash identities are retained, uncertain broad effort/currency left null, no helper-as-reviewer vote. Duplicate checks againstv2/v3/v4 found neither run; C012/C013 remain provisional, not registry reservations. The current AppendixE generator selects committedv4, so v2-only edits would be insufficient; no generator or public ledger was run/written. The private frontdoor-update patch corrects the stale latest-whole-review description and accurately explains NOT_READ as not independently audited, not missing source/absent author audit. All public candidates omit session/runtime paths, private reasoning and source-sensitive details.16 exact-file/filter check and Le disposition are required before publication of these concrete drafts.
+||||||| parent of 500002ea (HELD: combine approved iceberg and section 3.2 memory figures)
+
+### 2026-11-15: Approved iceberg + placed memory combined HELD candidate (Agent5)
+
+After16verified2bf48696and Leapproved via29, prepared one combined candidate
+on currentorigin0a50bd83: exact6sourceblobs fromicebergc81b81cd and memory2bf48696.
+Only two intended inputs differ in main/no-go prose from currentparent; no
+mathematical changes, earlierFig7.2/page2assets unchanged, carabsent. Built
+book/reader ONCE as combined pair, no copied/stacked candidatePDFs; Nov13epoch
+1794589200. Book396(origin394,+2)/reader28, both six zero log gates. Memory
+Fig3.2printed64inside3.2abovecorollary; icebergFig12.1printed250inside12.1.
+EarlierFig7.2nowprinted163byonepageshift; guitarstays1.99readerlabels/271external
+namedlinks/directcoverlink and internal destinations checked, no removals or
+invalid targets; exact shifts retained. Personally inspected both figurepages
+and adjacent contexts. Parallel operational source checker verified6approved
+blobs/noothermanuscript changes; operational actualreleasefilter with110TeXKEEP
+files retains9exactmanuscript/PDFtargets byte-identically,2PDFs/no deletion sets.
+Evidence `private/audit/2026-11-15-iceberg-memory-combined-held/`; no scientific
+or wholehistory/export acceptance inferred. Per16's21893cfb77bd, MUSTawait16
+verification AND Le's OWNapproval of combinedSHA beforepush. No push/adoption.

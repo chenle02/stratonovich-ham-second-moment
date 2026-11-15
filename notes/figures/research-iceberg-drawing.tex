@@ -1,0 +1,26 @@
+% Vector metaphor only; the cards are the book's stable No-go identifiers.
+\begin{tikzpicture}[x=1cm,y=1cm,font=\normalsize]
+  \fill[hamblue!5] (-6.8,-4) rectangle (6.8,0);
+  \filldraw[draw=hamblue!65,fill=hamblue!15,thick]
+  (-1,0)--(-5.7,-.7)--(-6.1,-1.5)--(-6.2,-2.7)
+  --(-4.8,-3.6)--(-1.2,-4)--(3.8,-3.75)
+  --(5.8,-2.9)--(6.15,-1.5)--(5.7,-.7)--(1,0)--cycle;
+  \filldraw[draw=hamblue,fill=white,thick]
+  (-1,0)--(-.6,.85)--(-.05,1.85)--(.5,1.05)--(1,0)--cycle;
+  \draw[hamblue,thick] (-4.4,0)--(6.8,0);
+  \node[anchor=west,fill=white,inner sep=3pt] at (-6.6,.18) {waterline};
+  \node[anchor=west,text=hamteal] at (2.15,1.35)
+  {\ProofRef{Theorem}{T:intro-upper}};
+  \node[anchor=west,text=hamteal] at (2.15,.65)
+  {\ProofRef{Theorem}{T:intro-second-moment}};
+  \draw[hamteal] (.55,1.05)--(1.5,1.35)--(2,1.35);
+  \draw[hamteal] (.8,.45)--(1.5,.65)--(2,.65);
+  \foreach \id/\xx in {01/-4.2,02/-1.4,33/4.2} {
+  \node[draw=hamblue!70,fill=white,rounded corners=1.5pt,
+  minimum width=1.9cm,minimum height=.55cm,inner sep=4pt]
+  at (\xx,-1.95) {\hyperref[P:nogo-\id]{No-go~\id}};
+  }
+  \node at (1.4,-1.95) {$\cdots$};
+  \node[font=\normalsize\bfseries,text=hamblue] at (0,-3.3)
+  {Chapter 12: below the waterline};
+\end{tikzpicture}

@@ -1,0 +1,40 @@
+% Correlation pattern only: the cited product estimate uses static block fields.
+\begin{tikzpicture}[x=1cm,y=1cm,font=\normalsize]
+  \foreach \panel/\shift in {0/0,1/7.1} {
+  \begin{scope}[xshift=\shift cm]
+    \foreach \i in {0,...,23} {
+    \foreach \j in {0,...,23} {
+    \pgfmathtruncatemacro{\same}{int(\i/6)==int(\j/6)}
+    \pgfmathsetmacro{\shade}{15+85*(1/(abs(\i-\j)+.5)^.5-.2063)/(1.4143-.2063)}
+    \ifnum\panel=0
+    \fill[hamblue!\shade!white] (\i*.2,\j*.2) rectangle ++(.201,.201);
+    \else
+    \ifnum\same=1
+    \fill[hamblue!\shade!white] (\i*.2,\j*.2) rectangle ++(.201,.201);
+    \fi
+    \fi
+    }
+    }
+    \draw[hamblue] (0,0) rectangle (4.8,4.8);
+    \foreach \k in {0,...,3} {
+    \draw[hamgold,dashed,thick] (\k*1.2,\k*1.2) rectangle ++(1.2,1.2);
+    }
+    \draw[ham/arrow] (0,-.12)--(5,-.12) node[right] {$s$};
+    \draw[ham/arrow] (-.12,0)--(-.12,5) node[above] {$r$};
+    \node[anchor=north] at (0,-.22) {$0$};
+    \node[anchor=north] at (4.8,-.22) {$T$};
+    \node[anchor=east] at (-.22,4.8) {$T$};
+    \node at (2.4,-.85) {\ifnum\panel=0 Cross-block correlation\else Cross-block covariance: zero\fi};
+  \end{scope}
+  }
+  \node[font=\normalsize\bfseries] at (2.4,6.2) {Original time kernel};
+  \node at (2.4,5.65) {$|s-r|^{-\alpha_0}$};
+  \node[font=\normalsize\bfseries] at (9.5,6.2) {Independent-block pattern};
+  \node at (9.5,5.65) {Only diagonal blocks remain};
+  \node at (7.7,3) {$0$};
+  \node at (10.1,.6) {$0$};
+  \draw[ham/arrow] (5.15,2.4)--(6.65,2.4);
+  \node[align=center,text width=2cm] at (5.9,3.25) {separate\\ fields};
+  \node at (5.95,-1.5)
+  {$\alpha_0=1/2$ shown; shading is capped near the diagonal.};
+\end{tikzpicture}
