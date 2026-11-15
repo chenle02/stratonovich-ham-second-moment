@@ -132,8 +132,9 @@ stale/ambiguous information, rather than routine queries.
 
 - Current:30-minute read-only watchdog plus continuous message handling;
   all-five-screen context is combined with submitted artifacts before decisions.
-  Requested drawing fixes/handoffs are done; focused private six-call ledger
-  proposal2b82289f is under read-only accounting/schema QA, not public adoption.
+  Requested drawing fixes/handoffs are done. Private six-call ledger proposal
+  2b82289f passed bounded35-row accounting/currency/guard QA; one low provenance
+  wording clarification remains for3, with no public adoption inferred.
 - Source of truth: this live section and the dated Progress entries. Runtime
   screenshots and private snapshots are observations, not approvals.
 - Prompt only concrete authorized unblocked work. Do not disturb busy agents,
@@ -20985,3 +20986,19 @@ Current summary explicitly distinguishes scopedOPpositive, IC/CHpartial, PUautom
 Inspected the reusable private book packager before finalR/F. Its old post-build hash comparison checked known rows but did not independently reject extra archive source entries. `private/publication-closeout/publication-resume-20261114/package_book.py` now validates the actual pre-build archive's complete path set and all source bytes, rejects duplicate/nonregular entries, and retains modified/missing/extra-file negative controls. This strengthens an explicit final source-equality requirement; it is not a new package or a claim that filteredF is defined.
 
 Meaningful bounded check `check_package_manifest.py` read the unchanged107-file66dadf6c archive(SHA2562e4ec748876beed3ead0c38143407059a102322953ce6e4f5ccca792664b9504): baseline exact entry-set/byte equality passes; modifiedbook.tex, missingbook.bbl and extraunexpected.tex are each rejected. PACKAGE-VERIFIER-CHECK.json binds the actual archive and new script hash. No model/provider call, TeX build, manuscript/PDF/public-script edit, release source mutation, new package or arXiv preview. FinalR/F successful recorder build, public-filter equality and owner audit still remain required. Historical package/build receipts keep their original scope.
+
+### 2026-11-15: Bounded35record accounting QA completed for private proposal
+
+5's helper checked2b82289f without publicmutations: all35preparedrecords,
+25denominator/24eligibleusage records;everyeligible row once,448reportedusage
+objects once;old29projectedtoken/n/N and costcomponents match the livegenerator.
+Actualcommittedledger guard refused untracked/modifiedinputs; syntheticONLY
+currency/scope/nullcost cases stay separate. No blocking accountingbug found.
+Proposed patch keeps raw PU partialscope/signature/unknownusage and ICoriginal/
+reading-sidecar boundaries, no model/format forgery or whole-book acceptance.
+One lowclaimclarification: prepared oldrows areJSON-VALUE-identical,notliteral
+rowbytes whereUnicodeescapingwasnormalized. Originals unchanged;3owns any
+wording/manifestclarification,16exactfile/filter,24AppendixE. Evidence:
+`private/publication-closeout/agent5-supervision-20261115/ledger-35row-QA/`.
+This is functional partition QA,notLaTeX/schema/filter/exportcertification,
+unitattestation,missingstream/capreconstruction,scientificvoteoradoption.
