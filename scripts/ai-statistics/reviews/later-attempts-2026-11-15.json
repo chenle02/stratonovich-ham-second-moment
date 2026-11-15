@@ -1,0 +1,26 @@
+{
+  "snapshot_date": "2026-11-15",
+  "what": "Review attempts dated November 12 to 15, 2026 (UTC) that were found in the retained records after the review census was closed. Counts per day only; no session, run or file identifiers.",
+  "per_day": {
+    "2026-11-12": 7,
+    "2026-11-13": 26,
+    "2026-11-14": 79,
+    "2026-11-15": 6
+  },
+  "total": 118,
+  "in_closeout_ledger": 25,
+  "not_in_closeout_ledger": 93,
+  "limits": [
+    "An attempt is one documented dispatch of a review task. Blocked attempts and attempts that returned an invalid report are included; this is not a count of completed reviews.",
+    "The day of an attempt comes from a session record, a decoded session record or a dated panel dispatch, not from a measured start time of the model call.",
+    "The reviewer model actually used is not verified for every attempt, so the attempts are not split by family.",
+    "The records kept are a bounded corpus: automatic retries and follow-ups may have left no record. The total is not to be added to the census of review runs and is not a lifetime count.",
+    "No grade, verdict or acceptance is taken from these attempts."
+  ],
+  "audit": {
+    "by": "independent metadata audit of the recovery table, 2026-11-15",
+    "findings_sha256": "ed7ec66298e29672f953c4d9a83e0fdda0fc60aa3dd0820c5ac4a1d994f7a2cc",
+    "corrected_rows_sha256": "058ebf19382d03c55d7e32f81a8cced3941fc866ffc4be5980b32be1a9fcc3b9",
+    "note": "The audit files hold private identifiers and are not published."
+  }
+}

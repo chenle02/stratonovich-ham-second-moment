@@ -12,7 +12,8 @@ from the files in this folder and the repository's git history.
 | `tokens/` | `token_totals.py` reads local model logs; `token-totals.json` is the recorded snapshot. |
 | `no-go/` | `nogo-counts.json`: kind and status of each recorded no-go (see its README). |
 | `timeline.json`, `commits-per-day-timeline.json` | The commit up to which commits per day are counted for the opening numbers and the line in the figure, and the counts. This can be later than the commit of the review census. |
-| `selection.json` | Names, by path and SHA-256, the dated token and no-go snapshots that `make_appendix.py` must read. The generator stops if one is missing or differs. |
+| `selection.json` | Names, by path and SHA-256, the dated inputs that `make_appendix.py` must read: the token and no-go snapshots, `timeline.json` with its counts, and the later-attempts snapshot. The generator stops if one is missing or differs; it has no fallback, and it does not replace a missing usage field by zero. |
+| `reviews/later-attempts-2026-11-15.json` | Per-day counts of review attempts recovered from retained records for November 12 to 15, with their limits. Counts only, no identifiers. These are the grey bars of the figure; they are not runs of the census and are not added to it. |
 
 Rebuild from the repository root:
 
@@ -36,14 +37,18 @@ totals and the no-go record are dated snapshots that can be later
 (`timeline.json`, `selection.json`). The first snapshots
 (`commits-per-day.json`, `tokens/token-totals.json` of November 11 and
 `no-go/nogo-counts.json` of November 10) stay in the repository unchanged.
-Reviews done after the census are not added to its bars; they are reported
-through the closeout ledger described below.
+Reviews done after the census are not added to its bars or its table. The
+figure shows a separate grey count of recovered attempts, beside the census bar
+on a day that has both, and the closeout ledger described below reports the
+closeout reviews. In the token snapshot, the Claude Code field `api_calls`
+is a legacy name: it counts logged assistant usage records, including
+synthetic ones (which carry no tokens), not verified API calls.
 
 ## Every number and its source
 
 | Number in Appendix E | Source |
 |---|---|
-| days, first and last day, commits (UTC days) | `git log` up to the commit named in `timeline.json`, `TZ=UTC`, recorded in `commits-per-day-timeline.json` (without `timeline.json`: the commit named in `reviews/review-stats.json`, recorded in `commits-per-day.json`). The public repository's history is filtered (commit ids rewritten, private-only commits dropped), so there the script reads this file. |
+| days, first and last day, commits (UTC days) | `git log` up to the commit named in `timeline.json`, `TZ=UTC`, recorded in `commits-per-day-timeline.json` (the first snapshot, counted at the commit named in `reviews/review-stats.json`, stays in `commits-per-day.json`). The public repository's history is filtered (commit ids rewritten, private-only commits dropped), so there the script reads this file. |
 | review folders, folders with a run, runs, follow-ups, runs dated by folder name | `reviews/review-stats.json`, `reviews/runs.tsv` |
 | review table: runs, completed, not completed, met the bar, FAIL, MEDIUM, hours and their coverage | `reviews/runs.tsv` (rules in `make_appendix.py`) |
 | GPT FAIL count | `reviews/runs.tsv`, family GPT/Codex |

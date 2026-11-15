@@ -14,8 +14,10 @@ show. Every number is produced by a short script from files kept in the
 repository, and the scripts are kept with it, so a reader can rebuild each
 figure and each table. The record covers \aiDays{} days, from \aiFirstDay{}
 to \aiLastDay{} (dates in UTC), with \aiCommits{} recorded changes (commits).
-The census of review runs ends on \aiReviewLastDay{}; the reviews done after
-it, for the publication closeout, are listed in the last section.
+The census of review runs ends on \aiReviewLastDay{}. For \aiLaterFirstDay{}
+to \aiLaterLastDay{} the figure also shows a separate count of recovered
+review attempts, and the last section lists the reviews of the publication
+closeout.
 
 \section*{Who did the work}
 
@@ -31,11 +33,11 @@ from the author of the work it checks.
 \small
 \begin{tabular}{@{}lrrr@{}}
   \toprule
-  & Sessions or calls & Input tokens & Output tokens \\
+  & Sessions or records & Input tokens & Output tokens \\
   \midrule
   Worker: GPT (Codex) & \aiCodexSessions{} sessions & \aiCodexInB{} billion
   & \aiCodexOutM{} million \\
-  Claude (Opus 5.5 and Fable 5.2) & \aiClaudeCalls{} calls
+  Claude Code logs & \aiClaudeCalls{} usage records
   & \aiClaudeCacheReadB{} billion (cache) & \aiClaudeOutM{} million \\
   DeepSeek V4 Pro & \aiDeepSeekSessions{} sessions & \aiDeepSeekInM{} +
   \aiDeepSeekCacheM{} million & \aiDeepSeekOutM{} million \\
@@ -47,16 +49,21 @@ Most of the worker's input, \aiCodexCachedPct\%, was text it had already read
 and that was served again from a cache; \aiCodexReasonM{} million of its
 output tokens were internal reasoning. Counting cached input on both sides,
 the worker read about \aiWorkerToDeepSeekRatio{} times as much as the
-DeepSeek reviews. The Claude figures include editing and coordination as well
-as reviews. Only the DeepSeek reviews carry a dollar figure,
+DeepSeek reviews.
+The Claude Code figures include Opus~5.5, Fable~5.2 and synthetic usage
+records, covering editing and coordination as well as reviews. They count
+logged assistant usage records, not verified API calls. Only the DeepSeek
+figures carry a dollar figure,
 \$\aiDeepSeekCost{} in US dollars as computed by OpenCode, which is not an
 invoice; the other models were used on subscriptions. The worker
 machine's logs hold no token counts for Kimi, so these totals leave Kimi out;
 the closeout records at the end of this appendix carry Kimi's own reported
-counts. These totals are a snapshot taken at \aiUsageSnapshot{} from those
-logs. They cover the sessions that one machine recorded, not all activity, and
-nothing in them is estimated: usage that left no record, such as the abandoned
-attempt described in the closeout section, is not included.
+counts.
+These totals are a snapshot taken at \aiUsageSnapshot{} from those logs.
+They cover the sessions and usage records that one machine retained, not all
+activity. Only recorded usage fields are summed; usage with no record,
+including the abandoned attempt described in the closeout section, is not
+included.
 
 \section*{Reviews}
 
@@ -100,7 +107,28 @@ format. Figure~\ref{Fig:ai-timeline} shows the work day by day and marks
 correspondence gates; their commits are listed in
 \path{scripts/ai-statistics/milestones.json}.
 
-\begin{figure}[ht]
+\section*{Approaches that did not work}
+
+As of \aiNogoSnapshot{}, the record holds \aiNogoTotal{} failed approaches
+and corrections: \aiNogoMath{} mathematical (\aiNogoRoutes{} approaches that
+cannot work and \aiNogoCounter{} counterexamples or corrected claims),
+\aiNogoSource{} defects in the source paper, \aiNogoMethod{} failures of a
+method of checking, and \aiNogoProcess{} process record.
+Chapter~\ref{S:book-no-go} has \aiNogoMath{} numbered mathematical entries
+with written arguments at their printed scopes. NG-33 is a broader historical
+group of refuted reviewer objections; its printed counterpart proves three
+representative cases. The remaining items in that group are not claimed
+proved there. In the first snapshot of the record, on November~10,
+there were \aiNogoTotalFirst{} entries, and \aiNogoInBookFirst{} of the
+mathematical ones were marked as proved in the book, \aiNogoReviewedFirst{} as
+reviewed and adjudicated, and \aiNogoRecordedFirst{} as recorded only.
+In the current snapshot, \emph{proved in book} denotes a written proof at
+the record's stated scope, not scientific acceptance. NG-33 remains
+\emph{reviewed and adjudicated} because only part of its historical group is
+printed. The earlier review of NG-09 did not meet its acceptance threshold.
+None of these records refutes the main theorems.
+
+\begin{figure}[t]
   \centering
   \aiTimelineFigure
 
@@ -114,28 +142,11 @@ correspondence gates; their commits are listed in
     the project's \aiMilestones{} milestones (numbered circles). Days are in
     UTC, and each circle sits on the UTC day of the milestone's commit; the
     key gives the date as recorded. Claude returned after November~1 for
-    checks of rendered pages. The bars stop on \aiReviewLastDay{}, where the
-    census of review runs ends; the line of commits continues.}
+    checks of rendered pages. The coloured bars stop on \aiReviewLastDay{},
+    where the census of review runs ends; the grey bars count recovered
+    review attempts, which are not part of the census.}
   \label{Fig:ai-timeline}
 \end{figure}
-
-\section*{Approaches that did not work}
-
-As of \aiNogoSnapshot{}, the record holds \aiNogoTotal{} failed approaches
-and corrections: \aiNogoMath{} mathematical (\aiNogoRoutes{} approaches that
-cannot work and \aiNogoCounter{} counterexamples or corrected claims),
-\aiNogoSource{} defects in the source paper, \aiNogoMethod{} failures of a
-method of checking, and \aiNogoProcess{} process record.
-Chapter~\ref{S:book-no-go} states all \aiNogoMath{} mathematical records as
-numbered no-gos, with their arguments, precise scope and the conclusions that
-survive; one of them groups several refuted reviewer objections, of which the
-chapter prints three. In the first snapshot of the record, on November~10,
-there were \aiNogoTotalFirst{} entries, and \aiNogoInBookFirst{} of the
-mathematical ones were marked as proved in the book, \aiNogoReviewedFirst{} as
-reviewed and adjudicated, and \aiNogoRecordedFirst{} as recorded only. These
-marks say where an argument is written down. They are not acceptance grades:
-in particular, the earlier review of NG-09 did not meet its acceptance
-threshold. None of these records refutes the main theorems.
 
 \section*{What the numbers do not show}
 
@@ -149,6 +160,18 @@ token totals come from the logs of one machine. The \aiCommits{} commits are
 counted in the working repository; the public history has fewer, because commits
 that changed only private files are left out of it. A short list of review
 folders could not be classified and is kept with the scripts.
+
+The grey bars count \aiLaterAttempts{} review attempts recovered from
+retained records for \aiLaterFirstDay{} to \aiLaterLastDay{}. They are
+attempts, not completed reviews: some were blocked or returned an unusable
+report. Their UTC days use recorded launch, client-session and panel-dispatch
+evidence; some are bounded or decoded rather than exact invocation clocks.
+Actual model identity is not verified for every attempt, so this series is not
+split by reviewer. We show them separately from the \aiRuns{}-run census;
+together they still do not establish a complete project-wide inventory. These
+are counts of review tasks, not provider requests, and activity with no
+retained record is missing. Of these attempts, \aiLaterInLedger{} are
+represented in the closeout ledger below.
 
 \section*{The publication closeout reviews of \aiCloseoutMonth}
 

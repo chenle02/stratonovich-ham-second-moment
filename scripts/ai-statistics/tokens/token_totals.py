@@ -102,6 +102,7 @@ def claude():
     seen = set()
     tot = collections.Counter()
     models = collections.Counter()
+    tok_by_model = collections.defaultdict(collections.Counter)
     for d in glob.glob(os.path.expanduser("~/.claude/projects/*")):
         if not ours_claude_dir(os.path.basename(d)):
             continue
@@ -124,7 +125,13 @@ def claude():
                     for k in ("input_tokens", "output_tokens",
                               "cache_creation_input_tokens", "cache_read_input_tokens"):
                         tot[k] += int(u.get(k) or 0)
-    return {"api_calls": len(seen), "calls_by_model": dict(models), "tokens": dict(tot)}
+                        tok_by_model[m.get("model", "unknown")][k] += int(u.get(k) or 0)
+    # "api_calls" is a legacy field name: it counts logged assistant usage
+    # records (deduplicated), including synthetic ones, not verified API calls.
+    return {"api_calls": len(seen), "calls_by_model": dict(models), "tokens": dict(tot),
+            "tokens_by_model": {k: dict(v) for k, v in tok_by_model.items()},
+            "unit": "logged assistant usage records, deduplicated by (message id, request id); "
+                    "the field name api_calls is kept for compatibility and does not mean verified API calls"}
 
 
 def opencode():
