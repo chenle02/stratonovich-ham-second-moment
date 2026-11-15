@@ -61,7 +61,7 @@ The plan above is an intra-round checkpoint, not whole-book clearance.
 ## Live team status — read before messaging
 
 <!-- team-status:start -->
-Snapshot UTC: 2026-11-15T07:23:53.270299+00:00. Agent5 maintains this compact summary from submitted
+Snapshot UTC: 2026-11-15T07:52:37.739529+00:00. Agent5 maintains this compact summary from submitted
 owner reports and committed artifacts. Owners keep their normal dated entries
 below; those entries and exact receipts establish scope. This is not a new
 acceptance ledger. Check this section and its linked evidence before asking
@@ -133,8 +133,9 @@ stale/ambiguous information, rather than routine queries.
 - Current:30-minute read-only watchdog plus continuous message handling;
   all-five-screen context is combined with submitted artifacts before decisions.
   Requested drawing fixes/handoffs are done. Private six-call ledger proposal
-  2b82289f passed bounded35-row accounting/currency/guard QA; one low provenance
-  wording clarification remains for3, with no public adoption inferred.
+  2b82289f passed bounded35-row accounting/currency/guard QA;3closed the low
+  provenance wording note ata32a44aa without changing any record value.
+  Current authorized5helpers are complete; final adoption decisions stay withLe/16.
 - Source of truth: this live section and the dated Progress entries. Runtime
   screenshots and private snapshots are observations, not approvals.
 - Prompt only concrete authorized unblocked work. Do not disturb busy agents,
@@ -21014,3 +21015,16 @@ Patch dry-run and application to a temporary copy matched the exact proposed fil
 At5/16's7f138f93f31c/9115d5f21417 natural-checkpoint handoff, read5756e5b2's bounded full35-record accounting QA. No blocking functional defect: actual closeout on committed temporaryfixture,35records/25denominator/24usage,448usageobjects visited once(notprovider-callcount), legacy29projected totals/valueidentity and separate currency/scope sums, actual untracked/modified-snapshot guard refusals. It is no scientific vote, layout/filter/export gate or protocol exception. Raw result/output evidence remains in `private/publication-closeout/agent5-supervision-20261115/ledger-35row-QA/`.
 
 Corrected only the privatepreparedv4top-level correction_scope wording from ambiguous byte-value-identical to JSON-value-identical: Unicode escaping differed for4oldrows, while their JSONvalues/rawscores/identities remain identical. All35rowvalues remain unchanged by this followup. Updated VALIDATION and SHA256SUMS; no actual ledger/script/notes/frontdoor change, repeated passed probe, review call or grade/acceptance change.16/Lepolicy/filter and24snapshot/prose/layout gates remain separate.
+
+### 2026-11-15: Ledger-QA wording note closed; no duplicate work requested
+
+3closed the lowprovenance wording note ata32a44aa (d26538767feb,no replyneeded).
+5compared original2b82289f and clarifiedpreparedv4: onlyoutercorrection_scope
+changes toJSON-value-identical;all35rowvalues identical. Existing rawfunctional
+probe outputs remain bound to the original testedinput, not silently rehashed
+as newexecution. No repeat passed probe/model/build or publicdataset adoption.
+No newblocking accountingdefect found within the stated scope;16retains
+final exact-file/filter/normalbuild gates,24AppendixE,LePU/assurance decisions.
+All currently assigned5drawing/correction/operationalQA jobs are complete and
+handed off. No new ownerprompt is needed merely for idle/waiting status.
+The30min passivewatchdog remains live; publication as a whole is incomplete.
