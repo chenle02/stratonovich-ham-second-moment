@@ -61,7 +61,7 @@ The plan above is an intra-round checkpoint, not whole-book clearance.
 ## Live team status — read before messaging
 
 <!-- team-status:start -->
-Snapshot UTC: 2026-11-15T07:52:37.739529+00:00. Agent5 maintains this compact summary from submitted
+Snapshot UTC: 2026-11-15T14:09:16.668839+00:00. Agent5 maintains this compact summary from submitted
 owner reports and committed artifacts. Owners keep their normal dated entries
 below; those entries and exact receipts establish scope. This is not a new
 acceptance ledger. Check this section and its linked evidence before asking
@@ -71,15 +71,20 @@ stale/ambiguous information, rather than routine queries.
 ### Agent3 — mathematics and reviews
 
 - Current: OP locally accepted; IC full assigned scope unaccepted (partial
-  positive evidence); PU protocol acceptance/cap compliance qualified; all four
+  positive evidence); PU scoped-evidence exception accepted by Le at3fac2bd9,
+  aggregate usage/cap compliance still unknown; all four
   calls and curation are closed; CH is also PARTIAL, not a full assigned-scope pass.
 - Artifacts: frozen scopes16131204/sourceb35536c1; OP06594e2d; ICdf8039cb;
   cohort1b4328c6/board308b916e; exact FOUR-CHECKS-SUMMARY/RESULT and
   OP/IC/PU/CH adjudications under four-small-cold-b35536c1-attempt-01.
-- Next: Le's assurance/PU-protocol disposition; continue authorized private
-  ledger/disclosure upkeep and specific source-semantic handoffs, no new reviews.
+- Active: Le directly assigned Appendix E synchronization and final-gate upkeep.
+  Agent3 owns the isolated ledger/generator/data/prose candidate (additive ledger
+  c2359a4f); Agent24 reviews the diff/layout, without a competing rebuild.
+  Standalone consistency checker/tests go to16; private/release wiring stays16-owned.
+- Next: exact built candidate to16 for checks, then24's combined rebuild on top.
+  Le's whole-book assurance decision remains separate; no new reviews.
 - Also: guides/endings source audit40f63f79 and successor checkc074c0eb done.
-- Dependency: final source/protocol adjudications and Le's assurance decision;
+- Dependency: candidate checks and Le's whole-book assurance decision;
   no new source binding, retry or grade promotion is inferred by coordination.
 
 ### Agent16 — final publication process
@@ -88,8 +93,12 @@ stale/ambiguous information, rather than routine queries.
   be3e548c, accepted Preface replay slot7=6aa11295.
 - Readability guides/endings/short-LoF/time table landed as`9c334846` after
   owner checks; source-line remap is verified by22. Current book395/reader28.
-- Next: actual review dispositions and Le's assurance, final composed typesetting
-  coverage, separately approved explanatory/voice candidates and release freezes.
+- Current preparation order:3 Appendix E candidate first, then24 ONE combined
+  HELD rehearsal on top. Earlier6c3c631a is pre-Appendix-E, not the final PDF.
+  All five individual editorial units are checked by16; composition and Le
+  typesetting/selection remain separate. R is NOT issued.
+- Next: verify3 candidate, direct24 composition, verify composed PDF and show
+  Le the exact SHA/path; reconcile direct Le decisions under16's standing rule.
 - Dependency: Le's assurance/typesetting/release decisions and approved source
   freezes. Agent16 owns R, final F, export/rehearsal and release safety.
 
@@ -109,8 +118,10 @@ stale/ambiguous information, rather than routine queries.
   34a356ac are HELD;3checked glossary/row semantics at69aa5272, with the latter
   table adding only the requested ragged-right row5 alignment.
 - Car is settled: be3e548c carried by slot7=6aa11295; no new design work.
-- Next: the focused plural-authorial-voice pass and integration handoffs;
-  glossary/radius successors await16/Le checks rather than another rewrite.
+- Active: read-only review of3 Appendix E upkeep. Then, on16 handoff, rebuild
+  combined Preface replays/voice/glossary/radius/kappa/mask on that source.
+  Chapter8 was excluded from the earlier rehearsal; any new direct Le request
+  to refine/retain it must be reconciled by16/24 before the final selection.
   Exponent source fixdbc1e96a is now typeset as9c2abb1e (same pages,1.32mm
   annotation-height exception measured). Maskca8449db/flow8025ccd6 are HELD;
  3checked the corrected mask5fbf25e2 at44f9d961; κ9c2abb1e and mask remain
@@ -135,8 +146,10 @@ stale/ambiguous information, rather than routine queries.
   Requested drawing fixes/handoffs are done. Private six-call ledger proposal
   2b82289f passed bounded35-row accounting/currency/guard QA;3closed the low
   provenance wording note ata32a44aa without changing any record value.
-  Current authorized5helpers are complete; the goal's three-turn approval-blocker
-  audit passed. Passive monitoring continues; final decisions stay withLe/16.
+  Le resumed the full goal and authorized ordered owner prompts;16 received
+  sequencing jobe97bff49376b and assigned24 composition. Current5work tracks
+  Appendix E integration before R and avoids premature22/29 prompts. Earlier
+  blocked-audit entries are historical; final reserved decisions stay withLe/16.
 - Source of truth: this live section and the dated Progress entries. Runtime
   screenshots and private snapshots are observations, not approvals.
 - Prompt only concrete authorized unblocked work. Do not disturb busy agents,
@@ -21091,3 +21104,18 @@ Generator --check is read-only and preserves committed-ledger/whole-book guards.
 Candidate book396pages(+1), clean build0errors/0undefined/0overfull; root inspected changedcloseoutPDFpages370–372. Only AppendixE's two TeX files changed; scientific proof sources and readerTeX/PDF remain identical. Bounded independent bookkeeping QA found no remaining issue after adding format separation to cost buckets. No new scientific model calls, sourceproof repairs, R/F/public export/submission or whole-book assurance claimed. Exact candidate and validation are held for16/24technical file/filter/layout checks and the standing exact-SHA adoption sequence; no candidate push/adoption inferred. Whichever later editorial candidate lands second must rebuild atop the first. Le explicitly requested informing5; scoped-goal notice6cab7a6d275c queued while5busy, not yet delivered.
 
 Agent24 preliminary read-only review confirmed arithmetic/Kimi scopes and identified an ambiguous final-step note keyed to shared token formats. Corrected it to name only accounting scopes S2/S4 and added a regression control. Ledger-derived macros now supply dated closeout counts; scope explanations and review limitations use plain language, with no raw accounting field changes. Rebuilt after these presentation corrections; final candidate remains subject to exact-file checks.
+
+### 2026-11-15: Agent5 supervision resumed with Appendix E before combined rehearsal
+
+Le explicitly resumed supervision and requested owner prompts in dependency order.
+Sequencing message e97bff49376b reached16;16 submitted that all five individual
+editorial units were checked and assigned24 one combined HELD rehearsal. After
+Le directly scoped Appendix E upkeep to3, owners agreed3 finishes first and24
+rebuilds on top; preliminary6c3c631a is not a final authoritative PDF. Fresh
+all-five screen inspection finds3 implementing final consistency checks,24
+reviewing its diff/layout,22 waiting for R and29 waiting for final pins. No
+draft input is treated as approval. PU bounded exception is now recorded at
+3fac2bd9; its unknown aggregate usage/cap and separate whole-book assurance
+remain explicit. No new review, duplicate build, source adoption, freeze or
+public release is authorized by this status refresh. Private/release wiring
+belongs to16; no idle-worker nudge is needed.
