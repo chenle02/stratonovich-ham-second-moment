@@ -61,101 +61,81 @@ The plan above is an intra-round checkpoint, not whole-book clearance.
 ## Live team status — read before messaging
 
 <!-- team-status:start -->
-Snapshot UTC: 2026-11-15T14:09:16.668839+00:00. Agent5 maintains this compact summary from submitted
-owner reports and committed artifacts. Owners keep their normal dated entries
-below; those entries and exact receipts establish scope. This is not a new
-acceptance ledger. Check this section and its linked evidence before asking
-another agent for status. Send messages for handoffs, decisions or genuine
-stale/ambiguous information, rather than routine queries.
+Snapshot UTC: 2026-11-15T17:35:14.860013+00:00. Agent5 maintains this summary from owner
+receipts and committed artifacts. Owners retain their dated evidence below.
+This is the workflow summary, not a scientific acceptance ledger. Read it
+before asking another agent for status; send only needed handoffs or decisions.
 
 ### Agent3 — mathematics and reviews
 
-- Current: OP locally accepted; IC full assigned scope unaccepted (partial
-  positive evidence); PU scoped-evidence exception accepted by Le at3fac2bd9,
-  aggregate usage/cap compliance still unknown; all four
-  calls and curation are closed; CH is also PARTIAL, not a full assigned-scope pass.
-- Artifacts: frozen scopes16131204/sourceb35536c1; OP06594e2d; ICdf8039cb;
-  cohort1b4328c6/board308b916e; exact FOUR-CHECKS-SUMMARY/RESULT and
-  OP/IC/PU/CH adjudications under four-small-cold-b35536c1-attempt-01.
-- Active: Le directly assigned Appendix E synchronization and final-gate upkeep.
-  Agent3 owns the isolated ledger/generator/data/prose candidate (additive ledger
-  c2359a4f); Agent24 reviews the diff/layout, without a competing rebuild.
-  Standalone consistency checker/tests go to16; private/release wiring stays16-owned.
-- Next: exact built candidate to16 for checks, then24's combined rebuild on top.
-  Le's whole-book assurance decision remains separate; no new reviews.
-- Also: guides/endings source audit40f63f79 and successor checkc074c0eb done.
-- Dependency: candidate checks and Le's whole-book assurance decision;
-  no new source binding, retry or grade promotion is inferred by coordination.
+- Review state: OP accepted locally; PU bounded evidence accepted at3fac2bd9,
+  with aggregate usage/cost/cap still unknown. IC and CH remain PARTIAL.
+  Broad cold read remains INCONCLUSIVE/medium; Chapter12 skeptic NOT OBTAINED.
+- Completed: Appendix E upkeep c35cbc0a and exact combined-tree reseal33ed4ef7
+  are adopted. The selected ledger has35 process records; snapshot185 artifacts
+  passed. Chapter8 caption/dependency check requires no change.
+- Next: reconcile final review inventory and reseal after any later relevant
+  source/PDF/decision change. No new scientific review or proof repair authorized.
 
 ### Agent16 — final publication process
 
-- Current: figure replayb35536c1 on origin/<HUB>; car design settled at
-  be3e548c, accepted Preface replay slot7=6aa11295.
-- Readability guides/endings/short-LoF/time table landed as`9c334846` after
-  owner checks; source-line remap is verified by22. Current book395/reader28.
-- Current preparation order:3 Appendix E candidate first, then24 ONE combined
-  HELD rehearsal on top. Earlier6c3c631a is pre-Appendix-E, not the final PDF.
-  All five individual editorial units are checked by16; composition and Le
-  typesetting/selection remain separate. R is NOT issued.
-- Next: verify3 candidate, direct24 composition, verify composed PDF and show
-  Le the exact SHA/path; reconcile direct Le decisions under16's standing rule.
-- Dependency: Le's assurance/typesetting/release decisions and approved source
-  freezes. Agent16 owns R, final F, export/rehearsal and release safety.
+- Adopted: internal master33ed4ef7, recorded atc0e941df, on Le's direct push
+  instruction. Chain: c35cbc0a Appendix E -> b1f0c36e combined source/PDFs ->
+  33ed4ef7 reseal. Origin, <HUB> and <MACHINE> are synchronized;402/28 pages.
+- Checks: own pinned builds, source equality, page map, links/filter and exact
+  reseal check passed. The earlier internal-push approval hold is resolved.
+- Next: Le's scientific-assurance disposition and the applicable typesetting
+  acceptance, then full source freeze R. R/F/public release/arXiv are not issued
+  or authorized by the internal landing. Gate277ec8c8 remains a separate held
+  release-procedure unit; replay on the current tip if adopted.
 
 ### Agent22 — Lean verification
 
-- Current: frozen L14, re-anchor tool1fa1508 ready;9c334846 remap matches the
-  combined dry run,8915 citations/0unresolved; expected shifts absorbed at R.
-- Next: on Agent16's full R, re-anchor, review/confirmation, Le acceptance and
-  public v0.10.0 delivery with exact tag/commits/DOI/receipts.
-- Later check: R→re-pin candidate must have0SHIFTED citations before push.
-- Dependency: R; no early re-anchor or duplicate idle-time tests.
+- Completed: b1f0c36e remap dry run PASS (74a04f57);8915 rows,5601 expected
+  moved/3314 unchanged, zero deviations/unresolved. All92 newly ambiguous rows
+  read and confirmed;14972 census entries decided. Manifest-only33ed needs no
+  new source remap. This is preparation, not a new public Lean release.
+- Next: after16's full R, re-anchor L14, verify/review, obtain applicable Le
+  acceptance and publish v0.10.0 with exact commits/tag/DOI/receipts.
+- Later: R-to-repin candidate must have zero SHIFTED citations before adoption.
 
 ### Agent24 — writing and polishing
 
-- Current: required guides/endings corrections independently source-checked
-  by3 and landed through`9c334846`. Corrected glossary0479797d/radius table
-  34a356ac are HELD;3checked glossary/row semantics at69aa5272, with the latter
-  table adding only the requested ragged-right row5 alignment.
-- Car is settled: be3e548c carried by slot7=6aa11295; no new design work.
-- Active: read-only review of3 Appendix E upkeep. Then, on16 handoff, rebuild
-  combined Preface replays/voice/glossary/radius/kappa/mask on that source.
-  Chapter8 was excluded from the earlier rehearsal; any new direct Le request
-  to refine/retain it must be reconciled by16/24 before the final selection.
-  Exponent source fixdbc1e96a is now typeset as9c2abb1e (same pages,1.32mm
-  annotation-height exception measured). Maskca8449db/flow8025ccd6 are HELD;
- 3checked the corrected mask5fbf25e2 at44f9d961; κ9c2abb1e and mask remain
-  in16/Le's approval route, and the flow alternative remains HELD.
-  Voice9f5c7e6a conforms to the standing rule in5's bounded source check.
-- Dependency:3checks mathematical/dependency claims;16checks publication
-  candidates; Le approves required final SHAs. F/G wait for R/public Lean pins.
+- Completed: combined b1f0c36e is adopted, including seven Preface replays,
+  plural voice, glossary, radius table, kappa/mask and refined Chapter8 figure
+  b100006b (drawing06bc1687). Car is settled; no new design work is needed.
+- Next: after actual Lean pins and new video IDs, update the51 book links and
+  final front-door/Appendix pins, rebuild book and reader coherently, then hand
+  exact source/PDF hashes to3 for resealing and16 for verification/final F.
+- Dependency:16 owns the freeze and landing;22 owns Lean/source-line evidence;
+  29 supplies the full old/new episode-ID table before F. No early repinning.
 
-### Agent29 — video repository
+### Agent29 — video repository and YouTube delivery
 
-- Current: review fixes56a3d86 pushed/synced; reported video gate passed,
- 31commented scenes rendered, render audits empty. Standing narration-voice
-  rule recorded atab74dab; car/figure displays handled.
-- Next: final-F re-pin, moved numbers/pages and raw scene stamps,1080p build,
-  gate and replacement/book-link handoff in the approved release sequence.
-- Dependency: final F and22's publicv0.10.0 tag/commits/DOI; no early re-pin.
+- Plan: REPLACEMENT-PLAN.md at95f53d8, working defaults52027e4c; no final
+  replacement uploads or public switches completed. All11 YouTube replacements,
+  including playlist/link/visibility verification, are publication deliverables.
+- Order: R + public Lean pins -> verified video sources/renders -> private
+  uploads/new IDs ->24's51-link update before F -> final-content check against F.
+- Public switch: new uploads public before/with the repository flip; verify each
+  signed out before changing its predecessor. Working defaults archive old
+  uploads as Unlisted and label the text/source freeze R; final descriptions
+  carry F/Lean/book links.16 owns final release sequencing and required approvals.
 
 ### Agent5 — coordination and helper work
 
-- Current:30-minute read-only watchdog plus continuous message handling;
-  all-five-screen context is combined with submitted artifacts before decisions.
-  Requested drawing fixes/handoffs are done. Private six-call ledger proposal
-  2b82289f passed bounded35-row accounting/currency/guard QA;3closed the low
-  provenance wording note ata32a44aa without changing any record value.
-  Le resumed the full goal and authorized ordered owner prompts;16 received
-  sequencing jobe97bff49376b and assigned24 composition. Current5work tracks
-  Appendix E integration before R and avoids premature22/29 prompts. Earlier
-  blocked-audit entries are historical; final reserved decisions stay withLe/16.
-- Source of truth: this live section and the dated Progress entries. Runtime
-  screenshots and private snapshots are observations, not approvals.
-- Prompt only concrete authorized unblocked work. Do not disturb busy agents,
-  and do not prompt an idle agent merely because it is idle.
-- Keep each owner responsible; helpers may assist independent jobs without
-  taking over publication, mathematics, Lean, writing or video ownership.
+- Completed: illustration fixes and ordered artifact handoffs; independently
+  verified landed402/28 PDF hashes and origin/<HUB>/<MACHINE> parity. The main
+  checkout PDF is current. Stable local previews retain exact committed bytes.
+- Current:1800-second read-only watcher and message handling; no generic nudges,
+  no busy-session interruption or submission of unsent drafts. Internal push
+  blockage is historical; remaining release decisions retain their own gates.
+- Durable learning: Le-AI-Lab coordination skill/checklist promoted at ea456102
+  and4d511a5c; canonical/runtime synchronization verified. This is operational
+  learning, not scientific or publication acceptance.
+- Keep one progress authority and each owner's role. Confirm exact artifact
+  delivery to every dependent owner; queued, delivered, checked and landed are
+  distinct states. Advance only real authorized unblocked work.
 <!-- team-status:end -->
 
 
@@ -21125,3 +21105,17 @@ belongs to16; no idle-worker nudge is needed.
 Agent16 cd325d9da735 independently built/checks b647: clean396pages, honest AppendixE, sourceproofs/reader unchanged, generateddata/tests pass, live/draft AI-use agree and every changed/new public line clean under filter (existing AGENTS/Progress scrub hits predate candidate). Required correction: interim book must inherit the adopted Nov13cover pin, not currentdate. Rebuilt with SOURCE_DATE_EPOCH1794571200/FORCE_SOURCE_DATE1; PDFtext comparison proves only coverdate changes and other395pages identical. This does not assign finalR/epoch. Fixture email literal replaced with plain fixture identity to avoid rule14 rewriting.18tests/5wholebookguards remain PASS; manifest and validation resealed. Backmatter112targets move1page; no chapterstart moves. Source/push remains held for exactcorrectedSHA adoption; private/release STOP integration and rehearsal remain16-owned. Originf1daProgress changes were merged preserving bothappendblocks, without rebasing scientific/data provenance or losing5ownersequence.
 
 The earlier preliminary12UTC pin instruction conflicted with actual originPDFmetadata D:20261113170000Z and existing Progress21017/21047. Inherit the actual adopted epoch1794589200 (Nov13 12:00 -0500 =17UTC), matching24's report. Rebuilt again with that exact pin: all396page texts unchanged vs71c, creation/modificationmetadata now identical to adopted origin. Sourceproofs unchanged, no new finalR/epoch. Validation and manifest resealed against the actual finalcandidate bytes.
+
+### 2026-11-15: Agent5 independently verifies the internal master PDF landing
+
+On16's actual landing receipt, fresh local/origin and <HUB> checks confirm
+c0e941df contains the adopted source chain ending33ed4ef7. Both hosts carry the
+identical402-page book and28-page reader; tracked working trees are clean and
+PDF timestamps retain the adopted Nov13 epoch. Updated the compact live board
+at this source landing checkpoint, avoiding status-only origin churn during
+candidate assembly. Verification receipt is retained under
+private/publication-closeout/agent5-supervision-20261115/MASTER-LANDING.json.
+No TeX/PDF/source-regime change, new build/review, R/F or public-release claim.
+The old master-push refusal is resolved by actual Le approval and16's execution;
+it must not remain a current blocker in coordination. Scientific assurance and
+the remaining release/Lean/video/source-package/Le-only submission gates remain.
