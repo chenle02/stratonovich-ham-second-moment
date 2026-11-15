@@ -333,3 +333,20 @@ The DOI and final links go into the video descriptions, which stay editable, so 
 - Step 3, a local tag before publication. The v0.10.0 tag is created on the local public-candidate commit and is NOT pushed to the public GitHub repository before step 5, because a pushed tag would make the commit public. The SHA is fixed from the moment the tag is created. #22 keeps a private backup (a git bundle on <HUB>) and gives #29 the tag name and the full commit SHA. #29 uses no GitHub URL for it until step 5.
 - Step 5, the GitHub route as for v0.9.0. Push main and the tag, publish the gh release, and Zenodo mints the DOI. `lean-pkg publish` refuses while the manuscript is unposted, because the book stays private until F. The lean-pkg registry record stays verified-private until F; after F, #22 records it with lean-pkg.
 - Step 6, the DOI as a docs-only successor. The Zenodo DOI is written into the companion by a docs-only commit on top of the tag, as `0966ef6` did for v0.9.0. The book pins are: verified = the v0.10.0 tag commit; coverage = the same commit, or the DOI successor if #24 wants the DOI-bearing docs. #22 sends both SHAs and the DOI after step 5.
+
+### Lean-coverage badges in the book: contract and prerequisite (#5 asked, 2026-11-15)
+- Source: the same `coverage.yaml` as Appendix F, keyed on `rows[].paper.label`. The meaning comes from `class` × `conclusion` only:
+  - same-assumptions/full: 48 rows, 44 results plus 4 displays or remarks. Only these may be called "full".
+  - same-assumptions/weaker: 16.
+  - inputs-supplied/full: 1.
+  - inputs-supplied/weaker: 34.
+  - outside: 2.
+  - no row: not formalized.
+- An E: or R: row covers that display or remark only.
+- Gates:
+  - (a) Before R, a badge may change cited TeX lines (the re-anchor absorbs it). After R, a badge must add no line in a cited file, otherwise the zero-shift check at F fails.
+  - (b) No scope strings in the book before F: they contain TeX line numbers that change at the re-anchor.
+  - (c) Until v0.10.0 is published, the wording is "wave L14 (gate 8f51004), release pending", with no DOI or URL.
+- Prerequisite, not started: no structured, approved label -> model-scope source exists. The M1-M6 register is prose, in the README and the scope fields. A regex finds M-numbers in 19 of the 101 rows, but it is incomplete, because some rows name their model in words only.
+  - Before any rollout across the book, #22 builds a curated sidecar keyed by label (models plus a one-line qualifier), reads every row and has it reviewed. This waits for Le to choose the badge style.
+  - Until then, unknown scope fails closed: no marker, never "full".
