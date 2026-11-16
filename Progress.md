@@ -51,6 +51,8 @@ a publishing gate under Agent 16. No root push, R/F or release is implied.
 
 ### RP002 prepared: fixed masks and displacement moments
 
+Launched fresh as `readable-masked-moments-3d421ab8d43d4d4c9714a34663637ccc` at `2026-11-16T06:06:06.668958+00:00`; requested DeepSeek V4 Pro, combined reasoning/public cap 65,536 and timeout 3,600 seconds. The isolated native process is running; no result or acceptance is claimed. Full safe running custody is in `reviews/2026-11-16-readable-masked-moments-deepseek/STATUS.json`.
+
 Next independently assigned module: all three rewritten proofs of
 `notes/integrated_masked_moments.tex` at `5c55515b`, baseline `cdde711c`.
 Agent 16 verified its mechanics; fresh worker QA found the arguments
