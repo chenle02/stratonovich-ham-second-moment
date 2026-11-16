@@ -1,0 +1,218 @@
+{
+  "schema": "readability-native-custody/1",
+  "review_record_id": "RP013",
+  "protocol_status": "PENDING_EXPLICIT_DISPOSITION",
+  "operator_independent_status": true,
+  "recorded_utc": "2026-11-16T09:07:14.997914+00:00",
+  "custody_scope": "Native transport/binding evidence only; no mathematical adjudication, grade change or model/publish approval.",
+  "source": {
+    "source_file": "notes/integrated_young_upper_foundation.tex",
+    "baseline": "cdde711c248862f33207860107dd0e6b31d60852",
+    "source_revision": "e07672d40443cd6ba655b0cf6eb05a1d1a454888",
+    "carrier_freeze_revision": "9ade9835315d339582c6f6d40a0c98638c836695",
+    "prompt_sha256": "7c7a779699626317a7adaec1a1dfacc32dc60b1235d6d7cf0bac252e6d82e366",
+    "source_binding_sha256": "168535fc063a42118636b7b438876f6a4528fa6e905ce549b60f46208b3e97f4",
+    "all_source_payload_binding_verified": true,
+    "assigned_proof_inventory_bytes_verified": true,
+    "target_full_vs_view": [
+      {
+        "side": "old",
+        "source_path": "notes/integrated_young_upper_foundation.tex",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "delivery": "WHOLE_FILE",
+        "delivered_equals_full_original_file": true,
+        "delivered_sha256": "28c299b4f0bff4f6cc1a4a63db881bd2e849b43e235c2824aec1ddd34a4f2415"
+      },
+      {
+        "side": "new",
+        "source_path": "notes/integrated_young_upper_foundation.tex",
+        "source_revision": "e07672d40443cd6ba655b0cf6eb05a1d1a454888",
+        "delivery": "WHOLE_FILE",
+        "delivered_equals_full_original_file": true,
+        "delivered_sha256": "34f4db462eb682b313623fe917327238c4faff3bdf0cfeb89c0f60eef542802e"
+      }
+    ],
+    "payloads": [
+      {
+        "path": "inputs/old-module.txt",
+        "source_path": "notes/integrated_young_upper_foundation.tex",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "selection": "WHOLE_FILE",
+        "sha256": "28c299b4f0bff4f6cc1a4a63db881bd2e849b43e235c2824aec1ddd34a4f2415",
+        "bytes": 4810
+      },
+      {
+        "path": "inputs/new-module.txt",
+        "source_path": "notes/integrated_young_upper_foundation.tex",
+        "source_revision": "e07672d40443cd6ba655b0cf6eb05a1d1a454888",
+        "selection": "WHOLE_FILE",
+        "sha256": "34f4db462eb682b313623fe917327238c4faff3bdf0cfeb89c0f60eef542802e",
+        "bytes": 7691
+      },
+      {
+        "path": "inputs/context-constant-young-baseline.txt",
+        "source_path": "notes/integrated_constant_phase_young.tex",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "selection": "WHOLE_FILE",
+        "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3",
+        "bytes": 27376
+      }
+    ]
+  },
+  "native_identity_checks": {
+    "exactly_one_recorded_coordinator_launch": true,
+    "exclusive_attempt_lock_present": true,
+    "fresh_parentless_session": true,
+    "exactly_one_user_and_one_assistant_message": true,
+    "assistant_parent_is_original_user": true,
+    "raw_event_session_and_export_match_private_session_record": true,
+    "native_user_text_byte_exact": true,
+    "expected_provider": "deepseek",
+    "expected_model": "deepseek-v4-pro",
+    "actual_provider": "deepseek",
+    "actual_model": "deepseek-v4-pro",
+    "actual_executable_version_from_native_export": "1.18.31",
+    "profile_sha256": "ccdf515979e77bbe752d924735a915260ca437d3d31a954d4a739c946fca0ea1",
+    "effective_global_and_agent_permissions_all_deny": true,
+    "observed_native_tool_parts": 0,
+    "operator_continuation_session_fork_share_flags_absent": true,
+    "native_export_return_code": 0,
+    "native_export_regular_file": true,
+    "whole_native_export_JSON_parsed": true,
+    "reasoning_content_not_read_or_used": true
+  },
+  "timestamps": {
+    "coordinator_started_utc": "2026-11-16T08:17:41.769034+00:00",
+    "coordinator_finished_utc": "2026-11-16T08:31:21.592740+00:00",
+    "elapsed_seconds": 819.823716878891,
+    "native_session_created_utc": "2026-11-16T08:17:42.548000+00:00",
+    "step_start_events": [
+      {
+        "raw_timestamp": 1794817064573,
+        "utc": "2026-11-16T08:17:44.573000+00:00"
+      },
+      {
+        "raw_timestamp": 1794817145536,
+        "utc": "2026-11-16T08:19:05.536000+00:00"
+      }
+    ],
+    "reasoning_span_metadata_only": [
+      {
+        "start_utc": "2026-11-16T08:17:47.634000+00:00",
+        "end_utc": null,
+        "end_recorded": false
+      },
+      {
+        "start_utc": "2026-11-16T08:19:05.535000+00:00",
+        "end_utc": "2026-11-16T08:29:43.631000+00:00",
+        "end_recorded": true
+      }
+    ]
+  },
+  "native_counters": {
+    "coordinator_launches": 1,
+    "observed_native_step_start_events": 2,
+    "observed_export_step_start_parts": 2,
+    "observed_reasoning_spans_count_only": 2,
+    "observed_export_step_finish_parts": 1,
+    "observed_raw_step_finish_events": 1,
+    "assistant_messages": 1,
+    "tool_parts": 0,
+    "coordinator_launch_count_is_not_provider_stream_or_physical_backend_request_count": true,
+    "physical_backend_request_count": null,
+    "physical_backend_request_count_status": "UNKNOWN"
+  },
+  "retry_classification": {
+    "mechanism": "automatic SessionProcessor SessionRetry re-entry of a retryable LLM stream effect on the same assistant message; not continuation",
+    "classification": "CONFIRMED_AUTOMATIC_SESSION_RETRY",
+    "agent21_static_code_message_ids": [
+      "73ed31306296"
+    ],
+    "agent21_exact_run_metadata_message_ids": [
+      "25d00fa2512a"
+    ],
+    "exact_run_agent21_confirmation_claimed": true,
+    "basis": "Root-relayed Agent21 static code and exact run metadata confirmation.",
+    "installed_binary_full_sha256": "f9dab32248695e9ebd56b16a1921798fd85112cf5a69c7dfd0cabc1e17be4a11",
+    "binary_bytes": 185030784,
+    "binary_full_SHA_observation": "POST_RUN_ONLY",
+    "launch_time_full_binary_SHA_recorded": null,
+    "runtime_version_evidence": "Native session export reports1.18.31; full binary hash independently observed offline after runs and matches root observation.",
+    "static_source_evidence_sha256": "b576c5a627783d64a8711310bcadb8bd13371170d40738801b5d24a035af693f",
+    "retained_exact_minified_code_anchors_verified": 13,
+    "first_retryable_error_class": null,
+    "first_retryable_error_class_status": "UNKNOWN",
+    "observed_reentry_count": 1,
+    "total_automatic_retry_attempt_count": null,
+    "total_automatic_retry_attempt_count_status": "UNKNOWN"
+  },
+  "last_reported_finish_only": {
+    "scope": "Last completed native step/assistant counters only; not whole invocation.",
+    "finish": "stop",
+    "tokens_verbatim_including_cache": {
+      "total": 50474,
+      "input": 111,
+      "output": 5820,
+      "reasoning": 29823,
+      "cache": {
+        "write": 0,
+        "read": 14720
+      }
+    },
+    "cost_verbatim": 0.07097024,
+    "currency": null,
+    "one_exported_finish_matches_assistant_info": true
+  },
+  "unknown_prior_and_whole_invocation": {
+    "first_stream_usage": null,
+    "first_stream_usage_status": "UNKNOWN",
+    "first_stream_cost": null,
+    "first_stream_cost_status": "UNKNOWN",
+    "first_stream_finish": null,
+    "first_stream_finish_status": "UNKNOWN_NO_FINISH_RECORD",
+    "whole_invocation_usage": null,
+    "whole_invocation_usage_status": "UNKNOWN",
+    "whole_invocation_cost": null,
+    "whole_invocation_cost_status": "UNKNOWN",
+    "whole_invocation_combined_output_tokens": null,
+    "whole_invocation_cap_compliance": null,
+    "whole_invocation_cap_compliance_status": "UNKNOWN",
+    "whole_invocation_cap_compliance_verified": null,
+    "configured_per_run_combined_cap": 65536,
+    "not_zero_not_estimated_not_summed": true
+  },
+  "preservation": {
+    "all_protected_input_before_after_hashes_equal": true,
+    "all_protected_inputs_still_match_terminal_hashes": true,
+    "raw_report_unchanged": true,
+    "raw_public_header": {
+      "category": "proof-readability-equivalence",
+      "model": "deepseek-v4-pro (deepseek/deepseek-v4-pro)",
+      "verdict": "PASS",
+      "confidence": "high"
+    },
+    "raw_public_report_sha256": "deb9efd3d1e94a6cf9d9a93a72e0b6c83663521676ea2a5fc2a1e48b25663b79",
+    "raw_report_or_grade_edited": false,
+    "mathematical_adjudication_performed_in_this_record": false
+  },
+  "artifact_bindings_sha256": {
+    "LAUNCH.json": "45fe307620ef64a055438a37e129a111945ff8ae19634a30353746e107189e7c",
+    "EXIT.json": "514317323f56b92af92c9853b2f55b96a597661c081b01266b7cafb51888863b",
+    "DISPATCH-PREFLIGHT.private.json": "73d832e0f5b153ff14a13176f4a2bfc4a7111434c3fd83bdae4ed374e4e5f180",
+    "TRANSPORT-RESULT.private.json": "7b7aa51e4a4ed4925a28e6536ab2a6714dee4d6faa6823f2fb1d9fc0419893f3",
+    "native-events.jsonl": "ead8b7c7c9e25eb45b69b317167892e3ea3a9378ec449ba485d27522997d45d4",
+    "native-export.json": "bcdbddbb07d18f733617a79c49b97f23fa035286e4d4b12179ef4b0bff2b6fd3",
+    "PUBLIC-REPORT.md": "deb9efd3d1e94a6cf9d9a93a72e0b6c83663521676ea2a5fc2a1e48b25663b79",
+    "SOURCE-BINDING.json": "168535fc063a42118636b7b438876f6a4528fa6e905ce549b60f46208b3e97f4",
+    "MANIFEST.json": "980cf4651804629f0e199c9fed006e5e09b250a6fd8149e141b281ee7a296e98"
+  },
+  "no_new_action": {
+    "new_model_calls": 0,
+    "new_exports": 0,
+    "restarts": 0,
+    "global_or_code_fixes": 0,
+    "probes": 0,
+    "RP007_repeat": false,
+    "public_or_Git_or_source_edits": false
+  }
+}

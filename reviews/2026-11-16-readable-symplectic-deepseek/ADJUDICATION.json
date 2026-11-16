@@ -1,0 +1,360 @@
+{
+  "review_record_id": "RP017",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side public-report/source mathematical QA, not another independent scientific vote or native-protocol assessment",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "a512b15d64f14a8cdd66cbe08f9934c957cdb026",
+  "source_file": "notes/integrated_symplectic_phase.tex",
+  "source_binding_sha256": "8581373600d22e2bec01f87e0c0ea679949da3696ca06a7e61b96c341d45677f",
+  "public_report_sha256": "38905ec1a71895ae35ca46590edc8668aa2e0a3ac5ade4dc4de68b1e76f22a3e",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "SCOPED_ARGUMENT_PRESERVATION_SUPPORTED_WITH_REPORT_ONLY_SYMPLECTIC_NOTATION_AND_ALGEBRA_SLIPS",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:symplectic-free": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    },
+    "L:symplectic-source-mean": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:symplectic-source": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R2",
+        "R3"
+      ]
+    },
+    "P:symplectic-raw": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R4"
+      ]
+    },
+    "P:symplectic-block-mean": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:symplectic-free",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 24,
+      "source_old_statement_lf": [
+        31,
+        61
+      ],
+      "source_old_proof_lf": [
+        63,
+        134
+      ],
+      "source_new_statement_lf": [
+        31,
+        61
+      ],
+      "source_new_proof_lf": [
+        63,
+        160
+      ],
+      "source_old_proof_sha256": "7c6fd290b6be266e964ac67e8816e6c0ef0f13c174b03cd08beff79ef35e589b",
+      "source_new_proof_sha256": "d7d6d24f101c8801867a6379516087a3249d453c7a93de692429b784045b634a",
+      "mathematical_check": "The public argument gives the balanced isometry, skew isometric J_symp and the correct final physical formula J_E(f,g)=(Lambda^-1 g,-Lambda f), with the correct Sobolev dual pairing. An intermediate C_bal^-1 tuple is mistranscribed (R1); the isometric conjugation concept and final formula independently supply the needed bounded/skew properties. The free Fourier matrix has determinant one, bounded even entries and a continuous zero quotient; integrating the 2x2 symplectic identity against balanced L2 vectors proves conservation without a zero-frequency trace or rough generator derivative. For real b, the multiplier bound and absolutely integrable -\u222bfbu+\u222bubf give the force identity for omega. Compact Young increments imply compact U_X-I, and free composition gives a compact endpoint difference. Spatial translations are E-isometries commuting with the free group; weighted Fourier products are L1, so translated pairings tend to zero, compact K sends these weak-null families to norm-zero, and reverse triangle gives ||S+K||>=||S||. Velocity reversal plus the group law gives ||S||>=1. Ordered finite-product telescoping yields a compact difference from the corresponding free product, with no commutation of noisy factors or uniform approximation claim. The new reverse-triangle explanation is correct.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "L:symplectic-source-mean",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 98,
+      "source_old_statement_lf": [
+        136,
+        152
+      ],
+      "source_old_proof_lf": [
+        154,
+        186
+      ],
+      "source_new_statement_lf": [
+        162,
+        178
+      ],
+      "source_new_proof_lf": [
+        180,
+        227
+      ],
+      "source_old_proof_sha256": "950cf03c94292bd210656f130d98e4b2e4e6002fa6fce8f6c6ba8b984ed0dd92",
+      "source_new_proof_sha256": "2edb1d2c495cae3ae67916301073a13e4653c9b541948b4ad7c19e5d0c1ddac6",
+      "mathematical_check": "The scalar Z=W(Phi) times a separably valued L2 Ctheta path is strongly measurable and Bochner integrable by E||ZM||<=||Phi||HW ||M||L2Ctheta. The same inequality applied to M^rho-M yields the explicit mean convergence; the supplied covariance-contraction bound controls positive-width source norms. The retained isometry j_src and feature vector v_rho give h=\u3008j_src Phi,v_rho\u3009, with the stated fixed-positive-width time continuity and spatial derivatives. Multiplying once by the fixed physical mask gives bounded compact support on finite horizons. Schwartz row Fubini is controlled by the scalar-Gaussian covariance Cauchy-Schwarz and bounded positive-width point variance; test/indicator completion and countable states/rational times identify the full Lipschitz primitive. The generally noncentered combined source and once-only mask are correctly retained.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:symplectic-source",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 140,
+      "source_old_statement_lf": [
+        188,
+        195
+      ],
+      "source_old_proof_lf": [
+        197,
+        219
+      ],
+      "source_new_statement_lf": [
+        229,
+        236
+      ],
+      "source_new_proof_lf": [
+        238,
+        264
+      ],
+      "source_old_proof_sha256": "f84ec35bcc2096071ebfe8abc5e020af0a626091fcf6aa5eec054ab00d58f33c",
+      "source_new_proof_sha256": "7e2f5a79f2d85ec0399ecb9d77058dbf6229be4038e3b7cb6c24ca544fb22faf",
+      "mathematical_check": "For fixed positive widths and fixed parameters, the common regularity/ordinary-primitive event gives bounded strongly continuous statewise C_b. The report explicitly transfers omega-force skewness through the free symplectic conjugation and computes the two cancelling terms. It correctly distinguishes omega-skewness from E-Hilbert skew-adjointness, although its aside calling B(b) symmetric as an operator is false (R2). Young sums can be replaced by the statewise integrals with a uniform-continuity error, giving C1 trajectories on the same path set. The public product-rule calculation of omega(Ue,Uf) has derivative zero for arbitrary states; together with the already public free-invariance identity, this supplies physical conservation after conjugation, with no uncountable intersection or rough free-generator derivative. One redundant adjoint-factor display has the sign of the initial free time wrong (R3); the correct bilinear-form conservation derivation and defined P=S(t)US(-s) remain public. No missing source regularity assumption or material target step is identified.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:symplectic-raw",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 185,
+      "source_old_statement_lf": [
+        225,
+        235
+      ],
+      "source_old_proof_lf": [
+        237,
+        285
+      ],
+      "source_new_statement_lf": [
+        270,
+        280
+      ],
+      "source_new_proof_lf": [
+        282,
+        355
+      ],
+      "source_old_proof_sha256": "5c93d54a8df9c7dcf8aad4ba59f8f2018d2506443cd9ef04573ebc81399c13f6",
+      "source_new_proof_sha256": "fb5238cadd5bd361d31afc3344da308b1b86f50d26a8ca67a96f085a778e4108",
+      "mathematical_check": "The report reconstructs the real closed constraint g_J: conjugating each real smooth force gives C*J+JC=S(r)*(B*J+JB)S(r)=0; statewise integration and real finite Gaussian sums preserve it; bounded path-space A\u2192A*J+JA sends the L2 Ctheta limit to the same constraint on one path event. Bochner expectation and real c preserve it for D=cM+D_Phi. For V=U_D, the Young increment and its second-order remainder cancel the linear g_J term in V*JV. The report lists every remaining remainder/cross term, and its later paragraph correctly uses h^(3theta),h^(4theta)<=h^(2theta) for h<=1 (earlier exponent-comparison wording is wrong, R4). Thus the public mesh sum tends to zero because 2theta>1, giving conservation. The free-invariance step and ||J||=1 imply ||P||>=1. Invertibility is separately obtained from local Neumann pieces/products, not conservation alone in infinite dimension. Deterministic c=0, zero covariance and the fixed-delta fast-noise instance preserve their stated nonuniform scope.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:symplectic-block-mean",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 239,
+      "source_old_statement_lf": [
+        287,
+        312
+      ],
+      "source_old_proof_lf": [
+        314,
+        382
+      ],
+      "source_new_statement_lf": [
+        357,
+        382
+      ],
+      "source_new_proof_lf": [
+        384,
+        477
+      ],
+      "source_old_proof_sha256": "3ee9d5adecc01c1b8aab7322b29d48964f17a04005f3d3a4fef1dac1659759e8",
+      "source_new_proof_sha256": "d1b8a62b033b80ce75af356daeba5555554188021a4e350d5912151cf91e1dcf",
+      "mathematical_check": "The original pullback factor delta^(a-2)delta^2delta^-a=1 gives an isometry; its adjoint is contractive and phi_m=delta^-a/2 T_m* i_I Phi is finite for fixed delta without a uniform control-radius claim. The completed F mean compresses to the E compact-valued Lr mean with the stated 2<r<2/a and 1-1/r>theta; compact conjugation, affine pullback and constant stopping give the Ctheta compact primitive. Rank-zero full-F covariance with g_delta is compressed through the true intertwining, retaining both constant columns until compression. Dividing g_delta>0 gives delta^(a/2), not sqrt(delta), in the unscaled covariance. Orthogonal T_mT_m* removes only the slow-noise component perpendicular to the fast range: every M_m linear statistic is a limit in that first chaos, so its covariance with the orthogonal component vanishes. Multiplying by delta^-a/2 identifies the stopped mean direction exactly, without a new independent copy or an unstopped identity past ell_m. The compact endpoint lower bound applies to this fixed-parameter compact path even without a Hamiltonian/Gaussian premise; an empty cell gives I. All required scaling and completion deductions are public.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    }
+  ],
+  "mathematical_checks": [
+    "The public argument gives the balanced isometry, skew isometric J_symp and the correct final physical formula J_E(f,g)=(Lambda^-1 g,-Lambda f), with the correct Sobolev dual pairing. An intermediate C_bal^-1 tuple is mistranscribed (R1); the isometric conjugation concept and final formula independently supply the needed bounded/skew properties. The free Fourier matrix has determinant one, bounded even entries and a continuous zero quotient; integrating the 2x2 symplectic identity against balanced L2 vectors proves conservation without a zero-frequency trace or rough generator derivative. For real b, the multiplier bound and absolutely integrable -\u222bfbu+\u222bubf give the force identity for omega. Compact Young increments imply compact U_X-I, and free composition gives a compact endpoint difference. Spatial translations are E-isometries commuting with the free group; weighted Fourier products are L1, so translated pairings tend to zero, compact K sends these weak-null families to norm-zero, and reverse triangle gives ||S+K||>=||S||. Velocity reversal plus the group law gives ||S||>=1. Ordered finite-product telescoping yields a compact difference from the corresponding free product, with no commutation of noisy factors or uniform approximation claim. The new reverse-triangle explanation is correct.",
+    "The scalar Z=W(Phi) times a separably valued L2 Ctheta path is strongly measurable and Bochner integrable by E||ZM||<=||Phi||HW ||M||L2Ctheta. The same inequality applied to M^rho-M yields the explicit mean convergence; the supplied covariance-contraction bound controls positive-width source norms. The retained isometry j_src and feature vector v_rho give h=\u3008j_src Phi,v_rho\u3009, with the stated fixed-positive-width time continuity and spatial derivatives. Multiplying once by the fixed physical mask gives bounded compact support on finite horizons. Schwartz row Fubini is controlled by the scalar-Gaussian covariance Cauchy-Schwarz and bounded positive-width point variance; test/indicator completion and countable states/rational times identify the full Lipschitz primitive. The generally noncentered combined source and once-only mask are correctly retained.",
+    "For fixed positive widths and fixed parameters, the common regularity/ordinary-primitive event gives bounded strongly continuous statewise C_b. The report explicitly transfers omega-force skewness through the free symplectic conjugation and computes the two cancelling terms. It correctly distinguishes omega-skewness from E-Hilbert skew-adjointness, although its aside calling B(b) symmetric as an operator is false (R2). Young sums can be replaced by the statewise integrals with a uniform-continuity error, giving C1 trajectories on the same path set. The public product-rule calculation of omega(Ue,Uf) has derivative zero for arbitrary states; together with the already public free-invariance identity, this supplies physical conservation after conjugation, with no uncountable intersection or rough free-generator derivative. One redundant adjoint-factor display has the sign of the initial free time wrong (R3); the correct bilinear-form conservation derivation and defined P=S(t)US(-s) remain public. No missing source regularity assumption or material target step is identified.",
+    "The report reconstructs the real closed constraint g_J: conjugating each real smooth force gives C*J+JC=S(r)*(B*J+JB)S(r)=0; statewise integration and real finite Gaussian sums preserve it; bounded path-space A\u2192A*J+JA sends the L2 Ctheta limit to the same constraint on one path event. Bochner expectation and real c preserve it for D=cM+D_Phi. For V=U_D, the Young increment and its second-order remainder cancel the linear g_J term in V*JV. The report lists every remaining remainder/cross term, and its later paragraph correctly uses h^(3theta),h^(4theta)<=h^(2theta) for h<=1 (earlier exponent-comparison wording is wrong, R4). Thus the public mesh sum tends to zero because 2theta>1, giving conservation. The free-invariance step and ||J||=1 imply ||P||>=1. Invertibility is separately obtained from local Neumann pieces/products, not conservation alone in infinite dimension. Deterministic c=0, zero covariance and the fixed-delta fast-noise instance preserve their stated nonuniform scope.",
+    "The original pullback factor delta^(a-2)delta^2delta^-a=1 gives an isometry; its adjoint is contractive and phi_m=delta^-a/2 T_m* i_I Phi is finite for fixed delta without a uniform control-radius claim. The completed F mean compresses to the E compact-valued Lr mean with the stated 2<r<2/a and 1-1/r>theta; compact conjugation, affine pullback and constant stopping give the Ctheta compact primitive. Rank-zero full-F covariance with g_delta is compressed through the true intertwining, retaining both constant columns until compression. Dividing g_delta>0 gives delta^(a/2), not sqrt(delta), in the unscaled covariance. Orthogonal T_mT_m* removes only the slow-noise component perpendicular to the fast range: every M_m linear statistic is a limit in that first chaos, so its covariance with the orthogonal component vanishes. Multiplying by delta^-a/2 identifies the stopped mean direction exactly, without a new independent copy or an unstopped identity past ell_m. The compact endpoint lower bound applies to this fixed-parameter compact path even without a Hamiltonian/Gaussian premise; an empty cell gives I. All required scaling and completion deductions are public."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "classification": "report-only redundant balanced-coordinate composition/type slip",
+      "report_section": "L:symplectic-free / Step1",
+      "report_lf": 36,
+      "old": "J_E(f,g)=C_bal^{-1}(Lambda^{-1}g,-Lambda f)=(Lambda^{-1}g,-Lambda f)",
+      "new": "J_E(f,g)=C_bal^{-1}(Lambda^{-1/2}g,-Lambda^{1/2}f)=(Lambda^{-1}g,-Lambda f)",
+      "disposition": "The tuple fed to C_bal^-1 must be in balanced L2 coordinates. The reported inner tuple is already the physical output and applying C_bal^-1 again would give the wrong weights/domain. The report otherwise correctly gives the balanced isometry, conjugation construction and final physical tuple/duality, so the required form/weight deduction remains public. Source uses C_bal^-1 J_symp C_bal correctly."
+    },
+    {
+      "id": "R2",
+      "classification": "report-only force-operator symmetry confusion",
+      "report_section": "P:symplectic-source / Step2",
+      "report_lf": 160,
+      "old": "B(b) is symmetric (it is the force (0,bu) with symmetric multiplication contribution)",
+      "new": "Multiplication by the real b has a symmetric duality pairing; the force B(b) itself need not be symmetric or skew-adjoint in the E Hilbert norm. Its relevant identity is B(b)^*J_E+J_EB(b)=0.",
+      "contrary_calculation": "A nonzero force B(b)(u,v)=(0,bu) is bounded and nilpotent with B(b)^2=0. A bounded self-adjoint nilpotent operator would be zero, since ||Bz||^2=\u3008z,B^2z\u3009=0. Thus symmetry of the scalar multiplication pairing is not Hilbert self-adjointness of the force block.",
+      "disposition": "The report gives the correct explicit omega-force cancellation and its conjugation transfer independently of this erroneous aside; source distinguishes omega skewness correctly. No source fix or absent conservation deduction follows."
+    },
+    {
+      "id": "R3",
+      "classification": "report-only initial-time sign in an adjoint display",
+      "report_section": "P:symplectic-source / Step4",
+      "report_lf": 172,
+      "old": "P_D^*J_EP_D=S_E(s)^* U^* S_E(t)^*J_ES_E(t)U S_E(-s)",
+      "new": "P_D^*J_EP_D=S_E(-s)^* U^* S_E(t)^*J_ES_E(t)U S_E(-s)",
+      "disposition": "P_D=S_E(t)U S_E(-s), so the first adjoint factor has -s. The source has no such incorrect display. The report independently derives omega(Ue,Uf)=omega(e,f) for arbitrary states, states free invariance, and explicitly invokes both to pass to the physical flow; that complete bilinear-form deduction is available despite the redundant sign transcription. Do not use the wrong displayed product as a standalone equality."
+    },
+    {
+      "id": "R4",
+      "classification": "report-only exponent-inequality wording slip, corrected elsewhere in the same public account",
+      "report_section": "P:symplectic-raw / Step3",
+      "report_lf": 213,
+      "old": "order 3theta<=2theta; order 4theta<=2theta",
+      "new": "order h^(3theta) and h^(4theta), each bounded by h^(2theta) for 0<h<=1 (or by a fixed-horizon constant times h^(2theta))",
+      "disposition": "The exponents themselves satisfy 3theta>2theta and 4theta>2theta. The report later explicitly gives the correct power inequalities at h<=1, and its mesh-remainder calculation uses that correct domination. Source states O(h^(2theta)) without the false exponent comparison. No missing partition argument or source repair."
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 22765,
+      "sha256": "38905ec1a71895ae35ca46590edc8668aa2e0a3ac5ade4dc4de68b1e76f22a3e"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 5057,
+      "sha256": "306fb56162753980eefcf596b05bfc3d3010b96a3406f72263dfa181ee012750"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 6920,
+      "sha256": "edde4282802a8e1cf363ed6c89567df8859ffed2ef5cb044b98e4655485a167b"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 4776,
+      "sha256": "8581373600d22e2bec01f87e0c0ea679949da3696ca06a7e61b96c341d45677f"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 8761,
+      "sha256": "0a702d48f77cab51525dd6514635438c699762cd8d0d8eed2ce3c92257a33532"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 20269,
+      "sha256": "37f0c741ab8e37b66f25a103939b428e001072066b48ffea2adb10e4644f2cab"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 24135,
+      "sha256": "32d4e3dc18babf863e13f691c392f6bd196e16bb1ba3065dc6bb1baa85a35f4b"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-integrated_cameron_mean-baseline.txt",
+      "bytes": 24138,
+      "sha256": "0ecbf05a70a7d5d79c9e2285dcadb93567687d4e463bfe4f6b0fdac5ff6f016d"
+    },
+    {
+      "path": "inputs/context-integrated_constant_phase_young-baseline.txt",
+      "bytes": 27376,
+      "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+    },
+    {
+      "path": "inputs/context-integrated_source_convergence-baseline.txt",
+      "bytes": 25085,
+      "sha256": "f212bad41254a78109e5802def45053c8bda53a416cda9f457513406304aaef4"
+    },
+    {
+      "path": "inputs/context-integrated_actual_operator_driver-baseline.txt",
+      "bytes": 35818,
+      "sha256": "add3561f9a2e846f9992d91a10385d8b8e99406359eaabae640520366b184f0e"
+    },
+    {
+      "path": "inputs/context-integrated_raw_block_lower-baseline.txt",
+      "bytes": 35928,
+      "sha256": "ed2f85038ef6136eb8581fa64cab4962cde40bdbdba9ff163dd832c4fa5ad992"
+    }
+  ],
+  "input_identity_checks": "Every SOURCE-BINDING delivered payload hash checked; complete OLD/NEW full-module hashes preserved and unassigned context proofs not counted.",
+  "read_limits": [
+    "All public reasons, step coverage and findings checked against complete OLD/NEW targets and needed supplied covariance/source-feature, Young, supported-Cameron and pullback statements/definitions; no complete upstream theorem-proof review.",
+    "Report-only mistakes are explicitly retained. CHECKED denotes that the corresponding required deduction is substantively already public in the described other correct working, not that the erroneous display has been silently repaired.",
+    "No native export, hidden reasoning, transport or event/usage inspection. Root retains native-protocol and adoption decisions. No source/public edits, model callback, build or Git mutation."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "16/Le retain source adoption and release authority; root reviews disposition"
+}

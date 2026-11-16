@@ -158,23 +158,31 @@ Independent rereads remain incomplete, and the four reader proofs are excluded.
 Integrated source/PDF/marker/F/G/combined/disclosure/review-sync reconciliation,
 Agent16's verification and Le's adoption/release decisions remain separate.
 
-### Completed reread aggregate, with units kept separate
+### Recorded review state: reading, public math and protocol are separate
 
-The current index records12 terminal native attempts/11 public reports. The
-reports declare74 complete OLD/NEW readings; coordinator public-reconstruction
-checks classify72CHECKED and2PARTIAL. The75th assigned pair isRP007 with no
-public report, literalNOT_OBTAINED and null reviewer verdict/confidence/read
-flags. Partial reconstruction does not mean a source defect; raw9PASS/high,
-2PASS_WITH_NOTES/high and the failed attempt remain unchanged. The two bounded
-missing derivations are listed in`OPEN-RECONSTRUCTION-GATES.json`; no new
-source repair or callback has run. RP007's larger-cap repeat is still only a
-proposal. Per-proof confidence remains unreported/null, and these are not74
-independent votes or whole-bookHIGH acceptance. All failed usage is included;
-no mechanical sum with the historic627/118 snapshots is asserted. The174
-remaining source pairs have frozen refined contracts and are being dispatched
-separately; no result is inferred from preparation or a live process. Companion
-quotation checks, AppendixE/disclosure/rebuild/reseal synchronization, Agent16
-verification and Le's adoption/release decisions remain open.
+The current index records17 terminal native sessions/16 public reports and96
+assigned paired proofs. Reports claim95 complete OLD/NEW readings; root-team
+public-working assessment is92CHECKED,3PARTIAL,1NO_PUBLIC_REPORT. Only82
+CHECKED pairs currently have no observed native-retry incident. RP013/RP014/
+RP016 cover11 pairs under a separate protocol hold (10mathCHECKED,1mathPARTIAL);
+these overlap the math counts and must not be added as disjoint totals.
+Raw grades remain13PASS/high,3PASS_WITH_NOTES/high and one missing report.
+Per-proof confidence is unreported/null; no whole-book grade is upgraded.
+
+The three bounded public-working gaps are listed in
+`OPEN-RECONSTRUCTION-GATES.json`: unmasked H1 form domain, smooth/Fatou/physical
+four-linear extension, and exact conjugated-primitive constant. Source checking
+finds no new source defect, but author-side algebra cannot fill those reviewer
+obligations. RP007 stays NOT_OBTAINED, with its original known usage retained;
+its larger-cap repeat is unlaunched and also subject to the transport hold.
+
+Three automatic SessionRetry cases lack earlier-stream finish/usage. Available
+finish counters sum only known reported values, with cached input explicit;
+first-stream and whole-invocation usage/cost/cap are UNKNOWN, never estimates.
+No sum with the historical627/118 snapshots is asserted. Remaining153 paired
+proofs (RP018--RP038) have not launched. AppendixE/front-door/derived-artifact/
+reseal synchronization, companion quotations, Agent16 verification and Le's
+adoption/release decisions remain open.
 
 ### Next frozen per-file rereads: RP006--RP008
 
@@ -305,6 +313,30 @@ review or a positive verdict.
 RP013 `rp013-797994769d004eb98a0837ac24701410` started `2026-11-16T08:17:41.769034+00:00`.
 RP014 `rp014-9a2e2b207fc54cba9f635cc83c10374d` started `2026-11-16T08:17:42.840414+00:00`.
 RP015 `rp015-1f3669369fda4c019f1dff2154d35191` started `2026-11-16T08:17:44.068095+00:00`.
+
+### Native transport hold after three observed automatic retries
+
+All RP013--RP017 processes are terminal; the controller stopped cleanly with
+zero live sessions and RP018--RP038 unlaunched. RP013,RP014,RP016 each show two
+native starts/reasoning spans but one final finish/usage record. Agent21's
+installed-client1.18.31 code/metadata diagnosis identifies SessionRetry re-entry,
+not a coordinator continuation; root confirmed the current binary hash after
+runs, without inventing a launch-time binary hash. No supported per-run option
+disables that hardcoded retry policy. Each affected report is retained as
+mathematical evidence with protocol_statusPENDING_EXPLICIT_DISPOSITION;
+aggregate cost/tokens/cap are not certified and the prior PU exception is not
+extended. No further native call, 007 repeat, provider fallback or paid probe
+has run. See the three PROTOCOL-INCIDENT records and index hold summary.
+
+Agent21 prepared an offline single-HTTP-attempt client proposal. Root-team
+code audit found hard-deadline, incomplete-response/schema, model/tool,
+private-mode/secret-output and manifest-TOCTOU blockers despite its15 supplied
+fixtures passing. Additional local dummy fixtures reproduce them. That draft
+is NOT ready for live approval and has not been applied; fixes and re-audit
+are requested before root asks for any client-route change. No global config,
+credential/provider query, source/PDF edit, installed binary change, R/F or
+publication action is authorized by this preparation. The approved-route and
+one-attempt commitments, not a new unquoted skill rule, explain the hold.
 
 The older publication-frontier headings below are dated snapshots; they do
 not authorize restarting their old completed calls or override this narrow

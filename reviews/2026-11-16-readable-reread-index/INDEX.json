@@ -1,43 +1,57 @@
 {
-  "recorded_utc": "2026-11-16T08:17:53.656937+00:00",
-  "scope": "Proof-readability argument preservation only; no restart or upgrade of original scientific grades.",
-  "unit": "One native session is one attempt with separate proof-pair rows, not one vote per row.",
-  "terminal_native_sessions_observed": 12,
-  "coordinator_launches": 12,
-  "usable_public_report_sessions": 11,
-  "unique_proof_pairs_assigned": 75,
-  "unique_complete_old_new_pairs": 74,
+  "recorded_utc": "2026-11-16T09:28:54.628287+00:00",
+  "scope": "Scoped proof-readability preservation evidence, not whole-book science acceptance",
+  "unit": "One coordinator launch/native session is one attempt with proof-pair rows; neither one vote per row nor proof of one physical backend request.",
+  "curated_terminal_native_sessions": 17,
+  "terminal_native_sessions_observed": 17,
+  "coordinator_launches": 17,
+  "usable_public_report_sessions": 16,
+  "unique_proof_pairs_assigned": 96,
+  "unique_complete_old_new_pairs": 95,
+  "complete_changed_proof_pairs": 88,
+  "complete_unchanged_proof_pairs": 7,
   "coordinator_public_reconstruction_counts": {
-    "CHECKED": 72,
-    "PARTIAL": 2,
+    "CHECKED": 92,
+    "PARTIAL": 3,
     "NOT_RECONSTRUCTED": 0,
     "NO_PUBLIC_REPORT": 1
   },
-  "complete_changed_proof_pairs": 70,
-  "complete_unchanged_proof_pairs": 4,
-  "pairs_without_complete_public_reading": 1,
+  "math_CHECKED_pairs_with_no_observed_protocol_incident": 82,
+  "protocol_pending_records": [
+    "RP016",
+    "RP014",
+    "RP013"
+  ],
+  "protocol_pending_assigned_pairs": 11,
   "raw_verdict_counts": {
-    "PASS": 9,
+    "PASS": 13,
     "NO_PUBLIC_REPORT": 1,
-    "PASS_WITH_NOTES": 2
+    "PASS_WITH_NOTES": 3
   },
   "upstream_context_proofs_assigned": 0,
-  "reported_per_proof_confidence": "Not separately reported; null in every per-proof row.",
-  "reported_native_usage_totals": {
-    "input": 521761,
-    "output": 42606,
-    "reasoning": 321795,
-    "total": 886162
+  "reported_per_proof_confidence": "Not separately reported; null for every row.",
+  "sum_available_native_finish_counters": {
+    "input_uncached": 658185,
+    "cache_read": 127232,
+    "cache_write": 0,
+    "public_output": 73078,
+    "reasoning": 450295,
+    "reported_total": 1308790
   },
-  "opencode_cost_counter_sum_not_invoice": 1.06587624,
+  "sum_available_cost_counters_not_invoice": "1.473479744",
+  "usage_sum_scope": "Available finish records only. Three abandoned generation streams have no finish/usage; never treat this as whole-invocation aggregate.",
+  "observed_generation_starts_without_finish_usage": 3,
+  "whole_invocation_usage_total": null,
+  "whole_invocation_cost_total": null,
+  "whole_invocation_aggregate_cap_compliance": null,
   "currency_independently_reported": null,
   "physical_backend_request_count": null,
-  "historical_627_census_and_118_recovered_attempts_added": false,
+  "all_failed_reported_usage_included": true,
+  "unknown_usage_estimated": false,
+  "historical_627_and_118_snapshots_mechanically_added": false,
+  "prior_PU_exception_applied_to_new_incidents": false,
   "historical_grades_upgraded": false,
-  "whole_book_acceptance": false,
-  "Lean_quote_correspondence_acceptance": false,
-  "human_verification": false,
-  "RF_or_release": false,
+  "whole_book_Lean_quote_render_human_RF_adoption_acceptance": false,
   "records": [
     {
       "record_id": "RP001",
@@ -49,6 +63,8 @@
       "raw_verdict": "PASS",
       "raw_global_confidence": "high",
       "coordinator_disposition": "SCOPED_ARGUMENT_PRESERVATION_SUPPORTED_WITH_REPORT_NOTES",
+      "protocol_status": "NO_OBSERVED_NATIVE_RETRY_INCIDENT",
+      "protocol_pending": false,
       "report_sha256": "ca39dad997c22c3cecff229b96aac206dec97fa69ba9803eb3821ec35e00a0a4",
       "started_utc": "2026-11-16T04:59:51.429959+00:00",
       "finished_utc": "2026-11-16T05:08:22.743281+00:00",
@@ -57,7 +73,8 @@
       "byte_identical_module_at_tip": "f06cb6074c36c2189751dd1d6c63398db62cca59",
       "coordinator_launches": 1,
       "reported_per_proof_confidence": null,
-      "physical_backend_request_count": null
+      "physical_backend_request_count": null,
+      "usage_scope": "Retained single-finish native counters, not invoice or physical backend accounting"
     },
     {
       "record_id": "RP002",
@@ -69,6 +86,8 @@
       "raw_verdict": "PASS",
       "raw_global_confidence": "high",
       "coordinator_disposition": "SCOPED_ARGUMENT_PRESERVATION_SUPPORTED",
+      "protocol_status": "NO_OBSERVED_NATIVE_RETRY_INCIDENT",
+      "protocol_pending": false,
       "report_sha256": "371b720f9322df82a358de267d220acd8a7184edd92e5a4ee4dd1464755670d9",
       "started_utc": "2026-11-16T06:06:06.668958+00:00",
       "finished_utc": "2026-11-16T06:10:48.824921+00:00",
@@ -77,7 +96,8 @@
       "byte_identical_module_at_tip": "f06cb6074c36c2189751dd1d6c63398db62cca59",
       "coordinator_launches": 1,
       "reported_per_proof_confidence": null,
-      "physical_backend_request_count": null
+      "physical_backend_request_count": null,
+      "usage_scope": "Retained single-finish native counters, not invoice or physical backend accounting"
     },
     {
       "record_id": "RP003",
@@ -89,6 +109,8 @@
       "raw_verdict": "PASS",
       "raw_global_confidence": "high",
       "coordinator_disposition": "SCOPED_ARGUMENT_PRESERVATION_SUPPORTED",
+      "protocol_status": "NO_OBSERVED_NATIVE_RETRY_INCIDENT",
+      "protocol_pending": false,
       "report_sha256": "2bdb036115e6fbe1a45cd213a1f8bdea2fb1e1ff1a19c446d61a436478f218c4",
       "started_utc": "2026-11-16T06:16:50.426991+00:00",
       "finished_utc": "2026-11-16T06:24:19.329601+00:00",
@@ -97,7 +119,8 @@
       "byte_identical_module_at_tip": "f06cb6074c36c2189751dd1d6c63398db62cca59",
       "coordinator_launches": 1,
       "reported_per_proof_confidence": null,
-      "physical_backend_request_count": null
+      "physical_backend_request_count": null,
+      "usage_scope": "Retained single-finish native counters, not invoice or physical backend accounting"
     },
     {
       "record_id": "RP004",
@@ -109,6 +132,8 @@
       "raw_verdict": "PASS",
       "raw_global_confidence": "high",
       "coordinator_disposition": "SCOPED_ARGUMENT_PRESERVATION_SUPPORTED",
+      "protocol_status": "NO_OBSERVED_NATIVE_RETRY_INCIDENT",
+      "protocol_pending": false,
       "report_sha256": "1602d364c743285586666ee0480a17ada23b795c82003cc6808e37e5f6b1d6f0",
       "started_utc": "2026-11-16T06:23:38.805337+00:00",
       "finished_utc": "2026-11-16T06:30:14.346493+00:00",
@@ -117,7 +142,8 @@
       "byte_identical_module_at_tip": "f06cb6074c36c2189751dd1d6c63398db62cca59",
       "coordinator_launches": 1,
       "reported_per_proof_confidence": null,
-      "physical_backend_request_count": null
+      "physical_backend_request_count": null,
+      "usage_scope": "Retained single-finish native counters, not invoice or physical backend accounting"
     },
     {
       "record_id": "RP005",
@@ -129,6 +155,8 @@
       "raw_verdict": "PASS",
       "raw_global_confidence": "high",
       "coordinator_disposition": "SCOPED_ARGUMENT_PRESERVATION_SUPPORTED_WITH_REPORT_NOTE",
+      "protocol_status": "NO_OBSERVED_NATIVE_RETRY_INCIDENT",
+      "protocol_pending": false,
       "report_sha256": "f0b1129fb08d0a30852c0c80f6591aa2c053dff709555d06f9ff8fc971d5035d",
       "started_utc": "2026-11-16T06:23:39.968809+00:00",
       "finished_utc": "2026-11-16T06:28:57.237160+00:00",
@@ -137,7 +165,8 @@
       "byte_identical_module_at_tip": "f06cb6074c36c2189751dd1d6c63398db62cca59",
       "coordinator_launches": 1,
       "reported_per_proof_confidence": null,
-      "physical_backend_request_count": null
+      "physical_backend_request_count": null,
+      "usage_scope": "Retained single-finish native counters, not invoice or physical backend accounting"
     },
     {
       "record_id": "RP006",
@@ -149,6 +178,8 @@
       "raw_verdict": "PASS",
       "raw_global_confidence": "high",
       "coordinator_disposition": "SCOPED_ARGUMENT_PRESERVATION_SUPPORTED_WITH_REPORT_NOTATION_NOTES",
+      "protocol_status": "NO_OBSERVED_NATIVE_RETRY_INCIDENT",
+      "protocol_pending": false,
       "report_sha256": "4ca7c2daed74a01ce3e0ecfef3422a53470a68b7e49f059ed3ed26e5f03a3b01",
       "started_utc": "2026-11-16T06:49:29.137939+00:00",
       "finished_utc": "2026-11-16T06:58:57.259094+00:00",
@@ -157,7 +188,8 @@
       "byte_identical_module_at_tip": "f06cb6074c36c2189751dd1d6c63398db62cca59",
       "coordinator_launches": 1,
       "reported_per_proof_confidence": null,
-      "physical_backend_request_count": null
+      "physical_backend_request_count": null,
+      "usage_scope": "Retained single-finish native counters, not invoice or physical backend accounting"
     },
     {
       "record_id": "RP007",
@@ -169,6 +201,8 @@
       "raw_verdict": null,
       "raw_global_confidence": null,
       "coordinator_disposition": "NOT_OBTAINED_NO_PUBLIC_REPORT",
+      "protocol_status": "NO_OBSERVED_NATIVE_RETRY_INCIDENT",
+      "protocol_pending": false,
       "report_sha256": null,
       "started_utc": "2026-11-16T06:49:30.319083+00:00",
       "finished_utc": "2026-11-16T06:57:40.679855+00:00",
@@ -177,7 +211,8 @@
       "byte_identical_module_at_tip": "f06cb6074c36c2189751dd1d6c63398db62cca59",
       "coordinator_launches": 1,
       "reported_per_proof_confidence": null,
-      "physical_backend_request_count": null
+      "physical_backend_request_count": null,
+      "usage_scope": "Retained single-finish native counters, not invoice or physical backend accounting"
     },
     {
       "record_id": "RP008",
@@ -189,6 +224,8 @@
       "raw_verdict": "PASS_WITH_NOTES",
       "raw_global_confidence": "high",
       "coordinator_disposition": "SCOPED_ARGUMENT_PRESERVATION_SUPPORTED_WITH_SOURCE_AND_REPORT_WORDING_NOTES",
+      "protocol_status": "NO_OBSERVED_NATIVE_RETRY_INCIDENT",
+      "protocol_pending": false,
       "report_sha256": "bb2a5929122b7dc286bed65c050bd0e26971333b21a47e1ff71cdcea5e618cda",
       "started_utc": "2026-11-16T06:49:31.483827+00:00",
       "finished_utc": "2026-11-16T06:57:54.007316+00:00",
@@ -197,7 +234,8 @@
       "byte_identical_module_at_tip": "f06cb6074c36c2189751dd1d6c63398db62cca59",
       "coordinator_launches": 1,
       "reported_per_proof_confidence": null,
-      "physical_backend_request_count": null
+      "physical_backend_request_count": null,
+      "usage_scope": "Retained single-finish native counters, not invoice or physical backend accounting"
     },
     {
       "record_id": "RP009",
@@ -209,6 +247,8 @@
       "raw_verdict": "PASS",
       "raw_global_confidence": "high",
       "coordinator_disposition": "PARTIAL_INDEPENDENT_PUBLIC_RECONSTRUCTION_NO_SOURCE_DEFECT_IDENTIFIED",
+      "protocol_status": "NO_OBSERVED_NATIVE_RETRY_INCIDENT",
+      "protocol_pending": false,
       "report_sha256": "b86921af47f48161a1c7ba202f11fabe72c84feeaf05d93850622ffbc37f0eb7",
       "started_utc": "2026-11-16T07:20:29.428431+00:00",
       "finished_utc": "2026-11-16T07:28:11.789453+00:00",
@@ -217,7 +257,8 @@
       "byte_identical_module_at_tip": "f06cb6074c36c2189751dd1d6c63398db62cca59",
       "coordinator_launches": 1,
       "reported_per_proof_confidence": null,
-      "physical_backend_request_count": null
+      "physical_backend_request_count": null,
+      "usage_scope": "Retained single-finish native counters, not invoice or physical backend accounting"
     },
     {
       "record_id": "RP010",
@@ -229,6 +270,8 @@
       "raw_verdict": "PASS",
       "raw_global_confidence": "high",
       "coordinator_disposition": "SCOPED_ARGUMENT_PRESERVATION_SUPPORTED_WITH_REPORT_NUMERICAL_NOTE",
+      "protocol_status": "NO_OBSERVED_NATIVE_RETRY_INCIDENT",
+      "protocol_pending": false,
       "report_sha256": "f1500e71a69ca7106a654bd6301d16c64b37f0cae1d96994020587dc69e96f53",
       "started_utc": "2026-11-16T07:20:30.609027+00:00",
       "finished_utc": "2026-11-16T07:26:10.595259+00:00",
@@ -237,7 +280,8 @@
       "byte_identical_module_at_tip": "f06cb6074c36c2189751dd1d6c63398db62cca59",
       "coordinator_launches": 1,
       "reported_per_proof_confidence": null,
-      "physical_backend_request_count": null
+      "physical_backend_request_count": null,
+      "usage_scope": "Retained single-finish native counters, not invoice or physical backend accounting"
     },
     {
       "record_id": "RP011",
@@ -249,6 +293,8 @@
       "raw_verdict": "PASS_WITH_NOTES",
       "raw_global_confidence": "high",
       "coordinator_disposition": "PARTIAL_INDEPENDENT_PUBLIC_RECONSTRUCTION_NO_SOURCE_DEFECT_IDENTIFIED",
+      "protocol_status": "NO_OBSERVED_NATIVE_RETRY_INCIDENT",
+      "protocol_pending": false,
       "report_sha256": "ee88e1de6d4ba1cac2c9ca1c11da0a83cb6b841832d4dfd7672bbc44e78035f7",
       "started_utc": "2026-11-16T07:20:31.761046+00:00",
       "finished_utc": "2026-11-16T07:29:53.218117+00:00",
@@ -257,7 +303,8 @@
       "byte_identical_module_at_tip": "f06cb6074c36c2189751dd1d6c63398db62cca59",
       "coordinator_launches": 1,
       "reported_per_proof_confidence": null,
-      "physical_backend_request_count": null
+      "physical_backend_request_count": null,
+      "usage_scope": "Retained single-finish native counters, not invoice or physical backend accounting"
     },
     {
       "record_id": "RP012",
@@ -269,6 +316,8 @@
       "raw_verdict": "PASS",
       "raw_global_confidence": "high",
       "coordinator_disposition": "SCOPED_ARGUMENT_PRESERVATION_SUPPORTED_WITH_REPORT_WORDING_NOTE",
+      "protocol_status": "NO_OBSERVED_NATIVE_RETRY_INCIDENT",
+      "protocol_pending": false,
       "report_sha256": "fc4b611cc1b8ce3dfd88e9c3527a354e7929081614cc2dbb70e30823c350a093",
       "started_utc": "2026-11-16T07:29:47.455158+00:00",
       "finished_utc": "2026-11-16T07:36:20.002641+00:00",
@@ -277,7 +326,123 @@
       "byte_identical_module_at_tip": "f06cb6074c36c2189751dd1d6c63398db62cca59",
       "coordinator_launches": 1,
       "reported_per_proof_confidence": null,
-      "physical_backend_request_count": null
+      "physical_backend_request_count": null,
+      "usage_scope": "Retained single-finish native counters, not invoice or physical backend accounting"
+    },
+    {
+      "record_id": "RP013",
+      "record_path": "reviews/2026-11-16-readable-young-upper-deepseek",
+      "source_file": "notes/integrated_young_upper_foundation.tex",
+      "source_revision": "e07672d40443cd6ba655b0cf6eb05a1d1a454888",
+      "baseline": "cdde711c248862f33207860107dd0e6b31d60852",
+      "assigned_proof_pairs": 2,
+      "raw_verdict": "PASS",
+      "raw_global_confidence": "high",
+      "coordinator_disposition": "MATHEMATICALLY_SCOPED_PRESERVATION_SUPPORTED_WITH_REPORT_ONLY_UNIFORMITY_NOTE_PROTOCOL_SEPARATE",
+      "protocol_status": "PENDING_EXPLICIT_DISPOSITION",
+      "protocol_pending": true,
+      "report_sha256": "deb9efd3d1e94a6cf9d9a93a72e0b6c83663521676ea2a5fc2a1e48b25663b79",
+      "started_utc": "2026-11-16T08:17:41.769034+00:00",
+      "finished_utc": "2026-11-16T08:31:21.592740+00:00",
+      "elapsed_seconds": 819.823716878891,
+      "current_module_sha256": "34f4db462eb682b313623fe917327238c4faff3bdf0cfeb89c0f60eef542802e",
+      "byte_identical_module_at_tip": "f06cb6074c36c2189751dd1d6c63398db62cca59",
+      "coordinator_launches": 1,
+      "reported_per_proof_confidence": null,
+      "physical_backend_request_count": null,
+      "usage_scope": "Last finish only; prior/whole invocation unknown"
+    },
+    {
+      "record_id": "RP014",
+      "record_path": "reviews/2026-11-16-readable-uniform-mean-deepseek",
+      "source_file": "notes/integrated_uniform_mean.tex",
+      "source_revision": "08575eb1c46946a06db7ed6dbdb30c4bb51b447d",
+      "baseline": "cdde711c248862f33207860107dd0e6b31d60852",
+      "assigned_proof_pairs": 5,
+      "raw_verdict": "PASS",
+      "raw_global_confidence": "high",
+      "coordinator_disposition": "SCOPED_ARGUMENT_PRESERVATION_SUPPORTED_BUT_PUBLIC_EXACT_PRIMITIVE_RECONSTRUCTION_PARTIAL_WITH_REPORT_ONLY_SLIPS_PROTOCOL_SEPARATE",
+      "protocol_status": "PENDING_EXPLICIT_DISPOSITION",
+      "protocol_pending": true,
+      "report_sha256": "85b44b837c1606677bf2c0c93a7d7f924fa2b6dccf3cb185b9499259864c5aab",
+      "started_utc": "2026-11-16T08:17:42.840414+00:00",
+      "finished_utc": "2026-11-16T08:34:35.978998+00:00",
+      "elapsed_seconds": 1013.1385869889054,
+      "current_module_sha256": "12df12e3fa415055d37fb54a53b6f511edf7e00de9510268e7727adde52d6928",
+      "byte_identical_module_at_tip": "f06cb6074c36c2189751dd1d6c63398db62cca59",
+      "coordinator_launches": 1,
+      "reported_per_proof_confidence": null,
+      "physical_backend_request_count": null,
+      "usage_scope": "Last finish only; prior/whole invocation unknown"
+    },
+    {
+      "record_id": "RP015",
+      "record_path": "reviews/2026-11-16-readable-radius-anchor-deepseek",
+      "source_file": "notes/integrated_radius_anchor.tex",
+      "source_revision": "1a9205b7f5426ed543d31c57cce622f83f223908",
+      "baseline": "cdde711c248862f33207860107dd0e6b31d60852",
+      "assigned_proof_pairs": 5,
+      "raw_verdict": "PASS",
+      "raw_global_confidence": "high",
+      "coordinator_disposition": "SCOPED_ARGUMENT_PRESERVATION_SUPPORTED_WITH_REPORT_ONLY_FOURIER_TRANSCRIPTION_NOTE",
+      "protocol_status": "NO_OBSERVED_NATIVE_RETRY_INCIDENT",
+      "protocol_pending": false,
+      "report_sha256": "f962d01e1986ad1cb391e66f28640d8c3f6c8762f0a2ce489ebe18a3dba8a334",
+      "started_utc": "2026-11-16T08:17:44.068095+00:00",
+      "finished_utc": "2026-11-16T08:26:47.114618+00:00",
+      "elapsed_seconds": 543.0465267961845,
+      "current_module_sha256": "fcfc04ed2e64a0567b49fc384018daaaf0b73b9fe79b4eb1eaa39d36f9072d13",
+      "byte_identical_module_at_tip": "f06cb6074c36c2189751dd1d6c63398db62cca59",
+      "coordinator_launches": 1,
+      "reported_per_proof_confidence": null,
+      "physical_backend_request_count": null,
+      "usage_scope": "Retained single-finish native counters, not invoice or physical backend accounting"
+    },
+    {
+      "record_id": "RP016",
+      "record_path": "reviews/2026-11-16-readable-signed-static-deepseek",
+      "source_file": "notes/integrated_signed_static.tex",
+      "source_revision": "7bea84b83b9ace4c305e3728783012f59aebae88",
+      "baseline": "cdde711c248862f33207860107dd0e6b31d60852",
+      "assigned_proof_pairs": 4,
+      "raw_verdict": "PASS_WITH_NOTES",
+      "raw_global_confidence": "high",
+      "coordinator_disposition": "SCOPED_ARGUMENT_PRESERVATION_SUPPORTED_WITH_FALSE_REPORT_SOURCE_CRITICISM_AND_COLUMN_WORDING_NOTES_PROTOCOL_SEPARATE",
+      "protocol_status": "PENDING_EXPLICIT_DISPOSITION",
+      "protocol_pending": true,
+      "report_sha256": "3477fab7637f2fd074fd7b39800671d3a13b224983e6ca242328729e9ba0c054",
+      "started_utc": "2026-11-16T08:26:49.653955+00:00",
+      "finished_utc": "2026-11-16T08:50:21.229829+00:00",
+      "elapsed_seconds": 1411.5758831920102,
+      "current_module_sha256": "54e88681a39b82c18ee20b67f8033e716f12c72a55d6c369c8432790834267b0",
+      "byte_identical_module_at_tip": "f06cb6074c36c2189751dd1d6c63398db62cca59",
+      "coordinator_launches": 1,
+      "reported_per_proof_confidence": null,
+      "physical_backend_request_count": null,
+      "usage_scope": "Last finish only; prior/whole invocation unknown"
+    },
+    {
+      "record_id": "RP017",
+      "record_path": "reviews/2026-11-16-readable-symplectic-deepseek",
+      "source_file": "notes/integrated_symplectic_phase.tex",
+      "source_revision": "a512b15d64f14a8cdd66cbe08f9934c957cdb026",
+      "baseline": "cdde711c248862f33207860107dd0e6b31d60852",
+      "assigned_proof_pairs": 5,
+      "raw_verdict": "PASS",
+      "raw_global_confidence": "high",
+      "coordinator_disposition": "SCOPED_ARGUMENT_PRESERVATION_SUPPORTED_WITH_REPORT_ONLY_SYMPLECTIC_NOTATION_AND_ALGEBRA_SLIPS",
+      "protocol_status": "NO_OBSERVED_NATIVE_RETRY_INCIDENT",
+      "protocol_pending": false,
+      "report_sha256": "38905ec1a71895ae35ca46590edc8668aa2e0a3ac5ade4dc4de68b1e76f22a3e",
+      "started_utc": "2026-11-16T08:31:25.170515+00:00",
+      "finished_utc": "2026-11-16T08:40:11.598414+00:00",
+      "elapsed_seconds": 526.4279147270136,
+      "current_module_sha256": "32d4e3dc18babf863e13f691c392f6bd196e16bb1ba3065dc6bb1baa85a35f4b",
+      "byte_identical_module_at_tip": "f06cb6074c36c2189751dd1d6c63398db62cca59",
+      "coordinator_launches": 1,
+      "reported_per_proof_confidence": null,
+      "physical_backend_request_count": null,
+      "usage_scope": "Retained single-finish native counters, not invoice or physical backend accounting"
     }
   ]
 }

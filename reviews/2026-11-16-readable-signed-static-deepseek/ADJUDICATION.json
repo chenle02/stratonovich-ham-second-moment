@@ -1,0 +1,343 @@
+{
+  "review_record_id": "RP016",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side public-report/source mathematical QA, not another independent scientific vote or native-protocol disposition",
+  "native_verdict": "PASS_WITH_NOTES",
+  "native_confidence": "high",
+  "source_revision": "7bea84b83b9ace4c305e3728783012f59aebae88",
+  "source_file": "notes/integrated_signed_static.tex",
+  "source_binding_sha256": "dd838e65410c363082d0041989531a75608406d8ec7024ec5bba0e88d13e48b3",
+  "public_report_sha256": "3477fab7637f2fd074fd7b39800671d3a13b224983e6ca242328729e9ba0c054",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "SCOPED_ARGUMENT_PRESERVATION_SUPPORTED_WITH_FALSE_REPORT_SOURCE_CRITICISM_AND_COLUMN_WORDING_NOTES_PROTOCOL_SEPARATE",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:signed-limiting-multiplier": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    },
+    "P:signed-closed-form": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R2",
+        "R3"
+      ]
+    },
+    "L:signed-spectral-wave": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R3"
+      ]
+    },
+    "P:signed-physical-wave": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R3",
+        "R4"
+      ]
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:signed-limiting-multiplier",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 14,
+      "source_old_statement_lf": [
+        11,
+        19
+      ],
+      "source_old_proof_lf": [
+        21,
+        37
+      ],
+      "source_new_statement_lf": [
+        11,
+        19
+      ],
+      "source_new_proof_lf": [
+        21,
+        37
+      ],
+      "source_old_proof_sha256": "036aab3b533e9e7f9109860eeaaba9bf03dd5085891ebbf7a94346909db4e080",
+      "source_new_proof_sha256": "036aab3b533e9e7f9109860eeaaba9bf03dd5085891ebbf7a94346909db4e080",
+      "mathematical_check": "The unchanged proof is publicly reconstructed: the unit constant-displacement INPUT (0,0,1,0) recovers the OUTPUT (0,V_q,0,0), making V_q Cauchy in H^-1/2; testing outside the fixed compact mask support preserves support. Restricting the displacement input gives bounded multiplier convergence H^1/2\u2192H^-1/2 with norm<=||L||. Smooth compact multiplication identifies the limiting map on tests, density extends it, and the constant column gives uniqueness. Symmetry is the real distribution pairing \u3008V,uw\u3009; the product norm bound extends it, and Hilbert complexification preserves norm and yields a Hermitian form with summed real/imaginary diagonal. The report misnames several output rows as zero input columns and misdescribes the constant-displacement input coordinate, but its Step4/Step5 working explicitly gives the correct nonzero displacement/c1 columns. Thus the required multiplier deduction is present despite those slips.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:signed-closed-form",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 65,
+      "source_old_statement_lf": [
+        45,
+        63
+      ],
+      "source_old_proof_lf": [
+        65,
+        115
+      ],
+      "source_new_statement_lf": [
+        45,
+        63
+      ],
+      "source_new_proof_lf": [
+        65,
+        131
+      ],
+      "source_old_proof_sha256": "a6b2360484bc0c493434420cd993c9a236a17132695aee0ba50a9e8629965961",
+      "source_new_proof_sha256": "e3a6301fc75a9d708cb6cd11476c093769c530015c89c77b6898bb00fc078b03",
+      "mathematical_check": "The report explicitly obtains ||u||H1/2^2<=||u||2||u||H1, |v_V(u,u)|<=K b z and the half/half AM-GM bound. With c=2+K^2, the shifted lower bound is z^2/2+(1+K^2/2)b^2 and upper is at most L_K z^2 for L_K=3(1+K^2). Equivalent complete H1 form norms give a closed semibounded densely defined Hermitian form; the named Teschl representation inputs are used at their stated hypotheses, without asserting an H2 operator domain. The bounded spectral-slice argument turns A>=1 from form to spectral order. The common-domain resolvent variational identity gives reversed resolvent order; the positive square-root spectral integral then gives square-root form order, not an arbitrary noncommuting-power rule. Applied to (B0,2A) and (A,L_K B0), it yields both quarter-domain inclusions and exactly 2^-1/4 / L_K^1/4 norm constants. The dual norm formula is correct and has the actual maximizing test A^-1/2 v; since A>=1, every v in the stated L2 domain has a finite A^-1/4 norm. The report invented a possibly-infinite/domain-exclusion caveat and falsely attributed it to the source, but the correct public formula/test and all required quarter/dual deductions are already supplied. Conjugation compatibility follows from the real form and unique calculus.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "L:signed-spectral-wave",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 146,
+      "source_old_statement_lf": [
+        122,
+        134
+      ],
+      "source_old_proof_lf": [
+        136,
+        184
+      ],
+      "source_new_statement_lf": [
+        138,
+        150
+      ],
+      "source_new_proof_lf": [
+        152,
+        217
+      ],
+      "source_old_proof_sha256": "00a6683f6be108ed703b82acbd8611d9887f57786552cf5d0840d0e306b06e43",
+      "source_new_proof_sha256": "311639d92591e6bfe182699b05eb28170fa7251f909bd6d5eb579c6b20b19444",
+      "mathematical_check": "The public argument locates -K^2<=beta<=0 using the signed form bound and a dilated smooth bump translated wholly outside the fixed compact distribution support. It does not import nonnegative ground-state machinery. The form/spectral bottom comparison and PVM support/approximate-eigenvector/resolvent argument identify beta with the nonempty spectral bottom, hence lambda<=K and h+c>=2 on the support. The adapted A^1/4 / A^-1/4 norm and dual comparison have condition-number cost M_K^2=sqrt(3(1+K^2))<=2(1+K). For h>0 the public case split proves sqrt(h+c)|S_t(h)|<=1+sqrt(c)t; h=0 is its triangular matrix limit; for h<0, sqrt(-h)<=K and h+c>=2 give the lower off-diagonal bound K exp(lambda t) without dividing by lambda. Entry ceiling 2(1+K)(1+t)e^(lambda t), two-by-two matrix norm factor2 and the condition-number factor yield exactly 8(1+K)^2(1+t)e^(lambda t). Dominated spectral calculus, scalar addition and bounded cutoffs give strong continuity, group property and graph-level extensions. The zero-bottom/threshold qualification is preserved.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:signed-physical-wave",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 213,
+      "source_old_statement_lf": [
+        190,
+        200
+      ],
+      "source_old_proof_lf": [
+        202,
+        265
+      ],
+      "source_new_statement_lf": [
+        223,
+        233
+      ],
+      "source_new_proof_lf": [
+        235,
+        327
+      ],
+      "source_old_proof_sha256": "135532f7eed65f254d264c79a3608ca31c9fdc425800c834f896969063a123a0",
+      "source_new_proof_sha256": "cfcdd74aa520e7445628b1768d4b7c2e850f4aafb76ee4496ab6d2d4f1c46744",
+      "mathematical_check": "The report derives the distributional form equation H_Vu=-Delta u-Vu, multiplier H^1/2\u2192H^-1/2, and (1-Delta)u in H^-1/2, so D(H_V) embeds graph-continuously into H^3/2. The free E generator has domain H^3/2\u00d7H^1/2, distinct from the spectral graph data D(H_V)\u00d7H1. Bounded spectral cutoffs give graph-continuous trajectories and C1 H1\u00d7L2 trajectories; the embedding makes the strong-group chain rule legitimate before density, proving the E Duhamel identity and uniqueness without a false D(A^3/4)=H^3/2 or operator-norm free derivative. On full F, the Volterra series has the displayed factorial bound and the compact conjugated integrand is norm-continuous and uniformly bounded on finite horizons, so its primitive is Lipschitz and agrees with the Young flow. E is not treated as dense in F: both constant coordinates (c1+t c2,c2) and their forced E response are handled directly via a bounded finite-time Fubini triangle. The integral is exactly t+t^2+t^3/6<=(1+t)^3. The forcing bound K(1+s)|c|, coefficient ceilings 8(1+K)^3 and9(1+K)^3, scalar Cauchy-Schwarz sqrt(145)<13 and final conservative16(1+K)^4 are correct for K>=1. No sign positivity, spectral eigenstate/gap or growing-radius/source limit is inserted.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    }
+  ],
+  "mathematical_checks": [
+    "The unchanged proof is publicly reconstructed: the unit constant-displacement INPUT (0,0,1,0) recovers the OUTPUT (0,V_q,0,0), making V_q Cauchy in H^-1/2; testing outside the fixed compact mask support preserves support. Restricting the displacement input gives bounded multiplier convergence H^1/2\u2192H^-1/2 with norm<=||L||. Smooth compact multiplication identifies the limiting map on tests, density extends it, and the constant column gives uniqueness. Symmetry is the real distribution pairing \u3008V,uw\u3009; the product norm bound extends it, and Hilbert complexification preserves norm and yields a Hermitian form with summed real/imaginary diagonal. The report misnames several output rows as zero input columns and misdescribes the constant-displacement input coordinate, but its Step4/Step5 working explicitly gives the correct nonzero displacement/c1 columns. Thus the required multiplier deduction is present despite those slips.",
+    "The report explicitly obtains ||u||H1/2^2<=||u||2||u||H1, |v_V(u,u)|<=K b z and the half/half AM-GM bound. With c=2+K^2, the shifted lower bound is z^2/2+(1+K^2/2)b^2 and upper is at most L_K z^2 for L_K=3(1+K^2). Equivalent complete H1 form norms give a closed semibounded densely defined Hermitian form; the named Teschl representation inputs are used at their stated hypotheses, without asserting an H2 operator domain. The bounded spectral-slice argument turns A>=1 from form to spectral order. The common-domain resolvent variational identity gives reversed resolvent order; the positive square-root spectral integral then gives square-root form order, not an arbitrary noncommuting-power rule. Applied to (B0,2A) and (A,L_K B0), it yields both quarter-domain inclusions and exactly 2^-1/4 / L_K^1/4 norm constants. The dual norm formula is correct and has the actual maximizing test A^-1/2 v; since A>=1, every v in the stated L2 domain has a finite A^-1/4 norm. The report invented a possibly-infinite/domain-exclusion caveat and falsely attributed it to the source, but the correct public formula/test and all required quarter/dual deductions are already supplied. Conjugation compatibility follows from the real form and unique calculus.",
+    "The public argument locates -K^2<=beta<=0 using the signed form bound and a dilated smooth bump translated wholly outside the fixed compact distribution support. It does not import nonnegative ground-state machinery. The form/spectral bottom comparison and PVM support/approximate-eigenvector/resolvent argument identify beta with the nonempty spectral bottom, hence lambda<=K and h+c>=2 on the support. The adapted A^1/4 / A^-1/4 norm and dual comparison have condition-number cost M_K^2=sqrt(3(1+K^2))<=2(1+K). For h>0 the public case split proves sqrt(h+c)|S_t(h)|<=1+sqrt(c)t; h=0 is its triangular matrix limit; for h<0, sqrt(-h)<=K and h+c>=2 give the lower off-diagonal bound K exp(lambda t) without dividing by lambda. Entry ceiling 2(1+K)(1+t)e^(lambda t), two-by-two matrix norm factor2 and the condition-number factor yield exactly 8(1+K)^2(1+t)e^(lambda t). Dominated spectral calculus, scalar addition and bounded cutoffs give strong continuity, group property and graph-level extensions. The zero-bottom/threshold qualification is preserved.",
+    "The report derives the distributional form equation H_Vu=-Delta u-Vu, multiplier H^1/2\u2192H^-1/2, and (1-Delta)u in H^-1/2, so D(H_V) embeds graph-continuously into H^3/2. The free E generator has domain H^3/2\u00d7H^1/2, distinct from the spectral graph data D(H_V)\u00d7H1. Bounded spectral cutoffs give graph-continuous trajectories and C1 H1\u00d7L2 trajectories; the embedding makes the strong-group chain rule legitimate before density, proving the E Duhamel identity and uniqueness without a false D(A^3/4)=H^3/2 or operator-norm free derivative. On full F, the Volterra series has the displayed factorial bound and the compact conjugated integrand is norm-continuous and uniformly bounded on finite horizons, so its primitive is Lipschitz and agrees with the Young flow. E is not treated as dense in F: both constant coordinates (c1+t c2,c2) and their forced E response are handled directly via a bounded finite-time Fubini triangle. The integral is exactly t+t^2+t^3/6<=(1+t)^3. The forcing bound K(1+s)|c|, coefficient ceilings 8(1+K)^3 and9(1+K)^3, scalar Cauchy-Schwarz sqrt(145)<13 and final conservative16(1+K)^4 are correct for K>=1. No sign positivity, spectral eigenstate/gap or growing-radius/source limit is inserted."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "classification": "report-only input-column/output-row and coordinate wording errors",
+      "report_section": "L:signed-limiting-multiplier / Steps1,3,5",
+      "report_lf": 32,
+      "old": "The first, third and fourth columns of L_qn are identically zero.",
+      "new": "The first, third and fourth OUTPUT components (rows) are zero. The velocity and constant-velocity INPUT columns are zero; the displacement and constant-displacement input columns are generally nonzero.",
+      "contrary_calculation": "The actual map is L_q(u,v,c1,c2)=(0,V_q(u+c1),0,0). Its first and third input columns produce V_q u and c1 V_q in the second output component. The input (0,0,1,0) is the separate c1 coordinate, not the second E input.",
+      "disposition": "The report itself explicitly recovers both nonzero columns in Steps4\u20135 and uses the correct norm-one input vector and output norm in Step1. This is a report wording/transcription error, not a missing multiplier reconstruction or a defect of the unchanged source proof. The Step6 subscript V_u should also read the product Vu."
+    },
+    {
+      "id": "R2",
+      "classification": "false report-only source criticism / vacuous extended dual-domain caveat",
+      "report_section": "P:signed-closed-form / Step8 and closing notes",
+      "report_lf": 119,
+      "old": "For v in L2, ||A^(-1/4)v|| may be infinite; spectral cutoff tests give infinity outside D(A^(-1/4)); this is a pre-existing source convention.",
+      "new": "Since A>=1, A^(-1/4) is bounded on all L2 and ||A^(-1/4)v||<=||v||2 for every stated v in L2. The dual norm is always finite on that domain; u=A^(-1/2)v supplies equality (with the zero case immediate). There is no excluded L2 domain or source defect.",
+      "contrary_calculation": "Spectral support of A lies in [1,infinity), so lambda^(-1/4)<=1. Thus D(A^(-1/4))=L2 and the report purported outside-domain case is empty. The source explicitly quantifies v in L2 and gives the finite formula and maximizing test, without an infinite-value qualification.",
+      "disposition": "Preserve raw PASS_WITH_NOTES/high and its notes literally; do not promote this criticism into a manuscript correction. The report already contains the correct norm formula, test and A>=1 hypothesis, so the false extra caveat does not remove the required dual-completion deduction."
+    },
+    {
+      "id": "R3",
+      "classification": "valid resolved terseness and conservative-constant notes, not defects",
+      "disposition": "The public report explicitly expands the quarter-power domain conversion, the h>0 entry case split and the full-F coefficient arithmetic. Its half-power-to-quarter conversion and constant-block slack observations are legitimate descriptions of concise source steps, now publicly reconstructed. The number16 and factors8/13 are valid conservative bounds, not claims of sharpness."
+    },
+    {
+      "id": "R4",
+      "classification": "optional report integrand/primitive antecedent precision",
+      "report_section": "P:signed-physical-wave / Step5",
+      "report_lf": 241,
+      "disposition": "The norm-continuous object furnished by compactness and strong group/adjoint continuity is the conjugated INTEGRAND S_F(-s)L S_F(s). It is uniformly bounded on every finite horizon, which makes its primitive Lipschitz. The report calls the primitive norm-continuous, which is true but is by itself weaker than the reason for Lipschitzness. Its surrounding Volterra/group bounds and compact-conjugation reference already provide the needed bounded-integrand fact, so no required public step is absent and no source correction follows."
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 18633,
+      "sha256": "3477fab7637f2fd074fd7b39800671d3a13b224983e6ca242328729e9ba0c054"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 6514,
+      "sha256": "a4eda096ff8c1dd6d08a1b68c2a10bfa5b840dfc3dbda3fdb2a61743fb0fd5d2"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 6196,
+      "sha256": "aa7a0a0232d5fd29205084219b068a8f4ca12028decf62f44f11d9e5eb4a94a2"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 4156,
+      "sha256": "dd838e65410c363082d0041989531a75608406d8ec7024ec5bba0e88d13e48b3"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 8075,
+      "sha256": "8f121ae18094b9cc2898c2f309d1489f97f0e5c39b4a92973f899e7b4ca514cb"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 14299,
+      "sha256": "d49c6954d587572a6e3d027945a6e86fe6632bbbdf00ab15ecb852602e77d8b9"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 17119,
+      "sha256": "54e88681a39b82c18ee20b67f8033e716f12c72a55d6c369c8432790834267b0"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-constant-young-baseline.txt",
+      "bytes": 27376,
+      "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+    },
+    {
+      "path": "inputs/context-compact-gaussian-baseline.txt",
+      "bytes": 30608,
+      "sha256": "caf9e56a5b818f9e5daa02ac3423c354b95c515f1932d92170ec002b0fbaa84a"
+    },
+    {
+      "path": "inputs/context-cameron-mean-baseline.txt",
+      "bytes": 24138,
+      "sha256": "0ecbf05a70a7d5d79c9e2285dcadb93567687d4e463bfe4f6b0fdac5ff6f016d"
+    },
+    {
+      "path": "inputs/context-compact-mean-family-baseline.txt",
+      "bytes": 25917,
+      "sha256": "39946946cc52bee56eb5ec2ab44111a2e8873df9b17ef65d322c0b42066325ca"
+    }
+  ],
+  "input_identity_checks": "All SOURCE-BINDING delivered payload hashes checked, including complete OLD/NEW target module hashes. Unassigned upstream proofs not counted.",
+  "read_limits": [
+    "All public math reasons/findings and complete OLD/NEW targets read; needed supplied smooth-multiplier, compact-F, physical-group, covariance/phase declarations consulted. Teschl imports used at their stated hypotheses; no primary-PDF/source theorem-proof verification.",
+    "False source criticism does not automatically make the reconstruction partial: correct explicit quarter-domain inequalities, dual formula/test and full physical-wave deduction are already in the public report. Report errors are retained as notes, not silently normalized.",
+    "No native export, hidden reasoning, events, transport or usage inspected. Dispatcher reported separate custody concerns; root alone decides protocol. No source/public edit, provider call, callback, build or Git mutation."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "PENDING_ROOT_CUSTODY_DISPOSITION",
+  "historical_report_or_grade_edited": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "16/Le retain source adoption and release authority; root reviews disposition",
+  "protocol_pending": true,
+  "protocol_status": "PENDING_EXPLICIT_DISPOSITION",
+  "native_protocol_accepted": false,
+  "scope_or_adoption_cleared": false,
+  "publication_or_model_acceptance_cleared": false,
+  "bundle_status": "MATH_CHECKED_PROTOCOL_HELD",
+  "source_math_record_sha256": "ebdbaebfad735191fe7803b5c05dec93ea6df05d321e1904bc30c1cea59a3dc3",
+  "source_math_values_preserved": true,
+  "native_prompt_binding_limit": "Exact exported native user prompt binds the scientific source packet. It does not prove that every hidden internal provider request carried an identical payload, nor determine their physical count or aggregate usage/cost/cap compliance.",
+  "binding_original_full_source_vs_delivered": [
+    {
+      "side": "old",
+      "source_path": "notes/integrated_signed_static.tex",
+      "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+      "delivery": "WHOLE_FILE",
+      "original_full_source_file_sha256": "d49c6954d587572a6e3d027945a6e86fe6632bbbdf00ab15ecb852602e77d8b9",
+      "delivered_scientific_file_sha256": "d49c6954d587572a6e3d027945a6e86fe6632bbbdf00ab15ecb852602e77d8b9",
+      "whole_file_delivery_equals_original": true,
+      "no_scientific_view_omission": true
+    },
+    {
+      "side": "new",
+      "source_path": "notes/integrated_signed_static.tex",
+      "source_revision": "7bea84b83b9ace4c305e3728783012f59aebae88",
+      "delivery": "WHOLE_FILE",
+      "original_full_source_file_sha256": "54e88681a39b82c18ee20b67f8033e716f12c72a55d6c369c8432790834267b0",
+      "delivered_scientific_file_sha256": "54e88681a39b82c18ee20b67f8033e716f12c72a55d6c369c8432790834267b0",
+      "whole_file_delivery_equals_original": true,
+      "no_scientific_view_omission": true
+    }
+  ]
+}

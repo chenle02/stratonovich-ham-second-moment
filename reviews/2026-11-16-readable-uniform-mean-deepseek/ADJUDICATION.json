@@ -1,0 +1,411 @@
+{
+  "review_record_id": "RP014",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side public-report/source math adjudication only; not another independent scientific vote or native-protocol disposition",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "08575eb1c46946a06db7ed6dbdb30c4bb51b447d",
+  "source_file": "notes/integrated_uniform_mean.tex",
+  "source_binding_sha256": "14ed117601ec576a5ac44f1145a6c818ff46fb2d29d704dc91095ecff185eb69",
+  "public_report_sha256": "85b44b837c1606677bf2c0c93a7d7f924fa2b6dccf3cb185b9499259864c5aab",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "SCOPED_ARGUMENT_PRESERVATION_SUPPORTED_BUT_PUBLIC_EXACT_PRIMITIVE_RECONSTRUCTION_PARTIAL_WITH_REPORT_ONLY_SLIPS_PROTOCOL_SEPARATE",
+  "requested_reread_complete": false,
+  "requested_reread_complete_meaning": "All literal OLD/NEW/public-reconstruction COMPLETE flags are preserved. Author-side checking finds the required exact primitive constant derivation incorrect as written in one proof; source-correctness is not a replacement public derivation.",
+  "per_proof_reconstruction": {
+    "L:uniform-mean-cutoff": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    },
+    "L:uniform-mean-spatial-tails": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R2"
+      ]
+    },
+    "L:uniform-mean-tensor": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:uniform-mean-regulator": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R3"
+      ]
+    },
+    "P:uniform-actual-cameron": {
+      "status": "PARTIAL",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [
+        "D1: exact primitive/free-group constant via the conjugated Lr norm"
+      ],
+      "limits": [
+        "Source-correct derivation is not substituted for the false public integrand-norm equality."
+      ],
+      "report_notes": [
+        "R3",
+        "D1"
+      ]
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:uniform-mean-cutoff",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 19,
+      "source_old_statement_lf": [
+        29,
+        42
+      ],
+      "source_old_proof_lf": [
+        44,
+        62
+      ],
+      "source_new_statement_lf": [
+        29,
+        42
+      ],
+      "source_new_proof_lf": [
+        44,
+        62
+      ],
+      "source_old_proof_sha256": "c1811562c090daac0087fb87e08b4912132c4b2918ef6cd25b8783234ebd8a36",
+      "source_new_proof_sha256": "c1811562c090daac0087fb87e08b4912132c4b2918ef6cd25b8783234ebd8a36",
+      "mathematical_check": "The unchanged proof is publicly reconstructed. The unitary product transform is c_d times convolution, and the valid weighted Peetre kernel is c_d 2^(|sigma|/2)|eta_hat_R(q)|<q>^|sigma| acting on <xi-q>^sigma u_hat(xi-q). R^d eta_hat(Rq) and p=Rq cancel the R^d Jacobian and use <p/R><=<p> for R>=1; Young L1*L2 and density give M_sigma for all real sigma. The report intermediate Peetre display uses |sigma| instead of sigma on the state frequency, which is too coarse to imply its next line at negative sigma; its next weighted convolution line is the correct standard Peetre statement, so the required multiplier calculation is nevertheless public. Lambda^-1:H^-1/2\u2192H^1/2 is isometric; two uniform cutoffs plus fractional products give M0=A_s M^2 and the physical row gives ||T_R||<=M0. Fixed-R compact values are legitimately the stated unassigned spatial map, not uniform-radius compactness.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "L:uniform-mean-spatial-tails",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 65,
+      "source_old_statement_lf": [
+        70,
+        88
+      ],
+      "source_old_proof_lf": [
+        90,
+        150
+      ],
+      "source_new_statement_lf": [
+        70,
+        88
+      ],
+      "source_new_proof_lf": [
+        90,
+        175
+      ],
+      "source_old_proof_sha256": "76aa36bfae9f450ffbbdeb984c3ca2853abb0b7cb07ff36ef0a1813f52a480b6",
+      "source_new_proof_sha256": "f67cdcda0746a8ca6e4d6f65aeca462a758ede86c8a0f62ffba8f0721162960f",
+      "mathematical_check": "Every required deduction is public. Translations are strongly continuous isometries on the actual covariance completion, preserving the real subspace. The Fourier difference multiplier and beta=1/2-s give ||tau_h f-f||Hs<=2 min(1,|h|^beta)||f||H1/2; splitting by |h| and |xi h| justifies both regimes. The two product-difference terms each contribute 2A_s M^2, giving fourfold row constant. Bochner heat averaging uses variance epsilon and E|sqrt(epsilon)G_d|^beta, hence M_h epsilon^(beta/2); selfadjointness transfers it to the control. The actual Fourier image V, not all L2(mu), is shown invariant under the closed-ball indicator using Schwartz cutoff multiplication, dominated convergence including a charged boundary sphere, test density and contraction. Pullback gives an orthogonal possibly infinite-rank real P_K commuting with heat. On the high frequencies, 1-exp(-|xi|^2/(2K^2))>=1-exp(-1/2), giving exactly M_f K^-beta. A malformed row-expression transcription in the report does not remove its preceding explicit product calculation.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "L:uniform-mean-tensor",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 129,
+      "source_old_statement_lf": [
+        158,
+        166
+      ],
+      "source_old_proof_lf": [
+        168,
+        198
+      ],
+      "source_new_statement_lf": [
+        183,
+        191
+      ],
+      "source_new_proof_lf": [
+        193,
+        240
+      ],
+      "source_old_proof_sha256": "c8fbe1c2a3741a0cd1631b24ae9a362dac41a1f37043514eb8986b10a116302d",
+      "source_new_proof_sha256": "f07752dc4bea81b0a700476ddde78359bb546cae946ea328cd4413b07dddf26f",
+      "mathematical_check": "Finite Hilbert tensors and auxiliary finite Gaussian coefficients give a covariance with nonnegative eigenvalues lambda_l and total trace L=sum||f_j||^2. Convexity of t^(r/2) for r>=2 gives the Gaussian moment ceiling m_r L^(r/2), with L=0 handled separately. Scalar Gaussian moments at each time and Tonelli produce the same m_r on the other side; applying A and canceling this finite positive moment gives constant exactly ||A||, independent of Hilbert dimension. Finite tensor density/Bochner completeness extend the map, including zero spaces. When Af!=0 and G has an infinite orthonormal sequence, images have pairwise distance sqrt(2)||Af||Lr, so compact A does not force compact A tensor identity. All steps including the new scalar-variance explanation are substantively present.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:uniform-mean-regulator",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 163,
+      "source_old_statement_lf": [
+        215,
+        231
+      ],
+      "source_old_proof_lf": [
+        233,
+        262
+      ],
+      "source_new_statement_lf": [
+        257,
+        273
+      ],
+      "source_new_proof_lf": [
+        275,
+        320
+      ],
+      "source_old_proof_sha256": "afeaf6bf85deffbc44a7868b60d2b897f2aae3e9ee4c3280631a98dcd4418621",
+      "source_new_proof_sha256": "7ee99b7ecfca3e799c956b3e3a9c5d2c57804f209556712cb2c57917656aae4d",
+      "mathematical_check": "Orthogonality/idempotence of pi_J tensor P_K is explicit. Compact scalar C_t sends weak-null (I-pi_J)v_J to norm-zero along a subsequence, proving epsilon_J\u21920; the assigned tensor lemma transfers this scalar error without dimension cost. The exact residual decomposition is (I-pi_J) tensor I + pi_J tensor(I-P_K). The first temporal map is C_t(I-pi_J), the second C_t pi_J with norm<=c_t, followed pointwise by T_R(I-P_K). Thus the two bounds are M0 epsilon_J and M_f c_t K^-beta. The full mean has norm<=M0 c_t by the same tensor bound and composition. Strongly measurable U\u03a6 composed with compact-valued spatial T_R gives the stated Bochner mean. The report conflates T_R and mathcal T_R in two labels/left sides, but independently displays the correct T_R U/intertwining factorization, so its deduction is present rather than blackboxed. No finite spatial rank or uniform-radius compactness is inferred.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:uniform-actual-cameron",
+      "author_reconstruction_status": "PARTIAL",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 205,
+      "source_old_statement_lf": [
+        291,
+        311
+      ],
+      "source_old_proof_lf": [
+        313,
+        394
+      ],
+      "source_new_statement_lf": [
+        349,
+        369
+      ],
+      "source_new_proof_lf": [
+        371,
+        483
+      ],
+      "source_old_proof_sha256": "14fafae77e659f314ed6c4c5674f70db0a8dafb40b8a01191e7509f1c040a4aa",
+      "source_new_proof_sha256": "3254bdc2f9b2ca97ff011c0c3f39c62a73068e799c2acf3f785ae11cdd142256",
+      "mathematical_check": "The report correctly reconstructs original-noise projection/isometry variance domination, little-Holder/first-chaos construction, supported rows and the completed J=0 covariance specialization, sqrt(delta) scaling, compact-conjugation Bochner measurability, and E-only scope. It computes the nonunitary free Fourier matrix Frobenius bound sqrt(3+2B^2)<=3B correctly. It also correctly computes the true partition power-mean factor (delta n)^(1/p-1/r), positivity because p<r, the two regulator error terms and minimum original-noise Cameron preimage norm. However, the required primitive/group constant is not correctly reconstructed as written: it defines f(v)=S_E(-v)M_h(s_m+delta v)S_E(v), then claims ||f||Lr=delta^-1/r t_m. Conjugation is not norm-isometric here. It also already inserts G_B,E^2 in front of ||f|| in the primitive estimate. The final claimed C_B,E with only one G^2 factor is correct in the source but does not follow from those report lines without changing which field norm is used. No separate correct primitive derivation elsewhere in this public report removes this mismatch. This is a bounded report-only missing/incorrect exact-constant step, not a manuscript defect.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": true
+    }
+  ],
+  "mathematical_checks": [
+    "The unchanged proof is publicly reconstructed. The unitary product transform is c_d times convolution, and the valid weighted Peetre kernel is c_d 2^(|sigma|/2)|eta_hat_R(q)|<q>^|sigma| acting on <xi-q>^sigma u_hat(xi-q). R^d eta_hat(Rq) and p=Rq cancel the R^d Jacobian and use <p/R><=<p> for R>=1; Young L1*L2 and density give M_sigma for all real sigma. The report intermediate Peetre display uses |sigma| instead of sigma on the state frequency, which is too coarse to imply its next line at negative sigma; its next weighted convolution line is the correct standard Peetre statement, so the required multiplier calculation is nevertheless public. Lambda^-1:H^-1/2\u2192H^1/2 is isometric; two uniform cutoffs plus fractional products give M0=A_s M^2 and the physical row gives ||T_R||<=M0. Fixed-R compact values are legitimately the stated unassigned spatial map, not uniform-radius compactness.",
+    "Every required deduction is public. Translations are strongly continuous isometries on the actual covariance completion, preserving the real subspace. The Fourier difference multiplier and beta=1/2-s give ||tau_h f-f||Hs<=2 min(1,|h|^beta)||f||H1/2; splitting by |h| and |xi h| justifies both regimes. The two product-difference terms each contribute 2A_s M^2, giving fourfold row constant. Bochner heat averaging uses variance epsilon and E|sqrt(epsilon)G_d|^beta, hence M_h epsilon^(beta/2); selfadjointness transfers it to the control. The actual Fourier image V, not all L2(mu), is shown invariant under the closed-ball indicator using Schwartz cutoff multiplication, dominated convergence including a charged boundary sphere, test density and contraction. Pullback gives an orthogonal possibly infinite-rank real P_K commuting with heat. On the high frequencies, 1-exp(-|xi|^2/(2K^2))>=1-exp(-1/2), giving exactly M_f K^-beta. A malformed row-expression transcription in the report does not remove its preceding explicit product calculation.",
+    "Finite Hilbert tensors and auxiliary finite Gaussian coefficients give a covariance with nonnegative eigenvalues lambda_l and total trace L=sum||f_j||^2. Convexity of t^(r/2) for r>=2 gives the Gaussian moment ceiling m_r L^(r/2), with L=0 handled separately. Scalar Gaussian moments at each time and Tonelli produce the same m_r on the other side; applying A and canceling this finite positive moment gives constant exactly ||A||, independent of Hilbert dimension. Finite tensor density/Bochner completeness extend the map, including zero spaces. When Af!=0 and G has an infinite orthonormal sequence, images have pairwise distance sqrt(2)||Af||Lr, so compact A does not force compact A tensor identity. All steps including the new scalar-variance explanation are substantively present.",
+    "Orthogonality/idempotence of pi_J tensor P_K is explicit. Compact scalar C_t sends weak-null (I-pi_J)v_J to norm-zero along a subsequence, proving epsilon_J\u21920; the assigned tensor lemma transfers this scalar error without dimension cost. The exact residual decomposition is (I-pi_J) tensor I + pi_J tensor(I-P_K). The first temporal map is C_t(I-pi_J), the second C_t pi_J with norm<=c_t, followed pointwise by T_R(I-P_K). Thus the two bounds are M0 epsilon_J and M_f c_t K^-beta. The full mean has norm<=M0 c_t by the same tensor bound and composition. Strongly measurable U\u03a6 composed with compact-valued spatial T_R gives the stated Bochner mean. The report conflates T_R and mathcal T_R in two labels/left sides, but independently displays the correct T_R U/intertwining factorization, so its deduction is present rather than blackboxed. No finite spatial rank or uniform-radius compactness is inferred.",
+    "The report correctly reconstructs original-noise projection/isometry variance domination, little-Holder/first-chaos construction, supported rows and the completed J=0 covariance specialization, sqrt(delta) scaling, compact-conjugation Bochner measurability, and E-only scope. It computes the nonunitary free Fourier matrix Frobenius bound sqrt(3+2B^2)<=3B correctly. It also correctly computes the true partition power-mean factor (delta n)^(1/p-1/r), positivity because p<r, the two regulator error terms and minimum original-noise Cameron preimage norm. However, the required primitive/group constant is not correctly reconstructed as written: it defines f(v)=S_E(-v)M_h(s_m+delta v)S_E(v), then claims ||f||Lr=delta^-1/r t_m. Conjugation is not norm-isometric here. It also already inserts G_B,E^2 in front of ||f|| in the primitive estimate. The final claimed C_B,E with only one G^2 factor is correct in the source but does not follow from those report lines without changing which field norm is used. No separate correct primitive derivation elsewhere in this public report removes this mismatch. This is a bounded report-only missing/incorrect exact-constant step, not a manuscript defect."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "classification": "report-only overly coarse intermediate Peetre display / sign transcription",
+      "report_section": "L:uniform-mean-cutoff / Step1",
+      "report_lf": 31,
+      "old": "\u27e8\u03be\u27e9^\u03c3 \u2264 2^{|\u03c3|/2}\u27e8\u03be-q\u27e9^{|\u03c3|}\u27e8q\u27e9^{|\u03c3|}",
+      "new": "\u27e8\u03be\u27e9^\u03c3 \u2264 2^{|\u03c3|/2}\u27e8\u03be-q\u27e9^\u03c3\u27e8q\u27e9^{|\u03c3|}",
+      "disposition": "The old displayed inequality is only a coarser bound at negative sigma and cannot imply the next signed-weight convolution line. The next line is itself the correct standard Peetre bound and the rest of the multiplier derivation is correct. Source uses the correct weighted kernel throughout; no source correction or missing standard-Peetre reproof is required."
+    },
+    {
+      "id": "R2",
+      "classification": "report-only malformed row notation",
+      "report_section": "L:uniform-mean-spatial-tails / Step3",
+      "report_lf": 91,
+      "old": "\u2016\u03c4_h k_R-w-k_R\u2016",
+      "new": "\u2016\u03c4_h k_R(z,w)-k_R(z,w)\u2016_{H_sp}",
+      "disposition": "The extraneous -w is not a well-typed Hilbert row expression. The report immediately before it gives the correct product difference and both estimates producing 4A_s M^2. No source or reconstruction gap follows."
+    },
+    {
+      "id": "R3",
+      "classification": "report-only spatial/completed-map symbol conflation",
+      "report_section": "P:uniform-mean-regulator / Steps4\u20135; P:uniform-actual-cameron / Step4",
+      "report_lf": 187,
+      "old": "T_R(I-\u03c0_J)\u2297I = T_R(C_t(I-\u03c0_J)\u2297I); \u2016T_RQ_{J,K}\u2016; M_h = T_R(Q_{J,K}i_I^*h)",
+      "new": "\ud835\udcaf_R((I-\u03c0_J)\u2297I) = T_R(C_t(I-\u03c0_J)\u2297I); \u2016\ud835\udcaf_RQ_{J,K}\u2016; M_h = \ud835\udcaf_R(Q_{J,K}i_I^*h)",
+      "disposition": "T_R is the spatial map H_sp\u2192K(E), while \ud835\udcaf_R=T_R U has spacetime domain H_I. The report Step5 separately displays the correctly typed T_R U/intertwining expression and both error estimates. The regulator deduction is substantively present; these shorthand names are not a new source identity."
+    },
+    {
+      "id": "D1",
+      "classification": "report-only false conjugated-field norm equality; required exact primitive constant not reconstructed as written",
+      "report_section": "P:uniform-actual-cameron / Step4",
+      "report_lf": 243,
+      "source_old_lf": [
+        354,
+        365
+      ],
+      "source_new_lf": [
+        429,
+        440
+      ],
+      "old": "For f(v)=S_E(-v)M_h(s_m+\u03b4v)S_E(v): \u2016\u222bf\u2016_{C^\u03b8}\u2264G_{B,E}\u00b2[B^{1-1/r}+B^{1-1/r-\u03b8}]\u2016f\u2016_{L^r}, and \u2016f\u2016_{L^r}=\u03b4^{-1/r}t_m.",
+      "correct_mathematical_account_not_applied_to_raw_report": "For the conjugated f, the primitive estimate has only [B^(1-1/r)+B^(1-1/r-theta)] times ||f||Lr; then ||f||Lr<=G_B,E^2 delta^-1/r t_m. Equivalently, apply G^2 to the norm of the un-conjugated pulled-back M_h, whose Lr norm equals delta^-1/r t_m. The source already uses this once-only G^2 accounting.",
+      "contrary_calculation": "Conjugation by this free group is not an operator-norm isometry. Already in the zero-frequency shear algebra S(v)=[[1,v],[0,1]], N=[[0,0],[1,0]], one has S(-v)NS(v)=[[-v,-v^2],[1,v]] with norm 1+v^2 rather than ||N||=1. This illustrates the nonisometric matrix issue; it is not asserted as a zero-frequency L2 eigenvector or a counterexample to the source theorem. The exact general estimate available is ||S(-v)M S(v)||<=G^2||M||.",
+      "disposition": "Do not silently correct the integrand definition/norm and then count the exact G^2/18B^(3-1/r) calculation as obtained. Correcting only the asserted equality to its inequality while leaving the report earlier G^2 would yield G^4. Mark this proof PARTIAL in public reconstruction as written. Source statements/proofs are correct on this point and require no edit. Root may review the bounded report-notation versus reconstruction disposition."
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": true,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 17937,
+      "sha256": "85b44b837c1606677bf2c0c93a7d7f924fa2b6dccf3cb185b9499259864c5aab"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 6309,
+      "sha256": "a16f9365c4e6f2839964ceaae962047365ac57c3387b66c07bd69b5b41d46a63"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 7516,
+      "sha256": "451f3f4b4673f2e96197d9f0c0a7d92dd224c443f223000c55263fca10851847"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 5220,
+      "sha256": "14ed117601ec576a5ac44f1145a6c818ff46fb2d29d704dc91095ecff185eb69"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 9699,
+      "sha256": "7437333ca5d7c87604ff2ace614ea2e148fc443fb0a59b55f45ea36a11e76874"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 19613,
+      "sha256": "132449ade993b8feab10c06a6c062b21698d83d0ad811f99090bd069144dedc6"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 23230,
+      "sha256": "12df12e3fa415055d37fb54a53b6f511edf7e00de9510268e7727adde52d6928"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-cameron-mean-baseline.txt",
+      "bytes": 24138,
+      "sha256": "0ecbf05a70a7d5d79c9e2285dcadb93567687d4e463bfe4f6b0fdac5ff6f016d"
+    },
+    {
+      "path": "inputs/context-raw-block-inputs-baseline.txt",
+      "bytes": 35928,
+      "sha256": "ed2f85038ef6136eb8581fa64cab4962cde40bdbdba9ff163dd832c4fa5ad992"
+    },
+    {
+      "path": "inputs/context-source-convergence-baseline.txt",
+      "bytes": 25085,
+      "sha256": "f212bad41254a78109e5802def45053c8bda53a416cda9f457513406304aaef4"
+    },
+    {
+      "path": "inputs/context-constant-young-baseline.txt",
+      "bytes": 27376,
+      "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+    },
+    {
+      "path": "inputs/context-covariance-foundation-baseline.txt",
+      "bytes": 21173,
+      "sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020"
+    },
+    {
+      "path": "inputs/context-spatial-occupation-baseline.txt",
+      "bytes": 22407,
+      "sha256": "ed2f96133f5e969ba4d24fca051da4fcfcbf1377d6d18aa6a5e8385b66e5a12f"
+    }
+  ],
+  "input_identity_checks": "All SOURCE-BINDING delivered payload hashes checked, including exact complete OLD/NEW module hashes; context proofs unassigned and not counted.",
+  "read_limits": [
+    "Every public math reason/finding compared against complete OLD/NEW targets and needed supplied definitions/statements for covariance products, Fourier completion, supported pullbacks, Gaussian transfer, free E matrix and minimum Cameron preimage. No reproof/certification of unassigned upstream theorems.",
+    "No native export, hidden reasoning, events or transport inspected; dispatcher reported separate custody questions, which remain root-only.",
+    "No source/public-worktree edit, model call, callback, build or Git mutation. Raw PASS/high and native per-proof COMPLETE flags remain unedited."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "PENDING_ROOT_CUSTODY_DISPOSITION",
+  "historical_report_or_grade_edited": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "16/Le retain source adoption and release authority; root reviews disposition",
+  "protocol_pending": true,
+  "protocol_status": "PENDING_EXPLICIT_DISPOSITION",
+  "native_protocol_accepted": false,
+  "scope_or_adoption_cleared": false,
+  "publication_or_model_acceptance_cleared": false,
+  "bundle_status": "MATH_PARTIAL_PROTOCOL_HELD",
+  "source_math_record_sha256": "59fc9b8fe9b7a3329e66382d4d56c94aec3082a1cd9b0f7b5acd49cf6368cae1",
+  "source_math_values_preserved": true,
+  "native_prompt_binding_limit": "Exact exported native user prompt binds the scientific source packet. It does not prove that every hidden internal provider request carried an identical payload, nor determine their physical count or aggregate usage/cost/cap compliance.",
+  "binding_original_full_source_vs_delivered": [
+    {
+      "side": "old",
+      "source_path": "notes/integrated_uniform_mean.tex",
+      "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+      "delivery": "WHOLE_FILE",
+      "original_full_source_file_sha256": "132449ade993b8feab10c06a6c062b21698d83d0ad811f99090bd069144dedc6",
+      "delivered_scientific_file_sha256": "132449ade993b8feab10c06a6c062b21698d83d0ad811f99090bd069144dedc6",
+      "whole_file_delivery_equals_original": true,
+      "no_scientific_view_omission": true
+    },
+    {
+      "side": "new",
+      "source_path": "notes/integrated_uniform_mean.tex",
+      "source_revision": "08575eb1c46946a06db7ed6dbdb30c4bb51b447d",
+      "delivery": "WHOLE_FILE",
+      "original_full_source_file_sha256": "12df12e3fa415055d37fb54a53b6f511edf7e00de9510268e7727adde52d6928",
+      "delivered_scientific_file_sha256": "12df12e3fa415055d37fb54a53b6f511edf7e00de9510268e7727adde52d6928",
+      "whole_file_delivery_equals_original": true,
+      "no_scientific_view_omission": true
+    }
+  ]
+}

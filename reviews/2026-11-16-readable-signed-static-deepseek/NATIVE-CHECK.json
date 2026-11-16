@@ -1,0 +1,248 @@
+{
+  "schema": "readability-native-custody/1",
+  "review_record_id": "RP016",
+  "protocol_status": "PENDING_EXPLICIT_DISPOSITION",
+  "operator_independent_status": true,
+  "recorded_utc": "2026-11-16T09:07:15.012987+00:00",
+  "custody_scope": "Native transport/binding evidence only; no mathematical adjudication, grade change or model/publish approval.",
+  "source": {
+    "source_file": "notes/integrated_signed_static.tex",
+    "baseline": "cdde711c248862f33207860107dd0e6b31d60852",
+    "source_revision": "7bea84b83b9ace4c305e3728783012f59aebae88",
+    "carrier_freeze_revision": "9ade9835315d339582c6f6d40a0c98638c836695",
+    "prompt_sha256": "9ac8d500f96898395be813df87b72a4cc67f8ba77bb622f3df13a01635cc644d",
+    "source_binding_sha256": "dd838e65410c363082d0041989531a75608406d8ec7024ec5bba0e88d13e48b3",
+    "all_source_payload_binding_verified": true,
+    "assigned_proof_inventory_bytes_verified": true,
+    "target_full_vs_view": [
+      {
+        "side": "old",
+        "source_path": "notes/integrated_signed_static.tex",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "delivery": "WHOLE_FILE",
+        "delivered_equals_full_original_file": true,
+        "delivered_sha256": "d49c6954d587572a6e3d027945a6e86fe6632bbbdf00ab15ecb852602e77d8b9"
+      },
+      {
+        "side": "new",
+        "source_path": "notes/integrated_signed_static.tex",
+        "source_revision": "7bea84b83b9ace4c305e3728783012f59aebae88",
+        "delivery": "WHOLE_FILE",
+        "delivered_equals_full_original_file": true,
+        "delivered_sha256": "54e88681a39b82c18ee20b67f8033e716f12c72a55d6c369c8432790834267b0"
+      }
+    ],
+    "payloads": [
+      {
+        "path": "inputs/old-module.txt",
+        "source_path": "notes/integrated_signed_static.tex",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "selection": "WHOLE_FILE",
+        "sha256": "d49c6954d587572a6e3d027945a6e86fe6632bbbdf00ab15ecb852602e77d8b9",
+        "bytes": 14299
+      },
+      {
+        "path": "inputs/new-module.txt",
+        "source_path": "notes/integrated_signed_static.tex",
+        "source_revision": "7bea84b83b9ace4c305e3728783012f59aebae88",
+        "selection": "WHOLE_FILE",
+        "sha256": "54e88681a39b82c18ee20b67f8033e716f12c72a55d6c369c8432790834267b0",
+        "bytes": 17119
+      },
+      {
+        "path": "inputs/context-model-assumptions.txt",
+        "source_path": "notes/notes_stratonovich_ham_second_moment.tex",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "selection": "LF_RANGE",
+        "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7",
+        "bytes": 1986
+      },
+      {
+        "path": "inputs/context-constant-young-baseline.txt",
+        "source_path": "notes/integrated_constant_phase_young.tex",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "selection": "WHOLE_FILE",
+        "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3",
+        "bytes": 27376
+      },
+      {
+        "path": "inputs/context-compact-gaussian-baseline.txt",
+        "source_path": "notes/integrated_compact_gaussian.tex",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "selection": "WHOLE_FILE",
+        "sha256": "caf9e56a5b818f9e5daa02ac3423c354b95c515f1932d92170ec002b0fbaa84a",
+        "bytes": 30608
+      },
+      {
+        "path": "inputs/context-cameron-mean-baseline.txt",
+        "source_path": "notes/integrated_cameron_mean.tex",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "selection": "WHOLE_FILE",
+        "sha256": "0ecbf05a70a7d5d79c9e2285dcadb93567687d4e463bfe4f6b0fdac5ff6f016d",
+        "bytes": 24138
+      },
+      {
+        "path": "inputs/context-compact-mean-family-baseline.txt",
+        "source_path": "notes/integrated_compact_mean_family.tex",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "selection": "WHOLE_FILE",
+        "sha256": "39946946cc52bee56eb5ec2ab44111a2e8873df9b17ef65d322c0b42066325ca",
+        "bytes": 25917
+      }
+    ]
+  },
+  "native_identity_checks": {
+    "exactly_one_recorded_coordinator_launch": true,
+    "exclusive_attempt_lock_present": true,
+    "fresh_parentless_session": true,
+    "exactly_one_user_and_one_assistant_message": true,
+    "assistant_parent_is_original_user": true,
+    "raw_event_session_and_export_match_private_session_record": true,
+    "native_user_text_byte_exact": true,
+    "expected_provider": "deepseek",
+    "expected_model": "deepseek-v4-pro",
+    "actual_provider": "deepseek",
+    "actual_model": "deepseek-v4-pro",
+    "actual_executable_version_from_native_export": "1.18.31",
+    "profile_sha256": "ccdf515979e77bbe752d924735a915260ca437d3d31a954d4a739c946fca0ea1",
+    "effective_global_and_agent_permissions_all_deny": true,
+    "observed_native_tool_parts": 0,
+    "operator_continuation_session_fork_share_flags_absent": true,
+    "native_export_return_code": 0,
+    "native_export_regular_file": true,
+    "whole_native_export_JSON_parsed": true,
+    "reasoning_content_not_read_or_used": true
+  },
+  "timestamps": {
+    "coordinator_started_utc": "2026-11-16T08:26:49.653955+00:00",
+    "coordinator_finished_utc": "2026-11-16T08:50:21.229829+00:00",
+    "elapsed_seconds": 1411.5758831920102,
+    "native_session_created_utc": "2026-11-16T08:26:50.734000+00:00",
+    "step_start_events": [
+      {
+        "raw_timestamp": 1794817612575,
+        "utc": "2026-11-16T08:26:52.575000+00:00"
+      },
+      {
+        "raw_timestamp": 1794818283581,
+        "utc": "2026-11-16T08:38:03.581000+00:00"
+      }
+    ],
+    "reasoning_span_metadata_only": [
+      {
+        "start_utc": "2026-11-16T08:26:56.139000+00:00",
+        "end_utc": "2026-11-16T08:36:22.919000+00:00",
+        "end_recorded": true
+      },
+      {
+        "start_utc": "2026-11-16T08:38:03.860000+00:00",
+        "end_utc": "2026-11-16T08:48:40.780000+00:00",
+        "end_recorded": true
+      }
+    ]
+  },
+  "native_counters": {
+    "coordinator_launches": 1,
+    "observed_native_step_start_events": 2,
+    "observed_export_step_start_parts": 2,
+    "observed_reasoning_spans_count_only": 2,
+    "observed_export_step_finish_parts": 1,
+    "observed_raw_step_finish_events": 1,
+    "assistant_messages": 1,
+    "tool_parts": 0,
+    "coordinator_launch_count_is_not_provider_stream_or_physical_backend_request_count": true,
+    "physical_backend_request_count": null,
+    "physical_backend_request_count_status": "UNKNOWN"
+  },
+  "retry_classification": {
+    "mechanism": "automatic SessionProcessor SessionRetry re-entry of a retryable LLM stream effect on the same assistant message; not continuation",
+    "classification": "AUTOMATIC_SESSION_RETRY_MATCHING_PATTERN_ROOT_CONFIRMED_CODE_PATH",
+    "agent21_static_code_message_ids": [
+      "73ed31306296"
+    ],
+    "agent21_exact_run_metadata_message_ids": null,
+    "exact_run_agent21_confirmation_claimed": false,
+    "basis": "Same2-start/2-span/1-finish/one-assistant/zero-tool signature under the root-confirmed installed SessionRetry code; pattern inference, not a separate Agent21 exact-RP016 classification.",
+    "installed_binary_full_sha256": "f9dab32248695e9ebd56b16a1921798fd85112cf5a69c7dfd0cabc1e17be4a11",
+    "binary_bytes": 185030784,
+    "binary_full_SHA_observation": "POST_RUN_ONLY",
+    "launch_time_full_binary_SHA_recorded": null,
+    "runtime_version_evidence": "Native session export reports1.18.31; full binary hash independently observed offline after runs and matches root observation.",
+    "static_source_evidence_sha256": "b576c5a627783d64a8711310bcadb8bd13371170d40738801b5d24a035af693f",
+    "retained_exact_minified_code_anchors_verified": 13,
+    "first_retryable_error_class": null,
+    "first_retryable_error_class_status": "UNKNOWN",
+    "observed_reentry_count": 1,
+    "total_automatic_retry_attempt_count": null,
+    "total_automatic_retry_attempt_count_status": "UNKNOWN"
+  },
+  "last_reported_finish_only": {
+    "scope": "Last completed native step/assistant counters only; not whole invocation.",
+    "finish": "stop",
+    "tokens_verbatim_including_cache": {
+      "total": 83048,
+      "input": 59,
+      "output": 6076,
+      "reasoning": 29169,
+      "cache": {
+        "write": 0,
+        "read": 47744
+      }
+    },
+    "cost_verbatim": 0.070874408,
+    "currency": null,
+    "one_exported_finish_matches_assistant_info": true
+  },
+  "unknown_prior_and_whole_invocation": {
+    "first_stream_usage": null,
+    "first_stream_usage_status": "UNKNOWN",
+    "first_stream_cost": null,
+    "first_stream_cost_status": "UNKNOWN",
+    "first_stream_finish": null,
+    "first_stream_finish_status": "UNKNOWN_NO_FINISH_RECORD",
+    "whole_invocation_usage": null,
+    "whole_invocation_usage_status": "UNKNOWN",
+    "whole_invocation_cost": null,
+    "whole_invocation_cost_status": "UNKNOWN",
+    "whole_invocation_combined_output_tokens": null,
+    "whole_invocation_cap_compliance": null,
+    "whole_invocation_cap_compliance_status": "UNKNOWN",
+    "whole_invocation_cap_compliance_verified": null,
+    "configured_per_run_combined_cap": 65536,
+    "not_zero_not_estimated_not_summed": true
+  },
+  "preservation": {
+    "all_protected_input_before_after_hashes_equal": true,
+    "all_protected_inputs_still_match_terminal_hashes": true,
+    "raw_report_unchanged": true,
+    "raw_public_header": {
+      "category": "proof-readability-equivalence",
+      "model": "deepseek/deepseek-v4-pro",
+      "verdict": "PASS_WITH_NOTES",
+      "confidence": "high"
+    },
+    "raw_public_report_sha256": "3477fab7637f2fd074fd7b39800671d3a13b224983e6ca242328729e9ba0c054",
+    "raw_report_or_grade_edited": false,
+    "mathematical_adjudication_performed_in_this_record": false
+  },
+  "artifact_bindings_sha256": {
+    "LAUNCH.json": "3cb99617d78cf575e5633fb16b7c6635efd4cb8e428e515942d7bf3f0fb049c0",
+    "EXIT.json": "267fe1c64e9da1d69eedf1e91c688aba62a4d92e3b155d7aa16186dc8ce5a06f",
+    "DISPATCH-PREFLIGHT.private.json": "b68b5d7841d4f8c65e2f3036f14d8862d7c119b144485e123a373af674d4667b",
+    "TRANSPORT-RESULT.private.json": "15eedb6645082189a13ad4248a4b7567cf063e1940f8c92033d21701180fa1ec",
+    "native-events.jsonl": "e8535e84a548e7053ead4b1dea3b17a3b4427974d3c5503182717dee948c3a59",
+    "native-export.json": "8afc996da5e43b8ad86e21c8e6cb5cb2baf0713f0520c71ab959c4351c5c1bc5",
+    "PUBLIC-REPORT.md": "3477fab7637f2fd074fd7b39800671d3a13b224983e6ca242328729e9ba0c054",
+    "SOURCE-BINDING.json": "dd838e65410c363082d0041989531a75608406d8ec7024ec5bba0e88d13e48b3",
+    "MANIFEST.json": "8f121ae18094b9cc2898c2f309d1489f97f0e5c39b4a92973f899e7b4ca514cb"
+  },
+  "no_new_action": {
+    "new_model_calls": 0,
+    "new_exports": 0,
+    "restarts": 0,
+    "global_or_code_fixes": 0,
+    "probes": 0,
+    "RP007_repeat": false,
+    "public_or_Git_or_source_edits": false
+  }
+}

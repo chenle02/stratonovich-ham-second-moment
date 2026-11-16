@@ -5,3 +5,7 @@ Assigned `notes/integrated_young_upper_foundation.tex` at `e07672d40443cd6ba655b
 The unlaunched contract was clarified to require original-step working and distinct public-reconstruction flags. Scientific source frames, profile/model/caps/timeouts and target scope are unchanged; before/after hashes are retained. No older report or grade is changed.
 
 Fresh pure DeepSeekV4Pro artifact-reviewer, tools denied, cap65536,timeout3600, one attempt/no coordinator retry/continuation/fallback. Local config checked per immutable profile/cap; per-launch recheck required. Capacity is conditional, not native admission/reading. No provider call or independent result at freeze, and no whole-book/sourcePDF/image/Lean/render/human/RF/adoption acceptance. No push.
+
+## Terminal mathematical evidence under protocol hold
+
+Raw report and per-proof math assessment retained. Automatic native SessionRetry observed; prior-stream and aggregate usage/cost/cap are UNKNOWN. No prior PU exception is applied and no scope/adoption is cleared. See PROTOCOL-INCIDENT.md and NATIVE-CHECK.json.
