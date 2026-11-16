@@ -13,7 +13,10 @@
 has been released. Before a final-file handoff, Agent 24 obtains a fresh
 reader's stop-point list, checks its quotes against the proof, and judges
 Agent 7's necessary explanations. This is editorial diagnosis, not scientific
-review acceptance. The delivered removal-only uniform-mean and signed-static
+review acceptance. Agent 16 requires a reader family different from GPT
+author Agent 7, with each file retaining actual model/family, exact prompt,
+stop-point list and Agent 24 dispositions. These records feed AI-use and
+Appendix E disclosure without entering review counts. The delivered removal-only uniform-mean and signed-static
 files also stay held. See `RADIUS-PROVISIONAL-9df46108.json` in the policy
 record directory below.
 
