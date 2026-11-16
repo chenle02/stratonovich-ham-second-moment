@@ -57,6 +57,19 @@ aggregate usage/cost/cap remain unknown. Older RP014/RP039 records and their
 limits are unchanged. RP043 signed-static remains running at this record.
 See `reviews/2026-11-16-readable-uniform-mean-postreader32919d54-deepseek/`.
 
+**Provisional last-ten/main additions checked at bounded scope:** Agent 24's
+last-ten batch `35dfced3` is NOT FINAL pending self-check/explicit handoff;
+no packet or call is released by that landing. Root checks the three requested
+MAIN `58108ca3` addition groups: exact Chen author PDF hash and rendered pages
+1/3/13 verify equation pinpoints1.5/2.24; homogeneous ball growth and threshold
+justify the spectral integral; the capped-kernel alias/tail normalization is
+correct off the diagonal; the finite interval-model definitions and compact-
+data phase estimate support the stated last inequality. No source edit is
+needed for these three groups. This is worker source/application QA with
+selected actual pixels, not independent main-file or whole-source review.
+The proposed shortcut avoiding regularized noises stays unprinted/unadopted.
+See `MAIN58108-SOURCE-ADDITIONS-WORKER-CHECK.json` in the policy directory.
+
 **All fifteen Chapters 4-8 inputs now released; remaining packets frozen:**
 Agent 16 verifies/releases the three replacement sources (`ee48c63cdfba`),
 so all fifteen owner-FINAL bindings are eligible. RP047-RP058 freeze all
