@@ -1,0 +1,213 @@
+{
+  "role": "Same-GPT author-side argument-preservation/readability QA; no independent scientific grade",
+  "fresh_read": true,
+  "identity": {
+    "file": "notes/integrated_compact_gaussian.tex",
+    "revisions": {
+      "old": "cdde711c248862f33207860107dd0e6b31d60852",
+      "new": "5d05a6b1fef244fc5416c9d25d50c6fca0ca75c0",
+      "map_tip": "8e8dae810adc37a3bb2c645d8c74d377b2207d03"
+    },
+    "sha256": {
+      "old": "caf9e56a5b818f9e5daa02ac3423c354b95c515f1932d92170ec002b0fbaa84a",
+      "new": "a4ff7c1ac916789285e6e022368aaa3b8ed9d3a320554fccf1ce7fa1d7136c4d"
+    },
+    "diff_sha256": "d25adf8a4238280b2d0fc84b093dc98b9a1cb5b802ec6f48e52a6f9c20d23a54",
+    "map_sha256": "91b1b8d7a1c7189a361704314b5af93b2a89473522455ef2231f085467014782"
+  },
+  "hash_checks": {
+    "old": true,
+    "new": true,
+    "pilot2.diff": true
+  },
+  "proofs": [
+    {
+      "label": "L:gaussian-scalar-powers",
+      "status": "SUPPORTED editorial equivalence",
+      "full_old_new_statements_and_proofs_read": true,
+      "statements_exactly_equal": true,
+      "spans": {
+        "old": {
+          "statement_start": 14,
+          "proof_start": 30,
+          "proof_end": 46,
+          "statement_sha256": "976c8983489a1d3ba323b472d2bb3a041d307a03b0294246f616893c903aa1f8",
+          "proof_sha256": "1af8d0eba5bb2b56b7bd8d8cca6aa3888966478540e8289132d4fd967f68d813"
+        },
+        "new": {
+          "statement_start": 14,
+          "proof_start": 30,
+          "proof_end": 74,
+          "statement_sha256": "976c8983489a1d3ba323b472d2bb3a041d307a03b0294246f616893c903aa1f8",
+          "proof_sha256": "53dd97f92276de2c5ac91d2f8ad26f595dd65470b2fd79f64d14205013d9f31e"
+        }
+      },
+      "assertion_checks": [
+        {
+          "added_passage": "Roadmap and three step headings",
+          "assessment": "SUPPORTED",
+          "reason": "Match the same four claims: weighted powers, integer consequence, finite sequence Holder, fractional expectation. No additional theorem or infinite sequence scope is asserted."
+        },
+        {
+          "added_passage": "Step1 reduction/derivative sign",
+          "assessment": "SUPPORTED",
+          "reason": "For v>0 division gives t^theta<=theta*t+1-theta. With0<theta<1, theta-1<0 makes derivative negative on(0,1),positive on(1,infinity), and value0 at1. Continuity handles t=0; v=0 remains separate."
+        },
+        {
+          "added_passage": "Step1 integer substitution and endpoints",
+          "assessment": "SUPPORTED",
+          "reason": "u=|x|^L,v=|y|^L,theta=q/L is admissible exactly when0<q<L. Resulting exponents q,L-q and weights q/L,(L-q)/L are correct. Unchanged0^0 integer convention covers endpoint identities."
+        },
+        {
+          "added_passage": "Step2 explicit normalized powers",
+          "assessment": "SUPPORTED",
+          "reason": "For m>1 the normalized nonnegative entries a,b give u=a^m,v=b^(m/(m-1)); u^(1/m)v^(1-1/m)=ab. Both sums are1 after the nonzero-norm branch, so the weighted sum is1. Multiplying by both original norms restores finite Holder."
+        },
+        {
+          "added_passage": "Step3 integrability and scaling",
+          "assessment": "SUPPORTED",
+          "reason": "For F=E Z finite and positive, (Z/F)^r<=rZ/F+1-r has integrable right side of expectation1. Nonnegative left side is thus integrable, permitting E(Z/F)^r<=1 and multiplication by F^r. F=0 remains Z=0 almost surely. No circular assumption of fractional integrability."
+        }
+      ],
+      "required_old_new_corrections": [],
+      "new_unresolved_possible_material_gaps": [],
+      "old_text_concerns_discovered": [],
+      "full_local_proof_diff": "--- old\n\n+++ new\n\n@@ -1,17 +1,45 @@\n\n \\begin{proof}\n+  We first prove the weighted scalar inequality and its integer-power\n+  consequence. We then use normalization to obtain the two remaining bounds.\n+\n+  \\medskip\n+  \\noindent\\textit{Step 1.~}We prove the two scalar inequalities.\n   If $v > 0$, divide~\\eqref{E:gaussian-weighted-power} by $v$ and put $t = u/v$.\n-  The function $\\theta t+1-\\theta-t^\\theta$ decreases to zero at one and then\n-  increases, by its derivative $\\theta(1-t^{\\theta-1})$. Continuity covers $t =\n-  0$; if $v = 0$ the inequality is immediate. For $0 < q < L$, apply this with\n-  $u = |x|^L$, $v = |y|^L$ and $\\theta = q/L$. The endpoint cases $q = 0,L$ are\n-  identities, with the ordinary integer convention $a^0 = 1$.\n+  After division, the desired inequality is $t^\\theta \\le \\theta t+1-\\theta$.\n+  Thus, it suffices to show that the difference of the right and left sides is\n+  nonnegative.\n+  The function $\\theta t+1-\\theta-t^\\theta$ has derivative\n+  $\\theta(1-t^{\\theta-1})$. Since $\\theta-1 < 0$, this derivative is negative\n+  for $0 < t < 1$ and positive for $t > 1$. The function therefore has minimum\n+  zero at $t = 1$. Continuity covers $t = 0$; if $v = 0$ the inequality is\n+  immediate.\n \n+  For $0 < q < L$, apply this with $u = |x|^L$, $v = |y|^L$ and $\\theta =\n+  q/L$. The left side becomes $|x|^q|y|^{L-q}$, and the coefficients on the\n+  right are $q/L$ and $(L-q)/L$. The endpoint cases $q = 0,L$ are identities,\n+  with the ordinary integer convention $a^0 = 1$.\n+\n+  \\medskip\n+  \\noindent\\textit{Step 2.~}We prove the finite sequence inequality.\n   To prove finite H\\\"older, divide the two sequences by their respective\n   $\\ell^m$ and $\\ell^{m/(m-1)}$ norms. If either norm vanishes, the result is\n   immediate. Apply~\\eqref{E:gaussian-weighted-power} with $\\theta = 1/m$ to the\n   corresponding normalized powers and sum; the sum of products is at most one.\n-  Undo the normalization. Finally, $F = 0$ gives $Z = 0$ almost surely. If $F >\n+  More explicitly, at each sequence position use the $m$th power of the first\n+  normalized entry for $u$ and the $m/(m-1)$th power of the second for $v$.\n+  Then $u^{1/m}v^{1-1/m}$ is the product of the two entries. The sums of $u$\n+  and $v$ are both one, so the right side sums to $1/m+(1-1/m) = 1$.\n+  Multiplying by the two original norms undoes the normalization and proves\n+  finite H\\\"older.\n+\n+  \\medskip\n+  \\noindent\\textit{Step 3.~}We prove the expectation bound.\n+  Finally, $F = 0$ gives $Z = 0$ almost surely. If $F >\n   0$, apply \\eqref{E:gaussian-weighted-power} to $u = Z/F$, $v = 1$ and $\\theta\n-  = r$, and integrate. The right side has expectation one. This proves\n+  = r$, and integrate. The right side has expectation one.\n+  Indeed, the pointwise bound is $(Z/F)^r \\le rZ/F+1-r$. Its right side is\n+  integrable because $\\E Z = F < \\infty$. Hence, the left side is integrable\n+  as well, and $\\E(Z/F)^r \\le 1$. Multiplication by $F^r$ gives the stated\n+  bound. This proves\n   Lemma~\\ref{L:gaussian-scalar-powers}.\n \\end{proof}"
+    },
+    {
+      "label": "L:gaussian-trace-bounds",
+      "status": "SUPPORTED editorial equivalence",
+      "full_old_new_statements_and_proofs_read": true,
+      "statements_exactly_equal": true,
+      "spans": {
+        "old": {
+          "statement_start": 49,
+          "proof_start": 64,
+          "proof_end": 92,
+          "statement_sha256": "5060558860a9a34bd6b73cdc5dc41bafbfe0785a776861db908170458a3ed850",
+          "proof_sha256": "42e4cd761daea60c756f5390c28e077e5c2baa2c94bb3cd1e73d3ecd55ba5148"
+        },
+        "new": {
+          "statement_start": 77,
+          "proof_start": 92,
+          "proof_end": 151,
+          "statement_sha256": "5060558860a9a34bd6b73cdc5dc41bafbfe0785a776861db908170458a3ed850",
+          "proof_sha256": "7365f50d0b984b581dae1ac2ab8033ee2625425f113b4aecf239d9180bd1cc72"
+        }
+      },
+      "assertion_checks": [
+        {
+          "added_passage": "Roadmap and fixed eigenbasis",
+          "assessment": "SUPPORTED",
+          "reason": "Finite Hermitian Y is diagonalized; B and D are represented in that basis. A unitary representation of D supplies its diagonal entries without simultaneous diagonalization or commutation."
+        },
+        {
+          "added_passage": "Step1 expanded entry calculation",
+          "assessment": "SUPPORTED",
+          "reason": "The ith diagonal entry of B Y^q B Y^(L-q) sums b_ij lambda_j^q b_ji lambda_i^(L-q). Hermitian symmetry gives |b_ij|^2; real eigenvalues and integer powers ensure real summands, including negative eigenvalues."
+        },
+        {
+          "added_passage": "Step1 scalar weights/index swap",
+          "assessment": "SUPPORTED",
+          "reason": "After absolute values, weight q/L multiplies |lambda_j|^L and (L-q)/L multiplies |lambda_i|^L. Swapping finite indices in the first sum preserves |b_ij|^2 by Hermitian symmetry. (B^2)_ii=sum_j|b_ij|^2 identifies both unweighted sums with Tr(B^2|Y|^L); weights sum1. Noncommuting factors are not reordered."
+        },
+        {
+          "added_passage": "Step2 row/column sums and convexity",
+          "assessment": "SUPPORTED",
+          "reason": "For each i, |U_ij|^2 are nonnegative weights of sum1 with weighted mean d_i. Averaging t^m>=s^m+m*s^(m-1)*(t-s) at s=d_i,t=theta_j cancels the linear term. Summation over i then uses column sums1 for equality with Tr D^m; it does not assert equality in Jensen."
+        },
+        {
+          "added_passage": "Step2 explicit Holder factors",
+          "assessment": "SUPPORTED",
+          "reason": "Scalar Holder with conjugates m,m/(m-1) gives (sum d_i^m)^(1/m) and (sum |lambda_i|^(2m))^((m-1)/m), since(2m-2)*m/(m-1)=2m. Positivity of D, m>=2 and zero sums remain exactly as stated. No operator Holder or extra spectral domain is assumed."
+        }
+      ],
+      "required_old_new_corrections": [],
+      "new_unresolved_possible_material_gaps": [],
+      "old_text_concerns_discovered": [],
+      "full_local_proof_diff": "--- old\n\n+++ new\n\n@@ -1,10 +1,19 @@\n\n \\begin{proof}\n+  We work in an eigenbasis of $Y$ throughout. The first bound follows by\n+  comparing scalar powers; the second follows by finite H\\\"older.\n+\n+  \\medskip\n+  \\noindent\\textit{Step 1.~}We bound the trace word.\n   Diagonalize $Y$, with real eigenvalues $\\lambda_i$, and write $b_{ij}$ for the\n   entries of $B$ in that basis. Hermitian symmetry gives $b_{ji} =\n   \\overline{b_{ij}}$. The trace word is the real sum\n   \\[\n     \\sum_{i,j}|b_{ij}|^2\\lambda_j^q\\lambda_i^{L-q}.\n   \\]\n+  To obtain this sum, the $i$th diagonal entry of the product is summed over\n+  the intermediate index $j$. The diagonal powers of $Y$ contribute\n+  $\\lambda_j^q$ and $\\lambda_i^{L-q}$, and $b_{ij}b_{ji} = |b_{ij}|^2$. All\n+  these terms are real.\n   Bound each product by its absolute value and use\n   \\eqref{E:gaussian-integer-power}. After interchanging $i,j$, the two resulting\n   sums agree because $|b_{ij}| = |b_{ji}|$. Each equals\n@@ -12,6 +21,15 @@\n\n   weights sum to one, proving \\eqref{E:gaussian-trace-word}. No commutation of\n   $B$ and $Y$ is used.\n \n+  In detail, the scalar bound gives a term with weight $q/L$ containing\n+  $|\\lambda_j|^L$, and a term with weight $(L-q)/L$ containing\n+  $|\\lambda_i|^L$. Interchanging the two indices in the first sum changes\n+  neither $|b_{ij}|^2$ nor the set of indices. Also, the $i$th diagonal entry\n+  of $B^2$ is $\\sum_j|b_{ij}|^2$. These observations identify both sums with\n+  the same trace.\n+\n+  \\medskip\n+  \\noindent\\textit{Step 2.~}We bound the trace involving $D$.\n   In the same basis put $d_i = D_{ii} \\ge 0$. If $\\theta_j$ are the nonnegative\n   eigenvalues of $D$, a unitary change of basis gives $d_i =\n   \\sum_j|U_{ij}|^2\\theta_j$. Both row and column sums of $|U_{ij}|^2$ equal one.\n@@ -20,10 +38,23 @@\n\n     \\sum_i d_i^m \\le \\sum_{i,j}|U_{ij}|^2\\theta_j^m\n     = \\operatorname{Tr}D^m.\n   \\]\n+  The row sums provide the convex weights for each $d_i$. The column sums\n+  then give the equality after summing over $i$.\n   For completeness, the convexity step follows from $t^m \\ge s^m+ms^{m-1}(t-s)$\n   for $s,t \\ge 0$, obtained by differentiating the difference. Average this\n-  inequality with $s$ equal to the weighted mean. Now apply finite H\\\"older from\n+  inequality with $s$ equal to the weighted mean.\n+  For each fixed $i$, take $s = d_i$ and average over $t = \\theta_j$ with\n+  weights $|U_{ij}|^2$. The linear term vanishes because\n+  $\\sum_j|U_{ij}|^2(\\theta_j-d_i) = 0$. Thus, $d_i^m \\le\n+  \\sum_j|U_{ij}|^2\\theta_j^m$. Summing over $i$ gives the displayed bound.\n+\n+  Now apply finite H\\\"older from\n   Lemma~\\ref{L:gaussian-scalar-powers} to $\\sum_i d_i|\\lambda_i|^{2m-2}$. Since\n-  $(2m-2)m/(m-1) = 2m$, the last display proves \\eqref{E:gaussian-trace-holder},\n+  $(2m-2)m/(m-1) = 2m$, we obtain the factors in\n+  \\eqref{E:gaussian-trace-holder}.\n+  The first H\\\"older factor is $(\\sum_i d_i^m)^{1/m}$, bounded by\n+  $(\\operatorname{Tr}D^m)^{1/m}$. The second is\n+  $(\\sum_i|\\lambda_i|^{2m})^{(m-1)/m}$, which is\n+  $(\\operatorname{Tr}|Y|^{2m})^{(m-1)/m}$. This proves the claimed inequality,\n   including zero sums. This proves Lemma~\\ref{L:gaussian-trace-bounds}.\n \\end{proof}"
+    },
+    {
+      "label": "P:finite-gaussian-matrix",
+      "status": "SUPPORTED editorial equivalence",
+      "full_old_new_statements_and_proofs_read": true,
+      "statements_exactly_equal": true,
+      "spans": {
+        "old": {
+          "statement_start": 101,
+          "proof_start": 123,
+          "proof_end": 180,
+          "statement_sha256": "7a4657ef6ac145e2118e4362cc8a9d3e1ea19f0768597bb3c80b7f885584a96c",
+          "proof_sha256": "7aaff9dda7a4486fd294a91b7b7f0b3f8e2c06f29bdd671ea3114610d713f1e3"
+        },
+        "new": {
+          "statement_start": 160,
+          "proof_start": 182,
+          "proof_end": 281,
+          "statement_sha256": "7a4657ef6ac145e2118e4362cc8a9d3e1ea19f0768597bb3c80b7f885584a96c",
+          "proof_sha256": "bceae74ef0eb418c00c37fd717421fe80986c9dee850d99090e4ece6de8d5cd0"
+        }
+      },
+      "assertion_checks": [
+        {
+          "added_passage": "Roadmap/headings",
+          "assessment": "SUPPORTED",
+          "reason": "Hermitian estimate precedes rectangular dilation, with three matching steps; endpoint m=1 is separate. No stronger moments or dimension/covariance assumptions are introduced."
+        },
+        {
+          "added_passage": "Step1 Gaussian density/sign/boundary explanation",
+          "assessment": "SUPPORTED",
+          "reason": "For fixed other coordinates, standard Gaussian density derivative is -g_k times density. Integrating -P times this derivative by parts gives +partial_k P. Polynomial times Gaussian tends to zero at both infinities. Prior absolute polynomial integrability justifies Fubini; complex polynomials remain treated by real/imaginary parts."
+        },
+        {
+          "added_passage": "Step2 ordered product rule",
+          "assessment": "SUPPORTED",
+          "reason": "partial_k Y=B_k. Differentiating Y^(2m-1) produces Y^q B_k Y^(L-q),q=0..L,L=2m-2; leading B_k is retained from Tr(B_k Y^(2m-1)). This preserves noncommutative order and exactly2m-1 terms."
+        },
+        {
+          "added_passage": "Step2 first two inequalities and sums/expectation",
+          "assessment": "SUPPORTED",
+          "reason": "Finite sums and integrable polynomials allow linearity of expectation. Pointwise trace-word bounds sum k to D=sum B_k^2 and q to2m-1. Pointwise scalar trace Holder then permits deterministic (Tr D^m)^(1/m) outside expectation. No eigenbasis random selection/differentiation is required."
+        },
+        {
+          "added_passage": "Step2 positivity/fractional bound",
+          "assessment": "SUPPORTED",
+          "reason": "Hermitian B_k gives B_k^2>=0, hence D>=0. Tr|Y|^(2m)=Tr Y^(2m)>=0 with finite expectation F. Scalar expectation estimate applies to r=(m-1)/m in(0,1) for m>=2, retaining the correct inequality direction."
+        },
+        {
+          "added_passage": "Step2 division and exponent",
+          "assessment": "SUPPORTED",
+          "reason": "F>0 division gives F^(1/m)<=(2m-1)*(Tr D^m)^(1/m). Raising nonnegative sides to m yields(2m-1)^m Tr D^m. F=0 remains separate; no division by Tr D^m or assumption it is positive."
+        },
+        {
+          "added_passage": "Step2 m=1 endpoint expansion",
+          "assessment": "SUPPORTED",
+          "reason": "E g_k g_l=0 for k!=l by centering/independence, and E g_k^2=1. Thus E Y^2=sum B_k^2 before trace, proving the equality. No Gaussian higher-moment recursion is substituted."
+        },
+        {
+          "added_passage": "Step3 block calculations",
+          "assessment": "SUPPORTED",
+          "reason": "B_k Hermitian dilation squares to diag(A_k A_k*,A_k* A_k); summed squares give D. Y^2=diag(XX*,X*X); its mth power is Y^(2m) with corresponding powered blocks. All are finite square blocks although o and n may differ."
+        },
+        {
+          "added_passage": "Step3 equal block traces/factor2",
+          "assessment": "SUPPORTED",
+          "reason": "Rectangular trace cyclicity gives Tr(XX*)^m=Tr(X*X)^m for m>=1. Their sum is2 times Schatten pth power. Substitution into Hermitian estimate divides by2 before p=2m root, yielding sqrt(p-1) and the average of both variance powers. Maximum bound and equality atp=2 are unchanged; no dimensional factor is introduced."
+        }
+      ],
+      "required_old_new_corrections": [],
+      "new_unresolved_possible_material_gaps": [],
+      "old_text_concerns_discovered": [],
+      "full_local_proof_diff": "--- old\n\n+++ new\n\n@@ -1,4 +1,10 @@\n\n \\begin{proof}\n+  We first prove the moment bound for Hermitian matrices by Gaussian\n+  integration by parts. We then use Hermitian dilation to treat rectangular\n+  matrices and keep track of the factor two.\n+\n+  \\medskip\n+  \\noindent\\textit{Step 1.~}We justify Gaussian integration by parts.\n   First suppose $B_k$ are Hermitian and put $Y = \\sum_k g_kB_k$ and $D = \\sum_k\n   B_k^2$. All polynomial moments are finite because Gaussian decay dominates\n   every fixed power. Componentwise integration by parts against the product\n@@ -6,6 +12,14 @@\n\n   terms. It applies to complex polynomials through their real and imaginary\n   parts; absolute polynomial integrability justifies Fubini.\n \n+  For a fixed value of the other Gaussian coordinates, the derivative of the\n+  density in the $k$th coordinate is minus that coordinate times the density.\n+  Moving this derivative onto $P$ gives the positive sign in the identity. At\n+  both ends of the real line, the polynomial times the Gaussian density tends\n+  to zero, so no boundary term remains.\n+\n+  \\medskip\n+  \\noindent\\textit{Step 2.~}We estimate the Hermitian moment.\n   For $m \\ge 2$, put $F = \\E\\operatorname{Tr}Y^{2m}$ and $L = 2m-2$. Write\n   $\\operatorname{Tr}Y^{2m} = \\sum_k g_k \\operatorname{Tr}(B_kY^{2m-1})$ and\n   differentiate the $2m-1$ factors in their order. This gives exactly\n@@ -13,6 +27,11 @@\n\n     F=\\sum_k\\sum_{q=0}^{L}\n     \\E\\operatorname{Tr}(B_kY^qB_kY^{L-q}).\n   \\]\n+  Here $\\partial_kY = B_k$. In the product rule, $q$ counts the factors $Y$\n+  before the differentiated factor and $L-q$ counts those after it. The\n+  leading $B_k$ comes from the expression for the trace before\n+  differentiation. This explains both the order of the matrices and the range\n+  $0 \\le q \\le L$.\n   The eigenbasis calculation above shows these traces are real. The\n   differentiated polynomial is real by conjugation and trace cyclicity. No\n   derivative of a spectral absolute value or measurable choice of an eigenbasis\n@@ -23,23 +42,43 @@\n\n     \\E(\\operatorname{Tr}|Y|^{2m})^{(m-1)/m}\\\\\n     &\\le (2m-1)(\\operatorname{Tr}D^m)^{1/m}F^{(m-1)/m}.\n   \\end{align*}\n+  The first inequality bounds each trace word and sums the $2m-1$\n+  positions of the derivative. The second applies the trace H\\\"older bound.\n   Here $\\operatorname{Tr}|Y|^{2m} = \\operatorname{Tr}Y^{2m}$, and the last\n   inequality is the expectation bound in Lemma~\\ref{L:gaussian-scalar-powers}.\n+  The matrix $D$ is positive because each $B_k^2$ is positive. Also,\n+  $\\operatorname{Tr}|Y|^{2m}$ is nonnegative and has finite expectation $F$.\n+  Thus, the expectation bound applies with $r = (m-1)/m$, which lies strictly\n+  between zero and one.\n   If $F = 0$ the conclusion is immediate. Otherwise divide by its positive\n   fractional power and raise to $m$ to obtain\n   \\begin{equation}\\label{E:finite-hermitian-gaussian}\n     \\E\\operatorname{Tr}Y^{2m} \\le (2m-1)^m\\operatorname{Tr}D^m.\n   \\end{equation}\n+  The division just used gives $F^{1/m} \\le\n+  (2m-1)(\\operatorname{Tr}D^m)^{1/m}$. Raising both nonnegative sides to $m$\n+  yields the displayed estimate.\n   For $m = 1$, independence gives directly $\\E\\operatorname{Tr}Y^2 =\n   \\sum_k\\operatorname{Tr}B_k^2 = \\operatorname{Tr}D$, proving the same formula\n   as equality.\n \n+  For this endpoint, expand the two factors of $Y$. Products involving\n+  distinct Gaussian coordinates have expectation zero by centering and\n+  independence; products with the same coordinate have expectation one. Only\n+  $\\sum_k B_k^2$ remains.\n+\n+  \\medskip\n+  \\noindent\\textit{Step 3.~}We pass to rectangular matrices.\n   For rectangular $A_k$, use the Hermitian dilation\n   \\[\n     B_k=\\begin{pmatrix}0&A_k\\\\A_k^*&0\\end{pmatrix},\\qquad\n     Y=\\begin{pmatrix}0&X\\\\X^*&0\\end{pmatrix},\\qquad\n     D=\\operatorname{diag}(V_{\\rm out},V_{\\rm in}).\n   \\]\n+  Each $B_k$ is Hermitian. Squaring it gives diagonal blocks $A_kA_k^*$ and\n+  $A_k^*A_k$, so its sum of squares is exactly the displayed $D$. Likewise,\n+  $Y^2$ has diagonal blocks $XX^*$ and $X^*X$. Its $m$th power therefore has\n+  blocks $(XX^*)^m$ and $(X^*X)^m$.\n   Finite entrywise summation proves $\\operatorname{Tr}(UV) =\n   \\operatorname{Tr}(VU)$ for compatible rectangular matrices. Since $(XX^*)^m =\n   X(X^*X)^{m-1}X^*$, it follows that\n@@ -48,6 +87,9 @@\n\n     \\operatorname{Tr}D^m=\\operatorname{Tr}V_{\\rm out}^m+\n     \\operatorname{Tr}V_{\\rm in}^m.\n   \\]\n+  The two diagonal blocks of $Y^{2m}$ have equal trace by the rectangular\n+  cyclic identity. Thus, their sum is twice the Schatten norm power, even when\n+  their dimensions differ.\n   Substitute in~\\eqref{E:finite-hermitian-gaussian}, divide by two and take the\n   $p$th root. This proves~\\eqref{E:finite-gaussian-average}. For positive $V$,\n   spectral diagonalization gives $\\|V^{1/2}\\|_{S_p}^p = \\operatorname{Tr}V^m$,"
+    }
+  ],
+  "required_correction_count": 0,
+  "unresolved_possible_material_gap_count": 0,
+  "limits": [
+    "Only the first three assigned complete statement/proof pairs are adjudicated. Other diff portions are not certified.",
+    "This fresh comparison does not rely on the earlier118de5f7 QA disposition.",
+    "No map contents, rendered PDF, Lean correspondence, cited external literature, or independent review grade audited. map_tip/hash are recorded from supplied INPUTS.json only.",
+    "No source edits/repairs, Git operations, builds/tests, provider calls or literature calls."
+  ],
+  "recorded_utc": "2026-11-16T04:35:08.222182+00:00"
+}

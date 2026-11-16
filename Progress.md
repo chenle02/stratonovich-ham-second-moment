@@ -4,6 +4,46 @@
 > (per `progress-md-authority-paper-dev`). Start every session here. Update it
 > at the end of every round, before committing.
 
+
+## Active narrow follow-up: proof-readability rereads (2026-11-16)
+
+This is a new scoped post-review cycle, not a restart of the original
+scientific programme or an upgrade of its review grades. Le chose step maps
+and a DeepSeek V4 Pro reread of every rewritten proof, with disclosure through
+Agent 16's release-sync templates. Agent 7 edits; Agent 24 owns mechanical
+checks, builds and maps; Agent 3 owns reread packets and records. Existing
+whole-book grades, limited reading and the honest-standing release choice
+remain unchanged.
+
+Pilot target: all ten proofs in `notes/integrated_compact_gaussian.tex`,
+baseline `cdde711c`, rewritten source `5d05a6b1`, map carrier `8e8dae81`.
+The original pilot `118de5f7` is historical; it does not cover the deeper
+rewrite. Fresh GPT worker-side QA found the arguments preserved, including
+the three approved clarifications; this is not independent review evidence.
+Agent 16 mechanically verified the exact deeper source and its 433-page book.
+
+The frozen reread packet is
+`reviews/2026-11-16-readable-pilot2-deepseek/`. It supplies the complete OLD
+and NEW modules and assigns ten separate proof coverage rows in one fresh
+DeepSeek V4 Pro invocation. Model route `paper-review-deepseek`; pure isolated
+artifact reviewer, all permissions denied; requested combined reasoning/public
+cap 65536, wall timeout 3600 seconds. No coordinator retry, continuation or
+fallback. Only this packet is assigned by this entry; other rewritten modules
+need their own frozen packets and records.
+
+At this checkpoint the packet is prepared, not dispatched, and no independent
+verdict is claimed. Next: execute the authorized scoped reread after the
+recorded route/source checks, then read and adjudicate its entire public
+report. A provider error or missing report is recorded, not counted as a pass.
+The proof-step remap and the companion sentences quoting edited steps remain
+Agent 22's separate obligation; this reread does not certify that mapping.
+Final source/PDF/ledger/disclosure/combined/review-sync reconciliation remains
+a publishing gate under Agent 16. No root push, R/F or release is implied.
+
+The older publication-frontier headings below are dated snapshots; they do
+not authorize restarting their old completed calls or override this narrow
+assignment and Le's later recorded decisions.
+
 ## Goal
 
 Prove the correct-scale upper bound and the all-original-model second-moment
