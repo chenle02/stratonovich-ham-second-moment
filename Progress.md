@@ -7,6 +7,22 @@
 
 ## Active narrow follow-up: proof-readability rereads (2026-11-16)
 
+**Current execution decision:** Le directly chose B on exact policypacket
+`d8fff2c8`, relayed byAgent16 in`e88dcc826a6b` and in the usermessage. The
+remaining21frozen scopes/153pairs and ONE separateRP007 budget-repair process
+are authorized on the SAME configured DeepSeekV4Pro route/profile/inputs.
+Maximum3simultaneous coordinatorprocesses, oneper scope,3,600secondseach;
+65,536ordinary/98,304main per generation,RP007repeat98,304. Native recovery
+is knowinglyallowed; aggregateusage/cost/cap remainUNKNOWNwhereunreported,
+neverestimated. No coordinatorrelaunch,confidenceretry,tools,fallback or
+furtherRP007repeat. This doesnotretroaccept013/014/016,completepartial
+reconstructions,upgradegrades,orauthorizeR/F,push,release,arXiv orcustomHTTP
+client. Originalfailed/heldrecords,oldSTOPandlocksremainhistorical; new
+ChoiceBcontrolrecords govern prospectiveauthorizedstarts. Theoldscaling
+131,072aggregatebudgetclaim is supersededonlyasexplicitlystatedinChoiceB.
+See`reviews/2026-11-16-readable-native-recovery-policy-proposal/AUTHORIZATION-CHOICE-B.json`.
+
+
 This is a new scoped post-review cycle, not a restart of the original
 scientific programme or an upgrade of its review grades. Le chose step maps
 and a DeepSeek V4 Pro reread of every rewritten proof, with disclosure through
