@@ -203,6 +203,12 @@ be their operator-norm closure in $\mathcal{K}(E)$.
 
 \subsection{Scalar-time averaging and mean bounds}
 
+Proposition~\ref{P:uniform-E-spectral} bounds the wave of one fixed operator
+$L \in \mathcal{V}_{E,R}$ through the rate $\lambda(L)$. The mean field
+$\mathcal{T}_R\Phi$ depends on the time variable. We now average it over the
+cells of the partition and bound the resulting change in the integrated rate,
+uniformly in $R \ge 1$.
+
 \begin{proposition}[Uniform completed-field averaging]\label{P:uniform-rate-averaging}
   Use the true slow partition $I_m$ with mesh at most $\delta B$. Let
   $\mathcal{A}_\delta$ average over each positive-length cell; an empty final
@@ -446,6 +452,11 @@ $W_R = \mathcal{T}_R\Phi$ define
 \end{proof}
 
 \subsection{Arbitrary small residual paths and the ordered product}
+
+Corollary~\ref{C:uniform-polynomial-balls} compares the sum of the logarithms
+$\log\|P_m^{\rm mean}\|$ with the rate, for the mean primitives $H_m$ alone. We
+now add compact-operator paths $x_m$ to the $H_m$ and bound the norm of the
+ordered product of the perturbed endpoints when these paths are small.
 
 \begin{proposition}[Residual comparison and the integrated rate]
   \label{P:uniform-arbitrary-residual}

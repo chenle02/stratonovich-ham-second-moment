@@ -171,6 +171,10 @@ everywhere-defined linear Young map of
 Proposition~\ref{P:constant-young-linear}. Write $D_m^0 = D_{X_m}$ and $D_m^+ =
 D_{X_m+H_m}$. The latter retains both the mean and the residual noise.
 
+The shifted blocks $D_m^+$ are random. We now show that their largest distance
+from the deterministic $P_{s_m}$ of~\eqref{E:compact-F-block}, over all blocks
+$m \le N$, tends to zero in every finite $L^q$.
+
 \begin{lemma}[Uniform block error]\label{L:raw-block-uniform-error}
   Let $M_\delta = \max_{m\le N}\|X_m\|_{\mathscr{B}_0}$, including its factor
   $g_\delta$. Then $M_\delta \to 0$ in every finite $L^q$, and, for some $c >
@@ -211,7 +215,7 @@ D_{X_m+H_m}$. The latter retains both the mean and the residual noise.
   the unscaled maximum.
 
   Let $H_m^{\mathrm{stat}}$ be the primitive for constant potential $V_{s_m}$.
-  Compact mea smoothness on $[0,2]$ and the statewise primitive bound give
+  Compact mean smoothness on $[0,2]$ and the statewise primitive bound give
   \[
     \sup_m\max(\|H_m\|_{C^\theta},
     \|H_m^{\mathrm{stat}}\|_{C^\theta})\le H_0,\qquad
@@ -236,6 +240,13 @@ D_{X_m+H_m}$. The latter retains both the mean and the residual noise.
   group is not used. Only $s_m \le 1$ supplies the ground templates. This proves
   Lemma~\ref{L:raw-block-uniform-error}.
 \end{proof}
+
+Lemma~\ref{L:raw-block-uniform-error} bounds the distance of each shifted block
+from $P_{s_m}$. It says nothing about the product of the blocks. The next lemma
+is deterministic and holds for every $N \ge 1$. If each factor $D_m$ is within
+$\epsilon_{\mathrm{op}}$ of $P_{\sigma_m}$, and adjacent indices $\sigma_m$ are
+within $\omega$, then the product satisfies the lower bound
+\eqref{E:raw-block-positive-product}.
 
 \begin{lemma}[Indexed cone and terminal displacement]
   \label{L:raw-block-indexed-cone}
@@ -342,6 +353,13 @@ D_{X_m+H_m}$. The latter retains both the mean and the residual noise.
 \end{proof}
 
 \subsection{Source restart and comparison with the original point}
+
+So far the blocks $D_m^0$ and $D_m^+$ are defined one at a time, from the local
+operator paths $X_m$ and $X_m+H_m$. We now show that each family forms the
+successive pieces of its corresponding global flow, and that its finite
+products are source limits in $L^2$ at fixed $\delta,N$. The proof of
+Proposition~\ref{P:raw-block-point-comparison} uses this to verify the
+source-limit premise of the masked comparison.
 
 \begin{lemma}[Composition over time blocks and regularized products]
   \label{L:raw-block-restart}
@@ -545,6 +563,13 @@ D_{X_m+H_m}$. The latter retains both the mean and the residual noise.
   masked and full fields. All source limits preceded this large-time comparison.
   This proves Proposition~\ref{P:raw-block-point-comparison}.
 \end{proof}
+
+Proposition~\ref{P:raw-block-point-comparison} bounds $\E|u(T,0)|^2$ from below
+by the weighted second moment of $Y_{\delta,B}$
+in~\eqref{E:raw-block-square-identity}. We still need a lower bound for
+$Y_{\delta,B}$ itself. The proof below obtains one on an event whose probability
+tends to one. It uses the estimates of Lemma~\ref{L:raw-block-uniform-error} and
+the cone bound of Lemma~\ref{L:raw-block-indexed-cone}.
 
 \begin{proposition}[Original point lower rate at the Gaussian quadratic cost]
   \label{P:raw-block-original-lower}

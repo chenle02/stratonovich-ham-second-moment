@@ -36,6 +36,11 @@ is imposed on $q$.
   Lemma~\ref{L:signed-limiting-multiplier}.
 \end{proof}
 
+The bound~\eqref{E:signed-multiplier-form} controls the pairing $v_V$ on
+$H^{1/2}$. We now use it to define a self-adjoint operator $H_V$ from the
+quadratic form $q_V$ on $H^1$. We also compare the quarter power of its shift
+$A$ with the $H^{1/2}$ norm.
+
 \begin{proposition}[Closed form and quarter-power phase]
   \label{P:signed-closed-form}
   Let $K \ge \max(1,\|L\|)$ and $c = 2+K^2$. On complexified $L^2$ the form
@@ -108,6 +113,11 @@ is imposed on $q$.
   Proposition~\ref{P:signed-closed-form}.
 \end{proof}
 
+Proposition~\ref{P:signed-closed-form} gives the operator $H_V$ and compares
+the norms built from $A^{1/4}$ with those of $E$. We now locate the bottom of
+the spectrum of $H_V$ and bound the wave that its spectral calculus defines on
+$E$. The bound allows exponential growth at the rate $\lambda(V)$.
+
 \begin{lemma}[The bottom and spectral wave]\label{L:signed-spectral-wave}
   Write $P_V^E$ for the evolution in~\eqref{E:signed-spectral-matrix}, and $S_E$
   for the free restriction from Lemma~\ref{L:constant-phase-free}. Put
@@ -171,6 +181,10 @@ is imposed on $q$.
   D(A^{1/2})$. Spectral cutoffs justify their extensions and continuity there.
   This proves Lemma~\ref{L:signed-spectral-wave}.
 \end{proof}
+
+Lemma~\ref{L:signed-spectral-wave} bounds a wave defined by spectral
+calculus, and only on $E$. We still have to identify it with the physical wave
+and to include the two constant columns of $F$.
 
 \begin{proposition}[Identification with the physical wave]
   \label{P:signed-physical-wave}

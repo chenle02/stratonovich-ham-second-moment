@@ -22,6 +22,10 @@ Thus, the physical mask occurs once, after covariance convolution.
 
 \subsection{Uniform multiplier and spatial tails}
 
+We first bound the row $k_R$ in~\eqref{E:uniform-mean-row} uniformly in
+$R \ge 1$. Both factors of this row carry the cutoff $\eta_R$, so we start with
+its multiplier norm on $H^\sigma$.
+
 \begin{lemma}[Uniform cutoff and physical mean]\label{L:uniform-mean-cutoff}
   For every real $\sigma$, multiplication by $\eta_R$ on $H^\sigma$ has norm at
   most
@@ -56,6 +60,12 @@ Thus, the physical mask occurs once, after covariance convolution.
   controls and hence on their completion. Its compact values at each fixed $R$
   are retained. This proves Lemma~\ref{L:uniform-mean-cutoff}.
 \end{proof}
+
+Lemma~\ref{L:uniform-mean-cutoff} bounds $T_R$ on all of $H_{\mathrm{sp}}$.
+The approximation in Proposition~\ref{P:uniform-mean-regulator} also needs
+$T_R$ to be small on high frequencies, uniformly in $R \ge 1$. We obtain this
+from a bound on $T_R(I-C_\varepsilon)$ for the heat contraction
+$C_\varepsilon$.
 
 \begin{lemma}[Uniform heat and frequency tails]
   \label{L:uniform-mean-spatial-tails}
@@ -141,6 +151,10 @@ Thus, the physical mask occurs once, after covariance convolution.
 
 \subsection{Tensor products and mean approximation}
 
+We first record a tensor extension bound for maps into $L^r(I)$. The proof
+of Proposition~\ref{P:uniform-mean-regulator} uses it to pass from a scalar
+time map to the Hilbert-valued time map without a dimension factor.
+
 \begin{lemma}[Dimension-free Hilbert tensor extension]
   \label{L:uniform-mean-tensor}
   If $H_0,G$ are real Hilbert spaces, $2 \le r < \infty$ and $A:H_0 \to L^r(I)$
@@ -169,11 +183,11 @@ Thus, the physical mask occurs once, after covariance convolution.
 
   Choose measurable representatives of the finitely many $Af_j$. Scalar Gaussian
   moments and Tonelli give
-  \begin{align*}
+  \[
     m_r\int_I\left(\sum_j|Af_j(t)|^2\right)^{r/2}\ud t
-    &=\E\left\|A\sum_j\gamma_jf_j\right\|_{L^r}^r\\
-    &\le\|A\|^rm_r\left(\sum_j\|f_j\|^2\right)^{r/2}.
-  \end{align*}
+    =\E\left\|A\sum_j\gamma_jf_j\right\|_{L^r}^r
+    \le\|A\|^rm_r\left(\sum_j\|f_j\|^2\right)^{r/2}.
+  \]
   Cancel the finite positive $m_r$ and take the $r$th root. Finite tensor
   density and Bochner completeness give the extension. The zero space is
   trivial. If $Af \ne 0$ and $G$ has an infinite orthonormal sequence $(e_j)$,

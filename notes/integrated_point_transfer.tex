@@ -188,6 +188,11 @@ the operator path to constant columns on $F$.
   Sobolev point trace is used. This proves Lemma~\ref{L:point-compact-source}.
 \end{proof}
 
+The displacement $v_{\epsilon,\tau}$ of Lemma~\ref{L:point-compact-source} has
+the masked coefficient $mgY_{\rm fast}$ and the data $(\psi,0)$. The unmasked
+source solution has the coefficient $gY_{\rm fast}$ and the data $(1,0)$. We now
+show that the two agree on a cone that contains $D$ at time $L$.
+
 \begin{proposition}[Cone identity and an average of squares]
   \label{P:point-source-cone}
   Let $u_{\epsilon,\tau}^{\rm full}$ be the unmasked source solution with
@@ -247,6 +252,11 @@ No-go~\ref{P:nogo-31} gives a smooth free-wave counterexample when
 the velocity guard is omitted, and a separate phase example explaining
 why operator growth alone does not imply growth for every initial state.
 
+
+Proposition~\ref{P:point-source-cone} holds at fixed positive
+$\epsilon,\tau$ and for the scaled covariance $\Gamma_\delta$. We now remove the
+regularization and undo the scaling to reach the original point moment
+$\E|u_\Gamma(T_\delta,0)|^2$.
 
 \begin{proposition}[Exact original point transfer and polynomial cost]
   \label{P:original-point-transfer}

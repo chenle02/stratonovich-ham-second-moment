@@ -17,6 +17,11 @@ below are closed.
 
 \subsection{The Wiener-space realization}
 
+The Gaussian isoperimetric theorem that we import in
+Section~\ref{S:gaussian-isoperimetry-input} is stated for an abstract Wiener
+space. We first show that the law of $X$ on $E_0$ is of this kind, and we
+identify its Cameron space.
+
 \begin{proposition}[First Wiener chaos realization on the support]
   \label{P:tube-wiener-realization}
   The variable $X$ lies in $E_0$ almost surely, with a centered Radon Gaussian
@@ -179,6 +184,11 @@ nonlinear wave. We verify Borel measurability of every enlargement we use.
 \end{proof}
 
 \input{notes/figures/gaussian-enlargement}
+
+Lemma~\ref{L:tube-closed-geometry} bounds the tail of the tube distance
+$d_\delta(X)$. We now convert this tail bound into a bound for
+$\E e^{F(X)/\delta}$, for a functional $F$ that satisfies $F \le G(r)$ on each
+tube $\mathcal{T}_r$.
 
 \begin{proposition}[Comparison with the Rayleigh integral, including jumps and zero law]
   \label{P:tube-rayleigh-transfer}
@@ -374,6 +384,12 @@ norm
 \end{proof}
 
 \subsection{Uniform coarse envelope and the exact radial integral}
+
+To apply Proposition~\ref{P:tube-rayleigh-transfer} to the endpoint functional
+$F_\delta$ of Lemma~\ref{L:tube-actual-endpoint}, we need a nondecreasing Borel
+function that dominates $F_\delta$ on every tube. We take the supremum of
+$F_\delta$ over each tube and bound its growth in the radius, uniformly in
+$\delta$ and $R \ge 1$.
 
 \begin{proposition}[Coarse tube envelope and operator moment]
   \label{P:tube-coarse-envelope}

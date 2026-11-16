@@ -20,6 +20,10 @@ physical mask. We write $h_s$ when $\Psi$ is fixed.
 
 \subsection{Global bounds and the unmasked spectral bottom}
 
+We first record a bound for the covariance smoothed by the heat kernel. The
+proof of Lemma~\ref{L:variational-global-mean} uses it to bound
+$\Gamma*|D\Psi(t,\cdot)|$ uniformly in $t,x$.
+
 \begin{lemma}[Gaussian envelope for the original covariance]
   \label{L:variational-heat-envelope}
   For the normalized heat kernel $p_\epsilon(x) =
@@ -95,6 +99,11 @@ physical mask. We write $h_s$ when $\Psi$ is fixed.
   inferred. This proves Lemma~\ref{L:variational-global-mean}.
 \end{proof}
 
+Lemma~\ref{L:variational-global-mean} shows that $h_s$ is bounded by $M$ for $s
+\in I$ and is Lipschitz in $s$ in the supremum norm. We now use these two bounds
+to define the rate $\lambda_{\Psi,s}$ of the potential $h_s$ without a mask and
+to show that it is Lipschitz on $I$.
+
 \begin{proposition}[The unmasked Rayleigh rate]
   \label{P:variational-unmasked-rate}
   On complex $L^2(\R^d)$, the operator $H_s = -\Delta-h_s$ is self-adjoint on
@@ -165,6 +174,11 @@ physical mask. We write $h_s$ when $\Psi$ is fixed.
 
 \subsection{Removing masks from the numerical lower rate}
 
+Proposition~\ref{P:raw-block-original-lower} gives the lower bound with the rate
+of the masked potential $m_Rh_s$, for one fixed mask. We now let the mask radius
+$R$ tend to infinity and replace this rate by the rate $\lambda_{\Psi,s}$ of
+Proposition~\ref{P:variational-unmasked-rate}.
+
 \begin{proposition}[Monotone rates and the original point moment]
   \label{P:variational-remove-mask}
   There is an increasing family of admissible radial masks $m_R$ tending to one,
@@ -221,6 +235,13 @@ physical mask. We write $h_s$ when $\Psi$ is fixed.
 \end{proof}
 
 \subsection{Full-class dilation and finite variational values for nonnegative controls}
+
+The bound~\eqref{E:variational-unmasked-point-lower} holds for each $\Psi \in
+\mathcal{C}_{\mathrm{pos}}$ separately. Before we take the supremum over $\Psi$,
+we record how $h_{\Psi,s}$, $v_\Psi$, $\lambda_{\Psi,s}$ and $I_\Psi$ change
+under a spatial dilation of the control. The proof of
+Proposition~\ref{P:variational-positive-scores} uses this to relate the
+variational values for different coefficients $c$.
 
 \begin{lemma}[Radon and Rayleigh dilation]\label{L:variational-control-dilation}
   For $r > 0$ the map
