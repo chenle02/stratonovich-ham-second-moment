@@ -48,6 +48,9 @@ $\Gamma*|D\Psi(t,\cdot)|$ uniformly in $t,x$.
   \medskip
   \noindent\textit{Step 1.~}We obtain integrable majorants for the Gaussian
   weights.
+  In the dyadic summation below, mass growth $2^{jN}$ times weight decay
+  $2^{-jL}$ is summable for $L>N$; Gaussian derivatives decrease faster than
+  each such polynomial weight.
   A positive tempered Radon measure has polynomial ball growth. Indeed, evaluate
   its tempered bound on a nonnegative smooth cutoff equal to one on $B_1$,
   dilated by $R \ge 1$. Its finitely many Schwartz seminorms are bounded by
@@ -58,10 +61,6 @@ $\Gamma*|D\Psi(t,\cdot)|$ uniformly in $t,x$.
   in $x$: on compact $x$ sets its translated Gaussian derivatives are bounded by
   any fixed sufficiently fast polynomial weight in the integration variable.
 
-  On the annulus $2^j\le |x|<2^{j+1}$, the mass bound contributes at most a
-  constant times $2^{jN}$ and the decreasing weight contributes at most a
-  constant times $2^{-jL}$. Their product is summable when $L>N$. A Gaussian
-  and each of its derivatives decrease faster than any such polynomial weight.
 
   \medskip
   \noindent\textit{Step 2.~}We identify the two continuous expressions and
@@ -79,10 +78,6 @@ $\Gamma*|D\Psi(t,\cdot)|$ uniformly in $t,x$.
   nonnegative. Evenness of $\mu$ makes the spectral integral real, and its
   absolute value is bounded by its total Gaussian mass, the value at zero.
   Finally, $\Gamma \ne 0$ and $p_\epsilon > 0$ give strict positivity there.
-  The spectral phase has modulus one, so the absolute value of its integral is
-  at most the integral of the positive Gaussian weight. At $x=0$ that phase is
-  one. Physical positivity makes the common value nonnegative, completing the
-  two-sided comparison.
   This proves Lemma~\ref{L:variational-heat-envelope}.
 \end{proof}
 
@@ -167,10 +162,6 @@ to show that it is Lipschitz on $I$.
   \in \ker(H_s^*-ib) = \operatorname{Ran}(H_s+ib)^\perp = \{0\}$. Hence,
   $D(H_s^*) = D(H_s)$.
 
-  Surjectivity at both imaginary spectral parameters is the key point in the
-  adjoint-domain argument. Solving at $-ib$ produces $v$, while surjectivity
-  at $+ib$ makes the orthogonal complement of its range zero. Thus, the vector
-  $u-v$ must vanish, giving the reverse domain inclusion.
 
   \medskip
   \noindent\textit{Step 2.~}We identify the form domain by equivalent
@@ -201,10 +192,6 @@ to show that it is Lipschitz on $I$.
   following negative upper bound justifies writing that value as
   $\lambda_{\Psi,s}^2$ in~\eqref{E:variational-real-rayleigh}.
 
-  A vector with spectral support in the bounded interval $[E_s,E_s+\epsilon]$
-  belongs to the operator domain, because the spectral multiplier is bounded
-  on that support. Its normalized spectral measure has total mass one, so its
-  Rayleigh quotient lies in the same interval.
   For a complex vector $f = u+iv$ with real-valued $u,v$, its quadratic form
   and squared norm are sums of the corresponding values for $u$ and $v$. At
   least one of the nonzero components has quotient no greater than their
@@ -273,6 +260,13 @@ Proposition~\ref{P:variational-unmasked-rate}.
   \medskip
   \noindent\textit{Step 2.~}We pass the Rayleigh values and rates to their
   unmasked limits.
+  For each fixed unit form test, the mask-removal argument uses the integrable
+  majorant $Mf^2$ for $m_Rh_sf^2$.
+  The compact-family input is Proposition~\ref{P:compact-ground-family}, with
+  the common trial supplied by
+  Proposition~\ref{P:compact-original-common-trial}: its rate obeys
+  $\lambda_{R,s}^2=-E_1$, the negative form bottom of $-\Delta-m_Rh_s$ on
+  $H^1$.
   Choose $R_0$ so the preceding common trial lies in the plateau. Every $R \ge
   R_0$ has the same negative margin. For each fixed $R$, the compact-family
   theorem applies to $m_Rh_s$. Its real Rayleigh formula follows from the same
@@ -287,10 +281,6 @@ Proposition~\ref{P:variational-unmasked-rate}.
     \left(\int m_Rh_sf^2-\|\nabla f\|_2^2\right)
     =\lambda_{\Psi,s}^2.
   \]
-  For each fixed test, $0\le m_Rh_sf^2\le M f^2$, an integrable majorant. Its
-  potential integral therefore converges to the unmasked one. Taking the
-  supremum over the product of the radius and test index sets in either order
-  gives the displayed equality; no maximizer is required.
   Only two numerical suprema were interchanged. Positive square roots give the
   pointwise rate convergence. For $R_n = R_0+n$ and $\epsilon > 0$, the
   increasing open sets $\{s:\lambda_{\Psi,s}-\lambda_{R_n,s}<\epsilon\}$ cover
@@ -298,11 +288,6 @@ Proposition~\ref{P:variational-unmasked-rate}.
   convergence. Monotonicity extends it to all real $R \to \infty$. Therefore,
   $\int_I\lambda_{R,s}\ud s\uparrow I_\Psi$.
 
-  The difference of the limiting rate and each masked rate is continuous and
-  nonnegative. Once the largest set in a finite subcover contains all of $I$,
-  its error is below $\epsilon$ everywhere. Larger radii only decrease that
-  error. This is a deterministic compactness argument for rates, not
-  convergence of unmasked random flows.
 
   \medskip
   \noindent\textit{Step 3.~}We take the supremum of fixed-mask moment lower
@@ -367,10 +352,6 @@ variational values for different coefficients $c$.
   This distinguishes the Radon pushforward from the spatial volume factor; it
   includes singular covariances and white noise.
 
-  The mean has one amplitude factor $r^{d+2-\alpha}$ and one Radon factor
-  $r^{\alpha-d}$, whose product is $r^2$. In the cost pairing, multiplying by
-  that mean adds $r^2$, while the spatial Lebesgue substitution contributes
-  $r^{-d}$. This accounts separately for every exponent in the cost identity.
 
   \medskip
   \noindent\textit{Step 2.~}We scale the full set of Rayleigh tests.
