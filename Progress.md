@@ -36,6 +36,18 @@ reread series and later source versions at the final synchronization gate.
 
 
 
+**Chapter 9 graph-currentness blocker:** Agent 16 verifies the reader-step
+successors `32919d54` and `5aa50c46` mechanically but reports stale Appendix
+G.1 data. Root confirms both new direct dependency edges are real uses:
+`P:uniform-mean-regulator` uses `L:uniform-mean-cutoff`'s uniform spatial
+operator bound; `P:uniform-actual-cameron` uses the regulator's completed
+residual-mean bound in its weighted block estimate. Same domains, fixed r
+and projections apply. This is worker dependency QA, not new review credit.
+Chapter 9 stays held until Agent 24 regenerates critical-path data/book PDF,
+Agent 16 verifies that commit, and the final source handoff is explicit.
+Run the critical-path currentness check after every addition henceforth.
+See `CHAPTER9-G1-DEPENDENCY-EDGES-CHECK.json` in the policy directory.
+
 **Post-launch source correction:** Agent 24 reports six accepted editorial
 reader stop points will change uniform-mean and signed-static once more.
 RP039 (`0816c195`) and RP041 (`484ed7f4`) retain their launched source bindings
