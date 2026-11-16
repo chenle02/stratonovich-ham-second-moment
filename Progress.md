@@ -57,12 +57,25 @@ aggregate usage/cost/cap remain unknown. Older RP014/RP039 records and their
 limits are unchanged. RP043 signed-static remains running at this record.
 See `reviews/2026-11-16-readable-uniform-mean-postreader32919d54-deepseek/`.
 
+**Three unlaunched binding replacements:** Agent 24 supersedes compact
+mean `7c76e69f` by `259e8ab8`, unmasked variational `af4d1a50` by `234cf2cf`,
+and Young upper `5508cc0e` by `e7ef9910` (`ca340288b06a`, map tip `5af7b517`).
+Agent 16 explicitly holds these replacement inputs (`e8019bf59793`) pending
+verification; the other twelve FINAL files stand. No model call was spent on
+these three superseded inputs. RP051/RP054/RP058 use the replacements only
+after verification/root freeze; the older source rows remain in the recorded
+supersession history. The root source handoff JSON now marks these three
+pending and all other original bindings as verified.
+
 **First Chapters 4-8 batch verified and frozen:** Agent 16 verifies all
 15 original bindings at `032fb8a2` (`d5e9fa4787b6`). RP044 covariance
 `1033a48e`, RP045 wave variance `0467fe59` and RP046 compact Gaussian
 `105845e7` now freeze all 8/6/10 proof pairs. Root reads the contracts and
 independently checks every Git frame, complete statement/proof hash and LF,
-immutable digest and tool-denied profile; no native call at this freeze.
+immutable digest and tool-denied profile; no native call at the freeze.
+RP044/RP045/RP046 then actually launched at 13:54:57-59 UTC on 2026-11-16,
+one per scope, exact-three queue with no other refill authorized. See
+`CH4-8-FIRST3-LAUNCHES.json`; starts are not review results.
 The same Choice B limits apply: max three processes, 65,536 per generation,
 3,600 seconds and no coordinator repeat/tools/fallback. The later replacement
 bindings for compact mean, unmasked variational and Young upper are held
