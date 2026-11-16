@@ -19,6 +19,10 @@ is imposed on $q$.
 \end{lemma}
 
 \begin{proof}
+  The form $v_V(u,w)$ is the duality pairing
+  $\langle Vu,w\rangle_{H^{-1/2},H^{1/2}}$.
+  Once the multiplier bound $\|Vu\|_{H^{-1/2}}\le k\|u\|_{H^{1/2}}$
+  is obtained below, duality gives~\eqref{E:signed-multiplier-form}.
   Choose $L_{q_n} \to L$. The constant-displacement vector has norm one, so
   $\|V_{q_n}-V_{q_j}\|_{H^{-1/2}} \le \|L_{q_n}-L_{q_j}\|$. Thus, $V_{q_n} \to
   V$ in $H^{-1/2}$. Testing outside the fixed compact mask support preserves
@@ -189,6 +193,16 @@ $E$. The bound allows exponential growth at the rate $\lambda(V)$.
       -hS_t(h)/\sqrt{h+c}&C_t(h)
     \end{pmatrix}.
   \end{equation}
+  The isometry is $(u,v)\mapsto(A^{1/4}u,A^{-1/4}v)$ onto
+  $L^2\times L^2$, with the negative-power map extended to the completed
+  velocity space.
+  The displayed matrix is the conjugate, initially on bounded spectral
+  cutoffs, of the spectral solution
+  \[
+    P_V^E(t)\binom{u}{v}
+    =\binom{C_t(H_V)u+S_t(H_V)v}
+    {-H_VS_t(H_V)u+C_t(H_V)v}.
+  \]
   For $h \ge 0$, the entries are bounded using $|C_t| \le 1$, $|S_t| \le
   \min(t,h^{-1/2})$, $\sqrt{h+c}|S_t| \le 1+\sqrt c\,t$ and $|hS_t|/\sqrt{h+c}
   \le 1$; at zero the off-diagonals are $\sqrt c\,t,0$. For $\beta \le h < 0$,
