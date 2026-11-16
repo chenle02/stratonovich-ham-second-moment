@@ -246,12 +246,13 @@ rectangles with a countable dense spatial collection suffice.
     2\lambda e^{-\lambda(t+u-2r)}\ud r
     =e^{-\lambda|t-u|}
   \]
-  Integrating the two exponential time features over $r$ gives the displayed
-  kernel. Integrating that kernel against $\nu_a$ gives $|t-u|^{-a}$. The
-  spatial inner product is the original $B_\Gamma$, so these two integrations
-  reproduce the original covariance.
-  The original Laplace formula therefore gives $\|\Phi F\|_{\mathcal{G}}^2 =
-  \|F\|_{H_W}^2$. All signed exchanges for finite tensors are absolutely
+  and the original Laplace formula give $\|\Phi F\|_{\mathcal{G}}^2 =
+  \|F\|_{H_W}^2$.
+  Indeed, integrating the two exponential time features over $r$ gives the
+  displayed kernel. Integrating that kernel against $\nu_a$ gives
+  $|t-u|^{-a}$. The spatial inner product is the original $B_\Gamma$, so
+  these two integrations reproduce the original covariance.
+  All signed exchanges for finite tensors are absolutely
   integrable: compact temporal factors give integrals of
   $|\tau(t)\sigma(u)||t-u|^{-a}$, finite for $a < 1$, times fixed finite spatial
   inner products. No oscillatory infinite-measure Fubini is used. Smooth time
@@ -439,11 +440,11 @@ The temporal operation is a Laplace prefix, not temporal convolution.
     \le\|(I-C_\varepsilon)g\|_{\mathcal{G}}
     +\|(I-P_\eta)g\|_{\mathcal{G}}\longrightarrow0
   \]
-  The two terms on the right depend on separate parameters, and each tends to
-  zero by strong convergence. Therefore, there is no need to compare the rates
-  at which the heat width and the Laplace cutoff are removed. The displayed
-  convergence
-  holds at arbitrary relative rates. Thus, the residual variance tends to zero
+  holds at arbitrary relative rates.
+  Indeed, the two terms on the right depend on separate parameters, and each
+  tends to zero by strong convergence. Therefore, there is no need to compare
+  the rates at which the heat width and the Laplace cutoff are removed.
+  Thus, the residual variance tends to zero
   for every original $F$. Proposition~\ref{P:source-gaussian-transfer}
   gives~\eqref{E:source-driver-limit} without commuting a filter through
   $\zeta_R$ or a wave group.
