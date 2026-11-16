@@ -48,6 +48,21 @@ Agent 22's separate obligation; this reread does not certify that mapping.
 Final source/PDF/ledger/disclosure/combined/review-sync reconciliation remains
 a publishing gate under Agent 16. No root push, R/F or release is implied.
 
+
+### RP002 prepared: fixed masks and displacement moments
+
+Next independently assigned module: all three rewritten proofs of
+`notes/integrated_masked_moments.tex` at `5c55515b`, baseline `cdde711c`.
+Agent 16 verified its mechanics; fresh worker QA found the arguments
+preserved. The frozen packet is
+`reviews/2026-11-16-readable-masked-moments-deepseek/`, with exact upstream
+context clearly designated as input rather than additional reviewed proofs.
+The route/profile are the same pure DeepSeek V4 Pro read-only route as RP001;
+requested cap65536 and walltimeout3600, one coordinator launch, no retry or
+fallback. At this checkpoint it is PREPARED, not dispatched, with no
+independent verdict. Files2 and3 are held for their pure-insertion successor
+versions; their earlier da065152/bc0932 QA is historical, not a dispatch target.
+
 The older publication-frontier headings below are dated snapshots; they do
 not authorize restarting their old completed calls or override this narrow
 assignment and Le's later recorded decisions.

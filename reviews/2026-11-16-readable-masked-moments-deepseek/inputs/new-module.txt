@@ -1,0 +1,294 @@
+\section{Fixed masks and displacement moments}
+\label{S:masked-moments}
+
+We retain Hypothesis~\ref{H:homog}, data $(1,0)$, and all its original
+dimensions and covariance amplitudes. Fix $\rho = (\epsilon,\eta) > 0$ and the
+source $Y_\rho$ of Proposition~\ref{P:source-canonical-convergence}. For each
+fixed $\rho$ use the continuous-time, smooth-space version in
+Lemma~\ref{L:source-pointfield-regularity}. Source fields can use the auxiliary
+extension preserving the given noise; their law and the given noise remain those
+already constructed. Let $m \in C_c^\infty(\R^d)$ be real with $0 \le m \le 1$.
+It multiplies the physical source after regularization.
+
+Write $X_{\rho,n}^m(t,x)$ for the ordinary ordered displacement integral with
+coefficient $mY_\rho$, and $X_{\rho,n}$ for its unmasked version; both
+order-zero terms are one. We first construct these integrals. The positive Green
+measures $G_d(r,\ud z)$ have mass $r$ and support in $B_r$, including the sphere
+measure in $d = 3$. These are the source
+kernels~\cite{chen:author2026:time-dependency}*{(2.1), (2.3)--(2.5), p.~7}; the
+ordered convention and Gaussian pairing formula are
+\cite{chen:author2026:time-dependency}*{(2.13)--(2.16), p.~10; (2.19), p.~12}.
+We use all pair partitions, including self-pairings.
+
+\begin{lemma}[Chains and mixed-order comparison]
+  \label{L:masked-chain-comparison}
+  The finite ordered integrals are Bochner $L^2$ integrals. For all $n,k \ge 0$,
+  fixed $t,x,y$ and positive $\rho$,
+  \begin{equation}\label{E:masked-order-comparison}
+    0\le \E[X_{\rho,n}^m(t,x)X_{\rho,k}^m(t,y)]
+    \le \E[X_{\rho,n}(t,x)X_{\rho,k}(t,y)].
+  \end{equation}
+  Both expectations vanish when $n+k$ is odd. With $q_n$ from
+  Lemma~\ref{L:vertex-crude},
+  \begin{equation}\label{E:masked-order-bound}
+    \|X_{\rho,n}^m(t,x)\|_2\le q_n(t),\qquad
+    \|X_{\rho,n}(t,x)\|_2\le q_n(t).
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We construct the ordered integrals using finite positive chain measures and
+  Gaussian moment bounds. We then identify the Green-regularization limit and
+  compare every Wick diagram before summing over pairings.
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the finite chain integrals.
+  Let $\nu_n^{t,x}$ be the positive time-space chain measure on $0 < s_1 <
+  \cdots < s_n < t$, with successive spatial factors $G_d(s_{j+1}-s_j,\ud z_j)$
+  and $s_{n+1} = t$, recovering positions backwards from $x$. It uses measures
+  rather than sphere densities. The order-zero measure has mass one. Integrating
+  the latest vertex gives the recursion $f_n(t) = \int_0^t(t-r)f_{n-1}(r)\ud r$;
+  hence,
+  \begin{equation}\label{E:masked-chain-mass}
+    \nu_n^{t,x}(1)=\frac{t^{2n}}{(2n)!}.
+  \end{equation}
+  Starting from mass one at order zero, the recursion integrates the mass of
+  the last Green factor, $t-r$, against the previous mass. Substituting
+  $f_{n-1}(r) = r^{2n-2}/(2n-2)!$ gives the displayed mass by elementary
+  integration. In particular, the measure is finite at each fixed order.
+  Measurability follows by representing $G_d(r)$ as $r$ times the dilation by
+  $r$ of its unit-time probability measure.
+
+  The covariance is
+  \[
+    C_\rho(s,z;r,w)=K_\eta(s-r)\Gamma_{2\epsilon}(z-w),
+    \qquad 0\le C_\rho\le c_\rho
+    :=K_\eta(0)\Gamma_{2\epsilon}(0)<\infty.
+  \]
+  Positivity uses the nonnegative Radon measure $\Gamma$ and positive heat and
+  Laplace kernels. The upper bound also follows by Gaussian Cauchy--Schwarz.
+  H\"older's inequality and scalar Gaussian moments bound the absolute
+  expectation of any fixed number of source factors, uniformly over their
+  vertices. Applied to $2n$ factors this bounds the $L^2$ norm of each $n$-fold
+  product. The field is measurable and continuous, so integration against the
+  finite chain measure defines a Bochner $L^2$ integral and permits stochastic
+  Fubini between two chains.
+
+  The bound on the $L^2$ norm of each product is uniform over the integration
+  variables at fixed $\rho,n$. Its integral against the finite chain measure
+  is therefore finite. This is the Bochner integrability condition, and
+  applying the same argument to two products gives the absolute integrability
+  needed to exchange expectation and the two chain integrals.
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the integrals obtained by Green
+  smoothing.
+  These are the canonical regularized terminal integrals at common noise widths.
+  Here is the Green-width identification needed in dimension three. At fixed
+  positive $\rho$, replace every Green measure by its convolution with a
+  positive heat approximate identity. At fixed times the measures converge
+  weakly, preserving masses. Every Wick covariance product is bounded by a power
+  of $c_\rho$ and is spatially continuous by
+  Lemma~\ref{L:source-pointfield-regularity}. Thus, its spatial integrals
+  converge. The chain mass integrands from~\eqref{E:masked-chain-mass} give an
+  integrable time majorant. Square and cross moments between smoothed and
+  unsmoothed integrals converge to the same diagram sum; therefore, the random
+  integrals converge in $L^2$. This is precisely the Green-before-noise limit in
+  Lemma~\ref{L:joint-fixed-order}. It also applies in dimensions one and two if
+  Green smoothing is used. No samplewise source bound on heat-kernel tails is
+  needed. Consequently, Lemma~\ref{L:vertex-crude} applies to the unmasked
+  integrals.
+
+  For the $L^2$ comparison, expand the squared difference into the two square
+  moments and the cross moment. All three converge to the same unsmoothed Wick
+  sum, so their combination tends to zero. This identifies the limit as an
+  actual mean-square limit of the regularized integrals, not just a limit of
+  their variances.
+
+  \medskip
+  \noindent\textit{Step 3.~}We compare each masked Wick diagram with its
+  unmasked diagram.
+  If $n+k$ is odd, Gaussian centering gives zero. If $n+k = 2l$, each pair
+  partition $D$ contributes the nonnegative finite integral
+  \[
+    \int \prod_{\{i,j\}\in D}
+    C_\rho(s_i,z_i;s_j,z_j)
+    \ud(\nu_n^{t,x}\otimes\nu_k^{t,y}).
+  \]
+  Every covariance factor is nonnegative, and the product chain measure is
+  positive. Thus, multiplying the integrand by any factor between zero and one
+  can only decrease its integral. The physical mask supplies exactly such a
+  factor.
+  The masked integrand has the additional factor $\prod_{i=1}^{2l}m(z_i) \in
+  [0,1]$. Every vertex appears exactly once, irrespective of its chain or
+  partner. Summing gives \eqref{E:masked-order-comparison}, including unequal
+  and empty chains and every self-pairing. At $n = k = 0$ both sides are one.
+  Taking $k = n$, $y = x$ and then applying the unmasked bound gives
+  \eqref{E:masked-order-bound}. This is a statement about expected displacement
+  diagrams; no samplewise solution order or Gaussian covariance order is used.
+  This proves Lemma~\ref{L:masked-chain-comparison}.
+\end{proof}
+
+\begin{proposition}[Ordinary solutions and tested moments]
+  \label{P:masked-source-moments}
+  The sums $u_\rho^m = \sum_{n\ge0}X_{\rho,n}^m$ and $u_\rho =
+  \sum_{n\ge0}X_{\rho,n}$ converge absolutely in $L^2$ and have locally
+  continuous versions that are the unique locally continuous ordinary mild
+  solutions with coefficients $mY_\rho$ and $Y_\rho$, respectively, and data
+  $(1,0)$. For every nonnegative $\phi \in C_c^\infty(\R^d)$,
+  \begin{align}
+    0&\le\E[u_\rho^m(t,x)u_\rho^m(t,y)]
+    \le\E[u_\rho(t,x)u_\rho(t,y)],\label{E:masked-two-point}\\
+    \E\left|\int\phi(x)u_\rho^m(t,x)\ud x\right|^2
+    &\le \|\phi\|_1^2\,\E|u_\rho(t,0)|^2.
+    \label{E:masked-average-source}
+  \end{align}
+  The spatial integral is an Bochner $L^2$ integral.
+\end{proposition}
+
+\begin{proof}
+  We first identify the mean-square series with the continuous Picard solution
+  on each compact observation region. We then pass the mixed-order comparison
+  through the series and integrate it against the nonnegative spatial test.
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct and identify the ordinary mild
+  solutions.
+  Put $Q_T = \sum_{n\ge0}q_n(T) < \infty$, using~\eqref{E:vertex-summability}.
+  Lemma~\ref{L:masked-chain-comparison} proves absolute $L^2$ convergence
+  uniformly in space and widths. To identify the sums pathwise, fix $\rho$, a
+  compact observation set and a finite horizon $T$. On the source regularity
+  event the coefficient is bounded by a finite sample-dependent $M$ on the
+  compact backward-cone enlargement. Finite propagation
+  and~\eqref{E:masked-chain-mass} bound each Picard term there by
+  $M^nT^{2n}/(2n)!$. This series converges uniformly. Each term is continuous by
+  the unit-time Green representation and dominated integration. Summing the
+  Volterra recursion gives the ordinary mild equation with initial displacement
+  one and velocity zero. Iterating the difference equation between two
+  continuous solutions bounds its value on the observation set by $B
+  M^nT^{2n}/(2n)!$, where $B$ bounds their difference on the larger compact
+  cone. Letting $n \to \infty$ proves uniqueness.
+
+  The factorial dominates every fixed power of $M T^2$, so the bound on the
+  difference tends to zero. The boundedness required for $B$ follows from
+  continuity on the compact cone. This argument applies separately on each
+  fixed compact observation set and finite horizon.
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the continuous version with the
+  Bochner series.
+  Ordinary Fubini and the absolute product integrability in the preceding lemma
+  identify each Bochner term with the pathwise chain integral at a fixed
+  terminal point, simultaneously over countably many orders. An almost surely
+  convergent subsequence of the $L^2$ partial sums then identifies its limit
+  with the continuous Picard version at that point. These versions define the
+  solution for all terminal points at this fixed $\rho$; no common event over
+  uncountably many widths is needed.
+
+  \medskip
+  \noindent\textit{Step 3.~}We sum the expected two-point comparison.
+  For either masked or unmasked terms, Cauchy--Schwarz gives
+  \[
+    \sum_{n,k\ge0}\E|X_{\rho,n}^{(m)}(t,x)
+    X_{\rho,k}^{(m)}(t,y)|\le Q_t^2.
+  \]
+  Each summand is bounded by $q_n(t)q_k(t)$ by Cauchy--Schwarz and the order
+  bounds. The product of the two summable series is $Q_t^2$. This supplies an
+  absolute majorant for the double series and justifies summing the termwise
+  comparison.
+  Products of partial sums converge in $L^1$. Thus, the preceding lemma passes
+  termwise to~\eqref{E:masked-two-point}. The unmasked source law is spatially
+  stationary, and its finite Picard integrals commute with translations. Their
+  $L^2$ limits inherit stationarity, so $\E[u_\rho(t,x)u_\rho(t,y)] \le
+  \E|u_\rho(t,0)|^2$. Stationarity is not required of the masked solution.
+
+  To use stationarity, apply Cauchy--Schwarz to the unmasked values at $x$ and
+  $y$. Both second moments equal the one at zero, so their geometric mean is
+  that same second moment. No comparison of random solutions pointwise is
+  involved.
+
+  \medskip
+  \noindent\textit{Step 4.~}We form the tested spatial average.
+  Each finite Bochner term is $L^2$-continuous in $x$ by source increment
+  continuity on compact cones and dominated Gaussian product moments. Uniform
+  $q_n$ tails pass this property to the full sum. Its separable $L^2$ image and
+  bound $Q_t$ give the Bochner average. Absolute Fubini is justified by
+  $\|\phi\|_1^2Q_t^2$. Integrating the two-point inequality against
+  $\phi(x)\phi(y)$ proves~\eqref{E:masked-average-source}. This proves
+  Proposition~\ref{P:masked-source-moments}.
+\end{proof}
+
+\begin{proposition}[Canonical point-moment limit and conditional transfer]
+  \label{P:masked-canonical-transfer}
+  At every fixed $t$, at arbitrary relative rates of the two widths,
+  \begin{equation}\label{E:masked-unmasked-moment-limit}
+    \lim_{\epsilon,\eta\downarrow0}\E|u_\rho(t,0)|^2
+    =\E|u(t,0)|^2,
+  \end{equation}
+  where $u$ is the original canonical Stratonovich solution. If the masked
+  averages in~\eqref{E:masked-average-source} converge in $L^2$ to
+  $Z_m(t,\phi)$, either at arbitrary rates or along a specified sequence with
+  both widths tending to zero, then
+  \begin{equation}\label{E:masked-conditional-transfer}
+    \E|Z_m(t,\phi)|^2\le\|\phi\|_1^2\,\E|u(t,0)|^2.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  We first pass to the canonical limit at each pair of chain orders. A
+  summable double majorant then gives the full point moment. The conditional
+  masked transfer follows by passing to the limit in the tested source
+  inequality.
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the limit for fixed orders.
+  At every fixed pair of orders the common-width source law is the vertexwise
+  law in Lemma~\ref{L:joint-fixed-order}. At terminal $(t,0)$ reverse each chain
+  by $s'_j = t-s_{n+1-j}$, $z'_j = -z_{n+1-j}$, and likewise for the other
+  chain. Even covariances preserve the reversed differences. Relabeling vertices
+  sends each pairing $\{i,j\}$ to $\{r(i),r(j)\}$, giving the exact
+  initial-chain convention in Proposition~\ref{P:mixed}, also for an empty
+  chain. The preceding Green-width identification removes Green smoothing first.
+  Lemma~\ref{L:joint-fixed-order} then gives the canonical limit of each diagram
+  at arbitrary relative noise-width rates. Odd mixed moments stay zero. Hence,
+  at fixed $n,k$,
+  \[
+    \E[X_{\rho,n}(t,0)X_{\rho,k}(t,0)]
+    \longrightarrow \E[X_n(t,0)X_k(t,0)].
+  \]
+
+  \medskip
+  \noindent\textit{Step 2.~}We pass from finitely many orders to the full
+  moment.
+  All absolute mixed moments, before and after the limit, are bounded by
+  $q_n(t)q_k(t)$. Given $\delta > 0$, choose a finite square of orders with the
+  double majorant outside it less than $\delta$. On the square the finitely many
+  limits hold jointly; off it both tails are bounded by $\delta$.
+  The error between the full moments is bounded by the error on the chosen
+  finite square plus the two omitted tails. The first error tends to zero;
+  each tail is less than $\delta$ uniformly in the widths. Letting $\delta$
+  decrease to zero gives convergence of the whole double sum.
+  Proposition~\ref{P:mixed} identifies the canonical sum, proving
+  \eqref{E:masked-unmasked-moment-limit}. This argument uses the single-width
+  diagram laws, without assigning a new pathwise realization of the entire
+  canonical solution family.
+
+  \medskip
+  \noindent\textit{Step 3.~}We transfer the bound under the stated
+  masked-limit premise.
+  Finally, $L^2$ convergence of the masked averages implies convergence of their
+  second moments by
+  \[
+    |\E|B|^2-\E|A|^2|
+    \le\|B-A\|_2(\|B\|_2+\|A\|_2).
+  \]
+  The inequality follows by factoring the difference of squared norms and
+  applying Cauchy--Schwarz. Convergence in $L^2$ also bounds both norms on the
+  right, so this difference tends to zero. Thus, both sides of the source
+  inequality have the limits needed for the comparison.
+  Take the same source limit in~\eqref{E:masked-average-source} and
+  use~\eqref{E:masked-unmasked-moment-limit}. Existence of the masked limit
+  remains an explicit premise here; the next section constructs it on a phase
+  containing the constant data. This proves
+  Proposition~\ref{P:masked-canonical-transfer}.
+\end{proof}
