@@ -155,7 +155,7 @@ def build(cfg, read_rev, tex_rev, current):
 - `formalized in full`: the result's conclusions are proved in Lean under the manuscript's own hypotheses (sometimes through an exact-hypothesis wrapper of a more general Lean theorem). The setting `H:homog` is modelled in Lean.
 - `formalized, narrower conclusion`: as above, but Lean proves only part of the conclusion; the companion's `coverage.yaml` row says which part.
 - `every conclusion, inputs supplied`: every conclusion is proved in Lean, with the named analytic inputs entering as explicit hypotheses.
-- `inputs supplied`: Lean checks the finite, algebraic or scalar steps of the proof listed in the companion's statement ledger; the analytic and probabilistic facts enter as explicit hypotheses. The result itself is not checked.
+- `inputs supplied`: Lean checks steps, parts or a narrower form of the result, as listed in the companion's statement ledger; analytic and probabilistic facts either enter as explicit hypotheses or stay outside Lean. The result itself is not checked.
 - `outside Lean`: recorded in the companion's coverage file but not formalized ({WORDS[outside_main]} of the {WORDS[len(cfg['main_theorems'])]} main theorems; the SPDE, stochastic integrals and analytic asymptotics are outside Lean).
 - `no Lean claim`: no Lean declaration is mapped to this label.
 - The count in brackets is the number of companion claims mapped to the row. A Lean entry never certifies the analytic inputs, and it is AI-checked correspondence, not human verification.
@@ -172,13 +172,23 @@ def build(cfg, read_rev, tex_rev, current):
                  lambda m: f"The {nwords} groups have {len(res)} rows in total ({' + '.join(str(gc[g]) for g in names)}). The Group column of the results table gives each row's group. Row counts are those of this ledger; source sizes count the TeX lines of each chapter and its included files {cfg['source_size_clause']}. The introduction theorems `T:intro-upper` and `T:intro-second-moment` restate `T:full-upper` (group I) and `T:intrinsic-second-moment` (group III); they are rows of group I, where they are stated, and checking them means checking that they agree with the theorems they restate.",
                  doc, flags=re.S)
     other_classes = ", ".join(sorted({cov[e]["class"] for e in other}))
+    # Where the Lean column comes from. A released companion is described by
+    # the standard sentence; a development state that is not yet released is
+    # described by the sentence in config.json ("lean_source_unreleased").
+    facts = dict(verified=verified, coverage_commit=coverage_commit, theorems=f"{rec['comparator']['theorems']:,}",
+                 claims=f"{rec['lower']['claims_checked']:,}", sorry=rec['lower']['sorry_count'], anchor=anchor,
+                 nogo=kinds['No-go'], tex_rev=tex_rev, gate_date=cfg['lean_gate_date'])
+    if cfg.get("lean_source_unreleased"):
+        lean_source = cfg["lean_source_unreleased"].format(**facts)
+    else:
+        lean_source = f"""The Lean column is taken from the `coverage.yaml` (class, conclusion and claims of each row) of the public Lean companion, release `{cfg['companion_release']}` (DOI {cfg['companion_doi']}), which is byte-identical to the file of the companion's development repository at its commit `{coverage_commit}`, {cfg['coverage_commit_note'].format(verified=verified)}. The companion's `provenance/DEVELOPMENT.md` maps both development commits to the public release. `{verified}` is where wave {cfg['lean_wave']} was confirmed and both lean-pkg receipts were cut ({rec['comparator']['theorems']:,} theorem claims compared, {rec['lower']['claims_checked']:,} claims, {rec['lower']['sorry_count']} `sorry`, standard axioms only); Le closed the wave-{cfg['lean_wave']} gate on {cfg['lean_gate_date']}. Its manuscript anchor is revision `{anchor}`, so the {kinds['No-go']} no-go results of Chapter 12, added later, have no Lean claim. The companion's `docs/statement-ledger.md` at release `{cfg['companion_release']}` gives the declarations behind each claim. Every theorem, proposition, lemma or corollary label in that coverage file exists at `{tex_rev}`."""
     notes = f"""## Notes
 
 - Results: {len(res)} ({', '.join(f"{kinds[k]} {PLURAL[k]}" for k in PLURAL)}).
 - Lean: {leanc['same-full']} formalized in full, {leanc['same-narrow']} formalized with a narrower conclusion, {leanc['inputs-full']} with every conclusion and inputs supplied, {leanc['inputs']} with inputs supplied, {leanc['outside']} outside Lean, {leanc['none']} with no Lean claim.
 - `T:first` and `T:crude` restate results of the cited source; their titles give the citation key and pinpoint.
 - The companion's coverage file also maps {len(other)} labels that are not numbered theorems, propositions, lemmas or corollaries (displayed equations and a remark), class {other_classes}. They have no rows here.
-- Manuscript read at origin/master `{read_rev}`; the book's TeX there is as at `{tex_rev}`. The Lean column is taken from the `coverage.yaml` (class, conclusion and claims of each row) of the public Lean companion, release `{cfg['companion_release']}` (DOI {cfg['companion_doi']}), which is byte-identical to the file of the companion's development repository at its commit `{coverage_commit}`, {cfg['coverage_commit_note'].format(verified=verified)}. The companion's `provenance/DEVELOPMENT.md` maps both development commits to the public release. `{verified}` is where wave {cfg['lean_wave']} was confirmed and both lean-pkg receipts were cut ({rec['comparator']['theorems']:,} theorem claims compared, {rec['lower']['claims_checked']:,} claims, {rec['lower']['sorry_count']} `sorry`, standard axioms only); Le closed the wave-{cfg['lean_wave']} gate on {cfg['lean_gate_date']}. Its manuscript anchor is revision `{anchor}`, so the {kinds['No-go']} no-go results of Chapter 12, added later, have no Lean claim. The companion's `docs/statement-ledger.md` at release `{cfg['companion_release']}` gives the declarations behind each claim. Every theorem, proposition, lemma or corollary label in that coverage file exists at `{tex_rev}`.
+- Manuscript read at origin/master `{read_rev}`; the book's TeX there is as at `{tex_rev}`. {lean_source}
 """
     doc = re.sub(r"## Notes\n.*\Z", lambda m: notes, doc, flags=re.S)
     return doc
