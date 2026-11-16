@@ -52,14 +52,12 @@ of the spatial energy.
   Now $0 \le \mathsf{F} \le 1$, $\mathsf{F}' = \rho$ continuously, and its
   limits are zero and one. The derivative of $\rho(1-2\mathsf{F})$ is
   $\rho'(1-2\mathsf{F})-2\rho^2 \in L^1$. Its endpoint limits vanish.
+  Since $\rho'=2ff'$, dividing the integrated derivative identity by two gives
+  the cross term with a positive sign.
   Integrating on $[-R,R]$ and sending $R \to \infty$ gives
   \[
     \int_\R f'f(1-2\mathsf{F})=A .
   \]
-  The integral of the derivative of $\rho(1-2\mathsf F)$ is zero because its
-  limits vanish. Hence, $\int\rho'(1-2\mathsf F)=2\int\rho^2$. Since
-  $\rho'=2ff'$, division by two gives the preceding cross-term identity, with
-  its positive sign.
   The polynomial $P(y) = y-2y^2+(4/3)y^3$ has derivative $(1-2y)^2$. The chain
   rule and the endpoints of $\mathsf{F}$ give
   \[
@@ -121,9 +119,7 @@ Proposition~\ref{P:spatial-energy-map} for white noise.
     cA-b/2\le cA-\tfrac32A^2
     =c^2/6-\tfrac32(A-c/3)^2\le c^2/6 .
   \]
-  The profile's fourth-power integral is $\ell/3$, so choosing $\ell=c$ makes
-  $A=c/3$, the equality point in the energy square. Its gradient energy is
-  then $c^2/3$, giving $cA-b/2=c^2/6$. This uses covariance mass $c$ in the
+  The coefficient is covariance mass $c$ in the
   physical pairing, not a noise coefficient of size $c$.
   At $\ell = c > 0$ the profile attains $c^2/6$. These are full $H^1$ energy
   profiles; compact approximation equality is
