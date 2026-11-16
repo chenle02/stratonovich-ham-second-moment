@@ -416,3 +416,19 @@ The DOI and final links go into the video descriptions, which stay editable, so 
   - 75 markers individually equal to their map rows;
   - all 96 equal in aggregate;
   - the outside rows unmarked.
+
+### Lean-marker map: bounded review of P:mild-construction and the 41 "full statement" rows (2026-11-16; #16's pre-re-pin item, not blocking R under option A)
+- **Review.** Codex GPT-6.1-Sol, high effort, read-only. The run is review-complete, with verdict INCONCLUSIVE and medium confidence. Findings: none.
+- **P:mild-construction:** PASS (M2 present).
+- **The 41 rows**, each decided individually:
+  - 9 PASS, with every credited declaration read;
+  - 33 PARTIAL, with the paper wrapper and its key definitions read but not every helper claim.
+  - In every row the statements examined support the listed models exactly. The grade reflects incomplete reading of helper claims only.
+- **Disposition:** no repair, and the map stays at `aee543e8`. The residual risk is a helper claim stated in a model. It is covered by #22's module check, which matched every claim file against the register's module lists and checked the direct imports of every model-free full row.
+- **Evidence:** `private/lean-markers/review-2026-11-16-full/`.
+- **Marker candidate b74af3ef (option A, Appendix F words).** #22 checked it read-only.
+  - One wrong marker: L:spatial-fourier-bound is printed "full" in Appendix F but its marker says "narrower". The cause is a generator bug: cross-references inside scope text were parsed as rows.
+  - The fix (take only row-leading references) was sent to #24. With it, 0 mismatches.
+  - H:homog and L:compact-raw-profile are cross-references, not Appendix F rows, and stay unmarked.
+  - Every other check passed: 74 markers equal the data, 22 reserved slots are empty, and the outside and equation rows are unmarked.
+  - The recheck is pending on #24's regenerated SHA.
