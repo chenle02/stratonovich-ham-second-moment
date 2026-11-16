@@ -1,0 +1,509 @@
+{
+  "review_record_id": "RP048",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "1f719b57e3e495c1468549ae35fab55e6cbc1070",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_source_convergence.tex",
+  "source_binding_sha256": "62b0817c5075a1078b9b0c86c38d91a147b2be0c906c6570b055e658f52b60f2",
+  "public_report_sha256": "5f2cc08d99f09dc1dcfade11cd47c3c1cb547325a8f3816618faa9f059a6143c",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_PARTIAL_REQUIRED_PUBLIC_RECONSTRUCTION_ROOT_REVIEWS",
+  "requested_reread_complete": false,
+  "per_proof_reconstruction": {
+    "L:source-finite-comparison": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:source-gaussian-transfer": {
+      "status": "PARTIAL",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [
+        "Required general-Y basis-indistinguishability passage is not publicly performed: compare two basis constructions using their common actualY(h) rows on countably many dense Schwartz phases/rationaltimes, then operator boundedness and path continuity. NEW sourceLF130–131 supplies it; actual public transfer section does not."
+      ],
+      "limits": [
+        "General complexification and long-interval clauses are not separately expanded in this public target section; original-row completion is a supplied upstream input, and the explicitly missing two-basis comparison is the critical recorded limit.",
+        "The correct fixed-rho countable comparison in P:source-ordinary-response is CHECKED for that own result, not silently substituted as missing general-Y working."
+      ],
+      "report_notes": [
+        "R3"
+      ]
+    },
+    "L:source-spatial-heat": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    },
+    "L:source-retaining-isometry": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R2"
+      ]
+    },
+    "P:source-canonical-convergence": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:source-pointfield-regularity": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:source-ordinary-response": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:source-finite-comparison",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED — the two added sentences (positive-semidefinite covariance difference and its diagonalization; conditional mean ξ for ξ+Z given ξ) state precisely the facts that make the Jensen application legal."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 9,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "9310c286c8caecb43bd5bbaded2acc14e6941d206b69c6b8fdd3de94981979de",
+      "mathematical_check": "The report explicitly derives convexity of the finite Banach image/seminorm raised top>=1 and finite Gaussian moments. The positive covariance difference CI-Covxi is diagonalized to an independent centered Gaussian even when degenerate. Conditional mean plus Jensen compares the original vector to the CI covariance vector, which has lawsqrtC g; C0 is handled. This is a finite linear-image comparison only, not a nonlinear wave comparison or a changed coupling ofxi.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        21,
+        29
+      ],
+      "old_proof_lf": [
+        31,
+        41
+      ],
+      "old_statement_sha256": "9074791484f535e568b6cb85325f69b639f6750b191d19c5bb94d36bb660f385",
+      "old_proof_sha256": "39488e6292e9ab304c35e0c72e5f7692e0ce4a5ce0392ba65861bc299789cdbb",
+      "new_statement_lf": [
+        21,
+        29
+      ],
+      "new_proof_lf": [
+        31,
+        45
+      ],
+      "new_statement_sha256": "9074791484f535e568b6cb85325f69b639f6750b191d19c5bb94d36bb660f385",
+      "new_proof_sha256": "45d47d34ce22e01b7c7cc753969d67872b12cfa862faa8dbe4924ee8aa7a3867"
+    },
+    {
+      "proof_id": "P:source-gaussian-transfer",
+      "author_reconstruction_status": "PARTIAL",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED — the added quantification order (tail before head) matches the honest two-limit argument; the trace≥eigenvalue reason is correct for PSD finite matrices; independence of Y(f_j) is correctly not assumed anywhere."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 19,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "83aa6dbde9ef2968a7eaa070c00f1bf0549ec15bc49255820a961e022f6a8194",
+      "mathematical_check": "The report correctly reconstructs variance-null annihilation and L2 extension, correlated coordinate covariance<=CI, path finite-sum/tail comparison in the original separable path span, Gaussian compact-valued limits, both transfer bounds and fixed real-row identityY(P_N h)->Y(h). It gives the uniform residual tail chosen BEFORE the fixed head, bounds the head covariance by its trace s_N(n), and applies comparison/linearity to get stability at arbitrary relative rates. However it never compares TWO general-Y basis constructions on a countable dense phase/rational-time family or explicitly applies its later fixed-rho comparison to this target. NEW sourceLF130–131 does so. Under the every-original-step public contract, this required target conclusion remains PARTIAL despite nativeCOMPLETE. Root independently read these public/source sections and agreed this bounded coverage distinction; root/worker cross-application is not inserted as reviewer working. Long-interval and general sesquilinear clauses are not separately expanded in this section; the named original-row completion and linear construction remain valid inputs, so no additional source defect is inferred.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": true,
+      "old_statement_lf": [
+        48,
+        77
+      ],
+      "old_proof_lf": [
+        79,
+        131
+      ],
+      "old_statement_sha256": "9aa98994a383d57fd5f1d8e02a73c830379d184e98bcdd5801034d8ab4beeb54",
+      "old_proof_sha256": "97e363c6fa72912e28f0b5ff9242707b7259ed5dfc180859adae941858bb821c",
+      "new_statement_lf": [
+        52,
+        81
+      ],
+      "new_proof_lf": [
+        83,
+        159
+      ],
+      "new_statement_sha256": "9aa98994a383d57fd5f1d8e02a73c830379d184e98bcdd5801034d8ab4beeb54",
+      "new_proof_sha256": "29236d4e9166d8447be6e15336e5bd6020015e89e249d8b6abdcd907cbdbdfd5"
+    },
+    {
+      "proof_id": "L:source-spatial-heat",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED — 0 ≤ m_ε ≤ 1 and 0 ≤ 1−m_ε ≤ 1 are exactly the two contraction and positivity facts; the new text explicitly connects them to the displayed spectral norm."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 33,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "417e58635a41ff67e0dd56853767afd6166d45a403c7f6c2cd2966109ee5c7b8",
+      "mathematical_check": "The public proof uses the supplied spatial normalization, evenness and local compact-support bound to establish the separable null completion and Schwartz admission. It correctly derives positivity/selfadjointness and BOTH contraction bounds from the heat CONVOLUTION OPERATOR symbolm=exp(-epsilon|xi|^2/2), then strong convergence by dominated convergence/density. Its redundant equality p_hat_epsilon=exp(...) omits the unitaryc_d (R1), but the needed operator symbol and all subsequent point-feature normalization are correctly reconstructed elsewhere in this same report. No source correction is required.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        141,
+        154
+      ],
+      "old_proof_lf": [
+        156,
+        170
+      ],
+      "old_statement_sha256": "26aa138f3a8f28ebf650177bd74d8d301cfc831355ed7d5c122d4ddd5e76fb53",
+      "old_proof_sha256": "d190ff60fdbda67e746650ba9771126d007659c250bcb0e6ab713dbd82480d28",
+      "new_statement_lf": [
+        169,
+        182
+      ],
+      "new_proof_lf": [
+        184,
+        202
+      ],
+      "new_statement_sha256": "26aa138f3a8f28ebf650177bd74d8d301cfc831355ed7d5c122d4ddd5e76fb53",
+      "new_proof_sha256": "00fb4140b716a8f0079f289bdd252364db850ce5921cce2769a29da1197d2555"
+    },
+    {
+      "proof_id": "L:source-retaining-isometry",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED — the variance-sum check is the Pythagorean identity in 𝓖, correct because ΦH_W ⊥ (ΦH_W)^⊥ and the two processes are independent."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 44,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "b5c90e1ac845822ca8311be651fc4d171f44b99a43c206584ff942d2e8959790",
+      "mathematical_check": "The report computes the feature r integral explicitly to exp(-lambda|t-u|), then the positive Laplace measure to|t-u|^-a and the original spatial pairing. Its displayed bilinear formula incorrectly ends with||F||^2 for arbitraryF,G (R2); the correct bilinear kernel is otherwise explicit and specializingG=F gives the required norm isometry. Absolute finite-tensor exchanges, local covariance density and completion give the closed isometric range; pointwiseH_Gamma convergence plus almost-everywhere subsequence identifies the integral formula on smooth compact tests. Orthogonal projectionP and independent complement isonormalJ give the Pythagorean variance sum and EXACT originalW retention, not merely equal law, including the countable original-basis common event. Auxiliaryr does not create original negative-time noise.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        180,
+        194
+      ],
+      "old_proof_lf": [
+        196,
+        234
+      ],
+      "old_statement_sha256": "387eb9bf7d2bc7a62632b173281bbc4c59305d3aa6eecf96666144b7cecba743",
+      "old_proof_sha256": "c14e9800841fee831de84cff9cfbc09f6da0b4a60c6e2e52cba62003d1f10358",
+      "new_statement_lf": [
+        212,
+        226
+      ],
+      "new_proof_lf": [
+        228,
+        289
+      ],
+      "new_statement_sha256": "387eb9bf7d2bc7a62632b173281bbc4c59305d3aa6eecf96666144b7cecba743",
+      "new_proof_sha256": "1285e53f9fadce74c1eb397e9b2003addccf5ab05026f76fee356577a4d7f952"
+    },
+    {
+      "proof_id": "P:source-canonical-convergence",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED — the Fourier-factor bookkeeping ((2π)^d c_d²=1) is exactly the pinned normalization; the contraction-on-the-retained-range step and the separate-parameter vanishing step are correct; no independence is invoked in the residual variance bound."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 55,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "559b4e934b9cc990e415f233eb9ac3d65c3ae4bc4d43f622d88ad06a15bde8f0",
+      "mathematical_check": "The report reconstructs spatial distribution/heat pairing using the CORRECTc_d factors for both point heat tests and(2pi)^d c_d^2=1. Point-feature normK_eta(0)Gamma_2epsilon(0), commonlambda cutoffmin inverses=max eta inverse, r integration and sum of spatial widths produce the exact joint law, including singular/white covariances. Continuous bounded-on-compacts features admit Bochner test integration, explicitly equalQ_rho PhiF; boundedI gives the same-field L2 integral and indicator extension. Orthogonal lambda ranges split the FULL residual norm into omittedrange and retained heatresidual, yielding both variance<=originalnorm^2, without asserting full residual/source independence. Separate strong heat and Laplace convergence gives arbitrary rates and named Gaussian transfer yields path convergence; uniform moment/exponential bounds stay at fixedR/T and do not assert an uncountable-cutoff path event.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        263,
+        288
+      ],
+      "old_proof_lf": [
+        290,
+        362
+      ],
+      "old_statement_sha256": "e979b32a3c8b3fcbc8e552ea3ffc6d5f2652f9d122c9cc35ae3f8db42ec8e7ba",
+      "old_proof_sha256": "a909d47c0be7fccb84624475f817eae234f38569d59c50af255eb4cc0ba548e1",
+      "new_statement_lf": [
+        318,
+        343
+      ],
+      "new_proof_lf": [
+        345,
+        446
+      ],
+      "new_statement_sha256": "e979b32a3c8b3fcbc8e552ea3ffc6d5f2652f9d122c9cc35ae3f8db42ec8e7ba",
+      "new_proof_sha256": "cb48e77196d545d4e3e78b0f994840e71fccb0628a2b3ecca2c50b3d8047b495"
+    },
+    {
+      "proof_id": "L:source-pointfield-regularity",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED — the bounded-λ integrability sentence is exactly why the temporal extra λ factor is harmless at fixed cutoff; the max-moment bound ‖max_i|X_i|‖_{L^q}^q ≤ Σ_i E|X_i|^q needs no independence and is correct."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 70,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "f34726ba3c685ead6d65869aed653cc7b2a9ef94e63548f405a24f0815b439ae",
+      "mathematical_check": "The report differentiates spatial point features using finite tempered-spectral heat moments and next-moment domination. Finite-lambda1-exp(-lambda h)<=lambda h and spatial phase difference give the exact fixed-cutoff increment varianceC(|t-s|+|x-y|^2). Gaussian high moments, max<=sum moment bound and m=d+1 dyadic edge counts produce a summable weighted maximum and continuous modifications on countably many rectangles/multiindices. It explicitly identifies ACTUAL spatial derivatives through the feature fundamental theorem, boundedI/L2 integration, Riemann sums, rational segments and continuity. No spectral density or common cutoff-family event is assumed.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        366,
+        370
+      ],
+      "old_proof_lf": [
+        372,
+        421
+      ],
+      "old_statement_sha256": "5c97f850394d212843f64e360a12a6ed1b2d1be9edba60f2245944ba78308bc6",
+      "old_proof_sha256": "e0b7e8d4bab67467aba100a1ccc8e926c334071a58335873fc39bd1916d4256d",
+      "new_statement_lf": [
+        450,
+        454
+      ],
+      "new_proof_lf": [
+        456,
+        526
+      ],
+      "new_statement_sha256": "5c97f850394d212843f64e360a12a6ed1b2d1be9edba60f2245944ba78308bc6",
+      "new_proof_sha256": "ee855c2efb75654ce17a2f6ccad4cb3df73f494fa11a4295451ae50ae8fdc9fc"
+    },
+    {
+      "proof_id": "P:source-ordinary-response",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED — the references to E:variance-physical-adjoint/P:actual-wave-form and the L²→L¹ conversion record the correct justifications for approximations that were already used."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 81,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "e03c24df716127176a71c46b574c4c33539935465f2629f95c34ba2dbf979fcc",
+      "mathematical_check": "The report checks fixed-cutoff samplewise compact smooth spatial coefficients continuous in every derivative, strong free-group statewise integrals and gain estimates, obtaining operator-norm Lipschitz response without norm continuity/differentiability ofS. It reconstructs instantaneous physical duality using only spatial smoothness and explicitly preserves the complex conjugation convention. Common compact support andL2-time spatial supremum error implyL1 error byCS, so field/feature test integrals converge to the sameY_rho(h) covariance row. Finally it explicitly compares countable dense Schwartz phases and rationaltimes, then boundedness/path continuity, obtaining equality of the ordinary and transferred paths at alltimes on ONE event for fixedrho on the coupled space. This own correct comparison is not automatically counted as public proof of the unmentioned two-general-bases conclusion in the earlier transfer target.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        423,
+        432
+      ],
+      "old_proof_lf": [
+        434,
+        476
+      ],
+      "old_statement_sha256": "9098d451b6bfae585168c8c5eb35767448ced40dc17c0979db2702d4970ba079",
+      "old_proof_sha256": "57ee08a86b482d78ced0a96935b1ca207743287980d0447d8b716b61f27e2ad7",
+      "new_statement_lf": [
+        528,
+        537
+      ],
+      "new_proof_lf": [
+        539,
+        601
+      ],
+      "new_statement_sha256": "9098d451b6bfae585168c8c5eb35767448ced40dc17c0979db2702d4970ba079",
+      "new_proof_sha256": "99c1bbf8acf38dfd60cf86c3e5cb3ac7ca39d01ffe06b04ed0312a4d13e9a497"
+    }
+  ],
+  "mathematical_checks": [
+    "The report explicitly derives convexity of the finite Banach image/seminorm raised top>=1 and finite Gaussian moments. The positive covariance difference CI-Covxi is diagonalized to an independent centered Gaussian even when degenerate. Conditional mean plus Jensen compares the original vector to the CI covariance vector, which has lawsqrtC g; C0 is handled. This is a finite linear-image comparison only, not a nonlinear wave comparison or a changed coupling ofxi.",
+    "The report correctly reconstructs variance-null annihilation and L2 extension, correlated coordinate covariance<=CI, path finite-sum/tail comparison in the original separable path span, Gaussian compact-valued limits, both transfer bounds and fixed real-row identityY(P_N h)->Y(h). It gives the uniform residual tail chosen BEFORE the fixed head, bounds the head covariance by its trace s_N(n), and applies comparison/linearity to get stability at arbitrary relative rates. However it never compares TWO general-Y basis constructions on a countable dense phase/rational-time family or explicitly applies its later fixed-rho comparison to this target. NEW sourceLF130–131 does so. Under the every-original-step public contract, this required target conclusion remains PARTIAL despite nativeCOMPLETE. Root independently read these public/source sections and agreed this bounded coverage distinction; root/worker cross-application is not inserted as reviewer working. Long-interval and general sesquilinear clauses are not separately expanded in this section; the named original-row completion and linear construction remain valid inputs, so no additional source defect is inferred.",
+    "The public proof uses the supplied spatial normalization, evenness and local compact-support bound to establish the separable null completion and Schwartz admission. It correctly derives positivity/selfadjointness and BOTH contraction bounds from the heat CONVOLUTION OPERATOR symbolm=exp(-epsilon|xi|^2/2), then strong convergence by dominated convergence/density. Its redundant equality p_hat_epsilon=exp(...) omits the unitaryc_d (R1), but the needed operator symbol and all subsequent point-feature normalization are correctly reconstructed elsewhere in this same report. No source correction is required.",
+    "The report computes the feature r integral explicitly to exp(-lambda|t-u|), then the positive Laplace measure to|t-u|^-a and the original spatial pairing. Its displayed bilinear formula incorrectly ends with||F||^2 for arbitraryF,G (R2); the correct bilinear kernel is otherwise explicit and specializingG=F gives the required norm isometry. Absolute finite-tensor exchanges, local covariance density and completion give the closed isometric range; pointwiseH_Gamma convergence plus almost-everywhere subsequence identifies the integral formula on smooth compact tests. Orthogonal projectionP and independent complement isonormalJ give the Pythagorean variance sum and EXACT originalW retention, not merely equal law, including the countable original-basis common event. Auxiliaryr does not create original negative-time noise.",
+    "The report reconstructs spatial distribution/heat pairing using the CORRECTc_d factors for both point heat tests and(2pi)^d c_d^2=1. Point-feature normK_eta(0)Gamma_2epsilon(0), commonlambda cutoffmin inverses=max eta inverse, r integration and sum of spatial widths produce the exact joint law, including singular/white covariances. Continuous bounded-on-compacts features admit Bochner test integration, explicitly equalQ_rho PhiF; boundedI gives the same-field L2 integral and indicator extension. Orthogonal lambda ranges split the FULL residual norm into omittedrange and retained heatresidual, yielding both variance<=originalnorm^2, without asserting full residual/source independence. Separate strong heat and Laplace convergence gives arbitrary rates and named Gaussian transfer yields path convergence; uniform moment/exponential bounds stay at fixedR/T and do not assert an uncountable-cutoff path event.",
+    "The report differentiates spatial point features using finite tempered-spectral heat moments and next-moment domination. Finite-lambda1-exp(-lambda h)<=lambda h and spatial phase difference give the exact fixed-cutoff increment varianceC(|t-s|+|x-y|^2). Gaussian high moments, max<=sum moment bound and m=d+1 dyadic edge counts produce a summable weighted maximum and continuous modifications on countably many rectangles/multiindices. It explicitly identifies ACTUAL spatial derivatives through the feature fundamental theorem, boundedI/L2 integration, Riemann sums, rational segments and continuity. No spectral density or common cutoff-family event is assumed.",
+    "The report checks fixed-cutoff samplewise compact smooth spatial coefficients continuous in every derivative, strong free-group statewise integrals and gain estimates, obtaining operator-norm Lipschitz response without norm continuity/differentiability ofS. It reconstructs instantaneous physical duality using only spatial smoothness and explicitly preserves the complex conjugation convention. Common compact support andL2-time spatial supremum error implyL1 error byCS, so field/feature test integrals converge to the sameY_rho(h) covariance row. Finally it explicitly compares countable dense Schwartz phases and rationaltimes, then boundedness/path continuity, obtaining equality of the ordinary and transferred paths at alltimes on ONE event for fixedrho on the coupled space. This own correct comparison is not automatically counted as public proof of the unmentioned two-general-bases conclusion in the earlier transfer target."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "proof_id": "L:source-spatial-heat",
+      "classification": "report-only unitary heat density transform versus convolution symbol error",
+      "old": "p_hat_epsilon(xi)=exp(-epsilon|xi|^2/2)",
+      "new": "p_hat_epsilon(xi)=c_d exp(-epsilon|xi|^2/2); the convolution operatorC_epsilon has symbolc_d^-1 p_hat_epsilon=exp(-epsilon|xi|^2/2)",
+      "contrary_calculation": "Atxi0 unitary p_hat_epsilon(0)=c_d integral p_epsilon=c_d, not1. The report later correctly computes p_hat_epsilon(x-·)=c_d exp(-i xi.x)exp(-epsilon|xi|^2/2) and the two-factor cancellation.",
+      "disposition": "Raw report unchanged. Correct operator-symbol contraction proof and correct point-feature heat factors are publicly supplied, so this redundant transform typo is not a missing core or manuscript defect.",
+      "report_lf": 38
+    },
+    {
+      "id": "R2",
+      "proof_id": "L:source-retaining-isometry",
+      "classification": "report-only bilinear equality wrongly ended as a norm square",
+      "old": "<PhiF,PhiG> = temporal_cross * B_Gamma(f,g) = ||F||H_W^2 forF=τ⊗f,G=σ⊗g",
+      "new": "<PhiF,PhiG> = temporal_cross * B_Gamma(f,g) = <F,G>H_W; whenG=F this equals||F||H_W^2",
+      "contrary_calculation": "Take nonzeroF andG0. The bilinear left side and explicit temporal/spatial cross product are0, whereas||F||^2>0. The explicit kernel calculation is correct and specializingG=F yields the required isometry.",
+      "disposition": "Raw report unchanged. Source states the correct norm identity and public r/lambda/spatial calculations substantively reconstruct it; no source edit or required isometry premise missing.",
+      "report_lf": 49
+    },
+    {
+      "id": "R3",
+      "proof_id": "P:source-gaussian-transfer",
+      "classification": "missing required public reconstruction, source argument present",
+      "source_new_lf": [
+        130,
+        131
+      ],
+      "source_old_lf": [
+        112,
+        113
+      ],
+      "disposition": "Fixed-row identity is proved publicly but the section never compares two general-Y basis constructions via a countable dense Schwartz phase/rational-time set. The report later proves fixed-rho ordinary-response equality using this general type of argument, but does not explicitly instantiate it here. Do not silently insert that cross-application from root/worker knowledge; nativeCOMPLETE retained, author-sidePARTIAL.",
+      "report_lf": 26
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": true,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 18942,
+      "sha256": "5f2cc08d99f09dc1dcfade11cd47c3c1cb547325a8f3816618faa9f059a6143c"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 5352,
+      "sha256": "2d480147e5d2a9064e86d557b0975ce4aef644cfa0d4c220527cbd3ea4eff35a"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 10226,
+      "sha256": "cbf43a96bdcb46dc50b011831c12a980ee7378e2762e312255859fffa973028a"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 4178,
+      "sha256": "62b0817c5075a1078b9b0c86c38d91a147b2be0c906c6570b055e658f52b60f2"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 8641,
+      "sha256": "b4f95839cc13b6fa462fa5dd3736cd4a5e0be755ae656bffabb74c2099793cdb"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 5109,
+      "sha256": "4b5d660d8d7c98b3f7ca1dee1df5ca60e9fdf177908e4fd8078f6f2ed5942653"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 25085,
+      "sha256": "f212bad41254a78109e5802def45053c8bda53a416cda9f457513406304aaef4"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 31147,
+      "sha256": "67982a27f61f1df21ff15f13c668c1929ad514b23b55f48a19850e27c1832522"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-actual-driver-baseline.txt",
+      "bytes": 35818,
+      "sha256": "add3561f9a2e846f9992d91a10385d8b8e99406359eaabae640520366b184f0e"
+    },
+    {
+      "path": "inputs/context-wave-variance-baseline.txt",
+      "bytes": 24927,
+      "sha256": "66369d1bde2358f92e7edfb33f899bd96c2698a631e9ca0d9f330062ff55f8a6"
+    },
+    {
+      "path": "inputs/context-covariance-foundation-baseline.txt",
+      "bytes": 21173,
+      "sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020"
+    },
+    {
+      "path": "inputs/context-compact-gaussian-baseline.txt",
+      "bytes": 30608,
+      "sha256": "caf9e56a5b818f9e5daa02ac3423c354b95c515f1932d92170ec002b0fbaa84a"
+    },
+    {
+      "path": "POST-LAUNCH-SOURCE-CURRENCY.private.json",
+      "bytes": 730,
+      "sha256": "67ebf2c8f3c2ab55a7f6badc9a29b380437086dd046a62b4cb4afbca264c8b6c"
+    }
+  ],
+  "input_identity_checks": "All delivered source/context payload hashes and WHOLE_FILE pinned Git byte identities verified; every complete OLD/NEW statement/proof independently checked by LF/bytes/SHA. Complete target text read with baseline comparisons and genuine needed stated inputs, not merely delta QA.",
+  "source_currentness": {
+    "covered_launch_revision": "1f719b57e3e495c1468549ae35fab55e6cbc1070",
+    "status": "EXACT_LAUNCH_SOURCE_ONLY_PENDING_EDITORIAL_SUCCESSOR_NOT_COVERED",
+    "limit": "Covers only1f719b57 versuscdde. Future original-text editorial changes are prospectively held and not covered. Source binding, raw report and grade unchanged; no cancel/relaunch inferred.",
+    "future_editorial_changes_covered": false,
+    "future_successor_revision": null,
+    "source_currency_notice_observed": {
+      "schema": "prospective-source-hold-notice/1",
+      "record_id": "RP048",
+      "recorded_utc": "2026-11-16T14:11:29.474087+00:00",
+      "authority": "16 direct user instruction Leconfirmed3ebeb50b; root relay",
+      "original_authorized_source_revision": "1f719b57e3e495c1468549ae35fab55e6cbc1070",
+      "already_launched_under_then_current_authorization": true,
+      "hold_applies_to_future_edited_successor_calls": true,
+      "existing_run_input_source_and_report_facts_unchanged": true,
+      "status": "FUTURE_ORIGINAL_TEXT_EDITORIAL_COMMIT_AND16VERIFICATION_PENDING_NOT_COVERED",
+      "future_successor_revision": null,
+      "future_editorial_changes_covered": false,
+      "cancel_or_relaunch": false,
+      "other_exact_rolling_scopes_remain_allowed": true
+    }
+  },
+  "read_limits": [
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority",
+  "root_reviewed_specific_coverage_point": "Root separately read the public transfer/ordinary-response sections and full source transfer proof and agreed PARTIAL for the omitted general-Y two-basis comparison; this does not attribute every-line adjudication to root."
+}

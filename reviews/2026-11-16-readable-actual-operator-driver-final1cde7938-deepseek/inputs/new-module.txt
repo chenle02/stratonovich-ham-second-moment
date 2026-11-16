@@ -1,0 +1,833 @@
+\section{The Gaussian operator path}
+\label{S:actual-operator-driver}
+
+We now construct the integrated operator path in the interaction representation
+on the same probability space as the original noise. Retain
+Hypothesis~\ref{H:homog}, set $a = \alpha_0$, $s = 1/2$ and $E_r =
+H^r(\R^d)\times H^{r-1}(\R^d)$, and initially use real phases $E = E_s$. Let
+$H_W$ be the real completion of $C_c^\infty((0,\infty)\times\R^d)$ modulo its
+covariance-null tests. The given isonormal process on it is $W$. If $\Gamma =
+0$, the operator path and all covariance forms are zero, so the conclusions
+below hold directly. Assume $\Gamma \ne 0$ in the construction.
+
+Choose and fix $R,T > 0$ and a real even nonnegative $\zeta \in
+C_c^\infty(\R^d)$ equal to one on $B_1$ and zero off $B_2$. The physical mask is
+$\zeta_R(x) = \zeta(x/R)$. The free group $S(t)$ and forms $\ell_R$ are those of
+Section~\ref{S:wave-variance}; both phase entries and the continuous
+zero-frequency sine quotient are retained. Fix parameters
+\begin{equation}\label{E:driver-parameters}
+  \LeanEqMarker{E:driver-parameters}
+  0<\gamma<\min\left(\frac12,\frac{2-\alpha}{2}\right),\qquad
+  \frac12<\theta<\beta<\min\left(1-\frac a2,
+  \frac{3-a-\alpha}{2}\right).
+\end{equation}
+The strict intervals are nonempty. The $C^\theta$ norm is the supremum norm plus
+the $\theta$-H\"older seminorm.
+
+\begin{proposition}[Compact operator path on the original noise space]\label{P:actual-operator-driver}
+  There is an orthonormal basis $\{f_j\}$ of $H_W$ with real smooth compact test
+  representatives, independent standard real Gaussians $g_j = W(f_j)$, and
+  deterministic operators $A_j(0,t)$ on $E$ such that
+  \begin{equation}\label{E:driver-path-convergence}
+    X_N(t):=\sum_{j\le N}g_jA_j(0,t)\longrightarrow M_R(t)
+    \quad\text{in }L^p(\Omega;C^\theta([0,T];\mathcal{B}(E)))
+  \end{equation}
+  for every finite $p \ge 1$. The limit is a centered Gaussian path on the
+  original probability space, starts at zero, and has compact values at every
+  time on one probability-one path set. For each fixed real Schwartz pair $z,w$
+  and $t \in [0,T]$,
+  \begin{equation}\label{E:driver-raw-row}
+    \langle M_R(t)z,w\rangle_E=\ell_R((0,t);z,w)
+    \quad\text{in }L^2(\Omega).
+  \end{equation}
+  For long intervals, use the completed covariance test, equivalently the
+  additive unit-interval construction justified below. Different compact smooth
+  test bases give indistinguishable paths on the same $W$. For constants $C,c >
+  0$ depending on the fixed data but not the basis or $p$,
+  \begin{equation}\label{E:driver-gaussian-norm}
+    (\E\|M_R\|_{C^\theta}^p)^{1/p}\le C\sqrt p,\qquad
+    \E\exp(c\|M_R\|_{C^\theta}^2)<\infty.
+  \end{equation}
+  Its complexification has the corresponding sesquilinear covariance identity.
+  Fixed-interval Schatten moments hold at the admissible even indices
+  in~\eqref{E:driver-fixed-schatten}. Arbitrary $p$ above refers to
+  $\mathcal{B}(E)$, not arbitrary Schatten indices or a Schatten-valued path.
+\end{proposition}
+
+\subsection{A test basis and explicit covariance coefficients}
+
+\begin{lemma}[Basis in the prescribed quotient]\label{L:driver-noise-basis}
+  The nonzero space $H_W$ is separable and infinite-dimensional. It has a real
+  orthonormal basis with compact smooth representatives, whose evaluations by
+  $W$ are independent standard real Gaussians.
+\end{lemma}
+
+\begin{proof}
+  We first obtain a countable dense collection of tests in the prescribed
+  covariance norm. We then show that the quotient is infinite-dimensional and
+  apply Gram--Schmidt within that quotient.
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove separability of the test completion.
+  For tests supported in $[0,L]\times K$, with $K$ compact, the physical
+  covariance and the temporal Schur bound give the absolute estimate
+  \begin{equation}\label{E:driver-test-continuity}
+    |\langle F,G\rangle_{H_W}|
+    \le |K|\Gamma(K-K)\frac{2L^{1-a}}{1-a}
+    \|\|F(t)\|_\infty\|_{L^2(0,L)}
+    \|\|G(t)\|_\infty\|_{L^2(0,L)}.
+  \end{equation}
+  The spatial covariance is bounded by the product of the two spatial supremum
+  norms, the volume $|K|$ and the mass $\Gamma(K-K)$. The temporal Schur
+  estimate then bounds the integral of this product by the two $L^2$ time
+  norms. Thus, uniform approximation on a fixed box implies approximation in
+  the covariance seminorm.
+  Only spatial differences in $K-K$ contribute. On each rational compact box
+  inside positive time, rational step approximations followed by compact smooth
+  mollifiers at rational scales give a countable uniformly dense test
+  collection, supported in a fixed slightly larger box. The estimate proves
+  noise-norm approximation. The union over increasing boxes is dense in the test
+  completion. This proves separability without assuming the covariance form is
+  injective.
+
+  \medskip
+  \noindent\textit{Step 2.~}We show that infinitely many temporal tests
+  survive the quotient.
+  Choose $L \ge 1$ with $0 < \Gamma(B_L) < \infty$ and nonnegative compact
+  smooth $q \ge 1$ on $B_{2L+1}$. Then
+  \[
+    Q_{\rm sp}:=\int\Gamma(\ud y)\int q(x)q(x-y)\ud x
+    \ge |B_{L+1}|\Gamma(B_L)>0,
+  \]
+  and the compact-support estimate makes it finite. For every real compact
+  smooth positive-time $\tau$, the tensor identity is
+  \[
+    \|\tau\otimes q\|_{H_W}^2=Q_{\rm sp}\|\tau\|_a^2.
+  \]
+  For $y \in B_L$ and $x \in B_{L+1}$, both $x$ and $x-y$ lie in $B_{2L+1}$.
+  Each factor in the integrand is therefore at least one on this region.
+  Here the temporal norm is computed on any finite interval containing the
+  support of $\tau$. It is strictly positive for signed nonzero $\tau$. Indeed,
+  zero-extend this deterministic test and use the positive Laplace factorization
+  from Lemma~\ref{L:masked-time-completion} to write
+  \begin{align*}
+    \|\tau\|_a^2
+    &=\frac1{\Gamma_E(a)}\int_0^\infty\lambda^{a-1}
+    E_\lambda(\tau)\ud\lambda,\\
+    E_\lambda(\tau)
+    &=\int_\R 2\lambda\left|\int_r^\infty
+    e^{-\lambda(t-r)}\tau(t)\ud t\right|^2\ud r.
+  \end{align*}
+  Signed exchanges are absolutely integrable on the test support, by the
+  temporal Schur estimate. If the norm vanished, some $\lambda > 0$ would have
+  $E_\lambda = 0$. Its inner integral $v(r)$ is continuous and satisfies $v' =
+  \lambda v-\tau$. Vanishing almost everywhere makes it identically zero and
+  forces the derivative $v'$ to vanish as well. The identity $v' = \lambda
+  v-\tau$ then
+  forces $\tau = 0$. Thus, infinitely many linearly independent compact time
+  bumps inject into $H_W$ after multiplication by $q$.
+
+  \medskip
+  \noindent\textit{Step 3.~}We construct the basis and its Gaussian
+  coordinates.
+  Apply Gram--Schmidt to a countable dense real test collection, discarding zero
+  residuals in the given null quotient. Infinitude gives an infinite basis; each
+  representative is a finite linear combination of compact smooth tests. The
+  isonormal process depends only on the quotient class, so a zero residual
+  really is a zero noise variable. The surviving normalized vectors have
+  covariance equal to their Hilbert inner product. Thus, the
+  isonormal identity gives $\E g_jg_k = \delta_{jk}$. Joint Gaussian
+  characteristic functions then factor, giving independence and unit variances.
+  No physical null direction is removed beyond the prescribed quotient, and no
+  $H_W$-valued white Gaussian vector is used. This proves
+  Lemma~\ref{L:driver-noise-basis}.
+\end{proof}
+
+The operator-norm topology is essential here: in dimensions two and three,
+No-go~\ref{P:nogo-21} rules out a compatible square-integrable
+Hilbert--Schmidt realization on a same-index Sobolev phase pair,
+for suitable coefficient masks and a sufficiently large observation cutoff.
+
+
+\begin{lemma}[Covariance coefficients]\label{L:driver-covariance-coefficients}
+  For each basis representative put
+  \begin{equation}\label{E:driver-covariance-coefficient}
+    H_{j,R}(t,x)=\zeta_R(x)\int_{u>0}|t-u|^{-a}
+    \int\Gamma(\ud y)f_j(u,x-y)\ud u.
+  \end{equation}
+  These functions are real smooth on finite time-space compacts, supported
+  spatially in $B_{2R}$, with bounded derivatives there. For smooth compact real
+  positive-time $F$, and also for the admitted wave tests
+  of~\eqref{E:variance-actual-form},
+  \begin{equation}\label{E:driver-literal-covariance}
+    \E[W_{\mathbb{C}}(\zeta_RF)g_j]
+    =\int H_{j,R}(t,x)F(t,x)\ud t\ud x.
+  \end{equation}
+  The coefficient on $t \ge 0$ depends only on the $H_W$ class of $f_j$.
+\end{lemma}
+
+\begin{proof}
+  We move derivatives onto the smooth basis test to avoid differentiating the
+  singular covariance kernel. We then prove the covariance identity by
+  approximation and show that the coefficient depends only on the noise class.
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove smoothness of the deterministic
+  coefficient.
+  Extend $f_j$ smoothly by zero in time and substitute $v = t-u$. The unmasked
+  expression is $\int_\R |v|^{-a}\int\Gamma(\ud y)f_j(t-v,x-y)\ud v$. On each
+  compact $(t,x)$ set, the integrand involves only bounded $v$ and a common
+  compact set of $y$. Local Radon mass and local integrability of $|v|^{-a}$
+  provide an integrable majorant for each derivative of the test on these
+  fixed sets. The singular kernel is left unchanged under differentiation.
+  Thus, every mixed derivative can move onto the smooth test. Dominated
+  integration proves smoothness and the derivative bounds. Multiplication by
+  $\zeta_R$ gives the stated support. Zero extension is only of a deterministic
+  test; no negative-time noise is introduced.
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the coefficient for tests and their
+  limits.
+  The physical covariance formula and absolute Fubini give
+  \eqref{E:driver-literal-covariance} first for real compact tests. The compact
+  difference set in $\Gamma$ and integrable temporal singularity justify the
+  exchange. For wave tests use the common-support original approximations of
+  Proposition~\ref{P:actual-wave-form}, converging in $L^2$ time in the spatial
+  supremum norm after masking. The left side converges by noise Cauchy--Schwarz
+  and the right side by the coefficient's boundedness on that support. Real
+  and
+  imaginary parts are treated separately because the original noise is real.
+  Combining the two identities gives the complex evaluation defined in the
+  preceding section. If two representatives give the same
+  class, their Gaussian difference is zero. Testing the covariance identity
+  against every compact smooth $F$ makes the difference of their masked
+  coefficients zero as a distribution for $t > 0$. Smoothness, then continuity
+  at zero, proves the representative assertion on $t \ge 0$. This proves
+  Lemma~\ref{L:driver-covariance-coefficients}.
+\end{proof}
+
+\subsection{Gain, adjoints and localization}
+
+\begin{lemma}[Deterministic coefficient operators]\label{L:driver-gain-localization}
+  For $I \subset [0,T]$, the statewise integral
+  \begin{equation}\label{E:driver-coefficient-operator}
+    A_j(I)z=\int_I S(-t)B(H_{j,R}(t))S(t)z\ud t
+  \end{equation}
+  satisfies, for every real $r$,
+  \begin{equation}\label{E:driver-gain-one}
+    \|A_j(I)\|_{\mathcal{B}(E_r,E_{r+1})}
+    \le C_{j,r,R,T}|I|.
+  \end{equation}
+  Its $E_s$ adjoint has the gain $E_{2s-r-1} \to E_{2s-r}$, so both operators
+  act from $E_{s-\gamma}$ to $E$. Choose real compact smooth $\chi = 1$ on
+  $B_{2R+T+1}$. On every $E_r$,
+  \begin{equation}\label{E:driver-actual-localization}
+    D_\chi A_j(I)=A_j(I)=A_j(I)D_\chi.
+  \end{equation}
+  For each fixed Schwartz pair,
+  \begin{equation}\label{E:driver-covariance-row}
+    \E[g_j\ell_R(I;z,w)]=\langle A_j(I)z,w\rangle_E.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We establish the gain in Sobolev order and its adjoint version first. Finite
+  propagation then gives both localization identities. Finally, the physical
+  pairing identifies the Gaussian coefficient of each row.
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove the gain and the adjoint gain.
+  The full massless wave is strongly continuous and bounded on every $E_r$ on
+  finite time intervals. Its normalized off-diagonal Fourier entries have sizes
+  at most $C_T$ and one, respectively; continuity and domination prove the
+  strong assertion. Multiplication by $H_{j,R}(t)$ is bounded on every $H^r$,
+  continuously in $t$, by weighted Fourier convolution and its compact smooth
+  derivative bounds. Hence, $B(H_{j,R}(t)):E_r \to E_{r+1}$ is bounded: its
+  second entry is a multiplier of the displacement in $H^r$. The integrand
+  in~\eqref{E:driver-coefficient-operator} is strongly continuous with values in
+  $E_{r+1}$ for each input in $E_r$, and uniformly bounded in that operator
+  norm. Statewise Bochner integration proves~\eqref{E:driver-gain-one},
+  including the Lipschitz operator-norm primitive $A_j(0,t)$. Norm continuity of
+  $S(t)$ is not needed.
+
+  Under the $E_s$ pairing, the dual of $E_r$ is isometrically $E_{2s-r}$,
+  directly by the two Bessel weights. Dualizing the bound with a gain of one
+  derivative therefore gives the asserted adjoint gain. It agrees on Schwartz
+  phases with the bounded $E_s$ adjoint. Since $\gamma < 1$, gain one at every
+  index implies the two stated maps from $E_{s-\gamma}$ to $E$.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We prove both localization identities by finite
+  propagation.
+  For smooth data the free-wave energy on a shrinking ball has nonpositive
+  boundary flux: $v\partial_nu-(v^2+|\nabla u|^2)/2 \le 0$. Vanishing initial
+  displacement and velocity give zero velocity and gradient in the cone;
+  integration of velocity from the zero displacement gives zero displacement
+  there as well. Time reversal gives the backward assertion. Thus, both entries
+  of $S(\pm t)$ enlarge supports by at most $|t|$. Density and testing against
+  compact smooth functions extend this support assertion to Sobolev phases. In
+  particular, for input $(1-D_\chi)z$, approximate $z$ by Schwartz phases and
+  retain the factor $1-D_\chi$; the approximants vanish on $B_{2R+T+1}$. Their
+  free displacement vanishes on $B_{2R}$ throughout $[0,T]$, and the same is
+  true in the distributional limit. They contribute nothing to the integral. Its
+  output is supported in $B_{2R+T}$, by the support of $H_{j,R}$ and backward
+  finite propagation. Since $\chi = 1$ on a neighborhood of this ball, both
+  identities in~\eqref{E:driver-actual-localization} follow. This uses both
+  entries, not a scalar restart or a positivity theorem.
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify the covariance row.
+  Finally, apply the physical Sobolev pairing
+  \eqref{E:variance-physical-adjoint} and~\eqref{E:driver-literal-covariance} to
+  the state integral. They give \eqref{E:driver-covariance-row}.
+  In~\eqref{E:driver-covariance-coefficient}, the mask is after convolution;
+  replacing it by a mask inside $\Gamma*f_j$ would change this identity. This
+  proves Lemma~\ref{L:driver-gain-localization}.
+\end{proof}
+
+\subsection{Finite variances and first Wiener chaos tails}
+
+Put $J_0(u,v) = (\Lambda^{1/2}u,\Lambda^{-1/2}v)$, $H_0 = L^2(\R^d;\R^2)$, $a_j
+= J_0A_j(I)J_0^{-1}$ and $P_\chi = J_0D_\chi J_0^{-1}$. The operator $D_\gamma =
+\operatorname{diag}(\Lambda^{-\gamma},\Lambda^{-\gamma})$ acts on these physical
+coordinates. Its two compact envelopes $B_{\rm out},B_{\rm in}$ are those of
+Proposition~\ref{P:compact-two-envelopes}, after complexification when Schatten
+norms are used. For $I \subset [0,T]$ with $0 < h = |I| \le 1$, set
+\begin{equation}\label{E:driver-short-variance-budget}
+  b_I=C_T h^{2-a}B_\alpha(h),
+\end{equation}
+where $C_T$ is the uniform-in-$R$ constant in
+Proposition~\ref{P:wave-two-variances}.
+
+\begin{lemma}[Both variances and their tails]\label{L:driver-actual-variances}
+  For every $N$,
+  \begin{equation}\label{E:driver-two-variances}
+    V_{{\rm out},N}:=\sum_{j\le N}a_ja_j^*\le b_ID_\gamma^2,
+    \qquad V_{{\rm in},N}:=\sum_{j\le N}a_j^*a_j\le b_ID_\gamma^2.
+  \end{equation}
+  The finite families satisfy both localizations by $P_\chi$. There are bounded
+  positive limits $V_{{\rm out},\infty},V_{{\rm in},\infty}$ with positive tails
+  $T_{{\rm out},N},T_{{\rm in},N} \to 0$ strongly, and
+  \begin{equation}\label{E:driver-compact-tail-envelopes}
+    T_{{\rm out},N}\le b_IB_{\rm out},\qquad
+    T_{{\rm in},N}\le b_IB_{\rm in}.
+  \end{equation}
+  For each fixed $z \in E_{s-\gamma}$, the real column maps satisfy
+  \begin{equation}\label{E:driver-column-expansions}
+    m_{R,I}(z)=\sum_jg_jA_j(I)z,\qquad
+    n_{R,I}(z)=\sum_jg_jA_j(I)^{*,E}z
+    \quad\text{in }L^2(\Omega;E).
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We first compare finite noise projections with the original covariance
+  forms. Summing over a phase basis gives the two variances. We then identify
+  the column series and use their positive tails to obtain compact envelopes.
+
+  \medskip
+  \noindent\textit{Step 1.~}We project scalar rows onto the noise basis.
+  By~\eqref{E:driver-covariance-row}, for real Schwartz $z,w$,
+  \[
+    \langle X_N(I)z,w\rangle_E
+    =\sum_{j\le N}g_j\E[g_j\ell_R(I;z,w)]
+    =\mathcal{P}_N\ell_R(I;z,w),
+  \]
+  where $\mathcal{P}_N$ is the orthogonal projection in $L^2(\Omega)$ onto the
+  span of $g_1,\ldots,g_N$. In particular,
+  \[
+    \sum_{j\le N}|\langle A_j(I)z,w\rangle_E|^2
+    =\E|\langle X_N(I)z,w\rangle_E|^2
+    \le\E|\ell_R(I;z,w)|^2.
+  \]
+  The variables $g_j$ are orthonormal in $L^2(\Omega)$. Thus, the squared norm
+  of this finite orthogonal projection is the sum of the squared coefficients
+  and cannot exceed the squared norm of the original row. This is the
+  contraction used in both directions below.
+  These are projections onto the noise-test basis, not source regularizations.
+  The two variance bounds of Proposition~\ref{P:wave-two-variances}, with the
+  mean-square columns of Proposition~\ref{P:wave-square-columns}, apply to these
+  same covariance forms and the bound~\eqref{E:driver-short-variance-budget}.
+
+  \medskip
+  \noindent\textit{Step 2.~}We sum the row bounds in both phase directions.
+  Choose a real Schwartz orthonormal basis $\{e_k\}$ of $E$. Fix real Schwartz
+  $w$. For every finite phase truncation $K$,
+  \[
+    \begin{split}
+      \sum_{k\le K}\sum_{j\le N}
+      |\langle A_j(I)e_k,w\rangle_E|^2
+      &=\sum_{k\le K}\E|\langle X_N(I)e_k,w\rangle_E|^2\\
+      &\le\sum_{k\le K}\E|\ell_R(I;e_k,w)|^2
+      \le b_I\|w\|_{E_{s-\gamma}}^2,
+    \end{split}
+  \]
+  by~\eqref{E:wave-input-variance}. Let $K \to \infty$. Parseval in the phase
+  space and nonnegative monotone convergence, with $N$ still finite, give
+  \[
+    \sum_{j\le N}\|A_j(I)^{*,E}w\|_E^2
+    =\E\|X_N(I)^{*,E}w\|_E^2
+    \le b_I\|w\|_{E_{s-\gamma}}^2.
+  \]
+  Conversely, for fixed real Schwartz $z$, use \eqref{E:wave-output-variance}
+  with the output basis varying:
+  \[
+    \begin{split}
+      \sum_{k\le K}\sum_{j\le N}
+      |\langle A_j(I)z,e_k\rangle_E|^2
+      &=\sum_{k\le K}\E|\langle X_N(I)z,e_k\rangle_E|^2\\
+      &\le\sum_{k\le K}\E|\ell_R(I;z,e_k)|^2
+      \le b_I\|z\|_{E_{s-\gamma}}^2.
+    \end{split}
+  \]
+  The same phase Parseval limit gives
+  \[
+    \sum_{j\le N}\|A_j(I)z\|_E^2
+    =\E\|X_N(I)z\|_E^2
+    \le b_I\|z\|_{E_{s-\gamma}}^2.
+  \]
+  Thus, both directions use their respective Hilbert-Bessel bounds; neither
+  follows from retaining only one variance.
+
+  \medskip
+  \noindent\textit{Step 3.~}We extend the finite bounds to the weaker input
+  space.
+  These inequalities extend at each finite $N$ to the full $E_{s-\gamma}$ input
+  space. Indeed, Lemma~\ref{L:driver-gain-localization} gives $A_j:E_{s-\gamma}
+  \to E_{s+1-\gamma} \subset E$. Its adjoint gain, at $r = s+\gamma-1$, gives
+  the same map for $A_j^{*,E}$. The inclusion holds since $\gamma < 1$.
+  Approximate the input by Schwartz phases and pass each of the finitely many
+  operator terms to the limit. The resulting constant is still $b_I$,
+  independent of $N$; individual $j$-dependent gain constants were not summed.
+  Restricting to $E$ and using $\|z\|_{E_{s-\gamma}} = \|D_\gamma J_0z\|_{H_0}$
+  gives \eqref{E:driver-two-variances} as two operator quadratic inequalities.
+  In physical coordinates, the sum of squared adjoint norms is the quadratic
+  form of $\sum_{j\le N}a_ja_j^*$, and the sum of squared direct norms is that
+  of $\sum_{j\le N}a_j^*a_j$. The weaker input norm is the quadratic form of
+  $D_\gamma^2$. This converts the two scalar inequalities into the displayed
+  operator bounds.
+  Both localizations follow from~\eqref{E:driver-actual-localization}. No
+  self-adjointness or projection property of $P_\chi$ is assumed.
+
+  \medskip
+  \noindent\textit{Step 4.~}We identify the first-chaos expansions of the
+  columns.
+  The coordinates of $m_{R,I}(z)$, for Schwartz $z$, are the original covariance
+  forms $\ell_R(I;z,e_k)$ and belong to the closed first Wiener chaos $W(H_W)$.
+  Their coefficients against $g_j$ are $\langle A_jz,e_k\rangle_E$. Parseval in
+  that chaos, followed by Parseval in $E$ and positive Tonelli, gives
+  \[
+    \sum_j\|A_jz\|_E^2=\E\|m_{R,I}(z)\|_E^2,
+    \qquad m_{R,I}(z)=\sum_jg_jA_jz\quad\text{in }L^2(\Omega;E).
+  \]
+  For each phase coordinate, completeness of the noise basis gives convergence
+  in the scalar first chaos. Summing the squared coefficient tails over the
+  phase basis gives the vector-valued mean-square error. Positive Tonelli
+  permits this summation, and the finite total column variance forces the
+  tails to zero.
+  The same argument for the adjoint column gives the other expansion. Membership
+  in this first chaos comes from linear noise tests, not merely Gaussianity. To
+  extend to a fixed $E_{s-\gamma}$ input, approximate by Schwartz phases. The
+  finite inequalities extend to that space by the gain bounds and have a
+  constant uniform in $N$. Apply them to the input difference, then use the
+  Schwartz expansion and continuity of $m,n$. This
+  proves~\eqref{E:driver-column-expansions} on the full claimed input domain.
+
+  \medskip
+  \noindent\textit{Step 5.~}We pass to positive variance limits and their
+  compact envelopes.
+  The convergent positive quadratic sums, restricted to $E$ and transported by
+  $J_0$, define the bounded positive operators $V_{\cdot,\infty}$ by
+  polarization and Riesz. They retain the bounds $b_ID_\gamma^2$. Their tails
+  have quadratic forms tending to zero. Since they are uniformly bounded and
+  positive, $\|T_Nv\|^2 \le \|T_N\|\langle T_Nv,v\rangle \to 0$. Passing to the
+  limit in the finite localization identities gives
+  \[
+    V_{{\rm out},\infty}=P_\chi V_{{\rm out},\infty}P_\chi^*,\qquad
+    V_{{\rm in},\infty}=P_\chi^*V_{{\rm in},\infty}P_\chi,
+  \]
+  and the same identities for their tails. Positive congruence applied to $T_N
+  \le b_ID_\gamma^2$ proves~\eqref{E:driver-compact-tail-envelopes}.
+
+  Complexification preserves these statements and constants. The Hilbert norms
+  split into real and imaginary squared norms; real operators extend
+  isometrically. A real orthonormal basis complexifies to a complex orthonormal
+  basis, preserving singular values and multiplicities. The complex column maps
+  have the same bounds and sesquilinear row identities. This proves
+  Lemma~\ref{L:driver-actual-variances}.
+\end{proof}
+
+Lemma~\ref{L:driver-actual-variances} gives tails
+$T_{{\rm out},N},T_{{\rm in},N}$ that tend to zero only strongly. They lie
+below the compact envelopes in~\eqref{E:driver-compact-tail-envelopes}. We
+now use this compact domination to improve the mode of convergence.
+
+\begin{lemma}[Compact domination of positive tails]\label{L:driver-dominated-tails}
+  If $0 \le T_N \le B$, with positive compact $B \in S_m$, $m \ge 1$, and $T_N
+  \to 0$ weakly, then
+  \begin{equation}\label{E:driver-trace-tails}
+    \|T_N\|\longrightarrow0,\qquad \operatorname{Tr}T_N^m\longrightarrow0.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  Choose a finite spectral projection $Q$ of $B$ with $\|(1-Q)B(1-Q)\| <
+  \epsilon$. Positive quadratic Cauchy--Schwarz gives, for unit $x$,
+  \[
+    \langle T_Nx,x\rangle
+    \le2\langle T_NQx,Qx\rangle
+    +2\langle T_N(1-Q)x,(1-Q)x\rangle
+    \le2\|QT_NQ\|+2\epsilon.
+  \]
+  Weak convergence makes the finite-dimensional matrix $QT_NQ$ converge in norm
+  to zero. Letting $\epsilon\downarrow0$ proves norm convergence.
+  Lemma~\ref{L:compact-positive-order} gives $\lambda_j(T_N) \le \lambda_j(B)$,
+  while each $\lambda_j(T_N) \to 0$ by norm convergence. Dominated summation of
+  $\lambda_j(B)^m$ proves the trace limit. No order comparison of the operator
+  powers is used. This proves Lemma~\ref{L:driver-dominated-tails}.
+\end{proof}
+
+Trace powers of variances must still be turned into moments of Gaussian sums.
+Proposition~\ref{P:finite-gaussian-matrix} keeps the average of the two trace
+powers, but only for matrices. Corollary~\ref{C:finite-gaussian-operators}
+bounds compact sums only through the envelope norm $\|K_{\rm out}\|_{S_p}$.
+
+\begin{lemma}[Retained finite Gaussian variance powers]\label{L:driver-gaussian-tail-average}
+  Let $Z_\ell$ be finitely many compact operators whose two variances $V_{\rm
+  out},V_{\rm in}$ belong to $S_{q/2}$, for an even $q \ge 2$. With independent
+  standard real $g_\ell$,
+  \begin{equation}\label{E:driver-retained-gaussian-average}
+    \E\left\|\sum_\ell g_\ell Z_\ell\right\|_{S_q}^q
+    \le(q-1)^{q/2}\frac{\operatorname{Tr}V_{\rm out}^{q/2}
+    +\operatorname{Tr}V_{\rm in}^{q/2}}2.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We retain the two variance trace powers while compressing to finite
+  matrices. Compactness then allows passage to the original finite Gaussian
+  sum, using Fatou twice.
+
+  \medskip
+  \noindent\textit{Step 1.~}We apply the matrix estimate to the compressed
+  sum.
+  Compress by finite-rank orthogonal $Q_k \to I$ strongly. The compressed output
+  variance is at most $Q_kV_{\rm out}Q_k$, since their difference is $\sum_\ell
+  Q_kZ_\ell(1-Q_k)Z_\ell^*Q_k \ge 0$; the input inequality is the same with
+  adjoints interchanged. Positive-order and compression max-min compare their
+  trace powers with the uncompressed ones.
+  Apply
+  Proposition~\ref{P:finite-gaussian-matrix} on the finite range, retaining the
+  average. For each finite Gaussian coordinate vector, compactness gives
+  operator-norm convergence of the compressed sum to the original sum.
+
+  \medskip
+  \noindent\textit{Step 2.~}We pass to the uncompressed sum.
+  The singular-value norm-Lipschitz argument in the proof of
+  Corollary~\ref{C:finite-gaussian-operators}, then Fatou over singular values
+  and probability, proves the displayed bound. The extended norm is measurable
+  by the same finite-coordinate continuity argument. No infinite Gaussian series
+  or $S_q$-Bochner convergence is assumed. This proves
+  Lemma~\ref{L:driver-gaussian-tail-average}.
+\end{proof}
+
+\subsection{Interval limits on the given probability space}
+
+The two previous lemmas control tails of the series $\sum_jg_jA_j(I)$ through
+its two variances. We now fix one interval and use them to pass to the limit in
+$N$, without leaving the original probability space.
+
+\LeanMarker{L:driver-interval-limit}
+\begin{lemma}[Fixed-interval operator construction]\label{L:driver-interval-limit}
+  For each fixed short interval $I$, $X_N(I)$ converges in every finite
+  $L^p(\Omega;\mathcal{B}(E))$ to a compact-valued centered Gaussian operator
+  $X_R(I)$ on the original probability space. For every admissible even $q \ge
+  2$, $q\gamma > d$,
+  \begin{equation}\label{E:driver-fixed-schatten}
+    (\E\|X_R(I)\|_{S_q}^q)^{1/q}
+    \le\sqrt{q-1}\sqrt{C_T}\,h^{1-a/2}B_\alpha(h)^{1/2}
+    \|K_\chi\|_{S_q},\qquad K_\chi=P_\chi D_\gamma.
+  \end{equation}
+  Its fixed Schwartz rows equal the covariance forms in $L^2$.
+\end{lemma}
+
+\begin{proof}
+  We first show that the finite sums are Cauchy using the compact variance
+  tails. We construct their limit on the original probability space, identify
+  its rows, and finally extend additively to long intervals.
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain uniform finite moments and vanishing
+  tails.
+  The finite families $a_j$, $j \le N$, satisfy every hypothesis of
+  Proposition~\ref{P:localized-finite-variance} and
+  Corollary~\ref{C:finite-gaussian-operators}: both localizations, both weighted
+  variances and the independent real $g_j$ have been proved in
+  Lemma~\ref{L:driver-actual-variances}. Thus, the coefficients are compact, and
+  their finite Gaussian sums satisfy~\eqref{E:driver-fixed-schatten}, uniformly
+  in $N$. The fixed cutoff norm may depend on $R,T$.
+
+  Fix an admissible even $q \ge 2$, $q\gamma > d$. Both positive compact
+  envelopes in~\eqref{E:driver-compact-tail-envelopes} belong to $S_{q/2}$.
+  Lemma~\ref{L:driver-dominated-tails} therefore gives
+  \[
+    \operatorname{Tr}T_{{\rm out},N}^{q/2}\longrightarrow0,
+    \qquad
+    \operatorname{Tr}T_{{\rm in},N}^{q/2}\longrightarrow0.
+  \]
+  For $M > N$, put $Y_{N,M} = \sum_{j=N+1}^Mg_jA_j(I)$. After the unitary $J_0$
+  transport, its two finite variances are
+  \[
+    V_{{\rm out},M}-V_{{\rm out},N}\le T_{{\rm out},N},\qquad
+    V_{{\rm in},M}-V_{{\rm in},N}\le T_{{\rm in},N}.
+  \]
+  Lemma~\ref{L:driver-gaussian-tail-average} and positive eigenvalue max-min
+  comparison now give the uniform tail estimate
+  \[
+    \sup_{M>N}\E\|Y_{N,M}\|_{S_q}^q
+    \le(q-1)^{q/2}
+    \frac{\operatorname{Tr}T_{{\rm out},N}^{q/2}
+    +\operatorname{Tr}T_{{\rm in},N}^{q/2}}2
+    \longrightarrow0.
+  \]
+  For each $M > N$, the two variances of the finite tail lie below the
+  corresponding infinite tails. The positive-order comparison bounds their
+  trace powers by the right side, which no longer depends on $M$. This is why
+  the estimate proves a Cauchy property rather than only boundedness of the
+  partial sums.
+  The average of the two trace powers is retained. The comparison uses
+  eigenvalues, not operator monotonicity of the $q/2$ power. Since $\|Y_{N,M}\|
+  \le \|Y_{N,M}\|_{S_q}$, this proves $L^q(\Omega;\mathcal{B}(E))$ Cauchy
+  convergence; a uniform moment bound alone would not suffice.
+
+  \medskip
+  \noindent\textit{Step 2.~}We construct the operator limit on the prescribed
+  probability space.
+  All finite sums lie in the separable operator-norm closed real span
+  $\mathcal{F}_I$ of the countably many deterministic $A_j(I)$. Choose $N_k$
+  increasing so that $\|X_{N_{k+1}}(I)-X_{N_k}(I)\|_{L^q\mathcal{B}(E)} \le
+  2^{-k}$. Their $L^1$ norms are summable. Tonelli therefore shows that the
+  pointwise operator-norm differences sum absolutely almost surely. Completeness
+  gives a limit in $\mathcal{F}_I$ on the original probability space; assign it
+  zero on the exceptional null set. It is strongly measurable as a limit of
+  separably valued finite Gaussian sums. Fatou and the Cauchy property give
+  convergence of the whole sequence in $L^q$ to this limit $X_R(I)$. No new
+  noise or probability space has been introduced. Limits constructed at
+  different admissible even indices agree by uniqueness of convergence in
+  probability. For each requested finite $p \ge 1$, choose an admissible even $q
+  \ge p$ and use Lyapunov to obtain $L^p$ operator-norm convergence to that same
+  limit. One fixed Schatten index is not used to infer all moment orders.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify compactness, moments and Gaussianity
+  of the limit.
+  The compact operators are norm closed, so an almost surely norm-convergent
+  subsequence makes $X_R(I)$ compact valued. Singular-value Fatou applied to the
+  finite uniform bound gives \eqref{E:driver-fixed-schatten} at each admissible
+  even $q$. Every continuous real linear functional of $X_R(I)$ is an $L^2$
+  limit of centered finite Gaussian sums; convergence of means, variances and
+  characteristic functions makes it centered Gaussian. The same applies to
+  finite linear combinations of these functionals, proving joint Gaussianity on
+  the given space.
+
+  \medskip
+  \noindent\textit{Step 4.~}We identify the rows as actual noise variables.
+  For each fixed real Schwartz $z,w$, the scalar rows $\langle
+  X_N(I)z,w\rangle_E$ are the orthogonal projections of the completed covariance
+  form $\ell_R(I;z,w)$ onto the complete noise basis. That form lies in the
+  original closed first Wiener chaos, so these projections converge to it in
+  $L^2(\Omega)$. Operator-norm $L^2$ convergence also gives convergence to
+  $\langle X_R(I)z,w\rangle_E$. Uniqueness of the $L^2$ limit identifies these
+  two variables on the same space, not merely their laws.
+
+  \medskip
+  \noindent\textit{Step 5.~}We extend the construction by finite additivity.
+  For a fixed long interval, choose a finite partition into intervals of length
+  at most one. Their indicator tests add to the long-interval test except at
+  finitely many endpoints. The masked wave products have common compact spatial
+  support, and the temporal estimate~\eqref{E:driver-test-continuity} makes
+  those endpoint changes have zero original covariance norm. Covariance
+  completion and linearity give exact additivity of the forms. The deterministic
+  statewise coefficient integrals, hence every $X_N$, add on the same partition.
+  Passing their finite-sum $L^p$ limits gives the corresponding operator
+  additivity and covariance identity for matrix elements, independently of the
+  partition by common refinement. These are statements at each fixed interval
+  and partition; no uncountable intersection of independently selected null sets
+  is used. No long-interval version of the short-$h$ bound is asserted. The
+  Schatten conclusion is a fixed-interval moment at admissible even indices, not
+  a Schatten-valued path or arbitrary-index claim. This proves
+  Lemma~\ref{L:driver-interval-limit}.
+\end{proof}
+
+\subsection{Time-path convergence and Gaussian norm bounds}
+
+Lemma~\ref{L:driver-interval-limit} works one interval at a time.
+Proposition~\ref{P:actual-operator-driver} asks for more: convergence in the
+$C^\theta$ path norm and compact values at every time on one path event.
+
+\LeanMarker{L:driver-holder-limit}
+\begin{lemma}[H\"older path limit]\label{L:driver-holder-limit}
+  The finite paths $X_N(t) = X_N((0,t))$ converge in
+  $L^p(\Omega;C^\theta([0,T];\mathcal{B}(E)))$ for every finite $p \ge 1$, in a
+  separable closed path span on the same probability space. The limit starts at
+  zero and has compact values for all times on one path event. For sufficiently
+  large even $q_0$, its $C^\theta$ norm has $L^q$ bound $C\sqrt q$, uniformly
+  over even $q \ge q_0$ and the basis.
+\end{lemma}
+
+\begin{proof}
+  We first obtain a uniform moment bound on the dyadic increments in a
+  stronger Hölder norm. Finite-grid convergence then gives uniform
+  convergence, and interpolation gives the desired Hölder convergence. We
+  construct the limit in a separable path span.
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound increments and the dyadic sum.
+  Corollary~\ref{C:frequency-time} bounds the budget $b_I$ by
+  $C|t-u|^{2\beta}$ for $I=(u,t)$; substitute this
+  in~\eqref{E:driver-two-variances} and apply
+  Corollary~\ref{C:finite-gaussian-operators} to the finite increment sum.
+  Choose $\theta < \eta < \beta$ and an even $q_0 \ge 2$ with $q_0\gamma > d$
+  and $\beta-\eta-1/q_0 > 0$. For $q \ge q_0$, the singular-value sequence gives
+  $\|K_\chi\|_{S_q} \le \|K_\chi\|_{S_{q_0}}$: if the latter is nonzero,
+  normalize by it, so every singular value is at most one, and sum its $q$th
+  powers. The zero case is immediate. Apply the finite Gaussian operator
+  estimate with the time-refined variances from
+  Proposition~\ref{P:wave-two-variances}. This gives, uniformly in $N$ and even
+  $q \ge q_0$,
+  \begin{equation}\label{E:driver-increment-moments}
+    \|X_N(t)-X_N(u)\|_{L^q(\mathcal{B}(E))}
+    \le C\sqrt q\,|t-u|^\beta,\qquad |t-u|\le1.
+  \end{equation}
+  The constant includes the fixed $S_{q_0}$ cutoff norm and does not depend on
+  $q$. Longer increments are finite sums of unit increments, with constants
+  depending on $T$.
+
+  Let $D_n(F)$ be the maximum of adjacent increments on the grid $kT2^{-n}$, $0
+  \le k \le 2^n$. At fine levels $T2^{-n} \le 1$, the elementary bound for a
+  finite maximum yields
+  \[
+    \|D_n(X_N)\|_{L^q}
+    \le 2^{n/q}C\sqrt q\,(T2^{-n})^\beta.
+  \]
+  The $q$th power of a maximum is at most the sum of the $q$th powers. There
+  are $2^n$ adjacent increments, so taking the $q$th root contributes
+  $2^{n/q}$. Each increment has length $T2^{-n}$, which yields the displayed
+  estimate.
+  No independence of these increments is used. The finitely many coarse levels
+  are controlled by unit partitions. Minkowski and a geometric sum therefore
+  give
+  \begin{equation}\label{E:driver-dyadic-moment-sum}
+    \sup_N\left\|\sum_{n\ge0}2^{n\eta}D_n(X_N)\right\|_{L^q}
+    \le C_\eta\sqrt q,
+  \end{equation}
+  since the fine-level ratio is at most $2^{-(\beta-\eta-1/q_0)} < 1$.
+
+  \medskip
+  \noindent\textit{Step 2.~}We control the stronger Hölder norm by dyadic
+  increments.
+  For a continuous Banach-valued $F$ starting at zero, this weighted dyadic sum
+  controls its $C^\eta$ norm. Approximate two times by dyadic points at a scale
+  comparable to their separation. The two grid points differ by at most two
+  adjacent increments, and each endpoint's finer binary corrections are bounded
+  by the tail sum of $D_n$. Multiplying by the separation to the power $-\eta$
+  bounds that total by the weighted sum, up to a constant depending on $T,\eta$.
+  Continuity identifies the endpoint limits and also controls the supremum norm
+  from $F(0) = 0$. The finite paths are Lipschitz by~\eqref{E:driver-gain-one}.
+  Thus, \eqref{E:driver-dyadic-moment-sum} gives uniform $L^qC^\eta$ bounds, and
+  the triangle inequality gives the same bound for their differences.
+
+  \medskip
+  \noindent\textit{Step 3.~}We prove convergence in the required Hölder norm.
+  On a fixed finite time grid, Lemma~\ref{L:driver-interval-limit} gives $L^q$
+  convergence of every point value. For continuous $F$,
+  \[
+    \|F\|_\infty\le\max_k\|F(t_k)\|
+    +C(\operatorname{mesh})^\eta\|F\|_{C^\eta}.
+  \]
+  Apply this to $X_N-X_M$, send $N,M \to \infty$ at a fixed grid, and then send
+  the mesh to zero. The uniform $C^\eta$ bound proves sup-norm $L^q$ Cauchy
+  convergence. The deterministic interpolation inequality
+  \begin{equation}\label{E:driver-holder-interpolation}
+    \|F\|_{C^\theta}
+    \le C\|F\|_\infty^{1-\theta/\eta}
+    \|F\|_{C^\eta}^{\theta/\eta}
+  \end{equation}
+  follows by bounding each increment by both $2\|F\|_\infty$ and its $C^\eta$
+  bound, and splitting at their balancing scale. Its supremum term is controlled
+  too. Scalar H\"older in probability proves the $L^qC^\theta$ Cauchy property.
+  For any requested finite $p$, choose an even $q \ge \max(p,q_0)$ and use
+  Lyapunov.
+
+  \medskip
+  \noindent\textit{Step 4.~}We choose the measurable limit and one path event.
+  The full H\"older/operator space need not be separable. Nevertheless, every
+  finite path lies in the span of the countably many deterministic Lipschitz
+  paths $A_j(0,\cdot)$. Their $C^\theta$-closed real span is a separable Banach
+  space. In it the same elementary Cauchy/subsequence construction as in
+  Lemma~\ref{L:driver-interval-limit} gives a strongly measurable limit $M_R$ on
+  the original space. Different $p$ limits agree by uniqueness of convergence in
+  probability in the path norm. An almost surely $C^\theta$-convergent
+  subsequence converges uniformly in operator norm. Finite paths have compact
+  values on short intervals, and on long ones by finite additivity. Therefore,
+  the limit has compact values at every time on that single path set. It starts
+  at zero. Passing the uniform bounds from~\eqref{E:driver-dyadic-moment-sum}
+  through the path convergence proves the asserted $C\sqrt q$ bound. This proves
+  Lemma~\ref{L:driver-holder-limit}.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{P:actual-operator-driver}]
+  We assemble the interval and path constructions, then verify basis
+  independence. The uniform square-root moment bound gives the exponential
+  norm estimate by summing its power series.
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the path and its covariance rows.
+  Lemmas~\ref{L:driver-noise-basis}--\ref{L:driver-holder-limit} construct the
+  stated finite sums and their path limit, with no new probability space.
+  Evaluation at a fixed time agrees with the interval limit by uniqueness in
+  probability. Its covariance identity for matrix elements is
+  \eqref{E:driver-raw-row}, by Lemma~\ref{L:driver-interval-limit}, including
+  the long-interval interpretation. The same additivity identifies each fixed
+  increment with $X_R(I)$, proving its stated Schatten moment bound.
+
+  The finite paths are Gaussian linear combinations of deterministic paths.
+  Every continuous linear functional on their closed path span converges in
+  $L^2$ to a centered Gaussian; finite linear combinations do as well. Thus,
+  $M_R$ is a centered Gaussian path. The four real pair identities give its
+  complexified sesquilinear row identity.
+
+  \medskip
+  \noindent\textit{Step 2.~}We compare paths built from different noise bases.
+  The construction used only compact smooth representatives, orthonormality and
+  completeness, so it applies to any such noise basis. Compare two constructions
+  using a fixed countable dense Schwartz phase collection and rational times.
+  Both rows equal the same covariance forms. A countable null-set union,
+  boundedness of the operators, phase density and path continuity give equality
+  at all times on one probability-one set. This proves indistinguishability
+  without an assumed common event for uncountably many original evaluations.
+
+  \medskip
+  \noindent\textit{Step 3.~}We deduce all finite moments and exponential
+  integrability.
+  For $p \ge 1$, choose even $q \ge \max(p,q_0)$ with $q \le p+q_0+2 \le
+  (q_0+3)p$. Lemma~\ref{L:driver-holder-limit} and Lyapunov give the first bound
+  in~\eqref{E:driver-gaussian-norm}. Write its resulting constant as $C_1$;
+  Lyapunov and $q \le (q_0+3)p$
+  absorb the passage from even $q$ into the constant $C_1$. Now
+  let $Y = \|M_R\|_{C^\theta}$. If $C_1 = 0$, then $Y = 0$ almost surely and the
+  exponential bound is immediate. Otherwise, $\E Y^{2m} \le
+  (C_1\sqrt{2m})^{2m}$. Since $m! \ge (m/e)^m$, as follows by integrating $\log
+  x$ from one to $m$, the $m$th term in the exponential series is at most
+  $(2ecC_1^2)^m$. For $0 < c < 1/(2eC_1^2)$, positive Tonelli and the geometric
+  series prove the second bound. This proves
+  Proposition~\ref{P:actual-operator-driver}.
+\end{proof}
+
+All constants here may depend on $R,T$ and the fixed admissible parameters. No
+uniform-in-$R$ path-norm estimate or $C^\theta S_q$-valued path is asserted.
+This constructs the local masked integrated operator on the original noise.
+Source-cutoff convergence, Young evolution, canonical initial data and
+solution-moment asymptotics remain separate parts of the argument.

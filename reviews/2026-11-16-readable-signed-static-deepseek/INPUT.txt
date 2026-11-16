@@ -1,0 +1,3090 @@
+# Assigned task: 4 rewritten integrated_signed_static.tex proof pairs
+
+Independently compare BOTH OLD and NEW complete proofs and their unchanged
+statements and definitions. Read every complete proof, including unchanged
+portions. Check every new explanatory assertion under the SAME hypotheses,
+constants, domains, normalizations and limiting conventions. Byte retention
+alone is not mathematical evidence; OLD is not an oracle. Reconstruct assigned
+deductions using checkable public equations and estimates, rather than label
+summaries. Do not silently repair a proof or invent an unsupported claim.
+Distinguish new rewrite defects from pre-existing concerns and contextual limits.
+
+Only the proof labels in the exact inventory are assigned. Supplied baseline
+context is explicitly UNASSIGNED: its named statements may be used under
+checked application hypotheses, but its proofs are not assigned and must not
+be counted as additional reviewed proofs. Do not invoke an assigned target
+conclusion or its counterpart to skip reconstructing that target deduction.
+
+Reconstruct all four target proofs, including the unchanged limiting-
+multiplier proof. Potentials and controls may have either sign. The fixed
+physical mask is compact, the space is the operator-norm closure in K(F), and
+both constant data columns remain part of the physical phase. Do not import
+positivity, a ground state or a gap from the nonnegative compact-family input.
+
+Show the constant-displacement column recovers a unique real H^(-1/2)
+compactly supported distribution, identify its limiting multiplier on tests
+and completion, and retain its symmetric/Hermitian pairing bound and correct
+complexification. For the closed form, reconstruct the H1 form domain,
+semiboundedness, admissible shift c=2+K^2, A>=1, both Bessel-form comparisons
+and the quarter-power domains/norms with exact constants. Check the resolvent
+variational identity and positive spectral integral rather than assuming order
+for arbitrary noncommuting powers. Identify the negative dual completion.
+No H2 operator domain or D(A^(3/4))=H^(3/2) identity is assumed.
+
+For the spectral wave verify the form/spectral bottom equality, bounds
+-K^2<=beta<=0 and lambda=sqrt(-beta), including zero/threshold cases. Translating
+and dilating a smooth bump outside the compact support supplies the upper
+bottom bound, not positivity of V. Retain the A^(1/4), A^(-1/4) phase norm,
+uniform equivalence/condition-number cost, every weighted 2x2 matrix entry on
+positive, zero and negative spectral values, and all constants in
+8(1+K)^2(1+t)exp(lambda t). Do not divide by lambda or assert a bottom eigenstate.
+Check the spectral-support/resolvent argument, strong continuity and graph-level
+extensions under bounded spectral cutoffs.
+
+For physical identification derive the distributional equation and graph-
+continuous D(H_V) inclusion into H^(3/2), the correct free E-generator domain,
+and graph-data differentiation/Duhamel identity before density. No operator-
+norm derivative of the free group is available. Identify the same bounded-
+perturbation/Young flow on E by uniqueness, then treat the full F block and
+both constant response columns separately; E is not dense in F. Justify
+compact-operator conjugation and the Lipschitz interaction primitive using
+strong group and adjoint continuity. Derive the finite-time forcing triangle,
+polynomial cost and the stated full F bound 16(1+K)^4(1+t)^3 exp(lambda t).
+Preserve fixed radius and control-dependent constants; no uniform growing-
+radius or source/noise limit or new stochastic solution claim follows.
+The module's Teschl imports/references remain explicit stated inputs; no new
+primary-PDF theorem-proof, image or render verification is assigned.
+
+No prior reviewer verdict, worker QA, grade or acceptance record is supplied.
+This is independent rewrite-preservation review, not primary-source PDF/image,
+Lean quotation, rendered-page, human-verification, whole-book or release
+certification. Imported references remain as stated in the source; check target
+application hypotheses against supplied statements and identify missing context
+honestly. Do not browse, use tools, execute, delegate, read other files, edit,
+contact anyone or launch an authoring workflow. Everything allowed is embedded.
+Honest PARTIAL/NOT_READ, uncertainty, failure or inconclusiveness is permitted.
+Only checkable public mathematical evidence is requested.
+
+# Public reconstruction requirement
+
+For every assigned proof, enumerate its original logical steps (including unchanged portions) and provide checkable public working for each. A target statement or a bound established inside that same target proof is not an unassigned input. Named UNASSIGNED upstream statements may be used after checking their hypotheses; their own proofs remain unassigned. Reading and reconstruction are distinct: if any required target step is not reconstructed publicly, say so and mark Public reconstruction: PARTIAL or NOT_RECONSTRUCTED, even if Old/New reading is COMPLETE. Do not replace a derivation by saying it is unchanged.
+
+# Output contract
+
+Begin with:
+# Review Result
+Category: proof-readability-equivalence
+Model: <your actual model identity if known>
+Verdict: PASS | PASS_WITH_NOTES | FAIL | INCONCLUSIVE
+Confidence: high | medium | low
+
+Verdict/confidence are unforced. Then exactly one '## <proof label>' section
+for each assigned label, in inventory order. Each must give:
+- Old reading: COMPLETE | PARTIAL | NOT_READ
+- New reading: COMPLETE | PARTIAL | NOT_READ
+- Public reconstruction: COMPLETE | PARTIAL | NOT_RECONSTRUCTED
+- Original-step coverage: <steps and working, with omissions explicit>
+- Argument preservation: PRESERVED | CHANGED | UNCERTAIN
+- New explanations: JUSTIFIED | CONCERN | UNCERTAIN
+- Evidence: concrete mathematical checks/working using equation labels or
+  OLD/NEW module-local LF ranges, not merely byte-retention facts.
+- Lost steps/qualifiers, unresolved issues and pre-existing concerns; 'none
+  identified within this read' is allowed when justified.
+
+End with '## AUDIT dispositions' and '## Findings and limits'. A partially
+read proof prohibits a claim of full assignment completion. Distinguish target
+preservation from proving all upstream analytic results or whole-book truth.
+Keep the public report roughly 5000 words. Do not certify source PDFs,
+images, Lean correspondence, rendered pages, human sign-offs or release.
+
+The word target is approximate; do not sacrifice a required derivation for brevity.
+
+# Exact assigned proof inventory
+{
+  "source_file": "notes/integrated_signed_static.tex",
+  "old_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "new_revision": "7bea84b83b9ace4c305e3728783012f59aebae88",
+  "old_module_sha256": "d49c6954d587572a6e3d027945a6e86fe6632bbbdf00ab15ecb852602e77d8b9",
+  "new_module_sha256": "54e88681a39b82c18ee20b67f8033e716f12c72a55d6c369c8432790834267b0",
+  "proofs": [
+    {
+      "label": "L:signed-limiting-multiplier",
+      "old_statement_lf": [
+        11,
+        19
+      ],
+      "new_statement_lf": [
+        11,
+        19
+      ],
+      "old_proof_lf": [
+        21,
+        37
+      ],
+      "new_proof_lf": [
+        21,
+        37
+      ]
+    },
+    {
+      "label": "P:signed-closed-form",
+      "old_statement_lf": [
+        45,
+        63
+      ],
+      "new_statement_lf": [
+        45,
+        63
+      ],
+      "old_proof_lf": [
+        65,
+        115
+      ],
+      "new_proof_lf": [
+        65,
+        131
+      ]
+    },
+    {
+      "label": "L:signed-spectral-wave",
+      "old_statement_lf": [
+        122,
+        134
+      ],
+      "new_statement_lf": [
+        138,
+        150
+      ],
+      "old_proof_lf": [
+        136,
+        184
+      ],
+      "new_proof_lf": [
+        152,
+        217
+      ]
+    },
+    {
+      "label": "P:signed-physical-wave",
+      "old_statement_lf": [
+        190,
+        200
+      ],
+      "new_statement_lf": [
+        223,
+        233
+      ],
+      "old_proof_lf": [
+        202,
+        265
+      ],
+      "new_proof_lf": [
+        235,
+        327
+      ]
+    }
+  ],
+  "line_convention": "Exact raw-module local LF, not whole prompt. Context proofs are unassigned and must not be counted."
+}
+
+===== BEGIN old-module.txt =====
+{"source_path": "notes/integrated_signed_static.tex", "source_revision": "cdde711c248862f33207860107dd0e6b31d60852", "selection": "WHOLE_FILE", "role": "ASSIGNED OLD complete module; exactly 4 proof pairs.", "bytes": 14299, "sha256": "d49c6954d587572a6e3d027945a6e86fe6632bbbdf00ab15ecb852602e77d8b9"}
+===== RAW UTF8 SOURCE =====
+\section{Signed rough static potentials and the physical wave}
+\label{S:signed-static-wave}
+
+Fix the original nonzero covariance and a finite physical mask $m_R$ as in
+Section~\ref{S:actual-cameron-mean}. For real $q \in C_c^\infty(\R^d)$ put $V_q
+= m_R(\Gamma*q)$ and $L_q(u,v,c_1,c_2) = (0,V_q(u+c_1),0,0)$ on $F =
+E\oplus\R^2$. Let $\mathcal{V}_R$ be the operator-norm closure of these
+operators in $\mathcal{K}(F)$. It is a closed real linear space. No positivity
+is imposed on $q$.
+
+\begin{lemma}[The limiting multiplier]\label{L:signed-limiting-multiplier}
+  Every $L \in \mathcal{V}_R$ determines a unique real $V \in H^{-1/2}$
+  supported in $\operatorname{supp}m_R$. It has the multiplier action
+  $L(u,v,c_1,c_2) = (0,Vu+c_1V,0,0)$, where multiplication extends from tests to
+  $H^{1/2} \to H^{-1/2}$. For $k = \|L\|$, its symmetric pairing obeys
+  \begin{equation}\label{E:signed-multiplier-form}
+    |v_V(u,w)|\le k\|u\|_{H^{1/2}}\|w\|_{H^{1/2}} .
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  Choose $L_{q_n} \to L$. The constant-displacement vector has norm one, so
+  $\|V_{q_n}-V_{q_j}\|_{H^{-1/2}} \le \|L_{q_n}-L_{q_j}\|$. Thus, $V_{q_n} \to
+  V$ in $H^{-1/2}$. Testing outside the fixed compact mask support preserves
+  that support. Every zero column of $L_{q_n}$ remains zero. Its displacement
+  multipliers converge in $\mathcal{L}(H^{1/2},H^{-1/2})$ to a map of norm at
+  most $k$. For compact smooth $u$, smooth multiplication is bounded on
+  $H^{-1/2}$ by Lemma~\ref{L:cutoff-factorization}. Hence, $V_{q_n}u \to Vu$
+  there, identifying the limiting map on tests and then uniquely on $H^{1/2}$ by
+  density. The constant column recovers $V$ and proves uniqueness. On compact
+  smooth $u,w$, the pairing is $\langle V,uw\rangle$, denoted $v_V(u,w)$, so it
+  is symmetric. Its bound and symmetry extend by density. Complexification
+  preserves the operator norm by splitting real and imaginary parts in the
+  Hilbert norms. The pairing extends sesquilinearly to a Hermitian form; its
+  diagonal is the sum of the real and imaginary diagonal values. This proves
+  Lemma~\ref{L:signed-limiting-multiplier}.
+\end{proof}
+
+The bound~\eqref{E:signed-multiplier-form} controls the pairing $v_V$ on
+$H^{1/2}$. We now use it to define a self-adjoint operator $H_V$ from the
+quadratic form $q_V$ on $H^1$. We also compare the quarter power of its shift
+$A$ with the $H^{1/2}$ norm.
+
+\LeanMarker{P:signed-closed-form}
+\begin{proposition}[Closed form and quarter-power phase]
+  \label{P:signed-closed-form}
+  Let $K \ge \max(1,\|L\|)$ and $c = 2+K^2$. On complexified $L^2$ the form
+  \[
+    q_V(u)=\|\nabla u\|_2^2-v_V(u,u),\qquad Q(q_V)=H^1,
+  \]
+  represents a unique self-adjoint $H_V$. With $A = H_V+c$ and $L_K = 3(1+K^2)$,
+  \begin{align}
+    A&\ge1,\qquad D(A^{1/2})=H^1,\label{E:signed-form-domain}\\
+    \tfrac12\|u\|_{H^1}^2
+    &\le q_V(u)+c\|u\|_2^2\le L_K\|u\|_{H^1}^2,\label{E:signed-form-bounds}\\
+    D(A^{1/4})&=H^{1/2},\qquad
+    2^{-1/4}\|u\|_{H^{1/2}}
+    \le\|A^{1/4}u\|_2\le L_K^{1/4}\|u\|_{H^{1/2}}.
+    \label{E:signed-quarter-phase}
+  \end{align}
+  The negative dual completion is $H^{-1/2}$. No $H^2$ operator domain is
+  asserted.
+\end{proposition}
+
+\begin{proof}
+  Put $b = \|u\|_2$, $z = \|u\|_{H^1}$. Fourier Cauchy--Schwarz
+  and~\eqref{E:signed-multiplier-form} give
+  \[
+    \|u\|_{H^{1/2}}^2\le bz,\qquad
+    |v_V(u,u)|\le Kbz\le\tfrac12z^2+\tfrac12K^2b^2 .
+  \]
+  The last scalar inequality is the weighted arithmetic--geometric mean
+  inequality at weights $1/2,1/2$ and nonnegative bases $z^2,(Kb)^2$, including
+  zero norms. Since $q_V = z^2-b^2-v_V(u,u)$, it follows that
+  \[
+    q_V+cb^2\ge\tfrac12z^2+(1+K^2/2)b^2,\qquad
+    q_V+cb^2\le\tfrac32z^2+(1+3K^2/2)b^2\le L_Kz^2.
+  \]
+  The lower bound dominates both $z^2/2$ and $b^2$. Thus, this densely defined
+  Hermitian form is semibounded and its shifted norm is equivalent to the
+  complete $H^1$ norm. It is closed in the definition
+  of~\cite{teschl:14:mathematical}*{p.~80}.
+  From~\cite{teschl:14:mathematical}*{Theorem~2.14, p.~81, (2.63)}, it
+  represents a unique self-adjoint $H_V$. This representation is independent of
+  the admissible shift. From that book's Theorem~3.6 and~(3.51)--(3.53), p.~109,
+  applied after shifting, we obtain~\eqref{E:signed-form-domain}. Here $A \ge 1$
+  is initially its form lower bound. A bounded spectral slice below one would
+  produce a unit $D(A)$ test contradicting that form bound; hence it is also the
+  spectral lower bound. Lemma~\ref{L:signed-spectral-wave} records the full
+  bottom argument.
+
+  Set $B_0 = 1-\Delta$. On the common form domain, $\tfrac12B_0 \le A \le
+  L_KB_0$. We prove the needed square-root comparison rather than assuming an
+  order rule for arbitrary operator powers. For $T_0,S_0 \ge 1$ with common form
+  domain and $q_{T_0} \le q_{S_0}$, completing the square in the shifted form
+  norm gives
+  \[
+    \langle f,(T_0+t)^{-1}f\rangle
+    =\sup_u\{2\operatorname{Re}\langle f,u\rangle
+    -q_{T_0}(u)-t\|u\|^2\}
+    \ge\langle f,(S_0+t)^{-1}f\rangle,\quad t>0 .
+  \]
+  The scalar identity $\sqrt x = \pi^{-1}\int_0^\infty t^{-1/2}x/(x+t)\ud t$
+  follows by $t = xv^2$. Positive spectral integration and Tonelli now imply
+  $T_0^{1/2} \le S_0^{1/2}$ as forms, with their domain inclusions:
+  $I-t(T_0+t)^{-1} \le I-t(S_0+t)^{-1}$. Apply this to $(B_0,2A)$ and
+  $(A,L_KB_0)$. Both operators in each pair are at least one. The resulting
+  inequalities give~\eqref{E:signed-quarter-phase}, including equality of its
+  domains. For $v \in L^2$ the $L^2$-duality norm against $\|A^{1/4}u\|_2$ is
+  $\|A^{-1/4}v\|_2$: Cauchy--Schwarz gives the upper bound, and $u = A^{-1/2}v$
+  gives equality after normalization. Duality and completion therefore identify
+  the negative phase. Uniqueness of the form, resolvent and spectral calculus
+  makes these constructions commute with real conjugation. This proves
+  Proposition~\ref{P:signed-closed-form}.
+\end{proof}
+
+Proposition~\ref{P:signed-closed-form} gives the operator $H_V$ and compares
+the norms built from $A^{1/4}$ with those of $E$. We now locate the bottom of
+the spectrum of $H_V$ and bound the wave that its spectral calculus defines on
+$E$. The bound allows exponential growth at the rate $\lambda(V)$.
+
+\begin{lemma}[The bottom and spectral wave]\label{L:signed-spectral-wave}
+  Write $P_V^E$ for the evolution in~\eqref{E:signed-spectral-matrix}, and $S_E$
+  for the free restriction from Lemma~\ref{L:constant-phase-free}. Put
+  \[
+    \beta(V)=\inf_{\substack{u\in H^1\\\|u\|_2=1}}q_V(u),
+    \qquad \lambda(V)=\sqrt{-\beta(V)} .
+  \]
+  Then $\beta(V) = \inf\operatorname{spec}H_V$ and $-K^2 \le \beta(V) \le 0$.
+  The spectral wave on $E$ has the bound
+  \begin{equation}\label{E:signed-E-wave}
+    \|P_V^E(t)\|\le8(1+K)^2(1+t)e^{\lambda(V)t},\qquad t\ge0.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  For unit $u$, $z = \|u\|_{H^1} \ge 1$ gives $q_V(u) \ge z^2/2-1-K^2/2 \ge
+  -(1+K^2)/2 \ge -K^2$. Conversely dilate a unit compact smooth bump and
+  translate its whole support outside $\operatorname{supp}m_R$. Its potential
+  pairing is zero and its kinetic energy tends to zero. Thus, $\beta \le 0$.
+  Real and complex form infima agree because a complex diagonal splits into the
+  two real diagonals. The spectral form formula
+  in~\cite{teschl:14:mathematical}*{(3.52)--(3.53)} identifies this form infimum
+  with the spectral bottom. For clarity, a bounded spectral slice below the form
+  lower bound would give a unit form test violating that bound. Conversely the
+  form integral is bounded below by the spectral infimum. The spectrum is
+  nonempty: a unit vector's scalar spectral measure has mass one and a support
+  point, and normalized projections onto arbitrarily small bounded neighborhoods
+  give approximate eigenvectors, excluding a bounded inverse there. Conversely,
+  off the closed PVM support $\Sigma$ the Borel function $(h-z)^{-1}$, set to
+  zero off $\Sigma$, is bounded for real $z\notin\Sigma$, as is $h/(h-z)$ on
+  $\Sigma$. Its calculus maps into $D(H_V)$ and is a two-sided resolvent inverse
+  on the appropriate domains. Thus, the spectrum is precisely $\Sigma$. Hence,
+  $\lambda \le K$ and every spectral value $h$ has $h+c \ge 2$.
+
+  Use the phase norm $\|(u,v)\|_{E_A}^2 = \|A^{1/4}u\|_2^2+\|A^{-1/4}v\|_2^2$.
+  With $M_K = L_K^{1/4}$, the preceding proposition and its dual give
+  $M_K^{-1}\|z\|_E \le \|z\|_{E_A} \le M_K\|z\|_E$. The condition-number cost is
+  $M_K^2 = \sqrt{3(1+K^2)} \le 2(1+K)$. Define $C_t(h),S_t(h)$ by $\cos(t\sqrt
+  h),\sin(t\sqrt h)/\sqrt h$ for $h > 0$, by $1,t$ at zero, and by
+  $\cosh(t\sqrt{-h}),\sinh(t\sqrt{-h})/\sqrt{-h}$ for $h < 0$. In the $E_A$
+  isometry the wave matrix is
+  \begin{equation}\label{E:signed-spectral-matrix}
+    \begin{pmatrix}
+      C_t(h)&\sqrt{h+c}\,S_t(h)\\
+      -hS_t(h)/\sqrt{h+c}&C_t(h)
+    \end{pmatrix}.
+  \end{equation}
+  For $h \ge 0$, the entries are bounded using $|C_t| \le 1$, $|S_t| \le
+  \min(t,h^{-1/2})$, $\sqrt{h+c}|S_t| \le 1+\sqrt c\,t$ and $|hS_t|/\sqrt{h+c}
+  \le 1$; at zero the off-diagonals are $\sqrt c\,t,0$. For $\beta \le h < 0$,
+  they are bounded using $|C_t| \le e^{\lambda t}$, $|S_t| \le te^{\lambda t}$,
+  $\sqrt{h+c}|S_t| \le \sqrt c\,te^{\lambda t}$ and $|hS_t|/\sqrt{h+c} \le
+  Ke^{\lambda t}$. There is no division by $\lambda$. Since $\sqrt c \le 2K$,
+  each entry is at most $2(1+K)(1+t)e^{\lambda t}$. Bounded Borel calculus
+  from~\cite{teschl:14:mathematical}*{Theorem~3.1, pp.~102--103,
+  (3.18)--(3.21)}, the two-by-two matrix norm bound and the condition-number
+  cost give~\eqref{E:signed-E-wave}. Functions can be set to zero off the
+  spectral support. Spectral dominated convergence gives strong continuity, and
+  scalar addition identities give the group property. The same matrix and bounds
+  apply on the weighted graph levels $D(A^{1/2})\times L^2$ and $D(A)\times
+  D(A^{1/2})$. Spectral cutoffs justify their extensions and continuity there.
+  This proves Lemma~\ref{L:signed-spectral-wave}.
+\end{proof}
+
+Lemma~\ref{L:signed-spectral-wave} bounds a wave defined by spectral
+calculus, and only on $E$. We still have to identify it with the physical wave
+and to include the two constant columns of $F$.
+
+\begin{proposition}[Identification with the physical wave]
+  \label{P:signed-physical-wave}
+  The spectral wave in Lemma~\ref{L:signed-spectral-wave} is the
+  bounded-perturbation, equivalently Young, physical wave on $E$. Its extension
+  on $F$ satisfies
+  \begin{equation}\label{E:signed-F-wave}
+    \|P_V(t)\|_{\mathcal{L}(F)}
+    \le16(1+K)^4(1+t)^3e^{\lambda(V)t},\qquad t\ge0.
+  \end{equation}
+  Both constant response columns are included.
+\end{proposition}
+
+\begin{proof}
+  The imported form representation \cite{teschl:14:mathematical}*{Theorem~2.14,
+  p.~81, (2.63)}, tested against compact smooth functions, gives $H_Vu = -\Delta
+  u-Vu$ in distributions for $u \in D(H_V)$. Such $u$ lies in $H^1$ and $Vu \in
+  H^{-1/2}$. Consequently, $(1-\Delta)u = H_Vu+Vu+u \in H^{-1/2}$, so
+  $D(H_V)\hookrightarrow H^{3/2}$. The embedding is graph-continuous:
+  by~\eqref{E:signed-form-bounds}, $\|u\|_{H^1}^2 \le 2\langle Au,u\rangle \le
+  \|Au\|_2^2+\|u\|_2^2$, and the distributional equation bounds the $H^{3/2}$
+  norm by this graph norm.
+
+  The generator of the free $E$ group is $A_0(u,v) = (v,\Delta u)$ on
+  $H^{3/2}\times H^{1/2}$. Indeed, differentiate its Fourier matrix after a
+  frequency cutoff, dominate by that graph norm and remove the cutoff.
+  Conversely any strong generator derivative has those distributional
+  components; they require $v \in H^{1/2}$ and $\Delta u \in H^{-1/2}$, hence $u
+  \in H^{3/2}$. No operator-norm differentiability of the group is used.
+
+  Start spectral data in $D(A)\times D(A^{1/2}) = D(H_V)\times H^1$. The
+  preceding graph-level estimates give continuous graph trajectories and $C^1$
+  trajectories in $H^1\times L^2$, with $u_t = v$, $v_t = -H_Vu$. This follows
+  first on bounded spectral cutoffs and then uniformly on finite horizons in the
+  graph norms by spectral dominated convergence
+  and~\cite{teschl:14:mathematical}*{Theorem~3.2, p.~104, (3.29)--(3.33)}. The
+  projections $1_{[1,n]}(A)$ approximate every graph datum and the same weighted
+  matrix bounds control all cutoff tails on those horizons. Graph embedding
+  gives continuity in $D(A_0)$ and $z_t = A_0z+L_Ez$ in $E$, where $L_E = L|_E$.
+  The strong-group chain rule on this domain yields
+  \[
+    S_E(-t)z(t)=z(0)+\int_0^t S_E(-s)L_Ez(s)\ud s .
+  \]
+  Graph data are dense in $E$: spectral cutoffs make $D(A)$ dense in $D(A^{1/2})
+  = H^1$, and $H^1$ is dense in both $H^{1/2}$ and $H^{-1/2}$. Boundedness on
+  finite horizons extends this identity to all $E$. Volterra uniqueness by
+  Picard iteration identifies the physical wave. No $D(A^{3/4}) = H^{3/2}$
+  assertion is needed.
+
+  On $F$, bounded $L$ and strongly continuous $S_F$ similarly define a unique
+  Duhamel flow. On $[0,T]$, the $n$th Volterra term has bound
+  $C_T^{n+1}\|L\|^nT^n/n!$. Uniqueness makes horizons consistent and gives
+  composition. Its interaction primitive is $\int_0^t S_F(-s)LS_F(s)\ud s$.
+  Compactness of $L$, and strong continuity of the group and its adjoint, give
+  norm-continuity of the conjugated compact operator, as in
+  Proposition~\ref{P:cameron-actual-embedding}. Thus, this primitive is
+  Lipschitz and its ordinary equation is exactly the Young equation.
+
+  For initial $(e,c_1,c_2)$ the constant coordinates are $(c_1+tc_2,c_2)$ and
+  the $E$ component is
+  \[
+    P_V^E(t)e+\int_0^t P_V^E(t-s)(0,V(c_1+sc_2))\ud s .
+  \]
+  The bounded $E$-valued Fubini argument proving \eqref{E:compact-F-block}
+  applies: substitute the $E$ Duhamel formula under this integral and
+  interchange the absolutely bounded finite time triangle. It solves the full
+  system, and uniqueness identifies it. No ground positivity or gap is used. The
+  forcing norm is at most $K(1+s)|(c_1,c_2)|$. Since $\lambda \ge 0$ and
+  $\int_0^t(1+t-s)(1+s)\ud s \le (1+t)^3$, the full norm is at most
+  \[
+    (1+t)^3e^{\lambda t}
+    \{8(1+K)^2\|e\|+[8K(1+K)^2+1]|(c_1,c_2)|\}.
+  \]
+  Scalar Cauchy--Schwarz and $\sqrt{8^2+9^2} < 13$ bound this by
+  $13(1+K)^3(1+t)^3e^{\lambda t}\|(e,c_1,c_2)\|_F$. This implies the stated
+  sufficient bound. This proves Proposition~\ref{P:signed-physical-wave}.
+\end{proof}
+
+===== END old-module.txt =====
+
+===== BEGIN new-module.txt =====
+{"source_path": "notes/integrated_signed_static.tex", "source_revision": "7bea84b83b9ace4c305e3728783012f59aebae88", "selection": "WHOLE_FILE", "role": "ASSIGNED NEW complete module; exactly 4 proof pairs.", "bytes": 17119, "sha256": "54e88681a39b82c18ee20b67f8033e716f12c72a55d6c369c8432790834267b0"}
+===== RAW UTF8 SOURCE =====
+\section{Signed rough static potentials and the physical wave}
+\label{S:signed-static-wave}
+
+Fix the original nonzero covariance and a finite physical mask $m_R$ as in
+Section~\ref{S:actual-cameron-mean}. For real $q \in C_c^\infty(\R^d)$ put $V_q
+= m_R(\Gamma*q)$ and $L_q(u,v,c_1,c_2) = (0,V_q(u+c_1),0,0)$ on $F =
+E\oplus\R^2$. Let $\mathcal{V}_R$ be the operator-norm closure of these
+operators in $\mathcal{K}(F)$. It is a closed real linear space. No positivity
+is imposed on $q$.
+
+\begin{lemma}[The limiting multiplier]\label{L:signed-limiting-multiplier}
+  Every $L \in \mathcal{V}_R$ determines a unique real $V \in H^{-1/2}$
+  supported in $\operatorname{supp}m_R$. It has the multiplier action
+  $L(u,v,c_1,c_2) = (0,Vu+c_1V,0,0)$, where multiplication extends from tests to
+  $H^{1/2} \to H^{-1/2}$. For $k = \|L\|$, its symmetric pairing obeys
+  \begin{equation}\label{E:signed-multiplier-form}
+    |v_V(u,w)|\le k\|u\|_{H^{1/2}}\|w\|_{H^{1/2}} .
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  Choose $L_{q_n} \to L$. The constant-displacement vector has norm one, so
+  $\|V_{q_n}-V_{q_j}\|_{H^{-1/2}} \le \|L_{q_n}-L_{q_j}\|$. Thus, $V_{q_n} \to
+  V$ in $H^{-1/2}$. Testing outside the fixed compact mask support preserves
+  that support. Every zero column of $L_{q_n}$ remains zero. Its displacement
+  multipliers converge in $\mathcal{L}(H^{1/2},H^{-1/2})$ to a map of norm at
+  most $k$. For compact smooth $u$, smooth multiplication is bounded on
+  $H^{-1/2}$ by Lemma~\ref{L:cutoff-factorization}. Hence, $V_{q_n}u \to Vu$
+  there, identifying the limiting map on tests and then uniquely on $H^{1/2}$ by
+  density. The constant column recovers $V$ and proves uniqueness. On compact
+  smooth $u,w$, the pairing is $\langle V,uw\rangle$, denoted $v_V(u,w)$, so it
+  is symmetric. Its bound and symmetry extend by density. Complexification
+  preserves the operator norm by splitting real and imaginary parts in the
+  Hilbert norms. The pairing extends sesquilinearly to a Hermitian form; its
+  diagonal is the sum of the real and imaginary diagonal values. This proves
+  Lemma~\ref{L:signed-limiting-multiplier}.
+\end{proof}
+
+The bound~\eqref{E:signed-multiplier-form} controls the pairing $v_V$ on
+$H^{1/2}$. We now use it to define a self-adjoint operator $H_V$ from the
+quadratic form $q_V$ on $H^1$. We also compare the quarter power of its shift
+$A$ with the $H^{1/2}$ norm.
+
+\LeanMarker{P:signed-closed-form}
+\begin{proposition}[Closed form and quarter-power phase]
+  \label{P:signed-closed-form}
+  Let $K \ge \max(1,\|L\|)$ and $c = 2+K^2$. On complexified $L^2$ the form
+  \[
+    q_V(u)=\|\nabla u\|_2^2-v_V(u,u),\qquad Q(q_V)=H^1,
+  \]
+  represents a unique self-adjoint $H_V$. With $A = H_V+c$ and $L_K = 3(1+K^2)$,
+  \begin{align}
+    A&\ge1,\qquad D(A^{1/2})=H^1,\label{E:signed-form-domain}\\
+    \tfrac12\|u\|_{H^1}^2
+    &\le q_V(u)+c\|u\|_2^2\le L_K\|u\|_{H^1}^2,\label{E:signed-form-bounds}\\
+    D(A^{1/4})&=H^{1/2},\qquad
+    2^{-1/4}\|u\|_{H^{1/2}}
+    \le\|A^{1/4}u\|_2\le L_K^{1/4}\|u\|_{H^{1/2}}.
+    \label{E:signed-quarter-phase}
+  \end{align}
+  The negative dual completion is $H^{-1/2}$. No $H^2$ operator domain is
+  asserted.
+\end{proposition}
+
+\begin{proof}
+  We first bound the signed potential form by the Sobolev norm and identify
+  its closed representation. We then derive the quarter-power comparison from
+  resolvents, and use duality to identify the negative phase.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We make the shifted form coercive and closed.
+  Put $b = \|u\|_2$, $z = \|u\|_{H^1}$. Fourier Cauchy--Schwarz
+  and~\eqref{E:signed-multiplier-form} give
+  \[
+    \|u\|_{H^{1/2}}^2\le bz,\qquad
+    |v_V(u,u)|\le Kbz\le\tfrac12z^2+\tfrac12K^2b^2 .
+  \]
+  The last scalar inequality is the weighted arithmetic--geometric mean
+  inequality at weights $1/2,1/2$ and nonnegative bases $z^2,(Kb)^2$, including
+  zero norms. Since $q_V = z^2-b^2-v_V(u,u)$, it follows that
+  \[
+    q_V+cb^2\ge\tfrac12z^2+(1+K^2/2)b^2,\qquad
+    q_V+cb^2\le\tfrac32z^2+(1+3K^2/2)b^2\le L_Kz^2.
+  \]
+  The lower bound dominates both $z^2/2$ and $b^2$. Thus, this densely defined
+  Hermitian form is semibounded and its shifted norm is equivalent to the
+  complete $H^1$ norm. It is closed in the definition
+  of~\cite{teschl:14:mathematical}*{p.~80}.
+  From~\cite{teschl:14:mathematical}*{Theorem~2.14, p.~81, (2.63)}, it
+  represents a unique self-adjoint $H_V$. This representation is independent of
+  the admissible shift. From that book's Theorem~3.6 and~(3.51)--(3.53), p.~109,
+  applied after shifting, we obtain~\eqref{E:signed-form-domain}. Here $A \ge 1$
+  is initially its form lower bound. A bounded spectral slice below one would
+  produce a unit $D(A)$ test contradicting that form bound; hence it is also the
+  spectral lower bound. Lemma~\ref{L:signed-spectral-wave} records the full
+  bottom argument.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We compare fractional powers through resolvent
+  order.
+  The lower shifted bound controls both the $H^1$ norm and the $L^2$ norm, so
+  completion in the shifted form norm keeps the prescribed form domain. The
+  upper bound gives the reverse norm comparison. This is what permits
+  application of the closed-form representation theorem rather than treating
+  the rough potential as a bounded $L^2$ multiplier.
+  Set $B_0 = 1-\Delta$. On the common form domain, $\tfrac12B_0 \le A \le
+  L_KB_0$. We prove the needed square-root comparison rather than assuming an
+  order rule for arbitrary operator powers. For $T_0,S_0 \ge 1$ with common form
+  domain and $q_{T_0} \le q_{S_0}$, completing the square in the shifted form
+  norm gives
+  \[
+    \langle f,(T_0+t)^{-1}f\rangle
+    =\sup_u\{2\operatorname{Re}\langle f,u\rangle
+    -q_{T_0}(u)-t\|u\|^2\}
+    \ge\langle f,(S_0+t)^{-1}f\rangle,\quad t>0 .
+  \]
+  The scalar identity $\sqrt x = \pi^{-1}\int_0^\infty t^{-1/2}x/(x+t)\ud t$
+  follows by $t = xv^2$. Positive spectral integration and Tonelli now imply
+  $T_0^{1/2} \le S_0^{1/2}$ as forms, with their domain inclusions:
+  $I-t(T_0+t)^{-1} \le I-t(S_0+t)^{-1}$. Apply this to $(B_0,2A)$ and
+  $(A,L_KB_0)$. Both operators in each pair are at least one. The resulting
+  inequalities give~\eqref{E:signed-quarter-phase}, including equality of its
+  domains. For $v \in L^2$ the $L^2$-duality norm against $\|A^{1/4}u\|_2$ is
+  $\|A^{-1/4}v\|_2$: Cauchy--Schwarz gives the upper bound, and $u = A^{-1/2}v$
+  gives equality after normalization. Duality and completion therefore identify
+  the negative phase. Uniqueness of the form, resolvent and spectral calculus
+  makes these constructions commute with real conjugation. This proves
+  Proposition~\ref{P:signed-closed-form}.
+\end{proof}
+
+Proposition~\ref{P:signed-closed-form} gives the operator $H_V$ and compares
+the norms built from $A^{1/4}$ with those of $E$. We now locate the bottom of
+the spectrum of $H_V$ and bound the wave that its spectral calculus defines on
+$E$. The bound allows exponential growth at the rate $\lambda(V)$.
+
+\begin{lemma}[The bottom and spectral wave]\label{L:signed-spectral-wave}
+  Write $P_V^E$ for the evolution in~\eqref{E:signed-spectral-matrix}, and $S_E$
+  for the free restriction from Lemma~\ref{L:constant-phase-free}. Put
+  \[
+    \beta(V)=\inf_{\substack{u\in H^1\\\|u\|_2=1}}q_V(u),
+    \qquad \lambda(V)=\sqrt{-\beta(V)} .
+  \]
+  Then $\beta(V) = \inf\operatorname{spec}H_V$ and $-K^2 \le \beta(V) \le 0$.
+  The spectral wave on $E$ has the bound
+  \begin{equation}\label{E:signed-E-wave}
+    \|P_V^E(t)\|\le8(1+K)^2(1+t)e^{\lambda(V)t},\qquad t\ge0.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We identify the form infimum with the spectral bottom and use the compact
+  support to show that it is nonpositive. We then estimate the spectral wave
+  matrix in its adapted phase norm and transfer the estimate to the fixed
+  Sobolev phase.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We locate the spectral bottom.
+  For unit $u$, $z = \|u\|_{H^1} \ge 1$ gives $q_V(u) \ge z^2/2-1-K^2/2 \ge
+  -(1+K^2)/2 \ge -K^2$. Conversely dilate a unit compact smooth bump and
+  translate its whole support outside $\operatorname{supp}m_R$. Its potential
+  pairing is zero and its kinetic energy tends to zero. Thus, $\beta \le 0$.
+  Real and complex form infima agree because a complex diagonal splits into the
+  two real diagonals. The spectral form formula
+  in~\cite{teschl:14:mathematical}*{(3.52)--(3.53)} identifies this form infimum
+  with the spectral bottom. For clarity, a bounded spectral slice below the form
+  lower bound would give a unit form test violating that bound. Conversely the
+  form integral is bounded below by the spectral infimum. The spectrum is
+  nonempty: a unit vector's scalar spectral measure has mass one and a support
+  point, and normalized projections onto arbitrarily small bounded neighborhoods
+  give approximate eigenvectors, excluding a bounded inverse there. Conversely,
+  off the closed PVM support $\Sigma$ the Borel function $(h-z)^{-1}$, set to
+  zero off $\Sigma$, is bounded for real $z\notin\Sigma$, as is $h/(h-z)$ on
+  $\Sigma$. Its calculus maps into $D(H_V)$ and is a two-sided resolvent inverse
+  on the appropriate domains. Thus, the spectrum is precisely $\Sigma$. Hence,
+  $\lambda \le K$ and every spectral value $h$ has $h+c \ge 2$.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We estimate the spectral matrix in an equivalent
+  phase norm.
+  Use the phase norm $\|(u,v)\|_{E_A}^2 = \|A^{1/4}u\|_2^2+\|A^{-1/4}v\|_2^2$.
+  With $M_K = L_K^{1/4}$, the preceding proposition and its dual give
+  $M_K^{-1}\|z\|_E \le \|z\|_{E_A} \le M_K\|z\|_E$. The condition-number cost is
+  $M_K^2 = \sqrt{3(1+K^2)} \le 2(1+K)$. Define $C_t(h),S_t(h)$ by $\cos(t\sqrt
+  h),\sin(t\sqrt h)/\sqrt h$ for $h > 0$, by $1,t$ at zero, and by
+  $\cosh(t\sqrt{-h}),\sinh(t\sqrt{-h})/\sqrt{-h}$ for $h < 0$. In the $E_A$
+  isometry the wave matrix is
+  \begin{equation}\label{E:signed-spectral-matrix}
+    \begin{pmatrix}
+      C_t(h)&\sqrt{h+c}\,S_t(h)\\
+      -hS_t(h)/\sqrt{h+c}&C_t(h)
+    \end{pmatrix}.
+  \end{equation}
+  For $h \ge 0$, the entries are bounded using $|C_t| \le 1$, $|S_t| \le
+  \min(t,h^{-1/2})$, $\sqrt{h+c}|S_t| \le 1+\sqrt c\,t$ and $|hS_t|/\sqrt{h+c}
+  \le 1$; at zero the off-diagonals are $\sqrt c\,t,0$. For $\beta \le h < 0$,
+  they are bounded using $|C_t| \le e^{\lambda t}$, $|S_t| \le te^{\lambda t}$,
+  $\sqrt{h+c}|S_t| \le \sqrt c\,te^{\lambda t}$ and $|hS_t|/\sqrt{h+c} \le
+  Ke^{\lambda t}$. There is no division by $\lambda$. Since $\sqrt c \le 2K$,
+  each entry is at most $2(1+K)(1+t)e^{\lambda t}$. Bounded Borel calculus
+  from~\cite{teschl:14:mathematical}*{Theorem~3.1, pp.~102--103,
+  (3.18)--(3.21)}, the two-by-two matrix norm bound and the condition-number
+  cost give~\eqref{E:signed-E-wave}. Functions can be set to zero off the
+  spectral support. Spectral dominated convergence gives strong continuity, and
+  scalar addition identities give the group property. The same matrix and bounds
+  apply on the weighted graph levels $D(A^{1/2})\times L^2$ and $D(A)\times
+  D(A^{1/2})$. Spectral cutoffs justify their extensions and continuity there.
+  For negative spectral values, the lower off-diagonal estimate can be read
+  without dividing by $\lambda$: its absolute value is
+  $\sqrt{-h}\sinh(t\sqrt{-h})/\sqrt{h+c}$. The bounds $\sqrt{-h}\le K$ and
+  $h+c\ge2$ make this at most $Ke^{\lambda t}$. Thus, the estimate also
+  remains meaningful when the bottom rate is zero.
+  This proves Lemma~\ref{L:signed-spectral-wave}.
+\end{proof}
+
+Lemma~\ref{L:signed-spectral-wave} bounds a wave defined by spectral
+calculus, and only on $E$. We still have to identify it with the physical wave
+and to include the two constant columns of $F$.
+
+\begin{proposition}[Identification with the physical wave]
+  \label{P:signed-physical-wave}
+  The spectral wave in Lemma~\ref{L:signed-spectral-wave} is the
+  bounded-perturbation, equivalently Young, physical wave on $E$. Its extension
+  on $F$ satisfies
+  \begin{equation}\label{E:signed-F-wave}
+    \|P_V(t)\|_{\mathcal{L}(F)}
+    \le16(1+K)^4(1+t)^3e^{\lambda(V)t},\qquad t\ge0.
+  \end{equation}
+  Both constant response columns are included.
+\end{proposition}
+
+\begin{proof}
+  We first embed the form operator domain into the free generator domain. The
+  spectral solution then satisfies the physical Duhamel identity on dense
+  graph data. We extend that identity and include the constant columns by
+  variation of constants.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the graph-continuous embedding.
+  The imported form representation \cite{teschl:14:mathematical}*{Theorem~2.14,
+  p.~81, (2.63)}, tested against compact smooth functions, gives $H_Vu = -\Delta
+  u-Vu$ in distributions for $u \in D(H_V)$. Such $u$ lies in $H^1$ and $Vu \in
+  H^{-1/2}$. Consequently, $(1-\Delta)u = H_Vu+Vu+u \in H^{-1/2}$, so
+  $D(H_V)\hookrightarrow H^{3/2}$. The embedding is graph-continuous:
+  by~\eqref{E:signed-form-bounds}, $\|u\|_{H^1}^2 \le 2\langle Au,u\rangle \le
+  \|Au\|_2^2+\|u\|_2^2$, and the distributional equation bounds the $H^{3/2}$
+  norm by this graph norm.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the free generator and apply the
+  interaction identity.
+  The generator of the free $E$ group is $A_0(u,v) = (v,\Delta u)$ on
+  $H^{3/2}\times H^{1/2}$. Indeed, differentiate its Fourier matrix after a
+  frequency cutoff, dominate by that graph norm and remove the cutoff.
+  Conversely any strong generator derivative has those distributional
+  components; they require $v \in H^{1/2}$ and $\Delta u \in H^{-1/2}$, hence $u
+  \in H^{3/2}$. No operator-norm differentiability of the group is used.
+
+  Start spectral data in $D(A)\times D(A^{1/2}) = D(H_V)\times H^1$. The
+  preceding graph-level estimates give continuous graph trajectories and $C^1$
+  trajectories in $H^1\times L^2$, with $u_t = v$, $v_t = -H_Vu$. This follows
+  first on bounded spectral cutoffs and then uniformly on finite horizons in the
+  graph norms by spectral dominated convergence
+  and~\cite{teschl:14:mathematical}*{Theorem~3.2, p.~104, (3.29)--(3.33)}. The
+  projections $1_{[1,n]}(A)$ approximate every graph datum and the same weighted
+  matrix bounds control all cutoff tails on those horizons. Graph embedding
+  gives continuity in $D(A_0)$ and $z_t = A_0z+L_Ez$ in $E$, where $L_E = L|_E$.
+  The strong-group chain rule on this domain yields
+  \[
+    S_E(-t)z(t)=z(0)+\int_0^t S_E(-s)L_Ez(s)\ud s .
+  \]
+  Graph data are dense in $E$: spectral cutoffs make $D(A)$ dense in $D(A^{1/2})
+  = H^1$, and $H^1$ is dense in both $H^{1/2}$ and $H^{-1/2}$. Boundedness on
+  finite horizons extends this identity to all $E$. Volterra uniqueness by
+  Picard iteration identifies the physical wave. No $D(A^{3/4}) = H^{3/2}$
+  assertion is needed.
+
+  The two domain requirements are different: the free generator requires
+  displacement in $H^{3/2}$ and velocity in $H^{1/2}$, while the spectral
+  graph data are in $D(H_V)\times H^1$. The embedding just proved supplies the
+  first requirement, and the ordinary Sobolev inclusion supplies the second.
+  This justifies differentiating the interaction picture on those data before
+  passing by density.
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify the ordinary and Young flows on the
+  extended phase.
+  On $F$, bounded $L$ and strongly continuous $S_F$ similarly define a unique
+  Duhamel flow. On $[0,T]$, the $n$th Volterra term has bound
+  $C_T^{n+1}\|L\|^nT^n/n!$. Uniqueness makes horizons consistent and gives
+  composition. Its interaction primitive is $\int_0^t S_F(-s)LS_F(s)\ud s$.
+  Compactness of $L$, and strong continuity of the group and its adjoint, give
+  norm-continuity of the conjugated compact operator, as in
+  Proposition~\ref{P:cameron-actual-embedding}. Thus, this primitive is
+  Lipschitz and its ordinary equation is exactly the Young equation.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We bound both constant response columns.
+  For initial $(e,c_1,c_2)$ the constant coordinates are $(c_1+tc_2,c_2)$ and
+  the $E$ component is
+  \[
+    P_V^E(t)e+\int_0^t P_V^E(t-s)(0,V(c_1+sc_2))\ud s .
+  \]
+  The bounded $E$-valued Fubini argument proving \eqref{E:compact-F-block}
+  applies: substitute the $E$ Duhamel formula under this integral and
+  interchange the absolutely bounded finite time triangle. It solves the full
+  system, and uniqueness identifies it. No ground positivity or gap is used. The
+  forcing norm is at most $K(1+s)|(c_1,c_2)|$. Since $\lambda \ge 0$ and
+  $\int_0^t(1+t-s)(1+s)\ud s \le (1+t)^3$, the full norm is at most
+  \[
+    (1+t)^3e^{\lambda t}
+    \{8(1+K)^2\|e\|+[8K(1+K)^2+1]|(c_1,c_2)|\}.
+  \]
+  The coefficient of $\|e\|$ is bounded by $8(1+K)^3$. The coefficient of the
+  constant-coordinate norm is at most $9(1+K)^3$, since $K\le1+K$ and
+  $1\le(1+K)^3$. Cauchy--Schwarz on these two scalar components therefore
+  gives the factor $\sqrt{8^2+9^2}$ in the following estimate.
+  Scalar Cauchy--Schwarz and $\sqrt{8^2+9^2} < 13$ bound this by
+  $13(1+K)^3(1+t)^3e^{\lambda t}\|(e,c_1,c_2)\|_F$. This implies the stated
+  sufficient bound. This proves Proposition~\ref{P:signed-physical-wave}.
+\end{proof}
+
+===== END new-module.txt =====
+
+===== BEGIN context-model-assumptions.txt =====
+{"source_path": "notes/notes_stratonovich_ham_second_moment.tex", "source_revision": "cdde711c248862f33207860107dd0e6b31d60852", "selection": "LF_RANGE", "role": "UNASSIGNED exact baseline declaration/definition context; no upstream proof assigned or counted.", "bytes": 1986, "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"}
+===== RAW UTF8 SOURCE =====
+\section{Model and standing assumptions}\label{S:model}
+
+We study the hyperbolic Anderson model
+\cite{chen:author2026:time-dependency}*{(1.1)}
+\begin{equation}\label{E:HAM}
+  \frac{\partial^2 u}{\partial t^2}(t,x)=\Delta u(t,x)+\W(t,x)u(t,x),
+  \qquad u(0,x)=1,\quad \frac{\partial u}{\partial t}(0,x)=0,
+\end{equation}
+for $(t,x) \in \R_+\times\R^d$, $d \in \{1,2,3\}$, interpreted in the
+Stratonovich sense (limit of classical wave equations driven by smoothed noises
+$\W_{\epsilon,\delta}$). The noise is centered Gaussian with
+\begin{equation}\label{E:cov}
+  \operatorname{Cov}\big(\W(s,x),\W(t,y)\big)=|s-t|^{-\alpha_0}\gamma(x-y),
+  \qquad 0<\alpha_0<1,
+\end{equation}
+where $\gamma \ge 0$ is nonnegative definite with spectral measure $\mu$.
+
+\begin{hypothesis}[Homogeneous covariance]\label{H:homog}
+  Let $d \in \{1,2,3\}$ and $0 < \alpha_0 < 1$. The spatial covariance is a
+  nonnegative, even, positive-definite tempered Radon measure $\Gamma$ on
+  $\R^d$, with positive even tempered Radon spectral measure $\mu$ in the
+  convention
+  \[
+    \Gamma=\int e^{i\xi\cdot x}\mu(\ud\xi)
+    \quad\text{in the sense of tempered distributions}.
+  \]
+  The symbol $\gamma$ in~\eqref{E:cov} denotes this covariance as a function
+  when one exists, and as a distribution otherwise. For every Borel set $A$ and
+  $c > 0$, $\Gamma(cA) = c^{d-\alpha}\Gamma(A)$, and
+  \begin{equation}\label{E:threshold}
+    \alpha_0+\alpha<2,
+  \end{equation}
+  with $0 < \alpha < d$, or $\alpha = d = 1$. In particular, the last case
+  includes spatial white noise $\Gamma = \delta_0$.
+\end{hypothesis}
+
+\paragraph{Zero covariance.}
+Hypothesis~\ref{H:homog} allows $\Gamma = 0$ by design. In this case the
+centered Gaussian noise is $\W = 0$, and the solution with initial data
+$(1,0)$ is $u(t,x) = 1$. Thus $\E|u(t,x)|^p = 1$ for every $p > 0$, and
+all normalized logarithmic moment rates are zero. Results asserting strict
+positivity of covariance-dependent quantities impose $\Gamma \ne 0$ locally.
+
+
+===== END context-model-assumptions.txt =====
+
+===== BEGIN context-constant-young-baseline.txt =====
+{"source_path": "notes/integrated_constant_phase_young.tex", "source_revision": "cdde711c248862f33207860107dd0e6b31d60852", "selection": "WHOLE_FILE", "role": "UNASSIGNED complete baseline upstream module. Stated inputs/definitions may be used under checked application hypotheses; these proofs are NOT assigned or counted as additional reviewed proofs.", "bytes": 27376, "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"}
+===== RAW UTF8 SOURCE =====
+\section{Young evolution with constant initial data}
+\label{S:constant-phase-young}
+
+We use the fixed $R,T,E,\gamma,\theta,\beta$ of~\eqref{E:driver-parameters}, and
+choose the allowed even mask $m = \zeta_R$ with $0 \le m \le 1$. All constants
+in this section can depend on these fixed data, the model and the auxiliary
+physical cutoffs. There is no uniform estimate as $R$ or $T$ grows.
+
+\subsection{The distributional phase and its free evolution}
+
+Define the real Hilbert space
+\begin{equation}\label{E:constant-phase-space}
+  F=E\oplus\R^2,\qquad
+  \|(e,c_1,c_2)\|_F^2=\|e\|_E^2+c_1^2+c_2^2,\qquad
+  e_0=(0,1,0).
+\end{equation}
+Its distributional interpretation is $(e,c_1,c_2)\mapsto(e_1+c_1,e_2+c_2)$. Let
+$i:E \to F$ denote $e\mapsto(e,0,0)$ and let $\pi_C:F \to \R^2$ be the
+constant-coordinate projection.
+
+\begin{lemma}[Constants and finite propagation]\label{L:constant-phase-free}
+  The distributional interpretation of $F$ is continuous and injective. The
+  space is complete and separable, and $iE$ is closed and proper. For every real
+  $\psi \in C_c^\infty(\R^d)$,
+  \begin{equation}\label{E:constant-phase-cutoff}
+    L_\psi(e,c_1,c_2)=\psi e+(c_1\psi,c_2\psi)
+  \end{equation}
+  is bounded from $F$ to $E$. The free wave group on $F$ is
+  \begin{equation}\label{E:constant-phase-free}
+    S_F(t)(e,c_1,c_2)=(S(t)e,c_1+tc_2,c_2).
+  \end{equation}
+  It is strongly continuous and bounded on finite horizons and has finite
+  propagation for the total distributional data, including local cancellation
+  between $e$ and the constants.
+\end{lemma}
+
+\begin{proof}
+  A nonzero constant has Fourier transform a nonzero multiple of $\delta_0$.
+  Every $H^\sigma$ Fourier transform is locally $L^2$ near zero, since its
+  weight is bounded above and below there. A locally $L^2$ function $f$ cannot
+  represent $\delta_0$: testing against $\varphi(\xi/\varepsilon)$, with
+  $\varphi(0) = 1$ and $\varphi$ compactly supported in $B_1$, bounds its
+  integral by
+  \[
+    \|f\|_{L^2(B_\varepsilon)}
+    \varepsilon^{d/2}\|\varphi\|_2\longrightarrow0,
+  \]
+  whereas $\delta_0$ gives one. Thus, constants lie in neither $H^{1/2}$ nor
+  $H^{-1/2}$; the interpretation is injective. Sobolev duality and the two test
+  integrals prove continuity into distributions, uniformly on bounded families
+  of compact tests. Completeness, separability and the closed proper inclusion
+  follow from the Hilbert direct sum.
+
+  Multiplication by $\psi$ is bounded on both Sobolev entries. Indeed, the
+  Peetre inequalities give $\langle\xi\rangle^\sigma\langle\eta\rangle^{-\sigma}
+  \le 2^{|\sigma|/2}\langle\xi-\eta\rangle^{|\sigma|}$. In the unitary Fourier
+  convention its weighted kernel is therefore bounded by convolution with the
+  $L^1$ function $2^{|\sigma|/2}c_d|\widehat{\psi}(q)|\langle
+  q\rangle^{|\sigma|}$, where $c_d = (2\pi)^{-d/2}$. The $L^1*L^2$ bound applies
+  at $\sigma = \pm1/2$; the two constant columns are also in $E$. This proves
+  boundedness of~\eqref{E:constant-phase-cutoff}.
+
+  The finite-dimensional block in~\eqref{E:constant-phase-free} and the strong,
+  finite-horizon bound for $S(t)$ from Lemma~\ref{L:driver-gain-localization}
+  prove the group assertions. To verify its physical meaning, for $t > 0$
+  consider the matrix of compactly supported distributions
+  \[
+    \begin{pmatrix}
+      \partial_tG_d(t)&G_d(t)\\
+      \Delta G_d(t)&\partial_tG_d(t)
+    \end{pmatrix}.
+  \]
+  The source Green convention gives $\widehat{G}_d(t)(\xi) =
+  c_d\sin(t|\xi|)/|\xi|$; hence its convolution multiplier is the sine quotient,
+  and the differentiated multipliers are $\cos(t|\xi|)$ and
+  $-|\xi|\sin(t|\xi|)$. The matrix agrees with $S(t)$ on Schwartz phases.
+  Convolution by a compact distribution is continuous on tempered distributions:
+  its transpose convolves a Schwartz test with the reflected compact
+  distribution, continuously in all Schwartz seminorms. Schwartz approximation
+  in $E$ extends the identity to $E$. The masses of the four entries are
+  $1,t,0,1$, so constants give exactly~\eqref{E:constant-phase-free}. Time
+  reversal handles $t < 0$. Each entry is supported in $B_{|t|}$, also for the
+  three-dimensional sphere kernel. If the total initial distribution vanishes on
+  an enlarged region, each translated kernel tests zero there, so the evolved
+  total distribution vanishes on the smaller cone. This argument permits
+  cancellation between its Sobolev and constant parts. This proves
+  Lemma~\ref{L:constant-phase-free}.
+\end{proof}
+
+\subsection{The two columns for constant initial data}
+
+Choose real $\chi \in C_c^\infty$, equal to one on $B_{2R+T+1}$ and supported in
+$B_{2R+T+2}$, and choose real compact smooth $\psi = 1$ on a neighborhood of
+$\operatorname{supp}\chi$. Write $M_E = M_R$ and $M_E^\rho = M_{Y_\rho}$ for the
+paths already constructed, with the same original deterministic coefficients.
+
+\begin{proposition}[Extended operator path]\label{P:constant-phase-driver}
+  As identities of continuous operator paths,
+  \begin{equation}\label{E:constant-phase-localization}
+    D_\chi M_E=M_E=M_ED_\chi,
+  \end{equation}
+  and the same holds for each fixed $\rho$. Define
+  \begin{equation}\label{E:constant-phase-driver}
+    A_E=M_EL_\psi,\qquad A=iA_E,\qquad
+    A_E^\rho=M_E^\rho L_\psi,\qquad A^\rho=iA_E^\rho.
+  \end{equation}
+  These are independent of $\psi$, have compact values, and satisfy $Ai = iM_E$,
+  $\pi_CA = 0$ and their source counterparts. In every finite $L^pC^\theta$,
+  $A^\rho \to A$ at arbitrary relative source-width rates. Their norms have
+  uniform $\sqrt p$ moment bounds and a common finite square-exponential moment.
+  The original $A$ is measurable with respect to the given $W$.
+\end{proposition}
+
+\begin{proof}
+  Lemma~\ref{L:driver-gain-localization} gives both localizations for every
+  deterministic $A_j(0,t)$. The original finite sums retain them.
+  Proposition~\ref{P:source-gaussian-transfer} constructs the source finite sums
+  with exactly these coefficients and correlated $Y_\rho(f_j)$. Their $C^\theta$
+  limits preserve both identities. A uniformly convergent subsequence, or
+  rational times and continuous paths,
+  gives~\eqref{E:constant-phase-localization} for all $t$ on one event. Use a
+  separate event for each fixed $\rho$.
+
+  For two choices $\psi,\psi'$, $(L_\psi-L_{\psi'})z \in E$ and
+  $D_\chi(L_\psi-L_{\psi'})z = 0$. The right localization kills this difference.
+  For $z = ie$, $D_\chi D_\psi e = D_\chi e$ and hence $Ai = iM_E$. The constant
+  columns are precisely $iM_E(\psi,0)$ and $iM_E(0,\psi)$; they are retained.
+  Bounded composition preserves compactness and transfers
+  \eqref{E:source-driver-limit} and the Gaussian norm bounds
+  to~\eqref{E:constant-phase-driver}. If $\|X\|_{L^p} \le C\sqrt p$, then $\E
+  X^{2n} \le C^{2n}(2n)^n$. Since $n! \ge (n/e)^n$, the exponential series gives
+  $\E e^{cX^2} < \infty$ uniformly when $2ecC^2 < 1$. Finally, $A$ is a
+  deterministic bounded transform of the original $W$-measurable operator path.
+  This proves Proposition~\ref{P:constant-phase-driver}.
+\end{proof}
+
+\begin{lemma}[Ordinary response on all of $F$]\label{L:constant-source-response}
+  For fixed $\rho$ put $b(r) = mY_\rho(r)$ and define
+  \[
+    B_F(b)(e,c_1,c_2)=(0,b(e_1+c_1))\in E.
+  \]
+  Then
+  \begin{equation}\label{E:constant-source-response}
+    A_E^\rho(t)z=\int_0^tS(-r)B_F(b(r))S_F(r)z\ud r
+  \end{equation}
+  as a statewise strong integral. Its primitive is Lipschitz in
+  $\mathcal{B}(F,E)$ and the identity holds for all states and times on one
+  event for this fixed $\rho$.
+\end{lemma}
+
+\begin{proof}
+  The source regularity gives one compact spatial support for $b$, continuity in
+  $L^\infty$ and $L^2$, and bounded spatial derivatives on the horizon. Since
+  $e_1 \in L^2$ and $\|\cdot\|_{H^{-1/2}} \le \|\cdot\|_2$,
+  \[
+    \|B_F(b)\|_{\mathcal{B}(F,E)}
+    \le\|b\|_\infty+\|b\|_2.
+  \]
+  Strong continuity and finite-horizon bounds of both free groups make the
+  integrand strongly continuous on each state and uniformly bounded as an
+  operator. Integrating its bound proves operator-norm Lipschitz increments
+  without assuming a Banach-valued operator derivative.
+
+  The total initial distributions of $z$ and $iL_\psi z$ agree on the entire
+  enlarged ball where $\psi = 1$. Lemma~\ref{L:constant-phase-free} gives
+  equality of the free displacements near $\operatorname{supp}m$ for $0 \le r
+  \le T$. Multiplication by $b(r)$ kills the difference. Apply
+  Proposition~\ref{P:source-ordinary-response} to the $E$ state $L_\psi z$ to
+  obtain~\eqref{E:constant-source-response}. Separability and rational times,
+  followed by boundedness and continuity, give its path identity. This proves
+  the constant columns directly; no density of $E$ in $F$ is used. This proves
+  Lemma~\ref{L:constant-source-response}.
+\end{proof}
+
+\subsection{The exact linear Young equation}
+
+We use Young's integration theory~\cite{young:36:inequality} in its
+Banach-space form. The estimate is stated by
+Friz and Hairer~\cite{friz.hairer:20:course}*{Sections~1.4--1.5, 4.1, (4.3), pp.~13, 61--62}.
+For $D,V$ with exponent $\theta > 1/2$ and bounded bilinear multiplication, left
+composition gives
+\begin{equation}\label{E:constant-young-estimate}
+  \left\|\int_s^t\ud D(r)V(r)-D(s,t)V(s)\right\|
+  \le C_\theta[D]_\theta[V]_\theta|t-s|^{2\theta}.
+\end{equation}
+The Banach spaces here are $\mathcal{B}(F)$, and multiplication is bounded with
+constant one. We derive the linear solution and stability estimates below rather
+than invoke a nonlinear bounded-vector-field theorem.
+
+\begin{proposition}[Linear Young evolution]\label{P:constant-young-linear}
+  For every $D \in C^\theta([0,T];\mathcal{B}(F))$ with $D(0) = 0$ there is a
+  unique $C^\theta$ solution, in the terminal variable, of
+  \begin{equation}\label{E:constant-young-equation}
+    U_D(t,s)=I+\int_s^t\ud D(r)U_D(r,s).
+  \end{equation}
+  It has the composition law, invertible values and joint operator-norm
+  continuity on $0 \le s \le t \le T$. The map $D\mapsto U_D$ is locally
+  Lipschitz into the uniform time-triangle norm, and
+  \begin{equation}\label{E:constant-young-growth}
+    \sup_{s\le t\le T}\|U_D(t,s)\|
+    \le C_T\exp\big(C_T(1+\|D\|_{C^\theta})^{1/\theta}\big).
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  On an interval $[a,a+\ell]$ use the complete scaled norm $N_\ell(V) =
+  \sup\|V\|+\ell^\theta[V]_\theta$ and put $I_D(V)(t) = \int_a^t\ud D\,V$.
+  Applying~\eqref{E:constant-young-estimate} to every subinterval gives
+  \begin{align*}
+    \sup\|I_D(V)\|
+    &\le[D]_\theta\ell^\theta\sup\|V\|
+    +C_\theta[D]_\theta\ell^{2\theta}[V]_\theta,\\
+    [I_D(V)]_\theta
+    &\le[D]_\theta\sup\|V\|
+    +C_\theta[D]_\theta\ell^\theta[V]_\theta.
+  \end{align*}
+  Thus, with $c_\theta = 2\max(1,C_\theta)$,
+  \begin{equation}\label{E:constant-young-local}
+    N_\ell(I_D(V))
+    \le c_\theta[D]_\theta\ell^\theta N_\ell(V).
+  \end{equation}
+  Take $K \ge 1$, $[D]_\theta \le K$, and choose $\ell$ with $c_\theta
+  K\ell^\theta \le 1/4$. The map $V\mapsto V_a+I_D(V)$ is a contraction on the
+  complete affine space of paths starting at $V_a$. Its solution satisfies
+  $N_\ell(V) \le (4/3)\|V_a\| \le 2\|V_a\|$.
+
+  To compare $D,D'$, require both seminorms at most $K$ and write $\delta =
+  \|D-D'\|_{C^\theta}$, $W = V-V'$. Subtracting gives $W =
+  W_a+I_D(W)+I_{D-D'}(V')$. Absorbing the factor $1/4$ yields
+  \begin{equation}\label{E:constant-young-difference}
+    N_\ell(W)\le2\|W_a\|
+    +2c_\theta\ell^\theta\delta N_\ell(V').
+  \end{equation}
+  Cover $[s,T]$ by at most $n_{K,T}$ such pieces. If the second initial norm is
+  $B$, its norm on piece $j$, indexed from zero, is at most $2^{j+1}B$. With
+  $E_j$ the difference at its left endpoint, induction gives
+  \[
+    E_{j+1}\le2E_j+2^{j+2}c_\theta\ell^\theta\delta B,\qquad
+    E_j\le2^jE_0+j2^{j+1}c_\theta\ell^\theta\delta B.
+  \]
+  Equation~\eqref{E:constant-young-difference} gives the same bound inside each
+  piece; a shorter final piece only reduces the coefficient. For evolutions,
+  $E_0 = 0$ and $B = 1$. The number of pieces is uniform in $s,t$, proving local
+  Lipschitz dependence in the full triangle norm.
+
+  Now choose $K = 1+\|D\|_{C^\theta}$. At most
+  $C_T(1+\|D\|_{C^\theta}^{1/\theta})$ pieces suffice. Each multiplies the norm
+  by at most two, giving \eqref{E:constant-young-growth}. Uniqueness patches the
+  solutions; right multiplication by the preceding evolution gives the
+  composition law. On a small piece~\eqref{E:constant-young-local} gives
+  $\|U_D-I\|_\infty \le 1/3$, so a Neumann series proves local invertibility,
+  then products give global invertibility. Finally, $U_D(t,s) =
+  U_D(t,0)U_D(s,0)^{-1}$ proves joint norm continuity, since $U_D(\cdot,0)$ is
+  continuous and inversion is continuous on invertible operators. This proves
+  Proposition~\ref{P:constant-young-linear}.
+\end{proof}
+
+Proposition~\ref{P:constant-young-linear} concerns one deterministic operator
+path. We now apply it to the random paths $A$ and $A^\rho$
+of~\eqref{E:constant-phase-driver} and pass to the physical flow on $F$.
+
+\begin{proposition}[Gaussian Young and physical flows]
+  \label{P:constant-gaussian-flow}
+  Apply Proposition~\ref{P:constant-young-linear} to $A,A^\rho$. The resulting
+  flows are strongly measurable in uniform triangle norm, have every finite norm
+  moment and satisfy
+  \begin{equation}\label{E:constant-flow-limit}
+    U_{A^\rho}\longrightarrow U_A
+    \quad\hbox{in every finite }L^p
+    \left(\sup_{0\le s\le t\le T}\|\cdot\|_{\mathcal{B}(F)}\right).
+  \end{equation}
+  They preserve the interaction constant coordinates:
+  \begin{equation}\label{E:constant-flow-range}
+    \pi_CU_A(t,s)=\pi_C,\qquad
+    (U_A(t,s)-I)F\subset iE,
+  \end{equation}
+  and likewise for the source. The physical flow is
+  \begin{equation}\label{E:constant-physical-flow}
+    P_A(t,s)=S_F(t)U_A(t,s)S_F(-s).
+  \end{equation}
+  It has composition and strong continuity on states, physical constant block
+  $(c_1,c_2)\mapsto(c_1+(t-s)c_2,c_2)$, all finite moments and the analogous
+  uniform $L^p$ source convergence. Its difference from the free flow has range
+  in $iE$.
+\end{proposition}
+
+\begin{proof}
+  The original paths lie in separable closed path spans by their Gaussian
+  construction. Bounded composition in~\eqref{E:constant-phase-driver} and the
+  continuous Young map preserve strong measurability into
+  $C(\Delta_T;\mathcal{B}(F))$, where $\Delta_T = \{(t,s):0\le s\le t\le T\}$
+  has the uniform norm. Indeed, the continuous image of the separable space of
+  operator paths has separable closure in this triangle space. Applying $\pi_C$
+  to Young Riemann sums gives the first identity
+  in~\eqref{E:constant-flow-range}. Each increment applied to any state lies in
+  $iE$; closedness of this subspace passes the property through sums and limits,
+  giving the second identity.
+
+  Write $X_\rho = \|A^\rho\|_{C^\theta}$ and $X_0 = \|A\|_{C^\theta}$.
+  Proposition~\ref{P:constant-phase-driver} supplies $c_0 > 0$ and $H_0 <
+  \infty$ such that
+  \[
+    \sup_\rho\E e^{c_0X_\rho^2}\le H_0,\qquad
+    \E e^{c_0X_0^2}\le H_0.
+  \]
+  For $K \ge 1$, let $L_K$ be the Lipschitz constant of
+  Proposition~\ref{P:constant-young-linear} on the ball of operator paths of
+  radius $K$, in the whole time-triangle norm. On $\{X_\rho\le K,\ X_0\le K\}$
+  it gives
+  \[
+    \|U_{A^\rho}-U_A\|_\infty
+    \le L_K\|A^\rho-A\|_{C^\theta}.
+  \]
+  Consequently, for $\varepsilon > 0$ and any finite $q \ge 1$, Markov and the
+  union bound give
+  \[
+    \mathbb{P}(\|U_{A^\rho}-U_A\|_\infty>\varepsilon)
+    \le2H_0e^{-c_0K^2}
+    +(L_K/\varepsilon)^q\E\|A^\rho-A\|_{C^\theta}^q.
+  \]
+  At fixed $K$ the second term tends to zero at arbitrary relative source-width
+  rates. Only then let $K \to \infty$ to obtain convergence in probability. No
+  independence of the original, source and residual operator paths is required.
+
+  Put $\nu = 1/\theta < 2$. For each finite $r \ge 1$ and $c > 0$, there is
+  $C_{r,c} < \infty$ such that
+  \[
+    rC_T(1+x)^\nu\le cx^2+C_{r,c},\qquad x\ge0.
+  \]
+  This follows because $(1+x)^\nu/x^2 \to 0$ as $x \to \infty$, while the
+  remainder is bounded on compact intervals. Use $c \le c_0$
+  and~\eqref{E:constant-young-growth} to obtain
+  \[
+    \sup_\rho\E\|U_{A^\rho}\|_\infty^r<\infty,\qquad
+    \E\|U_A\|_\infty^r<\infty.
+  \]
+  In particular, for fixed finite $p \ge 1$ and $V_\rho =
+  \|U_{A^\rho}-U_A\|_\infty$, the $2p$ moments of $V_\rho$ are uniformly
+  bounded. For every $\varepsilon > 0$,
+  \[
+    \E V_\rho^p
+    \le\varepsilon^p+
+    (\E V_\rho^{2p})^{1/2}
+    \mathbb{P}(V_\rho>\varepsilon)^{1/2}.
+  \]
+  The second term tends to zero by convergence in probability; then let
+  $\varepsilon\downarrow0$. This proves \eqref{E:constant-flow-limit}. The
+  square-exponential bound used here is an operator path bound; no
+  square-exponential flow bound is needed.
+
+  The free group is strongly continuous and bounded on the horizon. Define
+  $\mathcal{B}_\infty(\Delta_T;\mathcal{B}(F))$ to be the Banach space of all
+  bounded operator families on $\Delta_T$. The deterministic map
+  \[
+    \mathcal{L}(V)(t,s)=S_F(t)V(t,s)S_F(-s)
+  \]
+  is bounded linear from $C(\Delta_T;\mathcal{B}(F))$ into this bounded-family
+  space, with norm at most $C_T^2$, where $C_T \ge \sup_{|r|\le T}\|S_F(r)\|$.
+  Hence, it preserves strong measurability on the separable ranges and gives, in
+  particular,
+  \[
+    \|P_{A^\rho}-P_A\|_\infty
+    \le C_T^2\|U_{A^\rho}-U_A\|_\infty.
+  \]
+  All finite moments and uniform $L^p$ convergence therefore transfer to the
+  physical flows. This does not place those flows in the norm-continuous
+  triangle space or assert operator-norm continuity of the free group. For each
+  fixed state, joint continuity follows by splitting a physical-flow difference
+  into the norm-continuous $U$ difference and two strong free-group differences,
+  using the uniform group bound. Group cancellation gives composition. The
+  finite constant block $J_t(c_1,c_2) = (c_1+tc_2,c_2)$ satisfies $J_tJ_{-s} =
+  J_{t-s}$, which gives the asserted physical constant coordinates from
+  $\pi_CU_A = \pi_C$. Finally,
+  \[
+    P_A(t,s)-S_F(t-s)
+    =S_F(t)(U_A(t,s)-I)S_F(-s)
+  \]
+  has range in $iE$, since $S_F(t)iE = iE$. This proves
+  Proposition~\ref{P:constant-gaussian-flow}.
+\end{proof}
+
+\subsection{Ordinary source solutions and the original tested observable}
+
+So far $P_{A^\rho}$ is defined through Young integrals, not through the source
+equation of Proposition~\ref{P:masked-source-moments}. We now connect the two
+at a fixed source width $\rho$.
+
+\begin{lemma}[Identification with the ordinary source equation]
+  \label{L:constant-source-solution}
+  For fixed $\rho$, the displacement distribution of $P_{A^\rho}(t,0)e_0$ is the
+  locally continuous ordinary source solution $u_\rho^m(t,\cdot)$ from
+  Proposition~\ref{P:masked-source-moments}.
+\end{lemma}
+
+\begin{proof}
+  In~\eqref{E:constant-source-response} let $C(r) = S(-r)B_F(b(r))S_F(r)$. The
+  primitive is $A_E^\rho$. For left endpoints $r_j = t_j$, the Young sums
+  applied to a state $v$ are
+  \[
+    \sum_j\int_{t_j}^{t_{j+1}}iC(r)U_{A^\rho}(r_j,s)v\ud r.
+  \]
+  Uniform continuity of $U$ and the uniform bound for $C$ make these converge to
+  the strong integral with $U(r,s)v$. Thus, the Young equation is precisely the
+  ordinary interaction integral on states. Multiplying by free groups gives the
+  Duhamel equation for displacement and velocity. Its unique $C([0,T];F)$
+  solution follows by the bounded-coefficient Picard argument with the strongly
+  continuous, bounded free group. No operator-norm derivative of $S_F$ is used.
+
+  More explicitly, put $W_0(t) = e_0$ and, for $n \ge 1$,
+  \[
+    W_n(t)=\int_0^t S_F(t-r)iB_F(b(r))W_{n-1}(r)\ud r.
+  \]
+  If $B_T = \sup_r\|B_F(b(r))\|_{\mathcal{B}(F,E)}$, induction on the time
+  simplex gives $\sup_t\|W_n(t)\|_F \le C_T^{n+1}B_T^nT^n/n!$. We take $C_T \ge
+  \max(1,\sup_{|t|\le T}\|S_F(t)\|)$, which also supplies the bound at order
+  zero. The series converges in $C([0,T];F)$. The Duhamel map there has norm at
+  most $C_TB_TT$, so its sum solves the same integral equation and equals the
+  ordinary phase by uniqueness.
+
+  Let $X_0(t,x) = 1$ and $X_n(t) = \int_0^tG_d(t-r)*(b(r)X_{n-1}(r))\ud r$. At
+  fixed $n$ these are continuous in time and smooth in space. Derivatives fall
+  on the smooth compact factor $bX_{n-1}$; Green mass $t-r$ bounds the
+  integrals, while the unit-time measure representation gives time continuity.
+  This is induction using only finitely many bounded derivatives for each fixed
+  derivative order. At $n = 0$ the phase displacement is $X_0$. If the equality
+  holds at $n-1$, multiplication by smooth $b$ identifies the forcing with
+  $(0,f_r)$, where $f_r = b(r)X_{n-1}(r)$ is smooth and compactly supported. For
+  a compact smooth test $\varphi$, continuous distributional testing of the
+  phase integral yields
+  \[
+    \langle[W_n(t)]_1,\varphi\rangle
+    =\int_0^t\int f_r(y)
+    \int G_d(t-r,\ud z)\varphi(y+z)\ud y\ud r
+    =\langle X_n(t),\varphi\rangle.
+  \]
+  Absolute Fubini follows from $\|\varphi\|_\infty\|f_r\|_1(t-r)$, integrable on
+  the horizon because $f_r$ has one compact support and continuous $L^1$ norm.
+  This also covers sphere measures in $d = 3$. Iterating the scalar recursion
+  gives exactly $X_{\rho,n}^m$, with chronological order and all physical mask
+  factors. The scalar compact-cone factorial bound gives locally uniform
+  convergence to $u_\rho^m$, whereas the phase series converges in $F$ and hence
+  in distributions. Their displacement limits agree. This proves
+  Lemma~\ref{L:constant-source-solution}.
+\end{proof}
+
+Lemma~\ref{L:constant-source-solution} holds at each fixed $\rho$. To reach
+the original noise we test against a fixed $\phi$ and use the source
+limit~\eqref{E:constant-flow-limit}.
+
+\begin{proposition}[Original average and original point moment]
+  \label{P:constant-raw-average}
+  Let real $\phi \in C_c^\infty(\R^d)$ be nonnegative with integral one. The
+  bounded functional and original random variable
+  \begin{equation}\label{E:constant-raw-average}
+    O_\phi(e,c_1,c_2)=\langle e_1,\phi\rangle+c_1,\qquad
+    Z_m(t,\phi)=O_\phi P_A(t,0)e_0
+  \end{equation}
+  are well defined, and $Z_m$ is $W$-measurable. At arbitrary relative
+  source-width rates, for every finite $p$,
+  \begin{equation}\label{E:constant-tested-limit}
+    \int\phi(x)u_\rho^m(t,x)\ud x
+    \longrightarrow Z_m(t,\phi)\quad\text{in }L^p.
+  \end{equation}
+  In particular,
+  \begin{equation}\label{E:constant-original-point-transfer}
+    \E|Z_m(t,\phi)|^2\le\E|u(t,0)|^2.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  Sobolev duality gives $\|O_\phi\| \le (\|\phi\|_{H^{-1/2}}^2+1)^{1/2}$. The
+  original operator path is $W$-measurable, and the Young and deterministic maps
+  above are continuous or bounded measurable on their separable ranges. Thus,
+  $Z_m$ is $W$-measurable and does not depend on the auxiliary $J$ used in
+  source realizations. At each fixed $\rho$,
+  Lemma~\ref{L:constant-source-solution} identifies the displacement as a
+  distribution with the ordinary source solution. Testing by this same $\phi$,
+  with $\int\phi = 1$, therefore gives the almost sure identity
+  \[
+    O_\phi P_{A^\rho}(t,0)e_0
+    =C_\phi:=\int\phi(x)u_\rho^m(t,x)\ud x.
+  \]
+  This uses the displacement pairing and its constant displacement coordinate
+  in~\eqref{E:constant-raw-average}; it takes no point trace of an $H^{1/2}$
+  state. All identities here are at one fixed $\rho$, so no uncountable
+  intersection of source-version events is used.
+
+  We verify that $C_\phi$ equals the Bochner $L^2$ average $B_\phi$ from
+  Proposition~\ref{P:masked-source-moments}. That proposition gives the
+  spatially uniform bound $\|u_\rho^m(t,x)\|_2 \le Q_t$, with $Q_t$ also
+  independent of source widths. Scalar Fubini gives
+  \[
+    \E\int|\phi(x)u_\rho^m(t,x)|\ud x
+    \le Q_t\|\phi\|_1<\infty.
+  \]
+  Thus, the ordinary spatial integral exists almost surely. Weighted
+  Cauchy--Schwarz and scalar Fubini also give
+  \[
+    \E|C_\phi|^2
+    \le\|\phi\|_1\int|\phi(x)|\E|u_\rho^m(t,x)|^2\ud x
+    \le Q_t^2\|\phi\|_1^2.
+  \]
+  For every bounded real random variable $\Xi$ on the fixed source space,
+  $V\mapsto\E[\Xi V]$ is a continuous functional on $L^2$. It therefore commutes
+  with the Bochner integral, while scalar Fubini is justified by $\|\Xi\|_\infty
+  Q_t\|\phi\|_1$. Consequently,
+  \[
+    \E[\Xi B_\phi]
+    =\int\phi(x)\E[\Xi u_\rho^m(t,x)]\ud x
+    =\E[\Xi C_\phi].
+  \]
+  Both averages are real $L^2$ variables. Taking $\Xi =
+  \operatorname{sign}(B_\phi-C_\phi)$ yields $\E|B_\phi-C_\phi| = 0$, so the two
+  averages agree almost surely.
+
+  Proposition~\ref{P:constant-gaussian-flow} now gives, for every finite $p$,
+  \[
+    \|B_\phi-Z_m(t,\phi)\|_{L^p}
+    \le\|O_\phi\|\|e_0\|
+    \big\|\|P_{A^\rho}-P_A\|_\infty\big\|_{L^p}
+    \longrightarrow0.
+  \]
+  This is~\eqref{E:constant-tested-limit}, including its $L^2$ case, for the
+  masked Bochner average, with arbitrary relative source-width rates. It
+  supplies the conditional convergence premise of
+  Proposition~\ref{P:masked-canonical-transfer} at the same fixed mask, horizon,
+  original covariance and observable. Since $\phi \ge 0$ and $\|\phi\|_1 = 1$,
+  that proposition gives \eqref{E:constant-original-point-transfer}. Zero
+  covariance gives the free constant solution and equality. All source limits
+  are at fixed mask and horizon, before time asymptotics. This proves
+  Proposition~\ref{P:constant-raw-average}.
+\end{proof}
+
+So far the operator path comes from the noise alone.
+Section~\ref{S:compact-mean-family} also needs a deterministic potential.
+
+\begin{proposition}[Compact deterministic base]\label{P:constant-compact-base}
+  Let $h \in C([0,T];C_c^\infty(K))$ be real for one fixed compact $K$, with all
+  spatial derivatives continuous on that support. The statewise primitive
+  \[
+    A_h(t)=\int_0^t iS(-r)B_F(h(r))S_F(r)\ud r
+  \]
+  is Lipschitz in $\mathcal{B}(F)$, takes values with range in $iE$, and has a
+  bound $C_T\sup_r(\|h(r)\|_\infty+\|h(r)\|_2)$. The flow conclusions above,
+  including moments, source convergence and ordinary-source identification, hold
+  for $A_h+gA$ and $A_h+gA^\rho$, uniformly on bounded displayed deterministic
+  bounds and bounded real $g$. No Cameron-shift identity is asserted here.
+\end{proposition}
+
+\begin{proof}
+  The estimate for $B_F$ and the strong free groups prove the primitive and its
+  Lipschitz bound exactly as in Lemma~\ref{L:constant-source-response}. If
+  $\|A_h\|_{C^\theta} \le H$, $|g| \le G$ and $X = \|A\|_{C^\theta}$, then
+  $\|A_h+gA\|_{C^\theta} \le H+GX$. If $\E e^{cX^2}$ is bounded, choose $c' \le
+  c/(2(1+G^2))$ to obtain
+  \[
+    \E e^{c'\|A_h+gA\|_{C^\theta}^2}
+    \le e^{2c'H^2}\E e^{2c'G^2X^2}<\infty.
+  \]
+  Alternatively $pC(1+H+Gx)^{1/\theta} \le cx^2+C_{p,H,G,c}$ transfers the Young
+  growth estimate directly to all finite moments. Source operator-path
+  convergence, local Young stability and uniform integrability give the same
+  flow convergence. The state-integral and Picard-to-chain arguments apply to
+  $h+gmY_\rho$, whose spatial support lies in one fixed compact union. These are
+  individual estimates and versions, without an uncountable common-parameter
+  event. Only $h = 0$, $g = 1$ enters
+  \eqref{E:constant-original-point-transfer}. This proves
+  Proposition~\ref{P:constant-compact-base}.
+\end{proof}
+
+===== END context-constant-young-baseline.txt =====
+
+===== BEGIN context-compact-gaussian-baseline.txt =====
+{"source_path": "notes/integrated_compact_gaussian.tex", "source_revision": "cdde711c248862f33207860107dd0e6b31d60852", "selection": "WHOLE_FILE", "role": "UNASSIGNED complete baseline upstream module. Stated inputs/definitions may be used under checked application hypotheses; these proofs are NOT assigned or counted as additional reviewed proofs.", "bytes": 30608, "sha256": "caf9e56a5b818f9e5daa02ac3423c354b95c515f1932d92170ec002b0fbaa84a"}
+===== RAW UTF8 SOURCE =====
+\section{Finite Gaussian moments and whole-space Sobolev compactness}
+\label{S:compact-gaussian}
+
+We prove the finite Gaussian and compact-cutoff estimates needed to construct
+the wave operator path. All traces and Schatten norms in this section are
+unnormalized. The spatial states remain on $\R^d$, $d \in \{1,2,3\}$. Here $p$
+is an auxiliary Schatten and Gaussian-moment index. The auxiliary periodic space
+below is used only to factor a compactly supported multiplication operator. No
+infinite Gaussian series or time path is constructed in this section.
+
+\subsection{Finite Gaussian matrices with both variance powers}
+
+\LeanMarker{L:gaussian-scalar-powers}
+\begin{lemma}[Scalar power estimates]\label{L:gaussian-scalar-powers}
+  For $0 < \theta < 1$ and $u,v \ge 0$,
+  \begin{equation}\label{E:gaussian-weighted-power}
+    u^\theta v^{1-\theta} \le \theta u+(1-\theta)v.
+  \end{equation}
+  Consequently, if $L > 0$ and $0 \le q \le L$ are integers, then for real
+  $x,y$,
+  \begin{equation}\label{E:gaussian-integer-power}
+    |x|^q|y|^{L-q}
+    \le \frac qL|x|^L+\frac{L-q}L|y|^L.
+  \end{equation}
+  For nonnegative finite sequences, the usual H\"older inequality holds with
+  exponents $m$ and $m/(m-1)$, $m > 1$. If $Z \ge 0$ has finite expectation $F$
+  and $0 < r < 1$, then $\E Z^r \le F^r$.
+\end{lemma}
+
+\begin{proof}
+  If $v > 0$, divide~\eqref{E:gaussian-weighted-power} by $v$ and put $t = u/v$.
+  The function $\theta t+1-\theta-t^\theta$ decreases to zero at one and then
+  increases, by its derivative $\theta(1-t^{\theta-1})$. Continuity covers $t =
+  0$; if $v = 0$ the inequality is immediate. For $0 < q < L$, apply this with
+  $u = |x|^L$, $v = |y|^L$ and $\theta = q/L$. The endpoint cases $q = 0,L$ are
+  identities, with the ordinary integer convention $a^0 = 1$.
+
+  To prove finite H\"older, divide the two sequences by their respective
+  $\ell^m$ and $\ell^{m/(m-1)}$ norms. If either norm vanishes, the result is
+  immediate. Apply~\eqref{E:gaussian-weighted-power} with $\theta = 1/m$ to the
+  corresponding normalized powers and sum; the sum of products is at most one.
+  Undo the normalization. Finally, $F = 0$ gives $Z = 0$ almost surely. If $F >
+  0$, apply \eqref{E:gaussian-weighted-power} to $u = Z/F$, $v = 1$ and $\theta
+  = r$, and integrate. The right side has expectation one. This proves
+  Lemma~\ref{L:gaussian-scalar-powers}.
+\end{proof}
+
+\LeanMarker{L:gaussian-trace-bounds}
+\begin{lemma}[Two Hermitian trace bounds]\label{L:gaussian-trace-bounds}
+  Let $B,Y$ be finite Hermitian matrices, $m \ge 2$ an integer, and $L = 2m-2$.
+  For integers $0 \le q \le L$,
+  \begin{equation}\label{E:gaussian-trace-word}
+    \operatorname{Re}\operatorname{Tr}(BY^qBY^{L-q})
+    \le \operatorname{Tr}(B^2|Y|^L).
+  \end{equation}
+  If $D \ge 0$ is Hermitian, then
+  \begin{equation}\label{E:gaussian-trace-holder}
+    \operatorname{Tr}(D|Y|^{2m-2})
+    \le (\operatorname{Tr}D^m)^{1/m}
+    (\operatorname{Tr}|Y|^{2m})^{(m-1)/m}.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  Diagonalize $Y$, with real eigenvalues $\lambda_i$, and write $b_{ij}$ for the
+  entries of $B$ in that basis. Hermitian symmetry gives $b_{ji} =
+  \overline{b_{ij}}$. The trace word is the real sum
+  \[
+    \sum_{i,j}|b_{ij}|^2\lambda_j^q\lambda_i^{L-q}.
+  \]
+  Bound each product by its absolute value and use
+  \eqref{E:gaussian-integer-power}. After interchanging $i,j$, the two resulting
+  sums agree because $|b_{ij}| = |b_{ji}|$. Each equals
+  $\sum_{i,j}|b_{ij}|^2|\lambda_i|^L = \operatorname{Tr}(B^2|Y|^L)$. The two
+  weights sum to one, proving \eqref{E:gaussian-trace-word}. No commutation of
+  $B$ and $Y$ is used.
+
+  In the same basis put $d_i = D_{ii} \ge 0$. If $\theta_j$ are the nonnegative
+  eigenvalues of $D$, a unitary change of basis gives $d_i =
+  \sum_j|U_{ij}|^2\theta_j$. Both row and column sums of $|U_{ij}|^2$ equal one.
+  Finite convexity therefore yields
+  \[
+    \sum_i d_i^m \le \sum_{i,j}|U_{ij}|^2\theta_j^m
+    = \operatorname{Tr}D^m.
+  \]
+  For completeness, the convexity step follows from $t^m \ge s^m+ms^{m-1}(t-s)$
+  for $s,t \ge 0$, obtained by differentiating the difference. Average this
+  inequality with $s$ equal to the weighted mean. Now apply finite H\"older from
+  Lemma~\ref{L:gaussian-scalar-powers} to $\sum_i d_i|\lambda_i|^{2m-2}$. Since
+  $(2m-2)m/(m-1) = 2m$, the last display proves \eqref{E:gaussian-trace-holder},
+  including zero sums. This proves Lemma~\ref{L:gaussian-trace-bounds}.
+\end{proof}
+
+The estimate below is a finite-dimensional Gaussian noncommutative Khintchine
+inequality. For its origins in the work of Lust-Piquard and a Gaussian
+integration-by-parts proof, see Tropp~\cite{tropp:source2018:second-order}*{arXiv:1504.05919v2,
+Proposition~2.3 and Section~7}. We include the proof and Hermitian dilation
+to fix the normalization and retain both variance operators.
+
+\LeanMarker{P:finite-gaussian-matrix}
+\begin{proposition}[Finite Gaussian matrix moment]\label{P:finite-gaussian-matrix}
+  Let $A_1,\ldots,A_N$ be complex $o$-by-$n$ matrices, with $o,n,N \ge 1$, and
+  let $g_k$ be independent real standard Gaussians. Put
+  \[
+    X=\sum_k g_kA_k,\qquad V_{\rm out}=\sum_k A_kA_k^*,
+    \qquad V_{\rm in}=\sum_k A_k^*A_k.
+  \]
+  For even $p = 2m \ge 2$, with $\|A\|_{S_p}^p = \operatorname{Tr}((A^*A)^m)$,
+  \begin{align}
+    (\E\|X\|_{S_p}^p)^{1/p}
+    &\le \sqrt{p-1}\left(
+    \frac{\operatorname{Tr}V_{\rm out}^m+
+    \operatorname{Tr}V_{\rm in}^m}{2}\right)^{1/p}
+    \label{E:finite-gaussian-average}\\
+    &\le \sqrt{p-1}\max\left(
+    \|V_{\rm out}^{1/2}\|_{S_p},\|V_{\rm in}^{1/2}\|_{S_p}\right).
+    \label{E:finite-gaussian-maximum}
+  \end{align}
+  The constants are independent of $o,n,N$. The first inequality is an equality
+  at $p = 2$. Empty or zero families give the zero identity.
+\end{proposition}
+
+\begin{proof}
+  First suppose $B_k$ are Hermitian and put $Y = \sum_k g_kB_k$ and $D = \sum_k
+  B_k^2$. All polynomial moments are finite because Gaussian decay dominates
+  every fixed power. Componentwise integration by parts against the product
+  Gaussian density gives $\E[g_kP(g)] = \E[\partial_kP(g)]$, with zero boundary
+  terms. It applies to complex polynomials through their real and imaginary
+  parts; absolute polynomial integrability justifies Fubini.
+
+  For $m \ge 2$, put $F = \E\operatorname{Tr}Y^{2m}$ and $L = 2m-2$. Write
+  $\operatorname{Tr}Y^{2m} = \sum_k g_k \operatorname{Tr}(B_kY^{2m-1})$ and
+  differentiate the $2m-1$ factors in their order. This gives exactly
+  \[
+    F=\sum_k\sum_{q=0}^{L}
+    \E\operatorname{Tr}(B_kY^qB_kY^{L-q}).
+  \]
+  The eigenbasis calculation above shows these traces are real. The
+  differentiated polynomial is real by conjugation and trace cyclicity. No
+  derivative of a spectral absolute value or measurable choice of an eigenbasis
+  is needed. The two trace bounds give
+  \begin{align*}
+    F&\le (2m-1)\E\operatorname{Tr}(D|Y|^{2m-2})\\
+    &\le (2m-1)(\operatorname{Tr}D^m)^{1/m}
+    \E(\operatorname{Tr}|Y|^{2m})^{(m-1)/m}\\
+    &\le (2m-1)(\operatorname{Tr}D^m)^{1/m}F^{(m-1)/m}.
+  \end{align*}
+  Here $\operatorname{Tr}|Y|^{2m} = \operatorname{Tr}Y^{2m}$, and the last
+  inequality is the expectation bound in Lemma~\ref{L:gaussian-scalar-powers}.
+  If $F = 0$ the conclusion is immediate. Otherwise divide by its positive
+  fractional power and raise to $m$ to obtain
+  \begin{equation}\label{E:finite-hermitian-gaussian}
+    \E\operatorname{Tr}Y^{2m} \le (2m-1)^m\operatorname{Tr}D^m.
+  \end{equation}
+  For $m = 1$, independence gives directly $\E\operatorname{Tr}Y^2 =
+  \sum_k\operatorname{Tr}B_k^2 = \operatorname{Tr}D$, proving the same formula
+  as equality.
+
+  For rectangular $A_k$, use the Hermitian dilation
+  \[
+    B_k=\begin{pmatrix}0&A_k\\A_k^*&0\end{pmatrix},\qquad
+    Y=\begin{pmatrix}0&X\\X^*&0\end{pmatrix},\qquad
+    D=\operatorname{diag}(V_{\rm out},V_{\rm in}).
+  \]
+  Finite entrywise summation proves $\operatorname{Tr}(UV) =
+  \operatorname{Tr}(VU)$ for compatible rectangular matrices. Since $(XX^*)^m =
+  X(X^*X)^{m-1}X^*$, it follows that
+  \[
+    \operatorname{Tr}Y^{2m}=2\operatorname{Tr}((X^*X)^m),\qquad
+    \operatorname{Tr}D^m=\operatorname{Tr}V_{\rm out}^m+
+    \operatorname{Tr}V_{\rm in}^m.
+  \]
+  Substitute in~\eqref{E:finite-hermitian-gaussian}, divide by two and take the
+  $p$th root. This proves~\eqref{E:finite-gaussian-average}. For positive $V$,
+  spectral diagonalization gives $\|V^{1/2}\|_{S_p}^p = \operatorname{Tr}V^m$,
+  and the average of two nonnegative numbers is bounded by their maximum. At $p
+  = 2$, $\E\operatorname{Tr}X^*X = \operatorname{Tr}V_{\rm in} =
+  \operatorname{Tr}V_{\rm out}$, proving the claimed equality. This proves
+  Proposition~\ref{P:finite-gaussian-matrix}.
+\end{proof}
+
+Both variance directions are needed: the row-matrix example in
+No-go~\ref{P:nogo-23} rules out a dimension-independent estimate that
+keeps only one of them.
+
+
+\LeanMarker{R:gaussian-one-variance-test}
+\begin{remark}[Both variance directions are necessary]
+  \label{R:gaussian-one-variance-test}
+  Let $n = 16$ and $A_k = e_k^{\mathsf{T}}$ be the coordinate row matrices. The
+  only nonzero singular value of $X$ is $(\sum_k g_k^2)^{1/2}$. Gaussian
+  integration by parts gives $\E g^2 = 1$, $\E g^4 = 3$, and hence
+  \[
+    \E\|X\|_{S_4}^4=3n+n(n-1)=n(n+2)=288.
+  \]
+  Here $V_{\rm out} = n$ and $V_{\rm in} = I_n$. Keeping only the input variance
+  in~\eqref{E:finite-gaussian-maximum} would give fourth power
+  $9\operatorname{Tr}I_n^2 = 144$, which is false. Transposing the family
+  refutes the corresponding output-only bound. The average and maximum bounds
+  have fourth powers $1224$ and $2304$, respectively. This finite example
+  asserts nothing about a specialized wave estimate.
+\end{remark}
+
+\subsection{Whole-space cutoffs through an auxiliary periodic space}
+
+Use the unitary Fourier transform with $c_d = (2\pi)^{-d/2}$ and $\Lambda =
+(1-\Delta)^{1/2}$. For real $r$, the norm on $H^r(\R^d)$ is
+$\|\langle\xi\rangle^r\widehat{u}\|_2$. The deterministic cutoff arguments allow
+any smoothing order $\gamma > 0$. Fix real $\sigma$ and a real compact smooth
+$\chi$. Singular values $s_j$, $j \ge 1$, are counted with multiplicity, with
+zeros appended when necessary. For compact $K$, put $\|K\|_{S_p}^p = \sum_j
+s_j(K)^p$.
+
+\begin{lemma}[Cutoff factorization]\label{L:cutoff-factorization}
+  Choose a cube $Q_L = (-L/2,L/2)^d$ containing $\operatorname{supp}\chi$ in its
+  interior, and a real $\psi \in C_c^\infty(Q_L)$ equal to one near
+  $\operatorname{supp}\chi$. On the auxiliary torus $\mathbb{T}_L$ use Lebesgue
+  measure and the orthonormal basis
+  \[
+    e_k(x)=L^{-d/2}e^{i\kappa_k\cdot x},\qquad
+    \kappa_k=2\pi k/L,\qquad k \in \mathbb{Z}^d,
+  \]
+  with $\|v\|_{H^r(\mathbb{T}_L)}^2 = \sum_k\langle\kappa_k\rangle^{2r}|v_k|^2$.
+  Periodization of $\psi u$ and multiplication of a periodic function by $\chi$
+  extend to bounded maps
+  \begin{equation}\label{E:cutoff-periodic-maps}
+    \mathcal{P}_\psi:H^r(\R^d)\to H^r(\mathbb{T}_L),\qquad
+    \mathcal{E}_\chi:H^r(\mathbb{T}_L)\to H^r(\R^d)
+  \end{equation}
+  for every real $r$. If $\mathcal{I}_\gamma$ denotes the identity inclusion
+  from $H^{\sigma+\gamma}(\mathbb{T}_L)$ to $H^\sigma(\mathbb{T}_L)$, then
+  \begin{equation}\label{E:cutoff-whole-space-recovery}
+    \mathcal{E}_\chi\mathcal{I}_\gamma\mathcal{P}_\psi u=\chi u,
+    \qquad u \in H^{\sigma+\gamma}(\R^d).
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  For $x,y \in \R^d$ and real $r$, the elementary inequality $\langle x\rangle
+  \le \sqrt{2}\langle y\rangle\langle x-y\rangle$ gives
+  \begin{equation}\label{E:cutoff-peetre}
+    \left(\frac{\langle x\rangle}{\langle y\rangle}\right)^r
+    \le 2^{|r|/2}\langle x-y\rangle^{|r|}.
+  \end{equation}
+  For negative $r$, interchange $x,y$ before raising to $|r|$. Integration by
+  parts gives rapid decay of the Fourier transform of every compact smooth
+  cutoff. For any lattice spacing $a > 0$ and $N > d$,
+  \begin{equation}\label{E:cutoff-lattice-sum}
+    \sup_y\sum_{k\in\mathbb{Z}^d}\langle y-ak\rangle^{-N}<\infty.
+  \end{equation}
+  Indeed, translate $y$ into a centered lattice cell, where $|y| \le a\sqrt
+  d/2$. For $|k| \ge \sqrt d$ we have $|y-ak| \ge a|k|/2$. The remaining terms
+  are finite; the tail converges by dyadic lattice counting, since there are at
+  most $C_d2^{jd}$ lattice points in the $j$th shell in $k$. More precisely, for
+  $|k| \ge \sqrt d$, the preceding inequality gives
+  \[
+    \langle y-ak\rangle^{-N}
+    \le \max(1,2/a)^N\langle k\rangle^{-N}.
+  \]
+  The comparison-series terms are bounded by $2^{-jN}$ on each dyadic $k$-shell.
+  Thus, its convergent geometric sum carries constants depending on $a,d,N$, as
+  does~\eqref{E:cutoff-lattice-sum}.
+
+  We use the mixed Schur bound for a kernel whose absolute row and column
+  integrals are bounded by $M_1,M_2$. Weighted Cauchy--Schwarz at each output
+  point, followed by Tonelli, bounds its squared operator norm by $M_1M_2$. The
+  same proof works with counting measure on one side and Lebesgue measure on the
+  other, first on dense finite or compact inputs.
+
+  For Schwartz $u$, the $k$th coefficient of its cutoff periodization is
+  \[
+    (\mathcal{P}_\psi u)_k
+    = L^{-d/2}\int\psi(x)u(x)e^{-i\kappa_k\cdot x}\ud x
+    = L^{-d/2}\int\widehat{\psi}(\kappa_k-\xi)\widehat{u}(\xi)\ud\xi.
+  \]
+  The $c_d$ from Fourier inversion cancels the $c_d^{-1}$ in the ordinary
+  Fourier integral of $\psi$. After weighting, its exact kernel is
+  \[
+    L^{-d/2}\left(\frac{\langle\kappa_k\rangle}{\langle\xi\rangle}\right)^r
+    \widehat{\psi}(\kappa_k-\xi).
+  \]
+  For a finite torus polynomial $v$, the normalized Fourier kernel of
+  $\mathcal{E}_\chi v$ is
+  \[
+    L^{-d/2}\left(\frac{\langle\xi\rangle}{\langle\kappa_k\rangle}\right)^r
+    \widehat{\chi}(\xi-\kappa_k).
+  \]
+  There is no additional $c_d$ in this kernel. By~\eqref{E:cutoff-peetre}, each
+  is bounded in absolute value by a rapidly decreasing function of its frequency
+  difference, times a fixed constant. One Schur quantity is its $L^1$ integral
+  and the other a uniformly translated lattice sum, bounded
+  by~\eqref{E:cutoff-lattice-sum}. This proves~\eqref{E:cutoff-periodic-maps},
+  including negative $r$.
+
+  Smooth compact approximation in weighted Fourier $L^2$ proves Schwartz density
+  on $\R^d$; weighted sequence truncation proves polynomial density on the
+  torus. Hence, these maps extend uniquely. Their distributional meanings follow
+  by testing against compact smooth functions and density: each periodic
+  coefficient pairs the distribution with a compact smooth test. No point
+  sampling of a rough Fourier function is used. The same full-Lebesgue Schur
+  argument proves smooth compact multiplication bounded on every whole-space
+  $H^r$.
+
+  For Schwartz $u$, the periodic Fourier series of $\psi u$ converges smoothly
+  on the cube. Since $\chi\psi = \chi$ and $\chi$ is supported strictly inside
+  the cube, multiplying this series by $\chi$ recovers $\chi u$ with no alias
+  term. Both sides are bounded from $H^{\sigma+\gamma}(\R^d)$ to
+  $H^\sigma(\R^d)$, using the just-proved maps, the inclusion and smooth
+  multiplication. Density proves \eqref{E:cutoff-whole-space-recovery} on that
+  full domain. This proves Lemma~\ref{L:cutoff-factorization}.
+\end{proof}
+
+\begin{proposition}[Whole-space cutoff singular values]\label{P:cutoff-singular-values}
+  For real $\sigma$ and $\gamma > 0$, the initially Schwartz-defined operator
+  $K_{\chi,\sigma,\gamma} = \Lambda^\sigma\chi\Lambda^{-\sigma-\gamma}$ extends
+  uniquely to a compact operator on $L^2(\R^d)$, and
+  \begin{equation}\label{E:cutoff-singular-values}
+    s_j(K_{\chi,\sigma,\gamma})
+    \le C_{\chi,\sigma,\gamma,d}j^{-\gamma/d},\qquad j \ge 1.
+  \end{equation}
+  Consequently, $K_{\chi,\sigma,\gamma} \in S_p$ whenever $p \ge 1$ and $p\gamma
+  > d$.
+\end{proposition}
+
+\begin{proof}
+  The zero cutoff is immediate. Fix one cube and cutoff pair $L,\psi$ as in
+  Lemma~\ref{L:cutoff-factorization}. Its recovery identity gives
+  \[
+    K_{\chi,\sigma,\gamma}
+    =\Lambda^\sigma\mathcal{E}_\chi\mathcal{I}_\gamma
+    \mathcal{P}_\psi\Lambda^{-\sigma-\gamma}.
+  \]
+  In the weighted torus coordinates, $\mathcal{I}_\gamma$ is diagonal with
+  entries $\langle\kappa_k\rangle^{-\gamma}$. Let $Q_n$ retain $|k|_\infty \le
+  n$. Its rank is $(2n+1)^d$, and
+  \[
+    \|(1-Q_n)\mathcal{I}_\gamma\|
+    \le [1+(2\pi/L)^2(n+1)^2]^{-\gamma/2}\longrightarrow0.
+  \]
+  Replacing the inclusion by $Q_n\mathcal{I}_\gamma$ gives finite-rank $K_n$
+  converging in norm to $K_{\chi,\sigma,\gamma}$. This proves compactness:
+  finite-dimensional images have finite nets of each positive radius, and norm
+  approximation transfers those nets to the limiting image of the unit ball.
+
+  Put
+  \[
+    M=\|\mathcal{E}_\chi:H^\sigma(\mathbb{T}_L)\to H^\sigma(\R^d)\|
+    \|\mathcal{P}_\psi:H^{\sigma+\gamma}(\R^d)
+    \to H^{\sigma+\gamma}(\mathbb{T}_L)\|.
+  \]
+  The outer Bessel maps are unitary. For $j \ge 3^d$, choose $n = \lfloor
+  j^{1/d}/4\rfloor$. Then
+  \[
+    (2n+1)^d\le(j^{1/d}/2+1)^d<j,\qquad
+    \|K-K_n\|\le M(2L/\pi)^\gamma j^{-\gamma/d}.
+  \]
+  The second estimate follows from $n+1 > j^{1/d}/4$. For a compact operator,
+  every rank less than $j$ approximation $F$ satisfies $s_j(K) \le \|K-F\|$: the
+  span of the first $j$ right singular vectors contains a unit vector in $\ker
+  F$, on which $\|K\cdot\| \ge s_j(K)$. If $s_j(K) = 0$ the inequality is
+  immediate. For $j < 3^d$ use $s_j(K) \le \|K\| \le M$. Thus, one may take
+  \[
+    C_{\chi,\sigma,\gamma,d}
+    =M\max(3^\gamma,(2L/\pi)^\gamma).
+  \]
+  Finally, $\sum_j j^{-p\gamma/d}$ converges for $p\gamma > d$. This proves
+  Proposition~\ref{P:cutoff-singular-values}.
+\end{proof}
+
+No uniform support-radius constant or endpoint necessity is asserted in
+Proposition~\ref{P:cutoff-singular-values}. The periodic inclusion was only a
+factor of the recovered whole-space operator.
+
+\subsection{Balanced adjoints and localized variance envelopes}
+
+For $E = H^{1/2}(\R^d)\times H^{-1/2}(\R^d)$ use the physical unitary
+coordinates
+\[
+  J_0(u,v)=(\Lambda^{1/2}u,\Lambda^{-1/2}v),\qquad
+  H=L^2(\R^d;\mathbb{C}^2).
+\]
+The frequency map $J$ in Section~\ref{S:wave-variance} is
+$(\mathcal{F}\oplus\mathcal{F})J_0$. Let $D_\chi$ multiply both phase entries
+and define
+\begin{align}
+  P_\chi&=J_0D_\chi J_0^{-1},\qquad
+  D_\gamma=\operatorname{diag}(\Lambda^{-\gamma},\Lambda^{-\gamma}),
+  \label{E:compact-balanced-cutoff}\\
+  K_{\rm out}&=P_\chi D_\gamma,\qquad
+  K_{\rm in}=P_\chi^*D_\gamma.
+  \label{E:compact-two-factors}
+\end{align}
+
+\begin{proposition}[Both compact envelopes]\label{P:compact-two-envelopes}
+  The operator $P_\chi$ is bounded. For the unitary swap $U(v,w) = (w,v)$,
+  \[
+    P_\chi^*=UP_\chi U,\qquad K_{\rm in}=UK_{\rm out}U.
+  \]
+  Both factors are compact and have equal $S_p$ norms for $p \ge 1$, $p\gamma >
+  d$. For $p \ge 2$, $p\gamma > d$, the positive compact operators
+  \[
+    B_{\rm out}=P_\chi D_\gamma^2P_\chi^*=K_{\rm out}K_{\rm out}^*,
+    \qquad B_{\rm in}=P_\chi^*D_\gamma^2P_\chi=K_{\rm in}K_{\rm in}^*
+  \]
+  satisfy
+  \begin{equation}\label{E:compact-envelope-traces}
+    \operatorname{Tr}B_{\rm out}^{p/2}
+    =\operatorname{Tr}B_{\rm in}^{p/2}=\|K_{\rm out}\|_{S_p}^p.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  Put $A_\sigma = \Lambda^\sigma\chi\Lambda^{-\sigma}$. The full-Lebesgue Schur
+  argument in Lemma~\ref{L:cutoff-factorization} shows boundedness for every
+  real $\sigma$. On Schwartz functions, self-adjointness of real multiplication
+  and of the Bessel powers gives $A_\sigma^* = A_{-\sigma}$. Density and
+  boundedness extend this to the Hilbert adjoints. No evenness of $\chi$ is
+  needed. Thus,
+  \[
+    P_\chi=\operatorname{diag}(A_{1/2},A_{-1/2}),\qquad
+    P_\chi^*=\operatorname{diag}(A_{-1/2},A_{1/2})=UP_\chi U.
+  \]
+  The swap commutes with $D_\gamma$, giving the claimed factor identity. The
+  blocks of $K_{\rm out}$ are $K_{\chi,1/2,\gamma}$ and $K_{\chi,-1/2,\gamma}$.
+  Proposition~\ref{P:cutoff-singular-values} gives compactness and $S_p$
+  membership. The singular values of their direct sum form the multiset union,
+  so
+  \[
+    \|K_{\rm out}\|_{S_p}^p
+    =\|K_{\chi,1/2,\gamma}\|_{S_p}^p+
+    \|K_{\chi,-1/2,\gamma}\|_{S_p}^p.
+  \]
+  Unitary conjugation preserves them. Finally, the positive eigenvalues of
+  $KK^*$ and $K^*K$ agree with multiplicity: on an eigenspace with eigenvalue
+  $\lambda > 0$, the maps $K/\sqrt\lambda$ and $K^*/\sqrt\lambda$ are inverse
+  isometries. Zero eigenvalues contribute nothing to the trace. Summing these
+  scalar powers proves~\eqref{E:compact-envelope-traces}. This proves
+  Proposition~\ref{P:compact-two-envelopes}.
+\end{proof}
+
+We use the usual positive square root of a bounded positive operator and the
+spectral decomposition of compact positive operators. The needed order argument
+is recorded explicitly.
+
+\begin{lemma}[Compact positive order and trace]\label{L:compact-positive-order}
+  If $A,B$ are bounded self-adjoint operators with $0 \le A \le B$ and $B$
+  compact positive, then $A$ is compact and its ordered eigenvalues satisfy
+  $\lambda_j(A) \le \lambda_j(B)$, including zero padding. Consequently, for $t
+  \ge 1$ with finite $\operatorname{Tr}B^t$,
+  \begin{equation}\label{E:compact-positive-trace}
+    \operatorname{Tr}A^t\le\operatorname{Tr}B^t.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  Let $Q_n$ be finite spectral projections of $B$ whose tails tend to zero in
+  norm. Then
+  \[
+    \|(1-Q_n)A^{1/2}\|^2
+    =\|(1-Q_n)A(1-Q_n)\|
+    \le\|(1-Q_n)B(1-Q_n)\|\longrightarrow0.
+  \]
+  Thus, $A^{1/2}$ is a norm limit of finite-rank operators and is compact, as is
+  $A$. For compact positive operators, the max-min formula for $\lambda_j$
+  follows in an eigenbasis: the span of the first $j$ eigenvectors gives the
+  lower bound for the supremum over $j$-dimensional subspaces of their minimum
+  Rayleigh quotient, while every such subspace meets the orthogonal complement
+  of the first $j-1$ eigenvectors, giving the upper bound. Compare the Rayleigh
+  quotients of $A$ and $B$ to obtain the eigenvalue inequality. Sum the ordered
+  scalar powers to prove \eqref{E:compact-positive-trace}. No inequality $A^t
+  \le B^t$ is asserted. This proves Lemma~\ref{L:compact-positive-order}.
+\end{proof}
+
+\begin{proposition}[Localized finite variance bounds]\label{P:localized-finite-variance}
+  Suppose finitely many bounded operators $Z_\ell$ on $H$ satisfy
+  \begin{equation}\label{E:localized-finite-hypotheses}
+    P_\chi Z_\ell=Z_\ell=Z_\ell P_\chi,\qquad
+    V_{\rm out}:=\sum_\ell Z_\ell Z_\ell^*\le CD_\gamma^2,\qquad
+    V_{\rm in}:=\sum_\ell Z_\ell^*Z_\ell\le CD_\gamma^2,
+  \end{equation}
+  with $C \ge 0$. If $p \ge 2$ and $p\gamma > d$, every $Z_\ell$ is compact in
+  $S_p$, the two variances are compact in $S_{p/2}$, and
+  \begin{align}
+    V_{\rm out}&\le CB_{\rm out},\qquad V_{\rm in}\le CB_{\rm in},
+    \label{E:localized-two-envelopes}\\
+    \operatorname{Tr}V_{\rm out}^{p/2},\quad
+    \operatorname{Tr}V_{\rm in}^{p/2}
+    &\le C^{p/2}\|K_{\rm out}\|_{S_p}^p.
+    \label{E:localized-trace-bounds}
+  \end{align}
+\end{proposition}
+
+\begin{proof}
+  Left localization gives $V_{\rm out} = P_\chi V_{\rm out}P_\chi^*$. Apply
+  positive congruence to the output bound
+  in~\eqref{E:localized-finite-hypotheses} to get $V_{\rm out} \le CP_\chi
+  D_\gamma^2P_\chi^* = CB_{\rm out}$. Right localization similarly gives $V_{\rm
+  in} = P_\chi^*V_{\rm in}P_\chi \le CB_{\rm in}$.
+  Proposition~\ref{P:compact-two-envelopes} and
+  Lemma~\ref{L:compact-positive-order} prove compactness and the two trace
+  bounds with $t = p/2$. If $C = 0$, both variances and every $Z_\ell$ vanish,
+  so all assertions are immediate.
+
+  For each $\ell$, $Z_\ell Z_\ell^* \le V_{\rm out}$ is compact by the same
+  lemma. Its finite spectral projections $Q_n$ give $\|(1-Q_n)Z_\ell\|^2 =
+  \|(1-Q_n)Z_\ell Z_\ell^*(1-Q_n)\| \to 0$. Hence, $Z_\ell$ is compact. Its
+  singular values squared are the nonzero eigenvalues of $Z_\ell Z_\ell^*$.
+  Comparing with $V_{\rm out}$ and summing proves $Z_\ell \in S_p$ with
+  $\|Z_\ell\|_{S_p}^p \le \operatorname{Tr}V_{\rm out}^{p/2}$. This proves
+  Proposition~\ref{P:localized-finite-variance}.
+\end{proof}
+
+The two localization identities are hypotheses here; a noise coefficient family
+has not yet been shown to satisfy them. In particular, $P_\chi$ is not assumed
+self-adjoint or a projection.
+
+\begin{corollary}[Finite Gaussian operators]\label{C:finite-gaussian-operators}
+  Under~\eqref{E:localized-finite-hypotheses}, let $g_\ell$ be independent real
+  standard Gaussians. For even $p \ge 2$ with $p\gamma > d$, the finite sum $X =
+  \sum_\ell g_\ell Z_\ell$ satisfies
+  \begin{equation}\label{E:finite-gaussian-operator-bound}
+    (\E\|X\|_{S_p}^p)^{1/p}
+    \le\sqrt{p-1}\sqrt C\|K_{\rm out}\|_{S_p}.
+  \end{equation}
+  Its extended norm is measurable, with finite expectation as displayed.
+\end{corollary}
+
+\begin{proof}
+  Choose finite-rank orthogonal projections $\Pi_n$ from a countable orthonormal
+  basis of $H$, with $\Pi_n \to I$ strongly. Put $Z_{\ell,n} = \Pi_nZ_\ell\Pi_n$
+  and $X_n = \sum_\ell g_\ell Z_{\ell,n}$, viewed as matrices on
+  $\operatorname{ran}\Pi_n$. Their output variance satisfies
+  \[
+    \sum_\ell\Pi_nZ_\ell\Pi_nZ_\ell^*\Pi_n
+    \le\Pi_nV_{\rm out}\Pi_n,
+  \]
+  since the difference is $\sum_\ell\Pi_nZ_\ell(1-\Pi_n)Z_\ell^*\Pi_n \ge 0$.
+  The input inequality is identical with adjoints interchanged. Compact max-min
+  also gives $\lambda_j(\Pi_nV\Pi_n) \le \lambda_j(V)$ for positive compact $V$,
+  since Rayleigh subspaces inside $\operatorname{ran}\Pi_n$ form a subset of all
+  subspaces. Thus, both variance trace powers of these matrices are bounded by
+  $C^{p/2}\|K_{\rm out}\|_{S_p}^p$.
+
+  Proposition~\ref{P:finite-gaussian-matrix} applies to these finite complex
+  matrices, the same real independent Gaussians and the even $p$. Taking the
+  average of the two already bounded trace powers gives
+  \begin{equation}\label{E:finite-gaussian-compression-bound}
+    \E\|X_n\|_{S_p}^p
+    \le(p-1)^{p/2}C^{p/2}\|K_{\rm out}\|_{S_p}^p.
+  \end{equation}
+  No factor two is added by this average.
+
+  For each Gaussian coordinate vector, $X$ is a finite sum of compact operators.
+  Strong convergence of $\Pi_n$ implies $\Pi_nX\Pi_n \to X$ in operator norm:
+  approximate $X$ by a finite-rank $F$, use uniform strong convergence on the
+  finite-dimensional ranges of $F$ and $F^*$, and control the remainder using
+  $\|\Pi_n\| \le 1$. Singular values are norm-Lipschitz. Indeed, their formula
+  \[
+    s_j(A)=\inf_{\dim L<j}
+    \sup_{v\in L^\perp,\ \|v\|=1}\|Av\|
+  \]
+  follows from compact singular vectors and gives $s_j(A) \le s_j(B)+\|A-B\|$,
+  and the reverse bound by interchanging $A,B$. Hence, $s_j(X_n) \to s_j(X)$ for
+  each $j$. Fatou for the nonnegative singular-value sum gives $\|X\|_{S_p}^p
+  \le \liminf_n\|X_n\|_{S_p}^p$, allowing extended infinity. These variables are
+  measurable: the finite Gaussian coordinate map into operators is
+  norm-continuous, each singular value is continuous, and the norm power is
+  their nonnegative measurable sum. Fatou in probability
+  and~\eqref{E:finite-gaussian-compression-bound} prove the bound and
+  almost-sure finiteness. No $S_p$-Bochner convergence is assumed. This proves
+  Corollary~\ref{C:finite-gaussian-operators}.
+\end{proof}
+
+\subsection{A nonzero witness and the need for a compact cutoff}
+
+Proposition~\ref{P:localized-finite-variance} and
+Corollary~\ref{C:finite-gaussian-operators} assume
+\eqref{E:localized-finite-hypotheses}. We check that these hypotheses admit a
+nonzero operator, and then test what is lost without the compact cutoff.
+
+\begin{proposition}[Whole-space cutoff tests]\label{P:cutoff-boundary-tests}
+  If $\chi$ equals one on a nonempty open set, there is a nonzero rank-one
+  operator satisfying~\eqref{E:localized-finite-hypotheses} with a finite common
+  $C$. On the other hand, $\Lambda^{-\gamma}$ on $L^2(\R^d)$ is not compact for
+  any $\gamma > 0$.
+\end{proposition}
+
+\begin{proof}
+  Choose nonzero real $v,f \in C_c^\infty$ supported inside the plateau, and put
+  $\widetilde{v} = (\Lambda^{1/2}v,0)$ and $\widetilde{w} =
+  (\Lambda^{-1/2}f,0)$. Both are Schwartz. The block formulas give
+  $P_\chi\widetilde{v} = \widetilde{v}$ and $P_\chi^*\widetilde{w} =
+  \widetilde{w}$. Therefore, $Zx = \langle x,\widetilde{w}\rangle\widetilde{v}$
+  satisfies $P_\chi Z = Z = ZP_\chi$. Its two variances are
+  $\|\widetilde{w}\|^2\widetilde{v}\otimes\widetilde{v}^*$ and
+  $\|\widetilde{v}\|^2\widetilde{w}\otimes\widetilde{w}^*$. For any Schwartz $a$
+  and any $x \in H$,
+  \[
+    |\langle x,a\rangle|
+    =|\langle D_\gamma x,D_\gamma^{-1}a\rangle|
+    \le\|D_\gamma x\|\|D_\gamma^{-1}a\|.
+  \]
+  The inverse multiplier is applied only to Schwartz $a$, so it belongs to $H$.
+  Apply the inequality with $a = \widetilde{v},\widetilde{w}$ to obtain the two
+  variance bounds with
+  \[
+    C=\max\left(
+    \|\widetilde{w}\|^2\|D_\gamma^{-1}\widetilde{v}\|^2,
+    \|\widetilde{v}\|^2\|D_\gamma^{-1}\widetilde{w}\|^2\right)<\infty.
+  \]
+  This witness uses a plateau; no nonzero family is inferred for every compact
+  cutoff or identified with a source family.
+
+  For noncompactness, take $f$ with nonzero Gaussian Fourier transform. Then $g
+  = \Lambda^{-\gamma}f$ is a nonzero Schwartz function. The images of translates
+  of $f$ are the same translates of $g$. With $T_hg(x) = g(x-h)$, Plancherel
+  gives
+  \[
+    \langle T_hg,g\rangle
+    =\int e^{-i\xi\cdot h}|\widehat{g}(\xi)|^2\ud\xi
+    =c_d^{-1}\widehat{|\widehat{g}|^2}(h).
+  \]
+  This tends to zero because $|\widehat{g}|^2$ is Schwartz. Choose a large
+  spacing so that any two distinct translates in the resulting sequence have
+  image distance at least $\|g\|$. The input norms are identical, but the images
+  have no Cauchy subsequence. This disproves compactness. This proves
+  Proposition~\ref{P:cutoff-boundary-tests}.
+\end{proof}
+
+The translation obstruction is restated in No-go~\ref{P:nogo-24}:
+frequency decay alone does not replace compact spatial localization.
+
+
+Thus, the choice $\chi = 1$ cannot be substituted into the compact-cutoff
+argument. No necessity at the Schatten endpoint $p\gamma = d$ is asserted. The
+results concern finite matrices and conditional finite operator sums.
+Coefficient localization, compact variance tails, an infinite Gaussian series
+and time regularity are proved in Section~\ref{S:actual-operator-driver}; source
+and Young identification are proved in
+Sections~\ref{S:source-driver-convergence}--\ref{S:constant-phase-young}. They
+are not consequences of the finite comparison alone.
+
+===== END context-compact-gaussian-baseline.txt =====
+
+===== BEGIN context-cameron-mean-baseline.txt =====
+{"source_path": "notes/integrated_cameron_mean.tex", "source_revision": "cdde711c248862f33207860107dd0e6b31d60852", "selection": "WHOLE_FILE", "role": "UNASSIGNED complete baseline upstream module. Stated inputs/definitions may be used under checked application hypotheses; these proofs are NOT assigned or counted as additional reviewed proofs.", "bytes": 24138, "sha256": "0ecbf05a70a7d5d79c9e2285dcadb93567687d4e463bfe4f6b0fdac5ff6f016d"}
+===== RAW UTF8 SOURCE =====
+\section{The compact mean and Cameron map on time blocks}
+\label{S:actual-cameron-mean}
+
+Retain the nonzero original covariance in Hypothesis~\ref{H:homog}, its
+amplitude, $a = \alpha_0$, and the real phases $E = H^{1/2}\times H^{-1/2}$ and
+$F = E\oplus\R^2$. Write $\Lambda = (1-\Delta)^{1/2}$. The form $B_\Gamma$ and
+constant $R_{\mathrm{sp}}$ are those of
+Section~\ref{S:spatial-occupation-foundation}. Let $H_{\mathrm{sp}}$ be the real
+covariance-null completion of $C_c^\infty(\R^d)$ with inner product $B_\Gamma$,
+and $H_t$ the analogous completion of $C_c^\infty(I)$, $I = (0,1)$, with time
+kernel $|s-t|^{-a}$. Let $H = H_I$ be the completion of smooth tests supported
+inside $I\times\R^d$. It embeds isometrically as a closed subspace of the given
+$H_W$. We retain the given $W$ restricted to it.
+
+Fix $R > 0$ and real even $\eta_R \in C_c^\infty(\R^d)$ with $0 \le \eta_R \le
+1$, equal to one on the radius-$R$ ball and supported in the closed radius-$2R$
+ball. The physical mask is $m_R = \eta_R^2$. Every operator path below takes its
+mask argument equal to $m_R$: at this fixed radius the base profile $\zeta(y) =
+m_R(Ry)$ meets the earlier hypotheses. The root $\eta_R$ factors state tests; it
+does not multiply an original noise class. All compactness conclusions here fix
+$R$.
+
+\subsection{Fractional products and the compact spatial map}
+
+The four-linear estimate~\eqref{E:spatial-four-linear} needs $H^1$ factors.
+The first component of a state in $E$ lies only in $H^{1/2}$, so we first
+extend that estimate to fractional Sobolev factors.
+
+\begin{lemma}[Fractional covariance products]
+  \label{L:cameron-fractional-products}
+  For $\alpha/4 < s < 1/2$, products of real $H^s$ functions define elements of
+  $H_{\mathrm{sp}}$, with
+  \begin{equation}\label{E:cameron-fractional-product}
+    \|fg\|_{H_{\mathrm{sp}}}
+    \le C_s^2\sqrt{R_{\mathrm{sp}}}\|f\|_{H^s}\|g\|_{H^s}.
+  \end{equation}
+  Their Hilbert pairings equal their physical integrals. In particular,
+  \begin{equation}\label{E:cameron-fractional-absolute}
+    \int|f_1(x)f_2(x)f_3(x-y)f_4(x-y)|\ud x\,\Gamma(\ud y)
+    \le C_s^4R_{\mathrm{sp}}\prod_{j=1}^4\|f_j\|_{H^s}.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  First approximate real $H^1$ factors by compact smooth ones. The absolute
+  four-linear bound~\eqref{E:spatial-four-linear} and covariance PSD make their
+  products Cauchy in $H_{\mathrm{sp}}$, with norm at most
+  $\sqrt{R_{\mathrm{sp}}}N(f)N(g)$. Expanding product differences proves
+  independence of approximation; physical continuity identifies all pairings.
+  PSD for products also follows from $fg = ((f+g)^2-(f-g)^2)/4$.
+
+  Use real radial Fourier bands $D_0 = 1_{\{|\xi|<1\}}$ and $D_j =
+  1_{\{2^{j-1}\le|\xi|<2^j\}}$, $j \ge 1$. For $f \in H^s$ put $f_j = D_jf$.
+  Each block is real and in $H^1$. Frequency support, Parseval and weighted
+  Cauchy--Schwarz give
+  \begin{equation}\label{E:cameron-dyadic-product}
+    N(f_j)\le2^{j\alpha/4}\|f_j\|_2,\qquad
+    \sum_{j\ge0}N(f_j)\le C_s\|f\|_{H^s}.
+  \end{equation}
+  Indeed, $\sum_j2^{-2j(s-\alpha/4)} < \infty$, while $\sum_j2^{2js}\|f_j\|_2^2
+  \le 2^{2s}\|f\|_{H^s}^2$. The low block has factor one. No $L^p$ multiplier
+  result is used. Also $\sum_j\|f_j\|_2 < \infty$ since $s > 0$. Thus,
+  $\sum_j|f_j|$ lies in $L^2$ by Minkowski and monotone convergence, and the
+  series is absolutely convergent a.e. with sum $f$.
+
+  Apply the absolute $H^1$ four-linear estimate to each band quadruple. The sum
+  of its absolute integrals is at most
+  $R_{\mathrm{sp}}\prod_{\ell=1}^4\sum_jN((f_\ell)_j) < \infty$. Tonelli and the
+  null-set transfer at both spatial positions in
+  Lemma~\ref{L:spatial-physical-pair} identify the physical product series,
+  proving~\eqref{E:cameron-fractional-absolute}. The double series
+  $\sum_{j,k}f_jg_k$ is also absolutely convergent in $H_{\mathrm{sp}}$ by the
+  $H^1$ product bound. Its partial sums are products of $H^1$ functions. The
+  absolute quadruple calculation identifies their limiting physical pairings and
+  gives~\eqref{E:cameron-fractional-product}. Compact smooth functions are dense
+  in $H^s$: approximate in Fourier space by real Schwartz functions, then cut
+  each off compactly in $H^1$ and hence in $H^s$. This also proves uniqueness of
+  the bilinear extension. This proves Lemma~\ref{L:cameron-fractional-products}.
+\end{proof}
+
+With these products in $H_{\mathrm{sp}}$, we can extend the spatial mean map
+from smooth tests to all of $H_{\mathrm{sp}}$.
+
+\begin{proposition}[Compact spatial mean map]\label{P:cameron-spatial-map}
+  The smooth-test map
+  \[
+    T_{\mathrm{sp}}q=iB_F(m_R(\Gamma*q))
+  \]
+  extends to a compact linear map $T_{\mathrm{sp}}:H_{\mathrm{sp}} \to
+  \mathcal{K}(F)$, where $\mathcal{K}(F)$ has the operator norm. For $z =
+  (z_1,z_2,c_1,c_2)$ and $w = (w_1,w_2,d_1,d_2)$ set $w' = \Lambda^{-1}w_2$. Its
+  exact row identity is
+  \begin{equation}\label{E:cameron-spatial-row}
+    \langle T_{\mathrm{sp}}qz,w\rangle_F
+    =\langle q,k(z,w)\rangle_{H_{\mathrm{sp}}},
+    \qquad
+    k(z,w)=(\eta_Rz_1+c_1\eta_R)(\eta_Rw').
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  Fix $s$ with $\alpha/4 < s < 1/2$; this interval is nonempty because the
+  original threshold implies $\alpha < 2$. For smooth compact $q$, $\Gamma*q$ is
+  locally smooth by differentiation under the compactly restricted Radon
+  integral. The masked potential is smooth compact. The velocity pairing in $E$
+  has weight $\Lambda^{-1}$; hence physical Fubini
+  gives~\eqref{E:cameron-spatial-row} on smooth states. Evenness of $\Gamma$
+  changes $B_\Gamma(k,q)$ to $B_\Gamma(q,k)$. For general states the localized
+  products are $L^1$, and $\Gamma*q$ is bounded on their compact support. $L^2$
+  state approximation passes the physical integral to the limit, while
+  Lemma~\ref{L:cameron-fractional-products} passes the $H_{\mathrm{sp}}$
+  pairing. This proves the row.
+
+  Multiplication by $\eta_R$ maps bounded $H^{1/2}$ sets to precompact $H^s$
+  sets by Proposition~\ref{P:cutoff-singular-values}, with gain $1/2-s > 0$.
+  This applies to $z_1$ and $w'$. The $c_1\eta_R$ family is finite dimensional
+  and compact. The closures of both factor families for unit $z,w$ are compact,
+  so their products have compact closure $\mathcal{L}$ in $H_{\mathrm{sp}}$ by
+  the fractional product bound. The row identity gives $\|T_{\mathrm{sp}}q\| \le
+  \sup_{k\in\mathcal{L}}\|k\|\|q\|$. Null covariance classes therefore map to
+  zero.
+
+  For smooth $q$, multiplication by its potential is compact $H^{1/2} \to
+  H^{-1/2}$ by the same whole-space cutoff result with gain one. Its extra $c_1$
+  column is finite rank, and the instantaneous $c_2$ column is zero. Thus, the
+  smooth images lie in $\mathcal{K}(F)$, and so does the bounded extension by
+  operator-norm closure.
+
+  Choose a complete smooth-test orthonormal basis of $H_{\mathrm{sp}}$ by
+  countable compact-support approximation and Gram--Schmidt, omitting null
+  classes. Let $Q_n$ project onto its first $n$ terms. The row identity yields
+  \[
+    \|T_{\mathrm{sp}}(I-Q_n)\|
+    \le\sup_{k\in\mathcal{L}}\|(I-Q_n)k\|_{H_{\mathrm{sp}}}
+    \longrightarrow0.
+  \]
+  Strong projection convergence is uniform on compact $\mathcal{L}$ by a
+  finite-net argument and $\|I-Q_n\| \le 1$. Each $T_{\mathrm{sp}}Q_n$ has
+  finite-dimensional range; their operator-norm limit is a compact map. This is
+  compactness of the map, in addition to compact values. This proves
+  Proposition~\ref{P:cameron-spatial-map}.
+\end{proof}
+
+\subsection{The supported tensor and temporal mean}
+
+Proposition~\ref{P:cameron-spatial-map} treats the spatial variable alone. A
+control in $H$ depends on time and space, so we first split $H$ into a time
+factor and a spatial factor.
+
+\begin{lemma}[Supported original tensor space]\label{L:cameron-supported-tensor}
+  Canonically $H = H_t\otimes H_{\mathrm{sp}}$ as real Hilbert spaces. It is
+  separable and admits a complete orthonormal basis $e_j$ with smooth test
+  representatives supported inside $I\times\R^d$. Projection $P_J$ onto its
+  first $J$ elements is also an orthogonal projection on $H_W$ by the same
+  finite formula.
+\end{lemma}
+
+\begin{proof}
+  On separated smooth tests, absolute Fubini makes the original inner product
+  exactly the tensor product after both null quotients. Finite sums are dense:
+  approximate a smooth compact spacetime test uniformly by smooth time
+  partitions times its spatial slices, on one common compact support inside
+  $I\times\R^d$. A uniform error $\epsilon$ on spatial compact $A$ has squared
+  original covariance norm at most
+  \[
+    \epsilon^2|A|\Gamma(A-A)
+    \int_I\int_I|s-t|^{-a}\ud s\ud t<\infty.
+  \]
+  This also gives countable smooth-test density on exhausting compact sets, both
+  here and in $H_{\mathrm{sp}}$. Gram--Schmidt skipping zeros preserves smooth
+  compact support. The isometric embedding into $H_W$ has closed image by
+  completeness; its finite orthonormal projection formula remains orthogonal
+  there. It is not multiplication by a time indicator and gives no independence
+  of disjoint time intervals. This proves
+  Lemma~\ref{L:cameron-supported-tensor}.
+\end{proof}
+
+It remains to treat the time factor $H_t$, whose kernel is $|s-t|^{-a}$.
+Proposition~\ref{P:cameron-full-mean} then combines the two maps.
+
+\begin{proposition}[The compact temporal mean, without trace class]
+  \label{P:cameron-temporal-map}
+  Let $K$ on $L^2(I)$ have kernel $|s-t|^{-a}$. It is compact, self-adjoint,
+  strictly positive and injective. The map $\iota:f\mapsto K^{1/2}f$ extends
+  isometrically from $H_t$ onto $L^2(I)$, and the temporal mean
+  \begin{equation}\label{E:cameron-temporal-map}
+    C_t=K^{1/2}\iota:H_t\longrightarrow L^r(I)
+  \end{equation}
+  is bounded and compact for every $2 < r < 2/a$. The displayed formula first
+  has its $L^2(I)$ meaning; the same completed map is then shown to take values
+  compactly in $L^r(I)$. The operator $K$ is not trace class and $C_t:H_t \to
+  L^2(I)$ is not Hilbert--Schmidt.
+\end{proposition}
+
+\begin{proof}
+  Schur bounds $K$ by its finite row and column integrals. The Gamma
+  representation of $|s-t|^{-a}$ and zero extension of $f \in L^2(I)$ give
+  strict positivity directly: the kernel $e^{-\lambda|v|}$ has quadratic form
+  \[
+    \int_\R\frac{2\lambda}{\lambda^2+\xi^2}
+    |\widehat{f}(\xi)|^2\ud\xi>0
+    \quad(f\ne0,\ \lambda>0)
+  \]
+  in the unitary Fourier convention. Absolute Fubini is justified by Schur
+  applied to $|f(s)f(t)|$. Integrating with positive weight
+  $\lambda^{a-1}/\Gamma_E(a)$ proves positivity and injectivity. Symmetry gives
+  self-adjointness. The deterministic truncated kernel $K_\epsilon =
+  K1_{\{|s-t|\ge\epsilon\}}$ is square integrable, so finite separated-kernel
+  approximations make it compact. The Schur norm of $K-K_\epsilon$ is at most
+  $2\epsilon^{1-a}/(1-a)$, proving compactness of $K$. These truncations are not
+  used as Gaussian covariances. Its positive square root is compact by the
+  compact spectral theorem.
+
+  On tests $\|K^{1/2}f\|_2 = \|f\|_{H_t}$. Smooth-test $L^2$ density and $\ker K
+  = 0$ imply that its range is dense, so the isometry extends onto $L^2(I)$. On
+  tests $C_tf = Kf$, and~\eqref{E:cameron-temporal-map} first gives compactness
+  into $L^2$.
+
+  Extend $K_a(v) = |v|^{-a}1_{\{|v|\le1\}}$ to the line. It lies in $L^{r/2}$.
+  Scalar Young convolution gives
+  \[
+    \|g\|_{H_t}^2\le\|K_a\|_{r/2}\|g\|_{r'}^2,\qquad
+    r'=r/(r-1).
+  \]
+  To verify the needed Young inequality, take $u = r/2$, $v = r'$, so $u,v < r$
+  and $1/u+1/v = 1+1/r$. Split the absolute convolution integrand into
+  $(|f|^u|h|^v)^{1/r}$, $|f|^{1-u/r}$ and $|h|^{1-v/r}$. H\"older with exponents
+  $r$, $(1/u-1/r)^{-1}$ and $(1/v-1/r)^{-1}$, followed by integration and
+  Tonelli, gives $\|f*h\|_r \le \|f\|_u\|h\|_v$. Covariance Cauchy--Schwarz and
+  $L^r$ duality now imply $\|Kf\|_r \le C_{a,r}\|f\|_{H_t}$ on tests. Their $Kf$
+  are bounded by the integrable-kernel row, making duality legitimate before
+  completion. Density extends the estimate, with $L^2$ value equal
+  to~\eqref{E:cameron-temporal-map}. Choose $r < r_2 < 2/a$. Compactness into
+  $L^2$ and boundedness into $L^{r_2}$ give compactness into $L^r$ by $\|u\|_r
+  \le \|u\|_2^\tau\|u\|_{r_2}^{1-\tau}$ with $1/r = \tau/2+(1-\tau)/r_2$.
+
+  Finally, the orthonormal cell indicators $N^{1/2}1_{(j/N,(j+1)/N)}$, $0 \le j
+  < N$, have $K$ quadratic forms summing to $2N^a/((1-a)(2-a)) \to \infty$.
+  Thus, positive $K$ has infinite trace, and $K^{1/2}\iota$ is not
+  Hilbert--Schmidt into $L^2$. No instantaneous $L^2$-valued Gaussian has been
+  introduced. This proves Proposition~\ref{P:cameron-temporal-map}.
+\end{proof}
+
+No-go~\ref{P:nogo-27} explains the upper endpoint of this compactness
+range: temporal concentration makes the mean map unbounded above
+$2/\alpha_0$ and noncompact at $2/\alpha_0$. The endpoint witness does not
+refute boundedness there.
+
+
+\begin{proposition}[The compact time-space mean]\label{P:cameron-full-mean}
+  Fix one $2 < r < 2/a$ throughout this proposition. For finite tensors with
+  orthonormal spatial labels define
+  \[
+    \mathcal{U}\left(\sum_j f_j\otimes q_j\right)(s)
+    =\sum_j(Kf_j)(s)q_j.
+  \]
+  It extends to a bounded map $H \to L^r(I;H_{\mathrm{sp}})$ with dimension-free
+  bound. The map
+  \begin{equation}\label{E:cameron-full-mean}
+    T\Phi(s)=T_{\mathrm{sp}}(\mathcal{U}\Phi(s))
+    :H\longrightarrow L^r(I;\mathcal{K}(F))
+  \end{equation}
+  is compact. For smooth supported $\Phi$, it is the multiplier
+  $iB_F(m_Rh_\Phi(s))$, where $h_\Phi = |\cdot|^{-a}*(\Gamma*\Phi)$. For the
+  supported projections of Lemma~\ref{L:cameron-supported-tensor},
+  \begin{equation}\label{E:cameron-compact-tail}
+    \epsilon_J:=\|T(I-P_J)\|_{H\to L^r(\mathcal{K}(F))}
+    \longrightarrow0.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  For a finite-dimensional spatial field $g$, positivity of the time kernel and
+  scalar Young give
+  \[
+    \|g\|_{H_t\otimes H_{\mathrm{sp}}}^2
+    \le\int_I\int_I|s-t|^{-a}\|g_s\|\|g_t\|\ud s\ud t
+    \le C_{a,r}^2\|g\|_{L^{r'}(H_{\mathrm{sp}})}^2.
+  \]
+  Hilbert Cauchy--Schwarz and finite-dimensional $L^r$ duality give
+  $\|\mathcal{U}\Phi\|_{L^r(H_{\mathrm{sp}})} \le C_{a,r}\|\Phi\|_H$. The
+  duality can be checked by the pointwise direction
+  $\|\mathcal{U}\Phi\|^{r-2}\mathcal{U}\Phi$ and smooth coefficient
+  approximation in $L^{r'}$, controlled by the displayed estimate. No dimension
+  factor occurs. Tensor density and completeness extend this to a strongly
+  measurable Bochner field. This time-only map still contains spatial vectors in
+  the covariance space. Spatial covariance is applied once, by
+  $T_{\mathrm{sp}}$.
+
+  The physical mean identity on separated tests follows
+  from~\eqref{E:cameron-spatial-row}. For a smooth spacetime test use the
+  separated compact-support approximations in the tensor proof. Their uniform
+  errors give uniformly small masked mean errors, using the finite time row and
+  locally finite spatial covariance on the relevant compact differences. The
+  multiplier bound by $L^\infty+L^2$ then gives uniform operator convergence,
+  identifying the $L^r$ mean in~\eqref{E:cameron-full-mean}. General $H$
+  controls denote completed operator fields, without a pointwise-potential
+  assertion.
+
+  Let $Q_n$ be the spatial projections in the compact-map proof. The maps
+  $T_n\Phi = T_{\mathrm{sp}}Q_n\mathcal{U}\Phi$ approximate $T$ in operator norm
+  by the dimension-free bound and $\|T_{\mathrm{sp}}(I-Q_n)\| \to 0$. For fixed
+  $n$, each spatial coordinate extraction $H \to H_t$ has norm at most one and
+  its image under $C_t$ is precompact in $L^r$. Finite combination with the
+  compact operators $T_{\mathrm{sp}}q_j$ makes $T_n$ compact. Hence, $T$ is
+  compact. Scalar time compactness alone tensored with an infinite identity
+  would not prove this.
+
+  To prove~\eqref{E:cameron-compact-tail}, if it failed choose unit $v_J$ on a
+  subsequence with $\|T(I-P_J)v_J\|$ bounded below. The vectors $(I-P_J)v_J$
+  tend weakly to zero, since their pairings with fixed $h$ are bounded by
+  $\|(I-P_J)h\|$. Compactness gives a norm-convergent image subsequence with
+  weak limit zero, a contradiction. This proves
+  Proposition~\ref{P:cameron-full-mean}.
+\end{proof}
+
+The radius remains fixed in this approximation. No-go~\ref{P:nogo-25}
+shows that translated white-noise controls prevent these fixed smooth
+projections from giving tails uniform over growing radii.
+
+
+\subsection{The noise residual and its Cameron operator}
+
+Choose integer $B \ge 1$ and $0 < \delta < \min(1,1/B)$. Put $N =
+\lfloor1/(\delta B)\rfloor$, $s_m = m\delta B$, $\ell_m = B$ for $m < N$ and
+$\ell_N = \delta^{-1}-NB \in [0,B)$. The intervals $I_m =
+[s_m,s_m+\delta\ell_m]$ partition $[0,1]$ up to endpoints. With $Q_J = I-P_J$ on
+$H_W$ and the explicit pullback~\eqref{E:raw-block-pullback}, define
+\[
+  Y_{m,J}(f)=W(Q_JT_{\delta,m}f),\qquad
+  g_\delta=\delta^{(1-a)/2}.
+\]
+Fix parameters
+\begin{equation}\label{E:cameron-block-parameters}
+  \frac12<\theta<\min\left(1-\frac a2,\frac{3-a-\alpha}{2}\right),
+  \qquad \frac1{1-\theta}<r<\frac2a,\qquad
+  \frac1\theta\le p<2<r .
+\end{equation}
+These intervals are nonempty.
+
+\begin{lemma}[Supported residual paths]\label{L:cameron-actual-residual}
+  Gaussian transfer with mask $m_R$ and its $F$ extension constructs the
+  centered Gaussian paths
+  \[
+    X_{m,J}(u)=g_\delta A_{m_R}(Y_{m,J})(\min(u,\ell_m)),
+    \qquad 0\le u\le B.
+  \]
+  Their finite tuple lies in the separable space $\mathscr{B}_0^{N+1}$, where
+  $\mathscr{B}_0 = h_0^\theta([0,B];\mathcal{K}(F))$. Every continuous linear
+  statistic $\ell(X)$ is $W(k_\ell)$ for some $k_\ell \in H_I$. An empty last
+  interval gives zero.
+\end{lemma}
+
+\begin{proof}
+  Isometry of the pullback and orthogonality of $Q_J$ give
+  $\operatorname{Var}Y_{m,J}(f) \le \|f\|_{H_W}^2$.
+  Proposition~\ref{P:source-gaussian-transfer} therefore applies. Its finite
+  sums retain both deterministic localizations, and their limits retain the true
+  $F$ extension and constant columns. Choose $\theta < \beta < \beta_2$ below
+  the upper threshold in~\eqref{E:cameron-block-parameters}; read the
+  operator-path construction at exponent $\beta$ with auxiliary $\beta_2$.
+  Constant stopping preserves compact values and $C^\beta$ bounds, hence gives
+  paths in the little $C^\theta$ closure by polygonal approximation. Its
+  separability is Lemma~\ref{L:raw-block-inputs}.
+
+  As in Lemma~\ref{L:raw-block-inputs}, every observed row's slow pullback
+  belongs to $H_I$: its time support is in $[0,1]$, and approximating its
+  indicator inside $I$ converges in original covariance norm by dominated
+  convergence against the integrable time kernel and locally finite $\Gamma$ on
+  the common compact support. This includes endpoints. Schwartz $E$ states and
+  both true constant columns supply the identities, then boundedness extends
+  them to $F$. Let $P_H$ be the orthogonal projection onto closed $H_I$.
+  Transfer for the noise $f\mapsto W(P_HQ_JT_{\delta,m}f)$ leaves each observed
+  row unchanged, since its residual slow test already lies in $H_I$. Countable
+  states and rational times identify the same operator paths. This
+  projected-transfer series has coefficient tests in $H_I$. Applying $\ell$
+  gives an $L^2$ limit in the closed isonormal image $W(H_I)$, proving the
+  assertion. Original global-basis tests were not assumed individually
+  supported. No time-support independence or Hilbert-valued noise is used. This
+  proves Lemma~\ref{L:cameron-actual-residual}.
+\end{proof}
+
+\begin{proposition}[Cameron covariance and averaged bound]
+  \label{P:cameron-actual-embedding}
+  The covariance map $L_{\delta,J}\Phi = \E[XW(\Phi)]$ is
+  \begin{equation}\label{E:cameron-actual-covariance}
+    (L_{\delta,J}\Phi)_m(u)=\sqrt\delta
+    \int_0^{\min(u,\ell_m)}
+    S_F(-v)T(Q_J\Phi)(s_m+\delta v)S_F(v)\ud v ,
+    \qquad \Phi\in H.
+  \end{equation}
+  This is a compact-operator Bochner integral. Define the exact norm and
+  constants
+  \begin{equation}\label{E:cameron-averaged-norm}
+    \|x\|_{\delta,p}
+    =\left(\delta\sum_{m=0}^N\|x_m\|_{C^\theta}^p\right)^{1/p},
+    \quad G_B=\sup_{|v|\le B}\|S_F(v)\|,
+    \quad C_B=G_B^2[B^{1-1/r}+B^{1-1/r-\theta}].
+  \end{equation}
+  Then the Gaussian Cameron embedding satisfies
+  \begin{equation}\label{E:cameron-averaged-bound}
+    \|L_{\delta,J}\Phi\|_{\delta,p}
+    \le\sqrt\delta\,C_B(2/B)^{1/p-1/r}
+    \epsilon_J\|\Phi\|_H .
+  \end{equation}
+  Convergence $\epsilon_J \to 0$ fixes $R$ and is independent of $\delta$.
+\end{proposition}
+
+\begin{proof}
+  For smooth supported $\Phi$, $Q_J\Phi$ is another such test. The explicit
+  pullback covariance~\eqref{E:raw-block-mean-jacobian} gives
+  \[
+    \E[Y_{m,J}(f)W(\Phi)]
+    =\delta^{a/2}\int f(v,x)
+    h_{Q_J\Phi}(s_m+\delta v,x)\ud x\ud v .
+  \]
+  Absolute Fubini also holds for signed compact tests. Multiplying by $g_\delta$
+  gives $\sqrt\delta$. Explicit rows and~\eqref{E:cameron-spatial-row} give
+  \eqref{E:cameron-actual-covariance}. The constant-velocity input acquires
+  displacement $v$ under $S_F(v)$; the constant displacement remains one. Both
+  columns are included.
+
+  Both $S_F$ and its adjoint are strongly continuous on Hilbert $F$. In
+  Bessel-unitary $E$ coordinates the Fourier matrix is
+  \[
+    \begin{pmatrix}
+      \cos(v|\xi|)&\langle\xi\rangle\sin(v|\xi|)/|\xi|\\
+      -|\xi|\sin(v|\xi|)/\langle\xi\rangle&\cos(v|\xi|)
+    \end{pmatrix}.
+  \]
+  Its continuous zero quotient and common bound $C(1+B)$ apply also to its
+  adjoint; dominated convergence proves the assertion. The constant block is
+  finite dimensional. For compact $A$, conjugation $S_F(-v)AS_F(v)$ is norm
+  continuous: strong convergence is uniform on compact images, and the right
+  factor follows by adjoints. Joint norm continuity in $(v,A)$ and uniform
+  bounds give Bochner measurability for the conjugated strongly measurable
+  compact-operator field. No norm continuity of the free group itself is
+  assumed.
+
+  Write $M = TQ_J\Phi$. H\"older and the primitive increment estimate give
+  \begin{equation}\label{E:cameron-local-primitive-bound}
+    \|(L_{\delta,J}\Phi)_m\|_{C^\theta}
+    \le\sqrt\delta\,C_B\delta^{-1/r}\|M\|_{L^r(I_m)}.
+  \end{equation}
+  Its primitive exponent is $1-1/r > \theta$. Simple compact-operator integrand
+  approximation in $L^r$ puts the primitive in $\mathscr{B}_0$; constant
+  stopping does not increase the H\"older norm. Affine pullback preserves null
+  sets. For fixed $\delta,J$ the covariance map is bounded by Bochner
+  Cauchy--Schwarz and finite tuple $L^2$ moments. The integral is bounded by the
+  displayed estimate, so equality on smooth controls extends by density to all
+  $H$. Dense states and rational times make it a full operator-path identity.
+
+  Let $H_{\mathrm{seen}}$ be the closed span of the $k_\ell$ from
+  Lemma~\ref{L:cameron-actual-residual}. Then $\ell(L_{\delta,J}\Phi) = \langle
+  k_\ell,\Phi\rangle_H$ and $\ker L_{\delta,J} = H_{\mathrm{seen}}^\perp$. The
+  first Wiener chaos definition of the Cameron space is therefore
+  $L_{\delta,J}(H_{\mathrm{seen}})$ with the minimum $H$ preimage norm. Extra
+  directions are removed by orthogonal projection, without an inverse
+  covariance. A bound in the original $H$ norm is thus the embedding bound.
+
+  Put $t_m = \|M\|_{L^r(I_m)} \ge 0$ and $n = N+1 \ge 2$. Finite power mean at
+  exponent $r/p > 1$, applied to $t_m^p$, gives
+  \[
+    \left(\sum_m t_m^p\right)^{1/p}
+    \le n^{1/p-1/r}\left(\sum_m t_m^r\right)^{1/r}.
+  \]
+  The true partition gives $\sum_m t_m^r = \|M\|_{L^r(I)}^r$, including an empty
+  last interval, and $n \le 2/(\delta B)$. Hence, the exact $\delta$-weighted
+  norm gives
+  \[
+    \|L_{\delta,J}\Phi\|_{\delta,p}
+    \le\sqrt\delta\,C_B(\delta n)^{1/p-1/r}\|M\|_{L^r}
+    \le\sqrt\delta\,C_B(2/B)^{1/p-1/r}
+    \epsilon_J\|\Phi\|_H.
+  \]
+  The $B$ factor remains explicit; covariance and mask occur once. This proves
+  Proposition~\ref{P:cameron-actual-embedding}.
+\end{proof}
+
+These conclusions fix the radius and make no uniform-radius projection tail
+assertion. No concentration estimate or original moment upper bound follows from
+this section alone.
+
+===== END context-cameron-mean-baseline.txt =====
+
+===== BEGIN context-compact-mean-family-baseline.txt =====
+{"source_path": "notes/integrated_compact_mean_family.tex", "source_revision": "cdde711c248862f33207860107dd0e6b31d60852", "selection": "WHOLE_FILE", "role": "UNASSIGNED complete baseline upstream module. Stated inputs/definitions may be used under checked application hypotheses; these proofs are NOT assigned or counted as additional reviewed proofs.", "bytes": 25917, "sha256": "39946946cc52bee56eb5ec2ab44111a2e8873df9b17ef65d322c0b42066325ca"}
+===== RAW UTF8 SOURCE =====
+\section{Compact mean families and the spectral gap for wave evolution}
+\label{S:compact-mean-family}
+
+Let $I = [0,1]$, let $K_x \subset \R^d$ be compact, and let $\sigma\mapsto
+V_\sigma$ be continuous from $I$ into $C_c^\infty(K_x)$, real and nonnegative.
+The index $\sigma$ is a family parameter, distinct from physical propagation
+time $t$. Assume that one real $w \in H^1(\R^d)$ with $\|w\|_2 = 1$ satisfies
+\begin{equation}\label{E:compact-common-trial}
+  \|\nabla w\|_2^2-\int V_\sigma w^2\le-\varepsilon
+  \quad\hbox{for all }\sigma\in I,\qquad \varepsilon>0.
+\end{equation}
+Put $M = \sup_I\|V_\sigma\|_\infty$ and $H_\sigma = -\Delta-V_\sigma$. The
+phases $E,F$, inclusion $i$, data $e_0$ and observable $O_\phi$ are exactly
+those of Section~\ref{S:constant-phase-young}.
+Proposition~\ref{P:constant-compact-base}, with deterministic coefficient $h =
+V_\sigma$ and noise amplitude zero, gives the ordinary physical flow
+$P_\sigma(t)$ on $F$. Its $E$ restriction is $P_\sigma^E(t)$. Uniqueness of the
+Duhamel solution makes finite-horizon constructions agree on overlaps; integer
+horizons and autonomy give the same semigroup for every $t \ge 0$.
+
+We import the following statements from the \emph{second edition}
+of~\cite{teschl:14:mathematical}: Theorem~10.2, p.~258, gives the self-adjoint
+$H^2$ operator, lower bound, essential spectrum $[0,\infty)$ and compact smooth
+core for real compact smooth potentials in the dimensions considered here.
+Theorem~10.13, p.~273, gives a simple positive ground state \emph{if the
+spectral bottom is an eigenvalue}. Theorem~4.12 and Corollary~4.13,
+pp.~140--141, give max--min and form monotonicity, with the essential threshold
+used after discrete eigenvalues end and with the quadratic-form domain allowed.
+Uniformity, fractional norms and all applications to $F$ are proved below.
+
+\subsection{The ground family and the global phase}
+
+\begin{proposition}[Ground states and a uniform rate gap]
+  \label{P:compact-ground-family}
+  The common form domain of $H_\sigma$ is $H^1$ with form $q_\sigma(u) =
+  \|\nabla u\|_2^2-\int V_\sigma|u|^2$. Its bottom $E_1(\sigma)$ is a simple
+  eigenvalue with a unique real positive-a.e. normalized ground state
+  $p_\sigma$. Let $E_2(\sigma)$ be the second max--min level, set to zero when
+  there is no second negative eigenvalue. Then
+  \begin{align}
+    -M&\le E_1(\sigma)\le-\varepsilon,\qquad
+    E_1(\sigma)<E_2(\sigma)\le0,\label{E:compact-energy-levels}\\
+    |E_j(\sigma)-E_j(\tau)|
+    &\le\|V_\sigma-V_\tau\|_\infty,\qquad j=1,2.
+    \label{E:compact-level-continuity}
+  \end{align}
+  The map $\sigma\mapsto p_\sigma$ is continuous into $H^2$ and bounded there.
+  With $\lambda_\sigma = \sqrt{-E_1(\sigma)}$ and $\mu_\sigma =
+  \sqrt{-E_2(\sigma)}$,
+  \begin{equation}\label{E:compact-rate-gap}
+    \sqrt\varepsilon\le\lambda_\sigma\le\sqrt M,\qquad
+    d_0:=\inf_I(\lambda_\sigma-\mu_\sigma)>0.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  The imported Theorem~10.2 applies to $-V_\sigma$, which is real, compactly
+  supported and in $L^2$ for $d \le 3$. It gives the stated self-adjoint
+  operator on $H^2$ and essential threshold zero. Write $c = 1+M$ and $A_\sigma
+  = H_\sigma+c \ge 1$. On $H^2$, integration by parts and the spectral theorem
+  give
+  \[
+    \|A_\sigma^{1/2}u\|_2^2
+    =q_\sigma(u)+c\|u\|_2^2,\qquad
+    \|u\|_{H^1}^2\le\|A_\sigma^{1/2}u\|_2^2
+    \le c\|u\|_{H^1}^2.
+  \]
+  Spectral cutoffs $1_{[1,n]}(A_\sigma)u$ show that $H^2$ is a core for the
+  half-power form norm. Fourier cutoffs show it is dense in $H^1$. The two
+  equivalent completions are therefore $D(A_\sigma^{1/2})$ and $H^1$. Both norms
+  dominate $L^2$ and give the same $L^2$ limit, so these are equal as subspaces,
+  with the displayed form. This verifies the form domain used below.
+
+  The form lower bound and~\eqref{E:compact-common-trial} give $-M \le E_1 \le
+  -\varepsilon$ by the imported form max--min principle. The bottom belongs to
+  the spectrum and lies below the essential threshold, so it is an isolated
+  eigenvalue of finite multiplicity. Only now apply the imported Theorem~10.13:
+  it is simple with a positive ground state. Conjugation preserves the real
+  operator; positivity and unit $L^2$ norm fix its real representative.
+
+  Simplicity, isolation and threshold zero give $E_1 < E_2 \le 0$. For every
+  common unit form test, $|q_\sigma(u)-q_\tau(u)| \le
+  \|V_\sigma-V_\tau\|_\infty$. Taking the same infima over orthogonal
+  complements and suprema in the source max--min formula proves
+  \eqref{E:compact-level-continuity}, including passage of $E_2$ to the
+  threshold. Compactness gives $\Delta_*: = \min_I(E_2-E_1) > 0$. Thus,
+  \[
+    \lambda_\sigma-\mu_\sigma
+    =\frac{E_2(\sigma)-E_1(\sigma)}
+    {\lambda_\sigma+\mu_\sigma}
+    \ge\frac{\Delta_*}{2\sqrt M}>0.
+  \]
+  Here $M \ge \varepsilon > 0$, and no division by $\mu_\sigma$ occurs.
+
+  Put $d_V = \|V_\sigma-V_\tau\|_\infty$ and decompose $p_\tau = a p_\sigma+r$,
+  with $r\perp p_\sigma$ and $0 < a \le 1$. The variational bound gives
+  $q_\sigma(p_\tau) \le E_1(\sigma)+2d_V$, whereas the complementary spectral
+  bound gives $q_\sigma(p_\tau) \ge E_1(\sigma)+\Delta_*\|r\|_2^2$. Hence,
+  \begin{equation}\label{E:compact-ground-continuity}
+    \|p_\tau-p_\sigma\|_2^2
+    =2(1-a)\le2(1-a^2)\le4d_V/\Delta_*.
+  \end{equation}
+  The eigenfunction equation is
+  \[
+    (1-\Delta)p_\sigma
+    =(1-\lambda_\sigma^2+V_\sigma)p_\sigma.
+  \]
+  Its right side is continuous in $L^2$ and bounded there by $1+2M$. The inverse
+  of $1-\Delta$ is an isometry from $L^2$ to the Bessel $H^2$ space, proving the
+  asserted $H^2$ continuity and bound. This proves
+  Proposition~\ref{P:compact-ground-family}.
+\end{proof}
+
+The rate gap~\eqref{E:compact-rate-gap} is a statement about the spectrum of
+$H_\sigma$. The wave on $E$ is measured in the fixed norm of $E$, so we first
+compare the two.
+
+\begin{lemma}[Uniform fractional phase norms]\label{L:compact-fractional-phase}
+  Let $B = 1-\Delta$, $c = 1+M$ and $A_\sigma = H_\sigma+c$. The quarter-power
+  domain is $H^{1/2}$ and
+  \begin{equation}\label{E:compact-quarter-power}
+    \|B^{1/4}u\|_2\le\|A_\sigma^{1/4}u\|_2
+    \le c^{1/4}\|B^{1/4}u\|_2.
+  \end{equation}
+  The norm
+  \begin{equation}\label{E:compact-spectral-phase-norm}
+    \|(u,z)\|_{E_\sigma}^2
+    =\|A_\sigma^{1/4}u\|_2^2
+    +\|A_\sigma^{-1/4}z\|_2^2
+  \end{equation}
+  is uniformly equivalent to the fixed norm on $E = H^{1/2}\times H^{-1/2}$,
+  interpreting the negative entry by completion.
+\end{lemma}
+
+\begin{proof}
+  On the common form domain $H^1$, $B \le A_\sigma \le cB$ and all three
+  operators are at least one. For positive self-adjoint $T,S$ with common form
+  domain, $T \le S$ implies $(T+t)^{-1} \ge (S+t)^{-1}$ for $t > 0$. Indeed,
+  \[
+    \langle f,(T+t)^{-1}f\rangle
+    =\sup_u\{2\operatorname{Re}\langle f,u\rangle
+    -q_T(u)-t\|u\|_2^2\};
+  \]
+  completing the square in the closed form norm proves the identity, and
+  comparison of the suprema proves the order. Consequently, $I-t(T+t)^{-1} \le
+  I-t(S+t)^{-1}$. The scalar identity
+  \[
+    \sqrt x=\frac1\pi\int_0^\infty
+    t^{-1/2}\frac{x}{x+t}\ud t
+  \]
+  follows by $t = xr^2$ and $\int_0^\infty(1+r^2)^{-1}\ud r = \pi/2$. Spectral
+  integration and positive Tonelli, first over finite intervals and then by
+  monotone convergence, give $T^{1/2} \le S^{1/2}$ as forms, including domain
+  inclusions. Apply this to $B \le A_\sigma \le cB$ to obtain
+  \eqref{E:compact-quarter-power} and equality of the quarter-power domains with
+  $H^{1/2}$.
+
+  Under the $L^2$ pairing the dual norm of $\|A_\sigma^{1/4}u\|_2$ at $z \in
+  L^2$ is $\|A_\sigma^{-1/4}z\|_2$. Cauchy--Schwarz gives the upper bound, and a
+  scalar multiple of $A_\sigma^{-1/2}z$ attains it. Completion
+  and~\eqref{E:compact-quarter-power} identify this negative space with
+  $H^{-1/2}$, uniformly in $\sigma$. Adding the squared norms proves the claim.
+  This proves Lemma~\ref{L:compact-fractional-phase}.
+\end{proof}
+
+\begin{proposition}[The complementary wave on $E$]\label{P:compact-E-wave}
+  Put
+  \[
+    e_\sigma^E=(p_\sigma,\lambda_\sigma p_\sigma),\qquad
+    \ell_\sigma^E(u,z)
+    =\frac{\langle p_\sigma,u\rangle+
+    \langle p_\sigma,z\rangle/\lambda_\sigma}{2},
+    \qquad \Pi_\sigma^E=e_\sigma^E\ell_\sigma^E.
+  \]
+  These are bounded real objects, continuous in their respective norms, with
+  $\ell_\sigma^E(e_\sigma^E) = 1$, and
+  \begin{align}
+    P_\sigma^E(t)e_\sigma^E
+    &=e^{\lambda_\sigma t}e_\sigma^E,\qquad
+    \ell_\sigma^EP_\sigma^E(t)
+    =e^{\lambda_\sigma t}\ell_\sigma^E,\label{E:compact-E-eigen}\\
+    \|P_\sigma^E(t)(I-\Pi_\sigma^E)\|_{\mathcal{B}(E)}
+    &\le C(1+t)e^{\mu_\sigma t},\qquad t\ge0.
+    \label{E:compact-E-complement}
+  \end{align}
+  The constant is uniform over $\sigma \in I$.
+\end{proposition}
+
+\begin{proof}
+  Define real spectral functions $C_t(h),S_t(h)$ by $\cos(t\sqrt h),\sin(t\sqrt
+  h)/\sqrt h$ for $h > 0$, by $1,t$ at zero, and by
+  $\cosh(t\sqrt{-h}),\sinh(t\sqrt{-h})/\sqrt{-h}$ for $h < 0$. The spectral wave
+  matrix is
+  \begin{equation}\label{E:compact-spectral-wave}
+    \begin{pmatrix}
+      C_t(H_\sigma)&S_t(H_\sigma)\\
+      -H_\sigma S_t(H_\sigma)&C_t(H_\sigma)
+    \end{pmatrix}.
+  \end{equation}
+  Real potentials, their resolvents and spectral resolutions commute with
+  conjugation. All these real functions and positive $A_\sigma$ powers preserve
+  the real phases.
+
+  The spatial projection $Q_\sigma^{\mathrm{sp}} = I-|p_\sigma\rangle\langle
+  p_\sigma|$ commutes with $H_\sigma,A_\sigma$ and is contractive on both
+  entries of~\eqref{E:compact-spectral-phase-norm}. On its support $h \ge E_2 =
+  -\mu_\sigma^2$, the phase isometry gives scalar matrix entries
+  \[
+    C_t(h),\quad \sqrt{h+c}\,S_t(h),\quad
+    -hS_t(h)/\sqrt{h+c},\quad C_t(h).
+  \]
+  For $h \ge 0$, use $|S_t(h)| \le \min(t,h^{-1/2})$ and split $h \le 1$ from $h
+  \ge 1$; the lower off-diagonal entry is at most one. For $-\mu_\sigma^2 \le h
+  < 0$, use $|C_t(h)| \le e^{\mu_\sigma t}$ and $|S_t(h)| \le t e^{\mu_\sigma
+  t}$, with $|h| \le M$ and $1 \le h+c \le c$. Thus, the complementary spatial
+  matrix has norm at most $C(1+t)e^{\mu_\sigma t}$, including $\mu_\sigma = 0$.
+
+  The two spatial ground branches are $(p_\sigma,\pm\lambda_\sigma p_\sigma)$.
+  Besides $\Pi_\sigma^E$, their projections include the decaying branch
+  \[
+    (p_\sigma,-\lambda_\sigma p_\sigma)
+    \frac{\langle p_\sigma,u\rangle
+    -\langle p_\sigma,z\rangle/\lambda_\sigma}{2}.
+  \]
+  Their sum is the spatial ground projection on both phase entries. Both
+  projection norms are uniformly bounded in the spectral phase norm because
+  $\sqrt\varepsilon \le \lambda_\sigma \le \sqrt M$ and $1 \le
+  c-\lambda_\sigma^2 \le c$. The decaying branch has factor $e^{-\lambda_\sigma
+  t}$ and remains in $I-\Pi_\sigma^E$. The fractional norm equivalence now
+  proves the stated complement estimate for the spectral matrix.
+
+  We identify this matrix with the physical flow. The same scalar bounds at
+  graph levels $(A_\sigma u,A_\sigma^{1/2}z)$ give continuous solutions in
+  $H^2\times H^1$. These graph norms are uniformly equivalent to the Sobolev
+  norms: the $H^1$ case was proved above, and $A_\sigma-B = M-V_\sigma$ is
+  bounded by $M$ while $A_\sigma,B \ge 1$. Spectral cutoffs give $u_t = z$ in
+  $H^1$ and $z_t = -H_\sigma u$ in $L^2$, with continuous derivatives there. The
+  free Fourier group on $H^1\times L^2$ has, after its Bessel isometry, the same
+  bounded weighted entries and is strongly continuous by dominated Fourier
+  convergence. Its generator is $(z,\Delta u)$ on $H^2\times H^1$, as the
+  Fourier multipliers show. For compact smooth initial data, differentiating the
+  free interaction picture at these graph levels gives Duhamel with force
+  $(0,V_\sigma u)$. The identity also holds in $E$. Multiplication by $V_\sigma$
+  maps $H^{1/2}$ into $L^2$ and then $H^{-1/2}$ with bound $M$, so Picard
+  uniqueness identifies the spectral solution with the ordinary $E$ flow on
+  these data. Density within $E$ and finite-horizon boundedness extend equality
+  to all $E$. No density of $E$ in $F$ is used. Finally, the ground branches
+  give~\eqref{E:compact-E-eigen}; their pairings are continuous because
+  $p_\sigma \in H^2$. Continuity and uniform bounds of the displayed vectors and
+  duals follow from Proposition~\ref{P:compact-ground-family}. This proves
+  Proposition~\ref{P:compact-E-wave}.
+\end{proof}
+
+\subsection{The growing projection and its complementary wave evolution}
+
+For the constant coordinates write $C(t)(c_1,c_2) = (c_1+tc_2,c_2)$ and
+$D_\sigma(c_1,c_2) = (0,V_\sigma c_1) \in E$.
+The data $e_0 = (0,1,0)$ lie entirely in these constant coordinates, outside
+$iE$. So we follow the flow on all of $F$, where $D_\sigma$ couples the
+constants to $E$.
+
+\begin{proposition}[The growing projection on the wave phase space]
+  \label{P:compact-F-projection}
+  The physical flow satisfies
+  \begin{equation}\label{E:compact-F-block}
+    P_\sigma(t)(e,c)
+    =\left(P_\sigma^E(t)e+
+    \int_0^tP_\sigma^E(t-r)D_\sigma C(r)c\ud r,\ C(t)c\right).
+  \end{equation}
+  Set
+  \begin{align}
+    f_\sigma&=\frac{\int V_\sigma p_\sigma}{2\lambda_\sigma}>0,
+    &\ell_\sigma^C(c)&=
+    f_\sigma\left(\frac{c_1}{\lambda_\sigma}
+    +\frac{c_2}{\lambda_\sigma^2}\right),
+    \label{E:compact-constant-dual}\\
+    e_\sigma&=ie_\sigma^E,
+    &\ell_\sigma(e,c)&=\ell_\sigma^E(e)+\ell_\sigma^C(c),\qquad
+    \Pi_\sigma=e_\sigma\ell_\sigma,\quad Q_\sigma=I-\Pi_\sigma.
+    \label{E:compact-F-projection}
+  \end{align}
+  These vectors, duals and rank-one projections are norm-continuous and
+  uniformly bounded, and
+  \begin{equation}\label{E:compact-F-eigen}
+    \ell_\sigma(e_\sigma)=1,\qquad
+    P_\sigma(t)\Pi_\sigma=\Pi_\sigma P_\sigma(t)
+    =e^{\lambda_\sigma t}\Pi_\sigma.
+  \end{equation}
+  For every fixed nonnegative smooth compact $\phi$ of integral one,
+  \begin{equation}\label{E:compact-positive-margins}
+    \inf_I\ell_\sigma(e_0)>0,\qquad
+    \inf_I O_\phi(e_\sigma)>0.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  The constant coordinates obey $C(t)$ because the potential force has range in
+  $iE$. To justify variation of constants on the $E$ component, let $g$ be a
+  continuous $E$ force and substitute the ordinary free-Duhamel equation for
+  $P_\sigma^E(t-r)g(r)$ in its time integral. With $B_\sigma^E(u,z) =
+  (0,V_\sigma u)$, strong $E$-valued Fubini gives
+  \begin{align*}
+    &\int_0^t\int_r^t S(t-s)B_\sigma^E
+    P_\sigma^E(s-r)g(r)\ud s\ud r\\
+    &\qquad=\int_0^tS(t-s)B_\sigma^E
+    \left[\int_0^sP_\sigma^E(s-r)g(r)\ud r\right]\ud s.
+  \end{align*}
+  All norms are bounded on the finite triangle, so this exchange is absolute in
+  $E$. Thus, $Y(t) = P_\sigma^E(t)e+\int_0^tP_\sigma^E(t-r)g(r)\ud r$ solves
+  free Duhamel with force $B_\sigma^EY+g$. Take $g(r) = D_\sigma C(r)c$ and
+  adjoin the constant block. This is the same $F$ Duhamel equation as the
+  ordinary flow; uniqueness proves~\eqref{E:compact-F-block}. Its finite-horizon
+  bounds are uniform since the family has bounded $L^\infty$ and $L^2$ norms on
+  one compact support.
+
+  The integral defining $f_\sigma$ is finite by $L^2$ Cauchy--Schwarz and
+  positive because $V_\sigma$ is nonzero by the common trial and $p_\sigma > 0$
+  a.e. Its coefficients are continuous and uniformly bounded by the $H^2$
+  continuity and positive lower bound for the rate; no $p_\sigma \in L^1$
+  assumption is used. Directly,
+  \begin{align*}
+    \ell_\sigma^ED_\sigma C(r)c&=f_\sigma(c_1+rc_2),\\
+    \ell_\sigma^C(c)
+    &=\int_0^\infty e^{-\lambda_\sigma r}
+    f_\sigma(c_1+rc_2)\ud r,\\
+    \ell_\sigma^C(C(t)c)
+    &=\int_t^\infty e^{\lambda_\sigma(t-r)}
+    f_\sigma(c_1+rc_2)\ud r.
+  \end{align*}
+  These integrals converge absolutely. Applying $\ell_\sigma$
+  to~\eqref{E:compact-F-block}, the finite integral and this tail combine to
+  give $\ell_\sigma P_\sigma(t) = e^{\lambda_\sigma t}\ell_\sigma$. The ground
+  mode also gives $P_\sigma(t)e_\sigma = e^{\lambda_\sigma t}e_\sigma$ and
+  $\ell_\sigma(e_\sigma) = 1$, proving~\eqref{E:compact-F-eigen}. Bounded
+  bilinear multiplication and the preceding continuous coefficients prove norm
+  continuity of all objects. Finally, $\ell_\sigma(e_0) =
+  f_\sigma/\lambda_\sigma > 0$ and $O_\phi(e_\sigma) = \int\phi p_\sigma > 0$.
+  Both are continuous on compact $I$, proving
+  \eqref{E:compact-positive-margins}. Positivity is in integrals, without a
+  point trace or a one-dimensional ODE. This proves
+  Proposition~\ref{P:compact-F-projection}.
+\end{proof}
+
+Proposition~\ref{P:compact-F-projection} isolates the growing part
+$\Pi_\sigma$. It remains to bound the flow on the complement $Q_\sigma$. The
+proof of Lemma~\ref{L:raw-block-indexed-cone} uses the normalized form of this
+bound.
+
+\begin{proposition}[Complementary wave evolution and parameter dependence]
+  \label{P:compact-F-complement}
+  Uniformly over $\sigma$ and $t \ge 0$,
+  \begin{equation}\label{E:compact-F-complement}
+    \|P_\sigma(t)Q_\sigma\|_{\mathcal{B}(F)}
+    \le C(1+t)^3e^{\mu_\sigma t}.
+  \end{equation}
+  For every fixed $0 < \eta < d_0$,
+  \begin{equation}\label{E:compact-normalized-complement}
+    \|e^{-\lambda_\sigma t}P_\sigma(t)Q_\sigma\|
+    \le C_\eta e^{-\eta t}.
+  \end{equation}
+  For every finite $T_0$,
+  \begin{equation}\label{E:compact-parameter-flow}
+    \sup_{0\le t\le T_0}\|P_\sigma(t)-P_\tau(t)\|_{\mathcal{B}(F)}
+    \le C_{T_0}
+    \big(\|V_\sigma-V_\tau\|_\infty+\|V_\sigma-V_\tau\|_2\big).
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  Write $Q_\sigma^E = I-\Pi_\sigma^E$. Split $D_\sigma$ into its growing and
+  complementary parts in~\eqref{E:compact-F-block} and use the two tail
+  integrals in the preceding proof. The exact $E$ component of
+  $P_\sigma(t)Q_\sigma(e,c)$ is
+  \begin{equation}\label{E:compact-complement-forcing}
+    P_\sigma^E(t)Q_\sigma^Ee
+    +\int_0^tP_\sigma^E(t-r)Q_\sigma^ED_\sigma C(r)c\ud r
+    -e_\sigma^E\ell_\sigma^C(C(t)c),
+  \end{equation}
+  and the constant component is $C(t)c$. The final subtraction retains the
+  growing response to constants in the projection. Since $\|Q_\sigma^ED_\sigma
+  C(r)\| \le C(1+r)$, the integral in~\eqref{E:compact-complement-forcing} has
+  norm at most
+  \[
+    Ce^{\mu_\sigma t}|c|
+    \int_0^t(1+t-r)(1+r)\ud r
+    =Ce^{\mu_\sigma t}(t+t^2+t^3/6)|c|.
+  \]
+  The first term is bounded by $C(1+t)e^{\mu_\sigma t}\|e\|_E$; the final term
+  and constant component by $C(1+t)|c|$. Since $\mu_\sigma \ge 0$ this proves
+  \eqref{E:compact-F-complement}. The boundedness of $(1+t)^3e^{-(d_0-\eta)t}$
+  proves \eqref{E:compact-normalized-complement}. In particular, the
+  constant-velocity polynomial is included in this estimate.
+
+  Put $\mathcal{B}_\sigma = iB_F(V_\sigma)$ and $d_{\sigma,\tau} =
+  \|V_\sigma-V_\tau\|_\infty+ \|V_\sigma-V_\tau\|_2$. The bound for $B_F$ gives
+  $\|\mathcal{B}_\sigma-\mathcal{B}_\tau\| \le d_{\sigma,\tau}$. Subtract the
+  two free-Duhamel equations on states. Their difference is the sum of the
+  integral with $S_F(t-r)\mathcal{B}_\sigma(P_\sigma(r)-P_\tau(r))$ and that
+  with $S_F(t-r)(\mathcal{B}_\sigma-\mathcal{B}_\tau)P_\tau(r)$. The uniform
+  finite-horizon bounds and scalar Gronwall prove
+  \eqref{E:compact-parameter-flow}. The operator norm is measurable:
+  separability of $F$ expresses it as the supremum over a countable dense set of
+  unit states, each with continuous image. Hence, Gronwall applies without a
+  $\mathcal{B}(F)$-valued derivative or operator-norm continuity of the free
+  group. This proves Proposition~\ref{P:compact-F-complement}.
+\end{proof}
+
+\subsection{The original nonnegative control and a common trial}
+
+So far $V_\sigma$ was any continuous family
+satisfying~\eqref{E:compact-common-trial}. We now produce such a family from a
+nonnegative test $\Psi$ and the original covariance $\Gamma$, in two steps.
+
+\begin{lemma}[The original mean and variance]\label{L:compact-raw-profile}
+  Let $\Gamma \ne 0$ satisfy Hypothesis~\ref{H:homog}, let $a = \alpha_0$, and
+  let real nonnegative nonzero $\Psi \in C_c^\infty((0,1)\times\R^d)$ be
+  arbitrary, without a separability assumption. Define
+  \begin{equation}\label{E:compact-raw-mean}
+    h_\sigma(x)=\int_0^1|\sigma-u|^{-a}
+    (\Gamma*\Psi(u,\cdot))(x)\ud u,\qquad
+    \overline{q}(x)=\int_0^1\Psi(u,x)\ud u,\qquad Z=W(\Psi).
+  \end{equation}
+  Then $h$ is smooth in time and space on compact sets, and
+  \begin{equation}\label{E:compact-raw-cost}
+    0<v_\Psi:=\E Z^2
+    =\int_0^1\int\Psi(\sigma,x)h_\sigma(x)\ud x\ud\sigma<\infty.
+  \end{equation}
+  Against every smooth compact positive-time test $F_0$,
+  \[
+    \E[W(\Psi)W(F_0)]=\int F_0(s,x)h_s(x)\ud x\ud s.
+  \]
+  Moreover, on $I$,
+  \begin{equation}\label{E:compact-positive-mean-floor}
+    h_\sigma\ge\Gamma*\overline{q},\qquad
+    v_\Psi\ge Q(\overline{q})
+    :=\int\Gamma(\ud z)\int\overline{q}(x)\overline{q}(x-z)\ud x>0.
+  \end{equation}
+  For every fixed mask, $V_\sigma = m_Rh_\sigma$ is a smooth compact family,
+  Lipschitz in $\sigma$ in $L^\infty$ and $L^2$.
+\end{lemma}
+
+\begin{proof}
+  Choose $A \ge 1$ containing the spatial support of $\Psi$ in $B_A$. The
+  original covariance identity and absolute Fubini give the stated mean pairing:
+  the two compact tests restrict spatial differences to a compact set of finite
+  $\Gamma$ mass, and the time singularity is locally integrable since $a < 1$.
+  This identifies the linear covariance mean without evaluating noise at a
+  point. The same calculation gives~\eqref{E:compact-raw-cost}. Its spatial
+  integrand is bounded in integral by
+  $\|\Psi\|_\infty^2|B_A|\Gamma(\overline{B}_{2A})$, and
+  $\int_0^1\int_0^1|\sigma-u|^{-a}\ud u\ud\sigma = 2/((1-a)(2-a))$, proving
+  finiteness.
+
+  Nonnegative nonzero smooth $\Psi$ has positive integral, so $\overline{q} \ne
+  0$. Nonzero $\Gamma$ charges some ball, and homogeneity gives $\Gamma(B_1) =
+  r^{\alpha-d}\Gamma(B_r) > 0$. Thus, every origin-centered ball $B_r$, $r > 0$,
+  has positive finite mass. The continuous compact autocorrelation
+  $\int\overline{q}(x)\overline{q}(x-z)\ud x$ is positive at zero and bounded
+  below on some ball. This proves $0 < Q(\overline{q}) < \infty$. Since
+  $|\sigma-u|^{-a} \ge 1$ on the unit time square, positive Tonelli gives both
+  inequalities in~\eqref{E:compact-positive-mean-floor}.
+
+  Extend $\Psi$ by zero in time and write
+  \[
+    h_s(x)=\int_\R |r|^{-a}
+    \int\Gamma(\ud z)\Psi(s-r,x-z)\ud r.
+  \]
+  On compact $s,x$ sets the relevant $r,z$ range over fixed compact sets;
+  $|r|^{-a}$ is integrable there. Every derivative falls on the smooth test, not
+  on the singular time kernel. Dominated differentiation gives smoothness and
+  continuity of all derivatives on compacts. Multiplication by $m_R$ now gives
+  the claimed compact family and its fixed-$R$ Lipschitz bounds. This proves
+  Lemma~\ref{L:compact-raw-profile}.
+\end{proof}
+
+Lemma~\ref{L:compact-raw-profile} gives a smooth compact family for every
+fixed mask, but not yet the common negative
+trial~\eqref{E:compact-common-trial}.
+
+\begin{proposition}[Binding with the original control and cost fixed]
+  \label{P:compact-original-common-trial}
+  For every $\Psi$ in Lemma~\ref{L:compact-raw-profile}, a sufficiently large
+  finite mask $m_R$ gives $V_\sigma = m_Rh_\sigma$ a common negative
+  trial~\eqref{E:compact-common-trial}. Thus, all preceding ground, projection,
+  positive-margin and complementary-wave conclusions apply. The rate is
+  Lipschitz on $I$ and has $\lambda_0 > 0$. The original test $\Psi$, original
+  variable $Z$ and variance $v_\Psi$ are unchanged by this choice. The mask can
+  additionally cover any fixed compact variational test supports.
+\end{proposition}
+
+\begin{proof}
+  Choose a real unit $L^2$ function $\psi \in C_c^\infty(B_2)$ with $\psi \ge
+  c_0 > 0$ on $B_1$, and put $\psi_L(x) = L^{-d/2}\psi(x/L)$, $D_\psi =
+  \|\nabla\psi\|_2^2$, where $L \ge \max(1,2A)$. Choose the even mask with $R
+  \ge 2L$, so $V_\sigma = h_\sigma$ on $\operatorname{supp}\psi_L$. This is the
+  allowed real mask $0 \le m_R \le 1$, equal to one on $B_R$ and with support in
+  $\overline{B}_{2R}$. Positive Tonelli
+  and~\eqref{E:compact-positive-mean-floor} give
+  \begin{align}
+    \int V_\sigma\psi_L^2
+    &\ge c_0^2L^{-d}\int_{B_L}(\Gamma*\overline{q})(x)\ud x\nonumber\\
+    &=c_0^2L^{-d}\int\overline{q}(y)\Gamma(B_L-y)\ud y\nonumber\\
+    &\ge c_0^2L^{-d}\Gamma(B_{L/2})\int\overline{q}
+    =C_\Gamma L^{-\alpha},\label{E:compact-trial-potential}\\
+    C_\Gamma&=c_0^22^{\alpha-d}\Gamma(B_1)\int\overline{q}>0.\nonumber
+  \end{align}
+  Here $B_{L/2} \subset B_L-y$ for $|y| \le A$ and $L \ge 2A$. All covariance
+  masses in the argument are compact and finite. The kinetic energy is $D_\psi
+  L^{-2}$. Since $\alpha < 2$, choose $L$ large enough that $\varepsilon_R: =
+  C_\Gamma L^{-\alpha}-D_\psi L^{-2} > 0$. Then
+  \[
+    \|\nabla\psi_L\|_2^2-\int V_\sigma\psi_L^2
+    \le-\varepsilon_R\quad\hbox{for every }\sigma\in I.
+  \]
+  Fix this finite $R$ before invoking Proposition~\ref{P:compact-ground-family}.
+  Its level bound and the mean Lipschitz estimate give
+  \[
+    |\lambda_\sigma-\lambda_\tau|
+    \le\frac{\|V_\sigma-V_\tau\|_\infty}{2\sqrt{\varepsilon_R}}
+    \le C_R|\sigma-\tau|.
+  \]
+  The positive mean integrates the entire time test, so $\lambda_0 > 0$ even
+  though $\Psi(0,\cdot) = 0$. Only the trial and mask have grown; the original
+  test, its variable and~\eqref{E:compact-raw-cost} were fixed first. Enlarging
+  $R$ to contain additional fixed compact test supports preserves the trial and
+  gives equality of masked and unmasked potential energies on those supports.
+  This includes singular invariant-direction covariances and the one-dimensional
+  white case. It is not an all-strength binding assertion for one fixed compact
+  potential. Masks are fixed before source or time asymptotics; a later supremum
+  over controls must follow their individual bounds. This proves
+  Proposition~\ref{P:compact-original-common-trial}.
+\end{proof}
+
+===== END context-compact-mean-family-baseline.txt =====
+

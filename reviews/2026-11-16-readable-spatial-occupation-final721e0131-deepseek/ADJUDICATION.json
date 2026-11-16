@@ -1,0 +1,505 @@
+{
+  "review_record_id": "RP056",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "721e01316d79d0684273d9fb4beaf1f104721c20",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_spatial_occupation.tex",
+  "source_binding_sha256": "a5c35e73f1d091082542076449ec36a9387e2ab7b4d71aa69770ce3c1669fc4a",
+  "public_report_sha256": "dc7a29f8b4519b1e6fed2fb7d8ae8ab9a3e810800a90ba801067f2f05dc99e59",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_ALL_ASSIGNED_PUBLIC_RECONSTRUCTIONS_CHECKED_ROOT_REVIEWS",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:spatial-physical-pair": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:spatial-static-controls": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:spatial-fourier-bound": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    },
+    "P:spatial-smooth-ratio": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:spatial-four-linear": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:spatial-energy-map": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:occupation-kernel-row": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:occupation-physical-class": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:spatial-physical-pair",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED (none added; the proof is byte-for-byte the same aside from"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 14,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "9b7b8d8a40eb4b508cff8e313a6036c389b063c6a60f05db900e178fa48c93ae",
+      "mathematical_check": "The unchanged physical-pair proof is publicly reconstructed: local Radon and Lebesgue sigma-finiteness give the positive productmeasure; Tonelli firstinx transfers anyBorel Lebesgue-null set atboth x andx-y to aproduct-null set, despite potentially infiniteGamma mass. Borelnull supersets handlearbitraryversions in thecompletion. The same exceptional-set argument transfersa.e.convergence. Signedpairings waitforabsoluteintegrability, so no spectraldensity orrepresentative assumption isinserted.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        13,
+        23
+      ],
+      "old_proof_lf": [
+        25,
+        34
+      ],
+      "old_statement_sha256": "8e168cdf679a4126d704904bbbdcc51878269ebe921b53e90dfa9f6289d4ee31",
+      "old_proof_sha256": "121e20ceb5010f0b23ac5c599848c1c225aa5452a831a4d464e150d3a5e08c7c",
+      "new_statement_lf": [
+        13,
+        23
+      ],
+      "new_proof_lf": [
+        25,
+        34
+      ],
+      "new_statement_sha256": "8e168cdf679a4126d704904bbbdcc51878269ebe921b53e90dfa9f6289d4ee31",
+      "new_proof_sha256": "121e20ceb5010f0b23ac5c599848c1c225aa5452a831a4d464e150d3a5e08c7c"
+    },
+    {
+      "proof_id": "L:spatial-static-controls",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED. The added introductory paragraph and Steps 1–3 only reorganize"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 41,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "a9822816ce3b99997e36e3b299791a6e9c940c84db7b01a6b78dbafd7af817db",
+      "mathematical_check": "The report produces the static cU_z potential atoneparameter using an admissible smoothseparatedcontrol andthe stated unmasked-rate theorem. Sameunittests bound squaredrate differences, andmonotonic positivity gives apositivefloor forlocal square-rootLipschitz. The compactendpointcutoffs f_n increase toexactf_a, k_n(s)increase1atEVERYs includingendpoints and havefixedpositivefloorintf4. Ratecontinuity anddominatedconvergence give rewardlimit; positiveTonelli andf_n k_n increasef_a giveoriginalcostlimit M_aB_Gamma(z,z). Autocorrelation andhomogeneousorigin-ball charge prove thepositivefinitespatialcost. The two limits aretaken separately; score differences are not falselymonotone and no controldepends onlargemodeltime.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        42,
+        56
+      ],
+      "old_proof_lf": [
+        58,
+        98
+      ],
+      "old_statement_sha256": "89f92a155c6da26134ffb550947c2ca0e1f714b3820cb0548c5c0af29ce6f7bb",
+      "old_proof_sha256": "9c63886ba56523c4d97040e7776da58435310e56e6522419bb9640a83881534b",
+      "new_statement_lf": [
+        42,
+        56
+      ],
+      "new_proof_lf": [
+        58,
+        115
+      ],
+      "new_statement_sha256": "89f92a155c6da26134ffb550947c2ca0e1f714b3820cb0548c5c0af29ce6f7bb",
+      "new_proof_sha256": "8fdd928f098ed3c1546e1afb88fc87f2ebb0fc91ae36e7421c16a877c657c992"
+    },
+    {
+      "proof_id": "L:spatial-fourier-bound",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED. The new Step-2 majorant sentence is correct. The new scalar"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 81,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "79c9183776fc00aa4110424c1c157cb8707da86a5608a12a94c02c2c0c2b4ece",
+      "mathematical_check": "The report checks nonzerogradient ofthecompactunitprofile, uses ordinaryFourier normalizationF0Q=c_d^-1 Qhat and the singleSchwartzautocorrelation distributionpairing toobtain exactA_sp=int|F0(g^2)|^2mu. L1mass1 andgradientCS give min(1,4b/|xi|^2), and the two-region calculation produces the exact8b/(4b+|xi|^2) majorant. It explicitly consumes the source-attributed UNASSIGNED homogeneous resolvent formula atq=2sqrtb>0, withH:homog/R_alpha convention, giving2^(1+alpha)R_alpha b^(alpha/2). Its addedBeta scalarintegral followsx=u^2 andreflection; qpositive isdistinguished fromthefixedexponentq. Zero covariance ishandled. Thischecks theassignedFourierbound underthestatedresolvent input; theupstreamcalculation isnot itself anewassignedproof(R1).",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        104,
+        114
+      ],
+      "old_proof_lf": [
+        116,
+        167
+      ],
+      "old_statement_sha256": "03116ee23d36bd3a643e7097416348b2da52a862dd9c5132449c9feb38cc03f8",
+      "old_proof_sha256": "6c47913bd993fdffbed8bcc4f0472f3139ece176382991a92ca083c9e376a4e3",
+      "new_statement_lf": [
+        121,
+        131
+      ],
+      "new_proof_lf": [
+        133,
+        215
+      ],
+      "new_statement_sha256": "03116ee23d36bd3a643e7097416348b2da52a862dd9c5132449c9feb38cc03f8",
+      "new_proof_sha256": "2341b807cf1153aff898936a10f984757ad162974862e7bff746e4897e06b9c8"
+    },
+    {
+      "proof_id": "P:spatial-smooth-ratio",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED. The new explicit sentences"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 121,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "30816f03b4d2c3d98af96f7544c8ea97eae8f3ad132c990f2f034e6b3471515f",
+      "mathematical_check": "The report provespositivefiniteR0 bysmoothautocorrelation/nonzerogradient andthejust-derived deterministicFourierbound, independentofS1 finiteness. It explicitly separates thetwo squareamplitudes, LebesgueJacobian andRadonpushforward to obtainA(U_l g)=l^alphaA,b(U_l g)=l^2b. Choosingz=theta(U_lg)^2 and thegiven l/theta givespositiveRayleightest L^2 andcosttheta^2 l^alphaA=(1+u)^2L^(4-alpha)/(u^(alpha/2)R(g)). The scalar optimum L^k=1/(qC), exactk/q factor and1/(q^q C)=R(g)alpha^(alpha/2)/(8M_a q^(q/2)) reconstruct the scoreconstant. Itretains thepreexistingfiniteS1inputfor thescore inequality itself.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        175,
+        186
+      ],
+      "old_proof_lf": [
+        188,
+        226
+      ],
+      "old_statement_sha256": "e32a2ea179065c9927ef4cd740a17b04043ac26064ed8dc00743b4d74f6fc69c",
+      "old_proof_sha256": "c472d5c0e65ce2d6f61b0120589400b07894bb511c3af821f6dcc8cf293599a1",
+      "new_statement_lf": [
+        223,
+        234
+      ],
+      "new_proof_lf": [
+        236,
+        290
+      ],
+      "new_statement_sha256": "e32a2ea179065c9927ef4cd740a17b04043ac26064ed8dc00743b4d74f6fc69c",
+      "new_proof_sha256": "910ebfc5ee90426da59392ffd4e9d02783cf036b50e24aec7fe52bc99caf991e"
+    },
+    {
+      "proof_id": "P:spatial-four-linear",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED. The added Step 4 sentence “As in `L:compact-raw-profile`,"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 160,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "f3643a4d3adb241564b4795e95f346e4e4db7b05b1a1dec84ea2a83e483db811",
+      "mathematical_check": "The report reconstructs smooth signed covariance PSD/symmetry using the ordinaryFouriermeasure convention and thequadraticpolynomial CS. Smoothnormalization gives the homogeneousN bound, thenexplicit cutoff/mollifierH1density, separability andcommona.e.subsequence plusphysicalnulltransfer give aFINITE physicalsquarepair boundbyFatou. It doesnotmistakeFatouforcontinuity. PhysicalCS onthetwo cross-position products givesabsolute four-linear convergence and bound; telescoping andN<=H1 givejointcontinuity. PSDpasses tofiniteH1squarecombinations andyields the actualsquareCS. Smooth/fullratios coincidebycontinuity, whilebounded positive-levelsets andtranslation-continuousindicatorautocorrelation give strictlypositiveA foranynonzeroH1profile withoutcalling1_E anH1function.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        233,
+        251
+      ],
+      "old_proof_lf": [
+        253,
+        312
+      ],
+      "old_statement_sha256": "e773d1281e51cb3c10109debd6de9fefebe897f2e46671d3bec4eeecdf1085ee",
+      "old_proof_sha256": "c52c0b446f262f9cc557bdb002dff3db52f26ce517e46f03eff3f458c4af218b",
+      "new_statement_lf": [
+        297,
+        315
+      ],
+      "new_proof_lf": [
+        317,
+        398
+      ],
+      "new_statement_sha256": "e773d1281e51cb3c10109debd6de9fefebe897f2e46671d3bec4eeecdf1085ee",
+      "new_proof_sha256": "f5aff73b66512cff947c64e361dc06343ba408bc20359c940c89a36869e0a34f"
+    },
+    {
+      "proof_id": "P:spatial-energy-map",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED. The added derivative sentence and the intermediate value"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 208,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "d0ba266a0db3ac8c5c03cfd7d336bf7a88eb0dc83b5714c4f582faa8004b60d1",
+      "mathematical_check": "The public proof extendsdilation tothefullrealH1unitclass and computes the scalarcriticalscale l^(2-alpha)=alpha A/b andvalue[(2-alpha)/2]alpha^(alpha/(2-alpha))R(g)^(2/(2-alpha)). Taking numericalsuprema overdilations/profiles, thenratioapproximatingprofiles, proves exactfinitepositive spatialenergy withoutanoptimizer. It explicitly solves R_sp alpha^(alpha/2)=[2E_sp/(2-alpha)]^((2-alpha)/2) andsubstitutes intothesmoothscore to get the stated M_a andF0 constants. F0 doesnotseta0 oridentify theenergywithanactualmomentconstant.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        319,
+        344
+      ],
+      "old_proof_lf": [
+        346,
+        367
+      ],
+      "old_statement_sha256": "0ab35bbb9ff7d9bb0e5863558365376966fd1f1ff8691636a3b361e768724000",
+      "old_proof_sha256": "a9633b8676d86d354448ba1fd4422aaefd868f21c408cf7d95b2a001845f6132",
+      "new_statement_lf": [
+        405,
+        430
+      ],
+      "new_proof_lf": [
+        432,
+        461
+      ],
+      "new_statement_sha256": "0ab35bbb9ff7d9bb0e5863558365376966fd1f1ff8691636a3b361e768724000",
+      "new_proof_sha256": "101b2447f1af4f52f12201d22131db033f9441c9ca541eafed6b9cc5ad39b7b3"
+    },
+    {
+      "proof_id": "L:occupation-kernel-row",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED (none added; proof text is identical at old 393–401/new 487–495)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 239,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "a9afe7e18775b006fde7f14b7a7ea089e2a17026741fbbbc3bb8513d7dc00dc9",
+      "mathematical_check": "The unchanged kernelrow proof isactually reconstructed. Droppingthepositivequadraticdamping gives K_star<=|u|^-a viaGamma, withpositiveevenkernel,decreaseoffzero andlocalintegrability fora<1. ItsprimitivePhi isconcave, so rowPhi(s)+Phi(1-s)<=2Phi(1/2), equalityats1/2, withpositivefiniteR_star. Theartificialdiagonalvalue0 changesnointegral; theoriginaltemporalexponent anddampedkernelaredistinct.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        383,
+        391
+      ],
+      "old_proof_lf": [
+        393,
+        401
+      ],
+      "old_statement_sha256": "c2757b40d2e183a9fec5ced04e54ba09088dbe48efd77623dd20d9157071bffc",
+      "old_proof_sha256": "f42f802f52fdd56cd17cc6b80c0bc428b5d6cce3707e8783b51401d013aa3395",
+      "new_statement_lf": [
+        477,
+        485
+      ],
+      "new_proof_lf": [
+        487,
+        495
+      ],
+      "new_statement_sha256": "c2757b40d2e183a9fec5ced04e54ba09088dbe48efd77623dd20d9157071bffc",
+      "new_proof_sha256": "f42f802f52fdd56cd17cc6b80c0bc428b5d6cce3707e8783b51401d013aa3395"
+    },
+    {
+      "proof_id": "P:occupation-physical-class",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED. The new step headings and summary paragraphs only reorganize the"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 260,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "97a359bbb35e294a98039531a3784b25a007959c47951d39706d4f7a77cff54e",
+      "mathematical_check": "The report handles theFULLstronglyH1measurable occupationclass: BochnerL2norm1+T, separablerange/simplefunction approximations andjointspacetimerepresentatives, physicalversionindependence andcontinuouspairingmap give measurable actualnonnegativeintegrals. SquareCS andN(g_s)^4=b_s^(alpha/2) yieldB<=R_spF(s)F(t). Unit-time concavity givesintF^2<=T^(alpha/2);2FF<=F^2+F^2 and exactrow/column bounds producefiniteJ underpositiveTonelli beforefiniteness. Scalaroptimization givesenergyupper R_star^(2/(2-alpha))E_sp; constant-timecompactprofile andsmallspatialdilationprovepositiveenergybecausealpha<2. Nulltimechanges do notaffectJ. No timesmoothness,commoncompactsupport,attainment,pointtrace orroughstochastic result isinserted. The separatezero-covariance convention remainszeroenergy via smallspatialdilations, not azerogradientunitstate.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        409,
+        427
+      ],
+      "old_proof_lf": [
+        429,
+        465
+      ],
+      "old_statement_sha256": "62985b03a1eb25e4336fda360be05854fc420917bbac4a76c3a63bca2113665b",
+      "old_proof_sha256": "eea24ae002acf0815d3c9bad39319350020fedc00fe927f69b7c45a65b263139",
+      "new_statement_lf": [
+        503,
+        521
+      ],
+      "new_proof_lf": [
+        523,
+        575
+      ],
+      "new_statement_sha256": "62985b03a1eb25e4336fda360be05854fc420917bbac4a76c3a63bca2113665b",
+      "new_proof_sha256": "6c6662ff87b2bd50e3a9c6903c7161171ce1e3989736fd0e0e18a451b76878ff"
+    }
+  ],
+  "mathematical_checks": [
+    "The unchanged physical-pair proof is publicly reconstructed: local Radon and Lebesgue sigma-finiteness give the positive productmeasure; Tonelli firstinx transfers anyBorel Lebesgue-null set atboth x andx-y to aproduct-null set, despite potentially infiniteGamma mass. Borelnull supersets handlearbitraryversions in thecompletion. The same exceptional-set argument transfersa.e.convergence. Signedpairings waitforabsoluteintegrability, so no spectraldensity orrepresentative assumption isinserted.",
+    "The report produces the static cU_z potential atoneparameter using an admissible smoothseparatedcontrol andthe stated unmasked-rate theorem. Sameunittests bound squaredrate differences, andmonotonic positivity gives apositivefloor forlocal square-rootLipschitz. The compactendpointcutoffs f_n increase toexactf_a, k_n(s)increase1atEVERYs includingendpoints and havefixedpositivefloorintf4. Ratecontinuity anddominatedconvergence give rewardlimit; positiveTonelli andf_n k_n increasef_a giveoriginalcostlimit M_aB_Gamma(z,z). Autocorrelation andhomogeneousorigin-ball charge prove thepositivefinitespatialcost. The two limits aretaken separately; score differences are not falselymonotone and no controldepends onlargemodeltime.",
+    "The report checks nonzerogradient ofthecompactunitprofile, uses ordinaryFourier normalizationF0Q=c_d^-1 Qhat and the singleSchwartzautocorrelation distributionpairing toobtain exactA_sp=int|F0(g^2)|^2mu. L1mass1 andgradientCS give min(1,4b/|xi|^2), and the two-region calculation produces the exact8b/(4b+|xi|^2) majorant. It explicitly consumes the source-attributed UNASSIGNED homogeneous resolvent formula atq=2sqrtb>0, withH:homog/R_alpha convention, giving2^(1+alpha)R_alpha b^(alpha/2). Its addedBeta scalarintegral followsx=u^2 andreflection; qpositive isdistinguished fromthefixedexponentq. Zero covariance ishandled. Thischecks theassignedFourierbound underthestatedresolvent input; theupstreamcalculation isnot itself anewassignedproof(R1).",
+    "The report provespositivefiniteR0 bysmoothautocorrelation/nonzerogradient andthejust-derived deterministicFourierbound, independentofS1 finiteness. It explicitly separates thetwo squareamplitudes, LebesgueJacobian andRadonpushforward to obtainA(U_l g)=l^alphaA,b(U_l g)=l^2b. Choosingz=theta(U_lg)^2 and thegiven l/theta givespositiveRayleightest L^2 andcosttheta^2 l^alphaA=(1+u)^2L^(4-alpha)/(u^(alpha/2)R(g)). The scalar optimum L^k=1/(qC), exactk/q factor and1/(q^q C)=R(g)alpha^(alpha/2)/(8M_a q^(q/2)) reconstruct the scoreconstant. Itretains thepreexistingfiniteS1inputfor thescore inequality itself.",
+    "The report reconstructs smooth signed covariance PSD/symmetry using the ordinaryFouriermeasure convention and thequadraticpolynomial CS. Smoothnormalization gives the homogeneousN bound, thenexplicit cutoff/mollifierH1density, separability andcommona.e.subsequence plusphysicalnulltransfer give aFINITE physicalsquarepair boundbyFatou. It doesnotmistakeFatouforcontinuity. PhysicalCS onthetwo cross-position products givesabsolute four-linear convergence and bound; telescoping andN<=H1 givejointcontinuity. PSDpasses tofiniteH1squarecombinations andyields the actualsquareCS. Smooth/fullratios coincidebycontinuity, whilebounded positive-levelsets andtranslation-continuousindicatorautocorrelation give strictlypositiveA foranynonzeroH1profile withoutcalling1_E anH1function.",
+    "The public proof extendsdilation tothefullrealH1unitclass and computes the scalarcriticalscale l^(2-alpha)=alpha A/b andvalue[(2-alpha)/2]alpha^(alpha/(2-alpha))R(g)^(2/(2-alpha)). Taking numericalsuprema overdilations/profiles, thenratioapproximatingprofiles, proves exactfinitepositive spatialenergy withoutanoptimizer. It explicitly solves R_sp alpha^(alpha/2)=[2E_sp/(2-alpha)]^((2-alpha)/2) andsubstitutes intothesmoothscore to get the stated M_a andF0 constants. F0 doesnotseta0 oridentify theenergywithanactualmomentconstant.",
+    "The unchanged kernelrow proof isactually reconstructed. Droppingthepositivequadraticdamping gives K_star<=|u|^-a viaGamma, withpositiveevenkernel,decreaseoffzero andlocalintegrability fora<1. ItsprimitivePhi isconcave, so rowPhi(s)+Phi(1-s)<=2Phi(1/2), equalityats1/2, withpositivefiniteR_star. Theartificialdiagonalvalue0 changesnointegral; theoriginaltemporalexponent anddampedkernelaredistinct.",
+    "The report handles theFULLstronglyH1measurable occupationclass: BochnerL2norm1+T, separablerange/simplefunction approximations andjointspacetimerepresentatives, physicalversionindependence andcontinuouspairingmap give measurable actualnonnegativeintegrals. SquareCS andN(g_s)^4=b_s^(alpha/2) yieldB<=R_spF(s)F(t). Unit-time concavity givesintF^2<=T^(alpha/2);2FF<=F^2+F^2 and exactrow/column bounds producefiniteJ underpositiveTonelli beforefiniteness. Scalaroptimization givesenergyupper R_star^(2/(2-alpha))E_sp; constant-timecompactprofile andsmallspatialdilationprovepositiveenergybecausealpha<2. Nulltimechanges do notaffectJ. No timesmoothness,commoncompactsupport,attainment,pointtrace orroughstochastic result isinserted. The separatezero-covariance convention remainszeroenergy via smallspatialdilations, not azerogradientunitstate."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "proof_id": "L:spatial-fourier-bound",
+      "classification": "explicit unassigned resolvent-input and supplied-representation limit, not an assigned reproof",
+      "disposition": "The report consumes R_Gamma(q)=q^(alpha-2)R_alpha as explicitly attributed by the target proof to the deterministic calculation under L:damped-homogeneous-norms, withR_alpha supplied separately. The packet supplies the lemma declaration and exactR_alpha definition, not the full upstream proof. CHECKED here covers the target Fourier majorant,scalarBeta normalization andapplicationatq>0 underH, not an independent reconstruction/certification of that upstream calculation or primary literature. No target conclusion isusedasanoracle.",
+      "report_lf": 117
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 21238,
+      "sha256": "dc7a29f8b4519b1e6fed2fb7d8ae8ab9a3e810800a90ba801067f2f05dc99e59"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 4820,
+      "sha256": "4cafd2d5cdb11595767e19220d94ebb77ae7b4be17b55f88539504153077d2b0"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 11467,
+      "sha256": "ad9517f220f96dda47fd0a9b9d47bef8dd2ed5341e027607dd26cbe46e4ef635"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 5298,
+      "sha256": "a5c35e73f1d091082542076449ec36a9387e2ab7b4d71aa69770ce3c1669fc4a"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 10231,
+      "sha256": "1006cae0abae6c079e304cd089ec28eb657028365c00595def889925bfeb170b"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 5884,
+      "sha256": "a35a1e31a11f499d7a8fe90aa458188d75f41fbb251548b187b4828bdf150aaf"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 22407,
+      "sha256": "ed2f96133f5e969ba4d24fca051da4fcfcbf1377d6d18aa6a5e8385b66e5a12f"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 26737,
+      "sha256": "2af5611be2b9acf995ee99a1c08c174d6825e2287cf429163f26ad6535e52c31"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-E-intro-spectral-mass.txt",
+      "bytes": 118,
+      "sha256": "9af41cab8d0a6c9c00454c15f5dae7a60432a0392be53b17125f6019346db365"
+    },
+    {
+      "path": "inputs/context-L-damped-homogeneous-norms.txt",
+      "bytes": 2004,
+      "sha256": "105f545adca18299a302cd9ee2e54a34ebd86f0a0e015bfb6add72f17c8761a2"
+    },
+    {
+      "path": "inputs/context-integrated_covariance_foundation-baseline.txt",
+      "bytes": 21173,
+      "sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020"
+    },
+    {
+      "path": "inputs/context-integrated_unmasked_variational-baseline.txt",
+      "bytes": 18753,
+      "sha256": "1495453c13dba9ba7a684a81c7fb06ea2a5b3f863ddc9291d0510755fba19b7d"
+    },
+    {
+      "path": "inputs/context-integrated_temporal_equilibrium-baseline.txt",
+      "bytes": 4281,
+      "sha256": "412c7cb1e28118adbab40d8ef4b59bd815791c48a92a389efbd14202578c690f"
+    },
+    {
+      "path": "inputs/context-L-compact-raw-profile.txt",
+      "bytes": 25917,
+      "sha256": "39946946cc52bee56eb5ec2ab44111a2e8873df9b17ef65d322c0b42066325ca"
+    }
+  ],
+  "input_identity_checks": "All delivered source/context payload hashes and WHOLE_FILE pinned Git byte identities verified; every complete OLD/NEW statement/proof independently checked by LF/bytes/SHA. Complete target text read with baseline comparisons and genuine needed stated inputs, not merely delta QA.",
+  "source_currentness": {
+    "covered_launch_revision": "721e01316d79d0684273d9fb4beaf1f104721c20",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "limit": "Only this exact assigned source versuscdde and supplied context; no older report rebinding, unexamined successor or whole-book seal."
+  },
+  "read_limits": [
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority"
+}

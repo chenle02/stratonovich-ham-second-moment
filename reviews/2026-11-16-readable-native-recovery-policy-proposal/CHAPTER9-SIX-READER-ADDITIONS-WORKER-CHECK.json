@@ -1,0 +1,53 @@
+{
+  "recorded_utc": "2026-11-16T13:31:35.760666+00:00",
+  "role": "Worker delta QA only; no independent review vote, graph build or final-source certification",
+  "checks": [
+    {
+      "file": "notes/integrated_uniform_mean.tex",
+      "source": "32919d544ee0df877b0a834bcbfc9f7c584a15f2",
+      "items": [
+        {
+          "id": "UM1",
+          "assessment": "SUPPORTED",
+          "reason": "The heat contraction is the bounded real Fourier multiplier on the covariance Fourier image; its invariant closed image is reducing, so restriction is selfadjoint. Moving I-C_epsilon across the completed row pairing yields the displayed control identity."
+        },
+        {
+          "id": "UM2",
+          "assessment": "SUPPORTED",
+          "reason": "Tensor lemma applied to C_t gives U:HI->Lr(Hsp) norm<=c_t; cutoff operator bound pointwise gives T_R U norm<=M0 c_t with same fixed r."
+        },
+        {
+          "id": "UM3",
+          "assessment": "SUPPORTED",
+          "reason": "Earlier P_0=0 gives Q_0=I and Y_m0=W(T_delta,m f). Supported row and orthogonal-adjoint identity apply to Phi=Q_JK i_I* h; no unproved inverse covariance is introduced."
+        },
+        {
+          "id": "UM4",
+          "assessment": "SUPPORTED",
+          "reason": "Completed residual-mean operator bound composed with contractive i_I* gives stated Lr norm of M_h; this is exactly the input needed after finite power mean."
+        }
+      ],
+      "module_sha256": "821b49568bc2ca3c0272d2db4b435b35c133caf723c931c45d7837711168f094"
+    },
+    {
+      "file": "notes/integrated_signed_static.tex",
+      "source": "5aa50c46ef46e9544eb98ae8720ad92f7cd642a8",
+      "items": [
+        {
+          "id": "SS1",
+          "assessment": "SUPPORTED",
+          "reason": "Limiting multiplier H1/2->H-1/2 has operator norm<=k in the retained proof. Dual pairing with w in H1/2 gives the claimed form bound; wording explicitly obtains the bound below rather than assuming it."
+        },
+        {
+          "id": "SS2",
+          "assessment": "SUPPORTED",
+          "reason": "A>=1 and quarter-power/negative-dual completions give an onto isometry to L2xL2. Conjugating the physical spectral wave on bounded spectral cutoffs yields sqrt(h+c)S and -hS/sqrt(h+c) as its off-diagonal entries. Completion follows from the retained bounded spectral estimates."
+        }
+      ],
+      "module_sha256": "fc54852ab4eb26efab97f1f08f99cb117f9f7f755acbe8e6bbb4e0a8a25afc11"
+    }
+  ],
+  "source_edit_required_in_these_six_additions": false,
+  "provider_call_or_grade_upgrade": false,
+  "dispatch_still_requires_graph_currentness_verification_and_final_handoff": true
+}

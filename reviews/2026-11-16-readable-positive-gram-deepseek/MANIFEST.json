@@ -1,0 +1,86 @@
+{
+  "review_record_id": "RP022",
+  "scope": "Only 5 assigned old/new target proof pairs; upstream proofs unassigned; no whole-book/primary-PDF/Lean/render/human/release acceptance",
+  "old_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_revision": "7473dbbc5f12fd27bd0d01688bf2712164f7ed9e",
+  "source_file": "notes/integrated_positive_gram.tex",
+  "proof_labels": [
+    "L:gram-scalar-algebra",
+    "L:gram-dual-minimum",
+    "P:gram-positive-optimizer",
+    "L:gram-realization",
+    "P:gram-entrywise-comparison"
+  ],
+  "input_files": [
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 10900,
+      "sha256": "c5af11537a274a8912e579c2d53c7c6b80bd64fd9a1ced3cdc4e91e06bdb8445",
+      "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+      "source_path": "notes/integrated_positive_gram.tex",
+      "selection": "WHOLE_FILE",
+      "role": "ASSIGNED OLD whole target module."
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 12720,
+      "sha256": "5e86c3550d886b9a602f7c8c5bdab2a047eca723a03314ed56f8a58b2dabe16d",
+      "source_revision": "7473dbbc5f12fd27bd0d01688bf2712164f7ed9e",
+      "source_path": "notes/integrated_positive_gram.tex",
+      "selection": "WHOLE_FILE",
+      "role": "ASSIGNED NEW whole target module."
+    }
+  ],
+  "embedded_frames": [
+    {
+      "path": "inputs/old-module.txt",
+      "payload_byte_offset": 7608,
+      "payload_bytes": 10900,
+      "payload_sha256": "c5af11537a274a8912e579c2d53c7c6b80bd64fd9a1ced3cdc4e91e06bdb8445"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "payload_byte_offset": 18885,
+      "payload_bytes": 12720,
+      "payload_sha256": "5e86c3550d886b9a602f7c8c5bdab2a047eca723a03314ed56f8a58b2dabe16d"
+    }
+  ],
+  "prompt_sha256": "6fa538f6c88f4d228b4a437042f0c7ddab52e8b4ad69b3f81ffb080e1de2aa55",
+  "prompt_bytes": 31638,
+  "contract_sha256": "88d4119581380b95734f62ce578e43df5e1f516e88b7f941e9cccc66f6d625cb",
+  "proof_manifest_sha256": "dbbec7e12ead5757b703e1cd6d200a081641902b4d0d7fe3f329b3ee9d377edb",
+  "profile_sha256": "ccdf515979e77bbe752d924735a915260ca437d3d31a954d4a739c946fca0ea1",
+  "model_limits_sha256": "60eaa34361e093e599fdc4a26f8d53ee3aeb860e419c9e66535c4fda52284d56",
+  "route": "paper-review-deepseek",
+  "requested_model": "deepseek/deepseek-v4-pro",
+  "requested_variant": null,
+  "pure_mode": true,
+  "agent": "artifact-reviewer",
+  "all_tools_denied": true,
+  "combined_reasoning_public_output_cap": 65536,
+  "timeout_seconds": 3600,
+  "coordinator_launch_limit": 1,
+  "coordinator_retry_continuation_fallback": false,
+  "native_hidden_requests_not_inferred_from_process_count": true,
+  "provider_calls_started_during_preparation": 0,
+  "status": "FROZEN_PRE_DISPATCH",
+  "mechanical_checks": {
+    "target_proofs_old": 5,
+    "target_proofs_new": 5,
+    "statements_unchanged": true,
+    "outside_proofs_exactly_equal": true,
+    "changed_proofs": 3,
+    "embedded_payloads_byte_exact": true,
+    "pinned_source_blocks_verified": true
+  },
+  "no_preflight_claim": "Offline source-binding and local native configuration checked; no live provider generation/admission/reading at freeze.",
+  "capacity_sha256": "f3127ca00041bb61118400b5585ac8ac6c43934dab09304477fdd1e479b28121",
+  "preparation_script_sha256": "ef27b047c33e083a0b99c91a15154e71acf1b6387570a238bf7bca0bec250d95",
+  "preparation_checks_sha256": "d2971e43fc5d1f3b895dfb744987b58efa1560adfd2bd83154c3e63459dc4208",
+  "contract_refinement_record": "ROOT-CONTRACT-REFINEMENT.json",
+  "preparation_script_is_before_refinement_template": true,
+  "owner_authorization": "Le standing per-proof reread authority; Agent24 dated gates/builds/maps, source-bound same-GPT worker QA and root byte/coverage/contract checks. Original-step public reconstruction explicit. No provider call at freeze; Agent16/Le retain integration/adoption.",
+  "recorded_utc": "2026-11-16T08:11:08.923330+00:00",
+  "tool_denial_status": "Current local effective profile/cap config checked, all permissions denied; per-launch recheck required.",
+  "source_binding_sha256": "8918477aaba4d7af872fc6cdecf7f9bf5751ee7e7e6c5ec8990ca44f5465e7a6"
+}

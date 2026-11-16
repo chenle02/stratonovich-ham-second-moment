@@ -1,0 +1,388 @@
+\section{The symplectic form and mean evolution on time blocks}
+\label{S:actual-symplectic-phase}
+
+Retain the original model, covariance amplitude, physical mask $m_R$ and real $E
+= H^{1/2}\times H^{-1/2}$. Fix finite $R,T > 0$ and admissible exponents as
+in~\eqref{E:driver-parameters}. Let $M = M_R(W)$ be the from the given noise
+first interaction path on $E$, and $M^\rho$ its regularized paths from
+Proposition~\ref{P:source-gaussian-transfer} and the source construction. Here
+$\rho$ is the positive heat/Laplace smoothing pair. The construction preserving
+the given noise and ordinary rows are those of
+Lemma~\ref{L:source-retaining-isometry},
+Lemma~\ref{L:source-pointfield-regularity} and
+Proposition~\ref{P:source-ordinary-response}. The full $F$ operator path and
+Young evolution are fixed by Proposition~\ref{P:constant-phase-driver} and
+Proposition~\ref{P:constant-young-linear}; their $E$ restrictions are used here.
+Complexifications commute with conjugation, so these real restrictions are the
+physical phases. For fixed $\Phi$ in the full positive-time original $H_W$ and
+real $c$ set
+\begin{equation}\label{E:symplectic-combined-driver}
+  \begin{aligned}
+    Z&=W(\Phi),\qquad D_\Phi=\E[ZM],\qquad
+    D_\Phi^\rho=\E[ZM^\rho],\\
+    D&=cM+D_\Phi,\qquad D^\rho=cM^\rho+D_\Phi^\rho .
+  \end{aligned}
+\end{equation}
+All these are operator paths on $E$. The covariance mean is not a pointwise
+original potential. Write $U_D$ for left Young evolution and $P_D(t,s) =
+S_E(t)U_D(t,s)S_E(-s)$.
+
+\LeanMarker{L:symplectic-free}
+\begin{lemma}[Free wave form and compact Young baseline]
+  \label{L:symplectic-free}
+  There is a bounded isometric skew-adjoint $J_E$ on $E$, with $J_E^2 = -I$,
+  such that
+  \[
+    \omega(z,w)=\langle z,J_Ew\rangle_E
+    =\langle u,g\rangle_{H^{1/2},H^{-1/2}}
+    -\langle f,v\rangle_{H^{1/2},H^{-1/2}},
+    \quad z=(u,v),\quad w=(f,g).
+  \]
+  The free group preserves $\omega$. For bounded real smooth $b$, the force
+  $B(b)(u,v) = (0,bu)$ obeys $\omega(B(b)z,w)+\omega(z,B(b)w) = 0$.
+
+  Let $1/2 < \theta < 1$ and let $X \in C^\theta([0,T];\mathcal{K}(E))$ start at
+  zero, with $U_X$ its left Young evolution. Then
+  \begin{equation}\label{E:symplectic-compact-young-baseline}
+    U_X(t,s)-I\in\mathcal{K}(E),\qquad
+    \|S_E(t)U_X(t,s)S_E(-s)\|
+    \ge\|S_E(t-s)\|\ge1,\qquad 0\le s\le t\le T .
+  \end{equation}
+  More generally, for finitely many such paths $X_j$ starting at zero on $[0,B]$
+  and lengths $0 \le \ell_j \le B$, put $P_j = S_E(\ell_j)U_{X_j}(\ell_j,0)$.
+  Then
+  \begin{equation}\label{E:symplectic-compact-product-baseline}
+    P_N\cdots P_0-S_E\Big(\sum_{j=0}^N\ell_j\Big)\in\mathcal{K}(E),
+    \qquad
+    \|P_N\cdots P_0\|
+    \ge\left\|S_E\Big(\sum_{j=0}^N\ell_j\Big)\right\|\ge1 .
+  \end{equation}
+  These norm bounds require neither Gaussian nor Hamiltonian operator paths.
+\end{lemma}
+
+\begin{proof}
+  The balanced map $C_{\rm bal}(u,v) = (\Lambda^{1/2}u,\Lambda^{-1/2}v)$ is an
+  onto real isometry to $L^2\times L^2$. Define $J_{\rm symp}(q,p) = (p,-q)$ and
+  $J_E = C_{\rm bal}^{-1}J_{\rm symp}C_{\rm bal}$. This gives all stated
+  operator properties and $J_E(f,g) = (\Lambda^{-1}g,-\Lambda f)$. The two
+  displayed dualities follow from the balanced $L^2$ pairing. No $L^2$ pairing
+  of a general distributional velocity is taken.
+
+  In balanced Fourier coordinates, the free matrix is
+  \[
+    W_t(\xi)=
+    \begin{pmatrix}
+      \cos(tk)&\langle\xi\rangle\sin(tk)/k\\
+      -k\sin(tk)/\langle\xi\rangle&\cos(tk)
+    \end{pmatrix},\qquad k=|\xi|.
+  \]
+  At zero it is $\left(\begin{smallmatrix}1&t\\0&1\end{smallmatrix}\right)$, by
+  the continuous sine quotient. Direct matrix multiplication gives
+  $W_t^{\mathsf{T}}J_{\rm symp}W_t = J_{\rm symp}$, since its determinant is
+  $\cos^2(tk)+\sin^2(tk) = 1$, also at zero. The entries are real, even and
+  bounded on finite time horizons. Integrating the identity against real-phase
+  Fourier vectors with Hermitian symmetry is legitimate by $L^2$
+  Cauchy--Schwarz. It gives $\omega(S_E(t)z,S_E(t)w) = \omega(z,w)$ on all $E$.
+  Equivalently one may first use Schwartz phases and then density. No rough
+  generator derivative or frequency-zero trace is used.
+
+  Finally, $\|bu\|_{H^{-1/2}} \le \|bu\|_2 \le \|b\|_\infty\|u\|_{H^{1/2}}$.
+  Duality for these $L^2$ functions gives the absolutely integrable cancellation
+  $-\int fbu+\int ubf = 0$. This is skewness for $\omega$, not for the $E$
+  Hilbert inner product. The Young construction of
+  Proposition~\ref{P:constant-young-linear} applies on $\mathcal{L}(E)$: its
+  proof uses completeness and operator multiplication of norm one, exactly as on
+  $\mathcal{L}(F)$. For fixed $s,t$, each left Young sum
+  \[
+    \sum_j\big(X(t_{j+1})-X(t_j)\big)U_X(t_j,s)
+  \]
+  is compact. The sums converge in operator norm to $U_X(t,s)-I$, so closedness
+  of the compact ideal gives the first assertion
+  in~\eqref{E:symplectic-compact-young-baseline}. Bounded composition then shows
+  that the physical endpoint differs from $S_E(t-s)$ by a compact operator.
+
+  We prove the required compact-perturbation bound for this whole-space phase.
+  Translations $\tau_y$ on both entries are isometries on $E$ and commute with
+  $S_E(h)$. For fixed $z,w \in E$, their translated pairing is the Fourier
+  transform of an $L^1$ function: the two weighted Fourier products are
+  integrable by Cauchy--Schwarz in the Bessel norms. Approximation of that
+  function in $L^1$ by compact smooth functions, followed by integration by
+  parts for the approximants, proves $\langle\tau_yz,w\rangle_E \to 0$ as $|y|
+  \to \infty$. Thus, $\tau_yz$ tends weakly to zero. For compact $K$,
+  $\|K\tau_yz\| \to 0$: otherwise compactness supplies a norm-convergent
+  subsequence with nonzero norm, while bounded linear testing makes its limit
+  zero. For unit $z$ it follows that
+  \[
+    \|S_E(h)+K\|
+    \ge\liminf_{|y|\to\infty}\|(S_E(h)+K)\tau_yz\|
+    \ge\|S_E(h)z\|.
+  \]
+  Taking the supremum over $z$ gives $\|S_E(h)+K\| \ge \|S_E(h)\|$. The
+  isometric velocity reversal $\mathcal{R}(u,v) = (u,-v)$ satisfies $S_E(-h) =
+  \mathcal{R} S_E(h)\mathcal{R}$ by the full free Fourier matrix. The group law
+  yields $1 \le \|S_E(-h)\|\|S_E(h)\| = \|S_E(h)\|^2$. This
+  proves~\eqref{E:symplectic-compact-young-baseline}.
+
+  Finally, $P_j-S_E(\ell_j)$ is compact. Telescoping the finite ordered product
+  against its free product gives a finite sum of bounded--compact--bounded
+  products, hence a compact difference. Only the free factors are combined by
+  the group law; no noisy factors are commuted. The same translation argument
+  proves \eqref{E:symplectic-compact-product-baseline}. A zero length gives $P_j
+  = I$. All assertions are at fixed finite horizons and products; no uniform
+  compact approximation in a radius, horizon or number of factors is asserted.
+  This proves Lemma~\ref{L:symplectic-free}.
+\end{proof}
+
+\begin{lemma}[Covariance means and source primitives]
+  \label{L:symplectic-source-mean}
+  The expectations in~\eqref{E:symplectic-combined-driver} are Bochner defined
+  and
+  \begin{equation}\label{E:symplectic-mean-convergence}
+    \|D_\Phi^\rho-D_\Phi\|_{C^\theta}
+    \le\|\Phi\|_{H_W}\|M^\rho-M\|_{L^2C^\theta}\longrightarrow0 .
+  \end{equation}
+  For each positive $\rho$, there is a deterministic real time-continuous,
+  spatially smooth $h_\Phi^\rho$ such that
+  \begin{equation}\label{E:symplectic-source-primitive}
+    D_\Phi^\rho(t)
+    =\int_0^t S_E(-r)B(m_Rh_\Phi^\rho(r))S_E(r)\ud r .
+  \end{equation}
+  This is the statewise primitive and defines a Lipschitz operator path. The
+  combined source coefficient is $b^\rho = m_R(cY^\rho+h_\Phi^\rho)$.
+\end{lemma}
+
+\begin{proof}
+  Separable Gaussian path moments give $\E\|ZM\|_{C^\theta} \le
+  \|\Phi\|_{H_W}\|M\|_{L^2C^\theta}$, and the same holds for sources. Bochner
+  Cauchy--Schwarz gives~\eqref{E:symplectic-mean-convergence}. Covariance
+  contraction also gives the uniform source bound $\|D_\Phi^\rho\|_{C^\theta}
+  \le \|\Phi\|_{H_W}\|M\|_{L^2C^\theta}$.
+
+  The construction preserving the given noise has an isometry $j_{\rm src}:H_W
+  \to \mathcal{G}$ and an isonormal process $\mathcal{I}$ with
+  $\mathcal{I}(j_{\rm src}h) = W(h)$. Its source random field is $Y^\rho(t,x) =
+  \mathcal{I}(v_{\rho;t,x})$, with continuous $\mathcal{G}$-valued spatial
+  derivatives at positive widths. Consequently,
+  \[
+    h_\Phi^\rho(t,x)=\E[W(\Phi)Y^\rho(t,x)]
+    =\langle j_{\rm src}\Phi,v_{\rho;t,x}\rangle_{\mathcal{G}}
+  \]
+  has the claimed regularity. Bounded linear testing commutes with those
+  derivatives. After multiplication by $m_R$ the coefficient has one compact
+  support and bounded derivatives on $[0,T]$.
+
+  On Schwartz states, the row of the right side
+  of~\eqref{E:symplectic-source-primitive} is the integral of $h_\Phi^\rho$
+  against the explicit masked source wave product. Ordinary Fubini is justified
+  by $\E|ZY^\rho(t,x)| \le \|\Phi\|_{H_W} \sqrt{\E|Y^\rho(t,x)|^2}$ and bounded
+  point variance on this fixed compact set at positive widths. The source test
+  and indicator approximation extends this to the completed rows by Gaussian
+  Cauchy--Schwarz and covariance contraction. Hence, this row is the row of
+  $\E[ZM^\rho(t)]$. Countable dense states and rational times, then continuity,
+  identify the operator path. The uniformly bounded integrand gives its
+  Lipschitz bound. This identifies the combined source coefficient exactly. The
+  combined source is generally noncentered and the mask occurs once. This proves
+  Lemma~\ref{L:symplectic-source-mean}.
+\end{proof}
+
+\begin{proposition}[Source conservation]\label{P:symplectic-source}
+  At each fixed positive $\rho$, on one probability-one set for the fixed
+  $c,\Phi,R,T$, the physical source flow satisfies
+  \[
+    P_{D^\rho}(t,s)^*J_EP_{D^\rho}(t,s)=J_E,
+    \qquad 0\le s\le t\le T .
+  \]
+\end{proposition}
+
+\begin{proof}
+  Intersect the source coefficient regularity event with the event identifying
+  its first primitive with the ordinary primitive for all times and states. The
+  source construction supplies both at this fixed $\rho$. On their intersection
+  $b^\rho$ has a common compact support, is continuous in supremum norm and is
+  uniformly bounded on $[0,T]$. Thus, $C_b(r) = S_E(-r)B(b^\rho(r))S_E(r)$ is
+  uniformly bounded and strongly continuous on states.
+  Lemma~\ref{L:symplectic-free} gives $\omega(C_b(r)z,w)+\omega(z,C_b(r)w) = 0$
+  for all $r,z,w$.
+
+  The source and mean primitive identities identify the Young state equation
+  with $U(t,s)e = e+\int_s^t C_b(r)U(r,s)e\ud r$. Indeed, replace each operator
+  path increment in a Young sum by its statewise integral. The error is bounded
+  by the uniform coefficient bound times the uniform continuity error of $U$ on
+  the partition. Each state trajectory is therefore $C^1$, with derivative
+  $C_b(t)U(t,s)e$, by the strong-integral difference quotient. Differentiating
+  the bounded bilinear form $\omega(U(t,s)e,U(t,s)f)$ gives zero. This holds on
+  the same path set for all states and time pairs, since the bounded ordinary
+  evolution is defined there on all $E$. Free conjugation gives the displayed
+  physical identity. No uncountable intersection of state-dependent null sets or
+  derivative of the free generator on a rough state was used. This proves
+  Proposition~\ref{P:symplectic-source}.
+\end{proof}
+
+Proposition~\ref{P:symplectic-source} concerns the regularized flow
+$P_{D^\rho}$ at a fixed positive $\rho$. We now prove the same conservation
+identity for the flow $P_D$ itself, together with a lower bound on its norm.
+
+\begin{proposition}[Conservation, inverse and a lower norm bound]
+  \label{P:symplectic-raw}
+  For the fixed parameters in~\eqref{E:symplectic-combined-driver}, on one
+  probability-one set,
+  \begin{equation}\label{E:symplectic-raw-conservation}
+    P_D(t,s)^*J_EP_D(t,s)=J_E,\qquad
+    \|P_D(t,s)\|\ge1,\qquad 0\le s\le t\le T .
+  \end{equation}
+  The flow is invertible. For $c = 0$ these assertions are deterministic for
+  every fixed $\Phi$.
+\end{proposition}
+
+\begin{proof}
+  We first identify a closed real linear constraint on the operator path. Write
+  \[
+    \mathfrak{g}_J=\{A\in\mathcal{L}(E):A^*J_E+J_EA=0\}.
+  \]
+  The coefficient $H_{j,R}$ in~\eqref{E:driver-covariance-coefficient} is real
+  and smooth. Free conservation gives $S_E(-r)^*J_E = J_ES_E(r)$ and $J_ES_E(-r)
+  = S_E(r)^*J_E$. Lemma~\ref{L:symplectic-free} therefore makes
+  $S_E(-r)B(H_{j,R}(r))S_E(r)$ belong to $\mathfrak{g}_J$. Testing the statewise
+  integral in~\eqref{E:driver-coefficient-operator} against two states shows
+  $A_j(0,t) \in \mathfrak{g}_J$ for every $j,t$. No operator-norm derivative of
+  the free group is taken. The real finite sums
+  in~\eqref{E:driver-path-convergence} obey the same constraint. The map
+  $A\mapsto A^*J_E+J_EA$ is bounded on the path space, so their $L^2C^\theta$
+  limit $M$ obeys it at all times on one probability-one path set.
+
+  The mean is a Bochner expectation since $\E\|W(\Phi)M\|_{C^\theta} \le
+  \|\Phi\|_{H_W}\|M\|_{L^2C^\theta} < \infty$. Bounded real linear maps commute
+  with this expectation, hence $D_\Phi(t) \in \mathfrak{g}_J$ for every $t$.
+  Thus, $D = cM+D_\Phi$ starts at zero and is a $C^\theta$ path in
+  $\mathfrak{g}_J$ on that path set. Complex Gaussian coefficients are not used.
+  All these variables remain on the given $W$.
+
+  The proof of Proposition~\ref{P:constant-young-linear} applies on
+  $\mathcal{L}(E)$, with multiplication of norm one. Fix any $s$ and put $V(r) =
+  U_D(r,s)$ for $r \ge s$. The Young remainder on $[u,v] \subset [s,T]$ gives
+  \[
+    V(v)-V(u)=D_{u,v}V(u)+R_{u,v},\qquad
+    \|R_{u,v}\|\le C|v-u|^{2\theta}.
+  \]
+  The exact increment of $V^*J_EV$ has first-order term
+  $V(u)^*(D_{u,v}^*J_E+J_ED_{u,v})V(u) = 0$. Its remaining terms have norm at
+  most $C'|v-u|^{2\theta}$, using the bounded $C^\theta$ norm of $V$. Their sum
+  on a partition is at most $C'(t-s)\operatorname{mesh}^{2\theta-1}$, which
+  tends to zero. Therefore, $U_D(t,s)^*J_EU_D(t,s) = J_E$. This deterministic
+  argument applies to every time pair on the same operator path; it requires no
+  state-dependent null sets. Free conservation in Lemma~\ref{L:symplectic-free}
+  gives \eqref{E:symplectic-raw-conservation}, including $1 = \|J_E\| \le
+  \|P_D(t,s)\|^2$.
+
+  Invertibility comes from the local Young Neumann pieces and their finite
+  products, followed by the free inverse; it is not inferred from conservation
+  in infinite dimension. For $c = 0$ the path and the argument are deterministic
+  for each $\Phi$. Zero covariance gives the free flow directly. At each fixed
+  $\delta$ one may take the given reference $W\circ T_{\delta,0}$, $R =
+  \delta^{-1}+2$, $T = \delta^{-1}$, $c = g_\delta$ and $\Phi = 0$. No
+  uniform-radius or uniform bound for controls assertion follows. This proves
+  Proposition~\ref{P:symplectic-raw}.
+\end{proof}
+
+\begin{proposition}[The exact completed block mean]\label{P:symplectic-block-mean}
+  Use the true partition $B,\delta,N,s_m,\ell_m$ of
+  Section~\ref{S:actual-cameron-mean}, with integer $B \ge 1$. Let $i_I:H_I \to
+  H_W$ be the supported closed inclusion and $T_m = T_{\delta,m}:H_{\rm fast}
+  \to H_W$ the original isometry; $H_{\rm fast}$ has the same original
+  covariance in fast coordinates. For $\Phi \in H_I$ set
+  \[
+    W_m(f)=W(T_mf),\qquad
+    \phi_m=\delta^{-a/2}T_m^*i_I\Phi,\qquad
+    \mathcal{T}_E\Phi=i^*T\Phi\,i ,
+  \]
+  where $T$ is the full $F$ mean of Proposition~\ref{P:cameron-full-mean}.
+  Define
+  \begin{equation}\label{E:symplectic-block-primitive}
+    H_{m,E}(\Phi)(u)=\int_0^{\min(u,\ell_m)}
+    S_E(-v)\mathcal{T}_E\Phi(s_m+\delta v)S_E(v)\ud v .
+  \end{equation}
+  With $M_m = M_R(W_m)$ and $D_{\phi_m}(u) = \E[M_m(u)W_m(\phi_m)]$, one has
+  \begin{equation}\label{E:symplectic-block-direction}
+    D_{\phi_m}(\min(u,\ell_m))=H_{m,E}(\Phi)(u),\qquad 0\le u\le B .
+  \end{equation}
+  Consequently, the pure-mean endpoint obeys
+  \[
+    \|S_E(\ell_m)U_{H_{m,E}(\Phi)}(\ell_m,0)\|\ge1 .
+  \]
+\end{proposition}
+
+\begin{proof}
+  The original pullback~\eqref{E:raw-block-pullback} has covariance factor
+  $\delta^{a-2}\delta^2\delta^{-a} = 1$, hence respects nulls and extends
+  isometrically from fast to slow original space. Its Hilbert adjoint is a
+  contraction. Thus, $\|\phi_m\| \le \delta^{-a/2}\|\Phi\|$ is finite at fixed
+  $\delta$, without a uniform control-radius assertion. The fast noise remains
+  on the same given $W$. For applying the preceding propositions, construct
+  regularized noises with $W_m$ as the given reference, extending by an
+  independent auxiliary source while retaining all base variables. No
+  slow-source pullback is presumed; the original covariance direction is
+  independent of the auxiliary realization.
+
+  The mean $T\Phi$ has range in closed $iE$. By
+  Proposition~\ref{P:cameron-full-mean}, bounded compression passes its strong
+  measurability, $L^r$ bound and compact operator values to $\mathcal{T}_E\Phi
+  \in L^r(I;\mathcal{K}(E))$. Choose the full parameter
+  choices~\eqref{E:cameron-block-parameters}. Its intervals are nonempty because
+  $\theta < 1-a/2$ and $\theta > 1/2$; $p$ only instantiates that package here.
+  The compact-conjugation argument makes \eqref{E:symplectic-block-primitive} a
+  Bochner integral, and the $L^r$ primitive estimate gives $C^\theta$, since
+  $1-1/r > \theta$. Affine pullback preserves null sets. Its integrand is
+  compact valued almost everywhere; closedness of $\mathcal{K}(E)$ under Bochner
+  integration makes $H_{m,E}(\Phi)$ a compact-valued path starting at zero, also
+  after constant stopping.
+
+  Here $A_{F,m}$ is the full $F$ interaction operator path from
+  Proposition~\ref{P:constant-phase-driver}, and $H_{m,F}$ is its stopped
+  completed mean primitive in~\eqref{E:cameron-actual-covariance}. The completed
+  identity~\eqref{E:cameron-actual-covariance} at original projection rank zero
+  gives, for $0 \le u \le \ell_m$,
+  \[
+    \E[g_\delta A_{F,m}(u)W(i_I\Phi)]
+    =\sqrt\delta\,H_{m,F}(\Phi)(u).
+  \]
+  Compress through $i$ using the operator path intertwining, $S_Fi = iS_E$, and
+  the mean range in $iE$ preserved by $S_F$. Bochner expectation commutes with
+  this bounded compression. The constant columns are retained in the full $F$
+  operator path and mean until this compression; they are inactive only on the
+  $iE$ inputs. Since $g_\delta\delta^{a/2} = \sqrt\delta$ and $g_\delta > 0$,
+  division gives the unscaled covariance
+  \begin{equation}\label{E:symplectic-unscaled-covariance}
+    \E[M_m(u)W(i_I\Phi)]
+    =\delta^{a/2}H_{m,E}(\Phi)(u),\qquad u\le\ell_m .
+  \end{equation}
+  The factor here is $\delta^{a/2}$, not $\sqrt\delta$. Completion in the
+  earlier covariance identity permits every $\Phi \in H_I$, without positivity
+  or smoothness.
+
+  The operator $T_mT_m^*$ is the orthogonal projection onto the original
+  isometry's closed range. Thus, $W((I-T_mT_m^*)i_I\Phi)$ is orthogonal to the
+  entire fast first chaos. Every continuous linear coordinate of $M_m$ is an
+  $L^2$ limit of finite $W_m$-basis sums. Its covariance with this difference
+  vanishes. Bochner covariance exists by $L^2$ path moments, and bounded linear
+  functionals separate its values. Hence,
+  \[
+    \E[M_m(u)W(i_I\Phi)]
+    =\E[M_m(u)W_m(T_m^*i_I\Phi)] .
+  \]
+  Multiply by $\delta^{-a/2}$ and use \eqref{E:symplectic-unscaled-covariance}
+  to obtain \eqref{E:symplectic-block-direction} on $[0,\ell_m]$, then stop both
+  sides. No unstopped equality beyond $\ell_m$ is asserted.
+
+  Apply Lemma~\ref{L:symplectic-free} directly to the compact-valued path
+  $H_{m,E}(\Phi)$ starting at zero on $[0,B]$. Its physical endpoint has norm at
+  least $\|S_E(\ell_m)\| \ge 1$. If $\ell_m = 0$, the endpoint is the identity
+  and its norm is one. The radius may be chosen $\delta^{-1}+2$ after fixing
+  $\delta$; all identities are fixed-parameter instances. This proves
+  Proposition~\ref{P:symplectic-block-mean}.
+\end{proof}
+
+For zero covariance the operator paths and covariance means vanish, and the
+claims reduce directly to the free identity in Lemma~\ref{L:symplectic-free}.
+These results give a lower bound on the operator norm and its exact completed
+mean application. They provide no uniform bound on the control radius,
+stochastic moment upper bound or nonlinear product ratio by themselves.

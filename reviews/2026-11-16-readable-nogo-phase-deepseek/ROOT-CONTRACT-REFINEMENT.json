@@ -1,0 +1,310 @@
+{
+  "schema": "readability-root-contract-refinement/1",
+  "review_record_id": "RP028",
+  "recorded_utc": "2026-11-16T08:02:16.919936+00:00",
+  "reason": "Root-authorized clarification of original-step public reconstruction, including unchanged portions; original scientific scope is preserved.",
+  "preconditions": {
+    "status_before": "PREPARED_AWAITING_ROOT_REVIEW_PREFLIGHT_AND_FREEZE",
+    "no_launch_native_report_or_freeze_artifact_before": true,
+    "public_frozen_records_found": [],
+    "public_record_search_scope": [
+      "reviews/ and experiment/ in shared project and owned publication worktree"
+    ]
+  },
+  "before_artifacts": {
+    "CONTRACT.md": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/CONTRACT.md",
+      "sha256": "8e37e3b3fdc619dde3bcb0968ee3977a2c5b2babecaaf9b43bd4f5eb074b2f58",
+      "bytes": 3731
+    },
+    "INPUT.txt": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/INPUT.txt",
+      "sha256": "e99cca04dee1bbeff5dfa624551fa3dbb532d20bb160db5347f82e37e578aa49",
+      "bytes": 117859
+    },
+    "MANIFEST.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/MANIFEST.json",
+      "sha256": "a540c68cf76d88315f59ef6f71097fd87af22192a1171cfc9d3eb9ee7f1cbfd0",
+      "bytes": 8438
+    },
+    "PROOF-MANIFEST.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/PROOF-MANIFEST.json",
+      "sha256": "40066d5c50c875f6a3d0630b18a0e20f5e1fecfc7d85cae35fcfd1ebd08ebade",
+      "bytes": 8736
+    },
+    "CAPACITY.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/CAPACITY.json",
+      "sha256": "49e468aaa6d7afb0e4bf75c68a53602ef331d7f9359558872c2e0ad8561b6f2f",
+      "bytes": 751
+    },
+    "PREPARATION-CHECKS.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/PREPARATION-CHECKS.json",
+      "sha256": "574bfb6429ecbe6827e29de520f8d3a868ce7c4c72f82c415847db376d14b7b3",
+      "bytes": 1227
+    },
+    "model-profile.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/model-profile.json",
+      "sha256": "ccdf515979e77bbe752d924735a915260ca437d3d31a954d4a739c946fca0ea1",
+      "bytes": 778
+    },
+    "MODEL-LIMITS.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/MODEL-LIMITS.json",
+      "sha256": "60eaa34361e093e599fdc4a26f8d53ee3aeb860e419c9e66535c4fda52284d56",
+      "bytes": 199
+    },
+    "SHA256SUMS": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/SHA256SUMS",
+      "sha256": "f910f316e624dbe33373407d0640f01b9f199cba13e0b3c2fbcde9bc8d9107c3",
+      "bytes": 1878
+    },
+    "README.md": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/README.md",
+      "sha256": "ed89a411483d325f1cf9e2be428d068c37ab06d6b7dcce8b9d2436f7b089360a",
+      "bytes": 1989
+    }
+  },
+  "exact_normative_block": "For every assigned proof, enumerate its original logical steps (including unchanged portions) and provide checkable public working for each. A target statement or a bound established inside that same target proof is not an unassigned input. Named UNASSIGNED upstream statements may be used after checking their hypotheses; their own proofs remain unassigned. Reading and reconstruction are distinct: if any required target step is not reconstructed publicly, say so and mark Public reconstruction: PARTIAL or NOT_RECONSTRUCTED, even if Old/New reading is COMPLETE. Do not replace a derivation by saying it is unchanged.",
+  "exact_added_output_fields": [
+    "- Public reconstruction: COMPLETE | PARTIAL | NOT_RECONSTRUCTED",
+    "- Original-step coverage: <steps and working, with omissions explicit>"
+  ],
+  "rough_word_target": 5000,
+  "brevity_instruction": "The word target is approximate; do not sacrifice a required derivation for brevity.",
+  "contract_unified_diff": "--- CONTRACT.before.md\n+++ CONTRACT.md\n@@ -10,7 +10,15 @@\n \n This is independent readability-preservation review only, not a Chapter 12 skeptic synthesis, new primary-source theorem-proof/PDF/image verification, Lean quotation, rendered-page, human-signoff, whole-book or release certification. Imported source references remain as stated; inspect the target application under available statements, not an imagined primary-source proof. No prior QA, grades, reports or adjudication is supplied. No tools, shell, network, other files, delegation, edits, contacts or authoring workflow. Only embedded material is allowed. Honest PARTIAL/NOT_READ, uncertainty, refutation or inconclusiveness is permitted. Request only checkable public mathematical deductions, not private reasoning.\n \n+# Public reconstruction requirement\n+\n+For every assigned proof, enumerate its original logical steps (including unchanged portions) and provide checkable public working for each. A target statement or a bound established inside that same target proof is not an unassigned input. Named UNASSIGNED upstream statements may be used after checking their hypotheses; their own proofs remain unassigned. Reading and reconstruction are distinct: if any required target step is not reconstructed publicly, say so and mark Public reconstruction: PARTIAL or NOT_RECONSTRUCTED, even if Old/New reading is COMPLETE. Do not replace a derivation by saying it is unchanged.\n+\n # Output contract\n+\n+Every per-proof section must include these fields in addition to the reading/preservation fields below:\n+- Public reconstruction: COMPLETE | PARTIAL | NOT_RECONSTRUCTED\n+- Original-step coverage: <steps and working, with omissions explicit>\n \n Begin with:\n # Review Result\n@@ -19,4 +27,6 @@\n Verdict: PASS | PASS_WITH_NOTES | FAIL | INCONCLUSIVE\n Confidence: high | medium | low\n \n-Then one ## <proof label> section per inventory label in order. Each gives Old reading COMPLETE|PARTIAL|NOT_READ; New reading COMPLETE|PARTIAL|NOT_READ; Argument preservation PRESERVED|CHANGED|UNCERTAIN; New explanations JUSTIFIED|CONCERN|UNCERTAIN; concrete public calculations and evidence citing equations or view-local LF; lost steps/qualifiers and pre-existing versus new concerns. Explicitly read unchanged proofs; do not substitute hashes for mathematical checks. End with ## Findings and limits. A partially read proof prohibits full-assignment completion. Give exact problematic wording and a bounded correction when justified without inventing a proof. Keep public report roughly 5000 words or less. No broader clearance.\n+Then one ## <proof label> section per inventory label in order. Each gives Old reading COMPLETE|PARTIAL|NOT_READ; New reading COMPLETE|PARTIAL|NOT_READ; Argument preservation PRESERVED|CHANGED|UNCERTAIN; New explanations JUSTIFIED|CONCERN|UNCERTAIN; concrete public calculations and evidence citing equations or view-local LF; lost steps/qualifiers and pre-existing versus new concerns. Explicitly read unchanged proofs; do not substitute hashes for mathematical checks. End with ## Findings and limits. A partially read proof prohibits full-assignment completion. Give exact problematic wording and a bounded correction when justified without inventing a proof. Keep public report roughly 5000 words. No broader clearance.\n+\n+The word target is approximate; do not sacrifice a required derivation for brevity.\n",
+  "contract_diff_sha256": "b6839c4d20ffbd3698e15127c150383ccb6e82a576f530746ed475f1d1230cba",
+  "after": {
+    "contract_sha256": "65ca5d6624bf335602187bd50e21c96d77b64b859154a271695f12b837e02ab3",
+    "contract_bytes": 4706,
+    "prompt_sha256": "ed6fc4034417e8dab862b436fcfceb2295c8061cce6ba4b2c54ee42ed1b5ab6d",
+    "prompt_bytes": 118834,
+    "capacity_sha256": "0c3343a82c950a8b5726e17d7eed35158bfeefff602a3d23471cc7bfeaf25cbc",
+    "preparation_checks_sha256": "3652cca9584de2447320feaf812196b1b43ee72d276593bd8a1398320bf835db",
+    "manifest_sha256": "59cb3fea0611d965876e3044777c67f3eece6d07ff820dca8a76a4fb4d75b0da",
+    "prompt_tokens": 36336,
+    "agent_prompt_tokens": 53,
+    "combined_reasoning_public_cap": 65536,
+    "conditional_headroom": 913883,
+    "timeout_seconds": 3600
+  },
+  "payload_identity": {
+    "proof_manifest_sha256": "40066d5c50c875f6a3d0630b18a0e20f5e1fecfc7d85cae35fcfd1ebd08ebade",
+    "all_statement_and_proof_hashes_unchanged": true,
+    "all_source_files_bytes_unchanged": true,
+    "source_input_files": [
+      {
+        "path": "inputs/old-module.txt",
+        "bytes": 13024,
+        "sha256": "9b5e4af075c143558fa3376dabdf89ec1ea80e84762fc4a5e67fd145274ac38c",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/no-go/phase.tex",
+        "selection": "SCIENTIFIC_VIEW",
+        "role": "ASSIGNED OLD scientific module view; all 5 complete statements/proofs; only identified outside-proof administrative prose omitted.",
+        "source_mapping": {
+          "original_source_bytes": 13024,
+          "original_source_sha256": "9b5e4af075c143558fa3376dabdf89ec1ea80e84762fc4a5e67fd145274ac38c",
+          "retained_byte_ranges_end_exclusive": [
+            [
+              0,
+              13024
+            ]
+          ],
+          "omissions": []
+        }
+      },
+      {
+        "path": "inputs/new-module.txt",
+        "bytes": 13872,
+        "sha256": "493142b0f114fce46d9bf1547097387c0ac7ca882ab58693e3a0ea1edfd54d9a",
+        "source_revision": "06fa30d135a3f77118419233246b231b9c1358b8",
+        "source_path": "notes/no-go/phase.tex",
+        "selection": "SCIENTIFIC_VIEW",
+        "role": "ASSIGNED NEW scientific module view; all 5 complete statements/proofs; only identified outside-proof administrative prose omitted.",
+        "source_mapping": {
+          "original_source_bytes": 13872,
+          "original_source_sha256": "493142b0f114fce46d9bf1547097387c0ac7ca882ab58693e3a0ea1edfd54d9a",
+          "retained_byte_ranges_end_exclusive": [
+            [
+              0,
+              13872
+            ]
+          ],
+          "omissions": []
+        }
+      },
+      {
+        "path": "inputs/baseline-model-and-exponent.txt",
+        "bytes": 2132,
+        "sha256": "ba3693314fe34e7f9a7ceac5d452fcac3891acb1d6641a0cdb45274381aac8d6",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/notes_stratonovich_ham_second_moment.tex",
+        "selection": "LF_RANGE",
+        "role": "UNASSIGNED exact baseline declaration/definition context; no upstream proof assigned or counted.",
+        "source_lf": [
+          367,
+          414
+        ]
+      },
+      {
+        "path": "inputs/baseline-scientific-section-01.txt",
+        "bytes": 24882,
+        "sha256": "6744dad749cee44fccbbe417f5d143dd464cc19784fbad64f506634e60a361af",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/notes_stratonovich_ham_second_moment.tex",
+        "selection": "LF_RANGE",
+        "role": "UNASSIGNED exact baseline declaration/definition context; no upstream proof assigned or counted.",
+        "source_lf": [
+          2478,
+          3030
+        ]
+      },
+      {
+        "path": "inputs/baseline-static-phase-scope.txt",
+        "bytes": 654,
+        "sha256": "60855b6906e892424e164454f2e8fca1f181592c7343604e50b5ebe377c7b833",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/notes_stratonovich_ham_second_moment.tex",
+        "selection": "LF_RANGE",
+        "role": "UNASSIGNED exact baseline declaration/definition context; no upstream proof assigned or counted.",
+        "source_lf": [
+          2248,
+          2260
+        ]
+      },
+      {
+        "path": "inputs/integrated_constant_phase_young.txt",
+        "bytes": 27376,
+        "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/integrated_constant_phase_young.tex",
+        "selection": "WHOLE_FILE",
+        "role": "UNASSIGNED complete baseline upstream module. Stated inputs/definitions may be used under checked application hypotheses; these proofs are NOT assigned or counted as additional reviewed proofs."
+      },
+      {
+        "path": "inputs/integrated_compact_mean_family.txt",
+        "bytes": 25917,
+        "sha256": "39946946cc52bee56eb5ec2ab44111a2e8873df9b17ef65d322c0b42066325ca",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/integrated_compact_mean_family.tex",
+        "selection": "WHOLE_FILE",
+        "role": "UNASSIGNED complete baseline upstream module. Stated inputs/definitions may be used under checked application hypotheses; these proofs are NOT assigned or counted as additional reviewed proofs."
+      }
+    ],
+    "old_embedded_frames": [
+      {
+        "path": "inputs/old-module.txt",
+        "payload_byte_offset": 6879,
+        "payload_bytes": 13024,
+        "payload_sha256": "9b5e4af075c143558fa3376dabdf89ec1ea80e84762fc4a5e67fd145274ac38c"
+      },
+      {
+        "path": "inputs/new-module.txt",
+        "payload_byte_offset": 20369,
+        "payload_bytes": 13872,
+        "payload_sha256": "493142b0f114fce46d9bf1547097387c0ac7ca882ab58693e3a0ea1edfd54d9a"
+      },
+      {
+        "path": "inputs/baseline-model-and-exponent.txt",
+        "payload_byte_offset": 34707,
+        "payload_bytes": 2132,
+        "payload_sha256": "ba3693314fe34e7f9a7ceac5d452fcac3891acb1d6641a0cdb45274381aac8d6"
+      },
+      {
+        "path": "inputs/baseline-scientific-section-01.txt",
+        "payload_byte_offset": 37326,
+        "payload_bytes": 24882,
+        "payload_sha256": "6744dad749cee44fccbbe417f5d143dd464cc19784fbad64f506634e60a361af"
+      },
+      {
+        "path": "inputs/baseline-static-phase-scope.txt",
+        "payload_byte_offset": 62693,
+        "payload_bytes": 654,
+        "payload_sha256": "60855b6906e892424e164454f2e8fca1f181592c7343604e50b5ebe377c7b833"
+      },
+      {
+        "path": "inputs/integrated_constant_phase_young.txt",
+        "payload_byte_offset": 63929,
+        "payload_bytes": 27376,
+        "payload_sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+      },
+      {
+        "path": "inputs/integrated_compact_mean_family.txt",
+        "payload_byte_offset": 91889,
+        "payload_bytes": 25917,
+        "payload_sha256": "39946946cc52bee56eb5ec2ab44111a2e8873df9b17ef65d322c0b42066325ca"
+      }
+    ],
+    "new_embedded_frames": [
+      {
+        "path": "inputs/old-module.txt",
+        "payload_byte_offset": 7854,
+        "payload_bytes": 13024,
+        "payload_sha256": "9b5e4af075c143558fa3376dabdf89ec1ea80e84762fc4a5e67fd145274ac38c"
+      },
+      {
+        "path": "inputs/new-module.txt",
+        "payload_byte_offset": 21344,
+        "payload_bytes": 13872,
+        "payload_sha256": "493142b0f114fce46d9bf1547097387c0ac7ca882ab58693e3a0ea1edfd54d9a"
+      },
+      {
+        "path": "inputs/baseline-model-and-exponent.txt",
+        "payload_byte_offset": 35682,
+        "payload_bytes": 2132,
+        "payload_sha256": "ba3693314fe34e7f9a7ceac5d452fcac3891acb1d6641a0cdb45274381aac8d6"
+      },
+      {
+        "path": "inputs/baseline-scientific-section-01.txt",
+        "payload_byte_offset": 38301,
+        "payload_bytes": 24882,
+        "payload_sha256": "6744dad749cee44fccbbe417f5d143dd464cc19784fbad64f506634e60a361af"
+      },
+      {
+        "path": "inputs/baseline-static-phase-scope.txt",
+        "payload_byte_offset": 63668,
+        "payload_bytes": 654,
+        "payload_sha256": "60855b6906e892424e164454f2e8fca1f181592c7343604e50b5ebe377c7b833"
+      },
+      {
+        "path": "inputs/integrated_constant_phase_young.txt",
+        "payload_byte_offset": 64904,
+        "payload_bytes": 27376,
+        "payload_sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+      },
+      {
+        "path": "inputs/integrated_compact_mean_family.txt",
+        "payload_byte_offset": 92864,
+        "payload_bytes": 25917,
+        "payload_sha256": "39946946cc52bee56eb5ec2ab44111a2e8873df9b17ef65d322c0b42066325ca"
+      }
+    ],
+    "only_frame_byte_offsets_changed": true,
+    "prefix_byte_delta": 975,
+    "old_prompt_suffix_after_contract_sha256": "1698c89a6560e5cc0025ea3d27ce147352b7a4f230562989da14a6ee084598cd",
+    "new_prompt_suffix_after_contract_sha256": "1698c89a6560e5cc0025ea3d27ce147352b7a4f230562989da14a6ee084598cd"
+  },
+  "unchanged_policy_fields": {
+    "source_file": "notes/no-go/phase.tex",
+    "old_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+    "source_revision": "06fa30d135a3f77118419233246b231b9c1358b8",
+    "proof_labels": [
+      "P:nogo-14",
+      "P:nogo-15",
+      "P:nogo-16",
+      "P:nogo-20",
+      "P:nogo-31"
+    ],
+    "assigned_global_ordinals": null,
+    "requested_model": "deepseek/deepseek-v4-pro",
+    "requested_variant": null,
+    "pure_mode": true,
+    "agent": "artifact-reviewer",
+    "all_tools_denied": true,
+    "combined_reasoning_public_output_cap": 65536,
+    "timeout_seconds": 3600,
+    "coordinator_launch_limit": 1,
+    "coordinator_retry_continuation_fallback": false
+  },
+  "historical_evidence_notice": "Saved old checks/contract/prompt remain historical. Previous selected-view binding hashes do not cover the changed prefix. New offline checks cover the refined prefix and exact preserved payloads; no native/preflight/review/approval claim.",
+  "native_or_provider_calls": 0,
+  "launch_script_or_lock_created": false
+}

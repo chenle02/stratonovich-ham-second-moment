@@ -1,0 +1,407 @@
+{
+  "review_record_id": "RP060",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "bf988917e3c235734a272d63069022f0e3f951f6",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_occupation_ceiling.tex",
+  "source_binding_sha256": "c8b9abafe7e20c3c8d9ed036561b831d32858e43b2e03dc2a7bf6d69f0fce6be",
+  "public_report_sha256": "7785b188b7baf6f8c6200a3d02e3c785ff158ffd54727b7c37ac6a738bed1dbb",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_ALL_ASSIGNED_PUBLIC_RECONSTRUCTIONS_CHECKED_ROOT_REVIEWS",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:occupation-raw-square": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:raw-occupation-energy": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:occupation-rayleigh-selection": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "T:intrinsic-occupation-ceiling": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1",
+        "R2"
+      ]
+    },
+    "C:intrinsic-spatial-bracket": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:occupation-raw-square",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 11,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "e4843be24ebc1cc7698e6be19c57eabfdcffe59e55574d17a20de5357dec7cc3",
+      "mathematical_check": "The report reconstructs the continuous physical square map throughH1compact-smooth approximation, exact differenceC4(f_n-f_l,f_n+f_l,...) andtheN bound, including approximationindependence andHilbert/physical pairinglimits. StrongH1measurability pluscontinuousQ givesF_g stronglymeasurable; unitprofiles andconcavity giveint||F_g||^2<=R_spT^(alpha/2). The stated original Bochner covariance inclusionJ_Hsp constructs rho_g withnorm^2=A(g), using the ORIGINALtimekernel andrepresentative-independent physicalpairings. CompactchiΨ_t factorization andpolarized inclusion, absoluteSchur/CS integrability, evenGamma andpositivephysicalTonelli identifythemeanpairing. HilbertCS retains originalv/2 scale anddoesnotinsertroughoccupationsintoastochasticflow.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        24,
+        43
+      ],
+      "old_proof_lf": [
+        45,
+        91
+      ],
+      "old_statement_sha256": "9c45ef5977c3e3980f058459e1d0657c635c62ce0a21f27868d251fa4b41730a",
+      "old_proof_sha256": "eeed690b6e7e17b837879b1d16bc684ae84505e0429f371ebaecda39f853b2bf",
+      "new_statement_lf": [
+        24,
+        43
+      ],
+      "new_proof_lf": [
+        45,
+        108
+      ],
+      "new_statement_sha256": "9c45ef5977c3e3980f058459e1d0657c635c62ce0a21f27868d251fa4b41730a",
+      "new_proof_sha256": "7b08b68ad5347fbab5e20b914e6867bcc47965a7271acbae4fcbfa6a719d9bf8"
+    },
+    {
+      "proof_id": "P:raw-occupation-energy",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 66,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "f35870594d608590d6190616a38154235f06795cf2c94cd2489d03aa99c684e0",
+      "mathematical_check": "The report provesT(g)>0 fromunitH1profiles, then uses spatial squareCS, originalkernel rowK0=2^a/(1-a) andunit-timeconcavity toboundA(g)<=K0R_spT^(alpha/2). Aconstant-timecompactunitprofile suppliespositiveA andratio. The fullH1spatialdilation preservesstrongmeasurability/unitnorm andisbijective; explicitRadon/Lebesguefactors givel^alpha A andl^2T. Scalar differentiation ofA l^alpha-zetaT l^2 gives exactD_zeta andthewholeclasssupremum byapproachingratios, includingA0limitl→0. Algebraicallyinvertingretains(2zeta/alpha)^(alpha/2) andpenaltyscalingzeta^-alpha/(2-alpha), withnooptimizer/minimaxchangeordampedkernelreplacement.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        94,
+        114
+      ],
+      "old_proof_lf": [
+        116,
+        149
+      ],
+      "old_statement_sha256": "9cc7cc2edf5cabc2b9f3dfb95cf13d66c702f55ea66065b9178238842c2a4eec",
+      "old_proof_sha256": "78d97db3b82e5b011f1688d45b2f7557fbbdaa1baa7db28e20e7f0381ad1b4c2",
+      "new_statement_lf": [
+        111,
+        131
+      ],
+      "new_proof_lf": [
+        133,
+        177
+      ],
+      "new_statement_sha256": "9cc7cc2edf5cabc2b9f3dfb95cf13d66c702f55ea66065b9178238842c2a4eec",
+      "new_proof_sha256": "a9663c09a1a2db44edd25c269794617b755cb04c9664815412ce5a7a585056b3"
+    },
+    {
+      "proof_id": "L:occupation-rayleigh-selection",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 131,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "6d3d8a1d42ac1983fef95eba865cef86dac460ba246eb300027ee60c0c118268",
+      "mathematical_check": "The report constructs a countable realcompact-smooth family densein theL2-unitH1class andverifiesnormalizationcontinuity. Boundedpotential continuity givesR_j(s)continuous andlambdasquared=sup_j R_j. Borelfirst-index cells coverI; finite-valuedtruncations convergepointwiseH1, givingstrongmeasurableg_epsilon. The near-Rayleigh inequalityimplies pointwisekineticbound<=H_Psi+epsilon BEFORE usingtheoccupationvector, soTfiniteandg_epsilonbelongs totheFULLclass. IntegratingtheRayleigh inequality, thejustprovedoriginalcovariancepairing andHilbertCS, thenunit-timeCS I_Psi^2<=intlambda^2, givethetargeterrorinequality. Noeigenvector,continuumselector,commoncompactsupport orlimitingoccupation isassumed.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        152,
+        160
+      ],
+      "old_proof_lf": [
+        162,
+        196
+      ],
+      "old_statement_sha256": "0915b7fec7818c9562159a47b5fd6e1eaa26339e03eb8954ecfa7250d7c4fe2d",
+      "old_proof_sha256": "9420f4108ccda6d1f44adcda8bd7da4abdd2929d48ae4518815739db96550edd",
+      "new_statement_lf": [
+        180,
+        188
+      ],
+      "new_proof_lf": [
+        190,
+        236
+      ],
+      "new_statement_sha256": "0915b7fec7818c9562159a47b5fd6e1eaa26339e03eb8954ecfa7250d7c4fe2d",
+      "new_proof_sha256": "89b114a76416fc291631916efeb5f4106c6846477fca586ac233baeb3e607ded"
+    },
+    {
+      "proof_id": "T:intrinsic-occupation-ceiling",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 170,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "2c3ce721b7e3b66fb8d2fb700a31c2349f190ec0a2cab133dceefd5336abf012",
+      "mathematical_check": "The public proof firstbounds A(g_eps)<=C_occ T^(alpha/2), optimizes sqrt(vC)T^beta-T OVERallT>=0 beforeepsilon→0, andderivesexactT*,value(q/4)(alpha/4)^(alpha/q)(vC)^(2/q) andI<=D v^(1/q), includingv0. It thencomputesv*=(2cD/q)^(q/k),g*=k v*/2 andCORRECT(2D/q)^q=q^-q/2(alpha/4)^alpha/2 C. TwoINTERMEDIATEfactor2equalities inStep4 areFALSE(R1,R2). Theyarenot justified bycancellingerrors. AnINDEPENDENTcorrectpublicroute is alreadyinEvidence(ii): outside1/2 becomes2^-k insidethe1/kpower,4^-alpha/2=2^-alpha,k+alpha=3, givingdenominator8 fromthecorrectanchorformulas. Thusnormalizationisactuallypubliclyreconstructeddespite thoseancillarybadlines. The energyform retains(2zeta)^(alpha/(2k)) anditsenergy-scalingcancellation; takingonlycontrolsupremumgivestheceiling, andthestatedunassignedC2=S2identitygivesthemomentcomparison, withoutattainmentorequalityclaimfortheceiling.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        209,
+        224
+      ],
+      "old_proof_lf": [
+        226,
+        254
+      ],
+      "old_statement_sha256": "e7673f4e874d288093e9101db62fbe5070eb3a63474667f5e6ba1e3d2806b1ac",
+      "old_proof_sha256": "1093baad7579d7413453239063479e5e3074a33813de2bedaf34ba41ba86976d",
+      "new_statement_lf": [
+        249,
+        264
+      ],
+      "new_proof_lf": [
+        266,
+        316
+      ],
+      "new_statement_sha256": "e7673f4e874d288093e9101db62fbe5070eb3a63474667f5e6ba1e3d2806b1ac",
+      "new_proof_sha256": "58787199c931888135c7324050a59c6758219ce4b563fa0a52c13608ae8e2bab"
+    },
+    {
+      "proof_id": "C:intrinsic-spatial-bracket",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 250,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "0c130110afb43f491062aeabbfe70b14cd6ed2c99f3ab583b9bcfcc23c3946a7",
+      "mathematical_check": "The report derivesupperbracket fromC_occ<=K0Rsp andtheexactspatialenergy relation, andlowerbracket fromthestaticenergy scoretimes2^m usingthestatedC2=S2input. It computesDelta bystrictmidpointconvexityofxlogx atq,q-2a, witha>0,q-2a>2-a>1 andNOq>=3hypothesis. Theexactlogratio includes-(alpha/2)log(2zeta), sostrictGamma-nonzero comparisonat zeta1/2 iscorrect. Atzeta1 itfullycomputesalpha5/4,a1/2,q11/4 andthetwointegerproductsgivingnegative sign; thisonlycomparesbounds,notactualmomentinequalities. Zero-covariancenonstrictlimits/smallspatialdilations remain directanddonotusea zero-gradientunitprofile. NoChenenergyidentificationorprimary-normalizationcertificationisclaimed.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        257,
+        271
+      ],
+      "old_proof_lf": [
+        273,
+        305
+      ],
+      "old_statement_sha256": "431749e6ce9e2c40cd32e5da911362834f38c0f8509bd67d4e2dc3317fe5aad8",
+      "old_proof_sha256": "1fd2dcf1678dc466c53147edc4a98875b0056570db6b82804ed84f3129f17d54",
+      "new_statement_lf": [
+        319,
+        333
+      ],
+      "new_proof_lf": [
+        335,
+        371
+      ],
+      "new_statement_sha256": "431749e6ce9e2c40cd32e5da911362834f38c0f8509bd67d4e2dc3317fe5aad8",
+      "new_proof_sha256": "ca26bc12205a4afc72144538957b0462bb5c10f5d3f030f3e8728767152e8af4"
+    }
+  ],
+  "mathematical_checks": [
+    "The report reconstructs the continuous physical square map throughH1compact-smooth approximation, exact differenceC4(f_n-f_l,f_n+f_l,...) andtheN bound, including approximationindependence andHilbert/physical pairinglimits. StrongH1measurability pluscontinuousQ givesF_g stronglymeasurable; unitprofiles andconcavity giveint||F_g||^2<=R_spT^(alpha/2). The stated original Bochner covariance inclusionJ_Hsp constructs rho_g withnorm^2=A(g), using the ORIGINALtimekernel andrepresentative-independent physicalpairings. CompactchiΨ_t factorization andpolarized inclusion, absoluteSchur/CS integrability, evenGamma andpositivephysicalTonelli identifythemeanpairing. HilbertCS retains originalv/2 scale anddoesnotinsertroughoccupationsintoastochasticflow.",
+    "The report provesT(g)>0 fromunitH1profiles, then uses spatial squareCS, originalkernel rowK0=2^a/(1-a) andunit-timeconcavity toboundA(g)<=K0R_spT^(alpha/2). Aconstant-timecompactunitprofile suppliespositiveA andratio. The fullH1spatialdilation preservesstrongmeasurability/unitnorm andisbijective; explicitRadon/Lebesguefactors givel^alpha A andl^2T. Scalar differentiation ofA l^alpha-zetaT l^2 gives exactD_zeta andthewholeclasssupremum byapproachingratios, includingA0limitl→0. Algebraicallyinvertingretains(2zeta/alpha)^(alpha/2) andpenaltyscalingzeta^-alpha/(2-alpha), withnooptimizer/minimaxchangeordampedkernelreplacement.",
+    "The report constructs a countable realcompact-smooth family densein theL2-unitH1class andverifiesnormalizationcontinuity. Boundedpotential continuity givesR_j(s)continuous andlambdasquared=sup_j R_j. Borelfirst-index cells coverI; finite-valuedtruncations convergepointwiseH1, givingstrongmeasurableg_epsilon. The near-Rayleigh inequalityimplies pointwisekineticbound<=H_Psi+epsilon BEFORE usingtheoccupationvector, soTfiniteandg_epsilonbelongs totheFULLclass. IntegratingtheRayleigh inequality, thejustprovedoriginalcovariancepairing andHilbertCS, thenunit-timeCS I_Psi^2<=intlambda^2, givethetargeterrorinequality. Noeigenvector,continuumselector,commoncompactsupport orlimitingoccupation isassumed.",
+    "The public proof firstbounds A(g_eps)<=C_occ T^(alpha/2), optimizes sqrt(vC)T^beta-T OVERallT>=0 beforeepsilon→0, andderivesexactT*,value(q/4)(alpha/4)^(alpha/q)(vC)^(2/q) andI<=D v^(1/q), includingv0. It thencomputesv*=(2cD/q)^(q/k),g*=k v*/2 andCORRECT(2D/q)^q=q^-q/2(alpha/4)^alpha/2 C. TwoINTERMEDIATEfactor2equalities inStep4 areFALSE(R1,R2). Theyarenot justified bycancellingerrors. AnINDEPENDENTcorrectpublicroute is alreadyinEvidence(ii): outside1/2 becomes2^-k insidethe1/kpower,4^-alpha/2=2^-alpha,k+alpha=3, givingdenominator8 fromthecorrectanchorformulas. Thusnormalizationisactuallypubliclyreconstructeddespite thoseancillarybadlines. The energyform retains(2zeta)^(alpha/(2k)) anditsenergy-scalingcancellation; takingonlycontrolsupremumgivestheceiling, andthestatedunassignedC2=S2identitygivesthemomentcomparison, withoutattainmentorequalityclaimfortheceiling.",
+    "The report derivesupperbracket fromC_occ<=K0Rsp andtheexactspatialenergy relation, andlowerbracket fromthestaticenergy scoretimes2^m usingthestatedC2=S2input. It computesDelta bystrictmidpointconvexityofxlogx atq,q-2a, witha>0,q-2a>2-a>1 andNOq>=3hypothesis. Theexactlogratio includes-(alpha/2)log(2zeta), sostrictGamma-nonzero comparisonat zeta1/2 iscorrect. Atzeta1 itfullycomputesalpha5/4,a1/2,q11/4 andthetwointegerproductsgivingnegative sign; thisonlycomparesbounds,notactualmomentinequalities. Zero-covariancenonstrictlimits/smallspatialdilations remain directanddonotusea zero-gradientunitprofile. NoChenenergyidentificationorprimary-normalizationcertificationisclaimed."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "proof_id": "T:intrinsic-occupation-ceiling",
+      "classification": "false report-only dropped outside one-half in an intermediate equality",
+      "old": "(k/2)c^m(2D/q)^(q/k)=c^m k q^(-q/(2k))(alpha/4)^(alpha/(2k)) C^(1/k)",
+      "new": "(k/2)c^m(2D/q)^(q/k)=(k/2)c^m q^(-q/(2k))(alpha/4)^(alpha/(2k)) C^(1/k)",
+      "contrary_calculation": "Allfactorsarepositivefornonzerocovarianceandpositivec. WithA=(2D/q)^q>0, thecorrectvalueis(k/2)c^m A^(1/k); thewrittenRHS isk c^m A^(1/k), exactlyTWICEthevalue.",
+      "disposition": "Rawreportunmodified. Do notjustifyfinalconstantbycancellationwithanotherwrongline. Correctpublicv*/g* and(2D/q)^qanchors plusindependentpublicEvidence(ii)half-costaccounting alreadygivethecorrect8.",
+      "report_lf": 220
+    },
+    {
+      "id": "R2",
+      "proof_id": "T:intrinsic-occupation-ceiling",
+      "classification": "false report-only extra one-half in another intermediate prefactor",
+      "old": "(1/2)2^(-alpha/k)2^-1=2^(-(1+alpha/k))",
+      "new": "(1/2)2^(-alpha/k)=2^(-(1+alpha/k))=2^(-3/k)",
+      "contrary_calculation": "Atalpha1,k2 thecorrectprefactoris2^-3/2. ThewrittenTHREE-factorleftsideis2^-5/2, halfofitsclaimedRHS.",
+      "disposition": "Rawtextretainedasfalse. ThepublicEvidence(ii)correctlyabsorbs exactlyONEoutside1/2 as2^-k underthe1/kpower, combines2^-alpha andk+alpha3 togive8. Thisvalidrouteispresentwithoutsource/rootreplacement; ifabsent,theassignednormalizationwouldremainPARTIAL.",
+      "report_lf": 224
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 21148,
+      "sha256": "7785b188b7baf6f8c6200a3d02e3c785ff158ffd54727b7c37ac6a738bed1dbb"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 5380,
+      "sha256": "9b9ac2f50ae2f2d10fa6758014484b53ecc701adcc73ee6d502ca03bb635ae16"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 7577,
+      "sha256": "61ca080a97ccbc0c5847cfbd1e942ceb12b2a5727fc00881c84d7ba4ae911783"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 4226,
+      "sha256": "c8b9abafe7e20c3c8d9ed036561b831d32858e43b2e03dc2a7bf6d69f0fce6be"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 8612,
+      "sha256": "5d2076d05fd81b0e169a1267ce3afb8fe915ab0ffac3253774bf521170218f99"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 4878,
+      "sha256": "8e51174bdfbb5a54fcd1b36dc3616e14535967bfc0042e1c4061af66027bb6d9"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 14682,
+      "sha256": "ac567a53fecc2c084906445567525ab8e2c4221b6728f936c96a8ced855096b6"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 17404,
+      "sha256": "cf71e1a18d5787fc9438dc53be25faa8f4c1957c8d9ab41538fe9ecf9891280a"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-integrated_spatial_occupation-baseline.txt",
+      "bytes": 22407,
+      "sha256": "ed2f96133f5e969ba4d24fca051da4fcfcbf1377d6d18aa6a5e8385b66e5a12f"
+    },
+    {
+      "path": "inputs/context-integrated_unmasked_variational-baseline.txt",
+      "bytes": 18753,
+      "sha256": "1495453c13dba9ba7a684a81c7fb06ea2a5b3f863ddc9291d0510755fba19b7d"
+    },
+    {
+      "path": "inputs/context-integrated_temporal_equilibrium-baseline.txt",
+      "bytes": 4281,
+      "sha256": "412c7cb1e28118adbab40d8ef4b59bd815791c48a92a389efbd14202578c690f"
+    },
+    {
+      "path": "inputs/context-T-intrinsic-second-moment.txt",
+      "bytes": 21834,
+      "sha256": "820990dec2c6d3caa7c670b26836ed004c74c12028ce3f68ca91751317689084"
+    }
+  ],
+  "input_identity_checks": "All delivered source/context payload hashes and WHOLE_FILE pinned Git byte identities verified; every complete OLD/NEW statement/proof independently checked by LF/bytes/SHA. Complete target text read with baseline comparisons and genuine needed stated inputs, not merely delta QA.",
+  "source_currentness": {
+    "covered_launch_revision": "bf988917e3c235734a272d63069022f0e3f951f6",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "limit": "Only this exact assigned source versuscdde and supplied context; no older report rebinding, unexamined successor or whole-book seal."
+  },
+  "read_limits": [
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority",
+  "root_reviewed_specific_coverage_point": "Root read actual T:intrinsic-occupation-ceiling publicworking and agreedCHECKED via alreadypublic correctv*/g*,(2D/q)^q andEvidence(ii)half-costaccounting, while retainingBOTHfalseintermediatefactor2lines. This isnot cancellationoferrors, norrootreplacementofmissingpublicworking; upstreamC2identificationremainsunassigned."
+}

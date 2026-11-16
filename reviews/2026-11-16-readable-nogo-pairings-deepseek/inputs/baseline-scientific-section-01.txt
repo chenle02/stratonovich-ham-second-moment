@@ -1,0 +1,108 @@
+\section{The complete two-chain expansion}
+
+For $m+n = 2k$, label the two chains by $I_1 = \{1,\ldots,m\}$ and $I_2 =
+\{m+1,\ldots,m+n\}$. A self-pairing has both endpoints in one chain; a
+cross-pairing has one endpoint in each chain. Both are included in $\Pi_k$. Let
+$p(l)$ denote the preceding vertex in its own chain; at each first vertex set
+$(s_{p(l)},y_{p(l)}) = (0,0)$. Thus, the second chain has its own root, rather
+than the last vertex of the first chain. For $D \in \Pi_k$, set
+\begin{equation}\label{E:mixed-diagram}
+  \begin{split}
+    J_{m,n,D}(t)
+    ={}&\int_{[0,t]^m_<\times[0,t]^n_<}\ud\mathbf{s}
+    \int_{(\R^d)^{m+n}}\ud\mathbf{y}\,
+    \prod_{\rho=1}^2\prod_{l\in I_\rho}
+    G(s_l-s_{p(l)},y_l-y_{p(l)})\\
+    &\hspace{20mm}\times
+    \prod_{(j,h)\in D}|s_j-s_h|^{-\alpha_0}\gamma(y_j-y_h).
+  \end{split}
+\end{equation}
+An empty chain contributes the factor one. For $d = 3$, the spatial Green
+kernels are measures; for spatial white noise the covariance is a delta measure.
+Integrals in~\eqref{E:mixed-diagram} use the generalized-kernel and
+regularization conventions of the source, not pointwise values of these
+measures. Lemmas~\ref{L:spatial-wick-measures}--\ref{L:joint-fixed-order}
+construct them with the convention
+of~\cite{chen:author2026:time-dependency}*{Remark~2.3, p.~11, and the Green
+regularization on pp.~13--14}.
+
+\begin{proposition}[Mixed terms]\label{P:mixed}
+  Under Hypothesis~\ref{H:homog},
+  \begin{equation}\label{E:mixed-moment}
+    \E[X_m(t,x)X_n(t,x)]
+    =\begin{cases}
+      \displaystyle\sum_{D\in\Pi_k}J_{m,n,D}(t),&m+n=2k,\\
+      0,&m+n\text{ odd},
+    \end{cases}
+  \end{equation}
+  where the case $m = n = 0$ equals one. In particular,
+  \begin{equation}\label{E:full-second}
+    \E u^2(t,x)=\sum_{k=0}^\infty\sum_{m=0}^{2k}
+    \sum_{D\in\Pi_k}J_{m,2k-m,D}(t).
+  \end{equation}
+  This is a convergent series of nonnegative terms.
+\end{proposition}
+
+\begin{proof}
+  Lemma~\ref{L:joint-fixed-order} below constructs each $X_n$ and each
+  individual two-chain diagram at arbitrary vertexwise widths, including unequal
+  and empty chains. Its proof uses the positive spatial-measure limit and
+  Lemma~\ref{L:pairing-product-envelope}; it uses neither the present
+  proposition nor any infinite solution series.
+
+  At positive noise widths Wick's formula gives zero at odd total order and the
+  finite pairing sum at even total order. The Green-width limit is taken first,
+  as in the construction preceding Lemma~\ref{L:spatial-wick-measures}. At fixed
+  $m,n$, joint $L^2$ convergence of the two factors gives product convergence in
+  $L^1$:
+  \[
+    \|Y_mY_n-X_mX_n\|_1
+    \le\|Y_m-X_m\|_2\|Y_n\|_2
+    +\|X_m\|_2\|Y_n-X_n\|_2\longrightarrow0.
+  \]
+  A zero-order factor stays equal to one. Each individual Wick diagram also has
+  the finite nonnegative limit in Lemma~\ref{L:joint-fixed-order}.
+
+  To identify its initial-chain form, for terminal variables in the first chain
+  set
+  \[
+    s'_j=t-s_{m+1-j},\qquad y'_j=x-y_{m+1-j},\qquad1\le j\le m,
+  \]
+  and use the corresponding length-$n$ transformation on the second chain. Each
+  transformed chain has initial root $(0,0)$. For example, $G(t-s_m,x-y_m)$
+  becomes $G(s'_1,y'_1)$; every other factor becomes the corresponding
+  successive increment. The differences in each covariance change sign, absorbed
+  by evenness. The vertex involution is
+  \[
+    \rho(j)=m+1-j\ (1\le j\le m),\qquad
+    \rho(m+j)=m+n+1-j\ (1\le j\le n).
+  \]
+  It induces the pairing bijection $D\mapsto\{\{\rho(a),\rho(b)\}:\{a,b\}\in
+  D\}$. The same transformation holds before removing noise smoothing. Passing
+  to the finitely many diagram limits proves \eqref{E:mixed-moment} with
+  precisely~\eqref{E:mixed-diagram}.
+
+  Lemmas~\ref{L:crude-corrected} and~\ref{L:vertex-crude} independently prove
+  fixed-$t$ norm summability of the $X_n$, using the fixed-order construction
+  just cited and Lemma~\ref{L:pairing-product-envelope}.
+  Proposition~\ref{P:mild-construction} identifies their series as a
+  Stratonovich mild solution. None of those proofs uses the present mixed-term
+  identity. Hence, $U_N = \sum_{n=0}^N X_n \to u$ in $L^2$, and
+  \[
+    |\E U_N^2-\E u^2|
+    \le\|U_N-u\|_2(\|U_N\|_2+\|u\|_2)\longrightarrow0.
+  \]
+  The finite expansions of $\E U_N^2$ increase, since every mixed expectation
+  computed above is nonnegative. Their limit is the full double sum, independent
+  of its enumeration. Regrouping by total order gives~\eqref{E:full-second}.
+  This proves Proposition~\ref{P:mixed}.
+\end{proof}
+
+The two chain orders must remain distinct: chronological concatenation can
+violate wave support, and a difference of block labels need not measure
+chronological separation. No-gos~\ref{P:nogo-05} and~\ref{P:nogo-07}
+give explicit positive-measure witnesses.
+
+
+\input{notes/figures/two-chain-pairings}
+

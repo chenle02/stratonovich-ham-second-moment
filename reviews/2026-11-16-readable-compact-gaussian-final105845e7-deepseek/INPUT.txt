@@ -1,0 +1,2922 @@
+# Assigned task: 10 rewritten integrated_compact_gaussian.tex proof pairs
+
+Independently compare BOTH OLD and NEW complete proofs and their unchanged
+statements and definitions. Read every complete proof, including unchanged
+portions. Check every new explanatory assertion under the SAME hypotheses,
+constants, domains, normalizations and limiting conventions. Byte retention
+alone is not mathematical evidence; OLD is not an oracle. Reconstruct assigned
+deductions using checkable public equations and estimates, rather than label
+summaries. Do not silently repair a proof or invent an unsupported claim.
+Distinguish new rewrite defects from pre-existing concerns and contextual limits.
+
+Only the proof labels in the exact inventory are assigned. Supplied baseline
+context is explicitly UNASSIGNED: its named statements may be used under
+checked application hypotheses, but its proofs are not assigned and must not
+be counted as additional reviewed proofs. Do not invoke an assigned target
+conclusion or its counterpart to skip reconstructing that target deduction.
+
+Reconstruct all ten assigned target proofs, including every unchanged original step. Check scalar weighted powers, finite Holder/Jensen and endpoint/zero moments; eigenbasis trace expansions without commuting matrices; Gaussian integration-by-parts recursion, finite matrix words, dilation and its exact factor two. Reconstruct the cutoff factorization at every real Sobolev order, Fourier normalization, mixed counting/Lebesgue Schur dense-core extension and identification, and recovery of periodic Fourier partial sums through the extended map. Preserve singular/rank index estimates and both rectangular variance sides.
+
+Derive compact two-envelopes, finite-dimensional covariance congruences and scalar eigenvalue monotonicity without asserting noncommuting operator-power order. Reconstruct original-noise localization, finite compressions, strong measurability, every infinite-column and Fatou limit and Gaussian operator extension under the actual source hypotheses. Retain zero covariance, nonlocal Bessel transforms versus physical test support, translated test functions and noncompactness obstructions. The two explicit cutoff extension/identification passages must be derived publicly, not treated as black boxes inside their assigned proofs. Supplied upstream modules are unassigned stated inputs only; check every consumer hypothesis. No prior report, flagged-issue history, grade or author QA is included. No primary-PDF/image, Lean, render, human, global or release certification is assigned. Do not browse, use tools, edit, delegate or contact anyone. Honest partial/not-read/inconclusive outcomes are allowed.
+
+# Public reconstruction requirement
+
+For every assigned proof, enumerate its original logical steps (including unchanged portions) and provide checkable public working for each. A target statement or a bound established inside that same target proof is not an unassigned input. Named UNASSIGNED upstream statements may be used after checking their hypotheses; their own proofs remain unassigned. Reading and reconstruction are distinct: if any required target step is not reconstructed publicly, say so and mark Public reconstruction: PARTIAL or NOT_RECONSTRUCTED, even if Old/New reading is COMPLETE. Do not replace a derivation by saying it is unchanged.
+
+# Output contract
+
+Begin with:
+# Review Result
+Category: proof-readability-equivalence
+Model: <your actual model identity if known>
+Verdict: PASS | PASS_WITH_NOTES | FAIL | INCONCLUSIVE
+Confidence: high | medium | low
+
+Verdict/confidence are unforced. Then exactly one '## <proof label>' section
+for each assigned label, in inventory order. Each must give:
+- Old reading: COMPLETE | PARTIAL | NOT_READ
+- New reading: COMPLETE | PARTIAL | NOT_READ
+- Public reconstruction: COMPLETE | PARTIAL | NOT_RECONSTRUCTED
+- Original-step coverage: <steps and working, with omissions explicit>
+- Argument preservation: PRESERVED | CHANGED | UNCERTAIN
+- New explanations: JUSTIFIED | CONCERN | UNCERTAIN
+- Evidence: concrete mathematical checks/working using equation labels or
+  OLD/NEW module-local LF ranges, not merely byte-retention facts.
+- Lost steps/qualifiers, unresolved issues and pre-existing concerns; 'none
+  identified within this read' is allowed when justified.
+
+End with '## AUDIT dispositions' and '## Findings and limits'. A partially
+read proof prohibits a claim of full assignment completion. Distinguish target
+preservation from proving all upstream analytic results or whole-book truth.
+Keep the public report roughly 5000 words. Do not certify source PDFs,
+images, Lean correspondence, rendered pages, human sign-offs or release.
+
+The word target is approximate; do not sacrifice a required derivation for brevity.
+
+# Exact assigned proof inventory
+{
+  "source_file": "notes/integrated_compact_gaussian.tex",
+  "old_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "new_revision": "105845e78f20520367e0d1c9ce22070615661f21",
+  "old_module_sha256": "caf9e56a5b818f9e5daa02ac3423c354b95c515f1932d92170ec002b0fbaa84a",
+  "new_module_sha256": "7bef7e3d85639bf444e529060fecf92c52eab0ed4a234c4068f3061b7097b003",
+  "proofs": [
+    {
+      "label": "L:gaussian-scalar-powers",
+      "old_statement_lf": [
+        14,
+        28
+      ],
+      "new_statement_lf": [
+        14,
+        28
+      ],
+      "old_proof_lf": [
+        30,
+        46
+      ],
+      "new_proof_lf": [
+        30,
+        65
+      ]
+    },
+    {
+      "label": "L:gaussian-trace-bounds",
+      "old_statement_lf": [
+        49,
+        62
+      ],
+      "new_statement_lf": [
+        68,
+        81
+      ],
+      "old_proof_lf": [
+        64,
+        92
+      ],
+      "new_proof_lf": [
+        83,
+        129
+      ]
+    },
+    {
+      "label": "P:finite-gaussian-matrix",
+      "old_statement_lf": [
+        101,
+        121
+      ],
+      "new_statement_lf": [
+        138,
+        158
+      ],
+      "old_proof_lf": [
+        123,
+        180
+      ],
+      "new_proof_lf": [
+        160,
+        249
+      ]
+    },
+    {
+      "label": "L:cutoff-factorization",
+      "old_statement_lf": [
+        214,
+        236
+      ],
+      "new_statement_lf": [
+        283,
+        305
+      ],
+      "old_proof_lf": [
+        238,
+        311
+      ],
+      "new_proof_lf": [
+        307,
+        467
+      ]
+    },
+    {
+      "label": "P:cutoff-singular-values",
+      "old_statement_lf": [
+        313,
+        323
+      ],
+      "new_statement_lf": [
+        469,
+        479
+      ],
+      "old_proof_lf": [
+        325,
+        368
+      ],
+      "new_proof_lf": [
+        481,
+        557
+      ]
+    },
+    {
+      "label": "P:compact-two-envelopes",
+      "old_statement_lf": [
+        394,
+        410
+      ],
+      "new_statement_lf": [
+        583,
+        599
+      ],
+      "old_proof_lf": [
+        412,
+        439
+      ],
+      "new_proof_lf": [
+        601,
+        657
+      ]
+    },
+    {
+      "label": "L:compact-positive-order",
+      "old_statement_lf": [
+        445,
+        453
+      ],
+      "new_statement_lf": [
+        663,
+        671
+      ],
+      "old_proof_lf": [
+        455,
+        472
+      ],
+      "new_proof_lf": [
+        673,
+        719
+      ]
+    },
+    {
+      "label": "P:localized-finite-variance",
+      "old_statement_lf": [
+        474,
+        491
+      ],
+      "new_statement_lf": [
+        721,
+        738
+      ],
+      "old_proof_lf": [
+        493,
+        511
+      ],
+      "new_proof_lf": [
+        740,
+        779
+      ]
+    },
+    {
+      "label": "C:finite-gaussian-operators",
+      "old_statement_lf": [
+        517,
+        526
+      ],
+      "new_statement_lf": [
+        785,
+        794
+      ],
+      "old_proof_lf": [
+        528,
+        572
+      ],
+      "new_proof_lf": [
+        796,
+        873
+      ]
+    },
+    {
+      "label": "P:cutoff-boundary-tests",
+      "old_statement_lf": [
+        581,
+        586
+      ],
+      "new_statement_lf": [
+        882,
+        887
+      ],
+      "old_proof_lf": [
+        588,
+        628
+      ],
+      "new_proof_lf": [
+        889,
+        942
+      ]
+    }
+  ],
+  "line_convention": "Exact raw-module local LF, not whole prompt. Context proofs are unassigned and must not be counted."
+}
+
+===== BEGIN old-module.txt =====
+{"source_path": "notes/integrated_compact_gaussian.tex", "source_revision": "cdde711c248862f33207860107dd0e6b31d60852", "selection": "WHOLE_FILE", "role": "ASSIGNED OLD complete module; exactly 10 proof pairs.", "bytes": 30608, "sha256": "caf9e56a5b818f9e5daa02ac3423c354b95c515f1932d92170ec002b0fbaa84a"}
+===== RAW UTF8 SOURCE =====
+\section{Finite Gaussian moments and whole-space Sobolev compactness}
+\label{S:compact-gaussian}
+
+We prove the finite Gaussian and compact-cutoff estimates needed to construct
+the wave operator path. All traces and Schatten norms in this section are
+unnormalized. The spatial states remain on $\R^d$, $d \in \{1,2,3\}$. Here $p$
+is an auxiliary Schatten and Gaussian-moment index. The auxiliary periodic space
+below is used only to factor a compactly supported multiplication operator. No
+infinite Gaussian series or time path is constructed in this section.
+
+\subsection{Finite Gaussian matrices with both variance powers}
+
+\LeanMarker{L:gaussian-scalar-powers}
+\begin{lemma}[Scalar power estimates]\label{L:gaussian-scalar-powers}
+  For $0 < \theta < 1$ and $u,v \ge 0$,
+  \begin{equation}\label{E:gaussian-weighted-power}
+    u^\theta v^{1-\theta} \le \theta u+(1-\theta)v.
+  \end{equation}
+  Consequently, if $L > 0$ and $0 \le q \le L$ are integers, then for real
+  $x,y$,
+  \begin{equation}\label{E:gaussian-integer-power}
+    |x|^q|y|^{L-q}
+    \le \frac qL|x|^L+\frac{L-q}L|y|^L.
+  \end{equation}
+  For nonnegative finite sequences, the usual H\"older inequality holds with
+  exponents $m$ and $m/(m-1)$, $m > 1$. If $Z \ge 0$ has finite expectation $F$
+  and $0 < r < 1$, then $\E Z^r \le F^r$.
+\end{lemma}
+
+\begin{proof}
+  If $v > 0$, divide~\eqref{E:gaussian-weighted-power} by $v$ and put $t = u/v$.
+  The function $\theta t+1-\theta-t^\theta$ decreases to zero at one and then
+  increases, by its derivative $\theta(1-t^{\theta-1})$. Continuity covers $t =
+  0$; if $v = 0$ the inequality is immediate. For $0 < q < L$, apply this with
+  $u = |x|^L$, $v = |y|^L$ and $\theta = q/L$. The endpoint cases $q = 0,L$ are
+  identities, with the ordinary integer convention $a^0 = 1$.
+
+  To prove finite H\"older, divide the two sequences by their respective
+  $\ell^m$ and $\ell^{m/(m-1)}$ norms. If either norm vanishes, the result is
+  immediate. Apply~\eqref{E:gaussian-weighted-power} with $\theta = 1/m$ to the
+  corresponding normalized powers and sum; the sum of products is at most one.
+  Undo the normalization. Finally, $F = 0$ gives $Z = 0$ almost surely. If $F >
+  0$, apply \eqref{E:gaussian-weighted-power} to $u = Z/F$, $v = 1$ and $\theta
+  = r$, and integrate. The right side has expectation one. This proves
+  Lemma~\ref{L:gaussian-scalar-powers}.
+\end{proof}
+
+\LeanMarker{L:gaussian-trace-bounds}
+\begin{lemma}[Two Hermitian trace bounds]\label{L:gaussian-trace-bounds}
+  Let $B,Y$ be finite Hermitian matrices, $m \ge 2$ an integer, and $L = 2m-2$.
+  For integers $0 \le q \le L$,
+  \begin{equation}\label{E:gaussian-trace-word}
+    \operatorname{Re}\operatorname{Tr}(BY^qBY^{L-q})
+    \le \operatorname{Tr}(B^2|Y|^L).
+  \end{equation}
+  If $D \ge 0$ is Hermitian, then
+  \begin{equation}\label{E:gaussian-trace-holder}
+    \operatorname{Tr}(D|Y|^{2m-2})
+    \le (\operatorname{Tr}D^m)^{1/m}
+    (\operatorname{Tr}|Y|^{2m})^{(m-1)/m}.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  Diagonalize $Y$, with real eigenvalues $\lambda_i$, and write $b_{ij}$ for the
+  entries of $B$ in that basis. Hermitian symmetry gives $b_{ji} =
+  \overline{b_{ij}}$. The trace word is the real sum
+  \[
+    \sum_{i,j}|b_{ij}|^2\lambda_j^q\lambda_i^{L-q}.
+  \]
+  Bound each product by its absolute value and use
+  \eqref{E:gaussian-integer-power}. After interchanging $i,j$, the two resulting
+  sums agree because $|b_{ij}| = |b_{ji}|$. Each equals
+  $\sum_{i,j}|b_{ij}|^2|\lambda_i|^L = \operatorname{Tr}(B^2|Y|^L)$. The two
+  weights sum to one, proving \eqref{E:gaussian-trace-word}. No commutation of
+  $B$ and $Y$ is used.
+
+  In the same basis put $d_i = D_{ii} \ge 0$. If $\theta_j$ are the nonnegative
+  eigenvalues of $D$, a unitary change of basis gives $d_i =
+  \sum_j|U_{ij}|^2\theta_j$. Both row and column sums of $|U_{ij}|^2$ equal one.
+  Finite convexity therefore yields
+  \[
+    \sum_i d_i^m \le \sum_{i,j}|U_{ij}|^2\theta_j^m
+    = \operatorname{Tr}D^m.
+  \]
+  For completeness, the convexity step follows from $t^m \ge s^m+ms^{m-1}(t-s)$
+  for $s,t \ge 0$, obtained by differentiating the difference. Average this
+  inequality with $s$ equal to the weighted mean. Now apply finite H\"older from
+  Lemma~\ref{L:gaussian-scalar-powers} to $\sum_i d_i|\lambda_i|^{2m-2}$. Since
+  $(2m-2)m/(m-1) = 2m$, the last display proves \eqref{E:gaussian-trace-holder},
+  including zero sums. This proves Lemma~\ref{L:gaussian-trace-bounds}.
+\end{proof}
+
+The estimate below is a finite-dimensional Gaussian noncommutative Khintchine
+inequality. For its origins in the work of Lust-Piquard and a Gaussian
+integration-by-parts proof, see Tropp~\cite{tropp:source2018:second-order}*{arXiv:1504.05919v2,
+Proposition~2.3 and Section~7}. We include the proof and Hermitian dilation
+to fix the normalization and retain both variance operators.
+
+\LeanMarker{P:finite-gaussian-matrix}
+\begin{proposition}[Finite Gaussian matrix moment]\label{P:finite-gaussian-matrix}
+  Let $A_1,\ldots,A_N$ be complex $o$-by-$n$ matrices, with $o,n,N \ge 1$, and
+  let $g_k$ be independent real standard Gaussians. Put
+  \[
+    X=\sum_k g_kA_k,\qquad V_{\rm out}=\sum_k A_kA_k^*,
+    \qquad V_{\rm in}=\sum_k A_k^*A_k.
+  \]
+  For even $p = 2m \ge 2$, with $\|A\|_{S_p}^p = \operatorname{Tr}((A^*A)^m)$,
+  \begin{align}
+    (\E\|X\|_{S_p}^p)^{1/p}
+    &\le \sqrt{p-1}\left(
+    \frac{\operatorname{Tr}V_{\rm out}^m+
+    \operatorname{Tr}V_{\rm in}^m}{2}\right)^{1/p}
+    \label{E:finite-gaussian-average}\\
+    &\le \sqrt{p-1}\max\left(
+    \|V_{\rm out}^{1/2}\|_{S_p},\|V_{\rm in}^{1/2}\|_{S_p}\right).
+    \label{E:finite-gaussian-maximum}
+  \end{align}
+  The constants are independent of $o,n,N$. The first inequality is an equality
+  at $p = 2$. Empty or zero families give the zero identity.
+\end{proposition}
+
+\begin{proof}
+  First suppose $B_k$ are Hermitian and put $Y = \sum_k g_kB_k$ and $D = \sum_k
+  B_k^2$. All polynomial moments are finite because Gaussian decay dominates
+  every fixed power. Componentwise integration by parts against the product
+  Gaussian density gives $\E[g_kP(g)] = \E[\partial_kP(g)]$, with zero boundary
+  terms. It applies to complex polynomials through their real and imaginary
+  parts; absolute polynomial integrability justifies Fubini.
+
+  For $m \ge 2$, put $F = \E\operatorname{Tr}Y^{2m}$ and $L = 2m-2$. Write
+  $\operatorname{Tr}Y^{2m} = \sum_k g_k \operatorname{Tr}(B_kY^{2m-1})$ and
+  differentiate the $2m-1$ factors in their order. This gives exactly
+  \[
+    F=\sum_k\sum_{q=0}^{L}
+    \E\operatorname{Tr}(B_kY^qB_kY^{L-q}).
+  \]
+  The eigenbasis calculation above shows these traces are real. The
+  differentiated polynomial is real by conjugation and trace cyclicity. No
+  derivative of a spectral absolute value or measurable choice of an eigenbasis
+  is needed. The two trace bounds give
+  \begin{align*}
+    F&\le (2m-1)\E\operatorname{Tr}(D|Y|^{2m-2})\\
+    &\le (2m-1)(\operatorname{Tr}D^m)^{1/m}
+    \E(\operatorname{Tr}|Y|^{2m})^{(m-1)/m}\\
+    &\le (2m-1)(\operatorname{Tr}D^m)^{1/m}F^{(m-1)/m}.
+  \end{align*}
+  Here $\operatorname{Tr}|Y|^{2m} = \operatorname{Tr}Y^{2m}$, and the last
+  inequality is the expectation bound in Lemma~\ref{L:gaussian-scalar-powers}.
+  If $F = 0$ the conclusion is immediate. Otherwise divide by its positive
+  fractional power and raise to $m$ to obtain
+  \begin{equation}\label{E:finite-hermitian-gaussian}
+    \E\operatorname{Tr}Y^{2m} \le (2m-1)^m\operatorname{Tr}D^m.
+  \end{equation}
+  For $m = 1$, independence gives directly $\E\operatorname{Tr}Y^2 =
+  \sum_k\operatorname{Tr}B_k^2 = \operatorname{Tr}D$, proving the same formula
+  as equality.
+
+  For rectangular $A_k$, use the Hermitian dilation
+  \[
+    B_k=\begin{pmatrix}0&A_k\\A_k^*&0\end{pmatrix},\qquad
+    Y=\begin{pmatrix}0&X\\X^*&0\end{pmatrix},\qquad
+    D=\operatorname{diag}(V_{\rm out},V_{\rm in}).
+  \]
+  Finite entrywise summation proves $\operatorname{Tr}(UV) =
+  \operatorname{Tr}(VU)$ for compatible rectangular matrices. Since $(XX^*)^m =
+  X(X^*X)^{m-1}X^*$, it follows that
+  \[
+    \operatorname{Tr}Y^{2m}=2\operatorname{Tr}((X^*X)^m),\qquad
+    \operatorname{Tr}D^m=\operatorname{Tr}V_{\rm out}^m+
+    \operatorname{Tr}V_{\rm in}^m.
+  \]
+  Substitute in~\eqref{E:finite-hermitian-gaussian}, divide by two and take the
+  $p$th root. This proves~\eqref{E:finite-gaussian-average}. For positive $V$,
+  spectral diagonalization gives $\|V^{1/2}\|_{S_p}^p = \operatorname{Tr}V^m$,
+  and the average of two nonnegative numbers is bounded by their maximum. At $p
+  = 2$, $\E\operatorname{Tr}X^*X = \operatorname{Tr}V_{\rm in} =
+  \operatorname{Tr}V_{\rm out}$, proving the claimed equality. This proves
+  Proposition~\ref{P:finite-gaussian-matrix}.
+\end{proof}
+
+Both variance directions are needed: the row-matrix example in
+No-go~\ref{P:nogo-23} rules out a dimension-independent estimate that
+keeps only one of them.
+
+
+\LeanMarker{R:gaussian-one-variance-test}
+\begin{remark}[Both variance directions are necessary]
+  \label{R:gaussian-one-variance-test}
+  Let $n = 16$ and $A_k = e_k^{\mathsf{T}}$ be the coordinate row matrices. The
+  only nonzero singular value of $X$ is $(\sum_k g_k^2)^{1/2}$. Gaussian
+  integration by parts gives $\E g^2 = 1$, $\E g^4 = 3$, and hence
+  \[
+    \E\|X\|_{S_4}^4=3n+n(n-1)=n(n+2)=288.
+  \]
+  Here $V_{\rm out} = n$ and $V_{\rm in} = I_n$. Keeping only the input variance
+  in~\eqref{E:finite-gaussian-maximum} would give fourth power
+  $9\operatorname{Tr}I_n^2 = 144$, which is false. Transposing the family
+  refutes the corresponding output-only bound. The average and maximum bounds
+  have fourth powers $1224$ and $2304$, respectively. This finite example
+  asserts nothing about a specialized wave estimate.
+\end{remark}
+
+\subsection{Whole-space cutoffs through an auxiliary periodic space}
+
+Use the unitary Fourier transform with $c_d = (2\pi)^{-d/2}$ and $\Lambda =
+(1-\Delta)^{1/2}$. For real $r$, the norm on $H^r(\R^d)$ is
+$\|\langle\xi\rangle^r\widehat{u}\|_2$. The deterministic cutoff arguments allow
+any smoothing order $\gamma > 0$. Fix real $\sigma$ and a real compact smooth
+$\chi$. Singular values $s_j$, $j \ge 1$, are counted with multiplicity, with
+zeros appended when necessary. For compact $K$, put $\|K\|_{S_p}^p = \sum_j
+s_j(K)^p$.
+
+\begin{lemma}[Cutoff factorization]\label{L:cutoff-factorization}
+  Choose a cube $Q_L = (-L/2,L/2)^d$ containing $\operatorname{supp}\chi$ in its
+  interior, and a real $\psi \in C_c^\infty(Q_L)$ equal to one near
+  $\operatorname{supp}\chi$. On the auxiliary torus $\mathbb{T}_L$ use Lebesgue
+  measure and the orthonormal basis
+  \[
+    e_k(x)=L^{-d/2}e^{i\kappa_k\cdot x},\qquad
+    \kappa_k=2\pi k/L,\qquad k \in \mathbb{Z}^d,
+  \]
+  with $\|v\|_{H^r(\mathbb{T}_L)}^2 = \sum_k\langle\kappa_k\rangle^{2r}|v_k|^2$.
+  Periodization of $\psi u$ and multiplication of a periodic function by $\chi$
+  extend to bounded maps
+  \begin{equation}\label{E:cutoff-periodic-maps}
+    \mathcal{P}_\psi:H^r(\R^d)\to H^r(\mathbb{T}_L),\qquad
+    \mathcal{E}_\chi:H^r(\mathbb{T}_L)\to H^r(\R^d)
+  \end{equation}
+  for every real $r$. If $\mathcal{I}_\gamma$ denotes the identity inclusion
+  from $H^{\sigma+\gamma}(\mathbb{T}_L)$ to $H^\sigma(\mathbb{T}_L)$, then
+  \begin{equation}\label{E:cutoff-whole-space-recovery}
+    \mathcal{E}_\chi\mathcal{I}_\gamma\mathcal{P}_\psi u=\chi u,
+    \qquad u \in H^{\sigma+\gamma}(\R^d).
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  For $x,y \in \R^d$ and real $r$, the elementary inequality $\langle x\rangle
+  \le \sqrt{2}\langle y\rangle\langle x-y\rangle$ gives
+  \begin{equation}\label{E:cutoff-peetre}
+    \left(\frac{\langle x\rangle}{\langle y\rangle}\right)^r
+    \le 2^{|r|/2}\langle x-y\rangle^{|r|}.
+  \end{equation}
+  For negative $r$, interchange $x,y$ before raising to $|r|$. Integration by
+  parts gives rapid decay of the Fourier transform of every compact smooth
+  cutoff. For any lattice spacing $a > 0$ and $N > d$,
+  \begin{equation}\label{E:cutoff-lattice-sum}
+    \sup_y\sum_{k\in\mathbb{Z}^d}\langle y-ak\rangle^{-N}<\infty.
+  \end{equation}
+  Indeed, translate $y$ into a centered lattice cell, where $|y| \le a\sqrt
+  d/2$. For $|k| \ge \sqrt d$ we have $|y-ak| \ge a|k|/2$. The remaining terms
+  are finite; the tail converges by dyadic lattice counting, since there are at
+  most $C_d2^{jd}$ lattice points in the $j$th shell in $k$. More precisely, for
+  $|k| \ge \sqrt d$, the preceding inequality gives
+  \[
+    \langle y-ak\rangle^{-N}
+    \le \max(1,2/a)^N\langle k\rangle^{-N}.
+  \]
+  The comparison-series terms are bounded by $2^{-jN}$ on each dyadic $k$-shell.
+  Thus, its convergent geometric sum carries constants depending on $a,d,N$, as
+  does~\eqref{E:cutoff-lattice-sum}.
+
+  We use the mixed Schur bound for a kernel whose absolute row and column
+  integrals are bounded by $M_1,M_2$. Weighted Cauchy--Schwarz at each output
+  point, followed by Tonelli, bounds its squared operator norm by $M_1M_2$. The
+  same proof works with counting measure on one side and Lebesgue measure on the
+  other, first on dense finite or compact inputs.
+
+  For Schwartz $u$, the $k$th coefficient of its cutoff periodization is
+  \[
+    (\mathcal{P}_\psi u)_k
+    = L^{-d/2}\int\psi(x)u(x)e^{-i\kappa_k\cdot x}\ud x
+    = L^{-d/2}\int\widehat{\psi}(\kappa_k-\xi)\widehat{u}(\xi)\ud\xi.
+  \]
+  The $c_d$ from Fourier inversion cancels the $c_d^{-1}$ in the ordinary
+  Fourier integral of $\psi$. After weighting, its exact kernel is
+  \[
+    L^{-d/2}\left(\frac{\langle\kappa_k\rangle}{\langle\xi\rangle}\right)^r
+    \widehat{\psi}(\kappa_k-\xi).
+  \]
+  For a finite torus polynomial $v$, the normalized Fourier kernel of
+  $\mathcal{E}_\chi v$ is
+  \[
+    L^{-d/2}\left(\frac{\langle\xi\rangle}{\langle\kappa_k\rangle}\right)^r
+    \widehat{\chi}(\xi-\kappa_k).
+  \]
+  There is no additional $c_d$ in this kernel. By~\eqref{E:cutoff-peetre}, each
+  is bounded in absolute value by a rapidly decreasing function of its frequency
+  difference, times a fixed constant. One Schur quantity is its $L^1$ integral
+  and the other a uniformly translated lattice sum, bounded
+  by~\eqref{E:cutoff-lattice-sum}. This proves~\eqref{E:cutoff-periodic-maps},
+  including negative $r$.
+
+  Smooth compact approximation in weighted Fourier $L^2$ proves Schwartz density
+  on $\R^d$; weighted sequence truncation proves polynomial density on the
+  torus. Hence, these maps extend uniquely. Their distributional meanings follow
+  by testing against compact smooth functions and density: each periodic
+  coefficient pairs the distribution with a compact smooth test. No point
+  sampling of a rough Fourier function is used. The same full-Lebesgue Schur
+  argument proves smooth compact multiplication bounded on every whole-space
+  $H^r$.
+
+  For Schwartz $u$, the periodic Fourier series of $\psi u$ converges smoothly
+  on the cube. Since $\chi\psi = \chi$ and $\chi$ is supported strictly inside
+  the cube, multiplying this series by $\chi$ recovers $\chi u$ with no alias
+  term. Both sides are bounded from $H^{\sigma+\gamma}(\R^d)$ to
+  $H^\sigma(\R^d)$, using the just-proved maps, the inclusion and smooth
+  multiplication. Density proves \eqref{E:cutoff-whole-space-recovery} on that
+  full domain. This proves Lemma~\ref{L:cutoff-factorization}.
+\end{proof}
+
+\begin{proposition}[Whole-space cutoff singular values]\label{P:cutoff-singular-values}
+  For real $\sigma$ and $\gamma > 0$, the initially Schwartz-defined operator
+  $K_{\chi,\sigma,\gamma} = \Lambda^\sigma\chi\Lambda^{-\sigma-\gamma}$ extends
+  uniquely to a compact operator on $L^2(\R^d)$, and
+  \begin{equation}\label{E:cutoff-singular-values}
+    s_j(K_{\chi,\sigma,\gamma})
+    \le C_{\chi,\sigma,\gamma,d}j^{-\gamma/d},\qquad j \ge 1.
+  \end{equation}
+  Consequently, $K_{\chi,\sigma,\gamma} \in S_p$ whenever $p \ge 1$ and $p\gamma
+  > d$.
+\end{proposition}
+
+\begin{proof}
+  The zero cutoff is immediate. Fix one cube and cutoff pair $L,\psi$ as in
+  Lemma~\ref{L:cutoff-factorization}. Its recovery identity gives
+  \[
+    K_{\chi,\sigma,\gamma}
+    =\Lambda^\sigma\mathcal{E}_\chi\mathcal{I}_\gamma
+    \mathcal{P}_\psi\Lambda^{-\sigma-\gamma}.
+  \]
+  In the weighted torus coordinates, $\mathcal{I}_\gamma$ is diagonal with
+  entries $\langle\kappa_k\rangle^{-\gamma}$. Let $Q_n$ retain $|k|_\infty \le
+  n$. Its rank is $(2n+1)^d$, and
+  \[
+    \|(1-Q_n)\mathcal{I}_\gamma\|
+    \le [1+(2\pi/L)^2(n+1)^2]^{-\gamma/2}\longrightarrow0.
+  \]
+  Replacing the inclusion by $Q_n\mathcal{I}_\gamma$ gives finite-rank $K_n$
+  converging in norm to $K_{\chi,\sigma,\gamma}$. This proves compactness:
+  finite-dimensional images have finite nets of each positive radius, and norm
+  approximation transfers those nets to the limiting image of the unit ball.
+
+  Put
+  \[
+    M=\|\mathcal{E}_\chi:H^\sigma(\mathbb{T}_L)\to H^\sigma(\R^d)\|
+    \|\mathcal{P}_\psi:H^{\sigma+\gamma}(\R^d)
+    \to H^{\sigma+\gamma}(\mathbb{T}_L)\|.
+  \]
+  The outer Bessel maps are unitary. For $j \ge 3^d$, choose $n = \lfloor
+  j^{1/d}/4\rfloor$. Then
+  \[
+    (2n+1)^d\le(j^{1/d}/2+1)^d<j,\qquad
+    \|K-K_n\|\le M(2L/\pi)^\gamma j^{-\gamma/d}.
+  \]
+  The second estimate follows from $n+1 > j^{1/d}/4$. For a compact operator,
+  every rank less than $j$ approximation $F$ satisfies $s_j(K) \le \|K-F\|$: the
+  span of the first $j$ right singular vectors contains a unit vector in $\ker
+  F$, on which $\|K\cdot\| \ge s_j(K)$. If $s_j(K) = 0$ the inequality is
+  immediate. For $j < 3^d$ use $s_j(K) \le \|K\| \le M$. Thus, one may take
+  \[
+    C_{\chi,\sigma,\gamma,d}
+    =M\max(3^\gamma,(2L/\pi)^\gamma).
+  \]
+  Finally, $\sum_j j^{-p\gamma/d}$ converges for $p\gamma > d$. This proves
+  Proposition~\ref{P:cutoff-singular-values}.
+\end{proof}
+
+No uniform support-radius constant or endpoint necessity is asserted in
+Proposition~\ref{P:cutoff-singular-values}. The periodic inclusion was only a
+factor of the recovered whole-space operator.
+
+\subsection{Balanced adjoints and localized variance envelopes}
+
+For $E = H^{1/2}(\R^d)\times H^{-1/2}(\R^d)$ use the physical unitary
+coordinates
+\[
+  J_0(u,v)=(\Lambda^{1/2}u,\Lambda^{-1/2}v),\qquad
+  H=L^2(\R^d;\mathbb{C}^2).
+\]
+The frequency map $J$ in Section~\ref{S:wave-variance} is
+$(\mathcal{F}\oplus\mathcal{F})J_0$. Let $D_\chi$ multiply both phase entries
+and define
+\begin{align}
+  P_\chi&=J_0D_\chi J_0^{-1},\qquad
+  D_\gamma=\operatorname{diag}(\Lambda^{-\gamma},\Lambda^{-\gamma}),
+  \label{E:compact-balanced-cutoff}\\
+  K_{\rm out}&=P_\chi D_\gamma,\qquad
+  K_{\rm in}=P_\chi^*D_\gamma.
+  \label{E:compact-two-factors}
+\end{align}
+
+\begin{proposition}[Both compact envelopes]\label{P:compact-two-envelopes}
+  The operator $P_\chi$ is bounded. For the unitary swap $U(v,w) = (w,v)$,
+  \[
+    P_\chi^*=UP_\chi U,\qquad K_{\rm in}=UK_{\rm out}U.
+  \]
+  Both factors are compact and have equal $S_p$ norms for $p \ge 1$, $p\gamma >
+  d$. For $p \ge 2$, $p\gamma > d$, the positive compact operators
+  \[
+    B_{\rm out}=P_\chi D_\gamma^2P_\chi^*=K_{\rm out}K_{\rm out}^*,
+    \qquad B_{\rm in}=P_\chi^*D_\gamma^2P_\chi=K_{\rm in}K_{\rm in}^*
+  \]
+  satisfy
+  \begin{equation}\label{E:compact-envelope-traces}
+    \operatorname{Tr}B_{\rm out}^{p/2}
+    =\operatorname{Tr}B_{\rm in}^{p/2}=\|K_{\rm out}\|_{S_p}^p.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  Put $A_\sigma = \Lambda^\sigma\chi\Lambda^{-\sigma}$. The full-Lebesgue Schur
+  argument in Lemma~\ref{L:cutoff-factorization} shows boundedness for every
+  real $\sigma$. On Schwartz functions, self-adjointness of real multiplication
+  and of the Bessel powers gives $A_\sigma^* = A_{-\sigma}$. Density and
+  boundedness extend this to the Hilbert adjoints. No evenness of $\chi$ is
+  needed. Thus,
+  \[
+    P_\chi=\operatorname{diag}(A_{1/2},A_{-1/2}),\qquad
+    P_\chi^*=\operatorname{diag}(A_{-1/2},A_{1/2})=UP_\chi U.
+  \]
+  The swap commutes with $D_\gamma$, giving the claimed factor identity. The
+  blocks of $K_{\rm out}$ are $K_{\chi,1/2,\gamma}$ and $K_{\chi,-1/2,\gamma}$.
+  Proposition~\ref{P:cutoff-singular-values} gives compactness and $S_p$
+  membership. The singular values of their direct sum form the multiset union,
+  so
+  \[
+    \|K_{\rm out}\|_{S_p}^p
+    =\|K_{\chi,1/2,\gamma}\|_{S_p}^p+
+    \|K_{\chi,-1/2,\gamma}\|_{S_p}^p.
+  \]
+  Unitary conjugation preserves them. Finally, the positive eigenvalues of
+  $KK^*$ and $K^*K$ agree with multiplicity: on an eigenspace with eigenvalue
+  $\lambda > 0$, the maps $K/\sqrt\lambda$ and $K^*/\sqrt\lambda$ are inverse
+  isometries. Zero eigenvalues contribute nothing to the trace. Summing these
+  scalar powers proves~\eqref{E:compact-envelope-traces}. This proves
+  Proposition~\ref{P:compact-two-envelopes}.
+\end{proof}
+
+We use the usual positive square root of a bounded positive operator and the
+spectral decomposition of compact positive operators. The needed order argument
+is recorded explicitly.
+
+\begin{lemma}[Compact positive order and trace]\label{L:compact-positive-order}
+  If $A,B$ are bounded self-adjoint operators with $0 \le A \le B$ and $B$
+  compact positive, then $A$ is compact and its ordered eigenvalues satisfy
+  $\lambda_j(A) \le \lambda_j(B)$, including zero padding. Consequently, for $t
+  \ge 1$ with finite $\operatorname{Tr}B^t$,
+  \begin{equation}\label{E:compact-positive-trace}
+    \operatorname{Tr}A^t\le\operatorname{Tr}B^t.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  Let $Q_n$ be finite spectral projections of $B$ whose tails tend to zero in
+  norm. Then
+  \[
+    \|(1-Q_n)A^{1/2}\|^2
+    =\|(1-Q_n)A(1-Q_n)\|
+    \le\|(1-Q_n)B(1-Q_n)\|\longrightarrow0.
+  \]
+  Thus, $A^{1/2}$ is a norm limit of finite-rank operators and is compact, as is
+  $A$. For compact positive operators, the max-min formula for $\lambda_j$
+  follows in an eigenbasis: the span of the first $j$ eigenvectors gives the
+  lower bound for the supremum over $j$-dimensional subspaces of their minimum
+  Rayleigh quotient, while every such subspace meets the orthogonal complement
+  of the first $j-1$ eigenvectors, giving the upper bound. Compare the Rayleigh
+  quotients of $A$ and $B$ to obtain the eigenvalue inequality. Sum the ordered
+  scalar powers to prove \eqref{E:compact-positive-trace}. No inequality $A^t
+  \le B^t$ is asserted. This proves Lemma~\ref{L:compact-positive-order}.
+\end{proof}
+
+\begin{proposition}[Localized finite variance bounds]\label{P:localized-finite-variance}
+  Suppose finitely many bounded operators $Z_\ell$ on $H$ satisfy
+  \begin{equation}\label{E:localized-finite-hypotheses}
+    P_\chi Z_\ell=Z_\ell=Z_\ell P_\chi,\qquad
+    V_{\rm out}:=\sum_\ell Z_\ell Z_\ell^*\le CD_\gamma^2,\qquad
+    V_{\rm in}:=\sum_\ell Z_\ell^*Z_\ell\le CD_\gamma^2,
+  \end{equation}
+  with $C \ge 0$. If $p \ge 2$ and $p\gamma > d$, every $Z_\ell$ is compact in
+  $S_p$, the two variances are compact in $S_{p/2}$, and
+  \begin{align}
+    V_{\rm out}&\le CB_{\rm out},\qquad V_{\rm in}\le CB_{\rm in},
+    \label{E:localized-two-envelopes}\\
+    \operatorname{Tr}V_{\rm out}^{p/2},\quad
+    \operatorname{Tr}V_{\rm in}^{p/2}
+    &\le C^{p/2}\|K_{\rm out}\|_{S_p}^p.
+    \label{E:localized-trace-bounds}
+  \end{align}
+\end{proposition}
+
+\begin{proof}
+  Left localization gives $V_{\rm out} = P_\chi V_{\rm out}P_\chi^*$. Apply
+  positive congruence to the output bound
+  in~\eqref{E:localized-finite-hypotheses} to get $V_{\rm out} \le CP_\chi
+  D_\gamma^2P_\chi^* = CB_{\rm out}$. Right localization similarly gives $V_{\rm
+  in} = P_\chi^*V_{\rm in}P_\chi \le CB_{\rm in}$.
+  Proposition~\ref{P:compact-two-envelopes} and
+  Lemma~\ref{L:compact-positive-order} prove compactness and the two trace
+  bounds with $t = p/2$. If $C = 0$, both variances and every $Z_\ell$ vanish,
+  so all assertions are immediate.
+
+  For each $\ell$, $Z_\ell Z_\ell^* \le V_{\rm out}$ is compact by the same
+  lemma. Its finite spectral projections $Q_n$ give $\|(1-Q_n)Z_\ell\|^2 =
+  \|(1-Q_n)Z_\ell Z_\ell^*(1-Q_n)\| \to 0$. Hence, $Z_\ell$ is compact. Its
+  singular values squared are the nonzero eigenvalues of $Z_\ell Z_\ell^*$.
+  Comparing with $V_{\rm out}$ and summing proves $Z_\ell \in S_p$ with
+  $\|Z_\ell\|_{S_p}^p \le \operatorname{Tr}V_{\rm out}^{p/2}$. This proves
+  Proposition~\ref{P:localized-finite-variance}.
+\end{proof}
+
+The two localization identities are hypotheses here; a noise coefficient family
+has not yet been shown to satisfy them. In particular, $P_\chi$ is not assumed
+self-adjoint or a projection.
+
+\begin{corollary}[Finite Gaussian operators]\label{C:finite-gaussian-operators}
+  Under~\eqref{E:localized-finite-hypotheses}, let $g_\ell$ be independent real
+  standard Gaussians. For even $p \ge 2$ with $p\gamma > d$, the finite sum $X =
+  \sum_\ell g_\ell Z_\ell$ satisfies
+  \begin{equation}\label{E:finite-gaussian-operator-bound}
+    (\E\|X\|_{S_p}^p)^{1/p}
+    \le\sqrt{p-1}\sqrt C\|K_{\rm out}\|_{S_p}.
+  \end{equation}
+  Its extended norm is measurable, with finite expectation as displayed.
+\end{corollary}
+
+\begin{proof}
+  Choose finite-rank orthogonal projections $\Pi_n$ from a countable orthonormal
+  basis of $H$, with $\Pi_n \to I$ strongly. Put $Z_{\ell,n} = \Pi_nZ_\ell\Pi_n$
+  and $X_n = \sum_\ell g_\ell Z_{\ell,n}$, viewed as matrices on
+  $\operatorname{ran}\Pi_n$. Their output variance satisfies
+  \[
+    \sum_\ell\Pi_nZ_\ell\Pi_nZ_\ell^*\Pi_n
+    \le\Pi_nV_{\rm out}\Pi_n,
+  \]
+  since the difference is $\sum_\ell\Pi_nZ_\ell(1-\Pi_n)Z_\ell^*\Pi_n \ge 0$.
+  The input inequality is identical with adjoints interchanged. Compact max-min
+  also gives $\lambda_j(\Pi_nV\Pi_n) \le \lambda_j(V)$ for positive compact $V$,
+  since Rayleigh subspaces inside $\operatorname{ran}\Pi_n$ form a subset of all
+  subspaces. Thus, both variance trace powers of these matrices are bounded by
+  $C^{p/2}\|K_{\rm out}\|_{S_p}^p$.
+
+  Proposition~\ref{P:finite-gaussian-matrix} applies to these finite complex
+  matrices, the same real independent Gaussians and the even $p$. Taking the
+  average of the two already bounded trace powers gives
+  \begin{equation}\label{E:finite-gaussian-compression-bound}
+    \E\|X_n\|_{S_p}^p
+    \le(p-1)^{p/2}C^{p/2}\|K_{\rm out}\|_{S_p}^p.
+  \end{equation}
+  No factor two is added by this average.
+
+  For each Gaussian coordinate vector, $X$ is a finite sum of compact operators.
+  Strong convergence of $\Pi_n$ implies $\Pi_nX\Pi_n \to X$ in operator norm:
+  approximate $X$ by a finite-rank $F$, use uniform strong convergence on the
+  finite-dimensional ranges of $F$ and $F^*$, and control the remainder using
+  $\|\Pi_n\| \le 1$. Singular values are norm-Lipschitz. Indeed, their formula
+  \[
+    s_j(A)=\inf_{\dim L<j}
+    \sup_{v\in L^\perp,\ \|v\|=1}\|Av\|
+  \]
+  follows from compact singular vectors and gives $s_j(A) \le s_j(B)+\|A-B\|$,
+  and the reverse bound by interchanging $A,B$. Hence, $s_j(X_n) \to s_j(X)$ for
+  each $j$. Fatou for the nonnegative singular-value sum gives $\|X\|_{S_p}^p
+  \le \liminf_n\|X_n\|_{S_p}^p$, allowing extended infinity. These variables are
+  measurable: the finite Gaussian coordinate map into operators is
+  norm-continuous, each singular value is continuous, and the norm power is
+  their nonnegative measurable sum. Fatou in probability
+  and~\eqref{E:finite-gaussian-compression-bound} prove the bound and
+  almost-sure finiteness. No $S_p$-Bochner convergence is assumed. This proves
+  Corollary~\ref{C:finite-gaussian-operators}.
+\end{proof}
+
+\subsection{A nonzero witness and the need for a compact cutoff}
+
+Proposition~\ref{P:localized-finite-variance} and
+Corollary~\ref{C:finite-gaussian-operators} assume
+\eqref{E:localized-finite-hypotheses}. We check that these hypotheses admit a
+nonzero operator, and then test what is lost without the compact cutoff.
+
+\begin{proposition}[Whole-space cutoff tests]\label{P:cutoff-boundary-tests}
+  If $\chi$ equals one on a nonempty open set, there is a nonzero rank-one
+  operator satisfying~\eqref{E:localized-finite-hypotheses} with a finite common
+  $C$. On the other hand, $\Lambda^{-\gamma}$ on $L^2(\R^d)$ is not compact for
+  any $\gamma > 0$.
+\end{proposition}
+
+\begin{proof}
+  Choose nonzero real $v,f \in C_c^\infty$ supported inside the plateau, and put
+  $\widetilde{v} = (\Lambda^{1/2}v,0)$ and $\widetilde{w} =
+  (\Lambda^{-1/2}f,0)$. Both are Schwartz. The block formulas give
+  $P_\chi\widetilde{v} = \widetilde{v}$ and $P_\chi^*\widetilde{w} =
+  \widetilde{w}$. Therefore, $Zx = \langle x,\widetilde{w}\rangle\widetilde{v}$
+  satisfies $P_\chi Z = Z = ZP_\chi$. Its two variances are
+  $\|\widetilde{w}\|^2\widetilde{v}\otimes\widetilde{v}^*$ and
+  $\|\widetilde{v}\|^2\widetilde{w}\otimes\widetilde{w}^*$. For any Schwartz $a$
+  and any $x \in H$,
+  \[
+    |\langle x,a\rangle|
+    =|\langle D_\gamma x,D_\gamma^{-1}a\rangle|
+    \le\|D_\gamma x\|\|D_\gamma^{-1}a\|.
+  \]
+  The inverse multiplier is applied only to Schwartz $a$, so it belongs to $H$.
+  Apply the inequality with $a = \widetilde{v},\widetilde{w}$ to obtain the two
+  variance bounds with
+  \[
+    C=\max\left(
+    \|\widetilde{w}\|^2\|D_\gamma^{-1}\widetilde{v}\|^2,
+    \|\widetilde{v}\|^2\|D_\gamma^{-1}\widetilde{w}\|^2\right)<\infty.
+  \]
+  This witness uses a plateau; no nonzero family is inferred for every compact
+  cutoff or identified with a source family.
+
+  For noncompactness, take $f$ with nonzero Gaussian Fourier transform. Then $g
+  = \Lambda^{-\gamma}f$ is a nonzero Schwartz function. The images of translates
+  of $f$ are the same translates of $g$. With $T_hg(x) = g(x-h)$, Plancherel
+  gives
+  \[
+    \langle T_hg,g\rangle
+    =\int e^{-i\xi\cdot h}|\widehat{g}(\xi)|^2\ud\xi
+    =c_d^{-1}\widehat{|\widehat{g}|^2}(h).
+  \]
+  This tends to zero because $|\widehat{g}|^2$ is Schwartz. Choose a large
+  spacing so that any two distinct translates in the resulting sequence have
+  image distance at least $\|g\|$. The input norms are identical, but the images
+  have no Cauchy subsequence. This disproves compactness. This proves
+  Proposition~\ref{P:cutoff-boundary-tests}.
+\end{proof}
+
+The translation obstruction is restated in No-go~\ref{P:nogo-24}:
+frequency decay alone does not replace compact spatial localization.
+
+
+Thus, the choice $\chi = 1$ cannot be substituted into the compact-cutoff
+argument. No necessity at the Schatten endpoint $p\gamma = d$ is asserted. The
+results concern finite matrices and conditional finite operator sums.
+Coefficient localization, compact variance tails, an infinite Gaussian series
+and time regularity are proved in Section~\ref{S:actual-operator-driver}; source
+and Young identification are proved in
+Sections~\ref{S:source-driver-convergence}--\ref{S:constant-phase-young}. They
+are not consequences of the finite comparison alone.
+
+===== END old-module.txt =====
+
+===== BEGIN new-module.txt =====
+{"source_path": "notes/integrated_compact_gaussian.tex", "source_revision": "105845e78f20520367e0d1c9ce22070615661f21", "selection": "WHOLE_FILE", "role": "ASSIGNED NEW complete module; exactly 10 proof pairs.", "bytes": 46837, "sha256": "7bef7e3d85639bf444e529060fecf92c52eab0ed4a234c4068f3061b7097b003"}
+===== RAW UTF8 SOURCE =====
+\section{Finite Gaussian moments and whole-space Sobolev compactness}
+\label{S:compact-gaussian}
+
+We prove the finite Gaussian and compact-cutoff estimates needed to construct
+the wave operator path. All traces and Schatten norms in this section are
+unnormalized. The spatial states remain on $\R^d$, $d \in \{1,2,3\}$. Here $p$
+is an auxiliary Schatten and Gaussian-moment index. The auxiliary periodic space
+below is used only to factor a compactly supported multiplication operator. No
+infinite Gaussian series or time path is constructed in this section.
+
+\subsection{Finite Gaussian matrices with both variance powers}
+
+\LeanMarker{L:gaussian-scalar-powers}
+\begin{lemma}[Scalar power estimates]\label{L:gaussian-scalar-powers}
+  For $0 < \theta < 1$ and $u,v \ge 0$,
+  \begin{equation}\label{E:gaussian-weighted-power}
+    u^\theta v^{1-\theta} \le \theta u+(1-\theta)v.
+  \end{equation}
+  Consequently, if $L > 0$ and $0 \le q \le L$ are integers, then for real
+  $x,y$,
+  \begin{equation}\label{E:gaussian-integer-power}
+    |x|^q|y|^{L-q}
+    \le \frac qL|x|^L+\frac{L-q}L|y|^L.
+  \end{equation}
+  For nonnegative finite sequences, the usual H\"older inequality holds with
+  exponents $m$ and $m/(m-1)$, $m > 1$. If $Z \ge 0$ has finite expectation $F$
+  and $0 < r < 1$, then $\E Z^r \le F^r$.
+\end{lemma}
+
+\begin{proof}
+  We first prove the weighted scalar inequality and its integer-power
+  consequence. We then use normalization to obtain the two remaining bounds.
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove the two scalar inequalities.
+  If $v > 0$, divide~\eqref{E:gaussian-weighted-power} by $v$ and put $t = u/v$.
+  After division, the desired inequality is $t^\theta \le \theta t+1-\theta$.
+  Thus, it suffices to show that the difference of the right and left sides is
+  nonnegative.
+  The function $\theta t+1-\theta-t^\theta$ has derivative
+  $\theta(1-t^{\theta-1})$. Since $\theta-1 < 0$, this derivative is negative
+  for $0 < t < 1$ and positive for $t > 1$. The function therefore has minimum
+  zero at $t = 1$. Continuity covers $t = 0$; if $v = 0$ the inequality is
+  immediate.
+
+  For $0 < q < L$, apply this with $u = |x|^L$, $v = |y|^L$ and $\theta =
+  q/L$. The left side becomes $|x|^q|y|^{L-q}$, and the coefficients on the
+  right are $q/L$ and $(L-q)/L$. The endpoint cases $q = 0,L$ are identities,
+  with the ordinary integer convention $a^0 = 1$.
+
+  \medskip
+  \noindent\textit{Step 2.~}We prove the finite sequence inequality.
+  To prove finite H\"older, divide the two sequences by their respective
+  $\ell^m$ and $\ell^{m/(m-1)}$ norms. If either norm vanishes, the result is
+  immediate. Apply~\eqref{E:gaussian-weighted-power} with $\theta = 1/m$ to the
+  corresponding normalized powers and sum; the sum of products is at most one.
+
+  \medskip
+  \noindent\textit{Step 3.~}We prove the expectation bound.
+  Finally, $F = 0$ gives $Z = 0$ almost surely. If $F >
+  0$, apply \eqref{E:gaussian-weighted-power} to $u = Z/F$, $v = 1$ and $\theta
+  = r$, and integrate. The right side has expectation one.
+  This proves
+  Lemma~\ref{L:gaussian-scalar-powers}.
+\end{proof}
+
+\LeanMarker{L:gaussian-trace-bounds}
+\begin{lemma}[Two Hermitian trace bounds]\label{L:gaussian-trace-bounds}
+  Let $B,Y$ be finite Hermitian matrices, $m \ge 2$ an integer, and $L = 2m-2$.
+  For integers $0 \le q \le L$,
+  \begin{equation}\label{E:gaussian-trace-word}
+    \operatorname{Re}\operatorname{Tr}(BY^qBY^{L-q})
+    \le \operatorname{Tr}(B^2|Y|^L).
+  \end{equation}
+  If $D \ge 0$ is Hermitian, then
+  \begin{equation}\label{E:gaussian-trace-holder}
+    \operatorname{Tr}(D|Y|^{2m-2})
+    \le (\operatorname{Tr}D^m)^{1/m}
+    (\operatorname{Tr}|Y|^{2m})^{(m-1)/m}.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We work in an eigenbasis of $Y$ throughout. The first bound follows by
+  comparing scalar powers; the second follows by finite H\"older.
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound the trace word.
+  Diagonalize $Y$, with real eigenvalues $\lambda_i$, and write $b_{ij}$ for the
+  entries of $B$ in that basis. Hermitian symmetry gives $b_{ji} =
+  \overline{b_{ij}}$. The trace word is the real sum
+  \[
+    \sum_{i,j}|b_{ij}|^2\lambda_j^q\lambda_i^{L-q}.
+  \]
+  To obtain this sum, the $i$th diagonal entry of the product is summed over
+  the intermediate index $j$. The diagonal powers of $Y$ contribute
+  $\lambda_j^q$ and $\lambda_i^{L-q}$, and $b_{ij}b_{ji} = |b_{ij}|^2$. All
+  these terms are real.
+  Bound each product by its absolute value and use
+  \eqref{E:gaussian-integer-power}. After interchanging $i,j$, the two resulting
+  sums agree because $|b_{ij}| = |b_{ji}|$. Each equals
+  $\sum_{i,j}|b_{ij}|^2|\lambda_i|^L = \operatorname{Tr}(B^2|Y|^L)$. The two
+  weights sum to one, proving \eqref{E:gaussian-trace-word}. No commutation of
+  $B$ and $Y$ is used.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound the trace involving $D$.
+  In the same basis put $d_i = D_{ii} \ge 0$. If $\theta_j$ are the nonnegative
+  eigenvalues of $D$, a unitary change of basis gives $d_i =
+  \sum_j|U_{ij}|^2\theta_j$. Both row and column sums of $|U_{ij}|^2$ equal one.
+  Finite convexity therefore yields
+  \[
+    \sum_i d_i^m \le \sum_{i,j}|U_{ij}|^2\theta_j^m
+    = \operatorname{Tr}D^m.
+  \]
+  The row sums provide the convex weights for each $d_i$. The column sums
+  then give the equality after summing over $i$.
+  For completeness, the convexity step follows from $t^m \ge s^m+ms^{m-1}(t-s)$
+  for $s,t \ge 0$, obtained by differentiating the difference. Average this
+  inequality with $s$ equal to the weighted mean.
+
+  Now apply finite H\"older from
+  Lemma~\ref{L:gaussian-scalar-powers} to $\sum_i d_i|\lambda_i|^{2m-2}$. Since
+  $(2m-2)m/(m-1) = 2m$, we obtain the factors in
+  \eqref{E:gaussian-trace-holder}.
+  This proves the claimed inequality,
+  including zero sums. This proves Lemma~\ref{L:gaussian-trace-bounds}.
+\end{proof}
+
+The estimate below is a finite-dimensional Gaussian noncommutative Khintchine
+inequality. For its origins in the work of Lust-Piquard and a Gaussian
+integration-by-parts proof, see Tropp~\cite{tropp:source2018:second-order}*{arXiv:1504.05919v2,
+Proposition~2.3 and Section~7}. We include the proof and Hermitian dilation
+to fix the normalization and retain both variance operators.
+
+\LeanMarker{P:finite-gaussian-matrix}
+\begin{proposition}[Finite Gaussian matrix moment]\label{P:finite-gaussian-matrix}
+  Let $A_1,\ldots,A_N$ be complex $o$-by-$n$ matrices, with $o,n,N \ge 1$, and
+  let $g_k$ be independent real standard Gaussians. Put
+  \[
+    X=\sum_k g_kA_k,\qquad V_{\rm out}=\sum_k A_kA_k^*,
+    \qquad V_{\rm in}=\sum_k A_k^*A_k.
+  \]
+  For even $p = 2m \ge 2$, with $\|A\|_{S_p}^p = \operatorname{Tr}((A^*A)^m)$,
+  \begin{align}
+    (\E\|X\|_{S_p}^p)^{1/p}
+    &\le \sqrt{p-1}\left(
+    \frac{\operatorname{Tr}V_{\rm out}^m+
+    \operatorname{Tr}V_{\rm in}^m}{2}\right)^{1/p}
+    \label{E:finite-gaussian-average}\\
+    &\le \sqrt{p-1}\max\left(
+    \|V_{\rm out}^{1/2}\|_{S_p},\|V_{\rm in}^{1/2}\|_{S_p}\right).
+    \label{E:finite-gaussian-maximum}
+  \end{align}
+  The constants are independent of $o,n,N$. The first inequality is an equality
+  at $p = 2$. Empty or zero families give the zero identity.
+\end{proposition}
+
+\begin{proof}
+  We first prove the moment bound for Hermitian matrices by Gaussian
+  integration by parts. We then use Hermitian dilation to treat rectangular
+  matrices and keep track of the factor two.
+
+  \medskip
+  \noindent\textit{Step 1.~}We justify Gaussian integration by parts.
+  First suppose $B_k$ are Hermitian and put $Y = \sum_k g_kB_k$ and $D = \sum_k
+  B_k^2$. All polynomial moments are finite because Gaussian decay dominates
+  every fixed power. Componentwise integration by parts against the product
+  Gaussian density gives $\E[g_kP(g)] = \E[\partial_kP(g)]$, with zero boundary
+  terms. It applies to complex polynomials through their real and imaginary
+  parts; absolute polynomial integrability justifies Fubini.
+
+  For a fixed value of the other Gaussian coordinates, the derivative of the
+  density in the $k$th coordinate is minus that coordinate times the density.
+  Moving this derivative onto $P$ gives the positive sign in the identity. At
+  both ends of the real line, the polynomial times the Gaussian density tends
+  to zero, so no boundary term remains.
+
+  \medskip
+  \noindent\textit{Step 2.~}We estimate the Hermitian moment.
+  For $m \ge 2$, put $F = \E\operatorname{Tr}Y^{2m}$ and $L = 2m-2$. Write
+  $\operatorname{Tr}Y^{2m} = \sum_k g_k \operatorname{Tr}(B_kY^{2m-1})$ and
+  differentiate the $2m-1$ factors in their order. This gives exactly
+  \[
+    F=\sum_k\sum_{q=0}^{L}
+    \E\operatorname{Tr}(B_kY^qB_kY^{L-q}).
+  \]
+  Here $\partial_kY = B_k$. In the product rule, $q$ counts the factors $Y$
+  before the differentiated factor and $L-q$ counts those after it. The
+  leading $B_k$ comes from the expression for the trace before
+  differentiation. This explains both the order of the matrices and the range
+  $0 \le q \le L$.
+  The eigenbasis calculation above shows these traces are real. The
+  differentiated polynomial is real by conjugation and trace cyclicity. No
+  derivative of a spectral absolute value or measurable choice of an eigenbasis
+  is needed. The two trace bounds give
+  \begin{align*}
+    F&\le (2m-1)\E\operatorname{Tr}(D|Y|^{2m-2})\\
+    &\le (2m-1)(\operatorname{Tr}D^m)^{1/m}
+    \E(\operatorname{Tr}|Y|^{2m})^{(m-1)/m}\\
+    &\le (2m-1)(\operatorname{Tr}D^m)^{1/m}F^{(m-1)/m}.
+  \end{align*}
+  The first inequality bounds each trace word and sums the $2m-1$
+  positions of the derivative. The second applies the trace H\"older bound.
+  Here $\operatorname{Tr}|Y|^{2m} = \operatorname{Tr}Y^{2m}$, and the last
+  inequality is the expectation bound in Lemma~\ref{L:gaussian-scalar-powers}.
+  The matrix $D$ is positive because each $B_k^2$ is positive. Also,
+  $\operatorname{Tr}|Y|^{2m}$ is nonnegative and has finite expectation $F$.
+  Thus, the expectation bound applies with $r = (m-1)/m$, which lies strictly
+  between zero and one.
+  If $F = 0$ the conclusion is immediate. Otherwise divide by its positive
+  fractional power and raise to $m$ to obtain
+  \begin{equation}\label{E:finite-hermitian-gaussian}
+    \E\operatorname{Tr}Y^{2m} \le (2m-1)^m\operatorname{Tr}D^m.
+  \end{equation}
+  For $m = 1$, independence gives directly $\E\operatorname{Tr}Y^2 =
+  \sum_k\operatorname{Tr}B_k^2 = \operatorname{Tr}D$, proving the same formula
+  as equality.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We pass to rectangular matrices.
+  For rectangular $A_k$, use the Hermitian dilation
+  \[
+    B_k=\begin{pmatrix}0&A_k\\A_k^*&0\end{pmatrix},\qquad
+    Y=\begin{pmatrix}0&X\\X^*&0\end{pmatrix},\qquad
+    D=\operatorname{diag}(V_{\rm out},V_{\rm in}).
+  \]
+  Each $B_k$ is Hermitian. Squaring it gives diagonal blocks $A_kA_k^*$ and
+  $A_k^*A_k$, so its sum of squares is exactly the displayed $D$. Likewise,
+  $Y^2$ has diagonal blocks $XX^*$ and $X^*X$. Its $m$th power therefore has
+  blocks $(XX^*)^m$ and $(X^*X)^m$.
+  Finite entrywise summation proves $\operatorname{Tr}(UV) =
+  \operatorname{Tr}(VU)$ for compatible rectangular matrices. Since $(XX^*)^m =
+  X(X^*X)^{m-1}X^*$, it follows that
+  \[
+    \operatorname{Tr}Y^{2m}=2\operatorname{Tr}((X^*X)^m),\qquad
+    \operatorname{Tr}D^m=\operatorname{Tr}V_{\rm out}^m+
+    \operatorname{Tr}V_{\rm in}^m.
+  \]
+  Substitute in~\eqref{E:finite-hermitian-gaussian}, divide by two and take the
+  $p$th root. This proves~\eqref{E:finite-gaussian-average}. For positive $V$,
+  spectral diagonalization gives $\|V^{1/2}\|_{S_p}^p = \operatorname{Tr}V^m$,
+  and the average of two nonnegative numbers is bounded by their maximum. At $p
+  = 2$, $\E\operatorname{Tr}X^*X = \operatorname{Tr}V_{\rm in} =
+  \operatorname{Tr}V_{\rm out}$, proving the claimed equality. This proves
+  Proposition~\ref{P:finite-gaussian-matrix}.
+\end{proof}
+
+Both variance directions are needed: the row-matrix example in
+No-go~\ref{P:nogo-23} rules out a dimension-independent estimate that
+keeps only one of them.
+
+
+\LeanMarker{R:gaussian-one-variance-test}
+\begin{remark}[Both variance directions are necessary]
+  \label{R:gaussian-one-variance-test}
+  Let $n = 16$ and $A_k = e_k^{\mathsf{T}}$ be the coordinate row matrices. The
+  only nonzero singular value of $X$ is $(\sum_k g_k^2)^{1/2}$. Gaussian
+  integration by parts gives $\E g^2 = 1$, $\E g^4 = 3$, and hence
+  \[
+    \E\|X\|_{S_4}^4=3n+n(n-1)=n(n+2)=288.
+  \]
+  Here $V_{\rm out} = n$ and $V_{\rm in} = I_n$. Keeping only the input variance
+  in~\eqref{E:finite-gaussian-maximum} would give fourth power
+  $9\operatorname{Tr}I_n^2 = 144$, which is false. Transposing the family
+  refutes the corresponding output-only bound. The average and maximum bounds
+  have fourth powers $1224$ and $2304$, respectively. This finite example
+  asserts nothing about a specialized wave estimate.
+\end{remark}
+
+\subsection{Whole-space cutoffs through an auxiliary periodic space}
+
+Use the unitary Fourier transform with $c_d = (2\pi)^{-d/2}$ and $\Lambda =
+(1-\Delta)^{1/2}$. For real $r$, the norm on $H^r(\R^d)$ is
+$\|\langle\xi\rangle^r\widehat{u}\|_2$. The deterministic cutoff arguments allow
+any smoothing order $\gamma > 0$. Fix real $\sigma$ and a real compact smooth
+$\chi$. Singular values $s_j$, $j \ge 1$, are counted with multiplicity, with
+zeros appended when necessary. For compact $K$, put $\|K\|_{S_p}^p = \sum_j
+s_j(K)^p$.
+
+\begin{lemma}[Cutoff factorization]\label{L:cutoff-factorization}
+  Choose a cube $Q_L = (-L/2,L/2)^d$ containing $\operatorname{supp}\chi$ in its
+  interior, and a real $\psi \in C_c^\infty(Q_L)$ equal to one near
+  $\operatorname{supp}\chi$. On the auxiliary torus $\mathbb{T}_L$ use Lebesgue
+  measure and the orthonormal basis
+  \[
+    e_k(x)=L^{-d/2}e^{i\kappa_k\cdot x},\qquad
+    \kappa_k=2\pi k/L,\qquad k \in \mathbb{Z}^d,
+  \]
+  with $\|v\|_{H^r(\mathbb{T}_L)}^2 = \sum_k\langle\kappa_k\rangle^{2r}|v_k|^2$.
+  Periodization of $\psi u$ and multiplication of a periodic function by $\chi$
+  extend to bounded maps
+  \begin{equation}\label{E:cutoff-periodic-maps}
+    \mathcal{P}_\psi:H^r(\R^d)\to H^r(\mathbb{T}_L),\qquad
+    \mathcal{E}_\chi:H^r(\mathbb{T}_L)\to H^r(\R^d)
+  \end{equation}
+  for every real $r$. If $\mathcal{I}_\gamma$ denotes the identity inclusion
+  from $H^{\sigma+\gamma}(\mathbb{T}_L)$ to $H^\sigma(\mathbb{T}_L)$, then
+  \begin{equation}\label{E:cutoff-whole-space-recovery}
+    \mathcal{E}_\chi\mathcal{I}_\gamma\mathcal{P}_\psi u=\chi u,
+    \qquad u \in H^{\sigma+\gamma}(\R^d).
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We have to show two things. First, the two maps
+  in~\eqref{E:cutoff-periodic-maps} are bounded for every real $r$. Second, the
+  identity~\eqref{E:cutoff-whole-space-recovery} holds on
+  $H^{\sigma+\gamma}(\R^d)$. In both cases we argue first on a dense class,
+  namely Schwartz functions on $\R^d$ and finite torus polynomials on
+  $\mathbb{T}_L$, and then pass to the whole space by density. The proof has
+  five steps. Step~1 collects three elementary facts. Step~2 recalls the mixed
+  Schur bound. Step~3 writes the two maps as kernel operators in the Fourier
+  variables and bounds them. Step~4 extends the maps by density. Step~5 proves
+  the identity~\eqref{E:cutoff-whole-space-recovery}.
+
+  \medskip
+  \noindent\textit{Step 1.~}We collect three elementary facts. The first fact
+  compares the weights at
+  two points. For $x,y \in \R^d$ and real $r$, the elementary inequality
+  $\langle x\rangle \le \sqrt{2}\langle y\rangle\langle x-y\rangle$ gives
+  \begin{equation}\label{E:cutoff-peetre}
+    \left(\frac{\langle x\rangle}{\langle y\rangle}\right)^r
+    \le 2^{|r|/2}\langle x-y\rangle^{|r|}.
+  \end{equation}
+  For $r \ge 0$ we raise the elementary inequality to the power $r$. For
+  negative $r$, we interchange $x,y$ before raising to the power $|r|$.
+
+  The second fact is that integration by parts gives rapid decay of the Fourier
+  transform of every compact smooth cutoff.
+
+  The third fact is a lattice sum that is bounded uniformly in its shift. For
+  any lattice spacing $a > 0$ and $N > d$,
+  \begin{equation}\label{E:cutoff-lattice-sum}
+    \sup_y\sum_{k\in\mathbb{Z}^d}\langle y-ak\rangle^{-N}<\infty.
+  \end{equation}
+  Indeed, the sum does not change when $y$ is shifted by a lattice vector. We
+  translate $y$ into a centered lattice cell, where $|y| \le a\sqrt d/2$. For
+  $|k| \ge \sqrt d$ the triangle inequality gives $|y-ak| \ge a|k|-|y|$, and
+  we have $|y-ak| \ge a|k|/2$. We treat the terms with $|k| < \sqrt d$ and the
+  tail $|k| \ge \sqrt d$ separately. The remaining terms, those with $|k| <
+  \sqrt d$, are finite: each is at most one, and their number depends only on
+  $d$. The tail converges by dyadic lattice counting, since there are at most
+  $C_d2^{jd}$ lattice points in the $j$th shell $2^j \le |k| < 2^{j+1}$ in
+  $k$. More precisely, for $|k| \ge \sqrt d$, the preceding inequality gives
+  \[
+    \langle y-ak\rangle^{-N}
+    \le \max(1,2/a)^N\langle k\rangle^{-N}.
+  \]
+  Here we use $\langle y-ak\rangle \ge \langle ak/2\rangle \ge
+  \min(1,a/2)\langle k\rangle$. The comparison-series terms $\langle
+  k\rangle^{-N}$ are bounded by $2^{-jN}$ on each dyadic $k$-shell. Hence, the
+  comparison series is bounded by the geometric sum $\sum_{j \ge 0}
+  C_d2^{j(d-N)}$, which converges because $N > d$. Thus, the resulting bound
+  carries constants depending on $a,d,N$, as
+  does~\eqref{E:cutoff-lattice-sum}.
+
+  \medskip
+  \noindent\textit{Step 2.~}We recall the mixed Schur bound. We use the mixed
+  Schur bound for a
+  kernel whose absolute row and column integrals are bounded by $M_1,M_2$. It
+  states that the squared operator norm of the kernel operator is at most
+  $M_1M_2$. To prove it, we apply the weighted Cauchy--Schwarz inequality at
+  each output point and then Tonelli's theorem. The same proof works with
+  counting measure on one side and Lebesgue measure on the other. For counting
+  measure inputs, use finitely supported sequences; for Lebesgue measure
+  inputs, use smooth compactly supported functions. The estimate extends to
+  the corresponding $L^2$ spaces by density. For the kernels below, the same
+  Cauchy--Schwarz estimate on truncated inputs identifies the extension with
+  the stated integral or sum.
+
+  \medskip
+  \noindent\textit{Step 3.~}We prove the bounds
+  in~\eqref{E:cutoff-periodic-maps}. We write each map as a kernel operator
+  between the weighted Fourier variables and apply Step~2. We begin with
+  $\mathcal{P}_\psi$. For Schwartz $u$, the $k$th coefficient of its cutoff
+  periodization is
+  \[
+    (\mathcal{P}_\psi u)_k
+    = L^{-d/2}\int\psi(x)u(x)e^{-i\kappa_k\cdot x}\ud x
+    = L^{-d/2}\int\widehat{\psi}(\kappa_k-\xi)\widehat{u}(\xi)\ud\xi.
+  \]
+  In the second equality, the $c_d$ from Fourier inversion cancels the
+  $c_d^{-1}$ in the ordinary Fourier integral of $\psi$. The norms of
+  $H^r(\R^d)$ and $H^r(\mathbb{T}_L)$ carry the weights $\langle\xi\rangle^r$
+  and $\langle\kappa_k\rangle^r$. After weighting, that is, as a map from
+  $\langle\xi\rangle^r\widehat{u}(\xi)$ to
+  $\langle\kappa_k\rangle^r(\mathcal{P}_\psi u)_k$, its exact kernel is
+  \[
+    L^{-d/2}\left(\frac{\langle\kappa_k\rangle}{\langle\xi\rangle}\right)^r
+    \widehat{\psi}(\kappa_k-\xi).
+  \]
+  We turn to $\mathcal{E}_\chi$. For a finite torus polynomial $v$, the
+  normalized Fourier kernel of $\mathcal{E}_\chi v$ is
+  \[
+    L^{-d/2}\left(\frac{\langle\xi\rangle}{\langle\kappa_k\rangle}\right)^r
+    \widehat{\chi}(\xi-\kappa_k).
+  \]
+  There is no additional $c_d$ in this kernel.
+
+  We now bound both kernels. By~\eqref{E:cutoff-peetre}, each is bounded in
+  absolute value by a rapidly decreasing function of its frequency difference,
+  times a fixed constant. For the first kernel this bound is
+  \[
+    L^{-d/2}2^{|r|/2}\langle\kappa_k-\xi\rangle^{|r|}
+    \left|\widehat{\psi}(\kappa_k-\xi)\right|,
+  \]
+  and for the second kernel it is the same expression with
+  $\widehat{\chi}(\xi-\kappa_k)$ in place of $\widehat{\psi}(\kappa_k-\xi)$.
+  These functions of the frequency difference decrease rapidly by the second
+  fact of Step~1. One Schur quantity is its $L^1$ integral and the other a
+  uniformly translated lattice sum, bounded by~\eqref{E:cutoff-lattice-sum}.
+  Indeed, the integral over $\xi$ at fixed $k$ is the $L^1$ integral of the
+  bounding function and does not depend on $k$. The sum over $k$ at fixed
+  $\xi$ is a lattice sum with spacing $a = 2\pi/L$ and shift $y = \xi$. We
+  bound the rapidly decreasing function by a constant times
+  $\langle\cdot\rangle^{-N}$ for some $N > d$,
+  and~\eqref{E:cutoff-lattice-sum} bounds the sum uniformly in $\xi$. This
+  proves~\eqref{E:cutoff-periodic-maps}, including negative $r$.
+
+  \medskip
+  \noindent\textit{Step 4.~}We extend the two maps by density. We check that
+  the two classes used in
+  Step~3 are dense. Smooth compact approximation in weighted Fourier $L^2$
+  proves Schwartz density on $\R^d$. Weighted sequence truncation proves
+  polynomial density on the torus. Hence, these maps extend uniquely. Their
+  distributional meanings follow by testing against compact smooth functions
+  and density: each periodic coefficient pairs the distribution with a compact
+  smooth test. No point sampling of a rough Fourier function is used. The same
+  full-Lebesgue Schur argument, with Lebesgue measure on both sides, proves
+  smooth compact multiplication bounded on every whole-space $H^r$.
+
+  \medskip
+  \noindent\textit{Step 5.~}We prove the
+  identity~\eqref{E:cutoff-whole-space-recovery}. We first
+  prove the identity for Schwartz $u$. For Schwartz $u$, the periodic Fourier
+  series of $\psi u$ converges smoothly on the cube. Its coefficients are the
+  numbers $(\mathcal{P}_\psi u)_k$ of Step~3, and its partial sums are finite
+  torus polynomials, on which $\mathcal{E}_\chi$ is multiplication by $\chi$.
+  Rapid decay of the Fourier coefficients gives convergence of these partial
+  sums in $H^{\sigma+\gamma}(\mathbb{T}_L)$, hence also in
+  $H^\sigma(\mathbb{T}_L)$. Boundedness of $\mathcal{E}_\chi$ gives convergence
+  of their images to $\mathcal{E}_\chi\mathcal{I}_\gamma\mathcal{P}_\psi u$
+  in $H^\sigma(\R^d)$. Their smooth convergence on the support of $\chi$ also
+  gives convergence of the products with $\chi$ to $\chi\psi u$ as
+  distributions. Since Sobolev convergence implies distributional
+  convergence for every real $\sigma$, these two limits agree.
+  Since $\chi\psi = \chi$ and $\chi$ is supported strictly inside the cube,
+  multiplying this series by $\chi$ recovers $\chi u$ with no alias term.
+  Since $\mathcal{I}_\gamma$ is the identity inclusion, this
+  is~\eqref{E:cutoff-whole-space-recovery} for Schwartz $u$.
+
+  It remains to pass to all of $H^{\sigma+\gamma}(\R^d)$. Both sides
+  of~\eqref{E:cutoff-whole-space-recovery} are bounded from
+  $H^{\sigma+\gamma}(\R^d)$ to $H^\sigma(\R^d)$, using the just-proved maps,
+  the inclusion and smooth multiplication. In detail, the left side uses
+  $\mathcal{P}_\psi$ with $r = \sigma+\gamma$, the inclusion
+  $\mathcal{I}_\gamma$, which is bounded because $\gamma > 0$, and
+  $\mathcal{E}_\chi$ with $r = \sigma$. The right side uses the multiplication
+  by $\chi$ of Step~4 with $r = \sigma$, together with the inclusion of
+  $H^{\sigma+\gamma}(\R^d)$ in $H^\sigma(\R^d)$. Since Schwartz functions are
+  dense in $H^{\sigma+\gamma}(\R^d)$ by Step~4, density
+  proves~\eqref{E:cutoff-whole-space-recovery} on that full domain. This
+  proves Lemma~\ref{L:cutoff-factorization}.
+\end{proof}
+
+\begin{proposition}[Whole-space cutoff singular values]\label{P:cutoff-singular-values}
+  For real $\sigma$ and $\gamma > 0$, the initially Schwartz-defined operator
+  $K_{\chi,\sigma,\gamma} = \Lambda^\sigma\chi\Lambda^{-\sigma-\gamma}$ extends
+  uniquely to a compact operator on $L^2(\R^d)$, and
+  \begin{equation}\label{E:cutoff-singular-values}
+    s_j(K_{\chi,\sigma,\gamma})
+    \le C_{\chi,\sigma,\gamma,d}j^{-\gamma/d},\qquad j \ge 1.
+  \end{equation}
+  Consequently, $K_{\chi,\sigma,\gamma} \in S_p$ whenever $p \ge 1$ and $p\gamma
+  > d$.
+\end{proposition}
+
+\begin{proof}
+  We use the cutoff factorization to approximate the operator by finite-rank
+  operators. Their ranks and approximation errors will give the singular-value
+  bound, which we then sum to obtain Schatten membership.
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct finite-rank approximations.
+  The zero cutoff is immediate. Fix one cube and cutoff pair $L,\psi$ as in
+  Lemma~\ref{L:cutoff-factorization}. Its recovery identity gives
+  \[
+    K_{\chi,\sigma,\gamma}
+    =\Lambda^\sigma\mathcal{E}_\chi\mathcal{I}_\gamma
+    \mathcal{P}_\psi\Lambda^{-\sigma-\gamma}.
+  \]
+  The cutoff maps are bounded by the preceding lemma. Thus, the only
+  factor we need to approximate is the torus inclusion.
+  The rightmost Bessel map takes $L^2(\R^d)$ unitarily to
+  $H^{\sigma+\gamma}(\R^d)$, and the leftmost takes $H^\sigma(\R^d)$ unitarily
+  to $L^2(\R^d)$. The bounded factorization agrees with the original operator
+  on Schwartz functions. Their density gives the unique bounded extension.
+  In the weighted torus coordinates, $\mathcal{I}_\gamma$ is diagonal with
+  entries $\langle\kappa_k\rangle^{-\gamma}$. Let $Q_n$ retain $|k|_\infty \le
+  n$. Its rank is $(2n+1)^d$, and
+  \[
+    \|(1-Q_n)\mathcal{I}_\gamma\|
+    \le [1+(2\pi/L)^2(n+1)^2]^{-\gamma/2}\longrightarrow0.
+  \]
+  The weighted input coefficient has weight
+  $\langle\kappa_k\rangle^{\sigma+\gamma}$ and the output coefficient has
+  weight $\langle\kappa_k\rangle^\sigma$. The output weight divided by
+  the input weight is
+  $\langle\kappa_k\rangle^{-\gamma}$. Outside the retained cube, at least one
+  integer coordinate has absolute value at least $n+1$, so $|\kappa_k| \ge
+  (2\pi/L)(n+1)$. Taking the supremum of the remaining diagonal entries proves
+  the norm bound.
+  Replacing the inclusion by $Q_n\mathcal{I}_\gamma$ gives finite-rank $K_n$
+  converging in norm to $K_{\chi,\sigma,\gamma}$. This proves compactness:
+  finite-dimensional images have finite nets of each positive radius, and norm
+  approximation transfers those nets to the limiting image of the unit ball.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We compare approximation rank with
+  singular-value index.
+  Put
+  \[
+    M=\|\mathcal{E}_\chi:H^\sigma(\mathbb{T}_L)\to H^\sigma(\R^d)\|
+    \|\mathcal{P}_\psi:H^{\sigma+\gamma}(\R^d)
+    \to H^{\sigma+\gamma}(\mathbb{T}_L)\|.
+  \]
+  The outer Bessel maps are unitary. For $j \ge 3^d$, choose $n = \lfloor
+  j^{1/d}/4\rfloor$. Then
+  \[
+    (2n+1)^d\le(j^{1/d}/2+1)^d<j,\qquad
+    \|K-K_n\|\le M(2L/\pi)^\gamma j^{-\gamma/d}.
+  \]
+  The strict rank inequality lets us use $K_n$ to bound the $j$th singular
+  value. The finitely many smaller indices will be treated by the operator
+  norm.
+  The second estimate follows from $n+1 > j^{1/d}/4$. For a compact operator,
+  every rank less than $j$ approximation $F$ satisfies $s_j(K) \le \|K-F\|$: the
+  span of the first $j$ right singular vectors contains a unit vector in $\ker
+  F$, on which $\|K\cdot\| \ge s_j(K)$. If $s_j(K) = 0$ the inequality is
+  immediate. For $j < 3^d$ use $s_j(K) \le \|K\| \le M$. Thus, one may take
+  \[
+    C_{\chi,\sigma,\gamma,d}
+    =M\max(3^\gamma,(2L/\pi)^\gamma).
+  \]
+
+  \medskip
+  \noindent\textit{Step 3.~}We sum the singular-value bound.
+  Finally, $\sum_j j^{-p\gamma/d}$ converges for $p\gamma > d$.
+  Raise the singular-value bound to $p$ and sum over $j$. The resulting series
+  bounds $\sum_j s_j(K)^p$, which is the defining Schatten norm power. This
+  proves
+  Proposition~\ref{P:cutoff-singular-values}.
+\end{proof}
+
+No uniform support-radius constant or endpoint necessity is asserted in
+Proposition~\ref{P:cutoff-singular-values}. The periodic inclusion was only a
+factor of the recovered whole-space operator.
+
+\subsection{Balanced adjoints and localized variance envelopes}
+
+For $E = H^{1/2}(\R^d)\times H^{-1/2}(\R^d)$ use the physical unitary
+coordinates
+\[
+  J_0(u,v)=(\Lambda^{1/2}u,\Lambda^{-1/2}v),\qquad
+  H=L^2(\R^d;\mathbb{C}^2).
+\]
+The frequency map $J$ in Section~\ref{S:wave-variance} is
+$(\mathcal{F}\oplus\mathcal{F})J_0$. Let $D_\chi$ multiply both phase entries
+and define
+\begin{align}
+  P_\chi&=J_0D_\chi J_0^{-1},\qquad
+  D_\gamma=\operatorname{diag}(\Lambda^{-\gamma},\Lambda^{-\gamma}),
+  \label{E:compact-balanced-cutoff}\\
+  K_{\rm out}&=P_\chi D_\gamma,\qquad
+  K_{\rm in}=P_\chi^*D_\gamma.
+  \label{E:compact-two-factors}
+\end{align}
+
+\begin{proposition}[Both compact envelopes]\label{P:compact-two-envelopes}
+  The operator $P_\chi$ is bounded. For the unitary swap $U(v,w) = (w,v)$,
+  \[
+    P_\chi^*=UP_\chi U,\qquad K_{\rm in}=UK_{\rm out}U.
+  \]
+  Both factors are compact and have equal $S_p$ norms for $p \ge 1$, $p\gamma >
+  d$. For $p \ge 2$, $p\gamma > d$, the positive compact operators
+  \[
+    B_{\rm out}=P_\chi D_\gamma^2P_\chi^*=K_{\rm out}K_{\rm out}^*,
+    \qquad B_{\rm in}=P_\chi^*D_\gamma^2P_\chi=K_{\rm in}K_{\rm in}^*
+  \]
+  satisfy
+  \begin{equation}\label{E:compact-envelope-traces}
+    \operatorname{Tr}B_{\rm out}^{p/2}
+    =\operatorname{Tr}B_{\rm in}^{p/2}=\|K_{\rm out}\|_{S_p}^p.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  We first identify the adjoint of the balanced cutoff. The swap identity
+  then reduces both factors to the same singular values, and these values
+  give the trace identities.
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the adjoint.
+  Put $A_\sigma = \Lambda^\sigma\chi\Lambda^{-\sigma}$. The full-Lebesgue Schur
+  argument in Lemma~\ref{L:cutoff-factorization} shows boundedness for every
+  real $\sigma$. On Schwartz functions, self-adjointness of real multiplication
+  and of the Bessel powers gives $A_\sigma^* = A_{-\sigma}$. Density and
+  boundedness extend this to the Hilbert adjoints. No evenness of $\chi$ is
+  needed. Thus,
+  \[
+    P_\chi=\operatorname{diag}(A_{1/2},A_{-1/2}),\qquad
+    P_\chi^*=\operatorname{diag}(A_{-1/2},A_{1/2})=UP_\chi U.
+  \]
+
+  \medskip
+  \noindent\textit{Step 2.~}We obtain compactness and Schatten membership.
+  The swap commutes with $D_\gamma$, giving the claimed factor identity. The
+  blocks of $K_{\rm out}$ are $K_{\chi,1/2,\gamma}$ and $K_{\chi,-1/2,\gamma}$.
+  Proposition~\ref{P:cutoff-singular-values} gives compactness and $S_p$
+  membership. The singular values of their direct sum form the multiset union,
+  so
+  \[
+    \|K_{\rm out}\|_{S_p}^p
+    =\|K_{\chi,1/2,\gamma}\|_{S_p}^p+
+    \|K_{\chi,-1/2,\gamma}\|_{S_p}^p.
+  \]
+  For a block diagonal operator, its adjoint times itself is block diagonal as
+  well. The positive eigenvalues are therefore those of the two blocks,
+  counted with multiplicity. Taking their square roots gives the asserted
+  multiset union of singular values.
+  Unitary conjugation preserves them.
+
+  \medskip
+  \noindent\textit{Step 3.~}We compute the two traces.
+  The products $K_{\rm out}K_{\rm out}^*$ and $K_{\rm in}K_{\rm in}^*$ are
+  positive and compact. Their positive eigenvalues are the squared singular
+  values of the corresponding factors.
+  Finally, the positive eigenvalues of
+  $KK^*$ and $K^*K$ agree with multiplicity: on an eigenspace with eigenvalue
+  $\lambda > 0$, the maps $K/\sqrt\lambda$ and $K^*/\sqrt\lambda$ are inverse
+  isometries. Indeed, $K$ takes the $\lambda$-eigenspace of $K^*K$ into that
+  of $KK^*$, because applying $KK^*$ after $K$ equals applying $K$ after
+  $K^*K$. On this eigenspace, $K$ multiplies squared norms by $\lambda$. The
+  corresponding statement for $K^*$ gives the inverse map after division by
+  $\sqrt\lambda$.
+
+  Zero eigenvalues contribute nothing to the trace. Raising each squared
+  singular value to $p/2$ gives its $p$th power. The sum is finite by the
+  Schatten membership already proved, and the two factors have the same
+  singular values. Thus, summing gives~\eqref{E:compact-envelope-traces}. This
+  proves
+  Proposition~\ref{P:compact-two-envelopes}.
+\end{proof}
+
+We use the usual positive square root of a bounded positive operator and the
+spectral decomposition of compact positive operators. The needed order argument
+is recorded explicitly.
+
+\begin{lemma}[Compact positive order and trace]\label{L:compact-positive-order}
+  If $A,B$ are bounded self-adjoint operators with $0 \le A \le B$ and $B$
+  compact positive, then $A$ is compact and its ordered eigenvalues satisfy
+  $\lambda_j(A) \le \lambda_j(B)$, including zero padding. Consequently, for $t
+  \ge 1$ with finite $\operatorname{Tr}B^t$,
+  \begin{equation}\label{E:compact-positive-trace}
+    \operatorname{Tr}A^t\le\operatorname{Tr}B^t.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We first prove compactness using the square root of $A$. Once compactness is
+  known, we compare Rayleigh quotients to order the eigenvalues, and then sum
+  their powers.
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove compactness.
+  Let $Q_n$ be finite spectral projections of $B$ whose tails tend to zero in
+  norm. Then
+  \[
+    \|(1-Q_n)A^{1/2}\|^2
+    =\|(1-Q_n)A(1-Q_n)\|
+    \le\|(1-Q_n)B(1-Q_n)\|\longrightarrow0.
+  \]
+  The equality is the Hilbert-space identity that the squared norm of an
+  operator equals the norm of its product with its adjoint. The inequality
+  follows by applying $A \le B$ between the two projections. These products
+  are positive, and order between positive operators implies order of their
+  norms.
+  The finite-rank approximants here are $Q_nA^{1/2}$; the displayed norm
+  is precisely their error.
+  Thus, $A^{1/2}$ is a norm limit of finite-rank operators and is compact, as is
+  $A$, since $A = A^{1/2}A^{1/2}$ is a product of a compact and a
+  bounded operator.
+
+  \medskip
+  \noindent\textit{Step 2.~}We compare the eigenvalues and traces.
+  For compact positive operators, the max-min formula for $\lambda_j$
+  follows in an eigenbasis: the span of the first $j$ eigenvectors gives the
+  lower bound for the supremum over $j$-dimensional subspaces of their minimum
+  Rayleigh quotient, while every such subspace meets the orthogonal complement
+  of the first $j-1$ eigenvectors, giving the upper bound. Compare the Rayleigh
+  quotients of $A$ and $B$ to obtain the eigenvalue inequality.
+  On each fixed $j$-dimensional subspace, every unit vector has its Rayleigh
+  quotient for $A$ bounded by that for $B$. Taking the infimum within that
+  subspace, and then the supremum over such subspaces, preserves the
+  inequality. The eigenbasis argument also covers zero eigenvalues: if fewer
+  than $j$ positive eigenvalues exist, every such subspace meets their
+  orthogonal complement and the infimum there is zero.
+
+  Since taking a positive scalar power preserves order, the eigenvalue
+  comparison gives $\lambda_j(A)^t \le \lambda_j(B)^t$. Sum first
+  over finitely many indices and then pass to the increasing limit. The finite
+  trace of $B^t$ bounds that limit. This proves
+  \eqref{E:compact-positive-trace}. No inequality $A^t
+  \le B^t$ is asserted. This proves Lemma~\ref{L:compact-positive-order}.
+\end{proof}
+
+\begin{proposition}[Localized finite variance bounds]\label{P:localized-finite-variance}
+  Suppose finitely many bounded operators $Z_\ell$ on $H$ satisfy
+  \begin{equation}\label{E:localized-finite-hypotheses}
+    P_\chi Z_\ell=Z_\ell=Z_\ell P_\chi,\qquad
+    V_{\rm out}:=\sum_\ell Z_\ell Z_\ell^*\le CD_\gamma^2,\qquad
+    V_{\rm in}:=\sum_\ell Z_\ell^*Z_\ell\le CD_\gamma^2,
+  \end{equation}
+  with $C \ge 0$. If $p \ge 2$ and $p\gamma > d$, every $Z_\ell$ is compact in
+  $S_p$, the two variances are compact in $S_{p/2}$, and
+  \begin{align}
+    V_{\rm out}&\le CB_{\rm out},\qquad V_{\rm in}\le CB_{\rm in},
+    \label{E:localized-two-envelopes}\\
+    \operatorname{Tr}V_{\rm out}^{p/2},\quad
+    \operatorname{Tr}V_{\rm in}^{p/2}
+    &\le C^{p/2}\|K_{\rm out}\|_{S_p}^p.
+    \label{E:localized-trace-bounds}
+  \end{align}
+\end{proposition}
+
+\begin{proof}
+  We first use the localization identities to replace the two variance
+  bounds by compact envelopes. We then apply the same positive-order argument
+  to each individual operator.
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound the two variances.
+  Left localization gives $V_{\rm out} = P_\chi V_{\rm out}P_\chi^*$. Apply
+  positive congruence to the output bound
+  in~\eqref{E:localized-finite-hypotheses} to get $V_{\rm out} \le CP_\chi
+  D_\gamma^2P_\chi^* = CB_{\rm out}$. Right localization similarly gives $V_{\rm
+  in} = P_\chi^*V_{\rm in}P_\chi \le CB_{\rm in}$.
+  Positive congruence preserves order: one tests the original inequality
+  on the adjoint of the multiplying operator applied to each vector.
+  The exponent $t=p/2$ is at least one, and $p\gamma>d$ makes the envelope
+  trace powers finite; scaling an envelope by $C$ multiplies its trace power
+  by $C^{p/2}$.
+  Proposition~\ref{P:compact-two-envelopes} and
+  Lemma~\ref{L:compact-positive-order} prove compactness and the two trace
+  bounds with $t = p/2$. If $C = 0$, both variances and every $Z_\ell$ vanish,
+  so all assertions are immediate.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We obtain compactness of each summand.
+  Every summand of the output variance is positive. Subtracting one summand
+  leaves a positive sum, which gives the order comparison needed below.
+  For each $\ell$, $Z_\ell Z_\ell^* \le V_{\rm out}$ is compact by the same
+  lemma. Its finite spectral projections $Q_n$ give $\|(1-Q_n)Z_\ell\|^2 =
+  \|(1-Q_n)Z_\ell Z_\ell^*(1-Q_n)\| \to 0$. Hence, $Z_\ell$ is compact. Its
+  singular values squared are the nonzero eigenvalues of $Z_\ell Z_\ell^*$.
+  The approximating operators are $Q_nZ_\ell$, whose ranges are finite
+  dimensional. The displayed error tends to zero, proving their norm
+  convergence. The positive-order lemma also bounds each eigenvalue of
+  $Z_\ell Z_\ell^*$ by the corresponding one of $V_{\rm out}$. Taking
+  $p/2$ powers converts the former to $p$th powers of singular values.
+  Comparing with $V_{\rm out}$ and summing proves $Z_\ell \in S_p$ with
+  $\|Z_\ell\|_{S_p}^p \le \operatorname{Tr}V_{\rm out}^{p/2}$. This proves
+  Proposition~\ref{P:localized-finite-variance}.
+\end{proof}
+
+The two localization identities are hypotheses here; a noise coefficient family
+has not yet been shown to satisfy them. In particular, $P_\chi$ is not assumed
+self-adjoint or a projection.
+
+\begin{corollary}[Finite Gaussian operators]\label{C:finite-gaussian-operators}
+  Under~\eqref{E:localized-finite-hypotheses}, let $g_\ell$ be independent real
+  standard Gaussians. For even $p \ge 2$ with $p\gamma > d$, the finite sum $X =
+  \sum_\ell g_\ell Z_\ell$ satisfies
+  \begin{equation}\label{E:finite-gaussian-operator-bound}
+    (\E\|X\|_{S_p}^p)^{1/p}
+    \le\sqrt{p-1}\sqrt C\|K_{\rm out}\|_{S_p}.
+  \end{equation}
+  Its extended norm is measurable, with finite expectation as displayed.
+\end{corollary}
+
+\begin{proof}
+  We compress the operators to finite matrices, where the Gaussian moment
+  bound is already available. We then pass to the original operators using
+  convergence of singular values and two applications of Fatou's lemma.
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound the variances of the compressions.
+  Choose finite-rank orthogonal projections $\Pi_n$ from a countable orthonormal
+  basis of $H$, with $\Pi_n \to I$ strongly. Put $Z_{\ell,n} = \Pi_nZ_\ell\Pi_n$
+  and $X_n = \sum_\ell g_\ell Z_{\ell,n}$, viewed as matrices on
+  $\operatorname{ran}\Pi_n$. Their output variance satisfies
+  \[
+    \sum_\ell\Pi_nZ_\ell\Pi_nZ_\ell^*\Pi_n
+    \le\Pi_nV_{\rm out}\Pi_n,
+  \]
+  since the difference is $\sum_\ell\Pi_nZ_\ell(1-\Pi_n)Z_\ell^*\Pi_n \ge 0$.
+  Each term in this difference is positive: its quadratic form is the squared
+  norm of $(1-\Pi_n)Z_\ell^*\Pi_n$ applied to the test vector. Thus, inserting
+  the middle projection can only decrease the variance.
+  Lemma~\ref{L:compact-positive-order}, with $t=p/2$, first bounds each
+  compressed variance trace by the corresponding trace of $\Pi_nV\Pi_n$; the
+  compression comparison below and~\eqref{E:localized-trace-bounds} then bound
+  it by $C^{p/2}\|K_{\rm out}\|_{S_p}^p$.
+  The input inequality is identical with adjoints interchanged. Compact max-min
+  also gives $\lambda_j(\Pi_nV\Pi_n) \le \lambda_j(V)$ for positive compact $V$,
+  since Rayleigh subspaces inside $\operatorname{ran}\Pi_n$ form a subset of all
+  subspaces. Thus, both variance trace powers of these matrices are bounded by
+  $C^{p/2}\|K_{\rm out}\|_{S_p}^p$.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We apply the finite matrix estimate.
+  Proposition~\ref{P:finite-gaussian-matrix} applies to these finite complex
+  matrices, the same real independent Gaussians and the even $p$. Taking the
+  average of the two already bounded trace powers gives
+  \begin{equation}\label{E:finite-gaussian-compression-bound}
+    \E\|X_n\|_{S_p}^p
+    \le(p-1)^{p/2}C^{p/2}\|K_{\rm out}\|_{S_p}^p.
+  \end{equation}
+  No factor two is added by this average.
+
+  \medskip
+  \noindent\textit{Step 3.~}We pass to the limit and check measurability.
+  This passage is pointwise in the Gaussian coordinates until the final
+  application of Fatou in probability.
+  For each Gaussian coordinate vector, $X$ is a finite sum of compact operators.
+  Strong convergence of $\Pi_n$ implies $\Pi_nX\Pi_n \to X$ in operator norm:
+  approximate $X$ by a finite-rank $F$, use uniform strong convergence on the
+  finite-dimensional ranges of $F$ and $F^*$, and control the remainder using
+  $\|\Pi_n\| \le 1$.
+
+  Singular values are norm-Lipschitz. Indeed, their formula
+  \[
+    s_j(A)=\inf_{\dim L<j}
+    \sup_{v\in L^\perp,\ \|v\|=1}\|Av\|
+  \]
+  follows by choosing $L$ to be the span of the first $j-1$ right singular
+  vectors for the upper bound. For the lower bound, if $s_j(A) > 0$, the span
+  of the first $j$ right singular vectors contains a unit vector perpendicular
+  to any $L$ of dimension less than $j$. On that vector, the norm of $A$ is at
+  least $s_j(A)$. If $s_j(A) = 0$, the lower bound is immediate.
+  Apply the triangle inequality inside the supremum in this formula, then
+  take the infimum over $L$. This gives $s_j(A) \le s_j(B)+\|A-B\|$,
+  and the reverse bound by interchanging $A,B$. Hence, $s_j(X_n) \to s_j(X)$ for
+  each $j$. Fatou for the nonnegative singular-value sum gives $\|X\|_{S_p}^p
+  \le \liminf_n\|X_n\|_{S_p}^p$, allowing extended infinity. These variables are
+  measurable as follows. Each $Z_\ell$ is bounded, and there are finitely many
+  Gaussian coordinates, so changing those coordinates changes $X$ continuously
+  in operator norm. The Lipschitz bound makes each singular value continuous
+  in these coordinates. Partial sums of their nonnegative $p$th powers are
+  measurable, and their increasing limit is measurable, including when it is
+  infinite. Fatou in probability
+  and~\eqref{E:finite-gaussian-compression-bound} prove the bound and
+  almost-sure finiteness.
+  No $S_p$-Bochner convergence is
+  assumed. This proves
+  Corollary~\ref{C:finite-gaussian-operators}.
+\end{proof}
+
+\subsection{A nonzero witness and the need for a compact cutoff}
+
+Proposition~\ref{P:localized-finite-variance} and
+Corollary~\ref{C:finite-gaussian-operators} assume
+\eqref{E:localized-finite-hypotheses}. We check that these hypotheses admit a
+nonzero operator, and then test what is lost without the compact cutoff.
+
+\begin{proposition}[Whole-space cutoff tests]\label{P:cutoff-boundary-tests}
+  If $\chi$ equals one on a nonempty open set, there is a nonzero rank-one
+  operator satisfying~\eqref{E:localized-finite-hypotheses} with a finite common
+  $C$. On the other hand, $\Lambda^{-\gamma}$ on $L^2(\R^d)$ is not compact for
+  any $\gamma > 0$.
+\end{proposition}
+
+\begin{proof}
+  We treat the two assertions separately. A rank-one operator built from test
+  functions supported on the plateau provides the witness. Translates of a
+  fixed function show why smoothing alone does not give compactness on the
+  whole space.
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the localized witness.
+  Choose nonzero real $v,f \in C_c^\infty$ supported inside the plateau, and put
+  $\widetilde{v} = (\Lambda^{1/2}v,0)$ and $\widetilde{w} =
+  (\Lambda^{-1/2}f,0)$. Both are Schwartz. The block formulas give
+  $P_\chi\widetilde{v} = \widetilde{v}$ and $P_\chi^*\widetilde{w} =
+  \widetilde{w}$. Therefore, $Zx = \langle x,\widetilde{w}\rangle\widetilde{v}$
+  satisfies $P_\chi Z = Z = ZP_\chi$. Its two variances are
+  $\|\widetilde{w}\|^2\widetilde{v}\otimes\widetilde{v}^*$ and
+  $\|\widetilde{v}\|^2\widetilde{w}\otimes\widetilde{w}^*$. For any Schwartz $a$
+  and any $x \in H$,
+  \[
+    |\langle x,a\rangle|
+    =|\langle D_\gamma x,D_\gamma^{-1}a\rangle|
+    \le\|D_\gamma x\|\|D_\gamma^{-1}a\|.
+  \]
+  The last inequality is Cauchy--Schwarz. The preceding equality uses
+  self-adjointness of the multiplier and its inverse on Schwartz functions.
+  The inverse multiplier is applied only to Schwartz $a$, so it belongs to $H$.
+  Apply the inequality with $a = \widetilde{v},\widetilde{w}$ to obtain the two
+  variance bounds with
+  \[
+    C=\max\left(
+    \|\widetilde{w}\|^2\|D_\gamma^{-1}\widetilde{v}\|^2,
+    \|\widetilde{v}\|^2\|D_\gamma^{-1}\widetilde{w}\|^2\right)<\infty.
+  \]
+  This witness uses a plateau; no nonzero family is inferred for every compact
+  cutoff or identified with a source family.
+
+  \medskip
+  \noindent\textit{Step 2.~}We test compactness by translation.
+  For noncompactness, take $f$ with nonzero Gaussian Fourier transform. Then $g
+  = \Lambda^{-\gamma}f$ is a nonzero Schwartz function. The images of translates
+  of $f$ are the same translates of $g$. With $T_hg(x) = g(x-h)$, Plancherel
+  gives
+  \[
+    \langle T_hg,g\rangle
+    =\int e^{-i\xi\cdot h}|\widehat{g}(\xi)|^2\ud\xi
+    =c_d^{-1}\widehat{|\widehat{g}|^2}(h).
+  \]
+  The Fourier multiplier commutes with translations, so the input
+  sequence and its image have the same translation parameters.
+  This tends to zero because $|\widehat{g}|^2$ is Schwartz. Choose a large
+  spacing so that any two distinct translates in the resulting sequence have
+  image distance at least $\|g\|$. The input norms are identical, but the images
+  have no Cauchy subsequence. This disproves compactness. This proves
+  Proposition~\ref{P:cutoff-boundary-tests}.
+\end{proof}
+
+The translation obstruction is restated in No-go~\ref{P:nogo-24}:
+frequency decay alone does not replace compact spatial localization.
+
+
+Thus, the choice $\chi = 1$ cannot be substituted into the compact-cutoff
+argument. No necessity at the Schatten endpoint $p\gamma = d$ is asserted. The
+results concern finite matrices and conditional finite operator sums.
+Coefficient localization, compact variance tails, an infinite Gaussian series
+and time regularity are proved in Section~\ref{S:actual-operator-driver}; source
+and Young identification are proved in
+Sections~\ref{S:source-driver-convergence}--\ref{S:constant-phase-young}. They
+are not consequences of the finite comparison alone.
+
+===== END new-module.txt =====
+
+===== BEGIN context-model-assumptions.txt =====
+{"source_path": "notes/notes_stratonovich_ham_second_moment.tex", "source_revision": "cdde711c248862f33207860107dd0e6b31d60852", "selection": "LF_RANGE", "role": "UNASSIGNED exact baseline declaration/definition context; no upstream proof assigned or counted.", "bytes": 1986, "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"}
+===== RAW UTF8 SOURCE =====
+\section{Model and standing assumptions}\label{S:model}
+
+We study the hyperbolic Anderson model
+\cite{chen:author2026:time-dependency}*{(1.1)}
+\begin{equation}\label{E:HAM}
+  \frac{\partial^2 u}{\partial t^2}(t,x)=\Delta u(t,x)+\W(t,x)u(t,x),
+  \qquad u(0,x)=1,\quad \frac{\partial u}{\partial t}(0,x)=0,
+\end{equation}
+for $(t,x) \in \R_+\times\R^d$, $d \in \{1,2,3\}$, interpreted in the
+Stratonovich sense (limit of classical wave equations driven by smoothed noises
+$\W_{\epsilon,\delta}$). The noise is centered Gaussian with
+\begin{equation}\label{E:cov}
+  \operatorname{Cov}\big(\W(s,x),\W(t,y)\big)=|s-t|^{-\alpha_0}\gamma(x-y),
+  \qquad 0<\alpha_0<1,
+\end{equation}
+where $\gamma \ge 0$ is nonnegative definite with spectral measure $\mu$.
+
+\begin{hypothesis}[Homogeneous covariance]\label{H:homog}
+  Let $d \in \{1,2,3\}$ and $0 < \alpha_0 < 1$. The spatial covariance is a
+  nonnegative, even, positive-definite tempered Radon measure $\Gamma$ on
+  $\R^d$, with positive even tempered Radon spectral measure $\mu$ in the
+  convention
+  \[
+    \Gamma=\int e^{i\xi\cdot x}\mu(\ud\xi)
+    \quad\text{in the sense of tempered distributions}.
+  \]
+  The symbol $\gamma$ in~\eqref{E:cov} denotes this covariance as a function
+  when one exists, and as a distribution otherwise. For every Borel set $A$ and
+  $c > 0$, $\Gamma(cA) = c^{d-\alpha}\Gamma(A)$, and
+  \begin{equation}\label{E:threshold}
+    \alpha_0+\alpha<2,
+  \end{equation}
+  with $0 < \alpha < d$, or $\alpha = d = 1$. In particular, the last case
+  includes spatial white noise $\Gamma = \delta_0$.
+\end{hypothesis}
+
+\paragraph{Zero covariance.}
+Hypothesis~\ref{H:homog} allows $\Gamma = 0$ by design. In this case the
+centered Gaussian noise is $\W = 0$, and the solution with initial data
+$(1,0)$ is $u(t,x) = 1$. Thus $\E|u(t,x)|^p = 1$ for every $p > 0$, and
+all normalized logarithmic moment rates are zero. Results asserting strict
+positivity of covariance-dependent quantities impose $\Gamma \ne 0$ locally.
+
+
+===== END context-model-assumptions.txt =====
+
+===== BEGIN context-covariance-foundation-baseline.txt =====
+{"source_path": "notes/integrated_covariance_foundation.tex", "source_revision": "cdde711c248862f33207860107dd0e6b31d60852", "selection": "WHOLE_FILE", "role": "UNASSIGNED complete baseline upstream module. Stated inputs/definitions may be used under checked application hypotheses; these proofs are NOT assigned or counted as additional reviewed proofs.", "bytes": 21173, "sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020"}
+===== RAW UTF8 SOURCE =====
+\section{Covariance bounds for physically masked wave fields}
+\label{S:masked-covariance}
+
+\input{notes/figures/mask-window-figure}
+
+We establish the covariance estimates needed for the operator construction.
+Throughout this section, Hypothesis~\ref{H:homog} holds, $a = \alpha_0$, and
+$\Gamma \ne 0$. For zero spatial covariance, the spatial spectral measures and
+noise variances vanish; the purely temporal estimates remain valid independently
+of $\Gamma$. We use the unitary Fourier transform
+\[
+  \widehat{f}(\xi) = c_d\int_{\R^d}e^{-i\xi\cdot x}f(x)\ud x,
+  \qquad c_d = (2\pi)^{-d/2}.
+\]
+The spectral convention in Hypothesis~\ref{H:homog} means that, for every
+complex Schwartz test $\varphi$,
+\begin{equation}\label{E:masked-spectral-convention}
+  \int_{\R^d}\varphi(x)\Gamma(\ud x)
+  = \int_{\R^d}\left(\int_{\R^d}e^{i\xi\cdot x}
+  \varphi(x)\ud x\right)\mu(\ud\xi).
+\end{equation}
+This is an identity of distribution pairings. We will not interchange two
+infinite measures in the associated oscillatory expression.
+
+A positive tempered Radon measure has polynomial mass growth. Indeed, choose a
+nonnegative compact smooth test that is at least one on the unit ball, and apply
+a defining Schwartz seminorm bound for the distribution to its dilations. Its
+mass on a ball of radius $R \ge 1$ is bounded by a power of $R$. Summation over
+dyadic shells then gives integrability of $(1+|x|)^{-N}$ for some $N$, and hence
+absolute integrability of every Schwartz test. These facts apply to both
+$\Gamma$ and $\mu$. Smooth cutoffs converge in the Schwartz topology, so these
+integrals agree with the tempered pairings.
+
+\subsection{Translated spectral growth and physical masks}
+
+\LeanMarker{P:masked-spectral-growth}
+\begin{proposition}[Translated spectral mass]\label{P:masked-spectral-growth}
+  Put
+  \[
+    M_\Gamma = \int_{\R^d}e^{-|x|^2/4}\Gamma(\ud x),
+    \qquad C_\Gamma = \frac{eM_\Gamma}{(2\sqrt{\pi})^d}.
+  \]
+  Then $0 < M_\Gamma < \infty$, and for $y \in \R^d$ and $r > 0$,
+  \begin{align}
+    \int_{\R^d}e^{-|\xi-y|^2/r^2}\mu(\ud\xi)
+    &= \left(\frac{r}{2\sqrt{\pi}}\right)^d
+    \int_{\R^d}e^{-r^2|x|^2/4}e^{-iy\cdot x}\Gamma(\ud x),
+    \label{E:masked-gaussian-transform}\\
+    0 \le \int_{\R^d}e^{-|\xi-y|^2/r^2}\mu(\ud\xi)
+    &\le \frac{r^\alpha M_\Gamma}{(2\sqrt{\pi})^d},
+    \qquad \mu(B(y,r)) \le C_\Gamma r^\alpha.
+    \label{E:masked-translated-ball}
+  \end{align}
+  The ball may be open or closed.
+\end{proposition}
+
+\begin{proof}
+  Temperedness gives finiteness of $M_\Gamma$. Its positivity follows from
+  $\Gamma \ne 0$. To check the Fourier constant, set $J(b) = \int_\R
+  e^{-Ax^2}e^{ibx}\ud x$ for $A > 0$. Squaring the real Gaussian integral and
+  using polar coordinates gives $J(0) = \sqrt{\pi/A}$. Differentiation and
+  integration by parts give $J'(b) = -bJ(b)/(2A)$. Therefore, $J(b) =
+  \sqrt{\pi/A}e^{-b^2/(4A)}$. Taking products over the coordinates gives
+  \[
+    \int_{\R^d}e^{-r^2|x|^2/4}e^{i(\xi-y)\cdot x}\ud x
+    = \left(\frac{2\sqrt{\pi}}r\right)^d e^{-|\xi-y|^2/r^2}.
+  \]
+  Apply~\eqref{E:masked-spectral-convention} to the single Schwartz test
+  $e^{-r^2|x|^2/4}e^{-iy\cdot x}$ to obtain \eqref{E:masked-gaussian-transform}.
+  Its left side is nonnegative. Taking the absolute value on the right removes
+  the complex phase because $\Gamma$ is nonnegative. The pushforward of $\Gamma$
+  by $x \mapsto rx$ assigns mass $r^{\alpha-d}\Gamma(A)$ to a Borel set $A$.
+  Thus,
+  \[
+    \int e^{-r^2|x|^2/4}\Gamma(\ud x) = r^{\alpha-d}M_\Gamma.
+  \]
+  This proves the Gaussian bound. On either ball $B(y,r)$ the integrand
+  $e^{-|\xi-y|^2/r^2}$ is at least $e^{-1}$, proving the mass bound. This proves
+  Proposition~\ref{P:masked-spectral-growth}.
+\end{proof}
+
+Choose and fix a real nonzero Schwartz function $\zeta$. For $R > 0$ put
+$\zeta_R(x) = \zeta(x/R)$, $k_R = \widehat{\zeta_R}$ and $L =
+\|\widehat{\zeta}\|_1$. Then $k_R(u) = R^d\widehat{\zeta}(Ru)$ and $\|k_R\|_1 =
+L > 0$. Define
+\begin{equation}\label{E:masked-auxiliary-measure}
+  \nu_R(\ud\eta) = \rho_R(\eta)\ud\eta,
+  \qquad \rho_R(\eta) = c_d^2L\int |k_R(\xi-\eta)|\mu(\ud\xi).
+\end{equation}
+
+\LeanMarker{P:masked-auxiliary-norm}
+\begin{proposition}[Auxiliary mask norm]\label{P:masked-auxiliary-norm}
+  The measure $\nu_R$ is even, tempered and Radon, with
+  \begin{equation}\label{E:masked-auxiliary-growth}
+    \nu_R(B(y,r)) \le c_d^2L^2C_\Gamma r^\alpha
+  \end{equation}
+  for all $y \in \R^d$ and $r > 0$, uniformly in $R > 0$. If $H$ is a separable
+  complex Hilbert space and $F$ is an $H$-valued Schwartz function, then
+  \begin{equation}\label{E:masked-hilbert-fourier}
+    \int \|\widehat{\zeta_RF}(\xi)\|_H^2\mu(\ud\xi)
+    \le \int \|\widehat{F}(\eta)\|_H^2\nu_R(\ud\eta).
+  \end{equation}
+  For a real $H$, the same assertion holds after complexification.
+\end{proposition}
+
+\begin{proof}
+  Schwartz decay of $k_R$ and polynomial growth of $\mu$ show that
+  $\rho_R(\eta)$ is finite at every $\eta$. On compact sets of $\eta$, the
+  integrands have a common integrable bound. Dominated convergence therefore
+  makes $\rho_R$ continuous, and $\nu_R$ is Radon. Since $\zeta$ is real,
+  $k_R(-u) = \overline{k_R(u)}$. Evenness of $\mu$ gives evenness of $\rho_R$.
+  Tonelli's theorem gives
+  \[
+    \nu_R(B(y,r)) = c_d^2L\int |k_R(u)|\mu(B(y+u,r))\ud u.
+  \]
+  Proposition~\ref{P:masked-spectral-growth} and $\|k_R\|_1 = L$ give
+  \eqref{E:masked-auxiliary-growth}. Polynomial growth on centered balls proves
+  temperedness by the same dyadic argument as above.
+
+  Bochner Fourier integration gives
+  \[
+    \widehat{\zeta_RF}(\xi)
+    = c_d\int k_R(\xi-\eta)\widehat{F}(\eta)\ud\eta.
+  \]
+  For scalar Schwartz functions this follows by Fourier inversion and absolute
+  integrability. It follows next for finite-rank Hilbert-valued functions. For
+  general $F$, take projections onto the successive spans of a countable
+  orthonormal basis of its separable range closure. They converge pointwise in
+  norm. The Schwartz bounds on $F$ dominate the Fourier integrals, proving the
+  identity by dominated convergence. In a finite-dimensional space the full
+  identity projection suffices; the zero space is immediate. The triangle
+  inequality and weighted Cauchy--Schwarz yield
+  \[
+    \|\widehat{\zeta_RF}(\xi)\|_H^2
+    \le c_d^2L\int |k_R(\xi-\eta)|\|\widehat{F}(\eta)\|_H^2\ud\eta.
+  \]
+  Integrating against $\mu$ and applying Tonelli's theorem proves
+  \eqref{E:masked-hilbert-fourier}. Its right side is finite by Schwartz decay
+  and temperedness of $\nu_R$. This proves
+  Proposition~\ref{P:masked-auxiliary-norm}.
+\end{proof}
+
+\subsection{Temporal completion and the original noise}
+
+The noise in~\eqref{E:cov} is also correlated in time, with kernel
+$|t-s|^{-a}$. We now complete the temporal tests in that form.
+
+\LeanMarker{L:masked-time-completion}
+\begin{lemma}[Temporal covariance completion]\label{L:masked-time-completion}
+  Let $T > 0$. The form
+  \[
+    \langle f,g\rangle_a
+    = \int_0^T\int_0^T f(t)g(s)|t-s|^{-a}\ud t\ud s
+  \]
+  is positive semidefinite on real compact smooth tests. Its null-quotient
+  completion $H_a$ is separable. The inclusion of tests extends continuously
+  from $L^2(0,T)$, with
+  \begin{equation}\label{E:masked-time-schur}
+    \LeanEqMarker{E:masked-time-schur}
+    \|f\|_a^2 \le \frac{2T^{1-a}}{1-a}\|f\|_2^2.
+  \end{equation}
+  In its complexification the norm is given by the same double integral with
+  $f(t)\overline{f(s)}$. In particular, bounded measurable amplitudes on a
+  subinterval, extended by zero, belong to this completion.
+\end{lemma}
+
+\begin{proof}
+  Write $\Gamma_E$ for Euler's Gamma function. Away from the null diagonal,
+  \[
+    |t-s|^{-a} = \frac1{\Gamma_E(a)}\int_0^\infty
+    \lambda^{a-1}e^{-\lambda|t-s|}\ud\lambda.
+  \]
+  This follows by substitution in the defining Gamma integral. Moreover,
+  \[
+    e^{-\lambda|t-s|}
+    = \int_{-\infty}^{\min(t,s)}2\lambda
+    e^{-\lambda(t-u)}e^{-\lambda(s-u)}\ud u.
+  \]
+  For each $\lambda > 0$ its quadratic form is an integral of a square. All
+  exchanges for compact smooth tests are absolutely integrable because the
+  kernel row integral is at most $2T^{1-a}/(1-a)$. The same bound and $2|xy| \le
+  |x|^2+|y|^2$ prove~\eqref{E:masked-time-schur}. A countable $L^2$-dense family
+  of compact smooth tests is consequently dense in $H_a$, proving separability.
+  The complex quadratic form is the sum of those of the real and imaginary
+  parts, since symmetry cancels the imaginary cross term. Thus, the same bound
+  holds after complexification. Smooth density in $L^2$, together with the Schur
+  bound on the absolute bilinear form, extends the inclusion and the integral
+  identity to $L^2$. This includes the stated interval amplitudes. This proves
+  Lemma~\ref{L:masked-time-completion}.
+\end{proof}
+
+Let $\mathcal{D}$ consist of finite sums $F(t,x) = \sum_j\tau_j(t)f_j(x)$ with
+real $\tau_j \in C_c^\infty(0,T)$ and real Schwartz $f_j$. These give
+$H_a$-valued Schwartz functions of $x$. Let $W$ denote the original real
+isonormal noise in~\eqref{E:cov}.
+
+\LeanMarker{P:masked-noise-completion}
+\begin{proposition}[Completion on the same noise]\label{P:masked-noise-completion}
+  The space $\mathcal{D}$ belongs to the original test-noise completion and
+  \begin{equation}\label{E:masked-actual-noise-norm}
+    \E W(F)^2 = (2\pi)^d\int
+    \|\widehat{F}(\xi)\|_{H_a^{\mathbb{C}}}^2\mu(\ud\xi).
+  \end{equation}
+  Define the auxiliary seminorm
+  \[
+    N_R(F)^2 = (2\pi)^d\int
+    \|\widehat{F}(\eta)\|_{H_a^{\mathbb{C}}}^2\nu_R(\ud\eta).
+  \]
+  Then $F \mapsto W(\zeta_RF)$ extends as a contraction from the null-quotient
+  completion for $N_R$ into the original $L^2(\Omega)$. The extension is
+  centered and jointly Gaussian. For finitely many real $F_1,\ldots,F_m \in
+  \mathcal{D}$, their masked covariance matrix is bounded in positive
+  semidefinite order by the matrix of auxiliary inner products. This gives
+  covariance comparison for every finite linear Gaussian image and every convex
+  norm power $p \ge 1$.
+\end{proposition}
+
+\begin{proof}
+  For real spatial Schwartz $f,g$, put $h(z) = \int f(y+z)g(y)\ud y$. Fourier
+  inversion and Parseval give
+  \[
+    h(z) = \int e^{i\xi\cdot z}\widehat{f}(\xi)
+    \overline{\widehat{g}(\xi)}\ud\xi.
+  \]
+  Therefore,
+  \[
+    \int e^{i\xi\cdot z}h(z)\ud z
+    = (2\pi)^d\widehat{f}(-\xi)\overline{\widehat{g}(-\xi)}.
+  \]
+  Apply~\eqref{E:masked-spectral-convention} to the single test $h$ and reflect
+  $\xi$ using evenness of $\mu$. The spatial covariance is thus
+  $(2\pi)^d\int\widehat{f}(\xi)\overline{\widehat{g}(\xi)}\mu(\ud\xi)$. Summing
+  over the finitely many temporal factors gives
+  \eqref{E:masked-actual-noise-norm}. Schwartz decay, temperedness and temporal
+  integrability justify these pairings. If $W$ is initially given only on
+  compact spatial tests, smooth expanding cutoffs converge in the Schwartz
+  topology. The spectral form is continuous in that topology, admitting
+  $\mathcal{D}$ in the same completion.
+
+  Proposition~\ref{P:masked-auxiliary-norm}, applied with $H =
+  H_a^{\mathbb{C}}$, gives $\E W(\zeta_RF)^2 \le N_R(F)^2$. It annihilates
+  auxiliary-null tests. An auxiliary Cauchy sequence thus gives a Cauchy
+  sequence of noise evaluations in $L^2(\Omega)$, proving the contraction
+  extension and its uniqueness. Every finite linear combination of the limits is
+  an $L^2$ limit of centered Gaussian variables. Their variances converge, so
+  their characteristic functions prove that the limits remain jointly centered
+  Gaussian.
+
+  For the finite family let $A$ be the covariance matrix and $B$ the auxiliary
+  Gram matrix. Applying the norm inequality to $\sum_i b_iF_i$ gives
+  $b^{\mathsf{T}}Ab \le b^{\mathsf{T}}Bb$ for every real vector $b$.
+  Diagonalizing $B-A$ constructs a centered Gaussian vector $Z$ of that
+  covariance, independent of the evaluation vector $X$, on a product space. Then
+  $X+Z$ has covariance $B$. Conditional Jensen gives $\E\|X\|^p \le \E\|X+Z\|^p$
+  for every norm and $p \ge 1$. Finite Gaussian moments ensure finiteness of
+  both sides. This proves Proposition~\ref{P:masked-noise-completion}.
+\end{proof}
+
+The auxiliary completion depends on $R$ and $\zeta$. Its construction does not
+define multiplication by $\zeta_R$ on the original noise quotient. Nor does the
+finite linear Gaussian comparison assert a covariance comparison for nonlinear
+wave solutions. The auxiliary and original test norms need not dominate one
+another. No spatial representative for every auxiliary class, nonnegative
+physical inverse covariance for $\nu_R$, or uniform density bound in $R$ is
+asserted.
+
+\LeanMarker{P:masked-quotient-obstruction}
+\begin{proposition}[A physical mask need not preserve noise-null tests]
+  \label{P:masked-quotient-obstruction}
+  In the admissible case $d = 2$, $\alpha = 1$, $0 < a < 1$ and $\Gamma =
+  \delta_0(\ud x_1)\ud x_2$, there is a real compact smooth mask $\zeta$ such
+  that no finite $C$ satisfies $\E W(\zeta F)^2 \le C\E W(F)^2$ for every
+  compact smooth test $F$.
+\end{proposition}
+
+\begin{proof}
+  Fourier inversion on Schwartz tests gives $\mu =
+  (2\pi)^{-1}\ud\xi_1\delta_0(\ud\xi_2)$ in the stated spectral convention. The
+  measure $\Gamma$ is nonnegative, even, positive definite and tempered, with
+  $\Gamma(cA) = c\Gamma(A)$. It therefore satisfies Hypothesis~\ref{H:homog}
+  with $\alpha = 1$. This is not spatial white noise in dimension two. For real
+  compact smooth $g$, its spatial covariance is, by ordinary Fubini,
+  \[
+    V(g) = \int_\R\left(\int_\R g(x_1,x_2)\ud x_2\right)^2\ud x_1.
+  \]
+  Choose real even $\chi \in C_c^\infty(\R)$ equal to one on $[-1,1]$ and zero
+  outside $[-2,2]$. For example, on $1 < r = |x| < 2$ use
+  \[
+    \chi(x) = \frac{e^{-1/(2-r)}}{e^{-1/(2-r)}+e^{-1/(r-1)}}.
+  \]
+  The endpoint exponentials vanish to every order, so the plateau pastes
+  smoothly. Let $I_\chi = \int(\chi')^2 > 0$ and $J_\chi = \int\chi^4 > 0$.
+  Positivity of $I_\chi$ follows because $\chi$ is not constant, and $J_\chi \ge
+  2$. Put $g(x) = \chi(x_1)\chi''(x_2)$ and $\zeta(x) = \chi(x_1)\chi(x_2)$.
+  Their unmasked marginal vanishes since $\int\chi'' = 0$, whereas integration
+  by parts gives the masked marginal $-I_\chi\chi(x_1)^2$. Thus, $V(g) = 0$ and
+  $V(\zeta g) = J_\chi I_\chi^2 > 0$. For a nonzero nonnegative $\tau \in
+  C_c^\infty(0,T)$, set $F(t,x) = \tau(t)g(x)$. The temporal factor
+  $\|\tau\|_a^2$ is finite and strictly positive because its nonnegative
+  integrand is positive on a set of positive two-dimensional measure.
+  Consequently, the full unmasked variance is zero and the masked variance is
+  positive. This proves Proposition~\ref{P:masked-quotient-obstruction}.
+\end{proof}
+
+No-go~\ref{P:nogo-22} records the quotient interpretation of this witness:
+the mask separates two representatives of the same noise-null class.
+This is why we mask tests before constructing the auxiliary completion.
+
+
+\subsection{Temporal modulation and continuous wave factors}
+
+Write $\langle x\rangle = \sqrt{1+x^2}$. Let $I = [s,s+h] \subset [0,T]$, with
+$0 < h \le 1$. Norms below are those of the complexified temporal completion in
+Lemma~\ref{L:masked-time-completion}.
+
+\LeanMarker{L:masked-temporal-modulation}
+\begin{lemma}[Modulated amplitudes]\label{L:masked-temporal-modulation}
+  Let $A \in C^1(I;\mathbb{C})$, $M = \sup_I|A|$ and $D = \sup_I|A'|$. For every
+  real $\omega$,
+  \begin{equation}\label{E:masked-temporal-modulation}
+    \|1_IA(t)e^{i\omega t}\|_a^2
+    \le C_0(a)h^{2-a}(M+hD)^2\langle h\omega\rangle^{a-1},
+    \qquad C_0(a) = \frac{16}{1-a}.
+  \end{equation}
+  The bound is uniform in $T,s,h,A$ and $\omega$.
+\end{lemma}
+
+\begin{proof}
+  Put $c(v) = \int_s^{s+h-v}A(u+v)\overline{A(u)}\ud u$ for $0 \le v \le h$.
+  Differentiation at the moving endpoint gives
+  \[
+    c'(v) = -A(s+h)\overline{A(s+h-v)}
+    +\int_s^{s+h-v}A'(u+v)\overline{A(u)}\ud u.
+  \]
+  Thus, $c(h) = 0$, $|c(v)| \le hM^2$ and $|c'(v)| \le M^2+hMD$. Splitting the
+  covariance square into its two conjugate triangles gives
+  \[
+    \|1_IA(t)e^{i\omega t}\|_a^2
+    = 2\operatorname{Re}\int_0^h v^{-a}e^{i\omega v}c(v)\ud v
+    = 2h^{2-a}\operatorname{Re}\int_0^1 y^{-a}e^{i\omega hy}f(y)\ud y,
+  \]
+  where $f(y) = c(hy)/h$. Set $K = M+hD$. Then $f(1) = 0$ and $|f|,|f'| \le
+  K^2$. If $K = 0$ the assertion is immediate. If $|\omega h| \le 1$, the last
+  integral is at most $K^2/(1-a)$ in absolute value, and $\langle\omega
+  h\rangle^{a-1} \ge 2^{(a-1)/2}$. The claimed constant is sufficient in this
+  case.
+
+  Now suppose $k = |\omega h| > 1$. On $[0,1/k]$ the integral is at most
+  $K^2k^{a-1}/(1-a)$. On $[1/k,1]$, integrate the exponential by parts. The
+  endpoint at one vanishes, while the other endpoint contributes at most
+  $K^2k^{a-1}$. The derivative integral, divided by $k$, is bounded by
+  \[
+    \frac{K^2}k\left(a\int_{1/k}^1 y^{-a-1}\ud y
+    +\int_{1/k}^1 y^{-a}\ud y\right)
+    \le K^2 k^{a-1}\left(1+\frac1{1-a}\right).
+  \]
+  Here $k^{-1} \le k^{a-1}$ since $a > 0$. The total is at most
+  $4K^2k^{a-1}/(1-a)$. Finally, $k^{a-1} \le \sqrt{2}\langle\omega
+  h\rangle^{a-1}$ and $8\sqrt{2} \le 16$. Including the factor $2h^{2-a}$ proves
+  the bound for either sign of $\omega$. This proves
+  Lemma~\ref{L:masked-temporal-modulation}.
+\end{proof}
+
+Lemma~\ref{L:masked-temporal-modulation} treats one exponential mode. A
+product of two sines or cosines is a sum of four such modes, which we bound
+next.
+
+\LeanMarker{L:masked-trig-products}
+\begin{lemma}[Correlated trigonometric products]\label{L:masked-trig-products}
+  Let $r,\rho \ge 0$. Let $P_r$ be either $\cos(rt)$ or $\sin(rt)$, and let
+  $Q_\rho$ be either $\cos(\rho t)$ or $\sin(\rho t)$. With the amplitude and
+  constant above,
+  \begin{align}
+    \|1_IAP_rQ_\rho\|_a^2
+    &\le C_0(a)h^{2-a}(M+hD)^2\mathcal{Q}_h(r,\rho),
+    \label{E:masked-trig-products}\\
+    \mathcal{Q}_h(r,\rho)
+    &:= \langle h(r-\rho)\rangle^{a-1}
+    +\langle h(r+\rho)\rangle^{a-1}.
+    \label{E:masked-frequency-pair}
+  \end{align}
+\end{lemma}
+
+\begin{proof}
+  Expanding the two trigonometric factors gives four complex exponential modes
+  with frequencies $\sigma r+\tau\rho$, $\sigma,\tau \in \{-1,1\}$, and
+  coefficients of absolute value $1/4$. In a Hilbert space,
+  \[
+    \left\|\sum_j c_jv_j\right\|^2
+    \le \left(\sum_j|c_j|\right)\sum_j|c_j|\|v_j\|^2.
+  \]
+  The first coefficient sum is one. Apply
+  Lemma~\ref{L:masked-temporal-modulation} to each mode. Two frequencies have
+  absolute value $|r-\rho|$ and two have absolute value $r+\rho$. This gives one
+  half of the asserted right side, and hence the bound. Repeated or zero
+  frequencies are permitted; no orthogonality or independence of the modes is
+  used. This proves Lemma~\ref{L:masked-trig-products}.
+\end{proof}
+
+\LeanMarker{L:masked-continuous-wave}
+\begin{lemma}[Continuous sine factors]\label{L:masked-continuous-wave}
+  Define $c_r(t) = \cos(rt)$ and
+  \[
+    b_r(t) = \langle r\rangle\frac{\sin(rt)}r\quad(r > 0),
+    \qquad b_0(t) = t.
+  \]
+  For $F_r \in \{c_r,b_r\}$ and $G_\rho \in \{c_\rho,b_\rho\}$,
+  \begin{equation}\label{E:masked-continuous-wave}
+    \|1_IF_rG_\rho\|_a^2
+    \le C_1(a)(1+T)^4h^{2-a}\mathcal{Q}_h(r,\rho),
+    \qquad C_1(a) = 4\cdot3^{1-a}C_0(a).
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  For $r \ge 1$, $b_r$ is a sine times a coefficient at most $\sqrt{2}$. For $0
+  \le r \le 1$, the fundamental theorem of calculus gives
+  \[
+    b_r(t) = t\langle r\rangle\int_0^1\cos(vrt)\ud v.
+  \]
+  This includes $r = 0$. Hence, a product $F_rG_\rho$ is a scalar coefficient of
+  absolute value at most two times a normalized integral of
+  $t^jP_{r'}(t)Q_{\rho'}(t)$, where $j \in \{0,1,2\}$ and $|r'-r|,|\rho'-\rho|
+  \le 1$. The integral is over zero, one or two copies of $[0,1]$; with no
+  averages, use a one-point probability space. Its parameter dependence is
+  continuous in $L^2(0,T)$ by dominated convergence.
+  Lemma~\ref{L:masked-time-completion} makes it continuous in $H_a$ as well.
+  Thus, the averages are Bochner integrals, and their $H_a$ images agree with
+  the pointwise averages by continuity of the inclusion. Hilbert Jensen bounds
+  the squared norm of an average by the average of the squared norms.
+
+  Apply Lemma~\ref{L:masked-trig-products} to each integrand with $A(t) = t^j$.
+  For $j = 0,1,2$, respectively, $M+hD$ is at most $1$, $T+1$ and $T^2+2T$. In
+  every case $(M+hD)^2 \le (1+T)^4$. For real $x,e$, the triangle inequality and
+  its reverse imply
+  \[
+    \frac{\langle x\rangle}{1+|e|}
+    \le \langle x+e\rangle \le (1+|e|)\langle x\rangle.
+  \]
+  The changes in $h(r\pm\rho)$ have magnitude at most two, since $h \le 1$.
+  Because $a-1 < 0$, each altered bracket to the power $a-1$ is at most
+  $3^{1-a}$ times the original one. Apply these comparisons, Hilbert Jensen and
+  the squared scalar coefficient bound four to obtain
+  \eqref{E:masked-continuous-wave}. This proves
+  Lemma~\ref{L:masked-continuous-wave}.
+\end{proof}
+
+These estimates concern covariance forms and temporal factors. Their application
+to displacement and velocity is in Section~\ref{S:wave-variance}; the subsequent
+operator, source and moment results require their separate proofs. They do not
+follow from covariance domination alone.
+
+===== END context-covariance-foundation-baseline.txt =====
+
+===== BEGIN context-wave-variance-baseline.txt =====
+{"source_path": "notes/integrated_wave_variance.tex", "source_revision": "cdde711c248862f33207860107dd0e6b31d60852", "selection": "WHOLE_FILE", "role": "UNASSIGNED complete baseline upstream module. Stated inputs/definitions may be used under checked application hypotheses; these proofs are NOT assigned or counted as additional reviewed proofs.", "bytes": 24927, "sha256": "66369d1bde2358f92e7edfb33f899bd96c2698a631e9ca0d9f330062ff55f8a6"}
+===== RAW UTF8 SOURCE =====
+\section{Frequency estimates and both wave variance directions}
+\label{S:wave-variance}
+
+We now apply the covariance and temporal estimates of
+Section~\ref{S:masked-covariance} to the full wave phase. We retain
+Hypothesis~\ref{H:homog}, write $a = \alpha_0$, and choose and fix
+\begin{equation}\label{E:variance-gamma-range}
+  0 < \gamma < \min\left(\frac12,\frac{2-\alpha}{2}\right).
+\end{equation}
+The interval is nonempty because $\alpha+a < 2$. We use $\langle\xi\rangle =
+\sqrt{1+|\xi|^2}$ and set
+\begin{equation}\label{E:variance-scale-profile}
+  B_\alpha(h) =
+  \begin{cases}
+    1, & \alpha < 1,\\
+    1+\log(1/h), & \alpha = 1,\\
+    h^{1-\alpha}, & \alpha > 1,
+  \end{cases}
+  \qquad 0 < h \le 1.
+\end{equation}
+
+\subsection{A scalar row estimate for a measure}
+
+Let $\nu$ be a positive Radon measure satisfying
+\begin{equation}\label{E:frequency-translated-growth}
+  \nu(B(y,r)) \le C r^\alpha,
+  \qquad y \in \R^d,\quad r > 0,
+\end{equation}
+where $C \ge 0$. If the estimate is initially known for open balls, apply it at
+radius $r+\epsilon$ and let $\epsilon \downarrow 0$ to obtain the closed-ball
+estimate. Neither evenness nor a density is assumed here.
+Using~\eqref{E:masked-frequency-pair}, define
+\begin{align}
+  \Phi_h(\xi,\eta)
+  &:= \frac{\mathcal{Q}_h(|\xi|,|\eta|)}
+  {\langle\xi\rangle\langle\eta\rangle},
+  \label{E:frequency-row-kernel}\\
+  J_h(\xi)
+  &:= \langle\xi\rangle^{2\gamma}
+  \int_{\R^d}\Phi_h(\xi,\xi-\lambda)\nu(\ud\lambda).
+  \label{E:frequency-row-integral}
+\end{align}
+These are initially nonnegative extended integrals. In particular, the notation
+denotes a pushforward of $\nu$, not integration against an assumed spectral
+density.
+
+\LeanMarker{P:frequency-row}
+\begin{proposition}[Uniform scalar row]\label{P:frequency-row}
+  There is a finite $K = K(\alpha,a,\gamma)$, independent of $d,\nu,C,h$ and
+  $\xi$, such that
+  \begin{equation}\label{E:frequency-row-bound}
+    \sup_{\xi\in\R^d}J_h(\xi) \le K C B_\alpha(h),
+    \qquad 0 < h \le 1.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  If $C = 0$, a countable covering by finite balls gives $\nu = 0$, and the
+  result is immediate. Suppose $C > 0$. For each $\xi$, let $\nu_\xi$ be the
+  pushforward under $\lambda \mapsto \eta = \xi-\lambda$. Then $\nu_\xi(B(0,R))
+  \le CR^\alpha$. For $q \ge 1$, put
+  \[
+    A_\xi(q) = \int_{|\eta|\le5q}\langle\eta\rangle^{-1}
+    \nu_\xi(\ud\eta).
+  \]
+  Choose $N = \lceil\log_2(5q)\rceil$, so $5q \le 2^N < 10q$. Splitting into the
+  unit ball and the annuli $2^j < |\eta| \le 2^{j+1}$ gives
+  \[
+    A_\xi(q) \le C\left(1+2^\alpha
+    \sum_{j=0}^{N-1}2^{j(\alpha-1)}\right).
+  \]
+  The geometric sum is bounded when $\alpha < 1$, is $N$ when $\alpha = 1$, and
+  is at most $2^{N(\alpha-1)}/(2^{\alpha-1}-1)$ when $\alpha > 1$. Hence,
+  \begin{equation}\label{E:frequency-inverse-bessel}
+    A_\xi(q) \le K_\alpha C
+    \begin{cases}
+      1, & \alpha < 1,\\
+      1+\log q, & \alpha = 1,\\
+      q^{\alpha-1}, & \alpha > 1,
+    \end{cases}
+  \end{equation}
+  with a constant depending only on $\alpha$.
+
+  Set $q = \max(1,|\xi|)$ and $\epsilon = 1-2\gamma > 0$. On $|\lambda| \le 4q$
+  we have $|\eta| \le 5q$. Both bracket powers in $\mathcal{Q}_h$ are at most
+  one, since $a-1 < 0$. The contribution of this region to $J_h(\xi)$ is at most
+  \[
+    2\langle\xi\rangle^{-\epsilon}A_\xi(q)
+    \le 2q^{-\epsilon}A_\xi(q).
+  \]
+  If $\alpha < 1$, this is uniformly bounded
+  by~\eqref{E:frequency-inverse-bessel}. If $\alpha = 1$, the bound follows from
+  \[
+    e^{-\epsilon u}(1+u) \le 1+\frac1{e\epsilon},
+    \qquad u = \log q \ge 0,
+  \]
+  since $u e^{-\epsilon u}$ has maximum $1/(e\epsilon)$. If $\alpha > 1$, the
+  remaining power is $q^{\alpha+2\gamma-2}$, whose exponent is negative
+  by~\eqref{E:variance-gamma-range}. Thus, the near contribution is at most a
+  constant times $C$ in all three cases.
+
+  On the far region write $r = |\lambda| > 4q$. Then
+  \[
+    |\eta| \ge \frac{3r}4,\qquad
+    \big||\eta|-|\xi|\big| \ge \frac r2,\qquad
+    |\eta|+|\xi| \ge \frac r2.
+  \]
+  Each oscillatory bracket is at least $\langle hr\rangle/2$, whereas
+  $\langle\eta\rangle^{-1} \le 4/(3r)$ and $\langle\xi\rangle^{-\epsilon} \le
+  1$. Consequently, the far contribution is at most
+  \[
+    \frac43\,2^{2-a}\int_{|\lambda|>4q}
+    |\lambda|^{-1}\langle h|\lambda|\rangle^{a-1}\nu(\ud\lambda).
+  \]
+  Enlarge the domain to $|\lambda| > 1$ and split it into dyadic annuli.
+  Applying~\eqref{E:frequency-translated-growth} to their masses bounds this
+  expression by a constant depending only on $\alpha,a$ times $C S(h)$, where
+  \[
+    S(h) = \sum_{j=0}^\infty
+    2^{j(\alpha-1)}\langle h2^j\rangle^{a-1}.
+  \]
+  Choose $L = \lfloor\log_2(1/h)\rfloor \ge 0$. For $j \le L$ the bracket power
+  is at most one. For $j \ge L+1$ it is at most $(h2^j)^{a-1}$. Since
+  $\alpha+a-2 < 0$, the tail is
+  \[
+    \frac{h^{a-1}2^{(L+1)(\alpha+a-2)}}{1-2^{\alpha+a-2}}
+    \le \frac{h^{1-\alpha}}{1-2^{\alpha+a-2}}.
+  \]
+  The inequality uses $2^{L+1} > 1/h$ and the negative exponent. The finite sum
+  is bounded by $1/(1-2^{\alpha-1})$ for $\alpha < 1$, by $1+\log_2(1/h)$ for
+  $\alpha = 1$, and by
+  \[
+    \frac{2^{\alpha-1}h^{1-\alpha}}{2^{\alpha-1}-1}
+  \]
+  for $\alpha > 1$. Since $h^{1-\alpha} \le 1$ in the first case, we obtain
+  $S(h) \le K_{\alpha,a}B_\alpha(h)$. Combining the near and far bounds, and
+  using $B_\alpha(h) \ge 1$, proves the assertion and finiteness of the original
+  integral. All constants arose from numerical shell estimates and are
+  independent of $d$. This proves Proposition~\ref{P:frequency-row}.
+\end{proof}
+
+For $\alpha = 1$ the profile $B_\alpha(h)$ in
+Proposition~\ref{P:frequency-row} carries a logarithm. After multiplication
+by $h^{2-a}$, we absorb it into a power of $h$.
+
+\LeanMarker{C:frequency-time}
+\begin{corollary}[A time exponent above one half]\label{C:frequency-time}
+  For every
+  \begin{equation}\label{E:variance-beta-range}
+    \frac12 < \beta < \min\left(1-\frac a2,
+    \frac{3-a-\alpha}{2}\right),
+  \end{equation}
+  there is a finite $K_\beta = K_\beta(\alpha,a,\gamma,\beta)$ such that
+  \begin{equation}\label{E:frequency-time-bound}
+    h^{2-a}\sup_\xi J_h(\xi) \le K_\beta C h^{2\beta},
+    \qquad 0 < h \le 1.
+  \end{equation}
+\end{corollary}
+
+\begin{proof}
+  Both upper endpoints in~\eqref{E:variance-beta-range} exceed one half, by $a <
+  1$ and $\alpha+a < 2$. If $\alpha < 1$, use $2-a > 2\beta$ in
+  Proposition~\ref{P:frequency-row}. If $\alpha > 1$, use $3-a-\alpha > 2\beta$.
+  For $\alpha = 1$, set $\delta = 2-a-2\beta > 0$ and $u = \log(1/h)$. Then
+  \[
+    h^\delta(1+\log(1/h))
+    = e^{-\delta u}(1+u) \le 1+\frac1{e\delta}.
+  \]
+  This absorbs the critical logarithm. No endpoint value of $\beta$ is used.
+  This proves Corollary~\ref{C:frequency-time}.
+\end{proof}
+
+\subsection{Forms on the full phase}
+
+Choose and fix $T > 0$. Set $\Lambda = (1-\Delta)^{1/2}$, $s = 1/2$ and $E_r =
+H^r(\R^d)\times H^{r-1}(\R^d)$. On the complexification of $E = E_s$, use inner
+products linear in the first slot. The map
+\[
+  Jz(\xi) = \left(\langle\xi\rangle^{1/2}\widehat{z}_1(\xi),
+  \langle\xi\rangle^{-1/2}\widehat{z}_2(\xi)\right)
+\]
+is unitary onto $L^2(\R^d;\mathbb{C}^2)$. The full massless wave group has
+Fourier matrix
+\begin{equation}\label{E:variance-free-matrix}
+  S(t,\xi) =
+  \begin{pmatrix}
+    \cos(t|\xi|) & \sin(t|\xi|)/|\xi|\\
+    -|\xi|\sin(t|\xi|) & \cos(t|\xi|)
+  \end{pmatrix},
+\end{equation}
+where the sine quotient is $t$ at zero. Let $B(b)(u,v) = (0,bu)$. Choose and fix
+a real even nonnegative $\zeta \in C_c^\infty(\R^d)$ equal to one on $B_1$ and
+zero off $B_2$, and put $\zeta_R(x) = \zeta(x/R)$ for $R > 0$. For $I =
+[t_0,t_0+h] \subset [0,T]$, $0 < h \le 1$, and Schwartz phases $z,w$, put
+\begin{align}
+  v_z(t) &= [S(t)z]_1,
+  \label{E:variance-displacement}\\
+  G_w(t) &= -\frac{\sin(t|D|)}{|D|}\Lambda w_1
+  +\cos(t|D|)\Lambda^{-1}w_2,
+  \label{E:variance-dual-wave}\\
+  F_{z,w}(t,x) &= 1_I(t)v_z(t,x)\overline{G_w(t,x)},
+  \qquad \ell_R(I;z,w) = W_{\mathbb{C}}(\zeta_RF_{z,w}),
+  \label{E:variance-actual-form}
+\end{align}
+where $W_{\mathbb{C}}(F) = W(\operatorname{Re}F)+iW(\operatorname{Im}F)$. There
+is no observation cutoff in this definition.
+
+We first assume $\Gamma \ne 0$. If $\Gamma = 0$, all forms and the column maps
+below are zero, so their bounds hold directly. For the nonzero case, let $\nu_R$
+be~\eqref{E:masked-auxiliary-measure} and set
+\begin{equation}\label{E:variance-actual-growth-constant}
+  L_\zeta = \|\widehat{\zeta}\|_1,\qquad
+  C_\nu = c_d^2L_\zeta^2C_\Gamma.
+\end{equation}
+Proposition~\ref{P:masked-auxiliary-norm} gives a positive even tempered Radon
+measure with $\nu_R(B(y,r)) \le C_\nu r^\alpha$, uniformly in $R$.
+
+\LeanMarker{P:actual-wave-form}
+\begin{proposition}[Form and phase kernel]\label{P:actual-wave-form}
+  The tests $\zeta_RF_{z,w}$ in~\eqref{E:variance-actual-form} belong to the
+  original noise completion. The form $\ell_R$ is linear in $z$ and conjugate
+  linear in $w$, and uses the same $W$ as the model. For a smooth deterministic
+  coefficient $b$ with common compact spatial support and bounded spatial
+  derivatives on $[0,T]$,
+  \begin{equation}\label{E:variance-physical-adjoint}
+    \langle S(-t)B(b(t))S(t)z,w\rangle_E
+    = \int b(t,x)v_z(t,x)\overline{G_w(t,x)}\ud x.
+  \end{equation}
+  For a real compact smooth $\chi$, multiplication $D_\chi$ on both phase
+  entries has adjoint
+  \begin{equation}\label{E:variance-cutoff-adjoint}
+    D_\chi^{*,E}w
+    = \left(\Lambda^{-1}\chi\Lambda w_1,
+    \Lambda\chi\Lambda^{-1}w_2\right).
+  \end{equation}
+  With $U = Jz$, $V = Jw$, $r = |\xi|$, $\rho = |\eta|$ and the continuous
+  functions $c_r,b_r$ of Lemma~\ref{L:masked-continuous-wave}, set
+  \begin{equation}\label{E:variance-normalized-kernel}
+    \mathcal{K}(t;\xi,\eta)
+    = \frac1{\sqrt{\langle\xi\rangle\langle\eta\rangle}}
+    \begin{pmatrix}
+      -b_rc_\rho & -b_rb_\rho\\
+      c_rc_\rho & c_rb_\rho
+    \end{pmatrix}(t).
+  \end{equation}
+  Then
+  \begin{equation}\label{E:variance-normalized-covariance}
+    \E|\ell_R(I;z,w)|^2
+    \le \int\left\|\int\sum_{i,j=1}^2
+    1_I\mathcal{K}_{ij}(\cdot;\eta+\lambda,\eta)
+    U_j(\eta)\overline{V_i(\eta+\lambda)}\ud\eta
+    \right\|_{H_a^{\mathbb{C}}}^2\nu_R(\ud\lambda).
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  The wave multipliers are smooth at zero through the continuous sine quotient,
+  with polynomially bounded frequency derivatives on finite time intervals.
+  Bessel multipliers preserve Schwartz space. Thus, $v_z,G_w$ and their product
+  are continuous in all Schwartz seminorms on $[0,T]$. For tests supported in a
+  fixed compact $K$, the absolute spatial pairing is bounded by
+  \[
+    |K|\Gamma(K-K)\|F(t)\|_\infty\|H(u)\|_\infty.
+  \]
+  Indeed, only $y \in K-K$ contributes to $\int\Gamma(\ud y)\int
+  F(t,x)\overline{H(u,x-y)}\ud x$. Combine this with the temporal Schur bound
+  and approximate the interval indicator and the continuous time dependence by
+  smooth interior temporal tests, keeping the spatial support of $\zeta_R$. This
+  admits the masked product in the original completion in every allowed
+  dimension.
+
+  We also identify its auxiliary and spectral limits. Approximate a
+  Schwartz-valued function on $I$ by time partitions with frozen spatial values,
+  and then replace the finitely many indicators by compact smooth temporal
+  functions. A diagonal sequence $F_n$ of finite temporal tensors converges in
+  $L^2$ time in every Schwartz seminorm. Fourier integration by parts and the
+  spatial weighted supremum bounds give, for sufficiently large fixed $N$,
+  \[
+    \|\widehat{F_n-F}(\xi)\|_{L^2(0,T)}
+    \le \epsilon_n\langle\xi\rangle^{-N},\qquad \epsilon_n \to 0.
+  \]
+  Choose $N$ so that the square weight is integrable against both tempered
+  measures $\mu$ and $\nu_R$. Lemma~\ref{L:masked-time-completion} gives
+  convergence in their spectral $H_a$ norms. Multiplication by the fixed
+  $\zeta_R$ preserves these $L^2$ Schwartz-seminorm limits, so the masked
+  differences converge in the $\mu$ spectral norm too. The preceding
+  compact-support estimate also gives convergence in the original completion.
+  Hence, the auxiliary extension and original-noise limit agree on these
+  products. Constants for this admission argument may depend on $R$; they are
+  not the uniform variance constants below.
+
+  For real tensor tests $f,g$, the Hermitian symmetry of their spatial
+  transforms gives
+  \[
+    A(-\xi) = \overline{A(\xi)},\qquad
+    A(\xi) = \langle\widehat{f}(\xi),\widehat{g}(\xi)\rangle_{H_a^{\mathbb{C}}}.
+  \]
+  Integration against either even $\mu$ or even $\nu_R$ cancels the imaginary
+  mixed term. Expanding the squared norm of $\widehat{f}+i\widehat{g}$, then
+  using the preceding approximation, extends
+  Proposition~\ref{P:masked-noise-completion} to the present complex tests:
+  \begin{equation}\label{E:variance-complex-noise}
+    \E|W_{\mathbb{C}}(\zeta_RF)|^2
+    = (2\pi)^d\int\|\widehat{\zeta_RF}(\xi)\|_{H_a^{\mathbb{C}}}^2\mu(\ud\xi)
+    \le (2\pi)^d\int\|\widehat{F}(\lambda)\|_{H_a^{\mathbb{C}}}^2\nu_R(\ud\lambda).
+  \end{equation}
+  This is a bound for the masked noise, not a declaration that its law is
+  stationary. Complex linearity of $W_{\mathbb{C}}$ and linearity of $v_z,G_w$
+  prove the stated sesquilinearity.
+
+  Smooth multiplication is bounded on each Sobolev space: Fourier convolution,
+  the inequality $\langle\xi\rangle^r\langle\eta\rangle^{-r} \le
+  2^{|r|/2}\langle\xi-\eta\rangle^{|r|}$ and weighted Schwartz decay reduce this
+  to the $L^1*L^2$ bound. The free matrix is strongly continuous and bounded on
+  $E$ on compact time intervals, directly by its weighted Fourier entries. Thus,
+  the ordinary first-response integral exists on states. Since $S(-t)(0,f) =
+  (-\sin(t|D|)f/|D|,\cos(t|D|)f)$, moving the real self-adjoint multipliers and
+  the two Sobolev weights onto $w$ proves \eqref{E:variance-physical-adjoint}.
+  The same weighted duality gives \eqref{E:variance-cutoff-adjoint}. Inserting
+  this adjoint in $G_w$ is the correctly observed form; $D_\chi$ need not be
+  self-adjoint on $E$. This deterministic identity does not identify a
+  positive-width source with the original noise or assert a source limit.
+
+  The definitions give exactly
+  \begin{align*}
+    \widehat{v}_z(t,\eta)
+    &= \langle\eta\rangle^{-1/2}
+    [c_\rho(t)U_1(\eta)+b_\rho(t)U_2(\eta)],\\
+    \widehat{G}_w(t,\xi)
+    &= \langle\xi\rangle^{-1/2}
+    [-b_r(t)V_1(\xi)+c_r(t)V_2(\xi)].
+  \end{align*}
+  Their product gives~\eqref{E:variance-normalized-kernel}. At zero frequencies
+  one uses the continuous sine quotient, not division by zero; at $\xi = \eta =
+  0$ the matrix is
+  $\left(\begin{smallmatrix}-t&-t^2\\1&t\end{smallmatrix}\right)$. Fourier
+  multiplication with the conjugate yields
+  \[
+    \widehat{F}_{z,w}(t,-\lambda)
+    = c_d1_I(t)\int\sum_{i,j=1}^2\mathcal{K}_{ij}(t;\eta+\lambda,\eta)
+    U_j(\eta)\overline{V_i(\eta+\lambda)}\ud\eta.
+  \]
+  The spatial integral is absolutely convergent uniformly on the finite time
+  interval by Schwartz decay. The Schur bound also makes it a Bochner
+  $H_a^{\mathbb{C}}$ integral. Reflect $\lambda$ using evenness of $\nu_R$
+  in~\eqref{E:variance-complex-noise}. Since $(2\pi)^dc_d^2 = 1$, this
+  proves~\eqref{E:variance-normalized-covariance} with no remaining Fourier
+  factor. This proves Proposition~\ref{P:actual-wave-form}.
+\end{proof}
+
+\subsection{Bessel's inequality and the two variances}
+
+Proposition~\ref{P:actual-wave-form} bounds the variance of one form
+$\ell_R(I;z,w)$. To sum it over an orthonormal family of phases, we need a
+Bessel inequality with values in $H_a^{\mathbb{C}}$.
+Proposition~\ref{P:wave-two-variances} uses it in both directions.
+
+\LeanMarker{L:phase-bessel}
+\begin{lemma}[Hilbert-valued finite Bessel inequality]\label{L:phase-bessel}
+  Let $H$ be a separable complex Hilbert space, let $\{u_k\}$ be a finite
+  orthonormal family in $L^2(\R^d;\mathbb{C}^2)$, and let $g = (g_1,g_2) \in
+  L^2(\R^d;H^2)$. Then
+  \begin{equation}\label{E:phase-bessel}
+    \sum_k\left\|\int\sum_{j=1}^2u_{k,j}(\eta)g_j(\eta)\ud\eta\right\|_H^2
+    \le \int\sum_{j=1}^2\|g_j(\eta)\|_H^2\ud\eta.
+  \end{equation}
+  The same bound holds with $\overline{u_{k,j}}$ in place of $u_{k,j}$.
+\end{lemma}
+
+\begin{proof}
+  Expand $g$ in a countable orthonormal basis of $H$. On each scalar coefficient
+  apply scalar Bessel to the orthonormal family $\{\overline{u_k}\}$, or to
+  $\{u_k\}$ for the conjugated version. Scalar finite Bessel follows by
+  subtracting an orthogonal finite projection and expanding its nonnegative
+  squared norm. Sum over the $H$ basis and use Parseval and nonnegative Tonelli.
+  The Bochner integrals exist by $L^2$ Cauchy--Schwarz. A finite-dimensional $H$
+  uses its finite basis, and the zero space is immediate. No independence is
+  involved. This proves Lemma~\ref{L:phase-bessel}.
+\end{proof}
+
+\LeanMarker{P:wave-two-variances}
+\begin{proposition}[Both variance directions]\label{P:wave-two-variances}
+  There is a finite $C_T$, depending on the fixed model, mask,
+  $a,\alpha,\gamma,T$, but not on $R,I$ or the orthonormal family, such that for
+  every finite complex $E$-orthonormal Schwartz family $\{e_k\}$ and every
+  Schwartz phase $z$,
+  \begin{align}
+    \sum_k\E|\ell_R(I;e_k,z)|^2
+    &\le C_T h^{2-a}B_\alpha(h)\|z\|_{E_{s-\gamma}}^2,
+    \label{E:wave-input-variance}\\
+    \sum_k\E|\ell_R(I;z,e_k)|^2
+    &\le C_T h^{2-a}B_\alpha(h)\|z\|_{E_{s-\gamma}}^2.
+    \label{E:wave-output-variance}
+  \end{align}
+  For every $\beta$ in~\eqref{E:variance-beta-range}, either right side may be
+  replaced by $C_{T,\beta}h^{2\beta}\|z\|_{E_{s-\gamma}}^2$.
+\end{proposition}
+
+\begin{proof}
+  Each entry in~\eqref{E:variance-normalized-kernel} is a product of two
+  continuous wave factors times $(\langle\xi\rangle\langle\eta\rangle)^{-1/2}$,
+  with a possible minus sign. Lemma~\ref{L:masked-continuous-wave} therefore
+  gives
+  \begin{equation}\label{E:variance-kernel-time-bound}
+    \|1_I\mathcal{K}_{ij}(\cdot;\xi,\eta)\|_{H_a^{\mathbb{C}}}^2
+    \le A_T h^{2-a}\Phi_h(\xi,\eta),
+    \qquad A_T = C_1(a)(1+T)^4.
+  \end{equation}
+  The positive even Radon measure $\nu_R$ satisfies the growth bound
+  \eqref{E:variance-actual-growth-constant}. Thus, all hypotheses of
+  Proposition~\ref{P:frequency-row} hold, and
+  \begin{equation}\label{E:variance-actual-row-bound}
+    \int\Phi_h(\xi,\xi-\lambda)\nu_R(\ud\lambda)
+    \le K C_\nu B_\alpha(h)\langle\xi\rangle^{-2\gamma}.
+  \end{equation}
+  No nonnegative physical inverse covariance of $\nu_R$ is needed.
+
+  The kernels used in Lemma~\ref{L:phase-bessel} belong to its stated $L^2$
+  space for each fixed $\lambda$. Indeed, $|c_r(t)| \le 1$ and $|b_r(t)| \le
+  \sqrt{2}\max(1,T)$ on $[0,T]$, by the high- and low-frequency representations.
+  The kernels are continuous into $L^2(0,T)$ in their frequency variables, hence
+  into $H_a^{\mathbb{C}}$ by Schur. Separability gives strong measurability.
+  Multiplication by shifted Schwartz components of $U$ or $V$ then gives the
+  required $L^2$ integrability. Later $\lambda$ integrals are of nonnegative
+  functions; their finiteness follows from the estimates below.
+
+  First fix $V = Jz$ and let $U_k = Je_k$ be the input family.
+  In~\eqref{E:variance-normalized-covariance} set
+  \[
+    g_j^\lambda(\eta) = \sum_{i=1}^2
+    1_I\mathcal{K}_{ij}(\cdot;\eta+\lambda,\eta)
+    \overline{V_i(\eta+\lambda)}.
+  \]
+  Lemma~\ref{L:phase-bessel} and Cauchy--Schwarz over the two output components
+  give
+  \begin{align*}
+    \sum_j\|g_j^\lambda(\eta)\|_{H_a^{\mathbb{C}}}^2
+    &\le 2\sum_{i,j}|V_i(\eta+\lambda)|^2
+    \|1_I\mathcal{K}_{ij}(\cdot;\eta+\lambda,\eta)\|_{H_a^{\mathbb{C}}}^2\\
+    &\le 4A_T h^{2-a}\Phi_h(\eta+\lambda,\eta)
+    \sum_i|V_i(\eta+\lambda)|^2.
+  \end{align*}
+  Change variables $\xi = \eta+\lambda$ in the Lebesgue integral for each
+  $\lambda$, apply Tonelli and~\eqref{E:variance-actual-row-bound}, and use
+  $\|z\|_{E_{s-\gamma}} = \|\langle\xi\rangle^{-\gamma}Jz\|_2$. This
+  proves~\eqref{E:wave-input-variance} with $C_T = 4A_TKC_\nu$.
+
+  Next fix $U = Jz$ and let $V_k = Je_k$ be the output family. After $\eta =
+  \xi-\lambda$ in~\eqref{E:variance-normalized-covariance}, put
+  \[
+    f_i^\lambda(\xi) = \sum_{j=1}^2
+    1_I\mathcal{K}_{ij}(\cdot;\xi,\xi-\lambda)U_j(\xi-\lambda).
+  \]
+  Apply the conjugated version of Lemma~\ref{L:phase-bessel}. Cauchy--Schwarz
+  over the two input components bounds its right side by
+  \[
+    4A_T h^{2-a}\int\Phi_h(\xi,\xi-\lambda)
+    \sum_j|U_j(\xi-\lambda)|^2\ud\xi.
+  \]
+  After the change of variables and Tonelli, the row at fixed $\eta$ is
+  $\int\Phi_h(\eta+\lambda,\eta)\nu_R(\ud\lambda)$. Reflect $\lambda$ using the
+  evenness of $\nu_R$ and then use symmetry of $\Phi_h$. This row becomes
+  $\int\Phi_h(\eta,\eta-\lambda)\nu_R(\ud\lambda)$, which is bounded
+  by~\eqref{E:variance-actual-row-bound} with $\xi = \eta$. This proves
+  \eqref{E:wave-output-variance} with the same $C_T$.
+
+  Use Corollary~\ref{C:frequency-time} for $h^{2-a}$ times the row integral at
+  the two applications above to obtain the asserted $h^{2\beta}$ bounds,
+  including strict absorption of the critical logarithm. The constants are
+  uniform in $R,I$ and family size. The $R$-dependent admission estimate was not
+  used as this uniform variance bound. This proves
+  Proposition~\ref{P:wave-two-variances}.
+\end{proof}
+
+\subsection{Mean-square columns on the original probability space}
+
+Write $E_r^{\mathrm{real}}$ for the real phase space in dimension $d$.
+
+\begin{proposition}[Column and adjoint-column maps]\label{P:wave-square-columns}
+  On the same probability space there are deterministic bounded real linear maps
+  \[
+    m_{R,I},n_{R,I}:E_{s-\gamma}^{\mathrm{real}}\longrightarrow
+    L^2(\Omega;E_s^{\mathrm{real}}),
+  \]
+  with squared bounds $C_T h^{2-a}B_\alpha(h)$, such that, for every fixed real
+  Schwartz pair $z,w$,
+  \begin{equation}\label{E:variance-square-columns}
+    \langle m_{R,I}z,w\rangle_E
+    = \ell_R(I;z,w) = \langle z,n_{R,I}w\rangle_E
+    \quad\text{in }L^2(\Omega).
+  \end{equation}
+  Fixed-vector values and finite families of values are centered Gaussian.
+\end{proposition}
+
+\begin{proof}
+  Choose a countable real Schwartz orthonormal basis $\{e_k\}$ of $E_s$. Such a
+  basis follows by Gram--Schmidt from a countable dense Schwartz family,
+  discarding zero residuals. Schwartz density follows by smooth Fourier cutoff
+  approximation in the weighted $L^2$ norms: approximate by compact smooth
+  Fourier coordinates, replace $g(\xi)$ by $(g(\xi)+\overline{g(-\xi)})/2$, and
+  apply the inverse Bessel/Fourier maps. The resulting phases are real Schwartz,
+  and Gram--Schmidt preserves that class. The same density holds in
+  $E_{s-\gamma}$.
+
+  For fixed real Schwartz $z$, define
+  \[
+    m_N(z) = \sum_{k\le N}\ell_R(I;z,e_k)e_k,
+    \qquad n_N(z) = \sum_{k\le N}\ell_R(I;e_k,z)e_k.
+  \]
+  Both are finite Gaussian sums on the original $W$. By
+  Proposition~\ref{P:wave-two-variances}, their coefficient expected squares
+  have finite sum. Orthogonality gives the squared tail norms as the
+  corresponding sums of expected squares. Thus, both sequences converge in
+  $L^2(\Omega;E_s)$ to $m(z),n(z)$ with the asserted bounds, without
+  independence of the coefficients. Finite-sum measurability and separable $E_s$
+  give strong measurability of the limits. The bounded real linear maps extend
+  uniquely from Schwartz phases to $E_{s-\gamma}$.
+
+  If $w_N$ is the $E_s$ projection of a Schwartz $w$ onto the first $N$ basis
+  vectors, then $\langle m_N(z),w\rangle_E = \ell_R(I;z,w_N)$. The singleton
+  form of~\eqref{E:wave-output-variance}, after normalizing $w-w_N$ in $E_s$,
+  gives
+  \[
+    \E|\ell_R(I;z,w-w_N)|^2
+    \le C_T h^{2-a}B_\alpha(h)\|z\|_{E_{s-\gamma}}^2\|w-w_N\|_{E_s}^2.
+  \]
+  The zero residual is immediate. The right side tends to zero, giving the first
+  identity in~\eqref{E:variance-square-columns}. For the second, project $z$
+  instead and use the singleton input bound \eqref{E:wave-input-variance}. A
+  fixed countable Schwartz orthonormal basis and Parseval show basis
+  independence of the constructed limits.
+
+  Continuous linear functionals of the limits, and finite linear combinations of
+  such functionals, are $L^2$ limits of centered Gaussian variables with
+  convergent variances. Their characteristic functions therefore converge to
+  those of centered Gaussians. The same reasoning after the bounded input
+  extension proves joint Gaussianity for arbitrary fixed inputs and finite
+  families of the two maps. This proves Proposition~\ref{P:wave-square-columns}.
+\end{proof}
+
+These are maps into $L^2(\Omega;E_s)$ for fixed intervals. No common uncountable
+almost-sure version, random bounded operator, Hilbert--Schmidt realization, time
+path, source convergence or new solution-moment bound is inferred by this
+section alone. Both variance directions are retained in
+Section~\ref{S:actual-operator-driver}.
+
+===== END context-wave-variance-baseline.txt =====
+

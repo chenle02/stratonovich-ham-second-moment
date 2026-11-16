@@ -1,0 +1,336 @@
+{
+  "review_record_id": "RP015",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side math/source adjudication, not a new independent scientific vote",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "1a9205b7f5426ed543d31c57cce622f83f223908",
+  "source_file": "notes/integrated_radius_anchor.tex",
+  "source_binding_sha256": "21045cce46b6b9d360609f534ff1ef607b65bcb82ed37410ae18fc04aacf511c",
+  "public_report_sha256": "f962d01e1986ad1cb391e66f28640d8c3f6c8762f0a2ce489ebe18a3dba8a334",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "SCOPED_ARGUMENT_PRESERVATION_SUPPORTED_WITH_REPORT_ONLY_FOURIER_TRANSCRIPTION_NOTE",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:radius-outer-maps": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    },
+    "P:radius-compact-envelopes": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:radius-actual-moments": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "C:radius-covariance-residuals": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:radius-mean-anchor": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:radius-outer-maps",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "report_heading_lf": 9,
+      "source_old_statement_lf": [
+        39,
+        49
+      ],
+      "source_old_proof_lf": [
+        51,
+        86
+      ],
+      "source_new_statement_lf": [
+        39,
+        49
+      ],
+      "source_new_proof_lf": [
+        51,
+        96
+      ],
+      "source_old_proof_sha256": "32e70cc6ece3765dc14caf29fee42467904a37a131bb68ac950a5a90da9c6786",
+      "source_new_proof_sha256": "4246047200546dbdc7470d09b9de03c3effb441e72be8fd53f95c774a0962207",
+      "mathematical_check": "The report reconstructs the two exact weighted kernels from the unitary Euclidean transform and unnormalized torus modes: inversion c_d cancels the ordinary-integral c_d^-1 in periodization, and recovery has L^-d/2 directly. Scaling and Peetre yield rho^(d/2) F(k-rho xi); the integral in xi contributes rho^-d while the unit lattice sum has no density factor. Thus the mixed Schur quantities are C rho^-d/2 and C rho^d/2, whose product is independent of radius before the square root. Sign reflection is harmless in the Schwartz majorant. Full real Sobolev domains, negative indices and distributional recovery follow from the supplied unassigned factorization/density input. One report-only intermediate Fourier definition in scaling Step2 drops c_d; the initial exact-kernel derivation correctly retains/cancels it and the final scaling identity is correct. This does not expose a source normalization error or leave the assigned kernel derivation absent.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:radius-compact-envelopes",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "report_heading_lf": 25,
+      "source_old_statement_lf": [
+        93,
+        105
+      ],
+      "source_old_proof_lf": [
+        107,
+        155
+      ],
+      "source_new_statement_lf": [
+        103,
+        115
+      ],
+      "source_new_proof_lf": [
+        117,
+        184
+      ],
+      "source_old_proof_sha256": "2ccb8fc7cb0e143f36f61539b402e51b9107c298f7614ec998a59c1ba8d0f51c",
+      "source_new_proof_sha256": "334988c16497951dcfd7af3d8281c65fdf27a5bab9277e279819eb8245d9e882",
+      "mathematical_check": "The exact chi_rho psi_rho=chi_rho recovery factorization is on the full L2 domain, with Bessel isometries and normalized torus diagonal <k/rho>^-gamma. On each unit cube, <x/rho><=sqrt(2(1+d/4))<k/rho>, giving the direction <k/rho>^-u<=c^u<x/rho>^-u for u=q gamma>d. Unit cube volume and y=x/rho yield rho^d times an integrable Euclidean weight. Rank j-1 diagonal truncation and bounded outer maps transfer s_j<=C lambda_j; summing qth powers and taking the root gives rho^(d/q), not rho^d. Two balanced blocks contribute by direct-sum qth-power addition; the unitary swap preserves the input/output norms. The later gamma<1/2 restriction forces q>2d, so no Hilbert-Schmidt or cutoff-projection claim is inferred.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:radius-actual-moments",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "report_heading_lf": 42,
+      "source_old_statement_lf": [
+        163,
+        175
+      ],
+      "source_old_proof_lf": [
+        177,
+        250
+      ],
+      "source_new_statement_lf": [
+        192,
+        204
+      ],
+      "source_new_proof_lf": [
+        206,
+        303
+      ],
+      "source_old_proof_sha256": "b483ccd3d03cbafc9e53da7a39c59be7535878ec933f2d4c24131e55b0def185",
+      "source_new_proof_sha256": "0d7921480c31c6ed07731c762fa59f2cdeee59950e11acad2ed1bb11f2827b94",
+      "mathematical_check": "The public deduction retains actual smooth-test Gaussian coefficient sums on the same W and enlarges only the envelope rho=2R+B+2<=(B+4)R; the physical mask remains eta(x/R)^2. Both localizations and both weighted variance inequalities have the supplied upstream hypotheses, including the same base eta^2 and R,N,I-independent variance constant. The finite Gaussian bound at even q>=Q gives sqrt(q-1) h^(1-a/2) B_alpha(h)^(1/2) times the Schatten q envelope norm. Normalizing the singular-value sequence proves ||K||Sq<=||K||SQ, fixing both radius exponent d/Q and envelope constant before q varies. Strict beta_t gaps absorb the alpha=1 logarithm and alpha>1 power. Finite maxima of dyadic increments give factor 2^(n/q) without independence; after 2^(n eta_t), the geometric gap beta_t-eta_t-1/Q>0 is uniform in q. Sup/Holder chaining uses zero-initial continuous finite paths, coarse unit partitions and C^eta_t\u2192C^theta. Passing N\u2192infinity at each fixed R preserves the explicit radius bound without radius-uniform construction convergence. A controlled even q above v gives sqrt(v) with fixed C_Q,B.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "C:radius-covariance-residuals",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "report_heading_lf": 70,
+      "source_old_statement_lf": [
+        257,
+        269
+      ],
+      "source_old_proof_lf": [
+        271,
+        286
+      ],
+      "source_new_statement_lf": [
+        310,
+        322
+      ],
+      "source_new_proof_lf": [
+        324,
+        339
+      ],
+      "source_old_proof_sha256": "b6651ef488ce3d8469e9f087f4dacded83f23c9efaee844d30b2c9b4d1660dbc",
+      "source_new_proof_sha256": "b6651ef488ce3d8469e9f087f4dacded83f23c9efaee844d30b2c9b4d1660dbc",
+      "mathematical_check": "The unchanged proof is reconstructed in public. The named unassigned covariance-contraction theorem applies to these same deterministic maps and mask, comparing the path norm to a reference isonormal path norm without replacing Y. The covariance-zero case is zero. For deterministic orthogonal Pi, ||(I-Pi)T_delta,m f||HW<=||T_delta,m f||HW=||f||fast, so C=1; infinite rank and deterministic delta/R dependence are allowed. Joint residual blocks stay coupled to the given slow W and may be correlated or outside a single fast-noise span. No random noise-dependent projection or false block independence is used.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:radius-mean-anchor",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "report_heading_lf": 84,
+      "source_old_statement_lf": [
+        296,
+        321
+      ],
+      "source_old_proof_lf": [
+        323,
+        346
+      ],
+      "source_new_statement_lf": [
+        349,
+        374
+      ],
+      "source_new_proof_lf": [
+        376,
+        403
+      ],
+      "source_old_proof_sha256": "a23c6f825faf11a83e451ddb62c78f285b240922ca35a935d447c2b55b2963f1",
+      "source_new_proof_sha256": "70c97fd2849aebf4c282779a943a1f4db73b3b3afda2bb229613dfa7142b6caa",
+      "mathematical_check": "Stopping and constant extension preserve the sup/Holder norm and give zero for an empty last cell. The covariance residual moment bound at arbitrary fixed p>=1 gives each block Lp norm<=g_delta C_Q,B sqrt(p) R^(d/Q). Jensen/Lyapunov and finite expectation linearity yield E Z_delta<=[delta(N+1)]^(1/p) times that bound, with no maximum or independence. The true count N=floor(1/(delta B))>=1 gives delta(N+1)<=2/B before substituting radius. R_delta=delta^-1+2<=3/delta then gives g_delta R_delta^(d/Q)<=3^(d/Q) delta^((1-a)/2-d/Q). The last Q condition is exactly positivity of this exponent. B,p,Q stay fixed, the factor2 in the displayed decay is applied to both sides, and all conclusions remain E-path expected-norm estimates, not F, cone, source-to-point, concentration or nonlinear moment estimates.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    }
+  ],
+  "mathematical_checks": [
+    "The report reconstructs the two exact weighted kernels from the unitary Euclidean transform and unnormalized torus modes: inversion c_d cancels the ordinary-integral c_d^-1 in periodization, and recovery has L^-d/2 directly. Scaling and Peetre yield rho^(d/2) F(k-rho xi); the integral in xi contributes rho^-d while the unit lattice sum has no density factor. Thus the mixed Schur quantities are C rho^-d/2 and C rho^d/2, whose product is independent of radius before the square root. Sign reflection is harmless in the Schwartz majorant. Full real Sobolev domains, negative indices and distributional recovery follow from the supplied unassigned factorization/density input. One report-only intermediate Fourier definition in scaling Step2 drops c_d; the initial exact-kernel derivation correctly retains/cancels it and the final scaling identity is correct. This does not expose a source normalization error or leave the assigned kernel derivation absent.",
+    "The exact chi_rho psi_rho=chi_rho recovery factorization is on the full L2 domain, with Bessel isometries and normalized torus diagonal <k/rho>^-gamma. On each unit cube, <x/rho><=sqrt(2(1+d/4))<k/rho>, giving the direction <k/rho>^-u<=c^u<x/rho>^-u for u=q gamma>d. Unit cube volume and y=x/rho yield rho^d times an integrable Euclidean weight. Rank j-1 diagonal truncation and bounded outer maps transfer s_j<=C lambda_j; summing qth powers and taking the root gives rho^(d/q), not rho^d. Two balanced blocks contribute by direct-sum qth-power addition; the unitary swap preserves the input/output norms. The later gamma<1/2 restriction forces q>2d, so no Hilbert-Schmidt or cutoff-projection claim is inferred.",
+    "The public deduction retains actual smooth-test Gaussian coefficient sums on the same W and enlarges only the envelope rho=2R+B+2<=(B+4)R; the physical mask remains eta(x/R)^2. Both localizations and both weighted variance inequalities have the supplied upstream hypotheses, including the same base eta^2 and R,N,I-independent variance constant. The finite Gaussian bound at even q>=Q gives sqrt(q-1) h^(1-a/2) B_alpha(h)^(1/2) times the Schatten q envelope norm. Normalizing the singular-value sequence proves ||K||Sq<=||K||SQ, fixing both radius exponent d/Q and envelope constant before q varies. Strict beta_t gaps absorb the alpha=1 logarithm and alpha>1 power. Finite maxima of dyadic increments give factor 2^(n/q) without independence; after 2^(n eta_t), the geometric gap beta_t-eta_t-1/Q>0 is uniform in q. Sup/Holder chaining uses zero-initial continuous finite paths, coarse unit partitions and C^eta_t\u2192C^theta. Passing N\u2192infinity at each fixed R preserves the explicit radius bound without radius-uniform construction convergence. A controlled even q above v gives sqrt(v) with fixed C_Q,B.",
+    "The unchanged proof is reconstructed in public. The named unassigned covariance-contraction theorem applies to these same deterministic maps and mask, comparing the path norm to a reference isonormal path norm without replacing Y. The covariance-zero case is zero. For deterministic orthogonal Pi, ||(I-Pi)T_delta,m f||HW<=||T_delta,m f||HW=||f||fast, so C=1; infinite rank and deterministic delta/R dependence are allowed. Joint residual blocks stay coupled to the given slow W and may be correlated or outside a single fast-noise span. No random noise-dependent projection or false block independence is used.",
+    "Stopping and constant extension preserve the sup/Holder norm and give zero for an empty last cell. The covariance residual moment bound at arbitrary fixed p>=1 gives each block Lp norm<=g_delta C_Q,B sqrt(p) R^(d/Q). Jensen/Lyapunov and finite expectation linearity yield E Z_delta<=[delta(N+1)]^(1/p) times that bound, with no maximum or independence. The true count N=floor(1/(delta B))>=1 gives delta(N+1)<=2/B before substituting radius. R_delta=delta^-1+2<=3/delta then gives g_delta R_delta^(d/Q)<=3^(d/Q) delta^((1-a)/2-d/Q). The last Q condition is exactly positivity of this exponent. B,p,Q stay fixed, the factor2 in the displayed decay is applied to both sides, and all conclusions remain E-path expected-norm estimates, not F, cone, source-to-point, concentration or nonlinear moment estimates."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "classification": "report-only intermediate Fourier-normalization transcription error",
+      "report_section": "L:radius-outer-maps",
+      "report_lf": 15,
+      "old": "\\widehat{\\phi_\\rho}(t)=\\int\\phi_0(x/\\rho)e^{-itx}dx=\\rho^d\\widehat{\\phi_0}(\\rho t)",
+      "new": "\\widehat{\\phi_\\rho}(t)=c_d\\int\\phi_0(x/\\rho)e^{-it\\cdot x}dx=\\rho^d\\widehat{\\phi_0}(\\rho t), with c_d=(2\\pi)^{-d/2}.",
+      "contrary_calculation": "Under the supplied unitary convention, the ordinary integral equals c_d^-1 times the unitary Fourier transform. Thus the report first equality is not a standalone true equality. The scaling identity between the two unitary transforms is nevertheless exactly rho^d, and public Step1 independently reconstructs both correct kernels with the explicit c_d cancellation. Source L:radius-outer-maps and upstream L:cutoff-factorization use the correct normalization.",
+      "disposition": "Retain the raw report unchanged; record this literal equality error. No source edit and no absent core kernel derivation follows, because that complete correct derivation is already public in Step1."
+    },
+    {
+      "id": "R2",
+      "classification": "correct scope/notation notes, no defect",
+      "disposition": "The sign-reflected majorant F_r uses a permitted reflection; V_B,var is an inline uniform variance budget; the stated 2 factor in the final expected-anchor decay merely doubles both sides. E versus F, fixed-R construction limits, deterministic projections and absence of block independence are all correctly restricted."
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 17833,
+      "sha256": "f962d01e1986ad1cb391e66f28640d8c3f6c8762f0a2ce489ebe18a3dba8a334"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 6615,
+      "sha256": "8add8205176aea2a69b4571e1b45ef69cc11b61f4b074fb6e9cbc9022d01b52a"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 7541,
+      "sha256": "557ba7baf9eb955be334027533e1e0dfb8c5c5bd68239224c03ad2f4bcad1949"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 5724,
+      "sha256": "21045cce46b6b9d360609f534ff1ef607b65bcb82ed37410ae18fc04aacf511c"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 10447,
+      "sha256": "95f6ac695cb890829a164b3279818bc2fe525fbbf686e5593e0928f6253771d4"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 17709,
+      "sha256": "6c71830d7ebad308b8aa9c16cbc6503747a0a30e7eaf8e3243d52b1a1ccb54d1"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 20328,
+      "sha256": "fcfc04ed2e64a0567b49fc384018daaaf0b73b9fe79b4eb1eaa39d36f9072d13"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-compact-gaussian-baseline.txt",
+      "bytes": 30608,
+      "sha256": "caf9e56a5b818f9e5daa02ac3423c354b95c515f1932d92170ec002b0fbaa84a"
+    },
+    {
+      "path": "inputs/context-actual-driver-baseline.txt",
+      "bytes": 35818,
+      "sha256": "add3561f9a2e846f9992d91a10385d8b8e99406359eaabae640520366b184f0e"
+    },
+    {
+      "path": "inputs/context-wave-variance-baseline.txt",
+      "bytes": 24927,
+      "sha256": "66369d1bde2358f92e7edfb33f899bd96c2698a631e9ca0d9f330062ff55f8a6"
+    },
+    {
+      "path": "inputs/context-source-convergence-baseline.txt",
+      "bytes": 25085,
+      "sha256": "f212bad41254a78109e5802def45053c8bda53a416cda9f457513406304aaef4"
+    },
+    {
+      "path": "inputs/context-raw-block-inputs-baseline.txt",
+      "bytes": 35928,
+      "sha256": "ed2f85038ef6136eb8581fa64cab4962cde40bdbdba9ff163dd832c4fa5ad992"
+    },
+    {
+      "path": "inputs/context-cameron-mean-baseline.txt",
+      "bytes": 24138,
+      "sha256": "0ecbf05a70a7d5d79c9e2285dcadb93567687d4e463bfe4f6b0fdac5ff6f016d"
+    },
+    {
+      "path": "inputs/context-uniform-mean-baseline.txt",
+      "bytes": 19613,
+      "sha256": "132449ade993b8feab10c06a6c062b21698d83d0ad811f99090bd069144dedc6"
+    }
+  ],
+  "input_identity_checks": "All supplied SOURCE-BINDING payload delivered hashes verified locally, including complete OLD/NEW target full-module hashes. Unassigned context proofs not counted.",
+  "read_limits": [
+    "All public mathematical reasons, coverage claims and findings checked against complete frozen OLD/NEW targets, exact bound parameters and needed supplied upstream declarations/normalization/localization identities. No independent reproof of unassigned upstream theorems is claimed.",
+    "No native export, hidden reasoning, events or transport inspected; dispatcher alone owns those.",
+    "Root reviews this delegated disposition; raw PASS/high and public reconstruction flags remain literal, unedited."
+  ],
+  "callback_or_retry_used": false,
+  "historical_report_or_grade_edited": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "16/Le retain source adoption and release authority; root reviews disposition"
+}

@@ -1,0 +1,317 @@
+{
+  "review_record_id": "RP009",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side public-report/source adjudication only; not another independent scientific vote",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "7923750f560de1e4a49973e6ce34420170fad46e",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "coordinator_disposition": "PARTIAL_INDEPENDENT_PUBLIC_RECONSTRUCTION_NO_SOURCE_DEFECT_IDENTIFIED",
+  "reported_all_old_new_reading_COMPLETE": true,
+  "requested_reread_complete": false,
+  "requested_reread_complete_meaning": "Full requested public reconstruction, not the literal reading flags; assigned unmasked form-domain Step2 lacks public derivation. Root decides scoped acceptance.",
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "required_source_OLD_NEW": [],
+  "report_notes": [
+    {
+      "id": "R1",
+      "kind": "report-only radial-profile notation slip",
+      "report_section": "P:variational-remove-mask",
+      "report_lf": 47,
+      "old": "$\\chi=1$ on $\\{|x|\\le R\\}$, $0$ on $\\{|x|\\ge2R\\}$",
+      "new": "$\\chi(r)=1$ for $r\\le1$ and $\\chi(r)=0$ for $r\\ge2$; hence $m_R(x)=1$ for $|x|\\le R$ and $m_R(x)=0$ for $|x|\\ge2R$.",
+      "disposition": "The one-variable profile chi and the spatial mask m_R are conflated in this shorthand only. OLD199\u2013209/NEW264\u2013274 define both correctly. No source edit required; raw report remains unchanged."
+    },
+    {
+      "id": "D1",
+      "kind": "public reconstruction depth limitation, not a manuscript defect",
+      "report_section": "P:variational-unmasked-rate",
+      "report_lf": 35,
+      "source_old_lf": [
+        140,
+        150
+      ],
+      "source_new_lf": [
+        179,
+        191
+      ],
+      "disposition": "The public Evidence jumps from Step1 to Step3. It gives no equivalent-norm/core/completion derivation of the assigned unmasked H1 form domain, despite the final AUDIT/limits assertions. Reported COMPLETE reading flags and PASS/high remain literal; full requested public reconstruction is not obtained for this step. The existing source supplies the argument; this author-side confirmation does not repair or expand the report."
+    }
+  ],
+  "mathematical_checks": [
+    "The tempered-measure cutoff yields polynomial ball mass; annular weights sum because L>N. For the physical normalized p_epsilon and its derivatives, rapid decay gives all needed local x Fubini/differentiation majorants. The spectral multiplier is exp(-epsilon|xi|^2/2) with no extra normalization. Continuous distribution equality plus modulus-one phase and physical positivity gives 0<=Gamma*p_epsilon(x)<=Gamma*p_epsilon(0); a nonzero positive measure and strictly positive Gaussian give a strict value at zero. The report substantively reconstructs the added annular and phase arguments.",
+    "The compactly supported zero extension of Psi is smooth. A fixed Gaussian dominates each test derivative on its common compact spatial support; convolution positivity and the heat envelope then bound all spatial x uniformly. With r=s-t and s in compact I, r stays in a common compact interval, where |r|^-a is integrable for a<1. Derivatives fall on Psi rather than the singular power, so dominated differentiation and the first time derivative yield the stated supremum-norm Lipschitz estimate. The report uses these same operations and makes no directional-decay assertion.",
+    "The report correctly reconstructs the two imaginary-parameter resolvent/adjoint argument: both Ran(H-ib) and Ran(H+ib) are all L2, and ker(H*-ib)=Ran(H+ib)^perp=0. The bounded spectral projection near finite E_s supplies H2 Rayleigh tests. Splitting f=u+iv retains both real components and their squared-norm weighted quotient; it does not pick Re(f) alone. The same fixed compact common trial makes E_s<=-epsilon0, while h<=M gives E_s>=-M, and the square-root denominator is at least 2sqrt(epsilon0). However, the public Evidence section skips assigned Step2 entirely: the source derives D((H+1+M)^(1/2))=H1 by equivalence of half-power/H1 norms on H2 and both core/completion arguments. That reconstruction is not present in the report; its closing claims that the form-domain machinery is checked or upstream do not supply it. Author-side checking finds that source step coherent and unchanged, but cannot substitute for the missing public reviewer derivation.",
+    "F and chi give nested smooth radial m_R, and the common compact trial fixes R0 before comparison. For each real unit H1 test, 0<=m_R h_s f^2<=M f^2 and pointwise convergence identify its unmasked integral. Supremum over (R,f) is a numerical product-index supremum; positive square roots give increasing rates. Continuous nonnegative rate differences and nested open sets on compact I give uniform convergence, then numerical supremum of fixed-mask original-point lower bounds gives 2 I_Psi-v_Psi/2. There is no simultaneous R(T), random unmasked flow or uniform-in-R noise estimate. The original control/noise covariance and variance cost stay fixed; m_R h_s itself changes with the physical mask. The report final sentence is valid in this original-control context and is not a covariance assertion about a masked noise field.",
+    "The report preserves the different changes of variables: Radon pushforward gives r^(alpha-d), control amplitude r^(d+2-alpha), and mean r^2; cost has the further mean factor r^2 and Lebesgue Jacobian r^-d, hence r^(4-alpha). The real H1 Rayleigh tests U_r are a bijection with kinetic and potential energies both r^2, so lambda scales r and I scales r. D_(1/r) is the inverse on the full nonnegative nonzero smooth class. The H2 operator identity is supplementary and consistent. Time and a fixed mask radius are not invariantly rescaled.",
+    "With k=3-alpha>0, q=k+1, r0^k=I0/v0, the coefficient-one value equals r0 I0/2>0. With rc=c^(1/k), both c rc and rc^q equal Kc=c^(q/k); a bijection scales the entire score set. The independent canonical point upper bound has a logarithmically negligible prefactor; together with the already assigned lower bound it gives a finite real Q2 and a uniform ceiling on all coefficient-two scores. Scaling at c=2 then bounds the coefficient-one set before finite-real suprema are taken. Positivity, full set equality and Kc>0 yield S_c=Kc S_1 and Q2>=S_2. No optimizer, first-mean/source identification, unconditional numerical Jensen improvement or extension of strict positivity to Gamma=0 is inferred."
+  ],
+  "per_proof_checks": [
+    {
+      "proof_id": "L:variational-heat-envelope",
+      "old_statement_lf": [
+        28,
+        40
+      ],
+      "old_proof_lf": [
+        42,
+        67
+      ],
+      "new_statement_lf": [
+        28,
+        40
+      ],
+      "new_proof_lf": [
+        42,
+        87
+      ],
+      "report_heading_lf": 9,
+      "author_check": "The tempered-measure cutoff yields polynomial ball mass; annular weights sum because L>N. For the physical normalized p_epsilon and its derivatives, rapid decay gives all needed local x Fubini/differentiation majorants. The spectral multiplier is exp(-epsilon|xi|^2/2) with no extra normalization. Continuous distribution equality plus modulus-one phase and physical positivity gives 0<=Gamma*p_epsilon(x)<=Gamma*p_epsilon(0); a nonzero positive measure and strictly positive Gaussian give a strict value at zero. The report substantively reconstructs the added annular and phase arguments.",
+      "new_source_defect_identified": false,
+      "public_reconstruction_limitations": []
+    },
+    {
+      "proof_id": "L:variational-global-mean",
+      "old_statement_lf": [
+        70,
+        80
+      ],
+      "old_proof_lf": [
+        82,
+        102
+      ],
+      "new_statement_lf": [
+        90,
+        100
+      ],
+      "new_proof_lf": [
+        102,
+        126
+      ],
+      "report_heading_lf": 19,
+      "author_check": "The compactly supported zero extension of Psi is smooth. A fixed Gaussian dominates each test derivative on its common compact spatial support; convolution positivity and the heat envelope then bound all spatial x uniformly. With r=s-t and s in compact I, r stays in a common compact interval, where |r|^-a is integrable for a<1. Derivatives fall on Psi rather than the singular power, so dominated differentiation and the first time derivative yield the stated supremum-norm Lipschitz estimate. The report uses these same operations and makes no directional-decay assertion.",
+      "new_source_defect_identified": false,
+      "public_reconstruction_limitations": []
+    },
+    {
+      "proof_id": "P:variational-unmasked-rate",
+      "old_statement_lf": [
+        110,
+        123
+      ],
+      "old_proof_lf": [
+        125,
+        176
+      ],
+      "new_statement_lf": [
+        134,
+        147
+      ],
+      "new_proof_lf": [
+        149,
+        233
+      ],
+      "report_heading_lf": 28,
+      "author_check": "The report correctly reconstructs the two imaginary-parameter resolvent/adjoint argument: both Ran(H-ib) and Ran(H+ib) are all L2, and ker(H*-ib)=Ran(H+ib)^perp=0. The bounded spectral projection near finite E_s supplies H2 Rayleigh tests. Splitting f=u+iv retains both real components and their squared-norm weighted quotient; it does not pick Re(f) alone. The same fixed compact common trial makes E_s<=-epsilon0, while h<=M gives E_s>=-M, and the square-root denominator is at least 2sqrt(epsilon0). However, the public Evidence section skips assigned Step2 entirely: the source derives D((H+1+M)^(1/2))=H1 by equivalence of half-power/H1 norms on H2 and both core/completion arguments. That reconstruction is not present in the report; its closing claims that the form-domain machinery is checked or upstream do not supply it. Author-side checking finds that source step coherent and unchanged, but cannot substitute for the missing public reviewer derivation.",
+      "new_source_defect_identified": false,
+      "public_reconstruction_limitations": [
+        "PUBLIC_FORM_DOMAIN_RECONSTRUCTION_MISSING"
+      ]
+    },
+    {
+      "proof_id": "P:variational-remove-mask",
+      "old_statement_lf": [
+        186,
+        197
+      ],
+      "old_proof_lf": [
+        199,
+        239
+      ],
+      "new_statement_lf": [
+        243,
+        254
+      ],
+      "new_proof_lf": [
+        256,
+        320
+      ],
+      "report_heading_lf": 40,
+      "author_check": "F and chi give nested smooth radial m_R, and the common compact trial fixes R0 before comparison. For each real unit H1 test, 0<=m_R h_s f^2<=M f^2 and pointwise convergence identify its unmasked integral. Supremum over (R,f) is a numerical product-index supremum; positive square roots give increasing rates. Continuous nonnegative rate differences and nested open sets on compact I give uniform convergence, then numerical supremum of fixed-mask original-point lower bounds gives 2 I_Psi-v_Psi/2. There is no simultaneous R(T), random unmasked flow or uniform-in-R noise estimate. The original control/noise covariance and variance cost stay fixed; m_R h_s itself changes with the physical mask. The report final sentence is valid in this original-control context and is not a covariance assertion about a masked noise field.",
+      "new_source_defect_identified": false,
+      "public_reconstruction_limitations": []
+    },
+    {
+      "proof_id": "L:variational-control-dilation",
+      "old_statement_lf": [
+        251,
+        264
+      ],
+      "old_proof_lf": [
+        266,
+        294
+      ],
+      "new_statement_lf": [
+        332,
+        345
+      ],
+      "new_proof_lf": [
+        347,
+        389
+      ],
+      "report_heading_lf": 53,
+      "author_check": "The report preserves the different changes of variables: Radon pushforward gives r^(alpha-d), control amplitude r^(d+2-alpha), and mean r^2; cost has the further mean factor r^2 and Lebesgue Jacobian r^-d, hence r^(4-alpha). The real H1 Rayleigh tests U_r are a bijection with kinetic and potential energies both r^2, so lambda scales r and I scales r. D_(1/r) is the inverse on the full nonnegative nonzero smooth class. The H2 operator identity is supplementary and consistent. Time and a fixed mask radius are not invariantly rescaled.",
+      "new_source_defect_identified": false,
+      "public_reconstruction_limitations": []
+    },
+    {
+      "proof_id": "P:variational-positive-scores",
+      "old_statement_lf": [
+        297,
+        311
+      ],
+      "old_proof_lf": [
+        313,
+        364
+      ],
+      "new_statement_lf": [
+        392,
+        406
+      ],
+      "new_proof_lf": [
+        408,
+        484
+      ],
+      "report_heading_lf": 64,
+      "author_check": "With k=3-alpha>0, q=k+1, r0^k=I0/v0, the coefficient-one value equals r0 I0/2>0. With rc=c^(1/k), both c rc and rc^q equal Kc=c^(q/k); a bijection scales the entire score set. The independent canonical point upper bound has a logarithmically negligible prefactor; together with the already assigned lower bound it gives a finite real Q2 and a uniform ceiling on all coefficient-two scores. Scaling at c=2 then bounds the coefficient-one set before finite-real suprema are taken. Positivity, full set equality and Kc>0 yield S_c=Kc S_1 and Q2>=S_2. No optimizer, first-mean/source identification, unconditional numerical Jensen improvement or extension of strict positivity to Gamma=0 is inferred.",
+      "new_source_defect_identified": false,
+      "public_reconstruction_limitations": []
+    }
+  ],
+  "context_checks": [
+    "Original H:homog amplitude and nonzero covariance; alpha<2 and 0<a<1.",
+    "Compact-family common-trial/raw-profile and fixed-mask point-lower declarations apply to the same full positive control class and original W(\u03a8),v\u03a8. Their own proofs are unassigned.",
+    "T:full-upper applies to the same canonical expansion with the stated polynomial prefactor; P:Jensen retains conditional source-normalization qualifications."
+  ],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 13269,
+      "sha256": "b86921af47f48161a1c7ba202f11fabe72c84feeaf05d93850622ffbc37f0eb7"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 6068,
+      "sha256": "5ebba28bb6c21536e8d1145572d4433d7816d21b130584f6de81f8e5dfb352af"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 8917,
+      "sha256": "9d842fee06c68fd8a1cca829fae212bbd46be88e3bc291dd09a3a0eb6fbb9fb6"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 11019,
+      "sha256": "67def11d61e44ad337c03bcb883aaf81f171e0a2a7f1cffb9259034115efe3c6"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 18753,
+      "sha256": "1495453c13dba9ba7a684a81c7fb06ea2a5b3f863ddc9291d0510755fba19b7d"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 24310,
+      "sha256": "1719cb59420a3cc96800da2bf71c273d74bcd80ea1bd4063edf199eaa8c9808c"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-time-exponent.txt",
+      "bytes": 146,
+      "sha256": "20a346a04cf55f6a0ede90efa7a7ba4e69391b63e3e8cb8676dc7d34488b0a53"
+    },
+    {
+      "path": "inputs/context-canonical-expansion.txt",
+      "bytes": 1809,
+      "sha256": "a3396147171376641e48fcc8d3b6a9a8dcbbe483a3406b49a30cb43606a06be0"
+    },
+    {
+      "path": "inputs/context-original-upper-declaration.txt",
+      "bytes": 665,
+      "sha256": "a82df2e677c067ba94463a2f89cf16c0c052760b86dc18cfeb125a707df4d2ff"
+    },
+    {
+      "path": "inputs/context-jensen-declaration.txt",
+      "bytes": 563,
+      "sha256": "7ff6f3d74808be883a637bb0801d27d9756cbf26bcd01339153395a44193ba7a"
+    },
+    {
+      "path": "inputs/context-compact-family-baseline.txt",
+      "bytes": 25917,
+      "sha256": "39946946cc52bee56eb5ec2ab44111a2e8873df9b17ef65d322c0b42066325ca"
+    },
+    {
+      "path": "inputs/context-raw-block-lower-baseline.txt",
+      "bytes": 35928,
+      "sha256": "ed2f85038ef6136eb8581fa64cab4962cde40bdbdba9ff163dd832c4fa5ad992"
+    },
+    {
+      "path": "inputs/context-constant-young-baseline.txt",
+      "bytes": 27376,
+      "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+    },
+    {
+      "path": "inputs/context-covariance-foundation-baseline.txt",
+      "bytes": 21173,
+      "sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020"
+    }
+  ],
+  "public_report_sha256": "b86921af47f48161a1c7ba202f11fabe72c84feeaf05d93850622ffbc37f0eb7",
+  "read_limits": [
+    "Complete OLD/NEW target statements/proofs and all public report reasons/findings read; relevant supplied upstream declarations/definitions consulted without claiming complete upstream proof review.",
+    "No native export, hidden reasoning, events or provider/runtime logs read or captured.",
+    "No source/public-worktree edit, build, Git mutation, provider call or retry."
+  ],
+  "callback_or_retry_used": false,
+  "historical_report_or_grade_edited": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "16/Le retain source adoption and release authority; root reviews this delegated disposition",
+  "per_proof_reconstruction": {
+    "L:variational-heat-envelope": {
+      "status": "CHECKED",
+      "limitations": []
+    },
+    "L:variational-global-mean": {
+      "status": "CHECKED",
+      "limitations": []
+    },
+    "P:variational-unmasked-rate": {
+      "status": "PARTIAL",
+      "limitations": [
+        "PUBLIC_FORM_DOMAIN_RECONSTRUCTION_MISSING"
+      ]
+    },
+    "P:variational-remove-mask": {
+      "status": "CHECKED",
+      "limitations": []
+    },
+    "L:variational-control-dilation": {
+      "status": "CHECKED",
+      "limitations": []
+    },
+    "P:variational-positive-scores": {
+      "status": "CHECKED",
+      "limitations": []
+    }
+  },
+  "root_disposition_review": "Root read the full RP009/RP011 public reports and reviewed their source-bound missing-step/exponent findings; for RP012 root reviews delegated dispositions and witnesses without claiming a second independent vote."
+}

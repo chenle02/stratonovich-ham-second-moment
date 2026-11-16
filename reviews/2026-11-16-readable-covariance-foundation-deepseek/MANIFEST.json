@@ -1,0 +1,107 @@
+{
+  "review_record_id": "RP037",
+  "scope": "Only 8 assigned old/new target proof pairs; upstream proofs unassigned; no whole-book/primary-PDF/Lean/render/human/release acceptance",
+  "old_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_revision": "2ef7f8144dbcbe466a4327a89a4c757ea2e2ca2e",
+  "source_file": "notes/integrated_covariance_foundation.tex",
+  "proof_labels": [
+    "P:masked-spectral-growth",
+    "P:masked-auxiliary-norm",
+    "L:masked-time-completion",
+    "P:masked-noise-completion",
+    "P:masked-quotient-obstruction",
+    "L:masked-temporal-modulation",
+    "L:masked-trig-products",
+    "L:masked-continuous-wave"
+  ],
+  "input_files": [
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 21173,
+      "sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020",
+      "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+      "source_path": "notes/integrated_covariance_foundation.tex",
+      "selection": "WHOLE_FILE",
+      "role": "ASSIGNED OLD whole target module."
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 29682,
+      "sha256": "1ffc0360a608e088324ca549d14e4f2ce5227a0acd114b831ebda58b64932f18",
+      "source_revision": "2ef7f8144dbcbe466a4327a89a4c757ea2e2ca2e",
+      "source_path": "notes/integrated_covariance_foundation.tex",
+      "selection": "WHOLE_FILE",
+      "role": "ASSIGNED NEW whole target module."
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7",
+      "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+      "source_path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "selection": "EXACT_RETAINED_EXCERPT",
+      "role": "UNASSIGNED exact model/data, covariance hypotheses, and zero covariance context.",
+      "source_lf": [
+        367,
+        409
+      ]
+    }
+  ],
+  "embedded_frames": [
+    {
+      "path": "inputs/old-module.txt",
+      "payload_byte_offset": 8904,
+      "payload_bytes": 21173,
+      "payload_sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "payload_byte_offset": 30462,
+      "payload_bytes": 29682,
+      "payload_sha256": "1ffc0360a608e088324ca549d14e4f2ce5227a0acd114b831ebda58b64932f18"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "payload_byte_offset": 60606,
+      "payload_bytes": 1986,
+      "payload_sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    }
+  ],
+  "prompt_sha256": "d87461238cc8449793f6b12616979c460d647b5a65b5e5a4feb45e0c1134dc2c",
+  "prompt_bytes": 62640,
+  "contract_sha256": "11f807f5088e3a64b80860e02aa89b22cf39425d4fc2ba245557eea2ef5cfa6b",
+  "proof_manifest_sha256": "b767ad83825fe6faa9474245c5c1e51cb6a0a7960f8b7d5e56569f653e404906",
+  "profile_sha256": "ccdf515979e77bbe752d924735a915260ca437d3d31a954d4a739c946fca0ea1",
+  "model_limits_sha256": "60eaa34361e093e599fdc4a26f8d53ee3aeb860e419c9e66535c4fda52284d56",
+  "route": "paper-review-deepseek",
+  "requested_model": "deepseek/deepseek-v4-pro",
+  "requested_variant": null,
+  "pure_mode": true,
+  "agent": "artifact-reviewer",
+  "all_tools_denied": true,
+  "combined_reasoning_public_output_cap": 65536,
+  "timeout_seconds": 3600,
+  "coordinator_launch_limit": 1,
+  "coordinator_retry_continuation_fallback": false,
+  "native_hidden_requests_not_inferred_from_process_count": true,
+  "provider_calls_started_during_preparation": 0,
+  "status": "FROZEN_PRE_DISPATCH",
+  "mechanical_checks": {
+    "target_proofs_old": 8,
+    "target_proofs_new": 8,
+    "statements_unchanged": true,
+    "outside_proofs_exactly_equal": true,
+    "pure_insertions_against_baseline": true,
+    "source_frames_exact": true
+  },
+  "no_preflight_claim": "Offline source-binding and local native configuration checked; no live provider generation/admission/reading at freeze.",
+  "capacity_sha256": "a092111100d8bfa5f037e6b9a085035d846bf59dcb916e6c2399216d71833fb6",
+  "preparation_script_sha256": "f2e82258bcbf14ab5e266147bb314c230e43b96ad7211addd440bbac9ba524d4",
+  "preparation_checks_sha256": "aff57947abaeae973d49f6168e2c10d321ee8a563220db347e3bacf1dc662b73",
+  "contract_refinement_record": "ROOT-CONTRACT-REFINEMENT.json",
+  "preparation_script_is_before_refinement_template": true,
+  "owner_authorization": "Le standing per-proof reread authority; Agent24 dated gates/builds/maps, source-bound same-GPT worker QA and root byte/coverage/contract checks. Original-step public reconstruction explicit. No provider call at freeze; Agent16/Le retain integration/adoption.",
+  "recorded_utc": "2026-11-16T08:11:10.623269+00:00",
+  "tool_denial_status": "Current local effective profile/cap config checked, all permissions denied; per-launch recheck required.",
+  "source_binding_sha256": "2f8706922822113b8c5f3b49a6928c38c7f04ac303fceaac71fae299b64f8bb8"
+}

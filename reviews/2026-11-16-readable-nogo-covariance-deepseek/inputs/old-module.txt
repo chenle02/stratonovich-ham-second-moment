@@ -1,0 +1,415 @@
+\section{Covariance transformations and their limits}\label{S:nogo-covariance}
+
+Covariance comparisons offer a way to use a simpler model without estimating
+all the pairings again. Three different requirements enter such an argument:
+positive definiteness, local finiteness, and uniformity of the comparison.
+None follows from homogeneity alone. The examples below separate these
+requirements. The final example also distinguishes positive semidefinite
+order from pointwise order, which matters for the wave mean.
+
+\subsection{NG-08: the translated spatial maximum}\label{S:nogo-08}
+
+The conditional higher-dimensional argument replaces a translated wave
+convolution by a uniform spatial maximum. This would remove the dependence
+on the other vertices of a pairing. The price is an additional hypothesis,
+not a consequence of the covariance assumptions.
+
+\setcounter{nogo}{7}
+\begin{nogo}[A spatial maximum need not be finite]\label{P:nogo-08}
+  Hypothesis~\ref{H:spatial-maximum} fails for two-dimensional Riesz
+  covariance of degree $-\alpha$ when $3/2\le\alpha<2$. For each
+  $1<\alpha<2$, it also fails for some nonnegative, positive definite,
+  locally integrable homogeneous product covariance in dimensions two
+  and three. These examples can satisfy the model condition
+  $\alpha+\alpha_0<2$.
+\end{nogo}
+\begin{proof}
+  We restate the witnesses from Proposition~\ref{P:higher-obstructions}.
+  For Riesz covariance translate the singularity to $e_1$, on the boundary
+  of the unit wave disk. Write $y=e_1+\rho(\cos\phi,\sin\phi)$ and restrict
+  to $0<\rho<1/2$, $2\pi/3\le\phi\le4\pi/3$. Then
+  $0<1-|y|^2\le2\rho$, so the wave density and polar Jacobian give
+  \[
+    \int G_1^{(2)}(\ud y)c|y-e_1|^{-\alpha}
+    \ge \frac{c}{3\sqrt2}\int_0^{1/2}\rho^{1/2-\alpha}\ud\rho
+    =\infty.
+  \]
+  At $\alpha=3/2$ the divergence is logarithmic.
+
+  For the product example choose
+  \[
+    a_1=\frac{1+\max\{2-\alpha,\alpha-1\}}2,
+    \qquad a_2=\alpha-a_1.
+  \]
+  Then $0<a_1,a_2<1$ and $a_1+a_2/2>1$. The function
+  $\gamma(x)=c|x_1|^{-a_1}|x_2|^{-a_2}$, constant in $x_3$ when $d=3$,
+  is locally integrable and homogeneous. Each factor is a positive
+  Gaussian mixture, hence the product is positive definite. With
+  $u=1-y_1$ and $y_2=\sqrt{2u-u^2}\,w$, direct integration yields
+  \[
+    \int G_1^{(2)}(\ud y)\gamma(y-e_1)
+    =\frac{c B((1-a_2)/2,1/2)}{2\pi}
+    \int_0^2u^{-a_1}(2u-u^2)^{-a_2/2}\ud u=\infty.
+  \]
+  The projection of the three-dimensional wave measure onto its first
+  two coordinates is $G_1^{(2)}$, which proves the three-dimensional claim.
+  Gaussian smoothing converges off the singular sets, which have zero
+  translated wave measure. Fatou's lemma therefore gives divergence in
+  lower limit as the smoothing widths decrease to zero. Thus, smoothing
+  cannot restore the required uniform constant. Taking
+  $0<\alpha_0<2-\alpha$ ensures admissibility.
+  This proves No-go~\ref{P:nogo-08}.
+\end{proof}
+
+This result excludes the spatial-supremum input, not moment finiteness or
+the required time scale. The conditional theorem remains useful where its
+hypothesis holds. Reopening this route for the full class would require
+an integrated estimate retaining the geometry lost by the supremum;
+Section~\ref{S:interval-upper} supplies a different full-class argument.
+
+\subsection{NG-09: radial lowering in three dimensions}\label{S:nogo-09}
+
+Multiplication by $|x|^{\alpha-1}$ gives the desired endpoint degree $-1$.
+The following example shows why this degree calculation does not construct
+a covariance. 
+
+\setcounter{nogo}{8}
+\begin{nogo}[Radial lowering can destroy positive definiteness]\label{P:nogo-09}
+  In dimension three let
+  \[
+    \Gamma(x)=|x_1|^{-9/10}|x_2|^{-3/5},\qquad
+    F(x)=|x|^{1/2}\Gamma(x).
+  \]
+  The covariance $\Gamma$ satisfies the homogeneous model assumptions with
+  $\alpha=3/2$ and $\alpha_0=1/4$. The locally integrable tempered function
+  $F$ is not positive definite as a distribution.
+\end{nogo}
+\begin{proof}
+  The exponents of both coordinate factors lie in $(0,1)$. Local
+  integrability, temperedness, and positive definiteness of $\Gamma$
+  follow from the one-dimensional Gaussian mixture formula, applied in
+  each coordinate. The third factor is the constant covariance one.
+  Multiplication by $|x|^{1/2}$ preserves local integrability and temperedness.
+
+  Fix a centered Gaussian heat density $p_\sigma$. Its convolution with
+  $F$ is finite at zero: the coordinate singularities are integrable and
+  the remaining growth is polynomial. On the other hand, restrict the
+  convolution at $Le_3$ to
+  \[
+    1\le y_1\le2,\qquad 1\le y_2\le2,\qquad |y_3-L|\le1.
+  \]
+  For $L\ge2$, the Gaussian factor $p_\sigma(Le_3-y)$ is bounded below
+  there by a fixed positive constant, the coordinate powers are bounded
+  below, and $|y|^{1/2}\ge(L-1)^{1/2}$. Hence,
+  \[
+    (p_\sigma*F)(Le_3)\ge c_\sigma\sqrt L.
+  \]
+  If $F$ were positive definite, its quadratic form on Schwartz tests
+  would satisfy Cauchy--Schwarz. Take a Gaussian test whose autocorrelation
+  is $p_\sigma$, and its translate by $x$. The two diagonal quadratic
+  forms are both $(p_\sigma*F)(0)$, while the cross form is
+  $(p_\sigma*F)(x)$. Consequently,
+  \[
+    |(p_\sigma*F)(x)|\le(p_\sigma*F)(0),\qquad x\in\mathbb R^3.
+  \]
+  The lower bound along $Le_3$ contradicts this inequality.
+  This proves No-go~\ref{P:nogo-09}.
+\end{proof}
+
+The obstruction concerns this Euclidean radial multiplication. It leaves
+coordinatewise constructions and the planar endpoint argument intact;
+see Remark~\ref{R:three-endpoint-scope}. A successor must verify positive
+definiteness of its endpoint, rather than infer it from degree and sign.
+
+\subsection{NG-11: additive variance interpolation}\label{S:nogo-11}
+
+A covariance mixture would be easy to handle if its second moment were
+log-convex in the additive variance. The following scalar calculation
+refutes that unrestricted principle. It is outside the strict homogeneous
+model and is not a counterexample to a model-specific comparison.
+
+\setcounter{nogo}{10}
+\begin{nogo}[A scalar wave moment is not log-convex in variance]\label{P:nogo-11}
+  Let $y''=Zy$, $y(0)=1$, $y'(0)=0$, where $Z$ is centered Gaussian of
+  variance $A$. For $F(A)=\E[y(1)^2]$,
+  \[
+    F(100)^2>F(99)F(101).
+  \]
+  Thus, $\log F$ is not convex on $(0,\infty)$.
+\end{nogo}
+\begin{proof}
+  Interpreting $\cosh\sqrt z$ by its entire power series gives
+  \[
+    F(A)=1+\sum_{k\ge1}t_k(A),\qquad
+    t_k(A)=\frac{2^{3k-1}(2k)!}{k!(4k)!}A^k.
+  \]
+  Absolute termwise Gaussian integration follows from
+  $\E\exp(2\sqrt{|Z|})<\infty$. All displayed terms are positive.
+  Their ratio satisfies
+  \[
+    \frac{t_{k+1}(A)}{t_k(A)}
+    =\frac{16A(2k+1)}{(4k+1)(4k+2)(4k+3)(4k+4)}
+    \le\frac{16A}{(4k+1)^3}.
+  \]
+  Write $S_{20}=1+\sum_{k=1}^{20}t_k(A)$ and
+  $q_A=16A/81^3<1$ for the three values in question. Then
+  \[
+    S_{20}\le F(A)\le S_{20}+\frac{t_{21}(A)}{1-q_A}.
+  \]
+  Substitution in these finite rational expressions gives the following
+  outward enclosures, with common denominator $10^6$:
+  \[
+    \begin{array}{c|rr}
+      A&10^6\text{ times lower bound}&10^6\text{ times upper bound}\\ \hline
+      99&207442589&207442590\\
+      100&212332413&212332414\\
+      101&217304018&217304019
+    \end{array}
+  \]
+  In particular,
+  \[
+    F(100)^2-F(99)F(101)
+    \ge\frac{6945091633359}{10^{12}}>0.
+  \]
+  This proves No-go~\ref{P:nogo-11}.
+\end{proof}
+
+Positive power-series coefficients do imply convexity of
+$t\mapsto\log F(e^t)$, by H\"older's inequality. Thus, geometric
+interpolation of amplitudes survives. An additive-covariance argument
+would need additional hypotheses and a separate proof; the scalar test
+prevents using log-convexity as a general Gaussian-wave fact.
+
+\subsection{NG-12: a heat--Mellin square need not be locally finite}
+\label{S:nogo-12}
+
+Squaring a heat-smoothed covariance preserves positive definiteness, and
+a Mellin weight can prescribe homogeneity. This suggests an endpoint
+recipe with no angular decomposition. Its missing requirement is local
+finiteness of the infinite positive mixture.
+
+\setcounter{nogo}{11}
+\begin{nogo}[Failure of a heat--Mellin endpoint recipe]\label{P:nogo-12}
+  Let $d=3$, $\alpha=11/10$, $\alpha_0=1/4$, and
+  \[
+    \Gamma(x)=|x_1|^{-9/10}|x_2|^{-1/5},\qquad F_s=p_s*\Gamma.
+  \]
+  Although $\Gamma$ is an admissible covariance, the putative endpoint
+  density of degree $-\beta$, with $\beta=9/5$,
+  \[
+    H(x)=\int_0^\infty
+    s^{(2\alpha-\beta)/2-1}F_s(x)^2\ud s
+    =\int_0^\infty s^{-4/5}F_s(x)^2\ud s
+  \]
+  does not define a locally finite measure.
+\end{nogo}
+\begin{proof}
+  The coordinate exponents show admissibility as in No-go~\ref{P:nogo-09}.
+  Heat convolution factorizes in the first two coordinates. For
+  $0<s<1/16$ and $|x_1|\le\sqrt s$, integrating the first Gaussian
+  convolution over $\sqrt s\le y_1\le2\sqrt s$ gives
+  \[
+    (p_s^{(1)}*|\,\cdot\,|^{-9/10})(x_1)\ge c s^{-9/20}.
+  \]
+  For $1/2\le x_2\le1$, integrate the second convolution over
+  $x_2\le y_2\le x_2+\sqrt s$; its value is bounded below by a positive
+  constant. The third coordinate contributes one. On the fixed box
+  $B=[-1,1]\times[1/2,1]\times[-1,1]$, the strip
+  $|x_1|\le\sqrt s$ therefore gives
+  \[
+    \int_B F_s(x)^2\ud x\ge c s^{1/2-9/10}=c s^{-2/5}.
+  \]
+  Tonelli's theorem implies
+  \[
+    \int_B H(x)\ud x\ge c\int_0^{1/16}s^{-6/5}\ud s=\infty.
+  \]
+  This proves No-go~\ref{P:nogo-12}.
+\end{proof}
+
+The positive-definiteness calculation for finite mixtures is not the
+problem. The infinite mixture has infinite mass on a compact set. This
+excludes the displayed recipe, not endpoint interpolation itself. A
+replacement must prove local finiteness, for example by controlling the
+coordinate singularities before integrating the smoothing scale.
+
+\subsection{NG-13: angular smoothing and isotropic envelopes}\label{S:nogo-13}
+
+Smooth angular densities admit finite angular suprema. It is tempting to
+approximate a singular covariance by such densities and apply the Riesz
+estimate with that supremum as amplitude. The limit below shows why the
+amplitudes cannot remain bounded.
+
+\setcounter{nogo}{12}
+\begin{nogo}[No uniform isotropic envelope for a plane covariance]
+  \label{P:nogo-13}
+  In $\mathbb R^3=\mathbb R^2\times\mathbb R$ set
+  \[
+    \Gamma(\ud y,\ud z)=\frac1{2\pi}|y|^{-1/2}\ud y\,\delta_0(\ud z).
+  \]
+  This is an admissible covariance with $\alpha=3/2$ and
+  $\alpha_0=1/4$. If nonnegative measures $\Gamma_n$ converge vaguely to
+  $\Gamma$ and satisfy
+  \[
+    \Gamma_n(\ud x)\le C_n|x|^{-3/2}\ud x,
+  \]
+  then $C_n\to\infty$.
+\end{nogo}
+\begin{proof}
+  The planar Riesz factor is locally integrable and positive definite by
+  its Gaussian mixture representation. The normal Dirac covariance is
+  positive definite: in its quadratic form the two normal coordinates
+  coincide, leaving an integral of nonnegative tangential quadratic
+  forms. Thus, the product is positive definite. For every $r>0$ and
+  Borel set $A$, the substitution $y=ry'$ in its defining integral gives
+  $\Gamma(rA)=r^{2-1/2}\Gamma(A)=r^{3/2}\Gamma(A)$. Its finite mass on
+  a radius $R$ ball is proportional to $R^{3/2}$; polynomial mass growth
+  also gives temperedness.
+
+  Suppose a subsequence of $C_n$ were bounded by $C<\infty$. For every
+  nonnegative compactly supported continuous $f$, vague convergence gives
+  \[
+    \int f\ud\Gamma=\lim_n\int f\ud\Gamma_n
+    \le C\int f(x)|x|^{-3/2}\ud x.
+  \]
+  This is measure domination, so $\Gamma$ would be absolutely continuous
+  with respect to three-dimensional Lebesgue measure. But the compact
+  planar annulus $\{(y,0):1\le|y|\le2\}$ has positive $\Gamma$ mass and
+  zero Lebesgue measure. This contradiction excludes every bounded
+  subsequence, proving the asserted limit.
+  This proves No-go~\ref{P:nogo-13}.
+\end{proof}
+
+This argument applies in particular to angular smoothing whenever the
+smoothed covariances converge to the plane measure. It requires no
+ellipsoid representation. It rules out a uniform scalar isotropic density
+envelope, not other covariance majorants or density of any proposed cone.
+The reopening condition is an estimate that remains uniform without taking
+an angular supremum, or a comparison adapted to the singular support.
+
+\subsection{NG-19: discarding an independent Gaussian residual}
+\label{S:nogo-19}
+
+An orthogonal Gaussian projection produces an independent residual with
+positive semidefinite covariance. This makes projection a useful change-of-law
+tool. It does not give pointwise nonnegative residual covariance, and the
+wave mean need not increase when that residual is restored.
+
+\setcounter{nogo}{18}
+\begin{nogo}[A positive semidefinite residual can lower the wave mean]
+  \label{P:nogo-19}
+  There is an admissible one-dimensional parent covariance $C$ and an
+  actual rank-one Gaussian projection with covariance $P$ such that
+  $C-P$ is positive semidefinite but
+  \[
+    \E u_C(h;1,0)<\E u_P(h;1,0)
+  \]
+  for all sufficiently small positive noise couplings $h$. The projection
+  $P$ is not asserted to be stationary or homogeneous.
+\end{nogo}
+\begin{proof}
+  Put $a=99/100$ and
+  \[
+    C((s,x),(t,y))=(1-a)|s-t|^{-a}|x-y|^{-1/2}.
+  \]
+  Its spatial degree is $\alpha=1/2$, and $\alpha+a<2$. Gaussian mixtures
+  of the two power kernels verify positive definiteness and local
+  integrability. Let $\psi(s,x)=\mathbf1_{[0,1]}(s)\mathbf1_{[-1,1]}(x)$,
+  and $V=\E W(\psi)^2$. The indicator is a legal Hilbert-space test by
+  bounded smooth approximation and dominated convergence. Local integrability
+  and positivity of $C$ give $0<V<\infty$. Put $Z=W(\psi)/\sqrt V$ and
+  define the covariance profile by the locally integrable kernel formula
+  \[
+    m(s,x)=\frac1{\sqrt V}\int_0^1\int_{-1}^1
+    C((s,x),(r,y))\ud y\ud r.
+  \]
+  For every smooth compactly supported spacetime test $f$, Fubini's
+  theorem identifies $\langle m,f\rangle=\E[W(f)Z]$.
+  Thus, $m$ is the covariance of the generalized field with $Z$; no
+  pointwise random variable $W(s,x)$ is used. Gaussian projection gives
+  $W=Zm+W^\perp$ with $W^\perp$ independent of $Z$ and
+  covariance $C-P$, where $P=m\otimes m$. Cauchy--Schwarz gives its
+  positive semidefiniteness.
+
+  Direct integration gives, on $0\le s\le1$,
+  \[
+    E_\phi=\frac{16\sqrt2}{3},\quad V=\frac{2E_\phi}{2-a},\quad
+    m(s,x)=\frac{B_a(s)F(x)}{\sqrt V},
+  \]
+  where $B_a(s)=s^{1-a}+(1-s)^{1-a}\ge1$ and
+  $F(x)=\int_{-1}^1|x-y|^{-1/2}\ud y$. We have $F\le4$ everywhere and
+  $F(x)\ge2\sqrt2$ for $|x|\le1$. Thus, $m$ is bounded and nonnegative,
+  and $m(s,x)m(t,y)\ge8/V$ on the backward cone of $(1,0)$.
+
+  For a covariance $D$ the degree-two ordinary mean coefficient is
+  \[
+    A_D=\int_{0<s<t<1}\int_{\mathbb R^2}
+    G_{1-t}(-y)G_{t-s}(y-z)D((s,z),(t,y))
+    \ud z\ud y\ud s\ud t.
+  \]
+  This is the single self-pair term of Proposition~\ref{P:mixed}; there
+  is no additional factorial. With $G_r(x)=\mathbf1_{\{|x|<r\}}/2$,
+  integration of the parent covariance yields
+  \[
+    A_C=\frac{1-a}{1-\alpha}
+    \frac1{(2-\alpha-a)(3-\alpha-a)(4-\alpha-a)}
+    =\frac{20000}{1932951}<\frac1{96}.
+  \]
+  For covariance one the same integral is
+  $\int_{0<s<t<1}(1-t)(t-s)\ud s\ud t=1/24$. Therefore,
+  \[
+    A_P\ge\frac{8}{24V}
+    =\frac{101}{3200\sqrt2}>\frac1{48}.
+  \]
+
+  We justify passage from coefficients to full means. Write the parent
+  solution as $u_C(h)=\sum_{n\ge0}h^nX_n$. For any fixed $r>1$,
+  finiteness of the second moment at amplified covariance $r^2C$ and
+  nonnegativity of the mixed moments in Proposition~\ref{P:mixed} give
+  \[
+    \|X_n\|_2\le \sqrt{B_r}\,r^{-n},\qquad
+    B_r=\E|u_C(r;1,0)|^2<\infty.
+  \]
+  Hence, the $L^2$ norm of the tail starting at $n=4$ is at most
+  $\sqrt{B_r}(|h|/r)^4/(1-|h|/r)$. Odd means vanish by Gaussian sign
+  symmetry, giving $\E u_C(h)=1+h^2A_C+O(h^4)$.
+
+  For $P$, the potential is the bounded profile $Zm$. If $M=\sup|m|$,
+  the deterministic Picard coefficients at time one are bounded by
+  $M^n/(2n)!$. The absolute mean series for $|h|\le1$ is bounded by
+  $\E\cosh\sqrt{M|Z|}<\infty$. Factoring $h^4$ from its tail and
+  using symmetry therefore gives $\E u_P(h)=1+h^2A_P+O(h^4)$.
+  The strict coefficient gap proves the claimed inequality.
+  This proves No-go~\ref{P:nogo-19}.
+\end{proof}
+
+The same distinction persists under a variance tilt of the projected
+coordinate. For $1<q<2$, its density relative to the parent law is
+\[
+  L_q(Z)=q^{-1/2}\exp\bigl((1-q^{-1})Z^2/2\bigr),\qquad
+  \E L_q^2=[q(2-q)]^{-1/2}.
+\]
+The equivalent Gaussian law has covariance $Q=C+(q-1)P$. The same original
+measurable solution has an $O(h^4)$ mean remainder under this law by
+Cauchy--Schwarz and the preceding $L^2$ tail estimate. Its degree-two
+coefficient is $A_Q=A_C+(q-1)A_P<qA_P-1/96$. This is an equivalent-law
+statement, not a new stationary-model existence theorem for $Q$.
+To identify its degree-two coefficient, one can use the same regularization
+as the parent construction. If $K_\delta$ denotes the truncated temporal
+covariance and $p_\epsilon$ the spatial heat kernel, its cross-covariance
+with $Z$ is
+\[
+  m_{\epsilon,\delta}(s,x)
+  =\frac{(1-a)\int_0^1K_\delta(s-r)\ud r}{\sqrt V}
+  (p_\epsilon*F)(x).
+\]
+The bounds $0\le K_\delta\le|\,\cdot\,|^{-a}$ and $F\le4$ give
+$0\le m_{\epsilon,\delta}\le8/\sqrt V$. These profiles converge to
+$m$ at interior times. Dominated convergence on the finite-mass terminal
+wave kernel identifies the added $P$ contribution. The parent degree-two
+term converges in $L^2$, and $L_q\in L^2$ transfers its expectation to the
+equivalent law. Thus, the fixed-order Gaussian covariance identity indeed
+gives the stated $A_Q$, without invoking a homogeneous representation for
+$Q$. Consequently, discarding the residual also fails in this tilted comparison.
+A large-time bridge for specially chosen projections could still hold,
+but it must be proved at the required scale. Positive semidefinite order
+alone cannot supply it.

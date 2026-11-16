@@ -1,0 +1,1239 @@
+# Assigned task: three rewritten displacement-moment proofs
+
+Independently compare BOTH OLD and NEW complete proofs and their complete
+statements/definitions in the assigned module. Check mathematics unchanged,
+no step or qualifier lost, and every new explanatory assertion justified under
+the same hypotheses. Mechanical byte retention is not mathematical evidence.
+Distinguish a defect introduced by the rewrite from a pre-existing concern;
+do not use OLD as an oracle, silently repair proofs, or certify a whole book.
+
+The assignment is exactly the three proof labels in the inventory. Baseline
+context sources below supply unchanged upstream inputs/definitions; their
+proofs are NOT assigned for a new review, and must not be counted as extra
+proofs read. Check that target consumer uses respect their stated conditions;
+identify any missing condition or context limitation honestly.
+
+Focus on positive Green measures including dimension-three sphere measures;
+finite chain mass and Gaussian product integrability; Green smoothing before
+noise removal; all Wick pairings including unequal/empty chains/self-pairings;
+mask factors in [0,1] and expected-diagram order versus forbidden samplewise
+wave-solution or arbitrary-phase covariance order; local-cone Picard existence
+and uniqueness; same-source pointwise modifications; summable mixed-order
+majorants, stationarity only for the unmasked law; Bochner spatial testing;
+fixed-order canonical limits, arbitrary relative widths and the explicitly
+conditional masked-limit premise. Check zero/order-zero cases and Gamma=0.
+All facts and source widths must match the supplied declarations. Under the
+unitary Fourier convention, oscillatory inversion kernels are distributions,
+not scalar equalities; keep all normalization factors explicit if used.
+
+No AUDIT comments remain in this module; list any AUDIT-worthy issue you find.
+No prior reviewer verdict, worker QA report or acceptance record is supplied.
+No primary-source PDF/image or render review is assigned. Do not browse, run
+tools, delegate, read files, edit or contact anyone. Everything allowed is
+embedded. Mark PARTIAL/NOT_READ and precise missing work rather than invent it.
+
+Literal declaration and scientific setup changes are part of this OLD/NEW comparison. For each changed declaration or removed/rephrased setup, compare exact content, check its mathematical meaning, domains and qualifiers, and explain its effect on each assigned deduction. Do not assume a change is harmless because it resembles a typo. Reconstruct all original steps and every complete target proof, including unchanged siblings.
+
+# Public reconstruction requirement
+
+For every assigned proof, enumerate its original logical steps (including unchanged portions) and provide checkable public working for each. A target statement or a bound established inside that same target proof is not an unassigned input. Named UNASSIGNED upstream statements may be used after checking their hypotheses; their own proofs remain unassigned. Reading and reconstruction are distinct: if any required target step is not reconstructed publicly, say so and mark Public reconstruction: PARTIAL or NOT_RECONSTRUCTED, even if Old/New reading is COMPLETE. Do not replace a derivation by saying it is unchanged.
+
+# Output contract
+
+Begin with:
+# Review Result
+Category: proof-readability-equivalence
+Model: <your actual model identity if known>
+Verdict: PASS | PASS_WITH_NOTES | FAIL | INCONCLUSIVE
+Confidence: high | medium | low
+
+Verdict/confidence are unforced. Then exactly one '## <proof label>' section
+for each assigned label, in order. Each must give:
+- Old reading: COMPLETE | PARTIAL | NOT_READ
+- New reading: COMPLETE | PARTIAL | NOT_READ
+- Public reconstruction: COMPLETE | PARTIAL | NOT_RECONSTRUCTED
+- Original-step coverage: <steps and working, with omissions explicit>
+- Argument preservation: PRESERVED | CHANGED | UNCERTAIN
+- New explanations: JUSTIFIED | CONCERN | UNCERTAIN
+- Evidence: concrete mathematical checks/working using equation labels or
+  OLD/NEW local LF ranges, not merely the mechanical facts.
+- Lost steps/qualifiers, unresolved issues and pre-existing concerns; 'none
+  identified within this read' is allowed when justified.
+
+End with '## AUDIT dispositions' and '## Findings and limits'. A partially
+read proof prohibits a claim of full assignment completion. Distinguish scope
+preservation from proving all upstream analytic results or whole-book truth.
+Keep the public report roughly 5000 words. Do not certify Lean quotation
+correspondence, source images, rendered pages, human verification or release.
+
+The word target is approximate; do not sacrifice a required derivation for brevity.
+
+# Exact assigned proof inventory
+{
+  "source_file": "notes/integrated_masked_moments.tex",
+  "old_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "new_revision": "16fdc47b22b74feffded7aeb223f2d579b505176",
+  "old_module_sha256": "533f96300b5e0e10205aeb374cdd55378fd3a27e8a5faf6148187f0c02221024",
+  "new_module_sha256": "f8fa717e95be1d65a588adb5de40e2f4f082c7a335b64a8d212a92618d1c348c",
+  "proofs": [
+    {
+      "label": "L:masked-chain-comparison",
+      "old_statement_lf": [
+        23,
+        37
+      ],
+      "new_statement_lf": [
+        23,
+        37
+      ],
+      "old_proof_lf": [
+        39,
+        98
+      ],
+      "new_proof_lf": [
+        39,
+        127
+      ]
+    },
+    {
+      "label": "P:masked-source-moments",
+      "old_statement_lf": [
+        100,
+        115
+      ],
+      "new_statement_lf": [
+        129,
+        144
+      ],
+      "old_proof_lf": [
+        117,
+        159
+      ],
+      "new_proof_lf": [
+        146,
+        210
+      ]
+    },
+    {
+      "label": "P:masked-canonical-transfer",
+      "old_statement_lf": [
+        161,
+        175
+      ],
+      "new_statement_lf": [
+        212,
+        226
+      ],
+      "old_proof_lf": [
+        177,
+        212
+      ],
+      "new_proof_lf": [
+        228,
+        283
+      ]
+    }
+  ],
+  "line_convention": "Exact raw-module local LF, not whole prompt. Context proofs are unassigned and must not be counted."
+}
+
+===== BEGIN old-module.txt =====
+{"source_path": "notes/integrated_masked_moments.tex", "source_revision": "cdde711c248862f33207860107dd0e6b31d60852", "selection": "WHOLE_FILE", "role": "ASSIGNED OLD complete module; exactly 3 proof pairs.", "bytes": 11113, "sha256": "533f96300b5e0e10205aeb374cdd55378fd3a27e8a5faf6148187f0c02221024"}
+===== RAW UTF8 SOURCE =====
+\section{Fixed masks and displacement moments}
+\label{S:masked-moments}
+
+We retain Hypothesis~\ref{H:homog}, data $(1,0)$, and all its original
+dimensions and covariance amplitudes. Fix $\rho = (\epsilon,\eta) > 0$ and the
+source $Y_\rho$ of Proposition~\ref{P:source-canonical-convergence}. For each
+fixed $\rho$ use the continuous-time, smooth-space version in
+Lemma~\ref{L:source-pointfield-regularity}. Source fields can use the auxiliary
+extension preserving the given noise; their law and the given noise remain those
+already constructed. Let $m \in C_c^\infty(\R^d)$ be real with $0 \le m \le 1$.
+It multiplies the physical source after regularization.
+
+Write $X_{\rho,n}^m(t,x)$ for the ordinary ordered displacement integral with
+coefficient $mY_\rho$, and $X_{\rho,n}$ for its unmasked version; both
+order-zero terms are one. We first construct these integrals. The positive Green
+measures $G_d(r,\ud z)$ have mass $r$ and support in $B_r$, including the sphere
+measure in $d = 3$. These are the source
+kernels~\cite{chen:author2026:time-dependency}*{(2.1), (2.3)--(2.5), p.~7}; the
+ordered convention and Gaussian pairing formula are
+\cite{chen:author2026:time-dependency}*{(2.13)--(2.16), p.~10; (2.19), p.~12}.
+We use all pair partitions, including self-pairings.
+
+\begin{lemma}[Chains and mixed-order comparison]
+  \label{L:masked-chain-comparison}
+  The finite ordered integrals are Bochner $L^2$ integrals. For all $n,k \ge 0$,
+  fixed $t,x,y$ and positive $\rho$,
+  \begin{equation}\label{E:masked-order-comparison}
+    0\le \E[X_{\rho,n}^m(t,x)X_{\rho,k}^m(t,y)]
+    \le \E[X_{\rho,n}(t,x)X_{\rho,k}(t,y)].
+  \end{equation}
+  Both expectations vanish when $n+k$ is odd. With $q_n$ from
+  Lemma~\ref{L:vertex-crude},
+  \begin{equation}\label{E:masked-order-bound}
+    \|X_{\rho,n}^m(t,x)\|_2\le q_n(t),\qquad
+    \|X_{\rho,n}(t,x)\|_2\le q_n(t).
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  Let $\nu_n^{t,x}$ be the positive time-space chain measure on $0 < s_1 <
+  \cdots < s_n < t$, with successive spatial factors $G_d(s_{j+1}-s_j,\ud z_j)$
+  and $s_{n+1} = t$, recovering positions backwards from $x$. It uses measures
+  rather than sphere densities. The order-zero measure has mass one. Integrating
+  the latest vertex gives the recursion $f_n(t) = \int_0^t(t-r)f_{n-1}(r)\ud r$;
+  hence,
+  \begin{equation}\label{E:masked-chain-mass}
+    \nu_n^{t,x}(1)=\frac{t^{2n}}{(2n)!}.
+  \end{equation}
+  Measurability follows by representing $G_d(r)$ as $r$ times the dilation by
+  $r$ of its unit-time probability measure.
+
+  The covariance is
+  \[
+    C_\rho(s,z;r,w)=K_\eta(s-r)\Gamma_{2\epsilon}(z-w),
+    \qquad 0\le C_\rho\le c_\rho
+    :=K_\eta(0)\Gamma_{2\epsilon}(0)<\infty.
+  \]
+  Positivity uses the nonnegative Radon measure $\Gamma$ and positive heat and
+  Laplace kernels. The upper bound also follows by Gaussian Cauchy--Schwarz.
+  H\"older's inequality and scalar Gaussian moments bound the absolute
+  expectation of any fixed number of source factors, uniformly over their
+  vertices. Applied to $2n$ factors this bounds the $L^2$ norm of each $n$-fold
+  product. The field is measurable and continuous, so integration against the
+  finite chain measure defines a Bochner $L^2$ integral and permits stochastic
+  Fubini between two chains.
+
+  These are the canonical regularized terminal integrals at common noise widths.
+  Here is the Green-width identification needed in dimension three. At fixed
+  positive $\rho$, replace every Green measure by its convolution with a
+  positive heat approximate identity. At fixed times the measures converge
+  weakly, preserving masses. Every Wick covariance product is bounded by a power
+  of $c_\rho$ and is spatially continuous by
+  Lemma~\ref{L:source-pointfield-regularity}. Thus, its spatial integrals
+  converge. The chain mass integrands from~\eqref{E:masked-chain-mass} give an
+  integrable time majorant. Square and cross moments between smoothed and
+  unsmoothed integrals converge to the same diagram sum; therefore, the random
+  integrals converge in $L^2$. This is precisely the Green-before-noise limit in
+  Lemma~\ref{L:joint-fixed-order}. It also applies in dimensions one and two if
+  Green smoothing is used. No samplewise source bound on heat-kernel tails is
+  needed. Consequently, Lemma~\ref{L:vertex-crude} applies to the unmasked
+  integrals.
+
+  If $n+k$ is odd, Gaussian centering gives zero. If $n+k = 2l$, each pair
+  partition $D$ contributes the nonnegative finite integral
+  \[
+    \int \prod_{\{i,j\}\in D}
+    C_\rho(s_i,z_i;s_j,z_j)
+    \ud(\nu_n^{t,x}\otimes\nu_k^{t,y}).
+  \]
+  The masked integrand has the additional factor $\prod_{i=1}^{2l}m(z_i) \in
+  [0,1]$. Every vertex appears exactly once, irrespective of its chain or
+  partner. Summing gives \eqref{E:masked-order-comparison}, including unequal
+  and empty chains and every self-pairing. At $n = k = 0$ both sides are one.
+  Taking $k = n$, $y = x$ and then applying the unmasked bound gives
+  \eqref{E:masked-order-bound}. This is a statement about expected displacement
+  diagrams; no samplewise solution order or Gaussian covariance order is used.
+  This proves Lemma~\ref{L:masked-chain-comparison}.
+\end{proof}
+
+\begin{proposition}[Ordinary solutions and tested moments]
+  \label{P:masked-source-moments}
+  The sums $u_\rho^m = \sum_{n\ge0}X_{\rho,n}^m$ and $u_\rho =
+  \sum_{n\ge0}X_{\rho,n}$ converge absolutely in $L^2$ and have locally
+  continuous versions that are the unique locally continuous ordinary mild
+  solutions with coefficients $mY_\rho$ and $Y_\rho$, respectively, and data
+  $(1,0)$. For every nonnegative $\phi \in C_c^\infty(\R^d)$,
+  \begin{align}
+    0&\le\E[u_\rho^m(t,x)u_\rho^m(t,y)]
+    \le\E[u_\rho(t,x)u_\rho(t,y)],\label{E:masked-two-point}\\
+    \E\left|\int\phi(x)u_\rho^m(t,x)\ud x\right|^2
+    &\le \|\phi\|_1^2\,\E|u_\rho(t,0)|^2.
+    \label{E:masked-average-source}
+  \end{align}
+  The spatial integral is an Bochner $L^2$ integral.
+\end{proposition}
+
+\begin{proof}
+  Put $Q_T = \sum_{n\ge0}q_n(T) < \infty$, using~\eqref{E:vertex-summability}.
+  Lemma~\ref{L:masked-chain-comparison} proves absolute $L^2$ convergence
+  uniformly in space and widths. To identify the sums pathwise, fix $\rho$, a
+  compact observation set and a finite horizon $T$. On the source regularity
+  event the coefficient is bounded by a finite sample-dependent $M$ on the
+  compact backward-cone enlargement. Finite propagation
+  and~\eqref{E:masked-chain-mass} bound each Picard term there by
+  $M^nT^{2n}/(2n)!$. This series converges uniformly. Each term is continuous by
+  the unit-time Green representation and dominated integration. Summing the
+  Volterra recursion gives the ordinary mild equation with initial displacement
+  one and velocity zero. Iterating the difference equation between two
+  continuous solutions bounds its value on the observation set by $B
+  M^nT^{2n}/(2n)!$, where $B$ bounds their difference on the larger compact
+  cone. Letting $n \to \infty$ proves uniqueness.
+
+  Ordinary Fubini and the absolute product integrability in the preceding lemma
+  identify each Bochner term with the pathwise chain integral at a fixed
+  terminal point, simultaneously over countably many orders. An almost surely
+  convergent subsequence of the $L^2$ partial sums then identifies its limit
+  with the continuous Picard version at that point. These versions define the
+  solution for all terminal points at this fixed $\rho$; no common event over
+  uncountably many widths is needed.
+
+  For either masked or unmasked terms, Cauchy--Schwarz gives
+  \[
+    \sum_{n,k\ge0}\E|X_{\rho,n}^{(m)}(t,x)
+    X_{\rho,k}^{(m)}(t,y)|\le Q_t^2.
+  \]
+  Products of partial sums converge in $L^1$. Thus, the preceding lemma passes
+  termwise to~\eqref{E:masked-two-point}. The unmasked source law is spatially
+  stationary, and its finite Picard integrals commute with translations. Their
+  $L^2$ limits inherit stationarity, so $\E[u_\rho(t,x)u_\rho(t,y)] \le
+  \E|u_\rho(t,0)|^2$. Stationarity is not required of the masked solution.
+
+  Each finite Bochner term is $L^2$-continuous in $x$ by source increment
+  continuity on compact cones and dominated Gaussian product moments. Uniform
+  $q_n$ tails pass this property to the full sum. Its separable $L^2$ image and
+  bound $Q_t$ give the Bochner average. Absolute Fubini is justified by
+  $\|\phi\|_1^2Q_t^2$. Integrating the two-point inequality against
+  $\phi(x)\phi(y)$ proves~\eqref{E:masked-average-source}. This proves
+  Proposition~\ref{P:masked-source-moments}.
+\end{proof}
+
+\begin{proposition}[Canonical point-moment limit and conditional transfer]
+  \label{P:masked-canonical-transfer}
+  At every fixed $t$, at arbitrary relative rates of the two widths,
+  \begin{equation}\label{E:masked-unmasked-moment-limit}
+    \lim_{\epsilon,\eta\downarrow0}\E|u_\rho(t,0)|^2
+    =\E|u(t,0)|^2,
+  \end{equation}
+  where $u$ is the original canonical Stratonovich solution. If the masked
+  averages in~\eqref{E:masked-average-source} converge in $L^2$ to
+  $Z_m(t,\phi)$, either at arbitrary rates or along a specified sequence with
+  both widths tending to zero, then
+  \begin{equation}\label{E:masked-conditional-transfer}
+    \E|Z_m(t,\phi)|^2\le\|\phi\|_1^2\,\E|u(t,0)|^2.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  At every fixed pair of orders the common-width source law is the vertexwise
+  law in Lemma~\ref{L:joint-fixed-order}. At terminal $(t,0)$ reverse each chain
+  by $s'_j = t-s_{n+1-j}$, $z'_j = -z_{n+1-j}$, and likewise for the other
+  chain. Even covariances preserve the reversed differences. Relabeling vertices
+  sends each pairing $\{i,j\}$ to $\{r(i),r(j)\}$, giving the exact
+  initial-chain convention in Proposition~\ref{P:mixed}, also for an empty
+  chain. The preceding Green-width identification removes Green smoothing first.
+  Lemma~\ref{L:joint-fixed-order} then gives the canonical limit of each diagram
+  at arbitrary relative noise-width rates. Odd mixed moments stay zero. Hence,
+  at fixed $n,k$,
+  \[
+    \E[X_{\rho,n}(t,0)X_{\rho,k}(t,0)]
+    \longrightarrow \E[X_n(t,0)X_k(t,0)].
+  \]
+  All absolute mixed moments, before and after the limit, are bounded by
+  $q_n(t)q_k(t)$. Given $\delta > 0$, choose a finite square of orders with the
+  double majorant outside it less than $\delta$. On the square the finitely many
+  limits hold jointly; off it both tails are bounded by $\delta$.
+  Proposition~\ref{P:mixed} identifies the canonical sum, proving
+  \eqref{E:masked-unmasked-moment-limit}. This argument uses the single-width
+  diagram laws, without assigning a new pathwise realization of the entire
+  canonical solution family.
+
+  Finally, $L^2$ convergence of the masked averages implies convergence of their
+  second moments by
+  \[
+    |\E|B|^2-\E|A|^2|
+    \le\|B-A\|_2(\|B\|_2+\|A\|_2).
+  \]
+  Take the same source limit in~\eqref{E:masked-average-source} and
+  use~\eqref{E:masked-unmasked-moment-limit}. Existence of the masked limit
+  remains an explicit premise here; the next section constructs it on a phase
+  containing the constant data. This proves
+  Proposition~\ref{P:masked-canonical-transfer}.
+\end{proof}
+
+===== END old-module.txt =====
+
+===== BEGIN new-module.txt =====
+{"source_path": "notes/integrated_masked_moments.tex", "source_revision": "16fdc47b22b74feffded7aeb223f2d579b505176", "selection": "WHOLE_FILE", "role": "ASSIGNED NEW complete module; exactly 3 proof pairs.", "bytes": 14521, "sha256": "f8fa717e95be1d65a588adb5de40e2f4f082c7a335b64a8d212a92618d1c348c"}
+===== RAW UTF8 SOURCE =====
+\section{Fixed masks and displacement moments}
+\label{S:masked-moments}
+
+We retain Hypothesis~\ref{H:homog}, data $(1,0)$, and all its original
+dimensions and covariance amplitudes. Fix $\rho = (\epsilon,\eta) > 0$ and the
+source $Y_\rho$ of Proposition~\ref{P:source-canonical-convergence}. For each
+fixed $\rho$ use the continuous-time, smooth-space version in
+Lemma~\ref{L:source-pointfield-regularity}. Source fields can use the auxiliary
+extension preserving the given noise; their law and the given noise remain those
+already constructed. Let $m \in C_c^\infty(\R^d)$ be real with $0 \le m \le 1$.
+It multiplies the physical source after regularization.
+
+Write $X_{\rho,n}^m(t,x)$ for the ordinary ordered displacement integral with
+coefficient $mY_\rho$, and $X_{\rho,n}$ for its unmasked version; both
+order-zero terms are one. We first construct these integrals. The positive Green
+measures $G_d(r,\ud z)$ have mass $r$ and support in $B_r$, including the sphere
+measure in $d = 3$. These are the source
+kernels~\cite{chen:author2026:time-dependency}*{(2.1), (2.3)--(2.5), p.~7}; the
+ordered convention and Gaussian pairing formula are
+\cite{chen:author2026:time-dependency}*{(2.13)--(2.16), p.~10; (2.19), p.~12}.
+We use all pair partitions, including self-pairings.
+
+\begin{lemma}[Chains and mixed-order comparison]
+  \label{L:masked-chain-comparison}
+  The finite ordered integrals are Bochner $L^2$ integrals. For all $n,k \ge 0$,
+  fixed $t,x,y$ and positive $\rho$,
+  \begin{equation}\label{E:masked-order-comparison}
+    0\le \E[X_{\rho,n}^m(t,x)X_{\rho,k}^m(t,y)]
+    \le \E[X_{\rho,n}(t,x)X_{\rho,k}(t,y)].
+  \end{equation}
+  Both expectations vanish when $n+k$ is odd. With $q_n$ from
+  Lemma~\ref{L:vertex-crude},
+  \begin{equation}\label{E:masked-order-bound}
+    \|X_{\rho,n}^m(t,x)\|_2\le q_n(t),\qquad
+    \|X_{\rho,n}(t,x)\|_2\le q_n(t).
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We construct the ordered integrals using finite positive chain measures and
+  Gaussian moment bounds. We then identify the Green-regularization limit and
+  compare every Wick diagram before summing over pairings.
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the finite chain integrals.
+  Let $\nu_n^{t,x}$ be the positive time-space chain measure on $0 < s_1 <
+  \cdots < s_n < t$, with successive spatial factors $G_d(s_{j+1}-s_j,\ud z_j)$
+  and $s_{n+1} = t$, recovering positions backwards from $x$. It uses measures
+  rather than sphere densities. The order-zero measure has mass one. Integrating
+  the latest vertex gives the recursion $f_n(t) = \int_0^t(t-r)f_{n-1}(r)\ud r$;
+  hence,
+  \begin{equation}\label{E:masked-chain-mass}
+    \nu_n^{t,x}(1)=\frac{t^{2n}}{(2n)!}.
+  \end{equation}
+  In the covariance and mask factors below, $z_i$ denotes the vertex position
+  recovered backwards from the terminal point, not the Green increment used to
+  construct the chain measure.
+  Starting from mass one at order zero, the recursion integrates the mass of
+  the last Green factor, $t-r$, against the previous mass. Substituting
+  $f_{n-1}(r) = r^{2n-2}/(2n-2)!$ gives the displayed mass by elementary
+  integration. In particular, the measure is finite at each fixed order.
+  Measurability follows by representing $G_d(r)$ as $r$ times the dilation by
+  $r$ of its unit-time probability measure.
+
+  The covariance is
+  \[
+    C_\rho(s,z;r,w)=K_\eta(s-r)\Gamma_{2\epsilon}(z-w),
+    \qquad 0\le C_\rho\le c_\rho
+    :=K_\eta(0)\Gamma_{2\epsilon}(0)<\infty.
+  \]
+  Positivity uses the nonnegative Radon measure $\Gamma$ and positive heat and
+  Laplace kernels. The upper bound also follows by Gaussian Cauchy--Schwarz.
+  H\"older's inequality and scalar Gaussian moments bound the absolute
+  expectation of any fixed number of source factors, uniformly over their
+  vertices. Applied to $2n$ factors this bounds the $L^2$ norm of each $n$-fold
+  product. The field is measurable and continuous, so integration against the
+  finite chain measure defines a Bochner $L^2$ integral and permits stochastic
+  Fubini between two chains.
+
+  The bound on the $L^2$ norm of each product is uniform over the integration
+  variables at fixed $\rho,n$. Its integral against the finite chain measure
+  is therefore finite. This is the Bochner integrability condition, and
+  applying the same argument to two products gives the absolute integrability
+  needed to exchange expectation and the two chain integrals.
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the integrals obtained by Green
+  smoothing.
+  These are the canonical regularized terminal integrals at common noise widths.
+  The unmasked $X_{\rho,n}(t,x)$ is $Y_n^{\boldsymbol a}(t,x)$ from
+  Lemma~\ref{L:vertex-crude} with every vertexwise noise width in $\boldsymbol
+  a$ set equal to $\rho$, so its bound is $q_n(t)$.
+  Here is the Green-width identification needed in dimension three. At fixed
+  positive $\rho$, replace every Green measure by its convolution with a
+  positive heat approximate identity. At fixed times the measures converge
+  weakly, preserving masses. Every Wick covariance product is bounded by a power
+  of $c_\rho$ and is spatially continuous by
+  Lemma~\ref{L:source-pointfield-regularity}. Thus, its spatial integrals
+  converge. The chain mass integrands from~\eqref{E:masked-chain-mass} give an
+  integrable time majorant. Square and cross moments between smoothed and
+  unsmoothed integrals converge to the same diagram sum; therefore, the random
+  integrals converge in $L^2$. This is precisely the Green-before-noise limit in
+  Lemma~\ref{L:joint-fixed-order}. It also applies in dimensions one and two if
+  Green smoothing is used. No samplewise source bound on heat-kernel tails is
+  needed. Consequently, Lemma~\ref{L:vertex-crude} applies to the unmasked
+  integrals.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We compare each masked Wick diagram with its
+  unmasked diagram.
+  If $n+k$ is odd, Gaussian centering gives zero. If $n+k = 2l$, each pair
+  partition $D$ contributes the nonnegative finite integral
+  \[
+    \int \prod_{\{i,j\}\in D}
+    C_\rho(s_i,z_i;s_j,z_j)
+    \ud(\nu_n^{t,x}\otimes\nu_k^{t,y}).
+  \]
+  The masked integrand has the additional factor $\prod_{i=1}^{2l}m(z_i) \in
+  [0,1]$. Every vertex appears exactly once, irrespective of its chain or
+  partner. Summing gives \eqref{E:masked-order-comparison}, including unequal
+  and empty chains and every self-pairing. At $n = k = 0$ both sides are one.
+  Taking $k = n$, $y = x$ and then applying the unmasked bound gives
+  \eqref{E:masked-order-bound}. This is a statement about expected displacement
+  diagrams; no samplewise solution order or Gaussian covariance order is used.
+  This proves Lemma~\ref{L:masked-chain-comparison}.
+\end{proof}
+
+\begin{proposition}[Ordinary solutions and tested moments]
+  \label{P:masked-source-moments}
+  The sums $u_\rho^m = \sum_{n\ge0}X_{\rho,n}^m$ and $u_\rho =
+  \sum_{n\ge0}X_{\rho,n}$ converge absolutely in $L^2$ and have locally
+  continuous versions that are the unique locally continuous ordinary mild
+  solutions with coefficients $mY_\rho$ and $Y_\rho$, respectively, and data
+  $(1,0)$. For every nonnegative $\phi \in C_c^\infty(\R^d)$,
+  \begin{align}
+    0&\le\E[u_\rho^m(t,x)u_\rho^m(t,y)]
+    \le\E[u_\rho(t,x)u_\rho(t,y)],\label{E:masked-two-point}\\
+    \E\left|\int\phi(x)u_\rho^m(t,x)\ud x\right|^2
+    &\le \|\phi\|_1^2\,\E|u_\rho(t,0)|^2.
+    \label{E:masked-average-source}
+  \end{align}
+  The spatial integral is a Bochner $L^2$ integral.
+\end{proposition}
+
+\begin{proof}
+  We first identify the mean-square series with the continuous Picard solution
+  on each compact observation region. We then pass the mixed-order comparison
+  through the series and integrate it against the nonnegative spatial test.
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct and identify the ordinary mild
+  solutions.
+  Put $Q_T = \sum_{n\ge0}q_n(T) < \infty$, using~\eqref{E:vertex-summability}.
+  Lemma~\ref{L:masked-chain-comparison} proves absolute $L^2$ convergence
+  uniformly in space and widths. To identify the sums pathwise, fix $\rho$, a
+  compact observation set and a finite horizon $T$. On the source regularity
+  event the coefficient is bounded by a finite sample-dependent $M$ on the
+  compact backward-cone enlargement. Finite propagation
+  and~\eqref{E:masked-chain-mass} bound each Picard term there by
+  $M^nT^{2n}/(2n)!$. This series converges uniformly. Each term is continuous by
+  the unit-time Green representation and dominated integration. Summing the
+  Volterra recursion gives the ordinary mild equation with initial displacement
+  one and velocity zero. Iterating the difference equation between two
+  continuous solutions bounds its value on the observation set by $B
+  M^nT^{2n}/(2n)!$, where $B$ bounds their difference on the larger compact
+  cone. Letting $n \to \infty$ proves uniqueness.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the continuous version with the
+  Bochner series.
+  Ordinary Fubini and the absolute product integrability in the preceding lemma
+  identify each Bochner term with the pathwise chain integral at a fixed
+  terminal point, simultaneously over countably many orders. An almost surely
+  convergent subsequence of the $L^2$ partial sums then identifies its limit
+  with the continuous Picard version at that point. These versions define the
+  solution for all terminal points at this fixed $\rho$; no common event over
+  uncountably many widths is needed.
+
+  \medskip
+  \noindent\textit{Step 3.~}We sum the expected two-point comparison.
+  For either masked or unmasked terms, Cauchy--Schwarz gives
+  \[
+    \sum_{n,k\ge0}\E|X_{\rho,n}^{(m)}(t,x)
+    X_{\rho,k}^{(m)}(t,y)|\le Q_t^2.
+  \]
+  For the unmasked stationary field, Cauchy--Schwarz bounds its two-point
+  expectation by the geometric mean of two equal point second moments.
+  Products of partial sums converge in $L^1$. Thus, the preceding lemma passes
+  termwise to~\eqref{E:masked-two-point}. The unmasked source law is spatially
+  stationary, and its finite Picard integrals commute with translations. Their
+  $L^2$ limits inherit stationarity, so $\E[u_\rho(t,x)u_\rho(t,y)] \le
+  \E|u_\rho(t,0)|^2$. Stationarity is not required of the masked solution.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We form the tested spatial average.
+  Translating every recovered vertex position by $x$ identifies $\nu_n^{t,x}$
+  with the translate of $\nu_n^{t,0}$; on this fixed increment measure,
+  varying $x$ changes only the arguments of the source factors and, in the
+  masked case, of $m$.
+  Each finite Bochner term is $L^2$-continuous in $x$ by source increment
+  continuity on compact cones and dominated Gaussian product moments. Uniform
+  $q_n$ tails pass this property to the full sum. Its separable $L^2$ image and
+  bound $Q_t$ give the Bochner average. Absolute Fubini is justified by
+  $\|\phi\|_1^2Q_t^2$. Integrating the two-point inequality against
+  $\phi(x)\phi(y)$ proves~\eqref{E:masked-average-source}. This proves
+  Proposition~\ref{P:masked-source-moments}.
+\end{proof}
+
+\begin{proposition}[Canonical point-moment limit and conditional transfer]
+  \label{P:masked-canonical-transfer}
+  At every fixed $t$, at arbitrary relative rates of the two widths,
+  \begin{equation}\label{E:masked-unmasked-moment-limit}
+    \lim_{\epsilon,\eta\downarrow0}\E|u_\rho(t,0)|^2
+    =\E|u(t,0)|^2,
+  \end{equation}
+  where $u$ is the original canonical Stratonovich solution. If the masked
+  averages in~\eqref{E:masked-average-source} converge in $L^2$ to
+  $Z_m(t,\phi)$, either at arbitrary rates or along a specified sequence with
+  both widths tending to zero, then
+  \begin{equation}\label{E:masked-conditional-transfer}
+    \E|Z_m(t,\phi)|^2\le\|\phi\|_1^2\,\E|u(t,0)|^2.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  We first pass to the canonical limit at each pair of chain orders. A
+  summable double majorant then gives the full point moment. The conditional
+  masked transfer follows by passing to the limit in the tested source
+  inequality.
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the limit for fixed orders.
+  The relabelling $r$ below reverses the vertex order separately within each
+  chain.
+  At every fixed pair of orders the common-width source law is the vertexwise
+  law in Lemma~\ref{L:joint-fixed-order}. At terminal $(t,0)$ reverse each chain
+  by $s'_j = t-s_{n+1-j}$, $z'_j = -z_{n+1-j}$, and likewise for the other
+  chain. Even covariances preserve the reversed differences. Relabeling vertices
+  sends each pairing $\{i,j\}$ to $\{r(i),r(j)\}$, giving the exact
+  initial-chain convention in Proposition~\ref{P:mixed}, also for an empty
+  chain. The preceding Green-width identification removes Green smoothing first.
+  Lemma~\ref{L:joint-fixed-order} then gives the canonical limit of each diagram
+  at arbitrary relative noise-width rates. Odd mixed moments stay zero. Hence,
+  at fixed $n,k$,
+  \[
+    \E[X_{\rho,n}(t,0)X_{\rho,k}(t,0)]
+    \longrightarrow \E[X_n(t,0)X_k(t,0)].
+  \]
+
+  \medskip
+  \noindent\textit{Step 2.~}We pass from finitely many orders to the full
+  moment.
+  All absolute mixed moments, before and after the limit, are bounded by
+  $q_n(t)q_k(t)$. Given $\delta > 0$, choose a finite square of orders with the
+  double majorant outside it less than $\delta$. On the square the finitely many
+  limits hold jointly; off it both tails are bounded by $\delta$.
+  Proposition~\ref{P:mixed} identifies the canonical sum, proving
+  \eqref{E:masked-unmasked-moment-limit}. This argument uses the single-width
+  diagram laws, without assigning a new pathwise realization of the entire
+  canonical solution family.
+
+  \medskip
+  \noindent\textit{Step 3.~}We transfer the bound under the stated
+  masked-limit premise.
+  Finally, $L^2$ convergence of the masked averages implies convergence of their
+  second moments by
+  \[
+    |\E|B|^2-\E|A|^2|
+    \le\|B-A\|_2(\|B\|_2+\|A\|_2).
+  \]
+  The inequality follows by factoring the difference of squared norms and
+  applying Cauchy--Schwarz. Convergence in $L^2$ also bounds both norms on the
+  right, so this difference tends to zero. Thus, both sides of the source
+  inequality have the limits needed for the comparison.
+  Take the same source limit in~\eqref{E:masked-average-source} and
+  use~\eqref{E:masked-unmasked-moment-limit}. Existence of the masked limit
+  remains an explicit premise here; the next section constructs it on a phase
+  containing the constant data. This proves
+  Proposition~\ref{P:masked-canonical-transfer}.
+\end{proof}
+
+===== END new-module.txt =====
+
+===== BEGIN context-model-assumptions.txt =====
+{"source_path": "notes/notes_stratonovich_ham_second_moment.tex", "source_revision": "cdde711c248862f33207860107dd0e6b31d60852", "selection": "LF_RANGE", "role": "UNASSIGNED exact baseline declaration/definition context; no upstream proof assigned or counted.", "bytes": 1986, "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"}
+===== RAW UTF8 SOURCE =====
+\section{Model and standing assumptions}\label{S:model}
+
+We study the hyperbolic Anderson model
+\cite{chen:author2026:time-dependency}*{(1.1)}
+\begin{equation}\label{E:HAM}
+  \frac{\partial^2 u}{\partial t^2}(t,x)=\Delta u(t,x)+\W(t,x)u(t,x),
+  \qquad u(0,x)=1,\quad \frac{\partial u}{\partial t}(0,x)=0,
+\end{equation}
+for $(t,x) \in \R_+\times\R^d$, $d \in \{1,2,3\}$, interpreted in the
+Stratonovich sense (limit of classical wave equations driven by smoothed noises
+$\W_{\epsilon,\delta}$). The noise is centered Gaussian with
+\begin{equation}\label{E:cov}
+  \operatorname{Cov}\big(\W(s,x),\W(t,y)\big)=|s-t|^{-\alpha_0}\gamma(x-y),
+  \qquad 0<\alpha_0<1,
+\end{equation}
+where $\gamma \ge 0$ is nonnegative definite with spectral measure $\mu$.
+
+\begin{hypothesis}[Homogeneous covariance]\label{H:homog}
+  Let $d \in \{1,2,3\}$ and $0 < \alpha_0 < 1$. The spatial covariance is a
+  nonnegative, even, positive-definite tempered Radon measure $\Gamma$ on
+  $\R^d$, with positive even tempered Radon spectral measure $\mu$ in the
+  convention
+  \[
+    \Gamma=\int e^{i\xi\cdot x}\mu(\ud\xi)
+    \quad\text{in the sense of tempered distributions}.
+  \]
+  The symbol $\gamma$ in~\eqref{E:cov} denotes this covariance as a function
+  when one exists, and as a distribution otherwise. For every Borel set $A$ and
+  $c > 0$, $\Gamma(cA) = c^{d-\alpha}\Gamma(A)$, and
+  \begin{equation}\label{E:threshold}
+    \alpha_0+\alpha<2,
+  \end{equation}
+  with $0 < \alpha < d$, or $\alpha = d = 1$. In particular, the last case
+  includes spatial white noise $\Gamma = \delta_0$.
+\end{hypothesis}
+
+\paragraph{Zero covariance.}
+Hypothesis~\ref{H:homog} allows $\Gamma = 0$ by design. In this case the
+centered Gaussian noise is $\W = 0$, and the solution with initial data
+$(1,0)$ is $u(t,x) = 1$. Thus $\E|u(t,x)|^p = 1$ for every $p > 0$, and
+all normalized logarithmic moment rates are zero. Results asserting strict
+positivity of covariance-dependent quantities impose $\Gamma \ne 0$ locally.
+
+
+===== END context-model-assumptions.txt =====
+
+===== BEGIN context-P-mixed.txt =====
+{"source_path": "notes/notes_stratonovich_ham_second_moment.tex", "source_revision": "cdde711c248862f33207860107dd0e6b31d60852", "selection": "LF_RANGE", "role": "UNASSIGNED exact baseline declaration/definition context; no upstream proof assigned or counted.", "bytes": 553, "sha256": "f69b6b043f88a3cf5fdb7b9f6e1c4d3fb9be332def7cbaa1d23814bb9d0fe807"}
+===== RAW UTF8 SOURCE =====
+\begin{proposition}[Mixed terms]\label{P:mixed}
+  Under Hypothesis~\ref{H:homog},
+  \begin{equation}\label{E:mixed-moment}
+    \E[X_m(t,x)X_n(t,x)]
+    =\begin{cases}
+      \displaystyle\sum_{D\in\Pi_k}J_{m,n,D}(t),&m+n=2k,\\
+      0,&m+n\text{ odd},
+    \end{cases}
+  \end{equation}
+  where the case $m = n = 0$ equals one. In particular,
+  \begin{equation}\label{E:full-second}
+    \E u^2(t,x)=\sum_{k=0}^\infty\sum_{m=0}^{2k}
+    \sum_{D\in\Pi_k}J_{m,2k-m,D}(t).
+  \end{equation}
+  This is a convergent series of nonnegative terms.
+\end{proposition}
+
+===== END context-P-mixed.txt =====
+
+===== BEGIN context-L-joint-fixed-order.txt =====
+{"source_path": "notes/notes_stratonovich_ham_second_moment.tex", "source_revision": "cdde711c248862f33207860107dd0e6b31d60852", "selection": "LF_RANGE", "role": "UNASSIGNED exact baseline declaration/definition context; no upstream proof assigned or counted.", "bytes": 595, "sha256": "e5b69134ff339a7550b8512aa85ad191c0c6abfb2b1da567f1e3e7c27fa1b7a3"}
+===== RAW UTF8 SOURCE =====
+\begin{lemma}[Joint diagram limits and fixed-order construction]
+  \label{L:joint-fixed-order}
+  Under Hypothesis~\ref{H:homog}, every two-chain diagram with $m+n = 2k \ge 2$
+  has a finite joint limit as all its positive vertexwise spatial and temporal
+  widths tend to zero, at arbitrary relative rates. This includes unequal and
+  empty chains. For every $n \ge 1,t > 0,x$, $Y_n^{\boldsymbol a}(t,x)$ has a
+  unique joint $L^2$ limit, denoted $X_n(t,x)$; it is the multiple Stratonovich
+  integral of $g_n$. Green smoothing in dimension three is removed before noise
+  smoothing.
+\end{lemma}
+
+===== END context-L-joint-fixed-order.txt =====
+
+===== BEGIN context-L-vertex-crude.txt =====
+{"source_path": "notes/notes_stratonovich_ham_second_moment.tex", "source_revision": "cdde711c248862f33207860107dd0e6b31d60852", "selection": "LF_RANGE", "role": "UNASSIGNED exact baseline declaration/definition context; no upstream proof assigned or counted.", "bytes": 601, "sha256": "e1d84b39d46e7b95085290c9ddca62be8461035d15b1845f4728c13ef16be6cc"}
+===== RAW UTF8 SOURCE =====
+\begin{lemma}[Uniform vertexwise regularization bound]\label{L:vertex-crude}
+  Under Hypothesis~\ref{H:homog}, there are $C < \infty$ and $\theta_0 > 0$ such
+  that, for all positive vertexwise widths and $n \ge 1$,
+  \begin{equation}\label{E:vertex-crude}
+    \|Y_n^{\boldsymbol a}(t,x)\|_2\le q_n(t),\qquad
+    q_n(t):=e^{\theta_0t}\frac{C^{n/2}t^n}{\sqrt{n!}}.
+  \end{equation}
+  The bound also holds for $X_n(t,x)$, with $q_0(t) = e^{\theta_0t} \ge 1$. For
+  each $T < \infty$,
+  \begin{equation}\label{E:vertex-summability}
+    \sum_{n\ge0}\sqrt{n+1}\,q_n(T)<\infty.
+  \end{equation}
+\end{lemma}
+
+===== END context-L-vertex-crude.txt =====
+
+===== BEGIN context-source-convergence-baseline.txt =====
+{"source_path": "notes/integrated_source_convergence.tex", "source_revision": "cdde711c248862f33207860107dd0e6b31d60852", "selection": "WHOLE_FILE", "role": "UNASSIGNED complete baseline upstream module. Stated inputs/definitions may be used under checked application hypotheses; these proofs are NOT assigned or counted as additional reviewed proofs.", "bytes": 25085, "sha256": "f212bad41254a78109e5802def45053c8bda53a416cda9f457513406304aaef4"}
+===== RAW UTF8 SOURCE =====
+\section{Convergence of the regularized Gaussian operator paths}
+\label{S:source-driver-convergence}
+
+[held back until the source author has been told]
+
+Retain Hypothesis~\ref{H:homog}, the fixed $R,T,\zeta_R,E$ and parameters
+of~\eqref{E:driver-parameters}, and the original noise space $H_W$. Write
+$\mathscr{B}_\theta = C^\theta([0,T];\mathcal{B}(E))$. Fix one original test
+basis $f_j$ and its coefficient paths $A_j(t)$ from
+Proposition~\ref{P:actual-operator-driver}. Thus, $M_N = \sum_{j\le N}W(f_j)A_j
+\to M_R$ in every finite $L^p(\mathscr{B}_\theta)$. Zero covariance gives zero
+noises and operator paths throughout; assume $\Gamma \ne 0$ in the construction.
+
+\subsection{Gaussian transfer in the full path norm}
+
+\LeanMarker{L:source-finite-comparison}
+\begin{lemma}[Finite Gaussian linear images]\label{L:source-finite-comparison}
+  Let $v_1,\ldots,v_N$ lie in a real Banach space and let $\xi$ be a centered
+  Gaussian vector with covariance bounded by $CI$, $C \ge 0$. For independent
+  standard real $g_j$ and $p \ge 1$,
+  \begin{equation}\label{E:source-finite-comparison}
+    \left(\E\left\|\sum_j\xi_jv_j\right\|^p\right)^{1/p}
+    \le\sqrt C\left(\E\left\|\sum_jg_jv_j\right\|^p\right)^{1/p}.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  The function $\varphi(x) = \|\sum_jx_jv_j\|^p$ is continuous and convex, even
+  when the linear image gives only a seminorm on $\R^N$. Its Gaussian
+  expectations are finite by the finite-sum bound. On an auxiliary space take an
+  independent centered Gaussian $Z$ of covariance $CI-\operatorname{Cov}\xi$.
+  Conditional Jensen gives $\E\varphi(\xi) \le \E\varphi(\xi+Z)$. The latter
+  vector has the law of $\sqrt C\,g$, proving the claim. The case $C = 0$ is
+  immediate. This auxiliary comparison changes neither the coupling of $\xi$ nor
+  any nonlinear wave solution. This proves
+  Lemma~\ref{L:source-finite-comparison}.
+\end{proof}
+
+Lemma~\ref{L:source-finite-comparison} compares two finite Gaussian sums with
+the same vectors. We apply it to the coefficient paths $A_j$, keeping the
+original basis $f_j$ and replacing $W(f_j)$ by the evaluations of another
+Gaussian noise.
+
+\begin{proposition}[Gaussian transfer and stability]
+  \label{P:source-gaussian-transfer}
+  Let $Y$ be a centered Gaussian linear noise on smooth compact positive-time
+  tests, on a common coupled space, with
+  \begin{equation}\label{E:source-raw-variance-bound}
+    \operatorname{Var}Y(F)\le C\|F\|_{H_W}^2.
+  \end{equation}
+  It extends to $H_W$. The finite paths $M_{Y,N} = \sum_{j\le N}Y(f_j)A_j$
+  converge in every finite $L^p(\mathscr{B}_\theta)$ to a centered Gaussian path
+  $M_Y$ with compact values at all times on one path event, and
+  \begin{align}
+    \|M_Y-M_{Y,N}\|_{L^p\mathscr{B}_\theta}
+    &\le\sqrt C\|M_R-M_N\|_{L^p\mathscr{B}_\theta},\label{E:source-transfer-tail}\\
+    \|M_Y\|_{L^p\mathscr{B}_\theta}
+    &\le\sqrt C\|M_R\|_{L^p\mathscr{B}_\theta}.\label{E:source-transfer-norm}
+  \end{align}
+  For a fixed real Schwartz pair and time,
+  \begin{equation}\label{E:source-transferred-row}
+    \langle M_Y(t)z,w\rangle_E=Y(h_{R,t;z,w})\quad\text{in }L^2,
+  \end{equation}
+  where $h_{R,t;z,w}$ is the explicit original test class
+  $\zeta_R1_{(0,t)}v_zG_w$ with the adjoint from~\eqref{E:variance-dual-wave}.
+  The path is basis-independent up to indistinguishability, is linear in jointly
+  Gaussia noise families, and complexifies sesquilinearly.
+
+  If $(W,Y_n)$ are jointly centered Gaussian, $Y_n$ and $D_n = W-Y_n$ have
+  uniform bounds of the form~\eqref{E:source-raw-variance-bound}, and
+  $\operatorname{Var}D_n(F) \to 0$ on every smooth compact test, then $M_{Y_n}
+  \to M_R$ in every finite $L^p(\mathscr{B}_\theta)$.
+\end{proposition}
+
+\begin{proof}
+  The variance bound annihilates covariance-null tests and extends $Y$ as a
+  bounded linear map into its $L^2$ space. Completion preserves Gaussian
+  finite-dimensional laws. For each finite original orthonormal family, the
+  covariance of its $Y$ evaluations is bounded by $CI$, by applying the variance
+  bound to every real linear combination. Independence of $Y(f_j)$ is not
+  assumed.
+
+  Apply Lemma~\ref{L:source-finite-comparison} with $v_j = A_j(\cdot)$ in
+  $\mathscr{B}_\theta$, also to finite tails. The standard comparison vector has
+  the law of the original $W(f_j)$. The already-proved original path convergence
+  makes $M_{Y,N}$ Cauchy in every $L^p$. It lies in the same separable closed
+  span of the countably many deterministic paths. The elementary
+  Cauchy/subsequence construction of Lemma~\ref{L:driver-holder-limit} gives a
+  strongly measurable limit on the space of $Y$. Different $p$ limits agree by
+  convergence in probability. Passing to limits in the finite inequalities gives
+  both displayed bounds. An almost surely uniformly convergent subsequence gives
+  compact values for all times. Functional $L^2$ limits of Gaussian linear
+  combinations prove that the path is Gaussian.
+
+  For real Schwartz $z,w$, the coefficient identity is
+  \[
+    \langle A_j(t)z,w\rangle_E
+    =\E[W(h_{R,t;z,w})W(f_j)]
+    =\langle h_{R,t;z,w},f_j\rangle_{H_W}.
+  \]
+  Therefore, the finite transferred row is $Y(P_Nh)$, with $P_N$ the original
+  $H_W$ orthogonal projection. Since $P_Nh \to h$, the noise bound gives
+  $Y(P_Nh) \to Y(h)$ in $L^2$. Operator-path $L^2$ convergence
+  proves~\eqref{E:source-transferred-row}. Long intervals use the same
+  covariance completion and endpoint nullity as in
+  Lemma~\ref{L:driver-interval-limit}. No filter is commuted through a physical
+  mask or wave group. Four real pair identities give the complex assertion.
+  Countably many dense Schwartz phases and rational times, followed by phase
+  density and path continuity, prove basis indistinguishability.
+
+  For jointly Gaussian $Y,Z$, their real linear combinations have an original
+  variance bound by the $L^2$ triangle inequality. The finite sums are linear in
+  the noise, hence so are the path limits. In the stability assertion $D_n$ is
+  centered Gaussian by the joint hypothesis. Its uniform bound gives
+  \[
+    \|M_{D_n}-M_{D_n,N}\|_{L^p\mathscr{B}_\theta}
+    \le\sqrt{C_D}\|M_R-M_N\|_{L^p\mathscr{B}_\theta}.
+  \]
+  For fixed $N$, the covariance matrix of $(D_n(f_j))_{j\le N}$ is positive and
+  bounded by $s_N(n)I$, where $s_N(n) = \sum_{j\le N}\operatorname{Var}D_n(f_j)
+  \to 0$. The finite comparison gives $\|M_{D_n,N}\|_{L^p\mathscr{B}_\theta} \le
+  \sqrt{s_N(n)}\|M_N\|_{L^p\mathscr{B}_\theta}$. Choose $N$ large for the
+  uniform tail, then $n$ large for the finite head. Linearity identifies
+  $M_{D_n} = M_R-M_{Y_n}$. The same argument proves a multiparameter limit
+  whenever each fixed test error tends to zero, with no relation between
+  parameter rates. This proves Proposition~\ref{P:source-gaussian-transfer}.
+\end{proof}
+
+\subsection{The spatial covariance space and an extension preserving the given noise}
+
+Proposition~\ref{P:source-gaussian-transfer} reduces source-path convergence
+to uniform variance domination and vanishing residual variance on each test,
+for noises jointly Gaussian with $W$. We now construct such regularized
+sources, beginning with the spatial covariance space and heat regularization.
+
+\LeanMarker{L:source-spatial-heat}
+\begin{lemma}[Original spatial space and heat]\label{L:source-spatial-heat}
+  Let $H_\Gamma$ be the real test-null completion with
+  \[
+    B_\Gamma(f,g)=\int\Gamma(\ud y)\int f(x)g(x-y)\ud x
+    =(2\pi)^d\int\widehat{f}(\xi)\overline{\widehat{g}(\xi)}\mu(\ud\xi).
+  \]
+  It is separable and includes Schwartz tests. With
+  \begin{equation}\label{E:source-heat-definition}
+    p_\varepsilon(x)=(2\pi\varepsilon)^{-d/2}
+    e^{-|x|^2/(2\varepsilon)},\qquad C_\varepsilon f=p_\varepsilon*f,
+  \end{equation}
+  heat is a positive self-adjoint contraction on $H_\Gamma$, $I-C_\varepsilon$
+  is a contraction, and $C_\varepsilon \to I$ strongly.
+\end{lemma}
+
+\begin{proof}
+  The spectral normalization is the spatial computation in
+  Proposition~\ref{P:masked-noise-completion}; its integral is real on real
+  tests by evenness of $\mu$. The local bound $|B_\Gamma(f,g)| \le
+  |K|\Gamma(K-K)\|f\|_\infty\|g\|_\infty$ on a common compact support gives
+  separability by countable smooth approximation. Expanding smooth cutoffs of a
+  Schwartz test converge in Schwartz seminorms, and its covariance correlation
+  pairing converges against tempered $\Gamma$. Thus, Schwartz tests enter the
+  same completion. The Fourier multiplier of $C_\varepsilon$ is
+  $m_\varepsilon(\xi) = e^{-\varepsilon|\xi|^2/2}$. On dense Schwartz tests, the
+  displayed norm gives positivity, self-adjointness and both contraction bounds.
+  Dominated convergence gives strong convergence there; uniform boundedness
+  extends it to the completion. This uses no physical mask operator on a noise
+  quotient. This proves Lemma~\ref{L:source-spatial-heat}.
+\end{proof}
+
+Set $\nu_a(\ud\lambda) = \lambda^{a-1}\ud\lambda/\Gamma_E(a)$ and
+\[
+  \mathcal{G}=L^2((0,\infty)_\lambda\times\R_r,
+  \nu_a(\ud\lambda)\ud r;H_\Gamma).
+\]
+This is a real separable Hilbert space: countable simple functions on rational
+rectangles with a countable dense spatial collection suffice.
+
+\begin{lemma}[Feature isometry preserving the given noise]\label{L:source-retaining-isometry}
+  On finite smooth temporal-spatial tensors define
+  \begin{equation}\label{E:source-feature-isometry}
+    \Phi F(\lambda,r)=\sqrt{2\lambda}
+    \int_{\substack{t>0\\t\ge r}}e^{-\lambda(t-r)}F(t,\cdot)\ud t.
+  \end{equation}
+  It extends to an isometry $\Phi:H_W \to \mathcal{G}$ with closed range, and
+  the formula represents smooth compact tests almost everywhere. On a product
+  extension retaining the original $W$, there is an isonormal $\mathcal{I}$ on
+  $\mathcal{G}$ with
+  \begin{equation}\label{E:source-given-W-retention}
+    \mathcal{I}(\Phi h)=W(h)\quad\text{in }L^2
+    \quad\text{for each }h\in H_W.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  The identity
+  \[
+    \int_{-\infty}^{\min(t,u)}
+    2\lambda e^{-\lambda(t+u-2r)}\ud r
+    =e^{-\lambda|t-u|}
+  \]
+  and the original Laplace formula give $\|\Phi F\|_{\mathcal{G}}^2 =
+  \|F\|_{H_W}^2$. All signed exchanges for finite tensors are absolutely
+  integrable: compact temporal factors give integrals of
+  $|\tau(t)\sigma(u)||t-u|^{-a}$, finite for $a < 1$, times fixed finite spatial
+  inner products. No oscillatory infinite-measure Fubini is used. Smooth time
+  partitions on one compact support approximate a general smooth spacetime test
+  uniformly by finite tensors. The local covariance
+  bound~\eqref{E:driver-test-continuity} proves their density in $H_W$. Hence,
+  the isometry extends with closed range.
+
+  For a general smooth compact $F$, those approximants also converge uniformly
+  in spatial $H_\Gamma$ norm in time, by local Radon mass. For fixed
+  $\lambda,r$, their integrals in~\eqref{E:source-feature-isometry} converge in
+  $H_\Gamma$. Meanwhile the isometry gives convergence in $\mathcal{G}$, with an
+  almost everywhere convergent subsequence. Its two limits agree, proving the
+  stated formula. The coordinate $r$ is auxiliary; no value of original
+  negative-time noise has been assigned.
+
+  Let $P$ project orthogonally onto $\Phi H_W$. On a product extension take an
+  independent isonormal $J$ on $(\Phi H_W)^\perp$, built from independent real
+  standard Gaussians on a finite or countable basis. Define
+  \[
+    \mathcal{I}(g)=W(\Phi^{-1}Pg)+J((I-P)g).
+  \]
+  Orthogonality and independence make it isonormal on $\mathcal{G}$ and
+  prove~\eqref{E:source-given-W-retention} with the original random variable,
+  not only its law. For the countable fixed original basis, these equalities
+  hold on one common probability-one set. Thus, the original finite paths and
+  their $L^p$ limits are precisely pullbacks of the already constructed original
+  operator path. Cutoff fields may use $J$; they are not asserted to be
+  functions of $W$ alone. This proves Lemma~\ref{L:source-retaining-isometry}.
+\end{proof}
+
+The auxiliary component can be nonzero: No-go~\ref{P:nogo-32}
+constructs an orthogonal witness for every positive finite cutoff point
+feature at positive time. Proposition~\ref{P:constant-raw-average} later
+proves that the tested fixed-mask limit is $W$-measurable, using the
+operator-path and Young-flow convergence.
+
+
+\input{notes/figures/common-noise}
+
+\subsection{Exact joint source law and convergence}
+
+Let $P_\eta$ multiply $\mathcal{G}$ by $1_{\{\lambda\le\eta^{-1}\}}$. Let
+$C_\varepsilon$ act fiberwise on $H_\Gamma$. These commute. For $\rho =
+(\varepsilon,\eta) > 0$, define
+\begin{equation}\label{E:source-cutoff-noises}
+  Q_\rho=C_\varepsilon P_\eta,\qquad
+  Y_\rho(F)=\mathcal{I}(Q_\rho\Phi F),\qquad
+  D_\rho(F)=\mathcal{I}((I-Q_\rho)\Phi F)=W(F)-Y_\rho(F).
+\end{equation}
+The last equality uses the coupling preserving the given noise. Define
+\begin{equation}\label{E:source-covariance-functions}
+  \Gamma_e(x)=(p_e*\Gamma)(x),\qquad
+  K_\eta(v)=\frac1{\Gamma_E(a)}
+  \int_0^{\eta^{-1}}e^{-\lambda|v|}\lambda^{a-1}\ud\lambda.
+\end{equation}
+The temporal operation is a Laplace prefix, not temporal convolution.
+
+\begin{proposition}[Canonical sources on the extended space containing the given noise]
+  \label{P:source-canonical-convergence}
+  The noises in~\eqref{E:source-cutoff-noises} have random field realizations
+  with joint covariance
+  \begin{equation}\label{E:source-joint-covariance}
+    \operatorname{Cov}(Y_{\varepsilon,\eta}(t,x),
+    Y_{\varepsilon',\eta'}(s,y))
+    =K_{\max(\eta,\eta')}(t-s)\Gamma_{\varepsilon+\varepsilon'}(x-y).
+  \end{equation}
+  Mean-square random field integration agrees with $Y_\rho(F)$ on tests. Both
+  source and full residual obey
+  \begin{equation}\label{E:source-two-dominations}
+    \operatorname{Var}Y_\rho(F),\quad\operatorname{Var}D_\rho(F)
+    \le\|F\|_{H_W}^2,
+  \end{equation}
+  and $\operatorname{Var}D_\rho(F) \to 0$ for every $F \in H_W$ as
+  $\varepsilon,\eta\downarrow0$ at arbitrary relative rates. Consequently, for
+  every finite $p \ge 1$,
+  \begin{equation}\label{E:source-driver-limit}
+    M_R^\rho:=M_{Y_\rho}\longrightarrow M_R
+    \quad\text{in }L^p(\mathscr{B}_\theta),\qquad
+    M_{D_\rho}=M_R-M_R^\rho.
+  \end{equation}
+  The source and residual have uniform local Gaussian operator-path moments and
+  square-exponential norms, with constants for fixed $R,T$ and exponents.
+\end{proposition}
+
+\begin{proof}
+  Apply the spatial distribution identity to a single shifted heat test:
+  \[
+    \Gamma_e(x)=\int e^{i\xi\cdot x}e^{-e|\xi|^2/2}\mu(\ud\xi).
+  \]
+  Gaussian spectral moments of every order are finite for tempered $\mu$. Thus,
+  this is smooth with bounded derivatives. Since
+  $\widehat{p_\varepsilon(x-\cdot)} = c_de^{-i\xi\cdot
+  x}e^{-\varepsilon|\xi|^2/2}$, the two heat factors in the spatial inner
+  product cancel $(2\pi)^d$ exactly, giving
+  \begin{equation}\label{E:source-heat-inner-product}
+    B_\Gamma(p_\varepsilon(x-\cdot),p_{\varepsilon'}(y-\cdot))
+    =\Gamma_{\varepsilon+\varepsilon'}(x-y).
+  \end{equation}
+  Evenness of $\mu$ removes the reflected argument.
+
+  For each positive $\rho$ and point $(t,x)$ put
+  \begin{equation}\label{E:source-point-feature}
+    v_{\rho;t,x}(\lambda,r)
+    =1_{\{\lambda\le\eta^{-1}\}}\sqrt{2\lambda}
+    e^{-\lambda(t-r)}1_{\{r\le t\}}p_\varepsilon(x-\cdot).
+  \end{equation}
+  Its squared $\mathcal{G}$ norm is $K_\eta(0)\Gamma_{2\varepsilon}(0) <
+  \infty$. Define $Y_\rho(t,x) = \mathcal{I}(v_{\rho;t,x})$. The common
+  $\lambda$ range for two such vectors is $\lambda \le
+  \min(\eta^{-1},\eta'^{-1}) = \max(\eta,\eta')^{-1}$. Integrating $r$ gives
+  $e^{-\lambda|t-s|}$, and~\eqref{E:source-heat-inner-product} gives the spatial
+  factor. This proves~\eqref{E:source-joint-covariance} with the prescribed
+  widths and original amplitudes, also for singular Radon and white covariances.
+
+  The representing vector is continuous in $\mathcal{G}$ norm, directly from
+  this continuous covariance. Its norm is bounded on compact parameter sets.
+  Hence, for a smooth compact spacetime $F$, its Bochner integral against
+  $v_{\rho;t,x}$ exists. Integrate the heat translates in $x$, then the time
+  feature, to obtain exactly $Q_\rho\Phi F$. Applying the bounded map
+  $\mathcal{I}:\mathcal{G} \to L^2$ proves the random field-test identity on the
+  same space. Common-support indicator tests follow by covariance completion and
+  $L^1$ approximation; bounded point-feature norms and the domination below give
+  the same $L^2$ limit.
+
+  Orthogonality of the two $\lambda$ ranges gives, for $g \in \mathcal{G}$,
+  \[
+    \|(I-Q_\rho)g\|_{\mathcal{G}}^2
+    =\|(I-P_\eta)g\|_{\mathcal{G}}^2
+    +\|P_\eta(I-C_\varepsilon)g\|_{\mathcal{G}}^2
+    \le\|g\|_{\mathcal{G}}^2.
+  \]
+  Also $\|Q_\rho g\|_{\mathcal{G}} \le \|g\|_{\mathcal{G}}$. Together with the
+  isometry these prove both variance bounds. Disjoint $\lambda$ ranges are
+  independent; the full heat residual need not be independent of the source.
+
+  The $L^2$ tail integral gives $P_\eta \to I$ strongly. Fiberwise heat
+  converges strongly on simple $\mathcal{G}$ functions by
+  Lemma~\ref{L:source-spatial-heat}, then on all of $\mathcal{G}$ by the
+  contraction bound. The estimate
+  \[
+    \|(I-Q_\rho)g\|_{\mathcal{G}}
+    \le\|(I-C_\varepsilon)g\|_{\mathcal{G}}
+    +\|(I-P_\eta)g\|_{\mathcal{G}}\longrightarrow0
+  \]
+  holds at arbitrary relative rates. Thus, the residual variance tends to zero
+  for every original $F$. Proposition~\ref{P:source-gaussian-transfer}
+  gives~\eqref{E:source-driver-limit} without commuting a filter through
+  $\zeta_R$ or a wave group.
+
+  The same comparison gives $\|M_R^\rho\|_{L^p\mathscr{B}_\theta},
+  \|M_{D_\rho}\|_{L^p\mathscr{B}_\theta} \le \|M_R\|_{L^p\mathscr{B}_\theta}$.
+  The original $\sqrt p$ estimate and its even-moment exponential-series
+  argument give uniform Gaussian operator path bounds. They are statements about
+  $L^p$ equivalence classes on the extension preserving the given noise, not a
+  simultaneous path event for all uncountably many cutoffs. This proves
+  Proposition~\ref{P:source-canonical-convergence}.
+\end{proof}
+
+\subsection{Regularized random fields and the ordinary first response}
+
+\begin{lemma}[Regularity for each fixed cutoff]\label{L:source-pointfield-regularity}
+  For each fixed $\rho > 0$, the random field has a version continuous in time
+  and smooth in space, with every spatial derivative jointly continuous on
+  compact time-space rectangles.
+\end{lemma}
+
+\begin{proof}
+  For each spatial multiindex $b$, differentiate \eqref{E:source-point-feature}
+  in $x$ as a $\mathcal{G}$ vector. All derivatives exist because their spatial
+  squared norms are the finite heat moments
+  \[
+    \int \xi^{2b}e^{-\varepsilon|\xi|^2}\mu(\ud\xi),
+  \]
+  and the next moments dominate difference quotients. Set $Z_b(t,x) =
+  \mathcal{I}(\partial_x^bv_{\rho;t,x})$. At fixed $x$, use $1-e^{-\lambda h}
+  \le \lambda h$ in the finite $\lambda$ integral; at fixed $t$, use
+  $|e^{i\xi\cdot x}-e^{i\xi\cdot y}| \le |\xi||x-y|$ and the next heat moment.
+  The squared triangle inequality gives
+  \begin{equation}\label{E:source-derivative-increments}
+    \E|Z_b(t,x)-Z_b(s,y)|^2
+    \le C_{\rho,b}(|t-s|+|x-y|^2).
+  \end{equation}
+  This computation uses~\eqref{E:source-joint-covariance}, including its spatial
+  width, and applies to singular spectral measures without a density assumption.
+
+  Here is a direct continuity construction. In $m = d+1$ parameter dimensions on
+  a compact rectangle, even Gaussian $q$th increment moments have root bounded
+  by $C\sqrt q$ times the parameter distance to the power $1/2$ at small
+  distances. The dyadic grid has at most $C_m2^{nm}$ adjacent edges at level
+  $n$. Their maximum has $L^q$ norm at most $C\sqrt q\,2^{-n(1/2-m/q)}$, with
+  constants for this rectangle and fixed $\rho,b$. Choose $q$ large and $0 < h_0
+  < 1/2-m/q$. The sum of these maxima weighted by $2^{nh_0}$ has finite $L^q$
+  norm. Binary refinement, using a fixed number of adjacent edges per coordinate
+  at each scale, gives a continuous extension from dyadic points. At each fixed
+  parameter the extension agrees with the given Gaussian variable in $L^2$,
+  by~\eqref{E:source-derivative-increments}; it is a modification. Use countably
+  many nested compact rectangles and all multiindices. The versions agree on
+  overlaps on countable dense sets, hence everywhere there by continuity, so
+  they patch.
+
+  They are derivatives. The $\mathcal{G}$-valued fundamental theorem gives,
+  along a coordinate segment,
+  \[
+    \partial_x^bv(t,x+he_i)-\partial_x^bv(t,x)
+    =\int_0^h\partial_x^{b+e_i}v(t,x+ue_i)\ud u.
+  \]
+  Apply bounded linear $\mathcal{I}$ and $L^2$ integration. The continuous
+  versions give the same ordinary integral by their Riemann sums, which converge
+  both pathwise and in $L^2$. Enforce these identities first on countably many
+  rational $t,x,h$ and multiindices, then use joint continuity to extend them to
+  every segment in the compact rectangles. The ordinary fundamental theorem
+  yields $\partial_iZ_b = Z_{b+e_i}$. Thus, all spatial derivatives exist and
+  are jointly continuous with time. The versions are for this fixed $\rho$, not
+  a common path event over uncountably many source parameters. This proves
+  Lemma~\ref{L:source-pointfield-regularity}.
+\end{proof}
+
+\begin{proposition}[Ordinary source response]\label{P:source-ordinary-response}
+  For each fixed $\rho > 0$, on its regularity event, put $b_\rho(t,x) =
+  \zeta_R(x)Y_\rho(t,x)$. The statewise integral
+  \begin{equation}\label{E:source-ordinary-response}
+    L_\rho(t)z=\int_0^tS(-u)B(b_\rho(u))S(u)z\ud u
+  \end{equation}
+  defines an operator-norm Lipschitz path on $E$, and $L_\rho = M_R^\rho$ for
+  all $t \in [0,T]$ on one probability-one set. In particular, it has the
+  strongly measurable path version supplied by the Gaussian construction.
+\end{proposition}
+
+\begin{proof}
+  The coefficient is compact smooth in space and continuous in time in every
+  spatial derivative norm. Multiplication estimates and strong continuity of the
+  full free group show that the statewise integral exists on every $E_r$. Its
+  operator increments $E_r \to E_{r+1}$ are bounded by a finite sample constant
+  times $|t-s|$, exactly by the statewise gain argument of
+  Lemma~\ref{L:driver-gain-localization}. This proves Lipschitz continuity in
+  $\mathcal{B}(E)$, without requiring norm continuity or an operator-norm
+  derivative of $S(t)$.
+
+  At each fixed $u$, the Sobolev duality calculation uses only spatial
+  smoothness of $b_\rho(u,\cdot)$. From $S(-u)(0,f)$ and the two Bessel weights,
+  for real Schwartz phases,
+  \[
+    \langle S(-u)B(b_\rho(u))S(u)z,w\rangle_E
+    =\int b_\rho(u,x)[S(u)z]_1(x)G_w(u,x)\ud x.
+  \]
+  Thus, no prior hypothesis of smoothness in time is invoked for this
+  instantaneous identity. For complex pairs conjugate the second factor.
+  Integrating gives the ordinary source-field integral against the specified
+  wave test for the original covariance $h_{R,t;z,w}$. For smooth tests, the
+  point-feature integral has already been identified with $Y_\rho(F)$. The
+  continuous random field version has the same integral: compact Riemann sums
+  converge pathwise and in $L^2$ to the ordinary and feature integrals,
+  respectively. Approximate the indicator wave test in the covariance completion
+  with common compact spatial support and $L^2$-time spatial supremum error
+  tending to zero. Its $L^1$ error also tends to zero. The point-feature norms
+  are bounded on that support, so their integrals converge in $\mathcal{G}$; the
+  original variance domination gives the same $L^2$ limit on the test side.
+  Consequently,
+  \[
+    \langle L_\rho(t)z,w\rangle_E
+    =Y_\rho(h_{R,t;z,w})
+    =\langle M_R^\rho(t)z,w\rangle_E
+    \quad\text{in }L^2.
+  \]
+  Compare a countable dense Schwartz phase collection and rational times.
+  Boundedness and the path continuity of both sides extend this equality to all
+  states and all times on one probability-one set. The equality is on the
+  coupled space, not only in law. The set is for fixed $\rho$; the $L^p$ limit
+  in~\eqref{E:source-driver-limit} needs no simultaneous version for every
+  source parameter. This proves Proposition~\ref{P:source-ordinary-response}.
+\end{proof}
+
+The regularized noise laws above match the pinned author definitions. The
+author's page~9 redefinition keeps the law; the extension preserving the given
+noise was proved in Lemma~\ref{L:source-retaining-isometry}. The derivative
+estimate here was derived from the correct joint covariance, not from the
+differing spatial index in the author's page~8 increment display. No source
+correction is adopted. All limits are at fixed finite $R,T$. The nonlinear Young
+flow, canonical initial datum $(1,0)$ and its solution-moment transfer remain
+separate parts of the argument.
+
+===== END context-source-convergence-baseline.txt =====
+

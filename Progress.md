@@ -4,6 +4,715 @@
 > (per `progress-md-authority-paper-dev`). Start every session here. Update it
 > at the end of every round, before committing.
 
+
+## Active publication-completion goal (Le, 2026-11-16)
+
+Le explicitly asks to update the goal to complete the remaining work. The
+run goal is ACTIVE: finish authorized source-bound rereads/adjudication;
+produce final-source coverage; synchronize Appendix E, AI-use statistics and
+VERIFICATION faithfully; complete approved composition/checks; make the single
+exact-candidate reseal; and coordinate the remaining typesetting/R/re-pin/F/
+audit/accept/export/publication sequence as Le's gates are actually satisfied.
+The bounded Appendix G goal remains historically complete; this broader goal
+is not complete. PROJECT-GOAL.md records the deliverables and closure rule.
+No scientific grade upgrade, review retry/fallback, early seal, push or public
+release is inferred. Maximum three concurrent reviewer jobs remains binding.
+
+## Frozen final-source reread/adjudication data — 2026-11-16
+
+All authorized generations and all public-report adjudications are complete.
+The frozen `reviews/2026-11-16-readable-final-source/` inventory binds249
+current proof pairs/33technical files exactly once to38source-current reports;
+all33modules match composed candidateaa5a7056. Actual launch receipts give59
+coordinator attempts/58reports, not75calls or364distinct proofs. RP007 stays
+NOT_OBTAINED/null; RP007B was unused. Raw44PASS/14PWN/high are unchanged.
+Local public-working assessment is226CHECKED,9moreCHECKEDwithrecordedparent
+qualifications,14PARTIAL; plus071literalcomparisonincomplete separately. No
+source repair or whole-book assurance upgrade follows; conditional overlaps
+and the clock-contract distinction remain explicit. Old013/014/016holds stay;
+068recovery was prospectively authorized. Four missing-stream usages and all
+whole-invocation usage/cost/cap remainunknown. Counter sums are not invoices.
+
+Root independently checks all249source/statement/proof/report/MATHjoins and
+replays four rejecting controls. D/AppE/AIuse/statistics/VERIFICATION can now
+consume these exact committed data; final disclosure integration, its builds,
+release-owner verification and root's one manifest reseal remain open. No
+push/R/F/public release follows from this data freeze.
+
+## Active narrow follow-up: proof-readability rereads (2026-11-16)
+
+
+### Five NoGo rereads recorded; reading and working kept separate
+
+RP026-RP030 produced five normal-stop reports on 33 assigned OLD/NEW proof
+pairs. Raw grades remain four PASS and one PASS_WITH_NOTES, all global high;
+per-proof confidence is absent/null. All 33 readings are complete. Author-side
+adjudication finds 30 public reconstructions checked and three partial:
+NoGo18's general transform/integral working, NoGo11's erroneous moment-series
+criticism and unchecked finite enclosures, and NoGo21's original-noise test
+completion/interface. No new manuscript defect or required source edit was
+identified; worker corrections are not inserted into the independent reports.
+The original NoGo11 series is correct, so the report's proposed source repair
+is rejected while its own reconstruction remains partial.
+
+Five exact-input/zero-tool terminal records are preserved under prospective
+Choice B. None shows native recovery, but backend requests and aggregate
+usage/cost/cap remain unproved/unknown. Historical RP013/RP014/RP016 holds are
+unchanged. The first-pass/f06 snapshot index now has 22 terminal attempts,
+21 reports, 129 assigned proof pairs, 128 complete readings, 122 checked
+public reconstructions, six partial and one no-report; 112 checked pairs have
+no observed protocol incident. These are scoped snapshot counts, not final
+second-pass coverage or a book completion percentage. No-go and reviewer
+history, old627/118censuses, whole-book grades, Chapter12 skeptic NOT_OBTAINED
+and R/F/release gates are unchanged. See the dated index and
+`NOGO026-030-ROOT-RECORD-REVIEW.json`. Appendix E must reconcile this separate
+reread series and later source versions at the final synchronization gate.
+
+
+
+**Both final Chapter 9 post-reader reports recorded:** RP042 on `32919d54`
+and RP043 on `5aa50c46` each return PASS/high. All nine OLD/NEW readings and
+public reconstructions are complete/checked, including all six reader
+explanations. No source edit is identified; report-only sign/normalization
+notes remain explicit, with per-proof confidence null. Together with RP040's
+unchanged final radius source `9df46108`, this gives scoped current-version
+reading/reconstruction evidence for Chapter 9's 14 proof pairs. It does not
+rebind older reports, erase their partial/protocol limits or upgrade a whole-
+book grade. See `POSTREADER-042-043-INDEX.json`; Appendix E must preserve this
+source-version lineage and the actual attempt history at final sync.
+
+**RP042 current post-reader uniform-mean report recorded:** Fresh V4 Pro
+returned PASS/high on exactly `32919d54` versus cdde. All five assigned OLD/NEW
+readings and public reconstructions are complete/checked, including the four
+reader explanations; no source correction is identified. Literal notes and
+null per-proof confidence are retained. One observed native start/finish and
+zero tools support custody, not physical request accounting or a book seal;
+aggregate usage/cost/cap remain unknown. Older RP014/RP039 records and their
+limits are unchanged. RP043 signed-static remains running at this record.
+See `reviews/2026-11-16-readable-uniform-mean-postreader32919d54-deepseek/`.
+
+**Five editorial successors verified and frozen:** Le confirms the exact
+six old/new pairs; Agent16 verifies `16fdc47b` and map carrier `cdef8c83`
+(`750e67f3d483`). RP071-RP075 now freeze all25complete proof pairs for source
+convergence, masked moments, point transfer, signed upper and intrinsic
+constant. Root independently checks full source frames, ownership, proof and
+statement hashes/LF, literal statement_unchanged flags and the three bounded
+declaration exceptions; no global pure-insertion/outside-proof waiver. Neutral
+contracts require checking the meaning of all edits. Old048/049 remain on
+previous sources and do not cover these successors. Same ChoiceB/max3/65,536
+pergeneration/3,600seconds, no call at this freeze. Whole-candidate building is
+authorized in parallel; D/disclosures/AppEfinalseries/VERIFICATIONfooteronce
+and rootreseal stay AFTER the last review/adjudication. No push.
+See `OLDTEXT071-075-FREEZE.json`.
+
+**Main-file source rereads frozen:** RP065-RP070 bind final MAIN `58108ca3`
+against cdde in six batches of10/10/10/10/10/12, all62proofs exactlyonce.
+Root independently verifies every proof owner, complete statement/proof hash
+and LF, all raw Git source/context frames, immutable digests and pure all-deny
+profile; task-specific questions and unforced output contracts are read.
+These scientific LF selections are not the expanded book or unread source
+PDFs. Cap98,304pergeneration, timeout3,600seconds and globalmax3 share the
+same ChoiceB limits; no call at this freeze and no confidence retry/fallback.
+See `MAIN065-070-FREEZE.json`. The root's selected primary-pixel audit stays
+outside reviewer inputs; no prior report/grade or workerQA is supplied.
+
+**Six late-file source packets frozen:** RP059-RP064 freeze all34 proof
+pairs on the owner-FINAL verified tubes/ceiling/Gram/symplectic/products/white
+sources. RP062 now binds Le's narrow original-setup deletion at `3d2f4fb4`,
+verified by16 (`611ce20226b2`); old62da was never called. Root independently
+checks source frames, statement/proof hashes and LF, immutable packet/profile
+hashes and contracts. G.1 now reaches168of180 after removal of the unused
+citation-derived edge; P:symplectic-raw remains written and is still assigned
+in the fullfiveproof reread. Same65,536pergeneration/3,600seconds/ChoiceB/max3,
+no call at this freeze. Five editorial files await their separate commit's
+Agent16 verification; no scope released by that pending unit. Main62proof
+packets are prepared separately. See `LATE6-RP059-064-FREEZE.json`.
+
+**Figure 2.3 approval belongs to final composition gate:** Le approves the
+new `Fig:order-of-limits` after viewing before/after. Agent 24 integrates only
+the approved figure source/drawing (README entry if clean), as one held unit
+with a pinned book rebuild, critical-path check and page-impact report. Origin-
+based PDFs/validation data are not replayed. Reader and combined editions are
+regenerated once at the whole-candidate step; root's single later reseal covers
+the figure and final outputs. No duplicate root build, early reseal or model
+call is warranted, and visual approval does not change scientific/R/F grades.
+See `FIGURE23-FINAL-CANDIDATE-GATE.json` in the policy directory.
+
+**Latest five editorial holds and seven late releases:** Le confirms one
+separate held editorial unit in exactly six places of intrinsic constant,
+signed moment upper, point transfer, masked moments and source convergence
+(`f98d8922e21c`, section7 record `3ebeb50b`). Show each old/new to Le before
+committing; no push. These five await that commit and Agent16 verification.
+RP048/RP049 were already launched under prior authority and have now returned
+on their old sources; preserve those reports and exclude future editorial
+bytes. No cancellation, relaunch or grade transfer follows. Seven other late
+files are owner-FINAL/verified at `35dfced3`; private successor packet
+preparation is allowed, with no extra model admission before root freeze/GO.
+
+Le also asks whether extra regularized noises are needed locally in
+`P:symplectic-block-mean`. Root read-only assessment supports #7's withdrawn
+sentence narrowly: Steps1-3 use completed mean/covariance on original W and
+orthogonal first chaos; Step4 uses the deterministic compact endpoint lemma.
+The extra local auxiliary realization is unused. Other source constructions
+are not waived; no mathematical source defect is alleged. A reviewable narrow
+optional deletion is recorded for Le, but no change is authorized or made;
+this is outside the approved six editorial locations. See the two new policy
+records for exact dependencies, old/new and immutable source bindings.
+
+**Provisional last-ten/main additions checked at bounded scope:** Agent 24's
+last-ten batch `35dfced3` is NOT FINAL pending self-check/explicit handoff;
+no packet or call is released by that landing. Root checks the three requested
+MAIN `58108ca3` addition groups: exact Chen author PDF hash and rendered pages
+1/3/13 verify equation pinpoints1.5/2.24; homogeneous ball growth and threshold
+justify the spectral integral; the capped-kernel alias/tail normalization is
+correct off the diagonal; the finite interval-model definitions and compact-
+data phase estimate support the stated last inequality. No source edit is
+needed for these three groups. This is worker source/application QA with
+selected actual pixels, not independent main-file or whole-source review.
+The proposed shortcut avoiding regularized noises stays unprinted/unadopted.
+See `MAIN58108-SOURCE-ADDITIONS-WORKER-CHECK.json` in the policy directory.
+
+**All fifteen Chapters 4-8 inputs now released; remaining packets frozen:**
+Agent 16 verifies/releases the three replacement sources (`ee48c63cdfba`),
+so all fifteen owner-FINAL bindings are eligible. RP047-RP058 freeze all
+remaining 67 proof pairs at the latest pins, including `259e8ab8`, `234cf2cf`
+and `e7ef9910`. Root independently checks every source frame, complete
+statement/proof hash and LF, profile and artifact digest, and reads each
+contract with shared clauses factored. Same Choice B route/caps/timeouts,
+max three processes across existing and new runs; no coordinator repeat,
+confidence retry, tools or fallback. No call on these twelve at this freeze;
+Root then authorized exactly RP047-RP058 rolling admission from freeze
+`8503f86d`, with a shared admission lock and conservative unfinished-job plus
+actual-model count capped at three. After044-046 terminal receipts were
+verified, RP047/RP048/RP049 actually started at14:04:11-14 UTC on2026-11-16.
+The other admitted scopes start only as slots free after their per-launch
+hash/profile/finality checks; this does not claim all twelve have started.
+See `CH4-8-REMAINING12-ROLLING-GO.json`. RP052 is a fresh
+changed-source scaling review, not use of the still-unused RP007B repair.
+See `CH4-8-REMAINING12-FREEZE.json`. Adapter v3 is reported parked offline
+history, not re-audited here, approved, installed or used; native route stays.
+
+**Earlier three unlaunched binding replacements:** Agent 24 supersedes compact
+mean `7c76e69f` by `259e8ab8`, unmasked variational `af4d1a50` by `234cf2cf`,
+and Young upper `5508cc0e` by `e7ef9910` (`ca340288b06a`, map tip `5af7b517`).
+Agent 16 explicitly holds these replacement inputs (`e8019bf59793`) pending
+verification; the other twelve FINAL files stand. No model call was spent on
+these three superseded inputs. RP051/RP054/RP058 use the replacements only
+after verification/root freeze; the older source rows remain in the recorded
+supersession history. The root source handoff JSON now marks these three
+pending and all other original bindings as verified.
+
+**First Chapters 4-8 batch verified and frozen:** Agent 16 verifies all
+15 original bindings at `032fb8a2` (`d5e9fa4787b6`). RP044 covariance
+`1033a48e`, RP045 wave variance `0467fe59` and RP046 compact Gaussian
+`105845e7` now freeze all 8/6/10 proof pairs. Root reads the contracts and
+independently checks every Git frame, complete statement/proof hash and LF,
+immutable digest and tool-denied profile; no native call at the freeze.
+RP044/RP045/RP046 then actually launched at 13:54:57-59 UTC on 2026-11-16,
+one per scope, exact-three queue with no other refill authorized. See
+`CH4-8-FIRST3-LAUNCHES.json`; starts are not review results.
+The same Choice B limits apply: max three processes, 65,536 per generation,
+3,600 seconds and no coordinator repeat/tools/fallback. The later replacement
+bindings for compact mean, unmasked variational and Young upper are held
+separately pending verification; no call was spent on their superseded inputs.
+See `CH4-8-FIRST3-FREEZE.json` in the policy directory.
+
+**Latest Chapters 4-8 FINAL handoff:** Agent 24 explicitly releases the
+15 files at tip `032fb8a2` after reader dispositions (`077b3b7ca46e`). Root
+verifies all 15 file blobs equal that tip, their committed map new_rev values
+match, and outside-proof bytes match cdde; all 91 proof pairs remain assigned.
+RP044-RP058 packets are being prepared privately in small batches. No launch
+until Agent 16 verification and root exact packet/closure/hash/contract freeze;
+max three processes includes other live calls. Older reports retain their
+original source bindings. Reported old-text defects remain untouched pending
+Le's decision, separate from this release of current immutable inputs; later
+edits need new source bindings. Chapters 10, 11 and main remain nonfinal.
+See `CH4-8-POSTREADER-FINAL-SOURCE-HANDOFF.json` in the policy directory.
+
+**Earlier successor reports now curated:** RP039/RP040/RP041 returned
+three normal-stop reports, two PASS/high and one PASS_WITH_NOTES/high.
+Delegated author-side QA, reviewed by root, checks all 14 public deductions
+on their exact launched sources, with no source repair. RP039/RP041 exclude
+later reader additions; RP040 remains on final radius `9df46108`. Raw
+category typo in RP039 and report-only mathematical slips/false source
+criticisms remain disclosed; per-proof confidence is null. No older
+RP014/RP015/RP016 scope, grade, partial or protocol hold is rebound. A separate
+`SUCCESSOR-039-041-INDEX.json` keeps these source-version counts distinct
+from the 22-attempt first-pass/f06 snapshot and from current-source coverage.
+
+**Chapter 9 post-reader FINAL and fresh freeze:** Agent 16 verifies G.1
+at `1b3bf28c` (`d61672abdf85`); Agent 24 explicitly confirms FINAL after all
+reader dispositions (`3be3c5b43b5c`): uniform mean `32919d54`, radius `9df46108`,
+signed static `5aa50c46`, with no further planned changes to these files.
+Fresh RP042/RP043 packets freeze all 5/4 proof pairs against baseline cdde,
+with complete context, original-step reconstruction and the same ccdf profile,
+65,536 per-generation cap, 3,600 seconds and max three processes. Root checks
+all Git frames, statement/proof hashes and LF, immutable digests and contracts.
+No call had occurred at the freeze; Choice B successor authority is
+`fe4efb212ca4`. RP042/RP043 then launched in parallel on 2026-11-16 at
+13:37:27 and 13:37:28 UTC, respectively, after fresh immutable-hash and
+effective all-deny profile checks. See `CHAPTER9-POSTREADER-LAUNCHES.json`;
+these starts are not review results.
+RP039/RP041 remain on their earlier source bytes and exclude these additions;
+RP040 radius is not repeated. All other core files retain their FINAL holds.
+See `CHAPTER9-POSTREADER-FINAL-FREEZE.json` in the policy directory.
+
+**Earlier proposed graph fix and wider editorial hold:** Agent 24 supplies
+`1b3bf28c` (G.1 regeneration plus 479-page book, check current) for Agent 16
+verification; no dispatch is inferred before that verification/final handoff.
+Root supports all six new Chapter 9 explanations at `32919d54`/`5aa50c46`
+as worker delta QA only. Chapters 4-8 are ALL nonfinal again: editorial
+readers returned 27 accepted stop points and 140 redundancy flags requiring
+disposition. These are editorial findings, not scientific-review counts or
+confirmed mathematical defects. Readers for Chapters 10, 11 and main are
+starting. The final sync gate must retain their actual models/prompts/lists/
+dispositions and keep editorial assistance separate from scientific reviews.
+
+**Chapter 9 graph-currentness blocker:** Agent 16 verifies the reader-step
+successors `32919d54` and `5aa50c46` mechanically but reports stale Appendix
+G.1 data. Root confirms both new direct dependency edges are real uses:
+`P:uniform-mean-regulator` uses `L:uniform-mean-cutoff`'s uniform spatial
+operator bound; `P:uniform-actual-cameron` uses the regulator's completed
+residual-mean bound in its weighted block estimate. Same domains, fixed r
+and projections apply. This is worker dependency QA, not new review credit.
+Chapter 9 stays held until Agent 24 regenerates critical-path data/book PDF,
+Agent 16 verifies that commit, and the final source handoff is explicit.
+Run the critical-path currentness check after every addition henceforth.
+See `CHAPTER9-G1-DEPENDENCY-EDGES-CHECK.json` in the policy directory.
+
+**Post-launch source correction:** Agent 24 reports six accepted editorial
+reader stop points will change uniform-mean and signed-static once more.
+RP039 (`0816c195`) and RP041 (`484ed7f4`) retain their launched source bindings
+and finish within the approved bounds, but cannot cover forthcoming additions.
+RP040's radius source `9df46108` remains FINAL and unaffected. No scope is
+released by the working second-pass tip `fc1d93b6` or its source table.
+Further dispatch requires Agent 24's explicit chapter/file FINAL list after
+any reader findings are disposed, Agent 16 verification and exact root
+binding/freeze checks. Gaussian tubes also remains nonfinal pending an
+antecedent correction. Earlier final-hand-off and launch facts are retained
+below; their latest currentness limit is this notice. See
+`CHAPTER9-POST-LAUNCH-SOURCE-CORRECTION.json` in the policy directory.
+
+**Earlier Chapter 9 final handoff (historical):** Agent 24 reports Le accepted the
+removal-only results and made the independent stop-point reader optional.
+Files 16, 17 and 18 are now FINAL at `0816c195`, `9df46108` and `484ed7f4`,
+respectively. This supersedes their provisional editorial status below.
+Register the new source bindings; retain old RP014/RP015/RP016 reports and
+all their mathematical/protocol limits on their exact earlier sources.
+Agent 16 has now verified all three final commits and relays Le directly
+chose "Yes, Choice B rules" (`fe4efb212ca4`) for fresh rereads of every
+second-pass-changed final file, same route/profile and retry disclosures,
+no tools, fallback or grade rerun. Files 16-18 may run now after exact packet
+freeze and preflight, with new successor IDs; earlier reports stay bound.
+RP039/RP040/RP041 are now frozen as fresh successor packets for all
+5/5/4 target proof pairs, respectively (14 total), with complete baseline/new
+modules and the same original-step reconstruction contract. Root independently
+checked Git payloads, statement/proof hashes and LF ranges, read all three
+contracts, and checked immutable packet digests and all-deny local profiles.
+Caps 65,536 per generation and 3,600 seconds, at most three processes; native
+recovery permitted prospectively with unknown aggregate accounting retained.
+At the freeze no provider call had been made. Subsequently all three
+authorized calls launched in parallel on 2026-11-16 at 13:17:38, 13:17:39
+and 13:17:41 UTC respectively; safe receipts are in
+`CHAPTER9-SUCCESSOR-LAUNCHES.json`. Launches are not review results. No
+additional scope, coordinator retry or fallback is authorized by this record.
+See `CHAPTER9-SUCCESSOR-FREEZE.json` in the policy record directory. The remaining 25 files await per-file final handoffs.
+The already-started Claude Fable reader continues as an optional editorial
+aid with prompt, actual identity, stop points and dispositions retained.
+See `CHAPTER9-FINAL-SOURCE-HANDOFF.json` in the policy record directory.
+
+**Earlier Chapter 9 trial (retained history):** Agent 24's radius successor `9df46108` (map
+`271485f1`) is PROVISIONAL despite its commit message saying final. No scope
+has been released. Before a final-file handoff, Agent 24 obtains a fresh
+reader's stop-point list, checks its quotes against the proof, and judges
+Agent 7's necessary explanations. This is editorial diagnosis, not scientific
+review acceptance. Agent 16 requires a reader family different from GPT
+author Agent 7, with each file retaining actual model/family, exact prompt,
+stop-point list and Agent 24 dispositions. These records feed AI-use and
+Appendix E disclosure without entering review counts. The delivered removal-only uniform-mean and signed-static
+files also stay held. See `RADIUS-PROVISIONAL-9df46108.json` in the policy
+record directory below.
+
+**Latest explanation policy:** Agent 24's later receipt `3c5864c9e877`
+quotes Le: "Do not expand for the sake of expand, expand whenever necessary."
+and "Use your cautious judgement for this". This replaces sample depth as a
+length target. Agent 24 owns cautious necessity and scaling judgments: add
+only explanations a competent graduate reader would otherwise have to work
+out, with no repeated facts or re-derivation of cited results. Agent 7 redoes
+the specimen from first-pass text; each addition has a reader-obstacle log
+that Agent 24 checks before cautious small-batch scaling. No second specimen
+approval is required by this later message. The core review hold remains
+PER FILE until Agent 24 reports FINAL at an exact SHA or FINAL UNCHANGED
+since an exact SHA; frozen bindings and the existing dispatch policy must
+then be checked. Agent 16 subsequently confirmed Le directly approved this reading and recorded
+it in section 7 (`bd87c10b5f95`, earliest copy `f3eb6437ede3`); Agent 16
+verifies each held final commit. No final-file handoff is supplied by this policy update.
+NoGo-only dispatch and the unused RP007B hold are unchanged. See
+`reviews/2026-11-16-readable-native-recovery-policy-proposal/NECESSITY-BASED-DEPTH-UPDATE.json`.
+
+**Earlier source hold (retained history):** Agent 16's `0e7f18c8d115` holds all 28 pending core
+file scopes after Le's second-depth instruction on 169 main-path results
+(`4cf812220457`). A specimen goes to Le before scaling. Choice B remains
+valid for the five unchanged NoGo scopes RP026-RP030 (33 proof pairs), with
+one dispatcher and at most three simultaneous processes. RP026-RP028 began
+at 12:49:47-50 UTC; RP029 filled a slot at 12:54:03 UTC. These are launches,
+not accepted reviews. The separate RP007B repair is UNUSED and held: its
+scaling proof is on the affected main path. Retain running calls and their
+old source bindings; no old grade covers future added explanations. See
+`reviews/2026-11-16-readable-native-recovery-policy-proposal/SOURCE-HOLD-NOGO-ONLY.json`.
+
+
+**Current execution decision:** Le directly chose B on exact policypacket
+`d8fff2c8`, relayed byAgent16 in`e88dcc826a6b` and in the usermessage. The
+remaining21frozen scopes/153pairs and ONE separateRP007 budget-repair process
+are authorized on the SAME configured DeepSeekV4Pro route/profile/inputs.
+Maximum3simultaneous coordinatorprocesses, oneper scope,3,600secondseach;
+65,536ordinary/98,304main per generation,RP007repeat98,304. Native recovery
+is knowinglyallowed; aggregateusage/cost/cap remainUNKNOWNwhereunreported,
+neverestimated. No coordinatorrelaunch,confidenceretry,tools,fallback or
+furtherRP007repeat. This doesnotretroaccept013/014/016,completepartial
+reconstructions,upgradegrades,orauthorizeR/F,push,release,arXiv orcustomHTTP
+client. Originalfailed/heldrecords,oldSTOPandlocksremainhistorical; new
+ChoiceBcontrolrecords govern prospectiveauthorizedstarts. Theoldscaling
+131,072aggregatebudgetclaim is supersededonlyasexplicitlystatedinChoiceB.
+See`reviews/2026-11-16-readable-native-recovery-policy-proposal/AUTHORIZATION-CHOICE-B.json`.
+
+
+This is a new scoped post-review cycle, not a restart of the original
+scientific programme or an upgrade of its review grades. Le chose step maps
+and a DeepSeek V4 Pro reread of every rewritten proof, with disclosure through
+Agent 16's release-sync templates. Agent 7 edits; Agent 24 owns mechanical
+checks, builds and maps; Agent 3 owns reread packets and records. Existing
+whole-book grades, limited reading and the honest-standing release choice
+remain unchanged.
+
+Pilot target: all ten proofs in `notes/integrated_compact_gaussian.tex`,
+baseline `cdde711c`, rewritten source `5d05a6b1`, map carrier `8e8dae81`.
+The original pilot `118de5f7` is historical; it does not cover the deeper
+rewrite. Fresh GPT worker-side QA found the arguments preserved, including
+the three approved clarifications; this is not independent review evidence.
+Agent 16 mechanically verified the exact deeper source and its 433-page book.
+
+The frozen reread packet is
+`reviews/2026-11-16-readable-pilot2-deepseek/`. It supplies the complete OLD
+and NEW modules and assigns ten separate proof coverage rows in one fresh
+DeepSeek V4 Pro invocation. Model route `paper-review-deepseek`; pure isolated
+artifact reviewer, all permissions denied; requested combined reasoning/public
+cap 65536, wall timeout 3600 seconds. No coordinator retry, continuation or
+fallback. Only this packet is assigned by this entry; other rewritten modules
+need their own frozen packets and records.
+
+The authorized scoped reread RP001 was launched at
+2026-11-16T04:59:51.429959+00:00 after the recorded route/source checks.
+The run finished normally at 2026-11-16T05:08:22.743281+00:00, elapsed
+511.313 seconds. Raw result PASS/high: all ten proof pairs reported complete
+and arguments preserved. The entire public report has been adjudicated;
+scoped preservation is supported with report-only notation/shorthand notes,
+including one Fourier delta-kernel expression that is incorrect in the
+report but does not affect the manuscript's correct normalization. No source
+repair or callback was needed. Native identity, exact prompt, zero tools,
+normal finish and unchanged inputs were verified. See the packet's
+`REPORT.md`, `ADJUDICATION.md`, `PER-PROOF-RECORD.json` and `NATIVE-CHECK.json`.
+This does not upgrade whole-book grades or certify Lean proof quotations. A provider error or missing report is recorded, not counted as a pass.
+The proof-step remap and the companion sentences quoting edited steps remain
+Agent 22's separate obligation; this reread does not certify that mapping.
+Final source/PDF/ledger/disclosure/combined/review-sync reconciliation remains
+a publishing gate under Agent 16. No root push, R/F or release is implied.
+
+
+### RP002 complete: fixed masks and displacement moments
+
+Launched fresh as `readable-masked-moments-3d421ab8d43d4d4c9714a34663637ccc` at `2026-11-16T06:06:06.668958+00:00`; requested DeepSeek V4 Pro, combined reasoning/public cap 65,536 and timeout 3,600 seconds. The process finished normally at `2026-11-16T06:10:48.824921+00:00`, elapsed 282.156 seconds, with raw PASS/high and all three proof pairs complete and preserved. Full public-report adjudication supports scoped argument preservation; no source correction or callback is required. Native exact-prompt/model/zero-tool/stop and unchanged hashes are verified. This is not whole-book acceptance. Safe terminal custody is in `reviews/2026-11-16-readable-masked-moments-deepseek/STATUS.json`.
+
+Next independently assigned module: all three rewritten proofs of
+`notes/integrated_masked_moments.tex` at `5c55515b`, baseline `cdde711c`.
+Agent 16 verified its mechanics; fresh worker QA found the arguments
+preserved. The frozen packet is
+`reviews/2026-11-16-readable-masked-moments-deepseek/`, with exact upstream
+context clearly designated as input rather than additional reviewed proofs.
+The route/profile are the same pure DeepSeek V4 Pro read-only route as RP001;
+requested cap65536 and walltimeout3600, one coordinator launch, no retry or
+fallback. It is terminal with scoped support, with raw grades and read limits retained.
+Files 2 and 3 now have pure-insertion successors `2ef7f814` and `e7e5fec9`;
+their earlier da065152/bc0932 QA is historical. Current correction-diff QA
+found preservation supported, but their new mechanical verification and
+independent reread remain separate gates.
+
+### Source scope and worker-QA frontier (2026-11-16)
+
+At held source `f92cc838`, Agent 3 counted 249 proof environments in 33 book
+files: 208 changed and 41 unchanged from `cdde711c`. This includes the 33
+Chapter 12 no-go proofs (18 changed, 15 unchanged); the core 28 files contain
+216 proofs (190 changed, 26 unchanged). The reader's four proofs are excluded
+from this rewrite. All 33 files retain baseline bytes outside proof
+environments in this literal comparison. These counts correct the earlier
+editor totals; they measure source scope, not completion or proof quality.
+Agent 24 reports a 481-page held book; Agent 16's exact candidate mechanics,
+all required rereads, Agent 22's quotation correspondence and final derived
+artifacts/disclosure/reseal still remain.
+
+Worker QA supports current files 2--7 and 9--10 at their recorded source
+versions, separately from the completed ten-proof RP001 independent report.
+Two new explanatory phrases require editorial successors before freezing their
+independent rereads: file 8's lower profile is nonnegative and nonzero, not
+necessarily strictly positive everywhere; file 11's complex Rayleigh quotient
+uses one of the nonzero real-valued components, not necessarily the real part.
+Exact replacements were sent to Agent 24. The underlying argument strategies
+were preserved in worker QA; these are not newly adjudicated scientific gaps
+or upgrades of historical review grades. No independent calls have been spent
+on those two versions. Subsequent source changes require exact byte/version
+reconciliation rather than transferring a result to a new proof body silently.
+
+### RP003 frozen: the Gaussian operator path
+
+All nine proof pairs of `notes/integrated_actual_operator_driver.tex` at
+`c1af3fcf` against `cdde711c` are assigned in
+`reviews/2026-11-16-readable-operator-driver-deepseek/`. The final proof is
+owned by its explicit heading `P:actual-operator-driver`, not the preceding
+lemma. Exact raw source blocks, immutable upstream baseline context and the
+nine-row statement/proof inventory were checked. Fresh native configuration
+preflight verifies DeepSeek V4 Pro and all global/agent tools denied. The
+requested cap is 65,536 and timeout 3,600 seconds; one fresh pure session,
+no coordinator retry, continuation or fallback. Worker QA supports the nine
+arguments. RP003 launched fresh at `2026-11-16T06:16:50.426991+00:00`
+as `readable-operator-driver-918de09b2b2a489c9cde166e25e45e1d`; it is
+terminal: finished `2026-11-16T06:24:19.329601+00:00` in 448.903 seconds
+with raw PASS/high and all nine proof pairs COMPLETE/PRESERVED/JUSTIFIED.
+Root adjudicated the entire public report and supports scoped argument
+preservation; no source correction or callback is required. Native export
+verifies exact prompt/model, fresh parentless session, zero tools, normal stop
+and unchanged hashes. See its terminal STATUS, REPORT, ADJUDICATION,
+PER-PROOF-RECORD and NATIVE-CHECK records. This is one call with nine rows,
+not nine independent votes or whole-book HIGH acceptance.
+
+### RP004 and RP005 frozen: source convergence and constant-data Young flow
+
+RP004 assigns all seven proof pairs in `notes/integrated_source_convergence.tex`
+at corrected `ec0e909b`; RP005 assigns all eight proof pairs in
+`notes/integrated_constant_phase_young.tex` at corrected `c2695e67`. Both
+compare against `cdde711c`. Each exact-source packet is separately frozen in
+its dated `reviews/2026-11-16-readable-*-deepseek/` directory, with explicit
+upstream context marked unassigned. Root checked Git bytes, framing and fresh
+native config; all tools denied, same requested DeepSeek V4 Pro model, cap
+65,536 and timeout 3,600 seconds. Each has one authorized fresh pure invocation,
+no coordinator retry, continuation or fallback. Worker QA supports these local
+arguments. RP004 finished normally at `2026-11-16T06:30:14.346493+00:00`, elapsed
+395.541 seconds, with raw PASS/high and all seven proof pairs complete and
+preserved. Root fully adjudicated its public report, with statement LF shifts
+distinguished from the verified identical statement bytes; no source repair
+or callback is needed. Native exact prompt/model/fresh session, zero tools,
+stop and unchanged hashes are verified. RP005 finished normally at
+`2026-11-16T06:28:57.237160+00:00`, elapsed 317.268 seconds, with raw
+PASS/high and all eight proof pairs complete and preserved. Root fully
+adjudicated the report and verified native exact-prompt/model/fresh-session,
+zero tools, stop and unchanged inputs. Scoped preservation is supported with
+a report-only arithmetic wording note: the factor 4/3 follows by division by
+3/4 in the correctly displayed inequality, not by adding 1 and 1/4 as one
+report phrase says. The manuscript is correct; no source change or callback.
+See RP005 terminal REPORT/ADJUDICATION/PER-PROOF-RECORD/NATIVE-CHECK. No
+whole-book confidence or Lean quotation acceptance follows.
+
+RP004 launched at `2026-11-16T06:23:38.805337+00:00` as `readable-source-convergence-26bd977c926f4c6e919e79e8913e57cd`.
+RP005 launched at `2026-11-16T06:23:39.968809+00:00` as `readable-constant-young-140f8dd8b78d4f8aa0102d871e8b0a06`.
+
+### Worker comparisons complete at the reconciled held source
+
+`reviews/2026-11-16-readable-worker-qa/INDEX.json` reconciles root/helpers'
+author-side comparisons of all249 book proof environments at held `f06cb607`:
+208 changed arguments supported,41 byte-identical. The six main-file scopes
+are disjoint and their62 proof hashes match the single frozen main source.
+New wording in the compact mean, complex variational quotient and radius
+Schur explanation was corrected by Agent24; exact correction followups are
+retained. This is worker QA, not249 independent reviews or whole-book truth.
+The33 no-go entries do not replace the missing Chapter12 skeptic synthesis.
+Independent rereads remain incomplete, and the four reader proofs are excluded.
+Integrated source/PDF/marker/F/G/combined/disclosure/review-sync reconciliation,
+Agent16's verification and Le's adoption/release decisions remain separate.
+
+### Recorded review state: reading, public math and protocol are separate
+
+The current index records17 terminal native sessions/16 public reports and96
+assigned paired proofs. Reports claim95 complete OLD/NEW readings; root-team
+public-working assessment is92CHECKED,3PARTIAL,1NO_PUBLIC_REPORT. Only82
+CHECKED pairs currently have no observed native-retry incident. RP013/RP014/
+RP016 cover11 pairs under a separate protocol hold (10mathCHECKED,1mathPARTIAL);
+these overlap the math counts and must not be added as disjoint totals.
+Raw grades remain13PASS/high,3PASS_WITH_NOTES/high and one missing report.
+Per-proof confidence is unreported/null; no whole-book grade is upgraded.
+
+The three bounded public-working gaps are listed in
+`OPEN-RECONSTRUCTION-GATES.json`: unmasked H1 form domain, smooth/Fatou/physical
+four-linear extension, and exact conjugated-primitive constant. Source checking
+finds no new source defect, but author-side algebra cannot fill those reviewer
+obligations. RP007 stays NOT_OBTAINED, with its original known usage retained;
+its larger-cap repeat is unlaunched and also subject to the transport hold.
+
+Three automatic SessionRetry cases lack earlier-stream finish/usage. Available
+finish counters sum only known reported values, with cached input explicit;
+first-stream and whole-invocation usage/cost/cap are UNKNOWN, never estimates.
+No sum with the historical627/118 snapshots is asserted. Remaining153 paired
+proofs (RP018--RP038) have not launched. AppendixE/front-door/derived-artifact/
+reseal synchronization, companion quotations, Agent16 verification and Le's
+adoption/release decisions remain open.
+
+### Next frozen per-file rereads: RP006--RP008
+
+RP006 assigns the seven compact mean-family proof pairs at common corrected
+state `7923750f` (the file8 blob equals `a10571f4`; the source/PDF pair is
+judged at792, not the intermediate a105 custody state). RP007 assigns the one
+exact canonical-scaling proof at `91973830`. RP008 assigns the seven original
+raw-block proof pairs at `8f75869e`. All compare with `cdde711c`. Their raw
+source blocks, source/frame hashes and fresh native tool-denied configuration
+have been checked. Caps are65,536,32,768,65,536 respectively; timeout3,600
+seconds each. Each is one fresh pure DeepSeek V4 Pro session with no coordinator
+retry, continuation or fallback. Agent24's dated gates/build/maps and worker
+QA support these frozen candidates; Agent16's integrated adoption/release
+verification remains separate. All three processes are terminal. RP006
+returned raw PASS/high and seven complete/preserved proof pairs; root supports
+scoped preservation with report-only prefactor/wording notes. RP008 returned
+raw PASS_WITH_NOTES/high and seven complete/preserved proof pairs; root
+supports scoped preservation with source wording and report transcription,
+provenance and LF-pointer notes retained. No source repair or callback is
+required by either report. Native exact-prompt/model/fresh-session/zero-tool,
+stop and unchanged-input checks pass for both.
+
+RP007 obtained no public report: finish=length,32,768 reasoning tokens,0
+public output, processrc0. Literal status NOT_OBTAINED; verdict, confidence
+and public reading flags are null, with no mathematical defect inferred. Root
+chose the cap too small. No repeat has run; the one-attempt record is retained
+and a concrete larger-cap technical-repeat scope is being prepared separately
+for disposition. No historical grade or whole-book acceptance is upgraded.
+
+RP006 launched at `2026-11-16T06:49:29.137939+00:00` as `readable-compact-mean-50f922b7d61c4945a639b894a78e90b7`.
+RP007 launched at `2026-11-16T06:49:30.319083+00:00` as `readable-exact-scaling-17c182e539f84afcb4a676c3f7f9e11f`.
+RP008 launched at `2026-11-16T06:49:31.483827+00:00` as `readable-raw-block-fd3f759fc9e44ee29a7182d0c2ad3c04`.
+
+### Scaling budget-repair proposal, not a second dispatched call
+
+`reviews/2026-11-16-readable-exact-scaling-budget-repeat-proposal/` is a
+concrete HELD proposal for one explicitly disclosed technical repeat ofRP007:
+same91973830 scientific source, same84,500-byte prompt and all identical
+source frames/profile, new fresh session, cap98,304, timeout3,600seconds.
+The original failed32768-token attempt stays NOT_OBTAINED with full usage;
+the worst-case completion allowance across the two attempts would be131,072.
+No repeat, fallback, continuation or new vote has run. The proposal is sent
+for Agent16/Le disposition because the original packet was frozen as one
+attempt/no retry; it does not claim a skill-mandated new provider permission.
+All still-unlaunched future packets now have at least65,536 tokens of combined
+completion allowance; their scientific inputs remain unchanged. Other source
+rereads continue under standing authority.
+
+### RP009--RP012 terminal: two bounded reconstruction limitations
+
+Four exact-source packets are frozen: RP009 unmasked variational at corrected
+`7923750f` (6 pairs),RP010 temporal equilibrium at`66b1814b` (2 pairs,1
+unchanged),RP011 spatial occupation at`bc531b02` (8 pairs,2 unchanged),
+RP012 Cameron mean at`b34ccfc5` (7 pairs,1 unchanged). All use baseline
+`cdde711c`, identical complete source frames, explicit unassigned upstream
+context and source-bound worker QA. Root checked exact Git bytes/frame offsets
+and fresh native effective tool-denied configuration. Each requested cap is
+65,536 (the still-unlaunched RP010 cap was raised without changing input),
+timeout3,600seconds, fresh pure DeepSeekV4Pro, one attempt/no coordinator
+retry/continuation/fallback. No independent result is claimed before dispatch;
+Agent16's integrated verification/adoption gate remains separate.
+
+RP010 completed normally at `2026-11-16T07:26:10.595259+00:00`, elapsed
+339.986seconds, rawPASS/high, both proof pairs complete/preserved (one
+unchanged). Root adjudication supports scoped preservation with one report-only
+numerical example error: the correct a=1/2 mass is approximately0.38138, not
+0.676; the source/report exact Gamma ratio is correct. No source repair or
+callback is required. Native identity/prompt/freshness/zero-tool/stop and
+unchanged-input checks pass. RP009 ended07:28:11.789453Z(rawPASS/high,6reported complete pairs);
+its public evidence omits the assigned H1 form-domain Step2 of
+`P:variational-unmasked-rate`. RP011 ended07:29:53.218117Z(raw
+PASS_WITH_NOTES/high,8reported complete pairs); its public evidence omits
+the smooth-to-Fatou-to-physical-CS extension in`P:spatial-four-linear`.
+The two asserted source citation imprecisions inRP011 are report-only exponent
+errors; the source is correct. Neither scope is promoted to full public
+reconstruction: each has one bounded PARTIAL pair, with raw grades/read flags
+retained. Root/worker checking cannot fill that independent-report obligation.
+No source correction or callback follows. RP012 launched fresh07:29:47.455158Z
+and ended07:36:20.002641Z, rawPASS/high,7complete pairs; delegated Agent3
+math QA and root disposition review support all7 at the requested scope, with
+cosmetic report notes only. Native exports verify all three exact prompts,
+fresh/model identity, zero tools, normal stop and unchanged inputs. No old
+global grade, human/Lean/render/RF/source adoption is upgraded.
+
+RP009 launched `2026-11-16T07:20:29.428431+00:00` as `readable-unmasked-variational-071fc22bc1f2456ca4e24491a63c8df6`.
+RP010 launched `2026-11-16T07:20:30.609027+00:00` as `readable-temporal-equilibrium-16ef7a4f0e8e43f1bf9627661c3af736`.
+RP011 launched `2026-11-16T07:20:31.761046+00:00` as `readable-spatial-occupation-bfebc8bbf43349c39a703c0c948d2b07`.
+
+### Remaining174 paired proofs frozen with explicit public-step coverage
+
+RP013--RP038 now have exact-source frozen packets:174 remaining proof pairs,
+229 reconstructed payload frames. Their scientific scope and source frames
+are unchanged; the still-unlaunched contracts now require an inventory of every
+original target step (including unchanged portions), public working and a
+separate reconstruction flag, with honestPARTIAL when a step is missing.
+Word targets allow5,000 ordinary/7,000 main-batch words without sacrificing
+needed deductions. This makes the existing requirement explicit after the
+RP009/RP011 bounded omissions; no old report/grade is rewritten. Before/after
+contract hashes and source payload identity are retained per packet.
+
+Caps are65,536 for ordinary files and98,304 for main batches; timeout3,600
+seconds each, same fresh pure tool-denied DeepSeekV4Pro, one attempt/no
+coordinator retry/continuation/fallback. Root checked every retained Git byte
+range, proof inventory and frame offset after refinement. The95 NoGo/main
+pairs also received a second offline binding check;3 outside-proof admin
+history passages are omitted symmetrically for blindness, with no mathematical
+hypothesis/proof/caveat omitted. Offline checks are not scientific review.
+Each actual launch must recheck frozen hashes and effective tool denial.
+RP007 repeat remains a separate unlaunched proposal, excluded from this queue.
+No independent result or adoption is claimed for these remaining packets.
+
+### Rolling native queue, separate transport and math adjudication
+
+Root-frozenRP013--RP038 are now dispatched in source order by one Agent3-team
+native transport helper, with at most3 live sessions, exact9ade frozen-byte/
+source-binding checks and fresh effective configuration checks per launch.
+No provider retry, continuation, fallback or availability-generation probe is
+authorized. The helper cannot runRP007's separate held repeat proposal.
+Another same-GPT helper reads every actual public report against its frozen
+sources and prepares source-bound mathematical adjudication; root reviews
+findings/dispositions and alone commits public records. These helper roles do
+not add independent reviewer votes or human verification. No source/PDF/Git
+mutation or lab message is delegated to the transport/model reviewer.
+
+The first batch RP013--RP015 has launched; a live process is not a completed
+review or a positive verdict.
+
+RP013 `rp013-797994769d004eb98a0837ac24701410` started `2026-11-16T08:17:41.769034+00:00`.
+RP014 `rp014-9a2e2b207fc54cba9f635cc83c10374d` started `2026-11-16T08:17:42.840414+00:00`.
+RP015 `rp015-1f3669369fda4c019f1dff2154d35191` started `2026-11-16T08:17:44.068095+00:00`.
+
+### Native transport hold after three observed automatic retries
+
+All RP013--RP017 processes are terminal; the controller stopped cleanly with
+zero live sessions and RP018--RP038 unlaunched. RP013,RP014,RP016 each show two
+native starts/reasoning spans but one final finish/usage record. Agent21's
+installed-client1.18.31 code/metadata diagnosis identifies SessionRetry re-entry,
+not a coordinator continuation; root confirmed the current binary hash after
+runs, without inventing a launch-time binary hash. No supported per-run option
+disables that hardcoded retry policy. Each affected report is retained as
+mathematical evidence with protocol_statusPENDING_EXPLICIT_DISPOSITION;
+aggregate cost/tokens/cap are not certified and the prior PU exception is not
+extended. No further native call, 007 repeat, provider fallback or paid probe
+has run. See the three PROTOCOL-INCIDENT records and index hold summary.
+
+Agent21 prepared an offline single-HTTP-attempt client proposal. Root-team
+code audit found hard-deadline, incomplete-response/schema, model/tool,
+private-mode/secret-output and manifest-TOCTOU blockers despite its15 supplied
+fixtures passing. Additional local dummy fixtures reproduce them. That draft
+is NOT ready for live approval and has not been applied; fixes and re-audit
+are requested before root asks for any client-route change. No global config,
+credential/provider query, source/PDF edit, installed binary change, R/F or
+publication action is authorized by this preparation. The approved-route and
+one-attempt commitments, not a new unquoted skill rule, explain the hold.
+
+The older publication-frontier headings below are dated snapshots; they do
+not authorize restarting their old completed calls or override this narrow
+assignment and Le's later recorded decisions.
+
 ## Goal
 
 Prove the correct-scale upper bound and the all-original-model second-moment
@@ -21248,3 +21957,13 @@ Built directly on ed8ca5b1 after16 selection529b3dc4098b. Original35-row v4 ledg
 Generator hash-selects/binds addendum+catalog and checkscounts/UTCdays/IDs/clockkinds/P2unknown/currentC011/unchanged-gradepolicy.12focused evidence tests and5wholebookguards pass; gatehelper24tests pass withoriginal18retained. Gate nowrequires archivalcombinedsource/PDF plus every selectedinput; private/release untouched. OriginalREVIEW-SYNC.json intentionallyunchanged; its expectedFAIL is retained forD, not markedpassed or resealed early.
 
 Book403(+1)/reader28 (readerbyte-identical toA), bothbuildsexit0/pinnedepoch1794589200 withsixzerologcounters; scientificstatement/proofTeX untouched. Nochapterstartmoves; F/G/bibliography/workingwords/notation/indexmove1page.1539->1540destinations(newunnumberedsubsection);3120links/0invalidinternalGoTo. Rootviewedchangedledger/addendumpages. Allnewpublicmetadata privacychecks passed. This is HELD/unpushed author-side metadata/currentness work, not new scientific review, fullbookhumanacceptance,R/F or release. Owner24 limitedtransitions/imprint thenCcombinedregeneration, rootDsinglemanifest-onlyreseal,16verification andLe namedpush remain. Evidence private/publication-closeout/step-B-currentness-20261115/.
+
+
+### 2026-11-16 — Literal field-parser correction before Appendix E integration (HELD)
+
+The frozen final-source inventory now reads RP045’s period-ended metadata labels as well as colon-ended labels: six rows recover the report’s literal PRESERVED and JUSTIFIED values and raw excerpts. The isolated replay leaves all source bindings, grades, confidence and summary/math counts unchanged. No report was rewritten and no provider call was made. PARSER-CORRECTION.json records the successor hashes; Appendix E must pin these corrected data and disclose this complete long review round before final resealing. Prior aggregate hashes remain historical.
+
+
+### 2026-11-16 — Terminal evidence for RP044–RP075 filed (HELD)
+
+Filed 224 terminal files for 32 actual reviews, preserving exact report and canonical author-adjudication bytes. Root checked the 212 attempt/source proof rows against the corrected attempt inventory: hashes, reported flags, author maps and pending-input fields match, with per-proof confidence still null. These attempt/source pairs include superseded versions and are not 212 additional distinct results. All 96 frozen README/input/checksum files remain unchanged. The public filing receipt lists every file/hash. RP068 retains its prospectively authorized native recovery and unknown aggregate usage; RP070 retains its formal-kernel versus additional-contract limit; RP071 retains its failed literal declaration comparison. Canonical proposed/pending scope language is preserved; filing is not owner acceptance or a new scientific vote. Appendix E integration uses the separate 249-current-pair/59-attempt reconciliation, not a sum of these rows. No source/PDF edits, model calls or push.

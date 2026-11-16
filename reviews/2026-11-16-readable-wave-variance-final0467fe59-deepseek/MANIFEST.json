@@ -1,0 +1,117 @@
+{
+  "review_record_id": "RP045",
+  "scope": "6 assigned old/new readability proof pairs only; upstream context unassigned; no primary-PDF/Lean/render/human/global/release certification",
+  "old_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_revision": "0467fe596bb8ff02465f6e87c603accaa8094f7b",
+  "source_file": "notes/integrated_wave_variance.tex",
+  "proof_labels": [
+    "P:frequency-row",
+    "C:frequency-time",
+    "P:actual-wave-form",
+    "L:phase-bessel",
+    "P:wave-two-variances",
+    "P:wave-square-columns"
+  ],
+  "input_files": [
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 24927,
+      "sha256": "66369d1bde2358f92e7edfb33f899bd96c2698a631e9ca0d9f330062ff55f8a6",
+      "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+      "source_path": "notes/integrated_wave_variance.tex",
+      "selection": "WHOLE_FILE",
+      "role": "ASSIGNED OLD complete module; exactly 6 proof pairs."
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 30764,
+      "sha256": "0ceec4120677c5794af029042f42fa6ca389cbcdc7b844f9560d6c27d72e6c4f",
+      "source_revision": "0467fe596bb8ff02465f6e87c603accaa8094f7b",
+      "source_path": "notes/integrated_wave_variance.tex",
+      "selection": "WHOLE_FILE",
+      "role": "ASSIGNED NEW complete module; exactly 6 proof pairs."
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7",
+      "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+      "source_path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "selection": "LF_RANGE",
+      "role": "UNASSIGNED exact baseline declaration/definition context; no upstream proof assigned or counted.",
+      "source_lf": [
+        367,
+        409
+      ]
+    },
+    {
+      "path": "inputs/context-integrated_covariance_foundation-baseline.txt",
+      "bytes": 21173,
+      "sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020",
+      "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+      "source_path": "notes/integrated_covariance_foundation.tex",
+      "selection": "WHOLE_FILE",
+      "role": "UNASSIGNED complete baseline upstream module. Stated inputs/definitions may be used under checked application hypotheses; these proofs are NOT assigned or counted as additional reviewed proofs."
+    }
+  ],
+  "embedded_frames": [
+    {
+      "path": "inputs/old-module.txt",
+      "payload_byte_offset": 8144,
+      "payload_bytes": 24927,
+      "payload_sha256": "66369d1bde2358f92e7edfb33f899bd96c2698a631e9ca0d9f330062ff55f8a6"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "payload_byte_offset": 33467,
+      "payload_bytes": 30764,
+      "payload_sha256": "0ceec4120677c5794af029042f42fa6ca389cbcdc7b844f9560d6c27d72e6c4f"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "payload_byte_offset": 64695,
+      "payload_bytes": 1986,
+      "payload_sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-integrated_covariance_foundation-baseline.txt",
+      "payload_byte_offset": 67280,
+      "payload_bytes": 21173,
+      "payload_sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020"
+    }
+  ],
+  "prompt_bytes": 88525,
+  "prompt_sha256": "b7bdc4e3587ea33bf12f28364cdcc617a6cf50434344e1f9e4d7fe9ea5b606ef",
+  "contract_sha256": "4e14d3f77b8bc4c5796d0cb465f6b498b364552747265e3ca6bbbb1f42caf483",
+  "proof_manifest_sha256": "307d1310210ae9d4af686433bac3ac801988a9f0d44109ae79189a39c4fe0b2d",
+  "profile_sha256": "ccdf515979e77bbe752d924735a915260ca437d3d31a954d4a739c946fca0ea1",
+  "model_limits_sha256": "60eaa34361e093e599fdc4a26f8d53ee3aeb860e419c9e66535c4fda52284d56",
+  "capacity_sha256": "16e3f9dad6b2003c842e6d2c5977c974a7ac77ce25c088ddd0ae17e5b84e6e60",
+  "packet_spec_sha256": "5623cb5f22d1f78e2df944df459fd2b73d59996fcee8954b77a239ee88dec366",
+  "preparation_script_sha256": "1ac1fefd561751057f5494b86a8c3ecc4d55f6dd1d2dd30f9aec984c9fbbff05",
+  "preparation_checks_sha256": "20d1749f432221f0dd5cac1b570899d71d6015c5707625a9f32d87f7863e6290",
+  "route": "paper-review-deepseek",
+  "requested_model": "deepseek/deepseek-v4-pro",
+  "requested_variant": null,
+  "pure_mode": true,
+  "agent": "artifact-reviewer",
+  "all_tools_denied": true,
+  "tool_denial_status": "Profile and local effective config explicitly deny all permissions; actual native runtime enforcement remains unobserved.",
+  "combined_reasoning_public_output_cap": 65536,
+  "timeout_seconds": 3600,
+  "coordinator_launch_limit": 1,
+  "coordinator_retry_continuation_fallback": false,
+  "native_hidden_requests_not_inferred_from_process_count": true,
+  "native_automatic_recovery_policy": "Prospective Choice B; native automatic SessionRetry knowingly permitted. One coordinator process is not one physical request. Aggregate usage/cost/cap may remain unknown.",
+  "provider_calls_started_during_preparation": 0,
+  "status": "PREPARED_BOUND_LOCAL_CONFIG_CHECKED_AWAITING16_FINALITY_ROOT_FREEZE_AND_EXPLICIT_DISPATCH",
+  "no_preflight_claim": "Only local effective debug config inspected. No provider/admission preflight, native launch or model reading.",
+  "retained_model_limits_note": "Copied reference advertised metadata, not a new provider lookup or current admission guarantee.",
+  "source_binding_sha256": "a5a0d49d2ec09a66e45f60f68f02a301fb3c534e3aa5293ec2a83c0dccd80ac2",
+  "source_closure_sha256": "f5eea3b0f9fa8da329e77ecb7bb0eaf7f0d2ed14221332474c9bbe74d0433c96",
+  "owner_authorization": "Root-directed Ch4-8 FINAL successor preparation from24tip032fb8a2; all scopes await16verification and rootfreezeGO. No model dispatch authorized by preparation.",
+  "validation_script_sha256": "9bba328849a099aff37910c7678d5491d55ede90b852091e38dd814deac1ce33",
+  "safe_local_config_sha256": "700211ee68883ddbd910e2cd6ad33f64397658c399ba62fab3e1811924c0d6f4",
+  "proposed_public_record_path": "reviews/2026-11-16-readable-wave-variance-final0467fe59-deepseek",
+  "source_finality_status": "AWAITING16VERIFICATION_OF24FINAL_CH4_8_HANDOFF"
+}

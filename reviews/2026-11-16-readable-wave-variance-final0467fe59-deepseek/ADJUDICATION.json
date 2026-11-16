@@ -1,0 +1,421 @@
+{
+  "review_record_id": "RP045",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS_WITH_NOTES",
+  "native_confidence": "high",
+  "source_revision": "0467fe596bb8ff02465f6e87c603accaa8094f7b",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_wave_variance.tex",
+  "source_binding_sha256": "a5a0d49d2ec09a66e45f60f68f02a301fb3c534e3aa5293ec2a83c0dccd80ac2",
+  "public_report_sha256": "466b266421bca0432d743efbbc8b20565090336710d63a3a1077d21eb4744eaa",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_ALL_ASSIGNED_PUBLIC_RECONSTRUCTIONS_CHECKED_ROOT_REVIEWS",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "P:frequency-row": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1",
+        "R2"
+      ]
+    },
+    "C:frequency-time": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:actual-wave-form": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R3",
+        "R4"
+      ]
+    },
+    "L:phase-bessel": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:wave-two-variances": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:wave-square-columns": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "P:frequency-row",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE (statement LFs 48–55; proof LFs 57–140)",
+        "new_reading": "COMPLETE (statement LFs 48–55; proof LFs 57–165)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. All cases (near/far, `α<1`, `α=1`, `α>1`) and the exact constants survive.",
+        "new_explanations_raw": "JUSTIFIED. The added sentences verify the geometry (`|ξ| ≤ q < r/4`), justify `2^{1−a}` per bracket and `2^{2−a}` total, and spell out the dyadic mass `C2^{(j+1)α}`. Each follows from the stated hypotheses."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 9,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "e97f66f3b0658516082c2f02131ed4db3504816bf86bd16d0529556182ffd9d6",
+      "mathematical_check": "The report reconstructs C0 via countable ball cover, translated pushforward and inverse-Bessel shell masses with N=ceil log2(5q). All alpha<1/1/>1 geometric regimes and q^-epsilon absorption are computed; epsilon=1-2gamma>0 and alpha+2gamma-2<0 are checked. Far geometry gives3r/4,r/2 for both wave frequency arguments, inverse weight4/(3r),2^(1-a) for each negative bracket power, then dyadic S(h). Split L=floor log2(1/h), negative tail exponent alpha+a-2, its exact denominator and finite sums yield the claimed B_alpha profile with d-independent constants. A double-h variable typo is recorded (R1), but adjacent explicit geometry and squared bracket calculation correctly reconstruct the needed bound. Its claimed source imprecision is a false criticism (R2); the source lower bound on the bracket itself is correct.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        48,
+        55
+      ],
+      "old_proof_lf": [
+        57,
+        140
+      ],
+      "old_statement_sha256": "28639cc904c184f898e89915ae411a222cd69714550cfdbc18546b697433d72c",
+      "old_proof_sha256": "ba1b9706124f8584e0cddadcf17bd1711581e24fafb4c00870dcfde6702794c4",
+      "new_statement_lf": [
+        48,
+        55
+      ],
+      "new_proof_lf": [
+        57,
+        165
+      ],
+      "new_statement_sha256": "28639cc904c184f898e89915ae411a222cd69714550cfdbc18546b697433d72c",
+      "new_proof_sha256": "c06f17b215ae0b99488f7047610ceff6cd84fa6a334cde6b8eacc4ab19252fca"
+    },
+    {
+      "proof_id": "C:frequency-time",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE (statement LFs 147–158; proof LFs 160–171)",
+        "new_reading": "COMPLETE (statement LFs 172–183; proof LFs 185–199)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED. The added derivation `e^{−δu}(1+u) = e^{−δu} + ue^{−δu} ≤ 1 + 1/(eδ)` uses `d/du(ue^{−δu}) = e^{−δu}(1−δu)`, extremum `1/(eδ)` at `u = 1/δ`; correct."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 37,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "8dbda18ad623f82d1b75e9f32e0837047d94f5c09b12051b1e71f56e05bbe69a",
+      "mathematical_check": "The public proof checks that both beta endpoints exceed1/2. For alpha<1 it uses h^(2-a)<=h^(2beta); for alpha>1 it combines h^(2-a)h^(1-alpha)=h^(3-a-alpha) and strict exponent bound. At alpha1 the explicitly maximized u exp(-delta u) gives1+1/(e delta), with delta>0. No endpoint beta or weakened loss is introduced.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        147,
+        158
+      ],
+      "old_proof_lf": [
+        160,
+        171
+      ],
+      "old_statement_sha256": "0b2261a4738b40ad5737a2a8f03ef48d3111ba58afbc855b3202a05beb1ddf41",
+      "old_proof_sha256": "d11d0703c7b5132c3a019e5ac1a016e7e57c1d01eac869584d99358c9433eb6e",
+      "new_statement_lf": [
+        172,
+        183
+      ],
+      "new_proof_lf": [
+        185,
+        199
+      ],
+      "new_statement_sha256": "0b2261a4738b40ad5737a2a8f03ef48d3111ba58afbc855b3202a05beb1ddf41",
+      "new_proof_sha256": "f95c746f73599d16fa8e8938595cffc3442774af86d26335345de1053c46d401"
+    },
+    {
+      "proof_id": "P:actual-wave-form",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE (statement LFs 219–254; proof LFs 256–349)",
+        "new_reading": "COMPLETE (statement LFs 247–282; proof LFs 284–416)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. The admission, the exact adjoints, the kernel at zero, and the normalization are all intact.",
+        "new_explanations_raw": "JUSTIFIED, with one reading caveat. The added Step 4 sentence “applying `D_χ` to an output moves its phase adjoint onto the test vector `w`” is a phase-level gloss: computing `G_{D_χ^{*,E}w} = −sin(t|D|)/|D|·χΛw₁ + cos(t|D|)·χΛ^{−1}w₂`, which is **not** pointwise `χG_w` because `sin(t|D|)/|D|` and `χ` do not commute. The text only asserts the phase-adjoint statement (which is exactly `E:variance-cutoff-adjoint`), and it separately and correctly stresses that `D_χ` is not self-adjoint; no scalar commutation is claimed."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 58,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "df2354629bd46197495f98a69f9266d9bbf72c4a666584b390ccadb479c9a0d4",
+      "mathematical_check": "The public reconstruction includes compact-support original-noise admission using |K|Gamma(K-K), temporal Schur and smooth interior tests; it supplies L2-time Schwartz-seminorm approximation and frequency decay against both tempered measures to identify auxiliary and original limits. A redundant claim of uniform convergence after smoothing indicators is false (R3), but the necessary L2 construction and its bound are explicitly present. Even-measure Hermitian symmetry cancels imaginary cross terms for complex-noise comparison on the sameW. The weighted Sobolev calculation derives the exact negative-sine/cosine physical adjoint and D_chi^{*,E} weighted cutoff adjoint, including the correct phase-level observation and noncommutation caveat. Direct expansion computes all four kernel entries and zero-frequency matrix, frequency shift eta+lambda, unitaryc_d and cancellation(2pi)^d c_d^2=1. Bochner/Schwartz convergence is kept separate from radius-uniform variance estimates.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        219,
+        254
+      ],
+      "old_proof_lf": [
+        256,
+        349
+      ],
+      "old_statement_sha256": "9977893a051a47049572bdb6ab6af12f1c354bac516f7673bd98a780fe4b8167",
+      "old_proof_sha256": "8221ad63db547876d2ca54cdb8d0a7878422604b46207c7b12aa6f92543df12a",
+      "new_statement_lf": [
+        247,
+        282
+      ],
+      "new_proof_lf": [
+        284,
+        416
+      ],
+      "new_statement_sha256": "9977893a051a47049572bdb6ab6af12f1c354bac516f7673bd98a780fe4b8167",
+      "new_proof_sha256": "faa8878ed2c33448f1f7d8a8aeb0d7070e1a2741ea9ac9acf9d267447c952125"
+    },
+    {
+      "proof_id": "L:phase-bessel",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE (statement LFs 359–368; proof LFs 370–379)",
+        "new_reading": "COMPLETE (statement LFs 426–435; proof LFs 437–449)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED. The added first sentence correctly pinpoints why the nonconjugated integrand needs `{\\overline{u_k}}`: the scalar inner product conjugates its second argument."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 85,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "c0c88b93f7a43be9f18c183066386b9e12f16a2e39e02351c7c75548b5f3e79e",
+      "mathematical_check": "The report expands g into a countable Hilbert basis and identifies every scalar coefficient with the conjugate orthonormal family for the nonconjugated integrand. Scalar Bessel, Parseval and nonnegative Tonelli give the exact Hilbert-valued bound; the conjugated version uses the original family. Bochner integrals follow from L2 CS, finite/zero H are included and no independence is assumed. The new explanation is justified.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        359,
+        368
+      ],
+      "old_proof_lf": [
+        370,
+        379
+      ],
+      "old_statement_sha256": "17b6792f523bc1a88405da4422081cbafd9910b8b3adc9f7008960eb907089be",
+      "old_proof_sha256": "fc45e066c9220c55b6d5e36c04802bfd956e427966b65f87be49c13f12e8555a",
+      "new_statement_lf": [
+        426,
+        435
+      ],
+      "new_proof_lf": [
+        437,
+        449
+      ],
+      "new_statement_sha256": "17b6792f523bc1a88405da4422081cbafd9910b8b3adc9f7008960eb907089be",
+      "new_proof_sha256": "6ee09c507df03d7a2e55afd959e15780f0730431501e32730f9980302de4875d"
+    },
+    {
+      "proof_id": "P:wave-two-variances",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE (statement LFs 382–397; proof LFs 399–473)",
+        "new_reading": "COMPLETE (statement LFs 452–467; proof LFs 469–562)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. Both directions and equal constant `C_T` are kept.",
+        "new_explanations_raw": "JUSTIFIED. The added sentence “Under `ξ = η+λ`, the factor `Σ_i|V_i(ξ)|²` is independent of λ, leaving the row integral as its coefficient” is exactly the Tonelli structure used."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 105,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "9ed243f9396c1a3551251900b58e0ad5e970ced93ae251f5a1538b5b7c180ae6",
+      "mathematical_check": "The report checks the entrywise time bound A_T h^(2-a)Phi, the even Radon uniform-growth hypotheses of the scalar row estimate, and fixed-lambda L2 Bessel measurability/integrability using bounded continuous wave factors and shifted Schwartz states. It explicitly constructs g_j for input and f_i for output, counts two-component CS and two summed entries giving4A_T, and performs both changes of variables. The output row is converted by measure reflection then Phi symmetry to the same fixed-frequency row. Thus both directions have identical C_T=4A_T K C_nu and weaker phase norm. The h^(2beta) refinement and family/radius/interval uniformity are kept; R-dependent admission is not used as a uniform estimate.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        382,
+        397
+      ],
+      "old_proof_lf": [
+        399,
+        473
+      ],
+      "old_statement_sha256": "9675f4281a8f05a1930d564fe7b3746b0d608bb6bf666d40645fc3a5bfce83c5",
+      "old_proof_sha256": "ac87029f94b5eaa9e7d9b7426f55b875742342c5d437efc9108509b3c2227a2d",
+      "new_statement_lf": [
+        452,
+        467
+      ],
+      "new_proof_lf": [
+        469,
+        562
+      ],
+      "new_statement_sha256": "9675f4281a8f05a1930d564fe7b3746b0d608bb6bf666d40645fc3a5bfce83c5",
+      "new_proof_sha256": "3282ab21a87feaddb4e3ca8258b100a61dec6fd0e829dea8cb45e46c5dc8d604"
+    },
+    {
+      "proof_id": "P:wave-square-columns",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE (statement LFs 479–493; proof LFs 495–539)",
+        "new_reading": "COMPLETE (statement LFs 568–582; proof LFs 584–651)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED. The added explanation that `w − w_N` is Schwartz and how the singleton normalization is applied is correct: `w_N` is a finite Schwartz combination, and `P:wave-two-variances` is legitimately instantiated with the one-element orthonormal family `{(w−w_N)/‖w−w_N‖}`."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 128,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "c201e87415e60596d6490fb838172f715538cdc4f0e6ded51368f2f94f208984",
+      "mathematical_check": "The report gives real Fourier symmetrization and Gram-Schmidt density, constructs finite Gaussian columns on the originalW, and uses deterministic ON-basis orthogonality to obtain exact mean-square tail sums without coefficient independence. Summability gives L2 limits, strong measurability and bounded real-linear extension to E_s-gamma. The singleton normalization of Schwartz projection residuals derives both pairing identities, including the zero residual, and a fixed basis/Parseval identifies any construction basis. Finite functional linear combinations are L2 limits of original centered Gaussian variables with convergent variance, proving joint Gaussian laws after extension. No common uncountable event, random bounded operator or new moment result is inferred.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        479,
+        493
+      ],
+      "old_proof_lf": [
+        495,
+        539
+      ],
+      "old_statement_sha256": "c8a35734752a8bcd2b4e6f9cbdbac0d2badd380a3ab096e95af4476684222daf",
+      "old_proof_sha256": "18eed57a2549a97a802abf16a254009738cf4568d223536b4ae2f0627c16d478",
+      "new_statement_lf": [
+        568,
+        582
+      ],
+      "new_proof_lf": [
+        584,
+        651
+      ],
+      "new_statement_sha256": "c8a35734752a8bcd2b4e6f9cbdbac0d2badd380a3ab096e95af4476684222daf",
+      "new_proof_sha256": "cd1f3f01aecb1471417e18dfb030f4a4bbc4db439e61f05fa234b5385f1e5522"
+    }
+  ],
+  "mathematical_checks": [
+    "The report reconstructs C0 via countable ball cover, translated pushforward and inverse-Bessel shell masses with N=ceil log2(5q). All alpha<1/1/>1 geometric regimes and q^-epsilon absorption are computed; epsilon=1-2gamma>0 and alpha+2gamma-2<0 are checked. Far geometry gives3r/4,r/2 for both wave frequency arguments, inverse weight4/(3r),2^(1-a) for each negative bracket power, then dyadic S(h). Split L=floor log2(1/h), negative tail exponent alpha+a-2, its exact denominator and finite sums yield the claimed B_alpha profile with d-independent constants. A double-h variable typo is recorded (R1), but adjacent explicit geometry and squared bracket calculation correctly reconstruct the needed bound. Its claimed source imprecision is a false criticism (R2); the source lower bound on the bracket itself is correct.",
+    "The public proof checks that both beta endpoints exceed1/2. For alpha<1 it uses h^(2-a)<=h^(2beta); for alpha>1 it combines h^(2-a)h^(1-alpha)=h^(3-a-alpha) and strict exponent bound. At alpha1 the explicitly maximized u exp(-delta u) gives1+1/(e delta), with delta>0. No endpoint beta or weakened loss is introduced.",
+    "The public reconstruction includes compact-support original-noise admission using |K|Gamma(K-K), temporal Schur and smooth interior tests; it supplies L2-time Schwartz-seminorm approximation and frequency decay against both tempered measures to identify auxiliary and original limits. A redundant claim of uniform convergence after smoothing indicators is false (R3), but the necessary L2 construction and its bound are explicitly present. Even-measure Hermitian symmetry cancels imaginary cross terms for complex-noise comparison on the sameW. The weighted Sobolev calculation derives the exact negative-sine/cosine physical adjoint and D_chi^{*,E} weighted cutoff adjoint, including the correct phase-level observation and noncommutation caveat. Direct expansion computes all four kernel entries and zero-frequency matrix, frequency shift eta+lambda, unitaryc_d and cancellation(2pi)^d c_d^2=1. Bochner/Schwartz convergence is kept separate from radius-uniform variance estimates.",
+    "The report expands g into a countable Hilbert basis and identifies every scalar coefficient with the conjugate orthonormal family for the nonconjugated integrand. Scalar Bessel, Parseval and nonnegative Tonelli give the exact Hilbert-valued bound; the conjugated version uses the original family. Bochner integrals follow from L2 CS, finite/zero H are included and no independence is assumed. The new explanation is justified.",
+    "The report checks the entrywise time bound A_T h^(2-a)Phi, the even Radon uniform-growth hypotheses of the scalar row estimate, and fixed-lambda L2 Bessel measurability/integrability using bounded continuous wave factors and shifted Schwartz states. It explicitly constructs g_j for input and f_i for output, counts two-component CS and two summed entries giving4A_T, and performs both changes of variables. The output row is converted by measure reflection then Phi symmetry to the same fixed-frequency row. Thus both directions have identical C_T=4A_T K C_nu and weaker phase norm. The h^(2beta) refinement and family/radius/interval uniformity are kept; R-dependent admission is not used as a uniform estimate.",
+    "The report gives real Fourier symmetrization and Gram-Schmidt density, constructs finite Gaussian columns on the originalW, and uses deterministic ON-basis orthogonality to obtain exact mean-square tail sums without coefficient independence. Summability gives L2 limits, strong measurability and bounded real-linear extension to E_s-gamma. The singleton normalization of Schwartz projection residuals derives both pairing identities, including the zero residual, and a fixed basis/Parseval identifies any construction basis. Finite functional linear combinations are L2 limits of original centered Gaussian variables with convergent variance, proving joint Gaussian laws after extension. No common uncountable event, random bounded operator or new moment result is inferred."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "proof_id": "P:frequency-row",
+      "classification": "report-only double-h variable typo; correct neighboring calculation retained",
+      "old": "Each bracket <hX>^(a-1) with X>=hr/2 obeys <hX>^(a-1)<=<hr/2>^(a-1)",
+      "new": "Each bracket <hX>^(a-1) with X>=r/2 obeys <hX>^(a-1)<=<hr/2>^(a-1)",
+      "contrary_calculation": "Forh=1/2,r=4,X=hr/2=1, <hX>=sqrt1.25 < sqrt2=<hr/2>, so the claimed inequality of negative powers is reversed. The preceding geometry actually gives X>=r/2, which yields exactly the subsequent correct squared-bracket calculation.",
+      "disposition": "Raw report unchanged. Its explicit original-step6 and remaining original-step7 supply the correct needed estimate; no source defect or missing critical public calculation.",
+      "report_lf": 23
+    },
+    {
+      "id": "R2",
+      "proof_id": "P:frequency-row",
+      "classification": "false source criticism",
+      "old": "Each oscillatory bracket is at least <hr>/2 is imprecise",
+      "new": "The source statement is correct for each bracket <hX> with X>=r/2: <hX>>=<hr/2>>=<hr>/2. Raising to a-1<0 then gives the stated coefficient2^(1-a).",
+      "disposition": "No source change. The report itself proves the source lower bound by squaring1+(hr/2)^2 >=(1+(hr)^2)/4; its own correct core derivation remains complete despite this false precision criticism.",
+      "report_lf": 35
+    },
+    {
+      "id": "R3",
+      "proof_id": "P:actual-wave-form",
+      "classification": "report-only overstatement of uniform convergence during temporal indicator smoothing",
+      "old": "convergence on the compact interval is uniform in each seminorm",
+      "new": "the frozen continuous spatial values can be approximated uniformly per seminorm; smoothing the interval indicators converges in L2 time per seminorm, which suffices for the displayed L2-time Fourier error",
+      "contrary_calculation": "A nontrivial interval indicator has a jump and cannot be a uniform limit of smooth functions on an interval containing the jump. The source and preceding public sentence correctly construct L2-time Schwartz-seminorm convergence instead.",
+      "disposition": "The same public paragraph explicitly gives the valid L2-time construction, diagonal sequence and epsilon_n<xi>^-N L2 bound, so no critical admission step is absent and no source correction is needed.",
+      "report_lf": 66
+    },
+    {
+      "id": "R4",
+      "proof_id": "P:actual-wave-form",
+      "classification": "correct reviewer scope caveat, not a source criticism",
+      "disposition": "The observed form ell(z,D_chi^{*,E}w) is the actual phase-adjoint identity. The report correctly computes G at that argument and notes that it is generally not pointwise chi G_w. No scalar commutation or self-adjoint phase mask is asserted by the source.",
+      "report_lf": 79
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 21878,
+      "sha256": "466b266421bca0432d743efbbc8b20565090336710d63a3a1077d21eb4744eaa"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 5516,
+      "sha256": "4e14d3f77b8bc4c5796d0cb465f6b498b364552747265e3ca6bbbb1f42caf483"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 8757,
+      "sha256": "307d1310210ae9d4af686433bac3ac801988a9f0d44109ae79189a39c4fe0b2d"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 2593,
+      "sha256": "a5a0d49d2ec09a66e45f60f68f02a301fb3c534e3aa5293ec2a83c0dccd80ac2"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 6163,
+      "sha256": "e8f44272b3c91a100a6980d88b84446bf0b3abf5c63e74569ac75a434162ec80"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 3882,
+      "sha256": "f5eea3b0f9fa8da329e77ecb7bb0eaf7f0d2ed14221332474c9bbe74d0433c96"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 24927,
+      "sha256": "66369d1bde2358f92e7edfb33f899bd96c2698a631e9ca0d9f330062ff55f8a6"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 30764,
+      "sha256": "0ceec4120677c5794af029042f42fa6ca389cbcdc7b844f9560d6c27d72e6c4f"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-integrated_covariance_foundation-baseline.txt",
+      "bytes": 21173,
+      "sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020"
+    }
+  ],
+  "input_identity_checks": "All delivered source/context payload hashes and WHOLE_FILE pinned Git byte identities verified; every complete OLD/NEW statement/proof independently checked by LF/bytes/SHA. Complete target text read with baseline comparisons and genuine needed stated inputs, not merely delta QA.",
+  "source_currentness": {
+    "covered_launch_revision": "0467fe596bb8ff02465f6e87c603accaa8094f7b",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "limit": "Only this exact assigned source versuscdde and supplied context; no older report rebinding, unexamined successor or whole-book seal."
+  },
+  "read_limits": [
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority"
+}

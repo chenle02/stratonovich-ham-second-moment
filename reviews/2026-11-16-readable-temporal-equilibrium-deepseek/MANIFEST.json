@@ -1,0 +1,82 @@
+{
+  "review_record_id": "RP010",
+  "scope": "2 assigned old/new readability proof pairs only; upstream context unassigned; no primary-PDF/Lean/render/human/global/release certification",
+  "old_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_revision": "66b1814b539bd4ce39cde8360fb6b033fe41befb",
+  "source_file": "notes/integrated_temporal_equilibrium.tex",
+  "proof_labels": [
+    "L:equilibrium-gamma-beta",
+    "L:temporal-equilibrium"
+  ],
+  "input_files": [
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 4281,
+      "sha256": "412c7cb1e28118adbab40d8ef4b59bd815791c48a92a389efbd14202578c690f",
+      "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+      "source_path": "notes/integrated_temporal_equilibrium.tex",
+      "selection": "WHOLE_FILE",
+      "role": "ASSIGNED OLD complete module; exactly 2 proof pairs."
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 5614,
+      "sha256": "68e7b8b20677155f4efac8e6ec64e16a776ccb220f0193a0c423cae19ce871e1",
+      "source_revision": "66b1814b539bd4ce39cde8360fb6b033fe41befb",
+      "source_path": "notes/integrated_temporal_equilibrium.tex",
+      "selection": "WHOLE_FILE",
+      "role": "ASSIGNED NEW complete module; exactly 2 proof pairs."
+    }
+  ],
+  "embedded_frames": [
+    {
+      "path": "inputs/old-module.txt",
+      "payload_byte_offset": 6015,
+      "payload_bytes": 4281,
+      "payload_sha256": "412c7cb1e28118adbab40d8ef4b59bd815791c48a92a389efbd14202578c690f"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "payload_byte_offset": 10698,
+      "payload_bytes": 5614,
+      "payload_sha256": "68e7b8b20677155f4efac8e6ec64e16a776ccb220f0193a0c423cae19ce871e1"
+    }
+  ],
+  "prompt_bytes": 16345,
+  "prompt_sha256": "8f5bed31274f75ab5bbb03f0d2b6a934d5fb97f4db27cdf505df2983cd549df7",
+  "contract_sha256": "9d61fae0231abda4ad343ecabdf8b997fee6f9187fb6e59d9e862e8e00791372",
+  "proof_manifest_sha256": "cd54eb63052539fbaedda506f9d8e8ea731164c704fdeb9b168b2d122fa84005",
+  "profile_sha256": "ccdf515979e77bbe752d924735a915260ca437d3d31a954d4a739c946fca0ea1",
+  "model_limits_sha256": "60eaa34361e093e599fdc4a26f8d53ee3aeb860e419c9e66535c4fda52284d56",
+  "capacity_sha256": "7999eab9f4af430db09daf5fd81689f15ade3433f54e83aff57b1fcddc5345a6",
+  "packet_spec_sha256": "168a04fcb6f95ee85b8c191d51f8721f950a6e767857543c051b7f729c256973",
+  "preparation_script_sha256": "d0f3de44c19c4b66d476be3bb0b41f0389470db98908d9d038643aeb5a6dcacf",
+  "preparation_checks_sha256": "1d493f1a7d1cc6efc810d79c219d20271348580816c397514d9bb8d74c89df5c",
+  "route": "paper-review-deepseek",
+  "requested_model": "deepseek/deepseek-v4-pro",
+  "requested_variant": null,
+  "pure_mode": true,
+  "agent": "artifact-reviewer",
+  "all_tools_denied": true,
+  "tool_denial_status": "Fresh pure native configuration preflight verifies all effective global/agent permissions deny; runtime tools/admission/reading not yet observed.",
+  "combined_reasoning_public_output_cap": 65536,
+  "timeout_seconds": 3600,
+  "coordinator_launch_limit": 1,
+  "coordinator_retry_continuation_fallback": false,
+  "native_hidden_requests_not_inferred_from_process_count": true,
+  "provider_calls_started_during_preparation": 0,
+  "status": "FROZEN_PRE_DISPATCH",
+  "no_preflight_claim": "Fresh local native configuration checked; no provider generation/admission/reading before dispatch.",
+  "retained_model_limits_note": "Copied reference advertised metadata, not a new provider lookup or current admission guarantee.",
+  "validation_script_sha256": "9bba328849a099aff37910c7678d5491d55ede90b852091e38dd814deac1ce33",
+  "pre_dispatch_budget_choice": {
+    "previous_cap": 32768,
+    "current_cap": 65536,
+    "kind": "Owner-selected budget revision before any dispatch; not a retry.",
+    "input_sha256_unchanged": "8f5bed31274f75ab5bbb03f0d2b6a934d5fb97f4db27cdf505df2983cd549df7",
+    "new_admission_claim": false
+  },
+  "map_tip": "8d3d288a329f82be9bbca68a12b639afb0a5032f",
+  "owner_authorization": "Le standing per-proof reread authority; Agent24 dated mechanical gates/build/maps and source-bound worker QA; root exact Git bytes/frame and fresh effective tool-denied native configuration checks. No model call at freeze. Agent16 integration/adoption gate remains separate.",
+  "recorded_utc": "2026-11-16T07:16:57.994914+00:00"
+}

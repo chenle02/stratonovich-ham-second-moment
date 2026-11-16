@@ -1,0 +1,377 @@
+{
+  "review_record_id": "RP030",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side mathematical public-report/source QA only; not a new independent vote or Chapter12 skeptic synthesis",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "31dc8f7288e19e84ee96a589c30b01c400e373ec",
+  "source_file": "notes/no-go/optimization.tex",
+  "source_binding_sha256": "1254c653143fc4fea333496409e00074f8d6caa10730126bbd3a85dff39ecc47",
+  "public_report_sha256": "0ccf6a21747824e76bad365ceb67ed1f54f79279c2b428f6b7c9a775d20aa557",
+  "all_assigned_public_reasons_and_findings_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "ALL_FOUR_SCOPED_RECONSTRUCTIONS_CHECKED_NO_SOURCE_REPAIR",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "P:nogo-23": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:nogo-28": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:nogo-29": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:nogo-33": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "P:nogo-23",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED (vacuous \u2014 no new explanatory prose was introduced)."
+      },
+      "native_reading_field_text": {
+        "old_reading": "COMPLETE (OLD statement LF 19\u201330, proof LF 32\u201347, original LF 32\u201347).",
+        "new_reading": "COMPLETE (NEW statement LF 19\u201330, proof LF 32\u201347, original LF 32\u201347).",
+        "public_reconstruction": "COMPLETE.",
+        "argument_preservation": "PRESERVED. The statement and proof are byte-identical between OLD and NEW; nothing was added, deleted, or reworded.",
+        "new_explanations_raw": "JUSTIFIED (vacuous \u2014 no new explanatory prose was introduced)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 11,
+      "source_old_view_statement_lf": [
+        19,
+        30
+      ],
+      "source_old_view_proof_lf": [
+        32,
+        47
+      ],
+      "source_new_view_statement_lf": [
+        19,
+        30
+      ],
+      "source_new_view_proof_lf": [
+        32,
+        47
+      ],
+      "original_old_proof_lf": [
+        32,
+        47
+      ],
+      "original_new_proof_lf": [
+        32,
+        47
+      ],
+      "source_old_proof_sha256": "fe069dda94228d8eb6515cf0208e92a06d162443a76cdca4a64d38f83f06f8bc",
+      "source_new_proof_sha256": "fe069dda94228d8eb6515cf0208e92a06d162443a76cdca4a64d38f83f06f8bc",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "b64a4d3e18a81fe404f976da91e79275299bcb1f440820771e5fbbf2dc4eb49a",
+      "mathematical_check": "The unchanged finite counterexample is fully reconstructed. X is a1\u00d7n Gaussian row with its single singular value sqrt(sum g_i^2); the fourth moment is3n+n(n-1)=n(n+2). The report computes V_in=I_n, V_out=n on the one-dimensional target and the exact failure288>9*16=144 at n16; the ratio n+2 rules out every dimension-independent input-only constant. Transposition preserves the singular value and exchanges the two variance directions. It checks the legitimate unassigned two-variance p4 bounds9*(256+16)/2=1224 and9*256=2304, both larger than288. No commutativity assumption is introduced and no finite row-matrix example is converted to a wave-field counterexample.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:nogo-28",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED. The added sentence \u201cWe compute the ratio of the two comparison formulas with the kinetic penalty retained \u2026\u201d accurately describes that the \\((2\\zeta)\\) penalty factor is retained in the ratio (here evaluated at \\(\\zeta=1\\)), and the two step headings (\u201cexact logarithmic ratio\u201d, \u201csign at the admissible parameter point\u201d) accurately partition the existing deduction."
+      },
+      "native_reading_field_text": {
+        "old_reading": "COMPLETE (OLD statement LF 83\u201390, proof LF 92\u2013118, original LF 92\u2013118).",
+        "new_reading": "COMPLETE (NEW statement LF 83\u201390, proof LF 92\u2013130, original LF 92\u2013130).",
+        "public_reconstruction": "COMPLETE.",
+        "argument_preservation": "PRESERVED. The NEW proof adds one roadmap sentence and two `\\medskip\\noindent\\textit{Step 1./Step 2.}` headings only; every mathematical sentence and every displayed formula is byte-identical to OLD.",
+        "new_explanations_raw": "JUSTIFIED. The added sentence \u201cWe compute the ratio of the two comparison formulas with the kinetic penalty retained \u2026\u201d accurately describes that the \\((2\\zeta)\\) penalty factor is retained in the ratio (here evaluated at \\(\\zeta=1\\)), and the two step headings (\u201cexact logarithmic ratio\u201d, \u201csign at the admissible parameter point\u201d) accurately partition the existing deduction."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 80,
+      "source_old_view_statement_lf": [
+        83,
+        90
+      ],
+      "source_old_view_proof_lf": [
+        92,
+        118
+      ],
+      "source_new_view_statement_lf": [
+        83,
+        90
+      ],
+      "source_new_view_proof_lf": [
+        92,
+        130
+      ],
+      "original_old_proof_lf": [
+        92,
+        118
+      ],
+      "original_new_proof_lf": [
+        92,
+        130
+      ],
+      "source_old_proof_sha256": "e5c9e603fb73564088c1c191479b51d4fca98d5376cd997a094920e78839e412",
+      "source_new_proof_sha256": "cd3f61a92b37e2a71f5399c64f355022762d116d15361f9d257914230ece8c62",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "8566caf2009ed1b4f54f7224c28f4897b0517a00443bcf2f57deec9a4cd16774",
+      "mathematical_check": "All general ratio and numerical steps are public. The named UNASSIGNED original occupation-energy result supplies finite positive FULL-class E_zeta under the same nonzero covariance, alpha in(0,2),a in(0,1),alpha+a<2; the scalar F_b domains are checked at alpha5/4,a1/2,q11/4,k7/4. Taking logs cancels the common energy/amplitude factor,8 and outer k, leaving Delta/k. The exact declared ceiling identity preserves(2zeta)^(alpha/(2k)), so the comparison ratio is exp((Delta-(alpha/2)log(2zeta))/k). At zeta1, the report derives8Delta=11log(11/4)+7log(7/4)-18log(9/4), subtracts5log2 and cancels the powers of4. It computes every integer power and product in11^11 7^7<2^5 9^18, giving the strict negative ratio independent of the nonzero covariance amplitude. Its side comparison at zeta1/2 uses the correct strict convexity of x log x, giving Delta>0. This orders two computed comparison quantities only; it neither makes the smaller value a proved moment upper bound nor identifies the ceiling with C2.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:nogo-29",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED (vacuous \u2014 none added)."
+      },
+      "native_reading_field_text": {
+        "old_reading": "COMPLETE (OLD statement LF 146\u2013155, proof LF 157\u2013177, original LF 157\u2013177).",
+        "new_reading": "COMPLETE (NEW statement LF 158\u2013167, proof LF 169\u2013189, original LF 169\u2013189). The line shifts are purely because P:nogo-28\u2019s proof grew upstream; the statement and proof text are byte-identical.",
+        "public_reconstruction": "COMPLETE.",
+        "argument_preservation": "PRESERVED. No change at all to statement or proof.",
+        "new_explanations_raw": "JUSTIFIED (vacuous \u2014 none added)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 180,
+      "source_old_view_statement_lf": [
+        146,
+        155
+      ],
+      "source_old_view_proof_lf": [
+        157,
+        177
+      ],
+      "source_new_view_statement_lf": [
+        158,
+        167
+      ],
+      "source_new_view_proof_lf": [
+        169,
+        189
+      ],
+      "original_old_proof_lf": [
+        157,
+        177
+      ],
+      "original_new_proof_lf": [
+        169,
+        189
+      ],
+      "source_old_proof_sha256": "a3f87cf4776ed888ce3f85ca2992a9aac11ae6410385b0fa2638766f9bc2c785",
+      "source_new_proof_sha256": "a3f87cf4776ed888ce3f85ca2992a9aac11ae6410385b0fa2638766f9bc2c785",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "b214717db97d59828d22e74bf7f32cf124de6132c24a08c33c5656f606d0dd12",
+      "mathematical_check": "The three unchanged finite safeguards are reconstructed separately under the stated Gram/weight hypotheses. The declared active-set dual at C1,ell.1,b4 is1/(100w)-4w+w^2/2; D(4)=1/400-16+8=-3199/400<0 whereas the primal F(0)=0, so dropping the empty active-set value cannot recover the nonnegative primal supremum. The scalar example has F(0)=F(2)=0,F(1)=-1/2 and violates midpoint concavity. Both C=I2 and D=[[1,1/2],[1/2,1]] are PSD Grams with ordered nonnegative entries, while D-C has eigenvalues\u00b11/2, disproving Loewner order. The restricted nonnegative-weight quadratic comparison is retained and is not claimed for all vectors or nonlinear Gaussian waves. Use of the declared full active-set formula is unassigned context, not a new proof-count item.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:nogo-33",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED. The roadmap sentence (\u201cfree-phase contractivity, the unweighted series-factor identity, and the stronger factorial denominator\u201d) correctly names the three proofs, and the step headings correctly label each deduction."
+      },
+      "native_reading_field_text": {
+        "old_reading": "COMPLETE (OLD statement LF 203\u2013220, proof LF 222\u2013261, original LF 222\u2013261).",
+        "new_reading": "COMPLETE (NEW statement LF 215\u2013232, proof LF 234\u2013289, original LF 234\u2013289).",
+        "public_reconstruction": "COMPLETE.",
+        "argument_preservation": "PRESERVED. The NEW proof adds one roadmap sentence and three `Step 1./Step 2./Step 3.` headings; all mathematical content is byte-identical to OLD.",
+        "new_explanations_raw": "JUSTIFIED. The roadmap sentence (\u201cfree-phase contractivity, the unweighted series-factor identity, and the stronger factorial denominator\u201d) correctly names the three proofs, and the step headings correctly label each deduction."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 244,
+      "source_old_view_statement_lf": [
+        203,
+        220
+      ],
+      "source_old_view_proof_lf": [
+        222,
+        261
+      ],
+      "source_new_view_statement_lf": [
+        215,
+        232
+      ],
+      "source_new_view_proof_lf": [
+        234,
+        289
+      ],
+      "original_old_proof_lf": [
+        222,
+        261
+      ],
+      "original_new_proof_lf": [
+        234,
+        289
+      ],
+      "source_old_proof_sha256": "e72e66346e7121db4fd6ed21f82a447af4a0aeed84a77d99282d1ca855e7b960",
+      "source_new_proof_sha256": "917088867d17bdbcabd6fe697eb19f67a7dd40c52d59cd2ed5e22b3accaf3326",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "af204653455449f7863c29317939e12ae0c267a40e078db5526a66147ccb8e3e",
+      "mathematical_check": "Every rejected step and its exact correction is publicly reconstructed. The Euclidean shear sends the unit velocity vector to(t,1), norm sqrt(1+t^2)>1 for t>0. The report explicitly conjugates the massless free Fourier matrix by the inhomogeneous Bessel phase isometry, takes its continuous low-frequency shear limit and places normalized Fourier bumps in the velocity coordinate, transferring noncontractivity to the stated whole-space E without pretending there is an L2 zero mode. It distinguishes the homogeneous energy rotation norm. It derives the correct weighted identity A_n^vartheta B_n^(1-vartheta)=x^n/(n!)^vartheta by cancellation of2^(vartheta n), and checks the unweighted1/4-versus1 witness. Finally it computes162<216 at the permitted alpha1,k3, explains why an upper bound M/162 does not imply M/216, and derives only the valid weaker denominator(k!)^(3-alpha) using positive2-alpha. It does not assert that the actual coefficient exceeds M/216, and retains the need for an actual stronger estimate. New roadmap/headings accurately separate these three inference checks.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    }
+  ],
+  "mathematical_checks": [
+    "The unchanged finite counterexample is fully reconstructed. X is a1\u00d7n Gaussian row with its single singular value sqrt(sum g_i^2); the fourth moment is3n+n(n-1)=n(n+2). The report computes V_in=I_n, V_out=n on the one-dimensional target and the exact failure288>9*16=144 at n16; the ratio n+2 rules out every dimension-independent input-only constant. Transposition preserves the singular value and exchanges the two variance directions. It checks the legitimate unassigned two-variance p4 bounds9*(256+16)/2=1224 and9*256=2304, both larger than288. No commutativity assumption is introduced and no finite row-matrix example is converted to a wave-field counterexample.",
+    "All general ratio and numerical steps are public. The named UNASSIGNED original occupation-energy result supplies finite positive FULL-class E_zeta under the same nonzero covariance, alpha in(0,2),a in(0,1),alpha+a<2; the scalar F_b domains are checked at alpha5/4,a1/2,q11/4,k7/4. Taking logs cancels the common energy/amplitude factor,8 and outer k, leaving Delta/k. The exact declared ceiling identity preserves(2zeta)^(alpha/(2k)), so the comparison ratio is exp((Delta-(alpha/2)log(2zeta))/k). At zeta1, the report derives8Delta=11log(11/4)+7log(7/4)-18log(9/4), subtracts5log2 and cancels the powers of4. It computes every integer power and product in11^11 7^7<2^5 9^18, giving the strict negative ratio independent of the nonzero covariance amplitude. Its side comparison at zeta1/2 uses the correct strict convexity of x log x, giving Delta>0. This orders two computed comparison quantities only; it neither makes the smaller value a proved moment upper bound nor identifies the ceiling with C2.",
+    "The three unchanged finite safeguards are reconstructed separately under the stated Gram/weight hypotheses. The declared active-set dual at C1,ell.1,b4 is1/(100w)-4w+w^2/2; D(4)=1/400-16+8=-3199/400<0 whereas the primal F(0)=0, so dropping the empty active-set value cannot recover the nonnegative primal supremum. The scalar example has F(0)=F(2)=0,F(1)=-1/2 and violates midpoint concavity. Both C=I2 and D=[[1,1/2],[1/2,1]] are PSD Grams with ordered nonnegative entries, while D-C has eigenvalues\u00b11/2, disproving Loewner order. The restricted nonnegative-weight quadratic comparison is retained and is not claimed for all vectors or nonlinear Gaussian waves. Use of the declared full active-set formula is unassigned context, not a new proof-count item.",
+    "Every rejected step and its exact correction is publicly reconstructed. The Euclidean shear sends the unit velocity vector to(t,1), norm sqrt(1+t^2)>1 for t>0. The report explicitly conjugates the massless free Fourier matrix by the inhomogeneous Bessel phase isometry, takes its continuous low-frequency shear limit and places normalized Fourier bumps in the velocity coordinate, transferring noncontractivity to the stated whole-space E without pretending there is an L2 zero mode. It distinguishes the homogeneous energy rotation norm. It derives the correct weighted identity A_n^vartheta B_n^(1-vartheta)=x^n/(n!)^vartheta by cancellation of2^(vartheta n), and checks the unweighted1/4-versus1 witness. Finally it computes162<216 at the permitted alpha1,k3, explains why an upper bound M/162 does not imply M/216, and derives only the valid weaker denominator(k!)^(3-alpha) using positive2-alpha. It does not assert that the actual coefficient exceeds M/216, and retains the need for an actual stronger estimate. New roadmap/headings accurately separate these three inference checks."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "classification": "optional report scalar/vector symbol precision, not a missing Fourier argument",
+      "report_section": "P:nogo-33 / free-wave transfer",
+      "report_lf": 294,
+      "disposition": "M denotes the immediately displayed conjugated2\u00d72 symbol, while the scalar bump is placed in its second coordinate. Writing M(t,xi)(0,psi_epsilon)^T explicitly would remove the shorthand matrix-times-scalar appearance. The preceding complete matrix multiplication and following vector norm computation already supply the required well-typed argument; no source or public reconstruction correction is necessary."
+    },
+    {
+      "id": "R2",
+      "classification": "organizational prose terminology precision",
+      "disposition": "The inserted roadmap/Step prose is inside the proof environments and mathematically explanatory. Calling it administrative is stylistic shorthand; no historical review verdict/reasoning is supplied as an input or used as a proof. The reviewer checks each new sentence against its deduction and retains the proper finite-comparison scope."
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 22513,
+      "sha256": "0ccf6a21747824e76bad365ceb67ed1f54f79279c2b428f6b7c9a775d20aa557"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 4791,
+      "sha256": "84645e3a930b920c0f90f588f63271fbad3185074214ce40e4f64ad62b44c16d"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 7173,
+      "sha256": "425d0297c3d0f040c25695b653224456324c044bb7f94c0e0bff4c7dd1db3e64"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 5712,
+      "sha256": "1254c653143fc4fea333496409e00074f8d6caa10730126bbd3a85dff39ecc47"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 11998,
+      "sha256": "1f371d8b5b3dfa4f291bf38274ecb4877ff877670adcb1eabbdc32bd68f129bd"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 11307,
+      "sha256": "c7a6188836e5800fa343463138ae150aab1bafe398d0ddfec9ad31192a9ea4b8"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 12256,
+      "sha256": "3643ec6888c33c232936ab693221a3d571029d1f0f2af4d4ab107c9fd5ab5a12"
+    },
+    {
+      "path": "inputs/baseline-model-and-exponent.txt",
+      "bytes": 2132,
+      "sha256": "ba3693314fe34e7f9a7ceac5d452fcac3891acb1d6641a0cdb45274381aac8d6"
+    },
+    {
+      "path": "inputs/baseline-scientific-section-01.txt",
+      "bytes": 24882,
+      "sha256": "6744dad749cee44fccbbe417f5d143dd464cc19784fbad64f506634e60a361af"
+    },
+    {
+      "path": "inputs/baseline-scientific-section-02.txt",
+      "bytes": 26798,
+      "sha256": "b3df8907b80b35ed1c84866998f4fb1da57c299d732ce6be32835266b963b900"
+    },
+    {
+      "path": "inputs/integrated_positive_gram.txt",
+      "bytes": 10900,
+      "sha256": "c5af11537a274a8912e579c2d53c7c6b80bd64fd9a1ced3cdc4e91e06bdb8445"
+    },
+    {
+      "path": "inputs/integrated_occupation_ceiling.txt",
+      "bytes": 14682,
+      "sha256": "ac567a53fecc2c084906445567525ab8e2c4221b6728f936c96a8ced855096b6"
+    },
+    {
+      "path": "inputs/integrated_spatial_occupation.txt",
+      "bytes": 22407,
+      "sha256": "ed2f96133f5e969ba4d24fca051da4fcfcbf1377d6d18aa6a5e8385b66e5a12f"
+    },
+    {
+      "path": "inputs/integrated_compact_gaussian.txt",
+      "bytes": 30608,
+      "sha256": "caf9e56a5b818f9e5daa02ac3423c354b95c515f1932d92170ec002b0fbaa84a"
+    },
+    {
+      "path": "inputs/integrated_wave_variance.txt",
+      "bytes": 24927,
+      "sha256": "66369d1bde2358f92e7edfb33f899bd96c2698a631e9ca0d9f330062ff55f8a6"
+    }
+  ],
+  "input_identity_checks": "Every SOURCE-BINDING delivered payload hash checked, and each of four complete OLD/NEW proof environments independently matched view LF/hash. Original/view mapping preserved; only declared outside-proof historical prose is omitted.",
+  "context_checks": [
+    "Full original occupation energy and ceiling declarations apply under nonzero original covariance/alpha+a<2; kinetic-penalty normalization and the full occupation class match. No source-author conjectured constant or equality with the actual moment constant is imposed.",
+    "The finite Gaussian matrix input permits arbitrary complex rectangular matrices and retains both variance directions; its stated p4 average/maximum constants match the example.",
+    "The finite Gram dual definitions and positive-conic optimizer theorem permit the unit-vector examples/nonnegative Grams used; entrywise comparison is restricted to nonnegative coefficient vectors.",
+    "The correct free-phase symbol and weighted Holder decomposition are supplied unchanged unassigned inputs; their proofs are not counted as additional assigned reviews."
+  ],
+  "read_limits": [
+    "All public reasons, original-step working and findings checked against complete frozen OLD/NEW target statements/proofs and needed supplied declarations/definitions; no primary-source PDF/image or full upstream proof review.",
+    "No transport/model/provider/probe/export/hidden reasoning/event work. Prospective recovery authorization and unknown aggregate data remain a separate root/dispatcher lane. No source/public/Git/PDF/raw-report changes."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption and release authority"
+}

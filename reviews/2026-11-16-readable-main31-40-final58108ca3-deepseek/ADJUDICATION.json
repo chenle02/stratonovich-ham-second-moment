@@ -1,0 +1,937 @@
+{
+  "review_record_id": "RP068",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS_WITH_NOTES",
+  "native_confidence": "high",
+  "source_revision": "58108ca3065cb408eb13b06cc772fe71de546535",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/notes_stratonovich_ham_second_moment.tex",
+  "source_binding_sha256": "c2749887368c68bce78098ae531ec0ee3e52476095c7af628bf9fec3d7d5fc63",
+  "public_report_sha256": "d6bacb86d61463f2197a92b6f197291a1414598ba4e7659b99be7890537bd929",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_PARTIAL_REQUIRED_PUBLIC_RECONSTRUCTION_ROOT_REVIEWS",
+  "requested_reread_complete": false,
+  "per_proof_reconstruction": {
+    "L:d1-spatial": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R2"
+      ]
+    },
+    "P:d1-upper": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:low-alpha-convolution": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:alpha-one-convolution": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:low-alpha-upper": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "C:d1-first-calibration": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:higher-transfer": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:higher-riesz": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "C:higher-riesz": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:higher-obstructions": {
+      "status": "PARTIAL",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [
+        "Productcounterexamplefeasibilitya1+a2/2>1 isnotreconstructedcorrectly: itsclaimedlowerboundisfalseandnocorrectalternativepublicboundappears. Requiredforstatedproductdivergenceforall1<alpha<2. Sourcecorrect; no privatefill."
+      ],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ],
+      "checked_subarguments": [
+        "planarRieszdivergenceandalpha3/2logthreshold",
+        "conditionalproductBetaintegral/divergencegivenrequiredexponent",
+        "sphereprojectiontod2",
+        "Gaussianfactorapproximation/Fatouandbothwidthspositive"
+      ]
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:d1-spatial",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED (NEW = OLD + headings).",
+        "new_explanations_raw": "JUSTIFIED (roadmap accurately names the three deductions)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 11,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "e83bb6394aaa17f1442799e6e701a6d55cbd0cc9ae96aea0e0ca82a58ed16bc4",
+      "mathematical_check": "The report derives the exact1D Riesz interval maximumc_alpha h^(1-alpha)/(1-alpha), thenmass-oneGaussianaveraginguniforminwidth; spatialwhite givesc_delta/2 directly fromtheGaussianmass. Triangularseparate-chainincrements haveJacobian1. Itsdescendingclosing/openingargument removes exactlyonecovariance atclosings andonlyGreenmassatopenings; thephrase earlier-processed increments iswrong direction(R2), buttheexplicit remaining-pair invariant andtranslation-uniform boundwork. WeightedAGM retainsk^[-(2-alpha)k] andtheexactK_sp constant, whilewhiteopenAGM givesthe matching c_delta constant. Independentpairwidths andtworoots arerespected.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 31,
+      "old_statement_lf": [
+        4809,
+        4829
+      ],
+      "old_proof_lf": [
+        4831,
+        4878
+      ],
+      "old_statement_sha256": "6030e175b36599e194da1de182fd99aec121a02d5e5ccddfa51efd4c22dfbb0a",
+      "old_proof_sha256": "a757c0bdaf6acd4d36e7f52334bbed5e74f75acd86479e2af7e4690fd1b8d7a8",
+      "new_statement_lf": [
+        5359,
+        5379
+      ],
+      "new_proof_lf": [
+        5381,
+        5442
+      ],
+      "new_statement_sha256": "6030e175b36599e194da1de182fd99aec121a02d5e5ccddfa51efd4c22dfbb0a",
+      "new_proof_sha256": "a03d25b79973fe4f52a03e10209f9cd6c21c8acd53803294869558a209646c3d",
+      "old_delivered_view_statement_lf": [
+        60,
+        80
+      ],
+      "old_delivered_view_proof_lf": [
+        82,
+        129
+      ],
+      "new_delivered_view_statement_lf": [
+        60,
+        80
+      ],
+      "new_delivered_view_proof_lf": [
+        82,
+        143
+      ]
+    },
+    {
+      "proof_id": "P:d1-upper",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 30,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "64e7f668923a137fca3c746b7875a3e8f6250f49562c739019f91b7cfd0e9026",
+      "mathematical_check": "The public proof constructs the FULLsymmetrictimepairing sum,F_k, integratesdisjointpaircoordinates tocubeP_k(Zt^(2-alpha0))^k, partitionsbytwochainorders usingm!n! andcountsPk=(2k)!/(2^k k!) plus thebinomialsplit sum. Multiplyingthecommonspatialmaximum givesexact(2ZKsp)^k t^(beta k)/(k! k^(bk)); factorialconversion givesq=b+1. Fixed-orderL2inputs underH andtheexplicitCS productbound passregularization, includingemptychains, thennonnegativeellq series yieldsCdir=q(2ZKsp)^(1/q) andexactkappa. Symmetry isnotwronglyassigned toanindividualdiagram.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 32,
+      "old_statement_lf": [
+        4890,
+        4902
+      ],
+      "old_proof_lf": [
+        4904,
+        4972
+      ],
+      "old_statement_sha256": "c03e9490a9bf1c22f27a19251e6d4da80d68ac725ded37596053e778b47b1894",
+      "old_proof_sha256": "ab6d0746fbbb5cd8430a00176b21521848eea62ee31480f74277ba85bf9c9664",
+      "new_statement_lf": [
+        5454,
+        5466
+      ],
+      "new_proof_lf": [
+        5468,
+        5550
+      ],
+      "new_statement_sha256": "c03e9490a9bf1c22f27a19251e6d4da80d68ac725ded37596053e778b47b1894",
+      "new_proof_sha256": "f0389818815bbd8627271bad96da2819501af9fb90b16dff1d698108d1ab7ed5",
+      "old_delivered_view_statement_lf": [
+        141,
+        153
+      ],
+      "old_delivered_view_proof_lf": [
+        155,
+        223
+      ],
+      "new_delivered_view_statement_lf": [
+        155,
+        167
+      ],
+      "new_delivered_view_proof_lf": [
+        169,
+        251
+      ]
+    },
+    {
+      "proof_id": "L:low-alpha-convolution",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 47,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "e313e6c87b32cd82e7789c850f08af845fcae9a595a2376cee90ec2e0459e794",
+      "mathematical_check": "The report reconstructs spectralhomogeneity mu(cA)=c^alpha mu(A), finiteVR^alpha ballmasses/nooriginatom,andthe layercake min(h,1/|xi|) integralVh^(1-alpha)/(1-alpha) foralpha<1 withoutaraddensity. Gaussian-weighted spectralfiniteness andtheORDINARYwave Fourier/characteristic formula sin(h|xi|)/|xi| justifyfinite-measureFubini andtheuniformtranslatedconvolutionbound,includingeta0. NonnegativephysicalGamma/G give thelowerbound0; itdoesnotassert positivityoftheoscillatoryintegrand or useadivergent alpha1absoluteenvelope.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 33,
+      "old_statement_lf": [
+        4988,
+        5002
+      ],
+      "old_proof_lf": [
+        5004,
+        5044
+      ],
+      "old_statement_sha256": "11edee4e5244082bf7360487836548ec6de174fbd961ca3d2dd6a5c0b265943e",
+      "old_proof_sha256": "aa93418e819510ba0580d8f9a3d8452708ef750f710080f18723350d983b1de5",
+      "new_statement_lf": [
+        5566,
+        5580
+      ],
+      "new_proof_lf": [
+        5582,
+        5632
+      ],
+      "new_statement_sha256": "11edee4e5244082bf7360487836548ec6de174fbd961ca3d2dd6a5c0b265943e",
+      "new_proof_sha256": "420e937fca1f47c43ffeb6a47dd0bc69eb8a3c866d14c7f8290d2a11ffa6cf15",
+      "old_delivered_view_statement_lf": [
+        239,
+        253
+      ],
+      "old_delivered_view_proof_lf": [
+        255,
+        295
+      ],
+      "new_delivered_view_statement_lf": [
+        267,
+        281
+      ],
+      "new_delivered_view_proof_lf": [
+        283,
+        333
+      ]
+    },
+    {
+      "proof_id": "L:alpha-one-convolution",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 61,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "320a080bfb264dccba6c10e49e791b74ba98b7b6078e2d95dc055bd124822717",
+      "mathematical_check": "The public alpha1proof constructs thepolarRadon measure dr sigma fromsectorhomogeneity andevenness, withsigma massV. Itkeeps Gaussian radialoscillation, writesI_a(h,v) withthecorrect combinedvariance(epsilon+eta)/2, andusesone-dimensional ORDINARYinversion1/(2pi): (g_h*p_2a)(v)=I_a/pi. Massoneheat and0<=g_h<=1/2 yield0<=I_a<=pi/2,then piV/2. Bothantipodalorientations arealreadyinsigma; noextrafactor2 orisotropyisassumed. Allsmoothingparametersincludingeta0arecovered.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 34,
+      "old_statement_lf": [
+        5047,
+        5055
+      ],
+      "old_proof_lf": [
+        5057,
+        5105
+      ],
+      "old_statement_sha256": "bd2c52099ccafdfb91ab15d455310d0f85934f5defef3920210035e86660001a",
+      "old_proof_sha256": "a0db4f853c8de92f6ea1dc91806addd66504e2165004649fb69053b992a73a43",
+      "new_statement_lf": [
+        5635,
+        5643
+      ],
+      "new_proof_lf": [
+        5645,
+        5708
+      ],
+      "new_statement_sha256": "bd2c52099ccafdfb91ab15d455310d0f85934f5defef3920210035e86660001a",
+      "new_proof_sha256": "066e7189559ee44c028e9e4ac56f619bdeddcf5fb0aab0d8e1e270177a2b6863",
+      "old_delivered_view_statement_lf": [
+        298,
+        306
+      ],
+      "old_delivered_view_proof_lf": [
+        308,
+        356
+      ],
+      "new_delivered_view_statement_lf": [
+        336,
+        344
+      ],
+      "new_delivered_view_proof_lf": [
+        346,
+        409
+      ]
+    },
+    {
+      "proof_id": "P:low-alpha-upper",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 77,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "266812e52f0d76fa076ecbd6724ef81b9b9579ce95a43c3ed7a7497d19b3bffb",
+      "mathematical_check": "The report explicitlyuses thedimension-independentdescendingincrementinvariant withtheprior closingbounds V/(1-alpha) orpiV/2, thenopeningAGM toobtainexactK_sp_gen forbothalpha regimes. Thecompletelysummed temporalcounts reuse thePUBLICordinal32workingwithout counting loss. Itretainsd3 Green-widthfirstlimit atfixed boundedcontinuousnoise covariance, mixedGreen covariances/L2Cauchy andL1productlimits beforejointnoisewidth removal; d1/d2useonlythenoise limit. Uniformbounds passfixedorders andthefactorial/seriesargument. ThewhiteagreementV=c_delta/pi→Ksp_gen=c_delta ischecked; alpha1isnotobtainedbylimiting thelowalpha constant.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 35,
+      "old_statement_lf": [
+        5108,
+        5131
+      ],
+      "old_proof_lf": [
+        5133,
+        5189
+      ],
+      "old_statement_sha256": "9f1d43959edf2ec8c220540e76df8f674700228a8cff62a7d8e16d1cc2bcd844",
+      "old_proof_sha256": "9b5d60489bb37f4ef01186547e1b4fd04643d737b8a54950f5c9596210579b34",
+      "new_statement_lf": [
+        5711,
+        5734
+      ],
+      "new_proof_lf": [
+        5736,
+        5807
+      ],
+      "new_statement_sha256": "9f1d43959edf2ec8c220540e76df8f674700228a8cff62a7d8e16d1cc2bcd844",
+      "new_proof_sha256": "d1cd0f82df9a96760fae05635dd1bee0a28f44227e599d8fba659a0f3302ed4f",
+      "old_delivered_view_statement_lf": [
+        359,
+        382
+      ],
+      "old_delivered_view_proof_lf": [
+        384,
+        440
+      ],
+      "new_delivered_view_statement_lf": [
+        412,
+        435
+      ],
+      "new_delivered_view_proof_lf": [
+        437,
+        508
+      ]
+    },
+    {
+      "proof_id": "C:d1-first-calibration",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED (no restructuring in NEW).",
+        "new_explanations_raw": "JUSTIFIED (none added; conditional claim unchanged)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 93,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "787a9a63076c6f1e56154ae1e6ee7e588056fadb35ac275d9811ff8e303a4513",
+      "mathematical_check": "The unchanged calibration ispubliclyderived: onechainlength2k hasincrementbudgett, sothe spatialmaximumuses t/2 andfactor2^-bk. Fullpairing-sum symmetry onONEsimplex givesPk/(2k)!,hence theexact(ZK*/2^(b+1))^k coefficient. Fixed-order/normserieslimits allowevenmean summation andodd0; thepositive series gives C1=q(ZK*/2^(3-alpha))^(1/q). ItcomputesC1/C2=2^[-(4-alpha)/(3-alpha)] andstrict2C1<C2 onlyfornonzeroK*. IntendedsourceL_* comparison remainsCONDITIONALontheactualfirstmeanlowerbound,notanunqualifiedsource-normalizationadoption orfirstmomentconstantidentification.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 36,
+      "old_statement_lf": [
+        5212,
+        5224
+      ],
+      "old_proof_lf": [
+        5226,
+        5246
+      ],
+      "old_statement_sha256": "6e958a94c54646309bc2d042e03a65c0024e6839c7340fb9191a64689001106f",
+      "old_proof_sha256": "9a16ef8dedd9058943dfbf1e1362d875530bae5db1f238340b185e590be2877a",
+      "new_statement_lf": [
+        5830,
+        5842
+      ],
+      "new_proof_lf": [
+        5844,
+        5864
+      ],
+      "new_statement_sha256": "6e958a94c54646309bc2d042e03a65c0024e6839c7340fb9191a64689001106f",
+      "new_proof_sha256": "9a16ef8dedd9058943dfbf1e1362d875530bae5db1f238340b185e590be2877a",
+      "old_delivered_view_statement_lf": [
+        463,
+        475
+      ],
+      "old_delivered_view_proof_lf": [
+        477,
+        497
+      ],
+      "new_delivered_view_statement_lf": [
+        531,
+        543
+      ],
+      "new_delivered_view_proof_lf": [
+        545,
+        565
+      ]
+    },
+    {
+      "proof_id": "P:higher-transfer",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 107,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "a629c3657301f4fcc1c10bdca6784164290329d7b42a664e698d4efe2a85cd1f",
+      "mathematical_check": "The report checks r-conjugacy,delta=alpha-1,delta+a0<1,theta=a0rprime<1,delta r<1 anda=1-delta r/2 in(1/2,1). IndependentendpointnoisewidthscombinebyheatandarecoveredbytheADDITIONALspatial-maximumhypothesis. Closingpowersh^-delta arekept,notborrowedfromthelowalpha maximum. Holderoncountingpairings×timeLebesgue, exactDirichletgammaquotients withterminalgap1, logconvexdenominatorat1+ak andtheexplicitΓlowerbound/D_a givethecorrectfactorialpowers. FullysummedtemporalHolderpairingsgiveZ_theta andm!n!,andPk<=2^k k!,opening2^k,split3^k giveK=12M[Γ(1-delta r)D_a]^(1/r) Ztheta^(1/rprime),timebeta andfactorialq. Green/noiselimits andpositivefullseries areexplicitunderstandingH,not alpha<=1.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 37,
+      "old_statement_lf": [
+        5318,
+        5338
+      ],
+      "old_proof_lf": [
+        5340,
+        5461
+      ],
+      "old_statement_sha256": "727955bd321c001ab7f4f5b1d3456bcd3a1db22af858048b9c09313083137f1a",
+      "old_proof_sha256": "28b7e40292c9184059dbead83dcf89d5411d63a5994bcaf1a53a419ada57d855",
+      "new_statement_lf": [
+        5936,
+        5956
+      ],
+      "new_proof_lf": [
+        5958,
+        6098
+      ],
+      "new_statement_sha256": "727955bd321c001ab7f4f5b1d3456bcd3a1db22af858048b9c09313083137f1a",
+      "new_proof_sha256": "1a4ec1238140e30731d53433c0cc346b585761809ac03dfbaaea1251d883e1af",
+      "old_delivered_view_statement_lf": [
+        569,
+        589
+      ],
+      "old_delivered_view_proof_lf": [
+        591,
+        712
+      ],
+      "new_delivered_view_statement_lf": [
+        637,
+        657
+      ],
+      "new_delivered_view_proof_lf": [
+        659,
+        799
+      ]
+    },
+    {
+      "proof_id": "L:higher-riesz",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 129,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "030b16ac147d6258f3c68360ab3df70dc945a3ba7cb5019f579fdf6b88b5d83e",
+      "mathematical_check": "The report computes thed3 sphericalRiesz average anditsclosedformula, monotonicitybelowrho1byconvexchordbound andabove1byincreasingdistances, yielding optimalM3=c2^(1-alpha)/(2-alpha). Itchecks planar translatedsmall-ballmass<=2R^(3/2) throughinteriorbounded-density andboundaryslices, thenlayercakeatR1/4 givestheexplicitadmissibleM2 foralpha<3/2. A fewellipsesinthearithmeticaside donotremove theactualheadintegral/finalconstantcalculation. Gaussianconvolutioncombinesindependentwidthsandpreservessupremum. Pointwisenonzerosingular-Riesz approximateidentity andFatouatmaxshift proveM3optimality, notM2optimality.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 38,
+      "old_statement_lf": [
+        5466,
+        5475
+      ],
+      "old_proof_lf": [
+        5477,
+        5536
+      ],
+      "old_statement_sha256": "f0af2f77af6a342033bf1053fb7ffbeeb93e5186745edbd9521422fac55fe74f",
+      "old_proof_sha256": "1eba12037f70af2d84af66ced212bf07c69da99a859cd67f909a2fdcb77ce45f",
+      "new_statement_lf": [
+        6103,
+        6112
+      ],
+      "new_proof_lf": [
+        6114,
+        6190
+      ],
+      "new_statement_sha256": "f0af2f77af6a342033bf1053fb7ffbeeb93e5186745edbd9521422fac55fe74f",
+      "new_proof_sha256": "a585a455050cb648a493ec65848e8724a1821dd400f41802eaa77fba2679aafc",
+      "old_delivered_view_statement_lf": [
+        717,
+        726
+      ],
+      "old_delivered_view_proof_lf": [
+        728,
+        787
+      ],
+      "new_delivered_view_statement_lf": [
+        804,
+        813
+      ],
+      "new_delivered_view_proof_lf": [
+        815,
+        891
+      ]
+    },
+    {
+      "proof_id": "C:higher-riesz",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED (unchanged).",
+        "new_explanations_raw": "JUSTIFIED (none added)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 145,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "9b340bfff086cb53087dbd1c3c1a5e5946dbb9e2e52a4f281b00eed41607c561",
+      "mathematical_check": "The unchangedcorollaryisreconstructed: positiveGaussianmixture oftheRieszkernel, absoluteSchwartz-autocorrelation integrationunderalpha<d andrapiddecaypermitTonelli/Fubini andyieldpositive definiteness. ActualRieszrangesmeetsubcriticalH andthepreviousspatial-maximumlemma, so theconditionaltransferappliesatM_d. No newscope forarbitraryhomogeneouscovariances orprimarysourceproofcertification isasserted.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 39,
+      "old_statement_lf": [
+        5538,
+        5543
+      ],
+      "old_proof_lf": [
+        5545,
+        5568
+      ],
+      "old_statement_sha256": "e3ec2cce53fead16a61dd2f14ce5011b6c9f1e160fa8c35819a7428bb174266c",
+      "old_proof_sha256": "85bb186c2587e485a0b51bd8cab957ccfe0fd5faaf13fc280e82895bf599754f",
+      "new_statement_lf": [
+        6192,
+        6197
+      ],
+      "new_proof_lf": [
+        6199,
+        6222
+      ],
+      "new_statement_sha256": "e3ec2cce53fead16a61dd2f14ce5011b6c9f1e160fa8c35819a7428bb174266c",
+      "new_proof_sha256": "85bb186c2587e485a0b51bd8cab957ccfe0fd5faaf13fc280e82895bf599754f",
+      "old_delivered_view_statement_lf": [
+        789,
+        794
+      ],
+      "old_delivered_view_proof_lf": [
+        796,
+        819
+      ],
+      "new_delivered_view_statement_lf": [
+        893,
+        898
+      ],
+      "new_delivered_view_proof_lf": [
+        900,
+        923
+      ]
+    },
+    {
+      "proof_id": "P:higher-obstructions",
+      "author_reconstruction_status": "PARTIAL",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED (the two-step split and the sentence in Step 2 describing the transfer are accurate)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 157,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "aa1a86ae983026d9ec678532e5011fd8014738086f326144bdb9450f9dd3bdb5",
+      "mathematical_check": "The report correctlyreconstructs planarRiesz boundarywedge divergencewithcoefficientc/(3sqrt2),thresholdalpha>=3/2andlogendpoint. Italsogives theproductparameters,localintegrability/PD/temperedness andtheEXACTformula a1+a2/2=(1+max+2alpha)/4, butits ONLYverification oftheCRITICALproductdivergence exponent>1 usesaFALSElowerbound(R1). Nocorrectalternativepublicboundisgiven; root/sourcecorrectionisnotinserted, sothistargetisPARTIAL for thatrequiredfeasibilitystep. The remainingconditionalproductintegral/betafactor,u-exponent criterion,sphere-to-diskprojection andGaussianfactorizedapproximation/Fatou (includingbothwidthspositive) arecorrectpublicsubarguments. Thisobstructsonlytheadditionalspatialsupremummethod,notexistence,momentfiniteness orfulltime-scale theorem.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": true,
+      "global_main_ordinal": 40,
+      "old_statement_lf": [
+        5576,
+        5582
+      ],
+      "old_proof_lf": [
+        5584,
+        5634
+      ],
+      "old_statement_sha256": "8788ed9524cb0514fcdb8909ec523205e7a11f70d18010b80294bfb4d766502f",
+      "old_proof_sha256": "d1c7d4fb528aabb872b231271198bcac8bcc952d414eabe4b3b9fd7a791d435c",
+      "new_statement_lf": [
+        6230,
+        6236
+      ],
+      "new_proof_lf": [
+        6238,
+        6300
+      ],
+      "new_statement_sha256": "8788ed9524cb0514fcdb8909ec523205e7a11f70d18010b80294bfb4d766502f",
+      "new_proof_sha256": "72256d5015302aabf94cf379faed90a9db587999ecfb3fc3e2cb60c2c9dabf55",
+      "old_delivered_view_statement_lf": [
+        827,
+        833
+      ],
+      "old_delivered_view_proof_lf": [
+        835,
+        885
+      ],
+      "new_delivered_view_statement_lf": [
+        931,
+        937
+      ],
+      "new_delivered_view_proof_lf": [
+        939,
+        1001
+      ]
+    }
+  ],
+  "mathematical_checks": [
+    "The report derives the exact1D Riesz interval maximumc_alpha h^(1-alpha)/(1-alpha), thenmass-oneGaussianaveraginguniforminwidth; spatialwhite givesc_delta/2 directly fromtheGaussianmass. Triangularseparate-chainincrements haveJacobian1. Itsdescendingclosing/openingargument removes exactlyonecovariance atclosings andonlyGreenmassatopenings; thephrase earlier-processed increments iswrong direction(R2), buttheexplicit remaining-pair invariant andtranslation-uniform boundwork. WeightedAGM retainsk^[-(2-alpha)k] andtheexactK_sp constant, whilewhiteopenAGM givesthe matching c_delta constant. Independentpairwidths andtworoots arerespected.",
+    "The public proof constructs the FULLsymmetrictimepairing sum,F_k, integratesdisjointpaircoordinates tocubeP_k(Zt^(2-alpha0))^k, partitionsbytwochainorders usingm!n! andcountsPk=(2k)!/(2^k k!) plus thebinomialsplit sum. Multiplyingthecommonspatialmaximum givesexact(2ZKsp)^k t^(beta k)/(k! k^(bk)); factorialconversion givesq=b+1. Fixed-orderL2inputs underH andtheexplicitCS productbound passregularization, includingemptychains, thennonnegativeellq series yieldsCdir=q(2ZKsp)^(1/q) andexactkappa. Symmetry isnotwronglyassigned toanindividualdiagram.",
+    "The report reconstructs spectralhomogeneity mu(cA)=c^alpha mu(A), finiteVR^alpha ballmasses/nooriginatom,andthe layercake min(h,1/|xi|) integralVh^(1-alpha)/(1-alpha) foralpha<1 withoutaraddensity. Gaussian-weighted spectralfiniteness andtheORDINARYwave Fourier/characteristic formula sin(h|xi|)/|xi| justifyfinite-measureFubini andtheuniformtranslatedconvolutionbound,includingeta0. NonnegativephysicalGamma/G give thelowerbound0; itdoesnotassert positivityoftheoscillatoryintegrand or useadivergent alpha1absoluteenvelope.",
+    "The public alpha1proof constructs thepolarRadon measure dr sigma fromsectorhomogeneity andevenness, withsigma massV. Itkeeps Gaussian radialoscillation, writesI_a(h,v) withthecorrect combinedvariance(epsilon+eta)/2, andusesone-dimensional ORDINARYinversion1/(2pi): (g_h*p_2a)(v)=I_a/pi. Massoneheat and0<=g_h<=1/2 yield0<=I_a<=pi/2,then piV/2. Bothantipodalorientations arealreadyinsigma; noextrafactor2 orisotropyisassumed. Allsmoothingparametersincludingeta0arecovered.",
+    "The report explicitlyuses thedimension-independentdescendingincrementinvariant withtheprior closingbounds V/(1-alpha) orpiV/2, thenopeningAGM toobtainexactK_sp_gen forbothalpha regimes. Thecompletelysummed temporalcounts reuse thePUBLICordinal32workingwithout counting loss. Itretainsd3 Green-widthfirstlimit atfixed boundedcontinuousnoise covariance, mixedGreen covariances/L2Cauchy andL1productlimits beforejointnoisewidth removal; d1/d2useonlythenoise limit. Uniformbounds passfixedorders andthefactorial/seriesargument. ThewhiteagreementV=c_delta/pi→Ksp_gen=c_delta ischecked; alpha1isnotobtainedbylimiting thelowalpha constant.",
+    "The unchanged calibration ispubliclyderived: onechainlength2k hasincrementbudgett, sothe spatialmaximumuses t/2 andfactor2^-bk. Fullpairing-sum symmetry onONEsimplex givesPk/(2k)!,hence theexact(ZK*/2^(b+1))^k coefficient. Fixed-order/normserieslimits allowevenmean summation andodd0; thepositive series gives C1=q(ZK*/2^(3-alpha))^(1/q). ItcomputesC1/C2=2^[-(4-alpha)/(3-alpha)] andstrict2C1<C2 onlyfornonzeroK*. IntendedsourceL_* comparison remainsCONDITIONALontheactualfirstmeanlowerbound,notanunqualifiedsource-normalizationadoption orfirstmomentconstantidentification.",
+    "The report checks r-conjugacy,delta=alpha-1,delta+a0<1,theta=a0rprime<1,delta r<1 anda=1-delta r/2 in(1/2,1). IndependentendpointnoisewidthscombinebyheatandarecoveredbytheADDITIONALspatial-maximumhypothesis. Closingpowersh^-delta arekept,notborrowedfromthelowalpha maximum. Holderoncountingpairings×timeLebesgue, exactDirichletgammaquotients withterminalgap1, logconvexdenominatorat1+ak andtheexplicitΓlowerbound/D_a givethecorrectfactorialpowers. FullysummedtemporalHolderpairingsgiveZ_theta andm!n!,andPk<=2^k k!,opening2^k,split3^k giveK=12M[Γ(1-delta r)D_a]^(1/r) Ztheta^(1/rprime),timebeta andfactorialq. Green/noiselimits andpositivefullseries areexplicitunderstandingH,not alpha<=1.",
+    "The report computes thed3 sphericalRiesz average anditsclosedformula, monotonicitybelowrho1byconvexchordbound andabove1byincreasingdistances, yielding optimalM3=c2^(1-alpha)/(2-alpha). Itchecks planar translatedsmall-ballmass<=2R^(3/2) throughinteriorbounded-density andboundaryslices, thenlayercakeatR1/4 givestheexplicitadmissibleM2 foralpha<3/2. A fewellipsesinthearithmeticaside donotremove theactualheadintegral/finalconstantcalculation. Gaussianconvolutioncombinesindependentwidthsandpreservessupremum. Pointwisenonzerosingular-Riesz approximateidentity andFatouatmaxshift proveM3optimality, notM2optimality.",
+    "The unchangedcorollaryisreconstructed: positiveGaussianmixture oftheRieszkernel, absoluteSchwartz-autocorrelation integrationunderalpha<d andrapiddecaypermitTonelli/Fubini andyieldpositive definiteness. ActualRieszrangesmeetsubcriticalH andthepreviousspatial-maximumlemma, so theconditionaltransferappliesatM_d. No newscope forarbitraryhomogeneouscovariances orprimarysourceproofcertification isasserted.",
+    "The report correctlyreconstructs planarRiesz boundarywedge divergencewithcoefficientc/(3sqrt2),thresholdalpha>=3/2andlogendpoint. Italsogives theproductparameters,localintegrability/PD/temperedness andtheEXACTformula a1+a2/2=(1+max+2alpha)/4, butits ONLYverification oftheCRITICALproductdivergence exponent>1 usesaFALSElowerbound(R1). Nocorrectalternativepublicboundisgiven; root/sourcecorrectionisnotinserted, sothistargetisPARTIAL for thatrequiredfeasibilitystep. The remainingconditionalproductintegral/betafactor,u-exponent criterion,sphere-to-diskprojection andGaussianfactorizedapproximation/Fatou (includingbothwidthspositive) arecorrectpublicsubarguments. Thisobstructsonlytheadditionalspatialsupremummethod,notexistence,momentfiniteness orfulltime-scale theorem."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "proof_id": "P:higher-obstructions",
+      "classification": "incorrect required public feasibility inequality, source correct",
+      "source_new_global_lf": [
+        6256,
+        6257
+      ],
+      "source_old_global_lf": [
+        5594,
+        5595
+      ],
+      "old": "a1+a2/2=(1+m+2alpha)/4 >=(2+3alpha)/4>1 form=max(2-alpha,alpha-1)",
+      "new": "ThecorrectSOURCE/AUTHORcheck ism>=2-alpha, giving(1+m+2alpha)/4 >=(3+alpha)/4>1. ThisisnotpresentintheactualpublicreportandisNOTcountedasobtainedreviewerworking.",
+      "contrary_calculation": "Atalpha3/2,m1/2,theexactexpressionis9/8. Theclaimedlowerboundis13/8;9/8>=13/8isfalse.",
+      "disposition": "NativeCOMPLETE/PWNhighunchanged; author-sidePARTIALforthiscoreproduct-exponentverification. Othercorrectsubargumentsretained; no sourceedit/callback. Nootherassignedtargetinthispacketuses thisobstructionasaproofinput.",
+      "report_lf": 166
+    },
+    {
+      "id": "R2",
+      "proof_id": "L:d1-spatial",
+      "classification": "report-only integration-order wording slip",
+      "old": "z usesonlyearlier-processed increments",
+      "new": "z useslower-label increments,whichareSTILLUNINTEGRATEDinthe descendinglabelorder",
+      "disposition": "Thepublicremaining-pair/opening-closing invariant andtranslation-uniform convolution bound arecorrect, so theactualspatialeliminationdeductionisreconstructed. Sourcewordingiscorrect.",
+      "report_lf": 22
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": true,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 25213,
+      "sha256": "d6bacb86d61463f2197a92b6f197291a1414598ba4e7659b99be7890537bd929"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 4610,
+      "sha256": "fa573481b4889b02e797d29fd1c96d0fffc1a617255c6879528d12fd2176a331"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 14004,
+      "sha256": "732d6fb1f49dff6fbf589945f6d63c9c3b0bf2b263948353e1148463a92e07ca"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 8312,
+      "sha256": "c2749887368c68bce78098ae531ec0ee3e52476095c7af628bf9fec3d7d5fc63"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 15204,
+      "sha256": "4d6c0d5e4aa280f5d971fcb37b75da14644a925e1b9ae824c583d5c0114645ee"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 9189,
+      "sha256": "ca1d7faaf5dcba05743c90c7c86fe5557d57c115212c8cab38aa82946fc2815b"
+    },
+    {
+      "path": "inputs/old-target-1.txt",
+      "bytes": 46033,
+      "sha256": "e33001ea260e0bc77db7a5a28cc67f1dce0bfb3c66dbe644c62d2247ca50fa91"
+    },
+    {
+      "path": "inputs/new-target-1.txt",
+      "bytes": 49966,
+      "sha256": "88191cdb4dacefc728b7d7974fe83a67f791264b3d64a8e5db7ef2804178caf9"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-canonical-expansion.txt",
+      "bytes": 1687,
+      "sha256": "85b10629c4ef8076f1137fbcc500b675f1778e844fb0db97b4c171f836155b5b"
+    },
+    {
+      "path": "inputs/context-baseline-main01-10-1.txt",
+      "bytes": 64045,
+      "sha256": "2876b6a53acd51f684b1de58ef10238ed193583de14ef61036ad7c3e3a26fb90"
+    },
+    {
+      "path": "inputs/context-baseline-main11-20-1.txt",
+      "bytes": 12252,
+      "sha256": "87b66ce2a59939992291eda3b0523f59101d6ac5929bdbe546c3bbb3483acca2"
+    },
+    {
+      "path": "inputs/context-baseline-main11-20-2.txt",
+      "bytes": 39000,
+      "sha256": "9f2eac52bc8982be9cc33856fc2ee7c6b92ceb65b4586c87e361afe5ad0f44f2"
+    },
+    {
+      "path": "inputs/context-T-first.txt",
+      "bytes": 1204,
+      "sha256": "f4af10dbebc01a0ad1a57666e937f5e849ab3e9d6d9ec8a845729eaaabf74fe8"
+    },
+    {
+      "path": "inputs/context-T-intro-second-moment.txt",
+      "bytes": 637,
+      "sha256": "e896c68cc58d27ee3ed961c533d45da45ca5e8001aa2395d9c905249390d8aaf"
+    },
+    {
+      "path": "inputs/context-E-kappa.txt",
+      "bytes": 126,
+      "sha256": "7dfe2740d1848a8a0d2672ac161275bd4d1068799e7a71dee3c86cc7cd0c5e78"
+    },
+    {
+      "path": "inputs/context-R-G1-scope.txt",
+      "bytes": 1267,
+      "sha256": "eeaa62160d73bed66725fb641491847e06157b634c5a68fded1d9fc59ff543f4"
+    },
+    {
+      "path": "inputs/context-intrinsic-constant.txt",
+      "bytes": 21834,
+      "sha256": "820990dec2c6d3caa7c670b26836ed004c74c12028ce3f68ca91751317689084"
+    },
+    {
+      "path": "inputs/context-P-nogo-06.txt",
+      "bytes": 426,
+      "sha256": "ca7fd0867e8a9536001a79720d23b5395b777607c1ae8cdaa29257e8ecae930d"
+    },
+    {
+      "path": "inputs/context-P-nogo-08.txt",
+      "bytes": 437,
+      "sha256": "059c5ae03d7e0f44a1cf272160a8c281ae9a1bbf1513062344e42a247370a040"
+    },
+    {
+      "path": "inputs/context-P-nogo-10.txt",
+      "bytes": 748,
+      "sha256": "0ff3899f74a310c97b68d1d57243b68cb808619b2fd4dbacdbac7b2fe4eb79f2"
+    }
+  ],
+  "input_identity_checks": "All source/context payload bytes independently matched exact pinned Git WHOLE_FILE ordeclared GLOBAL LF selections; fullMAIN/baseline hashes verified; every delivered complete OLD/NEWstatement/proof matched GLOBAL LF and SHA plusviewoffset. FullMAIN bytes usedforidentity,notfullMAIN mathematicalcoverage.",
+  "source_currentness": {
+    "covered_launch_revision": "58108ca3065cb408eb13b06cc772fe71de546535",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "limit": "Only this exact assigned source versuscdde and supplied context; no older report rebinding, unexamined successor or whole-book seal."
+  },
+  "read_limits": [
+    "Only assigned GLOBAL literal-main ordinals[31, 40] mathematicallyadjudicated here. Complete scientific OLD/NEWtargetframes readwithbaselinecomparisons; genuinelyneeded suppliedcontext statements checked. Noinput/includeexpansion,nocontextproofscounted,andno065–067publicreportsread.",
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority",
+  "root_reviewed_specific_coverage_point": "RootagreedPARTIALforfalsepublicproduct-feasibilityboundprovidednofull-reportalternativeexists; helperreadFULLactualreportandfoundnone. Root/sourcecorrectscalarboundisnotinsertedasnativeworking.",
+  "assigned_global_main_ordinals": [
+    31,
+    40
+  ],
+  "main_source_identity": {
+    "source_revision": "58108ca3065cb408eb13b06cc772fe71de546535",
+    "full_main_sha256": "85a7d3e9e2402a1e763391dea691d1b0c1e3f877974395f3939a59f5fd066901",
+    "full_main_bytes": 432976,
+    "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+    "baseline_full_main_sha256": "3e6fa584fed7e76e9bec44f590bee7cbba645594d633693e8e4297cb87b7148d",
+    "baseline_full_main_bytes": 398978,
+    "full_main_file_delivered_to_reviewer": false,
+    "delivery": "Exact declared scientific GLOBAL LF selections only; complete assigned statements/proofs and required definitions. Context proofs explicitlyUNASSIGNED."
+  },
+  "delivered_target_views": [
+    {
+      "path": "inputs/old-target-1.txt",
+      "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+      "source_global_lf": [
+        4750,
+        5657
+      ],
+      "sha256": "e33001ea260e0bc77db7a5a28cc67f1dce0bfb3c66dbe644c62d2247ca50fa91",
+      "bytes": 46033,
+      "role": "ASSIGNED OLD scientific target block. Only global main proof ordinals 31–40 assigned; all complete declarations/proofs and intervening scientific definitions retained."
+    },
+    {
+      "path": "inputs/new-target-1.txt",
+      "source_revision": "58108ca3065cb408eb13b06cc772fe71de546535",
+      "source_global_lf": [
+        5300,
+        6323
+      ],
+      "sha256": "88191cdb4dacefc728b7d7974fe83a67f791264b3d64a8e5db7ef2804178caf9",
+      "bytes": 49966,
+      "role": "ASSIGNED NEW scientific target block. Only global main proof ordinals 31–40 assigned; all complete declarations/proofs and intervening scientific definitions retained."
+    }
+  ]
+}

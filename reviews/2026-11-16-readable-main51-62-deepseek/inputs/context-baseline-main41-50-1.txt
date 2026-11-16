@@ -1,0 +1,1444 @@
+\section{Riesz bounds by interpolation with static noise}
+\label{S:static-holder}
+
+This alternative argument concerns isotropic Riesz covariance in dimensions two
+and three. It does not use the preceding conditional proposition, settle general
+anisotropic covariance, or identify the sharp constant. The full upper and
+intrinsic formula use separate arguments.
+
+We use the static Stratonovich model of Chen--Hu as one input and the
+space-degree-one estimate of Section~\ref{S:d1-upper} as the other. The static
+source allows nonnegative generalized covariances, not only Riesz functions: see
+its standing assumptions (1.2)--(1.3), p.~2145, and its explicit
+generalized-covariance convention (2.18), p.~2152,
+in~\cite{chen.hu:25:hyperbolic}. In the latter convention every covariance
+factor is heat regularized before its defining limit. A nonnegative, even,
+positive-definite tempered Radon measure is such a generalized covariance. In
+each application below we separately verify its homogeneity range and static
+Dalang condition before using the source's quantitative coefficient estimates
+(5.1) and (5.15). Positive definiteness of a weighted endpoint is proved in
+Lemma~\ref{L:planar-endpoints}, or is an explicit assumption in
+Hypothesis~\ref{H:three-endpoints}; weighting a measure alone is not being used
+to assert that property. Chen's variational finiteness theorem supplies only
+finiteness of the static constant, not a coefficient-rate theorem.
+
+For $d \in \{2,3\}$, $c > 0$, and $0 < \lambda < \min\{2,d\}$, write
+\[
+  \gamma_\lambda(x)=c|x|^{-\lambda},\qquad
+  \gamma_{\lambda,\epsilon}=p_\epsilon*\gamma_\lambda.
+\]
+All these covariances use the same amplitude $c$ and Gaussian convention. They
+are nonnegative, locally integrable, and homogeneous. Their nonnegative
+definiteness follows from
+\[
+  \gamma_\lambda(x)=\frac{c}{\Gamma(\lambda/2)}
+  \int_0^\infty s^{\lambda/2-1}e^{-s|x|^2}\ud s.
+\]
+Indeed, each Gaussian is positive definite. For a Schwartz autocorrelation
+$\psi$, the integral $\int |x|^{-\lambda}|\psi(x)|\ud x$ is finite by $\lambda <
+d$ and rapid decay. Tonelli with $|\psi|$, followed by Fubini, therefore
+justifies the positive Gaussian mixture as a tempered distribution. The source
+hypotheses for the Riesz covariances below are thus satisfied.
+
+\begin{lemma}[Static coefficient input]\label{L:static-holder-input}
+  Let $U_n(t,x)$ be the ordered Stratonovich integrals for static Gaussian noise
+  with covariance $\gamma_\chi$, where $d \in \{2,3\}$ and $1 < \chi < 2$. Put
+  $U_0 = 1$ and
+  \[
+    B_k(t)=\sum_{m=0}^{2k}\E[U_m(t,x)U_{2k-m}(t,x)].
+  \]
+  Then $B_0 = 1$, and there is a finite constant $C_{\rm st} = C_{\rm
+  st}(\chi,c,d) > 0$ such that
+  \begin{equation}\label{E:static-holder-input}
+    0\le B_k(t)\le
+    \frac{C_{\rm st}^{\,k}t^{(4-\chi)k}}{(k!)^{3-\chi}},
+    \qquad k\ge1,\quad t>0.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  The static solution has data $(1,0)$ and wave operator $\Delta$, as here. The
+  degree satisfies $\chi < \min\{2,d\}$, so the Riesz covariance meets the
+  source's Dalang condition. From
+  Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~3.8(i), p.~2165}, the
+  fixed-order integrals exist in $L^2$. Their product rule and Wick expectation
+  formula in that source's (2.17) and (2.19), pp.~2151--2152, identify $B_k$
+  with the complete nonnegative sum over the $2k+1$ splits and every pairing of
+  the $2k$ vertices. In particular, it includes within-chain pairs; no
+  orthogonality of different orders is asserted. Empty chains contribute the
+  factor one.
+
+  From~\cite{chen.hu:25:hyperbolic}*{(5.1), p.~2173, and (5.15), p.~2180},
+  specialized to $p = 2$, we have
+  \[
+    B_k(t)=t^{(4-\chi)k}B_k(1),\qquad
+    \limsup_{k\to\infty}\frac1k
+    \log\left((k!)^{3-\chi}B_k(1)\right)<\infty.
+  \]
+  Only the finite upper coefficient rate from the latter formula is used. Choose
+  $R > 0$ larger than this upper limit. For some $k_0 \ge 1$,
+  $(k!)^{3-\chi}B_k(1) \le e^{Rk}$ for all $k \ge k_0$. Each of the remaining
+  coefficients is finite by the fixed-order $L^2$ property. Increase $e^R$, if
+  necessary, to a finite positive $C_{\rm st}$ that also dominates
+  $\left((k!)^{3-\chi}B_k(1)\right)^{1/k}$ for $1 \le k < k_0$. Homogeneity
+  gives~\eqref{E:static-holder-input}. The source results are imported inputs;
+  this finite-order enlargement is the only deduction about their constant
+  needed here. This proves Lemma~\ref{L:static-holder-input}.
+\end{proof}
+
+\begin{proposition}[Interpolation bound for Riesz covariance]
+  \label{P:static-holder-upper}
+  Suppose that $d \in \{2,3\}$, $c > 0$, $0 < \alpha_0 < 1$, and $1 < \alpha <
+  2-\alpha_0$. Let the spatial covariance be $\gamma_\alpha(x) =
+  c|x|^{-\alpha}$, and let $A_k(t)$ denote the full total-order-$2k$ coefficient
+  of the second moment, as in Proposition~\ref{P:mixed}. Choose and fix
+  \begin{equation}\label{E:static-holder-parameters}
+    \alpha_0<\vartheta<2-\alpha,\qquad
+    b_0=\frac{\alpha_0}{\vartheta},\qquad
+    \chi=\frac{\alpha-\vartheta}{1-\vartheta}.
+  \end{equation}
+  Let $V_1$ be the spectral mass of the unit ball for $\gamma_1$, in the
+  convention of Lemma~\ref{L:alpha-one-convolution}, and define
+  \[
+    Z_{b_0}=\frac2{(1-b_0)(2-b_0)},\qquad
+    C_{\rm low}=2Z_{b_0}\pi V_1,\qquad
+    C=C_{\rm low}^{\,\vartheta}C_{\rm st}^{\,1-\vartheta},
+    \qquad q=3-\alpha,
+  \]
+  where $C_{\rm st}$ is supplied by Lemma~\ref{L:static-holder-input} for the
+  displayed $\chi$. Then, for every $k \ge 1$, $t > 0$, and $x \in \R^d$,
+  \begin{equation}\label{E:static-holder-upper}
+    A_k(t)\le\frac{C^kt^{(4-\alpha-\alpha_0)k}}{(k!)^{3-\alpha}},
+    \qquad
+    \E u^2(t,x)\le\exp\left(qC^{1/q}t^\kappa\right).
+  \end{equation}
+  The finite constants may depend on $\alpha,\alpha_0,c,d$ and the fixed choice
+  of $\vartheta$, but not on $k,t,x$.
+\end{proposition}
+
+\begin{proof}
+  The interval for $\vartheta$ is nonempty by $\alpha+\alpha_0 < 2$. Since
+  $\alpha > 1$, we have $0 < \vartheta < 1$, $0 < b_0 < 1$, and
+  \[
+    \chi-1=\frac{\alpha-1}{1-\vartheta}>0,\qquad
+    2-\chi=\frac{2-\alpha-\vartheta}{1-\vartheta}>0.
+  \]
+  Thus, both endpoint covariances are admissible in dimensions two and three.
+  Moreover,
+  \begin{equation}\label{E:static-holder-affine}
+    \alpha=\vartheta+(1-\vartheta)\chi,
+    \qquad \alpha_0=\vartheta b_0.
+  \end{equation}
+
+  Fix $k \ge 1$ and $t > 0$. Use a common spatial noise width $\epsilon > 0$ and
+  the target's temporal cutoff width $\delta > 0$. The covariance on each
+  pairing edge has spatial width $2\epsilon$. In dimension three first use
+  $G_{h,\eta} = p_\eta*G_h$ with $\eta > 0$; in dimension two take $\eta = 0$.
+  For each split $m+n = 2k$ and pairing $D \in \Pi_k$, use the two separate
+  roots, increments $h_l = s_l-s_{p(l)}$, and positions $x_l$ of
+  Section~\ref{S:d1-upper}. Define a common positive measure $\nu_{k,t,\eta}$ by
+  \[
+    \int\Phi\ud\nu_{k,t,\eta}
+    :=\sum_{m=0}^{2k}\sum_{D\in\Pi_k}
+    \int_{[0,t]^m_<\times[0,t]^{2k-m}_<}\ud s
+    \int\Phi(m,D,s,y)\prod_{l=1}^{2k}G_{h_l,\eta}(\ud y_l).
+  \]
+  Here $y_l$ are vector increments and each $x_l$ is their cumulative sum within
+  its own chain. Empty blocks have empty products and their own root
+  conventions. This measure is finite: the spatial mass at fixed times is
+  $\prod_lh_l$, the time domains are bounded, and both discrete sums are finite.
+  It is the same measure for all three covariance profiles.
+
+  For $\lambda \in \{1,\alpha,\chi\}$ and $b > 0$, put
+  \[
+    H_\lambda=\prod_{(i,j)\in D}
+    \gamma_{\lambda,2\epsilon}(x_i-x_j),\qquad
+    T_b=\prod_{(i,j)\in D}|s_i-s_j|^{-b}.
+  \]
+  The pointwise identity $\gamma_\alpha =
+  \gamma_1^{\vartheta}\gamma_\chi^{1-\vartheta}$ retains the amplitude $c$,
+  since $c^\vartheta c^{1-\vartheta} = c$. H\"older's inequality on the Gaussian
+  probability measure gives
+  \[
+    \gamma_{\alpha,2\epsilon}(z)
+    \le\gamma_{1,2\epsilon}(z)^\vartheta
+    \gamma_{\chi,2\epsilon}(z)^{1-\vartheta},
+    \qquad z\in\R^d.
+  \]
+  These convolutions are finite because the degrees are below $d$. Let
+  $Q_\delta$ denote the product of the target's truncated temporal covariances.
+  From the regularization in Chen~\cite{chen:author2026:time-dependency}*{(2.9),
+  (2.11)},
+  \[
+    0\le Q_\delta\le T_{\alpha_0}=T_{b_0}^{\,\vartheta}.
+  \]
+  This uses only domination by the original temporal power; no interpolation
+  property of distinct temporal cutoffs is required.
+
+  Let $A_k^{\epsilon,\delta,\eta}(t) = \int Q_\delta H_\alpha \ud\nu_{k,t,\eta}$
+  be the target regularized coefficient. The Gaussian moment formula and the
+  separate chain reversals in Proposition~\ref{P:mixed} identify it with the
+  finite sum of regularized mixed moments. Also set
+  \[
+    L_k^{\epsilon,\eta}(t)=\int T_{b_0}H_1\ud\nu_{k,t,\eta},
+    \qquad
+    B_k^{\epsilon,\eta}(t)=\int H_\chi\ud\nu_{k,t,\eta}.
+  \]
+  The second expression is the regularized static coefficient, by the Gaussian
+  moment formula with all pairings and splits. The first is a deterministic
+  integral with original temporal covariance. We do not identify it with a
+  stochastic integral having mixed regularizations. H\"older's inequality on the
+  full measure, including its two discrete variables, yields
+  \begin{equation}\label{E:static-holder-regularized}
+    A_k^{\epsilon,\delta,\eta}(t)
+    \le\left(L_k^{\epsilon,\eta}(t)\right)^\vartheta
+    \left(B_k^{\epsilon,\eta}(t)\right)^{1-\vartheta}.
+  \end{equation}
+
+  The deterministic estimates in the proof of
+  Proposition~\ref{P:low-alpha-upper}, at spatial degree one and temporal degree
+  $b_0$, apply to $L_k^{\epsilon,\eta}$. In detail,
+  Lemma~\ref{L:alpha-one-convolution} gives the closing bound $\pi V_1/2$,
+  uniformly in both smoothing widths. Descending integration and the opening
+  arithmetic--geometric mean give the common spatial bound $(\pi V_1)^kt^k/k^k$.
+  The temporal pairing sum is symmetric on the full time cube. Its integral,
+  after summing every split as in~\eqref{E:d1-time-symmetry}, is
+  $2^k(Z_{b_0}t^{2-b_0})^k/k!$. Hence,
+  \begin{equation}\label{E:static-holder-low}
+    L_k^{\epsilon,\eta}(t)
+    \le\frac{C_{\rm low}^{\,k}t^{(3-b_0)k}}{k!\,k^k}
+    \le\frac{C_{\rm low}^{\,k}t^{(3-b_0)k}}{(k!)^2}.
+  \end{equation}
+  The original temporal integral is finite since $b_0 < 1$. The static
+  regularized coefficient is finite because its covariance is bounded at fixed
+  $\epsilon$. Thus, the H\"older step has finite right side.
+
+  We pass to fixed-order limits before using the static coefficient bound. In
+  dimension three fix $\epsilon,\delta$ and let $\eta\downarrow0$. The target
+  and static smoothed covariance factors are bounded continuous functions of the
+  spatial positions. Products of the finite Green measures converge weakly with
+  masses $\prod_lh_l$. A constant times this product dominates each time
+  integrand at fixed noise smoothing, so dominated convergence applies on the
+  bounded time simplexes. The same argument with two Green widths gives a common
+  mixed covariance limit, and hence fixed-order $L^2$ convergence. This
+  identifies the static limit with the measure convention of
+  Chen--Hu~\cite{chen.hu:25:hyperbolic}*{(2.22), pp.~2152--2153}. The target
+  uses the corresponding inner limit in
+  Chen~\cite{chen:author2026:time-dependency}*{pp.~13--14}. We need no limit
+  identification for $L_k^{\epsilon,\eta}$: its uniform upper bound
+  in~\eqref{E:static-holder-low} suffices.
+
+  Next let the noise-smoothing parameters tend to zero. From
+  Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~3.8(i), p.~2165}, each fixed
+  static order converges in $L^2$ to $U_n$. For the target, the fixed-order
+  $L^2$ convergence follows from Lemma~\ref{L:joint-fixed-order}. If $Y,Y',Z,Z'$
+  are the corresponding approximations and limits, then
+  \[
+    \|YZ-Y'Z'\|_1
+    \le\|Y-Y'\|_2\|Z\|_2+\|Y'\|_2\|Z-Z'\|_2.
+  \]
+  Therefore, every fixed split product converges in $L^1$. The finite sums over
+  the $2k+1$ splits converge as well; a zero-order factor stays equal to one.
+  This argument applies directly in dimension two, where no Green smoothing is
+  needed. Passing to these limits in~\eqref{E:static-holder-regularized},
+  using~\eqref{E:static-holder-low}, gives
+  \[
+    A_k(t)\le
+    \left(\frac{C_{\rm low}^{\,k}t^{(3-b_0)k}}{(k!)^2}\right)^\vartheta
+    B_k(t)^{1-\vartheta}.
+  \]
+  Only now apply Lemma~\ref{L:static-holder-input}. No monotonicity in
+  $\epsilon$ and no uniform static large-time bound in that parameter have been
+  assumed.
+
+  The powers combine without a counting loss. Indeed,
+  by~\eqref{E:static-holder-affine},
+  \[
+    \begin{split}
+      2\vartheta+(1-\vartheta)(3-\chi)&=3-\alpha,\\
+      \vartheta(3-b_0)+(1-\vartheta)(4-\chi)
+      &=4-\alpha-\alpha_0.
+    \end{split}
+  \]
+  This proves the coefficient bound in~\eqref{E:static-holder-upper}. The
+  constant term is $A_0 = 1$. Since $q = 3-\alpha > 1$, the scalar inequality
+  $\sum_{k\ge0}z^k/(k!)^q \le e^{qz^{1/q}}$ proved in
+  Proposition~\ref{P:d1-upper} applies with $z = Ct^{4-\alpha-\alpha_0}$.
+  Proposition~\ref{P:mixed} identifies the nonnegative full coefficient series
+  with $\E u^2(t,x)$. Here $(4-\alpha-\alpha_0)/q = \kappa$. This proves
+  Proposition~\ref{P:static-holder-upper}.
+\end{proof}
+
+\begin{remark}[Calibrations and remaining scope]\label{R:static-holder-scope}
+  The time exponent in~\eqref{E:static-holder-upper} tends to
+  $(4-\alpha)/(3-\alpha)$ as $\alpha_0\downarrow0$, in agreement with the
+  Chen--Hu static exponent. This does not interchange the static and large-time
+  limits or assert uniformity of the constants. Cauchy--Schwarz gives $\E u(t,x)
+  \le \exp(qC^{1/q}t^\kappa/2)$. If the first-moment lower rate is at least
+  $L_*$, this upper bound implies $2L_* \le qC^{1/q}$. Thus, the first-moment
+  and Jensen calibrations are retained, without identifying a sharp constant.
+  The Skorohod comparison remains only the comparison recorded in
+  Remark~\ref{R:higher-calibrations}; its exponent agrees, but its solution
+  concept and covariance normalization differ. No Skorohod estimate is used in
+  this proof. The argument covers isotropic Riesz covariance throughout the
+  stated higher-degree range in dimensions two and three, including the
+  previously uncovered two-dimensional interval $3/2 \le \alpha < 2-\alpha_0$.
+  This argument does not cover arbitrary homogeneous covariances: anisotropic
+  profiles need not factor into the admissible endpoints. The intrinsic
+  second-moment formula is given separately in
+  Theorem~\ref{T:intrinsic-second-moment}. No novelty is asserted here.
+\end{remark}
+
+
+\chapter{Covariance comparisons in higher dimensions}\label{S:appendix-covariance}
+
+\input{notes/chapter-guides/14-covariance}
+
+\section{General homogeneous covariance in dimension two}
+\label{S:planar-holder}
+
+This section gives planar endpoint constructions and a transfer under its stated
+hypotheses. It does not use the preceding Riesz interpolation argument as an
+input. The full upper and intrinsic formula use separate methods.
+
+Throughout this section $d = 2$. Write $\Gamma$ for the spatial covariance as a
+nonnegative, even, positive-definite tempered Radon measure. For a locally
+integrable covariance function, this means $\Gamma(\ud x) = \gamma(x)\ud x$. The
+measure interpretation uses the Gaussian approximation framework of
+Chen~\cite{chen:author2026:time-dependency}*{pp.~2--3, 13} and
+Chen--Hu~\cite{chen.hu:25:hyperbolic}*{pp.~2145--2147, 2151--2153}. All products
+of covariance factors below are taken after Gaussian smoothing; no product or
+fractional power of distributions is used. Homogeneity means
+\begin{equation}\label{E:planar-measure-scaling}
+  \Gamma(rA)=r^{2-\alpha}\Gamma(A),\qquad r>0,
+\end{equation}
+for Borel sets $A$. This is equivalent to the covariance homogeneity in
+Hypothesis~\ref{H:homog}. If $\Gamma = 0$, the noise vanishes and $u = 1$. We
+first treat $\Gamma \ne 0$ and $1 < \alpha < 2$.
+
+\begin{lemma}[Planar endpoint covariances]\label{L:planar-endpoints}
+  Suppose that $\Gamma$ satisfies the preceding assumptions, and let $\alpha <
+  \chi < 2$. Define the finite angular measure
+  \[
+    \sigma(E)=(2-\alpha)\Gamma
+    \{x:0<|x|\le1,\ x/|x|\in E\},\qquad
+    S=\sigma(\mathbb{S}^1).
+  \]
+  On $\R^2\setminus\{0\}$ define the weighted measures
+  \begin{equation}\label{E:planar-endpoints}
+    \Gamma_{\rm low}(\ud x)=|x|^{\alpha-1}\Gamma(\ud x),\qquad
+    \Gamma_{\rm st}(\ud x)=|x|^{\alpha-\chi}\Gamma(\ud x),
+  \end{equation}
+  with zero mass at the origin. Both are nonnegative, even, positive-definite
+  tempered Radon measures. Their measure scaling exponents are $1$ and $2-\chi$,
+  respectively. For every $h > 0$, $\epsilon > 0$, $\eta \ge 0$, and $z \in
+  \R^2$,
+  \begin{equation}\label{E:planar-line-convolution}
+    \int G_{h,\eta}(\ud y)(p_\epsilon*\Gamma_{\rm low})(y+z)
+    \le\frac S4.
+  \end{equation}
+  If $\vartheta = (\chi-\alpha)/(\chi-1)$, then $0 < \vartheta < 1$ and
+  \begin{equation}\label{E:planar-gaussian-holder}
+    (p_\epsilon*\Gamma)(z)
+    \le(p_\epsilon*\Gamma_{\rm low})(z)^\vartheta
+    (p_\epsilon*\Gamma_{\rm st})(z)^{1-\vartheta}.
+  \end{equation}
+  No angular density or isotropy is assumed.
+\end{lemma}
+
+\begin{proof}
+  Since $2-\alpha > 0$, scaling and local finiteness force $\Gamma(\{0\}) = 0$.
+  The unit-ball mass is finite, so $S < \infty$. It is positive: otherwise
+  scaling would make every ball have zero mass, contradicting $\Gamma \ne 0$.
+  Evenness of $\Gamma$ implies evenness of $\sigma$. For $0 < a < b$ and Borel
+  $E \subset \mathbb{S}^1$,
+  \[
+    \Gamma\{x:a<|x|\le b,\ x/|x|\in E\}
+    =\frac{b^{2-\alpha}-a^{2-\alpha}}{2-\alpha}\sigma(E)
+    =\int_a^b r^{1-\alpha}\ud r\,\sigma(E).
+  \]
+  These polar rectangles form a generating family. Uniqueness of measures, first
+  on finite annuli and then on their increasing union, identifies the polar
+  pushforward with $r^{1-\alpha}\ud r\,\sigma(\ud\omega)$. Hence, for every
+  nonnegative Borel function $f$, Tonelli gives
+  \begin{equation}\label{E:planar-polar}
+    \int f(x)\Gamma(\ud x)
+    =\int_{\mathbb{S}^1}\int_0^\infty
+    f(r\omega)r^{1-\alpha}\ud r\,\sigma(\ud\omega).
+  \end{equation}
+  Extended values are permitted. In particular, the formula applies to the
+  nonnegative wave density used below.
+
+  The endpoint polar measures are therefore $\ud r\,\sigma(\ud\omega)$ and
+  $r^{1-\chi}\ud r\,\sigma(\ud\omega)$. Their radial integrals are finite near
+  zero because $\chi < 2$. Rapid decay of a Schwartz function controls their
+  integrals at infinity, uniformly in direction. They are thus locally finite
+  and tempered, and their stated scaling and evenness follow directly. If
+  $\Gamma$ has a density, the two weighted measures also have locally integrable
+  densities.
+
+  To prove positive definiteness of the low endpoint, evenness gives the
+  full-sphere line representation
+  \begin{equation}\label{E:planar-line-mixture}
+    \int f(x)\Gamma_{\rm low}(\ud x)
+    =\frac12\int_{\mathbb{S}^1}\int_\R f(r\omega)\ud r
+    \,\sigma(\ud\omega).
+  \end{equation}
+  It holds for nonnegative Borel $f$, and for Schwartz $f$ by absolute
+  integrability. For a complex Schwartz function $\varphi$, put
+  $\widetilde{\varphi}(x) = \overline{\varphi(-x)}$ and $\psi =
+  \varphi*\widetilde{\varphi}$. Fubini in line and perpendicular coordinates
+  gives
+  \[
+    \int_\R\psi(r\omega)\ud r
+    =\int_{\omega^\perp}
+    \left|\int_\R\varphi(s\omega+v)\ud s\right|^2\ud v\ge0.
+  \]
+  Schwartz decay justifies all these integrals, uniformly for unit $\omega$.
+  Integrating against the finite measure $\sigma$
+  in~\eqref{E:planar-line-mixture} proves $\Gamma_{\rm low}(\psi) \ge 0$. The
+  factor $1/2$ is essential because both orientations of each line occur on the
+  full sphere.
+
+  For the static endpoint put $\lambda = \chi-\alpha > 0$. For $x \ne 0$,
+  \[
+    |x|^{-\lambda}=\frac1{\Gamma(\lambda/2)}
+    \int_0^\infty s^{\lambda/2-1}e^{-s|x|^2}\ud s.
+  \]
+  For each $s > 0$, the measure $e^{-s|x|^2}\Gamma(\ud x)$ is positive definite.
+  Indeed, the Fourier transform of $e^{-s|x|^2}\psi(x)$ is a positive Gaussian
+  convolution of $|\widehat{\varphi}|^2$. Its pairing with the original positive
+  spectral measure is nonnegative; Schwartz decay makes the pairing finite.
+  Moreover,
+  \[
+    \int |\psi(x)||x|^{-\lambda}\Gamma(\ud x)
+    =\int |\psi(x)|\Gamma_{\rm st}(\ud x)<\infty
+  \]
+  by the endpoint polar integrability just proved. Tonelli with $|\psi|$,
+  followed by Fubini, justifies the Gaussian mixture against $\psi$. Thus,
+  $\Gamma_{\rm st}(\psi) \ge 0$. This uses smooth Gaussian multiplication of the
+  original covariance and a convergent mixture, not a fractional power of that
+  covariance.
+
+  We next prove the convolution estimate directly. Use the planar wave density
+  \[
+    G_h(y)=\frac{\mathbf1_{\{|y|<h\}}}{2\pi\sqrt{h^2-|y|^2}},
+  \]
+  with value zero on the circle. Write $z = a\omega+b\omega^\perp$ for a unit
+  perpendicular vector. If $|b| < h$, put $A = \sqrt{h^2-b^2}$. Translation
+  along the line gives
+  \[
+    \int_\R G_h(z-r\omega)\ud r
+    =\frac1{2\pi}\int_{-A}^A\frac{\ud s}{\sqrt{A^2-s^2}}
+    =\frac12.
+  \]
+  If $|b| \ge h$, the open support is empty or tangent and the line integral is
+  zero. The tangency point has zero line Lebesgue measure.
+  Formula~\eqref{E:planar-line-mixture} and nonnegative Tonelli yield
+  \[
+    (G_h*\Gamma_{\rm low})(z)
+    =\frac14\int_{\mathbb{S}^1}
+    \mathbf1_{\{|z\cdot\omega^\perp|<h\}}\sigma(\ud\omega)
+    \le\frac S4.
+  \]
+  Evenness, Gaussian convolution, and Tonelli now give
+  \[
+    \int G_{h,\eta}(\ud y)(p_\epsilon*\Gamma_{\rm low})(y+z)
+    =\left[p_{\epsilon+\eta}*(G_h*\Gamma_{\rm low})\right](z)
+    \le\frac S4.
+  \]
+  For $\eta = 0$, use the unsmoothed Green measure. The Gaussian average has
+  mass one, so the same constant works for all widths.
+
+  Finally, the measure $p_\epsilon(z-x)\Gamma(\ud x)$ is finite. Gaussian decay
+  and polynomial radial growth prove this directly; the endpoint convolutions
+  are finite for the same reason. The identity
+  \[
+    \vartheta(\alpha-1)+(1-\vartheta)(\alpha-\chi)=0
+  \]
+  and absence of an origin atom permit H\"older's inequality on this
+  unnormalized positive measure:
+  \[
+    \begin{split}
+      (p_\epsilon*\Gamma)(z)
+      &=\int |x|^{\vartheta(\alpha-1)}
+      |x|^{(1-\vartheta)(\alpha-\chi)}
+      p_\epsilon(z-x)\Gamma(\ud x)\\
+      &\le(p_\epsilon*\Gamma_{\rm low})(z)^\vartheta
+      (p_\epsilon*\Gamma_{\rm st})(z)^{1-\vartheta}.
+    \end{split}
+  \]
+  This proves Lemma~\ref{L:planar-endpoints}.
+\end{proof}
+
+\begin{lemma}[General planar static coefficient input]
+  \label{L:planar-static-input}
+  Let $\Xi$ be a nonnegative, even, positive-definite tempered Radon measure on
+  $\R^2$ with $\Xi(rA) = r^{2-\chi}\Xi(A)$, where $1 < \chi < 2$. For static
+  Stratonovich noise with covariance $\Xi$, data $(1,0)$, and wave operator
+  $\Delta$, let $U_n(t,x)$ be its ordered integrals, with $U_0 = 1$. There is a
+  finite $C_{\rm st} = C_{\rm st}(\Xi) > 0$ such that, for $k \ge 1$ and $t >
+  0$,
+  \begin{equation}\label{E:planar-static-input}
+    0\le B_k(t):=\sum_{m=0}^{2k}\E[U_m(t,x)U_{2k-m}(t,x)]
+    \le\frac{C_{\rm st}^{\,k}t^{(4-\chi)k}}{(k!)^{3-\chi}}.
+  \end{equation}
+  Also $B_0 = 1$.
+\end{lemma}
+
+\begin{proof}
+  If $\Xi = 0$, then $U_n = 0$ for $n \ge 1$, and hence $B_k = 0$ for $k \ge 1$.
+  The choices $C_{\rm st} = 1$ and $B_0 = 1$ give the conclusion. We may
+  therefore assume $\Xi \ne 0$.
+
+  Fourier uniqueness transfers covariance homogeneity to its positive spectral
+  measure $\mu_\Xi$: $\mu_\Xi(rA) = r^\chi\mu_\Xi(A)$. Its unit-ball mass is
+  finite because the spectral measure is Radon. On dyadic annuli this gives
+  \[
+    \int_{\R^2}(1+|\xi|^2)^{-1}\mu_\Xi(\ud\xi)
+    \le\mu_\Xi(B_1)
+    +2^\chi\mu_\Xi(B_1)\sum_{j\ge0}2^{j(\chi-2)}<\infty.
+  \]
+  This verifies the static Dalang condition without an angular density. The
+  present $\Xi$ also satisfies the source's covariance assumptions: it is a
+  nonnegative positive-definite tempered distribution, and $1 < \chi < 2 = d$.
+  The source expressly includes generalized covariances and uses their
+  heat-regularized interpretation \cite{chen.hu:25:hyperbolic}*{p.~2152,
+  (2.18)}. Thus, the coefficient estimate invoked below is a direct application
+  within the source's stated class, not an extension from density kernels. From
+  Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~3.8(i), p.~2165}, every fixed
+  order exists in $L^2$. The product and Wick formulas (2.17) and (2.19),
+  pp.~2151--2152, identify $B_k$ with all pairings and all splits of the total
+  order, including self-pairs and empty chains. Thus, every coefficient is
+  finite and nonnegative.
+
+  We make explicit the finiteness input in the source's coefficient upper rate.
+  The variational constant $\mathcal{M}$ in
+  Chen--Hu~\cite{chen.hu:25:hyperbolic}*{p.~2147} is finite under the displayed
+  Dalang condition. The source's invocation on p.~2175 identifies
+  $2^{\chi/(4-\chi)}\mathcal{M}$ with the square-root variational quantity
+  covered by Chen~\cite{chen:23:exponential}*{Theorem~1.1, p.~2}. That theorem
+  explicitly states finiteness under Dalang's condition and permits generalized
+  nonnegative positive-definite covariances. We import that finiteness, not a
+  sharp value or its proof.
+
+  From Chen--Hu~\cite{chen.hu:25:hyperbolic}*{(5.1), p.~2173, and (5.15),
+  p.~2180}, with $p = 2$, it follows that
+  \[
+    B_k(t)=t^{(4-\chi)k}B_k(1),\qquad
+    \limsup_{k\to\infty}\frac1k
+    \log\left((k!)^{3-\chi}B_k(1)\right)<\infty.
+  \]
+  Choose a finite $R > 0$ larger than this upper limit. For all sufficiently
+  large $k$, $(k!)^{3-\chi}B_k(1) \le e^{Rk}$. Increase $e^R$ to a finite
+  positive constant dominating the $k$th roots of the finitely many remaining
+  quantities. The resulting $C_{\rm st}$ proves~\eqref{E:planar-static-input} by
+  homogeneity. These are the source's general homogeneous-covariance statements,
+  not a Riesz specialization. This proves Lemma~\ref{L:planar-static-input}.
+\end{proof}
+
+\begin{proposition}[Planar homogeneous-covariance upper bound]
+  \label{P:planar-upper}
+  Let $d = 2$, $0 < \alpha_0 < 1$, and $1 < \alpha < 2-\alpha_0$. Suppose that
+  the nonzero spatial covariance $\Gamma$ is nonnegative, even, positive
+  definite and tempered, with~\eqref{E:planar-measure-scaling}. Choose and fix
+  \[
+    \alpha_0<\vartheta<2-\alpha,\qquad
+    b_0=\alpha_0/\vartheta,\qquad
+    \chi=(\alpha-\vartheta)/(1-\vartheta).
+  \]
+  Use the endpoint measures and physical angular mass $S$ of
+  Lemma~\ref{L:planar-endpoints}. Put
+  \[
+    Z_{b_0}=\frac2{(1-b_0)(2-b_0)},\qquad
+    C_{\rm low}=Z_{b_0}S,\qquad
+    C=C_{\rm low}^{\,\vartheta}C_{\rm st}^{\,1-\vartheta},
+    \qquad q=3-\alpha,
+  \]
+  where $C_{\rm st}$ is from Lemma~\ref{L:planar-static-input} for $\Xi =
+  \Gamma_{\rm st}$. For the Stratonovich solution with data $(1,0)$, every $k
+  \ge 1$, $t > 0$, and $x \in \R^2$ satisfy
+  \begin{equation}\label{E:planar-upper}
+    A_k(t)\le\frac{C^kt^{(4-\alpha-\alpha_0)k}}{(k!)^{3-\alpha}},
+    \qquad
+    \E u^2(t,x)\le\exp\left(qC^{1/q}t^\kappa\right).
+  \end{equation}
+  Constants may depend on the covariance, $\alpha_0$, and the fixed choice of
+  $\vartheta$, but not on $k,t,x$.
+\end{proposition}
+
+\begin{proof}
+  The parameter interval is nonempty. We have $0 < \vartheta < 1$, $0 < b_0 <
+  1$, and
+  \[
+    \chi-\alpha=\frac{\vartheta(\alpha-1)}{1-\vartheta}>0,
+    \qquad
+    2-\chi=\frac{2-\alpha-\vartheta}{1-\vartheta}>0.
+  \]
+  Thus, Lemma~\ref{L:planar-endpoints} applies, with its interpolation weight
+  equal to $\vartheta$. The original spectral measure has ball growth of
+  exponent $\alpha$, by the same Fourier homogeneity argument used in
+  Lemma~\ref{L:planar-static-input}. A dyadic sum gives the time-dependent
+  spectral condition (1.5) of
+  Chen~\cite{chen:author2026:time-dependency}*{p.~3}, since $\alpha <
+  2-\alpha_0$. The low endpoint has spectral ball exponent one and $b_0 < 1$;
+  the static endpoint has exponent $\chi < 2$. Thus,
+  Lemma~\ref{L:joint-fixed-order} applies to the target, and the imported static
+  fixed-order theorem is used within its stated range.
+
+  Fix $k \ge 1$, $t > 0$, and common noise widths $\epsilon,\delta > 0$. The
+  spatial covariance on each edge has width $2\epsilon$. No Green smoothing is
+  needed in dimension two. On the disjoint union over $m = 0,\ldots,2k$ and $D
+  \in \Pi_k$, define the finite positive measure $\nu_{k,t}$ by
+  \[
+    \int\Phi\ud\nu_{k,t}
+    :=\sum_{m=0}^{2k}\sum_{D\in\Pi_k}
+    \int_{[0,t]^m_<\times[0,t]^{2k-m}_<}\ud s
+    \int\Phi(m,D,s,y)\prod_{l=1}^{2k}G_{h_l}(\ud y_l).
+  \]
+  Here each chain has its own root, $h_l = s_l-s_{p(l)}$, the $y_l$ are its
+  increments, and $x_l$ is its cumulative position. A zero-length chain has
+  empty products. At fixed times the spatial mass is $\prod_lh_l$; bounded time
+  simplexes and finite discrete sums therefore make $\nu_{k,t}$ finite.
+
+  For $J \in \{\Gamma,\Gamma_{\rm low},\Gamma_{\rm st}\}$ write
+  \[
+    H_J=\prod_{(i,j)\in D}(p_{2\epsilon}*J)(x_i-x_j),\qquad
+    T_b=\prod_{(i,j)\in D}|s_i-s_j|^{-b}.
+  \]
+  The Gaussian covariance functions are bounded and continuous at each fixed
+  width: their positive spectral measures are tempered, so Gaussian weighting
+  makes them finite. Let $Q_\delta$ be the product of the target's truncated
+  temporal covariances. The source regularization gives $0 \le Q_\delta \le
+  T_{\alpha_0} = T_{b_0}^{\,\vartheta}$. Lemma~\ref{L:planar-endpoints}, at the
+  common edge width, gives $H_\Gamma \le H_{\Gamma_{\rm low}}^\vartheta
+  H_{\Gamma_{\rm st}}^{1-\vartheta}$.
+
+  The Gaussian moment formula and the two separate chain reversals in
+  Proposition~\ref{P:mixed} identify the target regularized coefficient with
+  $\int Q_\delta H_\Gamma\ud\nu_{k,t}$. Define
+  \[
+    L_k^\epsilon(t)=\int T_{b_0}H_{\Gamma_{\rm low}}\ud\nu_{k,t},
+    \qquad
+    B_k^\epsilon(t)=\int H_{\Gamma_{\rm st}}\ud\nu_{k,t}.
+  \]
+  The latter is the regularized static coefficient, including every split and
+  pairing. The former is only a deterministic integral with original temporal
+  power. H\"older's inequality on the full common measure, including its
+  discrete variables, yields
+  \begin{equation}\label{E:planar-coefficient-holder}
+    A_k^{\epsilon,\delta}(t)
+    \le\left(L_k^\epsilon(t)\right)^\vartheta
+    \left(B_k^\epsilon(t)\right)^{1-\vartheta}.
+  \end{equation}
+  No interpolation of different temporal cutoff kernels is asserted.
+
+  We bound $L_k^\epsilon$ directly. Orient each pair by increasing block label.
+  Descending integration of increments, as in Lemma~\ref{L:d1-spatial}, removes
+  at a closing label its only remaining covariance factor.
+  Lemma~\ref{L:planar-endpoints} bounds that integral by $S/4$. At an opening
+  label its paired covariance has already been removed, so the Green integral is
+  its mass $h_l$. The $k$ opening increments sum to at most $2t$. Thus, the
+  common spatial bound is
+  \[
+    (S/4)^k\prod_{i\in O_D}h_i
+    \le(S/2)^k\frac{t^k}{k^k}.
+  \]
+  The temporal pairing sum is invariant under every permutation of its $2k$
+  labels. Each pairing integrates on the full time cube to
+  $(Z_{b_0}t^{2-b_0})^k$. Partitioning by the two within-block orders, and then
+  summing all splits, gives
+  \[
+    \begin{split}
+      \sum_{m=0}^{2k}\sum_{D\in\Pi_k}
+      \int_{[0,t]^m_<\times[0,t]^{2k-m}_<}T_{b_0}\ud s
+      &=\frac{(2k)!}{2^kk!}(Z_{b_0}t^{2-b_0})^k
+      \sum_{m=0}^{2k}\frac1{m!(2k-m)!}\\
+      &=\frac{2^k}{k!}(Z_{b_0}t^{2-b_0})^k.
+    \end{split}
+  \]
+  Symmetry is used for the sum, not for an individual pairing. The integral is
+  finite because $b_0 < 1$. Multiplication gives
+  \begin{equation}\label{E:planar-low-coefficient}
+    L_k^\epsilon(t)
+    \le\frac{(Z_{b_0}S)^kt^{(3-b_0)k}}{k!\,k^k}
+    \le\frac{C_{\rm low}^{\,k}t^{(3-b_0)k}}{(k!)^2}.
+  \end{equation}
+  At fixed $\epsilon$, bounded covariance and the finite common measure make
+  $B_k^\epsilon$ finite as well. These observations also justify finiteness in
+  the H\"older estimate.
+
+  We next take fixed-order limits. The target orders converge in $L^2$ by
+  Lemma~\ref{L:joint-fixed-order}. For the static orders the corresponding input
+  is Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~3.8(i), p.~2165}. For
+  products of two fixed orders, the inequality
+  \[
+    \|YZ-Y'Z'\|_1
+    \le\|Y-Y'\|_2\|Z\|_2+\|Y'\|_2\|Z-Z'\|_2
+  \]
+  gives $L^1$ convergence. There are only $2k+1$ split products, and a
+  zero-order factor stays equal to one. Hence, $A_k^{\epsilon,\delta}(t) \to
+  A_k(t)$ and $B_k^\epsilon(t) \to B_k(t)$ as the noise widths vanish. The
+  uniform deterministic estimate~\eqref{E:planar-low-coefficient} needs no
+  stochastic limit interpretation. Passing to limits
+  in~\eqref{E:planar-coefficient-holder} gives
+  \[
+    A_k(t)\le
+    \left(\frac{C_{\rm low}^{\,k}t^{(3-b_0)k}}{(k!)^2}\right)^\vartheta
+    B_k(t)^{1-\vartheta}.
+  \]
+  Only now apply Lemma~\ref{L:planar-static-input}. No monotonicity in the
+  spatial width or uniform static smoothed asymptotic was used.
+
+  The parameter identities $\alpha = \vartheta+(1-\vartheta)\chi$ and $\alpha_0
+  = \vartheta b_0$ imply
+  \[
+    2\vartheta+(1-\vartheta)(3-\chi)=3-\alpha,\qquad
+    \vartheta(3-b_0)+(1-\vartheta)(4-\chi)=4-\alpha-\alpha_0.
+  \]
+  This yields the coefficient bound in~\eqref{E:planar-upper} with $C = C_{\rm
+  low}^\vartheta C_{\rm st}^{1-\vartheta}$. The constant coefficient is $A_0 =
+  1$. For $q = 3-\alpha > 1$ and $z \ge 0$,
+  \[
+    \sum_{k\ge0}\frac{z^k}{(k!)^q}
+    =\sum_{k\ge0}\left(\frac{z^{k/q}}{k!}\right)^q
+    \le\left(\sum_{k\ge0}\frac{z^{k/q}}{k!}\right)^q
+    =e^{qz^{1/q}}.
+  \]
+  Proposition~\ref{P:mixed} supplies the nonnegative full series for the target
+  solution. Take $z = Ct^{4-\alpha-\alpha_0}$ and use $(4-\alpha-\alpha_0)/q =
+  \kappa$. This proves Proposition~\ref{P:planar-upper}.
+\end{proof}
+
+\begin{corollary}[Full planar parameter range]\label{C:planar-range}
+  In dimension two, under Hypothesis~\ref{H:homog} and the standing covariance
+  positivity assumptions, the upper bound $\E u^2(t,x) \le \exp(C_{\rm dir}t^\kappa)$
+  holds throughout $0 < \alpha < 2-\alpha_0$, with a finite constant $C_{\rm dir}$
+  depending on $\alpha_0$ and the spatial covariance. A nonnegative generalized
+  covariance is interpreted as the homogeneous measure and its Gaussian
+  approximations described above.
+\end{corollary}
+
+\begin{proof}
+  For $0 < \alpha \le 1$, apply Proposition~\ref{P:low-alpha-upper}. For $1 <
+  \alpha < 2-\alpha_0$, apply Proposition~\ref{P:planar-upper}. If the
+  covariance vanishes, $u = 1$ and $C_{\rm dir} = 0$ suffices. This proves
+  Corollary~\ref{C:planar-range}.
+\end{proof}
+
+\begin{remark}[Planar calibrations and remaining goals]\label{R:planar-scope}
+  The exponent tends to $(4-\alpha)/(3-\alpha)$ as $\alpha_0\downarrow0$,
+  consistently with the static source, without an interchange of limits or
+  uniformity claim for the constants. For the nonzero higher-exponent case,
+  Cauchy--Schwarz gives $\E u(t,x) \le \exp(qC^{1/q}t^\kappa/2)$. If the
+  first-moment lower rate is at least $L_*$, this implies $2L_* \le qC^{1/q}$.
+  No sharp constant is identified. The existing comparisons with Skorohod
+  exponents, in their stated Riesz subclasses, concern different solution
+  concepts and are not inputs here. The planar endpoint construction is
+  dimension-specific; no general higher-exponent result in dimension three
+  follows from it. Section~\ref{S:interval-upper} treats the full
+  homogeneous-covariance class by a separate argument. The intrinsic constant is
+  identified separately in Theorem~\ref{T:intrinsic-second-moment}.
+\end{remark}
+
+\section{Three-dimensional bounds from covariance endpoints}
+\label{S:three-endpoints}
+
+The endpoint constructions and conditional moment transfer are retained as an
+alternative route. No general three-dimensional factorization is asserted. The
+full upper and intrinsic formula do not use these factorizations.
+
+We first construct the product endpoints. Zero coordinate exponents below mean
+constant factors, not one-dimensional white noise.
+
+\LeanMarker{L:product-endpoints}
+\begin{lemma}[Strict product endpoints]\label{L:product-endpoints}
+  Let $0 \le a_j < 1$ for $j = 1,2,3$, let $\alpha = a_1+a_2+a_3 \in (1,2)$, and
+  choose $0 < \vartheta < 2-\alpha$. Put $\chi =
+  (\alpha-\vartheta)/(1-\vartheta)$ and define
+  \begin{equation}\label{E:product-endpoint-vectors}
+    \begin{split}
+      L_j&=\max\{0,(a_j-1+\vartheta)/\vartheta\},\qquad
+      U_j=\min\{1,a_j/\vartheta\},\\
+      \Lambda&=\frac{1-\sum_jL_j}{\sum_jU_j-\sum_jL_j},\qquad
+      b_j=L_j+\Lambda(U_j-L_j),\qquad
+      v_j=\frac{a_j-\vartheta b_j}{1-\vartheta}.
+    \end{split}
+  \end{equation}
+  Then $0 < \Lambda < 1$, $\sum_j b_j = 1$, $\sum_jv_j = \chi$, and
+  \[
+    a_j=\vartheta b_j+(1-\vartheta)v_j,\qquad
+    a_j>0\Longrightarrow 0<b_j,v_j<1,\qquad
+    a_j=0\Longrightarrow b_j=v_j=0.
+  \]
+  For any $c > 0$, the ordinary covariance densities
+  \[
+    \gamma_a(x)=c\prod_{j=1}^3|x_j|^{-a_j},\qquad
+    \gamma_b(x)=c\prod_{j=1}^3|x_j|^{-b_j},\qquad
+    \gamma_v(x)=c\prod_{j=1}^3|x_j|^{-v_j}
+  \]
+  are nonnegative, even, positive definite, locally integrable and tempered.
+  Their covariance homogeneity exponents are $\alpha,1,\chi$, respectively, with
+  $\alpha < \chi < 2$. For every $\epsilon > 0$ and $z \in \R^3$,
+  \begin{equation}\label{E:product-gaussian-comparison}
+    (p_\epsilon*\gamma_a)(z)
+    \le(p_\epsilon*\gamma_b)(z)^\vartheta
+    (p_\epsilon*\gamma_v)(z)^{1-\vartheta}.
+  \end{equation}
+  A factor with exponent zero is defined to be one everywhere.
+\end{lemma}
+
+\begin{proof}
+  We have $\vartheta < 1$. There are at least two positive coordinates, since
+  every $a_j < 1$ and $\sum_j a_j > 1$. At a zero coordinate, $L_j = U_j = 0$.
+  At a positive coordinate, $L_j < U_j$: if $a_j \ge \vartheta$, then $U_j = 1$
+  and $L_j < 1$; if $a_j < \vartheta$, then $U_j = a_j/\vartheta > 0$, and
+  either $L_j = 0$ or $U_j-L_j = (1-\vartheta)/\vartheta > 0$.
+
+  Let $I = \{j:L_j>0\}$ and $r = |I|$. For $r = 0$ the sum of the lower
+  endpoints is zero; for $r = 1$ it is less than one. For $r \ge 2$,
+  \[
+    \sum_{j\in I}a_j\le\alpha<2-\vartheta
+    \le r-(r-1)\vartheta,
+  \]
+  because the last inequality is equivalent to $(r-2)(1-\vartheta) \ge 0$.
+  Therefore,
+  \[
+    \sum_jL_j
+    =\frac{\sum_{j\in I}a_j-r+r\vartheta}{\vartheta}<1.
+  \]
+  If some $a_j \ge \vartheta$, its upper endpoint equals one and a different
+  positive coordinate has positive upper endpoint. Otherwise, $\sum_jU_j =
+  \alpha/\vartheta > 1$. Hence, $\sum_jL_j < 1 < \sum_jU_j$, which proves $0 <
+  \Lambda < 1$ and $\sum_jb_j = 1$. At every positive coordinate, $L_j < b_j <
+  U_j$, so $0 < b_j < 1$. The inequalities $b_j < U_j \le a_j/\vartheta$ and
+  $b_j > L_j \ge (a_j-1+\vartheta)/\vartheta$ give $0 < v_j < 1$. At a zero
+  coordinate $b_j = v_j = 0$. The reconstruction identity is immediate, and
+  summing it gives $\sum_jv_j = \chi$. Finally,
+  \[
+    \chi-\alpha=\frac{\vartheta(\alpha-1)}{1-\vartheta}>0,
+    \qquad 2-\chi=\frac{2-\alpha-\vartheta}{1-\vartheta}>0.
+  \]
+
+  For any of the three exponent vectors $e$, local integrability is a product of
+  one-dimensional integrals with exponents below one. For a Schwartz function
+  $\psi$, choose $N > 1$ and use $|\psi(x)| \le C_N\prod_j(1+|x_j|)^{-N}$. This
+  proves absolute integrability against $\gamma_e$ and also temperedness. For
+  each active coordinate, $0 < e_j < 1$, use
+  \[
+    |u|^{-e_j}=\frac1{\Gamma(e_j/2)}
+    \int_0^\infty s^{e_j/2-1}e^{-su^2}\ud s.
+  \]
+  The product over the active coordinates is a positive mixture of Gaussian
+  functions in those coordinates, constant in all other coordinates. Each such
+  Gaussian is positive definite. For a complex Schwartz $\varphi$, set $\psi =
+  \varphi*\widetilde{\varphi}$, where $\widetilde{\varphi}(x) =
+  \overline{\varphi(-x)}$. The absolute integrability just proved permits
+  Tonelli with $|\psi|$ and then Fubini for the mixture against $\psi$. Its
+  quadratic form is nonnegative. No Euler Gamma factor at exponent zero is
+  introduced. Evenness and homogeneity follow from the displayed densities.
+
+  The reconstruction of each exponent and the common amplitude imply $\gamma_a =
+  \gamma_b^\vartheta\gamma_v^{1-\vartheta}$ almost everywhere; values on
+  singular coordinate planes do not change these locally integrable covariances.
+  H\"older's inequality on the Gaussian probability measure
+  gives~\eqref{E:product-gaussian-comparison}. Its endpoint convolutions are
+  finite by the product integrability and Gaussian decay. The amplitude remains
+  $c^\vartheta c^{1-\vartheta} = c$. This proves
+  Lemma~\ref{L:product-endpoints}.
+\end{proof}
+
+We now take $d = 3$, $0 < \alpha_0 < 1$, and $1 < \alpha < 2-\alpha_0$. Let
+$\Gamma$ be a nonnegative, even, positive-definite tempered spatial covariance,
+with homogeneity exponent $\alpha$. As a positive distribution it is a Radon
+measure satisfying $\Gamma(rA) = r^{3-\alpha}\Gamma(A)$; a covariance function
+is identified with its density measure. Gaussian convolution is used for all
+covariance products. Choose and fix
+\begin{equation}\label{E:three-parameters}
+  \alpha_0<\vartheta<2-\alpha,\qquad
+  b_0=\alpha_0/\vartheta,\qquad
+  \chi=(\alpha-\vartheta)/(1-\vartheta).
+\end{equation}
+Then $0 < b_0 < 1$ and $\alpha < \chi < 2$, by the identities in the preceding
+proof. The zero target covariance is trivial, since then $u = 1$.
+
+\begin{hypothesis}[Gaussian covariance comparison]\label{H:three-endpoints}
+  There are nonnegative, even, positive-definite tempered endpoint covariances
+  $\Gamma_{\rm low}$ and $\Gamma_{\rm st}$ on $\R^3$ with measure scaling
+  \[
+    \Gamma_{\rm low}(rA)=r^2\Gamma_{\rm low}(A),\qquad
+    \Gamma_{\rm st}(rA)=r^{3-\chi}\Gamma_{\rm st}(A),
+  \]
+  such that, for every $\epsilon > 0$ and $z \in \R^3$,
+  \begin{equation}\label{E:three-gaussian-comparison}
+    (p_\epsilon*\Gamma)(z)
+    \le(p_\epsilon*\Gamma_{\rm low})(z)^\vartheta
+    (p_\epsilon*\Gamma_{\rm st})(z)^{1-\vartheta}.
+  \end{equation}
+\end{hypothesis}
+
+This is a condition on deterministic covariance measures and their Gaussian
+convolutions. It assumes no moment estimate. We do not assert that every
+homogeneous covariance in dimension three admits these endpoints.
+
+\LeanMarker{L:plane-endpoints}
+\begin{lemma}[Plane-supported endpoints]\label{L:plane-endpoints}
+  Retain~\eqref{E:three-parameters}, let $c > 0$, and let $a_1,a_2 \ge 0$
+  satisfy $s = a_1+a_2 = \alpha-1$. In coordinates $(y,z) \in \R^2\times\R$, put
+  \[
+    m(\ud y,\ud z)=\ud y\,\delta_0(\ud z),\qquad
+    v_j=\frac{a_j}{1-\vartheta},\qquad
+    \Gamma_{\rm pl}=c\prod_{j=1}^2|y_j|^{-a_j}m.
+  \]
+  Zero coordinate powers mean one. Then
+  \[
+    \Gamma_{\rm low}=cm,\qquad
+    \Gamma_{\rm st}=c\prod_{j=1}^2|y_j|^{-v_j}m
+  \]
+  satisfy Hypothesis~\ref{H:three-endpoints} for $\Gamma_{\rm pl}$. In the
+  spectral convention of Lemma~\ref{L:alpha-one-convolution}, this low endpoint
+  has $V_{\rm low} = c/\pi$.
+\end{lemma}
+
+\begin{proof}
+  Since $0 < s < 1-\alpha_0$ and $\vartheta < 2-\alpha = 1-s$,
+  \[
+    0\le a_j<1,\qquad 0\le v_j<1,\qquad
+    v_1+v_2=\frac{s}{1-\vartheta}=\chi-1<1.
+  \]
+  A measure $f_e(y)\ud y\,\delta_0(\ud z)$, with $f_e(y) = \prod_j|y_j|^{-e_j}$
+  and $0 \le e_j < 1$, is locally finite. For a Schwartz test function,
+  product-weighted rapid decay proves absolute integrability and temperedness.
+  Its scaling exponent as a measure is $2-e_1-e_2$. Thus, the three measures in
+  the statement have exponents $3-\alpha$, $2$, and $3-\chi$. They are even and
+  nonnegative.
+
+  We verify positive definiteness, including the normal Dirac measure. Each
+  positive coordinate power has the Gaussian mixture
+  \[
+    |u|^{-e}=\frac1{\Gamma(e/2)}
+    \int_0^\infty r^{e/2-1}e^{-ru^2}\ud r,\qquad 0<e<1;
+  \]
+  a zero coordinate contributes the positive-definite constant one.
+  Consequently, $f_e$ is a positive mixture of positive-definite tangential
+  Gaussian functions. For $\varphi \in \mathcal{S}(\R^3)$, its quadratic form
+  against the plane measure is
+  \[
+    \int_\R\ud z\int_{\R^2}\int_{\R^2}
+    f_e(y-y')\varphi(y,z)\overline{\varphi(y',z)}
+    \ud y\ud y'.
+  \]
+  Absolute Fubini follows by setting
+  \[
+    A(u)=\int_\R\int_{\R^2}
+    |\varphi(y+u,z)\varphi(y,z)|\ud y\ud z.
+  \]
+  Rapid decay gives $A(u) \le C_N\prod_j(1+|u_j|)^{-N}$. Hence, $\int
+  f_e(u)A(u)\ud u < \infty$ for $N > 1$, by one-dimensional integrability.
+  Integrating the nonnegative Gaussian quadratic forms proves positive
+  definiteness. This argument includes the low endpoint, where both coordinate
+  powers are zero.
+
+  For $\epsilon > 0$ and $w \in \R^3$, apply H\"older on the finite positive
+  measure $p_\epsilon(w-(y,z))m(\ud y,\ud z)$. Its mass is
+  $p_\epsilon^{(1)}(w_3)$. If $f(y) = \prod_j|y_j|^{-a_j}$, the identity between
+  ordinary densities
+  \[
+    cf=c^\vartheta
+    \left(cf^{1/(1-\vartheta)}\right)^{1-\vartheta}
+  \]
+  holds $m$-almost everywhere. Both endpoint convolutions are finite, since $v_j
+  < 1$ and the Gaussian decays at infinity. H\"older gives
+  exactly~\eqref{E:three-gaussian-comparison}; no power of a distribution is
+  taken.
+
+  Finally, the low spectral measure is
+  \[
+    \mu_{\rm low}(\ud\xi)
+    =\frac{c}{2\pi}\delta_0(\ud\xi_1)\delta_0(\ud\xi_2)\ud\xi_3.
+  \]
+  This follows from the unit spectral atom of a constant and the one-dimensional
+  Fourier identity for $\delta_0$ in the stated convention. Its unit-ball mass
+  is $c/\pi$, so the uniform closing bound of
+  Lemma~\ref{L:alpha-one-convolution} is $c/2$. This proves
+  Lemma~\ref{L:plane-endpoints}.
+\end{proof}
+
+\LeanMarker{L:endpoint-closure}
+\begin{lemma}[Linear images and finite positive sums]\label{L:endpoint-closure}
+  Fix the parameters in~\eqref{E:three-parameters}. The covariance comparison of
+  Hypothesis~\ref{H:three-endpoints} is preserved by simultaneously pushing the
+  target and its two endpoints forward under any invertible linear map $T:\R^3
+  \to \R^3$. It is also preserved by finite sums with nonnegative weights, when
+  all component comparisons use the same $\alpha,\vartheta,\chi$.
+\end{lemma}
+
+\begin{proof}
+  First the comparison extends to every centered nondegenerate Gaussian
+  probability density $q_\Sigma$ with covariance matrix $\Sigma$. Choose $a > 0$
+  below the smallest eigenvalue of $\Sigma$. The Gaussian convolution identity
+  gives $q_\Sigma = p_a*q_{\Sigma-aI}$. Put $F_J = p_a*J$ for each $J \in
+  \{\Gamma,\Gamma_{\rm low},\Gamma_{\rm st}\}$. These functions are nonnegative,
+  bounded, and continuous: Gaussian weighting makes their positive tempered
+  spectral measures finite, and the covariance bound is $|F_J(x)| \le F_J(0) <
+  \infty$. Tonelli and H\"older on the Gaussian probability measure yield
+  \[
+    q_\Sigma*\Gamma
+    \le q_{\Sigma-aI}*
+    \left(F_{\Gamma_{\rm low}}^\vartheta
+    F_{\Gamma_{\rm st}}^{1-\vartheta}\right)
+    \le(q_\Sigma*\Gamma_{\rm low})^\vartheta
+    (q_\Sigma*\Gamma_{\rm st})^{1-\vartheta}.
+  \]
+  Every convolution here is finite.
+
+  Write $J_T = T_\#J$ and $d_T = |\det T|$. Pushforward preserves nonnegativity,
+  evenness, local finiteness, temperedness, and homogeneous scaling, since $T$
+  is invertible and commutes with scalar dilation. For positive definiteness,
+  take a complex Schwartz function $\varphi$ and put $\psi(y) = \varphi(Ty)$.
+  Then
+  \[
+    (\varphi*\widetilde{\varphi})(Ty)
+    =d_T(\psi*\widetilde{\psi})(y).
+  \]
+  The quadratic form of $T_\#J$ is therefore $d_T$ times a nonnegative quadratic
+  form of $J$. With $\Sigma = \epsilon T^{-1}(T^{-1})^\top$, direct Gaussian
+  change of variables gives, for every $\epsilon > 0$ and $x$,
+  \[
+    (p_\epsilon*J_T)(x)
+    =d_T^{-1}(q_\Sigma*J)(T^{-1}x).
+  \]
+  Apply the preceding comparison. The two endpoint factors contribute
+  $d_T^{-\vartheta}d_T^{-(1-\vartheta)} = d_T^{-1}$, which is the target factor.
+  This proves the comparison for the three pushed-forward measures.
+
+  For the finite-sum assertion, let $\Gamma_i,L_i,S_i$, $1 \le i \le N$, be
+  component triples, and let $w_i \ge 0$. At a fixed width and translation put
+  $l_i = (p_\epsilon*L_i)(x)$ and $s_i = (p_\epsilon*S_i)(x)$. Finite sums
+  preserve all required covariance properties and scalings. Discrete H\"older
+  gives
+  \[
+    \begin{split}
+      p_\epsilon*\left(\sum_iw_i\Gamma_i\right)
+      &\le\sum_i(w_il_i)^\vartheta(w_is_i)^{1-\vartheta}\\
+      &\le\left(p_\epsilon*\sum_iw_iL_i\right)^\vartheta
+      \left(p_\epsilon*\sum_iw_iS_i\right)^{1-\vartheta}.
+    \end{split}
+  \]
+  Zero weights cause no ambiguity, since both powers are positive. The all-zero
+  target also satisfies the comparison. This proves
+  Lemma~\ref{L:endpoint-closure}.
+\end{proof}
+
+The linear maps in Lemma~\ref{L:endpoint-closure} act on the noise covariances.
+All moment estimates below still use the original isotropic wave kernel.
+Endpoint spectral masses and variational quantities are computed for the
+transformed covariances; their values need not be unchanged by a nonorthogonal
+map.
+
+For the low endpoint let $V_{\rm low} = \mu_{\rm low}(B_1)$ in the spectral
+convention of Lemma~\ref{L:alpha-one-convolution}, and put
+\[
+  Z_{b_0}=\frac2{(1-b_0)(2-b_0)},\qquad
+  C_{\rm low}=2Z_{b_0}\pi V_{\rm low}.
+\]
+For the static endpoint, write
+\[
+  \mathcal{Q}_{\rm st}(g)
+  =\int_{\R^3}\int_{\R^3}g(y+z)^2g(y)^2\ud y
+  \,\Gamma_{\rm st}(\ud z),\qquad
+  \mathcal{F}_3=\{g\in W^{1,2}(\R^3):\|g\|_2=1\},
+\]
+using real Sobolev functions, and define
+\begin{equation}\label{E:three-static-variational}
+  \begin{split}
+    \mathcal{M}_{\rm st}
+    &=\sup_{g\in\mathcal{F}_3}
+    \left\{\mathcal{Q}_{\rm st}(g)^{1/2}-\|\nabla g\|_2^2\right\},\\
+    Q&=3-\chi,\qquad \nu_{\rm st}=4-\chi,\qquad
+    \Lambda_{\rm st}
+    =2\left(\frac{2\sqrt{\mathcal{M}_{\rm st}}}{4-\chi}\right)^{4-\chi}.
+  \end{split}
+\end{equation}
+The functional is precisely Chen--Hu's (1.11), p.~2147, for the endpoint
+covariance, with unit gradient penalty. The positive-measure energy above agrees
+with the spectral form on every real Sobolev profile by
+Lemma~\ref{L:physical-spectral-energy}; thus no density is assigned to a
+singular covariance. The lemma also supplies finiteness, since $\chi < 2$ gives
+Dalang's condition as checked below. Nonnegativity follows by dilating a
+unit-$L^2$ Schwartz function: its energy term is nonnegative and its gradient
+penalty tends to zero.
+
+\begin{proposition}[Conditional three-dimensional transfer]
+  \label{P:three-transfer}
+  Under the preceding assumptions and Hypothesis~\ref{H:three-endpoints}, with
+  $\Gamma \ne 0$, there is a finite constant $C > 0$ such that
+  \begin{equation}\label{E:three-transfer}
+    A_k(t)\le\frac{C^kt^{(4-\alpha-\alpha_0)k}}{(k!)^{3-\alpha}}
+    \quad(k\ge1),\qquad
+    \E u^2(t,x)\le\exp\left(qC^{1/q}t^\kappa\right),
+    \quad q=3-\alpha.
+  \end{equation}
+  The estimates hold for all $t > 0$ and $x \in \R^3$, with data $(1,0)$. The
+  constant may depend on the fixed covariances, $\alpha_0$, and $\vartheta$, but
+  not on $k,t,x$. In addition, the explicit variational upper constant satisfies
+  \begin{equation}\label{E:three-variational-upper}
+    \limsup_{t\to\infty}t^{-\kappa}\log\E u^2(t,x)
+    \le q\left(C_{\rm low}^{\,\vartheta}
+    \Lambda_{\rm st}^{\,1-\vartheta}\right)^{1/q}.
+  \end{equation}
+  This constant is not asserted sharp and is not substituted into the pure
+  all-time exponential bound in~\eqref{E:three-transfer}.
+\end{proposition}
+
+\begin{proof}
+  We first record the general static input needed here. For a static endpoint
+  covariance $\Xi$ of exponent $\chi$, Fourier uniqueness gives $\mu_\Xi(rA) =
+  r^\chi\mu_\Xi(A)$ for its positive spectral measure. Its unit-ball mass is
+  finite, and
+  \[
+    \int_{\R^3}(1+|\xi|^2)^{-1}\mu_\Xi(\ud\xi)
+    \le\mu_\Xi(B_1)
+    +2^\chi\mu_\Xi(B_1)\sum_{j\ge0}2^{j(\chi-2)}<\infty.
+  \]
+  Thus, the static Dalang condition holds. Let $U_n$ be the source's ordered
+  integrals for this covariance. Its nonnegative positive-definite
+  tempered-distribution class is explicitly included by the generalized
+  covariance convention in~\cite{chen.hu:25:hyperbolic}*{p.~2152, (2.18)}; its
+  homogeneity degree satisfies $0 < \chi < 2 < 3$. No density or angular
+  regularity is added here. Let $U_0 = 1$, and set $B_k(t) =
+  \sum_{m=0}^{2k}\E[U_m(t,x)U_{2k-m}(t,x)]$. If $\Xi = 0$, then $B_k = 0$ for $k
+  \ge 1$, and $C_{\rm st} = 1$ suffices in the bound below. For the remaining
+  static calculation, assume $\Xi \ne 0$. From
+  Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~3.8(i), p.~2165, and (2.17),
+  (2.19)--(2.22), pp.~2151--2153}, the expectation and product rules give finite
+  nonnegative coefficients with every split and pairing included; the latter
+  formulas also specify the two-chain and measure conventions. Finiteness of the
+  variational input follows from Chen~\cite{chen:23:exponential}*{Theorem~1.1,
+  p.~2}, which gives a finite square-root variational supremum under Dalang's
+  condition. Chen--Hu identify that supremum with $2^{\chi/(4-\chi)}\mathcal{M}$
+  on p.~2175. Hence, their coefficient-rate constant involving $\mathcal{M}$ is
+  finite. For $\Xi = \Gamma_{\rm st}$ this functional is $\mathcal{M}_{\rm st}$
+  defined above. Only finiteness, not a sharp value, is needed for the all-time
+  coefficient bound.
+
+  From Chen--Hu~\cite{chen.hu:25:hyperbolic}*{(5.1), p.~2173, and (5.15),
+  p.~2180}, at $p = 2$,
+  \[
+    B_k(t)=t^{(4-\chi)k}B_k(1),\qquad
+    \limsup_{k\to\infty}\frac1k
+    \log\left((k!)^{3-\chi}B_k(1)\right)<\infty.
+  \]
+  For $\Xi \ne 0$, choose $R > 0$ above this upper limit, then enlarge $e^R$ to
+  cover the $k$th roots of the finitely many remaining quantities
+  $(k!)^{3-\chi}B_k(1)$. We obtain a finite $C_{\rm st} = C_{\rm st}(\Xi) > 0$
+  such that
+  \begin{equation}\label{E:three-static-coefficient}
+    B_k(t)\le\frac{C_{\rm st}^{\,k}t^{(4-\chi)k}}{(k!)^{3-\chi}},
+    \qquad k\ge1,\quad t>0.
+  \end{equation}
+  Also $B_0 = 1$. We apply this source bound only after taking the fixed-order
+  noise limits, with $\Xi = \Gamma_{\rm st}$.
+
+  For the target, the same spectral scaling calculation has exponent $\alpha$.
+  Its dyadic sum for the weight $(1+|\xi|^2)^{-(2-\alpha_0)/2}$ is finite
+  because $\alpha < 2-\alpha_0$. The target fixed-order limit is supplied by
+  Lemma~\ref{L:joint-fixed-order}. The endpoint $\Gamma_{\rm low}$ has
+  covariance exponent one, with $V_{\rm low},C_{\rm low}$ defined above.
+  Finiteness of $V_{\rm low}$ follows from the Radon spectral measure. It is
+  positive: otherwise homogeneity gives $\mu_{\rm low} = 0$,
+  contradicting~\eqref{E:three-gaussian-comparison} and $\Gamma \ne 0$.
+
+  Fix $k \ge 1$, $t > 0$, and positive widths $\epsilon,\delta,\eta$. Noise
+  width $\epsilon$ means edge covariance width $2\epsilon$; $\delta$ is the
+  target temporal cutoff and $\eta$ is Green smoothing. Write
+  $X_n^{\epsilon,\delta,\eta}(t,x)$ for the source's ordered integral against
+  its smoothed field $W_{\epsilon,\delta}$, with every Green kernel replaced by
+  $G_{h,\eta}$, and set $X_0^{\epsilon,\delta,\eta} = 1$. Explicitly, the target
+  coefficient is
+  \[
+    A_k^{\epsilon,\delta,\eta}(t)
+    =\sum_{m=0}^{2k}
+    \E\left[X_m^{\epsilon,\delta,\eta}(t,x)
+    X_{2k-m}^{\epsilon,\delta,\eta}(t,x)\right].
+  \]
+  On the full disjoint union over all splits $m+n = 2k$ and all $D \in \Pi_k$,
+  define a common finite positive measure by
+  \[
+    \int\Phi\ud\nu_{k,t,\eta}
+    :=\sum_{m=0}^{2k}\sum_{D\in\Pi_k}
+    \int_{[0,t]^m_<\times[0,t]^{2k-m}_<}\ud s
+    \int\Phi(m,D,s,y)\prod_{l=1}^{2k}G_{h_l,\eta}(\ud y_l).
+  \]
+  Each chain has its own root; $h_l = s_l-s_{p(l)}$, $y_l$ is an increment, and
+  $x_l$ is the cumulative position in its chain. Empty chains use empty
+  products. The spatial mass is $\prod_lh_l$, so bounded time simplexes and
+  finite discrete sums prove finiteness. This measure does not depend on which
+  covariance is inserted.
+
+  For $J \in \{\Gamma,\Gamma_{\rm low},\Gamma_{\rm st}\}$ set
+  \[
+    H_J=\prod_{(i,j)\in D}(p_{2\epsilon}*J)(x_i-x_j),\qquad
+    T_b=\prod_{(i,j)\in D}|s_i-s_j|^{-b}.
+  \]
+  If $Q_\delta$ is the product of the target temporal covariances, the source
+  cutoff gives $0 \le Q_\delta \le T_{\alpha_0} = T_{b_0}^{\,\vartheta}$. The
+  covariance hypothesis gives $H_\Gamma \le H_{\Gamma_{\rm low}}^\vartheta
+  H_{\Gamma_{\rm st}}^{1-\vartheta}$ at the same edge width. Define the
+  deterministic low endpoint and the regularized static coefficient by
+  \[
+    L_k^{\epsilon,\eta}(t)
+    =\int T_{b_0}H_{\Gamma_{\rm low}}\ud\nu_{k,t,\eta},
+    \qquad
+    B_k^{\epsilon,\eta}(t)
+    =\int H_{\Gamma_{\rm st}}\ud\nu_{k,t,\eta}.
+  \]
+  Gaussian moments and separate chain reversal identify the target regularized
+  coefficient with $\int Q_\delta H_\Gamma \ud\nu_{k,t,\eta}$. The static
+  identity has temporal covariance one and includes self-pairings. H\"older on
+  the entire common measure yields
+  \begin{equation}\label{E:three-regularized-holder}
+    A_k^{\epsilon,\delta,\eta}(t)
+    \le\left(L_k^{\epsilon,\eta}(t)\right)^\vartheta
+    \left(B_k^{\epsilon,\eta}(t)\right)^{1-\vartheta}.
+  \end{equation}
+  No stochastic identity is assumed for $L_k^{\epsilon,\eta}$ with its original
+  temporal power, and no relation between different temporal cutoff kernels is
+  used.
+
+  Lemma~\ref{L:alpha-one-convolution} applies to the low endpoint with no
+  angular-density assumption. Its uniform closing bound is $\pi V_{\rm low}/2$.
+  Descending increment integration removes the only remaining covariance at each
+  closing label; at each opening the paired covariance is already removed and
+  the Green mass is $h_l$. The $k$ opening increments sum to at most $2t$.
+  Consequently, the common spatial bound is $(\pi V_{\rm low})^kt^k/k^k$,
+  uniformly in $\epsilon,\eta$. After summing pairings, the temporal integrand
+  is symmetric in all $2k$ labels. Its full cube integral is
+  $P_k(Z_{b_0}t^{2-b_0})^k$, where $P_k = (2k)!/(2^kk!)$. The block-order
+  factors and the binomial split sum give
+  \[
+    P_k\sum_{m=0}^{2k}\frac1{m!(2k-m)!}=\frac{2^k}{k!}.
+  \]
+  Therefore,
+  \begin{equation}\label{E:three-low-coefficient}
+    L_k^{\epsilon,\eta}(t)
+    \le\frac{C_{\rm low}^{\,k}t^{(3-b_0)k}}{k!\,k^k}
+    \le\frac{C_{\rm low}^{\,k}t^{(3-b_0)k}}{(k!)^2}.
+  \end{equation}
+  Here $b_0 < 1$ makes the original temporal cube integral finite. At fixed
+  spatial width, the static covariance is bounded, so its regularized
+  coefficient is finite too. This justifies the finite right side
+  in~\eqref{E:three-regularized-holder}.
+
+  We now identify the static inner Green limit with the source's prescribed
+  zero-Green-width approximant. Take the source's static isonormal noise $W^{\rm
+  st}$ with covariance $\Gamma_{\rm st}$ and set $W_\epsilon(x) = W^{\rm
+  st}(p_\epsilon(x-\cdot))$. All widths are therefore on the source's Gaussian
+  space, and the covariance is $p_{2\epsilon}*\Gamma_{\rm st}$. This covariance
+  is bounded and continuous, since Gaussian weighting makes its positive
+  tempered spectral measure finite. It has a continuous modification. Indeed,
+  with $\mu_{\rm st}$ the spectral measure,
+  \[
+    \E|W_\epsilon(x+h)-W_\epsilon(x)|^2
+    \le |h|^2\int_{\R^3}|\xi|^2e^{-\epsilon|\xi|^2}
+    \mu_{\rm st}(\ud\xi).
+  \]
+  The integral is finite by temperedness. Gaussian eighth moments are therefore
+  bounded by a constant times $|h|^8$. Kolmogorov's continuity criterion in
+  dimension three, applied on compact sets and then on a countable exhaustion,
+  gives the claimed modification. We choose this version. For $n \ge 1$ define
+  $\Phi_n(\mathbf{x}) = \prod_{j=1}^n W_\epsilon(x_j)$ as an $L^2$ random
+  variable. Gaussian moments show that $\Phi_n$ is continuous as a map from
+  $(\R^3)^n$ to $L^2$ and uniformly bounded there: if $v_\epsilon =
+  (p_{2\epsilon}*\Gamma_{\rm st})(0)$, then
+  \[
+    \|\Phi_n(\mathbf{x})\|_2^2\le P_n v_\epsilon^n.
+  \]
+  The continuity follows by applying the same finite Gaussian moment formula to
+  $\E|\Phi_n(\mathbf{x})-\Phi_n(\mathbf{x}')|^2$. Its separable continuous image
+  is strongly measurable.
+
+  Let $\mathfrak{g}_{n,t,x}^{\eta}$ be the finite positive ordered Green-chain
+  measure, including its time variables, from the source's kernel (2.13), with
+  each Green factor smoothed by $p_\eta$. For $\eta = 0$, its spatial marginal
+  is exactly the measure $\mu_n^{t,x}$ specified immediately before (2.22),
+  pp.~2152--2153. Its mass is finite because each spatial factor has mass its
+  time gap. Thus,
+  \[
+    U_n^{\epsilon,0}(t,x)
+    :=\int\Phi_n(\mathbf{x})
+    \mathfrak{g}_{n,t,x}^{0}(\ud\mathbf{s},\ud\mathbf{x})
+  \]
+  exists as a Bochner integral in $L^2$. We verify its agreement with the
+  source's pathwise integral, rather than identifying it only by notation. Put
+  $\rho = \mathfrak{g}_{n,t,x}^{0}$ and $M_n = P_n^{1/2}v_\epsilon^{n/2}$, and
+  denote the pathwise integral by $J_n = \int\Phi_n\ud\rho$. The continuous
+  field version makes the integrand jointly measurable. Since
+  \[
+    \int\E|\Phi_n|\ud\rho\le M_n\rho(1)<\infty,
+    \qquad
+    \|J_n\|_2
+    \le\int\|\Phi_n\|_2\ud\rho\le M_n\rho(1),
+  \]
+  the pathwise integral exists almost surely and belongs to $L^2$. For every $Y
+  \in L^2$, Cauchy--Schwarz and Fubini give
+  \[
+    \E[YJ_n]
+    =\int\E[Y\Phi_n]\ud\rho.
+  \]
+  Bochner duality gives the same identity for the $L^2$ integral. Taking $Y =
+  J_n-U_n^{\epsilon,0}$ identifies the two random variables almost surely.
+  Changing to another jointly measurable field modification leaves the integral
+  unchanged by Fubini. Since the static integrand is independent of the time
+  variables, this is the integral against $\mu_n^{t,x}$ in the source's
+  convention and hence its smoothed approximant $S_{n,\epsilon}$ with common
+  width, from Chen--Hu~\cite{chen.hu:25:hyperbolic}*{(3.1), p.~2153, and the
+  convention preceding (2.22)}. Define $U_n^{\epsilon,\eta}$ by the same formula
+  with $\mathfrak{g}_{n,t,x}^{\eta}$, and retain $U_0^{\epsilon,\eta} = 1$.
+
+  In the second and mixed moments of these integrals, the Gaussian moment
+  factors are bounded continuous functions of all spatial positions. For each
+  pair of time vectors, weak convergence of the products of Green measures,
+  including mixed products with one width already zero, applies to these
+  functions. The masses are unchanged. A constant depending only on $n,\epsilon$
+  times the product of all time gaps dominates the resulting time integrals.
+  This is integrable on the two bounded time simplexes. Hence, as
+  $\eta\downarrow0$,
+  \[
+    \E\left[(U_n^{\epsilon,\eta})^2\right]
+    \longrightarrow\E\left[(U_n^{\epsilon,0})^2\right],
+    \qquad
+    \E\left[U_n^{\epsilon,\eta}U_n^{\epsilon,0}\right]
+    \longrightarrow\E\left[(U_n^{\epsilon,0})^2\right].
+  \]
+  Subtracting twice the second limit from the two square terms proves
+  $U_n^{\epsilon,\eta} \to U_n^{\epsilon,0}$ in $L^2$. This identifies the limit
+  with the source approximant, rather than only showing that positive-width
+  approximants are Cauchy. For the target we specify the zero-Green-width object
+  as well. At fixed $\epsilon,\delta$, its field covariance is
+  $\gamma_\delta^0(s-r)(p_{2\epsilon}*\Gamma)(y-z)$, where
+  \[
+    \gamma_\delta^0(u)
+    =\Gamma(\alpha_0)^{-1}\int_0^{1/\delta}
+    e^{-\lambda|u|}\lambda^{\alpha_0-1}\ud\lambda,\qquad
+    \gamma_\delta^0(0)
+    =\frac{\delta^{-\alpha_0}}{\alpha_0\Gamma(\alpha_0)}.
+  \]
+  Here $\Gamma(\alpha_0)$ is Euler's gamma function. The variance
+  $v_{\epsilon,\delta} = \gamma_\delta^0(0)(p_{2\epsilon}*\Gamma)(0)$ is finite.
+  This field has a jointly continuous modification. The temporal covariance
+  satisfies $\gamma_\delta^0(0)-\gamma_\delta^0(h) \le C_\delta|h|$, by
+  $1-e^{-\lambda|h|} \le \lambda|h|$. The spatial increment bound just proved
+  applies to $p_{2\epsilon}*\Gamma$. The joint increment variance is therefore
+  bounded by $C_{\epsilon,\delta}(|h_0|+|h'|^2)$. Gaussian twelfth moments are
+  bounded by $C_{\epsilon,\delta}|h|^6$ for $|h| \le 1$. Kolmogorov's criterion
+  in dimension four supplies the version.
+
+  Let $\mathfrak{f}_{n,t,x}^{\eta}$ be the ordered Green measure of the target's
+  kernel (2.16), with $s_{n+1} = t$, $x_{n+1} = x$: its factors are
+  $G_{s_{j+1}-s_j,\eta}$. Define
+  \[
+    \begin{split}
+      \Psi_n(\mathbf{s},\mathbf{x})
+      &=\prod_{j=1}^nW_{\epsilon,\delta}(s_j,x_j),\\
+      X_n^{\epsilon,\delta,0}(t,x)
+      &=\int\Psi_n(\mathbf{s},\mathbf{x})
+      \mathfrak{f}_{n,t,x}^{0}(\ud\mathbf{s},\ud\mathbf{x}).
+    \end{split}
+  \]
+  The Gaussian moment bound is $\|\Psi_n\|_2^2 \le P_nv_{\epsilon,\delta}^n$.
+  Joint measurability, finite measure mass, and the preceding Fubini argument
+  show that this Bochner integral equals the pathwise integral in the target's
+  prescribed convention \cite{chen:author2026:time-dependency}*{pp.~13--14}. The
+  same definition at positive $\eta$ gives $X_n^{\epsilon,\delta,\eta}$ above.
+  Its second and mixed $\eta/0$ moments converge by weak Green convergence
+  against the bounded continuous Gaussian moment functions, with dominating
+  bound a constant times the product of the time gaps. Thus,
+  \[
+    \|X_n^{\epsilon,\delta,\eta}
+    -X_n^{\epsilon,\delta,0}\|_2\longrightarrow0.
+  \]
+  This proves the inner-limit identification with the target approximant. Both
+  order-zero objects remain one.
+
+  First take this Green limit in~\eqref{E:three-regularized-holder}, using the
+  uniform bound~\eqref{E:three-low-coefficient}. Next send the noise widths to
+  zero. The static fixed-order $L^2$ limit is from
+  Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~3.8(i), p.~2165}; the target
+  fixed-order limit is from Lemma~\ref{L:joint-fixed-order}. Products of two
+  fixed orders converge in $L^1$, since
+  \[
+    \|YZ-Y'Z'\|_1
+    \le\|Y-Y'\|_2\|Z\|_2+\|Y'\|_2\|Z-Z'\|_2.
+  \]
+  The split sums are finite, and zero-order factors remain one. We obtain
+  \[
+    A_k(t)\le
+    \left(\frac{C_{\rm low}^{\,k}t^{(3-b_0)k}}{(k!)^2}\right)^\vartheta
+    B_k(t)^{1-\vartheta}.
+  \]
+  Only now use~\eqref{E:three-static-coefficient}. Neither monotonicity of
+  spatial smoothing nor a uniform smoothed static asymptotic was needed. The
+  identities
+  \[
+    \begin{split}
+      2\vartheta+(1-\vartheta)(3-\chi)&=3-\alpha,\\
+      \vartheta(3-b_0)+(1-\vartheta)(4-\chi)&=4-\alpha-\alpha_0
+    \end{split}
+  \]
+  give the coefficient estimate with $C = C_{\rm low}^{\,\vartheta}C_{\rm
+  st}^{\,1-\vartheta}$. Finally, $A_0 = 1$, $q = 3-\alpha > 1$, and
+  \[
+    \sum_{k\ge0}\frac{z^k}{(k!)^q}
+    \le\left(\sum_{k\ge0}\frac{z^{k/q}}{k!}\right)^q
+    =e^{qz^{1/q}},\qquad z\ge0.
+  \]
+  The nonnegative full series of Proposition~\ref{P:mixed}, with $z =
+  Ct^{4-\alpha-\alpha_0}$ and $(4-\alpha-\alpha_0)/q = \kappa$, yields the
+  moment estimate. It remains to prove~\eqref{E:three-variational-upper}. The
+  precise upper coefficient rate in Chen--Hu's (5.15), p.~2180, at $p = 2$ is
+  \[
+    \begin{split}
+      \limsup_{k\to\infty}
+      \left((k!)^Q B_k(1)\right)^{1/k}
+      &\le 2^{-Q}2^{\nu_{\rm st}}
+      \left(\frac{2\sqrt{\mathcal{M}_{\rm st}}}{\nu_{\rm st}}\right)^{\nu_{\rm st}}\\
+      &=\Lambda_{\rm st}.
+    \end{split}
+  \]
+  The factor two follows from $\nu_{\rm st}-Q = 1$; the logarithm in the source
+  applies to the entire coefficient-rate product. Fix $r > 0$. There is $N_r \ge
+  1$, depending on the fixed endpoint and $r$ but not on $t$, such that
+  \[
+    B_k(1)\le\frac{(\Lambda_{\rm st}+r)^k}{(k!)^Q},
+    \qquad k\ge N_r.
+  \]
+  Static coefficient homogeneity and the already established coefficient
+  H\"older inequality therefore give, simultaneously for every $t > 0$ and $k
+  \ge N_r$,
+  \[
+    A_k(t)\le\frac{D_r^k t^{\beta k}}{(k!)^q},\qquad
+    D_r=C_{\rm low}^{\,\vartheta}(\Lambda_{\rm st}+r)^{1-\vartheta},
+    \qquad \beta=4-\alpha-\alpha_0.
+  \]
+  For each $1 \le k < N_r$ the same inequality with the exact static coefficient
+  gives $A_k(t) \le d_kt^{\beta k}$, where
+  \[
+    d_k=\frac{C_{\rm low}^{\,\vartheta k}
+    B_k(1)^{1-\vartheta}}{(k!)^{2\vartheta}}<\infty.
+  \]
+  Adding $A_0 = 1$ and the nonnegative series yields
+  \[
+    \E u^2(t,x)\le P_r(t)+e^{qD_r^{1/q}t^\kappa},\qquad
+    P_r(t)=1+\sum_{k=1}^{N_r-1}d_kt^{\beta k}.
+  \]
+  This finite power sum has $\log P_r(t)/t^\kappa \to 0$; its exponents need not
+  be integers. The logarithm of a sum of two positive terms is at most the
+  larger logarithm plus $\log2$. Consequently, the required limsup is at most
+  $qD_r^{1/q}$. Let $r\downarrow0$ to obtain~\eqref{E:three-variational-upper}.
+  This also covers a zero static rate, without division by that rate. The exact
+  static homogeneity makes $N_r$ independent of $t$; no target coefficient
+  homogeneity or smoothed static asymptotic was invoked. The finitely many low
+  orders were kept, so this argument does not replace the all-time constant by
+  the asymptotic one. This proves Proposition~\ref{P:three-transfer}.
+\end{proof}

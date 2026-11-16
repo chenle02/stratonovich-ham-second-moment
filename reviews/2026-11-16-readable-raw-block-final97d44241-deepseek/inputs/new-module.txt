@@ -1,0 +1,902 @@
+\section{Time blocks for the original noise and the pointwise lower bound}
+\label{S:actual-raw-block-lower}
+
+Fix a nonzero covariance from Hypothesis~\ref{H:homog} and any real nonnegative
+nonzero $\Psi \in C_c^\infty((0,1)\times\R^d)$. Retain the \emph{original} $Z =
+W(\Psi)$, $v = v_\Psi > 0$ and mean $h_s$ of Lemma~\ref{L:compact-raw-profile}.
+Choose one finite even mask $m_R \in [0,1]$, equal to one on $B_R$ and supported
+in $\overline{B}_{2R}$, as in Proposition~\ref{P:compact-original-common-trial}.
+Then $V_s = m_Rh_s$ has the ground family, rate $\lambda_s$ and full $F$
+projection of Section~\ref{S:compact-mean-family}. Set
+\[
+  I_R=\int_0^1\lambda_s\ud s,\qquad
+  Q_2=\liminf_{T\to\infty}T^{-\kappa}\log\E|u(T,0)|^2.
+\]
+We will prove $Q_2 \ge 2I_R-v/2$, for this same control and covariance. Fix a
+real nonnegative smooth compact $\phi$ of integral one, the bounded observable
+$O_\phi$, and the data $e_0 = (0,1,0) \in F$. Both displacement and velocity are
+retained. This is the same physical profile $m_R = \zeta_R$ used in the operator
+path and compact mean; no mask is changed in a covariance identity. The
+semiscaled $W$ below is the given-law noise. The comparison to the unscaled
+solution uses equality in law, not samplewise identities on one probability
+space for every $T$.
+
+\subsection{The common original noise and its exact Gaussian shift}
+
+Choose an integer $B \ge 1$, later fixed by the cone estimate, and take $0 <
+\delta < \min(1,1/B)$. Define
+\begin{equation}\label{E:raw-block-clocks}
+  N=\left\lfloor\frac1{\delta B}\right\rfloor\ge1,\quad
+  s_m=m\delta B\ (0\le m\le N),\quad
+  \tau=\delta^{-1}-NB\in[0,B),\quad
+  g_\delta=\delta^{(1-a)/2}.
+\end{equation}
+For a smooth compact positive-fast-time test $f$, extended by zero, put
+\begin{equation}\label{E:raw-block-pullback}
+  T_{\delta,m}f(s,x)
+  =\delta^{a/2-1}f((s-s_m)/\delta,x),\qquad
+  W_{\delta,m}(f)=W(T_{\delta,m}f).
+\end{equation}
+Write $W_{\mathrm{fast}} = W_{\delta,0}$. Use the same admissible
+$\gamma,\theta,\beta$ as~\eqref{E:driver-parameters}. Write $A_R(W_{\delta,m})$
+for the $F$ integrated operator obtained by the bounded extension
+\eqref{E:constant-phase-driver}, on the local horizon $[0,B]$, and set
+\begin{equation}\label{E:raw-block-drivers}
+  X_m=g_\delta A_R(W_{\delta,m}),\qquad
+  H_m(u)=\int_0^uS_F(-r)iB_F(V_{s_m+\delta r})S_F(r)\ud r.
+\end{equation}
+The convolution formula for $h$ extends smoothly to $s \in [0,2]$, covering
+these means. Ground templates will only use $s_m \in [0,1]$.
+
+\LeanMarker{L:raw-block-inputs}
+\begin{lemma}[Coupled Gaussian block inputs]\label{L:raw-block-inputs}
+  Each $T_{\delta,m}$ is an isometry of the original test completion, respecting
+  covariance-null tests. All $W_{\delta,m}$ and $Z$ are on the same given noise
+  space, without an independence assertion. Let $\mathcal{K}(F)$ have the
+  operator norm and let $\mathscr{B}_0 = h_0^\theta([0,B];\mathcal{K}(F))$ be
+  the $C^\theta$ closure of zero-initial polygonal compact-operator paths. It is
+  a separable Banach space. In $\mathscr{B}_\delta = \mathscr{B}_0^{N+1}$ with
+  maximum norm, $(X,Z)$, $X = (X_m)_{m=0}^N$, is jointly centered Gaussian and
+  \begin{equation}\label{E:raw-block-covariance}
+    b:=\E[XZ]=\sqrt\delta\,H,\qquad H=(H_m)_{m=0}^N.
+  \end{equation}
+  Moreover,
+  \begin{equation}\label{E:raw-block-moments}
+    \|X_m\|_{L^p\mathscr{B}_0}
+    \le C_{R,B}\sqrt p\,g_\delta,\qquad p\ge1.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We first check the time pullbacks in the original covariance norm. We then
+  place the operator paths in a separable space and compute their joint
+  covariance with the single original Gaussian variable.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We check the common-space pullback identities.
+  Substituting $s = s_m+\delta u$, $t = s_m+\delta r$ in the original covariance
+  gives the factor $\delta^{a-2}\delta^2\delta^{-a} = 1$. Thus, the maps extend
+  isometrically through the null quotient. Direct test substitution gives
+  $W_{\delta,m}(f) = W_{\mathrm{fast}}(f(\cdot-mB,\cdot))$. These are explicit
+  common-space identities.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify a separable path space for the
+  Gaussian variables.
+  The pullback isometry gives $W_{\delta,m}$ the same Gaussian law as $W$, so
+  Proposition~\ref{P:constant-phase-driver} supplies the path convergence and
+  Gaussian norm bound on $[0,B]$, with the same $C_{R,B}$ for every
+  $m,\delta$.
+  Finite-rank rational matrices in a countable real Hilbert basis are dense in
+  $\mathcal{K}(F)$: for compact $T$, $P_nTP_n \to T$ in norm by compactness of
+  $T,T^*$, and finite entries admit rational approximation. Polygonal paths with
+  rational breakpoints and such matrices give separability of $\mathscr{B}_0$.
+  To approximate breakpoints, use uniform convergence, uniform Lipschitz bounds
+  and $[f]_\theta \le (2\|f\|_\infty)^{1-\theta}\operatorname{Lip}(f)^\theta$.
+  The same inequality puts every zero-initial Lipschitz compact-valued path in
+  $\mathscr{B}_0$ by polygonal approximation. The finite original coefficient
+  paths $iA_jL_\psi$ have these properties. Their Gaussian sums converge in
+  $L^pC^\theta$ and hence in the closed space $\mathscr{B}_0$. Their laws and
+  the parent Gaussian norm bound give~\eqref{E:raw-block-moments}. Every finite
+  joint coefficient list with $Z$ is Gaussian on the same $W$. Scalar continuous
+  functionals pass through the $L^2$ limits, preserving Gaussianity by
+  convergence of variances and characteristic functions. Thus, $(X,Z)$ is the
+  asserted Banach Gaussian variable. Cauchy--Schwarz gives $\E\|XZ\| \le
+  \|X\|_2\sqrt v < \infty$, so its Bochner covariance exists.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We compute the covariance direction of the
+  operator paths.
+  The time substitution in the mean pairing contributes a Jacobian $\delta$,
+  changing the pullback factor $\delta^{a/2-1}$ to $\delta^{a/2}$.
+  The original covariance and the test pullback give
+  \begin{equation}\label{E:raw-block-mean-jacobian}
+    \E[W_{\delta,m}(f)Z]
+    =\delta^{a/2}\int f(u,x)h_{s_m+\delta u}(x)\ud x\ud u.
+  \end{equation}
+  Absolute Fubini uses compact supports, local Radon mass and $a < 1$. This
+  identity extends to the explicit matrix-element tests for the operator path on
+  $E$: their time indicator is approximated by smooth bounded tests on one
+  compact support, converging in the original covariance norm by dominated
+  convergence against $|u-r|^{-a}\Gamma$; their mean pairings converge as well.
+  Insert the matrix-element test $\zeta_R1_{(0,u)}v_zG_w$
+  in~\eqref{E:raw-block-mean-jacobian}: the mask multiplying the mean is
+  $V_{s_m+\delta r}$, and~\eqref{E:driver-covariance-row} identifies the
+  resulting integral with the row of $H_m$.
+  For constant inputs, the free displacement from $(c_1\psi,c_2\psi)$ equals
+  $c_1+rc_2$ on $B_{2R}$ for $r\le B$, since $\psi=1$ on the enlarged ball;
+  multiplying by $V_{s_m+\delta r}$ therefore gives the same constant-column
+  forcing in $H_m$.
+  The Sobolev adjoint is the one in~\eqref{E:driver-covariance-row}. Hence, the
+  path covariance is $g_\delta\delta^{a/2}H_m = \sqrt\delta\,H_m$ on real
+  Schwartz $E$ pairs. For constant inputs the two columns are the same $L_\psi$
+  inputs $(\psi,0)$ and $(0,\psi)$, and total finite propagation identifies
+  their deterministic response. The span of $E$ and both constant coordinates is
+  dense in $F$; $E$ alone is not. Boundedness, rational times and path
+  continuity prove~\eqref{E:raw-block-covariance} on all $F$. In particular, $H
+  = b/\sqrt\delta \in \mathscr{B}_\delta$. This proves
+  Lemma~\ref{L:raw-block-inputs}.
+\end{proof}
+
+The next identity is the covariance-direction Cameron--Martin formula;
+see Janson~\cite{janson:97:gaussian}*{Theorem~14.1(v), pp.~216--217}.
+We prove it on the norm-Borel space used here to verify the measurable
+realization and its deterministic translate.
+
+\begin{proposition}[Change of law on the whole norm-Borel space]
+  \label{P:raw-block-gaussian-law}
+  For every nonnegative norm-Borel $j$ on all of $\mathscr{B}_\delta$,
+  \begin{equation}\label{E:raw-block-gaussian-law}
+    \E j(X)=
+    \E\left[e^{-Z/\sqrt\delta-v/(2\delta)}j(X+H)\right].
+  \end{equation}
+  The equality is valid also as an extended nonnegative integral.
+\end{proposition}
+
+\begin{proof}
+  We prove the change of measure first for finitely many continuous
+  coordinates, allowing singular covariance matrices. We then show that these
+  coordinates generate the norm-Borel sets and extend the identity to
+  nonnegative functions.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We shift the finite Gaussian coordinate vectors.
+  For real $s$, the density $e^{-sZ-s^2v/2}$ defines an equivalent probability
+  measure $Q_s$ by completing the square in the $N(0,v)$ density. For any finite
+  list $\ell$ of continuous real coordinates on $\mathscr{B}_\delta$, the
+  Gaussian vector $(\ell(X),Z)$ is equal in law to $(TG,z\cdot G)$ for a finite
+  standard Gaussian vector $G$. A positive covariance square root gives this
+  representation even when singular; no inverse is used. Here $Tz = \ell(b)$ and
+  $|z|^2 = v$. Substitution $G' = G+sz$ in its density gives
+  $\E_{Q_s}f(\ell(X+sb)) = \E f(\ell(X))$ for every bounded Borel $f$.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We pass from coordinates to the full norm-Borel
+  space.
+  The matrix entries of each block in a real Hilbert basis at rational times,
+  together with $0,B$, generate the norm-Borel sigma-field. To see the
+  operator-norm point, for a countable dense set $\mathcal{D}$ of unit vectors
+  obtained from normalized rational finite basis combinations, $\|T\| =
+  \sup_{u,w\in\mathcal{D}}|\langle Tu,w\rangle|$. These pairings are finite
+  linear combinations of matrix entries. Supremum and H\"older norms of
+  continuous paths are suprema over rational times and pairs. Thus, distance to
+  every fixed element of $\mathscr{B}_\delta$ is coordinate-measurable. Open
+  balls are measurable by rational closed-ball approximation, and separability
+  makes every open set a countable union of balls from dense centers. Conversely
+  the coordinates are continuous. The cylinder sets form a generating pi-system;
+  uniqueness of probability measures extends the finite-coordinate equality to
+  all norm-Borel sets. Simple functions and monotone convergence give the
+  identity for nonnegative $j$. Finally, take $s = \delta^{-1/2}$ and use $sb =
+  H$ from~\eqref{E:raw-block-covariance}. The map and its deterministic
+  translate are defined on the entire input space; there is no translated
+  exceptional-domain assumption. This proves
+  Proposition~\ref{P:raw-block-gaussian-law}.
+\end{proof}
+
+The identity retains the random shifted input $X+H$. Replacing its
+expected contribution by evaluation at the deterministic mean can lose
+the exponential constant, even in a scalar Gaussian calculation; see
+No-go~\ref{P:nogo-16}. Positive semidefinite residual covariance does not
+justify discarding that residual: No-go~\ref{P:nogo-19} gives an admissible
+parent model whose rank-one projection has a larger small-coupling wave mean.
+
+
+\subsection{Small noisy blocks and a cone in the displacement-velocity space}
+
+For any $x \in \mathscr{B}_0$ define $D_x(u) = S_F(u)U_x(u,0)$ by the
+everywhere-defined linear Young map of
+Proposition~\ref{P:constant-young-linear}. Write $D_m^0 = D_{X_m}$ and $D_m^+ =
+D_{X_m+H_m}$. The latter retains both the mean and the residual noise.
+
+The shifted blocks $D_m^+$ are random. We now show that their largest distance
+from the deterministic $P_{s_m}$ of~\eqref{E:compact-F-block}, over all blocks
+$m \le N$, tends to zero in every finite $L^q$.
+
+\begin{lemma}[Uniform block error]\label{L:raw-block-uniform-error}
+  Let $M_\delta = \max_{m\le N}\|X_m\|_{\mathscr{B}_0}$, including its factor
+  $g_\delta$. Then $M_\delta \to 0$ in every finite $L^q$, and, for some $c >
+  0$,
+  \begin{equation}\label{E:raw-block-maximum-exponential}
+    \sup_\delta\E e^{cM_\delta^2}<\infty.
+  \end{equation}
+  With the deterministic $P_s$ in~\eqref{E:compact-F-block},
+  \begin{equation}\label{E:raw-block-operator-error}
+    E_{\mathrm{op},\delta}:=
+    \max_{m\le N}\sup_{0\le u\le B}
+    \|D_m^+(u)-P_{s_m}(u)\|_{\mathcal{B}(F)}
+    \longrightarrow0
+    \quad\hbox{in every finite }L^q.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We control the largest scaled Gaussian block by a moment bound and its
+  exponential series. We then compare shifted drivers on a fixed ball and use
+  uniform higher moments to pass from convergence in probability to
+  convergence in every finite $L^q$.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound the scaled maximum and its exponential
+  moment.
+  The maximum and~\eqref{E:raw-block-moments}, with $N+1 \le 2/\delta$, give
+  \[
+    \|M_\delta\|_p
+    \le (N+1)^{1/p}C\sqrt p\,g_\delta
+    \le C'\sqrt p\,\delta^{(1-a)/2-1/p}.
+  \]
+  For a finite family, the $p$th power of the maximum is at most the sum of
+  the $p$th powers. This gives the factor $(N+1)^{1/p}$ without independence.
+  For fixed $q$, choose $p > \max(q,2/(1-a))$ to prove the first limit. No
+  independence is needed. Choose an integer $n_0$ with $n_0(1-a) \ge 1$. For $n
+  \ge n_0$,
+  \[
+    \E M_\delta^{2n}
+    \le2C^{2n}(2n)^n\delta^{n(1-a)-1}
+    \le2C^{2n}(2n)^n.
+  \]
+  For $1 \le n < n_0$, Lyapunov bounds the moment by the appropriate power of
+  the $2n_0$ moment. These finitely many terms are bounded. For the remaining
+  exponential series, $n! \ge (n/e)^n$ gives a geometric tail $2\sum_{n\ge
+  n_0}(2ecC^2)^n$ for small $c$. This
+  proves~\eqref{E:raw-block-maximum-exponential}; no such assertion is made for
+  the unscaled maximum.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We compare each noisy block with its frozen
+  deterministic flow.
+  Let $H_m^{\mathrm{stat}}$ be the primitive for constant potential $V_{s_m}$.
+  The primitive estimate is Proposition~\ref{P:constant-compact-base} on
+  horizon $B$, applied to $V_{s_m+\delta r}$, $V_{s_m}$ and their difference,
+  in the $L^\infty$ and $L^2$ coefficient norms.
+  The frozen flow is $P_{s_m}(u)=S_F(u)U_{H_m^{\mathrm{stat}}}(u,0)$;
+  Proposition~\ref{P:constant-young-linear} compares it with the driver
+  $X_m+H_m$, whose distance from $H_m^{\mathrm{stat}}$ is at most
+  $M_\delta+C\delta$ on the fixed driver ball.
+  Compact mean smoothness on $[0,2]$ and the statewise primitive bound give
+  \[
+    \sup_m\max(\|H_m\|_{C^\theta},
+    \|H_m^{\mathrm{stat}}\|_{C^\theta})\le H_0,\qquad
+    \sup_m\|H_m-H_m^{\mathrm{stat}}\|_{C^\theta}\le C\delta.
+  \]
+  Indeed, the potential difference is at most $C\delta B$ in $L^\infty$ and
+  $L^2$; integration of the bounded free groups gives its Lipschitz primitive
+  bound on this fixed horizon. On $\{M_\delta\le1\}$, local Young stability on
+  the fixed ball of radius $H_0+1$ gives $E_{\mathrm{op},\delta} \le
+  C(M_\delta+\delta)$. This proves convergence in probability. The global Young
+  bound also gives
+  \[
+    \max_m\sup_{u\le B}\|D_m^+(u)\|
+    \le C_B\exp\big(C_B(1+H_0+M_\delta)^{1/\theta}\big).
+  \]
+  Since $1/\theta < 2$, every finite power of this bound is dominated by a
+  constant times the exponential in~\eqref{E:raw-block-maximum-exponential}.
+  Uniform higher moments yield uniform integrability, proving
+  \eqref{E:raw-block-operator-error}. Suprema are measurable: on a countable
+  dense set of unit states each difference is continuous in $u$, so rational
+  times and those states suffice. Operator-norm continuity of the physical free
+  group is not used. Only $s_m \le 1$ supplies the ground templates. This proves
+  Lemma~\ref{L:raw-block-uniform-error}.
+\end{proof}
+
+Lemma~\ref{L:raw-block-uniform-error} bounds the distance of each shifted block
+from $P_{s_m}$. It says nothing about the product of the blocks. The next lemma
+is deterministic and holds for every $N \ge 1$. If each factor $D_m$ is within
+$\epsilon_{\mathrm{op}}$ of $P_{\sigma_m}$, and adjacent indices $\sigma_m$ are
+within $\omega$, then the product satisfies the lower bound
+\eqref{E:raw-block-positive-product}.
+
+\LeanMarker{L:raw-block-indexed-cone}
+\begin{lemma}[Indexed cone and terminal displacement]
+  \label{L:raw-block-indexed-cone}
+  Fix $0 < \varrho < 1/2$. There are an integer $B \ge 1$ and positive
+  $\omega,\epsilon_{\mathrm{op}},c_*$ such that the following holds for every $N
+  \ge 1$. If $\sigma_0,\ldots,\sigma_N \in I$ have adjacent distances at most
+  $\omega$ and real bounded operator families $D_m(u)$, $0 \le u \le B$, satisfy
+  \[
+    \max_{m\le N}\sup_{0\le u\le B}
+    \|D_m(u)-P_{\sigma_m}(u)\|\le\epsilon_{\mathrm{op}},
+  \]
+  then, for $0 \le u \le B$,
+  \begin{equation}\label{E:raw-block-positive-product}
+    O_\phi D_N(u)D_{N-1}(B)\cdots D_0(B)e_0
+    \ge c_*(1-\varrho)^{N-1}
+    \exp\left(B\sum_{m<N}\lambda_{\sigma_m}
+    +u\lambda_{\sigma_N}\right)>0.
+  \end{equation}
+  No positivity, composition or independence assumption on the $D_m$ is
+  required.
+\end{lemma}
+
+\begin{proof}
+  We choose the cone aperture before the block length and perturbation
+  tolerances. We prove entrance, rebase at each changing index, and finally
+  bound the terminal observable even when the last interval is short.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We choose the margins in an order independent of
+  the number of blocks.
+  Proposition~\ref{P:compact-F-projection}
+  and~\eqref{E:compact-positive-margins} give the positive margins below and
+  norm continuity of $e_s,\ell_s,\Pi_s$; compactness of $I$ makes their bounds
+  finite and their continuity uniform.
+  From~\eqref{E:compact-normalized-complement} fix $C_{\mathrm{gap}} \ge 1$,
+  $\eta_{\mathrm{gap}} > 0$ so the normalized complementary norm is at most
+  $C_{\mathrm{gap}}e^{-\eta_{\mathrm{gap}}t}$. Define positive margins and
+  finite bounds
+  \[
+    a_*=\inf_I\ell_s(e_0),\quad j_*=\inf_I O_\phi(e_s),\quad
+    M_e=\max(1,\sup_I\|e_s\|),\quad
+    M_\ell=\max(1,\sup_I\|\ell_s\|).
+  \]
+  Also put $M_P = \max(1,\sup_I\|\Pi_s\|)$, $M_Q = 1+M_P$, $M_z = M_e+1$, $E_0 =
+  \|e_0\| = 1$ and $H_{\mathrm{obs}} = \max(1,\|O_\phi\|)$. Choose the aperture
+  \emph{first}: $\vartheta = \min(1,j_*/(16H_{\mathrm{obs}}C_{\mathrm{gap}})) >
+  0$. Next choose integer $B \ge 1$ with
+  \[
+    q_B:=C_{\mathrm{gap}}e^{-\eta_{\mathrm{gap}}B}
+    \le\min\left(\frac18,\frac{\vartheta a_*}{8M_QE_0}\right).
+  \]
+  Choose $\nu > 0$ such that $\nu M_z \le \min(\varrho/2,\vartheta,1/4)$.
+  Uniform continuity of $\ell_s,\Pi_s$ supplies $\omega > 0$ for which adjacent
+  distances at most $\omega$ give both norm differences at most $\nu$. Finally,
+  choose $\epsilon_{\mathrm{op}} > 0$ satisfying all five smallness conditions
+  \begin{align*}
+    M_\ell\epsilon_{\mathrm{op}}M_z&\le\varrho/2,&
+    M_Q\epsilon_{\mathrm{op}}M_z&\le\vartheta/4,\\
+    M_\ell\epsilon_{\mathrm{op}}E_0&\le a_*/2,&
+    M_Q\epsilon_{\mathrm{op}}E_0&\le\vartheta a_*/8,&
+    H_{\mathrm{obs}}\epsilon_{\mathrm{op}}M_z&\le j_*/8.
+  \end{align*}
+  All denominators are positive. This order of choices uses the normalized
+  complement rather than a growing terminal norm.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We prove entrance into the first cone.
+  The identities in~\eqref{E:compact-F-eigen} give
+  $\ell_sP_s(B)=e^{\lambda_sB}\ell_s$ and $Q_sP_s(B)=P_s(B)Q_s$, so the
+  unperturbed normalized entrance amplitude is $\ell_s(e_0)$ and its residual
+  is at most $q_BM_QE_0$; perturbation errors use $e^{-\lambda_sB}\le1$.
+  The cone at $s$ consists of $z = Ae_s+r$, with $A = \ell_s(z) > 0$, $\ell_s(r)
+  = 0$ and $\|r\|_F \le \vartheta A$. In particular, $r = Q_sz$ and $\|z\| \le
+  M_zA$. For entrance, $z_1 = D_0(B)e_0$, with $b = \sigma_0$, has normalized
+  amplitude at least $a_*-M_\ell\epsilon_{\mathrm{op}}E_0 \ge a_*/2$. Its
+  normalized residual is at most $q_BM_QE_0+M_Q\epsilon_{\mathrm{op}}E_0 \le
+  \vartheta a_*/4$. Thus, it enters the cone with residual ratio at most
+  $\vartheta/2$ and amplitude at least $e^{\lambda_bB}a_*/2$.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We rebase the cone and propagate it through each
+  full block.
+  For an old-cone state $z = Ae_b+r$ and an adjacent index $c$, rebase before
+  using the complementary estimate:
+  \[
+    \ell_c(z)\ge(1-\nu M_z)A,\qquad
+    \|Q_cz\|\le\|Q_bz\|+\|(\Pi_b-\Pi_c)z\|
+    \le(\vartheta+\nu M_z)A.
+  \]
+  Since $Q_c-Q_b=\Pi_b-\Pi_c$, the change in the residual is controlled by the
+  projection difference times $\|z\|$. Likewise, $\ell_c(z)-\ell_b(z)$ is
+  controlled by the dual difference times $\|z\|$. Using $\|z\|\le M_zA$ gives
+  the two rebasing errors in the display.
+  For the next full block $D$ close to $P_c(B)$, put $x =
+  e^{-\lambda_cB}\ell_c(Dz)$ and $y = e^{-\lambda_cB}\|Q_cDz\|$. Since
+  $\lambda_c > 0$, the perturbation and smallness conditions give
+  \[
+    x\ge(1-\nu M_z-M_\ell\epsilon_{\mathrm{op}}M_z)A
+    \ge(1-\varrho)A>A/2,
+  \]
+  and
+  \[
+    y\le
+    [q_B(\vartheta+\nu M_z)+M_Q\epsilon_{\mathrm{op}}M_z]A
+    \le\vartheta A/2.
+  \]
+  The last inequality uses $q_B \le 1/8$, $0 \le \nu M_z \le \vartheta$ and
+  $M_Q\epsilon_{\mathrm{op}}M_z \le \vartheta/4$. Together with $\varrho < 1/2$,
+  these give $y \le \vartheta x$. These are precisely the finite residual and
+  cone-conversion margins; the old residual was not assumed to lie in the new
+  kernel. Each full block therefore preserves the new cone and multiplies its
+  amplitude by at least $e^{\lambda_cB}(1-\varrho)$.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We bound the observable on the final partial
+  block.
+  For the terminal $0 \le u \le B$, rebase once more to $c = \sigma_N$. The same
+  bounds give $\ell_c(z) \ge 3A/4$ and $\|Q_cz\| \le 2\vartheta A$.
+  Consequently,
+  \[
+    e^{-\lambda_cu}O_\phi(P_c(u)z)/A
+    \ge3j_*/4-2H_{\mathrm{obs}}C_{\mathrm{gap}}\vartheta.
+  \]
+  The normalized growing component contributes at least $3j_*/4$. The rebased
+  residual has norm at most $2\vartheta A$, and the normalized complementary
+  flow is at most $C_{\mathrm{gap}}$ for every nonnegative terminal time.
+  Applying the observable norm gives the subtracted residual term, uniformly
+  even at $u=0$.
+  The perturbation changes this by at most
+  $H_{\mathrm{obs}}\epsilon_{\mathrm{op}}M_z \le j_*/8$. Since
+  $16H_{\mathrm{obs}}C_{\mathrm{gap}}\vartheta \le j_*$, the result is at least
+  $j_*/2$. Combine entrance, all $N-1$ intermediate full blocks and this
+  terminal estimate to obtain~\eqref{E:raw-block-positive-product}, with $c_* =
+  a_*j_*/4$. The induction is empty for $N = 1$ and the estimate includes $u =
+  0$. This proves Lemma~\ref{L:raw-block-indexed-cone}.
+\end{proof}
+
+\subsection{Source restart and comparison with the original point}
+
+So far the blocks $D_m^0$ and $D_m^+$ are defined one at a time, from the local
+operator paths $X_m$ and $X_m+H_m$. We now show that each family forms the
+successive pieces of its corresponding global flow, and that its finite
+products are source limits in $L^2$ at fixed $\delta,N$. The proof of
+Proposition~\ref{P:raw-block-point-comparison} uses this to verify the
+source-limit premise of the masked comparison.
+
+\LeanMarker{L:raw-block-restart}
+\begin{lemma}[Composition over time blocks and regularized products]
+  \label{L:raw-block-restart}
+  Fix $\delta,B,N$ and let $L = \delta^{-1}$, $L_{\mathrm{ext}} = (N+1)B \ge L$.
+  On this global fast horizon define $A_{\mathrm{glob}} = g_\delta
+  A_R(W_{\mathrm{fast}})$. Its physical flow obeys
+  \begin{equation}\label{E:raw-block-restart}
+    P_{\mathrm{glob}}(mB+u,mB)=D_m^0(u),\qquad 0\le u\le B.
+  \end{equation}
+  The analogous identity holds with the deterministic mean $V_{\delta t}$ added
+  globally and local operator paths $X_m+H_m$. Their finite block products,
+  including the last remainder $\tau$, are source limits in $L^2$, at this fixed
+  $\delta,N$.
+\end{lemma}
+
+\begin{proof}
+  We use a single regularized slow noise to realize every fast and local
+  source together. An ordinary change of variables gives the restart identity.
+  We pass it through the fixed-horizon source limit and control the finite
+  products by a telescoping estimate.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct coupled global and local
+  regularizations.
+  Take one regularized slow noise preserving the given noise $Y_{\epsilon,\eta}$
+  on the extension of the given $W$ constructed in
+  Section~\ref{S:source-driver-convergence}. Define the fast and local noises by
+  \[
+    Y_{\mathrm{fast}}(f)=Y_{\epsilon,\eta}(T_{\delta,0}f),\qquad
+    Y_m(f)=Y_{\epsilon,\eta}(T_{\delta,m}f).
+  \]
+  The pullback isometry and~\eqref{E:source-two-dominations} give source and
+  residual variance bounds by $\|f\|_{H_W}^2$. The residual tends to zero on
+  each transformed smooth compact test at fixed $\delta,m$. Joint Gaussianity is
+  retained. Proposition~\ref{P:source-gaussian-transfer} therefore gives the
+  $L^pC^\theta$ operator-path limits on $[0,L_{\mathrm{ext}}]$ and on $[0,B]$,
+  including both constant columns.
+
+  The field-test integral identity of
+  Proposition~\ref{P:source-canonical-convergence} passes through these test
+  pullbacks by change of variables; the proof of
+  Lemma~\ref{L:constant-source-response} then identifies the ordinary
+  primitives using spatial smoothness and total finite propagation.
+  Their random fields are $Y_{\mathrm{fast}}(u,x) =
+  \delta^{a/2}Y_{\epsilon,\eta}(\delta u,x)$ and $Y_m(u,x) =
+  Y_{\mathrm{fast}}(mB+u,x)$. Indeed, these follow by change of variables in
+  their test integrals. The temporal law is $K_{\eta/\delta}$ because
+  $\delta^aK_\eta(\delta r) = K_{\eta/\delta}(r)$; the spatial heat law and all
+  joint width rules are unchanged. They are continuous in time and smooth in
+  space. Their ordinary primitives equal their Gaussian operator paths: their
+  matrix entries are $Y_m(h_R)$, by the indicator approximation used
+  in~\eqref{E:raw-block-mean-jacobian} and the point-test integral identity.
+  Total finite propagation extends this identity to both constant columns. This
+  does not assume a separately chosen extension preserving the given noise
+  automatically commutes with time dilation.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the restart relation before and after
+  removing the source widths.
+  Changing the ordinary source integration variable and composing the free
+  groups gives the exact identity on $F$
+  \[
+    S_F(mB)\big[A_{\mathrm{glob}}^{\mathrm{src}}(mB+u)
+    -A_{\mathrm{glob}}^{\mathrm{src}}(mB)\big]
+    S_F(-mB)=X_m^{\mathrm{src}}(u).
+  \]
+  No physical mask is commuted through a wave group. Restriction, difference and
+  conjugation are bounded maps on these fixed-horizon $C^\theta$ spaces. Passing
+  the source limits gives the same identity for $A_{\mathrm{glob}},X_m$. For the
+  finitely many $m$, a convergent subsequence or rational times and path
+  continuity gives simultaneous identities in $u$. Conjugation norms need only
+  be finite at this fixed $\delta$.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify the local Young equations and compose
+  the blocks.
+  Conjugate the global interaction Young equation on $[mB,mB+u]$ by $S_F(mB)$.
+  Bounded linearity of its Riemann sums and that original identity give the
+  local equation driven by $X_m$. Uniqueness identifies it with $U_{X_m}$,
+  proving \eqref{E:raw-block-restart}. The ordinary deterministic primitive for
+  $V_{\delta t}$ has the identical cocycle with local $H_m$. Composition now
+  identifies the full product, with terminal $\tau$.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We pass finite products through the source limit.
+  For the unshifted factors use Proposition~\ref{P:constant-gaussian-flow} on
+  the fixed horizon $[0,L_{\mathrm{ext}}]$; for the shifted factors use
+  Proposition~\ref{P:constant-compact-base} with $g=g_\delta$ and the fixed
+  mean $V_{\delta t}$, followed by the restart identity.
+  For completeness, source convergence of these finite products requires no
+  growing-product stability assertion. At fixed $\delta,N$ let $C \ge 1$ be the
+  maximum norm of their source and original factors, and let $e_{\mathrm{src}}$
+  be the maximum factor difference. The parent Young convergence gives every
+  finite moment of $C$ uniformly in source widths and $e_{\mathrm{src}} \to 0$
+  in every finite $L^p$. If $d(n)$ is the difference of the first $n$ ordered
+  products, then
+  \[
+    d(n+1)\le C d(n)+C^n e_{\mathrm{src}},\qquad d(0)=0.
+  \]
+  Subtract the next pair of products by adding and subtracting the source
+  factor times the old partial product. One term is at most $C$ times the
+  previous difference; the other is at most $e_{\mathrm{src}}$ times the norm
+  of an old product of $n$ factors, bounded by $C^n$. This gives the displayed
+  recurrence without commuting factors.
+  Extend both finite sequences by identities so the recurrence holds for all
+  natural $n$. The finite error-accumulation estimate gives $d(N+1) \le
+  (N+1)C^{N+1}e_{\mathrm{src}}$. H\"older, using $C$ in $L^{4(N+1)}$ and the
+  error in $L^4$, proves $L^2$ convergence. This is only a fixed-$\delta$ source
+  limit. Shifted source products may use the fixed original mean plus the
+  regularized noise; no finite-source Cameron mean is substituted. This proves
+  Lemma~\ref{L:raw-block-restart}.
+\end{proof}
+
+\input{notes/figures/global-control-blocks}
+
+\begin{proposition}[The square observable and canonical comparison]
+  \label{P:raw-block-point-comparison}
+  Define the signed averages without and with the deterministic mean
+  \[
+    U_{\delta,B}
+    =O_\phi D_N^0(\tau)D_{N-1}^0(B)\cdots D_0^0(B)e_0,
+    \qquad
+    Y_{\delta,B}
+    =O_\phi D_N^+(\tau)D_{N-1}^+(B)\cdots D_0^+(B)e_0.
+  \]
+  They have all finite unweighted moments, and
+  \begin{align}
+    \E U_{\delta,B}^2
+    &=\E\left[e^{-Z/\sqrt\delta-v/(2\delta)}
+    Y_{\delta,B}^2\right],
+    \label{E:raw-block-square-identity}\\
+    \E U_{\delta,B}^2
+    &\le\E|V_\delta(1,0)|^2
+    =\E|u(T,0)|^2,\qquad \delta=T^{-\kappa}.
+    \label{E:raw-block-original-comparison}
+  \end{align}
+  The variance $v$ in the density is the original slow original variance.
+\end{proposition}
+
+\begin{proof}
+  We first apply the exact Gaussian change of law to the squared observable on
+  the whole path space. We then verify the source-limit premise for the
+  unshifted masked product and compare it with the canonical point moment at
+  the scaled amplitude.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We apply the Gaussian identity to an
+  everywhere-defined squared observable.
+  On all of $\mathscr{B}_\delta$ put
+  \[
+    j_\delta(x)=
+    |O_\phi D_{x_N}(\tau)D_{x_{N-1}}(B)\cdots D_{x_0}(B)e_0|^2.
+  \]
+  The everywhere-defined continuous Young map, fixed-time bounded free groups,
+  finite products and bounded $O_\phi$ make $j_\delta$ continuous and
+  nonnegative on the whole input space. Apply
+  Proposition~\ref{P:raw-block-gaussian-law} directly to these original paths.
+  Since $X+H$ is its exact translate, this proves
+  \eqref{E:raw-block-square-identity} with the single original $Z = W(\Psi)$ and
+  its variance $v$. Finite products of the local Young flows have every finite
+  unweighted moment by their Gaussian path bounds and H\"older, at fixed
+  $\delta,N$. The Gaussian identity itself did not require prior integrability
+  of $j_\delta$. No source convergence under its exponential density is used.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the amplitude-rescaled original model.
+  To apply the masked comparison at the amplitude, put $\Gamma_\delta =
+  g_\delta^2\Gamma$ and $W' = g_\delta W_{\mathrm{fast}}$. This is a nonzero
+  member of the same admissible covariance class, with unchanged degree $\alpha$
+  and temporal parameter $a$. Its integrated operator is $g_\delta$ times the
+  original one: the original matrix forms are linear in noise, and
+  basis-independent Gaussian transfer and the bounded $F$ extension retain both
+  constant columns. The $n$th source chain is multiplied by $g_\delta^n$. Thus,
+  this is exactly the model without the deterministic mean at that amplitude.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We pass the unshifted source product to its masked
+  limit.
+  We verify the source-limit premise of the masked comparison. Keep $\delta,B,N$
+  fixed and use the single regularized noise preserving the given noise of
+  Lemma~\ref{L:raw-block-restart}. For $m < N$ let $F_m = D_m^0(B)$ and put $F_N
+  = D_N^0(\tau)$; write $F_{m,\rho}$ for the corresponding ordinary source
+  factors, where both source widths in $\rho$ tend to zero.
+  Lemma~\ref{L:raw-block-restart} and Proposition~\ref{P:constant-gaussian-flow}
+  give factor convergence in every finite $L^q$ and uniform bounds for every
+  finite moment of their norms. These statements are on the fixed finite
+  horizons $[0,(N+1)B]$ and $[0,B]$, and include both constant-response columns.
+  Set $n = N+1$ and
+  \[
+    C_\rho=\max\left(1,\max_{m\le N}\|F_{m,\rho}\|,
+    \max_{m\le N}\|F_m\|\right),\qquad
+    e_\rho=\max_{m\le N}\|F_{m,\rho}-F_m\|.
+  \]
+  Then $\sup_\rho\|C_\rho\|_q < \infty$ for every finite $q$, and $\|e_\rho\|_q
+  \to 0$. Telescoping the ordered products gives
+  \[
+    \|F_{N,\rho}\cdots F_{0,\rho}-F_N\cdots F_0\|
+    \le n C_\rho^n e_\rho.
+  \]
+  Each term in the telescoping difference contains one factor error and at
+  most $n-1$ factors bounded by $C_\rho$. There are $n$ such terms. Since
+  $C_\rho\ge1$, replacing $C_\rho^{n-1}$ by $C_\rho^n$ gives the displayed
+  bound.
+  Therefore, H\"older with exponents $4n$ and $4$ gives
+  \[
+    \big\|F_{N,\rho}\cdots F_{0,\rho}-F_N\cdots F_0\big\|_{L^2}
+    \le n\|C_\rho\|_{L^{4n}}^n\|e_\rho\|_{L^4}
+    \longrightarrow0.
+  \]
+  No uniform estimate in the growing number $N$ is needed: this source limit is
+  completed at each fixed $\delta,N$. The physical source identification in
+  Lemma~\ref{L:constant-source-solution}, with the same $m_R$ and initial state
+  $e_0$, identifies the source product with the tested ordinary masked solution
+  at fast time $L = 1/\delta$. Boundedness of $O_\phi$ and $\|e_0\| = 1$ thus
+  identify $U_{\delta,B}$ as its $L^2$ limit. The sources $g_\delta
+  Y_{\mathrm{fast}}$ have the correct law, contraction and original-test limit
+  by Lemma~\ref{L:raw-block-restart}.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We apply the masked moment comparison at the fixed
+  amplitude.
+  At positive source widths, $0 \le m_R \le 1$ multiplies each nonnegative
+  displacement Wick integrand by the product of its vertex masks. Positive Green
+  measures and covariance retain this comparison for unequal, self and empty
+  chains as well. Proposition~\ref{P:masked-source-moments} gives the tested
+  comparison, and the just-proved $L^2$ convergence discharges the premise of
+  Proposition~\ref{P:masked-canonical-transfer} at $\Gamma_\delta$. Its
+  canonical unmasked moment limit uses the fixed-order joint source limits and
+  the absolutely summable order bounds. Since $\phi \ge 0$ and $\int\phi = 1$,
+  these facts give
+  \[
+    \E U_{\delta,B}^2
+    \le\E|u_{\Gamma_\delta}(L,0)|^2.
+  \]
+  Only the source products without the deterministic mean were needed for this
+  passage. The shifted original product is already the everywhere-defined
+  $j_\delta(X+H)$ in the Gaussian identity; no tilted source limit or change of
+  the original slow $\Psi,Z,v$ has been made.
+
+
+  \medskip
+  \noindent\textit{Step 5.~}We identify the canonical fast-time moment with
+  the large-time moment.
+  The ordinary change from fast $u$ to slow $t = \delta u$, with phase
+  $(V,\delta V_t)$, transforms the unmasked source equation into the regularized
+  version of~\eqref{E:exact-fast-equation}, with slow terminal time one. Indeed,
+  $g_\delta Y_{\mathrm{fast}}(u) = \sqrt\delta\,Y_{\epsilon,\eta}(\delta u)$,
+  and its fast cutoff is $\eta/\delta$. The canonical fixed-order and absolutely
+  convergent series construction passes this law identity at fixed $\delta$ to
+  the original moment, preserving every mixed, unequal, self and empty chain.
+  Lemma~\ref{L:exact-canonical-scaling} gives the final equality
+  in~\eqref{E:raw-block-original-comparison}. The physical scale $r_T = T\delta$
+  is distinct from the fixed mask radius $R$. The mask need not contain the
+  growing backward cone: the comparison is a moment inequality, not equality of
+  masked and full fields. All source limits preceded this large-time comparison.
+  This proves Proposition~\ref{P:raw-block-point-comparison}.
+\end{proof}
+
+Proposition~\ref{P:raw-block-point-comparison} bounds $\E|u(T,0)|^2$ from below
+by the weighted second moment of $Y_{\delta,B}$
+in~\eqref{E:raw-block-square-identity}. We still need a lower bound for
+$Y_{\delta,B}$ itself. The proof below obtains one on an event whose probability
+tends to one. It uses the estimates of Lemma~\ref{L:raw-block-uniform-error} and
+the cone bound of Lemma~\ref{L:raw-block-indexed-cone}.
+
+\LeanMarker{P:raw-block-original-lower}
+\begin{proposition}[Original point lower rate at the Gaussian quadratic cost]
+  \label{P:raw-block-original-lower}
+  For every original positive $\Psi$ and eligible fixed mask $R$ chosen above,
+  and every fixed $x \in \R^d$,
+  \begin{equation}\label{E:raw-block-original-lower}
+    \liminf_{T\to\infty}T^{-\kappa}\log\E|u(T,x)|^2
+    \ge 2\int_0^1\lambda_s\ud s-\frac{v_\Psi}{2}.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  We fix the cone constants before taking the small-parameter limit. A single
+  high-probability event controls every block and the original Gaussian
+  variable. On that event the cone bound and a Riemann sum give the growth
+  rate, while the linear Gaussian penalty vanishes after normalization.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We fix the rate tolerance and bound the coupled
+  block maximum.
+  Fix $e_{\mathrm{rate}} > 0$. Choose $0 < \varrho < 1/2$ with $\log(1-\varrho)
+  > -e_{\mathrm{rate}}/3$, then choose the cone constants, including an integer
+  $B$ fixed independently of $\delta$, from
+  Lemma~\ref{L:raw-block-indexed-cone}. The control $\Psi$ and eligible mask $R$
+  remain fixed throughout.
+
+  Choose a finite $p > 2/(1-a)$ and put $\gamma_p = p(1-a)/2-1 > 0$.
+  From~\eqref{E:raw-block-moments} and $N+1 \le 2/\delta$, Markov and the union
+  bound give, for $\eta > 0$,
+  \[
+    \begin{split}
+      \mathbb{P}(M_\delta>\eta)
+      &\le\eta^{-p}\sum_{m=0}^N
+      \E\|X_m\|_{C^\theta}^p\\
+      &\le A_p\eta^{-p}\delta^{\gamma_p},\qquad
+      A_p=2(C_{R,B}\sqrt p)^p<\infty.
+    \end{split}
+  \]
+  This estimate concerns the coupled blocks; no independence is needed. At these
+  fixed data $A_p$ is independent of $\delta$.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We choose a deterministic block tolerance and one
+  common good event.
+  We also specify the deterministic tolerance used with this bound. The
+  primitive estimates in Lemma~\ref{L:raw-block-uniform-error} give, for the
+  constant-potential primitives $H_m^{\mathrm{stat}}$,
+  \[
+    \max_m\max(\|H_m\|_{C^\theta},
+    \|H_m^{\mathrm{stat}}\|_{C^\theta})\le H_0,\qquad
+    \max_m\|H_m-H_m^{\mathrm{stat}}\|_{C^\theta}\le C_B\delta.
+  \]
+  Apply Proposition~\ref{P:constant-young-linear} on the fixed ball of operator
+  paths of radius $H_0+1$ and use the bounded free groups on $[0,B]$. There is
+  $L_B \ge 1$, depending on these fixed $R,B,\Psi$ and the admissible exponents,
+  such that on $\{M_\delta\le1\}$,
+  \[
+    E_{\mathrm{op},\delta}\le L_B(M_\delta+\delta).
+  \]
+  Set $\eta = \min(1,\epsilon_{\mathrm{op}}/(2L_B)) > 0$. If $\delta \le
+  \epsilon_{\mathrm{op}}/(2L_B)$, then $M_\delta \le \eta$ implies
+  $E_{\mathrm{op},\delta} \le \epsilon_{\mathrm{op}}$. Thus, for the measurable
+  event on the original common space
+  \[
+    E_\delta=\{E_{\mathrm{op},\delta}\le\epsilon_{\mathrm{op}}\}
+    \cap\{|Z|\le\delta^{-1/4}\},\qquad
+    p_\delta=\mathbb{P}(E_\delta),
+  \]
+  Chebyshev for the same single $Z = W(\Psi)$, with $\E Z^2 = v$, gives
+  \[
+    p_\delta\ge1-A_p\eta^{-p}\delta^{\gamma_p}
+    -v\delta^{1/2}\longrightarrow1.
+  \]
+  This is one union bound, with no independence between blocks or from $Z$ and
+  no product of block probabilities.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We make the block and Riemann-sum errors smaller
+  than the fixed tolerance.
+  Let $C_\lambda$ be a Lipschitz bound for $s\mapsto\lambda_s$. Take $\delta$
+  small enough, in addition to $0 < \delta < \min(1,1/B)$, that
+  \[
+    \begin{gathered}
+      \delta B\le\omega,\qquad
+      \delta\le\epsilon_{\mathrm{op}}/(2L_B),\qquad
+      C_\lambda\delta B\le e_{\mathrm{rate}}/3,\\
+      \delta|\log c_*|\le e_{\mathrm{rate}}/3,\qquad
+      A_p\eta^{-p}\delta^{\gamma_p}+v\delta^{1/2}\le1/2.
+    \end{gathered}
+  \]
+  Every constant has been fixed before this choice. The condition involving
+  $C_\lambda$ is vacuous if that constant is zero. All source limits in
+  Proposition~\ref{P:raw-block-point-comparison} have already been completed at
+  each such fixed $\delta$.
+
+  The indices $s_m = m\delta B$ lie in $I$ with adjacent gaps at most $\omega$.
+  On $E_\delta$ the shifted full-$F$ blocks therefore satisfy
+  Lemma~\ref{L:raw-block-indexed-cone}, retaining both phase entries and the
+  final remainder $\tau$. In particular, $Y_{\delta,B} > 0$, and
+  \[
+    \delta\log Y_{\delta,B}
+    \ge\delta\log c_*+\delta(N-1)\log(1-\varrho)
+    +\delta B\sum_{m<N}\lambda_{s_m}
+    +\delta\tau\lambda_{s_N}.
+  \]
+  Since $s_N+\delta\tau = 1$, the last two terms are the left Riemann sum for
+  $I_R$ on the entire interval, including its last interval of length
+  $\delta\tau$, with mesh at most $\delta B$. Its error is at most
+  $C_\lambda\delta B$. Also $0 \le \delta(N-1) \le 1/B \le 1$, so the
+  logarithmic loss is at least $\log(1-\varrho) > -e_{\mathrm{rate}}/3$. The two
+  other losses are each at most $e_{\mathrm{rate}}/3$ by the choices above.
+  Hence,
+  \[
+    Y_{\delta,B}\ge
+    \exp((I_R-e_{\mathrm{rate}})/\delta)\quad\hbox{on }E_\delta,
+  \]
+  including the $N = 1$ and $\tau = 0$ cases of the cone estimate.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We use the same event in the shifted second-moment
+  identity.
+  The integrand in~\eqref{E:raw-block-square-identity} is nonnegative. On the
+  same $E_\delta$ its linear Gaussian term satisfies $-Z/\sqrt\delta \ge
+  -\delta^{-3/4}$. Restriction to this event
+  and~\eqref{E:raw-block-original-comparison} therefore give the explicit bound
+  for the original point moment
+  \[
+    \E|u(T,0)|^2\ge\E U_{\delta,B}^2
+    \ge p_\delta\exp\left(
+    \frac{2I_R-2e_{\mathrm{rate}}-v/2}{\delta}
+    -\delta^{-3/4}\right),\qquad \delta=T^{-\kappa}.
+  \]
+  Here $p_\delta \ge 1/2$ for small $\delta$, so $-\delta\log2 \le \delta\log
+  p_\delta \le 0$. Multiplying the logarithm of the preceding inequality by
+  $\delta$ yields
+  \[
+    \delta\log\E|u(T,0)|^2
+    \ge2I_R-2e_{\mathrm{rate}}-v/2
+    -\delta^{1/4}+\delta\log p_\delta.
+  \]
+  Thus, the normalized linear penalty is $\delta\delta^{-3/4} = \delta^{1/4} \to
+  0$, and $\delta\log p_\delta \to 0$. The quadratic Gaussian cost is precisely
+  half the original variance $v$. Since $\kappa > 0$, $\delta = T^{-\kappa}$ is
+  a bijection between all sufficiently large $T$ and all sufficiently small
+  $\delta$. This gives the full continuous-time liminf $Q_2 \ge
+  2I_R-2e_{\mathrm{rate}}-v/2$. For each $e_{\mathrm{rate}}$ the argument first
+  fixed its own $B = B(e_{\mathrm{rate}})$ and then took $\delta\downarrow0$.
+  The original point rate $Q_2$ is independent of $B$; only now let
+  $e_{\mathrm{rate}}\downarrow0$. No choice $B = B(\delta)$ is made.
+
+
+  \medskip
+  \noindent\textit{Step 5.~}We extend the point bound by translation.
+  Finally, spatial translation of all positive-width vertices preserves the
+  original noise law, Green kernels and constant initial data. The fixed-order
+  $L^2$ and absolute-series limits preserve equality of point second moments.
+  Hence, zero can be replaced by every fixed $x$
+  in~\eqref{E:raw-block-original-lower}. Every control and mask were fixed
+  before asymptotics; a supremum over them may follow their individual
+  inequalities. This proves Proposition~\ref{P:raw-block-original-lower}.
+\end{proof}

@@ -1,0 +1,306 @@
+{
+  "schema": "readability-root-contract-refinement/1",
+  "review_record_id": "RP025",
+  "recorded_utc": "2026-11-16T08:02:16.768977+00:00",
+  "reason": "Root-authorized clarification of original-step public reconstruction, including unchanged portions; original scientific scope is preserved.",
+  "preconditions": {
+    "status_before": "PREPARED_AWAITING_OWNER_PREFLIGHT_AND_FREEZE",
+    "no_launch_native_report_or_freeze_artifact_before": true,
+    "public_frozen_records_found": [],
+    "public_record_search_scope": [
+      "reviews/ and experiment/ in shared project and owned publication worktree"
+    ]
+  },
+  "before_artifacts": {
+    "CONTRACT.md": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/CONTRACT.md",
+      "sha256": "7797738753b28381745cd9ff88a49f51c43aa33ce41b2bc322ef48c1f072b9cb",
+      "bytes": 4465
+    },
+    "INPUT.txt": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/INPUT.txt",
+      "sha256": "16f1e25d9416ee95d1f109f01daac9b4633bbf335808e36c1163b5026dc5239e",
+      "bytes": 38374
+    },
+    "MANIFEST.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/MANIFEST.json",
+      "sha256": "86c6a56caa7b5b7b7198b1e37fdcbbed238e5a1e65902e9fd0f4a124dc3cc7e5",
+      "bytes": 7757
+    },
+    "PROOF-MANIFEST.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/PROOF-MANIFEST.json",
+      "sha256": "04ea8d3ea67f186b758e3a8ac23148531a41d078a3fdc4d71e60e0a393f751e3",
+      "bytes": 5691
+    },
+    "CAPACITY.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/CAPACITY.json",
+      "sha256": "7ef2b99911fbcee3f21ef6f5e88fa3de0c9e60bf8028cec7c992d6fd00fb4efe",
+      "bytes": 572
+    },
+    "PREPARATION-CHECKS.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/PREPARATION-CHECKS.json",
+      "sha256": "e00c902b16d7d4372ffc1801f0384373e3615aa5aa6589270d911de838f5ce14",
+      "bytes": 3704
+    },
+    "model-profile.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/model-profile.json",
+      "sha256": "ccdf515979e77bbe752d924735a915260ca437d3d31a954d4a739c946fca0ea1",
+      "bytes": 778
+    },
+    "MODEL-LIMITS.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/MODEL-LIMITS.json",
+      "sha256": "60eaa34361e093e599fdc4a26f8d53ee3aeb860e419c9e66535c4fda52284d56",
+      "bytes": 199
+    }
+  },
+  "exact_normative_block": "For every assigned proof, enumerate its original logical steps (including unchanged portions) and provide checkable public working for each. A target statement or a bound established inside that same target proof is not an unassigned input. Named UNASSIGNED upstream statements may be used after checking their hypotheses; their own proofs remain unassigned. Reading and reconstruction are distinct: if any required target step is not reconstructed publicly, say so and mark Public reconstruction: PARTIAL or NOT_RECONSTRUCTED, even if Old/New reading is COMPLETE. Do not replace a derivation by saying it is unchanged.",
+  "exact_added_output_fields": [
+    "- Public reconstruction: COMPLETE | PARTIAL | NOT_RECONSTRUCTED",
+    "- Original-step coverage: <steps and working, with omissions explicit>"
+  ],
+  "rough_word_target": 5000,
+  "brevity_instruction": "The word target is approximate; do not sacrifice a required derivation for brevity.",
+  "contract_unified_diff": "--- CONTRACT.before.md\n+++ CONTRACT.md\n@@ -47,6 +47,10 @@\n tools, delegate, read files, edit or contact anyone. Everything allowed is\n embedded. Mark PARTIAL/NOT_READ and precise missing work rather than invent it.\n \n+# Public reconstruction requirement\n+\n+For every assigned proof, enumerate its original logical steps (including unchanged portions) and provide checkable public working for each. A target statement or a bound established inside that same target proof is not an unassigned input. Named UNASSIGNED upstream statements may be used after checking their hypotheses; their own proofs remain unassigned. Reading and reconstruction are distinct: if any required target step is not reconstructed publicly, say so and mark Public reconstruction: PARTIAL or NOT_RECONSTRUCTED, even if Old/New reading is COMPLETE. Do not replace a derivation by saying it is unchanged.\n+\n # Output contract\n \n Begin with:\n@@ -60,6 +64,8 @@\n for each assigned label, in order. Each must give:\n - Old reading: COMPLETE | PARTIAL | NOT_READ\n - New reading: COMPLETE | PARTIAL | NOT_READ\n+- Public reconstruction: COMPLETE | PARTIAL | NOT_RECONSTRUCTED\n+- Original-step coverage: <steps and working, with omissions explicit>\n - Argument preservation: PRESERVED | CHANGED | UNCERTAIN\n - New explanations: JUSTIFIED | CONCERN | UNCERTAIN\n - Evidence: concrete mathematical checks/working using equation labels or\n@@ -70,5 +76,7 @@\n End with '## AUDIT dispositions' and '## Findings and limits'. A partially\n read proof prohibits a claim of full assignment completion. Distinguish scope\n preservation from proving all upstream analytic results or whole-book truth.\n-Keep the public report roughly 3500 words or less. Do not certify Lean quotation\n+Keep the public report roughly 5000 words. Do not certify Lean quotation\n correspondence, source images, rendered pages, human verification or release.\n+\n+The word target is approximate; do not sacrifice a required derivation for brevity.\n",
+  "contract_diff_sha256": "777cdb2f6d0dc83e29e3cca4baa787f3844c9423221b50895af0a2034878c624",
+  "after": {
+    "contract_sha256": "a774be71d9eb1e7754e408a5ffd086556abde442d6636fa03c5caf34d100671d",
+    "contract_bytes": 5335,
+    "prompt_sha256": "21681c42383ae9f7d2fe10fba30775c8500ca56f90c601cb6c79de728c5a4b16",
+    "prompt_bytes": 39244,
+    "capacity_sha256": "3fbc93fff04f8f52fbc502263c032248ffc6d8c38530255532af4b07b08f4247",
+    "preparation_checks_sha256": "f51d5c3531ccc48359648238c552c63b61f175c7558c4ba44e3e588888216260",
+    "manifest_sha256": "cfc72262b7055a1dd9b4d48d43a1cb99d505ee69846f32ff2e93eaa007ea4c2f",
+    "prompt_tokens": 12158,
+    "agent_prompt_tokens": 53,
+    "combined_reasoning_public_cap": 65536,
+    "conditional_headroom": 938061,
+    "timeout_seconds": 3600
+  },
+  "payload_identity": {
+    "proof_manifest_sha256": "04ea8d3ea67f186b758e3a8ac23148531a41d078a3fdc4d71e60e0a393f751e3",
+    "all_statement_and_proof_hashes_unchanged": true,
+    "all_source_files_bytes_unchanged": true,
+    "source_input_files": [
+      {
+        "path": "inputs/old-module.txt",
+        "bytes": 8612,
+        "sha256": "a42061c6582230d5684122accc77bf91a16ef482ce9501c0437ae4ae31002688",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/integrated_white_evaluation.tex",
+        "selection": "WHOLE_FILE",
+        "role": "ASSIGNED OLD whole target module."
+      },
+      {
+        "path": "inputs/new-module.txt",
+        "bytes": 9983,
+        "sha256": "8d1f2d80b1b4cf85f627115589c3f51fefb63897e4c9404bd4830a2c3cfb76a3",
+        "source_revision": "a16393484b5eb7c09d74c03f4a8c9b6fb13a67c2",
+        "source_path": "notes/integrated_white_evaluation.tex",
+        "selection": "WHOLE_FILE",
+        "role": "ASSIGNED NEW whole target module."
+      },
+      {
+        "path": "inputs/context-model-assumptions.txt",
+        "bytes": 1986,
+        "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/notes_stratonovich_ham_second_moment.tex",
+        "selection": "EXACT_RETAINED_EXCERPT",
+        "role": "UNASSIGNED exact model/data, covariance hypotheses, and zero covariance context.",
+        "source_lf": [
+          367,
+          409
+        ]
+      },
+      {
+        "path": "inputs/context-integrated_temporal_equilibrium-baseline.txt",
+        "bytes": 4281,
+        "sha256": "412c7cb1e28118adbab40d8ef4b59bd815791c48a92a389efbd14202578c690f",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/integrated_temporal_equilibrium.tex",
+        "selection": "WHOLE_FILE",
+        "role": "UNASSIGNED complete baseline upstream module: use declarations/definitions under their exact hypotheses; do not count its proofs as additional assigned reviews."
+      },
+      {
+        "path": "inputs/context-P-spatial-four-linear.txt",
+        "bytes": 889,
+        "sha256": "e773d1281e51cb3c10109debd6de9fefebe897f2e46671d3bec4eeecdf1085ee",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/integrated_spatial_occupation.tex",
+        "selection": "LF_RANGE",
+        "role": "UNASSIGNED exact upstream declaration and its hypotheses; not an additional assigned proof.",
+        "source_lf": [
+          233,
+          251
+        ]
+      },
+      {
+        "path": "inputs/context-P-spatial-energy-map.txt",
+        "bytes": 878,
+        "sha256": "0ab35bbb9ff7d9bb0e5863558365376966fd1f1ff8691636a3b361e768724000",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/integrated_spatial_occupation.tex",
+        "selection": "LF_RANGE",
+        "role": "UNASSIGNED exact upstream declaration and its hypotheses; not an additional assigned proof.",
+        "source_lf": [
+          319,
+          344
+        ]
+      },
+      {
+        "path": "inputs/context-C-intrinsic-spatial-bracket.txt",
+        "bytes": 571,
+        "sha256": "431749e6ce9e2c40cd32e5da911362834f38c0f8509bd67d4e2dc3317fe5aad8",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/integrated_occupation_ceiling.tex",
+        "selection": "LF_RANGE",
+        "role": "UNASSIGNED exact upstream declaration and its hypotheses; not an additional assigned proof.",
+        "source_lf": [
+          257,
+          271
+        ]
+      },
+      {
+        "path": "inputs/context-T-intrinsic-second-moment.txt",
+        "bytes": 1294,
+        "sha256": "22319a03177f3575b713bf244063466524e6f0ecd75bd1f5cee72683a736a850",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/integrated_intrinsic_constant.tex",
+        "selection": "LF_RANGE",
+        "role": "UNASSIGNED exact upstream declaration and its hypotheses; not an additional assigned proof.",
+        "source_lf": [
+          361,
+          389
+        ]
+      }
+    ],
+    "old_embedded_frames": [
+      {
+        "path": "inputs/old-module.txt",
+        "payload_byte_offset": 6490,
+        "payload_bytes": 8612,
+        "payload_sha256": "a42061c6582230d5684122accc77bf91a16ef482ce9501c0437ae4ae31002688"
+      },
+      {
+        "path": "inputs/new-module.txt",
+        "payload_byte_offset": 15481,
+        "payload_bytes": 9983,
+        "payload_sha256": "8d1f2d80b1b4cf85f627115589c3f51fefb63897e4c9404bd4830a2c3cfb76a3"
+      },
+      {
+        "path": "inputs/context-model-assumptions.txt",
+        "payload_byte_offset": 25926,
+        "payload_bytes": 1986,
+        "payload_sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+      },
+      {
+        "path": "inputs/context-integrated_temporal_equilibrium-baseline.txt",
+        "payload_byte_offset": 28475,
+        "payload_bytes": 4281,
+        "payload_sha256": "412c7cb1e28118adbab40d8ef4b59bd815791c48a92a389efbd14202578c690f"
+      },
+      {
+        "path": "inputs/context-P-spatial-four-linear.txt",
+        "payload_byte_offset": 33249,
+        "payload_bytes": 889,
+        "payload_sha256": "e773d1281e51cb3c10109debd6de9fefebe897f2e46671d3bec4eeecdf1085ee"
+      },
+      {
+        "path": "inputs/context-P-spatial-energy-map.txt",
+        "payload_byte_offset": 34611,
+        "payload_bytes": 878,
+        "payload_sha256": "0ab35bbb9ff7d9bb0e5863558365376966fd1f1ff8691636a3b361e768724000"
+      },
+      {
+        "path": "inputs/context-C-intrinsic-spatial-bracket.txt",
+        "payload_byte_offset": 35968,
+        "payload_bytes": 571,
+        "payload_sha256": "431749e6ce9e2c40cd32e5da911362834f38c0f8509bd67d4e2dc3317fe5aad8"
+      },
+      {
+        "path": "inputs/context-T-intrinsic-second-moment.txt",
+        "payload_byte_offset": 37024,
+        "payload_bytes": 1294,
+        "payload_sha256": "22319a03177f3575b713bf244063466524e6f0ecd75bd1f5cee72683a736a850"
+      }
+    ],
+    "new_embedded_frames": [
+      {
+        "path": "inputs/old-module.txt",
+        "payload_byte_offset": 7360,
+        "payload_bytes": 8612,
+        "payload_sha256": "a42061c6582230d5684122accc77bf91a16ef482ce9501c0437ae4ae31002688"
+      },
+      {
+        "path": "inputs/new-module.txt",
+        "payload_byte_offset": 16351,
+        "payload_bytes": 9983,
+        "payload_sha256": "8d1f2d80b1b4cf85f627115589c3f51fefb63897e4c9404bd4830a2c3cfb76a3"
+      },
+      {
+        "path": "inputs/context-model-assumptions.txt",
+        "payload_byte_offset": 26796,
+        "payload_bytes": 1986,
+        "payload_sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+      },
+      {
+        "path": "inputs/context-integrated_temporal_equilibrium-baseline.txt",
+        "payload_byte_offset": 29345,
+        "payload_bytes": 4281,
+        "payload_sha256": "412c7cb1e28118adbab40d8ef4b59bd815791c48a92a389efbd14202578c690f"
+      },
+      {
+        "path": "inputs/context-P-spatial-four-linear.txt",
+        "payload_byte_offset": 34119,
+        "payload_bytes": 889,
+        "payload_sha256": "e773d1281e51cb3c10109debd6de9fefebe897f2e46671d3bec4eeecdf1085ee"
+      },
+      {
+        "path": "inputs/context-P-spatial-energy-map.txt",
+        "payload_byte_offset": 35481,
+        "payload_bytes": 878,
+        "payload_sha256": "0ab35bbb9ff7d9bb0e5863558365376966fd1f1ff8691636a3b361e768724000"
+      },
+      {
+        "path": "inputs/context-C-intrinsic-spatial-bracket.txt",
+        "payload_byte_offset": 36838,
+        "payload_bytes": 571,
+        "payload_sha256": "431749e6ce9e2c40cd32e5da911362834f38c0f8509bd67d4e2dc3317fe5aad8"
+      },
+      {
+        "path": "inputs/context-T-intrinsic-second-moment.txt",
+        "payload_byte_offset": 37894,
+        "payload_bytes": 1294,
+        "payload_sha256": "22319a03177f3575b713bf244063466524e6f0ecd75bd1f5cee72683a736a850"
+      }
+    ],
+    "only_frame_byte_offsets_changed": true,
+    "prefix_byte_delta": 870,
+    "old_prompt_suffix_after_contract_sha256": "318773bee6e7a1439830f3b469a7d606da4f9c177202218f109ee0dac5176589",
+    "new_prompt_suffix_after_contract_sha256": "318773bee6e7a1439830f3b469a7d606da4f9c177202218f109ee0dac5176589"
+  },
+  "unchanged_policy_fields": {
+    "source_file": "notes/integrated_white_evaluation.tex",
+    "old_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+    "source_revision": "a16393484b5eb7c09d74c03f4a8c9b6fb13a67c2",
+    "proof_labels": [
+      "L:white-cdf-square",
+      "P:white-spatial-energy",
+      "T:white-moment-bounds",
+      "C:white-relative-width"
+    ],
+    "assigned_global_ordinals": null,
+    "requested_model": "deepseek/deepseek-v4-pro",
+    "requested_variant": null,
+    "pure_mode": true,
+    "agent": "artifact-reviewer",
+    "all_tools_denied": true,
+    "combined_reasoning_public_output_cap": 65536,
+    "timeout_seconds": 3600,
+    "coordinator_launch_limit": 1,
+    "coordinator_retry_continuation_fallback": false
+  },
+  "historical_evidence_notice": "Saved old checks/contract/prompt remain historical. Previous selected-view binding hashes do not cover the changed prefix. New offline checks cover the refined prefix and exact preserved payloads; no native/preflight/review/approval claim.",
+  "native_or_provider_calls": 0,
+  "launch_script_or_lock_created": false
+}

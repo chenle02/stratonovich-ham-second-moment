@@ -1,0 +1,427 @@
+{
+  "review_record_id": "RP073",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "16fdc47b22b74feffded7aeb223f2d579b505176",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_point_transfer.tex",
+  "source_binding_sha256": "c05adf379af9f5407d104461393dc84601f3950bc3e19287692a66dfd06ba89c",
+  "public_report_sha256": "1e97ad98331448ed9fd18cd2a39eb9abb4ada8e5cf7817014d539bd4ed82c097",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_ALL_ASSIGNED_PUBLIC_RECONSTRUCTIONS_CHECKED_ROOT_REVIEWS",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:point-actual-finiteness": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:point-fast-sources": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:point-compact-source": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:point-source-cone": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:original-point-transfer": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:point-actual-finiteness",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (statement LF 19–27; proof LF 29–60)",
+        "new_reading": "COMPLETE (statement LF 19–27; proof LF 29–74)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 11,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "6955e0c7e63ffc72238b78a3b0f2ee645de1cfc75a465eaec90165153b7b63b5",
+      "mathematical_check": "Checks closed isometric E restriction of the F driver and free group, intertwining of Young sums by uniqueness, endpoint/difference norm compression and measurable separable-path Young dependence. The exact given-noise endpoint, amplitude, one mask, horizon and smaller common admissible exponent are matched before applying the named tube radial envelope. The added B=1 clock reduction is explicitly verified against the supplied Cameron-mean setup. The compact-perturbation endpoint norm lower bound uses only the admitted compact-endpoint subclause of symplectic-free, not its free symplectic invariance subclause.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        19,
+        27
+      ],
+      "old_proof_lf": [
+        29,
+        60
+      ],
+      "old_statement_sha256": "996957aed19f7dd7ba7f68d73d8efbc68c07f755649ae245cb3bb44fbe0c3b10",
+      "old_proof_sha256": "021cbee3f85c3354018dddec28f77dd544aa31a53ad1a0ca5b12ca406c8ace07",
+      "new_statement_lf": [
+        19,
+        27
+      ],
+      "new_proof_lf": [
+        29,
+        74
+      ],
+      "new_statement_sha256": "996957aed19f7dd7ba7f68d73d8efbc68c07f755649ae245cb3bb44fbe0c3b10",
+      "new_proof_sha256": "0d15a800f194ba5b4076bc1a53a20cd360e6fb0af52cdb15367f865200093fe5"
+    },
+    {
+      "proof_id": "L:point-fast-sources",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (statement LF 62–77; proof LF 79–125)",
+        "new_reading": "COMPLETE (statement LF 76–91; proof LF 93–159)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 33,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "197b2015e93fb1587071b21fd1b79da2a56de98f59c8fd97463c77d766b0ad3b",
+      "mathematical_check": "At fixed delta, public original-noise pullback domination and vanishing residual, full-path Gaussian comparison, fixed-g F extension and square-exponential tails justify Young convergence with uniform integrability of flow moments because 1/theta<2. Ordinary source primitive is identified by indicator approximation, fixed-width point bounds and countable row/state continuity. The exact substitution lambda-prime=delta*lambda computes temporal width tau/delta and g² Gamma amplitude, with both source heat widths and cutoff maximum preserved. All bounds are fixed-delta; no growing-radius uniform source convergence or exchanged limits is claimed.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        62,
+        77
+      ],
+      "old_proof_lf": [
+        79,
+        125
+      ],
+      "old_statement_sha256": "0d281326918e236191a0d7ded61723474a0ee54b92ccc260ae09ec05d8ff341d",
+      "old_proof_sha256": "d3d6bb7b7d9297b4f22ce92cee61dea3107b1adb827b30e8c48522b8e1cca59a",
+      "new_statement_lf": [
+        76,
+        91
+      ],
+      "new_proof_lf": [
+        93,
+        159
+      ],
+      "new_statement_sha256": "0d281326918e236191a0d7ded61723474a0ee54b92ccc260ae09ec05d8ff341d",
+      "new_proof_sha256": "050e8422e9b294ccc3fe75f063a6f925aec3caadb6ff0052f6e4e164f6f85c89"
+    },
+    {
+      "proof_id": "L:point-compact-source",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (statement LF 127–132; proof LF 134–189)",
+        "new_reading": "COMPLETE (statement LF 161–166; proof LF 168–237)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 56,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "ade091645697789ca232a92c83fd61ba0d245da20aca44f712148111df064544",
+      "mathematical_check": "Publicly constructs the high Sobolev phase with integer k>d/2+1, bounded strongly continuous free matrix including zero sine quotient, Leibniz multiplier control, factorial Picard bound and uniqueness identifying the E flow. Fourier Cauchy-Schwarz gives continuous displacement and velocity; countable source derivative evaluations and Picard measurability give joint measurability. Distributional first Duhamel component is identified with the continuous scalar Green integral via finite mass/support and absolute Fubini. No point trace at the original low regularity or dimension-three Green density is asserted.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        127,
+        132
+      ],
+      "old_proof_lf": [
+        134,
+        189
+      ],
+      "old_statement_sha256": "5f56bd8a011dc7910df6c44255dd2e6abdc5c416efef162f82966b1f12c8d5ae",
+      "old_proof_sha256": "8025de6e23cdcfb159e17cb2f3defe50781b03bac74b4dc4938c4142069c4f3a",
+      "new_statement_lf": [
+        161,
+        166
+      ],
+      "new_proof_lf": [
+        168,
+        237
+      ],
+      "new_statement_sha256": "5f56bd8a011dc7910df6c44255dd2e6abdc5c416efef162f82966b1f12c8d5ae",
+      "new_proof_sha256": "309f2bda421bd77870b4553782da0d10818e86564590b40dc9a62a404daedb45"
+    },
+    {
+      "proof_id": "P:point-source-cone",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (statement LF 196–211; proof LF 213–247)",
+        "new_reading": "COMPLETE (statement LF 244–259; proof LF 261–315)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 80,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "6c7bed6f640f5a7d84011c88dad4ec2cbc20132baebad79c1642691344c96c5b",
+      "mathematical_check": "Publicly matches the realized single-source law and both total initial phase components on a causally closed compact cone; plateau distance follows from |x|+t≤R-1. Total free finite propagation is applied before splitting constant and E components. The homogeneous difference iteration has the correct t^(2n)/(2n)! mass and finite sample coefficient, yielding equality without coefficient positivity. Terminal Tonelli plus only unmasked-law stationarity gives an integral of squares, not a squared average, with fixed-parameter events.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        196,
+        211
+      ],
+      "old_proof_lf": [
+        213,
+        247
+      ],
+      "old_statement_sha256": "f2859ed512e019aaa8efbdde450e19ee14f41d5b6bc63241a75332d743cb0eef",
+      "old_proof_sha256": "1193814d10c2d27d4e41815f6c2d59d238245b861018422bbd87803afef3e871",
+      "new_statement_lf": [
+        244,
+        259
+      ],
+      "new_proof_lf": [
+        261,
+        315
+      ],
+      "new_statement_sha256": "f2859ed512e019aaa8efbdde450e19ee14f41d5b6bc63241a75332d743cb0eef",
+      "new_proof_sha256": "ed6b950e72f4b3e8495f0910615b22e5c3e64cd2d72f2ba09e850673c56df2b5"
+    },
+    {
+      "proof_id": "P:original-point-transfer",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (statement LF 261–274; proof LF 276–338)",
+        "new_reading": "COMPLETE (statement LF 329–342; proof LF 344–426)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 104,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "6b9d0f31770ae1fb627bbd26375b659f2014d071a2a6b678b5fc9b621d6e574f",
+      "mathematical_check": "Removes source widths first at fixed delta: L2 operator/displacement convergence and the independent canonical single-source point-moment limit pass both sides of the exact cone-square identity. Canonical scaling and the explicit U(t)=V(delta*t), gYfast=sqrt(delta)Y(delta*t) computation yield the law/moment identification at terminal time, preserving mixed/self/empty chains and Green-before-noise ordering. Initial H1 scaling gives the polynomial R^d cost including d=1 negative gradient power; delta log prefactor vanishes, kappa>1 and the bijective parameter change give the rate inequality. Direct zero covariance free-flow Fourier bounds and cone identity are checked separately. No source/time exchange, spatial Jacobian at zero or masked-operator stationarity is used.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        261,
+        274
+      ],
+      "old_proof_lf": [
+        276,
+        338
+      ],
+      "old_statement_sha256": "d4e1a91f9bf7d921ed66f6e48a01fc5c39798e5ef5f09ce0c5d3cace0e79df95",
+      "old_proof_sha256": "09d8c2a9c2f87e47dbbfefaff0ee8d367c41558d9763a9b160af7baf296ea784",
+      "new_statement_lf": [
+        329,
+        342
+      ],
+      "new_proof_lf": [
+        344,
+        426
+      ],
+      "new_statement_sha256": "d4e1a91f9bf7d921ed66f6e48a01fc5c39798e5ef5f09ce0c5d3cace0e79df95",
+      "new_proof_sha256": "fbb9b3a3b47dc2ef502d0ac839c77d5803cec87b4f323a2ab2f88dc1fa3167b9"
+    }
+  ],
+  "mathematical_checks": [
+    "Checks closed isometric E restriction of the F driver and free group, intertwining of Young sums by uniqueness, endpoint/difference norm compression and measurable separable-path Young dependence. The exact given-noise endpoint, amplitude, one mask, horizon and smaller common admissible exponent are matched before applying the named tube radial envelope. The added B=1 clock reduction is explicitly verified against the supplied Cameron-mean setup. The compact-perturbation endpoint norm lower bound uses only the admitted compact-endpoint subclause of symplectic-free, not its free symplectic invariance subclause.",
+    "At fixed delta, public original-noise pullback domination and vanishing residual, full-path Gaussian comparison, fixed-g F extension and square-exponential tails justify Young convergence with uniform integrability of flow moments because 1/theta<2. Ordinary source primitive is identified by indicator approximation, fixed-width point bounds and countable row/state continuity. The exact substitution lambda-prime=delta*lambda computes temporal width tau/delta and g² Gamma amplitude, with both source heat widths and cutoff maximum preserved. All bounds are fixed-delta; no growing-radius uniform source convergence or exchanged limits is claimed.",
+    "Publicly constructs the high Sobolev phase with integer k>d/2+1, bounded strongly continuous free matrix including zero sine quotient, Leibniz multiplier control, factorial Picard bound and uniqueness identifying the E flow. Fourier Cauchy-Schwarz gives continuous displacement and velocity; countable source derivative evaluations and Picard measurability give joint measurability. Distributional first Duhamel component is identified with the continuous scalar Green integral via finite mass/support and absolute Fubini. No point trace at the original low regularity or dimension-three Green density is asserted.",
+    "Publicly matches the realized single-source law and both total initial phase components on a causally closed compact cone; plateau distance follows from |x|+t≤R-1. Total free finite propagation is applied before splitting constant and E components. The homogeneous difference iteration has the correct t^(2n)/(2n)! mass and finite sample coefficient, yielding equality without coefficient positivity. Terminal Tonelli plus only unmasked-law stationarity gives an integral of squares, not a squared average, with fixed-parameter events.",
+    "Removes source widths first at fixed delta: L2 operator/displacement convergence and the independent canonical single-source point-moment limit pass both sides of the exact cone-square identity. Canonical scaling and the explicit U(t)=V(delta*t), gYfast=sqrt(delta)Y(delta*t) computation yield the law/moment identification at terminal time, preserving mixed/self/empty chains and Green-before-noise ordering. Initial H1 scaling gives the polynomial R^d cost including d=1 negative gradient power; delta log prefactor vanishes, kappa>1 and the bijective parameter change give the rate inequality. Direct zero covariance free-flow Fourier bounds and cone identity are checked separately. No source/time exchange, spatial Jacobian at zero or masked-operator stationarity is used."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "proof_id": "P:original-point-transfer",
+      "classification": "REPORT_ONLY_UNSUPPORTED_EDIT_DESCRIPTION",
+      "old": "the systematic removal of the -1/2 kernel inside an H^{1/2} bracket",
+      "new": null,
+      "detail": "No such edit or kernel operation occurs in this assigned OLD/NEW source. The actual target uses the standard H^{1/2} phase bound and polynomial H1 estimate, both correctly reconstructed elsewhere in the same report. This stray description supplies no mathematical premise and is not a source defect.",
+      "report_lf": 126
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 19327,
+      "sha256": "1e97ad98331448ed9fd18cd2a39eb9abb4ada8e5cf7817014d539bd4ed82c097"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 5880,
+      "sha256": "4ccda14dc8f43ccd23fb043d11841a2e0277ebbf03ee505670bba3b339b90cc9"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 7613,
+      "sha256": "d76890551757bc47d682e501097c4d7f676f44e58eab12e793f541aaa0f2d0b2"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 7417,
+      "sha256": "c05adf379af9f5407d104461393dc84601f3950bc3e19287692a66dfd06ba89c"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 13325,
+      "sha256": "f0b0f8e6f0324aa1c26d6fc0d09e131c5377ef66aeb344d03e5a267ec150143f"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 7748,
+      "sha256": "985cadfb4fe7272c4d40c5565b47b3e866c2c1356cd6ace77d5ef4e3658de642"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 18388,
+      "sha256": "6d226ec86a447cfb537b98b988fee39d0b4d003589353d84fd69eb5a3d5dee7e"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 21587,
+      "sha256": "e6e4695daa516fd1f5ed214c8f040256c0d59cbf2782eb20330a0bf703d0e1da"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-canonical-expansion.txt",
+      "bytes": 1687,
+      "sha256": "85b10629c4ef8076f1137fbcc500b675f1778e844fb0db97b4c171f836155b5b"
+    },
+    {
+      "path": "inputs/context-integrated_exact_scaling-baseline.txt",
+      "bytes": 2925,
+      "sha256": "d55a4709db7f10017f7b9506bce54d6921200f0d01a293801080d31889c91933"
+    },
+    {
+      "path": "inputs/context-integrated_constant_phase_young-baseline.txt",
+      "bytes": 27376,
+      "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+    },
+    {
+      "path": "inputs/context-integrated_masked_moments-baseline.txt",
+      "bytes": 11113,
+      "sha256": "533f96300b5e0e10205aeb374cdd55378fd3a27e8a5faf6148187f0c02221024"
+    },
+    {
+      "path": "inputs/context-integrated_actual_operator_driver-baseline.txt",
+      "bytes": 35818,
+      "sha256": "add3561f9a2e846f9992d91a10385d8b8e99406359eaabae640520366b184f0e"
+    },
+    {
+      "path": "inputs/context-integrated_source_convergence-baseline.txt",
+      "bytes": 25085,
+      "sha256": "f212bad41254a78109e5802def45053c8bda53a416cda9f457513406304aaef4"
+    },
+    {
+      "path": "inputs/context-integrated_symplectic_phase-baseline.txt",
+      "bytes": 20269,
+      "sha256": "37f0c741ab8e37b66f25a103939b428e001072066b48ffea2adb10e4644f2cab"
+    },
+    {
+      "path": "inputs/context-integrated_gaussian_tubes-baseline.txt",
+      "bytes": 27080,
+      "sha256": "2bfc3aa0f053f63559c2534499a518de935e06cad56efc2109da336f61fe7015"
+    },
+    {
+      "path": "inputs/context-integrated_raw_block_lower-baseline.txt",
+      "bytes": 35928,
+      "sha256": "ed2f85038ef6136eb8581fa64cab4962cde40bdbdba9ff163dd832c4fa5ad992"
+    },
+    {
+      "path": "inputs/context-cameron-mean-baseline.txt",
+      "bytes": 24138,
+      "sha256": "0ecbf05a70a7d5d79c9e2285dcadb93567687d4e463bfe4f6b0fdac5ff6f016d"
+    }
+  ],
+  "input_identity_checks": "Every complete OLD/NEW module and supplied context payload independently matched pinned Git WHOLE_FILE or LF bytes; every statement/proof LF/SHA verified. Full current/common OLD target and every old/new diff read, including pathss prose correction and exact new clock/substitution explanations. Required supplied Cameron-mean clock and tube/global endpoint, constant/source/Young/free/scaling boundary declarations checked; their proofs remain unassigned.",
+  "source_currentness": {
+    "covered_launch_revision": "16fdc47b22b74feffded7aeb223f2d579b505176",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "limit": "Only this exact assigned source versuscdde and supplied context; no older report rebinding, unexamined successor or whole-book seal."
+  },
+  "read_limits": [
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority",
+  "literal_declaration_comparison_complete": true,
+  "pending_assigned_inputs": {},
+  "symplectic_dependency_limit": "Only compact-endpoint essential norm subclause is consumed, not missing free-invariance working in historical RP062. No propagation of that distinct subclause gap."
+}

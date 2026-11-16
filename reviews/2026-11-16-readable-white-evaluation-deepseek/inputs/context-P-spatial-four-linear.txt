@@ -1,0 +1,19 @@
+\begin{proposition}[The physical four-linear extension]
+  \label{P:spatial-four-linear}
+  For real $f \in H^1(\R^d)$ define $N(f) = \|f\|_2^{1-\alpha/4}\|\nabla
+  f\|_2^{\alpha/4}$. Every physical square pairing is finite and
+  \begin{align}
+    A_{\mathrm{sp}}(f)&\le R_0N(f)^4,\label{E:spatial-homogeneous-bound}\\
+    0\le B_\Gamma(f^2,h^2)
+    &\le\sqrt{A_{\mathrm{sp}}(f)A_{\mathrm{sp}}(h)}.
+    \label{E:spatial-square-CS}
+  \end{align}
+  The signed integral $C_4(f_1,f_2,f_3,f_4) = B_\Gamma(f_1f_2,f_3f_4)$ is
+  absolutely convergent and jointly continuous on $(H^1)^4$, with
+  \begin{equation}\label{E:spatial-four-linear}
+    \int|f_1(x)f_2(x)f_3(x-y)f_4(x-y)|\ud\nu
+    \le R_0\prod_{j=1}^4N(f_j).
+  \end{equation}
+  The ratio supremum $R_{\mathrm{sp}}$ over all real unit $H^1$ profiles equals
+  $R_0$. Every nonzero $H^1$ profile has $A_{\mathrm{sp}}(f) > 0$.
+\end{proposition}

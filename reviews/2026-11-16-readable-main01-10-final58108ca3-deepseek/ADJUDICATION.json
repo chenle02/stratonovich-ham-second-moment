@@ -1,0 +1,496 @@
+{
+  "review_record_id": "RP065",
+  "recorded_utc": "2026-11-16T15:59:54.538466+00:00",
+  "adjudicator_label": "Agent5existingGPTauthor-familyhelper; Agent5reviewsandAgent3finaldisposition",
+  "role": "Author-sidepublic-report/sourceQA, no newindependentvote",
+  "source_revision": "58108ca3065cb408eb13b06cc772fe71de546535",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/notes_stratonovich_ham_second_moment.tex",
+  "native_verdict": "PASS_WITH_NOTES",
+  "native_confidence": "high",
+  "public_report_sha256": "3be18f68d292971ebdaa9b856e009e0fd83ea38674dc629bd936398c53b5b5e1",
+  "source_binding_sha256": "798e70c74fa52a37b632cdd4e5cef1ce8089af04a506a0ebfa2b82b2cb9d274a",
+  "external_QA_artifact_sha256": "95806262de06da0d30a7a9696d32fb42ee7058e6e5dcfa5492cbd8425b8a349a",
+  "external_binding_sha256": "e8988234368dab3b857990db62ae64f7cc927892745c05e3031c5c96693246f8",
+  "external_Agent5_root_review_receipt_sha256": "bff954b8b7aa0052f56a72ebd128ea428ac4edc0f20184c2a2d404b57eec6e78",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "source_reading_method": "Agent5helperreadcompleteOLD1304lines/NEW1487linesandpublic279lines; Agent5reviewedfullQA152lines/structuredchecks; Agent3readfullfinalQAandfindings, independentlycheckedactualreport4/7/8+closingandpriorallsourcebindings. No falseclaimAgent3duplicatedallfullsource/textreading.",
+  "requested_reread_complete": false,
+  "coordinator_disposition": "SEVEN_LOCAL_CHECKED_THREE_PARTIAL_WITH_ASSIGNED_INPUT_QUALIFICATIONS_NO_SOURCE_REPAIR",
+  "per_proof_reconstruction": {
+    "P:Jensen": {
+      "status": "CHECKED",
+      "critical_missing_steps": [],
+      "limits": [
+        "LocalworkingCHECKEDorPARTIALasrecorded; assignedinputqualifications remain, notwholedependencyclosure."
+      ],
+      "pending_assigned_inputs": [
+        {
+          "input_proof_id": "L:damped-homogeneous-norms",
+          "scope": "Assigneddependency/path remainsqualified by actualpartialpublicworking; notadditionalindependentgap"
+        },
+        {
+          "input_proof_id": "L:spatial-wick-measures",
+          "scope": "Assigneddependency/path remainsqualified by actualpartialpublicworking; notadditionalindependentgap"
+        },
+        {
+          "input_proof_id": "L:joint-fixed-order",
+          "scope": "Assigneddependency/path remainsqualified by actualpartialpublicworking; notadditionalindependentgap"
+        },
+        {
+          "input_proof_id": "L:vertex-crude",
+          "scope": "Assigneddependency/path remainsqualified by actualpartialpublicworking; notadditionalindependentgap"
+        }
+      ],
+      "report_notes": [],
+      "reported_per_proof_confidence": null
+    },
+    "P:mixed": {
+      "status": "CHECKED",
+      "critical_missing_steps": [],
+      "limits": [
+        "LocalworkingCHECKEDorPARTIALasrecorded; assignedinputqualifications remain, notwholedependencyclosure."
+      ],
+      "pending_assigned_inputs": [
+        {
+          "input_proof_id": "L:damped-homogeneous-norms",
+          "scope": "Assigneddependency/path remainsqualified by actualpartialpublicworking; notadditionalindependentgap"
+        },
+        {
+          "input_proof_id": "L:spatial-wick-measures",
+          "scope": "Assigneddependency/path remainsqualified by actualpartialpublicworking; notadditionalindependentgap"
+        },
+        {
+          "input_proof_id": "L:joint-fixed-order",
+          "scope": "Assigneddependency/path remainsqualified by actualpartialpublicworking; notadditionalindependentgap"
+        },
+        {
+          "input_proof_id": "L:crude-corrected",
+          "scope": "Assigneddependency/path remainsqualified by actualpartialpublicworking; notadditionalindependentgap"
+        },
+        {
+          "input_proof_id": "L:vertex-crude",
+          "scope": "Assigneddependency/path remainsqualified by actualpartialpublicworking; notadditionalindependentgap"
+        }
+      ],
+      "report_notes": [
+        "RP065-AUTHOR-F5"
+      ],
+      "reported_per_proof_confidence": null
+    },
+    "L:white-test": {
+      "status": "CHECKED",
+      "critical_missing_steps": [],
+      "limits": [],
+      "pending_assigned_inputs": [],
+      "report_notes": [],
+      "reported_per_proof_confidence": null
+    },
+    "L:damped-homogeneous-norms": {
+      "status": "PARTIAL",
+      "critical_missing_steps": [
+        "Correct public intermediate power; author calculation cannot replace missing/corrected independent public working."
+      ],
+      "limits": [],
+      "pending_assigned_inputs": [],
+      "report_notes": [
+        "RP065-AUTHOR-F1"
+      ],
+      "reported_per_proof_confidence": null
+    },
+    "L:translated-covariance-CS": {
+      "status": "CHECKED",
+      "critical_missing_steps": [],
+      "limits": [],
+      "pending_assigned_inputs": [],
+      "report_notes": [],
+      "reported_per_proof_confidence": null
+    },
+    "L:pairing-product-envelope": {
+      "status": "CHECKED",
+      "critical_missing_steps": [],
+      "limits": [],
+      "pending_assigned_inputs": [],
+      "report_notes": [],
+      "reported_per_proof_confidence": null
+    },
+    "L:spatial-wick-measures": {
+      "status": "PARTIAL",
+      "critical_missing_steps": [
+        "Public conditional expectation bound for latest retained vertex; integrate partner without changing retained Brownian marginal; iterate and verify distinct endpoint/gap domination. Source already states the preserved removal algorithm; no new proof or source repair developed.",
+        "Use correct horizon limits or explicitly change to excess-horizon variables with changed exponent; native report retained unaltered."
+      ],
+      "limits": [],
+      "pending_assigned_inputs": [],
+      "report_notes": [
+        "RP065-AUTHOR-F2",
+        "RP065-AUTHOR-F3"
+      ],
+      "reported_per_proof_confidence": null
+    },
+    "L:joint-fixed-order": {
+      "status": "PARTIAL",
+      "critical_missing_steps": [
+        "Public positivity cap limit and fixed-positive-spatial-width weak Green limit with bounded spatial covariance products and disjoint-pair integrable time-cube majorant. Source states these; no repair developed."
+      ],
+      "limits": [
+        "LocalworkingCHECKEDorPARTIALasrecorded; assignedinputqualifications remain, notwholedependencyclosure."
+      ],
+      "pending_assigned_inputs": [
+        {
+          "input_proof_id": "L:damped-homogeneous-norms",
+          "scope": "Assigneddependency/path remainsqualified by actualpartialpublicworking; notadditionalindependentgap"
+        },
+        {
+          "input_proof_id": "L:spatial-wick-measures",
+          "scope": "Assigneddependency/path remainsqualified by actualpartialpublicworking; notadditionalindependentgap"
+        }
+      ],
+      "report_notes": [
+        "RP065-AUTHOR-F4",
+        "RP065-AUTHOR-F5"
+      ],
+      "reported_per_proof_confidence": null
+    },
+    "L:crude-corrected": {
+      "status": "CHECKED",
+      "critical_missing_steps": [],
+      "limits": [
+        "LocalworkingCHECKEDorPARTIALasrecorded; assignedinputqualifications remain, notwholedependencyclosure."
+      ],
+      "pending_assigned_inputs": [
+        {
+          "input_proof_id": "L:damped-homogeneous-norms",
+          "scope": "Assigneddependency/path remainsqualified by actualpartialpublicworking; notadditionalindependentgap"
+        },
+        {
+          "input_proof_id": "L:spatial-wick-measures",
+          "scope": "Assigneddependency/path remainsqualified by actualpartialpublicworking; notadditionalindependentgap"
+        },
+        {
+          "input_proof_id": "L:joint-fixed-order",
+          "scope": "Assigneddependency/path remainsqualified by actualpartialpublicworking; notadditionalindependentgap"
+        }
+      ],
+      "report_notes": [
+        "RP065-AUTHOR-F5"
+      ],
+      "reported_per_proof_confidence": null
+    },
+    "L:vertex-crude": {
+      "status": "CHECKED",
+      "critical_missing_steps": [],
+      "limits": [
+        "LocalworkingCHECKEDorPARTIALasrecorded; assignedinputqualifications remain, notwholedependencyclosure."
+      ],
+      "pending_assigned_inputs": [
+        {
+          "input_proof_id": "L:damped-homogeneous-norms",
+          "scope": "Assigneddependency/path remainsqualified by actualpartialpublicworking; notadditionalindependentgap"
+        },
+        {
+          "input_proof_id": "L:spatial-wick-measures",
+          "scope": "Assigneddependency/path remainsqualified by actualpartialpublicworking; notadditionalindependentgap"
+        },
+        {
+          "input_proof_id": "L:joint-fixed-order",
+          "scope": "Assigneddependency/path remainsqualified by actualpartialpublicworking; notadditionalindependentgap"
+        }
+      ],
+      "report_notes": [
+        "RP065-AUTHOR-F5"
+      ],
+      "reported_per_proof_confidence": null
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "P:Jensen",
+      "global_main_ordinal": 1,
+      "status": "CHECKED",
+      "mathematical_check": "Local Jensen/series/liminf working adequate; upstream assigned10 construction and norms remain qualified.",
+      "source_old_LF": [
+        672,
+        684
+      ],
+      "source_new_LF": [
+        672,
+        684
+      ],
+      "source_old_proof_sha256": "9641d1229b2d30653397bb5713858865db79ece80c372023178505341ad8b521",
+      "source_new_proof_sha256": "9641d1229b2d30653397bb5713858865db79ece80c372023178505341ad8b521",
+      "report_section_LF": [
+        13,
+        32
+      ],
+      "actor": "Agent5existingGPTauthor-familyhelper; Agent5review+Agent3finaldisposition"
+    },
+    {
+      "proof_id": "P:mixed",
+      "global_main_ordinal": 2,
+      "status": "CHECKED",
+      "mathematical_check": "Local fixed-order product limit/reversal/positive double-series working adequate; assigned7/8/9/10 upstream qualifications remain.",
+      "source_old_LF": [
+        851,
+        904
+      ],
+      "source_new_LF": [
+        851,
+        927
+      ],
+      "source_old_proof_sha256": "d08fdd7c9e19a31d7db909733e779b7fee2b95925abf0f7ffcd8cd3b1c119c53",
+      "source_new_proof_sha256": "bb0c11e1f12451eae024c3dede0010d49a1dc427409085f418db1b1ef1b6db3a",
+      "report_section_LF": [
+        35,
+        56
+      ],
+      "actor": "Agent5existingGPTauthor-familyhelper; Agent5review+Agent3finaldisposition"
+    },
+    {
+      "proof_id": "L:white-test",
+      "global_main_ordinal": 3,
+      "status": "CHECKED",
+      "mathematical_check": "Overlap, beta integral, domestic half factor and total-order-two constant reconstructed.",
+      "source_old_LF": [
+        928,
+        941
+      ],
+      "source_new_LF": [
+        951,
+        964
+      ],
+      "source_old_proof_sha256": "8e612426c59a4601a9f161124813e6965e5521e8f8d62e8b481373150206d8fd",
+      "source_new_proof_sha256": "8e612426c59a4601a9f161124813e6965e5521e8f8d62e8b481373150206d8fd",
+      "report_section_LF": [
+        59,
+        90
+      ],
+      "actor": "Agent5existingGPTauthor-familyhelper; Agent5review+Agent3finaldisposition"
+    },
+    {
+      "proof_id": "L:damped-homogeneous-norms",
+      "global_main_ordinal": 4,
+      "status": "PARTIAL",
+      "mathematical_check": "F1 report-only wrong infinity power; other norm/tail/scaling/quadratic working checked.",
+      "source_old_LF": [
+        1034,
+        1103
+      ],
+      "source_new_LF": [
+        1057,
+        1154
+      ],
+      "source_old_proof_sha256": "0ed755fc2461705e029dcad011d9d860b98a5b4a524e06ee65f592a17540d150",
+      "source_new_proof_sha256": "c3bb4256de70da4050c81d3938b11765612c5c3f89fb726359f271ab24835df9",
+      "report_section_LF": [
+        93,
+        120
+      ],
+      "actor": "Agent5existingGPTauthor-familyhelper; Agent5review+Agent3finaldisposition"
+    },
+    {
+      "proof_id": "L:translated-covariance-CS",
+      "global_main_ordinal": 5,
+      "status": "CHECKED",
+      "mathematical_check": "Feature/Bochner/stationary Cauchy-Schwarz/truncation and cap passages reconstructed, including zero cases.",
+      "source_old_LF": [
+        1148,
+        1225
+      ],
+      "source_new_LF": [
+        1199,
+        1297
+      ],
+      "source_old_proof_sha256": "4e7da651e3f0b41da1e7854cbf9cc88fc1e9f57ec4243854253ee10e257ed797",
+      "source_new_proof_sha256": "f5693e46446d3fcd2eca8cacd20dcd939154172dc7bd4878625833e1653e6624",
+      "report_section_LF": [
+        123,
+        141
+      ],
+      "actor": "Agent5existingGPTauthor-familyhelper; Agent5review+Agent3finaldisposition"
+    },
+    {
+      "proof_id": "L:pairing-product-envelope",
+      "global_main_ordinal": 6,
+      "status": "CHECKED",
+      "mathematical_check": "Convolution, regional half-bound and all endpoint/fusion/slot subcases reconstructed; common factors in i=0 shorthand retained.",
+      "source_old_LF": [
+        1430,
+        1539
+      ],
+      "source_new_LF": [
+        1502,
+        1639
+      ],
+      "source_old_proof_sha256": "62125e030941ad6cc9d58e77d4fa2b40c9bb7310933b7b48735c2d33f3efd5c9",
+      "source_new_proof_sha256": "9bba4fc5b6f888077b81fa5d32218c1cb24830e8193389e1eda75f7eee1cc56d",
+      "report_section_LF": [
+        144,
+        163
+      ],
+      "actor": "Agent5existingGPTauthor-familyhelper; Agent5review+Agent3finaldisposition"
+    },
+    {
+      "proof_id": "L:spatial-wick-measures",
+      "global_main_ordinal": 7,
+      "status": "PARTIAL",
+      "mathematical_check": "F2 Brownian conditional-removal derivation missing; F3 wrong horizon-domain summary; no confirmed source fault.",
+      "source_old_LF": [
+        1596,
+        1724
+      ],
+      "source_new_LF": [
+        1696,
+        1848
+      ],
+      "source_old_proof_sha256": "39dad478027a7a68c6ca07e5213981d07f50da12dd53f9a70bad7179dac1162a",
+      "source_new_proof_sha256": "b4de1e1afa9f224728c2e371eca984abe66cbda9e94ad4c5767c457539e0f3e9",
+      "report_section_LF": [
+        166,
+        189
+      ],
+      "actor": "Agent5existingGPTauthor-familyhelper; Agent5review+Agent3finaldisposition"
+    },
+    {
+      "proof_id": "L:joint-fixed-order",
+      "global_main_ordinal": 8,
+      "status": "PARTIAL",
+      "mathematical_check": "F4 marked-tail cap/Green-limit passage missing; also consumes qualified4/7.",
+      "source_old_LF": [
+        1740,
+        1818
+      ],
+      "source_new_LF": [
+        1864,
+        1966
+      ],
+      "source_old_proof_sha256": "1e6b4514bd443e6154aa9df86fe52606907a28eb1fb812c583d795b788dce1ae",
+      "source_new_proof_sha256": "953961b399de32a8059ca51a494e1492c6e1655fa04de5874f16b865d228d5c6",
+      "report_section_LF": [
+        192,
+        218
+      ],
+      "actor": "Agent5existingGPTauthor-familyhelper; Agent5review+Agent3finaldisposition"
+    },
+    {
+      "proof_id": "L:crude-corrected",
+      "global_main_ordinal": 9,
+      "status": "CHECKED",
+      "mathematical_check": "Own damping/count/factorial/series steps reconstructed; qualified assigned4/8 are not closed upstream premises.",
+      "source_old_LF": [
+        1839,
+        1888
+      ],
+      "source_new_LF": [
+        1987,
+        2054
+      ],
+      "source_old_proof_sha256": "5a8b502c98ec264c36a6cd3e4f3ad7843025050e0b112ab6cfdb3bb74d64d311",
+      "source_new_proof_sha256": "e617d2808c3d8c1fd120e530d467d1335e614619f0ad9b79ac80cda52b7e91be",
+      "report_section_LF": [
+        221,
+        241
+      ],
+      "actor": "Agent5existingGPTauthor-familyhelper; Agent5review+Agent3finaldisposition"
+    },
+    {
+      "proof_id": "L:vertex-crude",
+      "global_main_ordinal": 10,
+      "status": "CHECKED",
+      "mathematical_check": "Own widthwise Wick/norm/count/optimization/ratio steps reconstructed; Xn-limit uses qualified8 and norms4.",
+      "source_old_LF": [
+        1910,
+        1962
+      ],
+      "source_new_LF": [
+        2076,
+        2145
+      ],
+      "source_old_proof_sha256": "38922bce3f08335f0b89d153df0e8a8688b725d1db9c8d5a0c36ab562cfc7ab7",
+      "source_new_proof_sha256": "f7bd662e539dc1c64d0fc29ec2d41db4f971c207c0a44d95ef45e16e6edc8e58",
+      "report_section_LF": [
+        244,
+        264
+      ],
+      "actor": "Agent5existingGPTauthor-familyhelper; Agent5review+Agent3finaldisposition"
+    }
+  ],
+  "mathematical_checks": [
+    "Local Jensen/series/liminf working adequate; upstream assigned10 construction and norms remain qualified.",
+    "Local fixed-order product limit/reversal/positive double-series working adequate; assigned7/8/9/10 upstream qualifications remain.",
+    "Overlap, beta integral, domestic half factor and total-order-two constant reconstructed.",
+    "F1 report-only wrong infinity power; other norm/tail/scaling/quadratic working checked.",
+    "Feature/Bochner/stationary Cauchy-Schwarz/truncation and cap passages reconstructed, including zero cases.",
+    "Convolution, regional half-bound and all endpoint/fusion/slot subcases reconstructed; common factors in i=0 shorthand retained.",
+    "F2 Brownian conditional-removal derivation missing; F3 wrong horizon-domain summary; no confirmed source fault.",
+    "F4 marked-tail cap/Green-limit passage missing; also consumes qualified4/7.",
+    "Own damping/count/factorial/series steps reconstructed; qualified assigned4/8 are not closed upstream premises.",
+    "Own widthwise Wick/norm/count/optimization/ratio steps reconstructed; Xn-limit uses qualified8 and norms4."
+  ],
+  "report_notes": [
+    {
+      "id": "RP065-AUTHOR-F1",
+      "classification": "REPORT_ONLY_ARITHMETIC_ERROR",
+      "report_lf": [
+        103,
+        103
+      ],
+      "disposition": "The displayed integrand has infinity power alpha+alpha0-3, not alpha+alpha0-2. Correct inequality alpha+alpha0-3<-1 gives the source threshold alpha+alpha0<2. Native report states the wrong intermediate power; source integral and threshold are correct. Remainingpublicobligation: Correct public intermediate power; author calculation cannot replace missing/corrected independent public working."
+    },
+    {
+      "id": "RP065-AUTHOR-F2",
+      "classification": "MISSING_PUBLIC_RECONSTRUCTION",
+      "report_lf": [
+        181,
+        181
+      ],
+      "disposition": "Public report assumes selected adjacent-gap product, then evaluates the Dirichlet integral. It calls the conditional-removal/remaining-marginal-law argument compressed and standard instead of deriving it. Remainingpublicobligation: Public conditional expectation bound for latest retained vertex; integrate partner without changing retained Brownian marginal; iterate and verify distinct endpoint/gap domination. Source already states the preserved removal algorithm; no new proof or source repair developed."
+    },
+    {
+      "id": "RP065-AUTHOR-F3",
+      "classification": "REPORT_ONLY_DOMAIN_ERROR",
+      "report_lf": [
+        182,
+        182
+      ],
+      "disposition": "Report describes horizon integral of exp(-((a-tau1)+(b-tau2))/2)/4 over [0,infinity)^2 as1. In absolute horizon variables it equals exp((tau1+tau2)/2). Source lower limits tau1,tau2 give1. Remainingpublicobligation: Use correct horizon limits or explicitly change to excess-horizon variables with changed exponent; native report retained unaltered."
+    },
+    {
+      "id": "RP065-AUTHOR-F4",
+      "classification": "MISSING_PUBLIC_LIMIT_PASSAGE",
+      "report_lf": [
+        200,
+        216
+      ],
+      "disposition": "Report applies finite-cap/Green-smoothed envelope then states the unsmoothed marked-tail inequality without reconstructing survival through caps then Green smoothing removal. Terminal positive-noise moment construction does not alone give the full temporal-tail integral passage. Remainingpublicobligation: Public positivity cap limit and fixed-positive-spatial-width weak Green limit with bounded spatial covariance products and disjoint-pair integrable time-cube majorant. Source states these; no repair developed."
+    },
+    {
+      "id": "RP065-AUTHOR-F5",
+      "classification": "REPORT_ONLY_DEPENDENCY_DESCRIPTION_ERROR",
+      "report_lf": [
+        276,
+        276
+      ],
+      "disposition": "P:mild-construction is explicitly used by2;8/9/10 do not consume it as a premise, and10 is stated as supplying its bound. No independent proof of the unassigned mild proposition or whole-book cycle closure is claimed."
+    }
+  ],
+  "local_counts": {
+    "CHECKED": 7,
+    "PARTIAL": 3
+  },
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "critical_required_public_reconstruction_missing": true,
+  "source_equivalence_checked_for_all10": true,
+  "source_currentness": {
+    "covered_revision": "58108ca3065cb408eb13b06cc772fe71de546535",
+    "scope": "OnlyassignedliteralMAINord1\u201310vsCDDE, notexpandedbook/images/primarysource/Lean/render/human/RFapproval"
+  },
+  "per_proof_confidence": "Absent/null, callhighnotdistributed",
+  "adjudicator_callback_or_retry_used": false,
+  "historical_report_or_grade_edited": false,
+  "native_protocol_acceptance": "Separatecustodylane",
+  "whole_book_acceptance": false,
+  "public_release_or_RF": false
+}

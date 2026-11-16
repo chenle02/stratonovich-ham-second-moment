@@ -1,0 +1,46 @@
+\begin{lemma}[Homogeneous damped norms and temporal tails]
+  \label{L:damped-homogeneous-norms}
+  Under Hypothesis~\ref{H:homog}, the integrals
+  in~\eqref{E:damped-norm-definitions} are finite for every $\theta > 0$, with
+  $N_2(\theta)^2 \ge 0$, and
+  \[
+    N_0(\theta)=\theta^{-2},\qquad
+    N_1(\theta)=\theta^{\alpha+\alpha_0-2}N_1(1),\qquad
+    N_2(\theta)^2=\theta^{-\beta}N_2(1)^2,
+    \quad\beta=4-\alpha-\alpha_0.
+  \]
+  Let
+  \[
+    K_M(r)=\frac1{\Gamma_{\mathrm{E}}(\alpha_0)}
+    \int_M^\infty e^{-\lambda|r|}\lambda^{\alpha_0-1}\ud\lambda.
+  \]
+  Denote by $N_1^{(M)}(1)$ the first norm with $\lambda > M$, and by
+  $N_2^{(M)}(1)$ the second norm with $K_M(s-t)$ in place of
+  $|s-t|^{-\alpha_0}$. Then
+  \begin{equation}\label{E:damped-tail-norms}
+    N_1^{(M)}(1)\longrightarrow0,\qquad
+    N_2^{(M)}(1)\longrightarrow0\quad(M\to\infty).
+  \end{equation}
+  More precisely, let $m:\R^d\to[0,1]$ be measurable and let
+  $S\subset S'\subset(0,\infty)$ be measurable. Define $N_{1,m,S}(\theta)$
+  by replacing $\mu$ with $m\mu$ and restricting the $\lambda$ integral in
+  $N_1$ to $S$. Define $N_{2,m,S}(\theta)^2$ by replacing $\mu$ with $m\mu$
+  and the temporal kernel in $N_2^2$ with
+  \[
+    K_S(r)=\frac1{\Gamma_{\mathrm{E}}(\alpha_0)}
+    \int_S e^{-\lambda|r|}\lambda^{\alpha_0-1}\ud\lambda.
+  \]
+  Then, for every $\theta>0$,
+  \begin{equation}\label{E:damped-multiplier-comparison}
+    \begin{split}
+      0\le N_{1,m,S}(\theta)&\le N_{1,1,S'}(\theta),\\
+      0\le N_{2,m,S}(\theta)^2&\le N_{2,1,S'}(\theta)^2.
+    \end{split}
+  \end{equation}
+  These are comparisons of spectral expressions, including full and tail
+  domains. An arbitrary $m$ need not preserve Hypothesis~\ref{H:homog}; the
+  scaling identities above are asserted for the original covariance only.
+  Spatial Gaussian smoothing and Gaussian smoothing of the Green kernel
+  give multipliers in this class. The separate mass identity for $N_0$ is
+  unchanged by Gaussian smoothing of the Green kernel.
+\end{lemma}

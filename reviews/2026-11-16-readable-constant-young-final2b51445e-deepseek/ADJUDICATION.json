@@ -1,0 +1,505 @@
+{
+  "review_record_id": "RP050",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "2b51445e0c4a2c3a407faa7194334504451404ff",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_constant_phase_young.tex",
+  "source_binding_sha256": "9d7604d59475630cfb5f615a3f85d9c9878ac84d01a52a40e3fc4b42259ab6f2",
+  "public_report_sha256": "057b10d4e3873cbc2116d4802b3c284e36fa58cb26e9bebf8d65d41852266804",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_ALL_ASSIGNED_PUBLIC_RECONSTRUCTIONS_CHECKED_ROOT_REVIEWS",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:constant-phase-free": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:constant-phase-driver": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:constant-source-response": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:constant-young-linear": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:constant-gaussian-flow": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:constant-source-solution": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:constant-raw-average": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:constant-compact-base": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:constant-phase-free",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED (all three steps retained).",
+        "new_explanations_raw": "JUSTIFIED. The NEW insertions “Time reversal handles t<0 with the same support bound” (cos is even, sin is odd: the same formula and support bound hold for S(-|t|)) and “The support property concerns the total distribution, not its chosen decomposition” are correct, and directly support the lemma’s cancellation claim."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 9,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "d1e3f457f5bfcba837517ba23fed2208d1ba35707c78bd416461bc70f90157fb",
+      "mathematical_check": "The public proof distinguishes nonzero constant distributions from locallyL2 weighted Sobolev Fourier functions using the scaled test andepsilon^(d/2)CS; this proves injectivity, with Sobolev pairing continuity and Hilbert direct-sum completeness/separability/proper closediE. Signed Peetre and the unitaryc_d weightedL1 kernel bound both cutoff Sobolev entries, retaining both constant columns. Compactly supported Green/distribution matrix multipliers and masses1,t,0,1 give the full free group on total distributions; support and time reversal give finite propagation even when the chosen E and constant pieces cancel locally. Strong rather than operator-norm free continuity is respected.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        21,
+        35
+      ],
+      "old_proof_lf": [
+        37,
+        88
+      ],
+      "old_statement_sha256": "ec1f6b6d2405197c5b3c235be412f0a957b5b0cf8ad73c8ae572cf59e5c9e85c",
+      "old_proof_sha256": "8ee34b646e3b716ec60080ec90e3360f7602529eecbbfea2f0ffcef94e5c5578",
+      "new_statement_lf": [
+        21,
+        35
+      ],
+      "new_proof_lf": [
+        37,
+        104
+      ],
+      "new_statement_sha256": "ec1f6b6d2405197c5b3c235be412f0a957b5b0cf8ad73c8ae572cf59e5c9e85c",
+      "new_proof_sha256": "712eb2cf3637cafbb37590e787faabff9073fe6bdcecb2a4574c3265b491f59c"
+    },
+    {
+      "proof_id": "P:constant-phase-driver",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED. The added sentence “The range of i has zero constant coordinates, which also gives π_C A=0” is correct: A=iA_E maps F into iE, and π_C iE={0}."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 23,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "26b2c28a3b20e234a046fe25d850a32cb8efe35ee7c8fd7c72f8265ce32a7f43",
+      "mathematical_check": "The report passes both deterministic localizations through finite original and correlated source sums toCtheta path limits, then a uniform subsequence/rationaltime argument gives alltime identities on one event for eachfixedrho. For two auxiliary cutoffs, Dchi(Lpsi-LpsiPrime)=0 and rightlocalization prove independence; restricting toie givesAi=iM_E, and both constant columns are explicitly retained. Bounded composition preserves compactness and exact-source convergence. Uniformsqrtp moments and n! bounds give the stated square-exponential path norms, and deterministic bounded composition preserves originalW measurability. No uncountable-cutoff event is inferred.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        97,
+        112
+      ],
+      "old_proof_lf": [
+        114,
+        135
+      ],
+      "old_statement_sha256": "2f9b6103bfaee902ddaa8125cb1eeefbfac69ac6d21c6ef735d60c1dfecbef59",
+      "old_proof_sha256": "277267729a8481ff2ea7d9e64163efee96bea84546aceba03a49c5cf03182565",
+      "new_statement_lf": [
+        113,
+        128
+      ],
+      "new_proof_lf": [
+        130,
+        168
+      ],
+      "new_statement_sha256": "2f9b6103bfaee902ddaa8125cb1eeefbfac69ac6d21c6ef735d60c1dfecbef59",
+      "new_proof_sha256": "ffdea457e4cbc54d7767cade857824b61b19aa4dcc1a65806c3772f7855ff0db"
+    },
+    {
+      "proof_id": "L:constant-source-response",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED. The NEW intro “replace each initial state by its localized Sobolev representative near the coefficient support” is a faithful restatement of Step 3."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 37,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "c87d6e6cb9009ac2e598428f37eef57276973477184792cf3e48c29ca3a62a05",
+      "mathematical_check": "The public operator bound uses e1 inL2, H^-1/2<=L2 and the separate constant-displacement column to obtain||BF(b)||<=||b||infinity+||b||2. Strong state continuity and uniform finite-horizon group/operator bounds yield the strong integral and Lipschitz primitive without an operator derivative. Total initial distributions ofz andiLpsi z agree on the enlarged ball; total-data finite propagation kills their forcing difference near the coefficient, so the supplied E ordinary response yields the fullF identity. Separability/rationaltimes/continuity cover allstates/times forfixedrho, with no assertion thatE is dense inF.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        137,
+        149
+      ],
+      "old_proof_lf": [
+        151,
+        173
+      ],
+      "old_statement_sha256": "858e4563e47cba31d15c38281784c835096214733dca5fff1a04e12a607cece7",
+      "old_proof_sha256": "0e216ef37fc9dc9ea1444ddf33d7afdc19eb56c536bf2e5b255432954a513d87",
+      "new_statement_lf": [
+        170,
+        182
+      ],
+      "new_proof_lf": [
+        184,
+        217
+      ],
+      "new_statement_sha256": "858e4563e47cba31d15c38281784c835096214733dca5fff1a04e12a607cece7",
+      "new_proof_sha256": "2dcf3598e826437cd9347952dea454b8aecfb174ad37e996106c9dbf0c68c608"
+    },
+    {
+      "proof_id": "P:constant-young-linear",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED. All inserted derivations above check out; constants 1/4, 4/3, 2, 1/3 are used exactly as in OLD and are correct."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 51,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "6365f62aeda6e9003addce50250f6ea60265f7641686bab9e2cac8ccbc9e08c4",
+      "mathematical_check": "The report reconstructs the Young-remainder supremum and seminorm estimates, adds them in the scaled complete norm and obtains ctheta=2max(1,Ctheta). Choosing ctheta K ell^theta<=1/4 gives actual contraction on the affine initial-value space, the4/3 bound and safe2 bound. Subtraction and absorption give the exact two-driver bound; induction givesE_j<=2^jE0+j2^(j+1)ctheta ell^theta deltaB on a common uniformly finite partition. Piece counting yields exponential growth in driver^(1/theta), ordered right multiplication plus uniqueness gives composition, and local||U-I||<=1/3 gives Neumann inversion/globalinvertibility. The formulaU(t,s)=U(t,0)U(s,0)^-1 proves joint norm continuity. No nonlinear bounded-vector-field theorem or commuting multiplication is substituted.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        190,
+        203
+      ],
+      "old_proof_lf": [
+        205,
+        256
+      ],
+      "old_statement_sha256": "c3dc747396e3f087b2bbb4ae75085e54f67c847a4cf2eb7a30d8d36792a3e927",
+      "old_proof_sha256": "4cebf71172d678adb42d0824a9bfd6744ccc528f57c160991740b3460a79a398",
+      "new_statement_lf": [
+        234,
+        247
+      ],
+      "new_proof_lf": [
+        249,
+        328
+      ],
+      "new_statement_sha256": "c3dc747396e3f087b2bbb4ae75085e54f67c847a4cf2eb7a30d8d36792a3e927",
+      "new_proof_sha256": "c58890a2d429f8eddab5a1bc3b497c5e33fd95c8a21cd090c0f8cdcdc5d4d6ce"
+    },
+    {
+      "proof_id": "P:constant-gaussian-flow",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED. All four Steps mirror the OLD deductions; the added justifications (union bound, moment transfer, range inclusion) are mathematically sound."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 69,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "0bbd28e9bfee605c4886432db1be179d1c9d4fb2a7f53d00d4c9b02bf46a0abc",
+      "mathematical_check": "The public proof maps separable Gaussian-driver spans continuously into the norm-continuous Young triangle space, and Young sums preserve piC/rangeiE. On bounded-driver events, localLipschitz plus exponential-tail Markov/union bound gives the explicit probability estimate; order is fixedK, widthlimit, thenK→infinity. Since1/theta<2, Young growth is controlled by the Gaussian driver square exponential, giving every finiteflowmoment. The2p moment/epsilon event split upgrades probability convergence toLp. Deterministic bounded free conjugation maps into bounded operator families with norm<=C_T^2, preserving measurability/moments/convergence and range; it only gives strong state continuity, not operator-norm continuity ofthephysical/freeflow. Group cancellation yields composition and the full constantblockJ_(t-s).",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        262,
+        285
+      ],
+      "old_proof_lf": [
+        287,
+        380
+      ],
+      "old_statement_sha256": "b84e3d426e9fc486bcb2a1a102c6c55cdae53cd2a62c0c0a60222df79a6d9f2f",
+      "old_proof_sha256": "e154dd514e8eae3ce328c3e43849f79fd8ddb5f4879d57727f0d2b572b9701cb",
+      "new_statement_lf": [
+        334,
+        357
+      ],
+      "new_proof_lf": [
+        359,
+        481
+      ],
+      "new_statement_sha256": "b84e3d426e9fc486bcb2a1a102c6c55cdae53cd2a62c0c0a60222df79a6d9f2f",
+      "new_proof_sha256": "e2870c4228901559cb74f516971aab2cb2c618841fb2604371069fd3304cd9cb"
+    },
+    {
+      "proof_id": "L:constant-source-solution",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED. The added simplex-volume sentence is correct and directly justifies the n! denominator."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 84,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "b173774d720bdeb13ecc371f86dc0280c90c6f7f19dab4d4b054fd35ddef5419",
+      "mathematical_check": "The report explicitly converts Young sums onstates into the ordinary strong integral by uniform continuity ofU and boundedC, then uses strong free Duhamel/Picard uniqueness onF. It derives phase coefficients W0=e0, ordered-simplex volume and the correct C_T^(n+1) B_T^n T^n/n! bound, includingorder0. Distributional testing ofeach forcing against compactphi gives exactly the scalar Green recursion with absoluteFubini majorant||phi||infinity||f_r||1(t-r); the sphere measure in d3 is retained. Scalar local factorial convergence and phaseF/distribution convergence identify displacement limits with the same ordinarysource solution, with no operator-norm derivative or densityE inF.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        388,
+        393
+      ],
+      "old_proof_lf": [
+        395,
+        444
+      ],
+      "old_statement_sha256": "c687f9cfb546b945c7f5ad19bfa39feefc023487ec82906d86b7966432f4b538",
+      "old_proof_sha256": "c0ecb088128f218d6f9a22c9ddecf73790eb6789520b65fdb4992a18a9da159e",
+      "new_statement_lf": [
+        489,
+        494
+      ],
+      "new_proof_lf": [
+        496,
+        559
+      ],
+      "new_statement_sha256": "c687f9cfb546b945c7f5ad19bfa39feefc023487ec82906d86b7966432f4b538",
+      "new_proof_sha256": "fc72e1e6193fb948a68160fbf70eda81cb2a4f87a657a543b13b4b4591a1d7c4"
+    },
+    {
+      "proof_id": "P:constant-raw-average",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED. The Step-2 functional/Bocher argument is the same as OLD and is correct."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 98,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "ac2912af64318b4f7d73346552196038a2943486e5608c309e5d894c8be215da",
+      "mathematical_check": "The public observable bound is the exact Sobolev duality norm including constantdisplacement1. OriginalW measurability follows through the continuous Young/deterministic maps on separableranges. Forfixedrho the total displacement distribution pairs withphi ofintegral1, giving the ordinary average without anH1/2 pointtrace. UniformQ_t and scalarFubini/weightedCS show the ordinaryaverage lies inL2; every boundedXi dual functional commutes with the Bochner integral, andXi=sign(B-C) proves equality ofthetwoactualvariables. FullflowLp convergence then supplies the masked Bochner-average premise under samefixedmask/covariance/coupling; the named conditional canonical-transfer theorem gives the pointmomentcomparison ONLY here forphi>=0,||phi||1=1,h0,g1. Zero covariance gives equality; limits are fixedmask/horizon beforetimeasymptotics.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        450,
+        468
+      ],
+      "old_proof_lf": [
+        470,
+        532
+      ],
+      "old_statement_sha256": "91bcf5600d598ed3ca37b1d996ca76690394be0dcd6d6c601704cd6483c4f2e6",
+      "old_proof_sha256": "5ea63ffe0a3963d190a6f9c186ec40fac8cac749bc81ac6186c711421a28307e",
+      "new_statement_lf": [
+        565,
+        583
+      ],
+      "new_proof_lf": [
+        585,
+        661
+      ],
+      "new_statement_sha256": "91bcf5600d598ed3ca37b1d996ca76690394be0dcd6d6c601704cd6483c4f2e6",
+      "new_proof_sha256": "0c9b8929a4c8f10fe59e8d9237c29f53df994420d663d98b43b459e17a4adf43"
+    },
+    {
+      "proof_id": "P:constant-compact-base",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED. The two added sentences (“(H+GX)²≤2H²+2G²X² … choice of c′ …”, and the alternative moment transfer) are correct."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 112,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "42b43395e3cd2dabdcb793a7471e373596bf72b09f0963e01338a13b7951bb5a",
+      "mathematical_check": "The report derives the deterministic statewise primitive/rangeiE/Lipschitz bound fromthefull BF estimate. For boundedH,G, ||Ah+gA||<=H+GX and(H+GX)^2<=2H^2+2G^2X^2 withcPrime<=c/[2(1+G^2)] give honest uniformdriver exponential control. The alternative subquadraticYoung growth bound gives allfiniteflowmoments. Sourcepathconvergence/localYoungstability/uniformintegrability and strongPicard-to-chain arguments apply to the compactunion coefficienth+g mYrho forboundedrealg, individually inparameters. It explicitly excludes aCameronshift or uncountablecommonparameter event, and restricts the originalpointmomentcomparison toh0,g1.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        537,
+        548
+      ],
+      "old_proof_lf": [
+        550,
+        569
+      ],
+      "old_statement_sha256": "d9fe3cb72f2feaf9e459a43282f82f2b9fbaa1d899c06e337261342688d05f4d",
+      "old_proof_sha256": "ddfc12f76df64253b87877927d4fe017b1142dd21ce148f115507a1bfd2ffe73",
+      "new_statement_lf": [
+        666,
+        677
+      ],
+      "new_proof_lf": [
+        679,
+        713
+      ],
+      "new_statement_sha256": "d9fe3cb72f2feaf9e459a43282f82f2b9fbaa1d899c06e337261342688d05f4d",
+      "new_proof_sha256": "047db33552d8a8b147362ad607bb1bcc9b7b128e8e3664b6bf9fbbf4dc5f65a9"
+    }
+  ],
+  "mathematical_checks": [
+    "The public proof distinguishes nonzero constant distributions from locallyL2 weighted Sobolev Fourier functions using the scaled test andepsilon^(d/2)CS; this proves injectivity, with Sobolev pairing continuity and Hilbert direct-sum completeness/separability/proper closediE. Signed Peetre and the unitaryc_d weightedL1 kernel bound both cutoff Sobolev entries, retaining both constant columns. Compactly supported Green/distribution matrix multipliers and masses1,t,0,1 give the full free group on total distributions; support and time reversal give finite propagation even when the chosen E and constant pieces cancel locally. Strong rather than operator-norm free continuity is respected.",
+    "The report passes both deterministic localizations through finite original and correlated source sums toCtheta path limits, then a uniform subsequence/rationaltime argument gives alltime identities on one event for eachfixedrho. For two auxiliary cutoffs, Dchi(Lpsi-LpsiPrime)=0 and rightlocalization prove independence; restricting toie givesAi=iM_E, and both constant columns are explicitly retained. Bounded composition preserves compactness and exact-source convergence. Uniformsqrtp moments and n! bounds give the stated square-exponential path norms, and deterministic bounded composition preserves originalW measurability. No uncountable-cutoff event is inferred.",
+    "The public operator bound uses e1 inL2, H^-1/2<=L2 and the separate constant-displacement column to obtain||BF(b)||<=||b||infinity+||b||2. Strong state continuity and uniform finite-horizon group/operator bounds yield the strong integral and Lipschitz primitive without an operator derivative. Total initial distributions ofz andiLpsi z agree on the enlarged ball; total-data finite propagation kills their forcing difference near the coefficient, so the supplied E ordinary response yields the fullF identity. Separability/rationaltimes/continuity cover allstates/times forfixedrho, with no assertion thatE is dense inF.",
+    "The report reconstructs the Young-remainder supremum and seminorm estimates, adds them in the scaled complete norm and obtains ctheta=2max(1,Ctheta). Choosing ctheta K ell^theta<=1/4 gives actual contraction on the affine initial-value space, the4/3 bound and safe2 bound. Subtraction and absorption give the exact two-driver bound; induction givesE_j<=2^jE0+j2^(j+1)ctheta ell^theta deltaB on a common uniformly finite partition. Piece counting yields exponential growth in driver^(1/theta), ordered right multiplication plus uniqueness gives composition, and local||U-I||<=1/3 gives Neumann inversion/globalinvertibility. The formulaU(t,s)=U(t,0)U(s,0)^-1 proves joint norm continuity. No nonlinear bounded-vector-field theorem or commuting multiplication is substituted.",
+    "The public proof maps separable Gaussian-driver spans continuously into the norm-continuous Young triangle space, and Young sums preserve piC/rangeiE. On bounded-driver events, localLipschitz plus exponential-tail Markov/union bound gives the explicit probability estimate; order is fixedK, widthlimit, thenK→infinity. Since1/theta<2, Young growth is controlled by the Gaussian driver square exponential, giving every finiteflowmoment. The2p moment/epsilon event split upgrades probability convergence toLp. Deterministic bounded free conjugation maps into bounded operator families with norm<=C_T^2, preserving measurability/moments/convergence and range; it only gives strong state continuity, not operator-norm continuity ofthephysical/freeflow. Group cancellation yields composition and the full constantblockJ_(t-s).",
+    "The report explicitly converts Young sums onstates into the ordinary strong integral by uniform continuity ofU and boundedC, then uses strong free Duhamel/Picard uniqueness onF. It derives phase coefficients W0=e0, ordered-simplex volume and the correct C_T^(n+1) B_T^n T^n/n! bound, includingorder0. Distributional testing ofeach forcing against compactphi gives exactly the scalar Green recursion with absoluteFubini majorant||phi||infinity||f_r||1(t-r); the sphere measure in d3 is retained. Scalar local factorial convergence and phaseF/distribution convergence identify displacement limits with the same ordinarysource solution, with no operator-norm derivative or densityE inF.",
+    "The public observable bound is the exact Sobolev duality norm including constantdisplacement1. OriginalW measurability follows through the continuous Young/deterministic maps on separableranges. Forfixedrho the total displacement distribution pairs withphi ofintegral1, giving the ordinary average without anH1/2 pointtrace. UniformQ_t and scalarFubini/weightedCS show the ordinaryaverage lies inL2; every boundedXi dual functional commutes with the Bochner integral, andXi=sign(B-C) proves equality ofthetwoactualvariables. FullflowLp convergence then supplies the masked Bochner-average premise under samefixedmask/covariance/coupling; the named conditional canonical-transfer theorem gives the pointmomentcomparison ONLY here forphi>=0,||phi||1=1,h0,g1. Zero covariance gives equality; limits are fixedmask/horizon beforetimeasymptotics.",
+    "The report derives the deterministic statewise primitive/rangeiE/Lipschitz bound fromthefull BF estimate. For boundedH,G, ||Ah+gA||<=H+GX and(H+GX)^2<=2H^2+2G^2X^2 withcPrime<=c/[2(1+G^2)] give honest uniformdriver exponential control. The alternative subquadraticYoung growth bound gives allfiniteflowmoments. Sourcepathconvergence/localYoungstability/uniformintegrability and strongPicard-to-chain arguments apply to the compactunion coefficienth+g mYrho forboundedrealg, individually inparameters. It explicitly excludes aCameronshift or uncountablecommonparameter event, and restricts the originalpointmomentcomparison toh0,g1."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "proof_id": "P:constant-compact-base",
+      "classification": "report-only added-versus-retained wording precision",
+      "disposition": "The alternative subquadratic moment-transfer inequality already occurs in baseline OLD nearLF560–561; the rewrite adds explanation/step separation rather than introducing that inequality. Its mathematical justification in this report is correct. Source/body hashes carry the exact difference; no source edit required.",
+      "report_lf": 122
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 20172,
+      "sha256": "057b10d4e3873cbc2116d4802b3c284e36fa58cb26e9bebf8d65d41852266804"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 5605,
+      "sha256": "1f7093b7582baeabfb31f02937e8bbf4e2155989fd025e60f5a95597ed175dde"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 11508,
+      "sha256": "fb804faac95c64dd87280346267a7f9675574409a707bdc7d02dfac718ddd51d"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 5240,
+      "sha256": "9d7604d59475630cfb5f615a3f85d9c9878ac84d01a52a40e3fc4b42259ab6f2"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 10228,
+      "sha256": "ab2ac79de0e23462a8fb6e73f97bef85e7981bf862db52160a29d46d7f247667"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 5910,
+      "sha256": "0aa718c1c0c9c0b0e9d14649ac689c1aa4742bf76afba5f964dd37dbd2825acc"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 27376,
+      "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 34017,
+      "sha256": "9b6cc5984431668207d0138b244ad401ede096b88b95e6af68ea766841fd54bd"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-source-convergence-baseline.txt",
+      "bytes": 25085,
+      "sha256": "f212bad41254a78109e5802def45053c8bda53a416cda9f457513406304aaef4"
+    },
+    {
+      "path": "inputs/context-masked-moments-baseline.txt",
+      "bytes": 11113,
+      "sha256": "533f96300b5e0e10205aeb374cdd55378fd3a27e8a5faf6148187f0c02221024"
+    },
+    {
+      "path": "inputs/context-actual-driver-baseline.txt",
+      "bytes": 35818,
+      "sha256": "add3561f9a2e846f9992d91a10385d8b8e99406359eaabae640520366b184f0e"
+    },
+    {
+      "path": "inputs/context-wave-variance-baseline.txt",
+      "bytes": 24927,
+      "sha256": "66369d1bde2358f92e7edfb33f899bd96c2698a631e9ca0d9f330062ff55f8a6"
+    },
+    {
+      "path": "inputs/context-covariance-foundation-baseline.txt",
+      "bytes": 21173,
+      "sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020"
+    },
+    {
+      "path": "inputs/context-compact-gaussian-baseline.txt",
+      "bytes": 30608,
+      "sha256": "caf9e56a5b818f9e5daa02ac3423c354b95c515f1932d92170ec002b0fbaa84a"
+    }
+  ],
+  "input_identity_checks": "All delivered source/context payload hashes and WHOLE_FILE pinned Git byte identities verified; every complete OLD/NEW statement/proof independently checked by LF/bytes/SHA. Complete target text read with baseline comparisons and genuine needed stated inputs, not merely delta QA.",
+  "source_currentness": {
+    "covered_launch_revision": "2b51445e0c4a2c3a407faa7194334504451404ff",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "limit": "Only this exact assigned source versuscdde and supplied context; no older report rebinding, unexamined successor or whole-book seal."
+  },
+  "read_limits": [
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority"
+}

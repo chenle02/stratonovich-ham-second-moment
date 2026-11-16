@@ -1,0 +1,27 @@
+\begin{lemma}[The original mean and variance]\label{L:compact-raw-profile}
+  Let $\Gamma \ne 0$ satisfy Hypothesis~\ref{H:homog}, let $a = \alpha_0$, and
+  let real nonnegative nonzero $\Psi \in C_c^\infty((0,1)\times\R^d)$ be
+  arbitrary, without a separability assumption. Define
+  \begin{equation}\label{E:compact-raw-mean}
+    h_\sigma(x)=\int_0^1|\sigma-u|^{-a}
+    (\Gamma*\Psi(u,\cdot))(x)\ud u,\qquad
+    \overline{q}(x)=\int_0^1\Psi(u,x)\ud u,\qquad Z=W(\Psi).
+  \end{equation}
+  Then $h$ is smooth in time and space on compact sets, and
+  \begin{equation}\label{E:compact-raw-cost}
+    0<v_\Psi:=\E Z^2
+    =\int_0^1\int\Psi(\sigma,x)h_\sigma(x)\ud x\ud\sigma<\infty.
+  \end{equation}
+  Against every smooth compact positive-time test $F_0$,
+  \[
+    \E[W(\Psi)W(F_0)]=\int F_0(s,x)h_s(x)\ud x\ud s.
+  \]
+  Moreover, on $I$,
+  \begin{equation}\label{E:compact-positive-mean-floor}
+    h_\sigma\ge\Gamma*\overline{q},\qquad
+    v_\Psi\ge Q(\overline{q})
+    :=\int\Gamma(\ud z)\int\overline{q}(x)\overline{q}(x-z)\ud x>0.
+  \end{equation}
+  For every fixed mask, $V_\sigma = m_Rh_\sigma$ is a smooth compact family,
+  Lipschitz in $\sigma$ in $L^\infty$ and $L^2$.
+\end{lemma}

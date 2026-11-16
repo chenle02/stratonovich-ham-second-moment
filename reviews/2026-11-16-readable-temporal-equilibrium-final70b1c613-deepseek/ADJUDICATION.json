@@ -1,0 +1,189 @@
+{
+  "review_record_id": "RP055",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "70b1c613a1d3d2765fd9295dfd5f5e0d6b2c3661",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_temporal_equilibrium.tex",
+  "source_binding_sha256": "8164d7568085a12f0b1aa95a7c9ab4b6b3dd02f861b45adaed0a23f1db7ba847",
+  "public_report_sha256": "66827b9304e4ecb2377c51faa07206d9e0560456fb5f26a2432dcaec356cf6c6",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_ALL_ASSIGNED_PUBLIC_RECONSTRUCTIONS_CHECKED_ROOT_REVIEWS",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:equilibrium-gamma-beta": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:temporal-equilibrium": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:equilibrium-gamma-beta",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED (no new explanatory text was added inside the assigned proof range LF 25–36; the statement range LF 14–23 and proof range LF 25–36 are byte-identical in OLD and NEW)"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 9,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "a1bbc02302a6022cd2a99f1e6b14e27bb0dbc8948412c301c12be6640798fcd1",
+      "mathematical_check": "The unchanged Gamma/Beta proof is actually reconstructed publicly, not accepted on byte identity. Integration byparts handlesboth positive-argument boundary terms. The positiveGamma product withu=Rt,v=R(1-t) has exactJacobianR; nonnegativeTonelli givesBetaGamma. The report explicitly tracks t=(1+v)/2, evenness andv^2=w, producing2^(1-2x)Beta(1/2,x). Substitutionu=z^2 and the positive squared Gaussian polar integral giveGamma(1/2)=sqrtpi. Substituting the BetaGamma formulas and cancelling positiveGamma(x) gives the exact duplication normalization2^(2x-1)/sqrtpi. All arguments remainpositive and no imported proof is needed.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        14,
+        23
+      ],
+      "old_proof_lf": [
+        25,
+        36
+      ],
+      "old_statement_sha256": "113cf31ed19ff83ea3269837f0ec9e5993e7bf7598c9105f1bd083d607d1cd8b",
+      "old_proof_sha256": "f92520edf6c75ab0b75279cf3eadbf39481aa6f5352636a282b9001d058fb711",
+      "new_statement_lf": [
+        14,
+        23
+      ],
+      "new_proof_lf": [
+        25,
+        36
+      ],
+      "new_statement_sha256": "113cf31ed19ff83ea3269837f0ec9e5993e7bf7598c9105f1bd083d607d1cd8b",
+      "new_proof_sha256": "f92520edf6c75ab0b75279cf3eadbf39481aa6f5352636a282b9001d058fb711"
+    },
+    {
+      "proof_id": "L:temporal-equilibrium",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 120,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "d3578052bd2961d67bbb4221858a1f5f6d0f6f769bb0ce4118f39aee4eea23b0",
+      "mathematical_check": "The report reconstructs the positive binomial series with coefficient ratio, compact-subinterval convergence ofits derivative, coefficient ODE(1-z)yprime=p y andinitial1; positivity justifieseverytermwiseintegration. For0<a<1,r=(1-a)/2 in(0,1/2), the substitutiont=su gives exacts^r andBeta(n+1-r,2r). Gamma recurrence gives the Beta ratio(1-r)_n/(1+r)_n; the separate telescoping(r)_n/(1+r)_n=r/(r+n), includingn0, matches every incompleteBeta coefficient and the new explanatory sentence. ReflectionL(1-s) andBeta symmetry combine to exactGamma(r)Gamma(1-r), yieldingpotential1 aftertheexternalnormalization. Direct endpointBeta(r,1-r) calculations are supplied ratherthan anunjustifiedlimit; interior/time/endpointsingularity exponents arechecked. The report independently verifiesL1 via-r>-1 andL2 via-2r=a-1>-1. The rawmass Beta(1-r,1-r)/[Gamma(r)Gamma(1-r)] simplifies toGamma((1+a)/2)/[Gamma(1+a)Gamma((1-a)/2)] with positivearguments. It doesnotprobability-normalize thedensity, includetheparameterendpoints orassert extraasymptotics.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        39,
+        53
+      ],
+      "old_proof_lf": [
+        55,
+        97
+      ],
+      "old_statement_sha256": "c18c37be2509c5280d3393c7075af30f8fef6f46e7cb84bbaa05e630bc999139",
+      "old_proof_sha256": "374700cae87f31ee7269e9661c1a55faf4f52a1445334bb597a458eca7a34655",
+      "new_statement_lf": [
+        39,
+        53
+      ],
+      "new_proof_lf": [
+        55,
+        115
+      ],
+      "new_statement_sha256": "c18c37be2509c5280d3393c7075af30f8fef6f46e7cb84bbaa05e630bc999139",
+      "new_proof_sha256": "b05778fed698a4ea0ebd6f7cc0c1251873faf56b10593582cc2634c6f99a87b2"
+    }
+  ],
+  "mathematical_checks": [
+    "The unchanged Gamma/Beta proof is actually reconstructed publicly, not accepted on byte identity. Integration byparts handlesboth positive-argument boundary terms. The positiveGamma product withu=Rt,v=R(1-t) has exactJacobianR; nonnegativeTonelli givesBetaGamma. The report explicitly tracks t=(1+v)/2, evenness andv^2=w, producing2^(1-2x)Beta(1/2,x). Substitutionu=z^2 and the positive squared Gaussian polar integral giveGamma(1/2)=sqrtpi. Substituting the BetaGamma formulas and cancelling positiveGamma(x) gives the exact duplication normalization2^(2x-1)/sqrtpi. All arguments remainpositive and no imported proof is needed.",
+    "The report reconstructs the positive binomial series with coefficient ratio, compact-subinterval convergence ofits derivative, coefficient ODE(1-z)yprime=p y andinitial1; positivity justifieseverytermwiseintegration. For0<a<1,r=(1-a)/2 in(0,1/2), the substitutiont=su gives exacts^r andBeta(n+1-r,2r). Gamma recurrence gives the Beta ratio(1-r)_n/(1+r)_n; the separate telescoping(r)_n/(1+r)_n=r/(r+n), includingn0, matches every incompleteBeta coefficient and the new explanatory sentence. ReflectionL(1-s) andBeta symmetry combine to exactGamma(r)Gamma(1-r), yieldingpotential1 aftertheexternalnormalization. Direct endpointBeta(r,1-r) calculations are supplied ratherthan anunjustifiedlimit; interior/time/endpointsingularity exponents arechecked. The report independently verifiesL1 via-r>-1 andL2 via-2r=a-1>-1. The rawmass Beta(1-r,1-r)/[Gamma(r)Gamma(1-r)] simplifies toGamma((1+a)/2)/[Gamma(1+a)Gamma((1-a)/2)] with positivearguments. It doesnotprobability-normalize thedensity, includetheparameterendpoints orassert extraasymptotics."
+  ],
+  "report_notes": [],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 14064,
+      "sha256": "66827b9304e4ecb2377c51faa07206d9e0560456fb5f26a2432dcaec356cf6c6"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 5395,
+      "sha256": "85702ee75414499818be170a2b6db9548b5a113253d90f9d255e4c3895c9228c"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 3552,
+      "sha256": "092fcb022b0dc41040c64d44cebbc03afd011eb0fef9dc85005ac733b0381f14"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 2065,
+      "sha256": "8164d7568085a12f0b1aa95a7c9ab4b6b3dd02f861b45adaed0a23f1db7ba847"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 5307,
+      "sha256": "a13cdda7edc37e90371f56aedab62d88237c228b9b9dbf0eb8c41546be78d815"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 2663,
+      "sha256": "053dc6e168a868eac0e24f46638674d220cdbc7b3563d5c712490cfe6da457ce"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 4281,
+      "sha256": "412c7cb1e28118adbab40d8ef4b59bd815791c48a92a389efbd14202578c690f"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 5005,
+      "sha256": "fe9ba7da1f782fa99f35d05b47f25890d6a3849a34661bc63180f2f3de947016"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    }
+  ],
+  "input_identity_checks": "All delivered source/context payload hashes and WHOLE_FILE pinned Git byte identities verified; every complete OLD/NEW statement/proof independently checked by LF/bytes/SHA. Complete target text read with baseline comparisons and genuine needed stated inputs, not merely delta QA.",
+  "source_currentness": {
+    "covered_launch_revision": "70b1c613a1d3d2765fd9295dfd5f5e0d6b2c3661",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "limit": "Only this exact assigned source versuscdde and supplied context; no older report rebinding, unexamined successor or whole-book seal."
+  },
+  "read_limits": [
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority"
+}

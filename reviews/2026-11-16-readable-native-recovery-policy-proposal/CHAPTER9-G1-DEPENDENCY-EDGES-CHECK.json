@@ -1,0 +1,58 @@
+{
+  "recorded_utc": "2026-11-16T13:29:42.113412+00:00",
+  "source_revision": "32919d544ee0df877b0a834bcbfc9f7c584a15f2",
+  "source_file": "notes/integrated_uniform_mean.tex",
+  "module_sha256": "821b49568bc2ca3c0272d2db4b435b35c133caf723c931c45d7837711168f094",
+  "audit_role": "Read-only worker mathematical dependency audit; not independent scientific reread or build certification",
+  "edges": [
+    {
+      "consumer": "P:uniform-mean-regulator",
+      "parent": "L:uniform-mean-cutoff",
+      "equation": "E:uniform-spatial-mean",
+      "assessment": "REAL_USE",
+      "working": "The tensor lemma gives ||U Phi||_Lr(Hsp) <= c_t ||Phi||_HI. The cutoff parent gives ||T_R q||_L(E) <= M0 ||q||_Hsp. Applying pointwise and integrating gives ||T_R U Phi||_Lr <= M0 c_t ||Phi||. The same parent controls the temporal-tail term M0 epsilon_J.",
+      "domain_check": "Same Hsp and E, R>=1 and fixed r. No new conclusion or extra hypothesis is assumed."
+    },
+    {
+      "consumer": "P:uniform-actual-cameron",
+      "parent": "P:uniform-mean-regulator",
+      "equation": "E:uniform-completed-mean",
+      "assessment": "REAL_USE",
+      "working": "Apply the regulator residual bound to i_I* h with norm <= ||h||_HW: ||M_h||_Lr = ||T_R U Q_JK i_I* h||_Lr <= [M0 epsilon_J+M_f c_t K^(-beta)] ||h||. This is inserted into the exact delta-weighted block Cameron estimate.",
+      "domain_check": "Same supported HI inclusion, orthogonal Q_JK and one fixed r; i_I* is contractive."
+    }
+  ],
+  "source_label_and_use_locators": {
+    "E:uniform-spatial-mean": [
+      {
+        "lf": 37,
+        "text": "\\begin{equation}\\label{E:uniform-spatial-mean}"
+      },
+      {
+        "lf": 303,
+        "text": "Applying~\\eqref{E:uniform-spatial-mean} pointwise in time then bounds"
+      }
+    ],
+    "E:uniform-completed-mean": [
+      {
+        "lf": 271,
+        "text": "\\begin{equation}\\label{E:uniform-completed-mean}"
+      },
+      {
+        "lf": 320,
+        "text": "This proves~\\eqref{E:uniform-completed-mean}. Infinite spatial rank is allowed"
+      },
+      {
+        "lf": 461,
+        "text": "By~\\eqref{E:uniform-completed-mean} and $\\|i_I^*\\|\\le1$, the field"
+      }
+    ]
+  },
+  "circular_use_in_these_edges_found": false,
+  "both_edges_supported": true,
+  "source_edit_required_for_these_edges": false,
+  "critical_path_regeneration_required": true,
+  "per_addition_gate": "make_critical_path.py --check required on every subsequent addition; graph/data/PDF must be current before finality",
+  "dispatch_status": "HOLD until Agent24 regeneration commit and Agent16 verification plus explicit FINAL handoff.",
+  "older_reviews_rebound_or_grades_upgraded": false
+}

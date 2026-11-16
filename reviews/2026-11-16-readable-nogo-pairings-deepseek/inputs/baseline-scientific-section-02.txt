@@ -1,0 +1,114 @@
+\section{What homogeneity recovers, and what the bound still loses}
+
+Under homogeneity the norms scale exactly in $\theta$. We now use this
+scaling in place of~\eqref{E:crude-norms}.
+
+\begin{proposition}[The uniform pairing estimate]\label{P:envelope}
+  Under Hypothesis~\ref{H:homog}, there is $K > 0$ such that
+  \begin{equation}\label{E:homogeneous-envelope}
+    \E[X_m(t,x)X_n(t,x)]
+    \le P_k K^k e^{2\theta t}\theta^{-\beta k},
+    \qquad m+n=2k\ge2,\quad\theta>0.
+  \end{equation}
+  Define the numerical majorant produced by applying this estimate separately at
+  every total order by
+  \begin{equation}\label{E:B-envelope}
+    B_K(t)=1+\sum_{k\ge1}(2k+1)P_kK^k
+    \inf_{\theta>0}\{e^{2\theta t}\theta^{-\beta k}\}.
+  \end{equation}
+  Then $\E u^2(t,x) \le B_K(t)$ and, for some $c,C > 0$ and all large $t$,
+  \begin{equation}\label{E:envelope-growth}
+    ct^{\rho}\le\log B_K(t)\le Ct^{\rho},\qquad
+    \rho=\frac{\beta}{\beta-1}
+    =\frac{4-\alpha-\alpha_0}{3-\alpha-\alpha_0}>\kappa.
+  \end{equation}
+  The lower bound here concerns the numerical majorant $B_K$, not the second
+  moment.
+\end{proposition}
+
+\begin{proof}
+  The wave kernel scales as $G(cs,c\ud y) = cG(s,\ud y)$, and the covariance has
+  degree $-\alpha$. Changing all time and spatial variables by $\theta^{-1}$ in
+  the norms yields
+  \begin{equation}\label{E:homogeneous-norms}
+    N_0(\theta)=\theta^{-2},\quad
+    N_1(\theta)=N_1(1)\theta^{\alpha+\alpha_0-2},\quad
+    N_2(\theta)^2=N_2(1)^2\theta^{-\beta}.
+  \end{equation}
+  All constants and scalings follow directly from
+  Lemma~\ref{L:damped-homogeneous-norms}. The products $2N_0N_1$ and $N_2^2$
+  therefore both have degree $-\beta$. Choose $K \ge \max\{2N_1(1),N_2(1)^2\}$,
+  increasing it to a positive constant if needed.
+  Lemma~\ref{L:pairing-product-envelope} and $q_0+q_2/2 = k$ give
+  $K^k\theta^{-\beta k}$ for every admissible product. The finite horizons
+  contribute at most $e^{2\theta t}$. Apply this first to regularized moments.
+  In $d = 3$, fix $(\epsilon,\delta)$ and let $\eta\downarrow0$ in each factor's
+  $L^2$ limit; Cauchy--Schwarz gives $L^1$ convergence of their product. Then
+  let $(\epsilon,\delta) \to 0$ in the same way, using
+  Lemma~\ref{L:joint-fixed-order} for each chain. In $d = 1,2$ only the noise
+  limit is required. The estimates are uniform at both stages, by the multiplier
+  bounds in Lemma~\ref{L:crude-corrected}. This
+  proves~\eqref{E:homogeneous-envelope}. Empty-chain cases satisfy the same
+  bound (using $e^{2\theta t}$ is harmless). Proposition~\ref{P:mixed} now gives
+  the majorant.
+
+  The infimum in~\eqref{E:B-envelope} is attained at $\theta = \beta k/(2t)$ and
+  equals $e^{\beta k}(2t/(\beta k))^{\beta k}$. Put $q = \beta-1 > 1$. The
+  elementary estimates
+  \[
+    k!\le P_k\le2^k k!,\qquad
+    (k/e)^k\le k!\le k^k,\qquad 2k+1\le3^k
+  \]
+  show that, for fixed positive $a,b$ depending only on $K,\beta$,
+  \[
+    \sum_{k\ge0}\frac{(at^\beta)^k}{(k!)^q}
+    \le B_K(t)\le
+    \sum_{k\ge0}\frac{(bt^\beta)^k}{(k!)^q}.
+  \]
+  Indeed, the additional factor $k!^\beta/k^{\beta k}$ lies between $e^{-\beta
+  k}$ and one and can be absorbed into $a^k,b^k$. For $z > 0$, the right-hand
+  series is at most $(\sum_{k\ge0}z^{k/q}/k!)^q = e^{qz^{1/q}}$, by the
+  elementary $\ell^q$ versus $\ell^1$ inequality for nonnegative sequences. For
+  a lower bound choose $k = \lfloor z^{1/q}/2\rfloor$ and use $k! \le k^k$; its
+  single summand is at least $2^{qk}$. These estimates
+  prove~\eqref{E:envelope-growth}. Finally, $\beta-1 = 3-\alpha-\alpha_0 <
+  3-\alpha$, so $\rho > \kappa$. This proves Proposition~\ref{P:envelope}.
+\end{proof}
+
+\begin{remark}[Limitation of the uniform pairing estimate]\label{R:G0-verdict}
+  Since $\beta > 2$, we have $1 < \rho < 2$. Thus, Proposition~\ref{P:envelope}
+  improves the crude quadratic time scale under homogeneity. It does not itself
+  prove Theorem~\ref{T:intro-upper}; Section~\ref{S:interval-upper} uses a different
+  argument. Theorem~3.1 used through its uniform pairing estimate is \emph{not
+  sufficient to prove Theorem~\ref{T:intro-upper}}: even with exact homogeneous norm scaling, the
+  resulting majorant has exponent $\rho > \kappa$. The order coefficient has
+  factorial denominator $(k!)^{3-\alpha-\alpha_0}$, whereas the desired scale
+  requires $(k!)^{3-\alpha}$; the missing factor is $(k!)^{\alpha_0}$, up to
+  exponential factors in $k$. Counting the $2k+1$ chain-length splits does not
+  cause this loss, since it can be absorbed into an exponential factor. This
+  conclusion does not rule out a more refined application retaining temporal
+  order or grouping pairings before estimating them, and does not disprove the
+  conjecture. In the formal boundary limit $\alpha_0\downarrow0$, both $\rho$
+  and $\kappa$ tend to $(4-\alpha)/(3-\alpha)$. This necessary time-independent
+  calibration does not distinguish them and asserts no endpoint theorem or
+  uniformity of constants in $\alpha_0$. At $p = 1$ use the empty-chain case
+  with $e^{\theta t}$ in place of $e^{2\theta t}$; minimizing at $\theta = \beta
+  k/t$ changes only a constant to the power $k$, leaving the same factorial
+  denominator $(k!)^{3-\alpha-\alpha_0}$. It therefore also loses the factorial
+  power $\alpha_0$ relative to $\beta/\kappa = 3-\alpha$, the power
+  corresponding to the target series scale. This is a comparison of scales, not
+  a coefficient estimate asserted by the source's Theorem~1.2. The loss is not
+  specific to the second moment. Both the crude and homogeneous upper bounds are
+  consistent with the Jensen lower bound, being at larger time scales. No
+  identification with the Skorohod second moment is used: its exclusion of
+  self-pairings changes the combinatorics, already visible in the $(0,2)$ and
+  $(2,0)$ terms of Lemma~\ref{L:white-test}.
+\end{remark}
+
+No-go~\ref{P:nogo-01} isolates this scale obstruction. The adjacent-diagram
+calculation in No-go~\ref{P:nogo-02} also explains why one cannot repair it
+by assigning a cubic-factorial estimate to every individual pairing.
+
+
+\input{notes/chapter-endings/02-G0}
+

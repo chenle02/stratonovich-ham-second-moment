@@ -1,0 +1,224 @@
+{
+  "review_record_id": "RP013",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side mathematical public-report/source adjudication only; not another independent scientific vote or native-protocol adjudication",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "e07672d40443cd6ba655b0cf6eb05a1d1a454888",
+  "source_file": "notes/integrated_young_upper_foundation.tex",
+  "source_binding_sha256": "168535fc063a42118636b7b438876f6a4528fa6e905ce549b60f46208b3e97f4",
+  "public_report_sha256": "deb9efd3d1e94a6cf9d9a93a72e0b6c83663521676ea2a5fc2a1e48b25663b79",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "MATHEMATICALLY_SCOPED_PRESERVATION_SUPPORTED_WITH_REPORT_ONLY_UNIFORMITY_NOTE_PROTOCOL_SEPARATE",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:young-upper-growth": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:young-upper-multiplicative": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:young-upper-growth",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "report_heading_lf": 13,
+      "source_old_statement_lf": [
+        14,
+        26
+      ],
+      "source_old_proof_lf": [
+        28,
+        54
+      ],
+      "source_new_statement_lf": [
+        14,
+        26
+      ],
+      "source_new_proof_lf": [
+        28,
+        79
+      ],
+      "source_old_proof_sha256": "1d3583ace253587c88031bdaa32f10e12c0361f57ddeea795c319f2d03c9b564",
+      "source_new_proof_sha256": "15022efcd57ded919c03577866ed6993ce5b87b579ede3797ee1ef9ed9dd9f44",
+      "mathematical_check": "Every original deduction is publicly reconstructed in report Steps1\u20138. The Banach applicability check uses completeness, norm-one multiplication and the named Young estimate, with no Hilbert/finite-dimensional ingredient. The complete scaled norm N_ell yields contraction ratio c_theta[D]_theta ell^theta<=c_theta d ell^theta. Small drivers give N_B(U)<=1/(1-q0) and -log(1-q0)<=2q0 for q0<=1/4, retaining the linear d term. For large drivers, x=B(4c_theta d)^(1/theta)>1 follows from the regime condition, hence n=ceil(x)<=2x, local ratios<=1/4, local norms<=4/3 and log sup||U||<=n log(4/3)=O(d^(1/theta)). Zero driver gives exactly I of norm one on the nonzero Banach space, with no fixed prefactor. On a fixed H-driver ball, one uniform equal partition gives local Q-I norm<=1/3 and Neumann inverse<=3/2; ordered products give finite forward/inverse sup bounds depending only on theta,B,K. The report derives within-piece and short boundary-crossing increments, h1^theta+h2^theta<=2^(1-theta)(h1+h2)^theta, and the long-distance 2sup/ell^theta bound. The exact inverse-difference identity then gives [U^-1]_theta<=M_inv^2[U]_theta. Thus the stated global Ctheta bounds are reconstructed without assuming norm-differentiable drivers or free groups.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:young-upper-multiplicative",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED"
+      },
+      "report_heading_lf": 260,
+      "source_old_statement_lf": [
+        62,
+        72
+      ],
+      "source_old_proof_lf": [
+        74,
+        100
+      ],
+      "source_new_statement_lf": [
+        87,
+        97
+      ],
+      "source_new_proof_lf": [
+        99,
+        155
+      ],
+      "source_old_proof_sha256": "a352a3674cf74ed990b75a6fc43eafb740635a1207f4f1ea280f1e47e98f362e",
+      "source_new_proof_sha256": "6efe26c376a9605b4c3dd4639b140deddf273021a290ec7e088bceff13a79702",
+      "mathematical_check": "Report Steps1\u20135 reconstruct the required deduction, including the sandwich-driver existence rather than merely naming it. For U=U_H and R=U^-1, G(s)A=R(s)AU(s) is Ctheta with fixed-H-ball constants. The increment G(s)X_s,t has sewing defect (G(s)-G(u))X_u,t of order |t-s|^(2theta); 2theta>1 yields the Banach Young driver Z, norm<=Lprime x, and the displayed second-order remainder. Existence of V=U_Z gives a bounded Ctheta path for each fixed X; its bound may depend on x. The exact product increment U_s,t V(s)+U(s)V_s,t+U_s,t V_s,t retains the cross term of order 2theta. Substituting gives U(s)R(s)X_s,t U(s)V(s), with adjacent inverse cancellation and no commuting of X. Partition remainder sums are bounded by C B mesh^(2theta-1) for fixed H,X, so uniqueness identifies U_(H+X)=U_H U_Z without smooth density. Applying refined growth only to Z yields exp(C(theta,B,K)(x+x^nu)); multiplication by A retains ||A U_H(t)||, with no inverse/lower bound for A. Cases A=0 and X=0 are explicitly checked. The report auxiliary assertion that V is uniformly bounded by the fixed-H-ball bound is false as written, but the report also supplies the correct finite-for-fixed-X and x-dependent facts needed at each step; no required deduction is left absent by that erroneous uniformity phrase.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    }
+  ],
+  "mathematical_checks": [
+    "Every original deduction is publicly reconstructed in report Steps1\u20138. The Banach applicability check uses completeness, norm-one multiplication and the named Young estimate, with no Hilbert/finite-dimensional ingredient. The complete scaled norm N_ell yields contraction ratio c_theta[D]_theta ell^theta<=c_theta d ell^theta. Small drivers give N_B(U)<=1/(1-q0) and -log(1-q0)<=2q0 for q0<=1/4, retaining the linear d term. For large drivers, x=B(4c_theta d)^(1/theta)>1 follows from the regime condition, hence n=ceil(x)<=2x, local ratios<=1/4, local norms<=4/3 and log sup||U||<=n log(4/3)=O(d^(1/theta)). Zero driver gives exactly I of norm one on the nonzero Banach space, with no fixed prefactor. On a fixed H-driver ball, one uniform equal partition gives local Q-I norm<=1/3 and Neumann inverse<=3/2; ordered products give finite forward/inverse sup bounds depending only on theta,B,K. The report derives within-piece and short boundary-crossing increments, h1^theta+h2^theta<=2^(1-theta)(h1+h2)^theta, and the long-distance 2sup/ell^theta bound. The exact inverse-difference identity then gives [U^-1]_theta<=M_inv^2[U]_theta. Thus the stated global Ctheta bounds are reconstructed without assuming norm-differentiable drivers or free groups.",
+    "Report Steps1\u20135 reconstruct the required deduction, including the sandwich-driver existence rather than merely naming it. For U=U_H and R=U^-1, G(s)A=R(s)AU(s) is Ctheta with fixed-H-ball constants. The increment G(s)X_s,t has sewing defect (G(s)-G(u))X_u,t of order |t-s|^(2theta); 2theta>1 yields the Banach Young driver Z, norm<=Lprime x, and the displayed second-order remainder. Existence of V=U_Z gives a bounded Ctheta path for each fixed X; its bound may depend on x. The exact product increment U_s,t V(s)+U(s)V_s,t+U_s,t V_s,t retains the cross term of order 2theta. Substituting gives U(s)R(s)X_s,t U(s)V(s), with adjacent inverse cancellation and no commuting of X. Partition remainder sums are bounded by C B mesh^(2theta-1) for fixed H,X, so uniqueness identifies U_(H+X)=U_H U_Z without smooth density. Applying refined growth only to Z yields exp(C(theta,B,K)(x+x^nu)); multiplication by A retains ||A U_H(t)||, with no inverse/lower bound for A. Cases A=0 and X=0 are explicitly checked. The report auxiliary assertion that V is uniformly bounded by the fixed-H-ball bound is false as written, but the report also supplies the correct finite-for-fixed-X and x-dependent facts needed at each step; no required deduction is left absent by that erroneous uniformity phrase."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "classification": "report-only auxiliary uniformity/constant-dependence error",
+      "report_section": "P:young-upper-multiplicative / Step3",
+      "report_lf": 368,
+      "old": "Since `U(s),V(s)` are bounded (uniformly by the fixed-ball bounds), the `O(h^{2\\theta})` terms remain `O(h^{2\\theta})`.",
+      "new": "For each fixed H and X, U and V are bounded on [0,B], so these terms remain O(h^(2theta)); the U bound is uniform on the fixed H-ball, while the V bound and product-remainder constant may depend on X.",
+      "contrary_calculation": "Take H=0 and X(t)=c t I on a nonzero real Banach space. Then Z=X and V(t)=exp(c t)I; the fixed H-ball K does not bound sup||V|| as c grows. The source makes no uniform-in-X claim about V or the mesh-remainder constant.",
+      "disposition": "Record literal report error without editing the raw report. Its Step2 already supplies Ctheta V for fixed Z, and Step5 gives the correct x-dependent growth. Those public facts suffice for the partition limit with fixed X, while the final constant outside x+x^nu remains theta,B,K-dependent. Therefore this is not a source defect or an absent required product deduction.",
+      "counterexample_target_admissibility": {
+        "source_new_lf": [
+          3,
+          9
+        ],
+        "source_class": "Any nonzero real Banach space X, all zero-initial Ctheta operator paths in B(X), with induced operator norm. There is no compactness, Hamiltonian or actual-driver-range restriction in this target theorem.",
+        "identity_example": "H=0 and X(t)=c t I are admissible in the actual stated target class; this remains solely a counterexample to the report auxiliary fixed-H-ball bound on V.",
+        "optional_compact_driver_variant": "If compact drivers were additionally desired, take a nonzero bounded rank-one projection P (or orthogonal rank-one P on Hilbert E) and X(t)=c t P. Then Z=X, V(t)=I+(exp(c t)-1)P, and ||V(t)||>=exp(c t) on Ran(P). Thus even compact perturbation drivers do not give a V bound independent of c.",
+        "not_claimed": "No assertion that P lies in a particular physical Cameron/force range is needed or made. This is not a new source defect; the target itself imposes no such range restriction."
+      }
+    },
+    {
+      "id": "R2",
+      "classification": "correctly resolved pre-existing terseness, not an unresolved source gap",
+      "disposition": "The report explicitly expands the sandwich sewing defect and the global boundary-crossing Holder argument. Named unassigned Young estimates may be consumed under the checked Banach hypotheses; no external source-PDF proof is assigned. The listed terseness points are not missing public reconstruction in this report."
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 18008,
+      "sha256": "deb9efd3d1e94a6cf9d9a93a72e0b6c83663521676ea2a5fc2a1e48b25663b79"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 5504,
+      "sha256": "ccec9e6291f9d5a9e816680b170fbbda5aadd63c7278b228ec0e9bd0e804c59b"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 3576,
+      "sha256": "42d9d32de2fa7c857f4994457b84ccd334f34654ba32406cc9c09cc5885ef882"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 2073,
+      "sha256": "168535fc063a42118636b7b438876f6a4528fa6e905ce549b60f46208b3e97f4"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 5246,
+      "sha256": "980cf4651804629f0e199c9fed006e5e09b250a6fd8149e141b281ee7a296e98"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 4810,
+      "sha256": "28c299b4f0bff4f6cc1a4a63db881bd2e849b43e235c2824aec1ddd34a4f2415"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 7691,
+      "sha256": "34f4db462eb682b313623fe917327238c4faff3bdf0cfeb89c0f60eef542802e"
+    },
+    {
+      "path": "inputs/context-constant-young-baseline.txt",
+      "bytes": 27376,
+      "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+    }
+  ],
+  "input_identity_checks": "SOURCE-BINDING payload delivered hashes checked, including complete OLD/NEW target full-module hashes. Context is unassigned, not additional proof rows.",
+  "read_limits": [
+    "All public reasons/findings and complete OLD/NEW two proof pairs checked, with supplied Young local-estimate/construction context and exact Banach applicability. No primary-source theorem-proof or image review.",
+    "No native export, hidden reasoning, event stream, transport or native usage inspected. Dispatcher reported a separate custody question; mathematical support here does not approve protocol or infer native retry/request count.",
+    "Root reviews this delegated disposition. Original PASS/high and native public COMPLETE flags remain literal and unedited."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "PENDING_ROOT_CUSTODY_DISPOSITION",
+  "historical_report_or_grade_edited": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "16/Le retain source adoption and release authority; root reviews disposition",
+  "protocol_pending": true,
+  "protocol_status": "PENDING_EXPLICIT_DISPOSITION",
+  "native_protocol_accepted": false,
+  "scope_or_adoption_cleared": false,
+  "publication_or_model_acceptance_cleared": false,
+  "bundle_status": "MATH_CHECKED_PROTOCOL_HELD",
+  "source_math_record_sha256": "08becd7aac7ec3108ee8616e5fff53c7bb56907f689f2e24aa6b1407a9ace04d",
+  "source_math_values_preserved": true,
+  "native_prompt_binding_limit": "Exact exported native user prompt binds the scientific source packet. It does not prove that every hidden internal provider request carried an identical payload, nor determine their physical count or aggregate usage/cost/cap compliance.",
+  "binding_original_full_source_vs_delivered": [
+    {
+      "side": "old",
+      "source_path": "notes/integrated_young_upper_foundation.tex",
+      "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+      "delivery": "WHOLE_FILE",
+      "original_full_source_file_sha256": "28c299b4f0bff4f6cc1a4a63db881bd2e849b43e235c2824aec1ddd34a4f2415",
+      "delivered_scientific_file_sha256": "28c299b4f0bff4f6cc1a4a63db881bd2e849b43e235c2824aec1ddd34a4f2415",
+      "whole_file_delivery_equals_original": true,
+      "no_scientific_view_omission": true
+    },
+    {
+      "side": "new",
+      "source_path": "notes/integrated_young_upper_foundation.tex",
+      "source_revision": "e07672d40443cd6ba655b0cf6eb05a1d1a454888",
+      "delivery": "WHOLE_FILE",
+      "original_full_source_file_sha256": "34f4db462eb682b313623fe917327238c4faff3bdf0cfeb89c0f60eef542802e",
+      "delivered_scientific_file_sha256": "34f4db462eb682b313623fe917327238c4faff3bdf0cfeb89c0f60eef542802e",
+      "whole_file_delivery_equals_original": true,
+      "no_scientific_view_omission": true
+    }
+  ]
+}

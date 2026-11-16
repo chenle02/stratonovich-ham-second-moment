@@ -1,0 +1,120 @@
+{
+  "review_record_id": "RP038",
+  "scope": "Only 6 assigned old/new target proof pairs; upstream proofs unassigned; no whole-book/primary-PDF/Lean/render/human/release acceptance",
+  "old_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_revision": "e7e5fec9d3c4331b791f7f1d423b75134faaabbf",
+  "source_file": "notes/integrated_wave_variance.tex",
+  "proof_labels": [
+    "P:frequency-row",
+    "C:frequency-time",
+    "P:actual-wave-form",
+    "L:phase-bessel",
+    "P:wave-two-variances",
+    "P:wave-square-columns"
+  ],
+  "input_files": [
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 24927,
+      "sha256": "66369d1bde2358f92e7edfb33f899bd96c2698a631e9ca0d9f330062ff55f8a6",
+      "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+      "source_path": "notes/integrated_wave_variance.tex",
+      "selection": "WHOLE_FILE",
+      "role": "ASSIGNED OLD whole target module."
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 35737,
+      "sha256": "2dc7a5fd62eed3215a6a53be7ed2394cc5bc6bf2f75ddce8f05c5175b731f84f",
+      "source_revision": "e7e5fec9d3c4331b791f7f1d423b75134faaabbf",
+      "source_path": "notes/integrated_wave_variance.tex",
+      "selection": "WHOLE_FILE",
+      "role": "ASSIGNED NEW whole target module."
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7",
+      "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+      "source_path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "selection": "EXACT_RETAINED_EXCERPT",
+      "role": "UNASSIGNED exact model/data, covariance hypotheses, and zero covariance context.",
+      "source_lf": [
+        367,
+        409
+      ]
+    },
+    {
+      "path": "inputs/context-integrated_covariance_foundation-baseline.txt",
+      "bytes": 21173,
+      "sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020",
+      "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+      "source_path": "notes/integrated_covariance_foundation.tex",
+      "selection": "WHOLE_FILE",
+      "role": "UNASSIGNED complete baseline upstream module: use declarations/definitions under their exact hypotheses; do not count its proofs as additional assigned reviews."
+    }
+  ],
+  "embedded_frames": [
+    {
+      "path": "inputs/old-module.txt",
+      "payload_byte_offset": 8107,
+      "payload_bytes": 24927,
+      "payload_sha256": "66369d1bde2358f92e7edfb33f899bd96c2698a631e9ca0d9f330062ff55f8a6"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "payload_byte_offset": 33411,
+      "payload_bytes": 35737,
+      "payload_sha256": "2dc7a5fd62eed3215a6a53be7ed2394cc5bc6bf2f75ddce8f05c5175b731f84f"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "payload_byte_offset": 69610,
+      "payload_bytes": 1986,
+      "payload_sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-integrated_covariance_foundation-baseline.txt",
+      "payload_byte_offset": 72162,
+      "payload_bytes": 21173,
+      "payload_sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020"
+    }
+  ],
+  "prompt_sha256": "75a64f436d3f62f4729a0bdc8d92f5732da352b011fa676afda2c6d1716c3c1c",
+  "prompt_bytes": 93407,
+  "contract_sha256": "4e14d3f77b8bc4c5796d0cb465f6b498b364552747265e3ca6bbbb1f42caf483",
+  "proof_manifest_sha256": "6c205927514c51b1020a463a9645270a4643e5a1ac110fa7cbd67b33820989ef",
+  "profile_sha256": "ccdf515979e77bbe752d924735a915260ca437d3d31a954d4a739c946fca0ea1",
+  "model_limits_sha256": "60eaa34361e093e599fdc4a26f8d53ee3aeb860e419c9e66535c4fda52284d56",
+  "route": "paper-review-deepseek",
+  "requested_model": "deepseek/deepseek-v4-pro",
+  "requested_variant": null,
+  "pure_mode": true,
+  "agent": "artifact-reviewer",
+  "all_tools_denied": true,
+  "combined_reasoning_public_output_cap": 65536,
+  "timeout_seconds": 3600,
+  "coordinator_launch_limit": 1,
+  "coordinator_retry_continuation_fallback": false,
+  "native_hidden_requests_not_inferred_from_process_count": true,
+  "provider_calls_started_during_preparation": 0,
+  "status": "FROZEN_PRE_DISPATCH",
+  "mechanical_checks": {
+    "target_proofs_old": 6,
+    "target_proofs_new": 6,
+    "statements_unchanged": true,
+    "outside_proofs_exactly_equal": true,
+    "pure_insertions_against_baseline": true,
+    "source_frames_exact": true
+  },
+  "no_preflight_claim": "Offline source-binding and local native configuration checked; no live provider generation/admission/reading at freeze.",
+  "capacity_sha256": "6aafa2eebcc079c4375fdaf0835865b063b60275558f8d1676d2bbb6b7acbaf3",
+  "preparation_script_sha256": "f2e82258bcbf14ab5e266147bb314c230e43b96ad7211addd440bbac9ba524d4",
+  "preparation_checks_sha256": "e3788b06e49bcb273c682c30c9e80da6388c8bd654317b28fb1bb5b8285aff03",
+  "contract_refinement_record": "ROOT-CONTRACT-REFINEMENT.json",
+  "preparation_script_is_before_refinement_template": true,
+  "owner_authorization": "Le standing per-proof reread authority; Agent24 dated gates/builds/maps, source-bound same-GPT worker QA and root byte/coverage/contract checks. Original-step public reconstruction explicit. No provider call at freeze; Agent16/Le retain integration/adoption.",
+  "recorded_utc": "2026-11-16T08:11:10.652824+00:00",
+  "tool_denial_status": "Current local effective profile/cap config checked, all permissions denied; per-launch recheck required.",
+  "source_binding_sha256": "4c11ca7ede0200b048732bd88bb73b619327e01c84b6fb9eb50eb00ee292a01d"
+}

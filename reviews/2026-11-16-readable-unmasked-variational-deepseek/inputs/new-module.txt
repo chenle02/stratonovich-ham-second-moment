@@ -1,0 +1,490 @@
+\section{The unmasked Rayleigh rate and nonnegative controls}
+\label{S:unmasked-variational}
+
+Fix a nonzero covariance satisfying Hypothesis~\ref{H:homog}, including its
+original amplitude, and set $a = \alpha_0$. Define the full class
+\begin{equation}\label{E:variational-positive-class}
+  \mathcal{C}_{\mathrm{pos}}
+  =\{\Psi\in C_c^\infty((0,1)\times\R^d;\R):
+  \Psi\ge0,\ \Psi\ne0\}.
+\end{equation}
+
+\input{notes/figures/nonseparable-controls}
+It includes nonseparable tests. It is nonempty: if $b(z) = e^{-1/(1-z^2)}$ on
+$|z| < 1$ and zero otherwise, then $b(4s-2)\prod_{j=1}^db(x_j)$ belongs to this
+class. All boundary derivatives vanish because exponential decay dominates every
+power of $(1-z^2)^{-1}$. For each $\Psi$ retain the original mean $h_{\Psi,s}$
+and original variance $v_\Psi = \E W(\Psi)^2$ from~\eqref{E:compact-raw-mean}--%
+\eqref{E:compact-raw-cost}. Neither the test nor its covariance is changed by a
+physical mask. We write $h_s$ when $\Psi$ is fixed.
+
+\subsection{Global bounds and the unmasked spectral bottom}
+
+We first record a bound for the covariance smoothed by the heat kernel. The
+proof of Lemma~\ref{L:variational-global-mean} uses it to bound
+$\Gamma*|D\Psi(t,\cdot)|$ uniformly in $t,x$.
+
+\LeanMarker{L:variational-heat-envelope}
+\begin{lemma}[Gaussian envelope for the original covariance]
+  \label{L:variational-heat-envelope}
+  For the normalized heat kernel $p_\epsilon(x) =
+  (2\pi\epsilon)^{-d/2}e^{-|x|^2/(2\epsilon)}$,
+  \begin{equation}\label{E:variational-heat-envelope}
+    (\Gamma*p_\epsilon)(x)
+    =\int e^{i\xi\cdot x}e^{-\epsilon|\xi|^2/2}\mu(\ud\xi),
+    \qquad
+    0\le(\Gamma*p_\epsilon)(x)
+    \le(\Gamma*p_\epsilon)(0)<\infty.
+  \end{equation}
+  The value at zero is strictly positive.
+\end{lemma}
+
+\begin{proof}
+  We first use temperedness to make all Gaussian pairings finite. We identify
+  the convolution and spectral expressions as continuous distributions, then
+  use positivity to obtain the bound by the value at zero.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain integrable majorants for the Gaussian
+  weights.
+  A positive tempered Radon measure has polynomial ball growth. Indeed, evaluate
+  its tempered bound on a nonnegative smooth cutoff equal to one on $B_1$,
+  dilated by $R \ge 1$. Its finitely many Schwartz seminorms are bounded by
+  $CR^N$, so positivity gives a ball-mass bound $CR^N$. Summing dyadic annuli
+  shows that $(1+|x|)^{-L}$ is integrable for $L > N$. Apply this separately to
+  $\Gamma$ and $\mu$. Gaussian weights are therefore integrable against both
+  measures. The classical convolution on the left is finite and smooth locally
+  in $x$: on compact $x$ sets its translated Gaussian derivatives are bounded by
+  any fixed sufficiently fast polynomial weight in the integration variable.
+
+  On the annulus $2^j\le |x|<2^{j+1}$, the mass bound contributes at most a
+  constant times $2^{jN}$ and the decreasing weight contributes at most a
+  constant times $2^{-jL}$. Their product is summable when $L>N$. A Gaussian
+  and each of its derivatives decrease faster than any such polynomial weight.
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the two continuous expressions and
+  bound their common value.
+  Pair the convolution with a Schwartz test $\varphi$. Absolute Fubini is
+  justified by these weights. The resulting pairing is that of $\Gamma$ with
+  $p_\epsilon*\varphi$. Applying the spectral convention in
+  Hypothesis~\ref{H:homog} and the identity $\int p_\epsilon(y)e^{-i\xi\cdot
+  y}\ud y = e^{-\epsilon|\xi|^2/2}$ gives exactly the right side
+  of~\eqref{E:variational-heat-envelope} as a distribution. The heat kernel is
+  even, so either Fourier sign gives that same Gaussian multiplier. Its spectral
+  integral is absolutely finite and continuous in $x$ by dominated convergence.
+  Thus, equality of the two continuous distributions gives equality at every
+  $x$, without an extra normalization factor. The physical convolution is
+  nonnegative. Evenness of $\mu$ makes the spectral integral real, and its
+  absolute value is bounded by its total Gaussian mass, the value at zero.
+  Finally, $\Gamma \ne 0$ and $p_\epsilon > 0$ give strict positivity there.
+  The spectral phase has modulus one, so the absolute value of its integral is
+  at most the integral of the positive Gaussian weight. At $x=0$ that phase is
+  one. Physical positivity makes the common value nonnegative, completing the
+  two-sided comparison.
+  This proves Lemma~\ref{L:variational-heat-envelope}.
+\end{proof}
+
+\LeanMarker{L:variational-global-mean}
+\begin{lemma}[Global regularity of the original mean]
+  \label{L:variational-global-mean}
+  Every mixed time and space derivative of $h_s$ is globally bounded in space,
+  uniformly on compact time intervals. In particular, for $I = [0,1]$ there are
+  finite constants $M,C_\Psi$ such that
+  \begin{equation}\label{E:variational-global-mean}
+    0\le h_s(x)\le M,\qquad
+    \|h_s-h_t\|_\infty\le C_\Psi|s-t|,
+    \qquad s,t\in I.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  Extend $\Psi$ by zero in time; its compact support inside $(0,1)$ makes this a
+  smooth extension. For any mixed derivative $D\Psi$, a fixed $\epsilon > 0$ and
+  compactness of its common spatial support give $|D\Psi(t,x)| \le
+  C_Dp_\epsilon(x)$ for all $t,x$. Here the heat kernel has a positive minimum
+  on that support. Lemma~\ref{L:variational-heat-envelope} consequently bounds
+  $\Gamma*|D\Psi(t,\cdot)|$ uniformly in $t,x$. Ordinary local differentiation
+  against the Radon measure gives the corresponding derivatives of the
+  convolution. After the change $r = s-t$,
+  \[
+    h_s(x)=\int_\R |r|^{-a}
+    (\Gamma*\Psi(s-r,\cdot))(x)\ud r.
+  \]
+  The extension of the test is supported in one bounded time interval. For $s$
+  in a fixed compact interval, the condition that $\Psi(s-r,\cdot)$ is nonzero
+  therefore confines $r$ to another fixed bounded interval. This confinement
+  also holds for every derivative of the test.
+  For $s$ in a compact interval the relevant $r$ lie in a fixed bounded
+  interval. The preceding global bound times $|r|^{-a}$ is integrable since $a <
+  1$. Every derivative thus falls on the smooth test and passes through the
+  integral by dominated convergence, with the claimed global spatial bounds.
+  Nonnegativity follows from positive kernels. The bounded time derivative
+  proves the Lipschitz estimate. No directional decay of the mean has been
+  inferred. This proves Lemma~\ref{L:variational-global-mean}.
+\end{proof}
+
+Lemma~\ref{L:variational-global-mean} shows that $h_s$ is bounded by $M$ for $s
+\in I$ and is Lipschitz in $s$ in the supremum norm. We now use these two bounds
+to define the rate $\lambda_{\Psi,s}$ of the potential $h_s$ without a mask and
+to show that it is Lipschitz on $I$.
+
+\LeanMarker{P:variational-unmasked-rate}
+\begin{proposition}[The unmasked Rayleigh rate]
+  \label{P:variational-unmasked-rate}
+  On complex $L^2(\R^d)$, the operator $H_s = -\Delta-h_s$ is self-adjoint on
+  $H^2$, with form domain $H^1$ and form $q_s(f) = \|\nabla f\|_2^2-\int
+  h_s|f|^2$. Its spectral bottom $E_s$ is uniformly negative on $I$. The
+  positive rate $\lambda_{\Psi,s} = \sqrt{-E_s}$ satisfies
+  \begin{equation}\label{E:variational-real-rayleigh}
+    \lambda_{\Psi,s}^2
+    =\sup_{\substack{f\in H^1(\R^d;\R)\\\|f\|_2=1}}
+    \left(\int h_sf^2-\|\nabla f\|_2^2\right).
+  \end{equation}
+  It is Lipschitz on $I$, and $I_\Psi: = \int_0^1\lambda_{\Psi,s}\ud s$ is
+  positive and finite. No eigenstate at the unmasked bottom is asserted.
+\end{proposition}
+
+\begin{proof}
+  We construct the unmasked self-adjoint operator using bounded perturbation
+  and identify its form domain. The spectral theorem gives the real Rayleigh
+  formula; the common compact trial makes its bottom uniformly negative and
+  its square-root rate Lipschitz.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove self-adjointness on the stated operator
+  domain.
+  The Fourier Laplacian $A = -\Delta$ is self-adjoint on $H^2$, being
+  multiplication by $|\xi|^2$ with its maximal domain. Multiplication $B_s =
+  -h_s$ is bounded self-adjoint with norm at most $M$. Thus, $H_s = A+B_s$ is
+  densely defined, symmetric and closed on $H^2$; the two graph norms are
+  equivalent under a bounded perturbation. For real $b > M$,
+  \[
+    H_s-ib=(I+B_s(A-ib)^{-1})(A-ib).
+  \]
+  The first factor has a Neumann inverse because $\|B_s(A-ib)^{-1}\| \le M/b <
+  1$, and the same holds with $+ib$. To check self-adjointness directly, for $u
+  \in D(H_s^*)$ solve $(H_s-ib)v = (H_s^*-ib)u$ with $v \in D(H_s)$. Then $u-v
+  \in \ker(H_s^*-ib) = \operatorname{Ran}(H_s+ib)^\perp = \{0\}$. Hence,
+  $D(H_s^*) = D(H_s)$.
+
+  Surjectivity at both imaginary spectral parameters is the key point in the
+  adjoint-domain argument. Solving at $-ib$ produces $v$, while surjectivity
+  at $+ib$ makes the orthogonal complement of its range zero. Thus, the vector
+  $u-v$ must vanish, giving the reverse domain inclusion.
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the form domain by equivalent
+  completions.
+  Set $c_{\mathrm{shift}} = 1+M$ and $J_s = H_s+c_{\mathrm{shift}} \ge 1$.
+  Integration by parts on $H^2$ gives
+  \[
+    \|J_s^{1/2}f\|_2^2=q_s(f)+c_{\mathrm{shift}}\|f\|_2^2,\qquad
+    \|f\|_{H^1}^2\le\|J_s^{1/2}f\|_2^2
+    \le c_{\mathrm{shift}}\|f\|_{H^1}^2.
+  \]
+  Spectral cutoffs $1_{[1,n]}(J_s)$ show that $H^2 = D(J_s)$ is a core for the
+  half-power norm; Fourier cutoffs give its density in $H^1$. Completion in the
+  equivalent norms identifies $D(J_s^{1/2})$ and $H^1$ as $L^2$ subspaces, since
+  both norms dominate $L^2$. This proves the stated form domain.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We obtain the real Rayleigh formula without an
+  eigenstate assumption.
+  The spectral lower bound gives one direction of the Rayleigh identity. For the
+  reverse, nonzero spectral projections in $[E_s,E_s+\epsilon]$ give unit $H^2$
+  vectors with Rayleigh values at most $E_s+\epsilon$. The bottom is finite
+  because the operator is bounded below and has finite Rayleigh tests. Let
+  $\epsilon\downarrow0$. Real tests give the same infimum: $q_s(u+iv) =
+  q_s(u)+q_s(v)$, so the quotient is the norm-weighted average of the nonzero
+  real quotients. This proves the Rayleigh identity with $-E_s$ on the left. The
+  following negative upper bound justifies writing that value as
+  $\lambda_{\Psi,s}^2$ in~\eqref{E:variational-real-rayleigh}.
+
+  A vector with spectral support in the bounded interval $[E_s,E_s+\epsilon]$
+  belongs to the operator domain, because the spectral multiplier is bounded
+  on that support. Its normalized spectral measure has total mass one, so its
+  Rayleigh quotient lies in the same interval.
+  For a complex vector $f = u+iv$ with real-valued $u,v$, its quadratic form
+  and squared norm are sums of the corresponding values for $u$ and $v$. At
+  least one of the nonzero components has quotient no greater than their
+  norm-weighted average.
+
+  \medskip
+  \noindent\textit{Step 4.~}We obtain strict negativity and uniform rate
+  continuity.
+  Proposition~\ref{P:compact-original-common-trial} supplies, for this original
+  $\Psi$, one unit compactly supported $w$ and a finite plateau mask with a
+  common strictly negative upper bound $\epsilon_0 > 0$. Its trial has support
+  in $B_{2L}$; choose its plateau radius $R_0 \ge 2L$. The unmasked form on this
+  same $w$ is no larger. Consequently, $-M \le E_s \le -\epsilon_0 < 0$, and
+  $\sqrt{\epsilon_0} \le \lambda_{\Psi,s} \le \sqrt M$. Comparing identical unit
+  form tests gives $|E_s-E_t| \le \|h_s-h_t\|_\infty$ and therefore
+  \[
+    |\lambda_{\Psi,s}-\lambda_{\Psi,t}|
+    \le \frac{C_\Psi}{2\sqrt{\epsilon_0}}|s-t|.
+  \]
+  This also proves positivity and finiteness of $I_\Psi$. No compact-potential
+  spectral theorem was applied to $H_s$. This proves
+  Proposition~\ref{P:variational-unmasked-rate}.
+\end{proof}
+
+\subsection{Removing masks from the numerical lower rate}
+
+Proposition~\ref{P:raw-block-original-lower} gives the lower bound with the rate
+of the masked potential $m_Rh_s$, for one fixed mask. We now let the mask radius
+$R$ tend to infinity and replace this rate by the rate $\lambda_{\Psi,s}$ of
+Proposition~\ref{P:variational-unmasked-rate}.
+
+\LeanMarker{P:variational-remove-mask}
+\begin{proposition}[Monotone rates and the original point moment]
+  \label{P:variational-remove-mask}
+  There is an increasing family of admissible radial masks $m_R$ tending to one,
+  for which the compact ground rates satisfy
+  $\lambda_{R,s}\uparrow\lambda_{\Psi,s}$ uniformly on $I$ as $R \to \infty$,
+  with the compact ground statements used for $R \ge R_0(\Psi)$. For the
+  original canonical solution and any fixed $x$,
+  \begin{equation}\label{E:variational-unmasked-point-lower}
+    \liminf_{T\to\infty}T^{-\kappa}\log\E|u(T,x)|^2
+    \ge2I_\Psi-\frac{v_\Psi}{2}.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  We choose nested physical masks, compare their Rayleigh suprema with the
+  unmasked supremum, and prove uniform convergence in the time parameter. We
+  then take a numerical supremum of already established fixed-mask bounds.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the nested masks.
+  Put $F(t) = e^{-1/t}$ for $t > 0$ and zero otherwise, and define
+  \[
+    \chi(r)=\frac{F(2-r)}{F(2-r)+F(r-1)},\qquad
+    m_R(x)=\chi(|x|/R).
+  \]
+  The denominator is positive. The numerator decreases and the second
+  denominator term increases; thus $\chi$ is nonincreasing, equals one on $r \le
+  1$, and zero on $r \ge 2$. Flatness of $F$ at zero gives smoothness. Since
+  $\chi$ is constant near zero, $m_R$ is smooth also at the spatial origin.
+  These even $[0,1]$ masks increase pointwise to one.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We pass the Rayleigh values and rates to their
+  unmasked limits.
+  Choose $R_0$ so the preceding common trial lies in the plateau. Every $R \ge
+  R_0$ has the same negative margin. For each fixed $R$, the compact-family
+  theorem applies to $m_Rh_s$. Its real Rayleigh formula follows from the same
+  real/complex quotient argument as~\eqref{E:variational-real-rayleigh}. The
+  rates are continuous, positive, at most $\sqrt M$ and monotone in $R$. For
+  every fixed real unit $f \in H^1$, dominated convergence gives $\int m_Rh_sf^2
+  \to \int h_sf^2$. Hence,
+  \[
+    \sup_{R\ge R_0}\lambda_{R,s}^2
+    =\sup_{\|f\|_2=1,\ f\in H^1(\R^d;\R)}
+    \sup_{R\ge R_0}
+    \left(\int m_Rh_sf^2-\|\nabla f\|_2^2\right)
+    =\lambda_{\Psi,s}^2.
+  \]
+  For each fixed test, $0\le m_Rh_sf^2\le M f^2$, an integrable majorant. Its
+  potential integral therefore converges to the unmasked one. Taking the
+  supremum over the product of the radius and test index sets in either order
+  gives the displayed equality; no maximizer is required.
+  Only two numerical suprema were interchanged. Positive square roots give the
+  pointwise rate convergence. For $R_n = R_0+n$ and $\epsilon > 0$, the
+  increasing open sets $\{s:\lambda_{\Psi,s}-\lambda_{R_n,s}<\epsilon\}$ cover
+  compact $I$. A finite subcover lies in the largest one, proving uniform
+  convergence. Monotonicity extends it to all real $R \to \infty$. Therefore,
+  $\int_I\lambda_{R,s}\ud s\uparrow I_\Psi$.
+
+  The difference of the limiting rate and each masked rate is continuous and
+  nonnegative. Once the largest set in a finite subcover contains all of $I$,
+  its error is below $\epsilon$ everywhere. Larger radii only decrease that
+  error. This is a deterministic compactness argument for rates, not
+  convergence of unmasked random flows.
+
+  \medskip
+  \noindent\textit{Step 3.~}We take the supremum of fixed-mask moment lower
+  bounds.
+  At each fixed $R$ use this very same mask in the operator path and mean when
+  applying Proposition~\ref{P:raw-block-original-lower}. It gives the lower
+  bound with $2\int_I\lambda_{R,s}\ud s-v_\Psi/2$ for the same original point
+  liminf. Taking the numerical supremum over these individual bounds proves
+  \eqref{E:variational-unmasked-point-lower}. There is no $R(T)$, unmasked noisy
+  wave, uniform-in-mask Gaussian estimate or exchange of source and time limits.
+  This proves Proposition~\ref{P:variational-remove-mask}.
+\end{proof}
+
+\subsection{Full-class dilation and finite variational values for nonnegative controls}
+
+The bound~\eqref{E:variational-unmasked-point-lower} holds for each $\Psi \in
+\mathcal{C}_{\mathrm{pos}}$ separately. Before we take the supremum over $\Psi$,
+we record how $h_{\Psi,s}$, $v_\Psi$, $\lambda_{\Psi,s}$ and $I_\Psi$ change
+under a spatial dilation of the control. The proof of
+Proposition~\ref{P:variational-positive-scores} uses this to relate the
+variational values for different coefficients $c$.
+
+\LeanMarker{L:variational-control-dilation}
+\begin{lemma}[Radon and Rayleigh dilation]\label{L:variational-control-dilation}
+  For $r > 0$ the map
+  \begin{equation}\label{E:variational-control-dilation}
+    (D_r\Psi)(s,x)=r^{d+2-\alpha}\Psi(s,rx)
+  \end{equation}
+  is a bijection of $\mathcal{C}_{\mathrm{pos}}$, with inverse $D_{1/r}$. With
+  the same original covariance,
+  \begin{equation}\label{E:variational-dilation-values}
+    h_{D_r\Psi,s}(x)=r^2h_{\Psi,s}(rx),\qquad
+    v_{D_r\Psi}=r^{4-\alpha}v_\Psi,\qquad
+    \lambda_{D_r\Psi,s}=r\lambda_{\Psi,s},\quad
+    I_{D_r\Psi}=rI_\Psi.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We apply the homogeneous Radon pushforward to the covariance mean and the
+  Lebesgue Jacobian to its cost. We then dilate the unit Rayleigh tests to
+  identify the rate and its time integral.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We scale the original mean and covariance cost.
+  Positive dilation preserves the full smooth positive nonzero class;
+  multiplication of its amplitude powers gives the stated inverse. Homogeneity
+  of the physical Radon measure gives, for every nonnegative measurable $G$,
+  \[
+    \int G(ry)\Gamma(\ud y)
+    =r^{\alpha-d}\int G(z)\Gamma(\ud z).
+  \]
+  Indeed, its left pushforward measure on a Borel set $A$ is $\Gamma(A/r) =
+  r^{\alpha-d}\Gamma(A)$. Positive Tonelli applies this identity inside the
+  temporal convolution, giving $h_{D_r\Psi,s}(x) = r^2h_{\Psi,s}(rx)$. Now use
+  the \emph{Lebesgue} substitution $z = rx$ in the original pairing:
+  \[
+    v_{D_r\Psi}=r^{d+2-\alpha}r^2r^{-d}v_\Psi
+    =r^{4-\alpha}v_\Psi.
+  \]
+  This distinguishes the Radon pushforward from the spatial volume factor; it
+  includes singular covariances and white noise.
+
+  The mean has one amplitude factor $r^{d+2-\alpha}$ and one Radon factor
+  $r^{\alpha-d}$, whose product is $r^2$. In the cost pairing, multiplying by
+  that mean adds $r^2$, while the spatial Lebesgue substitution contributes
+  $r^{-d}$. This accounts separately for every exponent in the cost identity.
+
+  \medskip
+  \noindent\textit{Step 2.~}We scale the full set of Rayleigh tests.
+  The map $U_rf(x) = r^{d/2}f(rx)$ is a unitary bijection on real $L^2$,
+  preserving $H^1,H^2$ as sets under its inverse. Weak derivatives give
+  $\|\nabla U_rf\|_2^2 = r^2\|\nabla f\|_2^2$ and $\int h_{D_r\Psi,s}(U_rf)^2 =
+  r^2\int h_{\Psi,s}f^2$. The real Rayleigh bijection proves the squared rate
+  identity; the rates are positive, so their square roots and integrals give
+  \eqref{E:variational-dilation-values}. On $H^2$ this is also $H_{D_r\Psi,s}U_r
+  = r^2U_rH_{\Psi,s}$. Time has not been rescaled. For compact masks the
+  corresponding identity uses $m_R(rx) = m_{R/r}(x)$; a fixed mask radius is not
+  invariant. This proves Lemma~\ref{L:variational-control-dilation}.
+\end{proof}
+
+\LeanMarker{P:variational-positive-scores}
+\begin{proposition}[Intrinsic variational lower bounds]
+  \label{P:variational-positive-scores}
+  For $c > 0$, the set of variational values
+  $\{cI_\Psi-v_\Psi/2:\Psi\in\mathcal{C}_{\mathrm{pos}}\}$ is nonempty and
+  bounded above. Its finite real supremum $S_c^{\mathrm{pos}}$ is positive and
+  satisfies
+  \begin{equation}\label{E:variational-score-homogeneity}
+    S_c^{\mathrm{pos}}=c^{(4-\alpha)/(3-\alpha)}S_1^{\mathrm{pos}},
+    \qquad
+    Q_2\ge S_2^{\mathrm{pos}},
+  \end{equation}
+  where $Q_2$ is the original point liminf. The coefficient-one value is an
+  auxiliary variational value; no first-moment or source-constant identification
+  is asserted.
+\end{proposition}
+
+\begin{proof}
+  We first construct a positive coefficient-one value and scale the entire
+  class of values. We use the independently proved point upper bound to show
+  these sets are bounded above before taking their finite real suprema.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We exhibit a positive value.
+  Write $k = 3-\alpha > 0$, $q = 4-\alpha = k+1$ and $m = q/k > 1$. Fix one
+  $\Psi_0$ from the nonempty class and put $I_0 = I_{\Psi_0} > 0$, $v_0 =
+  v_{\Psi_0} > 0$. Positivity of the latter is
+  Lemma~\ref{L:compact-raw-profile}. For $r_0 = (I_0/v_0)^{1/k} > 0$, which need
+  not be less than one, the exact real-power identity gives
+  \[
+    I_{D_{r_0}\Psi_0}-v_{D_{r_0}\Psi_0}/2
+    =r_0I_0-r_0^qv_0/2=r_0I_0/2>0.
+  \]
+  The definition of $r_0$ gives $r_0^k=I_0/v_0$. Since $q=k+1$, it follows
+  that $r_0^qv_0=r_0I_0$. Thus, subtracting half the cost leaves exactly half
+  of the positive linear term.
+  This positive value is obtained from a smooth nonnegative control.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We scale the whole coefficient-one set
+  bijectively.
+  For $c > 0$ put $r_c = c^{1/k}$ and $K_c = c^m > 0$.
+  Lemma~\ref{L:variational-control-dilation} and the exact scalar powers give,
+  for every $\Psi$,
+  \begin{equation}\label{E:variational-score-set-scaling}
+    cI_{D_{r_c}\Psi}-v_{D_{r_c}\Psi}/2
+    =K_c(I_\Psi-v_\Psi/2).
+  \end{equation}
+  The two scalar factors agree: $cr_c=c^{1+1/k}=c^{q/k}=K_c$ and
+  $r_c^q=c^{q/k}=K_c$. Consequently, dilation multiplies the linear reward and
+  the quadratic cost by the same factor for this choice of $r_c$.
+  Since $D_{r_c}$ is a bijection of the entire class, the whole set of
+  variational values with coefficient $c$ is $K_c$ times the whole
+  coefficient-one set of variational values.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We bound the sets using the original point upper
+  estimate.
+  We prove boundedness before taking finite-real suprema. The independent
+  Theorem~\ref{T:full-upper}, for the \emph{same canonical solution}, gives
+  \[
+    \E|u(T,0)|^2\le e(T+2)^d e^{C_{\mathrm{up}}T^\kappa},
+    \qquad T\ge1,\quad C_{\mathrm{up}}<\infty.
+  \]
+  Its prefactor is negligible: choose $\epsilon = \kappa/2 > 0$, use $\log T \le
+  (T^\epsilon-1)/\epsilon$ and $\log(T+2) \le \log T+\log3$ for $T \ge 1$, and
+  divide by $T^\kappa$. Thus, the original point limsup is at most
+  $C_{\mathrm{up}}$. One fixed test/mask lower bound gives a finite lower bound
+  for $Q_2$, so $Q_2$ is finite. By~\eqref{E:variational-unmasked-point-lower}
+  every coefficient-two variational expression is at most this same $Q_2 \le
+  C_{\mathrm{up}}$, uniformly in $\Psi$.
+  Equation~\eqref{E:variational-score-set-scaling} at $c = 2$ consequently
+  bounds all coefficient-one variational values by $C_{\mathrm{up}}/K_2$. The
+  nonempty set has a finite real supremum $S_1^{\mathrm{pos}} > 0$ by the
+  positive test above.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We take finite real suprema and retain their
+  interpretation.
+  For general $c$, set equality and $K_c > 0$ show that $K_cS_1^{\mathrm{pos}}$
+  is the supremum: it is an upper bound, and every smaller number is exceeded by
+  $K_c$ times a coefficient-one variational expression within the corresponding
+  positive distance of its supremum. This proves finiteness, positivity and the
+  first identity in~\eqref{E:variational-score-homogeneity}. Taking the
+  numerical supremum of the coefficient-two lower bounds proves the second.
+  Although $2^m > 2$, the resulting $S_2^{\mathrm{pos}} > 2S_1^{\mathrm{pos}}$
+  is only a comparison of auxiliary variational values. It is not a Jensen
+  improvement without a first-moment identification. This proves
+  Proposition~\ref{P:variational-positive-scores}.
+\end{proof}
+
+For $\Gamma = 0$, the mean, original variance and Rayleigh rate are zero. Set
+all these variational values to zero; the free canonical solution $u = 1$ has
+the corresponding zero moment rate. Strict positivity above is restricted to
+nonzero covariance. Matching an upper variational rate and identifying an exact
+pointwise limit remain later steps.

@@ -1,0 +1,741 @@
+\section{Young evolution with constant initial data}
+\label{S:constant-phase-young}
+
+We use the fixed $R,T,E,\gamma,\theta,\beta$ of~\eqref{E:driver-parameters}, and
+choose the allowed even mask $m = \zeta_R$ with $0 \le m \le 1$. All constants
+in this section can depend on these fixed data, the model and the auxiliary
+physical cutoffs. There is no uniform estimate as $R$ or $T$ grows.
+
+\subsection{The distributional phase and its free evolution}
+
+Define the real Hilbert space
+\begin{equation}\label{E:constant-phase-space}
+  F=E\oplus\R^2,\qquad
+  \|(e,c_1,c_2)\|_F^2=\|e\|_E^2+c_1^2+c_2^2,\qquad
+  e_0=(0,1,0).
+\end{equation}
+Its distributional interpretation is $(e,c_1,c_2)\mapsto(e_1+c_1,e_2+c_2)$. Let
+$i:E \to F$ denote $e\mapsto(e,0,0)$ and let $\pi_C:F \to \R^2$ be the
+constant-coordinate projection.
+
+\begin{lemma}[Constants and finite propagation]\label{L:constant-phase-free}
+  The distributional interpretation of $F$ is continuous and injective. The
+  space is complete and separable, and $iE$ is closed and proper. For every real
+  $\psi \in C_c^\infty(\R^d)$,
+  \begin{equation}\label{E:constant-phase-cutoff}
+    L_\psi(e,c_1,c_2)=\psi e+(c_1\psi,c_2\psi)
+  \end{equation}
+  is bounded from $F$ to $E$. The free wave group on $F$ is
+  \begin{equation}\label{E:constant-phase-free}
+    S_F(t)(e,c_1,c_2)=(S(t)e,c_1+tc_2,c_2).
+  \end{equation}
+  It is strongly continuous and bounded on finite horizons and has finite
+  propagation for the total distributional data, including local cancellation
+  between $e$ and the constants.
+\end{lemma}
+
+\begin{proof}
+  We first separate constant distributions from the Sobolev phase and prove
+  the cutoff bound. We then identify the free group as convolution on the
+  total distributional data, which gives finite propagation even when the two
+  parts cancel locally.
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove injectivity and the basic Hilbert-space
+  properties.
+  A nonzero constant has Fourier transform a nonzero multiple of $\delta_0$.
+  Every $H^\sigma$ Fourier transform is locally $L^2$ near zero, since its
+  weight is bounded above and below there. A locally $L^2$ function $f$ cannot
+  represent $\delta_0$: testing against $\varphi(\xi/\varepsilon)$, with
+  $\varphi(0) = 1$ and $\varphi$ compactly supported in $B_1$, bounds its
+  integral by
+  \[
+    \|f\|_{L^2(B_\varepsilon)}
+    \varepsilon^{d/2}\|\varphi\|_2\longrightarrow0,
+  \]
+  whereas $\delta_0$ gives one. Thus, constants lie in neither $H^{1/2}$ nor
+  $H^{-1/2}$; the interpretation is injective. Sobolev duality and the two test
+  integrals prove continuity into distributions, uniformly on bounded families
+  of compact tests. Completeness, separability and the closed proper inclusion
+  follow from the Hilbert direct sum.
+
+  The shrinking test has $L^2$ norm $\varepsilon^{d/2}\|\varphi\|_2$.
+  Cauchy--Schwarz gives the displayed bound, which tends to zero for a locally
+  square-integrable $f$. A delta mass acts instead by evaluation at zero.
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound localization from the extended phase to
+  the Sobolev phase.
+  Multiplication by $\psi$ is bounded on both Sobolev entries. Indeed, the
+  Peetre inequalities give $\langle\xi\rangle^\sigma\langle\eta\rangle^{-\sigma}
+  \le 2^{|\sigma|/2}\langle\xi-\eta\rangle^{|\sigma|}$. In the unitary Fourier
+  convention its weighted kernel is therefore bounded by convolution with the
+  $L^1$ function $2^{|\sigma|/2}c_d|\widehat{\psi}(q)|\langle
+  q\rangle^{|\sigma|}$, where $c_d = (2\pi)^{-d/2}$. The $L^1*L^2$ bound applies
+  at $\sigma = \pm1/2$; the two constant columns are also in $E$. This proves
+  boundedness of~\eqref{E:constant-phase-cutoff}.
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify the free group and finite propagation.
+  The finite-dimensional block in~\eqref{E:constant-phase-free} and the strong,
+  finite-horizon bound for $S(t)$ from Lemma~\ref{L:driver-gain-localization}
+  prove the group assertions. To verify its physical meaning, for $t > 0$
+  consider the matrix of compactly supported distributions
+  \[
+    \begin{pmatrix}
+      \partial_tG_d(t)&G_d(t)\\
+      \Delta G_d(t)&\partial_tG_d(t)
+    \end{pmatrix}.
+  \]
+  The source Green convention gives $\widehat{G}_d(t)(\xi) =
+  c_d\sin(t|\xi|)/|\xi|$; hence its convolution multiplier is the sine quotient,
+  and the differentiated multipliers are $\cos(t|\xi|)$ and
+  $-|\xi|\sin(t|\xi|)$. The matrix agrees with $S(t)$ on Schwartz phases.
+  Convolution by a compact distribution is continuous on tempered distributions:
+  its transpose convolves a Schwartz test with the reflected compact
+  distribution, continuously in all Schwartz seminorms. Schwartz approximation
+  in $E$ extends the identity to $E$. The masses of the four entries are
+  $1,t,0,1$, so constants give exactly~\eqref{E:constant-phase-free}. Time
+  reversal handles $t < 0$ with the same support bound. The support property
+  concerns the total distribution, not its chosen decomposition. Each entry is
+  supported in $B_{|t|}$, also for the
+  three-dimensional sphere kernel. If the total initial distribution vanishes on
+  an enlarged region, each translated kernel tests zero there, so the evolved
+  total distribution vanishes on the smaller cone. This argument permits
+  cancellation between its Sobolev and constant parts. This proves
+  Lemma~\ref{L:constant-phase-free}.
+\end{proof}
+
+\subsection{The two columns for constant initial data}
+
+Choose real $\chi \in C_c^\infty$, equal to one on $B_{2R+T+1}$ and supported in
+$B_{2R+T+2}$, and choose real compact smooth $\psi = 1$ on a neighborhood of
+$\operatorname{supp}\chi$. Write $M_E = M_R$ and $M_E^\rho = M_{Y_\rho}$ for the
+paths already constructed, with the same original deterministic coefficients.
+
+\begin{proposition}[Extended operator path]\label{P:constant-phase-driver}
+  As identities of continuous operator paths,
+  \begin{equation}\label{E:constant-phase-localization}
+    D_\chi M_E=M_E=M_ED_\chi,
+  \end{equation}
+  and the same holds for each fixed $\rho$. Define
+  \begin{equation}\label{E:constant-phase-driver}
+    A_E=M_EL_\psi,\qquad A=iA_E,\qquad
+    A_E^\rho=M_E^\rho L_\psi,\qquad A^\rho=iA_E^\rho.
+  \end{equation}
+  These are independent of $\psi$, have compact values, and satisfy $Ai = iM_E$,
+  $\pi_CA = 0$ and their source counterparts. In every finite $L^pC^\theta$,
+  $A^\rho \to A$ at arbitrary relative source-width rates. Their norms have
+  uniform $\sqrt p$ moment bounds and a common finite square-exponential moment.
+  The original $A$ is measurable with respect to the given $W$.
+\end{proposition}
+
+\begin{proof}
+  We pass both localizations from the deterministic coefficients to the path
+  limits. Right localization then removes the choice of the auxiliary cutoff,
+  while bounded composition transfers convergence, compactness and moment
+  estimates to the larger phase.
+
+  \medskip
+  \noindent\textit{Step 1.~}We pass the localization identities to the path
+  limits.
+  Lemma~\ref{L:driver-gain-localization} gives both localizations for every
+  deterministic $A_j(0,t)$. The original finite sums retain them.
+  Proposition~\ref{P:source-gaussian-transfer} constructs the source finite sums
+  with exactly these coefficients and correlated $Y_\rho(f_j)$. Their $C^\theta$
+  limits preserve both identities. A uniformly convergent subsequence, or
+  rational times and continuous paths,
+  gives~\eqref{E:constant-phase-localization} for all $t$ on one event. Use a
+  separate event for each fixed $\rho$.
+
+  Left and right multiplication by the fixed bounded operator $D_\chi$ are
+  continuous in the path norm. Thus, the same coefficient identities hold for
+  a source sum even though its Gaussian coefficients are correlated, and
+  persist when that sum converges.
+
+  \medskip
+  \noindent\textit{Step 2.~}We define the extended path independently of the
+  auxiliary cutoff.
+  For two choices $\psi,\psi'$, $(L_\psi-L_{\psi'})z \in E$ and
+  $D_\chi(L_\psi-L_{\psi'})z = 0$. The right localization kills this difference.
+  For $z = ie$, $D_\chi D_\psi e = D_\chi e$ and hence $Ai = iM_E$. The constant
+  columns are precisely $iM_E(\psi,0)$ and $iM_E(0,\psi)$; they are retained.
+  The difference of the two localized inputs vanishes wherever $\chi$ is
+  supported, since both auxiliary cutoffs are one there. The right
+  localization therefore makes $M_E$ annihilate it. The range of $i$ has zero
+  constant coordinates, which also gives $\pi_C A = 0$.
+
+  \medskip
+  \noindent\textit{Step 3.~}We transfer the path bounds and measurability.
+  Bounded composition preserves compactness and transfers
+  \eqref{E:source-driver-limit} and the Gaussian norm bounds
+  to~\eqref{E:constant-phase-driver}. If $\|X\|_{L^p} \le C\sqrt p$, then $\E
+  X^{2n} \le C^{2n}(2n)^n$. Since $n! \ge (n/e)^n$, the exponential series gives
+  $\E e^{cX^2} < \infty$ uniformly when $2ecC^2 < 1$. Finally, $A$ is a
+  deterministic bounded transform of the original $W$-measurable operator path.
+  This proves Proposition~\ref{P:constant-phase-driver}.
+\end{proof}
+
+\begin{lemma}[Ordinary response on all of $F$]\label{L:constant-source-response}
+  For fixed $\rho$ put $b(r) = mY_\rho(r)$ and define
+  \[
+    B_F(b)(e,c_1,c_2)=(0,b(e_1+c_1))\in E.
+  \]
+  Then
+  \begin{equation}\label{E:constant-source-response}
+    A_E^\rho(t)z=\int_0^tS(-r)B_F(b(r))S_F(r)z\ud r
+  \end{equation}
+  as a statewise strong integral. Its primitive is Lipschitz in
+  $\mathcal{B}(F,E)$ and the identity holds for all states and times on one
+  event for this fixed $\rho$.
+\end{lemma}
+
+\begin{proof}
+  We first bound the ordinary coefficient operator on the full phase,
+  including the constant displacement. We then use finite propagation to
+  replace each initial state by its localized Sobolev representative near the
+  coefficient support.
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the statewise integral and its
+  Lipschitz bound.
+  The source regularity gives one compact spatial support for $b$, continuity in
+  $L^\infty$ and $L^2$, and bounded spatial derivatives on the horizon. Since
+  $e_1 \in L^2$ and $\|\cdot\|_{H^{-1/2}} \le \|\cdot\|_2$,
+  \[
+    \|B_F(b)\|_{\mathcal{B}(F,E)}
+    \le\|b\|_\infty+\|b\|_2.
+  \]
+  The forcing splits into $be_1$ and $c_1b$. Their $L^2$ norms are bounded by
+  $\|b\|_\infty\|e_1\|_2$ and $|c_1|\|b\|_2$, respectively. The velocity norm
+  in $E$ is no larger than the $L^2$ norm, so both terms are controlled by the
+  displayed operator bound.
+  Strong continuity and finite-horizon bounds of both free groups make the
+  integrand strongly continuous on each state and uniformly bounded as an
+  operator. Integrating its bound proves operator-norm Lipschitz increments
+  without assuming a Banach-valued operator derivative.
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the ordinary response for every
+  extended state.
+  The total initial distributions of $z$ and $iL_\psi z$ agree on the entire
+  enlarged ball where $\psi = 1$. Lemma~\ref{L:constant-phase-free} gives
+  equality of the free displacements near $\operatorname{supp}m$ for $0 \le r
+  \le T$. Multiplication by $b(r)$ kills the difference. Apply
+  Proposition~\ref{P:source-ordinary-response} to the $E$ state $L_\psi z$ to
+  obtain~\eqref{E:constant-source-response}. Separability and rational times,
+  followed by boundedness and continuity, give its path identity. This proves
+  the constant columns directly; no density of $E$ in $F$ is used. This proves
+  Lemma~\ref{L:constant-source-response}.
+\end{proof}
+
+\subsection{The exact linear Young equation}
+
+We use Young's integration theory~\cite{young:36:inequality} in its
+Banach-space form. The estimate is stated by
+Friz and Hairer~\cite{friz.hairer:20:course}*{Sections~1.4--1.5, 4.1, (4.3), pp.~13, 61--62}.
+For $D,V$ with exponent $\theta > 1/2$ and bounded bilinear multiplication, left
+composition gives
+\begin{equation}\label{E:constant-young-estimate}
+  \left\|\int_s^t\ud D(r)V(r)-D(s,t)V(s)\right\|
+  \le C_\theta[D]_\theta[V]_\theta|t-s|^{2\theta}.
+\end{equation}
+The Banach spaces here are $\mathcal{B}(F)$, and multiplication is bounded with
+constant one. We derive the linear solution and stability estimates below rather
+than invoke a nonlinear bounded-vector-field theorem.
+
+\begin{proposition}[Linear Young evolution]\label{P:constant-young-linear}
+  For every $D \in C^\theta([0,T];\mathcal{B}(F))$ with $D(0) = 0$ there is a
+  unique $C^\theta$ solution, in the terminal variable, of
+  \begin{equation}\label{E:constant-young-equation}
+    U_D(t,s)=I+\int_s^t\ud D(r)U_D(r,s).
+  \end{equation}
+  It has the composition law, invertible values and joint operator-norm
+  continuity on $0 \le s \le t \le T$. The map $D\mapsto U_D$ is locally
+  Lipschitz into the uniform time-triangle norm, and
+  \begin{equation}\label{E:constant-young-growth}
+    \sup_{s\le t\le T}\|U_D(t,s)\|
+    \le C_T\exp\big(C_T(1+\|D\|_{C^\theta})^{1/\theta}\big).
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  We solve the equation by contraction on short intervals in a scaled Hölder
+  norm. We compare two such solutions on the same partition, then patch the
+  intervals to obtain the global bound, composition law and invertibility.
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the solution on a short interval.
+  On an interval $[a,a+\ell]$ use the complete scaled norm $N_\ell(V) =
+  \sup\|V\|+\ell^\theta[V]_\theta$ and put $I_D(V)(t) = \int_a^t\ud D\,V$.
+  Applying~\eqref{E:constant-young-estimate} to every subinterval gives
+  \begin{align*}
+    \sup\|I_D(V)\|
+    &\le[D]_\theta\ell^\theta\sup\|V\|
+    +C_\theta[D]_\theta\ell^{2\theta}[V]_\theta,\\
+    [I_D(V)]_\theta
+    &\le[D]_\theta\sup\|V\|
+    +C_\theta[D]_\theta\ell^\theta[V]_\theta.
+  \end{align*}
+  For the supremum estimate, use the Young remainder bound between $a$ and
+  $t$. For the seminorm estimate, apply it to each subinterval and divide by
+  its length to the power $\theta$. Multiplying the second estimate by
+  $\ell^\theta$ and adding it to the first gives the scaled-norm estimate.
+  Thus, with $c_\theta = 2\max(1,C_\theta)$,
+  \begin{equation}\label{E:constant-young-local}
+    N_\ell(I_D(V))
+    \le c_\theta[D]_\theta\ell^\theta N_\ell(V).
+  \end{equation}
+  Take $K \ge 1$, $[D]_\theta \le K$, and choose $\ell$ with $c_\theta
+  K\ell^\theta \le 1/4$. The map $V\mapsto V_a+I_D(V)$ is a contraction on the
+  complete affine space of paths starting at $V_a$. Its solution satisfies
+  $N_\ell(V) \le (4/3)\|V_a\| \le 2\|V_a\|$.
+
+  Subtracting two images of the fixed-point map removes the initial value, so
+  its Lipschitz constant is at most $1/4$. The image starts at $V_a$ because
+  the integral vanishes at the left endpoint. Finally, the fixed-point
+  equation gives $N_\ell(V) \le \|V_a\|+N_\ell(V)/4$, which yields the factor
+  $4/3$.
+
+  \medskip
+  \noindent\textit{Step 2.~}We compare solutions driven by two paths.
+  To compare $D,D'$, require both seminorms at most $K$ and write $\delta =
+  \|D-D'\|_{C^\theta}$, $W = V-V'$. Subtracting gives $W =
+  W_a+I_D(W)+I_{D-D'}(V')$. Absorbing the factor $1/4$ yields
+  \begin{equation}\label{E:constant-young-difference}
+    N_\ell(W)\le2\|W_a\|
+    +2c_\theta\ell^\theta\delta N_\ell(V').
+  \end{equation}
+  In the difference equation, the first integral contains the unknown
+  difference $W$ and has coefficient at most $1/4$. Move it to the left. The
+  remaining integral is bounded by the same local estimate with driver $D-D'$,
+  whose seminorm is at most $\delta$. Replacing $4/3$ by two gives the
+  displayed bound.
+  Cover $[s,T]$ by at most $n_{K,T}$ such pieces. If the second initial norm is
+  $B$, its norm on piece $j$, indexed from zero, is at most $2^{j+1}B$. With
+  $E_j$ the difference at its left endpoint, induction gives
+  \[
+    E_{j+1}\le2E_j+2^{j+2}c_\theta\ell^\theta\delta B,\qquad
+    E_j\le2^jE_0+j2^{j+1}c_\theta\ell^\theta\delta B.
+  \]
+  Equation~\eqref{E:constant-young-difference} gives the same bound inside each
+  piece; a shorter final piece only reduces the coefficient. For evolutions,
+  $E_0 = 0$ and $B = 1$. The number of pieces is uniform in $s,t$, proving local
+  Lipschitz dependence in the full triangle norm.
+
+  \medskip
+  \noindent\textit{Step 3.~}We patch the intervals and prove the flow
+  properties.
+  Now choose $K = 1+\|D\|_{C^\theta}$. At most
+  $C_T(1+\|D\|_{C^\theta}^{1/\theta})$ pieces suffice. Each multiplies the norm
+  by at most two, giving \eqref{E:constant-young-growth}. The product of these
+  factors is bounded by an exponential in the number of pieces.   Uniqueness
+  patches the
+  solutions; right multiplication by the preceding evolution gives the
+  composition law. On a small piece~\eqref{E:constant-young-local} gives
+  $\|U_D-I\|_\infty \le 1/3$, so a Neumann series proves local invertibility,
+  then products give global invertibility. Finally, $U_D(t,s) =
+  U_D(t,0)U_D(s,0)^{-1}$ proves joint norm continuity, since $U_D(\cdot,0)$ is
+  continuous and inversion is continuous on invertible operators. This proves
+  Proposition~\ref{P:constant-young-linear}.
+\end{proof}
+
+Proposition~\ref{P:constant-young-linear} concerns one deterministic operator
+path. We now apply it to the random paths $A$ and $A^\rho$
+of~\eqref{E:constant-phase-driver} and pass to the physical flow on $F$.
+
+\begin{proposition}[Gaussian Young and physical flows]
+  \label{P:constant-gaussian-flow}
+  Apply Proposition~\ref{P:constant-young-linear} to $A,A^\rho$. The resulting
+  flows are strongly measurable in uniform triangle norm, have every finite norm
+  moment and satisfy
+  \begin{equation}\label{E:constant-flow-limit}
+    U_{A^\rho}\longrightarrow U_A
+    \quad\hbox{in every finite }L^p
+    \left(\sup_{0\le s\le t\le T}\|\cdot\|_{\mathcal{B}(F)}\right).
+  \end{equation}
+  They preserve the interaction constant coordinates:
+  \begin{equation}\label{E:constant-flow-range}
+    \pi_CU_A(t,s)=\pi_C,\qquad
+    (U_A(t,s)-I)F\subset iE,
+  \end{equation}
+  and likewise for the source. The physical flow is
+  \begin{equation}\label{E:constant-physical-flow}
+    P_A(t,s)=S_F(t)U_A(t,s)S_F(-s).
+  \end{equation}
+  It has composition and strong continuity on states, physical constant block
+  $(c_1,c_2)\mapsto(c_1+(t-s)c_2,c_2)$, all finite moments and the analogous
+  uniform $L^p$ source convergence. Its difference from the free flow has range
+  in $iE$.
+\end{proposition}
+
+\begin{proof}
+  We first obtain measurability and the constant-coordinate identities. Local
+  stability gives convergence in probability after restricting to bounded
+  driver norms. Gaussian tails give the moments needed to strengthen this to
+  $L^p$ convergence, and bounded free-group composition transfers it to the
+  physical flow.
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain measurable flows and their range
+  identities.
+  The original paths lie in separable closed path spans by their Gaussian
+  construction. Bounded composition in~\eqref{E:constant-phase-driver} and the
+  continuous Young map preserve strong measurability into
+  $C(\Delta_T;\mathcal{B}(F))$, where $\Delta_T = \{(t,s):0\le s\le t\le T\}$
+  has the uniform norm. Indeed, the continuous image of the separable space of
+  operator paths has separable closure in this triangle space. Applying $\pi_C$
+  to Young Riemann sums gives the first identity
+  in~\eqref{E:constant-flow-range}. Each increment applied to any state lies in
+  $iE$; closedness of this subspace passes the property through sums and limits,
+  giving the second identity.
+
+  \medskip
+  \noindent\textit{Step 2.~}We prove convergence in probability of the Young
+  flows.
+  Write $X_\rho = \|A^\rho\|_{C^\theta}$ and $X_0 = \|A\|_{C^\theta}$.
+  Proposition~\ref{P:constant-phase-driver} supplies $c_0 > 0$ and $H_0 <
+  \infty$ such that
+  \[
+    \sup_\rho\E e^{c_0X_\rho^2}\le H_0,\qquad
+    \E e^{c_0X_0^2}\le H_0.
+  \]
+  For $K \ge 1$, let $L_K$ be the Lipschitz constant of
+  Proposition~\ref{P:constant-young-linear} on the ball of operator paths of
+  radius $K$, in the whole time-triangle norm. On $\{X_\rho\le K,\ X_0\le K\}$
+  it gives
+  \[
+    \|U_{A^\rho}-U_A\|_\infty
+    \le L_K\|A^\rho-A\|_{C^\theta}.
+  \]
+  Consequently, for $\varepsilon > 0$ and any finite $q \ge 1$, Markov and the
+  union bound give
+  \[
+    \mathbb{P}(\|U_{A^\rho}-U_A\|_\infty>\varepsilon)
+    \le2H_0e^{-c_0K^2}
+    +(L_K/\varepsilon)^q\E\|A^\rho-A\|_{C^\theta}^q.
+  \]
+  The exceptional event is contained in the union where either driver norm
+  exceeds $K$. Markov applied to each square exponential bounds this union by
+  the first term. On its complement, the local Lipschitz estimate and the
+  ordinary moment form of Markov give the second term.
+  At fixed $K$ the second term tends to zero at arbitrary relative source-width
+  rates. Only then let $K \to \infty$ to obtain convergence in probability. No
+  independence of the original, source and residual operator paths is required.
+
+  \medskip
+  \noindent\textit{Step 3.~}We obtain flow moments and strengthen convergence
+  to $L^p$.
+  Put $\nu = 1/\theta < 2$. For each finite $r \ge 1$ and $c > 0$, there is
+  $C_{r,c} < \infty$ such that
+  \[
+    rC_T(1+x)^\nu\le cx^2+C_{r,c},\qquad x\ge0.
+  \]
+  This follows because $(1+x)^\nu/x^2 \to 0$ as $x \to \infty$, while the
+  remainder is bounded on compact intervals. Use $c \le c_0$
+  and~\eqref{E:constant-young-growth} to obtain
+  \[
+    \sup_\rho\E\|U_{A^\rho}\|_\infty^r<\infty,\qquad
+    \E\|U_A\|_\infty^r<\infty.
+  \]
+  In particular, for fixed finite $p \ge 1$ and $V_\rho =
+  \|U_{A^\rho}-U_A\|_\infty$, the $2p$ moments of $V_\rho$ are uniformly
+  bounded. For every $\varepsilon > 0$,
+  \[
+    \E V_\rho^p
+    \le\varepsilon^p+
+    (\E V_\rho^{2p})^{1/2}
+    \mathbb{P}(V_\rho>\varepsilon)^{1/2}.
+  \]
+  Split the expectation into $V_\rho \le \varepsilon$ and its complement. On
+  the first event the integrand is at most $\varepsilon^p$. On the second,
+  Cauchy--Schwarz pairs $V_\rho^p$ with the indicator, giving the displayed
+  probability factor. The uniform $2p$ moment bound therefore supplies uniform
+  integrability.
+  The second term tends to zero by convergence in probability; then let
+  $\varepsilon\downarrow0$. This proves \eqref{E:constant-flow-limit}. The
+  square-exponential bound used here is an operator path bound; no
+  square-exponential flow bound is needed.
+
+  \medskip
+  \noindent\textit{Step 4.~}We transfer the conclusions to the physical flow.
+  The free group is strongly continuous and bounded on the horizon. Define
+  $\mathcal{B}_\infty(\Delta_T;\mathcal{B}(F))$ to be the Banach space of all
+  bounded operator families on $\Delta_T$. The deterministic map
+  \[
+    \mathcal{L}(V)(t,s)=S_F(t)V(t,s)S_F(-s)
+  \]
+  is bounded linear from $C(\Delta_T;\mathcal{B}(F))$ into this bounded-family
+  space, with norm at most $C_T^2$, where $C_T \ge \sup_{|r|\le T}\|S_F(r)\|$.
+  Hence, it preserves strong measurability on the separable ranges and gives, in
+  particular,
+  \[
+    \|P_{A^\rho}-P_A\|_\infty
+    \le C_T^2\|U_{A^\rho}-U_A\|_\infty.
+  \]
+  For the range identity below, the rightmost free-group factor changes
+  the input, while the leftmost factor preserves $iE$. Thus, composing
+  $U_A(t,s)-I$ with these factors preserves its range inclusion in $iE$.
+  All finite moments and uniform $L^p$ convergence therefore transfer to the
+  physical flows. This does not place those flows in the norm-continuous
+  triangle space or assert operator-norm continuity of the free group. For each
+  fixed state, joint continuity follows by splitting a physical-flow difference
+  into the norm-continuous $U$ difference and two strong free-group differences,
+  using the uniform group bound. Group cancellation gives composition. The
+  finite constant block $J_t(c_1,c_2) = (c_1+tc_2,c_2)$ satisfies $J_tJ_{-s} =
+  J_{t-s}$, which gives the asserted physical constant coordinates from
+  $\pi_CU_A = \pi_C$. Finally,
+  \[
+    P_A(t,s)-S_F(t-s)
+    =S_F(t)(U_A(t,s)-I)S_F(-s)
+  \]
+  has range in $iE$, since $S_F(t)iE = iE$. This proves
+  Proposition~\ref{P:constant-gaussian-flow}.
+\end{proof}
+
+\subsection{Ordinary source solutions and the original tested observable}
+
+So far $P_{A^\rho}$ is defined through Young integrals, not through the source
+equation of Proposition~\ref{P:masked-source-moments}. We now connect the two
+at a fixed source width $\rho$.
+
+\begin{lemma}[Identification with the ordinary source equation]
+  \label{L:constant-source-solution}
+  For fixed $\rho$, the displacement distribution of $P_{A^\rho}(t,0)e_0$ is the
+  locally continuous ordinary source solution $u_\rho^m(t,\cdot)$ from
+  Proposition~\ref{P:masked-source-moments}.
+\end{lemma}
+
+\begin{proof}
+  We first identify the Young integral with the ordinary interaction integral
+  for fixed regularization. We then compare the phase Picard terms with the
+  scalar Green-chain terms by distributional testing and pass to their limits.
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the statewise Young equation with the
+  ordinary equation.
+  In~\eqref{E:constant-source-response} let $C(r) = S(-r)B_F(b(r))S_F(r)$. The
+  primitive is $A_E^\rho$. For left endpoints $r_j = t_j$, the Young sums
+  applied to a state $v$ are
+  \[
+    \sum_j\int_{t_j}^{t_{j+1}}iC(r)U_{A^\rho}(r_j,s)v\ud r.
+  \]
+  Within each integral, the only difference from the desired integrand is
+  replacement of $U_{A^\rho}(r,s)v$ by its left-endpoint value. The error is
+  bounded by the horizon length times the uniform bound for $C$ times the
+  modulus of continuity of this state path. That modulus tends to zero with
+  the mesh.
+  Uniform continuity of $U$ and the uniform bound for $C$ make these converge to
+  the strong integral with $U(r,s)v$. Thus, the Young equation is precisely the
+  ordinary interaction integral on states. Multiplying by free groups gives the
+  Duhamel equation for displacement and velocity. Its unique $C([0,T];F)$
+  solution follows by the bounded-coefficient Picard argument with the strongly
+  continuous, bounded free group. No operator-norm derivative of $S_F$ is used.
+
+  \medskip
+  \noindent\textit{Step 2.~}We construct the phase Picard series.
+  More explicitly, put $W_0(t) = e_0$ and, for $n \ge 1$,
+  \[
+    W_n(t)=\int_0^t S_F(t-r)iB_F(b(r))W_{n-1}(r)\ud r.
+  \]
+  If $B_T = \sup_r\|B_F(b(r))\|_{\mathcal{B}(F,E)}$, induction on the time
+  simplex gives $\sup_t\|W_n(t)\|_F \le C_T^{n+1}B_T^nT^n/n!$. We take $C_T \ge
+  \max(1,\sup_{|t|\le T}\|S_F(t)\|)$, which also supplies the bound at order
+  zero. The series converges in $C([0,T];F)$. The Duhamel map there has norm at
+  most $C_TB_TT$, so its sum solves the same integral equation and equals the
+  ordinary phase by uniqueness.
+
+  The $n$th iterated time integral has simplex volume $T^n/n!$. The group
+  bound and the coefficient bound apply to each factor, giving the displayed
+  factorial estimate. This makes the series uniformly convergent in $F$ and
+  permits passage through the bounded Duhamel map.
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify the displacement of each term and then
+  of the sum.
+  Let $X_0(t,x) = 1$ and $X_n(t) = \int_0^tG_d(t-r)*(b(r)X_{n-1}(r))\ud r$. At
+  fixed $n$ these are continuous in time and smooth in space. Derivatives fall
+  on the smooth compact factor $bX_{n-1}$; Green mass $t-r$ bounds the
+  integrals, while the unit-time measure representation gives time continuity.
+  This is induction using only finitely many bounded derivatives for each fixed
+  derivative order. At $n = 0$ the phase displacement is $X_0$. If the equality
+  holds at $n-1$, multiplication by smooth $b$ identifies the forcing with
+  $(0,f_r)$, where $f_r = b(r)X_{n-1}(r)$ is smooth and compactly supported. For
+  a compact smooth test $\varphi$, continuous distributional testing of the
+  phase integral yields
+  \[
+    \langle[W_n(t)]_1,\varphi\rangle
+    =\int_0^t\int f_r(y)
+    \int G_d(t-r,\ud z)\varphi(y+z)\ud y\ud r
+    =\langle X_n(t),\varphi\rangle.
+  \]
+  Absolute Fubini follows from $\|\varphi\|_\infty\|f_r\|_1(t-r)$, integrable on
+  the horizon because $f_r$ has one compact support and continuous $L^1$ norm.
+  This also covers sphere measures in $d = 3$. Iterating the scalar recursion
+  gives exactly $X_{\rho,n}^m$, with chronological order and all physical mask
+  factors. The scalar compact-cone factorial bound gives locally uniform
+  convergence to $u_\rho^m$, whereas the phase series converges in $F$ and hence
+  in distributions. Their displacement limits agree. This proves
+  Lemma~\ref{L:constant-source-solution}.
+\end{proof}
+
+Lemma~\ref{L:constant-source-solution} holds at each fixed $\rho$. To reach
+the original noise we test against a fixed $\phi$ and use the source
+limit~\eqref{E:constant-flow-limit}.
+
+\begin{proposition}[Original average and original point moment]
+  \label{P:constant-raw-average}
+  Let real $\phi \in C_c^\infty(\R^d)$ be nonnegative with integral one. The
+  bounded functional and original random variable
+  \begin{equation}\label{E:constant-raw-average}
+    O_\phi(e,c_1,c_2)=\langle e_1,\phi\rangle+c_1,\qquad
+    Z_m(t,\phi)=O_\phi P_A(t,0)e_0
+  \end{equation}
+  are well defined, and $Z_m$ is $W$-measurable. At arbitrary relative
+  source-width rates, for every finite $p$,
+  \begin{equation}\label{E:constant-tested-limit}
+    \int\phi(x)u_\rho^m(t,x)\ud x
+    \longrightarrow Z_m(t,\phi)\quad\text{in }L^p.
+  \end{equation}
+  In particular,
+  \begin{equation}\label{E:constant-original-point-transfer}
+    \E|Z_m(t,\phi)|^2\le\E|u(t,0)|^2.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  We first identify the ordinary tested source observable with the phase
+  functional. We then show that it is the same random variable as the Bochner
+  average. This allows the flow convergence to supply the masked-limit premise
+  for the original moment comparison.
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the phase functional and the ordinary
+  source average.
+  Sobolev duality gives $\|O_\phi\| \le (\|\phi\|_{H^{-1/2}}^2+1)^{1/2}$. The
+  original operator path is $W$-measurable, and the Young and deterministic maps
+  above are continuous or bounded measurable on their separable ranges. Thus,
+  $Z_m$ is $W$-measurable and does not depend on the auxiliary $J$ used in
+  source realizations. At each fixed $\rho$,
+  Lemma~\ref{L:constant-source-solution} identifies the displacement as a
+  distribution with the ordinary source solution. Testing by this same $\phi$,
+  with $\int\phi = 1$, therefore gives the almost sure identity
+  \[
+    O_\phi P_{A^\rho}(t,0)e_0
+    =C_\phi:=\int\phi(x)u_\rho^m(t,x)\ud x.
+  \]
+  This uses the displacement pairing and its constant displacement coordinate
+  in~\eqref{E:constant-raw-average}; it takes no point trace of an $H^{1/2}$
+  state. All identities here are at one fixed $\rho$, so no uncountable
+  intersection of source-version events is used.
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the ordinary and Bochner averages in
+  $L^2$.
+  We verify that $C_\phi$ equals the Bochner $L^2$ average $B_\phi$ from
+  Proposition~\ref{P:masked-source-moments}. That proposition gives the
+  spatially uniform bound $\|u_\rho^m(t,x)\|_2 \le Q_t$, with $Q_t$ also
+  independent of source widths. Scalar Fubini gives
+  \[
+    \E\int|\phi(x)u_\rho^m(t,x)|\ud x
+    \le Q_t\|\phi\|_1<\infty.
+  \]
+  Thus, the ordinary spatial integral exists almost surely. Weighted
+  Cauchy--Schwarz and scalar Fubini also give
+  \[
+    \E|C_\phi|^2
+    \le\|\phi\|_1\int|\phi(x)|\E|u_\rho^m(t,x)|^2\ud x
+    \le Q_t^2\|\phi\|_1^2.
+  \]
+  For every bounded real random variable $\Xi$ on the fixed source space,
+  $V\mapsto\E[\Xi V]$ is a continuous functional on $L^2$. It therefore commutes
+  with the Bochner integral, while scalar Fubini is justified by $\|\Xi\|_\infty
+  Q_t\|\phi\|_1$. Consequently,
+  \[
+    \E[\Xi B_\phi]
+    =\int\phi(x)\E[\Xi u_\rho^m(t,x)]\ud x
+    =\E[\Xi C_\phi].
+  \]
+  Bounded random variables separate real $L^2$ random variables in this way.
+  The sign of their difference is itself bounded and measurable, so it is an
+  allowed test even though it depends on both averages.
+  Both averages are real $L^2$ variables. Taking $\Xi =
+  \operatorname{sign}(B_\phi-C_\phi)$ yields $\E|B_\phi-C_\phi| = 0$, so the two
+  averages agree almost surely.
+
+  \medskip
+  \noindent\textit{Step 3.~}We pass to the original tested observable and
+  moment bound.
+  Proposition~\ref{P:constant-gaussian-flow} now gives, for every finite $p$,
+  \[
+    \|B_\phi-Z_m(t,\phi)\|_{L^p}
+    \le\|O_\phi\|\|e_0\|
+    \big\|\|P_{A^\rho}-P_A\|_\infty\big\|_{L^p}
+    \longrightarrow0.
+  \]
+  Apply the bounded functional to the difference of the two physical flows at
+  the same fixed state $e_0$. The scalar error is bounded by the product of
+  the two deterministic norms and the operator error. Thus, the uniform flow
+  convergence gives the displayed scalar convergence for every finite $p$.
+  This is~\eqref{E:constant-tested-limit}, including its $L^2$ case, for the
+  masked Bochner average, with arbitrary relative source-width rates. It
+  supplies the conditional convergence premise of
+  Proposition~\ref{P:masked-canonical-transfer} at the same fixed mask, horizon,
+  original covariance and observable. Since $\phi \ge 0$ and $\|\phi\|_1 = 1$,
+  that proposition gives \eqref{E:constant-original-point-transfer}. Zero
+  covariance gives the free constant solution and equality. All source limits
+  are at fixed mask and horizon, before time asymptotics. This proves
+  Proposition~\ref{P:constant-raw-average}.
+\end{proof}
+
+So far the operator path comes from the noise alone.
+Section~\ref{S:compact-mean-family} also needs a deterministic potential.
+
+\begin{proposition}[Compact deterministic base]\label{P:constant-compact-base}
+  Let $h \in C([0,T];C_c^\infty(K))$ be real for one fixed compact $K$, with all
+  spatial derivatives continuous on that support. The statewise primitive
+  \[
+    A_h(t)=\int_0^t iS(-r)B_F(h(r))S_F(r)\ud r
+  \]
+  is Lipschitz in $\mathcal{B}(F)$, takes values with range in $iE$, and has a
+  bound $C_T\sup_r(\|h(r)\|_\infty+\|h(r)\|_2)$. The flow conclusions above,
+  including moments, source convergence and ordinary-source identification, hold
+  for $A_h+gA$ and $A_h+gA^\rho$, uniformly on bounded displayed deterministic
+  bounds and bounded real $g$. No Cameron-shift identity is asserted here.
+\end{proposition}
+
+\begin{proof}
+  We bound the deterministic primitive and then add it to the Gaussian driver.
+  Its bounded shift preserves the required exponential control, so the
+  preceding stability and ordinary-source arguments apply.
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound the shifted driver and its moments.
+  The estimate for $B_F$ and the strong free groups prove the primitive and its
+  Lipschitz bound exactly as in Lemma~\ref{L:constant-source-response}. If
+  $\|A_h\|_{C^\theta} \le H$, $|g| \le G$ and $X = \|A\|_{C^\theta}$, then
+  $\|A_h+gA\|_{C^\theta} \le H+GX$. If $\E e^{cX^2}$ is bounded, choose $c' \le
+  c/(2(1+G^2))$ to obtain
+  \[
+    \E e^{c'\|A_h+gA\|_{C^\theta}^2}
+    \le e^{2c'H^2}\E e^{2c'G^2X^2}<\infty.
+  \]
+  The elementary inequality $(H+GX)^2 \le 2H^2+2G^2X^2$ gives the displayed
+  exponential comparison. The choice of $c'$ ensures that the coefficient of
+  $X^2$ stays below the available Gaussian exponential constant. The
+  deterministic factor is uniform when $H$ and $G$ are bounded.
+  Alternatively $pC(1+H+Gx)^{1/\theta} \le cx^2+C_{p,H,G,c}$ transfers the Young
+  growth estimate directly to all finite moments.
+
+  \medskip
+  \noindent\textit{Step 2.~}We transfer convergence and the ordinary-source
+  identification.
+  Source operator-path convergence, local Young stability and uniform
+  integrability give the same
+  flow convergence. The state-integral and Picard-to-chain arguments apply to
+  $h+gmY_\rho$, whose spatial support lies in one fixed compact union. These are
+  individual estimates and versions, without an uncountable common-parameter
+  event. Only $h = 0$, $g = 1$ enters
+  \eqref{E:constant-original-point-transfer}. This proves
+  Proposition~\ref{P:constant-compact-base}.
+\end{proof}

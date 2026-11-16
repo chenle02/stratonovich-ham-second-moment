@@ -1,0 +1,372 @@
+\section{Higher spatial exponents under a convolution bound}
+\label{S:higher-alpha}
+
+The convolution assumption below is additional to homogeneity, and the concrete
+applications cover only the stated Riesz ranges. Section~\ref{S:interval-upper}
+establishes the full general upper scale by a separate argument. This
+alternative route is not an input to Theorem~\ref{T:intrinsic-second-moment}.
+
+We retain the standing covariance assumptions and take $d \in \{2,3\}$ and $1 <
+\alpha < 2-\alpha_0$. Put $\delta = \alpha-1$, $q = 3-\alpha$, and $\beta =
+4-\alpha-\alpha_0$. Here $\delta$ is an exponent, not a smoothing parameter.
+Write $p_\epsilon$ for the centered Gaussian density with covariance $\epsilon
+I$, $\gamma_\epsilon = p_\epsilon*\gamma$, and $G_{h,\eta} = p_\eta*G_h$, with
+$G_{h,0} = G_h$.
+
+\begin{hypothesis}[Spatial maximum]\label{H:spatial-maximum}
+  There is $M > 0$ such that, for every $h > 0$, $z \in \R^d$, $\epsilon > 0$,
+  and $\eta \ge 0$,
+  \begin{equation}\label{E:higher-convolution}
+    0\le\int_{\R^d}G_{h,\eta}(\ud y)\gamma_\epsilon(y+z)
+    \le M h^{-\delta}.
+  \end{equation}
+  The same $M$ works for all translations and both Gaussian widths. In
+  particular, each pairing edge may have its own positive covariance width and
+  each Green factor its own nonnegative smoothing width.
+\end{hypothesis}
+
+This uniform maximum is an additional assumption, not a consequence of
+homogeneity. No-go~\ref{P:nogo-08} gives admissible covariances for which
+the translated wave convolution diverges.
+
+
+\begin{proposition}[Conditional upper bound]\label{P:higher-transfer}
+  Suppose that Hypotheses~\ref{H:homog} and~\ref{H:spatial-maximum} hold in the
+  range specified above. Choose and fix
+  \[
+    \frac1{1-\alpha_0}<r<\frac1\delta,\qquad
+    r'=\frac r{r-1},\qquad \theta=\alpha_0r',\qquad
+    a=1-\frac{\delta r}{2}.
+  \]
+  Define the explicit, nonsharp constants
+  \begin{equation}\label{E:higher-constants}
+    Z_\theta=\frac2{(1-\theta)(2-\theta)},\qquad
+    D_a=e^2(e/a)^{2a},\qquad
+    K=12M[\Gamma(1-\delta r)D_a]^{1/r}Z_\theta^{1/r'}.
+  \end{equation}
+  For the total-order coefficients $A_k(t)$ of Section~\ref{S:d1-upper},
+  \begin{equation}\label{E:higher-bound}
+    A_k(t)\le\frac{K^kt^{\beta k}}{(k!)^q}\quad(k\ge1),
+    \qquad \E u^2(t,x)\le\exp\{qK^{1/q}t^\kappa\}.
+  \end{equation}
+  These estimates hold for every $t > 0$ and $x \in \R^d$.
+\end{proposition}
+
+\begin{proof}
+  The interval for $r$ is nonempty because $\delta+\alpha_0 < 1$. Thus, $\delta
+  r < 1$, $\theta < 1$, and $1/2 < a < 1$. We use the source's noise
+  regularization from Chen~\cite{chen:author2026:time-dependency}*{(2.9),
+  (2.11), (2.23)--(2.24)}, as in Section~\ref{S:d1-upper}. Its nonnegative
+  temporal covariance is bounded by $|s_i-s_j|^{-\alpha_0}$, and its spatial
+  covariance on an edge $e$ is $\gamma_{\epsilon_e+\epsilon'_e}$, where
+  $\epsilon_e,\epsilon'_e > 0$ are the two endpoint noise widths. Indeed,
+  $p_{\epsilon_e}*p_{\epsilon'_e} = p_{\epsilon_e+\epsilon'_e}$; equal widths
+  give the source's $\gamma_{2\epsilon}$. Every such positive covariance width
+  is covered by Hypothesis~\ref{H:spatial-maximum}. In dimension three first
+  smooth the Green measures as prescribed on pp.~13--14 of that source.
+
+  Fix $m+n = 2k$, $k \ge 1$, and put $\Omega_{m,n} = [0,t]^m_ < \times[0,t]^n_
+  <$. Use the two separate roots and increments $h_l = s_l-s_{p(l)}$ of
+  Section~\ref{S:d1-upper}. For $D \in \Pi_k$, orient its pairs by increasing
+  block label and denote their opening and closing sets by $O_D,C_D$. Descending
+  integration of the vector increments gives
+  \[
+    S_D(h)\le M^k\prod_{i\in O_D}h_i\prod_{j\in C_D}h_j^{-\delta}
+    \le M^k(2t/k)^k H_D(h),\qquad
+    H_D(h)=\prod_{j\in C_D}h_j^{-\delta}.
+  \]
+  Indeed, before label $l$ is integrated, the remaining covariances have closing
+  labels at most $l$. At a closing label exactly its own pair depends on that
+  increment, as $\gamma_\epsilon(y_l+z)$; all other endpoints have smaller
+  labels. Hypothesis~\ref{H:spatial-maximum} removes this factor. At an opening
+  its pair is already removed and the integral is the Green mass $h_l$. This
+  proves the invariant in every dimension and for empty chains. Tonelli applies
+  by positivity. Finally, the $k$ opening increments sum to at most $2t$, so
+  ordinary arithmetic--geometric mean gives the second inequality. We have not
+  applied the low-$\alpha$ conclusion of Lemma~\ref{L:d1-spatial}.
+
+  Set $T_D(s) = \prod_{(i,j)\in D}|s_i-s_j|^{-\alpha_0}$. H\"older's inequality
+  on counting measure on $\Pi_k$ times Lebesgue measure on $\Omega_{m,n}$ gives
+  \begin{equation}\label{E:higher-holder}
+    \sum_D\int_{\Omega_{m,n}}H_DT_D\ud s
+    \le\left(\sum_D\int_{\Omega_{m,n}}H_D^r\ud s\right)^{1/r}
+    \left(\sum_D\int_{\Omega_{m,n}}T_D^{r'}\ud s\right)^{1/r'}.
+  \end{equation}
+  Both integrals are finite by the following computations. If the two chains
+  contain $k_1,k_2$ closing labels, then $k_1+k_2 = k$ and the simplex change to
+  increments has determinant one. The Dirichlet integral, including the unused
+  terminal gap with exponent zero, gives
+  \[
+    \int_{\Omega_{m,n}}H_D^r\ud s
+    =\frac{\Gamma(1-\delta r)^k t^{(2-\delta r)k}}
+    {\Gamma(1+m-\delta r k_1)\Gamma(1+n-\delta r k_2)}.
+  \]
+  To see the normalization, in a chain of length $m$ the $k_1$ closing
+  increments have Dirichlet parameter $1-\delta r$, the other increments have
+  parameter one, and the terminal gap has parameter one. Scaling gives
+  $t^{m-\delta r k_1}$. Iterating the beta integral gives the displayed Gamma
+  quotient. Empty chains contribute $\Gamma(1) = 1$. The two denominator
+  arguments are positive and have average $1+ak$. Log convexity of $\Gamma$
+  therefore bounds their product below by $\Gamma(1+ak)^2$. An elementary lower
+  bound makes the constant explicit:
+  \[
+    \Gamma(1+ak)\ge\int_{ak}^{ak+1}x^{ak}e^{-x}\ud x
+    \ge e^{-1}(a/e)^{ak}k^{ak}
+    \ge e^{-1}(a/e)^{ak}(k!)^a.
+  \]
+  Since $k \ge 1$, its square is at least $D_a^{-k}(k!)^{2-\delta r}$. Writing
+  $P_k = |\Pi_k|$, we obtain
+  \[
+    \sum_D\int_{\Omega_{m,n}}H_D^r\ud s
+    \le\frac{P_k[\Gamma(1-\delta r)D_a]^k
+    t^{(2-\delta r)k}}{(k!)^{2-\delta r}}.
+  \]
+  The sum $\sum_DT_D^{r'}$ is symmetric in all $2k$ time labels, because a
+  permutation bijects the pairings. On the full cube each pairing has integral
+  $(Z_\theta t^{2-\theta})^k$. Therefore,
+  \[
+    \sum_D\int_{\Omega_{m,n}}T_D^{r'}\ud s
+    =\frac{P_k(Z_\theta t^{2-\theta})^k}{m!n!}
+    \le\frac{P_k(Z_\theta t^{2-\theta})^k}{(k!)^2}.
+  \]
+  Here $m!n! \ge (k!)^2$ since $m+n = 2k$. Symmetry is used only for the pairing
+  sum, not for an individual diagram. Also, $P_k = \prod_{j=1}^k(2j-1) \le
+  2^kk!$ and $k^k \ge k!$. Combining these bounds with~\eqref{E:higher-holder}
+  and the opening estimate proves, uniformly in all regularization parameters,
+  \[
+    \sum_D\int_{\Omega_{m,n}}S_D T_D\ud s
+    \le\frac{\{4M[\Gamma(1-\delta r)D_a]^{1/r}
+    Z_\theta^{1/r'}\}^k t^{\beta k}}{(k!)^q}.
+  \]
+  Indeed, the time power is $1+(2-\delta r)/r+(2-\theta)/r' = 3-\delta-\alpha_0
+  = \beta$; the factorial power is $1+(2-\delta r)/r+2/r'-1 = 2-\delta = q$.
+  There are $2k+1 \le 3^k$ splits, giving the asserted $K$.
+
+  We now pass to the solution using the independent fixed-order construction in
+  Lemma~\ref{L:joint-fixed-order}, which applies under Hypothesis~\ref{H:homog}.
+  In dimension three, fix the noise smoothing first and send the Green smoothing
+  to zero. Smoothed spatial covariances are bounded and continuous. Products of
+  the finite Green measures converge weakly, with masses $\prod_lh_l$. At fixed
+  noise smoothing all covariance factors are bounded, so a constant times
+  $\prod_lh_l$ dominates the time integrals on bounded simplexes. The same
+  argument for mixed Green approximations gives a common joint covariance limit,
+  and hence the fixed-order $L^2$ Cauchy property. This is the inner limit of
+  the source's pp.~13--14, detailed in Proposition~\ref{P:low-alpha-upper}. Next
+  remove the noise smoothing using Lemma~\ref{L:joint-fixed-order}'s fixed-order
+  $L^2$ convergence. In dimension two only this latter limit is needed. At each
+  stage products converge in $L^1$, since
+  \[
+    \|YZ-Y'Z'\|_1
+    \le\|Y-Y'\|_2\|Z\|_2+\|Y'\|_2\|Z-Z'\|_2.
+  \]
+  Each split sum is finite and the bound is uniform. Thus, it passes to
+  $A_k(t)$; zero chains remain the constant one. These convergence inputs use
+  the standing assumptions, not $\alpha \le 1$.
+
+  Finally, Proposition~\ref{P:mixed} supplies the nonnegative full series under
+  these same hypotheses. Since $q > 1$, for $z \ge 0$,
+  \[
+    \sum_{k\ge0}\frac{z^k}{(k!)^q}
+    =\sum_{k\ge0}\left(\frac{z^{k/q}}{k!}\right)^q
+    \le\left(\sum_{k\ge0}\frac{z^{k/q}}{k!}\right)^q
+    =e^{qz^{1/q}}.
+  \]
+  Take $z = Kt^\beta$ and use $A_0 = 1$ and $\beta/q = \kappa$. This proves
+  Proposition~\ref{P:higher-transfer}.
+\end{proof}
+
+% This lemma discharges H:spatial-maximum only for its explicitly stated
+% isotropic Riesz ranges.
+\LeanMarker{L:higher-riesz}
+\begin{lemma}[Riesz spatial maxima]\label{L:higher-riesz}
+  Let $\gamma(x) = c|x|^{-\alpha}$, $c > 0$. In dimension three, for $1 < \alpha
+  < 2$, Hypothesis~\ref{H:spatial-maximum} holds with the optimal uniform
+  constant $M_3 = c2^{1-\alpha}/(2-\alpha)$. In dimension two, for $1 < \alpha <
+  3/2$, it holds with
+  \[
+    M_2=c\left\{4^\alpha+
+    \frac{2\alpha}{3/2-\alpha}4^{\alpha-3/2}\right\}.
+  \]
+\end{lemma}
+
+\begin{proof}
+  From Chen~\cite{chen:author2026:time-dependency}*{(2.5), p.~7}, the wave
+  measures are
+  \[
+    G_h^{(2)}(\ud y)=\frac{\mathbf1_{\{|y|<h\}}\ud y}
+    {2\pi\sqrt{h^2-|y|^2}},\qquad
+    G_h^{(3)}(\ud y)=\frac{\sigma_h(\ud y)}{4\pi h},
+  \]
+  where $\sigma_h$ is surface measure on the sphere of radius $h$. Both have
+  mass $h$ and satisfy $G_h(hA) = hG_1(A)$. Thus, the unsmoothed convolution is
+  $ch^{1-\alpha}F_d(z/h)$, where $F_d(w) = \int G_1^{(d)}(\ud
+  y)|y+w|^{-\alpha}$. In dimension three spherical coordinates give, for $\rho =
+  |w| > 0$,
+  \[
+    F_3(w)=\frac{(1+\rho)^v-|1-\rho|^v}{2v\rho},
+    \qquad v=2-\alpha\in(0,1).
+  \]
+  For $0 < \rho < 1$ this is the average of the convex function $f(s) =
+  (1+s)^{v-1}$ on $[-\rho,\rho]$. Its derivative has numerator
+  $\rho[f(\rho)+f(-\rho)]-\int_{-\rho}^\rho f(s)\ud s \ge 0$, by the endpoint
+  chord bound for a convex function. For $\rho > 1$, every distance
+  $\sqrt{1+\rho^2+2\rho u}$, $-1 \le u \le 1$, increases with $\rho$, so its
+  negative power decreases. The formula is continuous at $\rho = 1$ and at zero.
+  Its maximum is therefore $F_3(e_1) = 2^{1-\alpha}/(2-\alpha)$.
+
+  In dimension two we claim $G_1(B(w,R)) \le 2R^{3/2}$ for $0 < R \le 1/4$.
+  Rotate $w = (A,0)$, $A \ge 0$. If $A < 1/2$, the ball lies in $|y| < 3/4$,
+  where the density is at most $2/(\pi\sqrt7)$; its mass is at most
+  $2R^2/\sqrt7$. If $A \ge 1/2$, write $y = (x,v)$. On the ball $|v| \le R$ and
+  $x \ge 1/4$. Put $L = \sqrt{1-v^2}$. Inside the disk, $1-|y|^2 = (L-x)(L+x)$
+  with $L+x > 1$. Each horizontal slice has length at most $2R$, so integrating
+  $(L-x)^{-1/2}$ gives at most $2\sqrt{2R}$. The $v$ range has length at most
+  $2R$, giving mass at most $(2\sqrt2/\pi)R^{3/2} \le 2R^{3/2}$, as claimed.
+  Layer cake now gives
+  \[
+    F_2(w)\le4^\alpha+
+    \alpha\int_0^{1/4}R^{-\alpha-1}G_1(B(-w,R))\ud R
+    \le M_2/c.
+  \]
+  This includes centers outside the disk and is uniform in $w$.
+
+  Finally, Tonelli and the Gaussian convolution rule give
+  \[
+    \int G_{h,\eta}(\ud y)\gamma_\epsilon(y+z)
+    =\int p_{\epsilon+\eta}(w)(G_h*\gamma)(z-w)\ud w.
+  \]
+  Mass-one averaging preserves both supremum bounds, for all widths in
+  Hypothesis~\ref{H:spatial-maximum}. We justify the approximate identity used
+  for optimality. For $f(x) = |x|^{-\lambda}$ in $\R^j$, $0 < \lambda < j$, fix
+  $x \ne 0$. In the convolution $\int p_\epsilon(x-y)f(y)\ud y$, a small
+  neighborhood of $x$ gives convergence by continuity. On $|y| < |x|/2$ the
+  integral is bounded by a constant times
+  $\epsilon^{-j/2}e^{-|x|^2/(8\epsilon)}$, since $f$ is integrable on that ball.
+  On the remaining region outside the neighborhood of $x$, $f$ is bounded and
+  the Gaussian tail tends to zero. Thus, $p_\epsilon*f(x) \to f(x)$ for every $x
+  \ne 0$. In dimension three Fatou's lemma at a maximizing shift as
+  $\epsilon\downarrow0$, $\eta = 0$, now recovers the unsmoothed value; the
+  single singular point has zero sphere measure. Hence, no smaller uniform
+  constant is possible. This proves Lemma~\ref{L:higher-riesz}.
+\end{proof}
+
+\begin{corollary}[Riesz moment bounds]\label{C:higher-riesz}
+  For isotropic Riesz covariance $c|x|^{-\alpha}$, the bounds
+  in~\eqref{E:higher-bound} hold in dimension three for $1 < \alpha <
+  2-\alpha_0$, and in dimension two for $1 < \alpha < \min\{3/2,2-\alpha_0\}$,
+  with $M = M_d$ in~\eqref{E:higher-constants}.
+\end{corollary}
+
+\begin{proof}
+  These Riesz functions are nonnegative, homogeneous of degree $-\alpha$,
+  locally integrable since $\alpha < d$, and nonnegative definite. For the last
+  property, the identity
+  \[
+    |x|^{-\alpha}=\frac1{\Gamma(\alpha/2)}
+    \int_0^\infty s^{\alpha/2-1}e^{-s|x|^2}\ud s
+  \]
+  represents the covariance as a positive mixture of positive definite
+  Gaussians. To justify this distributionally, take a complex Schwartz function
+  $\varphi$, put $\widetilde{\varphi}(x) = \overline{\varphi(-x)}$, and set
+  $\psi = \varphi*\widetilde{\varphi}$. This is Schwartz and $\int
+  |x|^{-\alpha}|\psi(x)|\ud x < \infty$: local integrability controls the origin
+  and rapid decay controls infinity. Tonelli applied with $|\psi|$ therefore
+  proves absolute integrability of the mixture against $\psi$, so Fubini
+  applies. Each Gaussian has nonnegative integral against $\psi$, as follows
+  from its positive Fourier transform and the factor $|\widehat{\varphi}|^2$.
+  The mixture consequently has nonnegative integral against $\psi$. This proves
+  nonnegative definiteness as a tempered distribution. The stated ranges satisfy
+  $\alpha+\alpha_0 < 2$, and Lemma~\ref{L:higher-riesz} supplies the additional
+  spatial hypothesis with all Gaussian uniformities.
+  Proposition~\ref{P:higher-transfer} applies. This proves
+  Corollary~\ref{C:higher-riesz}.
+\end{proof}
+
+Another possible reduction would merge two neighboring wave kernels.
+No-go~\ref{P:nogo-10} explains why an unweighted convolution estimate
+cannot simply discard the covariance linking a merged vertex to its remote
+partner in a crossing diagram.
+
+
+\begin{proposition}[Obstructions to the spatial hypothesis]
+  \label{P:higher-obstructions}
+  In dimension two, Riesz covariance with $3/2 \le \alpha < 2$ fails
+  Hypothesis~\ref{H:spatial-maximum}. For every $1 < \alpha < 2$ there are
+  nonnegative, nonnegative definite homogeneous locally integrable covariance
+  functions in both dimensions two and three that fail it.
+\end{proposition}
+
+\begin{proof}
+  For the first claim set $h = 1$, $z = -e_1$, and $y =
+  e_1+\rho(\cos\phi,\sin\phi)$. On the wedge $0 < \rho < 1/2$, $2\pi/3 \le \phi
+  \le 4\pi/3$, we have $0 < 1-|y|^2 \le 2\rho$. Therefore,
+  \[
+    \int G_1^{(2)}(\ud y)c|y-e_1|^{-\alpha}
+    \ge\frac{c}{3\sqrt2}\int_0^{1/2}\rho^{1/2-\alpha}\ud\rho
+    =\infty.
+  \]
+  This includes logarithmic divergence at $\alpha = 3/2$. For the second claim
+  choose $a_1 = (1+\max\{2-\alpha,\alpha-1\})/2$ and $a_2 = \alpha-a_1$. Then $0
+  < a_1,a_2 < 1$ and $a_1+a_2/2 > 1$. The function $\gamma(x) =
+  c|x_1|^{-a_1}|x_2|^{-a_2}$, independent of $x_3$ in dimension three, is
+  locally integrable, tempered, and homogeneous of degree $-\alpha$. The
+  Gaussian mixture identity in the preceding proof applied separately to each
+  coordinate shows nonnegative definiteness; products of these Gaussians and the
+  constant function in the third coordinate are positive definite. More
+  explicitly, for the Schwartz autocorrelation $\psi$ used in the preceding
+  proof, choose $N > 1$ and bound $|\psi(x)| \le
+  C_N\prod_{j=1}^d(1+|x_j|)^{-N}$. Then $\int\gamma(x)|\psi(x)|\ud x < \infty$,
+  by the product of one-dimensional integrals and $a_1,a_2 < 1$. Tonelli with
+  $|\psi|$ and then Fubini justify the two Gaussian-mixture integrals against
+  $\psi$. Their integrands are nonnegative quadratic forms, proving the
+  assertion also for the covariance independent of $x_3$. With $u = 1-y_1$ and
+  then $y_2 = \sqrt{2u-u^2}\,w$, Tonelli gives
+  \[
+    \int G_1^{(2)}(\ud y)\gamma(y-e_1)
+    =\frac{c B((1-a_2)/2,1/2)}{2\pi}
+    \int_0^2u^{-a_1}(2u-u^2)^{-a_2/2}\ud u=\infty.
+  \]
+  The beta factor is finite and the integral diverges at zero. The projection of
+  $G_1^{(3)}$ onto its first two coordinates is $G_1^{(2)}$: the two sphere
+  graphs each have surface Jacobian $(1-|y|^2)^{-1/2}$, divided by $4\pi$.
+  Hence, the same divergence holds in dimension three. For radial Riesz
+  covariance, the approximate-identity argument in Lemma~\ref{L:higher-riesz}
+  applies. For the product covariance, Gaussian factorization and Tonelli give
+  \[
+    (p_\epsilon*\gamma)(x)
+    =c\prod_{j=1}^2
+    (p_\epsilon^{(1)}*|\,\cdot\,|^{-a_j})(x_j).
+  \]
+  In dimension three the third coordinate integrates to one. Each factor
+  converges when $x_j \ne 0$ by the same argument with dimension one and
+  exponent $a_j < 1$. This does not require the product kernel to be bounded at
+  infinity; it is unbounded along its singular axes. The singular sets have zero
+  shifted Green measure in both dimensions. Fatou with $\eta = 0$ implies that
+  the smoothed convolution tends to infinity in lower limit as
+  $\epsilon\downarrow0$. Even if both widths must be positive, take $\eta =
+  \epsilon$ and use their sum in the Gaussian identity above. Thus, no uniform
+  $M$ exists. This proves Proposition~\ref{P:higher-obstructions}.
+\end{proof}
+
+\begin{remark}[Calibrations and scope]\label{R:higher-calibrations}
+  The printed first-moment statement and unconditional comparison are
+  Theorem~\ref{T:first} and Proposition~\ref{P:Jensen}. Under the additional
+  spatial hypothesis, Cauchy--Schwarz and Proposition~\ref{P:higher-transfer}
+  give $\E u(t,x) \le \exp\{qK^{1/q}t^\kappa/2\}$, and hence $2L_* \le qK^{1/q}$
+  if the intended first-moment lower bound holds. No sharp first- or
+  second-moment constant is identified. As $\alpha_0\downarrow0$, the exponent
+  tends to $(4-\alpha)/(3-\alpha)$, consistently with the Chen--Hu static
+  calibration in Remark~\ref{R:d1-comparisons}; no interchange of limits is
+  claimed. For the Riesz cases here, the Skorohod comparison of
+  Balan--Conus~\cite{balan.conus:16:intermittency}*{Theorem~2.1(b), p.~1492;
+  p.~1490} applies with $a = \alpha < d$, $\alpha < 2$, and $H = 1-\alpha_0/2 >
+  1/2$. Its exponent $(2H+2-a)/(3-a)$ is $\kappa$. This comparison is restricted
+  to those Riesz cases, with a different solution concept and covariance
+  normalization; it is not an input here, and no equality with the
+  Balan--Chen--Wang second-moment asymptotics is inferred. The obstructions
+  above concern only the spatial supremum, not existence, moment finiteness, or
+  failure of the target time scale. In particular, arbitrary homogeneous
+  covariances remain outside this conditional argument, even when
+  $\alpha+\alpha_0 < 2$.
+\end{remark}
+

@@ -1,0 +1,361 @@
+{
+  "review_record_id": "RP064",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS_WITH_NOTES",
+  "native_confidence": "high",
+  "source_revision": "66f2fc404fbaa855fc1dcbb166fce3f21cf66e59",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_white_evaluation.tex",
+  "source_binding_sha256": "3c03eca420c96fd519b73b1fbd03876e5f4490b99d65c655f19b106a99b1bfde",
+  "public_report_sha256": "d6a13f70d3492f50c0b2c926237af2e1f6e4ef5bb97bf326c4029544e4a640bf",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_ALL_ASSIGNED_PUBLIC_RECONSTRUCTIONS_CHECKED_ROOT_REVIEWS",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:white-cdf-square": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1",
+        "R2",
+        "R3"
+      ]
+    },
+    "P:white-spatial-energy": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "T:white-moment-bounds": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "C:white-relative-width": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:white-cdf-square",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (old proof LF 26–56).",
+        "new_reading": "COMPLETE (new proof LF 26–71).",
+        "public_reconstruction": "COMPLETE.",
+        "argument_preservation": "PRESERVED.** The new roadmap and step headings are organizational. The only new mathematical sentence (“Since \\(\\rho'=2ff'\\), dividing … by two gives the cross term with a positive sign,” new LF ≈ 53–54) restates the already-implicit derivation of step 4.",
+        "new_explanations_raw": "JUSTIFIED.** The sentence is verified above: the integrated derivative identity yields \\(\\int\\rho'(1-2\\mathsf F)=2A\\), and \\(\\rho'=2ff'\\) gives \\(\\int f'f(1-2\\mathsf F)=A\\). The only phrasing caveat is that “the cross term with a positive sign” refers to the identity \\(\\int f'f(1-2\\mathsf F)=+A\\); inside the final expansion the corresponding term is \\(-2zA\\). The final displayed equation makes the sign unambiguous, so this is not a mathematical defect."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 7,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "ab0e980d9ef0178a15c9cfc2079b3492e5ef605d1e8bc38186baed3a5f6639a7",
+      "mathematical_check": "The public proof reconstructs the realH1 locallyAC representative throughprimitive/weak-derivative-zero arguments, withpatching. It correctlyusesrho=f^2 locallyAC,rhoprime=2ffprime inL1 andunitL1mass toderive finitezerotaillimits,boundedness andA finite. Its additional Lip_loc-type wording isfalse/overstrong(R1) butnoneoftheargumentrequiresLipschitz regularity. ContinuousFprime=rho, endpoints0/1 andboundedF require neitherpositivef norstrictCDFincrease. The reportcomputes theL1 derivativeofrho(1-2F), vanishingtails andPOSITIVEcrossintegral intffprime(1-2F)=A, then uses theCORRECTP(y)=y-2y^2+(4/3)y^3 antiderivative toobtain intf^2(1-2F)^2=1/3. A laterarithmetic expansionofP1 isfalse(R2); thecorrectpolynomial/derivative/endpoint calculation isalreadypublic. AllsquaretermsareL2/crossproductL1, yielding b-2zA+z^2/3>=0. Source iscorrect withAC only.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        17,
+        24
+      ],
+      "old_proof_lf": [
+        26,
+        56
+      ],
+      "old_statement_sha256": "13cb0890db52ed517591a1adc7b7d28dd69813bc5777ccbd0cf74eda49a97afa",
+      "old_proof_sha256": "a66b9940ad6cee15180bc33a420467e7b8f8c5af7e6862d3674f5ade67e8dc2f",
+      "new_statement_lf": [
+        17,
+        24
+      ],
+      "new_proof_lf": [
+        26,
+        71
+      ],
+      "new_statement_sha256": "13cb0890db52ed517591a1adc7b7d28dd69813bc5777ccbd0cf74eda49a97afa",
+      "new_proof_sha256": "a1434f931b82053ec7557c00fbf60e94760273437614c49dea0f11834033e1e1"
+    },
+    {
+      "proof_id": "P:white-spatial-energy",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (old proof LF 73–105).",
+        "new_reading": "COMPLETE (new proof LF 88–133).",
+        "public_reconstruction": "COMPLETE.",
+        "argument_preservation": "PRESERVED.**",
+        "new_explanations_raw": "JUSTIFIED.** The added roadmap and step headings are organizational. The added sentence “The coefficient is covariance mass \\(c\\) in the physical pairing, not a noise coefficient of size \\(c\\)” is justified by the module preamble: “The parameter \\(c\\) is covariance mass; the coefficient of unit noise would be \\(\\sqrt c\\).” Consequently \\(A_{\\mathrm{sp}}=cA\\) uses \\(c\\), while the moment bounds scale as \\(\\sqrt c\\)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 71,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "a5871143a67c9366adbc66b2b2ee15a92d31373d582884939db8bcfefef720b9",
+      "mathematical_check": "The reportsubstitutesz3A toderive3A^2<=b, checksA,b positiveforunitrealH1profiles andobtainsA/sqrtb<=1/sqrt3. The sechfamilyf_l=sqrt(l/2)sech(lx), derivative andt=tanh(lx) substitution independentlygiveunitnorm,A=l/3,b=l^2/3, so theratioattainsc/sqrt3. The actualDiracphysicalpairing iscintf^4, not|x|^-1 or aFouriernormalizationchange. Completingtheenergy square givescA-b/2<=c^2/6-(3/2)(A-c/3)^2, attainedat l=c>0. Atc0theenergyapproaches0 throughunitf_l,l→0, withnozero-scaleunitvector. FullH1analyticprofiles aredistinguishedfromcompactstochasticcontrols,andconditionalLean deductions arenotusedtoreplace CDF/integral/attainment proofs orreverified ascertificates.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        64,
+        71
+      ],
+      "old_proof_lf": [
+        73,
+        105
+      ],
+      "old_statement_sha256": "1fcfa3ce744e16767316a03cf9187145c3c9160c4c15fdd482ea7ef55c81665b",
+      "old_proof_sha256": "ab564dfb61e44b9ae0551c27269ad3e77f0f673aa5710619bb2d150c978dced4",
+      "new_statement_lf": [
+        79,
+        86
+      ],
+      "new_proof_lf": [
+        88,
+        133
+      ],
+      "new_statement_sha256": "1fcfa3ce744e16767316a03cf9187145c3c9160c4c15fdd482ea7ef55c81665b",
+      "new_proof_sha256": "4cc63c9e555aa29995f1b701b14949dacc95e2db3ec256ea8d7b504130912510"
+    },
+    {
+      "proof_id": "T:white-moment-bounds",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (old proof LF 125–139).",
+        "new_reading": "COMPLETE (new proof LF 153–167).",
+        "public_reconstruction": "COMPLETE.",
+        "argument_preservation": "PRESERVED.** The new proof text appears identical to the old proof text (only line numbers shifted); no new explanatory assertions were inserted.",
+        "new_explanations_raw": "JUSTIFIED.** No new explanatory sentence is added in this proof; the unchanged argument is internally justified as recomputed above."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 165,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "ac978cc18f318e75c26fe9a5eaaee981e6440a83c58865616b0f2af0fceac15f",
+      "mathematical_check": "The report explicitlyinstantiatesalpha=d1,q3,k2,m3/2, evaluatesF0(z) fromthestatedcommonenergybracket, usesE_sp=c^2/6 andcomputesF0(E_sp)=sqrtc/(3sqrt2), then2^mF0=(2/3)sqrtc. KeepingM_a andK0 ORIGINALtemporalnormalizations gives exactlower(2/3)sqrt(c/M_a) andupper(2/3)sqrt(cK0), timeexponent(3-a)/2, withpositivefiniteGammaarguments for0<a<1. Thec0freecanonicalsolution giveszero constantandbounds. Thesearebounds,not numericalevaluationofthefullintrinsicsupremum, andthecovariancemass/noiseamplitude distinction isretained.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        112,
+        123
+      ],
+      "old_proof_lf": [
+        125,
+        139
+      ],
+      "old_statement_sha256": "c7b380d3487d74ed04cf236a2b07284fa18f0724a2b24e109aba042f025465f6",
+      "old_proof_sha256": "bc6a490670ce2d31624f79fd4fa8ed4e106363fb256d70e2ca6fd1a1bc8a4fea",
+      "new_statement_lf": [
+        140,
+        151
+      ],
+      "new_proof_lf": [
+        153,
+        167
+      ],
+      "new_statement_sha256": "c7b380d3487d74ed04cf236a2b07284fa18f0724a2b24e109aba042f025465f6",
+      "new_proof_sha256": "bc6a490670ce2d31624f79fd4fa8ed4e106363fb256d70e2ca6fd1a1bc8a4fea"
+    },
+    {
+      "proof_id": "C:white-relative-width",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (old proof LF 155–176).",
+        "new_reading": "COMPLETE (new proof LF 183–204).",
+        "public_reconstruction": "COMPLETE.",
+        "argument_preservation": "PRESERVED.** The new proof text appears identical to the old proof text (only line numbers shifted); no new explanatory assertions were inserted.",
+        "new_explanations_raw": "JUSTIFIED.** No new explanatory sentence is added; the existing argument is recomputed and verified above."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 257,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "3199d104765ae9b0514e5de545abfaa9cdcc579d7774712631231f084d9b8b6a",
+      "mathematical_check": "The public ratio cancelsc>0 to sqrt(K0 M_a), thenuses thecorrectduplication atx=(1+a)/2 andrecurrence at(1-a)/2 toderiveK0M_a=sqrtpi/[2Gamma(1+a/2)Gamma((3-a)/2)]. It setspositive x,y withx+y5/2 andexplicitGamma-integral L2functions; theirnormsareGamma(x),Gamma(y),innerproductGamma(5/4). Cauchy-Schwarz,positiveinversion andincreasingsqrt giveexactuniformrelativewidthbound,equalityata1/2whenx=y. OnlytheRATIOofboundformulas exchangesGammaarguments undera→1-a; thisdoesnot evaluateC2ortransferanextra symmetrytoitsvalue/timeexponent. No temporalendpoint/static-limitinterchange,white-timeorSkorohod/sourceconstant substitution ismade.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        145,
+        153
+      ],
+      "old_proof_lf": [
+        155,
+        176
+      ],
+      "old_statement_sha256": "2115d45fa13c74f7364dfc0be369df981794bd10eef696aa201aa16a5f43093f",
+      "old_proof_sha256": "345bdb0776dfff79dca07119157907290a8000462ade7c83aa2ee70d014f7ff2",
+      "new_statement_lf": [
+        173,
+        181
+      ],
+      "new_proof_lf": [
+        183,
+        204
+      ],
+      "new_statement_sha256": "2115d45fa13c74f7364dfc0be369df981794bd10eef696aa201aa16a5f43093f",
+      "new_proof_sha256": "345bdb0776dfff79dca07119157907290a8000462ade7c83aa2ee70d014f7ff2"
+    }
+  ],
+  "mathematical_checks": [
+    "The public proof reconstructs the realH1 locallyAC representative throughprimitive/weak-derivative-zero arguments, withpatching. It correctlyusesrho=f^2 locallyAC,rhoprime=2ffprime inL1 andunitL1mass toderive finitezerotaillimits,boundedness andA finite. Its additional Lip_loc-type wording isfalse/overstrong(R1) butnoneoftheargumentrequiresLipschitz regularity. ContinuousFprime=rho, endpoints0/1 andboundedF require neitherpositivef norstrictCDFincrease. The reportcomputes theL1 derivativeofrho(1-2F), vanishingtails andPOSITIVEcrossintegral intffprime(1-2F)=A, then uses theCORRECTP(y)=y-2y^2+(4/3)y^3 antiderivative toobtain intf^2(1-2F)^2=1/3. A laterarithmetic expansionofP1 isfalse(R2); thecorrectpolynomial/derivative/endpoint calculation isalreadypublic. AllsquaretermsareL2/crossproductL1, yielding b-2zA+z^2/3>=0. Source iscorrect withAC only.",
+    "The reportsubstitutesz3A toderive3A^2<=b, checksA,b positiveforunitrealH1profiles andobtainsA/sqrtb<=1/sqrt3. The sechfamilyf_l=sqrt(l/2)sech(lx), derivative andt=tanh(lx) substitution independentlygiveunitnorm,A=l/3,b=l^2/3, so theratioattainsc/sqrt3. The actualDiracphysicalpairing iscintf^4, not|x|^-1 or aFouriernormalizationchange. Completingtheenergy square givescA-b/2<=c^2/6-(3/2)(A-c/3)^2, attainedat l=c>0. Atc0theenergyapproaches0 throughunitf_l,l→0, withnozero-scaleunitvector. FullH1analyticprofiles aredistinguishedfromcompactstochasticcontrols,andconditionalLean deductions arenotusedtoreplace CDF/integral/attainment proofs orreverified ascertificates.",
+    "The report explicitlyinstantiatesalpha=d1,q3,k2,m3/2, evaluatesF0(z) fromthestatedcommonenergybracket, usesE_sp=c^2/6 andcomputesF0(E_sp)=sqrtc/(3sqrt2), then2^mF0=(2/3)sqrtc. KeepingM_a andK0 ORIGINALtemporalnormalizations gives exactlower(2/3)sqrt(c/M_a) andupper(2/3)sqrt(cK0), timeexponent(3-a)/2, withpositivefiniteGammaarguments for0<a<1. Thec0freecanonicalsolution giveszero constantandbounds. Thesearebounds,not numericalevaluationofthefullintrinsicsupremum, andthecovariancemass/noiseamplitude distinction isretained.",
+    "The public ratio cancelsc>0 to sqrt(K0 M_a), thenuses thecorrectduplication atx=(1+a)/2 andrecurrence at(1-a)/2 toderiveK0M_a=sqrtpi/[2Gamma(1+a/2)Gamma((3-a)/2)]. It setspositive x,y withx+y5/2 andexplicitGamma-integral L2functions; theirnormsareGamma(x),Gamma(y),innerproductGamma(5/4). Cauchy-Schwarz,positiveinversion andincreasingsqrt giveexactuniformrelativewidthbound,equalityata1/2whenx=y. OnlytheRATIOofboundformulas exchangesGammaarguments undera→1-a; thisdoesnot evaluateC2ortransferanextra symmetrytoitsvalue/timeexponent. No temporalendpoint/static-limitinterchange,white-timeorSkorohod/sourceconstant substitution ismade."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "proof_id": "L:white-cdf-square",
+      "classification": "report-only overstatement of local regularity",
+      "old": "rho inLip_loc-typeACL",
+      "new": "rho is locally absolutelycontinuous, withrhoPrime=2ffPrime inL1; localLipschitz regularity isnotassumed orneeded",
+      "contrary_calculation": "Choose realcompact cutoffchi=1near0 andnormalizef=chi(x)(1+|x|^(3/4)) toL2unitnorm. Thenf inH1 becausefprime behaveslike|x|^-1/4 andits squareisintegrable, butrhoPrime behaveslikepositiveconstant*|x|^-1/4, sorho isnotlocallyLipschitz.",
+      "disposition": "Rawreportunchanged. Its actualtaillimit/CDF/integrationbyparts calculations uselocallyAC withL1derivative, which itcorrectly supplies; source states preciselythat, so no sourcecorrection ormissingcore.",
+      "report_lf": 15
+    },
+    {
+      "id": "R2",
+      "proof_id": "L:white-cdf-square",
+      "classification": "false report-only redundant endpoint arithmetic",
+      "old": "P1-P0=1-3/3+4/3=1/3",
+      "new": "P1-P0=1-2+4/3=1/3",
+      "contrary_calculation": "Thewritten1-3/3+4/3 is4/3, not1/3. EarlierpublicStep5has thecorrectpolynomialP=y-2y^2+(4/3)y^3,derivative(1-2y)^2 andresult1/3; thus theactualneededantiderivativecalculationispresent independentlyofthiswrongredundantcheck.",
+      "disposition": "Rawreportretainedasfalse; no sourceedit orcriticalmissingCDFconstant.",
+      "report_lf": 65
+    },
+    {
+      "id": "R3",
+      "proof_id": "L:white-cdf-square",
+      "classification": "correct cross-integral sign; reviewer clarity caveat only",
+      "disposition": "The source newgloss referstotheintegral intffPrime(1-2F)=+A; the finalsquarehascoefficient-2zA. Botharecorrectandunambiguousinthepublicformulas, so no manuscriptwordingcorrectionisrequired.",
+      "report_lf": 63
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 19391,
+      "sha256": "d6a13f70d3492f50c0b2c926237af2e1f6e4ef5bb97bf326c4029544e4a640bf"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 5420,
+      "sha256": "22654c36e0fb56da850c778c9fc7e292f0f6c4c990a790b343b8adaa4393cd13"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 6167,
+      "sha256": "5a571cf349e4c8e7969002f48f4c019aa72fcecb902662fa37ce7ff3f6bb849c"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 4187,
+      "sha256": "3c03eca420c96fd519b73b1fbd03876e5f4490b99d65c655f19b106a99b1bfde"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 8476,
+      "sha256": "d4acb60ee53cd7c525bb337e70297a22c985e6166a4014b19fb20cd0c2f47399"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 4492,
+      "sha256": "88639ea8512f3fc8188c1e19ab44bf553d6e0bcbb83a1a2fcc4afff1708d97ea"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 8612,
+      "sha256": "a42061c6582230d5684122accc77bf91a16ef482ce9501c0437ae4ae31002688"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 9675,
+      "sha256": "96357900b7f1b9c838ff1f9cc767ef2bee8380766ce13e6c875b2e403e0b2e50"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-integrated_temporal_equilibrium-baseline.txt",
+      "bytes": 4281,
+      "sha256": "412c7cb1e28118adbab40d8ef4b59bd815791c48a92a389efbd14202578c690f"
+    },
+    {
+      "path": "inputs/context-P-spatial-energy-map.txt",
+      "bytes": 22407,
+      "sha256": "ed2f96133f5e969ba4d24fca051da4fcfcbf1377d6d18aa6a5e8385b66e5a12f"
+    },
+    {
+      "path": "inputs/context-C-intrinsic-spatial-bracket.txt",
+      "bytes": 14682,
+      "sha256": "ac567a53fecc2c084906445567525ab8e2c4221b6728f936c96a8ced855096b6"
+    },
+    {
+      "path": "inputs/context-T-intrinsic-second-moment.txt",
+      "bytes": 21834,
+      "sha256": "820990dec2c6d3caa7c670b26836ed004c74c12028ce3f68ca91751317689084"
+    }
+  ],
+  "input_identity_checks": "All delivered source/context payload hashes and WHOLE_FILE pinned Git byte identities verified; every complete OLD/NEW statement/proof independently checked by LF/bytes/SHA. Complete target text read with baseline comparisons and genuine needed stated inputs, not merely delta QA.",
+  "source_currentness": {
+    "covered_launch_revision": "66f2fc404fbaa855fc1dcbb166fce3f21cf66e59",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "limit": "Only this exact assigned source versuscdde and supplied context; no older report rebinding, unexamined successor or whole-book seal."
+  },
+  "read_limits": [
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority"
+}

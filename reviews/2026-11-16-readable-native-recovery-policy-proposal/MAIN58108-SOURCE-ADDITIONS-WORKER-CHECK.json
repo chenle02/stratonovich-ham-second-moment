@@ -1,0 +1,82 @@
+{
+  "recorded_utc": "2026-11-16T14:06:51.385564+00:00",
+  "requested_scope_receipt": "58c68f237806",
+  "source_revision": "58108ca3065cb408eb13b06cc772fe71de546535",
+  "module_sha256": "85a7d3e9e2402a1e763391dea691d1b0c1e3f877974395f3939a59f5fd066901",
+  "role": "Bounded read-only worker source/application and wording audit; not new independent scientific review or main-file reread",
+  "pinned_external_source": {
+    "path": "sources/chen-2026-author/aap-chen-2025.pdf",
+    "edition": "Xia Chen author manuscript, retrieved2026-10-26,64pages; not arXivv1",
+    "sha256": "5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c",
+    "actual_rendered_pages_inspected": [
+      1,
+      3,
+      13
+    ],
+    "source_identity_checked_on_title_page": true,
+    "images": [
+      {
+        "page": 1,
+        "sha256": "25d00b628a3be242631abad7631606a39942c22435cee9744aa4acfdddb7f98d"
+      },
+      {
+        "page": 3,
+        "sha256": "3252fe3a66aa0a6f91d8376b846faec6fa3ac6d58e92e397206e7669edd5709f"
+      },
+      {
+        "page": 13,
+        "sha256": "c03eec57c17fb244a92121d115044571e98556c83f6149ce73c65f43000e7514"
+      }
+    ],
+    "other_pages_or_entire_source_image_review": false
+  },
+  "checks": [
+    {
+      "id": "A",
+      "targets": [
+        "L:crude-corrected",
+        "L:vertex-crude"
+      ],
+      "source_equation_pinpoints": [
+        {
+          "equation": "1.5",
+          "printed_PDF_page": 3
+        },
+        {
+          "equation": "2.24",
+          "printed_PDF_page": 13
+        }
+      ],
+      "source_fidelity_classification": "VERIFIED",
+      "assessment": "SUPPORTED",
+      "source_content": "Condition1.5 is integral (1+|xi|^2)^(-(2-alpha0)/2) dmu finite. Equation2.24 defines gamma0_delta by Gamma(alpha0)^(-1) times integral0..delta^(-1) exp(-lambda|u|)lambda^(alpha0-1)dlambda, and the heat convolution gamma_epsilon.",
+      "application": "Hhomog gives nonnegative Radon spectral measure with ballmassV*r^alpha. For V>0 radial integration reduces condition1.5 to alpha*V integral0..infinity r^(alpha-1)(1+r^2)^(-(2-alpha0)/2)dr. Near0 alpha>0 suffices; infinity exponent alpha+alpha0-3 is <-1. Zero measure is trivial. No spectral density is assumed. Rsourcecase2-time-shift(iii) proves Gaussian-weighted finite mass directly by the same radial ballmass formula.",
+      "hypothesis_matrix": {
+        "dimension": "admissible1,2,3",
+        "noise": "fractional temporal a0 in(0,1), homogeneous nonnegative positive-definite tempered Radon spatial covariance",
+        "spatial_type": "measure/distribution permitted; authorp13 explicitly includes delta covariance in d1",
+        "spectral_normalization": "Gamma=integral exp(i xi.x)dmu, original amplitude retained",
+        "use": "spectral integrability and regularization definitions only",
+        "not_certified": "Theorem1.1 entire proof, full solution construction, all sourcepages or source-normalization correction"
+      }
+    },
+    {
+      "id": "B",
+      "target": "L:joint-fixed-order",
+      "assessment": "SUPPORTED",
+      "working": "For positive delta, kappa_delta from E:pairing-source-covariance and gamma0_delta from source2.24 have identical normalized Laplace prefixes. Off r=0 the full Gamma integral equals |r|^(-alpha0), so full minus prefix at eta is exactly K_(1/eta) from the earlier tail definition. No equality of infinite values on the time diagonal or newly constructed coupled-noise family is claimed."
+    },
+    {
+      "id": "C",
+      "target": "T:full-upper Step2",
+      "assessment": "SUPPORTED",
+      "working": "The finite kept interval sum with weights sigma_I and static heat fields is precisely the Step1 interval model. u_J,epsilon is its terminal-Wick series; u_fT,J,epsilon is its compact-data phase position. Applying E:interval-phase-bound to v=(f_T,0) yields the final inequality: positionL2^2<=phase_norm^2, datum phase_norm^2=||f_T||2^2<=volume(B_(T+2)) because0<=f_T<=1 and velocity0. This retains finiteJ/positiveepsilon identification before source limits.",
+      "qualifiers": "The notation for f_T is explicitly said to be chosen below, then its support/plateau is specified before its estimates. F_J denotes the kept family. No solution uniqueness, samplewise uncountable event or source/time limit exchange is added."
+    }
+  ],
+  "all_requested_groups_supported": true,
+  "required_source_edit": false,
+  "unprinted_no_regularized_noise_shortcut_adopted": false,
+  "wholebook_grade_sourceadoption_R_F_release": false,
+  "MAIN_finality": "Still provisional, no review packet or provider launch authorized by this audit."
+}

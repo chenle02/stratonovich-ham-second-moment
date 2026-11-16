@@ -1,0 +1,115 @@
+\section{The temporal equilibrium density}
+\label{S:temporal-equilibrium}
+
+The density in Lemma~\ref{L:temporal-equilibrium} is the classical interval
+Riesz equilibrium density. Its probability-normalized form on $[-1,1]$ is
+recalled by Calef and Hardin~\cite{calef.hardin:source2008:riesz}*{p.~1}.
+We prove the potential identity with the normalization used here.
+
+We use Euler's function $\Gamma_E(x) = \int_0^\infty u^{x-1}e^{-u}\ud u$, $x >
+0$, and $\operatorname{Beta}(x,y) = \int_0^1t^{x-1}(1-t)^{y-1}\ud t$, $x,y > 0$.
+Both integrals are positive and finite.
+
+\LeanMarker{L:equilibrium-gamma-beta}
+\begin{lemma}[Gamma and Beta identities]\label{L:equilibrium-gamma-beta}
+  For positive arguments,
+  \begin{align*}
+    \Gamma_E(x+1)&=x\Gamma_E(x),\\
+    \operatorname{Beta}(x,y)
+    &=\frac{\Gamma_E(x)\Gamma_E(y)}{\Gamma_E(x+y)},\\
+    \Gamma_E(2x)
+    &=\frac{2^{2x-1}\Gamma_E(x)\Gamma_E(x+1/2)}{\sqrt\pi}.
+  \end{align*}
+\end{lemma}
+
+\begin{proof}
+  Integration by parts gives the recurrence, with vanishing boundary terms. In
+  the positive product Gamma integral, use $(u,v) = (Rt,R(1-t))$, with Jacobian
+  $R$; Tonelli gives the Beta--Gamma identity. For the last identity, symmetry,
+  then $t = (1+v)/2$ and $v^2 = w$, give $\operatorname{Beta}(x,x) =
+  2^{1-2x}\operatorname{Beta}(1/2,x)$. Also $\Gamma_E(1/2) = \int_\R e^{-z^2}\ud
+  z = \sqrt\pi$: the substitution $u = z^2$ gives the first equality, and
+  squaring the positive Gaussian integral and using polar coordinates gives
+  $2\pi\int_0^\infty re^{-r^2}\ud r = \pi$. Substituting these into the
+  Beta--Gamma identity proves duplication. This proves
+  Lemma~\ref{L:equilibrium-gamma-beta}.
+\end{proof}
+
+\LeanMarker{L:temporal-equilibrium}
+\begin{lemma}[Exact potential and mass]\label{L:temporal-equilibrium}
+  For $0 < a < 1$ put $r = (1-a)/2$ and, for $0 < t < 1$,
+  \begin{equation}\label{E:temporal-equilibrium-density}
+    f_a(t)=\frac{[t(1-t)]^{-r}}{\Gamma_E(r)\Gamma_E(1-r)}.
+  \end{equation}
+  This positive function belongs to $L^1(0,1)\cap L^2(0,1)$, and
+  \begin{align}
+    \int_0^1|s-t|^{-a}f_a(t)\ud t&=1
+    &&\text{for every }s\in[0,1],\label{E:temporal-equilibrium-potential}\\
+    M_a:=\int_0^1f_a(t)\ud t
+    &=\frac{\Gamma_E((1+a)/2)}
+    {\Gamma_E(1+a)\Gamma_E((1-a)/2)}>0.
+    \label{E:temporal-equilibrium-mass}
+  \end{align}
+\end{lemma}
+
+\begin{proof}
+  We first justify the positive series used in the integral calculation. We
+  compute the two halves of the potential through an incomplete Beta integral,
+  treat the endpoints directly, and then compute the mass and integrability.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We justify the positive binomial expansion.
+  The positive binomial series $(1-z)^{-p} = \sum_{n\ge0}(p)_nz^n/n!$, $p > 0$,
+  $0 \le z < 1$, follows directly as follows. Its coefficient ratio gives
+  uniform convergence on compact subintervals, including for its derivative.
+  Termwise differentiation gives $(1-z)y' = py$, $y(0) = 1$; hence $(1-z)^py$ is
+  constant one. Here $(p)_0 = 1$, $(p)_n = p(p+1)\cdots(p+n-1)$. All terms used
+  below are nonnegative, so Tonelli applies.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We compute the potential at interior points and
+  endpoints.
+  For $0 < s < 1$ split the integral of $|s-t|^{2r-1}[t(1-t)]^{-r}$ into left
+  and right parts. In the left part, $t = su$ gives
+  \begin{align*}
+    L(s)
+    &=s^r\int_0^1(1-u)^{2r-1}u^{-r}(1-su)^{-r}\ud u\\
+    &=\operatorname{Beta}(1-r,2r)s^r
+    \sum_{n\ge0}
+    \frac{(r)_n(1-r)_ns^n}{(1+r)_n n!}.
+  \end{align*}
+  The Beta ratio follows from the Gamma recurrence. Since $(r)_n/(1+r)_n =
+  r/(r+n)$, expanding the incomplete Beta integral gives
+  \[
+    L(s)=r\operatorname{Beta}(1-r,2r)B_s(r,r),\qquad
+    B_s(r,r)=\int_0^s u^{r-1}(1-u)^{r-1}\ud u.
+  \]
+  Expanding $(1-u)^{r-1}$ in $B_s(r,r)$ gives coefficient $(1-r)_n/n!$ and
+  integral $s^{r+n}/(r+n)$. Multiplication by $r\operatorname{Beta}(1-r,2r)$
+  therefore gives exactly the coefficients of $L(s)$.
+  Reflection makes the right part $L(1-s)$, while symmetry gives
+  $B_s(r,r)+B_{1-s}(r,r) = \operatorname{Beta}(r,r)$. The full integral is
+  therefore $r\operatorname{Beta}(1-r,2r)\operatorname{Beta}(r,r) =
+  \Gamma_E(r)\Gamma_E(1-r)$. All integrals are finite because $-r > -1$ and
+  $2r-1 > -1$. At $s = 0$ the integral is directly $\operatorname{Beta}(r,1-r) =
+  \Gamma_E(r)\Gamma_E(1-r)$; $s = 1$ follows by reflection. This proves
+  \eqref{E:temporal-equilibrium-potential}, including the endpoints without a
+  limiting argument there.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We verify both integrability classes and the
+  stated mass.
+  Integrability and square integrability follow from $-r > -1$ and $-2r = a-1 >
+  -1$. Finally,
+  \[
+    M_a=
+    \frac{\operatorname{Beta}(1-r,1-r)}
+    {\Gamma_E(r)\Gamma_E(1-r)}
+    =\frac{\Gamma_E(1-r)}{\Gamma_E(2-2r)\Gamma_E(r)},
+  \]
+  which is~\eqref{E:temporal-equilibrium-mass}. Its time mass has not been
+  renormalized. This proves Lemma~\ref{L:temporal-equilibrium}.
+\end{proof}

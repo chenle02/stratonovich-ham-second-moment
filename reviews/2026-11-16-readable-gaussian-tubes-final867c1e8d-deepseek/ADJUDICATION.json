@@ -1,0 +1,571 @@
+{
+  "review_record_id": "RP059",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "867c1e8de1bbf47076f1187992f6cf3d921a184f",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_gaussian_tubes.tex",
+  "source_binding_sha256": "f49aa3b353aa31dd58fcd71a6716d317d85eb6faad8bba6843e101a434fe2374",
+  "public_report_sha256": "01bab0c7b750ea4bfd9a22be097d598229d48529323bf022bb1c5bb20e72f570",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_ALL_ASSIGNED_PUBLIC_RECONSTRUCTIONS_CHECKED_ROOT_REVIEWS",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "P:tube-wiener-realization": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:tube-closed-geometry": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:tube-rayleigh-transfer": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:tube-actual-law": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    },
+    "L:tube-actual-endpoint": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:tube-coarse-envelope": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:tube-rayleigh-tail": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:tube-half-action": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "P:tube-wiener-realization",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED (roadmap and headings match the deductions). Evidence: `E:tube-finite-regression`, `E:tube-cameron-space`; the Markov constant `ε³/ε²=ε` is the correct measurable-norm normalization; the characteristic functional is the standard isonormal one (no Fourier inversion factor is introduced). Pre-existing concern: reliance on the countable-norming-family Borel-generation fact and on a.s.-subsequence for the support, both standard and stated as such; none flagged as a defect.",
+        "new_explanations_raw": "JUSTIFIED (roadmap and headings match the deductions). Evidence: `E:tube-finite-regression`, `E:tube-cameron-space`; the Markov constant `ε³/ε²=ε` is the correct measurable-norm normalization; the characteristic functional is the standard isonormal one (no Fourier inversion factor is introduced). Pre-existing concern: reliance on the countable-norming-family Borel-generation fact and on a.s.-subsequence for the support, both standard and stated as such; none flagged as a defect."
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (L37–110). New reading: COMPLETE (L37–129). Public reconstruction: COMPLETE. Original-step coverage: no omissions, no lost qualifiers.",
+        "new_reading": "COMPLETE (L37–129). Public reconstruction: COMPLETE. Original-step coverage: no omissions, no lost qualifiers.",
+        "public_reconstruction": "COMPLETE. Original-step coverage: no omissions, no lost qualifiers.",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED (roadmap and headings match the deductions). Evidence: `E:tube-finite-regression`, `E:tube-cameron-space`; the Markov constant `ε³/ε²=ε` is the correct measurable-norm normalization; the characteristic functional is the standard isonormal one (no Fourier inversion factor is introduced). Pre-existing concern: reliance on the countable-norming-family Borel-generation fact and on a.s.-subsequence for the support, both standard and stated as such; none flagged as a defect.",
+        "new_explanations_raw": "JUSTIFIED (roadmap and headings match the deductions). Evidence: `E:tube-finite-regression`, `E:tube-cameron-space`; the Markov constant `ε³/ε²=ε` is the correct measurable-norm normalization; the characteristic functional is the standard isonormal one (no Fourier inversion factor is introduced). Pre-existing concern: reliance on the countable-norming-family Borel-generation fact and on a.s.-subsequence for the support, both standard and stated as such; none flagged as a defect."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 11,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "772300cc37002fa9cc4f0c02fa1ba46f8d7d6233660c1af1cdcede2ec8f73513",
+      "mathematical_check": "The public proof checks a countable norming/Borel coordinate family on the separable Banachspace, originalW sigma-measurability, finite Gaussian conditionalregressions X_j=sumW(e_l)Ce_l andtheirBochnerL2 convergence throughsimple approximation/monotoneclass andcontraction. It derivesell(Ch)=<kell,h>, kerC=H_seen perpendicular andtheminimumoriginalHilbert preimage/Cameron norm withoutan inversecovariance. ClosedE0 membership follows fromthefinite sums and anL2 subsequence. Finite-ball tightness/complete totalbounded sets giveRadon law; tailfirst-chaos orthogonality givesBanach independence, andfiniteGaussian positiveballs plusL2small tails givefullsupport. The measurable-norm argument correctly usesV_j=spanP_seen e_l, arbitraryfiniteONtail families, regression/Jensen andepsilon^3/epsilon^2=epsilon uniformMarkov. Characteristicfunctional anddenseCMcompletion finish abstractWiener eligibility, includingzerolaw. Standard countablenorming/conditionalexpectation facts areused underthe statedseparable/BochnerL2 hypotheses, not aHilbert-valued GaussianW.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        25,
+        35
+      ],
+      "old_proof_lf": [
+        37,
+        110
+      ],
+      "old_statement_sha256": "0c7ac6471f72d5e18c642bd440628ae6d0e4ec1c6265f34830cb8ea91cb3ef1e",
+      "old_proof_sha256": "8f304235cbad398887f313df005f5bcac684a73bf027ac58e9599f4b427d970f",
+      "new_statement_lf": [
+        25,
+        35
+      ],
+      "new_proof_lf": [
+        37,
+        129
+      ],
+      "new_statement_sha256": "0c7ac6471f72d5e18c642bd440628ae6d0e4ec1c6265f34830cb8ea91cb3ef1e",
+      "new_proof_sha256": "5dbb1bfb48faee9778cada140f6c9cb3469b5159d25641d1f2f1199f4179c842"
+    },
+    {
+      "proof_id": "L:tube-closed-geometry",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED. Evidence: the key identity `K=√δ M_δ(B_H(1))` is checked; the enlargement parameter `t=r/√δ` is exactly what converts `e^{-t²/2}` into the `δ`-scale tail `e^{-r²/(2δ)}`. Pre-existing concern: none identified within this read; the imported isoperimetric theorem itself is external and is not re-certified, but its application hypotheses (Borel `A`, `μ(A)>0`, abstract Wiener realization, `t≥0`) are all verified in the target proof.",
+        "new_explanations_raw": "JUSTIFIED. Evidence: the key identity `K=√δ M_δ(B_H(1))` is checked; the enlargement parameter `t=r/√δ` is exactly what converts `e^{-t²/2}` into the `δ`-scale tail `e^{-r²/(2δ)}`. Pre-existing concern: none identified within this read; the imported isoperimetric theorem itself is external and is not re-certified, but its application hypotheses (Borel `A`, `μ(A)>0`, abstract Wiener realization, `t≥0`) are all verified in the target proof."
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (L148–184). New reading: COMPLETE (L167–215). Public reconstruction: COMPLETE. Original-step coverage: no omissions, including the `r=0` and `μ(A_δ)=1` (`â=+∞`) cases.",
+        "new_reading": "COMPLETE (L167–215). Public reconstruction: COMPLETE. Original-step coverage: no omissions, including the `r=0` and `μ(A_δ)=1` (`â=+∞`) cases.",
+        "public_reconstruction": "COMPLETE. Original-step coverage: no omissions, including the `r=0` and `μ(A_δ)=1` (`â=+∞`) cases.",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED. Evidence: the key identity `K=√δ M_δ(B_H(1))` is checked; the enlargement parameter `t=r/√δ` is exactly what converts `e^{-t²/2}` into the `δ`-scale tail `e^{-r²/(2δ)}`. Pre-existing concern: none identified within this read; the imported isoperimetric theorem itself is external and is not re-certified, but its application hypotheses (Borel `A`, `μ(A)>0`, abstract Wiener realization, `t≥0`) are all verified in the target proof.",
+        "new_explanations_raw": "JUSTIFIED. Evidence: the key identity `K=√δ M_δ(B_H(1))` is checked; the enlargement parameter `t=r/√δ` is exactly what converts `e^{-t²/2}` into the `δ`-scale tail `e^{-r²/(2δ)}`. Pre-existing concern: none identified within this read; the imported isoperimetric theorem itself is external and is not re-certified, but its application hypotheses (Borel `A`, `μ(A)>0`, abstract Wiener realization, `t≥0`) are all verified in the target proof."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 27,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "c8d9fd6a992a67db8cccf0e34bc62cde81caf28ce43c452d12b5606a78ea3c3e",
+      "mathematical_check": "The report reconstructs closed-Hilbert-ball images viaweaksequentialcompactness,Fatou andcompactoperatorimage identification, thenclosedbase+compactimage closedness. Approximatecontrols withnorm<=r+1/j giveattainmentat everyfiniteinfimal radius, includingr0; sublevels equal tubes so distanceislowersemicontinuous/Borel. Nonzerolaw impliesbdelta>0 andMarkovbase mass>=1/2. It derives theexactCM unitballC(BH1)=sqrtdelta Mdelta(BH1), henceenlargementparameter r/sqrtdelta. The statedexternalabstract-Wiener theorem isappliedonlyafterBorel/support/measurablenormconditionsarechecked, withahat>=0 (infinityallowedatmass1), yieldingexp(-r^2/(2delta)) andalmostsurefinite radius. NoGaussianhalf-cost ischanged.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        131,
+        146
+      ],
+      "old_proof_lf": [
+        148,
+        184
+      ],
+      "old_statement_sha256": "3662a24b9569f11cb579fdacc42d2f88dbb81eff828cba14185694cba2fdf6e6",
+      "old_proof_sha256": "6b63280f12ee23a025706ae9d0754b93b68538daef2e52f9a83b48dddc634757",
+      "new_statement_lf": [
+        150,
+        165
+      ],
+      "new_proof_lf": [
+        167,
+        215
+      ],
+      "new_statement_sha256": "3662a24b9569f11cb579fdacc42d2f88dbb81eff828cba14185694cba2fdf6e6",
+      "new_proof_sha256": "bb0a0c564be63413aa43b38ab624f862b88aa767090dbbf29ab982074907d8db"
+    },
+    {
+      "proof_id": "P:tube-rayleigh-transfer",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED. Evidence: the closed-endpoint passage `P(d≥c)=lim_{s↑c}P(d>s)` is the correct monotone-continuity identity; the layer cake integrand for the Rayleigh side recovers the exact density `(r/δ)e^{-r²/(2δ)}`. Pre-existing concern: none identified; the non-selection of a measurable control/residual is explicitly stated and is legitimate because of least-radius attainment.",
+        "new_explanations_raw": "JUSTIFIED. Evidence: the closed-endpoint passage `P(d≥c)=lim_{s↑c}P(d>s)` is the correct monotone-continuity identity; the layer cake integrand for the Rayleigh side recovers the exact density `(r/δ)e^{-r²/(2δ)}`. Pre-existing concern: none identified; the non-selection of a measurable control/residual is explicitly stated and is legitimate because of least-radius attainment."
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (L208–235). New reading: COMPLETE (L239–271). Public reconstruction: COMPLETE. Original-step coverage: no omissions; open/closed/zero endpoints and the `{d_δ=∞}` null event are retained.",
+        "new_reading": "COMPLETE (L239–271). Public reconstruction: COMPLETE. Original-step coverage: no omissions; open/closed/zero endpoints and the `{d_δ=∞}` null event are retained.",
+        "public_reconstruction": "COMPLETE. Original-step coverage: no omissions; open/closed/zero endpoints and the `{d_δ=∞}` null event are retained.",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED. Evidence: the closed-endpoint passage `P(d≥c)=lim_{s↑c}P(d>s)` is the correct monotone-continuity identity; the layer cake integrand for the Rayleigh side recovers the exact density `(r/δ)e^{-r²/(2δ)}`. Pre-existing concern: none identified; the non-selection of a measurable control/residual is explicitly stated and is legitimate because of least-radius attainment.",
+        "new_explanations_raw": "JUSTIFIED. Evidence: the closed-endpoint passage `P(d≥c)=lim_{s↑c}P(d>s)` is the correct monotone-continuity identity; the layer cake integrand for the Rayleigh side recovers the exact density `(r/δ)e^{-r²/(2δ)}`. Pre-existing concern: none identified; the non-selection of a measurable control/residual is explicitly stated and is legitimate because of least-radius attainment."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 40,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "21b07bfce2ebf31b8ac95f156c909535da9706f5051b3e4719434be53d93a27a",
+      "mathematical_check": "The report directlyintegrates theRayleighdensity r/delta exp(-r^2/(2delta)) to mass1/survival. MonotoneG upperlevelsets areupperintervals; openendpoints use tailbound, positiveclosedendpoints usecontinuityfromabove/as s↑c andnonatomicRayleigh, andclosed0 hasprobability1. It handlesthenullinfinite-distanceevent withoutdefiningG(infinity). Layercake/nonnegativeTonelli give theexponentialcomparison evenwithjumps/infiniteexpectations; attainedleastradius givesF(X)<=G(d(X)) withoutameasurableoptimizer. Zerolaw uses F0<=G0<=G(r), notF0=0.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        194,
+        206
+      ],
+      "old_proof_lf": [
+        208,
+        235
+      ],
+      "old_statement_sha256": "9ba559acf9a59c6b45db02a4b381ecb15a0e418606b69065a4fae5c3bd859b6c",
+      "old_proof_sha256": "171ef3c0b5cfa069ccccce440ceb20627d6d607cc84a2addbfb2c9151a267192",
+      "new_statement_lf": [
+        225,
+        237
+      ],
+      "new_proof_lf": [
+        239,
+        271
+      ],
+      "new_statement_sha256": "9ba559acf9a59c6b45db02a4b381ecb15a0e418606b69065a4fae5c3bd859b6c",
+      "new_proof_sha256": "90fbdf6369845de3ab93e8849536306395ca8e5666a65878b2ee317127e4770f"
+    },
+    {
+      "proof_id": "P:tube-actual-law",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED. Evidence: `g_δδ^{a/2}=√δ` is computed correctly; the radius substitution `R_δ=δ^{-1}+2≤3/δ` turns `g_δR^{d/Q}` into `δ^{(1-a)/2-d/Q}`; the compactness chain is compact∘bounded, so no uniform-radius compactness is used. Pre-existing concern: none identified; the compact values of the noise path are inherited from the Schatten-valued finite sums in the required upstream moments and are consistent with `L:symplectic-free` (which needs compact-valued paths).",
+        "new_explanations_raw": "JUSTIFIED. Evidence: `g_δδ^{a/2}=√δ` is computed correctly; the radius substitution `R_δ=δ^{-1}+2≤3/δ` turns `g_δR^{d/Q}` into `δ^{(1-a)/2-d/Q}`; the compactness chain is compact∘bounded, so no uniform-radius compactness is used. Pre-existing concern: none identified; the compact values of the noise path are inherited from the Schatten-valued finite sums in the required upstream moments and are consistent with `L:symplectic-free` (which needs compact-valued paths)."
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (L283–327). New reading: COMPLETE (L319–379). Public reconstruction: COMPLETE. Original-step coverage: no omissions; the Gaussian hypotheses, compactness, covariance scale, and radius decay are all reconstructed.",
+        "new_reading": "COMPLETE (L319–379). Public reconstruction: COMPLETE. Original-step coverage: no omissions; the Gaussian hypotheses, compactness, covariance scale, and radius decay are all reconstructed.",
+        "public_reconstruction": "COMPLETE. Original-step coverage: no omissions; the Gaussian hypotheses, compactness, covariance scale, and radius decay are all reconstructed.",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED. Evidence: `g_δδ^{a/2}=√δ` is computed correctly; the radius substitution `R_δ=δ^{-1}+2≤3/δ` turns `g_δR^{d/Q}` into `δ^{(1-a)/2-d/Q}`; the compactness chain is compact∘bounded, so no uniform-radius compactness is used. Pre-existing concern: none identified; the compact values of the noise path are inherited from the Schatten-valued finite sums in the required upstream moments and are consistent with `L:symplectic-free` (which needs compact-valued paths).",
+        "new_explanations_raw": "JUSTIFIED. Evidence: `g_δδ^{a/2}=√δ` is computed correctly; the radius substitution `R_δ=δ^{-1}+2≤3/δ` turns `g_δR^{d/Q}` into `δ^{(1-a)/2-d/Q}`; the compactness chain is compact∘bounded, so no uniform-radius compactness is used. Pre-existing concern: none identified; the compact values of the noise path are inherited from the Schatten-valued finite sums in the required upstream moments and are consistent with `L:symplectic-free` (which needs compact-valued paths)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 54,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "c72d66f79be9662e894f2d3f598748790efd18e1afd9055678aeeef3eb2ee99f",
+      "mathematical_check": "The public eligibilityproof keeps theactualE tuple in theseparable littleCtheta compactoperatorclosure, finite/stopped/zeroemptyblockpaths andjointfirst-chaos Gaussian limits onthe SAMEW, withfixedparameter secondmoments. The completed time-space mean is compactintoLrt K(E) atfixedR; boundedcompact-conjugation/affinepullback/primitive maps with1-1/rt>theta givecompactMdelta. The reportnotationT_R here meansmathcalT_R, nottheinstantaneousspatialmap(R1). Rankzero fullF covariance compressedtoE givesexactsqrtdelta, andsupportedslowrows/countablecoordinates showallstatistics lieW(H_I); noindependentblocks/timeindicatormultiplier isused. The statedradiusanchor withzeroresidualprojection andRdelta<=3/delta yieldsbdelta<=C delta^((1-a)/2-d/Q), positiveexponentfromQ>2d/(1-a). No growing-radius compactness orsumofindependentfastcosts isasserted.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        262,
+        281
+      ],
+      "old_proof_lf": [
+        283,
+        327
+      ],
+      "old_statement_sha256": "f1bb14dc7393490691c9e1c653902159584c37feda27351ab60effe783f7524d",
+      "old_proof_sha256": "2fe3fcdd1282643e44fb19d1c2427cb5c66cc3a496b049c7ab9e92159ac8cc94",
+      "new_statement_lf": [
+        298,
+        317
+      ],
+      "new_proof_lf": [
+        319,
+        379
+      ],
+      "new_statement_sha256": "f1bb14dc7393490691c9e1c653902159584c37feda27351ab60effe783f7524d",
+      "new_proof_sha256": "2f6424f6eaed6c55aeb81f306d48a1cfc85969c18f7e266356ba08edcb66c562"
+    },
+    {
+      "proof_id": "L:tube-actual-endpoint",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED. Evidence: the lower bound `‖P_δ(x)‖≥1` uses `L:symplectic-free` which is checked for compact zero-initial `C^θ` paths on `L(E)`; the second identity depends on `‖P_δ(X_δ)‖≥1`, which is established independently of Gaussian/hamiltonian assumptions. Pre-existing concern: the use of `L:raw-block-restart` with `i:E→F` relies on the `F`-flow restricting consistently to `E`; this is supplied by `P:constant-phase-driver` in the baseline and is used explicitly through the closed isometry `i`. Not a rewrite defect.",
+        "new_explanations_raw": "JUSTIFIED. Evidence: the lower bound `‖P_δ(x)‖≥1` uses `L:symplectic-free` which is checked for compact zero-initial `C^θ` paths on `L(E)`; the second identity depends on `‖P_δ(X_δ)‖≥1`, which is established independently of Gaussian/hamiltonian assumptions. Pre-existing concern: the use of `L:raw-block-restart` with `i:E→F` relies on the `F`-flow restricting consistently to `E`; this is supplied by `P:constant-phase-driver` in the baseline and is used explicitly through the closed isometry `i`. Not a rewrite defect."
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (L350–385). New reading: COMPLETE (L402–450). Public reconstruction: COMPLETE. Original-step coverage: no omissions; both identities and the fixed-`(δ,R,B)` scope are retained.",
+        "new_reading": "COMPLETE (L402–450). Public reconstruction: COMPLETE. Original-step coverage: no omissions; both identities and the fixed-`(δ,R,B)` scope are retained.",
+        "public_reconstruction": "COMPLETE. Original-step coverage: no omissions; both identities and the fixed-`(δ,R,B)` scope are retained.",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED. Evidence: the lower bound `‖P_δ(x)‖≥1` uses `L:symplectic-free` which is checked for compact zero-initial `C^θ` paths on `L(E)`; the second identity depends on `‖P_δ(X_δ)‖≥1`, which is established independently of Gaussian/hamiltonian assumptions. Pre-existing concern: the use of `L:raw-block-restart` with `i:E→F` relies on the `F`-flow restricting consistently to `E`; this is supplied by `P:constant-phase-driver` in the baseline and is used explicitly through the closed isometry `i`. Not a rewrite defect.",
+        "new_explanations_raw": "JUSTIFIED. Evidence: the lower bound `‖P_δ(x)‖≥1` uses `L:symplectic-free` which is checked for compact zero-initial `C^θ` paths on `L(E)`; the second identity depends on `‖P_δ(X_δ)‖≥1`, which is established independently of Gaussian/hamiltonian assumptions. Pre-existing concern: the use of `L:raw-block-restart` with `i:E→F` relies on the `F`-flow restricting consistently to `E`; this is supplied by `P:constant-phase-driver` in the baseline and is used explicitly through the closed isometry `i`. Not a rewrite defect."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 68,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "aa4af44c507f0e8eaa041295694a244239afd503730f0fc6b64fc7b6ff7eb129",
+      "mathematical_check": "The report defines thefinite continuous endpointfunctional onALL tuples throughgloballydefinedYoung maps,fixedfreefactors,orderedproducts andlogmax, notjuston aGaussian event. The namedcompact-product baseline applies togenericcompactzero-initialCtheta paths withoutGaussian/Hamiltonianassumptions, givingproductnorm>=freenorm>=1. The same-source fixedhorizon restart withthecorrectphysicalmask andamplitude, finite-source limitsBEFOREcomposition, closedE→F intertwining andtruefinalremainder give theglobalE endpoint onthecoupledinput. Thusmaxcanberemoved ande^(Fdelta/delta) isEXACTsquaredglobaloperatornorm. Bothphaseentries,correlatedblocks andfixedparameter eventsarepreserved; zerolaw stillhasfreeendpointnormpossibly>1.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        329,
+        348
+      ],
+      "old_proof_lf": [
+        350,
+        385
+      ],
+      "old_statement_sha256": "69a0513da450fbdfc69f12dcdcc44436d1c7019ec8c4000fafca0b49cbccde9f",
+      "old_proof_sha256": "8ac257a5ff9ce71e8adb760cf7e6a391c78f56a0d7338da3976b8ad4651c22a6",
+      "new_statement_lf": [
+        381,
+        400
+      ],
+      "new_proof_lf": [
+        402,
+        450
+      ],
+      "new_statement_sha256": "69a0513da450fbdfc69f12dcdcc44436d1c7019ec8c4000fafca0b49cbccde9f",
+      "new_proof_sha256": "ab9a609894ba1e0f3202c0f57d147bae2b528b489a6843aa0fba2f27a473ecdb"
+    },
+    {
+      "proof_id": "P:tube-coarse-envelope",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED. Evidence: all three `D_i` constants recomputed and match; the `(2/B)` powers arise from `δn≤2/B`; the `r_t` cancellation is exact; empty cells contribute zero and require no negative powers. Pre-existing concern: none identified; the measurability of the monotone supremum `G_δ` is by monotonicity (monotone functions are Borel), not by a measurable optimizer.",
+        "new_explanations_raw": "JUSTIFIED. Evidence: all three `D_i` constants recomputed and match; the `(2/B)` powers arise from `δn≤2/B`; the `r_t` cancellation is exact; empty cells contribute zero and require no negative powers. Pre-existing concern: none identified; the measurability of the monotone supremum `G_δ` is by monotonicity (monotone functions are Borel), not by a measurable optimizer."
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (L414–473). New reading: COMPLETE (L479–550). Public reconstruction: COMPLETE. Original-step coverage: no omissions; every primitive/power-mean constant and the zero/empty-cell cases are reconstructed.",
+        "new_reading": "COMPLETE (L479–550). Public reconstruction: COMPLETE. Original-step coverage: no omissions; every primitive/power-mean constant and the zero/empty-cell cases are reconstructed.",
+        "public_reconstruction": "COMPLETE. Original-step coverage: no omissions; every primitive/power-mean constant and the zero/empty-cell cases are reconstructed.",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED. Evidence: all three `D_i` constants recomputed and match; the `(2/B)` powers arise from `δn≤2/B`; the `r_t` cancellation is exact; empty cells contribute zero and require no negative powers. Pre-existing concern: none identified; the measurability of the monotone supremum `G_δ` is by monotonicity (monotone functions are Borel), not by a measurable optimizer.",
+        "new_explanations_raw": "JUSTIFIED. Evidence: all three `D_i` constants recomputed and match; the `(2/B)` powers arise from `δn≤2/B`; the `r_t` cancellation is exact; empty cells contribute zero and require no negative powers. Pre-existing concern: none identified; the measurability of the monotone supremum `G_δ` is by monotonicity (monotone functions are Borel), not by a measurable optimizer."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 81,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "50b837bd459cd10357f3db5d3a12d778f20402b6cadfdc2d26e2cf0cd01382db",
+      "mathematical_check": "The public coarsebound computes theUNSCALED meanprimitive h_m<=Cpr delta^-1/rt ||mathcalT_R Phi||Lrt(I_m) andthetruepartition, givingdelta sumh_m^rt<=(Cpr Cmean)^rt ||Phi||^rt. It keepsGB^2 once,1<=GB<=3B andCpr<=18B^(3-1/rt). GenericBanachYoung growth,convexity andorderednormsubmultiplicativity giveexact2delta n(logGB+cY)+2^nu cY delta sum(v_m^nu+h_m^nu). Weightedpowermeans atp/nu>=1,rt/nu>1 anddelta n<=2/B produce the threeexplicitD0,D1,D2 constants withnohiddenradius/delta dependence. Zero norms,emptycell andp=nu cause nonegativepowers. Nonemptytube sets plusgrowth givefinite suprema; monotonicity givesBorel withoutattainment, andthealreadyreconstructedRayleigh/endpointsupplytheoperator moment. Sourcecompactness remainsfixedR only.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        395,
+        412
+      ],
+      "old_proof_lf": [
+        414,
+        473
+      ],
+      "old_statement_sha256": "46e472987a35dbe80a264684282840dbb38d9660b50b7f2e8f4c3a3f66af2a16",
+      "old_proof_sha256": "ae2b7a656d47e15ec7ba255f47c8fc2d96921db4bab0b66386fa8d1c9e7b5e80",
+      "new_statement_lf": [
+        460,
+        477
+      ],
+      "new_proof_lf": [
+        479,
+        550
+      ],
+      "new_statement_sha256": "46e472987a35dbe80a264684282840dbb38d9660b50b7f2e8f4c3a3f66af2a16",
+      "new_proof_sha256": "b6512a387186887547692e9d73b4c8d6ab61efba4a8dc8ce4c089bddd24ceefa"
+    },
+    {
+      "proof_id": "L:tube-rayleigh-tail",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED (no new sentences). Evidence: the two `M²/8` contributions correctly combine into `M²/4`; the derivative identity is exact. Pre-existing concern: none identified.",
+        "new_explanations_raw": "JUSTIFIED (no new sentences). Evidence: the two `M²/8` contributions correctly combine into `M²/4`; the derivative identity is exact. Pre-existing concern: none identified."
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (L488–501). New reading: COMPLETE (L565–578). Public reconstruction: COMPLETE. Original-step coverage: no omissions.",
+        "new_reading": "COMPLETE (L565–578). Public reconstruction: COMPLETE. Original-step coverage: no omissions.",
+        "public_reconstruction": "COMPLETE. Original-step coverage: no omissions.",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED (no new sentences). Evidence: the two `M²/8` contributions correctly combine into `M²/4`; the derivative identity is exact. Pre-existing concern: none identified.",
+        "new_explanations_raw": "JUSTIFIED (no new sentences). Evidence: the two `M²/8` contributions correctly combine into `M²/4`; the derivative identity is exact. Pre-existing concern: none identified."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 100,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "928edae2928a39a53377e6319b4acc8deb82d44b1f57463713bb9b9b9a939ed9",
+      "mathematical_check": "The unchangedtailtarget ispubliclyreconstructed: r>=M and4C<=M^(2-nu),1<nu<2 giveCr^nu<=r^2/4, thennegativequadratic splitting -M^2/8-r^2/8. The exactderivative of4 exp(-r^2/(8delta)) givesprefactor4 andtheSECOND M^2/8, henceA0-M^2/4 inthefinalexponent. Positive2-nu ensurescutoffexists; boundedgrowth on[0,M] givesfinitehead. Applyingthecoarsetubeconstants provesfinitefixedparameter operatorintegral, withnoinfinite-dimensionalGaussian density.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        476,
+        486
+      ],
+      "old_proof_lf": [
+        488,
+        501
+      ],
+      "old_statement_sha256": "2b1ca4180489ca59eca381d033e73296bee0847f2431354307ac52c8d51b79b5",
+      "old_proof_sha256": "89eeabca262ef9430ee9975721ba2f61769f8365e2af03b1989cd9d496714641",
+      "new_statement_lf": [
+        553,
+        563
+      ],
+      "new_proof_lf": [
+        565,
+        578
+      ],
+      "new_statement_sha256": "2b1ca4180489ca59eca381d033e73296bee0847f2431354307ac52c8d51b79b5",
+      "new_proof_sha256": "89eeabca262ef9430ee9975721ba2f61769f8365e2af03b1989cd9d496714641"
+    },
+    {
+      "proof_id": "L:tube-half-action",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED. Evidence: the two inequalities are exact and match in the extended reals. Pre-existing concern: none identified.",
+        "new_explanations_raw": "JUSTIFIED. Evidence: the two inequalities are exact and match in the extended reals. Pre-existing concern: none identified."
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (L513–520). New reading: COMPLETE (L590–597). Public reconstruction: COMPLETE. Original-step coverage: no omissions.",
+        "new_reading": "COMPLETE (L590–597). Public reconstruction: COMPLETE. Original-step coverage: no omissions.",
+        "public_reconstruction": "COMPLETE. Original-step coverage: no omissions.",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED. Evidence: the two inequalities are exact and match in the extended reals. Pre-existing concern: none identified.",
+        "new_explanations_raw": "JUSTIFIED. Evidence: the two inequalities are exact and match in the extended reals. Pre-existing concern: none identified."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 114,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "6c74beb479855a8023ab918ff0431e8c6f37f18523a928ad283e8333a813a0ac",
+      "mathematical_check": "The unchangedhalf-action target isfullyreconstructed inextendedreals. Foranyh take r=||h|| toboundthepointscore bytheballsupremumscore; conversely||h||<=r makesJ(h)-r^2/2<=J(h)-||h||^2/2, so ballthenradius supremagivethereverse inequality. Eachball isnonempty withfinite supremumbyhypothesis,avoidinginfinityminusinfinity. Noattainment,compactness,rank,density ormeasurableselection isassumed; thecost remainshalf ofONEoriginalcontrolnorm.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        504,
+        511
+      ],
+      "old_proof_lf": [
+        513,
+        520
+      ],
+      "old_statement_sha256": "afd220c6768e86b5a3a106ab0694476020f010224cfffe6d44ed0f665e4800c9",
+      "old_proof_sha256": "234c237aaed142d7fae15d0d8d6263f008f8cf64e79c4640db0ee7a58961a095",
+      "new_statement_lf": [
+        581,
+        588
+      ],
+      "new_proof_lf": [
+        590,
+        597
+      ],
+      "new_statement_sha256": "afd220c6768e86b5a3a106ab0694476020f010224cfffe6d44ed0f665e4800c9",
+      "new_proof_sha256": "234c237aaed142d7fae15d0d8d6263f008f8cf64e79c4640db0ee7a58961a095"
+    }
+  ],
+  "mathematical_checks": [
+    "The public proof checks a countable norming/Borel coordinate family on the separable Banachspace, originalW sigma-measurability, finite Gaussian conditionalregressions X_j=sumW(e_l)Ce_l andtheirBochnerL2 convergence throughsimple approximation/monotoneclass andcontraction. It derivesell(Ch)=<kell,h>, kerC=H_seen perpendicular andtheminimumoriginalHilbert preimage/Cameron norm withoutan inversecovariance. ClosedE0 membership follows fromthefinite sums and anL2 subsequence. Finite-ball tightness/complete totalbounded sets giveRadon law; tailfirst-chaos orthogonality givesBanach independence, andfiniteGaussian positiveballs plusL2small tails givefullsupport. The measurable-norm argument correctly usesV_j=spanP_seen e_l, arbitraryfiniteONtail families, regression/Jensen andepsilon^3/epsilon^2=epsilon uniformMarkov. Characteristicfunctional anddenseCMcompletion finish abstractWiener eligibility, includingzerolaw. Standard countablenorming/conditionalexpectation facts areused underthe statedseparable/BochnerL2 hypotheses, not aHilbert-valued GaussianW.",
+    "The report reconstructs closed-Hilbert-ball images viaweaksequentialcompactness,Fatou andcompactoperatorimage identification, thenclosedbase+compactimage closedness. Approximatecontrols withnorm<=r+1/j giveattainmentat everyfiniteinfimal radius, includingr0; sublevels equal tubes so distanceislowersemicontinuous/Borel. Nonzerolaw impliesbdelta>0 andMarkovbase mass>=1/2. It derives theexactCM unitballC(BH1)=sqrtdelta Mdelta(BH1), henceenlargementparameter r/sqrtdelta. The statedexternalabstract-Wiener theorem isappliedonlyafterBorel/support/measurablenormconditionsarechecked, withahat>=0 (infinityallowedatmass1), yieldingexp(-r^2/(2delta)) andalmostsurefinite radius. NoGaussianhalf-cost ischanged.",
+    "The report directlyintegrates theRayleighdensity r/delta exp(-r^2/(2delta)) to mass1/survival. MonotoneG upperlevelsets areupperintervals; openendpoints use tailbound, positiveclosedendpoints usecontinuityfromabove/as s↑c andnonatomicRayleigh, andclosed0 hasprobability1. It handlesthenullinfinite-distanceevent withoutdefiningG(infinity). Layercake/nonnegativeTonelli give theexponentialcomparison evenwithjumps/infiniteexpectations; attainedleastradius givesF(X)<=G(d(X)) withoutameasurableoptimizer. Zerolaw uses F0<=G0<=G(r), notF0=0.",
+    "The public eligibilityproof keeps theactualE tuple in theseparable littleCtheta compactoperatorclosure, finite/stopped/zeroemptyblockpaths andjointfirst-chaos Gaussian limits onthe SAMEW, withfixedparameter secondmoments. The completed time-space mean is compactintoLrt K(E) atfixedR; boundedcompact-conjugation/affinepullback/primitive maps with1-1/rt>theta givecompactMdelta. The reportnotationT_R here meansmathcalT_R, nottheinstantaneousspatialmap(R1). Rankzero fullF covariance compressedtoE givesexactsqrtdelta, andsupportedslowrows/countablecoordinates showallstatistics lieW(H_I); noindependentblocks/timeindicatormultiplier isused. The statedradiusanchor withzeroresidualprojection andRdelta<=3/delta yieldsbdelta<=C delta^((1-a)/2-d/Q), positiveexponentfromQ>2d/(1-a). No growing-radius compactness orsumofindependentfastcosts isasserted.",
+    "The report defines thefinite continuous endpointfunctional onALL tuples throughgloballydefinedYoung maps,fixedfreefactors,orderedproducts andlogmax, notjuston aGaussian event. The namedcompact-product baseline applies togenericcompactzero-initialCtheta paths withoutGaussian/Hamiltonianassumptions, givingproductnorm>=freenorm>=1. The same-source fixedhorizon restart withthecorrectphysicalmask andamplitude, finite-source limitsBEFOREcomposition, closedE→F intertwining andtruefinalremainder give theglobalE endpoint onthecoupledinput. Thusmaxcanberemoved ande^(Fdelta/delta) isEXACTsquaredglobaloperatornorm. Bothphaseentries,correlatedblocks andfixedparameter eventsarepreserved; zerolaw stillhasfreeendpointnormpossibly>1.",
+    "The public coarsebound computes theUNSCALED meanprimitive h_m<=Cpr delta^-1/rt ||mathcalT_R Phi||Lrt(I_m) andthetruepartition, givingdelta sumh_m^rt<=(Cpr Cmean)^rt ||Phi||^rt. It keepsGB^2 once,1<=GB<=3B andCpr<=18B^(3-1/rt). GenericBanachYoung growth,convexity andorderednormsubmultiplicativity giveexact2delta n(logGB+cY)+2^nu cY delta sum(v_m^nu+h_m^nu). Weightedpowermeans atp/nu>=1,rt/nu>1 anddelta n<=2/B produce the threeexplicitD0,D1,D2 constants withnohiddenradius/delta dependence. Zero norms,emptycell andp=nu cause nonegativepowers. Nonemptytube sets plusgrowth givefinite suprema; monotonicity givesBorel withoutattainment, andthealreadyreconstructedRayleigh/endpointsupplytheoperator moment. Sourcecompactness remainsfixedR only.",
+    "The unchangedtailtarget ispubliclyreconstructed: r>=M and4C<=M^(2-nu),1<nu<2 giveCr^nu<=r^2/4, thennegativequadratic splitting -M^2/8-r^2/8. The exactderivative of4 exp(-r^2/(8delta)) givesprefactor4 andtheSECOND M^2/8, henceA0-M^2/4 inthefinalexponent. Positive2-nu ensurescutoffexists; boundedgrowth on[0,M] givesfinitehead. Applyingthecoarsetubeconstants provesfinitefixedparameter operatorintegral, withnoinfinite-dimensionalGaussian density.",
+    "The unchangedhalf-action target isfullyreconstructed inextendedreals. Foranyh take r=||h|| toboundthepointscore bytheballsupremumscore; conversely||h||<=r makesJ(h)-r^2/2<=J(h)-||h||^2/2, so ballthenradius supremagivethereverse inequality. Eachball isnonempty withfinite supremumbyhypothesis,avoidinginfinityminusinfinity. Noattainment,compactness,rank,density ormeasurableselection isassumed; thecost remainshalf ofONEoriginalcontrolnorm."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "proof_id": "P:tube-actual-law",
+      "classification": "report notation conflates instantaneous and completed mean symbols",
+      "disposition": "In thissection the reportT_R denotes theCOMPLETEDtime-space mapmathcalT_R:H_I→Lrt(I;K(E)), asitsexplicitdomain andfieldformula show. TheupstreaminstantaneousspatialT_R:H_sp→K(E) isadifferentmap, andmathcalT_R=T_R(C_t tensorI). Noextra covariance isapplied; sourceuses thedistinguishednotationcorrectly. Thisisreport-onlyprecision, notamissingcompactness ornormalizationdeduction.",
+      "report_lf": 61
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 22736,
+      "sha256": "01bab0c7b750ea4bfd9a22be097d598229d48529323bf022bb1c5bb20e72f570"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 5446,
+      "sha256": "64fc4f2dfc1822579445d637ce5a716ba7dd3be1520fd8d5dd8e10ee031b3c04"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 11430,
+      "sha256": "9129ca55317db9321134a5f1cd86a48b57773a950f918cfb9d4381e29ae07ac1"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 6349,
+      "sha256": "f49aa3b353aa31dd58fcd71a6716d317d85eb6faad8bba6843e101a434fe2374"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 11871,
+      "sha256": "18306fb5cbcd4e71753045e5861056ae4786ac833e5417007c991373bb0fed8d"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 6862,
+      "sha256": "dfe579ca24c86df284af1224585ebc02a80b7f30fe9a08ae8f9d7dd6089ed332"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 27080,
+      "sha256": "2bfc3aa0f053f63559c2534499a518de935e06cad56efc2109da336f61fe7015"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 29781,
+      "sha256": "9fb196596d59c499194d916234f908fe85fd2c7b1f674356c2a9bb4d0ca80c6e"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-integrated_cameron_mean-baseline.txt",
+      "bytes": 24138,
+      "sha256": "0ecbf05a70a7d5d79c9e2285dcadb93567687d4e463bfe4f6b0fdac5ff6f016d"
+    },
+    {
+      "path": "inputs/context-integrated_radius_anchor-baseline.txt",
+      "bytes": 17709,
+      "sha256": "6c71830d7ebad308b8aa9c16cbc6503747a0a30e7eaf8e3243d52b1a1ccb54d1"
+    },
+    {
+      "path": "inputs/context-integrated_uniform_mean-baseline.txt",
+      "bytes": 19613,
+      "sha256": "132449ade993b8feab10c06a6c062b21698d83d0ad811f99090bd069144dedc6"
+    },
+    {
+      "path": "inputs/context-integrated_raw_block_lower-baseline.txt",
+      "bytes": 35928,
+      "sha256": "ed2f85038ef6136eb8581fa64cab4962cde40bdbdba9ff163dd832c4fa5ad992"
+    },
+    {
+      "path": "inputs/context-integrated_symplectic_phase-baseline.txt",
+      "bytes": 20269,
+      "sha256": "37f0c741ab8e37b66f25a103939b428e001072066b48ffea2adb10e4644f2cab"
+    },
+    {
+      "path": "inputs/context-integrated_young_upper_foundation-baseline.txt",
+      "bytes": 4810,
+      "sha256": "28c299b4f0bff4f6cc1a4a63db881bd2e849b43e235c2824aec1ddd34a4f2415"
+    },
+    {
+      "path": "inputs/context-integrated_constant_phase_young-baseline.txt",
+      "bytes": 27376,
+      "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+    },
+    {
+      "path": "inputs/context-integrated_exact_scaling-baseline.txt",
+      "bytes": 2925,
+      "sha256": "d55a4709db7f10017f7b9506bce54d6921200f0d01a293801080d31889c91933"
+    }
+  ],
+  "input_identity_checks": "All delivered source/context payload hashes and WHOLE_FILE pinned Git byte identities verified; every complete OLD/NEW statement/proof independently checked by LF/bytes/SHA. Complete target text read with baseline comparisons and genuine needed stated inputs, not merely delta QA.",
+  "source_currentness": {
+    "covered_launch_revision": "867c1e8de1bbf47076f1187992f6cf3d921a184f",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "limit": "Only this exact assigned source versuscdde and supplied context; no older report rebinding, unexamined successor or whole-book seal."
+  },
+  "read_limits": [
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority"
+}

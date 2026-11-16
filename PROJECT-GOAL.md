@@ -1,5 +1,48 @@
 # Project goal and completion contract
 
+
+## Active publication goal — 2026-11-16
+
+Set explicitly by Le: "Can you update your goal to complete these work".
+The earlier bounded Appendix G goal is complete; the active goal now covers
+the remaining publication process below. Progress.md remains the workflow
+authority, and the exact owner decisions and source-bound receipts govern
+execution.
+
+1. Finish the authorized final-source rereads and mathematical adjudication,
+   with at most three concurrent reviewer jobs. Keep superseded reports on
+   their actual sources, and retain every failed, partial and conditional
+   outcome. Build an exact final-source coverage inventory; returned reports
+   alone are not accepted deductions or a publication-completion percentage.
+2. Synchronize Appendix E, AI-use disclosures, dated review statistics and
+   VERIFICATION provenance through the last adjudicated review. Preserve
+   Le's honest-standing release choice and all recorded scientific grades;
+   no local report, editorial aid or source-pixel check upgrades whole-book
+   assurance. Unknown usage/cost remains unknown, without estimates or
+   double-counting historical censuses.
+3. Coordinate the final book, reader and combined editions, approved figures,
+   Preface and editorial corrections with Agents 24, 16, 22 and 5. Verify
+   the exact candidate's build/link/critical-path, Lean-label/correspondence,
+   preservation, filter and export checks. Reconcile Progress, handoff and
+   internal project status through their authorized owners/queue.
+4. After the final review and disclosure/data synchronization, create one
+   manifest-only REVIEW-SYNC reseal on Agent 16's exact verified candidate.
+   Deliver its parent/SHA, source/PDF hashes and snapshot receipt. Early
+   sealing or stale disclosure/statistics does not satisfy this gate.
+5. Continue the remaining publication sequence as its actual human gates are
+   satisfied: Le's typesetting pass; R; companion re-anchor/v0.10.0 and
+   private-video handoffs; re-pin/rebuild/reseal and zero-shift checks; F;
+   rehearsal/trial audit; Le's accept file; approved export/publication.
+   Agent 16 retains integration/verification and named-push coordination;
+   Le authorizes public release and submits to arXiv.
+
+Do not mark this goal complete while required work remains. Approval-dependent
+steps remain explicitly open until their evidence arrives. This goal does not
+invent a new review allowance, confidence retry, fallback, push, release or
+submission permission. It does not declare the historical mathematical
+completion contract below satisfied or rewrite its assurance record.
+
+
 Status: SET UP 2026-10-26 by Le Chen's instruction ("create a project for
 the second moment, upper bound and exact constant; another agent (Codex)
 will run it"). Handed to Codex agent #30 on 2026-10-26 with Le's instruction

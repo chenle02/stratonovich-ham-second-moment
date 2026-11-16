@@ -1,0 +1,99 @@
+{
+  "review_record_id": "RP013",
+  "scope": "2 assigned old/new readability proof pairs only; upstream context unassigned; no primary-PDF/Lean/render/human/global/release certification",
+  "old_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_revision": "e07672d40443cd6ba655b0cf6eb05a1d1a454888",
+  "source_file": "notes/integrated_young_upper_foundation.tex",
+  "proof_labels": [
+    "L:young-upper-growth",
+    "P:young-upper-multiplicative"
+  ],
+  "input_files": [
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 4810,
+      "sha256": "28c299b4f0bff4f6cc1a4a63db881bd2e849b43e235c2824aec1ddd34a4f2415",
+      "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+      "source_path": "notes/integrated_young_upper_foundation.tex",
+      "selection": "WHOLE_FILE",
+      "role": "ASSIGNED OLD complete module; exactly 2 proof pairs."
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 7691,
+      "sha256": "34f4db462eb682b313623fe917327238c4faff3bdf0cfeb89c0f60eef542802e",
+      "source_revision": "e07672d40443cd6ba655b0cf6eb05a1d1a454888",
+      "source_path": "notes/integrated_young_upper_foundation.tex",
+      "selection": "WHOLE_FILE",
+      "role": "ASSIGNED NEW complete module; exactly 2 proof pairs."
+    },
+    {
+      "path": "inputs/context-constant-young-baseline.txt",
+      "bytes": 27376,
+      "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3",
+      "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+      "source_path": "notes/integrated_constant_phase_young.tex",
+      "selection": "WHOLE_FILE",
+      "role": "UNASSIGNED complete baseline upstream module. Stated inputs/definitions may be used under checked application hypotheses; these proofs are NOT assigned or counted as additional reviewed proofs."
+    }
+  ],
+  "embedded_frames": [
+    {
+      "path": "inputs/old-module.txt",
+      "payload_byte_offset": 7001,
+      "payload_bytes": 4810,
+      "payload_sha256": "28c299b4f0bff4f6cc1a4a63db881bd2e849b43e235c2824aec1ddd34a4f2415"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "payload_byte_offset": 12215,
+      "payload_bytes": 7691,
+      "payload_sha256": "34f4db462eb682b313623fe917327238c4faff3bdf0cfeb89c0f60eef542802e"
+    },
+    {
+      "path": "inputs/context-constant-young-baseline.txt",
+      "payload_byte_offset": 20471,
+      "payload_bytes": 27376,
+      "payload_sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+    }
+  ],
+  "prompt_bytes": 47901,
+  "prompt_sha256": "7c7a779699626317a7adaec1a1dfacc32dc60b1235d6d7cf0bac252e6d82e366",
+  "contract_sha256": "ccec9e6291f9d5a9e816680b170fbbda5aadd63c7278b228ec0e9bd0e804c59b",
+  "proof_manifest_sha256": "42d9d32de2fa7c857f4994457b84ccd334f34654ba32406cc9c09cc5885ef882",
+  "profile_sha256": "ccdf515979e77bbe752d924735a915260ca437d3d31a954d4a739c946fca0ea1",
+  "model_limits_sha256": "60eaa34361e093e599fdc4a26f8d53ee3aeb860e419c9e66535c4fda52284d56",
+  "capacity_sha256": "7390d3a9d8b3287d88213ae1adbac61e98e35231e17169d1262a1a1efc48580f",
+  "packet_spec_sha256": "549fa4f6cd4b8aeddb623106a774984bd9ae046d1f2ee8927848ce2125ede825",
+  "preparation_script_sha256": "dc63a52c3dbbf8a3520d2e78134f1a0baddaccaeba412cae252a017a40996520",
+  "preparation_checks_sha256": "2b20a136e4d6bf5b0132d6db4ec73fff065953d45d12ed04f37c691176fee159",
+  "route": "paper-review-deepseek",
+  "requested_model": "deepseek/deepseek-v4-pro",
+  "requested_variant": null,
+  "pure_mode": true,
+  "agent": "artifact-reviewer",
+  "all_tools_denied": true,
+  "tool_denial_status": "Current local effective profile/cap config checked, all permissions denied; per-launch recheck required.",
+  "combined_reasoning_public_output_cap": 65536,
+  "timeout_seconds": 3600,
+  "coordinator_launch_limit": 1,
+  "coordinator_retry_continuation_fallback": false,
+  "native_hidden_requests_not_inferred_from_process_count": true,
+  "provider_calls_started_during_preparation": 0,
+  "status": "FROZEN_PRE_DISPATCH",
+  "no_preflight_claim": "Offline source-binding and local native configuration checked; no live provider generation/admission/reading at freeze.",
+  "retained_model_limits_note": "Copied reference advertised metadata, not a new provider lookup or current admission guarantee.",
+  "pre_dispatch_budget_choice": {
+    "previous_cap": 32768,
+    "current_cap": 65536,
+    "kind": "Owner-selected budget revision before any dispatch; not a retry.",
+    "input_sha256_unchanged": "d6bec7007f9776e247e9d25a0ad9a595b9d0386ac878f2aeaf6acb8450905c29",
+    "new_admission_claim": false
+  },
+  "validation_script_sha256": "9bba328849a099aff37910c7678d5491d55ede90b852091e38dd814deac1ce33",
+  "contract_refinement_record": "ROOT-CONTRACT-REFINEMENT.json",
+  "preparation_script_is_before_refinement_template": true,
+  "owner_authorization": "Le standing per-proof reread authority; Agent24 dated gates/builds/maps, source-bound same-GPT worker QA and root byte/coverage/contract checks. Original-step public reconstruction explicit. No provider call at freeze; Agent16/Le retain integration/adoption.",
+  "recorded_utc": "2026-11-16T08:11:08.522274+00:00",
+  "source_binding_sha256": "168535fc063a42118636b7b438876f6a4528fa6e905ce549b60f46208b3e97f4"
+}

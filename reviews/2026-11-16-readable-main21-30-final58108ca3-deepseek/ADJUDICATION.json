@@ -1,0 +1,572 @@
+{
+  "review_record_id": "RP067",
+  "recorded_utc": "2026-11-16T15:53:41.858711+00:00",
+  "adjudicator_label": "Agent3 root (ord21\u201323) anddelegatedGPTmath-QA helper (ord24\u201330); rootreviewsfull disposition",
+  "role": "Author-sideactualpublic-report/source QA, notanotherindependentvote orwhole-bookacceptance",
+  "source_revision": "58108ca3065cb408eb13b06cc772fe71de546535",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/notes_stratonovich_ham_second_moment.tex",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "public_report_sha256": "3b1fe693ecfd395dc185690eb92bc58f53926f6b8739ba64f14502dd1ebd4241",
+  "source_binding_sha256": "6764df300bd35b83f0affcca538e8a698104219e1357041a71dfb82cd1c7d288",
+  "delegate_record_sha256": "fa1ccd27e33f0796bbe86eee06f4462651457428b55faf31e6765b6d38faf4bd",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "read_actor_ownership": "Rootreadcomplete21\u201323/sourceandreport; delegatecomplete24\u201330/sourceandreport+closingfindings; rootread24/29/30actualpubliccoverageandadjudicatesall7delegatedlimits. Allactualsource/hashbindingsindependentlychecked.",
+  "requested_reread_complete": false,
+  "coordinator_disposition": "SEVEN_LOCAL_CHECKED_THREE_PARTIAL_ONE_OVERLAPPING_PENDING_ASSIGNED_PARENT_NO_SOURCE_REPAIR",
+  "per_proof_reconstruction": {
+    "L:interval-complex": {
+      "status": "CHECKED",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:inventory-product": {
+      "status": "CHECKED",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:fixed-split": {
+      "status": "CHECKED",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:interval-coefficients": {
+      "status": "PARTIAL",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "reported_per_proof_confidence": null,
+      "critical_missing_steps": [
+        "Actual Gaussian-mode/spatial-band strong coefficient identification and dominated Duhamel-word limit is asserted rather than reconstructed in public bullet7."
+      ],
+      "limits": []
+    },
+    "L:terminal-wick": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "reported_per_proof_confidence": null,
+      "critical_missing_steps": [],
+      "limits": []
+    },
+    "L:uniform-series-tail": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "reported_per_proof_confidence": null,
+      "critical_missing_steps": [],
+      "limits": []
+    },
+    "T:full-upper": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "reported_per_proof_confidence": null,
+      "critical_missing_steps": [],
+      "limits": [
+        "Local upper-bound deductions CHECKED conditional on this assigned parent subclause; not unconditional complete reconstruction."
+      ],
+      "pending_assigned_inputs": [
+        {
+          "input_proof_id": "P:interval-coefficients",
+          "input_subclause": "ACTUAL_SMOOTHED_COEFFICIENT_CUTOFF_IDENTIFICATION",
+          "author_status": "PARTIAL",
+          "native_public_flag": "COMPLETE",
+          "same_single_assigned_parent_gap_not_additional_independent_gap": true,
+          "source_correct": true
+        }
+      ]
+    },
+    "P:white-four": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "reported_per_proof_confidence": null,
+      "critical_missing_steps": [],
+      "limits": []
+    },
+    "L:static-four": {
+      "status": "PARTIAL",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "reported_per_proof_confidence": null,
+      "critical_missing_steps": [
+        "Complete mixed-sector static constants are not reconstructed; the supplied mixed(1,3) spot-check is false, with no independent correct mixed-sector evaluation."
+      ],
+      "limits": []
+    },
+    "P:riesz-small": {
+      "status": "PARTIAL",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "reported_per_proof_confidence": null,
+      "critical_missing_steps": [
+        "The only public explicit evaluated EX1\u00b2 bracket has a wrong first-term denominator; no independently correct evaluated bracket/inner-r integral is supplied."
+      ],
+      "limits": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:interval-complex",
+      "global_main_ordinal": 21,
+      "status": "CHECKED",
+      "mathematical_check": "Adjoint sandwich andorderedresolventrootintegrals workforboundednonselfadjointV; norm/rootconstants andnumericalrangeconditions sameascomplexphase. Phasechangeusesmax(1,old/new), andending-onlyweightproduct>=1alsocoversincreases, startsandfinalreturn. No duplicatecharge orcommutationassumption.",
+      "source_old_LF": [
+        3154,
+        3217
+      ],
+      "source_new_LF": [
+        3493,
+        3572
+      ],
+      "source_old_proof_sha256": "fb33713a8353eb0dbb090cd7e4aacd6fd9d5062b648b002e92449b28bc1b6b75",
+      "source_new_proof_sha256": "3bc9b1ee2346c4383e27163916dad585e07953a381c473b0ca6394d72e4e2cde",
+      "actor": "Agent3 root"
+    },
+    {
+      "proof_id": "L:inventory-product",
+      "global_main_ordinal": 22,
+      "status": "CHECKED",
+      "mathematical_check": "Positive-productradius\u03b8k^nu,thirdsingletonQ, coarse\u2113nu versus\u21131andbeta/nu>1, finegeometric-tailboundwithquadraticl, allpowersk^alpha0 andk^(2alpha0-1)<=k, coefficientextractionwithk!<=k^kcorrect. \u03bd>1standingpremise explicit; no missingfactorial/k/Mconstant.",
+      "source_old_LF": [
+        3240,
+        3280
+      ],
+      "source_new_LF": [
+        3595,
+        3661
+      ],
+      "source_old_proof_sha256": "ed7f842bc5a90aff2c235e5dd8cba4cd1f0fa0453146380d370a61207cfeedaf",
+      "source_new_proof_sha256": "c55ea1c0c2aab7d7fca6b07228eae274738c60934317528b7d03770ba434cfbe",
+      "actor": "Agent3 root"
+    },
+    {
+      "proof_id": "L:fixed-split",
+      "global_main_ordinal": 23,
+      "status": "CHECKED",
+      "mathematical_check": "Allactivezero/emptycases,radiiandjointbackgroundoperatorbounds,commonpartitionwithM<=3k+1andintegratedheight<=2k; metricidentitychargesonceperendingcopy. Actualtensorvacuum/newcolorcolumnboundallowsdependenceonothercolors, nooccupiedcolorvacuumassumption. ExactDysoncube/permutationsvolume(no m!), normalizedvectorCauchytorus(no normholomorphy), same-GaussianpairCS,correctRalpha/k_i factorial/radius/endingcost andCsplit100^8e^8max(1,12\u03b4^-2). All334lineproof+actualpublicworkingread.",
+      "source_old_LF": [
+        3337,
+        3641
+      ],
+      "source_new_LF": [
+        3718,
+        4051
+      ],
+      "source_old_proof_sha256": "475f97b1d0ed8cbcfff86a9ed785dedcd33c2975aa7827847c391a7c23e3564a",
+      "source_new_proof_sha256": "af3f4c4f59f3bb3b7b1615ef8ea482dd7296876c7865cc158b0a9e1a41815f7d",
+      "actor": "Agent3 root"
+    },
+    {
+      "proof_id": "P:interval-coefficients",
+      "global_main_ordinal": 24,
+      "author_reconstruction_status": "PARTIAL",
+      "reported_per_proof_confidence": null,
+      "native_public_flags_raw": {
+        "Old reading": "COMPLETE",
+        "New reading": "COMPLETE",
+        "Public reconstruction": "COMPLETE",
+        "Argument preservation": "PRESERVED. NEW adds a closed-graph sentence and renumbers into six steps.",
+        "New explanations": "JUSTIFIED."
+      },
+      "report_heading_lf": 83,
+      "native_report_proof_section_sha256": "4849b706a22d58dc91545d3283b8905e7d45d569f20d1409c1b5f7078bbf16b1",
+      "all_assigned_public_reasons_read": true,
+      "complete_old_new_statement_proof_read": true,
+      "mathematical_check": "Finite-cutoff public work checks sign/zero normalization, entire vector majorant and Cauchy absolute double series, even color splits and exact Hermite word cutoff, the local weight table, whole-weight monotonicity in interval length, L\u22651 substitution, no-multinomial inventory product and scalar exponential summation. But the required fixed-coefficient passage from Gaussian-mode/spatial-band cutoffs to actual smoothed multiplication/Duhamel words is only asserted in public bullet7: no omitted annihilation/creation-tail strong convergence, finite-degree density, actual closed graph domain identification or dominated time-word limit is reconstructed. Entire-majorant existence alone does not identify the coefficient limits. Source gives a correct argument at new4234\u20134255/old3790\u20133810; no source correction.",
+      "source_defect_identified": false,
+      "old": {
+        "statement_lf": [
+          3644,
+          3656
+        ],
+        "statement_sha256": "abf07dd77cd26317b4f927af01dd03b16d44e968e1eb1e0ea77669ffe2a9dc28",
+        "proof_lf": [
+          3658,
+          3826
+        ],
+        "proof_environment_sha256": "dd673d2a49247e37d2ba78ddad2cbb8e9e6bcd54521257e23228705f8c73b4f8"
+      },
+      "new": {
+        "statement_lf": [
+          4054,
+          4066
+        ],
+        "statement_sha256": "abf07dd77cd26317b4f927af01dd03b16d44e968e1eb1e0ea77669ffe2a9dc28",
+        "proof_lf": [
+          4068,
+          4271
+        ],
+        "proof_environment_sha256": "c1d45d09103718285d5e4f086763dedfafd28ebea37bc4fb0b388ad2dfff747d"
+      }
+    },
+    {
+      "proof_id": "L:terminal-wick",
+      "global_main_ordinal": 25,
+      "author_reconstruction_status": "CHECKED",
+      "reported_per_proof_confidence": null,
+      "native_public_flags_raw": {
+        "Old reading": "COMPLETE",
+        "New reading": "COMPLETE",
+        "Public reconstruction": "COMPLETE",
+        "Argument preservation": "PRESERVED. NEW adds four step heads.",
+        "New explanations": "JUSTIFIED."
+      },
+      "report_heading_lf": 104,
+      "native_report_proof_section_sha256": "d0c9a1c7a5751eeee2c68341e854920a036677c2a1677d4c573f46e83da4975f",
+      "all_assigned_public_reasons_read": true,
+      "complete_old_new_statement_proof_read": true,
+      "mathematical_check": "Publicly reconstructs terminal-chain mass recursion, exact Gaussian H\u00f6lder product bound and Bochner integrability on finite continuity pieces. The Gaussian MGF differentiation gives coefficient-one unordered pairings, and symmetric pushforward averaging changes neither integral nor factorial normalization. Bounded continuous finite Wick moments and weak mass-preserving Green smoothing give mixed-square L2 convergence. All self/unequal/empty chains and positive entrywise diagram comparison are retained; the exact ratio test sums the regularized series at any finite complex amplitude.",
+      "source_defect_identified": false,
+      "old": {
+        "statement_lf": [
+          3846,
+          3891
+        ],
+        "statement_sha256": "2dbab86bb275a65a45225a4de82a87b077b51ebbf06fce0fe6a6c7bb6bdd9abf",
+        "proof_lf": [
+          3893,
+          3945
+        ],
+        "proof_environment_sha256": "dde884e6ad2c7fb55cc2cce96dda9141f92c49bccb2e08775fd1453fe9700d46"
+      },
+      "new": {
+        "statement_lf": [
+          4291,
+          4336
+        ],
+        "statement_sha256": "2dbab86bb275a65a45225a4de82a87b077b51ebbf06fce0fe6a6c7bb6bdd9abf",
+        "proof_lf": [
+          4338,
+          4410
+        ],
+        "proof_environment_sha256": "3fefe6e71c57cfd728efe3a37018e870ad0ffcff700e17c770a76a075ee79fcf"
+      }
+    },
+    {
+      "proof_id": "L:uniform-series-tail",
+      "global_main_ordinal": 26,
+      "author_reconstruction_status": "CHECKED",
+      "reported_per_proof_confidence": null,
+      "native_public_flags_raw": {
+        "Old reading": "COMPLETE",
+        "New reading": "COMPLETE",
+        "Public reconstruction": "COMPLETE",
+        "Argument preservation": "PRESERVED (NEW is textually unchanged aside from the proof heading being identical; no new steps). ",
+        "New explanations": "JUSTIFIED (none added beyond the unchanged text)."
+      },
+      "report_heading_lf": 121,
+      "native_report_proof_section_sha256": "db04a549a5df5d6bf92227a453edd9c19982fe3cfa8922daf722a5b466f01e6a",
+      "all_assigned_public_reasons_read": true,
+      "complete_old_new_statement_proof_read": true,
+      "mathematical_check": "Unchanged target fully read. Public positivity isolates the r^(2n) diagonal term in the scaled moment, fixed-order L2 convergence transfers the geometric coefficient norm bound, and summable tails plus finite heads prove the full L2 source limit in the required order. L2 norm continuity passes the smaller B1 bound. Full-series convergence is derived rather than assumed.",
+      "source_defect_identified": false,
+      "old": {
+        "statement_lf": [
+          3954,
+          3978
+        ],
+        "statement_sha256": "c3ae379f2b1a26d04467f0f096d3c4d2e6486cdd458b2a1517c31fcf7d3cf909",
+        "proof_lf": [
+          3980,
+          3999
+        ],
+        "proof_environment_sha256": "63479ca3ee6edd64ddaebe1caada46b05e236e70714e515d9ee5eefa7a93eb92"
+      },
+      "new": {
+        "statement_lf": [
+          4419,
+          4443
+        ],
+        "statement_sha256": "c3ae379f2b1a26d04467f0f096d3c4d2e6486cdd458b2a1517c31fcf7d3cf909",
+        "proof_lf": [
+          4445,
+          4464
+        ],
+        "proof_environment_sha256": "63479ca3ee6edd64ddaebe1caada46b05e236e70714e515d9ee5eefa7a93eb92"
+      }
+    },
+    {
+      "proof_id": "T:full-upper",
+      "global_main_ordinal": 27,
+      "author_reconstruction_status": "CHECKED",
+      "reported_per_proof_confidence": null,
+      "native_public_flags_raw": {
+        "Old reading": "COMPLETE",
+        "New reading": "COMPLETE",
+        "Public reconstruction": "COMPLETE",
+        "Argument preservation": "PRESERVED.",
+        "New explanations": "JUSTIFIED. In particular the NEW Step 2 additions make the phase-bound-to-constant-data transfer explicit."
+      },
+      "report_heading_lf": 139,
+      "native_report_proof_section_sha256": "f3a33e72676bb3db32e3396a78b91730ab9df5a004e6a9fa90145663eb24bab8",
+      "all_assigned_public_reasons_read": true,
+      "complete_old_new_statement_proof_read": true,
+      "mathematical_check": "Local public reconstruction checks the shifted-grid nesting, covering and exact length inventory78; compact initial displacement/zero velocity, full backward cone and stationary scalar point moment after full phase bound; true independent interval covariance, bounded positive Wick integrals, Green-before-J and fixed-order comparisons without arbitrary-phase covariance order or an infinite-depth field; scaled-amplitude bound and reconstructed uniform-series-tail give full canonical convergence before time asymptotics. Same parameter-only prefactor and R_alpha dependence retained. Its application of actual uncut interval coefficients is conditional on the single assigned-parent cutoff identification missing in public24, not a second independent local gap. Named external construction/identification proofs remain unassigned.",
+      "source_defect_identified": false,
+      "old": {
+        "statement_lf": [
+          4009,
+          4025
+        ],
+        "statement_sha256": "7c5b23089888e461b49fd8ffc1aeafc61cb3320d4d63d39281d9270af52b51b6",
+        "proof_lf": [
+          4027,
+          4233
+        ],
+        "proof_environment_sha256": "3f1a8ab6fc3eecec52a562549bb741f387de5ec89741486de6dd07f2f146cbc0"
+      },
+      "new": {
+        "statement_lf": [
+          4474,
+          4490
+        ],
+        "statement_sha256": "7c5b23089888e461b49fd8ffc1aeafc61cb3320d4d63d39281d9270af52b51b6",
+        "proof_lf": [
+          4492,
+          4743
+        ],
+        "proof_environment_sha256": "2a28cc5fd8551232a609aec6c4d7cc2ef14b53554e87f28a8cc38a9154b8a802"
+      },
+      "pending_assigned_inputs": [
+        {
+          "input_proof_id": "P:interval-coefficients",
+          "input_subclause": "ACTUAL_SMOOTHED_COEFFICIENT_CUTOFF_IDENTIFICATION",
+          "author_status": "PARTIAL",
+          "native_public_flag": "COMPLETE",
+          "same_single_assigned_parent_gap_not_additional_independent_gap": true,
+          "source_correct": true
+        }
+      ]
+    },
+    {
+      "proof_id": "P:white-four",
+      "global_main_ordinal": 28,
+      "author_reconstruction_status": "CHECKED",
+      "reported_per_proof_confidence": null,
+      "native_public_flags_raw": {
+        "Old reading": "COMPLETE",
+        "New reading": "COMPLETE",
+        "Public reconstruction": "COMPLETE",
+        "Argument preservation": "PRESERVED. NEW adds two step heads.",
+        "New explanations": "JUSTIFIED."
+      },
+      "report_heading_lf": 161,
+      "native_report_proof_section_sha256": "cd3c84ee735fb5eb71c78d0ed135971c9f7af7f7add2fffc8ba372a248c37406",
+      "all_assigned_public_reasons_read": true,
+      "complete_old_new_statement_proof_read": true,
+      "mathematical_check": "Publicly lists spatial position identifications and areas for all nine white split/pairing rows, correct time-gap reading, unit delta normalization and factor1/16. Approximate-identity passage uses boundary nullity and uniform1/4 spatial bound; its disjoint-pair temporal integrability input is independently checked in the next public section. Chain-exchange multiplicities and t^(6-2alpha0) scaling are correct. Does not replace total Stratonovich order with orthogonal chaos order.",
+      "source_defect_identified": false,
+      "old": {
+        "statement_lf": [
+          4436,
+          4461
+        ],
+        "statement_sha256": "2120fa1b65b67abc73b737b1925bdd8cd0517dff97c88eecbb3d90dc4261d537",
+        "proof_lf": [
+          4463,
+          4494
+        ],
+        "proof_environment_sha256": "95060e87561594ec87e9a33d4ecf9dd9ef3c1c4cf1deae2987e03849e9115e75"
+      },
+      "new": {
+        "statement_lf": [
+          4946,
+          4971
+        ],
+        "statement_sha256": "2120fa1b65b67abc73b737b1925bdd8cd0517dff97c88eecbb3d90dc4261d537",
+        "proof_lf": [
+          4973,
+          5015
+        ],
+        "proof_environment_sha256": "e63cb44fa57a6cf29588a58b1c9a4ccd80dfa13fd93507b1b970947c984384d7"
+      }
+    },
+    {
+      "proof_id": "L:static-four",
+      "global_main_ordinal": 29,
+      "author_reconstruction_status": "PARTIAL",
+      "reported_per_proof_confidence": null,
+      "native_public_flags_raw": {
+        "Old reading": "COMPLETE",
+        "New reading": "COMPLETE",
+        "Public reconstruction": "COMPLETE",
+        "Argument preservation": "PRESERVED. NEW adds three step heads and splits the length-pair table into Step 2.",
+        "New explanations": "JUSTIFIED."
+      },
+      "report_heading_lf": 181,
+      "native_report_proof_section_sha256": "a7d5d1126e17c6fef28b2d6ceb172ad27aaf0966afb30773647a2b36f16b3c45",
+      "all_assigned_public_reasons_read": true,
+      "complete_old_new_statement_proof_read": true,
+      "mathematical_check": "Public dominated convergence at alpha0\u21920 and the exact time-slack formula with 1/(16m!n!) are correct. Sector changes have unit determinant and pure fourth-power simplex formula reconstructs the (0,4) sector family. The mixed (1,3) example is incorrect: integral(1-u)(1-u-3v)_+\u00b3 is1/72, not1/24; correct A uses1-u-v. No correct independent full mixed-sector evaluation is supplied, especially (2,2),C values31/1440 and31/2160. Row sums and final11/540 are asserted with a literal question-mark arithmetic placeholder. Hence required complete static constants are not publicly reconstructed, though the source sector table/integrals are correct and retained.",
+      "source_defect_identified": false,
+      "old": {
+        "statement_lf": [
+          4498,
+          4512
+        ],
+        "statement_sha256": "1b0fe886510a2e76b6a2bbee7dbf4416d875c2790e75f239ac13ed7e5a22740b",
+        "proof_lf": [
+          4514,
+          4585
+        ],
+        "proof_environment_sha256": "475bfb22b6df24f992607b749b1bed1624c6e897f42c4a331ddaca7c7ec4eff6"
+      },
+      "new": {
+        "statement_lf": [
+          5019,
+          5033
+        ],
+        "statement_sha256": "1b0fe886510a2e76b6a2bbee7dbf4416d875c2790e75f239ac13ed7e5a22740b",
+        "proof_lf": [
+          5035,
+          5120
+        ],
+        "proof_environment_sha256": "9eff1e4a6ac368959f261c668e154f36fe1437236b3b1ecda3fb10fae01d2a14"
+      }
+    },
+    {
+      "proof_id": "P:riesz-small",
+      "global_main_ordinal": 30,
+      "author_reconstruction_status": "PARTIAL",
+      "reported_per_proof_confidence": null,
+      "native_public_flags_raw": {
+        "Old reading": "COMPLETE",
+        "New reading": "COMPLETE",
+        "Public reconstruction": "COMPLETE",
+        "Argument preservation": "PRESERVED. NEW adds three step heads.",
+        "New explanations": "JUSTIFIED."
+      },
+      "report_heading_lf": 200,
+      "native_report_proof_section_sha256": "84c37f44dad88421a43aaf42a9a17b0de7eeab85861ae6b189de7a0c85d5326e",
+      "all_assigned_public_reasons_read": true,
+      "complete_old_new_statement_proof_read": true,
+      "mathematical_check": "Public correct rectangle spatial covariance integral, cone substitution and EX2 beta-type integral are positive checked work. However its only explicit resulting EX1\u00b2 formula omits division by2(3-alpha) on the (2t-v)^(3-alpha) term; no correct inner-r integral or final bracket is written elsewhere. Referring to assigned E:riesz-two as reproduced cannot replace deriving its correct formula. Mark bounded PARTIAL for this exact evaluation. The uniform-increment probability representation, triangular determinant, t^(2beta) scaling and finiteness from disjoint time/spatial pairs are publicly correct; source EX1\u00b2 formula is correct and requires no edit.",
+      "source_defect_identified": false,
+      "old": {
+        "statement_lf": [
+          4590,
+          4637
+        ],
+        "statement_sha256": "5a7e8242403dd88ddc8d8485dea890223e352b3fc2262052a4901e17649a2f45",
+        "proof_lf": [
+          4639,
+          4670
+        ],
+        "proof_environment_sha256": "57fb5461b56f3784b4d56865ef4d491ac189ad0d76da53bf6ac1ac346c79d101"
+      },
+      "new": {
+        "statement_lf": [
+          5125,
+          5172
+        ],
+        "statement_sha256": "5a7e8242403dd88ddc8d8485dea890223e352b3fc2262052a4901e17649a2f45",
+        "proof_lf": [
+          5174,
+          5220
+        ],
+        "proof_environment_sha256": "c44b96ab339df32eff9f2293b19ffd821baef7f9a4b27b63f2e8e8c6dd553707"
+      }
+    }
+  ],
+  "mathematical_checks": [
+    "Adjoint sandwich andorderedresolventrootintegrals workforboundednonselfadjointV; norm/rootconstants andnumericalrangeconditions sameascomplexphase. Phasechangeusesmax(1,old/new), andending-onlyweightproduct>=1alsocoversincreases, startsandfinalreturn. No duplicatecharge orcommutationassumption.",
+    "Positive-productradius\u03b8k^nu,thirdsingletonQ, coarse\u2113nu versus\u21131andbeta/nu>1, finegeometric-tailboundwithquadraticl, allpowersk^alpha0 andk^(2alpha0-1)<=k, coefficientextractionwithk!<=k^kcorrect. \u03bd>1standingpremise explicit; no missingfactorial/k/Mconstant.",
+    "Allactivezero/emptycases,radiiandjointbackgroundoperatorbounds,commonpartitionwithM<=3k+1andintegratedheight<=2k; metricidentitychargesonceperendingcopy. Actualtensorvacuum/newcolorcolumnboundallowsdependenceonothercolors, nooccupiedcolorvacuumassumption. ExactDysoncube/permutationsvolume(no m!), normalizedvectorCauchytorus(no normholomorphy), same-GaussianpairCS,correctRalpha/k_i factorial/radius/endingcost andCsplit100^8e^8max(1,12\u03b4^-2). All334lineproof+actualpublicworkingread.",
+    "ActualsmoothedcoefficientcutoffidentificationisassertedonlyinpublicPintervalcoeffbullet7,withoutstrongfinite-degreemode/band/Duhamellimitworking; sourcecorrect, notsubstituted.",
+    "Staticfourtable: wrongmixed(1,3)Aexamplewith3v gives1/72, not1/24; mixed(2,2)andnineconstants/finalarithmeticunworked. Authorexactsectorcheckconfirmsallsourcevalues, notaddedtopublicreview.",
+    "RieszEX1\u00b2soleevaluatedbracketmissesdenominatoronfirst(2t-v)term; correctrectangleintegralandotherEX2/fourincrementdeductionsarepartialpositiveevidence, notcorrectfinalassignedbracket."
+  ],
+  "report_notes": [
+    {
+      "id": "D1",
+      "proof_id": "P:interval-coefficients",
+      "classification": "MISSING_PUBLIC_RECONSTRUCTION",
+      "report_lf": [
+        98,
+        98
+      ],
+      "source_new_global_lf": [
+        4234,
+        4255
+      ],
+      "detail": "Actual Gaussian-mode/spatial-band strong coefficient identification and dominated Duhamel-word limit is asserted rather than reconstructed in public bullet7."
+    },
+    {
+      "id": "D2",
+      "proof_id": "L:static-four",
+      "classification": "REPORT_ONLY_FALSE_CALCULATION_AND_MISSING_REQUIRED_MIXED_CONSTANT_WORKING",
+      "report_lf": [
+        193,
+        194
+      ],
+      "source_new_global_lf": [
+        5075,
+        5112
+      ],
+      "old": "integral(1-u)(1-u-3v)_+\u00b3=1/24",
+      "new": "That integral is1/72; correct A integrand has1-u-v and integral1/24.",
+      "contrary_calculation": "Integrate v from0 to(1-u)/3: inner cubic integral=(1-u)^4/12; multiply(1-u), integrateu0..1 gives1/72. Generic pure fourth-power formula cannot by itself evaluate the mixed-power constraints. Correct source constants are not inserted as independent public work."
+    },
+    {
+      "id": "D3",
+      "proof_id": "L:static-four",
+      "classification": "REPORT_ONLY_ARITHMETIC_PLACEHOLDER",
+      "report_lf": [
+        194,
+        194
+      ],
+      "old": "(2\u00b711+2\u00b7143/2? ) precisely11/540",
+      "new": "2*(11/17280)+2*(143/34560)+187/17280=11/540",
+      "detail": "Correct row sums WOULD give the final total; the separate missing mixed-sector derivation remains."
+    },
+    {
+      "id": "D4",
+      "proof_id": "P:riesz-small",
+      "classification": "REPORT_ONLY_WRONG_EVALUATED_FORMULA_AND_BOUNDED_RECONSTRUCTION_GAP",
+      "report_lf": [
+        209,
+        211
+      ],
+      "source_new_global_lf": [
+        5135,
+        5139
+      ],
+      "old": "(2t-v)^(3-alpha)-v^(3-alpha)/(2(3-alpha))-(t-v)v^(2-alpha)",
+      "new": "[(2t-v)^(3-alpha)-v^(3-alpha)]/[2(3-alpha)]-(t-v)v^(2-alpha)",
+      "contrary_calculation": "The r-antiderivative of(2r+v)^(2-alpha) is(2r+v)^(3-alpha)/[2(3-alpha)]. Erroneous minus correct first term is(1-1/[2(3-alpha)])(2t-v)^(3-alpha)>0 for0<alpha<1,t>v>0. No alternative correct evaluated bracket appears in the public report."
+    },
+    {
+      "id": "D5",
+      "proof_id": "T:full-upper",
+      "classification": "REPORT_ONLY_ASSIGNMENT_ATTRIBUTION_ERROR",
+      "report_lf": [
+        159,
+        159
+      ],
+      "detail": "P:interval-coefficients,L:terminal-wick,L:uniform-series-tail are ASSIGNED in this packet, not UNASSIGNED. They are assessed in their own sections; this typo does not remove their reconstruction obligations or24 pending-parent limitation."
+    },
+    {
+      "id": "R-INV",
+      "classification": "Discretepower-sum notationprecision",
+      "disposition": "Inventoryreport replacesdiscretesumsbyintegralexpressionsusingequalitynotation; theseareupperestimates bymonotoneintegralcomparison, alreadyexplicitforfine singleton sums. Intendedboundandallsourcescalingscorrect, notanexactsumidentity."
+    }
+  ],
+  "local_counts": {
+    "CHECKED": 7,
+    "PARTIAL": 3,
+    "CHECKED_with_pending_assigned_input": 1
+  },
+  "conditional_parent_note": "Tfullupperownlocaldeductionscheckedbutactualsource-modelbounddependsontheSAMEunreconstructedPintervalcoeffcutoffidentification; notoneadditionalindependentgap orfullmodulepass.",
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "critical_required_public_reconstruction_missing": true,
+  "reported_per_proof_confidence": null,
+  "source_currentness": {
+    "covered_revision": "58108ca3065cb408eb13b06cc772fe71de546535",
+    "scope": "OnlyMAINord21\u201330versusCDDE, notexpandedbook/currenttree/sourcePDFimages/Lean/render/human/RFapproval"
+  },
+  "adjudicator_callback_or_retry_used": false,
+  "historical_report_or_grade_edited": false,
+  "native_protocol_acceptance": "Separatecustodylane, notassessedbythismathrecord",
+  "whole_book_acceptance": false,
+  "public_release_or_RF": false
+}

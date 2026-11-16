@@ -1,0 +1,77 @@
+# Assigned task: 7 rewritten Cameron-mean proofs
+
+Independently compare BOTH OLD and NEW complete proofs and their unchanged
+statements/definitions in the assigned module. Check mathematics unchanged,
+no step or qualifier lost, and every new explanatory assertion justified under
+the same hypotheses. Mechanical byte retention is not mathematical evidence.
+Distinguish a defect introduced by the rewrite from a pre-existing concern;
+do not use OLD as an oracle, silently repair proofs, or certify a whole book.
+
+The assignment is exactly the 7 proof labels in the inventory. Baseline
+context sources below supply unchanged upstream inputs/definitions; their
+proofs are NOT assigned for a new review, and must not be counted as extra
+proofs read. Check that target consumer uses respect their stated conditions;
+identify any missing condition or context limitation honestly.
+
+Reconstruct fractional Sobolev covariance-product extension, exact Hilbert
+covariance completions and supported time-space tensor identification; compact
+spatial/temporal/mean maps with radius fixed and their admissible integrability
+ranges. Preserve both extended F constant coordinates, original noise-space
+inclusion and source coupling, and distinguish physical mask roots on state
+tests from an unjustified multiplier on the covariance-null noise quotient.
+Check finite-dimensional temporal projections, uniform-on-fixed-parameter
+control balls, block covariance and Cameron scales, exact scalar time pullbacks,
+true full/last/empty cells, residual norms and all ordered limits. Verify the
+stated compactness/positivity/strong measurability and Bochner integrals with
+their exact domains, constants and quantifiers; no uniform-in-radius compactness
+or block independence may be inferred. Check every added explanation and each
+target consumer's hypotheses against the supplied upstream inputs.
+Existing No-go25/27 references are contextual limitations, not separately
+assigned proofs. Missing genuinely needed context must be identified honestly.
+
+The assignment is internal proof-readability/argument-preservation comparison.
+Do not independently certify primary-source theorem fidelity or prove their
+whole external arguments. Imported results may be used under their supplied
+exact stated hypotheses; check target consumer uses and report any missing
+conditions/context. Under unitary Fourier conventions, inversion kernels are
+distributions, not scalar equalities; retain every normalization if used.
+
+No AUDIT comments remain in this module; list any AUDIT-worthy issue you find.
+No prior reviewer verdict, worker QA report or acceptance record is supplied.
+No primary-source PDF/image or render review is assigned. Do not browse, run
+tools, delegate, read files, edit or contact anyone. Everything allowed is
+embedded. Mark PARTIAL/NOT_READ and precise missing work rather than invent it.
+
+# Public reconstruction requirement
+
+For every assigned proof, enumerate its original logical steps (including unchanged portions) and provide checkable public working for each. A target statement or a bound established inside that same target proof is not an unassigned input. Named UNASSIGNED upstream statements may be used after checking their hypotheses; their own proofs remain unassigned. Reading and reconstruction are distinct: if any required target step is not reconstructed publicly, say so and mark Public reconstruction: PARTIAL or NOT_RECONSTRUCTED, even if Old/New reading is COMPLETE. Do not replace a derivation by saying it is unchanged.
+
+# Output contract
+
+Begin with:
+# Review Result
+Category: proof-readability-equivalence
+Model: <your actual model identity if known>
+Verdict: PASS | PASS_WITH_NOTES | FAIL | INCONCLUSIVE
+Confidence: high | medium | low
+
+Verdict/confidence are unforced. Then exactly one '## <proof label>' section
+for each assigned label, in order. Each must give:
+- Old reading: COMPLETE | PARTIAL | NOT_READ
+- New reading: COMPLETE | PARTIAL | NOT_READ
+- Public reconstruction: COMPLETE | PARTIAL | NOT_RECONSTRUCTED
+- Original-step coverage: <steps and working, with omissions explicit>
+- Argument preservation: PRESERVED | CHANGED | UNCERTAIN
+- New explanations: JUSTIFIED | CONCERN | UNCERTAIN
+- Evidence: concrete mathematical checks/working using equation labels or
+  OLD/NEW local LF ranges, not merely the mechanical facts.
+- Lost steps/qualifiers, unresolved issues and pre-existing concerns; 'none
+  identified within this read' is allowed when justified.
+
+End with '## AUDIT dispositions' and '## Findings and limits'. A partially
+read proof prohibits a claim of full assignment completion. Distinguish scope
+preservation from proving all upstream analytic results or whole-book truth.
+Keep the public report roughly 5000 words. Do not certify Lean quotation
+correspondence, source images, rendered pages, human verification or release.
+
+The word target is approximate; do not sacrifice a required derivation for brevity.

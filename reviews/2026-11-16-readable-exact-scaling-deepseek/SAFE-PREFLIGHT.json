@@ -1,0 +1,21 @@
+{
+  "model": "deepseek/deepseek-v4-pro",
+  "default_agent": "artifact-reviewer",
+  "global_permission": {
+    "*": "deny",
+    "webfetch": "deny",
+    "external_directory": "deny",
+    "task": "deny"
+  },
+  "agent_permission": {
+    "*": "deny",
+    "webfetch": "deny",
+    "external_directory": "deny",
+    "task": "deny"
+  },
+  "profile_sha256": "ccdf515979e77bbe752d924735a915260ca437d3d31a954d4a739c946fca0ea1",
+  "client_output_env": 32768,
+  "pure_launch": true,
+  "provider_generation_call": false,
+  "all_configured_permissions_denied": true
+}
