@@ -46,6 +46,18 @@ aggregate usage/cost/cap remain unknown. Older RP014/RP039 records and their
 limits are unchanged. RP043 signed-static remains running at this record.
 See `reviews/2026-11-16-readable-uniform-mean-postreader32919d54-deepseek/`.
 
+**First Chapters 4-8 batch verified and frozen:** Agent 16 verifies all
+15 original bindings at `032fb8a2` (`d5e9fa4787b6`). RP044 covariance
+`1033a48e`, RP045 wave variance `0467fe59` and RP046 compact Gaussian
+`105845e7` now freeze all 8/6/10 proof pairs. Root reads the contracts and
+independently checks every Git frame, complete statement/proof hash and LF,
+immutable digest and tool-denied profile; no native call at this freeze.
+The same Choice B limits apply: max three processes, 65,536 per generation,
+3,600 seconds and no coordinator repeat/tools/fallback. The later replacement
+bindings for compact mean, unmasked variational and Young upper are held
+separately pending verification; no call was spent on their superseded inputs.
+See `CH4-8-FIRST3-FREEZE.json` in the policy directory.
+
 **Latest Chapters 4-8 FINAL handoff:** Agent 24 explicitly releases the
 15 files at tip `032fb8a2` after reader dispositions (`077b3b7ca46e`). Root
 verifies all 15 file blobs equal that tip, their committed map new_rev values
