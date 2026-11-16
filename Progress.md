@@ -160,18 +160,19 @@ Agent16's verification and Le's adoption/release decisions remain separate.
 
 ### Completed reread aggregate, with units kept separate
 
-`reviews/2026-11-16-readable-reread-index/INDEX.json` records five terminal
-native sessions and 37 distinct complete OLD/NEW proof pairs. All five raw
-reports are PASS/high at their local scopes; every public mathematical reason
-and finding has been adjudicated. Raw reports, report-only errors and historical
-grades are preserved. Per-proof confidence was not separately reported and is
-null. These are five calls, not 37 votes; upstream context proofs add no rows.
-The five target module blobs remain byte-identical at held `f06cb607`, but
-that check is not a seal or adoption of the whole tree. This count is not added
-to the differently scoped historical census or recovered-attempts snapshot.
-Remaining source modules/main batches, companion quotation correspondence,
-disclosure and Appendix E reconciliation, final derived artifacts and reseal,
-Agent 16 verification and Le's release decisions remain open.
+`reviews/2026-11-16-readable-reread-index/INDEX.json` now records8 terminal
+native sessions. Seven public reports cover51 distinct complete OLD/NEW pairs:
+6 rawPASS/high and1 rawPASS_WITH_NOTES/high. RP007 is the eighth attempt,
+with no public report and no verified public proof reading; its single target
+remains NOT_OBTAINED, not a pass or a reviewer INCONCLUSIVE verdict. Raw
+reports, report-only errors, null per-proof confidence and historical grades
+are preserved. These are8 attempts/7 usable reports/51 complete pairs, not51
+votes; upstream context proofs add no rows. Failed-attempt usage is included.
+The target module blobs remain byte-identical at held`f06cb607`, but that
+check is not adoption or a whole-tree seal. No mechanical sum with the old
+census/recovered-attempts snapshots is claimed. Remaining source/main rereads,
+the scaling disposition, companion quotations, AppendixE/disclosure updates,
+derived artifacts/reseal, Agent16 verification and Le decisions remain open.
 
 ### Next frozen per-file rereads: RP006--RP008
 

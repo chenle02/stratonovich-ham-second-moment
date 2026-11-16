@@ -1,17 +1,21 @@
 # Readability reread index
 
-Five fresh DeepSeek V4 Pro sessions completed 37 distinct OLD/NEW proof pairs.
-All five raw reports are PASS/high within their assigned scopes; root adjudications
-and report-only mistakes or qualifications remain in each record. Each proof row's
-separate confidence is unreported and stays null. One session with nine rows is
-one review call, not nine independent votes. Upstream context proofs are unassigned.
+Eight native sessions are terminal. Seven public reports cover51 distinct
+complete OLD/NEW proof pairs:6 rawPASS/high,1 rawPASS_WITH_NOTES/high.
+One further assigned proof has no public report:RP007 exhausted its32,768-token
+cap in reasoning. Its literal status is NOT_OBTAINED, with null reviewer
+verdict/confidence/read flags. It contributes usage and an attempt, not a pass.
 
-Native totals are reported usage for these five sessions only. The OpenCode
-cost counter is not an invoice; currency and physical backend request counts
-were not independently reported. No sum with the historical 627-run census or
-118 recovered attempts is asserted. This index is source-bound scoped evidence,
-not a whole-book HIGH grade or acceptance of Lean quotations, images, rendered
-pages, human verification, R/F, publication or adoption.
+All raw reports and root adjudication notes remain unchanged in their own
+records. Per-proof confidence was not separately reported and stays null.
+One session with several proof rows is one call, not several independent votes.
+Upstream context proofs are unassigned. The larger-cap RP007 repeat is only a
+proposal, not a dispatched call or evidence; it is not included in these totals.
 
-All five target module blobs still match held tip f06cb607 byte for byte.
-That is a file-hash reconciliation only, not a review-sync seal of that tree.
+Native totals include the failed attempt, for these8 sessions only. The
+OpenCode cost counter is not an invoice; currency and backend physical request
+counts were not independently reported. No sum with the historical627-run
+census or118 recovered attempts is asserted. This is source-bound scoped
+preservation evidence, not whole-bookHIGH, Lean quotation, source-image,
+rendering, human, R/F, publication or adoption acceptance. Target module blobs
+match heldf06cb607; that file-hash check is not a whole-tree review-sync seal.
