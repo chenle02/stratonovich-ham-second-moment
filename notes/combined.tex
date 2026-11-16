@@ -49,7 +49,42 @@
 \makeatletter
 \def\lc@equation{Equation}
 \newcommand{\lcRef}[3]{\def\lc@kind{#1}%
+\@ifundefined{lc@seen@#2}{\hypertarget{lean-entry:#2}{}%
+\global\@namedef{lc@seen@#2}{}}{}%
 \ifx\lc@kind\lc@equation Equation~\eqref{#2}\else #1~\ref{#2}\fi}
+\makeatother
+% Lean coverage markers. A line \LeanMarker{label} directly before a result
+% puts a fixed-width marker on its heading line and the title on the next
+% line. The words and link targets are in lean-markers-data.tex (generated).
+% The slot has one width and height for every marker, so later wording cannot
+% move a line. Results without such a line are typeset as before.
+\input{notes/lean-markers-data}
+\makeatletter
+\let\lean@pending\@empty
+\newcommand{\LeanMarker}[1]{\gdef\lean@pending{#1}}
+% An empty tag is a reserved slot: same box, nothing printed, no link.
+\newcommand{\lean@slot}[1]{%
+\expandafter\ifx\csname LeanTag@#1\endcsname\@empty
+\raisebox{0pt}[12pt][4pt]{\makebox[7cm][l]{}}%
+\else
+\hyperlink{\csname LeanTarget@#1\endcsname}{%
+\raisebox{0pt}[12pt][4pt]{\makebox[7cm][l]{\normalfont
+[\csname LeanTag@#1\endcsname]}}}%
+\fi}
+\let\lean@thmhead@plain\thmhead@plain
+\renewcommand{\thmhead@plain}[3]{%
+\ifx\lean@pending\@empty
+\lean@thmhead@plain{#1}{#2}{#3}%
+\else
+\@ifundefined{LeanTag@\lean@pending}{\PackageError{leanmarker}{No marker
+data for \lean@pending}{Regenerate notes/lean-markers-data.tex.}}{}%
+\parbox[t]{\linewidth}{\raggedright
+\thmname{#1}\thmnumber{\@ifnotempty{#1}{ }\@upn{#2}}.\hfill
+\lean@slot{\lean@pending}\thmnote{\par #3.}\strut}%
+\global\let\lean@pending\@empty
+\thm@headpunct{}\hfil\penalty-\@M
+\fi}
+\let\thmhead\thmhead@plain
 \makeatother
 \newcommand{\lcCategory}[2]{\par\Needspace{6\baselineskip}\medskip\noindent\textbf{#1}~(#2)\par\nopagebreak\smallskip}
 \newenvironment{lcTable}{\noindent\small\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.27\textwidth}>{\raggedright\arraybackslash}p{0.70\textwidth}@{}}}{\end{tabular}\par}
@@ -2553,6 +2588,7 @@ give explicit positive-measure witnesses.
 
 \section{A small-order check and a source uniformity issue}
 
+\LeanMarker{L:white-test}
 \begin{lemma}[White-space test]\label{L:white-test}
   For $d = \alpha = 1$ and $\gamma = \delta_0$, put $c_0 =
   ((1-\alpha_0)(2-\alpha_0)(3-\alpha_0))^{-1}$. Then
@@ -2622,6 +2658,7 @@ Lemma~\ref{L:translated-covariance-CS} and
 Remark~\ref{R:source-case2-time-shift} for the independent justification and the
 exact source qualification.
 
+\LeanMarker{L:damped-homogeneous-norms}
 \begin{lemma}[Homogeneous damped norms and temporal tails]
   \label{L:damped-homogeneous-norms}
   Under Hypothesis~\ref{H:homog}, the integrals
@@ -3602,6 +3639,7 @@ widths; Proposition~\ref{P:mild-construction} uses this bound.
 We now show that the series of the fixed-order terms solves the mild
 equation.
 
+\LeanMarker{P:mild-construction}
 \begin{proposition}[Mild construction from the fixed-order limits]
   \label{P:mild-construction}
   Under Hypothesis~\ref{H:homog}, the series $u(t,x) = \sum_{n\ge0}X_n(t,x)$ is
@@ -3914,6 +3952,7 @@ and the spectral mass $V$ are not identified. Let $p_\epsilon$ be the Brownian
 Gaussian density with covariance $\epsilon I$, and set $\Gamma_\epsilon =
 p_{2\epsilon}*\Gamma$.
 
+\LeanMarker{L:phase-contractions}
 \begin{lemma}[Two static contraction bounds]\label{L:phase-contractions}
   For $\lambda > 0$, $q \in \R^3$, $a > 0$, and $\epsilon > 0$,
   \begin{align}
@@ -4130,6 +4169,7 @@ space and $F$ is holomorphic on a neighborhood of $\overline{W(T)}$, then
 The theorem is imported, not proved here. All operators to which we apply it
 below are bounded; no unbounded-operator extension is assumed.
 
+\LeanMarker{L:complex-phase}
 \begin{lemma}[A complex phase bound]\label{L:complex-phase}
   Let $H$ be a complex Hilbert space, $A_0$ a bounded nonnegative selfadjoint
   operator, and $B$ a bounded selfadjoint operator. Write $A_\rho = \rho^2+A_0$.
@@ -4314,6 +4354,7 @@ Janson~\cite{janson:97:gaussian}*{Section~13.2, Theorem~13.7, pp.~200--201}.
 The following calculation records the normalization used for the finite
 occupation spaces in this argument.
 
+\LeanMarker{L:fock-form}
 \begin{lemma}[Gaussian cutoff form bound]\label{L:fock-form}
   Retain the covariance and $R_\alpha$ of Section~\ref{S:static-phase}. Fix
   $\epsilon > 0$. Represent the smoothed real field on independent standard
@@ -4376,6 +4417,7 @@ occupation spaces in this argument.
 Lemma~\ref{L:fock-form} bounds the field only on Hermite degrees at most $N$.
 We now check that this cutoff does not change the finite words that we need.
 
+\LeanMarker{L:finite-word-cutoff}
 \begin{lemma}[Exact cutoffs for finite Gaussian words]\label{L:finite-word-cutoff}
   Let $g_{ij}$, $1 \le i \le M$, $1 \le j \le m_i$, be independent standard real
   Gaussian coordinates, grouped by color $i$, and let $\mathscr{X}$ be a complex
@@ -4426,6 +4468,7 @@ Proposition~\ref{P:static-phase-variance} controls only the first variance
 coefficient. We now combine Lemmas~\ref{L:complex-phase}, \ref{L:fock-form}
 and~\ref{L:finite-word-cutoff} to bound every static Duhamel order.
 
+\LeanMarker{P:static-phase-all-orders}
 \begin{proposition}[All regularized static phase orders]
   \label{P:static-phase-all-orders}
   Retain the full covariance class of Section~\ref{S:static-phase}. For real
@@ -4536,6 +4579,7 @@ and~\ref{L:finite-word-cutoff} to bound every static Duhamel order.
 
 \input{notes/figures/noise-memory-figure}
 
+\LeanMarker{C:static-interaction}
 \begin{corollary}[Summable static interaction bounds]
   \label{C:static-interaction}
   Let $\mathcal{S}_0(t)$ be free phase evolution and, for $\lambda h \le 1$,
@@ -4689,6 +4733,7 @@ cutoff bound in Lemma~\ref{L:fock-form} were stated for a covariance on
 $\R^3$. We now derive the needed column and finite-degree bounds for every
 admissible $d$.
 
+\LeanMarker{L:interval-contractions}
 \begin{lemma}[Dimension-independent Gaussian contractions]
   \label{L:interval-contractions}
   Uniformly in positive spatial smoothing and in finite Gaussian-mode and
@@ -4760,6 +4805,7 @@ admissible $d$.
   absorbed into a constant. This proves Lemma~\ref{L:interval-contractions}.
 \end{proof}
 
+\LeanMarker{L:interval-complex}
 \begin{lemma}[Complex sums and changing phase weights]
   \label{L:interval-complex}
   Let $A_0$ be bounded, nonnegative and selfadjoint, and let $V$ be bounded on
@@ -4851,6 +4897,7 @@ We first record an elementary bound for power series. The proof of
 Proposition~\ref{P:interval-coefficients} uses it to sum over the ways a total
 order $k$ splits among the interval fields.
 
+\LeanMarker{L:inventory-product}
 \begin{lemma}[A coefficient bound for a product with nonnegative coefficients]\label{L:inventory-product}
   For $k \ge 1$, define
   \[
@@ -4918,6 +4965,7 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
 
 \input{notes/figures/interval-allocations}
 
+\LeanMarker{L:fixed-split}
 \begin{lemma}[A fixed degree-split estimate]\label{L:fixed-split}
   Retain the finite interval fields above, with $R_\alpha > 0$ and $\sigma_i >
   0$. Fix integers $r_i,q_i,k_i \ge 0$ with $r_i+q_i = 2k_i$, and put $k =
@@ -5267,6 +5315,7 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   This proves Lemma~\ref{L:fixed-split}.
 \end{proof}
 
+\LeanMarker{P:interval-coefficients}
 \begin{proposition}[Uniform interval coefficients]\label{P:interval-coefficients}
   There is $C = C(\alpha,\alpha_0,L,c)$ such that, for real Schwartz phase $v$,
   every $k \ge 1$ satisfies
@@ -5465,6 +5514,7 @@ dimensions one and two its density is the ordered kernel $g_n$
 in~\eqref{E:expansion}. Set $\mathsf{g}_0^{T,x}$ equal to unit mass on the empty
 tuple. This definition introduces no kernel symmetrization.
 
+\LeanMarker{L:terminal-wick}
 \begin{lemma}[The finite terminal-chain Wick formula]\label{L:terminal-wick}
   Let $\mathcal{W}(s,y)$ be a centered real Gaussian field on $[0,T]\times\R^d$,
   $d = 1,2,3$, with covariance $\mathcal{K}(s,y;r,z)$. Suppose that $V =
@@ -5572,6 +5622,7 @@ Proposition~\ref{P:interval-coefficients} holds uniformly in the smoothing
 $\epsilon > 0$, but it concerns regularized fields only. We still have to pass
 to the unregularized solution.
 
+\LeanMarker{L:uniform-series-tail}
 \begin{lemma}[Uniform series tails from scaled moments]\label{L:uniform-series-tail}
   Fix $(T,x)$. For each positive regularization pair $(\epsilon,\delta)$, let
   $Y_n^{\epsilon,\delta}$ be the terms of Lemma~\ref{L:terminal-wick} for a
@@ -6053,6 +6104,7 @@ The letters $a,b,c,d$ denote increments within the nonempty chains; for $(1,3)$,
 $r$ is the time of the single vertex. Values on zero-gap sets do not affect
 these nonnegative integrals.
 
+\LeanMarker{P:white-four}
 \begin{proposition}[White-space order four]\label{P:white-four}
   Suppose that $d = \alpha = 1$ and $\gamma = \delta_0$. Each $J_{m,n,D}(t)$
   with $m+n = 4$ is given by the following table or by exchanging the two
@@ -6206,6 +6258,7 @@ these nonnegative integrals.
 
 \subsection{Riesz covariance: order two and an order-four integral}
 
+\LeanMarker{P:riesz-small}
 \begin{proposition}[Riesz finite coefficients]\label{P:riesz-small}
   Suppose $d = 1$, $0 < \alpha < 1$, $0 < \alpha_0 < 1$, and $\gamma(y) =
   c_\alpha|y|^{-\alpha}$ with $c_\alpha > 0$. With $\beta = 4-\alpha-\alpha_0$,
@@ -6424,6 +6477,7 @@ $\epsilon_e$ for every pair $e \in D$ and define
 \]
 This is an ordinary nonnegative integral; no pointwise delta value is used.
 
+\LeanMarker{L:d1-spatial}
 \begin{lemma}[Spatial estimate]\label{L:d1-spatial}
   Suppose~\eqref{E:d1-covariances} holds, $k \ge 1$, and $D$ is any pairing of
   the two chains. Orient every pair $(i,j)$ by $i < j$ and let $O_D$ and $C_D$
@@ -6504,6 +6558,7 @@ Define the total-order coefficients
 They do not depend on $x$, by spatial stationarity. By
 Proposition~\ref{P:mixed}, $\E u^2(t,x) = \sum_{k\ge0}A_k(t)$.
 
+\LeanMarker{P:d1-upper}
 \begin{proposition}[One-dimensional upper bound]\label{P:d1-upper}
   Under~\eqref{E:d1-covariances}, for every $k \ge 1$ and $t > 0$,
   \begin{equation}\label{E:d1-coefficient}
@@ -6601,6 +6656,7 @@ $h$, and $G_{h,\eta} = p_\eta*G_h$ for $\eta > 0$; set $G_{h,0} = G_h$. The
 measure notation includes the sphere kernel in dimension three. The mixed-moment
 definition of $A_k(t)$ is now applied to the present $d$-dimensional solution.
 
+\LeanMarker{L:low-alpha-convolution}
 \begin{lemma}[Low-$\alpha$ convolution bound]\label{L:low-alpha-convolution}
   Under the preceding assumptions with $0 < \alpha < 1$, for every $R,h > 0$,
   \begin{equation}\label{E:low-alpha-radial}
@@ -6659,6 +6715,7 @@ definition of $A_k(t)$ is now applied to the present $d$-dimensional solution.
   Lemma~\ref{L:low-alpha-convolution}.
 \end{proof}
 
+\LeanMarker{L:alpha-one-convolution}
 \begin{lemma}[Degree-one convolution bound]\label{L:alpha-one-convolution}
   Under the preceding covariance assumptions with $\alpha = 1$, for every $h >
   0$, $\epsilon > 0$, $\eta \ge 0$, and $z \in \R^d$,
@@ -6719,6 +6776,7 @@ definition of $A_k(t)$ is now applied to the present $d$-dimensional solution.
   Lemma~\ref{L:alpha-one-convolution}.
 \end{proof}
 
+\LeanMarker{P:low-alpha-upper}
 \begin{proposition}[Upper bound for $\alpha \le 1$]\label{P:low-alpha-upper}
   Suppose that Hypothesis~\ref{H:homog} and the standing covariance positivity
   assumptions hold, $d \in \{1,2,3\}$, $0 < \alpha \le 1$, and $V > 0$. Define
@@ -6822,6 +6880,7 @@ definition of $A_k(t)$ is now applied to the present $d$-dimensional solution.
 
 \subsection{Checks on the scale, constants and scope}
 
+\LeanMarker{C:d1-first-calibration}
 \begin{corollary}[First-moment calibration]\label{C:d1-first-calibration}
   Let $K_*$ be $K_{\rm sp}$ under~\eqref{E:d1-covariances}, or $K_{\rm sp}^{\rm
   gen}$ under the hypotheses of Proposition~\ref{P:low-alpha-upper}. Put
@@ -7075,6 +7134,7 @@ the translated wave convolution diverges.
 
 % This lemma discharges H:spatial-maximum only for its explicitly stated
 % isotropic Riesz ranges.
+\LeanMarker{L:higher-riesz}
 \begin{lemma}[Riesz spatial maxima]\label{L:higher-riesz}
   Let $\gamma(x) = c|x|^{-\alpha}$, $c > 0$. In dimension three, for $1 < \alpha
   < 2$, Hypothesis~\ref{H:spatial-maximum} holds with the optimal uniform
@@ -8020,6 +8080,7 @@ full upper and intrinsic formula do not use these factorizations.
 We first construct the product endpoints. Zero coordinate exponents below mean
 constant factors, not one-dimensional white noise.
 
+\LeanMarker{L:product-endpoints}
 \begin{lemma}[Strict product endpoints]\label{L:product-endpoints}
   Let $0 \le a_j < 1$ for $j = 1,2,3$, let $\alpha = a_1+a_2+a_3 \in (1,2)$, and
   choose $0 < \vartheta < 2-\alpha$. Put $\chi =
@@ -8149,6 +8210,7 @@ This is a condition on deterministic covariance measures and their Gaussian
 convolutions. It assumes no moment estimate. We do not assert that every
 homogeneous covariance in dimension three admits these endpoints.
 
+\LeanMarker{L:plane-endpoints}
 \begin{lemma}[Plane-supported endpoints]\label{L:plane-endpoints}
   Retain~\eqref{E:three-parameters}, let $c > 0$, and let $a_1,a_2 \ge 0$
   satisfy $s = a_1+a_2 = \alpha-1$. In coordinates $(y,z) \in \R^2\times\R$, put
@@ -8231,6 +8293,7 @@ homogeneous covariance in dimension three admits these endpoints.
   Lemma~\ref{L:plane-endpoints}.
 \end{proof}
 
+\LeanMarker{L:endpoint-closure}
 \begin{lemma}[Linear images and finite positive sums]\label{L:endpoint-closure}
   Fix the parameters in~\eqref{E:three-parameters}. The covariance comparison of
   Hypothesis~\ref{H:three-endpoints} is preserved by simultaneously pushing the
@@ -8709,6 +8772,7 @@ penalty tends to zero.
   the asymptotic one. This proves Proposition~\ref{P:three-transfer}.
 \end{proof}
 
+\LeanMarker{C:three-product-riesz}
 \begin{corollary}[Ordinary product and Riesz covariances in dimension three]
   \label{C:three-product-riesz}
   Let $d = 3$, $0 < \alpha_0 < 1$, and $1 < \alpha < 2-\alpha_0$. The
@@ -8755,6 +8819,7 @@ penalty tends to zero.
   applies. This proves Corollary~\ref{C:three-product-riesz}.
 \end{proof}
 
+\LeanMarker{C:three-finite-images}
 \begin{corollary}[Finite sums of linear images]\label{C:three-finite-images}
   Let $d = 3$, $0 < \alpha_0 < 1$, and $1 < \alpha < 2-\alpha_0$. Let
   $\Gamma_i$, $1 \le i \le N$, belong to one of the following classes, always
@@ -9144,6 +9209,7 @@ corresponding static terms. Set
   proves Lemma~\ref{L:mean-coefficient-holder}.
 \end{proof}
 
+\LeanMarker{L:positive-series-type}
 \begin{lemma}[Type of a positive coefficient series]\label{L:positive-series-type}
   Let $\nu \ge 1$, $c_k \ge 0$, $c_0 = 1$, and suppose $F(z) =
   \sum_{k\ge0}c_kz^k < \infty$ for every $z \ge 0$. If
@@ -9438,6 +9504,7 @@ For \(p=1,2\) define the normalized time growth rates
 \end{equation}
 Here \(p=1\) concerns \(\E u\), not \(\E|u|\).
 
+\LeanMarker{P:moment-growth-logconvex}
 \begin{proposition}[Log-convexity of the upper growth type]
   \label{P:moment-growth-logconvex}
   The functions \(\overline{\Lambda}_p(a)\), \(p=1,2\), are positive and finite
@@ -9496,6 +9563,7 @@ Here \(p=1\) concerns \(\E u\), not \(\E|u|\).
   exponential. This proves Proposition~\ref{P:moment-growth-logconvex}.
 \end{proof}
 
+\LeanMarker{C:static-moment-constant-continuity}
 \begin{corollary}[Recovery of the static moment constant]
   \label{C:static-moment-constant-continuity}
   Put \(C_p=p^{\kappa_{\rm st}}L_0\), \(p=1,2\). For every fixed
@@ -9567,6 +9635,7 @@ admissible case \(d=\alpha=1\), \(\Gamma=\delta_0\), \(0<a<1\), and
 \(G_s(y)=\frac12\mathbf1_{\{|y|<s\}}\). This is a falsification case for an
 intended general representation, not a restriction of Theorem~\ref{T:intro-second-moment}.
 
+\LeanMarker{L:white-clock-laplace}
 \begin{lemma}[White-space low-order Laplace transforms]
   \label{L:white-clock-laplace}
   The \((1,1)\) cross-pair gap transform is
@@ -9675,6 +9744,7 @@ average of \(\Gamma(B_1(u)-B_2(v))\). This average is interpreted by spatial
 heat regularization. For the white covariance it is \((2\pi(u+v))^{-1/2}\). The
 analytic covariance, not its absolute-value bound, is being copied.
 
+\LeanMarker{P:clock-copy-obstruction}
 \begin{proposition}[Obstruction to unweighted constant-correlation clock copying]
   \label{P:clock-copy-obstruction}
   For every covariance and parameters just specified, put
