@@ -1,0 +1,319 @@
+\section{Occupation bounds for the intrinsic constant}
+\label{S:intrinsic-occupation-ceiling}
+
+Retain all original models and amplitudes, put $a = \alpha_0$, $q = 4-\alpha >
+2$, $k = 3-\alpha = q-1 > 1$ and $m = q/k$. The temporal kernel is $K(s,t) =
+|s-t|^{-a}$ on $I = (0,1)$; its diagonal value may be set to zero. Let
+$\mathcal{O}$ be the full strongly $H^1$-measurable unit-profile class defined
+before Proposition~\ref{P:occupation-physical-class}. Here we use the
+\emph{original} kernel, defining
+\begin{equation}\label{E:raw-occupation-definitions}
+  \begin{aligned}
+    A(g)&=\int_{I^2}K(s,t)B_\Gamma(g_s^2,g_t^2)\ud s\ud t,\\
+    C_{\rm occ}&=\sup_{g\in\mathcal{O}}
+    \frac{A(g)}{T(g)^{\alpha/2}},&
+    \mathcal{E}_\zeta^{\mathcal{O}}
+    &=\sup_{g\in\mathcal{O}}\{A(g)-\zeta T(g)\},\qquad \zeta>0.
+  \end{aligned}
+\end{equation}
+The scalar penalty $\zeta$ is not a spatial mask. These objects differ from the
+earlier damped-kernel energy. Assume $\Gamma \ne 0$ until the direct zero case
+below.
+
+\LeanMarker{L:occupation-raw-square}
+\begin{lemma}[Full-profile squares in the original space]
+  \label{L:occupation-raw-square}
+  There is a continuous map $Q:H^1(\R^d;\R) \to H_{\mathrm{sp}}$ with
+  \[
+    \langle Q(f),Q(h)\rangle_{H_{\mathrm{sp}}}
+    =B_\Gamma(f^2,h^2),\qquad
+    \|Q(f)\|^2=A_{\mathrm{sp}}(f).
+  \]
+  For $g \in \mathcal{O}$, the element $\rho_g = J_{H_{\mathrm{sp}}}(s\mapsto
+  Q(g_s))$ belongs to the original $H_I$ and satisfies
+  \begin{equation}\label{E:occupation-raw-identities}
+    \|\rho_g\|_{H_I}^2=A(g),\qquad
+    \langle\Psi,\rho_g\rangle_{H_I}
+    =\int_I\int_{\R^d}h_{\Psi,s}(x)g_s(x)^2\ud x\ud s
+  \end{equation}
+  for every $\Psi \in \mathcal{C}_{\mathrm{pos}}$. In particular,
+  \[
+    \langle\Psi,\rho_g\rangle_{H_I}\le\sqrt{v_\Psi A(g)}.
+  \]
+\end{lemma}
+
+\begin{proof}
+  Approximate $f$ in $H^1$ by real compact smooth $f_n$.
+  Proposition~\ref{P:spatial-four-linear} gives
+  \[
+    \|f_n^2-f_l^2\|_{H_{\mathrm{sp}}}^2
+    =C_4(f_n-f_l,f_n+f_l,f_n-f_l,f_n+f_l)
+    \le R_{\mathrm{sp}}N(f_n-f_l)^2N(f_n+f_l)^2\to0.
+  \]
+  Here $N$ is continuous on $H^1$ and $N(f) \le \|f\|_{H^1}$. Completeness
+  defines $Q(f)$; interlacing two approximating sequences proves independence.
+  Passing the physical four-linear continuity and Hilbert pairings to limits
+  proves the first identities. The same difference bound, first for smooth
+  approximants and then by passage to the limit, proves continuity of $Q$.
+
+  Thus, $F_g(s) = Q(g_s)$ is strongly measurable. Writing $b_s = \|\nabla
+  g_s\|_2^2$, the unit norm and $0 < \alpha/2 < 1$ give
+  \[
+    \int_I\|F_g(s)\|^2\ud s
+    \le R_{\mathrm{sp}}\int_I b_s^{\alpha/2}\ud s
+    \le R_{\mathrm{sp}}T(g)^{\alpha/2}<\infty .
+  \]
+  Lemma~\ref{L:positive-raw-embedding} now constructs $\rho_g$ and identifies
+  its squared norm with the physical $A(g)$. Joint measurability and
+  representative independence follow from the continuous physical pairing on
+  $(H^1)^2$. Absolute time integrability follows from the same Schur bound.
+
+  Choose one compact smooth $\chi$ equal to one on all spatial supports of
+  $\Psi_t$. For real $f \in H^1$, smooth approximation gives
+  \[
+    \langle\Psi_t,Q(f)\rangle_{H_{\mathrm{sp}}}
+    =\lim_n B_\Gamma(\Psi_t,f_n^2)
+    =C_4(\chi,\Psi_t,f,f)=B_\Gamma(\Psi_t,f^2).
+  \]
+  Proposition~\ref{P:spatial-four-linear} justifies these absolute integrals and
+  limits. Polarizing~\eqref{E:positive-bochner-inclusion} gives
+  \[
+    \langle\Psi,\rho_g\rangle
+    =\int_{I^2}K(s,t)\langle\Psi_t,Q(g_s)\rangle_{H_{\mathrm{sp}}}
+    \ud t\ud s .
+  \]
+  The absolute integrand is bounded by the product of two $H_{\mathrm{sp}}$
+  norms against $K$, integrable by Schur and $L^2$ Cauchy--Schwarz. Evenness of
+  $\Gamma$ and Tonelli for the nonnegative physical integrands
+  yield~\eqref{E:occupation-raw-identities}. Hilbert Cauchy--Schwarz with
+  $\|\Psi\|^2 = v_\Psi$ proves the bound. No rough occupation is inserted into a
+  stochastic flow. This proves Lemma~\ref{L:occupation-raw-square}.
+\end{proof}
+
+\LeanMarker{P:raw-occupation-energy}
+\begin{proposition}[Original occupation energy and dilation]
+  \label{P:raw-occupation-energy}
+  With $K_0 = 2^a/(1-a)$,
+  \[
+    0<C_{\rm occ}\le K_0R_{\mathrm{sp}}<\infty .
+  \]
+  Moreover,
+  \begin{align}
+    \mathcal{E}_\zeta^{\mathcal{O}}
+    &=D_\zeta C_{\rm occ}^{2/(2-\alpha)},&
+    D_\zeta&=\frac{2-\alpha}{2}
+    \left(\frac{\alpha}{2\zeta}\right)^{\alpha/(2-\alpha)},
+    \label{E:raw-occupation-energy}\\
+    C_{\rm occ}
+    &=\left(\frac{2\mathcal{E}_\zeta^{\mathcal{O}}}{2-\alpha}\right)^{(2-\alpha)/2}
+    \left(\frac{2\zeta}{\alpha}\right)^{\alpha/2}.
+    \label{E:raw-occupation-ratio}
+  \end{align}
+  In particular, $\mathcal{E}_\zeta^{\mathcal{O}} > 0$ is finite and equals
+  $\zeta^{-\alpha/(2-\alpha)}\mathcal{E}_1^{\mathcal{O}}$.
+\end{proposition}
+
+\begin{proof}
+  A unit $H^1$ profile has positive gradient energy: a zero weak gradient makes
+  it constant, and an $L^2$ constant on $\R^d$ is zero. Hence, $0 < T(g) <
+  \infty$. Spatial covariance Cauchy--Schwarz gives $B_\Gamma(g_s^2,g_t^2) \le
+  R_{\mathrm{sp}}b_s^{\alpha/4}b_t^{\alpha/4}$. Schur with row bound $K_0$, then
+  concavity, proves
+  \begin{equation}\label{E:raw-occupation-bound}
+    0\le A(g)\le K_0R_{\mathrm{sp}}T(g)^{\alpha/2}.
+  \end{equation}
+  A fixed compact smooth unit profile, constant in time, belongs to
+  $\mathcal{O}$ and has positive $A$ by Proposition~\ref{P:spatial-four-linear}.
+  This proves positivity and finiteness of $C_{\rm occ}$.
+
+  The map $(U_\ell g)_s(x) = \ell^{d/2}g_s(\ell x)$ is an $H^1$ isomorphism
+  preserving unit mass and strong measurability. It has inverse $U_{1/\ell}$ and
+  is a bijection on $\mathcal{O}$. The physical Radon change of variables gives
+  \[
+    A(U_\ell g)=\ell^\alpha A(g),\qquad
+    T(U_\ell g)=\ell^2T(g).
+  \]
+  Indeed, the two densities contribute $\ell^{2d}$, $\ud x$ contributes
+  $\ell^{-d}$, and the pushforward of $\Gamma$ contributes $\ell^{\alpha-d}$.
+  Approximation extends the identity to full $H^1$. Taking the union over
+  $g,\ell$ leaves the class unchanged. For fixed $A,T > 0$, the derivative of
+  $A\ell^\alpha-\zeta T\ell^2$ has the sign of $\alpha A-2\zeta
+  T\ell^{2-\alpha}$. Its global maximum occurs at $\ell = (\alpha A/(2\zeta
+  T))^{1/(2-\alpha)}$ and equals $D_\zeta[A/T^{\alpha/2}]^{2/(2-\alpha)}$. For
+  $A = 0$ the supremum is zero as $\ell\downarrow0$. Bounding every ratio by
+  $C_{\rm occ}$ gives one inequality in~\eqref{E:raw-occupation-energy}. Fixed
+  ratios approaching its positive supremum give the other by continuity of the
+  positive power. Algebra gives~\eqref{E:raw-occupation-ratio} and the penalty
+  scaling. No optimizer or minimax interchange is assumed. This proves
+  Proposition~\ref{P:raw-occupation-energy}.
+\end{proof}
+
+\LeanMarker{L:occupation-rayleigh-selection}
+\begin{lemma}[Countable Rayleigh near-occupations]
+  \label{L:occupation-rayleigh-selection}
+  For fixed $\Psi \in \mathcal{C}_{\mathrm{pos}}$ and every $\varepsilon > 0$
+  there is $g_\varepsilon \in \mathcal{O}$ such that
+  \begin{equation}\label{E:occupation-rayleigh-selection}
+    I_\Psi^2+T(g_\varepsilon)
+    \le\sqrt{v_\Psi A(g_\varepsilon)}+\varepsilon .
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  The real $H^1$ space is separable, for example by its isometric embedding
+  $f\mapsto(f,\nabla f)$ into a finite product of $L^2$ spaces. Compact smooth
+  density therefore supplies a countable real family. Discard zero and normalize
+  each member in $L^2$ to obtain $f_j$ dense in the $L^2$-unit $H^1$ class.
+  Normalization preserves convergence because the approximating $L^2$ norms tend
+  to one. Put $b_j = \|\nabla f_j\|_2^2$ and $R_j(s) = \int
+  h_{\Psi,s}f_j^2-b_j$. Bounded-potential form continuity and
+  Proposition~\ref{P:variational-unmasked-rate} give $\lambda_{\Psi,s}^2 =
+  \sup_jR_j(s)$. The canonical functions are measurable, indeed continuous. Let
+  $U_j = \{s:R_j(s)>\lambda_{\Psi,s}^2-\varepsilon\}$, $A_1 = U_1$ and $A_j =
+  U_j\setminus\bigcup_{i<j}U_i$. These first-index cells are Borel and cover
+  $I$. Put $g_\varepsilon(s) = f_j$ on $A_j$. Finite-valued truncations using
+  $f_1$ on the remaining cells converge pointwise in $H^1$, proving strong
+  measurability. A null-set representative may be filled by $f_1$.
+
+  With $H_\Psi = \sup_{s,x}h_{\Psi,s}(x) < \infty$, the selection implies
+  \[
+    b(g_\varepsilon(s))
+    <\int h_{\Psi,s}g_\varepsilon(s)^2-\lambda_{\Psi,s}^2+\varepsilon
+    \le H_\Psi+\varepsilon .
+  \]
+  Thus, it belongs to the $\mathcal{O}$. Integrating the near-Rayleigh
+  inequality, using Lemma~\ref{L:occupation-raw-square}, gives
+  \[
+    \int_I\lambda_{\Psi,s}^2\ud s+T(g_\varepsilon)
+    \le\langle\Psi,\rho_{g_\varepsilon}\rangle+\varepsilon
+    \le\sqrt{v_\Psi A(g_\varepsilon)}+\varepsilon .
+  \]
+  Time Cauchy--Schwarz on the unit interval gives $I_\Psi^2 \le
+  \int_I\lambda_{\Psi,s}^2\ud s$. This
+  proves~\eqref{E:occupation-rayleigh-selection}. No eigenvector, continuum
+  selector or limiting occupation is required. This proves
+  Lemma~\ref{L:occupation-rayleigh-selection}.
+\end{proof}
+
+For $0 \le b < q/2$ define $F_b(0) = 0$ and
+\begin{equation}\label{E:occupation-scalar-map}
+  F_b(z)=k\left[
+  \frac{(q-2b)^{(q-2b)/2}}{8(q-b)^{q-b}}
+  \left(\frac{2z}{2-\alpha}\right)^{(2-\alpha)/2}
+  \right]^{1/k},\qquad z>0.
+\end{equation}
+At $b = 0$ this is exactly the map in~\eqref{E:spatial-static-energy-score}. The
+display parameter $b$ does not change the temporal exponent $a$.
+
+\LeanMarker{T:intrinsic-occupation-ceiling}
+\begin{theorem}[The computed occupation ceiling]\label{T:intrinsic-occupation-ceiling}
+  For every variational value over nonnegative controls coefficient
+  $\mathfrak{c}$,
+  \begin{align}
+    S_{\mathfrak{c}}^{\mathrm{pos}}
+    &\le U_{\mathfrak{c}}
+    :=\mathfrak{c}^m k
+    \left[\frac{\alpha^{\alpha/2}C_{\rm occ}}{8q^{q/2}}\right]^{1/k}
+    \label{E:occupation-score-ceiling}\\
+    &=\mathfrak{c}^m(2\zeta)^{\alpha/(2k)}
+    F_0(\mathcal{E}_\zeta^{\mathcal{O}}),\qquad \zeta>0.\notag
+  \end{align}
+  In particular, the original moment constant satisfies $C_2(\Gamma,a) \le U_2$
+  for every original model. This ceiling is not asserted to be attained or equal
+  to $C_2$.
+\end{theorem}
+
+\begin{proof}
+  Fix $\Psi$ and write $v = v_\Psi$, $C = C_{\rm occ}$ and $\beta = \alpha/4$.
+  Lemma~\ref{L:occupation-rayleigh-selection} gives $I_\Psi^2 \le
+  \sqrt{vC}T^\beta-T+\varepsilon$ for some $T > 0$. Bound it by the supremum
+  over all $T \ge 0$ before sending $\varepsilon\downarrow0$. If $v = 0$, that
+  supremum is zero. If $v > 0$, the derivative $\beta\sqrt{vC}T^{\beta-1}-1$
+  strictly decreases from infinity to $-1$. Its unique positive zero is $T_* =
+  (\beta\sqrt{vC})^{1/(1-\beta)}$. The global maximum equals
+  $(q/4)(\alpha/4)^{\alpha/q}(vC)^{2/q}$. In both cases,
+  \[
+    I_\Psi\le Dv^{1/q},\qquad
+    D=\sqrt{q/4}(\alpha/4)^{\alpha/(2q)}C^{1/q}.
+  \]
+  The scalar function $\mathfrak{c} Dv^{1/q}-v/2$ vanishes at zero, tends to
+  minus infinity, and has strictly decreasing derivative. Its unique positive
+  maximum is at $v_* = (2\mathfrak{c} D/q)^{q/k}$, with value $kv_*/2$. Direct
+  positive-power algebra gives
+  \[
+    (2D/q)^q=q^{-q/2}(\alpha/4)^{\alpha/2}C .
+  \]
+  Since $k+\alpha = 3$, the maximum is precisely $U_{\mathfrak{c}}$
+  in~\eqref{E:occupation-score-ceiling}, with denominator eight. Substitution
+  of~\eqref{E:raw-occupation-ratio} gives the second form, retaining the factor
+  $(2\zeta)^{\alpha/(2k)}$. Take the supremum over the smooth positive-control
+  class. Theorem~\ref{T:intrinsic-second-moment} identifies $C_2 =
+  S_2^{\mathrm{pos}}$, proving the moment ceiling. The penalty factor cancels
+  its energy scaling, so the ceiling is independent of $\zeta$. This proves
+  Theorem~\ref{T:intrinsic-occupation-ceiling}.
+\end{proof}
+
+\LeanMarker{C:intrinsic-spatial-bracket}
+\begin{corollary}[A common spatial-energy bracket]
+  \label{C:intrinsic-spatial-bracket}
+  With the same original covariance and $M_a$
+  of~\eqref{E:temporal-equilibrium-mass},
+  \begin{equation}\label{E:intrinsic-spatial-bracket}
+    2^m M_a^{-1/k}F_0(\mathcal{E}_{\mathrm{sp}})
+    \le C_2(\Gamma,a)
+    \le2^m K_0^{1/k}F_0(\mathcal{E}_{\mathrm{sp}}).
+  \end{equation}
+  For $\Gamma \ne 0$ there is also the comparison of the energies defined here
+  \[
+    C_2\le2^mF_0(\mathcal{E}_{1/2}^{\mathcal{O}})
+    <2^mF_a(\mathcal{E}_{1/2}^{\mathcal{O}}).
+  \]
+\end{corollary}
+
+\begin{proof}
+  Insert $C_{\rm occ} \le K_0R_{\mathrm{sp}}$ into
+  \eqref{E:occupation-score-ceiling} and use \eqref{E:spatial-energy-map}. This
+  gives the upper bracket; the lower is \eqref{E:spatial-static-energy-score}
+  multiplied by $2^m$, using Theorem~\ref{T:intrinsic-second-moment}. Both
+  concern one common spatial energy, not an assumed first moment.
+
+  For completeness put
+  \[
+    \Delta=\tfrac12[q\log q+(q-2a)\log(q-2a)]
+    -(q-a)\log(q-a)>0.
+  \]
+  Here $a > 0$ and $q-2a > 2-a > 1$. The scalar inequality for the difference of
+  logarithms applies at exactly these conditions, without $q \ge 3$.
+  Equivalently the strict midpoint convexity of $x\log x$ on positive arguments,
+  whose second derivative is $1/x$, gives the sign. Subtracting logarithms
+  in~\eqref{E:occupation-scalar-map} gives
+  \[
+    \log(F_a(z)/F_0(z))=\Delta/k,\qquad
+    \frac{\mathfrak{c}^mF_a(\mathcal{E}_\zeta^{\mathcal{O}})}{U_{\mathfrak{c}}}
+    =\exp\!\left(\frac{\Delta-(\alpha/2)\log(2\zeta)}{k}\right).
+  \]
+  At $\zeta = 1/2$ this and the ceiling prove the strict comparison. At $\zeta =
+  1$ the comparison is not universally favorable. For $\alpha = 5/4,a = 1/2,d =
+  2$,
+  \[
+    8[\Delta-(\alpha/2)\log2]
+    =\log\frac{11^{11}7^7}{2^5 9^{18}}<0,
+  \]
+  since $11^{11}7^7 = 234966429149994773$ and $2^5 9^{18} =
+  4803028329503971872$. This contrasts computed bounds; it refutes no moment
+  inequality. This proves Corollary~\ref{C:intrinsic-spatial-bracket}.
+\end{proof}
+
+The kinetic normalization matters in this comparison.
+No-go~\ref{P:nogo-28} shows that changing it can reverse an ordering
+between the computed ceiling and a comparison value. That example makes
+no claim about the ordering of the actual moment constant.
+
+
+For $\Gamma = 0$, all original means and variational values vanish and $C_2 =
+0$. Here $Q = 0$, $A = 0$ and $C_{\rm occ} = 0$. The supremum of $-\zeta T(g)$
+is zero: dilate a fixed unit compact profile by $\ell^{d/2}f(\ell x)$ and let
+$\ell\downarrow0$. The same argument gives $\mathcal{E}_{\mathrm{sp}} = 0$ and
+the earlier damped energy zero, without using a zero vector as a unit profile.
+With $F_b(0) = 0$, every non-strict bound above is the zero identity. These
+energies are not identified with Chen's printed energies.
