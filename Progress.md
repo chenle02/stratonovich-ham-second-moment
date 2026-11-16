@@ -49,9 +49,9 @@ Final source/PDF/ledger/disclosure/combined/review-sync reconciliation remains
 a publishing gate under Agent 16. No root push, R/F or release is implied.
 
 
-### RP002 prepared: fixed masks and displacement moments
+### RP002 complete: fixed masks and displacement moments
 
-Launched fresh as `readable-masked-moments-3d421ab8d43d4d4c9714a34663637ccc` at `2026-11-16T06:06:06.668958+00:00`; requested DeepSeek V4 Pro, combined reasoning/public cap 65,536 and timeout 3,600 seconds. The isolated native process is running; no result or acceptance is claimed. Full safe running custody is in `reviews/2026-11-16-readable-masked-moments-deepseek/STATUS.json`.
+Launched fresh as `readable-masked-moments-3d421ab8d43d4d4c9714a34663637ccc` at `2026-11-16T06:06:06.668958+00:00`; requested DeepSeek V4 Pro, combined reasoning/public cap 65,536 and timeout 3,600 seconds. The process finished normally at `2026-11-16T06:10:48.824921+00:00`, elapsed 282.156 seconds, with raw PASS/high and all three proof pairs complete and preserved. Full public-report adjudication supports scoped argument preservation; no source correction or callback is required. Native exact-prompt/model/zero-tool/stop and unchanged hashes are verified. This is not whole-book acceptance. Safe terminal custody is in `reviews/2026-11-16-readable-masked-moments-deepseek/STATUS.json`.
 
 Next independently assigned module: all three rewritten proofs of
 `notes/integrated_masked_moments.tex` at `5c55515b`, baseline `cdde711c`.
@@ -61,7 +61,7 @@ preserved. The frozen packet is
 context clearly designated as input rather than additional reviewed proofs.
 The route/profile are the same pure DeepSeek V4 Pro read-only route as RP001;
 requested cap65536 and walltimeout3600, one coordinator launch, no retry or
-fallback. It is dispatched and RUNNING with no independent verdict yet.
+fallback. It is terminal with scoped support, with raw grades and read limits retained.
 Files 2 and 3 now have pure-insertion successors `2ef7f814` and `e7e5fec9`;
 their earlier da065152/bc0932 QA is historical. Current correction-diff QA
 found preservation supported, but their new mechanical verification and

@@ -20,3 +20,7 @@ Source inputs are taken from the named held commits, not adopted by this
 metadata carrier. No source/PDF rewrite, push, R/F or public release follows.
 Private runtime identities, native reasoning and raw exports remain private.
 At freeze no generation call has started; outcome belongs in STATUS.json.
+
+## Terminal record
+
+One fresh call finished normally with raw PASS/high and three complete proof pairs. See REPORT.md, ADJUDICATION.md, PER-PROOF-RECORD.json and NATIVE-CHECK.json. No source change or retry; no global acceptance.
