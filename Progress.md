@@ -88,9 +88,10 @@ submitting unsent drafts or selecting pending choices.
   aggregate usage/cost/cap stays unknown where it occurs; no custom client
   is approved. Old protocol holds and mathematical gaps remain separate.
 - Current sequencing: unchanging five no-go scopes were allowed underB;
-  unlaunched core scopes wait for24's exact per-file FINAL report,16's check
-  and3's applicable source/policy checks. Already-active old-source calls keep
-  their old bindings. RP007 is on the main path; no unconditional repeat.
+  all further core dispatches wait for explicit chapter/file FINAL after any
+  chosen reader dispositions,16's check and3's source/policy checks. A state
+  table is not a release list. Already-active calls finish on their old inputs.
+  RP007 is on the main path; no unconditional repeat.
 - Le has also authorized fresh rereads for CHANGED+FINAL necessity successors
   under ChoiceB rules (16 receipt1170b0dc79af). Old reports stay on old commits;
   this is not a confidence-only rerun or blanket source/release clearance.
@@ -123,9 +124,11 @@ submitting unsent drafts or selecting pending choices.
   retained, maps/gates pass (known pilot WARN retained); own pinned481-page
   PDF byte-identical. This verifies the tip, not intermediate a105's offset PDF.
   It is not mathematical, quoted-step or final presentation acceptance.
-- Necessity successors remain HELD. Le accepted Chapter9 removal-only results;
-  16 verified final files16/17/18 and then3 may perform the applicable rereads.
-  No global core-dispatch restart follows from a draft or old source list.
+- Necessity successors remain HELD. Le accepted Chapter9 removal-only results
+  and the applicable rereads were launched. Selected reader additions have
+  since made uniform_mean/signed_static provisional again (3 receipt75bf125f7f43);
+  radius_anchor remains final. RP039/RP041 finish only their old inputs, without
+  cancellation, relaunch or transfer to revised bodies. No global restart.
 - Whole-candidate work and the AppendixE/managed-disclosure SOURCE_SLOT still
   require16's word. R/F/public release are not issued by mechanical checks,
   policyB, optional-reader choices or this summary. Le retains final decisions.
