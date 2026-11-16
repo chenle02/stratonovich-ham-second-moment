@@ -48,9 +48,12 @@
 % Appendix F helpers: \lcRef{kind}{label}{number} is a linked reference.
 \makeatletter
 \def\lc@equation{Equation}
+% The first \lcRef of an lcTable is the row's own result. It sets the link
+% target of that result's Lean marker; later ones are citations in the note.
+\newif\iflc@lead
 \newcommand{\lcRef}[3]{\def\lc@kind{#1}%
-\@ifundefined{lc@seen@#2}{\hypertarget{lean-entry:#2}{}%
-\global\@namedef{lc@seen@#2}{}}{}%
+\iflc@lead\global\lc@leadfalse
+\@ifundefined{LeanTag@#2}{}{\leavevmode\hypertarget{lean-entry:#2}{}}\fi
 \ifx\lc@kind\lc@equation Equation~\eqref{#2}\else #1~\ref{#2}\fi}
 \makeatother
 % Lean coverage markers. A line \LeanMarker{label} directly before a result
@@ -74,6 +77,21 @@
   LeanShort@#1\endcsname\vphantom{Lp}}%
 \end{tabular}}\hskip 0.9em}%
 \fi}
+% The same margin note for a displayed equation: \LeanEqMarker{label} is the
+% first thing in the display. It is an overlay at the left margin on the
+% equation's baseline and a math-open atom of zero size, so it changes no
+% spacing in the display.
+\newcommand{\LeanEqMarker}[1]{%
+\expandafter\ifx\csname LeanTag@#1\endcsname\@empty\else
+\mathopen{\hbox to\z@{\tikz[remember picture,overlay]
+\node[anchor=base east,inner sep=0pt,xshift=\dimexpr 1in+\oddsidemargin-10.8pt\relax]
+at (current page.west |- 0,0) {\normalfont\footnotesize
+\begin{tabular}[t]{@{}r@{}}%
+  \hyperlink{\csname LeanTarget@#1\endcsname}{Lean\vphantom{Lp}}\\[-2pt]
+  \hyperlink{\csname LeanTarget@#1\endcsname}{\csname
+  LeanShort@#1\endcsname\vphantom{Lp}}%
+\end{tabular}};\hss}}%
+\fi}
 \let\lean@thmhead@plain\thmhead@plain
 \renewcommand{\thmhead@plain}[3]{%
 \ifx\lean@pending\@empty\else
@@ -85,8 +103,27 @@ data for \lean@pending}{Regenerate notes/lean-markers-data.tex.}}{}%
 \lean@thmhead@plain{#1}{#2}{#3}}
 \let\thmhead\thmhead@plain
 \makeatother
-\newcommand{\lcCategory}[2]{\par\Needspace{6\baselineskip}\medskip\noindent\textbf{#1}~(#2)\par\nopagebreak\smallskip}
-\newenvironment{lcTable}{\noindent\small\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.27\textwidth}>{\raggedright\arraybackslash}p{0.70\textwidth}@{}}}{\end{tabular}\par}
+% A group of Appendix F: a numbered subsection with the group's wording
+% (its final period removed) and the number of results in it.
+\makeatletter
+\def\lc@nodot#1.\@nil{#1}
+\newcommand{\lcCategory}[2]{\subsection[\lc@nodot#1\@nil]{\raggedright\lc@nodot#1\@nil~(#2)}}
+\makeatother
+\makeatletter
+\newenvironment{lcTable}{\global\lc@leadtrue\noindent\small\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.27\textwidth}>{\raggedright\arraybackslash}p{0.70\textwidth}@{}}}{\end{tabular}\par}
+% Full-width entries of Appendix F, for results not formalized in full:
+% reference and title on one line, then labelled parts, then the supplied
+% inputs one by one. \lcEntry sets the same link target as a table row.
+\newcommand{\lcEntry}[2]{\par\Needspace{4\baselineskip}\smallskip
+\global\lc@leadtrue\noindent\textbf{#1.}\enspace\emph{#2.}\par\nopagebreak}
+\newcommand{\lcText}[1]{{\small\leftskip=1.5em\noindent #1\par}}
+\newcommand{\lcPart}[2]{{\small\leftskip=1.5em\noindent\textit{#1:} #2\par}}
+\newcommand{\lcInputs}[1]{{\small\leftskip=1.5em\noindent\textit{#1:}\par
+\nopagebreak}}
+\newcommand{\lcInput}[2]{{\small\leftskip=3.3em\noindent
+\llap{(#1)\enspace}#2\par}}
+\newcommand{\lcEntryEnd}{\par\smallskip}
+\makeatother
 \usepackage{url}
 \setlength{\emergencystretch}{3em}
 
@@ -2084,6 +2121,7 @@ positivity of covariance-dependent quantities impose $\Gamma \ne 0$ locally.
 
 Throughout we write
 \begin{equation}\label{E:kappa}
+  \LeanEqMarker{E:kappa}
   \kappa:=\frac{4-\alpha-\alpha_0}{3-\alpha}\in(1,2).
 \end{equation}
 
