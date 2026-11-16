@@ -864,6 +864,10 @@ regularization on pp.~13--14}.
   Lemma~\ref{L:pairing-product-envelope}; it uses neither the present
   proposition nor any infinite solution series.
 
+  Here $Y_m,Y_n$ denote the positive-width terminal integrals
+  $Y_m^{\boldsymbol a},Y_n^{\boldsymbol a}$ with the respective vertexwise
+  widths suppressed; their joint width limit is the $L^2$ limit in
+  Lemma~\ref{L:joint-fixed-order}.
   At positive noise widths Wick's formula gives zero at odd total order and the
   finite pairing sum at even total order. The Green-width limit is taken first,
   as in the construction preceding Lemma~\ref{L:spatial-wick-measures}. At fixed
@@ -900,11 +904,6 @@ regularization on pp.~13--14}.
   to the finitely many diagram limits proves \eqref{E:mixed-moment} with
   precisely~\eqref{E:mixed-diagram}.
 
-  The reversal is performed within each chain, so each has its own initial
-  root. Its action on labels is a bijection, and hence sends every pair
-  partition to exactly one pair partition of the same total label set.
-  Self-pairings remain included; nothing requires the two chain lengths to
-  agree.
 
   \medskip
   \noindent\textit{Step 3.~}We sum the mixed expectations using absolute norm
@@ -1112,8 +1111,7 @@ exact source qualification.
   measure contributes $\theta^\alpha$, and the resolvent contributes
   $\theta^{-2}$. For $N_2^2$, the two time Jacobians and two wave factors
   contribute $\theta^{-4}$, while the temporal kernel and spatial measure
-  contribute $\theta^{\alpha_0+\alpha}$. This gives exactly the two powers in
-  the statement.
+  contribute $\theta^{\alpha_0+\alpha}$.
 
   \medskip
   \noindent\textit{Step 4.~}We remove temporal tails using the absolute
@@ -1144,12 +1142,6 @@ exact source qualification.
     \int_S\lambda^{\alpha_0-1}
     \int m(\xi)B_\theta(\lambda,\xi)\mu(\ud\xi)\ud\lambda.
   \]
-  The pointwise wave product may have either sign, so multiplying it by a
-  smaller spatial weight would not directly compare the original triple
-  integrals. The representation just obtained first integrates time at fixed
-  $\lambda,\xi$, yielding the nonnegative quantity $B_\theta$. The
-  inequalities $0\le m\le1$ and $S\subset S'$ can now be applied inside a
-  nonnegative integral.
   Nonnegativity now proves the second comparison
   in~\eqref{E:damped-multiplier-comparison}. It is used after time integration,
   not pointwise on the oscillating product of wave Fourier kernels. The first
@@ -1291,11 +1283,6 @@ pairings are over the full time line.
   follows from $L^1$ convergence and the absolute bound
   after~\eqref{E:translated-covariance-form}.
 
-  The two translates need not share an origin. Cauchy--Schwarz uses them as
-  two vectors in one stationary covariance space, while simultaneous
-  translation is used only within each self-pairing. Therefore, neither a
-  predecessor-time offset nor a spatial separation contributes an extra
-  factor.
   Finally, positivity of $\nu$ and nonnegativity of $\gamma$ give
   \[
     Q_L(G_i^0,G_i^0)\uparrow N_C(G_i)^2,\qquad
@@ -1606,11 +1593,6 @@ Thus, $|Q_2|$ is even and $|Q_0|+|Q_2|/2 = n$.
   half-bound, using only the full induction hypothesis, not an assumed stronger
   induction.
 
-  In a first-norm slot, the inherited factor two remains present when the
-  convolution is bounded. The new removed endpoint contributes only
-  $N_{1,e_0}$, whereas its assigned product contains $2N_{1,e_0}$. This is the
-  source of the factor one half in every case, independent of which slot the
-  fused kernel occupied.
 
   \medskip
   \noindent\textit{Step 3.~}We treat same-chain pairs and the pair of terminal
@@ -1620,6 +1602,9 @@ Thus, $|Q_2|$ is even and $|Q_0|+|Q_2|/2 = n$.
   This also handles an empty chain. If both endpoints $u = n_1$ and $v = 2n$ are
   paired to each other, condition on their separate predecessors $(A,z),(B,w)$.
   The endpoint integral keeps the temporal argument $r-q+A-B$ in relative times.
+  Here $r=s_u-A$ and $q=s_v-B$ are relative times;
+  Lemma~\ref{L:translated-covariance-CS} applies with origins $(A,z),(B,w)$.
+  The symbol $q$ is reused as a vertex label only in the next step.
   The original stationary covariance Cauchy--Schwarz inequality bounds it by
   $N_{2,e}(G_u)N_{2,e}(G_v)$; translate each self pairing separately. Induction
   and adding $u,v$ to $Q_2$ prove the full bound. There is no origin factor or
@@ -1769,12 +1754,6 @@ empty chain.
   possible orders. This proves the bound uniformly in $b$; the zeroth moment is
   one.
 
-  At each elimination step the rightmost remaining Brownian time has no later
-  conditioning time. Its last increment therefore has the usual heat law
-  relative to the previous remaining time. After its only paired factor is
-  removed, integrating out its partner leaves the Brownian marginal on the
-  other times. The selected right endpoints are distinct, so the resulting
-  singular gap powers occupy distinct positions in the simplex integral.
 
   \medskip
   \noindent\textit{Step 3.~}We bound the two-chain transform by finite
@@ -1840,11 +1819,6 @@ empty chain.
   vanishing tail mass. Every sequence of widths tending to zero has this same
   limit, so the convergence is joint and independent of their relative rates.
 
-  The faces $y_l=0$ correspond to gaps escaping to infinity under
-  $y_l=e^{-r_l}$. As the common exponent $c$ decreases to zero, the product
-  $\prod_l y_l^c$ increases to one off those faces and remains zero on them.
-  Continuity of the limiting transform at zero equates this limiting integral
-  with total mass, so the faces carry no mass.
 
   \medskip
   \noindent\textit{Step 5.~}We exclude zero gaps and positive horizon faces.
@@ -1905,6 +1879,10 @@ remove the temporal widths too and construct each fixed-order term.
     \gamma^0_{\delta_j\vee\delta_h}(s_j-s_h)
     \ud\rho_{\boldsymbol\epsilon,D}.
   \]
+  Here $\gamma^0_\delta$ denotes the capped kernel $\kappa_\delta$
+  in~\eqref{E:pairing-source-covariance}; off the time diagonal,
+  $|r|^{-\alpha_0}-\gamma^0_\eta(r)=K_{1/\eta}(r)$ is its omitted Laplace
+  tail.
   At a common temporal width $\eta > 0$ the multiplier is bounded and
   continuous. Hence, the spatial limit exists at every $T_1,T_2 > 0$
   by~\eqref{E:spatial-wick-limit}.
@@ -1948,11 +1926,6 @@ remove the temporal widths too and construct each fixed-order term.
   time-cube majorant just used give convergence. The bound survives both
   passages. Its right side tends to zero as $\eta\downarrow0$.
 
-  Every admissible assignment uses the marked edge either once through its
-  first norm or twice through its second norm. Thus, each product has a factor
-  tending to zero, respectively $N_1^{(1/\eta)}(1)$ or $N_2^{(1/\eta)}(1)^2$.
-  The remaining factors have a uniform finite bound at fixed order and
-  horizons, so the finite maximum retains the vanishing error.
 
   \medskip
   \noindent\textit{Step 3.~}We squeeze all vertexwise cutoff choices to the
@@ -2031,6 +2004,12 @@ $\theta_0 = 1$ such that, for $\theta \ge \theta_0$,
     \E X_n(t,x)^2\le P_n e^{2\theta t}C^n\theta^{-2n},
     \qquad\theta\ge\theta_0.
   \end{equation}
+  Equations (1.5) and (2.24) here belong
+  to~\cite{chen:author2026:time-dependency}*{(1.5), p.~3, and (2.24), p.~13}.
+  Under Hypothesis~\ref{H:homog}, the ball growth $\mu(B_r)=Vr^\alpha$ and
+  $\alpha+\alpha_0<2$ give the integrability in (1.5), while
+  Remark~\ref{R:source-case2-time-shift}(iii) directly proves finiteness of
+  the Gaussian-weighted measure.
   For the finite-spectral-measure hypothesis in
   Lemma~\ref{L:pairing-product-envelope}, first apply it with the spatially
   smoothed covariance and the temporal truncations of (2.24). The smoothed
@@ -2055,11 +2034,6 @@ $\theta_0 = 1$ such that, for $\theta \ge \theta_0$,
   \medskip
   \noindent\textit{Step 2.~}We optimize a permitted damping parameter and sum
   the order bounds.
-  The lower restriction $\theta\ge\theta_0$ is kept when choosing
-  $\theta=\theta_0+n/t$. Its exponential is $e^{2\theta_0t}e^{2n}$, and its
-  inverse power is at most $(t/n)^{2n}$. Thus, the pairing count is combined
-  with $n^{-2n}$ without using the large-damping estimate outside its valid
-  range.
   Choose $\theta = \theta_0+n/t$ in~\eqref{E:theta-envelope}. Since $(2n)! \le
   (2n)^{2n}$, we have $P_n n^{-2n} \le 2^n/n!$. Absorb $2^ne^{2n}$ in $C^n$ to
   obtain the first bound in~\eqref{E:crude-corrected}. Its square roots are
@@ -2126,6 +2100,10 @@ widths; Proposition~\ref{P:mild-construction} uses this bound.
   $e^{-(\epsilon_j+\epsilon_l)|\xi|^2/2}\mu(\ud\xi)$, which is finite by (1.5),
   and its temporal Laplace domain is $[0,(\delta_j\vee\delta_l)^{-1}]$.
 
+  Condition (1.5) is the source condition just identified in the preceding
+  proof; under Hypothesis~\ref{H:homog}, finiteness of each Gaussian-weighted
+  edge measure follows directly from
+  Remark~\ref{R:source-case2-time-shift}(iii).
   All edge norms obey~\eqref{E:crude-norms}, uniformly in their widths. For the
   first norm the Laplace--Fourier transform of the damped Green kernel is
   positive, and the spatial Gaussian multiplier and temporal truncation can only
@@ -2144,10 +2122,6 @@ widths; Proposition~\ref{P:mild-construction} uses this bound.
   \medskip
   \noindent\textit{Step 2.~}We count the norm factors and optimize the
   damping.
-  The mass slots contribute $\theta^{-2\#Q_0}$ and the second-norm slots
-  contribute $\theta^{-\#Q_2}$. Their product is $\theta^{-2n}$ because
-  $\#Q_0+\#Q_2/2=n$. The first-norm factors affect only the constant at the
-  admissible damping values.
   Since $\#Q_0 = \#Q_1$ and $\#Q_0+\#Q_2/2 = n$ for every admissible product,
   exactly as in~\eqref{E:theta-envelope} we obtain the following bound. Indeed,
   put $D = \max\{1,2C_0\}$. The norm constants contribute at most
@@ -2230,6 +2204,10 @@ establishes that limit for the product $uW_{\epsilon,\delta}$.
   \medskip
   \noindent\textit{Step 2.~}We obtain measurable fields and spatial
   mean-square continuity.
+  For $t>0$, divide every ordered time and spatial Green increment by $t$,
+  using $G_{tr}(t\,\ud z)=tG_r(\ud z)$; the time Jacobians and Green masses
+  contribute $t^{2n}$, leaving a fixed unit-time chain domain with $(t,x)$ in
+  the Gaussian arguments. At $t=0$ all positive-order terms vanish.
   Lemma~\ref{L:vertex-crude} proves absolute $L^2$ convergence of the defining
   series for $u$, locally uniformly in time in the displayed norm bounds. All
   fields are strongly measurable as $L^2(\Omega)$ vectors. At positive widths,
@@ -2585,11 +2563,6 @@ p_{2\epsilon}*\Gamma$.
     =(3-\alpha)M\int_0^\infty F(r)r^{2-\alpha}\ud r
     =c_\Gamma\int_{\R^3}F(x)|x|^{-\alpha}\ud x.
   \]
-  Only the radial test is being replaced by its radial-mass integral. The
-  covariance itself need not have a radial density. The function
-  $G_a*p_{2\epsilon}$ is radial because both the spherical wave measure and
-  the heat kernel are rotationally invariant, so it is an admissible test for
-  this calculation.
   Apply this to $F = G_a*p_{2\epsilon}$, which is radial and Schwartz.
   Nonnegative Fubini gives
   \[
@@ -2895,13 +2868,12 @@ below are bounded; no unbounded-operator extension is assumed.
     \le\frac13\lambda^2(x+\lambda^2),\qquad
     x\ge-\lambda^2/4.
   \]
+  Squaring the positive quantity $x+2\lambda^2$ reduces its comparison with
+  $|w|$ to $y^2\le4\lambda^2(x+\lambda^2)$, while $|\operatorname{Im}\sqrt
+  w|^2=(|w|-x)/2$.
   Hence, $|w| \le x+2\lambda^2$, and either square root of $w$ has
   $|\operatorname{Im}\sqrt w| \le \lambda$.
 
-  The bound on $y^2$ is stronger than $y^2\le4\lambda^2(x+\lambda^2)$, and
-  $x+2\lambda^2>0$. Hence, squaring shows $|w|\le x+2\lambda^2$. The identity
-  $|\operatorname{Im}\sqrt w|^2=(|w|-x)/2$ then gives the stated strip bound
-  for either square root.
 
   \medskip
   \noindent\textit{Step 3.~}We apply the numerical-range theorem to
@@ -2945,11 +2917,6 @@ below are bounded; no unbounded-operator extension is assumed.
   \medskip
   \noindent\textit{Step 4.~}We assemble the phase blocks in their stated
   noncommuting order.
-  The removable factors involving $\sin(h\sqrt w)/\sqrt w$ do not introduce a
-  branch singularity at zero. The only branch kept in these estimates is the
-  principal root of $w+\lambda^2$, whose real part stays strictly positive on
-  a neighborhood of the numerical range. Thus, the holomorphy hypothesis is
-  checked for the bounded operator to which the imported theorem is applied.
   Under the isometry $(u,v)\mapsto(u,A_\lambda^{-1/2}v)$, the four phase blocks
   are
   \[
@@ -3041,13 +3008,11 @@ occupation spaces in this argument.
   are the same, since these operators are selfadjoint.
 
 
+  The compression difference $S_bH_i^2S_b-(S_bH_iS_b)^2=S_bH_i(I-S_b)H_iS_b$
+  is positive, so summing preserves the variance bound.
   \medskip
   \noindent\textit{Step 2.~}We use the Hermite creation and annihilation
   bounds.
-  Compression does not increase the sum-of-squares bound: the difference
-  between $S_bH_i^2S_b$ and $(S_bH_iS_b)^2$ is $S_bH_i(I-S_b)H_iS_b$, a
-  positive operator. Summing this inequality keeps the same variance constant
-  for the finite spatial band.
   For completeness, use normalized Hermite polynomials, so multiplication by
   $g_i$ is $a_i^*+a_i$, with $g_i h_k =
   \sqrt{k_i+1}\,h_{k+e_i}+\sqrt{k_i}\,h_{k-e_i}$. On degree $k$, the row map
@@ -3487,11 +3452,6 @@ admissible $d$.
   \medskip
   \noindent\textit{Step 3.~}We obtain the finite-degree bound and retain other
   Hilbert factors.
-  At a new color the Gaussian coordinates are orthonormal and the input is in
-  that color's vacuum. Squaring the insertion norm therefore produces a sum of
-  spatial squared norms with no cross terms. This argument is not used for a
-  color that has already been occupied; the latter uses the finite-degree
-  estimate below.
   Substituting $A_\rho^{-1/2}f$ gives
   \[
     \sum_m(A_\rho^{-1/2}M_{e_m}A_\rho^{-1/2})^2
@@ -3606,11 +3566,6 @@ admissible $d$.
     \le1+\sum_E\omega_i/\lambda
     \le\prod_E(1+\omega_i/\lambda).
   \]
-  Starting intervals enlarge the denominator of the old-to-new weight ratio
-  and cannot create an additional loss. The remaining intervals appear in both
-  numerator and denominator. Bounding the ratio only by the ending weights
-  therefore charges a connected interval once, including the final return to
-  the base phase norm.
   An initial increase of the weight has no loss. Count a final return to
   $X_\lambda$ as an ending jump at $T$. Each connected interval ends once,
   giving~\eqref{E:interval-metric}. This proves Lemma~\ref{L:interval-complex}.
@@ -3656,18 +3611,18 @@ order $k$ splits among the interval fields.
     \le\int_0^\infty\log(1+A x^{-p})\ud x
     =A^{1/p}\int_0^\infty\log(1+x^{-p})\ud x.
   \]
+  Near zero, $\log(1+x^{-p})$ is bounded by a constant plus $p|\log x|$; at
+  infinity it is at most $x^{-p}$, which is integrable for $p>1$.
   The last integral is finite. Hence, their logarithmic contribution is at most
   $Ck^{1/p} \le Ck$.
 
-  The integral of $\log(1+x^{-p})$ is finite because its growth near zero is
-  bounded by a constant plus $p|\log x|$, while at infinity it is at most
-  $x^{-p}$. Both are integrable in their respective regions when $p>1$. This
-  makes the singleton logarithmic contribution uniform in the number of
-  factors.
 
   \medskip
   \noindent\textit{Step 2.~}We estimate the coarse factors by the factorial
   series.
+  For $x\ge0$, the sum of the $\nu$th powers of the nonnegative terms
+  $x^{l/\nu}/l!$ is at most the $\nu$th power of their sum, and that sum is
+  $e^{x^{1/\nu}}$.
   If $i \le k$, the remaining factor is at most $S_\nu(4P_i) =
   \sum_{l\ge0}(4P_i)^l/(l!)^\nu$: its singleton is at most $2P_i$, and
   $(1+li/k)^2 \le (1+l)^2 \le 4^l$. Since $\nu > 1$, $S_\nu(x) \le e^{\nu
@@ -3680,9 +3635,6 @@ order $k$ splits among the interval fields.
   because $\beta/\nu > 1$.
 
 
-  For $x\ge0$, the factorial-series bound follows because the sum of the
-  $\nu$th powers of the nonnegative terms $x^{l/\nu}/l!$ is at most the
-  $\nu$th power of their sum, and that sum is $e^{x^{1/\nu}}$.
 
   \medskip
   \noindent\textit{Step 3.~}We sum the fine-index tails and extract the
@@ -3692,6 +3644,9 @@ order $k$ splits among the interval fields.
     \theta\left(\frac1{\beta-1}+\frac1{\beta-2}\right)
     k^{\nu+1-\beta}=Ck^{\alpha_0}.
   \]
+  For $l\ge2$, $0\le P\le1/4$ and $y\ge0$, the bounds $(1+ly)^2\le2l^2(1+y^2)$
+  and $P^l\le P^2 4^{-(l-2)}$ leave a summable geometric series with a
+  quadratic factor, independent of $P,y$.
   Also, uniformly for $0 \le P \le 1/4$ and $y \ge 0$,
   $\sum_{l\ge2}P^l(1+ly)^2/(l!)^\nu \le CP^2(1+y^2)$. Summing this bound gives
   \[
@@ -3699,9 +3654,6 @@ order $k$ splits among the interval fields.
     +\frac{k^{-2}k^{3-2\beta}}{2\beta-3}\right)
     =Ck^{2\alpha_0-1}\le Ck.
   \]
-  The uniform fine-series bound uses $(1+ly)^2\le2l^2(1+y^2)$ and $P^l\le P^2
-  4^{-(l-2)}$ for $l\ge2$ and $0\le P\le1/4$, leaving a summable geometric
-  series with a quadratic factor, independent of $P$ and $y$.
   Use $\log(1+y) \le y$ for these fine factors. The entire product is
   consequently at most $e^{Ck}$. Positivity of its coefficients bounds the $k$th
   coefficient by $\theta^{-k}k^{-\nu k}e^{Ck} \le C^k/(k!)^\nu$. This proves
@@ -3886,10 +3838,6 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
 
   \input{notes/figures/interval-end-metrics}
 
-  Insertion times do not change the active background weight. They only split
-  an interval of integration in the exponential bound, and their metric ratio
-  is one. Thus, neither the integrated height nor the product of ending
-  charges is repeated when a cross-color insertion refines the partition.
 
   \medskip
   \noindent\textit{Step 4.~}We estimate every cross-color insertion on its
@@ -4022,11 +3970,6 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
 
   \input{notes/figures/cross-colour-cube}
 
-  Each time tuple with distinct entries has exactly one chronological
-  ordering, so it belongs to exactly one of the permutation simplices. The sum
-  of their volumes is the cube volume, not that volume multiplied by the
-  number of permutations. This is why the new-color insertion estimate has no
-  factorial in the number of cross colors.
   The vector $\Phi_{\mathcal{A}}$ is entire in the background amplitudes. On the
   first copy its coefficient is given by the normalized formula
   \begin{equation}\label{E:split-vector-cauchy}
@@ -4070,11 +4013,6 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
       (R_\alpha\sigma_i^2h_i^2\lambda^{\alpha-2}).
     \end{split}
   \end{equation}
-  Both coefficients live on the same Gaussian space; their inner product is
-  bounded by Cauchy--Schwarz, not by independence of the copies. The amplitude
-  radius contributes once for each occurrence in either coefficient, giving
-  total exponent $r_i+q_i=2k_i$. The metric charge appears only on copies
-  where that color is present.
   The radius exponent is $r_i+q_i = 2k_i$. The metric product is exactly
   \[
     D_{\mathcal{A}_r}D_{\mathcal{A}_q}
@@ -4275,11 +4213,6 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   $C^kR_\alpha^kT^{\beta k}$, leaving $v_i$ at $k_i = 1$ and $b_{i,l}$ at $k_i =
   l \ge 2$ from Lemma~\ref{L:inventory-product}.
 
-  The inverse-length factor cannot be bounded separately when replacing $h_i$
-  by its upper bound: it moves in the opposite direction. Expanding the whole
-  weight gives only positive powers of $h_i$, so each term is increasing. This
-  justifies the length substitution for the complete local weight before any
-  constants are collected.
 
   \medskip
   \noindent\textit{Step 5.~}We sum ordinary coefficients without a multinomial
@@ -4298,6 +4231,11 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   \medskip
   \noindent\textit{Step 6.~}We remove cutoffs at fixed coefficients and sum
   the uniform bound.
+  The closed operator used below is multiplication by the measurable smoothed
+  Gaussian field on its natural Gaussian--spatial $L^2$ domain. Mode sums
+  agree with this multiplication on finite-coordinate inputs in the limit;
+  closedness then identifies the graph limit as those inputs are approximated
+  in $L^2$.
   \emph{Identification and summation.} Keep positive smoothing, finite interval
   family and a fixed coefficient. The finite-degree multiplication bound used
   in~\eqref{E:interval-entire-majorant} is uniform in mode and band cutoffs. On
@@ -4316,11 +4254,6 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   therefore those of the finite-interval model, with no zero-smoothing limit at
   this step.
 
-  The fixed-family entire majorant establishes existence and identifies
-  coefficients after the mode and band limits. The separate coefficient
-  estimate is uniform in those parameters and in the interval family. Keeping
-  these two roles distinct prevents the smoothing-dependent point variance
-  from entering the final growth constant.
   The nonuniform number $v_{\max}$ was used only for this identification. The
   uniform coefficient bound contains no such number. Its constants come from
   $\delta_{\alpha/2}$, the fixed phase bound, the interval-length bound lemma
@@ -4603,6 +4536,11 @@ the time intervals below.
   \medskip
   \noindent\textit{Step 2.~}We localize constant initial data on the full
   backward cone.
+  For the kept intervals, $W_{J,\epsilon}(s,y)=\sum_{I\in\mathcal
+  F_J}\sigma_I1_I(s)W_I^\epsilon(y)$, and $u_{J,\epsilon}$ is the series of
+  its terminal terms from Lemma~\ref{L:terminal-wick}. For the compact data
+  $(f_T,0)$ chosen below, $u_{f_T,J,\epsilon}$ denotes the position component
+  of the phase evolution in Proposition~\ref{P:interval-coefficients}.
   To pass from phase data to constant initial data, choose $f_T \in C_c^\infty$
   with $0 \le f_T \le 1$, equal to one on $B_{T+1}$ and supported in $B_{T+2}$,
   and set the velocity to zero. For $|y|+s < T+1$, $G_s*f_T(y) = s$, so
@@ -4629,6 +4567,10 @@ the time intervals below.
   \]
 
 
+  The final inequality above is~\eqref{E:interval-phase-bound} with
+  $v=(f_T,0)$: the position $L^2$ norm is at most its phase norm, and
+  $\|(f_T,0)\|_{1/T}^2=\|f_T\|_2^2\le|B_{T+2}|$ because the velocity is zero
+  and $0\le f_T\le1$.
   \medskip
   \noindent\textit{Step 3.~}We identify the finite interval-model Wick sums
   before comparison.
