@@ -57,6 +57,27 @@ aggregate usage/cost/cap remain unknown. Older RP014/RP039 records and their
 limits are unchanged. RP043 signed-static remains running at this record.
 See `reviews/2026-11-16-readable-uniform-mean-postreader32919d54-deepseek/`.
 
+**Latest five editorial holds and seven late releases:** Le confirms one
+separate held editorial unit in exactly six places of intrinsic constant,
+signed moment upper, point transfer, masked moments and source convergence
+(`f98d8922e21c`, section7 record `3ebeb50b`). Show each old/new to Le before
+committing; no push. These five await that commit and Agent16 verification.
+RP048/RP049 were already launched under prior authority and have now returned
+on their old sources; preserve those reports and exclude future editorial
+bytes. No cancellation, relaunch or grade transfer follows. Seven other late
+files are owner-FINAL/verified at `35dfced3`; private successor packet
+preparation is allowed, with no extra model admission before root freeze/GO.
+
+Le also asks whether extra regularized noises are needed locally in
+`P:symplectic-block-mean`. Root read-only assessment supports #7's withdrawn
+sentence narrowly: Steps1-3 use completed mean/covariance on original W and
+orthogonal first chaos; Step4 uses the deterministic compact endpoint lemma.
+The extra local auxiliary realization is unused. Other source constructions
+are not waived; no mathematical source defect is alleged. A reviewable narrow
+optional deletion is recorded for Le, but no change is authorized or made;
+this is outside the approved six editorial locations. See the two new policy
+records for exact dependencies, old/new and immutable source bindings.
+
 **Provisional last-ten/main additions checked at bounded scope:** Agent 24's
 last-ten batch `35dfced3` is NOT FINAL pending self-check/explicit handoff;
 no packet or call is released by that landing. Root checks the three requested

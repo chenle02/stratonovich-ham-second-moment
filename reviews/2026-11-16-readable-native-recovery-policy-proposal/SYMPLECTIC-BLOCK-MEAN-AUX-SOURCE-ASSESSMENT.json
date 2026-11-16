@@ -1,0 +1,59 @@
+{
+  "recorded_utc": "2026-11-16T14:18:48.320575+00:00",
+  "requested_by": "Le directly to16, relayed in usermessage; report before any change",
+  "request_receipt": "f98d8922e21c",
+  "proposal_provenance": {
+    "agent7_message": "18731f178947",
+    "withdrawn_log_sha256": "5302c22aad43ebaac08f3154cc8931b0156dc6d1c633d730a99e589cce793168",
+    "exact_withdrawn_sentence": "The auxiliary sources just described are not needed in the covariance calculation below, which uses~\\eqref{E:cameron-actual-covariance} and orthogonal projection on the original noise; the endpoint bound uses Lemma~\\ref{L:symplectic-free} directly.",
+    "status": "Prior editorial rationale, withdrawn; not independent scientific evidence or an author decision"
+  },
+  "source_file": "notes/integrated_symplectic_phase.tex",
+  "source_revision": "62da32d73e6667f3e69e79c566abb14230d175f0",
+  "module_sha256": "8d8fa4026dc2e3aaf718cb88cf12c8abc790fe497316a80164ff5f6ef0710f9d",
+  "judgment": "SUPPORTED_NARROW_LOCAL_DEPENDENCY_ASSESSMENT",
+  "scope": "No extra auxiliary-source/regularized-noise realization is used by this exact P:symplectic-block-mean proof; does not waive any upstream construction or theorem hypotheses.",
+  "working": [
+    {
+      "step": 1,
+      "dependencies": "Completed mean P:cameron-full-mean, bounded F-to-E compression, compact conjugation and Lr primitive estimate",
+      "conclusion": "H_mE is a compact-valued Ctheta path with finite control norm from original T_m andPhi; source regularization is not used in this construction."
+    },
+    {
+      "step": 2,
+      "dependencies": "E:cameron-actual-covariance at rank0, original W, boundedF-to-Ecompression and g_delta*delta^(a/2)=sqrt(delta)",
+      "conclusion": "E[M_m W(i_I Phi)]=delta^(a/2) H_mE. This applies an already proved identity; it does not construct a new source realization."
+    },
+    {
+      "step": 3,
+      "dependencies": "T_mT_m* is the orthogonal range projection, every M_m coordinate is in the fast first chaos, Bochner covariance and dual separation",
+      "conclusion": "Remove the original-noise orthogonal complement, then multiply bydelta^(-a/2) to identify D_phi_m=H_mE, with phi_m=delta^(-a/2)T_m*i_I Phi."
+    },
+    {
+      "step": 4,
+      "dependencies": "L:symplectic-free deterministic compact Young endpoint bound",
+      "conclusion": "Endpoint norm>=||S_E(ell_m)||>=1 including empty lastblock; no Gaussian/Hamiltonian or regularized conservation proposition is needed."
+    }
+  ],
+  "not_used_locally": [
+    "L:symplectic-source-mean",
+    "P:symplectic-source",
+    "P:symplectic-raw"
+  ],
+  "scope_limits": [
+    "The displayed source-mean and source-conservation results elsewhere still explicitly use regularized sources.",
+    "Original source/Young/physical identifications retain their upstream proof dependencies; this is not a source-free replacement of those arguments.",
+    "No slow-source pullback, uniform control-radius claim or uncountable common-null-event claim is introduced."
+  ],
+  "source_defect_identified": false,
+  "recommendation_for_Le": "Treat as redundant local setup rather than a mathematical repair. If Le chooses cleanup, a narrow original-text change is sufficient; do not add an unsupported global assertion that source construction is unnecessary.",
+  "reviewable_optional_edit_NOT_AUTHORIZED": {
+    "old_exact": "The fast noise remains\n  on the same given $W$. For applying the preceding propositions, construct\n  regularized noises with $W_m$ as the given reference, extending by an\n  independent auxiliary source while retaining all base variables. No\n  slow-source pullback is presumed; the original covariance direction is\n  independent of the auxiliary realization.",
+    "new_if_Le_authorizes": "The fast noise remains\n  on the same given $W$.",
+    "effect": "Only removes unused local setup; later proof steps remain verbatim. This location is outside the separately approved six old-text fixes."
+  },
+  "source_edited": false,
+  "change_authorized": false,
+  "new_model_review_or_grade_upgrade": false,
+  "report_to_Le_route": "Sent bounded assessment toAgent16 forLe andAgent24/7 before any source change."
+}
