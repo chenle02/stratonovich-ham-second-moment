@@ -36,6 +36,17 @@ reread series and later source versions at the final synchronization gate.
 
 
 
+**Earlier successor reports now curated:** RP039/RP040/RP041 returned
+three normal-stop reports, two PASS/high and one PASS_WITH_NOTES/high.
+Delegated author-side QA, reviewed by root, checks all 14 public deductions
+on their exact launched sources, with no source repair. RP039/RP041 exclude
+later reader additions; RP040 remains on final radius `9df46108`. Raw
+category typo in RP039 and report-only mathematical slips/false source
+criticisms remain disclosed; per-proof confidence is null. No older
+RP014/RP015/RP016 scope, grade, partial or protocol hold is rebound. A separate
+`SUCCESSOR-039-041-INDEX.json` keeps these source-version counts distinct
+from the 22-attempt first-pass/f06 snapshot and from current-source coverage.
+
 **Chapter 9 post-reader FINAL and fresh freeze:** Agent 16 verifies G.1
 at `1b3bf28c` (`d61672abdf85`); Agent 24 explicitly confirms FINAL after all
 reader dispositions (`3be3c5b43b5c`): uniform mean `32919d54`, radius `9df46108`,

@@ -1,0 +1,367 @@
+{
+  "review_record_id": "RP040",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not a new independent scientific vote or native-protocol approval",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "9df46108bea7fa58bead5671512434ab287b6ae8",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_radius_anchor.tex",
+  "source_binding_sha256": "47a32518f812fd3bcdd74d7ac6f27bee276a407859d0683d881f831c3aa54567",
+  "public_report_sha256": "538304b8a9af7a42e4366935fdc78609172ed8a7b2c2345d9bdad6364be194af",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "ALL_FIVE_FROZEN_RADIUS_RECONSTRUCTIONS_CHECKED_WITH_MINOR_REPORT_COMPARISON_WORDING_NOTE",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:radius-outer-maps": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:radius-compact-envelopes": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R2"
+      ]
+    },
+    "P:radius-actual-moments": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "C:radius-covariance-residuals": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    },
+    "P:radius-mean-anchor": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:radius-outer-maps",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 13,
+      "old_statement_lf": [
+        39,
+        49
+      ],
+      "old_proof_lf": [
+        51,
+        86
+      ],
+      "new_statement_lf": [
+        39,
+        49
+      ],
+      "new_proof_lf": [
+        51,
+        95
+      ],
+      "old_proof_sha256": "32e70cc6ece3765dc14caf29fee42467904a37a131bb68ac950a5a90da9c6786",
+      "new_proof_sha256": "2f0de7b3fd9725a03bc3d6d6ed96e89d06f1cf0f2cb7f560bff0a5455798209a",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "9529b15c9fc44d35cf681cd1548a2d20c77d898fa62e8046ca7b449b37b2facc",
+      "mathematical_check": "The report reconstructs the unnormalized torus coefficient integral, orthonormality of L^-d/2 modes at L=2pi rho and kappa=k/rho. The exact weighted periodization/recovery kernels are the supplied unassigned cutoff-factorization identities at that kappa, with the stated unitary c_d cancellation and no additional factor. Dilation of the fixed profile and Peetre for either sign of r give the kernel majorant C_r rho^(d/2) F_r(k-rho xi). The report explicitly uses rho>=1 to ensure constants in the bracket comparison are fixed-profile/r/d dependent. Its xi integral has Jacobian rho^-d, giving rho^-d/2, whereas the shifted integer-lattice sum has spacing1 and gives rho^d/2; their PRODUCT is radius-independent before Schur square root. Density/distributional recovery includes all real r and does not sample rough Fourier data. Every new explanatory sentence agrees with this derivation.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:radius-compact-envelopes",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 48,
+      "old_statement_lf": [
+        93,
+        105
+      ],
+      "old_proof_lf": [
+        107,
+        155
+      ],
+      "new_statement_lf": [
+        102,
+        114
+      ],
+      "new_proof_lf": [
+        116,
+        183
+      ],
+      "old_proof_sha256": "2ccb8fc7cb0e143f36f61539b402e51b9107c298f7614ec998a59c1ba8d0f51c",
+      "new_proof_sha256": "334988c16497951dcfd7af3d8281c65fdf27a5bab9277e279819eb8245d9e882",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "2e113d80c15237a61481b86b9e8463c088f351ead2e4f2be389de5cf29852c0f",
+      "mathematical_check": "The full-domain recovery factorization with chi_rho psi_rho=chi_rho and Bessel isometries is explicit, including negative sigma. The torus inclusion has diagonal <k/rho>^-gamma; the unit-cube Peetre comparison at u=q gamma>d gives the displayed locally integrable weight integral and rho^d volume factor. Finite-rank j-1 truncations transfer each diagonal singular value by bounded outer factors, proving compactness and summable qth powers; taking the qth root gives rho^(d/q). The report independently checks direct-sum qth powers for the two phase blocks and the unitary input/output swap. Constants may depend on the deterministic Schatten index q; the later probability proof freezes Q before varying its moment index. No projection/self-adjoint cutoff assumption or Hilbert-Schmidt endpoint is introduced. The new volume-comparison gloss is correct.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:radius-actual-moments",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 82,
+      "old_statement_lf": [
+        163,
+        175
+      ],
+      "old_proof_lf": [
+        177,
+        250
+      ],
+      "new_statement_lf": [
+        191,
+        203
+      ],
+      "new_proof_lf": [
+        205,
+        297
+      ],
+      "old_proof_sha256": "b483ccd3d03cbafc9e53da7a39c59be7535878ec933f2d4c24131e55b0def185",
+      "new_proof_sha256": "d7ac722ba666ecc1d978f9cb997198ef8dc0892006f281bd7a919bfb58ff19c4",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "b3bd65a3d92aa32fd56b48c7db2623e240b0c5dd5be7f8a41332ed8cd39a8044",
+      "mathematical_check": "The public proof uses the actual W-basis coefficient sums and checks rho=2R+B+2<=(B+4)R by the exact difference(B+2)(R-1). The physical mask remains eta(x/R)^2 while both envelope localizations use chi_rho. The named unassigned two-variance/driver hypotheses supply an R,N,I-uniform variance budget with the same eta^2 base; the finite Gaussian bound is applied at even q>=Q with q gamma>d. Unnormalized Schatten monotonicity bounds the q norm by the FIXED Q norm, retaining R^(d/Q) with a constant independent of later q. All three short-time branches, the strict logarithmic gap at alpha1, and the alpha>1 power(3-a-alpha)/2 are explicitly handled. Dyadic maxima contribute2^(n/q) without independence and the gap beta_t-eta_t-1/Q>0 gives a uniform geometric sum. Coarse unit partitions, zero-initial continuous paths and C^eta_t\u2192C^theta produce the finite-sum path bound. The fixed-R Lq limit preserves the estimate without radius-uniform construction convergence, and a controlled larger even q gives sqrt(v) for arbitrary finite v>=1. No F-column estimate follows.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "C:radius-covariance-residuals",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "none added (proof body byte-identical)"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 116,
+      "old_statement_lf": [
+        257,
+        269
+      ],
+      "old_proof_lf": [
+        271,
+        286
+      ],
+      "new_statement_lf": [
+        304,
+        316
+      ],
+      "new_proof_lf": [
+        318,
+        333
+      ],
+      "old_proof_sha256": "b6651ef488ce3d8469e9f087f4dacded83f23c9efaee844d30b2c9b4d1660dbc",
+      "new_proof_sha256": "b6651ef488ce3d8469e9f087f4dacded83f23c9efaee844d30b2c9b4d1660dbc",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "63d7d94c45f7a5bd5e201050380128279c529b03c09eb26e32bc3f9c3b90b154",
+      "mathematical_check": "The unchanged proof is publicly reconstructed from the named Gaussian covariance-contraction result for the same deterministic coefficient maps and physical mask, plus the just-reconstructed original path moment bound. The actual Y is retained, not substituted by a reference noise. For Y_m(f)=W((I-Pi)T_delta,m f), orthogonal Pi contraction and the original slow/fast isometry give variance<=the fast original norm squared; Pi may have infinite rank and deterministic delta/R dependence. The zero covariance case is zero. Common slow W and possible correlations between residual blocks are retained. The report correct norm inequality is the relevant comparison; its phrase law dominates should be read/clarified as the stated covariance/convex-norm comparison, not an unrestricted order of nonlinear path laws.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:radius-mean-anchor",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "none added (proof body byte-identical)"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 136,
+      "old_statement_lf": [
+        296,
+        321
+      ],
+      "old_proof_lf": [
+        323,
+        346
+      ],
+      "new_statement_lf": [
+        343,
+        368
+      ],
+      "new_proof_lf": [
+        370,
+        393
+      ],
+      "old_proof_sha256": "a23c6f825faf11a83e451ddb62c78f285b240922ca35a935d447c2b55b2963f1",
+      "new_proof_sha256": "a23c6f825faf11a83e451ddb62c78f285b240922ca35a935d447c2b55b2963f1",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "ca082b3bd0bfe3e2eddd7845ccad5f38515af7081e2eac13cf7512c87a96767c",
+      "mathematical_check": "The second unchanged proof is reconstructed explicitly. The stop map min(u,ell_m) is1-Lipschitz, preserves the sup/Holder bound and makes an empty last cell zero. For any fixed p>=1, Lyapunov and the exact finite equality Z_delta^p=delta sum||X_m||^p give [delta(N+1)]^(1/p) g_delta C_Q,B sqrt(p) R^(d/Q). This uses only linear finite expectation, never a maximum or block independence. The true count N=floor(1/(delta B))>=1 and delta B<1 give delta(N+1)<=2/B. The numerical radius delta^-1+2<=3/delta then gives delta^((1-a)/2-d/Q), strictly decaying by the last fixed-Q condition Q>2d/(1-a). All constants/scopes remain fixed B,p,Q and original model, uniform only in deterministic residual projection; no cone, source-to-point, concentration or nonlinear moment theorem is asserted.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    }
+  ],
+  "mathematical_checks": [
+    "The report reconstructs the unnormalized torus coefficient integral, orthonormality of L^-d/2 modes at L=2pi rho and kappa=k/rho. The exact weighted periodization/recovery kernels are the supplied unassigned cutoff-factorization identities at that kappa, with the stated unitary c_d cancellation and no additional factor. Dilation of the fixed profile and Peetre for either sign of r give the kernel majorant C_r rho^(d/2) F_r(k-rho xi). The report explicitly uses rho>=1 to ensure constants in the bracket comparison are fixed-profile/r/d dependent. Its xi integral has Jacobian rho^-d, giving rho^-d/2, whereas the shifted integer-lattice sum has spacing1 and gives rho^d/2; their PRODUCT is radius-independent before Schur square root. Density/distributional recovery includes all real r and does not sample rough Fourier data. Every new explanatory sentence agrees with this derivation.",
+    "The full-domain recovery factorization with chi_rho psi_rho=chi_rho and Bessel isometries is explicit, including negative sigma. The torus inclusion has diagonal <k/rho>^-gamma; the unit-cube Peetre comparison at u=q gamma>d gives the displayed locally integrable weight integral and rho^d volume factor. Finite-rank j-1 truncations transfer each diagonal singular value by bounded outer factors, proving compactness and summable qth powers; taking the qth root gives rho^(d/q). The report independently checks direct-sum qth powers for the two phase blocks and the unitary input/output swap. Constants may depend on the deterministic Schatten index q; the later probability proof freezes Q before varying its moment index. No projection/self-adjoint cutoff assumption or Hilbert-Schmidt endpoint is introduced. The new volume-comparison gloss is correct.",
+    "The public proof uses the actual W-basis coefficient sums and checks rho=2R+B+2<=(B+4)R by the exact difference(B+2)(R-1). The physical mask remains eta(x/R)^2 while both envelope localizations use chi_rho. The named unassigned two-variance/driver hypotheses supply an R,N,I-uniform variance budget with the same eta^2 base; the finite Gaussian bound is applied at even q>=Q with q gamma>d. Unnormalized Schatten monotonicity bounds the q norm by the FIXED Q norm, retaining R^(d/Q) with a constant independent of later q. All three short-time branches, the strict logarithmic gap at alpha1, and the alpha>1 power(3-a-alpha)/2 are explicitly handled. Dyadic maxima contribute2^(n/q) without independence and the gap beta_t-eta_t-1/Q>0 gives a uniform geometric sum. Coarse unit partitions, zero-initial continuous paths and C^eta_t\u2192C^theta produce the finite-sum path bound. The fixed-R Lq limit preserves the estimate without radius-uniform construction convergence, and a controlled larger even q gives sqrt(v) for arbitrary finite v>=1. No F-column estimate follows.",
+    "The unchanged proof is publicly reconstructed from the named Gaussian covariance-contraction result for the same deterministic coefficient maps and physical mask, plus the just-reconstructed original path moment bound. The actual Y is retained, not substituted by a reference noise. For Y_m(f)=W((I-Pi)T_delta,m f), orthogonal Pi contraction and the original slow/fast isometry give variance<=the fast original norm squared; Pi may have infinite rank and deterministic delta/R dependence. The zero covariance case is zero. Common slow W and possible correlations between residual blocks are retained. The report correct norm inequality is the relevant comparison; its phrase law dominates should be read/clarified as the stated covariance/convex-norm comparison, not an unrestricted order of nonlinear path laws.",
+    "The second unchanged proof is reconstructed explicitly. The stop map min(u,ell_m) is1-Lipschitz, preserves the sup/Holder bound and makes an empty last cell zero. For any fixed p>=1, Lyapunov and the exact finite equality Z_delta^p=delta sum||X_m||^p give [delta(N+1)]^(1/p) g_delta C_Q,B sqrt(p) R^(d/Q). This uses only linear finite expectation, never a maximum or block independence. The true count N=floor(1/(delta B))>=1 and delta B<1 give delta(N+1)<=2/B. The numerical radius delta^-1+2<=3/delta then gives delta^((1-a)/2-d/Q), strictly decaying by the last fixed-Q condition Q>2d/(1-a). All constants/scopes remain fixed B,p,Q and original model, uniform only in deterministic residual projection; no cone, source-to-point, concentration or nonlinear moment theorem is asserted."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "classification": "report-only covariance-comparison wording precision",
+      "report_section": "C:radius-covariance-residuals / Step1",
+      "report_lf": 128,
+      "old": "only its law dominates",
+      "new": "Only the stated Gaussian covariance-contraction/convex-norm moment comparison with the reference is used; Y itself remains on its original coupling.",
+      "disposition": "The displayed inequality and application conditions are correct. A general stochastic ordering of path laws, reverse domination direction or nonlinear-wave covariance monotonicity is not established or needed. This loose phrase is not a source defect or a missing target deduction."
+    },
+    {
+      "id": "R2",
+      "classification": "constant-dependence scope precision, not a defect",
+      "disposition": "The deterministic envelope constant C_q can depend on its Schatten index q, as the report explicitly states. Independence of the later stochastic moment index is obtained only after that estimate is used at fixed Q in the next assigned proof. The public fixed-Q working preserves this distinction."
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 22333,
+      "sha256": "538304b8a9af7a42e4366935fdc78609172ed8a7b2c2345d9bdad6364be194af"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 6615,
+      "sha256": "8add8205176aea2a69b4571e1b45ef69cc11b61f4b074fb6e9cbc9022d01b52a"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 7540,
+      "sha256": "a5cf37cfd1d7187862e8dbdc04c7d8aab7bbe318ca02b6608093399c3938505d"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 5724,
+      "sha256": "47a32518f812fd3bcdd74d7ac6f27bee276a407859d0683d881f831c3aa54567"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 10716,
+      "sha256": "2444815ce7edcd1cc5d950cbebd1ba2f92306797826ab789e4f46ec13a284234"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 17709,
+      "sha256": "6c71830d7ebad308b8aa9c16cbc6503747a0a30e7eaf8e3243d52b1a1ccb54d1"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 19700,
+      "sha256": "37711d311d2b7ffef6b2f4c68c5a4be6333277a13cafcbebaa9d79a49e67153e"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-compact-gaussian-baseline.txt",
+      "bytes": 30608,
+      "sha256": "caf9e56a5b818f9e5daa02ac3423c354b95c515f1932d92170ec002b0fbaa84a"
+    },
+    {
+      "path": "inputs/context-actual-driver-baseline.txt",
+      "bytes": 35818,
+      "sha256": "add3561f9a2e846f9992d91a10385d8b8e99406359eaabae640520366b184f0e"
+    },
+    {
+      "path": "inputs/context-wave-variance-baseline.txt",
+      "bytes": 24927,
+      "sha256": "66369d1bde2358f92e7edfb33f899bd96c2698a631e9ca0d9f330062ff55f8a6"
+    },
+    {
+      "path": "inputs/context-source-convergence-baseline.txt",
+      "bytes": 25085,
+      "sha256": "f212bad41254a78109e5802def45053c8bda53a416cda9f457513406304aaef4"
+    },
+    {
+      "path": "inputs/context-raw-block-inputs-baseline.txt",
+      "bytes": 35928,
+      "sha256": "ed2f85038ef6136eb8581fa64cab4962cde40bdbdba9ff163dd832c4fa5ad992"
+    },
+    {
+      "path": "inputs/context-cameron-mean-baseline.txt",
+      "bytes": 24138,
+      "sha256": "0ecbf05a70a7d5d79c9e2285dcadb93567687d4e463bfe4f6b0fdac5ff6f016d"
+    },
+    {
+      "path": "inputs/context-uniform-mean-baseline.txt",
+      "bytes": 19613,
+      "sha256": "132449ade993b8feab10c06a6c062b21698d83d0ad811f99090bd069144dedc6"
+    }
+  ],
+  "input_identity_checks": "All SOURCE-BINDING payload hashes checked and each complete OLD/NEW target proof independently matched its LF/hash. No inference from RP015 QA or raw grade is used to replace this actual report/source read.",
+  "source_currentness": {
+    "covered_revision": "9df46108bea7fa58bead5671512434ab287b6ae8",
+    "scope": "Exactly the delivered9df46108 radius module versus baselinecdde. Root reports this radius source remains final; this audit does not seal the current whole tree or another module.",
+    "prior_RP015_scope_or_grade_rebound": false,
+    "whole_current_book_coverage": false
+  },
+  "read_limits": [
+    "All five complete OLD/NEW proofs/statements and every public reason/AUDIT/finding read; genuinely needed supplied fixed-profile/covariance/kernel/localization/transfer declarations checked. Unassigned upstream proofs and primary PDFs not certified or counted.",
+    "This actual new-call adjudication does not overwrite or enlarge the earlier RP015 source/report/grade.",
+    "No transport, provider/model/probe, native export/hidden reasoning/events, source/public/Git/PDF change or callback. Prospective ChoiceB recovery/accounting remains a root/dispatcher lane."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority"
+}

@@ -1,0 +1,395 @@
+{
+  "review_record_id": "RP039",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equability-equivalence",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "0816c1951f914b7f7265fb18d5736e0ef157e292",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_uniform_mean.tex",
+  "source_binding_sha256": "3e0518994196e5de13660aad6d3aee9a17081f47d4e97f45d072fa80f7184626",
+  "public_report_sha256": "33c81ae2d04fe44d96806fe5183de272dd544f66551b242baf84ba04c458912e",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "FROZEN0816_ALL_FIVE_RECONSTRUCTIONS_CHECKED_REPORT_ONLY_FOURIER_TYPO_SUCCESSOR_COVERAGE_EXCLUDED",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:uniform-mean-cutoff": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:uniform-mean-spatial-tails": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1",
+        "R2"
+      ]
+    },
+    "L:uniform-mean-tensor": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:uniform-mean-regulator": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:uniform-actual-cameron": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:uniform-mean-cutoff",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED (proof LF 44\u201362 verbatim identical)",
+        "new_explanations_raw": "JUSTIFIED (none added; text is identical)"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 14,
+      "old_statement_lf": [
+        29,
+        42
+      ],
+      "old_proof_lf": [
+        44,
+        62
+      ],
+      "new_statement_lf": [
+        29,
+        42
+      ],
+      "new_proof_lf": [
+        44,
+        62
+      ],
+      "old_proof_sha256": "c1811562c090daac0087fb87e08b4912132c4b2918ef6cd25b8783234ebd8a36",
+      "new_proof_sha256": "c1811562c090daac0087fb87e08b4912132c4b2918ef6cd25b8783234ebd8a36",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "e0cb6bbb1cac0597b1d1fac1b2ed3798726b94d692805a5495a82c6777ae85cd",
+      "mathematical_check": "The unchanged proof has substantive public working. The report derives the unitary Fourier product coefficient c_d by both inversion factors and the ordinary delta integral, uses the correct SIGNED Peetre inequality for every real sigma, and obtains the weighted convolution kernel c_d 2^(|sigma|/2)|eta_hat_R(q)|<q>^|sigma|. Dilation eta_hat_R=R^d eta_hat(Rq), the p=Rq Jacobian and R>=1 give exactly M_sigma. L1*L2 plus density extends all real Hsigma. The Lambda^-1 velocity isometry, H1/2\u2192Hs norm1 and the stated fractional-product bound give M0=A_s M^2 and then the physical row/operator norm by Hilbert Cauchy-Schwarz. Fixed-R compact values remain the named unassigned spatial map; no uniform-radius compactness of those values is inferred.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "L:uniform-mean-spatial-tails",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED (new proof adds outline, four step headers, one",
+        "new_explanations_raw": "JUSTIFIED (the added sentence on the constant $4A_sM^2$ is"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 60,
+      "old_statement_lf": [
+        70,
+        88
+      ],
+      "old_proof_lf": [
+        90,
+        150
+      ],
+      "new_statement_lf": [
+        70,
+        88
+      ],
+      "new_proof_lf": [
+        90,
+        173
+      ],
+      "old_proof_sha256": "76aa36bfae9f450ffbbdeb984c3ca2853abb0b7cb07ff36ef0a1813f52a480b6",
+      "new_proof_sha256": "40ee8eaa451608732e1d905c5cf7b9364c2c7b717f76a3bdbaa9d0ab54bf6c84",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "abbd53d284a1c90f70436af9b42fbba523ab703620e481295fe4316bd863fce5",
+      "mathematical_check": "The report publicly splits the Fourier translation bound into large/small h and low/high |xi h| regimes, uses beta+s=1/2, and obtains the required 2min(1,|h|^beta) loss. Continuous fractional products split row translation into two2A_s M^2 contributions, giving exactly4A_s M^2. Strong continuous bounded translation orbits admit the Bochner Gaussian average; the report correctly uses h=sqrt(epsilon)G_d, its probability normalization and the char-function heat OPERATOR multiplier to get M_h epsilon^(beta/2). It incorrectly writes the unitary transform of the density p_epsilon without c_d (R1), but the needed convolution-operator/averaging identities and constants are already correctly supplied. The actual closed Fourier image V is handled without surjectivity/density: smooth real even frequency cutoffs, dominated convergence including charged boundary spheres and test density give the closed-ball projection, commuting with heat. Hermitian rather than real-even symmetry is the correct general reality wording for a real input (R2). The high-frequency multiplier bound at epsilon=K^-2 and selfadjoint row transfer give M_f K^-beta with the exact1-exp(-1/2) denominator.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "L:uniform-mean-tensor",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED (adds outline, two step headers, one paragraph",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 121,
+      "old_statement_lf": [
+        158,
+        166
+      ],
+      "old_proof_lf": [
+        168,
+        198
+      ],
+      "new_statement_lf": [
+        181,
+        189
+      ],
+      "new_proof_lf": [
+        191,
+        238
+      ],
+      "old_proof_sha256": "c8fbe1c2a3741a0cd1631b24ae9a362dac41a1f37043514eb8986b10a116302d",
+      "new_proof_sha256": "f07752dc4bea81b0a700476ddde78359bb546cae946ea328cd4413b07dddf26f",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "3c5d3fb6b9264c36c11290508fedfb00083fa13429b2fa63ef7be6fc0ed308e7",
+      "mathematical_check": "The finite Gaussian covariance diagonalization uses total trace L=sum||f_j||^2 and Jensen at r/2>=1 to bound the Hilbert Gaussian moment by m_r L^(r/2), including L0. The report then explicitly computes each scalar Gaussian moment of sum gamma_j A f_j(t), integrates by Tonelli, applies the scalar A norm and cancels the SAME positive finite m_r. Density and Bochner completeness give the dimension-free tensor extension, including zero spaces. The nonzero Af times infinitely many orthogonal e_j have pairwise image distance sqrt(2)||Af||Lr, so compact scalar A does not force compact tensor A\u2297identity. The new m_r explanation is correct and the bound uses no infinite-dimensional auxiliary Gaussian vector.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:uniform-mean-regulator",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED (adds outline and two step headers)",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 156,
+      "old_statement_lf": [
+        215,
+        231
+      ],
+      "old_proof_lf": [
+        233,
+        262
+      ],
+      "new_statement_lf": [
+        255,
+        271
+      ],
+      "new_proof_lf": [
+        273,
+        313
+      ],
+      "old_proof_sha256": "afeaf6bf85deffbc44a7868b60d2b897f2aae3e9ee4c3280631a98dcd4418621",
+      "new_proof_sha256": "645accdd75bcf76b5c0778ff238df3efa7864423daea79b47df7184dae2048fc",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "a92b0492c53b975525b09ca55a0cdd2c4f9f888d5e48e246bfe720e9a3c0c493",
+      "mathematical_check": "All required public stages are present: tensor selfadjoint idempotent projections; epsilon_J\u21920 from compact C_t applied to bounded weak-null(I-pi_J)v_J; transfer of the scalar tail via the just-reconstructed tensor bound; and the explicit first norm bound ||mathcal T_R||<=M0 c_t. The report checks Q=(I-pi_J)\u2297I+pi_J\u2297(I-P_K) by expansion and the exact finite-tensor intertwining through U=C_t\u2297I. The first term gives M0 epsilon_J and the second pointwise spatial-frequency term gives M_f c_t K^-beta. One fixed r in the stated range and bounded composition of the Bochner U field with compact-valued T_R give the actual Lr K(E) mean. Infinite spatial rank is allowed and no radius-uniform compactness is claimed.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:uniform-actual-cameron",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED (adds outline, five step headers, one",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 199,
+      "old_statement_lf": [
+        291,
+        311
+      ],
+      "old_proof_lf": [
+        313,
+        394
+      ],
+      "new_statement_lf": [
+        342,
+        362
+      ],
+      "new_proof_lf": [
+        364,
+        476
+      ],
+      "old_proof_sha256": "14fafae77e659f314ed6c4c5674f70db0a8dafb40b8a01191e7509f1c040a4aa",
+      "new_proof_sha256": "3254bdc2f9b2ca97ff011c0c3f39c62a73068e799c2acf3f785ae11cdd142256",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "c2a973b8ffabd583c835cbadfaa8b04c4aa7c2234ffb05eb2b23e62d62f2e985",
+      "mathematical_check": "The report reconstructs the true Q_full projection and original pullback variance domination, little-Holder centered-Gaussian paths on the same W, and first-chaos linear statistics by finite L2 limits. Its supported-row orthogonal decomposition removes HI-perpendicular directions and applies the completed rank-zero covariance linearly to Q_J,K i_I* h, not only smooth controls; E compression keeps the stated domain, and g_delta delta^(a/2)=sqrt(delta). Compact-conjugation and strong group/adjoint continuity justify Bochner measurability. The free matrix gives the exact Frobenius bound sqrt(3+2B^2)<=3B. Crucially, this report uses the norm of the UNCONJUGATED pulled-back M_h, equal to delta^-1/r t_m, and multiplies by G_B,E^2 ONCE in the primitive bound. Thus it correctly derives C_B,E<=9B^2*2B^(1-1/r)=18B^(3-1/r), with1-1/r>theta, constant stopping and zero last cell. The exact delta-weighted power mean gives(delta n)^(1/p-1/r), delta n<2/B and both regulator errors; the minimum original-noise preimage norm then gives the Cameron embedding without an inverse covariance. This is actual new public working, not a silent repair/rebinding of RP014.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    }
+  ],
+  "mathematical_checks": [
+    "The unchanged proof has substantive public working. The report derives the unitary Fourier product coefficient c_d by both inversion factors and the ordinary delta integral, uses the correct SIGNED Peetre inequality for every real sigma, and obtains the weighted convolution kernel c_d 2^(|sigma|/2)|eta_hat_R(q)|<q>^|sigma|. Dilation eta_hat_R=R^d eta_hat(Rq), the p=Rq Jacobian and R>=1 give exactly M_sigma. L1*L2 plus density extends all real Hsigma. The Lambda^-1 velocity isometry, H1/2\u2192Hs norm1 and the stated fractional-product bound give M0=A_s M^2 and then the physical row/operator norm by Hilbert Cauchy-Schwarz. Fixed-R compact values remain the named unassigned spatial map; no uniform-radius compactness of those values is inferred.",
+    "The report publicly splits the Fourier translation bound into large/small h and low/high |xi h| regimes, uses beta+s=1/2, and obtains the required 2min(1,|h|^beta) loss. Continuous fractional products split row translation into two2A_s M^2 contributions, giving exactly4A_s M^2. Strong continuous bounded translation orbits admit the Bochner Gaussian average; the report correctly uses h=sqrt(epsilon)G_d, its probability normalization and the char-function heat OPERATOR multiplier to get M_h epsilon^(beta/2). It incorrectly writes the unitary transform of the density p_epsilon without c_d (R1), but the needed convolution-operator/averaging identities and constants are already correctly supplied. The actual closed Fourier image V is handled without surjectivity/density: smooth real even frequency cutoffs, dominated convergence including charged boundary spheres and test density give the closed-ball projection, commuting with heat. Hermitian rather than real-even symmetry is the correct general reality wording for a real input (R2). The high-frequency multiplier bound at epsilon=K^-2 and selfadjoint row transfer give M_f K^-beta with the exact1-exp(-1/2) denominator.",
+    "The finite Gaussian covariance diagonalization uses total trace L=sum||f_j||^2 and Jensen at r/2>=1 to bound the Hilbert Gaussian moment by m_r L^(r/2), including L0. The report then explicitly computes each scalar Gaussian moment of sum gamma_j A f_j(t), integrates by Tonelli, applies the scalar A norm and cancels the SAME positive finite m_r. Density and Bochner completeness give the dimension-free tensor extension, including zero spaces. The nonzero Af times infinitely many orthogonal e_j have pairwise image distance sqrt(2)||Af||Lr, so compact scalar A does not force compact tensor A\u2297identity. The new m_r explanation is correct and the bound uses no infinite-dimensional auxiliary Gaussian vector.",
+    "All required public stages are present: tensor selfadjoint idempotent projections; epsilon_J\u21920 from compact C_t applied to bounded weak-null(I-pi_J)v_J; transfer of the scalar tail via the just-reconstructed tensor bound; and the explicit first norm bound ||mathcal T_R||<=M0 c_t. The report checks Q=(I-pi_J)\u2297I+pi_J\u2297(I-P_K) by expansion and the exact finite-tensor intertwining through U=C_t\u2297I. The first term gives M0 epsilon_J and the second pointwise spatial-frequency term gives M_f c_t K^-beta. One fixed r in the stated range and bounded composition of the Bochner U field with compact-valued T_R give the actual Lr K(E) mean. Infinite spatial rank is allowed and no radius-uniform compactness is claimed.",
+    "The report reconstructs the true Q_full projection and original pullback variance domination, little-Holder centered-Gaussian paths on the same W, and first-chaos linear statistics by finite L2 limits. Its supported-row orthogonal decomposition removes HI-perpendicular directions and applies the completed rank-zero covariance linearly to Q_J,K i_I* h, not only smooth controls; E compression keeps the stated domain, and g_delta delta^(a/2)=sqrt(delta). Compact-conjugation and strong group/adjoint continuity justify Bochner measurability. The free matrix gives the exact Frobenius bound sqrt(3+2B^2)<=3B. Crucially, this report uses the norm of the UNCONJUGATED pulled-back M_h, equal to delta^-1/r t_m, and multiplies by G_B,E^2 ONCE in the primitive bound. Thus it correctly derives C_B,E<=9B^2*2B^(1-1/r)=18B^(3-1/r), with1-1/r>theta, constant stopping and zero last cell. The exact delta-weighted power mean gives(delta n)^(1/p-1/r), delta n<2/B and both regulator errors; the minimum original-noise preimage norm then gives the Cameron embedding without an inverse covariance. This is actual new public working, not a silent repair/rebinding of RP014."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "classification": "report-only normalized-density Fourier transform versus convolution-symbol error",
+      "report_section": "L:uniform-mean-spatial-tails / Step3 and Evidence",
+      "report_lf": 89,
+      "old": "In the stated unitary convention, F[p_epsilon](xi)=exp(-epsilon|xi|^2/2), with no extra Fourier factor.",
+      "new": "For normalized heat density p_epsilon and unitary transform, p_hat_epsilon(xi)=c_d exp(-epsilon|xi|^2/2). The convolution OPERATOR p_epsilon* has multiplier c_d^-1 p_hat_epsilon=exp(-epsilon|xi|^2/2); equivalently its ordinary characteristic-function integral is exp(...).",
+      "contrary_calculation": "At xi0, the unitary transform is c_d\u222bp_epsilon=c_d, not1. The report first proof explicitly uses this same unitary c_d convention.",
+      "disposition": "Raw report unchanged. The source states the correct heat-operator multiplier, not the erroneous density-transform equality. The report independently supplies the correct operator multiplier and normalized Gaussian averaging/rate, so the needed target deduction is public despite this redundant normalization typo."
+    },
+    {
+      "id": "R2",
+      "classification": "report reality/Hermitian-symmetry precision",
+      "report_section": "L:uniform-mean-spatial-tails / Step4",
+      "report_lf": 101,
+      "disposition": "For an arbitrary REAL Schwartz f, its Fourier transform is Hermitian-symmetric, not necessarily real/even. A real even chi_n preserves that Hermitian symmetry, so chi_n f_hat is the transform of a real Schwartz function. The report supplies real f, real even chi_n and the multiplication/closed-image construction, making the standard reality property applicable; its conditional real/even aside should not be read as restricting the proof to even tests or assuming Fourier surjectivity. No source correction or omitted nontrivial projection step is identified."
+    },
+    {
+      "id": "R3",
+      "classification": "literal raw category typo retained",
+      "report_lf": 2,
+      "old": "proof-readability-equability-equivalence",
+      "expected_contract_category": "proof-readability-equivalence",
+      "disposition": "Do not edit/relabel the native category. The actual mathematical working and assigned labels are evaluated under the supplied contract; the category spelling error is separate from raw PASS/high and proof-reconstruction adequacy."
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 20459,
+      "sha256": "33c81ae2d04fe44d96806fe5183de272dd544f66551b242baf84ba04c458912e"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 6309,
+      "sha256": "a16f9365c4e6f2839964ceaae962047365ac57c3387b66c07bd69b5b41d46a63"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 7516,
+      "sha256": "b6e0c30fb2e5be3521c64ea24495bd4854cec7beac19d69d4257963b3714e1d1"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 5220,
+      "sha256": "3e0518994196e5de13660aad6d3aee9a17081f47d4e97f45d072fa80f7184626"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 9967,
+      "sha256": "ef8bd3dd75468bacb1ca93ac06be705972b6ae16c106520dfd42785e7a552e47"
+    },
+    {
+      "path": "POST-LAUNCH-SOURCE-CURRENCY.private.json",
+      "bytes": 843,
+      "sha256": "d3571efc430afec5becd3182ccaac95b710b1d9f72b7317c1e5e296f4f3713c4"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 19613,
+      "sha256": "132449ade993b8feab10c06a6c062b21698d83d0ad811f99090bd069144dedc6"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 22792,
+      "sha256": "cc45619bb406b3309c563a8ac2a08cd6f4a191b39613317744020ebd0f5f7d68"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-cameron-mean-baseline.txt",
+      "bytes": 24138,
+      "sha256": "0ecbf05a70a7d5d79c9e2285dcadb93567687d4e463bfe4f6b0fdac5ff6f016d"
+    },
+    {
+      "path": "inputs/context-raw-block-inputs-baseline.txt",
+      "bytes": 35928,
+      "sha256": "ed2f85038ef6136eb8581fa64cab4962cde40bdbdba9ff163dd832c4fa5ad992"
+    },
+    {
+      "path": "inputs/context-source-convergence-baseline.txt",
+      "bytes": 25085,
+      "sha256": "f212bad41254a78109e5802def45053c8bda53a416cda9f457513406304aaef4"
+    },
+    {
+      "path": "inputs/context-constant-young-baseline.txt",
+      "bytes": 27376,
+      "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+    },
+    {
+      "path": "inputs/context-covariance-foundation-baseline.txt",
+      "bytes": 21173,
+      "sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020"
+    },
+    {
+      "path": "inputs/context-spatial-occupation-baseline.txt",
+      "bytes": 22407,
+      "sha256": "ed2f96133f5e969ba4d24fca051da4fcfcbf1377d6d18aa6a5e8385b66e5a12f"
+    }
+  ],
+  "input_identity_checks": "All SOURCE-BINDING delivered payload hashes checked and every complete OLD/NEW proof independently matched LF/hash. Original launch-source binding is unchanged.",
+  "source_currentness": {
+    "covered_launch_revision": "0816c1951f914b7f7265fb18d5736e0ef157e292",
+    "status": "EXACT_LAUNCH_SOURCE_ONLY_SUCCESSOR_READER_ADDITIONS_NOT_COVERED",
+    "later_reader_additions_covered": false,
+    "successor_revision": null,
+    "final_successor_source_coverage_claimed": false,
+    "source_currency_notice_observed": {
+      "schema": "post-launch-source-currency-notice/1",
+      "record_id": "RP039",
+      "recorded_utc": "2026-11-16T13:23:55.760508+00:00",
+      "authority": "Root relay of24sequencing correction; pending reader stop-point additions",
+      "launch_source_revision": "0816c1951f914b7f7265fb18d5736e0ef157e292",
+      "launch_source_and_input_facts_unchanged": true,
+      "source_status": "SUCCESSOR_READER_ADDITIONS_PENDING_NOT_COVERED",
+      "successor_revision": null,
+      "final_successor_source_coverage_claimed": false,
+      "limits": "Run/report covers only exact frozen0816/484 source packet as applicable; future reader stop-point additions and successor source bytes are outside coverage. Preserve old report and source binding; do not cancel, relaunch or infer approval for another call.",
+      "no_cancel_or_relaunch": true,
+      "RP040_source_9df_unaffected": true
+    },
+    "prior_RP014_scope_grade_or_adjudication_rebound": false,
+    "limit": "Root reports later reader stop-point additions for this module after launch. This report/adjudication covers exactly0816 versuscdde and none of those successor bytes. No cancellation, relaunch, retry or final-book coverage is inferred."
+  },
+  "read_limits": [
+    "All five complete OLD/NEW targets and every actual public reason/AUDIT/finding checked, with genuinely needed supplied covariance/Fourier/completion/transfer/free-phase declarations. No full unassigned/primary-source theorem-proof review or image certification.",
+    "The new correct single-G^2 public calculation is assessed on this actual report. It does not repair/rebind the older RP014 report or erase its bounded prior reconstruction limitation.",
+    "No native export/hidden reasoning/events/transport/provider/model/probe, source/public/Git/PDF change or callback. Prospective recovery/accounting remains root/dispatcher scope."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority"
+}
