@@ -1,0 +1,55 @@
+{
+ "verified": "8f51004c412ac618f4be6a5f4a42c7cc78188638",
+ "coverage": "74a04f5711a7553d7db2f2ed880a661993fe7960",
+ "checks": {
+  "coverage_descends_from_verified": true,
+  "build:lakefile.toml": true,
+  "build:lean-toolchain": true,
+  "build:lake-manifest.json": true,
+  "build:lean-pkg-binding.yaml": true,
+  "lean": {
+   "added": 0,
+   "removed": 0,
+   "byte_identical": 1981,
+   "comment_only": 8,
+   "token_change": 4,
+   "files_compared": 1993,
+   "verdict": "NOT COMMENT-ONLY"
+  },
+  "comparator_tier": {
+   "tooling_changed": [
+    "scripts/comparator/CheckFidelity.lean",
+    "scripts/comparator/CopySpans.lean"
+   ],
+   "challenge_solution_ok": [
+    "Challenge.lean",
+    "Solution.lean"
+   ],
+   "failures": []
+  },
+  "claims": {
+   "removed": [
+    "stratonovich-ham-second-moment-lean/masked-auxiliary-real-cx-ext-iff",
+    "stratonovich-ham-second-moment-lean/white-four-tactic-tw-close"
+   ],
+   "added": [],
+   "field_changes": {
+    "status": 491,
+    "summary": 1
+   },
+   "other_keys_equal": true
+  },
+  "coverage": {
+   "same_rows": true,
+   "rows": 101,
+   "field_changes": {
+    "claims": 52,
+    "inputs": 1,
+    "conclusion_scope": 1,
+    "note": 1
+   }
+  }
+ },
+ "failures": [],
+ "verdict": "ALLOWED-SUCCESSOR"
+}

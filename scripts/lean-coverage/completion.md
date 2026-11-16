@@ -1,6 +1,6 @@
-<!-- Headings and tables of the Lean companion's COMPLETION.md at 34b65d78df58, pinned by pin_companion.py; the prose is omitted. -->
-
 # Completion record
+
+What the Lean companion verifies of the manuscript, kept current at every milestone. Every milestone is an annotated git tag on the commit where the author closed the gate. Claims count Lean declarations in `claims.yaml`; coverage rows count manuscript labelled results (see `coverage.yaml` for the exact scope of each). "Same" = formalized with the manuscript's hypotheses; "inputs" = analytic inputs supplied as named hypotheses. Correspondence was checked by AI reviews from a different model family, not by a human; supplied inputs are not verified.
 
 ## Milestones
 
@@ -18,30 +18,35 @@
 | `L7-gate` | `f3be834` | 2026-11-12 | `a284420` | 1731 | 1430 | 67: 39 / 24 / 4 | wave L7 (inventory product, series tail, H^1 density, four-linear, occupation class, interval/static steps) and re-anchor to a284420 |
 | `L8-gate` | `aff7409` | 2026-11-12 | `a284420` | 2108 | 1747 | 71: 43 / 25 / 3 | wave L8 (spectral mass identity, damped-norm lower bounds, space-time positivity, finite occupation ceiling, spatial bracket, mask removal, finite and terminal Wick, symplectic free group, static phase Cauchy-Schwarz; S1Bdd proved) |
 | `L9-gate` | `6eb79c7` | 2026-11-12 | `a284420` | 2468 | 2050 | 80: 47 / 30 / 3 | wave L9 (low-alpha convolution in d = 1, 2, 3 and phase contractions in d = 3 with nothing supplied, wave Green Fourier identities, complex phase scalar steps, exact occupation ceiling C_occ, Gaussian Hermite polynomials, Fock layer and Fock form, one-mode finite word cutoff) |
+| `L10-gate` | `b2bf7a9` | 2026-11-13 | `a284420` | 2757 | 2268 | 82: 49 / 31 / 2 | wave L10 (higher Riesz bound in full for d = 2 and 3 with the optimal constant in d = 3, the white-noise model and the white moment bounds for S_2^pos with the spatial energy supplied, the fixed split with the added hypothesis hQ accepted for now, alpha-one convolution from the homogeneity hypothesis alone) |
+| `L11-gate` | `b780f10` | 2026-11-13 | `a284420` | 2955 | 2423 | 82: 54 / 26 / 2 | wave L11 (the finite word cutoff for several modes per color, which removes the fixed split's added hypothesis hQ in a new wrapper; the spatial column bound of the Fock form for a concrete Fourier-side model; the chain measures of the terminal Wick lemma constructed, with the uniform series tail whole; the static interaction bounds with fewer supplied inputs) |
+| `L12-gate` | `56fc59e` | 2026-11-13 | `a284420` | 3107 | 2541 | 85: 56 / 27 / 2 | wave L12 (the terminal Wick lemma in full for the constructed chain measures; the damped homogeneous norms in full with the smoothed covariance modelled by its density, model choice M3; source finite comparison and tube half action in full; the tube Rayleigh transfer from two supplied inputs; the Fock sandwich proved on the Fourier-side model) |
+| `L13-gate` | `8f51004` | 2026-11-13 | `a284420` | 4504 | 3654 | 101: 64 / 35 / 2 | waves L13 and L14, closed together (the two-chain diagram model, model choice M4, with the mixed-moment proposition supplied; the spatial and order-four white diagram bounds in full on the model; the Chapter 3 upper bounds with their moment statements resting on the supplied input; H^1 identified with Mathlib's Sobolev space and the resolvent form layer) |
+| `L14-gate` | `8f51004` | 2026-11-13 | `a284420` | 4504 | 3654 | 101: 64 / 35 / 2 | waves L13 and L14, closed together (the occupation completion spaces, model choice M5, and H^1 as the weak-gradient graph, model choice M6, with the four-linear form, the occupation class and the raw occupation energy in full; the source spatial heat lemma in full; the d = 3 endpoint lemmas in full with the positive definiteness of the Riesz densities proved) |
 
-## In progress (not yet gated; updated 2026-11-12)
+Every tagged commit carries lean-pkg receipts or is a docs-only descendant of one (see `.lean-receipts/` and the README verification record). External kernel replays (`leanchecker --fresh` on Easley) cover every library module through wave L14, all of them at `8f51004` (the wave-L13 and wave-L14 gates); see `verification/`.
 
-| Wave | State | Content |
-|---|---|---|
-| L10 | all eight items integrated; comparator over 2268 theorem claims; external kernel replay of its 21 new modules passed; documentation being brought to the wave-L9 conventions before its reviews | higher Riesz bound in full for d = 2 and 3 with the optimal constant, the white-noise model and the white moment bounds for S_2^pos (spatial energy supplied), the fixed split (model-free core, and the assembly on the Fock model with its analytic inputs supplied), alpha-one convolution from the homogeneity hypothesis alone |
-| L11 | five items done (four integrated); documentation drafted; documentation merge after wave L10 | the spatial column bound of the Fock form proved for a concrete Fourier-side model; the chain measures of the terminal Wick lemma constructed, the lemma and the second-moment sentence of the uniform series tail stated for them with the manuscript's hypotheses only, and their Green regularization limit; the static interaction bounds with fewer supplied inputs; the finite word cutoff for several modes per color, which removes the fixed split's added hypothesis on the cutoff coefficients (the Duhamel word expansion of the coefficients supplied instead) |
-| L12 | four items done and checked independently; the re-anchor to the current manuscript and the remaining items wait for the L11 documentation merge | terminal Wick comparison for the constructed chain measures; spectral identification of the smoothed covariance (damped homogeneous norms with nothing supplied); source finite comparison and the tube half action; the Fock sandwich proved on the concrete Fourier-side model |
-| L13 | three items done and checked independently; the two-chain diagram model built, its fidelity review passed the definitions and asked for two refutation repairs (running); the diagram bounds wait for the repair | the variational global mean with every mixed derivative bounded; the real-H clause of the masked auxiliary norm; an in-domain refutation for the static-phase shift bound; the diagram model with the mixed-moment proposition as a supplied input |
-| L14 | three items done and checked independently; a follow-up running | the completion spaces of the occupation layer (raw square and embedding, still narrower); source spatial heat lemma in full and the physical Gram vectors; the d = 3 endpoint lemmas (positive definiteness of product Riesz densities supplied) and their two corollaries |
+## Lean freeze (2026-11-13)
 
-## Completion by labelled result (manuscript a284420, companion 6eb79c7, gate L9-gate)
+Wave L14 is the last Lean wave: the author froze the Lean work after it. No wave is in progress. The table by labelled result below is at the wave-L14 gate; the remaining results are left for future work or for the community.
+
+## Completion by labelled result (manuscript a284420, companion 8f51004, gates L13-gate and L14-gate)
 
 | Status | Count | Share |
 |---|---|---|
-| formalized, manuscript hypotheses | 25 | 11% |
-| formalized, manuscript hypotheses, narrower conclusion | 18 | 8% |
-| inputs supplied, every conclusion proved | 0 | 0% |
-| inputs supplied, steps/narrower | 30 | 14% |
-| outside Lean (main theorem) | 3 | 1% |
-| not formalized | 144 | 65% |
+| formalized, manuscript hypotheses | 44 | 20% |
+| formalized, manuscript hypotheses, narrower conclusion | 16 | 7% |
+| inputs supplied, every conclusion proved | 1 | 0% |
+| inputs supplied, steps/narrower | 34 | 15% |
+| outside Lean (main theorem) | 2 | 1% |
+| not formalized | 123 | 56% |
 | total labelled results (Theorem, Proposition, Lemma, Corollary) | 220 | 100% |
 
+No theorem of the manuscript is verified end to end. Of the four main theorems, two (`T:full-upper` and `T:intrinsic-second-moment`) are recorded as outside Lean; `T:intrinsic-occupation-ceiling` is formalized in both forms with the exact constant `C_occ`, over the class `O` itself (wave L14), for `S_c^pos`, and its moment sentence `C_2 <= U_2` is not formalized; `T:white-moment-bounds` is proved for the variational value `S_2^pos` in place of `C_2`, with the white-noise energy `E_sp = c^2/6` of `P:white-spatial-energy` supplied (reserved package B9), and its time exponent and the case `c = 0` are not formalized. The remaining work is dominated by foundations Mathlib lacks (Gaussian chaos, Cameron-Martin, the chaos expansion of the solution, Young integration of operator paths and self-adjoint operators).
+
 ## Covered displays and remarks (not counted above)
+
+Four coverage rows are for a displayed equation or a remark rather than a numbered result:
 
 | Label | Coverage class | Conclusion |
 |---|---|---|
@@ -60,8 +65,8 @@
 | `T:intro-upper` | Theorem | notes_stratonovich_ham_second_moment.tex:534 | not formalized |
 | `T:intro-second-moment` | Theorem | notes_stratonovich_ham_second_moment.tex:583 | not formalized |
 | `P:mixed` | Proposition | notes_stratonovich_ham_second_moment.tex:658 | not formalized |
-| `L:white-test` | Lemma | notes_stratonovich_ham_second_moment.tex:734 | not formalized |
-| `L:damped-homogeneous-norms` | Lemma | notes_stratonovich_ham_second_moment.tex:804 | formalized, manuscript hypotheses, narrower conclusion |
+| `L:white-test` | Lemma | notes_stratonovich_ham_second_moment.tex:734 | inputs supplied, steps/narrower |
+| `L:damped-homogeneous-norms` | Lemma | notes_stratonovich_ham_second_moment.tex:804 | formalized, manuscript hypotheses |
 | `L:translated-covariance-CS` | Lemma | notes_stratonovich_ham_second_moment.tex:952 | not formalized |
 | `L:pairing-product-envelope` | Lemma | notes_stratonovich_ham_second_moment.tex:1233 | not formalized |
 | `L:spatial-wick-measures` | Lemma | notes_stratonovich_ham_second_moment.tex:1395 | not formalized |
@@ -73,29 +78,29 @@
 | `L:phase-contractions` | Lemma | notes_stratonovich_ham_second_moment.tex:2072 | formalized, manuscript hypotheses |
 | `P:static-phase-variance` | Proposition | notes_stratonovich_ham_second_moment.tex:2165 | not formalized |
 | `L:complex-phase` | Lemma | notes_stratonovich_ham_second_moment.tex:2288 | inputs supplied, steps/narrower |
-| `L:fock-form` | Lemma | notes_stratonovich_ham_second_moment.tex:2472 | inputs supplied, steps/narrower |
-| `L:finite-word-cutoff` | Lemma | notes_stratonovich_ham_second_moment.tex:2531 | inputs supplied, steps/narrower |
+| `L:fock-form` | Lemma | notes_stratonovich_ham_second_moment.tex:2472 | formalized, manuscript hypotheses, narrower conclusion |
+| `L:finite-word-cutoff` | Lemma | notes_stratonovich_ham_second_moment.tex:2531 | formalized, manuscript hypotheses |
 | `P:static-phase-all-orders` | Proposition | notes_stratonovich_ham_second_moment.tex:2578 | inputs supplied, steps/narrower |
 | `C:static-interaction` | Corollary | notes_stratonovich_ham_second_moment.tex:2686 | inputs supplied, steps/narrower |
-| `L:interval-contractions` | Lemma | notes_stratonovich_ham_second_moment.tex:2829 | inputs supplied, steps/narrower |
+| `L:interval-contractions` | Lemma | notes_stratonovich_ham_second_moment.tex:2829 | formalized, manuscript hypotheses, narrower conclusion |
 | `L:interval-complex` | Lemma | notes_stratonovich_ham_second_moment.tex:2900 | inputs supplied, steps/narrower |
 | `L:inventory-product` | Lemma | notes_stratonovich_ham_second_moment.tex:2986 | formalized, manuscript hypotheses |
-| `L:fixed-split` | Lemma | notes_stratonovich_ham_second_moment.tex:3053 | not formalized |
+| `L:fixed-split` | Lemma | notes_stratonovich_ham_second_moment.tex:3053 | inputs supplied, steps/narrower |
 | `P:interval-coefficients` | Proposition | notes_stratonovich_ham_second_moment.tex:3402 | inputs supplied, steps/narrower |
-| `L:terminal-wick` | Lemma | notes_stratonovich_ham_second_moment.tex:3600 | inputs supplied, steps/narrower |
-| `L:uniform-series-tail` | Lemma | notes_stratonovich_ham_second_moment.tex:3703 | inputs supplied, steps/narrower |
+| `L:terminal-wick` | Lemma | notes_stratonovich_ham_second_moment.tex:3600 | formalized, manuscript hypotheses |
+| `L:uniform-series-tail` | Lemma | notes_stratonovich_ham_second_moment.tex:3703 | formalized, manuscript hypotheses |
 | `T:full-upper` | Theorem | notes_stratonovich_ham_second_moment.tex:3758 | outside Lean (main theorem) |
-| `P:white-four` | Proposition | notes_stratonovich_ham_second_moment.tex:4160 | not formalized |
+| `P:white-four` | Proposition | notes_stratonovich_ham_second_moment.tex:4160 | formalized, manuscript hypotheses |
 | `L:static-four` | Lemma | notes_stratonovich_ham_second_moment.tex:4222 | not formalized |
-| `P:riesz-small` | Proposition | notes_stratonovich_ham_second_moment.tex:4313 | not formalized |
-| `L:d1-spatial` | Lemma | notes_stratonovich_ham_second_moment.tex:4525 | not formalized |
-| `P:d1-upper` | Proposition | notes_stratonovich_ham_second_moment.tex:4605 | not formalized |
+| `P:riesz-small` | Proposition | notes_stratonovich_ham_second_moment.tex:4313 | inputs supplied, steps/narrower |
+| `L:d1-spatial` | Lemma | notes_stratonovich_ham_second_moment.tex:4525 | formalized, manuscript hypotheses |
+| `P:d1-upper` | Proposition | notes_stratonovich_ham_second_moment.tex:4605 | inputs supplied, steps/narrower |
 | `L:low-alpha-convolution` | Lemma | notes_stratonovich_ham_second_moment.tex:4702 | formalized, manuscript hypotheses |
-| `L:alpha-one-convolution` | Lemma | notes_stratonovich_ham_second_moment.tex:4760 | not formalized |
-| `P:low-alpha-upper` | Proposition | notes_stratonovich_ham_second_moment.tex:4820 | not formalized |
-| `C:d1-first-calibration` | Corollary | notes_stratonovich_ham_second_moment.tex:4923 | not formalized |
+| `L:alpha-one-convolution` | Lemma | notes_stratonovich_ham_second_moment.tex:4760 | formalized, manuscript hypotheses |
+| `P:low-alpha-upper` | Proposition | notes_stratonovich_ham_second_moment.tex:4820 | inputs supplied, steps/narrower |
+| `C:d1-first-calibration` | Corollary | notes_stratonovich_ham_second_moment.tex:4923 | inputs supplied, steps/narrower |
 | `P:higher-transfer` | Proposition | notes_stratonovich_ham_second_moment.tex:5020 | not formalized |
-| `L:higher-riesz` | Lemma | notes_stratonovich_ham_second_moment.tex:5167 | inputs supplied, steps/narrower |
+| `L:higher-riesz` | Lemma | notes_stratonovich_ham_second_moment.tex:5167 | formalized, manuscript hypotheses |
 | `C:higher-riesz` | Corollary | notes_stratonovich_ham_second_moment.tex:5239 | not formalized |
 | `P:higher-obstructions` | Proposition | notes_stratonovich_ham_second_moment.tex:5272 | not formalized |
 | `L:static-holder-input` | Lemma | notes_stratonovich_ham_second_moment.tex:5395 | not formalized |
@@ -104,12 +109,12 @@
 | `L:planar-static-input` | Lemma | notes_stratonovich_ham_second_moment.tex:5827 | not formalized |
 | `P:planar-upper` | Proposition | notes_stratonovich_ham_second_moment.tex:5893 | not formalized |
 | `C:planar-range` | Corollary | notes_stratonovich_ham_second_moment.tex:6065 | not formalized |
-| `L:product-endpoints` | Lemma | notes_stratonovich_ham_second_moment.tex:6106 | not formalized |
-| `L:plane-endpoints` | Lemma | notes_stratonovich_ham_second_moment.tex:6235 | not formalized |
-| `L:endpoint-closure` | Lemma | notes_stratonovich_ham_second_moment.tex:6317 | not formalized |
+| `L:product-endpoints` | Lemma | notes_stratonovich_ham_second_moment.tex:6106 | formalized, manuscript hypotheses |
+| `L:plane-endpoints` | Lemma | notes_stratonovich_ham_second_moment.tex:6235 | formalized, manuscript hypotheses |
+| `L:endpoint-closure` | Lemma | notes_stratonovich_ham_second_moment.tex:6317 | formalized, manuscript hypotheses |
 | `P:three-transfer` | Proposition | notes_stratonovich_ham_second_moment.tex:6422 | not formalized |
-| `C:three-product-riesz` | Corollary | notes_stratonovich_ham_second_moment.tex:6796 | not formalized |
-| `C:three-finite-images` | Corollary | notes_stratonovich_ham_second_moment.tex:6841 | not formalized |
+| `C:three-product-riesz` | Corollary | notes_stratonovich_ham_second_moment.tex:6796 | inputs supplied, steps/narrower |
+| `C:three-finite-images` | Corollary | notes_stratonovich_ham_second_moment.tex:6841 | inputs supplied, steps/narrower |
 | `L:physical-spectral-energy` | Lemma | notes_stratonovich_ham_second_moment.tex:6929 | not formalized |
 | `L:mean-coefficient-holder` | Lemma | notes_stratonovich_ham_second_moment.tex:7116 | not formalized |
 | `L:positive-series-type` | Lemma | notes_stratonovich_ham_second_moment.tex:7222 | formalized, manuscript hypotheses |
@@ -162,7 +167,7 @@
 | `P:constant-raw-average` | Proposition | integrated_constant_phase_young.tex:439 | not formalized |
 | `P:constant-compact-base` | Proposition | integrated_constant_phase_young.tex:522 | not formalized |
 | `P:masked-spectral-growth` | Proposition | integrated_covariance_foundation.tex:34 | formalized, manuscript hypotheses |
-| `P:masked-auxiliary-norm` | Proposition | integrated_covariance_foundation.tex:88 | formalized, manuscript hypotheses, narrower conclusion |
+| `P:masked-auxiliary-norm` | Proposition | integrated_covariance_foundation.tex:88 | formalized, manuscript hypotheses |
 | `L:masked-time-completion` | Lemma | integrated_covariance_foundation.tex:141 | formalized, manuscript hypotheses |
 | `P:masked-noise-completion` | Proposition | integrated_covariance_foundation.tex:188 | inputs supplied, steps/narrower |
 | `P:masked-quotient-obstruction` | Proposition | integrated_covariance_foundation.tex:258 | formalized, manuscript hypotheses, narrower conclusion |
@@ -172,14 +177,14 @@
 | `L:exact-canonical-scaling` | Lemma | integrated_exact_scaling.tex:4 | inputs supplied, steps/narrower |
 | `P:tube-wiener-realization` | Proposition | integrated_gaussian_tubes.tex:21 | not formalized |
 | `L:tube-closed-geometry` | Lemma | integrated_gaussian_tubes.tex:127 | not formalized |
-| `P:tube-rayleigh-transfer` | Proposition | integrated_gaussian_tubes.tex:184 | not formalized |
+| `P:tube-rayleigh-transfer` | Proposition | integrated_gaussian_tubes.tex:184 | inputs supplied, every conclusion proved |
 | `P:tube-actual-law` | Proposition | integrated_gaussian_tubes.tex:251 | not formalized |
 | `L:tube-actual-endpoint` | Lemma | integrated_gaussian_tubes.tex:318 | not formalized |
 | `P:tube-coarse-envelope` | Proposition | integrated_gaussian_tubes.tex:379 | not formalized |
 | `L:tube-rayleigh-tail` | Lemma | integrated_gaussian_tubes.tex:458 | formalized, manuscript hypotheses, narrower conclusion |
-| `L:tube-half-action` | Lemma | integrated_gaussian_tubes.tex:485 | not formalized |
+| `L:tube-half-action` | Lemma | integrated_gaussian_tubes.tex:485 | formalized, manuscript hypotheses |
 | `L:positive-raw-embedding` | Lemma | integrated_intrinsic_constant.tex:23 | formalized, manuscript hypotheses, narrower conclusion |
-| `L:positive-physical-gram` | Lemma | integrated_intrinsic_constant.tex:113 | not formalized |
+| `L:positive-physical-gram` | Lemma | integrated_intrinsic_constant.tex:113 | formalized, manuscript hypotheses, narrower conclusion |
 | `L:positive-uniform-optimizer` | Lemma | integrated_intrinsic_constant.tex:158 | not formalized |
 | `P:positive-signed-comparison` | Proposition | integrated_intrinsic_constant.tex:220 | not formalized |
 | `P:positive-score-cutoff` | Proposition | integrated_intrinsic_constant.tex:298 | not formalized |
@@ -187,8 +192,8 @@
 | `L:masked-chain-comparison` | Lemma | integrated_masked_moments.tex:24 | not formalized |
 | `P:masked-source-moments` | Proposition | integrated_masked_moments.tex:101 | not formalized |
 | `P:masked-canonical-transfer` | Proposition | integrated_masked_moments.tex:162 | not formalized |
-| `L:occupation-raw-square` | Lemma | integrated_occupation_ceiling.tex:24 | not formalized |
-| `P:raw-occupation-energy` | Proposition | integrated_occupation_ceiling.tex:93 | formalized, manuscript hypotheses, narrower conclusion |
+| `L:occupation-raw-square` | Lemma | integrated_occupation_ceiling.tex:24 | formalized, manuscript hypotheses, narrower conclusion |
+| `P:raw-occupation-energy` | Proposition | integrated_occupation_ceiling.tex:93 | formalized, manuscript hypotheses |
 | `L:occupation-rayleigh-selection` | Lemma | integrated_occupation_ceiling.tex:150 | formalized, manuscript hypotheses, narrower conclusion |
 | `T:intrinsic-occupation-ceiling` | Theorem | integrated_occupation_ceiling.tex:205 | formalized, manuscript hypotheses, narrower conclusion |
 | `C:intrinsic-spatial-bracket` | Corollary | integrated_occupation_ceiling.tex:253 | formalized, manuscript hypotheses, narrower conclusion |
@@ -219,12 +224,12 @@
 | `P:signed-operator-upper` | Proposition | integrated_signed_moment_upper.tex:150 | not formalized |
 | `P:original-signed-point-upper` | Proposition | integrated_signed_moment_upper.tex:198 | not formalized |
 | `L:signed-limiting-multiplier` | Lemma | integrated_signed_static.tex:11 | not formalized |
-| `P:signed-closed-form` | Proposition | integrated_signed_static.tex:40 | not formalized |
+| `P:signed-closed-form` | Proposition | integrated_signed_static.tex:40 | inputs supplied, steps/narrower |
 | `L:signed-spectral-wave` | Lemma | integrated_signed_static.tex:111 | not formalized |
 | `P:signed-physical-wave` | Proposition | integrated_signed_static.tex:176 | not formalized |
-| `L:source-finite-comparison` | Lemma | integrated_source_convergence.tex:20 | not formalized |
+| `L:source-finite-comparison` | Lemma | integrated_source_convergence.tex:20 | formalized, manuscript hypotheses |
 | `P:source-gaussian-transfer` | Proposition | integrated_source_convergence.tex:43 | not formalized |
-| `L:source-spatial-heat` | Lemma | integrated_source_convergence.tex:129 | not formalized |
+| `L:source-spatial-heat` | Lemma | integrated_source_convergence.tex:129 | formalized, manuscript hypotheses |
 | `L:source-retaining-isometry` | Lemma | integrated_source_convergence.tex:168 | not formalized |
 | `P:source-canonical-convergence` | Proposition | integrated_source_convergence.tex:245 | not formalized |
 | `L:source-pointfield-regularity` | Lemma | integrated_source_convergence.tex:347 | not formalized |
@@ -233,10 +238,10 @@
 | `L:spatial-static-controls` | Lemma | integrated_spatial_occupation.tex:40 | formalized, manuscript hypotheses, narrower conclusion |
 | `L:spatial-fourier-bound` | Lemma | integrated_spatial_occupation.tex:102 | formalized, manuscript hypotheses |
 | `P:spatial-smooth-ratio` | Proposition | integrated_spatial_occupation.tex:167 | formalized, manuscript hypotheses, narrower conclusion |
-| `P:spatial-four-linear` | Proposition | integrated_spatial_occupation.tex:220 | formalized, manuscript hypotheses, narrower conclusion |
+| `P:spatial-four-linear` | Proposition | integrated_spatial_occupation.tex:220 | formalized, manuscript hypotheses |
 | `P:spatial-energy-map` | Proposition | integrated_spatial_occupation.tex:301 | formalized, manuscript hypotheses, narrower conclusion |
 | `L:occupation-kernel-row` | Lemma | integrated_spatial_occupation.tex:361 | formalized, manuscript hypotheses |
-| `P:occupation-physical-class` | Proposition | integrated_spatial_occupation.tex:387 | formalized, manuscript hypotheses, narrower conclusion |
+| `P:occupation-physical-class` | Proposition | integrated_spatial_occupation.tex:387 | formalized, manuscript hypotheses |
 | `L:symplectic-free` | Lemma | integrated_symplectic_phase.tex:31 | inputs supplied, steps/narrower |
 | `L:symplectic-source-mean` | Lemma | integrated_symplectic_phase.tex:136 | not formalized |
 | `P:symplectic-source` | Proposition | integrated_symplectic_phase.tex:187 | not formalized |
@@ -257,7 +262,7 @@
 | `C:uniform-polynomial-balls` | Corollary | integrated_uniform_products.tex:413 | not formalized |
 | `P:uniform-arbitrary-residual` | Proposition | integrated_uniform_products.tex:451 | not formalized |
 | `L:variational-heat-envelope` | Lemma | integrated_unmasked_variational.tex:24 | formalized, manuscript hypotheses |
-| `L:variational-global-mean` | Lemma | integrated_unmasked_variational.tex:65 | formalized, manuscript hypotheses, narrower conclusion |
+| `L:variational-global-mean` | Lemma | integrated_unmasked_variational.tex:65 | formalized, manuscript hypotheses |
 | `P:variational-unmasked-rate` | Proposition | integrated_unmasked_variational.tex:99 | formalized, manuscript hypotheses, narrower conclusion |
 | `P:variational-remove-mask` | Proposition | integrated_unmasked_variational.tex:169 | inputs supplied, steps/narrower |
 | `L:variational-control-dilation` | Lemma | integrated_unmasked_variational.tex:225 | formalized, manuscript hypotheses, narrower conclusion |
@@ -270,7 +275,7 @@
 | `P:wave-square-columns` | Proposition | integrated_wave_variance.tex:465 | not formalized |
 | `L:white-cdf-square` | Lemma | integrated_white_evaluation.tex:17 | not formalized |
 | `P:white-spatial-energy` | Proposition | integrated_white_evaluation.tex:58 | inputs supplied, steps/narrower |
-| `T:white-moment-bounds` | Theorem | integrated_white_evaluation.tex:101 | outside Lean (main theorem) |
+| `T:white-moment-bounds` | Theorem | integrated_white_evaluation.tex:101 | inputs supplied, steps/narrower |
 | `C:white-relative-width` | Corollary | integrated_white_evaluation.tex:131 | formalized, manuscript hypotheses |
 | `L:young-upper-growth` | Lemma | integrated_young_upper_foundation.tex:15 | not formalized |
 | `P:young-upper-multiplicative` | Proposition | integrated_young_upper_foundation.tex:57 | not formalized |

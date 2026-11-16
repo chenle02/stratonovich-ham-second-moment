@@ -1,5 +1,5 @@
 {
-  "commit": "6eb79c7b2ec4ca52f02121224484aa4865e43ac8",
+  "commit": "8f51004c412ac618f4be6a5f4a42c7cc78188638",
   "lean_pkg_version": "0.29.0",
   "lower": {
     "sorry_count": 0,
@@ -8,13 +8,13 @@
       "Quot.sound",
       "propext"
     ],
-    "claims_checked": 2468,
+    "claims_checked": 4504,
     "claims_nonstandard": 0,
     "claims_missing": 0
   },
   "comparator": {
     "result": "pass",
-    "theorems": 2050,
+    "theorems": 3654,
     "permitted_axioms": [
       "Classical.choice",
       "Quot.sound",
@@ -22,10 +22,6 @@
     ],
     "lean_pkg_version": "0.29.0"
   },
-  "ledger": {
-    "ok": true,
-    "verified": 2417,
-    "open": 0,
-    "out_of_scope": 51
-  }
+  "ledger": null,
+  "ledger_note": "not computable at 8f51004 with lean-pkg 0.29.0: its claims.yaml lists two claims naming Lean-generated declarations (WhiteFour.tacticTw_close, MaskedAuxiliaryReal.Cx.ext_iff), which claims sync refuses; v0.10.0 drops them. Omit the verified/open sentence until the re-pin."
 }

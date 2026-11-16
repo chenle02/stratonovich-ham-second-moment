@@ -5,45 +5,55 @@
 
 \hypertarget{lean-entry-top}{}%
 Some steps of this book were also checked in Lean, a proof assistant. They
-live in a separate Lean package, the Lean companion. Its public release 0.9.0,
-\begin{center}\small
-\href{https://github.com/chenle02/stratonovich-ham-second-moment-lean/tree/v0.9.0}{\nolinkurl{github.com/chenle02/stratonovich-ham-second-moment-lean/tree/v0.9.0}}\\
-DOI~\href{https://doi.org/10.5281/zenodo.24199105}{10.5281/zenodo.24199105},
-\end{center}
-contains the state described here: its Lean sources and configuration are
-identical to commit 6eb79c7 of the development repository, its own receipts
-bind its root commit, and its file \texttt{provenance/DEVELOPMENT.md} maps it
-to the development commits cited here.
-This appendix lists, for each numbered result of the book that the companion
-covers, how much of it Lean checks.
+live in a separate Lean package, the Lean companion. This appendix describes
+the wave-L14 gate (development commit \texttt{8f51004} of the private
+development repository; to be released as v0.10.0). It describes the
+checked development state, not a published v0.10.0 release. The public
+release link and DOI will be added when that version is published.
 
-The Lean work is still in progress, and the list will become more complete
-with time. This appendix records what had been checked by machine at one
-fixed version of the companion: commit \lcCommit{}, made on \lcDate{} at
-\lcTime{}. All the checks reported below were run on that version, and the
-list is generated from its coverage file. A later version may cover more.
+For each listed result, the entry identifies what Lean proves and what
+remains outside that proof. Read the result reference and its title as one
+entry. Where the conclusion is narrower, the entry states which part is
+proved and which part is not yet formalized. Where inputs are supplied,
+the entry lists the mathematical facts assumed by the Lean proof. These
+inputs are assumptions of that proof, not additional facts it establishes.
 
-Most results that have a row here carry a small link in the left margin of
-the text, beside their heading: the word Lean and, under it, the class that
-this appendix prints for the result. The link leads to the result's row.
+Every result with a row here, except those listed as not formalized, carries
+a small link in the left margin of the text, beside its heading or its
+displayed equation: the word Lean and, under it, the class that this
+appendix prints for the result. The link leads to the result's row.
 \emph{Full} means that every conclusion is formalized under the book's
-hypotheses. \emph{Narrower} means that Lean proves a narrower conclusion.
-\emph{Partial} means that steps are checked, not the result itself, with
-analytic inputs supplied as hypotheses. Displayed equations carry no link.
+hypotheses.
+\emph{Narrower} means that Lean works under the book's hypotheses but
+proves only the conclusion specified in the entry; the remaining part is
+not yet formalized.
+\emph{Supplied} means that every conclusion is proved with analytic inputs
+supplied as hypotheses.
+\emph{Partial} means that Lean proves only the stated steps, parts or
+narrower form using the listed supplied inputs; it does not prove the whole
+result as stated in the book. The entry names the inputs.
 Lean checks the formal statements. Their match with the statements of this
 book was reviewed by AI models and has not been verified by a person. A
 result without a link carries no Lean claim; this does not mean that the
 result is in doubt.
 
-Three points apply to every row. First, Lean checks the statements as they
-are written in Lean. Second, whether those statements say what the book says
-was reviewed by AI models of a different family from the ledger's author; it
-has not been checked by a person. Third, the analytic and probabilistic
-inputs stay outside Lean: the solution of the stochastic wave equation, the
-Stratonovich integrals and the noise, the bounds imported from the
-literature, the passage from Laplace transforms to time, and the variational
-asymptotics. Where a row says that inputs are supplied, they enter Lean as
-named hypotheses.
+\ifdefined\lcModelKey
+Some entries name a registered modelling choice by a code. Lean proves the
+statements for the model; the identification named in each line is not
+proved in Lean.
+\begin{description}\setlength{\itemsep}{0pt}
+  \lcModelKey
+\end{description}
+\fi
+
+Three points apply to every entry. Lean checks the statements as written
+in Lean. Their correspondence with this book was reviewed by AI models
+from a different family from the author of the formal statements; it has
+not been verified by a person. A supplied input is a named mathematical
+hypothesis: its proof and its application to the book's objects are not
+certified merely by using it in Lean. The entries distinguish these inputs
+from the conclusions Lean proves. They do not certify the book's main
+stochastic moment theorems end to end.
 
 The statements added in wave L9, and the changes that wave made to existing
 entries of the coverage record, were checked against the book in eight
@@ -59,18 +69,68 @@ the companion does not construct counts as narrower; and the record's index
 lists, for each label, only the sections where it is treated. A final
 confirmation passed with high confidence, and the author accepted wave L9 on
 November~12, 2026, with a correction of the count of public definitions
-recorded as a documentation-only successor. The record states what remains
-open. The exact occupation-ceiling constant is now formalized, but
-Theorem~\ref{T:intrinsic-occupation-ceiling} stays narrower, because its second
-sentence is not formalized and the class of occupation fields is modelled by
-joint representatives. The Fock form is proved with a bound on its
-spatial column supplied as an input.
-The Green-kernel part of
-Lemma~\ref{L:damped-homogeneous-norms} holds in dimensions one to three, but
-the lemma stays narrower because the smoothing of the covariance is not yet
-identified. Lemma~\ref{L:finite-word-cutoff} is formalized for one Gaussian
-mode per color only. These reviews are not a human verification, and they do
-not check the analytic inputs that stay outside Lean.
+recorded as a documentation-only successor.
+
+The statements added in waves L10 to L14, and the changes those waves made to
+existing entries of the coverage record, were checked against the manuscript in
+correspondence reviews. The reviews were done by AI models from a different
+family than the one that wrote the formal statements, under the conventions the
+author fixed in wave L9. Each wave's reviews found documentation corrections
+only, and no error in a Lean proof. The corrections were made, and a
+confirmation review passed with high confidence.
+
+The author accepted waves L10 and L11 on November~13, 2026:
+\begin{itemize}
+  \item In wave L10, one assembly step of
+    Proposition~\ref{P:interval-coefficients} assumed a bound on the pairings of
+    the cut-off coefficients that the manuscript does not state as a hypothesis.
+    Wave L11 proves that bound from a supplied expansion of the coefficients.
+  \item In wave L11, the Gaussian space is represented by Hermite coefficient
+    vectors. Lemmas~\ref{L:fock-form} and~\ref{L:interval-contractions} hold
+    with the manuscript's hypotheses but narrower conclusions, on a
+    Fourier-side model not identified with the physical-space operators.
+\end{itemize}
+The author accepted wave L12 the same day, recording that the smoothed
+covariance of Lemma~\ref{L:damped-homogeneous-norms} is modelled by its density;
+with that choice the lemma is formalized in full.
+
+Waves L13 and L14 were accepted together, with three further modelling choices
+recorded:
+\begin{itemize}
+  \item the second moment's two-chain pairing integrals are represented by a
+    deterministic diagram model, with the mixed-moment expansion of
+    Proposition~\ref{P:mixed} supplied as an input;
+  \item the occupation spaces are modelled by their $L^2$ completions;
+  \item $H^1$ is modelled as the graph of the weak gradient.
+\end{itemize}
+On these models:
+\begin{itemize}
+  \item Propositions~\ref{P:spatial-four-linear}, \ref{P:occupation-physical-class},
+    \ref{P:raw-occupation-energy} and~\ref{P:masked-auxiliary-norm}, and
+    Lemma~\ref{L:variational-global-mean}, are formalized in full.
+  \item Theorem~\ref{T:intrinsic-occupation-ceiling} is formalized in both forms
+    with the exact constant $C_{\rm occ}$ over the occupation class itself,
+    without its moment sentence $C_2\le U_2$.
+  \item Propositions~\ref{P:d1-upper} and~\ref{P:low-alpha-upper} have their
+    diagram values and coefficient bounds proved on the model, and their
+    statements about the solution follow from the supplied
+    Proposition~\ref{P:mixed}.
+\end{itemize}
+Open items in the record:
+\begin{itemize}
+  \item Theorems~\ref{T:full-upper} and~\ref{T:intrinsic-second-moment} are
+    outside Lean.
+  \item Theorem~\ref{T:white-moment-bounds} is formalized for the variational
+    value $S_2^{\mathrm{pos}}$ rather than for $C_2$, with the white spatial
+    energy supplied.
+  \item Several results rest on named inputs, each listed with the result that
+    supplies it. These include Propositions~\ref{P:mixed}
+    and~\ref{P:three-transfer}, the first-moment series, and the signed
+    multiplier form.
+  \item No theorem of the manuscript is verified end to end.
+\end{itemize}
+These reviews are not a human verification, and they do not check the analytic
+inputs that stay outside Lean.
 
 \ifdefined\lcHaveReceipts
 \begin{wrapfigure}{r}{0.19\textwidth}
@@ -88,12 +148,19 @@ declaration, and each of the \lcClaimsChecked{} listed claims, uses only
 Lean's three standard axioms (\texttt{propext}, \texttt{Classical.choice} and
 \texttt{Quot.sound}). A second, separate check confirms that the proofs of
 all \lcComparatorTheorems{} theorems prove their statements as restated in a
-separate file. The list of claims has \lcVerified{} verified and \lcOpen{}
-open. These checks concern the Lean statements themselves; whether those
+separate file.
+\ifdefined\lcHaveLedger The list of claims has \lcVerified{} verified and
+\lcOpen{} open.\fi{}
+These checks concern the Lean statements themselves; whether those
 statements say what the book says is the AI-reviewed match described above.
-Every module of the Lean library was also checked a second time by Lean's
-separate kernel checker, run on a computing cluster; three helper libraries used
-only for the separate statement check were not.
+The private development verification record for commit \texttt{8f51004}
+reports a separate kernel replay on a computing cluster: all 141 library
+modules and the umbrella module passed \texttt{leanchecker --fresh}, and
+all 142 targets also passed its default mode. The three libraries used only
+for the separate statement check were not included in this replay.
+These checks are those of the gate commit. The entries below are generated
+from the development state that follows it, which drops two claims that
+name Lean-generated declarations.
 \fi
 
 In short: \lcSummary{} The \lcRows{} labelled results fall into \lcGroups{} groups.

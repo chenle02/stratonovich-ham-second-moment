@@ -175,6 +175,16 @@ def completion_tex(path, rows, numbers, commit, sm):
 def main():
     cov = yaml.safe_load(open(os.path.join(HERE, "coverage.yaml")))
     commit, date = open(os.path.join(HERE, "coverage-commit.txt")).read().split()[:2]
+    cov_commit = open(os.path.join(HERE, "coverage-commit.txt")).read().split()[2]
+    # A coverage commit other than the verified one must be either a
+    # docs-only successor (checked by pin_companion.py when it pins) or carry
+    # the record of the companion's successor check for exactly this pair.
+    sc_path = os.path.join(HERE, "successor-check.json")
+    if os.path.exists(sc_path):
+        sc = json.load(open(sc_path))
+        if (sc.get("verdict") != "ALLOWED-SUCCESSOR" or sc.get("failures")
+                or sc.get("verified") != commit or sc.get("coverage") != cov_commit):
+            raise SystemExit("successor-check.json does not allow this verified/coverage pair")
     head = open(os.path.join(HERE, "coverage.yaml")).read().splitlines()
     m = next((re.match(r"#\s*(\d+) further claims", l) for l in head[:10]
               if re.match(r"#\s*(\d+) further claims", l)), None)
@@ -231,6 +241,26 @@ def main():
                 raise SystemExit(f"coverage-scope-tex.yaml has drifted from coverage.yaml at {r['label']}")
             scope_tex[r["label"]] = r["tex"]
 
+    # Typeset wording of the scope sentences and of the supplied inputs,
+    # written and checked by the companion's maintainer side
+    # (coverage-payload-tex.yaml): per label the ASCII of coverage.yaml (so
+    # that drift is detected), the sentence in TeX, its two parts ("Lean
+    # proves" / "Not yet formalized") and one TeX item per supplied input.
+    payload = {}
+    pl_path = os.path.join(HERE, "coverage-payload-tex.yaml")
+    if os.path.exists(pl_path):
+        for r in yaml.safe_load(open(pl_path))["rows"]:
+            row = next((x for x in rows if x["paper"]["label"] == r["label"]), None)
+            if row is None:
+                raise SystemExit(f"coverage-payload-tex.yaml: unknown label {r['label']}")
+            if (r.get("ascii") or "") and r["ascii"] != row.get("conclusion_scope"):
+                raise SystemExit(f"coverage-payload-tex.yaml has drifted from coverage.yaml at {r['label']} (scope)")
+            want = [x for x in (row.get("inputs") or [])]
+            got = [i["ascii"] for i in (r.get("inputs_tex") or [])]
+            if got != want:
+                raise SystemExit(f"coverage-payload-tex.yaml has drifted from coverage.yaml at {r['label']} (inputs)")
+            payload[r["label"]] = r
+
     by_cat = collections.defaultdict(list)
     for r in rows:
         by_cat[(r["class"], r.get("conclusion", "full"))].append(r)
@@ -250,15 +280,54 @@ def main():
             return [(0, int(x)) if x.isdigit() else (1, x) for x in parts]
         for r in sorted(rs, key=order):
             p = r["paper"]
-            line = f"  {ref(p['label'])} & {tex_escape(p['title'])}"
             scope_tex_r = scope_tex.get(p["label"]) or r.get("conclusion_scope_tex")
             scope = r.get("conclusion_scope")
-            if key == ("same-assumptions", "weaker") and (scope_tex_r or scope):
-                txt = tex_with_refs(scope_tex_r) if scope_tex_r else text_with_refs(scope)
-                line += f"\\newline{{\\footnotesize {txt}}}"
-            # One small table per row, so that a long group can break across
-            # pages between rows (a single tabular cannot break).
-            body.append("\\begin{lcTable}\n" + line + "\n\\end{lcTable}\n")
+            inputs = r.get("inputs") or []
+            if key[0] == "inputs-supplied" and not inputs:
+                raise SystemExit(f"{p['label']}: inputs supplied, but coverage.yaml names none")
+            detailed = key != ("same-assumptions", "full") and (scope_tex_r or scope or inputs)
+            if not detailed:
+                # A row of the two-column list: reference and title. One
+                # small table per row, so that a group can break across pages.
+                line = f"  {ref(p['label'])} & {tex_escape(p['title'])}"
+                body.append("\\begin{lcTable}\n" + line + "\n\\end{lcTable}\n")
+                continue
+            # A result that is not formalized in full gets a full-width
+            # entry: reference and title on one line, then what Lean proves,
+            # what is not formalized, and the supplied inputs one by one.
+            # Line numbers of the companion's manuscript copy do not match
+            # this book and are never printed; a draft may (LC_DRAFT=1).
+            ent = [f"\\lcEntry{{{ref(p['label'])}}}{{{tex_escape(p['title'])}}}\n"]
+            pl = payload.get(p["label"])
+            if payload and pl is None:
+                raise SystemExit(f"{p['label']}: no typeset wording in coverage-payload-tex.yaml")
+            if pl:
+                parts = [pl.get("proved_tex") or "", pl.get("not_formalized_tex") or "", pl.get("tex") or ""]
+                items = [i["tex"] for i in (pl.get("inputs_tex") or [])]
+            else:
+                parts = ["", "", scope_tex_r or ""]
+                items = None
+            # Line numbers of the companion's manuscript copy do not match
+            # this book and are never printed.
+            for x in parts + (items or inputs):
+                if re.search(r"\blines? \d|\bl\. ?\d", x):
+                    raise SystemExit(f"{p['label']}: text with manuscript line numbers: {x[:80]}")
+            if parts[0]:
+                ent.append(f"\\lcPart{{Lean proves}}{{{tex_with_refs(parts[0])}}}\n")
+                if parts[1]:
+                    ent.append(f"\\lcPart{{Not yet formalized}}{{{tex_with_refs(parts[1])}}}\n")
+            elif parts[2]:
+                ent.append(f"\\lcText{{{tex_with_refs(parts[2])}}}\n")
+            elif scope:
+                ent.append(f"\\lcText{{{text_with_refs(scope)}}}\n")
+            if inputs:
+                word = "Input supplied" if len(inputs) == 1 else "Inputs supplied"
+                ent.append(f"\\lcInputs{{{word}}}\n")
+                for k, x in enumerate(inputs, 1):
+                    txt = tex_with_refs(items[k - 1]) if items is not None else text_with_refs(x.strip())
+                    ent.append(f"\\lcInput{{{k}}}{{{txt}}}\n")
+            ent.append("\\lcEntryEnd\n")
+            body.append("".join(ent))
         body.append("\n")
 
     summ_path = os.path.join(HERE, "lean-receipt-summary.json")
@@ -277,13 +346,28 @@ def main():
             f"\\newcommand{{\\lcLeanPkgVersion}}{{{sm['lean_pkg_version']}}}\n",
             f"\\newcommand{{\\lcClaimsChecked}}{{{lo['claims_checked']}}}\n",
             f"\\newcommand{{\\lcComparatorTheorems}}{{{co['theorems']}}}\n",
-            f"\\newcommand{{\\lcVerified}}{{{le['verified']}}}\n",
-            f"\\newcommand{{\\lcOpen}}{{{le['open']}}}\n",
             "\\newcommand{\\lcHaveReceipts}{1}\n"]
+        # The claims ledger may be unavailable at the pinned commit (null in
+        # the summary): then the verified/open sentence is not printed.
+        if le:
+            receipts += [f"\\newcommand{{\\lcVerified}}{{{le['verified']}}}\n",
+                         f"\\newcommand{{\\lcOpen}}{{{le['open']}}}\n",
+                         "\\newcommand{\\lcHaveLedger}{1}\n"]
     comp_path = os.path.join(HERE, "completion.md")
     completion = (completion_tex(comp_path, rows, numbers, commit,
                                  json.load(open(summ_path)) if os.path.exists(summ_path) else None)
                   if os.path.exists(comp_path) else [])
+    # Key to the registered model choices (M1, M2, ...), when the companion
+    # supplies one: \item lines, printed as they are.
+    key_path = os.path.join(HERE, "model-key.tex")
+    model_key = []
+    if os.path.exists(key_path):
+        items = [l for l in open(key_path).read().splitlines() if l.startswith("\\item")]
+        used = set(re.findall(r"\bM\d\b", "".join(body)))
+        have = set(re.findall(r"\\item\[(M\d)\]", "\n".join(items)))
+        if used - have:
+            raise SystemExit(f"model codes used in the rows without a key: {sorted(used - have)}")
+        model_key = ["\\newcommand{\\lcModelKey}{%\n" + "\n".join(items) + "\n}\n"]
     d = dt.date.fromisoformat(date[:10])
     out = ["% Generated by make_appendix_f.py from coverage.yaml; do not edit by hand.\n",
            f"\\newcommand{{\\lcCommit}}{{{commit[:7]}}}\n",
@@ -293,7 +377,7 @@ def main():
            f"\\newcommand{{\\lcSummary}}{{{text_with_refs(cov['summary'])}}}\n",  # labels become references
            f"\\newcommand{{\\lcUnlabelled}}{{{unlabelled}}}\n",
            f"\\newcommand{{\\lcGroups}}{{{WORDS[sum(1 for k, _ in CATEGORIES if by_cat.get(k))]}}}\n",
-           "\\newcommand{\\lcTables}{%\n" + "".join(body) + "}\n"] + receipts + completion
+           "\\newcommand{\\lcTables}{%\n" + "".join(body) + "}\n"] + receipts + completion + model_key
     open(OUT, "w").write("".join(out))
     print(f"{len(rows)} rows; categories {[ (k, len(by_cat.get(k, []))) for k, _ in CATEGORIES ]}; "
           f"unlabelled {unlabelled}; commit {commit[:7]}")

@@ -31,3 +31,26 @@ The table's wording for the five categories follows the companion's README.
 The correspondence between the Lean statements and the book is reviewed by AI
 models of a different family from the ledger's author; it is not human
 verification.
+
+## Files added for the wave-L14 state (2026-11-15)
+
+- `coverage-payload-tex.yaml`: the typeset wording that Appendix F prints for
+  results not formalized in full, supplied and checked on the companion's
+  side: per label the ASCII of `coverage.yaml` (the generator stops on any
+  drift), the scope sentence in TeX, its two parts ("Lean proves" and "Not
+  yet formalized"), and one TeX item per supplied input, in the order of
+  `coverage.yaml`. It carries no line numbers of the companion's manuscript
+  copy; the generator stops if a printed text contains one.
+- `model-key.tex`: the key to the registered model choices M1 to M6. The
+  generator stops if an entry uses a code that has no key.
+- `successor-check.json`: the record of the companion's successor check for
+  the pair in `coverage-commit.txt`, when the coverage commit is not a
+  docs-only successor of the verified commit. `pin_companion.py
+  --successor-check SCRIPT` runs that check and writes the record; the
+  generator stops unless the record allows exactly this pair.
+- `lean-receipt-summary.json` may have `"ledger": null` with a note: the
+  sentence on verified and open claims is then not printed.
+
+Results not formalized in full are printed as full-width entries
+(`\lcEntry`, `\lcPart`, `\lcInputs`, `\lcInput`); results formalized in full
+stay a two-column list (`lcTable`).

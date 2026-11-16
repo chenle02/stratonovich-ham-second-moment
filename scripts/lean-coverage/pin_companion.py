@@ -2,11 +2,17 @@
 """Pin the Lean companion's coverage file and receipt numbers for Appendix F.
 
 Usage: pin_companion.py COMPANION_REPO VERIFIED_COMMIT [COVERAGE_COMMIT]
+           [--successor-check SCRIPT]
 VERIFIED_COMMIT is the commit the receipts and the claims ledger are bound
 to (the one the book quotes). COVERAGE_COMMIT (default: the same) is where
 coverage.yaml is read; it must descend from VERIFIED_COMMIT through commits
 that change only files the Lean build does not read (the companion's
-docs-only rule in lean-pkg-binding.yaml).
+docs-only rule in lean-pkg-binding.yaml). The one exception is checked, not
+skipped: with --successor-check SCRIPT, a coverage commit that is not a
+docs-only successor is accepted only if SCRIPT (the companion's own
+verifier, called as  SCRIPT REPO VERIFIED COVERAGE --json OUT) exits 0 with
+the verdict ALLOWED-SUCCESSOR for exactly these two commits; its JSON record
+is written beside coverage-commit.txt as successor-check.json.
 Writes beside this script:
   coverage.yaml               the companion's coverage.yaml at COVERAGE_COMMIT
   coverage-commit.txt         VERIFIED_COMMIT (full) and its date, then
@@ -32,8 +38,14 @@ def write_all(files):
     for name, text in files.items():
         with open(os.path.join(HERE, name), "w") as fh:
             fh.write(text)
-repo, commit = sys.argv[1], sys.argv[2]
-cov_commit = sys.argv[3] if len(sys.argv) > 3 else commit
+args = sys.argv[1:]
+successor_check = None
+if "--successor-check" in args:
+    i = args.index("--successor-check")
+    successor_check = args[i + 1]
+    del args[i:i + 2]
+repo, commit = args[0], args[1]
+cov_commit = args[2] if len(args) > 2 else commit
 git = lambda *a: subprocess.run(["git", "-C", repo, *a], capture_output=True, text=True, check=True).stdout
 full = git("rev-parse", commit).strip()
 cov_full = git("rev-parse", cov_commit).strip()
@@ -45,7 +57,19 @@ if cov_full != full:
     build = [f for f in changed if f.endswith(".lean") or f.startswith("lakefile") or f in
              ("lake-manifest.json", "lean-toolchain", "claims.yaml", "lean-pkg-binding.yaml")]
     if build:
-        raise SystemExit(f"commits after the verified commit change build inputs: {build}")
+        if not successor_check:
+            raise SystemExit(f"commits after the verified commit change build inputs: {build}")
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            rec_path = os.path.join(tmp, "record.json")
+            run = subprocess.run([sys.executable, "-I", successor_check, repo, full, cov_full,
+                                  "--json", rec_path], capture_output=True, text=True)
+            rec = json.load(open(rec_path)) if os.path.exists(rec_path) else {}
+        if (run.returncode != 0 or rec.get("verdict") != "ALLOWED-SUCCESSOR" or rec.get("failures")
+                or rec.get("verified") != full or rec.get("coverage") != cov_full):
+            raise SystemExit("the coverage commit is not a docs-only successor and the successor check "
+                             f"did not allow it: {rec.get('verdict')} {rec.get('failures')}")
+        out["successor-check.json"] = json.dumps(rec, indent=1) + "\n"
 out["coverage.yaml"] = git("show", f"{cov_full}:coverage.yaml")
 # The companion's completion record (milestones and the status of every
 # labelled result), if it exists at the coverage commit.
