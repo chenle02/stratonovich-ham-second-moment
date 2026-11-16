@@ -1,9 +1,12 @@
 # Readability reread index
 
-9 native attempts are terminal;8 have public reports. They cover
-53 distinct complete OLD/NEW pairs (52 changed,1 unchanged),
+12 native attempts are terminal;11 have public reports. They cover
+74 distinct complete OLD/NEW pairs (70 changed,4 unchanged),
 with1 further assigned pair(s) lacking complete public reading evidence.
-Raw verdict counts:{"NO_PUBLIC_REPORT": 1, "PASS": 7, "PASS_WITH_NOTES": 1}.
+Coordinator reconstruction status:{"CHECKED": 72, "NOT_RECONSTRUCTED": 0, "NO_PUBLIC_REPORT": 1, "PARTIAL": 2}.
+Reported COMPLETE reading and correct complete public working are separate;
+PARTIAL reconstruction does not itself mean a source proof is defective.
+Raw verdict counts:{"NO_PUBLIC_REPORT": 1, "PASS": 9, "PASS_WITH_NOTES": 2}.
 
 RP007 has no report after its32,768-token reasoning cap was exhausted. Its
 literal status remains NOT_OBTAINED, with null reviewer verdict/confidence/read

@@ -1,0 +1,374 @@
+{
+  "review_record_id": "RP011",
+  "native_verdict": "PASS_WITH_NOTES",
+  "native_confidence": "high",
+  "source_revision": "bc531b022ff2d39ab31d65d8d0d5b839f9cb151e",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "coordinator_disposition": "PARTIAL_INDEPENDENT_PUBLIC_RECONSTRUCTION_NO_SOURCE_DEFECT_IDENTIFIED",
+  "requested_reread_complete": false,
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "public_reasons_fully_mathematically_correct_as_written": false,
+  "reported_preexisting_source_findings_adopted": false,
+  "unaddressed_requested_core_deductions_identified": [
+    {
+      "label": "P:spatial-four-linear",
+      "report_section": "Evidence / LF91\u2013100",
+      "required_deduction": "The smooth square-pair bound, Fatou extension to physical H1 square pairings, and ordinary Cauchy\u2013Schwarz under dy Gamma(dz) producing the absolute four-linear estimate.",
+      "public_report_limitation": "The public evidence begins with the added telescoping difference bound and states it uses the four-linear form bound; it does not derive that prerequisite physical extension/bound or the Fatou-to-ordinary-CS chain. Reading COMPLETE and a correct continuity check do not replace this requested assigned reconstruction.",
+      "source_scope": "Those deductions are fully written in frozen NEW Step1\u20133 and OLD; no manuscript repair is inferred.",
+      "dependency_effect": "The local ratio/energy/occupation arguments can be checked, but their dependency on the assigned full H1 extension is not fully reconstructed within the public report."
+    }
+  ],
+  "reconstruction_assessment": "All8 public sections and findings were read. The two false-positive source notes contain doubled gradient exponents. Importantly, the public report itself also gives correct alternative routes for the two disputed estimates: normalized smooth approximation plus its correctly checked continuity for R_sp\u2264R0, and the explicit unit-profile ratio bound plus square-CS for the occupation FF bound. Those two estimates are not undemonstrated merely because of the false notes. Nevertheless the P:spatial-four-linear evidence presupposes rather than reconstructs the smooth\u2192Fatou\u2192ordinary physical-CS extension giving the full four-linear bound. Thus strict requested public reconstruction is incomplete. Worker/source algebra recorded here must not fill that omission silently. Raw reading/preservation flags and PASS_WITH_NOTES/high stay unchanged; root decides disposition.",
+  "report_notes": [
+    {
+      "id": "R1",
+      "kind": "report-only exponent arithmetic error and false-positive source-wording finding",
+      "report_section": "P:spatial-four-linear / Lost steps or qualifiers",
+      "report_LF": [
+        101,
+        111
+      ],
+      "report_OLD": "For a general unit H1 profile E:spatial-homogeneous-bound yields A<=R0 b^alpha, i.e. ratio<=R0 b^(alpha/2).",
+      "mathematically_correct_NEW": "For unit L2 f, N(f)^4=||grad f||^alpha=(||grad f||^2)^(alpha/2)=b(f)^(alpha/2). Thus A_sp(f)<=R0 b(f)^(alpha/2), and division by the positive b(f)^(alpha/2) directly gives the claimed R_sp<=R0.",
+      "source_pointers": {
+        "path": "notes/integrated_spatial_occupation.tex",
+        "definition_b_old_new_LF": 36,
+        "N_definition_OLD_LF": 235,
+        "N_definition_NEW_LF": 305,
+        "direct_ratio_deduction_OLD_LF": 303,
+        "direct_ratio_deduction_NEW_LF": 398,
+        "labels": [
+          "E:spatial-homogeneous-bound",
+          "P:spatial-four-linear"
+        ]
+      },
+      "disposition": "Reject the report allegation of a pre-existing source imprecision. Both source sentences and their direct mechanism are correct. Normalized smooth approximation also legitimately preserves the ratio, but is not a repair of a faulty homogeneous-bound step. No source OLD/NEW correction is required. The mathematical NEW above is an external adjudication explanation, not an edit to the raw report."
+    },
+    {
+      "id": "R2",
+      "kind": "report-only doubled-exponent error and false-positive citation finding",
+      "report_section": "P:occupation-physical-class / Lost steps or qualifiers",
+      "report_LF": [
+        164,
+        173
+      ],
+      "report_OLD": "The two cited equations alone give B<=R_sp F(s)^2 F(t)^2.",
+      "mathematically_correct_NEW": "For unit g_s, N(g_s)^4=b(g_s)^(alpha/2)=F(s)^2 with F(s)=b(g_s)^(alpha/4). Taking the square root of A_sp(g_s) A_sp(g_t) therefore yields R_sp F(s) F(t), exactly the source bound. R_sp=R0 was established in the preceding proposition.",
+      "source_pointers": {
+        "path": "notes/integrated_spatial_occupation.tex",
+        "occupation_F_OLD_LF": 444,
+        "occupation_F_NEW_LF": 560,
+        "labels": [
+          "E:spatial-homogeneous-bound",
+          "E:spatial-square-CS",
+          "E:occupation-physical-bound"
+        ]
+      },
+      "disposition": "Reject the report allegation that the two source citations are insufficient. The homogeneous bound and square-CS directly imply the displayed estimate, using the already-established equality of ratio constants. No source correction or new analytic input is required."
+    },
+    {
+      "id": "R3",
+      "kind": "report-only downstream characterization of R1/R2",
+      "report_section": "AUDIT dispositions and Findings and limits",
+      "disposition": "The report repeats that two pre-existing citation/readability issues exist. That characterization is not adopted, because both arise solely from its own exponent error. Preserve the raw PASS_WITH_NOTES/high and raw text; external adjudication records rejection of those two source findings. No callback/retry or repaired report is used."
+    },
+    {
+      "id": "R4",
+      "kind": "public reconstruction-depth limitation, distinct from report exponent errors and source correctness",
+      "disposition": "Specific disputed ratio estimates have correct alternative derivations already written in the public report. But the full smooth-to-H1 physical four-linear bound is not reconstructed publicly; the evidence uses that bound to check telescoping continuity. Mark requested_reread_complete=false at strict reconstruction depth, preserving native COMPLETE and raw PASS_WITH_NOTES/high. No author/source calculation or hidden reasoning is counted as missing independent public evidence."
+    }
+  ],
+  "per_proof_adjudication": [
+    {
+      "label": "L:spatial-physical-pair",
+      "native_old_reading": "COMPLETE",
+      "native_new_reading": "COMPLETE",
+      "native_preservation": "PRESERVED",
+      "native_explanations": "JUSTIFIED",
+      "public_reason_assessment": "SUBSTANTIVE_CORRECT_PUBLIC_COMPARISON",
+      "OLD_proof_LF": [
+        25,
+        34
+      ],
+      "NEW_proof_LF": [
+        25,
+        34
+      ],
+      "report_LF_ranges_match_frozen_inventory": true,
+      "checked_public_deductions": [
+        "Sigma-finiteness uses product Lebesgue/positive Radon exhaustion. Null Borel sets are killed at x and x-y by Tonelli in x for each fixed translate; Borel null supersets extend representative independence to completed measures. Signed pairings remain conditional on absolute convergence."
+      ],
+      "reconstruction_scope_assessment": "Report and source argument agree; unchanged body equality is supplemented by the actual null-set reasoning.",
+      "missing_requested_core_identified": false,
+      "source_change_required": false,
+      "native_reading_flags_preserved": true,
+      "local_public_argument_reconstruction_complete": true
+    },
+    {
+      "label": "L:spatial-static-controls",
+      "native_old_reading": "COMPLETE",
+      "native_new_reading": "COMPLETE",
+      "native_preservation": "PRESERVED",
+      "native_explanations": "JUSTIFIED",
+      "public_reason_assessment": "SUBSTANTIVE_CORRECT_PUBLIC_COMPARISON",
+      "OLD_proof_LF": [
+        58,
+        98
+      ],
+      "NEW_proof_LF": [
+        58,
+        125
+      ],
+      "report_LF_ranges_match_frozen_inventory": true,
+      "checked_public_deductions": [
+        "Smooth positive control realizes c U_z at s0, so upstream unmasked-rate proposition applies with same Gamma/class. Comparing Rayleigh suprema gives squared-rate Lipschitz bound; positive monotone rate on compact c interval supplies denominator floor for square root.",
+        "Nonincreasing chi at arguments1/(nt),1/(n(1-t)) gives increasing f_n to equilibrium density inside I. Original temporal kernel and exact equilibrium potential give k_n up to1 including endpoints, bounded below by integral f4>0. Dominated convergence gives rate limit, while nonnegative Tonelli and monotone cost integrand give M_a B_Gamma(z,z). Differences of scores need not be monotone."
+      ],
+      "reconstruction_scope_assessment": "Every new explanatory calculation is actually addressed; no unmasked random flow or large-time-dependent control is introduced.",
+      "missing_requested_core_identified": false,
+      "source_change_required": false,
+      "native_reading_flags_preserved": true,
+      "local_public_argument_reconstruction_complete": true
+    },
+    {
+      "label": "L:spatial-fourier-bound",
+      "native_old_reading": "COMPLETE",
+      "native_new_reading": "COMPLETE",
+      "native_preservation": "PRESERVED",
+      "native_explanations": "JUSTIFIED",
+      "public_reason_assessment": "SUBSTANTIVE_CORRECT_PUBLIC_COMPARISON",
+      "OLD_proof_LF": [
+        116,
+        167
+      ],
+      "NEW_proof_LF": [
+        143,
+        216
+      ],
+      "report_LF_ranges_match_frozen_inventory": true,
+      "checked_public_deductions": [
+        "Ordinary transform of Q=g^2 supplies exact physical spectral identity without c_d residue; Schwartz compact correlation and tempered measures justify finiteness.",
+        "Mass bound1 and derivative bound2sqrt(b) give resolvent majorant8b/(4b+|xi|^2) in both regions. Homogeneous resolvent at2sqrt(b) yields2^(1+alpha) R_alpha b^(alpha/2), with nonzero gradient for compact unit g. Zero Gamma vanishes directly."
+      ],
+      "reconstruction_scope_assessment": "Report arithmetic and source Fourier convention are correct.",
+      "missing_requested_core_identified": false,
+      "source_change_required": false,
+      "native_reading_flags_preserved": true,
+      "local_public_argument_reconstruction_complete": true
+    },
+    {
+      "label": "P:spatial-smooth-ratio",
+      "native_old_reading": "COMPLETE",
+      "native_new_reading": "COMPLETE",
+      "native_preservation": "PRESERVED",
+      "native_explanations": "JUSTIFIED",
+      "public_reason_assessment": "SUBSTANTIVE_CORRECT_PUBLIC_COMPARISON",
+      "OLD_proof_LF": [
+        188,
+        226
+      ],
+      "NEW_proof_LF": [
+        237,
+        296
+      ],
+      "report_LF_ranges_match_frozen_inventory": true,
+      "checked_public_deductions": [
+        "Original amplitude and Radon dilation give A(U_ell g)=ell^alpha A and b(U_ell g)=ell^2 b. Fourier bound supplies independent positive finite R0.",
+        "Chosen ell^2=(alpha/q)L^2/b and theta=(1+alpha/q)L^2/(ell^alpha A) make Rayleigh trial valueL^2 and exact cost C L^q. Derivative1-q C L^(q-1) yields maximum(k/q)(qC)^(-1/k). q=4-alpha and k=q-1 give exact8 M_a q^(q/2) coefficient."
+      ],
+      "reconstruction_scope_assessment": "Public report explicitly checks the nontrivial added substitution and scalar maximum, not just COMPLETE status.",
+      "missing_requested_core_identified": false,
+      "source_change_required": false,
+      "native_reading_flags_preserved": true,
+      "local_public_argument_reconstruction_complete": true
+    },
+    {
+      "label": "P:spatial-four-linear",
+      "native_old_reading": "COMPLETE",
+      "native_new_reading": "COMPLETE",
+      "native_preservation": "PRESERVED",
+      "native_explanations": "JUSTIFIED",
+      "public_reason_assessment": "SUBSTANTIVE_PRESERVATION_EVIDENCE_WITH_REPORT_ONLY_FALSE_NOTE",
+      "OLD_proof_LF": [
+        253,
+        312
+      ],
+      "NEW_proof_LF": [
+        323,
+        407
+      ],
+      "report_LF_ranges_match_frozen_inventory": true,
+      "checked_public_deductions": [
+        "Full source obtains smooth PSD square-CS then extends physical square bounds by Fatou. Ordinary CS in positive physical measure gives four-linear absolute bound; telescoping with N<=H1 gives continuity needed for PSD extension. Report concretely checks the added telescoping step and strict-positivity witness without assigning H1 to1_E.",
+        "The norm specialization invoked by its alleged source note is incorrectly reconstructed in the report; R1 supplies source-based adjudication of that attempted local calculation. Unit N^4=b^(alpha/2), so the printed direct ratio argument is sound."
+      ],
+      "reconstruction_scope_assessment": "Correct public continuity/ratio and positivity comparisons coexist with an omitted prerequisite derivation of the physical four-linear estimate; the claimed direct homogeneous-bound objection is false. The complete source proof remains intact, but independent public full-argument reconstruction is partial.",
+      "missing_requested_core_identified": true,
+      "source_change_required": false,
+      "native_reading_flags_preserved": true,
+      "local_public_ratio_estimate_demonstrated_by_alternative_route": true,
+      "local_public_ratio_route": "Existing public report says normalized smooth approximations preserve the ratio by continuity; its preceding correct telescoping argument supplies continuity. From the smooth ratio definition, approximating unit H1 profiles yields the full-class bound. This route is in the native public text, not supplied solely by this worker.",
+      "requested_full_argument_reconstruction_complete": false
+    },
+    {
+      "label": "P:spatial-energy-map",
+      "native_old_reading": "COMPLETE",
+      "native_new_reading": "COMPLETE",
+      "native_preservation": "PRESERVED",
+      "native_explanations": "JUSTIFIED",
+      "public_reason_assessment": "SUBSTANTIVE_CORRECT_PUBLIC_COMPARISON",
+      "OLD_proof_LF": [
+        346,
+        367
+      ],
+      "NEW_proof_LF": [
+        441,
+        470
+      ],
+      "report_LF_ranges_match_frozen_inventory": true,
+      "checked_public_deductions": [
+        "Full H1 dilation follows physical changes or four-linear continuity; for unit profile A,b>0, scalar derivative alpha A ell^(alpha-1)-b ell has unique positive critical ell^(2-alpha)=alpha A/b. Value(1-alpha/2)A ell^alpha gives exact energy formula.",
+        "Dilation is a bijection of full unit class, so numerical suprema and approximate ratios give equality without a maximizing profile. Static score substitution preserves M_a and original temporal exponent."
+      ],
+      "reconstruction_scope_assessment": "Report/source maximum and exponent algebra agree; no optimizer existence is fabricated.",
+      "missing_requested_core_identified": false,
+      "source_change_required": false,
+      "native_reading_flags_preserved": true,
+      "local_public_argument_reconstruction_complete": true,
+      "assigned_dependency_reconstruction_complete": false,
+      "dependency_limitation": "Full H1 physical energy/continuity rests on assigned P:spatial-four-linear, whose public prerequisite extension derivation is incomplete. Its local dilation/maximum calculation is present and correct."
+    },
+    {
+      "label": "L:occupation-kernel-row",
+      "native_old_reading": "COMPLETE",
+      "native_new_reading": "COMPLETE",
+      "native_preservation": "PRESERVED",
+      "native_explanations": "JUSTIFIED",
+      "public_reason_assessment": "SUBSTANTIVE_CORRECT_PUBLIC_COMPARISON",
+      "OLD_proof_LF": [
+        393,
+        401
+      ],
+      "NEW_proof_LF": [
+        496,
+        504
+      ],
+      "report_LF_ranges_match_frozen_inventory": true,
+      "checked_public_deductions": [
+        "Damped positive mixture is bounded by original |u|^-a after dropping quadratic damping. It is even, decreasing and locally integrable for0<a<1. Primitive concavity gives row Phi(s)+Phi(1-s)<=2Phi(1/2), with equality at center. Diagonal assignment0 changes no integral."
+      ],
+      "reconstruction_scope_assessment": "Correctly keeps K_star distinct from original temporal kernel; unchanged-body evidence includes the argument.",
+      "missing_requested_core_identified": false,
+      "source_change_required": false,
+      "native_reading_flags_preserved": true,
+      "local_public_argument_reconstruction_complete": true
+    },
+    {
+      "label": "P:occupation-physical-class",
+      "native_old_reading": "COMPLETE",
+      "native_new_reading": "COMPLETE",
+      "native_preservation": "PRESERVED",
+      "native_explanations": "JUSTIFIED",
+      "public_reason_assessment": "SUBSTANTIVE_PRESERVATION_EVIDENCE_WITH_REPORT_ONLY_FALSE_NOTE",
+      "OLD_proof_LF": [
+        429,
+        465
+      ],
+      "NEW_proof_LF": [
+        532,
+        584
+      ],
+      "report_LF_ranges_match_frozen_inventory": true,
+      "checked_public_deductions": [
+        "Strong H1 measurability and finite integrated H1 norm permit joint measurable spatial representatives via simple Bochner approximation. Physical representative independence and continuous square pairing give time-pair measurability.",
+        "For unit profiles, homogeneous energy and square-CS give B<=R_sp F(s)F(t), F=b^(alpha/4), not the false stronger-power result alleged by report. R2 addresses the mistaken local citation objection. Concavity gives integral F^2<=T^(alpha/2), then symmetric kernel row/column bound gives J<=R_star R_sp T^(alpha/2).",
+        "Scalar optimization bounds energy by R_star^(2/(2-alpha)) E_sp, and fixed time-constant compact profile dilated at small ell gives positive J-T/2 since alpha<2. No common compact support/time regularity/optimizer required for full O; zero-Gamma energies handled by small dilations of nonzero unit profiles."
+      ],
+      "reconstruction_scope_assessment": "Local measurability/row/energy/positivity deductions and correct alternative FF argument are publicly present. The source-citation objection is false; the same-packet full H1 extension dependency remains the reconstruction limitation.",
+      "missing_requested_core_identified": false,
+      "source_change_required": false,
+      "native_reading_flags_preserved": true,
+      "local_public_occupation_bound_demonstrated_by_alternative_route": true,
+      "local_public_ratio_route": "The report itself explicitly writes A_sp(g_s)\u2264R_sp b_s^(alpha/2) from the ratio supremum and then applies square-CS. That already yields R_sp F(s)F(t), independently of the worker correcting its erroneous claim about the cited homogeneous bound.",
+      "local_public_argument_reconstruction_complete": true,
+      "assigned_dependency_reconstruction_complete": false,
+      "dependency_limitation": "P:spatial-four-linear is assigned in the same packet, and the public derivation of its full H1 extension is incomplete. Do not treat its native PRESERVED flag as a substitute for reconstructing that prerequisite."
+    }
+  ],
+  "mathematical_checks": [
+    "Sigma-finiteness uses product Lebesgue/positive Radon exhaustion. Null Borel sets are killed at x and x-y by Tonelli in x for each fixed translate; Borel null supersets extend representative independence to completed measures. Signed pairings remain conditional on absolute convergence.",
+    "Smooth positive control realizes c U_z at s0, so upstream unmasked-rate proposition applies with same Gamma/class. Comparing Rayleigh suprema gives squared-rate Lipschitz bound; positive monotone rate on compact c interval supplies denominator floor for square root.",
+    "Nonincreasing chi at arguments1/(nt),1/(n(1-t)) gives increasing f_n to equilibrium density inside I. Original temporal kernel and exact equilibrium potential give k_n up to1 including endpoints, bounded below by integral f4>0. Dominated convergence gives rate limit, while nonnegative Tonelli and monotone cost integrand give M_a B_Gamma(z,z). Differences of scores need not be monotone.",
+    "Ordinary transform of Q=g^2 supplies exact physical spectral identity without c_d residue; Schwartz compact correlation and tempered measures justify finiteness.",
+    "Mass bound1 and derivative bound2sqrt(b) give resolvent majorant8b/(4b+|xi|^2) in both regions. Homogeneous resolvent at2sqrt(b) yields2^(1+alpha) R_alpha b^(alpha/2), with nonzero gradient for compact unit g. Zero Gamma vanishes directly.",
+    "Original amplitude and Radon dilation give A(U_ell g)=ell^alpha A and b(U_ell g)=ell^2 b. Fourier bound supplies independent positive finite R0.",
+    "Chosen ell^2=(alpha/q)L^2/b and theta=(1+alpha/q)L^2/(ell^alpha A) make Rayleigh trial valueL^2 and exact cost C L^q. Derivative1-q C L^(q-1) yields maximum(k/q)(qC)^(-1/k). q=4-alpha and k=q-1 give exact8 M_a q^(q/2) coefficient.",
+    "Full source obtains smooth PSD square-CS then extends physical square bounds by Fatou. Ordinary CS in positive physical measure gives four-linear absolute bound; telescoping with N<=H1 gives continuity needed for PSD extension. Report concretely checks the added telescoping step and strict-positivity witness without assigning H1 to1_E.",
+    "The norm specialization invoked by its alleged source note is incorrectly reconstructed in the report; R1 supplies source-based adjudication of that attempted local calculation. Unit N^4=b^(alpha/2), so the printed direct ratio argument is sound.",
+    "Full H1 dilation follows physical changes or four-linear continuity; for unit profile A,b>0, scalar derivative alpha A ell^(alpha-1)-b ell has unique positive critical ell^(2-alpha)=alpha A/b. Value(1-alpha/2)A ell^alpha gives exact energy formula.",
+    "Dilation is a bijection of full unit class, so numerical suprema and approximate ratios give equality without a maximizing profile. Static score substitution preserves M_a and original temporal exponent.",
+    "Damped positive mixture is bounded by original |u|^-a after dropping quadratic damping. It is even, decreasing and locally integrable for0<a<1. Primitive concavity gives row Phi(s)+Phi(1-s)<=2Phi(1/2), with equality at center. Diagonal assignment0 changes no integral.",
+    "Strong H1 measurability and finite integrated H1 norm permit joint measurable spatial representatives via simple Bochner approximation. Physical representative independence and continuous square pairing give time-pair measurability.",
+    "For unit profiles, homogeneous energy and square-CS give B<=R_sp F(s)F(t), F=b^(alpha/4), not the false stronger-power result alleged by report. R2 addresses the mistaken local citation objection. Concavity gives integral F^2<=T^(alpha/2), then symmetric kernel row/column bound gives J<=R_star R_sp T^(alpha/2).",
+    "Scalar optimization bounds energy by R_star^(2/(2-alpha)) E_sp, and fixed time-constant compact profile dilated at small ell gives positive J-T/2 since alpha<2. No common compact support/time regularity/optimizer required for full O; zero-Gamma energies handled by small dilations of nonzero unit profiles."
+  ],
+  "input_evidence_sha256": {
+    "PUBLIC-REPORT.md": "ee88e1de6d4ba1cac2c9ca1c11da0a83cb6b841832d4dfd7672bbc44e78035f7",
+    "CONTRACT.md": "5dac105f7aa6e8997e9d6a163278f8c48594d35a94f930d40fed228df3f14e68",
+    "PROOF-MANIFEST.json": "752decdbcad4aad94e6646334117b1bda6bd75a234e545f4bd2544ddfc29233a",
+    "inputs/old-module.txt": "ed2f96133f5e969ba4d24fca051da4fcfcbf1377d6d18aa6a5e8385b66e5a12f",
+    "inputs/new-module.txt": "c8908f6fc8d484972e40502d62df893bcbe445dc79bd2fe29cc0751f9b0c8158"
+  },
+  "needed_context_read": "Exact supplied original raw mean/cost declaration, full temporal equilibrium module, relevant unmasked-rate/mask-cutoff context, spectral-mass definition and full target OLD/NEW. Imported analytic source proofs/PDFs not newly certified.",
+  "native_custody_scope": "No native export captured or inspected by this helper. No session IDs, native reasoning, logs or events read or used; root handles custody/export verification separately.",
+  "callback_or_retry_used": false,
+  "historical_report_or_grade_edited": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews disposition;16/Le retain source adoption and release authority. This is author-side adjudication, not an additional independent review vote.",
+  "recorded_utc": "2026-11-16T07:50:32.185028+00:00",
+  "requested_reread_complete_meaning": "False means the required public mathematical reconstruction is incomplete at the full assigned-argument depth; it does not change native COMPLETE reading flags, and does not assert a source proof defect.",
+  "per_proof_reconstruction": {
+    "L:spatial-physical-pair": {
+      "status": "CHECKED",
+      "limitations": []
+    },
+    "L:spatial-static-controls": {
+      "status": "CHECKED",
+      "limitations": []
+    },
+    "L:spatial-fourier-bound": {
+      "status": "CHECKED",
+      "limitations": []
+    },
+    "P:spatial-smooth-ratio": {
+      "status": "CHECKED",
+      "limitations": []
+    },
+    "P:spatial-four-linear": {
+      "status": "PARTIAL",
+      "limitations": [
+        "Correct public continuity/ratio and positivity comparisons coexist with an omitted prerequisite derivation of the physical four-linear estimate; the claimed direct homogeneous-bound objection is false. The complete source proof remains intact, but independent public full-argument reconstruction is partial."
+      ]
+    },
+    "P:spatial-energy-map": {
+      "status": "CHECKED",
+      "limitations": []
+    },
+    "L:occupation-kernel-row": {
+      "status": "CHECKED",
+      "limitations": []
+    },
+    "P:occupation-physical-class": {
+      "status": "CHECKED",
+      "limitations": []
+    }
+  },
+  "root_disposition_review": "Root read the full RP009/RP011 public reports and reviewed their source-bound missing-step/exponent findings; for RP012 root reviews delegated dispositions and witnesses without claiming a second independent vote."
+}

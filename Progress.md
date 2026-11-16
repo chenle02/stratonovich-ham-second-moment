@@ -160,19 +160,20 @@ Agent16's verification and Le's adoption/release decisions remain separate.
 
 ### Completed reread aggregate, with units kept separate
 
-`reviews/2026-11-16-readable-reread-index/INDEX.json` records9 terminal
-native attempts and8 public reports covering53 distinct complete OLD/NEW
-pairs (52changed,1unchanged). Raw headers:7PASS/high,1PASS_WITH_NOTES/high.
-RP007 is the remaining no-report attempt: its single target stays NOT_OBTAINED,
-with null reviewer verdict/confidence/public reading flags and no mathematical
-defect inferred. Its usage is included. The earlier8-attempt/51-pair snapshot
-is preserved as `SNAPSHOT-RP001-RP008.json`; fixed-snapshot record QA found no
-consistency fault. Per-proof confidence remains unreported/null; these are not
-53 independent votes or whole-book acceptance. No sum with the historic census
-or recovered-attempts snapshots is asserted. The RP007 repeat is still only
-a proposal. Other active/unlaunched packets are excluded from these totals.
-Remaining source/main rereads, scaling disposition, companion quotations,
-AppendixE/disclosure/derived-artifact/reseal synchronization, Agent16's
+The current index records12 terminal native attempts/11 public reports. The
+reports declare74 complete OLD/NEW readings; coordinator public-reconstruction
+checks classify72CHECKED and2PARTIAL. The75th assigned pair isRP007 with no
+public report, literalNOT_OBTAINED and null reviewer verdict/confidence/read
+flags. Partial reconstruction does not mean a source defect; raw9PASS/high,
+2PASS_WITH_NOTES/high and the failed attempt remain unchanged. The two bounded
+missing derivations are listed in`OPEN-RECONSTRUCTION-GATES.json`; no new
+source repair or callback has run. RP007's larger-cap repeat is still only a
+proposal. Per-proof confidence remains unreported/null, and these are not74
+independent votes or whole-bookHIGH acceptance. All failed usage is included;
+no mechanical sum with the historic627/118 snapshots is asserted. The174
+remaining source pairs have frozen refined contracts and are being dispatched
+separately; no result is inferred from preparation or a live process. Companion
+quotation checks, AppendixE/disclosure/rebuild/reseal synchronization, Agent16
 verification and Le's adoption/release decisions remain open.
 
 ### Next frozen per-file rereads: RP006--RP008
@@ -222,7 +223,7 @@ All still-unlaunched future packets now have at least65,536 tokens of combined
 completion allowance; their scientific inputs remain unchanged. Other source
 rereads continue under standing authority.
 
-### RP009/RP011/RP012 running; RP010 complete
+### RP009--RP012 terminal: two bounded reconstruction limitations
 
 Four exact-source packets are frozen: RP009 unmasked variational at corrected
 `7923750f` (6 pairs),RP010 temporal equilibrium at`66b1814b` (2 pairs,1
@@ -242,9 +243,21 @@ unchanged). Root adjudication supports scoped preservation with one report-only
 numerical example error: the correct a=1/2 mass is approximately0.38138, not
 0.676; the source/report exact Gamma ratio is correct. No source repair or
 callback is required. Native identity/prompt/freshness/zero-tool/stop and
-unchanged-input checks pass. RP009 andRP011 remain RUNNING. RP012 launched
-fresh at `2026-11-16T07:29:47.455158+00:00` as
-`readable-cameron-mean-f8613887b46a4afabd80a69771cd1e1c`; no result yet.
+unchanged-input checks pass. RP009 ended07:28:11.789453Z(rawPASS/high,6reported complete pairs);
+its public evidence omits the assigned H1 form-domain Step2 of
+`P:variational-unmasked-rate`. RP011 ended07:29:53.218117Z(raw
+PASS_WITH_NOTES/high,8reported complete pairs); its public evidence omits
+the smooth-to-Fatou-to-physical-CS extension in`P:spatial-four-linear`.
+The two asserted source citation imprecisions inRP011 are report-only exponent
+errors; the source is correct. Neither scope is promoted to full public
+reconstruction: each has one bounded PARTIAL pair, with raw grades/read flags
+retained. Root/worker checking cannot fill that independent-report obligation.
+No source correction or callback follows. RP012 launched fresh07:29:47.455158Z
+and ended07:36:20.002641Z, rawPASS/high,7complete pairs; delegated Agent3
+math QA and root disposition review support all7 at the requested scope, with
+cosmetic report notes only. Native exports verify all three exact prompts,
+fresh/model identity, zero tools, normal stop and unchanged inputs. No old
+global grade, human/Lean/render/RF/source adoption is upgraded.
 
 RP009 launched `2026-11-16T07:20:29.428431+00:00` as `readable-unmasked-variational-071fc22bc1f2456ca4e24491a63c8df6`.
 RP010 launched `2026-11-16T07:20:30.609027+00:00` as `readable-temporal-equilibrium-16ef7a4f0e8e43f1bf9627661c3af736`.
