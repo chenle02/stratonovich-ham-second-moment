@@ -8,6 +8,15 @@
 ## Active narrow follow-up: proof-readability rereads (2026-11-16)
 
 
+**Current Chapter 9 trial:** Agent 24's radius successor `9df46108` (map
+`271485f1`) is PROVISIONAL despite its commit message saying final. No scope
+has been released. Before a final-file handoff, Agent 24 obtains a fresh
+reader's stop-point list, checks its quotes against the proof, and judges
+Agent 7's necessary explanations. This is editorial diagnosis, not scientific
+review acceptance. The delivered removal-only uniform-mean and signed-static
+files also stay held. See `RADIUS-PROVISIONAL-9df46108.json` in the policy
+record directory below.
+
 **Latest explanation policy:** Agent 24's later receipt `3c5864c9e877`
 quotes Le: "Do not expand for the sake of expand, expand whenever necessary."
 and "Use your cautious judgement for this". This replaces sample depth as a
