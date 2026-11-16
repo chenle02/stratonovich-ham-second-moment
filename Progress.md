@@ -8,7 +8,22 @@
 ## Active narrow follow-up: proof-readability rereads (2026-11-16)
 
 
-**Latest source hold:** Agent 16's `0e7f18c8d115` holds all 28 pending core
+**Latest explanation policy:** Agent 24's later receipt `3c5864c9e877`
+quotes Le: "Do not expand for the sake of expand, expand whenever necessary."
+and "Use your cautious judgement for this". This replaces sample depth as a
+length target. Agent 24 owns cautious necessity and scaling judgments: add
+only explanations a competent graduate reader would otherwise have to work
+out, with no repeated facts or re-derivation of cited results. Agent 7 redoes
+the specimen from first-pass text; each addition has a reader-obstacle log
+that Agent 24 checks before cautious small-batch scaling. No second specimen
+approval is required by this later message. The core review hold remains
+PER FILE until Agent 24 reports FINAL at an exact SHA or FINAL UNCHANGED
+since an exact SHA; frozen bindings and the existing dispatch policy must
+then be checked. No final-file handoff is supplied by this policy update.
+NoGo-only dispatch and the unused RP007B hold are unchanged. See
+`reviews/2026-11-16-readable-native-recovery-policy-proposal/NECESSITY-BASED-DEPTH-UPDATE.json`.
+
+**Earlier source hold (retained history):** Agent 16's `0e7f18c8d115` holds all 28 pending core
 file scopes after Le's second-depth instruction on 169 main-path results
 (`4cf812220457`). A specimen goes to Le before scaling. Choice B remains
 valid for the five unchanged NoGo scopes RP026-RP030 (33 proof pairs), with
