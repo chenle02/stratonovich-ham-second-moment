@@ -920,9 +920,7 @@ regularization on pp.~13--14}.
     \le\|U_N-u\|_2(\|U_N\|_2+\|u\|_2)\longrightarrow0.
   \]
   Each finite square expands over the square of indices $0\le m,n\le N$.
-  Increasing $N$ adds only nonnegative mixed expectations. Every pair of
-  finite indices eventually occurs in such a square, so this increasing
-  exhaustion gives the full double sum before it is regrouped by total order.
+
   The finite expansions of $\E U_N^2$ increase, since every mixed expectation
   computed above is nonnegative. Their limit is the full double sum, independent
   of its enumeration. Regrouping by total order gives~\eqref{E:full-second}.
@@ -1642,10 +1640,7 @@ Thus, $|Q_2|$ is even and $|Q_0|+|Q_2|/2 = n$.
   at most $(P+P')/2 \le \max(P,P')$. This
   proves~\eqref{E:pairing-product-envelope} at the finite cap.
 
-  The two regions may select different maximizing assignments. Each resulting
-  product is nevertheless one member of the same finite admissible family for
-  the original labels. Averaging the two products is therefore bounded by that
-  family's maximum, which is exactly the induction target.
+
 
   \medskip
   \noindent\textit{Step 5.~}We remove the finite cap by positivity.
@@ -1858,11 +1853,7 @@ empty chain.
   zero-parameter integrand. On the measure side this limit is $\nu_D\{r_l=0\}$.
   Thus, every coordinate-zero face has zero mass.
 
-  With all other Laplace parameters fixed at zero, the factor for gap $r_l$
-  tends to zero pointwise in the spectral representation as $\lambda_l$ tends
-  to infinity. On the measure side, $e^{-\lambda_l r_l}$ tends to the
-  indicator of $r_l=0$. Domination by the finite zero-parameter integral
-  therefore excludes exactly that face.
+
   Heat and wave scaling give, for Borel sets,
   \[
     \rho_{\boldsymbol\epsilon,D}(cA)
@@ -2333,11 +2324,7 @@ establishes that limit for the product $uW_{\epsilon,\delta}$.
   This proves the asserted limit with arbitrary relative rates; it does not
   assume a partial-limit theorem.
 
-  Joint convergence gives one width threshold that controls every vertex
-  simultaneously. With the external width below that threshold, taking the
-  inner limit preserves the same norm bound by continuity of the norm. This
-  proves the external limit uniformly over its allowed relative rates without
-  assuming that arbitrary iterated limits commute.
+
 
   \medskip
   \noindent\textit{Step 6.~}We sum the terminal integrals and remove the final
@@ -3693,6 +3680,10 @@ order $k$ splits among the interval fields.
   because $\beta/\nu > 1$.
 
 
+  For $x\ge0$, the factorial-series bound follows because the sum of the
+  $\nu$th powers of the nonnegative terms $x^{l/\nu}/l!$ is at most the
+  $\nu$th power of their sum, and that sum is $e^{x^{1/\nu}}$.
+
   \medskip
   \noindent\textit{Step 3.~}We sum the fine-index tails and extract the
   coefficient.
@@ -3708,6 +3699,9 @@ order $k$ splits among the interval fields.
     +\frac{k^{-2}k^{3-2\beta}}{2\beta-3}\right)
     =Ck^{2\alpha_0-1}\le Ck.
   \]
+  The uniform fine-series bound uses $(1+ly)^2\le2l^2(1+y^2)$ and $P^l\le P^2
+  4^{-(l-2)}$ for $l\ge2$ and $0\le P\le1/4$, leaving a summable geometric
+  series with a quadratic factor, independent of $P$ and $y$.
   Use $\log(1+y) \le y$ for these fine factors. The entire product is
   consequently at most $e^{Ck}$. Positivity of its coefficients bounds the $k$th
   coefficient by $\theta^{-k}k^{-\nu k}e^{Ck} \le C^k/(k!)^\nu$. This proves
@@ -4706,11 +4700,7 @@ the time intervals below.
   comparison of Wick integrals, not covariance order for arbitrary initial
   phases or a coupling of random solutions.
 
-  The comparison is made at fixed partial order, so each side contains
-  finitely many Wick products. The increasing interval depth is then handled
-  by monotone convergence of those positive integrals. This does not require
-  an infinite-depth Gaussian field, nor a samplewise comparison between the
-  two solutions.
+
 
   \medskip
   \noindent\textit{Step 5.~}We obtain a scaled source bound that controls all
@@ -4760,11 +4750,7 @@ the time intervals below.
   the fixed covariance; they do not enter~\eqref{E:full-upper-bound}. No
   uniqueness assertion is made.
 
-  The estimate at amplitude two supplies a geometric majorant for the tails,
-  while the final bound is passed from amplitude one. The larger auxiliary
-  bound is used only to justify convergence of the full series; it is not
-  substituted for the final estimate. The covariance amplitude in that final
-  estimate remains $R_\alpha^{1/(3-\alpha)}$.
+
 
   \medskip
   \noindent\textit{Step 7.~}We record the distinct cutoff limits and the
