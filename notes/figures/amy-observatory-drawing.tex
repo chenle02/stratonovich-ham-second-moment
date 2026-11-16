@@ -1,0 +1,143 @@
+% The observatory: the pipeline as a tower, the wiki as the night sky, Amy the car below.
+% Needs TikZ (arrows.meta), graphicx and the colours hamblue, hamteal, hamgold.
+% Width 14.8 cm, height about 8.8 cm.
+\begin{tikzpicture}[x=1cm,y=1cm,font=\footnotesize,
+  sky/.style={fill=hamblue!85!black},
+  star/.style={fill=white},
+  link/.style={draw=hamgold!35,line width=.4pt},
+  unit/.style={draw=hamgold,fill=hamgold!10,rounded corners=2pt,
+  minimum width=1.8cm,minimum height=.42cm,inner sep=1pt,
+  text height=1.5ex,text depth=.4ex}]
+  % ---- night sky -------------------------------------------------------
+  \fill[sky,rounded corners=6pt] (.1,4.1) rectangle (14.9,8.5);
+  \node[text=white,font=\small\bfseries] at (7.5,8.02) {SPDEs-wiki: the second brain};
+  % constellations (fixed coordinates): links first, stars on top
+  \draw[link] (.6,6.9)--(1.3,7.5)--(2.1,7.1)--(1.7,6.3)--(.9,5.9)--(.6,6.9)
+  (2.1,7.1)--(2.9,7.6);
+  \draw[link] (4.5,6.35)--(5.3,6.9)--(6.1,6.5)--(5.6,5.7)--(4.5,6.35)
+  (6.1,6.5)--(6.6,5.4) (6.1,6.5)--(7.6,6.9);
+  \draw[link] (7.6,6.9)--(8.4,6.3)--(9.2,6.8) (8.4,6.3)--(8.9,5.6)--(7.9,5.3)--(8.4,6.3)
+  (9.2,6.8)--(10.5,6.9);
+  \draw[link] (10.6,5.6)--(11.4,6.3)--(10.5,6.9) (11.4,6.3)--(12.2,6.9)--(12.6,6.0);
+  \draw[link] (13.4,7.6)--(14.2,7.2)--(14.5,6.3)--(13.7,5.4)--(14.3,4.8)
+  (12.6,6.0)--(13.7,5.4);
+  \foreach \p in {(.6,6.9),(1.3,7.5),(2.1,7.1),(1.7,6.3),(.9,5.9),(2.9,7.6),
+  (4.5,6.35),(5.3,6.9),(6.1,6.5),(5.6,5.7),(6.6,5.4),
+  (7.6,6.9),(8.4,6.3),(9.2,6.8),(8.9,5.6),(7.9,5.3),
+  (10.6,5.6),(11.4,6.3),(10.5,6.9),(12.2,6.9),(12.6,6.0),
+  (13.4,7.6),(14.2,7.2),(14.5,6.3),(13.7,5.4),(14.3,4.8)} {
+  \fill[star] \p circle (.055);
+  }
+  % loose small stars
+  \foreach \p in {(.4,4.8),(1.1,5.2),(.3,7.9),(1.9,8.1),(3.1,6.6),(3.7,7.9),(2.6,5.6),
+  (.5,6.2),(4.9,5.1),(5.6,4.6),(6.9,4.7),(7.1,6.1),(7.3,7.4),(6.4,7.3),(4.3,7.3),
+  (8.3,4.6),(9.6,4.9),(9.9,6.0),(9.5,7.5),(10.9,7.6),(11.9,7.8),(12.9,7.9),
+  (11.9,4.9),(12.7,4.5),(13.3,6.6),(14.6,8.0),(14.7,5.5),(13.2,4.9),(10.3,4.5),
+  (5.0,7.6),(1.4,4.5),(8.9,7.3),(11.2,5.0),(14.0,6.0)} {
+  \fill[hamgold!30] \p circle (.03);
+  }
+  % the star the driver steers by
+  \fill[hamgold!45] (13.7,5.4) circle (.09);
+  \draw[hamgold!45,line width=.5pt] (13.7,5.15)--(13.7,5.65) (13.45,5.4)--(13.95,5.4);
+  % ---- ground ----------------------------------------------------------
+  \draw[hamblue!45,thick] (1.3,.5)--(14.85,.5);
+  % ---- the tower: six floors, ground up --------------------------------
+  \foreach \name [count=\i from 0] in
+  {cite,file,store,unpack source,index,write wiki page} {
+  \filldraw[draw=hamblue,fill=hamblue!5,thick]
+  (1.6,{.5+.6*\i}) rectangle (4.9,{1.1+.6*\i});
+  \node[text=hamblue] at (3.35,{.8+.6*\i}) {\name};
+  }
+  \draw[hamblue,thick,rounded corners=2pt] (1.6,.5) rectangle (4.9,4.1);
+  % door and the way up
+  \filldraw[draw=hamblue,fill=white] (1.72,.5)--(1.72,.92) arc[start angle=180,
+  end angle=0,radius=.14]--(2,.5);
+  \draw[hamblue!60,-{Latex[length=1.6mm]}] (1.82,1.25)--(1.82,3.95);
+  % open roof: two shells with a slit
+  \filldraw[draw=white,fill=hamblue!15,line width=.8pt] (1.95,4.1)
+  arc[start angle=180,end angle=102,x radius=1.3,y radius=.8]--(2.98,4.1)--cycle;
+  \filldraw[draw=white,fill=hamblue!15,line width=.8pt] (4.55,4.1)
+  arc[start angle=0,end angle=78,x radius=1.3,y radius=.8]--(3.52,4.1)--cycle;
+  % each paper leaves the roof as a star
+  \foreach \p/\r in {(3.25,4.30)/.035,(3.26,4.58)/.039,(3.29,4.86)/.043,(3.35,5.14)/.047,
+  (3.46,5.42)/.051,(3.63,5.69)/.055,(3.86,5.94)/.059,(4.16,6.16)/.063} {
+  \fill[hamgold!25] \p circle (\r);
+  }
+  % ---- what comes in ---------------------------------------------------
+  \filldraw[draw=hamblue,fill=white] (.22,1.98) rectangle (.66,2.56);
+  \filldraw[draw=hamblue,fill=white] (.34,1.92) rectangle (.78,2.50);
+  \draw[hamblue!60] (.42,2.36)--(.70,2.36) (.42,2.22)--(.70,2.22) (.42,2.08)--(.62,2.08);
+  \node[text=hamblue,anchor=west,inner sep=0pt] at (.1,2.80) {papers};
+  \filldraw[draw=hamteal,fill=hamteal!12,rounded corners=1pt]
+  (.2,.6)--(.2,1.12)--(.46,1.12)--(.52,1.04)--(.8,1.04)--(.8,.6)--cycle;
+  \node[text=hamteal,anchor=west,inner sep=0pt] at (.1,1.38) {projects};
+  \draw[hamteal,-{Latex[length=1.6mm]}] (.88,.7)--(1.68,.7);
+  \draw[hamblue,rounded corners=3pt,-{Latex[length=1.6mm]}]
+  (.86,2.2)--(1.43,2.2)--(1.43,1.0)--(1.68,1.0);
+  % ---- the power panel: interchangeable language models ---------------
+  \draw[hamgold,thick] (5.8,.7)--(5.8,.5) (9.1,.7)--(9.1,.5);
+  \filldraw[draw=hamgold,fill=white,thick,rounded corners=3pt] (5.25,.7) rectangle (9.7,2.9);
+  \node[unit] at (6.25,2.64) {Claude};
+  \node[unit] at (8.5,2.64) {GPT};
+  \node[unit] at (6.25,2.15) {DeepSeek};
+  \node[unit] at (8.5,2.15) {Kimi};
+  \node[unit,dashed,fill=white] at (6.25,1.32) {Qwen};
+  \node[text=hamgold,align=center,font=\footnotesize] at (8.42,1.32)
+  {open-weight,\\[-2pt]on our own\\[-2pt]machines: next};
+  \node[text=hamgold] at (7.475,3.82) {language models (any of them)};
+  % plug to the tower: the models compile
+  \draw[hamgold,line width=1.6pt] (4.9,2.4)--(5.25,2.4);
+  \fill[hamgold] (4.98,2.28) rectangle (5.1,2.52);
+  \node[text=hamgold,anchor=west,inner sep=1pt] (comp) at (5.36,3.3) {as compiler};
+  \draw[hamgold,-{Latex[length=1.4mm]}] (comp.west) .. controls (5.06,3.3) and
+  (5.04,2.95) .. (5.04,2.6);
+  % hose to the car's filler: the models are the fuel
+  \node[text=hamgold,anchor=west,inner sep=1pt] at (9.85,2.12) {as fuel};
+  % ---- the car (shapes of the Amy drawing, reduced, facing right) ------
+  \begin{scope}[shift={(14.7,.52)},xscale=-.45,yscale=.45]
+    \filldraw[draw=hamblue,fill=hamblue!5,thick,rounded corners=3pt]
+    (.3,.45)--(.3,2.1)--(2.4,2.1)--(3.2,3.75)
+    --(6.9,3.75)--(7.05,2.2)--(9.5,2.05)--(9.8,1.75)
+    --(9.8,.45)--cycle;
+    \filldraw[draw=hamblue!70,fill=white]
+    (2.65,2.25)--(3.4,3.45)--(4.7,3.45)--(4.7,2.25)--cycle;
+    \filldraw[draw=hamblue!70,fill=white]
+    (5,2.25)--(5,3.45)--(6.7,3.45)--(6.85,2.25)--cycle;
+    \fill[hamteal] (4.05,3.08) circle (.27);
+    \fill[hamteal] (3.6,2.35) .. controls (3.6,2.95) and (4.5,2.95) .. (4.5,2.35)--cycle;
+    \draw[hamteal,line width=.7pt] (3.4,2.65) circle (.24);
+    \filldraw[draw=hamgold,fill=hamgold!30] (.25,1.3) rectangle (.48,1.8);
+    \draw[hamgold] (-.28,1.35)--(.05,1.42) (-.32,1.55)--(.05,1.55)
+    (-.28,1.75)--(.05,1.68);
+    \foreach \x in {2.75,8} {
+    \filldraw[draw=hamblue,fill=white,line width=1.2pt] (\x,.43) circle (.48);
+    \fill[hamblue] (\x,.43) circle (.12);
+    }
+    % the lean-pkg logo on the front panel, as on the other car drawing
+    \node[inner sep=0pt] at (1.42,1.3)
+    {\includegraphics[width=.7cm]{media/lean-pkg/lean-pkg-logo-256.png}};
+    \node[font=\footnotesize\bfseries,text=hamblue] at (4.1,1.45) {Amy};
+    % the wiki on board: a small piece of the sky
+    \fill[sky,rounded corners=1.5pt] (5.5,1.1) rectangle (8.5,1.9);
+    \draw[link] (5.9,1.35)--(6.6,1.65)--(7.4,1.3)--(8.1,1.6);
+    \foreach \p in {(5.9,1.35),(6.6,1.65),(7.4,1.3),(8.1,1.6)} {
+    \fill[star] \p circle (.07);
+    }
+    % filler at the rear, with the hose nozzle in it
+    \fill[hamgold] (8.75,1.08) rectangle (9.4,1.44);
+  \end{scope}
+  \fill[hamgold] (9.7,1.58) rectangle (9.82,1.82);
+  \draw[hamgold,line width=1.6pt] (9.82,1.7) .. controls (10.3,1.7) and
+  (10.0,1.09) .. (10.51,1.09);
+  % sight line from the driver to a star ahead
+  \draw[hamteal,densely dotted,line width=.7pt] (12.9,2.03)--(13.39,4.1);
+  \draw[hamteal!25,densely dotted,line width=.8pt] (13.39,4.1)--(13.67,5.27);
+  \node[text=hamteal,anchor=east,align=right] at (13.02,3.36)
+  {steering by\\[-2pt]the stars};
+  % ---- the loop: what the car finds goes back in as new projects ------
+  \fill[hamteal] (12.3,.72) circle (.06);
+  \draw[hamteal,semithick,rounded corners=4pt,-{Latex[length=1.8mm]}]
+  (12.3,.72)--(12.3,-.1)--(.5,-.1)--(.5,.56);
+  \node[text=hamteal,fill=white,inner sep=2pt] at (6.6,-.1)
+  {what the car finds: new projects and results};
+\end{tikzpicture}
