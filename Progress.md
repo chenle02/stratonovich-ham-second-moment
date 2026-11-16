@@ -144,6 +144,20 @@ whole-book confidence or Lean quotation acceptance follows.
 RP004 launched at `2026-11-16T06:23:38.805337+00:00` as `readable-source-convergence-26bd977c926f4c6e919e79e8913e57cd`.
 RP005 launched at `2026-11-16T06:23:39.968809+00:00` as `readable-constant-young-140f8dd8b78d4f8aa0102d871e8b0a06`.
 
+### Worker comparisons complete at the reconciled held source
+
+`reviews/2026-11-16-readable-worker-qa/INDEX.json` reconciles root/helpers'
+author-side comparisons of all249 book proof environments at held `f06cb607`:
+208 changed arguments supported,41 byte-identical. The six main-file scopes
+are disjoint and their62 proof hashes match the single frozen main source.
+New wording in the compact mean, complex variational quotient and radius
+Schur explanation was corrected by Agent24; exact correction followups are
+retained. This is worker QA, not249 independent reviews or whole-book truth.
+The33 no-go entries do not replace the missing Chapter12 skeptic synthesis.
+Independent rereads remain incomplete, and the four reader proofs are excluded.
+Integrated source/PDF/marker/F/G/combined/disclosure/review-sync reconciliation,
+Agent16's verification and Le's adoption/release decisions remain separate.
+
 ### Completed reread aggregate, with units kept separate
 
 `reviews/2026-11-16-readable-reread-index/INDEX.json` records five terminal
