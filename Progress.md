@@ -57,7 +57,21 @@ aggregate usage/cost/cap remain unknown. Older RP014/RP039 records and their
 limits are unchanged. RP043 signed-static remains running at this record.
 See `reviews/2026-11-16-readable-uniform-mean-postreader32919d54-deepseek/`.
 
-**Three unlaunched binding replacements:** Agent 24 supersedes compact
+**All fifteen Chapters 4-8 inputs now released; remaining packets frozen:**
+Agent 16 verifies/releases the three replacement sources (`ee48c63cdfba`),
+so all fifteen owner-FINAL bindings are eligible. RP047-RP058 freeze all
+remaining 67 proof pairs at the latest pins, including `259e8ab8`, `234cf2cf`
+and `e7ef9910`. Root independently checks every source frame, complete
+statement/proof hash and LF, profile and artifact digest, and reads each
+contract with shared clauses factored. Same Choice B route/caps/timeouts,
+max three processes across existing and new runs; no coordinator repeat,
+confidence retry, tools or fallback. No call on these twelve at this freeze;
+exact root rolling-dispatch GO remains a separate next step. RP052 is a fresh
+changed-source scaling review, not use of the still-unused RP007B repair.
+See `CH4-8-REMAINING12-FREEZE.json`. Adapter v3 is reported parked offline
+history, not re-audited here, approved, installed or used; native route stays.
+
+**Earlier three unlaunched binding replacements:** Agent 24 supersedes compact
 mean `7c76e69f` by `259e8ab8`, unmasked variational `af4d1a50` by `234cf2cf`,
 and Young upper `5508cc0e` by `e7ef9910` (`ca340288b06a`, map tip `5af7b517`).
 Agent 16 explicitly holds these replacement inputs (`e8019bf59793`) pending
