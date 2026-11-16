@@ -85,6 +85,10 @@ these means. Ground templates will only use $s_m \in [0,1]$.
   \medskip
   \noindent\textit{Step 2.~}We identify a separable path space for the
   Gaussian variables.
+  The pullback isometry gives $W_{\delta,m}$ the same Gaussian law as $W$, so
+  Proposition~\ref{P:constant-phase-driver} supplies the path convergence and
+  Gaussian norm bound on $[0,B]$, with the same $C_{R,B}$ for every
+  $m,\delta$.
   Finite-rank rational matrices in a countable real Hilbert basis are dense in
   $\mathcal{K}(F)$: for compact $T$, $P_nTP_n \to T$ in norm by compactness of
   $T,T^*$, and finite entries admit rational approximation. Polygonal paths with
@@ -102,30 +106,30 @@ these means. Ground templates will only use $s_m \in [0,1]$.
   asserted Banach Gaussian variable. Cauchy--Schwarz gives $\E\|XZ\| \le
   \|X\|_2\sqrt v < \infty$, so its Bochner covariance exists.
 
-  The number of blocks is finite for each fixed $\delta$. Thus, the product
-  path space is separable, and joint Gaussianity can be tested on finite
-  linear combinations of functionals of the blocks together with $Z$.
-  Correlations between different blocks are retained by taking all
-  coefficients from the same original noise.
 
   \medskip
   \noindent\textit{Step 3.~}We compute the covariance direction of the
   operator paths.
+  The time substitution in the mean pairing contributes a Jacobian $\delta$,
+  changing the pullback factor $\delta^{a/2-1}$ to $\delta^{a/2}$.
   The original covariance and the test pullback give
   \begin{equation}\label{E:raw-block-mean-jacobian}
     \E[W_{\delta,m}(f)Z]
     =\delta^{a/2}\int f(u,x)h_{s_m+\delta u}(x)\ud x\ud u.
   \end{equation}
-  The time change in the mean pairing contributes one Jacobian factor
-  $\delta$, so the pullback prefactor becomes
-  $\delta^{a/2-1}\delta=\delta^{a/2}$. Multiplying by
-  $g_\delta=\delta^{(1-a)/2}$ then gives the factor $\sqrt\delta$ required for
-  the whole-path covariance.
   Absolute Fubini uses compact supports, local Radon mass and $a < 1$. This
   identity extends to the explicit matrix-element tests for the operator path on
   $E$: their time indicator is approximated by smooth bounded tests on one
   compact support, converging in the original covariance norm by dominated
   convergence against $|u-r|^{-a}\Gamma$; their mean pairings converge as well.
+  Insert the matrix-element test $\zeta_R1_{(0,u)}v_zG_w$
+  in~\eqref{E:raw-block-mean-jacobian}: the mask multiplying the mean is
+  $V_{s_m+\delta r}$, and~\eqref{E:driver-covariance-row} identifies the
+  resulting integral with the row of $H_m$.
+  For constant inputs, the free displacement from $(c_1\psi,c_2\psi)$ equals
+  $c_1+rc_2$ on $B_{2R}$ for $r\le B$, since $\psi=1$ on the enlarged ball;
+  multiplying by $V_{s_m+\delta r}$ therefore gives the same constant-column
+  forcing in $H_m$.
   The Sobolev adjoint is the one in~\eqref{E:driver-covariance-row}. Hence, the
   path covariance is $g_\delta\delta^{a/2}H_m = \sqrt\delta\,H_m$ on real
   Schwartz $E$ pairs. For constant inputs the two columns are the same $L_\psi$
@@ -170,10 +174,6 @@ realization and its deterministic translate.
   $|z|^2 = v$. Substitution $G' = G+sz$ in its density gives
   $\E_{Q_s}f(\ell(X+sb)) = \E f(\ell(X))$ for every bounded Borel $f$.
 
-  Completing the square shifts the standard Gaussian vector by $-sz$ under
-  $Q_s$. The addition of $sb$ to $X$ contributes $sTz$ to its coordinates,
-  canceling that shift. This verifies both the sign of the density and the
-  direction of the translation.
 
   \medskip
   \noindent\textit{Step 2.~}We pass from coordinates to the full norm-Borel
@@ -252,8 +252,6 @@ $m \le N$, tends to zero in every finite $L^q$.
   \]
   For a finite family, the $p$th power of the maximum is at most the sum of
   the $p$th powers. This gives the factor $(N+1)^{1/p}$ without independence.
-  The choice $p>2/(1-a)$ makes the exponent of $\delta$ strictly positive;
-  Lyapunov then gives the limit in each smaller $L^q$.
   For fixed $q$, choose $p > \max(q,2/(1-a))$ to prove the first limit. No
   independence is needed. Choose an integer $n_0$ with $n_0(1-a) \ge 1$. For $n
   \ge n_0$,
@@ -274,6 +272,13 @@ $m \le N$, tends to zero in every finite $L^q$.
   \noindent\textit{Step 2.~}We compare each noisy block with its frozen
   deterministic flow.
   Let $H_m^{\mathrm{stat}}$ be the primitive for constant potential $V_{s_m}$.
+  The primitive estimate is Proposition~\ref{P:constant-compact-base} on
+  horizon $B$, applied to $V_{s_m+\delta r}$, $V_{s_m}$ and their difference,
+  in the $L^\infty$ and $L^2$ coefficient norms.
+  The frozen flow is $P_{s_m}(u)=S_F(u)U_{H_m^{\mathrm{stat}}}(u,0)$;
+  Proposition~\ref{P:constant-young-linear} compares it with the driver
+  $X_m+H_m$, whose distance from $H_m^{\mathrm{stat}}$ is at most
+  $M_\delta+C\delta$ on the fixed driver ball.
   Compact mean smoothness on $[0,2]$ and the statewise primitive bound give
   \[
     \sup_m\max(\|H_m\|_{C^\theta},
@@ -290,11 +295,6 @@ $m \le N$, tends to zero in every finite $L^q$.
     \max_m\sup_{u\le B}\|D_m^+(u)\|
     \le C_B\exp\big(C_B(1+H_0+M_\delta)^{1/\theta}\big).
   \]
-  The supremum over blocks is already inside the displayed random bound,
-  through $M_\delta$. Therefore, its uniform moments control the maximum flow
-  error rather than only each separate block. A higher moment of that maximum,
-  together with convergence in probability, gives convergence in the requested
-  lower moment.
   Since $1/\theta < 2$, every finite power of this bound is dominated by a
   constant times the exponential in~\eqref{E:raw-block-maximum-exponential}.
   Uniform higher moments yield uniform integrability, proving
@@ -343,6 +343,10 @@ within $\omega$, then the product satisfies the lower bound
   \medskip
   \noindent\textit{Step 1.~}We choose the margins in an order independent of
   the number of blocks.
+  Proposition~\ref{P:compact-F-projection}
+  and~\eqref{E:compact-positive-margins} give the positive margins below and
+  norm continuity of $e_s,\ell_s,\Pi_s$; compactness of $I$ makes their bounds
+  finite and their continuity uniform.
   From~\eqref{E:compact-normalized-complement} fix $C_{\mathrm{gap}} \ge 1$,
   $\eta_{\mathrm{gap}} > 0$ so the normalized complementary norm is at most
   $C_{\mathrm{gap}}e^{-\eta_{\mathrm{gap}}t}$. Define positive margins and
@@ -377,6 +381,10 @@ within $\omega$, then the product satisfies the lower bound
 
   \medskip
   \noindent\textit{Step 2.~}We prove entrance into the first cone.
+  The identities in~\eqref{E:compact-F-eigen} give
+  $\ell_sP_s(B)=e^{\lambda_sB}\ell_s$ and $Q_sP_s(B)=P_s(B)Q_s$, so the
+  unperturbed normalized entrance amplitude is $\ell_s(e_0)$ and its residual
+  is at most $q_BM_QE_0$; perturbation errors use $e^{-\lambda_sB}\le1$.
   The cone at $s$ consists of $z = Ae_s+r$, with $A = \ell_s(z) > 0$, $\ell_s(r)
   = 0$ and $\|r\|_F \le \vartheta A$. In particular, $r = Q_sz$ and $\|z\| \le
   M_zA$. For entrance, $z_1 = D_0(B)e_0$, with $b = \sigma_0$, has normalized
@@ -385,10 +393,6 @@ within $\omega$, then the product satisfies the lower bound
   \vartheta a_*/4$. Thus, it enters the cone with residual ratio at most
   $\vartheta/2$ and amplitude at least $e^{\lambda_bB}a_*/2$.
 
-  The entrance estimates use the same normalization $e^{-\lambda_bB}$ for
-  amplitude and residual. Dividing the residual bound $\vartheta a_*/4$ by the
-  amplitude lower bound $a_*/2$ gives aperture at most $\vartheta/2$. Thus,
-  the first block leaves room for the later change of index.
 
   \medskip
   \noindent\textit{Step 3.~}We rebase the cone and propagate it through each
@@ -497,6 +501,11 @@ source-limit premise of the masked comparison.
   $L^pC^\theta$ operator-path limits on $[0,L_{\mathrm{ext}}]$ and on $[0,B]$,
   including both constant columns.
 
+  The field-test integral identity of
+  Proposition~\ref{P:source-canonical-convergence} passes through these test
+  pullbacks by change of variables; the proof of
+  Lemma~\ref{L:constant-source-response} then identifies the ordinary
+  primitives using spatial smoothness and total finite propagation.
   Their random fields are $Y_{\mathrm{fast}}(u,x) =
   \delta^{a/2}Y_{\epsilon,\eta}(\delta u,x)$ and $Y_m(u,x) =
   Y_{\mathrm{fast}}(mB+u,x)$. Indeed, these follow by change of variables in
@@ -542,6 +551,10 @@ source-limit premise of the masked comparison.
 
   \medskip
   \noindent\textit{Step 4.~}We pass finite products through the source limit.
+  For the unshifted factors use Proposition~\ref{P:constant-gaussian-flow} on
+  the fixed horizon $[0,L_{\mathrm{ext}}]$; for the shifted factors use
+  Proposition~\ref{P:constant-compact-base} with $g=g_\delta$ and the fixed
+  mean $V_{\delta t}$, followed by the restart identity.
   For completeness, source convergence of these finite products requires no
   growing-product stability assertion. At fixed $\delta,N$ let $C \ge 1$ be the
   maximum norm of their source and original factors, and let $e_{\mathrm{src}}$
@@ -658,8 +671,7 @@ source-limit premise of the masked comparison.
   Each term in the telescoping difference contains one factor error and at
   most $n-1$ factors bounded by $C_\rho$. There are $n$ such terms. Since
   $C_\rho\ge1$, replacing $C_\rho^{n-1}$ by $C_\rho^n$ gives the displayed
-  bound. Its square is integrable by pairing the $4n$ moment of $C_\rho$ with
-  the fourth moment of the error.
+  bound.
   Therefore, H\"older with exponents $4n$ and $4$ gives
   \[
     \big\|F_{N,\rho}\cdots F_{0,\rho}-F_N\cdots F_0\big\|_{L^2}
@@ -837,11 +849,6 @@ the cone bound of Lemma~\ref{L:raw-block-indexed-cone}.
   $C_\lambda\delta B$. Also $0 \le \delta(N-1) \le 1/B \le 1$, so the
   logarithmic loss is at least $\log(1-\varrho) > -e_{\mathrm{rate}}/3$. The two
   other losses are each at most $e_{\mathrm{rate}}/3$ by the choices above.
-  On each subinterval, the error of the left endpoint rule is at most its
-  length times $C_\lambda$ times the mesh size. Summing the lengths gives one,
-  so the total error is at most $C_\lambda\delta B$. The remainder interval is
-  included because its length is $\delta\tau$ and the total length is exactly
-  one.
   Hence,
   \[
     Y_{\delta,B}\ge
