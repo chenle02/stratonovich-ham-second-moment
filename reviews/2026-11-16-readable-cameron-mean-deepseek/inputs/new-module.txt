@@ -1,0 +1,640 @@
+\section{The compact mean and Cameron map on time blocks}
+\label{S:actual-cameron-mean}
+
+Retain the nonzero original covariance in Hypothesis~\ref{H:homog}, its
+amplitude, $a = \alpha_0$, and the real phases $E = H^{1/2}\times H^{-1/2}$ and
+$F = E\oplus\R^2$. Write $\Lambda = (1-\Delta)^{1/2}$. The form $B_\Gamma$ and
+constant $R_{\mathrm{sp}}$ are those of
+Section~\ref{S:spatial-occupation-foundation}. Let $H_{\mathrm{sp}}$ be the real
+covariance-null completion of $C_c^\infty(\R^d)$ with inner product $B_\Gamma$,
+and $H_t$ the analogous completion of $C_c^\infty(I)$, $I = (0,1)$, with time
+kernel $|s-t|^{-a}$. Let $H = H_I$ be the completion of smooth tests supported
+inside $I\times\R^d$. It embeds isometrically as a closed subspace of the given
+$H_W$. We retain the given $W$ restricted to it.
+
+Fix $R > 0$ and real even $\eta_R \in C_c^\infty(\R^d)$ with $0 \le \eta_R \le
+1$, equal to one on the radius-$R$ ball and supported in the closed radius-$2R$
+ball. The physical mask is $m_R = \eta_R^2$. Every operator path below takes its
+mask argument equal to $m_R$: at this fixed radius the base profile $\zeta(y) =
+m_R(Ry)$ meets the earlier hypotheses. The root $\eta_R$ factors state tests; it
+does not multiply an original noise class. All compactness conclusions here fix
+$R$.
+
+\subsection{Fractional products and the compact spatial map}
+
+The four-linear estimate~\eqref{E:spatial-four-linear} needs $H^1$ factors.
+The first component of a state in $E$ lies only in $H^{1/2}$, so we first
+extend that estimate to fractional Sobolev factors.
+
+\begin{lemma}[Fractional covariance products]
+  \label{L:cameron-fractional-products}
+  For $\alpha/4 < s < 1/2$, products of real $H^s$ functions define elements of
+  $H_{\mathrm{sp}}$, with
+  \begin{equation}\label{E:cameron-fractional-product}
+    \|fg\|_{H_{\mathrm{sp}}}
+    \le C_s^2\sqrt{R_{\mathrm{sp}}}\|f\|_{H^s}\|g\|_{H^s}.
+  \end{equation}
+  Their Hilbert pairings equal their physical integrals. In particular,
+  \begin{equation}\label{E:cameron-fractional-absolute}
+    \int|f_1(x)f_2(x)f_3(x-y)f_4(x-y)|\ud x\,\Gamma(\ud y)
+    \le C_s^4R_{\mathrm{sp}}\prod_{j=1}^4\|f_j\|_{H^s}.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We first define covariance products for $H^1$ factors. We then decompose
+  each fractional Sobolev factor into real Fourier bands and sum the absolute
+  four-linear bounds, identifying the completed products with their physical
+  pairings.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the product map on $H^1$ factors.
+  First approximate real $H^1$ factors by compact smooth ones. The absolute
+  four-linear bound~\eqref{E:spatial-four-linear} and covariance PSD make their
+  products Cauchy in $H_{\mathrm{sp}}$, with norm at most
+  $\sqrt{R_{\mathrm{sp}}}N(f)N(g)$. Expanding product differences proves
+  independence of approximation; physical continuity identifies all pairings.
+  PSD for products also follows from $fg = ((f+g)^2-(f-g)^2)/4$.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We sum the band bounds for fractional Sobolev
+  factors.
+  Use real radial Fourier bands $D_0 = 1_{\{|\xi|<1\}}$ and $D_j =
+  1_{\{2^{j-1}\le|\xi|<2^j\}}$, $j \ge 1$. For $f \in H^s$ put $f_j = D_jf$.
+  Each block is real and in $H^1$. Frequency support, Parseval and weighted
+  Cauchy--Schwarz give
+  \begin{equation}\label{E:cameron-dyadic-product}
+    N(f_j)\le2^{j\alpha/4}\|f_j\|_2,\qquad
+    \sum_{j\ge0}N(f_j)\le C_s\|f\|_{H^s}.
+  \end{equation}
+  On band $j$, the gradient norm is at most $2^j\|f_j\|_2$. Substituting into
+  $N$ gives the first inequality. Write $2^{j\alpha/4}\|f_j\|_2$ as
+  $2^{-j(s-\alpha/4)}(2^{js}\|f_j\|_2)$ and apply Cauchy--Schwarz to the two
+  sequences. The strict inequality $s>\alpha/4$ makes the first sequence
+  square summable.
+  Indeed, $\sum_j2^{-2j(s-\alpha/4)} < \infty$, while $\sum_j2^{2js}\|f_j\|_2^2
+  \le 2^{2s}\|f\|_{H^s}^2$. The low block has factor one. No $L^p$ multiplier
+  result is used. Also $\sum_j\|f_j\|_2 < \infty$ since $s > 0$. Thus,
+  $\sum_j|f_j|$ lies in $L^2$ by Minkowski and monotone convergence, and the
+  series is absolutely convergent a.e. with sum $f$.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify the physical and Hilbert-space product
+  series.
+  Apply the absolute $H^1$ four-linear estimate to each band quadruple. The sum
+  of its absolute integrals is at most
+  $R_{\mathrm{sp}}\prod_{\ell=1}^4\sum_jN((f_\ell)_j) < \infty$. Tonelli and the
+  null-set transfer at both spatial positions in
+  Lemma~\ref{L:spatial-physical-pair} identify the physical product series,
+  proving~\eqref{E:cameron-fractional-absolute}. The double series
+  $\sum_{j,k}f_jg_k$ is also absolutely convergent in $H_{\mathrm{sp}}$ by the
+  $H^1$ product bound. Its partial sums are products of $H^1$ functions. The
+  absolute quadruple calculation identifies their limiting physical pairings and
+  gives~\eqref{E:cameron-fractional-product}. Compact smooth functions are dense
+  in $H^s$: approximate in Fourier space by real Schwartz functions, then cut
+  each off compactly in $H^1$ and hence in $H^s$. This also proves uniqueness of
+  the bilinear extension. This proves Lemma~\ref{L:cameron-fractional-products}.
+\end{proof}
+
+With these products in $H_{\mathrm{sp}}$, we can extend the spatial mean map
+from smooth tests to all of $H_{\mathrm{sp}}$.
+
+\begin{proposition}[Compact spatial mean map]\label{P:cameron-spatial-map}
+  The smooth-test map
+  \[
+    T_{\mathrm{sp}}q=iB_F(m_R(\Gamma*q))
+  \]
+  extends to a compact linear map $T_{\mathrm{sp}}:H_{\mathrm{sp}} \to
+  \mathcal{K}(F)$, where $\mathcal{K}(F)$ has the operator norm. For $z =
+  (z_1,z_2,c_1,c_2)$ and $w = (w_1,w_2,d_1,d_2)$ set $w' = \Lambda^{-1}w_2$. Its
+  exact row identity is
+  \begin{equation}\label{E:cameron-spatial-row}
+    \langle T_{\mathrm{sp}}qz,w\rangle_F
+    =\langle q,k(z,w)\rangle_{H_{\mathrm{sp}}},
+    \qquad
+    k(z,w)=(\eta_Rz_1+c_1\eta_R)(\eta_Rw').
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  We identify the spatial row and use compactness of localized fractional
+  factors to bound it uniformly. We first extend the map with compact operator
+  values, then approximate the map itself by finite-dimensional spatial
+  projections.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the physical and covariance row.
+  Fix $s$ with $\alpha/4 < s < 1/2$; this interval is nonempty because the
+  original threshold implies $\alpha < 2$. For smooth compact $q$, $\Gamma*q$ is
+  locally smooth by differentiation under the compactly restricted Radon
+  integral. The masked potential is smooth compact. The velocity pairing in $E$
+  has weight $\Lambda^{-1}$; hence physical Fubini
+  gives~\eqref{E:cameron-spatial-row} on smooth states. Evenness of $\Gamma$
+  changes $B_\Gamma(k,q)$ to $B_\Gamma(q,k)$. For general states the localized
+  products are $L^1$, and $\Gamma*q$ is bounded on their compact support. $L^2$
+  state approximation passes the physical integral to the limit, while
+  Lemma~\ref{L:cameron-fractional-products} passes the $H_{\mathrm{sp}}$
+  pairing. This proves the row.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We obtain compact families of row tests.
+  Multiplication by $\eta_R$ maps bounded $H^{1/2}$ sets to precompact $H^s$
+  sets by Proposition~\ref{P:cutoff-singular-values}, with gain $1/2-s > 0$.
+  This applies to $z_1$ and $w'$. The $c_1\eta_R$ family is finite dimensional
+  and compact. The closures of both factor families for unit $z,w$ are compact,
+  so their products have compact closure $\mathcal{L}$ in $H_{\mathrm{sp}}$ by
+  the fractional product bound. The row identity gives $\|T_{\mathrm{sp}}q\| \le
+  \sup_{k\in\mathcal{L}}\|k\|\|q\|$. Null covariance classes therefore map to
+  zero.
+
+  The velocity coordinate $w_2$ lies in $H^{-1/2}$, so $w'=\Lambda^{-1}w_2$
+  lies in $H^{1/2}$ with the corresponding bound. Thus, both localized factors
+  use the same compact map from $H^{1/2}$ to $H^s$. The fractional product map
+  is continuous, so the image of the product of their compact closures is
+  compact in $H_{\mathrm{sp}}$.
+
+  \medskip
+  \noindent\textit{Step 3.~}We extend the map with compact operator values.
+  For smooth $q$, multiplication by its potential is compact $H^{1/2} \to
+  H^{-1/2}$ by the same whole-space cutoff result with gain one. Its extra $c_1$
+  column is finite rank, and the instantaneous $c_2$ column is zero. Thus, the
+  smooth images lie in $\mathcal{K}(F)$, and so does the bounded extension by
+  operator-norm closure.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We prove compactness of the map itself.
+  Choose a complete smooth-test orthonormal basis of $H_{\mathrm{sp}}$ by
+  countable compact-support approximation and Gram--Schmidt, omitting null
+  classes. Let $Q_n$ project onto its first $n$ terms. The row identity yields
+  \[
+    \|T_{\mathrm{sp}}(I-Q_n)\|
+    \le\sup_{k\in\mathcal{L}}\|(I-Q_n)k\|_{H_{\mathrm{sp}}}
+    \longrightarrow0.
+  \]
+  For a finite net in $\mathcal L$, strong convergence makes $(I-Q_n)$ small
+  at every net center once $n$ is large. Its operator norm is at most one, so
+  its value at any point of $\mathcal L$ differs from that at a nearby center
+  by at most the net radius. Letting that radius decrease proves the uniform
+  limit in the display.
+  Strong projection convergence is uniform on compact $\mathcal{L}$ by a
+  finite-net argument and $\|I-Q_n\| \le 1$. Each $T_{\mathrm{sp}}Q_n$ has
+  finite-dimensional range; their operator-norm limit is a compact map. This is
+  compactness of the map, in addition to compact values. This proves
+  Proposition~\ref{P:cameron-spatial-map}.
+\end{proof}
+
+\subsection{The supported tensor and temporal mean}
+
+Proposition~\ref{P:cameron-spatial-map} treats the spatial variable alone. A
+control in $H$ depends on time and space, so we first split $H$ into a time
+factor and a spatial factor.
+
+\begin{lemma}[Supported original tensor space]\label{L:cameron-supported-tensor}
+  Canonically $H = H_t\otimes H_{\mathrm{sp}}$ as real Hilbert spaces. It is
+  separable and admits a complete orthonormal basis $e_j$ with smooth test
+  representatives supported inside $I\times\R^d$. Projection $P_J$ onto its
+  first $J$ elements is also an orthogonal projection on $H_W$ by the same
+  finite formula.
+\end{lemma}
+
+\begin{proof}
+  On separated smooth tests, absolute Fubini makes the original inner product
+  exactly the tensor product after both null quotients. Finite sums are dense:
+  approximate a smooth compact spacetime test uniformly by smooth time
+  partitions times its spatial slices, on one common compact support inside
+  $I\times\R^d$. A uniform error $\epsilon$ on spatial compact $A$ has squared
+  original covariance norm at most
+  \[
+    \epsilon^2|A|\Gamma(A-A)
+    \int_I\int_I|s-t|^{-a}\ud s\ud t<\infty.
+  \]
+  This also gives countable smooth-test density on exhausting compact sets, both
+  here and in $H_{\mathrm{sp}}$. Gram--Schmidt skipping zeros preserves smooth
+  compact support. The isometric embedding into $H_W$ has closed image by
+  completeness; its finite orthonormal projection formula remains orthogonal
+  there. It is not multiplication by a time indicator and gives no independence
+  of disjoint time intervals. This proves
+  Lemma~\ref{L:cameron-supported-tensor}.
+\end{proof}
+
+It remains to treat the time factor $H_t$, whose kernel is $|s-t|^{-a}$.
+Proposition~\ref{P:cameron-full-mean} then combines the two maps.
+
+\begin{proposition}[The compact temporal mean, without trace class]
+  \label{P:cameron-temporal-map}
+  Let $K$ on $L^2(I)$ have kernel $|s-t|^{-a}$. It is compact, self-adjoint,
+  strictly positive and injective. The map $\iota:f\mapsto K^{1/2}f$ extends
+  isometrically from $H_t$ onto $L^2(I)$, and the temporal mean
+  \begin{equation}\label{E:cameron-temporal-map}
+    C_t=K^{1/2}\iota:H_t\longrightarrow L^r(I)
+  \end{equation}
+  is bounded and compact for every $2 < r < 2/a$. The displayed formula first
+  has its $L^2(I)$ meaning; the same completed map is then shown to take values
+  compactly in $L^r(I)$. The operator $K$ is not trace class and $C_t:H_t \to
+  L^2(I)$ is not Hilbert--Schmidt.
+\end{proposition}
+
+\begin{proof}
+  We prove compactness and strict positivity of the temporal operator before
+  identifying the covariance completion. We then obtain the stronger $L^r$
+  bound by duality, use interpolation for compactness, and test cell
+  indicators to rule out trace class.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove positivity, injectivity and compactness
+  of the kernel operator.
+  Schur bounds $K$ by its finite row and column integrals. The Gamma
+  representation of $|s-t|^{-a}$ and zero extension of $f \in L^2(I)$ give
+  strict positivity directly: the kernel $e^{-\lambda|v|}$ has quadratic form
+  \[
+    \int_\R\frac{2\lambda}{\lambda^2+\xi^2}
+    |\widehat{f}(\xi)|^2\ud\xi>0
+    \quad(f\ne0,\ \lambda>0)
+  \]
+  in the unitary Fourier convention. Absolute Fubini is justified by Schur
+  applied to $|f(s)f(t)|$. Integrating with positive weight
+  $\lambda^{a-1}/\Gamma_E(a)$ proves positivity and injectivity. Symmetry gives
+  self-adjointness. The deterministic truncated kernel $K_\epsilon =
+  K1_{\{|s-t|\ge\epsilon\}}$ is square integrable, so finite separated-kernel
+  approximations make it compact. The Schur norm of $K-K_\epsilon$ is at most
+  $2\epsilon^{1-a}/(1-a)$, proving compactness of $K$. These truncations are not
+  used as Gaussian covariances. Its positive square root is compact by the
+  compact spectral theorem.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the covariance completion with the
+  square-root range.
+  On tests $\|K^{1/2}f\|_2 = \|f\|_{H_t}$. Smooth-test $L^2$ density and $\ker K
+  = 0$ imply that its range is dense, so the isometry extends onto $L^2(I)$. On
+  tests $C_tf = Kf$, and~\eqref{E:cameron-temporal-map} first gives compactness
+  into $L^2$.
+
+  If a vector is orthogonal to the range of the self-adjoint square root, it
+  lies in its kernel. That kernel is zero because $K$ is injective, so the
+  range is dense. The extension of an isometry from a completed domain has
+  closed range; density therefore makes this extension onto $L^2(I)$.
+
+  \medskip
+  \noindent\textit{Step 3.~}We bound the temporal mean in $L^r$ and obtain
+  compactness there.
+  Extend $K_a(v) = |v|^{-a}1_{\{|v|\le1\}}$ to the line. It lies in $L^{r/2}$.
+  Scalar Young convolution gives
+  \[
+    \|g\|_{H_t}^2\le\|K_a\|_{r/2}\|g\|_{r'}^2,\qquad
+    r'=r/(r-1).
+  \]
+  The condition $r<2/a$ gives $ar/2<1$, so the truncated power kernel belongs
+  to $L^{r/2}$. Young bounds its convolution with an $L^{r'}$ function in
+  $L^r$; pairing this with the same function in $L^{r'}$ gives the displayed
+  covariance norm bound.
+  To verify the needed Young inequality, take $u = r/2$, $v = r'$, so $u,v < r$
+  and $1/u+1/v = 1+1/r$. Split the absolute convolution integrand into
+  $(|f|^u|h|^v)^{1/r}$, $|f|^{1-u/r}$ and $|h|^{1-v/r}$. H\"older with exponents
+  $r$, $(1/u-1/r)^{-1}$ and $(1/v-1/r)^{-1}$, followed by integration and
+  Tonelli, gives $\|f*h\|_r \le \|f\|_u\|h\|_v$. Covariance Cauchy--Schwarz and
+  $L^r$ duality now imply $\|Kf\|_r \le C_{a,r}\|f\|_{H_t}$ on tests. Their $Kf$
+  are bounded by the integrable-kernel row, making duality legitimate before
+  completion. Density extends the estimate, with $L^2$ value equal
+  to~\eqref{E:cameron-temporal-map}. Choose $r < r_2 < 2/a$. Compactness into
+  $L^2$ and boundedness into $L^{r_2}$ give compactness into $L^r$ by $\|u\|_r
+  \le \|u\|_2^\tau\|u\|_{r_2}^{1-\tau}$ with $1/r = \tau/2+(1-\tau)/r_2$.
+
+  For a bounded sequence in $H_t$, compactness into $L^2$ supplies an
+  $L^2$-convergent subsequence. Its differences remain bounded in $L^{r_2}$.
+  The interpolation inequality makes these differences tend to zero in $L^r$,
+  proving compactness in that norm rather than only boundedness.
+
+  \medskip
+  \noindent\textit{Step 4.~}We test the trace by orthonormal cell indicators.
+  Finally, the orthonormal cell indicators $N^{1/2}1_{(j/N,(j+1)/N)}$, $0 \le j
+  < N$, have $K$ quadratic forms summing to $2N^a/((1-a)(2-a)) \to \infty$.
+  On a cell of length $1/N$, the double kernel integral is
+  $2N^{a-2}/((1-a)(2-a))$. The squared normalization of its indicator
+  contributes $N$, and summing over the $N$ cells gives the stated $N^a$
+  divergence. For a positive trace-class operator every such finite
+  orthonormal sum is bounded by its trace, so this divergence excludes trace
+  class.
+  Thus, positive $K$ has infinite trace, and $K^{1/2}\iota$ is not
+  Hilbert--Schmidt into $L^2$. No instantaneous $L^2$-valued Gaussian has been
+  introduced. This proves Proposition~\ref{P:cameron-temporal-map}.
+\end{proof}
+
+No-go~\ref{P:nogo-27} explains the upper endpoint of this compactness
+range: temporal concentration makes the mean map unbounded above
+$2/\alpha_0$ and noncompact at $2/\alpha_0$. The endpoint witness does not
+refute boundedness there.
+
+
+\begin{proposition}[The compact time-space mean]\label{P:cameron-full-mean}
+  Fix one $2 < r < 2/a$ throughout this proposition. For finite tensors with
+  orthonormal spatial labels define
+  \[
+    \mathcal{U}\left(\sum_j f_j\otimes q_j\right)(s)
+    =\sum_j(Kf_j)(s)q_j.
+  \]
+  It extends to a bounded map $H \to L^r(I;H_{\mathrm{sp}})$ with dimension-free
+  bound. The map
+  \begin{equation}\label{E:cameron-full-mean}
+    T\Phi(s)=T_{\mathrm{sp}}(\mathcal{U}\Phi(s))
+    :H\longrightarrow L^r(I;\mathcal{K}(F))
+  \end{equation}
+  is compact. For smooth supported $\Phi$, it is the multiplier
+  $iB_F(m_Rh_\Phi(s))$, where $h_\Phi = |\cdot|^{-a}*(\Gamma*\Phi)$. For the
+  supported projections of Lemma~\ref{L:cameron-supported-tensor},
+  \begin{equation}\label{E:cameron-compact-tail}
+    \epsilon_J:=\|T(I-P_J)\|_{H\to L^r(\mathcal{K}(F))}
+    \longrightarrow0.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  We first prove a dimension-free temporal estimate on finite tensors and
+  identify its physical mean. We then combine spatial finite-rank
+  approximation with temporal compactness, and use compactness of the combined
+  map to control supported projection tails.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound and extend the time-only tensor map.
+  For a finite-dimensional spatial field $g$, positivity of the time kernel and
+  scalar Young give
+  \[
+    \|g\|_{H_t\otimes H_{\mathrm{sp}}}^2
+    \le\int_I\int_I|s-t|^{-a}\|g_s\|\|g_t\|\ud s\ud t
+    \le C_{a,r}^2\|g\|_{L^{r'}(H_{\mathrm{sp}})}^2.
+  \]
+  Hilbert Cauchy--Schwarz and finite-dimensional $L^r$ duality give
+  $\|\mathcal{U}\Phi\|_{L^r(H_{\mathrm{sp}})} \le C_{a,r}\|\Phi\|_H$. The
+  duality can be checked by the pointwise direction
+  $\|\mathcal{U}\Phi\|^{r-2}\mathcal{U}\Phi$ and smooth coefficient
+  approximation in $L^{r'}$, controlled by the displayed estimate. No dimension
+  factor occurs. Tensor density and completeness extend this to a strongly
+  measurable Bochner field. This time-only map still contains spatial vectors in
+  the covariance space. Spatial covariance is applied once, by
+  $T_{\mathrm{sp}}$.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the completed map on smooth controls.
+  The physical mean identity on separated tests follows
+  from~\eqref{E:cameron-spatial-row}. For a smooth spacetime test use the
+  separated compact-support approximations in the tensor proof. Their uniform
+  errors give uniformly small masked mean errors, using the finite time row and
+  locally finite spatial covariance on the relevant compact differences. The
+  multiplier bound by $L^\infty+L^2$ then gives uniform operator convergence,
+  identifying the $L^r$ mean in~\eqref{E:cameron-full-mean}. General $H$
+  controls denote completed operator fields, without a pointwise-potential
+  assertion.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We combine temporal and spatial compactness.
+  Let $Q_n$ be the spatial projections in the compact-map proof. The maps
+  $T_n\Phi = T_{\mathrm{sp}}Q_n\mathcal{U}\Phi$ approximate $T$ in operator norm
+  by the dimension-free bound and $\|T_{\mathrm{sp}}(I-Q_n)\| \to 0$. For fixed
+  $n$, each spatial coordinate extraction $H \to H_t$ has norm at most one and
+  its image under $C_t$ is precompact in $L^r$. Finite combination with the
+  compact operators $T_{\mathrm{sp}}q_j$ makes $T_n$ compact. Hence, $T$ is
+  compact. Scalar time compactness alone tensored with an infinite identity
+  would not prove this.
+
+  For a fixed finite spatial projection, only finitely many scalar temporal
+  images must be controlled. Choose a convergent subsequence for the first
+  coordinate, then successively for the remaining coordinates. Their finite
+  linear combination converges in the operator-valued $L^r$ norm. The uniform
+  operator approximation by these compact maps then gives compactness of $T$.
+
+  \medskip
+  \noindent\textit{Step 4.~}We obtain the supported projection-tail bound.
+  To prove~\eqref{E:cameron-compact-tail}, if it failed choose unit $v_J$ on a
+  subsequence with $\|T(I-P_J)v_J\|$ bounded below. The vectors $(I-P_J)v_J$
+  tend weakly to zero, since their pairings with fixed $h$ are bounded by
+  $\|(I-P_J)h\|$. Compactness gives a norm-convergent image subsequence with
+  weak limit zero, a contradiction. This proves
+  Proposition~\ref{P:cameron-full-mean}.
+\end{proof}
+
+The radius remains fixed in this approximation. No-go~\ref{P:nogo-25}
+shows that translated white-noise controls prevent these fixed smooth
+projections from giving tails uniform over growing radii.
+
+
+\subsection{The noise residual and its Cameron operator}
+
+Choose integer $B \ge 1$ and $0 < \delta < \min(1,1/B)$. Put $N =
+\lfloor1/(\delta B)\rfloor$, $s_m = m\delta B$, $\ell_m = B$ for $m < N$ and
+$\ell_N = \delta^{-1}-NB \in [0,B)$. The intervals $I_m =
+[s_m,s_m+\delta\ell_m]$ partition $[0,1]$ up to endpoints. With $Q_J = I-P_J$ on
+$H_W$ and the explicit pullback~\eqref{E:raw-block-pullback}, define
+\[
+  Y_{m,J}(f)=W(Q_JT_{\delta,m}f),\qquad
+  g_\delta=\delta^{(1-a)/2}.
+\]
+Fix parameters
+\begin{equation}\label{E:cameron-block-parameters}
+  \frac12<\theta<\min\left(1-\frac a2,\frac{3-a-\alpha}{2}\right),
+  \qquad \frac1{1-\theta}<r<\frac2a,\qquad
+  \frac1\theta\le p<2<r .
+\end{equation}
+These intervals are nonempty.
+
+\begin{lemma}[Supported residual paths]\label{L:cameron-actual-residual}
+  Gaussian transfer with mask $m_R$ and its $F$ extension constructs the
+  centered Gaussian paths
+  \[
+    X_{m,J}(u)=g_\delta A_{m_R}(Y_{m,J})(\min(u,\ell_m)),
+    \qquad 0\le u\le B.
+  \]
+  Their finite tuple lies in the separable space $\mathscr{B}_0^{N+1}$, where
+  $\mathscr{B}_0 = h_0^\theta([0,B];\mathcal{K}(F))$. Every continuous linear
+  statistic $\ell(X)$ is $W(k_\ell)$ for some $k_\ell \in H_I$. An empty last
+  interval gives zero.
+\end{lemma}
+
+\begin{proof}
+  We construct the stopped residual paths by Gaussian transfer. We then
+  identify the supported slow-time tests in every observed row, so that each
+  continuous path statistic lies in the original first chaos over $H_I$.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the stopped paths in the separable
+  little Hölder space.
+  Isometry of the pullback and orthogonality of $Q_J$ give
+  $\operatorname{Var}Y_{m,J}(f) \le \|f\|_{H_W}^2$.
+  Proposition~\ref{P:source-gaussian-transfer} therefore applies. Its finite
+  sums retain both deterministic localizations, and their limits retain the true
+  $F$ extension and constant columns. Choose $\theta < \beta < \beta_2$ below
+  the upper threshold in~\eqref{E:cameron-block-parameters}; read the
+  operator-path construction at exponent $\beta$ with auxiliary $\beta_2$.
+  Constant stopping preserves compact values and $C^\beta$ bounds, hence gives
+  paths in the little $C^\theta$ closure by polygonal approximation. Its
+  separability is Lemma~\ref{L:raw-block-inputs}.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the supported first-chaos tests for
+  the path statistics.
+  The projection $P_J$ has range in $H_I$, so subtracting it from a vector
+  already in $H_I$ keeps that vector in $H_I$. Consequently, once an observed
+  slow-time row is shown to belong to $H_I$, its residual row has the same
+  support-space membership. This is a Hilbert-subspace statement, not
+  multiplication of the original noise by a time indicator.
+  As in Lemma~\ref{L:raw-block-inputs}, every observed row's slow pullback
+  belongs to $H_I$: its time support is in $[0,1]$, and approximating its
+  indicator inside $I$ converges in original covariance norm by dominated
+  convergence against the integrable time kernel and locally finite $\Gamma$ on
+  the common compact support. This includes endpoints. Schwartz $E$ states and
+  both true constant columns supply the identities, then boundedness extends
+  them to $F$. Let $P_H$ be the orthogonal projection onto closed $H_I$.
+  Transfer for the noise $f\mapsto W(P_HQ_JT_{\delta,m}f)$ leaves each observed
+  row unchanged, since its residual slow test already lies in $H_I$. Countable
+  states and rational times identify the same operator paths. This
+  projected-transfer series has coefficient tests in $H_I$. Applying $\ell$
+  gives an $L^2$ limit in the closed isonormal image $W(H_I)$, proving the
+  assertion. Original global-basis tests were not assumed individually
+  supported. No time-support independence or Hilbert-valued noise is used. This
+  proves Lemma~\ref{L:cameron-actual-residual}.
+\end{proof}
+
+\begin{proposition}[Cameron covariance and averaged bound]
+  \label{P:cameron-actual-embedding}
+  The covariance map $L_{\delta,J}\Phi = \E[XW(\Phi)]$ is
+  \begin{equation}\label{E:cameron-actual-covariance}
+    (L_{\delta,J}\Phi)_m(u)=\sqrt\delta
+    \int_0^{\min(u,\ell_m)}
+    S_F(-v)T(Q_J\Phi)(s_m+\delta v)S_F(v)\ud v ,
+    \qquad \Phi\in H.
+  \end{equation}
+  This is a compact-operator Bochner integral. Define the exact norm and
+  constants
+  \begin{equation}\label{E:cameron-averaged-norm}
+    \|x\|_{\delta,p}
+    =\left(\delta\sum_{m=0}^N\|x_m\|_{C^\theta}^p\right)^{1/p},
+    \quad G_B=\sup_{|v|\le B}\|S_F(v)\|,
+    \quad C_B=G_B^2[B^{1-1/r}+B^{1-1/r-\theta}].
+  \end{equation}
+  Then the Gaussian Cameron embedding satisfies
+  \begin{equation}\label{E:cameron-averaged-bound}
+    \|L_{\delta,J}\Phi\|_{\delta,p}
+    \le\sqrt\delta\,C_B(2/B)^{1/p-1/r}
+    \epsilon_J\|\Phi\|_H .
+  \end{equation}
+  Convergence $\epsilon_J \to 0$ fixes $R$ and is independent of $\delta$.
+\end{proposition}
+
+\begin{proof}
+  We compute the covariance direction first on smooth supported controls and
+  justify its compact-operator integral. We then extend to all controls,
+  identify the Cameron preimage norm, and sum the local primitive estimates
+  with the exact time weights.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We compute the covariance direction and its factor
+  $\sqrt\delta$.
+  For smooth supported $\Phi$, $Q_J\Phi$ is another such test. The explicit
+  pullback covariance~\eqref{E:raw-block-mean-jacobian} gives
+  \[
+    \E[Y_{m,J}(f)W(\Phi)]
+    =\delta^{a/2}\int f(v,x)
+    h_{Q_J\Phi}(s_m+\delta v,x)\ud x\ud v .
+  \]
+  Absolute Fubini also holds for signed compact tests. Multiplying by $g_\delta$
+  gives $\sqrt\delta$. Explicit rows and~\eqref{E:cameron-spatial-row} give
+  \eqref{E:cameron-actual-covariance}. The constant-velocity input acquires
+  displacement $v$ under $S_F(v)$; the constant displacement remains one. Both
+  columns are included.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We justify the compact-operator Bochner integral.
+  Both $S_F$ and its adjoint are strongly continuous on Hilbert $F$. In
+  Bessel-unitary $E$ coordinates the Fourier matrix is
+  \[
+    \begin{pmatrix}
+      \cos(v|\xi|)&\langle\xi\rangle\sin(v|\xi|)/|\xi|\\
+      -|\xi|\sin(v|\xi|)/\langle\xi\rangle&\cos(v|\xi|)
+    \end{pmatrix}.
+  \]
+  Its continuous zero quotient and common bound $C(1+B)$ apply also to its
+  adjoint; dominated convergence proves the assertion. The constant block is
+  finite dimensional. For compact $A$, conjugation $S_F(-v)AS_F(v)$ is norm
+  continuous: strong convergence is uniform on compact images, and the right
+  factor follows by adjoints. Joint norm continuity in $(v,A)$ and uniform
+  bounds give Bochner measurability for the conjugated strongly measurable
+  compact-operator field. No norm continuity of the free group itself is
+  assumed.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We bound each stopped primitive and extend the
+  covariance identity.
+  Write $M = TQ_J\Phi$. H\"older and the primitive increment estimate give
+  \begin{equation}\label{E:cameron-local-primitive-bound}
+    \|(L_{\delta,J}\Phi)_m\|_{C^\theta}
+    \le\sqrt\delta\,C_B\delta^{-1/r}\|M\|_{L^r(I_m)}.
+  \end{equation}
+  Hölder in the fast variable bounds an increment by $G_B^2$ times its length
+  to the power $1-1/r$, multiplied by the pulled-back $L^r$ norm. The latter
+  is $\delta^{-1/r}\|M\|_{L^r(I_m)}$. For the supremum use length at most $B$;
+  for the $\theta$ seminorm divide by the increment length to the power
+  $\theta$. The two remaining powers of $B$ are exactly those in $C_B$.
+  Its primitive exponent is $1-1/r > \theta$. Simple compact-operator integrand
+  approximation in $L^r$ puts the primitive in $\mathscr{B}_0$; constant
+  stopping does not increase the H\"older norm. Affine pullback preserves null
+  sets. For fixed $\delta,J$ the covariance map is bounded by Bochner
+  Cauchy--Schwarz and finite tuple $L^2$ moments. The integral is bounded by the
+  displayed estimate, so equality on smooth controls extends by density to all
+  $H$. Dense states and rational times make it a full operator-path identity.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We identify the Cameron embedding norm.
+  Let $H_{\mathrm{seen}}$ be the closed span of the $k_\ell$ from
+  Lemma~\ref{L:cameron-actual-residual}. Then $\ell(L_{\delta,J}\Phi) = \langle
+  k_\ell,\Phi\rangle_H$ and $\ker L_{\delta,J} = H_{\mathrm{seen}}^\perp$. The
+  first Wiener chaos definition of the Cameron space is therefore
+  $L_{\delta,J}(H_{\mathrm{seen}})$ with the minimum $H$ preimage norm. Extra
+  directions are removed by orthogonal projection, without an inverse
+  covariance. A bound in the original $H$ norm is thus the embedding bound.
+
+
+  \medskip
+  \noindent\textit{Step 5.~}We combine the block estimates using the true
+  partition.
+  Put $t_m = \|M\|_{L^r(I_m)} \ge 0$ and $n = N+1 \ge 2$. Finite power mean at
+  exponent $r/p > 1$, applied to $t_m^p$, gives
+  \[
+    \left(\sum_m t_m^p\right)^{1/p}
+    \le n^{1/p-1/r}\left(\sum_m t_m^r\right)^{1/r}.
+  \]
+  Multiplying the local primitive estimate by the averaged-norm factor
+  $\delta^{1/p}$ leaves $\sqrt\delta\,\delta^{1/p-1/r}$. Finite power mean
+  adds $n^{1/p-1/r}$. These combine into $(\delta n)^{1/p-1/r}$, and
+  $n\le2/(\delta B)$ gives the explicit $B$ factor. The exponent is positive
+  because $p<r$.
+  The true partition gives $\sum_m t_m^r = \|M\|_{L^r(I)}^r$, including an empty
+  last interval, and $n \le 2/(\delta B)$. Hence, the exact $\delta$-weighted
+  norm gives
+  \[
+    \|L_{\delta,J}\Phi\|_{\delta,p}
+    \le\sqrt\delta\,C_B(\delta n)^{1/p-1/r}\|M\|_{L^r}
+    \le\sqrt\delta\,C_B(2/B)^{1/p-1/r}
+    \epsilon_J\|\Phi\|_H.
+  \]
+  The $B$ factor remains explicit; covariance and mask occur once. This proves
+  Proposition~\ref{P:cameron-actual-embedding}.
+\end{proof}
+
+These conclusions fix the radius and make no uniform-radius projection tail
+assertion. No concentration estimate or original moment upper bound follows from
+this section alone.

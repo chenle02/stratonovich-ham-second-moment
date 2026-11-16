@@ -221,6 +221,20 @@ All still-unlaunched future packets now have at least65,536 tokens of combined
 completion allowance; their scientific inputs remain unchanged. Other source
 rereads continue under standing authority.
 
+### RP009--RP012 frozen, not yet dispatched
+
+Four exact-source packets are frozen: RP009 unmasked variational at corrected
+`7923750f` (6 pairs),RP010 temporal equilibrium at`66b1814b` (2 pairs,1
+unchanged),RP011 spatial occupation at`bc531b02` (8 pairs,2 unchanged),
+RP012 Cameron mean at`b34ccfc5` (7 pairs,1 unchanged). All use baseline
+`cdde711c`, identical complete source frames, explicit unassigned upstream
+context and source-bound worker QA. Root checked exact Git bytes/frame offsets
+and fresh native effective tool-denied configuration. Each requested cap is
+65,536 (the still-unlaunched RP010 cap was raised without changing input),
+timeout3,600seconds, fresh pure DeepSeekV4Pro, one attempt/no coordinator
+retry/continuation/fallback. No independent result is claimed before dispatch;
+Agent16's integrated verification/adoption gate remains separate.
+
 The older publication-frontier headings below are dated snapshots; they do
 not authorize restarting their old completed calls or override this narrow
 assignment and Le's later recorded decisions.
