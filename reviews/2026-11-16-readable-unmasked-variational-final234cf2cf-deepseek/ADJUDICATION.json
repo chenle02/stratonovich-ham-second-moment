@@ -1,0 +1,446 @@
+{
+  "review_record_id": "RP054",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "234cf2cfcb87b0e0aadd7e1caa8ad5ff8c37ffcb",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_unmasked_variational.tex",
+  "source_binding_sha256": "d8f296bc882c185143b892e0e3028957dee9b67d4f63fab03170835eadb6820a",
+  "public_report_sha256": "87bc8068ce4dcad9c164a47f30546e4a44ffee2424122bf229db4aa9733036b7",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_ALL_ASSIGNED_PUBLIC_RECONSTRUCTIONS_CHECKED_ROOT_REVIEWS",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:variational-heat-envelope": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:variational-global-mean": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R2"
+      ]
+    },
+    "P:variational-unmasked-rate": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R3"
+      ]
+    },
+    "P:variational-remove-mask": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:variational-control-dilation": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:variational-positive-scores": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:variational-heat-envelope",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED (the dyadic-summation sentence is a correct spelling of the existing bound)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 9,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "01f84628c2d4627b5a56052fdcacd2fb5e7e3caa6a0532d8b4774984aaf9b323",
+      "mathematical_check": "The public proof derives polynomial mass growth from positive tempered distributions using dilated compact cutoffs, then dyadic integrability forL>N forbothGamma andmu. Translated Gaussian derivative majorants give locallysmooth finite physical convolution. PairingoneSchwartztest and absoluteFubini plus the ORDINARY normalized heat characteristic integral gives the exact spectraldistribution with no extraunitaryfactor. Continuity upgradesdistribution equality toallx; physicalnonnegativity, even spectral reality andtriangle bound give0<=Gamma*p(x)<=Gamma*p(0), strictlypositive fornonzero covariance. The new summability explanation is reconstructed under measure hypotheses without density.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        28,
+        40
+      ],
+      "old_proof_lf": [
+        42,
+        67
+      ],
+      "old_statement_sha256": "beb4baab9f90165bf07aa94f7f0b5bf09abc5285a4a5d8af11a7c72823f163ae",
+      "old_proof_sha256": "6a1e69435d229439e88623650cb41d792a4dd465bdd7e3ee4b008e45f8465dc7",
+      "new_statement_lf": [
+        28,
+        40
+      ],
+      "new_proof_lf": [
+        42,
+        82
+      ],
+      "new_statement_sha256": "beb4baab9f90165bf07aa94f7f0b5bf09abc5285a4a5d8af11a7c72823f163ae",
+      "new_proof_sha256": "b93565336aa40dacfc51c707a3f4dc1803697bf78e43dbf42020433284e23c5d"
+    },
+    {
+      "proof_id": "L:variational-global-mean",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED (the NEW text differs only by a paragraph break after the displayed $h_s$ integral; no new assertion)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 28,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "1236493bc8da68086da6dd7a10f2a970a44da2f43f6922ae838207bef2edbfa0",
+      "mathematical_check": "The report zeroextends thecompactinteriortimecontrol smoothly, dominates every mixed derivative by a fixed Gaussian using its positive minimum onthe common support, and applies the reconstructed heat envelope forglobal convolutionderivative bounds. Afterr=s-u, alltime/spatial derivatives fall onPsi(s-r) under locallyintegrable|r|^-a and a bounded r interval forcompactstime. This givesglobalspace bounds/localtime bounds and theexactLipschitz estimate onI, with no directionaldecay or globalstrictpositivity. Its comment thatsource r=s-t is a cosmetic error is unnecessary dummy-variable precision(R2), not a source defect.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        70,
+        80
+      ],
+      "old_proof_lf": [
+        82,
+        102
+      ],
+      "old_statement_sha256": "a1c46970da3475aba52183c7451c1dd962e2df44d6b59448e74f2ebb108ebc7f",
+      "old_proof_sha256": "f231fb87f74f1101c9fec14defba72144ea3e489968b1356201ddae81885eb80",
+      "new_statement_lf": [
+        85,
+        95
+      ],
+      "new_proof_lf": [
+        97,
+        118
+      ],
+      "new_statement_sha256": "a1c46970da3475aba52183c7451c1dd962e2df44d6b59448e74f2ebb108ebc7f",
+      "new_proof_sha256": "eff997cbd73364681cee3d1f9705360877514efd851fa71df6d06a82acae2b6e"
+    },
+    {
+      "proof_id": "P:variational-unmasked-rate",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED (intro and Step 3 complex-vector paragraph are correct; all quantities and constants unchanged)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 48,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "4995fb6b74dd2e72039f42159f348bdd1a81534c996bac3a0c3dc2b9b45c6fe7",
+      "mathematical_check": "The report explicitly reconstructs bounded perturbation onH2 via closed/symmetricgraphnorm equivalence and both Neumann resolvents atb>M; the adjoint-kernel/surjectivity calculation proves selfadjointness. ShiftJ=H+1+M and integrationbyparts yield exactequivalentH1 form bounds onH2. Unlike a mere asserted formdomain, publicStep2 supplies the half-power spectralcutoffcore, FourierH1density andcompletion identification, soD(J1/2)=H1 is actually reconstructed. Spectral projections at thefinitebottom give unitH2 approximateRayleightests without an eigenstate, while bothrealcomponents and additiveforms/norms yieldthe normweighted realquotient reduction. The fixedcompacttrial has unmaskedform<=maskedform, uniformlynegativebottom andsqrt epsilon floor. Sameunittests andfactoredsquare roots give the exactC_Psi/(2sqrt epsilon) rate Lipschitz bound, withcontrol-dependentconstants/no universalgap.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        110,
+        123
+      ],
+      "old_proof_lf": [
+        125,
+        176
+      ],
+      "old_statement_sha256": "71e6a31fba30e6abe7063b5998f067c898967cc948becd4b4df4d7b29d535c86",
+      "old_proof_sha256": "45004c07080364f33a7d2b62ad28259e0861b84e63677d809711552c03dcc4e3",
+      "new_statement_lf": [
+        126,
+        139
+      ],
+      "new_proof_lf": [
+        141,
+        217
+      ],
+      "new_statement_sha256": "71e6a31fba30e6abe7063b5998f067c898967cc948becd4b4df4d7b29d535c86",
+      "new_proof_sha256": "255ce59611a335933fbc93aed675d761d602a827cd453633b30cd643d5cf542a"
+    },
+    {
+      "proof_id": "P:variational-remove-mask",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED (both additions, the $Mf^2$ majorant and the identification of the compact-family input and $E_1$, are correct and consistent with the baselines)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 87,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "3437b4c89df76ebe9007990890c2b92feebe810294fe74a5764b779d4962b57d",
+      "mathematical_check": "The report constructs theflat monotone radialmasks with positive denominator andsmoothness atorigin, then applies the fixedcompactfamily theorem above a commontrialplateau. The unitH1integrablemajorantMf^2 and dominated/monotone convergence justify interchangingONLY two numerical suprema, obtainingmaskedrates increasing to theunmaskedRayleighrate. The compactparameter increasingopenset/Dini argument provesuniformtimeparameter convergence, thenmonotonicityextendsallrealradius. EachfixedR lowerbound concerns thesameoriginalpointliminf andoriginalvariance; taking theirnumericalsupremum givesunmaskedlowerbound. It explicitly disclaimsR(T), unmaskedrandomflow, uniformmaskGaussian estimates andsource/radius/timeexchange.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        186,
+        197
+      ],
+      "old_proof_lf": [
+        199,
+        239
+      ],
+      "old_statement_sha256": "f190207ef9671d3133cffa533b27e47cf512fb0f1980763d28ee0d4a45266063",
+      "old_proof_sha256": "f15fa9ef0557547948daf89ad929af2039ca40140e3fdea218fd0092adc06f86",
+      "new_statement_lf": [
+        227,
+        238
+      ],
+      "new_proof_lf": [
+        240,
+        302
+      ],
+      "new_statement_sha256": "f190207ef9671d3133cffa533b27e47cf512fb0f1980763d28ee0d4a45266063",
+      "new_proof_sha256": "cbbefda523e2d58a77d81d800176e9e64ada9c545446d802a5de111e36d82679"
+    },
+    {
+      "proof_id": "L:variational-control-dilation",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED (only Step headers added; no new mathematical claim)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 118,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "4124799efaa1f3a7b6148f12806178c15863bf53e9455c8bd7bf58c6a46f5ad0",
+      "mathematical_check": "The public fullcontrolclass inverseD_(1/r) is explicit, withtimeunchanged andnorestriction toseparablecontrols. HomogeneousRadon pushforwardr^(alpha-d) givesmeanr^2, whiletheSEPARATE LebesgueJacobianr^-d givesoriginalcostr^(4-alpha). RealunitaryRayleightest bijectionU_r haskineticr^2 andpotentialr^2, givingpositiverater andintegratedrater; the operatoridentity is supplementary, not assumedtoobtain therate. It preserves singular/whitecovariances and correctmasktransformationm_R(rx)=m_(R/r)(x). No originalcovarianceamplitude ischanged.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        251,
+        264
+      ],
+      "old_proof_lf": [
+        266,
+        294
+      ],
+      "old_statement_sha256": "768c6d932744c372092e3139c1834a74f3ea60114f9ae2b197b089e9fa7cd463",
+      "old_proof_sha256": "1b8ed8d780ef7cb291c4bf7b660fe24876fedaceb6eb6b1a7a79b1281c2dc942",
+      "new_statement_lf": [
+        314,
+        327
+      ],
+      "new_proof_lf": [
+        329,
+        367
+      ],
+      "new_statement_sha256": "768c6d932744c372092e3139c1834a74f3ea60114f9ae2b197b089e9fa7cd463",
+      "new_proof_sha256": "c55ca196339c3980f11f2b4ef591a57f842bc83e34cb565a002e867d83049eac"
+    },
+    {
+      "proof_id": "P:variational-positive-scores",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED (the two added sentences — the $r_0^k=I_0/v_0$, $r_0^qv_0=r_0I_0$ check and the $cr_c=r_c^q=K_c$ check — are correct scalar-power verifications)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 146,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "ba8e15d2314cb867109b869148eabbd9755a15af6be325967b65222b9b4ac51f",
+      "mathematical_check": "The report derives a strictlypositive coefficient-one value for the DILATEDtest usingr0^k=I0/v0 andq=k+1, yieldingr0I0/2. Wholeclassbijectionat r_c=c^(1/k) givescr_c=r_c^q=K_c andtheexactscoreSETscaling. Independentcanonicalpointupperbound andthelogprefactor estimate boundtheoriginalpointlimsup; everycoefficient-two score is<=samefiniteupperconstant bytheprevious target. Thuscoefficient-one set isboundedbeforetakingfinite-realsuprema; a finite lowerpointbound isalreadyavailable foranyfixedtest. A redundant publicStep3 claim2I0-v0/2>=I0 for thearbitrary ORIGINALtest isFALSE(R1); it isnotneeded forboundedness andmustnotbeendorsed. CorrectStep1 independentlysuppliespositivity afterdilation, andthefiniteoriginalbound/publicsetscaling route iscomplete. PositiveK_c supremum scaling givesS_c=c^m S1 andQ2>=S2, without firstmoment/Jensen/optimizer identification. Zero covariance conventionremainsseparate.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        297,
+        311
+      ],
+      "old_proof_lf": [
+        313,
+        364
+      ],
+      "old_statement_sha256": "f4e963e2ad0cc9107cab9121f0f5f2a71292109746fe8387de6230ed9851f4cb",
+      "old_proof_sha256": "cedd5875fca1570d0cfa6372f8b1fc78268a2f0c0166fdcc070bb8fca0e398d7",
+      "new_statement_lf": [
+        370,
+        384
+      ],
+      "new_proof_lf": [
+        386,
+        462
+      ],
+      "new_statement_sha256": "f4e963e2ad0cc9107cab9121f0f5f2a71292109746fe8387de6230ed9851f4cb",
+      "new_proof_sha256": "2b93ccc4b3f08cd7050bb187f7ed4dbccd43bed4cef444b98600a560a762d609"
+    }
+  ],
+  "mathematical_checks": [
+    "The public proof derives polynomial mass growth from positive tempered distributions using dilated compact cutoffs, then dyadic integrability forL>N forbothGamma andmu. Translated Gaussian derivative majorants give locallysmooth finite physical convolution. PairingoneSchwartztest and absoluteFubini plus the ORDINARY normalized heat characteristic integral gives the exact spectraldistribution with no extraunitaryfactor. Continuity upgradesdistribution equality toallx; physicalnonnegativity, even spectral reality andtriangle bound give0<=Gamma*p(x)<=Gamma*p(0), strictlypositive fornonzero covariance. The new summability explanation is reconstructed under measure hypotheses without density.",
+    "The report zeroextends thecompactinteriortimecontrol smoothly, dominates every mixed derivative by a fixed Gaussian using its positive minimum onthe common support, and applies the reconstructed heat envelope forglobal convolutionderivative bounds. Afterr=s-u, alltime/spatial derivatives fall onPsi(s-r) under locallyintegrable|r|^-a and a bounded r interval forcompactstime. This givesglobalspace bounds/localtime bounds and theexactLipschitz estimate onI, with no directionaldecay or globalstrictpositivity. Its comment thatsource r=s-t is a cosmetic error is unnecessary dummy-variable precision(R2), not a source defect.",
+    "The report explicitly reconstructs bounded perturbation onH2 via closed/symmetricgraphnorm equivalence and both Neumann resolvents atb>M; the adjoint-kernel/surjectivity calculation proves selfadjointness. ShiftJ=H+1+M and integrationbyparts yield exactequivalentH1 form bounds onH2. Unlike a mere asserted formdomain, publicStep2 supplies the half-power spectralcutoffcore, FourierH1density andcompletion identification, soD(J1/2)=H1 is actually reconstructed. Spectral projections at thefinitebottom give unitH2 approximateRayleightests without an eigenstate, while bothrealcomponents and additiveforms/norms yieldthe normweighted realquotient reduction. The fixedcompacttrial has unmaskedform<=maskedform, uniformlynegativebottom andsqrt epsilon floor. Sameunittests andfactoredsquare roots give the exactC_Psi/(2sqrt epsilon) rate Lipschitz bound, withcontrol-dependentconstants/no universalgap.",
+    "The report constructs theflat monotone radialmasks with positive denominator andsmoothness atorigin, then applies the fixedcompactfamily theorem above a commontrialplateau. The unitH1integrablemajorantMf^2 and dominated/monotone convergence justify interchangingONLY two numerical suprema, obtainingmaskedrates increasing to theunmaskedRayleighrate. The compactparameter increasingopenset/Dini argument provesuniformtimeparameter convergence, thenmonotonicityextendsallrealradius. EachfixedR lowerbound concerns thesameoriginalpointliminf andoriginalvariance; taking theirnumericalsupremum givesunmaskedlowerbound. It explicitly disclaimsR(T), unmaskedrandomflow, uniformmaskGaussian estimates andsource/radius/timeexchange.",
+    "The public fullcontrolclass inverseD_(1/r) is explicit, withtimeunchanged andnorestriction toseparablecontrols. HomogeneousRadon pushforwardr^(alpha-d) givesmeanr^2, whiletheSEPARATE LebesgueJacobianr^-d givesoriginalcostr^(4-alpha). RealunitaryRayleightest bijectionU_r haskineticr^2 andpotentialr^2, givingpositiverater andintegratedrater; the operatoridentity is supplementary, not assumedtoobtain therate. It preserves singular/whitecovariances and correctmasktransformationm_R(rx)=m_(R/r)(x). No originalcovarianceamplitude ischanged.",
+    "The report derives a strictlypositive coefficient-one value for the DILATEDtest usingr0^k=I0/v0 andq=k+1, yieldingr0I0/2. Wholeclassbijectionat r_c=c^(1/k) givescr_c=r_c^q=K_c andtheexactscoreSETscaling. Independentcanonicalpointupperbound andthelogprefactor estimate boundtheoriginalpointlimsup; everycoefficient-two score is<=samefiniteupperconstant bytheprevious target. Thuscoefficient-one set isboundedbeforetakingfinite-realsuprema; a finite lowerpointbound isalreadyavailable foranyfixedtest. A redundant publicStep3 claim2I0-v0/2>=I0 for thearbitrary ORIGINALtest isFALSE(R1); it isnotneeded forboundedness andmustnotbeendorsed. CorrectStep1 independentlysuppliespositivity afterdilation, andthefiniteoriginalbound/publicsetscaling route iscomplete. PositiveK_c supremum scaling givesS_c=c^m S1 andQ2>=S2, without firstmoment/Jensen/optimizer identification. Zero covariance conventionremainsseparate."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "proof_id": "P:variational-positive-scores",
+      "classification": "false report-only positivity inequality for an arbitrary undilated control",
+      "old": "for the fixed originalPsi0,2I0-v0/2>=I0>0",
+      "new": "anyfixedcontrol supplies a finite lowerbound2I0-v0/2; the specifically DILATEDtestPsi*=D_r0 Psi0 fromStep1 hasI*=r0I0,v*=r0I0 andtherefore2I*-v*/2=(3/2)r0I0>0",
+      "contrary_calculation": "Using the report owncorrectdilation, takeanycontrolwithI,v>0 and r^k>4I/v. ForPsi0=D_r Psi,2I0-v0/2=2rI-r^(k+1)v/2<0, contradicting theclaimed>=I0>0. Noassumptionv0<=2I0 exists.",
+      "disposition": "Raw report unchanged. Source correctly requires onlyaFINITE lowerboundforQ2 andindependently proves positivity ofa dilatedscore. The publicStep1, correctdilation/setscaling andupperbound fullygive the neededfinitepositive suprema withoutthis false redundantparenthetical; no sourceedit ormissingcriticaldeduction.",
+      "report_lf": 166
+    },
+    {
+      "id": "R2",
+      "proof_id": "L:variational-global-mean",
+      "classification": "unnecessary report precision criticism of a dummy variable",
+      "disposition": "The source may rename its timeintegrationvariablet oru before settingr=s-t/r=s-u. The displayedPsi(s-r) formula iscorrect; thisisnot an actualmathematicalsource typo and no editisrequired.",
+      "report_lf": 46
+    },
+    {
+      "id": "R3",
+      "proof_id": "P:variational-unmasked-rate",
+      "classification": "report-only placeholder in explanatory parenthesis",
+      "old": "usingc=1+M>=M+?",
+      "new": "usingc-M=1",
+      "disposition": "The same publicdisplay explicitly computes the lowerH1norm via c=1+M andh<=M, sothis placeholderdoesnot removeaformbound oraffect thefullyreconstructed completionargument. Rawtextunchanged.",
+      "report_lf": 66
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 22920,
+      "sha256": "87bc8068ce4dcad9c164a47f30546e4a44ffee2424122bf229db4aa9733036b7"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 6938,
+      "sha256": "5b0b18c70ac6297d44a3fce4a75abf4c4246cfc1660995d00c909f7207647076"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 8915,
+      "sha256": "9a57eaa4dfd5e09e990f95c44fa59902d18a6f52b7aac1f6722d44f4258cac00"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 6308,
+      "sha256": "d8f296bc882c185143b892e0e3028957dee9b67d4f63fab03170835eadb6820a"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 11548,
+      "sha256": "b01c6bc7a6f3fa7265c454381c0ef2e43fcc538fab8246516517dbcfc847b751"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 6383,
+      "sha256": "75b85e124b5b62df8fa7e535d3a7c382268e528c4d3854ebf7a6e39efa22d385"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 18753,
+      "sha256": "1495453c13dba9ba7a684a81c7fb06ea2a5b3f863ddc9291d0510755fba19b7d"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 22518,
+      "sha256": "220a25783bd6f0716de0ff29bf9ead5d562c0c4c99fb35c50374743ea7860e4f"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-time-exponent.txt",
+      "bytes": 146,
+      "sha256": "20a346a04cf55f6a0ede90efa7a7ba4e69391b63e3e8cb8676dc7d34488b0a53"
+    },
+    {
+      "path": "inputs/context-canonical-expansion.txt",
+      "bytes": 1809,
+      "sha256": "a3396147171376641e48fcc8d3b6a9a8dcbbe483a3406b49a30cb43606a06be0"
+    },
+    {
+      "path": "inputs/context-original-upper-declaration.txt",
+      "bytes": 665,
+      "sha256": "a82df2e677c067ba94463a2f89cf16c0c052760b86dc18cfeb125a707df4d2ff"
+    },
+    {
+      "path": "inputs/context-jensen-declaration.txt",
+      "bytes": 563,
+      "sha256": "7ff6f3d74808be883a637bb0801d27d9756cbf26bcd01339153395a44193ba7a"
+    },
+    {
+      "path": "inputs/context-compact-family-baseline.txt",
+      "bytes": 25917,
+      "sha256": "39946946cc52bee56eb5ec2ab44111a2e8873df9b17ef65d322c0b42066325ca"
+    },
+    {
+      "path": "inputs/context-raw-block-lower-baseline.txt",
+      "bytes": 35928,
+      "sha256": "ed2f85038ef6136eb8581fa64cab4962cde40bdbdba9ff163dd832c4fa5ad992"
+    },
+    {
+      "path": "inputs/context-constant-young-baseline.txt",
+      "bytes": 27376,
+      "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+    },
+    {
+      "path": "inputs/context-covariance-foundation-baseline.txt",
+      "bytes": 21173,
+      "sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020"
+    }
+  ],
+  "input_identity_checks": "All delivered source/context payload hashes and WHOLE_FILE pinned Git byte identities verified; every complete OLD/NEW statement/proof independently checked by LF/bytes/SHA. Complete target text read with baseline comparisons and genuine needed stated inputs, not merely delta QA.",
+  "source_currentness": {
+    "covered_launch_revision": "234cf2cfcb87b0e0aadd7e1caa8ad5ff8c37ffcb",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "limit": "Only this exact assigned source versuscdde and supplied context; no older report rebinding, unexamined successor or whole-book seal."
+  },
+  "read_limits": [
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority"
+}

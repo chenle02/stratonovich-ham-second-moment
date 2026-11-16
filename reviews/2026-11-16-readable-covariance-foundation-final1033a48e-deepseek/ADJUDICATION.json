@@ -1,0 +1,498 @@
+{
+  "review_record_id": "RP044",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS_WITH_NOTES",
+  "native_confidence": "high",
+  "source_revision": "1033a48e408d7da2e59c7ba01716c1c8ab27359a",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_covariance_foundation.tex",
+  "source_binding_sha256": "d15d4a3dfadd09567c37d31309ecfe5a7f9ac579772febd4173853445970a383",
+  "public_report_sha256": "a0e6a5f56a4bbae0ef2825f140efd796a179fbfe09effd1bd837c9ce0aa87042",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_ALL_ASSIGNED_PUBLIC_RECONSTRUCTIONS_CHECKED_ROOT_REVIEWS",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "P:masked-spectral-growth": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    },
+    "P:masked-auxiliary-norm": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:masked-time-completion": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:masked-noise-completion": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R2"
+      ]
+    },
+    "P:masked-quotient-obstruction": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R3"
+      ]
+    },
+    "L:masked-temporal-modulation": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:masked-trig-products": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:masked-continuous-wave": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "P:masked-spectral-growth",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 15,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "c805e00a9f39a0a4f0a371872bfccd1c8ad472847d81f55b55981e1fa0802c95",
+      "mathematical_check": "The public working derives J(0), the Gaussian Fourier ODE Jprime=-bJ/(2A), its product normalization, the single Schwartz distribution pairing, homogeneous pushforward r^(alpha-d), prefactor r^d and the open/closed-ball e^-1 comparison. Temperedness/nonzero measure give finite positive M_Gamma, and constants are exact. Original-step5 incorrectly overstates the absolute-value step as equality (R1); only the triangle upper bound is needed for the correctly stated and computed Gaussian bound. This is an elementary local inequality slip, explicitly retained as such, not an omitted nontrivial input or source defect.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        37,
+        55
+      ],
+      "old_proof_lf": [
+        57,
+        80
+      ],
+      "old_statement_sha256": "72fce9f397d2661b157971810304b1c0b6ce913a92e884a61794014ab17ee5d4",
+      "old_proof_sha256": "4b7956e8cc3ae3d436a8dc0487f4829e8f3aafcc2ff1f4a5f92d3b2d00897adf",
+      "new_statement_lf": [
+        37,
+        55
+      ],
+      "new_proof_lf": [
+        57,
+        94
+      ],
+      "new_statement_sha256": "72fce9f397d2661b157971810304b1c0b6ce913a92e884a61794014ab17ee5d4",
+      "new_proof_sha256": "f2af8cf43ebcfe45cef46fecd85169512b421280f1659580f9896457f59bb1e3"
+    },
+    {
+      "proof_id": "P:masked-auxiliary-norm",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 53,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "1803d1deb1979c32538ee1aa14c6b39ed027f35d0430d0195a60681e11df896e",
+      "mathematical_check": "The report checks fixed-R compact-eta Schwartz majorants, continuous finite density, real-mask/even-mu symmetry, Tonelli ball formula with the precise shift y+u and c_d^2 L^2 C_Gamma, and temperedness. It reconstructs the unitary c_d product formula, finite-rank then separable-Hilbert projection approximation with contraction majorants, weighted CS with massL and final Tonelli. The real-H complexification and zero/finite dimensions are covered. Fixed-R density continuity is not falsely made uniform inR; only translated ball growth is uniform.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        92,
+        104
+      ],
+      "old_proof_lf": [
+        106,
+        141
+      ],
+      "old_statement_sha256": "013ee7130d979bbb3f5ed38df19a256eec80d2dabbb43a6a9074826a975dd7ef",
+      "old_proof_sha256": "a6ed7497adf487abbe7e15884ae1573ff551344e637cc01323c5a9e0d0b993d0",
+      "new_statement_lf": [
+        106,
+        118
+      ],
+      "new_proof_lf": [
+        120,
+        180
+      ],
+      "new_statement_sha256": "013ee7130d979bbb3f5ed38df19a256eec80d2dabbb43a6a9074826a975dd7ef",
+      "new_proof_sha256": "8b1ec8056bd69fa8ff38c80654fa8c71b37c8698c00cfb41402a447b939a06a7"
+    },
+    {
+      "proof_id": "L:masked-time-completion",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 103,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "5642a67ae56eee7d20851fb9d1f78a1be086f108bfe907685f126d26da6bc24e",
+      "mathematical_check": "The positive Laplace mixture and its2lambda square representation are explicitly stated and the resulting square forms establish positivity. Kernel row and column integrals give2T^(1-a)/(1-a); ordinary2|xy| and symmetry produce Schur. Countable L2 test density gives separability of the test-null completion. The real/imaginary cross cancellation and absolute bilinear continuity extend the exact integral norm toL2 and bounded interval amplitudes. Both0<a<1 integrability and null-quotient semantics are preserved.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        149,
+        165
+      ],
+      "old_proof_lf": [
+        167,
+        190
+      ],
+      "old_statement_sha256": "70a3ec6064c77e251d441be2b565ca57d393a9df2a1583d3ac420b98bee5adfa",
+      "old_proof_sha256": "318cee828552cba6592d1dc5901e1a5f1058732c357caa7fb693078c01a70fc5",
+      "new_statement_lf": [
+        188,
+        204
+      ],
+      "new_proof_lf": [
+        206,
+        241
+      ],
+      "new_statement_sha256": "70a3ec6064c77e251d441be2b565ca57d393a9df2a1583d3ac420b98bee5adfa",
+      "new_proof_sha256": "4d93e2ef03474f1651ee922fda30218c063fe9355a2e89077afda87ddcc3bd13"
+    },
+    {
+      "proof_id": "P:masked-noise-completion",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED, with one wording note"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 141,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "1bf8f9617812b4ed2be0f89c66f9c05a0f8cc5fcdd9e4abd9e91bf64832e980f",
+      "mathematical_check": "The report reconstructs correlation h and its inverse-Fourier product, positive-sign transform reflection and(2pi)^d factor, temporal cross-term sum and smooth cutoff admission on the same original noise. The delta kernel in step2 is interpreted as a distribution identity applied to the Schwartz product, not an ordinary convergent integral or infinite-measure oscillatory Fubini (R2). The masked contraction annihilates auxiliary null tests, extends uniquely through original L2 evaluations and yields jointly centered Gaussian limits by characteristic functions. Finite covariance matrix order, independent Gaussian difference coupling and conditional Jensen forp>=1 are derived. No original-quotient multiplier or nonlinear solution comparison is inferred. The reviewer wording note about applying inversion again is at most presentational, not an actual missing normalization or derivation.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        198,
+        216
+      ],
+      "old_proof_lf": [
+        218,
+        257
+      ],
+      "old_statement_sha256": "c2c6d25e4d3b96f707d861b8cc2e9825c0db35a5741c4ffd4be1024ade4783f0",
+      "old_proof_sha256": "6caacd4261607e68251659184aec5adaf8741513f2b11e2626a775231cc41eb8",
+      "new_statement_lf": [
+        249,
+        267
+      ],
+      "new_proof_lf": [
+        269,
+        328
+      ],
+      "new_statement_sha256": "c2c6d25e4d3b96f707d861b8cc2e9825c0db35a5741c4ffd4be1024ade4783f0",
+      "new_proof_sha256": "f4abeb09d59f2dda7bf73878ed2c7384a7a4ccc82979a5980c88f35987e5a456"
+    },
+    {
+      "proof_id": "P:masked-quotient-obstruction",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 190,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "232c1d8670f2c3384f9e2beca12fee7c8f17b4f2c5437c096e4432696265c435",
+      "mathematical_check": "The public witness identifies the correct singular admissible covariance in d2,alpha1,a<1, and the correct spectral measure(2pi)^-1 dxi1 delta0(dxi2). Its transform phrase uses ordinary Fourier normalization implicitly (R3); direct distribution pairing verifies the stated measure. The marginal-square formula, compact smooth plateau, I_chi>0,J_chi>=2, unmasked chi-second-derivative marginal0 and masked marginal -I_chi chi(x1)^2 give J_chi I_chi^2>0. Nonzero nonnegative temporal test has finite strictly positive covariance, so finiteC comparison is impossible. It is not2D spatial white noise and no source/noise generalization is made.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        268,
+        274
+      ],
+      "old_proof_lf": [
+        276,
+        303
+      ],
+      "old_statement_sha256": "2121c9c33c30a4856ab4ea3aedeba19a292587e9843c20c1437dfc765f52a69c",
+      "old_proof_sha256": "81d73b6d3ea2297d993049ed17779aa49b228d8da398c13b4112ab9c2077629f",
+      "new_statement_lf": [
+        339,
+        345
+      ],
+      "new_proof_lf": [
+        347,
+        382
+      ],
+      "new_statement_sha256": "2121c9c33c30a4856ab4ea3aedeba19a292587e9843c20c1437dfc765f52a69c",
+      "new_proof_sha256": "707898715335c58a3b150b84cd3e4f68bd2b05c8dd241a56dcbb65e29be63a44"
+    },
+    {
+      "proof_id": "L:masked-temporal-modulation",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 228,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "9d3657934a456a7ac2e6cae77273aa4f7181216e20aeedf5e10b9bddfcfad9a4",
+      "mathematical_check": "The public proof computes the moving-endpoint derivative with the correct conjugation, c(h)=0, hM^2 and M^2+hMD. The two conjugate covariance triangles and v=hy produce2h^(2-a) and f=c(hy)/h, with fprime=cprime(hy). Low-frequency bracket andC0=16/(1-a) are checked. High-frequency split at1/k, vanishing endpoint1, other endpoint, both derivative integrals and k^-1<=k^(a-1) give4K^2k^(a-1)/(1-a). Bracket comparison k^(a-1)<=sqrt2<k>^(a-1) and8sqrt2<=16 preserve both signs ofomega. K0 and all interval-uniform constants are respected.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        317,
+        326
+      ],
+      "old_proof_lf": [
+        328,
+        362
+      ],
+      "old_statement_sha256": "d67f99998e1b9893cab5c29e1da110ae6791af3869d5fc9a0b00e83c25858a96",
+      "old_proof_sha256": "ab273e4370a88a1ec666abc4565549f1ddcde70321124391d867f2afc7c5db18",
+      "new_statement_lf": [
+        396,
+        405
+      ],
+      "new_proof_lf": [
+        407,
+        452
+      ],
+      "new_statement_sha256": "d67f99998e1b9893cab5c29e1da110ae6791af3869d5fc9a0b00e83c25858a96",
+      "new_proof_sha256": "d14a1ea6b80149bc235e61f953cc4d0ce0d2290270fbe14de152d0d0367f3c76"
+    },
+    {
+      "proof_id": "L:masked-trig-products",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 273,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "955826ad7cc5fdbb55c85780836af25894244e01b91b9fc305685197ab41f77a",
+      "mathematical_check": "The four exponential modes have absolute coefficients1/4 even at repeated/zero frequencies. The report derives the Hilbert weighted-sum estimate from triangle and scalar CS, so it requires no mode orthogonality. Applying the reconstructed modulation bound to the two |r-rho| and two r+rho modes gives one-half of the asserted bound, safely weaker final bound with sameC0. The added explanatory inequality is correct.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        369,
+        382
+      ],
+      "old_proof_lf": [
+        384,
+        398
+      ],
+      "old_statement_sha256": "45c14ebb9db29f5385e67fffc99c511b35d3f48cef7d82563f43741abd8c36b4",
+      "old_proof_sha256": "c43e7c80b017b4eb489e89f09e628ea74dc1ff8b8e256dafaddb3ac138c0cbc5",
+      "new_statement_lf": [
+        459,
+        472
+      ],
+      "new_proof_lf": [
+        474,
+        491
+      ],
+      "new_statement_sha256": "45c14ebb9db29f5385e67fffc99c511b35d3f48cef7d82563f43741abd8c36b4",
+      "new_proof_sha256": "0f18062145903e2ddd0cb1fbbd2c6751d63d16cccd751a6e6c2ce790af15cb62"
+    },
+    {
+      "proof_id": "L:masked-continuous-wave",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 303,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "9bd0a5e1b955ea46a828dd8a83fc62384222028ad2992a4022d99debe4fc7679",
+      "mathematical_check": "The report reconstructs high-frequency sine coefficient<=sqrt2, low-frequency FTC identity t<r> integral cos(vrt) includingr0 and both low-frequency <r><=sqrt2 factors. Thus coefficient<=2, j0/1/2, up to2 normalized averages and frequency shifts<=1 are valid. Parameter L2 continuity and Schur imply Bochner H_a averages; inclusion identifies pointwise averages and Hilbert Jensen. Polynomial amplitude bounds1,T+1,T^2+2T give(1+T)^4. The two-sided bracket comparison, shifts<=2 and negative exponent a-1 give3^(1-a), and coefficient-squared4 yields exactC1. New roadmap/explanations are justified.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        401,
+        413
+      ],
+      "old_proof_lf": [
+        415,
+        446
+      ],
+      "old_statement_sha256": "4d0b29b08ccd2f2c641d583bf9feadb82f4eda476947d762dea7b32a3b630665",
+      "old_proof_sha256": "d7717f0143e881b4d26bb21a903e5b35cf11a5286e0eddec7a858d442fce37f2",
+      "new_statement_lf": [
+        494,
+        506
+      ],
+      "new_proof_lf": [
+        508,
+        558
+      ],
+      "new_statement_sha256": "4d0b29b08ccd2f2c641d583bf9feadb82f4eda476947d762dea7b32a3b630665",
+      "new_proof_sha256": "190c18d00dead28b32d09d67a94588cd86db8a64015d9395d7bbad45d1e24e51"
+    }
+  ],
+  "mathematical_checks": [
+    "The public working derives J(0), the Gaussian Fourier ODE Jprime=-bJ/(2A), its product normalization, the single Schwartz distribution pairing, homogeneous pushforward r^(alpha-d), prefactor r^d and the open/closed-ball e^-1 comparison. Temperedness/nonzero measure give finite positive M_Gamma, and constants are exact. Original-step5 incorrectly overstates the absolute-value step as equality (R1); only the triangle upper bound is needed for the correctly stated and computed Gaussian bound. This is an elementary local inequality slip, explicitly retained as such, not an omitted nontrivial input or source defect.",
+    "The report checks fixed-R compact-eta Schwartz majorants, continuous finite density, real-mask/even-mu symmetry, Tonelli ball formula with the precise shift y+u and c_d^2 L^2 C_Gamma, and temperedness. It reconstructs the unitary c_d product formula, finite-rank then separable-Hilbert projection approximation with contraction majorants, weighted CS with massL and final Tonelli. The real-H complexification and zero/finite dimensions are covered. Fixed-R density continuity is not falsely made uniform inR; only translated ball growth is uniform.",
+    "The positive Laplace mixture and its2lambda square representation are explicitly stated and the resulting square forms establish positivity. Kernel row and column integrals give2T^(1-a)/(1-a); ordinary2|xy| and symmetry produce Schur. Countable L2 test density gives separability of the test-null completion. The real/imaginary cross cancellation and absolute bilinear continuity extend the exact integral norm toL2 and bounded interval amplitudes. Both0<a<1 integrability and null-quotient semantics are preserved.",
+    "The report reconstructs correlation h and its inverse-Fourier product, positive-sign transform reflection and(2pi)^d factor, temporal cross-term sum and smooth cutoff admission on the same original noise. The delta kernel in step2 is interpreted as a distribution identity applied to the Schwartz product, not an ordinary convergent integral or infinite-measure oscillatory Fubini (R2). The masked contraction annihilates auxiliary null tests, extends uniquely through original L2 evaluations and yields jointly centered Gaussian limits by characteristic functions. Finite covariance matrix order, independent Gaussian difference coupling and conditional Jensen forp>=1 are derived. No original-quotient multiplier or nonlinear solution comparison is inferred. The reviewer wording note about applying inversion again is at most presentational, not an actual missing normalization or derivation.",
+    "The public witness identifies the correct singular admissible covariance in d2,alpha1,a<1, and the correct spectral measure(2pi)^-1 dxi1 delta0(dxi2). Its transform phrase uses ordinary Fourier normalization implicitly (R3); direct distribution pairing verifies the stated measure. The marginal-square formula, compact smooth plateau, I_chi>0,J_chi>=2, unmasked chi-second-derivative marginal0 and masked marginal -I_chi chi(x1)^2 give J_chi I_chi^2>0. Nonzero nonnegative temporal test has finite strictly positive covariance, so finiteC comparison is impossible. It is not2D spatial white noise and no source/noise generalization is made.",
+    "The public proof computes the moving-endpoint derivative with the correct conjugation, c(h)=0, hM^2 and M^2+hMD. The two conjugate covariance triangles and v=hy produce2h^(2-a) and f=c(hy)/h, with fprime=cprime(hy). Low-frequency bracket andC0=16/(1-a) are checked. High-frequency split at1/k, vanishing endpoint1, other endpoint, both derivative integrals and k^-1<=k^(a-1) give4K^2k^(a-1)/(1-a). Bracket comparison k^(a-1)<=sqrt2<k>^(a-1) and8sqrt2<=16 preserve both signs ofomega. K0 and all interval-uniform constants are respected.",
+    "The four exponential modes have absolute coefficients1/4 even at repeated/zero frequencies. The report derives the Hilbert weighted-sum estimate from triangle and scalar CS, so it requires no mode orthogonality. Applying the reconstructed modulation bound to the two |r-rho| and two r+rho modes gives one-half of the asserted bound, safely weaker final bound with sameC0. The added explanatory inequality is correct.",
+    "The report reconstructs high-frequency sine coefficient<=sqrt2, low-frequency FTC identity t<r> integral cos(vrt) includingr0 and both low-frequency <r><=sqrt2 factors. Thus coefficient<=2, j0/1/2, up to2 normalized averages and frequency shifts<=1 are valid. Parameter L2 continuity and Schur imply Bochner H_a averages; inclusion identifies pointwise averages and Hilbert Jensen. Polynomial amplitude bounds1,T+1,T^2+2T give(1+T)^4. The two-sided bracket comparison, shifts<=2 and negative exponent a-1 give3^(1-a), and coefficient-squared4 yields exactC1. New roadmap/explanations are justified."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "proof_id": "P:masked-spectral-growth",
+      "classification": "report-only absolute-phase equality overstatement; source bound is correct",
+      "old": "the absolute value of the right side equals the integral of the absolute Gaussian",
+      "new": "the absolute value of the right side is at most the integral of the absolute Gaussian",
+      "contrary_calculation": "Admissible d2,alpha1,Gamma=delta0(dx1)dx2, r1,y=(0,1): |integral exp(-|x|^2/4)exp(-iy.x)Gamma(dx)|=2sqrt(pi)exp(-1), whereas integral exp(-|x|^2/4)Gamma(dx)=2sqrt(pi).",
+      "disposition": "Raw report unchanged. The triangle inequality supplies precisely the correctly computed upper bound; the report reconstructs its scaling/prefactor/ball argument. A false equality is not adopted as a source fact. No manuscript change or critical missing public core is identified.",
+      "report_lf": 32
+    },
+    {
+      "id": "R2",
+      "proof_id": "P:masked-noise-completion",
+      "classification": "distributional Fourier-kernel interpretation",
+      "disposition": "The delta formula is a tempered-distribution identity on the explicitly Schwartz product; it is not an ordinary scalar integral. Under this stated input its normalization is correct. The report uses a single Schwartz h in the spectral convention; no prohibited oscillatory Fubini is necessary. The reviewer note about inversion wording does not identify a source defect.",
+      "report_lf": 152
+    },
+    {
+      "id": "R3",
+      "proof_id": "P:masked-quotient-obstruction",
+      "classification": "report-only unspecified ordinary versus unitary Fourier transform wording",
+      "old": "the Fourier transform of delta0(dx1)dx2 is(2pi)delta0(dxi2)",
+      "new": "its ordinary unnormalized transform is(2pi)delta0(dxi2); its d2 unitary transform is delta0(dxi2)",
+      "disposition": "The final spectral measure(2pi)^-1 dxi1 delta0(dxi2) is correct in Gamma=integral exp(i xi.x)mu. Direct pairing/inversion verifies it. No source correction or change of the counterexample is required.",
+      "report_lf": 198
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 19018,
+      "sha256": "a0e6a5f56a4bbae0ef2825f140efd796a179fbfe09effd1bd837c9ce0aa87042"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 5663,
+      "sha256": "11f807f5088e3a64b80860e02aa89b22cf39425d4fc2ba245557eea2ef5cfa6b"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 11525,
+      "sha256": "4056f2af33f0813e26473f845120fcfe49d5b49756a4472fbee566cf41665648"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 2068,
+      "sha256": "d15d4a3dfadd09567c37d31309ecfe5a7f9ac579772febd4173853445970a383"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 5482,
+      "sha256": "b610d1ae8b41197067edb1503349059cd530350fc1139c2e8a16aee9aff53102"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 3132,
+      "sha256": "1a4ccabbd3ddaa71e32e3e27b4f489379e147da493fb02433c58eeeb3ec058c7"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 21173,
+      "sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 26441,
+      "sha256": "f1a11d5b23ffae6ca37d43eee40892a834dca470496ed14d1e7b78bf44fd1dc7"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    }
+  ],
+  "input_identity_checks": "All delivered source/context payload hashes and WHOLE_FILE pinned Git byte identities verified; every complete OLD/NEW statement/proof independently checked by LF/bytes/SHA. Complete target text read with baseline comparisons and genuine needed stated inputs, not merely delta QA.",
+  "source_currentness": {
+    "covered_launch_revision": "1033a48e408d7da2e59c7ba01716c1c8ab27359a",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "limit": "Only this exact assigned source versuscdde and supplied context; no older report rebinding, unexamined successor or whole-book seal."
+  },
+  "read_limits": [
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority"
+}

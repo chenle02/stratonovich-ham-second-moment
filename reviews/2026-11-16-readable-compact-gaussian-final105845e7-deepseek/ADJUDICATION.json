@@ -1,0 +1,599 @@
+{
+  "review_record_id": "RP046",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "105845e78f20520367e0d1c9ce22070615661f21",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_compact_gaussian.tex",
+  "source_binding_sha256": "498d1a3e44582713653f90409bc163c38e1e8fea24e0123009e98f7fbfc4faab",
+  "public_report_sha256": "8f45fa62dba587afc3f4f84133940069acaaae3f146f66e757c3c8c103a3613e",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_ALL_ASSIGNED_PUBLIC_RECONSTRUCTIONS_CHECKED_ROOT_REVIEWS",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:gaussian-scalar-powers": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:gaussian-trace-bounds": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    },
+    "P:finite-gaussian-matrix": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:cutoff-factorization": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:cutoff-singular-values": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:compact-two-envelopes": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:compact-positive-order": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R2"
+      ]
+    },
+    "P:localized-finite-variance": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "C:finite-gaussian-operators": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:cutoff-boundary-tests": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:gaussian-scalar-powers",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED. The added “Step 1/2/3” and the derivative-sign discussion are faithful."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 11,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "27d7eb2e372462833960d5c22af3aa22b4f87f4bfdff199ddda6dde6ab56411a",
+      "mathematical_check": "The report derives the weighted scalar inequality by the derivative sign aroundt1, with v0,t0 handled; substitution gives integer powers and the ordinary0th-power convention. Normalized finite sequences andtheta1/m yield Holder, including zero norms. The normalized nonnegative variable Z/F gives expectation bound with finiteF and separateF0 case. All exponent/endpoint hypotheses and new derivative explanations are preserved.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        14,
+        28
+      ],
+      "old_proof_lf": [
+        30,
+        46
+      ],
+      "old_statement_sha256": "976c8983489a1d3ba323b472d2bb3a041d307a03b0294246f616893c903aa1f8",
+      "old_proof_sha256": "1af8d0eba5bb2b56b7bd8d8cca6aa3888966478540e8289132d4fd967f68d813",
+      "new_statement_lf": [
+        14,
+        28
+      ],
+      "new_proof_lf": [
+        30,
+        65
+      ],
+      "new_statement_sha256": "976c8983489a1d3ba323b472d2bb3a041d307a03b0294246f616893c903aa1f8",
+      "new_proof_sha256": "a709a7fb6e120a1fd66cb305ed877cce954448acec89c6e11d14be752f79b348"
+    },
+    {
+      "proof_id": "L:gaussian-trace-bounds",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED. All added glosses (index accounting, convexity averaging, Hölder factor matching) are correct."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 28,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "943fa4da49f64b5e87d694417b125d3a86282f32ad299dce3f14bb121f3d0308",
+      "mathematical_check": "The eigenbasis expansion gives real sums |b_ij|^2 lambda_j^q lambda_i^(L-q), without commuting B,Y. Absolute powers plus the scalar inequality, Hermitian index symmetry and weights summing1 give Tr(B^2|Y|^L). Nonnegative D diagonal entries are convex combinations of its eigenvalues; tangent-line convexity and row/column sums bound sum d_i^m byTr D^m. Holder with(2m-2)m/(m-1)=2m gives the second trace bound. The heading Diagonal ofB actually discusses D (R1), but the equations and argument are correct.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        49,
+        62
+      ],
+      "old_proof_lf": [
+        64,
+        92
+      ],
+      "old_statement_sha256": "5060558860a9a34bd6b73cdc5dc41bafbfe0785a776861db908170458a3ed850",
+      "old_proof_sha256": "42e4cd761daea60c756f5390c28e077e5c2baa2c94bb3cd1e73d3ecd55ba5148",
+      "new_statement_lf": [
+        68,
+        81
+      ],
+      "new_proof_lf": [
+        83,
+        129
+      ],
+      "new_statement_sha256": "5060558860a9a34bd6b73cdc5dc41bafbfe0785a776861db908170458a3ed850",
+      "new_proof_sha256": "7e3476c4ec9c7ef36c021cae7936e321bde236ddd0450593c802ac15720ec415"
+    },
+    {
+      "proof_id": "P:finite-gaussian-matrix",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED. The added explanations of the differentiated-factor count, `D≥0`, `r∈(0,1)`, and the dilation block structure are all correct."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 47,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "5e75b548c2442a43b1748fb14655b269d7819898634358535eeb4ad0b0ad3109",
+      "mathematical_check": "Public Gaussian IBP checks density derivative sign, polynomial decay/boundaries and complex polynomial components; product rule explicitly keeps ordered matrix words with2m-1 positions. The reconstructed two trace bounds and scalar expectation estimate give F<= (2m-1)(TrD^m)^(1/m)F^((m-1)/m), hence the moment bound, with F0 immediate andm1 independence equality. Hermitian complex rectangular dilation gives the exact two variance blocks and TrY^(2m)=2Tr(X*X)^m by compatible rectangular cyclicity. Dividing2 gives the average andsqrt(p-1), with maximum form andp2 equality. No assumed matrix commutation or dimension factor enters.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        101,
+        121
+      ],
+      "old_proof_lf": [
+        123,
+        180
+      ],
+      "old_statement_sha256": "7a4657ef6ac145e2118e4362cc8a9d3e1ea19f0768597bb3c80b7f885584a96c",
+      "old_proof_sha256": "7aaff9dda7a4486fd294a91b7b7f0b3f8e2c06f29bdd671ea3114610d713f1e3",
+      "new_statement_lf": [
+        138,
+        158
+      ],
+      "new_proof_lf": [
+        160,
+        249
+      ],
+      "new_statement_sha256": "7a4657ef6ac145e2118e4362cc8a9d3e1ea19f0768597bb3c80b7f885584a96c",
+      "new_proof_sha256": "299622b64eed971553eb4af31aae7d61f57a6967a1dbbb59f6c18845ede20999"
+    },
+    {
+      "proof_id": "L:cutoff-factorization",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED. The expanded five-step organization and the coefficient/alias bookkeeping are correct."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 67,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "17f786be7570c641745b19d4dd727876dc81b83f005595c903275455c4035ece",
+      "mathematical_check": "The public proof derives signed Peetre for every realr, Fourier decay and shift-uniform lattice sum with spacing-dependent constants, including finite central terms and dyadic exponent d-N<0. Mixed counting/Lebesgue Schur is derived by CS/Tonelli. Both exact weighted kernels are computed with L^-d/2 and no residualc_d; their L1 and lattice Schur quantities are bounded. Density of weighted Fourier smooth tests and finite sequences gives unique extensions, whose periodic coefficients are compact smooth distribution pairings, not rough Fourier point sampling. The recovery passage explicitly applies E_chi to polynomial partial sums, follows their Hsigma limit via boundedness, and compares smooth-on-support distributional limit chi psi u=chi u. Both maps plus inclusion/multiplier boundedness extend from dense Schwartz to full H^(sigma+gamma). These assigned extension/identification steps are publicly reconstructed rather than consumed as target conclusions.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        214,
+        236
+      ],
+      "old_proof_lf": [
+        238,
+        311
+      ],
+      "old_statement_sha256": "9d6415e5f8b54173b5cabb932c450a80b8dff7540fb96d3ab857a4b2f1eac3a5",
+      "old_proof_sha256": "a8eb9c87fd534147da8d3387bf88a4044671ac635547af179ead8d39e81ae813",
+      "new_statement_lf": [
+        283,
+        305
+      ],
+      "new_proof_lf": [
+        307,
+        467
+      ],
+      "new_statement_sha256": "9d6415e5f8b54173b5cabb932c450a80b8dff7540fb96d3ab857a4b2f1eac3a5",
+      "new_proof_sha256": "74a29eb5ef4f0251f2fe9c0e391f7de31da05cb0ec918268e2968b6743437571"
+    },
+    {
+      "proof_id": "P:cutoff-singular-values",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED. The added strict-rank and weight-ratio details are correct."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 88,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "f3958a85051d3e9b6841399caf079dfc2e8a4a7592cee5ef8a748f349625ff03",
+      "mathematical_check": "The report uses the just-reconstructed cutoff recovery to obtain the bounded whole-space Bessel factorization. Weighted torus inclusion entries<kappa>^-gamma yield rank(2n+1)^d and tail [1+(2pi/L)^2(n+1)^2]^-gamma/2. Finite-rank norm approximation gives compactness. Withj>=3^d,n=floor(j^(1/d)/4), strict rank<j andn+1>j^(1/d)/4 give the claimed errorM(2L/pi)^gamma j^-gamma/d; the right-singular-subspace kernel argument gives s_j<=error, includingzero values. Smallj use||K||<=M; the constant max(3^gamma,(2L/pi)^gamma) and summable p gamma>d series are correct. No endpoint necessity or radius-uniform constant is inferred.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        313,
+        323
+      ],
+      "old_proof_lf": [
+        325,
+        368
+      ],
+      "old_statement_sha256": "c51791f4b9049d5b0b2b89235c6701834cdbeb2795f5508be062d5ae7d90a255",
+      "old_proof_sha256": "ad386619e49202e41b8ae8da3326b344f995359f3af63a1ef2cecbd6325ba744",
+      "new_statement_lf": [
+        469,
+        479
+      ],
+      "new_proof_lf": [
+        481,
+        557
+      ],
+      "new_statement_sha256": "c51791f4b9049d5b0b2b89235c6701834cdbeb2795f5508be062d5ae7d90a255",
+      "new_proof_sha256": "776a73b521f3055e1a8201f2c35135add63cf6ac7a822a04350c6077c54667c2"
+    },
+    {
+      "proof_id": "P:compact-two-envelopes",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 105,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "23af087923ceccc6bacd5b8e5511446872f3745af5ced6a3c15e5051796967cd",
+      "mathematical_check": "The report derives balanced block form with bounded A_sigma, real-chi adjoint A_-sigma first on Schwartz then by bounded extension, and the swap identity. Commutation of swap with identical D_gamma blocks gives unitary conjugacy of the two factors. Direct-sum singular-value multiset and cutoff estimates yield both compact Schatten factors. Positive eigenvalue eigenspace isometries K/sqrtlambda andK*/sqrtlambda identify KK* andK*K multiplicities, giving both envelope trace powers equal to||Kout||Sp^p. No self-adjointness/projection of P_chi is assumed.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        394,
+        410
+      ],
+      "old_proof_lf": [
+        412,
+        439
+      ],
+      "old_statement_sha256": "57d0f7fba4676303b72a5f16238d53247e6b2ba7fb81396261fe5d64f7037384",
+      "old_proof_sha256": "a90c94befb22346b4c655e957700102ed2683e14254fac8f2fc4fa607995d145",
+      "new_statement_lf": [
+        583,
+        599
+      ],
+      "new_proof_lf": [
+        601,
+        657
+      ],
+      "new_statement_sha256": "57d0f7fba4676303b72a5f16238d53247e6b2ba7fb81396261fe5d64f7037384",
+      "new_proof_sha256": "c41af2aa0a21e62052b0900ba4c993ed21e8c3e84bc4b4e9c1ccd4bdde425c98"
+    },
+    {
+      "proof_id": "L:compact-positive-order",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 122,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "ad34ca459a47ad778dcfa1d66a3c257cd638bda6fd0892c41551914e337a42be",
+      "mathematical_check": "The report reconstructs norm identity ||(I-Q)A1/2||^2=||(I-Q)A(I-Q)||, positive congruence and compactB spectral tails, so finite-rank Q A1/2 approximate and A is compact. Compact max-min is derived via eigenbasis subspaces and handles zero padding; pointwise Rayleigh order gives eigenvalue order. Scalar monotonicity and increasing finite sums give trace-power order without noncommuting operator-power order. A single displayed scalar formula drops the exponent on the B eigenvalue (R2); preceding eigenvalue comparison and named scalar monotonicity give the intended valid power comparison, rather than a new missing mathematical input.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        445,
+        453
+      ],
+      "old_proof_lf": [
+        455,
+        472
+      ],
+      "old_statement_sha256": "94d9eff3a2e446abc8aaf3bdbb02774e6e5cfbd51cdb658c026d49ce346c7e6c",
+      "old_proof_sha256": "7cde72d3265cd485c9cd30697663fc0ef27b8651c83ef0457716553b3161f219",
+      "new_statement_lf": [
+        663,
+        671
+      ],
+      "new_proof_lf": [
+        673,
+        719
+      ],
+      "new_statement_sha256": "94d9eff3a2e446abc8aaf3bdbb02774e6e5cfbd51cdb658c026d49ce346c7e6c",
+      "new_proof_sha256": "722e3880bcc7019444ccdd8c1fb67e63bd8ddcc2391b84547193f407eb883722"
+    },
+    {
+      "proof_id": "P:localized-finite-variance",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 138,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "089b0966be1cc1ea5fd5a11e69fd2938f60d86b73df1c34fd979c035771a6f5c",
+      "mathematical_check": "The report expands both localization identities into variance congruences, applies the original D_gamma^2 bound and both compact envelopes, and uses the reconstructed positive-order lemma att=p/2>=1 with scaling C^(p/2). It covers C0 and each positive variance summand. Finite spectral projections ofZ Z* show||(I-Q)Z||^2→0, soZ is compact; scalar eigenvalue comparison and p/2 powers give its Sp membership. The localization identities remain hypotheses, not falsely proved for a stochastic coefficient family.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        474,
+        491
+      ],
+      "old_proof_lf": [
+        493,
+        511
+      ],
+      "old_statement_sha256": "1ccf60e336394fae583452073d2d6ff1b59751b94bed00c9ed3206368a98b814",
+      "old_proof_sha256": "455e2a736e196a57190b0f2f5b3f744024ce118a893f4a0b54952704d549c560",
+      "new_statement_lf": [
+        721,
+        738
+      ],
+      "new_proof_lf": [
+        740,
+        779
+      ],
+      "new_statement_sha256": "1ccf60e336394fae583452073d2d6ff1b59751b94bed00c9ed3206368a98b814",
+      "new_proof_sha256": "b5f44ba30ad76acd93e2f02e7da4eb7e43fbe169fceaa45b4175597684ed654f"
+    },
+    {
+      "proof_id": "C:finite-gaussian-operators",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED. All added details (positive difference terms, singular-value min-max lower bound, continuity/measurability) are correct."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 154,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "0fa22835658defaf503d30ad072b1b351c37ee6690d0653ce2834f524f8264aa",
+      "mathematical_check": "The public proof computes the positive middle-projection difference for output and adjoint input compressions; compact max-min comparison bounds compression traces by full variance traces. The same independent real Gaussians and finite complex matrices satisfy the reconstructed average bound with no extra2. For every finite Gaussian coordinate vector, finite-sum compactX admits finite-rank approximation andPi_n X Pi_n→X in operator norm; the report provides the finite-rank intermediate reasoning rather than assuming Sp convergence. Min-max singular-value formula and norm Lipschitz argument give coordinatewise singular-value convergence, counting-measure Fatou followed by probability Fatou yields the expected Sp bound and almost-sure finiteness. Coordinate norm continuity/partial sums prove extended measurability. The exact positive-order trace step added to the source is supported.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        517,
+        526
+      ],
+      "old_proof_lf": [
+        528,
+        572
+      ],
+      "old_statement_sha256": "785357afc9f708a304d6780e4454132880fa57ffb728dcb036b960acc1783526",
+      "old_proof_sha256": "7cd015c4583ebfd237d77a2a52fd6ce088229d07a2b283b48f965d5e7744e7fd",
+      "new_statement_lf": [
+        785,
+        794
+      ],
+      "new_proof_lf": [
+        796,
+        873
+      ],
+      "new_statement_sha256": "785357afc9f708a304d6780e4454132880fa57ffb728dcb036b960acc1783526",
+      "new_proof_sha256": "69c77b7452c94ae8fe14d6525dd20f04d47c1cac38ebbb3aca47c4ff0179137e"
+    },
+    {
+      "proof_id": "P:cutoff-boundary-tests",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 172,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "d4e7437769b4ce6d01ca2a6c72b622e69c30cecddc33e104bdeec2e5ecd378bc",
+      "mathematical_check": "The report constructs nonlocal Bessel transforms of plateau-supported physical testsv,f, proves P_chi vtilde=vtilde andP_chi* wtilde=wtilde, and verifies both rank-one localization identities. The selfadjoint multiplier duality uses D_gamma inverse only on Schwartz vectors; CS yields finite commonC for both variances. Translation commutation, nonzero Schwartzg and the unitary normalized autocorrelation transform show correlations→0, so large-spacing images remain separated while inputs are bounded. This disproves whole-space smoothing compactness without confusing Bessel-transformed support, claiming arbitrary-cutoff nonzero witness or a source family.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        581,
+        586
+      ],
+      "old_proof_lf": [
+        588,
+        628
+      ],
+      "old_statement_sha256": "53333716bea6892de7cbdee60ab5cfebd923b95b7e33c222283dce18fd6b6ed4",
+      "old_proof_sha256": "9ea28ce0c673f048522010b323fb9af5606666db58d89a849890161ed2267c2c",
+      "new_statement_lf": [
+        882,
+        887
+      ],
+      "new_proof_lf": [
+        889,
+        942
+      ],
+      "new_statement_sha256": "53333716bea6892de7cbdee60ab5cfebd923b95b7e33c222283dce18fd6b6ed4",
+      "new_proof_sha256": "765d1cb302b9d80d96344d72b3cf113c8760f62885b1a392a4bdc8751aeb9475"
+    }
+  ],
+  "mathematical_checks": [
+    "The report derives the weighted scalar inequality by the derivative sign aroundt1, with v0,t0 handled; substitution gives integer powers and the ordinary0th-power convention. Normalized finite sequences andtheta1/m yield Holder, including zero norms. The normalized nonnegative variable Z/F gives expectation bound with finiteF and separateF0 case. All exponent/endpoint hypotheses and new derivative explanations are preserved.",
+    "The eigenbasis expansion gives real sums |b_ij|^2 lambda_j^q lambda_i^(L-q), without commuting B,Y. Absolute powers plus the scalar inequality, Hermitian index symmetry and weights summing1 give Tr(B^2|Y|^L). Nonnegative D diagonal entries are convex combinations of its eigenvalues; tangent-line convexity and row/column sums bound sum d_i^m byTr D^m. Holder with(2m-2)m/(m-1)=2m gives the second trace bound. The heading Diagonal ofB actually discusses D (R1), but the equations and argument are correct.",
+    "Public Gaussian IBP checks density derivative sign, polynomial decay/boundaries and complex polynomial components; product rule explicitly keeps ordered matrix words with2m-1 positions. The reconstructed two trace bounds and scalar expectation estimate give F<= (2m-1)(TrD^m)^(1/m)F^((m-1)/m), hence the moment bound, with F0 immediate andm1 independence equality. Hermitian complex rectangular dilation gives the exact two variance blocks and TrY^(2m)=2Tr(X*X)^m by compatible rectangular cyclicity. Dividing2 gives the average andsqrt(p-1), with maximum form andp2 equality. No assumed matrix commutation or dimension factor enters.",
+    "The public proof derives signed Peetre for every realr, Fourier decay and shift-uniform lattice sum with spacing-dependent constants, including finite central terms and dyadic exponent d-N<0. Mixed counting/Lebesgue Schur is derived by CS/Tonelli. Both exact weighted kernels are computed with L^-d/2 and no residualc_d; their L1 and lattice Schur quantities are bounded. Density of weighted Fourier smooth tests and finite sequences gives unique extensions, whose periodic coefficients are compact smooth distribution pairings, not rough Fourier point sampling. The recovery passage explicitly applies E_chi to polynomial partial sums, follows their Hsigma limit via boundedness, and compares smooth-on-support distributional limit chi psi u=chi u. Both maps plus inclusion/multiplier boundedness extend from dense Schwartz to full H^(sigma+gamma). These assigned extension/identification steps are publicly reconstructed rather than consumed as target conclusions.",
+    "The report uses the just-reconstructed cutoff recovery to obtain the bounded whole-space Bessel factorization. Weighted torus inclusion entries<kappa>^-gamma yield rank(2n+1)^d and tail [1+(2pi/L)^2(n+1)^2]^-gamma/2. Finite-rank norm approximation gives compactness. Withj>=3^d,n=floor(j^(1/d)/4), strict rank<j andn+1>j^(1/d)/4 give the claimed errorM(2L/pi)^gamma j^-gamma/d; the right-singular-subspace kernel argument gives s_j<=error, includingzero values. Smallj use||K||<=M; the constant max(3^gamma,(2L/pi)^gamma) and summable p gamma>d series are correct. No endpoint necessity or radius-uniform constant is inferred.",
+    "The report derives balanced block form with bounded A_sigma, real-chi adjoint A_-sigma first on Schwartz then by bounded extension, and the swap identity. Commutation of swap with identical D_gamma blocks gives unitary conjugacy of the two factors. Direct-sum singular-value multiset and cutoff estimates yield both compact Schatten factors. Positive eigenvalue eigenspace isometries K/sqrtlambda andK*/sqrtlambda identify KK* andK*K multiplicities, giving both envelope trace powers equal to||Kout||Sp^p. No self-adjointness/projection of P_chi is assumed.",
+    "The report reconstructs norm identity ||(I-Q)A1/2||^2=||(I-Q)A(I-Q)||, positive congruence and compactB spectral tails, so finite-rank Q A1/2 approximate and A is compact. Compact max-min is derived via eigenbasis subspaces and handles zero padding; pointwise Rayleigh order gives eigenvalue order. Scalar monotonicity and increasing finite sums give trace-power order without noncommuting operator-power order. A single displayed scalar formula drops the exponent on the B eigenvalue (R2); preceding eigenvalue comparison and named scalar monotonicity give the intended valid power comparison, rather than a new missing mathematical input.",
+    "The report expands both localization identities into variance congruences, applies the original D_gamma^2 bound and both compact envelopes, and uses the reconstructed positive-order lemma att=p/2>=1 with scaling C^(p/2). It covers C0 and each positive variance summand. Finite spectral projections ofZ Z* show||(I-Q)Z||^2→0, soZ is compact; scalar eigenvalue comparison and p/2 powers give its Sp membership. The localization identities remain hypotheses, not falsely proved for a stochastic coefficient family.",
+    "The public proof computes the positive middle-projection difference for output and adjoint input compressions; compact max-min comparison bounds compression traces by full variance traces. The same independent real Gaussians and finite complex matrices satisfy the reconstructed average bound with no extra2. For every finite Gaussian coordinate vector, finite-sum compactX admits finite-rank approximation andPi_n X Pi_n→X in operator norm; the report provides the finite-rank intermediate reasoning rather than assuming Sp convergence. Min-max singular-value formula and norm Lipschitz argument give coordinatewise singular-value convergence, counting-measure Fatou followed by probability Fatou yields the expected Sp bound and almost-sure finiteness. Coordinate norm continuity/partial sums prove extended measurability. The exact positive-order trace step added to the source is supported.",
+    "The report constructs nonlocal Bessel transforms of plateau-supported physical testsv,f, proves P_chi vtilde=vtilde andP_chi* wtilde=wtilde, and verifies both rank-one localization identities. The selfadjoint multiplier duality uses D_gamma inverse only on Schwartz vectors; CS yields finite commonC for both variances. Translation commutation, nonzero Schwartzg and the unitary normalized autocorrelation transform show correlations→0, so large-spacing images remain separated while inputs are bounded. This disproves whole-space smoothing compactness without confusing Bessel-transformed support, claiming arbitrary-cutoff nonzero witness or a source family."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "proof_id": "L:gaussian-trace-bounds",
+      "classification": "report-only heading typo",
+      "old": "Diagonal of B",
+      "new": "Diagonal of D",
+      "disposition": "The immediately following d_i=D_ii and D=U diag(theta)U* are correct. No mathematical or source change.",
+      "report_lf": 38
+    },
+    {
+      "id": "R2",
+      "proof_id": "L:compact-positive-order",
+      "classification": "report-only missing scalar exponent",
+      "old": "lambda_j^t <= lambda_j'",
+      "new": "lambda_j(A)^t <= lambda_j(B)^t",
+      "contrary_calculation": "ForA=B=2P withP a rank-one orthogonal projection andt2, the literal inequality would say4<=2. Correct scalar monotonicity gives4<=4. The public step2 already supplieslambda_j(A)<=lambda_j(B), and step3 expressly applies scalar monotonicity before summing.",
+      "disposition": "Raw report unchanged. This is a dropped exponent in a local formula; the stated correct eigenvalue comparison and scalar-power operation reconstruct the needed trace argument. Source contains the correct inequality and explicitly disclaims A^t<=B^t.",
+      "report_lf": 130
+    },
+    {
+      "id": "R3",
+      "classification": "report-only forward-reference terminology",
+      "old": "those remain upstream results",
+      "new": "those are separately proved later results outside this finite-comparison module",
+      "disposition": "The source closing paragraphs explicitly place infinite series/time regularity/localization and source/Young identification in later sections. None is used to prove an assigned target; this terminology does not enlarge coverage or create a source defect.",
+      "report_lf": 209
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 23517,
+      "sha256": "8f45fa62dba587afc3f4f84133940069acaaae3f146f66e757c3c8c103a3613e"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 4783,
+      "sha256": "4acdad197d77880f2cbdd8e949346da91d60afd4199e71f00028c778b6c60539"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 14149,
+      "sha256": "01cb0629373351eccfe2a937eb27f6ef32c6d3bdb5b4dedfb3d6bb397258b492"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 3114,
+      "sha256": "498d1a3e44582713653f90409bc163c38e1e8fea24e0123009e98f7fbfc4faab"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 7105,
+      "sha256": "02046dd741cfebf47389f6de709c929dce7d114f0b954f1ef60209342307b1b3"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 4445,
+      "sha256": "ca7bf9caf88479915d8e113a4d5ccfcb5ba82a00c292d9c569989ec5acbb7983"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 30608,
+      "sha256": "caf9e56a5b818f9e5daa02ac3423c354b95c515f1932d92170ec002b0fbaa84a"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 46837,
+      "sha256": "7bef7e3d85639bf444e529060fecf92c52eab0ed4a234c4068f3061b7097b003"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-covariance-foundation-baseline.txt",
+      "bytes": 21173,
+      "sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020"
+    },
+    {
+      "path": "inputs/context-wave-variance-baseline.txt",
+      "bytes": 24927,
+      "sha256": "66369d1bde2358f92e7edfb33f899bd96c2698a631e9ca0d9f330062ff55f8a6"
+    }
+  ],
+  "input_identity_checks": "All delivered source/context payload hashes and WHOLE_FILE pinned Git byte identities verified; every complete OLD/NEW statement/proof independently checked by LF/bytes/SHA. Complete target text read with baseline comparisons and genuine needed stated inputs, not merely delta QA.",
+  "source_currentness": {
+    "covered_launch_revision": "105845e78f20520367e0d1c9ce22070615661f21",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "limit": "Only this exact assigned source versuscdde and supplied context; no older report rebinding, unexamined successor or whole-book seal."
+  },
+  "read_limits": [
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority"
+}

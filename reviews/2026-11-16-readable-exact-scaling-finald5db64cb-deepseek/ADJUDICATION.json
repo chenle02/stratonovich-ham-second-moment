@@ -1,0 +1,238 @@
+{
+  "review_record_id": "RP052",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "d5db64cbef31ba924d31d64d57747924d68f60c6",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_exact_scaling.tex",
+  "source_binding_sha256": "66ea1522f8d1e070c74a4adc15c415887ad567e503e887dc1eae4f8309cd84cb",
+  "public_report_sha256": "2947bfb06f1b92c556f49ca8d5c06bbdf1273dcddbbc3b240ece594d2f167924",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_ALL_ASSIGNED_PUBLIC_RECONSTRUCTIONS_CHECKED_ROOT_REVIEWS",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:exact-canonical-scaling": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ]
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:exact-canonical-scaling",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 7,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "fd984eccdacc58789971e4973eba5c396009106ae3bcc82593b0fb12c15dc142",
+      "mathematical_check": "The public report reconstructs exactkappa/delta/r_T identities and source amplitude versus covariance amplitude. Its informal white-noise distribution formula is FALSE(R1), but the independent positive-width Step2 calculation correctly multiplies the heat Jacobian r_T^-d by Radon scaling r_T^(d-alpha), obtaining r_T^-alpha for EVERY admissible measure includingGamma=delta0,alpha=d1. It explicitly transformsK_eta(Ts) bylambdaPrime=lambdaT toT^-a K_(eta/T), spatialwidth byepsilon/r_T^2, andjointmax-time/summed-space width laws. The general Green degree1-d distribution/pushforward argument givesG_d(lambda t,mu dz)=mu G_d((lambda/mu)t,dz), with correctd1/d3 checks; the extra mu^-1 in one d2 intermediate formula is false(R2), but the correct general derivation already coversd2 independently. The report checks everyvertex JacobianT,Greenfactorr_T,noise amplitudeT^-a/2 r_T^-alpha/2, and both exact powers yieldingdelta^-1/2/sqrtdelta. It derives the forcing Green kernel delta^-1G(t/delta) with the proper distributional time-delta scaling(R3). Fixed positive-width joint Gaussian field laws and multilinear ordered integrals give all fixed-order joint laws, including self/unequal/empty chains; the imported joint limits with Green-before-noise and absoluteL2 q_n tails pass at FIXED dilation to the full canonical law/second moment. No large-time/source exchange or roughpathwiseuniqueness is used. The claimed centering of all higher Stratonovich terms is FALSE(R4); the correctlog identity follows from this already-public fullL2 law equality and the named standingP:mixed nonnegative-moment series/order0, which ensures finite secondmoments>=1. Root fully read the actual report and confirmed these independent valid routes; no missing core relies solely on the false ancillary formulas. Thus the one assigned reconstruction isCHECKED, not an endorsement or repair of those false assertions.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        10,
+        30
+      ],
+      "old_proof_lf": [
+        32,
+        62
+      ],
+      "old_statement_sha256": "0acafe42c01b34b66660538d885b48d60cd283a4b0dc29b21d5b1a7787abe9f6",
+      "old_proof_sha256": "85077599692658901d393623508ab6d542c709ade89f1ce76beb6b4a9e264309",
+      "new_statement_lf": [
+        10,
+        30
+      ],
+      "new_proof_lf": [
+        32,
+        86
+      ],
+      "new_statement_sha256": "0acafe42c01b34b66660538d885b48d60cd283a4b0dc29b21d5b1a7787abe9f6",
+      "new_proof_sha256": "1a4ac0f97d8c7ddaec63e76d5695046f2d06b82b48767de730d1662b7a0741b0"
+    }
+  ],
+  "mathematical_checks": [
+    "The public report reconstructs exactkappa/delta/r_T identities and source amplitude versus covariance amplitude. Its informal white-noise distribution formula is FALSE(R1), but the independent positive-width Step2 calculation correctly multiplies the heat Jacobian r_T^-d by Radon scaling r_T^(d-alpha), obtaining r_T^-alpha for EVERY admissible measure includingGamma=delta0,alpha=d1. It explicitly transformsK_eta(Ts) bylambdaPrime=lambdaT toT^-a K_(eta/T), spatialwidth byepsilon/r_T^2, andjointmax-time/summed-space width laws. The general Green degree1-d distribution/pushforward argument givesG_d(lambda t,mu dz)=mu G_d((lambda/mu)t,dz), with correctd1/d3 checks; the extra mu^-1 in one d2 intermediate formula is false(R2), but the correct general derivation already coversd2 independently. The report checks everyvertex JacobianT,Greenfactorr_T,noise amplitudeT^-a/2 r_T^-alpha/2, and both exact powers yieldingdelta^-1/2/sqrtdelta. It derives the forcing Green kernel delta^-1G(t/delta) with the proper distributional time-delta scaling(R3). Fixed positive-width joint Gaussian field laws and multilinear ordered integrals give all fixed-order joint laws, including self/unequal/empty chains; the imported joint limits with Green-before-noise and absoluteL2 q_n tails pass at FIXED dilation to the full canonical law/second moment. No large-time/source exchange or roughpathwiseuniqueness is used. The claimed centering of all higher Stratonovich terms is FALSE(R4); the correctlog identity follows from this already-public fullL2 law equality and the named standingP:mixed nonnegative-moment series/order0, which ensures finite secondmoments>=1. Root fully read the actual report and confirmed these independent valid routes; no missing core relies solely on the false ancillary formulas. Thus the one assigned reconstruction isCHECKED, not an endorsement or repair of those false assertions."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "proof_id": "L:exact-canonical-scaling",
+      "classification": "false report-only white-noise pullback formula; independent correct general-Radon route present",
+      "old": "delta0(r_T z)=delta0(z)=r_T^0 *1",
+      "new": "As a distributional pullback in d dimensions, delta0(r_T z)=r_T^-d delta0(z); as a physical Radon MEASURE, delta0(r_T A)=delta0(A). These are different operations.",
+      "contrary_calculation": "Forr_T=2,d1, testing the distributiondelta0(2z) againstphi givesphi(0)/2, notphi(0). The physical measurehomogeneity degree d-alpha=0 is nevertheless correct foralpha=d1.",
+      "disposition": "Raw report unchanged; source correct. PublicStep2 explicitly computes the correct heat/Radon factors r^-d r^(d-alpha)=r^-alpha and is valid forwhite as well, so the core source covariance scaling is independently reconstructed.",
+      "report_lf": 40
+    },
+    {
+      "id": "R2",
+      "proof_id": "L:exact-canonical-scaling",
+      "classification": "false report-only d2 Green intermediate expression; general measure derivation correct",
+      "old": "mu^2/(2pi)*[(lambda t)^2-mu^2|z|^2]^-1/2 *mu^-1 dz",
+      "new": "mu^2/(2pi)*[(lambda t)^2-mu^2|z|^2]^-1/2 dz = mu/(2pi)*[((lambda/mu)t)^2-|z|^2]^-1/2 dz",
+      "contrary_calculation": "Take(lambda,t,mu,z)=(1,2,2,0). The correct scaled density andfinalmuG2 value are1/pi; the written extra-factor middle expression is1/(2pi).",
+      "disposition": "Raw report unchanged. The preceding general degree1-d/pushforward derivation is correct and already coversd2, as are the separated1/d3 checks. Source requires no edit.",
+      "report_lf": 60
+    },
+    {
+      "id": "R3",
+      "proof_id": "L:exact-canonical-scaling",
+      "classification": "distributional time-delta interpretation must remain explicit",
+      "disposition": "The identity used for theforcing Green kernel is the distributional pullback delta_Dirac(t/delta)=delta delta_Dirac(t). This is not the pushforward of an atomic unit measure, which preserves totalmass. Under that correct interpretation the public derivative calculation and forcing kernel are correct.",
+      "report_lf": 75
+    },
+    {
+      "id": "R4",
+      "proof_id": "L:exact-canonical-scaling",
+      "classification": "false report-only centering of higher Stratonovich terms",
+      "old": "both moments>=1 since the order-zero term is1 andall other terms arecentered",
+      "new": "both secondmoments arefinite and>=1 by the standingP:mixed nonnegative mixed-diagram expansion including the order-zero1; higher even Stratonovich terms generally have nonzero means from self-pairings",
+      "contrary_calculation": "At fixed positive regularization, the order2 expected Picard/Stratonovich coefficient is the positive single-chain covariance integral integral C_rho(s1,z1;s2,z2) dnu2, generally strictly positive for nonzero covariance. Wick expectation of a product of2 centered Gaussian factors is its covariance, not0. The report itself includes self-pairings inStep6.",
+      "disposition": "Do not endorse the false parenthetical. The fullL2 law/secondmoment equality and logarithmic algebra are already publicly proved. The explicitly invoked standingP:mixed nonnegative series/orderzero supplies strictpositivity without a new proof or root replacement of the scaling argument. No source correction.",
+      "report_lf": 81
+    },
+    {
+      "id": "R5",
+      "proof_id": "L:exact-canonical-scaling",
+      "classification": "report-only incomplete parameter enumeration",
+      "old": "alpha in(0,d)",
+      "new": "0<alpha<d oralpha=d=1, asH:homog states",
+      "disposition": "The standing model includes thewhite boundary. The valid general positive-width Radon calculation usesH:homog and includes this case; do not adopt the narrowed incidental list as a restriction of the source theorem.",
+      "report_lf": 32
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 13681,
+      "sha256": "2947bfb06f1b92c556f49ca8d5c06bbdf1273dcddbbc3b240ece594d2f167924"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 4734,
+      "sha256": "8794579f594ded872088eca9d5c529eb5e1195cf567e59b916b2f21bf0ed9946"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 2249,
+      "sha256": "9316ac508cc1c199f2a4ca79567da6ee9cb1be9ef31155641a9e7bddd940e9dd"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 6288,
+      "sha256": "66ea1522f8d1e070c74a4adc15c415887ad567e503e887dc1eae4f8309cd84cb"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 11321,
+      "sha256": "6ee67604ef597c0814f335ad4f976c87c1add079d3c06ba00a975b42c7894e1d"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 6013,
+      "sha256": "2149b3b3744a0b9f9dd94fcb932d5c950515c3a0c9ae2e57266ae3953a475bee"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 2925,
+      "sha256": "d55a4709db7f10017f7b9506bce54d6921200f0d01a293801080d31889c91933"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 4003,
+      "sha256": "ae63d4caf30854b02c1a5655883e0525c7bd531ad251076c5f22c47c32108a58"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-canonical-expansion.txt",
+      "bytes": 1687,
+      "sha256": "85b10629c4ef8076f1137fbcc500b675f1778e844fb0db97b4c171f836155b5b"
+    },
+    {
+      "path": "inputs/context-P-mild-construction.txt",
+      "bytes": 741,
+      "sha256": "f07f44a230488466501f90eece5bcdb9962dae0809b2487b65f566cd1c1485a1"
+    },
+    {
+      "path": "inputs/context-P-mixed.txt",
+      "bytes": 553,
+      "sha256": "f69b6b043f88a3cf5fdb7b9f6e1c4d3fb9be332def7cbaa1d23814bb9d0fe807"
+    },
+    {
+      "path": "inputs/context-L-joint-fixed-order.txt",
+      "bytes": 595,
+      "sha256": "e5b69134ff339a7550b8512aa85ad191c0c6abfb2b1da567f1e3e7c27fa1b7a3"
+    },
+    {
+      "path": "inputs/context-L-vertex-crude.txt",
+      "bytes": 601,
+      "sha256": "e1d84b39d46e7b95085290c9ddca62be8461035d15b1845f4728c13ef16be6cc"
+    },
+    {
+      "path": "inputs/context-integrated_source_convergence-baseline.txt",
+      "bytes": 25085,
+      "sha256": "f212bad41254a78109e5802def45053c8bda53a416cda9f457513406304aaef4"
+    },
+    {
+      "path": "inputs/context-integrated_masked_moments-baseline.txt",
+      "bytes": 11113,
+      "sha256": "533f96300b5e0e10205aeb374cdd55378fd3a27e8a5faf6148187f0c02221024"
+    },
+    {
+      "path": "inputs/context-integrated_wave_variance-baseline.txt",
+      "bytes": 24927,
+      "sha256": "66369d1bde2358f92e7edfb33f899bd96c2698a631e9ca0d9f330062ff55f8a6"
+    }
+  ],
+  "input_identity_checks": "All delivered source/context payload hashes and WHOLE_FILE pinned Git byte identities verified; every complete OLD/NEW statement/proof independently checked by LF/bytes/SHA. Complete target text read with baseline comparisons and genuine needed stated inputs, not merely delta QA.",
+  "source_currentness": {
+    "covered_launch_revision": "d5db64cbef31ba924d31d64d57747924d68f60c6",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "limit": "Only this exact assigned source versuscdde and supplied context; no older report rebinding, unexamined successor or whole-book seal.",
+    "older_RP007_or_repeat_proposal_rebound": false
+  },
+  "read_limits": [
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority",
+  "root_reviewed_specific_coverage_point": "Root read the FULL actual052 public report and agreedCHECKED via independent correct Step2 positive-width general-Radon scaling and general Green-degree/pushforward route. Root explicitly rejected the false white-pullback/d2-extra-factor/centering ancillary statements; no callback or raw repair."
+}

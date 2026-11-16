@@ -1,0 +1,295 @@
+{
+  "review_record_id": "RP049",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "4e7506123f3d0f149b6d32d1467957caeda85986",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_masked_moments.tex",
+  "source_binding_sha256": "9ab048b07ba61f95f07f06c364907b2f4127f94dae1999b53ed67d47976a915f",
+  "public_report_sha256": "bf06da2e7b238975a780db67e1f3d264a7a77ee8fbefe23fe78e7386d4638825",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_ALL_ASSIGNED_PUBLIC_RECONSTRUCTIONS_CHECKED_ROOT_REVIEWS",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:masked-chain-comparison": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:masked-source-moments": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R2"
+      ]
+    },
+    "P:masked-canonical-transfer": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:masked-chain-comparison",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE (OLD statement LF 23–37; proof LF 39–98)",
+        "new_reading": "COMPLETE (NEW statement LF 23–37; proof LF 39–127)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. The NEW proof reorganizes OLD LF 39–98",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 16,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "518f0cd5c5fda91817e53f6e44844154a4a5645b643581b24feee0f4614dbabd",
+      "mathematical_check": "The public proof computes the mass recursion with the exact beta integral to t^(2n)/(2n)!, including the order0 unit measure and Green measure dilation/mass semantics in d3. The actual common-width covariance is K_eta Gamma_2epsilon, nonnegative from physical heat/Laplace kernels and bounded by its finite diagonal through Gaussian CS. Uniform finite Gaussian product moments and finite chain measure give BochnerL2 and absolute two-chain Fubini integrability. At fixed positive noise widths, weak Green heat approximation preserves mass and integrates bounded continuous Wick products; chain masses dominate time integrals, so square/cross moments yieldL2 convergence before noise removal. All Wick pair partitions, self/unequal/empty chains and odd/order0 cases are explicitly handled, with every vertex mask once in[0,1]. The q_n bound uses the supplied uniform-vertex theorem at the checked common widths and q0>=1. No samplewise solution order or arbitrary phase covariance order is inferred.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        23,
+        37
+      ],
+      "old_proof_lf": [
+        39,
+        98
+      ],
+      "old_statement_sha256": "71bff91c550a6d448545c1e0c1276554d93309b12a1d99350517d2943ebdca26",
+      "old_proof_sha256": "b12fdad33a9ab65395f70cc0ab25db3178981524fab2d39338fd8a01193c95d9",
+      "new_statement_lf": [
+        23,
+        37
+      ],
+      "new_proof_lf": [
+        39,
+        127
+      ],
+      "new_statement_sha256": "71bff91c550a6d448545c1e0c1276554d93309b12a1d99350517d2943ebdca26",
+      "new_proof_sha256": "4f8e0f98f9a68a400018c066ed5ce5f07378855f772185c73a8268bd73e80f64"
+    },
+    {
+      "proof_id": "P:masked-source-moments",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE (OLD statement LF 100–115; proof LF 117–159)",
+        "new_reading": "COMPLETE (NEW statement LF 129–144; proof LF 146–210)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. The NEW proof splits the same content",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 124,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "f545ec43618fb9115f3750d1431a076fe4e7ea988f79844c1c6f7e6787467654",
+      "mathematical_check": "The report reconstructs summable q_n absoluteL2 series uniformly at finiteT, then separately constructs samplewise local-cone Picard sums under a finite random coefficient bound with M^nT^(2n)/(2n)! and continuity from unit Green measure representation. Iterated difference estimates prove local continuous uniqueness. Absolute product Fubini and fixed-point L2 subsequences identify the continuous version on the same source, without an uncountable-width event. The summable double mixed majorantQ_t^2 permits termwise expectation limits; only the unmasked source law and Picard/series are stationary, so CS bounds its two-point expectation by the common point moment. The new recovered-vertex translation explanation leaves increments fixed, changing source/mask arguments, and gives finite-term L2 spatial continuity. Uniform q_n tails give continuity/separable image for the full sum, hence Bochner spatial testing and Fubini under||phi||1^2Q_t^2; nonnegativephi preserves diagram order. Both ordinary unmasked and masked coefficients are locally bounded on their fixed compact cones.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        100,
+        115
+      ],
+      "old_proof_lf": [
+        117,
+        159
+      ],
+      "old_statement_sha256": "d27c8c2bfc7a3f1cc395db463e09676a2fc9d19c12861217845766cfa80c082b",
+      "old_proof_sha256": "7dd7a04410b9d706174839367f0f7e7c5b28abf7bf0987561eca84aefdcf7cdd",
+      "new_statement_lf": [
+        129,
+        144
+      ],
+      "new_proof_lf": [
+        146,
+        210
+      ],
+      "new_statement_sha256": "d27c8c2bfc7a3f1cc395db463e09676a2fc9d19c12861217845766cfa80c082b",
+      "new_proof_sha256": "00b2109059110fec0ecb2cff73f8eb54dcc0464c848487fef7418560eab1536e"
+    },
+    {
+      "proof_id": "P:masked-canonical-transfer",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE (OLD statement LF 161–175; proof LF 177–212)",
+        "new_reading": "COMPLETE (NEW statement LF 212–226; proof LF 228–283)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. The NEW proof preserves the reversal,",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 225,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "8210a683ab9f775be37f73e34f66da346195af6207fa95a5c95b36348bc3d17e",
+      "mathematical_check": "The report reconstructs fixed-order two-chain reversal s_jprime=t-s_(n+1-j),z_jprime=-z_(n+1-j) separately perchain and the induced pairing relabeling. Even temporal/spatial covariance and Green measures give exactly the imported initial-chain convention, including empty chains; Green removal remains first. The supplied joint diagram/fixed-order theorem applies at arbitrary relative noise widths, with odd0 and order0 cases. Absolute mixed q_nq_k bounds permit a finite-square head and two tails<=delta, giving the full canonical point second moment via the supplied P:mixed sum. The masked average convergence is explicitly a PREMISE, not established here; reverse triangle/CS second-moment continuity passes the tested inequality along the same chosen width limit. Zero covariance reduces all higher terms to0 andu1. No whole canonical random-family coupling is invented.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        161,
+        175
+      ],
+      "old_proof_lf": [
+        177,
+        212
+      ],
+      "old_statement_sha256": "245311cea3791e6393bc7ca9b9bddccba78f6890c30cfe21688bc69730adf5be",
+      "old_proof_sha256": "96b6eb2cf0efd84b97b7ae38446f3928414ea8bf01598b1d442c5d59c7b812b9",
+      "new_statement_lf": [
+        212,
+        226
+      ],
+      "new_proof_lf": [
+        228,
+        283
+      ],
+      "new_statement_sha256": "245311cea3791e6393bc7ca9b9bddccba78f6890c30cfe21688bc69730adf5be",
+      "new_proof_sha256": "b26983450a496719bc806a61be8c7d81ebbcc24395f0eb985a35d521cb1c4d3c"
+    }
+  ],
+  "mathematical_checks": [
+    "The public proof computes the mass recursion with the exact beta integral to t^(2n)/(2n)!, including the order0 unit measure and Green measure dilation/mass semantics in d3. The actual common-width covariance is K_eta Gamma_2epsilon, nonnegative from physical heat/Laplace kernels and bounded by its finite diagonal through Gaussian CS. Uniform finite Gaussian product moments and finite chain measure give BochnerL2 and absolute two-chain Fubini integrability. At fixed positive noise widths, weak Green heat approximation preserves mass and integrates bounded continuous Wick products; chain masses dominate time integrals, so square/cross moments yieldL2 convergence before noise removal. All Wick pair partitions, self/unequal/empty chains and odd/order0 cases are explicitly handled, with every vertex mask once in[0,1]. The q_n bound uses the supplied uniform-vertex theorem at the checked common widths and q0>=1. No samplewise solution order or arbitrary phase covariance order is inferred.",
+    "The report reconstructs summable q_n absoluteL2 series uniformly at finiteT, then separately constructs samplewise local-cone Picard sums under a finite random coefficient bound with M^nT^(2n)/(2n)! and continuity from unit Green measure representation. Iterated difference estimates prove local continuous uniqueness. Absolute product Fubini and fixed-point L2 subsequences identify the continuous version on the same source, without an uncountable-width event. The summable double mixed majorantQ_t^2 permits termwise expectation limits; only the unmasked source law and Picard/series are stationary, so CS bounds its two-point expectation by the common point moment. The new recovered-vertex translation explanation leaves increments fixed, changing source/mask arguments, and gives finite-term L2 spatial continuity. Uniform q_n tails give continuity/separable image for the full sum, hence Bochner spatial testing and Fubini under||phi||1^2Q_t^2; nonnegativephi preserves diagram order. Both ordinary unmasked and masked coefficients are locally bounded on their fixed compact cones.",
+    "The report reconstructs fixed-order two-chain reversal s_jprime=t-s_(n+1-j),z_jprime=-z_(n+1-j) separately perchain and the induced pairing relabeling. Even temporal/spatial covariance and Green measures give exactly the imported initial-chain convention, including empty chains; Green removal remains first. The supplied joint diagram/fixed-order theorem applies at arbitrary relative noise widths, with odd0 and order0 cases. Absolute mixed q_nq_k bounds permit a finite-square head and two tails<=delta, giving the full canonical point second moment via the supplied P:mixed sum. The masked average convergence is explicitly a PREMISE, not established here; reverse triangle/CS second-moment continuity passes the tested inequality along the same chosen width limit. Zero covariance reduces all higher terms to0 andu1. No whole canonical random-family coupling is invented."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "classification": "report-only terminology typo",
+      "old": "Walsh-diagram comparison",
+      "new": "Wick-diagram comparison",
+      "disposition": "All actual preceding working sums Gaussian pair partitions including self-pairings, rather than a Walsh/Skorohod chaos rule. Raw wording retained; no source correction.",
+      "report_lf": 343
+    },
+    {
+      "id": "R2",
+      "proof_id": "P:masked-source-moments",
+      "classification": "reviewer observation of existing grammar only",
+      "disposition": "The unchanged an Bochner wording is grammatical, not a mathematical issue or requested source correction under this math-only scope.",
+      "report_lf": 219
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 20279,
+      "sha256": "bf06da2e7b238975a780db67e1f3d264a7a77ee8fbefe23fe78e7386d4638825"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 4268,
+      "sha256": "864057ee1939fc6bca4c2b6af9880c6d4b601bafc47c3bf610ff107c2b465536"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 4911,
+      "sha256": "d0eaf9736244e5a4911a0899d2274aba6178c0fc57825790376b6c40c591d1ef"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 4152,
+      "sha256": "9ab048b07ba61f95f07f06c364907b2f4127f94dae1999b53ed67d47976a915f"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 8295,
+      "sha256": "a92c56d04ccbbc76e1564c28aac54051b3153f0390f6bb826cf2dc89f798f35d"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 4555,
+      "sha256": "0cb67cd30b58927962101c018b4a49398a47e088e55cebd138924f445202a007"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 11113,
+      "sha256": "533f96300b5e0e10205aeb374cdd55378fd3a27e8a5faf6148187f0c02221024"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 14522,
+      "sha256": "a53abaefe9746dab5f5eae5c4ca8c17626581c57cc19f039b41c58c7e0a6176a"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-P-mixed.txt",
+      "bytes": 553,
+      "sha256": "f69b6b043f88a3cf5fdb7b9f6e1c4d3fb9be332def7cbaa1d23814bb9d0fe807"
+    },
+    {
+      "path": "inputs/context-L-joint-fixed-order.txt",
+      "bytes": 595,
+      "sha256": "e5b69134ff339a7550b8512aa85ad191c0c6abfb2b1da567f1e3e7c27fa1b7a3"
+    },
+    {
+      "path": "inputs/context-L-vertex-crude.txt",
+      "bytes": 601,
+      "sha256": "e1d84b39d46e7b95085290c9ddca62be8461035d15b1845f4728c13ef16be6cc"
+    },
+    {
+      "path": "inputs/context-source-convergence-baseline.txt",
+      "bytes": 25085,
+      "sha256": "f212bad41254a78109e5802def45053c8bda53a416cda9f457513406304aaef4"
+    },
+    {
+      "path": "POST-LAUNCH-SOURCE-CURRENCY.private.json",
+      "bytes": 730,
+      "sha256": "10467e139a0787c6d26128adddd8fcd4341d21e5aaeb3def6c5f515e19681b6d"
+    }
+  ],
+  "input_identity_checks": "All delivered source/context payload hashes and WHOLE_FILE pinned Git byte identities verified; every complete OLD/NEW statement/proof independently checked by LF/bytes/SHA. Complete target text read with baseline comparisons and genuine needed stated inputs, not merely delta QA.",
+  "source_currentness": {
+    "covered_launch_revision": "4e7506123f3d0f149b6d32d1467957caeda85986",
+    "status": "EXACT_LAUNCH_SOURCE_ONLY_PENDING_EDITORIAL_SUCCESSOR_NOT_COVERED",
+    "limit": "This report/adjudication covers only4e750612 versuscdde. Root/16/Le prospective original-text editorial hold does not change this source binding, raw grade or deduction coverage. No future edited text is covered and no cancel/relaunch is inferred.",
+    "future_editorial_changes_covered": false,
+    "future_successor_revision": null,
+    "source_currency_notice_observed": {
+      "schema": "prospective-source-hold-notice/1",
+      "record_id": "RP049",
+      "recorded_utc": "2026-11-16T14:11:29.474331+00:00",
+      "authority": "16 direct user instruction Leconfirmed3ebeb50b; root relay",
+      "original_authorized_source_revision": "4e7506123f3d0f149b6d32d1467957caeda85986",
+      "already_launched_under_then_current_authorization": true,
+      "hold_applies_to_future_edited_successor_calls": true,
+      "existing_run_input_source_and_report_facts_unchanged": true,
+      "status": "FUTURE_ORIGINAL_TEXT_EDITORIAL_COMMIT_AND16VERIFICATION_PENDING_NOT_COVERED",
+      "future_successor_revision": null,
+      "future_editorial_changes_covered": false,
+      "cancel_or_relaunch": false,
+      "other_exact_rolling_scopes_remain_allowed": true
+    }
+  },
+  "read_limits": [
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority"
+}

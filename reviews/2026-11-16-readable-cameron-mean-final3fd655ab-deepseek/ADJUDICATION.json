@@ -1,0 +1,492 @@
+{
+  "review_record_id": "RP057",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "3fd655ab0505b7893e778afebe53b5a1427ae97b",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_cameron_mean.tex",
+  "source_binding_sha256": "1061a40e3b56ce2487e15aa788301e72736d3f5857130804d8054668c10ef6e9",
+  "public_report_sha256": "ba5659b4af82aa3faf4a2fe933507a5afff4a166b844ec3855e5e35cdb82dc8a",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_ALL_ASSIGNED_PUBLIC_RECONSTRUCTIONS_CHECKED_ROOT_REVIEWS",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:cameron-fractional-products": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:cameron-spatial-map": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1",
+        "R2"
+      ]
+    },
+    "L:cameron-supported-tensor": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:cameron-temporal-map": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R3",
+        "R4"
+      ]
+    },
+    "P:cameron-full-mean": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:cameron-actual-residual": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:cameron-actual-embedding": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:cameron-fractional-products",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED. The added Step 2 sentences (“gradient norm at most $2^j\\lVert f_j\\rVert_2$”, the rewritten weighted CS) are exactly the derivation above. No quantifier lost; “no $L^p$ multiplier result is used” is retained.",
+        "new_explanations_raw": "JUSTIFIED. The added Step 2 sentences (“gradient norm at most $2^j\\lVert f_j\\rVert_2$”, the rewritten weighted CS) are exactly the derivation above. No quantifier lost; “no $L^p$ multiplier result is used” is retained."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 9,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "6ecd5e687eeb7c850b417c1a2a660b856efe8528dd4e8e1f364664936a5548c7",
+      "mathematical_check": "The report reconstructs the H1 product completion under the stated absolute four-linear/PSD input, including product-difference independence andsquare polarization. Real radial frequency bands havegradnorm<=2^j L2norm, henceN(f_j)<=2^(j alpha/4)||f_j||2. The explicit weightedCS/geometricseries and2^s Hs bound giveC_s foralpha/4<s<1/2, andthe same reasoning yieldssum||f_j||2 finite. Absolute bandquadruple estimates, positiveTonelli andtwo-positionnulltransfer identifyphysicalproductseries; the absolutely H_sp-convergent doubleproduct series anddensity give completed bilinearity/uniqueness. ConstantsC_s^2sqrtRsp andC_s^4Rsp areexact, withnoLpmultiplier claim.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        29,
+        42
+      ],
+      "old_proof_lf": [
+        44,
+        79
+      ],
+      "old_statement_sha256": "a1a9ef7bfdf32e8c102e9c19247ae0db8a18093a89446ce4759867faf1e05406",
+      "old_proof_sha256": "15f37b0cf694a95555681be25ca11073b1fdf216a21009d55b2f8d1b3f3a3104",
+      "new_statement_lf": [
+        29,
+        42
+      ],
+      "new_proof_lf": [
+        44,
+        99
+      ],
+      "new_statement_sha256": "a1a9ef7bfdf32e8c102e9c19247ae0db8a18093a89446ce4759867faf1e05406",
+      "new_proof_sha256": "84df28ce9008659e396ca717bc131c929b96731af01aff648be7a73193e8ae50"
+    },
+    {
+      "proof_id": "P:cameron-spatial-map",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 39,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "9804546b6beac85c711edd1ba871f65e4b73890ebfc83b7c2609626b882b6a69",
+      "mathematical_check": "The public row usesactualF displacement/c1 andweightedvelocitywprime=Lambda^-1w2, compactphysicalmeanFubini andevenGamma toobtain B_Gamma(q,k). Fractionalproduct continuity controlsrows inH_sp. FixedR localizedH1/2 factors areprecompactHs via the namedcutoff theorem, withthe c1 family finite-dimensional; theirproductrow closureL iscompact. Rowbounds annihilatenull classes andextend theoperator. Smoothmaskedpotentials havecompactH1/2→H^-1/2 multiplication andfinite-rankc1/zeroinstantc2 columns; normclosure givescompactvalues. SmoothONB spatialprojections convergeuniformly oncompactL byfinitenets, soTspQ_n approximatesTsp ascompactmaps. Oneexplicitlocalbound dropssupportvolume|K|(R1), butthe neededfixed-supportconstant estimate isvalid andthe same report later states thecorrectvolume-bearing tensorbound. Its criticism ofgeneral-stateL1products isfalse(R2); sourceq isstill smooththere andlocalizedstatefactorsareL2.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        84,
+        99
+      ],
+      "old_proof_lf": [
+        101,
+        142
+      ],
+      "old_statement_sha256": "958b7b86890eb2bfe85c28983707b120bcaa75a17ab500d1c5d60e250230cd2e",
+      "old_proof_sha256": "8a119998de6c0e71463b110de52df4a56f981c4d9bea7c8b68e435ca678f9651",
+      "new_statement_lf": [
+        104,
+        119
+      ],
+      "new_proof_lf": [
+        121,
+        186
+      ],
+      "new_statement_sha256": "958b7b86890eb2bfe85c28983707b120bcaa75a17ab500d1c5d60e250230cd2e",
+      "new_proof_sha256": "d2e22a62e65843841c1bb62e8216b522e581e4238957969faa51089ef929246a"
+    },
+    {
+      "proof_id": "L:cameron-supported-tensor",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED (the proof text is unchanged; only LF locations shifted).",
+        "new_explanations_raw": "none introduced (text identical)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 71,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "6054727dddeeca552936aee9ddc64039bab5aa74ea60a95c6d4efc0fff0a5bdd",
+      "mathematical_check": "The unchanged tensor proof isactually reconstructed: physicaltime-space Fubini on separated smoothtests givesexactproductinnerproducts afterbothnullquotients. Uniformtimepartitions/spatialslices approximate onacommoncompactinteriorsupport withtheexplicit epsilon^2 |A|Gamma(A-A) finite-timekernel error, givingdensity andcountability. QuotientGramSchmidt preservescompacttestrepresentatives, completeness closes theisometricH embedding inH_W, andthefiniteONBprojection remainsorthogonalthere. It doesnotbecome multiplicationbyatimeindicator ordisjoint-timeindependence.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        150,
+        156
+      ],
+      "old_proof_lf": [
+        158,
+        176
+      ],
+      "old_statement_sha256": "aa1d7b7f262447b344605b2fdc1122f19c45124d842df9a1f6eb67e0ed2bcb2d",
+      "old_proof_sha256": "6d0ed58bde75275873db943d1b9f14fae2247a48a4089809631fdb741c52ece5",
+      "new_statement_lf": [
+        194,
+        200
+      ],
+      "new_proof_lf": [
+        202,
+        220
+      ],
+      "new_statement_sha256": "aa1d7b7f262447b344605b2fdc1122f19c45124d842df9a1f6eb67e0ed2bcb2d",
+      "new_proof_sha256": "6d0ed58bde75275873db943d1b9f14fae2247a48a4089809631fdb741c52ece5"
+    },
+    {
+      "proof_id": "P:cameron-temporal-map",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 92,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "9175c39827efe40e386cf7802a4492148211b10d299144124fe9113a9fdf27ee",
+      "mathematical_check": "The report derives strictpositivity/injectivity ofK fromthe unitary convolutionmultiplier2lambda/(lambda^2+xi^2)>0 andnonzero FourierL2norm, followedbypositiveGamma mixture; itsextraPaley-Wienercomment isunnecessary(R3). Schurboundedness/symmetry, square-integrable offdiagonaltruncations andnormtail2epsilon^(1-a)/(1-a) provecompactness withoutusing truncationsascovariances. The covarianceisometryK1/2 fromtests anddenseinjectiveselfadjointrange givesontoL2 aftercompletion, andCt=K1/2iota. The report explicitlychecks Youngexponentsr/2,rprime,tripleHolder andkernelintegrability ar/2<1, then covarianceCS/dualitygiveLr boundedness andr2interpolationcompactness. Orthonormalcellquadraticforms giveexact2N^a/[(1-a)(2-a)] divergence, rulingouttraceclass andHStoL2. The appropriateoutputGramian isK, withdomainGramian unitarilyconjugate(R4).",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        181,
+        193
+      ],
+      "old_proof_lf": [
+        195,
+        242
+      ],
+      "old_statement_sha256": "b361df61bd085655620b4c38aed551a9925d99c19e0ffe7a839bada653016213",
+      "old_proof_sha256": "3597fb28bd5460de6a58b9627134b7bc9fee44fcaf527440e150299b70fd87e1",
+      "new_statement_lf": [
+        225,
+        237
+      ],
+      "new_proof_lf": [
+        239,
+        314
+      ],
+      "new_statement_sha256": "b361df61bd085655620b4c38aed551a9925d99c19e0ffe7a839bada653016213",
+      "new_proof_sha256": "99af347ddca17081e2a3e4e18d1fedba8d1473fd019bc52daf078e45b740f68f"
+    },
+    {
+      "proof_id": "P:cameron-full-mean",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED. The added Step 2 citation is the correct bound and the support-volume remark is elementary.",
+        "new_explanations_raw": "JUSTIFIED. The added Step 2 citation is the correct bound and the support-volume remark is elementary."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 135,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "7fb932f656e2c57eb11854b6f6c5520d979e63e67359dfe6e0114fdabcd66b06",
+      "mathematical_check": "The report reconstructs the dimension-freefiniteHilberttensor temporal bound frompositivetimekernel andthe scalarYoung estimate, then finite-dimensionaldual normdirection andsmoothcoefficient approximation extendU tostronglymeasurable Lr H_sp. Spatialcovariance isappliedonce byTsp, nottwice. Separatedcontrols anduniformsame-supportmeanerror plus||BF(b)||<=||b||infinity+||b||2 identifytheactual smooth multiplier; generalHfields arecompletedoperators only. Spatialfiniteprojections approximateT inoperatornorm, andeachfiniteprojectioncombines compactCt coordinates, yieldingcompactfullmean ratherthanfalsecompactness oftensorinfiniteidentity. The supportedP_J weak-null/compactnesscontradiction provesepsilon_J→0 atfixedR.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        250,
+        270
+      ],
+      "old_proof_lf": [
+        272,
+        315
+      ],
+      "old_statement_sha256": "66fb92b3b0beef06a2d66ed1f50f6dd7f5a0e8c4a23ffd7bc8818b02442b7a02",
+      "old_proof_sha256": "7c2391125312b6223a2dd1b705db9b0d29b6d36578c424c196fdd13ff24f4dca",
+      "new_statement_lf": [
+        322,
+        342
+      ],
+      "new_proof_lf": [
+        344,
+        408
+      ],
+      "new_statement_sha256": "66fb92b3b0beef06a2d66ed1f50f6dd7f5a0e8c4a23ffd7bc8818b02442b7a02",
+      "new_proof_sha256": "e7fb72e6a38e779082e69ff55708b2da1fdae3f24af8d11c1c4842fc05ada783"
+    },
+    {
+      "proof_id": "L:cameron-actual-residual",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 167,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "f4faa9a7ee9281f26f93bd0bbf270e184d47fff65e5373a4291b4bac78dc80c5",
+      "mathematical_check": "The public residualnoisevariance followsoriginaltimepullbackisometry andorthogonalQJ, soGaussiantransferuses thesameW andbothconstantcolumns/localizations. Astrongerbeta exponent thenconstantstopping/polygonal approximation giveslittleCtheta tuplewithcompactvalues andzerolastemptycell. The report explicitlyprovesobservedslowrowsbelongH_I byendpointindicatorapproximation againstintegrabletime/localRadoncovariance, andQJ preserves thatclosedsubspace. It thenuses theessential projectedtransfer P_H QJ T_delta,m: observedrows unchanged, countablestates/rationaltimes identifythe samepaths, andeachfunctional is anL2limit inCLOSED W(H_I). This supplies actualfirst-chaos supportedtests, notmerely Gaussianity orsupportofeachglobalbasisvector.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        341,
+        352
+      ],
+      "old_proof_lf": [
+        354,
+        381
+      ],
+      "old_statement_sha256": "2ac9ff935eb6ddaa1cdb00ad9188f01bdb0b5d690229f9f76c95c166c27c204f",
+      "old_proof_sha256": "d6c0da3bed13784110dddcfcccac51e55d21ae50acc62ecabe25d0cc64d11a43",
+      "new_statement_lf": [
+        434,
+        445
+      ],
+      "new_proof_lf": [
+        447,
+        496
+      ],
+      "new_statement_sha256": "2ac9ff935eb6ddaa1cdb00ad9188f01bdb0b5d690229f9f76c95c166c27c204f",
+      "new_proof_sha256": "08199277474ef1cfbf25f889109c514ef372c06e724c39fd0708665b6a66a26a"
+    },
+    {
+      "proof_id": "P:cameron-actual-embedding",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. New explanations: JUSTIFIED.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 189,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "17fd31faef452f7146ff0e29c30cd607f8e965cd94ee1717efcc9ef91fd5b5c5",
+      "mathematical_check": "The report computes signed smoothcontrol covariance, selfadjointQJ andtheexacttimeJacobian delta^(a/2); multiplicationbyg_delta givessqrtdelta. It explicitlyretains the constantvelocity-induceddisplacementv andconstantdisplacement1. Strongfreegroup ANDadjoint continuity inweightedmatrixcoordinates pluscompactoperatorconjugation giveBochnermeasurability, withoutoperatornormfreecontinuity. Cruciallythe incrementbound usesG_B^2ONCE andtheUNCONJUGATED M=TQJ Phi normpulledback asdelta^-1/r||M||Lr(I_m), yielding bothBpowers and1-1/r>theta. Simpleintegrandapproximation/constantstopping, fixedparametercovariancecontinuity anddensity extendthepathidentitytoallH. Supportedfirst-chaos kernelsidentifyH_seen/perpkernel andminimumoriginalHpreimage norm asCameronembedding, withoutinversecovariance. Finitepowermeanat r/p>1 andtheTRUEfull/last/empty partitiongive sumt_m^r=||M||Lr^r,delta n<=2/B andexactdelta-weighted factor(2/B)^(1/p-1/r)epsilon_J. FixedR andbothconstantcolumnsremainexplicit.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        383,
+        407
+      ],
+      "old_proof_lf": [
+        409,
+        478
+      ],
+      "old_statement_sha256": "df399b3a7a2e3ed79b2f8e84d2d63b475173e010b883b7bc5c2188d4a73c52fc",
+      "old_proof_sha256": "aeffc7c7ee5f891d6936d25d244111a91ccdd885525b60f71bf3f7596901341c",
+      "new_statement_lf": [
+        498,
+        522
+      ],
+      "new_proof_lf": [
+        524,
+        625
+      ],
+      "new_statement_sha256": "df399b3a7a2e3ed79b2f8e84d2d63b475173e010b883b7bc5c2188d4a73c52fc",
+      "new_proof_sha256": "17cefbc6c6ba3953b29c0b45b3d6008033bf36ee4a7fc7d6fc6b79b30d1e1549"
+    }
+  ],
+  "mathematical_checks": [
+    "The report reconstructs the H1 product completion under the stated absolute four-linear/PSD input, including product-difference independence andsquare polarization. Real radial frequency bands havegradnorm<=2^j L2norm, henceN(f_j)<=2^(j alpha/4)||f_j||2. The explicit weightedCS/geometricseries and2^s Hs bound giveC_s foralpha/4<s<1/2, andthe same reasoning yieldssum||f_j||2 finite. Absolute bandquadruple estimates, positiveTonelli andtwo-positionnulltransfer identifyphysicalproductseries; the absolutely H_sp-convergent doubleproduct series anddensity give completed bilinearity/uniqueness. ConstantsC_s^2sqrtRsp andC_s^4Rsp areexact, withnoLpmultiplier claim.",
+    "The public row usesactualF displacement/c1 andweightedvelocitywprime=Lambda^-1w2, compactphysicalmeanFubini andevenGamma toobtain B_Gamma(q,k). Fractionalproduct continuity controlsrows inH_sp. FixedR localizedH1/2 factors areprecompactHs via the namedcutoff theorem, withthe c1 family finite-dimensional; theirproductrow closureL iscompact. Rowbounds annihilatenull classes andextend theoperator. Smoothmaskedpotentials havecompactH1/2→H^-1/2 multiplication andfinite-rankc1/zeroinstantc2 columns; normclosure givescompactvalues. SmoothONB spatialprojections convergeuniformly oncompactL byfinitenets, soTspQ_n approximatesTsp ascompactmaps. Oneexplicitlocalbound dropssupportvolume|K|(R1), butthe neededfixed-supportconstant estimate isvalid andthe same report later states thecorrectvolume-bearing tensorbound. Its criticism ofgeneral-stateL1products isfalse(R2); sourceq isstill smooththere andlocalizedstatefactorsareL2.",
+    "The unchanged tensor proof isactually reconstructed: physicaltime-space Fubini on separated smoothtests givesexactproductinnerproducts afterbothnullquotients. Uniformtimepartitions/spatialslices approximate onacommoncompactinteriorsupport withtheexplicit epsilon^2 |A|Gamma(A-A) finite-timekernel error, givingdensity andcountability. QuotientGramSchmidt preservescompacttestrepresentatives, completeness closes theisometricH embedding inH_W, andthefiniteONBprojection remainsorthogonalthere. It doesnotbecome multiplicationbyatimeindicator ordisjoint-timeindependence.",
+    "The report derives strictpositivity/injectivity ofK fromthe unitary convolutionmultiplier2lambda/(lambda^2+xi^2)>0 andnonzero FourierL2norm, followedbypositiveGamma mixture; itsextraPaley-Wienercomment isunnecessary(R3). Schurboundedness/symmetry, square-integrable offdiagonaltruncations andnormtail2epsilon^(1-a)/(1-a) provecompactness withoutusing truncationsascovariances. The covarianceisometryK1/2 fromtests anddenseinjectiveselfadjointrange givesontoL2 aftercompletion, andCt=K1/2iota. The report explicitlychecks Youngexponentsr/2,rprime,tripleHolder andkernelintegrability ar/2<1, then covarianceCS/dualitygiveLr boundedness andr2interpolationcompactness. Orthonormalcellquadraticforms giveexact2N^a/[(1-a)(2-a)] divergence, rulingouttraceclass andHStoL2. The appropriateoutputGramian isK, withdomainGramian unitarilyconjugate(R4).",
+    "The report reconstructs the dimension-freefiniteHilberttensor temporal bound frompositivetimekernel andthe scalarYoung estimate, then finite-dimensionaldual normdirection andsmoothcoefficient approximation extendU tostronglymeasurable Lr H_sp. Spatialcovariance isappliedonce byTsp, nottwice. Separatedcontrols anduniformsame-supportmeanerror plus||BF(b)||<=||b||infinity+||b||2 identifytheactual smooth multiplier; generalHfields arecompletedoperators only. Spatialfiniteprojections approximateT inoperatornorm, andeachfiniteprojectioncombines compactCt coordinates, yieldingcompactfullmean ratherthanfalsecompactness oftensorinfiniteidentity. The supportedP_J weak-null/compactnesscontradiction provesepsilon_J→0 atfixedR.",
+    "The public residualnoisevariance followsoriginaltimepullbackisometry andorthogonalQJ, soGaussiantransferuses thesameW andbothconstantcolumns/localizations. Astrongerbeta exponent thenconstantstopping/polygonal approximation giveslittleCtheta tuplewithcompactvalues andzerolastemptycell. The report explicitlyprovesobservedslowrowsbelongH_I byendpointindicatorapproximation againstintegrabletime/localRadoncovariance, andQJ preserves thatclosedsubspace. It thenuses theessential projectedtransfer P_H QJ T_delta,m: observedrows unchanged, countablestates/rationaltimes identifythe samepaths, andeachfunctional is anL2limit inCLOSED W(H_I). This supplies actualfirst-chaos supportedtests, notmerely Gaussianity orsupportofeachglobalbasisvector.",
+    "The report computes signed smoothcontrol covariance, selfadjointQJ andtheexacttimeJacobian delta^(a/2); multiplicationbyg_delta givessqrtdelta. It explicitlyretains the constantvelocity-induceddisplacementv andconstantdisplacement1. Strongfreegroup ANDadjoint continuity inweightedmatrixcoordinates pluscompactoperatorconjugation giveBochnermeasurability, withoutoperatornormfreecontinuity. Cruciallythe incrementbound usesG_B^2ONCE andtheUNCONJUGATED M=TQJ Phi normpulledback asdelta^-1/r||M||Lr(I_m), yielding bothBpowers and1-1/r>theta. Simpleintegrandapproximation/constantstopping, fixedparametercovariancecontinuity anddensity extendthepathidentitytoallH. Supportedfirst-chaos kernelsidentifyH_seen/perpkernel andminimumoriginalHpreimage norm asCameronembedding, withoutinversecovariance. Finitepowermeanat r/p>1 andtheTRUEfull/last/empty partitiongive sumt_m^r=||M||Lr^r,delta n<=2/B andexactdelta-weighted factor(2/B)^(1/p-1/r)epsilon_J. FixedR andbothconstantcolumnsremainexplicit."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "proof_id": "P:cameron-spatial-map",
+      "classification": "report-only omitted support-volume factor in local covariance estimate",
+      "old": "|B_Gamma(f,g)|<=Gamma(K-K)||f||infinity||g||infinity",
+      "new": "|B_Gamma(f,g)|<=|K| Gamma(K-K)||f||infinity||g||infinity forbothsupportsinK",
+      "contrary_calculation": "In admissibled1 spatialwhiteGamma=delta0, choose realcompact smoothf=g withsup1,equal1on[-1,1],supportedinK=[-2,2]. B_Gamma(f,f)=intf^2>=2, whileGamma(K-K)=1, so theliteralwrittenbound<=1 fails.",
+      "disposition": "Raw report unchanged. The correctfixed-supportconstant estimate sufficesforseparability, source statesconstanttimes, andthepublicsupportedtensorsectionlater carries thecorrect |A|Gamma(A-A) bound. No source repair ormissingcriticalcompactnessstep.",
+      "report_lf": 65
+    },
+    {
+      "id": "R2",
+      "proof_id": "P:cameron-spatial-map",
+      "classification": "false source criticism caused by changing the quantifier under discussion",
+      "disposition": "The source sentence concerns arbitrarySTATESz,w whileq isstill smoothcompact. ThelocalizedH1/2 factors areinL2, sotheirproduct isL1 byCS; Gamma*q isbounded onthecompactstatesupport. Onlyafterthisstep doesq extendthroughH_sp completion, withoutclaimingpointwisepotentialrepresentatives. The source iscorrect andneedsnoqualification.",
+      "report_lf": 69
+    },
+    {
+      "id": "R3",
+      "proof_id": "P:cameron-temporal-map",
+      "classification": "unnecessary added theorem dependency, not a source gap",
+      "disposition": "For strictpositivity theweight2lambda/(lambda^2+xi^2) isstrictlypositiveeverywhere. Plancherel gives||fhat||2=||f||2>0, whichalone implies theweighted integral>0. No Paley-Wiener nonvanishing theorem isneeded orusedbythesource. The publicpositive-weightcalculation already supplies thecorrectproof, so theextraimplicit-dependency commentdoesnotcreateamissinginput.",
+      "report_lf": 133
+    },
+    {
+      "id": "R4",
+      "proof_id": "P:cameron-temporal-map",
+      "classification": "Gramian type precision",
+      "disposition": "ForCt=K1/2 iota:H_t→L2, theOUTPUTGramianCt Ct*=K onL2; thedomainGramianCt*Ct=iota* K iota onH_t. Eitherhas the same nonzeroeigenvalues throughthesurjectiveisometry, sotheconclusionnotHilbertSchmidt iscorrect. Do notinterpret theunqualifiedwordGramian as theincorrecttypedidentityCt*Ct=K.",
+      "report_lf": 125
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 26498,
+      "sha256": "ba5659b4af82aa3faf4a2fe933507a5afff4a166b844ec3855e5e35cdb82dc8a"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 4950,
+      "sha256": "5a1b26584f386300f3afdb9c7922a4ce892be08d4faa87397730cf052819e794"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 10182,
+      "sha256": "fec6d2befadc570b90fbb9aff5a9628e5f82ae1e0ce59573950234a77a3007ab"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 5838,
+      "sha256": "1061a40e3b56ce2487e15aa788301e72736d3f5857130804d8054668c10ef6e9"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 11140,
+      "sha256": "b9392583ca1d3e1babccceffc9a66fb516335c70fb9fcee279c46f4cc2bf1b17"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 6343,
+      "sha256": "ac2b29f836f830a18939a31355de1c946d3721c34b5a731e6279d432c8e1ac9c"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 24138,
+      "sha256": "0ecbf05a70a7d5d79c9e2285dcadb93567687d4e463bfe4f6b0fdac5ff6f016d"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 30414,
+      "sha256": "216e0d08cf8c7ed1c04e840d85319a8a9014ae646fd4c98c6ee2d6d609743f1f"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-integrated_spatial_occupation-baseline.txt",
+      "bytes": 22407,
+      "sha256": "ed2f96133f5e969ba4d24fca051da4fcfcbf1377d6d18aa6a5e8385b66e5a12f"
+    },
+    {
+      "path": "inputs/context-integrated_raw_block_lower-baseline.txt",
+      "bytes": 35928,
+      "sha256": "ed2f85038ef6136eb8581fa64cab4962cde40bdbdba9ff163dd832c4fa5ad992"
+    },
+    {
+      "path": "inputs/context-integrated_source_convergence-baseline.txt",
+      "bytes": 25085,
+      "sha256": "f212bad41254a78109e5802def45053c8bda53a416cda9f457513406304aaef4"
+    },
+    {
+      "path": "inputs/context-integrated_constant_phase_young-baseline.txt",
+      "bytes": 27376,
+      "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+    },
+    {
+      "path": "inputs/context-integrated_actual_operator_driver-baseline.txt",
+      "bytes": 35818,
+      "sha256": "add3561f9a2e846f9992d91a10385d8b8e99406359eaabae640520366b184f0e"
+    },
+    {
+      "path": "inputs/context-integrated_covariance_foundation-baseline.txt",
+      "bytes": 21173,
+      "sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020"
+    },
+    {
+      "path": "inputs/context-P-cutoff-singular-values.txt",
+      "bytes": 30608,
+      "sha256": "caf9e56a5b818f9e5daa02ac3423c354b95c515f1932d92170ec002b0fbaa84a"
+    }
+  ],
+  "input_identity_checks": "All delivered source/context payload hashes and WHOLE_FILE pinned Git byte identities verified; every complete OLD/NEW statement/proof independently checked by LF/bytes/SHA. Complete target text read with baseline comparisons and genuine needed stated inputs, not merely delta QA.",
+  "source_currentness": {
+    "covered_launch_revision": "3fd655ab0505b7893e778afebe53b5a1427ae97b",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "limit": "Only this exact assigned source versuscdde and supplied context; no older report rebinding, unexamined successor or whole-book seal."
+  },
+  "read_limits": [
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority"
+}

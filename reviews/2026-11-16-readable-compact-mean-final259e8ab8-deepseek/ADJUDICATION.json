@@ -1,0 +1,477 @@
+{
+  "review_record_id": "RP051",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "259e8ab8ca34d472827d4fb60cb9bee04b30e042",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_compact_mean_family.tex",
+  "source_binding_sha256": "fe8fddd4f9117a3d7f287181a72c48219d650e2dfc2c218173948cf8ee01c726",
+  "public_report_sha256": "0aaf70ace4ffcc42f352720de532cc801f75f2c226511668dc32eade9231bf1a",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_PARTIAL_REQUIRED_PUBLIC_RECONSTRUCTION_ROOT_REVIEWS",
+  "requested_reread_complete": false,
+  "per_proof_reconstruction": {
+    "P:compact-ground-family": {
+      "status": "PARTIAL",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [
+        "Required H1 form-domain identification is not reconstructed publicly: establishH2 core inD(A1/2) by spectral cutoffs, H2denseH1 by Fouriercutoffs, then identify equivalent completions through their commonL2limits. SourceNEW78–82/OLD68–72 supplies these steps."
+      ],
+      "limits": [],
+      "report_notes": [
+        "R3"
+      ]
+    },
+    "L:compact-fractional-phase": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:compact-E-wave": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:compact-F-projection": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:compact-F-complement": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:compact-raw-profile": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1",
+        "R2"
+      ]
+    },
+    "P:compact-original-common-trial": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "P:compact-ground-family",
+      "author_reconstruction_status": "PARTIAL",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 11,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "611a7fe0db5f0f7a61e1a5289af11ace565fb830d75975181a8e1df026858e99",
+      "mathematical_check": "The report correctly applies the stated compact-potential H2 operator/essential-threshold input, derives the exact shifted H2 form inequalities from1<=c-V<=c, places the bottom in[-M,-epsilon] before applying simple-positive-ground-state theorem, and obtains level/rate gaps via the common max-min tests and compactness. Its ground-state decomposition with positive overlap, two-sided form estimates, gap bound and eigenfunction equation gives exact L2 distance4dV/Delta and H2 continuity/bound1+2M. However the assigned form-domain completion step is only asserted in original-step1: no public spectral-cutoff core ofH2 forD(A1/2), Fourier H2 density inH1 or common-L2 completion identification is supplied. NEW78–82/OLD68–72 explicitly supplies this source argument. Mark PARTIAL for required public reconstruction, not a source defect; the report norm inequality alone does not show that the two claimed completions are the full respective domains.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": true,
+      "old_statement_lf": [
+        33,
+        54
+      ],
+      "old_proof_lf": [
+        56,
+        112
+      ],
+      "old_statement_sha256": "2f16420c27e203b86cfeb4b273cec7a50f4fde311a796acdccd8e311cdd67e9c",
+      "old_proof_sha256": "70306647b5fe302f3c9375b6dae8354161bde75e8629001f7a6171861c4741e4",
+      "new_statement_lf": [
+        33,
+        54
+      ],
+      "new_proof_lf": [
+        56,
+        135
+      ],
+      "new_statement_sha256": "2f16420c27e203b86cfeb4b273cec7a50f4fde311a796acdccd8e311cdd67e9c",
+      "new_proof_sha256": "383c48cbe29d12f05563be4873dd95d977a8830d580138a9525a1c75b0d7a275"
+    },
+    {
+      "proof_id": "L:compact-fractional-phase",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 35,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "925b62e474bfb9ba0793cec41f4a19b09a9fd5b137255a171f354227058f6eb9",
+      "mathematical_check": "The report reconstructs the completed-square variational resolvent identity with the actual common form domain, reversed resolvent order, I-t inverse order, positive square-root scalar integral and monotone spectral Tonelli. ApplyingB<=A<=cB AS FORMS gives squared quarter-power norms and both domain inclusions, hence exact1,c^(1/4) constants andH1/2 domain. The dual norm is obtained byCS and the explicit A^-1/2z maximizer (zeroz trivial); completion yieldsH^-1/2 with uniformc constants. This target consumes the preceding stated form-domain result as allowed target sequencing; the missing public proof in that preceding target remains recorded separately, not converted into a source defect or automatic second partial.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        118,
+        133
+      ],
+      "old_proof_lf": [
+        135,
+        164
+      ],
+      "old_statement_sha256": "7b16e27dedd0036efa97e6fc544bb48e44a703ed6cc5e6d807708cc3292ebf7d",
+      "old_proof_sha256": "25c76b029b82a57a0f965944078cfbaf9df33d37ac5f71ff12a8b18b099ad2d6",
+      "new_statement_lf": [
+        141,
+        156
+      ],
+      "new_proof_lf": [
+        158,
+        205
+      ],
+      "new_statement_sha256": "7b16e27dedd0036efa97e6fc544bb48e44a703ed6cc5e6d807708cc3292ebf7d",
+      "new_proof_sha256": "ba87a1926516947c72156416727d11e9c2702ee80ca7ddb5af049a3e1266972f"
+    },
+    {
+      "proof_id": "P:compact-E-wave",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 59,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "88a8154219017c060eb53cd85b01fe4d3d6690ebb2b5077847968435924f7887",
+      "mathematical_check": "The report explicitly conjugates the spectral wave throughU=A1/4u,Z=A^-1/4z to compute both weighted off-diagonal symbols. It bounds positive/zero/negative spectrum, includingmu0, and checks the complementary spatial spectral support. Both ground branches/projections are retained; the decaying branch stays inI-Pi, with exact phase normc/sqrt(c-lambda^2) and positive rate floor controlling projections. Graph norms/strong Fourier group onH1xL2, spectral differentiation, bounded potential forcing andDuhamel/Picard on dense E data identify the physicalE flow without density ofE inF or an operator-norm derivative. No unmasked eigenstate or unsupported noncommuting power inequality is asserted.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        166,
+        187
+      ],
+      "old_proof_lf": [
+        189,
+        252
+      ],
+      "old_statement_sha256": "511b528abc40883b5f0b162f61d080501c363a689e2d8070fa8f2a9a9b563e5c",
+      "old_proof_sha256": "557775aa74591121e6c3ed92a5bd5d301f228da36a0a63909d9c7aec7060861e",
+      "new_statement_lf": [
+        207,
+        228
+      ],
+      "new_proof_lf": [
+        230,
+        318
+      ],
+      "new_statement_sha256": "511b528abc40883b5f0b162f61d080501c363a689e2d8070fa8f2a9a9b563e5c",
+      "new_proof_sha256": "47a1cd935f20290d19b46f1c0d764d6c24cc8676cb09842bdb1979a1cf13bc0d"
+    },
+    {
+      "proof_id": "P:compact-F-projection",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 84,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "8ed9cca7193349e64bd4da7c1d689e808668466baf9a71472adcb983b0ab9d09",
+      "mathematical_check": "The public variation-of-constants computation includes the finite E-valued Fubini triangle, bounded horizon norms and ordinaryDuhamel uniqueness onF, preserving both constant columns. The finite positive f_sigma pairing uses onlyL2, not groundL1. Two full exponential integrals and the shifted tail give the exact constant dualf(c1/lambda+c2/lambda^2), and combining finite head plus tail proves both projection eigen-identities andnormalization. H2 state continuity and uniform rate floor give norm continuity ofvectors/duals/projections. Positivity ofphi on a positive-measure set and ground positivea.e. yield strictly positive integrals; compact parameter set gives uniform margins, with no pointtrace.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        262,
+        294
+      ],
+      "old_proof_lf": [
+        296,
+        342
+      ],
+      "old_statement_sha256": "0ddba8a78fd03e1f673c548ebcf320f17d032e1974ca482380a835c57b934a85",
+      "old_proof_sha256": "c0b4e64d41a1811db5b8cb396f4a80a7eb7f269dd264cd50558452d6720eb7dd",
+      "new_statement_lf": [
+        328,
+        360
+      ],
+      "new_proof_lf": [
+        362,
+        429
+      ],
+      "new_statement_sha256": "0ddba8a78fd03e1f673c548ebcf320f17d032e1974ca482380a835c57b934a85",
+      "new_proof_sha256": "c9930443bad8c06ba8dd297ca766771bd42fd28460ba77ee89d14292d082ca6b"
+    },
+    {
+      "proof_id": "P:compact-F-complement",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 107,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "8f01a1bbe5e022c4a203bacf7ac8358be871cd55929eac661883e36840a75a18",
+      "mathematical_check": "The report computes the exact growing-forcing cancellation after subtracting the fullF projection and retains -eE ellC(C(t)c). The complementaryE integral has(1+t-r)(1+r) envelope; exact integral t+t^2+t^3/6 plusfirst/tail/constant terms yieldsC(1+t)^3 exp(mu t). It uses stricteta<d0 to absorb the polynomial into exp(-eta t). Subtraction of statewiseDuhamel equations and uniform finitehorizon bounds reduce parameter dependence to scalarGronwall; countable dense states make operatornorm measurable without aBanach-operator derivative or operatornormcontinuity ofthefreegroup.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        349,
+        367
+      ],
+      "old_proof_lf": [
+        369,
+        406
+      ],
+      "old_statement_sha256": "266fc8ac90d0b66670e7dc32d2908f7439ea443ceb930f3ce2d2f53b201f2b15",
+      "old_proof_sha256": "8835e9f8781cdfa64fb235ec74b6c44c4469af02532adc7cfd206b46e7b088d2",
+      "new_statement_lf": [
+        436,
+        454
+      ],
+      "new_proof_lf": [
+        456,
+        521
+      ],
+      "new_statement_sha256": "266fc8ac90d0b66670e7dc32d2908f7439ea443ceb930f3ce2d2f53b201f2b15",
+      "new_proof_sha256": "604563bc885f81f5a6856acc1e711da2d8d8c9a899aaf4497e0d2f2e46086d08"
+    },
+    {
+      "proof_id": "L:compact-raw-profile",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 130,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "cba135ef9fd16ff1925284425db67e0c28efc410790ed1387e272a2acb360db5",
+      "mathematical_check": "The report reconstructs the original covariance convolution mean/cost with finite compact Radon mass and exact temporal integral2/[(1-a)(2-a)], though one formal mean equation has a duplicated differential (R2). Autocorrelation positivity nearzero plus positive finite origin-ball mass gives strictly positiveQ(qbar); timekernel>=1 yieldsboth meanfloor andcostfloor. One displayed ball scaling exponent is reversed (R1); its required use here is positivity at everyradius, which follows irrespective of this mistaken sign, and the later trial calculation independently uses the CORRECT d-alpha exponent. The report distinguishes nonnegative nonzero lowerprofile from global pointwisepositivity. Deterministic test zero-extension and r=s-u let every derivative land on the compact test under integrable majorants, giving fixedmask smoothness/Lipschitz. OriginalW/control/amplitude remain unchanged.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        414,
+        440
+      ],
+      "old_proof_lf": [
+        442,
+        474
+      ],
+      "old_statement_sha256": "dc4249632e416888dee4c90d6ffb3df1546a0f4618c74475354795ff9fddc022",
+      "old_proof_sha256": "6c84db0c742beab0b40f7f832ec5c89e3bdb9ab0a7b9ee8cd4eaf4419af2905a",
+      "new_statement_lf": [
+        529,
+        555
+      ],
+      "new_proof_lf": [
+        557,
+        604
+      ],
+      "new_statement_sha256": "dc4249632e416888dee4c90d6ffb3df1546a0f4618c74475354795ff9fddc022",
+      "new_proof_sha256": "b5700994f82dc46dfbd6741e2060a009a7872b7bf758b4d3d23b82a7c152ea5e"
+    },
+    {
+      "proof_id": "P:compact-original-common-trial",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 154,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "05ab6e6abe466cbf85e14718aa1c0a44a23fb591230f0a8f80ea53174c7b6b2f",
+      "mathematical_check": "The report reconstructs the full dilated unittrial, maskplateau onB_(2L), recovered meanfloor and positiveTonelli. The LebesguefactorL^-d and CORRECT Radonmass Gamma(B_(L/2))=(L/2)^(d-alpha) Gamma(B1) give exactC_Gamma L^-alpha withC_Gamma=c0^2 2^(alpha-d)Gamma(B1)intqbar. KineticDpsi L^-2 is dominated becausealpha<2; common negative margin holds at everyparameter including0. Only after fixing finiteR does the groundfamily theorem apply. Identicaltestlevel continuity and lambda_sigma+lambda_tau>=2sqrt(epsilonR) give the exact control-dependentrate Lipschitz bound. The originalPsi,W(Psi),variance stayfixed while trial/mask grow; no all-strength fixed-potential binding or source/time/radiusexchange is claimed.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        480,
+        489
+      ],
+      "old_proof_lf": [
+        491,
+        532
+      ],
+      "old_statement_sha256": "4043cc098fdf583219f2af812aa5eb4800d080ebf3fd66d753072aa1a0b3ff4b",
+      "old_proof_sha256": "6695c427311b0ea3527e9b9e36b5010c304900ddf781442a0a95056ecd12ad3b",
+      "new_statement_lf": [
+        610,
+        619
+      ],
+      "new_proof_lf": [
+        621,
+        682
+      ],
+      "new_statement_sha256": "4043cc098fdf583219f2af812aa5eb4800d080ebf3fd66d753072aa1a0b3ff4b",
+      "new_proof_sha256": "e002416b472624aefc620dd4e0f4e640fccc2a6e5c3461f7c6483c9e3f403aac"
+    }
+  ],
+  "mathematical_checks": [
+    "The report correctly applies the stated compact-potential H2 operator/essential-threshold input, derives the exact shifted H2 form inequalities from1<=c-V<=c, places the bottom in[-M,-epsilon] before applying simple-positive-ground-state theorem, and obtains level/rate gaps via the common max-min tests and compactness. Its ground-state decomposition with positive overlap, two-sided form estimates, gap bound and eigenfunction equation gives exact L2 distance4dV/Delta and H2 continuity/bound1+2M. However the assigned form-domain completion step is only asserted in original-step1: no public spectral-cutoff core ofH2 forD(A1/2), Fourier H2 density inH1 or common-L2 completion identification is supplied. NEW78–82/OLD68–72 explicitly supplies this source argument. Mark PARTIAL for required public reconstruction, not a source defect; the report norm inequality alone does not show that the two claimed completions are the full respective domains.",
+    "The report reconstructs the completed-square variational resolvent identity with the actual common form domain, reversed resolvent order, I-t inverse order, positive square-root scalar integral and monotone spectral Tonelli. ApplyingB<=A<=cB AS FORMS gives squared quarter-power norms and both domain inclusions, hence exact1,c^(1/4) constants andH1/2 domain. The dual norm is obtained byCS and the explicit A^-1/2z maximizer (zeroz trivial); completion yieldsH^-1/2 with uniformc constants. This target consumes the preceding stated form-domain result as allowed target sequencing; the missing public proof in that preceding target remains recorded separately, not converted into a source defect or automatic second partial.",
+    "The report explicitly conjugates the spectral wave throughU=A1/4u,Z=A^-1/4z to compute both weighted off-diagonal symbols. It bounds positive/zero/negative spectrum, includingmu0, and checks the complementary spatial spectral support. Both ground branches/projections are retained; the decaying branch stays inI-Pi, with exact phase normc/sqrt(c-lambda^2) and positive rate floor controlling projections. Graph norms/strong Fourier group onH1xL2, spectral differentiation, bounded potential forcing andDuhamel/Picard on dense E data identify the physicalE flow without density ofE inF or an operator-norm derivative. No unmasked eigenstate or unsupported noncommuting power inequality is asserted.",
+    "The public variation-of-constants computation includes the finite E-valued Fubini triangle, bounded horizon norms and ordinaryDuhamel uniqueness onF, preserving both constant columns. The finite positive f_sigma pairing uses onlyL2, not groundL1. Two full exponential integrals and the shifted tail give the exact constant dualf(c1/lambda+c2/lambda^2), and combining finite head plus tail proves both projection eigen-identities andnormalization. H2 state continuity and uniform rate floor give norm continuity ofvectors/duals/projections. Positivity ofphi on a positive-measure set and ground positivea.e. yield strictly positive integrals; compact parameter set gives uniform margins, with no pointtrace.",
+    "The report computes the exact growing-forcing cancellation after subtracting the fullF projection and retains -eE ellC(C(t)c). The complementaryE integral has(1+t-r)(1+r) envelope; exact integral t+t^2+t^3/6 plusfirst/tail/constant terms yieldsC(1+t)^3 exp(mu t). It uses stricteta<d0 to absorb the polynomial into exp(-eta t). Subtraction of statewiseDuhamel equations and uniform finitehorizon bounds reduce parameter dependence to scalarGronwall; countable dense states make operatornorm measurable without aBanach-operator derivative or operatornormcontinuity ofthefreegroup.",
+    "The report reconstructs the original covariance convolution mean/cost with finite compact Radon mass and exact temporal integral2/[(1-a)(2-a)], though one formal mean equation has a duplicated differential (R2). Autocorrelation positivity nearzero plus positive finite origin-ball mass gives strictly positiveQ(qbar); timekernel>=1 yieldsboth meanfloor andcostfloor. One displayed ball scaling exponent is reversed (R1); its required use here is positivity at everyradius, which follows irrespective of this mistaken sign, and the later trial calculation independently uses the CORRECT d-alpha exponent. The report distinguishes nonnegative nonzero lowerprofile from global pointwisepositivity. Deterministic test zero-extension and r=s-u let every derivative land on the compact test under integrable majorants, giving fixedmask smoothness/Lipschitz. OriginalW/control/amplitude remain unchanged.",
+    "The report reconstructs the full dilated unittrial, maskplateau onB_(2L), recovered meanfloor and positiveTonelli. The LebesguefactorL^-d and CORRECT Radonmass Gamma(B_(L/2))=(L/2)^(d-alpha) Gamma(B1) give exactC_Gamma L^-alpha withC_Gamma=c0^2 2^(alpha-d)Gamma(B1)intqbar. KineticDpsi L^-2 is dominated becausealpha<2; common negative margin holds at everyparameter including0. Only after fixing finiteR does the groundfamily theorem apply. Identicaltestlevel continuity and lambda_sigma+lambda_tau>=2sqrt(epsilonR) give the exact control-dependentrate Lipschitz bound. The originalPsi,W(Psi),variance stayfixed while trial/mask grow; no all-strength fixed-potential binding or source/time/radiusexchange is claimed."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "proof_id": "L:compact-raw-profile",
+      "classification": "report-only reversed origin-ball homogeneity exponent",
+      "old": "Gamma(B_r)=r^(alpha-d)Gamma(B1)",
+      "new": "Gamma(B_r)=r^(d-alpha)Gamma(B1)",
+      "contrary_calculation": "For admissibled2,alpha1,Gamma=delta0(dx1)dx2, Gamma(B1)=2 andGamma(B2)=4; the wrong formula gives1. The required positivity statement is stilltrue; the same public report later uses the correctd-alpha exponent in its complete common-trial calculation.",
+      "disposition": "Raw report unchanged. Source has the correct homogeneity. This sign error does not supply a new source correction or invalidate the independently correct trial scaling.",
+      "report_lf": 146
+    },
+    {
+      "id": "R2",
+      "proof_id": "L:compact-raw-profile",
+      "classification": "report-only formal singular-measure pairing notation",
+      "old": "Psi(u,y)F0(s,x)|s-u|^-a Gamma(d(x-y)) du dy ds dx",
+      "new": "integral ds du Gamma(dz) dx F0(s,x)|s-u|^-a Psi(u,x-z)",
+      "disposition": "For singularGamma one must not add a separate Lebesguedy after an already measure-valued Gamma(d(x-y)). The public convolution definitionh_s and its compact-supportFubini bound give the actual intended Radon pairing; source is precise and requires no edit.",
+      "report_lf": 144
+    },
+    {
+      "id": "R3",
+      "proof_id": "P:compact-ground-family",
+      "classification": "missing assigned public form-domain completion reconstruction",
+      "source_new_lf": [
+        78,
+        82
+      ],
+      "source_old_lf": [
+        68,
+        72
+      ],
+      "disposition": "Public norm equivalence onH2 is derived, but identification of the completions is only listed/asserted, without the spectralcutoff half-power core, Fourierdensity and commonL2limit steps in the assigned source. NativeCOMPLETE retained; author-sidePARTIAL, requested reread notcomplete. No source defect.",
+      "report_lf": 20
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": true,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 21312,
+      "sha256": "0aaf70ace4ffcc42f352720de532cc801f75f2c226511668dc32eade9231bf1a"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 7433,
+      "sha256": "f4718251711543effc904190eb1611bfdea48cb37624bd2d6efce5791c06d28d"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 10189,
+      "sha256": "8d0d2e013f2ffe19e5c898dc84c24e339d61b70a9ba1db193a742e649b3c4bce"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 3658,
+      "sha256": "fe8fddd4f9117a3d7f287181a72c48219d650e2dfc2c218173948cf8ee01c726"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 7813,
+      "sha256": "07e3dd90b8da69b87af6596f85b4cea4c656f30f4b06343c1dca0bd2097a7efa"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 4556,
+      "sha256": "3cc95febbea9a95b9c39182fba950921d14086d1451899e98d04e4a96a5d7c9c"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 25917,
+      "sha256": "39946946cc52bee56eb5ec2ab44111a2e8873df9b17ef65d322c0b42066325ca"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 33169,
+      "sha256": "3149356913139b69707c4854c3c9f750d67195d1574eee8a93b43abde6d51f43"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-constant-young-baseline.txt",
+      "bytes": 27376,
+      "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+    },
+    {
+      "path": "inputs/context-covariance-foundation-baseline.txt",
+      "bytes": 21173,
+      "sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020"
+    },
+    {
+      "path": "inputs/context-compact-gaussian-baseline.txt",
+      "bytes": 30608,
+      "sha256": "caf9e56a5b818f9e5daa02ac3423c354b95c515f1932d92170ec002b0fbaa84a"
+    }
+  ],
+  "input_identity_checks": "All delivered source/context payload hashes and WHOLE_FILE pinned Git byte identities verified; every complete OLD/NEW statement/proof independently checked by LF/bytes/SHA. Complete target text read with baseline comparisons and genuine needed stated inputs, not merely delta QA.",
+  "source_currentness": {
+    "covered_launch_revision": "259e8ab8ca34d472827d4fb60cb9bee04b30e042",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "limit": "Only this exact assigned source versuscdde and supplied context; no older report rebinding, unexamined successor or whole-book seal."
+  },
+  "read_limits": [
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority",
+  "root_reviewed_specific_coverage_point": "Root independently read actual public P:compact-ground-family working and full source target, and agreed PARTIAL for omitted half-power core/H1 density/common-L2 completion argument. This does not attribute every-line adjudication to root."
+}

@@ -1,0 +1,556 @@
+{
+  "review_record_id": "RP062",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS_WITH_NOTES",
+  "native_confidence": "high",
+  "source_revision": "3d2f4fb462f53837ec7825e15c9dcbacb2f69cd1",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_symplectic_phase.tex",
+  "source_binding_sha256": "20e7107b41d41ad314e30693a2346f38d5a188bae5c211077c32c08f3a79d85c",
+  "public_report_sha256": "d3ec423a5330bff86c3b8dcb92f04afaba58c920bccf5c4690cc712f619aa148",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_PARTIAL_REQUIRED_PUBLIC_RECONSTRUCTION_ROOT_REVIEWS",
+  "requested_reread_complete": false,
+  "per_proof_reconstruction": {
+    "L:symplectic-free": {
+      "status": "PARTIAL",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [
+        "FREE-INVARIANCEsubclauseomega(S(t)z,S(t)w)=omega(z,w): public2x2matrixmultiplication iswrong andnoindependentcorrectidentityisderived; determinant1isexplicitlycalledonlyacheck. Sourcecorrect; do notfillfromstandardSL2fact."
+      ],
+      "limits": [
+        "Onlyfree-invariancecalculationisPARTIAL. Compactendpoint/productbaselineindependentlyCHECKED andsufficesforPblockmean(andGaussian-tubeendpointuses)."
+      ],
+      "report_notes": [
+        "R1"
+      ],
+      "checked_subclauses": [
+        "balancedJ_E/form/force-skewness",
+        "compactYoungendpointdifference",
+        "translationcompact-perturbationnormbound",
+        "freeinversevelocity-reversalnorm>=1",
+        "finiteorderedcompactproductbaseline"
+      ]
+    },
+    "L:symplectic-source-mean": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R4"
+      ]
+    },
+    "P:symplectic-source": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [
+        "LOCAL CHECKED reconstruction, not unconditionalfullcoverage: dependsonthe assignedLfreeFREE-INVARIANCEsubclause withmissingpublicworking. SAMEparentgapforbothproofs, notasecond/thirdindependentgap."
+      ],
+      "report_notes": [],
+      "pending_assigned_inputs": [
+        {
+          "input_proof_id": "L:symplectic-free",
+          "input_subclause": "FREE_WAVE_INVARIANCE_ONLY",
+          "native_public_reconstruction_flag": "COMPLETE",
+          "author_reconstruction_status": "PARTIAL",
+          "source_correct": true,
+          "reason": "Requiredpublicmatrixidentitynotreconstructedcorrectly. IndependentcompactendpointsubclauseisCHECKED andnotaffected."
+        }
+      ]
+    },
+    "P:symplectic-raw": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [
+        "LOCAL CHECKED reconstruction, not unconditionalfullcoverage: dependsonthe assignedLfreeFREE-INVARIANCEsubclause withmissingpublicworking. SAMEparentgapforbothproofs, notasecond/thirdindependentgap."
+      ],
+      "report_notes": [
+        "R2",
+        "R3"
+      ],
+      "pending_assigned_inputs": [
+        {
+          "input_proof_id": "L:symplectic-free",
+          "input_subclause": "FREE_WAVE_INVARIANCE_ONLY",
+          "native_public_reconstruction_flag": "COMPLETE",
+          "author_reconstruction_status": "PARTIAL",
+          "source_correct": true,
+          "reason": "Requiredpublicmatrixidentitynotreconstructedcorrectly. IndependentcompactendpointsubclauseisCHECKED andnotaffected."
+        }
+      ]
+    },
+    "P:symplectic-block-mean": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [
+        "UsesindependentlyCHECKEDcompactendpointsubclauseonly,notmissingfree-invarianceorconservation."
+      ],
+      "report_notes": [
+        "R5",
+        "R6"
+      ],
+      "pending_assigned_inputs": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:symplectic-free",
+      "author_reconstruction_status": "PARTIAL",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (proof LF 63–134)",
+        "new_reading": "COMPLETE (proof LF 63–160)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. All OLD sentences appear; nothing substantive removed.",
+        "new_explanations_raw": "JUSTIFIED. The new Step 3 sentence is exactly the reverse-triangle-inequality computation given in (4): `‖S_E(h)τ_yz‖=‖τ_yS_E(h)z‖=‖S_E(h)z‖`, `Kτ_yz→0`, hence the `liminf ≥ ‖S_E(h)z‖` before the supremum. The \"Finally\" in Step 2 is only a vestigial transition word carried verbatim from OLD; not a mathematical issue."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 11,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "b561a4bbe23494fe29ab9965e83a480c0c7350020416aa43a8c6a7b9d53c651d",
+      "mathematical_check": "The report correctly constructsJ_E throughbalancedisometry, expands theSobolevdual form andchecks J^2=-I,J*=-J,||J||1. The actualPUBLICfree-invariance matrix multiplication isWRONG(R1): itproducesdiag(detW,detW) andcallsitJ. Thecorrectsource matrixproduct isnotpubliclyreconstructed;detW1 isexplicitlycalledonlya check, notanindependentidentityproof. MarkthissubclausePARTIAL withoutinsertingrootstandardSL2facts. The otherlocaldeductions AREpubliclycorrect: boundedrealforceomega-skew cancellation; Youngleftsumscompact andclosedideal giveendpointcompactdifference; whole-space translationsweaknull,compacttails andcommutingfreenorms give||S+K||>=||S||; velocityreversalandgroupinversesgivefree norm>=1; telescopingfiniteorderedproducts preservescompactdifference andlowernorm,includingzerolength. Thosecompact-endpointsubclauses donotdependonsymplecticfree-invariance andremainCHECKED.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": true,
+      "old_statement_lf": [
+        31,
+        61
+      ],
+      "old_proof_lf": [
+        63,
+        134
+      ],
+      "old_statement_sha256": "0f359f7135b6beaced7ea72997b09b42fda82ec91a0e7290f4ea6c9470d6f4bb",
+      "old_proof_sha256": "7c6fd290b6be266e964ac67e8816e6c0ef0f13c174b03cd08beff79ef35e589b",
+      "new_statement_lf": [
+        31,
+        61
+      ],
+      "new_proof_lf": [
+        63,
+        160
+      ],
+      "new_statement_sha256": "0f359f7135b6beaced7ea72997b09b42fda82ec91a0e7290f4ea6c9470d6f4bb",
+      "new_proof_sha256": "d7d6d24f101c8801867a6379516087a3249d453c7a93de692429b784045b634a"
+    },
+    {
+      "proof_id": "L:symplectic-source-mean",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (proof LF 154–186)",
+        "new_reading": "COMPLETE (proof LF 180–235)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. No OLD content removed.",
+        "new_explanations_raw": "JUSTIFIED (citations verified in step (1); summary sentence verified in step (3))."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 38,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "2ee26d86afa91167d13300b7b069466064d3b92fb6e9db60e83168dddef8128c",
+      "mathematical_check": "The report reconstructsBochnercovariance existence fromtheoriginalscalarZ andpathL2moments, exactCS sourceerrormeans anduniformsourcenormcontraction. The given-noiseretainingfeatureisometry andpointfeatures giveactualhPhi^rho=<jPhi,v>,withcontinuousspatialderivatives/timecontinuity andfixedcompactmaskedbounds. Original-sourceordinaryrows, boundedpositive-widthpointvariance andtest/indicatorapproximationjustify physicalFubini/expectationinterchange; countabledensestates/rationaltimesidentifytheactualcovariancemeanpath anditsLipschitzprimitive. The sourcecoefficientisnoncenteredmR(cY+h) withmaskonce; thesourcealreadyparameterizesmaskargumentsconsistently, sothereportmaskconcern isfalse/overstated(R4). Thisdeductionrequires nofree-invarianceparent.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        136,
+        152
+      ],
+      "old_proof_lf": [
+        154,
+        186
+      ],
+      "old_statement_sha256": "2791d874d3274e88d5a57c880978ac1f662841254aff199fc264c40eed80343e",
+      "old_proof_sha256": "950cf03c94292bd210656f130d98e4b2e4e6002fa6fce8f6c6ba8b984ed0dd92",
+      "new_statement_lf": [
+        162,
+        178
+      ],
+      "new_proof_lf": [
+        180,
+        235
+      ],
+      "new_statement_sha256": "2791d874d3274e88d5a57c880978ac1f662841254aff199fc264c40eed80343e",
+      "new_proof_sha256": "7149dda61a3a3412143c142c8aa7cf5c168f79d90071d5cf2683bf9a70a66c07"
+    },
+    {
+      "proof_id": "P:symplectic-source",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (proof LF 197–219)",
+        "new_reading": "COMPLETE (proof LF 246–272)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED (verified computation in (2))."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 61,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "38233d126d949bf1d690b8b3d7b132d00bb8169e3a4555fa2966a6358dfa8f2a",
+      "mathematical_check": "The publiclocalsource-conservation argument correctlychoosesONEfixed-parameterregularity/primitiveevent, buildsboundedstronglystatecontinuousC_b andtransfers realforceomega-skewness throughFREEINVARIANCE. Itsexplicitidentityomega(S(-r)x,w)=omega(x,S(r)w) gives thecorrectgenericconjugation route withoutunitarity. Youngsums converge tothestatewiseordinaryintegral usingboundedcoefficient/uniformcontinuity, trajectoriesareC1, andbilinearformdifferentiationgives conservationforallstates/timepairsbeforefreeconjugation. HOWEVERthislocalCHECKEDdeduction isCONDITIONALon theassignedLfree FREE-INVARIANCEsubclause missingvalidpublicworking. This isonependingassignedparent, notaseparate source defector anunconditionalfullproof. Strongstatecontinuity suffices; the reportsstrongerC_bnormcontinuityasideisnot needed.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        188,
+        195
+      ],
+      "old_proof_lf": [
+        197,
+        219
+      ],
+      "old_statement_sha256": "2fdd2f294b1a8d9d9889eecbe6274dd7401cd13d1a47fa3c74b888ee4909cff5",
+      "old_proof_sha256": "f84ec35bcc2096071ebfe8abc5e020af0a626091fcf6aa5eec054ab00d58f33c",
+      "new_statement_lf": [
+        237,
+        244
+      ],
+      "new_proof_lf": [
+        246,
+        272
+      ],
+      "new_statement_sha256": "2fdd2f294b1a8d9d9889eecbe6274dd7401cd13d1a47fa3c74b888ee4909cff5",
+      "new_proof_sha256": "7e2f5a79f2d85ec0399ecb9d77058dbf6229be4038e3b7cb6c24ca544fb22faf",
+      "pending_assigned_inputs": [
+        {
+          "input_proof_id": "L:symplectic-free",
+          "input_subclause": "FREE_WAVE_INVARIANCE_ONLY",
+          "native_public_reconstruction_flag": "COMPLETE",
+          "author_reconstruction_status": "PARTIAL",
+          "source_correct": true,
+          "reason": "Requiredpublicmatrixidentitynotreconstructedcorrectly. IndependentcompactendpointsubclauseisCHECKED andnotaffected."
+        }
+      ],
+      "unconditional_required_public_reconstruction_complete": false
+    },
+    {
+      "proof_id": "P:symplectic-raw",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (proof LF 237–285)",
+        "new_reading": "COMPLETE (proof LF 290–358)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "JUSTIFIED (the preamble \"…prove conservation by summing Young remainder estimates; invertibility comes separately from the Young construction\" matches Steps 3–4 exactly)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 87,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "12e4a65dd39227da6df48dc5a0f44ea5c3ce3124690f420a52c4f87446c47e6a",
+      "mathematical_check": "The report correctlystates theclosedrealconstraintg_J, realcoefficient/finite-sum/pathkernelpassage andBochnermeanpassage, then theYoungconservation increment withfirstorderzero andsumO(h^(2theta))→0, inversefromYoungpiecesandfreeinverse, norm1lowerboundanddeterministicc0/zerocovariancecases. Its Step1 derivation falselyassumesfreeUNITARITY,S*=S(-t),Jcommutation andawrongtypedconstraintidentity(R2,R3). Thesearesubstantivereporterrors, notsourcefacts. EarlierPUBLICPsourceStep2already supplies thecorrectGENERICsymplecticconjugation argument forrealboundedcoefficients; H_jR realsmoothhypothesesarecheckedhere, so thisLOCALdeductioncanbeCHECKED by thatexistingpublicargumentwithoutrootrepair. Itstilldependson theSAMEpendingassignedLfreeFREEINVARIANCEsubclause. Do notcountit asanunconditionalcompleteproof or asecondindependentmissinggap.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        225,
+        235
+      ],
+      "old_proof_lf": [
+        237,
+        285
+      ],
+      "old_statement_sha256": "730ea5a5a594e625225635178057ed130d0ce5b3f3d72d680028bcebf0ebf1b9",
+      "old_proof_sha256": "5c93d54a8df9c7dcf8aad4ba59f8f2018d2506443cd9ef04573ebc81399c13f6",
+      "new_statement_lf": [
+        278,
+        288
+      ],
+      "new_proof_lf": [
+        290,
+        358
+      ],
+      "new_statement_sha256": "730ea5a5a594e625225635178057ed130d0ce5b3f3d72d680028bcebf0ebf1b9",
+      "new_proof_sha256": "63e5c8671e561054f654dc59c49de90cf9a32fa138374e33dadd5ea37bcdd00b",
+      "pending_assigned_inputs": [
+        {
+          "input_proof_id": "L:symplectic-free",
+          "input_subclause": "FREE_WAVE_INVARIANCE_ONLY",
+          "native_public_reconstruction_flag": "COMPLETE",
+          "author_reconstruction_status": "PARTIAL",
+          "source_correct": true,
+          "reason": "Requiredpublicmatrixidentitynotreconstructedcorrectly. IndependentcompactendpointsubclauseisCHECKED andnotaffected."
+        }
+      ],
+      "unconditional_required_public_reconstruction_complete": false
+    },
+    {
+      "proof_id": "P:symplectic-block-mean",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE (proof LF 314–382)",
+        "new_reading": "COMPLETE (proof LF 387–476)",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED (with the one non-load-bearing deletion noted above).",
+        "new_explanations_raw": "JUSTIFIED (preamble matches the four steps; the `P:cameron-actual-embedding` citation is verified structurally; the \"Step 3\" heading \"remove the orthogonal complement of the fast first chaos\" matches the deduction)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 113,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "6de43ae7b765747a114424ef048f30a55d40356d3c0262939420d9dcc23eebc7",
+      "mathematical_check": "The report reconstructs thefastisometry/nullquotient andadjointcontrol normdelta^-a/2||Phi||atfixeddelta; completedfullF mean compression,compactconjugationandLrHolderprimitivegivecompactCtheta stoppedH_mE withbothconstantcolumns retaineduntilcompression. RankzeroQ0=I covarianceg_delta A_F pairswithORIGINALW(iPhi), anddivisiong_delta gives EXACTunscaled delta^(a/2), notsqrtdelta. Thefastfirst-chaos orthogonalprojectionT_mT_m* andBochnerfunctional separation replaceW(iPhi) byW_m(T_m*iPhi); multiplyingdelta^-a/2andstoppingyieldsthefullcompletiondirectionidentity,includingemptycell. The endpoint usesONLY the independentlypublicGENERICCOMPACTbaseline inLfree, notitsmissingFREEINVARIANCEorPrawconservation, andisCHECKEDwithoutpendingparentqualification. ThefullquotedOLDauxiliary-fast-source setuphasnomathematicalroleinthe retainedcovariance/projection/compactendpoint route; itsdeletionisjustifiedbythatconstruction, notbyapproval/history(R6). Allfiveproofs includingPrawremainassigned.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        287,
+        312
+      ],
+      "old_proof_lf": [
+        314,
+        382
+      ],
+      "old_statement_sha256": "2cb3149abef402cac69cab272974ac66258f3891da0aaa83b275e25470713b78",
+      "old_proof_sha256": "3ee9d5adecc01c1b8aab7322b29d48964f17a04005f3d3a4fef1dac1659759e8",
+      "new_statement_lf": [
+        360,
+        385
+      ],
+      "new_proof_lf": [
+        387,
+        476
+      ],
+      "new_statement_sha256": "2cb3149abef402cac69cab272974ac66258f3891da0aaa83b275e25470713b78",
+      "new_proof_sha256": "68a16ddb4c3772e3167904c9a967f1fb011eaf26aba1fdf2862e71d1abb7335e"
+    }
+  ],
+  "mathematical_checks": [
+    "The report correctly constructsJ_E throughbalancedisometry, expands theSobolevdual form andchecks J^2=-I,J*=-J,||J||1. The actualPUBLICfree-invariance matrix multiplication isWRONG(R1): itproducesdiag(detW,detW) andcallsitJ. Thecorrectsource matrixproduct isnotpubliclyreconstructed;detW1 isexplicitlycalledonlya check, notanindependentidentityproof. MarkthissubclausePARTIAL withoutinsertingrootstandardSL2facts. The otherlocaldeductions AREpubliclycorrect: boundedrealforceomega-skew cancellation; Youngleftsumscompact andclosedideal giveendpointcompactdifference; whole-space translationsweaknull,compacttails andcommutingfreenorms give||S+K||>=||S||; velocityreversalandgroupinversesgivefree norm>=1; telescopingfiniteorderedproducts preservescompactdifference andlowernorm,includingzerolength. Thosecompact-endpointsubclauses donotdependonsymplecticfree-invariance andremainCHECKED.",
+    "The report reconstructsBochnercovariance existence fromtheoriginalscalarZ andpathL2moments, exactCS sourceerrormeans anduniformsourcenormcontraction. The given-noiseretainingfeatureisometry andpointfeatures giveactualhPhi^rho=<jPhi,v>,withcontinuousspatialderivatives/timecontinuity andfixedcompactmaskedbounds. Original-sourceordinaryrows, boundedpositive-widthpointvariance andtest/indicatorapproximationjustify physicalFubini/expectationinterchange; countabledensestates/rationaltimesidentifytheactualcovariancemeanpath anditsLipschitzprimitive. The sourcecoefficientisnoncenteredmR(cY+h) withmaskonce; thesourcealreadyparameterizesmaskargumentsconsistently, sothereportmaskconcern isfalse/overstated(R4). Thisdeductionrequires nofree-invarianceparent.",
+    "The publiclocalsource-conservation argument correctlychoosesONEfixed-parameterregularity/primitiveevent, buildsboundedstronglystatecontinuousC_b andtransfers realforceomega-skewness throughFREEINVARIANCE. Itsexplicitidentityomega(S(-r)x,w)=omega(x,S(r)w) gives thecorrectgenericconjugation route withoutunitarity. Youngsums converge tothestatewiseordinaryintegral usingboundedcoefficient/uniformcontinuity, trajectoriesareC1, andbilinearformdifferentiationgives conservationforallstates/timepairsbeforefreeconjugation. HOWEVERthislocalCHECKEDdeduction isCONDITIONALon theassignedLfree FREE-INVARIANCEsubclause missingvalidpublicworking. This isonependingassignedparent, notaseparate source defector anunconditionalfullproof. Strongstatecontinuity suffices; the reportsstrongerC_bnormcontinuityasideisnot needed.",
+    "The report correctlystates theclosedrealconstraintg_J, realcoefficient/finite-sum/pathkernelpassage andBochnermeanpassage, then theYoungconservation increment withfirstorderzero andsumO(h^(2theta))→0, inversefromYoungpiecesandfreeinverse, norm1lowerboundanddeterministicc0/zerocovariancecases. Its Step1 derivation falselyassumesfreeUNITARITY,S*=S(-t),Jcommutation andawrongtypedconstraintidentity(R2,R3). Thesearesubstantivereporterrors, notsourcefacts. EarlierPUBLICPsourceStep2already supplies thecorrectGENERICsymplecticconjugation argument forrealboundedcoefficients; H_jR realsmoothhypothesesarecheckedhere, so thisLOCALdeductioncanbeCHECKED by thatexistingpublicargumentwithoutrootrepair. Itstilldependson theSAMEpendingassignedLfreeFREEINVARIANCEsubclause. Do notcountit asanunconditionalcompleteproof or asecondindependentmissinggap.",
+    "The report reconstructs thefastisometry/nullquotient andadjointcontrol normdelta^-a/2||Phi||atfixeddelta; completedfullF mean compression,compactconjugationandLrHolderprimitivegivecompactCtheta stoppedH_mE withbothconstantcolumns retaineduntilcompression. RankzeroQ0=I covarianceg_delta A_F pairswithORIGINALW(iPhi), anddivisiong_delta gives EXACTunscaled delta^(a/2), notsqrtdelta. Thefastfirst-chaos orthogonalprojectionT_mT_m* andBochnerfunctional separation replaceW(iPhi) byW_m(T_m*iPhi); multiplyingdelta^-a/2andstoppingyieldsthefullcompletiondirectionidentity,includingemptycell. The endpoint usesONLY the independentlypublicGENERICCOMPACTbaseline inLfree, notitsmissingFREEINVARIANCEorPrawconservation, andisCHECKEDwithoutpendingparentqualification. ThefullquotedOLDauxiliary-fast-source setuphasnomathematicalroleinthe retainedcovariance/projection/compactendpoint route; itsdeletionisjustifiedbythatconstruction, notbyapproval/history(R6). Allfiveproofs includingPrawremainassigned."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "proof_id": "L:symplectic-free",
+      "classification": "incorrect required public matrix multiplication, source correct",
+      "old": "[[-c,a],[-a,b]][[a,b],[c,a]]=[[a^2-cb,0],[0,a^2-bc]], thenproductequalsJ",
+      "new": "The actualproductis[[0,a^2-cb],[-(a^2-bc),0]]=det(W)J. Thisiscorrectsource/authorcountercalculation, NOTa replacementpublicreviewerworking.",
+      "contrary_calculation": "Alreadyatt0,W=I,a1,b=c0: W^T J W=J=[[0,1],[-1,0]], whereas thewrittenproductisI. IisnotJ.",
+      "disposition": "Rawreportunchanged/nativeCOMPLETEretained; assignedfree-invariance working remainsPARTIAL. Do notsilentlysupply astandardSL2identityfromroot/sourceknowledge. Otherindependentlypubliccompactendpointsubclausesarechecked.",
+      "report_lf": 23
+    },
+    {
+      "id": "R2",
+      "proof_id": "P:symplectic-raw",
+      "classification": "false report assumptions of free-wave Hilbert unitarity and J commutation",
+      "old": "S_E(t)isunitary,S_E(t)*=S_E(-t),andJ_E S_E(t)=S_E(t)J_E",
+      "new": "FreepreservationisS_E(t)*J_E S_E(t)=J_E, whichdoesnotimplyHilbertunitarityorJcommutation. The trueinverse-weightidentitiesfollowusingthegroupinverseintheirownpositions.",
+      "contrary_calculation": "Choose realSchwartzpsi withunitL2norm andeven smoothFouriersupportwhere sin(|xi|)!=0, andz=(0,Lambda^1/2 psi). Then||z||E1 but||S_E(1)z||E^2=int[1+sin^2(|xi|)/|xi|^2]|psi_hat|^2>1, soS_Enotunitary. Thebalancedoffdiagonalweights also show WJ!=JW onthatopenfrequencyset.",
+      "disposition": "Substantivereporterrorsretained. EarlierpublicPsourceStep2givesacorrectgenericconjugationargument; hencePrawlocalconstraint deductionischeckedONLYwiththeexplicitpendingLfreeinvarianceparentqualification. No sourceedit.",
+      "report_lf": 96
+    },
+    {
+      "id": "R3",
+      "proof_id": "P:symplectic-raw",
+      "classification": "report-only wrong type in conjugation/constraint equality",
+      "old": "S(-r)(dot)S(r)=S(r)*(B*J+JB)S(r)=0 putstheconjugateing_J",
+      "new": "ForA=S(-r)BS(r), theconstraintisA*J+JA=S(r)*(B*J+JB)S(r), usingfree symplectic identities; Aitselfneednotbezero.",
+      "disposition": "Thefalseprintedtypeidentityisnotadopted. Correctgenericform-conjugationisalreadypublicinPsourceStep2, conditionalonfreeinvariance; sourceitselfusesproperconstraint identities.",
+      "report_lf": 96
+    },
+    {
+      "id": "R4",
+      "proof_id": "L:symplectic-source-mean",
+      "classification": "false/overstated source mask-convention criticism",
+      "disposition": "TheCameroncontextpreamble explicitlysets physicalmR=etaR^2 andsaysEVERYoperatorpaththere takesmaskargumentmR, withbaseprofilezeta(y)=mR(Ry) satisfyingtheearlierallowedhypotheses. Masksareparameters ofthepathconstruction,not anunannouncedchangeofnoise. Thus mRversuszeta_Rnotationalchoiceisalready pinned; exactcoefficientmR(cY+h) iscorrect andneedsnosourcefix.",
+      "report_lf": 57
+    },
+    {
+      "id": "R5",
+      "proof_id": "P:symplectic-block-mean",
+      "classification": "report precision criticism already addressed by actual source/public equation",
+      "disposition": "ThetargetSOURCEexplicitlygivesE[g_delta A_F,m(u)W(iPhi)]=sqrtdelta H_mF atJ0 inStep2, andthepublicreportquotesit. Q0=I isavalidrankzeroinstance; noadditionalsourceequationorhypothesisisneeded.",
+      "report_lf": 137
+    },
+    {
+      "id": "R6",
+      "proof_id": "P:symplectic-block-mean",
+      "classification": "deletion-role check and report sentence-count precision",
+      "source_old_lf": [
+        320,
+        324
+      ],
+      "source_new_lf": [
+        402,
+        402
+      ],
+      "disposition": "ThequoteddeletedOLDblockcontainsTWOsyntacticsentences,notone, butthereportquotesbothandcorrectlyshowstheirentiremathematicalroleisunneededintheactualcovariance/projection+genericcompactendpoint route. No slow-sourcepullbackorauxiliaryregularizationisassumed; allobjectsaredefined onthegivenW throughT_m anditsadjoint. Thisjudgmentusesretainedmath,notroot/Leapprovalorgraphcounts. All5pairsremainassigned.",
+      "report_lf": 132
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": true,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 25181,
+      "sha256": "d3ec423a5330bff86c3b8dcb92f04afaba58c920bccf5c4690cc712f619aa148"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 5529,
+      "sha256": "7c9955f98f4e64e1e3678b9c3f47d712f600ea1442a281b92607871da52eb440"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 7488,
+      "sha256": "491d3e61f8fa668e28bf6c71b1bfa2535fb6225b989823bbb0231cd06fe9938c"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 4762,
+      "sha256": "20e7107b41d41ad314e30693a2346f38d5a188bae5c211077c32c08f3a79d85c"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 9389,
+      "sha256": "fdf049ab2b02c604b489de0d9db0a2a7c7a623e0f3cde4661645580932f340ab"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 5747,
+      "sha256": "3e1d270c45dcc35f351897a0039c2980e664b515467545a589a7432f307c249e"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 20269,
+      "sha256": "37f0c741ab8e37b66f25a103939b428e001072066b48ffea2adb10e4644f2cab"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 23929,
+      "sha256": "ef966ddaa4c469fb886436429d9c202a7e25a485e25fb36a6e2a560bcd5ff244"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-integrated_cameron_mean-baseline.txt",
+      "bytes": 24138,
+      "sha256": "0ecbf05a70a7d5d79c9e2285dcadb93567687d4e463bfe4f6b0fdac5ff6f016d"
+    },
+    {
+      "path": "inputs/context-integrated_constant_phase_young-baseline.txt",
+      "bytes": 27376,
+      "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+    },
+    {
+      "path": "inputs/context-integrated_source_convergence-baseline.txt",
+      "bytes": 25085,
+      "sha256": "f212bad41254a78109e5802def45053c8bda53a416cda9f457513406304aaef4"
+    },
+    {
+      "path": "inputs/context-integrated_actual_operator_driver-baseline.txt",
+      "bytes": 35818,
+      "sha256": "add3561f9a2e846f9992d91a10385d8b8e99406359eaabae640520366b184f0e"
+    },
+    {
+      "path": "inputs/context-integrated_raw_block_lower-baseline.txt",
+      "bytes": 35928,
+      "sha256": "ed2f85038ef6136eb8581fa64cab4962cde40bdbdba9ff163dd832c4fa5ad992"
+    }
+  ],
+  "input_identity_checks": "All delivered source/context payload hashes and WHOLE_FILE pinned Git byte identities verified; every complete OLD/NEW statement/proof independently checked by LF/bytes/SHA. Complete target text read with baseline comparisons and genuine needed stated inputs, not merely delta QA.",
+  "source_currentness": {
+    "covered_launch_revision": "3d2f4fb462f53837ec7825e15c9dcbacb2f69cd1",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "limit": "Only this exact assigned source versuscdde and supplied context; no older report rebinding, unexamined successor or whole-book seal.",
+    "obsolete_62da_source_used": false,
+    "all_five_original_proof_pairs_assigned_and_checked": true,
+    "graph168_count_used_to_drop_proofs": false
+  },
+  "read_limits": [
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority",
+  "module_header": "QUALIFIED/PARTIAL: one assigned free-invariance reconstruction missing; four other LOCAL deductions, TWO withthe SAME pendingassignedparent. Notfourunconditionalfullproofs oramodulepass.",
+  "module_adjudication": {
+    "status": "PARTIAL",
+    "local_reconstruction_counts": {
+      "CHECKED": 4,
+      "PARTIAL": 1
+    },
+    "local_checked_with_pending_assigned_parent": 2,
+    "local_checked_without_pending_assigned_parent": 2,
+    "pending_count_overlaps_checked_count": true,
+    "additional_independent_missing_deductions_from_these_two_qualifications": 0,
+    "raw_native_verdict_and_confidence_unchanged": true,
+    "requested_reread_complete": false
+  },
+  "pending_assigned_inputs": {
+    "P:symplectic-source": [
+      {
+        "input_proof_id": "L:symplectic-free",
+        "input_subclause": "FREE_WAVE_INVARIANCE_ONLY",
+        "native_public_reconstruction_flag": "COMPLETE",
+        "author_reconstruction_status": "PARTIAL",
+        "source_correct": true,
+        "reason": "Requiredpublicmatrixidentitynotreconstructedcorrectly. IndependentcompactendpointsubclauseisCHECKED andnotaffected."
+      }
+    ],
+    "P:symplectic-raw": [
+      {
+        "input_proof_id": "L:symplectic-free",
+        "input_subclause": "FREE_WAVE_INVARIANCE_ONLY",
+        "native_public_reconstruction_flag": "COMPLETE",
+        "author_reconstruction_status": "PARTIAL",
+        "source_correct": true,
+        "reason": "Requiredpublicmatrixidentitynotreconstructedcorrectly. IndependentcompactendpointsubclauseisCHECKED andnotaffected."
+      }
+    ]
+  },
+  "root_reviewed_specific_coverage_point": "RootreadactualLfree/Psource/Prawpublicsectionsandagreedonepartialfree-invarianceparent,twoconditionallocallycheckeddeductions,andindependentPblockmeancompactbaseline. Thisdoesnotattributeevery-lineadjudicationtoroot."
+}

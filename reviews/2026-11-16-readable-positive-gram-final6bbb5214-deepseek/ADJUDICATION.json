@@ -1,0 +1,327 @@
+{
+  "review_record_id": "RP061",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "6bbb521412da88058c7ce4a9086a8117f9d1b6c8",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_positive_gram.tex",
+  "source_binding_sha256": "19324509f8c0ec5e0029515b6034895322d04f3144db4f5b98bc6f067d633694",
+  "public_report_sha256": "fecb1566dc9305d42139f8fb822be33ea5c0a437e352c82dd44c98131bd0ff2d",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_ALL_ASSIGNED_PUBLIC_RECONSTRUCTIONS_CHECKED_ROOT_REVIEWS",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:gram-scalar-algebra": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:gram-dual-minimum": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:gram-positive-optimizer": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:gram-realization": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:gram-entrywise-comparison": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:gram-scalar-algebra",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED (no new explanatory assertion was introduced;"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 23,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "e8b5d59e081276eb08076e1446dc2905d3af734940d29fe81c67163a804571a0",
+      "mathematical_check": "The public scalar square expansion exactly gives2ell sqrt(t)<=ell^2/w+wt forrealell,w>0,t>=0, includingt0; it uses the equalityweightw=ell/sqrtt onlyunderell,t>0. The Hilbert completed square andfinite realGram bilinearity arefullyexpanded. No Hilbert-ball compactness,covarianceinverse orcomplexinnerproduct assumption isused.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        27,
+        38
+      ],
+      "old_proof_lf": [
+        40,
+        51
+      ],
+      "old_statement_sha256": "30befbe68844a0f7edec72ee582dab9aa60e972f0279d7f68bd9fa7eda602081",
+      "old_proof_sha256": "f1b32681b5dd359cc8769e658cf5b29d37c4bd82341d9c256d8d4547b98c21fe",
+      "new_statement_lf": [
+        27,
+        38
+      ],
+      "new_proof_lf": [
+        40,
+        51
+      ],
+      "new_statement_sha256": "30befbe68844a0f7edec72ee582dab9aa60e972f0279d7f68bd9fa7eda602081",
+      "new_proof_sha256": "f1b32681b5dd359cc8769e658cf5b29d37c4bd82341d9c256d8d4547b98c21fe"
+    },
+    {
+      "proof_id": "L:gram-dual-minimum",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 73,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "385c4bd7cb0b86d3eecb17602c6777925848c3f7bc91207e24924c4ac31e8c8e",
+      "mathematical_check": "The report drops onlynonnegativeoffdiagonal terms forpositiveweights andcompletes c_iw_i^2/4-b_iw_i toobtain theexactcoercive bound withK_A=sum b_i^2/c_i. Atw0=ones itprovesL_A=d0+K_A>0 andthepositive compactcoordinatebox ell_i^2/L_A<=w_i<=sqrt(4L_A/c_i), precludinghidden cancellation. Continuity onthenonemptyclosed sublevel givesglobalinteriorattainment. TheexplicitHessian sum2ell_i^2 xi_i^2/w_i^3+xi^T Cxi isstrictlypositive evenfor singularGram, yieldinguniqueness; two-sidedcoordinatevariations givetheexactstationarityandstrictactivity. Its commentabout thecompact minimizing-sequence wording ismerelystylistic; sourceargumentiscorrect.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        53,
+        60
+      ],
+      "old_proof_lf": [
+        62,
+        100
+      ],
+      "old_statement_sha256": "9e98b96474c7e6336f44b4e99346e1d86ccaf6f7aa398f2d8649deaa72db7f19",
+      "old_proof_sha256": "554c1045ffdb10596ff903373e817625879d327d1717807e5df385d15c7d538d",
+      "new_statement_lf": [
+        53,
+        60
+      ],
+      "new_proof_lf": [
+        62,
+        112
+      ],
+      "new_statement_sha256": "9e98b96474c7e6336f44b4e99346e1d86ccaf6f7aa398f2d8649deaa72db7f19",
+      "new_proof_sha256": "7e45a6ad0f619db274c0401be2711ab545e89e08d2d46a2658b9604705507c2b"
+    },
+    {
+      "proof_id": "P:gram-positive-optimizer",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 164,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "720d3ed61892e878ec3e611c803f91aa697e577f19b703197b1792869ee169f6",
+      "mathematical_check": "The report reconstructs the exact upper-order chain: eachprimalpoint chooses itsOWNstrictactive set, zerovectors excluded byb>=0, emptyset givesnegativequadratic, andanypositiveweight givesF<=D_A(w) byscalar/Hilbertsquares; infthenfinite subsetmax bounds theglobalprimal sup. ConverselydualstationarityatPhi_A=sum w_i k_i makesactive radicandsell_i^2/w_i^2>0 andbothinequalities equalities ontherestrictedobjective. Everyomittedreward isnonnegative, evenwhend_A<0; includingemptyA0 givesattainmentofmaxd_A, with fullglobalupperboundforcingequalityatmaximizingsubsets. Outsideinactivity,globalconcavity,primaluniqueness andinvertibilityofGram arenotassumed. Empty/allzero/H0 cases areexplicit.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        103,
+        112
+      ],
+      "old_proof_lf": [
+        114,
+        145
+      ],
+      "old_statement_sha256": "8e0cb4fcf99b2dacb7dda327d0dc191421273750e8179c23292445de75105168",
+      "old_proof_sha256": "fa7e3c2afd7851056391100bcc139c8f93ef5b3f5d10ecf5cfc321af69730826",
+      "new_statement_lf": [
+        115,
+        124
+      ],
+      "new_proof_lf": [
+        126,
+        170
+      ],
+      "new_statement_sha256": "8e0cb4fcf99b2dacb7dda327d0dc191421273750e8179c23292445de75105168",
+      "new_proof_sha256": "ad974de124022522a45598bd6d9937a8d48b6e9156006ccd026baf768cf3b798"
+    },
+    {
+      "proof_id": "L:gram-realization",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 250,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "0fca39dcdc72c2efba289ef7435b463399b834630282d58775f891857cf7a84e",
+      "mathematical_check": "The public realGram construction handlesemptysize andallzerodiagonal bytesting e_i+t e_j forallreal t. Witha positivediagonal pivotc itcomputes theSchur complement quadraticform at(-v^Ty/c,y), proving PSDwithout requiring entrywisepositivity. Thefinite-dimensional inductivevectors(sqrtc,0),(v_i/sqrtc,u_i) havetheexact displayedinnerproducts, andthepermutationisundone. Signedcomplemententries/nonnegative-coordinateorcompletepositivity assumptionsareexplicitlyexcluded. Eligibleindicesareexactlypositivediagonal entries andthealreadyreconstructedactive-dualformula dependsonlyC,ell,b, proving realizationindependenceonlyinthenonnegative-entry scope.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        157,
+        161
+      ],
+      "old_proof_lf": [
+        163,
+        181
+      ],
+      "old_statement_sha256": "4a8ee05c79374711cbf3907cd4df6416083df0f6ae2b1d858d655ad65a5b7ef5",
+      "old_proof_sha256": "af2a9b56de98d5605351c02f0292ad9a2fcac1699cf7a08f1d812da420698463",
+      "new_statement_lf": [
+        182,
+        186
+      ],
+      "new_proof_lf": [
+        188,
+        208
+      ],
+      "new_statement_sha256": "4a8ee05c79374711cbf3907cd4df6416083df0f6ae2b1d858d655ad65a5b7ef5",
+      "new_proof_sha256": "06b487657c40fc5b0ed38485aa354603f869c4d5fda03bf9c4cfb268d54e09f3"
+    },
+    {
+      "proof_id": "P:gram-entrywise-comparison",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED (no new explanatory assertion was introduced;"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 323,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "5729d73db15fcc81755a942bd8f558c6c61b4a1625f61d686ceeedf5d8dff74c",
+      "mathematical_check": "The report firstchecks bothmatrixvalues throughrealGram realizations andeligible-set inclusionJ_CsubsetJ_D. Onthesamepositiveorthant thedifferenceD_A^D-D_A^C=(1/2)sum w_i(D_ij-C_ij)w_j>=0 usesONLYentrywiseorderandpositiveweights. Takinginfima preservestheorder, emptyvaluesstay0, andthelargereligiblefamily plusactive-duality maxformula yieldsS(C)<=S(D), includingnewly nonzerovectors. NoPSDorderofD-C,Gram inverse orprimal concavityisinserted.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        187,
+        195
+      ],
+      "old_proof_lf": [
+        197,
+        210
+      ],
+      "old_statement_sha256": "955db54332196fa3e5bee6f7b775596ccd7b9f69cf778fa630a52f9e702252c0",
+      "old_proof_sha256": "28f0af67484396c144fd3561d8331bf551258c475ea2ca468a8bd75d580eb431",
+      "new_statement_lf": [
+        214,
+        222
+      ],
+      "new_proof_lf": [
+        224,
+        237
+      ],
+      "new_statement_sha256": "955db54332196fa3e5bee6f7b775596ccd7b9f69cf778fa630a52f9e702252c0",
+      "new_proof_sha256": "28f0af67484396c144fd3561d8331bf551258c475ea2ca468a8bd75d580eb431"
+    }
+  ],
+  "mathematical_checks": [
+    "The public scalar square expansion exactly gives2ell sqrt(t)<=ell^2/w+wt forrealell,w>0,t>=0, includingt0; it uses the equalityweightw=ell/sqrtt onlyunderell,t>0. The Hilbert completed square andfinite realGram bilinearity arefullyexpanded. No Hilbert-ball compactness,covarianceinverse orcomplexinnerproduct assumption isused.",
+    "The report drops onlynonnegativeoffdiagonal terms forpositiveweights andcompletes c_iw_i^2/4-b_iw_i toobtain theexactcoercive bound withK_A=sum b_i^2/c_i. Atw0=ones itprovesL_A=d0+K_A>0 andthepositive compactcoordinatebox ell_i^2/L_A<=w_i<=sqrt(4L_A/c_i), precludinghidden cancellation. Continuity onthenonemptyclosed sublevel givesglobalinteriorattainment. TheexplicitHessian sum2ell_i^2 xi_i^2/w_i^3+xi^T Cxi isstrictlypositive evenfor singularGram, yieldinguniqueness; two-sidedcoordinatevariations givetheexactstationarityandstrictactivity. Its commentabout thecompact minimizing-sequence wording ismerelystylistic; sourceargumentiscorrect.",
+    "The report reconstructs the exact upper-order chain: eachprimalpoint chooses itsOWNstrictactive set, zerovectors excluded byb>=0, emptyset givesnegativequadratic, andanypositiveweight givesF<=D_A(w) byscalar/Hilbertsquares; infthenfinite subsetmax bounds theglobalprimal sup. ConverselydualstationarityatPhi_A=sum w_i k_i makesactive radicandsell_i^2/w_i^2>0 andbothinequalities equalities ontherestrictedobjective. Everyomittedreward isnonnegative, evenwhend_A<0; includingemptyA0 givesattainmentofmaxd_A, with fullglobalupperboundforcingequalityatmaximizingsubsets. Outsideinactivity,globalconcavity,primaluniqueness andinvertibilityofGram arenotassumed. Empty/allzero/H0 cases areexplicit.",
+    "The public realGram construction handlesemptysize andallzerodiagonal bytesting e_i+t e_j forallreal t. Witha positivediagonal pivotc itcomputes theSchur complement quadraticform at(-v^Ty/c,y), proving PSDwithout requiring entrywisepositivity. Thefinite-dimensional inductivevectors(sqrtc,0),(v_i/sqrtc,u_i) havetheexact displayedinnerproducts, andthepermutationisundone. Signedcomplemententries/nonnegative-coordinateorcompletepositivity assumptionsareexplicitlyexcluded. Eligibleindicesareexactlypositivediagonal entries andthealreadyreconstructedactive-dualformula dependsonlyC,ell,b, proving realizationindependenceonlyinthenonnegative-entry scope.",
+    "The report firstchecks bothmatrixvalues throughrealGram realizations andeligible-set inclusionJ_CsubsetJ_D. Onthesamepositiveorthant thedifferenceD_A^D-D_A^C=(1/2)sum w_i(D_ij-C_ij)w_j>=0 usesONLYentrywiseorderandpositiveweights. Takinginfima preservestheorder, emptyvaluesstay0, andthelargereligiblefamily plusactive-duality maxformula yieldsS(C)<=S(D), includingnewly nonzerovectors. NoPSDorderofD-C,Gram inverse orprimal concavityisinserted."
+  ],
+  "report_notes": [],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 17865,
+      "sha256": "fecb1566dc9305d42139f8fb822be33ea5c0a437e352c82dd44c98131bd0ff2d"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 5375,
+      "sha256": "67eddea70855aa3165f9a8aeb636f334f6e2985431d06d3d6a843b8b0d5bbc5a"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 7488,
+      "sha256": "a168c6353fd153398977bd0cc73c822e5c8064ccb3b9be9f854562fa52cbfddb"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 2044,
+      "sha256": "19324509f8c0ec5e0029515b6034895322d04f3144db4f5b98bc6f067d633694"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 5323,
+      "sha256": "60a1e4848784b230fa0e802f2294e5922090f97b0f007aab020809c7bec7e5c1"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 2839,
+      "sha256": "08ef2a99782636b11a0e56c0b10efafcaf50cb630e277a07b2a5d8120688054d"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 10900,
+      "sha256": "c5af11537a274a8912e579c2d53c7c6b80bd64fd9a1ced3cdc4e91e06bdb8445"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 11920,
+      "sha256": "d25987040b3830ae95813a7aca3c3c867f1b542af12261b40d22cb10e2cd89c7"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    }
+  ],
+  "input_identity_checks": "All delivered source/context payload hashes and WHOLE_FILE pinned Git byte identities verified; every complete OLD/NEW statement/proof independently checked by LF/bytes/SHA. Complete target text read with baseline comparisons and genuine needed stated inputs, not merely delta QA.",
+  "source_currentness": {
+    "covered_launch_revision": "6bbb521412da88058c7ce4a9086a8117f9d1b6c8",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "limit": "Only this exact assigned source versuscdde and supplied context; no older report rebinding, unexamined successor or whole-book seal."
+  },
+  "read_limits": [
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority"
+}

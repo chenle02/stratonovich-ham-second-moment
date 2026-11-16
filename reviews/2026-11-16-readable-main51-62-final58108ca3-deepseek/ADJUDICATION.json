@@ -1,0 +1,1094 @@
+{
+  "review_record_id": "RP070",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "58108ca3065cb408eb13b06cc772fe71de546535",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/notes_stratonovich_ham_second_moment.tex",
+  "source_binding_sha256": "3d81792d6eaa423d6d1b8eebec687cc09c4897a45fc91b984da23d34285b0fb6",
+  "public_report_sha256": "2372c0470b2a8f99618e146aa96dae96ab419af0a319b2eee9a87d30f497201c",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_PARTIAL_REQUIRED_PUBLIC_RECONSTRUCTION_ROOT_REVIEWS",
+  "requested_reread_complete": false,
+  "per_proof_reconstruction": {
+    "C:three-product-riesz": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    },
+    "C:three-finite-images": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:physical-spectral-energy": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:mean-coefficient-holder": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:positive-series-type": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:static-minorant-lower": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:near-static-mean-gap": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:full-moment-coefficient-holder": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:moment-growth-logconvex": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "C:static-moment-constant-continuity": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:white-clock-laplace": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:clock-copy-obstruction": {
+      "status": "PARTIAL",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [
+        "Required additional clock-contract checks (outside/preceding formal target proof): explicit analytic-power/Gaussian-expectation and spatial Brownian-heat-average derivations are not reconstructed publicly. Correct supplied Psi/h definitions are used and the actual kernel obstruction proof working is CHECKED."
+      ],
+      "limits": [],
+      "report_notes": [
+        "R2"
+      ],
+      "checked_subarguments": [
+        "Exact original wave cross transform and spatial smoothing removal",
+        "Positive integrable resolvent density and partial fractions",
+        "Candidate majorant, correlation ordering and strict positive density loss",
+        "Degree-one Beta loss and white normalization"
+      ]
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "C:three-product-riesz",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "none added in this proof."
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED (text identical, shifted).",
+        "new_explanations_raw": "none added in this proof."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 9,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "44266ea82fc16f38d841e72a4f656d478651484a31b167833a86bae421df9de8",
+      "mathematical_check": "Publicly checks the midpoint parameter interval, product endpoint hypotheses, and the Riesz Gaussian-mixture covariance and common-amplitude Holder comparison before consuming the unassigned conditional transfer. The false ancillary chi<alpha inequality is not needed: the same public item explicitly derives 2-chi=(2-alpha-theta)/(1-theta)>0, which independently gives chi<2<3 and discharges local integrability. Source is correct.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 51,
+      "old_statement_lf": [
+        7104,
+        7119
+      ],
+      "old_proof_lf": [
+        7121,
+        7148
+      ],
+      "old_statement_sha256": "680beb2c8664459708a075b95edb076204c8d523935cbe4e20b581f60922835c",
+      "old_proof_sha256": "8ee0aa5975119cf3946caeed8d3947ddcc96fa405b0d053d2ab8d3879d888492",
+      "new_statement_lf": [
+        7944,
+        7959
+      ],
+      "new_proof_lf": [
+        7961,
+        7988
+      ],
+      "new_statement_sha256": "680beb2c8664459708a075b95edb076204c8d523935cbe4e20b581f60922835c",
+      "new_proof_sha256": "8ee0aa5975119cf3946caeed8d3947ddcc96fa405b0d053d2ab8d3879d888492",
+      "old_delivered_view_statement_lf": [
+        1,
+        16
+      ],
+      "old_delivered_view_proof_lf": [
+        18,
+        45
+      ],
+      "new_delivered_view_statement_lf": [
+        1,
+        16
+      ],
+      "new_delivered_view_proof_lf": [
+        18,
+        45
+      ]
+    },
+    {
+      "proof_id": "C:three-finite-images",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "none added."
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED.",
+        "new_explanations_raw": "none added."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 33,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "1f6c6eae64f216e7a4660ba2a6a22f1e8f72f7cbee95cbd31ddd4d35b3e1c291",
+      "mathematical_check": "Common endpoint parameters, component product/Riesz/plane hypotheses, invertible pushforward determinant factors, finite positive-weight Holder and nonzero target are explicitly checked. Applies the named unassigned transfer with actual constructed endpoints, without a random-solution sum/coupling identity or invariance of endpoint variational quantities under nonorthogonal maps.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 52,
+      "old_statement_lf": [
+        7151,
+        7170
+      ],
+      "old_proof_lf": [
+        7172,
+        7195
+      ],
+      "old_statement_sha256": "6f0fcfb469cddec3ddac9f7f6a8de359758947b5a8a915ddd810d2f5af9e91c9",
+      "old_proof_sha256": "84e065e4dc3cea57465b2145badfb7ab65ecf9210ecf10b62418cd534b1b33c4",
+      "new_statement_lf": [
+        7991,
+        8010
+      ],
+      "new_proof_lf": [
+        8012,
+        8035
+      ],
+      "new_statement_sha256": "6f0fcfb469cddec3ddac9f7f6a8de359758947b5a8a915ddd810d2f5af9e91c9",
+      "new_proof_sha256": "84e065e4dc3cea57465b2145badfb7ab65ecf9210ecf10b62418cd534b1b33c4",
+      "old_delivered_view_statement_lf": [
+        48,
+        67
+      ],
+      "old_delivered_view_proof_lf": [
+        69,
+        92
+      ],
+      "new_delivered_view_statement_lf": [
+        48,
+        67
+      ],
+      "new_delivered_view_proof_lf": [
+        69,
+        92
+      ]
+    },
+    {
+      "proof_id": "L:physical-spectral-energy",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. NEW inserts the accurate preamble and Steps 1–4; the body is the same.",
+        "new_explanations_raw": "JUSTIFIED (\"imported finiteness only on smooth profiles\"; \"two distinct Cauchy–Schwarz bounds\"; \"identify strong limits\")."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 53,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "df8bd83ff099b1942d3ea347f672d66e9fbde1bc76af78d8d795461d8764837f",
+      "mathematical_check": "Fully reconstructs the smooth-to-H1 physical/spectral identification: spectral homogeneity and dyadic Dalang bound; imported finiteness only for real unit Schwartz profiles; quartic scaling and D N(f)^2 control; distinct spectral cross-square and physical quadratic-energy Cauchy-Schwarz estimates; both map difference bounds; real Schwartz H1 approximation; sigma-finite translated-null-set Fubini; strong physical-map limit and representative independence; L1 convergence of squares and uniform Fourier convergence identifying the strong spectral limit even for infinite mu; equality and quartic bound pass to the limit. No target conclusion is used as an oracle. The smooth imported finiteness remains an external input, not new source-PDF certification.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 53,
+      "old_statement_lf": [
+        7247,
+        7265
+      ],
+      "old_proof_lf": [
+        7267,
+        7359
+      ],
+      "old_statement_sha256": "e56ba10014bbf56bf321dee70b7a2c998d6b140bc4f67c8d684ec1fb43f3749f",
+      "old_proof_sha256": "d1e5827071618e1d70498b63619072efffa787a3c030a1c197338e9d2b2092b1",
+      "new_statement_lf": [
+        8087,
+        8105
+      ],
+      "new_proof_lf": [
+        8107,
+        8218
+      ],
+      "new_statement_sha256": "e56ba10014bbf56bf321dee70b7a2c998d6b140bc4f67c8d684ec1fb43f3749f",
+      "new_proof_sha256": "6125e112a48e3671798b7f6c98872727c1f5e59673a7f2aac0e21e4ebe339ab0",
+      "old_delivered_view_statement_lf": [
+        144,
+        162
+      ],
+      "old_delivered_view_proof_lf": [
+        164,
+        256
+      ],
+      "new_delivered_view_statement_lf": [
+        144,
+        162
+      ],
+      "new_delivered_view_proof_lf": [
+        164,
+        275
+      ]
+    },
+    {
+      "proof_id": "L:mean-coefficient-holder",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. NEW adds preamble and Steps 1–4; body unchanged.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 89,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "e92e9d20e5278a41b7021df0fdfd0ea3188002b8ac45c3f9e834692ef362f817",
+      "mathematical_check": "Publicly constructs static fixed-order coefficients through the stated Wick/Green limits and Hilbert-Cauchy method. The positive temporal-cutoff lower constant gives uniform static partial-sum moment control at arbitrary amplitude; the named uniform-series-tail argument yields geometric coefficient norm bounds and static homogeneity gives all fixed-time norm summability. A common positive disjoint pairing measure proves the mean Holder inequality; uniform temporal-tail sandwich and static multiplier-one limits identify endpoints; correct 4k-alpha*k-a*k scaling, odd-mean cancellation and norm summability justify all-z positive mean series.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 54,
+      "old_statement_lf": [
+        7434,
+        7444
+      ],
+      "old_proof_lf": [
+        7446,
+        7538
+      ],
+      "old_statement_sha256": "689e2b6be1603e61a64ba3f95cb4343ed76489cda35ba5f9253f6c9f2225c2cf",
+      "old_proof_sha256": "ceab235686be91fca085a02e11ab860573c205c0c0a925e6a411a6e151dc3667",
+      "new_statement_lf": [
+        8293,
+        8303
+      ],
+      "new_proof_lf": [
+        8305,
+        8416
+      ],
+      "new_statement_sha256": "689e2b6be1603e61a64ba3f95cb4343ed76489cda35ba5f9253f6c9f2225c2cf",
+      "new_proof_sha256": "e0e4fbcd9037806cb109a3772d3cb623f7d054da6e6fbea0d2ef64c373f1dbf6",
+      "old_delivered_view_statement_lf": [
+        331,
+        341
+      ],
+      "old_delivered_view_proof_lf": [
+        343,
+        435
+      ],
+      "new_delivered_view_statement_lf": [
+        350,
+        360
+      ],
+      "new_delivered_view_proof_lf": [
+        362,
+        473
+      ]
+    },
+    {
+      "proof_id": "L:positive-series-type",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. NEW adds preamble and Steps 1–2.",
+        "new_explanations_raw": "JUSTIFIED (the preamble correctly separates forward coefficient-type from the exponential majorant)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 118,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "6fc986f8e14b60d4d519eea67be1be6e9828883724b2d5828d8d7dc02d4ca359",
+      "mathematical_check": "Both directions of coefficient/type equivalence are explicitly reconstructed. Optimizing z=(nu*k/L)^nu and refined factorial logarithm bounds give K≤(L/nu)^nu, including zero limiting type. Conversely eventual coefficient bounds retain the finite polynomial, and the ell^nu exponential estimate for nu≥1 gives tau≤nu*K^(1/nu). The forward/backward deductions are not replaced by statement quotation.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 55,
+      "old_statement_lf": [
+        7541,
+        7553
+      ],
+      "old_proof_lf": [
+        7555,
+        7582
+      ],
+      "old_statement_sha256": "433ca81bdb5aab6170ba995c979e72fdcc1df2a29b3ed5cfd0646cac9bdaa76f",
+      "old_proof_sha256": "c0855a0b2b7c7f4f21f7865afe361ba433d65d7b90ba9e161964946cd5efdbe9",
+      "new_statement_lf": [
+        8419,
+        8431
+      ],
+      "new_proof_lf": [
+        8433,
+        8470
+      ],
+      "new_statement_sha256": "433ca81bdb5aab6170ba995c979e72fdcc1df2a29b3ed5cfd0646cac9bdaa76f",
+      "new_proof_sha256": "c7db8e46d638ab432783ced569e6635d656675c11a4955dde712da554d553583",
+      "old_delivered_view_statement_lf": [
+        438,
+        450
+      ],
+      "old_delivered_view_proof_lf": [
+        452,
+        479
+      ],
+      "new_delivered_view_statement_lf": [
+        476,
+        488
+      ],
+      "new_delivered_view_proof_lf": [
+        490,
+        527
+      ]
+    },
+    {
+      "proof_id": "P:static-minorant-lower",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. NEW adds preamble and Steps 1–3.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 135,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "d15c6c89232ab4f3fc5e31fc549fa9cdf0d9f894360e8b6d8be6b3f2749cf4d5",
+      "mathematical_check": "At fixed T and finite order the positive Laplace-cutoff covariance dominates the constant static amplitude; Green-before-noise and fixed-N limits retain the finite polynomial in amplitude. Static norm summability permits N→infinity for p=1,2. Total order 2k gives the explicit moment amplitude/effective-time identity, followed by the exact normalized exponent calculation. This is a moment-law identity, not pathwise coupling or interchanged large-time/source limits.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 56,
+      "old_statement_lf": [
+        7584,
+        7595
+      ],
+      "old_proof_lf": [
+        7597,
+        7653
+      ],
+      "old_statement_sha256": "eed806f46423af2b7cceca8b3970a867728104b1d35201e2730c681d3a74f1de",
+      "old_proof_sha256": "c392c9e3c7ddcec0ad8a3ef1d7a1985fdede2c8c1f480c25b2d661b1c8f425a7",
+      "new_statement_lf": [
+        8472,
+        8483
+      ],
+      "new_proof_lf": [
+        8485,
+        8557
+      ],
+      "new_statement_sha256": "eed806f46423af2b7cceca8b3970a867728104b1d35201e2730c681d3a74f1de",
+      "new_proof_sha256": "927e62fcf2baf29a20f4f66385030c159301d1fe7e46aa32aad8ec45a9e29b98",
+      "old_delivered_view_statement_lf": [
+        481,
+        492
+      ],
+      "old_delivered_view_proof_lf": [
+        494,
+        550
+      ],
+      "new_delivered_view_statement_lf": [
+        529,
+        540
+      ],
+      "new_delivered_view_proof_lf": [
+        542,
+        614
+      ]
+    },
+    {
+      "proof_id": "P:near-static-mean-gap",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. NEW adds preamble and Steps 1–2.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 159,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "dc4383a18112688c7e5f943fa8a08b392b8caef622a1672c677e1e7648196c87",
+      "mathematical_check": "Public type identification, finite positive K(0), full-upper finiteness of K(b), limsup geometric Holder bound with zero-coefficient regularization and the exact window a*=b log2/log(B/K0) are explicit. The strict inequality for a<a* and independently reconstructed static second-moment lower bound give only the stated near-static window; no all-parameter gap or printed source-constant identification is asserted.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 57,
+      "old_statement_lf": [
+        7655,
+        7677
+      ],
+      "old_proof_lf": [
+        7679,
+        7711
+      ],
+      "old_statement_sha256": "edf0a9f8e0e367d7964fe12a9ebc0b2f68057a81085cdfc7c3e7a3c11fe0da8b",
+      "old_proof_sha256": "8d65ab888922bff6eeba493fce4d55fa1614e8f6878ab6b0f4c7a271c8988fe0",
+      "new_statement_lf": [
+        8559,
+        8581
+      ],
+      "new_proof_lf": [
+        8583,
+        8626
+      ],
+      "new_statement_sha256": "edf0a9f8e0e367d7964fe12a9ebc0b2f68057a81085cdfc7c3e7a3c11fe0da8b",
+      "new_proof_sha256": "4960dbb6c25e986add3c2ef8d5d5b17f1998388cbb07ac29999a4ede347e2d65",
+      "old_delivered_view_statement_lf": [
+        552,
+        574
+      ],
+      "old_delivered_view_proof_lf": [
+        576,
+        608
+      ],
+      "new_delivered_view_statement_lf": [
+        616,
+        638
+      ],
+      "new_delivered_view_proof_lf": [
+        640,
+        683
+      ]
+    },
+    {
+      "proof_id": "L:full-moment-coefficient-holder",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. NEW adds preamble and Steps 1–4.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 178,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "f3b683a56936d68b8364b4ae5ecbf21ff5e77f301f7cc52f76e66c47cb5d6e78",
+      "mathematical_check": "Publicly reconstructs the common positive Green-Wick measure over all splits and all pairings, including both empty-chain orientations for p=2 and the single mean chain for p=1. Endpoint cutoff sandwich and static mixed-width limits, correct beta(a) homogeneity, positive fixed-a series and static norm series justify coefficient Holder and full nonnegative moment-series regrouping. It does not discard unequal-chain/self pairs or assert uniform parameter limits.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 58,
+      "old_statement_lf": [
+        7752,
+        7764
+      ],
+      "old_proof_lf": [
+        7766,
+        7822
+      ],
+      "old_statement_sha256": "20ca9c71d8da531c31c83d26529190984cf74f3c9367a88eed7bd4e54f129b4b",
+      "old_proof_sha256": "76bd0e8302eaf9ea4079137ffde59c9a620d7ecab6ffce9a74d0e1bcfe3d8318",
+      "new_statement_lf": [
+        8667,
+        8679
+      ],
+      "new_proof_lf": [
+        8681,
+        8755
+      ],
+      "new_statement_sha256": "20ca9c71d8da531c31c83d26529190984cf74f3c9367a88eed7bd4e54f129b4b",
+      "new_proof_sha256": "1990a1faf538c1de9510951936e8fa1b80a06301ae8e3e0229f2e172437bb289",
+      "old_delivered_view_statement_lf": [
+        649,
+        661
+      ],
+      "old_delivered_view_proof_lf": [
+        663,
+        719
+      ],
+      "new_delivered_view_statement_lf": [
+        724,
+        736
+      ],
+      "new_delivered_view_proof_lf": [
+        738,
+        812
+      ]
+    },
+    {
+      "proof_id": "P:moment-growth-logconvex",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. NEW adds preamble and Steps 1–3.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 197,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "075b01ec1536a81f8d1956758111b2eee33ddf045bf56fe4632233845ed3fbbc",
+      "mathematical_check": "Positive finite rates use the reconstructed static minorant and stated full upper result; scalar type conversion and coefficient Holder yield logconvex upper rates. The public finite-convex secant-slope bound gives local Lipschitz continuity of log upper rate only on the open parameter interval, without claiming lower-rate continuity there.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 59,
+      "old_statement_lf": [
+        7836,
+        7848
+      ],
+      "old_proof_lf": [
+        7850,
+        7892
+      ],
+      "old_statement_sha256": "2e1f73b6658ec7a7aaaa9732f3becaa286673b8ffc748a029d18d6df2dd20f27",
+      "old_proof_sha256": "a6e11aa73ab5f888f7286fbd2a62cb17e0e1070ceedf25f6862a023ead2bf08c",
+      "new_statement_lf": [
+        8769,
+        8781
+      ],
+      "new_proof_lf": [
+        8783,
+        8839
+      ],
+      "new_statement_sha256": "2e1f73b6658ec7a7aaaa9732f3becaa286673b8ffc748a029d18d6df2dd20f27",
+      "new_proof_sha256": "613b496a22dbcb6113a2b7bfb3014c5e04a54db7bd01fb8ad6d2fd1986cf0c99",
+      "old_delivered_view_statement_lf": [
+        733,
+        745
+      ],
+      "old_delivered_view_proof_lf": [
+        747,
+        789
+      ],
+      "new_delivered_view_statement_lf": [
+        826,
+        838
+      ],
+      "new_delivered_view_proof_lf": [
+        840,
+        896
+      ]
+    },
+    {
+      "proof_id": "C:static-moment-constant-continuity",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "none added."
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED (unchanged).",
+        "new_explanations_raw": "none added."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 218,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "33b1d1e94a551c5caf12e9b0b3facf0e08ecce50dc4a89dad0758471427a6814",
+      "mathematical_check": "Publicly combines the static lower bound with logconvex interpolation against fixed b, obtains the exact finite ratio envelope, and squeezes both rates as a→0. The p=2/p=1 ratio uses a positive denominator and yields the specified static ratio in the iterated time-then-parameter limit only.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 60,
+      "old_statement_lf": [
+        7895,
+        7914
+      ],
+      "old_proof_lf": [
+        7916,
+        7927
+      ],
+      "old_statement_sha256": "bc7061369a2213c8524a3407d57359070f4771ba1014143fbf78a87d9826adde",
+      "old_proof_sha256": "462cc71e135598138daf3e32575f6fbc37e542b92c14c3259fb3d2c4d7fcccf6",
+      "new_statement_lf": [
+        8842,
+        8861
+      ],
+      "new_proof_lf": [
+        8863,
+        8874
+      ],
+      "new_statement_sha256": "bc7061369a2213c8524a3407d57359070f4771ba1014143fbf78a87d9826adde",
+      "new_proof_sha256": "462cc71e135598138daf3e32575f6fbc37e542b92c14c3259fb3d2c4d7fcccf6",
+      "old_delivered_view_statement_lf": [
+        792,
+        811
+      ],
+      "old_delivered_view_proof_lf": [
+        813,
+        824
+      ],
+      "new_delivered_view_statement_lf": [
+        899,
+        918
+      ],
+      "new_delivered_view_proof_lf": [
+        920,
+        931
+      ]
+    },
+    {
+      "proof_id": "L:white-clock-laplace",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. NEW adds preamble and Steps 1–2.",
+        "new_explanations_raw": "JUSTIFIED."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 238,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "940b6314afd5321e7dc83fa41e3f74f579ede1a6960415a55f39d34e135f1fc7",
+      "mathematical_check": "Publicly evaluates the d=1 white cross spatial factor min(s,t)/2, separates both temporal cones by nonnegative Tonelli, retains the factor 1/[2(theta1+theta2)^2], and obtains the correct common-damping Gamma/(4 theta^(3-a)). The self-pair computation retains first-gap mass r1 and second Green factor 1/2, with finite Gamma integrals at a<1.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "global_main_ordinal": 61,
+      "old_statement_lf": [
+        7967,
+        7993
+      ],
+      "old_proof_lf": [
+        7995,
+        8018
+      ],
+      "old_statement_sha256": "fca1b7d94321845c16546e253adb9d9cc7633942f98952a8efe47aa39175295d",
+      "old_proof_sha256": "1be7b2660a7b2375b5523a025058cdf707764afaaa38b6cc88da79e2df26f235",
+      "new_statement_lf": [
+        8914,
+        8940
+      ],
+      "new_proof_lf": [
+        8942,
+        8974
+      ],
+      "new_statement_sha256": "fca1b7d94321845c16546e253adb9d9cc7633942f98952a8efe47aa39175295d",
+      "new_proof_sha256": "61e5ade02f57492e16813cdfcca41eeac1bca2da977eac8280e3b257faca03eb",
+      "old_delivered_view_statement_lf": [
+        864,
+        890
+      ],
+      "old_delivered_view_proof_lf": [
+        892,
+        915
+      ],
+      "new_delivered_view_statement_lf": [
+        971,
+        997
+      ],
+      "new_delivered_view_proof_lf": [
+        999,
+        1031
+      ]
+    },
+    {
+      "proof_id": "P:clock-copy-obstruction",
+      "author_reconstruction_status": "PARTIAL",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "native_public_flags_raw": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED. NEW adds preamble and Steps 1–5.",
+        "new_explanations_raw": "JUSTIFIED (the preamble correctly delimits that the proposition concerns exactly the direct unweighted constant-correlation candidate)."
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 265,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "6dde63100b2046dea6f23c1c6858dfcd7aa6f1009159b53783531c4bf2e2a426",
+      "mathematical_check": "The required kernel no-go calculation is substantially public: exact sine cone integration, nonnegative spectral smoothing removal, correct partial fractions and positive integrable resolvent density, absolute majorant exponents, correlation ordering, shared-clock q integral and resolvent factor, strict density loss, degree-one Beta evaluation and white normalization all check. However the contract explicitly also requests derivation of analytic-power and Brownian-average identities. This public section starts from supplied Psi/h/v formulas and does not derive the Gaussian characteristic-function expectation E(r+iZ)^(-a), its justified Laplace Fubini, or the spatial Brownian heat average. These supplied preamble facts are correct, but source working cannot fill an expressly requested public reconstruction. Mark PARTIAL for that bounded requested coverage only, not for the otherwise correct strict-loss calculation or a source defect.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": true,
+      "global_main_ordinal": 62,
+      "old_statement_lf": [
+        8076,
+        8104
+      ],
+      "old_proof_lf": [
+        8106,
+        8228
+      ],
+      "old_statement_sha256": "882f1227311f99217060530cb78e137f7cb649eebe119a30e0f6cb59ddce27d5",
+      "old_proof_sha256": "5b1b6eb07633c17bf8e9512abd9b6b64c8f163f0da5d8e6cf345ef5a08ad66fb",
+      "new_statement_lf": [
+        9032,
+        9060
+      ],
+      "new_proof_lf": [
+        9062,
+        9208
+      ],
+      "new_statement_sha256": "882f1227311f99217060530cb78e137f7cb649eebe119a30e0f6cb59ddce27d5",
+      "new_proof_sha256": "e2acb43c890e79c5e822a7efa3131f872bef0543046c4f509df299daef8738f9",
+      "old_delivered_view_statement_lf": [
+        973,
+        1001
+      ],
+      "old_delivered_view_proof_lf": [
+        1003,
+        1125
+      ],
+      "new_delivered_view_statement_lf": [
+        1089,
+        1117
+      ],
+      "new_delivered_view_proof_lf": [
+        1119,
+        1265
+      ]
+    }
+  ],
+  "mathematical_checks": [
+    "Publicly checks the midpoint parameter interval, product endpoint hypotheses, and the Riesz Gaussian-mixture covariance and common-amplitude Holder comparison before consuming the unassigned conditional transfer. The false ancillary chi<alpha inequality is not needed: the same public item explicitly derives 2-chi=(2-alpha-theta)/(1-theta)>0, which independently gives chi<2<3 and discharges local integrability. Source is correct.",
+    "Common endpoint parameters, component product/Riesz/plane hypotheses, invertible pushforward determinant factors, finite positive-weight Holder and nonzero target are explicitly checked. Applies the named unassigned transfer with actual constructed endpoints, without a random-solution sum/coupling identity or invariance of endpoint variational quantities under nonorthogonal maps.",
+    "Fully reconstructs the smooth-to-H1 physical/spectral identification: spectral homogeneity and dyadic Dalang bound; imported finiteness only for real unit Schwartz profiles; quartic scaling and D N(f)^2 control; distinct spectral cross-square and physical quadratic-energy Cauchy-Schwarz estimates; both map difference bounds; real Schwartz H1 approximation; sigma-finite translated-null-set Fubini; strong physical-map limit and representative independence; L1 convergence of squares and uniform Fourier convergence identifying the strong spectral limit even for infinite mu; equality and quartic bound pass to the limit. No target conclusion is used as an oracle. The smooth imported finiteness remains an external input, not new source-PDF certification.",
+    "Publicly constructs static fixed-order coefficients through the stated Wick/Green limits and Hilbert-Cauchy method. The positive temporal-cutoff lower constant gives uniform static partial-sum moment control at arbitrary amplitude; the named uniform-series-tail argument yields geometric coefficient norm bounds and static homogeneity gives all fixed-time norm summability. A common positive disjoint pairing measure proves the mean Holder inequality; uniform temporal-tail sandwich and static multiplier-one limits identify endpoints; correct 4k-alpha*k-a*k scaling, odd-mean cancellation and norm summability justify all-z positive mean series.",
+    "Both directions of coefficient/type equivalence are explicitly reconstructed. Optimizing z=(nu*k/L)^nu and refined factorial logarithm bounds give K≤(L/nu)^nu, including zero limiting type. Conversely eventual coefficient bounds retain the finite polynomial, and the ell^nu exponential estimate for nu≥1 gives tau≤nu*K^(1/nu). The forward/backward deductions are not replaced by statement quotation.",
+    "At fixed T and finite order the positive Laplace-cutoff covariance dominates the constant static amplitude; Green-before-noise and fixed-N limits retain the finite polynomial in amplitude. Static norm summability permits N→infinity for p=1,2. Total order 2k gives the explicit moment amplitude/effective-time identity, followed by the exact normalized exponent calculation. This is a moment-law identity, not pathwise coupling or interchanged large-time/source limits.",
+    "Public type identification, finite positive K(0), full-upper finiteness of K(b), limsup geometric Holder bound with zero-coefficient regularization and the exact window a*=b log2/log(B/K0) are explicit. The strict inequality for a<a* and independently reconstructed static second-moment lower bound give only the stated near-static window; no all-parameter gap or printed source-constant identification is asserted.",
+    "Publicly reconstructs the common positive Green-Wick measure over all splits and all pairings, including both empty-chain orientations for p=2 and the single mean chain for p=1. Endpoint cutoff sandwich and static mixed-width limits, correct beta(a) homogeneity, positive fixed-a series and static norm series justify coefficient Holder and full nonnegative moment-series regrouping. It does not discard unequal-chain/self pairs or assert uniform parameter limits.",
+    "Positive finite rates use the reconstructed static minorant and stated full upper result; scalar type conversion and coefficient Holder yield logconvex upper rates. The public finite-convex secant-slope bound gives local Lipschitz continuity of log upper rate only on the open parameter interval, without claiming lower-rate continuity there.",
+    "Publicly combines the static lower bound with logconvex interpolation against fixed b, obtains the exact finite ratio envelope, and squeezes both rates as a→0. The p=2/p=1 ratio uses a positive denominator and yields the specified static ratio in the iterated time-then-parameter limit only.",
+    "Publicly evaluates the d=1 white cross spatial factor min(s,t)/2, separates both temporal cones by nonnegative Tonelli, retains the factor 1/[2(theta1+theta2)^2], and obtains the correct common-damping Gamma/(4 theta^(3-a)). The self-pair computation retains first-gap mass r1 and second Green factor 1/2, with finite Gamma integrals at a<1.",
+    "The required kernel no-go calculation is substantially public: exact sine cone integration, nonnegative spectral smoothing removal, correct partial fractions and positive integrable resolvent density, absolute majorant exponents, correlation ordering, shared-clock q integral and resolvent factor, strict density loss, degree-one Beta evaluation and white normalization all check. However the contract explicitly also requests derivation of analytic-power and Brownian-average identities. This public section starts from supplied Psi/h/v formulas and does not derive the Gaussian characteristic-function expectation E(r+iZ)^(-a), its justified Laplace Fubini, or the spatial Brownian heat average. These supplied preamble facts are correct, but source working cannot fill an expressly requested public reconstruction. Mark PARTIAL for that bounded requested coverage only, not for the otherwise correct strict-loss calculation or a source defect."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "proof_id": "C:three-product-riesz",
+      "classification": "REPORT_ONLY_FALSE_ANCILLARY_PARAMETER_INEQUALITY",
+      "old": "\\chi<\\alpha<2-\\alpha_0<2<3",
+      "new": "\\alpha<\\chi<2<3",
+      "contrary_calculation": "chi-alpha=theta*(alpha-1)/(1-theta)>0. For alpha=3/2, alpha0=1/5, midpoint theta=7/20 gives chi=23/13>3/2. The same public paragraph separately computes 2-chi>0; that independent correct bound suffices for every degree e<3. Source only requires e<3 and is correct.",
+      "report_lf": 17
+    },
+    {
+      "id": "R2",
+      "proof_id": "P:clock-copy-obstruction",
+      "classification": "MISSING_EXPLICITLY_REQUESTED_PUBLIC_RECONSTRUCTION",
+      "detail": "The contract requests analytic-power and Brownian-average identities with justified Fubini/regularization. The report uses supplied Psi and h formulas and v_rho ordering without deriving the analytic Gaussian expectation/Laplace identity or the Brownian spatial heat average. This is a limited coverage gap; the subsequent kernel/resolvent/strict-loss and exact ratio calculations are publicly reconstructed correctly. No source correction is requested.",
+      "report_lf": 292
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": true,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 29245,
+      "sha256": "2372c0470b2a8f99618e146aa96dae96ab419af0a319b2eee9a87d30f497201c"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 4907,
+      "sha256": "4066a61b3db3f7a740c4e7b7fecbeb247404b95a270ada4175d7f609cb184618"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 16914,
+      "sha256": "fb07756a57ffb14f4c33027e76706692340e30913f76c2de979534ac016d21da"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 10915,
+      "sha256": "3d81792d6eaa423d6d1b8eebec687cc09c4897a45fc91b984da23d34285b0fb6"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 19186,
+      "sha256": "e30c81eeefaab14644ba7d3c75555ad6d38395a0fa92c1b399b34d01f4f1c695"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 11792,
+      "sha256": "c83261c3407fd6f32f5b5c91bdd09b4dfde6d24ce86708e68b7b1ddccd2cb18d"
+    },
+    {
+      "path": "inputs/old-target-1.txt",
+      "bytes": 55154,
+      "sha256": "e1428fa661f1802f644e5bda7302c7e26100785155f7d59a1fa84580a9f1895c"
+    },
+    {
+      "path": "inputs/new-target-1.txt",
+      "bytes": 59828,
+      "sha256": "ec94f3f5b11e1082eb6926f42d9771e1581098e54ebe74f9bd14f785dad48d7c"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-canonical-expansion.txt",
+      "bytes": 1687,
+      "sha256": "85b10629c4ef8076f1137fbcc500b675f1778e844fb0db97b4c171f836155b5b"
+    },
+    {
+      "path": "inputs/context-baseline-main01-10-1.txt",
+      "bytes": 64045,
+      "sha256": "2876b6a53acd51f684b1de58ef10238ed193583de14ef61036ad7c3e3a26fb90"
+    },
+    {
+      "path": "inputs/context-baseline-main11-20-1.txt",
+      "bytes": 12252,
+      "sha256": "87b66ce2a59939992291eda3b0523f59101d6ac5929bdbe546c3bbb3483acca2"
+    },
+    {
+      "path": "inputs/context-baseline-main11-20-2.txt",
+      "bytes": 39000,
+      "sha256": "9f2eac52bc8982be9cc33856fc2ee7c6b92ceb65b4586c87e361afe5ad0f44f2"
+    },
+    {
+      "path": "inputs/context-baseline-main31-40-1.txt",
+      "bytes": 46033,
+      "sha256": "e33001ea260e0bc77db7a5a28cc67f1dce0bfb3c66dbe644c62d2247ca50fa91"
+    },
+    {
+      "path": "inputs/context-baseline-main21-30-1.txt",
+      "bytes": 54845,
+      "sha256": "cdc92beea1bf55b2ec4051d10576fe98f37849d46233167debae51dac00635b3"
+    },
+    {
+      "path": "inputs/context-baseline-main21-30-2.txt",
+      "bytes": 12766,
+      "sha256": "fbcc5de899fb75fa36cd239dae10f1a539b7dcecd63e24ca1f883a397d4ab484"
+    },
+    {
+      "path": "inputs/context-baseline-main41-50-1.txt",
+      "bytes": 68832,
+      "sha256": "e40d59ab9476545b876cdba9c500d81605b2c6421d934632a3716490783df722"
+    },
+    {
+      "path": "inputs/context-T-first.txt",
+      "bytes": 1204,
+      "sha256": "f4af10dbebc01a0ad1a57666e937f5e849ab3e9d6d9ec8a845729eaaabf74fe8"
+    },
+    {
+      "path": "inputs/context-T-intro-second-moment.txt",
+      "bytes": 637,
+      "sha256": "e896c68cc58d27ee3ed961c533d45da45ca5e8001aa2395d9c905249390d8aaf"
+    },
+    {
+      "path": "inputs/context-E-kappa.txt",
+      "bytes": 126,
+      "sha256": "7dfe2740d1848a8a0d2672ac161275bd4d1068799e7a71dee3c86cc7cd0c5e78"
+    },
+    {
+      "path": "inputs/context-intrinsic-constant.txt",
+      "bytes": 21834,
+      "sha256": "820990dec2c6d3caa7c670b26836ed004c74c12028ce3f68ca91751317689084"
+    },
+    {
+      "path": "inputs/context-P-nogo-09.txt",
+      "bytes": 404,
+      "sha256": "0cb917b3f2424dac0aea2756805977497d3e9280ac4a24dfe18eee719a4b3216"
+    },
+    {
+      "path": "inputs/context-P-nogo-12.txt",
+      "bytes": 484,
+      "sha256": "e426b0594695239866ad5865a3093d57455e370ff8cac8cae42b9a55aff7b78a"
+    },
+    {
+      "path": "inputs/context-P-nogo-13.txt",
+      "bytes": 457,
+      "sha256": "4f005270f758310ea4c04aa7d01156a9230df6a84a197d96f57c9feb5cf40109"
+    },
+    {
+      "path": "inputs/context-P-nogo-17.txt",
+      "bytes": 533,
+      "sha256": "893c526b3d38119dda50dca9e74b52b7bb5d448b87d13072bc4f2f7f7ad116b5"
+    },
+    {
+      "path": "inputs/context-P-nogo-18.txt",
+      "bytes": 614,
+      "sha256": "c440180e049870d711a9803d492d9149b88175bfd5a2c7c90d800ed1c503ec8e"
+    }
+  ],
+  "input_identity_checks": "All source/context payload bytes independently matched exact pinned Git WHOLE_FILE ordeclared GLOBAL LF selections; fullMAIN/baseline hashes verified; every delivered complete OLD/NEWstatement/proof matched GLOBAL LF and SHA plusviewoffset. FullMAIN bytes usedforidentity,notfullMAIN mathematicalcoverage.",
+  "source_currentness": {
+    "covered_launch_revision": "58108ca3065cb408eb13b06cc772fe71de546535",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "limit": "Only this exact assigned source versuscdde and supplied context; no older report rebinding, unexamined successor or whole-book seal."
+  },
+  "read_limits": [
+    "Only assigned GLOBAL literal-main ordinals[51, 62] mathematicallyadjudicated here. Complete scientific OLD/NEWtargetframes readwithbaselinecomparisons; genuinelyneeded suppliedcontext statements checked. Noinput/includeexpansion,nocontextproofscounted,andno065–067publicreportsread.",
+    "Every assigned complete OLD/NEW statement/proof and every actual public math reason/AUDIT/finding checked. Named supplied upstream statements consumed under checked hypotheses; upstream theorem proofs not assigned or counted. No primary PDF/image/Lean/render/human certification.",
+    "No native export/hidden reasoning/events/transport, provider/model/probe, callback, source/public/Git/PDF edit or build. Prospective recovery/accounting belongs to root and dispatcher."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority",
+  "module_header": "11 CHECKED / 1 bounded PARTIAL: the clock kernel strict-loss computation is checked; explicitly requested analytic-power/Brownian-average public derivations are omitted. No source defect or required source correction.",
+  "assigned_global_main_ordinals": [
+    51,
+    62
+  ],
+  "main_source_identity": {
+    "source_revision": "58108ca3065cb408eb13b06cc772fe71de546535",
+    "full_main_sha256": "85a7d3e9e2402a1e763391dea691d1b0c1e3f877974395f3939a59f5fd066901",
+    "full_main_bytes": 432976,
+    "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+    "baseline_full_main_sha256": "3e6fa584fed7e76e9bec44f590bee7cbba645594d633693e8e4297cb87b7148d",
+    "baseline_full_main_bytes": 398978,
+    "full_main_file_delivered_to_reviewer": false,
+    "delivery": "Exact declared scientific GLOBAL LF selections only; complete assigned statements/proofs and required definitions. Context proofs explicitlyUNASSIGNED."
+  },
+  "delivered_target_views": [
+    {
+      "path": "inputs/old-target-1.txt",
+      "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+      "source_global_lf": [
+        7104,
+        8278
+      ],
+      "sha256": "e1428fa661f1802f644e5bda7302c7e26100785155f7d59a1fa84580a9f1895c",
+      "bytes": 55154,
+      "role": "ASSIGNED OLD scientific target block. Only global main proof ordinals 51–62 assigned; all complete declarations/proofs and intervening scientific definitions retained."
+    },
+    {
+      "path": "inputs/new-target-1.txt",
+      "source_revision": "58108ca3065cb408eb13b06cc772fe71de546535",
+      "source_global_lf": [
+        7944,
+        9258
+      ],
+      "sha256": "ec94f3f5b11e1082eb6926f42d9771e1581098e54ebe74f9bd14f785dad48d7c",
+      "bytes": 59828,
+      "role": "ASSIGNED NEW scientific target block. Only global main proof ordinals 51–62 assigned; all complete declarations/proofs and intervening scientific definitions retained."
+    }
+  ],
+  "root_reviewed_specific_coverage_point": "Root approved bounded contract-coverage PARTIAL: actual wave/resolvent/shared-clock/degree-one kernel working CHECKED; explicitly requested additional analytic-power/Gaussian expectation and Brownian heat-average derivations are absent from public working. These checks occur in scientific focus outside/preceding the formal proof. Correct supplied Psi/h definitions provide positive partial evidence. No source/obstruction-proof defect or global theorem failure.",
+  "additional_clock_contract_checks_missing": true,
+  "formal_clock_obstruction_kernel_public_working": "CHECKED"
+}
