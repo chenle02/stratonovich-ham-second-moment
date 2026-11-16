@@ -14,7 +14,7 @@ They do not replace the proofs.
 | `proof-map.tex` | The independent upper bound and the fixed-control lower bound establish finiteness before the sharp comparison | Yes |
 | `nonseparable-controls.tex` | Nonnegative smooth controls need not be one temporal function times one spatial function | Yes |
 | `two-chain-pairings.tex` | Self-pairs, cross-pairs and unequal chain lengths; ordering is only within each chain | Yes |
-| `order-of-limits.tex` | Green smoothing is removed before external noise widths, followed by the summable-order passage | Technical detail |
+| `order-of-limits.tex` + `order-of-limits-drawing.tex` | Numbered Green-before-noise construction; joint width approaches and the separate summable-tail passage | Technical detail |
 | `common-noise.tex` | Every cutoff uses the given Gaussian noise and one fixed auxiliary noise; the limit retains the original noise | Yes |
 | `light-cone.tex` | The backward domain of dependence lies inside the cutoff plateau; both displacement and velocity matter | Yes |
 | `global-control-blocks.tex` | Correlated blocks, the true final shortened interval, and one global Gaussian cost | Yes |

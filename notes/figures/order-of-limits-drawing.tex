@@ -1,0 +1,63 @@
+% Schematic of the construction order; paths show no convergence rates.
+\begin{tikzpicture}[x=1cm,y=1cm,font=\normalsize,
+  stage/.style={ham/box,font=\normalsize,text width=7.45cm,
+  minimum height=1.65cm,inner sep=6pt},
+  number/.style={circle,draw=hamblue,fill=hamblue!6,
+  minimum size=8mm,inner sep=0pt,font=\normalsize\bfseries}]
+  \node[anchor=west,font=\normalsize\bfseries,text=hamblue]
+  at (0,0.55) {Fixed-order construction};
+  \node[number] (n1) at (0.45,-0.8) {1};
+  \node[stage] (start) at (5.15,-0.8)
+  {\textbf{Fix the orders $m,n$}\\
+  Positive Green smoothing;\\
+  positive noise widths.};
+  \node[number] (n2) at (0.45,-3.0) {2};
+  \node[stage] (green) at (5.15,-3.0)
+  {\textbf{Remove Green smoothing}\\
+  Noise widths stay\\
+  positive and fixed.};
+  \node[number] (n3) at (0.45,-5.2) {3};
+  \node[stage] (noise) at (5.15,-5.2)
+  {\textbf{Remove noise smoothing}\\
+  Both widths vanish jointly;\\
+  any relative rates.};
+  \draw[ham/arrow] (start.south)--(green.north);
+  \draw[ham/arrow] (green.south)--(noise.north);
+  \draw[ham/arrow] (n1.south)--(n2.north);
+  \draw[ham/arrow] (n2.south)--(n3.north);
+
+  \node[font=\normalsize\bfseries,text=hamblue] at (12.45,-1.3)
+  {Joint noise limit};
+  \node at (12.45,-1.8) {$\epsilon$: space; $\delta$: time};
+  \draw[hamblue!35,rounded corners=2pt] (10.0,-2.2)
+  rectangle (15.0,-5.85);
+  % Positive spatial and temporal widths approach the same origin along
+  % different schematic routes. No rate, scale or covariance is encoded.
+  \coordinate (origin) at (10.8,-4.85);
+  \draw[ham/arrow] (origin)--(14.45,-4.85)
+  node[above left=3pt] {$\epsilon$};
+  \draw[ham/arrow] (origin)--(10.8,-2.55)
+  node[below right=3pt] {$\delta$};
+  \node[anchor=north east,inner sep=3pt] at (origin) {$0$};
+  \draw[ham/arrow,draw=hamteal] (14.0,-2.65)
+  .. controls (12.8,-3.1) and (11.8,-4.4) .. (10.92,-4.77);
+  \draw[ham/arrow,draw=hamteal,dashed] (14.0,-3.5)
+  .. controls (12.9,-4.55) and (11.7,-4.75) .. (10.92,-4.82);
+  \draw[ham/arrow,draw=hamteal,densely dotted] (12.65,-2.55)
+  .. controls (11.2,-2.95) and (11.05,-3.8) .. (10.85,-4.7);
+  \node[align=center] at (12.5,-5.45) {No fixed width ratio};
+  \draw[hamblue!45,dashed] (noise.east)--(10,-5.2);
+
+  \node[number] (n4) at (0.45,-7.85) {4};
+  \draw[ham/arrow] (n3.south)--(n4.north);
+  \draw[hamblue!35] (1.25,-6.4)--(15,-6.4);
+  \node[anchor=west,font=\normalsize\bfseries,text=hamblue]
+  at (1.25,-6.85) {Then pass to the full solution};
+  \node[ham/box,font=\normalsize,text width=5.1cm,
+  minimum height=1.05cm] (tail) at (4.1,-7.85)
+  {Separate summable tail bound};
+  \node[ham/box,font=\normalsize,text width=5.25cm,
+  minimum height=1.05cm] (sum) at (12.0,-7.85)
+  {Sum over all orders};
+  \draw[ham/arrow] (tail.east)--(sum.west);
+\end{tikzpicture}
