@@ -52,6 +52,9 @@ We use all pair partitions, including self-pairings.
   \begin{equation}\label{E:masked-chain-mass}
     \nu_n^{t,x}(1)=\frac{t^{2n}}{(2n)!}.
   \end{equation}
+  In the covariance and mask factors below, $z_i$ denotes the vertex position
+  recovered backwards from the terminal point, not the Green increment used to
+  construct the chain measure.
   Starting from mass one at order zero, the recursion integrates the mass of
   the last Green factor, $t-r$, against the previous mass. Substituting
   $f_{n-1}(r) = r^{2n-2}/(2n-2)!$ gives the displayed mass by elementary
@@ -84,6 +87,9 @@ We use all pair partitions, including self-pairings.
   \noindent\textit{Step 2.~}We identify the integrals obtained by Green
   smoothing.
   These are the canonical regularized terminal integrals at common noise widths.
+  The unmasked $X_{\rho,n}(t,x)$ is $Y_n^{\boldsymbol a}(t,x)$ from
+  Lemma~\ref{L:vertex-crude} with every vertexwise noise width in $\boldsymbol
+  a$ set equal to $\rho$, so its bound is $q_n(t)$.
   Here is the Green-width identification needed in dimension three. At fixed
   positive $\rho$, replace every Green measure by its convolution with a
   positive heat approximate identity. At fixed times the measures converge
@@ -99,11 +105,6 @@ We use all pair partitions, including self-pairings.
   needed. Consequently, Lemma~\ref{L:vertex-crude} applies to the unmasked
   integrals.
 
-  For the $L^2$ comparison, expand the squared difference into the two square
-  moments and the cross moment. All three converge to the same unsmoothed Wick
-  sum, so their combination tends to zero. This identifies the limit as an
-  actual mean-square limit of the regularized integrals, not just a limit of
-  their variances.
 
   \medskip
   \noindent\textit{Step 3.~}We compare each masked Wick diagram with its
@@ -115,10 +116,6 @@ We use all pair partitions, including self-pairings.
     C_\rho(s_i,z_i;s_j,z_j)
     \ud(\nu_n^{t,x}\otimes\nu_k^{t,y}).
   \]
-  Every covariance factor is nonnegative, and the product chain measure is
-  positive. Thus, multiplying the integrand by any factor between zero and one
-  can only decrease its integral. The physical mask supplies exactly such a
-  factor.
   The masked integrand has the additional factor $\prod_{i=1}^{2l}m(z_i) \in
   [0,1]$. Every vertex appears exactly once, irrespective of its chain or
   partner. Summing gives \eqref{E:masked-order-comparison}, including unequal
@@ -169,10 +166,6 @@ We use all pair partitions, including self-pairings.
   M^nT^{2n}/(2n)!$, where $B$ bounds their difference on the larger compact
   cone. Letting $n \to \infty$ proves uniqueness.
 
-  The factorial dominates every fixed power of $M T^2$, so the bound on the
-  difference tends to zero. The boundedness required for $B$ follows from
-  continuity on the compact cone. This argument applies separately on each
-  fixed compact observation set and finite horizon.
 
   \medskip
   \noindent\textit{Step 2.~}We identify the continuous version with the
@@ -192,23 +185,21 @@ We use all pair partitions, including self-pairings.
     \sum_{n,k\ge0}\E|X_{\rho,n}^{(m)}(t,x)
     X_{\rho,k}^{(m)}(t,y)|\le Q_t^2.
   \]
-  Each summand is bounded by $q_n(t)q_k(t)$ by Cauchy--Schwarz and the order
-  bounds. The product of the two summable series is $Q_t^2$. This supplies an
-  absolute majorant for the double series and justifies summing the termwise
-  comparison.
+  For the unmasked stationary field, Cauchy--Schwarz bounds its two-point
+  expectation by the geometric mean of two equal point second moments.
   Products of partial sums converge in $L^1$. Thus, the preceding lemma passes
   termwise to~\eqref{E:masked-two-point}. The unmasked source law is spatially
   stationary, and its finite Picard integrals commute with translations. Their
   $L^2$ limits inherit stationarity, so $\E[u_\rho(t,x)u_\rho(t,y)] \le
   \E|u_\rho(t,0)|^2$. Stationarity is not required of the masked solution.
 
-  To use stationarity, apply Cauchy--Schwarz to the unmasked values at $x$ and
-  $y$. Both second moments equal the one at zero, so their geometric mean is
-  that same second moment. No comparison of random solutions pointwise is
-  involved.
 
   \medskip
   \noindent\textit{Step 4.~}We form the tested spatial average.
+  Translating every recovered vertex position by $x$ identifies $\nu_n^{t,x}$
+  with the translate of $\nu_n^{t,0}$; on this fixed increment measure,
+  varying $x$ changes only the arguments of the source factors and, in the
+  masked case, of $m$.
   Each finite Bochner term is $L^2$-continuous in $x$ by source increment
   continuity on compact cones and dominated Gaussian product moments. Uniform
   $q_n$ tails pass this property to the full sum. Its separable $L^2$ image and
@@ -242,6 +233,8 @@ We use all pair partitions, including self-pairings.
 
   \medskip
   \noindent\textit{Step 1.~}We identify the limit for fixed orders.
+  The relabelling $r$ below reverses the vertex order separately within each
+  chain.
   At every fixed pair of orders the common-width source law is the vertexwise
   law in Lemma~\ref{L:joint-fixed-order}. At terminal $(t,0)$ reverse each chain
   by $s'_j = t-s_{n+1-j}$, $z'_j = -z_{n+1-j}$, and likewise for the other
@@ -264,10 +257,6 @@ We use all pair partitions, including self-pairings.
   $q_n(t)q_k(t)$. Given $\delta > 0$, choose a finite square of orders with the
   double majorant outside it less than $\delta$. On the square the finitely many
   limits hold jointly; off it both tails are bounded by $\delta$.
-  The error between the full moments is bounded by the error on the chosen
-  finite square plus the two omitted tails. The first error tends to zero;
-  each tail is less than $\delta$ uniformly in the widths. Letting $\delta$
-  decrease to zero gives convergence of the whole double sum.
   Proposition~\ref{P:mixed} identifies the canonical sum, proving
   \eqref{E:masked-unmasked-moment-limit}. This argument uses the single-width
   diagram laws, without assigning a new pathwise realization of the entire
