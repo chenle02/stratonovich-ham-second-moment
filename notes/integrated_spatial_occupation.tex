@@ -56,6 +56,15 @@ its usual pointwise sense.
 \end{lemma}
 
 \begin{proof}
+  We first obtain the static Rayleigh rate from an admissible smooth control.
+  We then approximate the exact temporal equilibrium by increasing compact
+  smooth controls and pass their rewards and original covariance costs to the
+  limit separately.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the static rate and its local Lipschitz
+  bound.
   Choose nonnegative nonzero $f \in C_c^\infty(0,1)$ and $s_0 = 1/2$. Let
   $k_f(s_0) = \int_0^1|s_0-t|^{-a}f(t)\ud t > 0$. The smooth test $\Psi(t,x) =
   cf(t)z(x)/k_f(s_0)$ has mean $cU_z$ at $s_0$.
@@ -65,6 +74,15 @@ its usual pointwise sense.
   constant $\|U_z\|_\infty$. On a positive compact interval its rate has a
   positive floor by monotonicity, giving the square-root Lipschitz bound.
 
+  For two positive coefficients, the difference of the squared Rayleigh rates
+  is bounded by the coefficient difference times $\|U_z\|_\infty$. To pass to
+  their square roots, divide by the sum of the positive rates. On a compact
+  positive coefficient interval, monotonicity bounds that denominator away
+  from zero by the rate at its left endpoint.
+
+  \medskip
+  \noindent\textit{Step 2.~}We approximate the equilibrium density by
+  admissible controls.
   Use the nonincreasing smooth cutoff $\chi$ constructed in the proof of
   Proposition~\ref{P:variational-remove-mask}. For integers $n \ge 4$, set on
   $(0,1)$
@@ -82,6 +100,15 @@ its usual pointwise sense.
   $\lambda_z(1)$ and bounded by that finite number. Dominated convergence gives
   $I_{\Psi_n} \to \lambda_z(1)$.
 
+  As $n$ increases, both arguments of the nonincreasing cutoff decrease, so
+  both cutoff factors increase. Their product increases to one at every
+  interior time. The temporal potentials are therefore increasing and remain
+  between $c_0$ and one, a compact positive interval on which the rate
+  comparison just proved applies.
+
+  \medskip
+  \noindent\textit{Step 3.~}We pass the covariance cost and the score to the
+  limit.
   The Gaussian cost is exactly the nonnegative Tonelli pairing
   \[
     v_{\Psi_n}=B_\Gamma(z,z)\int_0^1f_n(s)k_n(s)\ud s.
@@ -114,6 +141,15 @@ of $S_1^{\mathrm{pos}}$.
 \end{lemma}
 
 \begin{proof}
+  We identify the spatial energy spectrally without assuming a measure
+  density. A mass bound and a derivative bound on the Fourier transform give a
+  resolvent majorant, whose homogeneous integral supplies the desired
+  constant.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the energy as a finite spectral
+  integral.
   If $b=0$, smoothness makes $\nabla g=0$ everywhere. Thus, $g$ is constant,
   and compact support forces $g=0$, contrary to $\|g\|_2=1$. Put $Q=g^2$ and
   use the unnormalized Fourier transform
@@ -138,6 +174,10 @@ of $S_1^{\mathrm{pos}}$.
   Radon, while $|\mathcal{F}_0Q|^2$ is Schwartz and $\mu$ is tempered.
   No density of either measure is required.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound the Fourier transform by a resolvent
+  weight.
   Since $\|Q\|_1=1$, we have $|\mathcal{F}_0Q|\le1$. Integration by parts
   and the Cauchy--Schwarz inequality give
   \[
@@ -149,6 +189,15 @@ of $S_1^{\mathrm{pos}}$.
   \[
     |\mathcal{F}_0Q(\xi)|^2\le\frac{8b}{4b+|\xi|^2}.
   \]
+  In the region $|\xi|^2\le4b$, the right side of the preceding display is at
+  least one, so the mass bound applies. In the other region, the derivative
+  bound gives $4b/|\xi|^2$, which is at most $8b/(4b+|\xi|^2)$ because
+  $4b\le|\xi|^2$. Thus, the two estimates give one majorant over the whole
+  spectrum.
+
+  \medskip
+  \noindent\textit{Step 3.~}We integrate the majorant and keep the original
+  spectral normalization.
   The deterministic resolvent calculation in the proof of
   Lemma~\ref{L:damped-homogeneous-norms}, together
   with~\eqref{E:intro-spectral-mass}, gives, for $q>0$,
@@ -186,6 +235,14 @@ profile only through the ratio of $A_{\mathrm{sp}}$ to a power of $b$.
 \end{proposition}
 
 \begin{proof}
+  We first bound the smooth spatial ratio. We then vary the amplitude of a
+  squared dilated profile so that its Rayleigh test has a prescribed positive
+  value, and optimize the resulting one-variable score.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove positivity and finiteness of the ratio
+  supremum.
   The gradient energy $b(g)$ is positive: a nonzero $L^2$ function with zero
   weak gradient would have Fourier transform supported only at zero, and hence
   would vanish. Its square is nonnegative nonzero smooth compact, so the
@@ -203,6 +260,10 @@ profile only through the ratio of $A_{\mathrm{sp}}$ to a power of $b$.
   The factors in the first identity are $\ell^{2d}$ from the two squares,
   $\ell^{-d}$ from $\ud x$, and $\ell^{\alpha-d}$ from the Radon pushforward.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We choose the amplitude and spatial scale of a
+  single control.
   For $\theta,\ell > 0$ choose the smooth control $z = \theta(U_\ell g)^2$. The
   Rayleigh test $U_\ell g$ gives $\lambda_z(1)^2 \ge \theta\ell^\alpha
   A-\ell^2b$, while $B_\Gamma(z,z) = \theta^2\ell^\alpha A$. For any $L > 0$,
@@ -211,12 +272,21 @@ profile only through the ratio of $A_{\mathrm{sp}}$ to a power of $b$.
     \ell^2=uL^2/b,\qquad
     \theta=(1+u)L^2/(\ell^\alpha A).
   \]
+  The chosen scale gives $\ell^2b=uL^2$, and the chosen amplitude gives
+  $\theta\ell^\alpha A=(1+u)L^2$. Their difference is $L^2$. In the cost,
+  substituting these same choices gives $\theta^2\ell^\alpha
+  A=(1+u)^2L^4/(\ell^\alpha A)$; replacing $\ell^\alpha A$ by
+  $u^{\alpha/2}L^\alpha R(g)$ yields the coefficient $C$ below.
   The radicand is $L^2$. Lemma~\ref{L:spatial-static-controls} consequently
   gives
   \[
     S_1^{\mathrm{pos}}\ge L-CL^q,\qquad
     C=\frac{M_a(1+u)^2}{2R(g)u^{\alpha/2}}>0.
   \]
+  The derivative of $L-CL^q$ is $1-qCL^{q-1}$. It changes sign once from
+  positive to negative since $q>1$. At its zero, $CL^q=L/q$, so the value is
+  $(1-1/q)L=(k/q)L$. This gives the maximum stated below without assuming any
+  optimizer for the spatial profiles.
   Its maximum occurs at $L^k = 1/(qC)$ and is $(k/q)(qC)^{-1/k}$. Since $1+u =
   4/q$, $1/(q^qC) = R(g)\alpha^{\alpha/2}/(8M_aq^{q/2})$,
   proving~\eqref{E:spatial-smooth-score}. This argument retains the finite
@@ -251,6 +321,14 @@ for real $H^1$ profiles, so we extend them with the same constant $R_0$.
 \end{proposition}
 
 \begin{proof}
+  We first obtain the square-pair bound for smooth profiles and extend it by
+  Fatou. We then use ordinary Cauchy–Schwarz under the physical measure to
+  prove an absolutely convergent four-linear bound. That bound, rather than
+  Fatou alone, gives continuity and the full-class ratio identity.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We establish the smooth square-pair estimates.
   For smooth compact $f$, normalization in $R_0$ proves
   \eqref{E:spatial-homogeneous-bound}, including $f = 0$. All exponents in $N$
   are positive and $N(f) \le \|f\|_{H^1}$. For smooth compact signed $Q,P$, the
@@ -273,6 +351,10 @@ for real $H^1$ profiles, so we extend them with the same constant $R_0$.
   \]
   The squares of signed smooth profiles are already smooth and nonnegative.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We approximate Sobolev profiles and obtain finite
+  physical pairings.
   Smooth compact functions are dense in $H^1$. Cutoffs equal to one on the
   radius-$R$ ball, vanishing beyond $2R$ and with gradient at most $C/R$,
   converge by the function and gradient tails and the bound $C\|f\|_2/R$ for the
@@ -288,6 +370,9 @@ for real $H^1$ profiles, so we extend them with the same constant $R_0$.
   including the diagonal bound. At this stage Fatou supplies an inequality, not
   continuity.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We prove the four-linear estimate and continuity.
   Apply ordinary Cauchy--Schwarz under the positive measure $\nu$ to
   $f_1(x)f_3(x-y)$ and $f_2(x)f_4(x-y)$. The two squared integrals are finite by
   the last bound; their square root is at most $R_0\prod_jN(f_j)$. This
@@ -299,6 +384,16 @@ for real $H^1$ profiles, so we extend them with the same constant $R_0$.
   Cauchy--Schwarz gives \eqref{E:spatial-square-CS}. This completes the physical
   pairing argument beyond Fatou.
 
+  In a telescoping difference of four-linear expressions, each term contains
+  exactly one difference of arguments and three unchanged or approximating
+  arguments. The latter stay bounded in $H^1$, while the norm of the
+  difference tends to zero. The four-linear bound therefore makes each term
+  tend to zero. This is the continuity needed to pass positive
+  semidefiniteness from smooth squares to Sobolev squares.
+
+  \medskip
+  \noindent\textit{Step 4.~}We identify the full ratio supremum and strict
+  positivity.
   Every real unit $H^1$ profile has positive gradient energy by the Fourier
   argument above. The homogeneous bound gives $R_{\mathrm{sp}} \le R_0$, and
   smooth inclusion gives the reverse. Normalized smooth approximations preserve
@@ -344,6 +439,10 @@ restate the score bound in those terms.
 \end{proposition}
 
 \begin{proof}
+  We optimize spatial dilation for a fixed profile, then take the supremum
+  over all profiles. The resulting identity expresses the ratio constant in
+  terms of the energy and lets us rewrite the static score bound.
+
   Physical change of variables, or smooth approximation and
   Proposition~\ref{P:spatial-four-linear}, extends \eqref{E:spatial-dilation} to
   real $H^1$ profiles. For fixed unit $g$, with $A,b > 0$, the maximum of
@@ -352,6 +451,10 @@ restate the score bound in those terms.
     \frac{2-\alpha}{2}\alpha^{\alpha/(2-\alpha)}
     R(g)^{2/(2-\alpha)}.
   \]
+  Differentiating the scalar expression gives $\alpha A\ell^{\alpha-1}-b\ell$.
+  Its positive zero satisfies the stated equation. At that point,
+  $b\ell^2=\alpha A\ell^\alpha$, so the value is $(1-\alpha/2)A\ell^\alpha$.
+  Substitution of the critical scale gives the displayed power of $R(g)$.
   Dilation preserves the whole unit class and includes $\ell = 1$. Taking both
   numerical suprema, then profiles with ratio tending to $R_{\mathrm{sp}}$,
   proves~\eqref{E:spatial-energy-map}. No optimizer is assumed. Smooth ratios
@@ -427,6 +530,15 @@ optimizer condition is imposed.
 \end{proposition}
 
 \begin{proof}
+  We first identify measurable physical pairings for the full occupation
+  class. We bound the time integral by the kernel row estimate and then
+  compare its energy with the spatial energy, retaining the full class
+  throughout.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify measurable representatives and their
+  pairings.
   The map $s\mapsto b(g_s)$ is measurable by continuity of the squared gradient
   norm. Also $\int_0^1\|g_s\|_{H^1}^2\ud s = 1+T(g)$. Use a separably valued
   strong representative and replace exceptional null times by one fixed real
@@ -441,6 +553,10 @@ optimizer condition is imposed.
   measurable function of $(s,t)$ agreeing a.e. with the nonnegative physical
   integral.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We apply the spatial bound and the temporal row
+  estimate.
   Set $F(s) = b(g_s)^{\alpha/4}$. Equations~\eqref{E:spatial-homogeneous-bound}
   and~\eqref{E:spatial-square-CS} give $B_\Gamma(g_s^2,g_t^2) \le
   R_{\mathrm{sp}}F(s)F(t)$. Since $0 < \alpha/2 < 1$, concavity on the unit time
@@ -451,6 +567,9 @@ optimizer condition is imposed.
   Tonelli is valid before finiteness is known. Null-time modifications affect
   only a product-null set, so they cannot change $J$.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We bound the energy and show that it is positive.
   The scalar maximum of $R_\star R_{\mathrm{sp}}T^{\alpha/2}-T/2$ over $T \ge 0$
   is $R_\star^{2/(2-\alpha)}\mathcal{E}_{\mathrm{sp}}$, by the same
   differentiation as~\eqref{E:spatial-energy-map}. This bounds the occupation
