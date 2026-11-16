@@ -23,20 +23,17 @@ fixed version of the companion: commit \lcCommit{}, made on \lcDate{} at
 \lcTime{}. All the checks reported below were run on that version, and the
 list is generated from its coverage file. A later version may cover more.
 
-Most results that have a row here carry a marker on their heading line in
-the text, such as [Lean: full statement]. The marker shows the class that this
-appendix prints for the result, and it links to the result's row. Displayed
-equations have no heading line and carry no marker.
-\emph{Full statement} means that every conclusion is formalized under the
-book's hypotheses. \emph{Narrower statement} means that Lean proves a
-narrower conclusion. \emph{Partial, with inputs} means that steps are
-checked, not the result itself, with analytic inputs supplied as hypotheses.
+Most results that have a row here carry a small link in the left margin of
+the text, beside their heading: the word Lean and, under it, the class that
+this appendix prints for the result. The link leads to the result's row.
+\emph{Full} means that every conclusion is formalized under the book's
+hypotheses. \emph{Narrower} means that Lean proves a narrower conclusion.
+\emph{Partial} means that steps are checked, not the result itself, with
+analytic inputs supplied as hypotheses. Displayed equations carry no link.
 Lean checks the formal statements. Their match with the statements of this
 book was reviewed by AI models and has not been verified by a person. A
-result without a marker carries no Lean claim; this does not mean that the
-result is in doubt. For some results the title stands on its own line and
-the place of the marker is empty: that place is reserved for the next
-release of the Lean companion, and until then it makes no claim.
+result without a link carries no Lean claim; this does not mean that the
+result is in doubt.
 
 Three points apply to every row. First, Lean checks the statements as they
 are written in Lean. Second, whether those statements say what the book says

@@ -53,36 +53,35 @@
 \ifx\lc@kind\lc@equation Equation~\eqref{#2}\else #1~\ref{#2}\fi}
 \makeatother
 % Lean coverage markers. A line \LeanMarker{label} directly before a result
-% puts a fixed-width marker on its heading line and the title on the next
-% line. The words and link targets are in lean-markers-data.tex (generated).
-% The slot has one width and height for every marker, so later wording cannot
-% move a line. Results without such a line are typeset as before.
+% puts a small link to the result's row in Appendix F in the left margin.
+% The words and link targets are in lean-markers-data.tex (generated).
+% The heading itself is typeset as for any other result.
 \input{notes/lean-markers-data}
 \makeatletter
 \let\lean@pending\@empty
 \newcommand{\LeanMarker}[1]{\gdef\lean@pending{#1}}
-% An empty tag is a reserved slot: same box, nothing printed, no link.
-\newcommand{\lean@slot}[1]{%
-\expandafter\ifx\csname LeanTag@#1\endcsname\@empty
-\raisebox{0pt}[12pt][4pt]{\makebox[7cm][l]{}}%
-\else
-\hyperlink{\csname LeanTarget@#1\endcsname}{%
-\raisebox{0pt}[12pt][4pt]{\makebox[7cm][l]{\normalfont
-[\csname LeanTag@#1\endcsname]}}}%
+% The link sits in the left margin: "Lean" beside the heading line and one
+% word for the class under it. It has zero width and zero height, so the
+% heading and the page breaks are those of the book without it. A result
+% with an empty tag gets no link.
+\newcommand{\lean@margin}[1]{%
+\expandafter\ifx\csname LeanTag@#1\endcsname\@empty\else
+\makebox[0pt][r]{\smash{\normalfont\footnotesize
+\begin{tabular}[t]{@{}r@{}}%
+  \hyperlink{\csname LeanTarget@#1\endcsname}{Lean\vphantom{Lp}}\\[-2pt]
+  \hyperlink{\csname LeanTarget@#1\endcsname}{\csname
+  LeanShort@#1\endcsname\vphantom{Lp}}%
+\end{tabular}}\hskip 0.9em}%
 \fi}
 \let\lean@thmhead@plain\thmhead@plain
 \renewcommand{\thmhead@plain}[3]{%
-\ifx\lean@pending\@empty
-\lean@thmhead@plain{#1}{#2}{#3}%
-\else
+\ifx\lean@pending\@empty\else
 \@ifundefined{LeanTag@\lean@pending}{\PackageError{leanmarker}{No marker
 data for \lean@pending}{Regenerate notes/lean-markers-data.tex.}}{}%
-\parbox[t]{\linewidth}{\raggedright
-\thmname{#1}\thmnumber{\@ifnotempty{#1}{ }\@upn{#2}}.\hfill
-\lean@slot{\lean@pending}\thmnote{\par #3.}\strut}%
+\lean@margin{\lean@pending}%
 \global\let\lean@pending\@empty
-\thm@headpunct{}\hfil\penalty-\@M
-\fi}
+\fi
+\lean@thmhead@plain{#1}{#2}{#3}}
 \let\thmhead\thmhead@plain
 \makeatother
 \newcommand{\lcCategory}[2]{\par\Needspace{6\baselineskip}\medskip\noindent\textbf{#1}~(#2)\par\nopagebreak\smallskip}
