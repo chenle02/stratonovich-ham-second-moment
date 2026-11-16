@@ -71,3 +71,91 @@ closed issue.
 \ifnum\vsHumanChecked=0 On the date above, no result had yet been checked in
 this way. \fi
 This is the column where readers can help most.
+
+\section{What the main theorems rest on}\label{S:critical-path}
+
+The four main theorems of this book are
+Theorems~\ref{T:full-upper}, \ref{T:intrinsic-second-moment},
+\ref{T:intrinsic-occupation-ceiling} and~\ref{T:white-moment-bounds}. This
+section lists the results that their proofs rest on, so that a reader who
+wants to check a main theorem knows what has to be read.
+
+A result \emph{rests directly on} another result when its statement or its
+proof cites that result, or cites an equation that belongs to it. A theorem
+\emph{rests on} every result reached by following these links. The list is
+made by a script from the source of the book
+(\path{scripts/critical-path/make_critical_path.py}). It shows which results
+a proof cites. It does not say that a proof is correct, and it is not a
+review. It can err in both directions: a result cited only for comparison is
+counted, and a result used without being cited by its label is missed. The
+second happens often: a result is cited in the sentence that introduces a
+statement, or it is used by name. For \cpReadByHand{} results the statements
+and proofs were therefore read by hand: the results that most others depend
+on, and the results that the script did not reach. This added \cpLinksAdded{}
+links and removed \cpLinksRemoved{}; each is recorded with the words that
+justify it in \path{scripts/critical-path/link-corrections.json}. The other
+results were not read in this way, and the third column of the list below may
+miss links for them. In that column a number in parentheses is a result cited
+only in the sentences that introduce the statement; it is shown for the reader
+and is not counted as a link.
+
+\begin{table}[!ht]
+  \centering
+  \caption[What each main theorem rests on]{What each main theorem rests on:
+    the number of results, and their Lean classes as in
+    Appendix~\ref{S:appendix-lean-checks} (the last column counts the results
+    with no Lean claim or outside Lean).}\label{Tab:critical-path-theorems}
+  \small\setlength{\tabcolsep}{4pt}
+  \begin{tabular}{@{}l>{\raggedright\arraybackslash}p{0.24\textwidth}rrrrrr@{}}
+    \toprule
+    Theorem & Title & Results & Full & Narrower & Supplied & Partial & None \\
+    \midrule
+    \cpTheoremRows
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+There is no short path. Together the four theorems rest on \cpResults{} of
+the \cpProved{} proved results of
+Chapters~\cpFirstChapter{}--\cpLastChapter{}; the second-moment constant
+alone rests on almost all of them. Table~\ref{Tab:critical-path-chapters}
+gives the count by chapter. Of the \cpResults{} results, Lean formalizes
+\cpLeanFull{} in full and \cpLeanNarrower{} with a narrower conclusion,
+proves \cpLeanSupplied{} with supplied inputs and checks steps of
+\cpLeanPartial{}; the other \cpLeanNone{} have no Lean claim or are outside
+Lean. No result has been checked by a person.
+
+\begin{table}[!ht]
+  \centering
+  \caption[The results the main theorems rest on, by chapter]{The results the
+    four main theorems rest on, by chapter, with their Lean
+    classes.}\label{Tab:critical-path-chapters}
+  \small
+  \begin{tabular}{@{}rrrrrrrr@{}}
+    \toprule
+    Chapter & Proved results & Rested on & Full & Narrower & Supplied & Partial & None \\
+    \midrule
+    \cpChapterRows
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The list below gives every result the four theorems rest on, in the order of
+the book. The third column names the results it rests on directly. The fourth
+counts the results in the list that rest on it, directly or through others: a
+result with a large count carries much of the book. The last column is its
+Lean class; a dash means no Lean claim.
+
+\medskip
+\cpHead
+\cpRows
+
+\medskip
+The \cpNotReached{} proved results of these chapters that the four theorems
+do not reach are tests, obstructions and results of a route that the main
+theorems do not take, or they serve only the appendices and
+Chapter~\ref{S:book-no-go}:
+\cpNotReachedList.
+Of Proposition~\ref{P:static-phase-variance}, the proof of
+Proposition~\ref{P:interval-coefficients} uses one calculation, the
+free-phase energy bound at the end of its proof, and none of its conclusions.
