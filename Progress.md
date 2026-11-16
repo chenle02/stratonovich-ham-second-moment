@@ -57,6 +57,16 @@ aggregate usage/cost/cap remain unknown. Older RP014/RP039 records and their
 limits are unchanged. RP043 signed-static remains running at this record.
 See `reviews/2026-11-16-readable-uniform-mean-postreader32919d54-deepseek/`.
 
+**Figure 2.3 approval belongs to final composition gate:** Le approves the
+new `Fig:order-of-limits` after viewing before/after. Agent 24 integrates only
+the approved figure source/drawing (README entry if clean), as one held unit
+with a pinned book rebuild, critical-path check and page-impact report. Origin-
+based PDFs/validation data are not replayed. Reader and combined editions are
+regenerated once at the whole-candidate step; root's single later reseal covers
+the figure and final outputs. No duplicate root build, early reseal or model
+call is warranted, and visual approval does not change scientific/R/F grades.
+See `FIGURE23-FINAL-CANDIDATE-GATE.json` in the policy directory.
+
 **Latest five editorial holds and seven late releases:** Le confirms one
 separate held editorial unit in exactly six places of intrinsic constant,
 signed moment upper, point transfer, masked moments and source convergence
