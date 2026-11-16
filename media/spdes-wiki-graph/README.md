@@ -16,6 +16,5 @@ It is drawn from the wiki's link index (not a screenshot, since the graph view
 cannot label its dots), in a print layout with labels at 7.6 pt at the text
 width. Some pages are linked only for a side remark. It is shown in the preface
 after the paragraph on looking references up instead of recalling them. It is
-the print version, on the dark background of the global view, of a figure made
-for the video series; four long titles are shortened, as listed in
-`PROVENANCE.json`.
+the print version, on a white background, of a figure made for the video series;
+four long titles are shortened, as listed in `PROVENANCE.json`.
