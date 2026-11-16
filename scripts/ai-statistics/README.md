@@ -38,6 +38,13 @@ totals and the no-go record are dated snapshots that can be later
 (`timeline.json`, `selection.json`). The first snapshots
 (`commits-per-day.json`, `tokens/token-totals.json` of November 11 and
 `no-go/nogo-counts.json` of November 10) stay in the repository unchanged.
+The snapshots of November 15 (`tokens/token-totals-2026-11-15.json`,
+`no-go/nogo-counts-2026-11-15.json`) also stay. The current ones are dated
+November 16, 2026: the token snapshot was taken again from the same machine's
+logs, the commits are counted at the commit named in `timeline.json`, and the
+no-go record was re-affirmed without change. The token snapshot of November 16
+contains the recorded usage of that day's re-read calls, so the figure in the
+re-read section is part of it and is not added to it.
 Reviews done after the census are not added to its bars or its table. The
 figure shows a separate grey count of recovered attempts, beside the census bar
 on a day that has both, and the closeout ledger described below reports the
