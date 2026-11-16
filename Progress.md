@@ -118,7 +118,11 @@ upstream context marked unassigned. Root checked Git bytes, framing and fresh
 native config; all tools denied, same requested DeepSeek V4 Pro model, cap
 65,536 and timeout 3,600 seconds. Each has one authorized fresh pure invocation,
 no coordinator retry, continuation or fallback. Worker QA supports these local
-arguments. No independent result is claimed before dispatch.
+arguments. Both separate isolated sessions are RUNNING, with no independent
+results yet.
+
+RP004 launched at `2026-11-16T06:23:38.805337+00:00` as `readable-source-convergence-26bd977c926f4c6e919e79e8913e57cd`.
+RP005 launched at `2026-11-16T06:23:39.968809+00:00` as `readable-constant-young-140f8dd8b78d4f8aa0102d871e8b0a06`.
 
 The older publication-frontier headings below are dated snapshots; they do
 not authorize restarting their old completed calls or override this narrow
