@@ -8,6 +8,8 @@ Inputs (all committed beside this script, or the repository's git history):
   reviews/review-stats.json  run aggregates and follow-ups (count_reviews.py)
   tokens/token-totals.json  token and cost totals (token_totals.py)
   milestones.json            project milestones (tag, dates, commit, label, source)
+  infrastructure.json        start dates of the parts of the system that are
+                             older than the book, with first-commit evidence
   no-go/nogo-counts.json     kind and status of each no-go record (the full
                              ledger is held back; see no-go/README.md)
   git log                    commits per day, first and last date; recorded in
@@ -602,6 +604,33 @@ def review_evidence(out, ledger_rel):
     out.append(macro("aiEvidenceUpdatesPath",
                      tex_path(os.path.relpath(updates_path, ROOT))))
 
+def infrastructure(out):
+    """Macros for the paragraph before Figure E.1: when each part began."""
+    parts = {p["key"]: p for p in json.load(open(selected("infrastructure")))["parts"]}
+    need = ["book", "bibliography", "library", "sources", "wiki", "skills"]
+    if sorted(parts) != sorted(need):
+        raise SystemExit("infrastructure.json must have exactly the parts " + ", ".join(need))
+
+    def when(key):
+        p = parts[key]
+        day = dt.date.fromisoformat(p["start"])
+        if not p.get("evidence"):
+            raise SystemExit(f"infrastructure.json: {key} has no evidence")
+        return day, day.strftime("%B~%-d, %Y" if p["precision"] == "day" else "%B %Y")
+
+    days = {k: when(k) for k in need}
+    if any(days[k][0] >= days["book"][0] for k in need if k != "book"):
+        raise SystemExit("infrastructure.json: a part does not predate the book")
+    if days["bibliography"][1] != days["library"][1]:
+        raise SystemExit("infrastructure.json: the text names one month for bibliography and library")
+    out.append(macro("aiInfraBookStart", days["book"][1]))
+    out.append(macro("aiInfraBibStart", days["bibliography"][1]))
+    out.append(macro("aiInfraSourcesStart", days["sources"][1]))
+    out.append(macro("aiInfraWikiStart", days["wiki"][1]))
+    out.append(macro("aiInfraSkillsWhen", "in the same month"
+                     if days["skills"][1] == days["wiki"][1] else "in " + days["skills"][1]))
+
+
 def main():
     import argparse
     ap = argparse.ArgumentParser(description="Generate notes/ai-statistics-data.tex")
@@ -853,6 +882,7 @@ def main():
     out.append("\\newcommand{\\aiMilestoneKey}{%\n" + "".join(rows) + "}\n")
     out.append(macro("aiMilestones", str(len(milestones))))
 
+    infrastructure(out)
     closeout(out, args.ledger)
     review_evidence(out, args.ledger)
 
