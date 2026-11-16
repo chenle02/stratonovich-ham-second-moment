@@ -495,3 +495,43 @@ Checks:
 - `lean-pkg coverage check`: schema PASS. The only failure is the expected "manuscript unposted".
 - `verify_l14_successor.py` 8f51004 -> e415c36: ALLOWED-SUCCESSOR. Lean library comment-only; coverage changes only in claims, inputs (9), conclusion_scope and note.
 - Remap dry run at fa49a953 with the new head: passes after one recorded census decision ("16" in the summary is a count). 14974 numbers decided.
+
+### #22's check of the held Appendix G chain (2026-11-16)
+- **Chain checked:** a906b4a1 -> b2b34fc3 -> 81fc189e -> 05e65c2e -> 995a56bc (ledger pinned, Appendix G counts) -> 1d64c44a (combined). All held, no push.
+- **VERIFICATION.md at 995a56bc: data correct.** All 253 rows were cross-tabulated against coverage.yaml at 74a04f57:
+  - 44 formalized in full;
+  - 16 narrower conclusion;
+  - 1 every conclusion, inputs supplied;
+  - 34 inputs supplied;
+  - 2 outside Lean;
+  - 156 no Lean claim.
+
+  No other combination occurs, and every claim count equals its row.
+- **Legend:** #16's sentence ("…steps, parts or a narrower form of the result, as listed in the companion's statement ledger…") is fine, because the ledger lists every claim row. No successor is needed.
+- **Table G.1** (`notes/verification-status-data.tex`): the numbers are correct.
+  - 44 + 16 + 1 + 34 + 2 + 156 = 253.
+  - The column sums 31 / 72 / 82 / 35 / 33 match.
+  - \vsLeanAny = 95; \vsOutside = two.
+  - **Wording issue sent to #16 (open):** the row label "Steps checked, inputs supplied" (and VERIFICATION.md's class name "inputs supplied") overstates for the 8 rows whose checked steps take no analytic input, the same point as Appendix F's group heading. Suggested: "Steps checked; inputs supplied or left outside Lean". Class and counts are unchanged.
+- **Remap dry run at 1d64c44a: PASS** after 15 new text-anchored overrides (dev branch reanchor-98f45bed, `f7069cf`, pushed; <HUB> fetched).
+  - The reworded free-phase sentence in the proof of P:interval-coefficients (approved by Le; #3's citation of the energy calculation in P:static-phase-variance) lies inside 15 cited statement-and-proof ranges (FiniteWordCutoff, FixedSplit, IntervalScalar, coverage, ledger).
+  - Each now maps by the text of its first and last lines to exactly the diff-mapped endpoints. Three ranges that ended on a blank line now end on the line before it.
+  - Main-TeX shifts: +8 before the edit (the Chapter 3 guide sentence), +11 after it. Nothing else changes.
+  - Census 14974/14974 decided; Lean comment-only; comparator copies identical.
+- **Renamed-cell recheck at the corrected tip 4171c4d7 (2026-11-16): PASS.** Chain: 15d2d25e -> b6f7da39 -> 52421603 -> 90296c39 -> 6791e487 -> c1ced0e3 -> c88827bb -> 4171c4d7.
+  - VERIFICATION.md: all 253 rows equal coverage.yaml at 74a04f57.
+    - The 34 inputs-supplied/weaker rows read "steps checked", following #16's decision of 22:43.
+    - The single inputs-supplied/full row keeps "every conclusion, inputs supplied".
+    - 44 / 16 / 2 / 156 are unchanged, no "inputs supplied" class cell remains, and every claim count equals its row.
+  - The legend keys "steps checked" and "every conclusion, inputs supplied" are present. The provenance line reads "Manuscript read at revision 6791e48", per #3's fix.
+  - Table G.1 row: "Steps checked; inputs supplied or left outside Lean", 8 / 11 / 7 / 8 / 0 / 34. The counts are unchanged.
+  - No cited TeX file changed since 1d64c44a. The remap pass with overrides `f7069cf` therefore still holds for this tip.
+  - From the Lean side the chain is ready for #3's audit and manifest-only reseal and for #16's verification.
+- **Recheck at the replacement candidate d889e2e1 (2026-11-16): PASS.** #24 withdrew 4171c4d7. The chain is now 90296c39 -> e8434f71 -> 948cb27d -> d889e2e1, i.e. 90296c39 plus the rename and the read-revision label.
+  - VERIFICATION.md: all 253 rows equal coverage.yaml at 74a04f57 (44 / 16 / 1 / 34 / 2 / 156).
+    - The 34 partial rows read "steps checked", and the single row keeps "every conclusion, inputs supplied".
+    - No "inputs supplied" class cell remains, and the claim counts are equal.
+  - The provenance line reads "Manuscript read at revision b6f7da3", this chain's read point.
+  - Table G.1 row: "Steps checked; inputs supplied or left outside Lean", 8 / 11 / 7 / 8 / 0 / 34.
+  - The data lines of VERIFICATION.md and verification-status-data.tex are byte-equal to those at 4171c4d7, apart from the read revision.
+  - No cited TeX file changed since 90296c39, so the remap pass with overrides `f7069cf` holds.
