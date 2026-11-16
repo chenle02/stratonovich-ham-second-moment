@@ -61,9 +61,36 @@ preserved. The frozen packet is
 context clearly designated as input rather than additional reviewed proofs.
 The route/profile are the same pure DeepSeek V4 Pro read-only route as RP001;
 requested cap65536 and walltimeout3600, one coordinator launch, no retry or
-fallback. At this checkpoint it is PREPARED, not dispatched, with no
-independent verdict. Files2 and3 are held for their pure-insertion successor
-versions; their earlier da065152/bc0932 QA is historical, not a dispatch target.
+fallback. It is dispatched and RUNNING with no independent verdict yet.
+Files 2 and 3 now have pure-insertion successors `2ef7f814` and `e7e5fec9`;
+their earlier da065152/bc0932 QA is historical. Current correction-diff QA
+found preservation supported, but their new mechanical verification and
+independent reread remain separate gates.
+
+### Source scope and worker-QA frontier (2026-11-16)
+
+At held source `f92cc838`, Agent 3 counted 249 proof environments in 33 book
+files: 208 changed and 41 unchanged from `cdde711c`. This includes the 33
+Chapter 12 no-go proofs (18 changed, 15 unchanged); the core 28 files contain
+216 proofs (190 changed, 26 unchanged). The reader's four proofs are excluded
+from this rewrite. All 33 files retain baseline bytes outside proof
+environments in this literal comparison. These counts correct the earlier
+editor totals; they measure source scope, not completion or proof quality.
+Agent 24 reports a 481-page held book; Agent 16's exact candidate mechanics,
+all required rereads, Agent 22's quotation correspondence and final derived
+artifacts/disclosure/reseal still remain.
+
+Worker QA supports current files 2--7 and 9--10 at their recorded source
+versions, separately from the completed ten-proof RP001 independent report.
+Two new explanatory phrases require editorial successors before freezing their
+independent rereads: file 8's lower profile is nonnegative and nonzero, not
+necessarily strictly positive everywhere; file 11's complex Rayleigh quotient
+uses one of the nonzero real-valued components, not necessarily the real part.
+Exact replacements were sent to Agent 24. The underlying argument strategies
+were preserved in worker QA; these are not newly adjudicated scientific gaps
+or upgrades of historical review grades. No independent calls have been spent
+on those two versions. Subsequent source changes require exact byte/version
+reconciliation rather than transferring a result to a new proof body silently.
 
 The older publication-frontier headings below are dated snapshots; they do
 not authorize restarting their old completed calls or override this narrow
