@@ -107,6 +107,19 @@ arguments. RP003 launched fresh at `2026-11-16T06:16:50.426991+00:00`
 as `readable-operator-driver-918de09b2b2a489c9cde166e25e45e1d`; it is
 RUNNING, with no independent result yet. Safe custody is in its STATUS.json.
 
+### RP004 and RP005 frozen: source convergence and constant-data Young flow
+
+RP004 assigns all seven proof pairs in `notes/integrated_source_convergence.tex`
+at corrected `ec0e909b`; RP005 assigns all eight proof pairs in
+`notes/integrated_constant_phase_young.tex` at corrected `c2695e67`. Both
+compare against `cdde711c`. Each exact-source packet is separately frozen in
+its dated `reviews/2026-11-16-readable-*-deepseek/` directory, with explicit
+upstream context marked unassigned. Root checked Git bytes, framing and fresh
+native config; all tools denied, same requested DeepSeek V4 Pro model, cap
+65,536 and timeout 3,600 seconds. Each has one authorized fresh pure invocation,
+no coordinator retry, continuation or fallback. Worker QA supports these local
+arguments. No independent result is claimed before dispatch.
+
 The older publication-frontier headings below are dated snapshots; they do
 not authorize restarting their old completed calls or override this narrow
 assignment and Le's later recorded decisions.
