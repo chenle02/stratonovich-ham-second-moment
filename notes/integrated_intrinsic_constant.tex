@@ -40,6 +40,15 @@ The theorem treats zero covariance directly.
 \end{lemma}
 
 \begin{proof}
+  We construct the covariance inclusion from the temporal Schur bound and
+  identify its completed temporal mean. We then use common compact spatial
+  supports to identify a smooth positive test with its original covariance
+  class and physical masked mean.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the Hilbert-valued covariance
+  inclusion.
   Direct integration and concavity of $x^{1-a}$ give
   \[
     \int_I K(s,t)\ud t
@@ -55,6 +64,10 @@ The theorem treats zero covariance directly.
   $L^2(I;G)$; the same bound on differences extends $J_G$. Absolute bilinear
   continuity extends the integral identity as well.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the temporal integral with the
+  completed tensor map.
   For $G = H_{\mathrm{sp}}$, the Bochner integral $\int_IK(s,t)F(t)\ud t$ exists
   almost everywhere: its norm is bounded by $K\|F\|(s)$, which belongs to $L^2$.
   Simple-field approximation and the Schur estimate give a strongly measurable
@@ -66,6 +79,15 @@ The theorem treats zero covariance directly.
   hence also in $L^2$. Uniqueness of the $L^2$ limit identifies these versions.
   In particular, the integral belongs to $L^r$.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify the original norm of a smooth
+  spacetime test.
+  The two approximation limits agree in $L^2(I;H_{\mathrm{sp}})$: Schur
+  controls the integral limit there, while the tensor estimate gives an $L^r$
+  limit and $r>2$ implies $L^2$ convergence on the unit interval. Thus, the
+  completed mean is identified without selecting pointwise representatives for
+  arbitrary rough controls.
   Choose a closed ball $B$ containing all spatial supports of $\Psi$. For real
   smooth $q$ supported there, the physical covariance gives
   \begin{equation}\label{E:positive-local-spatial-bound}
@@ -92,6 +114,10 @@ The theorem treats zero covariance directly.
   The compact spatial supports and~\eqref{E:positive-local-spatial-bound} make
   all these absolute integrals finite.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We identify its masked operator mean on all phase
+  states.
   Test the spatial row~\eqref{E:uniform-mean-row} first with displacement $f$
   and dual second component $\Lambda g$, with $f,g$ compact smooth. The row
   product is $m_Rfg$, so the preceding temporal identity gives
@@ -140,6 +166,13 @@ mask.
 \end{lemma}
 
 \begin{proof}
+  We realize the cell labels in the original tensor Hilbert space and identify
+  their rows by completion. We then compare their Gram entries through the
+  nonnegative temporal and physical spatial integrands.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the finite label rows.
   Lemma~\ref{L:positive-raw-embedding} puts $h_i$ in $H_t$. The compact smooth
   spatial factors lie in $H_{\mathrm{sp}}$ by its test definition
   and~\eqref{E:positive-local-spatial-bound}. On a smooth finite tensor,
@@ -153,6 +186,15 @@ mask.
   Cauchy--Schwarz. Thus, the identity extends to the completed $H_I$. The form
   is the displacement form by Lemma~\ref{L:uniform-E-lift}.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We compare the physical Gram integrands entrywise.
+  The masked spatial pairing contains one factor $m_R$ at each of its two
+  spatial positions. Both lie in $[0,1]$, so their product is at most one. The
+  other factors are nonnegative squares, the temporal label functions and the
+  original positive kernels. Removing those two mask factors therefore orders
+  each entry separately, without an operator-order claim for the matrix
+  difference.
   Each Gram is symmetric positive semidefinite. Its entries factor into the
   temporal pairing of nonnegative $h_i,h_j$ and the physical spatial covariance
   pairing. The kernels $K,\Gamma$ and $f_i^2,f_j^2$ are nonnegative; $0 \le m_R
@@ -181,6 +223,15 @@ uniformly in $R$.
 \end{lemma}
 
 \begin{proof}
+  We first restrict the signed score to a uniform control ball. We prove that
+  the finite unmasked optimizer lies in that same ball before using any
+  averaging estimate. Finally, its positive conic structure permits
+  nonnegative smooth approximation with convergent cost and rate.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We restrict the signed optimization to a fixed
+  ball.
   Put $C = C_{\rm mean}$ and $q = \|\Phi\|$.
   Proposition~\ref{P:uniform-rate-averaging} gives
   \[
@@ -189,6 +240,9 @@ uniformly in $R$.
   \]
   The zero control gives zero, proving the restriction.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound the finite unmasked optimizer uniformly.
   Denote the finite unmasked objective by $\mathfrak{F}_D$.
   Proposition~\ref{P:gram-positive-optimizer} supplies an attained maximum at
   zero or a positive conic sum $\Phi_D$. Choose a finite $R' \ge 1$ whose
@@ -209,6 +263,10 @@ uniformly in $R$.
   Since the maximum is nonnegative, its optimizer lies in the same ball of
   radius $M$, independently of the partition, profiles and $R'$.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We smooth the positive temporal factors without
+  changing the limit class.
   On a nonzero branch write $\Phi_D = \sum_{i\in A}w_i h_i\otimes f_i^2$, with
   $w_i > 0$. Extend $h_i$ by zero, convolve with a nonnegative compact smooth
   approximate identity, and multiply by smooth cutoffs $0 \le \chi_j \le 1$
@@ -227,6 +285,11 @@ uniformly in $R$.
     \le\sqrt{3+C\|\Psi_j\|+C\|\Phi_D\|}
     \sqrt{C\|\Psi_j-\Phi_D\|}\longrightarrow0 .
   \end{equation}
+  The smoothing changes only finitely many temporal factors, each converging
+  in $L^2(I)$ and hence in its covariance norm. The spatial factors stay fixed
+  and compactly supported. Consequently, the tensor norm convergence controls
+  both the quadratic cost and, by the displayed rate estimate, the integrated
+  rate; no uniform bound on derivatives of the approximants is needed.
   This estimate is uniform in $R'$. It asserts no uniform derivative bound on
   the smooth approximants. The zero branch will use $S_2^{\mathrm{pos}} \ge 0$
   directly. This proves Lemma~\ref{L:positive-uniform-optimizer}.
@@ -247,6 +310,16 @@ finite problems to the rate.
 \end{proposition}
 
 \begin{proof}
+  We approximate each integrated signed rate by a finite collection of smooth
+  Rayleigh trials. Entrywise Gram comparison replaces the optimized masked
+  value by an unmasked positive conic optimizer. Its uniform norm bound allows
+  the same averaging error to be used again, after which positive smoothing
+  gives the nonnegative-control bound.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We approximate the integrated rate uniformly on
+  the fixed control ball.
   Use uniform partitions with $n \ge 2$ cells of length $1/n$. They are the $B =
   1,\delta = 1/n$ partitions in Proposition~\ref{P:uniform-rate-averaging}, with
   the empty last cell omitted. That proposition gives $e_n \to 0$, independent
@@ -257,6 +330,10 @@ finite problems to the rate.
     \int_{I_i}\mathcal{T}_R\Phi(s)\ud s\right)\right|\le e_n
     \quad(\|\Phi\|\le M).
   \]
+
+  \medskip
+  \noindent\textit{Step 2.~}We choose finitely many near-maximizing spatial
+  trials.
   Fix $R,\Phi,n$, with $\|\Phi\| \le M$, and denote these averages by $W_i$.
   Real compact smooth unit trials are dense in the real $H^1$ unit sphere:
   truncate by cutoffs tending to one, whose gradient errors tend to zero, then
@@ -278,6 +355,10 @@ finite problems to the rate.
     2\operatorname{Rate}_R(\Phi)-\|\Phi\|^2/2
     \le\mathfrak{F}_{C^R}(\Phi)+2e_n+2\varepsilon .
   \]
+
+  \medskip
+  \noindent\textit{Step 3.~}We compare optimized Gram values and return to an
+  integrated rate.
   Optimize this finite objective and use entrywise Gram comparison:
   \[
     \mathfrak{F}_{C^R}(\Phi)
@@ -293,6 +374,15 @@ finite problems to the rate.
     \le2\operatorname{Rate}_{R'}(\Phi_D)-\|\Phi_D\|^2/2+2e_n .
   \end{equation}
 
+  The first averaging comparison contributes $2e_n$, and the return from the
+  finite optimizer to its integrated rate contributes another $2e_n$. The
+  optimizer norm was bounded independently of the chosen profiles and covering
+  radius, so the second use has the same error bound. The finite trial choice
+  contributes $2\varepsilon$ because the cell lengths sum to one.
+
+  \medskip
+  \noindent\textit{Step 4.~}We pass through nonnegative smooth controls and
+  remove the two finite errors.
   If $\Phi_D = 0$, its finite variational expression is zero. Otherwise use its
   positive smooth approximants $\Psi_j$. Lemma~\ref{L:positive-raw-embedding}
   identifies their mean with $B_E(m_{R'}h_{\Psi_j,s})$ and their Gaussian cost
@@ -328,6 +418,11 @@ every $R$. For the limit we still need a lower bound as the mask is removed.
 \end{proposition}
 
 \begin{proof}
+  We fix one smooth positive control and use compactly supported Rayleigh
+  tests to remove the mask from its rate. We then approximate the already
+  finite supremum by one such fixed control; the uniform signed comparison
+  supplies the opposite bound.
+
   Fix $\Psi \in \mathcal{C}_{\mathrm{pos}}$ before taking $R$ or moment limits.
   Use the explicit mean version of Lemma~\ref{L:positive-raw-embedding}. Its
   rate $\lambda_R(s)$ obeys $0 \le \lambda_R(s) \le \lambda_{\Psi,s}$ by real
@@ -344,6 +439,11 @@ every $R$. For the limit we still need a lower bound as the mask is removed.
   Dominated convergence yields $\operatorname{Rate}_R(\Psi) \to I_\Psi$. Neither
   monotonicity of $m_R$ nor an unmasked ground eigenfunction was used.
 
+  For each fixed compact trial, all sufficiently large plateaus give exactly
+  the unmasked potential integral on that trial. Taking the supremum of these
+  trial lower bounds determines the limiting rate, even though the mask family
+  itself need not be monotone. The uniform upper bound by the unmasked rate
+  then supplies domination for its time integral.
   The original representative and cost $\|\Psi\|^2 = v_\Psi$ are independent of
   $R$. Thus, $\liminf_R\mathcal{S}_R \ge 2I_\Psi-v_\Psi/2$ for each fixed test.
   Given $\varepsilon > 0$, choose one fixed test with variational expression
@@ -389,6 +489,14 @@ bounded control costs alone would not justify it.
 \end{theorem}
 
 \begin{proof}
+  We compare the upper and lower rates for the same canonical solution, then
+  identify the variational expression and its homogeneity. The zero-covariance
+  case is handled directly.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We match the two finite bounds for nonzero
+  covariance.
   Assume first $\Gamma \ne 0$. Proposition~\ref{P:original-signed-point-upper},
   followed by Proposition~\ref{P:positive-score-cutoff} with $R =
   \delta^{-1}+2$, bounds the original point limsup by $S_2^{\mathrm{pos}}$.
@@ -405,6 +513,16 @@ bounded control costs alone would not justify it.
   Formula~\eqref{E:variational-real-rayleigh} and the definition of the original
   variance give~\eqref{E:intrinsic-positive-formula}.
 
+  The radius $\delta^{-1}+2$ tends to infinity, so cutoff-score convergence
+  applies along this radius without a separate exchange of limits. The upper
+  bound is therefore at most $S_2^{\mathrm{pos}}$, while the lower bound is at
+  least that same finite value. Since every liminf is at most the
+  corresponding limsup, these inequalities force equality and the full limit.
+  The factor relating $S_2^{\mathrm{pos}}$ to $S_1^{\mathrm{pos}}$ is the
+  control-dilation factor, not an identification with a first-moment constant.
+
+  \medskip
+  \noindent\textit{Step 2.~}We verify zero covariance directly.
   If $\Gamma = 0$, $H_I = \{0\}$, all means, variances and rates vanish,
   $\mathcal{S}_R = S_c^{\mathrm{pos}} = 0$, and $u = 1$. Both formulas are
   direct zero identities. This proves Theorem~\ref{T:intrinsic-second-moment}.
