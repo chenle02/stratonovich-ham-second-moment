@@ -52,6 +52,8 @@ the operator path to constant columns on $F$.
   \medskip
   \noindent\textit{Step 2.~}We prove finiteness and the lower endpoint norm
   bound.
+  The clock condition is $0<\delta<\min(1,1/B)$ from
+  Section~\ref{S:actual-cameron-mean}, which reduces to $0<\delta<1$ at $B=1$.
   We check a direct finiteness input, without a fixed-mask asymptotic rate. Take
   $B = 1$ in Propositions~\ref{P:tube-actual-law}
   and~\ref{P:tube-coarse-envelope} and Lemma~\ref{L:tube-rayleigh-tail}. Every
@@ -217,11 +219,6 @@ the operator path to constant columns on $F$.
 
   \medskip
   \noindent\textit{Step 3.~}We identify the scalar Green equation.
-  The choice $k-1>d/2$ makes both Fourier embeddings available: displacement
-  uses $H^k$ and velocity uses $H^{k-1}$. Continuity in the phase norm
-  therefore gives continuity of both components as functions of space and time
-  at these fixed positive source widths. This higher regularity is not claimed
-  for the original rough-noise solution.
   The first component of Duhamel is, distributionally,
   \[
     v(t)=\cos(t\sqrt{-\Delta})\psi+
@@ -405,11 +402,6 @@ $\E|u_\Gamma(T_\delta,0)|^2$.
     \delta\log\operatorname{DataPref}_\delta
     =\delta\log(C_\eta/v_d)+d\delta[\log(1+2\delta)-\log\delta]\to0 .
   \]
-  Since $R\ge1$, the factor $R^{d-2}$ is at most $R^d$ even when $d-2$ is
-  negative. The squared initial norm is therefore bounded by the same volume
-  power in all three dimensions. Substituting $R=\delta^{-1}+2$ gives only a
-  logarithmic factor of order $\log(1/\delta)$, whose product with $\delta$
-  tends to zero.
   The nontrivial term follows by $t = -\log\delta$ and $te^{-t} \to 0$, since
   $e^t \ge t^2/2$. The original point moment is at least one: its nonnegative
   full pairing expansion contains the unit empty pair of chains. It is finite
