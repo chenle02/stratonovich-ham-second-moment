@@ -160,19 +160,20 @@ Agent16's verification and Le's adoption/release decisions remain separate.
 
 ### Completed reread aggregate, with units kept separate
 
-`reviews/2026-11-16-readable-reread-index/INDEX.json` now records8 terminal
-native sessions. Seven public reports cover51 distinct complete OLD/NEW pairs:
-6 rawPASS/high and1 rawPASS_WITH_NOTES/high. RP007 is the eighth attempt,
-with no public report and no verified public proof reading; its single target
-remains NOT_OBTAINED, not a pass or a reviewer INCONCLUSIVE verdict. Raw
-reports, report-only errors, null per-proof confidence and historical grades
-are preserved. These are8 attempts/7 usable reports/51 complete pairs, not51
-votes; upstream context proofs add no rows. Failed-attempt usage is included.
-The target module blobs remain byte-identical at held`f06cb607`, but that
-check is not adoption or a whole-tree seal. No mechanical sum with the old
-census/recovered-attempts snapshots is claimed. Remaining source/main rereads,
-the scaling disposition, companion quotations, AppendixE/disclosure updates,
-derived artifacts/reseal, Agent16 verification and Le decisions remain open.
+`reviews/2026-11-16-readable-reread-index/INDEX.json` records9 terminal
+native attempts and8 public reports covering53 distinct complete OLD/NEW
+pairs (52changed,1unchanged). Raw headers:7PASS/high,1PASS_WITH_NOTES/high.
+RP007 is the remaining no-report attempt: its single target stays NOT_OBTAINED,
+with null reviewer verdict/confidence/public reading flags and no mathematical
+defect inferred. Its usage is included. The earlier8-attempt/51-pair snapshot
+is preserved as `SNAPSHOT-RP001-RP008.json`; fixed-snapshot record QA found no
+consistency fault. Per-proof confidence remains unreported/null; these are not
+53 independent votes or whole-book acceptance. No sum with the historic census
+or recovered-attempts snapshots is asserted. The RP007 repeat is still only
+a proposal. Other active/unlaunched packets are excluded from these totals.
+Remaining source/main rereads, scaling disposition, companion quotations,
+AppendixE/disclosure/derived-artifact/reseal synchronization, Agent16's
+verification and Le's adoption/release decisions remain open.
 
 ### Next frozen per-file rereads: RP006--RP008
 
