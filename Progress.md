@@ -8,7 +8,21 @@
 ## Active narrow follow-up: proof-readability rereads (2026-11-16)
 
 
-**Current Chapter 9 trial:** Agent 24's radius successor `9df46108` (map
+**Latest Chapter 9 final handoff:** Agent 24 reports Le accepted the
+removal-only results and made the independent stop-point reader optional.
+Files 16, 17 and 18 are now FINAL at `0816c195`, `9df46108` and `484ed7f4`,
+respectively. This supersedes their provisional editorial status below.
+Register the new source bindings; retain old RP014/RP015/RP016 reports and
+all their mathematical/protocol limits on their exact earlier sources.
+Before new provider work, confirm Agent 16 final-commit verification and the
+applicable authorization for successor inputs; the exact-input Choice B
+record itself is unchanged. No new call or prior-run relaunch follows from
+this metadata entry. The remaining 25 files await per-file final handoffs.
+The already-started Claude Fable reader continues as an optional editorial
+aid with prompt, actual identity, stop points and dispositions retained.
+See `CHAPTER9-FINAL-SOURCE-HANDOFF.json` in the policy record directory.
+
+**Earlier Chapter 9 trial (retained history):** Agent 24's radius successor `9df46108` (map
 `271485f1`) is PROVISIONAL despite its commit message saying final. No scope
 has been released. Before a final-file handoff, Agent 24 obtains a fresh
 reader's stop-point list, checks its quotes against the proof, and judges
