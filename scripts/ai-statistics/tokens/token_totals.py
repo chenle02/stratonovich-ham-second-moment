@@ -169,7 +169,7 @@ def opencode():
 if __name__ == "__main__":
     snap = {"repository": REPO, "codex_worker": codex(), "claude_code": claude(),
             "opencode": opencode(),
-            "note": "Local logs of the worker machine only. Subscription costs are not recorded in these usage logs. The cost_usd field retains the aggregation script's historical name; it contains the OpenCode client's computed cost counter, not an invoice, and its currency was not verified.",
+            "note": "Local logs of the worker machine only. Subscription costs are not recorded in these usage logs. The cost_usd field retains the aggregation script's historical name: it contains the OpenCode client's computed cost counter, not an invoice, and its currency was not verified.",
             "snapshot_utc": __import__("datetime").datetime.now(
                 __import__("datetime").timezone.utc).strftime("%Y-%m-%dT%H:%MZ")}
     # TOKEN_TOTALS_OUT names another file beside this script, so that a later
