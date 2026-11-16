@@ -30,3 +30,13 @@ verdict, and no adoption. The native stream/export, private reasoning and
 runtime identities remain in private custody; only an appropriate final
 report and scoped adjudication may be curated later. This is not a landing
 candidate: reader/combined/F/G/markers/review-sync remain for final composition.
+
+## Terminal outcome
+
+RP001 returned raw PASS/high, all ten assigned proof pairs COMPLETE and
+arguments PRESERVED. STATUS.json and ADJUDICATION.md are the current outcome;
+the earlier zero-call statement above is explicitly the packet-freeze snapshot.
+The unmodified report has one Fourier delta-kernel notation error and minor
+shorthand notes, recorded in the adjudication. They do not require a source
+repair or change the raw review grade. This is scoped support for the rewrite,
+not whole-book HIGH, source-image/Lean-correspondence or publication acceptance.
