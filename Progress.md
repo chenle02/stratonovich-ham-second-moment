@@ -61,89 +61,138 @@ The plan above is an intra-round checkpoint, not whole-book clearance.
 ## Live team status — read before messaging
 
 <!-- team-status:start -->
-Snapshot UTC: 2026-11-15T19:25:20.262988+00:00. Agent5 maintains this summary from owner
-receipts and committed artifacts. Owners retain their dated evidence below.
-This is the workflow summary, not a scientific acceptance ledger. Read it
-before asking another agent for status; send only needed handoffs or decisions.
+Snapshot UTC: 2026-11-16T13:19:04.599307+00:00. Agent5 maintains this shared workflow summary from owner
+receipts and exact artifacts; owners retain their dated evidence below.
+This summary does not grant scientific, execution, source-slot or release
+approval. Earlier dated checkpoints remain history. Read before messaging;
+send only a needed authorized handoff, without disturbing busy agents,
+submitting unsent drafts or selecting pending choices.
 
 ### Agent3 — mathematics and reviews
 
-- Review state: OP accepted locally; PU bounded evidence accepted at3fac2bd9,
-  with aggregate usage/cost/cap still unknown. IC and CH remain PARTIAL.
-  Broad cold read remains INCONCLUSIVE/medium; Chapter12 skeptic NOT OBTAINED.
-- Completed: Appendix E upkeep c35cbc0a and exact combined-tree reseal33ed4ef7
-  are adopted. The selected ledger has35 process records; snapshot185 artifacts
-  passed. Chapter8 caption/dependency check requires no change.
-- Wiki402 working-status upkeep is actually maintained at5a12e0c9; exact
-  published-page hash/receipt are retained at a156c3a8. No lifecycle promotion.
-- Next: include the new honest-standing release disposition in final review
-  inventory/reconciliation at the next required seal. Raw grades stay unchanged;
-  no new scientific review or proof repair is authorized.
+- Historical dispositions remain: OP accepted locally; PU bounded acceptance
+  with aggregate usage/cost/cap unknown; IC/CH PARTIAL; broad cold read
+  INCONCLUSIVE/medium; Chapter12 skeptic NOT OBTAINED. Le's honest-standing
+  choice eeaa40e2 does not make those grades whole-book HIGH.
+- Post-exposition rereads are a separate provisional series. Snapshot ab012efb
+  records17 attempts/16 reports/96 assigned pairs:92 CHECKED,3 PARTIAL,1 no-report.
+  Protocol-held11 pairs OVERLAP those counts (10 CHECKED,1 PARTIAL);82 CHECKED
+  have no observed protocol incident. Per-proof confidence is unreported,
+  not one vote per row. Do not merge this into old627/118/6-call populations.
+- RP013/014/016's abandoned-stream usage/cost/cap remain UNKNOWN; available
+  finish counters are not whole-invocation totals, physical-request counts or
+  invoices. The old PU exception was not generalized or retroactively applied.
+- Le explicitly chose prospective policyB on d8fff2c8 through16: same native
+  DeepSeek route/profile, max3 processes,3600seconds each, no coordinator
+  relaunch/confidence retry/tools/fallback. Native recovery is disclosed and
+  aggregate usage/cost/cap stays unknown where it occurs; no custom client
+  is approved. Old protocol holds and mathematical gaps remain separate.
+- Current sequencing: unchanging five no-go scopes were allowed underB;
+  unlaunched core scopes wait for24's exact per-file FINAL report,16's check
+  and3's applicable source/policy checks. Already-active old-source calls keep
+  their old bindings. RP007 is on the main path; no unconditional repeat.
+- Le has also authorized fresh rereads for CHANGED+FINAL necessity successors
+  under ChoiceB rules (16 receipt1170b0dc79af). Old reports stay on old commits;
+  this is not a confidence-only rerun or blanket source/release clearance.
+
+### Agent7 — proof presentation with Agent24
+
+- 7 drafts and reports to24;24 owns briefs, integration, pinned builds and maps.
+  3 owns mathematical QA and scoped independent review.7 is not release owner.
+- First pass covered all33 proof-bearing book files/249 proof environments:
+  208 changed,41 unchanged; reader's4 proofs excluded. The earlier28-file list
+  covered only216 and omitted33 no-go proofs; that gap was corrected. These
+  counts are proof environments, not AppendixG results or Lean rows.
+- Le's current necessity rule supersedes forced sample-length expansion:
+  expand where a competent graduate reader would otherwise stop, use24's
+  cautious judgement, do not pad, repeat a fact or rederive a cited result.
+  No word-growth quota. An independent stop-point reader is optional, not a gate.
+- 169 main-path result labels resolve structurally to169 distinct proofs at
+  f06cb607. That lookup establishes ownership, not sufficient depth or science.
+  Per-file reports must say CHANGED+FINAL or UNCHANGED/JUDGED_SUFFICIENT;
+  preserve original statements, displays, labels, references and argument scope.
 
 ### Agent16 — final publication process
 
-- Adopted: internal master33ed4ef7, recorded atc0e941df, on Le's direct push
-  instruction. Chain: c35cbc0a Appendix E -> b1f0c36e combined source/PDFs ->
-  33ed4ef7 reseal. Origin, <HUB> and <MACHINE> are synchronized;402/28 pages.
-- Checks: own pinned builds, source equality, page map, links/filter and exact
-  reseal check passed. The earlier internal-push approval hold is resolved.
-- Assurance disposition: Le chose the honest-standing release at eeaa40e2,
-  with every raw grade/limitation unchanged. This is not a whole-book HIGH pass.
-- Review-sync STOP is adopted at a27e5f94 (rehearsed c7cd9c40, shared clone and
-  owned exit cleanup). Live export requires the owner's exact-SHA attestation.
-  Old277ec8c8 is superseded, not a current gate-adoption blocker.
-- Next: Le's typesetting pass on the adopted402-page PDF, then16's actual R.
-  R/F/public release/arXiv have not been issued by these decisions.
+- Adopted content: AppendixG landing1d3839a2;427-page book,28-page reader,
+  458-page combined edition, independently hashed by5. Later private workflow
+  records are on master.6591e41e is the preserved landing ancestor, not a
+  still-pending push. The source G landing precedes this metadata-only update.
+- The first readable-proof tip f06cb607 is mechanically VERIFIED:33 files,
+  249 proofs,208 changed; original outside-proof bytes/displays/labels/endings
+  retained, maps/gates pass (known pilot WARN retained); own pinned481-page
+  PDF byte-identical. This verifies the tip, not intermediate a105's offset PDF.
+  It is not mathematical, quoted-step or final presentation acceptance.
+- Necessity successors remain HELD. Le accepted Chapter9 removal-only results;
+  16 verified final files16/17/18 and then3 may perform the applicable rereads.
+  No global core-dispatch restart follows from a draft or old source list.
+- Whole-candidate work and the AppendixE/managed-disclosure SOURCE_SLOT still
+  require16's word. R/F/public release are not issued by mechanical checks,
+  policyB, optional-reader choices or this summary. Le retains final decisions.
+- Exact release SHA/REVIEW_SYNC_ATTESTATION, current3 reseal, filtered equality,
+  rehearsal/audit and Le acceptance remain. Keep origin quiet during final
+  export/publish. ArXiv is BOOK ONLY; Le alone submits.
 
-### Agent22 — Lean verification
+### Agent22 — Lean verification and correspondence
 
-- Completed: b1f0c36e remap dry run PASS (74a04f57);8915 rows,5601 expected
-  moved/3314 unchanged, zero deviations/unresolved. All92 newly ambiguous rows
-  read and confirmed;14972 census entries decided. Manifest-only33ed needs no
-  new source remap. This is preparation, not a new public Lean release.
-- Next: after16's full R, re-anchor L14, verify/review, obtain applicable Le
-  acceptance and publish v0.10.0 with exact commits/tag/DOI/receipts.
-- Later: R-to-repin candidate must have zero SHIFTED citations before adoption.
+- Public v0.9.0 is distinct from private L14. AppendixF describes L14 as a
+  development state to be released as v0.10.0; tag URL/DOI await actual release.
+  F and markers share the same accepted coverage/model qualifications.
+- Complete first-pass036fd3a8 TEMP dry run:8915 citations,0 unresolved locators,
+  452 labels/0 missing,0 rewrap rejected; Lean comment-only, Challenge/Solution
+  byte-identical. This is not actualR application, new kernel facts or review
+  of every citing sentence. New final source/maps need their own bound evidence.
+- AtR, reread/reword every companion sentence quoting or paraphrasing rewritten
+  proof steps, as Le required, even if its locator maps mechanically. Keep
+  locator resolution, correspondence, kernel checks and science separate.
+- AfterR: re-anchor, verify/review, obtain Le candidate acceptance, create the
+  immutable LOCAL v0.10.0 tag/full commit. Public release/DOI uses the existing
+  route; registry/manuscript eligibility rules still apply. R-to-repin must
+  have zero SHIFTED citations before adoption.
 
-### Agent24 — writing and polishing
+### Agent24 — writing and whole-candidate integration
 
-- Completed: combined b1f0c36e is adopted, including seven Preface replays,
-  plural voice, glossary, radius table, kappa/mask and refined Chapter8 figure
-  b100006b (drawing06bc1687). Car is settled; no new design work is needed.
-- Next: after actual Lean pins and new video IDs, update the51 book links and
-  final front-door/Appendix pins, rebuild book and reader coherently, then hand
-  exact source/PDF hashes to3 for resealing and16 for verification/final F.
-- Dependency:16 owns the freeze and landing;22 owns Lean/source-line evidence;
-  29 supplies the full old/new episode-ID table before F. No early repinning.
+- Owns the necessity briefs and exact per-file final reports. Both source and
+  applicable policy must match before3 dispatches. Keep old review evidence
+  bound to old bodies; do not silently transfer it to a deeper or revised proof.
+- Stable first-pass source coverage and method evidence is retained under
+  private/publication-closeout/agent5-supervision-20261115/proof-inventory-16b6567a/.
+  Count actual input closures, not generated combined text or running sums.
+- Honest recent-reread AppendixE/front-door material is PRIVATE DRAFT ONLY:
+  retain historical grades/OptionA, partial reconstructions, protocol overlaps,
+  unknown usage and no-report/unlaunched scope. Do not edit notes, managedAIUSE,
+  front doors, buildC, reseal or push that unit before16 names its source slot.
+  Recompute from the final settled index; a provisional snapshot is not a study
+  completion or source-adoption decision. Two typo corrections are a private aid.
+- When16 authorizes the final source slot: update actual source/disclosures and
+  generated data, coherently build affected book/reader/combined editions, then
+  3 reseals,22 checks source correspondence and16 verifies. No stacked PDFs.
 
 ### Agent29 — video repository and YouTube delivery
 
-- Plan: REPLACEMENT-PLAN.md at95f53d8, working defaults52027e4c; no final
-  replacement uploads or public switches completed. All11 YouTube replacements,
-  including playlist/link/visibility verification, are publication deliverables.
-- Order: R + public Lean pins -> verified video sources/renders -> private
-  uploads/new IDs ->24's51-link update before F -> final-content check against F.
-- Public switch: new uploads public before/with the repository flip; verify each
-  signed out before changing its predecessor. Working defaults archive old
-  uploads as Unlisted and label the text/source freeze R; final descriptions
-  carry F/Lean/book links.16 owns final release sequencing and required approvals.
+- All11 replacements, descriptions, playlist/link and signed-out visibility
+  checks remain publication deliverables. Draft approval is not upload/publication.
+- Dependency: R plus22's immutable LOCAL v0.10.0 tag/full commit permits29 to
+  render and upload11 PRIVATE replacements. On-screen identity uses tag/commit,
+  not a future DOI.22's public release/DOI can proceed in parallel after the tag.
+- Both new video IDs and DOI must exist before24's final re-pin. Editable
+  descriptions can receive finalF links later; do not create a DOI/render cycle.
+- New videos PUBLIC before/with repo flip; verify each signed out before its
+  predecessor becomes Unlisted. Preserve playlist order and old archives.
 
-### Agent5 — coordination and helper work
+### Agent5 — coordination and bounded helper work
 
-- Completed: illustration fixes and ordered artifact handoffs; independently
-  verified landed402/28 PDF hashes and origin/<HUB>/<MACHINE> parity. The main
-  checkout PDF is current. Stable local previews retain exact committed bytes.
-  Operational HANDOFF25970146 is adopted after16 exact-file/filter approval;
-  current402/28/Wiki/PU facts and historical/WIP preservation are verified.
-- Current:1800-second read-only watcher and message handling; no generic nudges,
-  no busy-session interruption or submission of unsent drafts. Internal push
-  blockage is historical; remaining release decisions retain their own gates.
-- Durable learning: Le-AI-Lab coordination skill/checklist promoted at ea456102
-  and4d511a5c; canonical/runtime synchronization verified. This is operational
-  learning, not scientific or publication acceptance.
-- Keep one progress authority and each owner's role. Confirm exact artifact
-  delivery to every dependent owner; queued, delivered, checked and landed are
-  distinct states. Advance only real authorized unblocked work.
+- Maintain this one shared status block; owners keep their dated receipts.
+  Read all6 screens and submitted evidence before deciding. Queued, delivered,
+  verified, adjudicated and landed are distinct. No generic idle-agent nudges.
+- The30-minute watcher is read-only and includes3/7/16/22/24/29. It never sends
+  prompts, submits drafts, changes choices or grants gates. The goal amendment
+  explicitly includes7; this does not narrow the full publication objective.
+- Reliable previews distinguish adopted427/28/458 from exact HELD proof drafts.
+  Coverage counts are not readability, scientific or publication acceptance.
+  The old d96 lookup is historical, not22's final reading queue.
+- Reusable lessons are retained in Le-AI-Lab582070a2 with runtime parity verified.
+  Preserve all foreign WIP, review/cost limitations and explicit Le-only decisions.
 <!-- team-status:end -->
 
 
