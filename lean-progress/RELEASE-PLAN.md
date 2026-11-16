@@ -478,3 +478,20 @@ The DOI and final links go into the video descriptions, which stay editable, so 
   1. Replace the summary sentence with the one #24's generator now substitutes ("…; the entries distinguish supplied hypotheses, where present, from analytic work left outside Lean"). The override then becomes a no-op, and #24 removes it.
   2. Correct the input wording of the 8 no-analytic-input rows. "which enter the Lean statements as explicit hypotheses" overstates: their Lean statements take only parameter conditions, and the analytic facts are outside Lean. These rows are L:driver-holder-limit, L:driver-interval-limit, L:exact-canonical-scaling, L:raw-block-inputs, P:actual-wave-form, P:gram-entrywise-comparison, P:gram-positive-optimizer and P:raw-block-original-lower.
 - **The AI-use L14 block** (#3's a54aff89) is not in this chain. Per #16 it goes in at the re-pin through the release_sync template; #22 has confirmed its counts.
+
+### Companion coverage.yaml corrections for the re-pin (2026-11-16; done)
+These are on the private dev branch `reanchor-98f45bed`: `e415c36` (coverage.yaml) and `4f07611` (re-anchor census decision). Pushed; <HUB> fetched. Both are docs-only: coverage.yaml is not a build input, and the Lean is unchanged.
+1. **summary.**
+   - It carries #24's Appendix F sentence verbatim ("…; the entries distinguish supplied hypotheses, where present, from analytic work left outside Lean").
+   - It is shortened to the coverage/1 limit of 400 characters, with the meaning unchanged: numerals, and "in full" for "with every conclusion".
+   - New summary (392 characters): "With the manuscript's hypotheses, 48 labelled results are formalized in full and 16 with a narrower conclusion; P:tube-rayleigh-transfer in full with two inputs supplied; steps, parts or narrower forms of 34 further labelled results; the entries distinguish supplied hypotheses, where present, from analytic work left outside Lean; T:full-upper and T:intrinsic-second-moment are outside Lean."
+   - At the re-pin, Appendix F prints this wording. #24 removes the generator's summary override, and #3 audits the wording.
+2. **inputs of the 8 no-analytic-input rows** (L:driver-holder-limit, L:driver-interval-limit, L:exact-canonical-scaling, L:raw-block-inputs, P:actual-wave-form, P:gram-entrywise-comparison, P:gram-positive-optimizer, P:raw-block-original-lower):
+   - New text: "none beyond the paper's hypotheses: the checked Lean statements assume only parameter conditions; the analytic and probabilistic facts of the proof are outside Lean (see docs/statement-ledger.md, section <Module>)".
+   - L:raw-block-restart and P:white-spatial-energy, which have real hypotheses, keep their wording.
+   - The payload's ascii is regenerated from this at the re-pin.
+
+Checks:
+- `lean-pkg coverage check`: schema PASS. The only failure is the expected "manuscript unposted".
+- `verify_l14_successor.py` 8f51004 -> e415c36: ALLOWED-SUCCESSOR. Lean library comment-only; coverage changes only in claims, inputs (9), conclusion_scope and note.
+- Remap dry run at fa49a953 with the new head: passes after one recorded census decision ("16" in the summary is a count). 14974 numbers decided.
