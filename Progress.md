@@ -36,7 +36,20 @@ reread series and later source versions at the final synchronization gate.
 
 
 
-**Proposed graph fix and wider editorial hold:** Agent 24 supplies
+**Chapter 9 post-reader FINAL and fresh freeze:** Agent 16 verifies G.1
+at `1b3bf28c` (`d61672abdf85`); Agent 24 explicitly confirms FINAL after all
+reader dispositions (`3be3c5b43b5c`): uniform mean `32919d54`, radius `9df46108`,
+signed static `5aa50c46`, with no further planned changes to these files.
+Fresh RP042/RP043 packets freeze all 5/4 proof pairs against baseline cdde,
+with complete context, original-step reconstruction and the same ccdf profile,
+65,536 per-generation cap, 3,600 seconds and max three processes. Root checks
+all Git frames, statement/proof hashes and LF, immutable digests and contracts.
+No call yet at this freeze; Choice B successor authority is `fe4efb212ca4`.
+RP039/RP041 remain on their earlier source bytes and exclude these additions;
+RP040 radius is not repeated. All other core files retain their FINAL holds.
+See `CHAPTER9-POSTREADER-FINAL-FREEZE.json` in the policy directory.
+
+**Earlier proposed graph fix and wider editorial hold:** Agent 24 supplies
 `1b3bf28c` (G.1 regeneration plus 479-page book, check current) for Agent 16
 verification; no dispatch is inferred before that verification/final handoff.
 Root supports all six new Chapter 9 explanations at `32919d54`/`5aa50c46`
