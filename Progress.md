@@ -57,6 +57,20 @@ aggregate usage/cost/cap remain unknown. Older RP014/RP039 records and their
 limits are unchanged. RP043 signed-static remains running at this record.
 See `reviews/2026-11-16-readable-uniform-mean-postreader32919d54-deepseek/`.
 
+**Five editorial successors verified and frozen:** Le confirms the exact
+six old/new pairs; Agent16 verifies `16fdc47b` and map carrier `cdef8c83`
+(`750e67f3d483`). RP071-RP075 now freeze all25complete proof pairs for source
+convergence, masked moments, point transfer, signed upper and intrinsic
+constant. Root independently checks full source frames, ownership, proof and
+statement hashes/LF, literal statement_unchanged flags and the three bounded
+declaration exceptions; no global pure-insertion/outside-proof waiver. Neutral
+contracts require checking the meaning of all edits. Old048/049 remain on
+previous sources and do not cover these successors. Same ChoiceB/max3/65,536
+pergeneration/3,600seconds, no call at this freeze. Whole-candidate building is
+authorized in parallel; D/disclosures/AppEfinalseries/VERIFICATIONfooteronce
+and rootreseal stay AFTER the last review/adjudication. No push.
+See `OLDTEXT071-075-FREEZE.json`.
+
 **Main-file source rereads frozen:** RP065-RP070 bind final MAIN `58108ca3`
 against cdde in six batches of10/10/10/10/10/12, all62proofs exactlyonce.
 Root independently verifies every proof owner, complete statement/proof hash

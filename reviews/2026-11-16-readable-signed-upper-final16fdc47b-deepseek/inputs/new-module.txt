@@ -1,0 +1,285 @@
+\section{An upper bound from a signed variational expression}
+\label{S:original-signed-score-upper}
+
+Keep all auxiliary choices fixed as in the Gaussian tube construction, including
+$\alpha/4 < s_{\rm sp} < 1/2$, the admissible $\theta,\nu,r,p$, and the three
+fixed even-$Q$ conditions. The mean bound $C_{\rm mean}$ is independent of
+$R,B,\delta$; it may depend on those fixed auxiliary parameters and the model.
+The space $H_I$ has the original covariance $\Gamma$. Its norm is not reweighted
+by $g$ and is not a sum of fast block costs. Let $R_\delta = \delta^{-1}+2$ and
+$M_\delta = \E\|P_\delta\|_{\mathcal{L}(E)}^2$. For every fixed integer $B$ the
+Gaussian block tuple has typical radius $b_{\delta,B} =
+2\E\|X_{\delta,B}\|_{\delta,p} \to 0$. Its endpoint is the same $P_\delta$ for
+every $B$ by Lemma~\ref{L:tube-actual-endpoint}, not a $B$-dependent surrogate.
+Write $\mathcal{M}_{\delta,B,R}$ for the normalized mean tuple
+in~\eqref{E:tube-actual-mean}, with the indicated block length and radius. Write
+$\mathcal{F}_{\delta,B}$ for the everywhere-defined endpoint functional
+$F_\delta$ of Lemma~\ref{L:tube-actual-endpoint}.
+
+\begin{lemma}[Signed variational expression and quantitative radial envelope]
+  \label{L:signed-score-envelope}
+  For $R \ge 1$ define the variational expression
+  \begin{equation}\label{E:signed-raw-score}
+    \mathcal{S}_R=\sup_{\Phi\in H_I}
+    \{2\operatorname{Rate}_R(\Phi)-\|\Phi\|_{H_I}^2/2\},
+    \qquad V_{\rm up}=\limsup_{\delta\downarrow0}\mathcal{S}_{R_\delta}.
+  \end{equation}
+  Then $0 \le \mathcal{S}_R,V_{\rm up} \le 2+2C_{\rm mean}^2 < \infty$. The tube
+  envelope $G_{\delta,B}$ of Proposition~\ref{P:tube-coarse-envelope} satisfies,
+  uniformly in $R \ge 1$ (in particular at the radius $R_\delta$),
+  \begin{equation}\label{E:signed-polynomial-envelope}
+    G_{\delta,B}(\rho)\le A_0+A_1B^{3\nu}\rho^\nu
+    +\eta_B b_{\delta,B}^\nu ,
+  \end{equation}
+  for $0 < \delta < \min(1,1/B)$ and every $\rho \ge 0$, where
+  \[
+    \begin{aligned}
+      A_0&=4C_{\rm gr},\\
+      A_1&=2^{\nu+1-\nu/r}C_{\rm gr}32^\nu C_{\rm mean}^\nu,\\
+      \eta_B&=2^{\nu+1-\nu/p}C_{\rm gr}B^{\nu/p}.
+    \end{aligned}
+  \]
+  The variational expression is not identified here with a constant in the cited
+  source or a variational value over nonnegative controls.
+\end{lemma}
+
+\begin{proof}
+  We bound the signed score by completing the square in the control norm. We
+  then use the explicit physical Young growth bound and weighted block
+  estimates to compute the radial envelope constants, keeping their dependence
+  on $B$.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain a finite uniform ceiling for the signed
+  score.
+  The mean is linear, so $\mathcal{T}_R0 = 0$. Its free form has nonnegative
+  gradient energy and spectral bottom zero; thus $\operatorname{Rate}_R(0) = 0$.
+  Proposition~\ref{P:uniform-rate-averaging} gives $\operatorname{Rate}_R(\Phi)
+  \le 1+C_{\rm mean}\|\Phi\|$. With $q = \|\Phi\| \ge 0$,
+  \[
+    2\operatorname{Rate}_R(\Phi)-q^2/2
+    \le2+2C_{\rm mean}q-q^2/2
+    =2+2C_{\rm mean}^2-(q-2C_{\rm mean})^2/2 .
+  \]
+  The coarser inequality also follows from half-weight arithmetic--geometric
+  mean at bases $q^2,(2C_{\rm mean})^2$, with nonnegative weights and bases,
+  including zeros. The zero control gives the lower bound. No optimizer, finite
+  rank, positive control or convergence of $\mathcal{S}_{R_\delta}$ is assumed.
+  The finite ceiling is auxiliary-parameter dependent and need not be sharp.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We compute the block-length dependence of the tube
+  envelope.
+  For $\|a\|_{\delta,p} \le b_{\delta,B}$, $\|\Phi\| \le \rho$ set $v_m =
+  \|a_m\|_\theta$ and $h_m = \|(\mathcal{M}_{\delta,B,R}\Phi)_m\|_\theta$. The
+  quantitative physical bound~\eqref{E:uniform-product-growth}, already
+  including the free factor, and convexity give
+  \[
+    \mathcal{F}_{\delta,B}(a+\mathcal{M}_{\delta,B,R}\Phi)
+    \le2C_{\rm gr}B\delta n
+    +2^\nu C_{\rm gr}B\delta\sum_m(v_m^\nu+h_m^\nu).
+  \]
+  Its upper expression is nonnegative, so it controls the maximum at one. The
+  true primitive estimate and weighted power mean give
+  \begin{align*}
+    \delta\sum v_m^\nu&\le(2/B)^{1-\nu/p}b_{\delta,B}^\nu,\\
+    \delta\sum h_m^\nu&\le(2/B)^{1-\nu/r}
+    (32B^{3-1/r}C_{\rm mean}\rho)^\nu .
+  \end{align*}
+  The exponents are $p/\nu \ge 1$, $r/\nu > 1$, inputs nonnegative, $n = N+1 \ge
+  2$, $\delta > 0$, and $\delta n \le 2/B$. Zeros and $p = \nu$ are legal. The
+  first constant is $4C_{\rm gr}$. In the mean term the factors $B^{\nu/r}$ and
+  $B^{-\nu/r}$ cancel exactly, leaving $B^{3\nu}$. These computations give the
+  displayed coefficients and~\eqref{E:signed-polynomial-envelope}, uniformly for
+  all radii. They use no unspecified $c_Y(B)$ or quantitative $F$ estimate. This
+  proves Lemma~\ref{L:signed-score-envelope}.
+\end{proof}
+
+Lemma~\ref{L:signed-score-envelope} bounds the envelope $G_{\delta,B}$ at every
+radius $\rho$. We now split the radial integral
+in~\eqref{E:tube-coarse-envelope} at a radius $M$. Below $M$ we compare the
+exponent with $\mathcal{S}_{R_\delta}$, and above $M$ we use
+Lemma~\ref{L:tube-rayleigh-tail}.
+
+\begin{proposition}[Finite-delta bulk and exact tail]
+  \label{P:signed-moment-bulk-tail}
+  For fixed integer $B \ge 1$, $0 < \delta < \min(1,1/B)$ and $M > 0$, define
+  the deterministic number
+  \[
+    \mathcal{E}_{\delta,B,M}=
+    \max\left(0,\sup_{\substack{R\ge1,\ \|\Phi\|\le M\\
+    \|x\|_{\delta,p}\le b_{\delta,B}}}
+    [\mathcal{F}_{\delta,B}(x+\mathcal{M}_{\delta,B,R}\Phi)
+    -2\operatorname{Rate}_R(\Phi)]\right).
+  \]
+  It is finite. For every polynomial $M_B = c_{\rm ball}B^{\kappa_{\rm ball}}$,
+  with $c_{\rm ball} > 0$, $\kappa_{\rm ball} \ge 0$, one has
+  \begin{equation}\label{E:signed-error-limit}
+    e_B:=\limsup_{\delta\downarrow0}\mathcal{E}_{\delta,B,M_B}
+    \ \text{finite and nonnegative},\qquad e_B\longrightarrow0 .
+  \end{equation}
+  If $4A_1B^{3\nu} \le M^{2-\nu}$, then
+  \begin{equation}\label{E:signed-finite-moment}
+    M_\delta\le
+    \frac{M^2}{2\delta}
+    e^{(\mathcal{S}_{R_\delta}+\mathcal{E}_{\delta,B,M})/\delta}
+    +4e^{(A_0+\eta_Bb_{\delta,B}^\nu-M^2/4)/\delta}.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  We first identify the vanishing deterministic error on polynomial control
+  balls. We then split the exact radial integral at $M$: the bulk uses the
+  signed variational score, and the tail uses the explicit subquadratic
+  envelope.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We control the deterministic product error.
+  The polynomial envelope and nonnegative rate make this supremum finite. It is
+  an ordinary deterministic real number, not a random uncountable-radius
+  supremum. At fixed $R$ the inner functions are continuous in controls and
+  paths; no measurable maximizing selector or joint $\delta,R$ measurability is
+  needed. The zero control and zero path have rate zero and
+  $\mathcal{F}_{\delta,B}(0) \ge 0$, so the untruncated supremum is already
+  nonnegative. The anchor $b_{\delta,B} \to 0$ at fixed $B$ satisfies
+  Proposition~\ref{P:uniform-arbitrary-residual} exactly. Its polynomial-radius
+  conclusion gives $\limsup_B e_B \le 0$. At fixed $B$, the polynomial envelope
+  bounds the inner limsup by a finite number, and $e_B \ge 0$ then
+  proves~\eqref{E:signed-error-limit}.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We split the radial integral and keep both
+  prefactors.
+  The exact Gaussian-enlargement bound is
+  \[
+    M_\delta\le\int_0^\infty\frac{\rho}{\delta}
+    e^{(G_{\delta,B}(\rho)-\rho^2/2)/\delta}\ud\rho .
+  \]
+  For every $\rho \le M$, every base-ball $a$ and $\|\Phi\| \le \rho$,
+  \[
+    \mathcal{F}_{\delta,B}(a+\mathcal{M}_{\delta,B,R_\delta}\Phi)-\rho^2/2
+    \le2\operatorname{Rate}_{R_\delta}(\Phi)-\|\Phi\|^2/2
+    +\mathcal{E}_{\delta,B,M}
+    \le\mathcal{S}_{R_\delta}+\mathcal{E}_{\delta,B,M}.
+  \]
+
+  Taking suprema and integrating $\rho/\delta$ over $[0,M]$ gives the first term
+  of~\eqref{E:signed-finite-moment}, even if $M^2/(2\delta) < 1$. This used
+  $\rho^2 \ge \|\Phi\|^2$, not equality or an optimizer. For the tail apply
+  Lemma~\ref{L:tube-rayleigh-tail} with $C = A_1B^{3\nu}$ and intercept
+  $A_0+\eta_Bb_{\delta,B}^\nu$. All cutoff conditions hold: $M > 0$, $\rho \ge
+  M$, $C \ge 0$, $1 < \nu < 2$, $4C \le M^{2-\nu}$. Its analytic integration
+  retains both the front factor four and the exponent $-M^2/4$. Adding bulk and
+  tail proves the finite-delta bound. No infinite-dimensional density or Laplace
+  principle is used. This proves Proposition~\ref{P:signed-moment-bulk-tail}.
+\end{proof}
+
+\begin{proposition}[Two limits on the same moment]
+  \label{P:signed-operator-upper}
+  The global operator moment obeys
+  \[
+    0\le\liminf_{\delta\downarrow0}\delta\log M_\delta
+    \le\limsup_{\delta\downarrow0}\delta\log M_\delta
+    \le V_{\rm up}\le2+2C_{\rm mean}^2 .
+  \]
+\end{proposition}
+
+\begin{proof}
+  We choose a polynomial cutoff large enough for the quadratic tail to
+  dominate. We first take the small-parameter limit at fixed block length, and
+  only then send the block length to infinity, keeping the same endpoint
+  moment on the left.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We choose a polynomial tail cutoff and bound the
+  logarithm of the sum.
+  Choose any $c_{\rm ball} > 0$ and $\kappa_{\rm ball} > 3\nu/(2-\nu)$, and set
+  $M_B = c_{\rm ball}B^{\kappa_{\rm ball}}$. The cutoff in
+  Proposition~\ref{P:signed-moment-bulk-tail} holds for all sufficiently large
+  integers $B$. For $A_1 = 0$ this is immediate; otherwise its side ratio is
+  \[
+    \frac{M_B^{2-\nu}}{4A_1B^{3\nu}}
+    =\frac{c_{\rm ball}^{2-\nu}}{4A_1}
+    B^{\kappa_{\rm ball}(2-\nu)-3\nu}\longrightarrow\infty .
+  \]
+  Both constants and the strictly positive exponent are retained. At such a
+  fixed $B$, a positive sum is at most twice its larger term. Taking
+  $\delta\log$ of~\eqref{E:signed-finite-moment} therefore gives
+  \begin{align*}
+    \delta\log M_\delta\le\delta\log2+
+    \max\{&
+    \mathcal{S}_{R_\delta}+\mathcal{E}_{\delta,B,M_B}
+    +\delta\log(M_B^2/(2\delta)),\\
+    &A_0+\eta_Bb_{\delta,B}^\nu-M_B^2/4+\delta\log4\}.
+  \end{align*}
+
+  \medskip
+  \noindent\textit{Step 2.~}We take the small-parameter limit before the
+  block-length limit.
+  At fixed $B$, $b_{\delta,B} \to 0$. All logarithmic normalizers vanish,
+  including $\delta\log(M_B^2/(2\delta)) = \delta\log(M_B^2/2)-\delta\log\delta
+  \to 0$. The last limit follows from $te^{-t} \le 2/t$ for $t = -\log\delta >
+  0$. Finite variational expression and error bounds permit limsup
+  subadditivity, giving
+  \[
+    \limsup_{\delta\downarrow0}\delta\log M_\delta
+    \le\max\{V_{\rm up}+e_B,\ A_0-M_B^2/4\}.
+  \]
+
+  The lower bound $M_\delta\ge1$ used here is~\eqref{E:point-fixed-finiteness}
+  of Lemma~\ref{L:point-actual-finiteness}.
+  The left side has no $B$: restart identifies every block product with this
+  same $P_\delta$. Now let integer $B \to \infty$. We have $e_B \to 0$, $M_B \to
+  \infty$ and finite $V_{\rm up} \ge 0$. This gives the asserted upper bound,
+  while $M_\delta \ge 1$ gives the nonnegative lower bound. The order was
+  $\delta$ first at fixed block length, ball and thresholds, then $B$; no
+  diagonal or limit of $\mathcal{S}_{R_\delta}$ was assumed. This proves
+  Proposition~\ref{P:signed-operator-upper}.
+\end{proof}
+
+\begin{proposition}[Pointwise upper bound from the signed variational expression]
+  \label{P:original-signed-point-upper}
+  For every original admissible model and every fixed $x$,
+  \[
+    \limsup_{T\to\infty}T^{-\kappa}
+    \log\E|u_\Gamma(T,x)|^2
+    \le\limsup_{\delta\downarrow0}\mathcal{S}_{\delta^{-1}+2}
+    \le2+2C_{\rm mean}^2 .
+  \]
+  For zero covariance the two normalized moments and the signed variational
+  expression have rate zero.
+\end{proposition}
+
+\begin{proof}
+  Proposition~\ref{P:original-point-transfer} bounds the original point moment
+  by $\operatorname{DataPref}_\delta M_\delta$, with
+  $\delta\log\operatorname{DataPref}_\delta \to 0$. Its proof, which removes
+  the regularization first, keeps the full chain and works with the canonical
+  law, is the input here, not an original $E$ point trace. The decreasing
+  bijection $T_\delta =
+  \delta^{-1/\kappa}$ has inverse $\delta = T^{-\kappa}$. Take logs, normalized
+  limsup and Proposition~\ref{P:signed-operator-upper}. Original canonical
+  spatial stationarity from Proposition~\ref{P:raw-block-original-lower} gives
+  every fixed $x$. The moment is at least one by its full expansion and finite
+  by the bound, so no logarithm or difference of infinite quantities is hidden.
+
+  For $\Gamma = 0$ set $C_{\rm mean} = 0$ directly. Then $H_I = \{0\}$,
+  $\operatorname{Rate}_R = \mathcal{S}_R = V_{\rm up} = 0$, $u = 1$ and
+  $P_\delta = S_E(\delta^{-1})$. The free lower and upper bounds give $0 \le
+  \delta\log M_\delta \le 2\delta\log[C(1+\delta^{-1})] \to 0$. This direct
+  proof needs no nonzero Gaussian or nondegenerate Cameron assumption; the free
+  functional at zero may exceed zero. The formal $a\downarrow0$ exponent is
+  $(4-\alpha)/(3-\alpha)$, with no new endpoint-in-$a$ theorem asserted. The
+  Jensen and lower bounds remain valid. This proves
+  Proposition~\ref{P:original-signed-point-upper}.
+\end{proof}
+
+The varying variational expression remains a signed variational value for the
+original covariance. Its positive-control comparison, exact limit and
+identification of the derived constant require the subsequent variational
+arguments.

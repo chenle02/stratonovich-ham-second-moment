@@ -1,0 +1,62 @@
+\section{Exact scaling of the canonical solution}
+\label{S:exact-canonical-scaling}
+
+We first rewrite the second moment at a large time $T$ as a second moment at
+time one, for an equation with the small parameter $\delta = T^{-\kappa}$. The
+proof of Proposition~\ref{P:raw-block-point-comparison} uses this for the final
+equality in~\eqref{E:raw-block-original-comparison}.
+
+\LeanMarker{L:exact-canonical-scaling}
+\begin{lemma}[Canonical law scaling]\label{L:exact-canonical-scaling}
+  Under Hypothesis~\ref{H:homog}, put $a = \alpha_0$, $\kappa =
+  (4-\alpha-a)/(3-\alpha)$, and, for $T > 0$,
+  \[
+    \delta=T^{-\kappa},\qquad
+    r_T=T\delta=T^{(a-1)/(3-\alpha)}.
+  \]
+  The law of $u(Tt,r_Tx)$ is the canonical expansion solution $V_\delta(t,x)$
+  with data $(1,0)$ of
+  \begin{equation}\label{E:exact-fast-equation}
+    \delta^2\partial_t^2V_\delta
+    =\Delta V_\delta+\sqrt\delta\,\W V_\delta,
+  \end{equation}
+  where $\W$ has the original covariance. In particular,
+  \begin{equation}\label{E:exact-moment-scaling}
+    T^{-\kappa}\log\E|u(T,0)|^2
+    =\delta\log\E|V_\delta(1,0)|^2.
+  \end{equation}
+  The assertion is equality in law; it assumes no pathwise uniqueness for a full
+  rough solution.
+\end{lemma}
+
+\begin{proof}
+  At positive widths, time and space dilation of the Gaussian source gives
+  covariance amplitude $T^{-a}r_T^{-\alpha}$. This follows distributionally from
+  the homogeneous Radon covariance, including spatial white noise. Its source
+  cutoffs transform by $K_\eta(Ts) = T^{-a}K_{\eta/T}(s)$ and
+  $\epsilon\mapsto\epsilon/r_T^2$; the joint maximum-time and summed-space width
+  laws are preserved at every vertex. The Green measure has the scaling
+  \[
+    G_d(T\tau,r_T\ud z)
+    =r_TG_d(\tau/\delta,\ud z).
+  \]
+  It follows from its degree $1-d$ distributional scaling, also for the sphere
+  measure in dimension three. Each terminal Duhamel vertex thus contributes
+  $Tr_T\,T^{-a/2}r_T^{-\alpha/2}$. Substitution of the displayed positive real
+  powers gives
+  \[
+    T^{-a/2}r_T^{2-\alpha/2}=\sqrt\delta,\qquad
+    T^{1-a/2}r_T^{1-\alpha/2}=\delta^{-1/2}.
+  \]
+  The Green kernel for the forcing in~\eqref{E:exact-fast-equation} is
+  $\delta^{-1}G_d((t-s)/\delta)$; after multiplication by $\sqrt\delta$ it gives
+  exactly that vertex factor. Therefore, every finite list of fixed-order
+  coefficients has the same joint law under the dilation, including all
+  self-pairings, unequal orders and empty chains. At fixed $T,r_T$, remove Green
+  smoothing first in dimension three, with its width divided by $r_T^2$ on the
+  scaled side. Lemma~\ref{L:joint-fixed-order} and the absolute $L^2$
+  summability in Lemma~\ref{L:vertex-crude} pass the identities to the canonical
+  series and its second moment. No large-time and source limit are interchanged.
+  This proves the law assertion and~\eqref{E:exact-moment-scaling}. This proves
+  Lemma~\ref{L:exact-canonical-scaling}.
+\end{proof}
