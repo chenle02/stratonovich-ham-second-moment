@@ -55,7 +55,11 @@ Fresh RP042/RP043 packets freeze all 5/4 proof pairs against baseline cdde,
 with complete context, original-step reconstruction and the same ccdf profile,
 65,536 per-generation cap, 3,600 seconds and max three processes. Root checks
 all Git frames, statement/proof hashes and LF, immutable digests and contracts.
-No call yet at this freeze; Choice B successor authority is `fe4efb212ca4`.
+No call had occurred at the freeze; Choice B successor authority is
+`fe4efb212ca4`. RP042/RP043 then launched in parallel on 2026-11-16 at
+13:37:27 and 13:37:28 UTC, respectively, after fresh immutable-hash and
+effective all-deny profile checks. See `CHAPTER9-POSTREADER-LAUNCHES.json`;
+these starts are not review results.
 RP039/RP041 remain on their earlier source bytes and exclude these additions;
 RP040 radius is not repeated. All other core files retain their FINAL holds.
 See `CHAPTER9-POSTREADER-FINAL-FREEZE.json` in the policy directory.
