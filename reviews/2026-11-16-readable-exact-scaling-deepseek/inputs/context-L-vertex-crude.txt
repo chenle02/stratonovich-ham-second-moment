@@ -1,0 +1,13 @@
+\begin{lemma}[Uniform vertexwise regularization bound]\label{L:vertex-crude}
+  Under Hypothesis~\ref{H:homog}, there are $C < \infty$ and $\theta_0 > 0$ such
+  that, for all positive vertexwise widths and $n \ge 1$,
+  \begin{equation}\label{E:vertex-crude}
+    \|Y_n^{\boldsymbol a}(t,x)\|_2\le q_n(t),\qquad
+    q_n(t):=e^{\theta_0t}\frac{C^{n/2}t^n}{\sqrt{n!}}.
+  \end{equation}
+  The bound also holds for $X_n(t,x)$, with $q_0(t) = e^{\theta_0t} \ge 1$. For
+  each $T < \infty$,
+  \begin{equation}\label{E:vertex-summability}
+    \sum_{n\ge0}\sqrt{n+1}\,q_n(T)<\infty.
+  \end{equation}
+\end{lemma}

@@ -173,6 +173,20 @@ Remaining source modules/main batches, companion quotation correspondence,
 disclosure and Appendix E reconciliation, final derived artifacts and reseal,
 Agent 16 verification and Le's release decisions remain open.
 
+### Next frozen per-file rereads: RP006--RP008
+
+RP006 assigns the seven compact mean-family proof pairs at common corrected
+state `7923750f` (the file8 blob equals `a10571f4`; the source/PDF pair is
+judged at792, not the intermediate a105 custody state). RP007 assigns the one
+exact canonical-scaling proof at `91973830`. RP008 assigns the seven original
+raw-block proof pairs at `8f75869e`. All compare with `cdde711c`. Their raw
+source blocks, source/frame hashes and fresh native tool-denied configuration
+have been checked. Caps are65,536,32,768,65,536 respectively; timeout3,600
+seconds each. Each is one fresh pure DeepSeek V4 Pro session with no coordinator
+retry, continuation or fallback. Agent24's dated gates/build/maps and worker
+QA support these frozen candidates; Agent16's integrated adoption/release
+verification remains separate. No independent result is claimed before launch.
+
 The older publication-frontier headings below are dated snapshots; they do
 not authorize restarting their old completed calls or override this narrow
 assignment and Le's later recorded decisions.
