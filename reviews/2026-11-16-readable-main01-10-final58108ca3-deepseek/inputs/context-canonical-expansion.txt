@@ -1,0 +1,34 @@
+The solution is the Stratonovich expansion
+\cite{chen:author2026:time-dependency}*{(2.13)--(2.16)}
+\begin{equation}\label{E:expansion}
+  \begin{split}
+    u(t,x)&=\sum_{n=0}^\infty S_n\big(g_n(\cdot,t,x)\big),\\
+    g_n(s_1,\dots,s_n,x_1,\dots,x_n,t,x)
+    &=\Big(\prod_{l=1}^nG(s_{l+1}-s_l,x_{l+1}-x_l)\Big)
+    \mathbf{1}_{[0,t]^n_<}(s_1,\dots,s_n),
+  \end{split}
+\end{equation}
+with $s_{n+1} = t$, $x_{n+1} = x$, $G$ the fundamental solution of the wave
+equation, and $[0,t]^n_ < = \{0<s_1<\dots<s_n<t\}$. Odd expected Stratonovich
+integrals vanish and even ones are given by Wick's formula
+\cite{chen:author2026:time-dependency}*{(2.19)--(2.21)}, a sum over pair
+partitions $\mathcal{D} \in \Pi_n$ of $\{1,\dots,2n\}$ that includes
+self-pairings within one chain. The second moment of one ordered term is the
+two-chain pairing integral, stated
+in~\cite{chen:author2026:time-dependency}*{Theorem~4.1, (4.3)} and proved here
+under Hypothesis~\ref{H:homog} in Proposition~\ref{P:mixed}:
+\begin{equation}\label{E:Sn2}
+  \begin{split}
+    \E\big[S_n(g_n(\cdot,t,x))^2\big]
+    &=\sum_{\mathcal{D}\in\Pi_n}\int_{[0,t]^n_<\times[0,t]^n_<}\ud s
+    \int_{(\R^d)^n\times(\R^d)^n}\ud x
+    \Big(\prod_{\rho=1}^2\prod_{l\in I_\rho}
+    G(s_l-s_{p(l)},x_l-x_{p(l)})\Big)\\
+    &\qquad\times\prod_{(j,k)\in\mathcal{D}}|s_j-s_k|^{-\alpha_0}\gamma(x_j-x_k),
+  \end{split}
+\end{equation}
+with $I_1 = \{1,\dots,n\}$ and $I_2 = \{n+1,\dots,2n\}$. Here $p(l)$ is the
+preceding label in its own chain; at the first vertex of either chain use the
+common root $(s_{p(l)},x_{p(l)}) = (0,0)$. Thus, the second chain does not
+continue the first one. This spells out the source's conventions in Theorem~4.1.
+

@@ -1,0 +1,1410 @@
+\begin{proposition}[Jensen lower bound]\label{P:Jensen}
+  Under Hypothesis~\ref{H:homog}, $\E u(t,x) \ge 1$ and $\E u^2(t,x) \ge (\E
+  u(t,x))^2$. Consequently, for every real $\ell$,
+  \[
+    \liminf_{t\to\infty}t^{-\kappa}\log\E u(t,x)\ge\ell
+    \quad\Longrightarrow\quad
+    \liminf_{t\to\infty}t^{-\kappa}\log\E u^2(t,x)\ge2\ell.
+  \]
+  The specialization $\ell = L_*$ is conditional on the intended first-moment
+  lower bound with that constant. It is not an unconditional adoption of the
+  printed normalization in Theorem~\ref{T:first}.
+\end{proposition}
+
+\begin{proof}
+  For each fixed $t,x$, Lemma~\ref{L:vertex-crude} below gives
+  $\sum_n\|X_n(t,x)\|_2 < \infty$; its proof does not use the present
+  proposition. Thus, $\sum_n\E|X_n(t,x)| < \infty$, and the mean of the
+  canonical series is the sum of its means. By~\eqref{E:expansion}
+  and~\cite{chen:author2026:time-dependency}*{(2.20)--(2.21)}, $\E u(t,x) =
+  \sum_{n\ge0}\E S_{2n}(g_{2n}(\cdot,t,x)) \ge 1$, since every term is a pairing
+  integral of a nonnegative integrand and $S_0 = 1$. By the Cauchy--Schwarz
+  inequality, $\E u^2(t,x) \ge (\E u(t,x))^2$, so $t^{-\kappa}\log\E u^2(t,x)
+  \ge 2\,t^{-\kappa}\log\E u(t,x)$. Taking lower limits proves the implication
+  for every valid $\ell$. Substituting $L_*$ requires its stated first-moment
+  premise. This proves Proposition~\ref{P:Jensen}.
+\end{proof}
+
+
+\section{Main results}\label{S:targets}
+
+We state the two main results for the model in Section~\ref{S:model}. Throughout
+this section, Hypothesis~\ref{H:homog} holds, $u$ is the canonical Stratonovich
+expansion~\eqref{E:expansion} with initial data $(1,0)$, and $\kappa$ is the
+exponent in~\eqref{E:kappa}. The spectral measure $\mu$ has the normalization
+specified in Hypothesis~\ref{H:homog}. Write $B_1$ for the unit ball in
+$\R^d$, and put
+\begin{equation}\label{E:intro-spectral-mass}
+  R_\alpha=\frac{\alpha\pi\mu(B_1)}{2\sin(\pi\alpha/2)}.
+\end{equation}
+
+\begin{theorem}[Upper bound at the correct scale]\label{T:intro-upper}
+  \label{G:upper}
+  For every admissible dimension $d \in \{1,2,3\}$, there is a finite constant
+  $C = C(\alpha,\alpha_0)$ such that, for all $T \ge 1$ and $x \in \R^d$,
+  \begin{equation}\label{E:intro-upper-bound}
+    \E u^2(T,x)
+    \le e(T+2)^d
+    \exp\left\{C R_\alpha^{1/(3-\alpha)}T^\kappa\right\}.
+  \end{equation}
+  In particular, for every fixed $x \in \R^d$,
+  \[
+    \limsup_{T\to\infty}T^{-\kappa}\log\E u^2(T,x)<\infty.
+  \]
+\end{theorem}
+
+The proof is given in Theorem~\ref{T:full-upper}. It establishes finiteness
+independently of the variational identification below. The more explicit bounds
+for $0 < \alpha \le 1$ are retained in Section~\ref{S:d1-upper}.
+
+To state the limiting constant, let $I = (0,1)$ and define
+\begin{equation}\label{E:intro-control-class}
+  \mathcal{C}_{\mathrm{pos}}
+  =\left\{\Psi\in C_c^\infty(I\times\R^d;\R):
+  \Psi\ge0,\ \Psi\ne0\right\}.
+\end{equation}
+
+No-go~\ref{P:nogo-20} exhibits controls whose covariance profiles do not
+separate into a scalar time factor and one spatial function. This does not
+decide whether a smaller family suffices for optimization.
+
+This class includes controls that do not separate into a function of time and
+a function of space. For $\Psi \in \mathcal{C}_{\mathrm{pos}}$, its covariance
+mean and variance are
+\begin{align}
+  h_{\Psi,s}(x)
+  &=\int_I|s-t|^{-\alpha_0}
+  \int_{\R^d}\Psi(t,x-y)\Gamma(\ud y)\ud t,
+  \label{E:intro-control-mean}\\
+  v_\Psi
+  &=\int_{I\times\R^d}\Psi(s,x)h_{\Psi,s}(x)\ud x\ud s.
+  \label{E:intro-control-variance}
+\end{align}
+For $s \in I$, define the nonnegative Rayleigh value
+\begin{equation}\label{E:intro-control-rate}
+  \mathcal{R}_\Psi(s)
+  =\sup_{\substack{f\in H^1(\R^d;\R)\\\|f\|_2=1}}
+  \left\{\int_{\R^d}h_{\Psi,s}(x)f(x)^2\ud x
+  -\|\nabla f\|_2^2\right\}.
+\end{equation}
+Here $H^1(\R^d;\R)$ is the real Sobolev space of square-integrable functions
+with square-integrable first weak derivatives, and $\|\cdot\|_2$ denotes the
+spatial $L^2$ norm. The spatial
+covariance retains its original amplitude in these definitions.
+
+\begin{theorem}[Second-moment limit]\label{T:intro-second-moment}
+  \label{G:sharp}
+  For every fixed $x \in \R^d$,
+  \begin{equation}\label{E:intro-second-moment-limit}
+    \lim_{T\to\infty}T^{-\kappa}\log\E u^2(T,x)
+    =C_2(\Gamma,\alpha_0),
+  \end{equation}
+  where
+  \begin{equation}\label{E:intro-second-moment-constant}
+    C_2(\Gamma,\alpha_0)
+    =\sup_{\Psi\in\mathcal{C}_{\mathrm{pos}}}
+    \left\{2\int_I\sqrt{\mathcal{R}_\Psi(s)}\ud s
+    -\frac{v_\Psi}{2}\right\}.
+  \end{equation}
+  If $\Gamma \ne 0$, then $0 < C_2(\Gamma,\alpha_0) < \infty$.
+  If $\Gamma = 0$, then $u(T,x) = 1$ and $C_2(0,\alpha_0) = 0$.
+\end{theorem}
+
+The proof is given in Theorem~\ref{T:intrinsic-second-moment}. The variational
+formula uses the full class of nonnegative smooth compact controls. Its kinetic
+coefficient is one, and its Gaussian cost is one half of the original variance.
+It does not identify an auxiliary variational value with the first-moment limit
+or with the constants in Chen's conjecture.
+Theorem~\ref{T:intrinsic-occupation-ceiling},
+Corollary~\ref{C:intrinsic-spatial-bracket} and
+Theorem~\ref{T:white-moment-bounds} give bounds for this same constant. In
+particular, the explicit spatial white-noise energy yields moment bounds,
+not a closed-form evaluation of the full supremum.
+
+\input{notes/why_kappa}
+
+\input{notes/consistency_checks}
+
+\input{notes/proof_strategy}
+
+\input{notes/future_work}
+
+\input{notes/theory_outlook}
+
+\chapter{Construction and two-chain estimates}\label{S:G0}
+
+\input{notes/chapter-guides/02-G0}
+
+Put $X_n(t,x) = S_n(g_n(\cdot,t,x))$, with $X_0 = 1$, and
+\[
+  \beta=4-\alpha-\alpha_0>2,\qquad
+  P_k=\#\Pi_k=\frac{(2k)!}{2^k k!}.
+\]
+The count follows by pairing the smallest remaining label with one of $2k-1$
+labels: $P_0 = 1$ and $P_k = (2k-1)P_{k-1}$, which gives the displayed formula
+by induction. All constants below may depend on the fixed covariance and its
+parameters, but not on the orders or on $t$.
+
+\section{The complete two-chain expansion}
+
+For $m+n = 2k$, label the two chains by $I_1 = \{1,\ldots,m\}$ and $I_2 =
+\{m+1,\ldots,m+n\}$. A self-pairing has both endpoints in one chain; a
+cross-pairing has one endpoint in each chain. Both are included in $\Pi_k$. Let
+$p(l)$ denote the preceding vertex in its own chain; at each first vertex set
+$(s_{p(l)},y_{p(l)}) = (0,0)$. Thus, the second chain has its own root, rather
+than the last vertex of the first chain. For $D \in \Pi_k$, set
+\begin{equation}\label{E:mixed-diagram}
+  \begin{split}
+    J_{m,n,D}(t)
+    ={}&\int_{[0,t]^m_<\times[0,t]^n_<}\ud\mathbf{s}
+    \int_{(\R^d)^{m+n}}\ud\mathbf{y}\,
+    \prod_{\rho=1}^2\prod_{l\in I_\rho}
+    G(s_l-s_{p(l)},y_l-y_{p(l)})\\
+    &\hspace{20mm}\times
+    \prod_{(j,h)\in D}|s_j-s_h|^{-\alpha_0}\gamma(y_j-y_h).
+  \end{split}
+\end{equation}
+An empty chain contributes the factor one. For $d = 3$, the spatial Green
+kernels are measures; for spatial white noise the covariance is a delta measure.
+Integrals in~\eqref{E:mixed-diagram} use the generalized-kernel and
+regularization conventions of the source, not pointwise values of these
+measures. Lemmas~\ref{L:spatial-wick-measures}--\ref{L:joint-fixed-order}
+construct them with the convention
+of~\cite{chen:author2026:time-dependency}*{Remark~2.3, p.~11, and the Green
+regularization on pp.~13--14}.
+
+\begin{proposition}[Mixed terms]\label{P:mixed}
+  Under Hypothesis~\ref{H:homog},
+  \begin{equation}\label{E:mixed-moment}
+    \E[X_m(t,x)X_n(t,x)]
+    =\begin{cases}
+      \displaystyle\sum_{D\in\Pi_k}J_{m,n,D}(t),&m+n=2k,\\
+      0,&m+n\text{ odd},
+    \end{cases}
+  \end{equation}
+  where the case $m = n = 0$ equals one. In particular,
+  \begin{equation}\label{E:full-second}
+    \E u^2(t,x)=\sum_{k=0}^\infty\sum_{m=0}^{2k}
+    \sum_{D\in\Pi_k}J_{m,2k-m,D}(t).
+  \end{equation}
+  This is a convergent series of nonnegative terms.
+\end{proposition}
+
+\begin{proof}
+  We first pass the finite Wick formula to the fixed-order limits. We then
+  reverse the two terminal chains separately and identify their initial-chain
+  diagrams. Finally, norm summability and nonnegativity justify the complete
+  second-moment series.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the fixed-order limits without using
+  the infinite series.
+  Lemma~\ref{L:joint-fixed-order} below constructs each $X_n$ and each
+  individual two-chain diagram at arbitrary vertexwise widths, including unequal
+  and empty chains. Its proof uses the positive spatial-measure limit and
+  Lemma~\ref{L:pairing-product-envelope}; it uses neither the present
+  proposition nor any infinite solution series.
+
+  Here $Y_m,Y_n$ denote the positive-width terminal integrals
+  $Y_m^{\boldsymbol a},Y_n^{\boldsymbol a}$ with the respective vertexwise
+  widths suppressed; their joint width limit is the $L^2$ limit in
+  Lemma~\ref{L:joint-fixed-order}.
+  At positive noise widths Wick's formula gives zero at odd total order and the
+  finite pairing sum at even total order. The Green-width limit is taken first,
+  as in the construction preceding Lemma~\ref{L:spatial-wick-measures}. At fixed
+  $m,n$, joint $L^2$ convergence of the two factors gives product convergence in
+  $L^1$:
+  \[
+    \|Y_mY_n-X_mX_n\|_1
+    \le\|Y_m-X_m\|_2\|Y_n\|_2
+    +\|X_m\|_2\|Y_n-X_n\|_2\longrightarrow0.
+  \]
+  A zero-order factor stays equal to one. Each individual Wick diagram also has
+  the finite nonnegative limit in Lemma~\ref{L:joint-fixed-order}.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We reverse the two chains and relabel the
+  pairings.
+  To identify its initial-chain form, for terminal variables in the first chain
+  set
+  \[
+    s'_j=t-s_{m+1-j},\qquad y'_j=x-y_{m+1-j},\qquad1\le j\le m,
+  \]
+  and use the corresponding length-$n$ transformation on the second chain. Each
+  transformed chain has initial root $(0,0)$. For example, $G(t-s_m,x-y_m)$
+  becomes $G(s'_1,y'_1)$; every other factor becomes the corresponding
+  successive increment. The differences in each covariance change sign, absorbed
+  by evenness. The vertex involution is
+  \[
+    \rho(j)=m+1-j\ (1\le j\le m),\qquad
+    \rho(m+j)=m+n+1-j\ (1\le j\le n).
+  \]
+  It induces the pairing bijection $D\mapsto\{\{\rho(a),\rho(b)\}:\{a,b\}\in
+  D\}$. The same transformation holds before removing noise smoothing. Passing
+  to the finitely many diagram limits proves \eqref{E:mixed-moment} with
+  precisely~\eqref{E:mixed-diagram}.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We sum the mixed expectations using absolute norm
+  convergence.
+  Lemmas~\ref{L:crude-corrected} and~\ref{L:vertex-crude} independently prove
+  fixed-$t$ norm summability of the $X_n$, using the fixed-order construction
+  just cited and Lemma~\ref{L:pairing-product-envelope}.
+  Proposition~\ref{P:mild-construction} identifies their series as a
+  Stratonovich mild solution. None of those proofs uses the present mixed-term
+  identity. Hence, $U_N = \sum_{n=0}^N X_n \to u$ in $L^2$, and
+  \[
+    |\E U_N^2-\E u^2|
+    \le\|U_N-u\|_2(\|U_N\|_2+\|u\|_2)\longrightarrow0.
+  \]
+  Each finite square expands over the square of indices $0\le m,n\le N$.
+
+  The finite expansions of $\E U_N^2$ increase, since every mixed expectation
+  computed above is nonnegative. Their limit is the full double sum, independent
+  of its enumeration. Regrouping by total order gives~\eqref{E:full-second}.
+  This proves Proposition~\ref{P:mixed}.
+\end{proof}
+
+The two chain orders must remain distinct: chronological concatenation can
+violate wave support, and a difference of block labels need not measure
+chronological separation. No-gos~\ref{P:nogo-05} and~\ref{P:nogo-07}
+give explicit positive-measure witnesses.
+
+
+\input{notes/figures/two-chain-pairings}
+
+\section{A small-order check and a source uniformity issue}
+
+\LeanMarker{L:white-test}
+\begin{lemma}[White-space test]\label{L:white-test}
+  For $d = \alpha = 1$ and $\gamma = \delta_0$, put $c_0 =
+  ((1-\alpha_0)(2-\alpha_0)(3-\alpha_0))^{-1}$. Then
+  \begin{equation}\label{E:white-test}
+    \E X_1(t,x)^2=c_0t^{3-\alpha_0},\qquad
+    \E X_2(t,x)=\tfrac12c_0t^{3-\alpha_0}.
+  \end{equation}
+  In particular, the total-order-two contribution to~\eqref{E:full-second} is
+  $2c_0t^{3-\alpha_0}$.
+\end{lemma}
+
+\begin{proof}
+  Here $G(s,y) = \frac12\mathbf1_{\{|y|<s\}}$. Therefore, $\int_\R
+  G(s,y)G(r,y)\ud y = \min(s,r)/2$. The $(1,1)$ integral is
+  \[
+    \int_0^t\ud s\int_0^s r(s-r)^{-\alpha_0}\ud r
+    =\frac{t^{3-\alpha_0}}
+    {(1-\alpha_0)(2-\alpha_0)(3-\alpha_0)}.
+  \]
+  For the $(0,2)$ integral, the delta covariance sets the two spatial vertices
+  equal. Write $0 < r < s < t$ for their ordered time variables. The first
+  factor $G_r$ has spatial mass $r$, while $G_{s-r}(0) = 1/2$. Its time integral
+  is half the preceding display. The $(2,0)$ term is identical. This proves
+  Lemma~\ref{L:white-test}.
+\end{proof}
+
+[held back until the source author has been told]
+
+\section{Recovering the quadratic-exponential bound}
+
+Write $G_\theta(s,y) = e^{-\theta s}G(s,y)$ and $\widehat{G}_s(\xi) =
+\sin(s|\xi|)/|\xi|$, with value $s$ at $\xi = 0$. We use the norms in the
+source's (3.3)--(3.5), with the full covariance, but give their bounds directly.
+Write $\Gamma_{\mathrm{E}}$ for Euler's Gamma function in the following
+definitions, to distinguish it from the covariance measure:
+\begin{equation}\label{E:damped-norm-definitions}
+  \begin{split}
+    N_0(\theta)&=\int_0^\infty e^{-\theta s}G_s(\R^d)\ud s,\\
+    N_1(\theta)&=\frac1{\Gamma_{\mathrm{E}}(\alpha_0)}
+    \int_0^\infty\lambda^{\alpha_0-1}\ud\lambda
+    \int\frac{\mu(\ud\xi)}{(\theta+\lambda)^2+|\xi|^2},\\
+    N_2(\theta)^2&=\int_0^\infty\int_0^\infty
+    e^{-\theta(s+t)}|s-t|^{-\alpha_0}
+    \int\widehat{G}_s(\xi)\overline{\widehat{G}_t(\xi)}
+    \mu(\ud\xi)\ud s\ud t.
+  \end{split}
+\end{equation}
+The second expression uses the elementary wave Laplace transform $\int_0^\infty
+e^{-as}\widehat{G}_s(\xi)\ud s = (a^2+|\xi|^2)^{-1}$. The last expression is the
+space-time covariance quadratic form; in physical variables it pairs
+$G_\theta(s,x)$ with $G_\theta(t,y)$. Thus, the second Green factor in the
+printed source (3.5) is read with the independent variable $y$; see
+Lemma~\ref{L:translated-covariance-CS} and
+Remark~\ref{R:source-case2-time-shift} for the independent justification and the
+exact source qualification.
+
+\LeanMarker{L:damped-homogeneous-norms}
+\begin{lemma}[Homogeneous damped norms and temporal tails]
+  \label{L:damped-homogeneous-norms}
+  Under Hypothesis~\ref{H:homog}, the integrals
+  in~\eqref{E:damped-norm-definitions} are finite for every $\theta > 0$, with
+  $N_2(\theta)^2 \ge 0$, and
+  \[
+    N_0(\theta)=\theta^{-2},\qquad
+    N_1(\theta)=\theta^{\alpha+\alpha_0-2}N_1(1),\qquad
+    N_2(\theta)^2=\theta^{-\beta}N_2(1)^2,
+    \quad\beta=4-\alpha-\alpha_0.
+  \]
+  Let
+  \[
+    K_M(r)=\frac1{\Gamma_{\mathrm{E}}(\alpha_0)}
+    \int_M^\infty e^{-\lambda|r|}\lambda^{\alpha_0-1}\ud\lambda.
+  \]
+  Denote by $N_1^{(M)}(1)$ the first norm with $\lambda > M$, and by
+  $N_2^{(M)}(1)$ the second norm with $K_M(s-t)$ in place of
+  $|s-t|^{-\alpha_0}$. Then
+  \begin{equation}\label{E:damped-tail-norms}
+    N_1^{(M)}(1)\longrightarrow0,\qquad
+    N_2^{(M)}(1)\longrightarrow0\quad(M\to\infty).
+  \end{equation}
+  More precisely, let $m:\R^d\to[0,1]$ be measurable and let
+  $S\subset S'\subset(0,\infty)$ be measurable. Define $N_{1,m,S}(\theta)$
+  by replacing $\mu$ with $m\mu$ and restricting the $\lambda$ integral in
+  $N_1$ to $S$. Define $N_{2,m,S}(\theta)^2$ by replacing $\mu$ with $m\mu$
+  and the temporal kernel in $N_2^2$ with
+  \[
+    K_S(r)=\frac1{\Gamma_{\mathrm{E}}(\alpha_0)}
+    \int_S e^{-\lambda|r|}\lambda^{\alpha_0-1}\ud\lambda.
+  \]
+  Then, for every $\theta>0$,
+  \begin{equation}\label{E:damped-multiplier-comparison}
+    \begin{split}
+      0\le N_{1,m,S}(\theta)&\le N_{1,1,S'}(\theta),\\
+      0\le N_{2,m,S}(\theta)^2&\le N_{2,1,S'}(\theta)^2.
+    \end{split}
+  \end{equation}
+  These are comparisons of spectral expressions, including full and tail
+  domains. An arbitrary $m$ need not preserve Hypothesis~\ref{H:homog}; the
+  scaling identities above are asserted for the original covariance only.
+  Spatial Gaussian smoothing and Gaussian smoothing of the Green kernel
+  give multipliers in this class. The separate mass identity for $N_0$ is
+  unchanged by Gaussian smoothing of the Green kernel.
+\end{lemma}
+
+\begin{proof}
+  We use radial spectral masses to bound the first norm and absolute wave
+  estimates to control the second. Scaling gives their exact homogeneous
+  powers. Tail convergence and multiplier comparisons are then proved from
+  nonnegative spectral expressions after time integration.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound the first norm by the homogeneous
+  resolvent integral.
+  Scaling the Fourier representation of $\Gamma$ and using Fourier uniqueness
+  gives $\mu(cA) = c^\alpha\mu(A)$. Radon finiteness and $\alpha > 0$ then imply
+  $\mu(\{0\}) = 0$. In particular, $\mu(B_r) = r^\alpha V$, where $V = \mu(B_1)
+  < \infty$. Therefore, for $a > 0$,
+  \[
+    \int\frac{\mu(\ud\xi)}{a^2+|\xi|^2}
+    =\alpha V a^{\alpha-2}
+    \int_0^\infty\frac{u^{\alpha-1}}{1+u^2}\ud u<\infty.
+  \]
+  The last integral is finite since $0 < \alpha < 2$. Substitution into $N_1$
+  reduces its finiteness to
+  $\int_0^\infty\lambda^{\alpha_0-1}(\theta+\lambda)^{\alpha-2} \ud\lambda <
+  \infty$: the conditions at zero and infinity are $\alpha_0 > 0$ and
+  $\alpha+\alpha_0 < 2$.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We prove absolute integrability and positivity of
+  the second norm.
+  For $N_2$ use $|\widehat{G}_s(\xi)| \le \min(s,|\xi|^{-1})$. On $|\xi| \le 1$,
+  absolute integration is bounded by
+  \[
+    V\int_0^\infty\int_0^\infty
+    e^{-\theta(s+t)}|s-t|^{-\alpha_0}st\ud s\ud t<\infty.
+  \]
+  On $|\xi| > 1$, use $\int_{|\xi|>1}|\xi|^{-2}\mu(\ud\xi) = \alpha
+  V/(2-\alpha)$ and the same time integral without $st$. Both time integrals are
+  finite by splitting into $s \le t$ and $t \le s$, then using $u = \min(s,t)$
+  and $v = |s-t|$; the only singular factor is $v^{-\alpha_0}$, with $\alpha_0 <
+  1$. This proves absolute integrability of the displayed spectral formula. For
+  each $\xi$, its time integral is nonnegative because the temporal kernel is
+  positive definite. Indeed, it is a positive Laplace mixture of the kernels
+  $e^{-\lambda|s-t|}$. This proves $N_2(\theta)^2 \ge 0$.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We compute the homogeneous powers.
+  The mass identity $G_s(\R^d) = s$ proves the formula for $N_0$. In $N_1$
+  change $\lambda = \theta u$ and $\xi = \theta\eta$. In $N_2$ change $s =
+  u/\theta$, $t = v/\theta$ and $\xi = \theta\eta$, using
+  $\widehat{G}_{u/\theta}(\theta\eta) = \theta^{-1}\widehat{G}_u(\eta)$. These
+  changes give exactly the stated powers.
+
+  For $N_1$, the temporal measure contributes $\theta^{\alpha_0}$, the spatial
+  measure contributes $\theta^\alpha$, and the resolvent contributes
+  $\theta^{-2}$. For $N_2^2$, the two time Jacobians and two wave factors
+  contribute $\theta^{-4}$, while the temporal kernel and spatial measure
+  contribute $\theta^{\alpha_0+\alpha}$.
+
+  \medskip
+  \noindent\textit{Step 4.~}We remove temporal tails using the absolute
+  majorant.
+  The first tail in~\eqref{E:damped-tail-norms} is a tail of the finite
+  nonnegative $N_1(1)$ integral. For the second, $0 \le K_M(r) \le
+  |r|^{-\alpha_0}$ and $K_M(r) \to 0$ for $r \ne 0$. The absolute majorant just
+  proved permits dominated convergence in $(s,t,\xi)$, giving $N_2^{(M)}(1)^2
+  \to 0$. The tail kernel is positive definite by the same Laplace-mixture
+  argument, so its quadratic form is nonnegative.
+
+
+  \medskip
+  \noindent\textit{Step 5.~}We compare nonnegative spectral quadratic forms.
+  For the multiplier comparisons, define
+  \[
+    B_\theta(\lambda,\xi)=\int_0^\infty\int_0^\infty
+    e^{-\theta(s+t)}e^{-\lambda|s-t|}
+    \widehat G_s(\xi)\overline{\widehat G_t(\xi)}\ud s\ud t.
+  \]
+  For each $\lambda>0$ and $\xi$, the positive definiteness of
+  $e^{-\lambda|s-t|}$ gives $B_\theta(\lambda,\xi)\ge0$.
+  The absolute-integrability bound above, $0\le m\le1$ and
+  $0\le K_S\le|\cdot|^{-\alpha_0}$ justify changing the integration order:
+  \[
+    N_{2,m,S}(\theta)^2
+    =\frac1{\Gamma_{\mathrm{E}}(\alpha_0)}
+    \int_S\lambda^{\alpha_0-1}
+    \int m(\xi)B_\theta(\lambda,\xi)\mu(\ud\xi)\ud\lambda.
+  \]
+  Nonnegativity now proves the second comparison
+  in~\eqref{E:damped-multiplier-comparison}. It is used after time integration,
+  not pointwise on the oscillating product of wave Fourier kernels. The first
+  comparison follows directly from the nonnegative integrand defining $N_1$.
+  The choices $S=(0,\infty)$ or $S=(M,\infty)$ give the full or tail bounds.
+  Gaussian spatial and Green smoothing contribute products of multipliers in
+  $[0,1]$ depending only on $\xi$. Gaussian Green smoothing also preserves
+  $G_s(\R^d)=s$, proving its separate assertion for $N_0$. This proves
+  Lemma~\ref{L:damped-homogeneous-norms}.
+\end{proof}
+
+\paragraph{Covariance pairings of translated kernels.}
+Fix $d \in \{1,2,3\}$. Let $\mu$ be a finite positive Borel measure on $\R^d$
+such that $\gamma(z) = \int e^{i\xi\cdot z}\mu(\ud\xi)$ is real and nonnegative
+for every $z$. Thus, $\gamma$ is bounded, continuous and even, with $0 \le
+\gamma(z) \le \mu(\R^d)$. Let $\nu$ be a positive Borel measure on $(0,\infty)$
+with $\nu((0,L]) < \infty$ for every $L > 0$, and put
+\[
+  \kappa_L(t)=\int_{(0,L]}e^{-\lambda|t|}\nu(\ud\lambda),\qquad
+  C_L((t,x),(s,y))=\kappa_L(t-s)\gamma(x-y).
+\]
+For complex $L^1(\R\times\R^d)$ functions $f,h$, define
+\begin{equation}\label{E:translated-covariance-form}
+  Q_L(f,h)=\int_{\R^2}\int_{\R^{2d}}
+  f(t,x)\overline{h(s,y)}\kappa_L(t-s)\gamma(x-y)
+  \ud x\ud y\ud t\ud s.
+\end{equation}
+This integral is absolutely convergent, with $|Q_L(f,h)| \le
+\nu((0,L])\mu(\R^d)\|f\|_1\|h\|_1$. For nonnegative $f,h$, define $Q(f,h) =
+\lim_{L\to\infty}Q_L(f,h)$ as an extended nonnegative number. This positive cap
+limit also defines the pairing when the full temporal kernel is singular on the
+diagonal. The spatial covariance is fixed throughout this definition. For a
+nonnegative Borel function $G$ on $(0,\infty)\times\R^d$, let $G^0$ be its zero
+extension to nonpositive times and put
+\[
+  N_0(G)=\int_0^\infty\int_{\R^d}G(t,x)\ud x\ud t,\qquad
+  N_C(G)^2=Q(G^0,G^0).
+\]
+For $(A,a) \in \R\times\R^d$, write $T_{A,a}f(t,x) = f(t-A,x-a)$. All translated
+pairings are over the full time line.
+
+\begin{lemma}[Translated covariance Cauchy--Schwarz]
+  \label{L:translated-covariance-CS}
+  Under the preceding assumptions on $\mu$ and $\nu$, let $G_1,G_2$ be
+  nonnegative Borel functions with $N_0(G_i),N_C(G_i) < \infty$, $i = 1,2$. For
+  arbitrary origins $(A,a),(B,b) \in \R\times\R^d$,
+  \begin{equation}\label{E:translated-covariance-CS}
+    0\le Q(T_{A,a}G_1^0,T_{B,b}G_2^0)\le N_C(G_1)N_C(G_2),
+  \end{equation}
+  and $Q(T_{A,a}G_i^0,T_{A,a}G_i^0) = N_C(G_i)^2$ for $i = 1,2$. The coefficient
+  one is independent of the origins, dimension, cap and covariance masses. Zero
+  norms and zero measures are included.
+\end{lemma}
+
+\begin{proof}
+  At a finite temporal cap we represent the stationary covariance as an inner
+  product. We use its Cauchy--Schwarz inequality together with translation
+  invariance of each self-pairing. Positive truncation and cap limits then
+  extend the result to the stated kernels.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We represent the capped covariance by
+  deterministic Hilbert features.
+  We first prove positivity and Cauchy--Schwarz for the stationary kernel $C_L$
+  at fixed finite $L$. For $\lambda > 0$, define
+  \[
+    h_\lambda(t,r)=\sqrt{2\lambda}\,e^{-\lambda(t-r)}
+    \mathbf1_{\{r\le t\}}.
+  \]
+  Direct integration gives
+  \[
+    \int_\R h_\lambda(t,r)h_\lambda(s,r)\ud r
+    =2\lambda e^{-\lambda(t+s)}
+    \int_{-\infty}^{\min(t,s)}e^{2\lambda r}\ud r
+    =e^{-\lambda|t-s|}.
+  \]
+  In particular, $\int h_\lambda(t,r)^2\ud r = 1$. On the complex Hilbert space
+  \[
+    \mathcal{H}_L=L^2((0,L]\times\R^d\times\R,
+    \nu(\ud\lambda)\mu(\ud\xi)\ud r),
+  \]
+  with inner product linear in its first entry, put $\Phi_L(t,x)(\lambda,\xi,r)
+  = h_\lambda(t,r)e^{i\xi\cdot x}$. Then
+  \[
+    \|\Phi_L(t,x)\|^2=m_L:=\nu((0,L])\mu(\R^d),\qquad
+    \langle\Phi_L(t,x),\Phi_L(s,y)\rangle=C_L((t,x),(s,y)).
+  \]
+  The scalar integrals are absolutely convergent: Cauchy--Schwarz in $r$ bounds
+  $\int|h_\lambda(t,r)h_\lambda(s,r)|\ud r$ by one, and both remaining measures
+  are finite on the cap.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the covariance integral as a Hilbert
+  pairing.
+  The map $(t,x)\mapsto\Phi_L(t,x)$ is norm-continuous, since its squared
+  increment is $2m_L-2\operatorname{Re}C_L((t,x),(s,y))$. Continuity of $C_L$
+  follows by dominated convergence against the finite measures. Thus, the map is
+  strongly measurable, has separable range and is bounded. For $f \in L^1$, the
+  Bochner integral $F_L(f) = \int f(t,x)\Phi_L(t,x)\ud t\ud x$ exists. Bochner
+  Fubini, justified by $m_L\|f\|_1\|h\|_1$, gives $Q_L(f,h) = \langle
+  F_L(f),F_L(h)\rangle$. Therefore,
+  \[
+    |Q_L(f,h)|\le Q_L(f,f)^{1/2}Q_L(h,h)^{1/2}.
+  \]
+  This uses the original stationary covariance, rather than positivity of an
+  independently shifted cross kernel. The feature space is deterministic and
+  introduces no new Gaussian field.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We compare different translates through their
+  unchanged self norms.
+  Changing both integration variables in~\eqref{E:translated-covariance-form} by
+  the same time and spatial translation gives
+  \[
+    Q_L(T_{A,a}f,T_{A,a}h)=Q_L(f,h).
+  \]
+  Both differences remain unchanged. The full time line and Lebesgue translation
+  invariance justify this equality without an origin factor. Apply
+  Cauchy--Schwarz to the two different translates and this equality separately
+  to their self pairings. This proves the capped form
+  of~\eqref{E:translated-covariance-CS}.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We pass the nonnegative kernel and temporal-cap
+  limits.
+  To make the passage for possibly unbounded nonnegative kernels explicit, set
+  \[
+    G_{i,M}(t,x)=\min(G_i(t,x),M)
+    \mathbf1_{\{0<t\le M,\ |x|\le M\}},\qquad M\in\N.
+  \]
+  These functions increase to $G_i$ almost everywhere. Their zero extensions and
+  translates are bounded compactly supported $L^1$ functions. Since $C_L \ge 0$,
+  monotone convergence passes the capped inequality and common-translation
+  identity to $G_i$ as $M \to \infty$. Equivalently, the finite-cap passage
+  follows from $L^1$ convergence and the absolute bound
+  after~\eqref{E:translated-covariance-form}.
+
+  Finally, positivity of $\nu$ and nonnegativity of $\gamma$ give
+  \[
+    Q_L(G_i^0,G_i^0)\uparrow N_C(G_i)^2,\qquad
+    Q_L(T_{A,a}G_1^0,T_{B,b}G_2^0)
+    \uparrow Q(T_{A,a}G_1^0,T_{B,b}G_2^0).
+  \]
+  The finite self norms bound the latter limit by $N_C(G_1)N_C(G_2)$. The
+  common-translation identity passes to the limit in the same way. No division
+  by a norm is used, so zero norms cause no exception. No spatial Gaussian
+  mollifier is removed in this argument. This proves
+  Lemma~\ref{L:translated-covariance-CS}.
+\end{proof}
+
+\begin{remark}[Source Case 2 and the regularized inputs]
+  \label{R:source-case2-time-shift}
+  \emph{(i)} In Case~2 of the proof
+  of~\cite{chen:author2026:time-dependency}*{Theorem~3.1, p.~21}, the final
+  vertices belong to two nonempty chains of lengths $n_1,n_2$ with $n_1+n_2 =
+  2n$. Fix their predecessor origins separately:
+  \[
+    (A,a)=
+    \begin{cases}
+      (0,0),&n_1=1,\\
+      (s_{n_1-1},x_{n_1-1}),&n_1>1,
+    \end{cases}
+    \qquad
+    (B,b)=
+    \begin{cases}
+      (0,0),&n_2=1,\\
+      (s_{2n-1},x_{2n-1}),&n_2>1.
+    \end{cases}
+  \]
+  The second chain's first vertex uses its own root. An empty chain has no
+  interchain Case~2 pair. The final-pair integral is, using evenness to fix the
+  orientation,
+  \[
+    \begin{split}
+      I&=\int_A^\infty\int_B^\infty\int_{\R^{2d}}
+      G_1(t-A,x-a)\kappa(t-s)\gamma(x-y)G_2(s-B,y-b)
+      \ud x\ud y\ud s\ud t\\
+      &=Q(T_{A,a}G_1^0,T_{B,b}G_2^0),
+    \end{split}
+  \]
+  where the full temporal expression means the positive cap limit.
+  Lemma~\ref{L:translated-covariance-CS} gives $0 \le I \le N_C(G_1)N_C(G_2)$
+  uniformly in the predecessors, so the bound can be inserted into the remaining
+  nonnegative integrals in the source's induction. If only $u = t-A$ and $v =
+  s-B$ are substituted, the integrand has factors
+  \begin{equation}\label{E:translated-covariance-offset}
+    G_1(u,x-a)\kappa(u-v+A-B)\gamma(x-y)G_2(v,y-b).
+  \end{equation}
+  The time difference $A-B$ must remain. The source's first Case~2 equality on
+  physical p.~21 displays $\kappa(u-v)$ after this change of time variables,
+  which is not an identity for general $A \ne B$. Its spatial origins remain in
+  the two tests, so $\gamma(x-y)$ is correct in those absolute spatial
+  variables. Changing also $x = X+a$, $y = Y+b$ gives $\gamma(X-Y+a-b)$. We use
+  the original integral and the proved inequality, not the offset-free equality
+  or positivity of a shifted cross kernel.
+
+  \emph{(ii)} The norm $N_C(G)$ pairs $G(t,x)$ with $G(s,y)$
+  in~\eqref{E:translated-covariance-form}, with independent spatial variables.
+  The source's printed (3.5), physical p.~14, repeats $x$ in its second Green
+  factor. Our quadratic form states explicitly the convention used
+  in~\eqref{E:damped-norm-definitions}; it is not a literal quotation of that
+  display.
+
+  [held back until the source author has been told]
+
+  \emph{(iv)} We prove the product estimate needed here in
+  Lemma~\ref{L:pairing-product-envelope}, rather than importing the remaining
+  displayed induction. On p.~16, the empty-first-chain base caption interchanges
+  the mass and first-norm kernel labels; their chronological order gives mass on
+  the first kernel. On p.~18, (3.9) omits the factor two when a fused kernel
+  occupies a first-norm slot. Retaining that factor and using the mass times
+  first-norm convolution bound below preserves the half-bound needed in Case~3.
+  The p.~19 mass-slot partition uses a union of the two excluded labels, not the
+  printed intersection; its first-slot edge count excludes the fused slot. The
+  p.~21 Case~2 offset is handled by the preceding lemma. These are explicit
+  qualifications of the printed formulas, not corrections attributed to the
+  source or a claim that its intended product bound is false. The finite maximum
+  below is sufficient for all our uses; we assert no partition independent of
+  the kernel family.
+\end{remark}
+
+\section{A finite product bound for two ordered chains}
+
+Fix $d \ge 1$, $0 < a < 1$ and a matching $D$ on $2n$ labels. For each edge $e
+\in D$, let $\mu_e$ be finite and positive, with $\gamma_e(x) = \int
+e^{i\xi\cdot x}\mu_e(\ud\xi) \ge 0$. For a measurable $A_e \subset (0,\infty)$
+put
+\[
+  \nu_e(\ud\lambda)=\Gamma_{\mathrm{E}}(a)^{-1}
+  \mathbf1_{A_e}(\lambda)\lambda^{a-1}\ud\lambda,
+  \qquad \kappa_e(t)=\int e^{-\lambda|t|}\nu_e(\ud\lambda).
+\]
+For nonnegative $G \in L^1((0,\infty)\times\R^d)$ define
+\begin{equation}\label{E:pairing-edge-norms}
+  \begin{split}
+    N_0(G)&=\int G(t,x)\ud t\ud x,\\
+    N_{1,e}(G)&=\int\left|\int e^{-\lambda t+i\xi\cdot x}
+    G(t,x)\ud t\ud x\right|\nu_e(\ud\lambda)\mu_e(\ud\xi),\\
+    N_{2,e}(G)^2&=\int G(s,x)G(t,y)
+    \kappa_e(s-t)\gamma_e(x-y)\ud s\ud x\ud t\ud y.
+  \end{split}
+\end{equation}
+Time integrations in these definitions are positive. Denote the inner
+Laplace--Fourier transform by $\mathcal{L} G(\lambda,\xi)$. The last integral
+means its nonnegative temporal cap limit, as in the preceding covariance
+pairing. In particular, its spatial variables are independent.
+
+Let $I_1 = \{1,\ldots,n_1\}$ and $I_2 = \{n_1+1,\ldots,2n\}$, where $n_1+n_2 =
+2n$ and either chain may be empty. Each chain is ordered in its own time
+variables. Write $p(l)$ for its predecessor, using $(s_{p(l)},x_{p(l)}) = (0,0)$
+at the first vertex of each chain. Set
+\begin{equation}\label{E:pairing-diagram-general}
+  \begin{split}
+    I_D(\boldsymbol G)=\int
+    &\prod_{\rho=1}^2\prod_{l\in I_\rho}
+    G_l(s_l-s_{p(l)},x_l-x_{p(l)})\\
+    &\times\prod_{e=\{j,k\}\in D}
+    \kappa_e(s_j-s_k)\gamma_e(x_j-x_k)
+    \ud\boldsymbol s\ud\boldsymbol x .
+  \end{split}
+\end{equation}
+The domain is the product of the two positive ordered time simplices and all
+spatial variables.
+
+Call $(Q,\iota)$ admissible if $Q_0,Q_1,Q_2$ partition the kernel labels, $|Q_0|
+= |Q_1|$, and the map $\iota:Q_1\cup Q_2 \to D$ uses each edge once on $Q_1$ or
+twice on $Q_2$, never both. There is no incidence requirement between $l$ and
+$\iota(l)$. These assignments form a finite nonempty set $\mathcal{A}_D$. Put
+\begin{equation}\label{E:pairing-product-general}
+  \mathcal{P}_{Q,\iota}(\boldsymbol G)=
+  \prod_{l\in Q_0}N_0(G_l)
+  \prod_{l\in Q_1}2N_{1,\iota(l)}(G_l)
+  \prod_{l\in Q_2}N_{2,\iota(l)}(G_l).
+\end{equation}
+Thus, $|Q_2|$ is even and $|Q_0|+|Q_2|/2 = n$.
+
+\begin{lemma}[Pairing product envelope]\label{L:pairing-product-envelope}
+  Suppose every $G_l$ is nonnegative and integrable, and
+  $N_{1,e}(G_l),N_{2,e}(G_l) < \infty$ for every $l$ and $e \in D$. Then
+  \begin{equation}\label{E:pairing-product-envelope}
+    I_D(\boldsymbol G)\le
+    \max_{(Q,\iota)\in\mathcal{A}_D}
+    \mathcal{P}_{Q,\iota}(\boldsymbol G).
+  \end{equation}
+  A maximizing assignment may depend on the kernels and edge data. No single
+  assignment valid for all kernel families is asserted. For $n = 0$, both sides
+  are one. Zero kernels, measures and norms are allowed.
+\end{lemma}
+
+\begin{proof}
+  We establish convolution bounds for fused kernels, then prove a regional
+  half-bound by induction. The endpoint configurations either give that bound
+  directly, give two second norms, or split into two half-bounds. The finite
+  maximum permits different assignments on the two regions.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We work at finite temporal cap and control fused
+  kernels.
+  First cap every temporal domain at $L < \infty$; its measure is finite since
+  $a > 0$. The stationary covariance pairing in
+  Lemma~\ref{L:translated-covariance-CS} has norm $N_{2,e}$. Its feature
+  $h_\lambda(t,r)e^{i\xi\cdot x}$ and its proof apply in any finite dimension:
+  their only spatial input is the finite measure $\mu_e$. Hence, its
+  coefficient-one Cauchy--Schwarz inequality and invariance under simultaneous
+  time and space translation apply here. All Fourier and Bochner interchanges at
+  this cap are justified by the finite covariance mass times the relevant $L^1$
+  masses.
+
+  For one-sided spacetime convolution $F = G*H$, positivity and the
+  Laplace--Fourier product give
+  \begin{equation}\label{E:pairing-convolution-norms}
+    \begin{split}
+      N_0(F)&=N_0(G)N_0(H),\\
+      N_{1,e}(F)&\le N_0(G)N_{1,e}(H),\\
+      N_{2,e}(F)&\le N_0(G)N_{2,e}(H).
+    \end{split}
+  \end{equation}
+  Indeed, $|\mathcal{L} G(\lambda,\xi)| \le N_0(G)$ for $\lambda \ge 0$ proves
+  the first-norm estimate. For the second, zero-extend $H$ in time. Its
+  translates have the same covariance Hilbert norm. Express $G*H$ as their
+  Bochner integral against $G$ and apply Minkowski. Thus, every fused kernel
+  satisfies all remaining edge hypotheses. No division by a norm is used.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We prove the regional half-bound and its
+  admissible assignments.
+  We use induction on $n$, beginning with the empty product at $n = 0$. With two
+  vertices on one chain the integral is at most $N_0(G_{\rm
+  first})N_{1,e}(G_{\rm last})$; with one on each chain it is at most their two
+  second norms by covariance Cauchy--Schwarz. These also verify both
+  nonempty-chain orientations at $n = 1$. Assume the full bound at $n-1$.
+
+  We first prove a half-bound on any region where an endpoint $v$, its
+  predecessor $p$ and its partner $a$ satisfy $s_a \le s_p$. Require the region
+  indicator to be independent of $(s_v,x_v)$. Write $e_0 = \{a,v\}$. Since
+  $\kappa_{e_0}$ is decreasing on positive arguments, replace
+  $\kappa_{e_0}(s_v-s_a)$ by $\kappa_{e_0}(s_v-s_p)$. Integrating the endpoint
+  and taking the modulus of its spatial Fourier phase gives the factor
+  \[
+    \int |\mathcal{L} G_v(\lambda,\xi)|
+    \nu_{e_0}(\ud\lambda)\mu_{e_0}(\ud\xi)=N_{1,e_0}(G_v).
+  \]
+  Now drop the region indicator by positivity. Remove $v$ and its edge. Its
+  partner $a$ is unpaired. If $a$ is terminal in its remaining chain, integrate
+  it to $N_0(G_a)$ and apply induction. The result is one half of an admissible
+  product, adding $a$ to $Q_0$ and $v$ to $Q_1$ with edge $e_0$.
+
+  Otherwise, let $b$ be the immediate successor of $a$ on its own chain.
+  Integration at $a$ gives exactly $F = G_a*G_b$ at $b$, also when $a$ was the
+  first vertex. Apply induction to the two reduced chains and
+  $D\setminus\{e_0\}$. Mark the slot $i = 0,1,2$ occupied by $F$ in a maximizing
+  reduced product. Let $R_0,R_1,R_2$ be its other slots and $B_{\rm rest}$ their
+  product, retaining every first-slot factor two. The new slots can be chosen as
+  follows:
+  \[
+    \begin{array}{c|ccc}
+      i&Q_0&Q_1&Q_2\\ \hline
+      0&R_0\cup\{a,b\}&R_1\cup\{v\}&R_2\\
+      1&R_0\cup\{a\}&R_1\cup\{b,v\}&R_2\\
+      2&R_0\cup\{a\}&R_1\cup\{v\}&R_2\cup\{b\}.
+    \end{array}
+  \]
+  For $i = 0$, $|R_0|+1 = |R_1|$ and $|R_2|$ is even. Mass multiplicativity
+  gives one half of the displayed new product. For $i = 1$, $|R_0| = |R_1|+1$
+  and $|R_2|$ is even. If $e_1$ is the inherited edge, the term and its bound
+  are
+  \begin{align*}
+    &N_{1,e_0}(G_v)\,[2N_{1,e_1}(F)]B_{\rm rest}\\
+    &\qquad\le\tfrac12N_0(G_a)
+    [2N_{1,e_1}(G_b)][2N_{1,e_0}(G_v)]B_{\rm rest}.
+  \end{align*}
+  The inherited edge stays first exactly once; $e_0$ is first once. No incidence
+  condition is needed. For $i = 2$, $|R_0| = |R_1|$ and $|R_2|$ is odd; $e_1$
+  already occurs once there. The last inequality
+  in~\eqref{E:pairing-convolution-norms} puts its other second norm on $G_b$, a
+  mass on $G_a$ and $2N_{1,e_0}(G_v)$ on $v$, again with a factor one half.
+  Every old edge retains its type and multiplicity. The displayed counts give
+  $|Q_0| = |Q_1|$ and even $|Q_2|$ in all three cases. This proves the regional
+  half-bound, using only the full induction hypothesis, not an assumed stronger
+  induction.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We treat same-chain pairs and the pair of terminal
+  endpoints.
+  If an endpoint is paired to a vertex in its own chain, its partner is at or
+  before its predecessor. Hence, this half-bound applies on the entire domain.
+  This also handles an empty chain. If both endpoints $u = n_1$ and $v = 2n$ are
+  paired to each other, condition on their separate predecessors $(A,z),(B,w)$.
+  The endpoint integral keeps the temporal argument $r-q+A-B$ in relative times.
+  Here $r=s_u-A$ and $q=s_v-B$ are relative times;
+  Lemma~\ref{L:translated-covariance-CS} applies with origins $(A,z),(B,w)$.
+  The symbol $q$ is reused as a vertex label only in the next step.
+  The original stationary covariance Cauchy--Schwarz inequality bounds it by
+  $N_{2,e}(G_u)N_{2,e}(G_v)$; translate each self pairing separately. Induction
+  and adding $u,v$ to $Q_2$ prove the full bound. There is no origin factor or
+  discarded predecessor-time offset.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We split the two distinct cross-pair
+  configurations.
+  It remains that both endpoint pairs are cross and distinct. Let $a$ be the
+  partner of $v$, $b$ the partner of $u$, and put $p = u-1$, $q = v-1$. Then $a
+  < u$ and $b < v$. On $\{s_a\le s_q\}$ remove $v$ by the regional half-bound.
+  Its indicator is independent of $s_v,x_v$. On the complementary region the
+  chain orders give $s_p \ge s_a > s_q \ge s_b$, so remove $u$ instead; that
+  indicator is independent of $s_u,x_u$. The removed partner has a successor on
+  its own chain in both cases. The two bounds are $P/2$ and $P'/2$ for possibly
+  different admissible products of the original labels. Therefore, their sum is
+  at most $(P+P')/2 \le \max(P,P')$. This
+  proves~\eqref{E:pairing-product-envelope} at the finite cap.
+
+
+
+  \medskip
+  \noindent\textit{Step 5.~}We remove the finite cap by positivity.
+  Finally, increase $L$ to infinity. The diagram integrands and all norm factors
+  increase to their declared values, by positivity and monotone convergence.
+  There are only finitely many admissible products, so their maximum converges
+  to the maximum of their limits. No kernel-independent or measurable maximizing
+  choice is needed. Zero norms and measures require no exception; the positive
+  cap convention avoids any undefined product on a singular time diagonal. This
+  proves Lemma~\ref{L:pairing-product-envelope}.
+\end{proof}
+
+\input{notes/figures/endpoint-elimination}
+
+Use the joint Gaussian regularizations of the source's (2.11). Write $a =
+(\epsilon,\delta) > 0$ for one pair of widths and $\boldsymbol a =
+(a_1,\ldots,a_n)$ for vertexwise widths. Let $Y_n^{\boldsymbol a}(t,x)$ be the
+ordered terminal integral with kernel $g_n$ in~\eqref{E:expansion} and field
+$W_{\epsilon_j,\delta_j}(s_j,y_j)$ at vertex $j$; put $Y_0 = 1$. At fixed
+positive widths these are Gaussian-polynomial Bochner integrals. Indeed, Wick's
+formula bounds their product integrands in $L^2$ by $\sqrt{(2n-1)!!}\,V^{n/2}$,
+where $V$ is the largest of the finitely many field variances. The terminal
+Green measure has mass $t^{2n}/(2n)!$, by induction using $G_r(\R^d) = r$. In
+dimension three these integrals use the Green measures: products and linear
+pushforwards of $p_\eta*G$ converge against the bounded continuous covariance
+products. Mixed moments with two Green widths and the same mass bound give the
+$L^2$ limit as $\eta\downarrow0$, before any noise width is removed.
+
+\section{Spatial Wick measures and fixed-order construction}
+
+Put $\gamma_b = p_b*\Gamma$, where $p_b$ is the Brownian heat kernel. Fix $m+n =
+2k \ge 2$, the two chains $I_1,I_2$ above and $D \in \Pi_k$. For a gap vector
+$\boldsymbol r \in (0,\infty)^{2k}$, let $s_l$ be the sum of the gaps up to
+vertex $l$ in its own chain. Similarly, for spatial increments $z_l$, let $x_l$
+be their cumulative sum in that chain. For positive spatial widths
+$\boldsymbol\epsilon$ define
+\[
+  J_{\boldsymbol\epsilon,D}(\boldsymbol r)
+  =\int\prod_{l=1}^{2k}G_{r_l}(\ud z_l)
+  \prod_{\{j,h\}\in D}
+  \gamma_{\epsilon_j+\epsilon_h}(x_j-x_h),\qquad
+  \rho_{\boldsymbol\epsilon,D}(\ud\boldsymbol r)
+  =J_{\boldsymbol\epsilon,D}(\boldsymbol r)\ud\boldsymbol r.
+\]
+These are nonnegative measures. They are locally finite because the smoothed
+covariances are bounded and the Green masses are $r_l$. Write
+$\nu_{\boldsymbol\epsilon,D} = e^{-\sum_l r_l} \rho_{\boldsymbol\epsilon,D}$,
+and let $\ell_i$ be the sum of the gaps in chain $i$, with value zero for an
+empty chain.
+
+\begin{lemma}[Positive spatial Wick-measure limit]\label{L:spatial-wick-measures}
+  Under Hypothesis~\ref{H:homog}, the finite measures
+  $\nu_{\boldsymbol\epsilon,D}$ converge weakly, as all spatial widths tend to
+  zero at arbitrary relative rates, to a finite measure $\nu_D$. The locally
+  finite measure $\rho_D = e^{\sum_l r_l}\nu_D$ satisfies
+  \[
+    \rho_D(cA)=c^{(4-\alpha)k}\rho_D(A),\qquad c>0.
+  \]
+  It gives zero mass to every face $r_l = 0$ and every face $\ell_i = T > 0$.
+  Consequently, for every bounded continuous $\varphi$ and $T_1,T_2 > 0$,
+  \begin{equation}\label{E:spatial-wick-limit}
+    \int_{\ell_1<T_1,\,\ell_2<T_2}\varphi\ud\rho_{\boldsymbol\epsilon,D}
+    \longrightarrow
+    \int_{\ell_1<T_1,\,\ell_2<T_2}\varphi\ud\rho_D.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We compute positive Laplace transforms and uniformly bound their masses
+  through Brownian occupation integrals. We then recover a unique finite
+  measure limit, exclude boundary mass, and use scaling to treat the
+  finite-horizon faces.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the positive Laplace transform.
+  Orient each pair $e = \{j,h\}$ as $j < h$, and let $\eta_l(\boldsymbol\xi)$ be
+  the coefficient of $z_l$ in $\sum_{e=\{j,h\}}\xi_e\cdot(x_j-x_h)$. Finite
+  heat-weighted spectral measures and the finite damped Green masses justify
+  Fourier and Laplace Fubini. The wave Laplace transform gives, for $\lambda_l
+  \ge 0$,
+  \begin{equation}\label{E:spatial-positive-laplace}
+    \begin{split}
+      L_{\boldsymbol\epsilon,D}(\boldsymbol\lambda)
+      &:=\int e^{-\sum_l\lambda_l r_l}\ud\nu_{\boldsymbol\epsilon,D}\\
+      &=\int\exp\left\{-\frac12\sum_{e=\{j,h\}}
+      (\epsilon_j+\epsilon_h)|\xi_e|^2\right\}
+      \prod_{l=1}^{2k}\frac1{(1+\lambda_l)^2+|\eta_l(\boldsymbol\xi)|^2}
+      \prod_{e\in D}\mu(\ud\xi_e).
+    \end{split}
+  \end{equation}
+  The integrand is nonnegative. Thus, the transforms increase when any spatial
+  width decreases. This is transform monotonicity, not pointwise monotonicity of
+  the physical covariances.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound Brownian occupation moments uniformly in
+  the smoothing.
+  We prove a uniform bound on their total masses. With $V = \mu(B_1)$, Fourier
+  triangle and radial homogeneity give
+  \begin{equation}\label{E:construction-heat-bound}
+    0\le(p_t*\gamma_b)(x)\le A t^{-\alpha/2},\qquad t,b>0,
+    \quad A=\alpha V\int_0^\infty u^{\alpha-1}e^{-u^2/2}\ud u<\infty.
+  \end{equation}
+  Indeed, its Fourier multiplier is $e^{-(t+b)|\xi|^2/2}$, whose integral is
+  $A(t+b)^{-\alpha/2} \le At^{-\alpha/2}$. For a Brownian motion $B$ put $S_b(T)
+  = \int_0^T\int_0^T\gamma_b(B_s-B_t)\ud s\ud t$. For every integer $j \ge 1$,
+  \begin{equation}\label{E:construction-brownian-moments}
+    \E_B S_b(T)^j
+    \le\frac{(2j)![A\Gamma_{\mathrm{E}}(1-\alpha/2)]^j}
+    {\Gamma_{\mathrm{E}}((2-\alpha/2)j+1)}T^{(2-\alpha/2)j}.
+  \end{equation}
+  To verify this, order the $2j$ time variables in the moment integral.
+  Condition on all but the last remaining Brownian vertex. Its pair factor has
+  conditional mean at most $A$ times the last remaining time gap to the power
+  $-\alpha/2$, by~\eqref{E:construction-heat-bound}. Remove this vertex and its
+  partner. The remaining factors do not involve either removed vertex, and their
+  marginal law is again the Brownian law at the remaining times. Repeat this
+  procedure. The $j$ selected right endpoints are distinct; each selected gap is
+  at least the original adjacent gap at its right endpoint. On each ordered
+  simplex the resulting bound is therefore $A^j$ times a product of $j$ distinct
+  adjacent gaps to the power $-\alpha/2$. Integration over the simplex gives
+  $\Gamma_{\mathrm{E}}(1-\alpha/2)^j
+  T^{(2-\alpha/2)j}/\Gamma_{\mathrm{E}}((2-\alpha/2)j+1)$. There are $(2j)!$
+  possible orders. This proves the bound uniformly in $b$; the zeroth moment is
+  one.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We bound the two-chain transform by finite
+  Brownian moments.
+  Let $\epsilon_* = \min_l\epsilon_l$. The positive formula
+  \eqref{E:spatial-positive-laplace} bounds $L_{\boldsymbol\epsilon,D}(0)$ by
+  the transform with every vertex width equal to $\epsilon_*$. The identity of
+  finite positive measures
+  \[
+    \int_0^\infty e^{-at}G_t(\ud x)\ud t
+    =\frac12\int_0^\infty e^{-a^2u/2}p_u(x)\ud u\ud x
+  \]
+  follows by their equal Fourier transforms $(a^2+|\xi|^2)^{-1}$. Apply it to
+  the $2k$ Green factors at unit damping. This writes the common-width transform
+  as $2^{-2k}$ times a two-Brownian-chain integral with gap weights $e^{-\sum_l
+  u_l/2}$ and covariance $\gamma_{2\epsilon_*}$ on every pair. If $\tau_i$ is
+  the last Brownian time in chain $i$, insert
+  \[
+    1=\frac14\int_{\tau_1}^\infty\int_{\tau_2}^\infty
+    e^{-((a-\tau_1)+(b-\tau_2))/2}\ud a\ud b.
+  \]
+  This also holds for an empty chain with $\tau_i = 0$. Positivity permits
+  extension of the ordered Brownian time domains to their full cubes. At fixed
+  paths the time integrations then factor into one occupation integral per pair.
+  For independent Brownian paths, spectral Cauchy--Schwarz gives
+  \[
+    0\le A_{12}:=\int_0^a\int_0^b
+    \gamma_{2\epsilon_*}(B_1(s)-B_2(t))\ud s\ud t
+    \le\sqrt{S_{2\epsilon_*}^{(1)}(a)S_{2\epsilon_*}^{(2)}(b)}.
+  \]
+  If the pairing has $v_1,v_2$ self-pairs and $w$ cross-pairs, with $v_1+v_2+w =
+  k$, its occupation product is at most
+  \[
+    S_1^{v_1+w/2}S_2^{v_2+w/2}\le(1+S_1)^k(1+S_2)^k.
+  \]
+  By~\eqref{E:construction-brownian-moments}, each expected factor is bounded by
+  a fixed finite sum $M_k$ of nonnegative powers of its horizon, independently
+  of $\epsilon_*$. Independence of the two paths now gives
+  \[
+    \sup_{\boldsymbol\epsilon>0}L_{\boldsymbol\epsilon,D}(0)
+    \le2^{-2k-2}\left(\int_0^\infty e^{-a/2}M_k(a)\ud a\right)^2<\infty.
+  \]
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We identify the finite-measure limit and rule out
+  escape of mass.
+  Monotone convergence in~\eqref{E:spatial-positive-laplace} yields finite
+  limits $L_D(\boldsymbol\lambda)$ for all $\boldsymbol\lambda \ge 0$. The
+  limiting integrand at zero is integrable, so dominated convergence shows
+  continuity at zero. Here is the finite-measure Laplace argument, including
+  possible loss of mass. Push the measures to $[0,1]^{2k}$ by $y_l = e^{-r_l}$.
+  Uniformly bounded masses on this compact cube have weak cluster limits. Their
+  integer monomial moments are the prescribed $L_D$ values, so polynomial
+  density determines a unique cluster limit. For $c > 0$ the integral of
+  $\prod_l y_l^c$ is $L_D(c,\ldots,c)$. As $c\downarrow0$, continuity at zero
+  and monotone convergence show that the cluster limit has no mass on the faces
+  where any $y_l = 0$. Closed neighborhoods of the $y$-zero faces have limiting
+  mass tending to zero; the portmanteau inequality bounds the approximating tail
+  masses by these same quantities. Pulling back therefore proves weak
+  convergence on $[0,\infty)^{2k}$. Bounded continuous test functions are
+  handled by cutting off a neighborhood of those zero faces and then using the
+  vanishing tail mass. Every sequence of widths tending to zero has this same
+  limit, so the convergence is joint and independent of their relative rates.
+
+
+  \medskip
+  \noindent\textit{Step 5.~}We exclude zero gaps and positive horizon faces.
+  Sending just $\lambda_l \to \infty$ in the limiting positive integral
+  \eqref{E:spatial-positive-laplace} gives zero by domination by its integrable
+  zero-parameter integrand. On the measure side this limit is $\nu_D\{r_l=0\}$.
+  Thus, every coordinate-zero face has zero mass.
+
+
+  Heat and wave scaling give, for Borel sets,
+  \[
+    \rho_{\boldsymbol\epsilon,D}(cA)
+    =c^{(4-\alpha)k}\rho_{\boldsymbol\epsilon/c^2,D}(A).
+  \]
+  This follows from $G_{cr}(c\ud z) = cG_r(\ud z)$, $\gamma_b(cx) =
+  c^{-\alpha}\gamma_{b/c^2}(x)$, and the $2k$ time Jacobians. Passing to vague
+  limits proves the stated homogeneity of $\rho_D$. If a compact part $A$ of
+  $\{\ell_i=T\}$, $T > 0$, had positive mass, its dilates $cA$ at distinct $c
+  \in [1,2]$ would be disjoint, have a common positive lower mass bound, and lie
+  in one compact set. This contradicts local finiteness. Exhausting the face by
+  compacts proves it has zero mass. For an empty chain the positive-level face
+  is empty. The finite-horizon region is bounded, and its boundary is contained
+  in these horizon faces and the coordinate-zero faces. Weak convergence with a
+  compact cutoff, and the bounded continuous multiplier $e^{\sum r_l}\varphi$
+  there, proves \eqref{E:spatial-wick-limit}. This proves
+  Lemma~\ref{L:spatial-wick-measures}.
+\end{proof}
+
+Lemma~\ref{L:spatial-wick-measures} removes only the spatial widths. We now
+remove the temporal widths too and construct each fixed-order term.
+
+\begin{lemma}[Joint diagram limits and fixed-order construction]
+  \label{L:joint-fixed-order}
+  Under Hypothesis~\ref{H:homog}, every two-chain diagram with $m+n = 2k \ge 2$
+  has a finite joint limit as all its positive vertexwise spatial and temporal
+  widths tend to zero, at arbitrary relative rates. This includes unequal and
+  empty chains. For every $n \ge 1,t > 0,x$, $Y_n^{\boldsymbol a}(t,x)$ has a
+  unique joint $L^2$ limit, denoted $X_n(t,x)$; it is the multiple Stratonovich
+  integral of $g_n$. Green smoothing in dimension three is removed before noise
+  smoothing.
+\end{lemma}
+
+\begin{proof}
+  We first remove spatial smoothing at a fixed bounded temporal cutoff. A
+  marked-edge product estimate makes the temporal error uniformly small in all
+  spatial widths. This gives joint diagram limits, and the mixed second
+  moments then make each fixed-order random integral Cauchy in $L^2$.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We take the fixed-temporal-cutoff spatial limit.
+  Use the gap variables and spatial measures of
+  Lemma~\ref{L:spatial-wick-measures}. With $s_j = s_j(\boldsymbol r)$ define,
+  on $\ell_1 < T_1,\ell_2 < T_2$,
+  \[
+    F_{\boldsymbol\epsilon,\boldsymbol\delta,D}
+    =\int\prod_{\{j,h\}\in D}
+    \gamma^0_{\delta_j\vee\delta_h}(s_j-s_h)
+    \ud\rho_{\boldsymbol\epsilon,D}.
+  \]
+  Here $\gamma^0_\delta$ denotes the capped kernel $\kappa_\delta$
+  in~\eqref{E:pairing-source-covariance}; off the time diagonal,
+  $|r|^{-\alpha_0}-\gamma^0_\eta(r)=K_{1/\eta}(r)$ is its omitted Laplace
+  tail.
+  At a common temporal width $\eta > 0$ the multiplier is bounded and
+  continuous. Hence, the spatial limit exists at every $T_1,T_2 > 0$
+  by~\eqref{E:spatial-wick-limit}.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound the temporal remainder uniformly in
+  spatial widths.
+  We next bound removal of that temporal cutoff uniformly in all spatial widths.
+  Write $F_{\boldsymbol\epsilon,0,D}$ for the integral with full factors
+  $|s_j-s_h|^{-\alpha_0}$. It is finite at positive spatial widths: bound the
+  spatial covariances by their finite suprema and the Green masses by their
+  horizon bounds, then integrate the disjoint-pair time factors on the full time
+  cube. Each factor $|s-r|^{-\alpha_0}$ is integrable since $\alpha_0 < 1$. The
+  elementary difference-of-products inequality bounds
+  $F_{\boldsymbol\epsilon,0,D}-F_{\boldsymbol\epsilon,\eta,D}$ by a sum of $k$
+  nonnegative integrals, each with one marked time covariance $K_{1/\eta}$ and
+  all other time covariances full.
+
+  Apply Lemma~\ref{L:pairing-product-envelope} to the damped kernels
+  $e^{-s}G_s$. At first smooth the Green kernels in dimension three and cap the
+  temporal Laplace domains above. Each spatial edge measure is a finite
+  Gaussian-weighted $\mu$ with nonnegative physical covariance, and each
+  temporal domain is a Laplace interval or its restriction. These are exactly
+  the hypotheses of that lemma. The finite-horizon exponential loss is at most
+  $e^{T_1+T_2}$. Lemma~\ref{L:damped-homogeneous-norms} bounds all unmarked
+  norms independently of the smoothing parameters. The marked edge appears once
+  in the first-norm product or twice in the second-norm product in every
+  admissible assignment. Consequently,
+  \begin{equation}\label{E:joint-temporal-tail}
+    0\le F_{\boldsymbol\epsilon,0,D}
+    -F_{\boldsymbol\epsilon,\eta,D}
+    \le C_{k,T_1,T_2}
+    \left(N_1^{(1/\eta)}(1)+N_2^{(1/\eta)}(1)^2\right),
+  \end{equation}
+  uniformly in all spatial widths. Constants may depend on the fixed covariance
+  and $k,T_1,T_2$; no uniformity in these quantities is needed. Let the upper
+  temporal caps tend to infinity by positivity, and then remove Green smoothing
+  at these fixed spatial widths. For the latter passage, the bounded spatial
+  covariance products, weak convergence of Green measures and the integrable
+  time-cube majorant just used give convergence. The bound survives both
+  passages. Its right side tends to zero as $\eta\downarrow0$.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We squeeze all vertexwise cutoff choices to the
+  same diagram limit.
+  Denote the fixed-$\eta$ spatial limit by $b_D(\eta)$. These numbers increase
+  as $\eta$ decreases, and~\eqref{E:joint-temporal-tail} makes them Cauchy with
+  a finite limit $b_D$. If every $\delta_j < \eta$, positivity gives
+  \[
+    F_{\boldsymbol\epsilon,\eta,D}
+    \le F_{\boldsymbol\epsilon,\boldsymbol\delta,D}
+    \le F_{\boldsymbol\epsilon,0,D}.
+  \]
+  Fix $\eta$, pass to the spatial limit in the lower term, and use the uniform
+  remainder in~\eqref{E:joint-temporal-tail}; then let $\eta\downarrow0$. This
+  proves the asserted joint limit $b_D$ with arbitrary spatial/temporal rates.
+  If one chain is empty its horizon contributes no variables, and the same proof
+  applies.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We obtain the joint mean-square limit from the
+  mixed moments.
+  At positive widths Wick's formula gives the mixed second moments of two copies
+  of $Y_n$ as the finite sum of these diagrams, after reversing both terminal
+  chains at their common horizon $t$. Evenness of the covariances absorbs the
+  sign changes. Every such mixed moment, including either diagonal moment, tends
+  to the same finite sum $Q_n = \sum_{D\in\Pi_n}b_D$. Hence,
+  \[
+    \|Y_n^{\boldsymbol a}-Y_n^{\boldsymbol b}\|_2^2
+    \longrightarrow Q_n+Q_n-2Q_n=0.
+  \]
+  Completeness of $L^2$ gives a unique limit independent of all width ratios. At
+  fixed positive noise widths the Green-width limit was already taken in the
+  terminal construction, so the result has the required Green-before-noise
+  convention. Restricting to common noise widths gives precisely the multiple
+  Stratonovich definition for $g_n$. This proves
+  Lemma~\ref{L:joint-fixed-order}.
+\end{proof}
+
+\input{notes/figures/order-of-limits}
+
+Since $\beta > 2$ and $\alpha+\alpha_0 < 2$,
+Lemma~\ref{L:damped-homogeneous-norms} gives constants $C_0 < \infty$ and
+$\theta_0 = 1$ such that, for $\theta \ge \theta_0$,
+\begin{equation}\label{E:crude-norms}
+  N_0(\theta)=\theta^{-2},\qquad
+  N_1(\theta)\le C_0,\qquad N_2(\theta)\le C_0\theta^{-1}.
+\end{equation}
+
+\begin{lemma}[Corrected crude estimate]\label{L:crude-corrected}
+  Under Hypothesis~\ref{H:homog}, for suitable $C < \infty$ and $\theta_0 > 0$,
+  \begin{equation}\label{E:crude-corrected}
+    \E X_n(t,x)^2\le e^{2\theta_0t}\frac{C^nt^{2n}}{n!}
+    \quad(n\ge1,t>0),\qquad
+    \E u^2(t,x)\le2e^{2\theta_0t+2Ct^2}.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We first damp the two chains and apply the finite pairing envelope uniformly
+  in the regularizations. We then choose the damping parameter as a function
+  of the order and sum the resulting norm bounds.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the damped pairing estimate and remove
+  regularizations in order.
+  On the two finite chains, the product of the exponential weights telescopes to
+  $e^{-\theta(s_n+s_{2n})} \ge e^{-2\theta t}$. Extend the nonnegative integral
+  to the two infinite time simplices and apply
+  Lemma~\ref{L:pairing-product-envelope}. For every admissible product, put $q_i
+  = \#Q_i$. Then $q_0 = q_1$ and $q_0+q_2/2 = n$. Hence,~\eqref{E:crude-norms}
+  bounds each pairing by $e^{2\theta t}C^n\theta^{-2n}$. Summing the $P_n$
+  pairings gives
+  \begin{equation}\label{E:theta-envelope}
+    \E X_n(t,x)^2\le P_n e^{2\theta t}C^n\theta^{-2n},
+    \qquad\theta\ge\theta_0.
+  \end{equation}
+  Equations (1.5) and (2.24) here belong
+  to~\cite{chen:author2026:time-dependency}*{(1.5), p.~3, and (2.24), p.~13}.
+  Under Hypothesis~\ref{H:homog}, the ball growth $\mu(B_r)=Vr^\alpha$ and
+  $\alpha+\alpha_0<2$ give the integrability in (1.5), while
+  Remark~\ref{R:source-case2-time-shift}(iii) directly proves finiteness of
+  the Gaussian-weighted measure.
+  For the finite-spectral-measure hypothesis in
+  Lemma~\ref{L:pairing-product-envelope}, first apply it with the spatially
+  smoothed covariance and the temporal truncations of (2.24). The smoothed
+  spectral measure is finite: the Gaussian multiplier is bounded by a constant
+  times $(1+|\xi|^2)^{-(2-\alpha_0)/2}$, whose integral is finite by (1.5). This
+  argument requires no radial density for the spectral measure. The zero norm is
+  unchanged; the first and second norms are bounded by
+  Lemma~\ref{L:damped-homogeneous-norms}: their Gaussian multipliers can be
+  removed in the upper bounds for the nonnegative transforms and covariance
+  quadratic forms. The bound is uniform in these regularizations. In $d = 3$,
+  first use $G_\eta = p_\eta*G$, as defined on pp.~13--14 of the source. Its
+  spatial Fourier multiplier is bounded by one and its spatial mass equals that
+  of $G$, so the same bounds are uniform in $\eta$ as well. For each fixed noise
+  regularization $(\epsilon,\delta)$, first let $\eta\downarrow0$ in the
+  source's $L^2$ definition. The squared moments converge, so the inequality
+  survives this first limit. Then let $(\epsilon,\delta) \to 0$ using
+  Lemma~\ref{L:joint-fixed-order}. In $d = 1,2$ only this latter limit is
+  needed. These limits transfer a uniform inequality; no pointwise delta
+  covariance bound is being used.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We optimize a permitted damping parameter and sum
+  the order bounds.
+  Choose $\theta = \theta_0+n/t$ in~\eqref{E:theta-envelope}. Since $(2n)! \le
+  (2n)^{2n}$, we have $P_n n^{-2n} \le 2^n/n!$. Absorb $2^ne^{2n}$ in $C^n$ to
+  obtain the first bound in~\eqref{E:crude-corrected}. Its square roots are
+  summable for each fixed $t$, by the ratio test. Thus, the norm series
+  converges independently of Proposition~\ref{P:mixed}. By Minkowski and
+  Cauchy--Schwarz,
+  \[
+    \begin{split}
+      \|u(t,x)\|_2
+      &\le e^{\theta_0t}\sum_{n\ge0}\frac{(\sqrt C t)^n}{\sqrt{n!}},\\
+      \left(\sum_{n\ge0}\frac{z^n}{\sqrt{n!}}\right)^2
+      &\le\left(\sum_{n\ge0}2^{-n}\right)
+      \left(\sum_{n\ge0}\frac{(2z^2)^n}{n!}\right)
+      =2e^{2z^2}.
+    \end{split}
+  \]
+  This proves Lemma~\ref{L:crude-corrected}.
+\end{proof}
+
+\section{The mild equation with the corrected bound}
+
+Lemma~\ref{L:crude-corrected} states bounds for the limits $X_n$ and their
+sum. We now bound the regularized terms uniformly in all positive vertexwise
+widths; Proposition~\ref{P:mild-construction} uses this bound.
+
+\begin{lemma}[Uniform vertexwise regularization bound]\label{L:vertex-crude}
+  Under Hypothesis~\ref{H:homog}, there are $C < \infty$ and $\theta_0 > 0$ such
+  that, for all positive vertexwise widths and $n \ge 1$,
+  \begin{equation}\label{E:vertex-crude}
+    \|Y_n^{\boldsymbol a}(t,x)\|_2\le q_n(t),\qquad
+    q_n(t):=e^{\theta_0t}\frac{C^{n/2}t^n}{\sqrt{n!}}.
+  \end{equation}
+  The bound also holds for $X_n(t,x)$, with $q_0(t) = e^{\theta_0t} \ge 1$. For
+  each $T < \infty$,
+  \begin{equation}\label{E:vertex-summability}
+    \sum_{n\ge0}\sqrt{n+1}\,q_n(T)<\infty.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We retain the separate width on every vertex while applying the edgewise
+  product envelope. Uniform edge norms then give the factorial bound, which
+  passes to the joint limit and supplies the weighted summability needed for
+  multiplication.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify all edge regularizations and bound
+  their norms.
+  Wick's formula \cite{chen:author2026:time-dependency}*{(2.19), p.~12}, with
+  the joint covariance (2.11), gives the square of $Y_n^{\boldsymbol a}$, with
+  the widths copied to the second chain. Its edge covariances are
+  \[
+    \gamma^0_{\delta_j\vee\delta_l}(s_j-s_l)
+    \gamma_{\epsilon_j+\epsilon_l}(y_j-y_l).
+  \]
+  On each terminal chain use $s'_j = t-s_{n+1-j}$ and $y'_j = x-y_{n+1-j}$. This
+  reverses the chain and only permutes its vertex widths; covariance differences
+  change sign and the kernels are even. For each pairing apply
+  Lemma~\ref{L:pairing-product-envelope} to $e^{-\theta r}G_r$, first with Green
+  smoothing if $d = 3$. The lemma permits a separate finite spectral measure and
+  temporal truncation on each edge. These hypotheses hold here: the spatial
+  spectral measure on an edge is
+  $e^{-(\epsilon_j+\epsilon_l)|\xi|^2/2}\mu(\ud\xi)$, which is finite by (1.5),
+  and its temporal Laplace domain is $[0,(\delta_j\vee\delta_l)^{-1}]$.
+
+  Condition (1.5) is the source condition just identified in the preceding
+  proof; under Hypothesis~\ref{H:homog}, finiteness of each Gaussian-weighted
+  edge measure follows directly from
+  Remark~\ref{R:source-case2-time-shift}(iii).
+  All edge norms obey~\eqref{E:crude-norms}, uniformly in their widths. For the
+  first norm the Laplace--Fourier transform of the damped Green kernel is
+  positive, and the spatial Gaussian multiplier and temporal truncation can only
+  decrease its nonnegative spectral integral. For the second norm first enlarge
+  the temporal covariance to $|s-r|^{-\alpha_0}$, using positivity of the Green
+  kernels and the smoothed spatial covariance. Its space-time spectral
+  expression is an integral of the squared absolute transform against
+  nonnegative measures, so removal of the spatial Gaussian multiplier increases
+  it. Green smoothing has multiplier at most one and unchanged mass, so the same
+  bounds hold before its removal. These assertions follow from
+  Lemma~\ref{L:damped-homogeneous-norms}, rather than an imported normalization
+  or large-parameter formula in the source's Appendix. The constants are
+  independent of all the vertex widths.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We count the norm factors and optimize the
+  damping.
+  Since $\#Q_0 = \#Q_1$ and $\#Q_0+\#Q_2/2 = n$ for every admissible product,
+  exactly as in~\eqref{E:theta-envelope} we obtain the following bound. Indeed,
+  put $D = \max\{1,2C_0\}$. The norm constants contribute at most
+  $D^{\#Q_1+\#Q_2} \le D^{2n}$, so we may take $C_1 = D^2$:
+  \[
+    \|Y_n^{\boldsymbol a}(t,x)\|_2^2
+    \le P_n e^{2\theta t}C_1^n\theta^{-2n},\qquad\theta\ge\theta_0.
+  \]
+  Let the Green width tend to zero at these fixed positive noise widths, and
+  choose $\theta = \theta_0+n/t$. The inequality $P_n n^{-2n} \le 2^n/n!$ then
+  proves \eqref{E:vertex-crude}, after increasing $C$.
+  Lemma~\ref{L:joint-fixed-order} gives the joint noise-width limit $X_n$; the
+  same bound passes to it. Finally,
+  \[
+    \frac{\sqrt{n+2}\,q_{n+1}(T)}
+    {\sqrt{n+1}\,q_n(T)}
+    =\sqrt C\,T\frac{\sqrt{n+2}}{n+1}\longrightarrow0.
+  \]
+  The ratio test proves~\eqref{E:vertex-summability}. This proves
+  Lemma~\ref{L:vertex-crude}.
+\end{proof}

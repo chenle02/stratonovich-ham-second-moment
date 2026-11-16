@@ -57,6 +57,17 @@ aggregate usage/cost/cap remain unknown. Older RP014/RP039 records and their
 limits are unchanged. RP043 signed-static remains running at this record.
 See `reviews/2026-11-16-readable-uniform-mean-postreader32919d54-deepseek/`.
 
+**Main-file source rereads frozen:** RP065-RP070 bind final MAIN `58108ca3`
+against cdde in six batches of10/10/10/10/10/12, all62proofs exactlyonce.
+Root independently verifies every proof owner, complete statement/proof hash
+and LF, all raw Git source/context frames, immutable digests and pure all-deny
+profile; task-specific questions and unforced output contracts are read.
+These scientific LF selections are not the expanded book or unread source
+PDFs. Cap98,304pergeneration, timeout3,600seconds and globalmax3 share the
+same ChoiceB limits; no call at this freeze and no confidence retry/fallback.
+See `MAIN065-070-FREEZE.json`. The root's selected primary-pixel audit stays
+outside reviewer inputs; no prior report/grade or workerQA is supplied.
+
 **Six late-file source packets frozen:** RP059-RP064 freeze all34 proof
 pairs on the owner-FINAL verified tubes/ceiling/Gram/symplectic/products/white
 sources. RP062 now binds Le's narrow original-setup deletion at `3d2f4fb4`,
