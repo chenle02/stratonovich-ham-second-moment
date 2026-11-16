@@ -206,6 +206,21 @@ RP006 launched at `2026-11-16T06:49:29.137939+00:00` as `readable-compact-mean-5
 RP007 launched at `2026-11-16T06:49:30.319083+00:00` as `readable-exact-scaling-17c182e539f84afcb4a676c3f7f9e11f`.
 RP008 launched at `2026-11-16T06:49:31.483827+00:00` as `readable-raw-block-fd3f759fc9e44ee29a7182d0c2ad3c04`.
 
+### Scaling budget-repair proposal, not a second dispatched call
+
+`reviews/2026-11-16-readable-exact-scaling-budget-repeat-proposal/` is a
+concrete HELD proposal for one explicitly disclosed technical repeat ofRP007:
+same91973830 scientific source, same84,500-byte prompt and all identical
+source frames/profile, new fresh session, cap98,304, timeout3,600seconds.
+The original failed32768-token attempt stays NOT_OBTAINED with full usage;
+the worst-case completion allowance across the two attempts would be131,072.
+No repeat, fallback, continuation or new vote has run. The proposal is sent
+for Agent16/Le disposition because the original packet was frozen as one
+attempt/no retry; it does not claim a skill-mandated new provider permission.
+All still-unlaunched future packets now have at least65,536 tokens of combined
+completion allowance; their scientific inputs remain unchanged. Other source
+rereads continue under standing authority.
+
 The older publication-frontier headings below are dated snapshots; they do
 not authorize restarting their old completed calls or override this narrow
 assignment and Le's later recorded decisions.
