@@ -185,6 +185,10 @@ S_E(t)U_D(t,s)S_E(-s)$.
 
   \medskip
   \noindent\textit{Step 1.~}We bound the covariance mean and its source error.
+  Use~\eqref{E:source-driver-limit} for $M^\rho\to M$ in $L^2C^\theta$,
+  and~\eqref{E:source-transfer-norm} with $C=1$
+  from~\eqref{E:source-two-dominations} for
+  $\|M^\rho\|_{L^2C^\theta}\le\|M\|_{L^2C^\theta}$.
   Separable Gaussian path moments give $\E\|ZM\|_{C^\theta} \le
   \|\Phi\|_{H_W}\|M\|_{L^2C^\theta}$, and the same holds for sources. Bochner
   Cauchy--Schwarz gives~\eqref{E:symplectic-mean-convergence}. Covariance
@@ -212,6 +216,10 @@ S_E(t)U_D(t,s)S_E(-s)$.
   \medskip
   \noindent\textit{Step 3.~}We identify its ordinary primitive with the source
   covariance mean.
+  Proposition~\ref{P:source-ordinary-response} identifies $M^\rho$ with the
+  ordinary source primitive; the approximation here extends smooth time tests
+  to the indicator wave tests in~\eqref{E:source-transferred-row}, with both
+  limits taken in the original covariance completion.
   On Schwartz states, the row of the right side
   of~\eqref{E:symplectic-source-primitive} is the integral of $h_\Phi^\rho$
   against the explicit masked source wave product. Ordinary Fubini is justified
@@ -335,11 +343,6 @@ identity for the flow $P_D$ itself, together with a lower bound on its norm.
   gives \eqref{E:symplectic-raw-conservation}, including $1 = \|J_E\| \le
   \|P_D(t,s)\|^2$.
 
-  In the increment of $V^*J_EV$, the two terms linear in $D_{u,v}$ cancel by
-  the driver constraint. Every remaining term contains either a Young
-  remainder of order $2\theta$ or two increments of order $\theta$. The sum of
-  their norms is therefore bounded by the total interval length times the mesh
-  to the power $2\theta-1$, which tends to zero.
 
   \medskip
   \noindent\textit{Step 4.~}We retain the independent justification of
@@ -402,6 +405,11 @@ identity for the flow $P_D$ itself, together with a lower bound on its norm.
   slow-source pullback is presumed; the original covariance direction is
   independent of the auxiliary realization.
 
+  The compact-conjugation and primitive estimates are those in
+  Proposition~\ref{P:cameron-actual-embedding},
+  including~\eqref{E:cameron-local-primitive-bound}, restricted from $F$ to
+  $E$: compactness gives norm-continuous conjugation and Hölder integration
+  gives exponent $1-1/r$.
   The mean $T\Phi$ has range in closed $iE$. By
   Proposition~\ref{P:cameron-full-mean}, bounded compression passes its strong
   measurability, $L^r$ bound and compact operator values to $\mathcal{T}_E\Phi
@@ -460,11 +468,6 @@ identity for the flow $P_D$ itself, together with a lower bound on its norm.
   to obtain \eqref{E:symplectic-block-direction} on $[0,\ell_m]$, then stop both
   sides. No unstopped equality beyond $\ell_m$ is asserted.
 
-  The adjoint pullback contributes $\delta^{-a/2}$ in $\phi_m$, canceling the
-  $\delta^{a/2}$ in the unscaled covariance. Orthogonality removes only the
-  slow-noise component perpendicular to the range of $T_m$; it does not
-  replace the joint noise by an independent copy. Both operations are made at
-  the same fixed parameters.
 
   \medskip
   \noindent\textit{Step 4.~}We apply the compact endpoint lower bound.
