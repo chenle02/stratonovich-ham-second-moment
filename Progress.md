@@ -36,6 +36,17 @@ reread series and later source versions at the final synchronization gate.
 
 
 
+**Proposed graph fix and wider editorial hold:** Agent 24 supplies
+`1b3bf28c` (G.1 regeneration plus 479-page book, check current) for Agent 16
+verification; no dispatch is inferred before that verification/final handoff.
+Root supports all six new Chapter 9 explanations at `32919d54`/`5aa50c46`
+as worker delta QA only. Chapters 4-8 are ALL nonfinal again: editorial
+readers returned 27 accepted stop points and 140 redundancy flags requiring
+disposition. These are editorial findings, not scientific-review counts or
+confirmed mathematical defects. Readers for Chapters 10, 11 and main are
+starting. The final sync gate must retain their actual models/prompts/lists/
+dispositions and keep editorial assistance separate from scientific reviews.
+
 **Chapter 9 graph-currentness blocker:** Agent 16 verifies the reader-step
 successors `32919d54` and `5aa50c46` mechanically but reports stale Appendix
 G.1 data. Root confirms both new direct dependency edges are real uses:
