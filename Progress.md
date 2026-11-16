@@ -19,7 +19,9 @@ that Agent 24 checks before cautious small-batch scaling. No second specimen
 approval is required by this later message. The core review hold remains
 PER FILE until Agent 24 reports FINAL at an exact SHA or FINAL UNCHANGED
 since an exact SHA; frozen bindings and the existing dispatch policy must
-then be checked. No final-file handoff is supplied by this policy update.
+then be checked. Agent 16 subsequently confirmed Le directly approved this reading and recorded
+it in section 7 (`bd87c10b5f95`, earliest copy `f3eb6437ede3`); Agent 16
+verifies each held final commit. No final-file handoff is supplied by this policy update.
 NoGo-only dispatch and the unused RP007B hold are unchanged. See
 `reviews/2026-11-16-readable-native-recovery-policy-proposal/NECESSITY-BASED-DEPTH-UPDATE.json`.
 
