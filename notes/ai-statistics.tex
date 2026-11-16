@@ -342,7 +342,8 @@ separately approved corrections described below. Inside the
 proofs, sentences were added, removed or reordered. Of the \aiRereadProofs{}
 proofs in the \aiRereadFiles{} technical files, \aiRereadChanged{} changed and
 \aiRereadUnchanged{} stayed identical byte for byte. In
-\aiRereadStatementsChanged{} statements a misprinted word was corrected. The
+\aiRereadStatementsChanged{} statements the wording was corrected under
+separate approval. The
 \aiRereadReaderEditionProofs{} proofs of the reader edition are not counted
 here. The earlier reviews stay bound to the text they received, and they do not
 cover the sentences added later.
@@ -392,9 +393,9 @@ synthesis of Chapter~\ref{S:book-no-go}.
 
 A grade belongs to a call, not to a proof. All \aiRereadReports{} reports
 stated high confidence for their call, and none gave a confidence for a single
-proof. The \aiRereadPairsSent{} proofs sent include repeats: a file was sent
-again when its text changed after a call or when a call had to be repeated, so
-this is not a number of distinct proofs. The call without a report has no grade; it is not counted as a pass or
+proof. The \aiRereadPairsSent{} proofs sent include repeats: some files were sent at
+more than one frozen source revision, and some proofs appeared in more than
+one assigned scope, so this is not a number of distinct proofs. The call without a report has no grade; it is not counted as a pass or
 as an inconclusive review, and its proofs were read in later calls.
 
 The last three rows of the table are the authors' side of the work. The
@@ -427,12 +428,13 @@ author prospectively allowed automatic transport recovery under the later
 policy; they keep the status \emph{held}, and
 none of them covers the final text. The other one was allowed in advance, and
 its report covers \aiRereadRestartedCurrentProofs{} proofs of the final text.
-The recorded final answers used \aiRereadTokens{} tokens, of which
+The available finish records report \aiRereadTokens{} tokens, of which
 \aiRereadTokensCached{} were cached input. The client's own cost counter for
-them sums to \aiRereadCostCounter{} in the client's units; it is not an
+these records sums to \aiRereadCostCounter{} in the client's units; it is not an
 invoice, and its currency was not verified. The usage of the
 interrupted answers, the whole cost and the number of requests that reached
-the provider are unknown, and no estimate is given.
+the provider are unknown, and no estimate is given. No whole-invocation token-limit
+compliance is claimed.
 
 Three kinds of help in this pass were not reviews and are counted nowhere
 above. The editor, a GPT model, rewrote the proofs under written rules, and

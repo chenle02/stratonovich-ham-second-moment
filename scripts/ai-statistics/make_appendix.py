@@ -634,8 +634,11 @@ def infrastructure(out):
 def rereads(out):
     """Macros for the section on the re-reads after the readability pass.
 
-    Every figure is recounted from the rows of the two frozen files and must
-    equal the files' own summary; a difference stops the generator.
+    The counts of proofs, calls, reports, grades and checks are recounted from
+    the rows of the two frozen files and must equal the files' own summary; a
+    difference stops the generator. The token and cost figures are not
+    recounted: they are read from the validated frozen summary. The editorial
+    totals come from the separately selected readability-pass record.
     """
     cov = json.load(open(selected("reread_coverage")))
     att = json.load(open(selected("reread_attempts")))
