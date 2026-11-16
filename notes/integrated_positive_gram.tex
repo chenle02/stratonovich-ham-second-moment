@@ -87,11 +87,6 @@ Set $d_\varnothing^C = 0$.
   \[
     \ell_i^2/L_A\le w_i\le\sqrt{4L_A/c_i}.
   \]
-  After moving $K_A$ to the other side, every summand in the coercive lower
-  bound is nonnegative. Hence, on the chosen sublevel, each reciprocal term is
-  at most $L_A$ and each quadratic term is at most $L_A$. Solving these two
-  inequalities separately gives the coordinate bounds, without allowing
-  cancellation between different coordinates.
   The sublevel is nonempty and closed inside this compact box, which lies in the
   open positive orthant. A minimizing sequence chosen in the sublevel has a
   convergent subsequence there. Continuity attains its infimum. Outside this
@@ -159,10 +154,6 @@ Set $d_\varnothing^C = 0$.
   \medskip
   \noindent\textit{Step 2.~}We realize the maximum of the dual values by a
   nonnegative conic control.
-  The upper argument takes an infimum over positive weights only after fixing
-  the active set of the given primal vector. It does not interchange a global
-  supremum and infimum. The converse below constructs one vector for each
-  subset, which is enough because the number of subsets is finite.
   Conversely, $\mathfrak{F}_C(0) = 0 = d_\varnothing^C$. For nonempty $A$, take
   its dual minimizer. Equation~\eqref{E:gram-dual-stationarity} makes every
   vector in $A$ strictly active at $\Phi_A$, with
@@ -204,13 +195,11 @@ semidefinite order.
   original quadratic form on $(-v^{\mathsf{T}}y/c,y)$. Realize $B$ by vectors
   $u_i$ using the induction hypothesis. Then $k_1 = (\sqrt c,0)$ and $k_i =
   (v_i/\sqrt c,u_i)$ for the other indices realize $C$. Undo the permutation.
+  The inner products are $\langle k_1,k_i\rangle=v_i$ and $\langle
+  k_i,k_j\rangle=v_iv_j/c+B_{ij}=A_{ij}$, while $\|k_1\|^2=c$.
   Entries of $B$ need not be nonnegative; this construction requires neither
   nonnegative coordinates nor complete positivity.
 
-  The new vectors have inner products $\langle k_1,k_i\rangle=v_i$ and
-  $\langle k_i,k_j\rangle=v_iv_j/c+B_{ij}=A_{ij}$. Their first squared norm is
-  $c$. Thus, the construction reproduces every block of the original matrix,
-  even if the Schur-complement entries have either sign.
   In any realization, $C_{ii} = 0$ means $k_i = 0$, so its entire row vanishes.
   Formula~\eqref{E:gram-active-duality} depends only on $C,\ell,b$ and these
   eligible indices. It therefore proves realization independence whenever the
