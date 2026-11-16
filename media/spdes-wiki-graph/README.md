@@ -20,4 +20,9 @@ the graph of the stochastic-wave-equation slice took its place. It is
 the print version, on a white background, of a figure made for the video series;
 four long titles are shortened, as listed in `PROVENANCE.json`.
 
-[held back: collaborators' unpublished work]
+`wiki-slice-wave-equation.pdf` shows the wiki around the stochastic wave equation: 268
+pages on three rings around this book, with the 2,230 links among them, every
+page labelled. It is shown in the preface on a page of its own, where it took the
+place of `spdes-wiki-local-book.png`; that earlier close-up is kept here but is
+no longer shown in the book. At the printed width the labels are about 2 pt high
+and are read by zooming the PDF. Details are in `PROVENANCE.json`.
