@@ -286,6 +286,26 @@ Each actual launch must recheck frozen hashes and effective tool denial.
 RP007 repeat remains a separate unlaunched proposal, excluded from this queue.
 No independent result or adoption is claimed for these remaining packets.
 
+### Rolling native queue, separate transport and math adjudication
+
+Root-frozenRP013--RP038 are now dispatched in source order by one Agent3-team
+native transport helper, with at most3 live sessions, exact9ade frozen-byte/
+source-binding checks and fresh effective configuration checks per launch.
+No provider retry, continuation, fallback or availability-generation probe is
+authorized. The helper cannot runRP007's separate held repeat proposal.
+Another same-GPT helper reads every actual public report against its frozen
+sources and prepares source-bound mathematical adjudication; root reviews
+findings/dispositions and alone commits public records. These helper roles do
+not add independent reviewer votes or human verification. No source/PDF/Git
+mutation or lab message is delegated to the transport/model reviewer.
+
+The first batch RP013--RP015 has launched; a live process is not a completed
+review or a positive verdict.
+
+RP013 `rp013-797994769d004eb98a0837ac24701410` started `2026-11-16T08:17:41.769034+00:00`.
+RP014 `rp014-9a2e2b207fc54cba9f635cc83c10374d` started `2026-11-16T08:17:42.840414+00:00`.
+RP015 `rp015-1f3669369fda4c019f1dff2154d35191` started `2026-11-16T08:17:44.068095+00:00`.
+
 The older publication-frontier headings below are dated snapshots; they do
 not authorize restarting their old completed calls or override this narrow
 assignment and Le's later recorded decisions.
