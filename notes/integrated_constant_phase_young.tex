@@ -59,9 +59,6 @@ constant-coordinate projection.
   of compact tests. Completeness, separability and the closed proper inclusion
   follow from the Hilbert direct sum.
 
-  The shrinking test has $L^2$ norm $\varepsilon^{d/2}\|\varphi\|_2$.
-  Cauchy--Schwarz gives the displayed bound, which tends to zero for a locally
-  square-integrable $f$. A delta mass acts instead by evaluation at zero.
 
   \medskip
   \noindent\textit{Step 2.~}We bound localization from the extended phase to
@@ -148,10 +145,6 @@ paths already constructed, with the same original deterministic coefficients.
   gives~\eqref{E:constant-phase-localization} for all $t$ on one event. Use a
   separate event for each fixed $\rho$.
 
-  Left and right multiplication by the fixed bounded operator $D_\chi$ are
-  continuous in the path norm. Thus, the same coefficient identities hold for
-  a source sum even though its Gaussian coefficients are correlated, and
-  persist when that sum converges.
 
   \medskip
   \noindent\textit{Step 2.~}We define the extended path independently of the
@@ -160,9 +153,7 @@ paths already constructed, with the same original deterministic coefficients.
   $D_\chi(L_\psi-L_{\psi'})z = 0$. The right localization kills this difference.
   For $z = ie$, $D_\chi D_\psi e = D_\chi e$ and hence $Ai = iM_E$. The constant
   columns are precisely $iM_E(\psi,0)$ and $iM_E(0,\psi)$; they are retained.
-  The difference of the two localized inputs vanishes wherever $\chi$ is
-  supported, since both auxiliary cutoffs are one there. The right
-  localization therefore makes $M_E$ annihilate it. The range of $i$ has zero
+  The range of $i$ has zero
   constant coordinates, which also gives $\pi_C A = 0$.
 
   \medskip
@@ -206,10 +197,6 @@ paths already constructed, with the same original deterministic coefficients.
     \|B_F(b)\|_{\mathcal{B}(F,E)}
     \le\|b\|_\infty+\|b\|_2.
   \]
-  The forcing splits into $be_1$ and $c_1b$. Their $L^2$ norms are bounded by
-  $\|b\|_\infty\|e_1\|_2$ and $|c_1|\|b\|_2$, respectively. The velocity norm
-  in $E$ is no larger than the $L^2$ norm, so both terms are controlled by the
-  displayed operator bound.
   Strong continuity and finite-horizon bounds of both free groups make the
   integrand strongly continuous on each state and uniformly bounded as an
   operator. Integrating its bound proves operator-norm Lipschitz increments
@@ -520,11 +507,6 @@ at a fixed source width $\rho$.
   \[
     \sum_j\int_{t_j}^{t_{j+1}}iC(r)U_{A^\rho}(r_j,s)v\ud r.
   \]
-  Within each integral, the only difference from the desired integrand is
-  replacement of $U_{A^\rho}(r,s)v$ by its left-endpoint value. The error is
-  bounded by the horizon length times the uniform bound for $C$ times the
-  modulus of continuity of this state path. That modulus tends to zero with
-  the mesh.
   Uniform continuity of $U$ and the uniform bound for $C$ make these converge to
   the strong integral with $U(r,s)v$. Thus, the Young equation is precisely the
   ordinary interaction integral on states. Multiplying by free groups gives the
@@ -538,6 +520,7 @@ at a fixed source width $\rho$.
   \[
     W_n(t)=\int_0^t S_F(t-r)iB_F(b(r))W_{n-1}(r)\ud r.
   \]
+  The ordered $n$-fold time simplex has volume $T^n/n!$.
   If $B_T = \sup_r\|B_F(b(r))\|_{\mathcal{B}(F,E)}$, induction on the time
   simplex gives $\sup_t\|W_n(t)\|_F \le C_T^{n+1}B_T^nT^n/n!$. We take $C_T \ge
   \max(1,\sup_{|t|\le T}\|S_F(t)\|)$, which also supplies the bound at order
@@ -545,9 +528,6 @@ at a fixed source width $\rho$.
   most $C_TB_TT$, so its sum solves the same integral equation and equals the
   ordinary phase by uniqueness.
 
-  The $n$th iterated time integral has simplex volume $T^n/n!$. The group
-  bound and the coefficient bound apply to each factor, giving the displayed
-  factorial estimate.
 
   \medskip
   \noindent\textit{Step 3.~}We identify the displacement of each term and then
@@ -655,9 +635,6 @@ limit~\eqref{E:constant-flow-limit}.
     =\int\phi(x)\E[\Xi u_\rho^m(t,x)]\ud x
     =\E[\Xi C_\phi].
   \]
-  Bounded random variables separate real $L^2$ random variables in this way.
-  The sign of their difference is itself bounded and measurable, so it is an
-  allowed test even though it depends on both averages.
   Both averages are real $L^2$ variables. Taking $\Xi =
   \operatorname{sign}(B_\phi-C_\phi)$ yields $\E|B_\phi-C_\phi| = 0$, so the two
   averages agree almost surely.
@@ -672,10 +649,6 @@ limit~\eqref{E:constant-flow-limit}.
     \big\|\|P_{A^\rho}-P_A\|_\infty\big\|_{L^p}
     \longrightarrow0.
   \]
-  Apply the bounded functional to the difference of the two physical flows at
-  the same fixed state $e_0$. The scalar error is bounded by the product of
-  the two deterministic norms and the operator error. Thus, the uniform flow
-  convergence gives the displayed scalar convergence for every finite $p$.
   This is~\eqref{E:constant-tested-limit}, including its $L^2$ case, for the
   masked Bochner average, with arbitrary relative source-width rates. It
   supplies the conditional convergence premise of
