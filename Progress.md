@@ -33,8 +33,16 @@ need their own frozen packets and records.
 
 The authorized scoped reread RP001 was launched at
 2026-11-16T04:59:51.429959+00:00 after the recorded route/source checks.
-Its current state is RUNNING; no independent verdict is claimed. On
-completion, read and adjudicate the entire public report. A provider error or missing report is recorded, not counted as a pass.
+The run finished normally at 2026-11-16T05:08:22.743281+00:00, elapsed
+511.313 seconds. Raw result PASS/high: all ten proof pairs reported complete
+and arguments preserved. The entire public report has been adjudicated;
+scoped preservation is supported with report-only notation/shorthand notes,
+including one Fourier delta-kernel expression that is incorrect in the
+report but does not affect the manuscript's correct normalization. No source
+repair or callback was needed. Native identity, exact prompt, zero tools,
+normal finish and unchanged inputs were verified. See the packet's
+`REPORT.md`, `ADJUDICATION.md`, `PER-PROOF-RECORD.json` and `NATIVE-CHECK.json`.
+This does not upgrade whole-book grades or certify Lean proof quotations. A provider error or missing report is recorded, not counted as a pass.
 The proof-step remap and the companion sentences quoting edited steps remain
 Agent 22's separate obligation; this reread does not certify that mapping.
 Final source/PDF/ledger/disclosure/combined/review-sync reconciliation remains
