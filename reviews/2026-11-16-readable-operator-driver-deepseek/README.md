@@ -14,3 +14,7 @@ retry, continuation or fallback. Context capacity figures are conditional,
 not native admission evidence. The packet has no model result at freeze.
 No whole-book, Lean quotation, source-image, rendering, human or release
 acceptance follows from this local assignment. No push.
+
+## Terminal record
+
+See REPORT.md, ADJUDICATION.md, PER-PROOF-RECORD.json and NATIVE-CHECK.json. No whole-book or release acceptance follows.

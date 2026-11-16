@@ -105,7 +105,14 @@ requested cap is 65,536 and timeout 3,600 seconds; one fresh pure session,
 no coordinator retry, continuation or fallback. Worker QA supports the nine
 arguments. RP003 launched fresh at `2026-11-16T06:16:50.426991+00:00`
 as `readable-operator-driver-918de09b2b2a489c9cde166e25e45e1d`; it is
-RUNNING, with no independent result yet. Safe custody is in its STATUS.json.
+terminal: finished `2026-11-16T06:24:19.329601+00:00` in 448.903 seconds
+with raw PASS/high and all nine proof pairs COMPLETE/PRESERVED/JUSTIFIED.
+Root adjudicated the entire public report and supports scoped argument
+preservation; no source correction or callback is required. Native export
+verifies exact prompt/model, fresh parentless session, zero tools, normal stop
+and unchanged hashes. See its terminal STATUS, REPORT, ADJUDICATION,
+PER-PROOF-RECORD and NATIVE-CHECK records. This is one call with nine rows,
+not nine independent votes or whole-book HIGH acceptance.
 
 ### RP004 and RP005 frozen: source convergence and constant-data Young flow
 
