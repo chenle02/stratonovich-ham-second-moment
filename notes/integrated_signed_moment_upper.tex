@@ -44,6 +44,15 @@ $F_\delta$ of Lemma~\ref{L:tube-actual-endpoint}.
 \end{lemma}
 
 \begin{proof}
+  We bound the signed score by completing the square in the control norm. We
+  then use the explicit physical Young growth bound and weighted block
+  estimates to compute the radial envelope constants, keeping their dependence
+  on $B$.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain a finite uniform ceiling for the signed
+  score.
   The mean is linear, so $\mathcal{T}_R0 = 0$. Its free form has nonnegative
   gradient energy and spectral bottom zero; thus $\operatorname{Rate}_R(0) = 0$.
   Proposition~\ref{P:uniform-rate-averaging} gives $\operatorname{Rate}_R(\Phi)
@@ -59,6 +68,10 @@ $F_\delta$ of Lemma~\ref{L:tube-actual-endpoint}.
   rank, positive control or convergence of $\mathcal{S}_{R_\delta}$ is assumed.
   The finite ceiling is auxiliary-parameter dependent and need not be sharp.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We compute the block-length dependence of the tube
+  envelope.
   For $\|a\|_{\delta,p} \le b_{\delta,B}$, $\|\Phi\| \le \rho$ set $v_m =
   \|a_m\|_\theta$ and $h_m = \|(\mathcal{M}_{\delta,B,R}\Phi)_m\|_\theta$. The
   quantitative physical bound~\eqref{E:uniform-product-growth}, already
@@ -75,6 +88,10 @@ $F_\delta$ of Lemma~\ref{L:tube-actual-endpoint}.
     \delta\sum h_m^\nu&\le(2/B)^{1-\nu/r}
     (32B^{3-1/r}C_{\rm mean}\rho)^\nu .
   \end{align*}
+  The mean contribution has total power $B^{1-(1-\nu/r)+(3-1/r)\nu}=B^{3\nu}$.
+  The residual contribution has power $B^{1-(1-\nu/p)}=B^{\nu/p}$. The
+  constant contribution is bounded using $B\delta n\le2$. This keeps the
+  polynomial dependence needed for the later tail cutoff explicit.
   The exponents are $p/\nu \ge 1$, $r/\nu > 1$, inputs nonnegative, $n = N+1 \ge
   2$, $\delta > 0$, and $\delta n \le 2/B$. Zeros and $p = \nu$ are legal. The
   first constant is $4C_{\rm gr}$. In the mean term the factors $B^{\nu/r}$ and
@@ -117,6 +134,14 @@ Lemma~\ref{L:tube-rayleigh-tail}.
 \end{proposition}
 
 \begin{proof}
+  We first identify the vanishing deterministic error on polynomial control
+  balls. We then split the exact radial integral at $M$: the bulk uses the
+  signed variational score, and the tail uses the explicit subquadratic
+  envelope.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We control the deterministic product error.
   The polynomial envelope and nonnegative rate make this supremum finite. It is
   an ordinary deterministic real number, not a random uncountable-radius
   supremum. At fixed $R$ the inner functions are continuous in controls and
@@ -129,6 +154,10 @@ Lemma~\ref{L:tube-rayleigh-tail}.
   bounds the inner limsup by a finite number, and $e_B \ge 0$ then
   proves~\eqref{E:signed-error-limit}.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We split the radial integral and keep both
+  prefactors.
   The exact Gaussian-enlargement bound is
   \[
     M_\delta\le\int_0^\infty\frac{\rho}{\delta}
@@ -141,6 +170,10 @@ Lemma~\ref{L:tube-rayleigh-tail}.
     +\mathcal{E}_{\delta,B,M}
     \le\mathcal{S}_{R_\delta}+\mathcal{E}_{\delta,B,M}.
   \]
+  For a control in the radius-$\rho$ ball, subtracting $\rho^2/2$ is no larger
+  than subtracting its own norm squared divided by two. This places every bulk
+  integrand below the same signed score plus the deterministic error. The
+  residual radial weight integrates to $M^2/(2\delta)$ on the bulk interval.
   Taking suprema and integrating $\rho/\delta$ over $[0,M]$ gives the first term
   of~\eqref{E:signed-finite-moment}, even if $M^2/(2\delta) < 1$. This used
   $\rho^2 \ge \|\Phi\|^2$, not equality or an optimizer. For the tail apply
@@ -163,6 +196,15 @@ Lemma~\ref{L:tube-rayleigh-tail}.
 \end{proposition}
 
 \begin{proof}
+  We choose a polynomial cutoff large enough for the quadratic tail to
+  dominate. We first take the small-parameter limit at fixed block length, and
+  only then send the block length to infinity, keeping the same endpoint
+  moment on the left.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We choose a polynomial tail cutoff and bound the
+  logarithm of the sum.
   Choose any $c_{\rm ball} > 0$ and $\kappa_{\rm ball} > 3\nu/(2-\nu)$, and set
   $M_B = c_{\rm ball}B^{\kappa_{\rm ball}}$. The cutoff in
   Proposition~\ref{P:signed-moment-bulk-tail} holds for all sufficiently large
@@ -182,6 +224,10 @@ Lemma~\ref{L:tube-rayleigh-tail}.
     +\delta\log(M_B^2/(2\delta)),\\
     &A_0+\eta_Bb_{\delta,B}^\nu-M_B^2/4+\delta\log4\}.
   \end{align*}
+
+  \medskip
+  \noindent\textit{Step 2.~}We take the small-parameter limit before the
+  block-length limit.
   At fixed $B$, $b_{\delta,B} \to 0$. All logarithmic normalizers vanish,
   including $\delta\log(M_B^2/(2\delta)) = \delta\log(M_B^2/2)-\delta\log\delta
   \to 0$. The last limit follows from $te^{-t} \le 2/t$ for $t = -\log\delta >
@@ -191,6 +237,11 @@ Lemma~\ref{L:tube-rayleigh-tail}.
     \limsup_{\delta\downarrow0}\delta\log M_\delta
     \le\max\{V_{\rm up}+e_B,\ A_0-M_B^2/4\}.
   \]
+  The first branch of the maximum contains the signed-score limsup and a
+  nonnegative error tending to zero with $B$. The second branch tends to
+  negative infinity because $M_B$ tends to infinity. Since the left side is
+  one fixed endpoint limsup and $V_{\rm up}$ is finite, the outer limit
+  retains only $V_{\rm up}$.
   The left side has no $B$: restart identifies every block product with this
   same $P_\delta$. Now let integer $B \to \infty$. We have $e_B \to 0$, $M_B \to
   \infty$ and finite $V_{\rm up} \ge 0$. This gives the asserted upper bound,
