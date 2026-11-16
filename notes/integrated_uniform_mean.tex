@@ -131,6 +131,12 @@ $C_\varepsilon$.
   here; there is no additional Fourier normalization factor. Integrating
   \eqref{E:uniform-mean-row-translation} with $h = \sqrt\varepsilon G_d$ bounds
   $\|(I-C_\varepsilon)k_R(z,w)\|$ by $M_h\varepsilon^{\beta/2}\|z\|_E\|w\|_E$.
+  Here $C_\varepsilon$ is selfadjoint on $H_{\mathrm{sp}}$, since its Fourier
+  multiplier is real; the row identity therefore gives
+  \[
+    \langle T_R(I-C_\varepsilon)qz,w\rangle_E
+    =\langle q,(I-C_\varepsilon)k_R(z,w)\rangle_{H_{\mathrm{sp}}}.
+  \]
   Selfadjointness in~\eqref{E:uniform-mean-row} proves
   \eqref{E:uniform-mean-heat}.
 
@@ -292,6 +298,10 @@ orthogonal projection, with $\pi_0 = 0$. Put
   \medskip
   \noindent\textit{Step 2.~}We decompose and bound the completed mean
   residual.
+  For $\Phi\in H_I$, Lemma~\ref{L:uniform-mean-tensor} applied to $A=C_t$
+  gives $\|U\Phi\|_{L^r(I;H_{\mathrm{sp}})}\le c_t\|\Phi\|_{H_I}$.
+  Applying~\eqref{E:uniform-spatial-mean} pointwise in time then bounds
+  $\|T_RU\Phi\|_{L^r(I;\mathcal{L}(E))}$ by $M_0c_t\|\Phi\|_{H_I}$.
   For fixed $R$, $T_R$ is bounded into the separable compact-operator space on
   $E$. Composition with the Bochner field $U\Phi$ gives the stated mean and its
   first bound. The exact decomposition is
@@ -394,6 +404,10 @@ make this closure separable. The last interval can be empty, in which case $X_N
     \langle Q_{\mathrm{full}}T_{\delta,m}k,h\rangle_{H_W}
     =\langle T_{\delta,m}k,i_IQ_{J,K}i_I^*h\rangle_{H_W}.
   \]
+  In the earlier construction $P_0=0$, so
+  $Y_{m,0}(f)=W(T_{\delta,m}f)$.
+  The preceding pairing therefore reduces the present covariance to that
+  unprojected identity with control $\Phi=Q_{J,K}i_I^*h\in H_I$.
   Directions perpendicular to $H_I$ disappear from this pairing. Apply the
   completed $J = 0$ identity \eqref{E:cameron-actual-covariance} to
   $Q_{J,K}i_I^*h$, and restrict its input and output to $E$. The free $F$ group
@@ -444,6 +458,10 @@ make this closure separable. The last interval can be empty, in which case $X_N
     \left(\sum_m t_m^p\right)^{1/p}
     \le n^{1/p-1/r}\left(\sum_m t_m^r\right)^{1/r}.
   \]
+  By~\eqref{E:uniform-completed-mean} and $\|i_I^*\|\le1$, the field
+  $\mathcal{M}_h=\mathcal{T}_RQ_{J,K}i_I^*h$ satisfies
+  $\|\mathcal{M}_h\|_{L^r}\le
+  [M_0\varepsilon_J+M_fc_tK^{-\beta}]\|h\|_{H_W}$.
   Raising nonnegative terms uses only positive powers, including when $t_m = 0$.
   The true partition gives $\sum_m t_m^r = \|\mathcal{M}_h\|_{L^r(I)}^r$ and
   $\delta n \le 2/B$. The exact $\delta$ weight therefore yields
