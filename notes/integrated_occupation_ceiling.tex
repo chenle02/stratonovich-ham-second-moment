@@ -43,6 +43,15 @@ below.
 \end{lemma}
 
 \begin{proof}
+  We complete the square map in the spatial covariance Hilbert space. Its norm
+  bound makes a measurable occupation an $L^2$ covariance-valued field, so the
+  temporal inclusion applies. We then identify the physical pairing with a
+  smooth control and use Hilbert Cauchy--Schwarz.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We define the continuous square map by Sobolev
+  approximation.
   Approximate $f$ in $H^1$ by real compact smooth $f_n$.
   Proposition~\ref{P:spatial-four-linear} gives
   \[
@@ -56,6 +65,10 @@ below.
   proves the first identities. The same difference bound, first for smooth
   approximants and then by passage to the limit, proves continuity of $Q$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We construct the occupation vector in the original
+  covariance space.
   Thus, $F_g(s) = Q(g_s)$ is strongly measurable. Writing $b_s = \|\nabla
   g_s\|_2^2$, the unit norm and $0 < \alpha/2 < 1$ give
   \[
@@ -68,6 +81,15 @@ below.
   representative independence follow from the continuous physical pairing on
   $(H^1)^2$. Absolute time integrability follows from the same Schur bound.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify its pairing with the original smooth
+  control.
+  Because each profile has unit $L^2$ norm, its spatial energy bound involves
+  only $b_s^{\alpha/2}$. Concavity on the unit time interval bounds the
+  integral of this power by $T(g)^{\alpha/2}$. Thus, the occupation vector is
+  constructed using the same bounded $L^2$ inclusion as smooth controls,
+  without assigning an instantaneous noise value to a rough profile.
   Choose one compact smooth $\chi$ equal to one on all spatial supports of
   $\Psi_t$. For real $f \in H^1$, smooth approximation gives
   \[
@@ -114,6 +136,13 @@ below.
 \end{proposition}
 
 \begin{proof}
+  We bound the occupation ratio with the original temporal row bound and show
+  it is positive. We then dilate the whole occupation class and optimize the
+  resulting scalar energy to recover the exact penalty dependence.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove a positive finite occupation ratio.
   A unit $H^1$ profile has positive gradient energy: a zero weak gradient makes
   it constant, and an $L^2$ constant on $\R^d$ is zero. Hence, $0 < T(g) <
   \infty$. Spatial covariance Cauchy--Schwarz gives $B_\Gamma(g_s^2,g_t^2) \le
@@ -126,6 +155,15 @@ below.
   $\mathcal{O}$ and has positive $A$ by Proposition~\ref{P:spatial-four-linear}.
   This proves positivity and finiteness of $C_{\rm occ}$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We optimize spatial dilation over the same
+  occupation class.
+  The ratio denominator is nonzero because the gradient energy of a unit $H^1$
+  profile is positive almost everywhere in time. A nonnegative measurable
+  function that is positive almost everywhere cannot have zero integral. The
+  class also assumes that integral is finite, so each displayed ratio is
+  defined before taking its supremum.
   The map $(U_\ell g)_s(x) = \ell^{d/2}g_s(\ell x)$ is an $H^1$ isomorphism
   preserving unit mass and strong measurability. It has inverse $U_{1/\ell}$ and
   is a bijection on $\mathcal{O}$. The physical Radon change of variables gives
@@ -160,6 +198,14 @@ below.
 \end{lemma}
 
 \begin{proof}
+  We choose near-maximizing Rayleigh tests from one countable dense family. A
+  first-index rule makes the chosen occupation strongly measurable; the
+  bounded potential controls its kinetic energy and allows the physical
+  covariance pairing estimate.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We choose a measurable near-maximizing occupation.
   The real $H^1$ space is separable, for example by its isometric embedding
   $f\mapsto(f,\nabla f)$ into a finite product of $L^2$ spaces. Compact smooth
   density therefore supplies a countable real family. Discard zero and normalize
@@ -175,6 +221,10 @@ below.
   $f_1$ on the remaining cells converge pointwise in $H^1$, proving strong
   measurability. A null-set representative may be filled by $f_1$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound its kinetic energy and integrate the
+  Rayleigh inequality.
   With $H_\Psi = \sup_{s,x}h_{\Psi,s}(x) < \infty$, the selection implies
   \[
     b(g_\varepsilon(s))
@@ -188,6 +238,11 @@ below.
     \le\langle\Psi,\rho_{g_\varepsilon}\rangle+\varepsilon
     \le\sqrt{v_\Psi A(g_\varepsilon)}+\varepsilon .
   \]
+  The first-index cells partition the time interval, so exactly one test is
+  selected at every time. The pointwise kinetic bound is independent of the
+  selected index and is integrable on the unit interval. Thus, the selection
+  belongs to the full occupation class before its covariance vector is used in
+  the integrated inequality.
   Time Cauchy--Schwarz on the unit interval gives $I_\Psi^2 \le
   \int_I\lambda_{\Psi,s}^2\ud s$. This
   proves~\eqref{E:occupation-rayleigh-selection}. No eigenvector, continuum
@@ -224,6 +279,15 @@ display parameter $b$ does not change the temporal exponent $a$.
 \end{theorem}
 
 \begin{proof}
+  We first optimize the kinetic budget in the near-occupation inequality to
+  bound the integrated rate by a power of the original variance. We then
+  optimize that variance in the reward-minus-cost expression and rewrite the
+  result using the occupation energy.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We optimize the kinetic budget before removing the
+  selection error.
   Fix $\Psi$ and write $v = v_\Psi$, $C = C_{\rm occ}$ and $\beta = \alpha/4$.
   Lemma~\ref{L:occupation-rayleigh-selection} gives $I_\Psi^2 \le
   \sqrt{vC}T^\beta-T+\varepsilon$ for some $T > 0$. Bound it by the supremum
@@ -236,6 +300,15 @@ display parameter $b$ does not change the temporal exponent $a$.
     I_\Psi\le Dv^{1/q},\qquad
     D=\sqrt{q/4}(\alpha/4)^{\alpha/(2q)}C^{1/q}.
   \]
+  At the kinetic critical point, $T_*=\beta\sqrt{vC}\,T_*^\beta$. Therefore,
+  the maximum of the reward minus $T$ is $(1-\beta)\sqrt{vC}\,T_*^\beta$.
+  Substituting $\beta=\alpha/4$ and $1-\beta=q/4$ gives the stated power
+  $(vC)^{2/q}$. Taking the nonnegative square root yields the displayed bound
+  for $I_\Psi$.
+
+  \medskip
+  \noindent\textit{Step 2.~}We optimize the variance and keep the exact
+  Gaussian half-cost.
   The scalar function $\mathfrak{c} Dv^{1/q}-v/2$ vanishes at zero, tends to
   minus infinity, and has strictly decreasing derivative. Its unique positive
   maximum is at $v_* = (2\mathfrak{c} D/q)^{q/k}$, with value $kv_*/2$. Direct
@@ -243,6 +316,11 @@ display parameter $b$ does not change the temporal exponent $a$.
   \[
     (2D/q)^q=q^{-q/2}(\alpha/4)^{\alpha/2}C .
   \]
+  At the variance critical point, $\mathfrak c Dv_*^{1/q}=qv_*/2$, so the
+  score is $kv_*/2$. The preceding power identity contains
+  $4^{-\alpha/2}=2^{-\alpha}$. Absorbing the outside factor $1/2$ into the
+  $1/k$ power adds $2^{-k}$; since $k+\alpha=3$, the combined denominator is
+  $2^3=8$.
   Since $k+\alpha = 3$, the maximum is precisely $U_{\mathfrak{c}}$
   in~\eqref{E:occupation-score-ceiling}, with denominator eight. Substitution
   of~\eqref{E:raw-occupation-ratio} gives the second form, retaining the factor
@@ -271,6 +349,10 @@ display parameter $b$ does not change the temporal exponent $a$.
 \end{corollary}
 
 \begin{proof}
+  We combine the spatial ratio estimate with the occupation ceiling for the
+  common-energy bracket. We then compare the scalar maps by strict convexity,
+  keeping the kinetic penalty normalization explicit.
+
   Insert $C_{\rm occ} \le K_0R_{\mathrm{sp}}$ into
   \eqref{E:occupation-score-ceiling} and use \eqref{E:spatial-energy-map}. This
   gives the upper bracket; the lower is \eqref{E:spatial-static-energy-score}
@@ -292,6 +374,10 @@ display parameter $b$ does not change the temporal exponent $a$.
     \frac{\mathfrak{c}^mF_a(\mathcal{E}_\zeta^{\mathcal{O}})}{U_{\mathfrak{c}}}
     =\exp\!\left(\frac{\Delta-(\alpha/2)\log(2\zeta)}{k}\right).
   \]
+  In the logarithmic ratio, the positive energy factor cancels, leaving only
+  the scalar expression $\Delta/k$. The penalty factor remains in the second
+  ratio as $(\alpha/2)\log(2\zeta)$. It disappears at $\zeta=1/2$, which is
+  why strict convexity alone gives the comparison at that normalization.
   At $\zeta = 1/2$ this and the ceiling prove the strict comparison. At $\zeta =
   1$ the comparison is not universally favorable. For $\alpha = 5/4,a = 1/2,d =
   2$,
