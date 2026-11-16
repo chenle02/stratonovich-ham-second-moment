@@ -350,3 +350,32 @@ The DOI and final links go into the video descriptions, which stay editable, so 
 - Prerequisite, not started: no structured, approved label -> model-scope source exists. The M1-M6 register is prose, in the README and the scope fields. A regex finds M-numbers in 19 of the 101 rows, but it is incomplete, because some rows name their model in words only.
   - Before any rollout across the book, #22 builds a curated sidecar keyed by label (models plus a one-line qualifier), reads every row and has it reviewed. This waits for Le to choose the badge style.
   - Until then, unknown scope fails closed: no marker, never "full".
+
+### Lean-marker draft map (2026-11-15; #16 asked for it as a held draft that does not depend on Le's style choice)
+- The map is at `private/lean-markers/lean-marker-map.draft.json`, with a README beside it. Article `4e50f437`, sha256 `cb1defdf566c1b476258858a41de286e5cbaa748c25af1608c5f6fad0a289cce`. It is a HELD, UNREVIEWED draft.
+- Source: 101 rows keyed by `paper.label`, from the companion `coverage.yaml` at dev `74a04f57`. Class and conclusion are identical to the L14 gate record.
+- Markers by class × conclusion:
+
+  | Marker | Rows |
+  |---|---|
+  | full statement | 48 |
+  | narrower statement | 16 |
+  | supplied inputs | 1 |
+  | partial, with inputs | 34 |
+  | outside (unmarked) | 2 |
+
+- 0 HOLD rows. 26 rows name a registered model; 14 of them are "full statement".
+- Models come only from M-codes named in the coverage text, from the README/ledger register consumers, and from reading the modules. No model is inferred from claim ids.
+- The four rows first held were resolved by reading the modules:
+  - C:static-interaction and P:static-phase-all-orders carry M2 through FockSandwichModel;
+  - L:interval-contractions carries M2 through HermiteFock/FockForm;
+  - none of the three uses M1;
+  - T:white-moment-bounds has no registered model: joint representatives are a narrowing, not M5 or M6.
+- The map contains no TeX line numbers and no scope strings.
+- Still needed before production:
+  1. an independent review of the map;
+  2. Le's choice of badge style;
+  3. #24's integration;
+  4. the final words from the exact v0.10.0 coverage at the re-pin.
+
+  Until then, unknown or unsettled entries stay unmarked and are never "full".
