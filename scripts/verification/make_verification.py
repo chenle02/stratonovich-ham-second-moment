@@ -188,7 +188,7 @@ def build(cfg, read_rev, tex_rev, current):
             sys.exit(f"group {g}: source-size cell not found")
     nwords = WORDS[len(names)]
     doc = re.sub(r"The \w+ groups have \d+ rows in total[ .].*?(?=\n\n## Lean column legend)",
-                 lambda m: f"The {nwords} groups have {len(res)} rows in total ({' + '.join(str(gc[g]) for g in names)}). The Group column of the results table gives each row's group. Row counts are those of this ledger; source sizes count the TeX lines of each chapter and its included files at manuscript revision `{tex_rev}` ({cfg['source_size_rule']}). The introduction theorems `T:intro-upper` and `T:intro-second-moment` restate `T:full-upper` (group I) and `T:intrinsic-second-moment` (group III); they are rows of group I, where they are stated, and checking them means checking that they agree with the theorems they restate.",
+                 lambda m: f"The {nwords} groups have {len(res)} rows in total ({' + '.join(str(gc[g]) for g in names)}). The Group column of the results table gives each row's group. Row counts are those of this ledger; source sizes count the TeX lines of each chapter and its included files at development revision `{tex_rev}` of the private development repository ({cfg['source_size_rule']}). The introduction theorems `T:intro-upper` and `T:intro-second-moment` restate `T:full-upper` (group I) and `T:intrinsic-second-moment` (group III); they are rows of group I, where they are stated, and checking them means checking that they agree with the theorems they restate.",
                  doc, flags=re.S)
     other_classes = ", ".join(sorted({cov[e]["class"] for e in other}))
     # Where the Lean column comes from. A released companion is described by
@@ -201,6 +201,7 @@ def build(cfg, read_rev, tex_rev, current):
         lean_source = cfg["lean_source_unreleased"].format(**facts)
     else:
         lean_source = f"""The Lean column is taken from the `coverage.yaml` (class, conclusion and claims of each row) of the public Lean companion, release `{cfg['companion_release']}` (DOI {cfg['companion_doi']}), which is byte-identical to the file of the companion's development repository at its commit `{coverage_commit}`, {cfg['coverage_commit_note'].format(verified=verified)}. The companion's `provenance/DEVELOPMENT.md` maps both development commits to the public release. `{verified}` is where wave {cfg['lean_wave']} was confirmed and both lean-pkg receipts were cut ({rec['comparator']['theorems']:,} theorem claims compared, {rec['lower']['claims_checked']:,} claims, {rec['lower']['sorry_count']} `sorry`, standard axioms only); Le closed the wave-{cfg['lean_wave']} gate on {cfg['lean_gate_date']}. Its manuscript anchor is revision `{anchor}`, so the {kinds['No-go']} no-go results of Chapter 12, added later, have no Lean claim. The companion's `docs/statement-ledger.md` at release `{cfg['companion_release']}` gives the declarations behind each claim. Every theorem, proposition, lemma or corollary label in that coverage file exists at `{tex_rev}`."""
+    tex_clause = "that revision" if tex_rev == read_rev else f"development revision `{tex_rev}`"
     notes = f"""## Notes
 
 - Results: {len(res)} ({', '.join(f"{kinds[k]} {PLURAL[k]}" for k in PLURAL)}).
@@ -208,7 +209,7 @@ def build(cfg, read_rev, tex_rev, current):
 - `T:first` and `T:crude` restate results of the cited source; their titles give the citation key and pinpoint.
 - The companion's coverage file also maps {len(other)} labels that are not numbered theorems, propositions, lemmas or corollaries (displayed equations and a remark), class {other_classes}. They have no rows here.
 - {cfg['readability_note']}
-- Manuscript read at revision `{read_rev}`; the book's TeX there is as at `{tex_rev}`. {lean_source}
+- Manuscript read at development revision `{read_rev}` of the private development repository; the book's TeX there is as at {tex_clause}. {lean_source}
 """
     doc = re.sub(r"## Notes\n.*\Z", lambda m: notes, doc, flags=re.S)
     return doc
