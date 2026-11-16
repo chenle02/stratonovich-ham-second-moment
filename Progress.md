@@ -103,7 +103,9 @@ nine-row statement/proof inventory were checked. Fresh native configuration
 preflight verifies DeepSeek V4 Pro and all global/agent tools denied. The
 requested cap is 65,536 and timeout 3,600 seconds; one fresh pure session,
 no coordinator retry, continuation or fallback. Worker QA supports the nine
-arguments; no independent result is claimed before dispatch.
+arguments. RP003 launched fresh at `2026-11-16T06:16:50.426991+00:00`
+as `readable-operator-driver-918de09b2b2a489c9cde166e25e45e1d`; it is
+RUNNING, with no independent result yet. Safe custody is in its STATUS.json.
 
 The older publication-frontier headings below are dated snapshots; they do
 not authorize restarting their old completed calls or override this narrow
