@@ -34,11 +34,19 @@ infinite Gaussian series or time path is constructed in this section.
   \medskip
   \noindent\textit{Step 1.~}We prove the two scalar inequalities.
   If $v > 0$, divide~\eqref{E:gaussian-weighted-power} by $v$ and put $t = u/v$.
-  The function $\theta t+1-\theta-t^\theta$ decreases to zero at one and then
-  increases, by its derivative $\theta(1-t^{\theta-1})$. Continuity covers $t =
-  0$; if $v = 0$ the inequality is immediate. For $0 < q < L$, apply this with
-  $u = |x|^L$, $v = |y|^L$ and $\theta = q/L$. The endpoint cases $q = 0,L$ are
-  identities, with the ordinary integer convention $a^0 = 1$.
+  After division, the desired inequality is $t^\theta \le \theta t+1-\theta$.
+  Thus, it suffices to show that the difference of the right and left sides is
+  nonnegative.
+  The function $\theta t+1-\theta-t^\theta$ has derivative
+  $\theta(1-t^{\theta-1})$. Since $\theta-1 < 0$, this derivative is negative
+  for $0 < t < 1$ and positive for $t > 1$. The function therefore has minimum
+  zero at $t = 1$. Continuity covers $t = 0$; if $v = 0$ the inequality is
+  immediate.
+
+  For $0 < q < L$, apply this with $u = |x|^L$, $v = |y|^L$ and $\theta =
+  q/L$. The left side becomes $|x|^q|y|^{L-q}$, and the coefficients on the
+  right are $q/L$ and $(L-q)/L$. The endpoint cases $q = 0,L$ are identities,
+  with the ordinary integer convention $a^0 = 1$.
 
   \medskip
   \noindent\textit{Step 2.~}We prove the finite sequence inequality.
@@ -46,13 +54,22 @@ infinite Gaussian series or time path is constructed in this section.
   $\ell^m$ and $\ell^{m/(m-1)}$ norms. If either norm vanishes, the result is
   immediate. Apply~\eqref{E:gaussian-weighted-power} with $\theta = 1/m$ to the
   corresponding normalized powers and sum; the sum of products is at most one.
-  Undo the normalization.
+  More explicitly, at each sequence position use the $m$th power of the first
+  normalized entry for $u$ and the $m/(m-1)$th power of the second for $v$.
+  Then $u^{1/m}v^{1-1/m}$ is the product of the two entries. The sums of $u$
+  and $v$ are both one, so the right side sums to $1/m+(1-1/m) = 1$.
+  Multiplying by the two original norms undoes the normalization and proves
+  finite H\"older.
 
   \medskip
   \noindent\textit{Step 3.~}We prove the expectation bound.
   Finally, $F = 0$ gives $Z = 0$ almost surely. If $F >
   0$, apply \eqref{E:gaussian-weighted-power} to $u = Z/F$, $v = 1$ and $\theta
-  = r$, and integrate. The right side has expectation one. This proves
+  = r$, and integrate. The right side has expectation one.
+  Indeed, the pointwise bound is $(Z/F)^r \le rZ/F+1-r$. Its right side is
+  integrable because $\E Z = F < \infty$. Hence, the left side is integrable
+  as well, and $\E(Z/F)^r \le 1$. Multiplication by $F^r$ gives the stated
+  bound. This proves
   Lemma~\ref{L:gaussian-scalar-powers}.
 \end{proof}
 
@@ -84,12 +101,23 @@ infinite Gaussian series or time path is constructed in this section.
   \[
     \sum_{i,j}|b_{ij}|^2\lambda_j^q\lambda_i^{L-q}.
   \]
+  To obtain this sum, the $i$th diagonal entry of the product is summed over
+  the intermediate index $j$. The diagonal powers of $Y$ contribute
+  $\lambda_j^q$ and $\lambda_i^{L-q}$, and $b_{ij}b_{ji} = |b_{ij}|^2$. All
+  these terms are real.
   Bound each product by its absolute value and use
   \eqref{E:gaussian-integer-power}. After interchanging $i,j$, the two resulting
   sums agree because $|b_{ij}| = |b_{ji}|$. Each equals
   $\sum_{i,j}|b_{ij}|^2|\lambda_i|^L = \operatorname{Tr}(B^2|Y|^L)$. The two
   weights sum to one, proving \eqref{E:gaussian-trace-word}. No commutation of
   $B$ and $Y$ is used.
+
+  In detail, the scalar bound gives a term with weight $q/L$ containing
+  $|\lambda_j|^L$, and a term with weight $(L-q)/L$ containing
+  $|\lambda_i|^L$. Interchanging the two indices in the first sum changes
+  neither $|b_{ij}|^2$ nor the set of indices. Also, the $i$th diagonal entry
+  of $B^2$ is $\sum_j|b_{ij}|^2$. These observations identify both sums with
+  the same trace.
 
   \medskip
   \noindent\textit{Step 2.~}We bound the trace involving $D$.
@@ -105,9 +133,20 @@ infinite Gaussian series or time path is constructed in this section.
   then give the equality after summing over $i$.
   For completeness, the convexity step follows from $t^m \ge s^m+ms^{m-1}(t-s)$
   for $s,t \ge 0$, obtained by differentiating the difference. Average this
-  inequality with $s$ equal to the weighted mean. Now apply finite H\"older from
+  inequality with $s$ equal to the weighted mean.
+  For each fixed $i$, take $s = d_i$ and average over $t = \theta_j$ with
+  weights $|U_{ij}|^2$. The linear term vanishes because
+  $\sum_j|U_{ij}|^2(\theta_j-d_i) = 0$. Thus, $d_i^m \le
+  \sum_j|U_{ij}|^2\theta_j^m$. Summing over $i$ gives the displayed bound.
+
+  Now apply finite H\"older from
   Lemma~\ref{L:gaussian-scalar-powers} to $\sum_i d_i|\lambda_i|^{2m-2}$. Since
-  $(2m-2)m/(m-1) = 2m$, the last display proves \eqref{E:gaussian-trace-holder},
+  $(2m-2)m/(m-1) = 2m$, we obtain the factors in
+  \eqref{E:gaussian-trace-holder}.
+  The first H\"older factor is $(\sum_i d_i^m)^{1/m}$, bounded by
+  $(\operatorname{Tr}D^m)^{1/m}$. The second is
+  $(\sum_i|\lambda_i|^{2m})^{(m-1)/m}$, which is
+  $(\operatorname{Tr}|Y|^{2m})^{(m-1)/m}$. This proves the claimed inequality,
   including zero sums. This proves Lemma~\ref{L:gaussian-trace-bounds}.
 \end{proof}
 
@@ -154,6 +193,12 @@ to fix the normalization and retain both variance operators.
   terms. It applies to complex polynomials through their real and imaginary
   parts; absolute polynomial integrability justifies Fubini.
 
+  For a fixed value of the other Gaussian coordinates, the derivative of the
+  density in the $k$th coordinate is minus that coordinate times the density.
+  Moving this derivative onto $P$ gives the positive sign in the identity. At
+  both ends of the real line, the polynomial times the Gaussian density tends
+  to zero, so no boundary term remains.
+
   \medskip
   \noindent\textit{Step 2.~}We estimate the Hermitian moment.
   For $m \ge 2$, put $F = \E\operatorname{Tr}Y^{2m}$ and $L = 2m-2$. Write
@@ -163,6 +208,11 @@ to fix the normalization and retain both variance operators.
     F=\sum_k\sum_{q=0}^{L}
     \E\operatorname{Tr}(B_kY^qB_kY^{L-q}).
   \]
+  Here $\partial_kY = B_k$. In the product rule, $q$ counts the factors $Y$
+  before the differentiated factor and $L-q$ counts those after it. The
+  leading $B_k$ comes from the expression for the trace before
+  differentiation. This explains both the order of the matrices and the range
+  $0 \le q \le L$.
   The eigenbasis calculation above shows these traces are real. The
   differentiated polynomial is real by conjugation and trace cyclicity. No
   derivative of a spectral absolute value or measurable choice of an eigenbasis
@@ -177,14 +227,26 @@ to fix the normalization and retain both variance operators.
   positions of the derivative. The second applies the trace H\"older bound.
   Here $\operatorname{Tr}|Y|^{2m} = \operatorname{Tr}Y^{2m}$, and the last
   inequality is the expectation bound in Lemma~\ref{L:gaussian-scalar-powers}.
+  The matrix $D$ is positive because each $B_k^2$ is positive. Also,
+  $\operatorname{Tr}|Y|^{2m}$ is nonnegative and has finite expectation $F$.
+  Thus, the expectation bound applies with $r = (m-1)/m$, which lies strictly
+  between zero and one.
   If $F = 0$ the conclusion is immediate. Otherwise divide by its positive
   fractional power and raise to $m$ to obtain
   \begin{equation}\label{E:finite-hermitian-gaussian}
     \E\operatorname{Tr}Y^{2m} \le (2m-1)^m\operatorname{Tr}D^m.
   \end{equation}
+  The division just used gives $F^{1/m} \le
+  (2m-1)(\operatorname{Tr}D^m)^{1/m}$. Raising both nonnegative sides to $m$
+  yields the displayed estimate.
   For $m = 1$, independence gives directly $\E\operatorname{Tr}Y^2 =
   \sum_k\operatorname{Tr}B_k^2 = \operatorname{Tr}D$, proving the same formula
   as equality.
+
+  For this endpoint, expand the two factors of $Y$. Products involving
+  distinct Gaussian coordinates have expectation zero by centering and
+  independence; products with the same coordinate have expectation one. Only
+  $\sum_k B_k^2$ remains.
 
   \medskip
   \noindent\textit{Step 3.~}We pass to rectangular matrices.
@@ -194,6 +256,10 @@ to fix the normalization and retain both variance operators.
     Y=\begin{pmatrix}0&X\\X^*&0\end{pmatrix},\qquad
     D=\operatorname{diag}(V_{\rm out},V_{\rm in}).
   \]
+  Each $B_k$ is Hermitian. Squaring it gives diagonal blocks $A_kA_k^*$ and
+  $A_k^*A_k$, so its sum of squares is exactly the displayed $D$. Likewise,
+  $Y^2$ has diagonal blocks $XX^*$ and $X^*X$. Its $m$th power therefore has
+  blocks $(XX^*)^m$ and $(X^*X)^m$.
   Finite entrywise summation proves $\operatorname{Tr}(UV) =
   \operatorname{Tr}(VU)$ for compatible rectangular matrices. Since $(XX^*)^m =
   X(X^*X)^{m-1}X^*$, it follows that
@@ -202,6 +268,9 @@ to fix the normalization and retain both variance operators.
     \operatorname{Tr}D^m=\operatorname{Tr}V_{\rm out}^m+
     \operatorname{Tr}V_{\rm in}^m.
   \]
+  The two diagonal blocks of $Y^{2m}$ have equal trace by the rectangular
+  cyclic identity. Thus, their sum is twice the Schatten norm power, even when
+  their dimensions differ.
   Substitute in~\eqref{E:finite-hermitian-gaussian}, divide by two and take the
   $p$th root. This proves~\eqref{E:finite-gaussian-average}. For positive $V$,
   spectral diagonalization gives $\|V^{1/2}\|_{S_p}^p = \operatorname{Tr}V^m$,
@@ -457,6 +526,10 @@ s_j(K)^p$.
   \]
   The cutoff maps are bounded by the preceding lemma. Thus, the only
   factor we need to approximate is the torus inclusion.
+  The rightmost Bessel map takes $L^2(\R^d)$ unitarily to
+  $H^{\sigma+\gamma}(\R^d)$, and the leftmost takes $H^\sigma(\R^d)$ unitarily
+  to $L^2(\R^d)$. The bounded factorization agrees with the original operator
+  on Schwartz functions. Their density gives the unique bounded extension.
   In the weighted torus coordinates, $\mathcal{I}_\gamma$ is diagonal with
   entries $\langle\kappa_k\rangle^{-\gamma}$. Let $Q_n$ retain $|k|_\infty \le
   n$. Its rank is $(2n+1)^d$, and
@@ -464,10 +537,25 @@ s_j(K)^p$.
     \|(1-Q_n)\mathcal{I}_\gamma\|
     \le [1+(2\pi/L)^2(n+1)^2]^{-\gamma/2}\longrightarrow0.
   \]
+  The weighted input coefficient has weight
+  $\langle\kappa_k\rangle^{\sigma+\gamma}$ and the output coefficient has
+  weight $\langle\kappa_k\rangle^\sigma$. The output weight divided by
+  the input weight is
+  $\langle\kappa_k\rangle^{-\gamma}$. Outside the retained cube, at least one
+  integer coordinate has absolute value at least $n+1$, so $|\kappa_k| \ge
+  (2\pi/L)(n+1)$. Taking the supremum of the remaining diagonal entries proves
+  the norm bound.
   Replacing the inclusion by $Q_n\mathcal{I}_\gamma$ gives finite-rank $K_n$
   converging in norm to $K_{\chi,\sigma,\gamma}$. This proves compactness:
   finite-dimensional images have finite nets of each positive radius, and norm
   approximation transfers those nets to the limiting image of the unit ball.
+
+  Indeed, the image of the unit ball under a finite-rank bounded operator is
+  bounded in a finite-dimensional space. It has a finite net of any prescribed
+  positive radius. Choose the approximation error smaller than that radius.
+  The same centers then approximate the limiting image with at most twice that
+  radius. This makes the limiting image totally bounded, and its closure is
+  compact in the complete Hilbert space.
 
   \medskip
   \noindent\textit{Step 2.~}We compare approximation rank with
@@ -487,6 +575,10 @@ s_j(K)^p$.
   The strict rank inequality lets us use $K_n$ to bound the $j$th singular
   value. The finitely many smaller indices will be treated by the operator
   norm.
+  For the rank comparison, $j \ge 3^d$ implies $j^{1/d} \ge 3$, hence
+  $j^{1/d}/2+1 < j^{1/d}$. For the error, the diagonal tail is at most
+  $(L/(2\pi))^\gamma(n+1)^{-\gamma}$. Multiplying by the two cutoff norms
+  gives the stated bound.
   The second estimate follows from $n+1 > j^{1/d}/4$. For a compact operator,
   every rank less than $j$ approximation $F$ satisfies $s_j(K) \le \|K-F\|$: the
   span of the first $j$ right singular vectors contains a unit vector in $\ker
@@ -496,9 +588,18 @@ s_j(K)^p$.
     C_{\chi,\sigma,\gamma,d}
     =M\max(3^\gamma,(2L/\pi)^\gamma).
   \]
+  The kernel vector exists by the rank bound: the restriction of $F$ to a
+  $j$-dimensional space cannot be injective if its rank is less than $j$. On
+  that unit vector, $K-F$ equals $K$. For the small indices, $j < 3^d$ gives
+  $3^\gamma j^{-\gamma/d} > 1$, so the same constant also covers the
+  operator-norm bound.
+
   \medskip
   \noindent\textit{Step 3.~}We sum the singular-value bound.
-  Finally, $\sum_j j^{-p\gamma/d}$ converges for $p\gamma > d$. This proves
+  Finally, $\sum_j j^{-p\gamma/d}$ converges for $p\gamma > d$.
+  Raise the singular-value bound to $p$ and sum over $j$. The resulting series
+  bounds $\sum_j s_j(K)^p$, which is the defining Schatten norm power. This
+  proves
   Proposition~\ref{P:cutoff-singular-values}.
 \end{proof}
 
@@ -561,10 +662,23 @@ and define
     P_\chi=\operatorname{diag}(A_{1/2},A_{-1/2}),\qquad
     P_\chi^*=\operatorname{diag}(A_{-1/2},A_{1/2})=UP_\chi U.
   \]
+  In the adjoint calculation, moving each Bessel power through the inner
+  product reverses the order of the three factors. Real multiplication by
+  $\chi$ is self-adjoint, so the reversed product is
+  $\Lambda^{-\sigma}\chi\Lambda^\sigma = A_{-\sigma}$. This calculation is
+  first made on Schwartz functions, where all factors act. Since both
+  resulting operators are bounded, approximation in $L^2$ extends the
+  inner-product identity to all vectors. The displayed block formulas then
+  show boundedness of $P_\chi$ and its swap identity.
+
   \medskip
   \noindent\textit{Step 2.~}We obtain compactness and Schatten membership.
   The swap commutes with $D_\gamma$, giving the claimed factor identity. The
   blocks of $K_{\rm out}$ are $K_{\chi,1/2,\gamma}$ and $K_{\chi,-1/2,\gamma}$.
+  Both diagonal entries of $D_\gamma$ are the same multiplier, so swapping the
+  two entries commutes with it. Hence, $P_\chi^*D_\gamma = UP_\chi D_\gamma
+  U$. This identifies $K_{\rm in}$ with the unitary conjugate of $K_{\rm
+  out}$.
   Proposition~\ref{P:cutoff-singular-values} gives compactness and $S_p$
   membership. The singular values of their direct sum form the multiset union,
   so
@@ -573,15 +687,31 @@ and define
     =\|K_{\chi,1/2,\gamma}\|_{S_p}^p+
     \|K_{\chi,-1/2,\gamma}\|_{S_p}^p.
   \]
+  For a block diagonal operator, its adjoint times itself is block diagonal as
+  well. The positive eigenvalues are therefore those of the two blocks,
+  counted with multiplicity. Taking their square roots gives the asserted
+  multiset union of singular values.
   Unitary conjugation preserves them.
 
   \medskip
   \noindent\textit{Step 3.~}We compute the two traces.
+  The products $K_{\rm out}K_{\rm out}^*$ and $K_{\rm in}K_{\rm in}^*$ are
+  positive and compact. Their positive eigenvalues are the squared singular
+  values of the corresponding factors.
   Finally, the positive eigenvalues of
   $KK^*$ and $K^*K$ agree with multiplicity: on an eigenspace with eigenvalue
   $\lambda > 0$, the maps $K/\sqrt\lambda$ and $K^*/\sqrt\lambda$ are inverse
-  isometries. Zero eigenvalues contribute nothing to the trace. Summing these
-  scalar powers proves~\eqref{E:compact-envelope-traces}. This proves
+  isometries. Indeed, $K$ takes the $\lambda$-eigenspace of $K^*K$ into that
+  of $KK^*$, because applying $KK^*$ after $K$ equals applying $K$ after
+  $K^*K$. On this eigenspace, $K$ multiplies squared norms by $\lambda$. The
+  corresponding statement for $K^*$ gives the inverse map after division by
+  $\sqrt\lambda$.
+
+  Zero eigenvalues contribute nothing to the trace. Raising each squared
+  singular value to $p/2$ gives its $p$th power. The sum is finite by the
+  Schatten membership already proved, and the two factors have the same
+  singular values. Thus, summing gives~\eqref{E:compact-envelope-traces}. This
+  proves
   Proposition~\ref{P:compact-two-envelopes}.
 \end{proof}
 
@@ -600,6 +730,12 @@ is recorded explicitly.
 \end{lemma}
 
 \begin{proof}
+  We first prove compactness using the square root of $A$. Once compactness is
+  known, we compare Rayleigh quotients to order the eigenvalues, and then sum
+  their powers.
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove compactness.
   Let $Q_n$ be finite spectral projections of $B$ whose tails tend to zero in
   norm. Then
   \[
@@ -607,16 +743,37 @@ is recorded explicitly.
     =\|(1-Q_n)A(1-Q_n)\|
     \le\|(1-Q_n)B(1-Q_n)\|\longrightarrow0.
   \]
+  The equality is the Hilbert-space identity that the squared norm of an
+  operator equals the norm of its product with its adjoint. The inequality
+  follows by applying $A \le B$ between the two projections. These products
+  are positive, and order between positive operators implies order of their
+  norms.
   The finite-rank approximants here are $Q_nA^{1/2}$; the displayed norm
   is precisely their error.
   Thus, $A^{1/2}$ is a norm limit of finite-rank operators and is compact, as is
-  $A$. For compact positive operators, the max-min formula for $\lambda_j$
+  $A$, since $A = A^{1/2}A^{1/2}$ is a product of a compact and a
+  bounded operator.
+
+  \medskip
+  \noindent\textit{Step 2.~}We compare the eigenvalues and traces.
+  For compact positive operators, the max-min formula for $\lambda_j$
   follows in an eigenbasis: the span of the first $j$ eigenvectors gives the
   lower bound for the supremum over $j$-dimensional subspaces of their minimum
   Rayleigh quotient, while every such subspace meets the orthogonal complement
   of the first $j-1$ eigenvectors, giving the upper bound. Compare the Rayleigh
-  quotients of $A$ and $B$ to obtain the eigenvalue inequality. Sum the ordered
-  scalar powers to prove \eqref{E:compact-positive-trace}. No inequality $A^t
+  quotients of $A$ and $B$ to obtain the eigenvalue inequality.
+  On each fixed $j$-dimensional subspace, every unit vector has its Rayleigh
+  quotient for $A$ bounded by that for $B$. Taking the infimum within that
+  subspace, and then the supremum over such subspaces, preserves the
+  inequality. The eigenbasis argument also covers zero eigenvalues: if fewer
+  than $j$ positive eigenvalues exist, every such subspace meets their
+  orthogonal complement and the infimum there is zero.
+
+  Since taking a positive scalar power preserves order, the eigenvalue
+  comparison gives $\lambda_j(A)^t \le \lambda_j(B)^t$. Sum first
+  over finitely many indices and then pass to the increasing limit. The finite
+  trace of $B^t$ bounds that limit. This proves
+  \eqref{E:compact-positive-trace}. No inequality $A^t
   \le B^t$ is asserted. This proves Lemma~\ref{L:compact-positive-order}.
 \end{proof}
 
@@ -646,6 +803,10 @@ is recorded explicitly.
 
   \medskip
   \noindent\textit{Step 1.~}We bound the two variances.
+  For each summand, $P_\chi Z_\ell = Z_\ell$ implies $P_\chi Z_\ell
+  Z_\ell^*P_\chi^* = Z_\ell Z_\ell^*$. Summing gives the output identity
+  below. For the input identity, use $Z_\ell P_\chi = Z_\ell$ and its adjoint
+  to obtain $P_\chi^*Z_\ell^*Z_\ell P_\chi = Z_\ell^*Z_\ell$.
   Left localization gives $V_{\rm out} = P_\chi V_{\rm out}P_\chi^*$. Apply
   positive congruence to the output bound
   in~\eqref{E:localized-finite-hypotheses} to get $V_{\rm out} \le CP_\chi
@@ -658,12 +819,26 @@ is recorded explicitly.
   bounds with $t = p/2$. If $C = 0$, both variances and every $Z_\ell$ vanish,
   so all assertions are immediate.
 
+  Here $p \ge 2$ ensures $t = p/2 \ge 1$, as required by the positive-order
+  lemma. The condition $p\gamma > d$ makes the compact envelopes have finite
+  trace power. Multiplication by $C$ multiplies that trace power by $C^{p/2}$.
+  Thus, the variance eigenvalues have summable $p/2$ powers, giving $S_{p/2}$
+  membership. In the zero case, each positive summand is bounded by the zero
+  variance, so it vanishes; hence each $Z_\ell$ vanishes.
+
   \medskip
   \noindent\textit{Step 2.~}We obtain compactness of each summand.
+  Every summand of the output variance is positive. Subtracting one summand
+  leaves a positive sum, which gives the order comparison needed below.
   For each $\ell$, $Z_\ell Z_\ell^* \le V_{\rm out}$ is compact by the same
   lemma. Its finite spectral projections $Q_n$ give $\|(1-Q_n)Z_\ell\|^2 =
   \|(1-Q_n)Z_\ell Z_\ell^*(1-Q_n)\| \to 0$. Hence, $Z_\ell$ is compact. Its
   singular values squared are the nonzero eigenvalues of $Z_\ell Z_\ell^*$.
+  The approximating operators are $Q_nZ_\ell$, whose ranges are finite
+  dimensional. The displayed error tends to zero, proving their norm
+  convergence. The positive-order lemma also bounds each eigenvalue of
+  $Z_\ell Z_\ell^*$ by the corresponding one of $V_{\rm out}$. Taking
+  $p/2$ powers converts the former to $p$th powers of singular values.
   Comparing with $V_{\rm out}$ and summing proves $Z_\ell \in S_p$ with
   $\|Z_\ell\|_{S_p}^p \le \operatorname{Tr}V_{\rm out}^{p/2}$. This proves
   Proposition~\ref{P:localized-finite-variance}.
@@ -700,11 +875,21 @@ self-adjoint or a projection.
     \le\Pi_nV_{\rm out}\Pi_n,
   \]
   since the difference is $\sum_\ell\Pi_nZ_\ell(1-\Pi_n)Z_\ell^*\Pi_n \ge 0$.
+  Each term in this difference is positive: its quadratic form is the squared
+  norm of $(1-\Pi_n)Z_\ell^*\Pi_n$ applied to the test vector. Thus, inserting
+  the middle projection can only decrease the variance.
   The input inequality is identical with adjoints interchanged. Compact max-min
   also gives $\lambda_j(\Pi_nV\Pi_n) \le \lambda_j(V)$ for positive compact $V$,
   since Rayleigh subspaces inside $\operatorname{ran}\Pi_n$ form a subset of all
   subspaces. Thus, both variance trace powers of these matrices are bounded by
   $C^{p/2}\|K_{\rm out}\|_{S_p}^p$.
+
+  For a vector in $\operatorname{ran}\Pi_n$, the quadratic forms of
+  $\Pi_nV\Pi_n$ and $V$ agree. The max-min comparison therefore applies to
+  every eigenvalue of the compression, with zeros appended afterwards. Apply
+  this first to compare the compressed variance to the compression of the full
+  variance, and then to compare that compression to the full variance. Raising
+  the eigenvalues to $p/2$ and summing gives the trace bound used here.
 
   \medskip
   \noindent\textit{Step 2.~}We apply the finite matrix estimate.
@@ -715,6 +900,9 @@ self-adjoint or a projection.
     \E\|X_n\|_{S_p}^p
     \le(p-1)^{p/2}C^{p/2}\|K_{\rm out}\|_{S_p}^p.
   \end{equation}
+  Indeed, each of the two trace powers is bounded by the same quantity. Adding
+  them and dividing by two leaves that quantity unchanged. Raising the matrix
+  moment bound to $p$ gives exactly the displayed estimate.
   No factor two is added by this average.
 
   \medskip
@@ -725,20 +913,44 @@ self-adjoint or a projection.
   Strong convergence of $\Pi_n$ implies $\Pi_nX\Pi_n \to X$ in operator norm:
   approximate $X$ by a finite-rank $F$, use uniform strong convergence on the
   finite-dimensional ranges of $F$ and $F^*$, and control the remainder using
-  $\|\Pi_n\| \le 1$. Singular values are norm-Lipschitz. Indeed, their formula
+  $\|\Pi_n\| \le 1$.
+  More explicitly, the difference between $X$ and $\Pi_nX\Pi_n$ is bounded in
+  norm by $2\|X-F\|+\|F-\Pi_nF\Pi_n\|$. The last difference is
+  $(1-\Pi_n)F+\Pi_nF(1-\Pi_n)$. Its first term tends to zero by uniform
+  convergence on the range of $F$. For the second term, take the adjoint and
+  use uniform convergence on the range of $F^*$. Choose $F$ with arbitrarily
+  small error and then let $n$ tend to infinity.
+
+  Singular values are norm-Lipschitz. Indeed, their formula
   \[
     s_j(A)=\inf_{\dim L<j}
     \sup_{v\in L^\perp,\ \|v\|=1}\|Av\|
   \]
-  follows from compact singular vectors and gives $s_j(A) \le s_j(B)+\|A-B\|$,
+  follows by choosing $L$ to be the span of the first $j-1$ right singular
+  vectors for the upper bound. For the lower bound, if $s_j(A) > 0$, the span
+  of the first $j$ right singular vectors contains a unit vector perpendicular
+  to any $L$ of dimension less than $j$. On that vector, the norm of $A$ is at
+  least $s_j(A)$. If $s_j(A) = 0$, the lower bound is immediate.
+  Apply the triangle inequality inside the supremum in this formula, then
+  take the infimum over $L$. This gives $s_j(A) \le s_j(B)+\|A-B\|$,
   and the reverse bound by interchanging $A,B$. Hence, $s_j(X_n) \to s_j(X)$ for
   each $j$. Fatou for the nonnegative singular-value sum gives $\|X\|_{S_p}^p
   \le \liminf_n\|X_n\|_{S_p}^p$, allowing extended infinity. These variables are
-  measurable: the finite Gaussian coordinate map into operators is
-  norm-continuous, each singular value is continuous, and the norm power is
-  their nonnegative measurable sum. Fatou in probability
+  measurable as follows. Each $Z_\ell$ is bounded, and there are finitely many
+  Gaussian coordinates, so changing those coordinates changes $X$ continuously
+  in operator norm. The Lipschitz bound makes each singular value continuous
+  in these coordinates. Partial sums of their nonnegative $p$th powers are
+  measurable, and their increasing limit is measurable, including when it is
+  infinite. Fatou in probability
   and~\eqref{E:finite-gaussian-compression-bound} prove the bound and
-  almost-sure finiteness. No $S_p$-Bochner convergence is assumed. This proves
+  almost-sure finiteness.
+  The first use of Fatou is with counting measure over the singular-value
+  index for each fixed coordinate vector. The second is with Gaussian
+  probability measure, giving $\E\|X\|_{S_p}^p \le
+  \liminf_n\E\|X_n\|_{S_p}^p$. The uniform finite bound on the right implies
+  that the nonnegative extended norm power is finite almost surely. Taking the
+  $p$th root gives the stated estimate. No $S_p$-Bochner convergence is
+  assumed. This proves
   Corollary~\ref{C:finite-gaussian-operators}.
 \end{proof}
 
