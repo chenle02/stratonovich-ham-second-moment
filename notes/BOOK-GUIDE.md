@@ -2,10 +2,10 @@
 
 The long document is now a book-style technical companion. The short reader
 remains an article and the entry point. Both retain their existing filenames.
-The book has **472 pages, 12 chapters and seven appendices**: four proof
+The book has **474 pages, 12 chapters and seven appendices**: four proof
 appendices, Appendix E on the AI work, Appendix F on Lean coverage and
 Appendix G on how far each result has been checked.
-Chapter 12 presents numbered obstructions and failed approaches. The reader has **28 pages**. The full pair therefore contains 500 pages.
+Chapter 12 presents numbered obstructions and failed approaches. The reader has **28 pages**. The full pair therefore contains 502 pages.
 
 The main proof runs continuously through the numbered chapters. The appendices
 retain finite-order calculations, direct bounds with additional hypotheses,
@@ -30,9 +30,9 @@ mathematical record was deleted to make the structure appear shorter.
 | B | Direct upper bounds and static interpolation | 339–358 |
 | C | Covariance comparisons in higher dimensions | 359–381 |
 | D | Static comparisons and the clock obstruction | 382–396 |
-| E | The AI work in numbers | 397–404 |
-| F | What Lean checks | 405–423 |
-| G | How far each result has been checked | 424–433 |
+| E | The AI work in numbers | 397–406 |
+| F | What Lean checks | 407–425 |
+| G | How far each result has been checked | 426–435 |
 
 The front matter has a Preface, Abstract, multilevel contents, illustrations
 and a guide to the argument. After the bibliography, the six-page List of

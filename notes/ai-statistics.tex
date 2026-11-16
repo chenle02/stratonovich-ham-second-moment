@@ -333,3 +333,124 @@ changes no grade, supplies no missing review and does not turn scoped
 evidence into whole-book scientific acceptance. It selects how the record is
 disclosed; it is not a public-release act or the final release accept file.
 The dated observation and decision metadata are in \aiEvidenceUpdatesPath.
+
+\section*{The re-reads after the readability pass}
+
+After the reviews counted above, the proofs were rewritten so that their steps
+are easier to follow. Statements and existing displayed formulas were kept, apart from the
+separately approved corrections described below. Inside the
+proofs, sentences were added, removed or reordered. Of the \aiRereadProofs{}
+proofs in the \aiRereadFiles{} technical files, \aiRereadChanged{} changed and
+\aiRereadUnchanged{} stayed identical byte for byte. In
+\aiRereadStatementsChanged{} statements a misprinted word was corrected. The
+\aiRereadReaderEditionProofs{} proofs of the reader edition are not counted
+here. The earlier reviews stay bound to the text they received, and they do not
+cover the sentences added later.
+
+Every one of the \aiRereadProofs{} proofs, changed or not, was then sent
+again, the old text beside the new, to DeepSeek V4 Pro. The editor was a GPT
+model, so the reader came from a different family. Each call was asked to read
+both texts in full, to rebuild the deductions, and to say whether a step or a
+qualification had been lost. All calls were made on \aiRereadDay{}.
+Table~\ref{Tab:ai-rereads} gives the counts. This series is separate from the
+\aiRuns{} review runs and the \aiLaterAttempts{} recovered attempts above, and
+its numbers must not be added to theirs. It changes no earlier grade, and it is not an acceptance of the book. These
+scoped re-reads do not supply the missing whole-book cold read or the skeptic
+synthesis of Chapter~\ref{S:book-no-go}.
+
+\begin{table}[!ht]
+  \centering
+  \caption[Re-reads of the proofs after the readability pass]{Re-reads of the
+    proofs after the readability pass. The last three rows are our own check
+    of what the reports wrote, not grades given by the reader.}
+  \label{Tab:ai-rereads}
+  \begin{tabular}{@{}lr@{}}
+    \toprule
+    Calls made                                              & \aiRereadCalls \\
+    \quad with a report                                     & \aiRereadReports \\
+    \quad without a report (the output limit was reached)   & \aiRereadNoReport \\
+    Reports graded PASS                                     & \aiRereadPass \\
+    Reports graded PASS WITH NOTES                          & \aiRereadPassNotes \\
+    Proofs sent, counting every repeat                      & \aiRereadPairsSent \\
+    Scopes prepared but never sent                          & \aiRereadNeverSent \\
+    \midrule
+    Reports that cover the final text                       & \aiRereadCurrent \\
+    \quad graded PASS                                       & \aiRereadCurrentPass \\
+    \quad graded PASS WITH NOTES                            & \aiRereadCurrentPassNotes \\
+    Earlier calls, on text that changed later or was sent again
+    & \aiRereadEarlier \\
+    Proofs of the final text covered, each by one report    & \aiRereadProofs \\
+    \quad old and new text both reported as read in full    & \aiRereadComplete \\
+    \midrule
+    Report's reasoning checked for the proof                & \aiRereadChecked \\
+    Checked, but resting on a parent result with a stated limit
+    & \aiRereadConditional \\
+    Report's reasoning partial for the proof                & \aiRereadPartial \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+A grade belongs to a call, not to a proof. All \aiRereadReports{} reports
+stated high confidence for their call, and none gave a confidence for a single
+proof. The \aiRereadPairsSent{} proofs sent include repeats: a file was sent
+again when its text changed after a call or when a call had to be repeated, so
+this is not a number of distinct proofs. The call without a report has no grade; it is not counted as a pass or
+as an inconclusive review, and its proofs were read in later calls.
+
+The last three rows of the table are the authors' side of the work. The
+number \aiRereadPartial{} there counts proofs and the number
+\aiRereadPassNotes{} above counts reports; that they are equal is a
+coincidence. For each
+proof we checked the reasoning that the report wrote down. \emph{Checked}
+means that the deductions in the report hold as written for that proof. It is
+a local check; it does not prove that everything the proof depends on is
+sound. For \aiRereadConditional{} proofs the check rests on a parent result
+whose own check has a stated limit. These fall into
+\aiRereadConditionalGroups{} groups and repeat their parents' limits; they
+are not further gaps. \emph{Partial} means that a deduction the report was
+asked to give is missing or does not hold as written in the report. It does
+not by itself show an error in the book. Our checks of the book's text found
+no new mathematical defect in these proofs. Before the final calls, four added sentences that stated more than the proof
+gives or misdescribed a calculation were corrected (the rank-one witness,
+``canceling half'', the strictly positive profile, and the complex-vector
+components), and sentence boundaries were repaired. For one of the partial proofs the central argument was
+checked and only further derivations that the call had been asked for are
+missing. In one report the requested word-for-word comparison of a corrected
+statement was wrong, although its mathematics was checked; that comparison
+was not obtained. This is a separate limit and is not one of the partial
+proofs.
+
+Some usage is unknown. In \aiRereadRestarted{} calls the client program
+restarted an interrupted answer by itself, and the logs kept the usage of the
+final answer only. Of these, \aiRereadRestartedHeld{} happened before the
+author prospectively allowed automatic transport recovery under the later
+policy; they keep the status \emph{held}, and
+none of them covers the final text. The other one was allowed in advance, and
+its report covers \aiRereadRestartedCurrentProofs{} proofs of the final text.
+The recorded final answers used \aiRereadTokens{} tokens, of which
+\aiRereadTokensCached{} were cached input. The client's own cost counter for
+them sums to \aiRereadCostCounter{} in the client's units; it is not an
+invoice, and its currency was not verified. The usage of the
+interrupted answers, the whole cost and the number of requests that reached
+the provider are unknown, and no estimate is given.
+
+Three kinds of help in this pass were not reviews and are counted nowhere
+above. The editor, a GPT model, rewrote the proofs under written rules, and
+each file had to pass mechanical checks that existing statements, displayed
+formulas, labels and references were kept, with separately approved
+original-text changes recorded as exceptions. The
+\aiRereadStatementsChanged{} statement corrections, the other repairs of the
+original text and the removal of unused setup in the proof of
+Proposition~\ref{P:symplectic-block-mean} were separate edits of the original
+text, made at the author's decision and not by the editor. In \aiRereadReaderRuns{} read-only runs,
+Claude Fable~5.2 listed the places where a reader has to stop and the
+passages that repeat; \aiRereadStopPoints{} such places were listed and given to the editor to
+fill. These runs were editorial aids and were not counted as scientific
+reviews. GPT helpers assisted in checking the reports'
+reasoning, which is an author-side check and not an independent vote.
+
+The data are in \path{reviews/2026-11-16-readable-final-source/}. They are
+bound to the text of the proofs at development commit
+\texttt{\aiRereadSource} of the private development repository. The
+editorial record is
+\path{scripts/ai-statistics/reviews/readability-pass-2026-11-16.json}.

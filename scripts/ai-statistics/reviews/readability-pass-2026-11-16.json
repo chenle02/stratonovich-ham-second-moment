@@ -1,0 +1,36 @@
+{
+  "note": "Editorial side of the readability pass of 2026-11-15 and 2026-11-16, for Appendix E. These are editorial aids, not reviews: none is counted among review runs, recovered attempts or re-reads. The counts of proofs, calls and reports are NOT here; they come from reviews/2026-11-16-readable-final-source/.",
+  "recorded": "2026-11-16",
+  "editor": {
+    "family": "GPT",
+    "role": "rewrote proof prose under written rules; every file passed a mechanical gate (statements, displays, labels and references unchanged) before it was built and committed"
+  },
+  "reader_runs": {
+    "count": 11,
+    "model": "Claude Fable 5.2",
+    "family": "Claude",
+    "role": "read-only runs that listed places where a reader has to stop, and passages that repeat; every listed stop point was given to the editor to fill; editorial aids, not counted as scientific reviews",
+    "stop_points_listed": 53,
+    "stop_points_by_run": {
+      "chapter 9": 6,
+      "chapter 4": 3,
+      "chapter 5": 2,
+      "chapter 6": 5,
+      "chapter 7": 11,
+      "chapter 8": 6,
+      "chapter 10 (first part)": 4,
+      "chapter 10 (second part)": 5,
+      "chapter 11": 2,
+      "main file (first part)": 6,
+      "main file (second part)": 3
+    }
+  },
+  "report_checking_helpers": {
+    "family": "GPT",
+    "role": "helped the closure agent check the written reasoning of the re-read reports; an author-side check, not an independent vote"
+  },
+  "reader_edition_proofs_not_counted": 4,
+  "evidence": "rules, gate, step maps and editorial exceptions under private/readable-proofs/ of the private development repository; the readers' lists are held privately",
+  "original_text_edits": "The three statement corrections, the other original-text repairs and the removal of unused setup in the proof of P:symplectic-block-mean were separate edits of the original text made at the author's decision, not by the editor.",
+  "path_note": "selection.json names this file relative to scripts/ai-statistics/, like its other entries; the appendix prints the same file with its path from the repository root."
+}

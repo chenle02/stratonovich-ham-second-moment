@@ -631,6 +631,103 @@ def infrastructure(out):
                      if days["skills"][1] == days["wiki"][1] else "in " + days["skills"][1]))
 
 
+def rereads(out):
+    """Macros for the section on the re-reads after the readability pass.
+
+    Every figure is recounted from the rows of the two frozen files and must
+    equal the files' own summary; a difference stops the generator.
+    """
+    cov = json.load(open(selected("reread_coverage")))
+    att = json.load(open(selected("reread_attempts")))
+    aid = json.load(open(selected("readability_pass")))
+    if cov["summary"] != att["summary"]:
+        raise SystemExit("re-read files: the two summaries differ")
+    sm, rows, attempts = cov["summary"], cov["proof_rows"], att["attempts"]
+    by_id = {a["record_id"]: a for a in attempts}
+    current = sorted({r["selected_record_id"] for r in rows})
+    status = collections.Counter(r["author_math_reconstruction_status"] for r in rows)
+    changed = sum(r["proof_environment_sha256"] != r["baseline_proof_environment_sha256"]
+                  for r in rows)
+    grades = collections.Counter(a["raw_grade"] for a in attempts)
+    cur_grades = collections.Counter(by_id[i]["raw_grade"] for i in current)
+    restarted = [a for a in attempts if a["observed_generation_starts"] > 1]
+    held = [a for a in restarted if a["protocol_pending"]]
+    allowed = [a for a in restarted if not a["protocol_pending"]]
+    complete = sum(r["reported_flags"]["old_reading"] == "COMPLETE"
+                   and r["reported_flags"]["new_reading"] == "COMPLETE" for r in rows)
+    tokens = sm["available_finish_token_sums_only"]
+    checks = [
+        (len(rows), sm["current_proof_pairs"]), (len(cov["files"]), sm["technical_files"]),
+        (len(current), sm["selected_source_current_records"]),
+        (len(attempts), sm["actual_coordinator_attempts"]),
+        (sum(a["report_present"] for a in attempts), sm["nonempty_public_reports"]),
+        (sum(a["assigned_proof_pairs"] for a in attempts), sm["attempt_assigned_proof_pairs"]),
+        (grades["PASS"], sm["raw_grade_counts"]["PASS"]),
+        (grades["PASS_WITH_NOTES"], sm["raw_grade_counts"]["PASS_WITH_NOTES"]),
+        (grades[None], sm["raw_grade_counts"]["NO_PUBLIC_REPORT"]),
+        (dict(status), sm["local_author_math_counts"]),
+        (complete, sm["current_reported_complete_old_new_readings"]),
+        (len(restarted), sm["observed_starts_without_finish_usage"]),
+        (sorted(a["record_id"] for a in held), sorted(att["protocol_limits"]["old_unapproved_holds"])),
+        (sorted(a["record_id"] for a in allowed),
+         sorted(att["protocol_limits"]["prospectively_authorized_observed_recovery"])),
+        (len(att["prepared_not_launched"]), len(sm["prepared_unlaunched_ids"])),
+        (sum(a["raw_global_confidence"] == "high" for a in attempts),
+         sum(a["report_present"] for a in attempts)),
+        (sm["whole_book_accepted"], False), (sm["whole_invocation_usage_cost_cap"], None),
+        (any(by_id[i]["protocol_pending"] for i in current), False),
+        (sum(by_id[i]["assigned_proof_pairs"] for i in current), len(rows)),
+        (len(sm["literal_comparison_limits"]), 1), (len(sm["clock_obstruction_core_vs_contract"]), 1),
+        (status["PARTIAL"], grades["PASS_WITH_NOTES"]),  # the text calls this equality a coincidence
+    ]
+    for k, (got, want) in enumerate(checks):
+        if got != want:
+            raise SystemExit(f"re-read files: recount {k} gives {got!r}, the summary says {want!r}")
+    m = lambda name, n: out.append(macro(name, fmt_int(n) if isinstance(n, int) else n))
+    m("aiRereadFiles", len(cov["files"]))
+    m("aiRereadProofs", len(rows))
+    m("aiRereadChanged", changed)
+    m("aiRereadUnchanged", len(rows) - changed)
+    m("aiRereadStatementsChanged", sum(not r["statement_unchanged"] for r in rows))
+    m("aiRereadReaderEditionProofs", aid["reader_edition_proofs_not_counted"])
+    m("aiRereadCalls", len(attempts))
+    m("aiRereadReports", sum(a["report_present"] for a in attempts))
+    m("aiRereadNoReport", grades[None])
+    m("aiRereadPass", grades["PASS"])
+    m("aiRereadPassNotes", grades["PASS_WITH_NOTES"])
+    m("aiRereadPairsSent", sum(a["assigned_proof_pairs"] for a in attempts))
+    m("aiRereadNeverSent", len(att["prepared_not_launched"]))
+    m("aiRereadCurrent", len(current))
+    m("aiRereadCurrentPass", cur_grades["PASS"])
+    m("aiRereadCurrentPassNotes", cur_grades["PASS_WITH_NOTES"])
+    m("aiRereadEarlier", len(attempts) - len(current))
+    m("aiRereadComplete", complete)
+    m("aiRereadChecked", status["CHECKED"])
+    m("aiRereadConditional", status["CHECKED_CONDITIONAL_PARENT"])
+    m("aiRereadConditionalGroups", len(cov["conditional_parent_groups"]))
+    m("aiRereadPartial", status["PARTIAL"])
+    m("aiRereadRestarted", len(restarted))
+    m("aiRereadRestartedHeld", len(held))
+    m("aiRereadRestartedAllowed", len(allowed))
+    m("aiRereadRestartedCurrentProofs",
+      sum(by_id[r["selected_record_id"]]["observed_generation_starts"] > 1 for r in rows))
+    m("aiRereadTokens", tokens["reported_total"])
+    m("aiRereadTokensCached", tokens["cache_read"])
+    m("aiRereadCostCounter", f"{float(sm['available_finish_cost_counter_sum_only_not_invoice']):.2f}")
+    day = lambda key, f: dt.datetime.fromisoformat(f(a[key] for a in attempts if a[key]))
+    first, last = day("actual_started_utc", min), day("actual_finished_utc", max)
+    if first.date() != last.date():
+        raise SystemExit("re-read files: the text names one day")
+    m("aiRereadDay", first.strftime("%B~%-d, %Y"))
+    m("aiRereadSource", cov["source_revision"][:8])
+    m("aiRereadReaderRuns", aid["reader_runs"]["count"])
+    runs = aid["reader_runs"]
+    if (len(runs["stop_points_by_run"]) != runs["count"]
+            or sum(runs["stop_points_by_run"].values()) != runs["stop_points_listed"]):
+        raise SystemExit("readability-pass record: the per-run stop points do not add up")
+    m("aiRereadStopPoints", runs["stop_points_listed"])
+
+
 def main():
     import argparse
     ap = argparse.ArgumentParser(description="Generate notes/ai-statistics-data.tex")
@@ -883,6 +980,7 @@ def main():
     out.append(macro("aiMilestones", str(len(milestones))))
 
     infrastructure(out)
+    rereads(out)
     closeout(out, args.ledger)
     review_evidence(out, args.ledger)
 
