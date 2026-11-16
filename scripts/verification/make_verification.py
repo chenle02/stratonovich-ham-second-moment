@@ -42,6 +42,19 @@ def tex_lines(rel):
         yield p, i, line
 
 
+def source_sizes(main_tex, groups):
+    """TeX lines of each group's chapters and their included files; figure drawings are not counted."""
+    group_of = {c: g for g, cs in groups for c in cs}
+    chapter, n = None, Counter()
+    for f, _, l in tex_lines(main_tex):
+        m = re.match(r"\s*\\chapter\*?\{[^}]*\}(?:\\label\{([^}]*)\})?", l)
+        if m:
+            chapter = m.group(1)
+        if chapter in group_of and "/figures/" not in f:
+            n[group_of[chapter]] += 1
+    return n
+
+
 def opt_arg(s):
     s = s.lstrip()
     if not s.startswith("["):
@@ -167,9 +180,15 @@ def build(cfg, read_rev, tex_rev, current):
     for g in names:
         doc = re.sub(r"(\| " + g + r"\. [^|]*\|[^|]*\|[^|]*\| )\d+( \| )`[^`]*`( \| )`[^`]*`",
                      lambda m: f"{m.group(1)}{gc[g]}{m.group(2)}`{first[g]}`{m.group(3)}`{last[g]}`", doc)
+    sizes = source_sizes(cfg["main_tex"], cfg["groups"])
+    for g in names:
+        doc, k = re.subn(r"(\| " + g + r"\. [^\n]*\| )≈[\d,]+ lines( \|)",
+                         lambda m: f"{m.group(1)}≈{round(sizes[g], -2):,} lines{m.group(2)}", doc)
+        if k != 1:
+            sys.exit(f"group {g}: source-size cell not found")
     nwords = WORDS[len(names)]
     doc = re.sub(r"The \w+ groups have \d+ rows in total[ .].*?(?=\n\n## Lean column legend)",
-                 lambda m: f"The {nwords} groups have {len(res)} rows in total ({' + '.join(str(gc[g]) for g in names)}). The Group column of the results table gives each row's group. Row counts are those of this ledger; source sizes count the TeX lines of each chapter and its included files {cfg['source_size_clause']}. The introduction theorems `T:intro-upper` and `T:intro-second-moment` restate `T:full-upper` (group I) and `T:intrinsic-second-moment` (group III); they are rows of group I, where they are stated, and checking them means checking that they agree with the theorems they restate.",
+                 lambda m: f"The {nwords} groups have {len(res)} rows in total ({' + '.join(str(gc[g]) for g in names)}). The Group column of the results table gives each row's group. Row counts are those of this ledger; source sizes count the TeX lines of each chapter and its included files at manuscript revision `{tex_rev}` ({cfg['source_size_rule']}). The introduction theorems `T:intro-upper` and `T:intro-second-moment` restate `T:full-upper` (group I) and `T:intrinsic-second-moment` (group III); they are rows of group I, where they are stated, and checking them means checking that they agree with the theorems they restate.",
                  doc, flags=re.S)
     other_classes = ", ".join(sorted({cov[e]["class"] for e in other}))
     # Where the Lean column comes from. A released companion is described by
@@ -188,6 +207,7 @@ def build(cfg, read_rev, tex_rev, current):
 - Lean: {leanc['same-full']} formalized in full, {leanc['same-narrow']} formalized with a narrower conclusion, {leanc['inputs-full']} with every conclusion and inputs supplied, {leanc['inputs']} with steps checked, {leanc['outside']} outside Lean, {leanc['none']} with no Lean claim.
 - `T:first` and `T:crude` restate results of the cited source; their titles give the citation key and pinpoint.
 - The companion's coverage file also maps {len(other)} labels that are not numbered theorems, propositions, lemmas or corollaries (displayed equations and a remark), class {other_classes}. They have no rows here.
+- {cfg['readability_note']}
 - Manuscript read at revision `{read_rev}`; the book's TeX there is as at `{tex_rev}`. {lean_source}
 """
     doc = re.sub(r"## Notes\n.*\Z", lambda m: notes, doc, flags=re.S)

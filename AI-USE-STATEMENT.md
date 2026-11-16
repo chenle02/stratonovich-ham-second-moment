@@ -78,6 +78,23 @@ was written with her.
   the manuscript was reviewed by AI and accepted by the author through
   wave L14; this is not human verification. Appendix F states each result's
   scope, modelling choices and assumptions.
+- **Readability pass and re-reads.** After the reviews above, the proofs were
+  rewritten so that their steps are easier to follow. A GPT model working
+  within Amy did the rewriting under written rules: inside a proof, sentences
+  could be added, removed or reordered, while statements, displayed formulas,
+  labels and references were kept. Separately, at the author's decision, the
+  wording of three statements was corrected, a few damaged sentences of the
+  original text were repaired, and one unused setup paragraph was removed. A
+  Claude model listed the places where a reader would have to stop; it was an
+  editorial aid, not a review. Every one of the 249 proofs of the technical
+  files was then re-read by DeepSeek V4 Pro, with the old and the new text side
+  by side: 59 calls and 58 reports (44 pass and 14 pass with notes, each at
+  high confidence for the call), of which 38 cover the final text. These are
+  scoped checks that the arguments were preserved. They do not upgrade the
+  inconclusive whole-book cold read, replace the missing Chapter 12 skeptic
+  synthesis, or accept the book. In four calls the client program restarted an
+  interrupted answer, so part of their usage is unknown. Appendix E gives the
+  counts and their limits.
 - **Human checking.** Part I (the reading edition) has not yet been checked
   line by line by a human reader. The technical notes have not yet been
   checked line by line by a human reader. Independent checks by readers are
