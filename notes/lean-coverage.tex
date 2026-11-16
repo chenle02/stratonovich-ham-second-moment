@@ -14,9 +14,13 @@ release link and DOI will be added when that version is published.
 For each listed result, the entry identifies what Lean proves and what
 remains outside that proof. Read the result reference and its title as one
 entry. Where the conclusion is narrower, the entry states which part is
-proved and which part is not yet formalized. Where inputs are supplied,
-the entry lists the mathematical facts assumed by the Lean proof. These
-inputs are assumptions of that proof, not additional facts it establishes.
+proved and which part is not yet formalized. Where a checked statement assumes an analytic fact, the entry names it as
+a supplied input. Where the checked steps take no additional analytic
+input, the entry states their assumptions and describes work left outside
+Lean. A supplied input is a hypothesis of the Lean proof, not an additional
+conclusion it establishes.
+
+\section{How to read the entries}\label{S:lean-how-to-read}
 
 Every result with a row here, except those listed as not formalized, carries
 a small link in the left margin of the text, beside its heading or its
@@ -29,9 +33,10 @@ proves only the conclusion specified in the entry; the remaining part is
 not yet formalized.
 \emph{Supplied} means that every conclusion is proved with analytic inputs
 supplied as hypotheses.
-\emph{Partial} means that Lean proves only the stated steps, parts or
-narrower form using the listed supplied inputs; it does not prove the whole
-result as stated in the book. The entry names the inputs.
+\emph{Partial} means that Lean checks only the stated steps, parts or
+narrower form, using the listed supplied inputs, if any; it does not prove
+the whole result as stated in the book. The entry states which hypotheses
+the checked steps take and which analytic work is left outside Lean.
 Lean checks the formal statements. Their match with the statements of this
 book was reviewed by AI models and has not been verified by a person. A
 result without a link carries no Lean claim; this does not mean that the
@@ -54,6 +59,8 @@ hypothesis: its proof and its application to the book's objects are not
 certified merely by using it in Lean. The entries distinguish these inputs
 from the conclusions Lean proves. They do not certify the book's main
 stochastic moment theorems end to end.
+
+\section{How the match with the book was reviewed}\label{S:lean-match-review}
 
 The statements added in wave L9, and the changes that wave made to existing
 entries of the coverage record, were checked against the book in eight
@@ -132,6 +139,9 @@ Open items in the record:
 These reviews are not a human verification, and they do not check the analytic
 inputs that stay outside Lean.
 
+\Needspace{10\baselineskip}
+\section{How the Lean package was checked}\label{S:lean-package-checks}
+
 \ifdefined\lcHaveReceipts
 \begin{wrapfigure}{r}{0.19\textwidth}
   \vspace{-\baselineskip}
@@ -163,6 +173,8 @@ from the development state that follows it, which drops two claims that
 name Lean-generated declarations.
 \fi
 
+\section{The results}\label{S:lean-results}
+
 In short: \lcSummary{} The \lcRows{} labelled results fall into \lcGroups{} groups.
 
 \lcTables
@@ -170,6 +182,8 @@ In short: \lcSummary{} The \lcRows{} labelled results fall into \lcGroups{} grou
 \medskip
 Besides these rows, the companion checks \lcUnlabelled{} further computations
 that do not correspond to a single numbered result of the book.
+
+\section{Counts and growth}\label{S:lean-counts}
 
 \ifdefined\lcHaveCompletion
 \Needspace{22\baselineskip}

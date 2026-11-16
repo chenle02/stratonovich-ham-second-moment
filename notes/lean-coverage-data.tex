@@ -3,7 +3,7 @@
 \newcommand{\lcDate}{November~13, 2026}
 \newcommand{\lcTime}{2:56~p.m.\ (UTC$-$5)}
 \newcommand{\lcRows}{101}
-\newcommand{\lcSummary}{With the manuscript's hypotheses, forty-eight labelled results are formalized with every conclusion and sixteen with a narrower conclusion; \lcRef{Proposition}{P:tube-rayleigh-transfer}{10.2.3} with every conclusion and two inputs supplied; steps, parts or narrower forms of 34 further labelled results with named inputs supplied; \lcRef{Theorem}{T:full-upper}{3.3.8} and \lcRef{Theorem}{T:intrinsic-second-moment}{11.2.6} are outside Lean.}
+\newcommand{\lcSummary}{With the manuscript's hypotheses, forty-eight labelled results are formalized with every conclusion and sixteen with a narrower conclusion; \lcRef{Proposition}{P:tube-rayleigh-transfer}{10.2.3} with every conclusion and two inputs supplied; steps, parts or narrower forms of 34 further labelled results; the entries distinguish supplied hypotheses, where present, from analytic work left outside Lean; \lcRef{Theorem}{T:full-upper}{3.3.8} and \lcRef{Theorem}{T:intrinsic-second-moment}{11.2.6} are outside Lean.}
 \newcommand{\lcUnlabelled}{2239}
 \newcommand{\lcGroups}{five}
 \newcommand{\lcTables}{%
@@ -180,7 +180,7 @@
 \lcEntryEnd
 \lcEntry{\lcRef{Lemma}{L:spatial-static-controls}{8.2.2}}{Smooth temporal controls}
 \lcPart{Lean proves}{$\lambda$ is the square root of the supremum of the real Rayleigh quotient, and $I_\Psi$, $v_\Psi$ are given by their integral formulas; \lcRef{Equation}{E:spatial-static-score}{8.2.2} is proved both in the form that every number below the bound is exceeded by some admissible score and in its supremum form, with nothing supplied.}
-\lcPart{Not yet formalized}{The identification of these quantities with $\sqrt{-E_s}$ and $\E W(\Psi)^2$ is not formalized.}
+\lcPart{Not yet formalized}{The identifications of $\lambda$ with $\sqrt{-E_s}$ and of $v_\Psi$ with $\E W(\Psi)^2$ are not formalized.}
 \lcEntryEnd
 \lcEntry{\lcRef{Proposition}{P:spatial-smooth-ratio}{8.2.4}}{The finite smooth spatial ratio}
 \lcPart{Lean proves}{\lcRef{Equation}{E:spatial-smooth-score}{8.2.4}, with nothing supplied, both in the form that every $y$ below the bound is exceeded by some $I_\Psi-v_\Psi/2$ and as a bound on the supremum, with $\lambda$ the square root of the real Rayleigh supremum and $v_\Psi$ given by its integral formula. $R_0<\infty$ is proved by \lcRef{Lemma}{L:spatial-fourier-bound}{8.2.3}.}
@@ -225,7 +225,7 @@
 \lcInput{2}{\texttt{TubeTail}: $\mathbb{P}(d_\delta(X)>r)\le e^{-r^2/(2\delta)}$ for $r\ge0$ (second part of \lcRef{Equation}{E:tube-attained-radius}{10.2.4}, proved there from the imported Gaussian isoperimetric theorem of Borell and Sudakov--Tsirelson; nonzero law only)}
 \lcEntryEnd
 
-\lcCategory{Steps checked, not the result itself; analytic inputs supplied as hypotheses.}{34}
+\lcCategory{Steps checked, not the result itself; analytic inputs either supplied as hypotheses or left outside Lean.}{34}
 \lcEntry{\lcRef{Lemma}{L:white-test}{2.2.1}}{White-space test}
 \lcPart{Lean proves}{With nothing supplied, every value of \lcRef{Equation}{E:white-test}{2.2.1} and $A_1(t)=2c_0t^{3-\alpha_0}$ for the diagram integrals of the model M4 (white noise, $d=1$, $\alpha_0<1$); the statements about $\E X_1^2$, $\E X_2$ and the contribution to \lcRef{Equation}{E:full-second}{2.1.3} follow from the supplied mixed-moment expansion of \lcRef{Proposition}{P:mixed}{2.1.1} for random variables standing for the chaos terms of the solution.}
 \lcPart{Not yet formalized}{The solution is not constructed.}
@@ -306,10 +306,9 @@
 \lcInput{3}{the joint centered Gaussian law of the masked evaluations, so that their law is $\mathcal{N}(0,A)$ (in the statement and the proof of \lcRef{Proposition}{P:masked-noise-completion}{4.1.4})}
 \lcEntryEnd
 \lcEntry{\lcRef{Proposition}{P:actual-wave-form}{4.2.3}}{Form and phase kernel}
-\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in \texttt{docs/statement-ledger.md}.}
+\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger.}
 \lcPart{Not yet formalized}{The result itself.}
-\lcInputs{Input supplied}
-\lcInput{1}{the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \texttt{docs/statement-ledger.md})}
+\lcPart{Assumptions and limits}{The checked steps take no analytic input beyond the paper's hypotheses: the Lean statements are definitions and a matrix identity for arbitrary real parameters. The reading of the parameters as cosines and sines of a phase and as a covariance coefficient, the continuous extension at zero frequency, and the Bessel-weighted change of coordinates and the weight $1/\sqrt{\langle\xi\rangle\langle\eta\rangle}$ that lead to \lcRef{Equation}{E:variance-normalized-kernel}{4.2.17} are not hypotheses of these statements; they are outside Lean (see the statement-ledger entry \texttt{DimensionalMatrix}).}
 \lcEntryEnd
 \lcEntry{\lcRef{Proposition}{P:wave-two-variances}{4.2.5}}{Both variance directions}
 \lcPart{Lean proves}{A bound on an abstract variance tied to $\E|\ell_R|^2$ only through the named input \lcRef{Equation}{E:variance-normalized-covariance}{4.2.18}. The spectral core (the sums of the $\nu_R$-integrals of \lcRef{Equation}{E:variance-normalized-covariance}{4.2.18}, both directions, the $h^{2\beta}$ form) in full with no input.}
@@ -320,28 +319,24 @@
 \lcInput{3}{the identity $\|z\|_{E_{s-\gamma}}^2=\|\langle\xi\rangle^{-\gamma}Jz\|_2^2$ (\texttt{hnormSG}; in the proof of \lcRef{Proposition}{P:wave-two-variances}{4.2.5})}
 \lcEntryEnd
 \lcEntry{\lcRef{Lemma}{L:driver-interval-limit}{5.1.8}}{Fixed-interval operator construction}
-\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in \texttt{docs/statement-ledger.md}.}
+\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger.}
 \lcPart{Not yet formalized}{The result itself.}
-\lcInputs{Input supplied}
-\lcInput{1}{the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \texttt{docs/statement-ledger.md})}
+\lcPart{Assumptions and limits}{The checked step takes no analytic input beyond the paper's hypotheses: the Lean statement assumes only $C\ge0$, $h>0$ and $L\ge0$. The variance budget \lcRef{Equation}{E:driver-short-variance-budget}{5.1.12} and the Schatten estimate it feeds are not hypotheses of this statement; they are outside Lean (see the statement-ledger entry \texttt{InteractionDriver}).}
 \lcEntryEnd
 \lcEntry{\lcRef{Lemma}{L:driver-holder-limit}{5.1.9}}{Hölder path limit}
-\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in \texttt{docs/statement-ledger.md}.}
+\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger.}
 \lcPart{Not yet formalized}{The result itself.}
-\lcInputs{Input supplied}
-\lcInput{1}{the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \texttt{docs/statement-ledger.md})}
+\lcPart{Assumptions and limits}{The checked steps take no analytic input beyond the paper's hypotheses: the Lean statements assume only order conditions on the real exponents. The Gaussian moment bounds for increments, the dyadic chaining argument and the H\"older interpolation are not hypotheses of these statements; they are outside Lean (see the statement-ledger entry \texttt{InteractionDriver}).}
 \lcEntryEnd
 \lcEntry{\lcRef{Lemma}{L:exact-canonical-scaling}{7.1.1}}{Canonical law scaling}
-\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in \texttt{docs/statement-ledger.md}.}
+\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger.}
 \lcPart{Not yet formalized}{The result itself.}
-\lcInputs{Input supplied}
-\lcInput{1}{the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \texttt{docs/statement-ledger.md})}
+\lcPart{Assumptions and limits}{The checked steps take no analytic input beyond the paper's hypotheses: the Lean statements assume only $T>0$ and $\alpha<3$. The scaling of the Gaussian noise and its covariance, the equality in law of the rescaled solution, the scaling of the Green measure and the extension to the full series and its second moment are not hypotheses of these statements; they are outside Lean (see the statement-ledger entry \texttt{DirectEvent}).}
 \lcEntryEnd
 \lcEntry{\lcRef{Lemma}{L:raw-block-inputs}{7.2.1}}{Coupled Gaussian block inputs}
-\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in \texttt{docs/statement-ledger.md}.}
+\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger.}
 \lcPart{Not yet formalized}{The result itself.}
-\lcInputs{Input supplied}
-\lcInput{1}{the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \texttt{docs/statement-ledger.md})}
+\lcPart{Assumptions and limits}{The checked step takes no analytic input beyond the paper's hypotheses: the Lean statement assumes only $\delta>0$. The rescaled noise and its mean shift are not hypotheses of this statement; they are outside Lean (see the statement-ledger entry \texttt{JointTilt}).}
 \lcEntryEnd
 \lcEntry{\lcRef{Lemma}{L:raw-block-indexed-cone}{7.2.4}}{Indexed cone and terminal displacement}
 \lcPart{Lean proves}{Every conclusion, for an abstract ground family (flows, vectors, duals, rates and observable, with the properties of the compact mean family supplied as inputs).}
@@ -356,16 +351,15 @@
 \lcInput{7}{\texttt{GroundFamily} fields \texttt{margin\_ell}, \texttt{margin\_obs} (\lcRef{Equation}{E:compact-positive-margins}{6.3.15}): $\inf_I\ell_\sigma(e_0)>0$ and $\inf_IO_\phi(e_\sigma)>0$}
 \lcEntryEnd
 \lcEntry{\lcRef{Lemma}{L:raw-block-restart}{7.2.5}}{Composition over time blocks and regularized products}
-\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in \texttt{docs/statement-ledger.md}.}
+\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger.}
 \lcPart{Not yet formalized}{The result itself.}
 \lcInputs{Input supplied}
-\lcInput{1}{the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \texttt{docs/statement-ledger.md})}
+\lcInput{1}{The Lean statement takes as hypotheses: (1) the recurrence $d(n+1)\le Cd(n)+C^ne_{\mathrm{src}}$ for every $n$, for the difference $d(n)$ of the first $n$ ordered products (\texttt{hstep}); in the proof of \lcRef{Lemma}{L:raw-block-restart}{7.2.5} it comes from operator-norm submultiplicativity for the product factors, after the finite factor lists are extended by identities; (2) $d(0)\le0$ (\texttt{hzero}). The conditions $C\ge1$ and $e_{\mathrm{src}}\ge0$ are parameter conditions. The moments of $C$ and of the error are outside Lean (see the statement-ledger entry \texttt{ActualEvent}).}
 \lcEntryEnd
 \lcEntry{\lcRef{Proposition}{P:raw-block-original-lower}{7.2.7}}{Original point lower rate at the Gaussian quadratic cost}
-\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in \texttt{docs/statement-ledger.md}.}
+\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger.}
 \lcPart{Not yet formalized}{The result itself.}
-\lcInputs{Input supplied}
-\lcInput{1}{the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \texttt{docs/statement-ledger.md})}
+\lcPart{Assumptions and limits}{The checked step takes no analytic input beyond the paper's hypotheses: the Lean statement assumes only $\delta>0$. The Gaussian change of law, the event on which the penalty bound holds and the limit $\delta\to0$ are not hypotheses of this statement; they are outside Lean (see the statement-ledger entry \texttt{ActualEvent}).}
 \lcEntryEnd
 \lcEntry{\lcRef{Proposition}{P:variational-remove-mask}{7.3.4}}{Monotone rates and the original point moment}
 \lcPart{Lean proves}{The mask family and every rate statement with the section's hypotheses and nothing supplied, for $\lambda_{R,s}$ defined as the square root of the real Rayleigh supremum of $m_Rh_s$; \lcRef{Equation}{E:variational-unmasked-point-lower}{7.3.5}, derived from \lcRef{Equation}{E:raw-block-original-lower}{7.2.14} as a supplied input, for a real function in place of the point moment.}
@@ -395,22 +389,20 @@
 \lcInput{2}{\lcRef{Proposition}{P:constant-young-linear}{6.2.4} on $\mathcal{L}(E)$ (in the proof of \lcRef{Lemma}{L:symplectic-free}{10.1.1}): the left Young sums of $X$ over partitions of $[s,t]$ converge in operator norm to $U_X(t,s)-I$; supplied in the weaker form of convergence along some nontrivial filter of finite node lists in $[s,t]$ (no ordering, endpoint or mesh condition)}
 \lcEntryEnd
 \lcEntry{\lcRef{Proposition}{P:gram-positive-optimizer}{11.1.3}}{Positive conic maximizer}
-\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in \texttt{docs/statement-ledger.md}.}
+\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger.}
 \lcPart{Not yet formalized}{The result itself.}
-\lcInputs{Input supplied}
-\lcInput{1}{the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \texttt{docs/statement-ledger.md})}
+\lcPart{Assumptions and limits}{The checked step takes no analytic input beyond the paper's hypotheses: the Lean statement assumes only positive weights and active labels, $\langle\Phi,k_i\rangle-b_i\ge0$. Dual coercivity, the existence and uniqueness of the dual minimizer, attainment and the maximum over active sets are outside Lean (see the statement-ledger entry \texttt{PositiveGram}).}
 \lcEntryEnd
 \lcEntry{\lcRef{Proposition}{P:gram-entrywise-comparison}{11.1.5}}{Entrywise Gram comparison}
-\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in \texttt{docs/statement-ledger.md}.}
+\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger.}
 \lcPart{Not yet formalized}{The result itself.}
-\lcInputs{Input supplied}
-\lcInput{1}{the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \texttt{docs/statement-ledger.md})}
+\lcPart{Assumptions and limits}{The checked step takes no analytic input beyond the paper's hypotheses: the Lean statement assumes only nonnegative weights and the entrywise order $C_{ij}\le D_{ij}$, a hypothesis of \lcRef{Proposition}{P:gram-entrywise-comparison}{11.1.5}. The Gram realization (\lcRef{Lemma}{L:gram-realization}{11.1.4}) and the optimization over weights are outside Lean (see the statement-ledger entry \texttt{PositiveGram}).}
 \lcEntryEnd
 \lcEntry{\lcRef{Proposition}{P:white-spatial-energy}{11.4.2}}{Exact white spatial energy}
-\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in \texttt{docs/statement-ledger.md}.}
+\lcPart{Lean proves}{Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger.}
 \lcPart{Not yet formalized}{The result itself.}
 \lcInputs{Input supplied}
-\lcInput{1}{the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \texttt{docs/statement-ledger.md})}
+\lcInput{1}{The Lean statements take as hypothesis: (1) the inequality \lcRef{Equation}{E:white-cdf-square}{11.4.1} of \lcRef{Lemma}{L:white-cdf-square}{11.4.1}, $0\le b-2zA+z^2/3$ for every real $z$, with $A=\int_\R f^4$ and $b=\int_\R(f')^2$ for a real unit $f\in H^1(\R)$ (hypothesis \texttt{h} of \texttt{WhiteCDF.cdf\_square\_bound}). The bound $3A^2\le b$ that \texttt{WhiteCDF.energy\_upper} assumes is the conclusion of \texttt{cdf\_square\_bound}. The white-model statements assume only $c\ge0$, and $0<a<1$ for \lcRef{Hypothesis}{H:homog}{1.2.1}. The variational energy, its domain and its attainment are outside Lean (see the statement-ledger entries \texttt{WhiteCDF} and \texttt{WhiteModel}).}
 \lcEntryEnd
 \lcEntry{\lcRef{Theorem}{T:white-moment-bounds}{11.4.3}}{Explicit white moment bounds}
 \lcPart{Lean proves}{\lcRef{Equation}{E:white-moment-bounds}{11.4.2} for the variational value $S_2^{\mathrm{pos}}$ in place of $C_2(c,a)$ (identified by \lcRef{Theorem}{T:intrinsic-second-moment}{11.2.6}), for $c>0$ and $0<a<1$, with the value $\mathcal{E}_{\mathrm{sp}}=c^2/6$ of \lcRef{Proposition}{P:white-spatial-energy}{11.4.2} supplied (each bound uses one inequality of it), and that $M_a$, $K_0(a)$ and both bound formulas are positive.}

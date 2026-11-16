@@ -102,7 +102,12 @@ data for \lean@pending}{Regenerate notes/lean-markers-data.tex.}}{}%
 \lean@thmhead@plain{#1}{#2}{#3}}
 \let\thmhead\thmhead@plain
 \makeatother
-\newcommand{\lcCategory}[2]{\par\Needspace{6\baselineskip}\medskip\noindent\textbf{#1}~(#2)\par\nopagebreak\smallskip}
+% A group of Appendix F: a numbered subsection with the group's wording
+% (its final period removed) and the number of results in it.
+\makeatletter
+\def\lc@nodot#1.\@nil{#1}
+\newcommand{\lcCategory}[2]{\subsection[\lc@nodot#1\@nil]{\raggedright\lc@nodot#1\@nil~(#2)}}
+\makeatother
 \makeatletter
 \newenvironment{lcTable}{\global\lc@leadtrue\noindent\small\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.27\textwidth}>{\raggedright\arraybackslash}p{0.70\textwidth}@{}}}{\end{tabular}\par}
 % Full-width entries of Appendix F, for results not formalized in full:

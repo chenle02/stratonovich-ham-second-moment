@@ -1,6 +1,6 @@
-# Completion record
+<!-- Headings and tables of the Lean companion's COMPLETION.md at 74a04f5711a7, pinned by pin_companion.py; the prose is omitted. -->
 
-What the Lean companion verifies of the manuscript, kept current at every milestone. Every milestone is an annotated git tag on the commit where the author closed the gate. Claims count Lean declarations in `claims.yaml`; coverage rows count manuscript labelled results (see `coverage.yaml` for the exact scope of each). "Same" = formalized with the manuscript's hypotheses; "inputs" = analytic inputs supplied as named hypotheses. Correspondence was checked by AI reviews from a different model family, not by a human; supplied inputs are not verified.
+# Completion record
 
 ## Milestones
 
@@ -24,11 +24,7 @@ What the Lean companion verifies of the manuscript, kept current at every milest
 | `L13-gate` | `8f51004` | 2026-11-13 | `a284420` | 4504 | 3654 | 101: 64 / 35 / 2 | waves L13 and L14, closed together (the two-chain diagram model, model choice M4, with the mixed-moment proposition supplied; the spatial and order-four white diagram bounds in full on the model; the Chapter 3 upper bounds with their moment statements resting on the supplied input; H^1 identified with Mathlib's Sobolev space and the resolvent form layer) |
 | `L14-gate` | `8f51004` | 2026-11-13 | `a284420` | 4504 | 3654 | 101: 64 / 35 / 2 | waves L13 and L14, closed together (the occupation completion spaces, model choice M5, and H^1 as the weak-gradient graph, model choice M6, with the four-linear form, the occupation class and the raw occupation energy in full; the source spatial heat lemma in full; the d = 3 endpoint lemmas in full with the positive definiteness of the Riesz densities proved) |
 
-Every tagged commit carries lean-pkg receipts or is a docs-only descendant of one (see `.lean-receipts/` and the README verification record). External kernel replays (`leanchecker --fresh` on Easley) cover every library module through wave L14, all of them at `8f51004` (the wave-L13 and wave-L14 gates); see `verification/`.
-
 ## Lean freeze (2026-11-13)
-
-Wave L14 is the last Lean wave: the author froze the Lean work after it. No wave is in progress. The table by labelled result below is at the wave-L14 gate; the remaining results are left for future work or for the community.
 
 ## Completion by labelled result (manuscript a284420, companion 8f51004, gates L13-gate and L14-gate)
 
@@ -42,11 +38,7 @@ Wave L14 is the last Lean wave: the author froze the Lean work after it. No wave
 | not formalized | 123 | 56% |
 | total labelled results (Theorem, Proposition, Lemma, Corollary) | 220 | 100% |
 
-No theorem of the manuscript is verified end to end. Of the four main theorems, two (`T:full-upper` and `T:intrinsic-second-moment`) are recorded as outside Lean; `T:intrinsic-occupation-ceiling` is formalized in both forms with the exact constant `C_occ`, over the class `O` itself (wave L14), for `S_c^pos`, and its moment sentence `C_2 <= U_2` is not formalized; `T:white-moment-bounds` is proved for the variational value `S_2^pos` in place of `C_2`, with the white-noise energy `E_sp = c^2/6` of `P:white-spatial-energy` supplied (reserved package B9), and its time exponent and the case `c = 0` are not formalized. The remaining work is dominated by foundations Mathlib lacks (Gaussian chaos, Cameron-Martin, the chaos expansion of the solution, Young integration of operator paths and self-adjoint operators).
-
 ## Covered displays and remarks (not counted above)
-
-Four coverage rows are for a displayed equation or a remark rather than a numbered result:
 
 | Label | Coverage class | Conclusion |
 |---|---|---|

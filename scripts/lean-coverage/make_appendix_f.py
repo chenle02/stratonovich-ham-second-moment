@@ -36,7 +36,7 @@ CATEGORIES = [  # (class, conclusion) -> wording from the companion README
     (("inputs-supplied", "full"),
      "Every conclusion proved; named analytic inputs supplied as hypotheses."),
     (("inputs-supplied", "weaker"),
-     "Steps checked, not the result itself; analytic inputs supplied as hypotheses."),
+     "Steps checked, not the result itself; analytic inputs either supplied as hypotheses or left outside Lean."),
     (("outside", "full"), "Not formalized."),
 ]
 WORDS = {0: "no", 1: "one", 2: "two", 3: "three", 4: "four", 5: "five"}  # counts in prose
@@ -79,6 +79,10 @@ COMPLETION_STATUS = [  # COMPLETION.md status -> (coverage key, wording in the b
     ("not formalized", None, "Not formalized"),
 ]
 NUMBERED = ("T:", "P:", "L:", "C:")
+# Stop check only (never used to choose a layout): an input text that says the
+# checked steps take no analytic input belongs to a row flagged
+# no_analytic_input in coverage-payload-tex.yaml.
+NO_INPUT = re.compile(r"\btakes? no analytic input\b", re.I)
 
 
 def md_table(lines, start):
@@ -246,8 +250,14 @@ def main():
     # (coverage-payload-tex.yaml): per label the ASCII of coverage.yaml (so
     # that drift is detected), the sentence in TeX, its two parts ("Lean
     # proves" / "Not yet formalized") and one TeX item per supplied input.
+    # A row with no_analytic_input: true supplies no hypothesis: its single
+    # inputs_tex item is printed as a plain "Assumptions and limits" part, without the
+    # "Inputs supplied" heading and without a number. The layout follows the
+    # flag alone; the wording of the item is never used to choose it.
+    # Testing aid: LC_PAYLOAD=<path> reads the payload from that path instead
+    # of coverage-payload-tex.yaml beside this script.
     payload = {}
-    pl_path = os.path.join(HERE, "coverage-payload-tex.yaml")
+    pl_path = os.environ.get("LC_PAYLOAD") or os.path.join(HERE, "coverage-payload-tex.yaml")
     if os.path.exists(pl_path):
         for r in yaml.safe_load(open(pl_path))["rows"]:
             row = next((x for x in rows if x["paper"]["label"] == r["label"]), None)
@@ -259,6 +269,18 @@ def main():
             got = [i["ascii"] for i in (r.get("inputs_tex") or [])]
             if got != want:
                 raise SystemExit(f"coverage-payload-tex.yaml has drifted from coverage.yaml at {r['label']} (inputs)")
+            flag = r.get("no_analytic_input", False)
+            if not isinstance(flag, bool):
+                raise SystemExit(f"coverage-payload-tex.yaml: {r['label']}: no_analytic_input must be true or false")
+            texts = [i["tex"] for i in (r.get("inputs_tex") or [])]
+            if flag and len(texts) != 1:
+                raise SystemExit(f"coverage-payload-tex.yaml: {r['label']}: no_analytic_input is set, "
+                                 f"so exactly one inputs_tex item is required; found {len(texts)}")
+            if not flag:
+                for x in texts:
+                    if NO_INPUT.search(x):
+                        raise SystemExit(f"coverage-payload-tex.yaml: {r['label']}: an input says that it takes "
+                                         f"no analytic input, but the row is not flagged no_analytic_input: {x[:80]}")
             payload[r["label"]] = r
 
     by_cat = collections.defaultdict(list)
@@ -320,7 +342,11 @@ def main():
                 ent.append(f"\\lcText{{{tex_with_refs(parts[2])}}}\n")
             elif scope:
                 ent.append(f"\\lcText{{{text_with_refs(scope)}}}\n")
-            if inputs:
+            if pl and pl.get("no_analytic_input"):
+                # Flagged row: no hypothesis is supplied. One plain part,
+                # no heading and no number (one item, checked on loading).
+                ent.append(f"\\lcPart{{Assumptions and limits}}{{{tex_with_refs(items[0])}}}\n")
+            elif inputs:
                 word = "Input supplied" if len(inputs) == 1 else "Inputs supplied"
                 ent.append(f"\\lcInputs{{{word}}}\n")
                 for k, x in enumerate(inputs, 1):
@@ -368,13 +394,26 @@ def main():
         if used - have:
             raise SystemExit(f"model codes used in the rows without a key: {sorted(used - have)}")
         model_key = ["\\newcommand{\\lcModelKey}{%\n" + "\n".join(items) + "\n}\n"]
+    # Printed summary. When some partial rows are flagged no_analytic_input,
+    # the companion's sentence "with named inputs supplied" overstates for
+    # them; the printed sentence is corrected by one exact replacement (the
+    # companion's own wording is to follow at its next release). The
+    # generator stops if the sentence to replace is not there exactly once.
+    summary = cov["summary"]
+    if any(r.get("no_analytic_input") for r in payload.values()):
+        m = re.search(r"steps, parts or\s+narrower forms of (\d+) further labelled results with named inputs supplied", summary)
+        if not m or len(re.findall(r"with named inputs supplied", summary)) != 1:
+            raise SystemExit("coverage.yaml summary: the sentence on the partial results is not as expected")
+        summary = (summary[:m.start()] + f"steps, parts or narrower forms of {m.group(1)} further labelled results; "
+                   "the entries distinguish supplied hypotheses, where present, from analytic work left outside Lean"
+                   + summary[m.end():])
     d = dt.date.fromisoformat(date[:10])
     out = ["% Generated by make_appendix_f.py from coverage.yaml; do not edit by hand.\n",
            f"\\newcommand{{\\lcCommit}}{{{commit[:7]}}}\n",
            f"\\newcommand{{\\lcDate}}{{{d.strftime('%B')}~{d.day}, {d.year}}}\n",
            f"\\newcommand{{\\lcTime}}{{{time_stamp(date)}}}\n",
            f"\\newcommand{{\\lcRows}}{{{len(rows)}}}\n",
-           f"\\newcommand{{\\lcSummary}}{{{text_with_refs(cov['summary'])}}}\n",  # labels become references
+           f"\\newcommand{{\\lcSummary}}{{{text_with_refs(summary)}}}\n",  # labels become references
            f"\\newcommand{{\\lcUnlabelled}}{{{unlabelled}}}\n",
            f"\\newcommand{{\\lcGroups}}{{{WORDS[sum(1 for k, _ in CATEGORIES if by_cat.get(k))]}}}\n",
            "\\newcommand{\\lcTables}{%\n" + "".join(body) + "}\n"] + receipts + completion + model_key

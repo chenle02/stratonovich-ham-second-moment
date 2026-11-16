@@ -72,29 +72,32 @@ rows:
   - ascii: "the inverse-root integral representation of lines 2329-2354 for L^* = A_0 - conj(z)B (bounded holomorphic calculus): Q' - 1 = pi^(-1) int_0^inf J(t) dt with J strongly measurable and ||J(t)|| <= (|z| d/(1-delta_a)) t^(-1/2) kappa^(a-3)"
     tex: "the inverse-root integral representation in the proof of L:complex-phase for $L^*=A_0-\\overline{z}B$ (bounded holomorphic calculus): $Q'-1=\\pi^{-1}\\int_0^\\infty J(t)\\ud t$ with $J$ strongly measurable and $\\|J(t)\\|\\le(|z|d/(1-\\delta_a))t^{-1/2}\\kappa^{a-3}$"
 - label: L:driver-holder-limit
+  no_analytic_input: true
   ascii: "Lean checks only the finite, algebraic or scalar steps of this result listed in docs/statement-ledger.md, not the result itself."
-  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}, not the result itself."
-  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}."
+  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger, not the result itself."
+  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger."
   not_formalized_tex: "The result itself."
   inputs_tex:
   - ascii: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see docs/statement-ledger.md)"
-    tex: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \\texttt{docs/statement-ledger.md})"
+    tex: "The checked steps take no analytic input beyond the paper's hypotheses: the Lean statements assume only order conditions on the real exponents. The Gaussian moment bounds for increments, the dyadic chaining argument and the H\\\"older interpolation are not hypotheses of these statements; they are outside Lean (see the statement-ledger entry \\texttt{InteractionDriver})."
 - label: L:driver-interval-limit
+  no_analytic_input: true
   ascii: "Lean checks only the finite, algebraic or scalar steps of this result listed in docs/statement-ledger.md, not the result itself."
-  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}, not the result itself."
-  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}."
+  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger, not the result itself."
+  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger."
   not_formalized_tex: "The result itself."
   inputs_tex:
   - ascii: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see docs/statement-ledger.md)"
-    tex: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \\texttt{docs/statement-ledger.md})"
+    tex: "The checked step takes no analytic input beyond the paper's hypotheses: the Lean statement assumes only $C\\ge0$, $h>0$ and $L\\ge0$. The variance budget E:driver-short-variance-budget and the Schatten estimate it feeds are not hypotheses of this statement; they are outside Lean (see the statement-ledger entry \\texttt{InteractionDriver})."
 - label: L:exact-canonical-scaling
+  no_analytic_input: true
   ascii: "Lean checks only the finite, algebraic or scalar steps of this result listed in docs/statement-ledger.md, not the result itself."
-  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}, not the result itself."
-  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}."
+  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger, not the result itself."
+  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger."
   not_formalized_tex: "The result itself."
   inputs_tex:
   - ascii: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see docs/statement-ledger.md)"
-    tex: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \\texttt{docs/statement-ledger.md})"
+    tex: "The checked steps take no analytic input beyond the paper's hypotheses: the Lean statements assume only $T>0$ and $\\alpha<3$. The scaling of the Gaussian noise and its covariance, the equality in law of the rescaled solution, the scaling of the Green measure and the extension to the full series and its second moment are not hypotheses of these statements; they are outside Lean (see the statement-ledger entry \\texttt{DirectEvent})."
 - label: L:fixed-split
   ascii: "Lean proves E:fixed-split-bound with C_split = 100^8 e^8 max(1, 12 delta^(-2)) for any delta > 0, on a finite Fock model of the cutoff Gaussian space with abstract spatial operators, for coefficients of an evolution that is not constructed; the segment bound, the Dyson cube identity, the invariance of the cross subspaces, entire coefficients and E:interval-column are supplied."
   tex: "Lean proves E:fixed-split-bound with $C_{\\rm split}=100^8e^8\\max\\{1,12\\delta^{-2}\\}$ for any $\\delta>0$, on a finite Fock model of the cutoff Gaussian space with abstract spatial operators, for coefficients of an evolution that is not constructed; the segment bound, the Dyson cube identity, the invariance of the cross subspaces, entire coefficients and E:interval-column are supplied."
@@ -170,26 +173,27 @@ rows:
   - ascii: "GroundFamily fields margin_ell, margin_obs (C16 output, E:compact-positive-margins): inf_I ell_sigma(e_0) > 0 and inf_I O_phi(e_sigma) > 0"
     tex: "\\texttt{GroundFamily} fields \\texttt{margin\\_ell}, \\texttt{margin\\_obs} (E:compact-positive-margins): $\\inf_I\\ell_\\sigma(e_0)>0$ and $\\inf_IO_\\phi(e_\\sigma)>0$"
 - label: L:raw-block-inputs
+  no_analytic_input: true
   ascii: "Lean checks only the finite, algebraic or scalar steps of this result listed in docs/statement-ledger.md, not the result itself."
-  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}, not the result itself."
-  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}."
+  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger, not the result itself."
+  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger."
   not_formalized_tex: "The result itself."
   inputs_tex:
   - ascii: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see docs/statement-ledger.md)"
-    tex: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \\texttt{docs/statement-ledger.md})"
+    tex: "The checked step takes no analytic input beyond the paper's hypotheses: the Lean statement assumes only $\\delta>0$. The rescaled noise and its mean shift are not hypotheses of this statement; they are outside Lean (see the statement-ledger entry \\texttt{JointTilt})."
 - label: L:raw-block-restart
   ascii: "Lean checks only the finite, algebraic or scalar steps of this result listed in docs/statement-ledger.md, not the result itself."
-  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}, not the result itself."
-  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}."
+  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger, not the result itself."
+  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger."
   not_formalized_tex: "The result itself."
   inputs_tex:
   - ascii: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see docs/statement-ledger.md)"
-    tex: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \\texttt{docs/statement-ledger.md})"
+    tex: "The Lean statement takes as hypotheses: (1) the recurrence $d(n+1)\\le Cd(n)+C^ne_{\\mathrm{src}}$ for every $n$, for the difference $d(n)$ of the first $n$ ordered products (\\texttt{hstep}); in the proof of L:raw-block-restart it comes from operator-norm submultiplicativity for the product factors, after the finite factor lists are extended by identities; (2) $d(0)\\le0$ (\\texttt{hzero}). The conditions $C\\ge1$ and $e_{\\mathrm{src}}\\ge0$ are parameter conditions. The moments of $C$ and of the error are outside Lean (see the statement-ledger entry \\texttt{ActualEvent})."
 - label: L:spatial-static-controls
   ascii: "lambda is the square root of the supremum of the real Rayleigh quotient, and I_Psi, v_Psi are given by their integral formulas (identification with sqrt(-E_s) and E W(Psi)^2 is not formalized); E:spatial-static-score is proved both in the form that every number below the bound is exceeded by some admissible score and in its supremum form, with nothing supplied."
   tex: "$\\lambda$ is the square root of the supremum of the real Rayleigh quotient, and $I_\\Psi$, $v_\\Psi$ are given by their integral formulas (identification with $\\sqrt{-E_s}$ and $\\E W(\\Psi)^2$ is not formalized); E:spatial-static-score is proved both in the form that every number below the bound is exceeded by some admissible score and in its supremum form, with nothing supplied."
   proved_tex: "$\\lambda$ is the square root of the supremum of the real Rayleigh quotient, and $I_\\Psi$, $v_\\Psi$ are given by their integral formulas; E:spatial-static-score is proved both in the form that every number below the bound is exceeded by some admissible score and in its supremum form, with nothing supplied."
-  not_formalized_tex: "The identification of these quantities with $\\sqrt{-E_s}$ and $\\E W(\\Psi)^2$ is not formalized."
+  not_formalized_tex: "The identifications of $\\lambda$ with $\\sqrt{-E_s}$ and of $v_\\Psi$ with $\\E W(\\Psi)^2$ are not formalized."
 - label: L:symplectic-free
   ascii: "Lean proves both compact-baseline displays on an abstract nonzero Hilbert space with a supplied free group, isometric velocity reversal and weakly vanishing translations, for a Young evolution given only by convergence of its left Young sums; it proves W_t^T J_symp W_t = J_symp per frequency and the force skewness for the L^2 pairing. J_E and the preservation of omega on E are not formalized."
   tex: "Lean proves both compact-baseline displays on an abstract nonzero Hilbert space with a supplied free group, isometric velocity reversal and weakly vanishing translations, for a Young evolution given only by convergence of its left Young sums; it proves $W_t^{\\mathsf{T}}J_{\\rm symp}W_t=J_{\\rm symp}$ per frequency and the force skewness for the $L^2$ pairing. $J_E$ and the preservation of $\\omega$ on $E$ are not formalized."
@@ -219,13 +223,14 @@ rows:
   - ascii: "MixedMoment: the statement of P:mixed (main TeX lines 658-673, E:mixed-moment and E:full-second): the diagram limits exist and are finite, E[X_m X_n] = sum_D J_(m,n,D)(t) with the products integrable, u^2 integrable and E u^2 = sum_k A_k(t); true for the solution under H:homog, not proved"
     tex: "\\texttt{MixedMoment}: the statement of P:mixed (E:mixed-moment and E:full-second): the diagram limits exist and are finite, $\\E[X_mX_n]=\\sum_DJ_{m,n,D}(t)$ with the products integrable, $u^2$ integrable and $\\E u^2=\\sum_kA_k(t)$; true for the solution under H:homog, not proved"
 - label: P:actual-wave-form
+  no_analytic_input: true
   ascii: "Lean checks only the finite, algebraic or scalar steps of this result listed in docs/statement-ledger.md, not the result itself."
-  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}, not the result itself."
-  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}."
+  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger, not the result itself."
+  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger."
   not_formalized_tex: "The result itself."
   inputs_tex:
   - ascii: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see docs/statement-ledger.md)"
-    tex: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \\texttt{docs/statement-ledger.md})"
+    tex: "The checked steps take no analytic input beyond the paper's hypotheses: the Lean statements are definitions and a matrix identity for arbitrary real parameters. The reading of the parameters as cosines and sines of a phase and as a covariance coefficient, the continuous extension at zero frequency, and the Bessel-weighted change of coordinates and the weight $1/\\sqrt{\\langle\\xi\\rangle\\langle\\eta\\rangle}$ that lead to E:variance-normalized-kernel are not hypotheses of these statements; they are outside Lean (see the statement-ledger entry \\texttt{DimensionalMatrix})."
 - label: P:d1-upper
   ascii: "Lean proves E:d1-coefficient on the model M4 at every noise width, uniformly, with nothing supplied, and for the limit coefficients (Riesz case: the supplied convergence of every diagram as the noise width tends to zero (L:joint-fixed-order)); the form sum_m E[X_m X_(2k-m)] and E:d1-upper hold for random variables with the supplied mixed-moment expansion of P:mixed (solution not constructed)."
   tex: "Lean proves E:d1-coefficient on the model M4 at every noise width, uniformly, with nothing supplied, and for the limit coefficients (Riesz case: the supplied convergence of every diagram as the noise width tends to zero (L:joint-fixed-order)); the form $\\sum_m\\E[X_mX_{2k-m}]$ and E:d1-upper hold for random variables with the supplied mixed-moment expansion of P:mixed (solution not constructed)."
@@ -237,21 +242,23 @@ rows:
   - ascii: "DiagramLimits (Riesz case only): every model diagram converges to diagramLim as eps -> 0+; part of L:joint-fixed-order (main TeX lines 1542-1631), invoked at line 4671; TRUE under H:homog; proved for white noise (D1Upper.diagramLimits_white) and implied by MixedMoment"
     tex: "\\texttt{DiagramLimits} (Riesz case only): every model diagram converges to \\texttt{diagramLim} as $\\epsilon\\to0+$; part of L:joint-fixed-order, invoked in the proof of P:d1-upper; TRUE under H:homog; proved for white noise (\\texttt{D1Upper.diagramLimits\\_white}) and implied by \\texttt{MixedMoment}"
 - label: P:gram-entrywise-comparison
+  no_analytic_input: true
   ascii: "Lean checks only the finite, algebraic or scalar steps of this result listed in docs/statement-ledger.md, not the result itself."
-  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}, not the result itself."
-  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}."
+  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger, not the result itself."
+  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger."
   not_formalized_tex: "The result itself."
   inputs_tex:
   - ascii: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see docs/statement-ledger.md)"
-    tex: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \\texttt{docs/statement-ledger.md})"
+    tex: "The checked step takes no analytic input beyond the paper's hypotheses: the Lean statement assumes only nonnegative weights and the entrywise order $C_{ij}\\le D_{ij}$, a hypothesis of P:gram-entrywise-comparison. The Gram realization (L:gram-realization) and the optimization over weights are outside Lean (see the statement-ledger entry \\texttt{PositiveGram})."
 - label: P:gram-positive-optimizer
+  no_analytic_input: true
   ascii: "Lean checks only the finite, algebraic or scalar steps of this result listed in docs/statement-ledger.md, not the result itself."
-  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}, not the result itself."
-  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}."
+  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger, not the result itself."
+  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger."
   not_formalized_tex: "The result itself."
   inputs_tex:
   - ascii: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see docs/statement-ledger.md)"
-    tex: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \\texttt{docs/statement-ledger.md})"
+    tex: "The checked step takes no analytic input beyond the paper's hypotheses: the Lean statement assumes only positive weights and active labels, $\\langle\\Phi,k_i\\rangle-b_i\\ge0$. Dual coercivity, the existence and uniqueness of the dual minimizer, attainment and the maximum over active sets are outside Lean (see the statement-ledger entry \\texttt{PositiveGram})."
 - label: P:interval-coefficients
   ascii: "Lean assembles E:interval-coefficient-bound (length substitution, split count, product-coefficient identity) from E:interval-energy-splits, with L:inventory-product proved, L:fixed-split assembled on its supplied inputs, Q_(r,q) identified with the cutoff inner product (real part used) from the supplied Duhamel word expansion, for R_alpha, sigma_i > 0, and the sum to E:interval-phase-bound."
   tex: "Lean assembles E:interval-coefficient-bound (length substitution, split count, product-coefficient identity) from E:interval-energy-splits, with L:inventory-product proved, L:fixed-split assembled on its supplied inputs, $Q_{r,q}$ identified with the cutoff inner product (real part used) from the supplied Duhamel word expansion, for $R_\\alpha,\\sigma_i>0$, and the sum to E:interval-phase-bound."
@@ -334,13 +341,14 @@ rows:
   - ascii: "measurability of the C^theta norm of the stopped block paths (implicit in the manuscript)"
     tex: "measurability of the $C^\\theta$ norm of the stopped block paths (implicit in the manuscript)"
 - label: P:raw-block-original-lower
+  no_analytic_input: true
   ascii: "Lean checks only the finite, algebraic or scalar steps of this result listed in docs/statement-ledger.md, not the result itself."
-  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}, not the result itself."
-  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}."
+  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger, not the result itself."
+  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger."
   not_formalized_tex: "The result itself."
   inputs_tex:
   - ascii: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see docs/statement-ledger.md)"
-    tex: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \\texttt{docs/statement-ledger.md})"
+    tex: "The checked step takes no analytic input beyond the paper's hypotheses: the Lean statement assumes only $\\delta>0$. The Gaussian change of law, the event on which the penalty bound holds and the limit $\\delta\\to0$ are not hypotheses of this statement; they are outside Lean (see the statement-ledger entry \\texttt{ActualEvent})."
 - label: P:riesz-small
   ascii: "Lean proves, with nothing supplied, E:riesz-two and A_1 = J_(1,1) + 2 J_(2,0) for the diagram integrals of M4, and E:riesz-four with finiteness for all splits and pairings; the order-two statements about E X_2, E X_1^2 follow from the supplied mixed-moment expansion of P:mixed (solution not constructed); that the total coefficient uses the multiplicities of E:total-four is not formalized."
   tex: "Lean proves, with nothing supplied, E:riesz-two and $A_1=J_{1,1}+2J_{2,0}$ for the diagram integrals of M4, and E:riesz-four with finiteness for all splits and pairings; the order-two statements about $\\E X_2$, $\\E X_1^2$ follow from the supplied mixed-moment expansion of P:mixed (solution not constructed); that the total coefficient uses the multiplicities of E:total-four is not formalized."
@@ -433,12 +441,12 @@ rows:
     tex: "the identity $\\|z\\|_{E_{s-\\gamma}}^2=\\|\\langle\\xi\\rangle^{-\\gamma}Jz\\|_2^2$ (\\texttt{hnormSG}; in the proof of P:wave-two-variances)"
 - label: P:white-spatial-energy
   ascii: "Lean checks only the finite, algebraic or scalar steps of this result listed in docs/statement-ledger.md, not the result itself."
-  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}, not the result itself."
-  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in \\texttt{docs/statement-ledger.md}."
+  tex: "Lean checks only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger, not the result itself."
+  proved_tex: "Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger."
   not_formalized_tex: "The result itself."
   inputs_tex:
   - ascii: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see docs/statement-ledger.md)"
-    tex: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see \\texttt{docs/statement-ledger.md})"
+    tex: "The Lean statements take as hypothesis: (1) the inequality E:white-cdf-square of L:white-cdf-square, $0\\le b-2zA+z^2/3$ for every real $z$, with $A=\\int_\\R f^4$ and $b=\\int_\\R(f')^2$ for a real unit $f\\in H^1(\\R)$ (hypothesis \\texttt{h} of \\texttt{WhiteCDF.cdf\\_square\\_bound}). The bound $3A^2\\le b$ that \\texttt{WhiteCDF.energy\\_upper} assumes is the conclusion of \\texttt{cdf\\_square\\_bound}. The white-model statements assume only $c\\ge0$, and $0<a<1$ for H:homog. The variational energy, its domain and its attainment are outside Lean (see the statement-ledger entries \\texttt{WhiteCDF} and \\texttt{WhiteModel})."
 - label: T:intrinsic-occupation-ceiling
   ascii: "Lean proves, with the section's hypotheses and nothing supplied, for c > 0: c I_Psi - v_Psi/2 <= U_c for nonnegative smooth controls, S_c^pos <= U_c with the exact C_occ, and, for every zeta > 0, U_c = c^m (2 zeta)^(alpha/(2k)) F_0(E_zeta^O), over the class O itself; lambda and v_Psi in Rayleigh and integral form; C_2(Gamma,a) <= U_2 is not formalized."
   tex: "Lean proves, with the section's hypotheses and nothing supplied, for $\\mathfrak{c}>0$: $\\mathfrak{c}I_\\Psi-v_\\Psi/2\\le U_{\\mathfrak{c}}$ for nonnegative smooth controls, $S_{\\mathfrak{c}}^{\\mathrm{pos}}\\le U_{\\mathfrak{c}}$ with the exact $C_{\\rm occ}$, and, for every $\\zeta>0$, $U_{\\mathfrak{c}}=\\mathfrak{c}^m(2\\zeta)^{\\alpha/(2k)}F_0(\\mathcal{E}_\\zeta^{\\mathcal{O}})$, over the class $\\mathcal{O}$ itself; $\\lambda$ and $v_\\Psi$ in Rayleigh and integral form; $C_2(\\Gamma,a)\\le U_2$ is not formalized."
