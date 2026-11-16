@@ -436,3 +436,12 @@ The DOI and final links go into the video descriptions, which stay editable, so 
 
 - **#16's call (2026-11-16).** INCONCLUSIVE does not meet the HIGH standard for a public "full statement". Before the re-pin, but not blocking R, the same reviewer finishes every credited helper claim of the 33 PARTIAL rows, read-only, for a decided PASS or FAIL per row. Any row with a helper stated in a model is repaired and rechecked. The re-pin uses the map only after that result.
   - Running: three parallel batches of 11 rows each (about 230 credited declarations per batch).
+- **Result (2026-11-16).** The same reviewer read every credited declaration of the 33 PARTIAL rows in three batches: 232, 234 and 231 declarations.
+  - Every one of the 33 rows was decided PASS. There were no findings: no missing or unsupported model.
+  - Batch grades: batches 2 and 3 PASS, high confidence. Batch 1 INCONCLUSIVE, medium confidence, only because whole source files were not read beyond the credited statements; its 11 row decisions are definite.
+  - So all 41 "full statement" rows are decided PASS, with the models exact. The map stays at `aee543e8` and is ready for the re-pin.
+  - Evidence: `private/lean-markers/review-2026-11-16-helpers/`.
+- **Marker candidate 075df319 (successor to b74af3ef; #22's read-only recheck): PASS.**
+  - All 96 slots are correct against the row-leading Appendix F rows: 74 worded markers (26 full, 18 narrower, 30 partial) and 22 empty.
+  - The 74 printed PDF markers equal the data, and L:spatial-fourier-bound now reads "full statement".
+  - The outside and equation rows are unmarked.
