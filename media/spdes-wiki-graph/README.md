@@ -14,8 +14,9 @@ The source commit, capture details, licence and SHA-256 hash are in
 link to the book's project page or that it links to, with the links among them.
 It is drawn from the wiki's link index (not a screenshot, since the graph view
 cannot label its dots), in a print layout with labels at 7.6 pt at the text
-width. Some pages are linked only for a side remark. It is shown in the preface
-after the paragraph on looking references up instead of recalling them. It is
+width. Some pages are linked only for a side remark. It was shown in the preface
+after the paragraph on looking references up instead of recalling them, until
+the graph of the stochastic-wave-equation slice took its place. It is
 the print version, on a white background, of a figure made for the video series;
 four long titles are shortened, as listed in `PROVENANCE.json`.
 
