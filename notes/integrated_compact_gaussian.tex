@@ -10,6 +10,7 @@ infinite Gaussian series or time path is constructed in this section.
 
 \subsection{Finite Gaussian matrices with both variance powers}
 
+\LeanMarker{L:gaussian-scalar-powers}
 \begin{lemma}[Scalar power estimates]\label{L:gaussian-scalar-powers}
   For $0 < \theta < 1$ and $u,v \ge 0$,
   \begin{equation}\label{E:gaussian-weighted-power}
@@ -44,6 +45,7 @@ infinite Gaussian series or time path is constructed in this section.
   Lemma~\ref{L:gaussian-scalar-powers}.
 \end{proof}
 
+\LeanMarker{L:gaussian-trace-bounds}
 \begin{lemma}[Two Hermitian trace bounds]\label{L:gaussian-trace-bounds}
   Let $B,Y$ be finite Hermitian matrices, $m \ge 2$ an integer, and $L = 2m-2$.
   For integers $0 \le q \le L$,
@@ -95,6 +97,7 @@ integration-by-parts proof, see Tropp~\cite{tropp:source2018:second-order}*{arXi
 Proposition~2.3 and Section~7}. We include the proof and Hermitian dilation
 to fix the normalization and retain both variance operators.
 
+\LeanMarker{P:finite-gaussian-matrix}
 \begin{proposition}[Finite Gaussian matrix moment]\label{P:finite-gaussian-matrix}
   Let $A_1,\ldots,A_N$ be complex $o$-by-$n$ matrices, with $o,n,N \ge 1$, and
   let $g_k$ be independent real standard Gaussians. Put
@@ -181,6 +184,7 @@ No-go~\ref{P:nogo-23} rules out a dimension-independent estimate that
 keeps only one of them.
 
 
+\LeanMarker{R:gaussian-one-variance-test}
 \begin{remark}[Both variance directions are necessary]
   \label{R:gaussian-one-variance-test}
   Let $n = 16$ and $A_k = e_k^{\mathsf{T}}$ be the coordinate row matrices. The

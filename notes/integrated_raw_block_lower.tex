@@ -48,6 +48,7 @@ for the $F$ integrated operator obtained by the bounded extension
 The convolution formula for $h$ extends smoothly to $s \in [0,2]$, covering
 these means. Ground templates will only use $s_m \in [0,1]$.
 
+\LeanMarker{L:raw-block-inputs}
 \begin{lemma}[Coupled Gaussian block inputs]\label{L:raw-block-inputs}
   Each $T_{\delta,m}$ is an isometry of the original test completion, respecting
   covariance-null tests. All $W_{\delta,m}$ and $Z$ are on the same given noise
@@ -248,6 +249,7 @@ $\epsilon_{\mathrm{op}}$ of $P_{\sigma_m}$, and adjacent indices $\sigma_m$ are
 within $\omega$, then the product satisfies the lower bound
 \eqref{E:raw-block-positive-product}.
 
+\LeanMarker{L:raw-block-indexed-cone}
 \begin{lemma}[Indexed cone and terminal displacement]
   \label{L:raw-block-indexed-cone}
   Fix $0 < \varrho < 1/2$. There are an integer $B \ge 1$ and positive
@@ -361,6 +363,7 @@ products are source limits in $L^2$ at fixed $\delta,N$. The proof of
 Proposition~\ref{P:raw-block-point-comparison} uses this to verify the
 source-limit premise of the masked comparison.
 
+\LeanMarker{L:raw-block-restart}
 \begin{lemma}[Composition over time blocks and regularized products]
   \label{L:raw-block-restart}
   Fix $\delta,B,N$ and let $L = \delta^{-1}$, $L_{\mathrm{ext}} = (N+1)B \ge L$.
@@ -571,6 +574,7 @@ $Y_{\delta,B}$ itself. The proof below obtains one on an event whose probability
 tends to one. It uses the estimates of Lemma~\ref{L:raw-block-uniform-error} and
 the cone bound of Lemma~\ref{L:raw-block-indexed-cone}.
 
+\LeanMarker{P:raw-block-original-lower}
 \begin{proposition}[Original point lower rate at the Gaussian quadratic cost]
   \label{P:raw-block-original-lower}
   For every original positive $\Psi$ and eligible fixed mask $R$ chosen above,

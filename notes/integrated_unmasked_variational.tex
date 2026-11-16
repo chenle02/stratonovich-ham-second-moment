@@ -24,6 +24,7 @@ We first record a bound for the covariance smoothed by the heat kernel. The
 proof of Lemma~\ref{L:variational-global-mean} uses it to bound
 $\Gamma*|D\Psi(t,\cdot)|$ uniformly in $t,x$.
 
+\LeanMarker{L:variational-heat-envelope}
 \begin{lemma}[Gaussian envelope for the original covariance]
   \label{L:variational-heat-envelope}
   For the normalized heat kernel $p_\epsilon(x) =
@@ -65,6 +66,7 @@ $\Gamma*|D\Psi(t,\cdot)|$ uniformly in $t,x$.
   This proves Lemma~\ref{L:variational-heat-envelope}.
 \end{proof}
 
+\LeanMarker{L:variational-global-mean}
 \begin{lemma}[Global regularity of the original mean]
   \label{L:variational-global-mean}
   Every mixed time and space derivative of $h_s$ is globally bounded in space,
@@ -104,6 +106,7 @@ Lemma~\ref{L:variational-global-mean} shows that $h_s$ is bounded by $M$ for $s
 to define the rate $\lambda_{\Psi,s}$ of the potential $h_s$ without a mask and
 to show that it is Lipschitz on $I$.
 
+\LeanMarker{P:variational-unmasked-rate}
 \begin{proposition}[The unmasked Rayleigh rate]
   \label{P:variational-unmasked-rate}
   On complex $L^2(\R^d)$, the operator $H_s = -\Delta-h_s$ is self-adjoint on
@@ -179,6 +182,7 @@ of the masked potential $m_Rh_s$, for one fixed mask. We now let the mask radius
 $R$ tend to infinity and replace this rate by the rate $\lambda_{\Psi,s}$ of
 Proposition~\ref{P:variational-unmasked-rate}.
 
+\LeanMarker{P:variational-remove-mask}
 \begin{proposition}[Monotone rates and the original point moment]
   \label{P:variational-remove-mask}
   There is an increasing family of admissible radial masks $m_R$ tending to one,
@@ -243,6 +247,7 @@ under a spatial dilation of the control. The proof of
 Proposition~\ref{P:variational-positive-scores} uses this to relate the
 variational values for different coefficients $c$.
 
+\LeanMarker{L:variational-control-dilation}
 \begin{lemma}[Radon and Rayleigh dilation]\label{L:variational-control-dilation}
   For $r > 0$ the map
   \begin{equation}\label{E:variational-control-dilation}
@@ -288,6 +293,7 @@ variational values for different coefficients $c$.
   invariant. This proves Lemma~\ref{L:variational-control-dilation}.
 \end{proof}
 
+\LeanMarker{P:variational-positive-scores}
 \begin{proposition}[Intrinsic variational lower bounds]
   \label{P:variational-positive-scores}
   For $c > 0$, the set of variational values

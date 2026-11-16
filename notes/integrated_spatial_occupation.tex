@@ -9,6 +9,7 @@ inequality used in the scalar powers and concavity. The finite variational value
 over nonnegative controls $S_1^{\mathrm{pos}}$ is that of
 Proposition~\ref{P:variational-positive-scores}.
 
+\LeanMarker{L:spatial-physical-pair}
 \begin{lemma}[The physical two-point integral]\label{L:spatial-physical-pair}
   The positive measure $\nu(\ud x,\ud y) = \ud x\,\Gamma(\ud y)$ is
   sigma-finite. For nonnegative functions define
@@ -37,6 +38,7 @@ $H^1$; initially $A_{\mathrm{sp}}$ is used only for smooth compact profiles
 before the extension below. For smooth compact $z$, write $U_z = \Gamma*z$ in
 its usual pointwise sense.
 
+\LeanMarker{L:spatial-static-controls}
 \begin{lemma}[Smooth temporal controls]\label{L:spatial-static-controls}
   For every nonnegative nonzero $z \in C_c^\infty(\R^d)$, let
   \[
@@ -98,6 +100,7 @@ its usual pointwise sense.
 The next estimate also allows zero covariance and does not use the finiteness
 of $S_1^{\mathrm{pos}}$.
 
+\LeanMarker{L:spatial-fourier-bound}
 \begin{lemma}[Deterministic Fourier bound for the spatial energy]
   \label{L:spatial-fourier-bound}
   Under Hypothesis~\ref{H:homog}, allowing $\Gamma=0$, let
@@ -168,6 +171,7 @@ nonnegative smooth spatial control of compact support. We now scale and
 dilate a single profile and optimize. The resulting bound depends on the
 profile only through the ratio of $A_{\mathrm{sp}}$ to a power of $b$.
 
+\LeanMarker{P:spatial-smooth-ratio}
 \begin{proposition}[The finite smooth spatial ratio]
   \label{P:spatial-smooth-ratio}
   For real unit $g \in C_c^\infty(\R^d)$ put $R(g) =
@@ -225,6 +229,7 @@ So far $A_{\mathrm{sp}}$ has been used only for smooth compact profiles.
 Proposition~\ref{P:occupation-physical-class} needs it and the square pairings
 for real $H^1$ profiles, so we extend them with the same constant $R_0$.
 
+\LeanMarker{P:spatial-four-linear}
 \begin{proposition}[The physical four-linear extension]
   \label{P:spatial-four-linear}
   For real $f \in H^1(\R^d)$ define $N(f) = \|f\|_2^{1-\alpha/4}\|\nabla
@@ -310,6 +315,7 @@ By Proposition~\ref{P:spatial-four-linear}, the ratio supremum is the same
 over smooth and over $H^1$ profiles. We now express it through an energy and
 restate the score bound in those terms.
 
+\LeanMarker{P:spatial-energy-map}
 \begin{proposition}[The spatial energy and static lower variational expression]
   \label{P:spatial-energy-map}
   Over all real unit $H^1$ profiles define the energy
@@ -373,6 +379,7 @@ and set $K_\star(0) = 0$ for time integration. The spatial estimates above
 concern individual $H^1$ profiles. To apply them to time-dependent families,
 we first compute the exact row bound for this time kernel.
 
+\LeanMarker{L:occupation-kernel-row}
 \begin{lemma}[Exact row maximum]\label{L:occupation-kernel-row}
   The kernel is even, positive off zero, locally integrable, decreasing on
   $(0,\infty)$, and $K_\star(u) \le |u|^{-a}$ off zero. Its exact row maximum on
@@ -398,6 +405,7 @@ $s\mapsto g_s$ on $(0,1)$ with $\|g_s\|_2 = 1$ a.e. and $T(g) =
 \int_0^1b(g_s)\ud s < \infty$. No time smoothness, common compact support or
 optimizer condition is imposed.
 
+\LeanMarker{P:occupation-physical-class}
 \begin{proposition}[The full physical occupation class]
   \label{P:occupation-physical-class}
   The pairings $(s,t)\mapsto B_\Gamma(g_s^2,g_t^2)$ are measurable,

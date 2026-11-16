@@ -33,6 +33,7 @@ integrals agree with the tempered pairings.
 
 \subsection{Translated spectral growth and physical masks}
 
+\LeanMarker{P:masked-spectral-growth}
 \begin{proposition}[Translated spectral mass]\label{P:masked-spectral-growth}
   Put
   \[
@@ -87,6 +88,7 @@ L > 0$. Define
   \qquad \rho_R(\eta) = c_d^2L\int |k_R(\xi-\eta)|\mu(\ud\xi).
 \end{equation}
 
+\LeanMarker{P:masked-auxiliary-norm}
 \begin{proposition}[Auxiliary mask norm]\label{P:masked-auxiliary-norm}
   The measure $\nu_R$ is even, tempered and Radon, with
   \begin{equation}\label{E:masked-auxiliary-growth}
@@ -143,6 +145,7 @@ L > 0$. Define
 The noise in~\eqref{E:cov} is also correlated in time, with kernel
 $|t-s|^{-a}$. We now complete the temporal tests in that form.
 
+\LeanMarker{L:masked-time-completion}
 \begin{lemma}[Temporal covariance completion]\label{L:masked-time-completion}
   Let $T > 0$. The form
   \[
@@ -190,6 +193,7 @@ real $\tau_j \in C_c^\infty(0,T)$ and real Schwartz $f_j$. These give
 $H_a$-valued Schwartz functions of $x$. Let $W$ denote the original real
 isonormal noise in~\eqref{E:cov}.
 
+\LeanMarker{P:masked-noise-completion}
 \begin{proposition}[Completion on the same noise]\label{P:masked-noise-completion}
   The space $\mathcal{D}$ belongs to the original test-noise completion and
   \begin{equation}\label{E:masked-actual-noise-norm}
@@ -259,6 +263,7 @@ another. No spatial representative for every auxiliary class, nonnegative
 physical inverse covariance for $\nu_R$, or uniform density bound in $R$ is
 asserted.
 
+\LeanMarker{P:masked-quotient-obstruction}
 \begin{proposition}[A physical mask need not preserve noise-null tests]
   \label{P:masked-quotient-obstruction}
   In the admissible case $d = 2$, $\alpha = 1$, $0 < a < 1$ and $\Gamma =
@@ -307,6 +312,7 @@ Write $\langle x\rangle = \sqrt{1+x^2}$. Let $I = [s,s+h] \subset [0,T]$, with
 $0 < h \le 1$. Norms below are those of the complexified temporal completion in
 Lemma~\ref{L:masked-time-completion}.
 
+\LeanMarker{L:masked-temporal-modulation}
 \begin{lemma}[Modulated amplitudes]\label{L:masked-temporal-modulation}
   Let $A \in C^1(I;\mathbb{C})$, $M = \sup_I|A|$ and $D = \sup_I|A'|$. For every
   real $\omega$,
@@ -358,6 +364,7 @@ Lemma~\ref{L:masked-temporal-modulation} treats one exponential mode. A
 product of two sines or cosines is a sum of four such modes, which we bound
 next.
 
+\LeanMarker{L:masked-trig-products}
 \begin{lemma}[Correlated trigonometric products]\label{L:masked-trig-products}
   Let $r,\rho \ge 0$. Let $P_r$ be either $\cos(rt)$ or $\sin(rt)$, and let
   $Q_\rho$ be either $\cos(\rho t)$ or $\sin(\rho t)$. With the amplitude and
@@ -389,6 +396,7 @@ next.
   used. This proves Lemma~\ref{L:masked-trig-products}.
 \end{proof}
 
+\LeanMarker{L:masked-continuous-wave}
 \begin{lemma}[Continuous sine factors]\label{L:masked-continuous-wave}
   Define $c_r(t) = \cos(rt)$ and
   \[

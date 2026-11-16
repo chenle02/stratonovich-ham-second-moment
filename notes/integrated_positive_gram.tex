@@ -23,6 +23,7 @@ allowed. For nonempty $A \subset \mathcal{J}$ and $w_i > 0$, set
 \end{equation}
 Set $d_\varnothing^C = 0$.
 
+\LeanMarker{L:gram-scalar-algebra}
 \begin{lemma}[Scalar and Hilbert identities]\label{L:gram-scalar-algebra}
   For real $\ell$, $w > 0$ and $t \ge 0$,
   \begin{equation}\label{E:gram-sqrt-dual}
@@ -98,6 +99,7 @@ Set $d_\varnothing^C = 0$.
   Lemma~\ref{L:gram-dual-minimum}.
 \end{proof}
 
+\LeanMarker{P:gram-positive-optimizer}
 \begin{proposition}[Positive conic maximizer]\label{P:gram-positive-optimizer}
   The finite real value in~\eqref{E:finite-gram-score} satisfies
   \begin{equation}\label{E:gram-active-duality}
@@ -181,6 +183,7 @@ semidefinite order.
 By Lemma~\ref{L:gram-realization}, $\mathscr{S}(C)$ depends only on the matrix
 $C$ and the data $\ell,b$. We can therefore compare two Gram matrices directly.
 
+\LeanMarker{P:gram-entrywise-comparison}
 \begin{proposition}[Entrywise Gram comparison]\label{P:gram-entrywise-comparison}
   Let $C,D$ be real symmetric positive semidefinite matrices on the same finite
   index set, with $0 \le C_{ij} \le D_{ij}$. With the same $\ell_i > 0,b_i \ge
