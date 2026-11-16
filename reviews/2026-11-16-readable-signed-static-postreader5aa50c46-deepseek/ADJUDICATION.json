@@ -1,0 +1,320 @@
+{
+  "review_record_id": "RP043",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "5aa50c46ef46e9544eb98ae8720ad92f7cd642a8",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_signed_static.tex",
+  "source_binding_sha256": "c3e20b64f6924f81d3cde3bd4c5f7d1fc73cacd65010c86bc4a16bae46fdeea9",
+  "public_report_sha256": "259f5d6af47ba09aa885d6723e82006d6067013f64965790f48d1c2a512abb09",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_ALL_FOUR_PUBLIC_RECONSTRUCTIONS_CHECKED_REPORT_ONLY_SIGN_TYPO_ROOT_REVIEWS",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:signed-limiting-multiplier": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:signed-closed-form": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:signed-spectral-wave": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:signed-physical-wave": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:signed-limiting-multiplier",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 19,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "0360d4da6fb2e1106e19d5b41cc3939543a96445df5797d87159e18545730f98",
+      "mathematical_check": "The public proof uses the unit constant-displacement input to recover the real compactly supported distribution V in H^-1/2, with convergence and uniqueness controlled by the operator norm. Displacement-column operators are Cauchy in B(H1/2,H^-1/2); compact smooth test multiplication identifies their limit with Vu, then density defines it on all H1/2. The actual output action (0,Vu+c1V,0,0) is explicitly correct; the loose heading zero columns is immediately spelled out as zero OUTPUT first-phase/constants and dependence on u,c1, not false annihilation of c1 input. The symmetric duality pairing and k norm bound extend continuously; real Hilbert complexification keeps the norm and cancels Hermitian cross terms. The newly introduced form pairing is a forward roadmap to the proved multiplier bound, not circular.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        11,
+        19
+      ],
+      "old_proof_lf": [
+        21,
+        37
+      ],
+      "old_statement_sha256": "7a16d6cacf8d1e623e39f2e76088223ea306357f6097ac1257cf7370743db58b",
+      "old_proof_sha256": "036aab3b533e9e7f9109860eeaaba9bf03dd5085891ebbf7a94346909db4e080",
+      "new_statement_lf": [
+        11,
+        19
+      ],
+      "new_proof_lf": [
+        21,
+        41
+      ],
+      "new_statement_sha256": "7a16d6cacf8d1e623e39f2e76088223ea306357f6097ac1257cf7370743db58b",
+      "new_proof_sha256": "d825f8d09986b083a127721a45685c45becb316dd9b78e815d746f211a8a072a"
+    },
+    {
+      "proof_id": "P:signed-closed-form",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 95,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "4cb11c33ed4b6fdeaf386a6878d7a4ce5836e5fd8d9e9c1688966c2651422685",
+      "mathematical_check": "The report derives H1/2^2<=||u||2||u||H1, Kbz<=z^2/2+K^2b^2/2 and both exact shifted inequalities at c=2+K^2,L_K=3(1+K^2). Completeness in the equivalent H1 norm, the named closed-form representation and a bounded spectral-slice contradiction give A>=1 and D(A1/2)=H1, with no H2 identification. Its completed-square resolvent variational formula gives inverse order and I-t resolvent order for the two positive operators on the common form domain. The positive scalar square-root integral, spectral Tonelli and both pairs (B0,2A),(A,L_K B0) yield square-root AS-FORM inequalities, hence fourth-power norm bounds. The report explicitly supplies H1 core/closedness extensions in both directions, obtaining D(A1/4)=H1/2 and exact2^-1/4,L_K^1/4 constants. Duality attained by A^-1/2v for nonzero L2 v and completion gives H^-1/2; v0 follows trivially. No additional noncommuting quarter-order premise is invented. Its observation that the core extension is compressed in the text is presentational; the form-domain inclusions are stated in source and the public report reconstructs them.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        45,
+        63
+      ],
+      "old_proof_lf": [
+        65,
+        115
+      ],
+      "old_statement_sha256": "370d420a32270ec56b96b589e46af9720cc879fb17ee64c756c0c383c84ee278",
+      "old_proof_sha256": "a6b2360484bc0c493434420cd993c9a236a17132695aee0ba50a9e8629965961",
+      "new_statement_lf": [
+        49,
+        67
+      ],
+      "new_proof_lf": [
+        69,
+        130
+      ],
+      "new_statement_sha256": "370d420a32270ec56b96b589e46af9720cc879fb17ee64c756c0c383c84ee278",
+      "new_proof_sha256": "c4ae58e6cb9b030ac5b089868c3b66727d9f597ce86e8942cdd00cdbdc7774e4"
+    },
+    {
+      "proof_id": "L:signed-spectral-wave",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 207,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "775635aca6a4f5f897936b47d2eba77245376dc6bbe406e79f4138b60beb7ca8",
+      "mathematical_check": "The public lower Rayleigh bound is at least -K^2 (K>=1); real unit bumps with growing dilation translated outside the compact distribution support give beta<=0 without positivity. Real/complex infima, PVM support/resolvent, approximate spectral vectors and nonzero unit spectral mass give equality of form infimum and spectral bottom, nonempty spectrum and h+c>=2. Quarter-phase bounds/duality give M_K=L_K^1/4 and condition cost M_K^2<=2(1+K). The new adapted isometry onto L2xL2 includes the extended negative-power velocity map. Public conjugation computes BOTH off-diagonal symbols sqrt(h+c)S_t and -hS_t/sqrt(h+c), using commuting functions of H=A-c; spectral cutoffs and bounded weighted entries extend to rough phase data. Positive/zero/negative h estimates are explicit, including rho*sinh(t rho)/sqrt(h+c)<=K exp(lambda t), sqrt(c)<=2K and no division by lambda. Entrywise norm and phase condition give8(1+K)^2(1+t)exp(lambda t). Dominated spectral calculus and addition formulas give strong continuity/group and graph-level extensions, no bottom eigenstate or gap.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        122,
+        134
+      ],
+      "old_proof_lf": [
+        136,
+        184
+      ],
+      "old_statement_sha256": "0dae04c068bbca68214694afc3e8a1e9e5ee07e99af1a493eec39c830f27dda9",
+      "old_proof_sha256": "00a6683f6be108ed703b82acbd8611d9887f57786552cf5d0840d0e306b06e43",
+      "new_statement_lf": [
+        137,
+        149
+      ],
+      "new_proof_lf": [
+        151,
+        226
+      ],
+      "new_statement_sha256": "0dae04c068bbca68214694afc3e8a1e9e5ee07e99af1a493eec39c830f27dda9",
+      "new_proof_sha256": "b6206762a1def8fe4efd36814ebac06615ebb66ecb2b63e623edd442c08617fd"
+    },
+    {
+      "proof_id": "P:signed-physical-wave",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 319,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "2aa69a4632d9148e665d6210b9361b3cf2b1950808802799b9b8bbeeb977c294",
+      "mathematical_check": "The public physical proof tests the represented form to obtain H u=-Delta u-Vu and then gives the CORRECT graph identity (1-Delta)u=u+H u+Vu. Its intervening u-(-Delta u) is a sign typo (R1), contradicted by its own immediately following correct formula. The correct formula and source agree and yield H3/2 plus graph continuity through ||u||H1^2<=2<Au,u>. The free generator domain H3/2xH1/2 is reconstructed in both directions using cutoffs and strong derivatives. Spectral graph data D(A)xD(A1/2) give graph-continuous, C1H1xL2 trajectories; the strong-group chain rule proves Duhamel before density/Volterra uniqueness, without assuming D(A3/4)=H3/2. Full F is handled separately by bounded-perturbation factorial Volterra sums. The report explicitly reconstructs norm-continuous compact conjugation using strong group and adjoint convergence, so the primitive is Lipschitz and its ordinary interaction equation is Young. For both constant columns it gives the response (c1+t c2,c2), the E variation-of-constants integral, the absolute Fubini triangle identity and K(1+s)|c| forcing bound. The exact integral t+t^2+t^3/6, the8/9 scalar coefficients, sqrt145<13 and13(1+K)^3<=16(1+K)^4 yield the fixed-control/radius F bound. No growing-radius or stochastic solution implication is inferred.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        190,
+        200
+      ],
+      "old_proof_lf": [
+        202,
+        265
+      ],
+      "old_statement_sha256": "e3155d6114753d359843e10b64e301f7985f9d584d2d40ce480a91202bac1184",
+      "old_proof_sha256": "135532f7eed65f254d264c79a3608ca31c9fdc425800c834f896969063a123a0",
+      "new_statement_lf": [
+        232,
+        242
+      ],
+      "new_proof_lf": [
+        244,
+        330
+      ],
+      "new_statement_sha256": "e3155d6114753d359843e10b64e301f7985f9d584d2d40ce480a91202bac1184",
+      "new_proof_sha256": "18c9e17b6838219c49601ebd49f6eb9ec6da4c7af0f432a66bde1a18d85af418"
+    }
+  ],
+  "mathematical_checks": [
+    "The public proof uses the unit constant-displacement input to recover the real compactly supported distribution V in H^-1/2, with convergence and uniqueness controlled by the operator norm. Displacement-column operators are Cauchy in B(H1/2,H^-1/2); compact smooth test multiplication identifies their limit with Vu, then density defines it on all H1/2. The actual output action (0,Vu+c1V,0,0) is explicitly correct; the loose heading zero columns is immediately spelled out as zero OUTPUT first-phase/constants and dependence on u,c1, not false annihilation of c1 input. The symmetric duality pairing and k norm bound extend continuously; real Hilbert complexification keeps the norm and cancels Hermitian cross terms. The newly introduced form pairing is a forward roadmap to the proved multiplier bound, not circular.",
+    "The report derives H1/2^2<=||u||2||u||H1, Kbz<=z^2/2+K^2b^2/2 and both exact shifted inequalities at c=2+K^2,L_K=3(1+K^2). Completeness in the equivalent H1 norm, the named closed-form representation and a bounded spectral-slice contradiction give A>=1 and D(A1/2)=H1, with no H2 identification. Its completed-square resolvent variational formula gives inverse order and I-t resolvent order for the two positive operators on the common form domain. The positive scalar square-root integral, spectral Tonelli and both pairs (B0,2A),(A,L_K B0) yield square-root AS-FORM inequalities, hence fourth-power norm bounds. The report explicitly supplies H1 core/closedness extensions in both directions, obtaining D(A1/4)=H1/2 and exact2^-1/4,L_K^1/4 constants. Duality attained by A^-1/2v for nonzero L2 v and completion gives H^-1/2; v0 follows trivially. No additional noncommuting quarter-order premise is invented. Its observation that the core extension is compressed in the text is presentational; the form-domain inclusions are stated in source and the public report reconstructs them.",
+    "The public lower Rayleigh bound is at least -K^2 (K>=1); real unit bumps with growing dilation translated outside the compact distribution support give beta<=0 without positivity. Real/complex infima, PVM support/resolvent, approximate spectral vectors and nonzero unit spectral mass give equality of form infimum and spectral bottom, nonempty spectrum and h+c>=2. Quarter-phase bounds/duality give M_K=L_K^1/4 and condition cost M_K^2<=2(1+K). The new adapted isometry onto L2xL2 includes the extended negative-power velocity map. Public conjugation computes BOTH off-diagonal symbols sqrt(h+c)S_t and -hS_t/sqrt(h+c), using commuting functions of H=A-c; spectral cutoffs and bounded weighted entries extend to rough phase data. Positive/zero/negative h estimates are explicit, including rho*sinh(t rho)/sqrt(h+c)<=K exp(lambda t), sqrt(c)<=2K and no division by lambda. Entrywise norm and phase condition give8(1+K)^2(1+t)exp(lambda t). Dominated spectral calculus and addition formulas give strong continuity/group and graph-level extensions, no bottom eigenstate or gap.",
+    "The public physical proof tests the represented form to obtain H u=-Delta u-Vu and then gives the CORRECT graph identity (1-Delta)u=u+H u+Vu. Its intervening u-(-Delta u) is a sign typo (R1), contradicted by its own immediately following correct formula. The correct formula and source agree and yield H3/2 plus graph continuity through ||u||H1^2<=2<Au,u>. The free generator domain H3/2xH1/2 is reconstructed in both directions using cutoffs and strong derivatives. Spectral graph data D(A)xD(A1/2) give graph-continuous, C1H1xL2 trajectories; the strong-group chain rule proves Duhamel before density/Volterra uniqueness, without assuming D(A3/4)=H3/2. Full F is handled separately by bounded-perturbation factorial Volterra sums. The report explicitly reconstructs norm-continuous compact conjugation using strong group and adjoint convergence, so the primitive is Lipschitz and its ordinary interaction equation is Young. For both constant columns it gives the response (c1+t c2,c2), the E variation-of-constants integral, the absolute Fubini triangle identity and K(1+s)|c| forcing bound. The exact integral t+t^2+t^3/6, the8/9 scalar coefficients, sqrt145<13 and13(1+K)^3<=16(1+K)^4 yield the fixed-control/radius F bound. No growing-radius or stochastic solution implication is inferred."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "classification": "report-only sign typo; correct graph identity and ensuing deduction independently present in same public paragraph",
+      "report_lf": 338,
+      "old": "(1-\\Delta)u=u-(-\\Delta u)=u+H_Vu+Vu",
+      "new": "(1-\\Delta)u=u+(-\\Delta u)=u+H_Vu+Vu",
+      "contrary_calculation": "By definition (1-Delta)u=u-Delta u=u+(-Delta u). The distributional equation H_Vu=-Delta u-Vu gives -Delta u=H_Vu+Vu. For any nonconstant compact smooth u, u-(-Delta u)=u+Delta u differs by2Delta u.",
+      "disposition": "Raw report unchanged. Its immediately following right-hand equality and all graph estimates use the correct sign, agreeing with the source. Thus the required graph deduction is publicly present despite a redundant false middle expression; no source repair or missing core reconstruction."
+    },
+    {
+      "id": "R2",
+      "classification": "report terminology precision about zero columns",
+      "report_lf": 47,
+      "disposition": "The phrase zero columns introduces a sentence that actually describes zero OUTPUT coordinates and dependence on u+c1. The report explicitly reconstructs the nonzero constant-displacement column, input displacement multiplier and final action (0,Vu+c1V,0,0); it does not make the older false claim that c1 is a zero input column. No mathematical error is inferred from that shorthand."
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 21586,
+      "sha256": "259f5d6af47ba09aa885d6723e82006d6067013f64965790f48d1c2a512abb09"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 6504,
+      "sha256": "9e17030e6f71c9405b3f12a05b715e8566f0cc0aaec3b5328e2923fdc2a6f276"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 6197,
+      "sha256": "00f2be250a768253cf98e9d7774352a5b5c664d2465c7f06fce637bd3f1ab061"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 4156,
+      "sha256": "c3e20b64f6924f81d3cde3bd4c5f7d1fc73cacd65010c86bc4a16bae46fdeea9"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 8513,
+      "sha256": "289e836f6b8997f5b2e72732e78521178866d4e4b76e4f0dbfe753491705a4a8"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 4292,
+      "sha256": "7ebad92d879746c21514575e51850cd82cef70ead331f7ae08148542498a7797"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 14299,
+      "sha256": "d49c6954d587572a6e3d027945a6e86fe6632bbbdf00ab15ecb852602e77d8b9"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 16943,
+      "sha256": "fc54852ab4eb26efab97f1f08f99cb117f9f7f755acbe8e6bbb4e0a8a25afc11"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-constant-young-baseline.txt",
+      "bytes": 27376,
+      "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+    },
+    {
+      "path": "inputs/context-compact-gaussian-baseline.txt",
+      "bytes": 30608,
+      "sha256": "caf9e56a5b818f9e5daa02ac3423c354b95c515f1932d92170ec002b0fbaa84a"
+    },
+    {
+      "path": "inputs/context-cameron-mean-baseline.txt",
+      "bytes": 24138,
+      "sha256": "0ecbf05a70a7d5d79c9e2285dcadb93567687d4e463bfe4f6b0fdac5ff6f016d"
+    },
+    {
+      "path": "inputs/context-compact-mean-family-baseline.txt",
+      "bytes": 25917,
+      "sha256": "39946946cc52bee56eb5ec2ab44111a2e8873df9b17ef65d322c0b42066325ca"
+    }
+  ],
+  "input_identity_checks": "All delivered payload hashes verified; every WHOLE_FILE payload compared byte-for-byte with pinned Git; every complete OLD/NEW statement/proof matched inclusive LF,bytes,SHA. Current complete NEW and all public math reasons read; complete OLD baseline byte-identical to previously fully read baseline.",
+  "source_currentness": {
+    "covered_launch_revision": "5aa50c46ef46e9544eb98ae8720ad92f7cd642a8",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "prior_RP016_or_RP041_scope_grade_or_adjudication_rebound": false,
+    "limit": "Covers exactly5aa50c46 versuscdde, including the explicit multiplier pairing and adapted phase explanations in this packet. No whole-book or unexamined successor coverage."
+  },
+  "read_limits": [
+    "All four complete assigned OLD/NEW statements/proofs, every actual public reason, AUDIT and finding checked. Needed supplied constant/Young, compactness, multiplier, phase and form-representation declarations checked under application hypotheses. Named upstream theorem proofs remain unassigned; no primary PDF/image source review.",
+    "No native export, hidden reasoning, events/transport reading, provider/model/probe, callback, source/public/Git/PDF edit or build. Prior scope grades remain unchanged."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority"
+}

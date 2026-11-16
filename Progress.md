@@ -36,6 +36,17 @@ reread series and later source versions at the final synchronization gate.
 
 
 
+**Both final Chapter 9 post-reader reports recorded:** RP042 on `32919d54`
+and RP043 on `5aa50c46` each return PASS/high. All nine OLD/NEW readings and
+public reconstructions are complete/checked, including all six reader
+explanations. No source edit is identified; report-only sign/normalization
+notes remain explicit, with per-proof confidence null. Together with RP040's
+unchanged final radius source `9df46108`, this gives scoped current-version
+reading/reconstruction evidence for Chapter 9's 14 proof pairs. It does not
+rebind older reports, erase their partial/protocol limits or upgrade a whole-
+book grade. See `POSTREADER-042-043-INDEX.json`; Appendix E must preserve this
+source-version lineage and the actual attempt history at final sync.
+
 **RP042 current post-reader uniform-mean report recorded:** Fresh V4 Pro
 returned PASS/high on exactly `32919d54` versus cdde. All five assigned OLD/NEW
 readings and public reconstructions are complete/checked, including the four
