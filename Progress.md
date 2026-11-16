@@ -92,6 +92,19 @@ or upgrades of historical review grades. No independent calls have been spent
 on those two versions. Subsequent source changes require exact byte/version
 reconciliation rather than transferring a result to a new proof body silently.
 
+### RP003 frozen: the Gaussian operator path
+
+All nine proof pairs of `notes/integrated_actual_operator_driver.tex` at
+`c1af3fcf` against `cdde711c` are assigned in
+`reviews/2026-11-16-readable-operator-driver-deepseek/`. The final proof is
+owned by its explicit heading `P:actual-operator-driver`, not the preceding
+lemma. Exact raw source blocks, immutable upstream baseline context and the
+nine-row statement/proof inventory were checked. Fresh native configuration
+preflight verifies DeepSeek V4 Pro and all global/agent tools denied. The
+requested cap is 65,536 and timeout 3,600 seconds; one fresh pure session,
+no coordinator retry, continuation or fallback. Worker QA supports the nine
+arguments; no independent result is claimed before dispatch.
+
 The older publication-frontier headings below are dated snapshots; they do
 not authorize restarting their old completed calls or override this narrow
 assignment and Le's later recorded decisions.
