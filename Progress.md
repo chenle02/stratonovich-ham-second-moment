@@ -61,7 +61,7 @@ The plan above is an intra-round checkpoint, not whole-book clearance.
 ## Live team status — read before messaging
 
 <!-- team-status:start -->
-Snapshot UTC: 2026-11-16T13:19:04.599307+00:00. Agent5 maintains this shared workflow summary from owner
+Snapshot UTC: 2026-11-16T15:19:30.337662+00:00. Agent5 maintains this shared workflow summary from owner
 receipts and exact artifacts; owners retain their dated evidence below.
 This summary does not grant scientific, execution, source-slot or release
 approval. Earlier dated checkpoints remain history. Read before messaging;
@@ -74,7 +74,7 @@ submitting unsent drafts or selecting pending choices.
   with aggregate usage/cost/cap unknown; IC/CH PARTIAL; broad cold read
   INCONCLUSIVE/medium; Chapter12 skeptic NOT OBTAINED. Le's honest-standing
   choice eeaa40e2 does not make those grades whole-book HIGH.
-- Post-exposition rereads are a separate provisional series. Snapshot ab012efb
+- Post-exposition rereads are a separate series. HISTORICAL snapshot ab012efb
   records17 attempts/16 reports/96 assigned pairs:92 CHECKED,3 PARTIAL,1 no-report.
   Protocol-held11 pairs OVERLAP those counts (10 CHECKED,1 PARTIAL);82 CHECKED
   have no observed protocol incident. Per-proof confidence is unreported,
@@ -87,11 +87,14 @@ submitting unsent drafts or selecting pending choices.
   relaunch/confidence retry/tools/fallback. Native recovery is disclosed and
   aggregate usage/cost/cap stays unknown where it occurs; no custom client
   is approved. Old protocol holds and mathematical gaps remain separate.
-- Current sequencing: unchanging five no-go scopes were allowed underB;
-  all further core dispatches wait for explicit chapter/file FINAL after any
-  chosen reader dispositions,16's check and3's source/policy checks. A state
-  table is not a release list. Already-active calls finish on their old inputs.
-  RP007 is on the main path; no unconditional repeat.
+- Per-file FINAL,16 verification and3 source/policy checks remain required;
+  a state table is not a release list. The five editorial source successors
+  were released after the exact approved16fdc47b changes, including three
+  statement typo corrections; old reports remain bound to old source bytes.
+  Main-file RP065-RP070 on58108ca3 all produced public reports; their six-run
+  controller ended15:15:02UTC. This is raw transport completion, not author
+  adjudication or final coverage.3 owns the remaining series and disposition.
+  RP007's old budget-repeat grant is not an unconditional new-source repeat.
 - Le has also authorized fresh rereads for CHANGED+FINAL necessity successors
   under ChoiceB rules (16 receipt1170b0dc79af). Old reports stay on old commits;
   this is not a confidence-only rerun or blanket source/release clearance.
@@ -108,10 +111,12 @@ submitting unsent drafts or selecting pending choices.
   expand where a competent graduate reader would otherwise stop, use24's
   cautious judgement, do not pad, repeat a fact or rederive a cited result.
   No word-growth quota. An independent stop-point reader is optional, not a gate.
-- 169 main-path result labels resolve structurally to169 distinct proofs at
-  f06cb607. That lookup establishes ownership, not sufficient depth or science.
-  Per-file reports must say CHANGED+FINAL or UNCHANGED/JUDGED_SUFFICIENT;
-  preserve original statements, displays, labels, references and argument scope.
+- Historical ownership lookup:169 main-path labels resolve to169 proofs at
+  f06cb607. The accepted symplectic setup deletion later changes G.1 to168/180
+  reachable results: P:symplectic-raw is not reached; this is not a new flaw.
+  Ownership lookup is not sufficient depth or science. Per-file reports say
+  CHANGED+FINAL or UNCHANGED/JUDGED_SUFFICIENT; preserve original scope and
+  bytes except the separately approved exact deletions and typo corrections.
 
 ### Agent16 — final publication process
 
@@ -124,14 +129,21 @@ submitting unsent drafts or selecting pending choices.
   retained, maps/gates pass (known pilot WARN retained); own pinned481-page
   PDF byte-identical. This verifies the tip, not intermediate a105's offset PDF.
   It is not mathematical, quoted-step or final presentation acceptance.
-- Necessity successors remain HELD. Le accepted Chapter9 removal-only results
-  and the applicable rereads were launched. Selected reader additions have
-  since made uniform_mean/signed_static provisional again (3 receipt75bf125f7f43);
-  radius_anchor remains final. RP039/RP041 finish only their old inputs, without
-  cancellation, relaunch or transfer to revised bodies. No global restart.
-- Whole-candidate work and the AppendixE/managed-disclosure SOURCE_SLOT still
-  require16's word. R/F/public release are not issued by mechanical checks,
-  policyB, optional-reader choices or this summary. Le retains final decisions.
+- Whole-candidate steps a-c through e6d33780 are VERIFIED by16: merge d9f0b039,
+  numbers-only reader33146e0f and canonical combined rebuild; own pinned
+  470/28/501 PDFs byte-identical. AppendixF, markers and G data regenerate
+  unchanged;22's Lean-side check passes. No unnecessary step-d commit.
+- Preface76e88649 -> d79fc8da is verified at471/28/502 pages, but Le has further
+  Preface requests with24; it is not settled. Three drawings are approved AS IS
+  directly through16:5.1 bd7fd57d,10.1 8cbdc119,10.2 6cac4e53. Source-only
+  integrations27518cf5 -> eb709dc9 ->92cebe08 are verified, book471 pages;
+  reader/combined refresh waits24's final Preface sequence. Do not mix these
+  intermediate book and earlier combined PDFs as one coherent source build.
+- 3 confirms5.1's new projection sentence from L:source-retaining-isometry
+  (23fbca2e1bd7); this is author QA, not a new independent scientific vote.
+- D/E recent-reread disclosures, final VERIFICATION revision and3's reseal
+  wait for the last report and adjudication, then16's source slot. R/F/public
+  release are not granted by builds, policyB or this summary. Le decides.
 - Exact release SHA/REVIEW_SYNC_ATTESTATION, current3 reseal, filtered equality,
   rehearsal/audit and Le acceptance remain. Keep origin quiet during final
   export/publish. ArXiv is BOOK ONLY; Le alone submits.
@@ -161,12 +173,12 @@ submitting unsent drafts or selecting pending choices.
 - Stable first-pass source coverage and method evidence is retained under
   private/publication-closeout/agent5-supervision-20261115/proof-inventory-16b6567a/.
   Count actual input closures, not generated combined text or running sums.
-- Honest recent-reread AppendixE/front-door material is PRIVATE DRAFT ONLY:
-  retain historical grades/OptionA, partial reconstructions, protocol overlaps,
-  unknown usage and no-report/unlaunched scope. Do not edit notes, managedAIUSE,
-  front doors, buildC, reseal or push that unit before16 names its source slot.
-  Recompute from the final settled index; a provisional snapshot is not a study
-  completion or source-adoption decision. Two typo corrections are a private aid.
+- The recent-reread D/E unit still waits for the last adjudication and16's
+  source slot: retain historical grades/OptionA, partial reconstructions,
+  protocol overlaps, unknown usage and no-report/unlaunched scope. Recompute
+  its final snapshot before touching managed disclosures or AppendixE.
+  This unit's hold does not undo16's separately authorized whole-candidate
+  composition or the approved Preface/figure commits. No early reseal/push.
 - When16 authorizes the final source slot: update actual source/disclosures and
   generated data, coherently build affected book/reader/combined editions, then
   3 reseals,22 checks source correspondence and16 verifies. No stacked PDFs.
@@ -194,7 +206,8 @@ submitting unsent drafts or selecting pending choices.
 - Reliable previews distinguish adopted427/28/458 from exact HELD proof drafts.
   Coverage counts are not readability, scientific or publication acceptance.
   The old d96 lookup is historical, not22's final reading queue.
-- Reusable lessons are retained in Le-AI-Lab582070a2 with runtime parity verified.
+- Reusable lessons are published through Le-AI-Lab2f980906, with exact reviewed
+  reference bytes and Claude/Codex/OpenCode runtime parity verified.
   Preserve all foreign WIP, review/cost limitations and explicit Le-only decisions.
 <!-- team-status:end -->
 
