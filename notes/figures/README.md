@@ -16,13 +16,13 @@ They do not replace the proofs.
 | `two-chain-pairings.tex` | Self-pairs, cross-pairs and unequal chain lengths; ordering is only within each chain | Yes |
 | `order-of-limits.tex` + `order-of-limits-drawing.tex` | Numbered Green-before-noise construction; joint width approaches and the separate summable-tail passage | Technical detail |
 | `common-noise.tex` + `common-noise-drawing.tex` | One fixed Gaussian extension; the auxiliary channel may contribute at a cutoff and vanishes on the original range | Yes |
-| `light-cone.tex` | The backward domain of dependence lies inside the cutoff plateau; both displacement and velocity matter | Yes |
+| `light-cone.tex` + `light-cone-drawing.tex` | The backward domain of dependence lies inside the cutoff plateau; both displacement and velocity matter | Yes |
 | `global-control-blocks.tex` | Correlated blocks, the true final shortened interval, and one global Gaussian cost | Yes |
 | `hermite-cutoff.tex` | The degree bound for every prefix of a selected Gaussian word, including lowering steps | Technical detail |
 | `dyadic-cover.tex` | Three shifted interval grids and the infinite covariance majorant | Technical detail |
 | `white-strip.tex` | The rectangle/strip intersection behind the fourth-order spatial-white calculation | Technical detail |
 | `positive-gram.tex` | Positive combinations without inverse Gram matrices; singular and zero cases remain allowed | Yes |
-| `gaussian-enlargement.tex` | An image of a Hilbert ball enlarging a Gaussian event; the control norm is not Euclidean distance | Technical detail |
+| `gaussian-enlargement.tex` + `gaussian-enlargement-drawing.tex` | An image of a Hilbert ball enlarging a Gaussian event; the control norm is not Euclidean distance | Technical detail |
 
 The reader figures stay at their explanatory locations. Technical figures use
 normal floats. Blue arrows and dashed covariance pairs provide distinct cues
