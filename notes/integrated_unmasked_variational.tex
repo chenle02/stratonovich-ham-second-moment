@@ -40,6 +40,14 @@ $\Gamma*|D\Psi(t,\cdot)|$ uniformly in $t,x$.
 \end{lemma}
 
 \begin{proof}
+  We first use temperedness to make all Gaussian pairings finite. We identify
+  the convolution and spectral expressions as continuous distributions, then
+  use positivity to obtain the bound by the value at zero.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain integrable majorants for the Gaussian
+  weights.
   A positive tempered Radon measure has polynomial ball growth. Indeed, evaluate
   its tempered bound on a nonnegative smooth cutoff equal to one on $B_1$,
   dilated by $R \ge 1$. Its finitely many Schwartz seminorms are bounded by
@@ -50,6 +58,14 @@ $\Gamma*|D\Psi(t,\cdot)|$ uniformly in $t,x$.
   in $x$: on compact $x$ sets its translated Gaussian derivatives are bounded by
   any fixed sufficiently fast polynomial weight in the integration variable.
 
+  On the annulus $2^j\le |x|<2^{j+1}$, the mass bound contributes at most a
+  constant times $2^{jN}$ and the decreasing weight contributes at most a
+  constant times $2^{-jL}$. Their product is summable when $L>N$. A Gaussian
+  and each of its derivatives decrease faster than any such polynomial weight.
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the two continuous expressions and
+  bound their common value.
   Pair the convolution with a Schwartz test $\varphi$. Absolute Fubini is
   justified by these weights. The resulting pairing is that of $\Gamma$ with
   $p_\epsilon*\varphi$. Applying the spectral convention in
@@ -63,6 +79,10 @@ $\Gamma*|D\Psi(t,\cdot)|$ uniformly in $t,x$.
   nonnegative. Evenness of $\mu$ makes the spectral integral real, and its
   absolute value is bounded by its total Gaussian mass, the value at zero.
   Finally, $\Gamma \ne 0$ and $p_\epsilon > 0$ give strict positivity there.
+  The spectral phase has modulus one, so the absolute value of its integral is
+  at most the integral of the positive Gaussian weight. At $x=0$ that phase is
+  one. Physical positivity makes the common value nonnegative, completing the
+  two-sided comparison.
   This proves Lemma~\ref{L:variational-heat-envelope}.
 \end{proof}
 
@@ -92,6 +112,10 @@ $\Gamma*|D\Psi(t,\cdot)|$ uniformly in $t,x$.
     h_s(x)=\int_\R |r|^{-a}
     (\Gamma*\Psi(s-r,\cdot))(x)\ud r.
   \]
+  The extension of the test is supported in one bounded time interval. For $s$
+  in a fixed compact interval, the condition that $\Psi(s-r,\cdot)$ is nonzero
+  therefore confines $r$ to another fixed bounded interval. This confinement
+  also holds for every derivative of the test.
   For $s$ in a compact interval the relevant $r$ lie in a fixed bounded
   interval. The preceding global bound times $|r|^{-a}$ is integrable since $a <
   1$. Every derivative thus falls on the smooth test and passes through the
@@ -123,6 +147,15 @@ to show that it is Lipschitz on $I$.
 \end{proposition}
 
 \begin{proof}
+  We construct the unmasked self-adjoint operator using bounded perturbation
+  and identify its form domain. The spectral theorem gives the real Rayleigh
+  formula; the common compact trial makes its bottom uniformly negative and
+  its square-root rate Lipschitz.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove self-adjointness on the stated operator
+  domain.
   The Fourier Laplacian $A = -\Delta$ is self-adjoint on $H^2$, being
   multiplication by $|\xi|^2$ with its maximal domain. Multiplication $B_s =
   -h_s$ is bounded self-adjoint with norm at most $M$. Thus, $H_s = A+B_s$ is
@@ -137,6 +170,14 @@ to show that it is Lipschitz on $I$.
   \in \ker(H_s^*-ib) = \operatorname{Ran}(H_s+ib)^\perp = \{0\}$. Hence,
   $D(H_s^*) = D(H_s)$.
 
+  Surjectivity at both imaginary spectral parameters is the key point in the
+  adjoint-domain argument. Solving at $-ib$ produces $v$, while surjectivity
+  at $+ib$ makes the orthogonal complement of its range zero. Thus, the vector
+  $u-v$ must vanish, giving the reverse domain inclusion.
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the form domain by equivalent
+  completions.
   Set $c_{\mathrm{shift}} = 1+M$ and $J_s = H_s+c_{\mathrm{shift}} \ge 1$.
   Integration by parts on $H^2$ gives
   \[
@@ -149,6 +190,10 @@ to show that it is Lipschitz on $I$.
   equivalent norms identifies $D(J_s^{1/2})$ and $H^1$ as $L^2$ subspaces, since
   both norms dominate $L^2$. This proves the stated form domain.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We obtain the real Rayleigh formula without an
+  eigenstate assumption.
   The spectral lower bound gives one direction of the Rayleigh identity. For the
   reverse, nonzero spectral projections in $[E_s,E_s+\epsilon]$ give unit $H^2$
   vectors with Rayleigh values at most $E_s+\epsilon$. The bottom is finite
@@ -159,6 +204,16 @@ to show that it is Lipschitz on $I$.
   following negative upper bound justifies writing that value as
   $\lambda_{\Psi,s}^2$ in~\eqref{E:variational-real-rayleigh}.
 
+  A vector with spectral support in the bounded interval $[E_s,E_s+\epsilon]$
+  belongs to the operator domain, because the spectral multiplier is bounded
+  on that support. Its normalized spectral measure has total mass one, so its
+  Rayleigh quotient lies in the same interval. For a complex vector, the
+  numerator and squared norm split into real and imaginary parts; at least one
+  nonzero real part has quotient no greater than their weighted average.
+
+  \medskip
+  \noindent\textit{Step 4.~}We obtain strict negativity and uniform rate
+  continuity.
   Proposition~\ref{P:compact-original-common-trial} supplies, for this original
   $\Psi$, one unit compactly supported $w$ and a finite plateau mask with a
   common strictly negative upper bound $\epsilon_0 > 0$. Its trial has support
@@ -197,6 +252,13 @@ Proposition~\ref{P:variational-unmasked-rate}.
 \end{proposition}
 
 \begin{proof}
+  We choose nested physical masks, compare their Rayleigh suprema with the
+  unmasked supremum, and prove uniform convergence in the time parameter. We
+  then take a numerical supremum of already established fixed-mask bounds.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the nested masks.
   Put $F(t) = e^{-1/t}$ for $t > 0$ and zero otherwise, and define
   \[
     \chi(r)=\frac{F(2-r)}{F(2-r)+F(r-1)},\qquad
@@ -208,6 +270,10 @@ Proposition~\ref{P:variational-unmasked-rate}.
   $\chi$ is constant near zero, $m_R$ is smooth also at the spatial origin.
   These even $[0,1]$ masks increase pointwise to one.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We pass the Rayleigh values and rates to their
+  unmasked limits.
   Choose $R_0$ so the preceding common trial lies in the plateau. Every $R \ge
   R_0$ has the same negative margin. For each fixed $R$, the compact-family
   theorem applies to $m_Rh_s$. Its real Rayleigh formula follows from the same
@@ -222,6 +288,10 @@ Proposition~\ref{P:variational-unmasked-rate}.
     \left(\int m_Rh_sf^2-\|\nabla f\|_2^2\right)
     =\lambda_{\Psi,s}^2.
   \]
+  For each fixed test, $0\le m_Rh_sf^2\le M f^2$, an integrable majorant. Its
+  potential integral therefore converges to the unmasked one. Taking the
+  supremum over the product of the radius and test index sets in either order
+  gives the displayed equality; no maximizer is required.
   Only two numerical suprema were interchanged. Positive square roots give the
   pointwise rate convergence. For $R_n = R_0+n$ and $\epsilon > 0$, the
   increasing open sets $\{s:\lambda_{\Psi,s}-\lambda_{R_n,s}<\epsilon\}$ cover
@@ -229,6 +299,15 @@ Proposition~\ref{P:variational-unmasked-rate}.
   convergence. Monotonicity extends it to all real $R \to \infty$. Therefore,
   $\int_I\lambda_{R,s}\ud s\uparrow I_\Psi$.
 
+  The difference of the limiting rate and each masked rate is continuous and
+  nonnegative. Once the largest set in a finite subcover contains all of $I$,
+  its error is below $\epsilon$ everywhere. Larger radii only decrease that
+  error. This is a deterministic compactness argument for rates, not
+  convergence of unmasked random flows.
+
+  \medskip
+  \noindent\textit{Step 3.~}We take the supremum of fixed-mask moment lower
+  bounds.
   At each fixed $R$ use this very same mask in the operator path and mean when
   applying Proposition~\ref{P:raw-block-original-lower}. It gives the lower
   bound with $2\int_I\lambda_{R,s}\ud s-v_\Psi/2$ for the same original point
@@ -264,6 +343,13 @@ variational values for different coefficients $c$.
 \end{lemma}
 
 \begin{proof}
+  We apply the homogeneous Radon pushforward to the covariance mean and the
+  Lebesgue Jacobian to its cost. We then dilate the unit Rayleigh tests to
+  identify the rate and its time integral.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We scale the original mean and covariance cost.
   Positive dilation preserves the full smooth positive nonzero class;
   multiplication of its amplitude powers gives the stated inverse. Homogeneity
   of the physical Radon measure gives, for every nonnegative measurable $G$,
@@ -282,6 +368,13 @@ variational values for different coefficients $c$.
   This distinguishes the Radon pushforward from the spatial volume factor; it
   includes singular covariances and white noise.
 
+  The mean has one amplitude factor $r^{d+2-\alpha}$ and one Radon factor
+  $r^{\alpha-d}$, whose product is $r^2$. In the cost pairing, multiplying by
+  that mean adds $r^2$, while the spatial Lebesgue substitution contributes
+  $r^{-d}$. This accounts separately for every exponent in the cost identity.
+
+  \medskip
+  \noindent\textit{Step 2.~}We scale the full set of Rayleigh tests.
   The map $U_rf(x) = r^{d/2}f(rx)$ is a unitary bijection on real $L^2$,
   preserving $H^1,H^2$ as sets under its inverse. Weak derivatives give
   $\|\nabla U_rf\|_2^2 = r^2\|\nabla f\|_2^2$ and $\int h_{D_r\Psi,s}(U_rf)^2 =
@@ -311,6 +404,13 @@ variational values for different coefficients $c$.
 \end{proposition}
 
 \begin{proof}
+  We first construct a positive coefficient-one value and scale the entire
+  class of values. We use the independently proved point upper bound to show
+  these sets are bounded above before taking their finite real suprema.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We exhibit a positive value.
   Write $k = 3-\alpha > 0$, $q = 4-\alpha = k+1$ and $m = q/k > 1$. Fix one
   $\Psi_0$ from the nonempty class and put $I_0 = I_{\Psi_0} > 0$, $v_0 =
   v_{\Psi_0} > 0$. Positivity of the latter is
@@ -320,8 +420,15 @@ variational values for different coefficients $c$.
     I_{D_{r_0}\Psi_0}-v_{D_{r_0}\Psi_0}/2
     =r_0I_0-r_0^qv_0/2=r_0I_0/2>0.
   \]
+  The definition of $r_0$ gives $r_0^k=I_0/v_0$. Since $q=k+1$, it follows
+  that $r_0^qv_0=r_0I_0$. Thus, subtracting half the cost leaves exactly half
+  of the positive linear term.
   This positive value is obtained from a smooth nonnegative control.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We scale the whole coefficient-one set
+  bijectively.
   For $c > 0$ put $r_c = c^{1/k}$ and $K_c = c^m > 0$.
   Lemma~\ref{L:variational-control-dilation} and the exact scalar powers give,
   for every $\Psi$,
@@ -329,10 +436,17 @@ variational values for different coefficients $c$.
     cI_{D_{r_c}\Psi}-v_{D_{r_c}\Psi}/2
     =K_c(I_\Psi-v_\Psi/2).
   \end{equation}
+  The two scalar factors agree: $cr_c=c^{1+1/k}=c^{q/k}=K_c$ and
+  $r_c^q=c^{q/k}=K_c$. Consequently, dilation multiplies the linear reward and
+  the quadratic cost by the same factor for this choice of $r_c$.
   Since $D_{r_c}$ is a bijection of the entire class, the whole set of
   variational values with coefficient $c$ is $K_c$ times the whole
   coefficient-one set of variational values.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We bound the sets using the original point upper
+  estimate.
   We prove boundedness before taking finite-real suprema. The independent
   Theorem~\ref{T:full-upper}, for the \emph{same canonical solution}, gives
   \[
@@ -351,6 +465,10 @@ variational values for different coefficients $c$.
   nonempty set has a finite real supremum $S_1^{\mathrm{pos}} > 0$ by the
   positive test above.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We take finite real suprema and retain their
+  interpretation.
   For general $c$, set equality and $K_c > 0$ show that $K_cS_1^{\mathrm{pos}}$
   is the supremum: it is an upper bound, and every smaller number is exceeded by
   $K_c$ times a coefficient-one variational expression within the corresponding
