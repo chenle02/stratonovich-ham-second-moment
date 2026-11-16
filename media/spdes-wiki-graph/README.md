@@ -18,3 +18,5 @@ width. Some pages are linked only for a side remark. It is shown in the preface
 after the paragraph on looking references up instead of recalling them. It is
 the print version, on a white background, of a figure made for the video series;
 four long titles are shortened, as listed in `PROVENANCE.json`.
+
+[held back: collaborators' unpublished work]
