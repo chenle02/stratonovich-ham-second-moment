@@ -114,7 +114,7 @@ def lean_cell(row):
     if k == "same-assumptions":
         return (f"formalized, narrower conclusion ({nc})", "same-narrow") if w == "weaker" else (f"formalized in full ({nc})", "same-full")
     if k == "inputs-supplied":
-        return (f"inputs supplied ({nc})", "inputs") if w == "weaker" else (f"every conclusion, inputs supplied ({nc})", "inputs-full")
+        return (f"steps checked ({nc})", "inputs") if w == "weaker" else (f"every conclusion, inputs supplied ({nc})", "inputs-full")
     sys.exit(f"unknown Lean class {k} for {row['paper']['label']}")
 
 
@@ -155,7 +155,7 @@ def build(cfg, read_rev, tex_rev, current):
 - `formalized in full`: the result's conclusions are proved in Lean under the manuscript's own hypotheses (sometimes through an exact-hypothesis wrapper of a more general Lean theorem). The setting `H:homog` is modelled in Lean.
 - `formalized, narrower conclusion`: as above, but Lean proves only part of the conclusion; the companion's `coverage.yaml` row says which part.
 - `every conclusion, inputs supplied`: every conclusion is proved in Lean, with the named analytic inputs entering as explicit hypotheses.
-- `inputs supplied`: Lean checks steps, parts or a narrower form of the result; analytic and probabilistic facts either enter as explicit hypotheses or stay outside Lean. The result itself is not checked.
+- `steps checked`: Lean checks steps, parts or a narrower form of the result; analytic and probabilistic facts either enter as explicit hypotheses or stay outside Lean. The result itself is not checked.
 - `outside Lean`: recorded in the companion's coverage file but not formalized ({WORDS[outside_main]} of the {WORDS[len(cfg['main_theorems'])]} main theorems; the SPDE, stochastic integrals and analytic asymptotics are outside Lean).
 - `no Lean claim`: no Lean declaration is mapped to this label.
 - The count in brackets is the number of companion claims mapped to the row. A Lean entry never certifies the analytic inputs, and it is AI-checked correspondence, not human verification.
@@ -185,10 +185,10 @@ def build(cfg, read_rev, tex_rev, current):
     notes = f"""## Notes
 
 - Results: {len(res)} ({', '.join(f"{kinds[k]} {PLURAL[k]}" for k in PLURAL)}).
-- Lean: {leanc['same-full']} formalized in full, {leanc['same-narrow']} formalized with a narrower conclusion, {leanc['inputs-full']} with every conclusion and inputs supplied, {leanc['inputs']} with inputs supplied, {leanc['outside']} outside Lean, {leanc['none']} with no Lean claim.
+- Lean: {leanc['same-full']} formalized in full, {leanc['same-narrow']} formalized with a narrower conclusion, {leanc['inputs-full']} with every conclusion and inputs supplied, {leanc['inputs']} with steps checked, {leanc['outside']} outside Lean, {leanc['none']} with no Lean claim.
 - `T:first` and `T:crude` restate results of the cited source; their titles give the citation key and pinpoint.
 - The companion's coverage file also maps {len(other)} labels that are not numbered theorems, propositions, lemmas or corollaries (displayed equations and a remark), class {other_classes}. They have no rows here.
-- Manuscript read at origin/master `{read_rev}`; the book's TeX there is as at `{tex_rev}`. {lean_source}
+- Manuscript read at revision `{read_rev}`; the book's TeX there is as at `{tex_rev}`. {lean_source}
 """
     doc = re.sub(r"## Notes\n.*\Z", lambda m: notes, doc, flags=re.S)
     return doc

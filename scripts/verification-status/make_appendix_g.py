@@ -37,11 +37,11 @@ LEAN = [
     ("formalized in full", ("same-assumptions", "full")),
     ("formalized, narrower conclusion", ("same-assumptions", "weaker")),
     ("every conclusion, inputs supplied", ("inputs-supplied", "full")),
-    ("inputs supplied", ("inputs-supplied", "weaker")),
+    ("steps checked", ("inputs-supplied", "weaker")),
     ("outside Lean", ("outside", "full")),
     ("no Lean claim", None),
 ]
-SHOWN = {"inputs supplied": "Steps checked, inputs supplied"}  # wording of Appendix F
+SHOWN = {"steps checked": "Steps checked; inputs supplied or left outside Lean"}  # wording of Appendix F
 WORDS = {1: "one", 2: "two", 3: "three", 4: "four"}
 MONTHS = ["January", "February", "March", "April", "May", "June", "July",
           "August", "September", "October", "November", "December"]
