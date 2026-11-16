@@ -379,3 +379,25 @@ The DOI and final links go into the video descriptions, which stay editable, so 
   4. the final words from the exact v0.10.0 coverage at the re-pin.
 
   Until then, unknown or unsettled entries stay unmarked and are never "full".
+
+### Lean-marker map: independent review and repair (2026-11-16)
+- **Review.** Codex GPT-6.1-Sol, high effort, read-only. The map's author was #22 (Claude), so the reviewer is from a different family. The run is review-complete, with verdict FAIL and medium confidence.
+  - Mechanical check: PASS on all 101 rows.
+  - Five major findings: missing registered models. M2 on L:fixed-split and P:interval-coefficients; M6 on C:intrinsic-spatial-bracket, L:occupation-rayleigh-selection and T:intrinsic-occupation-ceiling.
+  - One further finding: the assignment policy, "codes named in the coverage text", was too narrow.
+- **Verification.** #22 checked all five against the modules and accepted them. The coefficient-model objects are in FixedSplit and FiniteWordCutoff; the H1R-valued class O is in ClassOBridge. None of the five rows is a "full statement", and no marker category changed.
+- **Systematic follow-up.** The new rule is: a row carries a model when a covered declaration's statement uses a construction the register assigns to it, judged by module and object. It was applied to all 101 rows in three ways:
+  - against the register's module lists for each claim file;
+  - against the direct imports of every model-free "full statement" row;
+  - by reading every flagged declaration.
+
+  No further missing model was found. These candidates were checked and rejected, with reasons in the map:
+  - P:mild-construction (M2 appears only in proof steps);
+  - L:positive-raw-embedding (M5 only);
+  - P:spatial-four-linear (M6 only);
+  - the three endpoint lemmas (no Green measure).
+- **Result.** Map at Article `62394f18`, `private/lean-markers/lean-marker-map.draft.json`, sha256 `faa7bcdca1995f88c0cfa0844dc9e5977dc91f9d5c2c8f8f5dc172470f0d7fd2`.
+  - 0 HOLD rows.
+  - 31 rows name a model; 14 of them are "full statement".
+  - Review evidence and the adjudication are in `private/lean-markers/review-2026-11-16/`.
+- **Still to come.** #24 integrates the heading-line markers (Le's style choice), and #22 checks the built PDF against the map. The final words come from the v0.10.0 data at the re-pin.
