@@ -174,7 +174,8 @@ def main():
     users = collections.defaultdict(set)
     for a in path:
         for b in closure(a):
-            users[b].add(a)
+            if a != b:   # a citation cycle must not make a result its own user
+                users[b].add(a)
     cov = yaml.safe_load(open(os.path.join(ROOT, "scripts", "lean-coverage", "coverage.yaml")))["rows"]
     lean = {r["paper"]["label"]: LEAN[(r["class"], r.get("conclusion", "full"))] for r in cov}
     missing = [k for k in path if k not in number]
@@ -202,6 +203,7 @@ def main():
     macro("cpFirstChapter", chapters[0])
     macro("cpLastChapter", chapters[-1])
     macro("cpNotReached", str(len(in_chapters) - len(path)))
+    macro("cpSecondMoment", str(len(cl["T:intrinsic-second-moment"]) - 1))
     c = count(path)
     macro("cpLeanFull", str(c["full"]))
     macro("cpLeanNarrower", str(c["narrower"]))

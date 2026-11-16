@@ -13,19 +13,21 @@ Result R rests directly on result S when the statement or the proof of R cites
 S by `\ref`, or cites an equation labelled inside the statement or the proof
 of S, or when the proof of R says "the preceding lemma" (and the like) and S
 is the result just before R. A main theorem rests on every result reached by
-following links. The four main theorems are named in `ROOTS` in the script.
+following links; "used by" counts other results only, so a citation cycle
+does not make a result its own user. The four main theorems are named in `ROOTS` in the script.
 
 Results cited only in the sentences that introduce R (after the previous
 result, proof or heading and before the statement of R) are printed in
 parentheses. They are not links: such a sentence often cites a result to
 contrast with it.
 
-## Links read by hand
+## Links recorded from an AI-assisted reading
 
 A citation by label does not show every use. `link-corrections.json` records
 the links added (`add`), removed (`remove`) and deliberately left out
-(`not_added`) after reading statements and proofs, each with the file and the
-words that justify it. The reading covered the 26 results that most others
+(`not_added`) after an AI-assisted author-side reading of statements and
+proofs, each with the file and the words that justify it. This reading is not
+a check by a person. The reading covered the 26 results that most others
 depended on and the 26 proved results of Chapters 2 to 11 that the script had
 not reached. The other results were not read in this way; their list of
 direct links may be incomplete. The generator stops if a correction names an
