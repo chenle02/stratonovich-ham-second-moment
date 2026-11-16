@@ -18,6 +18,27 @@ is not complete. PROJECT-GOAL.md records the deliverables and closure rule.
 No scientific grade upgrade, review retry/fallback, early seal, push or public
 release is inferred. Maximum three concurrent reviewer jobs remains binding.
 
+## Frozen final-source reread/adjudication data — 2026-11-16
+
+All authorized generations and all public-report adjudications are complete.
+The frozen `reviews/2026-11-16-readable-final-source/` inventory binds249
+current proof pairs/33technical files exactly once to38source-current reports;
+all33modules match composed candidateaa5a7056. Actual launch receipts give59
+coordinator attempts/58reports, not75calls or364distinct proofs. RP007 stays
+NOT_OBTAINED/null; RP007B was unused. Raw44PASS/14PWN/high are unchanged.
+Local public-working assessment is226CHECKED,9moreCHECKEDwithrecordedparent
+qualifications,14PARTIAL; plus071literalcomparisonincomplete separately. No
+source repair or whole-book assurance upgrade follows; conditional overlaps
+and the clock-contract distinction remain explicit. Old013/014/016holds stay;
+068recovery was prospectively authorized. Four missing-stream usages and all
+whole-invocation usage/cost/cap remainunknown. Counter sums are not invoices.
+
+Root independently checks all249source/statement/proof/report/MATHjoins and
+replays four rejecting controls. D/AppE/AIuse/statistics/VERIFICATION can now
+consume these exact committed data; final disclosure integration, its builds,
+release-owner verification and root's one manifest reseal remain open. No
+push/R/F/public release follows from this data freeze.
+
 ## Active narrow follow-up: proof-readability rereads (2026-11-16)
 
 
