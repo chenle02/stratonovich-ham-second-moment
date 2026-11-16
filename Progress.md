@@ -185,7 +185,12 @@ have been checked. Caps are65,536,32,768,65,536 respectively; timeout3,600
 seconds each. Each is one fresh pure DeepSeek V4 Pro session with no coordinator
 retry, continuation or fallback. Agent24's dated gates/build/maps and worker
 QA support these frozen candidates; Agent16's integrated adoption/release
-verification remains separate. No independent result is claimed before launch.
+verification remains separate. All three separate sessions are RUNNING; no
+independent result yet.
+
+RP006 launched at `2026-11-16T06:49:29.137939+00:00` as `readable-compact-mean-50f922b7d61c4945a639b894a78e90b7`.
+RP007 launched at `2026-11-16T06:49:30.319083+00:00` as `readable-exact-scaling-17c182e539f84afcb4a676c3f7f9e11f`.
+RP008 launched at `2026-11-16T06:49:31.483827+00:00` as `readable-raw-block-fd3f759fc9e44ee29a7182d0c2ad3c04`.
 
 The older publication-frontier headings below are dated snapshots; they do
 not authorize restarting their old completed calls or override this narrow
