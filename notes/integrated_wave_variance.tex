@@ -197,11 +197,12 @@ by $h^{2-a}$, we absorb it into a power of $h$.
 
 \begin{proof}
   Both upper endpoints in~\eqref{E:variance-beta-range} exceed one half, by $a <
-  1$ and $\alpha+a < 2$. If $\alpha < 1$, the profile is one, so
-  Proposition~\ref{P:frequency-row} gives the power $h^{2-a}$. Use $2-a >
-  2\beta$ and $0 < h \le 1$ to bound this by $h^{2\beta}$. If $\alpha > 1$,
-  the product of $h^{2-a}$ with the profile $h^{1-\alpha}$ is
-  $h^{3-a-\alpha}$. Use $3-a-\alpha > 2\beta$ in the same way.
+  1$ and $\alpha+a < 2$. If $\alpha < 1$, use $2-a > 2\beta$ in
+  Proposition~\ref{P:frequency-row}. If $\alpha > 1$, use $3-a-\alpha > 2\beta$.
+  For $\alpha<1$ the profile is one and the resulting power is $h^{2-a}$.
+  Since $0<h\le1$ and $2-a>2\beta$, it is at most $h^{2\beta}$. For
+  $\alpha>1$, multiplication by the profile $h^{1-\alpha}$ gives
+  $h^{3-a-\alpha}$, bounded in the same way because $3-a-\alpha>2\beta$.
   For $\alpha = 1$, set $\delta = 2-a-2\beta > 0$ and $u = \log(1/h)$. Then
   \[
     h^\delta(1+\log(1/h))
@@ -330,21 +331,19 @@ measure with $\nu_R(B(y,r)) \le C_\nu r^\alpha$, uniformly in $R$.
   We also identify its auxiliary and spectral limits. Approximate a
   Schwartz-valued function on $I$ by time partitions with frozen spatial values,
   and then replace the finitely many indicators by compact smooth temporal
-  functions.
-  For a fixed seminorm, continuity on the compact time interval makes the
-  error of a sufficiently fine time partition uniformly small. Each frozen
-  spatial value is Schwartz. Replacing the finitely many indicators in $L^2$
-  time controls the same seminorm by a finite sum of errors. A diagonal choice
-  over the countable Schwartz seminorms gives the stated sequence. Integration
-  by parts in the Fourier transform then converts these errors into decay in
-  $\xi$.
-  A diagonal sequence $F_n$ of finite temporal tensors converges in
+  functions. A diagonal sequence $F_n$ of finite temporal tensors converges in
   $L^2$ time in every Schwartz seminorm. Fourier integration by parts and the
   spatial weighted supremum bounds give, for sufficiently large fixed $N$,
   \[
     \|\widehat{F_n-F}(\xi)\|_{L^2(0,T)}
     \le \epsilon_n\langle\xi\rangle^{-N},\qquad \epsilon_n \to 0.
   \]
+  For a fixed seminorm, continuity on the compact time interval makes a fine
+  time partition uniformly accurate. Each frozen value is Schwartz; replacing
+  finitely many indicators in $L^2$ time controls the seminorm error by a
+  finite sum. A diagonal choice over the countable seminorms gives the
+  sequence, and Fourier integration by parts turns those errors into the
+  displayed frequency decay.
   Choose $N$ so that the square weight is integrable against both tempered
   measures $\mu$ and $\nu_R$. Lemma~\ref{L:masked-time-completion} gives
   convergence in their spectral $H_a$ norms. Multiplication by the fixed
@@ -468,12 +467,13 @@ Proposition~\ref{P:wave-two-variances} uses it in both directions.
 \begin{proof}
   Expand $g$ in a countable orthonormal basis of $H$. On each scalar coefficient
   apply scalar Bessel to the orthonormal family $\{\overline{u_k}\}$, or to
-  $\{u_k\}$ for the conjugated version. The conjugation is needed because the
-  displayed integrand contains $u_{k,j}$ without a conjugate, whereas the
-  scalar inner product conjugates its second argument. Complex conjugation
-  preserves orthonormality. Scalar finite Bessel follows by
+  $\{u_k\}$ for the conjugated version. Scalar finite Bessel follows by
   subtracting an orthogonal finite projection and expanding its nonnegative
   squared norm. Sum over the $H$ basis and use Parseval and nonnegative Tonelli.
+  The conjugation in the Bessel family is needed because the integrand
+  contains $u_{k,j}$ without a conjugate, whereas the scalar inner product
+  conjugates its second argument. Complex conjugation preserves
+  orthonormality.
   The coefficient of each Bochner integral along a fixed basis vector is the
   corresponding scalar integral. Parseval therefore expresses its squared norm
   as the sum of the squared scalar coefficients. Nonnegativity permits
@@ -571,14 +571,13 @@ Proposition~\ref{P:wave-two-variances} uses it in both directions.
   \end{align*}
   Change variables $\xi = \eta+\lambda$ in the Lebesgue integral for each
   $\lambda$, apply Tonelli and~\eqref{E:variance-actual-row-bound}, and use
-  $\|z\|_{E_{s-\gamma}} = \|\langle\xi\rangle^{-\gamma}Jz\|_2$. Indeed, after
-  the change of variables the factor $\sum_i|V_i(\xi)|^2$ is independent of
-  $\lambda$. The inner $\lambda$ integral is exactly the row controlled above.
-  The remaining integral is
-  $\int\langle\xi\rangle^{-2\gamma}\sum_i|V_i(\xi)|^2\ud\xi$, the squared
-  weaker phase norm. This proves~\eqref{E:wave-input-variance} with $C_T =
-  4A_TKC_\nu$.
+  $\|z\|_{E_{s-\gamma}} = \|\langle\xi\rangle^{-\gamma}Jz\|_2$. This
+  proves~\eqref{E:wave-input-variance} with $C_T = 4A_TKC_\nu$.
 
+  After the input change of variables, $\sum_i|V_i(\xi)|^2$ is independent of
+  $\lambda$. The inner integral is exactly the row bound, leaving
+  $\int\langle\xi\rangle^{-2\gamma}\sum_i|V_i(\xi)|^2\ud\xi$, the squared
+  weaker phase norm.
   \medskip
   \noindent\textit{Step 4.~}We sum over the output family.
   Next fix $U = Jz$ and let $V_k = Je_k$ be the output family. After $\eta =
@@ -599,13 +598,13 @@ Proposition~\ref{P:wave-two-variances} uses it in both directions.
   \]
   After the change of variables and Tonelli, the row at fixed $\eta$ is
   $\int\Phi_h(\eta+\lambda,\eta)\nu_R(\ud\lambda)$. Reflect $\lambda$ using the
-  evenness of $\nu_R$. Reflection changes the kernel to
-  $\Phi_h(\eta-\lambda,\eta)$; symmetry of $\Phi_h$ then places the fixed
-  frequency in the first slot. This row becomes
+  evenness of $\nu_R$ and then use symmetry of $\Phi_h$. This row becomes
   $\int\Phi_h(\eta,\eta-\lambda)\nu_R(\ud\lambda)$, which is bounded
   by~\eqref{E:variance-actual-row-bound} with $\xi = \eta$. This proves
   \eqref{E:wave-output-variance} with the same $C_T$.
 
+  Reflection changes the kernel to $\Phi_h(\eta-\lambda,\eta)$. Symmetry then
+  puts the fixed frequency in the first argument, giving the row used above.
   \medskip
   \noindent\textit{Step 5.~}We obtain the time-power bounds and their
   uniformity.
@@ -715,13 +714,13 @@ Write $E_r^{\mathrm{real}}$ for the real phase space in dimension $d$.
 
   \medskip
   \noindent\textit{Step 4.~}We identify the Gaussian laws after taking limits.
+  Centering passes to an $L^2$ limit, as do second moments. Testing finite
+  real linear combinations of continuous linear functionals therefore gives
+  the joint Gaussian assertion below.
   Continuous linear functionals of the limits, and finite linear combinations of
   such functionals, are $L^2$ limits of centered Gaussian variables with
   convergent variances. Their characteristic functions therefore converge to
-  those of centered Gaussians. Centering passes to the limit by $L^2$
-  convergence, which also gives convergence of second moments. Testing all
-  finite real linear combinations of continuous linear functionals gives the
-  joint Gaussian assertion. The same reasoning after the bounded input
+  those of centered Gaussians. The same reasoning after the bounded input
   extension proves joint Gaussianity for arbitrary fixed inputs and finite
   families of the two maps. This proves Proposition~\ref{P:wave-square-columns}.
 \end{proof}
