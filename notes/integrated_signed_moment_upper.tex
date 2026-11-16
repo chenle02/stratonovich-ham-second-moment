@@ -88,10 +88,6 @@ $F_\delta$ of Lemma~\ref{L:tube-actual-endpoint}.
     \delta\sum h_m^\nu&\le(2/B)^{1-\nu/r}
     (32B^{3-1/r}C_{\rm mean}\rho)^\nu .
   \end{align*}
-  The mean contribution has total power $B^{1-(1-\nu/r)+(3-1/r)\nu}=B^{3\nu}$.
-  The residual contribution has power $B^{1-(1-\nu/p)}=B^{\nu/p}$. The
-  constant contribution is bounded using $B\delta n\le2$. This keeps the
-  polynomial dependence needed for the later tail cutoff explicit.
   The exponents are $p/\nu \ge 1$, $r/\nu > 1$, inputs nonnegative, $n = N+1 \ge
   2$, $\delta > 0$, and $\delta n \le 2/B$. Zeros and $p = \nu$ are legal. The
   first constant is $4C_{\rm gr}$. In the mean term the factors $B^{\nu/r}$ and
@@ -170,10 +166,7 @@ Lemma~\ref{L:tube-rayleigh-tail}.
     +\mathcal{E}_{\delta,B,M}
     \le\mathcal{S}_{R_\delta}+\mathcal{E}_{\delta,B,M}.
   \]
-  For a control in the radius-$\rho$ ball, subtracting $\rho^2/2$ is no larger
-  than subtracting its own norm squared divided by two. This places every bulk
-  integrand below the same signed score plus the deterministic error. The
-  residual radial weight integrates to $M^2/(2\delta)$ on the bulk interval.
+
   Taking suprema and integrating $\rho/\delta$ over $[0,M]$ gives the first term
   of~\eqref{E:signed-finite-moment}, even if $M^2/(2\delta) < 1$. This used
   $\rho^2 \ge \|\Phi\|^2$, not equality or an optimizer. For the tail apply
@@ -238,6 +231,8 @@ Lemma~\ref{L:tube-rayleigh-tail}.
     \le\max\{V_{\rm up}+e_B,\ A_0-M_B^2/4\}.
   \]
 
+  The lower bound $M_\delta\ge1$ used here is~\eqref{E:point-fixed-finiteness}
+  of Lemma~\ref{L:point-actual-finiteness}.
   The left side has no $B$: restart identifies every block product with this
   same $P_\delta$. Now let integer $B \to \infty$. We have $e_B \to 0$, $M_B \to
   \infty$ and finite $V_{\rm up} \ge 0$. This gives the asserted upper bound,
