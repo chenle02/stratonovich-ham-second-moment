@@ -327,10 +327,12 @@ s_j(K)^p$.
   states that the squared operator norm of the kernel operator is at most
   $M_1M_2$. To prove it, we apply the weighted Cauchy--Schwarz inequality at
   each output point and then Tonelli's theorem. The same proof works with
-  counting measure on one side and Lebesgue measure on the other. In that case
-  % AUDIT: "first on dense finite or compact inputs" is kept in the old
-  % wording. The text does not say which classes are meant; see NOTES.md (c1).
-  we apply it first on dense finite or compact inputs.
+  counting measure on one side and Lebesgue measure on the other. For counting
+  measure inputs, use finitely supported sequences; for Lebesgue measure
+  inputs, use smooth compactly supported functions. The estimate extends to
+  the corresponding $L^2$ spaces by density. For the kernels below, the same
+  Cauchy--Schwarz estimate on truncated inputs identifies the extension with
+  the stated integral or sum.
 
   \medskip
   \noindent\textit{Step 3.~}We prove the bounds
@@ -400,8 +402,14 @@ s_j(K)^p$.
   series of $\psi u$ converges smoothly on the cube. Its coefficients are the
   numbers $(\mathcal{P}_\psi u)_k$ of Step~3, and its partial sums are finite
   torus polynomials, on which $\mathcal{E}_\chi$ is multiplication by $\chi$.
-  % AUDIT: the passage from the partial sums to the full series under
-  % \mathcal{E}_\chi is kept in the old wording; see NOTES.md (c2).
+  Rapid decay of the Fourier coefficients gives convergence of these partial
+  sums in $H^{\sigma+\gamma}(\mathbb{T}_L)$, hence also in
+  $H^\sigma(\mathbb{T}_L)$. Boundedness of $\mathcal{E}_\chi$ gives convergence
+  of their images to $\mathcal{E}_\chi\mathcal{I}_\gamma\mathcal{P}_\psi u$
+  in $H^\sigma(\R^d)$. Their smooth convergence on the support of $\chi$ also
+  gives convergence of the products with $\chi$ to $\chi\psi u$ as
+  distributions. Since Sobolev convergence implies distributional
+  convergence for every real $\sigma$, these two limits agree.
   Since $\chi\psi = \chi$ and $\chi$ is supported strictly inside the cube,
   multiplying this series by $\chi$ recovers $\chi u$ with no alias term.
   Since $\mathcal{I}_\gamma$ is the identity inclusion, this
@@ -749,9 +757,10 @@ nonzero operator, and then test what is lost without the compact cutoff.
 \end{proposition}
 
 \begin{proof}
-  We treat the two assertions separately. A rank-one operator supported
-  on the plateau provides the witness. Translates of a fixed function show
-  why smoothing alone does not give compactness on the whole space.
+  We treat the two assertions separately. A rank-one operator built from test
+  functions supported on the plateau provides the witness. Translates of a
+  fixed function show why smoothing alone does not give compactness on the
+  whole space.
 
   \medskip
   \noindent\textit{Step 1.~}We construct the localized witness.
