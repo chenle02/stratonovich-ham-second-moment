@@ -125,8 +125,16 @@ upstream context marked unassigned. Root checked Git bytes, framing and fresh
 native config; all tools denied, same requested DeepSeek V4 Pro model, cap
 65,536 and timeout 3,600 seconds. Each has one authorized fresh pure invocation,
 no coordinator retry, continuation or fallback. Worker QA supports these local
-arguments. Both separate isolated sessions are RUNNING, with no independent
-results yet.
+arguments. RP004 remains RUNNING. RP005 finished normally at
+`2026-11-16T06:28:57.237160+00:00`, elapsed 317.268 seconds, with raw
+PASS/high and all eight proof pairs complete and preserved. Root fully
+adjudicated the report and verified native exact-prompt/model/fresh-session,
+zero tools, stop and unchanged inputs. Scoped preservation is supported with
+a report-only arithmetic wording note: the factor 4/3 follows by division by
+3/4 in the correctly displayed inequality, not by adding 1 and 1/4 as one
+report phrase says. The manuscript is correct; no source change or callback.
+See RP005 terminal REPORT/ADJUDICATION/PER-PROOF-RECORD/NATIVE-CHECK. No
+whole-book confidence or Lean quotation acceptance follows.
 
 RP004 launched at `2026-11-16T06:23:38.805337+00:00` as `readable-source-convergence-26bd977c926f4c6e919e79e8913e57cd`.
 RP005 launched at `2026-11-16T06:23:39.968809+00:00` as `readable-constant-young-140f8dd8b78d4f8aa0102d871e8b0a06`.
