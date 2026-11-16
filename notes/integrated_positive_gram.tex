@@ -60,6 +60,14 @@ Set $d_\varnothing^C = 0$.
 \end{lemma}
 
 \begin{proof}
+  We bound each coordinate of a minimizing sequence away from both zero and
+  infinity. This gives an attained interior minimum. Strict positivity of the
+  Hessian then gives uniqueness and the stationarity equations.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We confine a nonempty sublevel to a compact
+  positive box.
   Put $c_i = C_{ii} > 0$ and $K_A = \sum_{i\in A}b_i^2/c_i$. Nonnegative entries
   and positive weights give
   \[
@@ -79,12 +87,21 @@ Set $d_\varnothing^C = 0$.
   \[
     \ell_i^2/L_A\le w_i\le\sqrt{4L_A/c_i}.
   \]
+  After moving $K_A$ to the other side, every summand in the coercive lower
+  bound is nonnegative. Hence, on the chosen sublevel, each reciprocal term is
+  at most $L_A$ and each quadratic term is at most $L_A$. Solving these two
+  inequalities separately gives the coordinate bounds, without allowing
+  cancellation between different coordinates.
   The sublevel is nonempty and closed inside this compact box, which lies in the
   open positive orthant. A minimizing sequence chosen in the sublevel has a
   convergent subsequence there. Continuity attains its infimum. Outside this
   sublevel the values exceed $d_0$, so the minimum is global on the entire
   positive orthant.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We prove uniqueness and compute the interior
+  critical equations.
   The function is smooth in that orthant. Its Hessian on a nonzero vector $\xi$
   has value
   \[
@@ -112,6 +129,15 @@ Set $d_\varnothing^C = 0$.
 \end{proposition}
 
 \begin{proof}
+  We bound each primal value using its own active set. We then evaluate the
+  restricted objective at the corresponding dual minimizer, where both scalar
+  and Hilbert inequalities are equalities, and use the nonnegative omitted
+  rewards.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound the primal objective by a finite
+  active-set dual value.
   For arbitrary $\Phi$, let $A(\Phi) = \{i:\langle\Phi,k_i\rangle>b_i\}$. It is
   contained in $\mathcal{J}$. All other terms in the objective vanish, including
   equality at the threshold. If $A(\Phi)$ is empty, $\mathfrak{F}_C(\Phi) =
@@ -129,6 +155,14 @@ Set $d_\varnothing^C = 0$.
   Lemma~\ref{L:gram-dual-minimum}. Taking the supremum bounds $\mathscr{S}(C)$
   above by their maximum.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We realize the maximum of the dual values by a
+  nonnegative conic control.
+  The upper argument takes an infimum over positive weights only after fixing
+  the active set of the given primal vector. It does not interchange a global
+  supremum and infimum. The converse below constructs one vector for each
+  subset, which is enough because the number of subsets is finite.
   Conversely, $\mathfrak{F}_C(0) = 0 = d_\varnothing^C$. For nonempty $A$, take
   its dual minimizer. Equation~\eqref{E:gram-dual-stationarity} makes every
   vector in $A$ strictly active at $\Phi_A$, with
@@ -173,6 +207,10 @@ semidefinite order.
   Entries of $B$ need not be nonnegative; this construction requires neither
   nonnegative coordinates nor complete positivity.
 
+  The new vectors have inner products $\langle k_1,k_i\rangle=v_i$ and
+  $\langle k_i,k_j\rangle=v_iv_j/c+B_{ij}=A_{ij}$. Their first squared norm is
+  $c$. Thus, the construction reproduces every block of the original matrix,
+  even if the Schur-complement entries have either sign.
   In any realization, $C_{ii} = 0$ means $k_i = 0$, so its entire row vanishes.
   Formula~\eqref{E:gram-active-duality} depends only on $C,\ell,b$ and these
   eligible indices. It therefore proves realization independence whenever the
