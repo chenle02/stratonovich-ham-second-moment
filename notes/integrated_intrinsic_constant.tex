@@ -83,11 +83,6 @@ The theorem treats zero covariance directly.
   \medskip
   \noindent\textit{Step 3.~}We identify the original norm of a smooth
   spacetime test.
-  The two approximation limits agree in $L^2(I;H_{\mathrm{sp}})$: Schur
-  controls the integral limit there, while the tensor estimate gives an $L^r$
-  limit and $r>2$ implies $L^2$ convergence on the unit interval. Thus, the
-  completed mean is identified without selecting pointwise representatives for
-  arbitrary rough controls.
   Choose a closed ball $B$ containing all spatial supports of $\Psi$. For real
   smooth $q$ supported there, the physical covariance gives
   \begin{equation}\label{E:positive-local-spatial-bound}
@@ -189,12 +184,6 @@ mask.
 
   \medskip
   \noindent\textit{Step 2.~}We compare the physical Gram integrands entrywise.
-  The masked spatial pairing contains one factor $m_R$ at each of its two
-  spatial positions. Both lie in $[0,1]$, so their product is at most one. The
-  other factors are nonnegative squares, the temporal label functions and the
-  original positive kernels. Removing those two mask factors therefore orders
-  each entry separately, without an operator-order claim for the matrix
-  difference.
   Each Gram is symmetric positive semidefinite. Its entries factor into the
   temporal pairing of nonnegative $h_i,h_j$ and the physical spatial covariance
   pairing. The kernels $K,\Gamma$ and $f_i^2,f_j^2$ are nonnegative; $0 \le m_R
@@ -285,11 +274,6 @@ uniformly in $R$.
     \le\sqrt{3+C\|\Psi_j\|+C\|\Phi_D\|}
     \sqrt{C\|\Psi_j-\Phi_D\|}\longrightarrow0 .
   \end{equation}
-  The smoothing changes only finitely many temporal factors, each converging
-  in $L^2(I)$ and hence in its covariance norm. The spatial factors stay fixed
-  and compactly supported. Consequently, the tensor norm convergence controls
-  both the quadratic cost and, by the displayed rate estimate, the integrated
-  rate; no uniform bound on derivatives of the approximants is needed.
   This estimate is uniform in $R'$. It asserts no uniform derivative bound on
   the smooth approximants. The zero branch will use $S_2^{\mathrm{pos}} \ge 0$
   directly. This proves Lemma~\ref{L:positive-uniform-optimizer}.
@@ -374,11 +358,6 @@ finite problems to the rate.
     \le2\operatorname{Rate}_{R'}(\Phi_D)-\|\Phi_D\|^2/2+2e_n .
   \end{equation}
 
-  The first averaging comparison contributes $2e_n$, and the return from the
-  finite optimizer to its integrated rate contributes another $2e_n$. The
-  optimizer norm was bounded independently of the chosen profiles and covering
-  radius, so the second use has the same error bound. The finite trial choice
-  contributes $2\varepsilon$ because the cell lengths sum to one.
 
   \medskip
   \noindent\textit{Step 4.~}We pass through nonnegative smooth controls and
@@ -496,6 +475,8 @@ bounded control costs alone would not justify it.
   Assume first $\Gamma \ne 0$. Proposition~\ref{P:original-signed-point-upper},
   followed by Proposition~\ref{P:positive-score-cutoff} with $R =
   \delta^{-1}+2$, bounds the original point limsup by $S_2^{\mathrm{pos}}$.
+  The radius $\delta^{-1}+2$ tends to infinity, so cutoff-score convergence
+  applies along this radius without a separate exchange of limits.
   Proposition~\ref{P:variational-positive-scores} bounds the original point
   liminf below by this same value. Both are for the same canonical Stratonovich
   solution, exponent, original covariance and variance-half action. Their with
@@ -509,8 +490,7 @@ bounded control costs alone would not justify it.
   Formula~\eqref{E:variational-real-rayleigh} and the definition of the original
   variance give~\eqref{E:intrinsic-positive-formula}.
 
-  The radius $\delta^{-1}+2$ tends to infinity, so cutoff-score convergence
-  applies along this radius without a separate exchange of limits.
+
   The factor relating $S_2^{\mathrm{pos}}$ to $S_1^{\mathrm{pos}}$ is the
   control-dilation factor, not an identification with a first-moment constant.
 
