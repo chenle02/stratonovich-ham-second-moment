@@ -26,6 +26,15 @@ pp.~61--62}.
 \end{lemma}
 
 \begin{proof}
+  We separate small drivers, where one contraction gives a linear logarithmic
+  bound, from larger drivers, where a partition gives the power bound. We then
+  use a fixed partition on a bounded driver ball to control both the evolution
+  and its inverse in the Hölder norm.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove the refined growth bound in the two
+  driver-size regimes.
   Let $c_\theta = 2\max(1,C_\theta)$ for the primary Young constant. The
   complete scaled norm $N_\ell(V) = \sup\|V\|+\ell^\theta[V]_\theta$ satisfies
   $N_\ell(\int_a^\cdot\ud D\,V) \le c_\theta[D]_\theta\ell^\theta N_\ell(V)$, as
@@ -38,6 +47,22 @@ pp.~61--62}.
   bound. At $d = 0$, $U_D = I$, proving~\eqref{E:young-upper-refined-growth}
   without a prefactor.
 
+  For the small-driver regime, integrate the derivative of the negative
+  logarithm between zero and $c_\theta dB^\theta$. That derivative is at most
+  two on this interval, giving $-\log(1-c_\theta dB^\theta)\le2c_\theta
+  dB^\theta$. In the other regime, each piece has length $B/n_D\le(4c_\theta
+  d)^{-1/\theta}$, so its contraction ratio is at most $1/4$. Multiplying the
+  $n_D$ local norm bounds gives logarithm at most $n_D\log(4/3)$, controlled
+  by a constant times $d^\nu$.
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound the global evolution and inverse on a
+  fixed driver ball.
+  For inverse increments, the identity displayed at the end of the proof
+  bounds the inverse difference by the squared uniform inverse bound times the
+  forward difference. Dividing by the time increment to the power $\theta$
+  will therefore give the inverse seminorm once the forward seminorm and
+  inverse supremum have been bounded.
   On the ball $\|H\|_\theta \le K$ choose one uniform equal partition with ratio
   at most $1/4$. Each local evolution $Q$ has $N_\ell(Q) \le 4/3$ and
   $\sup\|Q-I\| \le 1/3$. Its Neumann inverse is bounded by $3/2$. Products give
@@ -72,6 +97,14 @@ a uniform bound on every block.
 \end{proposition}
 
 \begin{proof}
+  We conjugate the perturbation by the deterministic evolution to form a new
+  Young driver. We verify the resulting product identity directly from
+  increments, preserving the left multiplication order, and then apply the
+  refined growth bound only to the perturbation driver.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We form the conjugated perturbation driver.
   Put $U = U_H$, $R = U^{-1}$ and $G(s)Z = R(s)ZU(s)$.
   Lemma~\ref{L:young-upper-growth} makes $G$ a $C^\theta$ path of bounded linear
   maps on $\mathcal{B}(\mathcal{X})$, uniformly bounded on the fixed ball. Thus,
@@ -90,11 +123,33 @@ a uniform bound on every block.
     +O(|t-s|^{2\theta})
     =(H+X)_{s,t}P(s)+O(|t-s|^{2\theta}).
   \]
+  In the product increment, expand $U(t)V(t)-U(s)V(s)$ as
+  $U_{s,t}V(s)+U(s)V_{s,t}+U_{s,t}V_{s,t}$. Both last increments have order
+  $|t-s|^\theta$, so their product has order $|t-s|^{2\theta}$. The leading
+  perturbation term is $U(s)R(s)X_{s,t}U(s)V(s)$; the adjacent inverse factors
+  cancel without commuting $X_{s,t}$ past any operator.
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the product as the full Young
+  evolution.
   On any partition the remainder sum is bounded by a constant times
   $B\,\operatorname{mesh}^{2\theta-1} \to 0$. Left sums converge to the Young
   integral, so uniqueness yields $U_{H+X} = U_HU_Z$. This proves the product
   identity without assuming smooth density in the full H\"older norm.
+  For each interval in a partition, its length to the power $2\theta$ is at
+  most its length times the mesh to the power $2\theta-1$. Summing gives the
+  displayed total error bound. Since $2\theta>1$, it vanishes, and the exact
+  telescoping increment sum has the same limit as the left Young sums.
+
+  \medskip
+  \noindent\textit{Step 3.~}We retain the deterministic endpoint factor in the
+  norm bound.
   Apply~\eqref{E:young-upper-refined-growth} to $Z$, then left multiply by $A$
   and use submultiplicativity. No inverse or lower bound for $A$ is required.
+  The driver estimate $\|Z\|_\theta\le L'_{\theta,B,K}x$ gives
+  $\|Z\|_\theta+\|Z\|_\theta^\nu\le C_{\theta,B,K}(x+x^\nu)$. The product
+  identity gives $AU_{H+X}(t)=(AU_H(t))U_Z(t)$, so submultiplicativity leaves
+  $\|AU_H(t)\|$ intact rather than bounding it by a separate factor. When
+  $x=0$, the new driver is zero and its evolution is the identity.
   This proves Proposition~\ref{P:young-upper-multiplicative}.
 \end{proof}
