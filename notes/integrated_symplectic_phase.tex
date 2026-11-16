@@ -61,6 +61,15 @@ S_E(t)U_D(t,s)S_E(-s)$.
 \end{lemma}
 
 \begin{proof}
+  We identify the symplectic form in balanced coordinates and check free-wave
+  preservation. We then show that compact Young perturbations remain compact
+  at the endpoint. Translation to spatial infinity gives the required norm
+  lower bound, including finite products.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the form and its preservation by the
+  free group.
   The balanced map $C_{\rm bal}(u,v) = (\Lambda^{1/2}u,\Lambda^{-1/2}v)$ is an
   onto real isometry to $L^2\times L^2$. Define $J_{\rm symp}(q,p) = (p,-q)$ and
   $J_E = C_{\rm bal}^{-1}J_{\rm symp}C_{\rm bal}$. This gives all stated
@@ -86,6 +95,10 @@ S_E(t)U_D(t,s)S_E(-s)$.
   Equivalently one may first use Schwartz phases and then density. No rough
   generator derivative or frequency-zero trace is used.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We verify force skewness and compactness of Young
+  endpoint differences.
   Finally, $\|bu\|_{H^{-1/2}} \le \|bu\|_2 \le \|b\|_\infty\|u\|_{H^{1/2}}$.
   Duality for these $L^2$ functions gives the absolutely integrable cancellation
   $-\int fbu+\int ubf = 0$. This is skewness for $\omega$, not for the $E$
@@ -101,6 +114,10 @@ S_E(t)U_D(t,s)S_E(-s)$.
   in~\eqref{E:symplectic-compact-young-baseline}. Bounded composition then shows
   that the physical endpoint differs from $S_E(t-s)$ by a compact operator.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We bound the norm of a compact perturbation by the
+  free norm.
   We prove the required compact-perturbation bound for this whole-space phase.
   Translations $\tau_y$ on both entries are isometries on $E$ and commute with
   $S_E(h)$. For fixed $z,w \in E$, their translated pairing is the Fourier
@@ -117,12 +134,21 @@ S_E(t)U_D(t,s)S_E(-s)$.
     \ge\liminf_{|y|\to\infty}\|(S_E(h)+K)\tau_yz\|
     \ge\|S_E(h)z\|.
   \]
+  Since translations commute with the free group and preserve the norm,
+  $\|S_E(h)\tau_yz\|=\|S_E(h)z\|$. The compact term tends to zero on this
+  weakly vanishing family. The reverse triangle inequality therefore gives the
+  second inequality in the display for each fixed unit vector, before the
+  supremum over vectors is taken.
   Taking the supremum over $z$ gives $\|S_E(h)+K\| \ge \|S_E(h)\|$. The
   isometric velocity reversal $\mathcal{R}(u,v) = (u,-v)$ satisfies $S_E(-h) =
   \mathcal{R} S_E(h)\mathcal{R}$ by the full free Fourier matrix. The group law
   yields $1 \le \|S_E(-h)\|\|S_E(h)\| = \|S_E(h)\|^2$. This
   proves~\eqref{E:symplectic-compact-young-baseline}.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We retain the compact difference through finite
+  ordered products.
   Finally, $P_j-S_E(\ell_j)$ is compact. Telescoping the finite ordered product
   against its free product gives a finite sum of bounded--compact--bounded
   products, hence a compact difference. Only the free factors are combined by
@@ -152,12 +178,23 @@ S_E(t)U_D(t,s)S_E(-s)$.
 \end{lemma}
 
 \begin{proof}
+  We bound the Bochner covariance means by path moments. At positive source
+  widths, the feature representation gives a smooth deterministic coefficient,
+  whose ordinary rows identify the covariance primitive.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound the covariance mean and its source error.
   Separable Gaussian path moments give $\E\|ZM\|_{C^\theta} \le
   \|\Phi\|_{H_W}\|M\|_{L^2C^\theta}$, and the same holds for sources. Bochner
   Cauchy--Schwarz gives~\eqref{E:symplectic-mean-convergence}. Covariance
   contraction also gives the uniform source bound $\|D_\Phi^\rho\|_{C^\theta}
   \le \|\Phi\|_{H_W}\|M\|_{L^2C^\theta}$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the regularized deterministic
+  coefficient.
   The construction preserving the given noise has an isometry $j_{\rm src}:H_W
   \to \mathcal{G}$ and an isonormal process $\mathcal{I}$ with
   $\mathcal{I}(j_{\rm src}h) = W(h)$. Its source random field is $Y^\rho(t,x) =
@@ -171,6 +208,10 @@ S_E(t)U_D(t,s)S_E(-s)$.
   derivatives. After multiplication by $m_R$ the coefficient has one compact
   support and bounded derivatives on $[0,T]$.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify its ordinary primitive with the source
+  covariance mean.
   On Schwartz states, the row of the right side
   of~\eqref{E:symplectic-source-primitive} is the integral of $h_\Phi^\rho$
   against the explicit masked source wave product. Ordinary Fubini is justified
@@ -204,6 +245,10 @@ S_E(t)U_D(t,s)S_E(-s)$.
   Lemma~\ref{L:symplectic-free} gives $\omega(C_b(r)z,w)+\omega(z,C_b(r)w) = 0$
   for all $r,z,w$.
 
+  Free preservation transfers the force identity to its interaction conjugate:
+  applying $S_E(r)$ to both arguments turns the two terms with $C_b(r)$ into
+  the two skew-force terms with $B(b^\rho(r))$. Their sum is zero. This uses
+  the symplectic form, not skew-adjointness in the phase Hilbert norm.
   The source and mean primitive identities identify the Young state equation
   with $U(t,s)e = e+\int_s^t C_b(r)U(r,s)e\ud r$. Indeed, replace each operator
   path increment in a Young sum by its statewise integral. The error is bounded
@@ -235,6 +280,15 @@ identity for the flow $P_D$ itself, together with a lower bound on its norm.
 \end{proposition}
 
 \begin{proof}
+  We first show that every driver increment satisfies the same closed linear
+  symplectic constraint. We pass that constraint to the Gaussian path and its
+  covariance mean, then prove conservation by summing Young remainder
+  estimates. Invertibility comes separately from the Young construction.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the closed constraint for the
+  coefficient paths.
   We first identify a closed real linear constraint on the operator path. Write
   \[
     \mathfrak{g}_J=\{A\in\mathcal{L}(E):A^*J_E+J_EA=0\}.
@@ -250,6 +304,9 @@ identity for the flow $P_D$ itself, together with a lower bound on its norm.
   $A\mapsto A^*J_E+J_EA$ is bounded on the path space, so their $L^2C^\theta$
   limit $M$ obeys it at all times on one probability-one path set.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We pass the constraint to the combined driver.
   The mean is a Bochner expectation since $\E\|W(\Phi)M\|_{C^\theta} \le
   \|\Phi\|_{H_W}\|M\|_{L^2C^\theta} < \infty$. Bounded real linear maps commute
   with this expectation, hence $D_\Phi(t) \in \mathfrak{g}_J$ for every $t$.
@@ -257,6 +314,10 @@ identity for the flow $P_D$ itself, together with a lower bound on its norm.
   $\mathfrak{g}_J$ on that path set. Complex Gaussian coefficients are not used.
   All these variables remain on the given $W$.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We prove conservation from the Young increment
+  expansion.
   The proof of Proposition~\ref{P:constant-young-linear} applies on
   $\mathcal{L}(E)$, with multiplication of norm one. Fix any $s$ and put $V(r) =
   U_D(r,s)$ for $r \ge s$. The Young remainder on $[u,v] \subset [s,T]$ gives
@@ -274,6 +335,15 @@ identity for the flow $P_D$ itself, together with a lower bound on its norm.
   gives \eqref{E:symplectic-raw-conservation}, including $1 = \|J_E\| \le
   \|P_D(t,s)\|^2$.
 
+  In the increment of $V^*J_EV$, the two terms linear in $D_{u,v}$ cancel by
+  the driver constraint. Every remaining term contains either a Young
+  remainder of order $2\theta$ or two increments of order $\theta$. The sum of
+  their norms is therefore bounded by the total interval length times the mesh
+  to the power $2\theta-1$, which tends to zero.
+
+  \medskip
+  \noindent\textit{Step 4.~}We retain the independent justification of
+  invertibility.
   Invertibility comes from the local Young Neumann pieces and their finite
   products, followed by the free inverse; it is not inferred from conservation
   in infinite dimension. For $c = 0$ the path and the argument are deterministic
@@ -312,6 +382,15 @@ identity for the flow $P_D$ itself, together with a lower bound on its norm.
 \end{proposition}
 
 \begin{proof}
+  We define the fast covariance direction using the adjoint of the original
+  isometry. We identify the stopped completed mean by bounded compression,
+  then remove the orthogonal complement of the fast first chaos from its
+  covariance pairing.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We define the fast control and its completed mean
+  path.
   The original pullback~\eqref{E:raw-block-pullback} has covariance factor
   $\delta^{a-2}\delta^2\delta^{-a} = 1$, hence respects nulls and extends
   isometrically from fast to slow original space. Its Hilbert adjoint is a
@@ -336,6 +415,10 @@ identity for the flow $P_D$ itself, together with a lower bound on its norm.
   integration makes $H_{m,E}(\Phi)$ a compact-valued path starting at zero, also
   after constant stopping.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We compute the unscaled covariance by compressing
+  the full phase.
   Here $A_{F,m}$ is the full $F$ interaction operator path from
   Proposition~\ref{P:constant-phase-driver}, and $H_{m,F}$ is its stopped
   completed mean primitive in~\eqref{E:cameron-actual-covariance}. The completed
@@ -359,6 +442,10 @@ identity for the flow $P_D$ itself, together with a lower bound on its norm.
   earlier covariance identity permits every $\Phi \in H_I$, without positivity
   or smoothness.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify the covariance direction in the fast
+  noise space.
   The operator $T_mT_m^*$ is the orthogonal projection onto the original
   isometry's closed range. Thus, $W((I-T_mT_m^*)i_I\Phi)$ is orthogonal to the
   entire fast first chaos. Every continuous linear coordinate of $M_m$ is an
@@ -373,6 +460,14 @@ identity for the flow $P_D$ itself, together with a lower bound on its norm.
   to obtain \eqref{E:symplectic-block-direction} on $[0,\ell_m]$, then stop both
   sides. No unstopped equality beyond $\ell_m$ is asserted.
 
+  The adjoint pullback contributes $\delta^{-a/2}$ in $\phi_m$, canceling the
+  $\delta^{a/2}$ in the unscaled covariance. Orthogonality removes only the
+  slow-noise component perpendicular to the range of $T_m$; it does not
+  replace the joint noise by an independent copy. Both operations are made at
+  the same fixed parameters.
+
+  \medskip
+  \noindent\textit{Step 4.~}We apply the compact endpoint lower bound.
   Apply Lemma~\ref{L:symplectic-free} directly to the compact-valued path
   $H_{m,E}(\Phi)$ starting at zero on $[0,B]$. Its physical endpoint has norm at
   least $\|S_E(\ell_m)\| \ge 1$. If $\ell_m = 0$, the endpoint is the identity
