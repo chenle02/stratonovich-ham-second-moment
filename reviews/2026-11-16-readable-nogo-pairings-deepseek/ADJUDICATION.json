@@ -1,0 +1,710 @@
+{
+  "review_record_id": "RP026",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side public-report/source mathematical QA only; not a new independent scientific vote or Chapter12 skeptic synthesis",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "a2c01053fa54a729e9e166ea6bdf30550c6f59e8",
+  "source_file": "notes/no-go/pairings.tex",
+  "source_binding_sha256": "5bd383c90500a9208ea0e835cf968dde570ec303f2aec550026486c8b6ea3705",
+  "public_report_sha256": "2567ab8cafee5d8eeec1239b75dd0f5e48786a520a67558e839442ac66ce8512",
+  "all_assigned_public_reasons_and_findings_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "NINE_SCOPED_RECONSTRUCTIONS_CHECKED_NOGO18_GENERAL_INTEGRATIONS_PARTIAL_WITH_REPORT_ONLY_SLIPS",
+  "requested_reread_complete": false,
+  "per_proof_reconstruction": {
+    "P:nogo-01": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R4"
+      ]
+    },
+    "P:nogo-02": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    },
+    "P:nogo-03": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R2"
+      ]
+    },
+    "P:nogo-04": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:nogo-05": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:nogo-06": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R3"
+      ]
+    },
+    "P:nogo-07": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:nogo-10": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:nogo-17": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:nogo-18": {
+      "status": "PARTIAL",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [
+        "General q-region wave-transform integrations",
+        "General bridge-integral/envelope evaluation rather than spot checks"
+      ],
+      "limits": [
+        "Correct final rational arithmetic does not verify the preceding general integral identifications."
+      ],
+      "report_notes": [
+        "D1",
+        "R5"
+      ]
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "P:nogo-01",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED (no new prose added; unchanged proof)"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 11,
+      "source_old_view_statement_lf": [
+        34,
+        45
+      ],
+      "source_old_view_proof_lf": [
+        46,
+        58
+      ],
+      "source_new_view_statement_lf": [
+        34,
+        45
+      ],
+      "source_new_view_proof_lf": [
+        46,
+        58
+      ],
+      "original_old_proof_lf": [
+        46,
+        58
+      ],
+      "original_new_proof_lf": [
+        46,
+        58
+      ],
+      "source_old_proof_sha256": "e9cad1b83fcce4bd5c502fe9f7043acc51117476dc2ee07f5b37c744e97ba387",
+      "source_new_proof_sha256": "e9cad1b83fcce4bd5c502fe9f7043acc51117476dc2ee07f5b37c744e97ba387",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "1992130e981f846a3de51ea3b218b973f7d2f9f6f4bb11874a9876983ce60649",
+      "mathematical_check": "The report reconstructs the optimized theta=beta k/(2t), P_k between k! and2^k k!, and the exponential-factor sandwich by factorial series with q=beta-1>1. Its Riemann-sum product notation needs an index qualification (R4), but the stated k!/k^k>=exp(-k) bound and correct logarithmic integral argument give the needed exponential control. The lq/l1 upper sum is explicit; the floor(z^(1/q)/2) term gives a true lower bound >=2^(qk), with the exact floor inequality sufficient rather than merely the word approximately. Finally beta-1=3-alpha-a<3-alpha gives the wrong-scale numerical majorant, not a moment lower bound or obstruction to another method. All required deduction stages are present.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:nogo-02",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED (NEW adds an introductory roadmap sentence and splits the old paragraph into Step 1 / Step 2; no mathematical text changed)"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 66,
+      "source_old_view_statement_lf": [
+        80,
+        91
+      ],
+      "source_old_view_proof_lf": [
+        92,
+        122
+      ],
+      "source_new_view_statement_lf": [
+        80,
+        91
+      ],
+      "source_new_view_proof_lf": [
+        92,
+        134
+      ],
+      "original_old_proof_lf": [
+        92,
+        122
+      ],
+      "original_new_proof_lf": [
+        92,
+        134
+      ],
+      "source_old_proof_sha256": "b9a4ed3367e331f67c0dd0467e19baf08864e37cacf93d1acea6fc49979f1664",
+      "source_new_proof_sha256": "cfb302218d55b5059ffa7fb1b0a7c00e6e395d7da6325e4afdcd5793d4d0abb5",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "37822334eee5a24b937d572dea09bd13612a287a789700516f22ff04b42e19d6",
+      "mathematical_check": "The public working retains root-forward increments and adjacent white contractions: each even factor contributes1/2 and each preceding odd increment its Green mass, yielding the exact2^-k spatial/time integral. Gaussian approximate identities, fixed positive increments, finite indicator-boundary hyperplanes, spatial bound2^-2k(2t)^k and disjoint integrable temporal powers justify the fixed-order limit. The Dirichlet parameters2 and1-a give Gamma(1-a)^k/Gamma(1+(3-a)k), with2^-k retained in the general formula. Stirling then gives a k log k+O(k), refuting a uniform cubic denominator per diagram. The optional k=1 sanity check separately loses the outside1/2 (R1); the complete correct general Dirichlet deduction already appears before it, so this extra arithmetic error is not a missing required source derivation.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:nogo-03",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED (NEW splits into Step 1/Step 2 and adds an accurate summary sentence)"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 108,
+      "source_old_view_statement_lf": [
+        140,
+        148
+      ],
+      "source_old_view_proof_lf": [
+        149,
+        187
+      ],
+      "source_new_view_statement_lf": [
+        152,
+        160
+      ],
+      "source_new_view_proof_lf": [
+        161,
+        210
+      ],
+      "original_old_proof_lf": [
+        149,
+        187
+      ],
+      "original_new_proof_lf": [
+        161,
+        210
+      ],
+      "source_old_proof_sha256": "2cce5fa9a25c1cdc53c22e4283f84ada6e6ad3b2e2ec4983a44c0db21083f961",
+      "source_new_proof_sha256": "650fe3393405522864d7c876e7ddfaeeb3b3993cfb43212dcbd5bdc0558e52a3",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "6cadc9f9130ab721ae7dc60c2dce73002357768d93a0b0a437acb8f21ef188d7",
+      "mathematical_check": "The report correctly derives the spatial length-two factor c h1 h2^(1-alpha)/(1-alpha), the correct resulting a1 formula and a1=1/3 at alpha=a=.5. One repeated displayed integral drops this already computed prefactor on its left (R2); its correct right value and the preceding spatial working are present. It explicitly integrates the uniform-pair distance, applies convexity/Jensen to the Riesz spatial factor, and integrates both time triangles to obtain b1>=8sqrt(3/2)/9>2/3. The two actual nonnegative moment series, amplified noise and Cauchy-product mean yield the correct leading coefficients; the public anchor tail estimate gives O(z^2) for both, proving actual small-time strict failure with unit prefactor. No positivity-mixture representation, white-case or eventual-time failure is inferred.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:nogo-04",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED (NEW splits the original paragraph into Step 1/Step 2)"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 171,
+      "source_old_view_statement_lf": [
+        207,
+        218
+      ],
+      "source_old_view_proof_lf": [
+        219,
+        246
+      ],
+      "source_new_view_statement_lf": [
+        230,
+        241
+      ],
+      "source_new_view_proof_lf": [
+        242,
+        280
+      ],
+      "original_old_proof_lf": [
+        219,
+        246
+      ],
+      "original_new_proof_lf": [
+        242,
+        280
+      ],
+      "source_old_proof_sha256": "314b94cc21a52376e23eeb3670a975d6eb2dbd267300f4c7f03826a102d43501",
+      "source_new_proof_sha256": "4b1f12c427214a491c85ab5f916632a9cfa35b1c80271627d16a983fdbcd818a",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "e18df624962fda921ee408041b872ad199b9a27096b7257f63c5cb95912de3e2",
+      "mathematical_check": "The report reconstructs K(s,s), its factor c2^(1-alpha)/((1-alpha)(2-alpha)), the diagonal-distance representation b1=\u222bv^-a H(v)dv and H(0)=c2^(2-alpha)/((1-alpha)(2-alpha)(3-alpha)). It verifies the concentrating probability kernels epsilon v^(-1+epsilon), with unit mass and tail1-delta^epsilon, then combines the finite positive a1 limit with A1=2a1+b1. This gives exactly the claimed scaled limit2^(2-alpha)(1-alpha)>0 and divergence of A1/a1 as a\u21921. Fixed alpha<1 keeps the original model admissible throughout a<1. The scope is absence of an alpha-only coefficient constant uniformly in a, not failure of separately chosen constants or large-order comparisons.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:nogo-05",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED (NEW adds Step 1/Step 2 headings and summarizes)"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 219,
+      "source_old_view_statement_lf": [
+        264,
+        270
+      ],
+      "source_old_view_proof_lf": [
+        271,
+        295
+      ],
+      "source_new_view_statement_lf": [
+        298,
+        304
+      ],
+      "source_new_view_proof_lf": [
+        305,
+        341
+      ],
+      "original_old_proof_lf": [
+        271,
+        295
+      ],
+      "original_new_proof_lf": [
+        305,
+        341
+      ],
+      "source_old_proof_sha256": "9be4ed9c4e1aa6987329f2b05a10ceab89bc8b5597337b97459e921d41362117",
+      "source_new_proof_sha256": "6b4920112e0c44aa7379964ccf39c91f121d2c8c444b5e5aacd5181bfc3c72a5",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "409238b863e424e9f128fef0a08daa843f674951499a85d8c4699f3829cf961b",
+      "mathematical_check": "The public arithmetic checks all four original strict light-cone inequalities and the zero merged factor: displacement3/5 exceeds time1/4 while original product is2^-4. White domestic pair contraction leaves exactly two free spatial variables; open neighborhoods preserve the inequalities with positive contracted measure and the earlier reconstructed Gaussian-limit justification. For Riesz, independently perturbing four positions off domestic diagonals gives positive ordinary measure with finite positive covariance factors. The result is pointwise-concatenation failure, not an integrated or grouped-Wick comparison claim; all new explanatory scope sentences agree.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:nogo-06",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED (no new prose; unchanged)"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 250,
+      "source_old_view_statement_lf": [
+        315,
+        326
+      ],
+      "source_old_view_proof_lf": [
+        327,
+        340
+      ],
+      "source_new_view_statement_lf": [
+        361,
+        372
+      ],
+      "source_new_view_proof_lf": [
+        373,
+        386
+      ],
+      "original_old_proof_lf": [
+        327,
+        340
+      ],
+      "original_new_proof_lf": [
+        373,
+        386
+      ],
+      "source_old_proof_sha256": "559c5c2891613a982e6b128a86709ca96283c772643a692110801d06819d7e96",
+      "source_new_proof_sha256": "559c5c2891613a982e6b128a86709ca96283c772643a692110801d06819d7e96",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "bfced19f1f9a35276c29dfacdf4da55fb0f731964ddf501174b8015cf1dc9ab8",
+      "mathematical_check": "The required aggregate proof is public: it defines the pairing SUM F_k and correctly says that sum is symmetric in all2k times; its cube integral is P_k times the k disjoint-pair cube integral. The spatial replacement is t^k/2^k, the split count is2^(2k)/(2k)!, and P_k=(2k)!/(2^k k!), so the final displayed multiplication gives [2t^(3-a)/((1-a)(2-a))]^k/k! exactly. The report falsely strengthens the simplex-to-cube identity to each fixed pairing (R3), but the correct symmetric-sum input and final aggregate count are both separately supplied, so no extra target deduction is absent. Its following instruction to multiply by another t^((3-a)k) is also redundant/wrong prose: the preceding bound already is for the time-scaled coefficient. The source states only the symmetric-sum identity and has the correct time exponent.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:nogo-07",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED (no new prose; unchanged)"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 293,
+      "source_old_view_statement_lf": [
+        358,
+        368
+      ],
+      "source_old_view_proof_lf": [
+        369,
+        382
+      ],
+      "source_new_view_statement_lf": [
+        404,
+        414
+      ],
+      "source_new_view_proof_lf": [
+        415,
+        428
+      ],
+      "original_old_proof_lf": [
+        369,
+        382
+      ],
+      "original_new_proof_lf": [
+        415,
+        428
+      ],
+      "source_old_proof_sha256": "fac1a1bfa9b463b1561f8d84d15abbd3b27dd2debbe50b7de9e9e5ed1b47de92",
+      "source_new_proof_sha256": "fac1a1bfa9b463b1561f8d84d15abbd3b27dd2debbe50b7de9e9e5ed1b47de92",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "101e0ef4bfbd37dbc5f990c829bc3514aa1580b62e376aa1f55adb6599d4f80e",
+      "mathematical_check": "The report reconstructs the paired spatial increments as2^-k product min(h_j,g_j), the ordered windows of length1/(4k), increment lower bounds3/(4k) and paired differences below1/(4k). Multiplying these with the time-domain volume gives exactly(3*4^a/128)^k k^(-(3-a)k), and Stirling gives the a k log k obstruction. It invokes the fixed-k smoothing justification already reconstructed for NoGo02. The claim is about artificial block-label span, not actual chronological span or all shuffle estimates.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:nogo-10",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED (no new prose; unchanged)"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 328,
+      "source_old_view_statement_lf": [
+        400,
+        416
+      ],
+      "source_old_view_proof_lf": [
+        417,
+        431
+      ],
+      "source_new_view_statement_lf": [
+        446,
+        462
+      ],
+      "source_new_view_proof_lf": [
+        463,
+        477
+      ],
+      "original_old_proof_lf": [
+        417,
+        431
+      ],
+      "original_new_proof_lf": [
+        463,
+        477
+      ],
+      "source_old_proof_sha256": "875faf01595ab8084f074a8144a169acf5d5146b3363ce27a982a1fe9b9c06b2",
+      "source_new_proof_sha256": "875faf01595ab8084f074a8144a169acf5d5146b3363ce27a982a1fe9b9c06b2",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "f20dbaaa964ace2a3839e9b11777db832722432a72685c4d1326a8ebbe8c93df",
+      "mathematical_check": "The public geometry verifies that w is strictly inside both merge disks, with all outer constraints positive and stable. A ball around w has unbounded essential Riesz supremum on positive-measure smaller balls. It correctly leaves the remote (2,4) spatial/temporal factors in the weighted integral, distinguishes the other pair constant, and bounds only the temporal term by(T-b)^(-a0). The report preserves that infinite essential supremum does not show divergence of the Riesz-integrable weighted diagram or invalidate the unweighted convolution theorem in its own scope.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:nogo-17",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED (no new prose; unchanged)"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 351,
+      "source_old_view_statement_lf": [
+        452,
+        463
+      ],
+      "source_old_view_proof_lf": [
+        464,
+        490
+      ],
+      "source_new_view_statement_lf": [
+        498,
+        509
+      ],
+      "source_new_view_proof_lf": [
+        510,
+        536
+      ],
+      "original_old_proof_lf": [
+        464,
+        490
+      ],
+      "original_new_proof_lf": [
+        510,
+        536
+      ],
+      "source_old_proof_sha256": "aad4cdfe0cf7dd0cb6b51eb9964e4198a54ca517f72c6658beb08e1dbff91609",
+      "source_new_proof_sha256": "aad4cdfe0cf7dd0cb6b51eb9964e4198a54ca517f72c6658beb08e1dbff91609",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "b923abc06f56f25282317d27c7a457824adeaa519c7698fc656ad0330121732a",
+      "mathematical_check": "The exact transform identities are legitimately named UNASSIGNED book inputs under nonzero H:homog, alpha<2,a in(0,1),alpha+a<2. The report then reconstructs its own deductions: strict resolvent difference, w>0, small-lambda O(lambda^(a-1)) and large-lambda O(lambda^(a-2)) integrability, strict multiplier0<2theta/(2theta+lambda)<1, and the correlation-variance/positive-Laplace monotonicity comparison. It fully evaluates the alpha=1 ratio by the stated beta integral and partial fractions, giving J1/K=2-2^a. No source-proof/PDF review of the imported transform theorem or broader clock impossibility is claimed.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false
+    },
+    {
+      "proof_id": "P:nogo-18",
+      "author_reconstruction_status": "PARTIAL",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED (NEW adds Step 1/Step 2/Step 3 and a clarifying preamble; no mathematics changed)"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 431,
+      "source_old_view_statement_lf": [
+        513,
+        525
+      ],
+      "source_old_view_proof_lf": [
+        526,
+        605
+      ],
+      "source_new_view_statement_lf": [
+        559,
+        571
+      ],
+      "source_new_view_proof_lf": [
+        572,
+        667
+      ],
+      "original_old_proof_lf": [
+        526,
+        605
+      ],
+      "original_new_proof_lf": [
+        572,
+        667
+      ],
+      "source_old_proof_sha256": "ed6ad5322d884cd3dd30b60425e9d4921bd4f77b6c1f0409721593460c5481c0",
+      "source_new_proof_sha256": "0e9280f4f4155549233c5a80075f608d6be94aa4ef46c2f49aec38bb97aac92f",
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "0e8d5b4e0a5c05948985cffc66b7c1fde25b26d5f69b7499f2aa7898ec00345f",
+      "mathematical_check": "PARTIAL required public reconstruction. Useful public work includes the correct original four-Green spatial integral, R/q Jacobian and area-reduction formula, covariance determinant (after an immediate self-correction), positive root-kernel mixture, the shift factor bound S<=1, envelope definition, correct endpoint closed-form arithmetic545/11616 versus1025/21483 and exact negative gap-6005/7562016. However, Step1.2 lists the three general q-region Laplace fractions as claimed formulas and says independently verified, but supplies only checks at two special(b,c) points rather than the actual general integrations. Step3.8 likewise states the general bridge integral, verifies only eta=tau=0, then asserts the partial-fraction envelope evaluation. The required general source integral-to-rational-identification steps are not substantively public; point checks and later rational substitution cannot replace them. No source defect is identified by author-side examination of these elementary identities. The scope correctly refutes only the shift-erased pointwise envelope closure, not the original J<=I or an integrated comparison.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": true
+    }
+  ],
+  "mathematical_checks": [
+    "The report reconstructs the optimized theta=beta k/(2t), P_k between k! and2^k k!, and the exponential-factor sandwich by factorial series with q=beta-1>1. Its Riemann-sum product notation needs an index qualification (R4), but the stated k!/k^k>=exp(-k) bound and correct logarithmic integral argument give the needed exponential control. The lq/l1 upper sum is explicit; the floor(z^(1/q)/2) term gives a true lower bound >=2^(qk), with the exact floor inequality sufficient rather than merely the word approximately. Finally beta-1=3-alpha-a<3-alpha gives the wrong-scale numerical majorant, not a moment lower bound or obstruction to another method. All required deduction stages are present.",
+    "The public working retains root-forward increments and adjacent white contractions: each even factor contributes1/2 and each preceding odd increment its Green mass, yielding the exact2^-k spatial/time integral. Gaussian approximate identities, fixed positive increments, finite indicator-boundary hyperplanes, spatial bound2^-2k(2t)^k and disjoint integrable temporal powers justify the fixed-order limit. The Dirichlet parameters2 and1-a give Gamma(1-a)^k/Gamma(1+(3-a)k), with2^-k retained in the general formula. Stirling then gives a k log k+O(k), refuting a uniform cubic denominator per diagram. The optional k=1 sanity check separately loses the outside1/2 (R1); the complete correct general Dirichlet deduction already appears before it, so this extra arithmetic error is not a missing required source derivation.",
+    "The report correctly derives the spatial length-two factor c h1 h2^(1-alpha)/(1-alpha), the correct resulting a1 formula and a1=1/3 at alpha=a=.5. One repeated displayed integral drops this already computed prefactor on its left (R2); its correct right value and the preceding spatial working are present. It explicitly integrates the uniform-pair distance, applies convexity/Jensen to the Riesz spatial factor, and integrates both time triangles to obtain b1>=8sqrt(3/2)/9>2/3. The two actual nonnegative moment series, amplified noise and Cauchy-product mean yield the correct leading coefficients; the public anchor tail estimate gives O(z^2) for both, proving actual small-time strict failure with unit prefactor. No positivity-mixture representation, white-case or eventual-time failure is inferred.",
+    "The report reconstructs K(s,s), its factor c2^(1-alpha)/((1-alpha)(2-alpha)), the diagonal-distance representation b1=\u222bv^-a H(v)dv and H(0)=c2^(2-alpha)/((1-alpha)(2-alpha)(3-alpha)). It verifies the concentrating probability kernels epsilon v^(-1+epsilon), with unit mass and tail1-delta^epsilon, then combines the finite positive a1 limit with A1=2a1+b1. This gives exactly the claimed scaled limit2^(2-alpha)(1-alpha)>0 and divergence of A1/a1 as a\u21921. Fixed alpha<1 keeps the original model admissible throughout a<1. The scope is absence of an alpha-only coefficient constant uniformly in a, not failure of separately chosen constants or large-order comparisons.",
+    "The public arithmetic checks all four original strict light-cone inequalities and the zero merged factor: displacement3/5 exceeds time1/4 while original product is2^-4. White domestic pair contraction leaves exactly two free spatial variables; open neighborhoods preserve the inequalities with positive contracted measure and the earlier reconstructed Gaussian-limit justification. For Riesz, independently perturbing four positions off domestic diagonals gives positive ordinary measure with finite positive covariance factors. The result is pointwise-concatenation failure, not an integrated or grouped-Wick comparison claim; all new explanatory scope sentences agree.",
+    "The required aggregate proof is public: it defines the pairing SUM F_k and correctly says that sum is symmetric in all2k times; its cube integral is P_k times the k disjoint-pair cube integral. The spatial replacement is t^k/2^k, the split count is2^(2k)/(2k)!, and P_k=(2k)!/(2^k k!), so the final displayed multiplication gives [2t^(3-a)/((1-a)(2-a))]^k/k! exactly. The report falsely strengthens the simplex-to-cube identity to each fixed pairing (R3), but the correct symmetric-sum input and final aggregate count are both separately supplied, so no extra target deduction is absent. Its following instruction to multiply by another t^((3-a)k) is also redundant/wrong prose: the preceding bound already is for the time-scaled coefficient. The source states only the symmetric-sum identity and has the correct time exponent.",
+    "The report reconstructs the paired spatial increments as2^-k product min(h_j,g_j), the ordered windows of length1/(4k), increment lower bounds3/(4k) and paired differences below1/(4k). Multiplying these with the time-domain volume gives exactly(3*4^a/128)^k k^(-(3-a)k), and Stirling gives the a k log k obstruction. It invokes the fixed-k smoothing justification already reconstructed for NoGo02. The claim is about artificial block-label span, not actual chronological span or all shuffle estimates.",
+    "The public geometry verifies that w is strictly inside both merge disks, with all outer constraints positive and stable. A ball around w has unbounded essential Riesz supremum on positive-measure smaller balls. It correctly leaves the remote (2,4) spatial/temporal factors in the weighted integral, distinguishes the other pair constant, and bounds only the temporal term by(T-b)^(-a0). The report preserves that infinite essential supremum does not show divergence of the Riesz-integrable weighted diagram or invalidate the unweighted convolution theorem in its own scope.",
+    "The exact transform identities are legitimately named UNASSIGNED book inputs under nonzero H:homog, alpha<2,a in(0,1),alpha+a<2. The report then reconstructs its own deductions: strict resolvent difference, w>0, small-lambda O(lambda^(a-1)) and large-lambda O(lambda^(a-2)) integrability, strict multiplier0<2theta/(2theta+lambda)<1, and the correlation-variance/positive-Laplace monotonicity comparison. It fully evaluates the alpha=1 ratio by the stated beta integral and partial fractions, giving J1/K=2-2^a. No source-proof/PDF review of the imported transform theorem or broader clock impossibility is claimed.",
+    "PARTIAL required public reconstruction. Useful public work includes the correct original four-Green spatial integral, R/q Jacobian and area-reduction formula, covariance determinant (after an immediate self-correction), positive root-kernel mixture, the shift factor bound S<=1, envelope definition, correct endpoint closed-form arithmetic545/11616 versus1025/21483 and exact negative gap-6005/7562016. However, Step1.2 lists the three general q-region Laplace fractions as claimed formulas and says independently verified, but supplies only checks at two special(b,c) points rather than the actual general integrations. Step3.8 likewise states the general bridge integral, verifies only eta=tau=0, then asserts the partial-fraction envelope evaluation. The required general source integral-to-rational-identification steps are not substantively public; point checks and later rational substitution cannot replace them. No source defect is identified by author-side examination of these elementary identities. The scope correctly refutes only the shift-erased pointwise envelope closure, not the original J<=I or an integrated comparison."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "classification": "report-only optional k=1 Dirichlet check missing the white prefactor",
+      "report_section": "P:nogo-02 / Step2.4",
+      "report_lf": 90,
+      "old": "2^-1 Gamma(1/2)/Gamma(7/2) t^(5/2)=(8/15)t^(5/2)",
+      "new": "The bare simplex integral is(8/15)t^(5/2); multiplying its white prefactor1/2 gives J_adj(t)=(4/15)t^(5/2)=2^-1 Gamma(1/2)/Gamma(7/2)t^(5/2).",
+      "contrary_calculation": "Gamma(7/2)=15sqrt(pi)/8, so (1/2)sqrt(pi)/Gamma(7/2)=4/15.",
+      "disposition": "The report main general Dirichlet formula and its subsequent multiplication by2^-k are correct. Record the extra sanity-check arithmetic error without changing source or inventing a missing main deduction."
+    },
+    {
+      "id": "R2",
+      "classification": "report-only missing spatial prefactor in a repeated displayed integral",
+      "report_section": "P:nogo-03 / Step1.1",
+      "report_lf": 124,
+      "old": "\u222b_{h1+h2<1} c h1 h2^(1-alpha-a) dh = c/[(1-alpha)(2-alpha-a)(3-alpha-a)(4-alpha-a)]",
+      "new": "\u222b_{h1+h2<1} [c/(1-alpha)] h1 h2^(1-alpha-a) dh = c/[(1-alpha)(2-alpha-a)(3-alpha-a)(4-alpha-a)].",
+      "contrary_calculation": "At c=1,alpha=a=1/2, the unprefactored integral is1/6, while a1 is1/3. The missing1/(1-alpha) factor is already correctly computed in the report immediately preceding spatial line. The Gamma ratio gives the three time factors;1-alpha comes from the spatial integral, not that ratio.",
+      "disposition": "Source and the report actual a1 value/coefficient comparison are correct. Keep this literal transcription error, not a new source repair."
+    },
+    {
+      "id": "R3",
+      "classification": "report-only false fixed-pairing symmetrization and redundant time-scaling prose",
+      "report_section": "P:nogo-06 / Steps2,4",
+      "report_lf": 265,
+      "old": "For a fixed pairing, its ordered split integral equals its cube integral divided by m!n! because the ordering regions have equal volume.",
+      "new": "The SUM F_k over all pairings is symmetric, so its ordered split integral equals its cube integral divided by m!n!. Each fixed pairing has the same cube integral by disjoint pair factorization, but need not have equal ordered-region integrals.",
+      "contrary_calculation": "For k=2,split(0,4),adjacent matching and a=1/2 at t=1, the ordered temporal integral is Gamma(1/2)^2/Gamma(4)=pi/6. The cube integral divided by4! is(8/3)^2/24=8/27, different. Equal volumes do not make a nonsymmetric integrand equally distributed.",
+      "disposition": "The report explicitly defines the correct symmetric F_k and its final aggregate multiplication is correct, so the needed summed proof is already public independently of the false stronger identity. The phrase multiplying again by t^((3-a)k) should be removed: the preceding displayed coefficient bound already carries that time factor. The source makes neither error."
+    },
+    {
+      "id": "R4",
+      "classification": "optional report Riemann-product indexing precision",
+      "report_section": "P:nogo-01 / Step2",
+      "report_lf": 33,
+      "old": "log product(1-j/k)>=k integral_0^1 log(1-u)du",
+      "new": "Use sum_{j=1}^k log(j/k)>=k integral_0^1 log(u)du=-k; equivalently use product_{j=0}^{k-1}(1-j/k), excluding the zero endpoint.",
+      "disposition": "The second product in the report has no explicit indices; carrying the preceding1..k indices into it would include a zero factor. The intended right/left Riemann-sum bound is correct, and the needed factorial estimate is correctly stated. No source error or extra critical reconstruction requirement follows."
+    },
+    {
+      "id": "D1",
+      "classification": "missing required general transform integration in public reconstruction",
+      "report_section": "P:nogo-18 / Step1.2 and Step3.8",
+      "report_lf": 461,
+      "disposition": "The three q-region expressions are copied as claimed general fractions, followed only by two special-parameter checks. The bridge identity is stated and checked only at eta=tau=0; its general quadratic integral and ensuing general rational envelope identification are not derived publicly. Those quantities occur inside this assigned target proof and are not declared UNASSIGNED inputs. Preserve native COMPLETE flag literally, but classify NoGo18 PARTIAL; author/source knowledge is not inserted to repair the report."
+    },
+    {
+      "id": "R5",
+      "classification": "self-corrected public determinant scratch and report prose provenance",
+      "report_section": "P:nogo-18 / Step2.4; Findings",
+      "disposition": "The tentative determinant expansion ending in a question mark is immediately replaced by the correct (R+w)(w+z)-w^2=rR+wz, so the needed determinant deduction is public and correct. The Findings phrase calling new roadmap/Step text outside-proof administrative prose is inaccurate: those additions are inside the proof environments. They are scientific explanatory/organizational text; the separately omitted historical prose is outside the assigned proof bodies. No source/render/grade inference follows."
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": true,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 30043,
+      "sha256": "2567ab8cafee5d8eeec1239b75dd0f5e48786a520a67558e839442ac66ce8512"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 4831,
+      "sha256": "1afe54693377a105415a5bc0c3448a2d5209da15b9c5864ef3e8c6a6a60e270d"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 16525,
+      "sha256": "4600fb2678be349b5ea95ecff1901b6631fbd1bad1875c08cb40fe13ccf7ac1f"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 5224,
+      "sha256": "5bd383c90500a9208ea0e835cf968dde570ec303f2aec550026486c8b6ea3705"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 11241,
+      "sha256": "b89a494060bfd1176d50f775812fbd383b5cf6d54a17cab866c4940739db631c"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 28124,
+      "sha256": "ef50fdf9a7c8554b5c6eb124ffca2670b1cc7a9b9c1f7d5920183948e70b7509"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 30302,
+      "sha256": "e90616bdb21e917bf0fa665dc18b162b928963af702bf3b2c593d7a6b0867642"
+    },
+    {
+      "path": "inputs/baseline-model-and-exponent.txt",
+      "bytes": 2132,
+      "sha256": "ba3693314fe34e7f9a7ceac5d452fcac3891acb1d6641a0cdb45274381aac8d6"
+    },
+    {
+      "path": "inputs/baseline-scientific-section-01.txt",
+      "bytes": 4824,
+      "sha256": "ce0c4af85bfa40e09c37d6b5704d9cb1546ee334c83e8605c2ed61c3987a4879"
+    },
+    {
+      "path": "inputs/baseline-scientific-section-02.txt",
+      "bytes": 6080,
+      "sha256": "c3fa80d8adad13dd57bcc460b36890b976cd0fc1f543f5b7160688c5b196e3a0"
+    },
+    {
+      "path": "inputs/baseline-scientific-section-03.txt",
+      "bytes": 26798,
+      "sha256": "b3df8907b80b35ed1c84866998f4fb1da57c299d732ce6be32835266b963b900"
+    },
+    {
+      "path": "inputs/baseline-scientific-section-04.txt",
+      "bytes": 14291,
+      "sha256": "1a0ff85d7f85218458a1502b078551b905a1d5f367a11350e21c61b532160c68"
+    },
+    {
+      "path": "inputs/baseline-interval-navigation.txt",
+      "bytes": 76,
+      "sha256": "14b0ffa7654a75799e5fb926c3ad4a660c70a2474b397ffc1d4e6d2ff91b95f2"
+    },
+    {
+      "path": "inputs/integrated_covariance_foundation.txt",
+      "bytes": 21173,
+      "sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020"
+    }
+  ],
+  "input_identity_checks": "All SOURCE-BINDING delivered payload hashes checked; all ten complete proof environments independently matched view LF and proof hashes. Original/view coordinates retained. Only declared outside-proof prose omitted; no target proof/statement/display omitted.",
+  "context_checks": [
+    "P:mixed and canonical kernel conventions apply to the original nonnegative Stratonovich mixed/self-pair expansion, including empty/unequal chains.",
+    "NoGo17 exact transform identities are named unassigned book inputs under the same nonzero H:homog and damping conventions; its own positivity/integrability/correlation/degree-one deductions are reconstructed.",
+    "No original source-PDF proof or all two-clock/noise-covariance claim is reviewed or inferred; NoGo18 is only a shift-erased pointwise closure obstruction."
+  ],
+  "read_limits": [
+    "Every public mathematical reason, original-step inventory and finding checked against full frozen OLD/NEW statements/proofs and needed supplied inputs. Unassigned upstream proofs not counted or globally certified.",
+    "NoGo18 source formulas were examined on the author side without identifying a source defect; that knowledge is not substituted for the missing required public integrations.",
+    "No model/provider/probe, native export, hidden reasoning, transport or event work. Prospective recovery and unknown-aggregate accounting are separate root/dispatcher matters. No source/public/Git/PDF/raw-report edits."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption and release authority"
+}

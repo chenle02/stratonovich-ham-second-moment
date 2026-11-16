@@ -1,0 +1,433 @@
+{
+  "review_record_id": "RP028",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side mathematical public-report/source adjudication only; not an independent scientific vote or Chapter12 skeptic synthesis",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "06fa30d135a3f77118419233246b231b9c1358b8",
+  "source_file": "notes/no-go/phase.tex",
+  "source_binding_sha256": "50a90095cc4886ec196339282734fb127276305a4b9a3aecfbf64f1852e564d9",
+  "public_report_sha256": "d17e0a3069b89d595169231299260e672a6c3934a08086e51e508f608dcf019d",
+  "all_assigned_public_reasons_and_findings_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "SCOPED_ARGUMENT_PRESERVATION_SUPPORTED_WITH_MINOR_REPORT_ONLY_WORDING_NOTES",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "P:nogo-14": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:nogo-15": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1",
+        "R2"
+      ]
+    },
+    "P:nogo-16": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:nogo-20": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:nogo-31": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "P:nogo-14",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 25,
+      "source_old_view_statement_lf": [
+        22,
+        34
+      ],
+      "source_old_view_proof_lf": [
+        35,
+        79
+      ],
+      "source_new_view_statement_lf": [
+        22,
+        34
+      ],
+      "source_new_view_proof_lf": [
+        35,
+        91
+      ],
+      "original_old_proof_lf": [
+        35,
+        79
+      ],
+      "original_new_proof_lf": [
+        35,
+        91
+      ],
+      "source_old_proof_sha256": "0b7d0850bddf746bc0522179932d36dd5dc9a14e125c5fecde9a8dca4d5ff1f4",
+      "source_new_proof_sha256": "fbe7879e937c9d655d60c2e0171b3b11fb93656525e21f6f94a13a24a6d0f442",
+      "mathematical_check": "All original steps are publicly reconstructed. The entire c,s series give the actual two-block phase product M(w)M(z), retaining the inherited velocity. The report expands c(w)c(z) and s(w)z s(z) through degree2, obtains linear3z/2+w/2 and quadratic5z^2/24+5zw/12+w^2/24, and squares them to get z^2 coefficient8/3 and w^2 coefficient1/3. Independence/centering eliminate mixed odd powers; each Gaussian variance A then gives the two-block3A versus the one-block A/3, whose squared moment has2A/3. The explicit sub-Gaussian-growth entire-series majorant is integrable at fixed positive variance. Nonnegative coefficient products and odd-power cancellation give a nonnegative convergent A-series; the displayed anchor estimate for its tail yields O(A^2), so the difference is genuinely7A/3+O(A^2)>0. No reset of velocity or claim that this spatially constant independent-block diagnostic belongs to H:homog is used.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "native_original_step_inventory_checked": true,
+      "native_original_step_inventory_labels": [
+        "Entire functions and propagator.",
+        "Degree-two expansion.",
+        "Squaring.",
+        "One-block moment.",
+        "Comparison.",
+        "Remainder justification (Step 2)."
+      ],
+      "native_report_proof_section_sha256": "ce35fa9aa5cf98a0ec8775659709da9d181e4e9f47684eb48105838102497663"
+    },
+    {
+      "proof_id": "P:nogo-15",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 99,
+      "source_old_view_statement_lf": [
+        97,
+        113
+      ],
+      "source_old_view_proof_lf": [
+        114,
+        140
+      ],
+      "source_new_view_statement_lf": [
+        109,
+        125
+      ],
+      "source_new_view_proof_lf": [
+        126,
+        163
+      ],
+      "original_old_proof_lf": [
+        114,
+        140
+      ],
+      "original_new_proof_lf": [
+        126,
+        163
+      ],
+      "source_old_proof_sha256": "b155e314225d29cba1bb26cc5f9a610c8fb323a145364277e5d0a342ca17f865",
+      "source_new_proof_sha256": "cc01f3d023c05d7e68e47eee05e32d8174d384610cf14494cbc894fad7614b18",
+      "mathematical_check": "The public working prints all three Taylor matrices, computes M1^T M1=[[5/4,7/12],[7/12,5/18]] and the two mean terms [[1/12,13/60],[13/60,1/10]], hence K=[[4/3,4/5],[4/5,17/45]]. It evaluates (1,-2)K(1,-2)^T=-16/45, and separately compares first-random5/4 with full4/3 on e1. The absolute entire-entry majorants at a fixed coupling anchor, Gaussian sign symmetry, and the same series-tail argument used in the preceding reconstructed proof justify O(sigma^4), including signed phase coefficients through an absolute majorant. The base phase M0(1,-2)=(-1,-2) has squared norm5, giving an actual expected-energy decrease. The report says norm5 once where it means squared norm5 (R1); its displayed energy formula has the correct constant. The full variance coefficient is correctly distinguished from a PSD covariance matrix; no homogeneous-model monotonicity failure for the specified (1,0) point solution is inferred.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "native_original_step_inventory_checked": true,
+      "native_original_step_inventory_labels": [
+        "Taylor coefficients of $M(z)$.",
+        "Coefficient of variance.",
+        "Matrix arithmetic.",
+        "Signed quadratic form.",
+        "Underestimation claim.",
+        "Remainder (Step 2)."
+      ],
+      "native_report_proof_section_sha256": "996e40db3445ba2869448ac0ebc516a0536fb3adfb42dfa5dea87348a6c77cd0"
+    },
+    {
+      "proof_id": "P:nogo-16",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "no new explanatory prose detected; proof LF length"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 176,
+      "source_old_view_statement_lf": [
+        160,
+        173
+      ],
+      "source_old_view_proof_lf": [
+        174,
+        193
+      ],
+      "source_new_view_statement_lf": [
+        183,
+        196
+      ],
+      "source_new_view_proof_lf": [
+        197,
+        216
+      ],
+      "original_old_proof_lf": [
+        174,
+        193
+      ],
+      "original_new_proof_lf": [
+        197,
+        216
+      ],
+      "source_old_proof_sha256": "dc998dd730a61000d3e44d20d994bd7cf77caac032834203b5a03d5b50921b66",
+      "source_new_proof_sha256": "dc998dd730a61000d3e44d20d994bd7cf77caac032834203b5a03d5b50921b66",
+      "mathematical_check": "The unchanged proof is reconstructed rather than accepted from its byte identity. The bijection H=c^(1/(2-r))K scales both reward and cost by c^(2/(2-r)); r in (0,2) gives finite positive J1 and exponent greater than1, so the surrogate score is2J1<J2. For Gaussian shift density L_h=exp(hZ-h^2/2), E L_h^2=exp(h^2); Cauchy-Schwarz yields E Y^2>=(E_Qh Y)^2 exp(-h^2). The report retains the variance-one tilted mean exp(sigma^2/2+sigma h), maximizes sigma^2+2sigma h-h^2 at h=sigma to recover exp(2sigma^2), and contrasts the deterministic surrogate maximum exp(sigma^2). This identifies a scalar surrogate loss, not a defect of the Gaussian density cost or a new SPDE no-go.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "native_original_step_inventory_checked": true,
+      "native_original_step_inventory_labels": [
+        "Scaling of the score.",
+        "Finiteness and positivity of $J_1$.",
+        "Strict surrogate comparison.",
+        "Gaussian tilted mean.",
+        "Deterministic surrogate loss."
+      ],
+      "native_report_proof_section_sha256": "4317d6d55e4c04f2b2c2192d6cad8161ea390ef3797711128a93103580ab9942"
+    },
+    {
+      "proof_id": "P:nogo-20",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "none beyond LF offset (24 lines each: OLD 221\u2013244,"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 223,
+      "source_old_view_statement_lf": [
+        210,
+        220
+      ],
+      "source_old_view_proof_lf": [
+        221,
+        244
+      ],
+      "source_new_view_statement_lf": [
+        233,
+        243
+      ],
+      "source_new_view_proof_lf": [
+        244,
+        267
+      ],
+      "original_old_proof_lf": [
+        221,
+        244
+      ],
+      "original_new_proof_lf": [
+        244,
+        267
+      ],
+      "source_old_proof_sha256": "faf8d04767d63bf4417b2280765761e82a5f370d9173c9414bc396994f80026f",
+      "source_new_proof_sha256": "faf8d04767d63bf4417b2280765761e82a5f370d9173c9414bc396994f80026f",
+      "mathematical_check": "The report reconstructs the actual positive smooth compact test f1 q1+f1(1-u)q2 with spatially disjoint bumps. On the first time support, u<1-u gives A>B>0; the reflected integrals produce h0=c_Gamma(Aq1+Bq2), h1=c_Gamma(Bq1+Aq2). Evaluating at one positive point in each disjoint bump yields the strictly positive determinant c_Gamma^2(A^2-B^2)q1(x1)q2(x2), whereas a fixed spatial U times any scalar time factor would give zero. The original positive covariance amplitude is retained in that determinant; alpha=d=1 and a<1 meet the white-model threshold. This proves one nonproportional-profile witness in the full positive control class, not failure of separable controls to attain a variational supremum or a measurable optimizer statement. The unchanged common lower profile is not converted to a wave comparison.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "native_original_step_inventory_checked": true,
+      "native_original_step_inventory_labels": [
+        "Construction.",
+        "Constants.",
+        "End profiles.",
+        "Determinant test.",
+        "Parameter condition."
+      ],
+      "native_report_proof_section_sha256": "303c4889cdea3b2aa9d55a94a71a17b87a708d5f9998a6d5d90308a0949cfa70"
+    },
+    {
+      "proof_id": "P:nogo-31",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "none beyond LF offset (22 lines each: OLD 272\u2013293,"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 274,
+      "source_old_view_statement_lf": [
+        264,
+        271
+      ],
+      "source_old_view_proof_lf": [
+        272,
+        293
+      ],
+      "source_new_view_statement_lf": [
+        287,
+        294
+      ],
+      "source_new_view_proof_lf": [
+        295,
+        316
+      ],
+      "original_old_proof_lf": [
+        272,
+        293
+      ],
+      "original_new_proof_lf": [
+        295,
+        316
+      ],
+      "source_old_proof_sha256": "6992d5753d5888c86c94b6e80cc80e33a8a125c7a868bb49da856fd0d049a01a",
+      "source_new_proof_sha256": "6992d5753d5888c86c94b6e80cc80e33a8a125c7a868bb49da856fd0d049a01a",
+      "mathematical_check": "Both elementary witnesses are publicly reconstructed. The real symmetric matrix [[0,1],[1,0]] has eigenvectors(1,1),(1,-1) with eigenvalues1,-1, so its operator norm grows exp(t) while the nonzero stable phase decays exp(-t); this does not refute the specified original phase. For the second witness, the small initial-data mask kills the smooth unit-integral velocity supported in (5,6), while the large mask keeps it, even though both agree on [-2,2] and both initial displacements vanish everywhere. Every interval[x-9,x+9] with x in[-2,2] contains(5,6), so D\u2019Alembert gives displacement1/2 versus0 throughout the observer. The required full-backward-cone agreement of both phase entries is retained; there is no alleged finite-propagation violation.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "native_original_step_inventory_checked": true,
+      "native_original_step_inventory_labels": [
+        "Non-lower growth for every phase.",
+        "Masks and velocities.",
+        "D'Alembert at time nine.",
+        "Scope."
+      ],
+      "native_report_proof_section_sha256": "71f24b8c855b6ba04100b49e737fd86f74992be995762adfb7484abe003bd87b"
+    }
+  ],
+  "mathematical_checks": [
+    "All original steps are publicly reconstructed. The entire c,s series give the actual two-block phase product M(w)M(z), retaining the inherited velocity. The report expands c(w)c(z) and s(w)z s(z) through degree2, obtains linear3z/2+w/2 and quadratic5z^2/24+5zw/12+w^2/24, and squares them to get z^2 coefficient8/3 and w^2 coefficient1/3. Independence/centering eliminate mixed odd powers; each Gaussian variance A then gives the two-block3A versus the one-block A/3, whose squared moment has2A/3. The explicit sub-Gaussian-growth entire-series majorant is integrable at fixed positive variance. Nonnegative coefficient products and odd-power cancellation give a nonnegative convergent A-series; the displayed anchor estimate for its tail yields O(A^2), so the difference is genuinely7A/3+O(A^2)>0. No reset of velocity or claim that this spatially constant independent-block diagnostic belongs to H:homog is used.",
+    "The public working prints all three Taylor matrices, computes M1^T M1=[[5/4,7/12],[7/12,5/18]] and the two mean terms [[1/12,13/60],[13/60,1/10]], hence K=[[4/3,4/5],[4/5,17/45]]. It evaluates (1,-2)K(1,-2)^T=-16/45, and separately compares first-random5/4 with full4/3 on e1. The absolute entire-entry majorants at a fixed coupling anchor, Gaussian sign symmetry, and the same series-tail argument used in the preceding reconstructed proof justify O(sigma^4), including signed phase coefficients through an absolute majorant. The base phase M0(1,-2)=(-1,-2) has squared norm5, giving an actual expected-energy decrease. The report says norm5 once where it means squared norm5 (R1); its displayed energy formula has the correct constant. The full variance coefficient is correctly distinguished from a PSD covariance matrix; no homogeneous-model monotonicity failure for the specified (1,0) point solution is inferred.",
+    "The unchanged proof is reconstructed rather than accepted from its byte identity. The bijection H=c^(1/(2-r))K scales both reward and cost by c^(2/(2-r)); r in (0,2) gives finite positive J1 and exponent greater than1, so the surrogate score is2J1<J2. For Gaussian shift density L_h=exp(hZ-h^2/2), E L_h^2=exp(h^2); Cauchy-Schwarz yields E Y^2>=(E_Qh Y)^2 exp(-h^2). The report retains the variance-one tilted mean exp(sigma^2/2+sigma h), maximizes sigma^2+2sigma h-h^2 at h=sigma to recover exp(2sigma^2), and contrasts the deterministic surrogate maximum exp(sigma^2). This identifies a scalar surrogate loss, not a defect of the Gaussian density cost or a new SPDE no-go.",
+    "The report reconstructs the actual positive smooth compact test f1 q1+f1(1-u)q2 with spatially disjoint bumps. On the first time support, u<1-u gives A>B>0; the reflected integrals produce h0=c_Gamma(Aq1+Bq2), h1=c_Gamma(Bq1+Aq2). Evaluating at one positive point in each disjoint bump yields the strictly positive determinant c_Gamma^2(A^2-B^2)q1(x1)q2(x2), whereas a fixed spatial U times any scalar time factor would give zero. The original positive covariance amplitude is retained in that determinant; alpha=d=1 and a<1 meet the white-model threshold. This proves one nonproportional-profile witness in the full positive control class, not failure of separable controls to attain a variational supremum or a measurable optimizer statement. The unchanged common lower profile is not converted to a wave comparison.",
+    "Both elementary witnesses are publicly reconstructed. The real symmetric matrix [[0,1],[1,0]] has eigenvectors(1,1),(1,-1) with eigenvalues1,-1, so its operator norm grows exp(t) while the nonzero stable phase decays exp(-t); this does not refute the specified original phase. For the second witness, the small initial-data mask kills the smooth unit-integral velocity supported in (5,6), while the large mask keeps it, even though both agree on [-2,2] and both initial displacements vanish everywhere. Every interval[x-9,x+9] with x in[-2,2] contains(5,6), so D\u2019Alembert gives displacement1/2 versus0 throughout the observer. The required full-backward-cone agreement of both phase entries is retained; there is no alleged finite-propagation violation."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "classification": "report-only norm versus squared-norm wording slip",
+      "report_section": "P:nogo-15 / Step6",
+      "report_lf": 163,
+      "old": "M(0)x=(-1,-2) with norm5",
+      "new": "M(0)x=(-1,-2) with squared Euclidean norm5 (norm sqrt(5)).",
+      "contrary_calculation": "(-1)^2+(-2)^2=5, so ||M0x||=sqrt(5), not5. The report immediately writes the correct expected-energy baseline5 and the correct negative sigma^2 coefficient; all required arithmetic is otherwise explicit.",
+      "disposition": "Keep raw PASS/high unchanged. This literal word slip is not a source defect or absent variance-energy reconstruction."
+    },
+    {
+      "id": "R2",
+      "classification": "optional report parity precision",
+      "report_section": "P:nogo-15 / Step6",
+      "report_lf": 160,
+      "disposition": "Evenness refers to the Gaussian EXPECTATION series after odd Z moments vanish. The samplewise matrix/path expansion itself is not even in sigma. The report earlier explicitly uses E Z=0 and its final formula is an expectation, so the intended deduction and required absolute-anchor remainder argument are present. No source change is needed."
+    },
+    {
+      "id": "R3",
+      "classification": "report provenance/context scope precision, not a mathematical deficiency",
+      "disposition": "Inputs are exact raw UTF8 scientific payloads, not rendered PDF/page evidence. The report explicitly disclaims verifying pinned Git bytes and source images; root SOURCE-BINDING and the local delivered hashes supply custody separately. The named CP/Teschl/Young upstream theories in its generic limits paragraph play no operative part in these five elementary witness deductions and are not additional source/application reviews or votes."
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 16424,
+      "sha256": "d17e0a3069b89d595169231299260e672a6c3934a08086e51e508f608dcf019d"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 4706,
+      "sha256": "65ca5d6624bf335602187bd50e21c96d77b64b859154a271695f12b837e02ab3"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 8736,
+      "sha256": "40066d5c50c875f6a3d0630b18a0e20f5e1fecfc7d85cae35fcfd1ebd08ebade"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 4138,
+      "sha256": "50a90095cc4886ec196339282734fb127276305a4b9a3aecfbf64f1852e564d9"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 9001,
+      "sha256": "66248f32c850f21382e69d47eb3668be0aad67302e574461eb8eda89671c570c"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 13024,
+      "sha256": "9b5e4af075c143558fa3376dabdf89ec1ea80e84762fc4a5e67fd145274ac38c"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 13872,
+      "sha256": "493142b0f114fce46d9bf1547097387c0ac7ca882ab58693e3a0ea1edfd54d9a"
+    },
+    {
+      "path": "inputs/baseline-model-and-exponent.txt",
+      "bytes": 2132,
+      "sha256": "ba3693314fe34e7f9a7ceac5d452fcac3891acb1d6641a0cdb45274381aac8d6"
+    },
+    {
+      "path": "inputs/baseline-scientific-section-01.txt",
+      "bytes": 24882,
+      "sha256": "6744dad749cee44fccbbe417f5d143dd464cc19784fbad64f506634e60a361af"
+    },
+    {
+      "path": "inputs/baseline-static-phase-scope.txt",
+      "bytes": 654,
+      "sha256": "60855b6906e892424e164454f2e8fca1f181592c7343604e50b5ebe377c7b833"
+    },
+    {
+      "path": "inputs/integrated_constant_phase_young.txt",
+      "bytes": 27376,
+      "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+    },
+    {
+      "path": "inputs/integrated_compact_mean_family.txt",
+      "bytes": 25917,
+      "sha256": "39946946cc52bee56eb5ec2ab44111a2e8873df9b17ef65d322c0b42066325ca"
+    }
+  ],
+  "input_identity_checks": "All SOURCE-BINDING delivered payload hashes checked. Both scientific-view target payloads equal their full pinned source files for this scope; proof/statement bytes and original-versus-view LF are recorded. Unassigned context proofs not counted.",
+  "context_checks": [
+    "The elementary NoGo14/15/16/31 witnesses have their explicitly generic scalar/deterministic scope, without inventing a homogeneous-model counterexample.",
+    "NoGo20 uses the stated H:homog white spatial case alpha=d=1, original positive amplitude and a in(0,1); no optimizer-reduction conclusion is inferred.",
+    "Book static-phase/all-order references are scoped comparison/navigation inputs, not proof or whole-book acceptance from these witnesses."
+  ],
+  "read_limits": [
+    "Every public mathematical reason, step inventory and finding checked against full OLD/NEW statements/proofs and needed supplied definitions/parameter declarations. No new proof review of unassigned upstream theories or primary sources.",
+    "No transport, provider/model/probe, native export, hidden reasoning or events read or used. Prospective ChoiceB recovery/accounting metadata remains root/dispatcher responsibility and is not approved by this mathematical disposition.",
+    "No source, public worktree, Git, PDF or raw report edits; the private adjudication is the only per-run output written."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews this delegated disposition;16/Le retain source adoption and release authority"
+}

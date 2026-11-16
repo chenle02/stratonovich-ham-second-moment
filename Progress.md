@@ -8,6 +8,34 @@
 ## Active narrow follow-up: proof-readability rereads (2026-11-16)
 
 
+### Five NoGo rereads recorded; reading and working kept separate
+
+RP026-RP030 produced five normal-stop reports on 33 assigned OLD/NEW proof
+pairs. Raw grades remain four PASS and one PASS_WITH_NOTES, all global high;
+per-proof confidence is absent/null. All 33 readings are complete. Author-side
+adjudication finds 30 public reconstructions checked and three partial:
+NoGo18's general transform/integral working, NoGo11's erroneous moment-series
+criticism and unchecked finite enclosures, and NoGo21's original-noise test
+completion/interface. No new manuscript defect or required source edit was
+identified; worker corrections are not inserted into the independent reports.
+The original NoGo11 series is correct, so the report's proposed source repair
+is rejected while its own reconstruction remains partial.
+
+Five exact-input/zero-tool terminal records are preserved under prospective
+Choice B. None shows native recovery, but backend requests and aggregate
+usage/cost/cap remain unproved/unknown. Historical RP013/RP014/RP016 holds are
+unchanged. The first-pass/f06 snapshot index now has 22 terminal attempts,
+21 reports, 129 assigned proof pairs, 128 complete readings, 122 checked
+public reconstructions, six partial and one no-report; 112 checked pairs have
+no observed protocol incident. These are scoped snapshot counts, not final
+second-pass coverage or a book completion percentage. No-go and reviewer
+history, old627/118censuses, whole-book grades, Chapter12 skeptic NOT_OBTAINED
+and R/F/release gates are unchanged. See the dated index and
+`NOGO026-030-ROOT-RECORD-REVIEW.json`. Appendix E must reconcile this separate
+reread series and later source versions at the final synchronization gate.
+
+
+
 **Post-launch source correction:** Agent 24 reports six accepted editorial
 reader stop points will change uniform-mean and signed-static once more.
 RP039 (`0816c195`) and RP041 (`484ed7f4`) retain their launched source bindings
