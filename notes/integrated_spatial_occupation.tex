@@ -74,11 +74,6 @@ its usual pointwise sense.
   constant $\|U_z\|_\infty$. On a positive compact interval its rate has a
   positive floor by monotonicity, giving the square-root Lipschitz bound.
 
-  For two positive coefficients, the difference of the squared Rayleigh rates
-  is bounded by the coefficient difference times $\|U_z\|_\infty$. To pass to
-  their square roots, divide by the sum of the positive rates. On a compact
-  positive coefficient interval, monotonicity bounds that denominator away
-  from zero by the rate at its left endpoint.
 
   \medskip
   \noindent\textit{Step 2.~}We approximate the equilibrium density by
@@ -100,11 +95,6 @@ its usual pointwise sense.
   $\lambda_z(1)$ and bounded by that finite number. Dominated convergence gives
   $I_{\Psi_n} \to \lambda_z(1)$.
 
-  As $n$ increases, both arguments of the nonincreasing cutoff decrease, so
-  both cutoff factors increase. Their product increases to one at every
-  interior time. The temporal potentials are therefore increasing and remain
-  between $c_0$ and one, a compact positive interval on which the rate
-  comparison just proved applies.
 
   \medskip
   \noindent\textit{Step 3.~}We pass the covariance cost and the score to the
@@ -198,6 +188,15 @@ of $S_1^{\mathrm{pos}}$.
   \medskip
   \noindent\textit{Step 3.~}We integrate the majorant and keep the original
   spectral normalization.
+  The scalar integral in that resolvent calculation is
+  \[
+    \int_0^\infty\frac{u^{\alpha-1}}{1+u^2}\ud u
+    =\frac12\operatorname{Beta}(\alpha/2,1-\alpha/2)
+    =\frac{\pi}{2\sin(\pi\alpha/2)},
+  \]
+  by the Beta integral and Euler's reflection identity.
+  In the following resolvent formula, $q$ is a free positive argument, separate
+  from the fixed exponent $q=4-\alpha$ used elsewhere in this section.
   The deterministic resolvent calculation in the proof of
   Lemma~\ref{L:damped-homogeneous-norms}, together
   with~\eqref{E:intro-spectral-mass}, gives, for $q>0$,
@@ -272,8 +271,7 @@ profile only through the ratio of $A_{\mathrm{sp}}$ to a power of $b$.
     \ell^2=uL^2/b,\qquad
     \theta=(1+u)L^2/(\ell^\alpha A).
   \]
-  The chosen scale gives $\ell^2b=uL^2$, and the chosen amplitude gives
-  $\theta\ell^\alpha A=(1+u)L^2$. Their difference is $L^2$. In the cost,
+  In the cost,
   substituting these same choices gives $\theta^2\ell^\alpha
   A=(1+u)^2L^4/(\ell^\alpha A)$; replacing $\ell^\alpha A$ by
   $u^{\alpha/2}L^\alpha R(g)$ yields the coefficient $C$ below.
@@ -283,10 +281,6 @@ profile only through the ratio of $A_{\mathrm{sp}}$ to a power of $b$.
     S_1^{\mathrm{pos}}\ge L-CL^q,\qquad
     C=\frac{M_a(1+u)^2}{2R(g)u^{\alpha/2}}>0.
   \]
-  The derivative of $L-CL^q$ is $1-qCL^{q-1}$. It changes sign once from
-  positive to negative since $q>1$. At its zero, $CL^q=L/q$, so the value is
-  $(1-1/q)L=(k/q)L$. This gives the maximum stated below without assuming any
-  optimizer for the spatial profiles.
   Its maximum occurs at $L^k = 1/(qC)$ and is $(k/q)(qC)^{-1/k}$. Since $1+u =
   4/q$, $1/(q^qC) = R(g)\alpha^{\alpha/2}/(8M_aq^{q/2})$,
   proving~\eqref{E:spatial-smooth-score}. This argument retains the finite
@@ -384,16 +378,13 @@ for real $H^1$ profiles, so we extend them with the same constant $R_0$.
   Cauchy--Schwarz gives \eqref{E:spatial-square-CS}. This completes the physical
   pairing argument beyond Fatou.
 
-  In a telescoping difference of four-linear expressions, each term contains
-  exactly one difference of arguments and three unchanged or approximating
-  arguments. The latter stay bounded in $H^1$, while the norm of the
-  difference tends to zero. The four-linear bound therefore makes each term
-  tend to zero. This is the continuity needed to pass positive
-  semidefiniteness from smooth squares to Sobolev squares.
 
   \medskip
   \noindent\textit{Step 4.~}We identify the full ratio supremum and strict
   positivity.
+  As in Lemma~\ref{L:compact-raw-profile}, nonzero $\Gamma$ gives positive
+  mass to some origin-centred ball, and homogeneity rescales that ball to
+  every positive radius.
   Every real unit $H^1$ profile has positive gradient energy by the Fourier
   argument above. The homogeneous bound gives $R_{\mathrm{sp}} \le R_0$, and
   smooth inclusion gives the reverse. Normalized smooth approximations preserve
