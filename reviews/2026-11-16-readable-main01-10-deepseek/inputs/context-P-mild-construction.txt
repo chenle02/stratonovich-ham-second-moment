@@ -1,0 +1,15 @@
+\begin{proposition}[Mild construction from the fixed-order limits]
+  \label{P:mild-construction}
+  Under Hypothesis~\ref{H:homog}, the series $u(t,x) = \sum_{n\ge0}X_n(t,x)$ is
+  a mild solution in~\cite{chen:author2026:time-dependency}*{Definition~2.1 and
+  (2.12), pp.~9--10}. More precisely, for each $t > 0$ and $x \in \R^d$,
+  \begin{equation}\label{E:mild-construction}
+    \lim_{\epsilon,\delta\downarrow0}
+    \int_0^t\int_{\R^d}G(t-s,x-\ud y)
+    u(s,y)W_{\epsilon,\delta}(s,y)\ud s
+    =u(t,x)-1\quad\text{in }L^2(\Omega).
+  \end{equation}
+  The limit allows arbitrary relative rates of the two widths. In dimension
+  three the Green-width limit precedes the noise-width limit. No uniqueness
+  assertion is made.
+\end{proposition}

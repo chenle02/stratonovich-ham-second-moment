@@ -1,0 +1,280 @@
+\section{Finite-order checks in one space dimension}\label{S:G1}
+
+We now compute the total-order-two and total-order-four coefficients in
+Proposition~\ref{P:mixed}, first for spatial white noise and then for $\gamma(x)
+= c_\alpha|x|^{-\alpha}$ with $0 < \alpha < 1$ and $c_\alpha > 0$. Here $d = 1$
+throughout. A total order is the sum of the two Stratonovich orders; it is not
+an orthogonal Wiener-chaos order. Write
+\[
+  A=\{(1,2),(3,4)\},\quad B=\{(1,3),(2,4)\},\quad
+  C=\{(1,4),(2,3)\}.
+\]
+These are the three pairings of four vertices. All finite integrals below retain
+the normalization $G(s,y) = \frac12\mathbf1_{\{|y|<s\}}$ and covariance
+$|s-r|^{-\alpha_0}\gamma(y-z)$.
+
+\subsection{Spatial white noise: all order-four diagrams}
+
+For $a,b,c \ge 0$, define
+\begin{equation}\label{E:interval-area}
+  F(a,b,c)=4ab-(a+b-c)_+^2+(|a-b|-c)_+^2.
+\end{equation}
+This is the area of $\{(x,y):|x|<a,\ |y|<b,\ |x-y|<c\}$. In particular, $F$ is
+nonnegative and symmetric in its three arguments. To verify the formula,
+subtract from the rectangle the two regions where $|x-y| \ge c$; when $c \ge
+|a-b|$ these are two right triangles, and when $c < |a-b|$ the retained strip
+has area $4\min(a,b)c$. The three formulas, including $c \ge a+b$,
+give~\eqref{E:interval-area}. Symmetry also follows from swapping $x,y$ and the
+determinant-one change $(x,y)\mapsto(x,x-y)$.
+
+In the following table, $V$ is a spatial factor and $q_1,q_2$ are nonnegative
+time gaps. The contribution of a row is the integral of $V(q_1q_2)^{-\alpha_0}$
+over its domain, with ordinary Lebesgue measure in its four listed variables.
+The domains are
+\[
+  \begin{array}{ll}
+    (0,4):&a,b,c,d>0,\quad a+b+c+d<t,\\
+    (1,3):&0<r<t,\quad a,b,c>0,\quad a+b+c<t,\\
+    (2,2):&a,b,c,d>0,\quad a+b<t,\quad c+d<t.
+  \end{array}
+\]
+The letters $a,b,c,d$ denote increments within the nonempty chains; for $(1,3)$,
+$r$ is the time of the single vertex. Values on zero-gap sets do not affect
+these nonnegative integrals.
+
+\LeanMarker{P:white-four}
+\begin{proposition}[White-space order four]\label{P:white-four}
+  Suppose that $d = \alpha = 1$ and $\gamma = \delta_0$. Each $J_{m,n,D}(t)$
+  with $m+n = 4$ is given by the following table or by exchanging the two
+  chains:
+  \begin{equation}\label{E:white-four-table}
+    \begin{array}{c|c|c|c|c}
+      (m,n)&D&V&q_1&q_2\\ \hline
+      (0,4)&A&ac/4&b&d\\
+      (0,4)&B&a\min(b,c,d)/4&b+c&c+d\\
+      (0,4)&C&a\min(b,d)/4&b+c+d&c\\ \hline
+      (1,3)&A&\min(r,a)b/4&|r-a|&c\\
+      (1,3)&B&F(r,a,\min(b,c))/16&|r-a-b|&b+c\\
+      (1,3)&C&F(r,a,c)/16&|r-a-b-c|&b\\ \hline
+      (2,2)&A&ac/4&b&d\\
+      (2,2)&B&\min(a,c)\min(b,d)/4&|a-c|&|a+b-c-d|\\
+      (2,2)&C&F(a,c,\min(b,d))/16&|a-c-d|&|a+b-c|
+    \end{array}
+  \end{equation}
+  The total-order-four contribution is
+  \begin{equation}\label{E:total-four}
+    2\sum_{D\in\{A,B,C\}}J_{0,4,D}(t)
+    +2\sum_{D\in\{A,B,C\}}J_{1,3,D}(t)
+    +\sum_{D\in\{A,B,C\}}J_{2,2,D}(t).
+  \end{equation}
+  Each entry scales as $t^{6-2\alpha_0}$ times its unit-time value.
+\end{proposition}
+
+\begin{proof}
+  In each pairing identify its first pair's spatial positions with $x$ and the
+  other pair's positions with $y$. The two delta covariances have unit mass, so
+  spatial integration leaves $1/16$ times the area allowed by the four Green
+  indicators. For a single chain the position lists for $A,B,C$ are,
+  respectively, $(x,x,y,y)$, $(x,y,x,y)$ and $(x,y,y,x)$. Their areas are $4ac$,
+  $4a\min(b,c,d)$ and $4a\min(b,d)$.
+
+  For $(1,3)$ take the single position to be $x$. The long chain has positions
+  $(x,y,y)$, $(y,x,y)$ or $(y,y,x)$ for $A,B,C$. The first area is
+  $4\min(r,a)b$; the other two areas are $F(r,a,\min(b,c))$ and $F(r,a,c)$. For
+  $(2,2)$ the position lists of the two chains are $(x,x),(y,y)$ for $A$,
+  $(x,y),(x,y)$ for $B$, and $(x,y),(y,x)$ for $C$. The areas are $4ac$,
+  $4\min(a,c)\min(b,d)$ and $F(a,c,\min(b,d))$. In every case reading the paired
+  times gives the two gaps in~\eqref{E:white-four-table}. This proves each row,
+  with no unlisted pairing or multiplicity. The distributional delta
+  integrations can equivalently be obtained by convolution with the source's
+  spatial approximate identity: for positive increments the remaining bounded
+  interval indicators have only boundary discontinuities, and those boundaries
+  have two-dimensional measure zero. The resulting areas converge to the
+  displayed areas. They are uniformly bounded at unit time: each smoothed delta
+  has mass one, so its integral over its paired coordinates in $[-1,1]^2$ is at
+  most two. The four Green factors give a spatial bound $2^2/16 = 1/4$.
+  Integrability of the time weights follows from the disjoint-pair bound used in
+  Lemma~\ref{L:static-four} below.
+
+  Exchanging chains gives the $(4,0)$ and $(3,1)$ sums without changing the
+  covariance factors. This proves~\eqref{E:total-four}. Finally, scaling all
+  four time variables by $t$ gives $t^4$ from their measure, $t^2$ from the area
+  and $t^{-2\alpha_0}$ from the covariance factors. This proves
+  Proposition~\ref{P:white-four}.
+\end{proof}
+
+\input{notes/figures/white-strip}
+
+\begin{lemma}[Static finite-order calibration]\label{L:static-four}
+  As $\alpha_0\downarrow0$, each unit-time coefficient in
+  Proposition~\ref{P:white-four} converges to the entry below:
+  \begin{equation}\label{E:static-four-table}
+    \begin{array}{c|ccc|c}
+      (m,n)&A&B&C&\text{sum}\\ \hline
+      (0,4)&1/2880&1/8640&1/5760&11/17280\\
+      (1,3)&1/576&29/34560&1/640&143/34560\\
+      (2,2)&1/144&1/480&31/17280&187/17280
+    \end{array}
+  \end{equation}
+  Thus, the static total-order-four contribution is $11t^6/540$. The static
+  total-order-two contribution is $t^3/3$. These are coefficients, not
+  large-time asymptotic constants.
+\end{lemma}
+
+\begin{proof}
+  On the unit-time domain all original time coordinates belong to $[0,1]$. The
+  spatial factor is bounded by $1/4$, since all positions lie in $[-1,1]$ and
+  the two free positions have area at most four. Fix $0 < \bar{a} < 1$. For $0
+  \le \alpha_0 \le \bar{a}$, the temporal factors are bounded by the product
+  with exponent $\bar{a}$. On the full time cube its integral is
+  \[
+    \left(\int_0^1\int_0^1|s-r|^{-\bar{a}}\ud s\ud r\right)^2
+    =\left(\frac{2}{(1-\bar{a})(2-\bar{a})}\right)^2<\infty,
+  \]
+  because the two pairs use disjoint labels. Dominated convergence permits
+  setting $\alpha_0 = 0$ in every row.
+
+  We evaluate the resulting integrals by an independent spatial calculation. For
+  fixed free positions $x,y$, let $L_1,L_2$ be the sums of absolute spatial
+  increments along the two chains, starting at zero. Integrating their time
+  increments first gives
+  \begin{equation}\label{E:static-sector}
+    J_{m,n,D}(1)\big|_{\alpha_0=0}
+    =\frac{1}{16m!n!}\int_{\R^2}
+    (1-L_1(x,y))_+^m(1-L_2(x,y))_+^n\ud x\ud y.
+  \end{equation}
+  An empty-chain factor in this formula is defined to be one. Indeed, writing
+  each time increment as its required absolute spatial increment plus a
+  nonnegative slack leaves a simplex of volume $(1-L_\rho)_+^{n_\rho}/n_\rho!$.
+  Put $w = |x-y|$. The length pairs are
+  \[
+    \begin{array}{c|ccc}
+      (m,n)&A&B&C\\ \hline
+      (0,4)&(0,|x|+w)&(0,|x|+3w)&(0,|x|+2w)\\
+      (1,3)&(|x|,|x|+w)&(|x|,|y|+2w)&(|x|,|y|+w)\\
+      (2,2)&(|x|,|y|)&(|x|+w,|x|+w)&(|x|+w,|y|+w)
+    \end{array}
+  \]
+  Divide the plane into $0 \le x \le y$, $0 \le y \le x$, $x \ge 0 \ge y$ and
+  their reflected sectors. Use $(x,y) = (u,u+v),(u+v,u),(u,-v)$, respectively,
+  where $u,v \ge 0$. Each map has determinant of absolute value one. In these
+  three sectors the integrals of $(1-L_1)_+^m(1-L_2)_+^n$, before multiplication
+  by $2/(16m!n!)$, are
+  \begin{equation}\label{E:sector-values}
+    \begin{array}{c|c|ccc}
+      (m,n)&D&0\le x\le y&0\le y\le x&x\ge0\ge y\\ \hline
+      (0,4)&A&1/30&1/60&1/60\\
+      (0,4)&B&1/90&1/120&1/360\\
+      (0,4)&C&1/60&1/90&1/180\\
+      (1,3)&A&1/24&3/160&11/480\\
+      (1,3)&B&1/72&3/160&11/1440\\
+      (1,3)&C&1/48&1/30&1/48\\
+      (2,2)&A&1/18&1/18&1/9\\
+      (2,2)&B&1/30&1/60&1/60\\
+      (2,2)&C&31/1440&31/1440&31/2160
+    \end{array}
+  \end{equation}
+  All entries follow by integrating polynomials over the two linear constraints
+  $L_1 \le 1$, $L_2 \le 1$. For example, $\int_{u,v\ge0}(1-pu-qv)_+^4\ud u\ud v
+  = 1/(30pq)$. The last row's first entry and last entry are, explicitly,
+  \[
+    \begin{split}
+      &\int_0^{1/2}\ud v\int_0^{1-2v}
+      (1-u-v)^2(1-u-2v)^2\ud u=\frac{31}{1440},\\
+      &\int_0^{1/3}\ud u\int_0^{(1-u)/2}
+      (1-2u-v)^2(1-u-2v)^2\ud v\\
+      &\quad+\int_{1/3}^{1/2}\ud u\int_0^{1-2u}
+      (1-2u-v)^2(1-u-2v)^2\ud v=\frac{31}{2160}.
+    \end{split}
+  \]
+  The stated lengths and linear bounds similarly specify every entry
+  of~\eqref{E:sector-values}. Summing and multiplying by $2/(16m!n!)$
+  proves~\eqref{E:static-four-table}. Applying the multiplicities
+  in~\eqref{E:total-four} gives $11/540$. Lemma~\ref{L:white-test} at $\alpha_0
+  = 0$ gives the order-two value. This proves Lemma~\ref{L:static-four}.
+\end{proof}
+
+\subsection{Riesz covariance: order two and an order-four integral}
+
+\LeanMarker{P:riesz-small}
+\begin{proposition}[Riesz finite coefficients]\label{P:riesz-small}
+  Suppose $d = 1$, $0 < \alpha < 1$, $0 < \alpha_0 < 1$, and $\gamma(y) =
+  c_\alpha|y|^{-\alpha}$ with $c_\alpha > 0$. With $\beta = 4-\alpha-\alpha_0$,
+  the two order-two terms are
+  \begin{equation}\label{E:riesz-two}
+    \begin{split}
+      \E X_2(t,x)
+      &=\frac{c_\alpha t^\beta}
+      {(1-\alpha)(2-\alpha-\alpha_0)(3-\alpha-\alpha_0)
+      (4-\alpha-\alpha_0)},\\
+      \E X_1(t,x)^2
+      &=\frac{c_\alpha}{(1-\alpha)(2-\alpha)}
+      \int_0^t v^{-\alpha_0}
+      \left[\frac{(2t-v)^{3-\alpha}-v^{3-\alpha}}{2(3-\alpha)}
+      -(t-v)v^{2-\alpha}\right]\ud v.
+    \end{split}
+  \end{equation}
+  Their total is $\E X_1^2+2\E X_2$.
+
+  The following explicit unit-domain integral gives every order-four term. For
+  $m+n = 4$, let
+  \[
+    H_m=\{h\in(0,\infty)^4:\ \sum_{l=1}^m h_l<1,
+    \ \sum_{l=m+1}^4 h_l<1\},
+  \]
+  with an empty sum equal to zero. For each index $l$, let $b(l)$ be the first
+  index in its own nonempty chain, and define
+  \[
+    S_l(h)=\sum_{i=b(l)}^l h_i,\qquad
+    Y_l(h,U)=\sum_{i=b(l)}^l h_iU_i,
+  \]
+  where $U_1,\ldots,U_4$ are independent uniform variables on $[-1,1]$. Then,
+  for $D = A,B,C$,
+  \begin{equation}\label{E:riesz-four}
+    \begin{split}
+      J_{m,n,D}(t)
+      ={}&c_\alpha^2t^{2\beta}
+      \int_{H_m}\left(\prod_{l=1}^4h_l\right)
+      \prod_{(j,q)\in D}|S_j(h)-S_q(h)|^{-\alpha_0}\\
+      &\hspace{8mm}\times
+      \E_U\left[\prod_{(j,q)\in D}
+      |Y_j(h,U)-Y_q(h,U)|^{-\alpha}\right]\ud h.
+    \end{split}
+  \end{equation}
+  This is a finite nonnegative integral. It specifies all five splits and all
+  three pairings without an unspecified kernel. The total coefficient uses the
+  multiplicities in~\eqref{E:total-four}.
+\end{proposition}
+
+\begin{proof}
+  Direct integration on the two intervals gives
+  \[
+    \int_{\R^2}G(s,y)G(r,z)c_\alpha|y-z|^{-\alpha}\ud y\ud z
+    =\frac{c_\alpha\big((s+r)^{2-\alpha}-|s-r|^{2-\alpha}\big)}
+    {2(1-\alpha)(2-\alpha)}.
+  \]
+  Integrate on $s > r$ and double, set $v = s-r$, and integrate $r$ over
+  $(0,t-v)$. This proves the second formula in~\eqref{E:riesz-two}. In the
+  single-chain term with increments $r,v$, the spatial integral is $c_\alpha
+  rv^{1-\alpha}/(1-\alpha)$. Thus, the remaining integral is
+  $c_\alpha(1-\alpha)^{-1}\int_{r+v<t}rv^{1-\alpha-\alpha_0}\ud r\ud v$, which
+  gives its first formula by two elementary integrations.
+
+  For order four set each spatial increment equal to $h_lU_l$. The Green factor
+  $\frac12\mathbf1_{[-h_l,h_l]}$ is $h_l$ times the law of $h_lU_l$. The map
+  from increments to vertex positions is triangular within each chain with
+  determinant one. Consequently, the four spatial integrals give exactly the
+  product $\prod_lh_l$ and the expectation in~\eqref{E:riesz-four}; the factors
+  $1/16$ are already incorporated in the four uniform probability laws. The time
+  increments give the domain $H_m$ and the differences $S_j-S_q$. Scaling time
+  and space by $t$ contributes $t^8$ from the eight integrations and
+  $t^{-2\alpha-2\alpha_0}$ from the two covariance factors, giving $t^{2\beta}$.
+
+  Finiteness can be checked without a numerical argument. On the unit-time
+  domain all vertex positions lie in $[-1,1]$. Enlarge the time domain to
+  $[0,1]^4$ and the spatial domain to $[-1,1]^4$, and bound the Green indicators
+  by one. The two time covariance factors involve disjoint pairs and are
+  integrable since $\alpha_0 < 1$. The same is true of the two spatial factors
+  since $\alpha < 1$. Tonelli's theorem now gives a finite bound. This proves
+  Proposition~\ref{P:riesz-small}.
+\end{proof}

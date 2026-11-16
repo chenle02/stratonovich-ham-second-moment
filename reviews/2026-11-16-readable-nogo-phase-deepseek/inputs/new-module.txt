@@ -1,0 +1,323 @@
+\section{Phase propagation and Gaussian controls}\label{S:nogo-phase}
+
+A wave equation transports displacement and velocity together. Its scalar
+solution value is not a state variable for composition. Likewise, a
+Gaussian change of law transports an entire random solution, not merely
+the solution evaluated at the mean of the new noise. These distinctions
+explain the failures in this section. The scalar examples are diagnostics
+for generic proof principles; their scope is stated separately from the
+homogeneous stochastic wave model.
+
+\subsection{NG-14: scalar moments do not compose across blocks}
+\label{S:nogo-14}
+
+Independent static time blocks look favorable for multiplying second
+moments. Independence does remove correlations between their potentials,
+but it does not reset the velocity to zero at a block boundary. The
+original record computed formal coefficients only. We include the
+integrable-series argument needed to turn that diagnostic into a
+small-variance counterexample.
+
+\setcounter{nogo}{13}
+\begin{nogo}[Two independent wave blocks do not multiply scalar moments]
+  \label{P:nogo-14}
+  Let $Z_1,Z_2$ be independent centered Gaussians of variance $A$. Solve
+  $y''=Z_1y$ on $[0,1]$ and $y''=Z_2y$ on $[1,2]$, with continuous phase
+  at time one and initial phase $(y(0),y'(0))=(1,0)$. Then, as
+  $A\downarrow0$,
+  \[
+    \E y(1)^2=1+\frac A3+O(A^2),\qquad
+    \E y(2)^2=1+3A+O(A^2).
+  \]
+  In particular, $\E y(2)^2>(\E y(1)^2)^2$ for all sufficiently small
+  positive $A$.
+\end{nogo}
+\begin{proof}
+  We compute the full two-block phase product rather than resetting the
+  velocity. We then control the Gaussian series remainders to show that the
+  mismatch of scalar moments persists at small positive variance.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We compute the first variance coefficients of the
+  one-block and two-block moments.
+  Define the entire functions
+  \[
+    c(z)=\sum_{n\ge0}\frac{z^n}{(2n)!},\qquad
+    s(z)=\sum_{n\ge0}\frac{z^n}{(2n+1)!}.
+  \]
+  The unit-time phase propagator and the terminal displacement are
+  \[
+    M(z)=\begin{pmatrix}c(z)&s(z)\\zs(z)&c(z)\end{pmatrix},\qquad
+    y(2)=c(Z_2)c(Z_1)+s(Z_2)Z_1s(Z_1).
+  \]
+  Expanding through total degree two in $(z,w)$ gives
+  \[
+    c(w)c(z)+s(w)zs(z)
+    =1+\frac32z+\frac12w
+    +\frac5{24}z^2+\frac5{12}zw+\frac1{24}w^2
+    +\text{terms of degree at least three}.
+  \]
+  After squaring, the coefficients of $z^2$ and $w^2$ are respectively
+  $8/3$ and $1/3$. Independence and centering eliminate the $zw$ term.
+  Similarly, the coefficient of $z^2$ in $c(z)^2$ is $1/3$.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We justify the moment expansions and their strict
+  difference.
+  For completeness, these expansions admit the stated remainders after
+  Gaussian expectation. The series of $c$ and $s$ have nonnegative
+  coefficients, and
+  \[
+    |c(z)|+|s(z)|\le2e^{\sqrt{|z|}}.
+  \]
+  Consequently, the absolute series for the square of the displayed
+  two-block displacement is bounded by
+  $C(1+|z|)^2e^{2\sqrt{|z|}+2\sqrt{|w|}}$.
+  This is integrable at any fixed Gaussian variance $A_1>0$. Absolute
+  integration allows termwise expectation. Odd powers in either variable
+  vanish; every remaining term has even total degree and a nonnegative
+  coefficient. Thus, the expectation is a convergent series
+  $\sum_{j\ge0}b_jA^j$ with $b_j\ge0$ at $A_1$. For $0\le A\le A_1$,
+  \[
+    \sum_{j\ge2}b_jA^j
+    \le (A/A_1)^2\sum_{j\ge2}b_jA_1^j=O(A^2).
+  \]
+  The same argument applies to the one-block moment. Its square equals
+  $1+2A/3+O(A^2)$, whereas the two-block moment equals
+  $1+3A+O(A^2)$. Their difference is $7A/3+O(A^2)$.
+  This proves No-go~\ref{P:nogo-14}.
+\end{proof}
+
+\input{notes/figures/nogo-phase-blocks}
+
+This scalar model has spatially constant noise and independent static
+blocks, outside Hypothesis~\ref{H:homog}. It excludes the unrestricted
+scalar multiplication rule, not a phase-space operator estimate. Corollary~\ref{C:static-interaction} gives a valid replacement for independent
+successive blocks: it controls both phase coordinates and includes explicit
+block losses whose dyadic sum is finite. Its stated scope does not identify
+products across overlapping levels with the original evolution.
+
+\subsection{NG-15: the missing second-order mean term}\label{S:nogo-15}
+
+Keeping the first random Duhamel term gives a nonnegative squared norm.
+It is not the complete coefficient of the variance in the expected phase
+energy. The mean of the second Duhamel term contributes at the same order.
+
+\setcounter{nogo}{14}
+\begin{nogo}[The first variance coefficient need not be nonnegative]
+  \label{P:nogo-15}
+  For the scalar phase propagator $M$ in No-go~\ref{P:nogo-14} and a
+  standard Gaussian $Z$, write
+  \[
+    \E\|M(\sigma Z)x\|^2=\|M(0)x\|^2+\sigma^2x^{\mathsf T}Kx
+    +O(\sigma^4).
+  \]
+  Then
+  \[
+    K=\begin{pmatrix}4/3&4/5\\4/5&17/45\end{pmatrix},\qquad
+    (1,-2)K(1,-2)^{\mathsf T}=-\frac{16}{45}.
+  \]
+  The matrix $K$ is the full first coefficient in the variance parameter,
+  not a covariance matrix. Omitting the second-order mean term also
+  underestimates this coefficient for $x=(1,0)^{\mathsf T}$.
+\end{nogo}
+\begin{proof}
+  We compute the complete first variance matrix, including the second-order
+  mean terms. We then use the integrable series remainder to obtain an actual
+  phase whose expected energy decreases at small coupling.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We retain all terms of the first variance matrix.
+  The coefficients of $M(z)=M_0+zM_1+z^2M_2+\cdots$ are
+  \[
+    M_0=\begin{pmatrix}1&1\\0&1\end{pmatrix},\quad
+    M_1=\begin{pmatrix}1/2&1/6\\1&1/2\end{pmatrix},\quad
+    M_2=\begin{pmatrix}1/24&1/120\\1/6&1/24\end{pmatrix}.
+  \]
+  Gaussian expectation of the squared phase norm gives
+  \[
+    K=M_1^{\mathsf T}M_1+M_0^{\mathsf T}M_2+M_2^{\mathsf T}M_0.
+  \]
+  Matrix multiplication gives the stated entries and negative value.
+  For $e_1=(1,0)^{\mathsf T}$, the first random contribution is
+  $\|M_1e_1\|^2=5/4$, whereas $e_1^{\mathsf T}Ke_1=4/3$.
+  Thus, it is not valid even as an upper bound for the full coefficient.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We justify the negative small-coupling energy
+  correction.
+  The entire series are absolutely Gaussian integrable, including their
+  squares, by the bound in No-go~\ref{P:nogo-14} with the additional
+  polynomial factor from $zs(z)$. Absolute summation of the even-degree
+  terms at a fixed nonzero $\sigma_1$ bounds the tail of degree at least
+  four by $C\sigma^4$ for $|\sigma|\le|\sigma_1|$. Therefore, for
+  $x=(1,-2)^{\mathsf T}$ the actual expected energy satisfies
+  \[
+    \E\|M(\sigma Z)x\|^2=5-\frac{16}{45}\sigma^2+O(\sigma^4).
+  \]
+  This proves No-go~\ref{P:nogo-15}.
+\end{proof}
+
+The example refutes arbitrary-phase covariance monotonicity for this
+scalar flow. It says nothing against monotonicity of the original
+solution-value moment with initial data $(1,0)$ in the homogeneous model.
+Section~\ref{S:static-phase} retains both contributions to the coefficient.
+The all-order estimate of Proposition~\ref{P:static-phase-all-orders} and
+the interaction bound of Corollary~\ref{C:static-interaction} retain these
+terms. Positivity of the first random variance does not control the cross
+term with the mean.
+
+\subsection{NG-16: replacing a tilted mean by a deterministic value}
+\label{S:nogo-16}
+
+The Gaussian density cost is exact. A loss may instead enter when the
+random solution under the tilted law is replaced by a deterministic
+surrogate. The following two calculations identify the loss without
+asserting an obstruction to Gaussian shifts themselves.
+
+\setcounter{nogo}{15}
+\begin{nogo}[A deterministic surrogate can lose the annealed factor]
+  \label{P:nogo-16}
+  Let $A>0$, $c>0$ and $0<r<2$, and define
+  \[
+    J_c=\sup_{H\ge0}\{cAH^r-H^2/2\}.
+  \]
+  Then $J_c=c^{2/(2-r)}J_1$, whereas
+  \[
+    \sup_{H\ge0}\{2AH^r-H^2\}=2J_1<J_2.
+  \]
+  Moreover, for $Y=e^{\sigma Z}$, $Z$ standard Gaussian and $\sigma>0$,
+  the full tilted-mean Cauchy--Schwarz bound recovers $\E Y^2$ exactly,
+  while substituting $Y(h)=e^{\sigma h}$ loses a factor in its logarithm.
+\end{nogo}
+\begin{proof}
+  Substitute $H=c^{1/(2-r)}K$ in the definition of $J_c$. Both terms
+  acquire the factor $c^{2/(2-r)}$. The supremum $J_1$ is finite, since
+  $r<2$, and positive, since for small positive $H$ the positive term
+  dominates. Factoring two from the surrogate score proves the strict
+  comparison because $2/(2-r)>1$.
+
+  Let $Q_h$ be the Gaussian shift with density
+  $L_h=e^{hZ-h^2/2}$ relative to the standard Gaussian law. Then
+  $\E L_h^2=e^{h^2}$, so Cauchy--Schwarz gives
+  \[
+    \E Y^2\ge(\E_{Q_h}Y)^2e^{-h^2}.
+  \]
+  The exact tilted mean is $\E_{Q_h}Y=e^{\sigma^2/2+\sigma h}$.
+  Maximizing its resulting exponent
+  $\sigma^2+2\sigma h-h^2$ at $h=\sigma$ gives
+  $e^{2\sigma^2}=\E Y^2$. Substitution of the deterministic value
+  $Y(h)$ instead gives the maximum $e^{\sigma^2}$.
+  This proves No-go~\ref{P:nogo-16}.
+\end{proof}
+
+These are generic scalar score calculations, not an SPDE no-go. They
+identify which term is lost and show that retaining the full tilted mean
+can avoid the loss. A deterministic surrogate remains useful if one
+proves that its error is negligible on the intended exponential scale;
+without such an estimate it cannot identify the annealed constant.
+
+\subsection{NG-20: covariance profiles need not separate}
+\label{S:nogo-20}
+
+A fixed spatial profile times a scalar temporal factor is easier to
+propagate than a general spacetime control. Such a product family is
+legitimate as a restriction, but it does not represent every positive
+control even in the white spatial model.
+
+\setcounter{nogo}{19}
+\begin{nogo}[A positive control need not have proportional covariance profiles]
+  \label{P:nogo-20}
+  Fix $0<a<1$ and one-dimensional spatial covariance
+  $\Gamma=c_\Gamma\delta_0$, $c_\Gamma>0$. There is a nonnegative smooth
+  compactly supported spacetime test $\psi$ for which
+  \[
+    h_\sigma(x)=c_\Gamma\int_0^1|\sigma-u|^{-a}\psi(u,x)\ud u,
+    \qquad 0\le\sigma\le1,
+  \]
+  cannot be represented as $b(\sigma)U(x)$ with one fixed spatial $U$.
+\end{nogo}
+\begin{proof}
+  Choose a nonzero nonnegative smooth $f_1$ supported in $(1/8,1/4)$,
+  let $f_2(u)=f_1(1-u)$, and choose nonzero nonnegative smooth bumps
+  $q_1,q_2$ supported respectively in $(-2,-1)$ and $(1,2)$. Set
+  $\psi(u,x)=f_1(u)q_1(x)+f_2(u)q_2(x)$. Put
+  \[
+    A=\int_0^1u^{-a}f_1(u)\ud u,\qquad
+    B=\int_0^1(1-u)^{-a}f_1(u)\ud u.
+  \]
+  Since $u<1-u$ on the support of $f_1$, we have $A>B>0$.
+  Reflection in time gives
+  \[
+    h_0=c_\Gamma(Aq_1+Bq_2),\qquad
+    h_1=c_\Gamma(Bq_1+Aq_2).
+  \]
+  Choose $x_i$ with $q_i(x_i)>0$. Disjoint supports imply
+  \[
+    h_0(x_1)h_1(x_2)-h_1(x_1)h_0(x_2)
+    =c_\Gamma^2(A^2-B^2)q_1(x_1)q_2(x_2)>0.
+  \]
+  A representation by one $U$ would make this determinant zero.
+  The white covariance has $\alpha=1$, so $1+a<2$ verifies the model
+  parameter condition. This proves No-go~\ref{P:nogo-20}.
+\end{proof}
+
+This is an exact representation obstruction. It does not prove that
+separable controls fail to attain a variational supremum; a theorem
+reducing optimizers to a smaller family would be a different statement.
+A useful weaker fact survives: because $|\sigma-u|^{-a}\ge1$ on the
+unit time square, every nonnegative test has
+$h_\sigma\ge\Gamma*\int_0^1\psi(u,\cdot)\ud u$.
+This common lower profile does not by itself prove a phase-propagation
+comparison. Reopening an exact product reduction requires extra structure
+on the control, while an optimizer reduction requires a variational proof.
+
+\subsection{NG-31: initial phase and the backward cone}\label{S:nogo-31}
+
+Two seemingly small generalizations remove essential hypotheses: replacing
+the specified initial phase by an arbitrary one, and checking agreement
+of spatial cutoffs only on the terminal observation set. Simple
+deterministic waves already distinguish these statements.
+
+\setcounter{nogo}{30}
+\begin{nogo}[Growth does not give every-phase lower bounds or local cutoff consistency]
+  \label{P:nogo-31}
+  The growth rate of a wave phase propagator need not be a lower growth
+  rate for every nonzero initial phase. Also, two smooth initial-data
+  masks that agree on an observation interval can give different free-wave
+  displacements throughout that interval at a later time, even when their
+  initial displacements agree everywhere.
+\end{nogo}
+\begin{proof}
+  For the first assertion, let
+  $B=\left(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\right)$.
+  Its eigenvectors $(1,1)^{\mathsf T}$ and $(1,-1)^{\mathsf T}$ have
+  eigenvalues $1$ and $-1$. Hence, $\|e^{tB}\|=e^t$ for $t\ge0$,
+  but $e^{tB}(1,-1)^{\mathsf T}=e^{-t}(1,-1)^{\mathsf T}$.
+
+  For the second assertion take the one-dimensional free wave with zero
+  initial displacement and nonnegative smooth velocity $v$ supported in
+  $(5,6)$, normalized by $\int v=1$. Choose smooth masks $\chi_s,\chi_l$
+  between zero and one, with $\chi_s=1$ on $[-2,2]$ and support in
+  $[-4,4]$, and $\chi_l=1$ on $[-14,14]$. Both masks agree on the
+  observation interval $[-2,2]$. The masked velocities are nevertheless
+  $\chi_sv=0$ and $\chi_lv=v$. D'Alembert's formula at time nine gives
+  \[
+    u_s(9,x)=0,\qquad
+    u_l(9,x)=\frac12\int_{x-9}^{x+9}v(y)\ud y=\frac12,
+    \qquad -2\le x\le2.
+  \]
+  Indeed, every interval $[x-9,x+9]$ in question contains $(5,6)$.
+  This proves No-go~\ref{P:nogo-31}.
+\end{proof}
+
+The first example does not refute a terminal lower bound for the original
+phase $(1,0)$. The second requires agreement of both displacement and
+velocity on the full backward cone, not only on the observer. Finite
+propagation with that guard survives. Thus, a successor must retain the
+specified phase, or prove a suitable nonvanishing unstable component, and
+must impose cutoff agreement on the relevant cone for both coordinates.

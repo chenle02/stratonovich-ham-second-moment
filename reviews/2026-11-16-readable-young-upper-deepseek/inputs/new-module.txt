@@ -1,0 +1,155 @@
+\section{Young perturbations retaining the deterministic endpoint}
+\label{S:young-upper-foundation}
+
+Let $\mathcal{X}$ be any nonzero real Banach space, with its induced operator
+norm on $\mathcal{B}(\mathcal{X})$. Fix $B \ge 1$, $1/2 < \theta < 1$ and $\nu =
+1/\theta < 2$. All operator paths start at zero and have norm $\|D\|_\theta =
+\sup_t\|D(t)\|+[D]_\theta$ on $[0,B]$. Let $U_D = I+\int\ud D\,U_D$ be the left
+Young evolution. The construction in Proposition~\ref{P:constant-young-linear}
+applies: its proof needs completeness and operator multiplication of norm one,
+with no Hilbert-space assumption. The primary estimate is
+\cite{friz.hairer:20:course}*{Section~1.5, p.~13; Section~4.1, (4.1)--(4.3),
+pp.~61--62}.
+
+\begin{lemma}[Refined growth and uniform inverse control]
+  \label{L:young-upper-growth}
+  With dimension-free constants,
+  \begin{equation}\label{E:young-upper-refined-growth}
+    \sup_{t\le B}\|U_D(t)\|
+    \le\exp\{c_{\theta,B}(d+d^\nu)\},\qquad d=\|D\|_\theta .
+  \end{equation}
+  For $\|H\|_\theta \le K$, $K \ge 1$,
+  \begin{equation}\label{E:young-upper-inverse-control}
+    \|U_H\|_{C^\theta}+\|U_H^{-1}\|_{C^\theta}
+    \le L_{\theta,B,K}<\infty .
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We separate small drivers, where one contraction gives a linear logarithmic
+  bound, from larger drivers, where a partition gives the power bound. We then
+  use a fixed partition on a bounded driver ball to control both the evolution
+  and its inverse in the Hölder norm.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove the refined growth bound in the two
+  driver-size regimes.
+  Let $c_\theta = 2\max(1,C_\theta)$ for the primary Young constant. The
+  complete scaled norm $N_\ell(V) = \sup\|V\|+\ell^\theta[V]_\theta$ satisfies
+  $N_\ell(\int_a^\cdot\ud D\,V) \le c_\theta[D]_\theta\ell^\theta N_\ell(V)$, as
+  in~\eqref{E:constant-young-local}. If $c_\theta dB^\theta \le 1/4$,
+  whole-interval contraction gives $\sup\|U_D\| \le (1-c_\theta dB^\theta)^{-1}$
+  and hence $\log\sup\|U_D\| \le 2c_\theta B^\theta d$. Otherwise take $n_D =
+  \lceil B(4c_\theta d)^\nu\rceil$ equal pieces. Their contraction ratios are at
+  most $1/4$ and local norms at most $4/3$. The expression inside the ceiling
+  exceeds one, so $n_D \le 2B(4c_\theta d)^\nu$. Composition gives the $d^\nu$
+  bound. At $d = 0$, $U_D = I$, proving~\eqref{E:young-upper-refined-growth}
+  without a prefactor.
+
+  For the small-driver regime, integrate the derivative of the negative
+  logarithm between zero and $c_\theta dB^\theta$. That derivative is at most
+  two on this interval, giving $-\log(1-c_\theta dB^\theta)\le2c_\theta
+  dB^\theta$. In the other regime, each piece has length $B/n_D\le(4c_\theta
+  d)^{-1/\theta}$, so its contraction ratio is at most $1/4$. Multiplying the
+  $n_D$ local norm bounds gives logarithm at most $n_D\log(4/3)$, controlled
+  by a constant times $d^\nu$.
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound the global evolution and inverse on a
+  fixed driver ball.
+  For inverse increments, the identity displayed at the end of the proof
+  bounds the inverse difference by the squared uniform inverse bound times the
+  forward difference. Dividing by the time increment to the power $\theta$
+  will therefore give the inverse seminorm once the forward seminorm and
+  inverse supremum have been bounded.
+  On the ball $\|H\|_\theta \le K$ choose one uniform equal partition with ratio
+  at most $1/4$. Each local evolution $Q$ has $N_\ell(Q) \le 4/3$ and
+  $\sup\|Q-I\| \le 1/3$. Its Neumann inverse is bounded by $3/2$. Products give
+  uniform global sup bounds. The same scaled estimate bounds local H\"older
+  seminorms. Pairs crossing a boundary at distance below $\ell$ split into at
+  most two pieces; use $h_1^\theta+h_2^\theta \le 2^{1-\theta}(h_1+h_2)^\theta$.
+  For larger distances use $2\sup\|U_H\|/\ell^\theta$. This gives its global
+  $C^\theta$ bound. Finally,
+  \[
+    U_H^{-1}(t)-U_H^{-1}(s)
+    =-U_H^{-1}(t)(U_H(t)-U_H(s))U_H^{-1}(s)
+  \]
+  bounds the inverse seminorm. This proves Lemma~\ref{L:young-upper-growth}.
+\end{proof}
+
+The linear term in~\eqref{E:young-upper-refined-growth} cannot simply be
+dropped: No-go~\ref{P:nogo-26} gives a scalar commuting counterexample.
+Its second observation also distinguishes an averaged block budget from
+a uniform bound on every block.
+
+
+\begin{proposition}[Multiplicative upper perturbation]
+  \label{P:young-upper-multiplicative}
+  If $K \ge 1$, $\|H\|_\theta \le K$, $x = \|X\|_\theta$ and $A \in
+  \mathcal{B}(\mathcal{X})$, then
+  \begin{equation}\label{E:young-upper-multiplicative}
+    \|AU_{H+X}(t)\|
+    \le\|AU_H(t)\|\exp\{C_{\theta,B,K}(x+x^\nu)\},
+    \qquad 0\le t\le B.
+  \end{equation}
+  This includes noninvertible $A$ and $A = 0$ with no extra factor when $x = 0$.
+\end{proposition}
+
+\begin{proof}
+  We conjugate the perturbation by the deterministic evolution to form a new
+  Young driver. We verify the resulting product identity directly from
+  increments, preserving the left multiplication order, and then apply the
+  refined growth bound only to the perturbation driver.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We form the conjugated perturbation driver.
+  Put $U = U_H$, $R = U^{-1}$ and $G(s)Z = R(s)ZU(s)$.
+  Lemma~\ref{L:young-upper-growth} makes $G$ a $C^\theta$ path of bounded linear
+  maps on $\mathcal{B}(\mathcal{X})$, uniformly bounded on the fixed ball. Thus,
+  the Banach Young integral
+  \[
+    Z(t)=\int_0^tR(s)\ud X(s)U(s)
+  \]
+  exists, with $\|Z\|_\theta \le L'_{\theta,B,K}x$ and $Z_{s,t} =
+  R(s)X_{s,t}U(s)+O(|t-s|^{2\theta})$. Put $V = U_Z$. Its and $U$'s Young
+  remainders are $V_{s,t} = Z_{s,t}V(s)+O(|t-s|^{2\theta})$ and $U_{s,t} =
+  H_{s,t}U(s)+O(|t-s|^{2\theta})$. The exact increment of $P = UV$ includes a
+  cross term of order $2\theta$. Substitution in the stated left order gives
+  \[
+    P_{s,t}
+    =H_{s,t}P(s)+U(s)R(s)X_{s,t}U(s)V(s)
+    +O(|t-s|^{2\theta})
+    =(H+X)_{s,t}P(s)+O(|t-s|^{2\theta}).
+  \]
+  In the product increment, expand $U(t)V(t)-U(s)V(s)$ as
+  $U_{s,t}V(s)+U(s)V_{s,t}+U_{s,t}V_{s,t}$. Both last increments have order
+  $|t-s|^\theta$, so their product has order $|t-s|^{2\theta}$. The leading
+  perturbation term is $U(s)R(s)X_{s,t}U(s)V(s)$; the adjacent inverse factors
+  cancel without commuting $X_{s,t}$ past any operator.
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the product as the full Young
+  evolution.
+  On any partition the remainder sum is bounded by a constant times
+  $B\,\operatorname{mesh}^{2\theta-1} \to 0$. Left sums converge to the Young
+  integral, so uniqueness yields $U_{H+X} = U_HU_Z$. This proves the product
+  identity without assuming smooth density in the full H\"older norm.
+  For each interval in a partition, its length to the power $2\theta$ is at
+  most its length times the mesh to the power $2\theta-1$. Summing gives the
+  displayed total error bound. Since $2\theta>1$, it vanishes, and the exact
+  telescoping increment sum has the same limit as the left Young sums.
+
+  \medskip
+  \noindent\textit{Step 3.~}We retain the deterministic endpoint factor in the
+  norm bound.
+  Apply~\eqref{E:young-upper-refined-growth} to $Z$, then left multiply by $A$
+  and use submultiplicativity. No inverse or lower bound for $A$ is required.
+  The driver estimate $\|Z\|_\theta\le L'_{\theta,B,K}x$ gives
+  $\|Z\|_\theta+\|Z\|_\theta^\nu\le C_{\theta,B,K}(x+x^\nu)$. The product
+  identity gives $AU_{H+X}(t)=(AU_H(t))U_Z(t)$, so submultiplicativity leaves
+  $\|AU_H(t)\|$ intact rather than bounding it by a separate factor. When
+  $x=0$, the new driver is zero and its evolution is the identity.
+  This proves Proposition~\ref{P:young-upper-multiplicative}.
+\end{proof}

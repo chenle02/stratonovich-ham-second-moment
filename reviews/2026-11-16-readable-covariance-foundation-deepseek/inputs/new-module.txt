@@ -1,0 +1,606 @@
+\section{Covariance bounds for physically masked wave fields}
+\label{S:masked-covariance}
+
+\input{notes/figures/mask-window-figure}
+
+We establish the covariance estimates needed for the operator construction.
+Throughout this section, Hypothesis~\ref{H:homog} holds, $a = \alpha_0$, and
+$\Gamma \ne 0$. For zero spatial covariance, the spatial spectral measures and
+noise variances vanish; the purely temporal estimates remain valid independently
+of $\Gamma$. We use the unitary Fourier transform
+\[
+  \widehat{f}(\xi) = c_d\int_{\R^d}e^{-i\xi\cdot x}f(x)\ud x,
+  \qquad c_d = (2\pi)^{-d/2}.
+\]
+The spectral convention in Hypothesis~\ref{H:homog} means that, for every
+complex Schwartz test $\varphi$,
+\begin{equation}\label{E:masked-spectral-convention}
+  \int_{\R^d}\varphi(x)\Gamma(\ud x)
+  = \int_{\R^d}\left(\int_{\R^d}e^{i\xi\cdot x}
+  \varphi(x)\ud x\right)\mu(\ud\xi).
+\end{equation}
+This is an identity of distribution pairings. We will not interchange two
+infinite measures in the associated oscillatory expression.
+
+A positive tempered Radon measure has polynomial mass growth. Indeed, choose a
+nonnegative compact smooth test that is at least one on the unit ball, and apply
+a defining Schwartz seminorm bound for the distribution to its dilations. Its
+mass on a ball of radius $R \ge 1$ is bounded by a power of $R$. Summation over
+dyadic shells then gives integrability of $(1+|x|)^{-N}$ for some $N$, and hence
+absolute integrability of every Schwartz test. These facts apply to both
+$\Gamma$ and $\mu$. Smooth cutoffs converge in the Schwartz topology, so these
+integrals agree with the tempered pairings.
+
+\subsection{Translated spectral growth and physical masks}
+
+\LeanMarker{P:masked-spectral-growth}
+\begin{proposition}[Translated spectral mass]\label{P:masked-spectral-growth}
+  Put
+  \[
+    M_\Gamma = \int_{\R^d}e^{-|x|^2/4}\Gamma(\ud x),
+    \qquad C_\Gamma = \frac{eM_\Gamma}{(2\sqrt{\pi})^d}.
+  \]
+  Then $0 < M_\Gamma < \infty$, and for $y \in \R^d$ and $r > 0$,
+  \begin{align}
+    \int_{\R^d}e^{-|\xi-y|^2/r^2}\mu(\ud\xi)
+    &= \left(\frac{r}{2\sqrt{\pi}}\right)^d
+    \int_{\R^d}e^{-r^2|x|^2/4}e^{-iy\cdot x}\Gamma(\ud x),
+    \label{E:masked-gaussian-transform}\\
+    0 \le \int_{\R^d}e^{-|\xi-y|^2/r^2}\mu(\ud\xi)
+    &\le \frac{r^\alpha M_\Gamma}{(2\sqrt{\pi})^d},
+    \qquad \mu(B(y,r)) \le C_\Gamma r^\alpha.
+    \label{E:masked-translated-ball}
+  \end{align}
+  The ball may be open or closed.
+\end{proposition}
+
+\begin{proof}
+  We first compute the Gaussian transform in the stated Fourier convention. We
+  then use positivity and homogeneity to bound it, and compare the Gaussian
+  with the indicator of a ball.
+
+  \medskip
+  \noindent\textit{Step 1.~}We compute the transform and its constant.
+  Temperedness gives finiteness of $M_\Gamma$. Its positivity follows from
+  $\Gamma \ne 0$. To check the Fourier constant, set $J(b) = \int_\R
+  e^{-Ax^2}e^{ibx}\ud x$ for $A > 0$. Squaring the real Gaussian integral and
+  using polar coordinates gives $J(0) = \sqrt{\pi/A}$. Differentiation and
+  integration by parts give $J'(b) = -bJ(b)/(2A)$. Therefore, $J(b) =
+  \sqrt{\pi/A}e^{-b^2/(4A)}$. Taking products over the coordinates gives
+  \[
+    \int_{\R^d}e^{-r^2|x|^2/4}e^{i(\xi-y)\cdot x}\ud x
+    = \left(\frac{2\sqrt{\pi}}r\right)^d e^{-|\xi-y|^2/r^2}.
+  \]
+  Indeed, differentiation under the Gaussian integral is justified by
+  integrability of $|x|e^{-Ax^2}$. Replacing $xe^{-Ax^2}$ by
+  $-(2A)^{-1}(e^{-Ax^2})'$ and integrating by parts moves the derivative onto
+  $e^{ibx}$; both boundary terms vanish. In the coordinate product above, take
+  $A=r^2/4$ and the corresponding component of $\xi-y$ in place of $b$.
+  Apply~\eqref{E:masked-spectral-convention} to the single Schwartz test
+  $e^{-r^2|x|^2/4}e^{-iy\cdot x}$ to obtain \eqref{E:masked-gaussian-transform}.
+
+  \medskip
+  \noindent\textit{Step 2.~}We use positivity and homogeneity.
+  Its left side is nonnegative. Taking the absolute value on the right removes
+  the complex phase because $\Gamma$ is nonnegative. The pushforward of $\Gamma$
+  by $x \mapsto rx$ assigns mass $r^{\alpha-d}\Gamma(A)$ to a Borel set $A$.
+  The pushforward assigns to $A$ the original mass of $r^{-1}A$. Homogeneity
+  gives $\Gamma(r^{-1}A) = r^{\alpha-d}\Gamma(A)$. Applying this identity to
+  the Gaussian test gives the next equality.
+  Thus,
+  \[
+    \int e^{-r^2|x|^2/4}\Gamma(\ud x) = r^{\alpha-d}M_\Gamma.
+  \]
+  Multiplying the last equality by the prefactor $r^d/(2\sqrt{\pi})^d$ gives
+  $r^\alpha M_\Gamma/(2\sqrt{\pi})^d$.
+  This proves the Gaussian bound. On either ball $B(y,r)$ the integrand
+  $e^{-|\xi-y|^2/r^2}$ is at least $e^{-1}$, proving the mass bound. This proves
+  Proposition~\ref{P:masked-spectral-growth}.
+\end{proof}
+
+Choose and fix a real nonzero Schwartz function $\zeta$. For $R > 0$ put
+$\zeta_R(x) = \zeta(x/R)$, $k_R = \widehat{\zeta_R}$ and $L =
+\|\widehat{\zeta}\|_1$. Then $k_R(u) = R^d\widehat{\zeta}(Ru)$ and $\|k_R\|_1 =
+L > 0$. Define
+\begin{equation}\label{E:masked-auxiliary-measure}
+  \nu_R(\ud\eta) = \rho_R(\eta)\ud\eta,
+  \qquad \rho_R(\eta) = c_d^2L\int |k_R(\xi-\eta)|\mu(\ud\xi).
+\end{equation}
+
+\LeanMarker{P:masked-auxiliary-norm}
+\begin{proposition}[Auxiliary mask norm]\label{P:masked-auxiliary-norm}
+  The measure $\nu_R$ is even, tempered and Radon, with
+  \begin{equation}\label{E:masked-auxiliary-growth}
+    \nu_R(B(y,r)) \le c_d^2L^2C_\Gamma r^\alpha
+  \end{equation}
+  for all $y \in \R^d$ and $r > 0$, uniformly in $R > 0$. If $H$ is a separable
+  complex Hilbert space and $F$ is an $H$-valued Schwartz function, then
+  \begin{equation}\label{E:masked-hilbert-fourier}
+    \int \|\widehat{\zeta_RF}(\xi)\|_H^2\mu(\ud\xi)
+    \le \int \|\widehat{F}(\eta)\|_H^2\nu_R(\ud\eta).
+  \end{equation}
+  For a real $H$, the same assertion holds after complexification.
+\end{proposition}
+
+\begin{proof}
+  We first establish the properties and translated growth bound of the
+  auxiliary measure. We then prove the Fourier norm inequality by a weighted
+  Cauchy--Schwarz estimate.
+
+  \medskip
+  \noindent\textit{Step 1.~}We examine the density and its ball masses.
+  For fixed $R$, translating the argument of a Schwartz function over a
+  compact set preserves a common rapid-decay bound. Choose the decay power
+  large enough to be integrable against the polynomially growing measure
+  $\mu$.
+  Schwartz decay of $k_R$ and polynomial growth of $\mu$ show that
+  $\rho_R(\eta)$ is finite at every $\eta$. On compact sets of $\eta$, the
+  integrands have a common integrable bound. Dominated convergence therefore
+  makes $\rho_R$ continuous, and $\nu_R$ is Radon. Since $\zeta$ is real,
+  $k_R(-u) = \overline{k_R(u)}$. Evenness of $\mu$ gives evenness of $\rho_R$.
+  To bound a ball mass, write the density as its nonnegative integral and
+  exchange the two integrations. For fixed $\xi$, set $u = \xi-\eta$. The
+  condition $\eta \in B(y,r)$ becomes $\xi \in B(y+u,r)$ when the integrations
+  are exchanged again.
+  Tonelli's theorem gives
+  \[
+    \nu_R(B(y,r)) = c_d^2L\int |k_R(u)|\mu(B(y+u,r))\ud u.
+  \]
+  Proposition~\ref{P:masked-spectral-growth} and $\|k_R\|_1 = L$ give
+  \eqref{E:masked-auxiliary-growth}. Polynomial growth on centered balls proves
+  temperedness by the same dyadic argument as above.
+
+  \medskip
+  \noindent\textit{Step 2.~}We justify the Hilbert-valued convolution
+  identity.
+  Bochner Fourier integration gives
+  \[
+    \widehat{\zeta_RF}(\xi)
+    = c_d\int k_R(\xi-\eta)\widehat{F}(\eta)\ud\eta.
+  \]
+  The factor $c_d$ is the product formula for the unitary Fourier transform.
+  We justify the same identity for vector-valued functions by approximation,
+  so that the convolution is a Bochner integral.
+  For scalar Schwartz functions this follows by Fourier inversion and absolute
+  integrability. It follows next for finite-rank Hilbert-valued functions. For
+  general $F$, take projections onto the successive spans of a countable
+  orthonormal basis of its separable range closure. They converge pointwise in
+  norm. The Schwartz bounds on $F$ dominate the Fourier integrals, proving the
+  identity by dominated convergence. In a finite-dimensional space the full
+  identity projection suffices; the zero space is immediate. The triangle
+  inequality and weighted Cauchy--Schwarz yield
+  \[
+    \|\widehat{\zeta_RF}(\xi)\|_H^2
+    \le c_d^2L\int |k_R(\xi-\eta)|\|\widehat{F}(\eta)\|_H^2\ud\eta.
+  \]
+
+  \medskip
+  \noindent\textit{Step 3.~}We estimate the convolution in norm and integrate.
+  The orthogonal projections used above have norm at most one, so the Schwartz
+  majorants are independent of their index. For the norm estimate, apply the
+  triangle inequality to the Bochner integral and then Cauchy--Schwarz with
+  weight $|k_R(\xi-\eta)|$. Its integral over $\eta$ is $\|k_R\|_1=L$,
+  independent of $\xi$, which gives the displayed bound after squaring.
+  Integrating against $\mu$ and applying Tonelli's theorem proves
+  \eqref{E:masked-hilbert-fourier}. Its right side is finite by Schwartz decay
+  and temperedness of $\nu_R$. This proves
+  Proposition~\ref{P:masked-auxiliary-norm}.
+\end{proof}
+
+\subsection{Temporal completion and the original noise}
+
+The noise in~\eqref{E:cov} is also correlated in time, with kernel
+$|t-s|^{-a}$. We now complete the temporal tests in that form.
+
+\LeanMarker{L:masked-time-completion}
+\begin{lemma}[Temporal covariance completion]\label{L:masked-time-completion}
+  Let $T > 0$. The form
+  \[
+    \langle f,g\rangle_a
+    = \int_0^T\int_0^T f(t)g(s)|t-s|^{-a}\ud t\ud s
+  \]
+  is positive semidefinite on real compact smooth tests. Its null-quotient
+  completion $H_a$ is separable. The inclusion of tests extends continuously
+  from $L^2(0,T)$, with
+  \begin{equation}\label{E:masked-time-schur}
+    \LeanEqMarker{E:masked-time-schur}
+    \|f\|_a^2 \le \frac{2T^{1-a}}{1-a}\|f\|_2^2.
+  \end{equation}
+  In its complexification the norm is given by the same double integral with
+  $f(t)\overline{f(s)}$. In particular, bounded measurable amplitudes on a
+  subinterval, extended by zero, belong to this completion.
+\end{lemma}
+
+\begin{proof}
+  We prove positivity by expressing the temporal kernel as a positive mixture
+  of square forms. A uniform row-integral bound then gives the continuous
+  inclusion and the completion statements.
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove positivity of the covariance form.
+  Write $\Gamma_E$ for Euler's Gamma function. Away from the null diagonal,
+  \[
+    |t-s|^{-a} = \frac1{\Gamma_E(a)}\int_0^\infty
+    \lambda^{a-1}e^{-\lambda|t-s|}\ud\lambda.
+  \]
+  This follows by substitution in the defining Gamma integral. Moreover,
+  \[
+    e^{-\lambda|t-s|}
+    = \int_{-\infty}^{\min(t,s)}2\lambda
+    e^{-\lambda(t-u)}e^{-\lambda(s-u)}\ud u.
+  \]
+  The first identity uses the substitution $\lambda|t-s|$ in the Gamma
+  integral; the diagonal is null for the double Lebesgue integral. In the
+  second identity, integrating the test against $e^{-\lambda(t-u)}$ over $t\ge
+  u$ and then squaring gives the quadratic form, with positive coefficient
+  $2\lambda$. Mixing these square forms with weight
+  $\lambda^{a-1}/\Gamma_E(a)$ proves positivity.
+  For each $\lambda > 0$ its quadratic form is an integral of a square. All
+  exchanges for compact smooth tests are absolutely integrable because the
+  kernel row integral is at most $2T^{1-a}/(1-a)$. The same bound and $2|xy| \le
+  |x|^2+|y|^2$ prove~\eqref{E:masked-time-schur}. A countable $L^2$-dense family
+  of compact smooth tests is consequently dense in $H_a$, proving separability.
+
+  \medskip
+  \noindent\textit{Step 2.~}We explain the row bound and the completion.
+  For fixed $t$, the row integral is $[t^{1-a}+(T-t)^{1-a}]/(1-a)$, at most
+  $2T^{1-a}/(1-a)$. Applying $2|xy|\le |x|^2+|y|^2$ to the two test values and
+  integrating against the symmetric kernel bounds both terms equally. An
+  $L^2$-Cauchy sequence is consequently Cauchy in the covariance seminorm, and
+  two sequences with the same $L^2$ limit have the same quotient image.
+  Bilinear continuity identifies the limiting norm with the integral. Bounded
+  measurable amplitudes on a finite interval belong to $L^2$.
+  The complex quadratic form is the sum of those of the real and imaginary
+  parts, since symmetry cancels the imaginary cross term. Thus, the same bound
+  holds after complexification. Smooth density in $L^2$, together with the Schur
+  bound on the absolute bilinear form, extends the inclusion and the integral
+  identity to $L^2$. This includes the stated interval amplitudes. This proves
+  Lemma~\ref{L:masked-time-completion}.
+\end{proof}
+
+Let $\mathcal{D}$ consist of finite sums $F(t,x) = \sum_j\tau_j(t)f_j(x)$ with
+real $\tau_j \in C_c^\infty(0,T)$ and real Schwartz $f_j$. These give
+$H_a$-valued Schwartz functions of $x$. Let $W$ denote the original real
+isonormal noise in~\eqref{E:cov}.
+
+\LeanMarker{P:masked-noise-completion}
+\begin{proposition}[Completion on the same noise]\label{P:masked-noise-completion}
+  The space $\mathcal{D}$ belongs to the original test-noise completion and
+  \begin{equation}\label{E:masked-actual-noise-norm}
+    \E W(F)^2 = (2\pi)^d\int
+    \|\widehat{F}(\xi)\|_{H_a^{\mathbb{C}}}^2\mu(\ud\xi).
+  \end{equation}
+  Define the auxiliary seminorm
+  \[
+    N_R(F)^2 = (2\pi)^d\int
+    \|\widehat{F}(\eta)\|_{H_a^{\mathbb{C}}}^2\nu_R(\ud\eta).
+  \]
+  Then $F \mapsto W(\zeta_RF)$ extends as a contraction from the null-quotient
+  completion for $N_R$ into the original $L^2(\Omega)$. The extension is
+  centered and jointly Gaussian. For finitely many real $F_1,\ldots,F_m \in
+  \mathcal{D}$, their masked covariance matrix is bounded in positive
+  semidefinite order by the matrix of auxiliary inner products. This gives
+  covariance comparison for every finite linear Gaussian image and every convex
+  norm power $p \ge 1$.
+\end{proposition}
+
+\begin{proof}
+  We first identify the spectral norm of the original noise. We then extend
+  masked evaluation by the auxiliary bound, and finally compare finite
+  Gaussian vectors by adding independent Gaussian noise.
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the original covariance norm.
+  For real spatial Schwartz $f,g$, put $h(z) = \int f(y+z)g(y)\ud y$. Fourier
+  inversion and Parseval give
+  \[
+    h(z) = \int e^{i\xi\cdot z}\widehat{f}(\xi)
+    \overline{\widehat{g}(\xi)}\ud\xi.
+  \]
+  The product of the two Fourier transforms is Schwartz, so the inverse
+  Fourier identity can be applied again. Evaluating its Fourier transform with
+  the positive sign reflects the frequency and contributes the factor
+  $(2\pi)^d$.
+  Therefore,
+  \[
+    \int e^{i\xi\cdot z}h(z)\ud z
+    = (2\pi)^d\widehat{f}(-\xi)\overline{\widehat{g}(-\xi)}.
+  \]
+  Apply~\eqref{E:masked-spectral-convention} to the single test $h$ and reflect
+  $\xi$ using evenness of $\mu$. The spatial covariance is thus
+  $(2\pi)^d\int\widehat{f}(\xi)\overline{\widehat{g}(\xi)}\mu(\ud\xi)$. Summing
+  over the finitely many temporal factors gives
+  \eqref{E:masked-actual-noise-norm}. Schwartz decay, temperedness and temporal
+  integrability justify these pairings. If $W$ is initially given only on
+  compact spatial tests, smooth expanding cutoffs converge in the Schwartz
+  topology. The spectral form is continuous in that topology, admitting
+  $\mathcal{D}$ in the same completion.
+
+  In the finite temporal sum, every temporal test pairs with every other test.
+  These are exactly the cross terms of the squared $H_a^{\mathbb C}$ norm of
+  the sum in the covariance formula.
+  \medskip
+  \noindent\textit{Step 2.~}We extend masked evaluation on the same
+  probability space.
+  Proposition~\ref{P:masked-auxiliary-norm}, applied with $H =
+  H_a^{\mathbb{C}}$, gives $\E W(\zeta_RF)^2 \le N_R(F)^2$. It annihilates
+  auxiliary-null tests. An auxiliary Cauchy sequence thus gives a Cauchy
+  sequence of noise evaluations in $L^2(\Omega)$, proving the contraction
+  extension and its uniqueness. Every finite linear combination of the limits is
+  an $L^2$ limit of centered Gaussian variables. Their variances converge, so
+  their characteristic functions prove that the limits remain jointly centered
+  Gaussian.
+
+  Each finite linear combination of limits is approximated by the
+  corresponding combination of evaluations on the original probability space.
+  Each approximation is centered Gaussian, and its variance converges by $L^2$
+  convergence.
+  \medskip
+  \noindent\textit{Step 3.~}We compare finite Gaussian images.
+  For the conditional Jensen argument below, independence and centering of $Z$
+  make the conditional mean of $X+Z$ given $X$ equal to $X$. The norm to the
+  power $p$ is convex for $p\ge1$. A fixed finite linear map preserves this
+  conditional-mean identity and covariance comparison, so the argument also
+  treats every finite linear Gaussian image.
+  For the finite family let $A$ be the covariance matrix and $B$ the auxiliary
+  Gram matrix. Applying the norm inequality to $\sum_i b_iF_i$ gives
+  $b^{\mathsf{T}}Ab \le b^{\mathsf{T}}Bb$ for every real vector $b$.
+  Diagonalizing $B-A$ constructs a centered Gaussian vector $Z$ of that
+  covariance, independent of the evaluation vector $X$, on a product space. Then
+  $X+Z$ has covariance $B$. Conditional Jensen gives $\E\|X\|^p \le \E\|X+Z\|^p$
+  for every norm and $p \ge 1$. Finite Gaussian moments ensure finiteness of
+  both sides. This proves Proposition~\ref{P:masked-noise-completion}.
+\end{proof}
+
+The auxiliary completion depends on $R$ and $\zeta$. Its construction does not
+define multiplication by $\zeta_R$ on the original noise quotient. Nor does the
+finite linear Gaussian comparison assert a covariance comparison for nonlinear
+wave solutions. The auxiliary and original test norms need not dominate one
+another. No spatial representative for every auxiliary class, nonnegative
+physical inverse covariance for $\nu_R$, or uniform density bound in $R$ is
+asserted.
+
+\LeanMarker{P:masked-quotient-obstruction}
+\begin{proposition}[A physical mask need not preserve noise-null tests]
+  \label{P:masked-quotient-obstruction}
+  In the admissible case $d = 2$, $\alpha = 1$, $0 < a < 1$ and $\Gamma =
+  \delta_0(\ud x_1)\ud x_2$, there is a real compact smooth mask $\zeta$ such
+  that no finite $C$ satisfies $\E W(\zeta F)^2 \le C\E W(F)^2$ for every
+  compact smooth test $F$.
+\end{proposition}
+
+\begin{proof}
+  We exhibit a test with zero unmasked variance and positive masked variance.
+  This rules out any finite comparison constant.
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the covariance in this example.
+  Fourier inversion on Schwartz tests gives $\mu =
+  (2\pi)^{-1}\ud\xi_1\delta_0(\ud\xi_2)$ in the stated spectral convention. The
+  measure $\Gamma$ is nonnegative, even, positive definite and tempered, with
+  $\Gamma(cA) = c\Gamma(A)$. It therefore satisfies Hypothesis~\ref{H:homog}
+  with $\alpha = 1$. This is not spatial white noise in dimension two. For real
+  compact smooth $g$, its spatial covariance is, by ordinary Fubini,
+  \[
+    V(g) = \int_\R\left(\int_\R g(x_1,x_2)\ud x_2\right)^2\ud x_1.
+  \]
+
+  \medskip
+  \noindent\textit{Step 2.~}We construct the mask and a noise-null test.
+  Choose real even $\chi \in C_c^\infty(\R)$ equal to one on $[-1,1]$ and zero
+  outside $[-2,2]$. For example, on $1 < r = |x| < 2$ use
+  \[
+    \chi(x) = \frac{e^{-1/(2-r)}}{e^{-1/(2-r)}+e^{-1/(r-1)}}.
+  \]
+  The endpoint exponentials vanish to every order, so the plateau pastes
+  smoothly. Let $I_\chi = \int(\chi')^2 > 0$ and $J_\chi = \int\chi^4 > 0$.
+  Positivity of $I_\chi$ follows because $\chi$ is not constant, and $J_\chi \ge
+  2$. Put $g(x) = \chi(x_1)\chi''(x_2)$ and $\zeta(x) = \chi(x_1)\chi(x_2)$.
+  Their unmasked marginal vanishes since $\int\chi'' = 0$, whereas integration
+  by parts gives the masked marginal $-I_\chi\chi(x_1)^2$. Thus, $V(g) = 0$ and
+  $V(\zeta g) = J_\chi I_\chi^2 > 0$. For a nonzero nonnegative $\tau \in
+  C_c^\infty(0,T)$, set $F(t,x) = \tau(t)g(x)$. The temporal factor
+  $\|\tau\|_a^2$ is finite and strictly positive because its nonnegative
+  integrand is positive on a set of positive two-dimensional measure.
+  Consequently, the full unmasked variance is zero and the masked variance is
+  positive. This proves Proposition~\ref{P:masked-quotient-obstruction}.
+\end{proof}
+
+No-go~\ref{P:nogo-22} records the quotient interpretation of this witness:
+the mask separates two representatives of the same noise-null class.
+This is why we mask tests before constructing the auxiliary completion.
+
+
+\subsection{Temporal modulation and continuous wave factors}
+
+Write $\langle x\rangle = \sqrt{1+x^2}$. Let $I = [s,s+h] \subset [0,T]$, with
+$0 < h \le 1$. Norms below are those of the complexified temporal completion in
+Lemma~\ref{L:masked-time-completion}.
+
+\LeanMarker{L:masked-temporal-modulation}
+\begin{lemma}[Modulated amplitudes]\label{L:masked-temporal-modulation}
+  Let $A \in C^1(I;\mathbb{C})$, $M = \sup_I|A|$ and $D = \sup_I|A'|$. For every
+  real $\omega$,
+  \begin{equation}\label{E:masked-temporal-modulation}
+    \|1_IA(t)e^{i\omega t}\|_a^2
+    \le C_0(a)h^{2-a}(M+hD)^2\langle h\omega\rangle^{a-1},
+    \qquad C_0(a) = \frac{16}{1-a}.
+  \end{equation}
+  The bound is uniform in $T,s,h,A$ and $\omega$.
+\end{lemma}
+
+\begin{proof}
+  We express the covariance through the time difference and rescale the
+  interval to unit length. At low frequency we use absolute values; at high
+  frequency we separate the singular endpoint before integrating by parts.
+
+  \medskip
+  \noindent\textit{Step 1.~}We express and rescale the covariance.
+  Put $c(v) = \int_s^{s+h-v}A(u+v)\overline{A(u)}\ud u$ for $0 \le v \le h$.
+  Differentiation at the moving endpoint gives
+  \[
+    c'(v) = -A(s+h)\overline{A(s+h-v)}
+    +\int_s^{s+h-v}A'(u+v)\overline{A(u)}\ud u.
+  \]
+  The upper integration endpoint has derivative minus one. At that endpoint
+  the first factor is $A(s+h)$; differentiating the integrand differentiates
+  only $A(u+v)$. This gives the displayed derivative.
+  Thus, $c(h) = 0$, $|c(v)| \le hM^2$ and $|c'(v)| \le M^2+hMD$. Splitting the
+  covariance square into its two conjugate triangles gives
+  \[
+    \|1_IA(t)e^{i\omega t}\|_a^2
+    = 2\operatorname{Re}\int_0^h v^{-a}e^{i\omega v}c(v)\ud v
+    = 2h^{2-a}\operatorname{Re}\int_0^1 y^{-a}e^{i\omega hy}f(y)\ud y,
+  \]
+  where $f(y) = c(hy)/h$. Set $K = M+hD$. Then $f(1) = 0$ and $|f|,|f'| \le
+  K^2$. If $K = 0$ the assertion is immediate. If $|\omega h| \le 1$, the last
+  integral is at most $K^2/(1-a)$ in absolute value, and $\langle\omega
+  h\rangle^{a-1} \ge 2^{(a-1)/2}$. The claimed constant is sufficient in this
+  case.
+
+  Indeed, $f'(y)=c'(hy)$, while $|f(y)|\le M^2$ and $M^2+hMD\le(M+hD)^2$. The
+  covariance identity uses the time difference $v$ on one triangle and its
+  complex conjugate on the other. For low frequency, including the factor
+  $2h^{2-a}$ reduces the constant check to $2/(1-a)\le C_0(a)2^{(a-1)/2}$,
+  valid for $0<a<1$.
+  \medskip
+  \noindent\textit{Step 2.~}We separate the singular endpoint at high
+  frequency.
+  Now suppose $k = |\omega h| > 1$. On $[0,1/k]$ the integral is at most
+  $K^2k^{a-1}/(1-a)$. On $[1/k,1]$, integrate the exponential by parts. The
+  endpoint at one vanishes, while the other endpoint contributes at most
+  $K^2k^{a-1}$. The derivative integral, divided by $k$, is bounded by
+  \[
+    \frac{K^2}k\left(a\int_{1/k}^1 y^{-a-1}\ud y
+    +\int_{1/k}^1 y^{-a}\ud y\right)
+    \le K^2 k^{a-1}\left(1+\frac1{1-a}\right).
+  \]
+  The endpoint at one vanishes because $f(1)=0$. Differentiating $y^{-a}f(y)$
+  gives $-ay^{-a-1}f(y)+y^{-a}f'(y)$, with reciprocal frequency of absolute
+  value $1/k$. The first derivative integral contributes at most $K^2k^{a-1}$
+  because $a\int_{1/k}^1y^{-a-1}\ud y=k^a-1$; the second contributes at most
+  $K^2/(k(1-a))$. These combine with the short-interval and endpoint bounds in
+  the total below.
+  Here $k^{-1} \le k^{a-1}$ since $a > 0$. The total is at most
+  $4K^2k^{a-1}/(1-a)$. Finally, $k^{a-1} \le \sqrt{2}\langle\omega
+  h\rangle^{a-1}$ and $8\sqrt{2} \le 16$. Including the factor $2h^{2-a}$ proves
+  the bound for either sign of $\omega$. This proves
+  Lemma~\ref{L:masked-temporal-modulation}.
+\end{proof}
+
+Lemma~\ref{L:masked-temporal-modulation} treats one exponential mode. A
+product of two sines or cosines is a sum of four such modes, which we bound
+next.
+
+\LeanMarker{L:masked-trig-products}
+\begin{lemma}[Correlated trigonometric products]\label{L:masked-trig-products}
+  Let $r,\rho \ge 0$. Let $P_r$ be either $\cos(rt)$ or $\sin(rt)$, and let
+  $Q_\rho$ be either $\cos(\rho t)$ or $\sin(\rho t)$. With the amplitude and
+  constant above,
+  \begin{align}
+    \|1_IAP_rQ_\rho\|_a^2
+    &\le C_0(a)h^{2-a}(M+hD)^2\mathcal{Q}_h(r,\rho),
+    \label{E:masked-trig-products}\\
+    \mathcal{Q}_h(r,\rho)
+    &:= \langle h(r-\rho)\rangle^{a-1}
+    +\langle h(r+\rho)\rangle^{a-1}.
+    \label{E:masked-frequency-pair}
+  \end{align}
+\end{lemma}
+
+\begin{proof}
+  Expanding the two trigonometric factors gives four complex exponential modes
+  with frequencies $\sigma r+\tau\rho$, $\sigma,\tau \in \{-1,1\}$, and
+  coefficients of absolute value $1/4$. In a Hilbert space,
+  \[
+    \left\|\sum_j c_jv_j\right\|^2
+    \le \left(\sum_j|c_j|\right)\sum_j|c_j|\|v_j\|^2.
+  \]
+  This Hilbert-space inequality follows from the triangle inequality followed
+  by scalar Cauchy--Schwarz applied to $|c_j|^{1/2}$ and $|c_j|^{1/2}\|v_j\|$.
+  It therefore does not require distinct vectors or distinct frequencies.
+  The first coefficient sum is one. Apply
+  Lemma~\ref{L:masked-temporal-modulation} to each mode. Two frequencies have
+  absolute value $|r-\rho|$ and two have absolute value $r+\rho$. This gives one
+  half of the asserted right side, and hence the bound. Repeated or zero
+  frequencies are permitted; no orthogonality or independence of the modes is
+  used. This proves Lemma~\ref{L:masked-trig-products}.
+\end{proof}
+
+\LeanMarker{L:masked-continuous-wave}
+\begin{lemma}[Continuous sine factors]\label{L:masked-continuous-wave}
+  Define $c_r(t) = \cos(rt)$ and
+  \[
+    b_r(t) = \langle r\rangle\frac{\sin(rt)}r\quad(r > 0),
+    \qquad b_0(t) = t.
+  \]
+  For $F_r \in \{c_r,b_r\}$ and $G_\rho \in \{c_\rho,b_\rho\}$,
+  \begin{equation}\label{E:masked-continuous-wave}
+    \|1_IF_rG_\rho\|_a^2
+    \le C_1(a)(1+T)^4h^{2-a}\mathcal{Q}_h(r,\rho),
+    \qquad C_1(a) = 4\cdot3^{1-a}C_0(a).
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We replace low-frequency sine quotients by averages of cosines. The
+  trigonometric estimate applies to each integrand; a comparison of shifted
+  frequency weights then gives the stated constant.
+
+  \medskip
+  \noindent\textit{Step 1.~}We represent each factor without a singular
+  quotient.
+  For $r \ge 1$, $b_r$ is a sine times a coefficient at most $\sqrt{2}$. For $0
+  \le r \le 1$, the fundamental theorem of calculus gives
+  \[
+    b_r(t) = t\langle r\rangle\int_0^1\cos(vrt)\ud v.
+  \]
+  For $r > 0$, integrate the derivative of $v \mapsto \sin(vrt)$ from zero to
+  one and divide by $r$. At $r = 0$, the right side is $t$, in agreement with
+  the definition.
+  This includes $r = 0$. Hence, a product $F_rG_\rho$ is a scalar coefficient of
+  absolute value at most two times a normalized integral of
+  $t^jP_{r'}(t)Q_{\rho'}(t)$, where $j \in \{0,1,2\}$ and $|r'-r|,|\rho'-\rho|
+  \le 1$. The integral is over zero, one or two copies of $[0,1]$; with no
+  averages, use a one-point probability space. Its parameter dependence is
+  continuous in $L^2(0,T)$ by dominated convergence.
+  Each low-frequency sine factor contributes one factor $t$ and one averaging
+  parameter. Each high-frequency sine contributes only a coefficient of
+  absolute value at most $\sqrt2$, and a cosine contributes neither. This
+  gives the three values of $j$, at most two parameters, and the coefficient
+  bound two.
+  Lemma~\ref{L:masked-time-completion} makes it continuous in $H_a$ as well.
+  Thus, the averages are Bochner integrals, and their $H_a$ images agree with
+  the pointwise averages by continuity of the inclusion. Hilbert Jensen bounds
+  the squared norm of an average by the average of the squared norms.
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound each integrand and compare frequency
+  weights.
+  Apply Lemma~\ref{L:masked-trig-products} to each integrand with $A(t) = t^j$.
+  For $j = 0,1,2$, respectively, $M+hD$ is at most $1$, $T+1$ and $T^2+2T$. In
+  every case $(M+hD)^2 \le (1+T)^4$. For real $x,e$, the triangle inequality and
+  its reverse imply
+  \[
+    \frac{\langle x\rangle}{1+|e|}
+    \le \langle x+e\rangle \le (1+|e|)\langle x\rangle.
+  \]
+  For the upper bracket comparison, view $\langle x\rangle$ as the Euclidean
+  norm of $(1,x)$ and use the triangle inequality. Applying that same upper
+  bound with $x+e$ and $-e$ gives the lower comparison.
+  The lower bracket comparison is used for the negative exponent: raising it
+  to $a-1<0$ reverses the inequality. The changes in the two frequency
+  arguments have absolute value at most $h(|r'-r|+|\rho'-\rho|)\le2$, so the
+  comparison applies to both terms of $\mathcal Q_h$.
+  The changes in $h(r\pm\rho)$ have magnitude at most two, since $h \le 1$.
+  Because $a-1 < 0$, each altered bracket to the power $a-1$ is at most
+  $3^{1-a}$ times the original one. Apply these comparisons, Hilbert Jensen and
+  the squared scalar coefficient bound four to obtain
+  \eqref{E:masked-continuous-wave}. This proves
+  Lemma~\ref{L:masked-continuous-wave}.
+\end{proof}
+
+These estimates concern covariance forms and temporal factors. Their application
+to displacement and velocity is in Section~\ref{S:wave-variance}; the subsequent
+operator, source and moment results require their separate proofs. They do not
+follow from covariance domination alone.

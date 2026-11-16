@@ -1,0 +1,189 @@
+{
+  "schema": "readability-root-contract-refinement/1",
+  "review_record_id": "RP013",
+  "recorded_utc": "2026-11-16T08:02:16.042636+00:00",
+  "reason": "Root-authorized clarification of original-step public reconstruction, including unchanged portions; original scientific scope is preserved.",
+  "preconditions": {
+    "status_before": "PREPARED_AWAITING_ROOT_REVIEW_PREFLIGHT_AND_FREEZE",
+    "no_launch_native_report_or_freeze_artifact_before": true,
+    "public_frozen_records_found": [],
+    "public_record_search_scope": [
+      "reviews/ and experiment/ in shared project and owned publication worktree"
+    ]
+  },
+  "before_artifacts": {
+    "CONTRACT.md": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/CONTRACT.md",
+      "sha256": "7bb7a4e0791ca949194984c8286bda3795ecd1347f0efb13826041f095d903a4",
+      "bytes": 4634
+    },
+    "INPUT.txt": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/INPUT.txt",
+      "sha256": "d6bec7007f9776e247e9d25a0ad9a595b9d0386ac878f2aeaf6acb8450905c29",
+      "bytes": 47031
+    },
+    "MANIFEST.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/MANIFEST.json",
+      "sha256": "bd300d01adee6b8978da464e09af3f151eb3536b58539cd3966941febca18147",
+      "bytes": 4683
+    },
+    "PROOF-MANIFEST.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/PROOF-MANIFEST.json",
+      "sha256": "42d9d32de2fa7c857f4994457b84ccd334f34654ba32406cc9c09cc5885ef882",
+      "bytes": 3576
+    },
+    "CAPACITY.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/CAPACITY.json",
+      "sha256": "8d0c7402db913780e04bbb85d5c282ab358defb1e6151aa12efd591ca172f27f",
+      "bytes": 750
+    },
+    "PREPARATION-CHECKS.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/PREPARATION-CHECKS.json",
+      "sha256": "4c5e47d257773365fdc3871bf98568ae8547d1afd01df75123b04c4e05088ed3",
+      "bytes": 937
+    },
+    "model-profile.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/model-profile.json",
+      "sha256": "ccdf515979e77bbe752d924735a915260ca437d3d31a954d4a739c946fca0ea1",
+      "bytes": 778
+    },
+    "MODEL-LIMITS.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/MODEL-LIMITS.json",
+      "sha256": "60eaa34361e093e599fdc4a26f8d53ee3aeb860e419c9e66535c4fda52284d56",
+      "bytes": 199
+    },
+    "SHA256SUMS": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/SHA256SUMS",
+      "sha256": "d27a8be5fb782b6766c1f77a4e727fa8748457adb453f795c51668b7c46870c4",
+      "bytes": 1358
+    },
+    "README.md": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/README.md",
+      "sha256": "3fd2175352089482a96b6972b89b0f9e5c8d4be65f9a9c56b9467ab8c3dcb1d9",
+      "bytes": 1671
+    }
+  },
+  "exact_normative_block": "For every assigned proof, enumerate its original logical steps (including unchanged portions) and provide checkable public working for each. A target statement or a bound established inside that same target proof is not an unassigned input. Named UNASSIGNED upstream statements may be used after checking their hypotheses; their own proofs remain unassigned. Reading and reconstruction are distinct: if any required target step is not reconstructed publicly, say so and mark Public reconstruction: PARTIAL or NOT_RECONSTRUCTED, even if Old/New reading is COMPLETE. Do not replace a derivation by saying it is unchanged.",
+  "exact_added_output_fields": [
+    "- Public reconstruction: COMPLETE | PARTIAL | NOT_RECONSTRUCTED",
+    "- Original-step coverage: <steps and working, with omissions explicit>"
+  ],
+  "rough_word_target": 5000,
+  "brevity_instruction": "The word target is approximate; do not sacrifice a required derivation for brevity.",
+  "contract_unified_diff": "--- CONTRACT.before.md\n+++ CONTRACT.md\n@@ -51,6 +51,10 @@\n Honest PARTIAL/NOT_READ, uncertainty, failure or inconclusiveness is permitted.\n Only checkable public mathematical evidence is requested.\n \n+# Public reconstruction requirement\n+\n+For every assigned proof, enumerate its original logical steps (including unchanged portions) and provide checkable public working for each. A target statement or a bound established inside that same target proof is not an unassigned input. Named UNASSIGNED upstream statements may be used after checking their hypotheses; their own proofs remain unassigned. Reading and reconstruction are distinct: if any required target step is not reconstructed publicly, say so and mark Public reconstruction: PARTIAL or NOT_RECONSTRUCTED, even if Old/New reading is COMPLETE. Do not replace a derivation by saying it is unchanged.\n+\n # Output contract\n \n Begin with:\n@@ -64,6 +68,8 @@\n for each assigned label, in inventory order. Each must give:\n - Old reading: COMPLETE | PARTIAL | NOT_READ\n - New reading: COMPLETE | PARTIAL | NOT_READ\n+- Public reconstruction: COMPLETE | PARTIAL | NOT_RECONSTRUCTED\n+- Original-step coverage: <steps and working, with omissions explicit>\n - Argument preservation: PRESERVED | CHANGED | UNCERTAIN\n - New explanations: JUSTIFIED | CONCERN | UNCERTAIN\n - Evidence: concrete mathematical checks/working using equation labels or\n@@ -74,5 +80,7 @@\n End with '## AUDIT dispositions' and '## Findings and limits'. A partially\n read proof prohibits a claim of full assignment completion. Distinguish target\n preservation from proving all upstream analytic results or whole-book truth.\n-Keep the public report roughly 3500 words or less. Do not certify source PDFs,\n+Keep the public report roughly 5000 words. Do not certify source PDFs,\n images, Lean correspondence, rendered pages, human sign-offs or release.\n+\n+The word target is approximate; do not sacrifice a required derivation for brevity.\n",
+  "contract_diff_sha256": "b8ca6efeacd88b4b472cd34787480a10320a8cc31018278b4694b258c0b2d50d",
+  "after": {
+    "contract_sha256": "ccec9e6291f9d5a9e816680b170fbbda5aadd63c7278b228ec0e9bd0e804c59b",
+    "contract_bytes": 5504,
+    "prompt_sha256": "7c7a779699626317a7adaec1a1dfacc32dc60b1235d6d7cf0bac252e6d82e366",
+    "prompt_bytes": 47901,
+    "capacity_sha256": "7390d3a9d8b3287d88213ae1adbac61e98e35231e17169d1262a1a1efc48580f",
+    "preparation_checks_sha256": "2b20a136e4d6bf5b0132d6db4ec73fff065953d45d12ed04f37c691176fee159",
+    "manifest_sha256": "af3ac77a4f3c71f3e380da3f72402fe73db93a4da2897bafea0ecc5feb791206",
+    "prompt_tokens": 14419,
+    "agent_prompt_tokens": 53,
+    "combined_reasoning_public_cap": 65536,
+    "conditional_headroom": 935800,
+    "timeout_seconds": 3600
+  },
+  "payload_identity": {
+    "proof_manifest_sha256": "42d9d32de2fa7c857f4994457b84ccd334f34654ba32406cc9c09cc5885ef882",
+    "all_statement_and_proof_hashes_unchanged": true,
+    "all_source_files_bytes_unchanged": true,
+    "source_input_files": [
+      {
+        "path": "inputs/old-module.txt",
+        "bytes": 4810,
+        "sha256": "28c299b4f0bff4f6cc1a4a63db881bd2e849b43e235c2824aec1ddd34a4f2415",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/integrated_young_upper_foundation.tex",
+        "selection": "WHOLE_FILE",
+        "role": "ASSIGNED OLD complete module; exactly 2 proof pairs."
+      },
+      {
+        "path": "inputs/new-module.txt",
+        "bytes": 7691,
+        "sha256": "34f4db462eb682b313623fe917327238c4faff3bdf0cfeb89c0f60eef542802e",
+        "source_revision": "e07672d40443cd6ba655b0cf6eb05a1d1a454888",
+        "source_path": "notes/integrated_young_upper_foundation.tex",
+        "selection": "WHOLE_FILE",
+        "role": "ASSIGNED NEW complete module; exactly 2 proof pairs."
+      },
+      {
+        "path": "inputs/context-constant-young-baseline.txt",
+        "bytes": 27376,
+        "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/integrated_constant_phase_young.tex",
+        "selection": "WHOLE_FILE",
+        "role": "UNASSIGNED complete baseline upstream module. Stated inputs/definitions may be used under checked application hypotheses; these proofs are NOT assigned or counted as additional reviewed proofs."
+      }
+    ],
+    "old_embedded_frames": [
+      {
+        "path": "inputs/old-module.txt",
+        "payload_byte_offset": 6131,
+        "payload_bytes": 4810,
+        "payload_sha256": "28c299b4f0bff4f6cc1a4a63db881bd2e849b43e235c2824aec1ddd34a4f2415"
+      },
+      {
+        "path": "inputs/new-module.txt",
+        "payload_byte_offset": 11345,
+        "payload_bytes": 7691,
+        "payload_sha256": "34f4db462eb682b313623fe917327238c4faff3bdf0cfeb89c0f60eef542802e"
+      },
+      {
+        "path": "inputs/context-constant-young-baseline.txt",
+        "payload_byte_offset": 19601,
+        "payload_bytes": 27376,
+        "payload_sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+      }
+    ],
+    "new_embedded_frames": [
+      {
+        "path": "inputs/old-module.txt",
+        "payload_byte_offset": 7001,
+        "payload_bytes": 4810,
+        "payload_sha256": "28c299b4f0bff4f6cc1a4a63db881bd2e849b43e235c2824aec1ddd34a4f2415"
+      },
+      {
+        "path": "inputs/new-module.txt",
+        "payload_byte_offset": 12215,
+        "payload_bytes": 7691,
+        "payload_sha256": "34f4db462eb682b313623fe917327238c4faff3bdf0cfeb89c0f60eef542802e"
+      },
+      {
+        "path": "inputs/context-constant-young-baseline.txt",
+        "payload_byte_offset": 20471,
+        "payload_bytes": 27376,
+        "payload_sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+      }
+    ],
+    "only_frame_byte_offsets_changed": true,
+    "prefix_byte_delta": 870,
+    "old_prompt_suffix_after_contract_sha256": "022e7206a5dac1c2a96cd61d98bd3dee46af4a23b036b91d1d9cd332f899bffe",
+    "new_prompt_suffix_after_contract_sha256": "022e7206a5dac1c2a96cd61d98bd3dee46af4a23b036b91d1d9cd332f899bffe"
+  },
+  "unchanged_policy_fields": {
+    "source_file": "notes/integrated_young_upper_foundation.tex",
+    "old_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+    "source_revision": "e07672d40443cd6ba655b0cf6eb05a1d1a454888",
+    "proof_labels": [
+      "L:young-upper-growth",
+      "P:young-upper-multiplicative"
+    ],
+    "assigned_global_ordinals": null,
+    "requested_model": "deepseek/deepseek-v4-pro",
+    "requested_variant": null,
+    "pure_mode": true,
+    "agent": "artifact-reviewer",
+    "all_tools_denied": true,
+    "combined_reasoning_public_output_cap": 65536,
+    "timeout_seconds": 3600,
+    "coordinator_launch_limit": 1,
+    "coordinator_retry_continuation_fallback": false
+  },
+  "historical_evidence_notice": "Saved old checks/contract/prompt remain historical. Previous selected-view binding hashes do not cover the changed prefix. New offline checks cover the refined prefix and exact preserved payloads; no native/preflight/review/approval claim.",
+  "native_or_provider_calls": 0,
+  "launch_script_or_lock_created": false
+}

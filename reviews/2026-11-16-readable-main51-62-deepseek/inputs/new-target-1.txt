@@ -1,0 +1,1288 @@
+\begin{corollary}[Ordinary product and Riesz covariances in dimension three]
+  \label{C:three-product-riesz}
+  Let $d = 3$, $0 < \alpha_0 < 1$, and $1 < \alpha < 2-\alpha_0$. The
+  coefficient and all-time moment estimates in~\eqref{E:three-transfer}, and the
+  asymptotic estimate in~\eqref{E:three-variational-upper}, hold for either of
+  the following spatial covariances, with $c > 0$:
+  \begin{enumerate}
+    \item $\gamma(x) = c\prod_{j=1}^3|x_j|^{-a_j}$, where
+      $0 \le a_j < 1$ and $\sum_j a_j = \alpha$;
+    \item $\gamma(x) = c|x|^{-\alpha}$.
+  \end{enumerate}
+  In the first case the constant depends only on $a_1,a_2,a_3,c,\alpha_0$; in
+  the second it depends only on $\alpha,c,\alpha_0$. A zero coordinate exponent
+  denotes a constant factor; the case $a_j = 1$ and any interpretation of it as
+  coordinate white noise are excluded.
+\end{corollary}
+
+\begin{proof}
+  In both cases choose the fixed midpoint $\vartheta = (\alpha_0+2-\alpha)/2$
+  and define $b_0,\chi$ by~\eqref{E:three-parameters}. Then $\alpha_0 <
+  \vartheta < 2-\alpha$, and all subsequent choices depend only on the data in
+  the statement. For the product covariance, Lemma~\ref{L:product-endpoints}
+  supplies $b,v$ by its explicit interval formula. Its same-amplitude endpoint
+  densities $\gamma_b,\gamma_v$ are admissible covariance measures of exponents
+  one and $\chi$. Their common-width Gaussian inequality is exactly
+  Hypothesis~\ref{H:three-endpoints}.
+
+  For the Riesz covariance take $\gamma_1(x) = c|x|^{-1}$ and $\gamma_\chi(x) =
+  c|x|^{-\chi}$. Each degree $e \in \{1,\alpha,\chi\}$ is less than three, so
+  the corresponding density is locally integrable and tempered. Positive
+  definiteness follows from the Gaussian mixture
+  \[
+    c|x|^{-e}=\frac{c}{\Gamma(e/2)}
+    \int_0^\infty s^{e/2-1}e^{-s|x|^2}\ud s.
+  \]
+  For a Schwartz autocorrelation, absolute integrability follows from $e < 3$
+  near zero and rapid decay at infinity. Tonelli and Fubini therefore justify
+  integrating the positive Gaussian quadratic forms. The affine identity $\alpha
+  = \vartheta+(1-\vartheta)\chi$ gives $\gamma_\alpha =
+  \gamma_1^\vartheta\gamma_\chi^{1-\vartheta}$ almost everywhere, with the same
+  amplitude $c$. H\"older on the Gaussian probability measure proves the
+  required common-width comparison for every $\epsilon,z$. Thus, in both cases
+  all endpoint hypotheses are discharged. Proposition~\ref{P:three-transfer}
+  applies. This proves Corollary~\ref{C:three-product-riesz}.
+\end{proof}
+
+\LeanMarker{C:three-finite-images}
+\begin{corollary}[Finite sums of linear images]\label{C:three-finite-images}
+  Let $d = 3$, $0 < \alpha_0 < 1$, and $1 < \alpha < 2-\alpha_0$. Let
+  $\Gamma_i$, $1 \le i \le N$, belong to one of the following classes, always
+  with homogeneity exponent $\alpha$:
+  \begin{enumerate}
+    \item the ordinary products in Corollary~\ref{C:three-product-riesz};
+    \item the isotropic Riesz covariances in that corollary;
+    \item the plane-supported measures of Lemma~\ref{L:plane-endpoints},
+      with $a_1+a_2 = \alpha-1$.
+  \end{enumerate}
+  Let $T_i:\R^3 \to \R^3$ be invertible linear maps, and let $w_i \ge 0$ with
+  $\sum_iw_i > 0$. Then the coefficient, all-time moment, and nonsharp
+  variational estimates
+  \eqref{E:three-transfer}--\eqref{E:three-variational-upper} hold for
+  \[
+    \Gamma=\sum_{i=1}^Nw_i(T_i)_\#\Gamma_i.
+  \]
+  The constants may depend on all fixed component data, maps and weights. The
+  endpoints and their variational quantities are those constructed in the proof.
+\end{corollary}
+
+\begin{proof}
+  Choose the common midpoint $\vartheta = (\alpha_0+2-\alpha)/2$, and let
+  $b_0,\chi$ be given by~\eqref{E:three-parameters}.
+  Lemma~\ref{L:product-endpoints} supplies the ordinary-product endpoints. For a
+  Riesz component use $c_i|x|^{-1}$ and $c_i|x|^{-\chi}$: the Gaussian-mixture
+  calculation in the preceding proof verifies their covariance properties, and
+  $\alpha = \vartheta+(1-\vartheta)\chi$ gives their Gaussian comparison by
+  H\"older. Lemma~\ref{L:plane-endpoints} supplies the plane-supported
+  endpoints. Thus, every component has an endpoint triple with these same fixed
+  parameters.
+
+  Apply Lemma~\ref{L:endpoint-closure} first to $T_i$ on each triple, then to
+  the finite weighted sums. The resulting endpoints are
+  \[
+    \Gamma_{\rm low}=\sum_iw_i(T_i)_\#\Gamma_{{\rm low},i},
+    \qquad
+    \Gamma_{\rm st}=\sum_iw_i(T_i)_\#\Gamma_{{\rm st},i}.
+  \]
+  They satisfy Hypothesis~\ref{H:three-endpoints}. The target is nonzero because
+  all components are positive nonzero measures and some weight is positive.
+  Proposition~\ref{P:three-transfer} now applies to these actual target and
+  endpoint measures. No addition or coupling identity for random solutions is
+  used. This proves Corollary~\ref{C:three-finite-images}.
+\end{proof}
+
+[held back until the source author has been told]
+
+Euclidean radial lowering can destroy positive definiteness, even for an
+admissible coordinate-product covariance; see No-go~\ref{P:nogo-09}.
+Two other substitutes fail for different reasons: a heat--Mellin square can
+have infinite local mass, while angular smoothing of a singular covariance
+cannot retain a uniform isotropic density envelope; see
+No-gos~\ref{P:nogo-12} and~\ref{P:nogo-13}.
+
+
+\section{Physical and spectral energy for measure covariances}
+\label{S:energy-fidelity}
+
+This section justifies the positive-measure energy used
+in~\eqref{E:three-static-variational}. It does not assume
+Hypothesis~\ref{H:three-endpoints} or the conditional moment bound. The imported
+analytic input is the finiteness of the variation on the right of (1.5), stated
+in the closing sentence of Chen~\cite{chen:23:exponential}*{Theorem~1.1, p.~2}.
+
+This identification of variational functionals does not remove the additional
+hypotheses of the separate moment argument. It does not resolve general
+covariance factorization.
+
+\begin{lemma}[Sobolev energy identification]\label{L:physical-spectral-energy}
+  Let $\Xi$ be a nonnegative, even, positive-definite tempered Radon covariance
+  on $\R^3$, with $\Xi(rA) = r^{3-\chi}\Xi(A)$ for $0 < \chi < 2$. Let $\mu_\Xi$
+  be its positive even spectral measure in the convention $\Xi = \int
+  e^{i\xi\cdot x}\mu_\Xi(\ud\xi)$, understood distributionally, and use the
+  Fourier transform $\widehat{h}(\xi) = \int e^{-i\xi\cdot x}h(x)\ud x$. For
+  every real $g \in W^{1,2}(\R^3)$,
+  \begin{equation}\label{E:physical-spectral-energy}
+    \mathcal{Q}_\Xi(g)
+    :=\int_{\R^3}\int_{\R^3}g(y+z)^2g(y)^2\ud y\,\Xi(\ud z)
+    =\int_{\R^3}|\widehat{g^2}(\xi)|^2\mu_\Xi(\ud\xi)<\infty.
+  \end{equation}
+  The physical expression is independent of the Borel representative of $g$.
+  There is a finite $C_0 \ge 0$, depending on $\Xi$, such that
+  \begin{equation}\label{E:energy-quartic-bound}
+    \mathcal{Q}_\Xi(g)
+    \le\frac12\|g\|_2^2\|\nabla g\|_2^2+C_0\|g\|_2^4.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We use the imported finiteness only on smooth profiles. Two distinct
+  Cauchy--Schwarz bounds control the physical and spectral approximation
+  errors. We then identify both strong limits and pass the quartic bound to
+  the full Sobolev class.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the smooth-profile energy bound.
+  Fourier uniqueness gives $\mu_\Xi(rA) = r^\chi\mu_\Xi(A)$. Since its unit-ball
+  mass is finite, the dyadic estimate with $\sum_{j\ge0}2^{j(\chi-2)}$ verifies
+  Dalang's condition. For a real Schwartz function $h$ put
+  \[
+    \mathscr{E}(h)=\int|\widehat{h}(\xi)|^2\mu_\Xi(\ud\xi),
+    \qquad Q(f)=\mathscr{E}(f^2).
+  \]
+  Schwartz Fourier pairing identifies $Q(f)$ with its ordinary positive-measure
+  integral. From the finiteness assertion in
+  Chen~\cite{chen:23:exponential}*{Theorem~1.1, closing sentence for the
+  variation in (1.5), p.~2}, restricted to real unit-$L^2$ Schwartz profiles,
+  there is $C_0 \ge 0$ such that $Q(g) \le \frac12\|\nabla g\|_2^2+C_0$ for
+  $\|g\|_2 = 1$. For $f \ne 0$, quartic homogeneity gives
+  \[
+    Q(f)=\|f\|_2^4Q(f/\|f\|_2)
+    \le\frac12\|f\|_2^2\|\nabla f\|_2^2+C_0\|f\|_2^4.
+  \]
+  The same inequality is immediate for $f = 0$. Only Schwartz pairings have been
+  used at this point, so this import presupposes no energy identification for
+  nonsmooth profiles. If $N(f)^2 = \|f\|_2^2+\|\nabla f\|_2^2$, it follows that
+  $Q(f)^{1/2} \le D N(f)^2$ for some finite $D$.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We estimate the two types of bilinear pairing.
+  We need two different Cauchy--Schwarz inequalities. For real Schwartz $f,h$,
+  spectral Cauchy--Schwarz gives
+  \[
+    \begin{split}
+      0\le P(f,h)
+      &:=\int\Xi(\ud z)\int f(y+z)^2h(y)^2\ud y\\
+      &=\int\widehat{f^2}(\xi)
+      \overline{\widehat{h^2}(\xi)}\mu_\Xi(\ud\xi)
+      \le Q(f)^{1/2}Q(h)^{1/2}.
+    \end{split}
+  \]
+  Evenness makes the Fourier sign convention in this real pairing immaterial. On
+  the other hand, Cauchy--Schwarz on the positive measure $\ud y\,\Xi(\ud z)$
+  gives
+  \[
+    \mathscr{E}(fh)
+    =\int\Xi(\ud z)\int
+    f(y+z)f(y)h(y+z)h(y)\ud y
+    \le Q(f)^{1/2}Q(h)^{1/2}.
+  \]
+  All these are absolutely convergent Schwartz pairings. In particular,
+  $\mathscr{E}(fh)$ is the quadratic energy of $fh$, not the quartic expression
+  $Q(fh)$.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We compare the physical and spectral approximation
+  maps.
+  Let $\mathfrak{m}(\ud y,\ud z) = \ud y\,\Xi(\ud z)$ and define
+  \[
+    A_f(y,z)=f(y+z)f(y),\qquad B_f(\xi)=\widehat{f^2}(\xi).
+  \]
+  The measure $\mathfrak{m}$ is positive and sigma-finite. The decomposition
+  \[
+    A_f-A_h=(f-h)(y+z)f(y)+h(y+z)(f-h)(y)
+  \]
+  and the bound for $P$ imply
+  \[
+    \|A_f-A_h\|_{L^2(\mathfrak{m})}
+    \le D\bigl(N(f)+N(h)\bigr)N(f-h).
+  \]
+  Since $f^2-h^2 = (f-h)(f+h)$, the bound for $\mathscr{E}$ gives
+  \[
+    \|B_f-B_h\|_{L^2(\mu_\Xi)}
+    \le D N(f-h)N(f+h)
+    \le D\bigl(N(f)+N(h)\bigr)N(f-h).
+  \]
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We identify their strong limits for a Sobolev
+  profile.
+  Choose real Schwartz $f_n \to g$ in $W^{1,2}$. These estimates make both
+  $A_{f_n}$ and $B_{f_n}$ Cauchy in their respective $L^2$ spaces. Pass to a
+  subsequence with $f_n \to g$ Lebesgue-almost everywhere. Translation
+  invariance of Lebesgue measure and sigma-finite Fubini give
+  \[
+    f_n(y+z)f_n(y)\longrightarrow g(y+z)g(y)
+    \quad\text{for }\mathfrak{m}\text{-almost every }(y,z).
+  \]
+  Thus, the strong $L^2(\mathfrak{m})$ limit is $A_g$. The same Fubini argument
+  shows that changing the Borel representative of $g$ does not change this
+  limit.
+
+  Also
+  \[
+    \|f_n^2-g^2\|_1
+    \le\|f_n-g\|_2(\|f_n\|_2+\|g\|_2)\longrightarrow0.
+  \]
+  Hence, $\widehat{f_n^2} \to \widehat{g^2}$ uniformly on all frequencies. A
+  subsequence of its strong $L^2(\mu_\Xi)$ limit converges $\mu_\Xi$-almost
+  everywhere, and must agree with this uniform limit. Consequently, that strong
+  limit is $B_g$. For every $n$, $\|A_{f_n}\|_{L^2(\mathfrak{m})}^2 = Q(f_n) =
+  \|B_{f_n}\|_{L^2(\mu_\Xi)}^2$. Passing to the strong limits proves
+  \eqref{E:physical-spectral-energy}, including finiteness. Passing the Schwartz
+  quartic bound to the same limit proves \eqref{E:energy-quartic-bound}. This
+  proves Lemma~\ref{L:physical-spectral-energy}.
+\end{proof}
+
+In particular, for $\|g\|_2 = 1$ the energy is at most $\|\nabla g\|_2^2/2+C_0$.
+Therefore, the supremum of $\mathcal{Q}_\Xi(g)^{1/2}-\|\nabla g\|_2^2$ is
+finite. Applied to $\Xi = \Gamma_{\rm st}$, the profile-by-profile identity
+justifies the measure-form functional in~\eqref{E:three-static-variational}
+without assigning a density to the covariance or borrowing a disputed
+special-case constant.
+
+
+\chapter{Static comparisons and the clock obstruction}\label{S:appendix-static-clock}
+
+\input{notes/chapter-guides/15-static-clock}
+
+\section{A static lower comparison and a near-static mean gap}
+\label{S:near-static-lower}
+
+The comparison in this section does not identify the intrinsic constant of
+Theorem~\ref{T:intrinsic-second-moment}; no novelty or numerical normalization
+is claimed.
+
+Fix a nonzero spatial covariance in Hypothesis~\ref{H:homog}, and put
+\[
+  \begin{gathered}
+    \nu=3-\alpha>1,\qquad a_{\max}=\min(1,2-\alpha),\qquad
+    \beta(a)=4-\alpha-a,\\
+    \kappa(a)=\frac{\beta(a)}\nu,\qquad
+    \kappa_{\rm st}=\frac{4-\alpha}\nu.
+  \end{gathered}
+\]
+Here the temporal exponent varies: $u^{(a)}$ denotes our canonical solution with
+covariance $|s-r|^{-a}\Gamma$, for $0 < a < a_{\max}$. At $a = 0$ define
+$u^{(0)} = U$ to be the static canonical solution with the same spatial
+covariance and initial data $(1,0)$. This endpoint means the temporal covariance
+one, not a substitution into $\Gamma_{\mathrm{E}}(a)$. The notation
+$\gamma_{\delta,a}^0$ records the temporal exponent $a$ in the same
+Laplace-prefix regularization previously denoted by $\gamma_\delta^0$.
+
+\paragraph{Imported static input.}
+From Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~1.2, (1.9), p.~2147}, the
+static first-mean rate $L_0$ exists and
+\begin{equation}\label{E:static-ratio-input}
+  0<L_0:=\lim_{t\to\infty}t^{-\kappa_{\rm st}}\log\E U(t,x)<\infty,
+  \qquad
+  \lim_{t\to\infty}t^{-\kappa_{\rm st}}\log\E U(t,x)^2
+  =2^{\kappa_{\rm st}}L_0.
+\end{equation}
+We use only the common $p^{\kappa_{\rm st}}$ factor for $p = 1,2$; no numerical
+value of the static variational constant or its white-noise specialization is
+adopted. Strict positivity in that formula follows by using a nonzero Gaussian
+competitor: its interaction and gradient terms scale as $A c^{\alpha/2}$ and $B
+c^2$, with $A,B > 0$, so their difference is positive for small $c$. Finiteness
+and the moment law are the imported source result. The static kernel and
+integral conventions are its (2.10)--(2.14), p.~2150; the fixed-order limits
+agree with its Theorem~3.8(i), p.~2165. We supply the static series convergence
+needed below from our regularized fractional-time upper bound, without using the
+source's quantitative (4.3). The generalized-covariance convention is explicit
+in its (2.18), p.~2152. Our spectral ball law gives
+\[
+  \int\frac{\mu(\ud\xi)}{1+|\xi|^2}
+  \le\mu(B_1)+C_\alpha\mu(B_1)\sum_{j\ge0}2^{j(\alpha-2)}<\infty.
+\]
+Thus, the static Dalang condition holds in every admissible dimension. Measure
+homogeneity of degree $d-\alpha$ is equivalent to distributional homogeneity of
+degree $-\alpha$, so the source's (1.8) applies in its explicit
+generalized-covariance convention. The static object is identified by its
+canonical heat-limit expansion; no uniqueness assertion for other mild solutions
+is used.
+
+For $a > 0$ write $X_n^{(a)}$ for our fixed-order terms; at zero use the
+corresponding static terms. Set
+\[
+  m_k(a)=\E X_{2k}^{(a)}(1,0),\qquad m_0(a)=1.
+\]
+
+\begin{lemma}[Mean coefficients for the power covariance]\label{L:mean-coefficient-holder}
+  For every $0 \le a < a_{\max}$, the coefficients $m_k(a)$ are nonnegative, and
+  \begin{equation}\label{E:mean-positive-series}
+    \E u^{(a)}(t,x)=\sum_{k\ge0}m_k(a)t^{\beta(a)k}.
+  \end{equation}
+  The series $F_a(z) = \sum_{k\ge0}m_k(a)z^k$ is finite for every $z \ge 0$. If
+  $0 < a < b < a_{\max}$, then
+  \begin{equation}\label{E:mean-coefficient-holder}
+    m_k(a)\le m_k(0)^{1-a/b}m_k(b)^{a/b},\qquad k\ge1.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We construct the static endpoint series using a regularized positive
+  comparison. We then interpolate single-chain coefficients on one common
+  spatial measure, remove the spatial width, and recover the mean series by
+  homogeneity.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the static fixed-order limits and
+  summable series.
+  We first justify the static endpoint and its norm series. At positive spatial
+  widths its ordered terms are the bounded-variance Gaussian Bochner integrals
+  of Lemma~\ref{L:terminal-wick}, with a time-constant field.
+  Lemma~\ref{L:spatial-wick-measures}, applied with temporal multiplier one to
+  the diagonal and mixed-width second moments, gives a common finite diagram
+  limit. The same Hilbert Cauchy argument as in Lemma~\ref{L:joint-fixed-order}
+  therefore gives the static fixed-order limits $X_n^{(0)}$, with the source's
+  heat-limit convention. This uses no infinite solution series.
+
+  Fix any $b_0 \in (0,a_{\max})$ and $\delta_0 > 0$, and put $c =
+  \gamma_{\delta_0,b_0}^0(1) > 0$. Let $U_N^\epsilon(r;1,x)$ be the static
+  partial series at horizon one and noise amplitude $r > 1$. Compare its finite
+  Wick sum with that of the fractional-time partial series at widths
+  $\epsilon,\delta_0$, exponent $b_0$ and amplitude $r/\sqrt c$. Since
+  $\gamma_{\delta_0,b_0}^0(s-r') \ge c$ for $s,r' \in [0,1]$, every pair factor
+  on the second side dominates the static pair factor. Positivity, then the full
+  regularized bound \eqref{E:regularized-scaled-moment}, gives
+  \[
+    \E|U_N^\epsilon(r;1,x)|^2
+    \le \E|u^{\epsilon,\delta_0}_{b_0}(r/\sqrt c;1,x)|^2
+    \le B_{b_0}(1;r/\sqrt c)<\infty,
+  \]
+  uniformly in $N,\epsilon$. The notation $B_{b_0}$ means the bound
+  in~\eqref{E:regularized-scaled-moment} at temporal exponent $b_0$. Both
+  positive-width full series exist by Lemma~\ref{L:terminal-wick}. Letting $N
+  \to \infty$ at fixed $\epsilon$ preserves this bound.
+  Lemma~\ref{L:uniform-series-tail} now applies to the static family (with only
+  the spatial width varying). It proves absolute $L^2$ convergence of its
+  limiting series at horizon one, with geometric coefficient bounds for every $r
+  > 1$. Static fixed-order homogeneity gives
+  \[
+    \|X_n^{(0)}(t,x)\|_2
+    =t^{(4-\alpha)n/2}\|X_n^{(0)}(1,0)\|_2.
+  \]
+  Choosing $r > \max\{1,t^{(4-\alpha)/2}\}$ in those bounds proves norm
+  summability at every fixed $t > 0$. The resulting series has precisely the
+  source's canonical static kernels and fixed-order limits.
+
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We interpolate the temporal powers at fixed
+  spatial smoothing.
+  For a single chain of length $2k$, use the initial-chain variables of
+  Proposition~\ref{P:mixed}. At common positive spatial width $\epsilon$, let
+  $\omega_{\epsilon,D}$ be its finite positive spatial Green--Wick measure on
+  the unit time simplex, with covariance $\gamma_{2\epsilon}$ on every pair. It
+  is finite because that covariance is bounded and the Green masses are the time
+  gaps. Define
+  \[
+    m_k^\epsilon(a)=\sum_{D\in\Pi_k}\int
+    \prod_{\{j,h\}\in D}|s_j-s_h|^{-a}\ud\omega_{\epsilon,D},
+    \qquad 0\le a<a_{\max}.
+  \]
+  These time integrals for the power covariance are finite. At fixed $\epsilon$
+  the spatial factors and Green masses are bounded on the finite horizon; the
+  disjoint pair endpoints give integrable powers on the full time cube since $a
+  < 1$. Diagonals are null there. On the disjoint union of the pairing measures,
+  the time multiplier at $a$ is exactly the $a/b$ power of its multiplier at
+  $b$. H\"older's inequality therefore gives
+  \[
+    m_k^\epsilon(a)\le
+    m_k^\epsilon(0)^{1-a/b}m_k^\epsilon(b)^{a/b}.
+  \]
+  This is an identity for the power covariance; no exponent-dependent Laplace
+  cutoff or Euler Gamma normalization is being interpolated.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We remove the common spatial width.
+  We justify removal of the common spatial width. For each positive exponent,
+  the proof of Lemma~\ref{L:joint-fixed-order} gives this limit with the power
+  covariance as well. Indeed, writing $F_{\epsilon,\eta,D}$ for the diagram with
+  common temporal cutoff $\eta$, \eqref{E:joint-temporal-tail} gives
+  \[
+    F_{\epsilon,\eta,D}\le F_{\epsilon,0,D}
+    \le F_{\epsilon,\eta,D}+r_a(\eta),\qquad r_a(\eta)\longrightarrow0,
+  \]
+  uniformly in $\epsilon$. First pass to the spatial limit at fixed $\eta$, then
+  send $\eta$ to zero. The resulting limit is exactly the joint diagram value
+  from that lemma. At zero exponent the multiplier is one, so
+  Lemma~\ref{L:spatial-wick-measures} gives the spatial limit directly; the
+  positive-width Wick calculation and the imported static fixed-order
+  convergence identify it with the static expectation. Thus, $m_k^\epsilon(a)
+  \to m_k(a)$ at all three fixed exponents $0,a,b$,
+  proving~\eqref{E:mean-coefficient-holder} and nonnegativity. No convergence
+  uniform in $a$ is claimed.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We identify the homogeneous positive mean series.
+  Scaling all times and spatial displacements by $t$ in a regularized one-chain
+  diagram gives the factor $t^{2(2k)-\alpha k-ak} = t^{\beta(a)k}$ and changes
+  the spatial width to $\epsilon/t^2$. Passing to the just established limits
+  proves $\E X_{2k}^{(a)}(t,x) = t^{\beta(a)k}m_k(a)$. Odd expectations vanish
+  by Wick's formula. For positive $a$ the independently proved norm summability
+  in Lemma~\ref{L:vertex-crude} justifies the mean-series interchange. At zero
+  the static norm series just proved does so, with nonnegative even means. This
+  proves \eqref{E:mean-positive-series}. Since $\beta(a) > 0$, every $z \ge 0$
+  equals $t^{\beta(a)}$ for some $t \ge 0$, and the series is finite. This
+  proves Lemma~\ref{L:mean-coefficient-holder}.
+\end{proof}
+
+\LeanMarker{L:positive-series-type}
+\begin{lemma}[Type of a positive coefficient series]\label{L:positive-series-type}
+  Let $\nu \ge 1$, $c_k \ge 0$, $c_0 = 1$, and suppose $F(z) =
+  \sum_{k\ge0}c_kz^k < \infty$ for every $z \ge 0$. If
+  \[
+    \tau=\limsup_{z\to\infty}z^{-1/\nu}\log F(z)<\infty,
+  \]
+  then
+  \begin{equation}\label{E:positive-series-type}
+    K:=\limsup_{k\to\infty}\big((k!)^\nu c_k\big)^{1/k}<\infty,
+    \qquad \tau=\nu K^{1/\nu}.
+  \end{equation}
+  Conversely, finite $K$ implies the same finite $\tau$ and equality.
+\end{lemma}
+
+\begin{proof}
+  We first bound each coefficient by evaluating the positive series at an
+  order-dependent argument. Conversely, a finite coefficient type gives an
+  exponential series bound after keeping finitely many low orders separately.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We pass from growth type to coefficient type.
+  If $\tau < \infty$, choose $L > \tau$. Since $c_0 = 1$, $\tau \ge 0$, and
+  continuity of the power series on compact positive intervals gives $F(z) \le
+  C_L e^{Lz^{1/\nu}}$ for all $z \ge 0$. For $k \ge 1$, the inequality $c_kz^k
+  \le F(z)$ at $z = (\nu k/L)^\nu$ yields
+  \[
+    c_k\le C_L e^{\nu k}\left(\frac L{\nu k}\right)^{\nu k}.
+  \]
+  Monotonicity of $\log x$ and integration on $[1,k]$ give
+  \[
+    k\log k-k+1\le\log(k!)
+    \le k\log k-k+1+\log k.
+  \]
+  Consequently, $K \le (L/\nu)^\nu$. Letting $L\downarrow\tau$ proves $K \le
+  (\tau/\nu)^\nu$, including $K = 0$ when $\tau = 0$.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We recover growth type from the coefficient bound.
+  Conversely, for any $A > K$ all sufficiently large coefficients obey $c_k \le
+  A^k/(k!)^\nu$. Hence, for a polynomial $P$ with nonnegative coefficients,
+  \[
+    F(z)\le P(z)+\sum_{k\ge0}\frac{(Az)^k}{(k!)^\nu}
+    \le P(z)+\exp\{\nu(Az)^{1/\nu}\}.
+  \]
+  The last inequality is the elementary $\ell^\nu$ bound $\sum a_k^\nu \le (\sum
+  a_k)^\nu$, applied to $a_k = (Az)^{k/\nu}/k!$. The polynomial contributes zero
+  to the normalized logarithmic growth. Therefore, $\tau \le \nu A^{1/\nu}$; let
+  $A\downarrow K$. Combining both inequalities proves the equality when either
+  quantity is finite. This proves Lemma~\ref{L:positive-series-type}.
+\end{proof}
+
+\begin{proposition}[Static temporal-minimum comparison]\label{P:static-minorant-lower}
+  For every $0 < a < a_{\max}$, $T > 0$ and $p \in \{1,2\}$,
+  \begin{equation}\label{E:static-minorant-moment}
+    \E[u^{(a)}(T,x)^p]
+    \ge\E\left[U\left(T^{1-a/(4-\alpha)},x\right)^p\right].
+  \end{equation}
+  In particular,
+  \begin{equation}\label{E:static-minorant-rate}
+    \liminf_{T\to\infty}T^{-\kappa(a)}\log\E[u^{(a)}(T,x)^p]
+    \ge p^{\kappa_{\rm st}}L_0,\qquad p=1,2.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  We compare finite regularized moments with a static model using the minimum
+  temporal covariance on the horizon. We remove regularizations at fixed
+  order, sum, and then identify the static effective time.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We compare the finite expected powers at positive
+  widths.
+  Fix positive common spatial and temporal noise widths $\epsilon,\delta$. On
+  $[0,T]$, the source's Laplace-prefix temporal covariance satisfies
+  \[
+    \gamma_{\delta,a}^0(s-r)\ge c_{\delta,T}:=
+    \gamma_{\delta,a}^0(T)>0,\qquad
+    c_{\delta,T}\longrightarrow T^{-a}\quad(\delta\downarrow0).
+  \]
+  Compare the order-$N$ partial series of $u^{(a)}$ with the same partial series
+  of a static model having covariance $c_{\delta,T}\gamma_{2\epsilon}$. At
+  positive widths, the mean or squared moment is a finite Wick sum of the same
+  terminal Green kernels and pairings. Every spatial factor is the same
+  nonnegative $\gamma_{2\epsilon}$; every time factor on the first side is at
+  least $c_{\delta,T}$. Thus, the finite expected powers are ordered for $p =
+  1,2$. For $d = 3$, remove Green smoothing first at these fixed positive noise
+  widths using the bounded covariance calculation preceding
+  Lemma~\ref{L:spatial-wick-measures}.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We pass fixed-order limits and the convergent
+  series.
+  Now send $(\epsilon,\delta)$ jointly to zero at fixed $N$.
+  Lemma~\ref{L:joint-fixed-order} gives the fractional-time $L^2$ limits. Static
+  fixed-order $L^2$ convergence gives all static split products in $L^1$, by
+  Cauchy--Schwarz. Dependence on $c_{\delta,T}$ is a finite polynomial at fixed
+  order, so its limit is the static model with noise amplitude $\sigma =
+  T^{-a/2}$. This requires no uniform approximation in $T$ or in a varying
+  infinite-order series. At every fixed $\sigma,T > 0$, static norm homogeneity
+  gives
+  \[
+    \sigma^n\|X_n^{(0)}(T,x)\|_2
+    =\|X_n^{(0)}(\sigma^{2/(4-\alpha)}T,x)\|_2.
+  \]
+  Thus, the amplitude-scaled static norm series is summable at the effective
+  time already covered by Lemma~\ref{L:mean-coefficient-holder}. Finally, let $N
+  \to \infty$ using the two $L^2$ expansions, with the static one supplied in
+  Lemma~\ref{L:mean-coefficient-holder}. Means and squared moments converge,
+  preserving the finite-order inequality. No covariance-order coupling of the
+  two Gaussian fields is asserted.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify the static amplitude clock and its
+  rate.
+  Write $U_\sigma$ for the static solution with noise amplitude $\sigma$. In its
+  $p$th moment, a total order $2k$ has amplitude factor $\sigma^{2k}$ and, by
+  static diagram homogeneity, time factor $T^{(4-\alpha)k}$. For $p = 1,2$, the
+  finite sums and then the convergent nonnegative moment series therefore give
+  the exact identity
+  \[
+    \E[U_\sigma(T,x)^p]
+    =\E[U(\sigma^{2/(4-\alpha)}T,x)^p].
+  \]
+  Only moments are identified; no spatially indexed random fields are coupled.
+  At $\sigma = T^{-a/2}$ this proves \eqref{E:static-minorant-moment}. The
+  effective static time tends to infinity and
+  \[
+    \left(T^{1-a/(4-\alpha)}\right)^{\kappa_{\rm st}}
+    =T^{\kappa(a)}.
+  \]
+  The imported static rates~\eqref{E:static-ratio-input} now prove
+  \eqref{E:static-minorant-rate}. This proves
+  Proposition~\ref{P:static-minorant-lower}.
+\end{proof}
+
+\begin{proposition}[Near-static strict gap from the mean rate]
+  \label{P:near-static-mean-gap}
+  Define
+  \[
+    M(a)=\limsup_{T\to\infty}T^{-\kappa(a)}\log\E u^{(a)}(T,x),\qquad
+    K(a)=\limsup_{k\to\infty}\big((k!)^\nu m_k(a)\big)^{1/k}.
+  \]
+  Then $K(0) = (L_0/\nu)^\nu > 0$, and $K(b) < \infty$ for every $0 < b <
+  a_{\max}$. Fix such a $b$ and choose any finite $B_b \ge \max\{2K(0),K(b)\}$.
+  For $0 < a < b$,
+  \begin{equation}\label{E:near-static-mean-upper}
+    M(a)\le L_0\left(\frac{B_b}{K(0)}\right)^{a/(b\nu)}.
+  \end{equation}
+  In particular, with
+  \begin{equation}\label{E:near-static-window}
+    a_*:=\frac{b\log2}{\log(B_b/K(0))}\in(0,b],
+  \end{equation}
+  every $0 < a < a_*$ satisfies
+  \begin{equation}\label{E:near-static-mean-gap}
+    \liminf_{T\to\infty}T^{-\kappa(a)}\log\E[u^{(a)}(T,x)^2]
+    >2M(a).
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  We convert mean growth rates into coefficient types. Coefficient
+  interpolation then bounds the positive-exponent mean rate, and the static
+  lower comparison gives the strict gap on the stated window.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify finite endpoint coefficient types.
+  By Lemma~\ref{L:mean-coefficient-holder}, the substitution $z = T^{\beta(a)}$
+  identifies the normalized logarithmic type of $F_a(z)$ with the mean limsup
+  $M(a)$; at zero it equals $L_0$. The imported static law and
+  Lemma~\ref{L:positive-series-type} give $K(0) = (L_0/\nu)^\nu$. For positive
+  $b$, Cauchy--Schwarz and Theorem~\ref{T:full-upper}, applied at temporal
+  exponent $b$, give $M(b) < \infty$. The same type lemma therefore gives $K(b)
+  < \infty$. There is no use of a printed first-moment rate constant.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We interpolate the coefficient types and apply the
+  static lower rate.
+  Multiplying~\eqref{E:mean-coefficient-holder} by $(k!)^\nu$, taking $k$th
+  roots and then limsups yields
+  \[
+    K(a)\le K(0)^{1-a/b}B_b^{a/b}.
+  \]
+  To justify this even if coefficients vanish, for any $\eta > 0$ both endpoint
+  root sequences are eventually bounded by $K(0)+\eta$ and $B_b+\eta$; take
+  their weighted product and then let $\eta\downarrow0$.
+  Lemma~\ref{L:positive-series-type} now gives
+  \[
+    M(a)=\nu K(a)^{1/\nu}
+    \le L_0\left(\frac{B_b}{K(0)}\right)^{a/(b\nu)},
+  \]
+  proving~\eqref{E:near-static-mean-upper}. Since $B_b/K(0) \ge 2$, the window
+  in~\eqref{E:near-static-window} is positive and at most $b$. For $0 < a <
+  a_*$,
+  \[
+    2M(a)<2L_0\cdot2^{1/\nu}
+    =2^{\kappa_{\rm st}}L_0,
+  \]
+  because $\kappa_{\rm st} = 1+1/\nu$. Combine this with
+  Proposition~\ref{P:static-minorant-lower} at $p = 2$. This proves
+  Proposition~\ref{P:near-static-mean-gap}.
+\end{proof}
+
+\begin{remark}[Scope and calibrations]\label{R:near-static-scope}
+  The static lower comparison holds at every admissible positive temporal
+  exponent; the strict gap from twice the first-moment limsup is asserted only
+  in the nonempty window~\eqref{E:near-static-window}. Its endpoint depends on
+  the fixed covariance and the chosen reference exponent $b$; no uniformity over
+  covariance shapes is claimed. As $a\downarrow0$, the comparison clock has
+  exponent tending to one, the growth exponent tends to $\kappa_{\rm st}$, and
+  the mean upper bound tends to $L_0$. The static second-moment constant is
+  exactly $2^{\kappa_{\rm st}}L_0$.
+
+  The gap concerns $\E u$, which is positive by its pairing series; no theorem
+  for $\E|u|$ or all moment orders is asserted. If an intended source first-mean
+  lower rate $L_*(a)$ is valid, then $L_*(a) \le M(a)$,
+  so~\eqref{E:near-static-mean-gap} also improves the corresponding Jensen rate
+  $2L_*(a)$ in this window. This does not establish the original lower target
+  $2^{\kappa_{\rm st}}L_*(a)$, or either sharp bound for arbitrary $a$. The
+  intrinsic formula in Theorem~\ref{T:intrinsic-second-moment} does not
+  identify either printed source endpoint. The proof here uses the ordinary
+  Stratonovich pairing expansion, including self-contractions; no Skorohod
+  result or sibling-project development is made.
+\end{remark}
+
+
+\subsection{Temporal interpolation of the full moment}
+\label{S:temporal-type-continuity}
+
+The constant at a fixed positive temporal exponent is identified  in
+Theorem~\ref{T:intrinsic-second-moment}.
+
+Retain the fixed nonzero covariance and the notation of this section. For
+\(p=1,2\), set \(c_{p,0}(a)=1\) and, for \(k\ge1\),
+\begin{equation}\label{E:full-moment-coefficients}
+  c_{1,k}(a)=m_k(a),\qquad
+  c_{2,k}(a)=\sum_{m=0}^{2k}
+  \E[X_m^{(a)}(1,0)X_{2k-m}^{(a)}(1,0)].
+\end{equation}
+The zero-exponent terms are the static limits constructed in
+Lemma~\ref{L:mean-coefficient-holder}.
+
+\begin{lemma}[Interpolation of the full moment coefficients]
+  \label{L:full-moment-coefficient-holder}
+  For \(0\le a<a_{\max}\) and \(p=1,2\), the coefficients are nonnegative and
+  \begin{equation}\label{E:full-moment-positive-series}
+    \E[u^{(a)}(t,x)^p]
+    =\sum_{k\ge0}c_{p,k}(a)t^{\beta(a)k}<\infty,\qquad t>0.
+  \end{equation}
+  If \(0\le a_1<a<a_2<a_{\max}\) and \(\theta=(a-a_1)/(a_2-a_1)\), then
+  \begin{equation}\label{E:full-moment-coefficient-holder}
+    c_{p,k}(a)\le
+    c_{p,k}(a_1)^{1-\theta}c_{p,k}(a_2)^\theta,\qquad k\ge0.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We interpolate the full coefficient sum at common spatial smoothing,
+  retaining all splits. We then identify each endpoint limit and use diagram
+  homogeneity to obtain the full positive moment series.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We place the mean and second-moment diagrams on
+  their common measures.
+  Work first at a common positive spatial noise width \(\epsilon\) and at unit
+  horizon. For each split \(m+n=2k\) and pairing \(D\), let
+  \(\omega_{\epsilon,m,n,D}\) be the finite positive spatial Green--Wick measure
+  in the initial-chain convention of Proposition~\ref{P:mixed}, with covariance
+  \(\gamma_{2\epsilon}\). For \(p=1\) take the disjoint union over the single
+  specified split \((m,n)=(0,2k)\) and all pairings. For \(p=2\), take the
+  disjoint union over every \(m=0,\ldots,2k\) and all pairings. In particular,
+  the two empty-chain orientations are distinct terms for \(p=2\), whereas
+  \(p=1\) has just one. Wick's formula has coefficient one for each pairing on
+  each ordered domain.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We interpolate the temporal power factors.
+  With \(\omega_{\epsilon,p,k}\) denoting this disjoint-union measure, define
+  its time integral for the power covariance by
+  \[
+    c_{p,k}^{\epsilon}(a)=
+    \int \prod_{\{j,h\}\in D}|s_j-s_h|^{-a}
+    \ud\omega_{\epsilon,p,k}.
+  \]
+  The pairing label in the multiplier is that of its component. These integrals
+  are finite: the spatial covariances and Green masses are bounded on the unit
+  horizons, and the disjoint pair endpoints give integrable factors on the full
+  time cube since \(a<1\). The multiplier at \(a\) is exactly the product of the
+  endpoint multipliers to powers \(1-\theta,\theta\), off null diagonals.
+  Hölder's inequality on the disjoint union gives
+  \[
+    c_{p,k}^{\epsilon}(a)\le
+    c_{p,k}^{\epsilon}(a_1)^{1-\theta}
+    c_{p,k}^{\epsilon}(a_2)^\theta.
+  \]
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify all fixed-order limits.
+  For each fixed positive endpoint, the all-chain bound
+  \eqref{E:joint-temporal-tail} and the common temporal-cutoff sandwich used in
+  Lemma~\ref{L:mean-coefficient-holder} identify the time-domain spatial limit
+  with the joint diagram value. This applies to every unequal or empty split,
+  not only to a mean diagram. At exponent zero, the multiplier is one and
+  Lemma~\ref{L:spatial-wick-measures} gives the same limit. The static diagonal
+  and mixed-width Gaussian limits identify those diagram values with the split
+  expectations of the constructed static terms: products converge in \(L^1\) by
+  Cauchy--Schwarz, and the terminal-to-initial chain reversal is the one in
+  Proposition~\ref{P:mixed}, applied before removing widths. For positive
+  exponents this identification is Proposition~\ref{P:mixed}. The union is
+  finite at fixed \(k\); passing to the spatial limit proves
+  \eqref{E:full-moment-coefficient-holder} and nonnegativity. No interpolation
+  of exponent-dependent Laplace prefixes is used.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We use homogeneity and the convergent moment
+  series.
+  Every diagram has \(2k\) time Jacobians, \(2k\) Green scaling factors, \(k\)
+  spatial covariance factors and \(k\) temporal factors. Thus, its homogeneous
+  time degree is \(4k-\alpha k-ak=\beta(a)k\), including both empty-chain cases.
+  For positive \(a\), the full second-moment series follows from
+  Proposition~\ref{P:mixed}; the mean series is \eqref{E:mean-positive-series}.
+  At zero, the static norm series gives convergence of the finite partial means
+  and squared moments. Each finite moment expansion has nonnegative mixed terms,
+  so its increasing limit may be regrouped by total order \(2k\). The
+  homogeneity just proved then gives~\eqref{E:full-moment-positive-series}. This
+  proves Lemma~\ref{L:full-moment-coefficient-holder}.
+\end{proof}
+
+For \(p=1,2\) define the normalized time growth rates
+\begin{equation}\label{E:moment-growth-types}
+  \begin{split}
+    \overline{\Lambda}_p(a)&=\limsup_{T\to\infty}
+    T^{-\kappa(a)}\log\E[u^{(a)}(T,x)^p],\\
+    \underline{\Lambda}_p(a)&=\liminf_{T\to\infty}
+    T^{-\kappa(a)}\log\E[u^{(a)}(T,x)^p].
+  \end{split}
+\end{equation}
+Here \(p=1\) concerns \(\E u\), not \(\E|u|\).
+
+\LeanMarker{P:moment-growth-logconvex}
+\begin{proposition}[Log-convexity of the upper growth type]
+  \label{P:moment-growth-logconvex}
+  The functions \(\overline{\Lambda}_p(a)\), \(p=1,2\), are positive and finite
+  on \(0\le a<a_{\max}\). For the endpoints and \(\theta\) in
+  Lemma~\ref{L:full-moment-coefficient-holder},
+  \begin{equation}\label{E:moment-growth-logconvex}
+    \overline{\Lambda}_p(a)\le
+    \overline{\Lambda}_p(a_1)^{1-\theta}
+    \overline{\Lambda}_p(a_2)^\theta .
+  \end{equation}
+  In particular, \(\log\overline{\Lambda}_p\) is convex and
+  \(\overline{\Lambda}_p\) is continuous on \((0,a_{\max})\).
+\end{proposition}
+
+\begin{proof}
+  We establish that all rates are positive and finite, convert coefficient
+  interpolation into growth-type interpolation, and then use convex secant
+  slopes to obtain interior continuity.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We verify positivity and finiteness of the rates.
+  Put \(C_p=p^{\kappa_{\rm st}}L_0>0\). The imported static law gives
+  \(\overline{\Lambda}_p(0)=\underline{\Lambda}_p(0)=C_p\).
+  Proposition~\ref{P:static-minorant-lower} gives \(\underline{\Lambda}_p(a)\ge
+  C_p\) for positive \(a\). The full upper bound gives finiteness for \(p=2\).
+  Cauchy--Schwarz gives finiteness for \(p=1\), whose mean is at least one by
+  its positive series. Hence, all logarithms and rates used here are well
+  defined, positive and finite.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We transfer coefficient interpolation to the
+  logarithmic type.
+  Let \(F_{p,a}(z)=\sum_{k\ge0}c_{p,k}(a)z^k\). It is finite for every
+  \(z\ge0\), by Lemma~\ref{L:full-moment-coefficient-holder}. Its normalized
+  logarithmic type equals \(\overline{\Lambda}_p(a)\): spatial stationarity
+  makes the moment independent of \(x\), while \(z=T^{\beta(a)}\) and
+  \(z^{1/\nu}=T^{\kappa(a)}\). Lemma~\ref{L:positive-series-type} therefore
+  gives
+  \[
+    K_p(a):=\limsup_{k\to\infty}
+    \big((k!)^\nu c_{p,k}(a)\big)^{1/k}
+    =\left(\frac{\overline{\Lambda}_p(a)}{\nu}\right)^\nu.
+  \]
+  Multiplying the coefficient interpolation by \((k!)^\nu\), taking \(k\)th
+  roots and then limsups gives
+  \[
+    K_p(a)\le K_p(a_1)^{1-\theta}K_p(a_2)^\theta.
+  \]
+  More explicitly, the two endpoint root sequences are eventually bounded by
+  \(K_p(a_i)+\eta\); let \(\eta\downarrow0\) after taking their weighted
+  product. This argument permits zero or oscillating coefficient subsequences.
+  Taking the \(1/\nu\) power and multiplying by \(\nu\)
+  proves~\eqref{E:moment-growth-logconvex}.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We obtain continuity from the convex slope bounds.
+  For completeness, continuity follows directly from secant slopes. Write
+  \(f=\log\overline{\Lambda}_p\). If \(L<l\le x<y\le r<R\) are in
+  \((0,a_{\max})\), convexity gives
+  \[
+    \frac{f(l)-f(L)}{l-L}\le
+    \frac{f(y)-f(x)}{y-x}\le
+    \frac{f(R)-f(r)}{R-r}.
+  \]
+  Both outer slopes are finite. They bound the absolute difference quotient on
+  each compact interior interval, proving continuity of \(f\), and hence of its
+  exponential. This proves Proposition~\ref{P:moment-growth-logconvex}.
+\end{proof}
+
+\LeanMarker{C:static-moment-constant-continuity}
+\begin{corollary}[Recovery of the static moment constant]
+  \label{C:static-moment-constant-continuity}
+  Put \(C_p=p^{\kappa_{\rm st}}L_0\), \(p=1,2\). For every fixed
+  \(0<b<a_{\max}\) and \(0<a<b\),
+  \begin{equation}\label{E:static-constant-envelope}
+    C_p\le\underline{\Lambda}_p(a)\le\overline{\Lambda}_p(a)
+    \le C_p\left(\frac{\overline{\Lambda}_p(b)}{C_p}\right)^{a/b}.
+  \end{equation}
+  Consequently,
+  \begin{equation}\label{E:static-constant-continuity}
+    \lim_{a\downarrow0}\underline{\Lambda}_p(a)
+    =\lim_{a\downarrow0}\overline{\Lambda}_p(a)=C_p,\qquad p=1,2,
+  \end{equation}
+  and
+  \begin{equation}\label{E:static-moment-ratio-continuity}
+    \lim_{a\downarrow0}
+    \frac{\underline{\Lambda}_2(a)}{\overline{\Lambda}_1(a)}
+    =2^{\kappa_{\rm st}}.
+  \end{equation}
+\end{corollary}
+
+\begin{proof}
+  The lower estimate is Proposition~\ref{P:static-minorant-lower}. For the upper
+  estimate, apply Proposition~\ref{P:moment-growth-logconvex} with endpoints
+  \(0,b\), using \(\overline{\Lambda}_p(0)=C_p\). This
+  proves~\eqref{E:static-constant-envelope}. The finite ratio
+  \(\overline{\Lambda}_p(b)/C_p\) is at least one. With \(b\) and the covariance
+  fixed, its \(a/b\) power tends to one. Squeezing both rates
+  proves~\eqref{E:static-constant-continuity}. The numerator and denominator
+  in~\eqref{E:static-moment-ratio-continuity} tend to \(2^{\kappa_{\rm st}}L_0\)
+  and \(L_0>0\), respectively. Division gives the asserted ratio. This proves
+  Corollary~\ref{C:static-moment-constant-continuity}.
+\end{proof}
+
+\begin{remark}[Order of limits and comparison with the intrinsic constant]
+  \label{R:temporal-type-scope}
+  The static calibration now concerns the constant, not only the time exponent.
+  It is an iterated statement: first take a time liminf or limsup at each fixed
+  \(a\), with its own normalization \(T^{-\kappa(a)}\), and then send
+  \(a\downarrow0\). No uniformity over covariances or \(T\), no simultaneous
+  limit, and no existence of the time limit at a fixed positive \(a\) follows.
+  Only the upper rate is asserted to be log-convex on the interior.
+
+  Neither \(L_*(a)\) nor \(L^*(a)\) enters this argument. The constant \(L_0\)
+  is the static first-mean rate. Parameter continuity alone does not identify
+  the conjectured curve. The separate intrinsic second-moment value is proved in
+  Theorem~\ref{T:intrinsic-second-moment}. No all-\(p\), absolute-first-moment,
+  Skorohod, novelty or circulation result is claimed.
+\end{remark}
+
+\section{A small-order test for direct Brownian clock copying}
+\label{S:two-clock-screen}
+
+The result concerns a specified gap-transform substitution. It does not rule out
+ordering corrections, a diagonal-only representation, one-sided/asymptotic use,
+or the original sharp conjecture.
+
+Theorem~6.1 of~\cite{chen:author2026:time-dependency}*{pp.~37--42} represents
+the time Laplace transform of a \emph{fixed-order} mean by a spatial Brownian
+path and an independent scalar Brownian clock. The proof uses nonnegative cut
+sums \(c_l\), obtained from one-chain time order on p.~38, before the
+wave-to-heat substitution on p.~39. Remark~6.3, p.~42, singles out that order as
+the obstruction for more copies. We test the direct replacement by two spatial
+Brownian paths and two scalar Brownian clocks, without an additional ordering
+weight.
+
+All transforms below are at fixed total order. We begin with the original
+admissible case \(d=\alpha=1\), \(\Gamma=\delta_0\), \(0<a<1\), and
+\(G_s(y)=\frac12\mathbf1_{\{|y|<s\}}\). This is a falsification case for an
+intended general representation, not a restriction of Theorem~\ref{T:intro-second-moment}.
+
+\LeanMarker{L:white-clock-laplace}
+\begin{lemma}[White-space low-order Laplace transforms]
+  \label{L:white-clock-laplace}
+  The \((1,1)\) cross-pair gap transform is
+  \begin{equation}\label{E:white-cross-clock-transform}
+    \begin{split}
+      K_\times(\theta_1,\theta_2)
+      &:=\int_0^\infty\int_0^\infty
+      e^{-\theta_1s-\theta_2t}|s-t|^{-a}
+      \frac{\min(s,t)}2\ud s\ud t\\
+      &=\frac{\Gamma_{\mathrm{E}}(1-a)}
+      {2(\theta_1+\theta_2)^2}
+      \big(\theta_1^{a-1}+\theta_2^{a-1}\big),
+      \qquad \theta_1,\theta_2>0.
+    \end{split}
+  \end{equation}
+  In particular, \(K_\times(\theta,\theta)=
+  \Gamma_{\mathrm{E}}(1-a)/(4\theta^{3-a})\). For the empty-plus-length-two
+  self-pair, independent gap damping gives
+  \begin{equation}\label{E:white-self-clock-transform}
+    K_{\rm self}(\eta_1,\eta_2)
+    :=\int_0^\infty\int_0^\infty
+    e^{-\eta_1r_1-\eta_2r_2}r_2^{-a}\frac{r_1}2
+    \ud r_1\ud r_2
+    =\frac{\Gamma_{\mathrm{E}}(1-a)}
+    {2\eta_1^2\eta_2^{1-a}}.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We compute the cross-pair transform by splitting its time domain into two
+  cones, then evaluate the independent gap integrals for the self-pair.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We compute the cross-pair Laplace transform.
+  The spatial cross factor is
+  \[
+    \int G_s(y)G_t(z)\delta_0(y-z)\ud y\ud z
+    =\frac14\int\mathbf1_{\{|y|<s\wedge t\}}\ud y
+    =\frac{\min(s,t)}2.
+  \]
+  Split its time integral into \(s=t+v\) and \(t=s+v\), with \(v>0\). Each part
+  is one half the product of
+  \[
+    \int_0^\infty t e^{-(\theta_1+\theta_2)t}\ud t
+    =(\theta_1+\theta_2)^{-2}
+  \]
+  and \(\int_0^\infty e^{-\theta_i v}v^{-a}\ud v
+  =\Gamma_{\mathrm{E}}(1-a)\theta_i^{a-1}\). All integrands are nonnegative and
+  finite since \(a<1\), so Tonelli justifies the separation. This proves
+  \eqref{E:white-cross-clock-transform}.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We compute the self-pair gap transform.
+  For one length-two chain, its delta covariance forces the two positions equal.
+  The second Green factor is \(G_{r_2}(0)=1/2\), and integration of the first
+  gives mass \(r_1\). The time difference is \(r_2\). The two elementary Laplace
+  integrals therefore give \eqref{E:white-self-clock-transform}. This proves
+  Lemma~\ref{L:white-clock-laplace}.
+\end{proof}
+
+The source's analytic time covariance is
+\[
+  \gamma_a^{\rm an}(z)
+  =\big(z\,\operatorname{sgn}\Re z\big)^{-a},\qquad \Re z\ne0,
+\]
+with the power taken on the right half-plane. For \(r>0,v\ge0\), put
+\begin{equation}\label{E:averaged-clock-kernel}
+  \Psi_a(r,v)=\frac1{\Gamma_{\mathrm{E}}(a)}
+  \int_0^\infty \lambda^{a-1}e^{-r\lambda-v\lambda^2/2}\ud\lambda.
+\end{equation}
+From the source's complex Laplace identity
+\cite{chen:author2026:time-dependency}*{(6.3), p.~41}, and the Gaussian
+characteristic function, \(\Psi_a(r,v)=\E(r+iZ)^{-a}\) when \(Z\) is centered
+normal with variance \(v\). Fubini at fixed \(r>0\) is justified by
+\(\int_0^\infty\lambda^{a-1}e^{-r\lambda}\ud\lambda<\infty\). In particular,
+\(\Psi_a\) is nonnegative, decreases with \(v\), and \(\Psi_a(r,v)\le r^{-a}\).
+
+Return to an arbitrary nonzero covariance in Hypothesis~\ref{H:homog}, with
+temporal exponent \(a\), so \(0<a<1\), \(0<\alpha<2\) and \(a+\alpha<2\). Define
+\[
+  h_\Gamma(w)=\int e^{-w|\xi|^2/2}\mu(\ud\xi)
+  =(p_w*\Gamma)(0),\qquad
+  \mathcal{R}_\Gamma(q)=\int\frac{\mu(\ud\xi)}{q^2+|\xi|^2}.
+\]
+Both are positive and finite for \(w,q>0\). Spectral homogeneity gives
+\(h_\Gamma(w)=w^{-\alpha/2}h_\Gamma(1)\) and
+\(\mathcal{R}_\Gamma(q)=q^{\alpha-2}\mathcal{R}_\Gamma(1)\). The cross-pair gap
+transform at common damping is
+\[
+  K_\Gamma(\theta)=N_2(\theta)^2
+\]
+with temporal exponent \(a\) in~\eqref{E:damped-norm-definitions}. This is the
+spatial-regularization limit of the \((1,1)\) diagram.
+
+Let \(B_1,B_2\) be independent spatial standard Brownian motions. For auxiliary
+standard Brownian clocks with \(\E[\beta_1(u)\beta_2(v)]=\rho\min(u,v)\),
+\(-1\le\rho\le1\), independent of the spatial paths, the clock difference has
+variance
+\[
+  v_\rho(u,v)=u+v-2\rho\min(u,v).
+\]
+At common damping \(\theta>0\), the direct unweighted, unrestricted two-clock
+covariance substitution yields the averaged candidate
+\begin{equation}\label{E:naive-clock-candidate}
+  J_{\Gamma,\rho}(\theta)
+  :=\frac14\int_0^\infty\int_0^\infty
+  e^{-\theta^2(u+v)/2}h_\Gamma(u+v)
+  \Psi_a(\theta|u-v|,v_\rho(u,v))\ud u\ud v .
+\end{equation}
+Values on \(u=v\) do not affect the integral. The factor \(1/4\) is one factor
+\(1/2\) for each wave-to-heat gap transform; \(h_\Gamma(u+v)\) is the spatial
+average of \(\Gamma(B_1(u)-B_2(v))\). This average is interpreted by spatial
+heat regularization. For the white covariance it is \((2\pi(u+v))^{-1/2}\). The
+analytic covariance, not its absolute-value bound, is being copied.
+
+\LeanMarker{P:clock-copy-obstruction}
+\begin{proposition}[Obstruction to unweighted constant-correlation clock copying]
+  \label{P:clock-copy-obstruction}
+  For every covariance and parameters just specified, put
+  \begin{equation}\label{E:cross-clock-lambda-weight}
+    w_\theta(\lambda)
+    =\frac{\lambda^{a-2}}
+    {2\theta\Gamma_{\mathrm{E}}(a)}
+    \big(\mathcal{R}_\Gamma(\theta)
+    -\mathcal{R}_\Gamma(\theta+\lambda)\big),\qquad\lambda>0.
+  \end{equation}
+  This is a positive integrable density, and
+  \begin{equation}\label{E:clock-copy-obstruction}
+    \begin{split}
+      K_\Gamma(\theta)&=\int_0^\infty w_\theta(\lambda)\ud\lambda,\\
+      0<J_{\Gamma,\rho}(\theta)
+      &\le J_{\Gamma,1}(\theta)
+      =\int_0^\infty
+      \frac{2\theta}{2\theta+\lambda}w_\theta(\lambda)\ud\lambda
+      <K_\Gamma(\theta).
+    \end{split}
+  \end{equation}
+  When \(\alpha=1\),
+  \begin{equation}\label{E:degree-one-clock-loss}
+    J_{\Gamma,1}(\theta)=(2-2^a)K_\Gamma(\theta).
+  \end{equation}
+  Thus, this direct analytic clock-copying family, including independent clocks
+  and a single shared clock, fails to reproduce the cross-pair transform
+  throughout the original nonzero covariance class.
+\end{proposition}
+
+\begin{proof}
+  We first compute the exact original cross transform. We bound the clock
+  candidates and evaluate the largest one, corresponding to a shared clock.
+  Comparing the two positive densities gives strict loss, and degree-one
+  homogeneity then gives its exact factor.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We compute the density of the original cross
+  transform.
+  First evaluate the cross transform. Temporarily smooth the spatial covariance,
+  so Fourier and time Fubini are absolute. For \(r=|\xi|\), direct integration
+  over \(s=t+v\) and \(t=s+v\) gives
+  \[
+    \int_0^\infty\int_0^\infty
+    e^{-\theta(s+t)-\lambda|s-t|}
+    \widehat{G}_s(\xi)\overline{\widehat{G}_t(\xi)}\ud s\ud t
+    =\frac{2\theta+\lambda}
+    {2\theta(\theta^2+r^2)((\theta+\lambda)^2+r^2)} .
+  \]
+  For example, on the first cone the \(v\)-integral uses
+  \[
+    \int_0^\infty e^{-(\theta+\lambda)v}
+    \sin(r(t+v))\ud v
+    =\frac{(\theta+\lambda)\sin(rt)+r\cos(rt)}
+    {(\theta+\lambda)^2+r^2}.
+  \]
+  Integrating the remaining sine-square and sine-cosine terms against
+  \(e^{-2\theta t}\), and adding the second cone, gives the displayed identity.
+  The value at \(r=0\) is its continuous limit.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We remove spatial smoothing in the nonnegative
+  spectral expression.
+  The resulting spectral integrand is nonnegative. Removing the spatial Gaussian
+  multiplier and using the Laplace formula for the power covariance therefore
+  gives
+  \[
+    \begin{split}
+      K_\Gamma(\theta)
+      &=\frac1{\Gamma_{\mathrm{E}}(a)}
+      \int_0^\infty\lambda^{a-1}
+      \frac{2\theta+\lambda}{2\theta}
+      \int\frac{\mu(\ud\xi)}
+      {(\theta^2+|\xi|^2)((\theta+\lambda)^2+|\xi|^2)}
+      \ud\lambda\\
+      &=\int_0^\infty w_\theta(\lambda)\ud\lambda.
+    \end{split}
+  \]
+  The second equality is partial fractions, with
+  \((\theta+\lambda)^2-\theta^2=\lambda(2\theta+\lambda)\). The smoothing
+  passage is justified by monotone convergence in this nonnegative spectral
+  expression and the finite quadratic form in
+  Lemma~\ref{L:damped-homogeneous-norms}. Alternatively, homogeneity directly
+  bounds the density near zero by a constant times \(\lambda^{a-1}\), and at
+  infinity by a constant times \(\lambda^{a-2}\). Its strict positivity follows
+  from \(\mathcal{R}_\Gamma(\theta) -\mathcal{R}_\Gamma(\theta+\lambda)>0\),
+  since \(\mu\ne0\).
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We prove integrability and compare the clock
+  correlations.
+  The candidate integrals are well defined and positive. The bound
+  \(\Psi_a(\theta|u-v|,v_\rho)\le (\theta|u-v|)^{-a}\), together with
+  \(h_\Gamma(w)=h_\Gamma(1)w^{-\alpha/2}\), supplies an absolute majorant. With
+  \(w=u+v\), \(q=u-v\), the Jacobian is \(1/2\) and \(-w<q<w\). It is a constant
+  times
+  \[
+    \int_0^\infty e^{-\theta^2w/2}w^{-\alpha/2}
+    \int_{-w}^w|q|^{-a}\ud q\ud w
+    =\frac2{1-a}\int_0^\infty
+    e^{-\theta^2w/2}w^{1-\alpha/2-a}\ud w<\infty .
+  \]
+  Here \(a<1\) and \(a+\alpha/2<2\). The same bound dominates the spatial
+  heat-regularized averages, whose spatial factor is \(h_\Gamma(w+2\epsilon)\le
+  h_\Gamma(w)\). This is an averaged spectral bound, not pointwise covariance
+  monotonicity. Since \(v_\rho(u,v)\ge|u-v|=v_1(u,v)\), monotonicity of
+  \(\Psi_a\) gives \(J_{\Gamma,\rho}\le J_{\Gamma,1}\).
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We evaluate the shared-clock candidate and compare
+  its density.
+  We compute the latter by nonnegative Tonelli. Write
+  \(A=\theta\lambda+\lambda^2/2\). Integration in \(q\) gives
+  \(2(1-e^{-Aw})/A\). Also
+  \[
+    \mathcal{R}_\Gamma(q)
+    =\frac12\int_0^\infty e^{-q^2w/2}h_\Gamma(w)\ud w,
+  \]
+  by the elementary resolvent integral and spectral Tonelli. Consequently,
+  \[
+    \begin{split}
+      J_{\Gamma,1}(\theta)
+      &=\frac1{4\Gamma_{\mathrm{E}}(a)}
+      \int_0^\infty\frac{\lambda^{a-1}}A
+      \int_0^\infty h_\Gamma(w)
+      \left(e^{-\theta^2w/2}
+      -e^{-(\theta+\lambda)^2w/2}\right)\ud w\ud\lambda\\
+      &=\frac1{\Gamma_{\mathrm{E}}(a)}
+      \int_0^\infty
+      \frac{\lambda^{a-2}
+      (\mathcal{R}_\Gamma(\theta)-\mathcal{R}_\Gamma(\theta+\lambda))}
+      {2\theta+\lambda}\ud\lambda\\
+      &=\int_0^\infty
+      \frac{2\theta}{2\theta+\lambda}w_\theta(\lambda)\ud\lambda.
+    \end{split}
+  \]
+  The \(q\)-integral's factor two cancels its coordinate Jacobian \(1/2\); the
+  resolvent identity supplies the other factor two. Since \(w_\theta>0\) and
+  \(2\theta/(2\theta+\lambda)<1\) for every \(\lambda>0\), the strict inequality
+  follows.
+
+
+  \medskip
+  \noindent\textit{Step 5.~}We compute the exact loss at spatial degree one.
+  Finally, if \(\alpha=1\), homogeneity gives
+  \(\mathcal{R}_\Gamma(q)=\mathcal{R}_\Gamma(1)/q\). Substitution in the two
+  densities gives
+  \[
+    \begin{split}
+      K_\Gamma(\theta)
+      &=\frac{\mathcal{R}_\Gamma(1)}
+      {2\theta^2\Gamma_{\mathrm{E}}(a)}
+      \int_0^\infty\frac{\lambda^{a-1}}{\theta+\lambda}\ud\lambda,\\
+      J_{\Gamma,1}(\theta)
+      &=\frac{\mathcal{R}_\Gamma(1)}
+      {\theta^2\Gamma_{\mathrm{E}}(a)}
+      \int_0^\infty\lambda^{a-1}
+      \left(\frac1{\theta+\lambda}
+      -\frac1{2\theta+\lambda}\right)\ud\lambda .
+    \end{split}
+  \]
+  The real Beta identity
+  \[
+    \int_0^\infty\frac{x^{a-1}}{x+c}\ud x
+    =c^{a-1}\Gamma_{\mathrm{E}}(a)\Gamma_{\mathrm{E}}(1-a),
+    \qquad c>0,
+  \]
+  follows by scaling and \((r,s)\mapsto(r+s,r/s)\) in the positive product of
+  the two Gamma integrals. Their finiteness uses \(0<a<1\). Evaluation of these
+  two integrals gives \(J_{\Gamma,1}/K_\Gamma=2(1-2^{a-1})=2-2^a\), proving
+  \eqref{E:degree-one-clock-loss}. This proves
+  Proposition~\ref{P:clock-copy-obstruction}.
+\end{proof}
+
+\begin{remark}[Normalization and scope of the obstruction]
+  \label{R:clock-copy-scope}
+  At the static endpoint define the time covariance directly as one. The
+  candidate with \(\Psi_0=1\) gives
+  \[
+    J_{\Gamma,\rho}(\theta)
+    =\int\frac{\mu(\ud\xi)}{(\theta^2+|\xi|^2)^2}
+    =K_\Gamma(\theta).
+  \]
+  This follows by integrating \(w e^{-\theta^2w/2}h_\Gamma(w)/4\) spectrally. In
+  the white case it equals \(1/(4\theta^3)\). Thus, static and
+  homogeneous-degree checks alone miss the positive-\(a\) loss. Relative to the
+  shared-clock value \(\rho=1\), the omitted cross-pair multiplier is exactly
+  \(1+\lambda/(2\theta)\). For smaller correlations the deficit can be larger.
+  This does not assert a correction rule at higher orders.
+
+  The transforms \(K_\times\) use gap damping. For the auxiliary cutoff function
+  \[
+    F(T_1,T_2)=\int_0^{T_1}\int_0^{T_2}
+    |s-t|^{-a}\frac{\min(s,t)}2\ud s\ud t,
+  \]
+  nonnegative Fubini adds \(1/(\theta_1\theta_2)\) to its double
+  external-horizon transform. This function is not an unequal-time solution
+  correlation. Reversing chains ending at different physical times instead
+  shifts the cross covariance to \(|T_1-T_2-s+t|^{-a}\). Setting the two damping
+  parameters equal is also not the single Laplace transform of a
+  diagonal-horizon moment. For a self-pair at common gap damping, one external
+  horizon instead adds \(1/\theta\), recovering the known first-mean
+  coefficient.
+
+  The proposition rules out exactly the analytic covariance substitution
+  in~\eqref{E:naive-clock-candidate}, with product heat-chain measure,
+  unrestricted operational-time rectangle and constant Brownian correlation.
+  Additional relative-order weights,other derived clock couplings,matrix
+  representations,modulus inequalities and their possible asymptotics are not
+  covered. In particular, the inequality at this first cross pair leaves open a
+  shared-clock lower comparison or asymptotic equivalence at higher orders. This
+  finite clock calculation does not identify the intrinsic value proved  in
+  Theorem~\ref{T:intrinsic-second-moment} with the source's all-moment
+  conjecture. This is not a Skorohod result or a no-go for every two-clock
+  method.
+\end{remark}
+
+No-go~\ref{P:nogo-17} summarizes the missing degree-two multiplier.
+No-go~\ref{P:nogo-18} records a different degree-four obstruction: erasing
+an additional shift makes one upper envelope too large to close its
+comparison, without refuting the comparison itself.
+
+

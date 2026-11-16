@@ -1,0 +1,29 @@
+\begin{theorem}[Intrinsic original second-moment constant]
+  \label{T:intrinsic-second-moment}
+  For every original admissible model with data $(1,0)$ and fixed $x$,
+  \begin{equation}\label{E:intrinsic-second-moment-limit}
+    \lim_{T\to\infty}T^{-(4-\alpha-a)/(3-\alpha)}
+    \log\E|u_\Gamma(T,x)|^2
+    =C_2(\Gamma,a)=S_2^{\mathrm{pos}}
+    =2^{(4-\alpha)/(3-\alpha)}S_1^{\mathrm{pos}}.
+  \end{equation}
+  Its complete variational formula over nonnegative controls is
+  \begin{align}
+    C_2(\Gamma,a)
+    &=\sup_{\Psi\in\mathcal{C}_{\mathrm{pos}}}
+    \left\{2\int_I
+    \sqrt{\sup_{\substack{f\in H^1(\R^d;\R)\\\|f\|_2=1}}
+    \left(\int h_{\Psi,s}f^2-\|\nabla f\|_2^2\right)}
+    \ud s-\frac{v_\Psi}{2}\right\},
+    \label{E:intrinsic-positive-formula}\\
+    h_{\Psi,s}(x)
+    &=\int_I|s-t|^{-a}(\Gamma*\Psi_t)(x)\ud t,\qquad
+    v_\Psi=\int_{I\times\R^d}\Psi(s,x)h_{\Psi,s}(x)\ud x\ud s.
+    \notag
+  \end{align}
+  Here $\mathcal{C}_{\mathrm{pos}}$ consists of all nonzero nonnegative real
+  $C_c^\infty(I\times\R^d)$ tests, including nonseparable ones. The covariance
+  retains its amplitude, the kinetic term has coefficient one, and the Gaussian
+  action is $v_\Psi/2$. For nonzero covariance $0 < C_2 < \infty$. For $\Gamma =
+  0$ the constant and moment rate are zero.
+\end{theorem}

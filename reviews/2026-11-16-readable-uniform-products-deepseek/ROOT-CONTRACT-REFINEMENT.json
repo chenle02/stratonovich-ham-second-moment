@@ -1,0 +1,314 @@
+{
+  "schema": "readability-root-contract-refinement/1",
+  "review_record_id": "RP019",
+  "recorded_utc": "2026-11-16T08:02:16.466740+00:00",
+  "reason": "Root-authorized clarification of original-step public reconstruction, including unchanged portions; original scientific scope is preserved.",
+  "preconditions": {
+    "status_before": "PREPARED_AWAITING_OWNER_PREFLIGHT_AND_FREEZE",
+    "no_launch_native_report_or_freeze_artifact_before": true,
+    "public_frozen_records_found": [],
+    "public_record_search_scope": [
+      "reviews/ and experiment/ in shared project and owned publication worktree"
+    ]
+  },
+  "before_artifacts": {
+    "CONTRACT.md": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/CONTRACT.md",
+      "sha256": "2a4b14b7067c61ddf64737f3a3ccaf951cf3e04f0326ce7a124006a2fb5a60d8",
+      "bytes": 4563
+    },
+    "INPUT.txt": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/INPUT.txt",
+      "sha256": "b786be2093dcc767d235341556f5a166f212a89a13884b6efb6c82a75fcc7439",
+      "bytes": 184475
+    },
+    "MANIFEST.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/MANIFEST.json",
+      "sha256": "43b74022e58c4df1ba83a3943065601c782a47e377c053e48b8517cf78c94283",
+      "bytes": 8801
+    },
+    "PROOF-MANIFEST.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/PROOF-MANIFEST.json",
+      "sha256": "3d8e722d1599d2d8cf7dead52c32fc6f54b2fa4e59ba60fa055de44d08d23cfd",
+      "bytes": 9426
+    },
+    "CAPACITY.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/CAPACITY.json",
+      "sha256": "5176b28bc070b4fa4ce9280c48d735003a5f46b726cab4885baeeffce9406964",
+      "bytes": 573
+    },
+    "PREPARATION-CHECKS.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/PREPARATION-CHECKS.json",
+      "sha256": "d781c25da3d11fd7da2cf9d08f43236cfea26bd64381e32753e7488c8e30ca50",
+      "bytes": 4015
+    },
+    "model-profile.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/model-profile.json",
+      "sha256": "ccdf515979e77bbe752d924735a915260ca437d3d31a954d4a739c946fca0ea1",
+      "bytes": 778
+    },
+    "MODEL-LIMITS.json": {
+      "path": "ROOT-CONTRACT-REFINEMENT.before/MODEL-LIMITS.json",
+      "sha256": "60eaa34361e093e599fdc4a26f8d53ee3aeb860e419c9e66535c4fda52284d56",
+      "bytes": 199
+    }
+  },
+  "exact_normative_block": "For every assigned proof, enumerate its original logical steps (including unchanged portions) and provide checkable public working for each. A target statement or a bound established inside that same target proof is not an unassigned input. Named UNASSIGNED upstream statements may be used after checking their hypotheses; their own proofs remain unassigned. Reading and reconstruction are distinct: if any required target step is not reconstructed publicly, say so and mark Public reconstruction: PARTIAL or NOT_RECONSTRUCTED, even if Old/New reading is COMPLETE. Do not replace a derivation by saying it is unchanged.",
+  "exact_added_output_fields": [
+    "- Public reconstruction: COMPLETE | PARTIAL | NOT_RECONSTRUCTED",
+    "- Original-step coverage: <steps and working, with omissions explicit>"
+  ],
+  "rough_word_target": 5000,
+  "brevity_instruction": "The word target is approximate; do not sacrifice a required derivation for brevity.",
+  "contract_unified_diff": "--- CONTRACT.before.md\n+++ CONTRACT.md\n@@ -48,6 +48,10 @@\n tools, delegate, read files, edit or contact anyone. Everything allowed is\n embedded. Mark PARTIAL/NOT_READ and precise missing work rather than invent it.\n \n+# Public reconstruction requirement\n+\n+For every assigned proof, enumerate its original logical steps (including unchanged portions) and provide checkable public working for each. A target statement or a bound established inside that same target proof is not an unassigned input. Named UNASSIGNED upstream statements may be used after checking their hypotheses; their own proofs remain unassigned. Reading and reconstruction are distinct: if any required target step is not reconstructed publicly, say so and mark Public reconstruction: PARTIAL or NOT_RECONSTRUCTED, even if Old/New reading is COMPLETE. Do not replace a derivation by saying it is unchanged.\n+\n # Output contract\n \n Begin with:\n@@ -61,6 +65,8 @@\n for each assigned label, in order. Each must give:\n - Old reading: COMPLETE | PARTIAL | NOT_READ\n - New reading: COMPLETE | PARTIAL | NOT_READ\n+- Public reconstruction: COMPLETE | PARTIAL | NOT_RECONSTRUCTED\n+- Original-step coverage: <steps and working, with omissions explicit>\n - Argument preservation: PRESERVED | CHANGED | UNCERTAIN\n - New explanations: JUSTIFIED | CONCERN | UNCERTAIN\n - Evidence: concrete mathematical checks/working using equation labels or\n@@ -71,5 +77,7 @@\n End with '## AUDIT dispositions' and '## Findings and limits'. A partially\n read proof prohibits a claim of full assignment completion. Distinguish scope\n preservation from proving all upstream analytic results or whole-book truth.\n-Keep the public report roughly 3500 words or less. Do not certify Lean quotation\n+Keep the public report roughly 5000 words. Do not certify Lean quotation\n correspondence, source images, rendered pages, human verification or release.\n+\n+The word target is approximate; do not sacrifice a required derivation for brevity.\n",
+  "contract_diff_sha256": "673176d383af004c7dd67d01098a5724707adfb68a8f682f5b8d37b6cf43bfad",
+  "after": {
+    "contract_sha256": "93aff27b24c15f3b07dbdc4a62b7249e23a50c9a1292e67200190c7fbe3833de",
+    "contract_bytes": 5433,
+    "prompt_sha256": "0924df0a5f5e47976231a9ff3e2a52f5dfbc54286f1e8597bc45d1de3bde05a8",
+    "prompt_bytes": 185345,
+    "capacity_sha256": "3a9c622e0090ed4de2cba6992c08e4d16b09b5b2fa172b698d5dfda904fb42cc",
+    "preparation_checks_sha256": "6bc4018c894a3e5cf5fd3ddcb19cb5a22dec829b086e5c50c4d3857c3b6fb142",
+    "manifest_sha256": "913a632b12be3e75bf29b902feefcdfe3282e46e4c23ea3abcc496286127e8f7",
+    "prompt_tokens": 57863,
+    "agent_prompt_tokens": 53,
+    "combined_reasoning_public_cap": 65536,
+    "conditional_headroom": 892356,
+    "timeout_seconds": 3600
+  },
+  "payload_identity": {
+    "proof_manifest_sha256": "3d8e722d1599d2d8cf7dead52c32fc6f54b2fa4e59ba60fa055de44d08d23cfd",
+    "all_statement_and_proof_hashes_unchanged": true,
+    "all_source_files_bytes_unchanged": true,
+    "source_input_files": [
+      {
+        "path": "inputs/old-module.txt",
+        "bytes": 27849,
+        "sha256": "170500650a57b8d494e79bad818b5096ad10d8aada426aa4473352fb38368e04",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/integrated_uniform_products.tex",
+        "selection": "WHOLE_FILE",
+        "role": "ASSIGNED OLD whole target module."
+      },
+      {
+        "path": "inputs/new-module.txt",
+        "bytes": 32319,
+        "sha256": "d4d98e6d82baae06fbc2d7d205e8efa733b7388b36845b5c7d204fc4dee0ba82",
+        "source_revision": "ac64e58ff41b63122d0c76c5dd4853869707a369",
+        "source_path": "notes/integrated_uniform_products.tex",
+        "selection": "WHOLE_FILE",
+        "role": "ASSIGNED NEW whole target module."
+      },
+      {
+        "path": "inputs/context-model-assumptions.txt",
+        "bytes": 1986,
+        "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/notes_stratonovich_ham_second_moment.tex",
+        "selection": "EXACT_RETAINED_EXCERPT",
+        "role": "UNASSIGNED exact model/data, covariance hypotheses, and zero covariance context.",
+        "source_lf": [
+          367,
+          409
+        ]
+      },
+      {
+        "path": "inputs/context-integrated_signed_static-baseline.txt",
+        "bytes": 14299,
+        "sha256": "d49c6954d587572a6e3d027945a6e86fe6632bbbdf00ab15ecb852602e77d8b9",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/integrated_signed_static.tex",
+        "selection": "WHOLE_FILE",
+        "role": "UNASSIGNED complete baseline upstream module: use declarations/definitions under their exact hypotheses; do not count its proofs as additional assigned reviews."
+      },
+      {
+        "path": "inputs/context-integrated_uniform_mean-baseline.txt",
+        "bytes": 19613,
+        "sha256": "132449ade993b8feab10c06a6c062b21698d83d0ad811f99090bd069144dedc6",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/integrated_uniform_mean.tex",
+        "selection": "WHOLE_FILE",
+        "role": "UNASSIGNED complete baseline upstream module: use declarations/definitions under their exact hypotheses; do not count its proofs as additional assigned reviews."
+      },
+      {
+        "path": "inputs/context-integrated_cameron_mean-baseline.txt",
+        "bytes": 24138,
+        "sha256": "0ecbf05a70a7d5d79c9e2285dcadb93567687d4e463bfe4f6b0fdac5ff6f016d",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/integrated_cameron_mean.tex",
+        "selection": "WHOLE_FILE",
+        "role": "UNASSIGNED complete baseline upstream module: use declarations/definitions under their exact hypotheses; do not count its proofs as additional assigned reviews."
+      },
+      {
+        "path": "inputs/context-integrated_young_upper_foundation-baseline.txt",
+        "bytes": 4810,
+        "sha256": "28c299b4f0bff4f6cc1a4a63db881bd2e849b43e235c2824aec1ddd34a4f2415",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/integrated_young_upper_foundation.tex",
+        "selection": "WHOLE_FILE",
+        "role": "UNASSIGNED complete baseline upstream module: use declarations/definitions under their exact hypotheses; do not count its proofs as additional assigned reviews."
+      },
+      {
+        "path": "inputs/context-integrated_symplectic_phase-baseline.txt",
+        "bytes": 20269,
+        "sha256": "37f0c741ab8e37b66f25a103939b428e001072066b48ffea2adb10e4644f2cab",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/integrated_symplectic_phase.tex",
+        "selection": "WHOLE_FILE",
+        "role": "UNASSIGNED complete baseline upstream module: use declarations/definitions under their exact hypotheses; do not count its proofs as additional assigned reviews."
+      },
+      {
+        "path": "inputs/context-integrated_constant_phase_young-baseline.txt",
+        "bytes": 27376,
+        "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3",
+        "source_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+        "source_path": "notes/integrated_constant_phase_young.tex",
+        "selection": "WHOLE_FILE",
+        "role": "UNASSIGNED complete baseline upstream module: use declarations/definitions under their exact hypotheses; do not count its proofs as additional assigned reviews."
+      }
+    ],
+    "old_embedded_frames": [
+      {
+        "path": "inputs/old-module.txt",
+        "payload_byte_offset": 7480,
+        "payload_bytes": 27849,
+        "payload_sha256": "170500650a57b8d494e79bad818b5096ad10d8aada426aa4473352fb38368e04"
+      },
+      {
+        "path": "inputs/new-module.txt",
+        "payload_byte_offset": 35709,
+        "payload_bytes": 32319,
+        "payload_sha256": "d4d98e6d82baae06fbc2d7d205e8efa733b7388b36845b5c7d204fc4dee0ba82"
+      },
+      {
+        "path": "inputs/context-model-assumptions.txt",
+        "payload_byte_offset": 68490,
+        "payload_bytes": 1986,
+        "payload_sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+      },
+      {
+        "path": "inputs/context-integrated_signed_static-baseline.txt",
+        "payload_byte_offset": 71026,
+        "payload_bytes": 14299,
+        "payload_sha256": "d49c6954d587572a6e3d027945a6e86fe6632bbbdf00ab15ecb852602e77d8b9"
+      },
+      {
+        "path": "inputs/context-integrated_uniform_mean-baseline.txt",
+        "payload_byte_offset": 85889,
+        "payload_bytes": 19613,
+        "payload_sha256": "132449ade993b8feab10c06a6c062b21698d83d0ad811f99090bd069144dedc6"
+      },
+      {
+        "path": "inputs/context-integrated_cameron_mean-baseline.txt",
+        "payload_byte_offset": 106065,
+        "payload_bytes": 24138,
+        "payload_sha256": "0ecbf05a70a7d5d79c9e2285dcadb93567687d4e463bfe4f6b0fdac5ff6f016d"
+      },
+      {
+        "path": "inputs/context-integrated_young_upper_foundation-baseline.txt",
+        "payload_byte_offset": 130785,
+        "payload_bytes": 4810,
+        "payload_sha256": "28c299b4f0bff4f6cc1a4a63db881bd2e849b43e235c2824aec1ddd34a4f2415"
+      },
+      {
+        "path": "inputs/context-integrated_symplectic_phase-baseline.txt",
+        "payload_byte_offset": 136176,
+        "payload_bytes": 20269,
+        "payload_sha256": "37f0c741ab8e37b66f25a103939b428e001072066b48ffea2adb10e4644f2cab"
+      },
+      {
+        "path": "inputs/context-integrated_constant_phase_young-baseline.txt",
+        "payload_byte_offset": 157028,
+        "payload_bytes": 27376,
+        "payload_sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+      }
+    ],
+    "new_embedded_frames": [
+      {
+        "path": "inputs/old-module.txt",
+        "payload_byte_offset": 8350,
+        "payload_bytes": 27849,
+        "payload_sha256": "170500650a57b8d494e79bad818b5096ad10d8aada426aa4473352fb38368e04"
+      },
+      {
+        "path": "inputs/new-module.txt",
+        "payload_byte_offset": 36579,
+        "payload_bytes": 32319,
+        "payload_sha256": "d4d98e6d82baae06fbc2d7d205e8efa733b7388b36845b5c7d204fc4dee0ba82"
+      },
+      {
+        "path": "inputs/context-model-assumptions.txt",
+        "payload_byte_offset": 69360,
+        "payload_bytes": 1986,
+        "payload_sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+      },
+      {
+        "path": "inputs/context-integrated_signed_static-baseline.txt",
+        "payload_byte_offset": 71896,
+        "payload_bytes": 14299,
+        "payload_sha256": "d49c6954d587572a6e3d027945a6e86fe6632bbbdf00ab15ecb852602e77d8b9"
+      },
+      {
+        "path": "inputs/context-integrated_uniform_mean-baseline.txt",
+        "payload_byte_offset": 86759,
+        "payload_bytes": 19613,
+        "payload_sha256": "132449ade993b8feab10c06a6c062b21698d83d0ad811f99090bd069144dedc6"
+      },
+      {
+        "path": "inputs/context-integrated_cameron_mean-baseline.txt",
+        "payload_byte_offset": 106935,
+        "payload_bytes": 24138,
+        "payload_sha256": "0ecbf05a70a7d5d79c9e2285dcadb93567687d4e463bfe4f6b0fdac5ff6f016d"
+      },
+      {
+        "path": "inputs/context-integrated_young_upper_foundation-baseline.txt",
+        "payload_byte_offset": 131655,
+        "payload_bytes": 4810,
+        "payload_sha256": "28c299b4f0bff4f6cc1a4a63db881bd2e849b43e235c2824aec1ddd34a4f2415"
+      },
+      {
+        "path": "inputs/context-integrated_symplectic_phase-baseline.txt",
+        "payload_byte_offset": 137046,
+        "payload_bytes": 20269,
+        "payload_sha256": "37f0c741ab8e37b66f25a103939b428e001072066b48ffea2adb10e4644f2cab"
+      },
+      {
+        "path": "inputs/context-integrated_constant_phase_young-baseline.txt",
+        "payload_byte_offset": 157898,
+        "payload_bytes": 27376,
+        "payload_sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+      }
+    ],
+    "only_frame_byte_offsets_changed": true,
+    "prefix_byte_delta": 870,
+    "old_prompt_suffix_after_contract_sha256": "d7b7d1fb9a24f1ec4bc2ae200695b41bc65307abd8b0f5b2f29f4e4b8ba7a4ca",
+    "new_prompt_suffix_after_contract_sha256": "d7b7d1fb9a24f1ec4bc2ae200695b41bc65307abd8b0f5b2f29f4e4b8ba7a4ca"
+  },
+  "unchanged_policy_fields": {
+    "source_file": "notes/integrated_uniform_products.tex",
+    "old_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+    "source_revision": "ac64e58ff41b63122d0c76c5dd4853869707a369",
+    "proof_labels": [
+      "L:uniform-E-lift",
+      "P:uniform-E-spectral",
+      "P:uniform-rate-averaging",
+      "L:uniform-product-budgets",
+      "P:uniform-mean-product",
+      "C:uniform-polynomial-balls",
+      "P:uniform-arbitrary-residual"
+    ],
+    "assigned_global_ordinals": null,
+    "requested_model": "deepseek/deepseek-v4-pro",
+    "requested_variant": null,
+    "pure_mode": true,
+    "agent": "artifact-reviewer",
+    "all_tools_denied": true,
+    "combined_reasoning_public_output_cap": 65536,
+    "timeout_seconds": 3600,
+    "coordinator_launch_limit": 1,
+    "coordinator_retry_continuation_fallback": false
+  },
+  "historical_evidence_notice": "Saved old checks/contract/prompt remain historical. Previous selected-view binding hashes do not cover the changed prefix. New offline checks cover the refined prefix and exact preserved payloads; no native/preflight/review/approval claim.",
+  "native_or_provider_calls": 0,
+  "launch_script_or_lock_created": false
+}

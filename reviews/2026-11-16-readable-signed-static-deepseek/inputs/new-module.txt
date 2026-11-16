@@ -1,0 +1,327 @@
+\section{Signed rough static potentials and the physical wave}
+\label{S:signed-static-wave}
+
+Fix the original nonzero covariance and a finite physical mask $m_R$ as in
+Section~\ref{S:actual-cameron-mean}. For real $q \in C_c^\infty(\R^d)$ put $V_q
+= m_R(\Gamma*q)$ and $L_q(u,v,c_1,c_2) = (0,V_q(u+c_1),0,0)$ on $F =
+E\oplus\R^2$. Let $\mathcal{V}_R$ be the operator-norm closure of these
+operators in $\mathcal{K}(F)$. It is a closed real linear space. No positivity
+is imposed on $q$.
+
+\begin{lemma}[The limiting multiplier]\label{L:signed-limiting-multiplier}
+  Every $L \in \mathcal{V}_R$ determines a unique real $V \in H^{-1/2}$
+  supported in $\operatorname{supp}m_R$. It has the multiplier action
+  $L(u,v,c_1,c_2) = (0,Vu+c_1V,0,0)$, where multiplication extends from tests to
+  $H^{1/2} \to H^{-1/2}$. For $k = \|L\|$, its symmetric pairing obeys
+  \begin{equation}\label{E:signed-multiplier-form}
+    |v_V(u,w)|\le k\|u\|_{H^{1/2}}\|w\|_{H^{1/2}} .
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  Choose $L_{q_n} \to L$. The constant-displacement vector has norm one, so
+  $\|V_{q_n}-V_{q_j}\|_{H^{-1/2}} \le \|L_{q_n}-L_{q_j}\|$. Thus, $V_{q_n} \to
+  V$ in $H^{-1/2}$. Testing outside the fixed compact mask support preserves
+  that support. Every zero column of $L_{q_n}$ remains zero. Its displacement
+  multipliers converge in $\mathcal{L}(H^{1/2},H^{-1/2})$ to a map of norm at
+  most $k$. For compact smooth $u$, smooth multiplication is bounded on
+  $H^{-1/2}$ by Lemma~\ref{L:cutoff-factorization}. Hence, $V_{q_n}u \to Vu$
+  there, identifying the limiting map on tests and then uniquely on $H^{1/2}$ by
+  density. The constant column recovers $V$ and proves uniqueness. On compact
+  smooth $u,w$, the pairing is $\langle V,uw\rangle$, denoted $v_V(u,w)$, so it
+  is symmetric. Its bound and symmetry extend by density. Complexification
+  preserves the operator norm by splitting real and imaginary parts in the
+  Hilbert norms. The pairing extends sesquilinearly to a Hermitian form; its
+  diagonal is the sum of the real and imaginary diagonal values. This proves
+  Lemma~\ref{L:signed-limiting-multiplier}.
+\end{proof}
+
+The bound~\eqref{E:signed-multiplier-form} controls the pairing $v_V$ on
+$H^{1/2}$. We now use it to define a self-adjoint operator $H_V$ from the
+quadratic form $q_V$ on $H^1$. We also compare the quarter power of its shift
+$A$ with the $H^{1/2}$ norm.
+
+\LeanMarker{P:signed-closed-form}
+\begin{proposition}[Closed form and quarter-power phase]
+  \label{P:signed-closed-form}
+  Let $K \ge \max(1,\|L\|)$ and $c = 2+K^2$. On complexified $L^2$ the form
+  \[
+    q_V(u)=\|\nabla u\|_2^2-v_V(u,u),\qquad Q(q_V)=H^1,
+  \]
+  represents a unique self-adjoint $H_V$. With $A = H_V+c$ and $L_K = 3(1+K^2)$,
+  \begin{align}
+    A&\ge1,\qquad D(A^{1/2})=H^1,\label{E:signed-form-domain}\\
+    \tfrac12\|u\|_{H^1}^2
+    &\le q_V(u)+c\|u\|_2^2\le L_K\|u\|_{H^1}^2,\label{E:signed-form-bounds}\\
+    D(A^{1/4})&=H^{1/2},\qquad
+    2^{-1/4}\|u\|_{H^{1/2}}
+    \le\|A^{1/4}u\|_2\le L_K^{1/4}\|u\|_{H^{1/2}}.
+    \label{E:signed-quarter-phase}
+  \end{align}
+  The negative dual completion is $H^{-1/2}$. No $H^2$ operator domain is
+  asserted.
+\end{proposition}
+
+\begin{proof}
+  We first bound the signed potential form by the Sobolev norm and identify
+  its closed representation. We then derive the quarter-power comparison from
+  resolvents, and use duality to identify the negative phase.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We make the shifted form coercive and closed.
+  Put $b = \|u\|_2$, $z = \|u\|_{H^1}$. Fourier Cauchy--Schwarz
+  and~\eqref{E:signed-multiplier-form} give
+  \[
+    \|u\|_{H^{1/2}}^2\le bz,\qquad
+    |v_V(u,u)|\le Kbz\le\tfrac12z^2+\tfrac12K^2b^2 .
+  \]
+  The last scalar inequality is the weighted arithmetic--geometric mean
+  inequality at weights $1/2,1/2$ and nonnegative bases $z^2,(Kb)^2$, including
+  zero norms. Since $q_V = z^2-b^2-v_V(u,u)$, it follows that
+  \[
+    q_V+cb^2\ge\tfrac12z^2+(1+K^2/2)b^2,\qquad
+    q_V+cb^2\le\tfrac32z^2+(1+3K^2/2)b^2\le L_Kz^2.
+  \]
+  The lower bound dominates both $z^2/2$ and $b^2$. Thus, this densely defined
+  Hermitian form is semibounded and its shifted norm is equivalent to the
+  complete $H^1$ norm. It is closed in the definition
+  of~\cite{teschl:14:mathematical}*{p.~80}.
+  From~\cite{teschl:14:mathematical}*{Theorem~2.14, p.~81, (2.63)}, it
+  represents a unique self-adjoint $H_V$. This representation is independent of
+  the admissible shift. From that book's Theorem~3.6 and~(3.51)--(3.53), p.~109,
+  applied after shifting, we obtain~\eqref{E:signed-form-domain}. Here $A \ge 1$
+  is initially its form lower bound. A bounded spectral slice below one would
+  produce a unit $D(A)$ test contradicting that form bound; hence it is also the
+  spectral lower bound. Lemma~\ref{L:signed-spectral-wave} records the full
+  bottom argument.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We compare fractional powers through resolvent
+  order.
+  The lower shifted bound controls both the $H^1$ norm and the $L^2$ norm, so
+  completion in the shifted form norm keeps the prescribed form domain. The
+  upper bound gives the reverse norm comparison. This is what permits
+  application of the closed-form representation theorem rather than treating
+  the rough potential as a bounded $L^2$ multiplier.
+  Set $B_0 = 1-\Delta$. On the common form domain, $\tfrac12B_0 \le A \le
+  L_KB_0$. We prove the needed square-root comparison rather than assuming an
+  order rule for arbitrary operator powers. For $T_0,S_0 \ge 1$ with common form
+  domain and $q_{T_0} \le q_{S_0}$, completing the square in the shifted form
+  norm gives
+  \[
+    \langle f,(T_0+t)^{-1}f\rangle
+    =\sup_u\{2\operatorname{Re}\langle f,u\rangle
+    -q_{T_0}(u)-t\|u\|^2\}
+    \ge\langle f,(S_0+t)^{-1}f\rangle,\quad t>0 .
+  \]
+  The scalar identity $\sqrt x = \pi^{-1}\int_0^\infty t^{-1/2}x/(x+t)\ud t$
+  follows by $t = xv^2$. Positive spectral integration and Tonelli now imply
+  $T_0^{1/2} \le S_0^{1/2}$ as forms, with their domain inclusions:
+  $I-t(T_0+t)^{-1} \le I-t(S_0+t)^{-1}$. Apply this to $(B_0,2A)$ and
+  $(A,L_KB_0)$. Both operators in each pair are at least one. The resulting
+  inequalities give~\eqref{E:signed-quarter-phase}, including equality of its
+  domains. For $v \in L^2$ the $L^2$-duality norm against $\|A^{1/4}u\|_2$ is
+  $\|A^{-1/4}v\|_2$: Cauchy--Schwarz gives the upper bound, and $u = A^{-1/2}v$
+  gives equality after normalization. Duality and completion therefore identify
+  the negative phase. Uniqueness of the form, resolvent and spectral calculus
+  makes these constructions commute with real conjugation. This proves
+  Proposition~\ref{P:signed-closed-form}.
+\end{proof}
+
+Proposition~\ref{P:signed-closed-form} gives the operator $H_V$ and compares
+the norms built from $A^{1/4}$ with those of $E$. We now locate the bottom of
+the spectrum of $H_V$ and bound the wave that its spectral calculus defines on
+$E$. The bound allows exponential growth at the rate $\lambda(V)$.
+
+\begin{lemma}[The bottom and spectral wave]\label{L:signed-spectral-wave}
+  Write $P_V^E$ for the evolution in~\eqref{E:signed-spectral-matrix}, and $S_E$
+  for the free restriction from Lemma~\ref{L:constant-phase-free}. Put
+  \[
+    \beta(V)=\inf_{\substack{u\in H^1\\\|u\|_2=1}}q_V(u),
+    \qquad \lambda(V)=\sqrt{-\beta(V)} .
+  \]
+  Then $\beta(V) = \inf\operatorname{spec}H_V$ and $-K^2 \le \beta(V) \le 0$.
+  The spectral wave on $E$ has the bound
+  \begin{equation}\label{E:signed-E-wave}
+    \|P_V^E(t)\|\le8(1+K)^2(1+t)e^{\lambda(V)t},\qquad t\ge0.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We identify the form infimum with the spectral bottom and use the compact
+  support to show that it is nonpositive. We then estimate the spectral wave
+  matrix in its adapted phase norm and transfer the estimate to the fixed
+  Sobolev phase.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We locate the spectral bottom.
+  For unit $u$, $z = \|u\|_{H^1} \ge 1$ gives $q_V(u) \ge z^2/2-1-K^2/2 \ge
+  -(1+K^2)/2 \ge -K^2$. Conversely dilate a unit compact smooth bump and
+  translate its whole support outside $\operatorname{supp}m_R$. Its potential
+  pairing is zero and its kinetic energy tends to zero. Thus, $\beta \le 0$.
+  Real and complex form infima agree because a complex diagonal splits into the
+  two real diagonals. The spectral form formula
+  in~\cite{teschl:14:mathematical}*{(3.52)--(3.53)} identifies this form infimum
+  with the spectral bottom. For clarity, a bounded spectral slice below the form
+  lower bound would give a unit form test violating that bound. Conversely the
+  form integral is bounded below by the spectral infimum. The spectrum is
+  nonempty: a unit vector's scalar spectral measure has mass one and a support
+  point, and normalized projections onto arbitrarily small bounded neighborhoods
+  give approximate eigenvectors, excluding a bounded inverse there. Conversely,
+  off the closed PVM support $\Sigma$ the Borel function $(h-z)^{-1}$, set to
+  zero off $\Sigma$, is bounded for real $z\notin\Sigma$, as is $h/(h-z)$ on
+  $\Sigma$. Its calculus maps into $D(H_V)$ and is a two-sided resolvent inverse
+  on the appropriate domains. Thus, the spectrum is precisely $\Sigma$. Hence,
+  $\lambda \le K$ and every spectral value $h$ has $h+c \ge 2$.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We estimate the spectral matrix in an equivalent
+  phase norm.
+  Use the phase norm $\|(u,v)\|_{E_A}^2 = \|A^{1/4}u\|_2^2+\|A^{-1/4}v\|_2^2$.
+  With $M_K = L_K^{1/4}$, the preceding proposition and its dual give
+  $M_K^{-1}\|z\|_E \le \|z\|_{E_A} \le M_K\|z\|_E$. The condition-number cost is
+  $M_K^2 = \sqrt{3(1+K^2)} \le 2(1+K)$. Define $C_t(h),S_t(h)$ by $\cos(t\sqrt
+  h),\sin(t\sqrt h)/\sqrt h$ for $h > 0$, by $1,t$ at zero, and by
+  $\cosh(t\sqrt{-h}),\sinh(t\sqrt{-h})/\sqrt{-h}$ for $h < 0$. In the $E_A$
+  isometry the wave matrix is
+  \begin{equation}\label{E:signed-spectral-matrix}
+    \begin{pmatrix}
+      C_t(h)&\sqrt{h+c}\,S_t(h)\\
+      -hS_t(h)/\sqrt{h+c}&C_t(h)
+    \end{pmatrix}.
+  \end{equation}
+  For $h \ge 0$, the entries are bounded using $|C_t| \le 1$, $|S_t| \le
+  \min(t,h^{-1/2})$, $\sqrt{h+c}|S_t| \le 1+\sqrt c\,t$ and $|hS_t|/\sqrt{h+c}
+  \le 1$; at zero the off-diagonals are $\sqrt c\,t,0$. For $\beta \le h < 0$,
+  they are bounded using $|C_t| \le e^{\lambda t}$, $|S_t| \le te^{\lambda t}$,
+  $\sqrt{h+c}|S_t| \le \sqrt c\,te^{\lambda t}$ and $|hS_t|/\sqrt{h+c} \le
+  Ke^{\lambda t}$. There is no division by $\lambda$. Since $\sqrt c \le 2K$,
+  each entry is at most $2(1+K)(1+t)e^{\lambda t}$. Bounded Borel calculus
+  from~\cite{teschl:14:mathematical}*{Theorem~3.1, pp.~102--103,
+  (3.18)--(3.21)}, the two-by-two matrix norm bound and the condition-number
+  cost give~\eqref{E:signed-E-wave}. Functions can be set to zero off the
+  spectral support. Spectral dominated convergence gives strong continuity, and
+  scalar addition identities give the group property. The same matrix and bounds
+  apply on the weighted graph levels $D(A^{1/2})\times L^2$ and $D(A)\times
+  D(A^{1/2})$. Spectral cutoffs justify their extensions and continuity there.
+  For negative spectral values, the lower off-diagonal estimate can be read
+  without dividing by $\lambda$: its absolute value is
+  $\sqrt{-h}\sinh(t\sqrt{-h})/\sqrt{h+c}$. The bounds $\sqrt{-h}\le K$ and
+  $h+c\ge2$ make this at most $Ke^{\lambda t}$. Thus, the estimate also
+  remains meaningful when the bottom rate is zero.
+  This proves Lemma~\ref{L:signed-spectral-wave}.
+\end{proof}
+
+Lemma~\ref{L:signed-spectral-wave} bounds a wave defined by spectral
+calculus, and only on $E$. We still have to identify it with the physical wave
+and to include the two constant columns of $F$.
+
+\begin{proposition}[Identification with the physical wave]
+  \label{P:signed-physical-wave}
+  The spectral wave in Lemma~\ref{L:signed-spectral-wave} is the
+  bounded-perturbation, equivalently Young, physical wave on $E$. Its extension
+  on $F$ satisfies
+  \begin{equation}\label{E:signed-F-wave}
+    \|P_V(t)\|_{\mathcal{L}(F)}
+    \le16(1+K)^4(1+t)^3e^{\lambda(V)t},\qquad t\ge0.
+  \end{equation}
+  Both constant response columns are included.
+\end{proposition}
+
+\begin{proof}
+  We first embed the form operator domain into the free generator domain. The
+  spectral solution then satisfies the physical Duhamel identity on dense
+  graph data. We extend that identity and include the constant columns by
+  variation of constants.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the graph-continuous embedding.
+  The imported form representation \cite{teschl:14:mathematical}*{Theorem~2.14,
+  p.~81, (2.63)}, tested against compact smooth functions, gives $H_Vu = -\Delta
+  u-Vu$ in distributions for $u \in D(H_V)$. Such $u$ lies in $H^1$ and $Vu \in
+  H^{-1/2}$. Consequently, $(1-\Delta)u = H_Vu+Vu+u \in H^{-1/2}$, so
+  $D(H_V)\hookrightarrow H^{3/2}$. The embedding is graph-continuous:
+  by~\eqref{E:signed-form-bounds}, $\|u\|_{H^1}^2 \le 2\langle Au,u\rangle \le
+  \|Au\|_2^2+\|u\|_2^2$, and the distributional equation bounds the $H^{3/2}$
+  norm by this graph norm.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the free generator and apply the
+  interaction identity.
+  The generator of the free $E$ group is $A_0(u,v) = (v,\Delta u)$ on
+  $H^{3/2}\times H^{1/2}$. Indeed, differentiate its Fourier matrix after a
+  frequency cutoff, dominate by that graph norm and remove the cutoff.
+  Conversely any strong generator derivative has those distributional
+  components; they require $v \in H^{1/2}$ and $\Delta u \in H^{-1/2}$, hence $u
+  \in H^{3/2}$. No operator-norm differentiability of the group is used.
+
+  Start spectral data in $D(A)\times D(A^{1/2}) = D(H_V)\times H^1$. The
+  preceding graph-level estimates give continuous graph trajectories and $C^1$
+  trajectories in $H^1\times L^2$, with $u_t = v$, $v_t = -H_Vu$. This follows
+  first on bounded spectral cutoffs and then uniformly on finite horizons in the
+  graph norms by spectral dominated convergence
+  and~\cite{teschl:14:mathematical}*{Theorem~3.2, p.~104, (3.29)--(3.33)}. The
+  projections $1_{[1,n]}(A)$ approximate every graph datum and the same weighted
+  matrix bounds control all cutoff tails on those horizons. Graph embedding
+  gives continuity in $D(A_0)$ and $z_t = A_0z+L_Ez$ in $E$, where $L_E = L|_E$.
+  The strong-group chain rule on this domain yields
+  \[
+    S_E(-t)z(t)=z(0)+\int_0^t S_E(-s)L_Ez(s)\ud s .
+  \]
+  Graph data are dense in $E$: spectral cutoffs make $D(A)$ dense in $D(A^{1/2})
+  = H^1$, and $H^1$ is dense in both $H^{1/2}$ and $H^{-1/2}$. Boundedness on
+  finite horizons extends this identity to all $E$. Volterra uniqueness by
+  Picard iteration identifies the physical wave. No $D(A^{3/4}) = H^{3/2}$
+  assertion is needed.
+
+  The two domain requirements are different: the free generator requires
+  displacement in $H^{3/2}$ and velocity in $H^{1/2}$, while the spectral
+  graph data are in $D(H_V)\times H^1$. The embedding just proved supplies the
+  first requirement, and the ordinary Sobolev inclusion supplies the second.
+  This justifies differentiating the interaction picture on those data before
+  passing by density.
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify the ordinary and Young flows on the
+  extended phase.
+  On $F$, bounded $L$ and strongly continuous $S_F$ similarly define a unique
+  Duhamel flow. On $[0,T]$, the $n$th Volterra term has bound
+  $C_T^{n+1}\|L\|^nT^n/n!$. Uniqueness makes horizons consistent and gives
+  composition. Its interaction primitive is $\int_0^t S_F(-s)LS_F(s)\ud s$.
+  Compactness of $L$, and strong continuity of the group and its adjoint, give
+  norm-continuity of the conjugated compact operator, as in
+  Proposition~\ref{P:cameron-actual-embedding}. Thus, this primitive is
+  Lipschitz and its ordinary equation is exactly the Young equation.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We bound both constant response columns.
+  For initial $(e,c_1,c_2)$ the constant coordinates are $(c_1+tc_2,c_2)$ and
+  the $E$ component is
+  \[
+    P_V^E(t)e+\int_0^t P_V^E(t-s)(0,V(c_1+sc_2))\ud s .
+  \]
+  The bounded $E$-valued Fubini argument proving \eqref{E:compact-F-block}
+  applies: substitute the $E$ Duhamel formula under this integral and
+  interchange the absolutely bounded finite time triangle. It solves the full
+  system, and uniqueness identifies it. No ground positivity or gap is used. The
+  forcing norm is at most $K(1+s)|(c_1,c_2)|$. Since $\lambda \ge 0$ and
+  $\int_0^t(1+t-s)(1+s)\ud s \le (1+t)^3$, the full norm is at most
+  \[
+    (1+t)^3e^{\lambda t}
+    \{8(1+K)^2\|e\|+[8K(1+K)^2+1]|(c_1,c_2)|\}.
+  \]
+  The coefficient of $\|e\|$ is bounded by $8(1+K)^3$. The coefficient of the
+  constant-coordinate norm is at most $9(1+K)^3$, since $K\le1+K$ and
+  $1\le(1+K)^3$. Cauchy--Schwarz on these two scalar components therefore
+  gives the factor $\sqrt{8^2+9^2}$ in the following estimate.
+  Scalar Cauchy--Schwarz and $\sqrt{8^2+9^2} < 13$ bound this by
+  $13(1+K)^3(1+t)^3e^{\lambda t}\|(e,c_1,c_2)\|_F$. This implies the stated
+  sufficient bound. This proves Proposition~\ref{P:signed-physical-wave}.
+\end{proof}

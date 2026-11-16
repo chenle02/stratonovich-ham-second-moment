@@ -1,0 +1,17 @@
+\begin{theorem}[Second-moment limit]\label{T:intro-second-moment}
+  \label{G:sharp}
+  For every fixed $x \in \R^d$,
+  \begin{equation}\label{E:intro-second-moment-limit}
+    \lim_{T\to\infty}T^{-\kappa}\log\E u^2(T,x)
+    =C_2(\Gamma,\alpha_0),
+  \end{equation}
+  where
+  \begin{equation}\label{E:intro-second-moment-constant}
+    C_2(\Gamma,\alpha_0)
+    =\sup_{\Psi\in\mathcal{C}_{\mathrm{pos}}}
+    \left\{2\int_I\sqrt{\mathcal{R}_\Psi(s)}\ud s
+    -\frac{v_\Psi}{2}\right\}.
+  \end{equation}
+  If $\Gamma \ne 0$, then $0 < C_2(\Gamma,\alpha_0) < \infty$.
+  If $\Gamma = 0$, then $u(T,x) = 1$ and $C_2(0,\alpha_0) = 0$.
+\end{theorem}

@@ -250,6 +250,29 @@ RP009 launched `2026-11-16T07:20:29.428431+00:00` as `readable-unmasked-variatio
 RP010 launched `2026-11-16T07:20:30.609027+00:00` as `readable-temporal-equilibrium-16ef7a4f0e8e43f1bf9627661c3af736`.
 RP011 launched `2026-11-16T07:20:31.761046+00:00` as `readable-spatial-occupation-bfebc8bbf43349c39a703c0c948d2b07`.
 
+### Remaining174 paired proofs frozen with explicit public-step coverage
+
+RP013--RP038 now have exact-source frozen packets:174 remaining proof pairs,
+229 reconstructed payload frames. Their scientific scope and source frames
+are unchanged; the still-unlaunched contracts now require an inventory of every
+original target step (including unchanged portions), public working and a
+separate reconstruction flag, with honestPARTIAL when a step is missing.
+Word targets allow5,000 ordinary/7,000 main-batch words without sacrificing
+needed deductions. This makes the existing requirement explicit after the
+RP009/RP011 bounded omissions; no old report/grade is rewritten. Before/after
+contract hashes and source payload identity are retained per packet.
+
+Caps are65,536 for ordinary files and98,304 for main batches; timeout3,600
+seconds each, same fresh pure tool-denied DeepSeekV4Pro, one attempt/no
+coordinator retry/continuation/fallback. Root checked every retained Git byte
+range, proof inventory and frame offset after refinement. The95 NoGo/main
+pairs also received a second offline binding check;3 outside-proof admin
+history passages are omitted symmetrically for blindness, with no mathematical
+hypothesis/proof/caveat omitted. Offline checks are not scientific review.
+Each actual launch must recheck frozen hashes and effective tool denial.
+RP007 repeat remains a separate unlaunched proposal, excluded from this queue.
+No independent result or adoption is claimed for these remaining packets.
+
 The older publication-frontier headings below are dated snapshots; they do
 not authorize restarting their old completed calls or override this narrow
 assignment and Le's later recorded decisions.
