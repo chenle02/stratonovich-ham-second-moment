@@ -36,6 +36,18 @@ reread series and later source versions at the final synchronization gate.
 
 
 
+**Latest Chapters 4-8 FINAL handoff:** Agent 24 explicitly releases the
+15 files at tip `032fb8a2` after reader dispositions (`077b3b7ca46e`). Root
+verifies all 15 file blobs equal that tip, their committed map new_rev values
+match, and outside-proof bytes match cdde; all 91 proof pairs remain assigned.
+RP044-RP058 packets are being prepared privately in small batches. No launch
+until Agent 16 verification and root exact packet/closure/hash/contract freeze;
+max three processes includes other live calls. Older reports retain their
+original source bindings. Reported old-text defects remain untouched pending
+Le's decision, separate from this release of current immutable inputs; later
+edits need new source bindings. Chapters 10, 11 and main remain nonfinal.
+See `CH4-8-POSTREADER-FINAL-SOURCE-HANDOFF.json` in the policy directory.
+
 **Earlier successor reports now curated:** RP039/RP040/RP041 returned
 three normal-stop reports, two PASS/high and one PASS_WITH_NOTES/high.
 Delegated author-side QA, reviewed by root, checks all 14 public deductions
