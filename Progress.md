@@ -31,10 +31,10 @@ cap 65536, wall timeout 3600 seconds. No coordinator retry, continuation or
 fallback. Only this packet is assigned by this entry; other rewritten modules
 need their own frozen packets and records.
 
-At this checkpoint the packet is prepared, not dispatched, and no independent
-verdict is claimed. Next: execute the authorized scoped reread after the
-recorded route/source checks, then read and adjudicate its entire public
-report. A provider error or missing report is recorded, not counted as a pass.
+The authorized scoped reread RP001 was launched at
+2026-11-16T04:59:51.429959+00:00 after the recorded route/source checks.
+Its current state is RUNNING; no independent verdict is claimed. On
+completion, read and adjudicate the entire public report. A provider error or missing report is recorded, not counted as a pass.
 The proof-step remap and the companion sentences quoting edited steps remain
 Agent 22's separate obligation; this reread does not certify that mapping.
 Final source/PDF/ledger/disclosure/combined/review-sync reconciliation remains
