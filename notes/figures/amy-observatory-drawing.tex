@@ -36,6 +36,17 @@
   (5.0,7.6),(1.4,4.5),(8.9,7.3),(11.2,5.0),(14.0,6.0)} {
   \fill[hamgold!30] \p circle (.03);
   }
+  % hidden in the sky: Jupiter with its four moons, as Galileo drew them, and
+  % Saturn with its ring, as Huygens explained it
+  \fill[hamgold!40] (3.6,7.25) circle (.085);
+  \draw[hamgold!70!black,line width=.3pt] (3.525,7.275)--(3.675,7.275)
+  (3.525,7.225)--(3.675,7.225);
+  \foreach \x in {3.27,3.41,3.8,3.98} {
+  \fill[white] (\x,7.25) circle (.022);
+  }
+  \fill[hamgold!40] (12.0,5.3) circle (.065);
+  \draw[hamgold!40,line width=.5pt,rotate around={20:(12.0,5.3)}] (12.0,5.3)
+  ellipse [x radius=.17,y radius=.05];
   % the star the driver steers by
   \fill[hamgold!45] (13.7,5.4) circle (.09);
   \draw[hamgold!45,line width=.5pt] (13.7,5.15)--(13.7,5.65) (13.45,5.4)--(13.95,5.4);
