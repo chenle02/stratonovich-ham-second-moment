@@ -14,10 +14,12 @@ Files 16, 17 and 18 are now FINAL at `0816c195`, `9df46108` and `484ed7f4`,
 respectively. This supersedes their provisional editorial status below.
 Register the new source bindings; retain old RP014/RP015/RP016 reports and
 all their mathematical/protocol limits on their exact earlier sources.
-Before new provider work, confirm Agent 16 final-commit verification and the
-applicable authorization for successor inputs; the exact-input Choice B
-record itself is unchanged. No new call or prior-run relaunch follows from
-this metadata entry. The remaining 25 files await per-file final handoffs.
+Agent 16 has now verified all three final commits and relays Le directly
+chose "Yes, Choice B rules" (`fe4efb212ca4`) for fresh rereads of every
+second-pass-changed final file, same route/profile and retry disclosures,
+no tools, fallback or grade rerun. Files 16-18 may run now after exact packet
+freeze and preflight, with new successor IDs; earlier reports stay bound.
+No provider call has yet been made on these successor inputs. The remaining 25 files await per-file final handoffs.
 The already-started Claude Fable reader continues as an optional editorial
 aid with prompt, actual identity, stop points and dispositions retained.
 See `CHAPTER9-FINAL-SOURCE-HANDOFF.json` in the policy record directory.
