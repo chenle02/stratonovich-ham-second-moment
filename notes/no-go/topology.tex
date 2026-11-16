@@ -32,6 +32,16 @@ bilinear first-driver tests.
 \end{nogo}
 
 \begin{proof}
+  We first construct a deterministic coefficient response that is not
+  Hilbert--Schmidt, even after the stated observation cutoff. We then realize
+  that coefficient as an actual covariance mean. Compatibility with a
+  mean-square Hilbert--Schmidt driver would make this response
+  Hilbert--Schmidt, giving a contradiction.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the deterministic response and its
+  weighted Fourier kernel.
   First consider a deterministic coefficient $h(u,x)=k(u)H(x)$, where
   $H\in C_c^\infty(\R^d)$ is nonzero, even and nonnegative, and
   $k\in W^{1,\infty}[0,T]$ satisfies $k\ge k_0>0$. Write
@@ -74,6 +84,10 @@ bilinear first-driver tests.
   All Fourier and time exchanges are justified on Schwartz pairs by the rapid
   decay of $\widehat H$ and then by density.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We prove the high-frequency Hilbert--Schmidt
+  divergence.
   Let $J_0=\int_0^T k>0$ and
   $B_0=\|k\|_\infty+T\|k'\|_\infty$. Choose $\epsilon>0$ so that
   $\epsilon\le1$, $\epsilon T\le1$ and
@@ -111,6 +125,10 @@ bilinear first-driver tests.
   Hilbert--Schmidt operators and their complexifications have the same norm,
   so Fourier complexification has not changed the conclusion.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We retain the obstruction after compact
+  observation.
   Suppose that $\operatorname{supp}H\subset B_A$, and let $\chi=1$ on
   $B_{A+T+1}$. With $D_\chi$ denoting multiplication of both phase coordinates,
   finite propagation gives
@@ -125,6 +143,10 @@ bilinear first-driver tests.
   coefficient acts only in $B_A$, and the resulting output lies in
   $B_{A+T}$. Thus the failure persists after this compact observation.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We realize the coefficient as a covariance mean of
+  the given noise.
   We next produce $h$ as an actual covariance mean. Choose $L_0\ge1$ with
   $0<\Gamma(B_{L_0})<\infty$, and an even nonnegative $q\in C_c^\infty$
   equal to at least one on $B_{2L_0+1}$. Set $U=\Gamma*q$. Local finiteness
@@ -146,6 +168,10 @@ bilinear first-driver tests.
   locally integrable. Also $\E Z^2=Q\int_0^1 f(u)k(u)\ud u\in(0,\infty)$.
   The mask is applied after the covariance convolution: $H=\zeta(\Gamma*q)$.
 
+
+  \medskip
+  \noindent\textit{Step 5.~}We state the compatible rows and derive the
+  Hilbert--Schmidt contradiction.
   It remains to specify the compatible first-driver form with the correct
   Sobolev adjoint. For real Schwartz phases $z,w$ put
   \[
@@ -302,6 +328,15 @@ Proposition~\ref{P:cameron-full-mean}.
   $(0,m_Rh_\Psi(s)(v+c),0,0)$.
 \end{nogo}
 \begin{proof}
+  We translate unit controls beyond the supports of a fixed projection while
+  enlarging the physical mask to contain them. A unit constant-displacement
+  input then gives a nonvanishing operator lower bound, showing why
+  fixed-radius compactness is not uniform in radius.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct unit controls killed by the fixed
+  projection.
   Use the temporal equilibrium density $f_a$ of
   Lemma~\ref{L:temporal-equilibrium}, so that
   $\int_0^1|s-t|^{-a}f_a(t)\ud t=1$ and
@@ -319,6 +354,10 @@ Proposition~\ref{P:cameron-full-mean}.
   $P_J\Psi_n=0$ exactly. Choose $R_n$ to contain $\operatorname{supp}q_n$
   in the plateau of $m_{R_n}$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We retain a positive response inside the growing
+  mask.
   The constant-displacement input $e=(0,0,1,0)$ has norm one. The phase dual
   \[
     w_n=(0,\Lambda q_n/\|q\|_{H^{1/2}},0,0)
@@ -398,6 +437,14 @@ compactness at that endpoint.
   including $r=\infty$, and it is not compact into $L^{2/a}(I)$.
 \end{nogo}
 \begin{proof}
+  We normalize a concentrating temporal test in the covariance norm. Its local
+  lower bound disproves boundedness above the threshold; pointwise decay away
+  from its center separately disproves compactness at the endpoint.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We compute the normalized concentration and its
+  local norm lower bound.
   Choose $t_0\in I$ and a nonzero nonnegative
   $\phi\in C_c^\infty(-1,1)$. Put
   \[
@@ -418,6 +465,10 @@ compactness at that endpoint.
   $\|C_af_\epsilon\|_{L^r}\ge c_r\epsilon^{1/r-a/2}$, and the analogous
   supremum lower bound is $c\epsilon^{-a/2}$. This proves unboundedness above
   $2/a$.
+
+  \medskip
+  \noindent\textit{Step 2.~}We rule out a strongly convergent endpoint
+  subsequence.
   For every fixed $t\ne t_0$, on the other hand,
   $C_af_\epsilon(t)=O_t(\epsilon^{a/2})\to0$.
   At $r=2/a$ the norm lower bound stays strictly positive. If a subsequence
@@ -496,6 +547,14 @@ explicit orthogonal vector explains the role of the auxiliary noise.
   $\operatorname{Var}(\mathcal I(v)\mid\sigma(W))>0$.
 \end{nogo}
 \begin{proof}
+  We construct a feature-space vector orthogonal to every raw-noise test but
+  not to the cutoff point feature. This separates the point feature from the
+  closed noise image and gives a positive conditional variance on the fixed
+  extension.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the finite-norm witness.
   The heat profile has finite strictly positive norm:
   \[
     \|g\|_{H_\Gamma}^2=\int p_{2\epsilon}(y)\Gamma(\ud y)>0.
@@ -522,6 +581,9 @@ explicit orthogonal vector explains the role of the auxiliary noise.
     +\|\varphi\|_2^2\int\lambda p^2\ud\nu_a\right)<\infty,
   \]
   where the cross term vanishes because $\int\varphi'\varphi=0$.
+
+  \medskip
+  \noindent\textit{Step 2.~}We prove orthogonality to the raw-noise image.
   For a smooth compact raw tensor $F$ the isometry is
   \[
     \Phi F(\lambda,r)=\sqrt{2\lambda}
@@ -541,6 +603,10 @@ explicit orthogonal vector explains the role of the auxiliary noise.
     =\left(\int_{t>0}\langle F_t,g\rangle_{H_\Gamma}
     \varphi(t)\ud t\right)\int p\ud\nu_a=0.
   \]
+
+  \medskip
+  \noindent\textit{Step 3.~}We separate the point feature and obtain the
+  conditional variance obstruction.
   Density and continuity give $q\perp K$. The same calculation for the point
   feature instead gives
   \[

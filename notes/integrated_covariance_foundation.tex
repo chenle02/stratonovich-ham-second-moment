@@ -55,6 +55,15 @@ integrals agree with the tempered pairings.
 \end{proposition}
 
 \begin{proof}
+  We first compute the Gaussian transform in the stated Fourier convention. We
+  then use positivity and homogeneity to bound it, and compare the Gaussian
+  with the indicator of a ball.
+
+  \medskip
+  \noindent\textit{Step 1.~}We compute the transform and its constant.
+  Differentiating the Gaussian Fourier integral below is justified by its
+  integrable first moment, and Gaussian decay makes the integration-by-parts
+  boundary terms vanish.
   Temperedness gives finiteness of $M_\Gamma$. Its positivity follows from
   $\Gamma \ne 0$. To check the Fourier constant, set $J(b) = \int_\R
   e^{-Ax^2}e^{ibx}\ud x$ for $A > 0$. Squaring the real Gaussian integral and
@@ -67,6 +76,9 @@ integrals agree with the tempered pairings.
   \]
   Apply~\eqref{E:masked-spectral-convention} to the single Schwartz test
   $e^{-r^2|x|^2/4}e^{-iy\cdot x}$ to obtain \eqref{E:masked-gaussian-transform}.
+
+  \medskip
+  \noindent\textit{Step 2.~}We use positivity and homogeneity.
   Its left side is nonnegative. Taking the absolute value on the right removes
   the complex phase because $\Gamma$ is nonnegative. The pushforward of $\Gamma$
   by $x \mapsto rx$ assigns mass $r^{\alpha-d}\Gamma(A)$ to a Borel set $A$.
@@ -74,6 +86,8 @@ integrals agree with the tempered pairings.
   \[
     \int e^{-r^2|x|^2/4}\Gamma(\ud x) = r^{\alpha-d}M_\Gamma.
   \]
+  Multiplying the last equality by the prefactor $r^d/(2\sqrt{\pi})^d$ gives
+  $r^\alpha M_\Gamma/(2\sqrt{\pi})^d$.
   This proves the Gaussian bound. On either ball $B(y,r)$ the integrand
   $e^{-|\xi-y|^2/r^2}$ is at least $e^{-1}$, proving the mass bound. This proves
   Proposition~\ref{P:masked-spectral-growth}.
@@ -104,11 +118,25 @@ L > 0$. Define
 \end{proposition}
 
 \begin{proof}
+  We first establish the properties and translated growth bound of the
+  auxiliary measure. We then prove the Fourier norm inequality by a weighted
+  Cauchy--Schwarz estimate.
+
+  \medskip
+  \noindent\textit{Step 1.~}We examine the density and its ball masses.
+  For fixed $R$, translating the argument of a Schwartz function over a
+  compact set preserves a common rapid-decay bound. Choose the decay power
+  large enough to be integrable against the polynomially growing measure
+  $\mu$.
   Schwartz decay of $k_R$ and polynomial growth of $\mu$ show that
   $\rho_R(\eta)$ is finite at every $\eta$. On compact sets of $\eta$, the
   integrands have a common integrable bound. Dominated convergence therefore
   makes $\rho_R$ continuous, and $\nu_R$ is Radon. Since $\zeta$ is real,
   $k_R(-u) = \overline{k_R(u)}$. Evenness of $\mu$ gives evenness of $\rho_R$.
+  To bound a ball mass, write the density as its nonnegative integral and
+  exchange the two integrations. For fixed $\xi$, set $u = \xi-\eta$. The
+  condition $\eta \in B(y,r)$ becomes $\xi \in B(y+u,r)$ when the integrations
+  are exchanged again.
   Tonelli's theorem gives
   \[
     \nu_R(B(y,r)) = c_d^2L\int |k_R(u)|\mu(B(y+u,r))\ud u.
@@ -117,11 +145,19 @@ L > 0$. Define
   \eqref{E:masked-auxiliary-growth}. Polynomial growth on centered balls proves
   temperedness by the same dyadic argument as above.
 
+  \medskip
+  \noindent\textit{Step 2.~}We justify the Hilbert-valued convolution
+  identity.
+  The finite-dimensional orthogonal projections used below have norm at most
+  one, so their Fourier integrals have the same Schwartz majorants.
   Bochner Fourier integration gives
   \[
     \widehat{\zeta_RF}(\xi)
     = c_d\int k_R(\xi-\eta)\widehat{F}(\eta)\ud\eta.
   \]
+  The factor $c_d$ is the product formula for the unitary Fourier transform.
+  We justify the same identity for vector-valued functions by approximation,
+  so that the convolution is a Bochner integral.
   For scalar Schwartz functions this follows by Fourier inversion and absolute
   integrability. It follows next for finite-rank Hilbert-valued functions. For
   general $F$, take projections onto the successive spans of a countable
@@ -134,6 +170,9 @@ L > 0$. Define
     \|\widehat{\zeta_RF}(\xi)\|_H^2
     \le c_d^2L\int |k_R(\xi-\eta)|\|\widehat{F}(\eta)\|_H^2\ud\eta.
   \]
+
+  \medskip
+  \noindent\textit{Step 3.~}We estimate the convolution in norm and integrate.
   Integrating against $\mu$ and applying Tonelli's theorem proves
   \eqref{E:masked-hilbert-fourier}. Its right side is finite by Schwartz decay
   and temperedness of $\nu_R$. This proves
@@ -165,6 +204,15 @@ $|t-s|^{-a}$. We now complete the temporal tests in that form.
 \end{lemma}
 
 \begin{proof}
+  We prove positivity by expressing the temporal kernel as a positive mixture
+  of square forms. A uniform row-integral bound then gives the continuous
+  inclusion and the completion statements.
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove positivity of the covariance form.
+  For fixed $t$, the kernel row integral is
+  $[t^{1-a}+(T-t)^{1-a}]/(1-a)\le2T^{1-a}/(1-a)$; symmetry gives the same
+  bound for columns.
   Write $\Gamma_E$ for Euler's Gamma function. Away from the null diagonal,
   \[
     |t-s|^{-a} = \frac1{\Gamma_E(a)}\int_0^\infty
@@ -181,6 +229,9 @@ $|t-s|^{-a}$. We now complete the temporal tests in that form.
   kernel row integral is at most $2T^{1-a}/(1-a)$. The same bound and $2|xy| \le
   |x|^2+|y|^2$ prove~\eqref{E:masked-time-schur}. A countable $L^2$-dense family
   of compact smooth tests is consequently dense in $H_a$, proving separability.
+
+  \medskip
+  \noindent\textit{Step 2.~}We explain the row bound and the completion.
   The complex quadratic form is the sum of those of the real and imaginary
   parts, since symmetry cancels the imaginary cross term. Thus, the same bound
   holds after complexification. Smooth density in $L^2$, together with the Schur
@@ -216,12 +267,22 @@ isonormal noise in~\eqref{E:cov}.
 \end{proposition}
 
 \begin{proof}
+  We first identify the spectral norm of the original noise. We then extend
+  masked evaluation by the auxiliary bound, and finally compare finite
+  Gaussian vectors by adding independent Gaussian noise.
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the original covariance norm.
   For real spatial Schwartz $f,g$, put $h(z) = \int f(y+z)g(y)\ud y$. Fourier
   inversion and Parseval give
   \[
     h(z) = \int e^{i\xi\cdot z}\widehat{f}(\xi)
     \overline{\widehat{g}(\xi)}\ud\xi.
   \]
+  The product of the two Fourier transforms is Schwartz, so the inverse
+  Fourier identity can be applied again. Evaluating its Fourier transform with
+  the positive sign reflects the frequency and contributes the factor
+  $(2\pi)^d$.
   Therefore,
   \[
     \int e^{i\xi\cdot z}h(z)\ud z
@@ -237,6 +298,9 @@ isonormal noise in~\eqref{E:cov}.
   topology. The spectral form is continuous in that topology, admitting
   $\mathcal{D}$ in the same completion.
 
+  \medskip
+  \noindent\textit{Step 2.~}We extend masked evaluation on the same
+  probability space.
   Proposition~\ref{P:masked-auxiliary-norm}, applied with $H =
   H_a^{\mathbb{C}}$, gives $\E W(\zeta_RF)^2 \le N_R(F)^2$. It annihilates
   auxiliary-null tests. An auxiliary Cauchy sequence thus gives a Cauchy
@@ -246,6 +310,13 @@ isonormal noise in~\eqref{E:cov}.
   their characteristic functions prove that the limits remain jointly centered
   Gaussian.
 
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We compare finite Gaussian images.
+  The comparison uses conditional Jensen: adding an independent centered
+  Gaussian vector leaves the conditional mean of the evaluation vector
+  unchanged, and the $p$th power of a norm is convex for $p\ge1$.
   For the finite family let $A$ be the covariance matrix and $B$ the auxiliary
   Gram matrix. Applying the norm inequality to $\sum_i b_iF_i$ gives
   $b^{\mathsf{T}}Ab \le b^{\mathsf{T}}Bb$ for every real vector $b$.
@@ -274,6 +345,11 @@ asserted.
 \end{proposition}
 
 \begin{proof}
+  We exhibit a test with zero unmasked variance and positive masked variance.
+  This rules out any finite comparison constant.
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the covariance in this example.
   Fourier inversion on Schwartz tests gives $\mu =
   (2\pi)^{-1}\ud\xi_1\delta_0(\ud\xi_2)$ in the stated spectral convention. The
   measure $\Gamma$ is nonnegative, even, positive definite and tempered, with
@@ -283,6 +359,9 @@ asserted.
   \[
     V(g) = \int_\R\left(\int_\R g(x_1,x_2)\ud x_2\right)^2\ud x_1.
   \]
+
+  \medskip
+  \noindent\textit{Step 2.~}We construct the mask and a noise-null test.
   Choose real even $\chi \in C_c^\infty(\R)$ equal to one on $[-1,1]$ and zero
   outside $[-2,2]$. For example, on $1 < r = |x| < 2$ use
   \[
@@ -326,6 +405,12 @@ Lemma~\ref{L:masked-time-completion}.
 \end{lemma}
 
 \begin{proof}
+  We express the covariance through the time difference and rescale the
+  interval to unit length. At low frequency we use absolute values; at high
+  frequency we separate the singular endpoint before integrating by parts.
+
+  \medskip
+  \noindent\textit{Step 1.~}We express and rescale the covariance.
   Put $c(v) = \int_s^{s+h-v}A(u+v)\overline{A(u)}\ud u$ for $0 \le v \le h$.
   Differentiation at the moving endpoint gives
   \[
@@ -345,6 +430,11 @@ Lemma~\ref{L:masked-time-completion}.
   h\rangle^{a-1} \ge 2^{(a-1)/2}$. The claimed constant is sufficient in this
   case.
 
+  The low-frequency constant check is $2/(1-a)\le C_0(a)2^{(a-1)/2}$, after
+  including the factor $2h^{2-a}$.
+  \medskip
+  \noindent\textit{Step 2.~}We separate the singular endpoint at high
+  frequency.
   Now suppose $k = |\omega h| > 1$. On $[0,1/k]$ the integral is at most
   $K^2k^{a-1}/(1-a)$. On $[1/k,1]$, integrate the exponential by parts. The
   endpoint at one vanishes, while the other endpoint contributes at most
@@ -389,6 +479,9 @@ next.
     \left\|\sum_j c_jv_j\right\|^2
     \le \left(\sum_j|c_j|\right)\sum_j|c_j|\|v_j\|^2.
   \]
+  This Hilbert-space inequality follows from the triangle inequality followed
+  by scalar Cauchy--Schwarz applied to $|c_j|^{1/2}$ and $|c_j|^{1/2}\|v_j\|$.
+
   The first coefficient sum is one. Apply
   Lemma~\ref{L:masked-temporal-modulation} to each mode. Two frequencies have
   absolute value $|r-\rho|$ and two have absolute value $r+\rho$. This gives one
@@ -413,11 +506,24 @@ next.
 \end{lemma}
 
 \begin{proof}
+  We replace low-frequency sine quotients by averages of cosines. The
+  trigonometric estimate applies to each integrand; a comparison of shifted
+  frequency weights then gives the stated constant.
+
+  \medskip
+  \noindent\textit{Step 1.~}We represent each factor without a singular
+  quotient.
   For $r \ge 1$, $b_r$ is a sine times a coefficient at most $\sqrt{2}$. For $0
   \le r \le 1$, the fundamental theorem of calculus gives
   \[
     b_r(t) = t\langle r\rangle\int_0^1\cos(vrt)\ud v.
   \]
+  For $r > 0$, integrate the derivative of $v \mapsto \sin(vrt)$ from zero to
+  one and divide by $r$. At $r = 0$, the right side is $t$, in agreement with
+  the definition.
+  Each low-frequency sine factor contributes one factor $t$ and one averaging
+  parameter; each high-frequency sine contributes a coefficient of absolute
+  value at most $\sqrt2$, while a cosine contributes neither.
   This includes $r = 0$. Hence, a product $F_rG_\rho$ is a scalar coefficient of
   absolute value at most two times a normalized integral of
   $t^jP_{r'}(t)Q_{\rho'}(t)$, where $j \in \{0,1,2\}$ and $|r'-r|,|\rho'-\rho|
@@ -429,6 +535,9 @@ next.
   the pointwise averages by continuity of the inclusion. Hilbert Jensen bounds
   the squared norm of an average by the average of the squared norms.
 
+  \medskip
+  \noindent\textit{Step 2.~}We bound each integrand and compare frequency
+  weights.
   Apply Lemma~\ref{L:masked-trig-products} to each integrand with $A(t) = t^j$.
   For $j = 0,1,2$, respectively, $M+hD$ is at most $1$, $T+1$ and $T^2+2T$. In
   every case $(M+hD)^2 \le (1+T)^4$. For real $x,e$, the triangle inequality and
@@ -437,6 +546,9 @@ next.
     \frac{\langle x\rangle}{1+|e|}
     \le \langle x+e\rangle \le (1+|e|)\langle x\rangle.
   \]
+  For the upper bracket comparison, view $\langle x\rangle$ as the Euclidean
+  norm of $(1,x)$ and use the triangle inequality. Applying that same upper
+  bound with $x+e$ and $-e$ gives the lower comparison.
   The changes in $h(r\pm\rho)$ have magnitude at most two, since $h \le 1$.
   Because $a-1 < 0$, each altered bracket to the power $a-1$ is at most
   $3^{1-a}$ times the original one. Apply these comparisons, Hilbert Jensen and

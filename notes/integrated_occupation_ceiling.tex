@@ -43,6 +43,15 @@ below.
 \end{lemma}
 
 \begin{proof}
+  We complete the square map in the spatial covariance Hilbert space. Its norm
+  bound makes a measurable occupation an $L^2$ covariance-valued field, so the
+  temporal inclusion applies. We then identify the physical pairing with a
+  smooth control and use Hilbert Cauchy--Schwarz.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We define the continuous square map by Sobolev
+  approximation.
   Approximate $f$ in $H^1$ by real compact smooth $f_n$.
   Proposition~\ref{P:spatial-four-linear} gives
   \[
@@ -56,6 +65,10 @@ below.
   proves the first identities. The same difference bound, first for smooth
   approximants and then by passage to the limit, proves continuity of $Q$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We construct the occupation vector in the original
+  covariance space.
   Thus, $F_g(s) = Q(g_s)$ is strongly measurable. Writing $b_s = \|\nabla
   g_s\|_2^2$, the unit norm and $0 < \alpha/2 < 1$ give
   \[
@@ -68,6 +81,10 @@ below.
   representative independence follow from the continuous physical pairing on
   $(H^1)^2$. Absolute time integrability follows from the same Schur bound.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify its pairing with the original smooth
+  control.
   Choose one compact smooth $\chi$ equal to one on all spatial supports of
   $\Psi_t$. For real $f \in H^1$, smooth approximation gives
   \[
@@ -114,6 +131,13 @@ below.
 \end{proposition}
 
 \begin{proof}
+  We bound the occupation ratio with the original temporal row bound and show
+  it is positive. We then dilate the whole occupation class and optimize the
+  resulting scalar energy to recover the exact penalty dependence.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove a positive finite occupation ratio.
   A unit $H^1$ profile has positive gradient energy: a zero weak gradient makes
   it constant, and an $L^2$ constant on $\R^d$ is zero. Hence, $0 < T(g) <
   \infty$. Spatial covariance Cauchy--Schwarz gives $B_\Gamma(g_s^2,g_t^2) \le
@@ -126,6 +150,10 @@ below.
   $\mathcal{O}$ and has positive $A$ by Proposition~\ref{P:spatial-four-linear}.
   This proves positivity and finiteness of $C_{\rm occ}$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We optimize spatial dilation over the same
+  occupation class.
   The map $(U_\ell g)_s(x) = \ell^{d/2}g_s(\ell x)$ is an $H^1$ isomorphism
   preserving unit mass and strong measurability. It has inverse $U_{1/\ell}$ and
   is a bijection on $\mathcal{O}$. The physical Radon change of variables gives
@@ -160,6 +188,14 @@ below.
 \end{lemma}
 
 \begin{proof}
+  We choose near-maximizing Rayleigh tests from one countable dense family. A
+  first-index rule makes the chosen occupation strongly measurable; the
+  bounded potential controls its kinetic energy and allows the physical
+  covariance pairing estimate.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We choose a measurable near-maximizing occupation.
   The real $H^1$ space is separable, for example by its isometric embedding
   $f\mapsto(f,\nabla f)$ into a finite product of $L^2$ spaces. Compact smooth
   density therefore supplies a countable real family. Discard zero and normalize
@@ -175,6 +211,10 @@ below.
   $f_1$ on the remaining cells converge pointwise in $H^1$, proving strong
   measurability. A null-set representative may be filled by $f_1$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound its kinetic energy and integrate the
+  Rayleigh inequality.
   With $H_\Psi = \sup_{s,x}h_{\Psi,s}(x) < \infty$, the selection implies
   \[
     b(g_\varepsilon(s))
@@ -224,7 +264,22 @@ display parameter $b$ does not change the temporal exponent $a$.
 \end{theorem}
 
 \begin{proof}
+  We first optimize the kinetic budget in the near-occupation inequality to
+  bound the integrated rate by a power of the original variance. We then
+  optimize that variance in the reward-minus-cost expression and rewrite the
+  result using the occupation energy.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We optimize the kinetic budget before removing the
+  selection error.
   Fix $\Psi$ and write $v = v_\Psi$, $C = C_{\rm occ}$ and $\beta = \alpha/4$.
+  Take $T=T(g_\varepsilon)>0$ from the selected occupation; by the definition
+  of $C_{\rm occ}$, $A(g_\varepsilon)\le C_{\rm occ}T^{\alpha/2}$, which
+  converts its covariance term into $\sqrt{vC}\,T^\beta$.
+  At the positive critical point $T_*$ of the scalar maximization below,
+  $T_*=\beta\sqrt{vC}\,T_*^\beta$, so the value is
+  $(1-\beta)\sqrt{vC}\,T_*^\beta$.
   Lemma~\ref{L:occupation-rayleigh-selection} gives $I_\Psi^2 \le
   \sqrt{vC}T^\beta-T+\varepsilon$ for some $T > 0$. Bound it by the supremum
   over all $T \ge 0$ before sending $\varepsilon\downarrow0$. If $v = 0$, that
@@ -236,6 +291,13 @@ display parameter $b$ does not change the temporal exponent $a$.
     I_\Psi\le Dv^{1/q},\qquad
     D=\sqrt{q/4}(\alpha/4)^{\alpha/(2q)}C^{1/q}.
   \]
+
+  \medskip
+  \noindent\textit{Step 2.~}We optimize the variance and keep the exact
+  Gaussian half-cost.
+  For the constant computation below, $4^{-\alpha/2}=2^{-\alpha}$ and
+  absorbing the outside factor $1/2$ into the $1/k$ power contributes
+  $2^{-k}$, whose product is $2^{-3}$ because $k+\alpha=3$.
   The scalar function $\mathfrak{c} Dv^{1/q}-v/2$ vanishes at zero, tends to
   minus infinity, and has strictly decreasing derivative. Its unique positive
   maximum is at $v_* = (2\mathfrak{c} D/q)^{q/k}$, with value $kv_*/2$. Direct
@@ -271,6 +333,10 @@ display parameter $b$ does not change the temporal exponent $a$.
 \end{corollary}
 
 \begin{proof}
+  We combine the spatial ratio estimate with the occupation ceiling for the
+  common-energy bracket. We then compare the scalar maps by strict convexity,
+  keeping the kinetic penalty normalization explicit.
+
   Insert $C_{\rm occ} \le K_0R_{\mathrm{sp}}$ into
   \eqref{E:occupation-score-ceiling} and use \eqref{E:spatial-energy-map}. This
   gives the upper bracket; the lower is \eqref{E:spatial-static-energy-score}

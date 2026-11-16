@@ -26,6 +26,17 @@ pp.~61--62}.
 \end{lemma}
 
 \begin{proof}
+  We separate small drivers, where one contraction gives a linear logarithmic
+  bound, from larger drivers, where a partition gives the power bound. We then
+  use a fixed partition on a bounded driver ball to control both the evolution
+  and its inverse in the Hölder norm.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove the refined growth bound in the two
+  driver-size regimes.
+  The derivative of $x\mapsto-\log(1-x)$ is at most two on $[0,1/4]$, giving
+  the linear logarithmic bound in the small-driver case below.
   Let $c_\theta = 2\max(1,C_\theta)$ for the primary Young constant. The
   complete scaled norm $N_\ell(V) = \sup\|V\|+\ell^\theta[V]_\theta$ satisfies
   $N_\ell(\int_a^\cdot\ud D\,V) \le c_\theta[D]_\theta\ell^\theta N_\ell(V)$, as
@@ -38,6 +49,10 @@ pp.~61--62}.
   bound. At $d = 0$, $U_D = I$, proving~\eqref{E:young-upper-refined-growth}
   without a prefactor.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound the global evolution and inverse on a
+  fixed driver ball.
   On the ball $\|H\|_\theta \le K$ choose one uniform equal partition with ratio
   at most $1/4$. Each local evolution $Q$ has $N_\ell(Q) \le 4/3$ and
   $\sup\|Q-I\| \le 1/3$. Its Neumann inverse is bounded by $3/2$. Products give
@@ -72,6 +87,14 @@ a uniform bound on every block.
 \end{proposition}
 
 \begin{proof}
+  We conjugate the perturbation by the deterministic evolution to form a new
+  Young driver. We verify the resulting product identity directly from
+  increments, preserving the left multiplication order, and then apply the
+  refined growth bound only to the perturbation driver.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We form the conjugated perturbation driver.
   Put $U = U_H$, $R = U^{-1}$ and $G(s)Z = R(s)ZU(s)$.
   Lemma~\ref{L:young-upper-growth} makes $G$ a $C^\theta$ path of bounded linear
   maps on $\mathcal{B}(\mathcal{X})$, uniformly bounded on the fixed ball. Thus,
@@ -90,10 +113,22 @@ a uniform bound on every block.
     +O(|t-s|^{2\theta})
     =(H+X)_{s,t}P(s)+O(|t-s|^{2\theta}).
   \]
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the product as the full Young
+  evolution.
+  Each interval length to the power $2\theta$ is at most that length times the
+  mesh to the power $2\theta-1$, so summing bounds the remainder by the total
+  length times that mesh power.
   On any partition the remainder sum is bounded by a constant times
   $B\,\operatorname{mesh}^{2\theta-1} \to 0$. Left sums converge to the Young
   integral, so uniqueness yields $U_{H+X} = U_HU_Z$. This proves the product
   identity without assuming smooth density in the full H\"older norm.
+
+  \medskip
+  \noindent\textit{Step 3.~}We retain the deterministic endpoint factor in the
+  norm bound.
+  At $x=0$, the driver $Z$ is zero and $U_Z=I$.
   Apply~\eqref{E:young-upper-refined-growth} to $Z$, then left multiply by $A$
   and use submultiplicativity. No inverse or lower bound for $A$ is required.
   This proves Proposition~\ref{P:young-upper-multiplicative}.

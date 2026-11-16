@@ -90,6 +90,14 @@ a display parameter and $a=\alpha_0$ is the temporal exponent.
 \end{nogo}
 
 \begin{proof}
+  We compute the ratio of the two comparison formulas with the kinetic penalty
+  retained. At the stated parameters, its logarithm is negative, disproving
+  the proposed ordering of these formulas.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We express the comparison through its exact
+  logarithmic ratio.
   The energies are finite and positive by
   Proposition~\ref{P:raw-occupation-energy}. Put
   \[
@@ -105,6 +113,10 @@ a display parameter and $a=\alpha_0$ is the temporal exponent.
     \frac{2^mF_a(\mathcal{E}_\zeta^{\mathcal O})}{U_2}
     =\exp\left\{\frac{\Delta-(\alpha/2)\log(2\zeta)}{k}\right\}.
   \]
+
+  \medskip
+  \noindent\textit{Step 2.~}We evaluate the sign at the admissible parameter
+  point.
   At the stated parameters, $q=11/4$, $k=7/4$, and
   \[
     8\{\Delta-(\alpha/2)\log2\}
@@ -220,6 +232,15 @@ stochastic model.
 \end{nogo}
 
 \begin{proof}
+  We test the three discarded review steps separately: free-phase
+  contractivity, the unweighted series-factor identity, and the stronger
+  factorial denominator. Each calculation concerns the stated inference rather
+  than a new moment counterexample.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We disprove free-phase contractivity in the stated
+  norm.
   The vector $(0,1)$ has norm one, but its image under $S_0(t)$ has norm
   $\sqrt{1+t^2}>1$ for $t>0$. To transfer this to the whole-space phase,
   use exactly the inhomogeneous Sobolev norm of
@@ -242,12 +263,19 @@ stochastic model.
   $\langle\xi\rangle$ and $|\xi|$ matters: this is not a claim about the
   homogeneous energy norm. The valid estimate keeps a free-growth factor.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We test the proposed unweighted series product.
   The correct identity in the second assertion is
   $x^n/(n!)^\vartheta=A_n^\vartheta B_n^{1-\vartheta}$.
   At $\vartheta=3/4$, $n=1$ and $x=1$, its left side is one, whereas
   $A_1B_1=2\cdot(1/8)=1/4$. H\"older applies to the weighted product, as
   in the proof of Proposition~\ref{P:static-phase-all-orders}.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We test the proposed replacement of the factorial
+  denominator.
   For the third assertion choose the permitted spatial-white value
   $\alpha=1$ and $k=3$. Then $k!k^{(2-\alpha)k}=162<216=(k!)^3$.
   For $M>0$, an upper bound $M/162$ does not imply the smaller upper bound

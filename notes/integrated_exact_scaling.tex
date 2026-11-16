@@ -30,6 +30,23 @@ equality in~\eqref{E:raw-block-original-comparison}.
 \end{lemma}
 
 \begin{proof}
+  We first scale the regularized noise and the Green measure. We check that
+  the coefficient at each ordered vertex is the one in the fast equation. We
+  then pass the finite-order law identities to the canonical series at fixed
+  dilation.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We scale the source covariance and the Green
+  measure.
+  For the scalar powers below, substituting $r_T=T\delta$ and
+  $(3-\alpha)\kappa=4-\alpha-a$ with $\delta=T^{-\kappa}$ gives
+  $T^{1-a/2}r_T^{1-\alpha/2}=\delta^{-1/2}$; multiplying by $\delta$ gives the
+  companion identity used for the noise coefficient $\sqrt\delta$.
+  At each vertex the time substitution contributes the Jacobian $T$, the
+  Green-measure scaling contributes $r_T$, and the single Gaussian source
+  factor contributes the square root $T^{-a/2}r_T^{-\alpha/2}$ of its
+  covariance amplitude.
   At positive widths, time and space dilation of the Gaussian source gives
   covariance amplitude $T^{-a}r_T^{-\alpha}$. This follows distributionally from
   the homogeneous Radon covariance, including spatial white noise. Its source
@@ -48,6 +65,10 @@ equality in~\eqref{E:raw-block-original-comparison}.
     T^{-a/2}r_T^{2-\alpha/2}=\sqrt\delta,\qquad
     T^{1-a/2}r_T^{1-\alpha/2}=\delta^{-1/2}.
   \]
+
+  \medskip
+  \noindent\textit{Step 2.~}We match the scaled vertex with the fast-equation
+  vertex.
   The Green kernel for the forcing in~\eqref{E:exact-fast-equation} is
   $\delta^{-1}G_d((t-s)/\delta)$; after multiplication by $\sqrt\delta$ it gives
   exactly that vertex factor. Therefore, every finite list of fixed-order
@@ -57,6 +78,9 @@ equality in~\eqref{E:raw-block-original-comparison}.
   scaled side. Lemma~\ref{L:joint-fixed-order} and the absolute $L^2$
   summability in Lemma~\ref{L:vertex-crude} pass the identities to the canonical
   series and its second moment. No large-time and source limit are interchanged.
+  Finally, evaluate the law
+  identity at $t=1,x=0$ and use $T^{-\kappa}=\delta$ to obtain the logarithmic
+  moment identity.
   This proves the law assertion and~\eqref{E:exact-moment-scaling}. This proves
   Lemma~\ref{L:exact-canonical-scaling}.
 \end{proof}

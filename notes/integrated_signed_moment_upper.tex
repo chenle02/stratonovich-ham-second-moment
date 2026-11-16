@@ -26,7 +26,7 @@ $F_\delta$ of Lemma~\ref{L:tube-actual-endpoint}.
   \end{equation}
   Then $0 \le \mathcal{S}_R,V_{\rm up} \le 2+2C_{\rm mean}^2 < \infty$. The tube
   envelope $G_{\delta,B}$ of Proposition~\ref{P:tube-coarse-envelope} satisfies,
-  uniformly in $R \ge 1$ (in particular at the stochastic radius $R_\delta$),
+  uniformly in $R \ge 1$ (in particular at the radius $R_\delta$),
   \begin{equation}\label{E:signed-polynomial-envelope}
     G_{\delta,B}(\rho)\le A_0+A_1B^{3\nu}\rho^\nu
     +\eta_B b_{\delta,B}^\nu ,
@@ -44,6 +44,15 @@ $F_\delta$ of Lemma~\ref{L:tube-actual-endpoint}.
 \end{lemma}
 
 \begin{proof}
+  We bound the signed score by completing the square in the control norm. We
+  then use the explicit physical Young growth bound and weighted block
+  estimates to compute the radial envelope constants, keeping their dependence
+  on $B$.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain a finite uniform ceiling for the signed
+  score.
   The mean is linear, so $\mathcal{T}_R0 = 0$. Its free form has nonnegative
   gradient energy and spectral bottom zero; thus $\operatorname{Rate}_R(0) = 0$.
   Proposition~\ref{P:uniform-rate-averaging} gives $\operatorname{Rate}_R(\Phi)
@@ -59,6 +68,10 @@ $F_\delta$ of Lemma~\ref{L:tube-actual-endpoint}.
   rank, positive control or convergence of $\mathcal{S}_{R_\delta}$ is assumed.
   The finite ceiling is auxiliary-parameter dependent and need not be sharp.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We compute the block-length dependence of the tube
+  envelope.
   For $\|a\|_{\delta,p} \le b_{\delta,B}$, $\|\Phi\| \le \rho$ set $v_m =
   \|a_m\|_\theta$ and $h_m = \|(\mathcal{M}_{\delta,B,R}\Phi)_m\|_\theta$. The
   quantitative physical bound~\eqref{E:uniform-product-growth}, already
@@ -117,6 +130,14 @@ Lemma~\ref{L:tube-rayleigh-tail}.
 \end{proposition}
 
 \begin{proof}
+  We first identify the vanishing deterministic error on polynomial control
+  balls. We then split the exact radial integral at $M$: the bulk uses the
+  signed variational score, and the tail uses the explicit subquadratic
+  envelope.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We control the deterministic product error.
   The polynomial envelope and nonnegative rate make this supremum finite. It is
   an ordinary deterministic real number, not a random uncountable-radius
   supremum. At fixed $R$ the inner functions are continuous in controls and
@@ -129,6 +150,10 @@ Lemma~\ref{L:tube-rayleigh-tail}.
   bounds the inner limsup by a finite number, and $e_B \ge 0$ then
   proves~\eqref{E:signed-error-limit}.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We split the radial integral and keep both
+  prefactors.
   The exact Gaussian-enlargement bound is
   \[
     M_\delta\le\int_0^\infty\frac{\rho}{\delta}
@@ -141,6 +166,7 @@ Lemma~\ref{L:tube-rayleigh-tail}.
     +\mathcal{E}_{\delta,B,M}
     \le\mathcal{S}_{R_\delta}+\mathcal{E}_{\delta,B,M}.
   \]
+
   Taking suprema and integrating $\rho/\delta$ over $[0,M]$ gives the first term
   of~\eqref{E:signed-finite-moment}, even if $M^2/(2\delta) < 1$. This used
   $\rho^2 \ge \|\Phi\|^2$, not equality or an optimizer. For the tail apply
@@ -163,6 +189,15 @@ Lemma~\ref{L:tube-rayleigh-tail}.
 \end{proposition}
 
 \begin{proof}
+  We choose a polynomial cutoff large enough for the quadratic tail to
+  dominate. We first take the small-parameter limit at fixed block length, and
+  only then send the block length to infinity, keeping the same endpoint
+  moment on the left.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We choose a polynomial tail cutoff and bound the
+  logarithm of the sum.
   Choose any $c_{\rm ball} > 0$ and $\kappa_{\rm ball} > 3\nu/(2-\nu)$, and set
   $M_B = c_{\rm ball}B^{\kappa_{\rm ball}}$. The cutoff in
   Proposition~\ref{P:signed-moment-bulk-tail} holds for all sufficiently large
@@ -182,6 +217,10 @@ Lemma~\ref{L:tube-rayleigh-tail}.
     +\delta\log(M_B^2/(2\delta)),\\
     &A_0+\eta_Bb_{\delta,B}^\nu-M_B^2/4+\delta\log4\}.
   \end{align*}
+
+  \medskip
+  \noindent\textit{Step 2.~}We take the small-parameter limit before the
+  block-length limit.
   At fixed $B$, $b_{\delta,B} \to 0$. All logarithmic normalizers vanish,
   including $\delta\log(M_B^2/(2\delta)) = \delta\log(M_B^2/2)-\delta\log\delta
   \to 0$. The last limit follows from $te^{-t} \le 2/t$ for $t = -\log\delta >
@@ -191,6 +230,9 @@ Lemma~\ref{L:tube-rayleigh-tail}.
     \limsup_{\delta\downarrow0}\delta\log M_\delta
     \le\max\{V_{\rm up}+e_B,\ A_0-M_B^2/4\}.
   \]
+
+  The lower bound $M_\delta\ge1$ used here is~\eqref{E:point-fixed-finiteness}
+  of Lemma~\ref{L:point-actual-finiteness}.
   The left side has no $B$: restart identifies every block product with this
   same $P_\delta$. Now let integer $B \to \infty$. We have $e_B \to 0$, $M_B \to
   \infty$ and finite $V_{\rm up} \ge 0$. This gives the asserted upper bound,
@@ -216,9 +258,10 @@ Lemma~\ref{L:tube-rayleigh-tail}.
 \begin{proof}
   Proposition~\ref{P:original-point-transfer} bounds the original point moment
   by $\operatorname{DataPref}_\delta M_\delta$, with
-  $\delta\log\operatorname{DataPref}_\delta \to 0$. Its with the regularization
-  removed first, full-chain and canonical law proof is the input here, not an
-  original $E$ point trace. The decreasing bijection $T_\delta =
+  $\delta\log\operatorname{DataPref}_\delta \to 0$. Its proof, which removes
+  the regularization first, keeps the full chain and works with the canonical
+  law, is the input here, not an original $E$ point trace. The decreasing
+  bijection $T_\delta =
   \delta^{-1/\kappa}$ has inverse $\delta = T^{-\kappa}$. Take logs, normalized
   limsup and Proposition~\ref{P:signed-operator-upper}. Original canonical
   spatial stationarity from Proposition~\ref{P:raw-block-original-lower} gives

@@ -19,6 +19,10 @@ is imposed on $q$.
 \end{lemma}
 
 \begin{proof}
+  The form $v_V(u,w)$ is the duality pairing
+  $\langle Vu,w\rangle_{H^{-1/2},H^{1/2}}$.
+  Once the multiplier bound $\|Vu\|_{H^{-1/2}}\le k\|u\|_{H^{1/2}}$
+  is obtained below, duality gives~\eqref{E:signed-multiplier-form}.
   Choose $L_{q_n} \to L$. The constant-displacement vector has norm one, so
   $\|V_{q_n}-V_{q_j}\|_{H^{-1/2}} \le \|L_{q_n}-L_{q_j}\|$. Thus, $V_{q_n} \to
   V$ in $H^{-1/2}$. Testing outside the fixed compact mask support preserves
@@ -63,6 +67,13 @@ $A$ with the $H^{1/2}$ norm.
 \end{proposition}
 
 \begin{proof}
+  We first bound the signed potential form by the Sobolev norm and identify
+  its closed representation. We then derive the quarter-power comparison from
+  resolvents, and use duality to identify the negative phase.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We make the shifted form coercive and closed.
   Put $b = \|u\|_2$, $z = \|u\|_{H^1}$. Fourier Cauchy--Schwarz
   and~\eqref{E:signed-multiplier-form} give
   \[
@@ -89,6 +100,10 @@ $A$ with the $H^{1/2}$ norm.
   spectral lower bound. Lemma~\ref{L:signed-spectral-wave} records the full
   bottom argument.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We compare fractional powers through resolvent
+  order.
   Set $B_0 = 1-\Delta$. On the common form domain, $\tfrac12B_0 \le A \le
   L_KB_0$. We prove the needed square-root comparison rather than assuming an
   order rule for arbitrary operator powers. For $T_0,S_0 \ge 1$ with common form
@@ -134,6 +149,14 @@ $E$. The bound allows exponential growth at the rate $\lambda(V)$.
 \end{lemma}
 
 \begin{proof}
+  We identify the form infimum with the spectral bottom and use the compact
+  support to show that it is nonpositive. We then estimate the spectral wave
+  matrix in its adapted phase norm and transfer the estimate to the fixed
+  Sobolev phase.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We locate the spectral bottom.
   For unit $u$, $z = \|u\|_{H^1} \ge 1$ gives $q_V(u) \ge z^2/2-1-K^2/2 \ge
   -(1+K^2)/2 \ge -K^2$. Conversely dilate a unit compact smooth bump and
   translate its whole support outside $\operatorname{supp}m_R$. Its potential
@@ -153,6 +176,10 @@ $E$. The bound allows exponential growth at the rate $\lambda(V)$.
   on the appropriate domains. Thus, the spectrum is precisely $\Sigma$. Hence,
   $\lambda \le K$ and every spectral value $h$ has $h+c \ge 2$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We estimate the spectral matrix in an equivalent
+  phase norm.
   Use the phase norm $\|(u,v)\|_{E_A}^2 = \|A^{1/4}u\|_2^2+\|A^{-1/4}v\|_2^2$.
   With $M_K = L_K^{1/4}$, the preceding proposition and its dual give
   $M_K^{-1}\|z\|_E \le \|z\|_{E_A} \le M_K\|z\|_E$. The condition-number cost is
@@ -166,6 +193,16 @@ $E$. The bound allows exponential growth at the rate $\lambda(V)$.
       -hS_t(h)/\sqrt{h+c}&C_t(h)
     \end{pmatrix}.
   \end{equation}
+  The isometry is $(u,v)\mapsto(A^{1/4}u,A^{-1/4}v)$ onto
+  $L^2\times L^2$, with the negative-power map extended to the completed
+  velocity space.
+  The displayed matrix is the conjugate, initially on bounded spectral
+  cutoffs, of the spectral solution
+  \[
+    P_V^E(t)\binom{u}{v}
+    =\binom{C_t(H_V)u+S_t(H_V)v}
+    {-H_VS_t(H_V)u+C_t(H_V)v}.
+  \]
   For $h \ge 0$, the entries are bounded using $|C_t| \le 1$, $|S_t| \le
   \min(t,h^{-1/2})$, $\sqrt{h+c}|S_t| \le 1+\sqrt c\,t$ and $|hS_t|/\sqrt{h+c}
   \le 1$; at zero the off-diagonals are $\sqrt c\,t,0$. For $\beta \le h < 0$,
@@ -180,6 +217,11 @@ $E$. The bound allows exponential growth at the rate $\lambda(V)$.
   scalar addition identities give the group property. The same matrix and bounds
   apply on the weighted graph levels $D(A^{1/2})\times L^2$ and $D(A)\times
   D(A^{1/2})$. Spectral cutoffs justify their extensions and continuity there.
+  For negative spectral values, the lower off-diagonal estimate can be read
+  without dividing by $\lambda$: its absolute value is
+  $\sqrt{-h}\sinh(t\sqrt{-h})/\sqrt{h+c}$. The bounds $\sqrt{-h}\le K$ and
+  $h+c\ge2$ make this at most $Ke^{\lambda t}$. Thus, the estimate also
+  remains meaningful when the bottom rate is zero.
   This proves Lemma~\ref{L:signed-spectral-wave}.
 \end{proof}
 
@@ -200,6 +242,14 @@ and to include the two constant columns of $F$.
 \end{proposition}
 
 \begin{proof}
+  We first embed the form operator domain into the free generator domain. The
+  spectral solution then satisfies the physical Duhamel identity on dense
+  graph data. We extend that identity and include the constant columns by
+  variation of constants.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the graph-continuous embedding.
   The imported form representation \cite{teschl:14:mathematical}*{Theorem~2.14,
   p.~81, (2.63)}, tested against compact smooth functions, gives $H_Vu = -\Delta
   u-Vu$ in distributions for $u \in D(H_V)$. Such $u$ lies in $H^1$ and $Vu \in
@@ -209,6 +259,10 @@ and to include the two constant columns of $F$.
   \|Au\|_2^2+\|u\|_2^2$, and the distributional equation bounds the $H^{3/2}$
   norm by this graph norm.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the free generator and apply the
+  interaction identity.
   The generator of the free $E$ group is $A_0(u,v) = (v,\Delta u)$ on
   $H^{3/2}\times H^{1/2}$. Indeed, differentiate its Fourier matrix after a
   frequency cutoff, dominate by that graph norm and remove the cutoff.
@@ -235,6 +289,10 @@ and to include the two constant columns of $F$.
   Picard iteration identifies the physical wave. No $D(A^{3/4}) = H^{3/2}$
   assertion is needed.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify the ordinary and Young flows on the
+  extended phase.
   On $F$, bounded $L$ and strongly continuous $S_F$ similarly define a unique
   Duhamel flow. On $[0,T]$, the $n$th Volterra term has bound
   $C_T^{n+1}\|L\|^nT^n/n!$. Uniqueness makes horizons consistent and gives
@@ -244,6 +302,9 @@ and to include the two constant columns of $F$.
   Proposition~\ref{P:cameron-actual-embedding}. Thus, this primitive is
   Lipschitz and its ordinary equation is exactly the Young equation.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We bound both constant response columns.
   For initial $(e,c_1,c_2)$ the constant coordinates are $(c_1+tc_2,c_2)$ and
   the $E$ component is
   \[
@@ -259,6 +320,10 @@ and to include the two constant columns of $F$.
     (1+t)^3e^{\lambda t}
     \{8(1+K)^2\|e\|+[8K(1+K)^2+1]|(c_1,c_2)|\}.
   \]
+  The coefficient of $\|e\|$ is bounded by $8(1+K)^3$. The coefficient of the
+  constant-coordinate norm is at most $9(1+K)^3$, since $K\le1+K$ and
+  $1\le(1+K)^3$. Cauchy--Schwarz on these two scalar components therefore
+  gives the factor $\sqrt{8^2+9^2}$ in the following estimate.
   Scalar Cauchy--Schwarz and $\sqrt{8^2+9^2} < 13$ bound this by
   $13(1+K)^3(1+t)^3e^{\lambda t}\|(e,c_1,c_2)\|_F$. This implies the stated
   sufficient bound. This proves Proposition~\ref{P:signed-physical-wave}.

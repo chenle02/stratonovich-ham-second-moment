@@ -90,6 +90,14 @@ stronger than the problem permits.
   $C^k t^{(3-a)k}/(k!)^3$ for all $k$ and $t>0$.
 \end{nogo}
 \begin{proof}
+  We compute the adjacent diagram after its white contractions and justify
+  that fixed-order limit. Its Dirichlet integral then shows why a uniform
+  cubic factorial denominator is impossible.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the adjacent-pair integral and its
+  smoothing limit.
   Use root-forward increments $h_1,\ldots,h_{2k}>0$ with
   $\sum h_i<t$. Each adjacent contraction evaluates the even Green factor
   at zero, giving $1/2$, and integration of the preceding free increment
@@ -112,6 +120,10 @@ stronger than the problem permits.
   Dominated convergence justifies the fixed-order spatial limit through the
   time integration, and also temporal truncation limits.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We compare its growth with the proposed factorial
+  bound.
   The Dirichlet simplex formula, with parameters $2$ and $1-a$ for each
   pair, now gives the asserted expression. Stirling's formula yields
   \[
@@ -147,6 +159,13 @@ the wave rather than inferred from a parabolic analogy.
   $\lambda$ and the same initial data.
 \end{nogo}
 \begin{proof}
+  We compare the first nonconstant coefficients in the proposed inequality. We
+  then bound both series remainders to turn that coefficient discrepancy into
+  a strict small-time failure.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We compare the two first-order contributions.
   More generally, for $\Gamma(x)=c|x|^{-\alpha}$, $0<\alpha<1$,
   direct integration of the length-two chain gives
   \[
@@ -170,6 +189,10 @@ the wave rather than inferred from a parabolic analogy.
     \frac{2(3/2)^\alpha}{(1-a)(2-a)(4-\alpha-a)}
     =\frac89\sqrt{\frac32}>\frac23=2a_1.
   \]
+
+  \medskip
+  \noindent\textit{Step 2.~}We justify the strict inequality for sufficiently
+  small positive time.
   The comparison is a finite-time failure, not just a formal coefficient test.
   Put $z=t^\beta$. The two nonnegative series under comparison have expansions
   \[
@@ -217,6 +240,13 @@ low-order coefficient without checking parameter uniformity.
   and every $0<a<1$ at this fixed spatial covariance.
 \end{nogo}
 \begin{proof}
+  We isolate the contribution near equal times and compute its boundary
+  divergence. Dividing by the finite limiting single-chain coefficient shows
+  why no constant uniform in the temporal exponent can work.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the diagonal time contribution.
   Let
   $K(s,r)=\int G_s(x)G_r(y)c|x-y|^{-\alpha}\,\ud x\ud y$.
   This is continuous on $[0,1]^2$ by local integrability of the Riesz kernel
@@ -232,6 +262,10 @@ low-order coefficient without checking parameter uniformity.
     H(0)=\frac{c\,2^{2-\alpha}}
     {(1-\alpha)(2-\alpha)(3-\alpha)}.
   \]
+
+  \medskip
+  \noindent\textit{Step 2.~}We take the boundary limit of the coefficient
+  ratio.
   For any continuous $H$ on $[0,1]$,
   $\varepsilon\int_0^1v^{-1+\varepsilon}H(v)\,\ud v\to H(0)$.
   Indeed the measures have mass one, and their mass on $[\delta,1]$ is
@@ -269,6 +303,14 @@ recover it. Finite propagation prevents the resulting pointwise comparison.
   Riesz covariance and, with domestic pairs, for white covariance.
 \end{nogo}
 \begin{proof}
+  We choose two admissible chains whose chronological merge violates a strict
+  propagation constraint. We then keep this defect on sets of positive measure
+  for each of the two covariance cases.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We exhibit the positive original product and zero
+  merged product.
   Work at horizon one with root $(0,0)$. The first chain has times
   $(1/4,3/4)$ and positions $(x,x)$, $x=1/5$; the second has times
   $(1/2,7/8)$ and positions $(y,y)$, $y=-2/5$.
@@ -281,6 +323,10 @@ recover it. Finite propagation prevents the resulting pointwise comparison.
   from $(1/4,1/5)$ to $(1/2,-2/5)$. Its displacement is $3/5>1/4$,
   so that Green factor vanishes. All these inequalities are strict.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We retain the support defect under the stated
+  covariance integrations.
   For white noise choose domestic pairs within each original chain. The
   delta contractions leave precisely the two free spatial variables $x,y$.
   Open neighborhoods of the displayed four times and these two variables
@@ -524,6 +570,14 @@ counterexample to the original comparison.
   Consequently the proposed pointwise closure $M_b(0;A)\le I$ is false.
 \end{nogo}
 \begin{proof}
+  We identify the actual wave transform and the particular shift-erased
+  envelope separately. We then evaluate both expressions at the stated
+  rational parameters to disprove this envelope closure, without replacing the
+  original clock candidate by the envelope.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We compute the actual middle-cross wave transform.
   We give the integral identifications so that the rational test specifies
   which bound fails. With singleton gap $u$ and long-chain gaps $v,w,z$,
   the spatial factor is
@@ -554,6 +608,10 @@ counterexample to the original comparison.
     {8bc(b+1)(2b+1)(b+c-1)(2b+2c-1)}.
   \]
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the root kernel and the shift factor
+  that is discarded.
   For the clock envelope write $h(r)=(2\pi r)^{-1/2}$ and
   $m(s)=1/(\pi\sqrt2\sqrt{s-1/2})$, $s>1/2$.
   The two spatial pair differences have covariance matrix
@@ -582,6 +640,10 @@ counterexample to the original comparison.
     \frac{m(s)}{s(s+A)}\int_0^\infty h(r)e^{-b^2r/2}
     \int_0^r e^{-(s-1/2)w(r-w)/r-\eta w}\,\ud w\ud r\ud s.
   \]
+
+  \medskip
+  \noindent\textit{Step 3.~}We evaluate the shift-erased envelope and compare
+  the rational values.
   All integrals here are positive. Set $w=rt$ and $\tau=s-1/2$.
   For $\eta,\tau\ge0$, put $p=\sqrt{b^2+2\eta}$. The elementary bridge
   integral is

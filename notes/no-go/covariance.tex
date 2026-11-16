@@ -24,6 +24,13 @@ not a consequence of the covariance assumptions.
   $\alpha+\alpha_0<2$.
 \end{nogo}
 \begin{proof}
+  We exhibit the boundary divergence for planar Riesz covariance and then the
+  anisotropic product example in both dimensions. The smoothing limit shows
+  why neither example admits the proposed uniform spatial maximum.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We test the translated planar Riesz convolution.
   We restate the witnesses from Proposition~\ref{P:higher-obstructions}.
   For Riesz covariance translate the singularity to $e_1$, on the boundary
   of the unit wave disk. Write $y=e_1+\rho(\cos\phi,\sin\phi)$ and restrict
@@ -36,6 +43,10 @@ not a consequence of the covariance assumptions.
   \]
   At $\alpha=3/2$ the divergence is logarithmic.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We test the product covariance and its smoothed
+  limits.
   For the product example choose
   \[
     a_1=\frac{1+\max\{2-\alpha,\alpha-1\}}2,
@@ -87,12 +98,24 @@ reconstruction; it does not change that historical disposition.
   $F$ is not positive definite as a distribution.
 \end{nogo}
 \begin{proof}
+  We verify the original covariance, then show that the radially modified
+  function has a heat convolution growing along the third coordinate. This
+  contradicts the boundedness that positive definiteness would require.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We check the original covariance and the modified
+  function.
   The exponents of both coordinate factors lie in $(0,1)$. Local
   integrability, temperedness, and positive definiteness of $\Gamma$
   follow from the one-dimensional Gaussian mixture formula, applied in
   each coordinate. The third factor is the constant covariance one.
   Multiplication by $|x|^{1/2}$ preserves local integrability and temperedness.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We obtain the contradiction after Gaussian
+  convolution.
   Fix a centered Gaussian heat density $p_\sigma$. Its convolution with
   $F$ is finite at zero: the coordinate singularities are integrable and
   the remaining growth is polynomial. On the other hand, restrict the
@@ -140,6 +163,13 @@ model and is not a counterexample to a model-specific comparison.
   Thus, $\log F$ is not convex on $(0,\infty)$.
 \end{nogo}
 \begin{proof}
+  We express the scalar moment as a positive series and bound its tail. The
+  resulting finite rational enclosures disprove the stated log-convexity
+  inequality.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the series and a controlled tail.
   Interpreting $\cosh\sqrt z$ by its entire power series gives
   \[
     F(A)=1+\sum_{k\ge1}t_k(A),\qquad
@@ -158,6 +188,9 @@ model and is not a counterexample to a model-specific comparison.
   \[
     S_{20}\le F(A)\le S_{20}+\frac{t_{21}(A)}{1-q_A}.
   \]
+
+  \medskip
+  \noindent\textit{Step 2.~}We compare the rigorous rational enclosures.
   Substitution in these finite rational expressions gives the following
   outward enclosures, with common denominator $10^6$:
   \[
@@ -257,6 +290,13 @@ amplitudes cannot remain bounded.
   then $C_n\to\infty$.
 \end{nogo}
 \begin{proof}
+  We verify that the plane-supported covariance is admissible. A bounded
+  subsequence of isotropic envelope constants would force its vague limit to
+  have a Lebesgue density, contradicting its planar mass.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We verify the singular covariance example.
   The planar Riesz factor is locally integrable and positive definite by
   its Gaussian mixture representation. The normal Dirac covariance is
   positive definite: in its quadratic form the two normal coordinates
@@ -267,6 +307,10 @@ amplitudes cannot remain bounded.
   a radius $R$ ball is proportional to $R^{3/2}$; polynomial mass growth
   also gives temperedness.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We contradict bounded envelope constants by
+  singular support.
   Suppose a subsequence of $C_n$ were bounded by $C<\infty$. For every
   nonnegative compactly supported continuous $f$, vague convergence gives
   \[
@@ -309,6 +353,15 @@ wave mean need not increase when that residual is restored.
   $P$ is not asserted to be stationary or homogeneous.
 \end{nogo}
 \begin{proof}
+  We construct an actual Gaussian projection of the parent field and compare
+  the two degree-two mean coefficients. Bounds on the higher-order tails then
+  turn that coefficient gap into a strict small-coupling failure of residual
+  monotonicity.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the parent field and its rank-one
+  projection.
   Put $a=99/100$ and
   \[
     C((s,x),(t,y))=(1-a)|s-t|^{-a}|x-y|^{-1/2}.
@@ -332,6 +385,10 @@ wave mean need not increase when that residual is restored.
   covariance $C-P$, where $P=m\otimes m$. Cauchy--Schwarz gives its
   positive semidefiniteness.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound the projected profile and compare the
+  mean coefficients.
   Direct integration gives, on $0\le s\le1$,
   \[
     E_\phi=\frac{16\sqrt2}{3},\quad V=\frac{2E_\phi}{2-a},\quad
@@ -363,6 +420,10 @@ wave mean need not increase when that residual is restored.
     =\frac{101}{3200\sqrt2}>\frac1{48}.
   \]
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We pass the strict coefficient gap to the full
+  means.
   We justify passage from coefficients to full means. Write the parent
   solution as $u_C(h)=\sum_{n\ge0}h^nX_n$. For any fixed $r>1$,
   finiteness of the second moment at amplified covariance $r^2C$ and

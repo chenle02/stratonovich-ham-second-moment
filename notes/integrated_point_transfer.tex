@@ -27,6 +27,14 @@ the operator path to constant columns on $F$.
 \end{lemma}
 
 \begin{proof}
+  We first identify the $E$ flow as a closed isometric restriction of the
+  extended phase flow. We then apply the fixed-parameter Gaussian tube
+  estimate and compact endpoint lower bound to this exact original endpoint.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify restrictions and measurable endpoint
+  norms.
   Let $A_F = gA_{F,R}(W_{\rm fast})$ be the scaled full operator path. Linearity
   and Proposition~\ref{P:constant-phase-driver} give $A_Fi = iD_E$, with $D_E =
   gM_R(W_{\rm fast})$, and $S_F(t)i = iS_E(t)$. The extension uses a cutoff
@@ -40,6 +48,12 @@ the operator path to constant columns on $F$.
   time-triangle difference norms. No operator-norm continuity of the free group
   is assumed. Young Neumann pieces and the free inverse also give invertibility.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We prove finiteness and the lower endpoint norm
+  bound.
+  The clock condition is $0<\delta<\min(1,1/B)$ from
+  Section~\ref{S:actual-cameron-mean}, which reduces to $0<\delta<1$ at $B=1$.
   We check a direct finiteness input, without a fixed-mask asymptotic rate. Take
   $B = 1$ in Propositions~\ref{P:tube-actual-law}
   and~\ref{P:tube-coarse-envelope} and Lemma~\ref{L:tube-rayleigh-tail}. Every
@@ -77,6 +91,14 @@ the operator path to constant columns on $F$.
 \end{lemma}
 
 \begin{proof}
+  We pull one regularized slow noise into fast coordinates and transfer its
+  operator paths on the original coupling. We identify the ordinary response
+  and compute the exact temporal width and covariance amplitude.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove convergence of the source flow at fixed
+  dilation.
   Testwise this field is $Y_{\epsilon,\tau}(T_{\delta,0}f)$. The original
   isometry and source domination give source and residual variances bounded by
   $\|f\|_{H_{\rm fast}}^2$, with residual variance tending to zero at fixed
@@ -87,13 +109,17 @@ the operator path to constant columns on $F$.
   transfer bound and Proposition~\ref{P:actual-operator-driver} also give
   uniform source $\sqrt p$ path moments at these fixed $\delta,R,L$. The
   moment-series argument yields square-exponential path norms. Young local
-  dependence gives probability convergence on ball of operator pathss; the
+  dependence gives convergence in probability on balls of operator paths; the
   growth exponent $1/\theta < 2$ and those tails give uniform flow moments of
   every finite order and uniform integrability. The proof of
   Proposition~\ref{P:constant-gaussian-flow} applies to this very pullback
   family. Restriction from $F$ then proves~\eqref{E:point-source-flow-limit}. No
   uniform-in-$\delta$ source bound or exchange of limits is asserted.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the source primitive on the same
+  states.
   This source is also the ordinary response for all $E$ data. On Schwartz states
   its first primitive has row $gY_{\rm fast}(h_R)$. The source indicator
   approximation and bounded point variances at positive widths identify it with
@@ -106,12 +132,20 @@ the operator path to constant columns on $F$.
   Proposition~\ref{P:symplectic-source} then identify the Young equation with
   the ordinary interaction equation on $E$.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We compute the transformed source law.
   In the temporal kernel $K_\tau(v) = \Gamma_{\rm E}(a)^{-1}
   \int_0^{\tau^{-1}}e^{-\lambda|v|}\lambda^{a-1}\ud\lambda$, substitution
   $\lambda' = \delta\lambda$ gives
   \[
     \delta^aK_\tau(\delta v)=K_{\tau/\delta}(v).
   \]
+  The change of variable contributes $\delta^{-1}$ from $d\lambda$ and
+  $\delta^{1-a}$ from $\lambda^{a-1}$. These cancel the prefactor $\delta^a$,
+  while the upper cutoff becomes $\delta/\tau$. Thus, the new temporal width
+  is $\tau/\delta$, with the original temporal covariance amplitude unchanged
+  before multiplication by $g^2$.
   Hence, $gY_{\rm fast}$ has covariance
   $K_{\tau/\delta}(t-s)(p_{2\epsilon}*\Gamma_\delta)(x-y)$. The shared-width
   maximum and spatial heat-sum conventions persist for two sources. Positive
@@ -132,6 +166,13 @@ the operator path to constant columns on $F$.
 \end{lemma}
 
 \begin{proof}
+  At positive source widths we solve in a sufficiently regular Sobolev phase,
+  identify that solution with the $E$ flow by uniqueness, and then use Fourier
+  embedding and Green testing to recover the continuous scalar mild solution.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the high-regularity phase solution.
   On the fixed source regularity event, $b$ is smooth in space, has common
   compact support in $B_{2R}$, and is continuous in time in every bounded
   spatial derivative norm on $[0,L]$. Choose integer $k > d/2+1$ and $E_k =
@@ -162,6 +203,10 @@ the operator path to constant columns on $F$.
   proves uniqueness. Its continuous embedding into $E$ and ordinary $E$
   uniqueness identify the sum with $P_E^{\epsilon,\tau}(t,0)z$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We obtain continuous measurable displacement and
+  velocity.
   Fourier Cauchy--Schwarz gives $\|\widehat{f}\|_1 \le \|f\|_{H^k}
   (\int\langle\xi\rangle^{-2k}\ud\xi)^{1/2} < \infty$. Fourier inversion and
   dominated convergence imply continuous bounded displacement, and the same
@@ -171,6 +216,9 @@ the operator path to constant columns on $F$.
   phase sum measurable in $C_tE_k$; the Fourier embedding gives joint
   measurability. These high norms are used only at positive source widths.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify the scalar Green equation.
   The first component of Duhamel is, distributionally,
   \[
     v(t)=\cos(t\sqrt{-\Delta})\psi+
@@ -211,6 +259,15 @@ show that the two agree on a cone that contains $D$ at time $L$.
 \end{proposition}
 
 \begin{proof}
+  We compare the compact-data and constant-data source equations on one
+  causally closed cone. Their free terms agree there by total finite
+  propagation, and iteration of the homogeneous difference equation gives
+  equality before taking the terminal spatial square average.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the common source law and the causally
+  closed cone.
   Proposition~\ref{P:masked-source-moments}, applied through the exact source
   law of Lemma~\ref{L:point-fast-sources}, gives the locally continuous
   measurable full solution and its $L^2$ point Picard sum. The pathwise cone
@@ -220,6 +277,10 @@ show that the two agree on a cone that contains $D$ at time $L$.
   predecessor at distance at most $t-s$ has norm at most $1+L-s$. Its spatial
   projection lies a positive distance inside the plateau of both $\psi$ and $m$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We compare both initial phase components on the
+  cone.
   The total initial difference $(\psi-1,0)$ is represented in $E$ plus constants
   by $(\psi,0)+(-1,0)$. Every entry of the full free phase kernel is a compactly
   supported distribution in $B_t$, and the top-left is $\partial_tG_d(t)$. Since
@@ -229,6 +290,10 @@ show that the two agree on a cone that contains $D$ at time $L$.
   $\cos(t\sqrt{-\Delta})\psi(x) = 1$ there. Testing the $E$ and constant
   summands separately would not give this total finite-propagation statement.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We prove uniqueness of the two restrictions on the
+  cone.
   The two mild equations have the same coefficient on the cone. For their
   difference $w$, causal closure gives the homogeneous Green integral equation
   there. Put $H = \sup_{\mathcal{C}}|w|$ and $M = \sup_{\mathcal{C}}|gY_{\rm
@@ -238,6 +303,9 @@ show that the two agree on a cone that contains $D$ at time $L$.
   factorial ratio forces this bound to zero on the fixed cone. No positivity of
   the sample coefficient or expectation of a global source supremum is required.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We take the terminal average of squares.
   At time $L$ the cone contains $D$. Tonelli and spatial stationarity of the
   unmasked single-source law give~\eqref{E:point-source-square-average}.
   Finiteness is the full source point-moment bound. This is an integral of
@@ -274,6 +342,15 @@ $\E|u_\Gamma(T_\delta,0)|^2$.
 \end{proposition}
 
 \begin{proof}
+  We remove source regularization at fixed dilation, then use the canonical
+  law scaling to identify the original point moment. The compact initial datum
+  costs only a polynomial factor, which disappears after logarithmic
+  normalization.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We pass the source square identity to the original
+  operator endpoint.
   Assume nonzero covariance until the last paragraph, and fix $\delta$.
   Equation~\eqref{E:point-source-flow-limit} gives convergence of the source
   displacement in $L^2(\Omega;L^2(D))$, since $\|\operatorname{pr}_1e\|_{L^2(D)}
@@ -289,6 +366,10 @@ $\E|u_\Gamma(T_\delta,0)|^2$.
     =v_d^{-1}\E\|\operatorname{pr}_1P_\delta z\|_{L^2(D)}^2 .
   \]
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the original moment by the canonical
+  time change.
   The law normalization is the consequence of
   Lemma~\ref{L:exact-canonical-scaling} and the canonical-series time change
   proved in Proposition~\ref{P:raw-block-point-comparison}. Explicitly, for
@@ -305,6 +386,10 @@ $\E|u_\Gamma(T_\delta,0)|^2$.
   radius $R$; no spatial Jacobian occurs at point zero. The phase/operator
   inequality now proves~\eqref{E:original-point-transfer}.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We control the initial-data norm and its
+  logarithmic cost.
   Parseval and the inhomogeneous Bessel weights give, for $R \ge 1$,
   \[
     \|\psi\|_{H^{1/2}}^2\le\|\psi\|_{H^1}^2
@@ -329,6 +414,9 @@ $\E|u_\Gamma(T_\delta,0)|^2$.
   stationarity, proved in Proposition~\ref{P:raw-block-original-lower}, extends
   it to every fixed $x$; no stationarity of the masked operator is assumed.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We verify the free zero-covariance case directly.
   For zero covariance, $u = 1$, all operator paths vanish and $P_\delta =
   S_E(L)$. The same total free cone argument gives the spatial-square identity.
   Lemma~\ref{L:symplectic-free} gives $\|S_E(L)\| \ge 1$, and its Fourier matrix

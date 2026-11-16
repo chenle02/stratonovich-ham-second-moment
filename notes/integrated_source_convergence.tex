@@ -33,6 +33,10 @@ noises and operator paths throughout; assume $\Gamma \ne 0$ in the construction.
   when the linear image gives only a seminorm on $\R^N$. Its Gaussian
   expectations are finite by the finite-sum bound. On an auxiliary space take an
   independent centered Gaussian $Z$ of covariance $CI-\operatorname{Cov}\xi$.
+  The covariance difference is positive semidefinite by hypothesis, so its
+  diagonalization constructs such a Gaussian vector even if it is degenerate.
+  Independence and centering give conditional mean $\xi$ for $\xi+Z$ given
+  $\xi$. Convexity therefore applies to this conditional expectation.
   Conditional Jensen gives $\E\varphi(\xi) \le \E\varphi(\xi+Z)$. The latter
   vector has the law of $\sqrt C\,g$, proving the claim. The case $C = 0$ is
   immediate. This auxiliary comparison changes neither the coupling of $\xi$ nor
@@ -68,7 +72,7 @@ Gaussian noise.
   where $h_{R,t;z,w}$ is the explicit original test class
   $\zeta_R1_{(0,t)}v_zG_w$ with the adjoint from~\eqref{E:variance-dual-wave}.
   The path is basis-independent up to indistinguishability, is linear in jointly
-  Gaussia noise families, and complexifies sesquilinearly.
+  Gaussian noise families, and complexifies sesquilinearly.
 
   If $(W,Y_n)$ are jointly centered Gaussian, $Y_n$ and $D_n = W-Y_n$ have
   uniform bounds of the form~\eqref{E:source-raw-variance-bound}, and
@@ -77,6 +81,14 @@ Gaussian noise.
 \end{proposition}
 
 \begin{proof}
+  We first transfer finite path sums and their tails using the Gaussian
+  comparison. We then identify the transferred rows on the given coupling. For
+  stability, we make the common tail small before sending the finitely many
+  remaining noise errors to zero.
+
+  \medskip
+  \noindent\textit{Step 1.~}We extend the noise and compare its finite
+  coordinate vectors.
   The variance bound annihilates covariance-null tests and extends $Y$ as a
   bounded linear map into its $L^2$ space. Completion preserves Gaussian
   finite-dimensional laws. For each finite original orthonormal family, the
@@ -84,6 +96,8 @@ Gaussian noise.
   bound to every real linear combination. Independence of $Y(f_j)$ is not
   assumed.
 
+  \medskip
+  \noindent\textit{Step 2.~}We construct the transferred path and its bounds.
   Apply Lemma~\ref{L:source-finite-comparison} with $v_j = A_j(\cdot)$ in
   $\mathscr{B}_\theta$, also to finite tails. The standard comparison vector has
   the law of the original $W(f_j)$. The already-proved original path convergence
@@ -96,6 +110,10 @@ Gaussian noise.
   compact values for all times. Functional $L^2$ limits of Gaussian linear
   combinations prove that the path is Gaussian.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify the rows and remove dependence on the
+  basis.
   For real Schwartz $z,w$, the coefficient identity is
   \[
     \langle A_j(t)z,w\rangle_E
@@ -112,6 +130,10 @@ Gaussian noise.
   Countably many dense Schwartz phases and rational times, followed by phase
   density and path continuity, prove basis indistinguishability.
 
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We prove linearity and stability of the transfer.
   For jointly Gaussian $Y,Z$, their real linear combinations have an original
   variance bound by the $L^2$ triangle inequality. The finite sums are linear in
   the noise, hence so are the path limits. In the stability assertion $D_n$ is
@@ -120,9 +142,15 @@ Gaussian noise.
     \|M_{D_n}-M_{D_n,N}\|_{L^p\mathscr{B}_\theta}
     \le\sqrt{C_D}\|M_R-M_N\|_{L^p\mathscr{B}_\theta}.
   \]
+  The right side of this bound is independent of $n$ and tends to zero as $N$
+  increases. We can therefore select the tail cutoff before considering
+  convergence of the finite coordinate vector.
   For fixed $N$, the covariance matrix of $(D_n(f_j))_{j\le N}$ is positive and
   bounded by $s_N(n)I$, where $s_N(n) = \sum_{j\le N}\operatorname{Var}D_n(f_j)
-  \to 0$. The finite comparison gives $\|M_{D_n,N}\|_{L^p\mathscr{B}_\theta} \le
+  \to 0$. Every eigenvalue of a positive finite matrix is at most its trace,
+  so the scalar $s_N(n)$ bounds that covariance matrix in positive order.
+  Thus,
+  the finite comparison gives $\|M_{D_n,N}\|_{L^p\mathscr{B}_\theta} \le
   \sqrt{s_N(n)}\|M_N\|_{L^p\mathscr{B}_\theta}$. Choose $N$ large for the
   uniform tail, then $n$ large for the finite head. Linearity identifies
   $M_{D_n} = M_R-M_{Y_n}$. The same argument proves a multiparameter limit
@@ -163,6 +191,10 @@ sources, beginning with the spatial covariance space and heat regularization.
   pairing converges against tempered $\Gamma$. Thus, Schwartz tests enter the
   same completion. The Fourier multiplier of $C_\varepsilon$ is
   $m_\varepsilon(\xi) = e^{-\varepsilon|\xi|^2/2}$. On dense Schwartz tests, the
+  displayed norm represents heat by multiplication by the real function
+  $m_\varepsilon$, which satisfies $0 \le m_\varepsilon \le 1$. The multiplier
+  of $I-C_\varepsilon$ is $1-m_\varepsilon$, also between zero and one. Thus,
+  the
   displayed norm gives positivity, self-adjointness and both contraction bounds.
   Dominated convergence gives strong convergence there; uniform boundedness
   extends it to the completion. This uses no physical mask operator on a noise
@@ -194,6 +226,13 @@ rectangles with a countable dense spatial collection suffice.
 \end{lemma}
 
 \begin{proof}
+  We first prove the feature map is an isometry and identify its formula on
+  completed tests. We then extend the given noise only on the orthogonal
+  complement of the feature range, preserving every original evaluation.
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the feature norm with the original
+  covariance norm.
   The identity
   \[
     \int_{-\infty}^{\min(t,u)}
@@ -201,7 +240,12 @@ rectangles with a countable dense spatial collection suffice.
     =e^{-\lambda|t-u|}
   \]
   and the original Laplace formula give $\|\Phi F\|_{\mathcal{G}}^2 =
-  \|F\|_{H_W}^2$. All signed exchanges for finite tensors are absolutely
+  \|F\|_{H_W}^2$.
+  Indeed, integrating the two exponential time features over $r$ gives the
+  displayed kernel. Integrating that kernel against $\nu_a$ gives
+  $|t-u|^{-a}$. The spatial inner product is the original $B_\Gamma$, so
+  these two integrations reproduce the original covariance.
+  All signed exchanges for finite tensors are absolutely
   integrable: compact temporal factors give integrals of
   $|\tau(t)\sigma(u)||t-u|^{-a}$, finite for $a < 1$, times fixed finite spatial
   inner products. No oscillatory infinite-measure Fubini is used. Smooth time
@@ -210,6 +254,10 @@ rectangles with a countable dense spatial collection suffice.
   bound~\eqref{E:driver-test-continuity} proves their density in $H_W$. Hence,
   the isometry extends with closed range.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the integral formula for general
+  compact tests.
   For a general smooth compact $F$, those approximants also converge uniformly
   in spatial $H_\Gamma$ norm in time, by local Radon mass. For fixed
   $\lambda,r$, their integrals in~\eqref{E:source-feature-isometry} converge in
@@ -218,12 +266,19 @@ rectangles with a countable dense spatial collection suffice.
   stated formula. The coordinate $r$ is auxiliary; no value of original
   negative-time noise has been assigned.
 
+  \medskip
+  \noindent\textit{Step 3.~}We extend the isonormal process while retaining
+  the given noise.
   Let $P$ project orthogonally onto $\Phi H_W$. On a product extension take an
   independent isonormal $J$ on $(\Phi H_W)^\perp$, built from independent real
   standard Gaussians on a finite or countable basis. Define
   \[
     \mathcal{I}(g)=W(\Phi^{-1}Pg)+J((I-P)g).
   \]
+  The two summands use orthogonal feature components and independent Gaussian
+  processes. Their variances are $\|Pg\|_{\mathcal G}^2$ and
+  $\|(I-P)g\|_{\mathcal G}^2$, whose sum is $\|g\|_{\mathcal G}^2$. If $g =
+  \Phi h$, the second component vanishes and the first is the original $W(h)$.
   Orthogonality and independence make it isonormal on $\mathcal{G}$ and
   prove~\eqref{E:source-given-W-retention} with the original random variable,
   not only its law. For the countable fixed original basis, these equalities
@@ -288,6 +343,13 @@ The temporal operation is a Laplace prefix, not temporal convolution.
 \end{proposition}
 
 \begin{proof}
+  We compute the joint law from the point features, including the two heat
+  widths and the common Laplace range. We then identify field integrals, bound
+  both filters, and apply Gaussian transfer to the vanishing residual.
+
+  \medskip
+  \noindent\textit{Step 1.~}We compute the spatial covariance and
+  point-feature covariance.
   Apply the spatial distribution identity to a single shifted heat test:
   \[
     \Gamma_e(x)=\int e^{i\xi\cdot x}e^{-e|\xi|^2/2}\mu(\ud\xi).
@@ -301,6 +363,10 @@ The temporal operation is a Laplace prefix, not temporal convolution.
     B_\Gamma(p_\varepsilon(x-\cdot),p_{\varepsilon'}(y-\cdot))
     =\Gamma_{\varepsilon+\varepsilon'}(x-y).
   \end{equation}
+  The product of the two heat multipliers is
+  $e^{-(\varepsilon+\varepsilon')|\xi|^2/2}$. The product of their Fourier
+  normalization factors is $c_d^2$, and $(2\pi)^dc_d^2 = 1$. This gives the
+  sum of widths without any remaining Fourier factor.
   Evenness of $\mu$ removes the reflected argument.
 
   For each positive $\rho$ and point $(t,x)$ put
@@ -317,6 +383,9 @@ The temporal operation is a Laplace prefix, not temporal convolution.
   factor. This proves~\eqref{E:source-joint-covariance} with the prescribed
   widths and original amplitudes, also for singular Radon and white covariances.
 
+  \medskip
+  \noindent\textit{Step 2.~}We identify the mean-square field integral with
+  the filtered noise.
   The representing vector is continuous in $\mathcal{G}$ norm, directly from
   this continuous covariance. Its norm is bounded on compact parameter sets.
   Hence, for a smooth compact spacetime $F$, its Bochner integral against
@@ -327,6 +396,9 @@ The temporal operation is a Laplace prefix, not temporal convolution.
   $L^1$ approximation; bounded point-feature norms and the domination below give
   the same $L^2$ limit.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We bound the source and the full residual.
   Orthogonality of the two $\lambda$ ranges gives, for $g \in \mathcal{G}$,
   \[
     \|(I-Q_\rho)g\|_{\mathcal{G}}^2
@@ -334,10 +406,16 @@ The temporal operation is a Laplace prefix, not temporal convolution.
     +\|P_\eta(I-C_\varepsilon)g\|_{\mathcal{G}}^2
     \le\|g\|_{\mathcal{G}}^2.
   \]
+  On the retained range, $I-C_\varepsilon$ is a contraction by the heat lemma.
+  Hence, its squared norm is bounded by $\|P_\eta g\|_{\mathcal G}^2$. Adding
+  the omitted-range norm gives at most the full squared norm, because these
+  two ranges are orthogonal.
   Also $\|Q_\rho g\|_{\mathcal{G}} \le \|g\|_{\mathcal{G}}$. Together with the
   isometry these prove both variance bounds. Disjoint $\lambda$ ranges are
   independent; the full heat residual need not be independent of the source.
 
+  \medskip
+  \noindent\textit{Step 4.~}We send both regularization parameters to zero.
   The $L^2$ tail integral gives $P_\eta \to I$ strongly. Fiberwise heat
   converges strongly on simple $\mathcal{G}$ functions by
   Lemma~\ref{L:source-spatial-heat}, then on all of $\mathcal{G}$ by the
@@ -347,11 +425,17 @@ The temporal operation is a Laplace prefix, not temporal convolution.
     \le\|(I-C_\varepsilon)g\|_{\mathcal{G}}
     +\|(I-P_\eta)g\|_{\mathcal{G}}\longrightarrow0
   \]
-  holds at arbitrary relative rates. Thus, the residual variance tends to zero
+  holds at arbitrary relative rates.
+  Indeed, the two terms on the right depend on separate parameters, and each
+  tends to zero by strong convergence. Therefore, there is no need to compare
+  the rates at which the heat width and the Laplace cutoff are removed.
+  Thus, the residual variance tends to zero
   for every original $F$. Proposition~\ref{P:source-gaussian-transfer}
   gives~\eqref{E:source-driver-limit} without commuting a filter through
   $\zeta_R$ or a wave group.
 
+  \medskip
+  \noindent\textit{Step 5.~}We retain the uniform Gaussian path bounds.
   The same comparison gives $\|M_R^\rho\|_{L^p\mathscr{B}_\theta},
   \|M_{D_\rho}\|_{L^p\mathscr{B}_\theta} \le \|M_R\|_{L^p\mathscr{B}_\theta}$.
   The original $\sqrt p$ estimate and its even-moment exponential-series
@@ -370,6 +454,14 @@ The temporal operation is a Laplace prefix, not temporal convolution.
 \end{lemma}
 
 \begin{proof}
+  We first differentiate the point features and bound their increments. A
+  dyadic construction gives jointly continuous versions for all spatial
+  derivative fields. The feature-space fundamental theorem then identifies
+  those fields as actual derivatives of one version.
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct derivative fields and bound their
+  increments.
   For each spatial multiindex $b$, differentiate \eqref{E:source-point-feature}
   in $x$ as a $\mathcal{G}$ vector. All derivatives exist because their spatial
   squared norms are the finite heat moments
@@ -385,9 +477,18 @@ The temporal operation is a Laplace prefix, not temporal convolution.
     \E|Z_b(t,x)-Z_b(s,y)|^2
     \le C_{\rho,b}(|t-s|+|x-y|^2).
   \end{equation}
+  For fixed cutoff, the temporal integral is over a bounded range of
+  $\lambda$, so its extra factor $\lambda$ remains integrable. The heat factor
+  controls the extra powers of $\xi$ needed for the spatial increment.
+  Splitting a general increment into a time increment and a spatial increment
+  gives the displayed sum of bounds.
   This computation uses~\eqref{E:source-joint-covariance}, including its spatial
   width, and applies to singular spectral measures without a density assumption.
 
+  \medskip
+  \noindent\textit{Step 2.~}We construct the jointly continuous versions.
+  The maximum of finitely many increments has its $L^q$ norm bounded by the
+  $q$th root of the sum of their $q$th moments, without independence.
   Here is a direct continuity construction. In $m = d+1$ parameter dimensions on
   a compact rectangle, even Gaussian $q$th increment moments have root bounded
   by $C\sqrt q$ times the parameter distance to the power $1/2$ at small
@@ -403,6 +504,10 @@ The temporal operation is a Laplace prefix, not temporal convolution.
   overlaps on countable dense sets, hence everywhere there by continuity, so
   they patch.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify the continuous fields as spatial
+  derivatives.
   They are derivatives. The $\mathcal{G}$-valued fundamental theorem gives,
   along a coordinate segment,
   \[
@@ -432,6 +537,13 @@ The temporal operation is a Laplace prefix, not temporal convolution.
 \end{proposition}
 
 \begin{proof}
+  We first construct the ordinary integral path using the samplewise smooth
+  coefficient. We then identify its scalar rows with the transferred noise
+  evaluations and use countability and continuity to obtain equality of paths.
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the ordinary response on its
+  regularity event.
   The coefficient is compact smooth in space and continuous in time in every
   spatial derivative norm. Multiplication estimates and strong continuity of the
   full free group show that the statewise integral exists on every $E_r$. Its
@@ -441,6 +553,13 @@ The temporal operation is a Laplace prefix, not temporal convolution.
   $\mathcal{B}(E)$, without requiring norm continuity or an operator-norm
   derivative of $S(t)$.
 
+  \medskip
+  \noindent\textit{Step 2.~}We identify its rows by physical duality and test
+  approximation.
+  The row calculation is~\eqref{E:variance-physical-adjoint} of
+  Proposition~\ref{P:actual-wave-form}, with $G_w$
+  from~\eqref{E:variance-dual-wave}, applied at the fixed time $u$ to the
+  spatial coefficient $b_\rho(u,\cdot)$.
   At each fixed $u$, the Sobolev duality calculation uses only spatial
   smoothness of $b_\rho(u,\cdot)$. From $S(-u)(0,f)$ and the two Bessel weights,
   for real Schwartz phases,
@@ -450,6 +569,9 @@ The temporal operation is a Laplace prefix, not temporal convolution.
   \]
   Thus, no prior hypothesis of smoothness in time is invoked for this
   instantaneous identity. For complex pairs conjugate the second factor.
+  For the approximation below, Cauchy--Schwarz on the fixed finite time
+  interval converts $L^2$ time error to $L^1$ error, and the common compact
+  spatial support contributes only its fixed volume.
   Integrating gives the ordinary source-field integral against the specified
   wave test for the original covariance $h_{R,t;z,w}$. For smooth tests, the
   point-feature integral has already been identified with $Y_\rho(F)$. The
@@ -467,6 +589,9 @@ The temporal operation is a Laplace prefix, not temporal convolution.
     =\langle M_R^\rho(t)z,w\rangle_E
     \quad\text{in }L^2.
   \]
+
+  \medskip
+  \noindent\textit{Step 3.~}We obtain equality at every time on one event.
   Compare a countable dense Schwartz phase collection and rational times.
   Boundedness and the path continuity of both sides extend this equality to all
   states and all times on one probability-one set. The equality is on the

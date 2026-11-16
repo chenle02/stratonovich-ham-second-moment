@@ -37,6 +37,12 @@ We use all pair partitions, including self-pairings.
 \end{lemma}
 
 \begin{proof}
+  We construct the ordered integrals using finite positive chain measures and
+  Gaussian moment bounds. We then identify the Green-regularization limit and
+  compare every Wick diagram before summing over pairings.
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the finite chain integrals.
   Let $\nu_n^{t,x}$ be the positive time-space chain measure on $0 < s_1 <
   \cdots < s_n < t$, with successive spatial factors $G_d(s_{j+1}-s_j,\ud z_j)$
   and $s_{n+1} = t$, recovering positions backwards from $x$. It uses measures
@@ -46,6 +52,13 @@ We use all pair partitions, including self-pairings.
   \begin{equation}\label{E:masked-chain-mass}
     \nu_n^{t,x}(1)=\frac{t^{2n}}{(2n)!}.
   \end{equation}
+  In the covariance and mask factors below, $z_i$ denotes the vertex position
+  recovered backwards from the terminal point, not the Green increment used to
+  construct the chain measure.
+  Starting from mass one at order zero, the recursion integrates the mass of
+  the last Green factor, $t-r$, against the previous mass. Substituting
+  $f_{n-1}(r) = r^{2n-2}/(2n-2)!$ gives the displayed mass by elementary
+  integration. In particular, the measure is finite at each fixed order.
   Measurability follows by representing $G_d(r)$ as $r$ times the dilation by
   $r$ of its unit-time probability measure.
 
@@ -64,7 +77,19 @@ We use all pair partitions, including self-pairings.
   finite chain measure defines a Bochner $L^2$ integral and permits stochastic
   Fubini between two chains.
 
+  The bound on the $L^2$ norm of each product is uniform over the integration
+  variables at fixed $\rho,n$. Its integral against the finite chain measure
+  is therefore finite. This is the Bochner integrability condition, and
+  applying the same argument to two products gives the absolute integrability
+  needed to exchange expectation and the two chain integrals.
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the integrals obtained by Green
+  smoothing.
   These are the canonical regularized terminal integrals at common noise widths.
+  The unmasked $X_{\rho,n}(t,x)$ is $Y_n^{\boldsymbol a}(t,x)$ from
+  Lemma~\ref{L:vertex-crude} with every vertexwise noise width in $\boldsymbol
+  a$ set equal to $\rho$, so its bound is $q_n(t)$.
   Here is the Green-width identification needed in dimension three. At fixed
   positive $\rho$, replace every Green measure by its convolution with a
   positive heat approximate identity. At fixed times the measures converge
@@ -80,6 +105,10 @@ We use all pair partitions, including self-pairings.
   needed. Consequently, Lemma~\ref{L:vertex-crude} applies to the unmasked
   integrals.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We compare each masked Wick diagram with its
+  unmasked diagram.
   If $n+k$ is odd, Gaussian centering gives zero. If $n+k = 2l$, each pair
   partition $D$ contributes the nonnegative finite integral
   \[
@@ -111,10 +140,17 @@ We use all pair partitions, including self-pairings.
     &\le \|\phi\|_1^2\,\E|u_\rho(t,0)|^2.
     \label{E:masked-average-source}
   \end{align}
-  The spatial integral is an Bochner $L^2$ integral.
+  The spatial integral is a Bochner $L^2$ integral.
 \end{proposition}
 
 \begin{proof}
+  We first identify the mean-square series with the continuous Picard solution
+  on each compact observation region. We then pass the mixed-order comparison
+  through the series and integrate it against the nonnegative spatial test.
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct and identify the ordinary mild
+  solutions.
   Put $Q_T = \sum_{n\ge0}q_n(T) < \infty$, using~\eqref{E:vertex-summability}.
   Lemma~\ref{L:masked-chain-comparison} proves absolute $L^2$ convergence
   uniformly in space and widths. To identify the sums pathwise, fix $\rho$, a
@@ -130,6 +166,10 @@ We use all pair partitions, including self-pairings.
   M^nT^{2n}/(2n)!$, where $B$ bounds their difference on the larger compact
   cone. Letting $n \to \infty$ proves uniqueness.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the continuous version with the
+  Bochner series.
   Ordinary Fubini and the absolute product integrability in the preceding lemma
   identify each Bochner term with the pathwise chain integral at a fixed
   terminal point, simultaneously over countably many orders. An almost surely
@@ -138,17 +178,28 @@ We use all pair partitions, including self-pairings.
   solution for all terminal points at this fixed $\rho$; no common event over
   uncountably many widths is needed.
 
+  \medskip
+  \noindent\textit{Step 3.~}We sum the expected two-point comparison.
   For either masked or unmasked terms, Cauchy--Schwarz gives
   \[
     \sum_{n,k\ge0}\E|X_{\rho,n}^{(m)}(t,x)
     X_{\rho,k}^{(m)}(t,y)|\le Q_t^2.
   \]
+  For the unmasked stationary field, Cauchy--Schwarz bounds its two-point
+  expectation by the geometric mean of two equal point second moments.
   Products of partial sums converge in $L^1$. Thus, the preceding lemma passes
   termwise to~\eqref{E:masked-two-point}. The unmasked source law is spatially
   stationary, and its finite Picard integrals commute with translations. Their
   $L^2$ limits inherit stationarity, so $\E[u_\rho(t,x)u_\rho(t,y)] \le
   \E|u_\rho(t,0)|^2$. Stationarity is not required of the masked solution.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We form the tested spatial average.
+  Translating every recovered vertex position by $x$ identifies $\nu_n^{t,x}$
+  with the translate of $\nu_n^{t,0}$; on this fixed increment measure,
+  varying $x$ changes only the arguments of the source factors and, in the
+  masked case, of $m$.
   Each finite Bochner term is $L^2$-continuous in $x$ by source increment
   continuity on compact cones and dominated Gaussian product moments. Uniform
   $q_n$ tails pass this property to the full sum. Its separable $L^2$ image and
@@ -175,6 +226,15 @@ We use all pair partitions, including self-pairings.
 \end{proposition}
 
 \begin{proof}
+  We first pass to the canonical limit at each pair of chain orders. A
+  summable double majorant then gives the full point moment. The conditional
+  masked transfer follows by passing to the limit in the tested source
+  inequality.
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the limit for fixed orders.
+  The relabelling $r$ below reverses the vertex order separately within each
+  chain.
   At every fixed pair of orders the common-width source law is the vertexwise
   law in Lemma~\ref{L:joint-fixed-order}. At terminal $(t,0)$ reverse each chain
   by $s'_j = t-s_{n+1-j}$, $z'_j = -z_{n+1-j}$, and likewise for the other
@@ -189,6 +249,10 @@ We use all pair partitions, including self-pairings.
     \E[X_{\rho,n}(t,0)X_{\rho,k}(t,0)]
     \longrightarrow \E[X_n(t,0)X_k(t,0)].
   \]
+
+  \medskip
+  \noindent\textit{Step 2.~}We pass from finitely many orders to the full
+  moment.
   All absolute mixed moments, before and after the limit, are bounded by
   $q_n(t)q_k(t)$. Given $\delta > 0$, choose a finite square of orders with the
   double majorant outside it less than $\delta$. On the square the finitely many
@@ -198,12 +262,19 @@ We use all pair partitions, including self-pairings.
   diagram laws, without assigning a new pathwise realization of the entire
   canonical solution family.
 
+  \medskip
+  \noindent\textit{Step 3.~}We transfer the bound under the stated
+  masked-limit premise.
   Finally, $L^2$ convergence of the masked averages implies convergence of their
   second moments by
   \[
     |\E|B|^2-\E|A|^2|
     \le\|B-A\|_2(\|B\|_2+\|A\|_2).
   \]
+  The inequality follows by factoring the difference of squared norms and
+  applying Cauchy--Schwarz. Convergence in $L^2$ also bounds both norms on the
+  right, so this difference tends to zero. Thus, both sides of the source
+  inequality have the limits needed for the comparison.
   Take the same source limit in~\eqref{E:masked-average-source} and
   use~\eqref{E:masked-unmasked-moment-limit}. Existence of the masked limit
   remains an explicit premise here; the next section constructs it on a phase

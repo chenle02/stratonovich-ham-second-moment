@@ -24,6 +24,15 @@ of the spatial energy.
 \end{lemma}
 
 \begin{proof}
+  We first obtain a continuous representative with a bounded square and zero
+  limits at infinity. We then integrate the derivative of its product with the
+  distribution function and expand the square, with all terms absolutely
+  integrable.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the representative and its endpoint
+  decay.
   On a bounded interval the weak derivative $f'$ is $L^1$ by Cauchy--Schwarz.
   Its integral primitive has weak derivative $f'$ by Fubini. Subtracting it from
   $f$ gives a function of weak derivative zero, hence constant almost
@@ -36,9 +45,15 @@ of the spatial energy.
   integrability forces both limits to be zero. It is therefore bounded, and $A =
   \int\rho^2 \le \|\rho\|_\infty\int\rho < \infty$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We compute the two integrals in the square
+  expansion.
   Now $0 \le \mathsf{F} \le 1$, $\mathsf{F}' = \rho$ continuously, and its
   limits are zero and one. The derivative of $\rho(1-2\mathsf{F})$ is
   $\rho'(1-2\mathsf{F})-2\rho^2 \in L^1$. Its endpoint limits vanish.
+  Since $\rho'=2ff'$, dividing the integrated derivative identity by two gives
+  the cross term with a positive sign.
   Integrating on $[-R,R]$ and sending $R \to \infty$ gives
   \[
     \int_\R f'f(1-2\mathsf{F})=A .
@@ -71,12 +86,23 @@ Proposition~\ref{P:spatial-energy-map} for white noise.
 \end{proposition}
 
 \begin{proof}
+  We minimize the CDF square in its scalar parameter to bound the ratio. We
+  then evaluate the hyperbolic-secant profiles, which attain both the ratio
+  and the completed-square energy bound at the stated scale.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the sharp ratio upper bound.
   Substitution $z = 3A$ into~\eqref{E:white-cdf-square} gives $3A^2 \le b$. This
   is the exact premise and conclusion of the existing conditional WhiteCDF
   square deduction. Here $A > 0$, since $A = 0$ would imply $f = 0$ a.e. Also $b
   > 0$: zero derivative makes its continuous representative constant and hence
   zero in $L^2$, contradicting unit mass. Thus, $A/\sqrt b \le 1/\sqrt3$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We evaluate an attaining family and the original
+  covariance energy.
   For $\ell > 0$ use the real smooth $H^1$ profile $f_\ell(x) =
   \sqrt{\ell/2}\operatorname{sech}(\ell x)$, with $f_\ell' = -\ell\tanh(\ell
   x)f_\ell$. Set $t = \tanh(\ell x)$, so $\ud t = \ell\operatorname{sech}^2(\ell
@@ -93,6 +119,8 @@ Proposition~\ref{P:spatial-energy-map} for white noise.
     cA-b/2\le cA-\tfrac32A^2
     =c^2/6-\tfrac32(A-c/3)^2\le c^2/6 .
   \]
+  The coefficient is covariance mass $c$ in the
+  physical pairing, not a noise coefficient of size $c$.
   At $\ell = c > 0$ the profile attains $c^2/6$. These are full $H^1$ energy
   profiles; compact approximation equality is
   Proposition~\ref{P:spatial-four-linear}, not a claim that the noncompact

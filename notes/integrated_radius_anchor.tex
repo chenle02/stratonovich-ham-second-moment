@@ -49,6 +49,10 @@ weights $\langle k/\rho\rangle^r$.
 \end{lemma}
 
 \begin{proof}
+  We rescale the exact Fourier kernels and bound their integral and
+  lattice-sum norms separately. The radius powers cancel in the mixed Schur
+  estimate, after which density gives the full Sobolev maps.
+
   The exact weighted Fourier kernels are
   \begin{align*}
     &L^{-d/2}
@@ -68,6 +72,9 @@ weights $\langle k/\rho\rangle^r$.
     C_r\rho^{d/2}F_r(k-\rho\xi),\qquad
     F_r(t)=|\widehat{\phi_0}(\pm t)|\langle t\rangle^{|r|}.
   \]
+  The bracket comparison uses $\rho\ge1$; consequently, the constants
+  multiplying the explicit radius powers in the two Schur bounds depend only
+  on the fixed $\phi_0,r,d$.
   The nonnegative $F_r$ is integrable and bounded by arbitrarily high inverse
   powers of $\langle t\rangle$. At fixed $k$, integration in $\xi$ gives a bound
   $C\rho^{-d/2}$. At fixed $\xi$, summation in $k$ gives $C\rho^{d/2}$:
@@ -78,6 +85,8 @@ weights $\langle k/\rho\rangle^r$.
   Their radius powers cancel. For recovery the row and column roles are
   reversed.
 
+  In the integral bound, the substitution $\rho\xi-k$ contributes $\rho^{-d}$.
+  Multiplying by the kernel's factor $\rho^{d/2}$ gives $\rho^{-d/2}$.
   Bounded kernel extension from Schwartz functions and torus polynomials gives
   the full Sobolev maps by density. Their distributional meanings are the same
   cutoff maps as in Lemma~\ref{L:cutoff-factorization}; no point sampling of a
@@ -105,6 +114,13 @@ take the $q$th root, which produces the factor $\rho^{d/q}$.
 \end{proposition}
 
 \begin{proof}
+  We factor the cutoff through the auxiliary torus. We compare the diagonal
+  inclusion sum with a Euclidean integral and then use finite-rank
+  approximations to transfer that sum to the whole-space operator.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We use the full-domain recovery factorization.
   The exact recovery identity, with $\chi_\rho\psi_\rho = \chi_\rho$, gives
   \[
     \Lambda^\sigma\chi_\rho\Lambda^{-\sigma-\gamma}
@@ -118,6 +134,9 @@ take the $q$th root, which produces the factor $\rho^{d/q}$.
   $\rho$. This is an equality on the full whole-space domain by the recovery
   proof and density, including negative $\sigma$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound the diagonal sum by a volume integral.
   Put $u = q\gamma > d$. If $x \in k+[-1/2,1/2]^d$, then
   \[
     \langle x/\rho\rangle
@@ -134,6 +153,15 @@ take the $q$th root, which produces the factor $\rho^{d/q}$.
   The integral is finite: dyadic annuli outside the unit ball give a geometric
   series with terms bounded by $C_d2^{j(d-u)}$.
 
+  The unit cubes partition Euclidean space and each has volume one. The
+  preceding weight comparison bounds the constant cube value $\langle
+  k/\rho\rangle^{-u}$ by $(c_d')^u\langle x/\rho\rangle^{-u}$. Summing the
+  cube integrals and substituting $y=x/\rho$ gives the factor $\rho^d$. Taking
+  a $q$th root later gives $\rho^{d/q}$.
+
+  \medskip
+  \noindent\textit{Step 3.~}We transfer the singular-value bound to the two
+  whole-space envelopes.
   Arrange the inclusion's diagonal values in decreasing order $(\lambda_j)$.
   They tend to zero. Retaining its first $j-1$ coordinates has rank less than
   $j$ and error $\lambda_j$. Compose this approximation with the bounded outer
@@ -175,6 +203,15 @@ remains the whole-space $E$ throughout.
 \end{proposition}
 
 \begin{proof}
+  We keep the physical noise mask fixed while choosing a larger localization
+  envelope. We use only one fixed Schatten index to extract the radius factor,
+  then apply the dyadic path estimate uniformly over all higher moment
+  indices.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We choose a localization envelope covering the
+  propagated support.
   Use the given smooth-test basis from Lemma~\ref{L:driver-noise-basis}, $g_j =
   W(f_j)$, and its finite paths $M_N = \sum_{j\le N}g_jA_j$. These coefficient
   paths use the same given noise as in Lemma~\ref{L:driver-holder-limit}, not
@@ -187,6 +224,9 @@ remains the whole-space $E$ throughout.
   noise mask remains $m_R$. Both envelopes $K_{\rm in},K_{\rm out}$ here use
   this same $\chi_\rho$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We estimate increments using both variance bounds.
   For an interval $I \subset [0,B]$ of length $0 < h \le 1$,
   Proposition~\ref{P:wave-two-variances} and
   Lemma~\ref{L:driver-actual-variances} give both finite weighted variances with
@@ -204,6 +244,9 @@ remains the whole-space $E$ throughout.
   localizations have been checked; individual basis-dependent coefficient bounds
   are not summed.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We extract the radius factor at the fixed index.
   For $q \ge Q$, the unnormalized Schatten norms obey $\|K_{\rm out}\|_{S_q} \le
   \|K_{\rm out}\|_{S_Q}$. Indeed, normalize a nonzero singular-value sequence by
   its $\ell^Q$ norm; each entry is at most one, so its $q$th power sum is at
@@ -224,6 +267,10 @@ remains the whole-space $E$ throughout.
   sums of increments of length at most one, with constants depending only on the
   fixed $B$.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We sum dyadic increments and pass to the path
+  limit.
   Let $D_n(F)$ be the largest adjacent increment on the grid $kB2^{-n}$ of
   $[0,B]$. For fine levels $B2^{-n} \le 1$, the finite-maximum bound gives
   \[

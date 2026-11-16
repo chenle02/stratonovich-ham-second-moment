@@ -60,6 +60,14 @@ Set $d_\varnothing^C = 0$.
 \end{lemma}
 
 \begin{proof}
+  We bound each coordinate of a minimizing sequence away from both zero and
+  infinity. This gives an attained interior minimum. Strict positivity of the
+  Hessian then gives uniqueness and the stationarity equations.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We confine a nonempty sublevel to a compact
+  positive box.
   Put $c_i = C_{ii} > 0$ and $K_A = \sum_{i\in A}b_i^2/c_i$. Nonnegative entries
   and positive weights give
   \[
@@ -85,6 +93,10 @@ Set $d_\varnothing^C = 0$.
   sublevel the values exceed $d_0$, so the minimum is global on the entire
   positive orthant.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We prove uniqueness and compute the interior
+  critical equations.
   The function is smooth in that orthant. Its Hessian on a nonzero vector $\xi$
   has value
   \[
@@ -112,6 +124,15 @@ Set $d_\varnothing^C = 0$.
 \end{proposition}
 
 \begin{proof}
+  We bound each primal value using its own active set. We then evaluate the
+  restricted objective at the corresponding dual minimizer, where both scalar
+  and Hilbert inequalities are equalities, and use the nonnegative omitted
+  rewards.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound the primal objective by a finite
+  active-set dual value.
   For arbitrary $\Phi$, let $A(\Phi) = \{i:\langle\Phi,k_i\rangle>b_i\}$. It is
   contained in $\mathcal{J}$. All other terms in the objective vanish, including
   equality at the threshold. If $A(\Phi)$ is empty, $\mathfrak{F}_C(\Phi) =
@@ -129,6 +150,10 @@ Set $d_\varnothing^C = 0$.
   Lemma~\ref{L:gram-dual-minimum}. Taking the supremum bounds $\mathscr{S}(C)$
   above by their maximum.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We realize the maximum of the dual values by a
+  nonnegative conic control.
   Conversely, $\mathfrak{F}_C(0) = 0 = d_\varnothing^C$. For nonempty $A$, take
   its dual minimizer. Equation~\eqref{E:gram-dual-stationarity} makes every
   vector in $A$ strictly active at $\Phi_A$, with
@@ -170,6 +195,8 @@ semidefinite order.
   original quadratic form on $(-v^{\mathsf{T}}y/c,y)$. Realize $B$ by vectors
   $u_i$ using the induction hypothesis. Then $k_1 = (\sqrt c,0)$ and $k_i =
   (v_i/\sqrt c,u_i)$ for the other indices realize $C$. Undo the permutation.
+  The inner products are $\langle k_1,k_i\rangle=v_i$ and $\langle
+  k_i,k_j\rangle=v_iv_j/c+B_{ij}=A_{ij}$, while $\|k_1\|^2=c$.
   Entries of $B$ need not be nonnegative; this construction requires neither
   nonnegative coordinates nor complete positivity.
 
