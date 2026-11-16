@@ -535,3 +535,33 @@ Checks:
   - Table G.1 row: "Steps checked; inputs supplied or left outside Lean", 8 / 11 / 7 / 8 / 0 / 34.
   - The data lines of VERIFICATION.md and verification-status-data.tex are byte-equal to those at 4171c4d7, apart from the read revision.
   - No cited TeX file changed since 90296c39, so the remap pass with overrides `f7069cf` holds.
+
+### Proof-readability rewrite: Lean impact and the pilot measurement (2026-11-16)
+- **Context.** Le asked #24 and #7 to make all proofs reader-friendly. #22 measured the companion's exposure:
+  - of 8278 hand-written TeX-line citations, 4322 (52%) lie entirely inside proofs, and 4503 overlap one;
+  - by file: main .tex 2676, spatial_occupation 449, covariance_foundation 288, unmasked_variational 239, occupation_ceiling 216, and others;
+  - many companion sentences also quote or paraphrase proof steps.
+
+  Rewriting proofs edits these lines rather than shifting them.
+- **Options sent to #16 and Le:**
+  - (a) Rewrite before R and do a large re-anchor by reading, with a review round.
+  - (b) Rewrite before R with a per-file step map (old proof lines -> new lines, exact or inexact), so the remap stays mechanical. #24 generates the maps; #22 adds a step-map input to the re-anchor tool.
+  - (c) Coarsen the in-proof citations to "in the proof of <label>" at the re-pin.
+  - (d) Defer the rewrite until after v0.10.0.
+
+  #22 recommends (b), or (c) as the fallback.
+- **Step-map format (agreed with #24).** One JSON file per rewritten .tex file: {file, old_rev, new_rev, segments: [[old_start, old_end, new_start, new_end, exact|inexact]]}.
+  - The segments cover every line of each old proof body, with no gaps or overlaps.
+  - Kept labels and \eqref anchors appear as exact one-line segments.
+- **Pilot 118de5f7** (held; parent cdde711c; notes/integrated_compact_gaussian.tex only; #7 editor, #24 gate):
+  - 10 of 10 proofs rewritten; 87% of old proof lines kept byte-identical.
+  - Book 427 -> 430 pages.
+  - 2 AUDIT comments, both in the sample proof L:cutoff-factorization.
+  - Map: 63 segments, 13 inexact.
+- **#22's measurement.** The companion cites this file 140 times: 79 in or overlapping a proof, 61 outside.
+  - **140 of 140 map mechanically:** every cited old line is byte-identical at its new position, and none touches a reworded line. The 43 inexact lines of the sample proof carry no citation.
+  - **72 of the 79 in-proof citations map line for line.**
+  - **7 map by endpoints with inserted reader lines inside.** These are whole-proof ranges in FiniteGaussianMatrix.lean and the ledger, e.g. 49-92 -> 60-112 and 101-180 -> 121-212. They are the existing span case.
+  - **0 need reading.**
+- **Caveat.** The pilot is mostly insertion. The share of citations landing on reworded lines must be measured per file as the rewrite proceeds; the main .tex alone has 2676 in-proof citations.
+- **Open, for Le:** the depth of the rewrite, the Lean option, and how rewritten proofs are reviewed (#3's per-file packets). #16 sequences it relative to R.
