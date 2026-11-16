@@ -7,6 +7,19 @@
 
 ## Active narrow follow-up: proof-readability rereads (2026-11-16)
 
+
+**Latest source hold:** Agent 16's `0e7f18c8d115` holds all 28 pending core
+file scopes after Le's second-depth instruction on 169 main-path results
+(`4cf812220457`). A specimen goes to Le before scaling. Choice B remains
+valid for the five unchanged NoGo scopes RP026-RP030 (33 proof pairs), with
+one dispatcher and at most three simultaneous processes. RP026-RP028 began
+at 12:49:47-50 UTC; RP029 filled a slot at 12:54:03 UTC. These are launches,
+not accepted reviews. The separate RP007B repair is UNUSED and held: its
+scaling proof is on the affected main path. Retain running calls and their
+old source bindings; no old grade covers future added explanations. See
+`reviews/2026-11-16-readable-native-recovery-policy-proposal/SOURCE-HOLD-NOGO-ONLY.json`.
+
+
 **Current execution decision:** Le directly chose B on exact policypacket
 `d8fff2c8`, relayed byAgent16 in`e88dcc826a6b` and in the usermessage. The
 remaining21frozen scopes/153pairs and ONE separateRP007 budget-repair process
