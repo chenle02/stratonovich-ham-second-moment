@@ -250,20 +250,12 @@ for suitable coefficient masks and a sufficiently large observation cutoff.
   including the Lipschitz operator-norm primitive $A_j(0,t)$. Norm continuity of
   $S(t)$ is not needed.
 
-  The zero first component of $B(H_{j,R}(t))z$ belongs to every Sobolev space.
-  Its second component lies in $H^r$, exactly the velocity space of $E_{r+1}$.
-  The two free propagators preserve their respective Sobolev phase spaces, so
-  integration gains one derivative without differentiating the input.
   Under the $E_s$ pairing, the dual of $E_r$ is isometrically $E_{2s-r}$,
   directly by the two Bessel weights. Dualizing the bound with a gain of one
   derivative therefore gives the asserted adjoint gain. It agrees on Schwartz
   phases with the bounded $E_s$ adjoint. Since $\gamma < 1$, gain one at every
   index implies the two stated maps from $E_{s-\gamma}$ to $E$.
 
-  For the adjoint, a functional on the target $E_{r+1}$ is represented under
-  the $E_s$ pairing by a vector in $E_{2s-r-1}$. After applying the adjoint it
-  is a functional on $E_r$, represented in $E_{2s-r}$. This gives the stated
-  indices.
 
   \medskip
   \noindent\textit{Step 2.~}We prove both localization identities by finite
@@ -275,10 +267,6 @@ for suitable coefficient masks and a sufficiently large observation cutoff.
   there as well. Time reversal gives the backward assertion. Thus, both entries
   of $S(\pm t)$ enlarge supports by at most $|t|$. Density and testing against
   compact smooth functions extend this support assertion to Sobolev phases. In
-  particular, the forward wave from input vanishing on the larger ball cannot
-  reach the support of $H_{j,R}$ by time $T$. For the output, multiplication
-  first confines the second entry to $B_{2R}$, and backward propagation
-  enlarges that ball by at most $T$. In
   particular, for input $(1-D_\chi)z$, approximate $z$ by Schwartz phases and
   retain the factor $1-D_\chi$; the approximants vanish on $B_{2R+T+1}$. Their
   free displacement vanishes on $B_{2R}$ throughout $[0,T]$, and the same is
@@ -461,9 +449,6 @@ Proposition~\ref{P:wave-two-variances}.
   \]
   and the same identities for their tails. Positive congruence applied to $T_N
   \le b_ID_\gamma^2$ proves~\eqref{E:driver-compact-tail-envelopes}.
-  The fixed bounded cutoff operators can be passed through these strong
-  limits. Subtracting the finite identity from its limiting identity gives the
-  same localization for the positive remainder.
 
   Complexification preserves these statements and constants. The Hilbert norms
   split into real and imaginary squared norms; real operators extend
@@ -495,15 +480,8 @@ now use this compact domination to improve the mode of convergence.
     +2\langle T_N(1-Q)x,(1-Q)x\rangle
     \le2\|QT_NQ\|+2\epsilon.
   \]
-  Decompose the unit vector into its $Q$ and $1-Q$ parts. Positive quadratic
-  Cauchy--Schwarz bounds the mixed term by twice the geometric mean of the two
-  diagonal terms; $2ab \le a^2+b^2$ then gives the factor two in the display.
-  The second term is bounded by the spectral tail of $B$.
   Weak convergence makes the finite-dimensional matrix $QT_NQ$ converge in norm
   to zero. Letting $\epsilon\downarrow0$ proves norm convergence.
-  Since $T_N$ is positive, its norm is
-  the supremum of its quadratic form on unit vectors, so the preceding bound
-  proves the norm limit.
   Lemma~\ref{L:compact-positive-order} gives $\lambda_j(T_N) \le \lambda_j(B)$,
   while each $\lambda_j(T_N) \to 0$ by norm convergence. Dominated summation of
   $\lambda_j(B)^m$ proves the trace limit. No order comparison of the operator
@@ -539,11 +517,7 @@ bounds compact sums only through the envelope norm $\|K_{\rm out}\|_{S_p}$.
   Q_kZ_\ell(1-Q_k)Z_\ell^*Q_k \ge 0$; the input inequality is the same with
   adjoints interchanged. Positive-order and compression max-min compare their
   trace powers with the uncompressed ones.
-  The comparison of trace powers is made eigenvalue by eigenvalue: positive
-  order bounds the compressed variance by the compression of the full
-  variance, and max-min bounds the latter eigenvalues by those of the full
-  variance. Raising these nonnegative numbers to $q/2$ and summing preserves
-  the bounds. Apply
+  Apply
   Proposition~\ref{P:finite-gaussian-matrix} on the finite range, retaining the
   average. For each finite Gaussian coordinate vector, compactness gives
   operator-norm convergence of the compressed sum to the original sum.
@@ -645,10 +619,6 @@ $N$, without leaving the original probability space.
   \ge p$ and use Lyapunov to obtain $L^p$ operator-norm convergence to that same
   limit. One fixed Schatten index is not used to infer all moment orders.
 
-  Lyapunov compares the $L^p$ norm with the $L^q$ norm on a probability space
-  when $p \le q$. Because admissible even $q$ can be chosen arbitrarily large,
-  this gives every finite operator-norm moment without changing the random
-  limit.
 
   \medskip
   \noindent\textit{Step 3.~}We identify compactness, moments and Gaussianity
@@ -681,9 +651,6 @@ $N$, without leaving the original probability space.
   those endpoint changes have zero original covariance norm. Covariance
   completion and linearity give exact additivity of the forms. The deterministic
   statewise coefficient integrals, hence every $X_N$, add on the same partition.
-  Only finitely many short intervals occur in this partition, so the sum of
-  their $L^p$ errors tends to zero. No independence of the interval
-  contributions is required to pass this finite sum to the limit.
   Passing their finite-sum $L^p$ limits gives the corresponding operator
   additivity and covariance identity for matrix elements, independently of the
   partition by common refinement. These are statements at each fixed interval
@@ -718,6 +685,10 @@ $C^\theta$ path norm and compact values at every time on one path event.
 
   \medskip
   \noindent\textit{Step 1.~}We bound increments and the dyadic sum.
+  Corollary~\ref{C:frequency-time} bounds the budget $b_I$ by
+  $C|t-u|^{2\beta}$ for $I=(u,t)$; substitute this
+  in~\eqref{E:driver-two-variances} and apply
+  Corollary~\ref{C:finite-gaussian-operators} to the finite increment sum.
   Choose $\theta < \eta < \beta$ and an even $q_0 \ge 2$ with $q_0\gamma > d$
   and $\beta-\eta-1/q_0 > 0$. For $q \ge q_0$, the singular-value sequence gives
   $\|K_\chi\|_{S_q} \le \|K_\chi\|_{S_{q_0}}$: if the latter is nonzero,
@@ -787,11 +758,6 @@ $C^\theta$ path norm and compact values at every time on one path event.
   follows by bounding each increment by both $2\|F\|_\infty$ and its $C^\eta$
   bound, and splitting at their balancing scale. Its supremum term is controlled
   too. Scalar H\"older in probability proves the $L^qC^\theta$ Cauchy property.
-  In the interpolation estimate, apply scalar Hölder to the two random factors
-  with reciprocal exponents $1-\theta/\eta$ and $\theta/\eta$. This bounds the
-  $L^qC^\theta$ norm by the corresponding powers of the $L^q$ supremum norm
-  and the $L^qC^\eta$ norm. The first tends to zero for differences and the
-  second stays bounded.
   For any requested finite $p$, choose an even $q \ge \max(p,q_0)$ and use
   Lyapunov.
 
@@ -806,9 +772,6 @@ $C^\theta$ path norm and compact values at every time on one path event.
   probability in the path norm. An almost surely $C^\theta$-convergent
   subsequence converges uniformly in operator norm. Finite paths have compact
   values on short intervals, and on long ones by finite additivity. Therefore,
-  the limit is a norm limit of compact operators at every time on this same
-  event. Uniform convergence is essential: one does not select a separate
-  exceptional set for each time. Thus,
   the limit has compact values at every time on that single path set. It starts
   at zero. Passing the uniform bounds from~\eqref{E:driver-dyadic-moment-sum}
   through the path convergence proves the asserted $C\sqrt q$ bound. This proves
