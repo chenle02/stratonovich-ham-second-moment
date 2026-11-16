@@ -80,10 +80,6 @@ Both integrals are positive and finite.
     \sum_{n\ge0}
     \frac{(r)_n(1-r)_ns^n}{(1+r)_n n!}.
   \end{align*}
-  The term of order $n$ integrates $u^{n-r}(1-u)^{2r-1}$, giving
-  $\operatorname{Beta}(n+1-r,2r)$. The Gamma recurrence divides this by
-  $\operatorname{Beta}(1-r,2r)$ to give $(1-r)_n/(1+r)_n$. Thus, the displayed
-  series follows term by term from the positive binomial expansion.
   The Beta ratio follows from the Gamma recurrence. Since $(r)_n/(1+r)_n =
   r/(r+n)$, expanding the incomplete Beta integral gives
   \[
@@ -92,8 +88,7 @@ Both integrals are positive and finite.
   \]
   Expanding $(1-u)^{r-1}$ in $B_s(r,r)$ gives coefficient $(1-r)_n/n!$ and
   integral $s^{r+n}/(r+n)$. Multiplication by $r\operatorname{Beta}(1-r,2r)$
-  therefore gives exactly the coefficients of $L(s)$. Reflection in the time
-  interval then supplies the other half of the potential.
+  therefore gives exactly the coefficients of $L(s)$.
   Reflection makes the right part $L(1-s)$, while symmetry gives
   $B_s(r,r)+B_{1-s}(r,r) = \operatorname{Beta}(r,r)$. The full integral is
   therefore $r\operatorname{Beta}(1-r,2r)\operatorname{Beta}(r,r) =
@@ -107,10 +102,6 @@ Both integrals are positive and finite.
   \medskip
   \noindent\textit{Step 3.~}We verify both integrability classes and the
   stated mass.
-  Since $0<a<1$, one has $0<r<1/2$. Near either endpoint the density behaves
-  as a constant times the distance to that endpoint to the power $-r$; its
-  square has power $-2r$. Both powers exceed $-1$, so both endpoint integrals
-  are finite.
   Integrability and square integrability follow from $-r > -1$ and $-2r = a-1 >
   -1$. Finally,
   \[
