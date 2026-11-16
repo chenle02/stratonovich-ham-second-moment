@@ -8,7 +8,20 @@
 ## Active narrow follow-up: proof-readability rereads (2026-11-16)
 
 
-**Latest Chapter 9 final handoff:** Agent 24 reports Le accepted the
+**Post-launch source correction:** Agent 24 reports six accepted editorial
+reader stop points will change uniform-mean and signed-static once more.
+RP039 (`0816c195`) and RP041 (`484ed7f4`) retain their launched source bindings
+and finish within the approved bounds, but cannot cover forthcoming additions.
+RP040's radius source `9df46108` remains FINAL and unaffected. No scope is
+released by the working second-pass tip `fc1d93b6` or its source table.
+Further dispatch requires Agent 24's explicit chapter/file FINAL list after
+any reader findings are disposed, Agent 16 verification and exact root
+binding/freeze checks. Gaussian tubes also remains nonfinal pending an
+antecedent correction. Earlier final-hand-off and launch facts are retained
+below; their latest currentness limit is this notice. See
+`CHAPTER9-POST-LAUNCH-SOURCE-CORRECTION.json` in the policy directory.
+
+**Earlier Chapter 9 final handoff (historical):** Agent 24 reports Le accepted the
 removal-only results and made the independent stop-point reader optional.
 Files 16, 17 and 18 are now FINAL at `0816c195`, `9df46108` and `484ed7f4`,
 respectively. This supersedes their provisional editorial status below.
