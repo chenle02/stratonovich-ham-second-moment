@@ -88,6 +88,13 @@ $C_\varepsilon$.
 \end{lemma}
 
 \begin{proof}
+  We estimate translations of each covariance row and average them against
+  heat. We then construct the frequency projection on the actual Fourier image
+  and use the heat error to bound its high-frequency tail.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound translations of the localized row.
   Translations $\tau_hf(x) = f(x-h)$ extend to strongly continuous isometries of
   the $H_{\mathrm{sp}}$. Indeed, in its covariance Fourier isometry they
   multiply by $e^{-i\xi\cdot h}$; dominated convergence gives continuity on
@@ -111,6 +118,10 @@ $C_\varepsilon$.
     \le4A_sM^2\min(1,|h|^\beta)\|z\|_E\|w\|_E .
   \end{equation}
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We average the translation bound to obtain the
+  heat error.
   The Bochner integral $\int p_\varepsilon(h)\tau_hk\ud h$ exists, since the
   translation orbit is strongly continuous and bounded in the separable
   covariance Hilbert space. Its Fourier image is
@@ -123,6 +134,16 @@ $C_\varepsilon$.
   Selfadjointness in~\eqref{E:uniform-mean-row} proves
   \eqref{E:uniform-mean-heat}.
 
+  The two terms in the product difference each use one translation error and
+  one bounded factor. The fractional product bound therefore contributes
+  $2A_sM^2$ twice. Averaging $\min(1,|h|^\beta)\le |h|^\beta$ with
+  $h=\sqrt\varepsilon G_d$ gives $\varepsilon^{\beta/2}\E|G_d|^\beta$.
+  Self-adjointness moves this same row estimate to the control argument of
+  $T_R$.
+
+  \medskip
+  \noindent\textit{Step 3.~}We construct the projection without assuming
+  Fourier surjectivity.
   To construct $P_K$, let $V$ be the closed image of the covariance Fourier
   isometry into $L^2(\mu)$, including its fixed $(2\pi)^{d/2}$ factor. No
   surjectivity is assumed. Its formula extends to Schwartz functions: compact
@@ -138,6 +159,10 @@ $C_\varepsilon$.
   idempotent on $V$; pulling it back defines the asserted real orthogonal $P_K$.
   All Fourier multipliers here commute.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We compare the frequency tail with a heat
+  residual.
   On $|\xi| > K$ one has $1-e^{-|\xi|^2/(2K^2)} \ge 1-e^{-1/2}$, whence
   \[
     \|(I-P_K)k\|_{H_{\mathrm{sp}}}
@@ -166,6 +191,14 @@ time map to the Hilbert-valued time map without a dimension factor.
 \end{lemma}
 
 \begin{proof}
+  We use finite Gaussian sums to estimate the Hilbert-valued tensor norm with
+  the scalar operator constant. We then extend by density and check why the
+  same argument does not imply compactness.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We compare the Gaussian norm moment with its total
+  variance.
   For a finite tensor write $v = \sum_{j=1}^n f_j\otimes e_j$ with $(e_j)$
   orthonormal. Its squared norm is $\sum_j\|f_j\|^2$. Let $\gamma_j$ be
   independent standard real normals and $m_r = \E|\gamma_1|^r$. Finite
@@ -181,6 +214,10 @@ time map to the Hilbert-valued time map without a dimension factor.
   $\sum_l(\lambda_l/L)|\zeta_l|^r$. Taking expectations proves the inequality;
   $L = 0$ is immediate. Also $L = \sum_j\|f_j\|^2$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We apply the scalar operator estimate and cancel
+  the Gaussian moment.
   Choose measurable representatives of the finitely many $Af_j$. Scalar Gaussian
   moments and Tonelli give
   \[
@@ -188,6 +225,11 @@ time map to the Hilbert-valued time map without a dimension factor.
     =\E\left\|A\sum_j\gamma_jf_j\right\|_{L^r}^r
     \le\|A\|^rm_r\left(\sum_j\|f_j\|^2\right)^{r/2}.
   \]
+  For each fixed $t$, the scalar sum of the $Af_j(t)$ with independent
+  Gaussian coefficients has variance $\sum_j|Af_j(t)|^2$. Its $r$th absolute
+  moment is that variance to the power $r/2$ times $m_r$. This explains the
+  same factor $m_r$ on both sides, so no dimension-dependent factor remains
+  after cancellation.
   Cancel the finite positive $m_r$ and take the $r$th root. Finite tensor
   density and Bochner completeness give the extension. The zero space is
   trivial. If $Af \ne 0$ and $G$ has an infinite orthonormal sequence $(e_j)$,
@@ -231,6 +273,13 @@ orthogonal projection, with $\pi_0 = 0$. Put
 \end{proposition}
 
 \begin{proof}
+  We transfer the compact scalar temporal tail to Hilbert-valued functions. We
+  then decompose the residual projection into a temporal tail and a
+  spatial-frequency tail, estimating these terms separately.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We control the temporal projection tail.
   The tensor projections are selfadjoint, idempotent and contractive on finite
   tensors and hence on their Hilbert completion. For the scalar tail, failure of
   convergence would supply unit $v_J$ with $\|C_t(I-\pi_J)v_J\|$ bounded below
@@ -241,6 +290,10 @@ orthogonal projection, with $\pi_0 = 0$. Put
   this scalar tail norm to the Hilbert-valued time map without a dimension
   factor.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We decompose and bound the completed mean
+  residual.
   For fixed $R$, $T_R$ is bounded into the separable compact-operator space on
   $E$. Composition with the Bochner field $U\Phi$ gives the stated mean and its
   first bound. The exact decomposition is
@@ -253,6 +306,11 @@ orthogonal projection, with $\pi_0 = 0$. Put
     U(\pi_J\otimes(I-P_K))
     =(I_{L^r}\otimes(I-P_K))(C_t\pi_J\otimes I).
   \]
+  The first tensor term contains the full spatial identity but a small
+  temporal map $C_t(I-\pi_J)$. The second has the bounded temporal map
+  $C_t\pi_J$ and the spatial error $T_R(I-P_K)$. The tensor estimate bounds
+  the former by $\varepsilon_J$ and the latter temporal factor by $c_t$,
+  producing the two different terms in the stated error bound.
   It holds first on finite tensors, then by continuity.
   Apply~\eqref{E:uniform-mean-frequency} pointwise, followed by
   Lemma~\ref{L:uniform-mean-tensor} for $C_t\pi_J$, whose norm is at most $c_t$.
@@ -311,6 +369,15 @@ make this closure separable. The last interval can be empty, in which case $X_N
 \end{proposition}
 
 \begin{proof}
+  We construct the residual paths on the given noise, identify their supported
+  covariance rows, and estimate the resulting primitive. The true block
+  partition then gives the averaged Cameron bound with its exact
+  radius-independent constants.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the residual paths and their
+  first-chaos coordinates.
   Orthogonality and original pullback isometry give $\operatorname{Var}Y_m(f)
   \le \|f\|_{H_{\mathrm{fast}}}^2$. Gaussian transfer,
   Proposition~\ref{P:source-gaussian-transfer}, therefore constructs the
@@ -321,6 +388,10 @@ make this closure separable. The last interval can be empty, in which case $X_N
   constructions and their $L^2$ limits show that every continuous linear
   coordinate is in the first chaos of the given $W$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the covariance direction on the
+  supported subspace.
   Every explicit observed row, pulled back to slow time, belongs to $H_I$. This
   is the supported-row approximation from Lemma~\ref{L:cameron-actual-residual},
   also valid before any projection; approximate endpoints inside $I$ against the
@@ -343,6 +414,10 @@ make this closure separable. The last interval can be empty, in which case $X_N
   Bochner measurable. Fixed-parameter $L^2$ covariance continuity, dense states
   and rational times identify the entire operator path.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We estimate the free group and each local
+  primitive.
   For explicit free constants, the Bessel-unitary Fourier matrix of $S_E(v)$ is
   the matrix displayed in that proposition. For $|v| \le B$, $B \ge 1$, the
   upper off-diagonal entry is at most $\sqrt2 B$: use $|\sin(vk)| \le Bk$ for $k
@@ -364,6 +439,10 @@ make this closure separable. The last interval can be empty, in which case $X_N
   Here $1-1/r > \theta$, constant stopping preserves the bound, and the empty
   block contributes zero.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We combine the local estimates with the block
+  weights.
   Put $n = N+1 \ge 2$. The finite power-mean inequality at exponent $r/p > 1$
   with nonnegative inputs $t_m^p$ gives
   \[
@@ -382,6 +461,16 @@ make this closure separable. The last interval can be empty, in which case $X_N
     [M_0\varepsilon_J+M_fc_tK^{-\beta}]\|h\|_{H_W}.
   \]
 
+  The local factor $\delta^{-1/r}$ is multiplied by the averaged norm's factor
+  $\delta^{1/p}$. Finite power mean contributes $n^{1/p-1/r}$, so their
+  product is $(\delta n)^{1/p-1/r}$. Since $p<r$, this power is increasing,
+  and $\delta n\le2/B$ gives the claimed bound. The two powers in the
+  primitive constant are each at most $B^{1-1/r}$ because $B\ge1$, giving
+  $18B^{3-1/r}$ from $G_{B,E}\le3B$.
+
+  \medskip
+  \noindent\textit{Step 5.~}We apply the bound to the minimum-norm Cameron
+  representative.
   Finally, let $H_{\mathrm{seen}}$ be the closed span in $H_W$ of all
   coefficient tests $k_\ell$ with $\ell(X) = W(k_\ell)$. The first Wiener chaos
   Cameron identification in Proposition~\ref{P:cameron-actual-embedding} applies
