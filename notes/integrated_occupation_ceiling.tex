@@ -85,11 +85,6 @@ below.
   \medskip
   \noindent\textit{Step 3.~}We identify its pairing with the original smooth
   control.
-  Because each profile has unit $L^2$ norm, its spatial energy bound involves
-  only $b_s^{\alpha/2}$. Concavity on the unit time interval bounds the
-  integral of this power by $T(g)^{\alpha/2}$. Thus, the occupation vector is
-  constructed using the same bounded $L^2$ inclusion as smooth controls,
-  without assigning an instantaneous noise value to a rough profile.
   Choose one compact smooth $\chi$ equal to one on all spatial supports of
   $\Psi_t$. For real $f \in H^1$, smooth approximation gives
   \[
@@ -159,11 +154,6 @@ below.
   \medskip
   \noindent\textit{Step 2.~}We optimize spatial dilation over the same
   occupation class.
-  The ratio denominator is nonzero because the gradient energy of a unit $H^1$
-  profile is positive almost everywhere in time. A nonnegative measurable
-  function that is positive almost everywhere cannot have zero integral. The
-  class also assumes that integral is finite, so each displayed ratio is
-  defined before taking its supremum.
   The map $(U_\ell g)_s(x) = \ell^{d/2}g_s(\ell x)$ is an $H^1$ isomorphism
   preserving unit mass and strong measurability. It has inverse $U_{1/\ell}$ and
   is a bijection on $\mathcal{O}$. The physical Radon change of variables gives
@@ -238,11 +228,6 @@ below.
     \le\langle\Psi,\rho_{g_\varepsilon}\rangle+\varepsilon
     \le\sqrt{v_\Psi A(g_\varepsilon)}+\varepsilon .
   \]
-  The first-index cells partition the time interval, so exactly one test is
-  selected at every time. The pointwise kinetic bound is independent of the
-  selected index and is integrable on the unit interval. Thus, the selection
-  belongs to the full occupation class before its covariance vector is used in
-  the integrated inequality.
   Time Cauchy--Schwarz on the unit interval gives $I_\Psi^2 \le
   \int_I\lambda_{\Psi,s}^2\ud s$. This
   proves~\eqref{E:occupation-rayleigh-selection}. No eigenvector, continuum
@@ -289,6 +274,12 @@ display parameter $b$ does not change the temporal exponent $a$.
   \noindent\textit{Step 1.~}We optimize the kinetic budget before removing the
   selection error.
   Fix $\Psi$ and write $v = v_\Psi$, $C = C_{\rm occ}$ and $\beta = \alpha/4$.
+  Take $T=T(g_\varepsilon)>0$ from the selected occupation; by the definition
+  of $C_{\rm occ}$, $A(g_\varepsilon)\le C_{\rm occ}T^{\alpha/2}$, which
+  converts its covariance term into $\sqrt{vC}\,T^\beta$.
+  At the positive critical point $T_*$ of the scalar maximization below,
+  $T_*=\beta\sqrt{vC}\,T_*^\beta$, so the value is
+  $(1-\beta)\sqrt{vC}\,T_*^\beta$.
   Lemma~\ref{L:occupation-rayleigh-selection} gives $I_\Psi^2 \le
   \sqrt{vC}T^\beta-T+\varepsilon$ for some $T > 0$. Bound it by the supremum
   over all $T \ge 0$ before sending $\varepsilon\downarrow0$. If $v = 0$, that
@@ -300,15 +291,13 @@ display parameter $b$ does not change the temporal exponent $a$.
     I_\Psi\le Dv^{1/q},\qquad
     D=\sqrt{q/4}(\alpha/4)^{\alpha/(2q)}C^{1/q}.
   \]
-  At the kinetic critical point, $T_*=\beta\sqrt{vC}\,T_*^\beta$. Therefore,
-  the maximum of the reward minus $T$ is $(1-\beta)\sqrt{vC}\,T_*^\beta$.
-  Substituting $\beta=\alpha/4$ and $1-\beta=q/4$ gives the stated power
-  $(vC)^{2/q}$. Taking the nonnegative square root yields the displayed bound
-  for $I_\Psi$.
 
   \medskip
   \noindent\textit{Step 2.~}We optimize the variance and keep the exact
   Gaussian half-cost.
+  For the constant computation below, $4^{-\alpha/2}=2^{-\alpha}$ and
+  absorbing the outside factor $1/2$ into the $1/k$ power contributes
+  $2^{-k}$, whose product is $2^{-3}$ because $k+\alpha=3$.
   The scalar function $\mathfrak{c} Dv^{1/q}-v/2$ vanishes at zero, tends to
   minus infinity, and has strictly decreasing derivative. Its unique positive
   maximum is at $v_* = (2\mathfrak{c} D/q)^{q/k}$, with value $kv_*/2$. Direct
@@ -316,11 +305,6 @@ display parameter $b$ does not change the temporal exponent $a$.
   \[
     (2D/q)^q=q^{-q/2}(\alpha/4)^{\alpha/2}C .
   \]
-  At the variance critical point, $\mathfrak c Dv_*^{1/q}=qv_*/2$, so the
-  score is $kv_*/2$. The preceding power identity contains
-  $4^{-\alpha/2}=2^{-\alpha}$. Absorbing the outside factor $1/2$ into the
-  $1/k$ power adds $2^{-k}$; since $k+\alpha=3$, the combined denominator is
-  $2^3=8$.
   Since $k+\alpha = 3$, the maximum is precisely $U_{\mathfrak{c}}$
   in~\eqref{E:occupation-score-ceiling}, with denominator eight. Substitution
   of~\eqref{E:raw-occupation-ratio} gives the second form, retaining the factor
@@ -374,10 +358,6 @@ display parameter $b$ does not change the temporal exponent $a$.
     \frac{\mathfrak{c}^mF_a(\mathcal{E}_\zeta^{\mathcal{O}})}{U_{\mathfrak{c}}}
     =\exp\!\left(\frac{\Delta-(\alpha/2)\log(2\zeta)}{k}\right).
   \]
-  In the logarithmic ratio, the positive energy factor cancels, leaving only
-  the scalar expression $\Delta/k$. The penalty factor remains in the second
-  ratio as $(\alpha/2)\log(2\zeta)$. It disappears at $\zeta=1/2$, which is
-  why strict convexity alone gives the comparison at that normalization.
   At $\zeta = 1/2$ this and the ceiling prove the strict comparison. At $\zeta =
   1$ the comparison is not universally favorable. For $\alpha = 5/4,a = 1/2,d =
   2$,
