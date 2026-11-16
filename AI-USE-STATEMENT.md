@@ -42,25 +42,42 @@ was written with her.
   whole-book or release acceptance; no earlier grade is upgraded.
   The separate Chapter 12 skeptic synthesis was **not obtained**; the scoped
   HIGH honesty synthesis does not replace it.
-- **Lean.** A companion Lean package checks parts of the work. Its coverage
-  file at release v0.9.0 (https://doi.org/10.5281/zenodo.24199105; built from development commit
-  <!--s:lean.verified-->`6eb79c7`<!--/s-->, coverage file as at <!--s:lean.coverage-->`34b65d7`<!--/s-->) records:
-  - <!--s:lean.full_words-->forty-three<!--/s--> numbered results, three displayed equations and one remark
-    formalized under the manuscript's own hypotheses (<!--s:lean.narrow_words-->eighteen<!--/s--> of the results
-    with a narrower conclusion);
-  - for <!--s:lean.inputs_words-->thirty<!--/s--> more, Lean checks steps or parts of the proof, with named
-    analytic inputs supplied as hypotheses.
+- **Lean.** A companion Lean package checks parts of the work. The state
+  described here is the wave-L14 gate (development commit
+  <!--s:lean.verified-->`8f51004`<!--/s--> of the private development repository;
+  to be released as v0.10.0), with the coverage record at development commit
+  <!--s:lean.coverage-->`74a04f5`<!--/s--> of that repository. This is a
+  development state, not a published v0.10.0 release. Under the registered
+  modelling choices and scope qualifications described in Appendix F, the
+  coverage record lists:
+  - <!--s:lean.full_words-->sixty<!--/s--> numbered results, three displayed
+    equations and one remark under the manuscript's hypotheses
+    (<!--s:lean.narrow_words-->sixteen<!--/s--> of the results with a narrower
+    conclusion);
+  - for <!--s:lean.inputs_words-->thirty-five<!--/s--> more, analytic inputs are
+    supplied as hypotheses or left outside Lean: one of them has every
+    conclusion proved from two supplied inputs, and the others are checks of
+    steps, parts or narrower forms. The entries distinguish supplied
+    hypotheses, where present, from analytic work left outside Lean. Eight
+    entries concern elementary checks without an additional analytic
+    hypothesis; their surrounding analytic arguments are not formalized.
 
-  All of it is kernel-checked, using only Lean's standard axioms. Every
-  module of the Lean library was also checked a second time by Lean's
-  separate kernel checker. Analytic and probabilistic inputs that enter as
-  hypotheses are **not** verified by Lean. Most of the main theorems are outside Lean: <!--s:lean.outside_main_words-->three<!--/s--> of the <!--s:main.count_words-->four<!--/s-->. For
-  the fourth, `T:intrinsic-occupation-ceiling`, Lean proves a narrower
-  conclusion under the manuscript's own hypotheses. The correspondence
-  between the Lean statements and the manuscript's statements was reviewed
-  by AI and accepted by the author on 2026-11-12. This is AI-checked
-  correspondence only, not human verification. The verification ledger
-  lists, result by result, what Lean covers.
+  These Lean statements are kernel-checked using only Lean's standard axioms.
+  The private development verification record for `8f51004` also records a
+  separate `leanchecker --fresh` replay of all 141 library modules and the
+  umbrella, with all 142 targets passing both fresh and default replay.
+  The three comparator-tier libraries were excluded from this replay.
+  Analytic and probabilistic facts supplied as hypotheses are **not** proved
+  merely by using them in Lean. Of the <!--s:main.count_words-->four<!--/s-->
+  main theorems, <!--s:lean.outside_main_words-->two<!--/s--> are outside Lean.
+  For `T:intrinsic-occupation-ceiling`, the original-moment sentence remains
+  unformalized. For `T:white-moment-bounds`, the formalized bounds concern
+  the variational value in place of the original moment constant, with the
+  white spatial energy supplied. No main stochastic moment theorem is
+  verified end to end. The correspondence between the Lean statements and
+  the manuscript was reviewed by AI and accepted by the author through
+  wave L14; this is not human verification. Appendix F states each result's
+  scope, modelling choices and assumptions.
 - **Human checking.** Part I (the reading edition) has not yet been checked
   line by line by a human reader. The technical notes have not yet been
   checked line by line by a human reader. Independent checks by readers are
