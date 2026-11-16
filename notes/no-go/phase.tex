@@ -33,6 +33,14 @@ small-variance counterexample.
   positive $A$.
 \end{nogo}
 \begin{proof}
+  We compute the full two-block phase product rather than resetting the
+  velocity. We then control the Gaussian series remainders to show that the
+  mismatch of scalar moments persists at small positive variance.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We compute the first variance coefficients of the
+  one-block and two-block moments.
   Define the entire functions
   \[
     c(z)=\sum_{n\ge0}\frac{z^n}{(2n)!},\qquad
@@ -54,6 +62,10 @@ small-variance counterexample.
   $8/3$ and $1/3$. Independence and centering eliminate the $zw$ term.
   Similarly, the coefficient of $z^2$ in $c(z)^2$ is $1/3$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We justify the moment expansions and their strict
+  difference.
   For completeness, these expansions admit the stated remainders after
   Gaussian expectation. The series of $c$ and $s$ have nonnegative
   coefficients, and
@@ -112,6 +124,13 @@ energy. The mean of the second Duhamel term contributes at the same order.
   underestimates this coefficient for $x=(1,0)^{\mathsf T}$.
 \end{nogo}
 \begin{proof}
+  We compute the complete first variance matrix, including the second-order
+  mean terms. We then use the integrable series remainder to obtain an actual
+  phase whose expected energy decreases at small coupling.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We retain all terms of the first variance matrix.
   The coefficients of $M(z)=M_0+zM_1+z^2M_2+\cdots$ are
   \[
     M_0=\begin{pmatrix}1&1\\0&1\end{pmatrix},\quad
@@ -127,6 +146,10 @@ energy. The mean of the second Duhamel term contributes at the same order.
   $\|M_1e_1\|^2=5/4$, whereas $e_1^{\mathsf T}Ke_1=4/3$.
   Thus, it is not valid even as an upper bound for the full coefficient.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We justify the negative small-coupling energy
+  correction.
   The entire series are absolutely Gaussian integrable, including their
   squares, by the bound in No-go~\ref{P:nogo-14} with the additional
   polynomial factor from $zs(z)$. Absolute summation of the even-degree
