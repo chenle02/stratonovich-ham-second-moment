@@ -155,7 +155,7 @@ def build(cfg, read_rev, tex_rev, current):
 - `formalized in full`: the result's conclusions are proved in Lean under the manuscript's own hypotheses (sometimes through an exact-hypothesis wrapper of a more general Lean theorem). The setting `H:homog` is modelled in Lean.
 - `formalized, narrower conclusion`: as above, but Lean proves only part of the conclusion; the companion's `coverage.yaml` row says which part.
 - `every conclusion, inputs supplied`: every conclusion is proved in Lean, with the named analytic inputs entering as explicit hypotheses.
-- `inputs supplied`: Lean checks steps, parts or a narrower form of the result, as listed in the companion's statement ledger; analytic and probabilistic facts either enter as explicit hypotheses or stay outside Lean. The result itself is not checked.
+- `inputs supplied`: Lean checks steps, parts or a narrower form of the result; analytic and probabilistic facts either enter as explicit hypotheses or stay outside Lean. The result itself is not checked.
 - `outside Lean`: recorded in the companion's coverage file but not formalized ({WORDS[outside_main]} of the {WORDS[len(cfg['main_theorems'])]} main theorems; the SPDE, stochastic integrals and analytic asymptotics are outside Lean).
 - `no Lean claim`: no Lean declaration is mapped to this label.
 - The count in brackets is the number of companion claims mapped to the row. A Lean entry never certifies the analytic inputs, and it is AI-checked correspondence, not human verification.
