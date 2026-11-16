@@ -36,6 +36,16 @@ reread series and later source versions at the final synchronization gate.
 
 
 
+**RP042 current post-reader uniform-mean report recorded:** Fresh V4 Pro
+returned PASS/high on exactly `32919d54` versus cdde. All five assigned OLD/NEW
+readings and public reconstructions are complete/checked, including the four
+reader explanations; no source correction is identified. Literal notes and
+null per-proof confidence are retained. One observed native start/finish and
+zero tools support custody, not physical request accounting or a book seal;
+aggregate usage/cost/cap remain unknown. Older RP014/RP039 records and their
+limits are unchanged. RP043 signed-static remains running at this record.
+See `reviews/2026-11-16-readable-uniform-mean-postreader32919d54-deepseek/`.
+
 **Latest Chapters 4-8 FINAL handoff:** Agent 24 explicitly releases the
 15 files at tip `032fb8a2` after reader dispositions (`077b3b7ca46e`). Root
 verifies all 15 file blobs equal that tip, their committed map new_rev values

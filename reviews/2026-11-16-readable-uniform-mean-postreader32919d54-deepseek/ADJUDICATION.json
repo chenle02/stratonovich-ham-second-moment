@@ -1,0 +1,375 @@
+{
+  "review_record_id": "RP042",
+  "adjudicator_label": "Agent3 delegated GPT math-QA helper; root reviews disposition",
+  "role": "Author-side source/public-math QA only; not an independent scientific vote or native-protocol approval",
+  "native_category_literal": "proof-readability-equivalence",
+  "native_verdict": "PASS",
+  "native_confidence": "high",
+  "source_revision": "32919d544ee0df877b0a834bcbfc9f7c584a15f2",
+  "baseline_revision": "cdde711c248862f33207860107dd0e6b31d60852",
+  "source_file": "notes/integrated_uniform_mean.tex",
+  "source_binding_sha256": "347fcd6e6f597683152b1d359e4c2b9663409bf7a94cfe022b901aa825f7eb4d",
+  "public_report_sha256": "a1079e207945c4b7c3834ba21fa2f76dec666d20ffce46e4c91b21a8c4ce9923",
+  "all_assigned_public_reasons_and_AUDIT_dispositions_read": true,
+  "all_complete_old_new_targets_read": true,
+  "coordinator_disposition": "PROPOSED_ALL_FIVE_PUBLIC_RECONSTRUCTIONS_CHECKED_ROOT_REVIEWS",
+  "requested_reread_complete": true,
+  "per_proof_reconstruction": {
+    "L:uniform-mean-cutoff": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:uniform-mean-spatial-tails": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "L:uniform-mean-tensor": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    },
+    "P:uniform-mean-regulator": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": [
+        "R1"
+      ]
+    },
+    "P:uniform-actual-cameron": {
+      "status": "CHECKED",
+      "native_public_reconstruction_flag": "COMPLETE",
+      "critical_missing_steps": [],
+      "limits": [],
+      "report_notes": []
+    }
+  },
+  "per_proof_checks": [
+    {
+      "proof_id": "L:uniform-mean-cutoff",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 13,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "2cc031dc45c0517e4a4268d136a60f04e47856b645e9f10dcd759e30364d80bc",
+      "mathematical_check": "The public derivation uses the correct signed Peetre ratio for every real sigma and the unitary Fourier product factor c_d. Young L1*L2, eta_hat_R(q)=R^d eta_hat(Rq), p=Rq and R>=1 give exactly M_sigma. The Lambda^-1 velocity isometry, norm-one H1/2 to Hs inclusion and named fractional covariance-product bound with alpha/4<s<1/2 give M0=A_s M^2 and the Hilbert row/operator bound. Fixed-R compact values are explicitly a named unassigned spatial-map input, not a new uniform-radius compactness conclusion.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        29,
+        42
+      ],
+      "old_proof_lf": [
+        44,
+        62
+      ],
+      "old_statement_sha256": "37e79ddd6d8a5c5f1d897f355a598c16aebf7f013bc8d783095f8f3a02b5365a",
+      "old_proof_sha256": "c1811562c090daac0087fb87e08b4912132c4b2918ef6cd25b8783234ebd8a36",
+      "new_statement_lf": [
+        29,
+        42
+      ],
+      "new_proof_lf": [
+        44,
+        62
+      ],
+      "new_statement_sha256": "37e79ddd6d8a5c5f1d897f355a598c16aebf7f013bc8d783095f8f3a02b5365a",
+      "new_proof_sha256": "c1811562c090daac0087fb87e08b4912132c4b2918ef6cd25b8783234ebd8a36"
+    },
+    {
+      "proof_id": "L:uniform-mean-spatial-tails",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 49,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "d9a8a8cc6d76e52968db13bf305ca15ed5c74ded44b2bdd72a25ef84acc84e8d",
+      "mathematical_check": "The public translation estimate uses beta+s=1/2 and strong isometric Fourier translations. Splitting tau_h(fg)-fg yields two terms of size2 A_s M^2 min(1,|h|^beta), giving4 A_s M^2. The normalized Gaussian Bochner average has the correct CONVOLUTION OPERATOR symbol exp(-epsilon|xi|^2/2), and h=sqrt(epsilon)G gives M_h epsilon^(beta/2). Real multiplier selfadjointness supplies the newly explicit control-row identity. The projection is constructed on the actual closed Fourier image V using real-even smooth frequency cutoffs of real Schwartz transforms, dominated convergence including charged boundary spheres, test density and contraction. No surjectivity, spectral density or finite rank is assumed. The available named source-spatial-heat statement includes Schwartz tests, so consuming their Fourier representatives here does not assume the assigned projection. The high-frequency comparison at epsilon=K^-2 and selfadjoint P_K give exactly M_f=M_h/(1-exp(-1/2)).",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        70,
+        88
+      ],
+      "old_proof_lf": [
+        90,
+        150
+      ],
+      "old_statement_sha256": "6b30c76115328f25e10e2a7ebab4e5a7a2569d3f7c4f80fa40afc387011056c4",
+      "old_proof_sha256": "76aa36bfae9f450ffbbdeb984c3ca2853abb0b7cb07ff36ef0a1813f52a480b6",
+      "new_statement_lf": [
+        70,
+        88
+      ],
+      "new_proof_lf": [
+        90,
+        179
+      ],
+      "new_statement_sha256": "6b30c76115328f25e10e2a7ebab4e5a7a2569d3f7c4f80fa40afc387011056c4",
+      "new_proof_sha256": "8d592a197ade9df6cf54a05dcd6a188a7547a71f3539c6c35bc272e50a8161ba"
+    },
+    {
+      "proof_id": "L:uniform-mean-tensor",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 94,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "340baa15a0d718c5d832785bb1824f8df84a1da0288582a7dcc1ab59d373f487",
+      "mathematical_check": "Finite covariance diagonalization with trace L=sum||f_j||^2 and Jensen at r/2>=1 gives E||sum gamma_j f_j||^r<=m_r L^(r/2), including L0. Pointwise scalar Gaussian variance, Tonelli and the scalar A norm produce the SAME positive finite m_r on both sides; cancellation gives the dimension-free tensor bound and density/Bochner completion. The report covers zero spaces and the infinite ON sequence with pairwise image distance sqrt(2)||Af||Lr, so scalar compactness is not misused for the tensor map.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        158,
+        166
+      ],
+      "old_proof_lf": [
+        168,
+        198
+      ],
+      "old_statement_sha256": "d086e1aed2b3492164c4e9f8cd293e262ddcf379671f2e47ace942badad236c9",
+      "old_proof_sha256": "c8fbe1c2a3741a0cd1631b24ae9a362dac41a1f37043514eb8986b10a116302d",
+      "new_statement_lf": [
+        187,
+        195
+      ],
+      "new_proof_lf": [
+        197,
+        244
+      ],
+      "new_statement_sha256": "d086e1aed2b3492164c4e9f8cd293e262ddcf379671f2e47ace942badad236c9",
+      "new_proof_sha256": "f07752dc4bea81b0a700476ddde78359bb546cae946ea328cd4413b07dddf26f"
+    },
+    {
+      "proof_id": "P:uniform-mean-regulator",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 122,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "de82b7daaf250d4988d30104c0b69ec98692552575a0e922bd6e8cd5b7b0e463",
+      "mathematical_check": "The report derives epsilon_J->0 by compact C_t applied to bounded weak-null (I-pi_J)v_J and explicitly supplies the new full-map norm bound ||U Phi||LrHsp<=c_t||Phi|| followed pointwise by ||T_R U Phi||Lr<=M0 c_t||Phi||. The exact orthogonal tensor decomposition and intertwining show separately M0 epsilon_J and M_f c_t K^-beta. The fixed r lies in the named compact temporal-map range. Bounded linear maps on the completed Bochner space, compact values of fixed-R T_R and the two spatial bounds give the stated operator-valued Lr map; uniform-radius compactness is not asserted. The displayed weak-null inequality misses absolute-value bars (R1), a local notation slip rather than a missing compactness argument.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        215,
+        231
+      ],
+      "old_proof_lf": [
+        233,
+        262
+      ],
+      "old_statement_sha256": "af73566be0e50e8ab921d99ed05ee52b99fb1ac444854f4458013a0ff24d6c5c",
+      "old_proof_sha256": "afeaf6bf85deffbc44a7868b60d2b897f2aae3e9ee4c3280631a98dcd4418621",
+      "new_statement_lf": [
+        261,
+        277
+      ],
+      "new_proof_lf": [
+        279,
+        323
+      ],
+      "new_statement_sha256": "af73566be0e50e8ab921d99ed05ee52b99fb1ac444854f4458013a0ff24d6c5c",
+      "new_proof_sha256": "4f34a4832af22033e445455a019b83715e61ba60327ea7079e0ce6a7e5221af3"
+    },
+    {
+      "proof_id": "P:uniform-actual-cameron",
+      "author_reconstruction_status": "CHECKED",
+      "native_public_flags": {
+        "old_reading": "COMPLETE",
+        "new_reading": "COMPLETE",
+        "public_reconstruction": "COMPLETE",
+        "argument_preservation": "PRESERVED",
+        "new_explanations_raw": "JUSTIFIED"
+      },
+      "reported_per_proof_confidence": null,
+      "report_heading_lf": 151,
+      "native_original_step_inventory_checked": true,
+      "native_report_proof_section_sha256": "ee5aeaae2cebbe51ce23fcba2fd21c1968d54bbe01232f59914674caef306d99",
+      "mathematical_check": "The report constructs Y_m on the given W using orthogonal Q_full and the original pullback isometry, checks variance domination for the named Gaussian transfer and little-Holder stopping, and applies the supplied first-chaos Cameron identification. Its supported-row pairing expands Q_full and uses T k in H_I, reducing exactly to the completed unprojected J0 identity with Phi=Q_JK i_I* h. It explicitly checks P0=0/Y_m0 and E restriction, and the scale g_delta delta^(a/2)=sqrt(delta). Compact-conjugation with strongly continuous group and adjoint justifies the Bochner integral. The report correctly distinguishes the conjugated integrand g from the unconjugated M_h: ||g||Lr<=G_BE^2 delta^-1/r t_m, with only ONE G_BE^2. The free matrix gives sqrt(3+2B^2)<=3B and C_BE<=18B^(3-1/r), with1-1/r>theta. The true full/last/empty partition, constant stopping, sum t_m^r=||M_h||Lr^r and finite power mean give (delta n)^(1/p-1/r)<=(2/B)^(1/p-1/r). The newly explicit regulator bound for M_h uses ||i_I*||<=1. The closed observed-test span gives the minimum original-noise preimage and Cameron embedding without inverse covariance. No independence of residual time blocks or growing-mask moment bound is inferred.",
+      "source_defect_identified": false,
+      "missing_required_public_reconstruction": false,
+      "old_statement_lf": [
+        291,
+        311
+      ],
+      "old_proof_lf": [
+        313,
+        394
+      ],
+      "old_statement_sha256": "3ded1064b2c488c8120dd7e35fd821da7a0d701b3f7409667b6be8f49d03251b",
+      "old_proof_sha256": "14fafae77e659f314ed6c4c5674f70db0a8dafb40b8a01191e7509f1c040a4aa",
+      "new_statement_lf": [
+        352,
+        372
+      ],
+      "new_proof_lf": [
+        374,
+        494
+      ],
+      "new_statement_sha256": "3ded1064b2c488c8120dd7e35fd821da7a0d701b3f7409667b6be8f49d03251b",
+      "new_proof_sha256": "f46ef362ee58ede847c98a16a53ef45b37e07cbf1ea9a17ce47fe02a3b4722e2"
+    }
+  ],
+  "mathematical_checks": [
+    "The public derivation uses the correct signed Peetre ratio for every real sigma and the unitary Fourier product factor c_d. Young L1*L2, eta_hat_R(q)=R^d eta_hat(Rq), p=Rq and R>=1 give exactly M_sigma. The Lambda^-1 velocity isometry, norm-one H1/2 to Hs inclusion and named fractional covariance-product bound with alpha/4<s<1/2 give M0=A_s M^2 and the Hilbert row/operator bound. Fixed-R compact values are explicitly a named unassigned spatial-map input, not a new uniform-radius compactness conclusion.",
+    "The public translation estimate uses beta+s=1/2 and strong isometric Fourier translations. Splitting tau_h(fg)-fg yields two terms of size2 A_s M^2 min(1,|h|^beta), giving4 A_s M^2. The normalized Gaussian Bochner average has the correct CONVOLUTION OPERATOR symbol exp(-epsilon|xi|^2/2), and h=sqrt(epsilon)G gives M_h epsilon^(beta/2). Real multiplier selfadjointness supplies the newly explicit control-row identity. The projection is constructed on the actual closed Fourier image V using real-even smooth frequency cutoffs of real Schwartz transforms, dominated convergence including charged boundary spheres, test density and contraction. No surjectivity, spectral density or finite rank is assumed. The available named source-spatial-heat statement includes Schwartz tests, so consuming their Fourier representatives here does not assume the assigned projection. The high-frequency comparison at epsilon=K^-2 and selfadjoint P_K give exactly M_f=M_h/(1-exp(-1/2)).",
+    "Finite covariance diagonalization with trace L=sum||f_j||^2 and Jensen at r/2>=1 gives E||sum gamma_j f_j||^r<=m_r L^(r/2), including L0. Pointwise scalar Gaussian variance, Tonelli and the scalar A norm produce the SAME positive finite m_r on both sides; cancellation gives the dimension-free tensor bound and density/Bochner completion. The report covers zero spaces and the infinite ON sequence with pairwise image distance sqrt(2)||Af||Lr, so scalar compactness is not misused for the tensor map.",
+    "The report derives epsilon_J->0 by compact C_t applied to bounded weak-null (I-pi_J)v_J and explicitly supplies the new full-map norm bound ||U Phi||LrHsp<=c_t||Phi|| followed pointwise by ||T_R U Phi||Lr<=M0 c_t||Phi||. The exact orthogonal tensor decomposition and intertwining show separately M0 epsilon_J and M_f c_t K^-beta. The fixed r lies in the named compact temporal-map range. Bounded linear maps on the completed Bochner space, compact values of fixed-R T_R and the two spatial bounds give the stated operator-valued Lr map; uniform-radius compactness is not asserted. The displayed weak-null inequality misses absolute-value bars (R1), a local notation slip rather than a missing compactness argument.",
+    "The report constructs Y_m on the given W using orthogonal Q_full and the original pullback isometry, checks variance domination for the named Gaussian transfer and little-Holder stopping, and applies the supplied first-chaos Cameron identification. Its supported-row pairing expands Q_full and uses T k in H_I, reducing exactly to the completed unprojected J0 identity with Phi=Q_JK i_I* h. It explicitly checks P0=0/Y_m0 and E restriction, and the scale g_delta delta^(a/2)=sqrt(delta). Compact-conjugation with strongly continuous group and adjoint justifies the Bochner integral. The report correctly distinguishes the conjugated integrand g from the unconjugated M_h: ||g||Lr<=G_BE^2 delta^-1/r t_m, with only ONE G_BE^2. The free matrix gives sqrt(3+2B^2)<=3B and C_BE<=18B^(3-1/r), with1-1/r>theta. The true full/last/empty partition, constant stopping, sum t_m^r=||M_h||Lr^r and finite power mean give (delta n)^(1/p-1/r)<=(2/B)^(1/p-1/r). The newly explicit regulator bound for M_h uses ||i_I*||<=1. The closed observed-test span gives the minimum original-noise preimage and Cameron embedding without inverse covariance. No independence of residual time blocks or growing-mask moment bound is inferred."
+  ],
+  "report_notes": [
+    {
+      "id": "R1",
+      "classification": "report-only missing absolute-value bars in weak-null Cauchy-Schwarz line",
+      "report_lf": 135,
+      "old": "\u27e8(I-\u03c0_J)v_J, h\u27e9 \u2264 \u2016(I-\u03c0_J)h\u2016 \u2192 0",
+      "new": "|\u27e8(I-\u03c0_J)v_J,h\u27e9| \u2264 \u2016v_J\u2016 \u2016(I-\u03c0_J)h\u2016 \u2264 \u2016(I-\u03c0_J)h\u2016 \u2192 0",
+      "disposition": "Raw report unchanged. The stated unit norm, selfadjoint projection and ordinary Hilbert Cauchy-Schwarz give the intended absolute bound; the compactness contradiction is substantively reconstructed. No manuscript correction."
+    },
+    {
+      "id": "R2",
+      "classification": "compressed upstream-reliance wording, not missing assigned derivation",
+      "report_section": "Findings and limits / Pre-existing concerns",
+      "disposition": "The report lists temporal compactness epsilon_J->0 among upstream reliance. Compactness of C_t is the allowed upstream input; epsilon_J convergence itself is actually derived in the regulator section. Do not interpret the closing shorthand as treating the target tail conclusion as an oracle."
+    }
+  ],
+  "source_change_required_from_reread": false,
+  "new_source_mathematical_defect_identified": false,
+  "material_source_gap_identified": false,
+  "critical_required_public_reconstruction_missing": false,
+  "required_source_OLD_NEW": [],
+  "source_witnesses": [
+    {
+      "path": "PUBLIC-REPORT.md",
+      "bytes": 16313,
+      "sha256": "a1079e207945c4b7c3834ba21fa2f76dec666d20ffce46e4c91b21a8c4ce9923"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 6309,
+      "sha256": "a16f9365c4e6f2839964ceaae962047365ac57c3387b66c07bd69b5b41d46a63"
+    },
+    {
+      "path": "PROOF-MANIFEST.json",
+      "bytes": 7516,
+      "sha256": "1ac2ba4e1a763762d7bed32a108e18bf898ace6d9a07e4a17e0dab0ea9eaa461"
+    },
+    {
+      "path": "SOURCE-BINDING.json",
+      "bytes": 5220,
+      "sha256": "347fcd6e6f597683152b1d359e4c2b9663409bf7a94cfe022b901aa825f7eb4d"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 10136,
+      "sha256": "c77384d5edf4ea20ea0c36a7ec8839bfe231a92a619e1b803ac1d324babc6721"
+    },
+    {
+      "path": "SOURCE-CLOSURE.json",
+      "bytes": 5385,
+      "sha256": "5f2f8297e9182e959ff446db5ee0a984ee83c55e96a2f1a51a51434f9c07c316"
+    },
+    {
+      "path": "inputs/old-module.txt",
+      "bytes": 19613,
+      "sha256": "132449ade993b8feab10c06a6c062b21698d83d0ad811f99090bd069144dedc6"
+    },
+    {
+      "path": "inputs/new-module.txt",
+      "bytes": 23747,
+      "sha256": "821b49568bc2ca3c0272d2db4b435b35c133caf723c931c45d7837711168f094"
+    },
+    {
+      "path": "inputs/context-model-assumptions.txt",
+      "bytes": 1986,
+      "sha256": "54b3654b8aa19a0dbc1d792e95f7286c0924fbf20d8c6da771a5835aac7655b7"
+    },
+    {
+      "path": "inputs/context-cameron-mean-baseline.txt",
+      "bytes": 24138,
+      "sha256": "0ecbf05a70a7d5d79c9e2285dcadb93567687d4e463bfe4f6b0fdac5ff6f016d"
+    },
+    {
+      "path": "inputs/context-raw-block-inputs-baseline.txt",
+      "bytes": 35928,
+      "sha256": "ed2f85038ef6136eb8581fa64cab4962cde40bdbdba9ff163dd832c4fa5ad992"
+    },
+    {
+      "path": "inputs/context-source-convergence-baseline.txt",
+      "bytes": 25085,
+      "sha256": "f212bad41254a78109e5802def45053c8bda53a416cda9f457513406304aaef4"
+    },
+    {
+      "path": "inputs/context-constant-young-baseline.txt",
+      "bytes": 27376,
+      "sha256": "27c2fc5014bcfe161716b4e738ffd1561732a9f31dbf31029efba077669f41b3"
+    },
+    {
+      "path": "inputs/context-covariance-foundation-baseline.txt",
+      "bytes": 21173,
+      "sha256": "aa40051b161b86d5fca77cb677474b398f6bcfcce3afed8c369af5654a4f7020"
+    },
+    {
+      "path": "inputs/context-spatial-occupation-baseline.txt",
+      "bytes": 22407,
+      "sha256": "ed2f96133f5e969ba4d24fca051da4fcfcbf1377d6d18aa6a5e8385b66e5a12f"
+    }
+  ],
+  "input_identity_checks": "All delivered payload hashes verified; every WHOLE_FILE payload compared byte-for-byte with pinned Git; every complete OLD/NEW statement and proof independently matched inclusive LF/bytes/SHA. Baseline complete modules previously read are byte-identical; current complete module and all public reasons read.",
+  "source_currentness": {
+    "covered_launch_revision": "32919d544ee0df877b0a834bcbfc9f7c584a15f2",
+    "status": "EXACT_FROZEN_SOURCE_ONLY",
+    "prior_RP014_or_RP039_scope_grade_or_adjudication_rebound": false,
+    "limit": "Covers exactly32919d54 versuscdde, including the new explanations in this packet; no whole-book seal or unexamined successor coverage."
+  },
+  "read_limits": [
+    "All five assigned complete OLD/NEW statements/proofs and every actual public reason, AUDIT disposition and limit checked. Needed supplied model, covariance/Fourier, spatial products, tensor, temporal-map, Gaussian-transfer, raw-pullback and Cameron completion hypotheses checked. Upstream theorem proofs remain unassigned.",
+    "No native export, hidden reasoning, event/transport reading, provider/model/probe, callback, source/public/Git/PDF edit or build. Prior reports retain original scopes and grades."
+  ],
+  "adjudicator_callback_or_retry_used": false,
+  "native_transport_or_retry_protocol_adjudicated": false,
+  "native_protocol_acceptance": "NOT_ASSESSED_BY_MATH_HELPER",
+  "historical_report_or_grade_edited": false,
+  "new_Chapter12_skeptic_synthesis": false,
+  "whole_book_acceptance": false,
+  "Lean_quote_correspondence_acceptance": false,
+  "render_or_source_image_acceptance": false,
+  "human_verification": false,
+  "public_release_or_RF": false,
+  "owner_adoption": "Root reviews delegated disposition;16/Le retain adoption/release authority"
+}
