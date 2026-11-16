@@ -421,8 +421,9 @@ The DOI and final links go into the video descriptions, which stay editable, so 
 - **Review.** Codex GPT-6.1-Sol, high effort, read-only. The run is review-complete, with verdict INCONCLUSIVE and medium confidence. Findings: none.
 - **P:mild-construction:** PASS (M2 present).
 - **The 41 rows**, each decided individually:
-  - 9 PASS, with every credited declaration read;
+  - 8 PASS, with every credited declaration read;
   - 33 PARTIAL, with the paper wrapper and its key definitions read but not every helper claim.
+  - Count reconciled: the report has 42 checks, P:mild-construction plus the 41 rows. Its 9 PASS are P:mild-construction and 8 rows.
   - In every row the statements examined support the listed models exactly. The grade reflects incomplete reading of helper claims only.
 - **Disposition:** no repair, and the map stays at `aee543e8`. The residual risk is a helper claim stated in a model. It is covered by #22's module check, which matched every claim file against the register's module lists and checked the direct imports of every model-free full row.
 - **Evidence:** `private/lean-markers/review-2026-11-16-full/`.
@@ -432,3 +433,6 @@ The DOI and final links go into the video descriptions, which stay editable, so 
   - H:homog and L:compact-raw-profile are cross-references, not Appendix F rows, and stay unmarked.
   - Every other check passed: 74 markers equal the data, 22 reserved slots are empty, and the outside and equation rows are unmarked.
   - The recheck is pending on #24's regenerated SHA.
+
+- **#16's call (2026-11-16).** INCONCLUSIVE does not meet the HIGH standard for a public "full statement". Before the re-pin, but not blocking R, the same reviewer finishes every credited helper claim of the 33 PARTIAL rows, read-only, for a decided PASS or FAIL per row. Any row with a helper stated in a model is repaired and rechecked. The re-pin uses the map only after that result.
+  - Running: three parallel batches of 11 rows each (about 230 credited declarations per batch).
