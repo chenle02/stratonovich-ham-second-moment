@@ -518,3 +518,12 @@ Checks:
   - Each now maps by the text of its first and last lines to exactly the diff-mapped endpoints. Three ranges that ended on a blank line now end on the line before it.
   - Main-TeX shifts: +8 before the edit (the Chapter 3 guide sentence), +11 after it. Nothing else changes.
   - Census 14974/14974 decided; Lean comment-only; comparator copies identical.
+- **Renamed-cell recheck at the corrected tip 4171c4d7 (2026-11-16): PASS.** Chain: 15d2d25e -> b6f7da39 -> 52421603 -> 90296c39 -> 6791e487 -> c1ced0e3 -> c88827bb -> 4171c4d7.
+  - VERIFICATION.md: all 253 rows equal coverage.yaml at 74a04f57.
+    - The 34 inputs-supplied/weaker rows read "steps checked", following #16's decision of 22:43.
+    - The single inputs-supplied/full row keeps "every conclusion, inputs supplied".
+    - 44 / 16 / 2 / 156 are unchanged, no "inputs supplied" class cell remains, and every claim count equals its row.
+  - The legend keys "steps checked" and "every conclusion, inputs supplied" are present. The provenance line reads "Manuscript read at revision 6791e48", per #3's fix.
+  - Table G.1 row: "Steps checked; inputs supplied or left outside Lean", 8 / 11 / 7 / 8 / 0 / 34. The counts are unchanged.
+  - No cited TeX file changed since 1d64c44a. The remap pass with overrides `f7069cf` therefore still holds for this tip.
+  - From the Lean side the chain is ready for #3's audit and manifest-only reseal and for #16's verification.
