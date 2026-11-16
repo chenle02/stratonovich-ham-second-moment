@@ -5,6 +5,19 @@
 > at the end of every round, before committing.
 
 
+## Active publication-completion goal (Le, 2026-11-16)
+
+Le explicitly asks to update the goal to complete the remaining work. The
+run goal is ACTIVE: finish authorized source-bound rereads/adjudication;
+produce final-source coverage; synchronize Appendix E, AI-use statistics and
+VERIFICATION faithfully; complete approved composition/checks; make the single
+exact-candidate reseal; and coordinate the remaining typesetting/R/re-pin/F/
+audit/accept/export/publication sequence as Le's gates are actually satisfied.
+The bounded Appendix G goal remains historically complete; this broader goal
+is not complete. PROJECT-GOAL.md records the deliverables and closure rule.
+No scientific grade upgrade, review retry/fallback, early seal, push or public
+release is inferred. Maximum three concurrent reviewer jobs remains binding.
+
 ## Active narrow follow-up: proof-readability rereads (2026-11-16)
 
 
