@@ -87,6 +87,15 @@ be their operator-norm closure in $\mathcal{K}(E)$.
 \end{proposition}
 
 \begin{proof}
+  We derive the form and spectral bounds using only the $E$ multiplier norm.
+  We use the fixed-radius lift only to identify the physical flow. Finally,
+  approximate minimizers give continuity of the spectral rate without assuming
+  an eigenfunction at the bottom.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the closed form with constants measured
+  on $E$.
   We derive the bounds without transferring a quantitative $F$ bound. With $b =
   \|u\|_2$, $z = \|u\|_{H^1}$, Fourier Cauchy--Schwarz gives $\|u\|_{H^{1/2}}^2
   \le bz$. Equation~\eqref{E:uniform-E-pairing} and the half-weight
@@ -111,6 +120,10 @@ be their operator-norm closure in $\mathcal{K}(E)$.
   contradicting the form lower bound. The bottom argument below uses the same
   representation.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We compare the spectral phase with the fixed
+  Sobolev phase.
   Put $B_0 = 1-\Delta$ and $L_K = 3(1+K^2)$. The common forms obey $\tfrac12B_0
   \le A \le L_KB_0$. For positive self-adjoint $T,S \ge 1$ with ordered forms,
   completing the square gives
@@ -135,6 +148,9 @@ be their operator-norm closure in $\mathcal{K}(E)$.
   $M_K^2\|(u,v)\|_E^2$. The condition cost is $M_K^2 = \sqrt{3(1+K^2)} \le
   2(1+K)$.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify and bound the spectral bottom.
   For unit $L^2$ data, $b = 1$ and $z \ge 1$. The form bound gives $q_V \ge
   z^2/2-1-K^2/2 \ge -K^2$. A dilated compact unit bump translated wholly off the
   potential support has zero potential pairing and kinetic energy tending to
@@ -151,6 +167,9 @@ be their operator-norm closure in $\mathcal{K}(E)$.
   Thus, no such $z$ is spectral; the approximate eigenvectors give the other
   inclusion. Hence, $\lambda \le K$ and $h+c \ge 2$ on the spectrum.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We estimate the spectral wave matrix.
   Define $\operatorname{Cos}_t(h),\operatorname{Sin}_t(h)$ by $\cos(t\sqrt
   h),\sin(t\sqrt h)/\sqrt h$ for $h > 0$, by $1,t$ at zero and by
   $\cosh(t\sqrt{-h}),\sinh(t\sqrt{-h})/\sqrt{-h}$ for $h < 0$. In the $E_A$
@@ -173,6 +192,10 @@ be their operator-norm closure in $\mathcal{K}(E)$.
   condition cost gives \eqref{E:uniform-E-static-bound}. Spectral dominated
   convergence and scalar addition give the group.
 
+
+  \medskip
+  \noindent\textit{Step 5.~}We identify the physical wave without importing
+  the lift norm.
   Denote the spectral matrix evolution by $P_V^E(t)$. It is the physical $E$
   wave. The fixed-$R$ lift in Lemma~\ref{L:uniform-E-lift} belongs to the
   precise class in Proposition~\ref{P:signed-physical-wave}. Its form is this
@@ -190,6 +213,14 @@ be their operator-norm closure in $\mathcal{K}(E)$.
   averaged static baseline without transferring any lift norm into the uniform
   bounds.
 
+
+  \medskip
+  \noindent\textit{Step 6.~}We compare rates by approximate form minimizers.
+  The preceding bounds depend on $K$ through the $E$ pairing, the form shift
+  and the phase condition number. The lift is used only to identify the
+  self-adjoint representative and its wave, whose uniqueness makes this
+  identification independent of the larger shift used for the lift. Thus, a
+  radius-dependent lift constant never enters the quantitative bound.
   Finally, take a unit $\varepsilon$-minimizer for $W$, $0 < \varepsilon \le 1$.
   Since $\beta(W) \le 0$, it has $q_W \le 1$. Thus, $z^2-1-Kz \le 1$, which
   forces $z \le K+2$. The multiplier difference changes its form by at most
@@ -231,6 +262,15 @@ uniformly in $R \ge 1$.
 \end{proposition}
 
 \begin{proof}
+  We approximate the scalar time map by cell averages uniformly on its compact
+  image. The dimension-free tensor bound transfers this to the completed
+  operator field. A pointwise rate comparison followed by Cauchy--Schwarz
+  gives the integrated rate error.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain uniform scalar-time averaging on the
+  compact image.
   Bochner averaging is a contraction on $L^r(I;\mathscr{Z})$ for any Banach
   $\mathscr{Z}$, by Jensen. For continuous fields on $[0,1]$, its error is
   bounded by the modulus of continuity at the mesh. Simple-field approximation,
@@ -240,6 +280,9 @@ uniformly in $R \ge 1$.
   $C_t$'s unit-ball image, by a finite net and $\|\mathcal{A}_\delta-I\| \le 2$.
   This proves $\omega_\delta \to 0$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We transfer the estimate to the full mean field.
   On finite tensors, integration commutes with the fixed bounded $T_R$:
   \[
     \mathcal{A}_\delta^{\mathcal{K}(E)}
@@ -253,6 +296,9 @@ uniformly in $R \ge 1$.
   the tensor map is not claimed compact. Nor does this assert noncompactness of
   a composite spatial family: each fixed-radius completed mean is compact.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We estimate the integrated rate difference.
   For any two such fields, apply~\eqref{E:uniform-E-rate-continuity} with the
   pointwise bound
   \[
@@ -264,6 +310,10 @@ uniformly in $R \ge 1$.
     \le\sqrt{3+\|W_1\|_{L^1}+\|W_2\|_{L^1}}\,
     \sqrt{\|W_1-W_2\|_{L^1}} .
   \]
+  The pointwise square-root estimate has factors $\sqrt{K(s)+2}$ and
+  $\sqrt{\|W_1(s)-W_2(s)\|}$. Since $K(s)+2\le3+\|W_1(s)\|+\|W_2(s)\|$,
+  integral Cauchy--Schwarz gives the displayed bound. The unit length of $I$
+  then bounds each $L^1$ norm by its $L^r$ norm.
   Continuity of $\lambda$ on the class makes these quantities measurable. Since
   $|I| = 1$, this proves~\eqref{E:uniform-rate-averaging}. It also proves rate
   continuity, while $\lambda(L) \le \max(1,\|L\|)$ gives
@@ -302,6 +352,14 @@ $W_R = \mathcal{T}_R\Phi$ define
 \end{lemma}
 
 \begin{proof}
+  We compute the free-group and primitive constants explicitly. We then count
+  short contraction intervals for the generic Young growth bound and use
+  compactness only for the lower bound on mean endpoint norms.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We estimate the free group and the physical
+  primitive.
   The balanced free matrix has upper entry $\langle k\rangle\sin(vk)/k$ and
   lower $-k\sin(vk)/\langle k\rangle$. Splitting $k \le 1$ and $k \ge 1$ bounds
   the upper by $\sqrt2 B$, while the lower and diagonals have bound one. At zero
@@ -312,6 +370,10 @@ $W_R = \mathcal{T}_R\Phi$ define
   stopping prove \eqref{E:uniform-product-primitive}; the true partition sums
   the $r$th powers, with zero on an empty cell.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We make the generic Young growth constant
+  independent of radius.
   For the explicit Young bound put $d = \|D\|_\theta$ and $c_\theta =
   2\max(1,C_{\rm Young})$, as in the local estimate proving
   Lemma~\ref{L:young-upper-growth}. If $c_\theta dB^\theta \le 1/4$,
@@ -323,6 +385,9 @@ $W_R = \mathcal{T}_R\Phi$ define
   argument on $\mathcal{L}(E)$ with multiplication norm one, not an unspecified
   radius-dependent bound.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We retain the compact endpoint lower bound.
   Finally, Proposition~\ref{P:uniform-mean-regulator} gives $W_R \in
   L^r(I;\mathcal{K}(E))$ for each fixed $R,\Phi$. The compact conjugation and
   stopped Bochner primitive used above therefore make each $H_m$ a
@@ -358,6 +423,15 @@ $W_R = \mathcal{T}_R\Phi$ define
 \end{proposition}
 
 \begin{proof}
+  We freeze each positive-length cell at its own mean. Good full blocks use
+  the spectral baseline and the multiplicative perturbation bound; bad full
+  blocks use their $L^r$ budget. We estimate the true final cell separately,
+  avoiding division by its possibly small length.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We control the mean-freezing errors and primitive
+  budgets.
   On each positive-length cell use its own Bochner average $\overline{M}_m$; set
   it to zero on an empty cell and form the constant-field primitive
   $\overline{H}_m$. Put $e_m = C_B\delta^{-1/r}
@@ -374,6 +448,9 @@ $W_R = \mathcal{T}_R\Phi$ define
   \ge 2$, $\delta > 0$ and $\delta n \le 2/B$; all subsequent powers are
   positive and zero errors are allowed.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We use the spectral baseline on good full blocks.
   On full cells only, $\|\overline{M}_m\| \le (\delta
   B)^{-1/r}\|W_R\|_{L^r(I_m)} = a_m/(C_BB^{1/r}) \le a_m/B$. Split full indices
   $m < N$ into good $a_m \le K$ and bad $a_m > K$. On a good block,
@@ -400,12 +477,27 @@ $W_R = \mathcal{T}_R\Phi$ define
   \operatorname{Rate}_R(\Phi)+\Lambda_\delta(M)$. Bad and last rate cells can be
   dropped in this upper bound.
 
+  The good-cell rate sum may be enlarged to the whole averaged-field rate
+  integral because every omitted rate is nonnegative. The factor $\delta B$ is
+  the exact slow-time length of each full cell. The final cell is not assigned
+  that length; it is handled separately below.
+
+  \medskip
+  \noindent\textit{Step 3.~}We control bad full blocks by the higher-power
+  budget.
   On bad full cells~\eqref{E:uniform-product-growth} gives $C_{\rm
   gr}B(1+a_m^\nu)$. Because $a_m > K \ge 1$ and $r > \nu$, $1+a_m^\nu \le
   (K^{-r}+K^{\nu-r})a_m^r$. Their weighted sum is bounded by $C_{\rm
   gr}BC_B^rZ^r(K^{-r}+K^{\nu-r})$. The inequality $C_B \le 32B^{3-1/r}$ yields
   the displayed bad-block term.
 
+  For $a_m>K$, one has $1\le K^{-r}a_m^r$ and $a_m^\nu\le K^{\nu-r}a_m^r$
+  because $\nu-r<0$. The sum of $a_m^r$ is already controlled with the
+  $\delta$ weight. Also, $BC_B^r\le32^rB^{3r}$, so the radius-independent
+  bad-block term has the stated power of $B$.
+
+  \medskip
+  \noindent\textit{Step 4.~}We bound the final remainder directly.
   If $\ell_N = 0$, the last endpoint is $I$ and $\log\|I\| = 0$. Otherwise use
   the stopped path, not its frozen full-cell formula. Since $a_N \le
   C_B\delta^{-1/r}Z$, its weighted logarithm is at most
@@ -490,6 +582,15 @@ ordered product of the perturbed endpoints when these paths are small.
 \end{proposition}
 
 \begin{proof}
+  We compare perturbed and mean endpoints separately on good and bad primitive
+  blocks. We then use the mean norm lower bound to compare the ordered
+  product, taking the residual threshold limit only after the small-parameter
+  limit.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We estimate endpoint norm ratios and sum the
+  residual budgets.
   All endpoint norms are positive by the Young and free inverses. On every cell
   with $a_m \le K_{\rm res}$ apply
   Proposition~\ref{P:young-upper-multiplicative} with base $H_m$, perturbation
@@ -513,6 +614,10 @@ ordered product of the perturbed endpoints when these paths are small.
   includes $p = \nu$, zero entries and the true empty block, with no singular
   powers. It proves~\eqref{E:uniform-residual-ratio}.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We compare the ordered product and take the limits
+  in order.
   The product $A_{\rm prod} = \prod_m\|P_m^{\rm mean}\|$ is at least one.
   Submultiplicativity, without commutation, gives
   \[
@@ -523,6 +628,11 @@ ordered product of the perturbed endpoints when these paths are small.
       &\le2\delta\log\max(1,z_{\rm rat}).
     \end{aligned}
   \]
+  The ordered product norm is bounded by the product of perturbed norms, which
+  equals $A_{\rm prod}z_{\rm rat}$. Since $A_{\rm prod}\ge1$, replacing either
+  side by its maximum with one gives the first inequality in the display.
+  Taking logarithms and multiplying by $2\delta$ gives the second, with no
+  commutation of factors.
   At fixed $B,M,K_{\rm res}$ the residual terms vanish on $Y \le b_\delta$. Let
   $\delta\downarrow0$ first and then $K_{\rm res} \to \infty$. Since $r > \nu$,
   the residual excess has limsup at most zero, uniformly in $R,\Phi$. Now take
