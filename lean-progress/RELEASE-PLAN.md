@@ -527,3 +527,11 @@ Checks:
   - Table G.1 row: "Steps checked; inputs supplied or left outside Lean", 8 / 11 / 7 / 8 / 0 / 34. The counts are unchanged.
   - No cited TeX file changed since 1d64c44a. The remap pass with overrides `f7069cf` therefore still holds for this tip.
   - From the Lean side the chain is ready for #3's audit and manifest-only reseal and for #16's verification.
+- **Recheck at the replacement candidate d889e2e1 (2026-11-16): PASS.** #24 withdrew 4171c4d7. The chain is now 90296c39 -> e8434f71 -> 948cb27d -> d889e2e1, i.e. 90296c39 plus the rename and the read-revision label.
+  - VERIFICATION.md: all 253 rows equal coverage.yaml at 74a04f57 (44 / 16 / 1 / 34 / 2 / 156).
+    - The 34 partial rows read "steps checked", and the single row keeps "every conclusion, inputs supplied".
+    - No "inputs supplied" class cell remains, and the claim counts are equal.
+  - The provenance line reads "Manuscript read at revision b6f7da3", this chain's read point.
+  - Table G.1 row: "Steps checked; inputs supplied or left outside Lean", 8 / 11 / 7 / 8 / 0 / 34.
+  - The data lines of VERIFICATION.md and verification-status-data.tex are byte-equal to those at 4171c4d7, apart from the read revision.
+  - No cited TeX file changed since 90296c39, so the remap pass with overrides `f7069cf` holds.
