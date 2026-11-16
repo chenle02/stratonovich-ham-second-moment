@@ -26,7 +26,11 @@ checked Git payloads, statement/proof hashes and LF ranges, read all three
 contracts, and checked immutable packet digests and all-deny local profiles.
 Caps 65,536 per generation and 3,600 seconds, at most three processes; native
 recovery permitted prospectively with unknown aggregate accounting retained.
-No provider call has yet been made on these successor inputs at this freeze.
+At the freeze no provider call had been made. Subsequently all three
+authorized calls launched in parallel on 2026-11-16 at 13:17:38, 13:17:39
+and 13:17:41 UTC respectively; safe receipts are in
+`CHAPTER9-SUCCESSOR-LAUNCHES.json`. Launches are not review results. No
+additional scope, coordinator retry or fallback is authorized by this record.
 See `CHAPTER9-SUCCESSOR-FREEZE.json` in the policy record directory. The remaining 25 files await per-file final handoffs.
 The already-started Claude Fable reader continues as an optional editorial
 aid with prompt, actual identity, stop points and dispositions retained.
