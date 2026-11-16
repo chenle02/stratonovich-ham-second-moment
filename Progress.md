@@ -221,7 +221,7 @@ All still-unlaunched future packets now have at least65,536 tokens of combined
 completion allowance; their scientific inputs remain unchanged. Other source
 rereads continue under standing authority.
 
-### RP009--RP011 running; RP012 frozen and unlaunched
+### RP009/RP011/RP012 running; RP010 complete
 
 Four exact-source packets are frozen: RP009 unmasked variational at corrected
 `7923750f` (6 pairs),RP010 temporal equilibrium at`66b1814b` (2 pairs,1
@@ -235,8 +235,15 @@ timeout3,600seconds, fresh pure DeepSeekV4Pro, one attempt/no coordinator
 retry/continuation/fallback. No independent result is claimed before dispatch;
 Agent16's integrated verification/adoption gate remains separate.
 
-RP009--RP011 are RUNNING as separate fresh sessions (16assigned pairs);
-no new independent result is claimed. RP012 has not launched.
+RP010 completed normally at `2026-11-16T07:26:10.595259+00:00`, elapsed
+339.986seconds, rawPASS/high, both proof pairs complete/preserved (one
+unchanged). Root adjudication supports scoped preservation with one report-only
+numerical example error: the correct a=1/2 mass is approximately0.38138, not
+0.676; the source/report exact Gamma ratio is correct. No source repair or
+callback is required. Native identity/prompt/freshness/zero-tool/stop and
+unchanged-input checks pass. RP009 andRP011 remain RUNNING. RP012 launched
+fresh at `2026-11-16T07:29:47.455158+00:00` as
+`readable-cameron-mean-f8613887b46a4afabd80a69771cd1e1c`; no result yet.
 
 RP009 launched `2026-11-16T07:20:29.428431+00:00` as `readable-unmasked-variational-071fc22bc1f2456ca4e24491a63c8df6`.
 RP010 launched `2026-11-16T07:20:30.609027+00:00` as `readable-temporal-equilibrium-16ef7a4f0e8e43f1bf9627661c3af736`.
