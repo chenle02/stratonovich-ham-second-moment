@@ -39,6 +39,14 @@ equality in~\eqref{E:raw-block-original-comparison}.
   \medskip
   \noindent\textit{Step 1.~}We scale the source covariance and the Green
   measure.
+  For the scalar powers below, substituting $r_T=T\delta$ and
+  $(3-\alpha)\kappa=4-\alpha-a$ with $\delta=T^{-\kappa}$ gives
+  $T^{1-a/2}r_T^{1-\alpha/2}=\delta^{-1/2}$; multiplying by $\delta$ gives the
+  companion identity used for the noise coefficient $\sqrt\delta$.
+  At each vertex the time substitution contributes the Jacobian $T$, the
+  Green-measure scaling contributes $r_T$, and the single Gaussian source
+  factor contributes the square root $T^{-a/2}r_T^{-\alpha/2}$ of its
+  covariance amplitude.
   At positive widths, time and space dilation of the Gaussian source gives
   covariance amplitude $T^{-a}r_T^{-\alpha}$. This follows distributionally from
   the homogeneous Radon covariance, including spatial white noise. Its source
@@ -49,10 +57,6 @@ equality in~\eqref{E:raw-block-original-comparison}.
     G_d(T\tau,r_T\ud z)
     =r_TG_d(\tau/\delta,\ud z).
   \]
-  The mass on the left is $T\tau$. The mass on the right is $r_T\tau/\delta$,
-  which is the same because $r_T=T\delta$. The spatial support also matches:
-  after dividing by $r_T$, the original propagation radius is
-  $T\tau/r_T=\tau/\delta$.
   It follows from its degree $1-d$ distributional scaling, also for the sphere
   measure in dimension three. Each terminal Duhamel vertex thus contributes
   $Tr_T\,T^{-a/2}r_T^{-\alpha/2}$. Substitution of the displayed positive real
@@ -65,11 +69,6 @@ equality in~\eqref{E:raw-block-original-comparison}.
   \medskip
   \noindent\textit{Step 2.~}We match the scaled vertex with the fast-equation
   vertex.
-  To check the powers, substitute $r_T=T\delta$ into the second vertex factor.
-  It becomes $T^{2-(a+\alpha)/2}\delta^{1-\alpha/2}$. The identity
-  $(3-\alpha)\kappa=4-\alpha-a$ and $\delta=T^{-\kappa}$ reduce this to
-  $\delta^{-1/2}$. Multiplying this identity by $\delta$ gives the first
-  equality in the preceding display.
   The Green kernel for the forcing in~\eqref{E:exact-fast-equation} is
   $\delta^{-1}G_d((t-s)/\delta)$; after multiplication by $\sqrt\delta$ it gives
   exactly that vertex factor. Therefore, every finite list of fixed-order
@@ -79,9 +78,7 @@ equality in~\eqref{E:raw-block-original-comparison}.
   scaled side. Lemma~\ref{L:joint-fixed-order} and the absolute $L^2$
   summability in Lemma~\ref{L:vertex-crude} pass the identities to the canonical
   series and its second moment. No large-time and source limit are interchanged.
-  For each fixed dilation, both rescaled noise widths still tend to zero, and
-  the common finite-order identities are taken before summing. Absolute $L^2$
-  summability controls the tails of the series. Finally, evaluate the law
+  Finally, evaluate the law
   identity at $t=1,x=0$ and use $T^{-\kappa}=\delta$ to obtain the logarithmic
   moment identity.
   This proves the law assertion and~\eqref{E:exact-moment-scaling}. This proves
