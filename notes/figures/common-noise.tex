@@ -1,21 +1,6 @@
 \begin{figure}
   \centering
-  \begin{tikzpicture}[x=1cm,y=1cm]
-    \node[ham/box,text width=3cm] (w) at (0,1.35) {Given noise\\$W$};
-    \node[ham/box,text width=3cm] (j) at (0,-1.45)
-    {Independent $J$\\fixed for all cutoffs};
-    \node[ham/box,text width=4.3cm] (iso) at (4.5,-.15)
-    {One enlarged Gaussian field\\$\begin{gathered}\mathcal{I}(g)=W(\Phi^{-1}Pg)\\{}+J((I-P)g)\end{gathered}$};
-    \node[ham/box,text width=3cm] (sources) at (9.2,-.15)
-    {All cutoff sources\\$Y_\rho(F)=\mathcal{I}(Q_\rho\Phi F)$};
-    \node[ham/box,text width=4.3cm] (limit) at (4.5,-3.55)
-    {Limit using only $W$\\$\mathcal{I}(\Phi F)=W(F)$};
-    \draw[ham/arrow] (w)--(iso);
-    \draw[ham/arrow] (j)--(iso);
-    \draw[ham/arrow] (iso)--(sources);
-    \draw[ham/arrow] (sources.south) |- (limit.east);
-    \draw[ham/arrow] (w.west)--++(-.7,0) |- (limit.west);
-  \end{tikzpicture}
+  \input{notes/figures/common-noise-drawing}
   \caption[The original and auxiliary Gaussian noises]{One coupling for every
     cutoff. The sources may depend on the auxiliary noise $J$, but the limiting
     noise and operator path retain the given $W$. A new independent copy is not

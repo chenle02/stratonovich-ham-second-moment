@@ -1,0 +1,32 @@
+% One common extension: the auxiliary channel vanishes on the original range.
+\begin{tikzpicture}[x=1cm,y=1cm,font=\normalsize,
+  input/.style={ham/box,font=\normalsize,text width=5.9cm,
+  minimum height=1.45cm,inner sep=7pt},
+  case/.style={ham/box,font=\normalsize,text width=5.9cm,
+  minimum height=2.4cm,inner sep=7pt}]
+  \node[input] (w) at (3.5,0)
+  {\strut\textbf{Given noise $W$}\\\strut Retained literally};
+  \node[input,draw=hamteal,fill=hamteal!4] (j) at (11.3,0)
+  {\strut\textbf{$J$ independent of $W$}\\\strut One auxiliary for all cutoffs};
+  \node[ham/box,font=\normalsize,text width=13.7cm,
+  minimum height=2cm,inner sep=7pt] (iso) at (7.4,-2.2)
+  {\strut\textbf{One common Gaussian field}\\[3pt]
+  \strut $\mathcal I(g)=W(\Phi^{-1}Pg)+J((I-P)g)$\\[3pt]
+  \strut $P$ projects onto the original range $\Phi H_W$};
+  \draw[ham/arrow] (w.south)--(w.south |- iso.north);
+  \draw[ham/arrow,draw=hamteal] (j.south)--(j.south |- iso.north);
+
+  \node[case] (cutoff) at (3.5,-4.9)
+  {\strut\textbf{Positive cutoff widths}\\[5pt]
+  \strut $Y_\rho(F)=\mathcal I(Q_\rho\Phi F)$\\[5pt]
+  \strut The $J$ term may be nonzero.};
+  \node[case,fill=hamblue!7] (limit) at (11.3,-4.9)
+  {\strut\textbf{Limit on the original range}\\[5pt]
+  \strut $(I-P)\Phi F=0$\\[5pt]
+  \strut $\mathcal I(\Phi F)=W(F)$};
+  \draw[ham/arrow] (cutoff.north |- iso.south)--(cutoff.north);
+  \draw[ham/arrow] (cutoff.east)--(limit.west)
+  node[midway,above=5pt] {$\rho\downarrow0$};
+  \node[align=center] at (7.4,-6.65)
+  {The limit retains the original random variable $W(F)$.};
+\end{tikzpicture}

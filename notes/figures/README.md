@@ -15,7 +15,7 @@ They do not replace the proofs.
 | `nonseparable-controls.tex` | Nonnegative smooth controls need not be one temporal function times one spatial function | Yes |
 | `two-chain-pairings.tex` | Self-pairs, cross-pairs and unequal chain lengths; ordering is only within each chain | Yes |
 | `order-of-limits.tex` + `order-of-limits-drawing.tex` | Numbered Green-before-noise construction; joint width approaches and the separate summable-tail passage | Technical detail |
-| `common-noise.tex` | Every cutoff uses the given Gaussian noise and one fixed auxiliary noise; the limit retains the original noise | Yes |
+| `common-noise.tex` + `common-noise-drawing.tex` | One fixed Gaussian extension; the auxiliary channel may contribute at a cutoff and vanishes on the original range | Yes |
 | `light-cone.tex` | The backward domain of dependence lies inside the cutoff plateau; both displacement and velocity matter | Yes |
 | `global-control-blocks.tex` | Correlated blocks, the true final shortened interval, and one global Gaussian cost | Yes |
 | `hermite-cutoff.tex` | The degree bound for every prefix of a selected Gaussian word, including lowering steps | Technical detail |
