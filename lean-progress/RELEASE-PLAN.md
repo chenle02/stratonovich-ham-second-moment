@@ -453,3 +453,28 @@ The DOI and final links go into the video descriptions, which stay editable, so 
 - No manuscript TeX line numbers anchored to a284420 are printed. #22 supplies the line-free scope, inputs and proves/not-formalized texts in `appf-l14-payload.yaml` (in `~/.local/state/stratonovich-appf-l14-inputs/`). The re-anchored v0.10.0 data can restore line numbers at the re-pin.
 - Le dropped one sentence from the pre-R L10-L14 paragraph: "For this release the companion's line citations were re-anchored to the published manuscript, and the re-anchor was reviewed in the same way." It returns at the re-pin, when it is true. The rest of the paragraph stays as approved.
 - Le asked for margin markers on the three displayed equations, and they stay. The legend drops "displayed equations carry no link".
+
+### #22's check of the held Appendix F L14 chain (2026-11-16): PASS
+- **Chain checked:** fa49a953 (Appendix F successor, parent 046572f3), b6c515b4 (combined edition), 29edae78 (#3's reseal, manifest only). All are held, with no push.
+- **Data:**
+  - the payload is `appf-l14-payload.90315b65.yaml`, which is 7daed384 plus 8 `no_analytic_input` flags; #3's audits found no corrections;
+  - the inputs come from companion dev 74a04f57 (coverage) and the gate 8f51004 (receipts);
+  - the margin notes follow map aee543e8.
+- **Pin:** #24's `pin_companion.py` (from fa49a953), run by #22 with the companion and its receipts, as `pin_companion.py <companion> 8f51004 74a04f57 --successor-check verify_l14_successor.py`, writes coverage.yaml, completion.md, coverage-commit.txt, lean-receipt-summary.json, coverage-scope-tex.yaml and successor-check.json byte-identical to the committed files. The ledger summary is the stored one for 8f51004.
+- **The successor check** (`verify_l14_successor.py`; record 769717ba) has the exception categories named:
+  - Lean library comment-only;
+  - Challenge.lean and Solution.lean drop only the restated Cx.ext_iff;
+  - two generated-declaration claims removed;
+  - 491 status relabellings;
+  - coverage claim lists and three text fields.
+
+  #16 accepted it as a checked exception.
+- **Book PDF at fa49a953 (419 pages):**
+  - 101 Appendix F rows in categories matching coverage class × conclusion (48/16/1/34/2);
+  - 99 margin notes on 198 links, each equal to its own row and to the map, none missing or extra, no outside row marked;
+  - the 8 flagged rows print "Assumptions and limits" with the named text, and the old generic sentence appears 0 times.
+- **Remap dry run at fa49a953:** it passes (0 unresolved, census decided, comment-only, copies identical). Against 046572f3, all 4914 main-TeX citations move exactly +5 (the `\lcCategory` macro in the preamble), and nothing else changes. Tool on dev branch reanchor-98f45bed at 3908d0f.
+- **Carry at the re-pin (companion coverage.yaml, docs-only, v0.10.0):**
+  1. Replace the summary sentence with the one #24's generator now substitutes ("…; the entries distinguish supplied hypotheses, where present, from analytic work left outside Lean"). The override then becomes a no-op, and #24 removes it.
+  2. Correct the input wording of the 8 no-analytic-input rows. "which enter the Lean statements as explicit hypotheses" overstates: their Lean statements take only parameter conditions, and the analytic facts are outside Lean. These rows are L:driver-holder-limit, L:driver-interval-limit, L:exact-canonical-scaling, L:raw-block-inputs, P:actual-wave-form, P:gram-entrywise-comparison, P:gram-positive-optimizer and P:raw-block-original-lower.
+- **The AI-use L14 block** (#3's a54aff89) is not in this chain. Per #16 it goes in at the re-pin through the release_sync template; #22 has confirmed its counts.
