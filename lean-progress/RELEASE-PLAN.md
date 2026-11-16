@@ -495,3 +495,26 @@ Checks:
 - `lean-pkg coverage check`: schema PASS. The only failure is the expected "manuscript unposted".
 - `verify_l14_successor.py` 8f51004 -> e415c36: ALLOWED-SUCCESSOR. Lean library comment-only; coverage changes only in claims, inputs (9), conclusion_scope and note.
 - Remap dry run at fa49a953 with the new head: passes after one recorded census decision ("16" in the summary is a count). 14974 numbers decided.
+
+### #22's check of the held Appendix G chain (2026-11-16)
+- **Chain checked:** a906b4a1 -> b2b34fc3 -> 81fc189e -> 05e65c2e -> 995a56bc (ledger pinned, Appendix G counts) -> 1d64c44a (combined). All held, no push.
+- **VERIFICATION.md at 995a56bc: data correct.** All 253 rows were cross-tabulated against coverage.yaml at 74a04f57:
+  - 44 formalized in full;
+  - 16 narrower conclusion;
+  - 1 every conclusion, inputs supplied;
+  - 34 inputs supplied;
+  - 2 outside Lean;
+  - 156 no Lean claim.
+
+  No other combination occurs, and every claim count equals its row.
+- **Legend:** #16's sentence ("…steps, parts or a narrower form of the result, as listed in the companion's statement ledger…") is fine, because the ledger lists every claim row. No successor is needed.
+- **Table G.1** (`notes/verification-status-data.tex`): the numbers are correct.
+  - 44 + 16 + 1 + 34 + 2 + 156 = 253.
+  - The column sums 31 / 72 / 82 / 35 / 33 match.
+  - \vsLeanAny = 95; \vsOutside = two.
+  - **Wording issue sent to #16 (open):** the row label "Steps checked, inputs supplied" (and VERIFICATION.md's class name "inputs supplied") overstates for the 8 rows whose checked steps take no analytic input, the same point as Appendix F's group heading. Suggested: "Steps checked; inputs supplied or left outside Lean". Class and counts are unchanged.
+- **Remap dry run at 1d64c44a: PASS** after 15 new text-anchored overrides (dev branch reanchor-98f45bed, `f7069cf`, pushed; <HUB> fetched).
+  - The reworded free-phase sentence in the proof of P:interval-coefficients (approved by Le; #3's citation of the energy calculation in P:static-phase-variance) lies inside 15 cited statement-and-proof ranges (FiniteWordCutoff, FixedSplit, IntervalScalar, coverage, ledger).
+  - Each now maps by the text of its first and last lines to exactly the diff-mapped endpoints. Three ranges that ended on a blank line now end on the line before it.
+  - Main-TeX shifts: +8 before the edit (the Chapter 3 guide sentence), +11 after it. Nothing else changes.
+  - Census 14974/14974 decided; Lean comment-only; comparator copies identical.
