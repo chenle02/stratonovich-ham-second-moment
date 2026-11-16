@@ -401,3 +401,18 @@ The DOI and final links go into the video descriptions, which stay editable, so 
   - 31 rows name a model; 14 of them are "full statement".
   - Review evidence and the adjudication are in `private/lean-markers/review-2026-11-16/`.
 - **Still to come.** #24 integrates the heading-line markers (Le's style choice), and #22 checks the built PDF against the map. The final words come from the v0.10.0 data at the re-pin.
+
+### Lean-marker map: confirmation review (2026-11-16)
+- **Review.** Codex GPT-6.1-Sol, high effort, read-only. The run is review-complete, with verdict FAIL and high confidence.
+- **Passed:**
+  - the diff `4e50f437..62394f18`: all five additions are supported, and no marker changed;
+  - the mechanical check and the claim-file inventory, on all 101 rows;
+  - 5 of the 6 rejected candidates.
+- **One further missing model.** P:mild-construction needs M2. Its covered claim HermiteFock.gaussian_field_bound is stated in the Hermite coefficient model (HermiteFock.lean:597-605). #22 verified this and added M2. The marker stays "partial, with inputs (M2)", and the "full statement" rows are unchanged.
+- **Map now.** Article `aee543e8`, sha256 `23b8b90172bb21cd7d64bb836f6c04cf28791c5605f0e8bc01b9fbad6f6c4c91`. 32 rows name a model, 14 of them "full statement". Evidence is in `private/lean-markers/review-2026-11-16-confirm/`.
+- **Reviewer's limit.** 41 of the 48 "full statement" rows were screened by the claim-file/register join only. #22's module and import check covered all 101 rows.
+- **Open for #16.** Accept the one-row repair as verified, or ask for a narrow recheck of that row.
+- **Prototype check.** #22 checked #24's marker prototype (414 pages, map 62394f18) read-only:
+  - 75 markers individually equal to their map rows;
+  - all 96 equal in aggregate;
+  - the outside rows unmarked.
