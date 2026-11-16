@@ -445,3 +445,11 @@ The DOI and final links go into the video descriptions, which stay editable, so 
   - All 96 slots are correct against the row-leading Appendix F rows: 74 worded markers (26 full, 18 narrower, 30 partial) and 22 empty.
   - The 74 printed PDF markers equal the data, and L:spatial-fourier-bound now reads "full statement".
   - The outside and equation rows are unmarked.
+
+### Appendix F at the L14 gate before R (2026-11-16; Le's decisions, relayed by #16)
+- Appendix F gets its L14 content before R. #24 owns the generator and the generated files; #22 owns the data payload; #3 audits the wording.
+- The gate is named exactly as "wave-L14 gate (development commit 8f51004 of the private development repository; to be released as v0.10.0)". There is no tag URL or DOI until the re-pin.
+- The data: rows from coverage.yaml at dev 74a04f57; markers from map aee543e8; receipts at 8f51004. The ledger "verified/open" sentence is omitted, because it cannot be computed at 8f51004 with lean-pkg 0.29.0.
+- No manuscript TeX line numbers anchored to a284420 are printed. #22 supplies the line-free scope, inputs and proves/not-formalized texts in `appf-l14-payload.yaml` (in `~/.local/state/stratonovich-appf-l14-inputs/`). The re-anchored v0.10.0 data can restore line numbers at the re-pin.
+- Le dropped one sentence from the pre-R L10-L14 paragraph: "For this release the companion's line citations were re-anchored to the published manuscript, and the re-anchor was reviewed in the same way." It returns at the re-pin, when it is true. The rest of the paragraph stays as approved.
+- Le asked for margin markers on the three displayed equations, and they stay. The legend drops "displayed equations carry no link".
