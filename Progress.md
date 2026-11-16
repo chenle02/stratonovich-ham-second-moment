@@ -79,7 +79,13 @@ statement/proof hash and LF, profile and artifact digest, and reads each
 contract with shared clauses factored. Same Choice B route/caps/timeouts,
 max three processes across existing and new runs; no coordinator repeat,
 confidence retry, tools or fallback. No call on these twelve at this freeze;
-exact root rolling-dispatch GO remains a separate next step. RP052 is a fresh
+Root then authorized exactly RP047-RP058 rolling admission from freeze
+`8503f86d`, with a shared admission lock and conservative unfinished-job plus
+actual-model count capped at three. After044-046 terminal receipts were
+verified, RP047/RP048/RP049 actually started at14:04:11-14 UTC on2026-11-16.
+The other admitted scopes start only as slots free after their per-launch
+hash/profile/finality checks; this does not claim all twelve have started.
+See `CH4-8-REMAINING12-ROLLING-GO.json`. RP052 is a fresh
 changed-source scaling review, not use of the still-unused RP007B repair.
 See `CH4-8-REMAINING12-FREEZE.json`. Adapter v3 is reported parked offline
 history, not re-audited here, approved, installed or used; native route stays.
