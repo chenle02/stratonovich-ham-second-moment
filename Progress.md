@@ -221,7 +221,7 @@ All still-unlaunched future packets now have at least65,536 tokens of combined
 completion allowance; their scientific inputs remain unchanged. Other source
 rereads continue under standing authority.
 
-### RP009--RP012 frozen, not yet dispatched
+### RP009--RP011 running; RP012 frozen and unlaunched
 
 Four exact-source packets are frozen: RP009 unmasked variational at corrected
 `7923750f` (6 pairs),RP010 temporal equilibrium at`66b1814b` (2 pairs,1
@@ -234,6 +234,13 @@ and fresh native effective tool-denied configuration. Each requested cap is
 timeout3,600seconds, fresh pure DeepSeekV4Pro, one attempt/no coordinator
 retry/continuation/fallback. No independent result is claimed before dispatch;
 Agent16's integrated verification/adoption gate remains separate.
+
+RP009--RP011 are RUNNING as separate fresh sessions (16assigned pairs);
+no new independent result is claimed. RP012 has not launched.
+
+RP009 launched `2026-11-16T07:20:29.428431+00:00` as `readable-unmasked-variational-071fc22bc1f2456ca4e24491a63c8df6`.
+RP010 launched `2026-11-16T07:20:30.609027+00:00` as `readable-temporal-equilibrium-16ef7a4f0e8e43f1bf9627661c3af736`.
+RP011 launched `2026-11-16T07:20:31.761046+00:00` as `readable-spatial-occupation-bfebc8bbf43349c39a703c0c948d2b07`.
 
 The older publication-frontier headings below are dated snapshots; they do
 not authorize restarting their old completed calls or override this narrow
