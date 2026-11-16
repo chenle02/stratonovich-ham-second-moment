@@ -72,8 +72,7 @@ extend that estimate to fractional Sobolev factors.
   On band $j$, the gradient norm is at most $2^j\|f_j\|_2$. Substituting into
   $N$ gives the first inequality. Write $2^{j\alpha/4}\|f_j\|_2$ as
   $2^{-j(s-\alpha/4)}(2^{js}\|f_j\|_2)$ and apply Cauchy--Schwarz to the two
-  sequences. The strict inequality $s>\alpha/4$ makes the first sequence
-  square summable.
+  sequences.
   Indeed, $\sum_j2^{-2j(s-\alpha/4)} < \infty$, while $\sum_j2^{2js}\|f_j\|_2^2
   \le 2^{2s}\|f\|_{H^s}^2$. The low block has factor one. No $L^p$ multiplier
   result is used. Also $\sum_j\|f_j\|_2 < \infty$ since $s > 0$. Thus,
@@ -143,6 +142,9 @@ from smooth tests to all of $H_{\mathrm{sp}}$.
 
   \medskip
   \noindent\textit{Step 2.~}We obtain compact families of row tests.
+  The velocity test satisfies $w_2\in H^{-1/2}$ and $w'=\Lambda^{-1}w_2\in
+  H^{1/2}$, so it has the same localization regularity as the displacement
+  test.
   Multiplication by $\eta_R$ maps bounded $H^{1/2}$ sets to precompact $H^s$
   sets by Proposition~\ref{P:cutoff-singular-values}, with gain $1/2-s > 0$.
   This applies to $z_1$ and $w'$. The $c_1\eta_R$ family is finite dimensional
@@ -152,11 +154,6 @@ from smooth tests to all of $H_{\mathrm{sp}}$.
   \sup_{k\in\mathcal{L}}\|k\|\|q\|$. Null covariance classes therefore map to
   zero.
 
-  The velocity coordinate $w_2$ lies in $H^{-1/2}$, so $w'=\Lambda^{-1}w_2$
-  lies in $H^{1/2}$ with the corresponding bound. Thus, both localized factors
-  use the same compact map from $H^{1/2}$ to $H^s$. The fractional product map
-  is continuous, so the image of the product of their compact closures is
-  compact in $H_{\mathrm{sp}}$.
 
   \medskip
   \noindent\textit{Step 3.~}We extend the map with compact operator values.
@@ -169,6 +166,10 @@ from smooth tests to all of $H_{\mathrm{sp}}$.
 
   \medskip
   \noindent\textit{Step 4.~}We prove compactness of the map itself.
+  On each fixed compact support, local Radon finiteness bounds the covariance
+  norm by a constant times the supremum norm. Countable uniformly dense
+  families of smooth tests on exhausting compact supports therefore give a
+  countable dense set in $H_{\mathrm{sp}}$.
   Choose a complete smooth-test orthonormal basis of $H_{\mathrm{sp}}$ by
   countable compact-support approximation and Gram--Schmidt, omitting null
   classes. Let $Q_n$ project onto its first $n$ terms. The row identity yields
@@ -177,11 +178,6 @@ from smooth tests to all of $H_{\mathrm{sp}}$.
     \le\sup_{k\in\mathcal{L}}\|(I-Q_n)k\|_{H_{\mathrm{sp}}}
     \longrightarrow0.
   \]
-  For a finite net in $\mathcal L$, strong convergence makes $(I-Q_n)$ small
-  at every net center once $n$ is large. Its operator norm is at most one, so
-  its value at any point of $\mathcal L$ differs from that at a nearby center
-  by at most the net radius. Letting that radius decrease proves the uniform
-  limit in the display.
   Strong projection convergence is uniform on compact $\mathcal{L}$ by a
   finite-net argument and $\|I-Q_n\| \le 1$. Each $T_{\mathrm{sp}}Q_n$ has
   finite-dimensional range; their operator-norm limit is a compact map. This is
@@ -277,24 +273,18 @@ Proposition~\ref{P:cameron-full-mean} then combines the two maps.
   tests $C_tf = Kf$, and~\eqref{E:cameron-temporal-map} first gives compactness
   into $L^2$.
 
-  If a vector is orthogonal to the range of the self-adjoint square root, it
-  lies in its kernel. That kernel is zero because $K$ is injective, so the
-  range is dense. The extension of an isometry from a completed domain has
-  closed range; density therefore makes this extension onto $L^2(I)$.
 
   \medskip
   \noindent\textit{Step 3.~}We bound the temporal mean in $L^r$ and obtain
   compactness there.
+  The restriction $r<2/a$ gives $ar/2<1$, ensuring integrability of the kernel
+  power at zero.
   Extend $K_a(v) = |v|^{-a}1_{\{|v|\le1\}}$ to the line. It lies in $L^{r/2}$.
   Scalar Young convolution gives
   \[
     \|g\|_{H_t}^2\le\|K_a\|_{r/2}\|g\|_{r'}^2,\qquad
     r'=r/(r-1).
   \]
-  The condition $r<2/a$ gives $ar/2<1$, so the truncated power kernel belongs
-  to $L^{r/2}$. Young bounds its convolution with an $L^{r'}$ function in
-  $L^r$; pairing this with the same function in $L^{r'}$ gives the displayed
-  covariance norm bound.
   To verify the needed Young inequality, take $u = r/2$, $v = r'$, so $u,v < r$
   and $1/u+1/v = 1+1/r$. Split the absolute convolution integrand into
   $(|f|^u|h|^v)^{1/r}$, $|f|^{1-u/r}$ and $|h|^{1-v/r}$. H\"older with exponents
@@ -307,10 +297,6 @@ Proposition~\ref{P:cameron-full-mean} then combines the two maps.
   $L^2$ and boundedness into $L^{r_2}$ give compactness into $L^r$ by $\|u\|_r
   \le \|u\|_2^\tau\|u\|_{r_2}^{1-\tau}$ with $1/r = \tau/2+(1-\tau)/r_2$.
 
-  For a bounded sequence in $H_t$, compactness into $L^2$ supplies an
-  $L^2$-convergent subsequence. Its differences remain bounded in $L^{r_2}$.
-  The interpolation inequality makes these differences tend to zero in $L^r$,
-  proving compactness in that norm rather than only boundedness.
 
   \medskip
   \noindent\textit{Step 4.~}We test the trace by orthonormal cell indicators.
@@ -384,6 +370,10 @@ refute boundedness there.
 
   \medskip
   \noindent\textit{Step 2.~}We identify the completed map on smooth controls.
+  The multiplier estimate used here is $\|B_F(b)\|\le\|b\|_\infty+\|b\|_2$
+  from Lemma~\ref{L:constant-source-response}; on the fixed support of $m_R$,
+  the $L^2$ error is at most the square root of its volume times the supremum
+  error.
   The physical mean identity on separated tests follows
   from~\eqref{E:cameron-spatial-row}. For a smooth spacetime test use the
   separated compact-support approximations in the tensor proof. Their uniform
@@ -406,11 +396,6 @@ refute boundedness there.
   compact. Scalar time compactness alone tensored with an infinite identity
   would not prove this.
 
-  For a fixed finite spatial projection, only finitely many scalar temporal
-  images must be controlled. Choose a convergent subsequence for the first
-  coordinate, then successively for the remaining coordinates. Their finite
-  linear combination converges in the operator-valued $L^r$ norm. The uniform
-  operator approximation by these compact maps then gives compactness of $T$.
 
   \medskip
   \noindent\textit{Step 4.~}We obtain the supported projection-tail bound.
@@ -468,6 +453,11 @@ These intervals are nonempty.
   \medskip
   \noindent\textit{Step 1.~}We construct the stopped paths in the separable
   little Hölder space.
+  For $Y=Y_{m,J}$, the notation $A_{m_R}(Y)$ means $iM_YL_\psi$
+  from~\eqref{E:constant-phase-driver}, where $M_Y$ is the transferred $E$
+  path. The two localizations are~\eqref{E:constant-phase-localization},
+  passed from the common deterministic coefficients to this path by bounded
+  multiplication.
   Isometry of the pullback and orthogonality of $Q_J$ give
   $\operatorname{Var}Y_{m,J}(f) \le \|f\|_{H_W}^2$.
   Proposition~\ref{P:source-gaussian-transfer} therefore applies. Its finite
@@ -541,6 +531,10 @@ These intervals are nonempty.
   \medskip
   \noindent\textit{Step 1.~}We compute the covariance direction and its factor
   $\sqrt\delta$.
+  Insert the wave-row tests of~\eqref{E:source-transferred-row} in the scalar
+  covariance below; Proposition~\ref{P:cameron-full-mean} identifies the
+  resulting masked mean with $T(Q_J\Phi)$, and the row calculation of
+  Lemma~\ref{L:raw-block-inputs} gives its conjugated primitive on $F$.
   For smooth supported $\Phi$, $Q_J\Phi$ is another such test. The explicit
   pullback covariance~\eqref{E:raw-block-mean-jacobian} gives
   \[
@@ -617,11 +611,6 @@ These intervals are nonempty.
     \left(\sum_m t_m^p\right)^{1/p}
     \le n^{1/p-1/r}\left(\sum_m t_m^r\right)^{1/r}.
   \]
-  Multiplying the local primitive estimate by the averaged-norm factor
-  $\delta^{1/p}$ leaves $\sqrt\delta\,\delta^{1/p-1/r}$. Finite power mean
-  adds $n^{1/p-1/r}$. These combine into $(\delta n)^{1/p-1/r}$, and
-  $n\le2/(\delta B)$ gives the explicit $B$ factor. The exponent is positive
-  because $p<r$.
   The true partition gives $\sum_m t_m^r = \|M\|_{L^r(I)}^r$, including an empty
   last interval, and $n \le 2/(\delta B)$. Hence, the exact $\delta$-weighted
   norm gives
