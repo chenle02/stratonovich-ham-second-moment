@@ -2569,12 +2569,25 @@ regularization on pp.~13--14}.
 \end{proposition}
 
 \begin{proof}
+  We first pass the finite Wick formula to the fixed-order limits. We then
+  reverse the two terminal chains separately and identify their initial-chain
+  diagrams. Finally, norm summability and nonnegativity justify the complete
+  second-moment series.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the fixed-order limits without using
+  the infinite series.
   Lemma~\ref{L:joint-fixed-order} below constructs each $X_n$ and each
   individual two-chain diagram at arbitrary vertexwise widths, including unequal
   and empty chains. Its proof uses the positive spatial-measure limit and
   Lemma~\ref{L:pairing-product-envelope}; it uses neither the present
   proposition nor any infinite solution series.
 
+  Here $Y_m,Y_n$ denote the positive-width terminal integrals
+  $Y_m^{\boldsymbol a},Y_n^{\boldsymbol a}$ with the respective vertexwise
+  widths suppressed; their joint width limit is the $L^2$ limit in
+  Lemma~\ref{L:joint-fixed-order}.
   At positive noise widths Wick's formula gives zero at odd total order and the
   finite pairing sum at even total order. The Green-width limit is taken first,
   as in the construction preceding Lemma~\ref{L:spatial-wick-measures}. At fixed
@@ -2588,6 +2601,10 @@ regularization on pp.~13--14}.
   A zero-order factor stays equal to one. Each individual Wick diagram also has
   the finite nonnegative limit in Lemma~\ref{L:joint-fixed-order}.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We reverse the two chains and relabel the
+  pairings.
   To identify its initial-chain form, for terminal variables in the first chain
   set
   \[
@@ -2607,6 +2624,10 @@ regularization on pp.~13--14}.
   to the finitely many diagram limits proves \eqref{E:mixed-moment} with
   precisely~\eqref{E:mixed-diagram}.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We sum the mixed expectations using absolute norm
+  convergence.
   Lemmas~\ref{L:crude-corrected} and~\ref{L:vertex-crude} independently prove
   fixed-$t$ norm summability of the $X_n$, using the fixed-order construction
   just cited and Lemma~\ref{L:pairing-product-envelope}.
@@ -2617,6 +2638,8 @@ regularization on pp.~13--14}.
     |\E U_N^2-\E u^2|
     \le\|U_N-u\|_2(\|U_N\|_2+\|u\|_2)\longrightarrow0.
   \]
+  Each finite square expands over the square of indices $0\le m,n\le N$.
+
   The finite expansions of $\E U_N^2$ increase, since every mixed expectation
   computed above is nonnegative. Their limit is the full double sum, independent
   of its enumeration. Regrouping by total order gives~\eqref{E:full-second}.
@@ -2752,6 +2775,15 @@ exact source qualification.
 \end{lemma}
 
 \begin{proof}
+  We use radial spectral masses to bound the first norm and absolute wave
+  estimates to control the second. Scaling gives their exact homogeneous
+  powers. Tail convergence and multiplier comparisons are then proved from
+  nonnegative spectral expressions after time integration.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound the first norm by the homogeneous
+  resolvent integral.
   Scaling the Fourier representation of $\Gamma$ and using Fourier uniqueness
   gives $\mu(cA) = c^\alpha\mu(A)$. Radon finiteness and $\alpha > 0$ then imply
   $\mu(\{0\}) = 0$. In particular, $\mu(B_r) = r^\alpha V$, where $V = \mu(B_1)
@@ -2767,6 +2799,10 @@ exact source qualification.
   \infty$: the conditions at zero and infinity are $\alpha_0 > 0$ and
   $\alpha+\alpha_0 < 2$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We prove absolute integrability and positivity of
+  the second norm.
   For $N_2$ use $|\widehat{G}_s(\xi)| \le \min(s,|\xi|^{-1})$. On $|\xi| \le 1$,
   absolute integration is bounded by
   \[
@@ -2782,12 +2818,24 @@ exact source qualification.
   positive definite. Indeed, it is a positive Laplace mixture of the kernels
   $e^{-\lambda|s-t|}$. This proves $N_2(\theta)^2 \ge 0$.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We compute the homogeneous powers.
   The mass identity $G_s(\R^d) = s$ proves the formula for $N_0$. In $N_1$
   change $\lambda = \theta u$ and $\xi = \theta\eta$. In $N_2$ change $s =
   u/\theta$, $t = v/\theta$ and $\xi = \theta\eta$, using
   $\widehat{G}_{u/\theta}(\theta\eta) = \theta^{-1}\widehat{G}_u(\eta)$. These
   changes give exactly the stated powers.
 
+  For $N_1$, the temporal measure contributes $\theta^{\alpha_0}$, the spatial
+  measure contributes $\theta^\alpha$, and the resolvent contributes
+  $\theta^{-2}$. For $N_2^2$, the two time Jacobians and two wave factors
+  contribute $\theta^{-4}$, while the temporal kernel and spatial measure
+  contribute $\theta^{\alpha_0+\alpha}$.
+
+  \medskip
+  \noindent\textit{Step 4.~}We remove temporal tails using the absolute
+  majorant.
   The first tail in~\eqref{E:damped-tail-norms} is a tail of the finite
   nonnegative $N_1(1)$ integral. For the second, $0 \le K_M(r) \le
   |r|^{-\alpha_0}$ and $K_M(r) \to 0$ for $r \ne 0$. The absolute majorant just
@@ -2795,6 +2843,9 @@ exact source qualification.
   \to 0$. The tail kernel is positive definite by the same Laplace-mixture
   argument, so its quadratic form is nonnegative.
 
+
+  \medskip
+  \noindent\textit{Step 5.~}We compare nonnegative spectral quadratic forms.
   For the multiplier comparisons, define
   \[
     B_\theta(\lambda,\xi)=\int_0^\infty\int_0^\infty
@@ -2866,6 +2917,15 @@ pairings are over the full time line.
 \end{lemma}
 
 \begin{proof}
+  At a finite temporal cap we represent the stationary covariance as an inner
+  product. We use its Cauchy--Schwarz inequality together with translation
+  invariance of each self-pairing. Positive truncation and cap limits then
+  extend the result to the stated kernels.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We represent the capped covariance by
+  deterministic Hilbert features.
   We first prove positivity and Cauchy--Schwarz for the stationary kernel $C_L$
   at fixed finite $L$. For $\lambda > 0$, define
   \[
@@ -2894,6 +2954,10 @@ pairings are over the full time line.
   $\int|h_\lambda(t,r)h_\lambda(s,r)|\ud r$ by one, and both remaining measures
   are finite on the cap.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the covariance integral as a Hilbert
+  pairing.
   The map $(t,x)\mapsto\Phi_L(t,x)$ is norm-continuous, since its squared
   increment is $2m_L-2\operatorname{Re}C_L((t,x),(s,y))$. Continuity of $C_L$
   follows by dominated convergence against the finite measures. Thus, the map is
@@ -2908,6 +2972,10 @@ pairings are over the full time line.
   independently shifted cross kernel. The feature space is deterministic and
   introduces no new Gaussian field.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We compare different translates through their
+  unchanged self norms.
   Changing both integration variables in~\eqref{E:translated-covariance-form} by
   the same time and spatial translation gives
   \[
@@ -2919,6 +2987,10 @@ pairings are over the full time line.
   to their self pairings. This proves the capped form
   of~\eqref{E:translated-covariance-CS}.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We pass the nonnegative kernel and temporal-cap
+  limits.
   To make the passage for possibly unbounded nonnegative kernels explicit, set
   \[
     G_{i,M}(t,x)=\min(G_i(t,x),M)
@@ -3148,6 +3220,15 @@ Thus, $|Q_2|$ is even and $|Q_0|+|Q_2|/2 = n$.
 \end{lemma}
 
 \begin{proof}
+  We establish convolution bounds for fused kernels, then prove a regional
+  half-bound by induction. The endpoint configurations either give that bound
+  directly, give two second norms, or split into two half-bounds. The finite
+  maximum permits different assignments on the two regions.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We work at finite temporal cap and control fused
+  kernels.
   First cap every temporal domain at $L < \infty$; its measure is finite since
   $a > 0$. The stationary covariance pairing in
   Lemma~\ref{L:translated-covariance-CS} has norm $N_{2,e}$. Its feature
@@ -3173,6 +3254,10 @@ Thus, $|Q_2|$ is even and $|Q_0|+|Q_2|/2 = n$.
   Bochner integral against $G$ and apply Minkowski. Thus, every fused kernel
   satisfies all remaining edge hypotheses. No division by a norm is used.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We prove the regional half-bound and its
+  admissible assignments.
   We use induction on $n$, beginning with the empty product at $n = 0$. With two
   vertices on one chain the integral is at most $N_0(G_{\rm
   first})N_{1,e}(G_{\rm last})$; with one on each chain it is at most their two
@@ -3228,16 +3313,27 @@ Thus, $|Q_2|$ is even and $|Q_0|+|Q_2|/2 = n$.
   half-bound, using only the full induction hypothesis, not an assumed stronger
   induction.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We treat same-chain pairs and the pair of terminal
+  endpoints.
   If an endpoint is paired to a vertex in its own chain, its partner is at or
   before its predecessor. Hence, this half-bound applies on the entire domain.
   This also handles an empty chain. If both endpoints $u = n_1$ and $v = 2n$ are
   paired to each other, condition on their separate predecessors $(A,z),(B,w)$.
   The endpoint integral keeps the temporal argument $r-q+A-B$ in relative times.
+  Here $r=s_u-A$ and $q=s_v-B$ are relative times;
+  Lemma~\ref{L:translated-covariance-CS} applies with origins $(A,z),(B,w)$.
+  The symbol $q$ is reused as a vertex label only in the next step.
   The original stationary covariance Cauchy--Schwarz inequality bounds it by
   $N_{2,e}(G_u)N_{2,e}(G_v)$; translate each self pairing separately. Induction
   and adding $u,v$ to $Q_2$ prove the full bound. There is no origin factor or
   discarded predecessor-time offset.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We split the two distinct cross-pair
+  configurations.
   It remains that both endpoint pairs are cross and distinct. Let $a$ be the
   partner of $v$, $b$ the partner of $u$, and put $p = u-1$, $q = v-1$. Then $a
   < u$ and $b < v$. On $\{s_a\le s_q\}$ remove $v$ by the regional half-bound.
@@ -3249,6 +3345,10 @@ Thus, $|Q_2|$ is even and $|Q_0|+|Q_2|/2 = n$.
   at most $(P+P')/2 \le \max(P,P')$. This
   proves~\eqref{E:pairing-product-envelope} at the finite cap.
 
+
+
+  \medskip
+  \noindent\textit{Step 5.~}We remove the finite cap by positivity.
   Finally, increase $L$ to infinity. The diagram integrands and all norm factors
   increase to their declared values, by positivity and monotone convergence.
   There are only finitely many admissible products, so their maximum converges
@@ -3314,6 +3414,14 @@ empty chain.
 \end{lemma}
 
 \begin{proof}
+  We compute positive Laplace transforms and uniformly bound their masses
+  through Brownian occupation integrals. We then recover a unique finite
+  measure limit, exclude boundary mass, and use scaling to treat the
+  finite-horizon faces.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the positive Laplace transform.
   Orient each pair $e = \{j,h\}$ as $j < h$, and let $\eta_l(\boldsymbol\xi)$ be
   the coefficient of $z_l$ in $\sum_{e=\{j,h\}}\xi_e\cdot(x_j-x_h)$. Finite
   heat-weighted spectral measures and the finite damped Green masses justify
@@ -3333,6 +3441,10 @@ empty chain.
   width decreases. This is transform monotonicity, not pointwise monotonicity of
   the physical covariances.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound Brownian occupation moments uniformly in
+  the smoothing.
   We prove a uniform bound on their total masses. With $V = \mu(B_1)$, Fourier
   triangle and radial homogeneity give
   \begin{equation}\label{E:construction-heat-bound}
@@ -3362,6 +3474,10 @@ empty chain.
   possible orders. This proves the bound uniformly in $b$; the zeroth moment is
   one.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We bound the two-chain transform by finite
+  Brownian moments.
   Let $\epsilon_* = \min_l\epsilon_l$. The positive formula
   \eqref{E:spatial-positive-laplace} bounds $L_{\boldsymbol\epsilon,D}(0)$ by
   the transform with every vertex width equal to $\epsilon_*$. The identity of
@@ -3401,6 +3517,10 @@ empty chain.
     \le2^{-2k-2}\left(\int_0^\infty e^{-a/2}M_k(a)\ud a\right)^2<\infty.
   \]
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We identify the finite-measure limit and rule out
+  escape of mass.
   Monotone convergence in~\eqref{E:spatial-positive-laplace} yields finite
   limits $L_D(\boldsymbol\lambda)$ for all $\boldsymbol\lambda \ge 0$. The
   limiting integrand at zero is integrable, so dominated convergence shows
@@ -3419,10 +3539,14 @@ empty chain.
   vanishing tail mass. Every sequence of widths tending to zero has this same
   limit, so the convergence is joint and independent of their relative rates.
 
+
+  \medskip
+  \noindent\textit{Step 5.~}We exclude zero gaps and positive horizon faces.
   Sending just $\lambda_l \to \infty$ in the limiting positive integral
   \eqref{E:spatial-positive-laplace} gives zero by domination by its integrable
   zero-parameter integrand. On the measure side this limit is $\nu_D\{r_l=0\}$.
   Thus, every coordinate-zero face has zero mass.
+
 
   Heat and wave scaling give, for Borel sets,
   \[
@@ -3458,6 +3582,14 @@ remove the temporal widths too and construct each fixed-order term.
 \end{lemma}
 
 \begin{proof}
+  We first remove spatial smoothing at a fixed bounded temporal cutoff. A
+  marked-edge product estimate makes the temporal error uniformly small in all
+  spatial widths. This gives joint diagram limits, and the mixed second
+  moments then make each fixed-order random integral Cauchy in $L^2$.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We take the fixed-temporal-cutoff spatial limit.
   Use the gap variables and spatial measures of
   Lemma~\ref{L:spatial-wick-measures}. With $s_j = s_j(\boldsymbol r)$ define,
   on $\ell_1 < T_1,\ell_2 < T_2$,
@@ -3467,10 +3599,18 @@ remove the temporal widths too and construct each fixed-order term.
     \gamma^0_{\delta_j\vee\delta_h}(s_j-s_h)
     \ud\rho_{\boldsymbol\epsilon,D}.
   \]
+  Here $\gamma^0_\delta$ denotes the capped kernel $\kappa_\delta$
+  in~\eqref{E:pairing-source-covariance}; off the time diagonal,
+  $|r|^{-\alpha_0}-\gamma^0_\eta(r)=K_{1/\eta}(r)$ is its omitted Laplace
+  tail.
   At a common temporal width $\eta > 0$ the multiplier is bounded and
   continuous. Hence, the spatial limit exists at every $T_1,T_2 > 0$
   by~\eqref{E:spatial-wick-limit}.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound the temporal remainder uniformly in
+  spatial widths.
   We next bound removal of that temporal cutoff uniformly in all spatial widths.
   Write $F_{\boldsymbol\epsilon,0,D}$ for the integral with full factors
   $|s_j-s_h|^{-\alpha_0}$. It is finite at positive spatial widths: bound the
@@ -3506,6 +3646,10 @@ remove the temporal widths too and construct each fixed-order term.
   time-cube majorant just used give convergence. The bound survives both
   passages. Its right side tends to zero as $\eta\downarrow0$.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We squeeze all vertexwise cutoff choices to the
+  same diagram limit.
   Denote the fixed-$\eta$ spatial limit by $b_D(\eta)$. These numbers increase
   as $\eta$ decreases, and~\eqref{E:joint-temporal-tail} makes them Cauchy with
   a finite limit $b_D$. If every $\delta_j < \eta$, positivity gives
@@ -3520,6 +3664,10 @@ remove the temporal widths too and construct each fixed-order term.
   If one chain is empty its horizon contributes no variables, and the same proof
   applies.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We obtain the joint mean-square limit from the
+  mixed moments.
   At positive widths Wick's formula gives the mixed second moments of two copies
   of $Y_n$ as the finite sum of these diagrams, after reversing both terminal
   chains at their common horizon $t$. Evenness of the covariances absorbs the
@@ -3557,6 +3705,14 @@ $\theta_0 = 1$ such that, for $\theta \ge \theta_0$,
 \end{lemma}
 
 \begin{proof}
+  We first damp the two chains and apply the finite pairing envelope uniformly
+  in the regularizations. We then choose the damping parameter as a function
+  of the order and sum the resulting norm bounds.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the damped pairing estimate and remove
+  regularizations in order.
   On the two finite chains, the product of the exponential weights telescopes to
   $e^{-\theta(s_n+s_{2n})} \ge e^{-2\theta t}$. Extend the nonnegative integral
   to the two infinite time simplices and apply
@@ -3568,6 +3724,12 @@ $\theta_0 = 1$ such that, for $\theta \ge \theta_0$,
     \E X_n(t,x)^2\le P_n e^{2\theta t}C^n\theta^{-2n},
     \qquad\theta\ge\theta_0.
   \end{equation}
+  Equations (1.5) and (2.24) here belong
+  to~\cite{chen:author2026:time-dependency}*{(1.5), p.~3, and (2.24), p.~13}.
+  Under Hypothesis~\ref{H:homog}, the ball growth $\mu(B_r)=Vr^\alpha$ and
+  $\alpha+\alpha_0<2$ give the integrability in (1.5), while
+  Remark~\ref{R:source-case2-time-shift}(iii) directly proves finiteness of
+  the Gaussian-weighted measure.
   For the finite-spectral-measure hypothesis in
   Lemma~\ref{L:pairing-product-envelope}, first apply it with the spatially
   smoothed covariance and the temporal truncations of (2.24). The smoothed
@@ -3588,6 +3750,10 @@ $\theta_0 = 1$ such that, for $\theta \ge \theta_0$,
   needed. These limits transfer a uniform inequality; no pointwise delta
   covariance bound is being used.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We optimize a permitted damping parameter and sum
+  the order bounds.
   Choose $\theta = \theta_0+n/t$ in~\eqref{E:theta-envelope}. Since $(2n)! \le
   (2n)^{2n}$, we have $P_n n^{-2n} \le 2^n/n!$. Absorb $2^ne^{2n}$ in $C^n$ to
   obtain the first bound in~\eqref{E:crude-corrected}. Its square roots are
@@ -3628,6 +3794,15 @@ widths; Proposition~\ref{P:mild-construction} uses this bound.
 \end{lemma}
 
 \begin{proof}
+  We retain the separate width on every vertex while applying the edgewise
+  product envelope. Uniform edge norms then give the factorial bound, which
+  passes to the joint limit and supplies the weighted summability needed for
+  multiplication.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify all edge regularizations and bound
+  their norms.
   Wick's formula \cite{chen:author2026:time-dependency}*{(2.19), p.~12}, with
   the joint covariance (2.11), gives the square of $Y_n^{\boldsymbol a}$, with
   the widths copied to the second chain. Its edge covariances are
@@ -3645,6 +3820,10 @@ widths; Proposition~\ref{P:mild-construction} uses this bound.
   $e^{-(\epsilon_j+\epsilon_l)|\xi|^2/2}\mu(\ud\xi)$, which is finite by (1.5),
   and its temporal Laplace domain is $[0,(\delta_j\vee\delta_l)^{-1}]$.
 
+  Condition (1.5) is the source condition just identified in the preceding
+  proof; under Hypothesis~\ref{H:homog}, finiteness of each Gaussian-weighted
+  edge measure follows directly from
+  Remark~\ref{R:source-case2-time-shift}(iii).
   All edge norms obey~\eqref{E:crude-norms}, uniformly in their widths. For the
   first norm the Laplace--Fourier transform of the damped Green kernel is
   positive, and the spatial Gaussian multiplier and temporal truncation can only
@@ -3659,6 +3838,10 @@ widths; Proposition~\ref{P:mild-construction} uses this bound.
   or large-parameter formula in the source's Appendix. The constants are
   independent of all the vertex widths.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We count the norm factors and optimize the
+  damping.
   Since $\#Q_0 = \#Q_1$ and $\#Q_0+\#Q_2/2 = n$ for every admissible product,
   exactly as in~\eqref{E:theta-envelope} we obtain the following bound. Indeed,
   put $D = \max\{1,2C_0\}$. The norm constants contribute at most
@@ -3706,6 +3889,15 @@ Green regularization, with the random factor held fixed. The proof below
 establishes that limit for the product $uW_{\epsilon,\delta}$.
 
 \begin{proof}
+  We first control multiplication by one Gaussian variable on bounded
+  polynomial degrees. We then identify a partially regularized terminal
+  vertex, respecting the Green-first convention. Joint fixed-order convergence
+  and uniform order tails finally give the full mild integral.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the Gaussian polynomial multiplication
+  bound.
   Let $\mathscr{P}_{\le n}$ be the closed Gaussian polynomial space of total
   degree at most $n$, generated by all the coupled source fields. It includes
   all lower-degree contractions. The fixed-width terminal integrals lie in this
@@ -3728,6 +3920,14 @@ establishes that limit for the product $uW_{\epsilon,\delta}$.
   their limit with $HF$. This also proves the closedness of multiplication
   needed below. The argument allows $F$ to depend on $H$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We obtain measurable fields and spatial
+  mean-square continuity.
+  For $t>0$, divide every ordered time and spatial Green increment by $t$,
+  using $G_{tr}(t\,\ud z)=tG_r(\ud z)$; the time Jacobians and Green masses
+  contribute $t^{2n}$, leaving a fixed unit-time chain domain with $(t,x)$ in
+  the Gaussian arguments. At $t=0$ all positive-order terms vanish.
   Lemma~\ref{L:vertex-crude} proves absolute $L^2$ convergence of the defining
   series for $u$, locally uniformly in time in the displayed norm bounds. All
   fields are strongly measurable as $L^2(\Omega)$ vectors. At positive widths,
@@ -3749,6 +3949,10 @@ establishes that limit for the product $uW_{\epsilon,\delta}$.
   $X_n(s,\cdot)$, and by summability $u(s,\cdot)$, have continuous $L^2$
   representatives.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify the partially regularized terminal
+  integral.
   Fix an external width $a = (\epsilon,\delta) > 0$ and write $W_a =
   W_{\epsilon,\delta}$, with variance $V_a =
   \gamma^0_\delta(0)\gamma_{2\epsilon}(0) < \infty$. For $n \ge 1$ define the
@@ -3780,6 +3984,10 @@ establishes that limit for the product $uW_{\epsilon,\delta}$.
     \sup_{a>0}\|I_{n,a}(t,x)\|_2\le q_n(t).
   \end{equation}
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We retain the dimension-three Green-limit
+  convention.
   We spell out the dimension-three convention in these steps. The product
   $W_a(s,y)X_{n-1}(s,y)$ is $L^2$-continuous in $y$.
   Apply~\eqref{E:occupied-multiplication} first to
@@ -3798,6 +4006,10 @@ establishes that limit for the product $uW_{\epsilon,\delta}$.
   widths. Thus,~\eqref{E:partial-vertex-limit} does not interchange the source's
   Green and noise limits.
 
+
+  \medskip
+  \noindent\textit{Step 5.~}We remove the external width using joint
+  convergence.
   For each fixed $n$, the joint fixed-order convergence in
   Lemma~\ref{L:joint-fixed-order} implies
   \begin{equation}\label{E:external-vertex-limit}
@@ -3810,6 +4022,11 @@ establishes that limit for the product $uW_{\epsilon,\delta}$.
   This proves the asserted limit with arbitrary relative rates; it does not
   assume a partial-limit theorem.
 
+
+
+  \medskip
+  \noindent\textit{Step 6.~}We sum the terminal integrals and remove the final
+  uniform tail.
   It remains to identify the full product integral, rather than only its
   finite-order terms. At fixed $a$, \eqref{E:occupied-multiplication}
   and~\eqref{E:vertex-summability} imply
@@ -3876,6 +4093,13 @@ scaling in place of~\eqref{E:crude-norms}.
 \end{proposition}
 
 \begin{proof}
+  We use homogeneous norm scaling to bound each total order, then estimate the
+  resulting numerical series from above and below. The lower estimate concerns
+  that majorant only.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the homogeneous pairing majorant.
   The wave kernel scales as $G(cs,c\ud y) = cG(s,\ud y)$, and the covariance has
   degree $-\alpha$. Changing all time and spatial variables by $\theta^{-1}$ in
   the norms yields
@@ -3901,6 +4125,10 @@ scaling in place of~\eqref{E:crude-norms}.
   bound (using $e^{2\theta t}$ is harmless). Proposition~\ref{P:mixed} now gives
   the majorant.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We determine the growth scale of the numerical
+  series.
   The infimum in~\eqref{E:B-envelope} is attained at $\theta = \beta k/(2t)$ and
   equals $e^{\beta k}(2t/(\beta k))^{\beta k}$. Put $q = \beta-1 > 1$. The
   elementary estimates
@@ -4015,6 +4243,13 @@ p_{2\epsilon}*\Gamma$.
 \end{lemma}
 
 \begin{proof}
+  We first compare translated heat transforms and integrate them to obtain the
+  resolvent bound. For the trace bound, positivity removes the Fourier phase
+  and radial integration reduces the calculation to a spherical convolution.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound the shifted resolvent.
   Homogeneity and Fourier uniqueness give $\mu(B_r) = Vr^\alpha$. In particular,
   there is no origin atom. For $s > 0$, Schwartz Fourier pairing yields
   \[
@@ -4033,6 +4268,10 @@ p_{2\epsilon}*\Gamma$.
   \]
   This proves~\eqref{E:phase-resolvent}.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound the regularized trace using the positive
+  spherical integral.
   Since $\mu$ is tempered, its Gaussian weighting is finite. Fourier Fubini
   therefore gives the identity for $T_\epsilon$. The measure
   $\Gamma_\epsilon(x)G_a(\ud x)$ is finite and nonnegative, whence
@@ -4114,6 +4353,13 @@ Gaussian-polynomial Bochner integrals in the indicated $L^2$ phase space.
 \end{proposition}
 
 \begin{proof}
+  We estimate the first random phase term and the second-order mean
+  separately. We then retain both contributions to the variance coefficient
+  and insert the common phase scale.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We estimate the first random phase term.
   We use the unnormalized spatial Fourier transform and Plancherel measure
   $(2\pi)^{-3}\ud\eta$. At fixed positive smoothing, Gaussian second and fourth
   moments make~\eqref{E:phase-duhamel} integrable: $G_t$ has finite positive
@@ -4158,6 +4404,9 @@ Gaussian-polynomial Bochner integrals in the indicated $L^2$ phase space.
   Now $\mu_\epsilon \le \mu$ and Lemma~\ref{L:phase-contractions}
   give~\eqref{E:phase-born}.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We estimate the contracted second-order mean.
   The contraction inside the mean of $Z_2$ is the convolution operator with
   kernel $G_{s-r}(\ud x)\Gamma_\epsilon(x)$. Indeed, this follows directly from
   $\E[W_\epsilon(x)W_\epsilon(y)] = \Gamma_\epsilon(x-y)$ in the two Duhamel
@@ -4173,6 +4422,10 @@ Gaussian-polynomial Bochner integrals in the indicated $L^2$ phase space.
   \]
   prove~\eqref{E:phase-mean}.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We combine both terms in the phase variance
+  coefficient.
   Finally, the free phase obeys $\|Z_0(h)\|_\lambda \le e^{\lambda h/2}N$. To
   see this, for Schwartz free data differentiate its squared norm. The $-\Delta$
   terms cancel, leaving $2\lambda^2\operatorname{Re}\langle
@@ -4240,6 +4493,15 @@ below are bounded; no unbounded-operator extension is assumed.
 \end{lemma}
 
 \begin{proof}
+  We first compare the perturbed and reference square roots through
+  resolvents. We then enclose the numerical range and bound the three scalar
+  functions used in the phase matrix. The bounded-operator theorem applies to
+  those functions, after which the ordered root factors give the phase
+  estimate.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain inverse and square-root comparisons.
   Set $\delta = \delta_a$ and $L_\lambda = L+\lambda^2$. For $\kappa =
   (\lambda^2+t)^{1/2}$,
   \[
@@ -4300,6 +4562,10 @@ below are bounded; no unbounded-operator extension is assumed.
   have norm at most two. This is a quantitative comparison at the bounded
   cutoffs, not an assumed square-root domain identity.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We enclose the numerical range and its square
+  roots.
   We next control the numerical range. For $\|u\| = 1$ put $s = \|A_0^{1/2}u\|$.
   Optimizing~\eqref{E:abstract-sandwich} at $\rho = s$ gives $|\langle
   Bu,u\rangle| \le 2ds^a$. If $s = 0$, the same conclusion follows by letting
@@ -4322,9 +4588,16 @@ below are bounded; no unbounded-operator extension is assumed.
     \le\frac13\lambda^2(x+\lambda^2),\qquad
     x\ge-\lambda^2/4.
   \]
+  Squaring the positive quantity $x+2\lambda^2$ reduces its comparison with
+  $|w|$ to $y^2\le4\lambda^2(x+\lambda^2)$, while $|\operatorname{Im}\sqrt
+  w|^2=(|w|-x)/2$.
   Hence, $|w| \le x+2\lambda^2$, and either square root of $w$ has
   $|\operatorname{Im}\sqrt w| \le \lambda$.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We apply the numerical-range theorem to
+  holomorphic scalar functions.
   The scalar functions
   \[
     C_h(w)=\cos(h\sqrt w),\qquad
@@ -4360,6 +4633,10 @@ below are bounded; no unbounded-operator extension is assumed.
   imported~\eqref{E:cp-input} gives bounds $3e^{\lambda h}$, $6(1+\lambda
   h)e^{\lambda h}$ and $6e^{\lambda h}$ for these three operator functions.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We assemble the phase blocks in their stated
+  noncommuting order.
   Under the isometry $(u,v)\mapsto(u,A_\lambda^{-1/2}v)$, the four phase blocks
   are
   \[
@@ -4420,6 +4697,13 @@ occupation spaces in this argument.
 \end{lemma}
 
 \begin{proof}
+  We first estimate the column of sandwiched spatial multiplication operators.
+  We then compose it with the Gaussian creation row, retain the annihilation
+  adjoint, and truncate by total degree.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound the spatial covariance column.
   Choose an orthonormal basis of the real isonormal space, which is separable,
   and write $e_i(x) = \E[W_\epsilon(x)g_i]$. Then $\sum_i e_i(x)^2 =
   \Gamma_\epsilon(0) = :v_\epsilon$, and $|e_i(x)| \le \sqrt{v_\epsilon}$. Thus,
@@ -4443,6 +4727,12 @@ occupation spaces in this argument.
   $(S_bH_iS_b)^2 \le S_bH_i^2S_b$ on its range. Both row and column variances
   are the same, since these operators are selfadjoint.
 
+
+  The compression difference $S_bH_i^2S_b-(S_bH_iS_b)^2=S_bH_i(I-S_b)H_iS_b$
+  is positive, so summing preserves the variance bound.
+  \medskip
+  \noindent\textit{Step 2.~}We use the Hermite creation and annihilation
+  bounds.
   For completeness, use normalized Hermite polynomials, so multiplication by
   $g_i$ is $a_i^*+a_i$, with $g_i h_k =
   \sqrt{k_i+1}\,h_{k+e_i}+\sqrt{k_i}\,h_{k-e_i}$. On degree $k$, the row map
@@ -4545,6 +4835,14 @@ and~\ref{L:finite-word-cutoff} to bound every static Duhamel order.
 \end{proposition}
 
 \begin{proof}
+  We estimate the coupling coefficients at finite cutoffs, choose the phase
+  scale by order, and then remove spatial and Gaussian cutoffs at fixed
+  smoothing. Finally, we sum the resulting factorial estimates.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We apply the complex phase bound at bounded
+  cutoffs.
   If $R_\alpha = 0$, spectral homogeneity gives $\mu = 0$, and every
   positive-order term is zero. Assume $R_\alpha > 0$. First work at finite
   Gaussian cutoff $m$, degree cutoff $N$ and spatial band $b$, with initial
@@ -4569,6 +4867,10 @@ and~\ref{L:finite-word-cutoff} to bound every static Duhamel order.
   including self-contractions. Dominated time integration preserves this
   identity.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We optimize the phase scale and convert powers to
+  factorials.
   Choose $\lambda = n/h$. For any phase $z$, $\|z\|_{1/h} \le n\|z\|_{n/h}$ and
   $\|(f,g)\|_{n/h} \le \|(f,g)\|_{1/h}$. Also $d_n \le
   2\sqrt{2n}\sqrt{R_\alpha}$. The preceding bound is therefore at most
@@ -4580,6 +4882,9 @@ and~\ref{L:finite-word-cutoff} to bound every static Duhamel order.
   Since $100n \le 200^n$ and $n! \le n^n$, this gives
   \eqref{E:all-static-phase-orders} at the cutoffs.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We remove the cutoffs for each fixed word.
   We justify removal of those cutoffs at fixed $\epsilon$ and $n$. On Gaussian
   degrees at most $N$, the unweighted field multiplication has norm at most
   $2\sqrt{N+1}\sqrt{v_\epsilon}$, uniformly in $m$, by the same
@@ -4606,6 +4911,9 @@ and~\ref{L:finite-word-cutoff} to bound every static Duhamel order.
   precisely $Z_n^\epsilon$, so the estimate survives both limits. We assert no
   zero-smoothing phase limit in this argument.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We sum all regularized static orders.
   Finally, put $\beta = (3-\alpha)/2 \in (1/2,3/2)$ and $x =
   A_\alpha|\sigma|\sqrt{R_\alpha}h^{(4-\alpha)/2}$. The elementary series
   satisfies
@@ -4674,6 +4982,13 @@ and~\ref{L:finite-word-cutoff} to bound every static Duhamel order.
 \end{corollary}
 
 \begin{proof}
+  We keep the complete first variance coefficient separate from the
+  higher-order series. We then check dyadic summability and use independence
+  only for successive blocks on one finite partition.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We retain both first-variance contributions.
   Write $N = \|(f,g)\|_\lambda$ and $Y_n = \mathcal{S}_0(-h)Z_n^\epsilon(h)$.
   The free estimate from Section~\ref{S:static-phase} holds for both time
   directions, since its differentiated energy was bounded in absolute value.
@@ -4684,6 +4999,9 @@ and~\ref{L:finite-word-cutoff} to bound every static Duhamel order.
   by $e$ times~\eqref{E:phase-born}, and its second-order mean cross term by
   $2N\sqrt e$ times~\eqref{E:phase-mean}.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound the higher-order interaction series.
   For $n \ge 1$, the norm comparisons when $\lambda h \le 1$
   and~\eqref{E:all-static-phase-orders} give
   \[
@@ -4712,6 +5030,10 @@ and~\ref{L:finite-word-cutoff} to bound every static Duhamel order.
   x^{1/\gamma}}$. Keeping the sharper first coefficient separately proves
   \eqref{E:static-interaction}.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We sum the dyadic budgets and estimate the
+  independent-block product.
   Finally, set $\beta = 4-\alpha-\alpha_0 > 2$. After multiplication by $T/h_j$,
   the two first-coefficient terms in~\eqref{E:static-block-series} are constant
   multiples of
@@ -4802,6 +5124,15 @@ admissible $d$.
 \end{lemma}
 
 \begin{proof}
+  We derive the spatial covariance column estimate in every admissible
+  dimension. The vacuum insertion uses that column directly, while occupied
+  Hermite degrees require the creation and annihilation estimate on the
+  sandwiched operators.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We compare translated resolvents using physical
+  covariance positivity.
   Fourier uniqueness gives $\mu(B_r) = r^\alpha\mu(B_1)$. The Gaussian
   comparison in Lemma~\ref{L:phase-contractions} uses no dimension-specific
   identity:
@@ -4819,6 +5150,10 @@ admissible $d$.
   \]
   No exclusion of a physical origin atom is used.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We obtain the column bound and the new-color
+  insertion estimate.
   Gaussian isometry and unnormalized spatial Plancherel give
   \[
     \sum_m\|A_\rho^{-1/2}M_{e_m}f\|_2^2
@@ -4833,6 +5168,10 @@ admissible $d$.
   $\sum_mg_m(0,M_{e_m}u)$ has squared norm given by the left side
   of~\eqref{E:interval-column}, and its input is independent of this color.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We obtain the finite-degree bound and retain other
+  Hilbert factors.
   Substituting $A_\rho^{-1/2}f$ gives
   \[
     \sum_m(A_\rho^{-1/2}M_{e_m}A_\rho^{-1/2})^2
@@ -4872,6 +5211,14 @@ admissible $d$.
 \end{lemma}
 
 \begin{proof}
+  We repeat the resolvent and numerical-range estimates for a general bounded
+  complex potential, retaining adjoint comparisons. We then count the
+  phase-norm losses at jumps of the active interval set.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the four ordered root comparisons
+  without selfadjointness.
   The adjoint has the identical sandwich bound, since
   \[
     A_\rho^{-1/2}V^*A_\rho^{-1/2}
@@ -4900,6 +5247,10 @@ admissible $d$.
   $Q^{-1} = L_\Lambda^{1/2}A_\Lambda^{-1/2}$, these are all four ordered
   comparisons in~\eqref{E:phase-root-comparisons}, each at most two.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We retain the numerical-range and phase-block
+  bounds.
   For a unit vector $u$ put $s = \|A_0^{1/2}u\|$ and $\langle Lu,u\rangle =
   x+iy$. The form estimate at $\rho = \Lambda$ and, separately, at $\rho = s$
   gives
@@ -4918,6 +5269,10 @@ admissible $d$.
   sum is at most $100e^{2\Lambda h}$. This uses neither selfadjointness of $V$
   nor commutation of $A_\Lambda$ with $L$.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We charge each norm loss only when an interval
+  ends.
   For a common phase vector,
   \[
     \|z\|_{\rho_{\rm new}}
@@ -4958,6 +5313,15 @@ order $k$ splits among the interval fields.
 \end{lemma}
 
 \begin{proof}
+  We evaluate the positive generating product at one order-dependent radius.
+  We separate the third singleton term, then estimate the coarse and fine
+  interval indices. Positivity converts the product bound back into a
+  coefficient bound.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We separate and bound the third singleton
+  contribution.
   Evaluate the positive product at $z = \theta k^\nu$, with $\theta = 1/4$. Put
   $P_i = \theta k^\nu i^{-\beta}$ and $Q_i = \theta k i^{-p}$. The third
   singleton term is $Q_i$ because $\nu+\alpha-2 = 1$. The inequality $1+A+B \le
@@ -4967,9 +5331,18 @@ order $k$ splits among the interval fields.
     \le\int_0^\infty\log(1+A x^{-p})\ud x
     =A^{1/p}\int_0^\infty\log(1+x^{-p})\ud x.
   \]
+  Near zero, $\log(1+x^{-p})$ is bounded by a constant plus $p|\log x|$; at
+  infinity it is at most $x^{-p}$, which is integrable for $p>1$.
   The last integral is finite. Hence, their logarithmic contribution is at most
   $Ck^{1/p} \le Ck$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We estimate the coarse factors by the factorial
+  series.
+  For $x\ge0$, the sum of the $\nu$th powers of the nonnegative terms
+  $x^{l/\nu}/l!$ is at most the $\nu$th power of their sum, and that sum is
+  $e^{x^{1/\nu}}$.
   If $i \le k$, the remaining factor is at most $S_\nu(4P_i) =
   \sum_{l\ge0}(4P_i)^l/(l!)^\nu$: its singleton is at most $2P_i$, and
   $(1+li/k)^2 \le (1+l)^2 \le 4^l$. Since $\nu > 1$, $S_\nu(x) \le e^{\nu
@@ -4981,11 +5354,19 @@ order $k$ splits among the interval fields.
   \]
   because $\beta/\nu > 1$.
 
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We sum the fine-index tails and extract the
+  coefficient.
   If $i > k$, then $P_i \le \theta$. The remaining singleton tail is at most
   \[
     \theta\left(\frac1{\beta-1}+\frac1{\beta-2}\right)
     k^{\nu+1-\beta}=Ck^{\alpha_0}.
   \]
+  For $l\ge2$, $0\le P\le1/4$ and $y\ge0$, the bounds $(1+ly)^2\le2l^2(1+y^2)$
+  and $P^l\le P^2 4^{-(l-2)}$ leave a summable geometric series with a
+  quadratic factor, independent of $P,y$.
   Also, uniformly for $0 \le P \le 1/4$ and $y \ge 0$,
   $\sum_{l\ge2}P^l(1+ly)^2/(l!)^\nu \le CP^2(1+y^2)$. Summing this bound gives
   \[
@@ -5055,6 +5436,16 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
 \end{lemma}
 
 \begin{proof}
+  We estimate each vector coefficient on bounded cutoffs before pairing the
+  two copies. We bound background segments on one common partition, count
+  every change of phase norm once, and insert each cross color only from its
+  vacuum. A cube integral and normalized vector Cauchy formula then give the
+  coefficient with no extra permutation factor.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We set the active colors and background amplitude
+  radii.
   We give a bound for each vector coefficient before taking their inner product.
   Every operator below acts on the finite Gaussian-mode, Hermite and
   spatial-band Hilbert space in the statement. In particular, it is bounded. Its
@@ -5082,6 +5473,10 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   Colors in $\mathcal{C}$ have degree one on this copy. Put $m = |\mathcal{C}|$.
   Thus, there are at most $k$ background and cross colors altogether.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound background evolution on the common
+  chronological partition.
   \emph{Background segments and the common partition.} Fix $|z_i| = \varrho_i$
   for $i \in \mathcal{A}$. With the cross amplitudes zero, the potential is
   $V_z(t) = \sum_{i\in\mathcal{A}}z_i\sigma_i\mathbf1_{I_i^T}(t)B_i$. Write
@@ -5128,6 +5523,9 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   T+\sum_{i\in\mathcal{A}}\omega_i(b_i-a_i) \le k+\sum_{i\in\mathcal{A}}k_i \le
   2k$. Insertion times refine a partition; they do not repeat this integral.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We count the phase-metric changes.
   \emph{Every identity between phase norms.} Put $\Lambda_0 = \Lambda_{M+1} =
   \lambda$. At $\tau_j$ let $\mathscr{I}_j$ be the identity from
   $\mathcal{H}_{\Lambda_j}$ to $\mathcal{H}_{\Lambda_{j+1}}$, for $0 \le j \le
@@ -5160,6 +5558,10 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
 
   \input{notes/figures/interval-end-metrics}
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We estimate every cross-color insertion on its
+  actual tensor subspace.
   \emph{The cross-color subspaces and the word norm.} Let $\mathscr{G}_i^{(0)}$
   be the vacuum of color $i$ and $\mathscr{G}_i^{(1)}$ its first Gaussian
   degree. For $S \subset \mathcal{C}$, use the tensor subspace
@@ -5248,6 +5650,10 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   The background norm bound is on the joint Gaussian Hilbert space; it is not
   obtained by conditioning on successive fields.
 
+
+  \medskip
+  \noindent\textit{Step 5.~}We integrate over the insertion cube and extract
+  vector coefficients.
   \emph{The insertion cube and vector Cauchy formula.} Give the cross colors
   amplitudes $y_i$ and define the vector
   \[
@@ -5304,6 +5710,10 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   the second copy using $\mathcal{A}_q,q_i$. No holomorphic formula is applied
   to a squared norm.
 
+
+  \medskip
+  \noindent\textit{Step 6.~}We pair the two coefficients and account for all
+  constants.
   \emph{The inner product and all constants.} Since $\lambda = k/T$ and $k \ge
   1$,
   \[
@@ -5376,6 +5786,16 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
 \end{proposition}
 
 \begin{proof}
+  We first construct the ordinary coefficient series at fixed smoothing and
+  interval family. We retain only even total degree in each color and use
+  exact finite-word cutoffs. The fixed-split estimate and sorted interval
+  lengths reduce the uniform sum to the inventory product, after which
+  separate cutoff limits identify and sum the full series.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We set up the bounded cutoffs and entire vector
+  series.
   Zero noise is trivial; omit any zero $\sigma_i$. Enlarge the interval-length
   constant $L$ to $\max\{1,L\}$ if necessary. The hypotheses remain true and the
   final constant may depend on $L$, so throughout this proof we may assume $L
@@ -5435,6 +5855,10 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   identities at fixed family and smoothing; it does not enter the uniform
   coefficient estimate below.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the energy coefficient and its color
+  splits.
   Set $Q_{\boldsymbol r,\boldsymbol q} = \langle U_{\boldsymbol
   r}v,U_{\boldsymbol q}v \rangle_{\mathcal{H}_{1/T}}$. Both vectors use the same
   Gaussian fields. Independence is between distinct colors, not between the two
@@ -5452,6 +5876,10 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   at most $k$ active colors. For fixed $\boldsymbol k$, the number of splits is
   $\prod_i(2k_i+1) \le 3^k$.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We retain the selected coefficients exactly at
+  finite Hermite degrees.
   For this fixed $\boldsymbol k$, truncate the Hermite degree of color $i$ at
   $N_i = 2k_i$. A word contributing to $U_{\boldsymbol r}$ has $r_i \le 2k_i$
   insertions of color $i$, and the other copy has $q_i \le 2k_i$.
@@ -5461,6 +5889,10 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   finite word sums preserve the equality. Creation followed by annihilation is
   retained; there is no Hermite-degree limit in this coefficient calculation.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We convert the split estimate into the interval
+  inventory weights.
   For the uniform coefficient estimate put $\lambda = k/T$. Apply
   Lemma~\ref{L:fixed-split} to each selected coefficient, retaining the original
   sorted interval labels in the final sum. Its factor $\ell_i$ is one for a
@@ -5501,6 +5933,10 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   $C^kR_\alpha^kT^{\beta k}$, leaving $v_i$ at $k_i = 1$ and $b_{i,l}$ at $k_i =
   l \ge 2$ from Lemma~\ref{L:inventory-product}.
 
+
+  \medskip
+  \noindent\textit{Step 5.~}We sum ordinary coefficients without a multinomial
+  factor.
   There is no further multinomial factor: for nonnegative weights $w_{i,0} = 1$,
   ordinary multiplication of power series gives exactly
   \[
@@ -5511,6 +5947,15 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   two singleton alternatives together in $v_i$. Lemma~\ref{L:inventory-product}
   now proves \eqref{E:interval-coefficient-bound} at the finite cutoffs.
 
+
+  \medskip
+  \noindent\textit{Step 6.~}We remove cutoffs at fixed coefficients and sum
+  the uniform bound.
+  The closed operator used below is multiplication by the measurable smoothed
+  Gaussian field on its natural Gaussian--spatial $L^2$ domain. Mode sums
+  agree with this multiplication on finite-coordinate inputs in the limit;
+  closedness then identifies the graph limit as those inputs are approximated
+  in $L^2$.
   \emph{Identification and summation.} Keep positive smoothing, finite interval
   family and a fixed coefficient. The finite-degree multiplication bound used
   in~\eqref{E:interval-entire-majorant} is uniform in mode and band cutoffs. On
@@ -5611,6 +6056,15 @@ tuple. This definition introduces no kernel symmetrization.
 \end{lemma}
 
 \begin{proof}
+  We establish the finite chain mass and Gaussian product integrability first.
+  We then derive the labelled Wick formula and check symmetrization and Green
+  smoothing. Positivity compares finite moments, while the explicit ratio test
+  sums every fixed regularized series.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We prove Bochner integrability of each terminal
+  chain.
   The mass of $G_h$ is $h$. If $M_n(T)$ is the total mass of
   $\mathsf{g}_n^{T,x}$, integration at the last vertex gives $M_0 = 1$ and
   $M_n(T) = \int_0^T(T-s)M_{n-1}(s)\ud s$. Induction therefore yields $M_n(T) =
@@ -5625,6 +6079,9 @@ tuple. This definition introduces no kernel symmetrization.
   stated pieces. The finite kernel mass and the displayed bound prove Bochner
   integrability and~\eqref{E:terminal-term-majorant}.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We derive the coefficient-one Wick formula.
   Fubini now passes expectation through the product of the two finite kernel
   measures. For the $m+n$ Gaussian variables at their labelled vertices,
   differentiate
@@ -5640,6 +6097,10 @@ tuple. This definition introduces no kernel symmetrization.
   gives~\eqref{E:terminal-wick-formula} with precisely the domains and
   coefficients in~\eqref{E:terminal-pairing-integral}.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We retain the ordered convention and the
+  Green-width limit.
   Symmetrizing a chain measure does not change its stochastic integral: the
   product of its $n$ scalar field values is invariant under relabeling. Thus,
   averaging the $n!$ pushforwards of $\mathsf{g}_n^{T,x}$ with coefficient
@@ -5656,6 +6117,10 @@ tuple. This definition introduces no kernel symmetrization.
   widths. It gives $L^2$ convergence to the Bochner integral above, exactly the
   fixed-noise Green convention used in the source.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We compare positive diagrams and sum the
+  regularized orders.
   If $\mathcal{K} \ge 0$, positivity of the Green measures makes each covariance
   product nonnegative. Comparing them proves the stated finite-moment
   monotonicity, including self-pairs and unequal chains. Finally, the ratio of
@@ -5745,6 +6210,16 @@ the time intervals below.
 \end{theorem}
 
 \begin{proof}
+  We dominate the temporal covariance by finite-depth shifted interval models
+  with a controlled length inventory. We transfer their phase bound to
+  constant data on a fixed observation ball, compare the positive terminal
+  Wick integrals, and remove noise regularization using a separate uniform
+  series-tail bound. All identifications precede the large-time conclusion.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the dyadic temporal majorant and its
+  length inventory.
   Zero noise is trivial. Choose $H_0$ with $6T \le H_0 < 12T$. At lengths $h_j =
   H_0 2^{-j}$, use the three grids with endpoints $h_j(n+(-1)^j t)$, $n \in
   \mathbb{Z}$, $t = 0,1/3,2/3$. They are nested: the difference between the
@@ -5777,6 +6252,15 @@ the time intervals below.
   Proposition~\ref{P:interval-coefficients}.
   Proposition~\ref{P:interval-coefficients} applies uniformly in $J,\epsilon$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We localize constant initial data on the full
+  backward cone.
+  For the kept intervals, $W_{J,\epsilon}(s,y)=\sum_{I\in\mathcal
+  F_J}\sigma_I1_I(s)W_I^\epsilon(y)$, and $u_{J,\epsilon}$ is the series of
+  its terminal terms from Lemma~\ref{L:terminal-wick}. For the compact data
+  $(f_T,0)$ chosen below, $u_{f_T,J,\epsilon}$ denotes the position component
+  of the phase evolution in Proposition~\ref{P:interval-coefficients}.
   To pass from phase data to constant initial data, choose $f_T \in C_c^\infty$
   with $0 \le f_T \le 1$, equal to one on $B_{T+1}$ and supported in $B_{T+2}$,
   and set the velocity to zero. For $|y|+s < T+1$, $G_s*f_T(y) = s$, so
@@ -5802,6 +6286,14 @@ the time intervals below.
     \le e\,|B_{T+2}|\exp\{C R_\alpha^{1/\nu}T^{\beta/\nu}\}.
   \]
 
+
+  The final inequality above is~\eqref{E:interval-phase-bound} with
+  $v=(f_T,0)$: the position $L^2$ norm is at most its phase norm, and
+  $\|(f_T,0)\|_{1/T}^2=\|f_T\|_2^2\le|B_{T+2}|$ because the velocity is zero
+  and $0\le f_T\le1$.
+  \medskip
+  \noindent\textit{Step 3.~}We identify the finite interval-model Wick sums
+  before comparison.
   We now identify the interval-model Wick sums before comparing them. Its
   centered Gaussian noise has covariance
   \[
@@ -5824,6 +6316,10 @@ the time intervals below.
   sum is at most the full moment, even though samplewise partial sums need not
   increase.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We compare the source model through positive
+  terminal diagrams.
   From the current author version
   \cite{chen:author2026:time-dependency}*{(2.23)--(2.24), p.~13}, the common
   noise regularization has covariance
@@ -5866,6 +6362,11 @@ the time intervals below.
   comparison of Wick integrals, not covariance order for arbitrary initial
   phases or a coupling of random solutions.
 
+
+
+  \medskip
+  \noindent\textit{Step 5.~}We obtain a scaled source bound that controls all
+  order tails.
   The same finite-model argument works after multiplying the source noise by any
   real amplitude $a > 0$. This replaces $\Gamma$ by $a^2\Gamma$ and $R_\alpha$
   by $a^2R_\alpha$, without changing its homogeneity degree or any
@@ -5882,6 +6383,10 @@ the time intervals below.
   regularization by that lemma, not by a theorem about the original unsmoothed
   solution.
 
+
+  \medskip
+  \noindent\textit{Step 6.~}We identify fixed orders and remove the full
+  source regularization.
   Lemma~\ref{L:joint-fixed-order} supplies the fixed-order construction: each
   $Y_n^{\epsilon,\delta}$ converges in $L^2$ to $X_n = S_n(g_n)$ as
   $\epsilon,\delta\downarrow0$, with arbitrary relative rates. The bounded-noise
@@ -5907,6 +6412,11 @@ the time intervals below.
   the fixed covariance; they do not enter~\eqref{E:full-upper-bound}. No
   uniqueness assertion is made.
 
+
+
+  \medskip
+  \noindent\textit{Step 7.~}We record the distinct cutoff limits and the
+  parameter-only constant.
   \emph{Cutoff dependence and the order of limits.} The preceding argument uses
   the following distinct statements.
   \begin{enumerate}[(i)]
@@ -6181,6 +6691,14 @@ these nonnegative integrals.
 \end{proposition}
 
 \begin{proof}
+  We identify the two free spatial positions for each pairing and compute the
+  allowed area. We then exchange the chains and collect the time and space
+  scaling factors.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We compute the spatial factors for each chain
+  split.
   In each pairing identify its first pair's spatial positions with $x$ and the
   other pair's positions with $y$. The two delta covariances have unit mass, so
   spatial integration leaves $1/16$ times the area allowed by the four Green
@@ -6206,6 +6724,9 @@ these nonnegative integrals.
   Integrability of the time weights follows from the disjoint-pair bound used in
   Lemma~\ref{L:static-four} below.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We collect the multiplicities and the scaling.
   Exchanging chains gives the $(4,0)$ and $(3,1)$ sums without changing the
   covariance factors. This proves~\eqref{E:total-four}. Finally, scaling all
   four time variables by $t$ gives $t^4$ from their measure, $t^2$ from the area
@@ -6232,6 +6753,14 @@ these nonnegative integrals.
 \end{lemma}
 
 \begin{proof}
+  We first justify the static limit by an integrable time-cube bound. We then
+  integrate time slacks at fixed spatial positions and evaluate the remaining
+  polynomial sector integrals.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We pass to the static coefficient by dominated
+  convergence.
   On the unit-time domain all original time coordinates belong to $[0,1]$. The
   spatial factor is bounded by $1/4$, since all positions lie in $[-1,1]$ and
   the two free positions have area at most four. Fix $0 < \bar{a} < 1$. For $0
@@ -6244,6 +6773,9 @@ these nonnegative integrals.
   because the two pairs use disjoint labels. Dominated convergence permits
   setting $\alpha_0 = 0$ in every row.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We reduce the coefficients to spatial sectors.
   We evaluate the resulting integrals by an independent spatial calculation. For
   fixed free positions $x,y$, let $L_1,L_2$ be the sums of absolute spatial
   increments along the two chains, starting at zero. Integrating their time
@@ -6265,6 +6797,9 @@ these nonnegative integrals.
       (2,2)&(|x|,|y|)&(|x|+w,|x|+w)&(|x|+w,|y|+w)
     \end{array}
   \]
+
+  \medskip
+  \noindent\textit{Step 3.~}We evaluate and sum the sector contributions.
   Divide the plane into $0 \le x \le y$, $0 \le y \le x$, $x \ge 0 \ge y$ and
   their reflected sectors. Use $(x,y) = (u,u+v),(u+v,u),(u,-v)$, respectively,
   where $u,v \ge 0$. Each map has determinant of absolute value one. In these
@@ -6357,6 +6892,13 @@ these nonnegative integrals.
 \end{proposition}
 
 \begin{proof}
+  We compute the two order-two coefficients directly. For order four, we
+  express Green increments through uniform variables and check finiteness
+  before using the resulting unit-domain formula.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We evaluate the order-two terms.
   Direct integration on the two intervals gives
   \[
     \int_{\R^2}G(s,y)G(r,z)c_\alpha|y-z|^{-\alpha}\ud y\ud z
@@ -6370,6 +6912,10 @@ these nonnegative integrals.
   $c_\alpha(1-\alpha)^{-1}\int_{r+v<t}rv^{1-\alpha-\alpha_0}\ud r\ud v$, which
   gives its first formula by two elementary integrations.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the four-increment formula and its
+  scaling.
   For order four set each spatial increment equal to $h_lU_l$. The Green factor
   $\frac12\mathbf1_{[-h_l,h_l]}$ is $h_l$ times the law of $h_lU_l$. The map
   from increments to vertex positions is triangular within each chain with
@@ -6380,6 +6926,10 @@ these nonnegative integrals.
   and space by $t$ contributes $t^8$ from the eight integrations and
   $t^{-2\alpha-2\alpha_0}$ from the two covariance factors, giving $t^{2\beta}$.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We check integrability on the enlarged time and
+  space cubes.
   Finiteness can be checked without a numerical argument. On the unit-time
   domain all vertex positions lie in $[-1,1]$. Enlarge the time domain to
   $[0,1]^4$ and the spatial domain to $[-1,1]^4$, and bound the Green indicators
@@ -6549,6 +7099,13 @@ This is an ordinary nonnegative integral; no pointwise delta value is used.
 \end{lemma}
 
 \begin{proof}
+  We first obtain uniform convolution bounds. Descending label integration
+  then removes each closing covariance and opening mass in order, and an
+  increment maximum gives the final spatial bound.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound the Riesz and white convolutions.
   We first record the convolution bounds. For $0 < \alpha < 1$, the
   integral of the even decreasing function $|y|^{-\alpha}$ over an
   interval of fixed length is maximal when the interval is centered
@@ -6567,6 +7124,10 @@ This is an ordinary nonnegative integral; no pointwise delta value is used.
   \]
   Both estimates are uniform in $\epsilon > 0$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We integrate all increments in descending label
+  order.
   Now integrate \emph{all} spatial increments in descending label order
   $2k,2k-1,\ldots,1$. Before processing label $l$, the remaining covariance
   factors are exactly those pairs whose closing labels are at most $l$; the
@@ -6583,6 +7144,9 @@ This is an ordinary nonnegative integral; no pointwise delta value is used.
   justify each step. There are $k$ labels of each type,
   proving~\eqref{E:d1-spatial-product} for every split and pairing.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We maximize the remaining increment product.
   For Riesz covariance, weighted arithmetic--geometric mean gives
   \[
     \prod_{i\in O_D}h_i\prod_{j\in C_D}h_j^{1-\alpha}
@@ -6622,6 +7186,14 @@ Proposition~\ref{P:mixed}, $\E u^2(t,x) = \sum_{k\ge0}A_k(t)$.
 \end{proposition}
 
 \begin{proof}
+  We extract one spatial bound common to all pairings, then use symmetry of
+  their temporal sum. We count all chain splits, pass the fixed-order limits
+  and sum the factorial bound.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We separate the common spatial bound from the
+  temporal pairing sum.
   We first work with the Gaussian spatial smoothing and temporal truncation
   in~\cite{chen:author2026:time-dependency}*{(2.9), (2.11), (2.23)--(2.24)}. Let
   $X_n^{\epsilon,\delta}$ be the smoothed Stratonovich term, using common
@@ -6656,6 +7228,9 @@ Proposition~\ref{P:mixed}, $\E u^2(t,x) = \sum_{k\ge0}A_k(t)$.
   of pairings after taking the common spatial bound, not to an individual
   temporally weighted diagram.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We count pairings and splits.
   The number of pairings obeys $P_0 = 1$ and $P_k = (2k-1)P_{k-1}$, by choosing
   the partner of the smallest label. Hence, $P_k = (2k)!/(2^kk!)$. The binomial
   identity gives
@@ -6673,6 +7248,9 @@ Proposition~\ref{P:mixed}, $\E u^2(t,x) = \sum_{k\ge0}A_k(t)$.
   \]
   The same proof covers empty chains, with $X_0^{\epsilon,\delta} = 1$.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We remove regularization and sum the full series.
   By Lemma~\ref{L:joint-fixed-order}, each smoothed factor converges in $L^2$.
   Products converge in $L^1$ by Cauchy--Schwarz; for fixed $k$ the sum over
   splits is finite. The bound is uniform in $\epsilon,\delta$, so it passes to
@@ -6722,6 +7300,13 @@ definition of $A_k(t)$ is now applied to the present $d$-dimensional solution.
 \end{lemma}
 
 \begin{proof}
+  We compute the absolute Fourier envelope from spectral ball masses. We then
+  use the finite Gaussian-weighted measure to justify Fourier integration and
+  bound the translated convolution.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We compute the homogeneous spectral envelope.
   The spectral measure of $\gamma(c\,\cdot)$ is the pushforward of $\mu$ under
   $\xi\mapsto c\xi$. Homogeneity and uniqueness of the Fourier transform on
   tempered distributions therefore give $\mu(A/c) = c^{-\alpha}\mu(A)$ for every
@@ -6739,6 +7324,9 @@ definition of $A_k(t)$ is now applied to the present $d$-dimensional solution.
   in~\eqref{E:low-alpha-radial}. This computation uses ball masses, not a radial
   density for $\mu$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We obtain the smoothed convolution bound.
   Gaussian weighting gives a finite measure, by the polynomial ball growth of
   $\mu$. Thus, Fourier Fubini is justified for $\gamma_\epsilon$ and the finite
   measure $G_{h,\eta}$. From the source's wave-kernel
@@ -6775,6 +7363,13 @@ definition of $A_k(t)$ is now applied to the present $d$-dimensional solution.
 \end{lemma}
 
 \begin{proof}
+  We resolve the degree-one spectral measure into radial and angular parts. We
+  retain the radial oscillation and evaluate it as a one-dimensional heat
+  convolution, whose bound is uniform in direction.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the polar spectral decomposition.
   Fourier uniqueness, applied to the distributional homogeneity as above, gives
   $\mu(cA) = c\mu(A)$ and $\mu(\{0\}) = 0$. Define a finite measure on the unit
   sphere by
@@ -6789,6 +7384,10 @@ definition of $A_k(t)$ is now applied to the present $d$-dimensional solution.
   \mathbb{S}^{d-1}$. The real stationary covariance is even; Fourier uniqueness
   makes $\mu$, and hence $\sigma$, even.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We express the convolution through its radial
+  oscillatory integral.
   Use the Brownian Gaussian convention, so the combined covariance and Green
   smoothing multiplier is $e^{-ar^2}$ with $a = (\epsilon+\eta)/2 > 0$. Gaussian
   weighting makes the spectral measure finite. Fourier Fubini and evenness give
@@ -6805,6 +7404,10 @@ definition of $A_k(t)$ is now applied to the present $d$-dimensional solution.
   to cosine introduces no factor two, since both antipodal directions are
   already included in $\sigma$.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify that integral with a bounded
+  one-dimensional convolution.
   Let $g_h(v) = \tfrac12\mathbf1_{\{|v|<h\}}$ and let $p_{2a}^{(1)}(v) = (4\pi
   a)^{-1/2}e^{-v^2/(4a)}$ be the one-dimensional Gaussian density. Their Fourier
   transforms are $\sin(hr)/r$ and $e^{-ar^2}$. The one-dimensional inversion
@@ -6851,6 +7454,14 @@ definition of $A_k(t)$ is now applied to the present $d$-dimensional solution.
 \end{proposition}
 
 \begin{proof}
+  We apply the descending-label spatial argument in every dimension using the
+  appropriate closing bound. We then sum temporal pairings and pass the Green
+  and noise limits in their prescribed order.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain a common spatial bound in each
+  dimension.
   First smooth the noise as in~\cite{chen:author2026:time-dependency}*{(2.9), (2.11), (2.23)--(2.24)}.
   In dimension three also use $G_{h,\eta}$ with $\eta > 0$, as in the
   source's pp.~13--14. The increment change of variables is now a
@@ -6877,6 +7488,9 @@ definition of $A_k(t)$ is now applied to the present $d$-dimensional solution.
   $\sum_lh_l \le 2t$. For $d = 1,2$ one may use the Green densities directly;
   their opening mass and closing convolution obey these same bounds.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We sum the temporal factors.
   Replace the nonnegative truncated temporal factors by $|s_i-s_j|^{-\alpha_0}$
   before taking their pairing sum. The temporal symmetry, cube integral and
   split count in~\eqref{E:d1-time-symmetry} do not involve the spatial
@@ -6884,6 +7498,10 @@ definition of $A_k(t)$ is now applied to the present $d$-dimensional solution.
   Proposition~\ref{P:d1-upper} gives the first bound
   in~\eqref{E:low-alpha-coefficient} for the regularized moments.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We remove regularizations and sum the coefficient
+  bounds.
   We spell out the limit in dimension three. Fix every noise-smoothing parameter
   and first let $\eta\downarrow0$. At each time vector, the Gaussian moment
   formula is a finite sum of bounded continuous products of the smoothed
@@ -7058,6 +7676,15 @@ the translated wave convolution diverges.
 \end{proposition}
 
 \begin{proof}
+  We retain the singular closing increments instead of replacing them by a
+  spatial maximum. Hölder on the common pairing-time measure separates those
+  increments from the temporal factors. Dirichlet and symmetry estimates then
+  recover the required factorial power before the regularization limits.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We verify parameters and perform the spatial
+  elimination.
   The interval for $r$ is nonempty because $\delta+\alpha_0 < 1$. Thus, $\delta
   r < 1$, $\theta < 1$, and $1/2 < a < 1$. We use the source's noise
   regularization from Chen~\cite{chen:author2026:time-dependency}*{(2.9),
@@ -7090,6 +7717,10 @@ the translated wave convolution diverges.
   ordinary arithmetic--geometric mean gives the second inequality. We have not
   applied the low-$\alpha$ conclusion of Lemma~\ref{L:d1-spatial}.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We separate the spatial gap powers and temporal
+  pairing factors.
   Set $T_D(s) = \prod_{(i,j)\in D}|s_i-s_j|^{-\alpha_0}$. H\"older's inequality
   on counting measure on $\Pi_k$ times Lebesgue measure on $\Omega_{m,n}$ gives
   \begin{equation}\label{E:higher-holder}
@@ -7147,6 +7778,9 @@ the translated wave convolution diverges.
   = \beta$; the factorial power is $1+(2-\delta r)/r+2/r'-1 = 2-\delta = q$.
   There are $2k+1 \le 3^k$ splits, giving the asserted $K$.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We pass the fixed-order limits.
   We now pass to the solution using the independent fixed-order construction in
   Lemma~\ref{L:joint-fixed-order}, which applies under Hypothesis~\ref{H:homog}.
   In dimension three, fix the noise smoothing first and send the Green smoothing
@@ -7168,6 +7802,9 @@ the translated wave convolution diverges.
   $A_k(t)$; zero chains remain the constant one. These convergence inputs use
   the standing assumptions, not $\alpha \le 1$.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We sum the full coefficient series.
   Finally, Proposition~\ref{P:mixed} supplies the nonnegative full series under
   these same hypotheses. Since $q > 1$, for $z \ge 0$,
   \[
@@ -7195,6 +7832,15 @@ the translated wave convolution diverges.
 \end{lemma}
 
 \begin{proof}
+  We compute the spherical maximum in dimension three and bound small
+  translated ball masses in dimension two. Gaussian averaging preserves those
+  bounds, and an approximate-identity limit proves the stated optimality in
+  dimension three.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We evaluate the three-dimensional spherical
+  convolution.
   From Chen~\cite{chen:author2026:time-dependency}*{(2.5), p.~7}, the wave
   measures are
   \[
@@ -7219,6 +7865,10 @@ the translated wave convolution diverges.
   negative power decreases. The formula is continuous at $\rho = 1$ and at zero.
   Its maximum is therefore $F_3(e_1) = 2^{1-\alpha}/(2-\alpha)$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound the planar convolution by local ball
+  masses.
   In dimension two we claim $G_1(B(w,R)) \le 2R^{3/2}$ for $0 < R \le 1/4$.
   Rotate $w = (A,0)$, $A \ge 0$. If $A < 1/2$, the ball lies in $|y| < 3/4$,
   where the density is at most $2/(\pi\sqrt7)$; its mass is at most
@@ -7235,6 +7885,10 @@ the translated wave convolution diverges.
   \]
   This includes centers outside the disk and is uniform in $w$.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We retain smoothing uniformity and prove the
+  optimality claim.
   Finally, Tonelli and the Gaussian convolution rule give
   \[
     \int G_{h,\eta}(\ud y)\gamma_\epsilon(y+z)
@@ -7302,6 +7956,14 @@ partner in a crossing diagram.
 \end{proposition}
 
 \begin{proof}
+  We exhibit a divergent planar Riesz convolution at the boundary, then
+  construct an anisotropic product covariance with the same obstruction in
+  both dimensions. Approximate-identity limits transfer these divergences to
+  the smoothed uniform-bound question.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the divergent boundary configurations.
   For the first claim set $h = 1$, $z = -e_1$, and $y =
   e_1+\rho(\cos\phi,\sin\phi)$. On the wedge $0 < \rho < 1/2$, $2\pi/3 \le \phi
   \le 4\pi/3$, we have $0 < 1-|y|^2 \le 2\rho$. Therefore,
@@ -7331,6 +7993,10 @@ partner in a crossing diagram.
     =\frac{c B((1-a_2)/2,1/2)}{2\pi}
     \int_0^2u^{-a_1}(2u-u^2)^{-a_2/2}\ud u=\infty.
   \]
+
+  \medskip
+  \noindent\textit{Step 2.~}We transfer the product example to dimension three
+  and remove smoothing.
   The beta factor is finite and the integral diverges at zero. The projection of
   $G_1^{(3)}$ onto its first two coordinates is $G_1^{(2)}$: the two sphere
   graphs each have surface Jacobian $(1-|y|^2)^{-1/2}$, divided by $4\pi$.
@@ -7434,6 +8100,14 @@ hypotheses for the Riesz covariances below are thus satisfied.
 \end{lemma}
 
 \begin{proof}
+  We identify the full static coefficient sum using the imported fixed-order
+  inputs. The imported upper coefficient rate controls all sufficiently large
+  orders; the finitely many remaining orders are absorbed into one constant.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We verify the static input and pairing
+  interpretation.
   The static solution has data $(1,0)$ and wave operator $\Delta$, as here. The
   degree satisfies $\chi < \min\{2,d\}$, so the Riesz covariance meets the
   source's Dalang condition. From
@@ -7445,6 +8119,10 @@ hypotheses for the Riesz covariances below are thus satisfied.
   orthogonality of different orders is asserted. Empty chains contribute the
   factor one.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We convert the upper coefficient rate into an
+  all-order bound.
   From~\cite{chen.hu:25:hyperbolic}*{(5.1), p.~2173, and (5.15), p.~2180},
   specialized to $p = 2$, we have
   \[
@@ -7494,6 +8172,14 @@ hypotheses for the Riesz covariances below are thus satisfied.
 \end{proposition}
 
 \begin{proof}
+  We interpolate the regularized covariance factors on one common positive
+  measure containing all pairings and splits. We bound the low endpoint
+  directly, pass fixed-order limits for the target and static endpoint, and
+  only then use the static coefficient estimate.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We verify the endpoint parameters.
   The interval for $\vartheta$ is nonempty by $\alpha+\alpha_0 < 2$. Since
   $\alpha > 1$, we have $0 < \vartheta < 1$, $0 < b_0 < 1$, and
   \[
@@ -7507,6 +8193,10 @@ hypotheses for the Riesz covariances below are thus satisfied.
     \qquad \alpha_0=\vartheta b_0.
   \end{equation}
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We place all three covariance profiles on the same
+  measure.
   Fix $k \ge 1$ and $t > 0$. Use a common spatial noise width $\epsilon > 0$ and
   the target's temporal cutoff width $\delta > 0$. The covariance on each
   pairing edge has spatial width $2\epsilon$. In dimension three first use
@@ -7572,6 +8262,9 @@ hypotheses for the Riesz covariances below are thus satisfied.
     \left(B_k^{\epsilon,\eta}(t)\right)^{1-\vartheta}.
   \end{equation}
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We bound the low endpoint before passing limits.
   The deterministic estimates in the proof of
   Proposition~\ref{P:low-alpha-upper}, at spatial degree one and temporal degree
   $b_0$, apply to $L_k^{\epsilon,\eta}$. In detail,
@@ -7590,6 +8283,9 @@ hypotheses for the Riesz covariances below are thus satisfied.
   regularized coefficient is finite because its covariance is bounded at fixed
   $\epsilon$. Thus, the H\"older step has finite right side.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We remove Green and noise regularization in order.
   We pass to fixed-order limits before using the static coefficient bound. In
   dimension three fix $\epsilon,\delta$ and let $\eta\downarrow0$. The target
   and static smoothed covariance factors are bounded continuous functions of the
@@ -7628,6 +8324,9 @@ hypotheses for the Riesz covariances below are thus satisfied.
   $\epsilon$ and no uniform static large-time bound in that parameter have been
   assumed.
 
+
+  \medskip
+  \noindent\textit{Step 5.~}We combine the endpoint powers and sum.
   The powers combine without a counting loss. Indeed,
   by~\eqref{E:static-holder-affine},
   \[
@@ -7724,6 +8423,15 @@ first treat $\Gamma \ne 0$ and $1 < \alpha < 2$.
 \end{lemma}
 
 \begin{proof}
+  We identify the physical polar measure and its two weighted endpoints. We
+  prove their positive definiteness separately, estimate the low endpoint
+  through line integrals, and apply Hölder on the original heat-weighted
+  measure.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the polar measure and endpoint
+  integrability.
   Since $2-\alpha > 0$, scaling and local finiteness force $\Gamma(\{0\}) = 0$.
   The unit-ball mass is finite, so $S < \infty$. It is positive: otherwise
   scaling would make every ball have zero mass, contradicting $\Gamma \ne 0$.
@@ -7754,6 +8462,10 @@ first treat $\Gamma \ne 0$ and $1 < \alpha < 2$.
   $\Gamma$ has a density, the two weighted measures also have locally integrable
   densities.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We prove positive definiteness of the low
+  endpoint.
   To prove positive definiteness of the low endpoint, evenness gives the
   full-sphere line representation
   \begin{equation}\label{E:planar-line-mixture}
@@ -7777,6 +8489,10 @@ first treat $\Gamma \ne 0$ and $1 < \alpha < 2$.
   factor $1/2$ is essential because both orientations of each line occur on the
   full sphere.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We prove positive definiteness of the static
+  endpoint.
   For the static endpoint put $\lambda = \chi-\alpha > 0$. For $x \ne 0$,
   \[
     |x|^{-\lambda}=\frac1{\Gamma(\lambda/2)}
@@ -7797,6 +8513,9 @@ first treat $\Gamma \ne 0$ and $1 < \alpha < 2$.
   original covariance and a convergent mixture, not a fractional power of that
   covariance.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We bound the planar wave convolution.
   We next prove the convolution estimate directly. Use the planar wave density
   \[
     G_h(y)=\frac{\mathbf1_{\{|y|<h\}}}{2\pi\sqrt{h^2-|y|^2}},
@@ -7827,6 +8546,9 @@ first treat $\Gamma \ne 0$ and $1 < \alpha < 2$.
   For $\eta = 0$, use the unsmoothed Green measure. The Gaussian average has
   mass one, so the same constant works for all widths.
 
+
+  \medskip
+  \noindent\textit{Step 5.~}We compare the regularized endpoints by Hölder.
   Finally, the measure $p_\epsilon(z-x)\Gamma(\ud x)$ is finite. Gaussian decay
   and polynomial radial growth prove this directly; the endpoint convolutions
   are finite for the same reason. The identity
@@ -7864,6 +8586,13 @@ first treat $\Gamma \ne 0$ and $1 < \alpha < 2$.
 \end{lemma}
 
 \begin{proof}
+  We treat zero covariance directly. For nonzero covariance, homogeneity
+  verifies the static spectral condition, and the cited finite coefficient
+  rate is converted to a bound valid at every order.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We verify the static covariance hypotheses.
   If $\Xi = 0$, then $U_n = 0$ for $n \ge 1$, and hence $B_k = 0$ for $k \ge 1$.
   The choices $C_{\rm st} = 1$ and $B_0 = 1$ give the conclusion. We may
   therefore assume $\Xi \ne 0$.
@@ -7889,6 +8618,10 @@ first treat $\Gamma \ne 0$ and $1 < \alpha < 2$.
   order, including self-pairs and empty chains. Thus, every coefficient is
   finite and nonnegative.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We state the imported finiteness input used by the
+  coefficient rate.
   We make explicit the finiteness input in the source's coefficient upper rate.
   The variational constant $\mathcal{M}$ in
   Chen--Hu~\cite{chen.hu:25:hyperbolic}*{p.~2147} is finite under the displayed
@@ -7899,6 +8632,9 @@ first treat $\Gamma \ne 0$ and $1 < \alpha < 2$.
   nonnegative positive-definite covariances. We import that finiteness, not a
   sharp value or its proof.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We turn the rate into an all-order constant.
   From Chen--Hu~\cite{chen.hu:25:hyperbolic}*{(5.1), p.~2173, and (5.15),
   p.~2180}, with $p = 2$, it follows that
   \[
@@ -7945,6 +8681,15 @@ first treat $\Gamma \ne 0$ and $1 < \alpha < 2$.
 \end{proposition}
 
 \begin{proof}
+  We verify the planar endpoint parameters and use a common positive measure
+  for all diagrams. We interpolate the regularized coefficients, bound the low
+  endpoint by its line-convolution estimate, and then pass to the fixed-order
+  limits before summing.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We verify the original and endpoint spectral
+  conditions.
   The parameter interval is nonempty. We have $0 < \vartheta < 1$, $0 < b_0 <
   1$, and
   \[
@@ -7963,6 +8708,9 @@ first treat $\Gamma \ne 0$ and $1 < \alpha < 2$.
   Lemma~\ref{L:joint-fixed-order} applies to the target, and the imported static
   fixed-order theorem is used within its stated range.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We form the common measure and apply Hölder.
   Fix $k \ge 1$, $t > 0$, and common noise widths $\epsilon,\delta > 0$. The
   spatial covariance on each edge has width $2\epsilon$. No Green smoothing is
   needed in dimension two. On the disjoint union over $m = 0,\ldots,2k$ and $D
@@ -8010,6 +8758,10 @@ first treat $\Gamma \ne 0$ and $1 < \alpha < 2$.
   \end{equation}
   No interpolation of different temporal cutoff kernels is asserted.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We estimate the low endpoint with the full
+  temporal pairing sum.
   We bound $L_k^\epsilon$ directly. Orient each pair by increasing block label.
   Descending integration of increments, as in Lemma~\ref{L:d1-spatial}, removes
   at a closing label its only remaining covariance factor.
@@ -8045,6 +8797,9 @@ first treat $\Gamma \ne 0$ and $1 < \alpha < 2$.
   $B_k^\epsilon$ finite as well. These observations also justify finiteness in
   the H\"older estimate.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We remove noise smoothing at fixed order.
   We next take fixed-order limits. The target orders converge in $L^2$ by
   Lemma~\ref{L:joint-fixed-order}. For the static orders the corresponding input
   is Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~3.8(i), p.~2165}. For
@@ -8067,6 +8822,9 @@ first treat $\Gamma \ne 0$ and $1 < \alpha < 2$.
   Only now apply Lemma~\ref{L:planar-static-input}. No monotonicity in the
   spatial width or uniform static smoothed asymptotic was used.
 
+
+  \medskip
+  \noindent\textit{Step 5.~}We combine powers and sum the full moment series.
   The parameter identities $\alpha = \vartheta+(1-\vartheta)\chi$ and $\alpha_0
   = \vartheta b_0$ imply
   \[
@@ -8166,6 +8924,14 @@ constant factors, not one-dimensional white noise.
 \end{lemma}
 
 \begin{proof}
+  We first show that the coordinate endpoint intervals admit a strict interior
+  choice with the required sums. We then verify the covariance properties of
+  the resulting product densities and apply Gaussian Hölder.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We choose strict coordinate endpoints and verify
+  their sums.
   We have $\vartheta < 1$. There are at least two positive coordinates, since
   every $a_j < 1$ and $\sum_j a_j > 1$. At a zero coordinate, $L_j = U_j = 0$.
   At a positive coordinate, $L_j < U_j$: if $a_j \ge \vartheta$, then $U_j = 1$
@@ -8197,6 +8963,10 @@ constant factors, not one-dimensional white noise.
     \qquad 2-\chi=\frac{2-\alpha-\vartheta}{1-\vartheta}>0.
   \]
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We verify local integrability and positive
+  definiteness.
   For any of the three exponent vectors $e$, local integrability is a product of
   one-dimensional integrals with exponents below one. For a Schwartz function
   $\psi$, choose $N > 1$ and use $|\psi(x)| \le C_N\prod_j(1+|x_j|)^{-N}$. This
@@ -8215,6 +8985,10 @@ constant factors, not one-dimensional white noise.
   quadratic form is nonnegative. No Euler Gamma factor at exponent zero is
   introduced. Evenness and homogeneity follow from the displayed densities.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We compare the smoothed densities at common
+  amplitude.
   The reconstruction of each exponent and the common amplitude imply $\gamma_a =
   \gamma_b^\vartheta\gamma_v^{1-\vartheta}$ almost everywhere; values on
   singular coordinate planes do not change these locally integrable covariances.
@@ -8278,6 +9052,14 @@ homogeneous covariance in dimension three admits these endpoints.
 \end{lemma}
 
 \begin{proof}
+  We verify the exponents and covariance properties of the plane-supported
+  measures. We then apply Hölder to their ordinary densities on the same plane
+  measure and compute the low endpoint spectral mass.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We verify the endpoint parameters and measure
+  scaling.
   Since $0 < s < 1-\alpha_0$ and $\vartheta < 2-\alpha = 1-s$,
   \[
     0\le a_j<1,\qquad 0\le v_j<1,\qquad
@@ -8290,6 +9072,10 @@ homogeneous covariance in dimension three admits these endpoints.
   the statement have exponents $3-\alpha$, $2$, and $3-\chi$. They are even and
   nonnegative.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We include the normal Dirac measure in the
+  positivity argument.
   We verify positive definiteness, including the normal Dirac measure. Each
   positive coordinate power has the Gaussian mixture
   \[
@@ -8316,6 +9102,9 @@ homogeneous covariance in dimension three admits these endpoints.
   definiteness. This argument includes the low endpoint, where both coordinate
   powers are zero.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We compare the Gaussian convolutions on the plane.
   For $\epsilon > 0$ and $w \in \R^3$, apply H\"older on the finite positive
   measure $p_\epsilon(w-(y,z))m(\ud y,\ud z)$. Its mass is
   $p_\epsilon^{(1)}(w_3)$. If $f(y) = \prod_j|y_j|^{-a_j}$, the identity between
@@ -8329,6 +9118,10 @@ homogeneous covariance in dimension three admits these endpoints.
   exactly~\eqref{E:three-gaussian-comparison}; no power of a distribution is
   taken.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We compute the spectral normalization of the low
+  endpoint.
   Finally, the low spectral measure is
   \[
     \mu_{\rm low}(\ud\xi)
@@ -8351,6 +9144,13 @@ homogeneous covariance in dimension three admits these endpoints.
 \end{lemma}
 
 \begin{proof}
+  We first extend the comparison from isotropic to general nondegenerate
+  Gaussian kernels. We then track the common determinant factor under linear
+  maps and use discrete Hölder for finite positive sums.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We extend the Gaussian convolution comparison.
   First the comparison extends to every centered nondegenerate Gaussian
   probability density $q_\Sigma$ with covariance matrix $\Sigma$. Choose $a > 0$
   below the smallest eigenvalue of $\Sigma$. The Gaussian convolution identity
@@ -8369,6 +9169,10 @@ homogeneous covariance in dimension three admits these endpoints.
   \]
   Every convolution here is finite.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We push all three measures through the same linear
+  map.
   Write $J_T = T_\#J$ and $d_T = |\det T|$. Pushforward preserves nonnegativity,
   evenness, local finiteness, temperedness, and homogeneous scaling, since $T$
   is invertible and commutes with scalar dilation. For positive definiteness,
@@ -8389,6 +9193,9 @@ homogeneous covariance in dimension three admits these endpoints.
   $d_T^{-\vartheta}d_T^{-(1-\vartheta)} = d_T^{-1}$, which is the target factor.
   This proves the comparison for the three pushed-forward measures.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We take finite weighted sums of endpoint triples.
   For the finite-sum assertion, let $\Gamma_i,L_i,S_i$, $1 \le i \le N$, be
   component triples, and let $w_i \ge 0$. At a fixed width and translation put
   $l_i = (p_\epsilon*L_i)(x)$ and $s_i = (p_\epsilon*S_i)(x)$. Finite sums
@@ -8469,6 +9276,16 @@ penalty tends to zero.
 \end{proposition}
 
 \begin{proof}
+  We verify the static input and establish a regularized coefficient
+  comparison on one common measure. We identify the static and target Green
+  limits separately before removing noise widths. We then sum the all-time
+  coefficient bound and retain the finite low orders when deriving the sharper
+  asymptotic constant.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We state and verify the imported static
+  coefficient input.
   We first record the general static input needed here. For a static endpoint
   covariance $\Xi$ of exponent $\chi$, Fourier uniqueness gives $\mu_\Xi(rA) =
   r^\chi\mu_\Xi(A)$ for its positive spectral measure. Its unit-ball mass is
@@ -8517,6 +9334,10 @@ penalty tends to zero.
   Also $B_0 = 1$. We apply this source bound only after taking the fixed-order
   noise limits, with $\Xi = \Gamma_{\rm st}$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We verify the target hypotheses and form the
+  common regularized measure.
   For the target, the same spectral scaling calculation has exponent $\alpha$.
   Its dyadic sum for the weight $(1+|\xi|^2)^{-(2-\alpha_0)/2}$ is finite
   because $\alpha < 2-\alpha_0$. The target fixed-order limit is supplied by
@@ -8583,6 +9404,9 @@ penalty tends to zero.
   temporal power, and no relation between different temporal cutoff kernels is
   used.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We estimate the deterministic low endpoint.
   Lemma~\ref{L:alpha-one-convolution} applies to the low endpoint with no
   angular-density assumption. Its uniform closing bound is $\pi V_{\rm low}/2$.
   Descending increment integration removes the only remaining covariance at each
@@ -8607,6 +9431,10 @@ penalty tends to zero.
   coefficient is finite too. This justifies the finite right side
   in~\eqref{E:three-regularized-holder}.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We identify the static source and its
+  zero-Green-width integral.
   We now identify the static inner Green limit with the source's prescribed
   zero-Green-width approximant. Take the source's static isonormal noise $W^{\rm
   st}$ with covariance $\Gamma_{\rm st}$ and set $W_\epsilon(x) = W^{\rm
@@ -8673,6 +9501,10 @@ penalty tends to zero.
   convention preceding (2.22)}. Define $U_n^{\epsilon,\eta}$ by the same formula
   with $\mathfrak{g}_{n,t,x}^{\eta}$, and retain $U_0^{\epsilon,\eta} = 1$.
 
+
+  \medskip
+  \noindent\textit{Step 5.~}We identify both inner Green limits in mean
+  square.
   In the second and mixed moments of these integrals, the Gaussian moment
   factors are bounded continuous functions of all spatial positions. For each
   pair of time vectors, weak convergence of the products of Green measures,
@@ -8738,6 +9570,10 @@ penalty tends to zero.
   This proves the inner-limit identification with the target approximant. Both
   order-zero objects remain one.
 
+
+  \medskip
+  \noindent\textit{Step 6.~}We remove noise widths and sum the all-time
+  coefficient bound.
   First take this Green limit in~\eqref{E:three-regularized-holder}, using the
   uniform bound~\eqref{E:three-low-coefficient}. Next send the noise widths to
   zero. The static fixed-order $L^2$ limit is from
@@ -8783,6 +9619,10 @@ penalty tends to zero.
       &=\Lambda_{\rm st}.
     \end{split}
   \]
+
+  \medskip
+  \noindent\textit{Step 7.~}We retain the precise asymptotic coefficient rate
+  and its low-order remainder.
   The factor two follows from $\nu_{\rm st}-Q = 1$; the logarithm in the source
   applies to the entire coefficient-rate product. Fix $r > 0$. There is $N_r \ge
   1$, depending on the fixed endpoint and $r$ but not on $t$, such that
@@ -8985,6 +9825,14 @@ covariance factorization.
 \end{lemma}
 
 \begin{proof}
+  We use the imported finiteness only on smooth profiles. Two distinct
+  Cauchy--Schwarz bounds control the physical and spectral approximation
+  errors. We then identify both strong limits and pass the quartic bound to
+  the full Sobolev class.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the smooth-profile energy bound.
   Fourier uniqueness gives $\mu_\Xi(rA) = r^\chi\mu_\Xi(A)$. Since its unit-ball
   mass is finite, the dyadic estimate with $\sum_{j\ge0}2^{j(\chi-2)}$ verifies
   Dalang's condition. For a real Schwartz function $h$ put
@@ -9007,6 +9855,9 @@ covariance factorization.
   nonsmooth profiles. If $N(f)^2 = \|f\|_2^2+\|\nabla f\|_2^2$, it follows that
   $Q(f)^{1/2} \le D N(f)^2$ for some finite $D$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We estimate the two types of bilinear pairing.
   We need two different Cauchy--Schwarz inequalities. For real Schwartz $f,h$,
   spectral Cauchy--Schwarz gives
   \[
@@ -9031,6 +9882,10 @@ covariance factorization.
   $\mathscr{E}(fh)$ is the quadratic energy of $fh$, not the quartic expression
   $Q(fh)$.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We compare the physical and spectral approximation
+  maps.
   Let $\mathfrak{m}(\ud y,\ud z) = \ud y\,\Xi(\ud z)$ and define
   \[
     A_f(y,z)=f(y+z)f(y),\qquad B_f(\xi)=\widehat{f^2}(\xi).
@@ -9051,6 +9906,10 @@ covariance factorization.
     \le D\bigl(N(f)+N(h)\bigr)N(f-h).
   \]
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We identify their strong limits for a Sobolev
+  profile.
   Choose real Schwartz $f_n \to g$ in $W^{1,2}$. These estimates make both
   $A_{f_n}$ and $B_{f_n}$ Cauchy in their respective $L^2$ spaces. Pass to a
   subsequence with $f_n \to g$ Lebesgue-almost everywhere. Translation
@@ -9164,6 +10023,15 @@ corresponding static terms. Set
 \end{lemma}
 
 \begin{proof}
+  We construct the static endpoint series using a regularized positive
+  comparison. We then interpolate single-chain coefficients on one common
+  spatial measure, remove the spatial width, and recover the mean series by
+  homogeneity.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the static fixed-order limits and
+  summable series.
   We first justify the static endpoint and its norm series. At positive spatial
   widths its ordered terms are the bounded-variance Gaussian Bochner integrals
   of Lemma~\ref{L:terminal-wick}, with a time-constant field.
@@ -9203,6 +10071,10 @@ corresponding static terms. Set
   source's canonical static kernels and fixed-order limits.
 
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We interpolate the temporal powers at fixed
+  spatial smoothing.
   For a single chain of length $2k$, use the initial-chain variables of
   Proposition~\ref{P:mixed}. At common positive spatial width $\epsilon$, let
   $\omega_{\epsilon,D}$ be its finite positive spatial Green--Wick measure on
@@ -9227,6 +10099,9 @@ corresponding static terms. Set
   This is an identity for the power covariance; no exponent-dependent Laplace
   cutoff or Euler Gamma normalization is being interpolated.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We remove the common spatial width.
   We justify removal of the common spatial width. For each positive exponent,
   the proof of Lemma~\ref{L:joint-fixed-order} gives this limit with the power
   covariance as well. Indeed, writing $F_{\epsilon,\eta,D}$ for the diagram with
@@ -9245,6 +10120,9 @@ corresponding static terms. Set
   proving~\eqref{E:mean-coefficient-holder} and nonnegativity. No convergence
   uniform in $a$ is claimed.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We identify the homogeneous positive mean series.
   Scaling all times and spatial displacements by $t$ in a regularized one-chain
   diagram gives the factor $t^{2(2k)-\alpha k-ak} = t^{\beta(a)k}$ and changes
   the spatial width to $\epsilon/t^2$. Passing to the just established limits
@@ -9273,6 +10151,13 @@ corresponding static terms. Set
 \end{lemma}
 
 \begin{proof}
+  We first bound each coefficient by evaluating the positive series at an
+  order-dependent argument. Conversely, a finite coefficient type gives an
+  exponential series bound after keeping finitely many low orders separately.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We pass from growth type to coefficient type.
   If $\tau < \infty$, choose $L > \tau$. Since $c_0 = 1$, $\tau \ge 0$, and
   continuity of the power series on compact positive intervals gives $F(z) \le
   C_L e^{Lz^{1/\nu}}$ for all $z \ge 0$. For $k \ge 1$, the inequality $c_kz^k
@@ -9288,6 +10173,9 @@ corresponding static terms. Set
   Consequently, $K \le (L/\nu)^\nu$. Letting $L\downarrow\tau$ proves $K \le
   (\tau/\nu)^\nu$, including $K = 0$ when $\tau = 0$.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We recover growth type from the coefficient bound.
   Conversely, for any $A > K$ all sufficiently large coefficients obey $c_k \le
   A^k/(k!)^\nu$. Hence, for a polynomial $P$ with nonnegative coefficients,
   \[
@@ -9315,6 +10203,14 @@ corresponding static terms. Set
 \end{proposition}
 
 \begin{proof}
+  We compare finite regularized moments with a static model using the minimum
+  temporal covariance on the horizon. We remove regularizations at fixed
+  order, sum, and then identify the static effective time.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We compare the finite expected powers at positive
+  widths.
   Fix positive common spatial and temporal noise widths $\epsilon,\delta$. On
   $[0,T]$, the source's Laplace-prefix temporal covariance satisfies
   \[
@@ -9332,6 +10228,10 @@ corresponding static terms. Set
   widths using the bounded covariance calculation preceding
   Lemma~\ref{L:spatial-wick-measures}.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We pass fixed-order limits and the convergent
+  series.
   Now send $(\epsilon,\delta)$ jointly to zero at fixed $N$.
   Lemma~\ref{L:joint-fixed-order} gives the fractional-time $L^2$ limits. Static
   fixed-order $L^2$ convergence gives all static split products in $L^1$, by
@@ -9351,6 +10251,10 @@ corresponding static terms. Set
   preserving the finite-order inequality. No covariance-order coupling of the
   two Gaussian fields is asserted.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify the static amplitude clock and its
+  rate.
   Write $U_\sigma$ for the static solution with noise amplitude $\sigma$. In its
   $p$th moment, a total order $2k$ has amplitude factor $\sigma^{2k}$ and, by
   static diagram homogeneity, time factor $T^{(4-\alpha)k}$. For $p = 1,2$, the
@@ -9397,6 +10301,13 @@ corresponding static terms. Set
 \end{proposition}
 
 \begin{proof}
+  We convert mean growth rates into coefficient types. Coefficient
+  interpolation then bounds the positive-exponent mean rate, and the static
+  lower comparison gives the strict gap on the stated window.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify finite endpoint coefficient types.
   By Lemma~\ref{L:mean-coefficient-holder}, the substitution $z = T^{\beta(a)}$
   identifies the normalized logarithmic type of $F_a(z)$ with the mean limsup
   $M(a)$; at zero it equals $L_0$. The imported static law and
@@ -9405,6 +10316,10 @@ corresponding static terms. Set
   exponent $b$, give $M(b) < \infty$. The same type lemma therefore gives $K(b)
   < \infty$. There is no use of a printed first-moment rate constant.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We interpolate the coefficient types and apply the
+  static lower rate.
   Multiplying~\eqref{E:mean-coefficient-holder} by $(k!)^\nu$, taking $k$th
   roots and then limsups yields
   \[
@@ -9484,6 +10399,14 @@ Lemma~\ref{L:mean-coefficient-holder}.
 \end{lemma}
 
 \begin{proof}
+  We interpolate the full coefficient sum at common spatial smoothing,
+  retaining all splits. We then identify each endpoint limit and use diagram
+  homogeneity to obtain the full positive moment series.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We place the mean and second-moment diagrams on
+  their common measures.
   Work first at a common positive spatial noise width \(\epsilon\) and at unit
   horizon. For each split \(m+n=2k\) and pairing \(D\), let
   \(\omega_{\epsilon,m,n,D}\) be the finite positive spatial Green--Wick measure
@@ -9495,6 +10418,9 @@ Lemma~\ref{L:mean-coefficient-holder}.
   \(p=1\) has just one. Wick's formula has coefficient one for each pairing on
   each ordered domain.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We interpolate the temporal power factors.
   With \(\omega_{\epsilon,p,k}\) denoting this disjoint-union measure, define
   its time integral for the power covariance by
   \[
@@ -9514,6 +10440,9 @@ Lemma~\ref{L:mean-coefficient-holder}.
     c_{p,k}^{\epsilon}(a_2)^\theta.
   \]
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify all fixed-order limits.
   For each fixed positive endpoint, the all-chain bound
   \eqref{E:joint-temporal-tail} and the common temporal-cutoff sandwich used in
   Lemma~\ref{L:mean-coefficient-holder} identify the time-domain spatial limit
@@ -9529,6 +10458,10 @@ Lemma~\ref{L:mean-coefficient-holder}.
   \eqref{E:full-moment-coefficient-holder} and nonnegativity. No interpolation
   of exponent-dependent Laplace prefixes is used.
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We use homogeneity and the convergent moment
+  series.
   Every diagram has \(2k\) time Jacobians, \(2k\) Green scaling factors, \(k\)
   spatial covariance factors and \(k\) temporal factors. Thus, its homogeneous
   time degree is \(4k-\alpha k-ak=\beta(a)k\), including both empty-chain cases.
@@ -9568,6 +10501,13 @@ Here \(p=1\) concerns \(\E u\), not \(\E|u|\).
 \end{proposition}
 
 \begin{proof}
+  We establish that all rates are positive and finite, convert coefficient
+  interpolation into growth-type interpolation, and then use convex secant
+  slopes to obtain interior continuity.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We verify positivity and finiteness of the rates.
   Put \(C_p=p^{\kappa_{\rm st}}L_0>0\). The imported static law gives
   \(\overline{\Lambda}_p(0)=\underline{\Lambda}_p(0)=C_p\).
   Proposition~\ref{P:static-minorant-lower} gives \(\underline{\Lambda}_p(a)\ge
@@ -9576,6 +10516,10 @@ Here \(p=1\) concerns \(\E u\), not \(\E|u|\).
   its positive series. Hence, all logarithms and rates used here are well
   defined, positive and finite.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We transfer coefficient interpolation to the
+  logarithmic type.
   Let \(F_{p,a}(z)=\sum_{k\ge0}c_{p,k}(a)z^k\). It is finite for every
   \(z\ge0\), by Lemma~\ref{L:full-moment-coefficient-holder}. Its normalized
   logarithmic type equals \(\overline{\Lambda}_p(a)\): spatial stationarity
@@ -9598,6 +10542,9 @@ Here \(p=1\) concerns \(\E u\), not \(\E|u|\).
   Taking the \(1/\nu\) power and multiplying by \(\nu\)
   proves~\eqref{E:moment-growth-logconvex}.
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We obtain continuity from the convex slope bounds.
   For completeness, continuity follows directly from secant slopes. Write
   \(f=\log\overline{\Lambda}_p\). If \(L<l\le x<y\le r<R\) are in
   \((0,a_{\max})\), convexity gives
@@ -9713,6 +10660,12 @@ intended general representation, not a restriction of Theorem~\ref{T:intro-secon
 \end{lemma}
 
 \begin{proof}
+  We compute the cross-pair transform by splitting its time domain into two
+  cones, then evaluate the independent gap integrals for the self-pair.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We compute the cross-pair Laplace transform.
   The spatial cross factor is
   \[
     \int G_s(y)G_t(z)\delta_0(y-z)\ud y\ud z
@@ -9730,6 +10683,9 @@ intended general representation, not a restriction of Theorem~\ref{T:intro-secon
   finite since \(a<1\), so Tonelli justifies the separation. This proves
   \eqref{E:white-cross-clock-transform}.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We compute the self-pair gap transform.
   For one length-two chain, its delta covariance forces the two positions equal.
   The second Green factor is \(G_{r_2}(0)=1/2\), and integration of the first
   gives mass \(r_1\). The time difference is \(r_2\). The two elementary Laplace
@@ -9824,6 +10780,15 @@ analytic covariance, not its absolute-value bound, is being copied.
 \end{proposition}
 
 \begin{proof}
+  We first compute the exact original cross transform. We bound the clock
+  candidates and evaluate the largest one, corresponding to a shared clock.
+  Comparing the two positive densities gives strict loss, and degree-one
+  homogeneity then gives its exact factor.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We compute the density of the original cross
+  transform.
   First evaluate the cross transform. Temporarily smooth the spatial covariance,
   so Fourier and time Fubini are absolute. For \(r=|\xi|\), direct integration
   over \(s=t+v\) and \(t=s+v\) gives
@@ -9845,6 +10810,10 @@ analytic covariance, not its absolute-value bound, is being copied.
   \(e^{-2\theta t}\), and adding the second cone, gives the displayed identity.
   The value at \(r=0\) is its continuous limit.
 
+
+  \medskip
+  \noindent\textit{Step 2.~}We remove spatial smoothing in the nonnegative
+  spectral expression.
   The resulting spectral integrand is nonnegative. Removing the spatial Gaussian
   multiplier and using the Laplace formula for the power covariance therefore
   gives
@@ -9870,6 +10839,10 @@ analytic covariance, not its absolute-value bound, is being copied.
   from \(\mathcal{R}_\Gamma(\theta) -\mathcal{R}_\Gamma(\theta+\lambda)>0\),
   since \(\mu\ne0\).
 
+
+  \medskip
+  \noindent\textit{Step 3.~}We prove integrability and compare the clock
+  correlations.
   The candidate integrals are well defined and positive. The bound
   \(\Psi_a(\theta|u-v|,v_\rho)\le (\theta|u-v|)^{-a}\), together with
   \(h_\Gamma(w)=h_\Gamma(1)w^{-\alpha/2}\), supplies an absolute majorant. With
@@ -9887,6 +10860,10 @@ analytic covariance, not its absolute-value bound, is being copied.
   monotonicity. Since \(v_\rho(u,v)\ge|u-v|=v_1(u,v)\), monotonicity of
   \(\Psi_a\) gives \(J_{\Gamma,\rho}\le J_{\Gamma,1}\).
 
+
+  \medskip
+  \noindent\textit{Step 4.~}We evaluate the shared-clock candidate and compare
+  its density.
   We compute the latter by nonnegative Tonelli. Write
   \(A=\theta\lambda+\lambda^2/2\). Integration in \(q\) gives
   \(2(1-e^{-Aw})/A\). Also
@@ -9917,6 +10894,9 @@ analytic covariance, not its absolute-value bound, is being copied.
   \(2\theta/(2\theta+\lambda)<1\) for every \(\lambda>0\), the strict inequality
   follows.
 
+
+  \medskip
+  \noindent\textit{Step 5.~}We compute the exact loss at spatial degree one.
   Finally, if \(\alpha=1\), homogeneity gives
   \(\mathcal{R}_\Gamma(q)=\mathcal{R}_\Gamma(1)/q\). Substitution in the two
   densities gives
