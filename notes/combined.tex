@@ -45,6 +45,14 @@
 \newcommand{\aiBookRef}[1]{\ref{#1}}
 \input{notes/lean-coverage-data}
 \input{notes/verification-status-data}
+\input{notes/critical-path-data}
+% Appendix G, the list of results the main theorems rest on: one small table
+% per row, so that the list can break across pages between rows.
+\newcommand{\cpRowFormat}[5]{\noindent{\footnotesize\setlength{\tabcolsep}{3pt}%
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.18\textwidth}>{\raggedright\arraybackslash}p{0.27\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}>{\raggedleft\arraybackslash}p{0.07\textwidth}>{\raggedright\arraybackslash}p{0.09\textwidth}@{}}#1
+  & #2 & #3 & #4 & #5\end{tabular}}\par}
+\newcommand{\cpRow}[5]{\cpRowFormat{#1}{#2}{#3}{#4}{#5}}
+\newcommand{\cpHead}{\cpRowFormat{\textbf{Result}}{\textbf{Title}}{\textbf{Rests directly on}}{\textbf{Used by}}{\textbf{Lean}}\vspace{2pt}\hrule\vspace{3pt}}
 % Appendix F helpers: \lcRef{kind}{label}{number} is a linked reference.
 \makeatletter
 \def\lc@equation{Equation}
@@ -5392,8 +5400,11 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   in their definition. At fixed smoothing and finite interval family, put
   $v_{\max} = \sup_t\sum_i\sigma_i^2\mathbf1_{I_i}(t) \Gamma_\epsilon(0) <
   \infty$. On Gaussian degrees at most $n$, multiplication by the instantaneous
-  field has norm at most $2\sqrt{n+1}\sqrt{v_{\max}}$. The free phase has norm
-  at most $e^{\lambda h/2}$ in $X_\lambda$, and a phase insertion
+  field has norm at most $2\sqrt{n+1}\sqrt{v_{\max}}$. The free-phase energy
+  calculation at the end of the proof of
+  Proposition~\ref{P:static-phase-variance}, which uses no dimension-specific
+  or covariance assumption, gives the bound $e^{\lambda h/2}$ in $X_\lambda$
+  also on each spatial Fourier band. A phase insertion
   $(u,w)\mapsto(0,Wu)$ costs at most its unweighted multiplication norm divided
   by $\lambda$. Thus, on $\max_i|z_i| \le z_*$ the total order-$n$ phase is
   bounded by
