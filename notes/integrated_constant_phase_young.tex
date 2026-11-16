@@ -53,14 +53,15 @@ constant-coordinate projection.
     \|f\|_{L^2(B_\varepsilon)}
     \varepsilon^{d/2}\|\varphi\|_2\longrightarrow0,
   \]
-  The shrinking test has $L^2$ norm $\varepsilon^{d/2}\|\varphi\|_2$.
-  Cauchy--Schwarz gives the displayed bound, which tends to zero for a locally
-  square-integrable $f$. A delta mass acts instead by evaluation at zero,
-  so $\delta_0$ gives one. Thus, constants lie in neither $H^{1/2}$ nor
+  whereas $\delta_0$ gives one. Thus, constants lie in neither $H^{1/2}$ nor
   $H^{-1/2}$; the interpretation is injective. Sobolev duality and the two test
   integrals prove continuity into distributions, uniformly on bounded families
   of compact tests. Completeness, separability and the closed proper inclusion
   follow from the Hilbert direct sum.
+
+  The shrinking test has $L^2$ norm $\varepsilon^{d/2}\|\varphi\|_2$.
+  Cauchy--Schwarz gives the displayed bound, which tends to zero for a locally
+  square-integrable $f$. A delta mass acts instead by evaluation at zero.
 
   \medskip
   \noindent\textit{Step 2.~}We bound localization from the extended phase to
@@ -472,6 +473,9 @@ of~\eqref{E:constant-phase-driver} and pass to the physical flow on $F$.
     \|P_{A^\rho}-P_A\|_\infty
     \le C_T^2\|U_{A^\rho}-U_A\|_\infty.
   \]
+  For the range identity below, the rightmost free-group factor changes
+  the input, while the leftmost factor preserves $iE$. Thus, composing
+  $U_A(t,s)-I$ with these factors preserves its range inclusion in $iE$.
   All finite moments and uniform $L^p$ convergence therefore transfer to the
   physical flows. This does not place those flows in the norm-continuous
   triangle space or assert operator-norm continuity of the free group. For each
@@ -485,9 +489,6 @@ of~\eqref{E:constant-phase-driver} and pass to the physical flow on $F$.
     P_A(t,s)-S_F(t-s)
     =S_F(t)(U_A(t,s)-I)S_F(-s)
   \]
-  has the same range property as $U_A(t,s)-I$ after bounded free propagation:
-  the rightmost factor changes the input, and the leftmost factor preserves
-  $iE$. Thus, it
   has range in $iE$, since $S_F(t)iE = iE$. This proves
   Proposition~\ref{P:constant-gaussian-flow}.
 \end{proof}
