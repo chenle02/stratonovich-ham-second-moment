@@ -1,0 +1,402 @@
+\section{Bounds for the operator path with explicit radius dependence}
+\label{S:radius-stochastic-anchor}
+
+Retain every original covariance and amplitude in Hypothesis~\ref{H:homog}, with
+$a = \alpha_0$, and the real phase $E = H^{1/2}\times H^{-1/2}$. Use the fixed
+cutoff profile $\eta$ of Section~\ref{S:uniform-mean-regulation} and physical
+mask $m_R = \eta(\cdot/R)^2$, $R \ge 1$. In the variance construction the base
+mask is $\zeta = \eta^2$. The balanced unitary is $J_0(u,v) =
+(\Lambda^{1/2}u,\Lambda^{-1/2}v)$. Fix a finite horizon $B \ge 1$ and parameters
+\begin{equation}\label{E:radius-anchor-parameters}
+  0<\gamma<\min\left(\frac12,\frac{2-\alpha}{2}\right),\qquad
+  \frac12<\theta<\eta_t<\beta_t<
+  \min\left(1-\frac a2,\frac{3-a-\alpha}{2}\right).
+\end{equation}
+The strict subcritical assumptions make these intervals nonempty. Fix one even
+integer $Q \ge 2$ such that
+\begin{equation}\label{E:radius-anchor-Q}
+  Q\gamma>d,\qquad
+  \beta_t-\eta_t-\frac1Q>0,\qquad
+  Q>\frac{2d}{1-a}.
+\end{equation}
+Such a $Q$ exists because all three lower thresholds are finite. It stays fixed
+as $\delta$ tends to zero. Constants below may depend on the model, $B,Q$, these
+exponents and the fixed auxiliary cutoff profiles. They are independent of the
+spatial radius, noise-basis truncation, moment index and deterministic residual
+projection unless explicitly stated otherwise.
+
+\subsection{Uniform outer factors and the exact whole-space envelope}
+
+Fix real $\chi_0 \in C_c^\infty(\R^d)$, equal to one on $B_1$ and supported in
+the closed ball of radius two. Choose real $\psi_0 \in C_c^\infty(\R^d)$, equal
+to one on a neighbourhood of $\operatorname{supp}\chi_0$ and supported inside
+$B_3$. For $\rho \ge 1$ put $\chi_\rho(x) = \chi_0(x/\rho)$, $\psi_\rho(x) =
+\psi_0(x/\rho)$ and $L = 2\pi\rho$. Since $3 < \pi$, both cutoffs are supported
+strictly inside the cube of side $L$. The auxiliary torus has unnormalized
+$L^2(Q_L,\ud x)$, orthonormal modes $L^{-d/2}e^{ik\cdot x/\rho}$ and Sobolev
+weights $\langle k/\rho\rangle^r$.
+
+\begin{lemma}[Uniform rescaled outer maps]\label{L:radius-outer-maps}
+  The cutoff periodization and recovery maps from
+  Lemma~\ref{L:cutoff-factorization} satisfy, for every real $r$,
+  \[
+    \|\mathcal{P}_{\psi_\rho}:H^r(\R^d)\to H^r(\mathbb{T}_L)\|
+    \le C_{\psi_0,r},\qquad
+    \|\mathcal{E}_{\chi_\rho}:H^r(\mathbb{T}_L)\to H^r(\R^d)\|
+    \le C_{\chi_0,r},
+  \]
+  independently of $\rho \ge 1$.
+\end{lemma}
+
+\begin{proof}
+  We rescale the exact Fourier kernels and bound their integral and
+  lattice-sum norms separately. The radius powers cancel in the mixed Schur
+  estimate, after which density gives the full Sobolev maps.
+
+  The exact weighted Fourier kernels are
+  \begin{align*}
+    &L^{-d/2}
+    \left(\frac{\langle k/\rho\rangle}{\langle\xi\rangle}\right)^r
+    \widehat{\psi_\rho}(k/\rho-\xi),\\
+    &L^{-d/2}
+    \left(\frac{\langle\xi\rangle}{\langle k/\rho\rangle}\right)^r
+    \widehat{\chi_\rho}(\xi-k/\rho).
+  \end{align*}
+  There is no additional $(2\pi)^{-d/2}$: it cancels between Fourier inversion
+  and the ordinary integral in the first kernel, while the torus normalization
+  gives the second. For either base profile $\phi_0$, $\widehat{\phi_\rho}(t) =
+  \rho^d\widehat{\phi_0}(\rho t)$. Peetre's inequality~\eqref{E:cutoff-peetre},
+  also for negative $r$, and $\langle(\rho\xi-k)/\rho\rangle \le
+  \langle\rho\xi-k\rangle$ bound the relevant kernel by
+  \[
+    C_r\rho^{d/2}F_r(k-\rho\xi),\qquad
+    F_r(t)=|\widehat{\phi_0}(\pm t)|\langle t\rangle^{|r|}.
+  \]
+  The bracket comparison uses $\rho\ge1$; consequently, the constants
+  multiplying the explicit radius powers in the two Schur bounds depend only
+  on the fixed $\phi_0,r,d$.
+  The nonnegative $F_r$ is integrable and bounded by arbitrarily high inverse
+  powers of $\langle t\rangle$. At fixed $k$, integration in $\xi$ gives a bound
+  $C\rho^{-d/2}$. At fixed $\xi$, summation in $k$ gives $C\rho^{d/2}$:
+  translate $\rho\xi$ into a unit lattice cell and sum a power tail of order
+  greater than $d$, as in~\eqref{E:cutoff-lattice-sum}. This lattice spacing is
+  one and has no remaining $\rho$ dependence. The mixed Schur estimate bounds
+  the operator norm by the square root of the product of those two quantities.
+  Their radius powers cancel. For recovery the row and column roles are
+  reversed.
+
+  In the integral bound, the substitution $\rho\xi-k$ contributes $\rho^{-d}$.
+  Multiplying by the kernel's factor $\rho^{d/2}$ gives $\rho^{-d/2}$.
+  Bounded kernel extension from Schwartz functions and torus polynomials gives
+  the full Sobolev maps by density. Their distributional meanings are the same
+  cutoff maps as in Lemma~\ref{L:cutoff-factorization}; no point sampling of a
+  rough Fourier function is used. This includes negative indices. This proves
+  Lemma~\ref{L:radius-outer-maps}.
+\end{proof}
+
+Lemma~\ref{L:radius-outer-maps} bounds the two outer maps independently of
+$\rho \ge 1$. The proof below places a diagonal inclusion on the torus between
+them. We now sum the $q$th powers of the singular values of this inclusion and
+take the $q$th root, which produces the factor $\rho^{d/q}$.
+
+\begin{proposition}[Radius-explicit compact envelopes]
+  \label{P:radius-compact-envelopes}
+  For real $\sigma$, $\gamma > 0$ and $q \ge 1$ with $q\gamma > d$,
+  \begin{equation}\label{E:radius-cutoff-Schatten}
+    \|\Lambda^\sigma\chi_\rho\Lambda^{-\sigma-\gamma}\|_{S_q}
+    \le C_{\sigma,\gamma,q,d,\chi_0,\psi_0}\rho^{d/q}.
+  \end{equation}
+  In the balanced coordinates of~\eqref{E:compact-two-factors},
+  \begin{equation}\label{E:radius-two-envelopes}
+    \|K_{\rm in}\|_{S_q}=\|K_{\rm out}\|_{S_q}
+    \le C_q\rho^{d/q}.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  We factor the cutoff through the auxiliary torus. We compare the diagonal
+  inclusion sum with a Euclidean integral and then use finite-rank
+  approximations to transfer that sum to the whole-space operator.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We use the full-domain recovery factorization.
+  The exact recovery identity, with $\chi_\rho\psi_\rho = \chi_\rho$, gives
+  \[
+    \Lambda^\sigma\chi_\rho\Lambda^{-\sigma-\gamma}
+    =\Lambda^\sigma\mathcal{E}_{\chi_\rho}\mathcal{I}_\gamma
+    \mathcal{P}_{\psi_\rho}\Lambda^{-\sigma-\gamma}.
+  \]
+  Here $\mathcal{I}_\gamma:H^{\sigma+\gamma}(\mathbb{T}_L) \to
+  H^\sigma(\mathbb{T}_L)$ has diagonal singular values $\langle
+  k/\rho\rangle^{-\gamma}$. The outer Bessel maps are unitary on their indicated
+  Sobolev domains. The preceding lemma bounds both other outer maps uniformly in
+  $\rho$. This is an equality on the full whole-space domain by the recovery
+  proof and density, including negative $\sigma$.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We bound the diagonal sum by a volume integral.
+  Put $u = q\gamma > d$. If $x \in k+[-1/2,1/2]^d$, then
+  \[
+    \langle x/\rho\rangle
+    \le\sqrt2\langle k/\rho\rangle\langle(x-k)/\rho\rangle
+    \le c_d'\langle k/\rho\rangle,\qquad
+    c_d'=\sqrt{2(1+d/4)}.
+  \]
+  Integrate over the unit cubes to obtain
+  \begin{equation}\label{E:radius-lattice-volume}
+    \sum_{k\in\mathbb{Z}^d}\langle k/\rho\rangle^{-u}
+    \le(c_d')^u\rho^d\int_{\R^d}\langle y\rangle^{-u}\ud y
+    \le C_{d,u}\rho^d .
+  \end{equation}
+  The integral is finite: dyadic annuli outside the unit ball give a geometric
+  series with terms bounded by $C_d2^{j(d-u)}$.
+
+  The unit cubes partition Euclidean space and each has volume one. The
+  preceding weight comparison bounds the constant cube value $\langle
+  k/\rho\rangle^{-u}$ by $(c_d')^u\langle x/\rho\rangle^{-u}$. Summing the
+  cube integrals and substituting $y=x/\rho$ gives the factor $\rho^d$. Taking
+  a $q$th root later gives $\rho^{d/q}$.
+
+  \medskip
+  \noindent\textit{Step 3.~}We transfer the singular-value bound to the two
+  whole-space envelopes.
+  Arrange the inclusion's diagonal values in decreasing order $(\lambda_j)$.
+  They tend to zero. Retaining its first $j-1$ coordinates has rank less than
+  $j$ and error $\lambda_j$. Compose this approximation with the bounded outer
+  factors. The singular-value approximation argument in
+  Proposition~\ref{P:cutoff-singular-values} gives $s_j \le
+  C_{\chi_0,\sigma}C_{\psi_0,\sigma+\gamma}\lambda_j$. Finite-rank approximation
+  also proves compactness. Summing $q$th powers and
+  using~\eqref{E:radius-lattice-volume} proves~\eqref{E:radius-cutoff-Schatten}.
+  No separate Schatten ideal theorem is needed.
+
+  The two blocks of $K_{\rm out} = P_{\chi_\rho}D_\gamma$ are the whole-space
+  operators with $\sigma = 1/2,-1/2$. Their $q$th power norms add, proving its
+  bound. Proposition~\ref{P:compact-two-envelopes} gives $K_{\rm in} = V K_{\rm
+  out}V$ for the unitary coordinate swap $V(z_1,z_2) = (z_2,z_1)$, so their
+  norms agree. In~\eqref{E:radius-anchor-parameters}, $\gamma < 1/2$ and
+  $q\gamma > d$ force $q > 2d \ge 2$; there is no Hilbert--Schmidt conclusion.
+  Neither $P_{\chi_\rho}$ nor its adjoint is assumed selfadjoint or idempotent.
+  This proves Proposition~\ref{P:radius-compact-envelopes}.
+\end{proof}
+
+\subsection{The operator path and covariance contractions}
+
+Write $M_R(W) = A_{m_R}(W)$ for the $E$ interaction operator path starting at
+zero on $[0,B]$ from Proposition~\ref{P:actual-operator-driver}. The phase
+remains the whole-space $E$ throughout.
+
+\begin{proposition}[Radius-explicit path moments]
+  \label{P:radius-actual-moments}
+  Under~\eqref{E:radius-anchor-parameters}--\eqref{E:radius-anchor-Q}, for every
+  finite $v \ge 1$,
+  \begin{equation}\label{E:radius-actual-path-moments}
+    \|M_R(W)\|_{L^v(C^\theta([0,B];\mathcal{L}(E)))}
+    \le C_{Q,B}\sqrt v\,R^{d/Q},\qquad R\ge1.
+  \end{equation}
+  The constant does not depend on $v$ or $R$. This is an $E$ operator-path
+  estimate; the two constant columns on $F$ require their own estimates. Any
+  later projection used in a Cameron comparison must also satisfy its
+  orthogonality and covariance hypotheses.
+\end{proposition}
+
+\begin{proof}
+  We keep the physical noise mask fixed while choosing a larger localization
+  envelope. We use only one fixed Schatten index to extract the radius factor,
+  then apply the dyadic path estimate uniformly over all higher moment
+  indices.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We choose a localization envelope covering the
+  propagated support.
+  Use the given smooth-test basis from Lemma~\ref{L:driver-noise-basis}, $g_j =
+  W(f_j)$, and its finite paths $M_N = \sum_{j\le N}g_jA_j$. These coefficient
+  paths use the same given noise as in Lemma~\ref{L:driver-holder-limit}, not
+  source approximations. Choose
+  \[
+    \rho=2R+B+2\le(B+4)R,\qquad \chi=\chi_0(\cdot/\rho).
+  \]
+  The plateau covers $B_{2R+B+1}$. Thus, both explicit localization identities
+  \eqref{E:driver-actual-localization} hold for this envelope. The physical
+  noise mask remains $m_R$. Both envelopes $K_{\rm in},K_{\rm out}$ here use
+  this same $\chi_\rho$.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We estimate increments using both variance bounds.
+  For an interval $I \subset [0,B]$ of length $0 < h \le 1$,
+  Proposition~\ref{P:wave-two-variances} and
+  Lemma~\ref{L:driver-actual-variances} give both finite weighted variances with
+  bound $V_{B,\mathrm{var}}h^{2-a}B_\alpha(h)$, uniformly in $R,N,I$. In
+  particular, the base mask is the same fixed $\eta^2$ required by that variance
+  theorem. Corollary~\ref{C:finite-gaussian-operators}, applied in the balanced
+  coordinates, gives for every even $q \ge Q$
+  \[
+    \|M_N(I)\|_{L^q(S_q)}
+    \le\sqrt{q-1}\sqrt{V_{B,\mathrm{var}}}\,
+    h^{1-a/2}B_\alpha(h)^{1/2}\|K_{\rm out}\|_{S_q},
+  \]
+  where $B_\alpha(h)$ is $1$, $1+\log(1/h)$ or $h^{1-\alpha}$ according as
+  $\alpha < 1$, $\alpha = 1$ or $\alpha > 1$. Both variances and both
+  localizations have been checked; individual basis-dependent coefficient bounds
+  are not summed.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We extract the radius factor at the fixed index.
+  For $q \ge Q$, the unnormalized Schatten norms obey $\|K_{\rm out}\|_{S_q} \le
+  \|K_{\rm out}\|_{S_Q}$. Indeed, normalize a nonzero singular-value sequence by
+  its $\ell^Q$ norm; each entry is at most one, so its $q$th power sum is at
+  most its $Q$th power sum. The zero case is immediate.
+  Apply~\eqref{E:radius-two-envelopes} only at the fixed index $Q$. Use $\|A\|
+  \le \|A\|_{S_q}$ and $\sqrt{q-1} \le \sqrt q$. The balanced Hilbert
+  complexification has the same operator norm as its real restriction, and
+  $\rho^{d/Q} \le (B+4)^{d/Q}R^{d/Q}$. Since $\beta_t$ is strictly below the
+  corresponding short-time power, it follows that
+  \begin{equation}\label{E:radius-finite-increment}
+    \|M_N(t)-M_N(u)\|_{L^q(\mathcal{L}(E))}
+    \le C_{Q,B}\sqrt q\,R^{d/Q}|t-u|^{\beta_t},
+    \qquad |t-u|\le1.
+  \end{equation}
+  At $\alpha = 1$, the factor $\sqrt{1+\log(1/h)}$ is absorbed by the strict gap
+  $1-a/2-\beta_t > 0$. For $\alpha > 1$, the power is $(3-a-\alpha)/2$. These
+  power/log constants are independent of $R,N,q$. Longer increments are finite
+  sums of increments of length at most one, with constants depending only on the
+  fixed $B$.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We sum dyadic increments and pass to the path
+  limit.
+  Let $D_n(F)$ be the largest adjacent increment on the grid $kB2^{-n}$ of
+  $[0,B]$. For fine levels $B2^{-n} \le 1$, the finite-maximum bound gives
+  \[
+    \|D_n(M_N)\|_{L^q}
+    \le2^{n/q}C_{Q,B}\sqrt q\,R^{d/Q}(B2^{-n})^{\beta_t}.
+  \]
+  No independence of increments is used. The sum after multiplication by
+  $2^{n\eta_t}$ converges uniformly for even $q \ge Q$, because its geometric
+  ratio is at most $2^{-(\beta_t-\eta_t-1/Q)} < 1$. The finitely many coarse
+  levels are controlled by unit partitions. The deterministic dyadic chaining
+  argument in Lemma~\ref{L:driver-holder-limit} therefore bounds the
+  $L^qC^{\eta_t}$ norms by $C_{Q,B}\sqrt q\,R^{d/Q}$. Each finite path is
+  continuous and starts at zero, as required there. The fixed-horizon embedding
+  $C^{\eta_t}\hookrightarrow C^\theta$ gives the same estimate in $C^\theta$.
+
+  For each fixed $R$, Lemma~\ref{L:driver-holder-limit} identifies $M_R(W)$ as
+  the all-finite-moment $C^\theta$ limit of these very $M_N$. Pass the uniform
+  finite-$N$ estimate to this limit. Uniform convergence in $R$ is unnecessary:
+  the limiting bound has its explicit radius dependence at every $R$. For
+  arbitrary $v \ge 1$, choose an even $q \ge \max(v,Q)$ with $q \le v+Q+2 \le
+  (Q+3)v$. Lyapunov's inequality gives~\eqref{E:radius-actual-path-moments},
+  absorbing $\sqrt{Q+3}$ into the fixed constant. This proves
+  Proposition~\ref{P:radius-actual-moments}.
+\end{proof}
+
+Proposition~\ref{P:radius-actual-moments} concerns the path $M_R(W)$ of the
+noise $W$ itself. Proposition~\ref{P:radius-mean-anchor} works instead with
+residual noises $Y_m$, obtained from $W$ through a deterministic orthogonal
+projection. We now transfer the moment bound to such noises.
+
+\begin{corollary}[Deterministic covariance residuals]
+  \label{C:radius-covariance-residuals}
+  Let $Y$ be a centered Gaussian linear noise on the coupled space, with
+  $\operatorname{Var}Y(f) \le C\|f\|_{H_W}^2$, $C \ge 0$. Its transferred
+  operator path satisfies
+  \[
+    \|M_R(Y)\|_{L^v(C^\theta)}
+    \le\sqrt C\,C_{Q,B}\sqrt v\,R^{d/Q}.
+  \]
+  In particular, this holds with $C = 1$ for $Y_m(f) = W((I-\Pi)T_{\delta,m}f)$,
+  for any deterministic orthogonal projection $\Pi$ on the slow $H_W$. Its rank
+  may be infinite and it may depend on $\delta,R$.
+\end{corollary}
+
+\begin{proof}
+  Proposition~\ref{P:source-gaussian-transfer} is a linear Gaussian covariance
+  contraction theorem for this same physical mask and these same deterministic
+  coefficient maps. It bounds the path norm by $\sqrt C$ times the reference
+  isonormal operator-path norm. The reference has the canonical operator-path
+  law used in Proposition~\ref{P:radius-actual-moments}; the $Y$ is not replaced
+  in this comparison. The zero case gives zero directly. This proves the first
+  assertion. For the second, the original isometry \eqref{E:raw-block-pullback},
+  proved in Lemma~\ref{L:raw-block-inputs}, and $\|I-\Pi\| \le 1$ give
+  $\operatorname{Var}Y_m(f) \le \|f\|_{H_W}^2$, where the right side is the
+  original norm in fast coordinates. The joint residuals retain the given slow
+  $W$ and may be correlated. They need not lie in the span of an individual fast
+  noise, which is not a hypothesis of Gaussian transfer. No random
+  noise-dependent projection is used. This proves
+  Corollary~\ref{C:radius-covariance-residuals}.
+\end{proof}
+
+\subsection{The growing-radius expected-norm anchor}
+
+Corollary~\ref{C:radius-covariance-residuals} bounds each residual path with
+the growing factor $R^{d/Q}$. We now average over the time blocks with the
+amplitude $g_\delta$. The last condition in~\eqref{E:radius-anchor-Q} makes
+$g_\delta R^{d/Q}$ tend to zero at the radius $R_\delta = \delta^{-1}+2$.
+
+\LeanMarker{P:radius-mean-anchor}
+\begin{proposition}[Averaged block mean tends to zero]
+  \label{P:radius-mean-anchor}
+  Fix integer $B \ge 1$ and use the true block partition $B,\delta,N,\ell_m$ of
+  Section~\ref{S:actual-cameron-mean}, with $0 < \delta < \min(1,1/B)$ and $N =
+  \lfloor1/(\delta B)\rfloor$. For $Y_m$ as in
+  Corollary~\ref{C:radius-covariance-residuals}, put
+  \[
+    X_m(u)=g_\delta M_R(Y_m)(\min(u,\ell_m)),\qquad
+    Z_\delta=\left(\delta\sum_{m=0}^N
+    \|X_m\|_{C^\theta}^p\right)^{1/p},\qquad
+    g_\delta=\delta^{(1-a)/2},
+  \]
+  for any fixed $p \ge 1$. Then
+  \begin{equation}\label{E:radius-mean-anchor}
+    \E Z_\delta\le(2/B)^{1/p}C_{Q,B}\sqrt p\,
+    g_\delta R^{d/Q}.
+  \end{equation}
+  In particular, for $R_\delta = \delta^{-1}+2$,
+  \begin{equation}\label{E:radius-mean-anchor-decay}
+    2\E Z_\delta
+    \le2(2/B)^{1/p}C_{Q,B}\sqrt p\,3^{d/Q}
+    \delta^{e_{\rm anchor}}\longrightarrow0,\qquad
+    e_{\rm anchor}=\frac{1-a}{2}-\frac dQ>0 .
+  \end{equation}
+  Both bounds are uniform in the deterministic orthogonal projection.
+\end{proposition}
+
+\begin{proof}
+  Stopping an interaction primitive starting at zero and extending it constantly
+  to $B$ does not increase its supremum or H\"older seminorm. An empty last
+  interval gives the zero path. Probability normalization and Lyapunov give
+  \begin{align*}
+    \E Z_\delta
+    &\le(\E Z_\delta^p)^{1/p}
+    =\left(\delta\sum_{m=0}^N
+    \E\|X_m\|_{C^\theta}^p\right)^{1/p}\\
+    &\le[\delta(N+1)]^{1/p}g_\delta
+    C_{Q,B}\sqrt p\,R^{d/Q}.
+  \end{align*}
+  This is linearity for a finite sum; no time-block independence or maximum over
+  blocks is used. Since $\delta B < 1$, we have $N \ge 1$ and $N+1 \le 2/(\delta
+  B)$, proving~\eqref{E:radius-mean-anchor}.
+
+  Now $R_\delta \le 3/\delta$ because $\delta < 1$. The last condition
+  in~\eqref{E:radius-anchor-Q} is equivalent to $Q(1-a) > 2d$. Dividing by $2Q >
+  0$ gives $e_{\rm anchor} > 0$. Substitute this radius
+  into~\eqref{E:radius-mean-anchor} to
+  obtain~\eqref{E:radius-mean-anchor-decay}. The estimate holds at each fixed
+  $B,p,Q$ and model, uniformly in every deterministic residual projection. This
+  proves Proposition~\ref{P:radius-mean-anchor}.
+\end{proof}
+
+These bounds concern the expected operator-path norm on $E$. They do not give an
+$F$ estimate with constant initial-data columns. The radius substitution is
+numerical; cone coverage and source-to-point transfer require their separate
+arguments. No concentration, integration over an infinite sequence of Gaussian
+coordinates or nonlinear moment upper bound follows from this section alone. The
+constants need not be uniform as $Q,B$ tend to infinity or as model parameters
+approach an endpoint. For zero covariance, the operator paths and stochastic
+bounds vanish directly.

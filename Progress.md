@@ -19,7 +19,15 @@ chose "Yes, Choice B rules" (`fe4efb212ca4`) for fresh rereads of every
 second-pass-changed final file, same route/profile and retry disclosures,
 no tools, fallback or grade rerun. Files 16-18 may run now after exact packet
 freeze and preflight, with new successor IDs; earlier reports stay bound.
-No provider call has yet been made on these successor inputs. The remaining 25 files await per-file final handoffs.
+RP039/RP040/RP041 are now frozen as fresh successor packets for all
+5/5/4 target proof pairs, respectively (14 total), with complete baseline/new
+modules and the same original-step reconstruction contract. Root independently
+checked Git payloads, statement/proof hashes and LF ranges, read all three
+contracts, and checked immutable packet digests and all-deny local profiles.
+Caps 65,536 per generation and 3,600 seconds, at most three processes; native
+recovery permitted prospectively with unknown aggregate accounting retained.
+No provider call has yet been made on these successor inputs at this freeze.
+See `CHAPTER9-SUCCESSOR-FREEZE.json` in the policy record directory. The remaining 25 files await per-file final handoffs.
 The already-started Claude Fable reader continues as an optional editorial
 aid with prompt, actual identity, stop points and dispositions retained.
 See `CHAPTER9-FINAL-SOURCE-HANDOFF.json` in the policy record directory.
