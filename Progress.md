@@ -185,8 +185,21 @@ have been checked. Caps are65,536,32,768,65,536 respectively; timeout3,600
 seconds each. Each is one fresh pure DeepSeek V4 Pro session with no coordinator
 retry, continuation or fallback. Agent24's dated gates/build/maps and worker
 QA support these frozen candidates; Agent16's integrated adoption/release
-verification remains separate. All three separate sessions are RUNNING; no
-independent result yet.
+verification remains separate. All three processes are terminal. RP006
+returned raw PASS/high and seven complete/preserved proof pairs; root supports
+scoped preservation with report-only prefactor/wording notes. RP008 returned
+raw PASS_WITH_NOTES/high and seven complete/preserved proof pairs; root
+supports scoped preservation with source wording and report transcription,
+provenance and LF-pointer notes retained. No source repair or callback is
+required by either report. Native exact-prompt/model/fresh-session/zero-tool,
+stop and unchanged-input checks pass for both.
+
+RP007 obtained no public report: finish=length,32,768 reasoning tokens,0
+public output, processrc0. Literal status NOT_OBTAINED; verdict, confidence
+and public reading flags are null, with no mathematical defect inferred. Root
+chose the cap too small. No repeat has run; the one-attempt record is retained
+and a concrete larger-cap technical-repeat scope is being prepared separately
+for disposition. No historical grade or whole-book acceptance is upgraded.
 
 RP006 launched at `2026-11-16T06:49:29.137939+00:00` as `readable-compact-mean-50f922b7d61c4945a639b894a78e90b7`.
 RP007 launched at `2026-11-16T06:49:30.319083+00:00` as `readable-exact-scaling-17c182e539f84afcb4a676c3f7f9e11f`.
