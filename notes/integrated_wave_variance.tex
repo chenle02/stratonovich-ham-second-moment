@@ -70,10 +70,6 @@ density.
     A_\xi(q) = \int_{|\eta|\le5q}\langle\eta\rangle^{-1}
     \nu_\xi(\ud\eta).
   \]
-  The ball condition transfers to $\nu_\xi$ because the inverse image of
-  $B(0,R)$ under $\lambda \mapsto \xi-\lambda$ is $B(\xi,R)$. On the unit ball
-  the weight is at most one. On the $j$th annulus it is at most $2^{-j}$,
-  while that annulus has mass at most $C2^{(j+1)\alpha}$.
   Choose $N = \lceil\log_2(5q)\rceil$, so $5q \le 2^N < 10q$. Splitting into the
   unit ball and the annuli $2^j < |\eta| \le 2^{j+1}$ gives
   \[
@@ -101,11 +97,6 @@ density.
     2\langle\xi\rangle^{-\epsilon}A_\xi(q)
     \le 2q^{-\epsilon}A_\xi(q).
   \]
-  The factor $\langle\xi\rangle^{-\epsilon}$ comes from combining the
-  numerator $\langle\xi\rangle^{2\gamma}$ with the first denominator of
-  $\Phi_h$. Since $\langle\xi\rangle \ge q$ and $\epsilon > 0$, this factor is
-  at most $q^{-\epsilon}$. We can now apply the three cases of the weighted
-  mass estimate.
   If $\alpha < 1$, this is uniformly bounded
   by~\eqref{E:frequency-inverse-bessel}. If $\alpha = 1$, the bound follows from
   \[
@@ -160,10 +151,6 @@ density.
     \frac{h^{a-1}2^{(L+1)(\alpha+a-2)}}{1-2^{\alpha+a-2}}
     \le \frac{h^{1-\alpha}}{1-2^{\alpha+a-2}}.
   \]
-  Above $L$, the summand is bounded by $h^{a-1}2^{j(\alpha+a-2)}$. Its ratio
-  is strictly less than one by $\alpha+a < 2$, which gives the displayed
-  geometric tail. Below $L$, only the sign of $\alpha-1$ determines the finite
-  sum.
   The inequality uses $2^{L+1} > 1/h$ and the negative exponent. The finite sum
   is bounded by $1/(1-2^{\alpha-1})$ for $\alpha < 1$, by $1+\log_2(1/h)$ for
   $\alpha = 1$, and by
@@ -199,10 +186,6 @@ by $h^{2-a}$, we absorb it into a power of $h$.
   Both upper endpoints in~\eqref{E:variance-beta-range} exceed one half, by $a <
   1$ and $\alpha+a < 2$. If $\alpha < 1$, use $2-a > 2\beta$ in
   Proposition~\ref{P:frequency-row}. If $\alpha > 1$, use $3-a-\alpha > 2\beta$.
-  For $\alpha<1$ the profile is one and the resulting power is $h^{2-a}$.
-  Since $0<h\le1$ and $2-a>2\beta$, it is at most $h^{2\beta}$. For
-  $\alpha>1$, multiplication by the profile $h^{1-\alpha}$ gives
-  $h^{3-a-\alpha}$, bounded in the same way because $3-a-\alpha>2\beta$.
   For $\alpha = 1$, set $\delta = 2-a-2\beta > 0$ and $u = \log(1/h)$. Then
   \[
     h^\delta(1+\log(1/h))
@@ -315,10 +298,6 @@ measure with $\nu_R(B(y,r)) \le C_\nu r^\alpha$, uniformly in $R$.
   \[
     |K|\Gamma(K-K)\|F(t)\|_\infty\|H(u)\|_\infty.
   \]
-  The compact support confines the spatial integration variable to a set of
-  volume at most $|K|$. If both test factors are nonzero, their difference
-  belongs to $K-K$, whose $\Gamma$ mass is finite because $\Gamma$ is Radon.
-  Bounding both factors by their suprema gives the displayed estimate.
   Indeed, only $y \in K-K$ contributes to $\int\Gamma(\ud y)\int
   F(t,x)\overline{H(u,x-y)}\ud x$. Combine this with the temporal Schur bound
   and approximate the interval indicator and the continuous time dependence by
@@ -350,10 +329,6 @@ measure with $\nu_R(B(y,r)) \le C_\nu r^\alpha$, uniformly in $R$.
   $\zeta_R$ preserves these $L^2$ Schwartz-seminorm limits, so the masked
   differences converge in the $\mu$ spectral norm too. The preceding
   compact-support estimate also gives convergence in the original completion.
-  For every finite temporal tensor, original-noise evaluation and the
-  auxiliary contraction are the same masked evaluation. Both sequences
-  converge in the original $L^2(\Omega)$. Uniqueness of the limit in that
-  space therefore identifies the two extensions.
   Hence, the auxiliary extension and original-noise limit agree on these
   products. Constants for this admission argument may depend on $R$; they are
   not the uniform variance constants below.
@@ -366,9 +341,6 @@ measure with $\nu_R(B(y,r)) \le C_\nu r^\alpha$, uniformly in $R$.
     A(-\xi) = \overline{A(\xi)},\qquad
     A(\xi) = \langle\widehat{f}(\xi),\widehat{g}(\xi)\rangle_{H_a^{\mathbb{C}}}.
   \]
-  The real part of $A$ is even and its imaginary part is odd by the displayed
-  identity. The measures are even, and the relevant integrals are finite.
-  Thus, the integral of the imaginary part is zero.
   Integration against either even $\mu$ or even $\nu_R$ cancels the imaginary
   mixed term. Expanding the squared norm of $\widehat{f}+i\widehat{g}$, then
   using the preceding approximation, extends
@@ -384,6 +356,12 @@ measure with $\nu_R(B(y,r)) \le C_\nu r^\alpha$, uniformly in $R$.
 
   \medskip
   \noindent\textit{Step 4.~}We compute the physical adjoints.
+  The displacement and velocity pairings carry $\Lambda$ and $\Lambda^{-1}$,
+  respectively; moving these weights onto $w$ in $S(-t)(0,b(t)v_z(t))$ gives
+  the negative sine and cosine terms defining $G_w$.
+  The first-response integral below means $\int_I S(-t)B(b(t))S(t)z\,\ud t$ in
+  $E$; its existence allows the pointwise identity to be integrated, but is
+  not needed for the pointwise adjoint calculation itself.
   Smooth multiplication is bounded on each Sobolev space: Fourier convolution,
   the inequality $\langle\xi\rangle^r\langle\eta\rangle^{-r} \le
   2^{|r|/2}\langle\xi-\eta\rangle^{|r|}$ and weighted Schwartz decay reduce this
@@ -392,16 +370,8 @@ measure with $\nu_R(B(y,r)) \le C_\nu r^\alpha$, uniformly in $R$.
   the ordinary first-response integral exists on states. Since $S(-t)(0,f) =
   (-\sin(t|D|)f/|D|,\cos(t|D|)f)$, moving the real self-adjoint multipliers and
   the two Sobolev weights onto $w$ proves \eqref{E:variance-physical-adjoint}.
-  The displacement part of the $E$ pairing carries $\Lambda$ and the velocity
-  part carries $\Lambda^{-1}$. After moving these weights onto $w$, the first
-  entry of $S(-t)(0,f)$ produces the negative sine term and the second
-  produces the cosine term in $G_w$. Set $f = b(t)v_z(t)$ to obtain the
-  physical identity.
-  For the cutoff adjoint, move the real multiplication by $\chi$ across each
-  weighted pairing. In the first component this gives
-  $\Lambda^{-1}\chi\Lambda$; in the second it gives $\Lambda\chi\Lambda^{-1}$.
-  The different weights explain why the phase adjoint is not ordinary
-  componentwise multiplication.
+  The observed form is $\ell_R(I;z,D_\chi^{*,E}w)$: applying $D_\chi$ to an
+  output moves its phase adjoint onto the test vector $w$.
   The same weighted duality gives \eqref{E:variance-cutoff-adjoint}. Inserting
   this adjoint in $G_w$ is the correctly observed form; $D_\chi$ need not be
   self-adjoint on $E$. This deterministic identity does not identify a
@@ -465,19 +435,14 @@ Proposition~\ref{P:wave-two-variances} uses it in both directions.
 \end{lemma}
 
 \begin{proof}
+  The nonconjugated integrand requires the conjugate orthonormal family in
+  scalar Bessel, because the scalar inner product conjugates its second
+  argument; complex conjugation preserves orthonormality.
   Expand $g$ in a countable orthonormal basis of $H$. On each scalar coefficient
   apply scalar Bessel to the orthonormal family $\{\overline{u_k}\}$, or to
   $\{u_k\}$ for the conjugated version. Scalar finite Bessel follows by
   subtracting an orthogonal finite projection and expanding its nonnegative
   squared norm. Sum over the $H$ basis and use Parseval and nonnegative Tonelli.
-  The conjugation in the Bessel family is needed because the integrand
-  contains $u_{k,j}$ without a conjugate, whereas the scalar inner product
-  conjugates its second argument. Complex conjugation preserves
-  orthonormality.
-  The coefficient of each Bochner integral along a fixed basis vector is the
-  corresponding scalar integral. Parseval therefore expresses its squared norm
-  as the sum of the squared scalar coefficients. Nonnegativity permits
-  exchanging this sum with the finite family sum and the Lebesgue integral.
   The Bochner integrals exist by $L^2$ Cauchy--Schwarz. A finite-dimensional $H$
   uses its finite basis, and the zero space is immediate. No independence is
   involved. This proves Lemma~\ref{L:phase-bessel}.
@@ -538,12 +503,6 @@ Proposition~\ref{P:wave-two-variances} uses it in both directions.
   required $L^2$ integrability. Later $\lambda$ integrals are of nonnegative
   functions; their finiteness follows from the estimates below.
 
-  For fixed $\lambda$, the frequency denominators are at most one and all wave
-  factors are uniformly bounded in time. The temporal Schur bound consequently
-  gives a uniform bound on each kernel's $H_a^{\mathbb{C}}$ norm.
-  Multiplication by a shifted Schwartz component gives a square-integrable
-  function of the remaining frequency. This justifies applying Bessel before
-  integrating in $\lambda$.
 
   \medskip
   \noindent\textit{Step 3.~}We sum over the input family.
@@ -554,12 +513,6 @@ Proposition~\ref{P:wave-two-variances} uses it in both directions.
     1_I\mathcal{K}_{ij}(\cdot;\eta+\lambda,\eta)
     \overline{V_i(\eta+\lambda)}.
   \]
-  Because $J$ is unitary, $\{U_k\}$ is orthonormal in the unweighted
-  phase-coordinate space. For fixed $\lambda$, the inner integral is the
-  Bessel coefficient against this family with Hilbert-valued components
-  $g_j^\lambda$. After Bessel removes the family sum, Cauchy--Schwarz for the
-  two terms indexed by $i$ gives a factor two. Summing the entry bound over
-  the two values of $j$ gives the second factor two.
   Lemma~\ref{L:phase-bessel} and Cauchy--Schwarz over the two output components
   give
   \begin{align*}
@@ -569,15 +522,13 @@ Proposition~\ref{P:wave-two-variances} uses it in both directions.
     &\le 4A_T h^{2-a}\Phi_h(\eta+\lambda,\eta)
     \sum_i|V_i(\eta+\lambda)|^2.
   \end{align*}
+  Under $\xi=\eta+\lambda$, the factor $\sum_i|V_i(\xi)|^2$ is independent of
+  $\lambda$, leaving the row integral as its coefficient.
   Change variables $\xi = \eta+\lambda$ in the Lebesgue integral for each
   $\lambda$, apply Tonelli and~\eqref{E:variance-actual-row-bound}, and use
   $\|z\|_{E_{s-\gamma}} = \|\langle\xi\rangle^{-\gamma}Jz\|_2$. This
   proves~\eqref{E:wave-input-variance} with $C_T = 4A_TKC_\nu$.
 
-  After the input change of variables, $\sum_i|V_i(\xi)|^2$ is independent of
-  $\lambda$. The inner integral is exactly the row bound, leaving
-  $\int\langle\xi\rangle^{-2\gamma}\sum_i|V_i(\xi)|^2\ud\xi$, the squared
-  weaker phase norm.
   \medskip
   \noindent\textit{Step 4.~}We sum over the output family.
   Next fix $U = Jz$ and let $V_k = Je_k$ be the output family. After $\eta =
@@ -586,10 +537,6 @@ Proposition~\ref{P:wave-two-variances} uses it in both directions.
     f_i^\lambda(\xi) = \sum_{j=1}^2
     1_I\mathcal{K}_{ij}(\cdot;\xi,\xi-\lambda)U_j(\xi-\lambda).
   \]
-  Now the family appears as $\overline{V_{k,i}(\xi)}$, so the conjugated
-  version of Bessel is required. Cauchy--Schwarz over $j$ contributes a factor
-  two, and the sum over the two output components contributes the other factor
-  two.
   Apply the conjugated version of Lemma~\ref{L:phase-bessel}. Cauchy--Schwarz
   over the two input components bounds its right side by
   \[
@@ -603,8 +550,6 @@ Proposition~\ref{P:wave-two-variances} uses it in both directions.
   by~\eqref{E:variance-actual-row-bound} with $\xi = \eta$. This proves
   \eqref{E:wave-output-variance} with the same $C_T$.
 
-  Reflection changes the kernel to $\Phi_h(\eta-\lambda,\eta)$. Symmetry then
-  puts the fixed frequency in the first argument, giving the row used above.
   \medskip
   \noindent\textit{Step 5.~}We obtain the time-power bounds and their
   uniformity.
@@ -653,11 +598,6 @@ Write $E_r^{\mathrm{real}}$ for the real phase space in dimension $d$.
   and Gram--Schmidt preserves that class. The same density holds in
   $E_{s-\gamma}$.
 
-  Symmetrizing the Fourier coordinates enforces the Fourier reality condition.
-  It preserves convergence to real data and preserves compact smoothness. The
-  inverse Fourier and Bessel maps then give real Schwartz phases.
-  Gram--Schmidt uses only finite real linear combinations and normalization,
-  so every retained basis vector remains in that class.
 
   \medskip
   \noindent\textit{Step 2.~}We construct the two columns in mean square.
@@ -666,10 +606,8 @@ Write $E_r^{\mathrm{real}}$ for the real phase space in dimension $d$.
     m_N(z) = \sum_{k\le N}\ell_R(I;z,e_k)e_k,
     \qquad n_N(z) = \sum_{k\le N}\ell_R(I;e_k,z)e_k.
   \]
-  For real phases, every coefficient in these sums is a real evaluation of the
-  original noise. Orthogonality of the deterministic basis eliminates cross
-  terms in the squared $E_s$ norm, regardless of any correlations among those
-  coefficients.
+  The output-variance estimate controls $m_N(z)$, and the input-variance
+  estimate controls $n_N(z)$.
   Both are finite Gaussian sums on the original $W$. By
   Proposition~\ref{P:wave-two-variances}, their coefficient expected squares
   have finite sum. Orthogonality gives the squared tail norms as the
@@ -679,8 +617,6 @@ Write $E_r^{\mathrm{real}}$ for the real phase space in dimension $d$.
   give strong measurability of the limits. The bounded real linear maps extend
   uniquely from Schwartz phases to $E_{s-\gamma}$.
 
-  The output variance bounds the coefficient sum for $m_N(z)$, and the input
-  variance bounds it for $n_N(z)$.
 
   \medskip
   \noindent\textit{Step 3.~}We identify the pairings and remove the basis
@@ -703,16 +639,9 @@ Write $E_r^{\mathrm{real}}$ for the real phase space in dimension $d$.
   fixed countable Schwartz orthonormal basis and Parseval show basis
   independence of the constructed limits.
 
-  For two choices of construction basis, the pairing identities give the same
-  scalar $L^2(\Omega)$ coefficients against every vector of a fixed countable
-  Schwartz orthonormal basis. Parseval applied to their difference shows that
-  the two $E_s$-valued limits agree in mean square.
 
   \medskip
   \noindent\textit{Step 4.~}We identify the Gaussian laws after taking limits.
-  Centering passes to an $L^2$ limit, as do second moments. Testing finite
-  real linear combinations of continuous linear functionals therefore gives
-  the joint Gaussian assertion below.
   Continuous linear functionals of the limits, and finite linear combinations of
   such functionals, are $L^2$ limits of centered Gaussian variables with
   convergent variances. Their characteristic functions therefore converge to
