@@ -125,7 +125,12 @@ upstream context marked unassigned. Root checked Git bytes, framing and fresh
 native config; all tools denied, same requested DeepSeek V4 Pro model, cap
 65,536 and timeout 3,600 seconds. Each has one authorized fresh pure invocation,
 no coordinator retry, continuation or fallback. Worker QA supports these local
-arguments. RP004 remains RUNNING. RP005 finished normally at
+arguments. RP004 finished normally at `2026-11-16T06:30:14.346493+00:00`, elapsed
+395.541 seconds, with raw PASS/high and all seven proof pairs complete and
+preserved. Root fully adjudicated its public report, with statement LF shifts
+distinguished from the verified identical statement bytes; no source repair
+or callback is needed. Native exact prompt/model/fresh session, zero tools,
+stop and unchanged hashes are verified. RP005 finished normally at
 `2026-11-16T06:28:57.237160+00:00`, elapsed 317.268 seconds, with raw
 PASS/high and all eight proof pairs complete and preserved. Root fully
 adjudicated the report and verified native exact-prompt/model/fresh-session,
@@ -138,6 +143,21 @@ whole-book confidence or Lean quotation acceptance follows.
 
 RP004 launched at `2026-11-16T06:23:38.805337+00:00` as `readable-source-convergence-26bd977c926f4c6e919e79e8913e57cd`.
 RP005 launched at `2026-11-16T06:23:39.968809+00:00` as `readable-constant-young-140f8dd8b78d4f8aa0102d871e8b0a06`.
+
+### Completed reread aggregate, with units kept separate
+
+`reviews/2026-11-16-readable-reread-index/INDEX.json` records five terminal
+native sessions and 37 distinct complete OLD/NEW proof pairs. All five raw
+reports are PASS/high at their local scopes; every public mathematical reason
+and finding has been adjudicated. Raw reports, report-only errors and historical
+grades are preserved. Per-proof confidence was not separately reported and is
+null. These are five calls, not 37 votes; upstream context proofs add no rows.
+The five target module blobs remain byte-identical at held `f06cb607`, but
+that check is not a seal or adoption of the whole tree. This count is not added
+to the differently scoped historical census or recovered-attempts snapshot.
+Remaining source modules/main batches, companion quotation correspondence,
+disclosure and Appendix E reconciliation, final derived artifacts and reseal,
+Agent 16 verification and Le's release decisions remain open.
 
 The older publication-frontier headings below are dated snapshots; they do
 not authorize restarting their old completed calls or override this narrow
