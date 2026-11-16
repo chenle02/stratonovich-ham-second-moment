@@ -110,10 +110,6 @@ Gaussian noise.
   compact values for all times. Functional $L^2$ limits of Gaussian linear
   combinations prove that the path is Gaussian.
 
-  To obtain the tail inequality, first compare the sum from index $N+1$ to a
-  finite upper index. Let that upper index tend to infinity in both $L^p$ path
-  spaces. The norm inequality passes to the limit. The full-norm comparison is
-  obtained in the same way starting at index one.
 
   \medskip
   \noindent\textit{Step 3.~}We identify the rows and remove dependence on the
@@ -258,10 +254,6 @@ rectangles with a countable dense spatial collection suffice.
   bound~\eqref{E:driver-test-continuity} proves their density in $H_W$. Hence,
   the isometry extends with closed range.
 
-  The norm identity sends every covariance-null tensor to zero and preserves
-  the distance between tensor classes. It therefore extends uniquely by
-  completion. Since $H_W$ is complete, the range of the extended isometry is
-  closed.
 
   \medskip
   \noindent\textit{Step 2.~}We identify the integral formula for general
@@ -404,10 +396,6 @@ The temporal operation is a Laplace prefix, not temporal convolution.
   $L^1$ approximation; bounded point-feature norms and the domination below give
   the same $L^2$ limit.
 
-  For the two domination bounds, the important point is that the omitted
-  Laplace range and the retained range are orthogonal. The heat error acts
-  only in the retained range. We use this decomposition before comparing the
-  residual norm with the original feature norm.
 
   \medskip
   \noindent\textit{Step 3.~}We bound the source and the full residual.
@@ -499,6 +487,8 @@ The temporal operation is a Laplace prefix, not temporal convolution.
 
   \medskip
   \noindent\textit{Step 2.~}We construct the jointly continuous versions.
+  The maximum of finitely many increments has its $L^q$ norm bounded by the
+  $q$th root of the sum of their $q$th moments, without independence.
   Here is a direct continuity construction. In $m = d+1$ parameter dimensions on
   a compact rectangle, even Gaussian $q$th increment moments have root bounded
   by $C\sqrt q$ times the parameter distance to the power $1/2$ at small
@@ -514,11 +504,6 @@ The temporal operation is a Laplace prefix, not temporal convolution.
   overlaps on countable dense sets, hence everywhere there by continuity, so
   they patch.
 
-  At each level, the maximum of finitely many edge increments is bounded in
-  $L^q$ by the $q$th root of the sum of their $q$th moments. This accounts for
-  the factor $2^{nm/q}$. The strict choice of $h_0$ makes the weighted level
-  series geometric and summable. The construction uses no independence of grid
-  increments.
 
   \medskip
   \noindent\textit{Step 3.~}We identify the continuous fields as spatial
@@ -534,10 +519,6 @@ The temporal operation is a Laplace prefix, not temporal convolution.
   both pathwise and in $L^2$. Enforce these identities first on countably many
   rational $t,x,h$ and multiindices, then use joint continuity to extend them to
   every segment in the compact rectangles. The ordinary fundamental theorem
-  applies after the identities have been extended to every segment by
-  continuity. The integral of the continuous field $Z_{b+e_i}$ is
-  differentiable in the segment endpoint, with that field as its derivative.
-  It therefore
   yields $\partial_iZ_b = Z_{b+e_i}$. Thus, all spatial derivatives exist and
   are jointly continuous with time. The versions are for this fixed $\rho$, not
   a common path event over uncountably many source parameters. This proves
@@ -575,6 +556,10 @@ The temporal operation is a Laplace prefix, not temporal convolution.
   \medskip
   \noindent\textit{Step 2.~}We identify its rows by physical duality and test
   approximation.
+  The row calculation is~\eqref{E:variance-physical-adjoint} of
+  Proposition~\ref{P:actual-wave-form}, with $G_w$
+  from~\eqref{E:variance-dual-wave}, applied at the fixed time $u$ to the
+  spatial coefficient $b_\rho(u,\cdot)$.
   At each fixed $u$, the Sobolev duality calculation uses only spatial
   smoothness of $b_\rho(u,\cdot)$. From $S(-u)(0,f)$ and the two Bessel weights,
   for real Schwartz phases,
@@ -584,6 +569,9 @@ The temporal operation is a Laplace prefix, not temporal convolution.
   \]
   Thus, no prior hypothesis of smoothness in time is invoked for this
   instantaneous identity. For complex pairs conjugate the second factor.
+  For the approximation below, Cauchy--Schwarz on the fixed finite time
+  interval converts $L^2$ time error to $L^1$ error, and the common compact
+  spatial support contributes only its fixed volume.
   Integrating gives the ordinary source-field integral against the specified
   wave test for the original covariance $h_{R,t;z,w}$. For smooth tests, the
   point-feature integral has already been identified with $Y_\rho(F)$. The
@@ -594,11 +582,6 @@ The temporal operation is a Laplace prefix, not temporal convolution.
   tending to zero. Its $L^1$ error also tends to zero. The point-feature norms
   are bounded on that support, so their integrals converge in $\mathcal{G}$; the
   original variance domination gives the same $L^2$ limit on the test side.
-  On a finite time interval, the $L^1$ time error is bounded by the square
-  root of the interval length times the $L^2$ time error. With common compact
-  spatial support, the spatial integral has the same bound up to its fixed
-  volume. This makes the feature-space integral converge to the same test
-  limit as the variance domination gives.
   Consequently,
   \[
     \langle L_\rho(t)z,w\rangle_E
