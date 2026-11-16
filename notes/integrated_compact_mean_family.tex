@@ -54,6 +54,12 @@ Uniformity, fractional norms and all applications to $F$ are proved below.
 \end{proposition}
 
 \begin{proof}
+  We first identify the common form domain and place the spectral bottom below
+  the essential threshold. We then use simplicity and continuity to obtain a
+  uniform gap, and compare ground states to prove their continuity in $H^2$.
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the common form domain.
   The imported Theorem~10.2 applies to $-V_\sigma$, which is real, compactly
   supported and in $L^2$ for $d \le 3$. It gives the stated self-adjoint
   operator on $H^2$ and essential threshold zero. Write $c = 1+M$ and $A_\sigma
@@ -65,12 +71,18 @@ Uniformity, fractional norms and all applications to $F$ are proved below.
     \|u\|_{H^1}^2\le\|A_\sigma^{1/2}u\|_2^2
     \le c\|u\|_{H^1}^2.
   \]
+  Since $0 \le V_\sigma \le M$ and $c = 1+M$, the shifted potential term
+  $c-V_\sigma$ lies between one and $c$. This gives the two form bounds on
+  $H^2$. The issue is then to identify their completions, rather than assume
+  the form domain from the formal expression.
   Spectral cutoffs $1_{[1,n]}(A_\sigma)u$ show that $H^2$ is a core for the
   half-power form norm. Fourier cutoffs show it is dense in $H^1$. The two
   equivalent completions are therefore $D(A_\sigma^{1/2})$ and $H^1$. Both norms
   dominate $L^2$ and give the same $L^2$ limit, so these are equal as subspaces,
   with the displayed form. This verifies the form domain used below.
 
+  \medskip
+  \noindent\textit{Step 2.~}We obtain the isolated simple ground state.
   The form lower bound and~\eqref{E:compact-common-trial} give $-M \le E_1 \le
   -\varepsilon$ by the imported form max--min principle. The bottom belongs to
   the spectrum and lies below the essential threshold, so it is an isolated
@@ -78,6 +90,8 @@ Uniformity, fractional norms and all applications to $F$ are proved below.
   it is simple with a positive ground state. Conjugation preserves the real
   operator; positivity and unit $L^2$ norm fix its real representative.
 
+  \medskip
+  \noindent\textit{Step 3.~}We make the spectral and rate gaps uniform.
   Simplicity, isolation and threshold zero give $E_1 < E_2 \le 0$. For every
   common unit form test, $|q_\sigma(u)-q_\tau(u)| \le
   \|V_\sigma-V_\tau\|_\infty$. Taking the same infima over orthogonal
@@ -90,8 +104,15 @@ Uniformity, fractional norms and all applications to $F$ are proved below.
     {\lambda_\sigma+\mu_\sigma}
     \ge\frac{\Delta_*}{2\sqrt M}>0.
   \]
+  The level difference is continuous and strictly positive at every point of
+  the compact parameter interval. It therefore has positive minimum
+  $\Delta_*$. Factoring $\lambda_\sigma^2-\mu_\sigma^2$ gives the displayed
+  rate difference, whose denominator is at most $2\sqrt M$.
   Here $M \ge \varepsilon > 0$, and no division by $\mu_\sigma$ occurs.
 
+  \medskip
+  \noindent\textit{Step 4.~}We prove continuity of the positive normalized
+  ground state.
   Put $d_V = \|V_\sigma-V_\tau\|_\infty$ and decompose $p_\tau = a p_\sigma+r$,
   with $r\perp p_\sigma$ and $0 < a \le 1$. The variational bound gives
   $q_\sigma(p_\tau) \le E_1(\sigma)+2d_V$, whereas the complementary spectral
@@ -100,6 +121,12 @@ Uniformity, fractional norms and all applications to $F$ are proved below.
     \|p_\tau-p_\sigma\|_2^2
     =2(1-a)\le2(1-a^2)\le4d_V/\Delta_*.
   \end{equation}
+  Positivity of both ground states gives $a = \langle p_\tau,p_\sigma\rangle >
+  0$. Orthogonality gives $a^2+\|r\|_2^2 = 1$. The upper form bound follows by
+  changing the potential and then the lowest eigenvalue, each at cost at most
+  $d_V$. The complementary lower bound uses the uniform gap on $r$. Combining
+  them gives $\|r\|_2^2 \le 2d_V/\Delta_*$ and hence the displayed distance
+  estimate.
   The eigenfunction equation is
   \[
     (1-\Delta)p_\sigma
@@ -133,6 +160,13 @@ compare the two.
 \end{lemma}
 
 \begin{proof}
+  We prove the needed fractional order comparison from resolvents. The
+  resulting quarter-power norm comparison identifies the positive phase entry,
+  and duality identifies the negative entry with uniform constants.
+
+  \medskip
+  \noindent\textit{Step 1.~}We compare the quarter-power norms and their
+  domains.
   On the common form domain $H^1$, $B \le A_\sigma \le cB$ and all three
   operators are at least one. For positive self-adjoint $T,S$ with common form
   domain, $T \le S$ implies $(T+t)^{-1} \ge (S+t)^{-1}$ for $t > 0$. Indeed,
@@ -141,6 +175,9 @@ compare the two.
     =\sup_u\{2\operatorname{Re}\langle f,u\rangle
     -q_T(u)-t\|u\|_2^2\};
   \]
+  The supremum is over the common form domain. Increasing the quadratic form
+  decreases every expression inside that supremum. This explains why the
+  resolvent order is opposite to the original form order. More explicitly,
   completing the square in the closed form norm proves the identity, and
   comparison of the suprema proves the order. Consequently, $I-t(T+t)^{-1} \le
   I-t(S+t)^{-1}$. The scalar identity
@@ -152,12 +189,20 @@ compare the two.
   integration and positive Tonelli, first over finite intervals and then by
   monotone convergence, give $T^{1/2} \le S^{1/2}$ as forms, including domain
   inclusions. Apply this to $B \le A_\sigma \le cB$ to obtain
-  \eqref{E:compact-quarter-power} and equality of the quarter-power domains with
+  \eqref{E:compact-quarter-power}: the form of $A_\sigma^{1/2}$ is the squared
+  norm of $A_\sigma^{1/4}$. The lower and upper comparisons give both domain
+  inclusions, so they also give
+  equality of the quarter-power domains with
   $H^{1/2}$.
 
+  \medskip
+  \noindent\textit{Step 2.~}We identify the negative phase norm by duality.
   Under the $L^2$ pairing the dual norm of $\|A_\sigma^{1/4}u\|_2$ at $z \in
   L^2$ is $\|A_\sigma^{-1/4}z\|_2$. Cauchy--Schwarz gives the upper bound, and a
-  scalar multiple of $A_\sigma^{-1/2}z$ attains it. Completion
+  scalar multiple of $A_\sigma^{-1/2}z$ attains it. Comparison
+  of these dual norms preserves the comparison with reversed inequalities. The
+  constants remain uniform because the positive norm constants depend only on
+  $c$. Completion
   and~\eqref{E:compact-quarter-power} identify this negative space with
   $H^{-1/2}$, uniformly in $\sigma$. Adding the squared norms proves the claim.
   This proves Lemma~\ref{L:compact-fractional-phase}.
@@ -187,6 +232,14 @@ compare the two.
 \end{proposition}
 
 \begin{proof}
+  We estimate the spectral wave matrix in the uniformly equivalent phase norm,
+  separating the complementary spatial spectrum from the two ground-state
+  branches. We then identify this spectral matrix with the ordinary physical
+  flow.
+
+  \medskip
+  \noindent\textit{Step 1.~}We write the spectral wave and its complementary
+  spatial bound.
   Define real spectral functions $C_t(h),S_t(h)$ by $\cos(t\sqrt h),\sin(t\sqrt
   h)/\sqrt h$ for $h > 0$, by $1,t$ at zero, and by
   $\cosh(t\sqrt{-h}),\sinh(t\sqrt{-h})/\sqrt{-h}$ for $h < 0$. The spectral wave
@@ -209,12 +262,25 @@ compare the two.
     C_t(h),\quad \sqrt{h+c}\,S_t(h),\quad
     -hS_t(h)/\sqrt{h+c},\quad C_t(h).
   \]
+  The isometry multiplies the displacement by $(h+c)^{1/4}$ and the velocity
+  by $(h+c)^{-1/4}$. Conjugating the two off-diagonal entries by these weights
+  produces the displayed factors $\sqrt{h+c}$ and its reciprocal. Thus, an
+  ordinary scalar matrix bound gives an operator bound in the spectral phase
+  norm.
   For $h \ge 0$, use $|S_t(h)| \le \min(t,h^{-1/2})$ and split $h \le 1$ from $h
   \ge 1$; the lower off-diagonal entry is at most one. For $-\mu_\sigma^2 \le h
   < 0$, use $|C_t(h)| \le e^{\mu_\sigma t}$ and $|S_t(h)| \le t e^{\mu_\sigma
   t}$, with $|h| \le M$ and $1 \le h+c \le c$. Thus, the complementary spatial
   matrix has norm at most $C(1+t)e^{\mu_\sigma t}$, including $\mu_\sigma = 0$.
 
+  At nonnegative $h \le 1$, the upper off-diagonal entry is bounded by
+  $\sqrt{1+c}\,t$. At $h \ge 1$, it is bounded by $\sqrt{1+c}$. The lower
+  entry is bounded by $\sqrt h/\sqrt{h+c} \le 1$. These are uniform bounds on
+  the nonnegative part of the spectrum.
+
+  \medskip
+  \noindent\textit{Step 2.~}We retain the decaying ground branch in the phase
+  complement.
   The two spatial ground branches are $(p_\sigma,\pm\lambda_\sigma p_\sigma)$.
   Besides $\Pi_\sigma^E$, their projections include the decaying branch
   \[
@@ -229,12 +295,25 @@ compare the two.
   t}$ and remains in $I-\Pi_\sigma^E$. The fractional norm equivalence now
   proves the stated complement estimate for the spectral matrix.
 
+  Removing the growing phase branch does not remove both copies of the spatial
+  ground state. The displayed decaying projection accounts for the remaining
+  copy. Its exponential factor is at most one for $t \ge 0$, and hence is
+  bounded by the same complementary estimate. The uniform equivalence of phase
+  norms then returns that estimate to the fixed space $E$.
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify the spectral matrix with the ordinary
+  flow.
   We identify this matrix with the physical flow. The same scalar bounds at
   graph levels $(A_\sigma u,A_\sigma^{1/2}z)$ give continuous solutions in
   $H^2\times H^1$. These graph norms are uniformly equivalent to the Sobolev
   norms: the $H^1$ case was proved above, and $A_\sigma-B = M-V_\sigma$ is
   bounded by $M$ while $A_\sigma,B \ge 1$. Spectral cutoffs give $u_t = z$ in
-  $H^1$ and $z_t = -H_\sigma u$ in $L^2$, with continuous derivatives there. The
+  $H^1$ and $z_t = -H_\sigma u$ in $L^2$, with continuous derivatives there.
+  The
+  free Fourier group is used at these graph levels so that the
+  interaction-picture derivative is justified in $H^1\times L^2$. This
+  derivative is not an operator-norm derivative on the whole phase. The
   free Fourier group on $H^1\times L^2$ has, after its Bessel isometry, the same
   bounded weighted entries and is strongly continuous by dominated Fourier
   convergence. Its generator is $(z,\Delta u)$ on $H^2\times H^1$, as the
@@ -294,6 +373,13 @@ constants to $E$.
 \end{proposition}
 
 \begin{proof}
+  We derive the block formula by variation of constants in $E$. We then
+  compute the constant-coordinate contribution to the growing dual, combine
+  its finite-time contribution with an exponential tail, and obtain uniform
+  positive margins by compactness.
+
+  \medskip
+  \noindent\textit{Step 1.~}We derive the block formula for the full phase.
   The constant coordinates obey $C(t)$ because the potential force has range in
   $iE$. To justify variation of constants on the $E$ component, let $g$ be a
   continuous $E$ force and substitute the ordinary free-Duhamel equation for
@@ -305,6 +391,10 @@ constants to $E$.
     &\qquad=\int_0^tS(t-s)B_\sigma^E
     \left[\int_0^sP_\sigma^E(s-r)g(r)\ud r\right]\ud s.
   \end{align*}
+  The integration region is the triangle $0 \le r \le s \le t$. Reversing the
+  order changes the outer variable from $r$ to $s$, with $0 \le r \le s$ in
+  the inner integral. This is exactly the forcing term in the free-Duhamel
+  equation for the proposed $E$ component.
   All norms are bounded on the finite triangle, so this exchange is absolute in
   $E$. Thus, $Y(t) = P_\sigma^E(t)e+\int_0^tP_\sigma^E(t-r)g(r)\ud r$ solves
   free Duhamel with force $B_\sigma^EY+g$. Take $g(r) = D_\sigma C(r)c$ and
@@ -313,6 +403,9 @@ constants to $E$.
   bounds are uniform since the family has bounded $L^\infty$ and $L^2$ norms on
   one compact support.
 
+  \medskip
+  \noindent\textit{Step 2.~}We compute the growing dual on the constant
+  coordinates.
   The integral defining $f_\sigma$ is finite by $L^2$ Cauchy--Schwarz and
   positive because $V_\sigma$ is nonzero by the common trial and $p_\sigma > 0$
   a.e. Its coefficients are continuous and uniformly bounded by the $H^2$
@@ -327,6 +420,10 @@ constants to $E$.
     &=\int_t^\infty e^{\lambda_\sigma(t-r)}
     f_\sigma(c_1+rc_2)\ud r.
   \end{align*}
+  The first integral uses $\int_0^\infty e^{-\lambda_\sigma r}\ud r =
+  1/\lambda_\sigma$ and $\int_0^\infty r e^{-\lambda_\sigma r}\ud r =
+  1/\lambda_\sigma^2$. The last identity follows by translating the
+  integration variable by $t$ and using $C(t)c = (c_1+tc_2,c_2)$.
   These integrals converge absolutely. Applying $\ell_\sigma$
   to~\eqref{E:compact-F-block}, the finite integral and this tail combine to
   give $\ell_\sigma P_\sigma(t) = e^{\lambda_\sigma t}\ell_\sigma$. The ground
@@ -335,6 +432,10 @@ constants to $E$.
   bilinear multiplication and the preceding continuous coefficients prove norm
   continuity of all objects. Finally, $\ell_\sigma(e_0) =
   f_\sigma/\lambda_\sigma > 0$ and $O_\phi(e_\sigma) = \int\phi p_\sigma > 0$.
+  Nonnegativity and positive integral of $\phi$ give a set of positive measure
+  on which $\phi > 0$. Since $p_\sigma > 0$ almost everywhere, its pairing
+  with $\phi$ is strictly positive. Continuity converts this pointwise
+  positivity in the parameter into a positive uniform minimum.
   Both are continuous on compact $I$, proving
   \eqref{E:compact-positive-margins}. Positivity is in integrals, without a
   point trace or a one-dimensional ODE. This proves
@@ -367,6 +468,13 @@ bound.
 \end{proposition}
 
 \begin{proof}
+  We use the block formula to keep track of the growing response to the
+  constant coordinates when subtracting the projection. We estimate the
+  remaining integral and absorb its polynomial factor into the rate gap.
+  Finally, we compare two potentials through their Duhamel equations.
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound the complementary flow on the full phase.
   Write $Q_\sigma^E = I-\Pi_\sigma^E$. Split $D_\sigma$ into its growing and
   complementary parts in~\eqref{E:compact-F-block} and use the two tail
   integrals in the preceding proof. The exact $E$ component of
@@ -385,18 +493,33 @@ bound.
     \int_0^t(1+t-r)(1+r)\ud r
     =Ce^{\mu_\sigma t}(t+t^2+t^3/6)|c|.
   \]
+  The integrand has one factor $1+t-r$ from the complementary $E$ flow and one
+  factor $1+r$ from the free constant block. Its exponential is bounded by
+  $e^{\mu_\sigma t}$ because $\mu_\sigma \ge 0$. Integrating the product of
+  the two linear factors gives the displayed cubic polynomial.
   The first term is bounded by $C(1+t)e^{\mu_\sigma t}\|e\|_E$; the final term
   and constant component by $C(1+t)|c|$. Since $\mu_\sigma \ge 0$ this proves
   \eqref{E:compact-F-complement}. The boundedness of $(1+t)^3e^{-(d_0-\eta)t}$
   proves \eqref{E:compact-normalized-complement}. In particular, the
   constant-velocity polynomial is included in this estimate.
 
+  After multiplying by $e^{-\lambda_\sigma t}$, the exponential factor is at
+  most $e^{-d_0t}$. For $\eta < d_0$, the remaining factor
+  $(1+t)^3e^{-(d_0-\eta)t}$ has finite supremum on $[0,\infty)$, giving the
+  normalized estimate.
+
+  \medskip
+  \noindent\textit{Step 2.~}We prove finite-horizon dependence on the
+  potential.
   Put $\mathcal{B}_\sigma = iB_F(V_\sigma)$ and $d_{\sigma,\tau} =
   \|V_\sigma-V_\tau\|_\infty+ \|V_\sigma-V_\tau\|_2$. The bound for $B_F$ gives
   $\|\mathcal{B}_\sigma-\mathcal{B}_\tau\| \le d_{\sigma,\tau}$. Subtract the
   two free-Duhamel equations on states. Their difference is the sum of the
   integral with $S_F(t-r)\mathcal{B}_\sigma(P_\sigma(r)-P_\tau(r))$ and that
   with $S_F(t-r)(\mathcal{B}_\sigma-\mathcal{B}_\tau)P_\tau(r)$. The uniform
+  finite-horizon bounds control the second integral by a constant times
+  $d_{\sigma,\tau}$. The first integral is bounded by a constant times the
+  time integral of the unknown flow difference. Thus, the
   finite-horizon bounds and scalar Gronwall prove
   \eqref{E:compact-parameter-flow}. The operator norm is measurable:
   separability of $F$ expresses it as the supremum over a countable dense set of
@@ -440,6 +563,14 @@ nonnegative test $\Psi$ and the original covariance $\Gamma$, in two steps.
 \end{lemma}
 
 \begin{proof}
+  We identify the original covariance mean and show its cost is finite.
+  Positivity and homogeneity give a strictly positive time-independent lower
+  profile. We then differentiate the test, rather than the singular time
+  kernel, to obtain regularity.
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the mean and bound its covariance
+  cost.
   Choose $A \ge 1$ containing the spatial support of $\Psi$ in $B_A$. The
   original covariance identity and absolute Fubini give the stated mean pairing:
   the two compact tests restrict spatial differences to a compact set of finite
@@ -451,6 +582,9 @@ nonnegative test $\Psi$ and the original covariance $\Gamma$, in two steps.
   $\int_0^1\int_0^1|\sigma-u|^{-a}\ud u\ud\sigma = 2/((1-a)(2-a))$, proving
   finiteness.
 
+  \medskip
+  \noindent\textit{Step 2.~}We obtain strict positivity and the uniform mean
+  floor.
   Nonnegative nonzero smooth $\Psi$ has positive integral, so $\overline{q} \ne
   0$. Nonzero $\Gamma$ charges some ball, and homogeneity gives $\Gamma(B_1) =
   r^{\alpha-d}\Gamma(B_r) > 0$. Thus, every origin-centered ball $B_r$, $r > 0$,
@@ -460,6 +594,16 @@ nonnegative test $\Psi$ and the original covariance $\Gamma$, in two steps.
   $|\sigma-u|^{-a} \ge 1$ on the unit time square, positive Tonelli gives both
   inequalities in~\eqref{E:compact-positive-mean-floor}.
 
+  The value of the spatial autocorrelation at zero is $\|\overline q\|_2^2 >
+  0$. Its continuity makes it uniformly positive on a small origin-centered
+  ball. Positive mass of that ball under $\Gamma$ gives strict positivity of
+  $Q(\overline q)$. The lower bound on the time kernel can then be integrated
+  without changing signs, because both tests and the covariance measure are
+  nonnegative.
+
+  \medskip
+  \noindent\textit{Step 3.~}We prove smoothness and the fixed-mask Lipschitz
+  bounds.
   Extend $\Psi$ by zero in time and write
   \[
     h_s(x)=\int_\R |r|^{-a}
@@ -489,6 +633,14 @@ trial~\eqref{E:compact-common-trial}.
 \end{proposition}
 
 \begin{proof}
+  We dilate a fixed trial function and choose the mask to contain its support.
+  Homogeneity gives a potential contribution of order $L^{-\alpha}$, which
+  dominates the kinetic contribution of order $L^{-2}$. We then apply the
+  ground-family estimates at this fixed mask.
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound the potential contribution of the dilated
+  trial.
   Choose a real unit $L^2$ function $\psi \in C_c^\infty(B_2)$ with $\psi \ge
   c_0 > 0$ on $B_1$, and put $\psi_L(x) = L^{-d/2}\psi(x/L)$, $D_\psi =
   \|\nabla\psi\|_2^2$, where $L \ge \max(1,2A)$. Choose the even mask with $R
@@ -504,6 +656,10 @@ trial~\eqref{E:compact-common-trial}.
     =C_\Gamma L^{-\alpha},\label{E:compact-trial-potential}\\
     C_\Gamma&=c_0^22^{\alpha-d}\Gamma(B_1)\int\overline{q}>0.\nonumber
   \end{align}
+  On $B_L$, the dilated trial has squared value at least $c_0^2L^{-d}$. Every
+  $y$ in the support of $\overline q$ has $|y| \le A$. Hence, translating
+  $B_L$ by such a $y$ still contains $B_{L/2}$. Homogeneity changes its mass
+  to $(L/2)^{d-\alpha}\Gamma(B_1)$, giving exactly the displayed constant.
   Here $B_{L/2} \subset B_L-y$ for $|y| \le A$ and $L \ge 2A$. All covariance
   masses in the argument are compact and finite. The kinetic energy is $D_\psi
   L^{-2}$. Since $\alpha < 2$, choose $L$ large enough that $\varepsilon_R: =
@@ -512,6 +668,10 @@ trial~\eqref{E:compact-common-trial}.
     \|\nabla\psi_L\|_2^2-\int V_\sigma\psi_L^2
     \le-\varepsilon_R\quad\hbox{for every }\sigma\in I.
   \]
+
+  \medskip
+  \noindent\textit{Step 2.~}We fix a negative trial and obtain the rate
+  regularity.
   Fix this finite $R$ before invoking Proposition~\ref{P:compact-ground-family}.
   Its level bound and the mean Lipschitz estimate give
   \[
@@ -519,6 +679,10 @@ trial~\eqref{E:compact-common-trial}.
     \le\frac{\|V_\sigma-V_\tau\|_\infty}{2\sqrt{\varepsilon_R}}
     \le C_R|\sigma-\tau|.
   \]
+  The lowest eigenvalue remains at most $-\varepsilon_R$ for every parameter.
+  Factoring the difference of its negative square roots gives a denominator
+  $\lambda_\sigma+\lambda_\tau \ge 2\sqrt{\varepsilon_R}$. The level
+  comparison then gives the displayed Lipschitz estimate.
   The positive mean integrates the entire time test, so $\lambda_0 > 0$ even
   though $\Psi(0,\cdot) = 0$. Only the trial and mask have grown; the original
   test, its variable and~\eqref{E:compact-raw-cost} were fixed first. Enlarging
