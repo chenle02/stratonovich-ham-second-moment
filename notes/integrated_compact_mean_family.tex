@@ -104,10 +104,6 @@ Uniformity, fractional norms and all applications to $F$ are proved below.
     {\lambda_\sigma+\mu_\sigma}
     \ge\frac{\Delta_*}{2\sqrt M}>0.
   \]
-  The level difference is continuous and strictly positive at every point of
-  the compact parameter interval. It therefore has positive minimum
-  $\Delta_*$. Factoring $\lambda_\sigma^2-\mu_\sigma^2$ gives the displayed
-  rate difference, whose denominator is at most $2\sqrt M$.
   Here $M \ge \varepsilon > 0$, and no division by $\mu_\sigma$ occurs.
 
   \medskip
@@ -167,6 +163,8 @@ compare the two.
   \medskip
   \noindent\textit{Step 1.~}We compare the quarter-power norms and their
   domains.
+  In the resolvent supremum below, increasing the quadratic form decreases
+  every term being maximized over the common form domain, reversing the order.
   On the common form domain $H^1$, $B \le A_\sigma \le cB$ and all three
   operators are at least one. For positive self-adjoint $T,S$ with common form
   domain, $T \le S$ implies $(T+t)^{-1} \ge (S+t)^{-1}$ for $t > 0$. Indeed,
@@ -192,9 +190,6 @@ compare the two.
   equality of the quarter-power domains with
   $H^{1/2}$.
 
-  The supremum is over the common form domain. Increasing the quadratic form
-  decreases every expression inside that supremum. This explains why the
-  resolvent order is opposite to the original form order.
 
   \medskip
   \noindent\textit{Step 2.~}We identify the negative phase norm by duality.
@@ -274,10 +269,6 @@ compare the two.
   t}$, with $|h| \le M$ and $1 \le h+c \le c$. Thus, the complementary spatial
   matrix has norm at most $C(1+t)e^{\mu_\sigma t}$, including $\mu_\sigma = 0$.
 
-  At nonnegative $h \le 1$, the upper off-diagonal entry is bounded by
-  $\sqrt{1+c}\,t$. At $h \ge 1$, it is bounded by $\sqrt{1+c}$. The lower
-  entry is bounded by $\sqrt h/\sqrt{h+c} \le 1$. These are uniform bounds on
-  the nonnegative part of the spectrum.
 
   \medskip
   \noindent\textit{Step 2.~}We retain the decaying ground branch in the phase
@@ -296,11 +287,6 @@ compare the two.
   t}$ and remains in $I-\Pi_\sigma^E$. The fractional norm equivalence now
   proves the stated complement estimate for the spectral matrix.
 
-  Removing the growing phase branch does not remove both copies of the spatial
-  ground state. The displayed decaying projection accounts for the remaining
-  copy. Its exponential factor is at most one for $t \ge 0$, and hence is
-  bounded by the same complementary estimate. The uniform equivalence of phase
-  norms then returns that estimate to the fixed space $E$.
 
   \medskip
   \noindent\textit{Step 3.~}We identify the spectral matrix with the ordinary
@@ -435,8 +421,7 @@ constants to $E$.
   f_\sigma/\lambda_\sigma > 0$ and $O_\phi(e_\sigma) = \int\phi p_\sigma > 0$.
   Nonnegativity and positive integral of $\phi$ give a set of positive measure
   on which $\phi > 0$. Since $p_\sigma > 0$ almost everywhere, its pairing
-  with $\phi$ is strictly positive. Continuity converts this pointwise
-  positivity in the parameter into a positive uniform minimum.
+  with $\phi$ is strictly positive.
   Both are continuous on compact $I$, proving
   \eqref{E:compact-positive-margins}. Positivity is in integrals, without a
   point trace or a one-dimensional ODE. This proves
@@ -476,6 +461,16 @@ bound.
 
   \medskip
   \noindent\textit{Step 1.~}We bound the complementary flow on the full phase.
+  The growing forcing component equals
+  \[
+    e_\sigma^E\int_0^t e^{\lambda_\sigma(t-r)}
+    f_\sigma(c_1+rc_2)\ud r
+    =e_\sigma^E\bigl(e^{\lambda_\sigma t}\ell_\sigma^C(c)
+    -\ell_\sigma^C(C(t)c)\bigr).
+  \]
+  Its first term cancels the constant-coordinate contribution of
+  $e^{\lambda_\sigma t}\Pi_\sigma(e,c)$, leaving the negative term in the
+  complement formula below.
   Write $Q_\sigma^E = I-\Pi_\sigma^E$. Split $D_\sigma$ into its growing and
   complementary parts in~\eqref{E:compact-F-block} and use the two tail
   integrals in the preceding proof. The exact $E$ component of
@@ -504,10 +499,6 @@ bound.
   proves \eqref{E:compact-normalized-complement}. In particular, the
   constant-velocity polynomial is included in this estimate.
 
-  After multiplying by $e^{-\lambda_\sigma t}$, the exponential factor is at
-  most $e^{-d_0t}$. For $\eta < d_0$, the remaining factor
-  $(1+t)^3e^{-(d_0-\eta)t}$ has finite supremum on $[0,\infty)$, giving the
-  normalized estimate.
 
   \medskip
   \noindent\textit{Step 2.~}We prove finite-horizon dependence on the
@@ -595,10 +586,6 @@ nonnegative test $\Psi$ and the original covariance $\Gamma$, in two steps.
   $|\sigma-u|^{-a} \ge 1$ on the unit time square, positive Tonelli gives both
   inequalities in~\eqref{E:compact-positive-mean-floor}.
 
-  The value of the spatial autocorrelation at zero is $\|\overline q\|_2^2 >
-  0$.   The lower bound on the time kernel can then be integrated
-  without changing signs, because both tests and the covariance measure are
-  nonnegative.
 
   \medskip
   \noindent\textit{Step 3.~}We prove smoothness and the fixed-mask Lipschitz
@@ -655,10 +642,9 @@ trial~\eqref{E:compact-common-trial}.
     =C_\Gamma L^{-\alpha},\label{E:compact-trial-potential}\\
     C_\Gamma&=c_0^22^{\alpha-d}\Gamma(B_1)\int\overline{q}>0.\nonumber
   \end{align}
-  On $B_L$, the dilated trial has squared value at least $c_0^2L^{-d}$. Every
-  $y$ in the support of $\overline q$ has $|y| \le A$. Hence, translating
-  $B_L$ by such a $y$ still contains $B_{L/2}$. Homogeneity changes its mass
-  to $(L/2)^{d-\alpha}\Gamma(B_1)$, giving exactly the displayed constant.
+  On $B_L$, the dilated trial has squared value at least $c_0^2L^{-d}$.
+  Homogeneity changes its mass to $(L/2)^{d-\alpha}\Gamma(B_1)$, giving
+  exactly the displayed constant.
   Here $B_{L/2} \subset B_L-y$ for $|y| \le A$ and $L \ge 2A$. All covariance
   masses in the argument are compact and finite. The kinetic energy is $D_\psi
   L^{-2}$. Since $\alpha < 2$, choose $L$ large enough that $\varepsilon_R: =
