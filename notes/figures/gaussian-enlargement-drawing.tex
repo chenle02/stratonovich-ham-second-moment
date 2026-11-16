@@ -1,0 +1,20 @@
+% Schematic geometry only; the radius belongs to the control space.
+\begin{tikzpicture}[x=1cm,y=1cm,font=\normalsize]
+  \filldraw[draw=hamteal,fill=hamteal!5,thick,dashed]
+  (2.7,2) ellipse (2.3 and 1.4);
+  \filldraw[draw=hamblue,fill=hamblue!12,thick]
+  (2.1,1.8) ellipse (.85 and .55);
+  \node at (2.1,1.8) {$A_\delta$};
+  \node[anchor=south] at (2.7,3.65)
+  {$A_\delta+\mathcal{M}_\delta(\overline{B}_{H_I}(r))$};
+  \draw[hamteal] (2.7,3.6)--(2.7,3.4);
+  \fill (6.3,2.5) circle (1.7pt);
+  \node[align=center,anchor=north] at (6.3,2.25)
+  {outside the\\enlarged set};
+  \node[ham/box,font=\normalsize,text width=4.6cm] at (10.05,2.6)
+  {Probability of the complement\\
+  $\le \exp\{-r^2/(2\delta)\}$};
+  \node[align=center,text width=5cm] at (10.05,.85)
+  {$r$ is a control-space radius.\\
+  It is not Euclidean distance\\in the picture.};
+\end{tikzpicture}
