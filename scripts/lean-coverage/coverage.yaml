@@ -1,4 +1,4 @@
-# Labels refer to manuscript revision a284420 (see provenance/manuscript-anchor.json).
+# Labels refer to manuscript revision 39f2597a (see provenance/manuscript-anchor.json).
 # 2239 further claims check computations with no direct manuscript label; see docs/statement-ledger.md.
 # The rows name the claims of the 1553 theorems of comparator.json; the other 2100 compared theorems
 # (comparator-helpers.json, a smoke check in lean-pkg-signoff.json) are credited to no row.
@@ -7,12 +7,9 @@ package: stratonovich-ham-second-moment-lean
 kind: paper
 stack: lts-2026.10
 manuscript:
-  title: The second moment of the hyperbolic Anderson model
+  title: "Stratonovich Waves Driven by Space-Time Gaussian Noise: Second Moment and Exact Asymptotics"
   version: unposted
-summary: With the manuscript's hypotheses, forty-eight labelled results are formalized with every conclusion and sixteen
-  with a narrower conclusion; P:tube-rayleigh-transfer with every conclusion and two inputs supplied; steps, parts or
-  narrower forms of 34 further labelled results with named inputs supplied; T:full-upper and T:intrinsic-second-moment
-  are outside Lean.
+summary: "With the manuscript's hypotheses, 48 labelled results are formalized in full and 16 with a narrower conclusion; P:tube-rayleigh-transfer in full with two inputs supplied; steps, parts or narrower forms of 34 further labelled results; the entries distinguish supplied hypotheses, where present, from analytic work left outside Lean; T:full-upper and T:intrinsic-second-moment are outside Lean."
 rows:
 - paper:
     number: Corollary C:d1-first-calibration
@@ -41,9 +38,9 @@ rows:
   - stratonovich-ham-second-moment-lean/two-simplex-time-one-chain-le
   - stratonovich-ham-second-moment-lean/two-simplex-time-sum-incr-le-one
   inputs:
-  - 'MixedMoment: the statement of P:mixed (main TeX lines 658-673); here it gives E X_n = sum_D J_(n,0,D)(t) (with X_0 =
+  - 'MixedMoment: the statement of P:mixed (main TeX lines 834-849); here it gives E X_n = sum_D J_(n,0,D)(t) (with X_0 =
     1), the odd terms zero and the diagram limits; TRUE for the solution under H:homog'
-  - 'FirstMomentSeries: X_0 = 1, u integrable and E u = sum_n E X_n (main TeX line 620 and lines 4949-4950, "the L^2 expansion
+  - 'FirstMomentSeries: X_0 = 1, u integrable and E u = sum_n E X_n (main TeX line 796 and lines 5856-5857, "the L^2 expansion
     permits taking expectations of partial sums"); TRUE for the solution and its chaos terms'
   note: Wrappers LowAlphaUpper.first_calibration_paper (K_sp^gen, H:homog, alpha <= 1, V > 0), first_calibration_riesz_paper
     and first_calibration_white_paper (K_sp, d = 1; 0 < alpha_0 carried unused). The conditional clause is lower_rate_le,
@@ -137,17 +134,17 @@ rows:
     with positive A_0 and self-adjoint B at every cutoff (supplied, with the named inputs, in StaticInteractionCompleted)'
   - FockSandwich, A_0 >= 0 and B = B^* are proved in wave L12 on the Fourier-side model (FockSandwichModel.static_interaction_model_paper),
     with the added restriction of an orthonormal real family psi_m of size m in L^2(mu_eps) for every Gaussian cutoff m (so
-    mu != 0; the case mu = 0, where every positive-order term vanishes, lines 2608-2609, is not covered by that wrapper)
+    mu != 0; the case mu = 0, where every positive-order term vanishes, lines 3126-3127, is not covered by that wrapper)
   - 'the remaining inputs of P:static-phase-all-orders for the order bounds: entireness in the coupling, the coefficient identification,
     the band and the cutoff removals (see that row)'
   - the free estimate ||S_0(-+h)||_lambda <= sqrt(e), the group law S_0(-h) S_0(h) = 1, Z_0 = S_0(h)(f,g) and the norm comparisons
-    ||Z_n||_lambda <= (lambda h)^(-1) ||Z_n||_(1/h), ||(f,g)||_(1/h) <= ||(f,g)||_lambda (lines 2735-2751); an abstract complete
+    ||Z_n||_lambda <= (lambda h)^(-1) ||Z_n||_(1/h), ||(f,g)||_(1/h) <= ||(f,g)||_lambda (lines 3273-3292); an abstract complete
     real inner product space stands for L^2(Omega; X_lambda)
-  - Gaussian symmetry, E<Y_r, Y_s>_lambda = 0 for r + s odd (line 2752)
+  - Gaussian symmetry, E<Y_r, Y_s>_lambda = 0 for r + s odd (line 3293)
   - the first-variance bounds of P:static-phase-variance, E||Y_1||^2 <= e E:phase-born and |E<Y_0, Y_2>| <= N sqrt(e) E:phase-mean
-    (lines 2737-2742)
+    (lines 3275-3280)
   - for E:independent-static-blocks, the per-block bound ||I_j y||^2 <= (1 + E(h_j, sigma_j, lambda)) ||y||^2 on phases adapted
-    to the past (E:static-interaction with density and tensoring with the independent past, lines 2788-2792), adaptation being
+    to the past (E:static-interaction with density and tensoring with the independent past, lines 3333-3337), adaptation being
     an abstract predicate preserved by each block, and ||S_0(h_j)||^2 <= e^(lambda h_j)
   note: Wrappers static_interaction_completed_paper and independent_static_blocks_operator_paper state R_alpha, D_Gamma by
     E:phase-constants under the class of S:static-phase (only 0 < alpha < 2 is used; local finiteness is carried); the identification
@@ -198,7 +195,7 @@ rows:
   - stratonovich-ham-second-moment-lean/endpoint-lemmas-endpoint-closure-map
   - stratonovich-ham-second-moment-lean/endpoint-lemmas-endpoint-closure-sum
   inputs:
-  - 'ThreeTransfer: the exact statement of P:three-transfer (main TeX lines 6421-6441, proved there in lines 6443-6792) for
+  - 'ThreeTransfer: the exact statement of P:three-transfer (main TeX lines 7536-7556, proved there in lines 7558-7940) for
     an abstract ThreeMomentModel at the midpoint theta; true for the manuscript''s A_k(t), E u^2(t,x) and M_st, which the
     package does not construct'
   note: Wrapper RieszPositiveDefinite.three_finite_images_paper_proved (wave L14-3Dpd; only ThreeTransfer supplied); EndpointCorollaries.three_finite_images_paper
@@ -237,7 +234,7 @@ rows:
   - stratonovich-ham-second-moment-lean/riesz-positive-definite-prod-riesz-measure-map-posdef
   - stratonovich-ham-second-moment-lean/riesz-positive-definite-riesz-iso-pd-proved
   inputs:
-  - 'ThreeTransfer: the exact statement of P:three-transfer (main TeX lines 6421-6441, proved there in lines 6443-6792) for
+  - 'ThreeTransfer: the exact statement of P:three-transfer (main TeX lines 7536-7556, proved there in lines 7558-7940) for
     an abstract ThreeMomentModel at the midpoint theta; true for the manuscript''s A_k(t), E u^2(t,x) and M_st, which the
     package does not construct'
   note: 'Wrapper RieszPositiveDefinite.three_product_riesz_paper_proved (wave L14 3Dpd; only ThreeTransfer supplied); EndpointCorollaries.three_product_riesz_paper
@@ -369,12 +366,12 @@ rows:
   - stratonovich-ham-second-moment-lean/static-phase-cauchy-phase-i-pos
   - stratonovich-ham-second-moment-lean/static-phase-cauchy-delta-a-le-quarter
   inputs:
-  - 'E:cp-input (Crouzeix-Palencia, main TeX lines 2277-2286, imported in the TeX) for C_h, F_h, H_h at L = A_0 - zB with
+  - 'E:cp-input (Crouzeix-Palencia, main TeX lines 2739-2748, imported in the TeX) for C_h, F_h, H_h at L = A_0 - zB with
     its holomorphy precondition: operators of norm at most (1+sqrt 2) M whenever the scalar function is bounded by M on W(L)'
-  - 'the inverse-root integral representation of lines 2329-2354 for L^* = A_0 - conj(z)B (bounded holomorphic calculus):
+  - 'the inverse-root integral representation of lines 2801-2826 for L^* = A_0 - conj(z)B (bounded holomorphic calculus):
     Q'' - 1 = pi^(-1) int_0^inf J(t) dt with J strongly measurable and ||J(t)|| <= (|z| d/(1-delta_a)) t^(-1/2) kappa^(a-3)'
-  note: 'Not formalized: the phase propagator M_z(h) and its identification with the weighted block map (lines 2433-2444,
-    2461-2464). A_rho^(-1/2) is the inverse of the continuous-functional-calculus square root, proved invertible for rho >
+  note: 'Not formalized: the phase propagator M_z(h) and its identification with the weighted block map (lines 2920-2931,
+    2948-2951). A_rho^(-1/2) is the inverse of the continuous-functional-calculus square root, proved invertible for rho >
     0. The self-adjointness of B is carried but unused.'
 - paper:
     number: Lemma L:alpha-one-convolution
@@ -413,7 +410,7 @@ rows:
   - stratonovich-ham-second-moment-lean/masked-spectral-growth-spectral-homogeneous-of-homog
   note: Under H:homog with alpha = 1 alone in alpha_one_convolution_paper_completed, d = 1, 2, 3; G_h = waveGreen d h (d =
     3 via toSphere, Le's decision 4), p_eps of covariance eps I, G_(h,eta) = N(0, eta I) * G_h, sigma a measure on R^d carried
-    by the unit sphere. Fourier Fubini and lines 4740-4744 are proved, not imported. Integrability of the pairing integrand
+    by the unit sphere. Fourier Fubini and lines 5614-5618 are proved, not imported. Integrability of the pairing integrand
     is part of the wrappers' conclusions.
 - paper:
     number: Lemma L:d1-spatial
@@ -546,8 +543,7 @@ rows:
   - stratonovich-ham-second-moment-lean/interaction-driver-holder-parameters
   - stratonovich-ham-second-moment-lean/interaction-driver-dyadic-ratio
   inputs:
-  - the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses
-    (see docs/statement-ledger.md)
+  - "none beyond the paper's hypotheses: the checked Lean statements assume only parameter conditions; the analytic and probabilistic facts of the proof are outside Lean (see docs/statement-ledger.md, section InteractionDriver)"
 - paper:
     number: Lemma L:driver-interval-limit
     title: Fixed-interval operator construction
@@ -559,8 +555,7 @@ rows:
   claims:
   - stratonovich-ham-second-moment-lean/interaction-driver-variance-norm
   inputs:
-  - the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses
-    (see docs/statement-ledger.md)
+  - "none beyond the paper's hypotheses: the checked Lean statements assume only parameter conditions; the analytic and probabilistic facts of the proof are outside Lean (see docs/statement-ledger.md, section InteractionDriver)"
 - paper:
     number: Lemma L:endpoint-closure
     title: Linear images and finite positive sums
@@ -587,7 +582,7 @@ rows:
   - stratonovich-ham-second-moment-lean/endpoint-lemmas-hconv-lt-top
   - stratonovich-ham-second-moment-lean/endpoint-lemmas-wsum
   note: Wrapper EndpointLemmas.endpoint_closure_paper (wave L14 3D), nothing supplied; alpha0 < 1 and alpha < 2 - alpha0 carried
-    unused. The linear-image half takes the target to be a covariance (the section's standing assumption, lines 6202-6205).
+    unused. The linear-image half takes the target to be a covariance (the section's standing assumption, lines 7282-7285).
     p_eps(x - Ty) as an isotropic heat mixture instead of q_Sigma = p_a * q_(Sigma - aI).
 - paper:
     number: Lemma L:equilibrium-gamma-beta
@@ -616,8 +611,7 @@ rows:
   - stratonovich-ham-second-moment-lean/direct-event-noise-scale
   - stratonovich-ham-second-moment-lean/direct-event-vertex-scale
   inputs:
-  - the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses
-    (see docs/statement-ledger.md)
+  - "none beyond the paper's hypotheses: the checked Lean statements assume only parameter conditions; the analytic and probabilistic facts of the proof are outside Lean (see docs/statement-ledger.md, section DirectEvent)"
 - paper:
     number: Lemma L:finite-word-cutoff
     title: Exact cutoffs for finite Gaussian words
@@ -742,15 +736,15 @@ rows:
   - stratonovich-ham-second-moment-lean/interval-scalar-split-ell
   - stratonovich-ham-second-moment-lean/fixed-split-mem-cut-idx
   inputs:
-  - E:interval-column (main TeX lines 2832-2835) for the modes of each color at every rho > 0, as the named input FockColumn
+  - E:interval-column (main TeX lines 3388-3391) for the modes of each color at every rho > 0, as the named input FockColumn
     of FockForm
   - the segment bound of L:interval-complex for the background propagators, ||P_z(t,s)|| <= 100 e^(2 Lambda (t-s)) on every
-    interval free of background endpoints, as applied in E:split-segment-product (lines 3155-3165; SegmentBound); its operator
+    interval free of background endpoints, as applied in E:split-segment-product (lines 3791-3801; SegmentBound); its operator
     theory is not formalized
-  - E:interval-cross-cube (lines 3290-3313) on the torus of the background radii, with the integrability of the word on each
+  - E:interval-cross-cube (lines 3937-3960) on the torus of the background radii, with the integrability of the word on each
     simplex (DysonCrossCube); variation of constants is not formalized
-  - the invariance of every cross subspace Z_S under the background propagator (lines 3212-3216; BackgroundPreserves) and
-    the absolute convergence of the ordinary coefficients on every polydisc (lines 3097-3101; EntireCoefficients); the cutoff
+  - the invariance of every cross subspace Z_S under the background propagator (lines 3855-3859; BackgroundPreserves) and
+    the absolute convergence of the ordinary coefficients on every polydisc (lines 3729-3733; EntireCoefficients); the cutoff
     evolution, its propagators and the coefficients U_r v are not constructed
   note: 'Under H:homog (R = R_alpha carried, unused; alpha < 2), sigma_i > 0, any delta > 0 (not delta_(alpha/2)). S_rho = A_rho^(-1/2)
     symmetric, norm <= 1/rho, spectral comparison; M_e symmetric; S_b symmetric idempotent commuting with S_rho: assumed TeX
@@ -956,9 +950,9 @@ rows:
   - stratonovich-ham-second-moment-lean/fixed-split-core-interval-copy-metric
   - stratonovich-ham-second-moment-lean/fixed-split-core-cut-ratio-le
   inputs:
-  - 'E:cp-input (Crouzeix-Palencia, main TeX lines 2277-2286) for C_h, F_h, H_h at L = A_0 - V with weight Lambda: operators
+  - 'E:cp-input (Crouzeix-Palencia, main TeX lines 2739-2748) for C_h, F_h, H_h at L = A_0 - V with weight Lambda: operators
     of norm at most (1+sqrt 2) M whenever the scalar function is bounded by M on W(L)'
-  - 'the inverse-root integral representation of lines 2929-2944 for L^* = A_0 - V^*: Q'' - 1 = pi^(-1) int_0^inf J(t) dt
+  - 'the inverse-root integral representation of lines 3511-3526 for L^* = A_0 - V^*: Q'' - 1 = pi^(-1) int_0^inf J(t) dt
     with J strongly measurable and ||J(t)|| <= (D/(1-delta_a)) t^(-1/2) kappa^(a-3)'
   note: 'Proved for E:interval-metric: the multiplier form of the weight change, the jump ratio, the product over jumps with
     pairwise disjoint ending sets, and the telescoping of the conversion factors along a monotone partition (wave L10). Their
@@ -1002,7 +996,7 @@ rows:
   - stratonovich-ham-second-moment-lean/hermite-fock-gaussian-field-bound-trunc
   - stratonovich-ham-second-moment-lean/hermite-fock-field-op-bound-trunc
   - stratonovich-ham-second-moment-lean/fock-form-fock-const-eq
-  note: 'Wrapper FockColumnBound.interval_contractions_paper_completed under H:homog, R_alpha (line 2820), eps, rho > 0 and
+  note: 'Wrapper FockColumnBound.interval_contractions_paper_completed under H:homog, R_alpha (line 3370), eps, rho > 0 and
     a finite orthonormal family of real modes in L^2(mu_eps). Not formalized: the Fourier identification and the link of the
     modes with W_eps. FockForm.interval_contractions_paper (abstract operators, E:interval-column supplied) remains.'
 - paper:
@@ -1058,7 +1052,7 @@ rows:
   - stratonovich-ham-second-moment-lean/masked-spectral-growth-spectral-homogeneous-of-scaling
   note: Under H:homog and alpha < 1 alone in low_alpha_convolution_paper_completed, d = 1, 2, 3, G_h = waveGreen d h (d =
     3 via toSphere, Le's decision 4), p_eps of covariance eps I, G_(h,eta) = N(0, eta I) * G_h. The Fourier display of lines
-    4740-4744 is proved (WaveGreenFourier), not imported. Integrability is part of each conclusion.
+    5614-5618 is proved (WaveGreenFourier), not imported. Integrability is part of each conclusion.
 - paper:
     number: Lemma L:masked-continuous-wave
     title: Continuous sine factors
@@ -1295,7 +1289,7 @@ rows:
   - stratonovich-ham-second-moment-lean/wave-green-fourier-wave-green-fourier-three
   - stratonovich-ham-second-moment-lean/wave-green-fourier-sphere-fourier
   - stratonovich-ham-second-moment-lean/spectral-mass-identity-ralpha
-  note: Under the section's standing assumptions (PhaseCovariance, lines 2054-2057) alone in phase_contractions_paper_completed,
+  note: Under the section's standing assumptions (PhaseCovariance, lines 2490-2493) alone in phase_contractions_paper_completed,
     and under H:homog in d = 3. G_a = waveGreen 3 a (toSphere, Le's decision 4); R_alpha uses V = mu(open B_1). Evenness and
     positive definiteness are carried, unused; the three regions are closed. Integrability is part of each conclusion.
 - paper:
@@ -1520,8 +1514,7 @@ rows:
   claims:
   - stratonovich-ham-second-moment-lean/joint-tilt-shifted-amplitude
   inputs:
-  - the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses
-    (see docs/statement-ledger.md)
+  - "none beyond the paper's hypotheses: the checked Lean statements assume only parameter conditions; the analytic and probabilistic facts of the proof are outside Lean (see docs/statement-ledger.md, section JointTilt)"
 - paper:
     number: Lemma L:raw-block-restart
     title: Composition over time blocks and regularized products
@@ -1688,7 +1681,7 @@ rows:
   note: Under H:homog, Gamma != 0, a = alpha0 and nothing supplied, Lean proves lambda_z(c)^2 finite and positive
     for c > 0, lambda_z Lipschitz on compact positive intervals, B_Gamma(z,z) finite, and the score bound in existential
     and supremum form; positivity uses the dilation floor of VariationalFloor, a different route from TeX lines
-    57-62.
+    68-73.
 - paper:
     number: Lemma L:symplectic-free
     title: Free wave form and compact Young baseline
@@ -1732,8 +1725,8 @@ rows:
   inputs:
   - the free wave group on E = H^(1/2) x H^(-1/2) with its group law, the isometric velocity reversal with S_E(-h)
     = R S_E(h) R, and the spatial translations, isometric, commuting with S_E(h) and weakly null as |y| -> infinity
-    (integrated_symplectic_phase.tex lines 103-122); E is an abstract nonzero real Hilbert space
-  - 'P:constant-young-linear on L(E) (integrated_symplectic_phase.tex lines 91-98): the left Young sums of X over
+    (integrated_symplectic_phase.tex lines 121-145); E is an abstract nonzero real Hilbert space
+  - 'P:constant-young-linear on L(E) (integrated_symplectic_phase.tex lines 105-112): the left Young sums of X over
     partitions of [s,t] converge in operator norm to U_X(t,s) - I; supplied in the weaker form of convergence along
     some nontrivial filter of finite node lists in [s,t] (no ordering, endpoint or mesh condition)'
   note: The two displays are stated exactly as in the lemma, with its hypotheses (1/2 < theta < 1, compact-valued
@@ -2007,11 +2000,11 @@ rows:
   - stratonovich-ham-second-moment-lean/order-two-diagrams-lintegral-g1-mul
   - stratonovich-ham-second-moment-lean/order-two-diagrams-c0-pos
   inputs:
-  - 'MixedMoment: the statement of P:mixed (main TeX lines 658-673, E:mixed-moment and E:full-second): the diagram limits
+  - 'MixedMoment: the statement of P:mixed (main TeX lines 834-849, E:mixed-moment and E:full-second): the diagram limits
     exist and are finite, E[X_m X_n] = sum_D J_(m,n,D)(t) with the products integrable, u^2 integrable and E u^2 = sum_k A_k(t);
     true for the solution under H:homog, not proved'
   note: Wrapper OrderTwoDiagrams.white_test_paper (wave L13 item D4), with H:homog for d = alpha = 1, Gamma = delta_0 (only
-    alpha0 < 1 used) and X_0 = 1 (the TeX's convention, line 620). The eps -> 0+ limits of the smoothed white diagrams are
+    alpha0 < 1 used) and X_0 = 1 (the TeX's convention, line 796). The eps -> 0+ limits of the smoothed white diagrams are
     WhiteCollapse.tendsto_diagram_white (item D6). The diagram values hold for alpha0 < 1, t >= 0.
 - paper:
     number: Proposition P:actual-wave-form
@@ -2027,8 +2020,7 @@ rows:
   - stratonovich-ham-second-moment-lean/dimensional-matrix-forward
   - stratonovich-ham-second-moment-lean/dimensional-matrix-full-interaction
   inputs:
-  - the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses
-    (see docs/statement-ledger.md)
+  - "none beyond the paper's hypotheses: the checked Lean statements assume only parameter conditions; the analytic and probabilistic facts of the proof are outside Lean (see docs/statement-ledger.md, section DimensionalMatrix)"
 - paper:
     number: Proposition P:clock-copy-obstruction
     title: Obstruction to unweighted constant-correlation clock copying
@@ -2115,11 +2107,11 @@ rows:
   - stratonovich-ham-second-moment-lean/two-simplex-time-sum-inv-factorial-gen
   - stratonovich-ham-second-moment-lean/two-simplex-time-diagram-le
   inputs:
-  - 'MixedMoment: the statement of P:mixed (main TeX lines 658-673, proof 676-728): every diagram limit exists and is finite,
+  - 'MixedMoment: the statement of P:mixed (main TeX lines 834-849, proof 861-927): every diagram limit exists and is finite,
     E[X_m X_n] = sum_D J_(m,n,D)(t), u^2 integrable and E u^2 = sum_k A_k(t); TRUE for the solution under H:homog; about random
     variables standing for the unconstructed solution and chaos terms'
   - 'DiagramLimits (Riesz case only): every model diagram converges to diagramLim as eps -> 0+; part of L:joint-fixed-order
-    (main TeX lines 1542-1631), invoked at line 4671; TRUE under H:homog; proved for white noise (D1Upper.diagramLimits_white)
+    (main TeX lines 1853-1966), invoked at line 5534; TRUE under H:homog; proved for white noise (D1Upper.diagramLimits_white)
     and implied by MixedMoment'
   note: Wrappers D1Upper.d1_upper_paper_riesz, d1_upper_paper_white (MixedMoment supplied) and d1_upper_paper_white' (white
     case, displays on the model, nothing supplied); 0 < alpha_0 carried unused. Model M4 (one common noise width, exact time
@@ -2205,8 +2197,7 @@ rows:
   claims:
   - stratonovich-ham-second-moment-lean/positive-gram-half-weighted-entrywise-mono
   inputs:
-  - the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses
-    (see docs/statement-ledger.md)
+  - "none beyond the paper's hypotheses: the checked Lean statements assume only parameter conditions; the analytic and probabilistic facts of the proof are outside Lean (see docs/statement-ledger.md, section PositiveGram)"
 - paper:
     number: Proposition P:gram-positive-optimizer
     title: Positive conic maximizer
@@ -2218,8 +2209,7 @@ rows:
   claims:
   - stratonovich-ham-second-moment-lean/positive-gram-active-upper-bound
   inputs:
-  - the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses
-    (see docs/statement-ledger.md)
+  - "none beyond the paper's hypotheses: the checked Lean statements assume only parameter conditions; the analytic and probabilistic facts of the proof are outside Lean (see docs/statement-ledger.md, section PositiveGram)"
 - paper:
     number: Proposition P:interval-coefficients
     title: Uniform interval coefficients
@@ -2258,20 +2248,20 @@ rows:
   - stratonovich-ham-second-moment-lean/interval-scalar-two-mul-add-one-le-three-pow
   - stratonovich-ham-second-moment-lean/inventory-product-inventory-product
   inputs:
-  - E:interval-energy-splits combined with the reflection parity (lines 3478-3488), the coefficient as the sum over degree
+  - E:interval-energy-splits combined with the reflection parity (lines 4147-4157), the coefficient as the sum over degree
     vectors kappa (sum kappa_i = k) and splits r_i + q_i = 2 kappa_i of Q_(r,q)
   - the inputs of L:fixed-split for every split (E:interval-column, the segment bound of L:interval-complex, E:interval-cross-cube,
     the invariance of the cross subspaces and entire coefficients; see the row of L:fixed-split), with the interval endpoints
     (a_i, b_i) in [0, T], b_i - a_i <= h_i, and any delta > 0 in C_split = 100^8 e^8 max(1, 12 delta^(-2))
-  - for E:interval-phase-bound, the power-series identity at s = 1 (lines 3430-3472, 3558-3565), the vanishing of odd coefficients
-    (lines 3483-3485) and the zero-order bound e ||v||^2 (lines 3570-3571)
-  - 'the Duhamel word expansion of the ordinary coefficients (lines 3430-3435, 3493-3497; DuhamelWords): U_r v and the cutoff
+  - for E:interval-phase-bound, the power-series identity at s = 1 (lines 4092-4136, 4248-4255), the vanishing of odd coefficients
+    (lines 4152-4154) and the zero-order bound e ||v||^2 (lines 4260-4261)
+  - 'the Duhamel word expansion of the ordinary coefficients (lines 4092-4097, 4166-4170; DuhamelWords): U_r v and the cutoff
     coefficient c_r are the same finite sum of integrals of words with r_i insertions of color i, uncut and cut; the evolutions
     are not constructed'
   - from DuhamelWords Lean proves |Q_(r,q)| <= |<c_r, c_q>|, which the earlier step row assumed as the added hypothesis hQ
     (accepted by Le for now on 2026-11-12); Q_(r,q) is the real part of <U_r v, U_q v>_(1/T)
-  - the reduction to sigma_i > 0 (zero noise and sign change, lines 3417-3423); not formalized
-  note: Wrappers under H:homog with R_alpha of line 2820; constant 12 max(c,0) max(1,L)^beta C_split C_inv. L:inventory-product
+  - the reduction to sigma_i > 0 (zero noise and sign change, lines 4079-4085); not formalized
+  note: Wrappers under H:homog with R_alpha of line 3370; constant 12 max(c,0) max(1,L)^beta C_split C_inv. L:inventory-product
     is discharged in IntervalScalarCompleted, L:fixed-split in FixedSplit; the hQ that Le accepted on 2026-11-12 is removed
     in FiniteWordCutoff.interval_coefficient_assembly_paper_words (DuhamelWords instead). Zero noise and the sign reduction
     not formalized.
@@ -2308,8 +2298,8 @@ rows:
   - stratonovich-ham-second-moment-lean/low-alpha-upper-kappa
   - stratonovich-ham-second-moment-lean/two-simplex-time-coeff-a-le
   inputs:
-  - 'MixedMoment: the statement of P:mixed (main TeX lines 658-673): the diagram limits exist and are finite (the TeX proves
-    them by L:joint-fixed-order and the eta-limit paragraph, lines 4879-4896), E[X_m X_n] is the sum of the diagram limits,
+  - 'MixedMoment: the statement of P:mixed (main TeX lines 834-849): the diagram limits exist and are finite (the TeX proves
+    them by L:joint-fixed-order and the eta-limit paragraph, lines 5785-5802), E[X_m X_n] is the sum of the diagram limits,
     E u^2 = sum_k A_k(t); TRUE for the solution under H:homog'
   note: Wrappers LowAlphaUpper.low_alpha_upper_paper (nothing supplied, model) and low_alpha_upper_moment_paper (MixedMoment).
     Models M4 and M1 (d = 3); the TeX's Green smoothing G_(h,eta) and its limit are not needed (the convolution lemmas at
@@ -2354,7 +2344,7 @@ rows:
   - stratonovich-ham-second-moment-lean/masked-auxiliary-real-paper-hat-cx-s-re
   - stratonovich-ham-second-moment-lean/masked-auxiliary-real-paper-hat-cx-s-im
   note: 'Nothing supplied. Complex H: masked_auxiliary_norm_paper (Hilbert H; masked_auxiliary_norm: any complex Banach); real
-    H (line 99): MaskedAuxiliaryReal.masked_auxiliary_norm_real_paper (wave L13), for F_C = iota o F in the complexification
+    H (line 117): MaskedAuxiliaryReal.masked_auxiliary_norm_real_paper (wave L13), for F_C = iota o F in the complexification
     Cx H built in the companion. paperHat is the unitary transform. The proof-internal finiteness and continuity of rho_R are
     not formalized. Gamma != 0 unused.'
 - paper:
@@ -2372,10 +2362,10 @@ rows:
   - stratonovich-ham-second-moment-lean/gaussian-comparison-gaussian-seminorm-moment-le
   inputs:
   - the covariance matrix A of the masked evaluations W(zeta_R F_1), ..., W(zeta_R F_m) and the auxiliary Gram matrix
-    B of N_R (lines 201-203, 239-240), which need the noise W and the completion of the test space (D1)
+    B of N_R (lines 262-264, 320-321), which need the noise W and the completion of the test space (D1)
   - A <= B in positive semidefinite order, from E W(zeta_R F)^2 <= N_R(F)^2 (P:masked-auxiliary-norm with H = H_a^C
-    and E:masked-actual-noise-norm, lines 230-231, 240-241)
-  - the joint centered Gaussian law of the masked evaluations, so that their law is N(0,A) (lines 199-201, 234-237)
+    and E:masked-actual-noise-norm, lines 304-305, 321-322)
+  - the joint centered Gaussian law of the masked evaluations, so that their law is N(0,A) (lines 260-262, 308-311)
   note: 'The Lean theorems are a standalone finite result with no hypothesis standing for the inputs; their link
     to the noise is the inputs listed. Route: N(0,B) = N(0,A) * N(0,B-A) by characteristic functions replaces the
     product-space coupling, then Jensen for y -> N(x+y)^p.'
@@ -2456,9 +2446,9 @@ rows:
   - stratonovich-ham-second-moment-lean/hermite-fock-gaussian-field-bound
   - stratonovich-ham-second-moment-lean/hermite-fock-vacuum-insertion-isometry
   inputs:
-  - 'the closure step of E:occupied-multiplication (lines 1810-1814: approximation in P_(<=n), the L^2 Cauchy property of
+  - 'the closure step of E:occupied-multiplication (lines 2197-2201: approximation in P_(<=n), the L^2 Cauchy property of
     the products and the almost-sure identification of the limit with HF); not formalized'
-  - the fixed-order limits X_n in P_(<=n) (lines 1794-1798) and the proof of E:mild-construction (from line 1816); not formalized
+  - the fixed-order limits X_n in P_(<=n) (lines 2181-2185) and the proof of E:mild-construction (from line 2211); not formalized
   note: E:occupied-multiplication for finite-coordinate polynomials is proved with nothing supplied, by the spanning step
     and the Gaussian Fock bound with X = C; F may depend on H. H:homog plays no role in that display and is not carried.
 - paper:
@@ -2480,7 +2470,7 @@ rows:
   - stratonovich-ham-second-moment-lean/type-continuity-type-continuity-inputs
   - stratonovich-ham-second-moment-lean/type-continuity-positive-series-type-paper
   inputs:
-  - 'E:static-ratio-input (Chen-Hu static law, lines 7079-7087): 0 < L_0 and T^(-kappa_st) log E U(T,x)^p -> p^(kappa_st)
+  - 'E:static-ratio-input (Chen-Hu static law, lines 8256-8264): 0 < L_0 and T^(-kappa_st) log E U(T,x)^p -> p^(kappa_st)
     L_0 for p = 1, 2 (fields L0_pos, static_law)'
   - E:full-moment-positive-series of L:full-moment-coefficient-holder with c_(p,0)(a) = 1 (E:full-moment-coefficients),
     nonnegative coefficients, summable for t > 0, 0 <= a < a_max (field series)
@@ -2489,7 +2479,7 @@ rows:
     log E u^(a)(T,x)^p, 0 < a < a_max (field minorant)'
   - 'E:full-upper-bound of T:full-upper at temporal exponent a: E u^(a)(T,x)^2 <= e (T+2)^d exp(C T^(kappa(a)))
     for T >= 1, one finite C (field full_upper)'
-  - Cauchy-Schwarz (E u^(a)(T,x))^2 <= E u^(a)(T,x)^2 (field cauchy_schwarz; proof line 7535)
+  - Cauchy-Schwarz (E u^(a)(T,x))^2 <= E u^(a)(T,x)^2 (field cauchy_schwarz; proof line 8795)
   note: Under H:homog and Gamma != 0 (carried; only alpha < 2 is used). Moments are abstract functions mom p a T
     at a fixed x; rates are extended reals and the inequality is stated for their toReal values, which are the rates
     since finiteness is proved. log Lambda-bar_p is convex on [0, a_max).
@@ -2576,8 +2566,7 @@ rows:
   claims:
   - stratonovich-ham-second-moment-lean/actual-event-moderate-penalty
   inputs:
-  - the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses
-    (see docs/statement-ledger.md)
+  - "none beyond the paper's hypotheses: the checked Lean statements assume only parameter conditions; the analytic and probabilistic facts of the proof are outside Lean (see docs/statement-ledger.md, section ActualEvent)"
 - paper:
     number: Proposition P:raw-occupation-energy
     title: Original occupation energy and dilation
@@ -2620,7 +2609,7 @@ rows:
   - stratonovich-ham-second-moment-lean/spatial-occupation-l7-completed-square-pairing-bounds-holds
   note: Under H:homog, Gamma != 0, a = alpha0, nothing supplied, over the class O itself (ClassOBridge.raw_occupation_energy_whole_paper,
     wave L14; M6); the dilation U_l up to versions. Spatial bound with the sharp Schur row K_0. The direct zero case (lines
-    302-308) is proved except C_2 = 0, the vanishing of S_c^pos and of the original means, and Q = 0 (ClassOBridge.zero_covariance_paper).
+    379-385) is proved except C_2 = 0, the vanishing of S_c^pos and of the original means, and Q = 0 (ClassOBridge.zero_covariance_paper).
 - paper:
     number: Proposition P:riesz-small
     title: Riesz finite coefficients
@@ -2674,7 +2663,7 @@ rows:
   - stratonovich-ham-second-moment-lean/riesz-four-diagrams-pi-wave-green-eq-smul-map
   - stratonovich-ham-second-moment-lean/riesz-four-diagrams-spatial-riesz-smul
   inputs:
-  - 'MixedMoment: the statement of P:mixed (main TeX lines 658-673): the diagram limits exist and are finite, E[X_m X_n] =
+  - 'MixedMoment: the statement of P:mixed (main TeX lines 834-849): the diagram limits exist and are finite, E[X_m X_n] =
     sum_D J_(m,n,D)(t) with the products integrable, u^2 integrable and E u^2 = sum_k A_k(t); true for the solution under
     H:homog, not proved (order-two wrapper riesz_small_paper'' only)'
   note: Wrappers RieszFourDiagrams.riesz_small_paper' (order two; RieszDiagramLimit proved there by rieszDiagramLimit) and
@@ -2711,7 +2700,7 @@ rows:
   inputs:
   - 'SignedMultiplierForm P k: E:signed-multiplier-form (integrated_signed_static.tex lines 16-18), the conclusion of L:signed-limiting-multiplier
     (not formalized), for an abstract bounded operator P on H^1 standing for the pairing v_V; the multiplier V is not constructed'
-  - 'the self-adjointness of P: the Hermitian pairing of the proof of L:signed-limiting-multiplier (lines 32-35)'
+  - 'the self-adjointness of P: the Hermitian pairing of the proof of L:signed-limiting-multiplier (lines 36-39)'
   note: Wrapper ResolventForm.signed_closed_form_resolvent_paper (wave L13 item K5b), K >= max(1, k), c = 2 + K^2, L_K = 3(1
     + K^2), in the manuscript norms z (msNormSq) and H^(1/2) (h12NormSq). H_V is defined only by its resolvent (no LinearPMap);
     the commutation with real conjugation is not formalized. A bounded real potential satisfies the input (potOp_signedMultiplierForm).
@@ -2869,22 +2858,22 @@ rows:
   - stratonovich-ham-second-moment-lean/static-interaction-completed-propagator-block
   inputs:
   - the bound 100 e^(2 lambda h) for the phase propagator on the coupling disc of radius delta_(alpha/2) lambda^(2-alpha/2)/d',
-    for every d' >= d_n, d' > 0 (lines 2611-2614), supplied in StaticPhaseCauchy
+    for every d' >= d_n, d' > 0 (lines 3129-3132), supplied in StaticPhaseCauchy
   - 'in static_phase_all_orders_cp the circle bound is derived from L:complex-phase and three named inputs: FockSandwich (E:fock-sandwich
     in operator form), CPInputs (E:cp-input, inverse-root integral) and PropagatorBlock, with positive A_0 and self-adjoint
     B at every cutoff (supplied, with the named inputs)'
   - in FockSandwichModel.static_phase_all_orders_model (wave L12) FockSandwich, A_0 >= 0 and B = B^* are proved on the Fourier-side
     model, not identified with physical space
   - 'the added restriction of static_phase_all_orders_model: an orthonormal real family psi_m of size m in L^2(mu_eps) for every
-    Gaussian cutoff m (so mu != 0; the case mu = 0, where every positive-order term vanishes, lines 2608-2609, is not covered
+    Gaussian cutoff m (so mu != 0; the case mu = 0, where every positive-order term vanishes, lines 3126-3127, is not covered
     by that wrapper)'
-  - the phase entries are entire in the coupling (lines 2616-2617)
+  - the phase entries are entire in the coupling (lines 3134-3135)
   - the identification of the n-th coefficient, applied to S_b(f,g) times the vacuum, with the cutoff n-th Duhamel phase via
-    L:finite-word-cutoff (lines 2625-2630), with ||z||_(1/h) <= n ||z||_(n/h) (line 2632); L:finite-word-cutoff is proved
+    L:finite-word-cutoff (lines 3143-3148), with ||z||_(1/h) <= n ||z||_(n/h) (line 3154); L:finite-word-cutoff is proved
     with several coordinates per color (FiniteWordCutoff), but the identification of the phase coefficients is not formalized
-  - '||S_b(f,g)||_(n/h) <= ||(f,g)||_(1/h) (line 2633)'
-  - the removal of the band and Gaussian cutoffs, as convergence of the norms (lines 2643-2667)
-  - the free bound ||Z_0(h)||_(1/h) <= sqrt(e) ||(f,g)||_(1/h) (line 2679)
+  - '||S_b(f,g)||_(n/h) <= ||(f,g)||_(1/h) (line 3155)'
+  - the removal of the band and Gaussian cutoffs, as convergence of the norms (lines 3168-3192)
+  - the free bound ||Z_0(h)||_(1/h) <= sqrt(e) ||(f,g)||_(1/h) (line 3207)
   note: Abstract complex and real Banach spaces stand for L^2(Omega; X_lambda); the wrappers state R_alpha by E:phase-constants
     and A_alpha = 400 sqrt(2) e^2/delta_(alpha/2) with delta_a = min{1/4, pi/(8 I_a)} proved positive; the Gaussian-polynomial
     structure and the uniformity in eps are those of the inputs.
@@ -2915,8 +2904,8 @@ rows:
   - stratonovich-ham-second-moment-lean/source-tube-ae-tube-radius-lt-top
   inputs:
   - 'TubeAttained: every tube T_r is closed and {d_delta <= r} = T_r (first part of E:tube-attained-radius of L:tube-closed-geometry,
-    gaussian_tubes.tex lines 134-137, proved there from the compactness of M_delta; nonzero law only)'
-  - 'TubeTail: P(d_delta(X) > r) <= e^(-r^2/(2 delta)) for r >= 0 (second part of E:tube-attained-radius, lines 137-138, proved
+    gaussian_tubes.tex lines 158-161, proved there from the compactness of M_delta; nonzero law only)'
+  - 'TubeTail: P(d_delta(X) > r) <= e^(-r^2/(2 delta)) for r >= 0 (second part of E:tube-attained-radius, lines 161-162, proved
     there from the imported Gaussian isoperimetric theorem of Borell and Sudakov-Tsirelson; nonzero law only)'
   note: Wrappers SourceTube.tube_rayleigh_transfer_paper (nonzero law, the inputs at the manuscript tubes; compactness, delta
     < 1, E|X|^2 < infinity, the nonzero law and the measurability of F, G unused; the Gaussian hypotheses on X enter only
@@ -2947,8 +2936,8 @@ rows:
   - stratonovich-ham-second-moment-lean/raw-variational-label-score
   - stratonovich-ham-second-moment-lean/raw-variational-positive-score
   - stratonovich-ham-second-moment-lean/raw-variational-strict-label-factor
-  note: 'The boundedness (TeX lines 272-274) is proved deterministically, not by the TeX''s stochastic proof (lines
-    309-325 via T:full-upper): it is the ceiling of T:intrinsic-occupation-ceiling with K_0 R_0 at c = 1, over the
+  note: 'The boundedness (TeX lines 372-374) is proved deterministically, not by the TeX''s stochastic proof (lines
+    430-446 via T:full-upper): it is the ceiling of T:intrinsic-occupation-ceiling with K_0 R_0 at c = 1, over the
     space-time positivity of SpaceTimePositivity. I_Psi > 0 and v_Psi > 0 are deterministic (v_Psi by a route different
     from L:compact-raw-profile).'
 - paper:
@@ -3005,7 +2994,7 @@ rows:
   - stratonovich-ham-second-moment-lean/variational-floor-rayleigh-set-floor
   - stratonovich-ham-second-moment-lean/variational-mean-is-rayleigh-trial-mean-iff-paper
   note: The positive floor comes from the dilation floor (VariationalFloor.dilation_floor, uses alpha < 2) applied
-    to h_s >= Gamma * Psibar, a different route from P:compact-original-common-trial (TeX lines 150-155). The operator
+    to h_s >= Gamma * Psibar, a different route from P:compact-original-common-trial (TeX lines 203-208). The operator
     half needs unbounded self-adjoint operators (foundation D8).
 - paper:
     number: Proposition P:wave-two-variances
@@ -3035,9 +3024,9 @@ rows:
   - E:variance-normalized-covariance (last claim of P:actual-wave-form, needs the noise construction D1), supplied
     as hlink, ofReal(var R t0 h z w) <= the nu_R lower integral of ||coef(Jz, Jw)||^2, the TeX display with U =
     Jz, V = Jw
-  - J maps the phases into L^2(R^d; C^2) preserving inner products (hJL2, hJ; D8, lines 171-176), weaker than the
+  - J maps the phases into L^2(R^d; C^2) preserving inner products (hJL2, hJ; D8, lines 205-210), weaker than the
     TeX's unitary J
-  - the identity ||z||_{E_{s-gamma}}^2 = ||<xi>^(-gamma) J z||_2^2 (hnormSG; line 431, D8)
+  - the identity ||z||_{E_{s-gamma}}^2 = ||<xi>^(-gamma) J z||_2^2 (hnormSG; line 529, D8)
   note: Under H:homog (a = alpha0, no Gamma != 0), 0 < gamma < min(1/2,(2-alpha)/2), T > 0 and the mask zeta, Lean
     proves both directions with C_T = 4 A_T K C_nu uniform in R, I and the family, and the h^(2 beta) form; kernel
     measurability is proved by continuity, not supplied.
@@ -3229,10 +3218,10 @@ rows:
   - stratonovich-ham-second-moment-lean/white-relative-width-bound-mass
   - stratonovich-ham-second-moment-lean/occupation-ceiling-exact-intrinsic-spatial-comparison-paper
   inputs:
-  - 'P:white-spatial-energy (integrated_white_evaluation.tex lines 58-99): the spatial energy of c delta_0 is c^2/6 for c
-    > 0; the lower bound uses only c^2/6 <= E_sp (the sech profile, lines 74-90), the upper bound only E_sp <= c^2/6 (the
-    CDF square, lines 67-72 and 85-89); reserved package B9, not proved'
+  - 'P:white-spatial-energy (integrated_white_evaluation.tex lines 79-133): the spatial energy of c delta_0 is c^2/6 for c
+    > 0; the lower bound uses only c^2/6 <= E_sp (the sech profile, lines 106-124), the upper bound only E_sp <= c^2/6 (the
+    CDF square, lines 88-100 and 117-121); reserved package B9, not proved'
   note: 'TeX route: the bracket of C:intrinsic-spatial-bracket (nothing supplied) at the white model (H:homog with alpha = d
-    = 1, Gamma != 0 for c > 0, proved) and the arithmetic of lines 115-122. On the upper half also S_2^pos <= 2^m F_0(E_(1/2)^O)
+    = 1, Gamma != 0 for c > 0, proved) and the arithmetic of lines 154-161. On the upper half also S_2^pos <= 2^m F_0(E_(1/2)^O)
     <= the upper formula, via the exact C_occ (OccupationCeilingExact) over the class O modelled by joint representatives, not
     identified with the TeX''s class.'

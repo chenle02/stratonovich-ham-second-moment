@@ -460,3 +460,30 @@ bound to the text of the proofs at development commit
 \texttt{\aiRereadSource} of the private development repository. The
 editorial record is
 \path{scripts/ai-statistics/reviews/readability-pass-2026-11-16.json}.
+
+\section*{The review of the Lean companion's references}
+
+Before release v0.10.0 of the Lean companion, its references to lines of
+this book were moved to the book's final text, and that work was reviewed in
+\aiLeanReCalls{} calls to \aiLeanReModel{} at high effort, read-only, on
+\aiLeanReDay{}. The companion's text was written by a Claude model, so the
+reviewer came from a different family. The first call returned FAIL at high
+confidence, with \aiLeanReFirstMajor{} major and \aiLeanReFirstMinor{} minor
+findings about the companion's descriptions and quotation ranges. After the
+corrections, a narrower confirmation returned FAIL at high confidence again,
+with \aiLeanReSecondMajor{} major findings, because two corrections had not
+reached every description. A second confirmation returned PASS WITH NOTES at
+high confidence, with no fatal or major finding and \aiLeanReThirdMinor{}
+minor note, and that report was accepted. The two earlier reports are kept.
+The first call checked a sample of the references with broad mechanical checks;
+the two confirmations checked only the corrections. Together the calls took
+about \aiLeanReMinutes{} minutes. They used \aiLeanReInput{} input tokens, of
+which \aiLeanReCached{} were cached, and \aiLeanReOutput{} output tokens, of
+which \aiLeanReReasoning{} were reasoning; these counts include each other as
+stated and must not be added again. No cost was recorded, which is not the same
+as zero. This series is separate from every count above. It checked the
+references and the repairs, not the mathematics of this book or the analytic
+inputs outside Lean, and it is not a human check. The author accepted release
+v0.10.0 on November~16, 2026. The record is
+\path{scripts/ai-statistics/reviews/lean-reanchor-review-2026-11-16.json}.
+

@@ -6,9 +6,9 @@ rows:
   proved_tex: "$C_{1,*}=C_{2,*}/2^{(4-\\alpha)/(3-\\alpha)}$ and $2C_{1,*}<C_{2,*}$ with nothing supplied, E:d1-first-calibration for random variables with the supplied mixed-moment expansion of P:mixed and the supplied first-moment series of the chaos expansion, and the conditional rate clause for an abstract first moment."
   not_formalized_tex: "The solution is not constructed. The P:Jensen comparison is commentary."
   inputs_tex:
-  - ascii: "MixedMoment: the statement of P:mixed (main TeX lines 658-673); here it gives E X_n = sum_D J_(n,0,D)(t) (with X_0 = 1), the odd terms zero and the diagram limits; TRUE for the solution under H:homog"
+  - ascii: "MixedMoment: the statement of P:mixed (main TeX lines 834-849); here it gives E X_n = sum_D J_(n,0,D)(t) (with X_0 = 1), the odd terms zero and the diagram limits; TRUE for the solution under H:homog"
     tex: "\\texttt{MixedMoment}: the statement of P:mixed; here it gives $\\E X_n=\\sum_DJ_{n,0,D}(t)$ (with $X_0=1$), the odd terms zero and the diagram limits; TRUE for the solution under H:homog"
-  - ascii: "FirstMomentSeries: X_0 = 1, u integrable and E u = sum_n E X_n (main TeX line 620 and lines 4949-4950, \"the L^2 expansion permits taking expectations of partial sums\"); TRUE for the solution and its chaos terms"
+  - ascii: "FirstMomentSeries: X_0 = 1, u integrable and E u = sum_n E X_n (main TeX line 796 and lines 5856-5857, \"the L^2 expansion permits taking expectations of partial sums\"); TRUE for the solution and its chaos terms"
     tex: "\\texttt{FirstMomentSeries}: $X_0=1$, $u$ integrable and $\\E u=\\sum_n\\E X_n$ (the definition of $X_n$ at the start of S:G0 and the proof of C:d1-first-calibration, ``the $L^2$ expansion permits taking expectations of partial sums''); TRUE for the solution and its chaos terms"
 - label: C:intrinsic-spatial-bracket
   ascii: "Lean proves, with the section's hypotheses and nothing supplied, E:intrinsic-spatial-bracket and the comparison S_2^pos <= 2^m F_0(E_(1/2)^O) < 2^m F_a(E_(1/2)^O) for the variational value S_2^pos in place of C_2(Gamma,a) (identified by T:intrinsic-second-moment), with E_(1/2)^O over the class O itself; lambda is the square root of the real Rayleigh supremum."
@@ -23,17 +23,17 @@ rows:
   inputs_tex:
   - ascii: "for the order bounds (E:all-static-phase-orders, n >= 1; circle bound from L:complex-phase): FockSandwich (E:fock-sandwich in operator form), CPInputs (E:cp-input with the inverse-root integral) and PropagatorBlock (the weighted block map as M_z(h)), with positive A_0 and self-adjoint B at every cutoff (supplied, with the named inputs, in StaticInteractionCompleted)"
     tex: "for the order bounds (E:all-static-phase-orders, $n\\ge1$; circle bound from L:complex-phase): \\texttt{FockSandwich} (E:fock-sandwich in operator form), \\texttt{CPInputs} (E:cp-input with the inverse-root integral) and \\texttt{PropagatorBlock} (the weighted block map as $\\mathcal{M}_z(h)$), with positive $A_0$ and self-adjoint $B$ at every cutoff (supplied, with the named inputs, in \\texttt{StaticInteractionCompleted})"
-  - ascii: "FockSandwich, A_0 >= 0 and B = B^* are proved in wave L12 on the Fourier-side model (FockSandwichModel.static_interaction_model_paper), with the added restriction of an orthonormal real family psi_m of size m in L^2(mu_eps) for every Gaussian cutoff m (so mu != 0; the case mu = 0, where every positive-order term vanishes, lines 2608-2609, is not covered by that wrapper)"
+  - ascii: "FockSandwich, A_0 >= 0 and B = B^* are proved in wave L12 on the Fourier-side model (FockSandwichModel.static_interaction_model_paper), with the added restriction of an orthonormal real family psi_m of size m in L^2(mu_eps) for every Gaussian cutoff m (so mu != 0; the case mu = 0, where every positive-order term vanishes, lines 3126-3127, is not covered by that wrapper)"
     tex: "\\texttt{FockSandwich}, $A_0\\ge0$ and $B=B^*$ are proved in wave L12 on the Fourier-side model (\\texttt{FockSandwichModel.static\\_interaction\\_model\\_paper}), with the added restriction of an orthonormal real family $\\psi_m$ of size $m$ in $L^2(\\mu_\\epsilon)$ for every Gaussian cutoff $m$ (so $\\mu\\ne0$; the case $\\mu=0$, where every positive-order term vanishes, is not covered by that wrapper)"
   - ascii: "the remaining inputs of P:static-phase-all-orders for the order bounds: entireness in the coupling, the coefficient identification, the band and the cutoff removals (see that row)"
     tex: "the remaining inputs of P:static-phase-all-orders for the order bounds: entireness in the coupling, the coefficient identification, the band and the cutoff removals (see that row)"
-  - ascii: "the free estimate ||S_0(-+h)||_lambda <= sqrt(e), the group law S_0(-h) S_0(h) = 1, Z_0 = S_0(h)(f,g) and the norm comparisons ||Z_n||_lambda <= (lambda h)^(-1) ||Z_n||_(1/h), ||(f,g)||_(1/h) <= ||(f,g)||_lambda (lines 2735-2751); an abstract complete real inner product space stands for L^2(Omega; X_lambda)"
+  - ascii: "the free estimate ||S_0(-+h)||_lambda <= sqrt(e), the group law S_0(-h) S_0(h) = 1, Z_0 = S_0(h)(f,g) and the norm comparisons ||Z_n||_lambda <= (lambda h)^(-1) ||Z_n||_(1/h), ||(f,g)||_(1/h) <= ||(f,g)||_lambda (lines 3273-3292); an abstract complete real inner product space stands for L^2(Omega; X_lambda)"
     tex: "the free estimate $\\|\\mathcal{S}_0(\\mp h)\\|_\\lambda\\le\\sqrt e$, the group law $\\mathcal{S}_0(-h)\\mathcal{S}_0(h)=1$, $Z_0=\\mathcal{S}_0(h)(f,g)$ and the norm comparisons $\\|Z_n\\|_\\lambda\\le(\\lambda h)^{-1}\\|Z_n\\|_{1/h}$, $\\|(f,g)\\|_{1/h}\\le\\|(f,g)\\|_\\lambda$ (in the proof of C:static-interaction); an abstract complete real inner product space stands for $L^2(\\Omega;X_\\lambda)$"
-  - ascii: "Gaussian symmetry, E<Y_r, Y_s>_lambda = 0 for r + s odd (line 2752)"
+  - ascii: "Gaussian symmetry, E<Y_r, Y_s>_lambda = 0 for r + s odd (line 3293)"
     tex: "Gaussian symmetry, $\\E\\langle Y_r,Y_s\\rangle_\\lambda=0$ for $r+s$ odd (in the proof of C:static-interaction)"
-  - ascii: "the first-variance bounds of P:static-phase-variance, E||Y_1||^2 <= e E:phase-born and |E<Y_0, Y_2>| <= N sqrt(e) E:phase-mean (lines 2737-2742)"
+  - ascii: "the first-variance bounds of P:static-phase-variance, E||Y_1||^2 <= e E:phase-born and |E<Y_0, Y_2>| <= N sqrt(e) E:phase-mean (lines 3275-3280)"
     tex: "the first-variance bounds of P:static-phase-variance, $\\E\\|Y_1\\|^2\\le e$ times E:phase-born and $|\\E\\langle Y_0,Y_2\\rangle|\\le N\\sqrt e$ times E:phase-mean (in the proof of C:static-interaction)"
-  - ascii: "for E:independent-static-blocks, the per-block bound ||I_j y||^2 <= (1 + E(h_j, sigma_j, lambda)) ||y||^2 on phases adapted to the past (E:static-interaction with density and tensoring with the independent past, lines 2788-2792), adaptation being an abstract predicate preserved by each block, and ||S_0(h_j)||^2 <= e^(lambda h_j)"
+  - ascii: "for E:independent-static-blocks, the per-block bound ||I_j y||^2 <= (1 + E(h_j, sigma_j, lambda)) ||y||^2 on phases adapted to the past (E:static-interaction with density and tensoring with the independent past, lines 3333-3337), adaptation being an abstract predicate preserved by each block, and ||S_0(h_j)||^2 <= e^(lambda h_j)"
     tex: "for E:independent-static-blocks, the per-block bound $\\|\\mathcal{I}_jy\\|^2\\le(1+\\mathcal{E}(h_j,\\sigma_j,\\lambda))\\|y\\|^2$ on phases adapted to the past (E:static-interaction with density and tensoring with the independent past, in the proof of C:static-interaction), adaptation being an abstract predicate preserved by each block, and $\\|\\mathcal{S}_0(h_j)\\|^2\\le e^{\\lambda h_j}$"
 - label: C:static-moment-constant-continuity
   ascii: "Every conclusion is proved for an abstract moment function with the supplied facts of the logconvexity proposition and the static minorant and law; the moments of the solution are not constructed, so their identification with that function is not formalized."
@@ -51,7 +51,7 @@ rows:
   proved_tex: "With the corollary's hypotheses, that $\\sum_iw_i(T_i)_\\#\\Gamma_i$ is a nonzero covariance with scaling $3-\\alpha$ whose endpoints satisfy H:three-endpoints, and, from the supplied P:three-transfer, the coefficient, moment and asymptotic bounds for an abstract model of $A_k(t)$, $\\E u^2$ and $\\mathcal{M}_{\\rm st}$; the asymptotic bound is for every spectral measure of the low endpoint."
   not_formalized_tex: ""
   inputs_tex:
-  - ascii: "ThreeTransfer: the exact statement of P:three-transfer (main TeX lines 6421-6441, proved there in lines 6443-6792) for an abstract ThreeMomentModel at the midpoint theta; true for the manuscript's A_k(t), E u^2(t,x) and M_st, which the package does not construct"
+  - ascii: "ThreeTransfer: the exact statement of P:three-transfer (main TeX lines 7536-7556, proved there in lines 7558-7940) for an abstract ThreeMomentModel at the midpoint theta; true for the manuscript's A_k(t), E u^2(t,x) and M_st, which the package does not construct"
     tex: "\\texttt{ThreeTransfer}: the exact statement of P:three-transfer (proved in the manuscript) for an abstract \\texttt{ThreeMomentModel} at the midpoint $\\vartheta$; true for the manuscript's $A_k(t)$, $\\E u^2(t,x)$ and $\\mathcal{M}_{\\rm st}$, which the package does not construct"
 - label: C:three-product-riesz
   ascii: "Lean proves, with the corollary's hypotheses, that the product and Riesz targets are nonzero covariances with scaling 3 - alpha whose endpoints satisfy H:three-endpoints, and, from the supplied P:three-transfer, the coefficient, moment and asymptotic bounds for an abstract model of A_k(t), E u^2 and M_st; the asymptotic bound is for every spectral measure of the low endpoint."
@@ -59,7 +59,7 @@ rows:
   proved_tex: "With the corollary's hypotheses, that the product and Riesz targets are nonzero covariances with scaling $3-\\alpha$ whose endpoints satisfy H:three-endpoints, and, from the supplied P:three-transfer, the coefficient, moment and asymptotic bounds for an abstract model of $A_k(t)$, $\\E u^2$ and $\\mathcal{M}_{\\rm st}$; the asymptotic bound is for every spectral measure of the low endpoint."
   not_formalized_tex: ""
   inputs_tex:
-  - ascii: "ThreeTransfer: the exact statement of P:three-transfer (main TeX lines 6421-6441, proved there in lines 6443-6792) for an abstract ThreeMomentModel at the midpoint theta; true for the manuscript's A_k(t), E u^2(t,x) and M_st, which the package does not construct"
+  - ascii: "ThreeTransfer: the exact statement of P:three-transfer (main TeX lines 7536-7556, proved there in lines 7558-7940) for an abstract ThreeMomentModel at the midpoint theta; true for the manuscript's A_k(t), E u^2(t,x) and M_st, which the package does not construct"
     tex: "\\texttt{ThreeTransfer}: the exact statement of P:three-transfer (proved in the manuscript) for an abstract \\texttt{ThreeMomentModel} at the midpoint $\\vartheta$; true for the manuscript's $A_k(t)$, $\\E u^2(t,x)$ and $\\mathcal{M}_{\\rm st}$, which the package does not construct"
 - label: L:complex-phase
   ascii: "Lean proves, with the lemma's hypotheses, the numerical-range and scalar steps on W(L) with nothing supplied, and, with the inputs below, the bounds 3, 6(1+lambda h), 6 (times e^(lambda h)) for C_h(L), F_h(L), H_h(L), the root comparisons 7/6, 6/5 and the bound 100 e^(2 lambda h) for the weighted block map; its identification with M_z(h) is not formalized."
@@ -67,9 +67,9 @@ rows:
   proved_tex: "With the lemma's hypotheses, the numerical-range and scalar steps on $W(L)$ with nothing supplied, and, with the inputs below, the bounds $3$, $6(1+\\lambda h)$, $6$ (times $e^{\\lambda h}$) for $C_h(L)$, $F_h(L)$, $H_h(L)$, the root comparisons $7/6$, $6/5$ and the bound $100e^{2\\lambda h}$ for the weighted block map."
   not_formalized_tex: "The identification of the weighted block map with $\\mathcal{M}_z(h)$ is not formalized."
   inputs_tex:
-  - ascii: "E:cp-input (Crouzeix-Palencia, main TeX lines 2277-2286, imported in the TeX) for C_h, F_h, H_h at L = A_0 - zB with its holomorphy precondition: operators of norm at most (1+sqrt 2) M whenever the scalar function is bounded by M on W(L)"
+  - ascii: "E:cp-input (Crouzeix-Palencia, main TeX lines 2739-2748, imported in the TeX) for C_h, F_h, H_h at L = A_0 - zB with its holomorphy precondition: operators of norm at most (1+sqrt 2) M whenever the scalar function is bounded by M on W(L)"
     tex: "E:cp-input (Crouzeix--Palencia, imported in the manuscript) for $C_h$, $F_h$, $H_h$ at $L=A_0-zB$ with its holomorphy precondition: operators of norm at most $(1+\\sqrt2)M$ whenever the scalar function is bounded by $M$ on $W(L)$"
-  - ascii: "the inverse-root integral representation of lines 2329-2354 for L^* = A_0 - conj(z)B (bounded holomorphic calculus): Q' - 1 = pi^(-1) int_0^inf J(t) dt with J strongly measurable and ||J(t)|| <= (|z| d/(1-delta_a)) t^(-1/2) kappa^(a-3)"
+  - ascii: "the inverse-root integral representation of lines 2801-2826 for L^* = A_0 - conj(z)B (bounded holomorphic calculus): Q' - 1 = pi^(-1) int_0^inf J(t) dt with J strongly measurable and ||J(t)|| <= (|z| d/(1-delta_a)) t^(-1/2) kappa^(a-3)"
     tex: "the inverse-root integral representation in the proof of L:complex-phase for $L^*=A_0-\\overline{z}B$ (bounded holomorphic calculus): $Q'-1=\\pi^{-1}\\int_0^\\infty J(t)\\ud t$ with $J$ strongly measurable and $\\|J(t)\\|\\le(|z|d/(1-\\delta_a))t^{-1/2}\\kappa^{a-3}$"
 - label: L:driver-holder-limit
   no_analytic_input: true
@@ -78,7 +78,7 @@ rows:
   proved_tex: "Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger."
   not_formalized_tex: "The result itself."
   inputs_tex:
-  - ascii: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see docs/statement-ledger.md)"
+  - ascii: "none beyond the paper's hypotheses: the checked Lean statements assume only parameter conditions; the analytic and probabilistic facts of the proof are outside Lean (see docs/statement-ledger.md, section InteractionDriver)"
     tex: "The checked steps take no analytic input beyond the paper's hypotheses: the Lean statements assume only order conditions on the real exponents. The Gaussian moment bounds for increments, the dyadic chaining argument and the H\\\"older interpolation are not hypotheses of these statements; they are outside Lean (see the statement-ledger entry \\texttt{InteractionDriver})."
 - label: L:driver-interval-limit
   no_analytic_input: true
@@ -87,7 +87,7 @@ rows:
   proved_tex: "Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger."
   not_formalized_tex: "The result itself."
   inputs_tex:
-  - ascii: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see docs/statement-ledger.md)"
+  - ascii: "none beyond the paper's hypotheses: the checked Lean statements assume only parameter conditions; the analytic and probabilistic facts of the proof are outside Lean (see docs/statement-ledger.md, section InteractionDriver)"
     tex: "The checked step takes no analytic input beyond the paper's hypotheses: the Lean statement assumes only $C\\ge0$, $h>0$ and $L\\ge0$. The variance budget E:driver-short-variance-budget and the Schatten estimate it feeds are not hypotheses of this statement; they are outside Lean (see the statement-ledger entry \\texttt{InteractionDriver})."
 - label: L:exact-canonical-scaling
   no_analytic_input: true
@@ -96,7 +96,7 @@ rows:
   proved_tex: "Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger."
   not_formalized_tex: "The result itself."
   inputs_tex:
-  - ascii: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see docs/statement-ledger.md)"
+  - ascii: "none beyond the paper's hypotheses: the checked Lean statements assume only parameter conditions; the analytic and probabilistic facts of the proof are outside Lean (see docs/statement-ledger.md, section DirectEvent)"
     tex: "The checked steps take no analytic input beyond the paper's hypotheses: the Lean statements assume only $T>0$ and $\\alpha<3$. The scaling of the Gaussian noise and its covariance, the equality in law of the rescaled solution, the scaling of the Green measure and the extension to the full series and its second moment are not hypotheses of these statements; they are outside Lean (see the statement-ledger entry \\texttt{DirectEvent})."
 - label: L:fixed-split
   ascii: "Lean proves E:fixed-split-bound with C_split = 100^8 e^8 max(1, 12 delta^(-2)) for any delta > 0, on a finite Fock model of the cutoff Gaussian space with abstract spatial operators, for coefficients of an evolution that is not constructed; the segment bound, the Dyson cube identity, the invariance of the cross subspaces, entire coefficients and E:interval-column are supplied."
@@ -104,13 +104,13 @@ rows:
   proved_tex: "E:fixed-split-bound with $C_{\\rm split}=100^8e^8\\max\\{1,12\\delta^{-2}\\}$ for any $\\delta>0$, on a finite Fock model of the cutoff Gaussian space with abstract spatial operators, for coefficients of an evolution; the segment bound, the Dyson cube identity, the invariance of the cross subspaces, entire coefficients and E:interval-column are supplied."
   not_formalized_tex: "The evolution is not constructed."
   inputs_tex:
-  - ascii: "E:interval-column (main TeX lines 2832-2835) for the modes of each color at every rho > 0, as the named input FockColumn of FockForm"
+  - ascii: "E:interval-column (main TeX lines 3388-3391) for the modes of each color at every rho > 0, as the named input FockColumn of FockForm"
     tex: "E:interval-column for the modes of each color at every $\\rho>0$, as the named input \\texttt{FockColumn} of \\texttt{FockForm}"
-  - ascii: "the segment bound of L:interval-complex for the background propagators, ||P_z(t,s)|| <= 100 e^(2 Lambda (t-s)) on every interval free of background endpoints, as applied in E:split-segment-product (lines 3155-3165; SegmentBound); its operator theory is not formalized"
+  - ascii: "the segment bound of L:interval-complex for the background propagators, ||P_z(t,s)|| <= 100 e^(2 Lambda (t-s)) on every interval free of background endpoints, as applied in E:split-segment-product (lines 3791-3801; SegmentBound); its operator theory is not formalized"
     tex: "the segment bound of L:interval-complex for the background propagators, $\\|P_z(t,s)\\|\\le100e^{2\\Lambda(t-s)}$ on every interval free of background endpoints, as applied in E:split-segment-product (\\texttt{SegmentBound}); its operator theory is not formalized"
-  - ascii: "E:interval-cross-cube (lines 3290-3313) on the torus of the background radii, with the integrability of the word on each simplex (DysonCrossCube); variation of constants is not formalized"
+  - ascii: "E:interval-cross-cube (lines 3937-3960) on the torus of the background radii, with the integrability of the word on each simplex (DysonCrossCube); variation of constants is not formalized"
     tex: "E:interval-cross-cube on the torus of the background radii, with the integrability of the word on each simplex (\\texttt{DysonCrossCube}); variation of constants is not formalized"
-  - ascii: "the invariance of every cross subspace Z_S under the background propagator (lines 3212-3216; BackgroundPreserves) and the absolute convergence of the ordinary coefficients on every polydisc (lines 3097-3101; EntireCoefficients); the cutoff evolution, its propagators and the coefficients U_r v are not constructed"
+  - ascii: "the invariance of every cross subspace Z_S under the background propagator (lines 3855-3859; BackgroundPreserves) and the absolute convergence of the ordinary coefficients on every polydisc (lines 3729-3733; EntireCoefficients); the cutoff evolution, its propagators and the coefficients U_r v are not constructed"
     tex: "the invariance of every cross subspace $\\mathscr{Z}_S$ under the background propagator (in the proof of L:fixed-split; \\texttt{BackgroundPreserves}) and the absolute convergence of the ordinary coefficients on every polydisc (in the proof of L:fixed-split; \\texttt{EntireCoefficients}); the cutoff evolution, its propagators and the coefficients $U_{\\boldsymbol r}v$ are not constructed"
 - label: L:fock-form
   ascii: "Lean proves, with the lemma's hypotheses and nothing supplied, E:fock-sandwich, in coefficient form and as an operator-norm bound with A_0 >= 0 and B bounded self-adjoint on the cutoff Hilbert space, uniformly in eps, m and the band, for finitely many real modes, Hermite degree at most N in the m multiplied coordinates, on a Fourier-side model not identified with the physical-space operators."
@@ -123,9 +123,9 @@ rows:
   proved_tex: "With the lemma's hypotheses, the adjoint sandwich bound and the numerical-range and scalar steps on $W(A_0-V)$ with nothing supplied; with the inputs below, the bound $100e^{2\\Lambda h}$ for the weighted block map; and E:interval-metric for given finite jump data and, for the scalar conversion factors, along any monotone time partition."
   not_formalized_tex: "The weighted block map is not identified with the propagator in $X_\\Lambda$."
   inputs_tex:
-  - ascii: "E:cp-input (Crouzeix-Palencia, main TeX lines 2277-2286) for C_h, F_h, H_h at L = A_0 - V with weight Lambda: operators of norm at most (1+sqrt 2) M whenever the scalar function is bounded by M on W(L)"
+  - ascii: "E:cp-input (Crouzeix-Palencia, main TeX lines 2739-2748) for C_h, F_h, H_h at L = A_0 - V with weight Lambda: operators of norm at most (1+sqrt 2) M whenever the scalar function is bounded by M on W(L)"
     tex: "E:cp-input (Crouzeix--Palencia) for $C_h$, $F_h$, $H_h$ at $L=A_0-V$ with weight $\\Lambda$: operators of norm at most $(1+\\sqrt2)M$ whenever the scalar function is bounded by $M$ on $W(L)$"
-  - ascii: "the inverse-root integral representation of lines 2929-2944 for L^* = A_0 - V^*: Q' - 1 = pi^(-1) int_0^inf J(t) dt with J strongly measurable and ||J(t)|| <= (D/(1-delta_a)) t^(-1/2) kappa^(a-3)"
+  - ascii: "the inverse-root integral representation of lines 3511-3526 for L^* = A_0 - V^*: Q' - 1 = pi^(-1) int_0^inf J(t) dt with J strongly measurable and ||J(t)|| <= (D/(1-delta_a)) t^(-1/2) kappa^(a-3)"
     tex: "the inverse-root integral representation in the proof of L:interval-complex for $L^*=A_0-V^*$: $Q'-1=\\pi^{-1}\\int_0^\\infty J(t)\\ud t$ with $J$ strongly measurable and $\\|J(t)\\|\\le(D/(1-\\delta_a))t^{-1/2}\\kappa^{a-3}$"
 - label: L:interval-contractions
   ascii: "Lean proves, with the lemma's hypotheses and nothing supplied, E:interval-column, its band-compressed form, the phase-insertion bound sqrt(R_alpha) rho^((alpha-2)/2), the sandwich bound R_alpha rho^(alpha-4) with self-adjointness and E:interval-fock, for finitely many real modes, on a Fourier-side model not identified with the physical-space operators, without tensoring by another Hilbert factor."
@@ -179,7 +179,7 @@ rows:
   proved_tex: "Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger."
   not_formalized_tex: "The result itself."
   inputs_tex:
-  - ascii: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see docs/statement-ledger.md)"
+  - ascii: "none beyond the paper's hypotheses: the checked Lean statements assume only parameter conditions; the analytic and probabilistic facts of the proof are outside Lean (see docs/statement-ledger.md, section JointTilt)"
     tex: "The checked step takes no analytic input beyond the paper's hypotheses: the Lean statement assumes only $\\delta>0$. The rescaled noise and its mean shift are not hypotheses of this statement; they are outside Lean (see the statement-ledger entry \\texttt{JointTilt})."
 - label: L:raw-block-restart
   ascii: "Lean checks only the finite, algebraic or scalar steps of this result listed in docs/statement-ledger.md, not the result itself."
@@ -200,9 +200,9 @@ rows:
   proved_tex: "Both compact-baseline displays on an abstract nonzero Hilbert space with a supplied free group, isometric velocity reversal and weakly vanishing translations, for a Young evolution given only by convergence of its left Young sums; and $W_t^{\\mathsf{T}}J_{\\rm symp}W_t=J_{\\rm symp}$ per frequency and the force skewness for the $L^2$ pairing."
   not_formalized_tex: "$J_E$ and the preservation of $\\omega$ on $E$ are not formalized."
   inputs_tex:
-  - ascii: "the free wave group on E = H^(1/2) x H^(-1/2) with its group law, the isometric velocity reversal with S_E(-h) = R S_E(h) R, and the spatial translations, isometric, commuting with S_E(h) and weakly null as |y| -> infinity (integrated_symplectic_phase.tex lines 103-122); E is an abstract nonzero real Hilbert space"
+  - ascii: "the free wave group on E = H^(1/2) x H^(-1/2) with its group law, the isometric velocity reversal with S_E(-h) = R S_E(h) R, and the spatial translations, isometric, commuting with S_E(h) and weakly null as |y| -> infinity (integrated_symplectic_phase.tex lines 121-145); E is an abstract nonzero real Hilbert space"
     tex: "the free wave group on $E=H^{1/2}\\times H^{-1/2}$ with its group law, the isometric velocity reversal with $S_E(-h)=\\mathcal{R}S_E(h)\\mathcal{R}$, and the spatial translations, isometric, commuting with $S_E(h)$ and weakly null as $|y|\\to\\infty$ (in the proof of L:symplectic-free); $E$ is an abstract nonzero real Hilbert space"
-  - ascii: "P:constant-young-linear on L(E) (integrated_symplectic_phase.tex lines 91-98): the left Young sums of X over partitions of [s,t] converge in operator norm to U_X(t,s) - I; supplied in the weaker form of convergence along some nontrivial filter of finite node lists in [s,t] (no ordering, endpoint or mesh condition)"
+  - ascii: "P:constant-young-linear on L(E) (integrated_symplectic_phase.tex lines 105-112): the left Young sums of X over partitions of [s,t] converge in operator norm to U_X(t,s) - I; supplied in the weaker form of convergence along some nontrivial filter of finite node lists in [s,t] (no ordering, endpoint or mesh condition)"
     tex: "P:constant-young-linear on $\\mathcal{L}(E)$ (in the proof of L:symplectic-free): the left Young sums of $X$ over partitions of $[s,t]$ converge in operator norm to $U_X(t,s)-I$; supplied in the weaker form of convergence along some nontrivial filter of finite node lists in $[s,t]$ (no ordering, endpoint or mesh condition)"
 - label: L:tube-rayleigh-tail
   ascii: "Lean proves the bound with integrability and the finite head integral; the \"In particular\" application to the coarse-envelope bound of another proposition is not formalized."
@@ -220,7 +220,7 @@ rows:
   proved_tex: "With nothing supplied, every value of E:white-test and $A_1(t)=2c_0t^{3-\\alpha_0}$ for the diagram integrals of the model M4 (white noise, $d=1$, $\\alpha_0<1$); the statements about $\\E X_1^2$, $\\E X_2$ and the contribution to E:full-second follow from the supplied mixed-moment expansion of P:mixed for random variables standing for the chaos terms of the solution."
   not_formalized_tex: "The solution is not constructed."
   inputs_tex:
-  - ascii: "MixedMoment: the statement of P:mixed (main TeX lines 658-673, E:mixed-moment and E:full-second): the diagram limits exist and are finite, E[X_m X_n] = sum_D J_(m,n,D)(t) with the products integrable, u^2 integrable and E u^2 = sum_k A_k(t); true for the solution under H:homog, not proved"
+  - ascii: "MixedMoment: the statement of P:mixed (main TeX lines 834-849, E:mixed-moment and E:full-second): the diagram limits exist and are finite, E[X_m X_n] = sum_D J_(m,n,D)(t) with the products integrable, u^2 integrable and E u^2 = sum_k A_k(t); true for the solution under H:homog, not proved"
     tex: "\\texttt{MixedMoment}: the statement of P:mixed (E:mixed-moment and E:full-second): the diagram limits exist and are finite, $\\E[X_mX_n]=\\sum_DJ_{m,n,D}(t)$ with the products integrable, $u^2$ integrable and $\\E u^2=\\sum_kA_k(t)$; true for the solution under H:homog, not proved"
 - label: P:actual-wave-form
   no_analytic_input: true
@@ -229,7 +229,7 @@ rows:
   proved_tex: "Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger."
   not_formalized_tex: "The result itself."
   inputs_tex:
-  - ascii: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see docs/statement-ledger.md)"
+  - ascii: "none beyond the paper's hypotheses: the checked Lean statements assume only parameter conditions; the analytic and probabilistic facts of the proof are outside Lean (see docs/statement-ledger.md, section DimensionalMatrix)"
     tex: "The checked steps take no analytic input beyond the paper's hypotheses: the Lean statements are definitions and a matrix identity for arbitrary real parameters. The reading of the parameters as cosines and sines of a phase and as a covariance coefficient, the continuous extension at zero frequency, and the Bessel-weighted change of coordinates and the weight $1/\\sqrt{\\langle\\xi\\rangle\\langle\\eta\\rangle}$ that lead to E:variance-normalized-kernel are not hypotheses of these statements; they are outside Lean (see the statement-ledger entry \\texttt{DimensionalMatrix})."
 - label: P:d1-upper
   ascii: "Lean proves E:d1-coefficient on the model M4 at every noise width, uniformly, with nothing supplied, and for the limit coefficients (Riesz case: the supplied convergence of every diagram as the noise width tends to zero (L:joint-fixed-order)); the form sum_m E[X_m X_(2k-m)] and E:d1-upper hold for random variables with the supplied mixed-moment expansion of P:mixed (solution not constructed)."
@@ -237,9 +237,9 @@ rows:
   proved_tex: "E:d1-coefficient on the model M4 at every noise width, uniformly, with nothing supplied, and for the limit coefficients (Riesz case: the supplied convergence of every diagram as the noise width tends to zero (L:joint-fixed-order)); the form $\\sum_m\\E[X_mX_{2k-m}]$ and E:d1-upper hold for random variables with the supplied mixed-moment expansion of P:mixed."
   not_formalized_tex: "The solution is not constructed."
   inputs_tex:
-  - ascii: "MixedMoment: the statement of P:mixed (main TeX lines 658-673, proof 676-728): every diagram limit exists and is finite, E[X_m X_n] = sum_D J_(m,n,D)(t), u^2 integrable and E u^2 = sum_k A_k(t); TRUE for the solution under H:homog; about random variables standing for the unconstructed solution and chaos terms"
+  - ascii: "MixedMoment: the statement of P:mixed (main TeX lines 834-849, proof 861-927): every diagram limit exists and is finite, E[X_m X_n] = sum_D J_(m,n,D)(t), u^2 integrable and E u^2 = sum_k A_k(t); TRUE for the solution under H:homog; about random variables standing for the unconstructed solution and chaos terms"
     tex: "\\texttt{MixedMoment}: the statement of P:mixed (with its proof): every diagram limit exists and is finite, $\\E[X_mX_n]=\\sum_DJ_{m,n,D}(t)$, $u^2$ integrable and $\\E u^2=\\sum_kA_k(t)$; TRUE for the solution under H:homog; about random variables standing for the unconstructed solution and chaos terms"
-  - ascii: "DiagramLimits (Riesz case only): every model diagram converges to diagramLim as eps -> 0+; part of L:joint-fixed-order (main TeX lines 1542-1631), invoked at line 4671; TRUE under H:homog; proved for white noise (D1Upper.diagramLimits_white) and implied by MixedMoment"
+  - ascii: "DiagramLimits (Riesz case only): every model diagram converges to diagramLim as eps -> 0+; part of L:joint-fixed-order (main TeX lines 1853-1966), invoked at line 5534; TRUE under H:homog; proved for white noise (D1Upper.diagramLimits_white) and implied by MixedMoment"
     tex: "\\texttt{DiagramLimits} (Riesz case only): every model diagram converges to \\texttt{diagramLim} as $\\epsilon\\to0+$; part of L:joint-fixed-order, invoked in the proof of P:d1-upper; TRUE under H:homog; proved for white noise (\\texttt{D1Upper.diagramLimits\\_white}) and implied by \\texttt{MixedMoment}"
 - label: P:gram-entrywise-comparison
   no_analytic_input: true
@@ -248,7 +248,7 @@ rows:
   proved_tex: "Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger."
   not_formalized_tex: "The result itself."
   inputs_tex:
-  - ascii: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see docs/statement-ledger.md)"
+  - ascii: "none beyond the paper's hypotheses: the checked Lean statements assume only parameter conditions; the analytic and probabilistic facts of the proof are outside Lean (see docs/statement-ledger.md, section PositiveGram)"
     tex: "The checked step takes no analytic input beyond the paper's hypotheses: the Lean statement assumes only nonnegative weights and the entrywise order $C_{ij}\\le D_{ij}$, a hypothesis of P:gram-entrywise-comparison. The Gram realization (L:gram-realization) and the optimization over weights are outside Lean (see the statement-ledger entry \\texttt{PositiveGram})."
 - label: P:gram-positive-optimizer
   no_analytic_input: true
@@ -257,7 +257,7 @@ rows:
   proved_tex: "Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger."
   not_formalized_tex: "The result itself."
   inputs_tex:
-  - ascii: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see docs/statement-ledger.md)"
+  - ascii: "none beyond the paper's hypotheses: the checked Lean statements assume only parameter conditions; the analytic and probabilistic facts of the proof are outside Lean (see docs/statement-ledger.md, section PositiveGram)"
     tex: "The checked step takes no analytic input beyond the paper's hypotheses: the Lean statement assumes only positive weights and active labels, $\\langle\\Phi,k_i\\rangle-b_i\\ge0$. Dual coercivity, the existence and uniqueness of the dual minimizer, attainment and the maximum over active sets are outside Lean (see the statement-ledger entry \\texttt{PositiveGram})."
 - label: P:interval-coefficients
   ascii: "Lean assembles E:interval-coefficient-bound (length substitution, split count, product-coefficient identity) from E:interval-energy-splits, with L:inventory-product proved, L:fixed-split assembled on its supplied inputs, Q_(r,q) identified with the cutoff inner product (real part used) from the supplied Duhamel word expansion, for R_alpha, sigma_i > 0, and the sum to E:interval-phase-bound."
@@ -265,17 +265,17 @@ rows:
   proved_tex: "E:interval-coefficient-bound (length substitution, split count, product-coefficient identity), assembled from E:interval-energy-splits, with L:inventory-product proved, L:fixed-split assembled on its supplied inputs, $Q_{r,q}$ identified with the cutoff inner product (real part used) from the supplied Duhamel word expansion, for $R_\\alpha,\\sigma_i>0$, and the sum to E:interval-phase-bound."
   not_formalized_tex: ""
   inputs_tex:
-  - ascii: "E:interval-energy-splits combined with the reflection parity (lines 3478-3488), the coefficient as the sum over degree vectors kappa (sum kappa_i = k) and splits r_i + q_i = 2 kappa_i of Q_(r,q)"
+  - ascii: "E:interval-energy-splits combined with the reflection parity (lines 4147-4157), the coefficient as the sum over degree vectors kappa (sum kappa_i = k) and splits r_i + q_i = 2 kappa_i of Q_(r,q)"
     tex: "E:interval-energy-splits combined with the reflection parity (in the proof of P:interval-coefficients), the coefficient as the sum over degree vectors $\\boldsymbol k$ ($\\sum_ik_i=k$) and splits $r_i+q_i=2k_i$ of $Q_{\\boldsymbol r,\\boldsymbol q}$"
   - ascii: "the inputs of L:fixed-split for every split (E:interval-column, the segment bound of L:interval-complex, E:interval-cross-cube, the invariance of the cross subspaces and entire coefficients; see the row of L:fixed-split), with the interval endpoints (a_i, b_i) in [0, T], b_i - a_i <= h_i, and any delta > 0 in C_split = 100^8 e^8 max(1, 12 delta^(-2))"
     tex: "the inputs of L:fixed-split for every split (E:interval-column, the segment bound of L:interval-complex, E:interval-cross-cube, the invariance of the cross subspaces and entire coefficients; see the row of L:fixed-split), with the interval endpoints $(a_i,b_i)$ in $[0,T]$, $b_i-a_i\\le h_i$, and any $\\delta>0$ in $C_{\\rm split}=100^8e^8\\max\\{1,12\\delta^{-2}\\}$"
-  - ascii: "for E:interval-phase-bound, the power-series identity at s = 1 (lines 3430-3472, 3558-3565), the vanishing of odd coefficients (lines 3483-3485) and the zero-order bound e ||v||^2 (lines 3570-3571)"
+  - ascii: "for E:interval-phase-bound, the power-series identity at s = 1 (lines 4092-4136, 4248-4255), the vanishing of odd coefficients (lines 4152-4154) and the zero-order bound e ||v||^2 (lines 4260-4261)"
     tex: "for E:interval-phase-bound, the power-series identity at $s=1$, the vanishing of odd coefficients and the zero-order bound $e\\|v\\|^2$ (all in the proof of P:interval-coefficients)"
-  - ascii: "the Duhamel word expansion of the ordinary coefficients (lines 3430-3435, 3493-3497; DuhamelWords): U_r v and the cutoff coefficient c_r are the same finite sum of integrals of words with r_i insertions of color i, uncut and cut; the evolutions are not constructed"
+  - ascii: "the Duhamel word expansion of the ordinary coefficients (lines 4092-4097, 4166-4170; DuhamelWords): U_r v and the cutoff coefficient c_r are the same finite sum of integrals of words with r_i insertions of color i, uncut and cut; the evolutions are not constructed"
     tex: "the Duhamel word expansion of the ordinary coefficients (in the proof of P:interval-coefficients; \\texttt{DuhamelWords}): $U_{\\boldsymbol r}v$ and the cutoff coefficient $c_{\\boldsymbol r}$ are the same finite sum of integrals of words with $r_i$ insertions of color $i$, uncut and cut; the evolutions are not constructed"
   - ascii: "from DuhamelWords Lean proves |Q_(r,q)| <= |<c_r, c_q>|, which the earlier step row assumed as the added hypothesis hQ (accepted by Le for now on 2026-11-12); Q_(r,q) is the real part of <U_r v, U_q v>_(1/T)"
     tex: "from \\texttt{DuhamelWords} Lean proves $|Q_{\\boldsymbol r,\\boldsymbol q}|\\le|\\langle c_{\\boldsymbol r},c_{\\boldsymbol q}\\rangle|$, which the earlier step row assumed as the added hypothesis \\texttt{hQ} (accepted by Le for now on 2026-11-12); $Q_{\\boldsymbol r,\\boldsymbol q}$ is the real part of $\\langle U_{\\boldsymbol r}v,U_{\\boldsymbol q}v\\rangle_{1/T}$"
-  - ascii: "the reduction to sigma_i > 0 (zero noise and sign change, lines 3417-3423); not formalized"
+  - ascii: "the reduction to sigma_i > 0 (zero noise and sign change, lines 4079-4085); not formalized"
     tex: "the reduction to $\\sigma_i>0$ (zero noise and sign change, in the proof of P:interval-coefficients); not formalized"
 - label: P:low-alpha-upper
   ascii: "Lean proves, under H:homog with d in {1,2,3}, alpha <= 1 and V > 0, both inequalities of E:low-alpha-coefficient on the diagram model at every noise width eps > 0 with nothing supplied; the first inequality for A_k(t) = sum_m E[X_m X_(2k-m)] and E u^2 <= exp(C_dir^gen t^kappa) are proved for random variables with the supplied mixed-moment expansion of P:mixed (solution not constructed)."
@@ -283,7 +283,7 @@ rows:
   proved_tex: "Under H:homog with $d\\in\\{1,2,3\\}$, $\\alpha\\le1$ and $V>0$, both inequalities of E:low-alpha-coefficient on the diagram model at every noise width $\\epsilon>0$ with nothing supplied; the first inequality for $A_k(t)=\\sum_m\\E[X_mX_{2k-m}]$ and $\\E u^2\\le\\exp(C_{\\rm dir}^{\\rm gen}t^\\kappa)$ for random variables with the supplied mixed-moment expansion of P:mixed."
   not_formalized_tex: "The solution is not constructed."
   inputs_tex:
-  - ascii: "MixedMoment: the statement of P:mixed (main TeX lines 658-673): the diagram limits exist and are finite (the TeX proves them by L:joint-fixed-order and the eta-limit paragraph, lines 4879-4896), E[X_m X_n] is the sum of the diagram limits, E u^2 = sum_k A_k(t); TRUE for the solution under H:homog"
+  - ascii: "MixedMoment: the statement of P:mixed (main TeX lines 834-849): the diagram limits exist and are finite (the TeX proves them by L:joint-fixed-order and the eta-limit paragraph, lines 5785-5802), E[X_m X_n] is the sum of the diagram limits, E u^2 = sum_k A_k(t); TRUE for the solution under H:homog"
     tex: "\\texttt{MixedMoment}: the statement of P:mixed: the diagram limits exist and are finite (the manuscript proves them by L:joint-fixed-order and the $\\eta$-limit paragraph in the proof of P:low-alpha-upper), $\\E[X_mX_n]$ is the sum of the diagram limits, $\\E u^2=\\sum_kA_k(t)$; TRUE for the solution under H:homog"
 - label: P:masked-noise-completion
   ascii: "Lean proves only the finite Gaussian comparison: for A and B - A positive semidefinite, every seminorm N and p >= 1, int N^p dN(0,A) <= int N^p dN(0,B) with both moments finite; the identification of A and B with the masked covariance and auxiliary Gram matrices, E:masked-actual-noise-norm, the contraction extension and joint Gaussianity are not formalized."
@@ -291,11 +291,11 @@ rows:
   proved_tex: "Only the finite Gaussian comparison: for $A$ and $B-A$ positive semidefinite, every seminorm $N$ and $p\\ge1$, $\\int N^p\\ud\\mathcal{N}(0,A)\\le\\int N^p\\ud\\mathcal{N}(0,B)$ with both moments finite."
   not_formalized_tex: "The identification of $A$ and $B$ with the masked covariance and auxiliary Gram matrices, E:masked-actual-noise-norm, the contraction extension and joint Gaussianity are not formalized."
   inputs_tex:
-  - ascii: "the covariance matrix A of the masked evaluations W(zeta_R F_1), ..., W(zeta_R F_m) and the auxiliary Gram matrix B of N_R (lines 201-203, 239-240), which need the noise W and the completion of the test space (D1)"
+  - ascii: "the covariance matrix A of the masked evaluations W(zeta_R F_1), ..., W(zeta_R F_m) and the auxiliary Gram matrix B of N_R (lines 262-264, 320-321), which need the noise W and the completion of the test space (D1)"
     tex: "the covariance matrix $A$ of the masked evaluations $W(\\zeta_RF_1),\\ldots,W(\\zeta_RF_m)$ and the auxiliary Gram matrix $B$ of $N_R$ (in the statement and the proof of P:masked-noise-completion), which need the noise $W$ and the completion of the test space"
-  - ascii: "A <= B in positive semidefinite order, from E W(zeta_R F)^2 <= N_R(F)^2 (P:masked-auxiliary-norm with H = H_a^C and E:masked-actual-noise-norm, lines 230-231, 240-241)"
+  - ascii: "A <= B in positive semidefinite order, from E W(zeta_R F)^2 <= N_R(F)^2 (P:masked-auxiliary-norm with H = H_a^C and E:masked-actual-noise-norm, lines 304-305, 321-322)"
     tex: "$A\\le B$ in positive semidefinite order, from $\\E W(\\zeta_RF)^2\\le N_R(F)^2$ (P:masked-auxiliary-norm with $H=H_a^{\\mathbb{C}}$ and E:masked-actual-noise-norm, in the proof of P:masked-noise-completion)"
-  - ascii: "the joint centered Gaussian law of the masked evaluations, so that their law is N(0,A) (lines 199-201, 234-237)"
+  - ascii: "the joint centered Gaussian law of the masked evaluations, so that their law is N(0,A) (lines 260-262, 308-311)"
     tex: "the joint centered Gaussian law of the masked evaluations, so that their law is $\\mathcal{N}(0,A)$ (in the statement and the proof of P:masked-noise-completion)"
 - label: P:masked-quotient-obstruction
   ascii: "Proved with the proposition's hypotheses for the covariance functional: the noise W is not constructed, so E W(F)^2 is read as the covariance functional of the test F, and its identification with the variance of the noise is not formalized."
@@ -308,9 +308,9 @@ rows:
   proved_tex: "Only the multiplication bound E:occupied-multiplication of the proof, for $F$ a real polynomial of total degree at most $n$ in finitely many independent standard Gaussians and $H$ a real combination of them."
   not_formalized_tex: "The extension of this bound to the closed space of degree at most $n$, the almost-sure identification and the mild-solution statement E:mild-construction are not formalized."
   inputs_tex:
-  - ascii: "the closure step of E:occupied-multiplication (lines 1810-1814: approximation in P_(<=n), the L^2 Cauchy property of the products and the almost-sure identification of the limit with HF); not formalized"
+  - ascii: "the closure step of E:occupied-multiplication (lines 2197-2201: approximation in P_(<=n), the L^2 Cauchy property of the products and the almost-sure identification of the limit with HF); not formalized"
     tex: "the closure step of E:occupied-multiplication (approximation in $\\mathscr{P}_{\\le n}$, the $L^2$ Cauchy property of the products and the almost-sure identification of the limit with $HF$); not formalized"
-  - ascii: "the fixed-order limits X_n in P_(<=n) (lines 1794-1798) and the proof of E:mild-construction (from line 1816); not formalized"
+  - ascii: "the fixed-order limits X_n in P_(<=n) (lines 2181-2185) and the proof of E:mild-construction (from line 2211); not formalized"
     tex: "the fixed-order limits $X_n$ in $\\mathscr{P}_{\\le n}$ (in the proof of P:mild-construction) and the proof of E:mild-construction; not formalized"
 - label: P:moment-growth-logconvex
   ascii: "Every conclusion is proved for an abstract moment function with the supplied coefficient, interpolation, static-law, minorant and upper-bound facts; the moments E u^(a)(T,x)^p of the solution are not constructed, so their identification with that function is not formalized."
@@ -318,7 +318,7 @@ rows:
   proved_tex: "Every conclusion, for an abstract moment function with the supplied coefficient, interpolation, static-law, minorant and upper-bound facts."
   not_formalized_tex: "The moments $\\E u^{(a)}(T,x)^p$ of the solution are not constructed, so their identification with that function is not formalized."
   inputs_tex:
-  - ascii: "E:static-ratio-input (Chen-Hu static law, lines 7079-7087): 0 < L_0 and T^(-kappa_st) log E U(T,x)^p -> p^(kappa_st) L_0 for p = 1, 2 (fields L0_pos, static_law)"
+  - ascii: "E:static-ratio-input (Chen-Hu static law, lines 8256-8264): 0 < L_0 and T^(-kappa_st) log E U(T,x)^p -> p^(kappa_st) L_0 for p = 1, 2 (fields L0_pos, static_law)"
     tex: "E:static-ratio-input (Chen--Hu static law): $0<L_0$ and $T^{-\\kappa_{\\rm st}}\\log\\E U(T,x)^p\\to p^{\\kappa_{\\rm st}}L_0$ for $p=1,2$ (fields \\texttt{L0\\_pos}, \\texttt{static\\_law})"
   - ascii: "E:full-moment-positive-series of L:full-moment-coefficient-holder with c_(p,0)(a) = 1 (E:full-moment-coefficients), nonnegative coefficients, summable for t > 0, 0 <= a < a_max (field series)"
     tex: "E:full-moment-positive-series of L:full-moment-coefficient-holder with $c_{p,0}(a)=1$ (E:full-moment-coefficients), nonnegative coefficients, summable for $t>0$, $0\\le a<a_{\\max}$ (field \\texttt{series})"
@@ -328,7 +328,7 @@ rows:
     tex: "E:static-minorant-rate of P:static-minorant-lower, as: every $y<p^{\\kappa_{\\rm st}}L_0$ is eventually below $T^{-\\kappa(a)}\\log\\E u^{(a)}(T,x)^p$, $0<a<a_{\\max}$ (field \\texttt{minorant})"
   - ascii: "E:full-upper-bound of T:full-upper at temporal exponent a: E u^(a)(T,x)^2 <= e (T+2)^d exp(C T^(kappa(a))) for T >= 1, one finite C (field full_upper)"
     tex: "E:full-upper-bound of T:full-upper at temporal exponent $a$: $\\E u^{(a)}(T,x)^2\\le e(T+2)^d\\exp(CT^{\\kappa(a)})$ for $T\\ge1$, one finite $C$ (field \\texttt{full\\_upper})"
-  - ascii: "Cauchy-Schwarz (E u^(a)(T,x))^2 <= E u^(a)(T,x)^2 (field cauchy_schwarz; proof line 7535)"
+  - ascii: "Cauchy-Schwarz (E u^(a)(T,x))^2 <= E u^(a)(T,x)^2 (field cauchy_schwarz; proof line 8795)"
     tex: "Cauchy--Schwarz $(\\E u^{(a)}(T,x))^2\\le\\E u^{(a)}(T,x)^2$ (field \\texttt{cauchy\\_schwarz}; in the proof of P:moment-growth-logconvex)"
 - label: P:radius-mean-anchor
   ascii: "Every conclusion is proved for abstract random paths with the supplied moment bound; the operator paths M_R(Y_m) and the residual noises are not constructed, so the identification of these paths with the manuscript's block paths is not formalized."
@@ -347,7 +347,7 @@ rows:
   proved_tex: "Only the finite, algebraic or scalar steps of this result listed in the companion's statement ledger."
   not_formalized_tex: "The result itself."
   inputs_tex:
-  - ascii: "the analytic and probabilistic facts the proof uses, which enter the Lean statements as explicit hypotheses (see docs/statement-ledger.md)"
+  - ascii: "none beyond the paper's hypotheses: the checked Lean statements assume only parameter conditions; the analytic and probabilistic facts of the proof are outside Lean (see docs/statement-ledger.md, section ActualEvent)"
     tex: "The checked step takes no analytic input beyond the paper's hypotheses: the Lean statement assumes only $\\delta>0$. The Gaussian change of law, the event on which the penalty bound holds and the limit $\\delta\\to0$ are not hypotheses of this statement; they are outside Lean (see the statement-ledger entry \\texttt{ActualEvent})."
 - label: P:riesz-small
   ascii: "Lean proves, with nothing supplied, E:riesz-two and A_1 = J_(1,1) + 2 J_(2,0) for the diagram integrals of M4, and E:riesz-four with finiteness for all splits and pairings; the order-two statements about E X_2, E X_1^2 follow from the supplied mixed-moment expansion of P:mixed (solution not constructed); that the total coefficient uses the multiplicities of E:total-four is not formalized."
@@ -355,7 +355,7 @@ rows:
   proved_tex: "With nothing supplied, E:riesz-two and $A_1=J_{1,1}+2J_{2,0}$ for the diagram integrals of M4, and E:riesz-four with finiteness for all splits and pairings; the order-two statements about $\\E X_2$, $\\E X_1^2$ follow from the supplied mixed-moment expansion of P:mixed."
   not_formalized_tex: "The solution is not constructed. That the total coefficient uses the multiplicities of E:total-four is not formalized."
   inputs_tex:
-  - ascii: "MixedMoment: the statement of P:mixed (main TeX lines 658-673): the diagram limits exist and are finite, E[X_m X_n] = sum_D J_(m,n,D)(t) with the products integrable, u^2 integrable and E u^2 = sum_k A_k(t); true for the solution under H:homog, not proved (order-two wrapper riesz_small_paper' only)"
+  - ascii: "MixedMoment: the statement of P:mixed (main TeX lines 834-849): the diagram limits exist and are finite, E[X_m X_n] = sum_D J_(m,n,D)(t) with the products integrable, u^2 integrable and E u^2 = sum_k A_k(t); true for the solution under H:homog, not proved (order-two wrapper riesz_small_paper' only)"
     tex: "\\texttt{MixedMoment}: the statement of P:mixed: the diagram limits exist and are finite, $\\E[X_mX_n]=\\sum_DJ_{m,n,D}(t)$ with the products integrable, $u^2$ integrable and $\\E u^2=\\sum_kA_k(t)$; true for the solution under H:homog, not proved (order-two wrapper \\texttt{riesz\\_small\\_paper'} only)"
 - label: P:signed-closed-form
   ascii: "Lean proves, for an abstract bounded Hermitian pairing on Mathlib's H^1 with E:signed-multiplier-form supplied, E:signed-form-bounds, the form version of A >= 1, the step ||u||_(H^(1/2))^2 <= b z and the bounded resolvent of the form (self-adjoint, positive, injective, norm at most 1, unique weak solution); H_V, D(A^(1/2)) = H^1, E:signed-quarter-phase and H^(-1/2) are not formalized."
@@ -365,7 +365,7 @@ rows:
   inputs_tex:
   - ascii: "SignedMultiplierForm P k: E:signed-multiplier-form (integrated_signed_static.tex lines 16-18), the conclusion of L:signed-limiting-multiplier (not formalized), for an abstract bounded operator P on H^1 standing for the pairing v_V; the multiplier V is not constructed"
     tex: "\\texttt{SignedMultiplierForm P k}: E:signed-multiplier-form, the conclusion of L:signed-limiting-multiplier (not formalized), for an abstract bounded operator $P$ on $H^1$ standing for the pairing $v_V$; the multiplier $V$ is not constructed"
-  - ascii: "the self-adjointness of P: the Hermitian pairing of the proof of L:signed-limiting-multiplier (lines 32-35)"
+  - ascii: "the self-adjointness of P: the Hermitian pairing of the proof of L:signed-limiting-multiplier (lines 36-39)"
     tex: "the self-adjointness of $P$: the Hermitian pairing of the proof of L:signed-limiting-multiplier"
 - label: P:spatial-energy-map
   ascii: "E:spatial-static-energy-score is proved, with nothing supplied, both in an existential form (every y below M_a^(-1/k) F_0(E_sp) is exceeded by some I_Psi - v_Psi/2) and in its supremum form, with lambda the square root of the Rayleigh supremum E:variational-real-rayleigh and v_Psi by its integral formula (their identification with sqrt(-E_s) and E W(Psi)^2 is not formalized)."
@@ -383,31 +383,31 @@ rows:
   proved_tex: "The Cauchy coefficient estimate, the arithmetic at $\\lambda=n/h$ and the series bound of the proof, and from them both displays for abstract Banach-space quantities, with the circle bound (or the inputs of L:complex-phase and E:fock-sandwich), entireness, the coefficient identification, the norm comparisons, the cutoff removals and the free bound supplied."
   not_formalized_tex: "Phases are not constructed."
   inputs_tex:
-  - ascii: "the bound 100 e^(2 lambda h) for the phase propagator on the coupling disc of radius delta_(alpha/2) lambda^(2-alpha/2)/d', for every d' >= d_n, d' > 0 (lines 2611-2614), supplied in StaticPhaseCauchy"
+  - ascii: "the bound 100 e^(2 lambda h) for the phase propagator on the coupling disc of radius delta_(alpha/2) lambda^(2-alpha/2)/d', for every d' >= d_n, d' > 0 (lines 3129-3132), supplied in StaticPhaseCauchy"
     tex: "the bound $100e^{2\\lambda h}$ for the phase propagator on the coupling disc of radius $\\delta_{\\alpha/2}\\lambda^{2-\\alpha/2}/d'$, for every $d'\\ge d_n$, $d'>0$ (in the proof of P:static-phase-all-orders), supplied in \\texttt{StaticPhaseCauchy}"
   - ascii: "in static_phase_all_orders_cp the circle bound is derived from L:complex-phase and three named inputs: FockSandwich (E:fock-sandwich in operator form), CPInputs (E:cp-input, inverse-root integral) and PropagatorBlock, with positive A_0 and self-adjoint B at every cutoff (supplied, with the named inputs)"
     tex: "in \\texttt{static\\_phase\\_all\\_orders\\_cp} the circle bound is derived from L:complex-phase and three named inputs: \\texttt{FockSandwich} (E:fock-sandwich in operator form), \\texttt{CPInputs} (E:cp-input, inverse-root integral) and \\texttt{PropagatorBlock}, with positive $A_0$ and self-adjoint $B$ at every cutoff (supplied, with the named inputs)"
   - ascii: "in FockSandwichModel.static_phase_all_orders_model (wave L12) FockSandwich, A_0 >= 0 and B = B^* are proved on the Fourier-side model, not identified with physical space"
     tex: "in \\texttt{FockSandwichModel.static\\_phase\\_all\\_orders\\_model} (wave L12) \\texttt{FockSandwich}, $A_0\\ge0$ and $B=B^*$ are proved on the Fourier-side model, not identified with physical space"
-  - ascii: "the added restriction of static_phase_all_orders_model: an orthonormal real family psi_m of size m in L^2(mu_eps) for every Gaussian cutoff m (so mu != 0; the case mu = 0, where every positive-order term vanishes, lines 2608-2609, is not covered by that wrapper)"
+  - ascii: "the added restriction of static_phase_all_orders_model: an orthonormal real family psi_m of size m in L^2(mu_eps) for every Gaussian cutoff m (so mu != 0; the case mu = 0, where every positive-order term vanishes, lines 3126-3127, is not covered by that wrapper)"
     tex: "the added restriction of \\texttt{static\\_phase\\_all\\_orders\\_model}: an orthonormal real family $\\psi_m$ of size $m$ in $L^2(\\mu_\\epsilon)$ for every Gaussian cutoff $m$ (so $\\mu\\ne0$; the case $\\mu=0$, where every positive-order term vanishes, is not covered by that wrapper)"
-  - ascii: "the phase entries are entire in the coupling (lines 2616-2617)"
+  - ascii: "the phase entries are entire in the coupling (lines 3134-3135)"
     tex: "the phase entries are entire in the coupling (in the proof of P:static-phase-all-orders)"
-  - ascii: "the identification of the n-th coefficient, applied to S_b(f,g) times the vacuum, with the cutoff n-th Duhamel phase via L:finite-word-cutoff (lines 2625-2630), with ||z||_(1/h) <= n ||z||_(n/h) (line 2632); L:finite-word-cutoff is proved with several coordinates per color (FiniteWordCutoff), but the identification of the phase coefficients is not formalized"
+  - ascii: "the identification of the n-th coefficient, applied to S_b(f,g) times the vacuum, with the cutoff n-th Duhamel phase via L:finite-word-cutoff (lines 3143-3148), with ||z||_(1/h) <= n ||z||_(n/h) (line 3154); L:finite-word-cutoff is proved with several coordinates per color (FiniteWordCutoff), but the identification of the phase coefficients is not formalized"
     tex: "the identification of the $n$-th coefficient, applied to $S_b(f,g)$ times the vacuum, with the cutoff $n$-th Duhamel phase via L:finite-word-cutoff, with $\\|z\\|_{1/h}\\le n\\|z\\|_{n/h}$; L:finite-word-cutoff is proved with several coordinates per color (\\texttt{FiniteWordCutoff}), but the identification of the phase coefficients is not formalized"
-  - ascii: "||S_b(f,g)||_(n/h) <= ||(f,g)||_(1/h) (line 2633)"
+  - ascii: "||S_b(f,g)||_(n/h) <= ||(f,g)||_(1/h) (line 3155)"
     tex: "$\\|S_b(f,g)\\|_{n/h}\\le\\|(f,g)\\|_{1/h}$ (in the proof of P:static-phase-all-orders)"
-  - ascii: "the removal of the band and Gaussian cutoffs, as convergence of the norms (lines 2643-2667)"
+  - ascii: "the removal of the band and Gaussian cutoffs, as convergence of the norms (lines 3168-3192)"
     tex: "the removal of the band and Gaussian cutoffs, as convergence of the norms (in the proof of P:static-phase-all-orders)"
-  - ascii: "the free bound ||Z_0(h)||_(1/h) <= sqrt(e) ||(f,g)||_(1/h) (line 2679)"
+  - ascii: "the free bound ||Z_0(h)||_(1/h) <= sqrt(e) ||(f,g)||_(1/h) (line 3207)"
     tex: "the free bound $\\|Z_0(h)\\|_{1/h}\\le\\sqrt e\\,\\|(f,g)\\|_{1/h}$ (in the proof of P:static-phase-all-orders)"
 - label: P:tube-rayleigh-transfer
   ascii: ""
   tex: ""
   inputs_tex:
-  - ascii: "TubeAttained: every tube T_r is closed and {d_delta <= r} = T_r (first part of E:tube-attained-radius of L:tube-closed-geometry, gaussian_tubes.tex lines 134-137, proved there from the compactness of M_delta; nonzero law only)"
+  - ascii: "TubeAttained: every tube T_r is closed and {d_delta <= r} = T_r (first part of E:tube-attained-radius of L:tube-closed-geometry, gaussian_tubes.tex lines 158-161, proved there from the compactness of M_delta; nonzero law only)"
     tex: "\\texttt{TubeAttained}: every tube $\\mathcal{T}_r$ is closed and $\\{d_\\delta\\le r\\}=\\mathcal{T}_r$ (first part of E:tube-attained-radius of L:tube-closed-geometry, proved there from the compactness of $\\mathcal{M}_\\delta$; nonzero law only)"
-  - ascii: "TubeTail: P(d_delta(X) > r) <= e^(-r^2/(2 delta)) for r >= 0 (second part of E:tube-attained-radius, lines 137-138, proved there from the imported Gaussian isoperimetric theorem of Borell and Sudakov-Tsirelson; nonzero law only)"
+  - ascii: "TubeTail: P(d_delta(X) > r) <= e^(-r^2/(2 delta)) for r >= 0 (second part of E:tube-attained-radius, lines 161-162, proved there from the imported Gaussian isoperimetric theorem of Borell and Sudakov-Tsirelson; nonzero law only)"
     tex: "\\texttt{TubeTail}: $\\mathbb{P}(d_\\delta(X)>r)\\le e^{-r^2/(2\\delta)}$ for $r\\ge0$ (second part of E:tube-attained-radius, proved there from the imported Gaussian isoperimetric theorem of Borell and Sudakov--Tsirelson; nonzero law only)"
 - label: P:variational-positive-scores
   ascii: "Lean proves the proposition with the section's hypotheses and nothing supplied, including the boundedness of the value sets and the supremum statements (S_c^pos finite, positive, equal to c^((4-alpha)/(3-alpha)) S_1^pos), with lambda the square root of the real Rayleigh supremum and v_Psi the cost in its integral form; Q_2 >= S_2^pos is not formalized."
@@ -435,9 +435,9 @@ rows:
   inputs_tex:
   - ascii: "E:variance-normalized-covariance (last claim of P:actual-wave-form, needs the noise construction D1), supplied as hlink, ofReal(var R t0 h z w) <= the nu_R lower integral of ||coef(Jz, Jw)||^2, the TeX display with U = Jz, V = Jw"
     tex: "E:variance-normalized-covariance (last claim of P:actual-wave-form, needs the construction of the noise), supplied as \\texttt{hlink}, \\texttt{ofReal(var R t0 h z w)} $\\le$ the $\\nu_R$ lower integral of $\\|\\texttt{coef}(Jz,Jw)\\|^2$, the manuscript's display with $U=Jz$, $V=Jw$"
-  - ascii: "J maps the phases into L^2(R^d; C^2) preserving inner products (hJL2, hJ; D8, lines 171-176), weaker than the TeX's unitary J"
+  - ascii: "J maps the phases into L^2(R^d; C^2) preserving inner products (hJL2, hJ; D8, lines 205-210), weaker than the TeX's unitary J"
     tex: "$J$ maps the phases into $L^2(\\R^d;\\mathbb{C}^2)$ preserving inner products (\\texttt{hJL2}, \\texttt{hJ}; at the manuscript's definition of $J$), weaker than the manuscript's unitary $J$"
-  - ascii: "the identity ||z||_{E_{s-gamma}}^2 = ||<xi>^(-gamma) J z||_2^2 (hnormSG; line 431, D8)"
+  - ascii: "the identity ||z||_{E_{s-gamma}}^2 = ||<xi>^(-gamma) J z||_2^2 (hnormSG; line 529, D8)"
     tex: "the identity $\\|z\\|_{E_{s-\\gamma}}^2=\\|\\langle\\xi\\rangle^{-\\gamma}Jz\\|_2^2$ (\\texttt{hnormSG}; in the proof of P:wave-two-variances)"
 - label: P:white-spatial-energy
   ascii: "Lean checks only the finite, algebraic or scalar steps of this result listed in docs/statement-ledger.md, not the result itself."
@@ -458,5 +458,5 @@ rows:
   proved_tex: "E:white-moment-bounds for the variational value $S_2^{\\mathrm{pos}}$ in place of $C_2(c,a)$ (identified by T:intrinsic-second-moment), for $c>0$ and $0<a<1$, with the value $\\mathcal{E}_{\\mathrm{sp}}=c^2/6$ of P:white-spatial-energy supplied (each bound uses one inequality of it), and that $M_a$, $K_0(a)$ and both bound formulas are positive."
   not_formalized_tex: "The time exponent sentence and the case $c=0$ are not formalized."
   inputs_tex:
-  - ascii: "P:white-spatial-energy (integrated_white_evaluation.tex lines 58-99): the spatial energy of c delta_0 is c^2/6 for c > 0; the lower bound uses only c^2/6 <= E_sp (the sech profile, lines 74-90), the upper bound only E_sp <= c^2/6 (the CDF square, lines 67-72 and 85-89); reserved package B9, not proved"
+  - ascii: "P:white-spatial-energy (integrated_white_evaluation.tex lines 79-133): the spatial energy of c delta_0 is c^2/6 for c > 0; the lower bound uses only c^2/6 <= E_sp (the sech profile, lines 106-124), the upper bound only E_sp <= c^2/6 (the CDF square, lines 88-100 and 117-121); reserved package B9, not proved"
     tex: "P:white-spatial-energy: the spatial energy of $c\\delta_0$ is $c^2/6$ for $c>0$; the lower bound uses only $c^2/6\\le\\mathcal{E}_{\\mathrm{sp}}$ (the sech profile), the upper bound only $\\mathcal{E}_{\\mathrm{sp}}\\le c^2/6$ (the CDF square, E:white-cdf-square); not proved"

@@ -5,11 +5,14 @@
 
 \hypertarget{lean-entry-top}{}%
 Some steps of this book were also checked in Lean, a proof assistant. They
-live in a separate Lean package, the Lean companion. This appendix describes
-the wave-L14 gate (development commit \texttt{8f51004} of the private
-development repository; to be released as v0.10.0). It describes the
-checked development state, not a published v0.10.0 release. The public
-release link and DOI will be added when that version is published.
+live in a separate Lean package, the Lean companion. This appendix describes its release
+v0.10.0 (DOI~\href{https://doi.org/10.5281/zenodo.24295453}{10.5281/zenodo.24295453}),
+which contains the formalization waves through L14 and refers to the lines
+of this book's final text. The waves were checked at commit \texttt{8f51004}
+of the private development repository; the release is cut from that commit,
+its receipts are those of the release commit \texttt{\lcCommit}, and the
+companion's \texttt{provenance/DEVELOPMENT.md} lists every change between
+the two.
 
 For each listed result, the entry identifies what Lean proves and what
 remains outside that proof. Read the result reference and its title as one
@@ -139,6 +142,13 @@ Open items in the record:
 These reviews are not a human verification, and they do not check the analytic
 inputs that stay outside Lean.
 
+For release v0.10.0, the companion's references to lines of this book were
+moved to its final text. That work was reviewed by a model from a different
+family; the first review and one confirmation failed on the companion's
+descriptions and quotation ranges, the corrections were made, and a further
+confirmation passed (Appendix~\ref{S:appendix-ai-statistics}). The author
+accepted release v0.10.0 on November~16, 2026.
+
 \Needspace{10\baselineskip}
 \section{How the Lean package was checked}\label{S:lean-package-checks}
 
@@ -168,9 +178,9 @@ reports a separate kernel replay on a computing cluster: all 141 library
 modules and the umbrella module passed \texttt{leanchecker --fresh}, and
 all 142 targets also passed its default mode. The three libraries used only
 for the separate statement check were not included in this replay.
-These checks are those of the gate commit. The entries below are generated
-from the development state that follows it, which drops two claims that
-name Lean-generated declarations.
+That replay is of the gate commit. The release commit \texttt{\lcCommit}
+drops two claims that name Lean-generated declarations and the one compared
+theorem that named one of them; the receipts above are those of the release.
 \fi
 
 \section{The results}\label{S:lean-results}

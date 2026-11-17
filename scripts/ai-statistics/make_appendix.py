@@ -631,6 +631,45 @@ def infrastructure(out):
                      if days["skills"][1] == days["wiki"][1] else "in " + days["skills"][1]))
 
 
+def lean_reanchor_review(out):
+    """Macros for the section on the review of the Lean companion's re-anchoring.
+
+    Read from the validated series record (#3, checked by #22 against its run records). The
+    totals must equal the sums of the three rounds; cached input and reasoning output are parts
+    of input and output and are never added again. Cost was not supplied, which is not zero.
+    """
+    s = json.load(open(selected("lean_reanchor_review")))
+    rounds = s["rounds"]
+    keys = ("input_tokens", "cached_input_tokens", "output_tokens", "reasoning_output_tokens")
+    tot = s["reported_totals"]
+    for k in keys:
+        if sum(r["reported_usage"][k] for r in rounds) != tot[k]:
+            raise SystemExit(f"lean re-anchor review: {k} total differs from the rounds")
+    if (s["review_invocations"] != len(rounds) or [r["verdict"] for r in rounds] != ["FAIL", "FAIL", "PASS_WITH_NOTES"]
+            or any(r["confidence"] != "high" or r["coordinator_attempts"] != 1 or r["resumed"] for r in rounds)
+            or [r["report_accepted_at_review_scope"] for r in rounds] != [False, False, True]
+            or rounds[-1]["fatal"] or rounds[-1]["major"] or s["human_or_analytic_input_verification"]
+            or tot["input_tokens"] + tot["output_tokens"] != s["input_plus_output"]):
+        raise SystemExit("lean re-anchor review: the record is not the one the text describes")
+    day = dt.datetime.fromisoformat(rounds[0]["started_utc"])
+    if any(dt.datetime.fromisoformat(r[k]).date() != day.date() for r in rounds for k in ("started_utc", "finished_utc")):
+        raise SystemExit("lean re-anchor review: the text names one day")
+    m = lambda name, v: out.append(macro(name, fmt_int(v) if isinstance(v, int) else v))
+    m("aiLeanReCalls", len(rounds))
+    m("aiLeanReModel", "GPT-6.1-Sol")
+    m("aiLeanReDay", day.strftime("%B~%-d, %Y"))
+    m("aiLeanReFirstMajor", rounds[0]["major"])
+    m("aiLeanReFirstMinor", rounds[0]["minor"])
+    m("aiLeanReSecondMajor", rounds[1]["major"])
+    m("aiLeanReThirdMinor", rounds[2]["minor"])
+    m("aiLeanReMinutes", round(sum(r["elapsed_seconds"] for r in rounds) / 60))
+    m("aiLeanReInput", tot["input_tokens"])
+    m("aiLeanReCached", tot["cached_input_tokens"])
+    m("aiLeanReOutput", tot["output_tokens"])
+    m("aiLeanReReasoning", tot["reasoning_output_tokens"])
+    m("aiLeanReFiles", s["packet_file_hash_checks"])
+
+
 def rereads(out):
     """Macros for the section on the re-reads after the readability pass.
 
@@ -984,6 +1023,7 @@ def main():
 
     infrastructure(out)
     rereads(out)
+    lean_reanchor_review(out)
     closeout(out, args.ledger)
     review_evidence(out, args.ledger)
 

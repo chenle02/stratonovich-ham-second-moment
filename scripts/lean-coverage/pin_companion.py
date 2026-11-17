@@ -121,6 +121,18 @@ if ledger.get("bound_commit") != full or not ledger.get("ok"):
         sys.exit(0)
     raise SystemExit(f"claims ledger is bound to {str(ledger.get('bound_commit'))[:7]} "
                      f"(ok={ledger.get('ok')}), not a finished ledger at {full[:7]}")
+def comparator_summary(co):
+    cfgs = co["configs"]
+    axs = {tuple(sorted(c["permitted_axioms"])) for c in cfgs}
+    if any(c.get("result", co["result"]) != "pass" for c in cfgs) or len(axs) != 1:
+        raise SystemExit("comparator receipt: a configuration did not pass, or the permitted axioms differ")
+    return {"result": co["result"],
+            "theorems": sum(len(c["theorem_names"]) for c in cfgs),
+            "configs": [{"path": c.get("path"), "theorems": len(c["theorem_names"])} for c in cfgs],
+            "permitted_axioms": sorted(next(iter(axs))),
+            "lean_pkg_version": co["producer"]["lean_pkg"]}
+
+
 ca = lo.get("claim_axioms", {})
 count = lambda v: len(v) if isinstance(v, list) else v
 summary = {
@@ -130,10 +142,10 @@ summary = {
               "claims_checked": count(ca.get("checked")),
               "claims_nonstandard": count(ca.get("nonstandard")),
               "claims_missing": count(ca.get("missing"))},
-    "comparator": {"result": co["result"],
-                   "theorems": len(co["configs"][0]["theorem_names"]),
-                   "permitted_axioms": sorted(co["configs"][0]["permitted_axioms"]),
-                   "lean_pkg_version": co["producer"]["lean_pkg"]},
+    # A receipt can hold several comparator configurations (the release holds the credited
+    # comparator.json and the smoke check comparator-helpers.json); every one must pass with
+    # the same permitted axioms, and the theorems compared are their sum.
+    "comparator": comparator_summary(co),
     "ledger": {"ok": ledger.get("ok"), "verified": ledger["counts"].get("verified"),
                "open": ledger["counts"].get("open"),
                "out_of_scope": ledger["counts"].get("out-of-scope")},
