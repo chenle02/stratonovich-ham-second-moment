@@ -43,11 +43,11 @@ was written with her.
   The separate Chapter 12 skeptic synthesis was **not obtained**; the scoped
   HIGH honesty synthesis does not replace it.
 - **Lean.** A companion Lean package checks parts of the work. The state
-  described here is the wave-L14 gate (development commit
-  <!--s:lean.verified-->`8f51004`<!--/s--> of the private development repository;
-  to be released as v0.10.0), with the coverage record at development commit
-  <!--s:lean.coverage-->`74a04f5`<!--/s--> of that repository. This is a
-  development state, not a published v0.10.0 release. Under the registered
+  described here is its release v0.10.0 (DOI 10.5281/zenodo.24295453), cut
+  from the wave-L14 gate: its checks are recorded for commit
+  <!--s:lean.verified-->`c8d8e07`<!--/s--> of the public companion repository,
+  with the coverage record at commit
+  <!--s:lean.coverage-->`6e83b60`<!--/s--> of that repository. Under the registered
   modelling choices and scope qualifications described in Appendix F, the
   coverage record lists:
   - <!--s:lean.full_words-->sixty<!--/s--> numbered results, three displayed

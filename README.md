@@ -38,7 +38,7 @@ intrinsic constant given by an explicit variational formula.
 | Read | Where |
 | --- | --- |
 | Reading edition (<!--s:pages.reader-->28<!--/s--> pages) | [`notes/notes_stratonovich_ham_second_moment_reader.pdf`](notes/notes_stratonovich_ham_second_moment_reader.pdf) |
-| Technical notes (<!--s:pages.book-->392<!--/s--> pages) | [`notes/notes_stratonovich_ham_second_moment.pdf`](notes/notes_stratonovich_ham_second_moment.pdf) |
+| Technical notes (<!--s:pages.book-->476<!--/s--> pages) | [`notes/notes_stratonovich_ham_second_moment.pdf`](notes/notes_stratonovich_ham_second_moment.pdf) |
 | arXiv | The identifier is added here after posting. |
 
 ## What is established, and what is not
@@ -53,12 +53,12 @@ Please read this before citing anything.
   standard, which requires high confidence.
 - A Lean companion formalizes some results in full under the manuscript's
   own hypotheses. For others it proves every conclusion, or checks steps,
-  with the analytic inputs entering as explicit hypotheses. Most of the main
-  theorems are outside Lean: <!--s:lean.outside_main_words-->three<!--/s--> of the <!--s:main.count_words-->four<!--/s-->; for the fourth, Lean proves a
-  narrower conclusion. [VERIFICATION.md](VERIFICATION.md) says, result by
+  with the analytic inputs entering as explicit hypotheses. Of the <!--s:main.count_words-->four<!--/s--> main
+  theorems, <!--s:lean.outside_main_words-->two<!--/s--> are outside Lean; for the other two, Lean proves a
+  narrower conclusion, for one of them with analytic inputs supplied. [VERIFICATION.md](VERIFICATION.md) says, result by
   result, what Lean covers. See the companion at
-  https://github.com/chenle02/stratonovich-ham-second-moment-lean (release v0.9.0,
-  DOI 10.5281/zenodo.24199105) and its
+  https://github.com/chenle02/stratonovich-ham-second-moment-lean (release v0.10.0,
+  DOI 10.5281/zenodo.24295453) and its
   statement ledger. The correspondence between Lean and the manuscript was
   reviewed by AI, not by a human reader.
 - **No AI review grade is a proof.** Human verification is recorded,
