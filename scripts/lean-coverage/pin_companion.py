@@ -104,6 +104,30 @@ if lo.get("schema") != "lower-receipt/1" or co.get("schema") != "comparator-rece
 for r in (lo, co):
     if r.get("commit") != full:
         raise SystemExit("receipt is bound to a different commit")
+def comparator_summary(co):
+    # A receipt can hold several comparator configurations (the release holds the credited
+    # comparator.json and the smoke check comparator-helpers.json). Every one must pass with
+    # the same permitted axioms and their theorem lists must be disjoint; the theorems
+    # compared are their sum.
+    cfgs = co["configs"]
+    axs = {tuple(sorted(c["permitted_axioms"])) for c in cfgs}
+    if any(c.get("result", co["result"]) != "pass" for c in cfgs) or len(axs) != 1:
+        raise SystemExit("comparator receipt: a configuration did not pass, or the permitted axioms differ")
+    names = [n for c in cfgs for n in c["theorem_names"]]
+    if len(names) != len(set(names)):
+        raise SystemExit("comparator receipt: a theorem is compared in more than one configuration")
+    return {"result": co["result"],
+            "theorems": len(names),
+            "configs": [{"path": c.get("path"), "result": c.get("result", co["result"]),
+                         "theorems": len(c["theorem_names"]),
+                         "permitted_axioms": sorted(c["permitted_axioms"])} for c in cfgs],
+            "permitted_axioms": sorted(next(iter(axs))),
+            "lean_pkg_version": co["producer"]["lean_pkg"]}
+
+
+# Computed from the receipt on every path, including the stored-summary path below, so a
+# stored summary can never carry a stale comparator block.
+comparator = comparator_summary(co)
 ledger = json.loads(subprocess.run(
     ["lean-pkg", "claims", "ledger", "--json", "stratonovich-ham-second-moment-lean"],
     capture_output=True, text=True).stdout or "{}")  # non-zero exit = ledger not ready; judged below
@@ -114,25 +138,17 @@ if ledger.get("bound_commit") != full or not ledger.get("ok"):
     # this verified commit, keep it: the receipts and the ledger it records are
     # bound to the same commit and did not change.
     summ = os.path.join(HERE, "lean-receipt-summary.json")
-    if os.path.exists(summ) and json.load(open(summ)).get("commit") == full:
+    stored = json.load(open(summ)) if os.path.exists(summ) else {}
+    if stored.get("commit") == full:
         print(f"note: ledger bound to {str(ledger.get('bound_commit'))[:7]}, ok={ledger.get('ok')} "
-              f"against the clone's HEAD; kept the stored summary for {full[:7]}")
+              f"against the clone's HEAD; kept the stored summary for {full[:7]}, "
+              "with its comparator block recomputed from the receipt")
+        stored["comparator"] = comparator
+        out["lean-receipt-summary.json"] = json.dumps(stored, indent=2) + "\n"
         write_all(out)
         sys.exit(0)
     raise SystemExit(f"claims ledger is bound to {str(ledger.get('bound_commit'))[:7]} "
                      f"(ok={ledger.get('ok')}), not a finished ledger at {full[:7]}")
-def comparator_summary(co):
-    cfgs = co["configs"]
-    axs = {tuple(sorted(c["permitted_axioms"])) for c in cfgs}
-    if any(c.get("result", co["result"]) != "pass" for c in cfgs) or len(axs) != 1:
-        raise SystemExit("comparator receipt: a configuration did not pass, or the permitted axioms differ")
-    return {"result": co["result"],
-            "theorems": sum(len(c["theorem_names"]) for c in cfgs),
-            "configs": [{"path": c.get("path"), "theorems": len(c["theorem_names"])} for c in cfgs],
-            "permitted_axioms": sorted(next(iter(axs))),
-            "lean_pkg_version": co["producer"]["lean_pkg"]}
-
-
 ca = lo.get("claim_axioms", {})
 count = lambda v: len(v) if isinstance(v, list) else v
 summary = {
@@ -142,14 +158,11 @@ summary = {
               "claims_checked": count(ca.get("checked")),
               "claims_nonstandard": count(ca.get("nonstandard")),
               "claims_missing": count(ca.get("missing"))},
-    # A receipt can hold several comparator configurations (the release holds the credited
-    # comparator.json and the smoke check comparator-helpers.json); every one must pass with
-    # the same permitted axioms, and the theorems compared are their sum.
-    "comparator": comparator_summary(co),
+    "comparator": comparator,
     "ledger": {"ok": ledger.get("ok"), "verified": ledger["counts"].get("verified"),
                "open": ledger["counts"].get("open"),
                "out_of_scope": ledger["counts"].get("out-of-scope")},
 }
-out["lean-receipt-summary.json"] = json.dumps(summary, indent=2)
+out["lean-receipt-summary.json"] = json.dumps(summary, indent=2) + "\n"
 write_all(out)
 print(json.dumps(summary, indent=2))

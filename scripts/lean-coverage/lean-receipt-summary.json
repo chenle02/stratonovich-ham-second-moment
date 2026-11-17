@@ -18,11 +18,23 @@
     "configs": [
       {
         "path": "comparator-helpers.json",
-        "theorems": 2100
+        "result": "pass",
+        "theorems": 2100,
+        "permitted_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
       },
       {
         "path": "comparator.json",
-        "theorems": 1553
+        "result": "pass",
+        "theorems": 1553,
+        "permitted_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
       }
     ],
     "permitted_axioms": [
