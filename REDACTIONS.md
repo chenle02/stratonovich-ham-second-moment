@@ -68,7 +68,28 @@ restored in an append-only update, recorded in the history.
 
 ### Private infrastructure and accounts
 
-[held back: AI account details]
+| Rule | What | Why | How | Count |
+|---|---|---|---|---|
+| 6, 24 | Home directories, host names, the network name of the hub machine, internal remote paths, a dynamic-DNS name and a private IP address | Private infrastructure | Replaced by `<HOME>`, `<HUB>`, `<REMOTES>`, `<IP>` | about 147,700 occurrences |
+| 21 | Names of the maintainer's machines | Private infrastructure | Replaced by `<MACHINE>` | 12,567 occurrences |
+| 30 | Remotes of private repositories (bibliography, knowledge base, wiki) | Private | Replaced by `<REMOTE>` | 37 occurrences |
+| 37, 37b | Names of other private projects and their wiki pages | Private | Replaced by `<PRIVATE-PROJECT>`; files that search or pin them removed | 1,301 occurrences; 1 file version |
+| 40 | Names of other private Lean packages | Private | Replaced by `<PRIVATE-PACKAGE>`. Public packages, this project's own packages and the named dependency `gaussian-chaos-lean` are kept | 4,740 occurrences |
+| 3, 14, 20, 26, 31, 34 | Captures of AI-tool configuration, account and usage records, tool-home listings, quota evidence folders and account probes | Private operational data, including other people's account names | Removed | 443 file versions |
+| 20, 36 | Account aliases, and fields recording an AI account's plan, subscription, utilization or limits | Private | Replaced by `<account>` or `"<removed>"` | 1,295 occurrences |
+| 20b | The same aliases written together with neighbouring words, and file names built from them | Private | Replaced by `<account>` | 2,997 occurrences |
+| 20c | The maintainer's own AI account names | Private | Replaced by `<account A>` and `<account B>` | 1,222 occurrences |
+| 34, 34b, 36 | Paragraphs or tokens tying an address to an AI account, or reporting the state of an AI account | Private | Replaced by "[held back: AI account details]", `<account email removed>` or `<account removed>` | 1,101 + 72 + 3,850 |
+| 6c | The name of a machine on the maintainer's home network, and paragraphs reporting its network observations | Private infrastructure | Name replaced by `<HOST>`; the paragraphs replaced by "[held back: private network details]" | 8 paragraphs |
+| 6c-b | A partial address on the maintainer's home network | Private infrastructure | Replaced by `<IP>` | 8 occurrences |
+| 6d | Home directories in the encoded form some AI tools use for their working folders | Private infrastructure | Replaced by `-<HOME>-` | 1,225 occurrences |
+| 34c | Paragraphs, and fields of data records, that tie an AI account to its plan, its billing limits or its share of usage | Private | Paragraphs replaced by "[held back: AI account details]"; fields by `"<removed>"` or `<account>` | 3,069 paragraphs; 10 fields |
+| 34d | The same ties written in compressed shorthand (a weekly percentage or a plan code next to an account name) | Private | Replaced by "[held back: AI account details]" | 4,896 paragraphs |
+| 34e | Names of a paid plan or a service route, in paragraphs that name one of the maintainer's own AI accounts | Private | Only the plan or route name is replaced, by `<plan removed>`; the paragraph is kept | 5,030 occurrences |
+| 34f | The same plan and route names anywhere outside the manuscripts, data records included | Private | Replaced by `<plan removed>` | 5,820 occurrences |
+| 42 | The maintainer's AI account identifier, the name of its paid plan and its usage figures, in spellings the earlier rules missed (including glued forms) | Private | Replaced by `<account removed>`, `<plan removed>`, `<usage removed>` or `<HOME>`; the maintainer's e-mail address and homepage are kept | 16,348 occurrences |
+| 14 | Email addresses of people other than Le Chen | Privacy | Replaced by `<email removed>`; Le Chen's own addresses kept | 546 occurrences |
+| 11 | Web addresses carrying access identifiers | Login or session data | Replaced by `<URL with access parameters removed>` | none in the final run |
 
 ### Containers, links and private planning
 
