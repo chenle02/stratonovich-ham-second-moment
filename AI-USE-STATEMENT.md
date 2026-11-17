@@ -15,7 +15,12 @@ Amy developed the mathematics: the models working within her drafted the
 proofs, the LaTeX source and the bookkeeping. The author's role was to drive
 the work: choosing the problem, setting and revising the goals, deciding which
 approaches to pursue or abandon, choosing the reviewers and deciding which
-results to keep. The author takes full responsibility for the entire content. **AI systems are not authors
+results to keep. The present author, Le Chen, set up and ran the work and is
+responsible for what it reports: every objection will be looked into, and any
+claim that does not hold up will be corrected, qualified or withdrawn, with each
+change recorded in the public history. The technical chapters have not yet been
+read in full by a human; the verification ledger records, result by result, what
+was checked and how. **AI systems are not authors
 of this paper.** The preface is signed "Le Chen, with Amy", recording that it
 was written with her.
 

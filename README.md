@@ -131,8 +131,11 @@ Anthropic Claude, OpenAI GPT through Codex, DeepSeek and Kimi. Reviews are
 always recorded with the reviewer's model family, because a review counts
 only when that family differs from the author's.
 
-Amy is not an author: Le Chen takes full responsibility for the content. The
-paper's AI-use statement gives details.
+Amy is not an author, because she cannot be held responsible for what she
+produces; that responsibility rests with Le Chen, who set up and ran the work
+and is responsible for what it reports. The technical chapters have not yet been
+read in full by a human; the preface explains this, and the paper's AI-use
+statement gives details.
 
 ## Documents in this repository
 

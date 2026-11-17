@@ -19,7 +19,7 @@ defined constant, given by a fully specified variational formula. The work
 was done with AI systems under the direction of Le Chen (the PI), who set the
 goals, made the decisions and changed direction when needed.
 
-**Size of the record at manuscript revision <!--s:rev.tex-->`ade73bb`<!--/s-->:**
+**Size of the record at manuscript revision <!--s:rev.tex-->`bf37923`<!--/s-->:**
 - **Technical notes:** <!--s:pages.book-->476<!--/s--> pages, with <!--s:chapters-->12<!--/s--> chapters and <!--s:appendices.count-->7<!--/s--> appendices (<!--s:appendices.letters-->A–G<!--/s-->).
   Chapter 12, "Obstructions and failed approaches", states <!--s:nogo-->33<!--/s--> numbered no-go
   results with proofs.
@@ -59,8 +59,9 @@ typo for "my AI Army" in an email to a coauthor.) She consists of:
 
 Wherever independence matters, this record names the model family, not just
 "Amy": a review only counts when its model family differs from the author
-of the work under review. Amy is a tool. She is never an author; Le Chen
-drives the work and takes full responsibility for the results.
+of the work under review. Amy is a tool. She is never an author, because she
+cannot be held responsible for what she produces; Le Chen drives the work and is
+responsible for what it reports.
 
 ### Roles
 
