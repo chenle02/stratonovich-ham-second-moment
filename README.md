@@ -5,6 +5,7 @@
 [![Version 1.0.2](https://img.shields.io/badge/version-1.0.2-blue)](CHANGELOG.md)
 [![Text: CC BY 4.0](https://img.shields.io/badge/text-CC%20BY%204.0-lightgrey)](LICENSE)
 [![Code: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-lightgrey)](LICENSES/Apache-2.0.txt)
+[![Book site](https://img.shields.io/badge/book-site-blue)](https://chenle02.github.io/stratonovich-ham-second-moment/)
 
 > To make new mathematics found with AI as trustworthy as mathematics proved
 > by hand: every step open, every check recorded, every contributor credited.
@@ -40,6 +41,7 @@ intrinsic constant given by an explicit variational formula.
 | Reading edition (<!--s:pages.reader-->28<!--/s--> pages) | [`notes/notes_stratonovich_ham_second_moment_reader.pdf`](notes/notes_stratonovich_ham_second_moment_reader.pdf) |
 | Technical notes (<!--s:pages.book-->476<!--/s--> pages) | [`notes/notes_stratonovich_ham_second_moment.pdf`](notes/notes_stratonovich_ham_second_moment.pdf) |
 | arXiv | [arXiv:2611.23014](https://arxiv.org/abs/2611.23014) |
+| Book site: the editions, the status, the videos | <https://chenle02.github.io/stratonovich-ham-second-moment/> |
 
 ## What is established, and what is not
 

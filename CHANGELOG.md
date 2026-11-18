@@ -12,6 +12,8 @@ Patch release: no mathematics changed.
 - **arXiv:** the book is arXiv:2611.23014. The imprint page links it,
   `CITATION.cff` gives it as the preferred citation, the README links it, and
   `.zenodo.json` records that the deposit supplements it.
+- **Book site:** the README and `CITATION.cff` (`url`) link the book's site,
+  <https://chenle02.github.io/stratonovich-ham-second-moment/>.
 - **Version and date** on the title page, the imprint and the reading edition,
   and the release links in the preface, Appendix G and the AI-use statement,
   now name 1.0.2.
