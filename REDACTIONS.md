@@ -19,11 +19,14 @@ original history and the withheld records are retained privately.
   Commit IDs quoted inside files and messages refer to the original
   history. Use `history/commit-map.tsv` to translate an original ID into
   the published one.
-- **Commits.** The original history has 2,582 commits on its two branches.
-  The published history has 2,012, plus one commit that adds
-  `history/commit-map.tsv`.
-- **Dropped commits.** 570 commits touched only removed material, so they
-  became empty and were dropped. Each is listed in `history/commit-map.tsv`
+- **Commits.** At the first publication (v1.0.0), the original history had
+  2,582 commits on its two branches. The published history had 2,012, plus
+  one commit that adds `history/commit-map.tsv`. Later releases add their
+  commits on top of the published history, which is never rewritten; each
+  release's commit-map commit states how many original commits it adds, how
+  many are published and how many became empty.
+- **Dropped commits.** At the first publication, 570 commits touched only
+  removed material, so they became empty and were dropped. Each is listed in `history/commit-map.tsv`
   with a zero target.
 
 ## Classes of removal
