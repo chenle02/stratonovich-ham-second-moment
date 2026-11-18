@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Stratonovich Waves Driven by Space-Time Gaussian Noise, by Le Chen: a 476-page book on the second moment of the Stratonovich hyperbolic Anderson model, developed with an AI research system and published with its filtered development history.">
+  <title>Stratonovich Waves Driven by Space-Time Gaussian Noise</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="canonical" href="https://chenle02.github.io/stratonovich-ham-second-moment/">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header>
+    <a class="brand" href="./"><span>Stratonovich Waves Driven by Space-Time Gaussian Noise</span></a>
+    <span class="tagline">Le Chen · version 1.0.0 · Text CC BY 4.0</span>
+  </header>
+  <div class="shell">
+    <nav class="side" aria-label="Site"><p class="group">The book</p>
+<ul>
+<li><a href="#read">Read</a></li>
+<li><a href="#status">What is established</a></li>
+<li><a href="#videos">Video introduction</a></li>
+</ul>
+<p class="group">The project</p>
+<ul>
+<li><a href="#help">How you can help</a></li>
+<li><a href="#built">How this was built</a></li>
+<li><a href="#ai-use">AI use</a></li>
+<li><a href="#cite">License and citation</a></li>
+</ul>
+<p class="group">Elsewhere</p>
+<ul>
+<li><a href="https://github.com/chenle02/stratonovich-ham-second-moment">Source and history on GitHub</a></li>
+<li><a href="https://github.com/chenle02/stratonovich-ham-second-moment-lean">Lean companion</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLWiXjeUrQ62k">Video playlist</a></li>
+<li><a href="llms.txt">llms.txt</a></li>
+</ul></nav>
+    <main id="content">
+    <details class="side-mobile"><summary>Menu</summary><nav aria-label="Site (compact)"><p class="group">The book</p>
+<ul>
+<li><a href="#read">Read</a></li>
+<li><a href="#status">What is established</a></li>
+<li><a href="#videos">Video introduction</a></li>
+</ul>
+<p class="group">The project</p>
+<ul>
+<li><a href="#help">How you can help</a></li>
+<li><a href="#built">How this was built</a></li>
+<li><a href="#ai-use">AI use</a></li>
+<li><a href="#cite">License and citation</a></li>
+</ul>
+<p class="group">Elsewhere</p>
+<ul>
+<li><a href="https://github.com/chenle02/stratonovich-ham-second-moment">Source and history on GitHub</a></li>
+<li><a href="https://github.com/chenle02/stratonovich-ham-second-moment-lean">Lean companion</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLWiXjeUrQ62k">Video playlist</a></li>
+<li><a href="llms.txt">llms.txt</a></li>
+</ul></nav></details>
+<section class="hero">
+<p class="eyebrow">A book in stochastic partial differential equations · Le Chen, Auburn University</p>
+<h1>Stratonovich Waves Driven by Space-Time Gaussian Noise</h1>
+<p class="lead"><em>Second Moment and Exact Asymptotics</em></p>
+</section>
+
+<blockquote><p>To make new mathematics found with AI as trustworthy as mathematics proved
+by hand: every step open, every check recorded, every contributor credited.</p></blockquote>
+
+<p>We study the hyperbolic Anderson model, the stochastic wave equation
+<span class="formula">∂<sub>t</sub><sup>2</sup>u = Δu + u Ẇ</span> in dimensions one to three, with initial
+data (1, 0), in the Stratonovich sense. The Gaussian noise has temporal
+covariance <span class="formula">|s − t|<sup>−α<sub>0</sub></sup></span> and a homogeneous spatial covariance of order
+<span class="formula">α</span>. The book identifies the large-time behaviour of the second moment at the scale
+<span class="formula">t<sup>κ</sup></span>, <span class="formula">κ = (4 − α − α<sub>0</sub>)/(3 − α)</span>, with an
+intrinsic constant given by an explicit variational formula.</p>
+
+<p>The work was developed by Le Chen with Amy, his AI research system, and is published with its
+<strong>filtered development history</strong>, so that mathematicians can study how the work was
+actually done, check the results, and help interpret them.</p>
+
+<p class="actions"><a class="button" href="pdf/v1.0.0/notes_stratonovich_ham_second_moment_reader.pdf">Reading edition (28 pp)</a>
+<a class="button secondary" href="pdf/v1.0.0/notes_stratonovich_ham_second_moment.pdf">Technical notes (476 pp)</a>
+<a class="button secondary" href="#videos">Video introduction</a></p>
+
+<h2 id="read">Read</h2>
+<table>
+<thead><tr><th>Edition</th><th>Pages</th><th>PDF</th></tr></thead>
+<tbody>
+<tr><td>Reading edition: Part I, the main results and the route of the proof</td><td>28</td><td><a href="pdf/v1.0.0/notes_stratonovich_ham_second_moment_reader.pdf">PDF</a> <span class="hash">sha256 72af7358dc8f45f1…</span></td></tr>
+<tr><td>Technical notes: the full book with every proof</td><td>476</td><td><a href="pdf/v1.0.0/notes_stratonovich_ham_second_moment.pdf">PDF</a> <span class="hash">sha256 2c2660036d44c656…</span></td></tr>
+<tr><td>Combined edition: the reading edition followed by the technical notes</td><td>507</td><td><a href="pdf/v1.0.0/combined.pdf">PDF</a> <span class="hash">sha256 b2ea2e501f7d78b5…</span></td></tr>
+<tr><td>arXiv</td><td></td><td>The identifier is added here after posting.</td></tr>
+</tbody>
+</table>
+<p>These are the PDFs of release <a href="https://github.com/chenle02/stratonovich-ham-second-moment/releases/tag/v1.0.0">v1.0.0</a>; the LaTeX sources are in
+<a href="https://github.com/chenle02/stratonovich-ham-second-moment/blob/v1.0.0/notes"><code>notes/</code></a>.</p>
+
+<h2 id="status">What is established, and what is not</h2>
+<div class="boundary">
+<p><strong>Please read this before citing anything.</strong></p>
+<ul>
+<li>The proofs are written out in full. Part I (the reading edition) has not
+yet been checked line by line by a human reader.</li>
+<li>The technical notes have been reviewed by AI systems from several model
+families. The latest whole-paper review returned <em>pass with notes</em> at
+<strong>medium</strong> confidence and is <strong>not accepted</strong> under the project's own
+standard, which requires high confidence.</li>
+<li>A Lean companion formalizes some results in full under the manuscript's
+own hypotheses. For others it proves every conclusion, or checks steps,
+with the analytic inputs entering as explicit hypotheses. Of the four main
+theorems, two are outside Lean; for the other two, Lean proves a
+narrower conclusion, for one of them with analytic inputs supplied. The correspondence between Lean and the manuscript was
+reviewed by AI, not by a human reader.</li>
+<li><strong>No AI review grade is a proof.</strong> Human verification is recorded,
+result by result, in <a href="https://github.com/chenle02/stratonovich-ham-second-moment/blob/v1.0.0/VERIFICATION.md">VERIFICATION.md</a>.</li>
+</ul>
+</div>
+<div class="cards">
+<div class="card"><h3><a href="https://github.com/chenle02/stratonovich-ham-second-moment/blob/v1.0.0/VERIFICATION.md">Verification ledger</a></h3><p>Human verification, result by result, and what Lean covers.</p></div>
+<div class="card"><h3><a href="https://github.com/chenle02/stratonovich-ham-second-moment-lean">Lean companion</a></h3><p>Release v0.10.0, DOI <a href="https://doi.org/10.5281/zenodo.24295453">10.5281/zenodo.24295453</a>; <a href="https://chenle02.github.io/stratonovich-ham-second-moment-lean/">its site</a> lists what is checked.</p></div>
+</div>
+
+<h2 id="videos">Video introduction</h2>
+<p>An eleven-episode introduction to the book. Each episode runs about twenty minutes with a synthetic
+voice and follows the book chapter by chapter; the book's guide to the proof lists what each episode
+covers. <a href="https://www.youtube.com/playlist?list=PLWiXjeUrQ62k">Watch the playlist on YouTube.</a></p>
+<ul class="videos">
+<li><a href="https://youtu.be/ktqRCapNP2c"><img src="https://i.ytimg.com/vi/ktqRCapNP2c/mqdefault.jpg" alt="" width="320" height="180"><span class="cap"><span class="num">Episode 1</span>A guitar in a sandstorm<span class="ch">Chapter 1: the model, its history, the exponent κ</span></span></a></li>
+<li><a href="https://youtu.be/YTP_G_anCaE"><img src="https://i.ytimg.com/vi/YTP_G_anCaE/mqdefault.jpg" alt="" width="320" height="180"><span class="cap"><span class="num">Episode 2</span>The answer: a growth rate and a variational constant<span class="ch">Chapter 1: the two main theorems and the constant</span></span></a></li>
+<li><a href="https://youtu.be/Glay6Q_jsLM"><img src="https://i.ytimg.com/vi/Glay6Q_jsLM/mqdefault.jpg" alt="" width="320" height="180"><span class="cap"><span class="num">Episode 3</span>Two chains and their pairings<span class="ch">Chapter 2</span></span></a></li>
+<li><a href="https://youtu.be/bUyxCpboios"><img src="https://i.ytimg.com/vi/bUyxCpboios/mqdefault.jpg" alt="" width="320" height="180"><span class="cap"><span class="num">Episode 4</span>The correct time scale<span class="ch">Chapter 3</span></span></a></li>
+<li><a href="https://youtu.be/2jv8nuqgfBY"><img src="https://i.ytimg.com/vi/2jv8nuqgfBY/mqdefault.jpg" alt="" width="320" height="180"><span class="cap"><span class="num">Episode 5</span>A Gaussian toolkit for wave fields<span class="ch">Chapters 4–6</span></span></a></li>
+<li><a href="https://youtu.be/VWemsluFZiA"><img src="https://i.ytimg.com/vi/VWemsluFZiA/mqdefault.jpg" alt="" width="320" height="180"><span class="cap"><span class="num">Episode 6</span>The lower bound: steering the noise<span class="ch">Chapters 7–8</span></span></a></li>
+<li><a href="https://youtu.be/Z35qRxt05kA"><img src="https://i.ytimg.com/vi/Z35qRxt05kA/mqdefault.jpg" alt="" width="320" height="180"><span class="cap"><span class="num">Episode 7</span>The upper bound: no control does better<span class="ch">Chapters 9–10</span></span></a></li>
+<li><a href="https://youtu.be/RllmgM_zB48"><img src="https://i.ytimg.com/vi/RllmgM_zB48/mqdefault.jpg" alt="" width="320" height="180"><span class="cap"><span class="num">Episode 8</span>The constant and what it tells us<span class="ch">Chapter 11 and the open questions of Chapter 1</span></span></a></li>
+<li><a href="https://youtu.be/eLz9Hd20ZT0"><img src="https://i.ytimg.com/vi/eLz9Hd20ZT0/mqdefault.jpg" alt="" width="320" height="180"><span class="cap"><span class="num">Episode 9</span>Roads not taken<span class="ch">Appendices A–D</span></span></a></li>
+<li><a href="https://youtu.be/hQYXmznXji8"><img src="https://i.ytimg.com/vi/hQYXmznXji8/mqdefault.jpg" alt="" width="320" height="180"><span class="cap"><span class="num">Episode 10</span>How this book was written<span class="ch">The preface and Appendices E–G</span></span></a></li>
+<li><a href="https://youtu.be/QzPhuFUUDT0"><img src="https://i.ytimg.com/vi/QzPhuFUUDT0/mqdefault.jpg" alt="" width="320" height="180"><span class="cap"><span class="num">Episode 11</span>Approaches that do not work<span class="ch">Chapter 12</span></span></a></li>
+</ul>
+<p>Le Chen made the series with Amy. She drafted the scripts and the Manim
+animations from the book; every displayed formula is copied from the
+statement carrying its label and checked by script, the narration was checked
+to be exactly the script, and each script was reviewed against the manuscript
+by a model family different from the one that drafted it. Episodes 1–10 follow
+the draft at version <code>38d67ec</code> and episode 11 (Chapter 12) the draft at
+<code>0f553e08</code>, so theorem numbers in them may differ from later versions. The
+videos explain the argument; they are not part of it or of its review.</p>
+
+<h2 id="help">How you can help</h2>
+<ul>
+<li><strong>Check a result.</strong> Pick a row in <a href="https://github.com/chenle02/stratonovich-ham-second-moment/blob/v1.0.0/VERIFICATION.md">VERIFICATION.md</a>, check
+it, and open a pull request that changes that row and says exactly what you checked.</li>
+<li><strong>Report a gap or an error.</strong> <a href="https://github.com/chenle02/stratonovich-ham-second-moment/issues">Open an issue</a> with the result's label.</li>
+<li><strong>Discuss interpretation.</strong> Use <a href="https://github.com/chenle02/stratonovich-ham-second-moment/discussions">GitHub Discussions</a>.</li>
+<li><strong>Formalize.</strong> See the <a href="https://github.com/chenle02/stratonovich-ham-second-moment-lean">Lean companion</a>'s contributor guide and its work packages.</li>
+</ul>
+<p>Credit is set out in advance in <a href="https://github.com/chenle02/stratonovich-ham-second-moment/blob/v1.0.0/CONTRIBUTING.md">CONTRIBUTING.md</a>: every
+merged contribution is acknowledged by name, and substantial contributions lead to coauthorship.</p>
+
+<h2 id="built">How this was built</h2>
+<p><a href="https://github.com/chenle02/stratonovich-ham-second-moment/blob/v1.0.0/HOW-THIS-WAS-BUILT.md">HOW-THIS-WAS-BUILT.md</a> is a guided tour of the
+development history: the workflow, the reviewer model families, the routes
+that failed, and where to look in the record. Some material was removed from
+the published history (other authors' copyrighted texts, private
+infrastructure details, collaborators' unpublished work, and private planning
+notes); <a href="https://github.com/chenle02/stratonovich-ham-second-moment/blob/v1.0.0/REDACTIONS.md">REDACTIONS.md</a> lists every class of removal with its
+reason and counts.</p>
+<p>The book's Appendix E, "The AI work in numbers", counts the work from this
+record: tokens and sessions by model family, the recorded review runs and
+their outcomes, the failed approaches, and a day-by-day timeline with 15 milestones.
+Every number is rebuilt by the scripts in
+<a href="https://github.com/chenle02/stratonovich-ham-second-moment/blob/v1.0.0/scripts/ai-statistics"><code>scripts/ai-statistics/</code></a>. The milestones are
+tagged in the repository (<code>m01-project-set-up</code> … <code>m15-final-pdf-on-master</code>),
+so <code>git checkout m05-goal-revised</code> shows the project as it stood that day.</p>
+
+<h2 id="ai-use">AI use</h2>
+<p>Amy, Le Chen's AI research system, developed the mathematics: the models
+working within her drafted the proofs, the LaTeX source and the bookkeeping.
+Le Chen's role was to drive the work: choosing the problem, setting and
+revising the goals, deciding which approaches to pursue or abandon, choosing
+the reviewers and deciding which results to keep.</p>
+<p>Amy is model-agnostic: a research operating system (workflows and standing
+rules, plus a research knowledge base of bibliography, reference library,
+curated arXiv sources and an SPDE wiki) within which any capable language
+model can work. Here models from several families worked within her:
+Anthropic Claude, OpenAI GPT through Codex, DeepSeek and Kimi. Reviews are
+always recorded with the reviewer's model family, because a review counts
+only when that family differs from the author's.</p>
+<p>Amy is not an author, because she cannot be held responsible for what she
+produces; that responsibility rests with Le Chen, who set up and ran the work
+and is responsible for what it reports. The technical chapters have not yet been
+read in full by a human; the preface explains this, and the
+<a href="https://github.com/chenle02/stratonovich-ham-second-moment/blob/v1.0.0/AI-USE-STATEMENT.md">AI-use statement</a> gives details.</p>
+
+<h2 id="cite">License and citation</h2>
+<ul>
+<li>Text and manuscript: <a href="https://github.com/chenle02/stratonovich-ham-second-moment/blob/v1.0.0/LICENSE">CC BY 4.0</a>. Scripts and Lean code:
+<a href="https://github.com/chenle02/stratonovich-ham-second-moment/blob/v1.0.0/LICENSES/Apache-2.0.txt">Apache-2.0</a>.</li>
+<li>Cite the paper and the repository, and record the exact commit or release tag you used; see
+<a href="https://github.com/chenle02/stratonovich-ham-second-moment/blob/v1.0.0/CITATION.cff">CITATION.cff</a>. The arXiv identifier and the Zenodo DOI of the release are added after posting.</li>
+</ul>
+<pre><code>Le Chen, Stratonovich Waves Driven by Space-Time Gaussian Noise:
+Second Moment and Exact Asymptotics. Version 1.0.0, 2026.
+https://github.com/chenle02/stratonovich-ham-second-moment</code></pre>
+    </main>
+  </div>
+  <footer>
+    <p>Le Chen, Auburn University · Text CC BY 4.0 ·
+    <a href="https://github.com/chenle02/stratonovich-ham-second-moment">Source and filtered history</a> ·
+    <a href="https://github.com/chenle02/stratonovich-ham-second-moment-lean">Lean companion</a></p>
+  </footer>
+</body>
+</html>
