@@ -39,7 +39,7 @@ intrinsic constant given by an explicit variational formula.
 | --- | --- |
 | Reading edition (<!--s:pages.reader-->28<!--/s--> pages) | [`notes/notes_stratonovich_ham_second_moment_reader.pdf`](notes/notes_stratonovich_ham_second_moment_reader.pdf) |
 | Technical notes (<!--s:pages.book-->476<!--/s--> pages) | [`notes/notes_stratonovich_ham_second_moment.pdf`](notes/notes_stratonovich_ham_second_moment.pdf) |
-| arXiv | The identifier is added here after posting. |
+| arXiv | [arXiv:2611.23014](https://arxiv.org/abs/2611.23014) |
 
 ## What is established, and what is not
 
@@ -155,4 +155,4 @@ statement gives details.
 - Text and manuscript: CC BY 4.0 ([`LICENSE`](LICENSE)). Scripts and Lean code:
   Apache-2.0 ([`LICENSES/Apache-2.0.txt`](LICENSES/Apache-2.0.txt)).
 - Cite the paper and this repository; see [`CITATION.cff`](CITATION.cff). The
-  arXiv identifier and the Zenodo DOI of the release are added after posting.
+  paper is arXiv:2611.23014; the Zenodo DOI of the release is added after posting.
