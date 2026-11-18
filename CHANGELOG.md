@@ -5,7 +5,18 @@ MINOR changes the mathematics but not the statement of any main theorem, and
 PATCH changes no mathematics. Results are named by label; labels do not change
 between versions, numbers may.
 
-## 1.0.1 — <!--s:release.date-->2026-11-17<!--/s-->
+## 1.0.2 — <!--s:release.date-->2026-11-18<!--/s-->
+
+Patch release: no mathematics changed.
+
+- **arXiv:** the book is arXiv:2611.23014. The imprint page links it,
+  `CITATION.cff` gives it as the preferred citation, the README links it, and
+  `.zenodo.json` records that the deposit supplements it.
+- **Version and date** on the title page, the imprint and the reading edition,
+  and the release links in the preface, Appendix G and the AI-use statement,
+  now name 1.0.2.
+
+## 1.0.1 — 2026-11-17
 
 Patch release: no mathematics changed.
 

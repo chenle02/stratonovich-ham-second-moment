@@ -104,7 +104,7 @@ was written with her.
   line by line by a human reader. The technical notes have not yet been
   checked line by line by a human reader. Independent checks by readers are
   recorded result by result in the public verification ledger,
-  https://github.com/chenle02/stratonovich-ham-second-moment/blob/v1.0.1/VERIFICATION.md.
+  https://github.com/chenle02/stratonovich-ham-second-moment/blob/v1.0.2/VERIFICATION.md.
 
 **No AI review grade in this statement is a proof.**
 
@@ -114,7 +114,7 @@ A filtered development history (the proof revisions, the review runs with
 their model families and grades, selected reports, and the routes that failed)
 is public at
 https://github.com/chenle02/stratonovich-ham-second-moment (release tag
-`v1.0.1`),
+`v1.0.2`),
 with documented redactions. [REDACTIONS.md](REDACTIONS.md) lists every class of
 removal with its reasons and counts, including review records held back until a
 source author has been told and evidence archives that were not deposited.

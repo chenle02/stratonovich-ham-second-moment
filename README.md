@@ -2,7 +2,7 @@
 
 *Second Moment and Exact Asymptotics*
 
-[![Version 1.0.1](https://img.shields.io/badge/version-1.0.1-blue)](CHANGELOG.md)
+[![Version 1.0.2](https://img.shields.io/badge/version-1.0.2-blue)](CHANGELOG.md)
 [![Text: CC BY 4.0](https://img.shields.io/badge/text-CC%20BY%204.0-lightgrey)](LICENSE)
 [![Code: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-lightgrey)](LICENSES/Apache-2.0.txt)
 
