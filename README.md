@@ -2,7 +2,7 @@
 
 *Second Moment and Exact Asymptotics*
 
-[![Version 1.0.0](https://img.shields.io/badge/version-1.0.0-blue)](CHANGELOG.md)
+[![Version 1.0.1](https://img.shields.io/badge/version-1.0.1-blue)](CHANGELOG.md)
 [![Text: CC BY 4.0](https://img.shields.io/badge/text-CC%20BY%204.0-lightgrey)](LICENSE)
 [![Code: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-lightgrey)](LICENSES/Apache-2.0.txt)
 
@@ -108,11 +108,11 @@ reason and counts.
 
 The book's Appendix E, "The AI work in numbers", counts the work from this
 record: tokens and sessions by model family, the recorded review runs and
-their outcomes, the failed approaches, and a day-by-day timeline with 14 milestones.
+their outcomes, the failed approaches, and a day-by-day timeline with 15 milestones.
 Every number is rebuilt by the scripts in
 [`scripts/ai-statistics/`](scripts/ai-statistics/). The milestones are listed
 in [`scripts/ai-statistics/milestones.json`](scripts/ai-statistics/milestones.json)
-and tagged in this repository (`m01-project-set-up` … `m14-lean-gates-closed`),
+and tagged in this repository (`m01-project-set-up` … `m15-final-pdf-on-master`),
 so `git checkout m05-goal-revised` shows the project as it stood that day.
 
 ## AI use

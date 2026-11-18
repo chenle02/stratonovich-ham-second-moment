@@ -5,7 +5,23 @@ MINOR changes the mathematics but not the statement of any main theorem, and
 PATCH changes no mathematics. Results are named by label; labels do not change
 between versions, numbers may.
 
-## 1.0.0 — <!--s:release.date-->2026-11-16<!--/s-->
+## 1.0.1 — <!--s:release.date-->2026-11-17<!--/s-->
+
+Patch release: no mathematics changed.
+
+- **Episode 10:** the link in the book's episode table now points to the
+  replacement video `hQYXmznXji8`; the earlier upload is unlisted.
+- **Archiving:** a `.zenodo.json` gives Zenodo the deposit metadata (one
+  deposit licence, CC BY 4.0, for the text and manuscript; the scripts and
+  Lean code stay Apache-2.0). Release 1.0.0 was not archived, because Zenodo
+  could not read the two licences listed in `CITATION.cff`.
+- **Records:** the README and HOW-THIS-WAS-BUILT.md now count the 15
+  milestones that the book's Appendix E draws (`m01` … `m15`).
+- **Version and date** on the title page, the imprint and the reading edition,
+  and the release links in the preface, Appendix G and the AI-use statement,
+  now name 1.0.1.
+
+## 1.0.0 — 2026-11-16
 
 First public release: the book, its reading edition and the complete
 development history.

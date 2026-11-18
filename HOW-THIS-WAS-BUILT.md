@@ -19,7 +19,7 @@ defined constant, given by a fully specified variational formula. The work
 was done with AI systems under the direction of Le Chen (the PI), who set the
 goals, made the decisions and changed direction when needed.
 
-**Size of the record at manuscript revision <!--s:rev.tex-->`bf37923`<!--/s-->:**
+**Size of the record at manuscript revision <!--s:rev.tex-->`770cf79`<!--/s-->:**
 - **Technical notes:** <!--s:pages.book-->476<!--/s--> pages, with <!--s:chapters-->12<!--/s--> chapters and <!--s:appendices.count-->7<!--/s--> appendices (<!--s:appendices.letters-->A–G<!--/s-->).
   Chapter 12, "Obstructions and failed approaches", states <!--s:nogo-->33<!--/s--> numbered no-go
   results with proofs.
@@ -122,8 +122,8 @@ rejected. This checks that the formal statement means what the paper means.
 
 ## 3. Timeline
 
-The 14 milestones drawn in the book's Appendix E are tagged in this
-repository (`m01-project-set-up` … `m14-lean-gates-closed`; dates, commits
+The 15 milestones drawn in the book's Appendix E are tagged in this
+repository (`m01-project-set-up` … `m15-final-pdf-on-master`; dates, commits
 and sources in `scripts/ai-statistics/milestones.json`). The account below
 follows them.
 
