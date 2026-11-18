@@ -12,6 +12,9 @@ Patch release: no mathematics changed.
 - **arXiv:** the book is arXiv:2611.23014. The imprint page links it,
   `CITATION.cff` gives it as the preferred citation, the README links it, and
   `.zenodo.json` records that the deposit supplements it.
+- **Zenodo DOI:** the releases are archived on Zenodo, DOI 10.5281/zenodo.24342309 (all
+  versions; v1.0.1 is 10.5281/zenodo.24342310). The imprint page and the
+  README link it, and `CITATION.cff` gives it as `doi`.
 - **Book site:** the README and `CITATION.cff` (`url`) link the book's site,
   <https://chenle02.github.io/stratonovich-ham-second-moment/>.
 - **Version and date** on the title page, the imprint and the reading edition,

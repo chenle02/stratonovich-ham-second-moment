@@ -6,6 +6,7 @@
 [![Text: CC BY 4.0](https://img.shields.io/badge/text-CC%20BY%204.0-lightgrey)](LICENSE)
 [![Code: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-lightgrey)](LICENSES/Apache-2.0.txt)
 [![Book site](https://img.shields.io/badge/book-site-blue)](https://chenle02.github.io/stratonovich-ham-second-moment/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24342309.svg)](https://doi.org/10.5281/zenodo.24342309)
 
 > To make new mathematics found with AI as trustworthy as mathematics proved
 > by hand: every step open, every check recorded, every contributor credited.
@@ -157,4 +158,5 @@ statement gives details.
 - Text and manuscript: CC BY 4.0 ([`LICENSE`](LICENSE)). Scripts and Lean code:
   Apache-2.0 ([`LICENSES/Apache-2.0.txt`](LICENSES/Apache-2.0.txt)).
 - Cite the paper and this repository; see [`CITATION.cff`](CITATION.cff). The
-  paper is arXiv:2611.23014; the Zenodo DOI of the release is added after posting.
+  paper is arXiv:2611.23014; the releases of this repository are archived on
+  Zenodo, DOI [10.5281/zenodo.24342309](https://doi.org/10.5281/zenodo.24342309) (all versions).
