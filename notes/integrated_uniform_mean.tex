@@ -7,8 +7,15 @@ Section~\ref{S:actual-cameron-mean}. Fix $\alpha/4 < s < 1/2$ and put $\beta =
 in~\eqref{E:cameron-fractional-product}. Choose a real even smooth compact
 $\eta$, equal to one on the unit ball, with $0 \le \eta \le 1$ and support in
 the closed radius-two ball. For $R \ge 1$ set $\eta_R(x) = \eta(x/R)$ and $m_R =
-\eta_R^2$. In this section the mean acts on $E = H^{1/2}\times H^{-1/2}$. The
-constant data columns belong to $F$, outside $E$. All uniform-radius claims
+\eta_R^2$. In this section the mean acts on $E = H^{1/2}\times H^{-1/2}$,
+with the real inner product
+\[
+  \langle z,w\rangle_E
+  =\langle\Lambda^{1/2}z_1,\Lambda^{1/2}w_1\rangle_{L^2}
+  +\langle\Lambda^{-1/2}z_2,\Lambda^{-1/2}w_2\rangle_{L^2},
+  \qquad \Lambda=(1-\Delta)^{1/2}.
+\]
+The constant data columns belong to $F$, outside $E$. All uniform-radius claims
 below concern $E$. The spatial map $T_R:H_{\mathrm{sp}} \to \mathcal{K}(E)$ is
 the $E$ restriction of Proposition~\ref{P:cameron-spatial-map}. Its explicit row
 is
@@ -18,7 +25,11 @@ is
   \qquad
   k_R(z,w)=(\eta_Rz_1)(\eta_R\Lambda^{-1}w_2).
 \end{equation}
-Thus, the physical mask occurs once, after covariance convolution.
+Here $q \in H_{\mathrm{sp}}$ and $z,w \in E$; the product defining
+$k_R(z,w)$ is the continuous $H_{\mathrm{sp}}$-valued product of
+Lemma~\ref{L:cameron-fractional-products}. Its factors lie in $H^{1/2}$
+and hence in $H^s$. Thus, the physical mask occurs once, after covariance
+convolution.
 
 \subsection{Uniform multiplier and spatial tails}
 
