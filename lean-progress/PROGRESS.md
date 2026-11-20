@@ -779,7 +779,7 @@ Last updated: 2026-11-20: **wave L15 gate CLOSED by Le** at dev `18c5c1d` (tag `
   dependencies fixed when L15 is proposed (line refs re-pinned by R0). Other
   L15 candidates noted in L12/L13: C8-C10 beyond F1,
   `L:pairing-product-envelope`.
-- **WAVE L17: APPROVED by Le (2026-11-20) as proposed, with the default answers to all twelve decisions.** Le, verbatim: "I approve L17 as proposed with the default answers to all twelve decisions. Record it in lean-progress/PROGRESS.md, run the Step-2 probe on <MACHINE>, and launch L17 only after the L16 gate closes." Corrections by #24 (formerly #22) on checking the draft against the TeX: `L:crude-corrected` begins at main line 1978 (not 1970); decision 12's "#3" is #46 after the 2026-11-20 fleet renumbering.
+- **WAVE L17: APPROVED by Le (2026-11-20) as proposed, with the default answers to all twelve decisions.** Le, verbatim: "I approve L17 as proposed with the default answers to all twelve decisions. Record it in lean-progress/PROGRESS.md, run the Step-2 probe on <MACHINE>, and launch L17 only after the L16 gate closes." Corrections by #24 (formerly #22) on checking the draft against the TeX: `L:crude-corrected` begins at main line 1978 (not 1970); decision 12's "#3" is #7 (<MACHINE>/n7-svn) after the 2026-11-20 fleet renumbering.
   Proposal as written (#24, 2026-11-20): Le, verbatim: "At the
   same time, shall we prepare L17?" (asked while the L16 gate runs). This is a draft only.
   Nothing is built and no repository is changed. The Lean track stays FROZEN (Le,
