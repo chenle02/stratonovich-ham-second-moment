@@ -8,7 +8,7 @@
 
 | Track | Current item | State | Since | Next action | Blocking on |
 |---|---|---|---|---|---|
-| Proof | Wave L15 (L15-UM, scope (a)) | CLOSED (gate `L15-gate` on dev `18c5c1d`) | 2026-11-20 | none scheduled: UM-3 (the Cameron-map chain) is a possible follow-up wave; every other Lean item stays FROZEN | Le (a new wave needs his approval) |
+| Proof | Wave L16 (Cameron-map chain: discharge `CameronSpatialMap` and `UniformMeanRegulator`) | APPROVED, probes then launch | 2026-11-20 | compactness probes on <MACHINE>, then the L16-0 interface | probe results |
 | Release | v0.10.0 | LINKED (public tag on `261cc68`, version DOI 10.5281/zenodo.24295453; book Appendix F pins it) | 2026-11-18 | v0.11.0 (L15) only if Le wants one | Le |
 
 ## Links
@@ -23,7 +23,7 @@ Last updated: 2026-11-20: **wave L15 gate CLOSED by Le** at dev `18c5c1d` (tag `
 
 | Item | Current state |
 |---|---|
-| Current wave | **none running**. L15 CLOSED 2026-11-20 (L15-UM, scope (a)). Every other Lean item stays FROZEN (Le, 2026-11-13); UM-3 is a possible follow-up wave on Le's word |
+| Current wave | **L16 APPROVED** (Le, 2026-11-20, default answers to all twelve decisions): compactness probes on <MACHINE>, then launch. L15 CLOSED 2026-11-20. Other Lean items stay FROZEN |
 | Last closed gate | **L15**, closed by Le 2026-11-20 at dev `18c5c1d` (tag `L15-gate`; receipts `4648b3c`; Easley evidence `c081b0d`; gate record `54d3313`; post-gate docs-only repairs `069d88f`, `09d3406` = dev main). Previous: L13 and L14 at `8f51004` |
 | Manuscript anchor | Companion line citations anchored to `39f2597a` (R; re-anchor reviewed and accepted with v0.10.0; dev tag `reanchor-39f2597a` on `402b646`). Book releases: v1.0.0 = original `86cf977b` (public `51a02011`, tag commit `643d1dcc`), v1.0.1 (public `a1c1a8e6`), v1.0.2 = original `c3c2431d` (public `a9d147d8`, tag commit `42fd6a0e`). R to v1.0.2 changes no cited line for v0.10.0 (zero-shift checks of every candidate F, G, 1.0.1, 1.0.2). R itself is a dropped merge in the public history; its TeX equals public `a6fc8b9b` |
 | Companion | PUBLIC: v0.10.0 (L14), `chenle02/stratonovich-ham-second-moment-lean`, tag `v0.10.0` on `261cc68`; version DOI 10.5281/zenodo.24295453, concept 10.5281/zenodo.24199104. main `d659c59` (docs-only since the tag: book release note, arXiv pin `arXiv:2611.23014v1` in coverage.yaml, book site and concept DOI 10.5281/zenodo.24342309 in README and CITATION.cff); gh-pages `a265332`. lean-pkg registry: status **public**, promoted at `dc46f3a` (2026-11-18). Development: `...-lean-dev` (PRIVATE), dev main `e9f7bf6`, branch `reanchor-39f2597a` `402b646` |
@@ -38,8 +38,8 @@ Last updated: 2026-11-20: **wave L15 gate CLOSED by Le** at dev `18c5c1d` (tag `
 | Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
 | Compute | Office (36 cores, 62 GB, 258 GB free, load below 1 on 2026-11-18) hosts L15; Easley only via <MACHINE> (Le, 2026-11-13). `lean-pkg page --site` on the full package takes 2 h 20 min to 2 h 40 min on <MACHINE>; start it right after the last coverage or claims change |
-| Decisions open for Le | a companion release v0.11.0 (L15) or not; UM-3 as a follow-up wave; release of gaussian-chaos-lean (would open D1, K9; frozen) |
-| Next actions | none running. After #16 lifts the book-origin freeze: push this record. On Le's word: v0.11.0 (re-anchor to the then-current book release, public candidate, receipts, Zenodo) |
+| Decisions open for Le | the L16 gate (when reached); v0.11.0 after the L16 gate (L16 decision 10: one release covering L15 and L16); release of gaussian-chaos-lean (frozen) |
+| Next actions | probes -> L16-0 interface -> parallel items A1/A2/B1/B2/C/D on <MACHINE> -> L16 gate. After #16 lifts the book-origin freeze: push the held records |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
 
@@ -779,6 +779,263 @@ Last updated: 2026-11-20: **wave L15 gate CLOSED by Le** at dev `18c5c1d` (tag `
   dependencies fixed when L15 is proposed (line refs re-pinned by R0). Other
   L15 candidates noted in L12/L13: C8-C10 beyond F1,
   `L:pairing-product-envelope`.
+- **WAVE L16: APPROVED by Le (2026-11-20) as proposed, with the default answers to all twelve decisions.** Le, verbatim: "I approve L16 as proposed with the default answers to all twelve decisions. Put the proposal into lean-progress/PROGRESS.md on the held branch, run the two compactness probes on <MACHINE> (L²-kernel compactness and CFC.sqrt), report the results, then launch L16." Launch after the probe results.
+  Proposal as written (#22, 2026-11-20): Le, verbatim: "Shall we
+  prepare L16 now?" Draft only: nothing is built, no repository is changed. The
+  Lean track stays FROZEN (Le, 2026-11-13) except items Le approves one by one;
+  this proposal asks for one such approval.
+
+  **Scope.** Core: discharge the two named inputs L15 left supplied,
+  `CameronSpatialMap` and `UniformMeanRegulator`
+  (`StratonovichHAMSecondMoment/UniformMeanInterface.lean`, frozen at dev
+  `06c3c6a`), by constructing T_R, C_t and U (the TeX's C_t (x) I) and proving
+  the facts the structures carry. Then `L:positive-raw-embedding` can move from
+  narrower with inputs supplied to whole, and the Cameron-map chain moves from
+  not formalized. Stays FROZEN: C8-C10 beyond F1; `L:pairing-product-envelope`
+  (an L17 candidate); everything needing gaussian-chaos-lean (D1, D5, K9); the
+  projection and tail half of `P:uniform-mean-regulator` (decision 9). Optional,
+  only with spare capacity: `L:translated-covariance-CS` (decision 2).
+
+  **Note on the L15 estimate.** L15's UM-3 row (2500-4000 lines) listed only
+  `P:cameron-spatial-map` and the four uniform-mean results. Discharging the
+  structures as frozen also needs `L:cameron-fractional-products` (the bound
+  that makes T_R bounded), the compactness sentence of
+  `P:cutoff-singular-values` (for `isCompactOperator_T` and
+  `isCompactOperator_apply`), `P:cameron-temporal-map` (the field `Ct`, its
+  compactness and `Ct_test`) and the U part of `P:cameron-full-mean` (`U`,
+  `U_tensor`). The sizes below include them, so they are larger than L15's row.
+
+  **Anchor check (2026-11-20).** Revisions: v1.0.2 = original `c3c2431d` (L15's
+  anchor); v1.0.3 = `dd4f1a78` (#16's release SHA); 1.1.0 = held candidate
+  `0788ddee` (on origin master, not yet public). `git diff --numstat` on every
+  TeX file L16 would cite:
+
+  | File | c3c2431d..dd4f1a78 | dd4f1a78..0788ddee | What changed |
+  |---|---|---|---|
+  | `integrated_cameron_mean.tex` | identical | identical | none |
+  | `integrated_uniform_mean.tex` | identical | +14 / -3 | 1.1.0 displays the E inner product (lines 10-17) and states that the row `E:uniform-mean-row` holds for all z, w in E through the product map of `L:cameron-fractional-products` (lines 28-32). Lines after 10 shift by +7 (the row) and +11 (from line 23 on) |
+  | `integrated_uniform_products.tex` | identical | +3 / -1 | `L:uniform-E-lift` now states the tie Mu = Vu on tests and the continuous extension (L15 issue 1); lines after 36 shift by +2. Not an L16 target; cited by the L15 modules |
+  | `integrated_intrinsic_constant.tex` | identical | identical | none |
+  | `integrated_compact_gaussian.tex` | identical | identical | none |
+  | `integrated_spatial_occupation.tex` | identical | identical | none |
+  | `notes_stratonovich_ham_second_moment.tex` | +1 / -1 | identical | title-page date (line 203) only; no cited line moves |
+
+  So for L16, v1.0.3 is line-identical to v1.0.2, and 1.1.0 differs only in the
+  two uniform files. Line ranges (statement; proof):
+
+  | Label | File | at c3c2431d (= v1.0.3) | at 0788ddee (1.1.0) |
+  |---|---|---|---|
+  | `L:cameron-fractional-products` | cameron_mean | 29-42; 44-99 | same |
+  | `P:cameron-spatial-map` (`E:cameron-spatial-row` 113-118) | cameron_mean | 104-119; 121-186 | same |
+  | `L:cameron-supported-tensor` (not targeted) | cameron_mean | 194-200; 202-220 | same |
+  | `P:cameron-temporal-map` | cameron_mean | 225-237; 239-314 | same |
+  | `P:cameron-full-mean` (U part) | cameron_mean | 322-342; 344-408 | same |
+  | `E:uniform-mean-row` (equation; following sentence) | uniform_mean | 15-19; 20-21 | 22-26; 28-32 |
+  | `L:uniform-mean-cutoff` | uniform_mean | 29-42; 44-62 | 40-53; 55-73 |
+  | `L:uniform-mean-spatial-tails` (optional, decision 9) | uniform_mean | 70-88; 90-179 | 81-99; 101-190 |
+  | `L:uniform-mean-tensor` | uniform_mean | 187-195; 197-244 | 198-206; 208-255 |
+  | `P:uniform-mean-regulator` (`E:uniform-completed-mean` 271 / 282) | uniform_mean | 261-277; 279-323 | 272-288; 290-334 |
+  | `L:uniform-E-lift` (cited, not targeted) | uniform_products | 33-44; 46-67 | 33-46; 48-69 |
+  | `L:positive-raw-embedding` (`E:positive-raw-mean` 34) | intrinsic_constant | 23-40; 42-132 | same |
+  | `P:cutoff-singular-values` (compactness sentence) | compact_gaussian | 469-479; 481-557 | same |
+  | `P:spatial-four-linear` (already whole; used) | spatial_occupation | 297-315; 317-398 | same |
+  | `L:translated-covariance-CS` (optional) | main | 1186-1197; 1199-1297 | same |
+  | `L:pairing-product-envelope` (not in L16) | main | 1489-1500; 1502-1639 | same |
+
+  Recommendation: anchor new L16 citations to 1.1.0 (`0788ddee`; public SHA
+  recorded when #16 releases it). Reasons: 1.1.0 is the text that states the
+  rough-state row L16 proves and displays the E inner product the Lean already
+  uses, and it carries L15's three presentation fixes. In the same docs pass,
+  re-anchor L15's citations from c3c2431d to 1.1.0. These are mechanical shifts:
+  uniform_mean +7 or +11 and uniform_products +2. The text of `L:uniform-E-lift`
+  also changes, which removes L15 interface issue 1. If 1.1.0 is not public when
+  L16 docs freeze, cite c3c2431d (= v1.0.3 for these files) and re-anchor at the
+  release (decision 3).
+
+  **What each target needs, and what the companion already has.**
+  - Already in the companion (dev main `09d3406`): `Hhalf`, `Hmhalf`, `lam`,
+    `E`, `BE`, `IsMultiplier`, density of real tests, `exists_isMultiplier`
+    (UM-0, `UniformMeanFoundation`, 795 lines); `coord sigma` is already defined
+    for every real sigma, so H^s for alpha/4 < s < 1/2 needs no new model.
+    `OccupationCompletion`: `Hsp S`, `Ht p`, `HI p S`, `J`, `incl`,
+    `separableSpace_Hsp`, `dense_range_toHsp`. `PositiveRawMean`: `kBochner`,
+    `inclTwo`, `U_incl_ae`, `inner_kBochner_toHsp`, `T_eq_BE`. `P:spatial-four-linear`
+    is whole (wave L14). `MaskedAuxiliaryNorm.peetre` is Peetre's inequality.
+    `TimeSchur.kern` and the row bound `row_le` exist. `FiniteGaussianMatrix`
+    has Hermitian diagonalization.
+  - Needed for `CameronSpatialMap` (E part): (i) the fractional product bound
+    `||fg||_Hsp <= A_s ||f||_{H^s} ||g||_{H^s}` (dyadic real Fourier bands, each
+    band in H^1, summed through `P:spatial-four-linear`); (ii) the uniform
+    cutoff multiplier bound M_sigma (Peetre, `L:uniform-mean-cutoff`), giving
+    `||k_R(z,w)|| <= M_0 ||z|| ||w||`; (iii) T_R defined from the bounded
+    bilinear row by Riesz, the row on all states, and the smooth-test multiplier
+    formula; (iv) compactness of each T_R q (cutoff gain one) and of the map
+    q -> T_R q (finite-rank approximation through an orthonormal basis of the
+    separable `Hsp S`, uniform on the compact set of rows). (iv) needs
+    compactness of the cutoff multiplication `chi Lambda^(-gamma)`, which is
+    the risky part.
+  - Needed for `UniformMeanRegulator`: (v) C_t on `Ht p`: K bounded on L^2(I)
+    (Schur), positive and injective, compact (truncation K_eps, L^2 kernel);
+    the isometry iota with `||K^(1/2) f||_2 = ||f||_Ht` on tests; the L^r bound
+    by the three-exponent Hoelder form of Young (TeX lines 280-293) and the
+    pointwise-direction duality; compactness into L^r by interpolation;
+    `Ct_test`. (vi) U on `HI p S` with `U_tensor` and `||U|| <= ||C_t||`, either
+    through `L:uniform-mean-tensor` (Gaussian moment route, as in the TeX) or
+    through a shorter route specific to this kernel: duality plus pointwise
+    positivity of K gives
+    `int int K <g_s, g_t> <= int int K ||g_s|| ||g_t||` (decision 5).
+    (vii) `mean_bound` from `||T_R|| <= M_0` uniformly in R >= 1 and (vi).
+  - Decoupling. `positive_raw_mean_paper` uses T, `row`, `smooth`, U,
+    `U_tensor` and the L^r bound, never the compactness fields. L16-D therefore
+    proves `E:positive-raw-mean` for the constructed maps directly. Then
+    `L:positive-raw-embedding` does not depend on the compactness risk in (iv)
+    and (v).
+
+  | Item | Target (1.1.0 lines) | Deliverable | Class after (fallback) | Size on <MACHINE> (estimate) |
+  |---|---|---|---|---|
+  | L16-0 (orchestrator, first) | interface | frozen signatures: H^s spaces as `coord s` (Hermitian classes) with the embeddings H^(1/2) -> H^s (norm one) and `Lambda^(-1)` isometry; the constructors `cameronSpatialMap` and `uniformMeanRegulator` as the targets; the fallback named inputs `CutoffCompact` and `TemporalCompact`, each the exact compactness sentence of its TeX result; the direct theorem `positive_raw_embedding_constructed`; every instance named (no anonymous `instance :`) | infrastructure; a short design note `docs/l16/INTERFACE.md` | 300-600 Lean lines; about 0.5 h agent time plus the orchestrator's cold read (L15: 480 lines, about 20 min) |
+  | L16-A1 | `L:uniform-mean-cutoff` (40-73) | M_sigma for every real sigma, uniform in R >= 1 (Peetre, `eta_R` hat scaling, L^1 * L^2 on the Fourier side, density); `||k_R|| <= M_0 ||z|| ||w||`, `||T_R|| <= M_0` (the second half after B2) | whole (fallback: sigma = +-1/2 only, narrower) | 400-800 |
+  | L16-A2 | `L:cameron-fractional-products` (cameron 29-99) | real dyadic bands D_j f in H^1 (L^2 Plancherel `Lp.fourierTransformₗᵢ` to `WeakSobolev.MemH1`), `N(f_j) <= 2^(j alpha/4) ||f_j||_2`, `sum_j N(f_j) <= C_s ||f||_{H^s}`; the product map H^s x H^s -> Hsp with both displays and the identification of pairings with physical integrals | whole (fallback: the bound and the extension, pairings identified only for H^1 factors, narrower) | 900-1600 |
+  | L16-B1 | compactness foundation; `P:cutoff-singular-values` (compact_gaussian 469-557), compactness sentence only | integral operators with L^2 kernel are compact (norm <= L^2 norm of the kernel; finite separated kernels dense; `isCompactOperator_of_tendsto`); `chi Lambda^(-gamma)` compact on H^sigma by a Fourier band cutoff (error <= N^(-gamma)) plus an L^2-kernel remainder; shared with C | `P:cutoff-singular-values` narrower: compactness, no s_j rate, no Schatten class (fallback: named input `CutoffCompact`, true) | 600-1200 (risk: high) |
+  | L16-B2 | `P:cameron-spatial-map` (cameron 104-186), `E:uniform-mean-row` (22-32) | T_R by Riesz from the row; the row for all z, w in E; null classes to zero; `smooth`; compact values; compactness of the map (orthonormal basis of `Hsp S` by Gram-Schmidt on tests, finite-net argument); `cameronSpatialMap : CameronSpatialMap S eta R` | narrower: E part only (F columns, c_1 eta_R term and B_F not formalized; decision 8) (fallback: compactness fields from `CutoffCompact`, inputs-supplied) | 800-1400 |
+  | L16-C | `P:cameron-temporal-map` (cameron 225-314) | Schur bound; strict positivity and injectivity (Gamma representation, Fourier form of e^(-lambda abs v)); compactness of K (truncation plus L^2 kernel, from B1); K^(1/2) by `CFC.sqrt` and its compactness (polynomial approximation through `cfc` continuity, closedness of compact operators); iota on `Ht p`; L^r bound (Hoelder form of Young, duality); interpolation; `Ct_test`; the divergence of finite orthonormal cell sums (not trace class, decision 7) | whole (fallback: narrower without the trace sentence; compactness from named input `TemporalCompact`) | 1200-2200 (risk: high) |
+  | L16-D | `L:uniform-mean-tensor` (198-255), `P:uniform-mean-regulator` (272-334, first display), U part of `P:cameron-full-mean` (322-408), `L:positive-raw-embedding` (intrinsic 23-132) | U on `HI p S` through `kBochner` and density of `J`, `U_tensor`, `||U|| <= ||C_t||` (decision 5); `uniformMeanRegulator`; `mean_bound`; `positive_raw_embedding_constructed` (E:positive-raw-mean for the constructed T_R(C_t (x) I), a.e., with the canonical version) | `L:positive-raw-embedding` -> whole if the review accepts the canonical-version reading (L15 4b-F1 concerned exactly that sentence; fallback: narrower, "version agrees a.e., no measurability clause", nothing supplied); `P:uniform-mean-regulator` narrower (first bound and value class; projection/tail half out); `P:cameron-full-mean` proof steps (U and its bound); `L:uniform-mean-tensor` whole on the Gaussian route (fallback: not formalized, the kernel-positivity route used and disclosed) | 700-1300; Gaussian route +400-800 |
+  | L16-R1 (<MACHINE>, docs) | all L15 citations | re-anchor of L15 citations c3c2431d -> 1.1.0 with the reviewed re-anchor tool (shifts above) | no class change | docs only |
+  | L16-E (optional, spare capacity) | `L:translated-covariance-CS` (main 1186-1297) | Hilbert features h_lambda(t,r) e^(i xi.x) in L^2(nu x mu x dr), Bochner pairing, Cauchy-Schwarz, translation invariance, positive cap limit | whole (fallback: at finite cap only, narrower) | 500-900 |
+
+  Totals (estimates, not measurements): core (L16-0..D) 4,900-9,100 Lean lines,
+  plus 400-800 if L:uniform-mean-tensor takes the Gaussian route, plus 500-900
+  for the optional E. For comparison, L15 estimated 1,400-2,400 lines and
+  produced 2,234. Agent time: at L15's measured pace (UM-0/UM-1, 795 + 326
+  lines, and UM-2, 633 lines, each in about 30 min) the core is a few hours of
+  agent time. The analytic gaps below make that pace unlikely for B1 and C, so
+  I estimate 1-2 days of wall time for the build with 4 agents in parallel,
+  including integration. Add about one day for the gate: two receipt tiers of
+  about 1 h 10 min each at L15 (longer with more claims), the Easley replay,
+  and 2-3 review and repair rounds. Total 2.5-4 days. Labelled results
+  expected to move from not formalized: up to 8 (`L:cameron-fractional-products`,
+  `P:cameron-spatial-map`, `P:cutoff-singular-values`, `P:cameron-temporal-map`,
+  `P:cameron-full-mean`, `L:uniform-mean-cutoff`, `L:uniform-mean-tensor`,
+  `P:uniform-mean-regulator`), plus `L:translated-covariance-CS` if E runs. One
+  result is expected to upgrade: `L:positive-raw-embedding`.
+
+  **Where Mathlib (pin `56a0058`) lacks something, and the fallback.**
+  1. Compactness of integral operators with an L^2 kernel: Mathlib has no
+     Hilbert-Schmidt class, no Rellich-Kondrachov and no compactness for
+     cutoff multipliers. It does have `isCompactOperator_of_tendsto` and closed
+     compact operators. B1 builds the L^2-kernel lemma (the main risk).
+     Fallback: the true named input `CutoffCompact` (the compactness sentence
+     of `P:cutoff-singular-values`). `P:cameron-spatial-map` then becomes
+     inputs-supplied. `L:positive-raw-embedding` is unaffected (decoupled).
+  2. There is no spectral theorem for compact self-adjoint operators in
+     infinite dimension, and nothing says the square root of a compact
+     positive operator is compact. `CFC.sqrt` exists on the C*-algebra of
+     operators. The compactness of the root comes from polynomial approximation
+     (Weierstrass on the spectrum, p(0) = 0). Fallback: `TemporalCompact`
+     (compactness of C_t into L^r, true), with `P:cameron-temporal-map`
+     inputs-supplied.
+  3. Young's convolution inequality is absent (only the Hoelder integrand
+     bound `eLpNorm_convolution_integrand_le`). The TeX proves the needed case
+     by a three-exponent Hoelder argument, which C formalizes directly (risk:
+     medium-low). L^p-L^q duality uses the pointwise direction
+     `|g|^(r-2) g`, as the TeX does.
+  4. No completed Hilbert tensor product exists (`InnerProductSpace/TensorProduct`
+     is algebraic). Model choice M5 (H_I as the kernel completion) avoids it
+     for U. The projection half of `P:uniform-mean-regulator` (pi_J (x) P_K)
+     still needs H_I = H_t (x) H_sp (`L:cameron-supported-tensor`), so it stays
+     out (decision 9).
+  5. The Gaussian route of `L:uniform-mean-tensor` needs rotation invariance or
+     diagonalization of a finite Gaussian sum in a Hilbert space. `gaussianReal`
+     and independence exist, and `FiniteGaussianMatrix` diagonalizes Hermitian
+     matrices, but the Hilbert-space Gaussian layer is thin. Fallback: the
+     kernel-positivity route (decision 5).
+  6. Bridge risk in A2: real band-limited L^2 functions must be shown to lie
+     in the companion's H^1 model (M6, the weak-gradient graph) with the
+     gradient bound. Plancherel on L^2 exists. L15's `testSchwartz` and
+     `norm_toH1_sq_le_manuscript` help. Risk: medium.
+  Overall risk: medium-high for the compactness fields (B1, C), medium for A2,
+  low for A1 and D. The most likely bad outcome is that the core lands with one
+  or two narrow compactness inputs, while `L:positive-raw-embedding` is still
+  whole.
+
+  **Gate (as L15, with its lessons).** Local compile on <MACHINE> first; an Easley
+  stage-2 pre-gate replay of the integration commit (new modules only). At the
+  gate commit: claims synced, then the scratch-registry `gate --check`
+  BEFORE the receipts are cut (and again after every docs-only commit);
+  lower-tier receipt and comparator receipt; COMPLETION.md regenerated
+  (milestone `L16-gate`); coverage rows and statement-ledger rows, with
+  named-input entries for any fallback, citing per field the TeX lines
+  (statement or proof) that establish it (L15 note N3.1-N3.3). Instance rule:
+  every instance in a claimed module is named. A lint finds zero anonymous
+  `instance :` in the new modules before claims sync; L15 dropped nine claims
+  that named Lean-generated instances. Easley `leanchecker --fresh` of the
+  new modules plus default mode over all modules. Correspondence review:
+  statement scopes by DeepSeek V4 Pro (tool-denied, one attempt per scope,
+  SessionRetry disclosed), with packets split to fit (L15 scope 4: 134 KB
+  packet, three NO_REPORT at the 32000-token output cap) or with a raised
+  output cap. Documentation scopes (ledger, coverage, COMPLETION, counts) by
+  GPT-6.2-Sol via Codex (own codex-home, effort high), as Le chose for L15
+  scope 4. Confirmation rounds use the same route; at most two repair rounds.
+  The gate record goes on a held lean-progress branch while #16's book-origin
+  freeze holds. <HUB> is synced after every push. Le closes the gate; tag
+  `L16-gate`.
+
+  Decisions for Le (defaults in brackets):
+  1. Scope: (a) the core L16-0..D plus R1; (b) also the optional E
+     (`L:translated-covariance-CS`); (c) also `L:uniform-mean-spatial-tails`.
+     [(a); E only if an agent is idle after its core item]
+  2. Other candidates: C8-C10 beyond F1 stay frozen. They shrink the input
+     lists of `C:static-interaction` and `P:static-phase-all-orders` and change
+     no class; `CPInputs` is the imported Crouzeix-Palencia theorem, which
+     Mathlib lacks. `L:pairing-product-envelope` (150 TeX lines of diagram
+     induction on the L13 `DiagramModel`, est. 1,500-3,000 lines, high risk)
+     goes to a later wave with `L:translated-covariance-CS` as its first item.
+     D1, D5 and K9 stay out. [yes]
+  3. Anchor: new L16 citations to 1.1.0 (`0788ddee`, public SHA when released),
+     and L15's citations re-anchored to 1.1.0 in R1; if 1.1.0 is not public
+     at the docs freeze, cite c3c2431d (= v1.0.3 for these files) and
+     re-anchor at the release. The rest of the companion stays on R
+     `39f2597a` until the next release re-anchor. [yes]
+  4. Host and agents: Office, 4 agents in worktrees (A: A1, A2; B: B1, B2;
+     C: C; D: D, starting against the frozen signatures as UM-2 did with
+     `UM0Facts`), `office-build.sh` (8G cap, `LEAN_NUM_THREADS` <= 8); local
+     compile first; Easley via <MACHINE> only for the gate replay; Mathlib pin
+     unchanged. [yes]
+  5. Route for ||U|| <= ||C_t||: try the TeX's Gaussian route for
+     `L:uniform-mean-tensor` (general A); if it is not done when B and C land,
+     use the kernel-positivity route, disclose it, and leave
+     `L:uniform-mean-tensor` not formalized. [yes]
+  6. Fallbacks: only true named inputs (`CutoffCompact`, `TemporalCompact`,
+     each the exact TeX sentence), never surrogates. `L:positive-raw-embedding`
+     is pursued as whole independently of them. [yes]
+  7. "Not trace class" in `P:cameron-temporal-map`: Mathlib has no trace
+     class, so formalize it as divergence of the finite orthonormal sums
+     (cell indicators). For a positive operator that characterizes infinite
+     trace, and it is recorded in the model-choice register. [yes]
+  8. `P:cameron-spatial-map`: E part only. The F columns, B_F (which needs
+     `L:constant-source-response`) and L_F are not formalized, so the result
+     is narrower. [yes; F later only if a downstream result needs it]
+  9. The projection and tail half of `P:uniform-mean-regulator` and
+     `L:uniform-mean-spatial-tails` stay out. They need H_I = H_t (x) H_sp,
+     which Mathlib cannot express without a completed tensor product. [out;
+     a later-wave candidate]
+  10. Review routes: statements by DeepSeek V4 Pro, with split packets or a
+      raised output cap; documentation by GPT-6.2-Sol via Codex. [yes]
+  11. Release: one companion release v0.11.0 after the L16 gate, covering L15
+      and L16, re-anchored to the then-public book release, with receipts,
+      Zenodo and `lean-pkg page --site` (2 h 20 min to 2 h 40 min on <MACHINE>).
+      This replaces the open L15 v0.11.0 question. The book keeps pinning
+      v0.10.0 until a book release re-pins Appendix F. [v0.11.0 after L16; no
+      book re-pin by default]
+  12. Any manuscript defect L16 finds is recorded and routed to #3 for a book
+      patch release (1.1.x). Lean never narrows a statement to hide it. [yes]
+
+  Could not be determined from the records: the exact contents of C8-C10.
+  L12's DEBT.md was session scratch and was not found. They are identified
+  here from the L12 F1 row and the ledger's remaining inputs of
+  `C:static-interaction` and `P:static-phase-all-orders`. Also unknown: whether
+  the DeepSeek route can raise its 32000-token output cap, and Office's load at
+  launch time. Check it then.
 - **WAVE L15: APPROVED by Le (2026-11-19) as proposed, with the default answers to all seven decisions.** Le, verbatim: "I approve L15 as proposed with the default answers to all seven decisions (scope (a) first). Push cc1182dd with the guard, sync <HUB>, then launch L15-UM on <MACHINE>." Scope (a): UM-0..UM-2, one agent; UM-3 is a later follow-up. Launched on <MACHINE> 2026-11-19.
   **L15 interface frozen (2026-11-20)** at dev `06c3c6a` (branch `wave-l15/iface`;
   `UniformMeanInterface.lean`, 480 lines, Office build 0 warnings, no sorry,
