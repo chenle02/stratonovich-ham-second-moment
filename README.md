@@ -2,7 +2,7 @@
 
 *Second Moment and Exact Asymptotics*
 
-[![Version 1.0.2](https://img.shields.io/badge/version-1.0.2-blue)](CHANGELOG.md)
+[![Version 1.0.3](https://img.shields.io/badge/version-1.0.3-blue)](CHANGELOG.md)
 [![Text: CC BY 4.0](https://img.shields.io/badge/text-CC%20BY%204.0-lightgrey)](LICENSE)
 [![Code: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-lightgrey)](LICENSES/Apache-2.0.txt)
 [![Book site](https://img.shields.io/badge/book-site-blue)](https://chenle02.github.io/stratonovich-ham-second-moment/)
@@ -33,7 +33,7 @@ We study the hyperbolic Anderson model, the stochastic wave equation
 $\partial_t^2 u = \Delta u + u\,\dot W$ in dimensions one to three, with initial
 data $(1,0)$, in the Stratonovich sense. The Gaussian noise has temporal
 covariance $|s-t|^{-\alpha_0}$ and a homogeneous spatial covariance of order
-$\alpha$. The paper identifies the large-time behaviour of the second moment at
+$-\alpha$. The paper identifies the large-time behaviour of the second moment at
 the scale $t^{\kappa}$, $\kappa = (4-\alpha-\alpha_0)/(3-\alpha)$, with an
 intrinsic constant given by an explicit variational formula.
 

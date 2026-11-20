@@ -5,7 +5,31 @@ MINOR changes the mathematics but not the statement of any main theorem, and
 PATCH changes no mathematics. Results are named by label; labels do not change
 between versions, numbers may.
 
-## 1.0.2 — <!--s:release.date-->2026-11-18<!--/s-->
+## 1.0.3 — <!--s:release.date-->2026-11-20<!--/s-->
+
+Patch release: no mathematics changed.
+
+- **Citation metadata:** the `message` in `CITATION.cff` no longer says the
+  paper's arXiv citation "is added after posting"; it names the arXiv preprint
+  arXiv:2611.23014 and the Zenodo DOI 10.5281/zenodo.24342309 (all versions).
+- **Wording:** the README says that the spatial covariance is homogeneous of
+  order $-\alpha$, as in the book and the arXiv abstract (it said "of order
+  $\alpha$").
+- **Changelog record:** the 1.0.2 entry gives its version DOI,
+  10.5281/zenodo.24371883.
+- **Lean records:** `lean-progress/` records the approval and launch of the
+  Lean companion's wave L15 (the companion's own release is unchanged,
+  v0.10.0).
+- **Version and date** on the title page, the imprint and the reading edition,
+  and the release links in the preface, Appendix G and the AI-use statement,
+  now name 1.0.3.
+- **Contributors:** Le Chen, with Amy (his AI research system); no outside
+  contributions. **Verification ledger:** no status changed.
+- **Archive:** tag `v1.0.3`; Zenodo, all versions:
+  [10.5281/zenodo.24342309](https://doi.org/10.5281/zenodo.24342309) (the
+  version DOI of 1.0.3 is assigned on release).
+
+## 1.0.2 — 2026-11-18
 
 Patch release: no mathematics changed.
 
