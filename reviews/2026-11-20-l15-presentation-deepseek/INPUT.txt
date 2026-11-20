@@ -1,0 +1,936 @@
+# Assigned task: three presentation fixes in the Stratonovich HAM book (candidate 1.1.0)
+
+You are an independent mathematical reviewer. Read only the frozen material below.
+Three edits were made to statements and setup text; no proof body was changed.
+For EACH edit, decide independently:
+
+(a) Truth: is the NEW statement or display true under the hypotheses and conventions
+    in force at that point (domains, function spaces, norms, the operator Lambda =
+    (1-Delta)^{1/2}, the unitary J_0, the cutoffs eta_R and m_R)?
+(b) Support: is every new assertion proved by the EXISTING proof text or by a cited,
+    supplied statement? Name the lines that prove it. A new assertion that no supplied
+    text proves is a finding.
+(c) Faithfulness: does the edit match what the existing proofs and later uses actually
+    need, without strengthening or weakening the lemma or adding a hidden assumption?
+    In particular:
+    1. L:uniform-E-lift: does "Mu = Vu as distributions for every u in C_c^infty" plus
+       continuous extension characterize V uniquely (uniqueness argument), and is the
+       product Vu for V in H^{-1/2} and smooth compactly supported u well defined?
+       Does the existing proof (construction of chi_R, M chi_R = V) establish exactly this?
+    2. E:uniform-mean-row: is the product (eta_R z_1)(eta_R Lambda^{-1} w_2) for
+       z, w in E covered by L:cameron-fractional-products (check the exponent range
+       alpha/4 < s < 1/2, why both factors lie in H^{1/2} and hence H^s, and that the
+       product lands in H_sp)? Is "continuous H_sp-valued product" what that lemma gives?
+    3. The displayed real inner product on E = H^{1/2} x H^{-1/2}: is it the one fixed by
+       the norm convention on H^r and by J_0 being unitary, and is it consistent with the
+       Lambda^{-1} factor in the velocity entry of the row?
+(d) Placement and notation: is every symbol defined before use where it now appears?
+
+Do not edit, propose unrelated repairs, or certify the whole book.
+
+## Output
+
+First two lines exactly:
+Verdict: PASS | PASS_WITH_NOTES | FAIL | INCONCLUSIVE
+Confidence: high | medium | low
+
+Then one section per edit, "## Edit 1", "## Edit 2", "## Edit 3", each with:
+- Reading: COMPLETE | PARTIAL
+- Truth: CORRECT | INCORRECT | UNCERTAIN
+- Support: SUPPORTED | UNSUPPORTED | UNCERTAIN (with the supporting lines)
+- Faithfulness: FAITHFUL | CHANGED | UNCERTAIN
+- Evidence: concrete working.
+- Findings: or "none identified within this read".
+End with "## Findings and limits". About 2,500 words.
+
+# Frozen material (candidate 8542d07e on base dd4f1a785741)
+
+## The three edits (git diff, OLD -> NEW)
+```diff
+diff --git a/notes/integrated_uniform_mean.tex b/notes/integrated_uniform_mean.tex
+index 9d04012c..8fd89762 100644
+--- a/notes/integrated_uniform_mean.tex
++++ b/notes/integrated_uniform_mean.tex
+@@ -7,8 +7,15 @@ Section~\ref{S:actual-cameron-mean}. Fix $\alpha/4 < s < 1/2$ and put $\beta =
+ in~\eqref{E:cameron-fractional-product}. Choose a real even smooth compact
+ $\eta$, equal to one on the unit ball, with $0 \le \eta \le 1$ and support in
+ the closed radius-two ball. For $R \ge 1$ set $\eta_R(x) = \eta(x/R)$ and $m_R =
+-\eta_R^2$. In this section the mean acts on $E = H^{1/2}\times H^{-1/2}$. The
+-constant data columns belong to $F$, outside $E$. All uniform-radius claims
++\eta_R^2$. In this section the mean acts on $E = H^{1/2}\times H^{-1/2}$,
++with the real inner product
++\[
++  \langle z,w\rangle_E
++  =\langle\Lambda^{1/2}z_1,\Lambda^{1/2}w_1\rangle_{L^2}
++  +\langle\Lambda^{-1/2}z_2,\Lambda^{-1/2}w_2\rangle_{L^2},
++  \qquad \Lambda=(1-\Delta)^{1/2}.
++\]
++The constant data columns belong to $F$, outside $E$. All uniform-radius claims
+ below concern $E$. The spatial map $T_R:H_{\mathrm{sp}} \to \mathcal{K}(E)$ is
+ the $E$ restriction of Proposition~\ref{P:cameron-spatial-map}. Its explicit row
+ is
+@@ -18,7 +25,11 @@ is
+   \qquad
+   k_R(z,w)=(\eta_Rz_1)(\eta_R\Lambda^{-1}w_2).
+ \end{equation}
+-Thus, the physical mask occurs once, after covariance convolution.
++Here $q \in H_{\mathrm{sp}}$ and $z,w \in E$; the product defining
++$k_R(z,w)$ is the continuous $H_{\mathrm{sp}}$-valued product of
++Lemma~\ref{L:cameron-fractional-products}. Its factors lie in $H^{1/2}$
++and hence in $H^s$. Thus, the physical mask occurs once, after covariance
++convolution.
+ 
+ \subsection{Uniform multiplier and spatial tails}
+ 
+diff --git a/notes/integrated_uniform_products.tex b/notes/integrated_uniform_products.tex
+index 8608e8eb..63d8ad5c 100644
+--- a/notes/integrated_uniform_products.tex
++++ b/notes/integrated_uniform_products.tex
+@@ -33,7 +33,9 @@ be their operator-norm closure in $\mathcal{K}(E)$.
+ \begin{lemma}[Unique potential and fixed-radius lift]\label{L:uniform-E-lift}
+   Each $L \in \mathcal{V}_{E,R}$ has the form $L(u,v) = (0,Mu)$, with $\|L\| =
+   \|M\| = :k$, and determines a unique real $V \in H^{-1/2}$ supported in
+-  $\operatorname{supp}m_R$. The symmetric pairing satisfies
++  $\operatorname{supp}m_R$ such that $Mu = Vu$ as distributions for every
++  $u \in C_c^\infty(\R^d)$. Multiplication by $V$ on these tests extends
++  continuously to $M:H^{1/2}\to H^{-1/2}$. The symmetric pairing satisfies
+   \begin{equation}\label{E:uniform-E-pairing}
+     |v_V(u,w)|\le k\|u\|_{H^{1/2}}\|w\|_{H^{1/2}} .
+   \end{equation}
+```
+
+## notes/integrated_uniform_products.tex lines 1-90 (NEW)
+```tex
+\section{Uniform spectral rates and phase products}
+\label{S:uniform-physical-products}
+
+Retain every original covariance and amplitude. Set $E = H^{1/2}\times
+H^{-1/2}$, $F = E\oplus\R^2$, and $m_R = \eta(\cdot/R)^2$, $R \ge 1$, with the
+same fixed cutoff profile. Choose
+\[
+  \begin{aligned}
+    &\frac12<\theta<\min(1-a/2,(3-a-\alpha)/2),\qquad \nu=1/\theta,\\
+    &(1-\theta)^{-1}<r<2/a,\qquad \nu\le p<2<r .
+  \end{aligned}
+\]
+Choose auxiliary exponents $0 < \gamma < \min(1/2,(2-\alpha)/2)$ and $\theta <
+\beta < \min(1-a/2,(3-a-\alpha)/2)$ for the phase construction. The original
+strict threshold makes these intervals nonempty. Write $i_I:H_I \to H_W$ for the
+supported closed inclusion. For nonzero covariance the field is
+\[
+  \mathcal{T}_R=T_R(C_t\otimes I_{H_{\rm sp}}),\qquad
+  \|\mathcal{T}_R\|_{H_I\to L^r(I;\mathcal{K}(E))}
+  \le C_{\rm mean}=M_0\|C_t\| ,
+\]
+by Proposition~\ref{P:uniform-mean-regulator}. For zero covariance set $H_{\rm
+sp} = H_I = \{0\}$ and $M_0 = C_{\rm mean} = 0$. Means and their rates are then
+zero, and mean flows are free; no nonzero-noise estimate is needed for that
+case. The residual comparisons below still act on the nonzero phase $E$.
+
+\subsection{The operator class on E and its spectral constants}
+
+For real smooth compact $q$ let $V_q = m_R(\Gamma*q)$, $M_q:H^{1/2} \to
+H^{-1/2}$ be its multiplier and $L_q^E(u,v) = (0,M_qu)$. Let $\mathcal{V}_{E,R}$
+be their operator-norm closure in $\mathcal{K}(E)$.
+
+\begin{lemma}[Unique potential and fixed-radius lift]\label{L:uniform-E-lift}
+  Each $L \in \mathcal{V}_{E,R}$ has the form $L(u,v) = (0,Mu)$, with $\|L\| =
+  \|M\| = :k$, and determines a unique real $V \in H^{-1/2}$ supported in
+  $\operatorname{supp}m_R$ such that $Mu = Vu$ as distributions for every
+  $u \in C_c^\infty(\R^d)$. Multiplication by $V$ on these tests extends
+  continuously to $M:H^{1/2}\to H^{-1/2}$. The symmetric pairing satisfies
+  \begin{equation}\label{E:uniform-E-pairing}
+    |v_V(u,w)|\le k\|u\|_{H^{1/2}}\|w\|_{H^{1/2}} .
+  \end{equation}
+  It has a lift $L_F$ in the exact class of Section~\ref{S:signed-static-wave},
+  with $L_Fi = iL$. Lift constants may depend on $R$ and are used only for
+  identification. Here $v_V(u,w) = \langle Vu,w\rangle_{H^{-1/2},H^{1/2}}$ on
+  real states, with its Hermitian extension on complex states.
+\end{lemma}
+
+\begin{proof}
+  For zero covariance, $L = M = V = L_F = 0$ gives the claims directly. If
+  $L_n^E \to L$, the zero columns persist and $M_n \to M$ in
+  $\mathcal{L}(H^{1/2},H^{-1/2})$, with the stated norm equality. At fixed $R$
+  choose real compact smooth $\chi_R = 1$ near $\operatorname{supp}m_R$. Since
+  $M_n\chi_R = V_n$, $\|V_n-V_j\|_{H^{-1/2}} \le
+  \|\chi_R\|_{H^{1/2}}\|M_n-M_j\|$. Thus, $V_n \to V$, with the same support by
+  testing outside it. Smooth multiplication on $H^{-1/2}$ identifies $Mu = Vu$
+  on compact tests, then on $H^{1/2}$ by density. The identity $M\chi_R = V$
+  gives uniqueness; symmetry and~\eqref{E:uniform-E-pairing} pass to the limit.
+
+  The original $F$ operators are $(u,v,c_1,c_2)\mapsto(0,M_nu+c_1V_n,0,0)$.
+  Their differences are bounded by $(1+\|\chi_R\|_{H^{1/2}})\|M_n-M_j\|$. They
+  therefore converge in the old $F$ class and give the lift. This bound is
+  allowed to grow with $R$; it will enter no uniform estimate. Dense smooth
+  original controls and bounded completion of $T_R$ also show that all completed
+  mean fields lie in $\mathcal{V}_{E,R}$ almost everywhere. Bochner averages
+  preserve this closed linear class. Complexification preserves $k$ by the
+  Hilbert real/imaginary splitting. The real symmetric pairing becomes Hermitian
+  and its diagonal splits into the two real diagonals. This proves
+  Lemma~\ref{L:uniform-E-lift}.
+\end{proof}
+
+\begin{proposition}[Spectral rate in E]\label{P:uniform-E-spectral}
+  For $L \in \mathcal{V}_{E,R}$ put
+  \[
+    \beta(V)=\inf_{\substack{u\in H^1\\\|u\|_2=1}}
+    \{\|\nabla u\|_2^2-v_V(u,u)\},\qquad \lambda(L)=\sqrt{-\beta(V)} .
+  \]
+  If $K \ge \max(1,k)$, the physical wave satisfies, for $t \ge 0$,
+  \begin{equation}\label{E:uniform-E-static-bound}
+    -K^2\le\beta(V)=\inf\operatorname{spec}H_V\le0,\qquad
+    \|P_V^E(t)\|\le8(1+K)^2(1+t)e^{\lambda(L)t}.
+  \end{equation}
+  If two such operators have norms at most $K$, then
+  \begin{equation}\label{E:uniform-E-rate-continuity}
+    |\beta(V)-\beta(W)|\le(K+2)\|L_V-L_W\|,\qquad
+    |\lambda(L_V)-\lambda(L_W)|
+    \le\sqrt{(K+2)\|L_V-L_W\|}.
+  \end{equation}
+  Every quantitative constant here uses the $E$ norm alone.
+\end{proposition}
+
+```
+
+## notes/integrated_uniform_mean.tex (NEW, complete)
+```tex
+\section{Mean and Cameron bounds uniform in the spatial radius}
+\label{S:uniform-mean-regulation}
+
+Retain the original nonzero covariance, amplitude and real spaces of
+Section~\ref{S:actual-cameron-mean}. Fix $\alpha/4 < s < 1/2$ and put $\beta =
+1/2-s > 0$. Write $A_s = C_s^2\sqrt{R_{\mathrm{sp}}}$ for the constant
+in~\eqref{E:cameron-fractional-product}. Choose a real even smooth compact
+$\eta$, equal to one on the unit ball, with $0 \le \eta \le 1$ and support in
+the closed radius-two ball. For $R \ge 1$ set $\eta_R(x) = \eta(x/R)$ and $m_R =
+\eta_R^2$. In this section the mean acts on $E = H^{1/2}\times H^{-1/2}$,
+with the real inner product
+\[
+  \langle z,w\rangle_E
+  =\langle\Lambda^{1/2}z_1,\Lambda^{1/2}w_1\rangle_{L^2}
+  +\langle\Lambda^{-1/2}z_2,\Lambda^{-1/2}w_2\rangle_{L^2},
+  \qquad \Lambda=(1-\Delta)^{1/2}.
+\]
+The constant data columns belong to $F$, outside $E$. All uniform-radius claims
+below concern $E$. The spatial map $T_R:H_{\mathrm{sp}} \to \mathcal{K}(E)$ is
+the $E$ restriction of Proposition~\ref{P:cameron-spatial-map}. Its explicit row
+is
+\begin{equation}\label{E:uniform-mean-row}
+  \langle T_Rqz,w\rangle_E
+  =\langle q,k_R(z,w)\rangle_{H_{\mathrm{sp}}},
+  \qquad
+  k_R(z,w)=(\eta_Rz_1)(\eta_R\Lambda^{-1}w_2).
+\end{equation}
+Here $q \in H_{\mathrm{sp}}$ and $z,w \in E$; the product defining
+$k_R(z,w)$ is the continuous $H_{\mathrm{sp}}$-valued product of
+Lemma~\ref{L:cameron-fractional-products}. Its factors lie in $H^{1/2}$
+and hence in $H^s$. Thus, the physical mask occurs once, after covariance
+convolution.
+
+\subsection{Uniform multiplier and spatial tails}
+
+We first bound the row $k_R$ in~\eqref{E:uniform-mean-row} uniformly in
+$R \ge 1$. Both factors of this row carry the cutoff $\eta_R$, so we start with
+its multiplier norm on $H^\sigma$.
+
+\begin{lemma}[Uniform cutoff and physical mean]\label{L:uniform-mean-cutoff}
+  For every real $\sigma$, multiplication by $\eta_R$ on $H^\sigma$ has norm at
+  most
+  \[
+    M_\sigma=2^{|\sigma|/2}(2\pi)^{-d/2}
+    \int_{\R^d}|\widehat{\eta}(p)|\langle p\rangle^{|\sigma|}\ud p,
+  \]
+  independently of $R \ge 1$. With $M = M_{1/2}$ and $M_0 = A_sM^2$,
+  \begin{equation}\label{E:uniform-spatial-mean}
+    \|k_R(z,w)\|_{H_{\mathrm{sp}}}
+    \le M_0\|z\|_E\|w\|_E,\qquad
+    \|T_R\|_{H_{\mathrm{sp}}\to\mathcal{L}(E)}\le M_0 .
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  Peetre's inequality bounds the weighted Fourier kernel for multiplication by
+  $\eta_R$ by convolution with
+  \[
+    2^{|\sigma|/2}(2\pi)^{-d/2}
+    |\widehat{\eta_R}(q)|\langle q\rangle^{|\sigma|}.
+  \]
+  Here $\widehat{\eta_R}(q) = R^d\widehat{\eta}(Rq)$. Substitution $p = Rq$ and
+  $\langle p/R\rangle \le \langle p\rangle$ bound its $L^1$ norm by $M_\sigma$.
+  The $L^1*L^2$ inequality proves the assertion on Schwartz functions and
+  density extends it to $H^\sigma$. The map $w_2\mapsto\Lambda^{-1}w_2$ is an
+  isometry from $H^{-1/2}$ to $H^{1/2}$, and $H^{1/2}\hookrightarrow H^s$ has
+  norm one. Apply the cutoff bound at $\sigma = 1/2$ and
+  Lemma~\ref{L:cameron-fractional-products} to the two factors
+  in~\eqref{E:uniform-mean-row}. Hilbert Cauchy--Schwarz then gives the operator
+  bound. This is the existing completed physical map: the row agrees on smooth
+  controls and hence on their completion. Its compact values at each fixed $R$
+  are retained. This proves Lemma~\ref{L:uniform-mean-cutoff}.
+\end{proof}
+
+Lemma~\ref{L:uniform-mean-cutoff} bounds $T_R$ on all of $H_{\mathrm{sp}}$.
+The approximation in Proposition~\ref{P:uniform-mean-regulator} also needs
+$T_R$ to be small on high frequencies, uniformly in $R \ge 1$. We obtain this
+from a bound on $T_R(I-C_\varepsilon)$ for the heat contraction
+$C_\varepsilon$.
+
+\begin{lemma}[Uniform heat and frequency tails]
+  \label{L:uniform-mean-spatial-tails}
+  Let $C_\varepsilon$ be the covariance-Hilbert heat contraction with Fourier
+  multiplier $e^{-\varepsilon|\xi|^2/2}$. There is a real orthogonal projection
+  $P_K$ on $H_{\mathrm{sp}}$ corresponding to the closed frequency ball
+  $\{|\xi|\le K\}$. It commutes with heat. For $K \ge 1$, $\varepsilon > 0$ and
+  $R \ge 1$,
+  \begin{align}
+    \|T_R(I-C_\varepsilon)\|
+    &\le M_h\varepsilon^{\beta/2},
+    &M_h&=4A_sM^2\E|G_d|^\beta,\label{E:uniform-mean-heat}\\
+    \|T_R(I-P_K)\|
+    &\le M_fK^{-\beta},
+    &M_f&=\frac{M_h}{1-e^{-1/2}},\label{E:uniform-mean-frequency}
+  \end{align}
+  where $G_d$ is a standard real $d$-dimensional normal vector. Operator norms
+  are from $H_{\mathrm{sp}}$ to $\mathcal{L}(E)$. The projection $P_K$ is
+  allowed to have infinite rank.
+\end{lemma}
+
+\begin{proof}
+  We estimate translations of each covariance row and average them against
+  heat. We then construct the frequency projection on the actual Fourier image
+  and use the heat error to bound its high-frequency tail.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We bound translations of the localized row.
+  Translations $\tau_hf(x) = f(x-h)$ extend to strongly continuous isometries of
+  the $H_{\mathrm{sp}}$. Indeed, in its covariance Fourier isometry they
+  multiply by $e^{-i\xi\cdot h}$; dominated convergence gives continuity on
+  tests, then density and isometry give it on the completion. The real subspace
+  is preserved. The inequalities $|e^{-it}-1| \le 2\min(1,|t|^\beta)$ and
+  $|\xi|^\beta\langle\xi\rangle^s \le \langle\xi\rangle^{1/2}$ show that
+  \[
+    \|\tau_hf-f\|_{H^s}
+    \le2\min(1,|h|^\beta)\|f\|_{H^{1/2}} .
+  \]
+  Use this for $f = \eta_Rz_1$ and $g = \eta_R\Lambda^{-1}w_2$. The product
+  identity
+  \[
+    \tau_h(fg)-fg=(\tau_hf-f)\tau_hg+f(\tau_hg-g)
+  \]
+  holds in $H_{\mathrm{sp}}$, first for smooth factors and then by the
+  continuous fractional product extension. Lemma~\ref{L:uniform-mean-cutoff}
+  gives
+  \begin{equation}\label{E:uniform-mean-row-translation}
+    \|\tau_hk_R(z,w)-k_R(z,w)\|_{H_{\mathrm{sp}}}
+    \le4A_sM^2\min(1,|h|^\beta)\|z\|_E\|w\|_E .
+  \end{equation}
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We average the translation bound to obtain the
+  heat error.
+  The Bochner integral $\int p_\varepsilon(h)\tau_hk\ud h$ exists, since the
+  translation orbit is strongly continuous and bounded in the separable
+  covariance Hilbert space. Its Fourier image is
+  $e^{-\varepsilon|\xi|^2/2}\widehat{k}$: ordinary Gaussian integration proves
+  this on tests and contraction extends it to all $k$. It is therefore the
+  $C_\varepsilon$ of the source construction. Heat has variance $\varepsilon$
+  here; there is no additional Fourier normalization factor. Integrating
+  \eqref{E:uniform-mean-row-translation} with $h = \sqrt\varepsilon G_d$ bounds
+  $\|(I-C_\varepsilon)k_R(z,w)\|$ by $M_h\varepsilon^{\beta/2}\|z\|_E\|w\|_E$.
+  Here $C_\varepsilon$ is selfadjoint on $H_{\mathrm{sp}}$, since its Fourier
+  multiplier is real; the row identity therefore gives
+  \[
+    \langle T_R(I-C_\varepsilon)qz,w\rangle_E
+    =\langle q,(I-C_\varepsilon)k_R(z,w)\rangle_{H_{\mathrm{sp}}}.
+  \]
+  Selfadjointness in~\eqref{E:uniform-mean-row} proves
+  \eqref{E:uniform-mean-heat}.
+
+  The two terms in the product difference each use one translation error and
+  one bounded factor. The fractional product bound therefore contributes
+  $2A_sM^2$ twice. Averaging $\min(1,|h|^\beta)\le |h|^\beta$ with
+  $h=\sqrt\varepsilon G_d$ gives $\varepsilon^{\beta/2}\E|G_d|^\beta$.
+
+  \medskip
+  \noindent\textit{Step 3.~}We construct the projection without assuming
+  Fourier surjectivity.
+  To construct $P_K$, let $V$ be the closed image of the covariance Fourier
+  isometry into $L^2(\mu)$, including its fixed $(2\pi)^{d/2}$ factor. No
+  surjectivity is assumed. Its formula extends to Schwartz functions: compact
+  cutoff approximation converges in Schwartz seminorms, and temperedness of
+  $\mu$ controls the Fourier error in $L^2(\mu)$. Choose real even radial smooth
+  $\chi_n$, equal to one on the closed ball of radius $K$, zero outside radius
+  $K+1/n$, and between zero and one. For real Schwartz $f$, the function
+  $\chi_n\widehat{f}$ is the transform of another real Schwartz function and so
+  lies in $V$. Dominated convergence against $|\widehat{f}|^2\mu$ gives
+  $1_{\{|\xi|\le K\}}\widehat{f} \in V$. The pointwise limit includes the
+  boundary sphere, even if $\mu$ charges it. Test density and contraction extend
+  this assertion to all of $V$. Indicator multiplication is selfadjoint and
+  idempotent on $V$; pulling it back defines the asserted real orthogonal $P_K$.
+  All Fourier multipliers here commute.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We compare the frequency tail with a heat
+  residual.
+  On $|\xi| > K$ one has $1-e^{-|\xi|^2/(2K^2)} \ge 1-e^{-1/2}$, whence
+  \[
+    \|(I-P_K)k\|_{H_{\mathrm{sp}}}
+    \le(1-e^{-1/2})^{-1}\|(I-C_{K^{-2}})k\|_{H_{\mathrm{sp}}}.
+  \]
+  Apply the row heat bound and selfadjointness of $P_K$
+  in~\eqref{E:uniform-mean-row} to obtain \eqref{E:uniform-mean-frequency}. No
+  density of $\mu$, periodic state space or finite rank was used. This proves
+  Lemma~\ref{L:uniform-mean-spatial-tails}.
+\end{proof}
+
+\subsection{Tensor products and mean approximation}
+
+We first record a tensor extension bound for maps into $L^r(I)$. The proof
+of Proposition~\ref{P:uniform-mean-regulator} uses it to pass from a scalar
+time map to the Hilbert-valued time map without a dimension factor.
+
+\begin{lemma}[Dimension-free Hilbert tensor extension]
+  \label{L:uniform-mean-tensor}
+  If $H_0,G$ are real Hilbert spaces, $2 \le r < \infty$ and $A:H_0 \to L^r(I)$
+  is bounded, then
+  \[
+    \|A\otimes I_G\|_{H_0\otimes G\to L^r(I;G)}\le\|A\|.
+  \]
+  The tensor extension need not be compact when $A$ is compact.
+\end{lemma}
+
+\begin{proof}
+  We use finite Gaussian sums to estimate the Hilbert-valued tensor norm with
+  the scalar operator constant. We then extend by density and check why the
+  same argument does not imply compactness.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We compare the Gaussian norm moment with its total
+  variance.
+  For a finite tensor write $v = \sum_{j=1}^n f_j\otimes e_j$ with $(e_j)$
+  orthonormal. Its squared norm is $\sum_j\|f_j\|^2$. Let $\gamma_j$ be
+  independent standard real normals and $m_r = \E|\gamma_1|^r$. Finite
+  covariance diagonalization gives
+  \[
+    \E\left\|\sum_j\gamma_j f_j\right\|_{H_0}^r
+    \le m_r\left(\sum_j\|f_j\|_{H_0}^2\right)^{r/2}.
+  \]
+  In fact, if $\lambda_l$ are the covariance eigenvalues and $L =
+  \sum_l\lambda_l$, the squared norm has law $\sum_l\lambda_l\zeta_l^2$ for
+  independent standard $\zeta_l$. For $L > 0$, convexity at exponent $r/2 \ge 1$
+  bounds $(\sum_l(\lambda_l/L)\zeta_l^2)^{r/2}$ by
+  $\sum_l(\lambda_l/L)|\zeta_l|^r$. Taking expectations proves the inequality;
+  $L = 0$ is immediate. Also $L = \sum_j\|f_j\|^2$.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We apply the scalar operator estimate and cancel
+  the Gaussian moment.
+  Choose measurable representatives of the finitely many $Af_j$. Scalar Gaussian
+  moments and Tonelli give
+  \[
+    m_r\int_I\left(\sum_j|Af_j(t)|^2\right)^{r/2}\ud t
+    =\E\left\|A\sum_j\gamma_jf_j\right\|_{L^r}^r
+    \le\|A\|^rm_r\left(\sum_j\|f_j\|^2\right)^{r/2}.
+  \]
+  For each fixed $t$, the scalar sum of the $Af_j(t)$ with independent
+  Gaussian coefficients has variance $\sum_j|Af_j(t)|^2$. Its $r$th absolute
+  moment is that variance to the power $r/2$ times $m_r$. This explains the
+  same factor $m_r$ on both sides, so no dimension-dependent factor remains
+  after cancellation.
+  Cancel the finite positive $m_r$ and take the $r$th root. Finite tensor
+  density and Bochner completeness give the extension. The zero space is
+  trivial. If $Af \ne 0$ and $G$ has an infinite orthonormal sequence $(e_j)$,
+  the images of the bounded sequence $f\otimes e_j$ have pairwise distance
+  $\sqrt2\|Af\|_{L^r}$. They have no convergent subsequence, even when the
+  scalar map $A$ is compact. Only finite auxiliary Gaussians were used in the
+  estimate. This proves Lemma~\ref{L:uniform-mean-tensor}.
+\end{proof}
+
+Recall the supported identity $H_I = H_t\otimes H_{\mathrm{sp}}$, the compact
+scalar covariance map $C_t:H_t \to L^r(I)$, $2 < r < 2/a$, and its completed
+tensor $U = C_t\otimes I_{H_{\mathrm{sp}}}$ from
+Section~\ref{S:actual-cameron-mean}. On finite smooth tensors $U$ agrees with
+the earlier $\mathcal{U}$; density gives equality of their completed maps. For
+block applications fix the same $r$ as in~\eqref{E:cameron-block-parameters}.
+All $c_t,\varepsilon_J$ and mean norms below use that one choice. Choose a
+smooth-test orthonormal basis of $H_t$ and let $\pi_J$ be its first-$J$
+orthogonal projection, with $\pi_0 = 0$. Put
+\[
+  c_t=\|C_t\|,\qquad
+  \varepsilon_J=\|C_t(I-\pi_J)\|_{H_t\to L^r(I)},\qquad
+  \mathcal{T}_R=T_RU .
+\]
+
+\begin{proposition}[Uniform approximation of the completed mean]
+  \label{P:uniform-mean-regulator}
+  On $H_I$ the operators
+  \[
+    P_{\mathrm{ret}}=\pi_J\otimes P_K,\qquad
+    Q_{J,K}=I-P_{\mathrm{ret}}
+  \]
+  are real orthogonal projections, and $\varepsilon_J \to 0$. The mean is a
+  strongly measurable $L^r(I;\mathcal{K}(E))$ field and satisfies, uniformly for
+  $R \ge 1$,
+  \begin{equation}\label{E:uniform-completed-mean}
+    \|\mathcal{T}_R\|\le M_0c_t,\qquad
+    \|\mathcal{T}_RQ_{J,K}\|
+    \le M_0\varepsilon_J+M_fc_tK^{-\beta}.
+  \end{equation}
+  These norms have domain $H_I$ and target $L^r(I;\mathcal{L}(E))$.
+\end{proposition}
+
+\begin{proof}
+  We transfer the compact scalar temporal tail to Hilbert-valued functions. We
+  then decompose the residual projection into a temporal tail and a
+  spatial-frequency tail, estimating these terms separately.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We control the temporal projection tail.
+  The tensor projections are selfadjoint, idempotent and contractive on finite
+  tensors and hence on their Hilbert completion. For the scalar tail, failure of
+  convergence would supply unit $v_J$ with $\|C_t(I-\pi_J)v_J\|$ bounded below
+  on a subsequence. But $(I-\pi_J)v_J$ tends weakly to zero, since its pairing
+  with $h$ is bounded by $\|(I-\pi_J)h\|$. Compactness supplies a
+  norm-convergent image subsequence; bounded linear scalar observables show its
+  limit is zero, a contradiction. Lemma~\ref{L:uniform-mean-tensor} transfers
+  this scalar tail norm to the Hilbert-valued time map without a dimension
+  factor.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We decompose and bound the completed mean
+  residual.
+  For $\Phi\in H_I$, Lemma~\ref{L:uniform-mean-tensor} applied to $A=C_t$
+  gives $\|U\Phi\|_{L^r(I;H_{\mathrm{sp}})}\le c_t\|\Phi\|_{H_I}$.
+  Applying~\eqref{E:uniform-spatial-mean} pointwise in time then bounds
+  $\|T_RU\Phi\|_{L^r(I;\mathcal{L}(E))}$ by $M_0c_t\|\Phi\|_{H_I}$.
+  For fixed $R$, $T_R$ is bounded into the separable compact-operator space on
+  $E$. Composition with the Bochner field $U\Phi$ gives the stated mean and its
+  first bound. The exact decomposition is
+  \[
+    Q_{J,K}=(I-\pi_J)\otimes I+\pi_J\otimes(I-P_K).
+  \]
+  The first term is bounded by $M_0\varepsilon_J$. For the second term use the
+  intertwining identity
+  \[
+    U(\pi_J\otimes(I-P_K))
+    =(I_{L^r}\otimes(I-P_K))(C_t\pi_J\otimes I).
+  \]
+  It holds first on finite tensors, then by continuity.
+  Apply~\eqref{E:uniform-mean-frequency} pointwise, followed by
+  Lemma~\ref{L:uniform-mean-tensor} for $C_t\pi_J$, whose norm is at most $c_t$.
+  This proves~\eqref{E:uniform-completed-mean}. Infinite spatial rank is allowed
+  throughout; neither tensor compactness nor uniform-radius compactness has been
+  asserted. This proves Proposition~\ref{P:uniform-mean-regulator}.
+\end{proof}
+
+\subsection{The block Cameron embedding for the given noise}
+
+Use $B,\delta,N,s_m,\ell_m,I_m$ and $\theta,r,p$ exactly as
+in~\eqref{E:cameron-block-parameters} and its preceding block partition. Let
+$i_I:H_I \to H_W$ be the isometric closed inclusion. On the full original noise
+space set
+\[
+  P_{\mathrm{full}}=i_IP_{\mathrm{ret}}i_I^*,\qquad
+  Q_{\mathrm{full}}=I-P_{\mathrm{full}} .
+\]
+These are orthogonal projections on $H_W$. Define the residual fast noise and
+stopped $E$ operator path by
+\begin{equation}\label{E:uniform-actual-residual}
+  Y_m(f)=W(Q_{\mathrm{full}}T_{\delta,m}f),\qquad
+  X_m(u)=g_\delta A_{m_R}(Y_m)(\min(u,\ell_m)),\qquad
+  g_\delta=\delta^{(1-a)/2}.
+\end{equation}
+Here $T_{\delta,m}$ is the explicit original isometry
+\eqref{E:raw-block-pullback}, and $A_{m_R}$ takes its $E$ restriction. Its
+isometry is proved in Lemma~\ref{L:raw-block-inputs}. The symbol
+$H_{\mathrm{fast}}$ below denotes this same original covariance norm in fast
+coordinates, carried isometrically into $H_W$. The $E$ little H\"older space
+means the closure of Lipschitz compact-operator paths starting at zero in
+$C^\theta$ norm. Compact operators on separable $E$ and polygonal approximation
+make this closure separable. The last interval can be empty, in which case $X_N
+= 0$.
+
+\begin{proposition}[Uniform-radius Cameron bound]
+  \label{P:uniform-actual-cameron}
+  The tuple $X = (X_m)_{m=0}^N$ is a centered Gaussian variable in the separable
+  little H\"older compact-operator path space on $E$. Its Bochner covariance $Lh
+  = \E[XW(h)]$, $h \in H_W$, is
+  \begin{equation}\label{E:uniform-actual-covariance}
+    (Lh)_m(u)=\sqrt\delta\int_0^{\min(u,\ell_m)}
+    S_E(-v)\mathcal{T}_R(Q_{J,K}i_I^*h)(s_m+\delta v)
+    S_E(v)\ud v .
+  \end{equation}
+  In the exact norm $\|x\|_{\delta,p} =
+  (\delta\sum_m\|x_m\|_{C^\theta}^p)^{1/p}$, its Cameron embedding has the
+  uniform-radius bound
+  \begin{equation}\label{E:uniform-actual-cameron-bound}
+    \|Lh\|_{\delta,p}
+    \le\sqrt\delta\,C_{B,E}(2/B)^{1/p-1/r}
+    [M_0\varepsilon_J+M_fc_tK^{-\beta}]\|h\|_{H_W},
+    \qquad C_{B,E}\le18B^{3-1/r}.
+  \end{equation}
+  All spatial constants are independent of $R \ge 1$.
+\end{proposition}
+
+\begin{proof}
+  We construct the residual paths on the given noise, identify their supported
+  covariance rows, and estimate the resulting primitive. The true block
+  partition then gives the averaged Cameron bound with its exact
+  radius-independent constants.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We construct the residual paths and their
+  first-chaos coordinates.
+  Orthogonality and original pullback isometry give $\operatorname{Var}Y_m(f)
+  \le \|f\|_{H_{\mathrm{fast}}}^2$. Gaussian transfer,
+  Proposition~\ref{P:source-gaussian-transfer}, therefore constructs the
+  operator paths on the given $W$, with finite path moments at each fixed
+  $R,B,\delta,J,K$. Choose an admissible H\"older exponent strictly above
+  $\theta$ as in Lemma~\ref{L:cameron-actual-residual}; constant stopping puts
+  the paths in the separable little $C^\theta$ closure. Finite-coefficient
+  constructions and their $L^2$ limits show that every continuous linear
+  coordinate is in the first chaos of the given $W$.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We identify the covariance direction on the
+  supported subspace.
+  Every explicit observed row, pulled back to slow time, belongs to $H_I$. This
+  is the supported-row approximation from Lemma~\ref{L:cameron-actual-residual},
+  also valid before any projection; approximate endpoints inside $I$ against the
+  integrable time kernel and locally finite spatial covariance. For such a row
+  $k$, exact orthogonality gives
+  \[
+    \langle Q_{\mathrm{full}}T_{\delta,m}k,h\rangle_{H_W}
+    =\langle T_{\delta,m}k,i_IQ_{J,K}i_I^*h\rangle_{H_W}.
+  \]
+  In the earlier construction $P_0=0$, so
+  $Y_{m,0}(f)=W(T_{\delta,m}f)$.
+  The preceding pairing therefore reduces the present covariance to that
+  unprojected identity with control $\Phi=Q_{J,K}i_I^*h\in H_I$.
+  Directions perpendicular to $H_I$ disappear from this pairing. Apply the
+  completed $J = 0$ identity \eqref{E:cameron-actual-covariance} to
+  $Q_{J,K}i_I^*h$, and restrict its input and output to $E$. The free $F$ group
+  preserves $E$ and restricts to $S_E$; the mean restricts to $\mathcal{T}_R$.
+  This proves~\eqref{E:uniform-actual-covariance}. Its amplitude is exactly
+  $g_\delta\delta^{a/2} = \sqrt\delta$, on the noise $W$. Arbitrary projected
+  controls are covered by the completed mean identity; no smoothness or finite
+  rank of $P_K$ is required. Compact operator values and strong continuity of
+  $S_E$ and its adjoint make conjugation norm continuous on compact operators,
+  as in Proposition~\ref{P:cameron-actual-embedding}. Thus, the integral is
+  Bochner measurable. Fixed-parameter $L^2$ covariance continuity, dense states
+  and rational times identify the entire operator path.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We estimate the free group and each local
+  primitive.
+  For explicit free constants, the Bessel-unitary Fourier matrix of $S_E(v)$ is
+  the matrix displayed in that proposition. For $|v| \le B$, $B \ge 1$, the
+  upper off-diagonal entry is at most $\sqrt2 B$: use $|\sin(vk)| \le Bk$ for $k
+  \le 1$ and $\langle k\rangle/k \le \sqrt2$ for $k \ge 1$. The lower entry is
+  at most one, as are both diagonal entries; at zero the sine quotient has value
+  $v$. Its Frobenius bound is $\sqrt{3+2B^2} \le 3B$. Hence, $G_{B,E} =
+  \sup_{|v|\le B}\|S_E(v)\| \le 3B$. With
+  \[
+    \mathcal{M}_h(t)=\mathcal{T}_R(Q_{J,K}i_I^*h)(t),\qquad
+    t_m=\|\mathcal{M}_h\|_{L^r(I_m;\mathcal{L}(E))},
+  \]
+  the primitive increment bound and the affine time change give
+  \[
+    \|(Lh)_m\|_{C^\theta}
+    \le\sqrt\delta\,C_{B,E}\delta^{-1/r}t_m,\qquad
+    C_{B,E}=G_{B,E}^2[B^{1-1/r}+B^{1-1/r-\theta}]
+    \le18B^{3-1/r}.
+  \]
+  Here $1-1/r > \theta$, constant stopping preserves the bound, and the empty
+  block contributes zero.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We combine the local estimates with the block
+  weights.
+  Put $n = N+1 \ge 2$. The finite power-mean inequality at exponent $r/p > 1$
+  with nonnegative inputs $t_m^p$ gives
+  \[
+    \left(\sum_m t_m^p\right)^{r/p}
+    \le n^{r/p-1}\sum_m t_m^r,\qquad
+    \left(\sum_m t_m^p\right)^{1/p}
+    \le n^{1/p-1/r}\left(\sum_m t_m^r\right)^{1/r}.
+  \]
+  By~\eqref{E:uniform-completed-mean} and $\|i_I^*\|\le1$, the field
+  $\mathcal{M}_h=\mathcal{T}_RQ_{J,K}i_I^*h$ satisfies
+  $\|\mathcal{M}_h\|_{L^r}\le
+  [M_0\varepsilon_J+M_fc_tK^{-\beta}]\|h\|_{H_W}$.
+  Raising nonnegative terms uses only positive powers, including when $t_m = 0$.
+  The true partition gives $\sum_m t_m^r = \|\mathcal{M}_h\|_{L^r(I)}^r$ and
+  $\delta n \le 2/B$. The exact $\delta$ weight therefore yields
+  \[
+    \|Lh\|_{\delta,p}
+    \le\sqrt\delta\,C_{B,E}(\delta n)^{1/p-1/r}\|\mathcal{M}_h\|_{L^r}
+    \le\sqrt\delta\,C_{B,E}(2/B)^{1/p-1/r}
+    [M_0\varepsilon_J+M_fc_tK^{-\beta}]\|h\|_{H_W}.
+  \]
+
+  The local factor $\delta^{-1/r}$ is multiplied by the averaged norm's factor
+  $\delta^{1/p}$. Finite power mean contributes $n^{1/p-1/r}$, so their
+  product is $(\delta n)^{1/p-1/r}$. Since $p<r$, this power is increasing,
+  and $\delta n\le2/B$ gives the claimed bound. The two powers in the
+  primitive constant are each at most $B^{1-1/r}$ because $B\ge1$, giving
+  $18B^{3-1/r}$ from $G_{B,E}\le3B$.
+
+  \medskip
+  \noindent\textit{Step 5.~}We apply the bound to the minimum-norm Cameron
+  representative.
+  Finally, let $H_{\mathrm{seen}}$ be the closed span in $H_W$ of all
+  coefficient tests $k_\ell$ with $\ell(X) = W(k_\ell)$. The first Wiener chaos
+  Cameron identification in Proposition~\ref{P:cameron-actual-embedding} applies
+  on $H_W$: $L$ kills $H_{\mathrm{seen}}^\perp$ and its Cameron space is
+  $L(H_{\mathrm{seen}})$ with minimum norm of a preimage in the original
+  covariance space. Thus, $\|Lh\|_{\mathrm{CM}} = \|P_{\mathrm{seen}}h\|_{H_W}$.
+  Applying the bound to this minimum-norm representative gives precisely the
+  Cameron embedding bound, without an inverse covariance or finite-dimensional
+  density. This proves Proposition~\ref{P:uniform-actual-cameron}.
+\end{proof}
+
+The orthogonal $P_{\mathrm{full}}$ and $Q_{\mathrm{full}}$ Gaussian fields are
+independent; residual time blocks can remain correlated. The retained spatial
+head may have infinite rank. Heat filtering alone would not give this orthogonal
+decomposition. These linear bounds do not bound the expected residual path norm
+uniformly on growing masks, nor perform conditioning or integration over the
+infinite sum. The remaining stochastic, product and pointwise upper estimates
+require their own proofs.
+```
+
+## notes/integrated_cameron_mean.tex lines 1-170 (unchanged context)
+```tex
+\section{The compact mean and Cameron map on time blocks}
+\label{S:actual-cameron-mean}
+
+Retain the nonzero original covariance in Hypothesis~\ref{H:homog}, its
+amplitude, $a = \alpha_0$, and the real phases $E = H^{1/2}\times H^{-1/2}$ and
+$F = E\oplus\R^2$. Write $\Lambda = (1-\Delta)^{1/2}$. The form $B_\Gamma$ and
+constant $R_{\mathrm{sp}}$ are those of
+Section~\ref{S:spatial-occupation-foundation}. Let $H_{\mathrm{sp}}$ be the real
+covariance-null completion of $C_c^\infty(\R^d)$ with inner product $B_\Gamma$,
+and $H_t$ the analogous completion of $C_c^\infty(I)$, $I = (0,1)$, with time
+kernel $|s-t|^{-a}$. Let $H = H_I$ be the completion of smooth tests supported
+inside $I\times\R^d$. It embeds isometrically as a closed subspace of the given
+$H_W$. We retain the given $W$ restricted to it.
+
+Fix $R > 0$ and real even $\eta_R \in C_c^\infty(\R^d)$ with $0 \le \eta_R \le
+1$, equal to one on the radius-$R$ ball and supported in the closed radius-$2R$
+ball. The physical mask is $m_R = \eta_R^2$. Every operator path below takes its
+mask argument equal to $m_R$: at this fixed radius the base profile $\zeta(y) =
+m_R(Ry)$ meets the earlier hypotheses. The root $\eta_R$ factors state tests; it
+does not multiply an original noise class. All compactness conclusions here fix
+$R$.
+
+\subsection{Fractional products and the compact spatial map}
+
+The four-linear estimate~\eqref{E:spatial-four-linear} needs $H^1$ factors.
+The first component of a state in $E$ lies only in $H^{1/2}$, so we first
+extend that estimate to fractional Sobolev factors.
+
+\begin{lemma}[Fractional covariance products]
+  \label{L:cameron-fractional-products}
+  For $\alpha/4 < s < 1/2$, products of real $H^s$ functions define elements of
+  $H_{\mathrm{sp}}$, with
+  \begin{equation}\label{E:cameron-fractional-product}
+    \|fg\|_{H_{\mathrm{sp}}}
+    \le C_s^2\sqrt{R_{\mathrm{sp}}}\|f\|_{H^s}\|g\|_{H^s}.
+  \end{equation}
+  Their Hilbert pairings equal their physical integrals. In particular,
+  \begin{equation}\label{E:cameron-fractional-absolute}
+    \int|f_1(x)f_2(x)f_3(x-y)f_4(x-y)|\ud x\,\Gamma(\ud y)
+    \le C_s^4R_{\mathrm{sp}}\prod_{j=1}^4\|f_j\|_{H^s}.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We first define covariance products for $H^1$ factors. We then decompose
+  each fractional Sobolev factor into real Fourier bands and sum the absolute
+  four-linear bounds, identifying the completed products with their physical
+  pairings.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We obtain the product map on $H^1$ factors.
+  First approximate real $H^1$ factors by compact smooth ones. The absolute
+  four-linear bound~\eqref{E:spatial-four-linear} and covariance PSD make their
+  products Cauchy in $H_{\mathrm{sp}}$, with norm at most
+  $\sqrt{R_{\mathrm{sp}}}N(f)N(g)$. Expanding product differences proves
+  independence of approximation; physical continuity identifies all pairings.
+  PSD for products also follows from $fg = ((f+g)^2-(f-g)^2)/4$.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We sum the band bounds for fractional Sobolev
+  factors.
+  Use real radial Fourier bands $D_0 = 1_{\{|\xi|<1\}}$ and $D_j =
+  1_{\{2^{j-1}\le|\xi|<2^j\}}$, $j \ge 1$. For $f \in H^s$ put $f_j = D_jf$.
+  Each block is real and in $H^1$. Frequency support, Parseval and weighted
+  Cauchy--Schwarz give
+  \begin{equation}\label{E:cameron-dyadic-product}
+    N(f_j)\le2^{j\alpha/4}\|f_j\|_2,\qquad
+    \sum_{j\ge0}N(f_j)\le C_s\|f\|_{H^s}.
+  \end{equation}
+  On band $j$, the gradient norm is at most $2^j\|f_j\|_2$. Substituting into
+  $N$ gives the first inequality. Write $2^{j\alpha/4}\|f_j\|_2$ as
+  $2^{-j(s-\alpha/4)}(2^{js}\|f_j\|_2)$ and apply Cauchy--Schwarz to the two
+  sequences.
+  Indeed, $\sum_j2^{-2j(s-\alpha/4)} < \infty$, while $\sum_j2^{2js}\|f_j\|_2^2
+  \le 2^{2s}\|f\|_{H^s}^2$. The low block has factor one. No $L^p$ multiplier
+  result is used. Also $\sum_j\|f_j\|_2 < \infty$ since $s > 0$. Thus,
+  $\sum_j|f_j|$ lies in $L^2$ by Minkowski and monotone convergence, and the
+  series is absolutely convergent a.e. with sum $f$.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We identify the physical and Hilbert-space product
+  series.
+  Apply the absolute $H^1$ four-linear estimate to each band quadruple. The sum
+  of its absolute integrals is at most
+  $R_{\mathrm{sp}}\prod_{\ell=1}^4\sum_jN((f_\ell)_j) < \infty$. Tonelli and the
+  null-set transfer at both spatial positions in
+  Lemma~\ref{L:spatial-physical-pair} identify the physical product series,
+  proving~\eqref{E:cameron-fractional-absolute}. The double series
+  $\sum_{j,k}f_jg_k$ is also absolutely convergent in $H_{\mathrm{sp}}$ by the
+  $H^1$ product bound. Its partial sums are products of $H^1$ functions. The
+  absolute quadruple calculation identifies their limiting physical pairings and
+  gives~\eqref{E:cameron-fractional-product}. Compact smooth functions are dense
+  in $H^s$: approximate in Fourier space by real Schwartz functions, then cut
+  each off compactly in $H^1$ and hence in $H^s$. This also proves uniqueness of
+  the bilinear extension. This proves Lemma~\ref{L:cameron-fractional-products}.
+\end{proof}
+
+With these products in $H_{\mathrm{sp}}$, we can extend the spatial mean map
+from smooth tests to all of $H_{\mathrm{sp}}$.
+
+\begin{proposition}[Compact spatial mean map]\label{P:cameron-spatial-map}
+  The smooth-test map
+  \[
+    T_{\mathrm{sp}}q=iB_F(m_R(\Gamma*q))
+  \]
+  extends to a compact linear map $T_{\mathrm{sp}}:H_{\mathrm{sp}} \to
+  \mathcal{K}(F)$, where $\mathcal{K}(F)$ has the operator norm. For $z =
+  (z_1,z_2,c_1,c_2)$ and $w = (w_1,w_2,d_1,d_2)$ set $w' = \Lambda^{-1}w_2$. Its
+  exact row identity is
+  \begin{equation}\label{E:cameron-spatial-row}
+    \langle T_{\mathrm{sp}}qz,w\rangle_F
+    =\langle q,k(z,w)\rangle_{H_{\mathrm{sp}}},
+    \qquad
+    k(z,w)=(\eta_Rz_1+c_1\eta_R)(\eta_Rw').
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  We identify the spatial row and use compactness of localized fractional
+  factors to bound it uniformly. We first extend the map with compact operator
+  values, then approximate the map itself by finite-dimensional spatial
+  projections.
+
+
+  \medskip
+  \noindent\textit{Step 1.~}We identify the physical and covariance row.
+  Fix $s$ with $\alpha/4 < s < 1/2$; this interval is nonempty because the
+  original threshold implies $\alpha < 2$. For smooth compact $q$, $\Gamma*q$ is
+  locally smooth by differentiation under the compactly restricted Radon
+  integral. The masked potential is smooth compact. The velocity pairing in $E$
+  has weight $\Lambda^{-1}$; hence physical Fubini
+  gives~\eqref{E:cameron-spatial-row} on smooth states. Evenness of $\Gamma$
+  changes $B_\Gamma(k,q)$ to $B_\Gamma(q,k)$. For general states the localized
+  products are $L^1$, and $\Gamma*q$ is bounded on their compact support. $L^2$
+  state approximation passes the physical integral to the limit, while
+  Lemma~\ref{L:cameron-fractional-products} passes the $H_{\mathrm{sp}}$
+  pairing. This proves the row.
+
+
+  \medskip
+  \noindent\textit{Step 2.~}We obtain compact families of row tests.
+  The velocity test satisfies $w_2\in H^{-1/2}$ and $w'=\Lambda^{-1}w_2\in
+  H^{1/2}$, so it has the same localization regularity as the displacement
+  test.
+  Multiplication by $\eta_R$ maps bounded $H^{1/2}$ sets to precompact $H^s$
+  sets by Proposition~\ref{P:cutoff-singular-values}, with gain $1/2-s > 0$.
+  This applies to $z_1$ and $w'$. The $c_1\eta_R$ family is finite dimensional
+  and compact. The closures of both factor families for unit $z,w$ are compact,
+  so their products have compact closure $\mathcal{L}$ in $H_{\mathrm{sp}}$ by
+  the fractional product bound. The row identity gives $\|T_{\mathrm{sp}}q\| \le
+  \sup_{k\in\mathcal{L}}\|k\|\|q\|$. Null covariance classes therefore map to
+  zero.
+
+
+  \medskip
+  \noindent\textit{Step 3.~}We extend the map with compact operator values.
+  For smooth $q$, multiplication by its potential is compact $H^{1/2} \to
+  H^{-1/2}$ by the same whole-space cutoff result with gain one. Its extra $c_1$
+  column is finite rank, and the instantaneous $c_2$ column is zero. Thus, the
+  smooth images lie in $\mathcal{K}(F)$, and so does the bounded extension by
+  operator-norm closure.
+
+
+  \medskip
+  \noindent\textit{Step 4.~}We prove compactness of the map itself.
+  On each fixed compact support, local Radon finiteness bounds the covariance
+  norm by a constant times the supremum norm. Countable uniformly dense
+```
+
+## notes/integrated_compact_gaussian.tex lines 268-292 and 560-580 (unchanged context: Lambda, Sobolev norms, J_0)
+```tex
+  refutes the corresponding output-only bound. The average and maximum bounds
+  have fourth powers $1224$ and $2304$, respectively. This finite example
+  asserts nothing about a specialized wave estimate.
+\end{remark}
+
+\subsection{Whole-space cutoffs through an auxiliary periodic space}
+
+Use the unitary Fourier transform with $c_d = (2\pi)^{-d/2}$ and $\Lambda =
+(1-\Delta)^{1/2}$. For real $r$, the norm on $H^r(\R^d)$ is
+$\|\langle\xi\rangle^r\widehat{u}\|_2$. The deterministic cutoff arguments allow
+any smoothing order $\gamma > 0$. Fix real $\sigma$ and a real compact smooth
+$\chi$. Singular values $s_j$, $j \ge 1$, are counted with multiplicity, with
+zeros appended when necessary. For compact $K$, put $\|K\|_{S_p}^p = \sum_j
+s_j(K)^p$.
+
+\begin{lemma}[Cutoff factorization]\label{L:cutoff-factorization}
+  Choose a cube $Q_L = (-L/2,L/2)^d$ containing $\operatorname{supp}\chi$ in its
+  interior, and a real $\psi \in C_c^\infty(Q_L)$ equal to one near
+  $\operatorname{supp}\chi$. On the auxiliary torus $\mathbb{T}_L$ use Lebesgue
+  measure and the orthonormal basis
+  \[
+    e_k(x)=L^{-d/2}e^{i\kappa_k\cdot x},\qquad
+    \kappa_k=2\pi k/L,\qquad k \in \mathbb{Z}^d,
+  \]
+  with $\|v\|_{H^r(\mathbb{T}_L)}^2 = \sum_k\langle\kappa_k\rangle^{2r}|v_k|^2$.
+...
+Proposition~\ref{P:cutoff-singular-values}. The periodic inclusion was only a
+factor of the recovered whole-space operator.
+
+\subsection{Balanced adjoints and localized variance envelopes}
+
+For $E = H^{1/2}(\R^d)\times H^{-1/2}(\R^d)$ use the physical unitary
+coordinates
+\[
+  J_0(u,v)=(\Lambda^{1/2}u,\Lambda^{-1/2}v),\qquad
+  H=L^2(\R^d;\mathbb{C}^2).
+\]
+The frequency map $J$ in Section~\ref{S:wave-variance} is
+$(\mathcal{F}\oplus\mathcal{F})J_0$. Let $D_\chi$ multiply both phase entries
+and define
+\begin{align}
+  P_\chi&=J_0D_\chi J_0^{-1},\qquad
+  D_\gamma=\operatorname{diag}(\Lambda^{-\gamma},\Lambda^{-\gamma}),
+  \label{E:compact-balanced-cutoff}\\
+  K_{\rm out}&=P_\chi D_\gamma,\qquad
+  K_{\rm in}=P_\chi^*D_\gamma.
+  \label{E:compact-two-factors}
+```
