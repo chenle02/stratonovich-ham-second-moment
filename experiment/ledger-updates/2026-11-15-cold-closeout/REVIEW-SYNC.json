@@ -1,6 +1,6 @@
 {
   "schema": "appendix-review-sync/1",
-  "recorded_utc": "2026-11-18T13:27:07.965707+00:00",
+  "recorded_utc": "2026-11-20T04:54:36.278910+00:00",
   "ledger": "experiment/ledger-updates/2026-11-15-cold-closeout/run-ledger-v4.json",
   "historical_ledger": "experiment/ledger-updates/2026-11-14-c003-provenance/run-ledger-v4.json",
   "recent_ids": [
@@ -498,8 +498,8 @@
     ".zenodo.json": "9862d7f8ad30f3a39a3b3665a5cfd85bc961527e0dfdd423f97c635d20b06fd2",
     "AGENTS.md": "bdcfb32f404dc184a23bc8f8b6d6d36ec134c07d03cf1a9a0eb1ed62407c6df4",
     "AI-USE-STATEMENT.md": "a8b301f9483d244816908fac12c31ee4139646556cb6a1761d4c033599fdc53e",
-    "CHANGELOG.md": "5573135e3be040b0288d8083c627dc857245f692c9677d6a1a2d872cf87e1de8",
-    "CITATION.cff": "ec60124415d7bc2453457661c0e5ce22f23fb0938383caf877ff9bc8328bf584",
+    "CHANGELOG.md": "353fdbd661122a71d2a34ba8e7f91d25aaa94c1a3d52a6fce7150f8d13bb3765",
+    "CITATION.cff": "f61b4d5ec4b1e7449b56dd260f5c3b7cb4b990a52724bbe7ae072682286382a5",
     "HOW-THIS-WAS-BUILT.md": "8f01345818a15a58440bfc1cf8729780161af3d6d226a185b6739e3906d9c1f9",
     "README.md": "e376b6c4e9538371845e5037a7e26fb5c6d5d08d92919fb9bb11f9766556b413",
     "REDACTIONS.md": "56a238a9f540ac1ed86483b04bc1ce75fd81421ed8e741fc47dd89ccb47fa930",
@@ -1193,7 +1193,7 @@
       "No cost was recorded, which is not the same"
     ]
   },
-  "resealed_from_revision": "8328e6987a4b0a863e06ad0154e808d41c07efcf",
+  "resealed_from_revision": "42a52c0ad0de588d93beca31fd83baabbe6d6dba",
   "R_to_F_bridge": {
     "schema": "exact-release-source-bridge/1",
     "R": "39f2597a5bc4cdc6b9cab91e50051cd8a95b37d8",
@@ -5602,5 +5602,37 @@
     "prior_bridges_preserved": true,
     "review_inventory_and_selected_Appendix_E_inputs_unchanged": true,
     "scope": "ArXiv identifier in citation and deposit metadata and imprint, version and date, release links, book-site and archived-release DOI metadata, historical changelog marker freezing, contributors and archive records, and regenerated editions. No mathematical change, new scientific review, grade upgrade or public release authorization."
+  },
+  "v103_held_metadata_bridge": {
+    "schema": "exact-metadata-patch-successor/1",
+    "base": "38f8a177c153aae83d644c52627b25b655cced34",
+    "verified_parent": "42a52c0ad0de588d93beca31fd83baabbe6d6dba",
+    "per_file_actual_changes": [
+      {
+        "old_sha256": "5573135e3be040b0288d8083c627dc857245f692c9677d6a1a2d872cf87e1de8",
+        "new_sha256": "353fdbd661122a71d2a34ba8e7f91d25aaa94c1a3d52a6fce7150f8d13bb3765",
+        "exact_hunk_sha256": "7a6c01bdfe48c4cbc1e1bd5cf5858abdbed88047e0f05116bdbca4d737fb6a37",
+        "path": "CHANGELOG.md"
+      },
+      {
+        "old_sha256": "ec60124415d7bc2453457661c0e5ce22f23fb0938383caf877ff9bc8328bf584",
+        "new_sha256": "f61b4d5ec4b1e7449b56dd260f5c3b7cb4b990a52724bbe7ae072682286382a5",
+        "exact_hunk_sha256": "1e4dde0ff804414806af8688b24974595dcddcdfc855ea427dfd77896a5afe60",
+        "path": "CITATION.cff"
+      },
+      {
+        "old_sha256": "0362183250ed4793f84b4df770aa5afa9f50f8c60308161fcf470cc03835bb41",
+        "new_sha256": "fe3964e5cfbdac8f95c101cea789e35e58a15ff2af8d04c7d1d5c6cb6cf95d33",
+        "exact_hunk_sha256": "6082e11aef2910b2c7113a00f1749f2634e99ac8d736f78f840acb41737859f9",
+        "owner_record_basename": "CITATION.cff",
+        "owner_locator_sha256": "5c2233e2dc35c1c843b826df5af4cb295531867e0513151d4f649d547883e0b4"
+      }
+    ],
+    "all_quoted_hunks_hash_only": true,
+    "private_exact_hunk_payload_sha256": "3ae7146b3a3e1a0426ef445322cedbd024f965b1a30f45adfce780751133a6e4",
+    "source_closure_and_selected_review_inputs_byte_identical": true,
+    "statement_proof_spans_and_LF_coordinates_unchanged": 249,
+    "prior_bridges_preserved": true,
+    "scope": "Held citation message and historical v1.0.2 archive DOI correction only. Version and date remain unchanged pending a later release cut. No source, PDF, scientific review, grade or release authorization change."
   }
 }
