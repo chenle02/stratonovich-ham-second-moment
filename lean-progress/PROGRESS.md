@@ -4,29 +4,42 @@
 > (per the `lean-dev` skill). The mathematics authority is `../Progress.md`.
 > `.lean-dev-state.json` mirrors this file and changes only together with it.
 
-## Status (kept current; updated at every milestone)
+## Status
 
-Last updated: 2026-11-19: freeze lifted for **L15-UM only** (Le, 2026-11-19: "lift the freeze for L15-UM only and draft the L15 proposal"). L15 is PROPOSED below, not approved; nothing is built. The book is public (v1.0.0, 1.0.1, 1.0.2), and the companion is public at v0.10.0, the release the book's Appendix F pins.
+| Track | Current item | State | Since | Next action | Blocking on |
+|---|---|---|---|---|---|
+| Proof | Wave L15 (L15-UM, scope (a)) | CLOSED (gate `L15-gate` on dev `18c5c1d`) | 2026-11-20 | none scheduled: UM-3 (the Cameron-map chain) is a possible follow-up wave; every other Lean item stays FROZEN | Le (a new wave needs his approval) |
+| Release | v0.10.0 | LINKED (public tag on `261cc68`, version DOI 10.5281/zenodo.24295453; book Appendix F pins it) | 2026-11-18 | v0.11.0 (L15) only if Le wants one | Le |
+
+## Links
+- Paper progress: `../Progress.md` (mathematics authority); release sequencing: `RELEASE-PLAN.md` in this folder.
+- Companion repos: dev `github.com/chenle02/stratonovich-ham-second-moment-lean-dev` (PRIVATE; local `../../Project-stratonovich-ham-second-moment-lean`); public `github.com/chenle02/stratonovich-ham-second-moment-lean` (local `../../<PRIVATE-PROJECT>`), site on its gh-pages.
+- Registry: lean-pkg `stratonovich-ham-second-moment-lean` (status public, promoted at public `dc46f3a`, 2026-11-18).
+- Coverage: the companion's `coverage.yaml`, `COMPLETION.md` and `docs/statement-ledger.md`.
+
+## Status detail (kept current; updated at every milestone)
+
+Last updated: 2026-11-20: **wave L15 gate CLOSED by Le** at dev `18c5c1d` (tag `L15-gate`; gate record `54d3313` on dev main). Earlier: 2026-11-19: freeze lifted for **L15-UM only** (Le, 2026-11-19: "lift the freeze for L15-UM only and draft the L15 proposal"). L15 is PROPOSED below, not approved; nothing is built. The book is public (v1.0.0, 1.0.1, 1.0.2), and the companion is public at v0.10.0, the release the book's Appendix F pins.
 
 | Item | Current state |
 |---|---|
-| Current wave | **L15 RUNNING** (approved by Le 2026-11-19 with the default answers; scope (a): UM-0..UM-2, one agent on <MACHINE>). Every other Lean item stays FROZEN (Le, 2026-11-13) |
-| Last closed gate | **L13 and L14**, closed together by Le 2026-11-13 at companion `8f51004` over manuscript `a284420` (tags `L13-gate`, `L14-gate`). Previous: L12 at `56fc59e` |
+| Current wave | **none running**. L15 CLOSED 2026-11-20 (L15-UM, scope (a)). Every other Lean item stays FROZEN (Le, 2026-11-13); UM-3 is a possible follow-up wave on Le's word |
+| Last closed gate | **L15**, closed by Le 2026-11-20 at dev `18c5c1d` (tag `L15-gate`; receipts `4648b3c`; Easley evidence `c081b0d`; gate record `54d3313`; post-gate docs-only repairs `069d88f`, `09d3406` = dev main). Previous: L13 and L14 at `8f51004` |
 | Manuscript anchor | Companion line citations anchored to `39f2597a` (R; re-anchor reviewed and accepted with v0.10.0; dev tag `reanchor-39f2597a` on `402b646`). Book releases: v1.0.0 = original `86cf977b` (public `51a02011`, tag commit `643d1dcc`), v1.0.1 (public `a1c1a8e6`), v1.0.2 = original `c3c2431d` (public `a9d147d8`, tag commit `42fd6a0e`). R to v1.0.2 changes no cited line for v0.10.0 (zero-shift checks of every candidate F, G, 1.0.1, 1.0.2). R itself is a dropped merge in the public history; its TeX equals public `a6fc8b9b` |
 | Companion | PUBLIC: v0.10.0 (L14), `chenle02/stratonovich-ham-second-moment-lean`, tag `v0.10.0` on `261cc68`; version DOI 10.5281/zenodo.24295453, concept 10.5281/zenodo.24199104. main `d659c59` (docs-only since the tag: book release note, arXiv pin `arXiv:2611.23014v1` in coverage.yaml, book site and concept DOI 10.5281/zenodo.24342309 in README and CITATION.cff); gh-pages `a265332`. lean-pkg registry: status **public**, promoted at `dc46f3a` (2026-11-18). Development: `...-lean-dev` (PRIVATE), dev main `e9f7bf6`, branch `reanchor-39f2597a` `402b646` |
-| Claims | v0.10.0: 4502 (3653 theorems, 849 definitions); 1553 theorems compared by the comparator, 2100 helpers smoke-checked; ledger 2200/2200 required verified |
-| Coverage rows (101) | 64 same-assumptions, 35 inputs-supplied, 2 outside |
-| Manuscript labelled results (220 T/P/L/C; per-label table in the companion's COMPLETION.md) | 44 (20%) whole with the manuscript's hypotheses; 16 (7%) same hypotheses, narrower; 1 whole with named inputs supplied; 34 (15%) steps or narrower with inputs supplied; 2 (1%) outside (`T:full-upper`, `T:intrinsic-second-moment`); 123 (56%) not formalized. No theorem end to end |
-| Key named inputs still supplied | Waves L13-L14: `MixedMoment` (P:mixed), `DiagramLimits`, `FirstMomentSeries`, `SignedMultiplierForm`, `ThreeTransfer`, `TubeAttained`, `TubeTail`; earlier ones per the companion ledger (`BOUNDARIES.md`) |
-| Narrowed rows to restore | L15-UM targets one: `L:positive-raw-embedding` (narrower now; the mean identity `E:positive-raw-mean` and the canonical-version sentence are missing). Others stay frozen |
-| External kernel replay (Easley via <MACHINE>, `leanchecker --fresh`) | every library module through wave L14 passes at `8f51004` (142/142 plus default mode) |
+| Claims | at the L15 gate: 4705 (3803 theorems, 902 definitions); comparator 1577 credited + 2226 helpers smoke-checked; the nine claims naming Lean-generated instances of `UniformMeanInterface` dropped (still kernel-checked). Public v0.10.0: 4502 |
+| Coverage rows (102, at the L15 gate) | 64 same-assumptions, 36 inputs-supplied, 2 outside |
+| Manuscript labelled results (220 T/P/L/C; per-label table in the companion's COMPLETION.md) | At the L15 gate: 44 whole with the manuscript's hypotheses; 16 same hypotheses, narrower; 1 whole with named inputs supplied; 35 steps or narrower with inputs supplied; 2 outside (`T:full-upper`, `T:intrinsic-second-moment`); 122 not formalized. No theorem end to end |
+| Key named inputs still supplied | Wave L15: `UniformMeanRegulator` (contains `CameronSpatialMap`; scoped, omissions accepted by Le). Waves L13-L14: `MixedMoment` (P:mixed), `DiagramLimits`, `FirstMomentSeries`, `SignedMultiplierForm`, `ThreeTransfer`, `TubeAttained`, `TubeTail`; earlier ones per the companion ledger (`BOUNDARIES.md`) |
+| Narrowed rows to restore | none scheduled (frozen). `L:positive-raw-embedding` is narrower with inputs supplied after L15 (Le, 2026-11-20: keep narrower) |
+| External kernel replay (Easley via <MACHINE>, `leanchecker --fresh`) | every library module through wave L14 at `8f51004` (142/142 plus default); wave L15 at `315a332`: the 4 new modules `--fresh` 4/4, default mode 146/146 (`verification/leanchecker-easley-wave-l15/`, `c081b0d`) |
 | Book Appendix F (#24) | pinned to public v0.10.0 (coverage `142afced`, receipt commit `c8d8e07`, DOI 24295453) in v1.0.0 to v1.0.2. A later companion release changes Appendix F only if a book release re-pins it (Le's decision) |
-| Milestone tags (companion, annotated, pushed) | `L0-companion-created` ... `L12-gate` 56fc59e, `L13-gate` and `L14-gate` 8f51004, `reanchor-39f2597a` 402b646, `v0.10.0` 261cc68; a new tag at every gate closure |
+| Milestone tags (companion, annotated, pushed) | `L0-companion-created` ... `L12-gate` 56fc59e, `L13-gate` and `L14-gate` 8f51004, `reanchor-39f2597a` 402b646, `v0.10.0` 261cc68, `L15-gate` 18c5c1d; a new tag at every gate closure |
 | Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
 | Compute | Office (36 cores, 62 GB, 258 GB free, load below 1 on 2026-11-18) hosts L15; Easley only via <MACHINE> (Le, 2026-11-13). `lean-pkg page --site` on the full package takes 2 h 20 min to 2 h 40 min on <MACHINE>; start it right after the last coverage or claims change |
-| Decisions open for Le | the L15 gate (when reached); UM-3 as a follow-up wave; release of gaussian-chaos-lean (would open D1, K9; frozen) |
-| Next actions | Le answers the L15 decisions -> launch L15-UM on <MACHINE> -> gate (receipts, comparator, review per the decisions) -> companion v0.11.0 if Le wants a release |
+| Decisions open for Le | a companion release v0.11.0 (L15) or not; UM-3 as a follow-up wave; release of gaussian-chaos-lean (would open D1, K9; frozen) |
+| Next actions | none running. After #16 lifts the book-origin freeze: push this record. On Le's word: v0.11.0 (re-anchor to the then-current book release, public candidate, receipts, Zenodo) |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
 
@@ -785,6 +798,44 @@ Last updated: 2026-11-19: freeze lifted for **L15-UM only** (Le, 2026-11-19: "li
   displayed) were routed to #3 under decision 6; #3's proposals:
   `~/.local/state/Le-AI-Lab/stratonovich-L15-presentation-assessment-20261120/PROPOSED-CHANGES.md`
   (patch queue, Le's word pending).
+  **L15 GATE CLOSED by Le (2026-11-20).** Le, verbatim: "Re-run DeepSeek scope 4
+  split into 4a and 4b, one attempt each; I accept the extra
+  UniformMeanRegulator omission; keep L:positive-raw-embedding as narrower. Then
+  close the L15 gate: merge to dev main, tag L15-gate, update COMPLETION.md, and
+  record it on a held lean-progress branch." and, after DeepSeek returned no
+  report twice more, "Instead of DeepSeek, can you use GPT6.2Sol instead?"; then
+  "When DeepSeek scopes 4a and 4b report, adjudicate them, apply any doc repairs,
+  then close the L15 gate ... Report the SHAs."
+  Lean: four new modules (UniformMeanInterface, UniformMeanFoundation,
+  UniformELift, PositiveRawMean; 2234 lines; no sorry, standard axioms):
+  `uniform_E_lift_paper` (`L:uniform-E-lift`, nothing supplied; narrower: L_F
+  and the complex extension not formalized), `positive_raw_mean_paper`
+  (`E:positive-raw-mean` a.e. and the canonical version for a supplied
+  `UniformMeanRegulator`), density of real tests in H^(+-1/2) (used, not proved,
+  in the book). Gate commit dev `18c5c1d`: lower-tier receipt (0 sorry, 4705
+  claims standard axioms) and comparator receipt (1577 + 2226 pass) at
+  `4648b3c`; Easley `leanchecker` at `315a332` (4/4 --fresh, 146/146 default;
+  no library file changed after it). Reviews: DeepSeek V4 Pro scopes 1-3 (PASS,
+  PASS_WITH_NOTES, PASS_WITH_NOTES; one attempt each, no SessionRetry); scope 4
+  (documentation): DeepSeek NO_REPORT three times (32000-token client cap spent
+  in reasoning), then GPT-6.2-Sol on Le's word: first round FAIL (18 documentation
+  findings, all repaired at `48dad18`), confirmation 4a PASS_WITH_NOTES, 4b FAIL
+  on one wording overstatement, repaired with the minor notes at `04f6b6a`
+  without a further review round. Records: claims 4705 (nine Lean-generated
+  instance claims dropped), coverage 102 rows. Merged to dev main `54d3313`
+  (gate record, COMPLETION milestone `L15-gate`); tag `L15-gate` on `18c5c1d`.
+  Review folder: `~/.local/state/Le-AI-Lab/stratonovich-lean-wave-l15-review/`
+  (ADJUDICATION.md).
+  **After the gate (2026-11-20, docs only, receipts still bind `18c5c1d`):** two
+  GPT-6.2-Sol confirmation attempts on the wording repair `04f6b6a` (Le's word):
+  the first FAIL (one MAJOR left partly open, one new MAJOR from the repair: the
+  mean typed `L^r(I; K(E))` instead of `L^r(I; L(E))`), repaired at dev main
+  `069d88f`; the second INCONCLUSIVE (medium) because its packet lacked two
+  passages, with both MAJORs resolved and no new issue; #22 read the two
+  undecided passages directly. The last two MINOR wording notes were applied at
+  dev main `09d3406` without another model call (Le). Each commit passed the
+  scratch-registry `gate --check` as a docs-only descendant of `18c5c1d`. Book issues found by L15: three presentation fixes, accepted
+  by Le, released in book 1.1.0.
   Proposal as written (#22, 2026-11-19): Le, verbatim: "Yes, lift
   the freeze for L15-UM only and draft the L15 proposal in
   lean-progress/PROGRESS.md: items, the anchor check against v1.0.2, sizing on
@@ -2103,6 +2154,22 @@ Last updated: 2026-11-19: freeze lifted for **L15-UM only** (Le, 2026-11-19: "li
   kernel. These are the development record; the public companion packages 23 of
   the 26 seams (see above). The earlier 80/22 snapshot is superseded history.
 
+## Releases (append-only)
+
+### Release v0.9.0  [LINKED]  opened and closed: dates not recorded here
+- Scope: the wave-L9 state of the companion. Public: `github.com/chenle02/stratonovich-ham-second-moment-lean`, tag `v0.9.0` on `6cc04c1`; DOI commit `0966ef6`.
+- DOI: version 10.5281/zenodo.24199105, concept 10.5281/zenodo.24199104.
+- Other fields: not recorded here (see `RELEASE-PLAN.md` and the companion's README).
+
+### Release v0.10.0  [LINKED]  closed 2026-11-16 (public), linked 2026-11-18
+- Scope: waves L10 to L14 (gates L13/L14 at dev `8f51004`), re-anchored to book R `39f2597a`.
+- Release tree: public `c8d8e07` (tree of dev `09cfc11`); receipts `4fbbb89`; docs `261cc68` = tag `v0.10.0`.
+- PI approval: Le accepted v0.10.0 at `261cc68` (2026-11-16) and gave the go for the flip.
+- Public: tag `v0.10.0`; later docs-only commits on main up to `d659c59` (G note, arXiv pin `arXiv:2611.23014v1`, book site and concept DOI links).
+- DOI: version 10.5281/zenodo.24295453, concept 10.5281/zenodo.24199104.
+- Links: site on gh-pages (`a265332`); lean-pkg registry public, promoted at `dc46f3a` (2026-11-18); book Appendix F pins it (coverage `142afced`, receipt commit `c8d8e07`).
+- Next: v0.11.0 (L15) only on Le's word.
+
 ## Planned waves (strategy in ROADMAP.md)
 
 | Wave | Target | Opens when |
@@ -2115,6 +2182,7 @@ Last updated: 2026-11-19: freeze lifted for **L15-UM only** (Le, 2026-11-19: "li
 
 | Wave | State | Date | Evidence |
 |---|---|---|---|
+| L15 | CLOSED | 2026-11-20 | L15-UM scope (a); gate dev `18c5c1d` (tag `L15-gate`), receipts `4648b3c`, Easley `c081b0d`, docs `54d3313` on dev main; see the wave record |
 | L0 | PROPOSED | 2026-10-26 | Setup by session #4; no Lean code yet |
 | L0 | PROPOSED | 2026-10-28 | Readiness/strategy refresh after source and plane-endpoint reviews; creation approval still pending, no package or Lean verification |
 | L0 | CLOSED | 2026-11-09 | Companion created and registered (verified-private at 38d1616); 23 seams packaged, 3 GaussianChaos seams withheld; manuscript anchor cf979d6 |
