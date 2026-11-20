@@ -5,7 +5,38 @@ MINOR changes the mathematics but not the statement of any main theorem, and
 PATCH changes no mathematics. Results are named by label; labels do not change
 between versions, numbers may.
 
-## 1.0.3 — <!--s:release.date-->2026-11-20<!--/s-->
+## 1.1.0 — <!--s:release.date-->2026-11-20<!--/s-->
+
+Minor release: three statements and setup passages now say explicitly what
+their existing proofs establish. No result, constant, hypothesis or proof
+changes; the main theorems keep their statements.
+
+- **`L:uniform-E-lift`:** the statement now gives the defining property of the
+  potential $V$: $Mu = Vu$ as distributions for every $u \in C_c^\infty$, and
+  multiplication by $V$ on these tests extends continuously to
+  $M:H^{1/2}\to H^{-1/2}$. Before, "unique" had no stated property; the
+  property was only in the proof.
+- **`E:uniform-mean-row`:** the product defining $k_R(z,w)$ is named as the
+  continuous $H_{\mathrm{sp}}$-valued product of
+  `L:cameron-fractional-products`, which before was cited only inside a later
+  proof.
+- **Inner product of $E = H^{1/2}\times H^{-1/2}$:** displayed in Section
+  `S:uniform-mean-regulation`; it is the one fixed by the Sobolev norm
+  convention and the unitary $J_0$.
+- **How they were found and checked:** the Lean companion's wave L15 found the
+  three gaps while formalizing these sections; the fixes were reviewed by
+  DeepSeek V4 Pro (verdict pass, high confidence, no findings;
+  `reviews/2026-11-20-l15-presentation-deepseek/`).
+- **Version and date** on the title page, the imprint and the reading edition,
+  and the release links in the preface, Appendix G and the AI-use statement,
+  now name 1.1.0.
+- **Contributors:** Le Chen, with Amy (his AI research system); no outside
+  contributions. **Verification ledger:** no status changed.
+- **Archive:** tag `v1.1.0`; Zenodo, all versions:
+  [10.5281/zenodo.24342309](https://doi.org/10.5281/zenodo.24342309) (the
+  version DOI of 1.1.0 is assigned on release).
+
+## 1.0.3 — 2026-11-20
 
 Patch release: no mathematics changed.
 
