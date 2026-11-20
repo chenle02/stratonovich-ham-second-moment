@@ -1,5 +1,10 @@
 # Article-Stratonovich-HAM-Second-Moment — AGENTS.md
 
+Team: stratonovich. Charter:
+`<HOME>/workspace/Le-AI-Lab/docs/org/teams/stratonovich/TEAM.md`. Address
+teammates as @stratonovich or @stratonovich/ROLE (coordinator, reseal, lean,
+composition, video), never by #N, in anything that outlives the conversation.
+
 ## Project overview
 
 **Goal.** For the Stratonovich hyperbolic Anderson model with Gaussian noise
