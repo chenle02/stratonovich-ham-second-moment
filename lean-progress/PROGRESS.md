@@ -38,7 +38,7 @@ Last updated: 2026-11-20: **wave L15 gate CLOSED by Le** at dev `18c5c1d` (tag `
 | Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
 | Compute | Office (36 cores, 62 GB, 258 GB free, load below 1 on 2026-11-18) hosts L15; Easley only via <MACHINE> (Le, 2026-11-13). `lean-pkg page --site` on the full package takes 2 h 20 min to 2 h 40 min on <MACHINE>; start it right after the last coverage or claims change |
-| Decisions open for Le | the L16 gate (when reached); v0.11.0 after the L16 gate (L16 decision 10: one release covering L15 and L16); release of gaussian-chaos-lean (frozen) |
+| Decisions open for Le | the L16 gate (when reached); L17 approved (launch after the L16 gate closes); v0.11.0 after the L16 gate (L16 decision 10: one release covering L15 and L16); release of gaussian-chaos-lean (frozen) |
 | Next actions | probes -> L16-0 interface -> parallel items A1/A2/B1/B2/C/D on <MACHINE> -> L16 gate. After #16 lifts the book-origin freeze: push the held records |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
@@ -779,6 +779,420 @@ Last updated: 2026-11-20: **wave L15 gate CLOSED by Le** at dev `18c5c1d` (tag `
   dependencies fixed when L15 is proposed (line refs re-pinned by R0). Other
   L15 candidates noted in L12/L13: C8-C10 beyond F1,
   `L:pairing-product-envelope`.
+- **WAVE L17: APPROVED by Le (2026-11-20) as proposed, with the default answers to all twelve decisions.** Le, verbatim: "I approve L17 as proposed with the default answers to all twelve decisions. Record it in lean-progress/PROGRESS.md, run the Step-2 probe on <MACHINE>, and launch L17 only after the L16 gate closes." Corrections by #24 (formerly #22) on checking the draft against the TeX: `L:crude-corrected` begins at main line 1978 (not 1970); decision 12's "#3" is #46 after the 2026-11-20 fleet renumbering.
+  Proposal as written (#24, 2026-11-20): Le, verbatim: "At the
+  same time, shall we prepare L17?" (asked while the L16 gate runs). This is a draft only.
+  Nothing is built and no repository is changed. The Lean track stays FROZEN (Le,
+  2026-11-13) except for items Le approves one by one; this proposal asks for one such
+  approval. Basis: L16 as integrated on dev `wave-l16/int` `1d9883a` (docs part 1
+  `6485db9`). The draft assumes that the L16 gate closes on that content.
+
+  **Scope (recommended): the pairing-envelope chain.** Formalize the deterministic
+  core of Chapter 2's finite product bound for two ordered chains:
+  `L:translated-covariance-CS` (L16's optional item E, which was not done) and then
+  `L:pairing-product-envelope`, both whole. Then apply them on the diagram model M4
+  (`DiagramModel`, wave L13) to the deterministic halves of `L:crude-corrected` and
+  `P:envelope`, with the same reading L13 used for `P:d1-upper`: bounds proved for the
+  model diagrams at every noise width, and the moment sentences only through the
+  existing named inputs `MixedMoment` / `DiagramLimits`. No new analytic named input
+  is planned. All of it is deterministic: no gaussian-chaos-lean (D1, D5, K9), no
+  Hilbert tensor product, no `CutoffCompact`.
+
+  Why this one:
+  1. It is the standing next candidate. L13 deferred `L:pairing-product-envelope`
+     because it needs `L:translated-covariance-CS`. L16 decision 2 assigned it to "a later
+     wave with `L:translated-covariance-CS` as its first item".
+  2. It is the hub of Chapters 2-3. The envelope is used by `L:joint-fixed-order`
+     (main 1905), `L:crude-corrected` (1999, 2014), `L:vertex-crude` (2096) and
+     `P:envelope` (2395), and through `L:crude-corrected` by `T:full-upper` (its proof
+     cites `L:crude-corrected` once).
+  3. It is the only route that later shrinks the named-input list. The diagram half
+     of `L:joint-fixed-order` (marked-edge estimate `E:joint-temporal-tail`, main
+     1913-1925) is an application of the envelope. Without the envelope,
+     `DiagramLimits` (Riesz case) cannot be discharged.
+  4. It is self-contained and needs no new Mathlib theory: lintegrals over ordered
+     simplices, Fubini, monotone convergence and finite maxima. Its risk is
+     combinatorial (the induction), not missing foundations.
+
+  **Survey of the open work (what was considered and why it is not the default).**
+  1. *The eight named inputs still supplied after L16.*
+     - `MixedMoment` (`P:mixed`, main 834-849) and `FirstMomentSeries` (main 796,
+       5856-5857) are statements about the solution and its chaos terms, which are
+       not constructed. They need the noise and the L² chaos limits (D1/D5). Out.
+     - `DiagramLimits` (Riesz case) is deterministic. Its TeX proof (main 1864-1966)
+       uses `L:spatial-wick-measures` (1679-1848, not formalized) and the envelope (Step
+       2). It is feasible only **after** L17 (L18 candidate below).
+     - `SignedMultiplierForm` (`E:signed-multiplier-form`, signed_static 16-18) is about
+       an unbounded `v_V`. It needs KLMN and self-adjoint forms (full D8). Already proved
+       for bounded potentials. Out.
+     - `ThreeTransfer` (`P:three-transfer`, main 7537-7556 and its long proof) is very
+       long, with static inputs (L13/L14 exclusions). Out.
+     - `TubeAttained` and `TubeTail` (`L:tube-closed-geometry`, gaussian_tubes 158-162)
+       rest on the imported Borell-Sudakov-Tsirelson theorem for an infinite-dimensional
+       Gaussian. Out (D3; no Gaussian-measure layer).
+     - `CutoffCompact` (L16) is not scheduled (Le, 2026-11-20: "don't schedule the
+       cutoffCompact follow-up now"). It is listed below only as a possible later item.
+     - So none of the eight can be discharged in L17 from the companion's current
+       foundations. L16's compact-operator foundation, H^s scale, fractional products
+       and temporal map do not reach any of them: they serve the Cameron chain, and
+       `CutoffCompact` is its only remaining input. The envelope is the prerequisite
+       for the one dischargeable input (`DiagramLimits`).
+  2. *`L:translated-covariance-CS`, then `L:pairing-product-envelope`.* This is the
+     recommendation.
+  3. *C8-C10 beyond F1.* DEBT.md is gone, and the records identify only **C9**: the
+     supplied free group of `L:symplectic-free` (`FreeWaveData`; L14-K6d row,
+     "`L:symplectic-free` supplied free group (C9)", est. 600-900). The context
+     names C7 = `P:spatial-four-linear` (L14-O; done), C1 = covariance smoothing
+     (L12-C1; done), C2/C3 = the `L:fixed-split` / `P:interval-coefficients` docs
+     (L12-DOC; done), and L13 items C4-C6 (done). The records do not determine C8 and
+     C10. The L12 note "C8-C10 beyond F1 (they shrink input lists, change no class)"
+     and F1 (`E:fock-sandwich` of `C:static-interaction` and `P:static-phase-all-orders`)
+     suggest the remaining supplied inputs of those two results: `CPInputs`, the
+     imported Crouzeix-Palencia theorem, which Mathlib lacks; `PropagatorBlock`;
+     the Gaussian parity; and the first-variance bounds. None changes a class.
+     C9 is cheaper now because L15 built `E = H^(1/2) x H^(-1/2)` with its Fourier norm
+     (alternative 5 below).
+  4. *Narrower rows that could become whole.*
+     - `L:uniform-mean-tensor` (L16: finite tensors only) and the projection/tail half
+       of `P:uniform-mean-regulator`: both need the completed tensor product (item 5).
+     - `L:uniform-mean-cutoff`: uniqueness, and density of tests for every real sigma.
+       Density was part of the `CutoffCompact` overrun estimate.
+     - `L:positive-raw-embedding`: L16 records it as still narrower. The reasons are
+       spec-to-map identification and kernel completions; a small docs+Lean follow-up
+       could state "the specifications determine the maps" (cheap, 200-400 lines).
+       This is a candidate add-on (decision 6).
+     - The rate/cost-identification rows of the occupation chapter: the missing
+       identification is stochastic. Out.
+  5. *The regulator's projection and tail half: feasible now?* **Yes in principle at the
+     Mathlib pin `56a0058`.**
+     - Mathlib has `TensorProduct.instInnerProductSpace` on `E ⊗[𝕜] F`
+       (`Mathlib/Analysis/InnerProductSpace/TensorProduct.lean`, with `inner_tmul`) and
+       `TensorProduct.mapL` with `norm_mapL_le : ‖mapL f g‖ ≤ ‖f‖ * ‖g‖` (lines 603-607).
+     - `UniformSpace.Completion.innerProductSpace` exists, so
+       `Completion (H_t ⊗[ℝ] H_sp)` is a real Hilbert space, and `pi_J ⊗ P_K` extends
+       from `mapL` by continuity.
+     - The remaining work is mathematics, not missing Mathlib: the identification of
+       M5's kernel completion `H_I` with that completion (`L:cameron-supported-tensor`,
+       cameron 194-220), then `L:uniform-mean-spatial-tails` (uniform_mean 81-190) and
+       the second display of `E:uniform-completed-mean` (290-334).
+     - `L:uniform-mean-tensor` as a whole still needs the extension into
+       `L^r(I; G)`, which is not a Hilbert target. Use the TeX's Gaussian route or a
+       direct finite-tensor density argument.
+     - This is alternative 3 (2,500-4,500 lines, medium-high).
+  6. *High-value results near the main theorems (honest distance).*
+     - `T:full-upper` (main 4474-4945) needs:
+       - the constructed solution (`P:mild-construction`, which needs `L:vertex-crude`
+         and the L² limits of `L:joint-fixed-order`, D1);
+       - `P:mixed` (supplied);
+       - `P:interval-coefficients` (narrower, inputs supplied);
+       - `L:terminal-wick` and `L:uniform-series-tail` (whole);
+       - `L:fixed-split` (narrower).
+
+       L17 adds the deterministic upstream piece `L:crude-corrected` (diagram level).
+       The theorem stays outside Lean until the solution is constructed (gaussian-chaos /
+       D1). It is several waves away and not reachable without that foundation.
+     - `T:intrinsic-second-moment` (intrinsic_constant 437ff.) needs the Cameron-Martin
+       / actual-noise chain: `P:cameron-actual-embedding`, `P:uniform-actual-cameron`,
+       the source convergence chapter and `L:positive-uniform-optimizer`, all not
+       formalized, most of them stochastic. L16 closed the deterministic Cameron mean
+       maps. The stochastic remainder needs gaussian-chaos-lean. Not reachable in L17.
+
+  **Anchor check (2026-11-20).** Book 1.1.0 = `0788ddee` (public). The other revisions
+  are the companion's R `39f2597a`, v1.0.2 = `c3c2431d` and v1.0.3 = `dd4f1a78`. Here is
+  `git diff --numstat` on every TeX file this proposal cites:
+
+  | File | 39f2597a..c3c2431d | c3c2431d..dd4f1a78 | dd4f1a78..0788ddee | Cited lines moved? |
+  |---|---|---|---|---|
+  | `notes_stratonovich_ham_second_moment.tex` | +12 / -12 | +1 / -1 | identical | none. The only hunks are line 203 (title date) and 344-354 (front matter), 1:1 replacements. The file has 9276 lines at both ends, so every main-TeX line below is the same at R, v1.0.2, v1.0.3 and 1.1.0 |
+  | `integrated_uniform_mean.tex` (alt. 3 only) | identical | identical | +14 / -3 | yes, as in L16: lines after 10 shift by +7 and +11 (1.1.0 lines given) |
+  | `integrated_cameron_mean.tex` (alt. 3) | identical | identical | identical | none |
+  | `integrated_symplectic_phase.tex` (alt. 5) | identical | identical | identical | none |
+  | `integrated_compact_gaussian.tex` (later item) | identical | identical | identical | none |
+  | `integrated_intrinsic_constant.tex` (cited) | identical | identical | identical | none |
+  | `notes/figures/endpoint-elimination.tex` (figure after the envelope) | identical | identical | identical | none |
+
+  Line ranges at `0788ddee` (statement; proof). For the main TeX they are identical at
+  `39f2597a` and `c3c2431d`.
+
+  | Label / display | File | Lines at 0788ddee |
+  |---|---|---|
+  | setup "Covariance pairings of translated kernels" (`E:translated-covariance-form`) | main | 1156-1185 |
+  | `L:translated-covariance-CS` (`E:translated-covariance-CS` 1191-1193) | main | 1186-1197; 1199-1297 (Steps 1-4 begin at 1207, 1239, 1257, 1272) |
+  | setup of the section (edge data, `E:pairing-edge-norms`, `E:pairing-diagram-general`, admissible assignments, `E:pairing-product-general`) | main | 1434-1488 |
+  | `L:pairing-product-envelope` (`E:pairing-product-envelope` 1492-1495) | main | 1489-1500; 1502-1639 (Step 1 1510-1537 with `E:pairing-convolution-norms` 1527-1535; Step 2 1539-1595; Step 3 1598-1612; Step 4 1615-1627; Step 5 1631-1638) |
+  | `E:crude-norms` | main | 1970-1976 |
+  | `L:crude-corrected` (`E:crude-corrected`, `E:theta-envelope`) | main | 1978-1985; 1987-2054 |
+  | `L:vertex-crude` (optional) | main | 2062-2074; 2076-2145 |
+  | `P:envelope` (`E:homogeneous-envelope`, `E:B-envelope`, `E:envelope-growth`) | main | 2352-2373; 2375-2433 |
+  | `L:damped-homogeneous-norms` (used; whole since L12) | main | 1010-1055; 1057-1154 |
+  | `P:mixed` (named input `MixedMoment`, used) | main | 834-849 |
+  | `L:joint-fixed-order` (not targeted; `DiagramLimits` reading) | main | 1853-1862; 1864-1966 |
+  | alt. 2: `P:higher-transfer`; `C:higher-riesz`; `P:higher-obstructions` | main | 5936-5956; 5958-6098 / 6192-6197; 6199-6222 / 6230-6236; 6238-6300 |
+  | alt. 3: `L:cameron-supported-tensor` | cameron_mean | 194-200; 202-220 |
+  | alt. 3: `L:uniform-mean-spatial-tails`; `L:uniform-mean-tensor`; `P:uniform-mean-regulator` | uniform_mean | 81-99; 101-190 / 198-206; 208-255 / 272-288; 290-334 |
+  | alt. 5: `L:symplectic-free` | symplectic_phase | 31-61; 63-160 |
+  | later: `P:cutoff-singular-values` (compactness sentence) | compact_gaussian | 469-472; Step 1 487-519 |
+
+  Recommendation: anchor all new L17 citations to 1.1.0 (`0788ddee`). L16 already
+  re-anchors L15 to it (R1), so no re-anchor item is needed.
+
+  **What each target needs, and what the companion already has.**
+  - Already there:
+    - `DiagramModel` (M4, L13): two ordered chains on `Fin (m + n)`, `pred`/`incr`,
+      `twoSimplex`, pairings `Pi2` as involutions, `diagramPos` with nonnegative
+      kernels `g : ℝ → Rd d → ℝ≥0∞`, `card_Pi2` = `(2k-1)!!`, chain reversal.
+    - `DampedNormsHomog`, `DampedSmoothing`, `WaveGreen`: `N_0(theta) = theta^(-2)`,
+      the scalings `N_1(theta) = theta^(alpha+alpha0-2) N_1(1)` and
+      `N_2(theta)^2 = theta^(-beta) N_2(1)^2`, the multiplier comparisons and the
+      covariance smoothing (`L:damped-homogeneous-norms` whole). These give
+      `E:crude-norms` and `E:homogeneous-norms`.
+    - `SeriesType.log_factorial_bounds` (Stirling-type bounds for `P:envelope` Step 2).
+    - `RieszPositiveDefinite`: Gaussian subordination of Riesz powers.
+    - `D1Spatial`, `TwoSimplexTime`: time integrals on the model.
+    - `MixedMoment` and `DiagramLimits` as the established bridge from diagrams to
+      moments.
+    - Mathlib: `MeasureTheory.lmarginal` with `lmarginal_insert`/`lmarginal_union`
+      (`Integral/Marginal.lean`) for integrating out one vertex,
+      `integral_rpow_mul_exp_neg_mul_Ioi` (the Gamma mixture
+      `|t|^(-a) = Gamma(a)^(-1) ∫ lambda^(a-1) e^(-lambda |t|) d lambda`), `Finset.sup'`
+      for the finite maximum, and lintegral monotone convergence.
+  - `L:translated-covariance-CS` needs:
+    - the capped kernels `kappa_L`, `C_L` and `Q_L`, with the absolute bound
+      `m_L ||f||_1 ||h||_1`;
+    - the feature identity `∫ h_lambda(t,r) h_lambda(s,r) dr = e^(-lambda|t-s|)`;
+    - Cauchy-Schwarz for `Q_L`, with the common-translation invariance;
+    - the truncations `G_(i,M)` and monotone limits in M and in the cap L.
+
+    Route choice (decision 4): the TeX's route goes through a Bochner integral of the
+    norm-continuous feature map `Phi_L`. The proposed Lean route writes
+    `Q_L(f,h) = ∫ F_L f · conj(F_L h) d(nu x mu x dr)`, with
+    `F_L f(lambda,xi,r) = ∫ f(t,x) h_lambda(t,r) e^(i xi.x)`, by scalar Fubini, and then
+    applies Cauchy-Schwarz in `L^2(nu x mu x dr)`. This avoids proving norm continuity
+    and Bochner Fubini. It is the same feature-space argument without the
+    vector-valued integral. The review must accept it as a proof of Steps 1-2.
+  - `L:pairing-product-envelope` needs:
+    - a **general** two-chain pairing integral `I_D(G)` with per-edge data
+      `(nu_e on A_e, mu_e finite)`, kernels `G_l` on `(0,inf) x R^d`, infinite
+      positive simplices and relative coordinates;
+    - the norms `N_0`, `N_(1,e)` (Laplace-Fourier) and `N_(2,e)` (cap limit, using
+      `L:translated-covariance-CS`);
+    - the admissible assignments `A_D` (a nonempty Finset) and their products;
+    - Step 1: the convolution norms (mass multiplicativity, `|LG| <= N_0(G)`, and
+      Minkowski for `N_2` by the feature representation);
+    - Step 2: the regional half-bound, by induction on n with vertex removal and kernel
+      fusion `G_a * G_b`, plus the three-row slot table;
+    - Steps 3-4: same-chain and terminal endpoint cases, and the two-region split;
+    - Step 5: cap removal and the max of the finitely many limits.
+
+    M4's `Fin (m + n)` indexing is awkward for deleting vertices. The interface should
+    use a label-set model: chains as lists over a label type, edges as a Finset of
+    pairs, integrals by `lmarginal`. A bridge lemma then maps M4 pairings onto it
+    (decision 3).
+  - `L:crude-corrected` and `P:envelope` (deterministic halves) need:
+    - a bridge from M4 diagrams to `I_D`, with three parts:
+      - the damping trick: `e^(-theta(s_n+s_2n)) >= e^(-2 theta t)`, and extending
+        the finite-horizon simplex to infinite simplices;
+      - the time covariance `|s-r|^(-alpha0)` as the Gamma mixture with
+        `A_e = (0,inf)`;
+      - the spatial covariance at positive width `eps` as the Fourier transform of the
+        finite measure `e^(-eps|xi|^2/2) mu` (finite under `H:homog`, as
+        `L:damped-homogeneous-norms` already uses);
+    - then `E:theta-envelope` at every noise width, the choice
+      `theta = theta_0 + n/t`, `P_n n^(-2n) <= 2^n/n!` and the series bound
+      `(sum z^n/sqrt(n!))^2 <= 2 e^(2z^2)`;
+    - for `P:envelope`: `E:homogeneous-envelope` at every noise width, the infimum
+      `e^(beta k)(2t/(beta k))^(beta k)`, and `E:envelope-growth`
+      (`c t^rho <= log B_K <= C t^rho`, `rho = beta/(beta-1)`);
+    - the moment sentences (`E X_n^2`, `E u^2 <= ...`, `E u^2 <= B_K`) only for random
+      variables satisfying `MixedMoment`, as in `D1Upper`;
+    - the Green kernel as a density. That holds in d = 1 (`green1`) and in d = 2 (the
+      wave kernel `(2 pi)^(-1)(s^2-|x|^2)_+^(-1/2)`). In d = 3 the TeX first smooths
+      the Green measure (`p_eta * G`) and removes eta by an L² limit, which is
+      stochastic. In d = 3 the diagram-level bound is therefore stated for the smoothed
+      kernel, uniformly in eta (decision 5).
+
+  | Item | Target (1.1.0 lines) | Deliverable | Class after (fallback) | Size on <MACHINE> (estimate) |
+  |---|---|---|---|---|
+  | L17-0 (orchestrator, first) | interface | label-set two-chain model: chains, matchings, per-edge `(nu_e, mu_e, A_e)`, kernels `G_l : ℝ → Rd d → ℝ≥0∞`, `I_D` on the infinite positive simplices, `N_0`, `N_(1,e)`, `N_(2,e)` (cap iSup), `A_D`, `P_(Q,iota)`; the frozen statements `TranslatedCSTarget`, `ConvolutionNormsTarget`, `RegionalHalfBoundTarget` (Step 2's claim, 1539-1595), `PairingEnvelopeTarget`; the M4 bridge signature; fallback named inputs, each the exact TeX sentence: `ConvolutionNorms` (1527-1535), `RegionalHalfBound` (Step 2); every instance named | infrastructure; `docs/l17/INTERFACE.md` | 400-700 (L16: 518) |
+  | L17-A | `L:translated-covariance-CS` (main 1156-1297) | capped forms and absolute bound; feature identity; scalar-Fubini feature representation; Cauchy-Schwarz; common-translation invariance; truncations and cap limits in ℝ≥0∞; zero norms and measures included | whole (fallback: at finite cap L only, narrower) | 800-1,500 (risk: medium) |
+  | L17-B | envelope Step 1 and Step 5; envelope setup | `E:pairing-convolution-norms` (mass multiplicativity, `|LG| <= N_0`, `N_2(G*H) <= N_0(G) N_2(H)` by the feature representation from A); cap removal; finite max of limits; `n = 0` and empty-chain cases | proof steps (fallback: `ConvolutionNorms` named input) | 500-900 |
+  | L17-C | envelope Step 2 (1539-1595) | regional half-bound by induction on n: endpoint integration giving `N_(1,e0)`, `kappa` monotone, vertex deletion, kernel fusion at the successor, three-case slot table with counts `|Q_0| = |Q_1|`, `|Q_2|` even, factor 1/2 | proof step (fallback: `RegionalHalfBound` named input, true; the envelope then whole with inputs supplied) | 1,200-2,200 (risk: high) |
+  | L17-D | envelope Steps 3-4 and assembly (1598-1639) | same-chain case on the whole domain; terminal pair through `L:translated-covariance-CS` with separate origins; region split `{s_a <= s_q}` and its complement; `(P+P')/2 <= max`; `pairing_product_envelope_paper` | `L:pairing-product-envelope` whole (fallback: whole with `RegionalHalfBound` supplied) | 500-1,000 |
+  | L17-E | `L:crude-corrected` (1970-2054), `P:envelope` (2352-2433) | M4 -> `I_D` bridge (damping, Gamma mixture, finite smoothed spectral measure); `E:theta-envelope` and `E:homogeneous-envelope` for model diagrams at every noise width, d = 1, 2 (d = 3 with Green smoothing, uniform in eta); theta optimization, `P_n n^(-2n) <= 2^n/n!`, series bound; `B_K` infimum and `E:envelope-growth`; moment sentences for variables satisfying `MixedMoment` (`DiagramLimits` for limit coefficients) | both: not formalized -> inputs supplied, steps/narrower (narrower: solution not constructed; d = 3 only after Green smoothing); `E:envelope-growth` whole | 1,000-1,900 (bridge risk: medium-high) |
+  | L17-F (optional, spare capacity) | `P:nogo-01` (L12-NG3's no-go, Stirling growth) | from `E:envelope-growth` | no-go row whole | 100-300 |
+
+  Totals (estimates, not measurements): core L17-0..E 4,400-8,200 Lean lines, middle
+  about 6,000, plus 100-300 for F. That is about the L16 scale or a little smaller.
+  - Basis:
+    - L16 measured 7,281 lines against a core estimate of 4,900-9,100. Its items ran
+      9 to 22 Lean lines per TeX statement+proof line: cutoff 563/34, products
+      1,378/71, spatial 738/83, temporal 2,010/90.
+    - The targets here are about 142 TeX lines (A), 204 (envelope with setup) and
+      about 170 (E). Ratios of 6-14 apply because most of it is lintegral bookkeeping,
+      not new analysis, except C.
+  - Agents: four on <MACHINE>, as in L16: A (L17-A, then helps D), B (L17-B, then D),
+    C (L17-C), E (L17-E against the frozen `PairingEnvelopeTarget`, decoupled as L16-D
+    was). Expect about 1-1.5 working sessions (L16: one session for 7,281 lines).
+    C sets the pace: an induction over diagrams has no L15/L16 precedent. Add about
+    half a day for the gate.
+  - Labels expected to leave "not formalized": 4. Two become whole
+    (`L:translated-covariance-CS`, `L:pairing-product-envelope`) and two inputs-supplied
+    narrower (`L:crude-corrected`, `P:envelope`). `L:vertex-crude` stays not formalized:
+    M4 has one common width, not vertexwise widths (decision 2). No row moves
+    downward.
+
+  **Main risks, Mathlib gaps and true-named-input fallbacks.**
+  1. *The induction in Step 2 (high).* This is the main risk. Removing a vertex
+     changes the chain structure, fuses two kernels and drops an edge. The induction
+     hypothesis must be the full bound over all diagrams with n-1 edges, all kernel
+     families and all edge data. Lean has no diagram calculus; a poor model choice
+     costs days.
+     - Mitigation: the label-set model, frozen in L17-0 before C starts.
+     - A probe before launch (decision 7): prove the n = 1 cases and one slot-table
+       row on the model, about 150-300 lines, on <MACHINE>.
+     - Fallback: the true named input `RegionalHalfBound` (the claim proved in TeX
+       lines 1539-1595). The envelope is then whole with inputs supplied, and A, B, D
+       and E are unaffected.
+  2. *The bridge in E (medium-high).* M4 uses the full `|s-r|^(-alpha0)` on a
+     finite-horizon simplex and Green measures. The envelope takes per-edge Laplace
+     mixtures, finite spectral measures and kernel functions.
+     - Gaps: the Gamma mixture is in Mathlib. The wave Green kernel in d = 2 as a
+       density needs a short lemma: `WaveGreen` has it as a measure, so this is a
+       check-first item. d = 3 needs Green smoothing (decision 5).
+     - Fallback: E restricted to d = 1 (`green1`), narrower with "d = 2, 3 not
+       formalized".
+  3. *Laplace-Fourier transform (low).* There is no API, but `N_(1,e)` needs only the
+     definition and `|LG| <= N_0(G)` for `lambda >= 0`.
+  4. *Hilbert-valued integrals (low with the scalar route).* `L^2(nu x mu x dr)` over ℂ
+     is in Mathlib. The companion is real-valued elsewhere: the complex feature space
+     is used only inside A, with `Q` real-valued at the end.
+  5. *The ℝ≥0∞ conventions (low-medium).* The TeX allows zero norms and singular
+     diagonals. State everything in ℝ≥0∞ with the TeX's finiteness hypotheses kept,
+     since `0 * ∞ = 0` must not hide a case. The reviewers check this against the
+     TeX's "zero norms and measures are allowed" (1497-1499).
+
+  **Gate (as L15/L16, with their lessons).**
+  - Build and local checks:
+    - Local compile on <MACHINE> first. Then an Easley stage-2 pre-gate replay of the
+      integration commit, new modules only (Easley via <MACHINE>).
+    - Instances: every instance in a claimed module is named. A lint finds zero
+      anonymous `instance :` in the new modules before claims sync (L15 dropped nine
+      claims that named generated instances).
+    - Claims-name check: every `claims.yaml` name resolves in the built environment,
+      checked before receipts are cut.
+    - Then the scratch-registry `gate --check`, again after every docs-only commit.
+  - Receipts and records:
+    - Lower-tier receipt and comparator receipt.
+    - COMPLETION.md regenerated (milestone `L17-gate`).
+    - Coverage rows and statement-ledger rows, with named-input entries for any
+      fallback, citing per field the TeX lines that establish it (L15 note N3.1-N3.3).
+    - The model-choice register gets the new label-set two-chain model (M7) and its
+      bridge to M4.
+    - `lean-fence` and `lean-regress` at integration, with no regressions in the L13
+      diagram modules.
+    - Easley `leanchecker --fresh` of the new modules plus default mode over all
+      modules.
+  - Reviews:
+    - Statement scopes: DeepSeek V4 Pro (Le's main reviewer), tool-denied, one attempt
+      per scope, SessionRetry disclosed. Packets are split to fit under the 32000-token
+      output cap, or `OPENCODE_EXPERIMENTAL_OUTPUT_TOKEN_MAX` is raised (L15 scope 4:
+      three NO_REPORT on a 134 KB packet). The envelope's statement packet is small;
+      its model definitions need a scope of their own.
+    - Documentation scopes (ledger, coverage, COMPLETION, counts): GPT-6.2-Sol via
+      Codex (own codex-home, effort high). Each packet contains every cited TeX line.
+    - At most two repair rounds.
+  - Records and closure:
+    - The gate record goes on a held lean-progress branch while #16's book-origin
+      freeze holds. Sync <HUB> after every push.
+    - Le closes the gate; tag `L17-gate`.
+
+  **Decisions for Le (defaults in brackets).**
+  1. Scope: (a) L17-0..E; (b) (a) plus the optional F (`P:nogo-01`); (c) A..D only
+     (the two lemmas, no M4 consumers). [(a); F only if an agent is idle]
+  2. `L:vertex-crude`: out, because M4 has no vertexwise widths. Adding them to M4 is
+     a model change, so it is better done with `L:joint-fixed-order` later. [out]
+  3. Model: a new label-set two-chain model (register entry M7) with a bridge to M4,
+     rather than proving the induction on M4's `Fin (m + n)`. [yes]
+  4. Route for `L:translated-covariance-CS` Steps 1-2: scalar Fubini into
+     `L^2(nu x mu x dr)` instead of the Bochner integral of `Phi_L`. Disclose it in the
+     ledger as a route difference with the same feature space. [yes]
+  5. Dimensions in E: d = 1 and 2 with nothing beyond `MixedMoment`/`DiagramLimits`;
+     d = 3 stated for the Green-smoothed kernel uniformly in eta (eta-removal is the
+     stochastic L² limit, not formalized). [yes]
+  6. Add-on: state that L16's specifications `IsSpatialMeanMap` / `UTensorSpec` determine
+     the maps (uniqueness), closing L16's caveat (i) on `L:positive-raw-embedding`
+     (200-400 lines, docs + Lean). [no by default; yes if L16's gate review asks for it]
+  7. Probe before launch: Step 2 at n = 1 and one slot-table row on the label-set model
+     (Office, about half an hour). If the probe fails, launch with `RegionalHalfBound` as
+     the planned fallback. [yes]
+  8. Fallbacks: only true named inputs (`ConvolutionNorms`, `RegionalHalfBound`, each
+     the exact TeX claim with its lines), never surrogates. [yes]
+  9. Host and agents: Office, 4 agents in worktrees, `office-build.sh` (8G cap,
+     `LEAN_NUM_THREADS` <= 8); Easley only for the gate replay; Mathlib pin unchanged.
+     [yes]
+  10. Review routes: statements by DeepSeek V4 Pro (split packets or a raised cap);
+      documentation by GPT-6.2-Sol via Codex. [yes]
+  11. Release: L17 joins the next companion release. If v0.11.0 (L15+L16, L16 decision
+      11) is not yet cut when L17 closes, fold L17 into it. No book re-pin by default.
+      [fold if timing allows; otherwise v0.12.0]
+  12. Any manuscript defect L17 finds goes to #3 for a 1.1.x patch. Lean never narrows a
+      statement to hide it. [yes]
+
+  **Ranked alternatives (if Le prefers another L17).**
+  1. *(Recommended above.)* Pairing-envelope chain, 4,400-8,200 lines: 4 labels leave
+     "not formalized" and `DiagramLimits` becomes dischargeable later.
+  2. *L14-HT, approved 2026-11-12 and moved to the future list by the freeze.* Targets
+     `P:higher-transfer` (main 5936-6098), `C:higher-riesz` (6192-6222) and
+     `P:higher-obstructions` = `P:nogo-08` (6230-6300). The work: the debt B4 bridge
+     `smoothCov (riesz c alpha) eps`, Hoelder in time and the Gamma constants on M4,
+     and the divergence of translated wave convolutions. L14's estimate was
+     1,700-2,800 lines, medium risk. 3 labels move (`P:higher-obstructions` whole, two
+     narrower with `MixedMoment`). It is smaller and safer than 1, but a branch rather
+     than the hub. It is a good "light L17" or a companion item to 1 if a fifth agent
+     is free.
+  3. *Completed Hilbert tensor product package.* `Completion (H_t ⊗[ℝ] H_sp)` from
+     Mathlib's `TensorProduct.instInnerProductSpace` and `mapL`; then
+     `L:cameron-supported-tensor` (cameron 194-220) identified with M5's `H_I`; the
+     projection/tail half of `P:uniform-mean-regulator` (uniform_mean 290-334);
+     `L:uniform-mean-spatial-tails` (81-190); `L:uniform-mean-tensor` whole (198-255,
+     the `L^r(I;G)` extension). Estimate 2,500-4,500 lines, medium-high risk (the H_I
+     identification). It finishes the L16 Cameron chain short of `CutoffCompact`. The
+     next consumer, `P:uniform-actual-cameron` (363-505), is stochastic.
+  4. *No-go batch, approved in L12/L13 and frozen 2026-11-13.* L12 NG1-NG3 and L13 items
+     D5 and NG4 (the L13 item names, not the foundations D1/D5): about 15 `P:nogo-*`
+     rows, 3,900-6,500 lines at their estimates. Low risk, mostly probed. NG4's
+     `P:nogo-24` (`Lambda^(-gamma)` not compact) is cheaper now with
+     `CompactOperatorFoundation`. No-go rows are outside the 220-label count.
+  5. *C9: `L:symplectic-free` free group (L14-K6d).* The free group on L15's
+     `E = H^(1/2) x H^(-1/2)` as a Fourier-multiplier matrix, strong continuity and weak
+     nullity of translations; removes `FreeWaveData`. About 500-800 lines (cheaper than
+     L14's 600-900 because E exists). The row stays narrower (Young sums, D7), so there
+     is no class change.
+  6. *Operator layer K6a-c (L14, frozen).* Resolvent-form `P:variational-unmasked-rate`
+     operator half, `E:compact-quarter-power`, `P:compact-ground-family`. Estimate
+     1,600-2,800 lines, high risk. Several results stay narrower (D8).
+  7. *Later only (Le: not now): `CutoffCompact`.* The compactness sentence of
+     `P:cutoff-singular-values` (compact_gaussian 469-472, Step 1 487-519). It needs
+     the Fourier transform of a product as a convolution, a Schur-test kernel operator
+     on `HR d`, and density of tests in H^s for every real s. Estimate 1,100-1,500
+     lines, high risk.
+  8. *After L17: `DiagramLimits` (Riesz case).* `L:spatial-wick-measures` (main
+     1679-1848) plus the marked-edge estimate `E:joint-temporal-tail` (1913-1925, an
+     envelope application) give the deterministic half of `L:joint-fixed-order`. This
+     would discharge one of the eight named inputs. Size unknown until
+     `L:spatial-wick-measures` is read in full (its 150-line proof is not assessed
+     here).
+
+  **Could not be determined.**
+  - The contents of C8 and C10. Only C9 (`L:symplectic-free` free group) is named in
+    the records.
+  - The L16 gate's final counts (claims, rows, classes) and whether its review changes
+    anything L17 depends on (for example `CompactOperatorFoundation` names). Re-read
+    when the L16 gate closes.
+  - Whether `WaveGreen` already provides the d = 2 Green density as a function: check
+    it in L17-0.
+  - Whether DeepSeek's output cap can be raised on the current route.
+  - Office load at launch.
 - **WAVE L16: APPROVED by Le (2026-11-20) as proposed, with the default answers to all twelve decisions.** Le, verbatim: "I approve L16 as proposed with the default answers to all twelve decisions. Put the proposal into lean-progress/PROGRESS.md on the held branch, run the two compactness probes on <MACHINE> (L²-kernel compactness and CFC.sqrt), report the results, then launch L16." Launch after the probe results.
   Proposal as written (#22, 2026-11-20): Le, verbatim: "Shall we
   prepare L16 now?" Draft only: nothing is built, no repository is changed. The
