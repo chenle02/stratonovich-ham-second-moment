@@ -767,6 +767,24 @@ Last updated: 2026-11-19: freeze lifted for **L15-UM only** (Le, 2026-11-19: "li
   L15 candidates noted in L12/L13: C8-C10 beyond F1,
   `L:pairing-product-envelope`.
 - **WAVE L15: APPROVED by Le (2026-11-19) as proposed, with the default answers to all seven decisions.** Le, verbatim: "I approve L15 as proposed with the default answers to all seven decisions (scope (a) first). Push cc1182dd with the guard, sync <HUB>, then launch L15-UM on <MACHINE>." Scope (a): UM-0..UM-2, one agent; UM-3 is a later follow-up. Launched on <MACHINE> 2026-11-19.
+  **L15 interface frozen (2026-11-20)** at dev `06c3c6a` (branch `wave-l15/iface`;
+  `UniformMeanInterface.lean`, 480 lines, Office build 0 warnings, no sorry,
+  standard axioms; design in the companion's `docs/l15/INTERFACE.md`). Named
+  inputs `CameronSpatialMap` and `UniformMeanRegulator` carry only the parts
+  of `P:cameron-spatial-map` and `P:uniform-mean-regulator` that UM-1 and UM-2
+  use (not the F columns for L_F, the rough-state row, the explicit
+  M_0 = A_s M^2, or the regulator's projection and tail half). Le, verbatim
+  (2026-11-20): "The scoped named inputs CameronSpatialMap and
+  UniformMeanRegulator are acceptable; continue L15 with agents A and B and
+  report when both finish." The cold read of the structures against the TeX is
+  part of the decision-3 review. Agents A (UM-0, UM-1; `wave-l15/um01`) and B
+  (UM-2; `wave-l15/um2`) run in parallel on <MACHINE> (`~/l15wt/um01`, `um2`).
+  Three presentation issues found at v1.0.2 (`L:uniform-E-lift` lines 34-36:
+  V's defining property only in the proof; `E:uniform-mean-row` lines 15-20:
+  rough-state row's support cited only later; the E inner product never
+  displayed) were routed to #3 under decision 6; #3's proposals:
+  `~/.local/state/Le-AI-Lab/stratonovich-L15-presentation-assessment-20261120/PROPOSED-CHANGES.md`
+  (patch queue, Le's word pending).
   Proposal as written (#22, 2026-11-19): Le, verbatim: "Yes, lift
   the freeze for L15-UM only and draft the L15 proposal in
   lean-progress/PROGRESS.md: items, the anchor check against v1.0.2, sizing on
