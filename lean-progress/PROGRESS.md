@@ -10,7 +10,7 @@ Last updated: 2026-11-19: freeze lifted for **L15-UM only** (Le, 2026-11-19: "li
 
 | Item | Current state |
 |---|---|
-| Current wave | **L15 PROPOSED** (wave record "WAVE L15: PROPOSED"), awaiting Le's approval and answers to its decisions. Only item: L15-UM. Every other Lean item stays FROZEN (Le, 2026-11-13) |
+| Current wave | **L15 RUNNING** (approved by Le 2026-11-19 with the default answers; scope (a): UM-0..UM-2, one agent on <MACHINE>). Every other Lean item stays FROZEN (Le, 2026-11-13) |
 | Last closed gate | **L13 and L14**, closed together by Le 2026-11-13 at companion `8f51004` over manuscript `a284420` (tags `L13-gate`, `L14-gate`). Previous: L12 at `56fc59e` |
 | Manuscript anchor | Companion line citations anchored to `39f2597a` (R; re-anchor reviewed and accepted with v0.10.0; dev tag `reanchor-39f2597a` on `402b646`). Book releases: v1.0.0 = original `86cf977b` (public `51a02011`, tag commit `643d1dcc`), v1.0.1 (public `a1c1a8e6`), v1.0.2 = original `c3c2431d` (public `a9d147d8`, tag commit `42fd6a0e`). R to v1.0.2 changes no cited line for v0.10.0 (zero-shift checks of every candidate F, G, 1.0.1, 1.0.2). R itself is a dropped merge in the public history; its TeX equals public `a6fc8b9b` |
 | Companion | PUBLIC: v0.10.0 (L14), `chenle02/stratonovich-ham-second-moment-lean`, tag `v0.10.0` on `261cc68`; version DOI 10.5281/zenodo.24295453, concept 10.5281/zenodo.24199104. main `d659c59` (docs-only since the tag: book release note, arXiv pin `arXiv:2611.23014v1` in coverage.yaml, book site and concept DOI 10.5281/zenodo.24342309 in README and CITATION.cff); gh-pages `a265332`. lean-pkg registry: status **public**, promoted at `dc46f3a` (2026-11-18). Development: `...-lean-dev` (PRIVATE), dev main `e9f7bf6`, branch `reanchor-39f2597a` `402b646` |
@@ -25,7 +25,7 @@ Last updated: 2026-11-19: freeze lifted for **L15-UM only** (Le, 2026-11-19: "li
 | Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
 | Compute | Office (36 cores, 62 GB, 258 GB free, load below 1 on 2026-11-18) hosts L15; Easley only via <MACHINE> (Le, 2026-11-13). `lean-pkg page --site` on the full package takes 2 h 20 min to 2 h 40 min on <MACHINE>; start it right after the last coverage or claims change |
-| Decisions open for Le | the L15 decisions (wave record "WAVE L15: PROPOSED"); release of gaussian-chaos-lean (would open D1, K9; frozen) |
+| Decisions open for Le | the L15 gate (when reached); UM-3 as a follow-up wave; release of gaussian-chaos-lean (would open D1, K9; frozen) |
 | Next actions | Le answers the L15 decisions -> launch L15-UM on <MACHINE> -> gate (receipts, comparator, review per the decisions) -> companion v0.11.0 if Le wants a release |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
@@ -766,7 +766,8 @@ Last updated: 2026-11-19: freeze lifted for **L15-UM only** (Le, 2026-11-19: "li
   dependencies fixed when L15 is proposed (line refs re-pinned by R0). Other
   L15 candidates noted in L12/L13: C8-C10 beyond F1,
   `L:pairing-product-envelope`.
-- **WAVE L15: PROPOSED (#22, 2026-11-19; awaiting Le).** Le, verbatim: "Yes, lift
+- **WAVE L15: APPROVED by Le (2026-11-19) as proposed, with the default answers to all seven decisions.** Le, verbatim: "I approve L15 as proposed with the default answers to all seven decisions (scope (a) first). Push cc1182dd with the guard, sync <HUB>, then launch L15-UM on <MACHINE>." Scope (a): UM-0..UM-2, one agent; UM-3 is a later follow-up. Launched on <MACHINE> 2026-11-19.
+  Proposal as written (#22, 2026-11-19): Le, verbatim: "Yes, lift
   the freeze for L15-UM only and draft the L15 proposal in
   lean-progress/PROGRESS.md: items, the anchor check against v1.0.2, sizing on
   Office, and the decisions I need to answer." Scope: L15-UM only; C8-C10 and
