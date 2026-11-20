@@ -6,27 +6,27 @@
 
 ## Status (kept current; updated at every milestone)
 
-Last updated: 2026-11-13 (late): LEAN FREEZE after wave L14 (L13 and L14 gates closed by Le at companion `8f51004`; gate record `e9f7bf6`: receipts `698cc61`, Easley 142/142 `03d1ac8`). Le's decision: the book appendix (F/G) and the video series cite **L14 = public v0.10.0**, superseding v0.9.0. The v0.10.0 (L14) candidate is built (not pushed); it is re-anchored once, to the book release SHA R that #16 announces, then published (sequence: `RELEASE-PLAN.md`, last section).
+Last updated: 2026-11-19: freeze lifted for **L15-UM only** (Le, 2026-11-19: "lift the freeze for L15-UM only and draft the L15 proposal"). L15 is PROPOSED below, not approved; nothing is built. The book is public (v1.0.0, 1.0.1, 1.0.2), and the companion is public at v0.10.0, the release the book's Appendix F pins.
 
 | Item | Current state |
 |---|---|
-| Current wave | **FROZEN** after L14 (Le, 2026-11-13: no new Lean items). All waves L0-L14 closed by Le; L15-UM (uniform E-mean layer) scheduled but not started, left for future work. Remaining before v1.0.0: the R re-anchor (folded into v0.10.0) and the HYG pass |
+| Current wave | **L15 PROPOSED** (wave record "WAVE L15: PROPOSED"), awaiting Le's approval and answers to its decisions. Only item: L15-UM. Every other Lean item stays FROZEN (Le, 2026-11-13) |
 | Last closed gate | **L13 and L14**, closed together by Le 2026-11-13 at companion `8f51004` over manuscript `a284420` (tags `L13-gate`, `L14-gate`). Previous: L12 at `56fc59e` |
-| Manuscript anchor | Article `a284420` at the L14 gate. Re-anchor to the release SHA R pending (#16 cuts R after #3's scientific closure and Le's typesetting pass). Dry run against `98f45bed` (#3's C_dir rename): 8745 citations, 5093 shifted, 3427 unchanged, 225 hand-resolved, 4 previously wrong; attribution spot-check (Codex GPT-6.1-Sol) running. Adopted C_dir wording committed on dev branch `reanchor-98f45bed` (`1220baf`, comment-only, CheckFidelity 3653/3653) |
-| Companion | PUBLIC today: v0.9.0 (L9 state), `chenle02/stratonovich-ham-second-moment-lean` (tag `v0.9.0` on `6cc04c1`, DOI commit `0966ef6`; version DOI 10.5281/zenodo.24199105, concept 10.5281/zenodo.24199104; site on gh-pages). Next public: **v0.10.0 = L14** (candidate on public `ef2db0e`: `4135075` tree, `61f219e` receipts, `01134ea` site note, `135813c` count fix; not pushed; rebuilt after the R re-anchor). Development: `...-lean-dev` (PRIVATE; tags `L0-companion-created` ... `L14-gate`); dev main `e9f7bf6`; v0.10.0 dev branch `release/v0.10.0-l14` `8df39cd` |
-| Claims | 4504 (3654 theorems, 850 definitions) at the L14 gate; v0.10.0: 4502 (two claims naming Lean-generated declarations dropped), 3653 claimed theorems (1553 compared by the comparator, 2100 helpers smoke-checked), 962 public definitions |
-| Coverage rows (101, at the L14 gate) | 64 same-assumptions, 35 inputs-supplied, 2 outside |
-| Manuscript labelled results (220 T/P/L/C at `a284420`; per-label table in the companion's COMPLETION.md) | At the L14 gate: 44 (20%) whole with the manuscript's hypotheses; 16 (7%) same hypotheses, narrower; 1 whole with named inputs supplied; 34 (15%) steps or narrower with inputs supplied; 2 (1%) outside (main theorems `T:full-upper`, `T:intrinsic-second-moment`); 123 (56%) not formalized. No theorem end to end |
-| Key named inputs still supplied | Waves L13-L14 named inputs: `MixedMoment` (P:mixed), `DiagramLimits`, `FirstMomentSeries`, `SignedMultiplierForm`, `ThreeTransfer`, `TubeAttained`, `TubeTail`; earlier ones per the companion ledger (`BOUNDARIES.md`) |
-| Narrowed rows to restore | none open: the Lean work is frozen; narrower rows are listed in the companion's COMPLETION.md |
-| External kernel replay (Easley via <MACHINE>, `leanchecker --fresh`) | every library module through wave L14 passes, all at `8f51004` (142/142 plus default mode; `verification/leanchecker-easley-wave-l13-l14/`), two tasks per node (`--mem=48G`) |
-| Book Appendix F (#24) | to be re-pinned to public v0.10.0 (L14) after it is published (Le's decision; #24 does F/G, #16 the front-door files; #22's remap R -> candidate must show 0 shifted citations). Open for Le: wording now that two of four main theorems are outside Lean (preface.tex:62 and Appendix F) |
-| Milestone tags (companion, annotated, pushed) | `L0-companion-created` 38d1616, `ledger-gate` 48ce162, `L1-gate` b876362, `L2-gate` 79afdde, `L3-gate` dfc2fe8, `L4-gate` ac6f767, `reanchor-975feb3` d40f394, `L5-gate` 712c307, `L6-gate` bfa2fd0, `L7-gate` f3be834, `L8-gate` aff7409, `L9-gate` 6eb79c7, `L10-gate` b2bf7a9, `L11-gate` b780f10, `L12-gate` 56fc59e, `L13-gate` and `L14-gate` 8f51004; a new tag at every gate closure |
+| Manuscript anchor | Companion line citations anchored to `39f2597a` (R; re-anchor reviewed and accepted with v0.10.0; dev tag `reanchor-39f2597a` on `402b646`). Book releases: v1.0.0 = original `86cf977b` (public `51a02011`, tag commit `643d1dcc`), v1.0.1 (public `a1c1a8e6`), v1.0.2 = original `c3c2431d` (public `a9d147d8`, tag commit `42fd6a0e`). R to v1.0.2 changes no cited line for v0.10.0 (zero-shift checks of every candidate F, G, 1.0.1, 1.0.2). R itself is a dropped merge in the public history; its TeX equals public `a6fc8b9b` |
+| Companion | PUBLIC: v0.10.0 (L14), `chenle02/stratonovich-ham-second-moment-lean`, tag `v0.10.0` on `261cc68`; version DOI 10.5281/zenodo.24295453, concept 10.5281/zenodo.24199104. main `d659c59` (docs-only since the tag: book release note, arXiv pin `arXiv:2611.23014v1` in coverage.yaml, book site and concept DOI 10.5281/zenodo.24342309 in README and CITATION.cff); gh-pages `a265332`. lean-pkg registry: status **public**, promoted at `dc46f3a` (2026-11-18). Development: `...-lean-dev` (PRIVATE), dev main `e9f7bf6`, branch `reanchor-39f2597a` `402b646` |
+| Claims | v0.10.0: 4502 (3653 theorems, 849 definitions); 1553 theorems compared by the comparator, 2100 helpers smoke-checked; ledger 2200/2200 required verified |
+| Coverage rows (101) | 64 same-assumptions, 35 inputs-supplied, 2 outside |
+| Manuscript labelled results (220 T/P/L/C; per-label table in the companion's COMPLETION.md) | 44 (20%) whole with the manuscript's hypotheses; 16 (7%) same hypotheses, narrower; 1 whole with named inputs supplied; 34 (15%) steps or narrower with inputs supplied; 2 (1%) outside (`T:full-upper`, `T:intrinsic-second-moment`); 123 (56%) not formalized. No theorem end to end |
+| Key named inputs still supplied | Waves L13-L14: `MixedMoment` (P:mixed), `DiagramLimits`, `FirstMomentSeries`, `SignedMultiplierForm`, `ThreeTransfer`, `TubeAttained`, `TubeTail`; earlier ones per the companion ledger (`BOUNDARIES.md`) |
+| Narrowed rows to restore | L15-UM targets one: `L:positive-raw-embedding` (narrower now; the mean identity `E:positive-raw-mean` and the canonical-version sentence are missing). Others stay frozen |
+| External kernel replay (Easley via <MACHINE>, `leanchecker --fresh`) | every library module through wave L14 passes at `8f51004` (142/142 plus default mode) |
+| Book Appendix F (#24) | pinned to public v0.10.0 (coverage `142afced`, receipt commit `c8d8e07`, DOI 24295453) in v1.0.0 to v1.0.2. A later companion release changes Appendix F only if a book release re-pins it (Le's decision) |
+| Milestone tags (companion, annotated, pushed) | `L0-companion-created` ... `L12-gate` 56fc59e, `L13-gate` and `L14-gate` 8f51004, `reanchor-39f2597a` 402b646, `v0.10.0` 261cc68; a new tag at every gate closure |
 | Completion table | companion `COMPLETION.md` (milestones + status of all 220 labelled results), regenerated at every milestone |
 | Board (docs/community) | `2c54248`: L7 closure recorded; B3, B4, B9 reserved |
-| Compute | Easley ROUTING (Le, 2026-11-13): "Now, Easley needs to be reached via <MACHINE>" — every Easley command and transfer goes through Office (`ssh <MACHINE> "ssh Easley bash -s"`, scratch helper `E.sh`); no direct `ssh Easley` from <MACHINE>. Office: L13 integration (K5b); <MACHINE>: L12 and L14 integration; <MACHINE>: release candidate v0.9.0, L11 repairs; Easley (via <MACHINE>): L10 array and Slurm receipt |
-| Decisions open for Le | acceptance of the R re-anchor (after review); the main-theorems wording (via #24); release of gaussian-chaos-lean (would open D1, K9; frozen) |
-| Next actions | Wait for R from #16 -> `run_reanchor.sh R` -> rebuild the v0.10.0 public candidate and receipts -> re-anchor review and confirmation -> Le accepts -> publish v0.10.0 (tag, release, DOI) -> send pins to #24/#16/#29 -> remap check R -> book candidate -> docs-only note recording F. HYG pass before v1.0.0 |
+| Compute | Office (36 cores, 62 GB, 258 GB free, load below 1 on 2026-11-18) hosts L15; Easley only via <MACHINE> (Le, 2026-11-13). `lean-pkg page --site` on the full package takes 2 h 20 min to 2 h 40 min on <MACHINE>; start it right after the last coverage or claims change |
+| Decisions open for Le | the L15 decisions (wave record "WAVE L15: PROPOSED"); release of gaussian-chaos-lean (would open D1, K9; frozen) |
+| Next actions | Le answers the L15 decisions -> launch L15-UM on <MACHINE> -> gate (receipts, comparator, review per the decisions) -> companion v0.11.0 if Le wants a release |
 
 ## Wave records (history; the newest entries are the bullets near the top of this list and the wave log below)
 
@@ -766,6 +766,85 @@ Last updated: 2026-11-13 (late): LEAN FREEZE after wave L14 (L13 and L14 gates c
   dependencies fixed when L15 is proposed (line refs re-pinned by R0). Other
   L15 candidates noted in L12/L13: C8-C10 beyond F1,
   `L:pairing-product-envelope`.
+- **WAVE L15: PROPOSED (#22, 2026-11-19; awaiting Le).** Le, verbatim: "Yes, lift
+  the freeze for L15-UM only and draft the L15 proposal in
+  lean-progress/PROGRESS.md: items, the anchor check against v1.0.2, sizing on
+  Office, and the decisions I need to answer." Scope: L15-UM only; C8-C10 and
+  `L:pairing-product-envelope` stay frozen.
+
+  **Anchor check against v1.0.2 (original `c3c2431d`, public `a9d147d8`).** The
+  three files L15-UM reads are byte-identical in R `39f2597a` and in v1.0.2:
+  `integrated_intrinsic_constant.tex`, `integrated_uniform_products.tex` and
+  `integrated_uniform_mean.tex` (empty `git diff` R..c3c2431d). The
+  `integrated_cameron_mean.tex` file of `P:cameron-spatial-map` is unchanged
+  too. The line numbers recorded at the L15 scheduling (a284420) are stale,
+  because the readability pass moved them before R. At v1.0.2:
+  `L:positive-raw-embedding` statement 23-40, proof 42-130 (`E:positive-raw-mean`
+  at 34); `L:uniform-E-lift` 33-65 (`E:uniform-E-pairing` 37);
+  `E:uniform-mean-row` 15; `L:uniform-mean-cutoff` 29-61;
+  `L:uniform-mean-spatial-tails` 71-177; `L:uniform-mean-tensor` 188-243;
+  `P:uniform-mean-regulator` 262-320; `P:cameron-spatial-map`
+  (integrated_cameron_mean.tex) 104-140. L15 anchors new citations to v1.0.2
+  directly; its proof modules cite v1.0.2 lines. The rest of the companion stays
+  on R (the same text) until a full re-anchor (decision 4).
+
+  **What the target needs (read at v1.0.2).** `E:positive-raw-mean` states
+  `T_R Psi(s) = B_E(m_R h_(Psi,s))` a.e., where the uniform E mean is
+  `T_R(C_t (x) I)`. T_R is the E restriction of `P:cameron-spatial-map` (a
+  compact spatial mean map into K(E), E = H^{1/2} x H^{-1/2}), its row is
+  `E:uniform-mean-row`, its L^r(I; K(E)) bound (2 < r < 2/a) is
+  `P:uniform-mean-regulator`, and B_E is the E operator of `L:uniform-E-lift`.
+  None of these five is in the companion (COMPLETION.md: not formalized; no Lean
+  file cites them). What exists: L14-K1a `OccupationCompletion` (999 lines; H_t,
+  H_I, J_G; both identities of `E:occupation-raw-identities`), K1b
+  `SourceHeatGram` (926 lines), `RemoveMask` (85 lines; mask chi(|x|/R)).
+  So "close `L:positive-raw-embedding`" needs either the Cameron-map chain or
+  named inputs for it (decision 1).
+
+  | Item | Target (v1.0.2 lines) | Deliverable | Class after (fallback) | Size on <MACHINE> |
+  |---|---|---|---|---|
+  | UM-0 | anchor and objects | L15 citations at v1.0.2; E = H^{1/2} x H^{-1/2} on the companion's Bessel-potential spaces (L13 K5 layer); the cutoff eta, eta_R, m_R = eta_R^2, and the identification with `RemoveMask.mask` where the TeX needs it | infrastructure | 1 agent, about 0.5 day, 300-500 Lean lines |
+  | UM-1 | `E:uniform-mean-row` (15), `L:uniform-E-lift` (33-65) | T_R defined through its explicit row k_R(z,w) = (eta_R z_1)(eta_R Lambda^{-1} w_2); B_E(V)(u,v) = (0, Vu) and the pairing bound `E:uniform-E-pairing` | `L:uniform-E-lift`: whole for the operator form and the pairing bound; the lift L_F into the signed-static class narrower (it needs that class) | 1 agent, about 1 day, 500-900 lines |
+  | UM-2 | `E:positive-raw-mean` (34), canonical-version sentence (38-39), proof 42-130 | the a.e. identity T_R Psi(s) = B_E(m_R h_(Psi,s)) and the canonical version for smooth Psi, from K1a's H_I and J_G | `L:positive-raw-embedding`: whole if decision 1 is (b); inputs-supplied with named `CameronSpatialMap` and `UniformMeanRegulator` if (a) | 1 agent, about 1-1.5 days, 600-1000 lines |
+  | UM-3 (only with decision 1 (b)) | `P:cameron-spatial-map` (104-140), `L:uniform-mean-cutoff` (29-61), `L:uniform-mean-spatial-tails` (71-177), `L:uniform-mean-tensor` (188-243), `P:uniform-mean-regulator` (262-320) | compactness of the spatial mean map into K(E), uniform multiplier and tail bounds, the Hilbert tensor extension, the L^r(I; K(E)) bound | each whole or narrower with named inputs; four labelled results move from not formalized | 2 agents in parallel, 3-5 days, 2500-4000 lines; Easley replay of the new modules |
+
+  Totals: decision 1 (a): UM-0..UM-2, one agent, 2.5-3 days, about 1400-2400
+  Lean lines. Decision 1 (b): add UM-3, a second agent, about 6-8 days in all,
+  about 4000-6500 lines. Office has 36 cores and 62 GB; each agent builds with
+  `LEAN_NUM_THREADS` at most 8 (two agents fit), locally first; Easley (via
+  Office) only for the gate replay. Line counts are estimates from the TeX
+  length (`L:positive-raw-embedding` 107 TeX lines; the UM-3 chain 292) and the
+  sizes of L13/L14 modules of similar kind, not measurements.
+
+  Gate as L12-L14: lower-tier receipt and comparator receipt at the gate commit,
+  claims synced, COMPLETION.md regenerated, statement-ledger rows and their
+  correspondence review, Easley `leanchecker --fresh` replay of the new modules,
+  Le closes the gate.
+
+  Decisions for Le (defaults in brackets):
+  1. Scope of the mean identity: (a) UM-0..UM-2 with `P:cameron-spatial-map` and
+     `P:uniform-mean-regulator` entering as named inputs, so
+     `L:positive-raw-embedding` becomes inputs-supplied, not whole; or (b) also
+     UM-3, so it can become whole and four more labelled results are
+     formalized. [(a) first; (b) as a follow-up wave if (a) shows no defect]
+  2. Host and agents: Office, one agent for (a), two for (b); local compile
+     first, Easley via <MACHINE> only for the gate replay. [yes]
+  3. Correspondence review of the new ledger rows: DeepSeek V4 Pro (the
+     designated main reviewer), tool-denied, one attempt per scope, with any
+     OpenCode SessionRetry disclosed as under Choice B. [yes]
+  4. Anchor: new L15 citations to v1.0.2; the rest of the companion stays on R
+     (same text) until the next release, when the whole companion is
+     re-anchored to the then-current book release with the reviewed tool. [yes]
+  5. Release: after the gate, companion v0.11.0 (tag, GitHub release, Zenodo
+     version DOI), docs-only notes as usual. The book keeps pinning v0.10.0
+     until a book release re-pins Appendix F. [v0.11.0 after the gate; no book
+     re-pin]
+  6. A manuscript defect found by L15: record it and route the repair to #3 as a
+     book patch release (1.0.x), as for the earlier waves; Lean never narrows a
+     statement to hide it. [yes]
+  7. Mask identification: if `RemoveMask.mask` chi(|x|/R) and m_R = eta(./R)^2
+     differ where the TeX needs one, use m_R in the new modules and record the
+     relation, without changing the L14 modules. [yes]
 - **EASLEY STAGE 2 APPROVED (Le, 2026-11-12).** Le, verbatim: "I approve
   Easley stage 2: pilot lower-tier receipts via lean-pkg receipt slurm at the
   L9 gate (compare with a local receipt at the same commit) and run pre-gate
