@@ -8,7 +8,7 @@
 
 | Track | Current item | State | Since | Next action | Blocking on |
 |---|---|---|---|---|---|
-| Proof | Wave L16 (Cameron-map chain: discharge `CameronSpatialMap` and `UniformMeanRegulator`) | APPROVED, probes then launch | 2026-11-20 | compactness probes on <MACHINE>, then the L16-0 interface | probe results |
+| Proof | Wave L16 (Cameron-map chain: discharge `CameronSpatialMap` and `UniformMeanRegulator`) | PROVING (integrated on dev `wave-l16/int` `1d9883a`; gate records running) | 2026-11-20 | gate: records, receipts, reviews, Easley replay | the gate steps, then Le's closure |
 | Release | v0.10.0 | LINKED (public tag on `261cc68`, version DOI 10.5281/zenodo.24295453; book Appendix F pins it) | 2026-11-18 | v0.11.0 (L15) only if Le wants one | Le |
 
 ## Links
