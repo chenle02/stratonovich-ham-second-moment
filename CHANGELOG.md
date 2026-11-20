@@ -23,9 +23,9 @@ Patch release: no mathematics changed.
   now name 1.0.2.
 - **Contributors:** Le Chen, with Amy (his AI research system); no outside
   contributions. **Verification ledger:** no status changed.
-- **Archive:** tag `v1.0.2`; Zenodo, all versions:
-  [10.5281/zenodo.24342309](https://doi.org/10.5281/zenodo.24342309) (the
-  version DOI of 1.0.2 is assigned on release; see the Zenodo record).
+- **Archive:** tag `v1.0.2`; Zenodo
+  [10.5281/zenodo.24371883](https://doi.org/10.5281/zenodo.24371883) (all
+  versions: [10.5281/zenodo.24342309](https://doi.org/10.5281/zenodo.24342309)).
 
 ## 1.0.1 — 2026-11-17
 
