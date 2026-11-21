@@ -5,7 +5,29 @@ MINOR changes the mathematics but not the statement of any main theorem, and
 PATCH changes no mathematics. Results are named by label; labels do not change
 between versions, numbers may.
 
-## 1.1.1 — <!--s:release.date-->2026-11-20<!--/s-->
+## 1.1.2 — <!--s:release.date-->2026-11-21<!--/s-->
+
+Patch release: no mathematics changed.
+
+- **Lean records:** `lean-progress/` records the close of the Lean
+  companion's wave L17 (the pairing-envelope chain) and the approval of wave
+  L18 (spatial Wick measures and the deterministic half of
+  `L:joint-fixed-order`); the state file's status for L18 now matches the
+  progress table. The companion's own release is unchanged, v0.10.0.
+- **Agent instructions:** `AGENTS.md` names the team of AI agents that works
+  on the repository and how they address each other.
+- **Changelog record:** the 1.1.1 entry gives its version DOI,
+  10.5281/zenodo.24409700.
+- **Version and date** on the title page, the imprint and the reading edition,
+  and the release links in the preface, Appendix G and the AI-use statement,
+  now name 1.1.2 of 21 November 2026.
+- **Contributors:** Le Chen, with Amy (his AI research system); no outside
+  contributions. **Verification ledger:** no status changed.
+- **Archive:** tag `v1.1.2`; Zenodo, all versions:
+  [10.5281/zenodo.24342309](https://doi.org/10.5281/zenodo.24342309) (the
+  version DOI of 1.1.2 is assigned on release).
+
+## 1.1.1 — 2026-11-20
 
 Patch release: no mathematics changed.
 
@@ -20,9 +42,9 @@ Patch release: no mathematics changed.
   1.1.1.
 - **Contributors:** Le Chen, with Amy (his AI research system); no outside
   contributions. **Verification ledger:** no status changed.
-- **Archive:** tag `v1.1.1`; Zenodo, all versions:
-  [10.5281/zenodo.24342309](https://doi.org/10.5281/zenodo.24342309) (the
-  version DOI of 1.1.1 is assigned on release).
+- **Archive:** tag `v1.1.1`; Zenodo
+  [10.5281/zenodo.24409700](https://doi.org/10.5281/zenodo.24409700) (all
+  versions: [10.5281/zenodo.24342309](https://doi.org/10.5281/zenodo.24342309)).
 
 ## 1.1.0 — 2026-11-20
 
