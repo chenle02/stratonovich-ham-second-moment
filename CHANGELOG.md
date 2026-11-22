@@ -5,7 +5,26 @@ MINOR changes the mathematics but not the statement of any main theorem, and
 PATCH changes no mathematics. Results are named by label; labels do not change
 between versions, numbers may.
 
-## 1.1.2 — <!--s:release.date-->2026-11-21<!--/s-->
+## 1.1.3 — <!--s:release.date-->2026-11-22<!--/s-->
+
+Patch release: no mathematics changed.
+
+- **Lean records:** `lean-progress/` records the close of the Lean
+  companion's wave L18 (spatial Wick measures and the deterministic half of
+  `L:joint-fixed-order`) and the approval and opening of wave L19. The
+  companion's own release is unchanged, v0.10.0.
+- **Changelog record:** the 1.1.2 entry gives its version DOI,
+  10.5281/zenodo.24422791.
+- **Version and date** on the title page, the imprint and the reading edition,
+  and the release links in the preface, Appendix G and the AI-use statement,
+  now name 1.1.3 of 22 November 2026.
+- **Contributors:** Le Chen, with Amy (his AI research system); no outside
+  contributions. **Verification ledger:** no status changed.
+- **Archive:** tag `v1.1.3`; Zenodo, all versions:
+  [10.5281/zenodo.24342309](https://doi.org/10.5281/zenodo.24342309) (the
+  version DOI of 1.1.3 is assigned on release).
+
+## 1.1.2 — 2026-11-21
 
 Patch release: no mathematics changed.
 
@@ -23,9 +42,9 @@ Patch release: no mathematics changed.
   now name 1.1.2 of 21 November 2026.
 - **Contributors:** Le Chen, with Amy (his AI research system); no outside
   contributions. **Verification ledger:** no status changed.
-- **Archive:** tag `v1.1.2`; Zenodo, all versions:
-  [10.5281/zenodo.24342309](https://doi.org/10.5281/zenodo.24342309) (the
-  version DOI of 1.1.2 is assigned on release).
+- **Archive:** tag `v1.1.2`; Zenodo
+  [10.5281/zenodo.24422791](https://doi.org/10.5281/zenodo.24422791) (all
+  versions: [10.5281/zenodo.24342309](https://doi.org/10.5281/zenodo.24342309)).
 
 ## 1.1.1 — 2026-11-20
 
