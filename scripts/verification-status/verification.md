@@ -1,6 +1,6 @@
 <!-- Pinned by pin_verification.py from the verification ledger; do not edit by hand. -->
-ledger-date: 2026-11-16T20:02:44-05:00
-lean-coverage-commit: 6e83b60
+ledger-date: 2026-11-23T15:55:03-05:00
+lean-coverage-commit: 3bd5c06
 
 | Label | Group | Kind | Title | File | AI review | Lean | Human |
 |---|---|---|---|---|---|---|---|
@@ -9,17 +9,17 @@ lean-coverage-commit: 6e83b60
 | `P:Jensen` | I | Proposition | Jensen lower bound | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
 | `T:intro-upper` | I | Theorem | Upper bound at the correct scale | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
 | `T:intro-second-moment` | I | Theorem | Second-moment limit | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
-| `P:mixed` | I | Proposition | Mixed terms | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
-| `L:white-test` | I | Lemma | White-space test | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | steps checked (17 Lean claims) | unchecked |
+| `P:mixed` | I | Proposition | Mixed terms | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (51 Lean claims) | unchecked |
+| `L:white-test` | I | Lemma | White-space test | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (18 Lean claims) | unchecked |
 | `L:damped-homogeneous-norms` | I | Lemma | Homogeneous damped norms and temporal tails | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (68 Lean claims) | unchecked |
-| `L:translated-covariance-CS` | I | Lemma | Translated covariance Cauchy–Schwarz | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
-| `L:pairing-product-envelope` | I | Lemma | Pairing product envelope | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
-| `L:spatial-wick-measures` | I | Lemma | Positive spatial Wick-measure limit | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
-| `L:joint-fixed-order` | I | Lemma | Joint diagram limits and fixed-order construction | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
-| `L:crude-corrected` | I | Lemma | Corrected crude estimate | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
-| `L:vertex-crude` | I | Lemma | Uniform vertexwise regularization bound | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
-| `P:mild-construction` | I | Proposition | Mild construction from the fixed-order limits | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | steps checked (6 Lean claims) | unchecked |
-| `P:envelope` | I | Proposition | The uniform pairing estimate | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
+| `L:translated-covariance-CS` | I | Lemma | Translated covariance Cauchy–Schwarz | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (26 Lean claims) | unchecked |
+| `L:pairing-product-envelope` | I | Lemma | Pairing product envelope | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (84 Lean claims) | unchecked |
+| `L:spatial-wick-measures` | I | Lemma | Positive spatial Wick-measure limit | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (80 Lean claims) | unchecked |
+| `L:joint-fixed-order` | I | Lemma | Joint diagram limits and fixed-order construction | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (86 Lean claims) | unchecked |
+| `L:crude-corrected` | I | Lemma | Corrected crude estimate | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (65 Lean claims) | unchecked |
+| `L:vertex-crude` | I | Lemma | Uniform vertexwise regularization bound | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (18 Lean claims) | unchecked |
+| `P:mild-construction` | I | Proposition | Mild construction from the fixed-order limits | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (87 Lean claims) | unchecked |
+| `P:envelope` | I | Proposition | The uniform pairing estimate | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (69 Lean claims) | unchecked |
 | `L:phase-contractions` | I | Lemma | Two static contraction bounds | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (37 Lean claims) | unchecked |
 | `P:static-phase-variance` | I | Proposition | First variance estimate for arbitrary phase | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
 | `L:complex-phase` | I | Lemma | A complex phase bound | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | steps checked (52 Lean claims) | unchecked |
@@ -117,19 +117,19 @@ lean-coverage-commit: 6e83b60
 | `P:spatial-energy-map` | III | Proposition | The spatial energy and static lower variational expression | `notes/integrated_spatial_occupation.tex` | see review record | formalized, narrower conclusion (10 Lean claims) | unchecked |
 | `L:occupation-kernel-row` | III | Lemma | Exact row maximum | `notes/integrated_spatial_occupation.tex` | see review record | formalized in full (9 Lean claims) | unchecked |
 | `P:occupation-physical-class` | III | Proposition | The full physical occupation class | `notes/integrated_spatial_occupation.tex` | see review record | formalized in full (24 Lean claims) | unchecked |
-| `L:cameron-fractional-products` | III | Lemma | Fractional covariance products | `notes/integrated_cameron_mean.tex` | see review record | no Lean claim | unchecked |
-| `P:cameron-spatial-map` | III | Proposition | Compact spatial mean map | `notes/integrated_cameron_mean.tex` | see review record | no Lean claim | unchecked |
+| `L:cameron-fractional-products` | III | Lemma | Fractional covariance products | `notes/integrated_cameron_mean.tex` | see review record | formalized in full (21 Lean claims) | unchecked |
+| `P:cameron-spatial-map` | III | Proposition | Compact spatial mean map | `notes/integrated_cameron_mean.tex` | see review record | steps checked (25 Lean claims) | unchecked |
 | `L:cameron-supported-tensor` | III | Lemma | Supported original tensor space | `notes/integrated_cameron_mean.tex` | see review record | no Lean claim | unchecked |
-| `P:cameron-temporal-map` | III | Proposition | The compact temporal mean, without trace class | `notes/integrated_cameron_mean.tex` | see review record | no Lean claim | unchecked |
-| `P:cameron-full-mean` | III | Proposition | The compact time-space mean | `notes/integrated_cameron_mean.tex` | see review record | no Lean claim | unchecked |
+| `P:cameron-temporal-map` | III | Proposition | The compact temporal mean, without trace class | `notes/integrated_cameron_mean.tex` | see review record | formalized, narrower conclusion (60 Lean claims) | unchecked |
+| `P:cameron-full-mean` | III | Proposition | The compact time-space mean | `notes/integrated_cameron_mean.tex` | see review record | formalized, narrower conclusion (9 Lean claims) | unchecked |
 | `L:cameron-actual-residual` | III | Lemma | Supported residual paths | `notes/integrated_cameron_mean.tex` | see review record | no Lean claim | unchecked |
 | `P:cameron-actual-embedding` | III | Proposition | Cameron covariance and averaged bound | `notes/integrated_cameron_mean.tex` | see review record | no Lean claim | unchecked |
 | `L:young-upper-growth` | III | Lemma | Refined growth and uniform inverse control | `notes/integrated_young_upper_foundation.tex` | see review record | no Lean claim | unchecked |
 | `P:young-upper-multiplicative` | III | Proposition | Multiplicative upper perturbation | `notes/integrated_young_upper_foundation.tex` | see review record | no Lean claim | unchecked |
-| `L:uniform-mean-cutoff` | III | Lemma | Uniform cutoff and physical mean | `notes/integrated_uniform_mean.tex` | see review record | no Lean claim | unchecked |
+| `L:uniform-mean-cutoff` | III | Lemma | Uniform cutoff and physical mean | `notes/integrated_uniform_mean.tex` | see review record | formalized, narrower conclusion (17 Lean claims) | unchecked |
 | `L:uniform-mean-spatial-tails` | III | Lemma | Uniform heat and frequency tails | `notes/integrated_uniform_mean.tex` | see review record | no Lean claim | unchecked |
-| `L:uniform-mean-tensor` | III | Lemma | Dimension-free Hilbert tensor extension | `notes/integrated_uniform_mean.tex` | see review record | no Lean claim | unchecked |
-| `P:uniform-mean-regulator` | III | Proposition | Uniform approximation of the completed mean | `notes/integrated_uniform_mean.tex` | see review record | no Lean claim | unchecked |
+| `L:uniform-mean-tensor` | III | Lemma | Dimension-free Hilbert tensor extension | `notes/integrated_uniform_mean.tex` | see review record | formalized, narrower conclusion (8 Lean claims) | unchecked |
+| `P:uniform-mean-regulator` | III | Proposition | Uniform approximation of the completed mean | `notes/integrated_uniform_mean.tex` | see review record | steps checked (21 Lean claims) | unchecked |
 | `P:uniform-actual-cameron` | III | Proposition | Uniform-radius Cameron bound | `notes/integrated_uniform_mean.tex` | see review record | no Lean claim | unchecked |
 | `L:radius-outer-maps` | III | Lemma | Uniform rescaled outer maps | `notes/integrated_radius_anchor.tex` | see review record | no Lean claim | unchecked |
 | `P:radius-compact-envelopes` | III | Proposition | Radius-explicit compact envelopes | `notes/integrated_radius_anchor.tex` | see review record | no Lean claim | unchecked |
@@ -146,14 +146,14 @@ lean-coverage-commit: 6e83b60
 | `P:symplectic-raw` | III | Proposition | Conservation, inverse and a lower norm bound | `notes/integrated_symplectic_phase.tex` | see review record | no Lean claim | unchecked |
 | `P:symplectic-block-mean` | III | Proposition | The exact completed block mean | `notes/integrated_symplectic_phase.tex` | see review record | no Lean claim | unchecked |
 | `P:tube-wiener-realization` | III | Proposition | First Wiener chaos realization on the support | `notes/integrated_gaussian_tubes.tex` | see review record | no Lean claim | unchecked |
-| `L:tube-closed-geometry` | III | Lemma | Compact images and attained tube radii | `notes/integrated_gaussian_tubes.tex` | see review record | no Lean claim | unchecked |
-| `P:tube-rayleigh-transfer` | III | Proposition | Comparison with the Rayleigh integral, including jumps and zero law | `notes/integrated_gaussian_tubes.tex` | see review record | every conclusion, inputs supplied (18 Lean claims) | unchecked |
+| `L:tube-closed-geometry` | III | Lemma | Compact images and attained tube radii | `notes/integrated_gaussian_tubes.tex` | see review record | formalized, narrower conclusion (9 Lean claims) | unchecked |
+| `P:tube-rayleigh-transfer` | III | Proposition | Comparison with the Rayleigh integral, including jumps and zero law | `notes/integrated_gaussian_tubes.tex` | see review record | every conclusion, inputs supplied (20 Lean claims) | unchecked |
 | `P:tube-actual-law` | III | Proposition | Eligibility of the E law | `notes/integrated_gaussian_tubes.tex` | see review record | no Lean claim | unchecked |
 | `L:tube-actual-endpoint` | III | Lemma | The endpoint functional | `notes/integrated_gaussian_tubes.tex` | see review record | no Lean claim | unchecked |
 | `P:tube-coarse-envelope` | III | Proposition | Coarse tube envelope and operator moment | `notes/integrated_gaussian_tubes.tex` | see review record | no Lean claim | unchecked |
 | `L:tube-rayleigh-tail` | III | Lemma | Exact Rayleigh tail bound | `notes/integrated_gaussian_tubes.tex` | see review record | formalized, narrower conclusion (6 Lean claims) | unchecked |
 | `L:tube-half-action` | III | Lemma | Supremum with the Gaussian quadratic cost | `notes/integrated_gaussian_tubes.tex` | see review record | formalized in full (3 Lean claims) | unchecked |
-| `L:uniform-E-lift` | III | Lemma | Unique potential and fixed-radius lift | `notes/integrated_uniform_products.tex` | see review record | no Lean claim | unchecked |
+| `L:uniform-E-lift` | III | Lemma | Unique potential and fixed-radius lift | `notes/integrated_uniform_products.tex` | see review record | formalized, narrower conclusion (28 Lean claims) | unchecked |
 | `P:uniform-E-spectral` | III | Proposition | Spectral rate in E | `notes/integrated_uniform_products.tex` | see review record | no Lean claim | unchecked |
 | `P:uniform-rate-averaging` | III | Proposition | Uniform completed-field averaging | `notes/integrated_uniform_products.tex` | see review record | no Lean claim | unchecked |
 | `L:uniform-product-budgets` | III | Lemma | Explicit physical primitive and growth bounds | `notes/integrated_uniform_products.tex` | see review record | no Lean claim | unchecked |
@@ -174,7 +174,7 @@ lean-coverage-commit: 6e83b60
 | `P:gram-positive-optimizer` | III | Proposition | Positive conic maximizer | `notes/integrated_positive_gram.tex` | see review record | steps checked (1 Lean claim) | unchecked |
 | `L:gram-realization` | III | Lemma | Real Gram realization | `notes/integrated_positive_gram.tex` | see review record | no Lean claim | unchecked |
 | `P:gram-entrywise-comparison` | III | Proposition | Entrywise Gram comparison | `notes/integrated_positive_gram.tex` | see review record | steps checked (1 Lean claim) | unchecked |
-| `L:positive-raw-embedding` | III | Lemma | Inclusion into the covariance space and the smooth mean | `notes/integrated_intrinsic_constant.tex` | see review record | formalized, narrower conclusion (22 Lean claims) | unchecked |
+| `L:positive-raw-embedding` | III | Lemma | Inclusion into the covariance space and the smooth mean | `notes/integrated_intrinsic_constant.tex` | see review record | formalized in full (42 Lean claims) | unchecked |
 | `L:positive-physical-gram` | III | Lemma | Finite covariance vectors and entrywise order | `notes/integrated_intrinsic_constant.tex` | see review record | formalized, narrower conclusion (18 Lean claims) | unchecked |
 | `L:positive-uniform-optimizer` | III | Lemma | Uniform optimizer norm and positive smoothing | `notes/integrated_intrinsic_constant.tex` | see review record | no Lean claim | unchecked |
 | `P:positive-signed-comparison` | III | Proposition | Signed variational values bounded by the variational value over nonnegative controls | `notes/integrated_intrinsic_constant.tex` | see review record | no Lean claim | unchecked |
@@ -224,13 +224,13 @@ lean-coverage-commit: 6e83b60
 | `P:nogo-33` | V | No-go | Three invalid proof steps | `notes/no-go/optimization.tex` | see review record | no Lean claim | unchecked |
 | `P:white-four` | IV | Proposition | White-space order four | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (43 Lean claims) | unchecked |
 | `L:static-four` | IV | Lemma | Static finite-order calibration | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
-| `P:riesz-small` | IV | Proposition | Riesz finite coefficients | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | steps checked (41 Lean claims) | unchecked |
+| `P:riesz-small` | IV | Proposition | Riesz finite coefficients | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized, narrower conclusion (52 Lean claims) | unchecked |
 | `L:d1-spatial` | IV | Lemma | Spatial estimate | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (31 Lean claims) | unchecked |
-| `P:d1-upper` | IV | Proposition | One-dimensional upper bound | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | steps checked (40 Lean claims) | unchecked |
+| `P:d1-upper` | IV | Proposition | One-dimensional upper bound | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (63 Lean claims) | unchecked |
 | `L:low-alpha-convolution` | IV | Lemma | Low-$\alpha$ convolution bound | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (23 Lean claims) | unchecked |
 | `L:alpha-one-convolution` | IV | Lemma | Degree-one convolution bound | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (28 Lean claims) | unchecked |
-| `P:low-alpha-upper` | IV | Proposition | Upper bound for $\alpha \le 1$ | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | steps checked (21 Lean claims) | unchecked |
-| `C:d1-first-calibration` | IV | Corollary | First-moment calibration | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | steps checked (15 Lean claims) | unchecked |
+| `P:low-alpha-upper` | IV | Proposition | Upper bound for $\alpha \le 1$ | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (24 Lean claims) | unchecked |
+| `C:d1-first-calibration` | IV | Corollary | First-moment calibration | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (41 Lean claims) | unchecked |
 | `P:higher-transfer` | IV | Proposition | Conditional upper bound | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
 | `L:higher-riesz` | IV | Lemma | Riesz spatial maxima | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | formalized in full (42 Lean claims) | unchecked |
 | `C:higher-riesz` | IV | Corollary | Riesz moment bounds | `notes/notes_stratonovich_ham_second_moment.tex` | see review record | no Lean claim | unchecked |
