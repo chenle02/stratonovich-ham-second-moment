@@ -6,9 +6,9 @@
 \hypertarget{lean-entry-top}{}%
 Some steps of this book were also checked in Lean, a proof assistant. They
 live in a separate Lean package, the Lean companion. This appendix describes its release
-v0.10.0 (DOI~\href{https://doi.org/10.5281/zenodo.24295453}{10.5281/zenodo.24295453}),
-which contains the formalization waves through L14 and refers to the lines
-of this book's final text. The waves were checked at commit \texttt{8f51004}
+v0.11.0 (DOI~\href{https://doi.org/10.5281/zenodo.24479072}{10.5281/zenodo.24479072}),
+which contains the formalization waves through L21 and refers to the lines
+of this book's final text. The waves were checked at commit \texttt{38a3e00}
 of the private development repository; the release is cut from that commit,
 its receipts are those of the release commit \texttt{\lcCommit}, and the
 companion's \texttt{provenance/DEVELOPMENT.md} lists every change between
@@ -25,7 +25,8 @@ conclusion it establishes.
 
 \section{How to read the entries}\label{S:lean-how-to-read}
 
-Every result with a row here, except those listed as not formalized, carries
+Every result with a row here, except those listed as not formalized and the
+17 results first covered in waves L15 to L21, carries
 a small link in the left margin of the text, beside its heading or its
 displayed equation: the word Lean and, under it, the class that this
 appendix prints for the result. The link leads to the result's row.
@@ -126,7 +127,29 @@ On these models:
     statements about the solution follow from the supplied
     Proposition~\ref{P:mixed}.
 \end{itemize}
-Open items in the record:
+The statements added in waves L15 to L21, and the changes those waves made to
+existing entries, were reviewed against the manuscript in the same way before
+each gate. The author closed the gates of waves L15 and L16 on November~20, of
+waves L17 and L18 on November~21, of wave L19 on November~22, and of waves L20
+and L21 on November~23, 2026. Wave L21 is the end point the author set for the
+Lean work: no further proof waves are planned. Three further modelling choices
+were recorded: a label-set model of the two-chain pairing integrals (wave L17), a
+model of the spatial Wick measures in gap coordinates (wave L18), and the source
+fields on which the chaos terms and the solution are constructed (wave L19). On
+these models:
+\begin{itemize}
+  \item Proposition~\ref{P:mixed} and Lemmas~\ref{L:joint-fixed-order}
+    and~\ref{L:vertex-crude} are formalized in full, so the mixed-moment
+    expansion and the first-moment series are no longer supplied.
+  \item Propositions~\ref{P:mild-construction}, \ref{P:d1-upper},
+    \ref{P:low-alpha-upper} and~\ref{P:envelope}, and
+    Corollary~\ref{C:d1-first-calibration}, are formalized in full.
+  \item The closed tubes and attained radii of
+    Lemma~\ref{L:tube-closed-geometry} are proved, so
+    Proposition~\ref{P:tube-rayleigh-transfer} rests on one supplied input, the
+    Gaussian tail of the tube radius.
+\end{itemize}
+Open items in the record at release v0.11.0:
 \begin{itemize}
   \item Theorems~\ref{T:full-upper} and~\ref{T:intrinsic-second-moment} are
     outside Lean.
@@ -134,9 +157,9 @@ Open items in the record:
     value $S_2^{\mathrm{pos}}$ rather than for $C_2$, with the white spatial
     energy supplied.
   \item Several results rest on named inputs, each listed with the result that
-    supplies it. These include Propositions~\ref{P:mixed}
-    and~\ref{P:three-transfer}, the first-moment series, and the signed
-    multiplier form.
+    supplies it. These include Proposition~\ref{P:three-transfer}, the signed
+    multiplier form, the Gaussian tail of the tube radius, and the compactness
+    sentence of Proposition~\ref{P:cutoff-singular-values}.
   \item No theorem of the manuscript is verified end to end.
 \end{itemize}
 These reviews are not a human verification, and they do not check the analytic
@@ -148,6 +171,15 @@ family; the first review and one confirmation failed on the companion's
 descriptions and quotation ranges, the corrections were made, and a further
 confirmation passed (Appendix~\ref{S:appendix-ai-statistics}). The author
 accepted release v0.10.0 on November~16, 2026.
+
+For release v0.11.0, the references were moved to the text of this book's
+release 1.1.3, whose lines this edition keeps. That work was reviewed by a model
+from a different family, in a first review and four confirmations. The first
+review and the first three confirmations failed or were inconclusive, on the
+companion's descriptions of earlier revisions, two quotation ranges, and
+evidence missing from the review packets; the corrections were made, and the
+fourth confirmation passed with high confidence. The author accepted release
+v0.11.0 on November~23, 2026.
 
 \Needspace{10\baselineskip}
 \section{How the Lean package was checked}\label{S:lean-package-checks}
@@ -173,14 +205,17 @@ separate file.
 \lcOpen{} open.\fi{}
 These checks concern the Lean statements themselves; whether those
 statements say what the book says is the AI-reviewed match described above.
-The private development verification record for commit \texttt{8f51004}
-reports a separate kernel replay on a computing cluster: all 141 library
-modules and the umbrella module passed \texttt{leanchecker --fresh}, and
-all 142 targets also passed its default mode. The three libraries used only
-for the separate statement check were not included in this replay.
-That replay is of the gate commit. The release commit \texttt{\lcCommit}
-drops two claims that name Lean-generated declarations and the one compared
-theorem that named one of them; the receipts above are those of the release.
+The companion's verification record for commit \texttt{38a3e00} reports a
+separate kernel replay on a computing cluster: the module added in wave L21
+and the umbrella module passed \texttt{leanchecker --fresh}, and all 212
+targets also passed its default mode. The fresh run of the umbrella re-checks
+every other library module as an import, except one that imports the umbrella
+and was replayed in the default mode. The three libraries used only for the
+separate statement check were not included in this replay.
+That replay is of the gate commit. The Lean files of the release commit
+\texttt{\lcCommit} differ from those of the gate commit only in comments, and
+no claim or compared theorem is dropped; the receipts above are those of the
+release.
 \fi
 
 \section{The results}\label{S:lean-results}
