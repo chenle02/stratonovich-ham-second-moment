@@ -236,15 +236,16 @@
 \lcPart{Not yet formalized}{The identification of $\lambda$ and $v_\Psi$ with $\sqrt{-E_s}$ and $\E W(\Psi)^2$ is not formalized.}
 \lcEntryEnd
 \lcEntry{\lcRef{Proposition}{P:cameron-temporal-map}{8.3.4}}{The compact temporal mean, without trace class}
-\lcPart{Lean proves}{With nothing supplied, for $2<r<2/a$: $K$ is bounded, positive, strictly positive, injective and compact; a positive square root $K^{1/2}$ is compact; $\iota:H_t\to L^2(I)$ is onto and isometric with $\iota[f]=K^{1/2}f$; $C_t=K^{1/2}\iota$ is compact into $L^r(I)$, $C_tf=Kf$ on tests.}
-\lcPart{Not yet formalized}{Not trace class and not Hilbert--Schmidt are stated as cell-sum identities.}
+\lcPart{Lean proves}{With nothing supplied, for $2<r<2/a$: $K$ is bounded, positive, strictly positive, injective and compact; a positive square root $K^{1/2}$ is compact; $\iota:H_t\to L^2(I)$ is onto and isometric with $\iota[f]=K^{1/2}f$; $C_t=K^{1/2}\iota$ is compact into $L^r(I)$, $C_tf=Kf$ on tests. The statements that $K$ is not trace class and that $C_t:H_t\to L^2(I)$ is not Hilbert--Schmidt are proved as cell-sum identities.}
+\lcPart{Not yet formalized}{The two operator-class statements themselves are not formalized (Mathlib has no trace class).}
 \lcEntryEnd
 \lcEntry{\lcRef{Proposition}{P:cameron-full-mean}{8.3.5}}{The compact time-space mean}
 \lcPart{Lean proves}{Only the map $\mathcal{U}$, with nothing supplied, for $2<r<2/a$ ($H_I$ the kernel completion, M5), in two statements: for each temporal core a bounded $\mathcal{U}:H_I\to L^r(I;H_{\mathrm{sp}})$ with $\mathcal{U}(f\otimes q)(s)=(Kf)(s)q$ a.e.\ for time tests $f$ and $\|\mathcal{U}\|\le\|C_t\|$; separately, such a $\mathcal{U}$ with $\|\mathcal{U}\|\le\|K_a\|_{r/2}^{1/2}$.}
 \lcPart{Not yet formalized}{The compactness of $T$, its multiplier formula and \lcRef{Equation}{E:cameron-compact-tail}{8.3.7} are not formalized.}
 \lcEntryEnd
 \lcEntry{\lcRef{Lemma}{L:uniform-mean-cutoff}{9.1.1}}{Uniform cutoff and physical mean}
-\lcPart{Lean proves}{For every real $\sigma$ and $R\ge1$, a bounded operator on $H^\sigma$ agreeing with multiplication by $\eta_R$ on real tests, of norm at most $M_\sigma$ (uniqueness not stated; tests are proved dense for $\sigma\le1$, covering the case $\sigma=1/2$ used), the embedding $H^s\to H^t$ of norm at most one for $t\le s$, and \lcRef{Equation}{E:uniform-spatial-mean}{9.1.2} for every $T$ with the row at all states.}
+\lcPart{Lean proves}{For every real $\sigma$ and $R\ge1$, a bounded operator on $H^\sigma$ agreeing with multiplication by $\eta_R$ on real tests, of norm at most $M_\sigma$ (tests are proved dense for $\sigma\le1$, covering the case $\sigma=1/2$ used), the embedding $H^s\to H^t$ of norm at most one for $t\le s$, and \lcRef{Equation}{E:uniform-spatial-mean}{9.1.2} for every $T$ with the row at all states.}
+\lcPart{Not yet formalized}{That this operator is the only bounded operator agreeing with multiplication by $\eta_R$ on real tests is not stated.}
 \lcEntryEnd
 \lcEntry{\lcRef{Lemma}{L:uniform-mean-tensor}{9.1.3}}{Dimension-free Hilbert tensor extension}
 \lcPart{Lean proves}{The bound on finite tensors $\sum_jf_j\otimes e_j$ with orthonormal $e_j$, for complete real Hilbert spaces $H_0$, $G$ and $2\le r<\infty$ (Gaussian route, Step~1 by Parseval and Minkowski), and the non-compactness sentence as the identity $\|F_i-F_j\|=\sqrt2\|Af\|$.}
@@ -259,7 +260,7 @@
 \lcPart{Not yet formalized}{The ``In particular'' application to the coarse-envelope bound of another proposition is not formalized.}
 \lcEntryEnd
 \lcEntry{\lcRef{Lemma}{L:uniform-E-lift}{10.3.1}}{Unique potential and fixed-radius lift}
-\lcPart{Lean proves}{For every covariance and cutoff profile with nothing supplied, that for every $R\ge1$ each $L\in\mathcal{V}_{E,R}$ is $B_E(M)$ with $\|L\|=\|M\|$, the unique real potential $V\in H^{-1/2}$ supported in $\operatorname{supp}m_R$ with $Mu=Vu$ on tests, and \lcRef{Equation}{E:uniform-E-pairing}{10.3.1} with its symmetry for real states.}
+\lcPart{Lean proves}{For every covariance and cutoff profile with nothing supplied, that for every $R\ge1$ each $L\in\mathcal{V}_{E,R}$ is $B_E(M)$ with $\|L\|=\|M\|$, and determines the unique real potential $V\in H^{-1/2}$ supported in $\operatorname{supp}m_R$ with $Mu=Vu$ on tests, and \lcRef{Equation}{E:uniform-E-pairing}{10.3.1} with its symmetry for real states.}
 \lcPart{Not yet formalized}{The lift $L_F$ and the Hermitian extension to complex states are not formalized.}
 \lcEntryEnd
 \lcEntry{\lcRef{Lemma}{L:positive-physical-gram}{11.2.2}}{Finite covariance vectors and entrywise order}
@@ -584,7 +585,7 @@
 \item[M1] In dimension three the wave Green measure is defined through Mathlib's sphere measure; that it equals the surface measure used in the text is not proved in Lean.
 \item[M2] The Gaussian space over finitely many coordinates is represented by normalized Hermite coefficient vectors; that Bochner integrals in it agree with the coordinatewise integrals is not proved in Lean.
 \item[M3] The smoothed covariance $p_\varepsilon*\Gamma$ is taken as the measure with density $\gamma_\varepsilon$; that it equals Mathlib's convolution of measures is not proved in Lean.
-\item[M4] The two-chain diagram integrals are the deterministic integrals of a diagram model; their identification with the positions form in the text is not proved in Lean for the sphere measure of dimension three (it is proved in dimension one and, for a measurable covariance and Green measures with a finite jointly measurable density, in every dimension).
+\item[M4] The two-chain diagram integrals are the deterministic integrals of a diagram model; the identification of their increment form with the positions form in the text is not proved in Lean for the wave Green measure of dimension three (the sphere measure of M1) (it is proved in dimension one and, for a measurable covariance and Green measures with a finite jointly measurable density, in every dimension).
 \item[M5] The completion spaces $H_t\otimes G$, $H_t$, $H_I$ and $H_\Gamma$ are realized as $L^2$ completions under the kernel and covariance forms; no tensor-product identification and no isometry between $H_{\mathrm{sp}}$ and $H_\Gamma$ is proved in Lean.
 \item[M6] $H^1$ is the graph of the weak gradient in $L^2\times L^2$, with the topology of Mathlib's $H^1$; that every real element of Mathlib's $H^1$ arises from it is not proved in Lean.
 }
