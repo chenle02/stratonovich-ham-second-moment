@@ -695,3 +695,10 @@ Checks:
 - **Companion unchanged for G:** v0.10.0 (`261cc68`, main `6e83b60`), coverage pin `142afced`, receipt commit `c8d8e07`, DOI `10.5281/zenodo.24295453`.
 - **Records held during the tip freeze.** The F record above and this one were committed on local held branches and pushed only after #16 lifted the freeze.
 - **Open, at the main flip on Le's word:** the lean-pkg registry record of the companion moves to public; a docs-only companion note recording the release revision (G); and a refresh of the companion's site once the manuscript is posted, so the verification and coverage pages lose the unposted-draft marking.
+
+## Lean end point and v0.11.0 (Le, 2026-11-23, option A; relayed by #23)
+- **Scope.** The companion closes after L20 plus `TubeAttained` as the item of L21. No further proof waves. `SignedMultiplierForm`, `ThreeTransfer`, `TubeTail` and `CutoffCompact` stay supplied; `MixedMoment` and `FirstMomentSeries` close in L20 item W; no operator-layer work toward `T:full-upper` or `T:intrinsic-second-moment`.
+- **One release.** v0.11.0 carries L15-L21. This supersedes L20 decision 13 ("L20 joins the release after the one carrying L19").
+- **Order (as for v0.10.0).** L20 gate (Le) -> L21 (`TubeAttained`) gate (Le) -> re-anchor to the book release the companion anchors to -> review -> Le accepts -> #24 publishes v0.11.0 (tag, Zenodo DOI, site).
+- **Then book 1.2.0 (MINOR).** #24 re-pins Appendices F and G to v0.11.0; #23 does the front door; #24's zero-shift check must show 0 shifted citations; then reseal, rehearsal, audit, Le, live.
+- **Expected order (#24):** L21 is small (one item, 250-400 lines) and touches only `SourceTube`, so it gates before v0.11.0's re-anchor; the re-anchor then covers L15-L21 in one pass.
