@@ -40,7 +40,7 @@ intrinsic constant given by an explicit variational formula.
 | Read | Where |
 | --- | --- |
 | Reading edition (<!--s:pages.reader-->28<!--/s--> pages) | [`notes/notes_stratonovich_ham_second_moment_reader.pdf`](notes/notes_stratonovich_ham_second_moment_reader.pdf) |
-| Technical notes (<!--s:pages.book-->476<!--/s--> pages) | [`notes/notes_stratonovich_ham_second_moment.pdf`](notes/notes_stratonovich_ham_second_moment.pdf) |
+| Technical notes (<!--s:pages.book-->477<!--/s--> pages) | [`notes/notes_stratonovich_ham_second_moment.pdf`](notes/notes_stratonovich_ham_second_moment.pdf) |
 | arXiv | [arXiv:2611.23014](https://arxiv.org/abs/2611.23014) |
 | Book site: the editions, the status, the videos | <https://chenle02.github.io/stratonovich-ham-second-moment/> |
 
