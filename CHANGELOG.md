@@ -5,7 +5,41 @@ MINOR changes the mathematics but not the statement of any main theorem, and
 PATCH changes no mathematics. Results are named by label; labels do not change
 between versions, numbers may.
 
-## 1.1.3 — <!--s:release.date-->2026-11-22<!--/s-->
+## 1.2.0 — <!--s:release.date-->2026-11-23<!--/s-->
+
+Minor release: the book now cites the final release of its Lean companion.
+No mathematics changed; no result, constant, hypothesis or proof changes.
+
+- **Lean companion v0.11.0:** Appendices F and G, the preface, the README,
+  `VERIFICATION.md` and `CITATION.cff` now name release v0.11.0 of the Lean
+  companion (DOI 10.5281/zenodo.24479072), which carries waves L15 to L21.
+  It is the companion's last planned proof release: the author closed the
+  Lean work after wave L21. The companion's line citations are anchored to
+  book release 1.1.3 and land on the same lines in 1.2.0.
+- **Coverage now recorded:** of the 220 labelled results, 59 are proved whole
+  with the manuscript's hypotheses, 22 with the same hypotheses and a
+  narrower conclusion, 1 whole with named inputs supplied, 30 as steps or
+  narrower with inputs supplied; 2 are outside Lean and 106 are not
+  formalized. No theorem is verified end to end. Appendix F gives each
+  result's scope and assumptions.
+- **Release checks:** the review-synchronization check now runs on the public
+  copy of the repository, where files rewritten by the export are reported as
+  not verifiable there instead of failing; the release tooling checks the
+  reading edition's references into the book and changes version numbers
+  only as whole numbers.
+- **Changelog record:** the 1.1.3 entry gives its version DOI,
+  10.5281/zenodo.24447089.
+- **Version and date** on the title page, the imprint and the reading edition,
+  and the release links in the preface, Appendix G and the AI-use statement,
+  now name 1.2.0 of 23 November 2026.
+- **Contributors:** Le Chen, with Amy (his AI research system); no outside
+  contributions. **Verification ledger:** the Lean column follows companion
+  v0.11.0; no human-verification status changed.
+- **Archive:** tag `v1.2.0`; Zenodo, all versions:
+  [10.5281/zenodo.24342309](https://doi.org/10.5281/zenodo.24342309) (the
+  version DOI of 1.2.0 is assigned on release).
+
+## 1.1.3 — 2026-11-22
 
 Patch release: no mathematics changed.
 
@@ -20,9 +54,9 @@ Patch release: no mathematics changed.
   now name 1.1.3 of 22 November 2026.
 - **Contributors:** Le Chen, with Amy (his AI research system); no outside
   contributions. **Verification ledger:** no status changed.
-- **Archive:** tag `v1.1.3`; Zenodo, all versions:
-  [10.5281/zenodo.24342309](https://doi.org/10.5281/zenodo.24342309) (the
-  version DOI of 1.1.3 is assigned on release).
+- **Archive:** tag `v1.1.3`; Zenodo
+  [10.5281/zenodo.24447089](https://doi.org/10.5281/zenodo.24447089) (all
+  versions: [10.5281/zenodo.24342309](https://doi.org/10.5281/zenodo.24342309)).
 
 ## 1.1.2 — 2026-11-21
 

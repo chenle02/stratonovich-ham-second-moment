@@ -2,7 +2,7 @@
 
 *Second Moment and Exact Asymptotics*
 
-[![Version 1.1.3](https://img.shields.io/badge/version-1.1.3-blue)](CHANGELOG.md)
+[![Version 1.2.0](https://img.shields.io/badge/version-1.2.0-blue)](CHANGELOG.md)
 [![Text: CC BY 4.0](https://img.shields.io/badge/text-CC%20BY%204.0-lightgrey)](LICENSE)
 [![Code: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-lightgrey)](LICENSES/Apache-2.0.txt)
 [![Book site](https://img.shields.io/badge/book-site-blue)](https://chenle02.github.io/stratonovich-ham-second-moment/)
@@ -60,8 +60,8 @@ Please read this before citing anything.
   theorems, <!--s:lean.outside_main_words-->two<!--/s--> are outside Lean; for the other two, Lean proves a
   narrower conclusion, for one of them with analytic inputs supplied. [VERIFICATION.md](VERIFICATION.md) says, result by
   result, what Lean covers. See the companion at
-  https://github.com/chenle02/stratonovich-ham-second-moment-lean (release v0.10.0,
-  DOI 10.5281/zenodo.24295453) and its
+  https://github.com/chenle02/stratonovich-ham-second-moment-lean (release v0.11.0,
+  DOI 10.5281/zenodo.24479072) and its
   statement ledger. The correspondence between Lean and the manuscript was
   reviewed by AI, not by a human reader.
 - **No AI review grade is a proof.** Human verification is recorded,

@@ -19,7 +19,7 @@ defined constant, given by a fully specified variational formula. The work
 was done with AI systems under the direction of Le Chen (the PI), who set the
 goals, made the decisions and changed direction when needed.
 
-**Size of the record at manuscript revision <!--s:rev.tex-->`20ba1a8`<!--/s-->:**
+**Size of the record at manuscript revision <!--s:rev.tex-->`7e81252`<!--/s-->:**
 - **Technical notes:** <!--s:pages.book-->476<!--/s--> pages, with <!--s:chapters-->12<!--/s--> chapters and <!--s:appendices.count-->7<!--/s--> appendices (<!--s:appendices.letters-->A–G<!--/s-->).
   Chapter 12, "Obstructions and failed approaches", states <!--s:nogo-->33<!--/s--> numbered no-go
   results with proofs.
@@ -398,15 +398,15 @@ whole paper is therefore **not accepted**. The second whole review, the
 remaining visual checks, the final calibrations and the final cold read are
 open.
 
-**Formally checked:** the Lean companion's release v0.10.0 (DOI 10.5281/zenodo.24295453) records,
-in its coverage file (commit <!--s:lean.coverage-->`6e83b60`<!--/s-->, documentation changes
-only after <!--s:lean.verified-->`c8d8e07`<!--/s-->, where the checks of wave <!--s:lean.wave-->L14<!--/s--> are recorded; the
-PI accepted the release on November 16), the
+**Formally checked:** the Lean companion's release v0.11.0 (DOI 10.5281/zenodo.24479072) records,
+in its coverage file (commit <!--s:lean.coverage-->`3bd5c06`<!--/s-->, documentation changes
+only after <!--s:lean.verified-->`4d0e11c`<!--/s-->, where the checks of wave <!--s:lean.wave-->L21<!--/s--> are recorded; the
+PI accepted the release on November 23), the
 following, result by result in `VERIFICATION.md`:
-- <!--s:lean.full_words-->sixty<!--/s--> numbered results, three displayed equations and one remark
-  formalized under the manuscript's own hypotheses (<!--s:lean.narrow_words-->sixteen<!--/s--> of the results
+- <!--s:lean.full_words-->eighty-one<!--/s--> numbered results, three displayed equations and one remark
+  formalized under the manuscript's own hypotheses (<!--s:lean.narrow_words-->twenty-two<!--/s--> of the results
   with a narrower conclusion);
-- steps or parts of <!--s:lean.inputs_words-->thirty-five<!--/s--> more, with named analytic inputs supplied.
+- steps or parts of <!--s:lean.inputs_words-->thirty-one<!--/s--> more, with named analytic inputs supplied.
 
 Two of the four main theorems and the analytic parts of the argument are
 not formally verified; for the other two, Lean proves a narrower conclusion

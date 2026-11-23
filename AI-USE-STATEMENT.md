@@ -48,18 +48,18 @@ was written with her.
   The separate Chapter 12 skeptic synthesis was **not obtained**; the scoped
   HIGH honesty synthesis does not replace it.
 - **Lean.** A companion Lean package checks parts of the work. The state
-  described here is its release v0.10.0 (DOI 10.5281/zenodo.24295453), cut
-  from the wave-L14 gate: its checks are recorded for commit
-  <!--s:lean.verified-->`c8d8e07`<!--/s--> of the public companion repository,
+  described here is its release v0.11.0 (DOI 10.5281/zenodo.24479072), cut
+  from the wave-L21 gate: its checks are recorded for commit
+  <!--s:lean.verified-->`4d0e11c`<!--/s--> of the public companion repository,
   with the coverage record at commit
-  <!--s:lean.coverage-->`6e83b60`<!--/s--> of that repository. Under the registered
+  <!--s:lean.coverage-->`3bd5c06`<!--/s--> of that repository. Under the registered
   modelling choices and scope qualifications described in Appendix F, the
   coverage record lists:
-  - <!--s:lean.full_words-->sixty<!--/s--> numbered results, three displayed
+  - <!--s:lean.full_words-->eighty-one<!--/s--> numbered results, three displayed
     equations and one remark under the manuscript's hypotheses
-    (<!--s:lean.narrow_words-->sixteen<!--/s--> of the results with a narrower
+    (<!--s:lean.narrow_words-->twenty-two<!--/s--> of the results with a narrower
     conclusion);
-  - for <!--s:lean.inputs_words-->thirty-five<!--/s--> more, analytic inputs are
+  - for <!--s:lean.inputs_words-->thirty-one<!--/s--> more, analytic inputs are
     supplied as hypotheses or left outside Lean: one of them has every
     conclusion proved from two supplied inputs, and the others are checks of
     steps, parts or narrower forms. The entries distinguish supplied
@@ -81,7 +81,7 @@ was written with her.
   white spatial energy supplied. No main stochastic moment theorem is
   verified end to end. The correspondence between the Lean statements and
   the manuscript was reviewed by AI and accepted by the author through
-  wave L14; this is not human verification. Appendix F states each result's
+  wave L21; this is not human verification. Appendix F states each result's
   scope, modelling choices and assumptions.
 - **Readability pass and re-reads.** After the reviews above, the proofs were
   rewritten so that their steps are easier to follow. A GPT model working
@@ -104,7 +104,7 @@ was written with her.
   line by line by a human reader. The technical notes have not yet been
   checked line by line by a human reader. Independent checks by readers are
   recorded result by result in the public verification ledger,
-  https://github.com/chenle02/stratonovich-ham-second-moment/blob/v1.1.3/VERIFICATION.md.
+  https://github.com/chenle02/stratonovich-ham-second-moment/blob/v1.2.0/VERIFICATION.md.
 
 **No AI review grade in this statement is a proof.**
 
@@ -114,7 +114,7 @@ A filtered development history (the proof revisions, the review runs with
 their model families and grades, selected reports, and the routes that failed)
 is public at
 https://github.com/chenle02/stratonovich-ham-second-moment (release tag
-`v1.1.3`),
+`v1.2.0`),
 with documented redactions. [REDACTIONS.md](REDACTIONS.md) lists every class of
 removal with its reasons and counts, including review records held back until a
 source author has been told and evidence archives that were not deposited.
