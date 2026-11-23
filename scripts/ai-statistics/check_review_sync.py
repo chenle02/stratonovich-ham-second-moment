@@ -60,6 +60,10 @@ class SyncError(Exception):
     pass
 
 
+# Markers the public export leaves where it rewrote a file (scripts/redact_filter.py and the history filter).
+REDACTION_MARKERS = (b"[held back", b"<HOME>", b"<MACHINE>")
+
+
 def digest(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
@@ -288,11 +292,25 @@ def validate(root: Path, ledger_name=LEDGER, manifest_name=MANIFEST,
     if not isinstance(artifacts, dict) or not required.issubset(artifacts):
         raise SyncError("Required source/PDF/summary/ledger/decision/generator hashes absent: " +
                         ", ".join(sorted(required - set(artifacts or {}))))
+    # Files the public export rewrites (held-back passages, <HOME>/<MACHINE> placeholders) are sealed with
+    # their private bytes. On the public tree (no private/ directory) such a file cannot match its hash; it is
+    # accepted only if the sealed manifest lists it as redacted on export and the file shows the export's
+    # redaction markers. On the private tree every artifact is verified by hash, listed or not.
+    redacted = manifest.get("redacted_on_export", [])
+    if (not isinstance(redacted, list) or any(not isinstance(x, str) for x in redacted) or
+            not set(redacted).issubset(artifacts)):
+        raise SyncError("redacted_on_export must list sealed artifact paths")
+    public_tree = not (root / "private").is_dir()
+    redacted_unverified = []
     for name, expected_hash in artifacts.items():
         path = checked_path(root, name)
         if not isinstance(expected_hash, str) or not re.fullmatch(r"[0-9a-f]{64}", expected_hash):
             raise SyncError(f"Invalid SHA256 for {name}")
-        if digest(path.read_bytes()) != expected_hash:
+        data = path.read_bytes()
+        if digest(data) != expected_hash:
+            if public_tree and name in redacted and any(m in data for m in REDACTION_MARKERS):
+                redacted_unverified.append(name)
+                continue
             raise SyncError(f"Artifact changed after review-sync sealing: {name}")
     fragments = manifest.get("required_text_fragments")
     if not isinstance(fragments, dict) or not set(LANGUAGE_FILES).issubset(fragments):
@@ -342,7 +360,8 @@ def validate(root: Path, ledger_name=LEDGER, manifest_name=MANIFEST,
     return {"status": "PASS", "mode": "exact-release" if release_sha else "snapshot",
             "release_sha": release_sha, "review_sync_sha256": digest(manifest_path.read_bytes()),
             "rows": len(rows), "historical_rows_unchanged": 29, "recent_ids": recent,
-            "named_summaries": len(summaries), "artifacts_verified": len(artifacts),
+            "named_summaries": len(summaries), "artifacts_verified": len(artifacts) - len(redacted_unverified),
+            "redacted_on_export_unverified": sorted(redacted_unverified),
             "generator_check": run_generator, "whole_book_accepted": False,
             "claim_boundary": "Hash/record/text-fragment consistency only; final inventory completeness is the named owner's attestation, not machine discovery of private/future reviews."}
 

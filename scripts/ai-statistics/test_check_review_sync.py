@@ -107,6 +107,41 @@ class ReviewSyncGateTests(unittest.TestCase):
         self.assertEqual(before, {p.relative_to(self.root): gate.digest(p.read_bytes())
                                  for p in self.root.rglob("*") if p.is_file()})
 
+    def test_redacted_file_is_accepted_only_on_the_public_tree_with_markers(self):
+        self.manifest["redacted_on_export"] = ["AGENTS.md"]
+        self.seal()
+        self.write("AGENTS.md", "Release review sync is a final gate.\n[held back: private planning]\n")
+        result = gate.validate(self.root, run_generator=False)
+        self.assertEqual(result["redacted_on_export_unverified"], ["AGENTS.md"])
+        self.assertEqual(result["artifacts_verified"], len(self.manifest["artifacts_sha256"]) - 1)
+
+    def test_redacted_file_without_markers_still_fails(self):
+        self.manifest["redacted_on_export"] = ["AGENTS.md"]
+        self.seal()
+        self.write("AGENTS.md", "Release review sync is a final gate, edited.\n")
+        with self.assertRaisesRegex(gate.SyncError, "changed after review-sync sealing: AGENTS.md"):
+            gate.validate(self.root, run_generator=False)
+
+    def test_unlisted_file_with_markers_still_fails(self):
+        self.seal()
+        self.write("AGENTS.md", "Release review sync is a final gate.\n<HOME>/x\n")
+        with self.assertRaisesRegex(gate.SyncError, "changed after review-sync sealing: AGENTS.md"):
+            gate.validate(self.root, run_generator=False)
+
+    def test_private_tree_verifies_listed_files_by_hash(self):
+        self.manifest["redacted_on_export"] = ["AGENTS.md"]
+        self.seal()
+        (self.root / "private").mkdir()
+        self.write("AGENTS.md", "Release review sync is a final gate.\n[held back: private planning]\n")
+        with self.assertRaisesRegex(gate.SyncError, "changed after review-sync sealing: AGENTS.md"):
+            gate.validate(self.root, run_generator=False)
+
+    def test_redacted_list_must_name_sealed_artifacts(self):
+        self.manifest["redacted_on_export"] = ["not-sealed.md"]
+        self.seal()
+        with self.assertRaisesRegex(gate.SyncError, "redacted_on_export must list sealed artifact paths"):
+            gate.validate(self.root, run_generator=False)
+
     def test_historical_row_cannot_be_rewritten(self):
         self.rewrite_ledger(lambda d: d["rows"][0].update(reported_confidence="high"))
         with self.assertRaisesRegex(gate.SyncError, "Historical 29"):
