@@ -1,6 +1,6 @@
 {
   "schema": "appendix-review-sync/1",
-  "recorded_utc": "2026-11-23T21:01:03.622135+00:00",
+  "recorded_utc": "2026-11-23T23:02:39.303451+00:00",
   "ledger": "experiment/ledger-updates/2026-11-15-cold-closeout/run-ledger-v4.json",
   "historical_ledger": "experiment/ledger-updates/2026-11-14-c003-provenance/run-ledger-v4.json",
   "recent_ids": [
@@ -1119,7 +1119,7 @@
     "scripts/ai-statistics/commits-per-day-timeline.json": "29f6f861ce30a33ba1d3aea55542e68ddeca29f860b05cd4acb7ca622de8ade8",
     "scripts/ai-statistics/commits-per-day.json": "0590a383859a75e391e5425cde72d2b1bcafdd81509e4dd86b4d3b5ee0ca2505",
     "scripts/ai-statistics/infrastructure.json": "6fc669101ca6e55d7543987335bfefa60ea0f93457e2de05502f346a46aff82a",
-    "scripts/ai-statistics/make_appendix.py": "f08423a0ef3a4e9b96b0d0dd339fd76d7f63089300a44fa0375a0b4f808abdcb",
+    "scripts/ai-statistics/make_appendix.py": "a8738209a53be893aad26c7be1b6a9b73d12573c52c253d11a01c2c061ad8aed",
     "scripts/ai-statistics/milestones.json": "3a7d34966015c80c1dd53526a71012183bb6fd9c7b349f8e292166252921915d",
     "scripts/ai-statistics/no-go/README.md": "3b0432324ceea902a8d013723446d1a64759840bce70568ae0cf6d0d761cb7f8",
     "scripts/ai-statistics/no-go/nogo-counts-2026-11-15.json": "e777e180532d75579eec4a917845919bbf03cdcf89d3ebf1b03294c4a348ec9c",
@@ -1162,7 +1162,8 @@
     "scripts/verification-status/pin_verification.py": "3f49aed693db50812377442760bca22a65f098fc01712a22e3956970461e5851",
     "scripts/verification-status/verification.md": "1146978abe02b6361e07770329eb86ee37dff7f828c2e4831f0c64948bcd5a54",
     "scripts/verification/config.json": "b16a3b8890999fe838bba4d6c288da4b96d63c2542686014bc1523123f4fc226",
-    "scripts/verification/make_verification.py": "1864427b480fd4b5be7ee9b1d91e0cc192eeaf573339e391e612d3097358fd4c"
+    "scripts/verification/make_verification.py": "1864427b480fd4b5be7ee9b1d91e0cc192eeaf573339e391e612d3097358fd4c",
+    "scripts/ai-statistics/test_make_appendix_commit_map.py": "9d9a3586591a2e5dc0450378d7b9fd2d8ee3432b96eeba5f374b602d39ead90a"
   },
   "decision_evidence": {
     "C016": {
@@ -1201,7 +1202,7 @@
       "No cost was recorded, which is not the same"
     ]
   },
-  "resealed_from_revision": "c97c38131b4250177e24c3c1df09c6a207dbeeb2",
+  "resealed_from_revision": "f509db98be9c55a3487e71f3c0169d5a84af9b97",
   "R_to_F_bridge": {
     "schema": "exact-release-source-bridge/1",
     "R": "39f2597a5bc4cdc6b9cab91e50051cd8a95b37d8",
@@ -7948,5 +7949,54 @@
     "prior_bridges_preserved": true,
     "historical_Appendix_E_selection_unchanged": true,
     "scope": "Companion v0.11.0 re-pin, appendices and verification status, line-preserving Lean markers, release tooling and metadata, and rebuilt editions. The historical Appendix E selection is preserved."
+  },
+  "appendix_f_repin_review": {
+    "model": "GPT-6.2-Sol",
+    "scope": "Appendix F companion re-pin correspondence and subsequent targeted confirmations. Final confirmation covers the N1 marker-map documentation correction and regenerated header.",
+    "confirmed_revision": "5d4a8cb082d33a393d56fe1b5b03019340863148",
+    "adjudication_sha256": "d9802b9e928c47bf46e36c87ec84abdfb1c93532cba3ea7d60f94c83e179567c",
+    "runs": [
+      {
+        "packet": "a-prose",
+        "verdict": "FAIL",
+        "confidence": "high",
+        "accepted": false,
+        "report_sha256": "a75a0932c9f1d4231b6e467f5726022082eba9048b5dcd47eb7856f69ffc12ca"
+      },
+      {
+        "packet": "b-payload",
+        "verdict": "FAIL",
+        "confidence": "high",
+        "accepted": false,
+        "report_sha256": "e5a37af354774e7268d17ea93ced0490b86473a1c118d46e56e487249605c02e"
+      },
+      {
+        "packet": "c1-confirm",
+        "verdict": "FAIL",
+        "confidence": "high",
+        "accepted": false,
+        "report_sha256": "18c01966daab8e038fe4431cb11e5c0ecda1562cdfe20d7628be5585635cee43"
+      },
+      {
+        "packet": "c2-confirm",
+        "verdict": "PASS",
+        "confidence": "high",
+        "accepted": true,
+        "report_sha256": "2f40a5771dc4ad7bed39018e482552e7465e7eaffe6c65baf64742b5855f8852"
+      }
+    ],
+    "attempts": 4,
+    "elapsed_seconds": 585,
+    "input_tokens": 5330830,
+    "cached_input_tokens_included": 4823680,
+    "output_tokens": 21936,
+    "reasoning_output_tokens_included": 10031,
+    "cost": null,
+    "final_findings": {
+      "fatal": 0,
+      "major": 0,
+      "minor": 0
+    },
+    "appendix_e_historical_snapshot_preserved": true
   }
 }
