@@ -9,7 +9,7 @@
 | Track | Current item | State | Since | Next action | Blocking on |
 |---|---|---|---|---|---|
 | Proof | Wave L21 gate CLOSED by Le 2026-11-23 and MERGED (dev main `c286f72`, tag `L21-gate` on `38a3e00`). **Lean end point reached** (Le, 2026-11-23, option A): no further proof waves | PROOF WAVES COMPLETE | 2026-11-23 | v0.11.0 release prep: re-anchor (with the deferred comment items RB1-RB4 and two claim summaries) -> review -> Le accepts -> publish | Le (v0.11.0 acceptance) |
-| Release | v0.10.0 | LINKED (public tag on `261cc68`, version DOI 10.5281/zenodo.24295453; book Appendix F pins it) | 2026-11-18 | v0.11.0 (L15) only if Le wants one | Le |
+| Release | v0.11.0 | CONSENTED (Le accepted `eaa2bfb` 2026-11-23; flip in progress: tag, push, GitHub release, Zenodo DOI, gh-pages) | 2026-11-23 | flip, then pin files and DOI to #23 for book 1.2.0 | - |
 
 ## Links
 - Paper progress: `../Progress.md` (mathematics authority); release sequencing: `RELEASE-PLAN.md` in this folder.
@@ -2854,6 +2854,11 @@ Last updated: 2026-11-23: **wave L21 gate CLOSED by Le; Lean end point reached**
 - DOI: version 10.5281/zenodo.24295453, concept 10.5281/zenodo.24199104.
 - Links: site on gh-pages (`a265332`); lean-pkg registry public, promoted at `dc46f3a` (2026-11-18); book Appendix F pins it (coverage `142afced`, receipt commit `c8d8e07`).
 - Next: v0.11.0 (L15) only on Le's word.
+
+### Release v0.11.0  [CONSENTED]  opened 2026-11-23
+- Scope: waves L15 to L21 (gates `18c5c1d` ... `38a3e00`), re-anchored to book v1.1.3 = private `edf7085f` (public tag `v1.1.3` = `4fa7e18a`); dev re-anchor branch `reanchor-edf7085f` tip `037e181` (re-anchor review series GPT-6.2-Sol: review + 4 confirmations, the last PASS/high ACCEPTED, report sha256 `4bbd8abf...`).
+- Candidate (public line, on public main `d659c59`): release tree `4d0e11cec4f6fde4946beaddd0cdf7328042861c` (from dev `9534f89`); receipts `aabbb4b` (lower tier 0 sorry, standard axioms, 6632 claims; comparator 2056 + 3270 = 5326 PASS); docs `3c55f14`; metadata `eaa2bfb3df0a37fedd7e423e5605ae2700ede5f1` = tag target. Checks at `eaa2bfb`: receipts valid at `4d0e11c`, docs-only descendant; Lean byte-identical to dev `037e181`; public-safety --strict --history 0 (planted controls caught); gitleaks 0; <HUB> bundle sha256 `8279258d...`.
+- PI approval: Le, verbatim, typed directly in #24's session (2026-11-23): "I accept stratonovich-ham-second-moment-lean v0.11.0 at commit eaa2bfb. Go for the companion flip: tag v0.11.0, push main and the tag to the public repository, publish the GitHub release, add the Zenodo DOI as a docs-only commit, refresh gh-pages, then send #23 the pin files and the DOI for book 1.2.0." Full SHA: eaa2bfb3df0a37fedd7e423e5605ae2700ede5f1.
 
 ## Planned waves (strategy in ROADMAP.md)
 
