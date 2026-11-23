@@ -203,7 +203,22 @@ def ledger_source(rel):
         raise SystemExit(f"{rel} is not committed or has local changes; use a committed ledger")
     commit = git("log", "-1", "--format=%h", "--", rel).stdout.strip()
     blob = git("rev-parse", "--short", f"HEAD:{rel}").stdout.strip()
-    return commit, blob
+    return original_commit(commit, git("log", "-1", "--format=%H", "--", rel).stdout.strip()), blob
+
+
+def original_commit(short, full, map_path=None):
+    """The book prints the development-history commit. In the published repository the same commit has a
+    rewritten SHA; history/commit-map.tsv (original_commit, published_commit) maps it back, so the generated
+    data and its --check agree on both trees. Without the map, the commit is returned unchanged."""
+    map_path = map_path or os.path.join(ROOT, "history", "commit-map.tsv")
+    if not os.path.exists(map_path):
+        return short
+    with open(map_path, encoding="utf-8") as fh:
+        for line in fh:
+            cols = line.rstrip("\n").split("\t")
+            if len(cols) == 2 and cols[1] == full and cols[0] and set(cols[0]) != {"0"}:
+                return cols[0][:len(short)]
+    return short
 
 
 def tex_text(s):
