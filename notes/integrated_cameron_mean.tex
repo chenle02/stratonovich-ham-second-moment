@@ -25,7 +25,7 @@ $R$.
 The four-linear estimate~\eqref{E:spatial-four-linear} needs $H^1$ factors.
 The first component of a state in $E$ lies only in $H^{1/2}$, so we first
 extend that estimate to fractional Sobolev factors.
-
+\LeanMarker{L:cameron-fractional-products}%
 \begin{lemma}[Fractional covariance products]
   \label{L:cameron-fractional-products}
   For $\alpha/4 < s < 1/2$, products of real $H^s$ functions define elements of
@@ -100,7 +100,7 @@ extend that estimate to fractional Sobolev factors.
 
 With these products in $H_{\mathrm{sp}}$, we can extend the spatial mean map
 from smooth tests to all of $H_{\mathrm{sp}}$.
-
+\LeanMarker{P:cameron-spatial-map}%
 \begin{proposition}[Compact spatial mean map]\label{P:cameron-spatial-map}
   The smooth-test map
   \[
@@ -221,7 +221,7 @@ factor and a spatial factor.
 
 It remains to treat the time factor $H_t$, whose kernel is $|s-t|^{-a}$.
 Proposition~\ref{P:cameron-full-mean} then combines the two maps.
-
+\LeanMarker{P:cameron-temporal-map}%
 \begin{proposition}[The compact temporal mean, without trace class]
   \label{P:cameron-temporal-map}
   Let $K$ on $L^2(I)$ have kernel $|s-t|^{-a}$. It is compact, self-adjoint,
@@ -318,7 +318,7 @@ range: temporal concentration makes the mean map unbounded above
 $2/\alpha_0$ and noncompact at $2/\alpha_0$. The endpoint witness does not
 refute boundedness there.
 
-
+\LeanMarker{P:cameron-full-mean}%
 \begin{proposition}[The compact time-space mean]\label{P:cameron-full-mean}
   Fix one $2 < r < 2/a$ throughout this proposition. For finite tensors with
   orthonormal spatial labels define

@@ -36,7 +36,7 @@ convolution.
 We first bound the row $k_R$ in~\eqref{E:uniform-mean-row} uniformly in
 $R \ge 1$. Both factors of this row carry the cutoff $\eta_R$, so we start with
 its multiplier norm on $H^\sigma$.
-
+\LeanMarker{L:uniform-mean-cutoff}%
 \begin{lemma}[Uniform cutoff and physical mean]\label{L:uniform-mean-cutoff}
   For every real $\sigma$, multiplication by $\eta_R$ on $H^\sigma$ has norm at
   most
@@ -194,7 +194,7 @@ $C_\varepsilon$.
 We first record a tensor extension bound for maps into $L^r(I)$. The proof
 of Proposition~\ref{P:uniform-mean-regulator} uses it to pass from a scalar
 time map to the Hilbert-valued time map without a dimension factor.
-
+\LeanMarker{L:uniform-mean-tensor}%
 \begin{lemma}[Dimension-free Hilbert tensor extension]
   \label{L:uniform-mean-tensor}
   If $H_0,G$ are real Hilbert spaces, $2 \le r < \infty$ and $A:H_0 \to L^r(I)$
@@ -268,7 +268,7 @@ orthogonal projection, with $\pi_0 = 0$. Put
   \varepsilon_J=\|C_t(I-\pi_J)\|_{H_t\to L^r(I)},\qquad
   \mathcal{T}_R=T_RU .
 \]
-
+\LeanMarker{P:uniform-mean-regulator}%
 \begin{proposition}[Uniform approximation of the completed mean]
   \label{P:uniform-mean-regulator}
   On $H_I$ the operators
