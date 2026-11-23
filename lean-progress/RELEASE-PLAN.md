@@ -702,3 +702,6 @@ Checks:
 - **Order (as for v0.10.0).** L20 gate (Le) -> L21 (`TubeAttained`) gate (Le) -> re-anchor to the book release the companion anchors to -> review -> Le accepts -> #24 publishes v0.11.0 (tag, Zenodo DOI, site).
 - **Then book 1.2.0 (MINOR).** #24 re-pins Appendices F and G to v0.11.0; #23 does the front door; #24's zero-shift check must show 0 shifted citations; then reseal, rehearsal, audit, Le, live.
 - **Expected order (#24):** L21 is small (one item, 250-400 lines) and touches only `SourceTube`, so it gates before v0.11.0's re-anchor; the re-anchor then covers L15-L21 in one pass.
+
+## v0.11.0 published (2026-11-23)
+- Le accepted `eaa2bfb` and gave the go in #24's session (verbatim in PROGRESS.md, Release v0.11.0). Tag `v0.11.0` on `eaa2bfb`; GitHub release; Zenodo version DOI 10.5281/zenodo.24479072; DOI commit `3bd5c06` (docs only). Pins for book 1.2.0 sent to #23: VERIFIED `4d0e11c`, COVERAGE `3bd5c06`, comparator 5326 (2056 + 3270). Every companion line citation is at book v1.1.3 `edf7085f`, so the 1.2.0 zero-shift check runs against `edf7085f`. Pending: gh-pages refresh.
